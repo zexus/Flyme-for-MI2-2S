@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="notification_text_size">13.0sp</dimen>
+    <dimen name="notification_title_text_size">15.0sp</dimen>
+    <dimen name="notification_subtext_size">12.0sp</dimen>
+    <item type="dimen" name="APKTOOL_DUMMY_00a2">false</item>
+    <item type="dimen" name="APKTOOL_DUMMY_00a5">false</item>
+    <item type="dimen" name="APKTOOL_DUMMY_00a6">false</item>
+    <item type="dimen" name="APKTOOL_DUMMY_00a7">false</item>
+    <item type="dimen" name="APKTOOL_DUMMY_00a8">false</item>
+</resources>
