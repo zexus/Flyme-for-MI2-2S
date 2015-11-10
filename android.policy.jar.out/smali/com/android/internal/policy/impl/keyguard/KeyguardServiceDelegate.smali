@@ -15,6 +15,10 @@
 
 
 # static fields
+.field public static final FLYME_KEYGUARD_CLASS:Ljava/lang/String; = "com.android.keyguard.KeyguardService"
+
+.field public static final FLYME_KEYGUARD_PACKAGE:Ljava/lang/String; = "com.android.keyguard"
+
 .field private static final DEBUG:Z = true
 
 .field public static final KEYGUARD_CLASS:Ljava/lang/String; = "com.android.keyguard.KeyguardService"
