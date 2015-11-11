@@ -461,6 +461,12 @@
 
     add-int/2addr v1, v2
 
+    invoke-direct/range {p0 .. p0}, Landroid/widget/Editor$HandleView;->getHorizontalOffset()I
+
+    move-result v2
+
+    add-int/2addr v1, v2
+
     iget v2, p0, Landroid/widget/Editor$HandleView;->mPositionY:I
 
     # invokes: Landroid/widget/Editor;->isPositionVisible(II)Z
@@ -1122,6 +1128,8 @@
     .end local v6    # "rawY":F
     :pswitch_2
     invoke-direct {p0}, Landroid/widget/Editor$HandleView;->filterOnTouchUp()V
+
+    invoke-direct/range {p0 .. p0}, Landroid/widget/Editor$HandleView;->showOptionWrapper()V
 
     :pswitch_3
     iput-boolean v8, p0, Landroid/widget/Editor$HandleView;->mIsDragging:Z

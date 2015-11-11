@@ -1409,6 +1409,8 @@
 
     invoke-static {v0, v1}, Landroid/miui/ResourcesManager;->initMiuiResource(Landroid/content/res/Resources;Ljava/lang/String;)V
 
+    invoke-static {}, Landroid/content/res/Resources$FlymeInjector;->setSystemFlymeThemeResource()V
+
     :cond_0
     monitor-exit v2
 

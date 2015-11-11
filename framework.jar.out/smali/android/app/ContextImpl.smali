@@ -751,6 +751,8 @@
 
     invoke-static {}, Landroid/app/ContextImplInjector;->registerMiuiServices()V
 
+    invoke-static {}, Landroid/app/ContextImpl;->registeFlymeManager()V
+
     return-void
 .end method
 
@@ -966,6 +968,8 @@
     iget-object v1, v1, Landroid/app/LoadedApk;->mPackageName:Ljava/lang/String;
 
     invoke-static {v11, v1}, Landroid/miui/ResourcesManager;->initMiuiResource(Landroid/content/res/Resources;Ljava/lang/String;)V
+
+    invoke-direct {p0, v11, p3}, Landroid/app/ContextImpl;->setFlymeThemeResource(Landroid/content/res/Resources;Landroid/app/LoadedApk;)V
 
     :cond_4
     iput-object v11, p0, Landroid/app/ContextImpl;->mResources:Landroid/content/res/Resources;

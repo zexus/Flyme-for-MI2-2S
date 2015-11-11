@@ -22,6 +22,18 @@
 
 
 # instance fields
+.field private mCanDragSelection:Z
+
+.field private mDownMotionX:I
+
+.field private mDownMotionY:I
+
+.field private mDragSlop:I
+
+.field private mIsDragSelectionToTop:Z
+
+.field private mIsMoved:Z
+
 .field private mDoubleTabed:Z
 
 .field private mDownPositionX:F
@@ -539,6 +551,8 @@
 
     :cond_1
     :goto_1
+    invoke-direct/range {p0 .. p1}, Landroid/widget/Editor$SelectionModifierCursorController;->injectTouchEvent(Landroid/view/MotionEvent;)V
+
     return-void
 
     :pswitch_1

@@ -5466,7 +5466,15 @@
 
     move/from16 v2, p5
 
+    invoke-static/range {p0 .. p0}, Landroid/widget/Editor$FlymeInjector;->mzIsCursorVisible(Landroid/widget/Editor;)Z
+
+    move-result v7
+
+    if-eqz v7, :cond_flyme_0
+
     invoke-direct {v0, v1, v2}, Landroid/widget/Editor;->drawCursor(Landroid/graphics/Canvas;I)V
+
+    :cond_flyme_0
 
     const/16 p3, 0x0
 
@@ -7072,6 +7080,18 @@
     .locals 2
 
     .prologue
+    iget-object v0, p0, Landroid/widget/Editor;->mTextView:Landroid/widget/TextView;
+
+    if-eqz v0, :cond_flyme_0
+
+    invoke-virtual/range {p0 .. p0}, Landroid/widget/Editor;->startSelectionActionModeMz()Z
+
+    move-result v1
+
+    return v1
+
+    :cond_flyme_0
+
     const/4 v0, 0x0
 
     invoke-direct {p0}, Landroid/widget/Editor;->canSelectText()Z
@@ -7143,6 +7163,8 @@
     invoke-virtual {v0}, Landroid/widget/Editor$SelectionModifierCursorController;->hide()V
 
     :cond_1
+    invoke-static/range {p0 .. p0}, Landroid/widget/Editor$FlymeInjector;->hideSelectionModifierCursorController(Landroid/widget/Editor;)V
+
     return-void
 .end method
 

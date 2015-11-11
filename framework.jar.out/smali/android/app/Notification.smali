@@ -845,6 +845,8 @@
 
     iput v1, p0, Landroid/app/Notification;->color:I
 
+    invoke-static/range {p0 .. p1}, Landroid/app/Notification$FlymeInject;->initNotificationExt(Landroid/app/Notification;Landroid/os/Parcel;)V
+
     iget-object v1, p0, Landroid/app/Notification;->extraNotification:Landroid/app/MiuiNotification;
 
     invoke-virtual {v1, p1}, Landroid/app/MiuiNotification;->readFromParcel(Landroid/os/Parcel;)V
@@ -1540,6 +1542,8 @@
     iget-object v6, p0, Landroid/app/Notification;->extraNotification:Landroid/app/MiuiNotification;
 
     invoke-virtual {v5, v6}, Landroid/app/MiuiNotification;->setTo(Landroid/app/MiuiNotification;)V
+
+    invoke-static/range {p0 .. p1}, Landroid/app/Notification$FlymeInject;->cloneIntoFlyme(Landroid/app/Notification;Landroid/app/Notification;)V
 
     return-void
 .end method
@@ -2371,6 +2375,8 @@
     iget-object v0, p0, Landroid/app/Notification;->extraNotification:Landroid/app/MiuiNotification;
 
     invoke-virtual {v0, p1, p2}, Landroid/app/MiuiNotification;->writeToParcel(Landroid/os/Parcel;I)V
+
+    invoke-static/range {p0 .. p2}, Landroid/app/Notification$FlymeInject;->writeToParcelFlyme(Landroid/app/Notification;Landroid/os/Parcel;I)V
 
     return-void
 

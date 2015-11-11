@@ -63,6 +63,22 @@
 
 
 # static fields
+.field public static final ACTION_DRAG_FLAG_NFC_SHARE:I = 0x1
+
+.field public static final ACTION_DRAG_FLAG_NONE:I = 0x0
+
+.field public static final ACTION_TYPE_NORMAL:I = 0x0
+
+.field public static final ACTION_TYPE_WARNING:I = 0x1
+
+.field private static final CHECK_SPRINGBACK_DURATION:I = 0x32
+
+.field public static final CHOICE_MODE_MULTIPLE_MODAL_MZ:I = 0x4
+
+.field public static final CHOICE_MODE_MULTIPLE_MODAL_MZ_ALWAYS:I = 0x5
+
+.field private static final SPRINGBACK_DELAY_DURATION:I = 0x3e8
+
 .field static final BOUNCE_BACK_TIME:I = 0x190
 
 .field static final BOUNCE_DECAY:F = 0.98f
@@ -2657,6 +2673,16 @@
     .locals 5
 
     .prologue
+    invoke-static/range {p0 .. p0}, Landroid/widget/AbsListView$FlymeInjector;->mzOnTouchCancel(Landroid/widget/AbsListView;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_flyme_0
+
+    return-void
+
+    :cond_flyme_0
+
     const/4 v4, -0x1
 
     const/4 v3, 0x0
@@ -3276,6 +3302,7 @@
     packed-switch v18, :pswitch_data_0
 
     :cond_1
+    :cond_flyme_0
     :goto_0
     :pswitch_0
     const/16 v18, 0x0
@@ -7064,6 +7091,8 @@
     invoke-virtual {p1, v4}, Landroid/graphics/Canvas;->restoreToCount(I)V
 
     :cond_5
+    invoke-static/range {p0 .. p1}, Landroid/widget/AbsListView$FlymeInjector;->mzDispatchDraw(Landroid/widget/AbsListView;Landroid/graphics/Canvas;)V
+
     return-void
 
     .end local v1    # "clipToPadding":Z

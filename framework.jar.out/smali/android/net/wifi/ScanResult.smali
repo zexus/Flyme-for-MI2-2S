@@ -188,6 +188,8 @@
 
     iput-boolean v0, p0, Landroid/net/wifi/ScanResult;->isXiaomiRouter:Z
 
+    invoke-direct/range {p0 .. p1}, Landroid/net/wifi/ScanResult;->setHexSSID(Landroid/net/wifi/ScanResult;)V
+
     :cond_0
     return-void
 .end method

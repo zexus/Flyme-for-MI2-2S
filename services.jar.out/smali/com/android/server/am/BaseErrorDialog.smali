@@ -17,7 +17,7 @@
     .prologue
     const/high16 v3, 0x20000
 
-    sget v1, Lmiui/R$style;->Theme_Light_Dialog_Alert:I
+    sget v1, Lcom/flyme/internal/R$style;->Theme_Flyme_Light_Dialog_Alert:I
 
     invoke-direct {p0, p1, v1}, Landroid/app/AlertDialog;-><init>(Landroid/content/Context;I)V
 
