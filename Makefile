@@ -56,7 +56,7 @@ vendor_modify_images := boot
 #-----------------------------------------------------------------------------
 vendor_saved_apps := Bluetooth KeyChain HTMLViewer UserDictionaryProvider BackupRestoreConfirmation \
                      FusedLocation PrintSpooler SharedStorageBackup  ExternalStorageProvider InputDevices \
-                     ProxyHandler Shell DefaultContainerService
+                     ProxyHandler Shell DefaultContainerService miui miuisystem
 
 ##############################################################################
 # The value decides which vendor apk you want to modify.
@@ -95,7 +95,54 @@ board_saved_files := lib/libwebviewchromium.so
 # The default value is nothing.
 # You can configure the board system apk name in the value.
 #-----------------------------------------------------------------------------
-#board_remove_apps := LogReport
+board_remove_apps += \
+    LogReport \
+    AlarmClock \
+    AppCenter \
+    Calculator \
+    Calendar \
+    Camera \
+    DownloadProviderUi \
+    FileManager \
+    GameCenter \
+    IflytekSpeechService \
+    MzAccount \
+    MzBackup \
+    MzBlockService \
+    MzCloudService \
+    MzCountService \
+    MzMPay \
+    MzSecurity \
+    MzSetupWizard \
+    MzSmartComService \
+    MzSnsSyncService \
+    MzSyncService \
+    MzUpdate \
+    NotePaper \
+    Painter \
+    Reader \
+    Search \
+    Weather \
+    AliAppACount \
+    Browser \
+    Contacts \
+    CustomizeCenter \
+    Dialer \
+    Email \
+    Gallery \
+    Keyguard \
+    Life \
+    Mms \
+    Music \
+    MusicFX \
+    MzAccountPlugin \
+    MzInput \
+    NetworkLocation_baidu \
+    Settings \
+    SoundRecorder \
+    SystemUI \
+    Video \
+    VoiceAssistant
 
 ##############################################################################
 # The value decides which apk you want to modify, when the apk is based on the board system apk.
