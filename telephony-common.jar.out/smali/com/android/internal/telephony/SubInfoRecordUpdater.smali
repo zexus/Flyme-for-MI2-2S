@@ -2874,11 +2874,11 @@
     invoke-static/range {v19 .. v19}, Lcom/android/internal/telephony/SubInfoRecordUpdater;->logd(Ljava/lang/String;)V
 
     .line 554
-    invoke-static {}, Lmiui/telephony/MiuiTelephony;->getInstance()Lmiui/telephony/MiuiTelephony;
+    #invoke-static {}, Lmiui/telephony/MiuiTelephony;->getInstance()Lmiui/telephony/MiuiTelephony;
 
-    move-result-object v19
+    #move-result-object v19
 
-    invoke-virtual/range {v19 .. v19}, Lmiui/telephony/MiuiTelephony;->onSubscriptionChanged()V
+    #invoke-virtual/range {v19 .. v19}, Lmiui/telephony/MiuiTelephony;->onSubscriptionChanged()V
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 

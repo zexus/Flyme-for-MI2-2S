@@ -123,7 +123,7 @@ board_remove_apps += \
     Reader \
     Search \
     Weather \
-    AliAppACount \
+    AliAppAccount \
     Browser \
     Contacts \
     CustomizeCenter \
