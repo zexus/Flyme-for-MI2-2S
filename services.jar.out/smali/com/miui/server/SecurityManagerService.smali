@@ -260,7 +260,7 @@
     invoke-direct {p0}, Lcom/miui/server/SecurityManagerService;->readWakeUpTime()V
 
     .line 222
-    invoke-direct {p0, p2}, Lcom/miui/server/SecurityManagerService;->checkSystemSelfProtection(Z)V
+    #invoke-direct {p0, p2}, Lcom/miui/server/SecurityManagerService;->checkSystemSelfProtection(Z)V
 
     .line 223
     return-void
