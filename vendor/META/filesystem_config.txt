@@ -292,7 +292,6 @@ system/bin/init.atmel.fw_update.sh 0 2000 755 selabel=u:object_r:system_file:s0 
 system/bin/input 0 2000 755 selabel=u:object_r:system_file:s0 capabilities=0x0
 system/bin/insmod 0 2000 755 selabel=u:object_r:system_file:s0 capabilities=0x0
 system/bin/installd 0 2000 755 selabel=u:object_r:installd_exec:s0 capabilities=0x0
-system/bin/install-recovery.sh 0 0 750 selabel=u:object_r:install_recovery_exec:s0 capabilities=0x0
 system/bin/ioctl 0 2000 755 selabel=u:object_r:system_file:s0 capabilities=0x0
 system/bin/ionice 0 2000 755 selabel=u:object_r:system_file:s0 capabilities=0x0
 system/bin/ip 0 2000 755 selabel=u:object_r:system_file:s0 capabilities=0x0
@@ -1494,7 +1493,7 @@ system/lib/ssl 0 0 755 selabel=u:object_r:system_file:s0 capabilities=0x0
 system/lib/ssl/engines 0 0 755 selabel=u:object_r:system_file:s0 capabilities=0x0
 system/lib/ssl/engines/libkeystore.so 0 0 644 selabel=u:object_r:system_file:s0 capabilities=0x0
 system/lib/xmpass_libweibosdkcore.so 0 0 644 selabel=u:object_r:system_file:s0 capabilities=0x0
-system/lost+found 0 0 755 selabel=u:object_r:system_file:s0 capabilities=0x0
+system/lost+found 0 0 700 selabel=u:object_r:system_file:s0 capabilities=0x0
 system/media 0 0 755 selabel=u:object_r:system_file:s0 capabilities=0x0
 system/media/audio 0 0 755 selabel=u:object_r:system_file:s0 capabilities=0x0
 system/media/audio/alarms 0 0 755 selabel=u:object_r:system_file:s0 capabilities=0x0
@@ -1962,7 +1961,6 @@ system/priv-app/WeatherProvider/WeatherProvider.apk 0 0 644 selabel=u:object_r:s
 system/priv-app/Weather/Weather.apk 0 0 644 selabel=u:object_r:system_file:s0 capabilities=0x0
 system/priv-app/YellowPage 0 0 755 selabel=u:object_r:system_file:s0 capabilities=0x0
 system/priv-app/YellowPage/YellowPage.apk 0 0 644 selabel=u:object_r:system_file:s0 capabilities=0x0
-system/recovery-from-boot.p 0 0 644 selabel=u:object_r:system_file:s0 capabilities=0x0
 system/tts 0 0 755 selabel=u:object_r:system_file:s0 capabilities=0x0
 system/tts/lang_pico 0 0 755 selabel=u:object_r:system_file:s0 capabilities=0x0
 system/tts/lang_pico/de-DE_gl0_sg.bin 0 0 644 selabel=u:object_r:system_file:s0 capabilities=0x0
