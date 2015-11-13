@@ -56,8 +56,7 @@ vendor_modify_images := boot
 #-----------------------------------------------------------------------------
 vendor_saved_apps := Bluetooth KeyChain HTMLViewer UserDictionaryProvider BackupRestoreConfirmation \
                      FusedLocation PrintSpooler SharedStorageBackup  ExternalStorageProvider InputDevices \
-                     ProxyHandler Shell DefaultContainerService miui miuisystem SecurityCenter Updater MiuiSuperMarket \
-					 com.qualcomm.location
+                     ProxyHandler Shell DefaultContainerService miui miuisystem com.qualcomm.location
 
 ##############################################################################
 # The value decides which vendor apk you want to modify.
