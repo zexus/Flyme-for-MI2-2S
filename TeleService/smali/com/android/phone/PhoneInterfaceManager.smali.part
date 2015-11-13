@@ -1,0 +1,11 @@
+.method public getMiuiTelephony()Lmiui/telephony/IMiuiTelephony;
+    .locals 1
+
+    .prologue
+    .line 2243
+    invoke-static {}, Lmiui/telephony/MiuiTelephony;->getInstance()Lmiui/telephony/MiuiTelephony;
+
+    move-result-object v0
+
+    return-object v0
+.end method
