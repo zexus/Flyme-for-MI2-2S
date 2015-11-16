@@ -736,7 +736,7 @@ def LoadPartitionFiles(z, partition):
   prefix = partition.upper() + "/"
   for info in z.infolist():
     if info.filename.startswith(prefix) and not IsSymlink(info):
-      basefilename = info.filename[7:]
+      basefilename = info.filename[(len(partition) + 1):]
       fn = partition + "/" + basefilename
       data = z.read(info.filename)
       out[fn] = common.File(fn, data)
