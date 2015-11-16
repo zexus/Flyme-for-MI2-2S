@@ -95,7 +95,14 @@ board_saved_files := lib/libwebviewchromium.so
 # The default value is nothing.
 # You can configure the board system apk name in the value.
 #-----------------------------------------------------------------------------
-#board_remove_apps += LogReport AlarmClock AppCenter Calculator Calendar Camera DownloadProviderUi FileManager GameCenter IflytekSpeechService MzAccount MzBackup MzBlockService MzCloudService MzCountService MzMPay MzSecurity MzSmartComService MzSnsSyncService MzSyncService MzUpdate NotePaper Painter Reader Search Weather AliAppAccount Browser Contacts CustomizeCenter Dialer Email Gallery Keyguard Life Mms Music MusicFX MzAccountPlugin MzInput NetworkLocation_baidu Settings SoundRecorder SystemUI Video VoiceAssistant
+#board_remove_apps :=
+
+##############################################################################
+# The value decides which board apk you wanna remove to data partition.
+# The default value is nothing.
+# You can configure the board apk name in the value.
+#-----------------------------------------------------------------------------
+board_remove_apps_to_data += LogReport AlarmClock AppCenter Calculator Calendar Camera DownloadProviderUi FileManager GameCenter IflytekSpeechService MzAccount MzBackup MzBlockService MzCloudService MzCountService MzMPay MzSecurity MzSmartComService MzSnsSyncService MzSyncService MzUpdate NotePaper Painter Reader Search Weather AliAppAccount Browser Contacts CustomizeCenter Dialer Email Gallery Keyguard Life Mms Music MusicFX MzAccountPlugin MzInput NetworkLocation_baidu Settings SoundRecorder SystemUI Video VoiceAssistant
 
 ##############################################################################
 # The value decides which apk you want to modify, when the apk is based on the board system apk.
