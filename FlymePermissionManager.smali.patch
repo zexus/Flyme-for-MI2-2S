@@ -1,0 +1,19 @@
+--- origin/framework.jar.out/smali/meizu/security/FlymePermissionManager.smali	2015-11-18 17:03:02.018616923 +0800
++++ modify/framework.jar.out/smali/meizu/security/FlymePermissionManager.smali	2015-11-18 17:04:46.314615605 +0800
+@@ -158,14 +158,12 @@
+     .locals 3
+ 
+     .prologue
+-    .line 46
+-    const/4 v0, 0x1
++    const/4 v0, 0x0
+ 
++    .line 46
+     sput-boolean v0, Lmeizu/security/FlymePermissionManager;->ISCHECK:Z
+ 
+     .line 47
+-    const/4 v0, 0x0
+-
+     sput-boolean v0, Lmeizu/security/FlymePermissionManager;->IS_CTA_LEVEL_4_CHECK:Z
+ 
+     .line 391
