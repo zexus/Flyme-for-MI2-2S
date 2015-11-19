@@ -237,6 +237,8 @@
 
     move-result-object v0
 
+    if-eqz v0, :cond_0
+
     .local v0, "arr$":[Ljava/io/File;
     array-length v4, v0
 
