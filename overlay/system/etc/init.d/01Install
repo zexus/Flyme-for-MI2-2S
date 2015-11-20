@@ -8,7 +8,7 @@ SYSTEM_PRIV_APP_DIR=/system/priv-app
 
 mount -o remount /system
 
-for file in `grep -rns "app2data" /system/etc/data.conf | cut -d "=" -f2`
+for file in `grep -rns "app2data" /system/etc/data.conf | busybox cut -d "=" -f2`
 do
 	if [ ! -d "$DATA_APP/$file" ];then
 		cp -rf $FLYME_APP/$file $DATA_APP/
@@ -18,7 +18,7 @@ do
 	fi
 done
 
-for file in `grep -rns "priv_app2data" /system/etc/data.conf | cut -d "=" -f2`
+for file in `grep -rns "priv_app2data" /system/etc/data.conf | busybox cut -d "=" -f2`
 do
 	if [ ! -d "$DATA_APP/$file" ];then
 		cp -rf $FLYME_APP/$file $DATA_APP/
@@ -28,7 +28,7 @@ do
 	fi
 done
 
-for file in `grep -rns "fonts2data" /system/etc/data.conf | cut -d "=" -f2`
+for file in `grep -rns "fonts2data" /system/etc/data.conf | busybox cut -d "=" -f2`
 do
 	if [ ! -L "/system/fonts/$file" ];then
 		ln -s $FLYME_FONT/$file /system/fonts/$file
