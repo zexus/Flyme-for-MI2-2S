@@ -114,7 +114,7 @@
 
     sput-object v0, Landroid/content/res/flymetheme/FlymeThemeUtils;->PIXELS:[Ljava/lang/String;
 
-    const/16 v0, 0x2b
+    const/16 v0, 0x35
 
     new-array v0, v0, [Ljava/lang/String;
 
@@ -363,6 +363,66 @@
     const/16 v1, 0x2a
 
     const-string v2, "com.meizu.voiceassistant"
+
+    aput-object v2, v0, v1
+
+    const/16 v1, 0x2b
+
+    const-string v2, "com.android.alarmclock"
+
+    aput-object v2, v0, v1
+
+    const/16 v1, 0x2c
+
+    const-string v2, "com.android.calendar"
+
+    aput-object v2, v0, v1
+
+    const/16 v1, 0x2d
+
+    const-string v2, "com.android.email"
+
+    aput-object v2, v0, v1
+
+    const/16 v1, 0x2e
+
+    const-string v2, "com.android.settings"
+
+    aput-object v2, v0, v1
+
+    const/16 v1, 0x2f
+
+    const-string v2, "com.android.dialer"
+
+    aput-object v2, v0, v1
+
+    const/16 v1, 0x30
+
+    const-string v2, "com.android.browser"
+
+    aput-object v2, v0, v1
+
+    const/16 v1, 0x31
+
+    const-string v2, "com.android.mms"
+
+    aput-object v2, v0, v1
+
+    const/16 v1, 0x32
+
+    const-string v2, "com.android.soundrecorder"
+
+    aput-object v2, v0, v1
+
+    const/16 v1, 0x33
+
+    const-string v2, "com.meizu.media.painter"
+
+    aput-object v2, v0, v1
+
+    const/16 v1, 0x34
+
+    const-string v2, "com.android.providers.downloads.ui"
 
     aput-object v2, v0, v1
 
