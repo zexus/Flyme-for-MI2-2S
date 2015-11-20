@@ -431,6 +431,8 @@ on boot
     # Define default initial receive window size in segments.
     setprop net.tcp.default_init_rwnd 60
 
+    start sysinit
+
     class_start core
 
 on nonencrypted
