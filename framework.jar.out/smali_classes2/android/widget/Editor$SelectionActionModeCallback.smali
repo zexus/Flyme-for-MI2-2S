@@ -36,6 +36,18 @@
     return-void
 .end method
 
+.method synthetic constructor <init>(Landroid/widget/Editor;Landroid/widget/Editor$1;)V
+    .locals 0
+    .param p1, "x0"    # Landroid/widget/Editor;
+    .param p2, "x1"    # Landroid/widget/Editor$1;
+
+    .prologue
+    .line 2790
+    invoke-direct {p0, p1}, Landroid/widget/Editor$SelectionActionModeCallback;-><init>(Landroid/widget/Editor;)V
+
+    return-void
+.end method
+
 
 # virtual methods
 .method public onActionItemClicked(Landroid/view/ActionMode;Landroid/view/MenuItem;)Z
