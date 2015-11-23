@@ -1,4 +1,4 @@
-.class Lcom/android/settings/location/MiuiLocationSettings$3;
+.class Lcom/android/settings_ext/location/MiuiLocationSettings$3;
 .super Ljava/lang/Object;
 .source "MiuiLocationSettings.java"
 
@@ -7,16 +7,16 @@
 
 
 # instance fields
-.field final synthetic acW:Lcom/android/settings/location/MiuiLocationSettings;
+.field final synthetic acW:Lcom/android/settings_ext/location/MiuiLocationSettings;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/location/MiuiLocationSettings;)V
+.method constructor <init>(Lcom/android/settings_ext/location/MiuiLocationSettings;)V
     .locals 0
 
     .prologue
     .line 222
-    iput-object p1, p0, Lcom/android/settings/location/MiuiLocationSettings$3;->acW:Lcom/android/settings/location/MiuiLocationSettings;
+    iput-object p1, p0, Lcom/android/settings_ext/location/MiuiLocationSettings$3;->acW:Lcom/android/settings_ext/location/MiuiLocationSettings;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -32,15 +32,15 @@
     const/4 v1, 0x1
 
     .line 225
-    iget-object v0, p0, Lcom/android/settings/location/MiuiLocationSettings$3;->acW:Lcom/android/settings/location/MiuiLocationSettings;
+    iget-object v0, p0, Lcom/android/settings_ext/location/MiuiLocationSettings$3;->acW:Lcom/android/settings_ext/location/MiuiLocationSettings;
 
-    invoke-static {v0}, Lcom/android/settings/location/MiuiLocationSettings;->b(Lcom/android/settings/location/MiuiLocationSettings;)Landroid/preference/Preference;
+    invoke-static {v0}, Lcom/android/settings_ext/location/MiuiLocationSettings;->b(Lcom/android/settings_ext/location/MiuiLocationSettings;)Landroid/preference/Preference;
 
     move-result-object v0
 
-    iget-object v2, p0, Lcom/android/settings/location/MiuiLocationSettings$3;->acW:Lcom/android/settings/location/MiuiLocationSettings;
+    iget-object v2, p0, Lcom/android/settings_ext/location/MiuiLocationSettings$3;->acW:Lcom/android/settings_ext/location/MiuiLocationSettings;
 
-    invoke-static {v2}, Lcom/android/settings/location/MiuiLocationSettings;->a(Lcom/android/settings/location/MiuiLocationSettings;)Landroid/preference/CheckBoxPreference;
+    invoke-static {v2}, Lcom/android/settings_ext/location/MiuiLocationSettings;->a(Lcom/android/settings_ext/location/MiuiLocationSettings;)Landroid/preference/CheckBoxPreference;
 
     move-result-object v2
 
@@ -51,15 +51,15 @@
     invoke-virtual {v0, v2}, Landroid/preference/Preference;->setEnabled(Z)V
 
     .line 226
-    iget-object v0, p0, Lcom/android/settings/location/MiuiLocationSettings$3;->acW:Lcom/android/settings/location/MiuiLocationSettings;
+    iget-object v0, p0, Lcom/android/settings_ext/location/MiuiLocationSettings$3;->acW:Lcom/android/settings_ext/location/MiuiLocationSettings;
 
-    invoke-static {v0}, Lcom/android/settings/location/MiuiLocationSettings;->c(Lcom/android/settings/location/MiuiLocationSettings;)Landroid/location/LocationPolicyManager;
+    invoke-static {v0}, Lcom/android/settings_ext/location/MiuiLocationSettings;->c(Lcom/android/settings_ext/location/MiuiLocationSettings;)Landroid/location/LocationPolicyManager;
 
     move-result-object v2
 
-    iget-object v0, p0, Lcom/android/settings/location/MiuiLocationSettings$3;->acW:Lcom/android/settings/location/MiuiLocationSettings;
+    iget-object v0, p0, Lcom/android/settings_ext/location/MiuiLocationSettings$3;->acW:Lcom/android/settings_ext/location/MiuiLocationSettings;
 
-    invoke-static {v0}, Lcom/android/settings/location/MiuiLocationSettings;->a(Lcom/android/settings/location/MiuiLocationSettings;)Landroid/preference/CheckBoxPreference;
+    invoke-static {v0}, Lcom/android/settings_ext/location/MiuiLocationSettings;->a(Lcom/android/settings_ext/location/MiuiLocationSettings;)Landroid/preference/CheckBoxPreference;
 
     move-result-object v0
 

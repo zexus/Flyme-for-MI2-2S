@@ -1,4 +1,4 @@
-.class public Lcom/android/settings/dndmode/m;
+.class public Lcom/android/settings_ext/dndmode/m;
 .super Ljava/lang/Object;
 .source "DoNotDisturbModeUtils.java"
 
@@ -13,7 +13,7 @@
 
     move-result v0
 
-    invoke-static {v0}, Lcom/android/settings/dndmode/m;->bE(I)J
+    invoke-static {v0}, Lcom/android/settings_ext/dndmode/m;->bE(I)J
 
     move-result-wide v0
 
@@ -22,12 +22,12 @@
 
     move-result v2
 
-    invoke-static {v2}, Lcom/android/settings/dndmode/m;->bE(I)J
+    invoke-static {v2}, Lcom/android/settings_ext/dndmode/m;->bE(I)J
 
     move-result-wide v2
 
     .line 82
-    invoke-static {p0, v0, v1, v2, v3}, Lcom/android/settings/dndmode/m;->b(Landroid/content/Context;JJ)V
+    invoke-static {p0, v0, v1, v2, v3}, Lcom/android/settings_ext/dndmode/m;->b(Landroid/content/Context;JJ)V
 
     .line 83
     return-void
@@ -45,10 +45,10 @@
     invoke-static {v0, v1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
     .line 103
-    invoke-static {p0}, Lcom/android/settings/dndmode/m;->aM(Landroid/content/Context;)V
+    invoke-static {p0}, Lcom/android/settings_ext/dndmode/m;->aM(Landroid/content/Context;)V
 
     .line 105
-    invoke-static {p0}, Lcom/android/settings/dndmode/m;->aJ(Landroid/content/Context;)V
+    invoke-static {p0}, Lcom/android/settings_ext/dndmode/m;->aJ(Landroid/content/Context;)V
 
     .line 106
     return-void
@@ -146,7 +146,7 @@
     .line 143
     new-instance v1, Landroid/content/Intent;
 
-    const-class v0, Lcom/android/settings/dndmode/DoNotDisturbModeReceiver;
+    const-class v0, Lcom/android/settings_ext/dndmode/DoNotDisturbModeReceiver;
 
     invoke-direct {v1, p0, v0}, Landroid/content/Intent;-><init>(Landroid/content/Context;Ljava/lang/Class;)V
 
@@ -209,7 +209,7 @@
     .line 67
     new-instance v1, Landroid/content/Intent;
 
-    const-class v2, Lcom/android/settings/dndmode/DoNotDisturbModeReceiver;
+    const-class v2, Lcom/android/settings_ext/dndmode/DoNotDisturbModeReceiver;
 
     invoke-direct {v1, p0, v2}, Landroid/content/Intent;-><init>(Landroid/content/Context;Ljava/lang/Class;)V
 

@@ -1,4 +1,4 @@
-.class public interface abstract Lcom/android/settings/wifi/V;
+.class public interface abstract Lcom/android/settings_ext/wifi/V;
 .super Ljava/lang/Object;
 .source "WifiConfigUiBase.java"
 

@@ -1,5 +1,5 @@
-.class public Lcom/android/settings/Settings$VpnSettingsActivity;
-.super Lcom/android/settings/gh;
+.class public Lcom/android/settings_ext/Settings$VpnSettingsActivity;
+.super Lcom/android/settings_ext/gh;
 .source "Settings.java"
 
 
@@ -9,7 +9,7 @@
 
     .prologue
     .line 32
-    invoke-direct {p0}, Lcom/android/settings/gh;-><init>()V
+    invoke-direct {p0}, Lcom/android/settings_ext/gh;-><init>()V
 
     return-void
 .end method

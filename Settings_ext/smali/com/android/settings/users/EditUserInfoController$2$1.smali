@@ -1,19 +1,19 @@
-.class Lcom/android/settings/users/EditUserInfoController$2$1;
+.class Lcom/android/settings_ext/users/EditUserInfoController$2$1;
 .super Landroid/os/AsyncTask;
 .source "EditUserInfoController.java"
 
 
 # instance fields
-.field final synthetic ame:Lcom/android/settings/users/EditUserInfoController$2;
+.field final synthetic ame:Lcom/android/settings_ext/users/EditUserInfoController$2;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/users/EditUserInfoController$2;)V
+.method constructor <init>(Lcom/android/settings_ext/users/EditUserInfoController$2;)V
     .locals 0
 
     .prologue
     .line 168
-    iput-object p1, p0, Lcom/android/settings/users/EditUserInfoController$2$1;->ame:Lcom/android/settings/users/EditUserInfoController$2;
+    iput-object p1, p0, Lcom/android/settings_ext/users/EditUserInfoController$2$1;->ame:Lcom/android/settings_ext/users/EditUserInfoController$2;
 
     invoke-direct {p0}, Landroid/os/AsyncTask;-><init>()V
 
@@ -29,7 +29,7 @@
     .line 168
     check-cast p1, [Ljava/lang/Void;
 
-    invoke-virtual {p0, p1}, Lcom/android/settings/users/EditUserInfoController$2$1;->doInBackground([Ljava/lang/Void;)Ljava/lang/Void;
+    invoke-virtual {p0, p1}, Lcom/android/settings_ext/users/EditUserInfoController$2$1;->doInBackground([Ljava/lang/Void;)Ljava/lang/Void;
 
     move-result-object v0
 
@@ -41,19 +41,19 @@
 
     .prologue
     .line 171
-    iget-object v0, p0, Lcom/android/settings/users/EditUserInfoController$2$1;->ame:Lcom/android/settings/users/EditUserInfoController$2;
+    iget-object v0, p0, Lcom/android/settings_ext/users/EditUserInfoController$2$1;->ame:Lcom/android/settings_ext/users/EditUserInfoController$2;
 
-    iget-object v0, v0, Lcom/android/settings/users/EditUserInfoController$2;->alZ:Lcom/android/settings/users/EditUserInfoController;
+    iget-object v0, v0, Lcom/android/settings_ext/users/EditUserInfoController$2;->alZ:Lcom/android/settings_ext/users/EditUserInfoController;
 
-    invoke-static {v0}, Lcom/android/settings/users/EditUserInfoController;->b(Lcom/android/settings/users/EditUserInfoController;)Landroid/os/UserManager;
+    invoke-static {v0}, Lcom/android/settings_ext/users/EditUserInfoController;->b(Lcom/android/settings_ext/users/EditUserInfoController;)Landroid/os/UserManager;
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/android/settings/users/EditUserInfoController$2$1;->ame:Lcom/android/settings/users/EditUserInfoController$2;
+    iget-object v1, p0, Lcom/android/settings_ext/users/EditUserInfoController$2$1;->ame:Lcom/android/settings_ext/users/EditUserInfoController$2;
 
-    iget-object v1, v1, Lcom/android/settings/users/EditUserInfoController$2;->alZ:Lcom/android/settings/users/EditUserInfoController;
+    iget-object v1, v1, Lcom/android/settings_ext/users/EditUserInfoController$2;->alZ:Lcom/android/settings_ext/users/EditUserInfoController;
 
-    invoke-static {v1}, Lcom/android/settings/users/EditUserInfoController;->a(Lcom/android/settings/users/EditUserInfoController;)Landroid/os/UserHandle;
+    invoke-static {v1}, Lcom/android/settings_ext/users/EditUserInfoController;->a(Lcom/android/settings_ext/users/EditUserInfoController;)Landroid/os/UserHandle;
 
     move-result-object v1
 
@@ -61,15 +61,15 @@
 
     move-result v1
 
-    iget-object v2, p0, Lcom/android/settings/users/EditUserInfoController$2$1;->ame:Lcom/android/settings/users/EditUserInfoController$2;
+    iget-object v2, p0, Lcom/android/settings_ext/users/EditUserInfoController$2$1;->ame:Lcom/android/settings_ext/users/EditUserInfoController$2;
 
-    iget-object v2, v2, Lcom/android/settings/users/EditUserInfoController$2;->alZ:Lcom/android/settings/users/EditUserInfoController;
+    iget-object v2, v2, Lcom/android/settings_ext/users/EditUserInfoController$2;->alZ:Lcom/android/settings_ext/users/EditUserInfoController;
 
-    invoke-static {v2}, Lcom/android/settings/users/EditUserInfoController;->c(Lcom/android/settings/users/EditUserInfoController;)Lcom/android/settings/users/EditUserPhotoController;
+    invoke-static {v2}, Lcom/android/settings_ext/users/EditUserInfoController;->c(Lcom/android/settings_ext/users/EditUserInfoController;)Lcom/android/settings_ext/users/EditUserPhotoController;
 
     move-result-object v2
 
-    invoke-virtual {v2}, Lcom/android/settings/users/EditUserPhotoController;->st()Landroid/graphics/Bitmap;
+    invoke-virtual {v2}, Lcom/android/settings_ext/users/EditUserPhotoController;->st()Landroid/graphics/Bitmap;
 
     move-result-object v2
 

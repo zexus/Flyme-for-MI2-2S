@@ -1,4 +1,4 @@
-.class Lcom/android/settings/hs;
+.class Lcom/android/settings_ext/hs;
 .super Ljava/lang/Object;
 .source "ZonePicker.java"
 
@@ -26,14 +26,14 @@
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
-    iput-object v0, p0, Lcom/android/settings/hs;->Ad:Ljava/util/List;
+    iput-object v0, p0, Lcom/android/settings_ext/hs;->Ad:Ljava/util/List;
 
     .line 265
     new-instance v0, Ljava/util/HashSet;
 
     invoke-direct {v0}, Ljava/util/HashSet;-><init>()V
 
-    iput-object v0, p0, Lcom/android/settings/hs;->Ae:Ljava/util/HashSet;
+    iput-object v0, p0, Lcom/android/settings_ext/hs;->Ae:Ljava/util/HashSet;
 
     .line 266
     invoke-static {}, Ljava/util/Calendar;->getInstance()Ljava/util/Calendar;
@@ -44,7 +44,7 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/hs;->Af:Ljava/util/Date;
+    iput-object v0, p0, Lcom/android/settings_ext/hs;->Af:Ljava/util/Date;
 
     .line 267
     new-instance v0, Ljava/text/SimpleDateFormat;
@@ -53,7 +53,7 @@
 
     invoke-direct {v0, v1}, Ljava/text/SimpleDateFormat;-><init>(Ljava/lang/String;)V
 
-    iput-object v0, p0, Lcom/android/settings/hs;->Ag:Ljava/text/SimpleDateFormat;
+    iput-object v0, p0, Lcom/android/settings_ext/hs;->Ag:Ljava/text/SimpleDateFormat;
 
     return-void
 .end method
@@ -70,7 +70,7 @@
     move-result-object v1
 
     .line 312
-    iget-object v0, p0, Lcom/android/settings/hs;->Ae:Ljava/util/HashSet;
+    iget-object v0, p0, Lcom/android/settings_ext/hs;->Ae:Ljava/util/HashSet;
 
     invoke-virtual {v0, p1}, Ljava/util/HashSet;->contains(Ljava/lang/Object;)Z
 
@@ -79,14 +79,14 @@
     if-eqz v0, :cond_0
 
     .line 314
-    iget-object v0, p0, Lcom/android/settings/hs;->Ag:Ljava/text/SimpleDateFormat;
+    iget-object v0, p0, Lcom/android/settings_ext/hs;->Ag:Ljava/text/SimpleDateFormat;
 
     invoke-virtual {v0, v1}, Ljava/text/SimpleDateFormat;->setTimeZone(Ljava/util/TimeZone;)V
 
     .line 315
-    iget-object v0, p0, Lcom/android/settings/hs;->Ag:Ljava/text/SimpleDateFormat;
+    iget-object v0, p0, Lcom/android/settings_ext/hs;->Ag:Ljava/text/SimpleDateFormat;
 
-    iget-object v2, p0, Lcom/android/settings/hs;->Af:Ljava/util/Date;
+    iget-object v2, p0, Lcom/android/settings_ext/hs;->Af:Ljava/util/Date;
 
     invoke-virtual {v0, v2}, Ljava/text/SimpleDateFormat;->format(Ljava/util/Date;)Ljava/lang/String;
 
@@ -132,7 +132,7 @@
     .line 327
     const-string v0, "gmt"
 
-    invoke-static {v1, v5}, Lcom/android/settings/DateTimeSettings;->a(Ljava/util/TimeZone;Z)Ljava/lang/String;
+    invoke-static {v1, v5}, Lcom/android/settings_ext/DateTimeSettings;->a(Ljava/util/TimeZone;Z)Ljava/lang/String;
 
     move-result-object v3
 
@@ -141,7 +141,7 @@
     .line 328
     const-string v0, "offset"
 
-    iget-object v3, p0, Lcom/android/settings/hs;->Af:Ljava/util/Date;
+    iget-object v3, p0, Lcom/android/settings_ext/hs;->Af:Ljava/util/Date;
 
     invoke-virtual {v3}, Ljava/util/Date;->getTime()J
 
@@ -158,7 +158,7 @@
     invoke-virtual {v2, v0, v1}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 330
-    iget-object v0, p0, Lcom/android/settings/hs;->Ad:Ljava/util/List;
+    iget-object v0, p0, Lcom/android/settings_ext/hs;->Ad:Ljava/util/List;
 
     invoke-interface {v0, v2}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
@@ -210,7 +210,7 @@
     aget-object v3, v1, v0
 
     .line 271
-    iget-object v4, p0, Lcom/android/settings/hs;->Ae:Ljava/util/HashSet;
+    iget-object v4, p0, Lcom/android/settings_ext/hs;->Ae:Ljava/util/HashSet;
 
     invoke-virtual {v4, v3}, Ljava/util/HashSet;->add(Ljava/lang/Object;)Z
 
@@ -269,7 +269,7 @@
     if-ne v1, v2, :cond_2
 
     .line 282
-    iget-object v0, p0, Lcom/android/settings/hs;->Ad:Ljava/util/List;
+    iget-object v0, p0, Lcom/android/settings_ext/hs;->Ad:Ljava/util/List;
 
     .line 301
     :goto_3
@@ -297,7 +297,7 @@
 
     .line 301
     :goto_4
-    iget-object v0, p0, Lcom/android/settings/hs;->Ad:Ljava/util/List;
+    iget-object v0, p0, Lcom/android/settings_ext/hs;->Ad:Ljava/util/List;
 
     goto :goto_3
 
@@ -324,7 +324,7 @@
     move-result-object v1
 
     .line 288
-    invoke-direct {p0, v1}, Lcom/android/settings/hs;->R(Ljava/lang/String;)V
+    invoke-direct {p0, v1}, Lcom/android/settings_ext/hs;->R(Ljava/lang/String;)V
 
     .line 290
     :cond_4
@@ -373,12 +373,12 @@
     goto :goto_4
 .end method
 
-.method static synthetic a(Lcom/android/settings/hs;Landroid/content/Context;)Ljava/util/List;
+.method static synthetic a(Lcom/android/settings_ext/hs;Landroid/content/Context;)Ljava/util/List;
     .locals 1
 
     .prologue
     .line 262
-    invoke-direct {p0, p1}, Lcom/android/settings/hs;->V(Landroid/content/Context;)Ljava/util/List;
+    invoke-direct {p0, p1}, Lcom/android/settings_ext/hs;->V(Landroid/content/Context;)Ljava/util/List;
 
     move-result-object v0
 

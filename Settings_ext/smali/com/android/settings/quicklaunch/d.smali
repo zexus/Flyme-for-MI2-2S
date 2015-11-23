@@ -1,19 +1,19 @@
-.class Lcom/android/settings/quicklaunch/d;
+.class Lcom/android/settings_ext/quicklaunch/d;
 .super Landroid/database/ContentObserver;
 .source "QuickLaunchSettings.java"
 
 
 # instance fields
-.field final synthetic ahS:Lcom/android/settings/quicklaunch/c;
+.field final synthetic ahS:Lcom/android/settings_ext/quicklaunch/c;
 
 
 # direct methods
-.method public constructor <init>(Lcom/android/settings/quicklaunch/c;Landroid/os/Handler;)V
+.method public constructor <init>(Lcom/android/settings_ext/quicklaunch/c;Landroid/os/Handler;)V
     .locals 0
 
     .prologue
     .line 360
-    iput-object p1, p0, Lcom/android/settings/quicklaunch/d;->ahS:Lcom/android/settings/quicklaunch/c;
+    iput-object p1, p0, Lcom/android/settings_ext/quicklaunch/d;->ahS:Lcom/android/settings_ext/quicklaunch/c;
 
     .line 361
     invoke-direct {p0, p2}, Landroid/database/ContentObserver;-><init>(Landroid/os/Handler;)V
@@ -32,9 +32,9 @@
     invoke-super {p0, p1}, Landroid/database/ContentObserver;->onChange(Z)V
 
     .line 368
-    iget-object v0, p0, Lcom/android/settings/quicklaunch/d;->ahS:Lcom/android/settings/quicklaunch/c;
+    iget-object v0, p0, Lcom/android/settings_ext/quicklaunch/d;->ahS:Lcom/android/settings_ext/quicklaunch/c;
 
-    invoke-static {v0}, Lcom/android/settings/quicklaunch/c;->a(Lcom/android/settings/quicklaunch/c;)V
+    invoke-static {v0}, Lcom/android/settings_ext/quicklaunch/c;->a(Lcom/android/settings_ext/quicklaunch/c;)V
 
     .line 369
     return-void

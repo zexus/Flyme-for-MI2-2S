@@ -1,4 +1,4 @@
-.class public Lcom/android/settings/backup/a;
+.class public Lcom/android/settings_ext/backup/a;
 .super Ljava/lang/Object;
 .source "AccountRestoreManager.java"
 
@@ -76,49 +76,49 @@
 
     move-result-object v0
 
-    sput-object v0, Lcom/android/settings/backup/a;->LH:Ljava/lang/String;
+    sput-object v0, Lcom/android/settings_ext/backup/a;->LH:Ljava/lang/String;
 
     .line 63
     new-instance v0, Ljava/util/HashSet;
 
     invoke-direct {v0}, Ljava/util/HashSet;-><init>()V
 
-    sput-object v0, Lcom/android/settings/backup/a;->LG:Ljava/util/HashSet;
+    sput-object v0, Lcom/android/settings_ext/backup/a;->LG:Ljava/util/HashSet;
 
     .line 64
-    sget-object v0, Lcom/android/settings/backup/a;->LG:Ljava/util/HashSet;
+    sget-object v0, Lcom/android/settings_ext/backup/a;->LG:Ljava/util/HashSet;
 
     const-string v1, "com.xiaomi"
 
     invoke-virtual {v0, v1}, Ljava/util/HashSet;->add(Ljava/lang/Object;)Z
 
     .line 65
-    sget-object v0, Lcom/android/settings/backup/a;->LG:Ljava/util/HashSet;
+    sget-object v0, Lcom/android/settings_ext/backup/a;->LG:Ljava/util/HashSet;
 
     const-string v1, "com.google"
 
     invoke-virtual {v0, v1}, Ljava/util/HashSet;->add(Ljava/lang/Object;)Z
 
     .line 66
-    sget-object v0, Lcom/android/settings/backup/a;->LG:Ljava/util/HashSet;
+    sget-object v0, Lcom/android/settings_ext/backup/a;->LG:Ljava/util/HashSet;
 
     const-string v1, "com.android.email"
 
     invoke-virtual {v0, v1}, Ljava/util/HashSet;->add(Ljava/lang/Object;)Z
 
     .line 67
-    sget-object v0, Lcom/android/settings/backup/a;->LG:Ljava/util/HashSet;
+    sget-object v0, Lcom/android/settings_ext/backup/a;->LG:Ljava/util/HashSet;
 
     const-string v1, "com.android.exchange"
 
     invoke-virtual {v0, v1}, Ljava/util/HashSet;->add(Ljava/lang/Object;)Z
 
     .line 329
-    invoke-static {}, Lcom/android/settings/backup/a;->jZ()I
+    invoke-static {}, Lcom/android/settings_ext/backup/a;->jZ()I
 
     move-result v0
 
-    sput v0, Lcom/android/settings/backup/a;->LI:I
+    sput v0, Lcom/android/settings_ext/backup/a;->LI:I
 
     .line 360
     new-array v0, v5, [Ljava/lang/String;
@@ -131,7 +131,7 @@
 
     aput-object v1, v0, v4
 
-    sput-object v0, Lcom/android/settings/backup/a;->LJ:[Ljava/lang/String;
+    sput-object v0, Lcom/android/settings_ext/backup/a;->LJ:[Ljava/lang/String;
 
     .line 366
     new-array v0, v5, [Ljava/lang/String;
@@ -144,7 +144,7 @@
 
     aput-object v1, v0, v4
 
-    sput-object v0, Lcom/android/settings/backup/a;->LK:[Ljava/lang/String;
+    sput-object v0, Lcom/android/settings_ext/backup/a;->LK:[Ljava/lang/String;
 
     return-void
 
@@ -163,35 +163,35 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 71
-    iput-object p1, p0, Lcom/android/settings/backup/a;->mContext:Landroid/content/Context;
+    iput-object p1, p0, Lcom/android/settings_ext/backup/a;->mContext:Landroid/content/Context;
 
     .line 72
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
-    iput-object v0, p0, Lcom/android/settings/backup/a;->LC:Ljava/util/ArrayList;
+    iput-object v0, p0, Lcom/android/settings_ext/backup/a;->LC:Ljava/util/ArrayList;
 
     .line 73
     new-instance v0, Ljava/util/HashMap;
 
     invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
 
-    iput-object v0, p0, Lcom/android/settings/backup/a;->LD:Ljava/util/HashMap;
+    iput-object v0, p0, Lcom/android/settings_ext/backup/a;->LD:Ljava/util/HashMap;
 
     .line 74
     new-instance v0, Ljava/util/HashMap;
 
     invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
 
-    iput-object v0, p0, Lcom/android/settings/backup/a;->LE:Ljava/util/HashMap;
+    iput-object v0, p0, Lcom/android/settings_ext/backup/a;->LE:Ljava/util/HashMap;
 
     .line 75
     new-instance v0, Ljava/util/HashSet;
 
     invoke-direct {v0}, Ljava/util/HashSet;-><init>()V
 
-    iput-object v0, p0, Lcom/android/settings/backup/a;->LF:Ljava/util/HashSet;
+    iput-object v0, p0, Lcom/android/settings_ext/backup/a;->LF:Ljava/util/HashSet;
 
     .line 76
     return-void
@@ -202,7 +202,7 @@
 
     .prologue
     .line 34
-    sget v0, Lcom/android/settings/backup/a;->LI:I
+    sget v0, Lcom/android/settings_ext/backup/a;->LI:I
 
     return v0
 .end method
@@ -222,12 +222,12 @@
     const/4 v3, 0x0
 
     .line 113
-    iget-object v0, p0, Lcom/android/settings/backup/a;->LF:Ljava/util/HashSet;
+    iget-object v0, p0, Lcom/android/settings_ext/backup/a;->LF:Ljava/util/HashSet;
 
     invoke-virtual {v0}, Ljava/util/HashSet;->clear()V
 
     .line 114
-    iget-object v0, p0, Lcom/android/settings/backup/a;->mContext:Landroid/content/Context;
+    iget-object v0, p0, Lcom/android/settings_ext/backup/a;->mContext:Landroid/content/Context;
 
     invoke-static {v0}, Landroid/accounts/AccountManager;->get(Landroid/content/Context;)Landroid/accounts/AccountManager;
 
@@ -261,7 +261,7 @@
     aget-object v4, v1, v0
 
     .line 119
-    iget-object v5, p0, Lcom/android/settings/backup/a;->LF:Ljava/util/HashSet;
+    iget-object v5, p0, Lcom/android/settings_ext/backup/a;->LF:Ljava/util/HashSet;
 
     iget-object v6, v4, Landroid/accounts/Account;->name:Ljava/lang/String;
 
@@ -279,12 +279,12 @@
 
     .line 124
     :cond_0
-    iget-object v0, p0, Lcom/android/settings/backup/a;->LC:Ljava/util/ArrayList;
+    iget-object v0, p0, Lcom/android/settings_ext/backup/a;->LC:Ljava/util/ArrayList;
 
     invoke-virtual {v0}, Ljava/util/ArrayList;->clear()V
 
     .line 125
-    iget-object v0, p0, Lcom/android/settings/backup/a;->LA:Landroid/database/sqlite/SQLiteDatabase;
+    iget-object v0, p0, Lcom/android/settings_ext/backup/a;->LA:Landroid/database/sqlite/SQLiteDatabase;
 
     const-string v1, "accounts"
 
@@ -337,42 +337,42 @@
     if-eqz v1, :cond_5
 
     .line 139
-    new-instance v1, Lcom/android/settings/backup/c;
+    new-instance v1, Lcom/android/settings_ext/backup/c;
 
-    invoke-direct {v1, v3}, Lcom/android/settings/backup/c;-><init>(Lcom/android/settings/backup/b;)V
+    invoke-direct {v1, v3}, Lcom/android/settings_ext/backup/c;-><init>(Lcom/android/settings_ext/backup/b;)V
 
     .line 140
     invoke-interface {v0, v8}, Landroid/database/Cursor;->getLong(I)J
 
     move-result-wide v4
 
-    iput-wide v4, v1, Lcom/android/settings/backup/c;->id:J
+    iput-wide v4, v1, Lcom/android/settings_ext/backup/c;->id:J
 
     .line 141
     invoke-interface {v0, v10}, Landroid/database/Cursor;->getString(I)Ljava/lang/String;
 
     move-result-object v2
 
-    iput-object v2, v1, Lcom/android/settings/backup/c;->type:Ljava/lang/String;
+    iput-object v2, v1, Lcom/android/settings_ext/backup/c;->type:Ljava/lang/String;
 
     .line 142
     invoke-interface {v0, v11}, Landroid/database/Cursor;->getString(I)Ljava/lang/String;
 
     move-result-object v2
 
-    iput-object v2, v1, Lcom/android/settings/backup/c;->name:Ljava/lang/String;
+    iput-object v2, v1, Lcom/android/settings_ext/backup/c;->name:Ljava/lang/String;
 
     .line 143
     invoke-interface {v0, v12}, Landroid/database/Cursor;->getString(I)Ljava/lang/String;
 
     move-result-object v2
 
-    iput-object v2, v1, Lcom/android/settings/backup/c;->password:Ljava/lang/String;
+    iput-object v2, v1, Lcom/android/settings_ext/backup/c;->password:Ljava/lang/String;
 
     .line 144
-    iget-object v2, p0, Lcom/android/settings/backup/a;->LF:Ljava/util/HashSet;
+    iget-object v2, p0, Lcom/android/settings_ext/backup/a;->LF:Ljava/util/HashSet;
 
-    iget-object v4, v1, Lcom/android/settings/backup/c;->name:Ljava/lang/String;
+    iget-object v4, v1, Lcom/android/settings_ext/backup/c;->name:Ljava/lang/String;
 
     invoke-virtual {v2, v4}, Ljava/util/HashSet;->contains(Ljava/lang/Object;)Z
 
@@ -382,7 +382,7 @@
 
     const-string v2, "com.xiaomi"
 
-    iget-object v4, v1, Lcom/android/settings/backup/c;->type:Ljava/lang/String;
+    iget-object v4, v1, Lcom/android/settings_ext/backup/c;->type:Ljava/lang/String;
 
     invoke-virtual {v2, v4}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
@@ -390,7 +390,7 @@
 
     if-eqz v2, :cond_2
 
-    iget-object v2, v1, Lcom/android/settings/backup/c;->type:Ljava/lang/String;
+    iget-object v2, v1, Lcom/android/settings_ext/backup/c;->type:Ljava/lang/String;
 
     invoke-virtual {v9, v2}, Ljava/util/HashSet;->contains(Ljava/lang/Object;)Z
 
@@ -400,9 +400,9 @@
 
     .line 148
     :cond_2
-    sget-object v2, Lcom/android/settings/backup/a;->LG:Ljava/util/HashSet;
+    sget-object v2, Lcom/android/settings_ext/backup/a;->LG:Ljava/util/HashSet;
 
-    iget-object v4, v1, Lcom/android/settings/backup/c;->type:Ljava/lang/String;
+    iget-object v4, v1, Lcom/android/settings_ext/backup/c;->type:Ljava/lang/String;
 
     invoke-virtual {v2, v4}, Ljava/util/HashSet;->contains(Ljava/lang/Object;)Z
 
@@ -413,7 +413,7 @@
     .line 149
     const-string v2, "com.android.email"
 
-    iget-object v4, v1, Lcom/android/settings/backup/c;->type:Ljava/lang/String;
+    iget-object v4, v1, Lcom/android/settings_ext/backup/c;->type:Ljava/lang/String;
 
     invoke-virtual {v2, v4}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
@@ -423,7 +423,7 @@
 
     const-string v2, "com.android.exchange"
 
-    iget-object v4, v1, Lcom/android/settings/backup/c;->type:Ljava/lang/String;
+    iget-object v4, v1, Lcom/android/settings_ext/backup/c;->type:Ljava/lang/String;
 
     invoke-virtual {v2, v4}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
@@ -433,7 +433,7 @@
 
     .line 150
     :cond_3
-    iget-object v2, p0, Lcom/android/settings/backup/a;->LC:Ljava/util/ArrayList;
+    iget-object v2, p0, Lcom/android/settings_ext/backup/a;->LC:Ljava/util/ArrayList;
 
     invoke-virtual {v2, v8, v1}, Ljava/util/ArrayList;->add(ILjava/lang/Object;)V
 
@@ -441,7 +441,7 @@
 
     .line 152
     :cond_4
-    iget-object v2, p0, Lcom/android/settings/backup/a;->LC:Ljava/util/ArrayList;
+    iget-object v2, p0, Lcom/android/settings_ext/backup/a;->LC:Ljava/util/ArrayList;
 
     invoke-virtual {v2, v1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
@@ -465,12 +465,12 @@
     const/4 v5, 0x0
 
     .line 165
-    iget-object v0, p0, Lcom/android/settings/backup/a;->LE:Ljava/util/HashMap;
+    iget-object v0, p0, Lcom/android/settings_ext/backup/a;->LE:Ljava/util/HashMap;
 
     invoke-virtual {v0}, Ljava/util/HashMap;->clear()V
 
     .line 166
-    iget-object v0, p0, Lcom/android/settings/backup/a;->LC:Ljava/util/ArrayList;
+    iget-object v0, p0, Lcom/android/settings_ext/backup/a;->LC:Ljava/util/ArrayList;
 
     invoke-virtual {v0}, Ljava/util/ArrayList;->iterator()Ljava/util/Iterator;
 
@@ -490,12 +490,12 @@
 
     move-object v6, v0
 
-    check-cast v6, Lcom/android/settings/backup/c;
+    check-cast v6, Lcom/android/settings_ext/backup/c;
 
     .line 167
-    iget-object v0, p0, Lcom/android/settings/backup/a;->LF:Ljava/util/HashSet;
+    iget-object v0, p0, Lcom/android/settings_ext/backup/a;->LF:Ljava/util/HashSet;
 
-    iget-object v1, v6, Lcom/android/settings/backup/c;->name:Ljava/lang/String;
+    iget-object v1, v6, Lcom/android/settings_ext/backup/c;->name:Ljava/lang/String;
 
     invoke-virtual {v0, v1}, Ljava/util/HashSet;->contains(Ljava/lang/Object;)Z
 
@@ -504,14 +504,14 @@
     if-nez v0, :cond_0
 
     .line 170
-    iget-wide v10, v6, Lcom/android/settings/backup/c;->id:J
+    iget-wide v10, v6, Lcom/android/settings_ext/backup/c;->id:J
 
     .line 171
-    iget-object v0, p0, Lcom/android/settings/backup/a;->LA:Landroid/database/sqlite/SQLiteDatabase;
+    iget-object v0, p0, Lcom/android/settings_ext/backup/a;->LA:Landroid/database/sqlite/SQLiteDatabase;
 
     const-string v1, "extras"
 
-    sget-object v2, Lcom/android/settings/backup/a;->LJ:[Ljava/lang/String;
+    sget-object v2, Lcom/android/settings_ext/backup/a;->LJ:[Ljava/lang/String;
 
     const-string v3, "accounts_id=(select _id FROM accounts WHERE name=? AND type=?)"
 
@@ -519,11 +519,11 @@
 
     new-array v4, v4, [Ljava/lang/String;
 
-    iget-object v7, v6, Lcom/android/settings/backup/c;->name:Ljava/lang/String;
+    iget-object v7, v6, Lcom/android/settings_ext/backup/c;->name:Ljava/lang/String;
 
     aput-object v7, v4, v9
 
-    iget-object v6, v6, Lcom/android/settings/backup/c;->type:Ljava/lang/String;
+    iget-object v6, v6, Lcom/android/settings_ext/backup/c;->type:Ljava/lang/String;
 
     aput-object v6, v4, v12
 
@@ -571,7 +571,7 @@
     invoke-interface {v0}, Landroid/database/Cursor;->close()V
 
     .line 192
-    iget-object v0, p0, Lcom/android/settings/backup/a;->LE:Ljava/util/HashMap;
+    iget-object v0, p0, Lcom/android/settings_ext/backup/a;->LE:Ljava/util/HashMap;
 
     invoke-static {v10, v11}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
 
@@ -597,12 +597,12 @@
     const/4 v5, 0x0
 
     .line 197
-    iget-object v0, p0, Lcom/android/settings/backup/a;->LD:Ljava/util/HashMap;
+    iget-object v0, p0, Lcom/android/settings_ext/backup/a;->LD:Ljava/util/HashMap;
 
     invoke-virtual {v0}, Ljava/util/HashMap;->clear()V
 
     .line 198
-    iget-object v0, p0, Lcom/android/settings/backup/a;->LC:Ljava/util/ArrayList;
+    iget-object v0, p0, Lcom/android/settings_ext/backup/a;->LC:Ljava/util/ArrayList;
 
     invoke-virtual {v0}, Ljava/util/ArrayList;->iterator()Ljava/util/Iterator;
 
@@ -622,17 +622,17 @@
 
     move-object v6, v0
 
-    check-cast v6, Lcom/android/settings/backup/c;
+    check-cast v6, Lcom/android/settings_ext/backup/c;
 
     .line 199
-    iget-wide v10, v6, Lcom/android/settings/backup/c;->id:J
+    iget-wide v10, v6, Lcom/android/settings_ext/backup/c;->id:J
 
     .line 201
-    iget-object v0, p0, Lcom/android/settings/backup/a;->LA:Landroid/database/sqlite/SQLiteDatabase;
+    iget-object v0, p0, Lcom/android/settings_ext/backup/a;->LA:Landroid/database/sqlite/SQLiteDatabase;
 
     const-string v1, "authtokens"
 
-    sget-object v2, Lcom/android/settings/backup/a;->LK:[Ljava/lang/String;
+    sget-object v2, Lcom/android/settings_ext/backup/a;->LK:[Ljava/lang/String;
 
     const-string v3, "accounts_id=(select _id FROM accounts WHERE name=? AND type=?)"
 
@@ -640,11 +640,11 @@
 
     new-array v4, v4, [Ljava/lang/String;
 
-    iget-object v7, v6, Lcom/android/settings/backup/c;->name:Ljava/lang/String;
+    iget-object v7, v6, Lcom/android/settings_ext/backup/c;->name:Ljava/lang/String;
 
     aput-object v7, v4, v9
 
-    iget-object v6, v6, Lcom/android/settings/backup/c;->type:Ljava/lang/String;
+    iget-object v6, v6, Lcom/android/settings_ext/backup/c;->type:Ljava/lang/String;
 
     aput-object v6, v4, v12
 
@@ -673,23 +673,23 @@
     if-eqz v2, :cond_1
 
     .line 216
-    new-instance v2, Lcom/android/settings/backup/d;
+    new-instance v2, Lcom/android/settings_ext/backup/d;
 
-    invoke-direct {v2, v5}, Lcom/android/settings/backup/d;-><init>(Lcom/android/settings/backup/b;)V
+    invoke-direct {v2, v5}, Lcom/android/settings_ext/backup/d;-><init>(Lcom/android/settings_ext/backup/b;)V
 
     .line 217
     invoke-interface {v0, v9}, Landroid/database/Cursor;->getString(I)Ljava/lang/String;
 
     move-result-object v3
 
-    iput-object v3, v2, Lcom/android/settings/backup/d;->type:Ljava/lang/String;
+    iput-object v3, v2, Lcom/android/settings_ext/backup/d;->type:Ljava/lang/String;
 
     .line 218
     invoke-interface {v0, v12}, Landroid/database/Cursor;->getString(I)Ljava/lang/String;
 
     move-result-object v3
 
-    iput-object v3, v2, Lcom/android/settings/backup/d;->LL:Ljava/lang/String;
+    iput-object v3, v2, Lcom/android/settings_ext/backup/d;->LL:Ljava/lang/String;
 
     .line 219
     invoke-virtual {v1, v2}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
@@ -701,7 +701,7 @@
     invoke-interface {v0}, Landroid/database/Cursor;->close()V
 
     .line 222
-    iget-object v0, p0, Lcom/android/settings/backup/a;->LD:Ljava/util/HashMap;
+    iget-object v0, p0, Lcom/android/settings_ext/backup/a;->LD:Ljava/util/HashMap;
 
     invoke-static {v10, v11}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
 
@@ -761,31 +761,31 @@
 
     .prologue
     .line 79
-    new-instance v0, Lcom/android/settings/backup/e;
+    new-instance v0, Lcom/android/settings_ext/backup/e;
 
-    iget-object v1, p0, Lcom/android/settings/backup/a;->mContext:Landroid/content/Context;
+    iget-object v1, p0, Lcom/android/settings_ext/backup/a;->mContext:Landroid/content/Context;
 
     invoke-virtual {p1}, Ljava/io/File;->getAbsolutePath()Ljava/lang/String;
 
     move-result-object v2
 
-    invoke-direct {v0, p0, v1, v2}, Lcom/android/settings/backup/e;-><init>(Lcom/android/settings/backup/a;Landroid/content/Context;Ljava/lang/String;)V
+    invoke-direct {v0, p0, v1, v2}, Lcom/android/settings_ext/backup/e;-><init>(Lcom/android/settings_ext/backup/a;Landroid/content/Context;Ljava/lang/String;)V
 
     .line 80
-    invoke-virtual {v0}, Lcom/android/settings/backup/e;->getReadableDatabase()Landroid/database/sqlite/SQLiteDatabase;
+    invoke-virtual {v0}, Lcom/android/settings_ext/backup/e;->getReadableDatabase()Landroid/database/sqlite/SQLiteDatabase;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/backup/a;->LA:Landroid/database/sqlite/SQLiteDatabase;
+    iput-object v0, p0, Lcom/android/settings_ext/backup/a;->LA:Landroid/database/sqlite/SQLiteDatabase;
 
     .line 81
-    invoke-direct {p0}, Lcom/android/settings/backup/a;->jU()V
+    invoke-direct {p0}, Lcom/android/settings_ext/backup/a;->jU()V
 
     .line 82
-    invoke-direct {p0}, Lcom/android/settings/backup/a;->jV()V
+    invoke-direct {p0}, Lcom/android/settings_ext/backup/a;->jV()V
 
     .line 83
-    invoke-direct {p0}, Lcom/android/settings/backup/a;->jW()V
+    invoke-direct {p0}, Lcom/android/settings_ext/backup/a;->jW()V
 
     .line 84
     return-void
@@ -796,7 +796,7 @@
 
     .prologue
     .line 251
-    iget-object v0, p0, Lcom/android/settings/backup/a;->mContext:Landroid/content/Context;
+    iget-object v0, p0, Lcom/android/settings_ext/backup/a;->mContext:Landroid/content/Context;
 
     const-string v1, "activity"
 
@@ -817,7 +817,7 @@
 
     .prologue
     .line 463
-    iput-object p1, p0, Lcom/android/settings/backup/a;->LB:Ljava/io/File;
+    iput-object p1, p0, Lcom/android/settings_ext/backup/a;->LB:Ljava/io/File;
 
     .line 464
     return-void
@@ -866,14 +866,14 @@
 
     .prologue
     .line 87
-    iget-object v0, p0, Lcom/android/settings/backup/a;->mContext:Landroid/content/Context;
+    iget-object v0, p0, Lcom/android/settings_ext/backup/a;->mContext:Landroid/content/Context;
 
     invoke-static {v0}, Landroid/accounts/AccountManager;->get(Landroid/content/Context;)Landroid/accounts/AccountManager;
 
     move-result-object v2
 
     .line 88
-    iget-object v0, p0, Lcom/android/settings/backup/a;->LC:Ljava/util/ArrayList;
+    iget-object v0, p0, Lcom/android/settings_ext/backup/a;->LC:Ljava/util/ArrayList;
 
     invoke-virtual {v0}, Ljava/util/ArrayList;->iterator()Ljava/util/Iterator;
 
@@ -890,17 +890,17 @@
 
     move-result-object v0
 
-    check-cast v0, Lcom/android/settings/backup/c;
+    check-cast v0, Lcom/android/settings_ext/backup/c;
 
     .line 89
-    iget-wide v4, v0, Lcom/android/settings/backup/c;->id:J
+    iget-wide v4, v0, Lcom/android/settings_ext/backup/c;->id:J
 
     .line 90
     new-instance v6, Landroid/accounts/Account;
 
-    iget-object v1, v0, Lcom/android/settings/backup/c;->name:Ljava/lang/String;
+    iget-object v1, v0, Lcom/android/settings_ext/backup/c;->name:Ljava/lang/String;
 
-    iget-object v7, v0, Lcom/android/settings/backup/c;->type:Ljava/lang/String;
+    iget-object v7, v0, Lcom/android/settings_ext/backup/c;->type:Ljava/lang/String;
 
     invoke-direct {v6, v1, v7}, Landroid/accounts/Account;-><init>(Ljava/lang/String;Ljava/lang/String;)V
 
@@ -909,9 +909,9 @@
 
     .line 93
     :try_start_0
-    iget-object v7, v0, Lcom/android/settings/backup/c;->password:Ljava/lang/String;
+    iget-object v7, v0, Lcom/android/settings_ext/backup/c;->password:Ljava/lang/String;
 
-    iget-object v0, p0, Lcom/android/settings/backup/a;->LE:Ljava/util/HashMap;
+    iget-object v0, p0, Lcom/android/settings_ext/backup/a;->LE:Ljava/util/HashMap;
 
     invoke-static {v4, v5}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
 
@@ -934,7 +934,7 @@
     if-eqz v0, :cond_0
 
     .line 100
-    iget-object v0, p0, Lcom/android/settings/backup/a;->LD:Ljava/util/HashMap;
+    iget-object v0, p0, Lcom/android/settings_ext/backup/a;->LD:Ljava/util/HashMap;
 
     invoke-static {v4, v5}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
 
@@ -962,12 +962,12 @@
 
     move-result-object v0
 
-    check-cast v0, Lcom/android/settings/backup/d;
+    check-cast v0, Lcom/android/settings_ext/backup/d;
 
     .line 102
-    iget-object v4, v0, Lcom/android/settings/backup/d;->type:Ljava/lang/String;
+    iget-object v4, v0, Lcom/android/settings_ext/backup/d;->type:Ljava/lang/String;
 
-    iget-object v0, v0, Lcom/android/settings/backup/d;->LL:Ljava/lang/String;
+    iget-object v0, v0, Lcom/android/settings_ext/backup/d;->LL:Ljava/lang/String;
 
     invoke-virtual {v2, v6, v4, v0}, Landroid/accounts/AccountManager;->setAuthToken(Landroid/accounts/Account;Ljava/lang/String;Ljava/lang/String;)V
 
@@ -1002,12 +1002,12 @@
     invoke-virtual {v0, v1}, Landroid/content/Intent;->setPackage(Ljava/lang/String;)Landroid/content/Intent;
 
     .line 108
-    iget-object v1, p0, Lcom/android/settings/backup/a;->mContext:Landroid/content/Context;
+    iget-object v1, p0, Lcom/android/settings_ext/backup/a;->mContext:Landroid/content/Context;
 
     invoke-virtual {v1, v0}, Landroid/content/Context;->sendBroadcast(Landroid/content/Intent;)V
 
     .line 109
-    iget-object v0, p0, Lcom/android/settings/backup/a;->LA:Landroid/database/sqlite/SQLiteDatabase;
+    iget-object v0, p0, Lcom/android/settings_ext/backup/a;->LA:Landroid/database/sqlite/SQLiteDatabase;
 
     invoke-virtual {v0}, Landroid/database/sqlite/SQLiteDatabase;->close()V
 
@@ -1022,28 +1022,28 @@
     const/16 v5, 0x1b0
 
     .line 255
-    iget-object v0, p0, Lcom/android/settings/backup/a;->mContext:Landroid/content/Context;
+    iget-object v0, p0, Lcom/android/settings_ext/backup/a;->mContext:Landroid/content/Context;
 
     const-string v1, "com.android.email"
 
-    invoke-virtual {p0, v0, v1}, Lcom/android/settings/backup/a;->j(Landroid/content/Context;Ljava/lang/String;)Landroid/content/pm/PackageInfo;
+    invoke-virtual {p0, v0, v1}, Lcom/android/settings_ext/backup/a;->j(Landroid/content/Context;Ljava/lang/String;)Landroid/content/pm/PackageInfo;
 
     move-result-object v0
 
     .line 256
     iget-object v1, v0, Landroid/content/pm/PackageInfo;->packageName:Ljava/lang/String;
 
-    invoke-virtual {p0, v1}, Lcom/android/settings/backup/a;->an(Ljava/lang/String;)V
+    invoke-virtual {p0, v1}, Lcom/android/settings_ext/backup/a;->an(Ljava/lang/String;)V
 
     .line 257
     const-string v1, "com.android.exchange"
 
-    invoke-virtual {p0, v1}, Lcom/android/settings/backup/a;->an(Ljava/lang/String;)V
+    invoke-virtual {p0, v1}, Lcom/android/settings_ext/backup/a;->an(Ljava/lang/String;)V
 
     .line 259
     new-instance v1, Ljava/io/File;
 
-    iget-object v2, p0, Lcom/android/settings/backup/a;->LB:Ljava/io/File;
+    iget-object v2, p0, Lcom/android/settings_ext/backup/a;->LB:Ljava/io/File;
 
     const-string v3, "EmailProvider.db"
 
@@ -1095,7 +1095,7 @@
     :cond_0
     new-instance v1, Ljava/io/File;
 
-    iget-object v2, p0, Lcom/android/settings/backup/a;->LB:Ljava/io/File;
+    iget-object v2, p0, Lcom/android/settings_ext/backup/a;->LB:Ljava/io/File;
 
     const-string v3, "EmailProviderBackup.db"
 
@@ -1147,7 +1147,7 @@
     :cond_1
     new-instance v1, Ljava/io/File;
 
-    iget-object v2, p0, Lcom/android/settings/backup/a;->LB:Ljava/io/File;
+    iget-object v2, p0, Lcom/android/settings_ext/backup/a;->LB:Ljava/io/File;
 
     const-string v3, "EmailProviderBody.db"
 
@@ -1205,7 +1205,7 @@
 
     .prologue
     .line 286
-    iget-object v0, p0, Lcom/android/settings/backup/a;->mContext:Landroid/content/Context;
+    iget-object v0, p0, Lcom/android/settings_ext/backup/a;->mContext:Landroid/content/Context;
 
     const-string v1, "device_policy"
 
@@ -1235,7 +1235,7 @@
 
     .line 296
     :try_start_0
-    iget-object v3, p0, Lcom/android/settings/backup/a;->mContext:Landroid/content/Context;
+    iget-object v3, p0, Lcom/android/settings_ext/backup/a;->mContext:Landroid/content/Context;
 
     invoke-virtual {v3}, Landroid/content/Context;->getPackageManager()Landroid/content/pm/PackageManager;
 
@@ -1265,7 +1265,7 @@
     :try_start_1
     new-instance v1, Landroid/app/admin/DeviceAdminInfo;
 
-    iget-object v3, p0, Lcom/android/settings/backup/a;->mContext:Landroid/content/Context;
+    iget-object v3, p0, Lcom/android/settings_ext/backup/a;->mContext:Landroid/content/Context;
 
     invoke-direct {v1, v3, v2}, Landroid/app/admin/DeviceAdminInfo;-><init>(Landroid/content/Context;Landroid/content/pm/ResolveInfo;)V
 

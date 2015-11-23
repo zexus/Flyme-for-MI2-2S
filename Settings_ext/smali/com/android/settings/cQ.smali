@@ -1,3 +1,3 @@
-.class synthetic Lcom/android/settings/cQ;
+.class synthetic Lcom/android/settings_ext/cQ;
 .super Ljava/lang/Object;
 .source "LockPatternView.java"

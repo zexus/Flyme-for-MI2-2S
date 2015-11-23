@@ -1,5 +1,5 @@
-.class public Lcom/android/settings/MiuiChooseLockPattern;
-.super Lcom/android/settings/Settings;
+.class public Lcom/android/settings_ext/MiuiChooseLockPattern;
+.super Lcom/android/settings_ext/Settings;
 .source "MiuiChooseLockPattern.java"
 
 
@@ -9,7 +9,7 @@
 
     .prologue
     .line 29
-    invoke-direct {p0}, Lcom/android/settings/Settings;-><init>()V
+    invoke-direct {p0}, Lcom/android/settings_ext/Settings;-><init>()V
 
     .line 45
     return-void
@@ -24,7 +24,7 @@
     .line 33
     new-instance v0, Landroid/content/Intent;
 
-    invoke-super {p0}, Lcom/android/settings/Settings;->getIntent()Landroid/content/Intent;
+    invoke-super {p0}, Lcom/android/settings_ext/Settings;->getIntent()Landroid/content/Intent;
 
     move-result-object v1
 
@@ -33,7 +33,7 @@
     .line 34
     const-string v1, ":settings:show_fragment"
 
-    const-class v2, Lcom/android/settings/MiuiChooseLockPattern$ChooseLockPatternFragment;
+    const-class v2, Lcom/android/settings_ext/MiuiChooseLockPattern$ChooseLockPatternFragment;
 
     invoke-virtual {v2}, Ljava/lang/Class;->getName()Ljava/lang/String;
 
@@ -50,17 +50,17 @@
 
     .prologue
     .line 40
-    invoke-super {p0, p1}, Lcom/android/settings/Settings;->onCreate(Landroid/os/Bundle;)V
+    invoke-super {p0, p1}, Lcom/android/settings_ext/Settings;->onCreate(Landroid/os/Bundle;)V
 
     .line 41
     const v0, 0x7f0904e1
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/MiuiChooseLockPattern;->getText(I)Ljava/lang/CharSequence;
+    invoke-virtual {p0, v0}, Lcom/android/settings_ext/MiuiChooseLockPattern;->getText(I)Ljava/lang/CharSequence;
 
     move-result-object v0
 
     .line 42
-    invoke-virtual {p0, v0}, Lcom/android/settings/MiuiChooseLockPattern;->setTitle(Ljava/lang/CharSequence;)V
+    invoke-virtual {p0, v0}, Lcom/android/settings_ext/MiuiChooseLockPattern;->setTitle(Ljava/lang/CharSequence;)V
 
     .line 43
     return-void

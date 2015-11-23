@@ -1,19 +1,19 @@
-.class Lcom/android/settings/v;
+.class Lcom/android/settings_ext/v;
 .super Landroid/database/ContentObserver;
 .source "AirplaneModeEnabler.java"
 
 
 # instance fields
-.field final synthetic ad:Lcom/android/settings/t;
+.field final synthetic ad:Lcom/android/settings_ext/t;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/t;Landroid/os/Handler;)V
+.method constructor <init>(Lcom/android/settings_ext/t;Landroid/os/Handler;)V
     .locals 0
 
     .prologue
     .line 56
-    iput-object p1, p0, Lcom/android/settings/v;->ad:Lcom/android/settings/t;
+    iput-object p1, p0, Lcom/android/settings_ext/v;->ad:Lcom/android/settings_ext/t;
 
     invoke-direct {p0, p2}, Landroid/database/ContentObserver;-><init>(Landroid/os/Handler;)V
 
@@ -27,9 +27,9 @@
 
     .prologue
     .line 59
-    iget-object v0, p0, Lcom/android/settings/v;->ad:Lcom/android/settings/t;
+    iget-object v0, p0, Lcom/android/settings_ext/v;->ad:Lcom/android/settings_ext/t;
 
-    invoke-static {v0}, Lcom/android/settings/t;->a(Lcom/android/settings/t;)V
+    invoke-static {v0}, Lcom/android/settings_ext/t;->a(Lcom/android/settings_ext/t;)V
 
     .line 60
     return-void

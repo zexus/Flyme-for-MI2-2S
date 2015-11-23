@@ -1,4 +1,4 @@
-.class Lcom/android/settings/inputmethod/KeyboardLayoutDialogFragment$1;
+.class Lcom/android/settings_ext/inputmethod/KeyboardLayoutDialogFragment$1;
 .super Ljava/lang/Object;
 .source "KeyboardLayoutDialogFragment.java"
 
@@ -7,16 +7,16 @@
 
 
 # instance fields
-.field final synthetic abI:Lcom/android/settings/inputmethod/KeyboardLayoutDialogFragment;
+.field final synthetic abI:Lcom/android/settings_ext/inputmethod/KeyboardLayoutDialogFragment;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/inputmethod/KeyboardLayoutDialogFragment;)V
+.method constructor <init>(Lcom/android/settings_ext/inputmethod/KeyboardLayoutDialogFragment;)V
     .locals 0
 
     .prologue
     .line 107
-    iput-object p1, p0, Lcom/android/settings/inputmethod/KeyboardLayoutDialogFragment$1;->abI:Lcom/android/settings/inputmethod/KeyboardLayoutDialogFragment;
+    iput-object p1, p0, Lcom/android/settings_ext/inputmethod/KeyboardLayoutDialogFragment$1;->abI:Lcom/android/settings_ext/inputmethod/KeyboardLayoutDialogFragment;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -30,9 +30,9 @@
 
     .prologue
     .line 110
-    iget-object v0, p0, Lcom/android/settings/inputmethod/KeyboardLayoutDialogFragment$1;->abI:Lcom/android/settings/inputmethod/KeyboardLayoutDialogFragment;
+    iget-object v0, p0, Lcom/android/settings_ext/inputmethod/KeyboardLayoutDialogFragment$1;->abI:Lcom/android/settings_ext/inputmethod/KeyboardLayoutDialogFragment;
 
-    invoke-static {v0, p2}, Lcom/android/settings/inputmethod/KeyboardLayoutDialogFragment;->a(Lcom/android/settings/inputmethod/KeyboardLayoutDialogFragment;I)V
+    invoke-static {v0, p2}, Lcom/android/settings_ext/inputmethod/KeyboardLayoutDialogFragment;->a(Lcom/android/settings_ext/inputmethod/KeyboardLayoutDialogFragment;I)V
 
     .line 111
     return-void

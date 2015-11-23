@@ -1,4 +1,4 @@
-.class Lcom/android/settings/dm;
+.class Lcom/android/settings_ext/dm;
 .super Ljava/lang/Object;
 .source "MiuiAppPicker.java"
 
@@ -7,16 +7,16 @@
 
 
 # instance fields
-.field final synthetic ou:Lcom/android/settings/MiuiAppPicker;
+.field final synthetic ou:Lcom/android/settings_ext/MiuiAppPicker;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/MiuiAppPicker;)V
+.method constructor <init>(Lcom/android/settings_ext/MiuiAppPicker;)V
     .locals 0
 
     .prologue
     .line 61
-    iput-object p1, p0, Lcom/android/settings/dm;->ou:Lcom/android/settings/MiuiAppPicker;
+    iput-object p1, p0, Lcom/android/settings_ext/dm;->ou:Lcom/android/settings_ext/MiuiAppPicker;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -30,16 +30,16 @@
 
     .prologue
     .line 64
-    iget-object v0, p0, Lcom/android/settings/dm;->ou:Lcom/android/settings/MiuiAppPicker;
+    iget-object v0, p0, Lcom/android/settings_ext/dm;->ou:Lcom/android/settings_ext/MiuiAppPicker;
 
     const/4 v1, 0x0
 
-    invoke-static {v0, v1}, Lcom/android/settings/MiuiAppPicker;->a(Lcom/android/settings/MiuiAppPicker;Landroid/app/AlertDialog;)Landroid/app/AlertDialog;
+    invoke-static {v0, v1}, Lcom/android/settings_ext/MiuiAppPicker;->a(Lcom/android/settings_ext/MiuiAppPicker;Landroid/app/AlertDialog;)Landroid/app/AlertDialog;
 
     .line 65
-    iget-object v0, p0, Lcom/android/settings/dm;->ou:Lcom/android/settings/MiuiAppPicker;
+    iget-object v0, p0, Lcom/android/settings_ext/dm;->ou:Lcom/android/settings_ext/MiuiAppPicker;
 
-    invoke-virtual {v0}, Lcom/android/settings/MiuiAppPicker;->finish()V
+    invoke-virtual {v0}, Lcom/android/settings_ext/MiuiAppPicker;->finish()V
 
     .line 66
     return-void

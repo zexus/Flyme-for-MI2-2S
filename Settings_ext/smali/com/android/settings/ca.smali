@@ -1,4 +1,4 @@
-.class Lcom/android/settings/ca;
+.class Lcom/android/settings_ext/ca;
 .super Ljava/lang/Object;
 .source "DreamSettings.java"
 
@@ -7,16 +7,16 @@
 
 
 # instance fields
-.field final synthetic kt:Lcom/android/settings/DreamSettings;
+.field final synthetic kt:Lcom/android/settings_ext/DreamSettings;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/DreamSettings;)V
+.method constructor <init>(Lcom/android/settings_ext/DreamSettings;)V
     .locals 0
 
     .prologue
     .line 142
-    iput-object p1, p0, Lcom/android/settings/ca;->kt:Lcom/android/settings/DreamSettings;
+    iput-object p1, p0, Lcom/android/settings_ext/ca;->kt:Lcom/android/settings_ext/DreamSettings;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -30,13 +30,13 @@
 
     .prologue
     .line 145
-    iget-object v0, p0, Lcom/android/settings/ca;->kt:Lcom/android/settings/DreamSettings;
+    iget-object v0, p0, Lcom/android/settings_ext/ca;->kt:Lcom/android/settings_ext/DreamSettings;
 
-    invoke-static {v0}, Lcom/android/settings/DreamSettings;->a(Lcom/android/settings/DreamSettings;)Lcom/android/settings/bX;
+    invoke-static {v0}, Lcom/android/settings_ext/DreamSettings;->a(Lcom/android/settings_ext/DreamSettings;)Lcom/android/settings_ext/bX;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/android/settings/bX;->dh()V
+    invoke-virtual {v0}, Lcom/android/settings_ext/bX;->dh()V
 
     .line 146
     return-void

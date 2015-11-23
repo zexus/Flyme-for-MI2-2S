@@ -1,19 +1,19 @@
-.class final Lcom/android/settings/search/d;
+.class final Lcom/android/settings_ext/search/d;
 .super Landroid/database/ContentObserver;
 .source "DynamicIndexableContentMonitor.java"
 
 
 # instance fields
-.field final synthetic aiE:Lcom/android/settings/search/b;
+.field final synthetic aiE:Lcom/android/settings_ext/search/b;
 
 
 # direct methods
-.method public constructor <init>(Lcom/android/settings/search/b;Landroid/os/Handler;)V
+.method public constructor <init>(Lcom/android/settings_ext/search/b;Landroid/os/Handler;)V
     .locals 0
 
     .prologue
     .line 295
-    iput-object p1, p0, Lcom/android/settings/search/d;->aiE:Lcom/android/settings/search/b;
+    iput-object p1, p0, Lcom/android/settings_ext/search/d;->aiE:Lcom/android/settings_ext/search/b;
 
     .line 296
     invoke-direct {p0, p2}, Landroid/database/ContentObserver;-><init>(Landroid/os/Handler;)V
@@ -40,23 +40,23 @@
     if-eqz v0, :cond_0
 
     .line 302
-    iget-object v0, p0, Lcom/android/settings/search/d;->aiE:Lcom/android/settings/search/b;
+    iget-object v0, p0, Lcom/android/settings_ext/search/d;->aiE:Lcom/android/settings_ext/search/b;
 
-    invoke-static {v0}, Lcom/android/settings/search/b;->a(Lcom/android/settings/search/b;)Landroid/content/Context;
-
-    move-result-object v0
-
-    invoke-static {v0}, Lcom/android/settings/search/e;->bn(Landroid/content/Context;)Lcom/android/settings/search/e;
+    invoke-static {v0}, Lcom/android/settings_ext/search/b;->a(Lcom/android/settings_ext/search/b;)Landroid/content/Context;
 
     move-result-object v0
 
-    const-class v1, Lcom/android/settings/inputmethod/InputMethodAndLanguageSettings;
+    invoke-static {v0}, Lcom/android/settings_ext/search/e;->bn(Landroid/content/Context;)Lcom/android/settings_ext/search/e;
+
+    move-result-object v0
+
+    const-class v1, Lcom/android/settings_ext/inputmethod/InputMethodAndLanguageSettings;
 
     invoke-virtual {v1}, Ljava/lang/Class;->getName()Ljava/lang/String;
 
     move-result-object v1
 
-    invoke-virtual {v0, v1, v2, v2}, Lcom/android/settings/search/e;->b(Ljava/lang/String;ZZ)V
+    invoke-virtual {v0, v1, v2, v2}, Lcom/android/settings_ext/search/e;->b(Ljava/lang/String;ZZ)V
 
     .line 305
     :cond_0

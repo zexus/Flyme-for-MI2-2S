@@ -1,19 +1,19 @@
-.class public Lcom/android/settings/notification/ManagedServiceSettings$ScaryWarningDialogFragment;
+.class public Lcom/android/settings_ext/notification/ManagedServiceSettings$ScaryWarningDialogFragment;
 .super Landroid/app/DialogFragment;
 .source "ManagedServiceSettings.java"
 
 
 # instance fields
-.field final synthetic aef:Lcom/android/settings/notification/ManagedServiceSettings;
+.field final synthetic aef:Lcom/android/settings_ext/notification/ManagedServiceSettings;
 
 
 # direct methods
-.method public constructor <init>(Lcom/android/settings/notification/ManagedServiceSettings;)V
+.method public constructor <init>(Lcom/android/settings_ext/notification/ManagedServiceSettings;)V
     .locals 0
 
     .prologue
     .line 90
-    iput-object p1, p0, Lcom/android/settings/notification/ManagedServiceSettings$ScaryWarningDialogFragment;->aef:Lcom/android/settings/notification/ManagedServiceSettings;
+    iput-object p1, p0, Lcom/android/settings_ext/notification/ManagedServiceSettings$ScaryWarningDialogFragment;->aef:Lcom/android/settings_ext/notification/ManagedServiceSettings;
 
     invoke-direct {p0}, Landroid/app/DialogFragment;-><init>()V
 
@@ -22,7 +22,7 @@
 
 
 # virtual methods
-.method public b(Landroid/content/ComponentName;Ljava/lang/String;)Lcom/android/settings/notification/ManagedServiceSettings$ScaryWarningDialogFragment;
+.method public b(Landroid/content/ComponentName;Ljava/lang/String;)Lcom/android/settings_ext/notification/ManagedServiceSettings$ScaryWarningDialogFragment;
     .locals 3
 
     .prologue
@@ -46,7 +46,7 @@
     invoke-virtual {v0, v1, p2}, Landroid/os/Bundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 98
-    invoke-virtual {p0, v0}, Lcom/android/settings/notification/ManagedServiceSettings$ScaryWarningDialogFragment;->setArguments(Landroid/os/Bundle;)V
+    invoke-virtual {p0, v0}, Lcom/android/settings_ext/notification/ManagedServiceSettings$ScaryWarningDialogFragment;->setArguments(Landroid/os/Bundle;)V
 
     .line 99
     return-object p0
@@ -64,7 +64,7 @@
     invoke-super {p0, p1}, Landroid/app/DialogFragment;->onCreate(Landroid/os/Bundle;)V
 
     .line 105
-    invoke-virtual {p0}, Lcom/android/settings/notification/ManagedServiceSettings$ScaryWarningDialogFragment;->getArguments()Landroid/os/Bundle;
+    invoke-virtual {p0}, Lcom/android/settings_ext/notification/ManagedServiceSettings$ScaryWarningDialogFragment;->getArguments()Landroid/os/Bundle;
 
     move-result-object v0
 
@@ -87,17 +87,17 @@
     move-result-object v0
 
     .line 109
-    invoke-virtual {p0}, Lcom/android/settings/notification/ManagedServiceSettings$ScaryWarningDialogFragment;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {p0}, Lcom/android/settings_ext/notification/ManagedServiceSettings$ScaryWarningDialogFragment;->getResources()Landroid/content/res/Resources;
 
     move-result-object v2
 
-    iget-object v3, p0, Lcom/android/settings/notification/ManagedServiceSettings$ScaryWarningDialogFragment;->aef:Lcom/android/settings/notification/ManagedServiceSettings;
+    iget-object v3, p0, Lcom/android/settings_ext/notification/ManagedServiceSettings$ScaryWarningDialogFragment;->aef:Lcom/android/settings_ext/notification/ManagedServiceSettings;
 
-    invoke-static {v3}, Lcom/android/settings/notification/ManagedServiceSettings;->b(Lcom/android/settings/notification/ManagedServiceSettings;)Lcom/android/settings/notification/ManagedServiceSettings$Config;
+    invoke-static {v3}, Lcom/android/settings_ext/notification/ManagedServiceSettings;->b(Lcom/android/settings_ext/notification/ManagedServiceSettings;)Lcom/android/settings_ext/notification/ManagedServiceSettings$Config;
 
     move-result-object v3
 
-    iget v3, v3, Lcom/android/settings/notification/ManagedServiceSettings$Config;->aei:I
+    iget v3, v3, Lcom/android/settings_ext/notification/ManagedServiceSettings$Config;->aei:I
 
     new-array v4, v6, [Ljava/lang/Object;
 
@@ -108,17 +108,17 @@
     move-result-object v2
 
     .line 110
-    invoke-virtual {p0}, Lcom/android/settings/notification/ManagedServiceSettings$ScaryWarningDialogFragment;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {p0}, Lcom/android/settings_ext/notification/ManagedServiceSettings$ScaryWarningDialogFragment;->getResources()Landroid/content/res/Resources;
 
     move-result-object v3
 
-    iget-object v4, p0, Lcom/android/settings/notification/ManagedServiceSettings$ScaryWarningDialogFragment;->aef:Lcom/android/settings/notification/ManagedServiceSettings;
+    iget-object v4, p0, Lcom/android/settings_ext/notification/ManagedServiceSettings$ScaryWarningDialogFragment;->aef:Lcom/android/settings_ext/notification/ManagedServiceSettings;
 
-    invoke-static {v4}, Lcom/android/settings/notification/ManagedServiceSettings;->b(Lcom/android/settings/notification/ManagedServiceSettings;)Lcom/android/settings/notification/ManagedServiceSettings$Config;
+    invoke-static {v4}, Lcom/android/settings_ext/notification/ManagedServiceSettings;->b(Lcom/android/settings_ext/notification/ManagedServiceSettings;)Lcom/android/settings_ext/notification/ManagedServiceSettings$Config;
 
     move-result-object v4
 
-    iget v4, v4, Lcom/android/settings/notification/ManagedServiceSettings$Config;->aej:I
+    iget v4, v4, Lcom/android/settings_ext/notification/ManagedServiceSettings$Config;->aej:I
 
     new-array v5, v6, [Ljava/lang/Object;
 
@@ -131,7 +131,7 @@
     .line 111
     new-instance v3, Landroid/app/AlertDialog$Builder;
 
-    invoke-virtual {p0}, Lcom/android/settings/notification/ManagedServiceSettings$ScaryWarningDialogFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/notification/ManagedServiceSettings$ScaryWarningDialogFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v4
 
@@ -151,9 +151,9 @@
 
     const v2, 0x104000a
 
-    new-instance v3, Lcom/android/settings/notification/ManagedServiceSettings$ScaryWarningDialogFragment$2;
+    new-instance v3, Lcom/android/settings_ext/notification/ManagedServiceSettings$ScaryWarningDialogFragment$2;
 
-    invoke-direct {v3, p0, v0}, Lcom/android/settings/notification/ManagedServiceSettings$ScaryWarningDialogFragment$2;-><init>(Lcom/android/settings/notification/ManagedServiceSettings$ScaryWarningDialogFragment;Landroid/content/ComponentName;)V
+    invoke-direct {v3, p0, v0}, Lcom/android/settings_ext/notification/ManagedServiceSettings$ScaryWarningDialogFragment$2;-><init>(Lcom/android/settings_ext/notification/ManagedServiceSettings$ScaryWarningDialogFragment;Landroid/content/ComponentName;)V
 
     invoke-virtual {v1, v2, v3}, Landroid/app/AlertDialog$Builder;->setPositiveButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
@@ -161,9 +161,9 @@
 
     const/high16 v1, 0x1040000
 
-    new-instance v2, Lcom/android/settings/notification/ManagedServiceSettings$ScaryWarningDialogFragment$1;
+    new-instance v2, Lcom/android/settings_ext/notification/ManagedServiceSettings$ScaryWarningDialogFragment$1;
 
-    invoke-direct {v2, p0}, Lcom/android/settings/notification/ManagedServiceSettings$ScaryWarningDialogFragment$1;-><init>(Lcom/android/settings/notification/ManagedServiceSettings$ScaryWarningDialogFragment;)V
+    invoke-direct {v2, p0}, Lcom/android/settings_ext/notification/ManagedServiceSettings$ScaryWarningDialogFragment$1;-><init>(Lcom/android/settings_ext/notification/ManagedServiceSettings$ScaryWarningDialogFragment;)V
 
     invoke-virtual {v0, v1, v2}, Landroid/app/AlertDialog$Builder;->setNegativeButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 

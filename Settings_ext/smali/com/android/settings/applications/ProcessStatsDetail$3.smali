@@ -1,19 +1,19 @@
-.class Lcom/android/settings/applications/ProcessStatsDetail$3;
+.class Lcom/android/settings_ext/applications/ProcessStatsDetail$3;
 .super Landroid/content/BroadcastReceiver;
 .source "ProcessStatsDetail.java"
 
 
 # instance fields
-.field final synthetic Iu:Lcom/android/settings/applications/ProcessStatsDetail;
+.field final synthetic Iu:Lcom/android/settings_ext/applications/ProcessStatsDetail;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/applications/ProcessStatsDetail;)V
+.method constructor <init>(Lcom/android/settings_ext/applications/ProcessStatsDetail;)V
     .locals 0
 
     .prologue
     .line 283
-    iput-object p1, p0, Lcom/android/settings/applications/ProcessStatsDetail$3;->Iu:Lcom/android/settings/applications/ProcessStatsDetail;
+    iput-object p1, p0, Lcom/android/settings_ext/applications/ProcessStatsDetail$3;->Iu:Lcom/android/settings_ext/applications/ProcessStatsDetail;
 
     invoke-direct {p0}, Landroid/content/BroadcastReceiver;-><init>()V
 
@@ -27,13 +27,13 @@
 
     .prologue
     .line 286
-    iget-object v0, p0, Lcom/android/settings/applications/ProcessStatsDetail$3;->Iu:Lcom/android/settings/applications/ProcessStatsDetail;
+    iget-object v0, p0, Lcom/android/settings_ext/applications/ProcessStatsDetail$3;->Iu:Lcom/android/settings_ext/applications/ProcessStatsDetail;
 
-    invoke-static {v0}, Lcom/android/settings/applications/ProcessStatsDetail;->a(Lcom/android/settings/applications/ProcessStatsDetail;)Landroid/widget/Button;
+    invoke-static {v0}, Lcom/android/settings_ext/applications/ProcessStatsDetail;->a(Lcom/android/settings_ext/applications/ProcessStatsDetail;)Landroid/widget/Button;
 
     move-result-object v1
 
-    invoke-virtual {p0}, Lcom/android/settings/applications/ProcessStatsDetail$3;->getResultCode()I
+    invoke-virtual {p0}, Lcom/android/settings_ext/applications/ProcessStatsDetail$3;->getResultCode()I
 
     move-result v0
 

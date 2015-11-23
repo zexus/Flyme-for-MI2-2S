@@ -1,4 +1,4 @@
-.class public Lcom/android/settings/cloud/network/b;
+.class public Lcom/android/settings_ext/cloud/network/b;
 .super Ljava/lang/Object;
 .source "Connection.java"
 
@@ -6,29 +6,29 @@
 # instance fields
 .field private QJ:Ljava/util/TreeMap;
 
-.field final synthetic this$0:Lcom/android/settings/cloud/network/Connection;
+.field final synthetic this$0:Lcom/android/settings_ext/cloud/network/Connection;
 
 
 # direct methods
-.method public constructor <init>(Lcom/android/settings/cloud/network/Connection;)V
+.method public constructor <init>(Lcom/android/settings_ext/cloud/network/Connection;)V
     .locals 1
 
     .prologue
     .line 380
     const/4 v0, 0x1
 
-    invoke-direct {p0, p1, v0}, Lcom/android/settings/cloud/network/b;-><init>(Lcom/android/settings/cloud/network/Connection;Z)V
+    invoke-direct {p0, p1, v0}, Lcom/android/settings_ext/cloud/network/b;-><init>(Lcom/android/settings_ext/cloud/network/Connection;Z)V
 
     .line 381
     return-void
 .end method
 
-.method public constructor <init>(Lcom/android/settings/cloud/network/Connection;Z)V
+.method public constructor <init>(Lcom/android/settings_ext/cloud/network/Connection;Z)V
     .locals 1
 
     .prologue
     .line 383
-    iput-object p1, p0, Lcom/android/settings/cloud/network/b;->this$0:Lcom/android/settings/cloud/network/Connection;
+    iput-object p1, p0, Lcom/android/settings_ext/cloud/network/b;->this$0:Lcom/android/settings_ext/cloud/network/Connection;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -37,13 +37,13 @@
 
     invoke-direct {v0}, Ljava/util/TreeMap;-><init>()V
 
-    iput-object v0, p0, Lcom/android/settings/cloud/network/b;->QJ:Ljava/util/TreeMap;
+    iput-object v0, p0, Lcom/android/settings_ext/cloud/network/b;->QJ:Ljava/util/TreeMap;
 
     .line 385
     if-eqz p2, :cond_0
 
     .line 387
-    iput-object p0, p1, Lcom/android/settings/cloud/network/Connection;->Qv:Lcom/android/settings/cloud/network/b;
+    iput-object p0, p1, Lcom/android/settings_ext/cloud/network/Connection;->Qv:Lcom/android/settings_ext/cloud/network/b;
 
     .line 389
     :cond_0
@@ -57,7 +57,7 @@
 
     .prologue
     .line 421
-    iget-object v0, p0, Lcom/android/settings/cloud/network/b;->QJ:Ljava/util/TreeMap;
+    iget-object v0, p0, Lcom/android/settings_ext/cloud/network/b;->QJ:Ljava/util/TreeMap;
 
     invoke-virtual {v0}, Ljava/util/TreeMap;->isEmpty()Z
 
@@ -66,7 +66,7 @@
     return v0
 .end method
 
-.method public n(Ljava/lang/String;Ljava/lang/String;)Lcom/android/settings/cloud/network/b;
+.method public n(Ljava/lang/String;Ljava/lang/String;)Lcom/android/settings_ext/cloud/network/b;
     .locals 1
 
     .prologue
@@ -78,7 +78,7 @@
 
     .line 403
     :cond_0
-    iget-object v0, p0, Lcom/android/settings/cloud/network/b;->QJ:Ljava/util/TreeMap;
+    iget-object v0, p0, Lcom/android/settings_ext/cloud/network/b;->QJ:Ljava/util/TreeMap;
 
     invoke-virtual {v0, p1, p2}, Ljava/util/TreeMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -91,63 +91,63 @@
 
     .prologue
     .line 392
-    iget-object v0, p0, Lcom/android/settings/cloud/network/b;->this$0:Lcom/android/settings/cloud/network/Connection;
+    iget-object v0, p0, Lcom/android/settings_ext/cloud/network/b;->this$0:Lcom/android/settings_ext/cloud/network/Connection;
 
-    iget-object v0, v0, Lcom/android/settings/cloud/network/Connection;->Qv:Lcom/android/settings/cloud/network/b;
+    iget-object v0, v0, Lcom/android/settings_ext/cloud/network/Connection;->Qv:Lcom/android/settings_ext/cloud/network/b;
 
     const-string v1, "sdk"
 
-    sget v2, Lcom/android/settings/cloud/a/a;->QW:I
+    sget v2, Lcom/android/settings_ext/cloud/a/a;->QW:I
 
     invoke-static {v2}, Ljava/lang/String;->valueOf(I)Ljava/lang/String;
 
     move-result-object v2
 
-    invoke-virtual {v0, v1, v2}, Lcom/android/settings/cloud/network/b;->n(Ljava/lang/String;Ljava/lang/String;)Lcom/android/settings/cloud/network/b;
+    invoke-virtual {v0, v1, v2}, Lcom/android/settings_ext/cloud/network/b;->n(Ljava/lang/String;Ljava/lang/String;)Lcom/android/settings_ext/cloud/network/b;
 
     .line 393
-    iget-object v0, p0, Lcom/android/settings/cloud/network/b;->this$0:Lcom/android/settings/cloud/network/Connection;
+    iget-object v0, p0, Lcom/android/settings_ext/cloud/network/b;->this$0:Lcom/android/settings_ext/cloud/network/Connection;
 
-    iget-object v0, v0, Lcom/android/settings/cloud/network/Connection;->Qv:Lcom/android/settings/cloud/network/b;
+    iget-object v0, v0, Lcom/android/settings_ext/cloud/network/Connection;->Qv:Lcom/android/settings_ext/cloud/network/b;
 
     const-string v1, "os"
 
-    sget-object v2, Lcom/android/settings/cloud/a/a;->QX:Ljava/lang/String;
+    sget-object v2, Lcom/android/settings_ext/cloud/a/a;->QX:Ljava/lang/String;
 
-    invoke-virtual {v0, v1, v2}, Lcom/android/settings/cloud/network/b;->n(Ljava/lang/String;Ljava/lang/String;)Lcom/android/settings/cloud/network/b;
+    invoke-virtual {v0, v1, v2}, Lcom/android/settings_ext/cloud/network/b;->n(Ljava/lang/String;Ljava/lang/String;)Lcom/android/settings_ext/cloud/network/b;
 
     .line 394
-    iget-object v0, p0, Lcom/android/settings/cloud/network/b;->this$0:Lcom/android/settings/cloud/network/Connection;
+    iget-object v0, p0, Lcom/android/settings_ext/cloud/network/b;->this$0:Lcom/android/settings_ext/cloud/network/Connection;
 
-    iget-object v0, v0, Lcom/android/settings/cloud/network/Connection;->Qv:Lcom/android/settings/cloud/network/b;
+    iget-object v0, v0, Lcom/android/settings_ext/cloud/network/Connection;->Qv:Lcom/android/settings_ext/cloud/network/b;
 
     const-string v1, "la"
 
-    sget-object v2, Lcom/android/settings/cloud/a/a;->LANGUAGE:Ljava/lang/String;
+    sget-object v2, Lcom/android/settings_ext/cloud/a/a;->LANGUAGE:Ljava/lang/String;
 
-    invoke-virtual {v0, v1, v2}, Lcom/android/settings/cloud/network/b;->n(Ljava/lang/String;Ljava/lang/String;)Lcom/android/settings/cloud/network/b;
+    invoke-virtual {v0, v1, v2}, Lcom/android/settings_ext/cloud/network/b;->n(Ljava/lang/String;Ljava/lang/String;)Lcom/android/settings_ext/cloud/network/b;
 
     .line 395
-    iget-object v0, p0, Lcom/android/settings/cloud/network/b;->this$0:Lcom/android/settings/cloud/network/Connection;
+    iget-object v0, p0, Lcom/android/settings_ext/cloud/network/b;->this$0:Lcom/android/settings_ext/cloud/network/Connection;
 
-    iget-object v0, v0, Lcom/android/settings/cloud/network/Connection;->Qv:Lcom/android/settings/cloud/network/b;
+    iget-object v0, v0, Lcom/android/settings_ext/cloud/network/Connection;->Qv:Lcom/android/settings_ext/cloud/network/b;
 
     const-string v1, "co"
 
-    sget-object v2, Lcom/android/settings/cloud/a/a;->COUNTRY:Ljava/lang/String;
+    sget-object v2, Lcom/android/settings_ext/cloud/a/a;->COUNTRY:Ljava/lang/String;
 
-    invoke-virtual {v0, v1, v2}, Lcom/android/settings/cloud/network/b;->n(Ljava/lang/String;Ljava/lang/String;)Lcom/android/settings/cloud/network/b;
+    invoke-virtual {v0, v1, v2}, Lcom/android/settings_ext/cloud/network/b;->n(Ljava/lang/String;Ljava/lang/String;)Lcom/android/settings_ext/cloud/network/b;
 
     .line 396
-    iget-object v0, p0, Lcom/android/settings/cloud/network/b;->this$0:Lcom/android/settings/cloud/network/Connection;
+    iget-object v0, p0, Lcom/android/settings_ext/cloud/network/b;->this$0:Lcom/android/settings_ext/cloud/network/Connection;
 
-    iget-object v0, v0, Lcom/android/settings/cloud/network/Connection;->Qv:Lcom/android/settings/cloud/network/b;
+    iget-object v0, v0, Lcom/android/settings_ext/cloud/network/Connection;->Qv:Lcom/android/settings_ext/cloud/network/b;
 
     const-string v1, "ro"
 
-    sget-object v2, Lcom/android/settings/cloud/a/a;->QV:Ljava/lang/String;
+    sget-object v2, Lcom/android/settings_ext/cloud/a/a;->QV:Ljava/lang/String;
 
-    invoke-virtual {v0, v1, v2}, Lcom/android/settings/cloud/network/b;->n(Ljava/lang/String;Ljava/lang/String;)Lcom/android/settings/cloud/network/b;
+    invoke-virtual {v0, v1, v2}, Lcom/android/settings_ext/cloud/network/b;->n(Ljava/lang/String;Ljava/lang/String;)Lcom/android/settings_ext/cloud/network/b;
 
     .line 397
     return-void
@@ -158,7 +158,7 @@
 
     .prologue
     .line 425
-    iget-object v0, p0, Lcom/android/settings/cloud/network/b;->QJ:Ljava/util/TreeMap;
+    iget-object v0, p0, Lcom/android/settings_ext/cloud/network/b;->QJ:Ljava/util/TreeMap;
 
     invoke-virtual {v0}, Ljava/util/TreeMap;->isEmpty()Z
 
@@ -180,7 +180,7 @@
     invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
 
     .line 429
-    iget-object v0, p0, Lcom/android/settings/cloud/network/b;->QJ:Ljava/util/TreeMap;
+    iget-object v0, p0, Lcom/android/settings_ext/cloud/network/b;->QJ:Ljava/util/TreeMap;
 
     invoke-virtual {v0}, Ljava/util/TreeMap;->keySet()Ljava/util/Set;
 
@@ -213,7 +213,7 @@
 
     .line 433
     :try_start_0
-    iget-object v3, p0, Lcom/android/settings/cloud/network/b;->QJ:Ljava/util/TreeMap;
+    iget-object v3, p0, Lcom/android/settings_ext/cloud/network/b;->QJ:Ljava/util/TreeMap;
 
     invoke-virtual {v3, v0}, Ljava/util/TreeMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
 

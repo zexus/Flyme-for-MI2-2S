@@ -1,4 +1,4 @@
-.class Lcom/android/settings/applications/InstalledAppDetailsFragment$DisableChanger;
+.class Lcom/android/settings_ext/applications/InstalledAppDetailsFragment$DisableChanger;
 .super Landroid/os/AsyncTask;
 .source "InstalledAppDetailsFragment.java"
 
@@ -14,7 +14,7 @@
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/applications/InstalledAppDetailsFragment;Landroid/content/pm/ApplicationInfo;I)V
+.method constructor <init>(Lcom/android/settings_ext/applications/InstalledAppDetailsFragment;Landroid/content/pm/ApplicationInfo;I)V
     .locals 1
 
     .prologue
@@ -22,24 +22,24 @@
     invoke-direct {p0}, Landroid/os/AsyncTask;-><init>()V
 
     .line 513
-    invoke-static {p1}, Lcom/android/settings/applications/InstalledAppDetailsFragment;->d(Lcom/android/settings/applications/InstalledAppDetailsFragment;)Landroid/content/pm/PackageManager;
+    invoke-static {p1}, Lcom/android/settings_ext/applications/InstalledAppDetailsFragment;->d(Lcom/android/settings_ext/applications/InstalledAppDetailsFragment;)Landroid/content/pm/PackageManager;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/applications/InstalledAppDetailsFragment$DisableChanger;->i:Landroid/content/pm/PackageManager;
+    iput-object v0, p0, Lcom/android/settings_ext/applications/InstalledAppDetailsFragment$DisableChanger;->i:Landroid/content/pm/PackageManager;
 
     .line 514
     new-instance v0, Ljava/lang/ref/WeakReference;
 
     invoke-direct {v0, p1}, Ljava/lang/ref/WeakReference;-><init>(Ljava/lang/Object;)V
 
-    iput-object v0, p0, Lcom/android/settings/applications/InstalledAppDetailsFragment$DisableChanger;->Gf:Ljava/lang/ref/WeakReference;
+    iput-object v0, p0, Lcom/android/settings_ext/applications/InstalledAppDetailsFragment$DisableChanger;->Gf:Ljava/lang/ref/WeakReference;
 
     .line 515
-    iput-object p2, p0, Lcom/android/settings/applications/InstalledAppDetailsFragment$DisableChanger;->Df:Landroid/content/pm/ApplicationInfo;
+    iput-object p2, p0, Lcom/android/settings_ext/applications/InstalledAppDetailsFragment$DisableChanger;->Df:Landroid/content/pm/ApplicationInfo;
 
     .line 516
-    iput p3, p0, Lcom/android/settings/applications/InstalledAppDetailsFragment$DisableChanger;->mState:I
+    iput p3, p0, Lcom/android/settings_ext/applications/InstalledAppDetailsFragment$DisableChanger;->mState:I
 
     .line 517
     return-void
@@ -52,13 +52,13 @@
 
     .prologue
     .line 521
-    iget-object v0, p0, Lcom/android/settings/applications/InstalledAppDetailsFragment$DisableChanger;->i:Landroid/content/pm/PackageManager;
+    iget-object v0, p0, Lcom/android/settings_ext/applications/InstalledAppDetailsFragment$DisableChanger;->i:Landroid/content/pm/PackageManager;
 
-    iget-object v1, p0, Lcom/android/settings/applications/InstalledAppDetailsFragment$DisableChanger;->Df:Landroid/content/pm/ApplicationInfo;
+    iget-object v1, p0, Lcom/android/settings_ext/applications/InstalledAppDetailsFragment$DisableChanger;->Df:Landroid/content/pm/ApplicationInfo;
 
     iget-object v1, v1, Landroid/content/pm/ApplicationInfo;->packageName:Ljava/lang/String;
 
-    iget v2, p0, Lcom/android/settings/applications/InstalledAppDetailsFragment$DisableChanger;->mState:I
+    iget v2, p0, Lcom/android/settings_ext/applications/InstalledAppDetailsFragment$DisableChanger;->mState:I
 
     const/4 v3, 0x0
 

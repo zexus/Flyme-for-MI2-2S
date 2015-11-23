@@ -1,4 +1,4 @@
-.class Lcom/android/settings/fK;
+.class Lcom/android/settings_ext/fK;
 .super Ljava/lang/Object;
 .source "RadioInfo.java"
 
@@ -7,16 +7,16 @@
 
 
 # instance fields
-.field final synthetic vV:Lcom/android/settings/RadioInfo;
+.field final synthetic vV:Lcom/android/settings_ext/RadioInfo;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/RadioInfo;)V
+.method constructor <init>(Lcom/android/settings_ext/RadioInfo;)V
     .locals 0
 
     .prologue
     .line 1114
-    iput-object p1, p0, Lcom/android/settings/fK;->vV:Lcom/android/settings/RadioInfo;
+    iput-object p1, p0, Lcom/android/settings_ext/fK;->vV:Lcom/android/settings_ext/RadioInfo;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -30,9 +30,9 @@
 
     .prologue
     .line 1116
-    iget-object v0, p0, Lcom/android/settings/fK;->vV:Lcom/android/settings/RadioInfo;
+    iget-object v0, p0, Lcom/android/settings_ext/fK;->vV:Lcom/android/settings_ext/RadioInfo;
 
-    invoke-static {v0}, Lcom/android/settings/RadioInfo;->K(Lcom/android/settings/RadioInfo;)V
+    invoke-static {v0}, Lcom/android/settings_ext/RadioInfo;->K(Lcom/android/settings_ext/RadioInfo;)V
 
     .line 1117
     return-void

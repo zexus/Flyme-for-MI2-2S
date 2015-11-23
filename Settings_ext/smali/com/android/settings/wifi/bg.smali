@@ -1,4 +1,4 @@
-.class synthetic Lcom/android/settings/wifi/bg;
+.class synthetic Lcom/android/settings_ext/wifi/bg;
 .super Ljava/lang/Object;
 .source "WpsFragment.java"
 
@@ -13,7 +13,7 @@
 
     .prologue
     .line 245
-    invoke-static {}, Lcom/android/settings/wifi/WpsFragment$State;->values()[Lcom/android/settings/wifi/WpsFragment$State;
+    invoke-static {}, Lcom/android/settings_ext/wifi/WpsFragment$State;->values()[Lcom/android/settings_ext/wifi/WpsFragment$State;
 
     move-result-object v0
 
@@ -21,14 +21,14 @@
 
     new-array v0, v0, [I
 
-    sput-object v0, Lcom/android/settings/wifi/bg;->axN:[I
+    sput-object v0, Lcom/android/settings_ext/wifi/bg;->axN:[I
 
     :try_start_0
-    sget-object v0, Lcom/android/settings/wifi/bg;->axN:[I
+    sget-object v0, Lcom/android/settings_ext/wifi/bg;->axN:[I
 
-    sget-object v1, Lcom/android/settings/wifi/WpsFragment$State;->axP:Lcom/android/settings/wifi/WpsFragment$State;
+    sget-object v1, Lcom/android/settings_ext/wifi/WpsFragment$State;->axP:Lcom/android/settings_ext/wifi/WpsFragment$State;
 
-    invoke-virtual {v1}, Lcom/android/settings/wifi/WpsFragment$State;->ordinal()I
+    invoke-virtual {v1}, Lcom/android/settings_ext/wifi/WpsFragment$State;->ordinal()I
 
     move-result v1
 
@@ -40,11 +40,11 @@
 
     :goto_0
     :try_start_1
-    sget-object v0, Lcom/android/settings/wifi/bg;->axN:[I
+    sget-object v0, Lcom/android/settings_ext/wifi/bg;->axN:[I
 
-    sget-object v1, Lcom/android/settings/wifi/WpsFragment$State;->axQ:Lcom/android/settings/wifi/WpsFragment$State;
+    sget-object v1, Lcom/android/settings_ext/wifi/WpsFragment$State;->axQ:Lcom/android/settings_ext/wifi/WpsFragment$State;
 
-    invoke-virtual {v1}, Lcom/android/settings/wifi/WpsFragment$State;->ordinal()I
+    invoke-virtual {v1}, Lcom/android/settings_ext/wifi/WpsFragment$State;->ordinal()I
 
     move-result v1
 
@@ -56,11 +56,11 @@
 
     :goto_1
     :try_start_2
-    sget-object v0, Lcom/android/settings/wifi/bg;->axN:[I
+    sget-object v0, Lcom/android/settings_ext/wifi/bg;->axN:[I
 
-    sget-object v1, Lcom/android/settings/wifi/WpsFragment$State;->axR:Lcom/android/settings/wifi/WpsFragment$State;
+    sget-object v1, Lcom/android/settings_ext/wifi/WpsFragment$State;->axR:Lcom/android/settings_ext/wifi/WpsFragment$State;
 
-    invoke-virtual {v1}, Lcom/android/settings/wifi/WpsFragment$State;->ordinal()I
+    invoke-virtual {v1}, Lcom/android/settings_ext/wifi/WpsFragment$State;->ordinal()I
 
     move-result v1
 
@@ -72,11 +72,11 @@
 
     :goto_2
     :try_start_3
-    sget-object v0, Lcom/android/settings/wifi/bg;->axN:[I
+    sget-object v0, Lcom/android/settings_ext/wifi/bg;->axN:[I
 
-    sget-object v1, Lcom/android/settings/wifi/WpsFragment$State;->axS:Lcom/android/settings/wifi/WpsFragment$State;
+    sget-object v1, Lcom/android/settings_ext/wifi/WpsFragment$State;->axS:Lcom/android/settings_ext/wifi/WpsFragment$State;
 
-    invoke-virtual {v1}, Lcom/android/settings/wifi/WpsFragment$State;->ordinal()I
+    invoke-virtual {v1}, Lcom/android/settings_ext/wifi/WpsFragment$State;->ordinal()I
 
     move-result v1
 

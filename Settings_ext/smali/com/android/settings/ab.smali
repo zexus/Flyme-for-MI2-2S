@@ -1,19 +1,19 @@
-.class Lcom/android/settings/ab;
+.class Lcom/android/settings_ext/ab;
 .super Landroid/content/BroadcastReceiver;
 .source "BatteryInfo.java"
 
 
 # instance fields
-.field final synthetic cm:Lcom/android/settings/BatteryInfo;
+.field final synthetic cm:Lcom/android/settings_ext/BatteryInfo;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/BatteryInfo;)V
+.method constructor <init>(Lcom/android/settings_ext/BatteryInfo;)V
     .locals 0
 
     .prologue
     .line 81
-    iput-object p1, p0, Lcom/android/settings/ab;->cm:Lcom/android/settings/BatteryInfo;
+    iput-object p1, p0, Lcom/android/settings_ext/ab;->cm:Lcom/android/settings_ext/BatteryInfo;
 
     invoke-direct {p0}, Landroid/content/BroadcastReceiver;-><init>()V
 
@@ -50,9 +50,9 @@
     move-result v0
 
     .line 88
-    iget-object v1, p0, Lcom/android/settings/ab;->cm:Lcom/android/settings/BatteryInfo;
+    iget-object v1, p0, Lcom/android/settings_ext/ab;->cm:Lcom/android/settings_ext/BatteryInfo;
 
-    invoke-static {v1}, Lcom/android/settings/BatteryInfo;->b(Lcom/android/settings/BatteryInfo;)Landroid/widget/TextView;
+    invoke-static {v1}, Lcom/android/settings_ext/BatteryInfo;->b(Lcom/android/settings_ext/BatteryInfo;)Landroid/widget/TextView;
 
     move-result-object v1
 
@@ -83,9 +83,9 @@
     invoke-virtual {v1, v2}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
     .line 89
-    iget-object v1, p0, Lcom/android/settings/ab;->cm:Lcom/android/settings/BatteryInfo;
+    iget-object v1, p0, Lcom/android/settings_ext/ab;->cm:Lcom/android/settings_ext/BatteryInfo;
 
-    invoke-static {v1}, Lcom/android/settings/BatteryInfo;->c(Lcom/android/settings/BatteryInfo;)Landroid/widget/TextView;
+    invoke-static {v1}, Lcom/android/settings_ext/BatteryInfo;->c(Lcom/android/settings_ext/BatteryInfo;)Landroid/widget/TextView;
 
     move-result-object v1
 
@@ -116,9 +116,9 @@
     invoke-virtual {v1, v2}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
     .line 90
-    iget-object v1, p0, Lcom/android/settings/ab;->cm:Lcom/android/settings/BatteryInfo;
+    iget-object v1, p0, Lcom/android/settings_ext/ab;->cm:Lcom/android/settings_ext/BatteryInfo;
 
-    invoke-static {v1}, Lcom/android/settings/BatteryInfo;->d(Lcom/android/settings/BatteryInfo;)Landroid/widget/TextView;
+    invoke-static {v1}, Lcom/android/settings_ext/BatteryInfo;->d(Lcom/android/settings_ext/BatteryInfo;)Landroid/widget/TextView;
 
     move-result-object v1
 
@@ -148,11 +148,11 @@
 
     move-result-object v2
 
-    iget-object v3, p0, Lcom/android/settings/ab;->cm:Lcom/android/settings/BatteryInfo;
+    iget-object v3, p0, Lcom/android/settings_ext/ab;->cm:Lcom/android/settings_ext/BatteryInfo;
 
     const v4, 0x7f0900b1
 
-    invoke-virtual {v3, v4}, Lcom/android/settings/BatteryInfo;->getString(I)Ljava/lang/String;
+    invoke-virtual {v3, v4}, Lcom/android/settings_ext/BatteryInfo;->getString(I)Ljava/lang/String;
 
     move-result-object v3
 
@@ -167,9 +167,9 @@
     invoke-virtual {v1, v2}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
     .line 92
-    iget-object v1, p0, Lcom/android/settings/ab;->cm:Lcom/android/settings/BatteryInfo;
+    iget-object v1, p0, Lcom/android/settings_ext/ab;->cm:Lcom/android/settings_ext/BatteryInfo;
 
-    invoke-static {v1}, Lcom/android/settings/BatteryInfo;->e(Lcom/android/settings/BatteryInfo;)Landroid/widget/TextView;
+    invoke-static {v1}, Lcom/android/settings_ext/BatteryInfo;->e(Lcom/android/settings_ext/BatteryInfo;)Landroid/widget/TextView;
 
     move-result-object v1
 
@@ -183,7 +183,7 @@
 
     move-result-object v2
 
-    iget-object v3, p0, Lcom/android/settings/ab;->cm:Lcom/android/settings/BatteryInfo;
+    iget-object v3, p0, Lcom/android/settings_ext/ab;->cm:Lcom/android/settings_ext/BatteryInfo;
 
     const-string v4, "temperature"
 
@@ -191,7 +191,7 @@
 
     move-result v4
 
-    invoke-static {v3, v4}, Lcom/android/settings/BatteryInfo;->a(Lcom/android/settings/BatteryInfo;I)Ljava/lang/String;
+    invoke-static {v3, v4}, Lcom/android/settings_ext/BatteryInfo;->a(Lcom/android/settings_ext/BatteryInfo;I)Ljava/lang/String;
 
     move-result-object v3
 
@@ -199,11 +199,11 @@
 
     move-result-object v2
 
-    iget-object v3, p0, Lcom/android/settings/ab;->cm:Lcom/android/settings/BatteryInfo;
+    iget-object v3, p0, Lcom/android/settings_ext/ab;->cm:Lcom/android/settings_ext/BatteryInfo;
 
     const v4, 0x7f0900b3
 
-    invoke-virtual {v3, v4}, Lcom/android/settings/BatteryInfo;->getString(I)Ljava/lang/String;
+    invoke-virtual {v3, v4}, Lcom/android/settings_ext/BatteryInfo;->getString(I)Ljava/lang/String;
 
     move-result-object v3
 
@@ -218,9 +218,9 @@
     invoke-virtual {v1, v2}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
     .line 94
-    iget-object v1, p0, Lcom/android/settings/ab;->cm:Lcom/android/settings/BatteryInfo;
+    iget-object v1, p0, Lcom/android/settings_ext/ab;->cm:Lcom/android/settings_ext/BatteryInfo;
 
-    invoke-static {v1}, Lcom/android/settings/BatteryInfo;->f(Lcom/android/settings/BatteryInfo;)Landroid/widget/TextView;
+    invoke-static {v1}, Lcom/android/settings_ext/BatteryInfo;->f(Lcom/android/settings_ext/BatteryInfo;)Landroid/widget/TextView;
 
     move-result-object v1
 
@@ -251,19 +251,19 @@
     invoke-virtual {v1, v2}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
     .line 96
-    iget-object v1, p0, Lcom/android/settings/ab;->cm:Lcom/android/settings/BatteryInfo;
+    iget-object v1, p0, Lcom/android/settings_ext/ab;->cm:Lcom/android/settings_ext/BatteryInfo;
 
-    invoke-static {v1}, Lcom/android/settings/BatteryInfo;->g(Lcom/android/settings/BatteryInfo;)Landroid/widget/TextView;
+    invoke-static {v1}, Lcom/android/settings_ext/BatteryInfo;->g(Lcom/android/settings_ext/BatteryInfo;)Landroid/widget/TextView;
 
     move-result-object v1
 
-    iget-object v2, p0, Lcom/android/settings/ab;->cm:Lcom/android/settings/BatteryInfo;
+    iget-object v2, p0, Lcom/android/settings_ext/ab;->cm:Lcom/android/settings_ext/BatteryInfo;
 
-    invoke-virtual {v2}, Lcom/android/settings/BatteryInfo;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {v2}, Lcom/android/settings_ext/BatteryInfo;->getResources()Landroid/content/res/Resources;
 
     move-result-object v2
 
-    invoke-static {v2, p2}, Lcom/android/settings/hl;->a(Landroid/content/res/Resources;Landroid/content/Intent;)Ljava/lang/String;
+    invoke-static {v2, p2}, Lcom/android/settings_ext/hl;->a(Landroid/content/res/Resources;Landroid/content/Intent;)Ljava/lang/String;
 
     move-result-object v2
 
@@ -273,17 +273,17 @@
     packed-switch v0, :pswitch_data_0
 
     .line 115
-    iget-object v0, p0, Lcom/android/settings/ab;->cm:Lcom/android/settings/BatteryInfo;
+    iget-object v0, p0, Lcom/android/settings_ext/ab;->cm:Lcom/android/settings_ext/BatteryInfo;
 
-    invoke-static {v0}, Lcom/android/settings/BatteryInfo;->h(Lcom/android/settings/BatteryInfo;)Landroid/widget/TextView;
+    invoke-static {v0}, Lcom/android/settings_ext/BatteryInfo;->h(Lcom/android/settings_ext/BatteryInfo;)Landroid/widget/TextView;
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/android/settings/ab;->cm:Lcom/android/settings/BatteryInfo;
+    iget-object v1, p0, Lcom/android/settings_ext/ab;->cm:Lcom/android/settings_ext/BatteryInfo;
 
     const v2, 0x7f0900c5
 
-    invoke-virtual {v1, v2}, Lcom/android/settings/BatteryInfo;->getString(I)Ljava/lang/String;
+    invoke-virtual {v1, v2}, Lcom/android/settings_ext/BatteryInfo;->getString(I)Ljava/lang/String;
 
     move-result-object v1
 
@@ -305,19 +305,19 @@
     if-ne v0, v1, :cond_1
 
     .line 122
-    iget-object v0, p0, Lcom/android/settings/ab;->cm:Lcom/android/settings/BatteryInfo;
+    iget-object v0, p0, Lcom/android/settings_ext/ab;->cm:Lcom/android/settings_ext/BatteryInfo;
 
     const v1, 0x7f0900c7
 
-    invoke-virtual {v0, v1}, Lcom/android/settings/BatteryInfo;->getString(I)Ljava/lang/String;
+    invoke-virtual {v0, v1}, Lcom/android/settings_ext/BatteryInfo;->getString(I)Ljava/lang/String;
 
     move-result-object v0
 
     .line 136
     :goto_1
-    iget-object v1, p0, Lcom/android/settings/ab;->cm:Lcom/android/settings/BatteryInfo;
+    iget-object v1, p0, Lcom/android/settings_ext/ab;->cm:Lcom/android/settings_ext/BatteryInfo;
 
-    invoke-static {v1}, Lcom/android/settings/BatteryInfo;->i(Lcom/android/settings/BatteryInfo;)Landroid/widget/TextView;
+    invoke-static {v1}, Lcom/android/settings_ext/BatteryInfo;->i(Lcom/android/settings_ext/BatteryInfo;)Landroid/widget/TextView;
 
     move-result-object v1
 
@@ -329,17 +329,17 @@
 
     .line 100
     :pswitch_0
-    iget-object v0, p0, Lcom/android/settings/ab;->cm:Lcom/android/settings/BatteryInfo;
+    iget-object v0, p0, Lcom/android/settings_ext/ab;->cm:Lcom/android/settings_ext/BatteryInfo;
 
-    invoke-static {v0}, Lcom/android/settings/BatteryInfo;->h(Lcom/android/settings/BatteryInfo;)Landroid/widget/TextView;
+    invoke-static {v0}, Lcom/android/settings_ext/BatteryInfo;->h(Lcom/android/settings_ext/BatteryInfo;)Landroid/widget/TextView;
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/android/settings/ab;->cm:Lcom/android/settings/BatteryInfo;
+    iget-object v1, p0, Lcom/android/settings_ext/ab;->cm:Lcom/android/settings_ext/BatteryInfo;
 
     const v2, 0x7f0900c0
 
-    invoke-virtual {v1, v2}, Lcom/android/settings/BatteryInfo;->getString(I)Ljava/lang/String;
+    invoke-virtual {v1, v2}, Lcom/android/settings_ext/BatteryInfo;->getString(I)Ljava/lang/String;
 
     move-result-object v1
 
@@ -349,17 +349,17 @@
 
     .line 103
     :pswitch_1
-    iget-object v0, p0, Lcom/android/settings/ab;->cm:Lcom/android/settings/BatteryInfo;
+    iget-object v0, p0, Lcom/android/settings_ext/ab;->cm:Lcom/android/settings_ext/BatteryInfo;
 
-    invoke-static {v0}, Lcom/android/settings/BatteryInfo;->h(Lcom/android/settings/BatteryInfo;)Landroid/widget/TextView;
+    invoke-static {v0}, Lcom/android/settings_ext/BatteryInfo;->h(Lcom/android/settings_ext/BatteryInfo;)Landroid/widget/TextView;
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/android/settings/ab;->cm:Lcom/android/settings/BatteryInfo;
+    iget-object v1, p0, Lcom/android/settings_ext/ab;->cm:Lcom/android/settings_ext/BatteryInfo;
 
     const v2, 0x7f0900c1
 
-    invoke-virtual {v1, v2}, Lcom/android/settings/BatteryInfo;->getString(I)Ljava/lang/String;
+    invoke-virtual {v1, v2}, Lcom/android/settings_ext/BatteryInfo;->getString(I)Ljava/lang/String;
 
     move-result-object v1
 
@@ -369,17 +369,17 @@
 
     .line 106
     :pswitch_2
-    iget-object v0, p0, Lcom/android/settings/ab;->cm:Lcom/android/settings/BatteryInfo;
+    iget-object v0, p0, Lcom/android/settings_ext/ab;->cm:Lcom/android/settings_ext/BatteryInfo;
 
-    invoke-static {v0}, Lcom/android/settings/BatteryInfo;->h(Lcom/android/settings/BatteryInfo;)Landroid/widget/TextView;
+    invoke-static {v0}, Lcom/android/settings_ext/BatteryInfo;->h(Lcom/android/settings_ext/BatteryInfo;)Landroid/widget/TextView;
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/android/settings/ab;->cm:Lcom/android/settings/BatteryInfo;
+    iget-object v1, p0, Lcom/android/settings_ext/ab;->cm:Lcom/android/settings_ext/BatteryInfo;
 
     const v2, 0x7f0900c2
 
-    invoke-virtual {v1, v2}, Lcom/android/settings/BatteryInfo;->getString(I)Ljava/lang/String;
+    invoke-virtual {v1, v2}, Lcom/android/settings_ext/BatteryInfo;->getString(I)Ljava/lang/String;
 
     move-result-object v1
 
@@ -389,17 +389,17 @@
 
     .line 109
     :pswitch_3
-    iget-object v0, p0, Lcom/android/settings/ab;->cm:Lcom/android/settings/BatteryInfo;
+    iget-object v0, p0, Lcom/android/settings_ext/ab;->cm:Lcom/android/settings_ext/BatteryInfo;
 
-    invoke-static {v0}, Lcom/android/settings/BatteryInfo;->h(Lcom/android/settings/BatteryInfo;)Landroid/widget/TextView;
+    invoke-static {v0}, Lcom/android/settings_ext/BatteryInfo;->h(Lcom/android/settings_ext/BatteryInfo;)Landroid/widget/TextView;
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/android/settings/ab;->cm:Lcom/android/settings/BatteryInfo;
+    iget-object v1, p0, Lcom/android/settings_ext/ab;->cm:Lcom/android/settings_ext/BatteryInfo;
 
     const v2, 0x7f0900c3
 
-    invoke-virtual {v1, v2}, Lcom/android/settings/BatteryInfo;->getString(I)Ljava/lang/String;
+    invoke-virtual {v1, v2}, Lcom/android/settings_ext/BatteryInfo;->getString(I)Ljava/lang/String;
 
     move-result-object v1
 
@@ -409,17 +409,17 @@
 
     .line 112
     :pswitch_4
-    iget-object v0, p0, Lcom/android/settings/ab;->cm:Lcom/android/settings/BatteryInfo;
+    iget-object v0, p0, Lcom/android/settings_ext/ab;->cm:Lcom/android/settings_ext/BatteryInfo;
 
-    invoke-static {v0}, Lcom/android/settings/BatteryInfo;->h(Lcom/android/settings/BatteryInfo;)Landroid/widget/TextView;
+    invoke-static {v0}, Lcom/android/settings_ext/BatteryInfo;->h(Lcom/android/settings_ext/BatteryInfo;)Landroid/widget/TextView;
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/android/settings/ab;->cm:Lcom/android/settings/BatteryInfo;
+    iget-object v1, p0, Lcom/android/settings_ext/ab;->cm:Lcom/android/settings_ext/BatteryInfo;
 
     const v2, 0x7f0900c4
 
-    invoke-virtual {v1, v2}, Lcom/android/settings/BatteryInfo;->getString(I)Ljava/lang/String;
+    invoke-virtual {v1, v2}, Lcom/android/settings_ext/BatteryInfo;->getString(I)Ljava/lang/String;
 
     move-result-object v1
 
@@ -434,11 +434,11 @@
     if-ne v0, v1, :cond_2
 
     .line 124
-    iget-object v0, p0, Lcom/android/settings/ab;->cm:Lcom/android/settings/BatteryInfo;
+    iget-object v0, p0, Lcom/android/settings_ext/ab;->cm:Lcom/android/settings_ext/BatteryInfo;
 
     const v1, 0x7f0900c8
 
-    invoke-virtual {v0, v1}, Lcom/android/settings/BatteryInfo;->getString(I)Ljava/lang/String;
+    invoke-virtual {v0, v1}, Lcom/android/settings_ext/BatteryInfo;->getString(I)Ljava/lang/String;
 
     move-result-object v0
 
@@ -451,11 +451,11 @@
     if-ne v0, v1, :cond_3
 
     .line 126
-    iget-object v0, p0, Lcom/android/settings/ab;->cm:Lcom/android/settings/BatteryInfo;
+    iget-object v0, p0, Lcom/android/settings_ext/ab;->cm:Lcom/android/settings_ext/BatteryInfo;
 
     const v1, 0x7f0900c9
 
-    invoke-virtual {v0, v1}, Lcom/android/settings/BatteryInfo;->getString(I)Ljava/lang/String;
+    invoke-virtual {v0, v1}, Lcom/android/settings_ext/BatteryInfo;->getString(I)Ljava/lang/String;
 
     move-result-object v0
 
@@ -468,11 +468,11 @@
     if-ne v0, v1, :cond_4
 
     .line 128
-    iget-object v0, p0, Lcom/android/settings/ab;->cm:Lcom/android/settings/BatteryInfo;
+    iget-object v0, p0, Lcom/android/settings_ext/ab;->cm:Lcom/android/settings_ext/BatteryInfo;
 
     const v1, 0x7f0900ca
 
-    invoke-virtual {v0, v1}, Lcom/android/settings/BatteryInfo;->getString(I)Ljava/lang/String;
+    invoke-virtual {v0, v1}, Lcom/android/settings_ext/BatteryInfo;->getString(I)Ljava/lang/String;
 
     move-result-object v0
 
@@ -485,11 +485,11 @@
     if-ne v0, v1, :cond_5
 
     .line 130
-    iget-object v0, p0, Lcom/android/settings/ab;->cm:Lcom/android/settings/BatteryInfo;
+    iget-object v0, p0, Lcom/android/settings_ext/ab;->cm:Lcom/android/settings_ext/BatteryInfo;
 
     const v1, 0x7f0900cb
 
-    invoke-virtual {v0, v1}, Lcom/android/settings/BatteryInfo;->getString(I)Ljava/lang/String;
+    invoke-virtual {v0, v1}, Lcom/android/settings_ext/BatteryInfo;->getString(I)Ljava/lang/String;
 
     move-result-object v0
 
@@ -502,11 +502,11 @@
     if-ne v0, v1, :cond_6
 
     .line 132
-    iget-object v0, p0, Lcom/android/settings/ab;->cm:Lcom/android/settings/BatteryInfo;
+    iget-object v0, p0, Lcom/android/settings_ext/ab;->cm:Lcom/android/settings_ext/BatteryInfo;
 
     const v1, 0x7f0900cc
 
-    invoke-virtual {v0, v1}, Lcom/android/settings/BatteryInfo;->getString(I)Ljava/lang/String;
+    invoke-virtual {v0, v1}, Lcom/android/settings_ext/BatteryInfo;->getString(I)Ljava/lang/String;
 
     move-result-object v0
 
@@ -514,11 +514,11 @@
 
     .line 134
     :cond_6
-    iget-object v0, p0, Lcom/android/settings/ab;->cm:Lcom/android/settings/BatteryInfo;
+    iget-object v0, p0, Lcom/android/settings_ext/ab;->cm:Lcom/android/settings_ext/BatteryInfo;
 
     const v1, 0x7f0900c6
 
-    invoke-virtual {v0, v1}, Lcom/android/settings/BatteryInfo;->getString(I)Ljava/lang/String;
+    invoke-virtual {v0, v1}, Lcom/android/settings_ext/BatteryInfo;->getString(I)Ljava/lang/String;
 
     move-result-object v0
 

@@ -1,4 +1,4 @@
-.class Lcom/android/settings/wifi/O;
+.class Lcom/android/settings_ext/wifi/O;
 .super Ljava/lang/Object;
 .source "WifiAPITest.java"
 
@@ -7,16 +7,16 @@
 
 
 # instance fields
-.field final synthetic aui:Lcom/android/settings/wifi/WifiAPITest;
+.field final synthetic aui:Lcom/android/settings_ext/wifi/WifiAPITest;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/wifi/WifiAPITest;)V
+.method constructor <init>(Lcom/android/settings_ext/wifi/WifiAPITest;)V
     .locals 0
 
     .prologue
     .line 153
-    iput-object p1, p0, Lcom/android/settings/wifi/O;->aui:Lcom/android/settings/wifi/WifiAPITest;
+    iput-object p1, p0, Lcom/android/settings_ext/wifi/O;->aui:Lcom/android/settings_ext/wifi/WifiAPITest;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 

@@ -1,4 +1,4 @@
-.class Lcom/android/settings/gs;
+.class Lcom/android/settings_ext/gs;
 .super Ljava/lang/Object;
 .source "SettingsLicenseActivity.java"
 
@@ -9,26 +9,26 @@
 # instance fields
 .field private mHandler:Landroid/os/Handler;
 
-.field final synthetic xm:Lcom/android/settings/SettingsLicenseActivity;
+.field final synthetic xm:Lcom/android/settings_ext/SettingsLicenseActivity;
 
 .field private xn:Ljava/lang/String;
 
 
 # direct methods
-.method public constructor <init>(Lcom/android/settings/SettingsLicenseActivity;Ljava/lang/String;Landroid/os/Handler;)V
+.method public constructor <init>(Lcom/android/settings_ext/SettingsLicenseActivity;Ljava/lang/String;Landroid/os/Handler;)V
     .locals 0
 
     .prologue
     .line 70
-    iput-object p1, p0, Lcom/android/settings/gs;->xm:Lcom/android/settings/SettingsLicenseActivity;
+    iput-object p1, p0, Lcom/android/settings_ext/gs;->xm:Lcom/android/settings_ext/SettingsLicenseActivity;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 71
-    iput-object p2, p0, Lcom/android/settings/gs;->xn:Ljava/lang/String;
+    iput-object p2, p0, Lcom/android/settings_ext/gs;->xn:Ljava/lang/String;
 
     .line 72
-    iput-object p3, p0, Lcom/android/settings/gs;->mHandler:Landroid/os/Handler;
+    iput-object p3, p0, Lcom/android/settings_ext/gs;->mHandler:Landroid/os/Handler;
 
     .line 73
     return-void
@@ -59,7 +59,7 @@
     new-array v4, v1, [C
 
     .line 84
-    iget-object v1, p0, Lcom/android/settings/gs;->xn:Ljava/lang/String;
+    iget-object v1, p0, Lcom/android/settings_ext/gs;->xn:Ljava/lang/String;
 
     const-string v5, ".gz"
 
@@ -76,7 +76,7 @@
 
     new-instance v6, Ljava/io/FileInputStream;
 
-    iget-object v7, p0, Lcom/android/settings/gs;->xn:Ljava/lang/String;
+    iget-object v7, p0, Lcom/android/settings_ext/gs;->xn:Ljava/lang/String;
 
     invoke-direct {v6, v7}, Ljava/io/FileInputStream;-><init>(Ljava/lang/String;)V
 
@@ -127,7 +127,7 @@
 
     move-result-object v5
 
-    iget-object v6, p0, Lcom/android/settings/gs;->xn:Ljava/lang/String;
+    iget-object v6, p0, Lcom/android/settings_ext/gs;->xn:Ljava/lang/String;
 
     invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -177,7 +177,7 @@
 
     move-result-object v1
 
-    iget-object v4, p0, Lcom/android/settings/gs;->xn:Ljava/lang/String;
+    iget-object v4, p0, Lcom/android/settings_ext/gs;->xn:Ljava/lang/String;
 
     invoke-virtual {v1, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -200,7 +200,7 @@
 
     .line 115
     :cond_1
-    iget-object v1, p0, Lcom/android/settings/gs;->mHandler:Landroid/os/Handler;
+    iget-object v1, p0, Lcom/android/settings_ext/gs;->mHandler:Landroid/os/Handler;
 
     invoke-virtual {v1, v0, v2}, Landroid/os/Handler;->obtainMessage(ILjava/lang/Object;)Landroid/os/Message;
 
@@ -218,7 +218,7 @@
 
     .line 119
     :cond_2
-    iget-object v0, p0, Lcom/android/settings/gs;->mHandler:Landroid/os/Handler;
+    iget-object v0, p0, Lcom/android/settings_ext/gs;->mHandler:Landroid/os/Handler;
 
     invoke-virtual {v0, v1}, Landroid/os/Handler;->sendMessage(Landroid/os/Message;)Z
 
@@ -230,7 +230,7 @@
     :try_start_4
     new-instance v1, Ljava/io/FileReader;
 
-    iget-object v5, p0, Lcom/android/settings/gs;->xn:Ljava/lang/String;
+    iget-object v5, p0, Lcom/android/settings_ext/gs;->xn:Ljava/lang/String;
 
     invoke-direct {v1, v5}, Ljava/io/FileReader;-><init>(Ljava/lang/String;)V
     :try_end_4
@@ -287,7 +287,7 @@
 
     move-result-object v5
 
-    iget-object v6, p0, Lcom/android/settings/gs;->xn:Ljava/lang/String;
+    iget-object v6, p0, Lcom/android/settings_ext/gs;->xn:Ljava/lang/String;
 
     invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 

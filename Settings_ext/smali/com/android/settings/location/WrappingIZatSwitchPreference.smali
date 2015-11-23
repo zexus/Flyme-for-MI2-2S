@@ -1,4 +1,4 @@
-.class Lcom/android/settings/location/WrappingIZatSwitchPreference;
+.class Lcom/android/settings_ext/location/WrappingIZatSwitchPreference;
 .super Landroid/preference/SwitchPreference;
 .source "LocationMode.java"
 

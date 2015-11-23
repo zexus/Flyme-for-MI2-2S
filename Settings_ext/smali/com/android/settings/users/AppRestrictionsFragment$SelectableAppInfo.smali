@@ -1,4 +1,4 @@
-.class Lcom/android/settings/users/AppRestrictionsFragment$SelectableAppInfo;
+.class Lcom/android/settings_ext/users/AppRestrictionsFragment$SelectableAppInfo;
 .super Ljava/lang/Object;
 .source "AppRestrictionsFragment.java"
 
@@ -8,7 +8,7 @@
 
 .field alT:Ljava/lang/CharSequence;
 
-.field alU:Lcom/android/settings/users/AppRestrictionsFragment$SelectableAppInfo;
+.field alU:Lcom/android/settings_ext/users/AppRestrictionsFragment$SelectableAppInfo;
 
 .field icon:Landroid/graphics/drawable/Drawable;
 
@@ -37,7 +37,7 @@
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
 
-    iget-object v1, p0, Lcom/android/settings/users/AppRestrictionsFragment$SelectableAppInfo;->packageName:Ljava/lang/String;
+    iget-object v1, p0, Lcom/android/settings_ext/users/AppRestrictionsFragment$SelectableAppInfo;->packageName:Ljava/lang/String;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -49,7 +49,7 @@
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/android/settings/users/AppRestrictionsFragment$SelectableAppInfo;->alS:Ljava/lang/CharSequence;
+    iget-object v1, p0, Lcom/android/settings_ext/users/AppRestrictionsFragment$SelectableAppInfo;->alS:Ljava/lang/CharSequence;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
@@ -61,7 +61,7 @@
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/android/settings/users/AppRestrictionsFragment$SelectableAppInfo;->alT:Ljava/lang/CharSequence;
+    iget-object v1, p0, Lcom/android/settings_ext/users/AppRestrictionsFragment$SelectableAppInfo;->alT:Ljava/lang/CharSequence;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
@@ -73,7 +73,7 @@
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/android/settings/users/AppRestrictionsFragment$SelectableAppInfo;->icon:Landroid/graphics/drawable/Drawable;
+    iget-object v1, p0, Lcom/android/settings_ext/users/AppRestrictionsFragment$SelectableAppInfo;->icon:Landroid/graphics/drawable/Drawable;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
@@ -85,7 +85,7 @@
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/android/settings/users/AppRestrictionsFragment$SelectableAppInfo;->alU:Lcom/android/settings/users/AppRestrictionsFragment$SelectableAppInfo;
+    iget-object v1, p0, Lcom/android/settings_ext/users/AppRestrictionsFragment$SelectableAppInfo;->alU:Lcom/android/settings_ext/users/AppRestrictionsFragment$SelectableAppInfo;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 

@@ -1,4 +1,4 @@
-.class Lcom/android/settings/notification/MiuiZenModeSettings$5;
+.class Lcom/android/settings_ext/notification/MiuiZenModeSettings$5;
 .super Ljava/lang/Object;
 .source "MiuiZenModeSettings.java"
 
@@ -7,16 +7,16 @@
 
 
 # instance fields
-.field final synthetic aeC:Lcom/android/settings/notification/MiuiZenModeSettings;
+.field final synthetic aeC:Lcom/android/settings_ext/notification/MiuiZenModeSettings;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/notification/MiuiZenModeSettings;)V
+.method constructor <init>(Lcom/android/settings_ext/notification/MiuiZenModeSettings;)V
     .locals 0
 
     .prologue
     .line 175
-    iput-object p1, p0, Lcom/android/settings/notification/MiuiZenModeSettings$5;->aeC:Lcom/android/settings/notification/MiuiZenModeSettings;
+    iput-object p1, p0, Lcom/android/settings_ext/notification/MiuiZenModeSettings$5;->aeC:Lcom/android/settings_ext/notification/MiuiZenModeSettings;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -32,9 +32,9 @@
     const/4 v0, 0x1
 
     .line 178
-    iget-object v1, p0, Lcom/android/settings/notification/MiuiZenModeSettings$5;->aeC:Lcom/android/settings/notification/MiuiZenModeSettings;
+    iget-object v1, p0, Lcom/android/settings_ext/notification/MiuiZenModeSettings$5;->aeC:Lcom/android/settings_ext/notification/MiuiZenModeSettings;
 
-    invoke-static {v1}, Lcom/android/settings/notification/MiuiZenModeSettings;->b(Lcom/android/settings/notification/MiuiZenModeSettings;)Z
+    invoke-static {v1}, Lcom/android/settings_ext/notification/MiuiZenModeSettings;->b(Lcom/android/settings_ext/notification/MiuiZenModeSettings;)Z
 
     move-result v1
 
@@ -54,9 +54,9 @@
     move-result v1
 
     .line 181
-    iget-object v2, p0, Lcom/android/settings/notification/MiuiZenModeSettings$5;->aeC:Lcom/android/settings/notification/MiuiZenModeSettings;
+    iget-object v2, p0, Lcom/android/settings_ext/notification/MiuiZenModeSettings$5;->aeC:Lcom/android/settings_ext/notification/MiuiZenModeSettings;
 
-    invoke-static {v2}, Lcom/android/settings/notification/MiuiZenModeSettings;->c(Lcom/android/settings/notification/MiuiZenModeSettings;)Landroid/service/notification/ZenModeConfig;
+    invoke-static {v2}, Lcom/android/settings_ext/notification/MiuiZenModeSettings;->c(Lcom/android/settings_ext/notification/MiuiZenModeSettings;)Landroid/service/notification/ZenModeConfig;
 
     move-result-object v2
 
@@ -88,9 +88,9 @@
     invoke-static {v0, v2}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
     .line 185
-    iget-object v0, p0, Lcom/android/settings/notification/MiuiZenModeSettings$5;->aeC:Lcom/android/settings/notification/MiuiZenModeSettings;
+    iget-object v0, p0, Lcom/android/settings_ext/notification/MiuiZenModeSettings$5;->aeC:Lcom/android/settings_ext/notification/MiuiZenModeSettings;
 
-    invoke-static {v0}, Lcom/android/settings/notification/MiuiZenModeSettings;->c(Lcom/android/settings/notification/MiuiZenModeSettings;)Landroid/service/notification/ZenModeConfig;
+    invoke-static {v0}, Lcom/android/settings_ext/notification/MiuiZenModeSettings;->c(Lcom/android/settings_ext/notification/MiuiZenModeSettings;)Landroid/service/notification/ZenModeConfig;
 
     move-result-object v0
 
@@ -102,9 +102,9 @@
     iput-boolean v1, v0, Landroid/service/notification/ZenModeConfig;->allowLight:Z
 
     .line 187
-    iget-object v1, p0, Lcom/android/settings/notification/MiuiZenModeSettings$5;->aeC:Lcom/android/settings/notification/MiuiZenModeSettings;
+    iget-object v1, p0, Lcom/android/settings_ext/notification/MiuiZenModeSettings$5;->aeC:Lcom/android/settings_ext/notification/MiuiZenModeSettings;
 
-    invoke-static {v1, v0}, Lcom/android/settings/notification/MiuiZenModeSettings;->a(Lcom/android/settings/notification/MiuiZenModeSettings;Landroid/service/notification/ZenModeConfig;)Z
+    invoke-static {v1, v0}, Lcom/android/settings_ext/notification/MiuiZenModeSettings;->a(Lcom/android/settings_ext/notification/MiuiZenModeSettings;Landroid/service/notification/ZenModeConfig;)Z
 
     move-result v0
 

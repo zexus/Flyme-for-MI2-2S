@@ -1,4 +1,4 @@
-.class Lcom/android/settings/eV;
+.class Lcom/android/settings_ext/eV;
 .super Ljava/lang/Object;
 .source "NotificationAppListSettings.java"
 
@@ -9,16 +9,16 @@
 # instance fields
 .field private final sCollator:Ljava/text/Collator;
 
-.field final synthetic ti:Lcom/android/settings/eU;
+.field final synthetic ti:Lcom/android/settings_ext/eU;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/eU;)V
+.method constructor <init>(Lcom/android/settings_ext/eU;)V
     .locals 1
 
     .prologue
     .line 150
-    iput-object p1, p0, Lcom/android/settings/eV;->ti:Lcom/android/settings/eU;
+    iput-object p1, p0, Lcom/android/settings_ext/eV;->ti:Lcom/android/settings_ext/eU;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -27,25 +27,25 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/eV;->sCollator:Ljava/text/Collator;
+    iput-object v0, p0, Lcom/android/settings_ext/eV;->sCollator:Ljava/text/Collator;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public a(Lcom/android/settings/fa;Lcom/android/settings/fa;)I
+.method public a(Lcom/android/settings_ext/fa;Lcom/android/settings_ext/fa;)I
     .locals 3
 
     .prologue
     .line 155
-    iget-object v0, p0, Lcom/android/settings/eV;->sCollator:Ljava/text/Collator;
+    iget-object v0, p0, Lcom/android/settings_ext/eV;->sCollator:Ljava/text/Collator;
 
-    invoke-static {p1}, Lcom/android/settings/fa;->b(Lcom/android/settings/fa;)Ljava/lang/String;
+    invoke-static {p1}, Lcom/android/settings_ext/fa;->b(Lcom/android/settings_ext/fa;)Ljava/lang/String;
 
     move-result-object v1
 
-    invoke-static {p2}, Lcom/android/settings/fa;->b(Lcom/android/settings/fa;)Ljava/lang/String;
+    invoke-static {p2}, Lcom/android/settings_ext/fa;->b(Lcom/android/settings_ext/fa;)Ljava/lang/String;
 
     move-result-object v2
 
@@ -61,11 +61,11 @@
 
     .prologue
     .line 150
-    check-cast p1, Lcom/android/settings/fa;
+    check-cast p1, Lcom/android/settings_ext/fa;
 
-    check-cast p2, Lcom/android/settings/fa;
+    check-cast p2, Lcom/android/settings_ext/fa;
 
-    invoke-virtual {p0, p1, p2}, Lcom/android/settings/eV;->a(Lcom/android/settings/fa;Lcom/android/settings/fa;)I
+    invoke-virtual {p0, p1, p2}, Lcom/android/settings_ext/eV;->a(Lcom/android/settings_ext/fa;Lcom/android/settings_ext/fa;)I
 
     move-result v0
 

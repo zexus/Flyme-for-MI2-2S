@@ -1,4 +1,4 @@
-.class public Lcom/android/settings/ProvisionObserverService;
+.class public Lcom/android/settings_ext/ProvisionObserverService;
 .super Landroid/app/Service;
 .source "ProvisionObserverService.java"
 
@@ -23,7 +23,7 @@
 
     move-result-object v0
 
-    sput-object v0, Lcom/android/settings/ProvisionObserverService;->uk:Landroid/net/Uri;
+    sput-object v0, Lcom/android/settings_ext/ProvisionObserverService;->uk:Landroid/net/Uri;
 
     return-void
 .end method
@@ -36,25 +36,25 @@
     invoke-direct {p0}, Landroid/app/Service;-><init>()V
 
     .line 19
-    new-instance v0, Lcom/android/settings/ft;
+    new-instance v0, Lcom/android/settings_ext/ft;
 
     new-instance v1, Landroid/os/Handler;
 
     invoke-direct {v1}, Landroid/os/Handler;-><init>()V
 
-    invoke-direct {v0, p0, v1}, Lcom/android/settings/ft;-><init>(Lcom/android/settings/ProvisionObserverService;Landroid/os/Handler;)V
+    invoke-direct {v0, p0, v1}, Lcom/android/settings_ext/ft;-><init>(Lcom/android/settings_ext/ProvisionObserverService;Landroid/os/Handler;)V
 
-    iput-object v0, p0, Lcom/android/settings/ProvisionObserverService;->ul:Landroid/database/ContentObserver;
+    iput-object v0, p0, Lcom/android/settings_ext/ProvisionObserverService;->ul:Landroid/database/ContentObserver;
 
     return-void
 .end method
 
-.method static synthetic a(Lcom/android/settings/ProvisionObserverService;)V
+.method static synthetic a(Lcom/android/settings_ext/ProvisionObserverService;)V
     .locals 0
 
     .prologue
     .line 15
-    invoke-direct {p0}, Lcom/android/settings/ProvisionObserverService;->fT()V
+    invoke-direct {p0}, Lcom/android/settings_ext/ProvisionObserverService;->fT()V
 
     return-void
 .end method
@@ -83,7 +83,7 @@
     invoke-virtual {v0, v1}, Landroid/app/Notification$Builder;->setSmallIcon(I)Landroid/app/Notification$Builder;
 
     .line 33
-    invoke-virtual {p0, v5}, Lcom/android/settings/ProvisionObserverService;->getString(I)Ljava/lang/String;
+    invoke-virtual {p0, v5}, Lcom/android/settings_ext/ProvisionObserverService;->getString(I)Ljava/lang/String;
 
     move-result-object v1
 
@@ -92,7 +92,7 @@
     .line 34
     const v1, 0x7f090e27
 
-    invoke-virtual {p0, v1}, Lcom/android/settings/ProvisionObserverService;->getString(I)Ljava/lang/String;
+    invoke-virtual {p0, v1}, Lcom/android/settings_ext/ProvisionObserverService;->getString(I)Ljava/lang/String;
 
     move-result-object v1
 
@@ -150,7 +150,7 @@
     .line 47
     const-string v0, "notification"
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/ProvisionObserverService;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
+    invoke-virtual {p0, v0}, Lcom/android/settings_ext/ProvisionObserverService;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object v0
 
@@ -183,15 +183,15 @@
     invoke-super {p0}, Landroid/app/Service;->onCreate()V
 
     .line 55
-    invoke-virtual {p0}, Lcom/android/settings/ProvisionObserverService;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/settings_ext/ProvisionObserverService;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v0
 
-    sget-object v1, Lcom/android/settings/ProvisionObserverService;->uk:Landroid/net/Uri;
+    sget-object v1, Lcom/android/settings_ext/ProvisionObserverService;->uk:Landroid/net/Uri;
 
     const/4 v2, 0x0
 
-    iget-object v3, p0, Lcom/android/settings/ProvisionObserverService;->ul:Landroid/database/ContentObserver;
+    iget-object v3, p0, Lcom/android/settings_ext/ProvisionObserverService;->ul:Landroid/database/ContentObserver;
 
     invoke-virtual {v0, v1, v2, v3}, Landroid/content/ContentResolver;->registerContentObserver(Landroid/net/Uri;ZLandroid/database/ContentObserver;)V
 
@@ -207,11 +207,11 @@
     invoke-super {p0}, Landroid/app/Service;->onDestroy()V
 
     .line 62
-    invoke-virtual {p0}, Lcom/android/settings/ProvisionObserverService;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/settings_ext/ProvisionObserverService;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/android/settings/ProvisionObserverService;->ul:Landroid/database/ContentObserver;
+    iget-object v1, p0, Lcom/android/settings_ext/ProvisionObserverService;->ul:Landroid/database/ContentObserver;
 
     invoke-virtual {v0, v1}, Landroid/content/ContentResolver;->unregisterContentObserver(Landroid/database/ContentObserver;)V
 

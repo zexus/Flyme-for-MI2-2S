@@ -1,19 +1,19 @@
-.class Lcom/android/settings/deviceinfo/MsdInstallActivity$HtmlLinkSpan;
+.class Lcom/android/settings_ext/deviceinfo/MsdInstallActivity$HtmlLinkSpan;
 .super Landroid/text/style/CharacterStyle;
 .source "MsdInstallActivity.java"
 
 
 # instance fields
-.field final synthetic SH:Lcom/android/settings/deviceinfo/MsdInstallActivity;
+.field final synthetic SH:Lcom/android/settings_ext/deviceinfo/MsdInstallActivity;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/deviceinfo/MsdInstallActivity;)V
+.method constructor <init>(Lcom/android/settings_ext/deviceinfo/MsdInstallActivity;)V
     .locals 0
 
     .prologue
     .line 267
-    iput-object p1, p0, Lcom/android/settings/deviceinfo/MsdInstallActivity$HtmlLinkSpan;->SH:Lcom/android/settings/deviceinfo/MsdInstallActivity;
+    iput-object p1, p0, Lcom/android/settings_ext/deviceinfo/MsdInstallActivity$HtmlLinkSpan;->SH:Lcom/android/settings_ext/deviceinfo/MsdInstallActivity;
 
     invoke-direct {p0}, Landroid/text/style/CharacterStyle;-><init>()V
 
@@ -27,9 +27,9 @@
 
     .prologue
     .line 270
-    iget-object v0, p0, Lcom/android/settings/deviceinfo/MsdInstallActivity$HtmlLinkSpan;->SH:Lcom/android/settings/deviceinfo/MsdInstallActivity;
+    iget-object v0, p0, Lcom/android/settings_ext/deviceinfo/MsdInstallActivity$HtmlLinkSpan;->SH:Lcom/android/settings_ext/deviceinfo/MsdInstallActivity;
 
-    invoke-virtual {v0}, Lcom/android/settings/deviceinfo/MsdInstallActivity;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {v0}, Lcom/android/settings_ext/deviceinfo/MsdInstallActivity;->getResources()Landroid/content/res/Resources;
 
     move-result-object v0
 

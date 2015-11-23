@@ -1,5 +1,5 @@
-.class public Lcom/android/settings/ChooseGalleryLockPattern;
-.super Lcom/android/settings/MiuiChooseLockPattern;
+.class public Lcom/android/settings_ext/ChooseGalleryLockPattern;
+.super Lcom/android/settings_ext/MiuiChooseLockPattern;
 .source "ChooseGalleryLockPattern.java"
 
 
@@ -9,7 +9,7 @@
 
     .prologue
     .line 16
-    invoke-direct {p0}, Lcom/android/settings/MiuiChooseLockPattern;-><init>()V
+    invoke-direct {p0}, Lcom/android/settings_ext/MiuiChooseLockPattern;-><init>()V
 
     .line 25
     return-void
@@ -24,7 +24,7 @@
     .line 20
     new-instance v0, Landroid/content/Intent;
 
-    invoke-super {p0}, Lcom/android/settings/MiuiChooseLockPattern;->getIntent()Landroid/content/Intent;
+    invoke-super {p0}, Lcom/android/settings_ext/MiuiChooseLockPattern;->getIntent()Landroid/content/Intent;
 
     move-result-object v1
 
@@ -33,7 +33,7 @@
     .line 21
     const-string v1, ":settings:show_fragment"
 
-    const-class v2, Lcom/android/settings/ChooseGalleryLockPattern$ChooseGalleryFragment;
+    const-class v2, Lcom/android/settings_ext/ChooseGalleryLockPattern$ChooseGalleryFragment;
 
     invoke-virtual {v2}, Ljava/lang/Class;->getName()Ljava/lang/String;
 

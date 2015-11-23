@@ -1,4 +1,4 @@
-.class public Lcom/android/settings/OldmanModeSettings;
+.class public Lcom/android/settings_ext/OldmanModeSettings;
 .super Lmiui/preference/PreferenceActivity;
 .source "OldmanModeSettings.java"
 
@@ -19,7 +19,7 @@
     .line 22
     const-string v0, "enable_oldman_mode"
 
-    sput-object v0, Lcom/android/settings/OldmanModeSettings;->tB:Ljava/lang/String;
+    sput-object v0, Lcom/android/settings_ext/OldmanModeSettings;->tB:Ljava/lang/String;
 
     return-void
 .end method
@@ -34,12 +34,12 @@
     return-void
 .end method
 
-.method static synthetic a(Lcom/android/settings/OldmanModeSettings;)Landroid/preference/CheckBoxPreference;
+.method static synthetic a(Lcom/android/settings_ext/OldmanModeSettings;)Landroid/preference/CheckBoxPreference;
     .locals 1
 
     .prologue
     .line 20
-    iget-object v0, p0, Lcom/android/settings/OldmanModeSettings;->tC:Landroid/preference/CheckBoxPreference;
+    iget-object v0, p0, Lcom/android/settings_ext/OldmanModeSettings;->tC:Landroid/preference/CheckBoxPreference;
 
     return-object v0
 .end method
@@ -60,10 +60,10 @@
     .line 30
     const v0, 0x7f060056
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/OldmanModeSettings;->addPreferencesFromResource(I)V
+    invoke-virtual {p0, v0}, Lcom/android/settings_ext/OldmanModeSettings;->addPreferencesFromResource(I)V
 
     .line 31
-    invoke-virtual {p0}, Lcom/android/settings/OldmanModeSettings;->getActionBar()Lmiui/app/ActionBar;
+    invoke-virtual {p0}, Lcom/android/settings_ext/OldmanModeSettings;->getActionBar()Lmiui/app/ActionBar;
 
     move-result-object v0
 
@@ -71,7 +71,7 @@
     if-eqz v0, :cond_0
 
     .line 33
-    invoke-virtual {p0}, Lcom/android/settings/OldmanModeSettings;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
+    invoke-virtual {p0}, Lcom/android/settings_ext/OldmanModeSettings;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
 
     move-result-object v1
 
@@ -83,31 +83,31 @@
 
     .line 35
     :cond_0
-    sget-object v0, Lcom/android/settings/OldmanModeSettings;->tB:Ljava/lang/String;
+    sget-object v0, Lcom/android/settings_ext/OldmanModeSettings;->tB:Ljava/lang/String;
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/OldmanModeSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v0}, Lcom/android/settings_ext/OldmanModeSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v0
 
     check-cast v0, Landroid/preference/CheckBoxPreference;
 
-    iput-object v0, p0, Lcom/android/settings/OldmanModeSettings;->tC:Landroid/preference/CheckBoxPreference;
+    iput-object v0, p0, Lcom/android/settings_ext/OldmanModeSettings;->tC:Landroid/preference/CheckBoxPreference;
 
     .line 36
-    iget-object v0, p0, Lcom/android/settings/OldmanModeSettings;->tC:Landroid/preference/CheckBoxPreference;
+    iget-object v0, p0, Lcom/android/settings_ext/OldmanModeSettings;->tC:Landroid/preference/CheckBoxPreference;
 
-    invoke-static {}, Lcom/android/settings/fc;->fL()Z
+    invoke-static {}, Lcom/android/settings_ext/fc;->fL()Z
 
     move-result v1
 
     invoke-virtual {v0, v1}, Landroid/preference/CheckBoxPreference;->setChecked(Z)V
 
     .line 38
-    iget-object v0, p0, Lcom/android/settings/OldmanModeSettings;->tC:Landroid/preference/CheckBoxPreference;
+    iget-object v0, p0, Lcom/android/settings_ext/OldmanModeSettings;->tC:Landroid/preference/CheckBoxPreference;
 
-    new-instance v1, Lcom/android/settings/fd;
+    new-instance v1, Lcom/android/settings_ext/fd;
 
-    invoke-direct {v1, p0}, Lcom/android/settings/fd;-><init>(Lcom/android/settings/OldmanModeSettings;)V
+    invoke-direct {v1, p0}, Lcom/android/settings_ext/fd;-><init>(Lcom/android/settings_ext/OldmanModeSettings;)V
 
     invoke-virtual {v0, v1}, Landroid/preference/CheckBoxPreference;->setOnPreferenceChangeListener(Landroid/preference/Preference$OnPreferenceChangeListener;)V
 
@@ -117,12 +117,12 @@
     if-eqz v0, :cond_1
 
     .line 88
-    iget-object v0, p0, Lcom/android/settings/OldmanModeSettings;->tC:Landroid/preference/CheckBoxPreference;
+    iget-object v0, p0, Lcom/android/settings_ext/OldmanModeSettings;->tC:Landroid/preference/CheckBoxPreference;
 
     invoke-virtual {v0, v3}, Landroid/preference/CheckBoxPreference;->setSummaryOn(I)V
 
     .line 89
-    iget-object v0, p0, Lcom/android/settings/OldmanModeSettings;->tC:Landroid/preference/CheckBoxPreference;
+    iget-object v0, p0, Lcom/android/settings_ext/OldmanModeSettings;->tC:Landroid/preference/CheckBoxPreference;
 
     invoke-virtual {v0, v3}, Landroid/preference/CheckBoxPreference;->setSummaryOff(I)V
 
@@ -132,12 +132,12 @@
 
     .line 91
     :cond_1
-    iget-object v0, p0, Lcom/android/settings/OldmanModeSettings;->tC:Landroid/preference/CheckBoxPreference;
+    iget-object v0, p0, Lcom/android/settings_ext/OldmanModeSettings;->tC:Landroid/preference/CheckBoxPreference;
 
     invoke-virtual {v0, v2}, Landroid/preference/CheckBoxPreference;->setSummaryOn(I)V
 
     .line 92
-    iget-object v0, p0, Lcom/android/settings/OldmanModeSettings;->tC:Landroid/preference/CheckBoxPreference;
+    iget-object v0, p0, Lcom/android/settings_ext/OldmanModeSettings;->tC:Landroid/preference/CheckBoxPreference;
 
     invoke-virtual {v0, v2}, Landroid/preference/CheckBoxPreference;->setSummaryOff(I)V
 

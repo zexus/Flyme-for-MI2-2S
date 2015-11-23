@@ -1,20 +1,20 @@
-.class Lcom/android/settings/co;
+.class Lcom/android/settings_ext/co;
 .super Ljava/lang/Object;
 .source "EqualizerView.java"
 
 
 # instance fields
-.field private kW:Lcom/android/settings/cp;
+.field private kW:Lcom/android/settings_ext/cp;
 
-.field private kX:Lcom/android/settings/cp;
+.field private kX:Lcom/android/settings_ext/cp;
 
-.field private kY:Lcom/android/settings/cp;
+.field private kY:Lcom/android/settings_ext/cp;
 
-.field private kZ:Lcom/android/settings/cp;
+.field private kZ:Lcom/android/settings_ext/cp;
 
-.field private la:Lcom/android/settings/cp;
+.field private la:Lcom/android/settings_ext/cp;
 
-.field private lb:Lcom/android/settings/cp;
+.field private lb:Lcom/android/settings_ext/cp;
 
 
 # direct methods
@@ -30,63 +30,63 @@
 
 
 # virtual methods
-.method protected a(Lcom/android/settings/cp;)Lcom/android/settings/cp;
+.method protected a(Lcom/android/settings_ext/cp;)Lcom/android/settings_ext/cp;
     .locals 4
 
     .prologue
     .line 226
-    invoke-virtual {p1, p1}, Lcom/android/settings/cp;->c(Lcom/android/settings/cp;)Lcom/android/settings/cp;
+    invoke-virtual {p1, p1}, Lcom/android/settings_ext/cp;->c(Lcom/android/settings_ext/cp;)Lcom/android/settings_ext/cp;
 
     move-result-object v0
 
     .line 227
-    iget-object v1, p0, Lcom/android/settings/co;->kW:Lcom/android/settings/cp;
+    iget-object v1, p0, Lcom/android/settings_ext/co;->kW:Lcom/android/settings_ext/cp;
 
-    iget-object v2, p0, Lcom/android/settings/co;->kX:Lcom/android/settings/cp;
+    iget-object v2, p0, Lcom/android/settings_ext/co;->kX:Lcom/android/settings_ext/cp;
 
-    invoke-virtual {v2, p1}, Lcom/android/settings/cp;->d(Lcom/android/settings/cp;)Lcom/android/settings/cp;
+    invoke-virtual {v2, p1}, Lcom/android/settings_ext/cp;->d(Lcom/android/settings_ext/cp;)Lcom/android/settings_ext/cp;
 
     move-result-object v2
 
-    invoke-virtual {v1, v2}, Lcom/android/settings/cp;->b(Lcom/android/settings/cp;)Lcom/android/settings/cp;
+    invoke-virtual {v1, v2}, Lcom/android/settings_ext/cp;->b(Lcom/android/settings_ext/cp;)Lcom/android/settings_ext/cp;
 
     move-result-object v1
 
-    iget-object v2, p0, Lcom/android/settings/co;->kY:Lcom/android/settings/cp;
+    iget-object v2, p0, Lcom/android/settings_ext/co;->kY:Lcom/android/settings_ext/cp;
 
-    invoke-virtual {v2, v0}, Lcom/android/settings/cp;->d(Lcom/android/settings/cp;)Lcom/android/settings/cp;
+    invoke-virtual {v2, v0}, Lcom/android/settings_ext/cp;->d(Lcom/android/settings_ext/cp;)Lcom/android/settings_ext/cp;
 
     move-result-object v2
 
-    invoke-virtual {v1, v2}, Lcom/android/settings/cp;->b(Lcom/android/settings/cp;)Lcom/android/settings/cp;
+    invoke-virtual {v1, v2}, Lcom/android/settings_ext/cp;->b(Lcom/android/settings_ext/cp;)Lcom/android/settings_ext/cp;
 
     move-result-object v1
 
     .line 228
-    iget-object v2, p0, Lcom/android/settings/co;->kZ:Lcom/android/settings/cp;
+    iget-object v2, p0, Lcom/android/settings_ext/co;->kZ:Lcom/android/settings_ext/cp;
 
-    iget-object v3, p0, Lcom/android/settings/co;->la:Lcom/android/settings/cp;
+    iget-object v3, p0, Lcom/android/settings_ext/co;->la:Lcom/android/settings_ext/cp;
 
-    invoke-virtual {v3, p1}, Lcom/android/settings/cp;->d(Lcom/android/settings/cp;)Lcom/android/settings/cp;
+    invoke-virtual {v3, p1}, Lcom/android/settings_ext/cp;->d(Lcom/android/settings_ext/cp;)Lcom/android/settings_ext/cp;
 
     move-result-object v3
 
-    invoke-virtual {v2, v3}, Lcom/android/settings/cp;->b(Lcom/android/settings/cp;)Lcom/android/settings/cp;
+    invoke-virtual {v2, v3}, Lcom/android/settings_ext/cp;->b(Lcom/android/settings_ext/cp;)Lcom/android/settings_ext/cp;
 
     move-result-object v2
 
-    iget-object v3, p0, Lcom/android/settings/co;->lb:Lcom/android/settings/cp;
+    iget-object v3, p0, Lcom/android/settings_ext/co;->lb:Lcom/android/settings_ext/cp;
 
-    invoke-virtual {v3, v0}, Lcom/android/settings/cp;->d(Lcom/android/settings/cp;)Lcom/android/settings/cp;
+    invoke-virtual {v3, v0}, Lcom/android/settings_ext/cp;->d(Lcom/android/settings_ext/cp;)Lcom/android/settings_ext/cp;
 
     move-result-object v0
 
-    invoke-virtual {v2, v0}, Lcom/android/settings/cp;->b(Lcom/android/settings/cp;)Lcom/android/settings/cp;
+    invoke-virtual {v2, v0}, Lcom/android/settings_ext/cp;->b(Lcom/android/settings_ext/cp;)Lcom/android/settings_ext/cp;
 
     move-result-object v0
 
     .line 229
-    invoke-virtual {v1, v0}, Lcom/android/settings/cp;->d(Lcom/android/settings/cp;)Lcom/android/settings/cp;
+    invoke-virtual {v1, v0}, Lcom/android/settings_ext/cp;->d(Lcom/android/settings_ext/cp;)Lcom/android/settings_ext/cp;
 
     move-result-object v0
 
@@ -163,7 +163,7 @@
     mul-double/2addr v6, v8
 
     .line 217
-    new-instance v8, Lcom/android/settings/cp;
+    new-instance v8, Lcom/android/settings_ext/cp;
 
     const-wide/high16 v10, 0x3ff0000000000000L    # 1.0
 
@@ -199,14 +199,14 @@
 
     const/4 v10, 0x0
 
-    invoke-direct {v8, v9, v10}, Lcom/android/settings/cp;-><init>(FF)V
+    invoke-direct {v8, v9, v10}, Lcom/android/settings_ext/cp;-><init>(FF)V
 
     move-object/from16 v0, p0
 
-    iput-object v8, v0, Lcom/android/settings/co;->kW:Lcom/android/settings/cp;
+    iput-object v8, v0, Lcom/android/settings_ext/co;->kW:Lcom/android/settings_ext/cp;
 
     .line 218
-    new-instance v8, Lcom/android/settings/cp;
+    new-instance v8, Lcom/android/settings_ext/cp;
 
     const-wide/high16 v10, -0x4000000000000000L    # -2.0
 
@@ -234,14 +234,14 @@
 
     const/4 v10, 0x0
 
-    invoke-direct {v8, v9, v10}, Lcom/android/settings/cp;-><init>(FF)V
+    invoke-direct {v8, v9, v10}, Lcom/android/settings_ext/cp;-><init>(FF)V
 
     move-object/from16 v0, p0
 
-    iput-object v8, v0, Lcom/android/settings/co;->kX:Lcom/android/settings/cp;
+    iput-object v8, v0, Lcom/android/settings_ext/co;->kX:Lcom/android/settings_ext/cp;
 
     .line 219
-    new-instance v8, Lcom/android/settings/cp;
+    new-instance v8, Lcom/android/settings_ext/cp;
 
     const-wide/high16 v10, 0x3ff0000000000000L    # 1.0
 
@@ -277,14 +277,14 @@
 
     const/4 v10, 0x0
 
-    invoke-direct {v8, v9, v10}, Lcom/android/settings/cp;-><init>(FF)V
+    invoke-direct {v8, v9, v10}, Lcom/android/settings_ext/cp;-><init>(FF)V
 
     move-object/from16 v0, p0
 
-    iput-object v8, v0, Lcom/android/settings/co;->kY:Lcom/android/settings/cp;
+    iput-object v8, v0, Lcom/android/settings_ext/co;->kY:Lcom/android/settings_ext/cp;
 
     .line 220
-    new-instance v8, Lcom/android/settings/cp;
+    new-instance v8, Lcom/android/settings_ext/cp;
 
     const-wide/high16 v10, 0x3ff0000000000000L    # 1.0
 
@@ -318,14 +318,14 @@
 
     const/4 v10, 0x0
 
-    invoke-direct {v8, v9, v10}, Lcom/android/settings/cp;-><init>(FF)V
+    invoke-direct {v8, v9, v10}, Lcom/android/settings_ext/cp;-><init>(FF)V
 
     move-object/from16 v0, p0
 
-    iput-object v8, v0, Lcom/android/settings/co;->kZ:Lcom/android/settings/cp;
+    iput-object v8, v0, Lcom/android/settings_ext/co;->kZ:Lcom/android/settings_ext/cp;
 
     .line 221
-    new-instance v8, Lcom/android/settings/cp;
+    new-instance v8, Lcom/android/settings_ext/cp;
 
     const-wide/high16 v10, 0x4000000000000000L    # 2.0
 
@@ -351,14 +351,14 @@
 
     const/4 v10, 0x0
 
-    invoke-direct {v8, v9, v10}, Lcom/android/settings/cp;-><init>(FF)V
+    invoke-direct {v8, v9, v10}, Lcom/android/settings_ext/cp;-><init>(FF)V
 
     move-object/from16 v0, p0
 
-    iput-object v8, v0, Lcom/android/settings/co;->la:Lcom/android/settings/cp;
+    iput-object v8, v0, Lcom/android/settings_ext/co;->la:Lcom/android/settings_ext/cp;
 
     .line 222
-    new-instance v8, Lcom/android/settings/cp;
+    new-instance v8, Lcom/android/settings_ext/cp;
 
     const-wide/high16 v10, 0x3ff0000000000000L    # 1.0
 
@@ -392,11 +392,11 @@
 
     const/4 v3, 0x0
 
-    invoke-direct {v8, v2, v3}, Lcom/android/settings/cp;-><init>(FF)V
+    invoke-direct {v8, v2, v3}, Lcom/android/settings_ext/cp;-><init>(FF)V
 
     move-object/from16 v0, p0
 
-    iput-object v8, v0, Lcom/android/settings/co;->lb:Lcom/android/settings/cp;
+    iput-object v8, v0, Lcom/android/settings_ext/co;->lb:Lcom/android/settings_ext/cp;
 
     .line 223
     return-void

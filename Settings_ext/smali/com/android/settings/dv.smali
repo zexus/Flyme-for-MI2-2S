@@ -1,22 +1,22 @@
-.class Lcom/android/settings/dv;
+.class Lcom/android/settings_ext/dv;
 .super Ljava/lang/Object;
 .source "MiuiChooseLockPattern.java"
 
 # interfaces
-.implements Lcom/android/settings/cR;
+.implements Lcom/android/settings_ext/cR;
 
 
 # instance fields
-.field final synthetic oA:Lcom/android/settings/MiuiChooseLockPattern$ChooseLockPatternFragment;
+.field final synthetic oA:Lcom/android/settings_ext/MiuiChooseLockPattern$ChooseLockPatternFragment;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/MiuiChooseLockPattern$ChooseLockPatternFragment;)V
+.method constructor <init>(Lcom/android/settings_ext/MiuiChooseLockPattern$ChooseLockPatternFragment;)V
     .locals 0
 
     .prologue
     .line 105
-    iput-object p1, p0, Lcom/android/settings/dv;->oA:Lcom/android/settings/MiuiChooseLockPattern$ChooseLockPatternFragment;
+    iput-object p1, p0, Lcom/android/settings_ext/dv;->oA:Lcom/android/settings_ext/MiuiChooseLockPattern$ChooseLockPatternFragment;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -30,27 +30,27 @@
     const/4 v2, 0x0
 
     .line 145
-    iget-object v0, p0, Lcom/android/settings/dv;->oA:Lcom/android/settings/MiuiChooseLockPattern$ChooseLockPatternFragment;
+    iget-object v0, p0, Lcom/android/settings_ext/dv;->oA:Lcom/android/settings_ext/MiuiChooseLockPattern$ChooseLockPatternFragment;
 
-    iget-object v0, v0, Lcom/android/settings/MiuiChooseLockPattern$ChooseLockPatternFragment;->db:Landroid/widget/TextView;
+    iget-object v0, v0, Lcom/android/settings_ext/MiuiChooseLockPattern$ChooseLockPatternFragment;->db:Landroid/widget/TextView;
 
     const v1, 0x7f0904f5
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setText(I)V
 
     .line 146
-    iget-object v0, p0, Lcom/android/settings/dv;->oA:Lcom/android/settings/MiuiChooseLockPattern$ChooseLockPatternFragment;
+    iget-object v0, p0, Lcom/android/settings_ext/dv;->oA:Lcom/android/settings_ext/MiuiChooseLockPattern$ChooseLockPatternFragment;
 
-    invoke-static {v0}, Lcom/android/settings/MiuiChooseLockPattern$ChooseLockPatternFragment;->c(Lcom/android/settings/MiuiChooseLockPattern$ChooseLockPatternFragment;)Landroid/widget/TextView;
+    invoke-static {v0}, Lcom/android/settings_ext/MiuiChooseLockPattern$ChooseLockPatternFragment;->c(Lcom/android/settings_ext/MiuiChooseLockPattern$ChooseLockPatternFragment;)Landroid/widget/TextView;
 
     move-result-object v0
 
     invoke-virtual {v0, v2}, Landroid/widget/TextView;->setEnabled(Z)V
 
     .line 147
-    iget-object v0, p0, Lcom/android/settings/dv;->oA:Lcom/android/settings/MiuiChooseLockPattern$ChooseLockPatternFragment;
+    iget-object v0, p0, Lcom/android/settings_ext/dv;->oA:Lcom/android/settings_ext/MiuiChooseLockPattern$ChooseLockPatternFragment;
 
-    invoke-static {v0}, Lcom/android/settings/MiuiChooseLockPattern$ChooseLockPatternFragment;->d(Lcom/android/settings/MiuiChooseLockPattern$ChooseLockPatternFragment;)Landroid/widget/TextView;
+    invoke-static {v0}, Lcom/android/settings_ext/MiuiChooseLockPattern$ChooseLockPatternFragment;->d(Lcom/android/settings_ext/MiuiChooseLockPattern$ChooseLockPatternFragment;)Landroid/widget/TextView;
 
     move-result-object v0
 
@@ -75,17 +75,17 @@
 
     .prologue
     .line 113
-    iget-object v0, p0, Lcom/android/settings/dv;->oA:Lcom/android/settings/MiuiChooseLockPattern$ChooseLockPatternFragment;
+    iget-object v0, p0, Lcom/android/settings_ext/dv;->oA:Lcom/android/settings_ext/MiuiChooseLockPattern$ChooseLockPatternFragment;
 
-    iget-object v0, v0, Lcom/android/settings/MiuiChooseLockPattern$ChooseLockPatternFragment;->en:Lcom/android/settings/LockPatternView;
+    iget-object v0, v0, Lcom/android/settings_ext/MiuiChooseLockPattern$ChooseLockPatternFragment;->en:Lcom/android/settings_ext/LockPatternView;
 
-    iget-object v1, p0, Lcom/android/settings/dv;->oA:Lcom/android/settings/MiuiChooseLockPattern$ChooseLockPatternFragment;
+    iget-object v1, p0, Lcom/android/settings_ext/dv;->oA:Lcom/android/settings_ext/MiuiChooseLockPattern$ChooseLockPatternFragment;
 
-    invoke-static {v1}, Lcom/android/settings/MiuiChooseLockPattern$ChooseLockPatternFragment;->a(Lcom/android/settings/MiuiChooseLockPattern$ChooseLockPatternFragment;)Ljava/lang/Runnable;
+    invoke-static {v1}, Lcom/android/settings_ext/MiuiChooseLockPattern$ChooseLockPatternFragment;->a(Lcom/android/settings_ext/MiuiChooseLockPattern$ChooseLockPatternFragment;)Ljava/lang/Runnable;
 
     move-result-object v1
 
-    invoke-virtual {v0, v1}, Lcom/android/settings/LockPatternView;->removeCallbacks(Ljava/lang/Runnable;)Z
+    invoke-virtual {v0, v1}, Lcom/android/settings_ext/LockPatternView;->removeCallbacks(Ljava/lang/Runnable;)Z
 
     .line 114
     return-void
@@ -96,31 +96,31 @@
 
     .prologue
     .line 117
-    iget-object v0, p0, Lcom/android/settings/dv;->oA:Lcom/android/settings/MiuiChooseLockPattern$ChooseLockPatternFragment;
+    iget-object v0, p0, Lcom/android/settings_ext/dv;->oA:Lcom/android/settings_ext/MiuiChooseLockPattern$ChooseLockPatternFragment;
 
-    invoke-static {v0}, Lcom/android/settings/MiuiChooseLockPattern$ChooseLockPatternFragment;->b(Lcom/android/settings/MiuiChooseLockPattern$ChooseLockPatternFragment;)Lcom/android/settings/MiuiChooseLockPattern$ChooseLockPatternFragment$Stage;
+    invoke-static {v0}, Lcom/android/settings_ext/MiuiChooseLockPattern$ChooseLockPatternFragment;->b(Lcom/android/settings_ext/MiuiChooseLockPattern$ChooseLockPatternFragment;)Lcom/android/settings_ext/MiuiChooseLockPattern$ChooseLockPatternFragment$Stage;
 
     move-result-object v0
 
-    sget-object v1, Lcom/android/settings/MiuiChooseLockPattern$ChooseLockPatternFragment$Stage;->oS:Lcom/android/settings/MiuiChooseLockPattern$ChooseLockPatternFragment$Stage;
+    sget-object v1, Lcom/android/settings_ext/MiuiChooseLockPattern$ChooseLockPatternFragment$Stage;->oS:Lcom/android/settings_ext/MiuiChooseLockPattern$ChooseLockPatternFragment$Stage;
 
     if-eq v0, v1, :cond_0
 
-    iget-object v0, p0, Lcom/android/settings/dv;->oA:Lcom/android/settings/MiuiChooseLockPattern$ChooseLockPatternFragment;
+    iget-object v0, p0, Lcom/android/settings_ext/dv;->oA:Lcom/android/settings_ext/MiuiChooseLockPattern$ChooseLockPatternFragment;
 
-    invoke-static {v0}, Lcom/android/settings/MiuiChooseLockPattern$ChooseLockPatternFragment;->b(Lcom/android/settings/MiuiChooseLockPattern$ChooseLockPatternFragment;)Lcom/android/settings/MiuiChooseLockPattern$ChooseLockPatternFragment$Stage;
+    invoke-static {v0}, Lcom/android/settings_ext/MiuiChooseLockPattern$ChooseLockPatternFragment;->b(Lcom/android/settings_ext/MiuiChooseLockPattern$ChooseLockPatternFragment;)Lcom/android/settings_ext/MiuiChooseLockPattern$ChooseLockPatternFragment$Stage;
 
     move-result-object v0
 
-    sget-object v1, Lcom/android/settings/MiuiChooseLockPattern$ChooseLockPatternFragment$Stage;->oT:Lcom/android/settings/MiuiChooseLockPattern$ChooseLockPatternFragment$Stage;
+    sget-object v1, Lcom/android/settings_ext/MiuiChooseLockPattern$ChooseLockPatternFragment$Stage;->oT:Lcom/android/settings_ext/MiuiChooseLockPattern$ChooseLockPatternFragment$Stage;
 
     if-ne v0, v1, :cond_4
 
     .line 118
     :cond_0
-    iget-object v0, p0, Lcom/android/settings/dv;->oA:Lcom/android/settings/MiuiChooseLockPattern$ChooseLockPatternFragment;
+    iget-object v0, p0, Lcom/android/settings_ext/dv;->oA:Lcom/android/settings_ext/MiuiChooseLockPattern$ChooseLockPatternFragment;
 
-    iget-object v0, v0, Lcom/android/settings/MiuiChooseLockPattern$ChooseLockPatternFragment;->ds:Ljava/util/List;
+    iget-object v0, v0, Lcom/android/settings_ext/MiuiChooseLockPattern$ChooseLockPatternFragment;->ds:Ljava/util/List;
 
     if-nez v0, :cond_1
 
@@ -134,9 +134,9 @@
 
     .line 120
     :cond_1
-    iget-object v0, p0, Lcom/android/settings/dv;->oA:Lcom/android/settings/MiuiChooseLockPattern$ChooseLockPatternFragment;
+    iget-object v0, p0, Lcom/android/settings_ext/dv;->oA:Lcom/android/settings_ext/MiuiChooseLockPattern$ChooseLockPatternFragment;
 
-    iget-object v0, v0, Lcom/android/settings/MiuiChooseLockPattern$ChooseLockPatternFragment;->ds:Ljava/util/List;
+    iget-object v0, v0, Lcom/android/settings_ext/MiuiChooseLockPattern$ChooseLockPatternFragment;->ds:Ljava/util/List;
 
     invoke-interface {v0, p1}, Ljava/util/List;->equals(Ljava/lang/Object;)Z
 
@@ -145,11 +145,11 @@
     if-eqz v0, :cond_3
 
     .line 121
-    iget-object v0, p0, Lcom/android/settings/dv;->oA:Lcom/android/settings/MiuiChooseLockPattern$ChooseLockPatternFragment;
+    iget-object v0, p0, Lcom/android/settings_ext/dv;->oA:Lcom/android/settings_ext/MiuiChooseLockPattern$ChooseLockPatternFragment;
 
-    sget-object v1, Lcom/android/settings/MiuiChooseLockPattern$ChooseLockPatternFragment$Stage;->oU:Lcom/android/settings/MiuiChooseLockPattern$ChooseLockPatternFragment$Stage;
+    sget-object v1, Lcom/android/settings_ext/MiuiChooseLockPattern$ChooseLockPatternFragment$Stage;->oU:Lcom/android/settings_ext/MiuiChooseLockPattern$ChooseLockPatternFragment$Stage;
 
-    invoke-virtual {v0, v1}, Lcom/android/settings/MiuiChooseLockPattern$ChooseLockPatternFragment;->a(Lcom/android/settings/MiuiChooseLockPattern$ChooseLockPatternFragment$Stage;)V
+    invoke-virtual {v0, v1}, Lcom/android/settings_ext/MiuiChooseLockPattern$ChooseLockPatternFragment;->a(Lcom/android/settings_ext/MiuiChooseLockPattern$ChooseLockPatternFragment$Stage;)V
 
     .line 138
     :cond_2
@@ -158,33 +158,33 @@
 
     .line 123
     :cond_3
-    iget-object v0, p0, Lcom/android/settings/dv;->oA:Lcom/android/settings/MiuiChooseLockPattern$ChooseLockPatternFragment;
+    iget-object v0, p0, Lcom/android/settings_ext/dv;->oA:Lcom/android/settings_ext/MiuiChooseLockPattern$ChooseLockPatternFragment;
 
-    sget-object v1, Lcom/android/settings/MiuiChooseLockPattern$ChooseLockPatternFragment$Stage;->oT:Lcom/android/settings/MiuiChooseLockPattern$ChooseLockPatternFragment$Stage;
+    sget-object v1, Lcom/android/settings_ext/MiuiChooseLockPattern$ChooseLockPatternFragment$Stage;->oT:Lcom/android/settings_ext/MiuiChooseLockPattern$ChooseLockPatternFragment$Stage;
 
-    invoke-virtual {v0, v1}, Lcom/android/settings/MiuiChooseLockPattern$ChooseLockPatternFragment;->a(Lcom/android/settings/MiuiChooseLockPattern$ChooseLockPatternFragment$Stage;)V
+    invoke-virtual {v0, v1}, Lcom/android/settings_ext/MiuiChooseLockPattern$ChooseLockPatternFragment;->a(Lcom/android/settings_ext/MiuiChooseLockPattern$ChooseLockPatternFragment$Stage;)V
 
     goto :goto_0
 
     .line 125
     :cond_4
-    iget-object v0, p0, Lcom/android/settings/dv;->oA:Lcom/android/settings/MiuiChooseLockPattern$ChooseLockPatternFragment;
+    iget-object v0, p0, Lcom/android/settings_ext/dv;->oA:Lcom/android/settings_ext/MiuiChooseLockPattern$ChooseLockPatternFragment;
 
-    invoke-static {v0}, Lcom/android/settings/MiuiChooseLockPattern$ChooseLockPatternFragment;->b(Lcom/android/settings/MiuiChooseLockPattern$ChooseLockPatternFragment;)Lcom/android/settings/MiuiChooseLockPattern$ChooseLockPatternFragment$Stage;
+    invoke-static {v0}, Lcom/android/settings_ext/MiuiChooseLockPattern$ChooseLockPatternFragment;->b(Lcom/android/settings_ext/MiuiChooseLockPattern$ChooseLockPatternFragment;)Lcom/android/settings_ext/MiuiChooseLockPattern$ChooseLockPatternFragment$Stage;
 
     move-result-object v0
 
-    sget-object v1, Lcom/android/settings/MiuiChooseLockPattern$ChooseLockPatternFragment$Stage;->oO:Lcom/android/settings/MiuiChooseLockPattern$ChooseLockPatternFragment$Stage;
+    sget-object v1, Lcom/android/settings_ext/MiuiChooseLockPattern$ChooseLockPatternFragment$Stage;->oO:Lcom/android/settings_ext/MiuiChooseLockPattern$ChooseLockPatternFragment$Stage;
 
     if-eq v0, v1, :cond_5
 
-    iget-object v0, p0, Lcom/android/settings/dv;->oA:Lcom/android/settings/MiuiChooseLockPattern$ChooseLockPatternFragment;
+    iget-object v0, p0, Lcom/android/settings_ext/dv;->oA:Lcom/android/settings_ext/MiuiChooseLockPattern$ChooseLockPatternFragment;
 
-    invoke-static {v0}, Lcom/android/settings/MiuiChooseLockPattern$ChooseLockPatternFragment;->b(Lcom/android/settings/MiuiChooseLockPattern$ChooseLockPatternFragment;)Lcom/android/settings/MiuiChooseLockPattern$ChooseLockPatternFragment$Stage;
+    invoke-static {v0}, Lcom/android/settings_ext/MiuiChooseLockPattern$ChooseLockPatternFragment;->b(Lcom/android/settings_ext/MiuiChooseLockPattern$ChooseLockPatternFragment;)Lcom/android/settings_ext/MiuiChooseLockPattern$ChooseLockPatternFragment$Stage;
 
     move-result-object v0
 
-    sget-object v1, Lcom/android/settings/MiuiChooseLockPattern$ChooseLockPatternFragment$Stage;->oQ:Lcom/android/settings/MiuiChooseLockPattern$ChooseLockPatternFragment$Stage;
+    sget-object v1, Lcom/android/settings_ext/MiuiChooseLockPattern$ChooseLockPatternFragment$Stage;->oQ:Lcom/android/settings_ext/MiuiChooseLockPattern$ChooseLockPatternFragment$Stage;
 
     if-ne v0, v1, :cond_7
 
@@ -199,48 +199,48 @@
     if-ge v0, v1, :cond_6
 
     .line 127
-    iget-object v0, p0, Lcom/android/settings/dv;->oA:Lcom/android/settings/MiuiChooseLockPattern$ChooseLockPatternFragment;
+    iget-object v0, p0, Lcom/android/settings_ext/dv;->oA:Lcom/android/settings_ext/MiuiChooseLockPattern$ChooseLockPatternFragment;
 
-    sget-object v1, Lcom/android/settings/MiuiChooseLockPattern$ChooseLockPatternFragment$Stage;->oQ:Lcom/android/settings/MiuiChooseLockPattern$ChooseLockPatternFragment$Stage;
+    sget-object v1, Lcom/android/settings_ext/MiuiChooseLockPattern$ChooseLockPatternFragment$Stage;->oQ:Lcom/android/settings_ext/MiuiChooseLockPattern$ChooseLockPatternFragment$Stage;
 
-    invoke-virtual {v0, v1}, Lcom/android/settings/MiuiChooseLockPattern$ChooseLockPatternFragment;->a(Lcom/android/settings/MiuiChooseLockPattern$ChooseLockPatternFragment$Stage;)V
+    invoke-virtual {v0, v1}, Lcom/android/settings_ext/MiuiChooseLockPattern$ChooseLockPatternFragment;->a(Lcom/android/settings_ext/MiuiChooseLockPattern$ChooseLockPatternFragment$Stage;)V
 
     goto :goto_0
 
     .line 129
     :cond_6
-    iget-object v0, p0, Lcom/android/settings/dv;->oA:Lcom/android/settings/MiuiChooseLockPattern$ChooseLockPatternFragment;
+    iget-object v0, p0, Lcom/android/settings_ext/dv;->oA:Lcom/android/settings_ext/MiuiChooseLockPattern$ChooseLockPatternFragment;
 
     new-instance v1, Ljava/util/ArrayList;
 
     invoke-direct {v1, p1}, Ljava/util/ArrayList;-><init>(Ljava/util/Collection;)V
 
-    iput-object v1, v0, Lcom/android/settings/MiuiChooseLockPattern$ChooseLockPatternFragment;->ds:Ljava/util/List;
+    iput-object v1, v0, Lcom/android/settings_ext/MiuiChooseLockPattern$ChooseLockPatternFragment;->ds:Ljava/util/List;
 
     .line 130
-    iget-object v0, p0, Lcom/android/settings/dv;->oA:Lcom/android/settings/MiuiChooseLockPattern$ChooseLockPatternFragment;
+    iget-object v0, p0, Lcom/android/settings_ext/dv;->oA:Lcom/android/settings_ext/MiuiChooseLockPattern$ChooseLockPatternFragment;
 
-    sget-object v1, Lcom/android/settings/MiuiChooseLockPattern$ChooseLockPatternFragment$Stage;->oR:Lcom/android/settings/MiuiChooseLockPattern$ChooseLockPatternFragment$Stage;
+    sget-object v1, Lcom/android/settings_ext/MiuiChooseLockPattern$ChooseLockPatternFragment$Stage;->oR:Lcom/android/settings_ext/MiuiChooseLockPattern$ChooseLockPatternFragment$Stage;
 
-    invoke-virtual {v0, v1}, Lcom/android/settings/MiuiChooseLockPattern$ChooseLockPatternFragment;->a(Lcom/android/settings/MiuiChooseLockPattern$ChooseLockPatternFragment$Stage;)V
+    invoke-virtual {v0, v1}, Lcom/android/settings_ext/MiuiChooseLockPattern$ChooseLockPatternFragment;->a(Lcom/android/settings_ext/MiuiChooseLockPattern$ChooseLockPatternFragment$Stage;)V
 
     goto :goto_0
 
     .line 132
     :cond_7
-    iget-object v0, p0, Lcom/android/settings/dv;->oA:Lcom/android/settings/MiuiChooseLockPattern$ChooseLockPatternFragment;
+    iget-object v0, p0, Lcom/android/settings_ext/dv;->oA:Lcom/android/settings_ext/MiuiChooseLockPattern$ChooseLockPatternFragment;
 
-    invoke-static {v0}, Lcom/android/settings/MiuiChooseLockPattern$ChooseLockPatternFragment;->b(Lcom/android/settings/MiuiChooseLockPattern$ChooseLockPatternFragment;)Lcom/android/settings/MiuiChooseLockPattern$ChooseLockPatternFragment$Stage;
+    invoke-static {v0}, Lcom/android/settings_ext/MiuiChooseLockPattern$ChooseLockPatternFragment;->b(Lcom/android/settings_ext/MiuiChooseLockPattern$ChooseLockPatternFragment;)Lcom/android/settings_ext/MiuiChooseLockPattern$ChooseLockPatternFragment$Stage;
 
     move-result-object v0
 
-    sget-object v1, Lcom/android/settings/MiuiChooseLockPattern$ChooseLockPatternFragment$Stage;->oU:Lcom/android/settings/MiuiChooseLockPattern$ChooseLockPatternFragment$Stage;
+    sget-object v1, Lcom/android/settings_ext/MiuiChooseLockPattern$ChooseLockPatternFragment$Stage;->oU:Lcom/android/settings_ext/MiuiChooseLockPattern$ChooseLockPatternFragment$Stage;
 
     if-ne v0, v1, :cond_8
 
-    iget-object v0, p0, Lcom/android/settings/dv;->oA:Lcom/android/settings/MiuiChooseLockPattern$ChooseLockPatternFragment;
+    iget-object v0, p0, Lcom/android/settings_ext/dv;->oA:Lcom/android/settings_ext/MiuiChooseLockPattern$ChooseLockPatternFragment;
 
-    invoke-virtual {v0}, Lcom/android/settings/MiuiChooseLockPattern$ChooseLockPatternFragment;->isResumed()Z
+    invoke-virtual {v0}, Lcom/android/settings_ext/MiuiChooseLockPattern$ChooseLockPatternFragment;->isResumed()Z
 
     move-result v0
 
@@ -260,9 +260,9 @@
 
     move-result-object v1
 
-    iget-object v2, p0, Lcom/android/settings/dv;->oA:Lcom/android/settings/MiuiChooseLockPattern$ChooseLockPatternFragment;
+    iget-object v2, p0, Lcom/android/settings_ext/dv;->oA:Lcom/android/settings_ext/MiuiChooseLockPattern$ChooseLockPatternFragment;
 
-    invoke-static {v2}, Lcom/android/settings/MiuiChooseLockPattern$ChooseLockPatternFragment;->b(Lcom/android/settings/MiuiChooseLockPattern$ChooseLockPatternFragment;)Lcom/android/settings/MiuiChooseLockPattern$ChooseLockPatternFragment$Stage;
+    invoke-static {v2}, Lcom/android/settings_ext/MiuiChooseLockPattern$ChooseLockPatternFragment;->b(Lcom/android/settings_ext/MiuiChooseLockPattern$ChooseLockPatternFragment;)Lcom/android/settings_ext/MiuiChooseLockPattern$ChooseLockPatternFragment$Stage;
 
     move-result-object v2
 
@@ -296,20 +296,20 @@
 
     .prologue
     .line 108
-    iget-object v0, p0, Lcom/android/settings/dv;->oA:Lcom/android/settings/MiuiChooseLockPattern$ChooseLockPatternFragment;
+    iget-object v0, p0, Lcom/android/settings_ext/dv;->oA:Lcom/android/settings_ext/MiuiChooseLockPattern$ChooseLockPatternFragment;
 
-    iget-object v0, v0, Lcom/android/settings/MiuiChooseLockPattern$ChooseLockPatternFragment;->en:Lcom/android/settings/LockPatternView;
+    iget-object v0, v0, Lcom/android/settings_ext/MiuiChooseLockPattern$ChooseLockPatternFragment;->en:Lcom/android/settings_ext/LockPatternView;
 
-    iget-object v1, p0, Lcom/android/settings/dv;->oA:Lcom/android/settings/MiuiChooseLockPattern$ChooseLockPatternFragment;
+    iget-object v1, p0, Lcom/android/settings_ext/dv;->oA:Lcom/android/settings_ext/MiuiChooseLockPattern$ChooseLockPatternFragment;
 
-    invoke-static {v1}, Lcom/android/settings/MiuiChooseLockPattern$ChooseLockPatternFragment;->a(Lcom/android/settings/MiuiChooseLockPattern$ChooseLockPatternFragment;)Ljava/lang/Runnable;
+    invoke-static {v1}, Lcom/android/settings_ext/MiuiChooseLockPattern$ChooseLockPatternFragment;->a(Lcom/android/settings_ext/MiuiChooseLockPattern$ChooseLockPatternFragment;)Ljava/lang/Runnable;
 
     move-result-object v1
 
-    invoke-virtual {v0, v1}, Lcom/android/settings/LockPatternView;->removeCallbacks(Ljava/lang/Runnable;)Z
+    invoke-virtual {v0, v1}, Lcom/android/settings_ext/LockPatternView;->removeCallbacks(Ljava/lang/Runnable;)Z
 
     .line 109
-    invoke-direct {p0}, Lcom/android/settings/dv;->as()V
+    invoke-direct {p0}, Lcom/android/settings_ext/dv;->as()V
 
     .line 110
     return-void

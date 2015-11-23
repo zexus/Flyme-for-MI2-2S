@@ -1,4 +1,4 @@
-.class Lcom/android/settings/bH;
+.class Lcom/android/settings_ext/bH;
 .super Ljava/lang/Object;
 .source "DeviceAdminAddFragment.java"
 
@@ -7,16 +7,16 @@
 
 
 # instance fields
-.field final synthetic jw:Lcom/android/settings/DeviceAdminAddFragment;
+.field final synthetic jw:Lcom/android/settings_ext/DeviceAdminAddFragment;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/DeviceAdminAddFragment;)V
+.method constructor <init>(Lcom/android/settings_ext/DeviceAdminAddFragment;)V
     .locals 0
 
     .prologue
     .line 192
-    iput-object p1, p0, Lcom/android/settings/bH;->jw:Lcom/android/settings/DeviceAdminAddFragment;
+    iput-object p1, p0, Lcom/android/settings_ext/bH;->jw:Lcom/android/settings_ext/DeviceAdminAddFragment;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -30,9 +30,9 @@
 
     .prologue
     .line 194
-    iget-object v0, p0, Lcom/android/settings/bH;->jw:Lcom/android/settings/DeviceAdminAddFragment;
+    iget-object v0, p0, Lcom/android/settings_ext/bH;->jw:Lcom/android/settings_ext/DeviceAdminAddFragment;
 
-    invoke-virtual {v0, p1}, Lcom/android/settings/DeviceAdminAddFragment;->a(Landroid/view/View;)V
+    invoke-virtual {v0, p1}, Lcom/android/settings_ext/DeviceAdminAddFragment;->a(Landroid/view/View;)V
 
     .line 195
     return-void

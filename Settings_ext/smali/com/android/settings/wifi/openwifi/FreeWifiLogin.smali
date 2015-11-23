@@ -1,9 +1,9 @@
-.class public Lcom/android/settings/wifi/openwifi/FreeWifiLogin;
+.class public Lcom/android/settings_ext/wifi/openwifi/FreeWifiLogin;
 .super Lmiui/app/Activity;
 .source "FreeWifiLogin.java"
 
 # interfaces
-.implements Lcom/android/settings/wifi/openwifi/m;
+.implements Lcom/android/settings_ext/wifi/openwifi/m;
 
 
 # instance fields
@@ -33,7 +33,7 @@
 
 .field private ayu:Ljava/lang/Runnable;
 
-.field private ayv:Lcom/android/settings/wifi/MiuiWifiService;
+.field private ayv:Lcom/android/settings_ext/wifi/MiuiWifiService;
 
 .field private ayw:Landroid/content/ServiceConnection;
 
@@ -51,99 +51,99 @@
     invoke-direct {p0}, Lmiui/app/Activity;-><init>()V
 
     .line 244
-    new-instance v0, Lcom/android/settings/wifi/openwifi/g;
+    new-instance v0, Lcom/android/settings_ext/wifi/openwifi/g;
 
-    invoke-direct {v0, p0}, Lcom/android/settings/wifi/openwifi/g;-><init>(Lcom/android/settings/wifi/openwifi/FreeWifiLogin;)V
+    invoke-direct {v0, p0}, Lcom/android/settings_ext/wifi/openwifi/g;-><init>(Lcom/android/settings_ext/wifi/openwifi/FreeWifiLogin;)V
 
-    iput-object v0, p0, Lcom/android/settings/wifi/openwifi/FreeWifiLogin;->ayr:Landroid/content/BroadcastReceiver;
+    iput-object v0, p0, Lcom/android/settings_ext/wifi/openwifi/FreeWifiLogin;->ayr:Landroid/content/BroadcastReceiver;
 
     .line 251
-    new-instance v0, Lcom/android/settings/wifi/openwifi/h;
+    new-instance v0, Lcom/android/settings_ext/wifi/openwifi/h;
 
-    invoke-direct {v0, p0}, Lcom/android/settings/wifi/openwifi/h;-><init>(Lcom/android/settings/wifi/openwifi/FreeWifiLogin;)V
+    invoke-direct {v0, p0}, Lcom/android/settings_ext/wifi/openwifi/h;-><init>(Lcom/android/settings_ext/wifi/openwifi/FreeWifiLogin;)V
 
-    iput-object v0, p0, Lcom/android/settings/wifi/openwifi/FreeWifiLogin;->ays:Landroid/content/BroadcastReceiver;
+    iput-object v0, p0, Lcom/android/settings_ext/wifi/openwifi/FreeWifiLogin;->ays:Landroid/content/BroadcastReceiver;
 
     .line 297
-    new-instance v0, Lcom/android/settings/wifi/openwifi/i;
+    new-instance v0, Lcom/android/settings_ext/wifi/openwifi/i;
 
-    invoke-direct {v0, p0}, Lcom/android/settings/wifi/openwifi/i;-><init>(Lcom/android/settings/wifi/openwifi/FreeWifiLogin;)V
+    invoke-direct {v0, p0}, Lcom/android/settings_ext/wifi/openwifi/i;-><init>(Lcom/android/settings_ext/wifi/openwifi/FreeWifiLogin;)V
 
-    iput-object v0, p0, Lcom/android/settings/wifi/openwifi/FreeWifiLogin;->ayu:Ljava/lang/Runnable;
+    iput-object v0, p0, Lcom/android/settings_ext/wifi/openwifi/FreeWifiLogin;->ayu:Ljava/lang/Runnable;
 
     .line 328
-    new-instance v0, Lcom/android/settings/wifi/openwifi/j;
+    new-instance v0, Lcom/android/settings_ext/wifi/openwifi/j;
 
-    invoke-direct {v0, p0}, Lcom/android/settings/wifi/openwifi/j;-><init>(Lcom/android/settings/wifi/openwifi/FreeWifiLogin;)V
+    invoke-direct {v0, p0}, Lcom/android/settings_ext/wifi/openwifi/j;-><init>(Lcom/android/settings_ext/wifi/openwifi/FreeWifiLogin;)V
 
-    iput-object v0, p0, Lcom/android/settings/wifi/openwifi/FreeWifiLogin;->ayw:Landroid/content/ServiceConnection;
+    iput-object v0, p0, Lcom/android/settings_ext/wifi/openwifi/FreeWifiLogin;->ayw:Landroid/content/ServiceConnection;
 
     .line 367
-    new-instance v0, Lcom/android/settings/wifi/openwifi/k;
+    new-instance v0, Lcom/android/settings_ext/wifi/openwifi/k;
 
-    invoke-direct {v0, p0}, Lcom/android/settings/wifi/openwifi/k;-><init>(Lcom/android/settings/wifi/openwifi/FreeWifiLogin;)V
+    invoke-direct {v0, p0}, Lcom/android/settings_ext/wifi/openwifi/k;-><init>(Lcom/android/settings_ext/wifi/openwifi/FreeWifiLogin;)V
 
-    iput-object v0, p0, Lcom/android/settings/wifi/openwifi/FreeWifiLogin;->mHandler:Landroid/os/Handler;
+    iput-object v0, p0, Lcom/android/settings_ext/wifi/openwifi/FreeWifiLogin;->mHandler:Landroid/os/Handler;
 
     return-void
 .end method
 
-.method static synthetic a(Lcom/android/settings/wifi/openwifi/FreeWifiLogin;)Lcom/android/settings/wifi/MiuiWifiService;
+.method static synthetic a(Lcom/android/settings_ext/wifi/openwifi/FreeWifiLogin;)Lcom/android/settings_ext/wifi/MiuiWifiService;
     .locals 1
 
     .prologue
     .line 44
-    iget-object v0, p0, Lcom/android/settings/wifi/openwifi/FreeWifiLogin;->ayv:Lcom/android/settings/wifi/MiuiWifiService;
+    iget-object v0, p0, Lcom/android/settings_ext/wifi/openwifi/FreeWifiLogin;->ayv:Lcom/android/settings_ext/wifi/MiuiWifiService;
 
     return-object v0
 .end method
 
-.method static synthetic a(Lcom/android/settings/wifi/openwifi/FreeWifiLogin;Lcom/android/settings/wifi/MiuiWifiService;)Lcom/android/settings/wifi/MiuiWifiService;
+.method static synthetic a(Lcom/android/settings_ext/wifi/openwifi/FreeWifiLogin;Lcom/android/settings_ext/wifi/MiuiWifiService;)Lcom/android/settings_ext/wifi/MiuiWifiService;
     .locals 0
 
     .prologue
     .line 44
-    iput-object p1, p0, Lcom/android/settings/wifi/openwifi/FreeWifiLogin;->ayv:Lcom/android/settings/wifi/MiuiWifiService;
+    iput-object p1, p0, Lcom/android/settings_ext/wifi/openwifi/FreeWifiLogin;->ayv:Lcom/android/settings_ext/wifi/MiuiWifiService;
 
     return-object p1
 .end method
 
-.method static synthetic a(Lcom/android/settings/wifi/openwifi/FreeWifiLogin;I)V
+.method static synthetic a(Lcom/android/settings_ext/wifi/openwifi/FreeWifiLogin;I)V
     .locals 0
 
     .prologue
     .line 44
-    invoke-direct {p0, p1}, Lcom/android/settings/wifi/openwifi/FreeWifiLogin;->df(I)V
+    invoke-direct {p0, p1}, Lcom/android/settings_ext/wifi/openwifi/FreeWifiLogin;->df(I)V
 
     return-void
 .end method
 
-.method static synthetic a(Lcom/android/settings/wifi/openwifi/FreeWifiLogin;Landroid/content/Context;Landroid/content/Intent;)V
+.method static synthetic a(Lcom/android/settings_ext/wifi/openwifi/FreeWifiLogin;Landroid/content/Context;Landroid/content/Intent;)V
     .locals 0
 
     .prologue
     .line 44
-    invoke-direct {p0, p1, p2}, Lcom/android/settings/wifi/openwifi/FreeWifiLogin;->f(Landroid/content/Context;Landroid/content/Intent;)V
+    invoke-direct {p0, p1, p2}, Lcom/android/settings_ext/wifi/openwifi/FreeWifiLogin;->f(Landroid/content/Context;Landroid/content/Intent;)V
 
     return-void
 .end method
 
-.method static synthetic b(Lcom/android/settings/wifi/openwifi/FreeWifiLogin;)Landroid/widget/TextView;
+.method static synthetic b(Lcom/android/settings_ext/wifi/openwifi/FreeWifiLogin;)Landroid/widget/TextView;
     .locals 1
 
     .prologue
     .line 44
-    iget-object v0, p0, Lcom/android/settings/wifi/openwifi/FreeWifiLogin;->ayk:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/android/settings_ext/wifi/openwifi/FreeWifiLogin;->ayk:Landroid/widget/TextView;
 
     return-object v0
 .end method
 
-.method static synthetic c(Lcom/android/settings/wifi/openwifi/FreeWifiLogin;)Landroid/net/wifi/WifiManager;
+.method static synthetic c(Lcom/android/settings_ext/wifi/openwifi/FreeWifiLogin;)Landroid/net/wifi/WifiManager;
     .locals 1
 
     .prologue
     .line 44
-    iget-object v0, p0, Lcom/android/settings/wifi/openwifi/FreeWifiLogin;->hD:Landroid/net/wifi/WifiManager;
+    iget-object v0, p0, Lcom/android/settings_ext/wifi/openwifi/FreeWifiLogin;->hD:Landroid/net/wifi/WifiManager;
 
     return-object v0
 .end method
@@ -153,32 +153,32 @@
 
     .prologue
     .line 113
-    iget-object v0, p0, Lcom/android/settings/wifi/openwifi/FreeWifiLogin;->mHandler:Landroid/os/Handler;
+    iget-object v0, p0, Lcom/android/settings_ext/wifi/openwifi/FreeWifiLogin;->mHandler:Landroid/os/Handler;
 
     const/16 v1, 0x3e8
 
     invoke-virtual {v0, v1}, Landroid/os/Handler;->removeMessages(I)V
 
     .line 114
-    iget-object v0, p0, Lcom/android/settings/wifi/openwifi/FreeWifiLogin;->mHandler:Landroid/os/Handler;
+    iget-object v0, p0, Lcom/android/settings_ext/wifi/openwifi/FreeWifiLogin;->mHandler:Landroid/os/Handler;
 
     const/16 v1, 0x7d0
 
     invoke-virtual {v0, v1}, Landroid/os/Handler;->removeMessages(I)V
 
     .line 115
-    invoke-virtual {p0}, Lcom/android/settings/wifi/openwifi/FreeWifiLogin;->vZ()V
+    invoke-virtual {p0}, Lcom/android/settings_ext/wifi/openwifi/FreeWifiLogin;->vZ()V
 
     .line 116
     return-void
 .end method
 
-.method static synthetic d(Lcom/android/settings/wifi/openwifi/FreeWifiLogin;)Ljava/lang/Runnable;
+.method static synthetic d(Lcom/android/settings_ext/wifi/openwifi/FreeWifiLogin;)Ljava/lang/Runnable;
     .locals 1
 
     .prologue
     .line 44
-    iget-object v0, p0, Lcom/android/settings/wifi/openwifi/FreeWifiLogin;->ayu:Ljava/lang/Runnable;
+    iget-object v0, p0, Lcom/android/settings_ext/wifi/openwifi/FreeWifiLogin;->ayu:Ljava/lang/Runnable;
 
     return-object v0
 .end method
@@ -198,12 +198,12 @@
     const/4 v2, 0x0
 
     .line 207
-    iget-object v0, p0, Lcom/android/settings/wifi/openwifi/FreeWifiLogin;->ayp:Landroid/graphics/drawable/AnimationDrawable;
+    iget-object v0, p0, Lcom/android/settings_ext/wifi/openwifi/FreeWifiLogin;->ayp:Landroid/graphics/drawable/AnimationDrawable;
 
     invoke-virtual {v0}, Landroid/graphics/drawable/AnimationDrawable;->stop()V
 
     .line 208
-    iget-object v0, p0, Lcom/android/settings/wifi/openwifi/FreeWifiLogin;->mHandler:Landroid/os/Handler;
+    iget-object v0, p0, Lcom/android/settings_ext/wifi/openwifi/FreeWifiLogin;->mHandler:Landroid/os/Handler;
 
     invoke-virtual {v0, v5}, Landroid/os/Handler;->sendEmptyMessage(I)Z
 
@@ -211,7 +211,7 @@
     packed-switch p1, :pswitch_data_0
 
     .line 239
-    invoke-virtual {p0}, Lcom/android/settings/wifi/openwifi/FreeWifiLogin;->onBackPressed()V
+    invoke-virtual {p0}, Lcom/android/settings_ext/wifi/openwifi/FreeWifiLogin;->onBackPressed()V
 
     .line 242
     :goto_0
@@ -219,22 +219,22 @@
 
     .line 211
     :pswitch_0
-    iget-object v0, p0, Lcom/android/settings/wifi/openwifi/FreeWifiLogin;->ayl:Landroid/widget/Button;
+    iget-object v0, p0, Lcom/android/settings_ext/wifi/openwifi/FreeWifiLogin;->ayl:Landroid/widget/Button;
 
     invoke-virtual {v0, v3}, Landroid/widget/Button;->setVisibility(I)V
 
     .line 212
-    invoke-direct {p0}, Lcom/android/settings/wifi/openwifi/FreeWifiLogin;->vW()V
+    invoke-direct {p0}, Lcom/android/settings_ext/wifi/openwifi/FreeWifiLogin;->vW()V
 
     .line 213
-    iget-object v0, p0, Lcom/android/settings/wifi/openwifi/FreeWifiLogin;->ayk:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/android/settings_ext/wifi/openwifi/FreeWifiLogin;->ayk:Landroid/widget/TextView;
 
     invoke-virtual {v0, v2}, Landroid/widget/TextView;->setVisibility(I)V
 
     .line 214
-    iget-object v0, p0, Lcom/android/settings/wifi/openwifi/FreeWifiLogin;->ayo:Landroid/widget/LinearLayout;
+    iget-object v0, p0, Lcom/android/settings_ext/wifi/openwifi/FreeWifiLogin;->ayo:Landroid/widget/LinearLayout;
 
-    invoke-virtual {p0}, Lcom/android/settings/wifi/openwifi/FreeWifiLogin;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {p0}, Lcom/android/settings_ext/wifi/openwifi/FreeWifiLogin;->getResources()Landroid/content/res/Resources;
 
     move-result-object v1
 
@@ -245,42 +245,42 @@
     invoke-virtual {v0, v1}, Landroid/widget/LinearLayout;->setBackgroundColor(I)V
 
     .line 215
-    iget-object v0, p0, Lcom/android/settings/wifi/openwifi/FreeWifiLogin;->mHandler:Landroid/os/Handler;
+    iget-object v0, p0, Lcom/android/settings_ext/wifi/openwifi/FreeWifiLogin;->mHandler:Landroid/os/Handler;
 
     invoke-virtual {v0, v5}, Landroid/os/Handler;->sendEmptyMessage(I)Z
 
     .line 216
-    invoke-direct {p0}, Lcom/android/settings/wifi/openwifi/FreeWifiLogin;->uo()V
+    invoke-direct {p0}, Lcom/android/settings_ext/wifi/openwifi/FreeWifiLogin;->uo()V
 
     goto :goto_0
 
     .line 220
     :pswitch_1
-    iget-object v0, p0, Lcom/android/settings/wifi/openwifi/FreeWifiLogin;->mHandler:Landroid/os/Handler;
+    iget-object v0, p0, Lcom/android/settings_ext/wifi/openwifi/FreeWifiLogin;->mHandler:Landroid/os/Handler;
 
     invoke-virtual {v0, v4}, Landroid/os/Handler;->removeMessages(I)V
 
     .line 221
-    iget-object v0, p0, Lcom/android/settings/wifi/openwifi/FreeWifiLogin;->ayl:Landroid/widget/Button;
+    iget-object v0, p0, Lcom/android/settings_ext/wifi/openwifi/FreeWifiLogin;->ayl:Landroid/widget/Button;
 
     invoke-virtual {v0, v2}, Landroid/widget/Button;->setVisibility(I)V
 
     .line 222
-    iget-object v0, p0, Lcom/android/settings/wifi/openwifi/FreeWifiLogin;->ayj:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/android/settings_ext/wifi/openwifi/FreeWifiLogin;->ayj:Landroid/widget/TextView;
 
     const v1, 0x7f090cf4
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setText(I)V
 
     .line 223
-    iget-object v0, p0, Lcom/android/settings/wifi/openwifi/FreeWifiLogin;->ayk:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/android/settings_ext/wifi/openwifi/FreeWifiLogin;->ayk:Landroid/widget/TextView;
 
     invoke-virtual {v0, v3}, Landroid/widget/TextView;->setVisibility(I)V
 
     .line 224
-    iget-object v0, p0, Lcom/android/settings/wifi/openwifi/FreeWifiLogin;->ayo:Landroid/widget/LinearLayout;
+    iget-object v0, p0, Lcom/android/settings_ext/wifi/openwifi/FreeWifiLogin;->ayo:Landroid/widget/LinearLayout;
 
-    invoke-virtual {p0}, Lcom/android/settings/wifi/openwifi/FreeWifiLogin;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {p0}, Lcom/android/settings_ext/wifi/openwifi/FreeWifiLogin;->getResources()Landroid/content/res/Resources;
 
     move-result-object v1
 
@@ -296,43 +296,43 @@
 
     .line 228
     :pswitch_2
-    iget-object v0, p0, Lcom/android/settings/wifi/openwifi/FreeWifiLogin;->ayi:Landroid/widget/ImageView;
+    iget-object v0, p0, Lcom/android/settings_ext/wifi/openwifi/FreeWifiLogin;->ayi:Landroid/widget/ImageView;
 
-    iget-object v1, p0, Lcom/android/settings/wifi/openwifi/FreeWifiLogin;->ayp:Landroid/graphics/drawable/AnimationDrawable;
+    iget-object v1, p0, Lcom/android/settings_ext/wifi/openwifi/FreeWifiLogin;->ayp:Landroid/graphics/drawable/AnimationDrawable;
 
     invoke-virtual {v0, v1}, Landroid/widget/ImageView;->setImageDrawable(Landroid/graphics/drawable/Drawable;)V
 
     .line 229
-    iget-object v0, p0, Lcom/android/settings/wifi/openwifi/FreeWifiLogin;->ayp:Landroid/graphics/drawable/AnimationDrawable;
+    iget-object v0, p0, Lcom/android/settings_ext/wifi/openwifi/FreeWifiLogin;->ayp:Landroid/graphics/drawable/AnimationDrawable;
 
     invoke-virtual {v0}, Landroid/graphics/drawable/AnimationDrawable;->start()V
 
     .line 230
-    iget-object v0, p0, Lcom/android/settings/wifi/openwifi/FreeWifiLogin;->mHandler:Landroid/os/Handler;
+    iget-object v0, p0, Lcom/android/settings_ext/wifi/openwifi/FreeWifiLogin;->mHandler:Landroid/os/Handler;
 
     invoke-virtual {v0, v4}, Landroid/os/Handler;->removeMessages(I)V
 
     .line 231
-    iget-object v0, p0, Lcom/android/settings/wifi/openwifi/FreeWifiLogin;->ayl:Landroid/widget/Button;
+    iget-object v0, p0, Lcom/android/settings_ext/wifi/openwifi/FreeWifiLogin;->ayl:Landroid/widget/Button;
 
     invoke-virtual {v0, v3}, Landroid/widget/Button;->setVisibility(I)V
 
     .line 232
-    iget-object v0, p0, Lcom/android/settings/wifi/openwifi/FreeWifiLogin;->ayj:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/android/settings_ext/wifi/openwifi/FreeWifiLogin;->ayj:Landroid/widget/TextView;
 
     const v1, 0x7f090cf1
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setText(I)V
 
     .line 233
-    iget-object v0, p0, Lcom/android/settings/wifi/openwifi/FreeWifiLogin;->ayk:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/android/settings_ext/wifi/openwifi/FreeWifiLogin;->ayk:Landroid/widget/TextView;
 
     invoke-virtual {v0, v2}, Landroid/widget/TextView;->setVisibility(I)V
 
     .line 234
-    iget-object v0, p0, Lcom/android/settings/wifi/openwifi/FreeWifiLogin;->ayo:Landroid/widget/LinearLayout;
+    iget-object v0, p0, Lcom/android/settings_ext/wifi/openwifi/FreeWifiLogin;->ayo:Landroid/widget/LinearLayout;
 
-    invoke-virtual {p0}, Lcom/android/settings/wifi/openwifi/FreeWifiLogin;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {p0}, Lcom/android/settings_ext/wifi/openwifi/FreeWifiLogin;->getResources()Landroid/content/res/Resources;
 
     move-result-object v1
 
@@ -343,7 +343,7 @@
     invoke-virtual {v0, v1}, Landroid/widget/LinearLayout;->setBackgroundColor(I)V
 
     .line 235
-    invoke-direct {p0}, Lcom/android/settings/wifi/openwifi/FreeWifiLogin;->uo()V
+    invoke-direct {p0}, Lcom/android/settings_ext/wifi/openwifi/FreeWifiLogin;->uo()V
 
     goto :goto_0
 
@@ -404,12 +404,12 @@
     goto :goto_0
 .end method
 
-.method static synthetic e(Lcom/android/settings/wifi/openwifi/FreeWifiLogin;)V
+.method static synthetic e(Lcom/android/settings_ext/wifi/openwifi/FreeWifiLogin;)V
     .locals 0
 
     .prologue
     .line 44
-    invoke-direct {p0}, Lcom/android/settings/wifi/openwifi/FreeWifiLogin;->vW()V
+    invoke-direct {p0}, Lcom/android/settings_ext/wifi/openwifi/FreeWifiLogin;->vW()V
 
     return-void
 .end method
@@ -447,7 +447,7 @@
     if-ne v1, v0, :cond_0
 
     .line 266
-    invoke-virtual {p0}, Lcom/android/settings/wifi/openwifi/FreeWifiLogin;->finish()V
+    invoke-virtual {p0}, Lcom/android/settings_ext/wifi/openwifi/FreeWifiLogin;->finish()V
 
     .line 273
     :cond_0
@@ -465,7 +465,7 @@
     if-eqz v1, :cond_2
 
     .line 269
-    iget-object v0, p0, Lcom/android/settings/wifi/openwifi/FreeWifiLogin;->mHandler:Landroid/os/Handler;
+    iget-object v0, p0, Lcom/android/settings_ext/wifi/openwifi/FreeWifiLogin;->mHandler:Landroid/os/Handler;
 
     const/16 v1, 0x7d0
 
@@ -484,17 +484,17 @@
     if-eqz v0, :cond_0
 
     .line 271
-    invoke-direct {p0}, Lcom/android/settings/wifi/openwifi/FreeWifiLogin;->us()V
+    invoke-direct {p0}, Lcom/android/settings_ext/wifi/openwifi/FreeWifiLogin;->us()V
 
     goto :goto_0
 .end method
 
-.method static synthetic f(Lcom/android/settings/wifi/openwifi/FreeWifiLogin;)V
+.method static synthetic f(Lcom/android/settings_ext/wifi/openwifi/FreeWifiLogin;)V
     .locals 0
 
     .prologue
     .line 44
-    invoke-direct {p0}, Lcom/android/settings/wifi/openwifi/FreeWifiLogin;->vX()V
+    invoke-direct {p0}, Lcom/android/settings_ext/wifi/openwifi/FreeWifiLogin;->vX()V
 
     return-void
 .end method
@@ -504,15 +504,15 @@
 
     .prologue
     .line 185
-    new-instance v0, Lcom/android/settings/wifi/openwifi/f;
+    new-instance v0, Lcom/android/settings_ext/wifi/openwifi/f;
 
-    invoke-direct {v0, p0}, Lcom/android/settings/wifi/openwifi/f;-><init>(Lcom/android/settings/wifi/openwifi/FreeWifiLogin;)V
+    invoke-direct {v0, p0}, Lcom/android/settings_ext/wifi/openwifi/f;-><init>(Lcom/android/settings_ext/wifi/openwifi/FreeWifiLogin;)V
 
     const/4 v1, 0x0
 
     new-array v1, v1, [Ljava/lang/Void;
 
-    invoke-virtual {v0, v1}, Lcom/android/settings/wifi/openwifi/f;->execute([Ljava/lang/Object;)Landroid/os/AsyncTask;
+    invoke-virtual {v0, v1}, Lcom/android/settings_ext/wifi/openwifi/f;->execute([Ljava/lang/Object;)Landroid/os/AsyncTask;
 
     .line 204
     return-void
@@ -523,14 +523,14 @@
 
     .prologue
     .line 277
-    iget-object v0, p0, Lcom/android/settings/wifi/openwifi/FreeWifiLogin;->hD:Landroid/net/wifi/WifiManager;
+    iget-object v0, p0, Lcom/android/settings_ext/wifi/openwifi/FreeWifiLogin;->hD:Landroid/net/wifi/WifiManager;
 
     invoke-virtual {v0}, Landroid/net/wifi/WifiManager;->getConnectionInfo()Landroid/net/wifi/WifiInfo;
 
     move-result-object v0
 
     .line 278
-    invoke-virtual {p0}, Lcom/android/settings/wifi/openwifi/FreeWifiLogin;->isWifiConnected()Z
+    invoke-virtual {p0}, Lcom/android/settings_ext/wifi/openwifi/FreeWifiLogin;->isWifiConnected()Z
 
     move-result v1
 
@@ -539,13 +539,13 @@
 
     if-nez v1, :cond_1
 
-    iget-boolean v0, p0, Lcom/android/settings/wifi/openwifi/FreeWifiLogin;->ayt:Z
+    iget-boolean v0, p0, Lcom/android/settings_ext/wifi/openwifi/FreeWifiLogin;->ayt:Z
 
     if-eqz v0, :cond_1
 
     .line 281
     :cond_0
-    invoke-virtual {p0}, Lcom/android/settings/wifi/openwifi/FreeWifiLogin;->finish()V
+    invoke-virtual {p0}, Lcom/android/settings_ext/wifi/openwifi/FreeWifiLogin;->finish()V
 
     .line 285
     :goto_0
@@ -553,7 +553,7 @@
 
     .line 284
     :cond_1
-    iput-boolean v1, p0, Lcom/android/settings/wifi/openwifi/FreeWifiLogin;->ayt:Z
+    iput-boolean v1, p0, Lcom/android/settings_ext/wifi/openwifi/FreeWifiLogin;->ayt:Z
 
     goto :goto_0
 .end method
@@ -565,7 +565,7 @@
     const/4 v2, 0x0
 
     .line 135
-    invoke-virtual {p0}, Lcom/android/settings/wifi/openwifi/FreeWifiLogin;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {p0}, Lcom/android/settings_ext/wifi/openwifi/FreeWifiLogin;->getResources()Landroid/content/res/Resources;
 
     move-result-object v0
 
@@ -586,7 +586,7 @@
     aget-object v5, v3, v1
 
     .line 137
-    invoke-virtual {p0}, Lcom/android/settings/wifi/openwifi/FreeWifiLogin;->getLayoutInflater()Landroid/view/LayoutInflater;
+    invoke-virtual {p0}, Lcom/android/settings_ext/wifi/openwifi/FreeWifiLogin;->getLayoutInflater()Landroid/view/LayoutInflater;
 
     move-result-object v0
 
@@ -611,7 +611,7 @@
     invoke-virtual {v0, v5}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
     .line 140
-    iget-object v0, p0, Lcom/android/settings/wifi/openwifi/FreeWifiLogin;->ayn:Landroid/widget/LinearLayout;
+    iget-object v0, p0, Lcom/android/settings_ext/wifi/openwifi/FreeWifiLogin;->ayn:Landroid/widget/LinearLayout;
 
     invoke-virtual {v0, v6}, Landroid/widget/LinearLayout;->addView(Landroid/view/View;)V
 
@@ -636,14 +636,14 @@
     const-wide/16 v2, 0x0
 
     .line 146
-    iget-wide v0, p0, Lcom/android/settings/wifi/openwifi/FreeWifiLogin;->ayq:J
+    iget-wide v0, p0, Lcom/android/settings_ext/wifi/openwifi/FreeWifiLogin;->ayq:J
 
     cmp-long v0, v0, v2
 
     if-nez v0, :cond_0
 
     .line 147
-    invoke-static {}, Lcom/android/settings/wifi/openwifi/l;->wd()J
+    invoke-static {}, Lcom/android/settings_ext/wifi/openwifi/l;->wd()J
 
     move-result-wide v0
 
@@ -652,11 +652,11 @@
     if-lez v0, :cond_1
 
     .line 148
-    invoke-static {}, Lcom/android/settings/wifi/openwifi/l;->wd()J
+    invoke-static {}, Lcom/android/settings_ext/wifi/openwifi/l;->wd()J
 
     move-result-wide v0
 
-    iput-wide v0, p0, Lcom/android/settings/wifi/openwifi/FreeWifiLogin;->ayq:J
+    iput-wide v0, p0, Lcom/android/settings_ext/wifi/openwifi/FreeWifiLogin;->ayq:J
 
     .line 153
     :cond_0
@@ -665,7 +665,7 @@
 
     move-result-wide v0
 
-    iget-wide v2, p0, Lcom/android/settings/wifi/openwifi/FreeWifiLogin;->ayq:J
+    iget-wide v2, p0, Lcom/android/settings_ext/wifi/openwifi/FreeWifiLogin;->ayq:J
 
     sub-long/2addr v0, v2
 
@@ -686,17 +686,17 @@
 
     aput-object v0, v2, v3
 
-    invoke-virtual {p0, v1, v2}, Lcom/android/settings/wifi/openwifi/FreeWifiLogin;->getString(I[Ljava/lang/Object;)Ljava/lang/String;
+    invoke-virtual {p0, v1, v2}, Lcom/android/settings_ext/wifi/openwifi/FreeWifiLogin;->getString(I[Ljava/lang/Object;)Ljava/lang/String;
 
     move-result-object v0
 
     .line 155
-    iget-object v1, p0, Lcom/android/settings/wifi/openwifi/FreeWifiLogin;->ayj:Landroid/widget/TextView;
+    iget-object v1, p0, Lcom/android/settings_ext/wifi/openwifi/FreeWifiLogin;->ayj:Landroid/widget/TextView;
 
     invoke-virtual {v1, v0}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
     .line 156
-    iget-object v0, p0, Lcom/android/settings/wifi/openwifi/FreeWifiLogin;->mHandler:Landroid/os/Handler;
+    iget-object v0, p0, Lcom/android/settings_ext/wifi/openwifi/FreeWifiLogin;->mHandler:Landroid/os/Handler;
 
     const/16 v1, 0x3e8
 
@@ -711,7 +711,7 @@
 
     move-result-wide v0
 
-    iput-wide v0, p0, Lcom/android/settings/wifi/openwifi/FreeWifiLogin;->ayq:J
+    iput-wide v0, p0, Lcom/android/settings_ext/wifi/openwifi/FreeWifiLogin;->ayq:J
 
     goto :goto_0
 .end method
@@ -721,7 +721,7 @@
 
     .prologue
     .line 175
-    iget-object v0, p0, Lcom/android/settings/wifi/openwifi/FreeWifiLogin;->hD:Landroid/net/wifi/WifiManager;
+    iget-object v0, p0, Lcom/android/settings_ext/wifi/openwifi/FreeWifiLogin;->hD:Landroid/net/wifi/WifiManager;
 
     invoke-virtual {v0}, Landroid/net/wifi/WifiManager;->getConnectionInfo()Landroid/net/wifi/WifiInfo;
 
@@ -730,7 +730,7 @@
     .line 176
     if-eqz v0, :cond_0
 
-    iget-object v1, p0, Lcom/android/settings/wifi/openwifi/FreeWifiLogin;->ayp:Landroid/graphics/drawable/AnimationDrawable;
+    iget-object v1, p0, Lcom/android/settings_ext/wifi/openwifi/FreeWifiLogin;->ayp:Landroid/graphics/drawable/AnimationDrawable;
 
     invoke-virtual {v1}, Landroid/graphics/drawable/AnimationDrawable;->isRunning()Z
 
@@ -750,14 +750,14 @@
     move-result v0
 
     .line 180
-    invoke-static {v0}, Lcom/android/settings/wifi/openwifi/FreeWifiLogin;->dp(I)I
+    invoke-static {v0}, Lcom/android/settings_ext/wifi/openwifi/FreeWifiLogin;->dp(I)I
 
     move-result v0
 
     .line 181
-    iget-object v1, p0, Lcom/android/settings/wifi/openwifi/FreeWifiLogin;->ayi:Landroid/widget/ImageView;
+    iget-object v1, p0, Lcom/android/settings_ext/wifi/openwifi/FreeWifiLogin;->ayi:Landroid/widget/ImageView;
 
-    iget-object v2, p0, Lcom/android/settings/wifi/openwifi/FreeWifiLogin;->ayp:Landroid/graphics/drawable/AnimationDrawable;
+    iget-object v2, p0, Lcom/android/settings_ext/wifi/openwifi/FreeWifiLogin;->ayp:Landroid/graphics/drawable/AnimationDrawable;
 
     invoke-virtual {v2, v0}, Landroid/graphics/drawable/AnimationDrawable;->getFrame(I)Landroid/graphics/drawable/Drawable;
 
@@ -775,7 +775,7 @@
 
     .prologue
     .line 387
-    iget-object v0, p0, Lcom/android/settings/wifi/openwifi/FreeWifiLogin;->mHandler:Landroid/os/Handler;
+    iget-object v0, p0, Lcom/android/settings_ext/wifi/openwifi/FreeWifiLogin;->mHandler:Landroid/os/Handler;
 
     invoke-virtual {v0, p1}, Landroid/os/Handler;->sendEmptyMessage(I)Z
 
@@ -790,7 +790,7 @@
     .line 289
     const-string v0, "connectivity"
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/wifi/openwifi/FreeWifiLogin;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
+    invoke-virtual {p0, v0}, Lcom/android/settings_ext/wifi/openwifi/FreeWifiLogin;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object v0
 
@@ -835,26 +835,26 @@
     invoke-super {p0, p1}, Lmiui/app/Activity;->onCreate(Landroid/os/Bundle;)V
 
     .line 64
-    invoke-virtual {p0}, Lcom/android/settings/wifi/openwifi/FreeWifiLogin;->vY()V
+    invoke-virtual {p0}, Lcom/android/settings_ext/wifi/openwifi/FreeWifiLogin;->vY()V
 
     .line 65
     const-string v0, "wifi"
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/wifi/openwifi/FreeWifiLogin;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
+    invoke-virtual {p0, v0}, Lcom/android/settings_ext/wifi/openwifi/FreeWifiLogin;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object v0
 
     check-cast v0, Landroid/net/wifi/WifiManager;
 
-    iput-object v0, p0, Lcom/android/settings/wifi/openwifi/FreeWifiLogin;->hD:Landroid/net/wifi/WifiManager;
+    iput-object v0, p0, Lcom/android/settings_ext/wifi/openwifi/FreeWifiLogin;->hD:Landroid/net/wifi/WifiManager;
 
     .line 66
-    invoke-virtual {p0}, Lcom/android/settings/wifi/openwifi/FreeWifiLogin;->getActionBar()Lmiui/app/ActionBar;
+    invoke-virtual {p0}, Lcom/android/settings_ext/wifi/openwifi/FreeWifiLogin;->getActionBar()Lmiui/app/ActionBar;
 
     move-result-object v0
 
     .line 67
-    invoke-virtual {p0}, Lcom/android/settings/wifi/openwifi/FreeWifiLogin;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {p0}, Lcom/android/settings_ext/wifi/openwifi/FreeWifiLogin;->getResources()Landroid/content/res/Resources;
 
     move-result-object v1
 
@@ -869,21 +869,21 @@
     .line 69
     const v0, 0x7f040062
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/wifi/openwifi/FreeWifiLogin;->setContentView(I)V
+    invoke-virtual {p0, v0}, Lcom/android/settings_ext/wifi/openwifi/FreeWifiLogin;->setContentView(I)V
 
     .line 70
     const v0, 0x7f1000e8
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/wifi/openwifi/FreeWifiLogin;->findViewById(I)Landroid/view/View;
+    invoke-virtual {p0, v0}, Lcom/android/settings_ext/wifi/openwifi/FreeWifiLogin;->findViewById(I)Landroid/view/View;
 
     move-result-object v0
 
     check-cast v0, Landroid/widget/ImageView;
 
-    iput-object v0, p0, Lcom/android/settings/wifi/openwifi/FreeWifiLogin;->ayi:Landroid/widget/ImageView;
+    iput-object v0, p0, Lcom/android/settings_ext/wifi/openwifi/FreeWifiLogin;->ayi:Landroid/widget/ImageView;
 
     .line 71
-    iget-object v0, p0, Lcom/android/settings/wifi/openwifi/FreeWifiLogin;->ayi:Landroid/widget/ImageView;
+    iget-object v0, p0, Lcom/android/settings_ext/wifi/openwifi/FreeWifiLogin;->ayi:Landroid/widget/ImageView;
 
     invoke-virtual {v0}, Landroid/widget/ImageView;->getDrawable()Landroid/graphics/drawable/Drawable;
 
@@ -891,94 +891,94 @@
 
     check-cast v0, Landroid/graphics/drawable/AnimationDrawable;
 
-    iput-object v0, p0, Lcom/android/settings/wifi/openwifi/FreeWifiLogin;->ayp:Landroid/graphics/drawable/AnimationDrawable;
+    iput-object v0, p0, Lcom/android/settings_ext/wifi/openwifi/FreeWifiLogin;->ayp:Landroid/graphics/drawable/AnimationDrawable;
 
     .line 72
     const v0, 0x7f1000e9
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/wifi/openwifi/FreeWifiLogin;->findViewById(I)Landroid/view/View;
+    invoke-virtual {p0, v0}, Lcom/android/settings_ext/wifi/openwifi/FreeWifiLogin;->findViewById(I)Landroid/view/View;
 
     move-result-object v0
 
     check-cast v0, Landroid/widget/TextView;
 
-    iput-object v0, p0, Lcom/android/settings/wifi/openwifi/FreeWifiLogin;->ayj:Landroid/widget/TextView;
+    iput-object v0, p0, Lcom/android/settings_ext/wifi/openwifi/FreeWifiLogin;->ayj:Landroid/widget/TextView;
 
     .line 73
     const v0, 0x7f1000ea
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/wifi/openwifi/FreeWifiLogin;->findViewById(I)Landroid/view/View;
+    invoke-virtual {p0, v0}, Lcom/android/settings_ext/wifi/openwifi/FreeWifiLogin;->findViewById(I)Landroid/view/View;
 
     move-result-object v0
 
     check-cast v0, Landroid/widget/TextView;
 
-    iput-object v0, p0, Lcom/android/settings/wifi/openwifi/FreeWifiLogin;->ayk:Landroid/widget/TextView;
+    iput-object v0, p0, Lcom/android/settings_ext/wifi/openwifi/FreeWifiLogin;->ayk:Landroid/widget/TextView;
 
     .line 74
     const v0, 0x7f1000eb
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/wifi/openwifi/FreeWifiLogin;->findViewById(I)Landroid/view/View;
+    invoke-virtual {p0, v0}, Lcom/android/settings_ext/wifi/openwifi/FreeWifiLogin;->findViewById(I)Landroid/view/View;
 
     move-result-object v0
 
     check-cast v0, Landroid/widget/Button;
 
-    iput-object v0, p0, Lcom/android/settings/wifi/openwifi/FreeWifiLogin;->ayl:Landroid/widget/Button;
+    iput-object v0, p0, Lcom/android/settings_ext/wifi/openwifi/FreeWifiLogin;->ayl:Landroid/widget/Button;
 
     .line 75
     const v0, 0x7f1000ed
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/wifi/openwifi/FreeWifiLogin;->findViewById(I)Landroid/view/View;
+    invoke-virtual {p0, v0}, Lcom/android/settings_ext/wifi/openwifi/FreeWifiLogin;->findViewById(I)Landroid/view/View;
 
     move-result-object v0
 
     check-cast v0, Landroid/widget/Button;
 
-    iput-object v0, p0, Lcom/android/settings/wifi/openwifi/FreeWifiLogin;->aym:Landroid/widget/Button;
+    iput-object v0, p0, Lcom/android/settings_ext/wifi/openwifi/FreeWifiLogin;->aym:Landroid/widget/Button;
 
     .line 76
     const v0, 0x7f1000ec
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/wifi/openwifi/FreeWifiLogin;->findViewById(I)Landroid/view/View;
+    invoke-virtual {p0, v0}, Lcom/android/settings_ext/wifi/openwifi/FreeWifiLogin;->findViewById(I)Landroid/view/View;
 
     move-result-object v0
 
     check-cast v0, Landroid/widget/LinearLayout;
 
-    iput-object v0, p0, Lcom/android/settings/wifi/openwifi/FreeWifiLogin;->ayn:Landroid/widget/LinearLayout;
+    iput-object v0, p0, Lcom/android/settings_ext/wifi/openwifi/FreeWifiLogin;->ayn:Landroid/widget/LinearLayout;
 
     .line 77
     const v0, 0x7f1000e7
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/wifi/openwifi/FreeWifiLogin;->findViewById(I)Landroid/view/View;
+    invoke-virtual {p0, v0}, Lcom/android/settings_ext/wifi/openwifi/FreeWifiLogin;->findViewById(I)Landroid/view/View;
 
     move-result-object v0
 
     check-cast v0, Landroid/widget/LinearLayout;
 
-    iput-object v0, p0, Lcom/android/settings/wifi/openwifi/FreeWifiLogin;->ayo:Landroid/widget/LinearLayout;
+    iput-object v0, p0, Lcom/android/settings_ext/wifi/openwifi/FreeWifiLogin;->ayo:Landroid/widget/LinearLayout;
 
     .line 78
-    iget-object v0, p0, Lcom/android/settings/wifi/openwifi/FreeWifiLogin;->aym:Landroid/widget/Button;
+    iget-object v0, p0, Lcom/android/settings_ext/wifi/openwifi/FreeWifiLogin;->aym:Landroid/widget/Button;
 
-    new-instance v1, Lcom/android/settings/wifi/openwifi/d;
+    new-instance v1, Lcom/android/settings_ext/wifi/openwifi/d;
 
-    invoke-direct {v1, p0}, Lcom/android/settings/wifi/openwifi/d;-><init>(Lcom/android/settings/wifi/openwifi/FreeWifiLogin;)V
+    invoke-direct {v1, p0}, Lcom/android/settings_ext/wifi/openwifi/d;-><init>(Lcom/android/settings_ext/wifi/openwifi/FreeWifiLogin;)V
 
     invoke-virtual {v0, v1}, Landroid/widget/Button;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     .line 84
-    iget-object v0, p0, Lcom/android/settings/wifi/openwifi/FreeWifiLogin;->ayl:Landroid/widget/Button;
+    iget-object v0, p0, Lcom/android/settings_ext/wifi/openwifi/FreeWifiLogin;->ayl:Landroid/widget/Button;
 
-    new-instance v1, Lcom/android/settings/wifi/openwifi/e;
+    new-instance v1, Lcom/android/settings_ext/wifi/openwifi/e;
 
-    invoke-direct {v1, p0}, Lcom/android/settings/wifi/openwifi/e;-><init>(Lcom/android/settings/wifi/openwifi/FreeWifiLogin;)V
+    invoke-direct {v1, p0}, Lcom/android/settings_ext/wifi/openwifi/e;-><init>(Lcom/android/settings_ext/wifi/openwifi/FreeWifiLogin;)V
 
     invoke-virtual {v0, v1}, Landroid/widget/Button;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     .line 92
-    invoke-direct {p0}, Lcom/android/settings/wifi/openwifi/FreeWifiLogin;->vV()V
+    invoke-direct {p0}, Lcom/android/settings_ext/wifi/openwifi/FreeWifiLogin;->vV()V
 
     .line 94
     new-instance v0, Landroid/content/IntentFilter;
@@ -991,9 +991,9 @@
     invoke-virtual {v0, v1}, Landroid/content/IntentFilter;->addAction(Ljava/lang/String;)V
 
     .line 96
-    iget-object v1, p0, Lcom/android/settings/wifi/openwifi/FreeWifiLogin;->ays:Landroid/content/BroadcastReceiver;
+    iget-object v1, p0, Lcom/android/settings_ext/wifi/openwifi/FreeWifiLogin;->ays:Landroid/content/BroadcastReceiver;
 
-    invoke-virtual {p0, v1, v0}, Lcom/android/settings/wifi/openwifi/FreeWifiLogin;->registerReceiver(Landroid/content/BroadcastReceiver;Landroid/content/IntentFilter;)Landroid/content/Intent;
+    invoke-virtual {p0, v1, v0}, Lcom/android/settings_ext/wifi/openwifi/FreeWifiLogin;->registerReceiver(Landroid/content/BroadcastReceiver;Landroid/content/IntentFilter;)Landroid/content/Intent;
 
     .line 97
     return-void
@@ -1004,12 +1004,12 @@
 
     .prologue
     .line 107
-    iget-object v0, p0, Lcom/android/settings/wifi/openwifi/FreeWifiLogin;->ays:Landroid/content/BroadcastReceiver;
+    iget-object v0, p0, Lcom/android/settings_ext/wifi/openwifi/FreeWifiLogin;->ays:Landroid/content/BroadcastReceiver;
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/wifi/openwifi/FreeWifiLogin;->unregisterReceiver(Landroid/content/BroadcastReceiver;)V
+    invoke-virtual {p0, v0}, Lcom/android/settings_ext/wifi/openwifi/FreeWifiLogin;->unregisterReceiver(Landroid/content/BroadcastReceiver;)V
 
     .line 108
-    invoke-direct {p0}, Lcom/android/settings/wifi/openwifi/FreeWifiLogin;->cleanup()V
+    invoke-direct {p0}, Lcom/android/settings_ext/wifi/openwifi/FreeWifiLogin;->cleanup()V
 
     .line 109
     invoke-super {p0}, Lmiui/app/Activity;->onDestroy()V
@@ -1026,7 +1026,7 @@
     invoke-super {p0, p1}, Lmiui/app/Activity;->onNewIntent(Landroid/content/Intent;)V
 
     .line 102
-    invoke-virtual {p0, p1}, Lcom/android/settings/wifi/openwifi/FreeWifiLogin;->setIntent(Landroid/content/Intent;)V
+    invoke-virtual {p0, p1}, Lcom/android/settings_ext/wifi/openwifi/FreeWifiLogin;->setIntent(Landroid/content/Intent;)V
 
     .line 103
     return-void
@@ -1037,9 +1037,9 @@
 
     .prologue
     .line 130
-    iget-object v0, p0, Lcom/android/settings/wifi/openwifi/FreeWifiLogin;->ayr:Landroid/content/BroadcastReceiver;
+    iget-object v0, p0, Lcom/android/settings_ext/wifi/openwifi/FreeWifiLogin;->ayr:Landroid/content/BroadcastReceiver;
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/wifi/openwifi/FreeWifiLogin;->unregisterReceiver(Landroid/content/BroadcastReceiver;)V
+    invoke-virtual {p0, v0}, Lcom/android/settings_ext/wifi/openwifi/FreeWifiLogin;->unregisterReceiver(Landroid/content/BroadcastReceiver;)V
 
     .line 131
     invoke-super {p0}, Lmiui/app/Activity;->onPause()V
@@ -1068,12 +1068,12 @@
     invoke-virtual {v0, v1}, Landroid/content/IntentFilter;->addAction(Ljava/lang/String;)V
 
     .line 123
-    iget-object v1, p0, Lcom/android/settings/wifi/openwifi/FreeWifiLogin;->ayr:Landroid/content/BroadcastReceiver;
+    iget-object v1, p0, Lcom/android/settings_ext/wifi/openwifi/FreeWifiLogin;->ayr:Landroid/content/BroadcastReceiver;
 
-    invoke-virtual {p0, v1, v0}, Lcom/android/settings/wifi/openwifi/FreeWifiLogin;->registerReceiver(Landroid/content/BroadcastReceiver;Landroid/content/IntentFilter;)Landroid/content/Intent;
+    invoke-virtual {p0, v1, v0}, Lcom/android/settings_ext/wifi/openwifi/FreeWifiLogin;->registerReceiver(Landroid/content/BroadcastReceiver;Landroid/content/IntentFilter;)Landroid/content/Intent;
 
     .line 124
-    iget-object v0, p0, Lcom/android/settings/wifi/openwifi/FreeWifiLogin;->mHandler:Landroid/os/Handler;
+    iget-object v0, p0, Lcom/android/settings_ext/wifi/openwifi/FreeWifiLogin;->mHandler:Landroid/os/Handler;
 
     const/16 v1, 0x7d0
 
@@ -1093,16 +1093,16 @@
     .line 352
     new-instance v0, Landroid/content/Intent;
 
-    const-class v1, Lcom/android/settings/wifi/MiuiWifiService;
+    const-class v1, Lcom/android/settings_ext/wifi/MiuiWifiService;
 
     invoke-direct {v0, p0, v1}, Landroid/content/Intent;-><init>(Landroid/content/Context;Ljava/lang/Class;)V
 
     .line 353
-    iget-object v1, p0, Lcom/android/settings/wifi/openwifi/FreeWifiLogin;->ayw:Landroid/content/ServiceConnection;
+    iget-object v1, p0, Lcom/android/settings_ext/wifi/openwifi/FreeWifiLogin;->ayw:Landroid/content/ServiceConnection;
 
     const/4 v2, 0x1
 
-    invoke-virtual {p0, v0, v1, v2}, Lcom/android/settings/wifi/openwifi/FreeWifiLogin;->bindService(Landroid/content/Intent;Landroid/content/ServiceConnection;I)Z
+    invoke-virtual {p0, v0, v1, v2}, Lcom/android/settings_ext/wifi/openwifi/FreeWifiLogin;->bindService(Landroid/content/Intent;Landroid/content/ServiceConnection;I)Z
 
     .line 354
     return-void
@@ -1113,19 +1113,19 @@
 
     .prologue
     .line 357
-    iget-object v0, p0, Lcom/android/settings/wifi/openwifi/FreeWifiLogin;->ayv:Lcom/android/settings/wifi/MiuiWifiService;
+    iget-object v0, p0, Lcom/android/settings_ext/wifi/openwifi/FreeWifiLogin;->ayv:Lcom/android/settings_ext/wifi/MiuiWifiService;
 
     if-eqz v0, :cond_0
 
     .line 359
-    iget-object v0, p0, Lcom/android/settings/wifi/openwifi/FreeWifiLogin;->ayv:Lcom/android/settings/wifi/MiuiWifiService;
+    iget-object v0, p0, Lcom/android/settings_ext/wifi/openwifi/FreeWifiLogin;->ayv:Lcom/android/settings_ext/wifi/MiuiWifiService;
 
-    invoke-virtual {v0, p0}, Lcom/android/settings/wifi/MiuiWifiService;->b(Lcom/android/settings/wifi/openwifi/m;)V
+    invoke-virtual {v0, p0}, Lcom/android/settings_ext/wifi/MiuiWifiService;->b(Lcom/android/settings_ext/wifi/openwifi/m;)V
 
     .line 360
-    iget-object v0, p0, Lcom/android/settings/wifi/openwifi/FreeWifiLogin;->ayw:Landroid/content/ServiceConnection;
+    iget-object v0, p0, Lcom/android/settings_ext/wifi/openwifi/FreeWifiLogin;->ayw:Landroid/content/ServiceConnection;
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/wifi/openwifi/FreeWifiLogin;->unbindService(Landroid/content/ServiceConnection;)V
+    invoke-virtual {p0, v0}, Lcom/android/settings_ext/wifi/openwifi/FreeWifiLogin;->unbindService(Landroid/content/ServiceConnection;)V
 
     .line 362
     :cond_0

@@ -1,4 +1,4 @@
-.class Lcom/android/settings/gq;
+.class Lcom/android/settings_ext/gq;
 .super Ljava/lang/Object;
 .source "SettingsLicenseActivity.java"
 
@@ -7,16 +7,16 @@
 
 
 # instance fields
-.field final synthetic xm:Lcom/android/settings/SettingsLicenseActivity;
+.field final synthetic xm:Lcom/android/settings_ext/SettingsLicenseActivity;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/SettingsLicenseActivity;)V
+.method constructor <init>(Lcom/android/settings_ext/SettingsLicenseActivity;)V
     .locals 0
 
     .prologue
     .line 199
-    iput-object p1, p0, Lcom/android/settings/gq;->xm:Lcom/android/settings/SettingsLicenseActivity;
+    iput-object p1, p0, Lcom/android/settings_ext/gq;->xm:Lcom/android/settings_ext/SettingsLicenseActivity;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -30,9 +30,9 @@
 
     .prologue
     .line 202
-    iget-object v0, p0, Lcom/android/settings/gq;->xm:Lcom/android/settings/SettingsLicenseActivity;
+    iget-object v0, p0, Lcom/android/settings_ext/gq;->xm:Lcom/android/settings_ext/SettingsLicenseActivity;
 
-    invoke-virtual {v0}, Lcom/android/settings/SettingsLicenseActivity;->finish()V
+    invoke-virtual {v0}, Lcom/android/settings_ext/SettingsLicenseActivity;->finish()V
 
     .line 203
     return-void

@@ -1,10 +1,10 @@
-.class public Lcom/android/settings/widget/ToggleSwitch;
+.class public Lcom/android/settings_ext/widget/ToggleSwitch;
 .super Landroid/widget/Switch;
 .source "ToggleSwitch.java"
 
 
 # instance fields
-.field private arU:Lcom/android/settings/widget/M;
+.field private arU:Lcom/android/settings_ext/widget/M;
 
 
 # direct methods
@@ -54,12 +54,12 @@
 
 
 # virtual methods
-.method public a(Lcom/android/settings/widget/M;)V
+.method public a(Lcom/android/settings_ext/widget/M;)V
     .locals 0
 
     .prologue
     .line 48
-    iput-object p1, p0, Lcom/android/settings/widget/ToggleSwitch;->arU:Lcom/android/settings/widget/M;
+    iput-object p1, p0, Lcom/android/settings_ext/widget/ToggleSwitch;->arU:Lcom/android/settings_ext/widget/M;
 
     .line 49
     return-void
@@ -81,13 +81,13 @@
 
     .prologue
     .line 53
-    iget-object v0, p0, Lcom/android/settings/widget/ToggleSwitch;->arU:Lcom/android/settings/widget/M;
+    iget-object v0, p0, Lcom/android/settings_ext/widget/ToggleSwitch;->arU:Lcom/android/settings_ext/widget/M;
 
     if-eqz v0, :cond_0
 
-    iget-object v0, p0, Lcom/android/settings/widget/ToggleSwitch;->arU:Lcom/android/settings/widget/M;
+    iget-object v0, p0, Lcom/android/settings_ext/widget/ToggleSwitch;->arU:Lcom/android/settings_ext/widget/M;
 
-    invoke-interface {v0, p0, p1}, Lcom/android/settings/widget/M;->a(Lcom/android/settings/widget/ToggleSwitch;Z)Z
+    invoke-interface {v0, p0, p1}, Lcom/android/settings_ext/widget/M;->a(Lcom/android/settings_ext/widget/ToggleSwitch;Z)Z
 
     move-result v0
 

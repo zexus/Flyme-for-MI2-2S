@@ -1,4 +1,4 @@
-.class Lcom/android/settings/display/s;
+.class Lcom/android/settings_ext/display/s;
 .super Ljava/lang/Object;
 .source "PageLayoutFragment.java"
 
@@ -7,16 +7,16 @@
 
 
 # instance fields
-.field final synthetic Vx:Lcom/android/settings/display/PageLayoutFragment;
+.field final synthetic Vx:Lcom/android/settings_ext/display/PageLayoutFragment;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/display/PageLayoutFragment;)V
+.method constructor <init>(Lcom/android/settings_ext/display/PageLayoutFragment;)V
     .locals 0
 
     .prologue
     .line 569
-    iput-object p1, p0, Lcom/android/settings/display/s;->Vx:Lcom/android/settings/display/PageLayoutFragment;
+    iput-object p1, p0, Lcom/android/settings_ext/display/s;->Vx:Lcom/android/settings_ext/display/PageLayoutFragment;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -42,108 +42,108 @@
 
     .line 575
     :pswitch_0
-    invoke-static {}, Lcom/android/settings/display/n;->oy()I
+    invoke-static {}, Lcom/android/settings_ext/display/n;->oy()I
 
     move-result v0
 
-    iget-object v1, p0, Lcom/android/settings/display/s;->Vx:Lcom/android/settings/display/PageLayoutFragment;
+    iget-object v1, p0, Lcom/android/settings_ext/display/s;->Vx:Lcom/android/settings_ext/display/PageLayoutFragment;
 
-    invoke-static {v1}, Lcom/android/settings/display/PageLayoutFragment;->a(Lcom/android/settings/display/PageLayoutFragment;)I
+    invoke-static {v1}, Lcom/android/settings_ext/display/PageLayoutFragment;->a(Lcom/android/settings_ext/display/PageLayoutFragment;)I
 
     move-result v1
 
     if-eq v0, v1, :cond_2
 
     .line 576
-    iget-object v0, p0, Lcom/android/settings/display/s;->Vx:Lcom/android/settings/display/PageLayoutFragment;
+    iget-object v0, p0, Lcom/android/settings_ext/display/s;->Vx:Lcom/android/settings_ext/display/PageLayoutFragment;
 
-    invoke-static {v0}, Lcom/android/settings/display/PageLayoutFragment;->a(Lcom/android/settings/display/PageLayoutFragment;)I
+    invoke-static {v0}, Lcom/android/settings_ext/display/PageLayoutFragment;->a(Lcom/android/settings_ext/display/PageLayoutFragment;)I
 
     move-result v0
 
-    invoke-static {v0}, Lcom/android/settings/display/n;->br(I)Z
+    invoke-static {v0}, Lcom/android/settings_ext/display/n;->br(I)Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
     .line 577
-    new-instance v0, Lcom/android/settings/display/t;
+    new-instance v0, Lcom/android/settings_ext/display/t;
 
-    invoke-direct {v0}, Lcom/android/settings/display/t;-><init>()V
+    invoke-direct {v0}, Lcom/android/settings_ext/display/t;-><init>()V
 
     .line 578
-    iget-object v1, p0, Lcom/android/settings/display/s;->Vx:Lcom/android/settings/display/PageLayoutFragment;
+    iget-object v1, p0, Lcom/android/settings_ext/display/s;->Vx:Lcom/android/settings_ext/display/PageLayoutFragment;
 
-    invoke-static {v1}, Lcom/android/settings/display/PageLayoutFragment;->a(Lcom/android/settings/display/PageLayoutFragment;)I
+    invoke-static {v1}, Lcom/android/settings_ext/display/PageLayoutFragment;->a(Lcom/android/settings_ext/display/PageLayoutFragment;)I
 
     move-result v1
 
-    invoke-virtual {v0, v1}, Lcom/android/settings/display/t;->bw(I)V
+    invoke-virtual {v0, v1}, Lcom/android/settings_ext/display/t;->bw(I)V
 
     .line 579
-    iget-object v1, p0, Lcom/android/settings/display/s;->Vx:Lcom/android/settings/display/PageLayoutFragment;
+    iget-object v1, p0, Lcom/android/settings_ext/display/s;->Vx:Lcom/android/settings_ext/display/PageLayoutFragment;
 
-    invoke-virtual {v1}, Lcom/android/settings/display/PageLayoutFragment;->getFragmentManager()Landroid/app/FragmentManager;
+    invoke-virtual {v1}, Lcom/android/settings_ext/display/PageLayoutFragment;->getFragmentManager()Landroid/app/FragmentManager;
 
     move-result-object v1
 
-    # getter for: Lcom/android/settings/display/t;->Vy:Ljava/lang/String;
-    invoke-static {}, Lcom/android/settings/display/t;->access$100()Ljava/lang/String;
+    # getter for: Lcom/android/settings_ext/display/t;->Vy:Ljava/lang/String;
+    invoke-static {}, Lcom/android/settings_ext/display/t;->access$100()Ljava/lang/String;
 
     move-result-object v2
 
-    invoke-virtual {v0, v1, v2}, Lcom/android/settings/display/t;->show(Landroid/app/FragmentManager;Ljava/lang/String;)V
+    invoke-virtual {v0, v1, v2}, Lcom/android/settings_ext/display/t;->show(Landroid/app/FragmentManager;Ljava/lang/String;)V
 
     goto :goto_0
 
     .line 581
     :cond_0
-    iget-object v0, p0, Lcom/android/settings/display/s;->Vx:Lcom/android/settings/display/PageLayoutFragment;
+    iget-object v0, p0, Lcom/android/settings_ext/display/s;->Vx:Lcom/android/settings_ext/display/PageLayoutFragment;
 
-    invoke-static {v0}, Lcom/android/settings/display/PageLayoutFragment;->b(Lcom/android/settings/display/PageLayoutFragment;)Z
+    invoke-static {v0}, Lcom/android/settings_ext/display/PageLayoutFragment;->b(Lcom/android/settings_ext/display/PageLayoutFragment;)Z
 
     move-result v0
 
     if-eqz v0, :cond_1
 
     .line 582
-    iget-object v0, p0, Lcom/android/settings/display/s;->Vx:Lcom/android/settings/display/PageLayoutFragment;
+    iget-object v0, p0, Lcom/android/settings_ext/display/s;->Vx:Lcom/android/settings_ext/display/PageLayoutFragment;
 
-    invoke-virtual {v0}, Lcom/android/settings/display/PageLayoutFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {v0}, Lcom/android/settings_ext/display/PageLayoutFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/android/settings/display/s;->Vx:Lcom/android/settings/display/PageLayoutFragment;
+    iget-object v1, p0, Lcom/android/settings_ext/display/s;->Vx:Lcom/android/settings_ext/display/PageLayoutFragment;
 
-    invoke-static {v1}, Lcom/android/settings/display/PageLayoutFragment;->a(Lcom/android/settings/display/PageLayoutFragment;)I
+    invoke-static {v1}, Lcom/android/settings_ext/display/PageLayoutFragment;->a(Lcom/android/settings_ext/display/PageLayoutFragment;)I
 
     move-result v1
 
-    invoke-static {v0, v1}, Lcom/android/settings/display/PageLayoutFragment;->b(Landroid/app/Activity;I)V
+    invoke-static {v0, v1}, Lcom/android/settings_ext/display/PageLayoutFragment;->b(Landroid/app/Activity;I)V
 
     goto :goto_0
 
     .line 584
     :cond_1
-    iget-object v0, p0, Lcom/android/settings/display/s;->Vx:Lcom/android/settings/display/PageLayoutFragment;
+    iget-object v0, p0, Lcom/android/settings_ext/display/s;->Vx:Lcom/android/settings_ext/display/PageLayoutFragment;
 
-    invoke-virtual {v0}, Lcom/android/settings/display/PageLayoutFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {v0}, Lcom/android/settings_ext/display/PageLayoutFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/android/settings/display/s;->Vx:Lcom/android/settings/display/PageLayoutFragment;
+    iget-object v1, p0, Lcom/android/settings_ext/display/s;->Vx:Lcom/android/settings_ext/display/PageLayoutFragment;
 
-    invoke-static {v1}, Lcom/android/settings/display/PageLayoutFragment;->a(Lcom/android/settings/display/PageLayoutFragment;)I
+    invoke-static {v1}, Lcom/android/settings_ext/display/PageLayoutFragment;->a(Lcom/android/settings_ext/display/PageLayoutFragment;)I
 
     move-result v1
 
-    invoke-static {v0, v1}, Lcom/android/settings/display/n;->e(Landroid/content/Context;I)Z
+    invoke-static {v0, v1}, Lcom/android/settings_ext/display/n;->e(Landroid/content/Context;I)Z
 
     .line 585
-    iget-object v0, p0, Lcom/android/settings/display/s;->Vx:Lcom/android/settings/display/PageLayoutFragment;
+    iget-object v0, p0, Lcom/android/settings_ext/display/s;->Vx:Lcom/android/settings_ext/display/PageLayoutFragment;
 
-    invoke-virtual {v0}, Lcom/android/settings/display/PageLayoutFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {v0}, Lcom/android/settings_ext/display/PageLayoutFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
@@ -153,36 +153,36 @@
 
     .line 589
     :cond_2
-    iget-object v0, p0, Lcom/android/settings/display/s;->Vx:Lcom/android/settings/display/PageLayoutFragment;
+    iget-object v0, p0, Lcom/android/settings_ext/display/s;->Vx:Lcom/android/settings_ext/display/PageLayoutFragment;
 
-    invoke-static {v0}, Lcom/android/settings/display/PageLayoutFragment;->b(Lcom/android/settings/display/PageLayoutFragment;)Z
+    invoke-static {v0}, Lcom/android/settings_ext/display/PageLayoutFragment;->b(Lcom/android/settings_ext/display/PageLayoutFragment;)Z
 
     move-result v0
 
     if-eqz v0, :cond_3
 
     .line 590
-    iget-object v0, p0, Lcom/android/settings/display/s;->Vx:Lcom/android/settings/display/PageLayoutFragment;
+    iget-object v0, p0, Lcom/android/settings_ext/display/s;->Vx:Lcom/android/settings_ext/display/PageLayoutFragment;
 
-    invoke-virtual {v0}, Lcom/android/settings/display/PageLayoutFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {v0}, Lcom/android/settings_ext/display/PageLayoutFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/android/settings/display/s;->Vx:Lcom/android/settings/display/PageLayoutFragment;
+    iget-object v1, p0, Lcom/android/settings_ext/display/s;->Vx:Lcom/android/settings_ext/display/PageLayoutFragment;
 
-    invoke-static {v1}, Lcom/android/settings/display/PageLayoutFragment;->a(Lcom/android/settings/display/PageLayoutFragment;)I
+    invoke-static {v1}, Lcom/android/settings_ext/display/PageLayoutFragment;->a(Lcom/android/settings_ext/display/PageLayoutFragment;)I
 
     move-result v1
 
-    invoke-static {v0, v1}, Lcom/android/settings/display/PageLayoutFragment;->b(Landroid/app/Activity;I)V
+    invoke-static {v0, v1}, Lcom/android/settings_ext/display/PageLayoutFragment;->b(Landroid/app/Activity;I)V
 
     goto :goto_0
 
     .line 592
     :cond_3
-    iget-object v0, p0, Lcom/android/settings/display/s;->Vx:Lcom/android/settings/display/PageLayoutFragment;
+    iget-object v0, p0, Lcom/android/settings_ext/display/s;->Vx:Lcom/android/settings_ext/display/PageLayoutFragment;
 
-    invoke-virtual {v0}, Lcom/android/settings/display/PageLayoutFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {v0}, Lcom/android/settings_ext/display/PageLayoutFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
@@ -192,9 +192,9 @@
 
     .line 597
     :pswitch_1
-    iget-object v0, p0, Lcom/android/settings/display/s;->Vx:Lcom/android/settings/display/PageLayoutFragment;
+    iget-object v0, p0, Lcom/android/settings_ext/display/s;->Vx:Lcom/android/settings_ext/display/PageLayoutFragment;
 
-    invoke-virtual {v0}, Lcom/android/settings/display/PageLayoutFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {v0}, Lcom/android/settings_ext/display/PageLayoutFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 

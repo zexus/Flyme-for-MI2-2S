@@ -1,4 +1,4 @@
-.class Lcom/android/settings/gN;
+.class Lcom/android/settings_ext/gN;
 .super Ljava/lang/Object;
 .source "TrustedCredentialsSettings.java"
 
@@ -7,24 +7,24 @@
 
 
 # instance fields
-.field final synthetic yE:Lcom/android/settings/TrustedCredentialsSettings;
+.field final synthetic yE:Lcom/android/settings_ext/TrustedCredentialsSettings;
 
-.field final synthetic yH:Lcom/android/settings/gU;
+.field final synthetic yH:Lcom/android/settings_ext/gU;
 
 .field final synthetic yI:Landroid/app/Dialog;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/TrustedCredentialsSettings;Lcom/android/settings/gU;Landroid/app/Dialog;)V
+.method constructor <init>(Lcom/android/settings_ext/TrustedCredentialsSettings;Lcom/android/settings_ext/gU;Landroid/app/Dialog;)V
     .locals 0
 
     .prologue
     .line 663
-    iput-object p1, p0, Lcom/android/settings/gN;->yE:Lcom/android/settings/TrustedCredentialsSettings;
+    iput-object p1, p0, Lcom/android/settings_ext/gN;->yE:Lcom/android/settings_ext/TrustedCredentialsSettings;
 
-    iput-object p2, p0, Lcom/android/settings/gN;->yH:Lcom/android/settings/gU;
+    iput-object p2, p0, Lcom/android/settings_ext/gN;->yH:Lcom/android/settings_ext/gU;
 
-    iput-object p3, p0, Lcom/android/settings/gN;->yI:Landroid/app/Dialog;
+    iput-object p3, p0, Lcom/android/settings_ext/gN;->yI:Landroid/app/Dialog;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -40,24 +40,24 @@
     .line 665
     new-instance v0, Landroid/app/AlertDialog$Builder;
 
-    iget-object v1, p0, Lcom/android/settings/gN;->yE:Lcom/android/settings/TrustedCredentialsSettings;
+    iget-object v1, p0, Lcom/android/settings_ext/gN;->yE:Lcom/android/settings_ext/TrustedCredentialsSettings;
 
-    invoke-virtual {v1}, Lcom/android/settings/TrustedCredentialsSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {v1}, Lcom/android/settings_ext/TrustedCredentialsSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v1
 
     invoke-direct {v0, v1}, Landroid/app/AlertDialog$Builder;-><init>(Landroid/content/Context;)V
 
     .line 666
-    iget-object v1, p0, Lcom/android/settings/gN;->yH:Lcom/android/settings/gU;
+    iget-object v1, p0, Lcom/android/settings_ext/gN;->yH:Lcom/android/settings_ext/gU;
 
-    invoke-static {v1}, Lcom/android/settings/gU;->e(Lcom/android/settings/gU;)Lcom/android/settings/TrustedCredentialsSettings$Tab;
+    invoke-static {v1}, Lcom/android/settings_ext/gU;->e(Lcom/android/settings_ext/gU;)Lcom/android/settings_ext/TrustedCredentialsSettings$Tab;
 
     move-result-object v1
 
-    iget-object v2, p0, Lcom/android/settings/gN;->yH:Lcom/android/settings/gU;
+    iget-object v2, p0, Lcom/android/settings_ext/gN;->yH:Lcom/android/settings_ext/gU;
 
-    invoke-static {v1, v2}, Lcom/android/settings/TrustedCredentialsSettings$Tab;->b(Lcom/android/settings/TrustedCredentialsSettings$Tab;Lcom/android/settings/gU;)I
+    invoke-static {v1, v2}, Lcom/android/settings_ext/TrustedCredentialsSettings$Tab;->b(Lcom/android/settings_ext/TrustedCredentialsSettings$Tab;Lcom/android/settings_ext/gU;)I
 
     move-result v1
 
@@ -66,18 +66,18 @@
     .line 667
     const v1, 0x1040013
 
-    new-instance v2, Lcom/android/settings/gO;
+    new-instance v2, Lcom/android/settings_ext/gO;
 
-    invoke-direct {v2, p0}, Lcom/android/settings/gO;-><init>(Lcom/android/settings/gN;)V
+    invoke-direct {v2, p0}, Lcom/android/settings_ext/gO;-><init>(Lcom/android/settings_ext/gN;)V
 
     invoke-virtual {v0, v1, v2}, Landroid/app/AlertDialog$Builder;->setPositiveButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
     .line 675
     const v1, 0x1040009
 
-    new-instance v2, Lcom/android/settings/gP;
+    new-instance v2, Lcom/android/settings_ext/gP;
 
-    invoke-direct {v2, p0}, Lcom/android/settings/gP;-><init>(Lcom/android/settings/gN;)V
+    invoke-direct {v2, p0}, Lcom/android/settings_ext/gP;-><init>(Lcom/android/settings_ext/gN;)V
 
     invoke-virtual {v0, v1, v2}, Landroid/app/AlertDialog$Builder;->setNegativeButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 

@@ -1,4 +1,4 @@
-.class Lcom/android/settings/display/f;
+.class Lcom/android/settings_ext/display/f;
 .super Ljava/lang/Object;
 .source "FluencyModeListPreference.java"
 
@@ -7,16 +7,16 @@
 
 
 # instance fields
-.field final synthetic UD:Lcom/android/settings/display/e;
+.field final synthetic UD:Lcom/android/settings_ext/display/e;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/display/e;)V
+.method constructor <init>(Lcom/android/settings_ext/display/e;)V
     .locals 0
 
     .prologue
     .line 83
-    iput-object p1, p0, Lcom/android/settings/display/f;->UD:Lcom/android/settings/display/e;
+    iput-object p1, p0, Lcom/android/settings_ext/display/f;->UD:Lcom/android/settings_ext/display/e;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -30,11 +30,11 @@
 
     .prologue
     .line 86
-    iget-object v0, p0, Lcom/android/settings/display/f;->UD:Lcom/android/settings/display/e;
+    iget-object v0, p0, Lcom/android/settings_ext/display/f;->UD:Lcom/android/settings_ext/display/e;
 
-    iget-object v0, v0, Lcom/android/settings/display/e;->UC:Lcom/android/settings/display/FluencyModeListPreference;
+    iget-object v0, v0, Lcom/android/settings_ext/display/e;->UC:Lcom/android/settings_ext/display/FluencyModeListPreference;
 
-    invoke-virtual {v0}, Lcom/android/settings/display/FluencyModeListPreference;->getDialog()Landroid/app/Dialog;
+    invoke-virtual {v0}, Lcom/android/settings_ext/display/FluencyModeListPreference;->getDialog()Landroid/app/Dialog;
 
     move-result-object v0
 

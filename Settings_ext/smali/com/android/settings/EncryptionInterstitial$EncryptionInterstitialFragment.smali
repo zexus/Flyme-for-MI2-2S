@@ -1,5 +1,5 @@
-.class public Lcom/android/settings/EncryptionInterstitial$EncryptionInterstitialFragment;
-.super Lcom/android/settings/SettingsPreferenceFragment;
+.class public Lcom/android/settings_ext/EncryptionInterstitial$EncryptionInterstitialFragment;
+.super Lcom/android/settings_ext/SettingsPreferenceFragment;
 .source "EncryptionInterstitial.java"
 
 # interfaces
@@ -23,7 +23,7 @@
 
     .prologue
     .line 71
-    invoke-direct {p0}, Lcom/android/settings/SettingsPreferenceFragment;-><init>()V
+    invoke-direct {p0}, Lcom/android/settings_ext/SettingsPreferenceFragment;-><init>()V
 
     return-void
 .end method
@@ -33,15 +33,15 @@
 
     .prologue
     .line 193
-    iput-boolean p1, p0, Lcom/android/settings/EncryptionInterstitial$EncryptionInterstitialFragment;->kK:Z
+    iput-boolean p1, p0, Lcom/android/settings_ext/EncryptionInterstitial$EncryptionInterstitialFragment;->kK:Z
 
     .line 194
-    iget-object v0, p0, Lcom/android/settings/EncryptionInterstitial$EncryptionInterstitialFragment;->kH:Landroid/widget/RadioButton;
+    iget-object v0, p0, Lcom/android/settings_ext/EncryptionInterstitial$EncryptionInterstitialFragment;->kH:Landroid/widget/RadioButton;
 
     invoke-virtual {v0, p1}, Landroid/widget/RadioButton;->setChecked(Z)V
 
     .line 195
-    iget-object v1, p0, Lcom/android/settings/EncryptionInterstitial$EncryptionInterstitialFragment;->kI:Landroid/widget/RadioButton;
+    iget-object v1, p0, Lcom/android/settings_ext/EncryptionInterstitial$EncryptionInterstitialFragment;->kI:Landroid/widget/RadioButton;
 
     if-nez p1, :cond_1
 
@@ -51,14 +51,14 @@
     invoke-virtual {v1, v0}, Landroid/widget/RadioButton;->setChecked(Z)V
 
     .line 198
-    invoke-virtual {p0}, Lcom/android/settings/EncryptionInterstitial$EncryptionInterstitialFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/EncryptionInterstitial$EncryptionInterstitialFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
-    check-cast v0, Lcom/android/settings/gh;
+    check-cast v0, Lcom/android/settings_ext/gh;
 
     .line 199
-    invoke-virtual {v0}, Lcom/android/settings/gh;->gP()Landroid/content/Intent;
+    invoke-virtual {v0}, Lcom/android/settings_ext/gh;->gP()Landroid/content/Intent;
 
     move-result-object v1
 
@@ -73,12 +73,12 @@
     :cond_0
     const-string v2, "extra_require_password"
 
-    iget-boolean v3, p0, Lcom/android/settings/EncryptionInterstitial$EncryptionInterstitialFragment;->kK:Z
+    iget-boolean v3, p0, Lcom/android/settings_ext/EncryptionInterstitial$EncryptionInterstitialFragment;->kK:Z
 
     invoke-virtual {v1, v2, v3}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Z)Landroid/content/Intent;
 
     .line 202
-    invoke-virtual {v0, v1}, Lcom/android/settings/gh;->k(Landroid/content/Intent;)V
+    invoke-virtual {v0, v1}, Lcom/android/settings_ext/gh;->k(Landroid/content/Intent;)V
 
     .line 203
     return-void
@@ -115,7 +115,7 @@
 
     check-cast v0, Landroid/widget/RadioButton;
 
-    iput-object v0, p0, Lcom/android/settings/EncryptionInterstitial$EncryptionInterstitialFragment;->kH:Landroid/widget/RadioButton;
+    iput-object v0, p0, Lcom/android/settings_ext/EncryptionInterstitial$EncryptionInterstitialFragment;->kH:Landroid/widget/RadioButton;
 
     .line 89
     const v0, 0x7f1000d1
@@ -126,7 +126,7 @@
 
     check-cast v0, Landroid/widget/RadioButton;
 
-    iput-object v0, p0, Lcom/android/settings/EncryptionInterstitial$EncryptionInterstitialFragment;->kI:Landroid/widget/RadioButton;
+    iput-object v0, p0, Lcom/android/settings_ext/EncryptionInterstitial$EncryptionInterstitialFragment;->kI:Landroid/widget/RadioButton;
 
     .line 91
     const v0, 0x7f1000cf
@@ -137,10 +137,10 @@
 
     check-cast v0, Landroid/widget/TextView;
 
-    iput-object v0, p0, Lcom/android/settings/EncryptionInterstitial$EncryptionInterstitialFragment;->kJ:Landroid/widget/TextView;
+    iput-object v0, p0, Lcom/android/settings_ext/EncryptionInterstitial$EncryptionInterstitialFragment;->kJ:Landroid/widget/TextView;
 
     .line 93
-    invoke-virtual {p0}, Lcom/android/settings/EncryptionInterstitial$EncryptionInterstitialFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/EncryptionInterstitial$EncryptionInterstitialFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
@@ -168,32 +168,32 @@
 
     .line 115
     :goto_0
-    iget-object v4, p0, Lcom/android/settings/EncryptionInterstitial$EncryptionInterstitialFragment;->kJ:Landroid/widget/TextView;
+    iget-object v4, p0, Lcom/android/settings_ext/EncryptionInterstitial$EncryptionInterstitialFragment;->kJ:Landroid/widget/TextView;
 
     invoke-virtual {v4, v2}, Landroid/widget/TextView;->setText(I)V
 
     .line 117
-    iget-object v2, p0, Lcom/android/settings/EncryptionInterstitial$EncryptionInterstitialFragment;->kH:Landroid/widget/RadioButton;
+    iget-object v2, p0, Lcom/android/settings_ext/EncryptionInterstitial$EncryptionInterstitialFragment;->kH:Landroid/widget/RadioButton;
 
     invoke-virtual {v2, p0}, Landroid/widget/RadioButton;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     .line 118
-    iget-object v2, p0, Lcom/android/settings/EncryptionInterstitial$EncryptionInterstitialFragment;->kH:Landroid/widget/RadioButton;
+    iget-object v2, p0, Lcom/android/settings_ext/EncryptionInterstitial$EncryptionInterstitialFragment;->kH:Landroid/widget/RadioButton;
 
     invoke-virtual {v2, v1}, Landroid/widget/RadioButton;->setText(I)V
 
     .line 120
-    iget-object v1, p0, Lcom/android/settings/EncryptionInterstitial$EncryptionInterstitialFragment;->kI:Landroid/widget/RadioButton;
+    iget-object v1, p0, Lcom/android/settings_ext/EncryptionInterstitial$EncryptionInterstitialFragment;->kI:Landroid/widget/RadioButton;
 
     invoke-virtual {v1, p0}, Landroid/widget/RadioButton;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     .line 121
-    iget-object v1, p0, Lcom/android/settings/EncryptionInterstitial$EncryptionInterstitialFragment;->kI:Landroid/widget/RadioButton;
+    iget-object v1, p0, Lcom/android/settings_ext/EncryptionInterstitial$EncryptionInterstitialFragment;->kI:Landroid/widget/RadioButton;
 
     invoke-virtual {v1, v0}, Landroid/widget/RadioButton;->setText(I)V
 
     .line 123
-    invoke-virtual {p0}, Lcom/android/settings/EncryptionInterstitial$EncryptionInterstitialFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/EncryptionInterstitial$EncryptionInterstitialFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
@@ -209,7 +209,7 @@
 
     move-result v0
 
-    invoke-direct {p0, v0}, Lcom/android/settings/EncryptionInterstitial$EncryptionInterstitialFragment;->w(Z)V
+    invoke-direct {p0, v0}, Lcom/android/settings_ext/EncryptionInterstitial$EncryptionInterstitialFragment;->w(Z)V
 
     .line 125
     return-object v3
@@ -263,7 +263,7 @@
     .line 208
     const/4 v0, 0x1
 
-    invoke-direct {p0, v0}, Lcom/android/settings/EncryptionInterstitial$EncryptionInterstitialFragment;->w(Z)V
+    invoke-direct {p0, v0}, Lcom/android/settings_ext/EncryptionInterstitial$EncryptionInterstitialFragment;->w(Z)V
 
     .line 212
     :cond_0
@@ -279,7 +279,7 @@
     .line 210
     const/4 v0, 0x0
 
-    invoke-direct {p0, v0}, Lcom/android/settings/EncryptionInterstitial$EncryptionInterstitialFragment;->w(Z)V
+    invoke-direct {p0, v0}, Lcom/android/settings_ext/EncryptionInterstitial$EncryptionInterstitialFragment;->w(Z)V
 
     goto :goto_0
 .end method
@@ -293,12 +293,12 @@
     const/4 v1, 0x0
 
     .line 130
-    iget-object v0, p0, Lcom/android/settings/EncryptionInterstitial$EncryptionInterstitialFragment;->kH:Landroid/widget/RadioButton;
+    iget-object v0, p0, Lcom/android/settings_ext/EncryptionInterstitial$EncryptionInterstitialFragment;->kH:Landroid/widget/RadioButton;
 
     if-ne p1, v0, :cond_1
 
     .line 131
-    invoke-virtual {p0}, Lcom/android/settings/EncryptionInterstitial$EncryptionInterstitialFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/EncryptionInterstitial$EncryptionInterstitialFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
@@ -313,15 +313,15 @@
     .line 132
     if-eqz v0, :cond_0
 
-    iget-boolean v0, p0, Lcom/android/settings/EncryptionInterstitial$EncryptionInterstitialFragment;->kK:Z
+    iget-boolean v0, p0, Lcom/android/settings_ext/EncryptionInterstitial$EncryptionInterstitialFragment;->kK:Z
 
     if-nez v0, :cond_0
 
     .line 133
-    invoke-direct {p0, v1}, Lcom/android/settings/EncryptionInterstitial$EncryptionInterstitialFragment;->w(Z)V
+    invoke-direct {p0, v1}, Lcom/android/settings_ext/EncryptionInterstitial$EncryptionInterstitialFragment;->w(Z)V
 
     .line 134
-    invoke-virtual {p0, v2}, Lcom/android/settings/EncryptionInterstitial$EncryptionInterstitialFragment;->showDialog(I)V
+    invoke-virtual {p0, v2}, Lcom/android/settings_ext/EncryptionInterstitial$EncryptionInterstitialFragment;->showDialog(I)V
 
     .line 141
     :goto_0
@@ -329,13 +329,13 @@
 
     .line 136
     :cond_0
-    invoke-direct {p0, v2}, Lcom/android/settings/EncryptionInterstitial$EncryptionInterstitialFragment;->w(Z)V
+    invoke-direct {p0, v2}, Lcom/android/settings_ext/EncryptionInterstitial$EncryptionInterstitialFragment;->w(Z)V
 
     goto :goto_0
 
     .line 139
     :cond_1
-    invoke-direct {p0, v1}, Lcom/android/settings/EncryptionInterstitial$EncryptionInterstitialFragment;->w(Z)V
+    invoke-direct {p0, v1}, Lcom/android/settings_ext/EncryptionInterstitial$EncryptionInterstitialFragment;->w(Z)V
 
     goto :goto_0
 .end method
@@ -362,7 +362,7 @@
     :pswitch_0
     new-instance v0, Lcom/android/internal/widget/LockPatternUtils;
 
-    invoke-virtual {p0}, Lcom/android/settings/EncryptionInterstitial$EncryptionInterstitialFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/EncryptionInterstitial$EncryptionInterstitialFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v1
 
@@ -387,7 +387,7 @@
 
     .line 168
     :goto_0
-    invoke-virtual {p0}, Lcom/android/settings/EncryptionInterstitial$EncryptionInterstitialFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/EncryptionInterstitial$EncryptionInterstitialFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
@@ -415,7 +415,7 @@
     :goto_1
     new-instance v3, Landroid/app/AlertDialog$Builder;
 
-    invoke-virtual {p0}, Lcom/android/settings/EncryptionInterstitial$EncryptionInterstitialFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/EncryptionInterstitial$EncryptionInterstitialFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v4
 
@@ -429,7 +429,7 @@
 
     aput-object v0, v3, v5
 
-    invoke-virtual {p0, v1, v3}, Lcom/android/settings/EncryptionInterstitial$EncryptionInterstitialFragment;->getString(I[Ljava/lang/Object;)Ljava/lang/String;
+    invoke-virtual {p0, v1, v3}, Lcom/android/settings_ext/EncryptionInterstitial$EncryptionInterstitialFragment;->getString(I[Ljava/lang/Object;)Ljava/lang/String;
 
     move-result-object v0
 
@@ -499,7 +499,7 @@
 
     move-result-object v0
 
-    invoke-virtual {p0}, Lcom/android/settings/EncryptionInterstitial$EncryptionInterstitialFragment;->getPackageManager()Landroid/content/pm/PackageManager;
+    invoke-virtual {p0}, Lcom/android/settings_ext/EncryptionInterstitial$EncryptionInterstitialFragment;->getPackageManager()Landroid/content/pm/PackageManager;
 
     move-result-object v3
 

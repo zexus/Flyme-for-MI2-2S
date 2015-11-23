@@ -1,4 +1,4 @@
-.class public Lcom/android/settings/display/d;
+.class public Lcom/android/settings_ext/display/d;
 .super Ljava/lang/Object;
 .source "DisplayUtils.java"
 
@@ -297,12 +297,12 @@
     if-eqz v0, :cond_0
 
     .line 116
-    invoke-static {}, Lcom/android/settings/display/ScreenEffect;->oK()I
+    invoke-static {}, Lcom/android/settings_ext/display/ScreenEffect;->oK()I
 
     move-result v0
 
     .line 117
-    invoke-static {v0}, Lcom/android/settings/display/ScreenEffect;->bA(I)V
+    invoke-static {v0}, Lcom/android/settings_ext/display/ScreenEffect;->bA(I)V
 
     .line 120
     :cond_0
@@ -318,7 +318,7 @@
 
     .line 123
     :cond_1
-    invoke-static {p0}, Lcom/android/settings/display/d;->aC(Landroid/content/Context;)V
+    invoke-static {p0}, Lcom/android/settings_ext/display/d;->aC(Landroid/content/Context;)V
 
     goto :goto_0
 .end method
@@ -344,7 +344,7 @@
     :cond_0
     new-instance v0, Landroid/content/Intent;
 
-    const-class v1, Lcom/android/settings/display/ScreenPaperModeUpdateService;
+    const-class v1, Lcom/android/settings_ext/display/ScreenPaperModeUpdateService;
 
     invoke-direct {v0, p0, v1}, Landroid/content/Intent;-><init>(Landroid/content/Context;Ljava/lang/Class;)V
 
@@ -370,7 +370,7 @@
     invoke-virtual {v0, v6}, Landroid/app/AlarmManager;->cancel(Landroid/app/PendingIntent;)V
 
     .line 139
-    invoke-static {p0}, Lcom/android/settings/display/d;->ax(Landroid/content/Context;)J
+    invoke-static {p0}, Lcom/android/settings_ext/display/d;->ax(Landroid/content/Context;)J
 
     move-result-wide v2
 
@@ -582,7 +582,7 @@
 
     if-eqz v0, :cond_0
 
-    invoke-static {p0}, Lcom/android/settings/display/d;->aA(Landroid/content/Context;)Z
+    invoke-static {p0}, Lcom/android/settings_ext/display/d;->aA(Landroid/content/Context;)Z
 
     move-result v0
 
@@ -597,7 +597,7 @@
     :cond_1
     if-eqz p1, :cond_0
 
-    invoke-static {p0}, Lcom/android/settings/display/d;->ax(Landroid/content/Context;)J
+    invoke-static {p0}, Lcom/android/settings_ext/display/d;->ax(Landroid/content/Context;)J
 
     move-result-wide v0
 
@@ -612,7 +612,7 @@
     .line 156
     new-instance v0, Landroid/content/Intent;
 
-    const-class v1, Lcom/android/settings/display/ScreenPaperModeUpdateService;
+    const-class v1, Lcom/android/settings_ext/display/ScreenPaperModeUpdateService;
 
     invoke-direct {v0, p0, v1}, Landroid/content/Intent;-><init>(Landroid/content/Context;Ljava/lang/Class;)V
 

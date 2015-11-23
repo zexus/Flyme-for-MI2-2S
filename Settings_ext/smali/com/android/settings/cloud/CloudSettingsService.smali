@@ -1,4 +1,4 @@
-.class public Lcom/android/settings/cloud/CloudSettingsService;
+.class public Lcom/android/settings_ext/cloud/CloudSettingsService;
 .super Landroid/app/IntentService;
 .source "CloudSettingsService.java"
 
@@ -17,7 +17,7 @@
     return-void
 .end method
 
-.method private a(Lorg/json/JSONObject;)Lcom/android/settings/cloud/network/a;
+.method private a(Lorg/json/JSONObject;)Lcom/android/settings_ext/cloud/network/a;
     .locals 6
 
     .prologue
@@ -39,9 +39,9 @@
 
     .line 232
     :cond_0
-    new-instance v1, Lcom/android/settings/cloud/network/a;
+    new-instance v1, Lcom/android/settings_ext/cloud/network/a;
 
-    invoke-direct {v1}, Lcom/android/settings/cloud/network/a;-><init>()V
+    invoke-direct {v1}, Lcom/android/settings_ext/cloud/network/a;-><init>()V
 
     .line 234
     :try_start_0
@@ -51,7 +51,7 @@
 
     move-result-object v2
 
-    iput-object v2, v1, Lcom/android/settings/cloud/network/a;->Qp:Ljava/lang/String;
+    iput-object v2, v1, Lcom/android/settings_ext/cloud/network/a;->Qp:Ljava/lang/String;
 
     .line 235
     const-string v2, "url"
@@ -60,7 +60,7 @@
 
     move-result-object v2
 
-    iput-object v2, v1, Lcom/android/settings/cloud/network/a;->Qq:Ljava/lang/String;
+    iput-object v2, v1, Lcom/android/settings_ext/cloud/network/a;->Qq:Ljava/lang/String;
 
     .line 236
     const-string v2, "hash"
@@ -69,7 +69,7 @@
 
     move-result-object v2
 
-    iput-object v2, v1, Lcom/android/settings/cloud/network/a;->Qr:Ljava/lang/String;
+    iput-object v2, v1, Lcom/android/settings_ext/cloud/network/a;->Qr:Ljava/lang/String;
 
     .line 237
     const-string v2, "v"
@@ -78,12 +78,12 @@
 
     move-result-wide v2
 
-    iput-wide v2, v1, Lcom/android/settings/cloud/network/a;->Qs:J
+    iput-wide v2, v1, Lcom/android/settings_ext/cloud/network/a;->Qs:J
     :try_end_0
     .catch Lorg/json/JSONException; {:try_start_0 .. :try_end_0} :catch_0
 
     .line 241
-    iget-object v2, v1, Lcom/android/settings/cloud/network/a;->Qp:Ljava/lang/String;
+    iget-object v2, v1, Lcom/android/settings_ext/cloud/network/a;->Qp:Ljava/lang/String;
 
     invoke-static {v2}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
@@ -91,7 +91,7 @@
 
     if-nez v2, :cond_1
 
-    iget-object v2, v1, Lcom/android/settings/cloud/network/a;->Qq:Ljava/lang/String;
+    iget-object v2, v1, Lcom/android/settings_ext/cloud/network/a;->Qq:Ljava/lang/String;
 
     invoke-static {v2}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
@@ -99,7 +99,7 @@
 
     if-nez v2, :cond_1
 
-    iget-object v2, v1, Lcom/android/settings/cloud/network/a;->Qr:Ljava/lang/String;
+    iget-object v2, v1, Lcom/android/settings_ext/cloud/network/a;->Qr:Ljava/lang/String;
 
     invoke-static {v2}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
@@ -107,7 +107,7 @@
 
     if-nez v2, :cond_1
 
-    iget-wide v2, v1, Lcom/android/settings/cloud/network/a;->Qs:J
+    iget-wide v2, v1, Lcom/android/settings_ext/cloud/network/a;->Qs:J
 
     const-wide/16 v4, 0x0
 
@@ -154,12 +154,12 @@
     goto :goto_0
 .end method
 
-.method private a(Lcom/android/settings/cloud/network/a;)Ljava/io/File;
+.method private a(Lcom/android/settings_ext/cloud/network/a;)Ljava/io/File;
     .locals 5
 
     .prologue
     .line 167
-    invoke-virtual {p0}, Lcom/android/settings/cloud/CloudSettingsService;->getFilesDir()Ljava/io/File;
+    invoke-virtual {p0}, Lcom/android/settings_ext/cloud/CloudSettingsService;->getFilesDir()Ljava/io/File;
 
     move-result-object v0
 
@@ -188,20 +188,20 @@
     invoke-direct {v1, v0, v2}, Ljava/io/File;-><init>(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 172
-    new-instance v0, Lcom/android/settings/cloud/network/Connection;
+    new-instance v0, Lcom/android/settings_ext/cloud/network/Connection;
 
-    invoke-virtual {p1}, Lcom/android/settings/cloud/network/a;->getUrl()Ljava/lang/String;
+    invoke-virtual {p1}, Lcom/android/settings_ext/cloud/network/a;->getUrl()Ljava/lang/String;
 
     move-result-object v2
 
-    invoke-direct {v0, v2}, Lcom/android/settings/cloud/network/Connection;-><init>(Ljava/lang/String;)V
+    invoke-direct {v0, v2}, Lcom/android/settings_ext/cloud/network/Connection;-><init>(Ljava/lang/String;)V
 
     .line 173
-    invoke-direct {p0, v0}, Lcom/android/settings/cloud/CloudSettingsService;->a(Lcom/android/settings/cloud/network/Connection;)V
+    invoke-direct {p0, v0}, Lcom/android/settings_ext/cloud/CloudSettingsService;->a(Lcom/android/settings_ext/cloud/network/Connection;)V
 
     .line 175
     :try_start_0
-    invoke-virtual {v0, v1}, Lcom/android/settings/cloud/network/Connection;->f(Ljava/io/File;)Lcom/android/settings/cloud/network/Connection$NetworkError;
+    invoke-virtual {v0, v1}, Lcom/android/settings_ext/cloud/network/Connection;->f(Ljava/io/File;)Lcom/android/settings_ext/cloud/network/Connection$NetworkError;
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 
@@ -250,14 +250,14 @@
     goto :goto_0
 .end method
 
-.method private a(Lcom/android/settings/cloud/network/Connection;)V
+.method private a(Lcom/android/settings_ext/cloud/network/Connection;)V
     .locals 1
 
     .prologue
     .line 163
     const/4 v0, 0x1
 
-    invoke-virtual {p1, v0}, Lcom/android/settings/cloud/network/Connection;->av(Z)V
+    invoke-virtual {p1, v0}, Lcom/android/settings_ext/cloud/network/Connection;->av(Z)V
 
     .line 164
     return-void
@@ -545,11 +545,11 @@
     invoke-virtual {v0, v1}, Ljava/util/ArrayList;->toArray([Ljava/lang/Object;)[Ljava/lang/Object;
 
     .line 207
-    invoke-virtual {p0}, Lcom/android/settings/cloud/CloudSettingsService;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/settings_ext/cloud/CloudSettingsService;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v0
 
-    sget-object v2, Lcom/android/settings/cloud/c;->Qo:Landroid/net/Uri;
+    sget-object v2, Lcom/android/settings_ext/cloud/c;->Qo:Landroid/net/Uri;
 
     invoke-virtual {v0, v2, v1}, Landroid/content/ContentResolver;->bulkInsert(Landroid/net/Uri;[Landroid/content/ContentValues;)I
 
@@ -567,7 +567,7 @@
     const/4 v1, 0x0
 
     .line 69
-    invoke-direct {p0}, Lcom/android/settings/cloud/CloudSettingsService;->nu()Z
+    invoke-direct {p0}, Lcom/android/settings_ext/cloud/CloudSettingsService;->nu()Z
 
     move-result v0
 
@@ -582,7 +582,7 @@
     :cond_1
     const-string v0, "cloud_app_control_version"
 
-    invoke-static {v0, p0}, Lcom/android/settings/cloud/a/c;->a(Ljava/lang/String;Landroid/content/Context;)J
+    invoke-static {v0, p0}, Lcom/android/settings_ext/cloud/a/c;->a(Ljava/lang/String;Landroid/content/Context;)J
 
     move-result-wide v2
 
@@ -594,12 +594,12 @@
     .line 76
     const-string v0, "last_update_list_time"
 
-    invoke-static {v0, p0}, Lcom/android/settings/cloud/a/c;->a(Ljava/lang/String;Landroid/content/Context;)J
+    invoke-static {v0, p0}, Lcom/android/settings_ext/cloud/a/c;->a(Ljava/lang/String;Landroid/content/Context;)J
 
     move-result-wide v4
 
     .line 79
-    invoke-static {p0}, Lcom/android/settings/cloud/a/c;->isWifiConnected(Landroid/content/Context;)Z
+    invoke-static {p0}, Lcom/android/settings_ext/cloud/a/c;->isWifiConnected(Landroid/content/Context;)Z
 
     move-result v0
 
@@ -632,21 +632,21 @@
 
     .line 89
     :cond_3
-    new-instance v5, Lcom/android/settings/cloud/network/Connection;
+    new-instance v5, Lcom/android/settings_ext/cloud/network/Connection;
 
-    sget-object v6, Lcom/android/settings/cloud/b;->PD:Ljava/lang/String;
+    sget-object v6, Lcom/android/settings_ext/cloud/b;->PD:Ljava/lang/String;
 
-    invoke-direct {v5, v6}, Lcom/android/settings/cloud/network/Connection;-><init>(Ljava/lang/String;)V
+    invoke-direct {v5, v6}, Lcom/android/settings_ext/cloud/network/Connection;-><init>(Ljava/lang/String;)V
 
     .line 90
-    invoke-direct {p0, v5}, Lcom/android/settings/cloud/CloudSettingsService;->a(Lcom/android/settings/cloud/network/Connection;)V
+    invoke-direct {p0, v5}, Lcom/android/settings_ext/cloud/CloudSettingsService;->a(Lcom/android/settings_ext/cloud/network/Connection;)V
 
     .line 91
-    new-instance v6, Lcom/android/settings/cloud/network/b;
+    new-instance v6, Lcom/android/settings_ext/cloud/network/b;
 
     invoke-virtual {v5}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
-    invoke-direct {v6, v5}, Lcom/android/settings/cloud/network/b;-><init>(Lcom/android/settings/cloud/network/Connection;)V
+    invoke-direct {v6, v5}, Lcom/android/settings_ext/cloud/network/b;-><init>(Lcom/android/settings_ext/cloud/network/Connection;)V
 
     .line 92
     const-string v7, "version"
@@ -669,14 +669,14 @@
 
     move-result-object v8
 
-    invoke-virtual {v6, v7, v8}, Lcom/android/settings/cloud/network/b;->n(Ljava/lang/String;Ljava/lang/String;)Lcom/android/settings/cloud/network/b;
+    invoke-virtual {v6, v7, v8}, Lcom/android/settings_ext/cloud/network/b;->n(Ljava/lang/String;Ljava/lang/String;)Lcom/android/settings_ext/cloud/network/b;
 
     .line 93
     const-string v7, "len"
 
     const-string v8, "20"
 
-    invoke-virtual {v6, v7, v8}, Lcom/android/settings/cloud/network/b;->n(Ljava/lang/String;Ljava/lang/String;)Lcom/android/settings/cloud/network/b;
+    invoke-virtual {v6, v7, v8}, Lcom/android/settings_ext/cloud/network/b;->n(Ljava/lang/String;Ljava/lang/String;)Lcom/android/settings_ext/cloud/network/b;
 
     .line 94
     const-string v7, "offset"
@@ -699,16 +699,16 @@
 
     move-result-object v8
 
-    invoke-virtual {v6, v7, v8}, Lcom/android/settings/cloud/network/b;->n(Ljava/lang/String;Ljava/lang/String;)Lcom/android/settings/cloud/network/b;
+    invoke-virtual {v6, v7, v8}, Lcom/android/settings_ext/cloud/network/b;->n(Ljava/lang/String;Ljava/lang/String;)Lcom/android/settings_ext/cloud/network/b;
 
     .line 95
     const-string v7, "imei"
 
-    invoke-direct {p0}, Lcom/android/settings/cloud/CloudSettingsService;->nv()Ljava/lang/String;
+    invoke-direct {p0}, Lcom/android/settings_ext/cloud/CloudSettingsService;->nv()Ljava/lang/String;
 
     move-result-object v8
 
-    invoke-virtual {v6, v7, v8}, Lcom/android/settings/cloud/network/b;->n(Ljava/lang/String;Ljava/lang/String;)Lcom/android/settings/cloud/network/b;
+    invoke-virtual {v6, v7, v8}, Lcom/android/settings_ext/cloud/network/b;->n(Ljava/lang/String;Ljava/lang/String;)Lcom/android/settings_ext/cloud/network/b;
 
     .line 96
     const-string v7, "miui_version"
@@ -737,7 +737,7 @@
 
     move-result-object v8
 
-    invoke-virtual {v6, v7, v8}, Lcom/android/settings/cloud/network/b;->n(Ljava/lang/String;Ljava/lang/String;)Lcom/android/settings/cloud/network/b;
+    invoke-virtual {v6, v7, v8}, Lcom/android/settings_ext/cloud/network/b;->n(Ljava/lang/String;Ljava/lang/String;)Lcom/android/settings_ext/cloud/network/b;
 
     .line 97
     const-string v7, "device"
@@ -750,7 +750,7 @@
 
     move-result-object v8
 
-    invoke-virtual {v6, v7, v8}, Lcom/android/settings/cloud/network/b;->n(Ljava/lang/String;Ljava/lang/String;)Lcom/android/settings/cloud/network/b;
+    invoke-virtual {v6, v7, v8}, Lcom/android/settings_ext/cloud/network/b;->n(Ljava/lang/String;Ljava/lang/String;)Lcom/android/settings_ext/cloud/network/b;
 
     .line 98
     const-string v7, "carrier"
@@ -763,7 +763,7 @@
 
     move-result-object v8
 
-    invoke-virtual {v6, v7, v8}, Lcom/android/settings/cloud/network/b;->n(Ljava/lang/String;Ljava/lang/String;)Lcom/android/settings/cloud/network/b;
+    invoke-virtual {v6, v7, v8}, Lcom/android/settings_ext/cloud/network/b;->n(Ljava/lang/String;Ljava/lang/String;)Lcom/android/settings_ext/cloud/network/b;
 
     .line 99
     const-string v7, "region"
@@ -776,19 +776,19 @@
 
     move-result-object v8
 
-    invoke-virtual {v6, v7, v8}, Lcom/android/settings/cloud/network/b;->n(Ljava/lang/String;Ljava/lang/String;)Lcom/android/settings/cloud/network/b;
+    invoke-virtual {v6, v7, v8}, Lcom/android/settings_ext/cloud/network/b;->n(Ljava/lang/String;Ljava/lang/String;)Lcom/android/settings_ext/cloud/network/b;
 
     .line 100
-    invoke-virtual {v5}, Lcom/android/settings/cloud/network/Connection;->nD()Lcom/android/settings/cloud/network/Connection$NetworkError;
+    invoke-virtual {v5}, Lcom/android/settings_ext/cloud/network/Connection;->nD()Lcom/android/settings_ext/cloud/network/Connection$NetworkError;
 
     move-result-object v6
 
-    sget-object v7, Lcom/android/settings/cloud/network/Connection$NetworkError;->Qz:Lcom/android/settings/cloud/network/Connection$NetworkError;
+    sget-object v7, Lcom/android/settings_ext/cloud/network/Connection$NetworkError;->Qz:Lcom/android/settings_ext/cloud/network/Connection$NetworkError;
 
     if-ne v6, v7, :cond_0
 
     .line 103
-    invoke-virtual {v5}, Lcom/android/settings/cloud/network/Connection;->nC()Lorg/json/JSONObject;
+    invoke-virtual {v5}, Lcom/android/settings_ext/cloud/network/Connection;->nC()Lorg/json/JSONObject;
 
     move-result-object v5
 
@@ -803,7 +803,7 @@
     move-result-wide v6
 
     .line 109
-    invoke-direct {p0, v5}, Lcom/android/settings/cloud/CloudSettingsService;->b(Lorg/json/JSONObject;)Ljava/util/ArrayList;
+    invoke-direct {p0, v5}, Lcom/android/settings_ext/cloud/CloudSettingsService;->b(Lorg/json/JSONObject;)Ljava/util/ArrayList;
 
     move-result-object v5
 
@@ -838,11 +838,11 @@
     invoke-virtual {v4, v0}, Ljava/util/ArrayList;->toArray([Ljava/lang/Object;)[Ljava/lang/Object;
 
     .line 122
-    invoke-virtual {p0}, Lcom/android/settings/cloud/CloudSettingsService;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/settings_ext/cloud/CloudSettingsService;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v1
 
-    sget-object v2, Lcom/android/settings/cloud/c;->Qo:Landroid/net/Uri;
+    sget-object v2, Lcom/android/settings_ext/cloud/c;->Qo:Landroid/net/Uri;
 
     invoke-virtual {v1, v2, v0}, Landroid/content/ContentResolver;->bulkInsert(Landroid/net/Uri;[Landroid/content/ContentValues;)I
 
@@ -858,18 +858,18 @@
 
     move-result-wide v2
 
-    invoke-static {v0, v2, v3, p0}, Lcom/android/settings/cloud/a/c;->a(Ljava/lang/String;JLandroid/content/Context;)V
+    invoke-static {v0, v2, v3, p0}, Lcom/android/settings_ext/cloud/a/c;->a(Ljava/lang/String;JLandroid/content/Context;)V
 
     .line 125
     const-string v0, "cloud_app_control_version"
 
-    invoke-static {v0, v6, v7, p0}, Lcom/android/settings/cloud/a/c;->a(Ljava/lang/String;JLandroid/content/Context;)V
+    invoke-static {v0, v6, v7, p0}, Lcom/android/settings_ext/cloud/a/c;->a(Ljava/lang/String;JLandroid/content/Context;)V
 
     goto/16 :goto_0
 
     .line 129
     :cond_4
-    invoke-direct {p0}, Lcom/android/settings/cloud/CloudSettingsService;->nt()Lcom/android/settings/cloud/network/a;
+    invoke-direct {p0}, Lcom/android/settings_ext/cloud/CloudSettingsService;->nt()Lcom/android/settings_ext/cloud/network/a;
 
     move-result-object v0
 
@@ -910,7 +910,7 @@
     invoke-static {v1, v2}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
     .line 138
-    invoke-direct {p0, v0}, Lcom/android/settings/cloud/CloudSettingsService;->a(Lcom/android/settings/cloud/network/a;)Ljava/io/File;
+    invoke-direct {p0, v0}, Lcom/android/settings_ext/cloud/CloudSettingsService;->a(Lcom/android/settings_ext/cloud/network/a;)Ljava/io/File;
 
     move-result-object v1
 
@@ -935,12 +935,12 @@
 
     .line 143
     :cond_7
-    invoke-static {v1}, Lcom/android/settings/cloud/a/b;->encodeMD5(Ljava/io/File;)Ljava/lang/String;
+    invoke-static {v1}, Lcom/android/settings_ext/cloud/a/b;->encodeMD5(Ljava/io/File;)Ljava/lang/String;
 
     move-result-object v2
 
     .line 144
-    iget-object v3, v0, Lcom/android/settings/cloud/network/a;->Qr:Ljava/lang/String;
+    iget-object v3, v0, Lcom/android/settings_ext/cloud/network/a;->Qr:Ljava/lang/String;
 
     invoke-static {v2, v3}, Landroid/text/TextUtils;->equals(Ljava/lang/CharSequence;Ljava/lang/CharSequence;)Z
 
@@ -960,7 +960,7 @@
     .line 150
     :cond_8
     :try_start_1
-    invoke-direct {p0, v1}, Lcom/android/settings/cloud/CloudSettingsService;->e(Ljava/io/File;)I
+    invoke-direct {p0, v1}, Lcom/android/settings_ext/cloud/CloudSettingsService;->e(Ljava/io/File;)I
     :try_end_1
     .catch Ljava/lang/Exception; {:try_start_1 .. :try_end_1} :catch_0
 
@@ -976,14 +976,14 @@
 
     move-result-wide v2
 
-    invoke-static {v1, v2, v3, p0}, Lcom/android/settings/cloud/a/c;->a(Ljava/lang/String;JLandroid/content/Context;)V
+    invoke-static {v1, v2, v3, p0}, Lcom/android/settings_ext/cloud/a/c;->a(Ljava/lang/String;JLandroid/content/Context;)V
 
     .line 157
     const-string v1, "cloud_app_control_version"
 
-    iget-wide v2, v0, Lcom/android/settings/cloud/network/a;->Qs:J
+    iget-wide v2, v0, Lcom/android/settings_ext/cloud/network/a;->Qs:J
 
-    invoke-static {v1, v2, v3, p0}, Lcom/android/settings/cloud/a/c;->a(Ljava/lang/String;JLandroid/content/Context;)V
+    invoke-static {v1, v2, v3, p0}, Lcom/android/settings_ext/cloud/a/c;->a(Ljava/lang/String;JLandroid/content/Context;)V
 
     goto/16 :goto_0
 
@@ -1027,7 +1027,7 @@
     goto/16 :goto_0
 .end method
 
-.method private nt()Lcom/android/settings/cloud/network/a;
+.method private nt()Lcom/android/settings_ext/cloud/network/a;
     .locals 7
 
     .prologue
@@ -1035,30 +1035,30 @@
     const/4 v0, 0x0
 
     .line 212
-    new-instance v1, Lcom/android/settings/cloud/network/Connection;
+    new-instance v1, Lcom/android/settings_ext/cloud/network/Connection;
 
-    sget-object v2, Lcom/android/settings/cloud/b;->PC:Ljava/lang/String;
+    sget-object v2, Lcom/android/settings_ext/cloud/b;->PC:Ljava/lang/String;
 
-    invoke-direct {v1, v2}, Lcom/android/settings/cloud/network/Connection;-><init>(Ljava/lang/String;)V
+    invoke-direct {v1, v2}, Lcom/android/settings_ext/cloud/network/Connection;-><init>(Ljava/lang/String;)V
 
     .line 213
-    invoke-direct {p0, v1}, Lcom/android/settings/cloud/CloudSettingsService;->a(Lcom/android/settings/cloud/network/Connection;)V
+    invoke-direct {p0, v1}, Lcom/android/settings_ext/cloud/CloudSettingsService;->a(Lcom/android/settings_ext/cloud/network/Connection;)V
 
     .line 214
-    new-instance v2, Lcom/android/settings/cloud/network/b;
+    new-instance v2, Lcom/android/settings_ext/cloud/network/b;
 
     invoke-virtual {v1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
-    invoke-direct {v2, v1}, Lcom/android/settings/cloud/network/b;-><init>(Lcom/android/settings/cloud/network/Connection;)V
+    invoke-direct {v2, v1}, Lcom/android/settings_ext/cloud/network/b;-><init>(Lcom/android/settings_ext/cloud/network/Connection;)V
 
     .line 215
     const-string v3, "imei"
 
-    invoke-direct {p0}, Lcom/android/settings/cloud/CloudSettingsService;->nv()Ljava/lang/String;
+    invoke-direct {p0}, Lcom/android/settings_ext/cloud/CloudSettingsService;->nv()Ljava/lang/String;
 
     move-result-object v4
 
-    invoke-virtual {v2, v3, v4}, Lcom/android/settings/cloud/network/b;->n(Ljava/lang/String;Ljava/lang/String;)Lcom/android/settings/cloud/network/b;
+    invoke-virtual {v2, v3, v4}, Lcom/android/settings_ext/cloud/network/b;->n(Ljava/lang/String;Ljava/lang/String;)Lcom/android/settings_ext/cloud/network/b;
 
     .line 216
     const-string v3, "miui_version"
@@ -1089,7 +1089,7 @@
 
     move-result-object v4
 
-    invoke-virtual {v2, v3, v4}, Lcom/android/settings/cloud/network/b;->n(Ljava/lang/String;Ljava/lang/String;)Lcom/android/settings/cloud/network/b;
+    invoke-virtual {v2, v3, v4}, Lcom/android/settings_ext/cloud/network/b;->n(Ljava/lang/String;Ljava/lang/String;)Lcom/android/settings_ext/cloud/network/b;
 
     .line 217
     const-string v3, "device"
@@ -1102,7 +1102,7 @@
 
     move-result-object v4
 
-    invoke-virtual {v2, v3, v4}, Lcom/android/settings/cloud/network/b;->n(Ljava/lang/String;Ljava/lang/String;)Lcom/android/settings/cloud/network/b;
+    invoke-virtual {v2, v3, v4}, Lcom/android/settings_ext/cloud/network/b;->n(Ljava/lang/String;Ljava/lang/String;)Lcom/android/settings_ext/cloud/network/b;
 
     .line 218
     const-string v3, "carrier"
@@ -1115,7 +1115,7 @@
 
     move-result-object v4
 
-    invoke-virtual {v2, v3, v4}, Lcom/android/settings/cloud/network/b;->n(Ljava/lang/String;Ljava/lang/String;)Lcom/android/settings/cloud/network/b;
+    invoke-virtual {v2, v3, v4}, Lcom/android/settings_ext/cloud/network/b;->n(Ljava/lang/String;Ljava/lang/String;)Lcom/android/settings_ext/cloud/network/b;
 
     .line 219
     const-string v3, "region"
@@ -1128,24 +1128,24 @@
 
     move-result-object v4
 
-    invoke-virtual {v2, v3, v4}, Lcom/android/settings/cloud/network/b;->n(Ljava/lang/String;Ljava/lang/String;)Lcom/android/settings/cloud/network/b;
+    invoke-virtual {v2, v3, v4}, Lcom/android/settings_ext/cloud/network/b;->n(Ljava/lang/String;Ljava/lang/String;)Lcom/android/settings_ext/cloud/network/b;
 
     .line 220
-    invoke-virtual {v1}, Lcom/android/settings/cloud/network/Connection;->nD()Lcom/android/settings/cloud/network/Connection$NetworkError;
+    invoke-virtual {v1}, Lcom/android/settings_ext/cloud/network/Connection;->nD()Lcom/android/settings_ext/cloud/network/Connection$NetworkError;
 
     move-result-object v2
 
-    sget-object v3, Lcom/android/settings/cloud/network/Connection$NetworkError;->Qz:Lcom/android/settings/cloud/network/Connection$NetworkError;
+    sget-object v3, Lcom/android/settings_ext/cloud/network/Connection$NetworkError;->Qz:Lcom/android/settings_ext/cloud/network/Connection$NetworkError;
 
     if-ne v2, v3, :cond_0
 
     .line 221
-    invoke-virtual {v1}, Lcom/android/settings/cloud/network/Connection;->nC()Lorg/json/JSONObject;
+    invoke-virtual {v1}, Lcom/android/settings_ext/cloud/network/Connection;->nC()Lorg/json/JSONObject;
 
     move-result-object v0
 
     .line 222
-    invoke-direct {p0, v0}, Lcom/android/settings/cloud/CloudSettingsService;->a(Lorg/json/JSONObject;)Lcom/android/settings/cloud/network/a;
+    invoke-direct {p0, v0}, Lcom/android/settings_ext/cloud/CloudSettingsService;->a(Lorg/json/JSONObject;)Lcom/android/settings_ext/cloud/network/a;
 
     move-result-object v0
 
@@ -1217,7 +1217,7 @@
 
     .line 60
     :pswitch_0
-    invoke-direct {p0}, Lcom/android/settings/cloud/CloudSettingsService;->ns()V
+    invoke-direct {p0}, Lcom/android/settings_ext/cloud/CloudSettingsService;->ns()V
 
     goto :goto_0
 

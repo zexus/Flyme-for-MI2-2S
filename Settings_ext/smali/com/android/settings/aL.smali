@@ -1,4 +1,4 @@
-.class Lcom/android/settings/aL;
+.class Lcom/android/settings_ext/aL;
 .super Ljava/lang/Object;
 .source "CryptKeeper.java"
 
@@ -7,20 +7,20 @@
 
 
 # instance fields
-.field final synthetic fb:Lcom/android/settings/CryptKeeper;
+.field final synthetic fb:Lcom/android/settings_ext/CryptKeeper;
 
 .field final synthetic ff:Landroid/view/inputmethod/InputMethodManager;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/CryptKeeper;Landroid/view/inputmethod/InputMethodManager;)V
+.method constructor <init>(Lcom/android/settings_ext/CryptKeeper;Landroid/view/inputmethod/InputMethodManager;)V
     .locals 0
 
     .prologue
     .line 741
-    iput-object p1, p0, Lcom/android/settings/aL;->fb:Lcom/android/settings/CryptKeeper;
+    iput-object p1, p0, Lcom/android/settings_ext/aL;->fb:Lcom/android/settings_ext/CryptKeeper;
 
-    iput-object p2, p0, Lcom/android/settings/aL;->ff:Landroid/view/inputmethod/InputMethodManager;
+    iput-object p2, p0, Lcom/android/settings_ext/aL;->ff:Landroid/view/inputmethod/InputMethodManager;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -34,7 +34,7 @@
 
     .prologue
     .line 744
-    iget-object v0, p0, Lcom/android/settings/aL;->ff:Landroid/view/inputmethod/InputMethodManager;
+    iget-object v0, p0, Lcom/android/settings_ext/aL;->ff:Landroid/view/inputmethod/InputMethodManager;
 
     invoke-virtual {v0}, Landroid/view/inputmethod/InputMethodManager;->showInputMethodPicker()V
 

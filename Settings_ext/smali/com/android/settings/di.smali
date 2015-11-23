@@ -1,4 +1,4 @@
-.class Lcom/android/settings/di;
+.class Lcom/android/settings_ext/di;
 .super Ljava/lang/Object;
 .source "MiuiApnEditor.java"
 
@@ -7,16 +7,16 @@
 
 
 # instance fields
-.field final synthetic or:Lcom/android/settings/MiuiApnEditor;
+.field final synthetic or:Lcom/android/settings_ext/MiuiApnEditor;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/MiuiApnEditor;)V
+.method constructor <init>(Lcom/android/settings_ext/MiuiApnEditor;)V
     .locals 0
 
     .prologue
     .line 57
-    iput-object p1, p0, Lcom/android/settings/di;->or:Lcom/android/settings/MiuiApnEditor;
+    iput-object p1, p0, Lcom/android/settings_ext/di;->or:Lcom/android/settings_ext/MiuiApnEditor;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -30,9 +30,9 @@
 
     .prologue
     .line 60
-    iget-object v0, p0, Lcom/android/settings/di;->or:Lcom/android/settings/MiuiApnEditor;
+    iget-object v0, p0, Lcom/android/settings_ext/di;->or:Lcom/android/settings_ext/MiuiApnEditor;
 
-    invoke-virtual {v0}, Lcom/android/settings/MiuiApnEditor;->finish()V
+    invoke-virtual {v0}, Lcom/android/settings_ext/MiuiApnEditor;->finish()V
 
     .line 61
     return-void

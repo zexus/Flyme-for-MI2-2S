@@ -1,4 +1,4 @@
-.class public abstract Lcom/android/settings/wifi/openwifi/l;
+.class public abstract Lcom/android/settings_ext/wifi/openwifi/l;
 .super Ljava/lang/Object;
 .source "OpenWifiController.java"
 
@@ -36,16 +36,16 @@
     .line 55
     const/16 v0, -0x3e8
 
-    iput v0, p0, Lcom/android/settings/wifi/openwifi/l;->mStatus:I
+    iput v0, p0, Lcom/android/settings_ext/wifi/openwifi/l;->mStatus:I
 
     .line 87
-    iput-object p1, p0, Lcom/android/settings/wifi/openwifi/l;->mContext:Landroid/content/Context;
+    iput-object p1, p0, Lcom/android/settings_ext/wifi/openwifi/l;->mContext:Landroid/content/Context;
 
     .line 88
-    iput-object p2, p0, Lcom/android/settings/wifi/openwifi/l;->ayf:Ljava/lang/String;
+    iput-object p2, p0, Lcom/android/settings_ext/wifi/openwifi/l;->ayf:Ljava/lang/String;
 
     .line 89
-    iput-object p3, p0, Lcom/android/settings/wifi/openwifi/l;->ayy:Ljava/lang/String;
+    iput-object p3, p0, Lcom/android/settings_ext/wifi/openwifi/l;->ayy:Ljava/lang/String;
 
     .line 90
     invoke-static {}, Landroid/telephony/TelephonyManager;->getDefault()Landroid/telephony/TelephonyManager;
@@ -56,10 +56,10 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/wifi/openwifi/l;->mImei:Ljava/lang/String;
+    iput-object v0, p0, Lcom/android/settings_ext/wifi/openwifi/l;->mImei:Ljava/lang/String;
 
     .line 91
-    iget-object v0, p0, Lcom/android/settings/wifi/openwifi/l;->mImei:Ljava/lang/String;
+    iget-object v0, p0, Lcom/android/settings_ext/wifi/openwifi/l;->mImei:Ljava/lang/String;
 
     invoke-static {v0}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
@@ -70,14 +70,14 @@
     .line 92
     const-string v0, ""
 
-    iput-object v0, p0, Lcom/android/settings/wifi/openwifi/l;->mImei:Ljava/lang/String;
+    iput-object v0, p0, Lcom/android/settings_ext/wifi/openwifi/l;->mImei:Ljava/lang/String;
 
     .line 94
     :cond_0
     return-void
 .end method
 
-.method public static a(Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;)Lcom/android/settings/wifi/openwifi/l;
+.method public static a(Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;)Lcom/android/settings_ext/wifi/openwifi/l;
     .locals 3
 
     .prologue
@@ -116,16 +116,16 @@
 
     if-eqz v1, :cond_0
 
-    invoke-static {p0}, Lcom/android/settings/hl;->M(Landroid/content/Context;)Z
+    invoke-static {p0}, Lcom/android/settings_ext/hl;->M(Landroid/content/Context;)Z
 
     move-result v1
 
     if-eqz v1, :cond_0
 
     .line 101
-    new-instance v0, Lcom/android/settings/wifi/openwifi/p;
+    new-instance v0, Lcom/android/settings_ext/wifi/openwifi/p;
 
-    invoke-direct {v0, p0, p1, p2}, Lcom/android/settings/wifi/openwifi/p;-><init>(Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;)V
+    invoke-direct {v0, p0, p1, p2}, Lcom/android/settings_ext/wifi/openwifi/p;-><init>(Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;)V
 
     goto :goto_0
 .end method
@@ -139,7 +139,7 @@
 
     const v1, 0x7f090ce7
 
-    invoke-static {p0, p1, p2, v0, v1}, Lcom/android/settings/wifi/openwifi/l;->a(Landroid/content/Context;Landroid/app/Notification$Builder;ZZI)V
+    invoke-static {p0, p1, p2, v0, v1}, Lcom/android/settings_ext/wifi/openwifi/l;->a(Landroid/content/Context;Landroid/app/Notification$Builder;ZZI)V
 
     .line 191
     return-void
@@ -261,9 +261,9 @@
 
     if-nez v0, :cond_0
 
-    sget-object v0, Lcom/android/settings/wifi/MiuiWifiSettings;->atB:Ljava/util/HashSet;
+    sget-object v0, Lcom/android/settings_ext/wifi/MiuiWifiSettings;->atB:Ljava/util/HashSet;
 
-    invoke-static {p2}, Lcom/android/settings/wifi/d;->removeDoubleQuotes(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {p2}, Lcom/android/settings_ext/wifi/d;->removeDoubleQuotes(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v1
 
@@ -282,21 +282,21 @@
     if-nez p1, :cond_1
 
     .line 383
-    sget-object p1, Lcom/android/settings/wifi/MiuiWifiService;->atl:Landroid/net/Uri;
+    sget-object p1, Lcom/android/settings_ext/wifi/MiuiWifiService;->atl:Landroid/net/Uri;
 
     .line 385
     :cond_1
-    invoke-static {p0}, Lcom/android/settings/wifi/c;->bA(Landroid/content/Context;)Lcom/android/settings/wifi/c;
+    invoke-static {p0}, Lcom/android/settings_ext/wifi/c;->bA(Landroid/content/Context;)Lcom/android/settings_ext/wifi/c;
 
     move-result-object v0
 
     .line 386
-    invoke-virtual {v0, p0, p2}, Lcom/android/settings/wifi/c;->v(Landroid/content/Context;Ljava/lang/String;)Z
+    invoke-virtual {v0, p0, p2}, Lcom/android/settings_ext/wifi/c;->v(Landroid/content/Context;Ljava/lang/String;)Z
 
     move-result v1
 
     .line 387
-    invoke-virtual {v0, p0, p2, v1}, Lcom/android/settings/wifi/c;->c(Landroid/content/Context;Ljava/lang/String;Z)V
+    invoke-virtual {v0, p0, p2, v1}, Lcom/android/settings_ext/wifi/c;->c(Landroid/content/Context;Ljava/lang/String;Z)V
 
     .line 388
     new-instance v0, Landroid/content/Intent;
@@ -355,10 +355,10 @@
 
     move-result-object v0
 
-    check-cast v0, Lcom/android/settings/wifi/openwifi/m;
+    check-cast v0, Lcom/android/settings_ext/wifi/openwifi/m;
 
     .line 331
-    invoke-interface {v0, p2}, Lcom/android/settings/wifi/openwifi/m;->dq(I)V
+    invoke-interface {v0, p2}, Lcom/android/settings_ext/wifi/openwifi/m;->dq(I)V
 
     goto :goto_0
 
@@ -372,7 +372,7 @@
 
     .prologue
     .line 280
-    invoke-static {p0}, Lcom/android/settings/wifi/aG;->isWifiConnected(Landroid/content/Context;)Z
+    invoke-static {p0}, Lcom/android/settings_ext/wifi/aG;->isWifiConnected(Landroid/content/Context;)Z
 
     move-result v0
 
@@ -447,7 +447,7 @@
     .line 292
     iget-object v0, v0, Landroid/net/wifi/WifiConfiguration;->SSID:Ljava/lang/String;
 
-    invoke-static {v0}, Lcom/android/settings/wifi/d;->removeDoubleQuotes(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v0}, Lcom/android/settings_ext/wifi/d;->removeDoubleQuotes(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 
@@ -499,7 +499,7 @@
 
     if-nez v2, :cond_3
 
-    invoke-static {v0}, Lcom/android/settings/wifi/d;->a(Landroid/net/wifi/ScanResult;)I
+    invoke-static {v0}, Lcom/android/settings_ext/wifi/d;->a(Landroid/net/wifi/ScanResult;)I
 
     move-result v2
 
@@ -508,14 +508,14 @@
     .line 310
     iget-object v2, v0, Landroid/net/wifi/ScanResult;->SSID:Ljava/lang/String;
 
-    invoke-static {v2}, Lcom/android/settings/wifi/d;->removeDoubleQuotes(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v2}, Lcom/android/settings_ext/wifi/d;->removeDoubleQuotes(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v6
 
     .line 311
     iget-object v2, v0, Landroid/net/wifi/ScanResult;->BSSID:Ljava/lang/String;
 
-    invoke-static {p0, v2, v6}, Lcom/android/settings/wifi/openwifi/l;->a(Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;)Lcom/android/settings/wifi/openwifi/l;
+    invoke-static {p0, v2, v6}, Lcom/android/settings_ext/wifi/openwifi/l;->a(Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;)Lcom/android/settings_ext/wifi/openwifi/l;
 
     move-result-object v2
 
@@ -560,7 +560,7 @@
     if-lt v0, v2, :cond_6
 
     .line 321
-    invoke-virtual {v3, v1}, Lcom/android/settings/wifi/openwifi/l;->dr(I)V
+    invoke-virtual {v3, v1}, Lcom/android/settings_ext/wifi/openwifi/l;->dr(I)V
 
     goto/16 :goto_0
 
@@ -660,7 +660,7 @@
     .line 433
     iget-object v0, v0, Landroid/net/wifi/ScanResult;->BSSID:Ljava/lang/String;
 
-    invoke-static {p0, v0}, Lcom/android/settings/wifi/bm;->y(Landroid/content/Context;Ljava/lang/String;)V
+    invoke-static {p0, v0}, Lcom/android/settings_ext/wifi/bm;->y(Landroid/content/Context;Ljava/lang/String;)V
 
     .line 439
     :cond_1
@@ -708,7 +708,7 @@
     if-eqz v2, :cond_2
 
     .line 406
-    invoke-static {p0}, Lcom/android/settings/wifi/openwifi/l;->bP(Landroid/content/Context;)V
+    invoke-static {p0}, Lcom/android/settings_ext/wifi/openwifi/l;->bP(Landroid/content/Context;)V
 
     .line 407
     const-string v1, ""
@@ -725,19 +725,19 @@
 
     move-result-object v1
 
-    invoke-static {v1}, Lcom/android/settings/wifi/d;->removeDoubleQuotes(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v1}, Lcom/android/settings_ext/wifi/d;->removeDoubleQuotes(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v1
 
     .line 411
     :cond_0
-    sget-object v2, Lcom/android/settings/wifi/openwifi/l;->ayB:Ljava/lang/String;
+    sget-object v2, Lcom/android/settings_ext/wifi/openwifi/l;->ayB:Ljava/lang/String;
 
     if-eqz v2, :cond_2
 
-    sget-object v2, Lcom/android/settings/wifi/openwifi/l;->ayB:Ljava/lang/String;
+    sget-object v2, Lcom/android/settings_ext/wifi/openwifi/l;->ayB:Ljava/lang/String;
 
-    invoke-static {v2}, Lcom/android/settings/wifi/d;->removeDoubleQuotes(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v2}, Lcom/android/settings_ext/wifi/d;->removeDoubleQuotes(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v2
 
@@ -748,12 +748,12 @@
     if-eqz v1, :cond_2
 
     .line 412
-    sget-object v1, Lcom/android/settings/wifi/openwifi/l;->ayC:Landroid/app/Notification;
+    sget-object v1, Lcom/android/settings_ext/wifi/openwifi/l;->ayC:Landroid/app/Notification;
 
     if-eqz v1, :cond_1
 
     .line 413
-    sget-object v1, Lcom/android/settings/wifi/openwifi/l;->ayC:Landroid/app/Notification;
+    sget-object v1, Lcom/android/settings_ext/wifi/openwifi/l;->ayC:Landroid/app/Notification;
 
     invoke-virtual {v0, v4, v1}, Landroid/app/NotificationManager;->notify(ILandroid/app/Notification;)V
 
@@ -762,7 +762,7 @@
 
     move-result-wide v0
 
-    sput-wide v0, Lcom/android/settings/wifi/openwifi/l;->ayA:J
+    sput-wide v0, Lcom/android/settings_ext/wifi/openwifi/l;->ayA:J
 
     .line 423
     :cond_1
@@ -782,7 +782,7 @@
     .line 422
     const-wide/16 v0, 0x0
 
-    sput-wide v0, Lcom/android/settings/wifi/openwifi/l;->ayA:J
+    sput-wide v0, Lcom/android/settings_ext/wifi/openwifi/l;->ayA:J
 
     goto :goto_0
 .end method
@@ -792,7 +792,7 @@
 
     .prologue
     .line 246
-    sget-wide v0, Lcom/android/settings/wifi/openwifi/l;->ayA:J
+    sget-wide v0, Lcom/android/settings_ext/wifi/openwifi/l;->ayA:J
 
     return-wide v0
 .end method
@@ -825,19 +825,19 @@
     .line 368
     const-string v1, "miui.intent.extra.FREE_WIFI_RESULT"
 
-    iget v2, p0, Lcom/android/settings/wifi/openwifi/l;->mStatus:I
+    iget v2, p0, Lcom/android/settings_ext/wifi/openwifi/l;->mStatus:I
 
     invoke-virtual {v0, v1, v2}, Landroid/content/Intent;->putExtra(Ljava/lang/String;I)Landroid/content/Intent;
 
     .line 369
     const-string v1, "miui.intent.extra.FREE_WIFI_SSID"
 
-    iget-object v2, p0, Lcom/android/settings/wifi/openwifi/l;->ayy:Ljava/lang/String;
+    iget-object v2, p0, Lcom/android/settings_ext/wifi/openwifi/l;->ayy:Ljava/lang/String;
 
     invoke-virtual {v0, v1, v2}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
 
     .line 370
-    iget-object v1, p0, Lcom/android/settings/wifi/openwifi/l;->mContext:Landroid/content/Context;
+    iget-object v1, p0, Lcom/android/settings_ext/wifi/openwifi/l;->mContext:Landroid/content/Context;
 
     invoke-virtual {v1, v0}, Landroid/content/Context;->startService(Landroid/content/Intent;)Landroid/content/ComponentName;
 
@@ -852,7 +852,7 @@
 
     .prologue
     .line 146
-    iget-object v0, p0, Lcom/android/settings/wifi/openwifi/l;->mContext:Landroid/content/Context;
+    iget-object v0, p0, Lcom/android/settings_ext/wifi/openwifi/l;->mContext:Landroid/content/Context;
 
     const v1, 0x7f090cec
 
@@ -862,7 +862,7 @@
 
     const/4 v3, 0x0
 
-    invoke-virtual {p0}, Lcom/android/settings/wifi/openwifi/l;->getProviderName()Ljava/lang/String;
+    invoke-virtual {p0}, Lcom/android/settings_ext/wifi/openwifi/l;->getProviderName()Ljava/lang/String;
 
     move-result-object v4
 
@@ -872,7 +872,7 @@
 
     move-result-object v0
 
-    invoke-virtual {p0, p1, v0}, Lcom/android/settings/wifi/openwifi/l;->v(Ljava/lang/String;Ljava/lang/String;)Landroid/app/Notification;
+    invoke-virtual {p0, p1, v0}, Lcom/android/settings_ext/wifi/openwifi/l;->v(Ljava/lang/String;Ljava/lang/String;)Landroid/app/Notification;
 
     move-result-object v0
 
@@ -884,7 +884,7 @@
 
     .prologue
     .line 262
-    iput-object p1, p0, Lcom/android/settings/wifi/openwifi/l;->ayz:Landroid/net/Uri;
+    iput-object p1, p0, Lcom/android/settings_ext/wifi/openwifi/l;->ayz:Landroid/net/Uri;
 
     .line 263
     return-void
@@ -899,7 +899,7 @@
     const/4 v8, 0x0
 
     .line 107
-    invoke-virtual {p0}, Lcom/android/settings/wifi/openwifi/l;->getProviderName()Ljava/lang/String;
+    invoke-virtual {p0}, Lcom/android/settings_ext/wifi/openwifi/l;->getProviderName()Ljava/lang/String;
 
     move-result-object v0
 
@@ -917,7 +917,7 @@
 
     .line 112
     :cond_1
-    iget-object v1, p0, Lcom/android/settings/wifi/openwifi/l;->mContext:Landroid/content/Context;
+    iget-object v1, p0, Lcom/android/settings_ext/wifi/openwifi/l;->mContext:Landroid/content/Context;
 
     invoke-static {v1}, Landroid/preference/PreferenceManager;->getDefaultSharedPreferences(Landroid/content/Context;)Landroid/content/SharedPreferences;
 
@@ -967,12 +967,12 @@
     invoke-direct {v1}, Landroid/net/wifi/WifiConfiguration;-><init>()V
 
     .line 121
-    iget-object v2, p0, Lcom/android/settings/wifi/openwifi/l;->ayy:Ljava/lang/String;
+    iget-object v2, p0, Lcom/android/settings_ext/wifi/openwifi/l;->ayy:Ljava/lang/String;
 
     iput-object v2, v1, Landroid/net/wifi/WifiConfiguration;->SSID:Ljava/lang/String;
 
     .line 122
-    iget-object v2, p0, Lcom/android/settings/wifi/openwifi/l;->ayf:Ljava/lang/String;
+    iget-object v2, p0, Lcom/android/settings_ext/wifi/openwifi/l;->ayf:Ljava/lang/String;
 
     iput-object v2, v1, Landroid/net/wifi/WifiConfiguration;->BSSID:Ljava/lang/String;
 
@@ -984,9 +984,9 @@
     .line 124
     new-instance v2, Landroid/content/Intent;
 
-    iget-object v3, p0, Lcom/android/settings/wifi/openwifi/l;->mContext:Landroid/content/Context;
+    iget-object v3, p0, Lcom/android/settings_ext/wifi/openwifi/l;->mContext:Landroid/content/Context;
 
-    const-class v4, Lcom/android/settings/wifi/openwifi/FreeWifiDialog;
+    const-class v4, Lcom/android/settings_ext/wifi/openwifi/FreeWifiDialog;
 
     invoke-direct {v2, v3, v4}, Landroid/content/Intent;-><init>(Landroid/content/Context;Ljava/lang/Class;)V
 
@@ -1013,12 +1013,12 @@
     .line 129
     const-string v1, "miui.intent.extra.FREE_WIFI_BSSID"
 
-    iget-object v3, p0, Lcom/android/settings/wifi/openwifi/l;->ayf:Ljava/lang/String;
+    iget-object v3, p0, Lcom/android/settings_ext/wifi/openwifi/l;->ayf:Ljava/lang/String;
 
     invoke-virtual {v2, v1, v3}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
 
     .line 131
-    iget-object v1, p0, Lcom/android/settings/wifi/openwifi/l;->mContext:Landroid/content/Context;
+    iget-object v1, p0, Lcom/android/settings_ext/wifi/openwifi/l;->mContext:Landroid/content/Context;
 
     const/high16 v3, 0x8000000
 
@@ -1027,7 +1027,7 @@
     move-result-object v1
 
     .line 133
-    iget-object v2, p0, Lcom/android/settings/wifi/openwifi/l;->mContext:Landroid/content/Context;
+    iget-object v2, p0, Lcom/android/settings_ext/wifi/openwifi/l;->mContext:Landroid/content/Context;
 
     invoke-virtual {v2, v9}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -1036,7 +1036,7 @@
     .line 135
     new-instance v3, Landroid/app/Notification$Builder;
 
-    iget-object v4, p0, Lcom/android/settings/wifi/openwifi/l;->mContext:Landroid/content/Context;
+    iget-object v4, p0, Lcom/android/settings_ext/wifi/openwifi/l;->mContext:Landroid/content/Context;
 
     invoke-virtual {v4}, Landroid/content/Context;->getApplicationContext()Landroid/content/Context;
 
@@ -1051,7 +1051,7 @@
     invoke-virtual {v3, v2}, Landroid/app/Notification$Builder;->setContentTitle(Ljava/lang/CharSequence;)Landroid/app/Notification$Builder;
 
     .line 138
-    iget-object v2, p0, Lcom/android/settings/wifi/openwifi/l;->mContext:Landroid/content/Context;
+    iget-object v2, p0, Lcom/android/settings_ext/wifi/openwifi/l;->mContext:Landroid/content/Context;
 
     const v4, 0x7f090ceb
 
@@ -1071,9 +1071,9 @@
     invoke-virtual {v3, v1}, Landroid/app/Notification$Builder;->setContentIntent(Landroid/app/PendingIntent;)Landroid/app/Notification$Builder;
 
     .line 141
-    iget-object v0, p0, Lcom/android/settings/wifi/openwifi/l;->mContext:Landroid/content/Context;
+    iget-object v0, p0, Lcom/android/settings_ext/wifi/openwifi/l;->mContext:Landroid/content/Context;
 
-    invoke-static {v0, v3, v8, v9}, Lcom/android/settings/wifi/openwifi/l;->a(Landroid/content/Context;Landroid/app/Notification$Builder;ZI)V
+    invoke-static {v0, v3, v8, v9}, Lcom/android/settings_ext/wifi/openwifi/l;->a(Landroid/content/Context;Landroid/app/Notification$Builder;ZI)V
 
     goto/16 :goto_0
 .end method
@@ -1083,7 +1083,7 @@
 
     .prologue
     .line 254
-    iget-object v0, p0, Lcom/android/settings/wifi/openwifi/l;->ayf:Ljava/lang/String;
+    iget-object v0, p0, Lcom/android/settings_ext/wifi/openwifi/l;->ayf:Ljava/lang/String;
 
     return-object v0
 .end method
@@ -1093,7 +1093,7 @@
 
     .prologue
     .line 270
-    iget-object v0, p0, Lcom/android/settings/wifi/openwifi/l;->mContext:Landroid/content/Context;
+    iget-object v0, p0, Lcom/android/settings_ext/wifi/openwifi/l;->mContext:Landroid/content/Context;
 
     const-string v1, "wifi"
 
@@ -1144,13 +1144,13 @@
 
     .prologue
     .line 222
-    invoke-static {}, Lcom/android/settings/eK;->fB()Lcom/android/settings/eK;
+    invoke-static {}, Lcom/android/settings_ext/eK;->fB()Lcom/android/settings_ext/eK;
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/android/settings/wifi/openwifi/l;->mContext:Landroid/content/Context;
+    iget-object v1, p0, Lcom/android/settings_ext/wifi/openwifi/l;->mContext:Landroid/content/Context;
 
-    invoke-virtual {v0, v1}, Lcom/android/settings/eK;->C(Landroid/content/Context;)Ljava/lang/String;
+    invoke-virtual {v0, v1}, Lcom/android/settings_ext/eK;->C(Landroid/content/Context;)Ljava/lang/String;
 
     move-result-object v0
 
@@ -1242,7 +1242,7 @@
 
     .prologue
     .line 258
-    iget-object v0, p0, Lcom/android/settings/wifi/openwifi/l;->ayy:Ljava/lang/String;
+    iget-object v0, p0, Lcom/android/settings_ext/wifi/openwifi/l;->ayy:Ljava/lang/String;
 
     return-object v0
 .end method
@@ -1260,10 +1260,10 @@
     const/4 v3, 0x0
 
     .line 337
-    iput v3, p0, Lcom/android/settings/wifi/openwifi/l;->mStatus:I
+    iput v3, p0, Lcom/android/settings_ext/wifi/openwifi/l;->mStatus:I
 
     .line 338
-    iget-object v0, p0, Lcom/android/settings/wifi/openwifi/l;->mContext:Landroid/content/Context;
+    iget-object v0, p0, Lcom/android/settings_ext/wifi/openwifi/l;->mContext:Landroid/content/Context;
 
     const v4, 0x7f090cf1
 
@@ -1271,13 +1271,13 @@
 
     move-result-object v0
 
-    iget-object v4, p0, Lcom/android/settings/wifi/openwifi/l;->mContext:Landroid/content/Context;
+    iget-object v4, p0, Lcom/android/settings_ext/wifi/openwifi/l;->mContext:Landroid/content/Context;
 
     const v5, 0x7f090ceb
 
     new-array v6, v1, [Ljava/lang/Object;
 
-    invoke-virtual {p0}, Lcom/android/settings/wifi/openwifi/l;->getProviderName()Ljava/lang/String;
+    invoke-virtual {p0}, Lcom/android/settings_ext/wifi/openwifi/l;->getProviderName()Ljava/lang/String;
 
     move-result-object v7
 
@@ -1287,27 +1287,27 @@
 
     move-result-object v4
 
-    invoke-virtual {p0, v0, v4}, Lcom/android/settings/wifi/openwifi/l;->v(Ljava/lang/String;Ljava/lang/String;)Landroid/app/Notification;
+    invoke-virtual {p0, v0, v4}, Lcom/android/settings_ext/wifi/openwifi/l;->v(Ljava/lang/String;Ljava/lang/String;)Landroid/app/Notification;
 
     .line 340
-    invoke-direct {p0, p1, v3}, Lcom/android/settings/wifi/openwifi/l;->b(Ljava/util/ArrayList;I)V
+    invoke-direct {p0, p1, v3}, Lcom/android/settings_ext/wifi/openwifi/l;->b(Ljava/util/ArrayList;I)V
 
     .line 341
-    invoke-virtual {p0}, Lcom/android/settings/wifi/openwifi/l;->wa()I
+    invoke-virtual {p0}, Lcom/android/settings_ext/wifi/openwifi/l;->wa()I
 
     move-result v0
 
-    iput v0, p0, Lcom/android/settings/wifi/openwifi/l;->mStatus:I
+    iput v0, p0, Lcom/android/settings_ext/wifi/openwifi/l;->mStatus:I
 
     .line 343
-    invoke-virtual {p0}, Lcom/android/settings/wifi/openwifi/l;->wb()Z
+    invoke-virtual {p0}, Lcom/android/settings_ext/wifi/openwifi/l;->wb()Z
 
     move-result v0
 
     if-eqz v0, :cond_1
 
     .line 344
-    iget-object v0, p0, Lcom/android/settings/wifi/openwifi/l;->mContext:Landroid/content/Context;
+    iget-object v0, p0, Lcom/android/settings_ext/wifi/openwifi/l;->mContext:Landroid/content/Context;
 
     const v4, 0x7f090cf2
 
@@ -1318,13 +1318,13 @@
     invoke-virtual {v0}, Landroid/widget/Toast;->show()V
 
     .line 345
-    iget-object v0, p0, Lcom/android/settings/wifi/openwifi/l;->mContext:Landroid/content/Context;
+    iget-object v0, p0, Lcom/android/settings_ext/wifi/openwifi/l;->mContext:Landroid/content/Context;
 
     const v4, 0x7f090ce7
 
     new-array v5, v1, [Ljava/lang/Object;
 
-    iget-object v6, p0, Lcom/android/settings/wifi/openwifi/l;->ayy:Ljava/lang/String;
+    iget-object v6, p0, Lcom/android/settings_ext/wifi/openwifi/l;->ayy:Ljava/lang/String;
 
     aput-object v6, v5, v3
 
@@ -1332,50 +1332,50 @@
 
     move-result-object v0
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/wifi/openwifi/l;->bU(Ljava/lang/String;)Landroid/app/Notification;
+    invoke-virtual {p0, v0}, Lcom/android/settings_ext/wifi/openwifi/l;->bU(Ljava/lang/String;)Landroid/app/Notification;
 
     move-result-object v0
 
-    sput-object v0, Lcom/android/settings/wifi/openwifi/l;->ayC:Landroid/app/Notification;
+    sput-object v0, Lcom/android/settings_ext/wifi/openwifi/l;->ayC:Landroid/app/Notification;
 
     .line 346
-    iget-object v0, p0, Lcom/android/settings/wifi/openwifi/l;->ayy:Ljava/lang/String;
+    iget-object v0, p0, Lcom/android/settings_ext/wifi/openwifi/l;->ayy:Ljava/lang/String;
 
-    sput-object v0, Lcom/android/settings/wifi/openwifi/l;->ayB:Ljava/lang/String;
+    sput-object v0, Lcom/android/settings_ext/wifi/openwifi/l;->ayB:Ljava/lang/String;
 
     .line 348
     invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
 
     move-result-wide v4
 
-    sput-wide v4, Lcom/android/settings/wifi/openwifi/l;->ayA:J
+    sput-wide v4, Lcom/android/settings_ext/wifi/openwifi/l;->ayA:J
 
     move v0, v1
 
     .line 354
     :goto_0
-    invoke-direct {p0, p1, v0}, Lcom/android/settings/wifi/openwifi/l;->b(Ljava/util/ArrayList;I)V
+    invoke-direct {p0, p1, v0}, Lcom/android/settings_ext/wifi/openwifi/l;->b(Ljava/util/ArrayList;I)V
 
     .line 356
     if-ne v0, v2, :cond_0
 
     .line 357
-    iget-object v0, p0, Lcom/android/settings/wifi/openwifi/l;->mContext:Landroid/content/Context;
+    iget-object v0, p0, Lcom/android/settings_ext/wifi/openwifi/l;->mContext:Landroid/content/Context;
 
-    iget-object v2, p0, Lcom/android/settings/wifi/openwifi/l;->ayz:Landroid/net/Uri;
+    iget-object v2, p0, Lcom/android/settings_ext/wifi/openwifi/l;->ayz:Landroid/net/Uri;
 
-    iget-object v4, p0, Lcom/android/settings/wifi/openwifi/l;->ayy:Ljava/lang/String;
+    iget-object v4, p0, Lcom/android/settings_ext/wifi/openwifi/l;->ayy:Ljava/lang/String;
 
-    iget-object v5, p0, Lcom/android/settings/wifi/openwifi/l;->ayf:Ljava/lang/String;
+    iget-object v5, p0, Lcom/android/settings_ext/wifi/openwifi/l;->ayf:Ljava/lang/String;
 
-    invoke-static {v0, v2, v4, v5}, Lcom/android/settings/wifi/openwifi/l;->a(Landroid/content/Context;Landroid/net/Uri;Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v2, v4, v5}, Lcom/android/settings_ext/wifi/openwifi/l;->a(Landroid/content/Context;Landroid/net/Uri;Ljava/lang/String;Ljava/lang/String;)V
 
     .line 360
     :cond_0
-    invoke-direct {p0}, Lcom/android/settings/wifi/openwifi/l;->wg()V
+    invoke-direct {p0}, Lcom/android/settings_ext/wifi/openwifi/l;->wg()V
 
     .line 361
-    iget v0, p0, Lcom/android/settings/wifi/openwifi/l;->mStatus:I
+    iget v0, p0, Lcom/android/settings_ext/wifi/openwifi/l;->mStatus:I
 
     if-ne v0, v1, :cond_2
 
@@ -1384,26 +1384,26 @@
 
     .line 349
     :cond_1
-    invoke-virtual {p0}, Lcom/android/settings/wifi/openwifi/l;->wc()Z
+    invoke-virtual {p0}, Lcom/android/settings_ext/wifi/openwifi/l;->wc()Z
 
     move-result v0
 
     if-eqz v0, :cond_3
 
     .line 350
-    iget-object v0, p0, Lcom/android/settings/wifi/openwifi/l;->mContext:Landroid/content/Context;
+    iget-object v0, p0, Lcom/android/settings_ext/wifi/openwifi/l;->mContext:Landroid/content/Context;
 
     invoke-virtual {v0, v8}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
     move-result-object v0
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/wifi/openwifi/l;->bU(Ljava/lang/String;)Landroid/app/Notification;
+    invoke-virtual {p0, v0}, Lcom/android/settings_ext/wifi/openwifi/l;->bU(Ljava/lang/String;)Landroid/app/Notification;
 
     .line 351
     const/4 v0, -0x1
 
     .line 352
-    iget-object v4, p0, Lcom/android/settings/wifi/openwifi/l;->mContext:Landroid/content/Context;
+    iget-object v4, p0, Lcom/android/settings_ext/wifi/openwifi/l;->mContext:Landroid/content/Context;
 
     invoke-static {v4, v8, v3}, Landroid/widget/Toast;->makeText(Landroid/content/Context;II)Landroid/widget/Toast;
 
@@ -1430,7 +1430,7 @@
 
     .prologue
     .line 472
-    iget v0, p0, Lcom/android/settings/wifi/openwifi/l;->mStatus:I
+    iget v0, p0, Lcom/android/settings_ext/wifi/openwifi/l;->mStatus:I
 
     return v0
 .end method
@@ -1445,21 +1445,21 @@
     .line 150
     new-instance v0, Landroid/content/Intent;
 
-    iget-object v1, p0, Lcom/android/settings/wifi/openwifi/l;->mContext:Landroid/content/Context;
+    iget-object v1, p0, Lcom/android/settings_ext/wifi/openwifi/l;->mContext:Landroid/content/Context;
 
-    const-class v2, Lcom/android/settings/wifi/openwifi/FreeWifiLogin;
+    const-class v2, Lcom/android/settings_ext/wifi/openwifi/FreeWifiLogin;
 
     invoke-direct {v0, v1, v2}, Landroid/content/Intent;-><init>(Landroid/content/Context;Ljava/lang/Class;)V
 
     .line 151
     const-string v1, "ssid"
 
-    iget-object v2, p0, Lcom/android/settings/wifi/openwifi/l;->ayy:Ljava/lang/String;
+    iget-object v2, p0, Lcom/android/settings_ext/wifi/openwifi/l;->ayy:Ljava/lang/String;
 
     invoke-virtual {v0, v1, v2}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
 
     .line 152
-    iget-object v1, p0, Lcom/android/settings/wifi/openwifi/l;->mContext:Landroid/content/Context;
+    iget-object v1, p0, Lcom/android/settings_ext/wifi/openwifi/l;->mContext:Landroid/content/Context;
 
     const/4 v2, 0x0
 
@@ -1472,7 +1472,7 @@
     .line 155
     new-instance v1, Landroid/app/Notification$Builder;
 
-    iget-object v2, p0, Lcom/android/settings/wifi/openwifi/l;->mContext:Landroid/content/Context;
+    iget-object v2, p0, Lcom/android/settings_ext/wifi/openwifi/l;->mContext:Landroid/content/Context;
 
     invoke-virtual {v2}, Landroid/content/Context;->getApplicationContext()Landroid/content/Context;
 
@@ -1493,13 +1493,13 @@
     invoke-virtual {v1, v0}, Landroid/app/Notification$Builder;->setContentIntent(Landroid/app/PendingIntent;)Landroid/app/Notification$Builder;
 
     .line 161
-    iget-object v0, p0, Lcom/android/settings/wifi/openwifi/l;->mContext:Landroid/content/Context;
+    iget-object v0, p0, Lcom/android/settings_ext/wifi/openwifi/l;->mContext:Landroid/content/Context;
 
     const/4 v2, 0x1
 
     const v3, 0x7f090ce7
 
-    invoke-static {v0, v1, v2, v3}, Lcom/android/settings/wifi/openwifi/l;->a(Landroid/content/Context;Landroid/app/Notification$Builder;ZI)V
+    invoke-static {v0, v1, v2, v3}, Lcom/android/settings_ext/wifi/openwifi/l;->a(Landroid/content/Context;Landroid/app/Notification$Builder;ZI)V
 
     .line 162
     invoke-virtual {v1}, Landroid/app/Notification$Builder;->build()Landroid/app/Notification;
@@ -1519,7 +1519,7 @@
     const/4 v0, 0x1
 
     .line 79
-    iget v1, p0, Lcom/android/settings/wifi/openwifi/l;->mStatus:I
+    iget v1, p0, Lcom/android/settings_ext/wifi/openwifi/l;->mStatus:I
 
     if-ne v1, v0, :cond_0
 
@@ -1537,7 +1537,7 @@
 
     .prologue
     .line 83
-    iget v0, p0, Lcom/android/settings/wifi/openwifi/l;->mStatus:I
+    iget v0, p0, Lcom/android/settings_ext/wifi/openwifi/l;->mStatus:I
 
     const/4 v1, -0x1
 
@@ -1575,7 +1575,7 @@
 
     .prologue
     .line 266
-    iget-object v0, p0, Lcom/android/settings/wifi/openwifi/l;->ayz:Landroid/net/Uri;
+    iget-object v0, p0, Lcom/android/settings_ext/wifi/openwifi/l;->ayz:Landroid/net/Uri;
 
     return-object v0
 .end method
@@ -1585,7 +1585,7 @@
 
     .prologue
     .line 374
-    iget v0, p0, Lcom/android/settings/wifi/openwifi/l;->mStatus:I
+    iget v0, p0, Lcom/android/settings_ext/wifi/openwifi/l;->mStatus:I
 
     if-nez v0, :cond_0
 
@@ -1605,7 +1605,7 @@
 
     .prologue
     .line 463
-    iget-object v0, p0, Lcom/android/settings/wifi/openwifi/l;->mContext:Landroid/content/Context;
+    iget-object v0, p0, Lcom/android/settings_ext/wifi/openwifi/l;->mContext:Landroid/content/Context;
 
     const-string v1, "wifi"
 
@@ -1624,13 +1624,13 @@
     if-eqz v0, :cond_0
 
     .line 466
-    iget-object v1, p0, Lcom/android/settings/wifi/openwifi/l;->ayy:Ljava/lang/String;
+    iget-object v1, p0, Lcom/android/settings_ext/wifi/openwifi/l;->ayy:Ljava/lang/String;
 
     invoke-virtual {v0}, Landroid/net/wifi/WifiInfo;->getSSID()Ljava/lang/String;
 
     move-result-object v0
 
-    invoke-static {v0}, Lcom/android/settings/wifi/d;->removeDoubleQuotes(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v0}, Lcom/android/settings_ext/wifi/d;->removeDoubleQuotes(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 

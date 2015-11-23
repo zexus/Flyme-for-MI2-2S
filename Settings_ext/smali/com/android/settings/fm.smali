@@ -1,4 +1,4 @@
-.class final Lcom/android/settings/fm;
+.class final Lcom/android/settings_ext/fm;
 .super Ljava/lang/Object;
 .source "PointerSpeedPreference.java"
 
@@ -19,24 +19,24 @@
 
 
 # virtual methods
-.method public U(I)[Lcom/android/settings/PointerSpeedPreference$SavedState;
+.method public U(I)[Lcom/android/settings_ext/PointerSpeedPreference$SavedState;
     .locals 1
 
     .prologue
     .line 181
-    new-array v0, p1, [Lcom/android/settings/PointerSpeedPreference$SavedState;
+    new-array v0, p1, [Lcom/android/settings_ext/PointerSpeedPreference$SavedState;
 
     return-object v0
 .end method
 
-.method public c(Landroid/os/Parcel;)Lcom/android/settings/PointerSpeedPreference$SavedState;
+.method public c(Landroid/os/Parcel;)Lcom/android/settings_ext/PointerSpeedPreference$SavedState;
     .locals 1
 
     .prologue
     .line 177
-    new-instance v0, Lcom/android/settings/PointerSpeedPreference$SavedState;
+    new-instance v0, Lcom/android/settings_ext/PointerSpeedPreference$SavedState;
 
-    invoke-direct {v0, p1}, Lcom/android/settings/PointerSpeedPreference$SavedState;-><init>(Landroid/os/Parcel;)V
+    invoke-direct {v0, p1}, Lcom/android/settings_ext/PointerSpeedPreference$SavedState;-><init>(Landroid/os/Parcel;)V
 
     return-object v0
 .end method
@@ -46,7 +46,7 @@
 
     .prologue
     .line 174
-    invoke-virtual {p0, p1}, Lcom/android/settings/fm;->c(Landroid/os/Parcel;)Lcom/android/settings/PointerSpeedPreference$SavedState;
+    invoke-virtual {p0, p1}, Lcom/android/settings_ext/fm;->c(Landroid/os/Parcel;)Lcom/android/settings_ext/PointerSpeedPreference$SavedState;
 
     move-result-object v0
 
@@ -58,7 +58,7 @@
 
     .prologue
     .line 174
-    invoke-virtual {p0, p1}, Lcom/android/settings/fm;->U(I)[Lcom/android/settings/PointerSpeedPreference$SavedState;
+    invoke-virtual {p0, p1}, Lcom/android/settings_ext/fm;->U(I)[Lcom/android/settings_ext/PointerSpeedPreference$SavedState;
 
     move-result-object v0
 

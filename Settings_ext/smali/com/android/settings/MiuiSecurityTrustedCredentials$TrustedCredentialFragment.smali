@@ -1,5 +1,5 @@
-.class public Lcom/android/settings/MiuiSecurityTrustedCredentials$TrustedCredentialFragment;
-.super Lcom/android/settings/BaseListFragment;
+.class public Lcom/android/settings_ext/MiuiSecurityTrustedCredentials$TrustedCredentialFragment;
+.super Lcom/android/settings_ext/BaseListFragment;
 .source "MiuiSecurityTrustedCredentials.java"
 
 
@@ -10,7 +10,7 @@
 
 .field private rH:Z
 
-.field private rq:Lcom/android/settings/MiuiSecurityTrustedCredentials$Tab;
+.field private rq:Lcom/android/settings_ext/MiuiSecurityTrustedCredentials$Tab;
 
 
 # direct methods
@@ -19,47 +19,47 @@
 
     .prologue
     .line 391
-    invoke-direct {p0}, Lcom/android/settings/BaseListFragment;-><init>()V
+    invoke-direct {p0}, Lcom/android/settings_ext/BaseListFragment;-><init>()V
 
     return-void
 .end method
 
-.method static synthetic a(Lcom/android/settings/MiuiSecurityTrustedCredentials$TrustedCredentialFragment;)Landroid/os/UserManager;
+.method static synthetic a(Lcom/android/settings_ext/MiuiSecurityTrustedCredentials$TrustedCredentialFragment;)Landroid/os/UserManager;
     .locals 1
 
     .prologue
     .line 391
-    iget-object v0, p0, Lcom/android/settings/MiuiSecurityTrustedCredentials$TrustedCredentialFragment;->mUserManager:Landroid/os/UserManager;
+    iget-object v0, p0, Lcom/android/settings_ext/MiuiSecurityTrustedCredentials$TrustedCredentialFragment;->mUserManager:Landroid/os/UserManager;
 
     return-object v0
 .end method
 
-.method static synthetic a(Lcom/android/settings/MiuiSecurityTrustedCredentials$TrustedCredentialFragment;Lcom/android/settings/eu;)V
+.method static synthetic a(Lcom/android/settings_ext/MiuiSecurityTrustedCredentials$TrustedCredentialFragment;Lcom/android/settings_ext/eu;)V
     .locals 0
 
     .prologue
     .line 391
-    invoke-direct {p0, p1}, Lcom/android/settings/MiuiSecurityTrustedCredentials$TrustedCredentialFragment;->l(Lcom/android/settings/eu;)V
+    invoke-direct {p0, p1}, Lcom/android/settings_ext/MiuiSecurityTrustedCredentials$TrustedCredentialFragment;->l(Lcom/android/settings_ext/eu;)V
 
     return-void
 .end method
 
-.method static synthetic b(Lcom/android/settings/MiuiSecurityTrustedCredentials$TrustedCredentialFragment;)Z
+.method static synthetic b(Lcom/android/settings_ext/MiuiSecurityTrustedCredentials$TrustedCredentialFragment;)Z
     .locals 1
 
     .prologue
     .line 391
-    iget-boolean v0, p0, Lcom/android/settings/MiuiSecurityTrustedCredentials$TrustedCredentialFragment;->rG:Z
+    iget-boolean v0, p0, Lcom/android/settings_ext/MiuiSecurityTrustedCredentials$TrustedCredentialFragment;->rG:Z
 
     return v0
 .end method
 
-.method static synthetic c(Lcom/android/settings/MiuiSecurityTrustedCredentials$TrustedCredentialFragment;)V
+.method static synthetic c(Lcom/android/settings_ext/MiuiSecurityTrustedCredentials$TrustedCredentialFragment;)V
     .locals 0
 
     .prologue
     .line 391
-    invoke-direct {p0}, Lcom/android/settings/MiuiSecurityTrustedCredentials$TrustedCredentialFragment;->fq()V
+    invoke-direct {p0}, Lcom/android/settings_ext/MiuiSecurityTrustedCredentials$TrustedCredentialFragment;->fq()V
 
     return-void
 .end method
@@ -69,12 +69,12 @@
 
     .prologue
     .line 484
-    iget-boolean v0, p0, Lcom/android/settings/MiuiSecurityTrustedCredentials$TrustedCredentialFragment;->rG:Z
+    iget-boolean v0, p0, Lcom/android/settings_ext/MiuiSecurityTrustedCredentials$TrustedCredentialFragment;->rG:Z
 
     if-nez v0, :cond_0
 
     .line 485
-    invoke-virtual {p0}, Lcom/android/settings/MiuiSecurityTrustedCredentials$TrustedCredentialFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/MiuiSecurityTrustedCredentials$TrustedCredentialFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
@@ -83,7 +83,7 @@
     move-result-object v0
 
     .line 486
-    iget-boolean v1, p0, Lcom/android/settings/MiuiSecurityTrustedCredentials$TrustedCredentialFragment;->rH:Z
+    iget-boolean v1, p0, Lcom/android/settings_ext/MiuiSecurityTrustedCredentials$TrustedCredentialFragment;->rH:Z
 
     if-nez v1, :cond_0
 
@@ -104,33 +104,33 @@
     .line 490
     const/16 v1, 0x3015
 
-    invoke-virtual {p0, v0, v1}, Lcom/android/settings/MiuiSecurityTrustedCredentials$TrustedCredentialFragment;->startActivityForResult(Landroid/content/Intent;I)V
+    invoke-virtual {p0, v0, v1}, Lcom/android/settings_ext/MiuiSecurityTrustedCredentials$TrustedCredentialFragment;->startActivityForResult(Landroid/content/Intent;I)V
 
     .line 491
     const/4 v0, 0x1
 
-    iput-boolean v0, p0, Lcom/android/settings/MiuiSecurityTrustedCredentials$TrustedCredentialFragment;->rH:Z
+    iput-boolean v0, p0, Lcom/android/settings_ext/MiuiSecurityTrustedCredentials$TrustedCredentialFragment;->rH:Z
 
     .line 495
     :cond_0
     const/4 v0, 0x0
 
-    iput-boolean v0, p0, Lcom/android/settings/MiuiSecurityTrustedCredentials$TrustedCredentialFragment;->rG:Z
+    iput-boolean v0, p0, Lcom/android/settings_ext/MiuiSecurityTrustedCredentials$TrustedCredentialFragment;->rG:Z
 
     .line 496
     return-void
 .end method
 
-.method private l(Lcom/android/settings/eu;)V
+.method private l(Lcom/android/settings_ext/eu;)V
     .locals 3
 
     .prologue
     .line 437
-    invoke-static {p1}, Lcom/android/settings/eu;->i(Lcom/android/settings/eu;)Landroid/net/http/SslCertificate;
+    invoke-static {p1}, Lcom/android/settings_ext/eu;->i(Lcom/android/settings_ext/eu;)Landroid/net/http/SslCertificate;
 
     move-result-object v0
 
-    invoke-virtual {p0}, Lcom/android/settings/MiuiSecurityTrustedCredentials$TrustedCredentialFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/MiuiSecurityTrustedCredentials$TrustedCredentialFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v1
 
@@ -141,7 +141,7 @@
     .line 438
     new-instance v1, Lmiui/app/AlertDialog$Builder;
 
-    invoke-virtual {p0}, Lcom/android/settings/MiuiSecurityTrustedCredentials$TrustedCredentialFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/MiuiSecurityTrustedCredentials$TrustedCredentialFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v2
 
@@ -158,24 +158,24 @@
     .line 441
     const v0, 0x104000a
 
-    new-instance v2, Lcom/android/settings/ey;
+    new-instance v2, Lcom/android/settings_ext/ey;
 
-    invoke-direct {v2, p0}, Lcom/android/settings/ey;-><init>(Lcom/android/settings/MiuiSecurityTrustedCredentials$TrustedCredentialFragment;)V
+    invoke-direct {v2, p0}, Lcom/android/settings_ext/ey;-><init>(Lcom/android/settings_ext/MiuiSecurityTrustedCredentials$TrustedCredentialFragment;)V
 
     invoke-virtual {v1, v0, v2}, Lmiui/app/AlertDialog$Builder;->setPositiveButton(ILandroid/content/DialogInterface$OnClickListener;)Lmiui/app/AlertDialog$Builder;
 
     .line 448
-    invoke-static {p1}, Lcom/android/settings/eu;->c(Lcom/android/settings/eu;)Lcom/android/settings/MiuiSecurityTrustedCredentials$Tab;
+    invoke-static {p1}, Lcom/android/settings_ext/eu;->c(Lcom/android/settings_ext/eu;)Lcom/android/settings_ext/MiuiSecurityTrustedCredentials$Tab;
 
     move-result-object v0
 
-    invoke-static {v0, p1}, Lcom/android/settings/MiuiSecurityTrustedCredentials$Tab;->a(Lcom/android/settings/MiuiSecurityTrustedCredentials$Tab;Lcom/android/settings/eu;)I
+    invoke-static {v0, p1}, Lcom/android/settings_ext/MiuiSecurityTrustedCredentials$Tab;->a(Lcom/android/settings_ext/MiuiSecurityTrustedCredentials$Tab;Lcom/android/settings_ext/eu;)I
 
     move-result v0
 
-    new-instance v2, Lcom/android/settings/ez;
+    new-instance v2, Lcom/android/settings_ext/ez;
 
-    invoke-direct {v2, p0, p1}, Lcom/android/settings/ez;-><init>(Lcom/android/settings/MiuiSecurityTrustedCredentials$TrustedCredentialFragment;Lcom/android/settings/eu;)V
+    invoke-direct {v2, p0, p1}, Lcom/android/settings_ext/ez;-><init>(Lcom/android/settings_ext/MiuiSecurityTrustedCredentials$TrustedCredentialFragment;Lcom/android/settings_ext/eu;)V
 
     invoke-virtual {v1, v0, v2}, Lmiui/app/AlertDialog$Builder;->setNegativeButton(ILandroid/content/DialogInterface$OnClickListener;)Lmiui/app/AlertDialog$Builder;
 
@@ -198,18 +198,18 @@
 
     .prologue
     .line 418
-    invoke-super {p0, p1}, Lcom/android/settings/BaseListFragment;->onActivityCreated(Landroid/os/Bundle;)V
+    invoke-super {p0, p1}, Lcom/android/settings_ext/BaseListFragment;->onActivityCreated(Landroid/os/Bundle;)V
 
     .line 421
-    new-instance v0, Lcom/android/settings/ev;
+    new-instance v0, Lcom/android/settings_ext/ev;
 
-    invoke-virtual {p0}, Lcom/android/settings/MiuiSecurityTrustedCredentials$TrustedCredentialFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/MiuiSecurityTrustedCredentials$TrustedCredentialFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v1
 
-    iget-object v2, p0, Lcom/android/settings/MiuiSecurityTrustedCredentials$TrustedCredentialFragment;->rq:Lcom/android/settings/MiuiSecurityTrustedCredentials$Tab;
+    iget-object v2, p0, Lcom/android/settings_ext/MiuiSecurityTrustedCredentials$TrustedCredentialFragment;->rq:Lcom/android/settings_ext/MiuiSecurityTrustedCredentials$Tab;
 
-    invoke-virtual {p0}, Lcom/android/settings/MiuiSecurityTrustedCredentials$TrustedCredentialFragment;->getListView()Landroid/widget/ListView;
+    invoke-virtual {p0}, Lcom/android/settings_ext/MiuiSecurityTrustedCredentials$TrustedCredentialFragment;->getListView()Landroid/widget/ListView;
 
     move-result-object v3
 
@@ -219,19 +219,19 @@
 
     const/4 v5, 0x0
 
-    invoke-direct/range {v0 .. v5}, Lcom/android/settings/ev;-><init>(Landroid/app/Activity;Lcom/android/settings/MiuiSecurityTrustedCredentials$Tab;Landroid/view/View;Lcom/android/org/conscrypt/TrustedCertificateStore;Lcom/android/settings/es;)V
+    invoke-direct/range {v0 .. v5}, Lcom/android/settings_ext/ev;-><init>(Landroid/app/Activity;Lcom/android/settings_ext/MiuiSecurityTrustedCredentials$Tab;Landroid/view/View;Lcom/android/org/conscrypt/TrustedCertificateStore;Lcom/android/settings_ext/es;)V
 
     .line 423
-    invoke-virtual {p0, v0}, Lcom/android/settings/MiuiSecurityTrustedCredentials$TrustedCredentialFragment;->setListAdapter(Landroid/widget/ListAdapter;)V
+    invoke-virtual {p0, v0}, Lcom/android/settings_ext/MiuiSecurityTrustedCredentials$TrustedCredentialFragment;->setListAdapter(Landroid/widget/ListAdapter;)V
 
     .line 424
-    invoke-virtual {p0}, Lcom/android/settings/MiuiSecurityTrustedCredentials$TrustedCredentialFragment;->getListView()Landroid/widget/ListView;
+    invoke-virtual {p0}, Lcom/android/settings_ext/MiuiSecurityTrustedCredentials$TrustedCredentialFragment;->getListView()Landroid/widget/ListView;
 
     move-result-object v1
 
-    new-instance v2, Lcom/android/settings/ex;
+    new-instance v2, Lcom/android/settings_ext/ex;
 
-    invoke-direct {v2, p0, v0}, Lcom/android/settings/ex;-><init>(Lcom/android/settings/MiuiSecurityTrustedCredentials$TrustedCredentialFragment;Lcom/android/settings/ev;)V
+    invoke-direct {v2, p0, v0}, Lcom/android/settings_ext/ex;-><init>(Lcom/android/settings_ext/MiuiSecurityTrustedCredentials$TrustedCredentialFragment;Lcom/android/settings_ext/ev;)V
 
     invoke-virtual {v1, v2}, Landroid/widget/ListView;->setOnItemClickListener(Landroid/widget/AdapterView$OnItemClickListener;)V
 
@@ -244,15 +244,15 @@
 
     .prologue
     .line 398
-    invoke-super {p0, p1}, Lcom/android/settings/BaseListFragment;->onCreate(Landroid/os/Bundle;)V
+    invoke-super {p0, p1}, Lcom/android/settings_ext/BaseListFragment;->onCreate(Landroid/os/Bundle;)V
 
     .line 400
     sget v0, Lmiui/R$style;->Theme_Light_Settings_NoTitle:I
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/MiuiSecurityTrustedCredentials$TrustedCredentialFragment;->setThemeRes(I)V
+    invoke-virtual {p0, v0}, Lcom/android/settings_ext/MiuiSecurityTrustedCredentials$TrustedCredentialFragment;->setThemeRes(I)V
 
     .line 401
-    invoke-virtual {p0}, Lcom/android/settings/MiuiSecurityTrustedCredentials$TrustedCredentialFragment;->getArguments()Landroid/os/Bundle;
+    invoke-virtual {p0}, Lcom/android/settings_ext/MiuiSecurityTrustedCredentials$TrustedCredentialFragment;->getArguments()Landroid/os/Bundle;
 
     move-result-object v0
 
@@ -274,13 +274,13 @@
     if-eqz v0, :cond_0
 
     .line 403
-    sget-object v0, Lcom/android/settings/MiuiSecurityTrustedCredentials$Tab;->rz:Lcom/android/settings/MiuiSecurityTrustedCredentials$Tab;
+    sget-object v0, Lcom/android/settings_ext/MiuiSecurityTrustedCredentials$Tab;->rz:Lcom/android/settings_ext/MiuiSecurityTrustedCredentials$Tab;
 
-    iput-object v0, p0, Lcom/android/settings/MiuiSecurityTrustedCredentials$TrustedCredentialFragment;->rq:Lcom/android/settings/MiuiSecurityTrustedCredentials$Tab;
+    iput-object v0, p0, Lcom/android/settings_ext/MiuiSecurityTrustedCredentials$TrustedCredentialFragment;->rq:Lcom/android/settings_ext/MiuiSecurityTrustedCredentials$Tab;
 
     .line 407
     :goto_0
-    invoke-virtual {p0}, Lcom/android/settings/MiuiSecurityTrustedCredentials$TrustedCredentialFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/MiuiSecurityTrustedCredentials$TrustedCredentialFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
@@ -292,16 +292,16 @@
 
     check-cast v0, Landroid/os/UserManager;
 
-    iput-object v0, p0, Lcom/android/settings/MiuiSecurityTrustedCredentials$TrustedCredentialFragment;->mUserManager:Landroid/os/UserManager;
+    iput-object v0, p0, Lcom/android/settings_ext/MiuiSecurityTrustedCredentials$TrustedCredentialFragment;->mUserManager:Landroid/os/UserManager;
 
     .line 408
     return-void
 
     .line 405
     :cond_0
-    sget-object v0, Lcom/android/settings/MiuiSecurityTrustedCredentials$Tab;->ry:Lcom/android/settings/MiuiSecurityTrustedCredentials$Tab;
+    sget-object v0, Lcom/android/settings_ext/MiuiSecurityTrustedCredentials$Tab;->ry:Lcom/android/settings_ext/MiuiSecurityTrustedCredentials$Tab;
 
-    iput-object v0, p0, Lcom/android/settings/MiuiSecurityTrustedCredentials$TrustedCredentialFragment;->rq:Lcom/android/settings/MiuiSecurityTrustedCredentials$Tab;
+    iput-object v0, p0, Lcom/android/settings_ext/MiuiSecurityTrustedCredentials$TrustedCredentialFragment;->rq:Lcom/android/settings_ext/MiuiSecurityTrustedCredentials$Tab;
 
     goto :goto_0
 .end method
@@ -311,7 +311,7 @@
 
     .prologue
     .line 412
-    invoke-super {p0, p1, p2, p3}, Lcom/android/settings/BaseListFragment;->onInflateView(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;
+    invoke-super {p0, p1, p2, p3}, Lcom/android/settings_ext/BaseListFragment;->onInflateView(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;
 
     move-result-object v0
 

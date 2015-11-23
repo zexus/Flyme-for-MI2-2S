@@ -1,4 +1,4 @@
-.class Lcom/android/settings/deviceinfo/MsdInstallActivity$1;
+.class Lcom/android/settings_ext/deviceinfo/MsdInstallActivity$1;
 .super Ljava/lang/Object;
 .source "MsdInstallActivity.java"
 
@@ -7,16 +7,16 @@
 
 
 # instance fields
-.field final synthetic SH:Lcom/android/settings/deviceinfo/MsdInstallActivity;
+.field final synthetic SH:Lcom/android/settings_ext/deviceinfo/MsdInstallActivity;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/deviceinfo/MsdInstallActivity;)V
+.method constructor <init>(Lcom/android/settings_ext/deviceinfo/MsdInstallActivity;)V
     .locals 0
 
     .prologue
     .line 130
-    iput-object p1, p0, Lcom/android/settings/deviceinfo/MsdInstallActivity$1;->SH:Lcom/android/settings/deviceinfo/MsdInstallActivity;
+    iput-object p1, p0, Lcom/android/settings_ext/deviceinfo/MsdInstallActivity$1;->SH:Lcom/android/settings_ext/deviceinfo/MsdInstallActivity;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -30,15 +30,15 @@
 
     .prologue
     .line 134
-    iget-object v0, p0, Lcom/android/settings/deviceinfo/MsdInstallActivity$1;->SH:Lcom/android/settings/deviceinfo/MsdInstallActivity;
+    iget-object v0, p0, Lcom/android/settings_ext/deviceinfo/MsdInstallActivity$1;->SH:Lcom/android/settings_ext/deviceinfo/MsdInstallActivity;
 
-    invoke-static {v0}, Lcom/android/settings/deviceinfo/MsdInstallActivity;->b(Lcom/android/settings/deviceinfo/MsdInstallActivity;)Landroid/widget/Button;
+    invoke-static {v0}, Lcom/android/settings_ext/deviceinfo/MsdInstallActivity;->b(Lcom/android/settings_ext/deviceinfo/MsdInstallActivity;)Landroid/widget/Button;
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/android/settings/deviceinfo/MsdInstallActivity$1;->SH:Lcom/android/settings/deviceinfo/MsdInstallActivity;
+    iget-object v1, p0, Lcom/android/settings_ext/deviceinfo/MsdInstallActivity$1;->SH:Lcom/android/settings_ext/deviceinfo/MsdInstallActivity;
 
-    invoke-static {v1}, Lcom/android/settings/deviceinfo/MsdInstallActivity;->a(Lcom/android/settings/deviceinfo/MsdInstallActivity;)Landroid/widget/CheckBox;
+    invoke-static {v1}, Lcom/android/settings_ext/deviceinfo/MsdInstallActivity;->a(Lcom/android/settings_ext/deviceinfo/MsdInstallActivity;)Landroid/widget/CheckBox;
 
     move-result-object v1
 

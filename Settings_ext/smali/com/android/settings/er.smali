@@ -1,4 +1,4 @@
-.class Lcom/android/settings/er;
+.class Lcom/android/settings_ext/er;
 .super Ljava/lang/Object;
 .source "MiuiSecuritySettings.java"
 
@@ -9,18 +9,18 @@
 # instance fields
 .field final synthetic rk:Landroid/preference/CheckBoxPreference;
 
-.field final synthetic rl:Lcom/android/settings/MiuiSecuritySettings;
+.field final synthetic rl:Lcom/android/settings_ext/MiuiSecuritySettings;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/MiuiSecuritySettings;Landroid/preference/CheckBoxPreference;)V
+.method constructor <init>(Lcom/android/settings_ext/MiuiSecuritySettings;Landroid/preference/CheckBoxPreference;)V
     .locals 0
 
     .prologue
     .line 165
-    iput-object p1, p0, Lcom/android/settings/er;->rl:Lcom/android/settings/MiuiSecuritySettings;
+    iput-object p1, p0, Lcom/android/settings_ext/er;->rl:Lcom/android/settings_ext/MiuiSecuritySettings;
 
-    iput-object p2, p0, Lcom/android/settings/er;->rk:Landroid/preference/CheckBoxPreference;
+    iput-object p2, p0, Lcom/android/settings_ext/er;->rk:Landroid/preference/CheckBoxPreference;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -38,7 +38,7 @@
     .line 168
     const-string v2, "persist.sys.smartcover_mode"
 
-    iget-object v0, p0, Lcom/android/settings/er;->rk:Landroid/preference/CheckBoxPreference;
+    iget-object v0, p0, Lcom/android/settings_ext/er;->rk:Landroid/preference/CheckBoxPreference;
 
     invoke-virtual {v0}, Landroid/preference/CheckBoxPreference;->isChecked()Z
 

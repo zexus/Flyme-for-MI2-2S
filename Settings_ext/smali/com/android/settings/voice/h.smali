@@ -1,4 +1,4 @@
-.class Lcom/android/settings/voice/h;
+.class Lcom/android/settings_ext/voice/h;
 .super Ljava/lang/Object;
 .source "VoiceInputPreference.java"
 
@@ -7,16 +7,16 @@
 
 
 # instance fields
-.field final synthetic anr:Lcom/android/settings/voice/e;
+.field final synthetic anr:Lcom/android/settings_ext/voice/e;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/voice/e;)V
+.method constructor <init>(Lcom/android/settings_ext/voice/e;)V
     .locals 0
 
     .prologue
     .line 118
-    iput-object p1, p0, Lcom/android/settings/voice/h;->anr:Lcom/android/settings/voice/e;
+    iput-object p1, p0, Lcom/android/settings_ext/voice/h;->anr:Lcom/android/settings_ext/voice/e;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -37,18 +37,18 @@
     invoke-direct {v0, v1}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
 
     .line 122
-    iget-object v1, p0, Lcom/android/settings/voice/h;->anr:Lcom/android/settings/voice/e;
+    iget-object v1, p0, Lcom/android/settings_ext/voice/h;->anr:Lcom/android/settings_ext/voice/e;
 
-    invoke-static {v1}, Lcom/android/settings/voice/e;->a(Lcom/android/settings/voice/e;)Landroid/content/ComponentName;
+    invoke-static {v1}, Lcom/android/settings_ext/voice/e;->a(Lcom/android/settings_ext/voice/e;)Landroid/content/ComponentName;
 
     move-result-object v1
 
     invoke-virtual {v0, v1}, Landroid/content/Intent;->setComponent(Landroid/content/ComponentName;)Landroid/content/Intent;
 
     .line 123
-    iget-object v1, p0, Lcom/android/settings/voice/h;->anr:Lcom/android/settings/voice/e;
+    iget-object v1, p0, Lcom/android/settings_ext/voice/h;->anr:Lcom/android/settings_ext/voice/e;
 
-    invoke-virtual {v1}, Lcom/android/settings/voice/e;->getContext()Landroid/content/Context;
+    invoke-virtual {v1}, Lcom/android/settings_ext/voice/e;->getContext()Landroid/content/Context;
 
     move-result-object v1
 

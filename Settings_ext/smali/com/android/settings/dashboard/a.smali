@@ -1,4 +1,4 @@
-.class final Lcom/android/settings/dashboard/a;
+.class final Lcom/android/settings_ext/dashboard/a;
 .super Ljava/lang/Object;
 .source "DashboardCategory.java"
 
@@ -19,12 +19,12 @@
 
 
 # virtual methods
-.method public bh(I)[Lcom/android/settings/dashboard/DashboardCategory;
+.method public bh(I)[Lcom/android/settings_ext/dashboard/DashboardCategory;
     .locals 1
 
     .prologue
     .line 142
-    new-array v0, p1, [Lcom/android/settings/dashboard/DashboardCategory;
+    new-array v0, p1, [Lcom/android/settings_ext/dashboard/DashboardCategory;
 
     return-object v0
 .end method
@@ -34,21 +34,21 @@
 
     .prologue
     .line 136
-    invoke-virtual {p0, p1}, Lcom/android/settings/dashboard/a;->j(Landroid/os/Parcel;)Lcom/android/settings/dashboard/DashboardCategory;
+    invoke-virtual {p0, p1}, Lcom/android/settings_ext/dashboard/a;->j(Landroid/os/Parcel;)Lcom/android/settings_ext/dashboard/DashboardCategory;
 
     move-result-object v0
 
     return-object v0
 .end method
 
-.method public j(Landroid/os/Parcel;)Lcom/android/settings/dashboard/DashboardCategory;
+.method public j(Landroid/os/Parcel;)Lcom/android/settings_ext/dashboard/DashboardCategory;
     .locals 1
 
     .prologue
     .line 138
-    new-instance v0, Lcom/android/settings/dashboard/DashboardCategory;
+    new-instance v0, Lcom/android/settings_ext/dashboard/DashboardCategory;
 
-    invoke-direct {v0, p1}, Lcom/android/settings/dashboard/DashboardCategory;-><init>(Landroid/os/Parcel;)V
+    invoke-direct {v0, p1}, Lcom/android/settings_ext/dashboard/DashboardCategory;-><init>(Landroid/os/Parcel;)V
 
     return-object v0
 .end method
@@ -58,7 +58,7 @@
 
     .prologue
     .line 136
-    invoke-virtual {p0, p1}, Lcom/android/settings/dashboard/a;->bh(I)[Lcom/android/settings/dashboard/DashboardCategory;
+    invoke-virtual {p0, p1}, Lcom/android/settings_ext/dashboard/a;->bh(I)[Lcom/android/settings_ext/dashboard/DashboardCategory;
 
     move-result-object v0
 

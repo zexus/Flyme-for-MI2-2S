@@ -1,19 +1,19 @@
-.class Lcom/android/settings/cq;
+.class Lcom/android/settings_ext/cq;
 .super Landroid/telephony/PhoneStateListener;
 .source "FieldTestInfo.java"
 
 
 # instance fields
-.field final synthetic lx:Lcom/android/settings/FieldTestInfo;
+.field final synthetic lx:Lcom/android/settings_ext/FieldTestInfo;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/FieldTestInfo;)V
+.method constructor <init>(Lcom/android/settings_ext/FieldTestInfo;)V
     .locals 0
 
     .prologue
     .line 123
-    iput-object p1, p0, Lcom/android/settings/cq;->lx:Lcom/android/settings/FieldTestInfo;
+    iput-object p1, p0, Lcom/android/settings_ext/cq;->lx:Lcom/android/settings_ext/FieldTestInfo;
 
     invoke-direct {p0}, Landroid/telephony/PhoneStateListener;-><init>()V
 
@@ -27,7 +27,7 @@
 
     .prologue
     .line 144
-    iget-object v0, p0, Lcom/android/settings/cq;->lx:Lcom/android/settings/FieldTestInfo;
+    iget-object v0, p0, Lcom/android/settings_ext/cq;->lx:Lcom/android/settings_ext/FieldTestInfo;
 
     new-instance v1, Ljava/lang/StringBuilder;
 
@@ -47,7 +47,7 @@
 
     move-result-object v1
 
-    invoke-static {v0, v1}, Lcom/android/settings/FieldTestInfo;->a(Lcom/android/settings/FieldTestInfo;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/android/settings_ext/FieldTestInfo;->a(Lcom/android/settings_ext/FieldTestInfo;Ljava/lang/String;)V
 
     .line 146
     return-void

@@ -1,4 +1,4 @@
-.class public Lcom/android/settings/eM;
+.class public Lcom/android/settings_ext/eM;
 .super Ljava/lang/Object;
 .source "MusicDsClient.java"
 
@@ -15,7 +15,7 @@
     return-void
 .end method
 
-.method public static fG()Lcom/android/settings/eM;
+.method public static fG()Lcom/android/settings_ext/eM;
     .locals 3
 
     .prologue
@@ -56,7 +56,7 @@
 
     move-result-object v0
 
-    check-cast v0, Lcom/android/settings/eM;
+    check-cast v0, Lcom/android/settings_ext/eM;
 
     .line 31
     :goto_1
@@ -96,16 +96,16 @@
 
     .line 31
     :cond_0
-    new-instance v0, Lcom/android/settings/eM;
+    new-instance v0, Lcom/android/settings_ext/eM;
 
-    invoke-direct {v0}, Lcom/android/settings/eM;-><init>()V
+    invoke-direct {v0}, Lcom/android/settings_ext/eM;-><init>()V
 
     goto :goto_1
 .end method
 
 
 # virtual methods
-.method public a(Lcom/android/settings/eN;)V
+.method public a(Lcom/android/settings_ext/eN;)V
     .locals 0
 
     .prologue

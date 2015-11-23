@@ -1,5 +1,5 @@
-.class public Lcom/android/settings/voice/c;
-.super Lcom/android/settings/voice/b;
+.class public Lcom/android/settings_ext/voice/c;
+.super Lcom/android/settings_ext/voice/b;
 .source "VoiceInputHelper.java"
 
 
@@ -21,10 +21,10 @@
 
     move-result-object v1
 
-    invoke-direct {p0, p1, v0, v1}, Lcom/android/settings/voice/b;-><init>(Landroid/content/pm/PackageManager;Landroid/content/pm/ServiceInfo;Ljava/lang/String;)V
+    invoke-direct {p0, p1, v0, v1}, Lcom/android/settings_ext/voice/b;-><init>(Landroid/content/pm/PackageManager;Landroid/content/pm/ServiceInfo;Ljava/lang/String;)V
 
     .line 82
-    iput-object p2, p0, Lcom/android/settings/voice/c;->anm:Landroid/service/voice/VoiceInteractionServiceInfo;
+    iput-object p2, p0, Lcom/android/settings_ext/voice/c;->anm:Landroid/service/voice/VoiceInteractionServiceInfo;
 
     .line 83
     return-void

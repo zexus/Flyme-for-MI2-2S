@@ -1,19 +1,19 @@
-.class Lcom/android/settings/deviceinfo/Memory$1;
+.class Lcom/android/settings_ext/deviceinfo/Memory$1;
 .super Landroid/os/storage/StorageEventListener;
 .source "Memory.java"
 
 
 # instance fields
-.field final synthetic RL:Lcom/android/settings/deviceinfo/Memory;
+.field final synthetic RL:Lcom/android/settings_ext/deviceinfo/Memory;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/deviceinfo/Memory;)V
+.method constructor <init>(Lcom/android/settings_ext/deviceinfo/Memory;)V
     .locals 0
 
     .prologue
     .line 151
-    iput-object p1, p0, Lcom/android/settings/deviceinfo/Memory$1;->RL:Lcom/android/settings/deviceinfo/Memory;
+    iput-object p1, p0, Lcom/android/settings_ext/deviceinfo/Memory$1;->RL:Lcom/android/settings_ext/deviceinfo/Memory;
 
     invoke-direct {p0}, Landroid/os/storage/StorageEventListener;-><init>()V
 
@@ -70,9 +70,9 @@
     invoke-static {v0, v1}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
 
     .line 156
-    iget-object v0, p0, Lcom/android/settings/deviceinfo/Memory$1;->RL:Lcom/android/settings/deviceinfo/Memory;
+    iget-object v0, p0, Lcom/android/settings_ext/deviceinfo/Memory$1;->RL:Lcom/android/settings_ext/deviceinfo/Memory;
 
-    invoke-static {v0}, Lcom/android/settings/deviceinfo/Memory;->a(Lcom/android/settings/deviceinfo/Memory;)Ljava/util/ArrayList;
+    invoke-static {v0}, Lcom/android/settings_ext/deviceinfo/Memory;->a(Lcom/android/settings_ext/deviceinfo/Memory;)Ljava/util/ArrayList;
 
     move-result-object v0
 
@@ -91,10 +91,10 @@
 
     move-result-object v0
 
-    check-cast v0, Lcom/android/settings/deviceinfo/StorageVolumePreferenceCategory;
+    check-cast v0, Lcom/android/settings_ext/deviceinfo/StorageVolumePreferenceCategory;
 
     .line 157
-    invoke-virtual {v0}, Lcom/android/settings/deviceinfo/StorageVolumePreferenceCategory;->op()Landroid/os/storage/StorageVolume;
+    invoke-virtual {v0}, Lcom/android/settings_ext/deviceinfo/StorageVolumePreferenceCategory;->op()Landroid/os/storage/StorageVolume;
 
     move-result-object v2
 
@@ -112,7 +112,7 @@
     if-eqz v2, :cond_0
 
     .line 159
-    invoke-virtual {v0}, Lcom/android/settings/deviceinfo/StorageVolumePreferenceCategory;->or()V
+    invoke-virtual {v0}, Lcom/android/settings_ext/deviceinfo/StorageVolumePreferenceCategory;->or()V
 
     .line 163
     :cond_1

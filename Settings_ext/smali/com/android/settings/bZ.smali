@@ -1,4 +1,4 @@
-.class Lcom/android/settings/bZ;
+.class Lcom/android/settings_ext/bZ;
 .super Ljava/lang/Object;
 .source "DreamBackend.java"
 
@@ -19,13 +19,13 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 304
-    iput-object p1, p0, Lcom/android/settings/bZ;->kn:Landroid/content/ComponentName;
+    iput-object p1, p0, Lcom/android/settings_ext/bZ;->kn:Landroid/content/ComponentName;
 
     .line 305
     return-void
 .end method
 
-.method private b(Lcom/android/settings/bY;)Ljava/lang/String;
+.method private b(Lcom/android/settings_ext/bY;)Ljava/lang/String;
     .locals 3
 
     .prologue
@@ -35,9 +35,9 @@
     invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
 
     .line 314
-    iget-object v0, p1, Lcom/android/settings/bY;->componentName:Landroid/content/ComponentName;
+    iget-object v0, p1, Lcom/android/settings_ext/bY;->componentName:Landroid/content/ComponentName;
 
-    iget-object v2, p0, Lcom/android/settings/bZ;->kn:Landroid/content/ComponentName;
+    iget-object v2, p0, Lcom/android/settings_ext/bZ;->kn:Landroid/content/ComponentName;
 
     invoke-virtual {v0, v2}, Landroid/content/ComponentName;->equals(Ljava/lang/Object;)Z
 
@@ -51,7 +51,7 @@
     invoke-virtual {v1, v0}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
 
     .line 315
-    iget-object v0, p1, Lcom/android/settings/bY;->kk:Ljava/lang/CharSequence;
+    iget-object v0, p1, Lcom/android/settings_ext/bY;->kk:Ljava/lang/CharSequence;
 
     invoke-virtual {v1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/CharSequence;)Ljava/lang/StringBuilder;
 
@@ -71,16 +71,16 @@
 
 
 # virtual methods
-.method public a(Lcom/android/settings/bY;Lcom/android/settings/bY;)I
+.method public a(Lcom/android/settings_ext/bY;Lcom/android/settings_ext/bY;)I
     .locals 2
 
     .prologue
     .line 309
-    invoke-direct {p0, p1}, Lcom/android/settings/bZ;->b(Lcom/android/settings/bY;)Ljava/lang/String;
+    invoke-direct {p0, p1}, Lcom/android/settings_ext/bZ;->b(Lcom/android/settings_ext/bY;)Ljava/lang/String;
 
     move-result-object v0
 
-    invoke-direct {p0, p2}, Lcom/android/settings/bZ;->b(Lcom/android/settings/bY;)Ljava/lang/String;
+    invoke-direct {p0, p2}, Lcom/android/settings_ext/bZ;->b(Lcom/android/settings_ext/bY;)Ljava/lang/String;
 
     move-result-object v1
 
@@ -96,11 +96,11 @@
 
     .prologue
     .line 300
-    check-cast p1, Lcom/android/settings/bY;
+    check-cast p1, Lcom/android/settings_ext/bY;
 
-    check-cast p2, Lcom/android/settings/bY;
+    check-cast p2, Lcom/android/settings_ext/bY;
 
-    invoke-virtual {p0, p1, p2}, Lcom/android/settings/bZ;->a(Lcom/android/settings/bY;Lcom/android/settings/bY;)I
+    invoke-virtual {p0, p1, p2}, Lcom/android/settings_ext/bZ;->a(Lcom/android/settings_ext/bY;Lcom/android/settings_ext/bY;)I
 
     move-result v0
 

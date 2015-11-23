@@ -1,10 +1,10 @@
-.class final Lcom/android/settings/dndmode/g;
+.class final Lcom/android/settings_ext/dndmode/g;
 .super Landroid/database/ContentObserver;
 .source "AlarmContentFragment.java"
 
 
 # instance fields
-.field final synthetic Wt:Lcom/android/settings/dndmode/c;
+.field final synthetic Wt:Lcom/android/settings_ext/dndmode/c;
 
 .field private final Wu:Landroid/net/Uri;
 
@@ -12,15 +12,15 @@
 
 
 # direct methods
-.method public constructor <init>(Lcom/android/settings/dndmode/c;)V
+.method public constructor <init>(Lcom/android/settings_ext/dndmode/c;)V
     .locals 1
 
     .prologue
     .line 147
-    iput-object p1, p0, Lcom/android/settings/dndmode/g;->Wt:Lcom/android/settings/dndmode/c;
+    iput-object p1, p0, Lcom/android/settings_ext/dndmode/g;->Wt:Lcom/android/settings_ext/dndmode/c;
 
     .line 148
-    invoke-static {p1}, Lcom/android/settings/dndmode/c;->b(Lcom/android/settings/dndmode/c;)Landroid/os/Handler;
+    invoke-static {p1}, Lcom/android/settings_ext/dndmode/c;->b(Lcom/android/settings_ext/dndmode/c;)Landroid/os/Handler;
 
     move-result-object v0
 
@@ -33,7 +33,7 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/dndmode/g;->Wu:Landroid/net/Uri;
+    iput-object v0, p0, Lcom/android/settings_ext/dndmode/g;->Wu:Landroid/net/Uri;
 
     .line 145
     const-string v0, "zen_mode_config_etag"
@@ -42,7 +42,7 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/dndmode/g;->Wv:Landroid/net/Uri;
+    iput-object v0, p0, Lcom/android/settings_ext/dndmode/g;->Wv:Landroid/net/Uri;
 
     .line 149
     return-void
@@ -58,7 +58,7 @@
     invoke-super {p0, p1, p2}, Landroid/database/ContentObserver;->onChange(ZLandroid/net/Uri;)V
 
     .line 163
-    iget-object v0, p0, Lcom/android/settings/dndmode/g;->Wv:Landroid/net/Uri;
+    iget-object v0, p0, Lcom/android/settings_ext/dndmode/g;->Wv:Landroid/net/Uri;
 
     invoke-virtual {v0, p2}, Landroid/net/Uri;->equals(Ljava/lang/Object;)Z
 
@@ -67,9 +67,9 @@
     if-eqz v0, :cond_0
 
     .line 164
-    iget-object v0, p0, Lcom/android/settings/dndmode/g;->Wt:Lcom/android/settings/dndmode/c;
+    iget-object v0, p0, Lcom/android/settings_ext/dndmode/g;->Wt:Lcom/android/settings_ext/dndmode/c;
 
-    invoke-static {v0}, Lcom/android/settings/dndmode/c;->f(Lcom/android/settings/dndmode/c;)V
+    invoke-static {v0}, Lcom/android/settings_ext/dndmode/c;->f(Lcom/android/settings_ext/dndmode/c;)V
 
     .line 166
     :cond_0
@@ -83,24 +83,24 @@
     const/4 v2, 0x0
 
     .line 152
-    iget-object v0, p0, Lcom/android/settings/dndmode/g;->Wt:Lcom/android/settings/dndmode/c;
+    iget-object v0, p0, Lcom/android/settings_ext/dndmode/g;->Wt:Lcom/android/settings_ext/dndmode/c;
 
-    invoke-static {v0}, Lcom/android/settings/dndmode/c;->c(Lcom/android/settings/dndmode/c;)Landroid/content/ContentResolver;
+    invoke-static {v0}, Lcom/android/settings_ext/dndmode/c;->c(Lcom/android/settings_ext/dndmode/c;)Landroid/content/ContentResolver;
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/android/settings/dndmode/g;->Wu:Landroid/net/Uri;
+    iget-object v1, p0, Lcom/android/settings_ext/dndmode/g;->Wu:Landroid/net/Uri;
 
     invoke-virtual {v0, v1, v2, p0}, Landroid/content/ContentResolver;->registerContentObserver(Landroid/net/Uri;ZLandroid/database/ContentObserver;)V
 
     .line 153
-    iget-object v0, p0, Lcom/android/settings/dndmode/g;->Wt:Lcom/android/settings/dndmode/c;
+    iget-object v0, p0, Lcom/android/settings_ext/dndmode/g;->Wt:Lcom/android/settings_ext/dndmode/c;
 
-    invoke-static {v0}, Lcom/android/settings/dndmode/c;->d(Lcom/android/settings/dndmode/c;)Landroid/content/ContentResolver;
+    invoke-static {v0}, Lcom/android/settings_ext/dndmode/c;->d(Lcom/android/settings_ext/dndmode/c;)Landroid/content/ContentResolver;
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/android/settings/dndmode/g;->Wv:Landroid/net/Uri;
+    iget-object v1, p0, Lcom/android/settings_ext/dndmode/g;->Wv:Landroid/net/Uri;
 
     invoke-virtual {v0, v1, v2, p0}, Landroid/content/ContentResolver;->registerContentObserver(Landroid/net/Uri;ZLandroid/database/ContentObserver;)V
 
@@ -113,9 +113,9 @@
 
     .prologue
     .line 157
-    iget-object v0, p0, Lcom/android/settings/dndmode/g;->Wt:Lcom/android/settings/dndmode/c;
+    iget-object v0, p0, Lcom/android/settings_ext/dndmode/g;->Wt:Lcom/android/settings_ext/dndmode/c;
 
-    invoke-static {v0}, Lcom/android/settings/dndmode/c;->e(Lcom/android/settings/dndmode/c;)Landroid/content/ContentResolver;
+    invoke-static {v0}, Lcom/android/settings_ext/dndmode/c;->e(Lcom/android/settings_ext/dndmode/c;)Landroid/content/ContentResolver;
 
     move-result-object v0
 

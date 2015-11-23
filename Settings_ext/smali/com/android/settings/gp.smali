@@ -1,19 +1,19 @@
-.class Lcom/android/settings/gp;
+.class Lcom/android/settings_ext/gp;
 .super Landroid/os/Handler;
 .source "SettingsLicenseActivity.java"
 
 
 # instance fields
-.field final synthetic xm:Lcom/android/settings/SettingsLicenseActivity;
+.field final synthetic xm:Lcom/android/settings_ext/SettingsLicenseActivity;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/SettingsLicenseActivity;)V
+.method constructor <init>(Lcom/android/settings_ext/SettingsLicenseActivity;)V
     .locals 0
 
     .prologue
     .line 150
-    iput-object p1, p0, Lcom/android/settings/gp;->xm:Lcom/android/settings/SettingsLicenseActivity;
+    iput-object p1, p0, Lcom/android/settings_ext/gp;->xm:Lcom/android/settings_ext/SettingsLicenseActivity;
 
     invoke-direct {p0}, Landroid/os/Handler;-><init>()V
 
@@ -40,9 +40,9 @@
     check-cast v0, Ljava/lang/String;
 
     .line 158
-    iget-object v1, p0, Lcom/android/settings/gp;->xm:Lcom/android/settings/SettingsLicenseActivity;
+    iget-object v1, p0, Lcom/android/settings_ext/gp;->xm:Lcom/android/settings_ext/SettingsLicenseActivity;
 
-    invoke-static {v1, v0}, Lcom/android/settings/SettingsLicenseActivity;->a(Lcom/android/settings/SettingsLicenseActivity;Ljava/lang/String;)V
+    invoke-static {v1, v0}, Lcom/android/settings_ext/SettingsLicenseActivity;->a(Lcom/android/settings_ext/SettingsLicenseActivity;Ljava/lang/String;)V
 
     .line 162
     :goto_0
@@ -50,9 +50,9 @@
 
     .line 160
     :cond_0
-    iget-object v0, p0, Lcom/android/settings/gp;->xm:Lcom/android/settings/SettingsLicenseActivity;
+    iget-object v0, p0, Lcom/android/settings_ext/gp;->xm:Lcom/android/settings_ext/SettingsLicenseActivity;
 
-    invoke-static {v0}, Lcom/android/settings/SettingsLicenseActivity;->a(Lcom/android/settings/SettingsLicenseActivity;)V
+    invoke-static {v0}, Lcom/android/settings_ext/SettingsLicenseActivity;->a(Lcom/android/settings_ext/SettingsLicenseActivity;)V
 
     goto :goto_0
 .end method

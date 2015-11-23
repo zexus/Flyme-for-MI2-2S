@@ -1,4 +1,4 @@
-.class Lcom/android/settings/ha;
+.class Lcom/android/settings_ext/ha;
 .super Landroid/os/AsyncTask;
 .source "UsageAccessSettings.java"
 
@@ -8,54 +8,54 @@
 
 .field private final mPackageManager:Landroid/content/pm/PackageManager;
 
-.field final synthetic zb:Lcom/android/settings/UsageAccessSettings;
+.field final synthetic zb:Lcom/android/settings_ext/UsageAccessSettings;
 
 .field private final zc:Landroid/content/pm/IPackageManager;
 
 
 # direct methods
-.method public constructor <init>(Lcom/android/settings/UsageAccessSettings;Landroid/content/Context;)V
+.method public constructor <init>(Lcom/android/settings_ext/UsageAccessSettings;Landroid/content/Context;)V
     .locals 1
 
     .prologue
     .line 87
-    iput-object p1, p0, Lcom/android/settings/ha;->zb:Lcom/android/settings/UsageAccessSettings;
+    iput-object p1, p0, Lcom/android/settings_ext/ha;->zb:Lcom/android/settings_ext/UsageAccessSettings;
 
     invoke-direct {p0}, Landroid/os/AsyncTask;-><init>()V
 
     .line 88
-    iput-object p2, p0, Lcom/android/settings/ha;->mContext:Landroid/content/Context;
+    iput-object p2, p0, Lcom/android/settings_ext/ha;->mContext:Landroid/content/Context;
 
     .line 89
     invoke-virtual {p2}, Landroid/content/Context;->getPackageManager()Landroid/content/pm/PackageManager;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/ha;->mPackageManager:Landroid/content/pm/PackageManager;
+    iput-object v0, p0, Lcom/android/settings_ext/ha;->mPackageManager:Landroid/content/pm/PackageManager;
 
     .line 90
     invoke-static {}, Landroid/app/ActivityThread;->getPackageManager()Landroid/content/pm/IPackageManager;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/ha;->zc:Landroid/content/pm/IPackageManager;
+    iput-object v0, p0, Lcom/android/settings_ext/ha;->zc:Landroid/content/pm/IPackageManager;
 
     .line 91
     return-void
 .end method
 
-.method private a(Lcom/android/settings/hb;)V
+.method private a(Lcom/android/settings_ext/hb;)V
     .locals 3
 
     .prologue
     .line 228
-    iget-object v0, p1, Lcom/android/settings/hb;->zg:Landroid/preference/CheckBoxPreference;
+    iget-object v0, p1, Lcom/android/settings_ext/hb;->zg:Landroid/preference/CheckBoxPreference;
 
-    iget-object v1, p1, Lcom/android/settings/hb;->zd:Landroid/content/pm/PackageInfo;
+    iget-object v1, p1, Lcom/android/settings_ext/hb;->zd:Landroid/content/pm/PackageInfo;
 
     iget-object v1, v1, Landroid/content/pm/PackageInfo;->applicationInfo:Landroid/content/pm/ApplicationInfo;
 
-    iget-object v2, p0, Lcom/android/settings/ha;->mPackageManager:Landroid/content/pm/PackageManager;
+    iget-object v2, p0, Lcom/android/settings_ext/ha;->mPackageManager:Landroid/content/pm/PackageManager;
 
     invoke-virtual {v1, v2}, Landroid/content/pm/ApplicationInfo;->loadIcon(Landroid/content/pm/PackageManager;)Landroid/graphics/drawable/Drawable;
 
@@ -64,13 +64,13 @@
     invoke-virtual {v0, v1}, Landroid/preference/CheckBoxPreference;->setIcon(Landroid/graphics/drawable/Drawable;)V
 
     .line 229
-    iget-object v0, p1, Lcom/android/settings/hb;->zg:Landroid/preference/CheckBoxPreference;
+    iget-object v0, p1, Lcom/android/settings_ext/hb;->zg:Landroid/preference/CheckBoxPreference;
 
-    iget-object v1, p1, Lcom/android/settings/hb;->zd:Landroid/content/pm/PackageInfo;
+    iget-object v1, p1, Lcom/android/settings_ext/hb;->zd:Landroid/content/pm/PackageInfo;
 
     iget-object v1, v1, Landroid/content/pm/PackageInfo;->applicationInfo:Landroid/content/pm/ApplicationInfo;
 
-    iget-object v2, p0, Lcom/android/settings/ha;->mPackageManager:Landroid/content/pm/PackageManager;
+    iget-object v2, p0, Lcom/android/settings_ext/ha;->mPackageManager:Landroid/content/pm/PackageManager;
 
     invoke-virtual {v1, v2}, Landroid/content/pm/ApplicationInfo;->loadLabel(Landroid/content/pm/PackageManager;)Ljava/lang/CharSequence;
 
@@ -79,9 +79,9 @@
     invoke-virtual {v0, v1}, Landroid/preference/CheckBoxPreference;->setTitle(Ljava/lang/CharSequence;)V
 
     .line 230
-    iget-object v0, p1, Lcom/android/settings/hb;->zg:Landroid/preference/CheckBoxPreference;
+    iget-object v0, p1, Lcom/android/settings_ext/hb;->zg:Landroid/preference/CheckBoxPreference;
 
-    iget-object v1, p1, Lcom/android/settings/hb;->packageName:Ljava/lang/String;
+    iget-object v1, p1, Lcom/android/settings_ext/hb;->packageName:Ljava/lang/String;
 
     invoke-virtual {v0, v1}, Landroid/preference/CheckBoxPreference;->setKey(Ljava/lang/String;)V
 
@@ -89,7 +89,7 @@
     const/4 v0, 0x0
 
     .line 233
-    iget v1, p1, Lcom/android/settings/hb;->zf:I
+    iget v1, p1, Lcom/android/settings_ext/hb;->zf:I
 
     if-nez v1, :cond_2
 
@@ -99,7 +99,7 @@
     .line 241
     :cond_0
     :goto_0
-    iget-object v1, p1, Lcom/android/settings/hb;->zg:Landroid/preference/CheckBoxPreference;
+    iget-object v1, p1, Lcom/android/settings_ext/hb;->zg:Landroid/preference/CheckBoxPreference;
 
     invoke-virtual {v1}, Landroid/preference/CheckBoxPreference;->isChecked()Z
 
@@ -108,7 +108,7 @@
     if-eq v0, v1, :cond_1
 
     .line 242
-    iget-object v1, p1, Lcom/android/settings/hb;->zg:Landroid/preference/CheckBoxPreference;
+    iget-object v1, p1, Lcom/android/settings_ext/hb;->zg:Landroid/preference/CheckBoxPreference;
 
     invoke-virtual {v1, v0}, Landroid/preference/CheckBoxPreference;->setChecked(Z)V
 
@@ -118,14 +118,14 @@
 
     .line 235
     :cond_2
-    iget v1, p1, Lcom/android/settings/hb;->zf:I
+    iget v1, p1, Lcom/android/settings_ext/hb;->zf:I
 
     const/4 v2, 0x3
 
     if-ne v1, v2, :cond_0
 
     .line 238
-    iget-boolean v0, p1, Lcom/android/settings/hb;->ze:Z
+    iget-boolean v0, p1, Lcom/android/settings_ext/hb;->ze:Z
 
     goto :goto_0
 .end method
@@ -139,16 +139,16 @@
     const/4 v2, 0x0
 
     .line 180
-    iget-object v0, p0, Lcom/android/settings/ha;->zb:Lcom/android/settings/UsageAccessSettings;
+    iget-object v0, p0, Lcom/android/settings_ext/ha;->zb:Lcom/android/settings_ext/UsageAccessSettings;
 
     const/4 v1, 0x0
 
-    invoke-static {v0, v1}, Lcom/android/settings/UsageAccessSettings;->a(Lcom/android/settings/UsageAccessSettings;Lcom/android/settings/ha;)Lcom/android/settings/ha;
+    invoke-static {v0, v1}, Lcom/android/settings_ext/UsageAccessSettings;->a(Lcom/android/settings_ext/UsageAccessSettings;Lcom/android/settings_ext/ha;)Lcom/android/settings_ext/ha;
 
     .line 182
-    iget-object v0, p0, Lcom/android/settings/ha;->zb:Lcom/android/settings/UsageAccessSettings;
+    iget-object v0, p0, Lcom/android/settings_ext/ha;->zb:Lcom/android/settings_ext/UsageAccessSettings;
 
-    invoke-virtual {v0}, Lcom/android/settings/UsageAccessSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {v0}, Lcom/android/settings_ext/UsageAccessSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
@@ -163,16 +163,16 @@
     if-nez p1, :cond_1
 
     .line 188
-    iget-object v0, p0, Lcom/android/settings/ha;->zb:Lcom/android/settings/UsageAccessSettings;
+    iget-object v0, p0, Lcom/android/settings_ext/ha;->zb:Lcom/android/settings_ext/UsageAccessSettings;
 
-    iget-object v0, v0, Lcom/android/settings/UsageAccessSettings;->yY:Landroid/util/ArrayMap;
+    iget-object v0, v0, Lcom/android/settings_ext/UsageAccessSettings;->yY:Landroid/util/ArrayMap;
 
     invoke-virtual {v0}, Landroid/util/ArrayMap;->clear()V
 
     .line 189
-    iget-object v0, p0, Lcom/android/settings/ha;->zb:Lcom/android/settings/UsageAccessSettings;
+    iget-object v0, p0, Lcom/android/settings_ext/ha;->zb:Lcom/android/settings_ext/UsageAccessSettings;
 
-    iget-object v0, v0, Lcom/android/settings/UsageAccessSettings;->yZ:Landroid/preference/PreferenceScreen;
+    iget-object v0, v0, Lcom/android/settings_ext/UsageAccessSettings;->yZ:Landroid/preference/PreferenceScreen;
 
     invoke-virtual {v0}, Landroid/preference/PreferenceScreen;->removeAll()V
 
@@ -180,9 +180,9 @@
 
     .line 194
     :cond_1
-    iget-object v0, p0, Lcom/android/settings/ha;->zb:Lcom/android/settings/UsageAccessSettings;
+    iget-object v0, p0, Lcom/android/settings_ext/ha;->zb:Lcom/android/settings_ext/UsageAccessSettings;
 
-    iget-object v0, v0, Lcom/android/settings/UsageAccessSettings;->yY:Landroid/util/ArrayMap;
+    iget-object v0, v0, Lcom/android/settings_ext/UsageAccessSettings;->yY:Landroid/util/ArrayMap;
 
     invoke-virtual {v0}, Landroid/util/ArrayMap;->size()I
 
@@ -195,34 +195,34 @@
     if-ge v3, v4, :cond_3
 
     .line 196
-    iget-object v0, p0, Lcom/android/settings/ha;->zb:Lcom/android/settings/UsageAccessSettings;
+    iget-object v0, p0, Lcom/android/settings_ext/ha;->zb:Lcom/android/settings_ext/UsageAccessSettings;
 
-    iget-object v0, v0, Lcom/android/settings/UsageAccessSettings;->yY:Landroid/util/ArrayMap;
+    iget-object v0, v0, Lcom/android/settings_ext/UsageAccessSettings;->yY:Landroid/util/ArrayMap;
 
     invoke-virtual {v0, v3}, Landroid/util/ArrayMap;->valueAt(I)Ljava/lang/Object;
 
     move-result-object v0
 
-    check-cast v0, Lcom/android/settings/hb;
+    check-cast v0, Lcom/android/settings_ext/hb;
 
     .line 197
-    iget-object v1, v0, Lcom/android/settings/hb;->packageName:Ljava/lang/String;
+    iget-object v1, v0, Lcom/android/settings_ext/hb;->packageName:Ljava/lang/String;
 
     invoke-virtual {p1, v1}, Landroid/util/ArrayMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v1
 
-    check-cast v1, Lcom/android/settings/hb;
+    check-cast v1, Lcom/android/settings_ext/hb;
 
     .line 198
     if-nez v1, :cond_2
 
     .line 200
-    iget-object v1, p0, Lcom/android/settings/ha;->zb:Lcom/android/settings/UsageAccessSettings;
+    iget-object v1, p0, Lcom/android/settings_ext/ha;->zb:Lcom/android/settings_ext/UsageAccessSettings;
 
-    iget-object v1, v1, Lcom/android/settings/UsageAccessSettings;->yZ:Landroid/preference/PreferenceScreen;
+    iget-object v1, v1, Lcom/android/settings_ext/UsageAccessSettings;->yZ:Landroid/preference/PreferenceScreen;
 
-    iget-object v0, v0, Lcom/android/settings/hb;->zg:Landroid/preference/CheckBoxPreference;
+    iget-object v0, v0, Lcom/android/settings_ext/hb;->zg:Landroid/preference/CheckBoxPreference;
 
     invoke-virtual {v1, v0}, Landroid/preference/PreferenceScreen;->removePreference(Landroid/preference/Preference;)Z
 
@@ -236,9 +236,9 @@
 
     .line 204
     :cond_2
-    iget-object v0, v0, Lcom/android/settings/hb;->zg:Landroid/preference/CheckBoxPreference;
+    iget-object v0, v0, Lcom/android/settings_ext/hb;->zg:Landroid/preference/CheckBoxPreference;
 
-    iput-object v0, v1, Lcom/android/settings/hb;->zg:Landroid/preference/CheckBoxPreference;
+    iput-object v0, v1, Lcom/android/settings_ext/hb;->zg:Landroid/preference/CheckBoxPreference;
 
     goto :goto_2
 
@@ -259,46 +259,46 @@
 
     move-result-object v0
 
-    check-cast v0, Lcom/android/settings/hb;
+    check-cast v0, Lcom/android/settings_ext/hb;
 
     .line 212
-    iget-object v4, v0, Lcom/android/settings/hb;->zg:Landroid/preference/CheckBoxPreference;
+    iget-object v4, v0, Lcom/android/settings_ext/hb;->zg:Landroid/preference/CheckBoxPreference;
 
     if-nez v4, :cond_4
 
     .line 215
     new-instance v4, Landroid/preference/CheckBoxPreference;
 
-    iget-object v5, p0, Lcom/android/settings/ha;->mContext:Landroid/content/Context;
+    iget-object v5, p0, Lcom/android/settings_ext/ha;->mContext:Landroid/content/Context;
 
     invoke-direct {v4, v5}, Landroid/preference/CheckBoxPreference;-><init>(Landroid/content/Context;)V
 
-    iput-object v4, v0, Lcom/android/settings/hb;->zg:Landroid/preference/CheckBoxPreference;
+    iput-object v4, v0, Lcom/android/settings_ext/hb;->zg:Landroid/preference/CheckBoxPreference;
 
     .line 216
-    iget-object v4, v0, Lcom/android/settings/hb;->zg:Landroid/preference/CheckBoxPreference;
+    iget-object v4, v0, Lcom/android/settings_ext/hb;->zg:Landroid/preference/CheckBoxPreference;
 
     invoke-virtual {v4, v2}, Landroid/preference/CheckBoxPreference;->setPersistent(Z)V
 
     .line 217
-    iget-object v4, v0, Lcom/android/settings/hb;->zg:Landroid/preference/CheckBoxPreference;
+    iget-object v4, v0, Lcom/android/settings_ext/hb;->zg:Landroid/preference/CheckBoxPreference;
 
-    iget-object v5, p0, Lcom/android/settings/ha;->zb:Lcom/android/settings/UsageAccessSettings;
+    iget-object v5, p0, Lcom/android/settings_ext/ha;->zb:Lcom/android/settings_ext/UsageAccessSettings;
 
     invoke-virtual {v4, v5}, Landroid/preference/CheckBoxPreference;->setOnPreferenceChangeListener(Landroid/preference/Preference$OnPreferenceChangeListener;)V
 
     .line 218
-    iget-object v4, p0, Lcom/android/settings/ha;->zb:Lcom/android/settings/UsageAccessSettings;
+    iget-object v4, p0, Lcom/android/settings_ext/ha;->zb:Lcom/android/settings_ext/UsageAccessSettings;
 
-    iget-object v4, v4, Lcom/android/settings/UsageAccessSettings;->yZ:Landroid/preference/PreferenceScreen;
+    iget-object v4, v4, Lcom/android/settings_ext/UsageAccessSettings;->yZ:Landroid/preference/PreferenceScreen;
 
-    iget-object v5, v0, Lcom/android/settings/hb;->zg:Landroid/preference/CheckBoxPreference;
+    iget-object v5, v0, Lcom/android/settings_ext/hb;->zg:Landroid/preference/CheckBoxPreference;
 
     invoke-virtual {v4, v5}, Landroid/preference/PreferenceScreen;->addPreference(Landroid/preference/Preference;)Z
 
     .line 220
     :cond_4
-    invoke-direct {p0, v0}, Lcom/android/settings/ha;->a(Lcom/android/settings/hb;)V
+    invoke-direct {p0, v0}, Lcom/android/settings_ext/ha;->a(Lcom/android/settings_ext/hb;)V
 
     .line 210
     add-int/lit8 v0, v1, 0x1
@@ -309,16 +309,16 @@
 
     .line 223
     :cond_5
-    iget-object v0, p0, Lcom/android/settings/ha;->zb:Lcom/android/settings/UsageAccessSettings;
+    iget-object v0, p0, Lcom/android/settings_ext/ha;->zb:Lcom/android/settings_ext/UsageAccessSettings;
 
-    iget-object v0, v0, Lcom/android/settings/UsageAccessSettings;->yY:Landroid/util/ArrayMap;
+    iget-object v0, v0, Lcom/android/settings_ext/UsageAccessSettings;->yY:Landroid/util/ArrayMap;
 
     invoke-virtual {v0}, Landroid/util/ArrayMap;->clear()V
 
     .line 224
-    iget-object v0, p0, Lcom/android/settings/ha;->zb:Lcom/android/settings/UsageAccessSettings;
+    iget-object v0, p0, Lcom/android/settings_ext/ha;->zb:Lcom/android/settings_ext/UsageAccessSettings;
 
-    iput-object p1, v0, Lcom/android/settings/UsageAccessSettings;->yY:Landroid/util/ArrayMap;
+    iput-object p1, v0, Lcom/android/settings_ext/UsageAccessSettings;->yY:Landroid/util/ArrayMap;
 
     goto/16 :goto_0
 .end method
@@ -330,7 +330,7 @@
     .line 80
     check-cast p1, [Ljava/lang/Void;
 
-    invoke-virtual {p0, p1}, Lcom/android/settings/ha;->e([Ljava/lang/Void;)Landroid/util/ArrayMap;
+    invoke-virtual {p0, p1}, Lcom/android/settings_ext/ha;->e([Ljava/lang/Void;)Landroid/util/ArrayMap;
 
     move-result-object v0
 
@@ -349,7 +349,7 @@
 
     .line 97
     :try_start_0
-    iget-object v1, p0, Lcom/android/settings/ha;->zc:Landroid/content/pm/IPackageManager;
+    iget-object v1, p0, Lcom/android/settings_ext/ha;->zc:Landroid/content/pm/IPackageManager;
 
     const-string v2, "android.permission.PACKAGE_USAGE_STATS"
 
@@ -396,16 +396,16 @@
     aget-object v5, v1, v0
 
     .line 112
-    invoke-static {v5}, Lcom/android/settings/UsageAccessSettings;->M(Ljava/lang/String;)Z
+    invoke-static {v5}, Lcom/android/settings_ext/UsageAccessSettings;->M(Ljava/lang/String;)Z
 
     move-result v6
 
     if-nez v6, :cond_1
 
     .line 113
-    new-instance v6, Lcom/android/settings/hb;
+    new-instance v6, Lcom/android/settings_ext/hb;
 
-    invoke-direct {v6, v5}, Lcom/android/settings/hb;-><init>(Ljava/lang/String;)V
+    invoke-direct {v6, v5}, Lcom/android/settings_ext/hb;-><init>(Ljava/lang/String;)V
 
     invoke-virtual {v4, v5, v6}, Landroid/util/ArrayMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -417,10 +417,10 @@
 
     .line 118
     :cond_2
-    iget-object v0, p0, Lcom/android/settings/ha;->mPackageManager:Landroid/content/pm/PackageManager;
+    iget-object v0, p0, Lcom/android/settings_ext/ha;->mPackageManager:Landroid/content/pm/PackageManager;
 
-    # getter for: Lcom/android/settings/UsageAccessSettings;->yV:[Ljava/lang/String;
-    invoke-static {}, Lcom/android/settings/UsageAccessSettings;->access$000()[Ljava/lang/String;
+    # getter for: Lcom/android/settings_ext/UsageAccessSettings;->yV:[Ljava/lang/String;
+    invoke-static {}, Lcom/android/settings_ext/UsageAccessSettings;->access$000()[Ljava/lang/String;
 
     move-result-object v1
 
@@ -458,16 +458,16 @@
 
     move-result-object v1
 
-    check-cast v1, Lcom/android/settings/hb;
+    check-cast v1, Lcom/android/settings_ext/hb;
 
     .line 124
     if-eqz v1, :cond_3
 
     .line 125
-    iput-object v0, v1, Lcom/android/settings/hb;->zd:Landroid/content/pm/PackageInfo;
+    iput-object v0, v1, Lcom/android/settings_ext/hb;->zd:Landroid/content/pm/PackageInfo;
 
     .line 126
-    iput-boolean v9, v1, Lcom/android/settings/hb;->ze:Z
+    iput-boolean v9, v1, Lcom/android/settings_ext/hb;->ze:Z
 
     .line 121
     :cond_3
@@ -500,18 +500,18 @@
 
     move-result-object v0
 
-    check-cast v0, Lcom/android/settings/hb;
+    check-cast v0, Lcom/android/settings_ext/hb;
 
     .line 135
-    iget-object v5, v0, Lcom/android/settings/hb;->zd:Landroid/content/pm/PackageInfo;
+    iget-object v5, v0, Lcom/android/settings_ext/hb;->zd:Landroid/content/pm/PackageInfo;
 
     if-nez v5, :cond_c
 
     .line 137
     :try_start_1
-    iget-object v5, p0, Lcom/android/settings/ha;->mPackageManager:Landroid/content/pm/PackageManager;
+    iget-object v5, p0, Lcom/android/settings_ext/ha;->mPackageManager:Landroid/content/pm/PackageManager;
 
-    iget-object v6, v0, Lcom/android/settings/hb;->packageName:Ljava/lang/String;
+    iget-object v6, v0, Lcom/android/settings_ext/hb;->packageName:Ljava/lang/String;
 
     const/4 v7, 0x0
 
@@ -519,7 +519,7 @@
 
     move-result-object v5
 
-    iput-object v5, v0, Lcom/android/settings/hb;->zd:Landroid/content/pm/PackageInfo;
+    iput-object v5, v0, Lcom/android/settings_ext/hb;->zd:Landroid/content/pm/PackageInfo;
     :try_end_1
     .catch Landroid/content/pm/PackageManager$NameNotFoundException; {:try_start_1 .. :try_end_1} :catch_1
 
@@ -554,12 +554,12 @@
 
     .line 149
     :cond_6
-    iget-object v0, p0, Lcom/android/settings/ha;->zb:Lcom/android/settings/UsageAccessSettings;
+    iget-object v0, p0, Lcom/android/settings_ext/ha;->zb:Lcom/android/settings_ext/UsageAccessSettings;
 
-    iget-object v0, v0, Lcom/android/settings/UsageAccessSettings;->mAppOpsManager:Landroid/app/AppOpsManager;
+    iget-object v0, v0, Lcom/android/settings_ext/UsageAccessSettings;->mAppOpsManager:Landroid/app/AppOpsManager;
 
-    # getter for: Lcom/android/settings/UsageAccessSettings;->yW:[I
-    invoke-static {}, Lcom/android/settings/UsageAccessSettings;->access$100()[I
+    # getter for: Lcom/android/settings_ext/UsageAccessSettings;->yW:[I
+    invoke-static {}, Lcom/android/settings_ext/UsageAccessSettings;->access$100()[I
 
     move-result-object v1
 
@@ -599,7 +599,7 @@
 
     move-result-object v1
 
-    check-cast v1, Lcom/android/settings/hb;
+    check-cast v1, Lcom/android/settings_ext/hb;
 
     .line 155
     if-nez v1, :cond_9
@@ -658,7 +658,7 @@
 
     move-result v7
 
-    iget-object v8, v1, Lcom/android/settings/hb;->zd:Landroid/content/pm/PackageInfo;
+    iget-object v8, v1, Lcom/android/settings_ext/hb;->zd:Landroid/content/pm/PackageInfo;
 
     iget-object v8, v8, Landroid/content/pm/PackageInfo;->applicationInfo:Landroid/content/pm/ApplicationInfo;
 
@@ -722,7 +722,7 @@
 
     move-result v0
 
-    iput v0, v1, Lcom/android/settings/hb;->zf:I
+    iput v0, v1, Lcom/android/settings_ext/hb;->zf:I
 
     goto :goto_8
 
@@ -747,7 +747,7 @@
     .line 80
     check-cast p1, Landroid/util/ArrayMap;
 
-    invoke-virtual {p0, p1}, Lcom/android/settings/ha;->a(Landroid/util/ArrayMap;)V
+    invoke-virtual {p0, p1}, Lcom/android/settings_ext/ha;->a(Landroid/util/ArrayMap;)V
 
     return-void
 .end method

@@ -1,5 +1,5 @@
-.class public Lcom/android/settings/inputmethod/KeyboardLayoutPickerFragment;
-.super Lcom/android/settings/SettingsPreferenceFragment;
+.class public Lcom/android/settings_ext/inputmethod/KeyboardLayoutPickerFragment;
+.super Lcom/android/settings_ext/SettingsPreferenceFragment;
 .source "KeyboardLayoutPickerFragment.java"
 
 # interfaces
@@ -24,19 +24,19 @@
 
     .prologue
     .line 37
-    invoke-direct {p0}, Lcom/android/settings/SettingsPreferenceFragment;-><init>()V
+    invoke-direct {p0}, Lcom/android/settings_ext/SettingsPreferenceFragment;-><init>()V
 
     .line 40
     const/4 v0, -0x1
 
-    iput v0, p0, Lcom/android/settings/inputmethod/KeyboardLayoutPickerFragment;->abG:I
+    iput v0, p0, Lcom/android/settings_ext/inputmethod/KeyboardLayoutPickerFragment;->abG:I
 
     .line 43
     new-instance v0, Ljava/util/HashMap;
 
     invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
 
-    iput-object v0, p0, Lcom/android/settings/inputmethod/KeyboardLayoutPickerFragment;->abM:Ljava/util/HashMap;
+    iput-object v0, p0, Lcom/android/settings_ext/inputmethod/KeyboardLayoutPickerFragment;->abM:Ljava/util/HashMap;
 
     return-void
 .end method
@@ -46,11 +46,11 @@
 
     .prologue
     .line 133
-    invoke-virtual {p0}, Lcom/android/settings/inputmethod/KeyboardLayoutPickerFragment;->getPreferenceManager()Landroid/preference/PreferenceManager;
+    invoke-virtual {p0}, Lcom/android/settings_ext/inputmethod/KeyboardLayoutPickerFragment;->getPreferenceManager()Landroid/preference/PreferenceManager;
 
     move-result-object v0
 
-    invoke-virtual {p0}, Lcom/android/settings/inputmethod/KeyboardLayoutPickerFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/inputmethod/KeyboardLayoutPickerFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v1
 
@@ -59,12 +59,12 @@
     move-result-object v1
 
     .line 134
-    invoke-virtual {p0}, Lcom/android/settings/inputmethod/KeyboardLayoutPickerFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/inputmethod/KeyboardLayoutPickerFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v2
 
     .line 136
-    iget-object v3, p0, Lcom/android/settings/inputmethod/KeyboardLayoutPickerFragment;->abL:[Landroid/hardware/input/KeyboardLayout;
+    iget-object v3, p0, Lcom/android/settings_ext/inputmethod/KeyboardLayoutPickerFragment;->abL:[Landroid/hardware/input/KeyboardLayout;
 
     array-length v4, v3
 
@@ -98,7 +98,7 @@
     invoke-virtual {v1, v6}, Landroid/preference/PreferenceScreen;->addPreference(Landroid/preference/Preference;)Z
 
     .line 141
-    iget-object v7, p0, Lcom/android/settings/inputmethod/KeyboardLayoutPickerFragment;->abM:Ljava/util/HashMap;
+    iget-object v7, p0, Lcom/android/settings_ext/inputmethod/KeyboardLayoutPickerFragment;->abM:Ljava/util/HashMap;
 
     invoke-virtual {v7, v6, v5}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -117,9 +117,9 @@
 
     .prologue
     .line 147
-    iget-object v0, p0, Lcom/android/settings/inputmethod/KeyboardLayoutPickerFragment;->tO:Landroid/hardware/input/InputManager;
+    iget-object v0, p0, Lcom/android/settings_ext/inputmethod/KeyboardLayoutPickerFragment;->tO:Landroid/hardware/input/InputManager;
 
-    iget-object v1, p0, Lcom/android/settings/inputmethod/KeyboardLayoutPickerFragment;->abF:Landroid/hardware/input/InputDeviceIdentifier;
+    iget-object v1, p0, Lcom/android/settings_ext/inputmethod/KeyboardLayoutPickerFragment;->abF:Landroid/hardware/input/InputDeviceIdentifier;
 
     invoke-virtual {v0, v1}, Landroid/hardware/input/InputManager;->getKeyboardLayoutsForInputDevice(Landroid/hardware/input/InputDeviceIdentifier;)[Ljava/lang/String;
 
@@ -129,7 +129,7 @@
     invoke-static {v2}, Ljava/util/Arrays;->sort([Ljava/lang/Object;)V
 
     .line 151
-    iget-object v0, p0, Lcom/android/settings/inputmethod/KeyboardLayoutPickerFragment;->abM:Ljava/util/HashMap;
+    iget-object v0, p0, Lcom/android/settings_ext/inputmethod/KeyboardLayoutPickerFragment;->abM:Ljava/util/HashMap;
 
     invoke-virtual {v0}, Ljava/util/HashMap;->entrySet()Ljava/util/Set;
 
@@ -199,10 +199,10 @@
 
     .prologue
     .line 54
-    invoke-super {p0, p1}, Lcom/android/settings/SettingsPreferenceFragment;->onCreate(Landroid/os/Bundle;)V
+    invoke-super {p0, p1}, Lcom/android/settings_ext/SettingsPreferenceFragment;->onCreate(Landroid/os/Bundle;)V
 
     .line 56
-    invoke-virtual {p0}, Lcom/android/settings/inputmethod/KeyboardLayoutPickerFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/inputmethod/KeyboardLayoutPickerFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
@@ -218,15 +218,15 @@
 
     check-cast v0, Landroid/hardware/input/InputDeviceIdentifier;
 
-    iput-object v0, p0, Lcom/android/settings/inputmethod/KeyboardLayoutPickerFragment;->abF:Landroid/hardware/input/InputDeviceIdentifier;
+    iput-object v0, p0, Lcom/android/settings_ext/inputmethod/KeyboardLayoutPickerFragment;->abF:Landroid/hardware/input/InputDeviceIdentifier;
 
     .line 58
-    iget-object v0, p0, Lcom/android/settings/inputmethod/KeyboardLayoutPickerFragment;->abF:Landroid/hardware/input/InputDeviceIdentifier;
+    iget-object v0, p0, Lcom/android/settings_ext/inputmethod/KeyboardLayoutPickerFragment;->abF:Landroid/hardware/input/InputDeviceIdentifier;
 
     if-nez v0, :cond_0
 
     .line 59
-    invoke-virtual {p0}, Lcom/android/settings/inputmethod/KeyboardLayoutPickerFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/inputmethod/KeyboardLayoutPickerFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
@@ -236,34 +236,34 @@
     :cond_0
     const-string v0, "input"
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/inputmethod/KeyboardLayoutPickerFragment;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
+    invoke-virtual {p0, v0}, Lcom/android/settings_ext/inputmethod/KeyboardLayoutPickerFragment;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object v0
 
     check-cast v0, Landroid/hardware/input/InputManager;
 
-    iput-object v0, p0, Lcom/android/settings/inputmethod/KeyboardLayoutPickerFragment;->tO:Landroid/hardware/input/InputManager;
+    iput-object v0, p0, Lcom/android/settings_ext/inputmethod/KeyboardLayoutPickerFragment;->tO:Landroid/hardware/input/InputManager;
 
     .line 63
-    iget-object v0, p0, Lcom/android/settings/inputmethod/KeyboardLayoutPickerFragment;->tO:Landroid/hardware/input/InputManager;
+    iget-object v0, p0, Lcom/android/settings_ext/inputmethod/KeyboardLayoutPickerFragment;->tO:Landroid/hardware/input/InputManager;
 
     invoke-virtual {v0}, Landroid/hardware/input/InputManager;->getKeyboardLayouts()[Landroid/hardware/input/KeyboardLayout;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/inputmethod/KeyboardLayoutPickerFragment;->abL:[Landroid/hardware/input/KeyboardLayout;
+    iput-object v0, p0, Lcom/android/settings_ext/inputmethod/KeyboardLayoutPickerFragment;->abL:[Landroid/hardware/input/KeyboardLayout;
 
     .line 64
-    iget-object v0, p0, Lcom/android/settings/inputmethod/KeyboardLayoutPickerFragment;->abL:[Landroid/hardware/input/KeyboardLayout;
+    iget-object v0, p0, Lcom/android/settings_ext/inputmethod/KeyboardLayoutPickerFragment;->abL:[Landroid/hardware/input/KeyboardLayout;
 
     invoke-static {v0}, Ljava/util/Arrays;->sort([Ljava/lang/Object;)V
 
     .line 65
-    invoke-direct {p0}, Lcom/android/settings/inputmethod/KeyboardLayoutPickerFragment;->gC()Landroid/preference/PreferenceScreen;
+    invoke-direct {p0}, Lcom/android/settings_ext/inputmethod/KeyboardLayoutPickerFragment;->gC()Landroid/preference/PreferenceScreen;
 
     move-result-object v0
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/inputmethod/KeyboardLayoutPickerFragment;->setPreferenceScreen(Landroid/preference/PreferenceScreen;)V
+    invoke-virtual {p0, v0}, Lcom/android/settings_ext/inputmethod/KeyboardLayoutPickerFragment;->setPreferenceScreen(Landroid/preference/PreferenceScreen;)V
 
     .line 66
     return-void
@@ -282,16 +282,16 @@
 
     .prologue
     .line 120
-    iget v0, p0, Lcom/android/settings/inputmethod/KeyboardLayoutPickerFragment;->abG:I
+    iget v0, p0, Lcom/android/settings_ext/inputmethod/KeyboardLayoutPickerFragment;->abG:I
 
     if-ltz v0, :cond_0
 
-    iget v0, p0, Lcom/android/settings/inputmethod/KeyboardLayoutPickerFragment;->abG:I
+    iget v0, p0, Lcom/android/settings_ext/inputmethod/KeyboardLayoutPickerFragment;->abG:I
 
     if-ne p1, v0, :cond_0
 
     .line 121
-    invoke-direct {p0}, Lcom/android/settings/inputmethod/KeyboardLayoutPickerFragment;->pS()V
+    invoke-direct {p0}, Lcom/android/settings_ext/inputmethod/KeyboardLayoutPickerFragment;->pS()V
 
     .line 123
     :cond_0
@@ -303,16 +303,16 @@
 
     .prologue
     .line 127
-    iget v0, p0, Lcom/android/settings/inputmethod/KeyboardLayoutPickerFragment;->abG:I
+    iget v0, p0, Lcom/android/settings_ext/inputmethod/KeyboardLayoutPickerFragment;->abG:I
 
     if-ltz v0, :cond_0
 
-    iget v0, p0, Lcom/android/settings/inputmethod/KeyboardLayoutPickerFragment;->abG:I
+    iget v0, p0, Lcom/android/settings_ext/inputmethod/KeyboardLayoutPickerFragment;->abG:I
 
     if-ne p1, v0, :cond_0
 
     .line 128
-    invoke-virtual {p0}, Lcom/android/settings/inputmethod/KeyboardLayoutPickerFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/inputmethod/KeyboardLayoutPickerFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
@@ -328,17 +328,17 @@
 
     .prologue
     .line 87
-    iget-object v0, p0, Lcom/android/settings/inputmethod/KeyboardLayoutPickerFragment;->tO:Landroid/hardware/input/InputManager;
+    iget-object v0, p0, Lcom/android/settings_ext/inputmethod/KeyboardLayoutPickerFragment;->tO:Landroid/hardware/input/InputManager;
 
     invoke-virtual {v0, p0}, Landroid/hardware/input/InputManager;->unregisterInputDeviceListener(Landroid/hardware/input/InputManager$InputDeviceListener;)V
 
     .line 88
     const/4 v0, -0x1
 
-    iput v0, p0, Lcom/android/settings/inputmethod/KeyboardLayoutPickerFragment;->abG:I
+    iput v0, p0, Lcom/android/settings_ext/inputmethod/KeyboardLayoutPickerFragment;->abG:I
 
     .line 90
-    invoke-super {p0}, Lcom/android/settings/SettingsPreferenceFragment;->onPause()V
+    invoke-super {p0}, Lcom/android/settings_ext/SettingsPreferenceFragment;->onPause()V
 
     .line 91
     return-void
@@ -359,7 +359,7 @@
     check-cast v0, Landroid/preference/CheckBoxPreference;
 
     .line 98
-    iget-object v1, p0, Lcom/android/settings/inputmethod/KeyboardLayoutPickerFragment;->abM:Ljava/util/HashMap;
+    iget-object v1, p0, Lcom/android/settings_ext/inputmethod/KeyboardLayoutPickerFragment;->abM:Ljava/util/HashMap;
 
     invoke-virtual {v1, v0}, Ljava/util/HashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -379,9 +379,9 @@
     if-eqz v0, :cond_0
 
     .line 102
-    iget-object v0, p0, Lcom/android/settings/inputmethod/KeyboardLayoutPickerFragment;->tO:Landroid/hardware/input/InputManager;
+    iget-object v0, p0, Lcom/android/settings_ext/inputmethod/KeyboardLayoutPickerFragment;->tO:Landroid/hardware/input/InputManager;
 
-    iget-object v2, p0, Lcom/android/settings/inputmethod/KeyboardLayoutPickerFragment;->abF:Landroid/hardware/input/InputDeviceIdentifier;
+    iget-object v2, p0, Lcom/android/settings_ext/inputmethod/KeyboardLayoutPickerFragment;->abF:Landroid/hardware/input/InputDeviceIdentifier;
 
     invoke-virtual {v1}, Landroid/hardware/input/KeyboardLayout;->getDescriptor()Ljava/lang/String;
 
@@ -399,9 +399,9 @@
 
     .line 105
     :cond_0
-    iget-object v0, p0, Lcom/android/settings/inputmethod/KeyboardLayoutPickerFragment;->tO:Landroid/hardware/input/InputManager;
+    iget-object v0, p0, Lcom/android/settings_ext/inputmethod/KeyboardLayoutPickerFragment;->tO:Landroid/hardware/input/InputManager;
 
-    iget-object v2, p0, Lcom/android/settings/inputmethod/KeyboardLayoutPickerFragment;->abF:Landroid/hardware/input/InputDeviceIdentifier;
+    iget-object v2, p0, Lcom/android/settings_ext/inputmethod/KeyboardLayoutPickerFragment;->abF:Landroid/hardware/input/InputDeviceIdentifier;
 
     invoke-virtual {v1}, Landroid/hardware/input/KeyboardLayout;->getDescriptor()Ljava/lang/String;
 
@@ -413,7 +413,7 @@
 
     .line 111
     :cond_1
-    invoke-super {p0, p1, p2}, Lcom/android/settings/SettingsPreferenceFragment;->onPreferenceTreeClick(Landroid/preference/PreferenceScreen;Landroid/preference/Preference;)Z
+    invoke-super {p0, p1, p2}, Lcom/android/settings_ext/SettingsPreferenceFragment;->onPreferenceTreeClick(Landroid/preference/PreferenceScreen;Landroid/preference/Preference;)Z
 
     move-result v0
 
@@ -425,19 +425,19 @@
 
     .prologue
     .line 70
-    invoke-super {p0}, Lcom/android/settings/SettingsPreferenceFragment;->onResume()V
+    invoke-super {p0}, Lcom/android/settings_ext/SettingsPreferenceFragment;->onResume()V
 
     .line 72
-    iget-object v0, p0, Lcom/android/settings/inputmethod/KeyboardLayoutPickerFragment;->tO:Landroid/hardware/input/InputManager;
+    iget-object v0, p0, Lcom/android/settings_ext/inputmethod/KeyboardLayoutPickerFragment;->tO:Landroid/hardware/input/InputManager;
 
     const/4 v1, 0x0
 
     invoke-virtual {v0, p0, v1}, Landroid/hardware/input/InputManager;->registerInputDeviceListener(Landroid/hardware/input/InputManager$InputDeviceListener;Landroid/os/Handler;)V
 
     .line 74
-    iget-object v0, p0, Lcom/android/settings/inputmethod/KeyboardLayoutPickerFragment;->tO:Landroid/hardware/input/InputManager;
+    iget-object v0, p0, Lcom/android/settings_ext/inputmethod/KeyboardLayoutPickerFragment;->tO:Landroid/hardware/input/InputManager;
 
-    iget-object v1, p0, Lcom/android/settings/inputmethod/KeyboardLayoutPickerFragment;->abF:Landroid/hardware/input/InputDeviceIdentifier;
+    iget-object v1, p0, Lcom/android/settings_ext/inputmethod/KeyboardLayoutPickerFragment;->abF:Landroid/hardware/input/InputDeviceIdentifier;
 
     invoke-virtual {v1}, Landroid/hardware/input/InputDeviceIdentifier;->getDescriptor()Ljava/lang/String;
 
@@ -451,7 +451,7 @@
     if-nez v0, :cond_0
 
     .line 77
-    invoke-virtual {p0}, Lcom/android/settings/inputmethod/KeyboardLayoutPickerFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/inputmethod/KeyboardLayoutPickerFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
@@ -467,10 +467,10 @@
 
     move-result v0
 
-    iput v0, p0, Lcom/android/settings/inputmethod/KeyboardLayoutPickerFragment;->abG:I
+    iput v0, p0, Lcom/android/settings_ext/inputmethod/KeyboardLayoutPickerFragment;->abG:I
 
     .line 82
-    invoke-direct {p0}, Lcom/android/settings/inputmethod/KeyboardLayoutPickerFragment;->pS()V
+    invoke-direct {p0}, Lcom/android/settings_ext/inputmethod/KeyboardLayoutPickerFragment;->pS()V
 
     goto :goto_0
 .end method

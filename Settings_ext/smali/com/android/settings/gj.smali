@@ -1,19 +1,19 @@
-.class Lcom/android/settings/gj;
+.class Lcom/android/settings_ext/gj;
 .super Landroid/os/Handler;
 .source "SettingsActivity.java"
 
 
 # instance fields
-.field final synthetic xh:Lcom/android/settings/gh;
+.field final synthetic xh:Lcom/android/settings_ext/gh;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/gh;)V
+.method constructor <init>(Lcom/android/settings_ext/gh;)V
     .locals 0
 
     .prologue
     .line 362
-    iput-object p1, p0, Lcom/android/settings/gj;->xh:Lcom/android/settings/gh;
+    iput-object p1, p0, Lcom/android/settings_ext/gj;->xh:Lcom/android/settings_ext/gh;
 
     invoke-direct {p0}, Landroid/os/Handler;-><init>()V
 
@@ -52,15 +52,15 @@
     if-eqz v0, :cond_0
 
     .line 369
-    iget-object v0, p0, Lcom/android/settings/gj;->xh:Lcom/android/settings/gh;
+    iget-object v0, p0, Lcom/android/settings_ext/gj;->xh:Lcom/android/settings_ext/gh;
 
-    iget-object v1, p0, Lcom/android/settings/gj;->xh:Lcom/android/settings/gh;
+    iget-object v1, p0, Lcom/android/settings_ext/gj;->xh:Lcom/android/settings_ext/gh;
 
-    invoke-static {v1}, Lcom/android/settings/gh;->b(Lcom/android/settings/gh;)Ljava/util/ArrayList;
+    invoke-static {v1}, Lcom/android/settings_ext/gh;->b(Lcom/android/settings_ext/gh;)Ljava/util/ArrayList;
 
     move-result-object v1
 
-    invoke-static {v0, v1}, Lcom/android/settings/gh;->a(Lcom/android/settings/gh;Ljava/util/List;)V
+    invoke-static {v0, v1}, Lcom/android/settings_ext/gh;->a(Lcom/android/settings_ext/gh;Ljava/util/List;)V
 
     goto :goto_0
 

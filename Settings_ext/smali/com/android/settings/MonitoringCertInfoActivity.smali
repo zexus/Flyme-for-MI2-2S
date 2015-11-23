@@ -1,4 +1,4 @@
-.class public Lcom/android/settings/MonitoringCertInfoActivity;
+.class public Lcom/android/settings_ext/MonitoringCertInfoActivity;
 .super Landroid/app/Activity;
 .source "MonitoringCertInfoActivity.java"
 
@@ -21,7 +21,7 @@
     .line 38
     const/4 v0, 0x0
 
-    iput-boolean v0, p0, Lcom/android/settings/MonitoringCertInfoActivity;->sH:Z
+    iput-boolean v0, p0, Lcom/android/settings_ext/MonitoringCertInfoActivity;->sH:Z
 
     return-void
 .end method
@@ -33,12 +33,12 @@
 
     .prologue
     .line 84
-    iget-boolean v0, p0, Lcom/android/settings/MonitoringCertInfoActivity;->sH:Z
+    iget-boolean v0, p0, Lcom/android/settings_ext/MonitoringCertInfoActivity;->sH:Z
 
     if-eqz v0, :cond_0
 
     .line 85
-    invoke-virtual {p0}, Lcom/android/settings/MonitoringCertInfoActivity;->finish()V
+    invoke-virtual {p0}, Lcom/android/settings_ext/MonitoringCertInfoActivity;->finish()V
 
     .line 93
     :goto_0
@@ -58,10 +58,10 @@
     invoke-virtual {v0, v1}, Landroid/content/Intent;->setFlags(I)Landroid/content/Intent;
 
     .line 90
-    invoke-virtual {p0, v0}, Lcom/android/settings/MonitoringCertInfoActivity;->startActivity(Landroid/content/Intent;)V
+    invoke-virtual {p0, v0}, Lcom/android/settings_ext/MonitoringCertInfoActivity;->startActivity(Landroid/content/Intent;)V
 
     .line 91
-    invoke-virtual {p0}, Lcom/android/settings/MonitoringCertInfoActivity;->finish()V
+    invoke-virtual {p0}, Lcom/android/settings_ext/MonitoringCertInfoActivity;->finish()V
 
     goto :goto_0
 .end method
@@ -80,7 +80,7 @@
     .line 44
     const-string v0, "device_policy"
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/MonitoringCertInfoActivity;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
+    invoke-virtual {p0, v0}, Lcom/android/settings_ext/MonitoringCertInfoActivity;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object v0
 
@@ -109,15 +109,15 @@
     move v1, v2
 
     :goto_0
-    iput-boolean v1, p0, Lcom/android/settings/MonitoringCertInfoActivity;->sH:Z
+    iput-boolean v1, p0, Lcom/android/settings_ext/MonitoringCertInfoActivity;->sH:Z
 
     .line 52
-    iget-boolean v1, p0, Lcom/android/settings/MonitoringCertInfoActivity;->sH:Z
+    iget-boolean v1, p0, Lcom/android/settings_ext/MonitoringCertInfoActivity;->sH:Z
 
     if-eqz v1, :cond_1
 
     .line 54
-    invoke-virtual {p0}, Lcom/android/settings/MonitoringCertInfoActivity;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {p0}, Lcom/android/settings_ext/MonitoringCertInfoActivity;->getResources()Landroid/content/res/Resources;
 
     move-result-object v1
 
@@ -171,9 +171,9 @@
 
     .line 73
     :goto_2
-    new-instance v1, Lcom/android/settings/eL;
+    new-instance v1, Lcom/android/settings_ext/eL;
 
-    invoke-direct {v1, p0}, Lcom/android/settings/eL;-><init>(Lcom/android/settings/MonitoringCertInfoActivity;)V
+    invoke-direct {v1, p0}, Lcom/android/settings_ext/eL;-><init>(Lcom/android/settings_ext/MonitoringCertInfoActivity;)V
 
     invoke-virtual {v0, v1}, Landroid/app/Dialog;->setOnCancelListener(Landroid/content/DialogInterface$OnCancelListener;)V
 

@@ -1,5 +1,5 @@
-.class public Lcom/android/settings/display/HandyModeFragment;
-.super Lcom/android/settings/SettingsPreferenceFragment;
+.class public Lcom/android/settings_ext/display/HandyModeFragment;
+.super Lcom/android/settings_ext/SettingsPreferenceFragment;
 .source "HandyModeFragment.java"
 
 # interfaces
@@ -21,14 +21,14 @@
 
     .prologue
     .line 16
-    invoke-direct {p0}, Lcom/android/settings/SettingsPreferenceFragment;-><init>()V
+    invoke-direct {p0}, Lcom/android/settings_ext/SettingsPreferenceFragment;-><init>()V
 
     .line 24
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
-    iput-object v0, p0, Lcom/android/settings/display/HandyModeFragment;->UJ:Ljava/util/ArrayList;
+    iput-object v0, p0, Lcom/android/settings_ext/display/HandyModeFragment;->UJ:Ljava/util/ArrayList;
 
     return-void
 .end method
@@ -42,7 +42,7 @@
     const/4 v2, 0x0
 
     .line 66
-    iget-object v0, p0, Lcom/android/settings/display/HandyModeFragment;->UJ:Ljava/util/ArrayList;
+    iget-object v0, p0, Lcom/android/settings_ext/display/HandyModeFragment;->UJ:Ljava/util/ArrayList;
 
     invoke-virtual {v0}, Ljava/util/ArrayList;->size()I
 
@@ -55,7 +55,7 @@
     if-ge v3, v4, :cond_1
 
     .line 68
-    iget-object v0, p0, Lcom/android/settings/display/HandyModeFragment;->UJ:Ljava/util/ArrayList;
+    iget-object v0, p0, Lcom/android/settings_ext/display/HandyModeFragment;->UJ:Ljava/util/ArrayList;
 
     invoke-virtual {v0, v3}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
 
@@ -106,10 +106,10 @@
     const/4 v1, 0x0
 
     .line 28
-    invoke-super {p0, p1}, Lcom/android/settings/SettingsPreferenceFragment;->onCreate(Landroid/os/Bundle;)V
+    invoke-super {p0, p1}, Lcom/android/settings_ext/SettingsPreferenceFragment;->onCreate(Landroid/os/Bundle;)V
 
     .line 30
-    invoke-virtual {p0}, Lcom/android/settings/display/HandyModeFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/display/HandyModeFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
@@ -117,33 +117,33 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/display/HandyModeFragment;->UH:Lmiui/util/HandyModeUtils;
+    iput-object v0, p0, Lcom/android/settings_ext/display/HandyModeFragment;->UH:Lmiui/util/HandyModeUtils;
 
     .line 32
     const v0, 0x7f06003b
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/display/HandyModeFragment;->addPreferencesFromResource(I)V
+    invoke-virtual {p0, v0}, Lcom/android/settings_ext/display/HandyModeFragment;->addPreferencesFromResource(I)V
 
     .line 34
     const-string v0, "handy_mode_enter_ask"
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/display/HandyModeFragment;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v0}, Lcom/android/settings_ext/display/HandyModeFragment;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v0
 
     check-cast v0, Landroid/preference/CheckBoxPreference;
 
-    iput-object v0, p0, Lcom/android/settings/display/HandyModeFragment;->UI:Landroid/preference/CheckBoxPreference;
+    iput-object v0, p0, Lcom/android/settings_ext/display/HandyModeFragment;->UI:Landroid/preference/CheckBoxPreference;
 
     .line 35
-    iget-object v0, p0, Lcom/android/settings/display/HandyModeFragment;->UI:Landroid/preference/CheckBoxPreference;
+    iget-object v0, p0, Lcom/android/settings_ext/display/HandyModeFragment;->UI:Landroid/preference/CheckBoxPreference;
 
     invoke-virtual {v0, p0}, Landroid/preference/CheckBoxPreference;->setOnPreferenceChangeListener(Landroid/preference/Preference$OnPreferenceChangeListener;)V
 
     .line 36
-    iget-object v2, p0, Lcom/android/settings/display/HandyModeFragment;->UI:Landroid/preference/CheckBoxPreference;
+    iget-object v2, p0, Lcom/android/settings_ext/display/HandyModeFragment;->UI:Landroid/preference/CheckBoxPreference;
 
-    iget-object v0, p0, Lcom/android/settings/display/HandyModeFragment;->UH:Lmiui/util/HandyModeUtils;
+    iget-object v0, p0, Lcom/android/settings_ext/display/HandyModeFragment;->UH:Lmiui/util/HandyModeUtils;
 
     invoke-virtual {v0}, Lmiui/util/HandyModeUtils;->isEnterDirect()Z
 
@@ -157,12 +157,12 @@
     invoke-virtual {v2, v0}, Landroid/preference/CheckBoxPreference;->setChecked(Z)V
 
     .line 38
-    invoke-virtual {p0}, Lcom/android/settings/display/HandyModeFragment;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
+    invoke-virtual {p0}, Lcom/android/settings_ext/display/HandyModeFragment;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
 
     move-result-object v2
 
     .line 39
-    invoke-virtual {p0}, Lcom/android/settings/display/HandyModeFragment;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {p0}, Lcom/android/settings_ext/display/HandyModeFragment;->getResources()Landroid/content/res/Resources;
 
     move-result-object v0
 
@@ -173,7 +173,7 @@
     move-result-object v3
 
     .line 40
-    invoke-virtual {p0}, Lcom/android/settings/display/HandyModeFragment;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {p0}, Lcom/android/settings_ext/display/HandyModeFragment;->getResources()Landroid/content/res/Resources;
 
     move-result-object v0
 
@@ -200,7 +200,7 @@
     move-result v6
 
     .line 44
-    iget-object v7, p0, Lcom/android/settings/display/HandyModeFragment;->UH:Lmiui/util/HandyModeUtils;
+    iget-object v7, p0, Lcom/android/settings_ext/display/HandyModeFragment;->UH:Lmiui/util/HandyModeUtils;
 
     invoke-virtual {v7, v6}, Lmiui/util/HandyModeUtils;->isValidSize(F)Z
 
@@ -224,7 +224,7 @@
     :cond_1
     new-instance v6, Lmiui/preference/RadioButtonPreference;
 
-    invoke-virtual {p0}, Lcom/android/settings/display/HandyModeFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/display/HandyModeFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v7
 
@@ -247,7 +247,7 @@
     invoke-virtual {v6, p0}, Lmiui/preference/RadioButtonPreference;->setOnPreferenceClickListener(Landroid/preference/Preference$OnPreferenceClickListener;)V
 
     .line 51
-    iget-object v7, p0, Lcom/android/settings/display/HandyModeFragment;->UJ:Ljava/util/ArrayList;
+    iget-object v7, p0, Lcom/android/settings_ext/display/HandyModeFragment;->UJ:Ljava/util/ArrayList;
 
     invoke-virtual {v7, v6}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
@@ -258,14 +258,14 @@
 
     .line 55
     :cond_2
-    iget-object v0, p0, Lcom/android/settings/display/HandyModeFragment;->UH:Lmiui/util/HandyModeUtils;
+    iget-object v0, p0, Lcom/android/settings_ext/display/HandyModeFragment;->UH:Lmiui/util/HandyModeUtils;
 
     invoke-virtual {v0}, Lmiui/util/HandyModeUtils;->getSize()F
 
     move-result v0
 
     .line 56
-    invoke-virtual {p0, v0}, Lcom/android/settings/display/HandyModeFragment;->j(F)V
+    invoke-virtual {p0, v0}, Lcom/android/settings_ext/display/HandyModeFragment;->j(F)V
 
     .line 57
     return-void
@@ -285,7 +285,7 @@
     move-result v0
 
     .line 76
-    iget-object v2, p0, Lcom/android/settings/display/HandyModeFragment;->UH:Lmiui/util/HandyModeUtils;
+    iget-object v2, p0, Lcom/android/settings_ext/display/HandyModeFragment;->UH:Lmiui/util/HandyModeUtils;
 
     if-nez v0, :cond_0
 
@@ -318,10 +318,10 @@
     move-result v0
 
     .line 83
-    invoke-virtual {p0, v0}, Lcom/android/settings/display/HandyModeFragment;->j(F)V
+    invoke-virtual {p0, v0}, Lcom/android/settings_ext/display/HandyModeFragment;->j(F)V
 
     .line 84
-    iget-object v1, p0, Lcom/android/settings/display/HandyModeFragment;->UH:Lmiui/util/HandyModeUtils;
+    iget-object v1, p0, Lcom/android/settings_ext/display/HandyModeFragment;->UH:Lmiui/util/HandyModeUtils;
 
     invoke-virtual {v1, v0}, Lmiui/util/HandyModeUtils;->setSize(F)V
 
@@ -336,10 +336,10 @@
 
     .prologue
     .line 61
-    invoke-super {p0}, Lcom/android/settings/SettingsPreferenceFragment;->onStart()V
+    invoke-super {p0}, Lcom/android/settings_ext/SettingsPreferenceFragment;->onStart()V
 
     .line 62
-    invoke-virtual {p0}, Lcom/android/settings/display/HandyModeFragment;->getActionBar()Lmiui/app/ActionBar;
+    invoke-virtual {p0}, Lcom/android/settings_ext/display/HandyModeFragment;->getActionBar()Lmiui/app/ActionBar;
 
     move-result-object v0
 

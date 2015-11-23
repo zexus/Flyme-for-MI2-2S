@@ -1,4 +1,4 @@
-.class Lcom/android/settings/wfd/g;
+.class Lcom/android/settings_ext/wfd/g;
 .super Ljava/lang/Object;
 .source "WifiDisplaySettings.java"
 
@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final synthetic aoA:Lcom/android/settings/wfd/WifiDisplaySettings;
+.field final synthetic aoA:Lcom/android/settings_ext/wfd/WifiDisplaySettings;
 
 .field final synthetic aoC:Landroid/widget/EditText;
 
@@ -15,16 +15,16 @@
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/wfd/WifiDisplaySettings;Landroid/widget/EditText;Landroid/hardware/display/WifiDisplay;)V
+.method constructor <init>(Lcom/android/settings_ext/wfd/WifiDisplaySettings;Landroid/widget/EditText;Landroid/hardware/display/WifiDisplay;)V
     .locals 0
 
     .prologue
     .line 593
-    iput-object p1, p0, Lcom/android/settings/wfd/g;->aoA:Lcom/android/settings/wfd/WifiDisplaySettings;
+    iput-object p1, p0, Lcom/android/settings_ext/wfd/g;->aoA:Lcom/android/settings_ext/wfd/WifiDisplaySettings;
 
-    iput-object p2, p0, Lcom/android/settings/wfd/g;->aoC:Landroid/widget/EditText;
+    iput-object p2, p0, Lcom/android/settings_ext/wfd/g;->aoC:Landroid/widget/EditText;
 
-    iput-object p3, p0, Lcom/android/settings/wfd/g;->aoD:Landroid/hardware/display/WifiDisplay;
+    iput-object p3, p0, Lcom/android/settings_ext/wfd/g;->aoD:Landroid/hardware/display/WifiDisplay;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -38,7 +38,7 @@
 
     .prologue
     .line 596
-    iget-object v0, p0, Lcom/android/settings/wfd/g;->aoC:Landroid/widget/EditText;
+    iget-object v0, p0, Lcom/android/settings_ext/wfd/g;->aoC:Landroid/widget/EditText;
 
     invoke-virtual {v0}, Landroid/widget/EditText;->getText()Landroid/text/Editable;
 
@@ -59,7 +59,7 @@
 
     if-nez v1, :cond_0
 
-    iget-object v1, p0, Lcom/android/settings/wfd/g;->aoD:Landroid/hardware/display/WifiDisplay;
+    iget-object v1, p0, Lcom/android/settings_ext/wfd/g;->aoD:Landroid/hardware/display/WifiDisplay;
 
     invoke-virtual {v1}, Landroid/hardware/display/WifiDisplay;->getDeviceName()Ljava/lang/String;
 
@@ -77,13 +77,13 @@
 
     .line 600
     :cond_1
-    iget-object v1, p0, Lcom/android/settings/wfd/g;->aoA:Lcom/android/settings/wfd/WifiDisplaySettings;
+    iget-object v1, p0, Lcom/android/settings_ext/wfd/g;->aoA:Lcom/android/settings_ext/wfd/WifiDisplaySettings;
 
-    invoke-static {v1}, Lcom/android/settings/wfd/WifiDisplaySettings;->a(Lcom/android/settings/wfd/WifiDisplaySettings;)Landroid/hardware/display/DisplayManager;
+    invoke-static {v1}, Lcom/android/settings_ext/wfd/WifiDisplaySettings;->a(Lcom/android/settings_ext/wfd/WifiDisplaySettings;)Landroid/hardware/display/DisplayManager;
 
     move-result-object v1
 
-    iget-object v2, p0, Lcom/android/settings/wfd/g;->aoD:Landroid/hardware/display/WifiDisplay;
+    iget-object v2, p0, Lcom/android/settings_ext/wfd/g;->aoD:Landroid/hardware/display/WifiDisplay;
 
     invoke-virtual {v2}, Landroid/hardware/display/WifiDisplay;->getDeviceAddress()Ljava/lang/String;
 

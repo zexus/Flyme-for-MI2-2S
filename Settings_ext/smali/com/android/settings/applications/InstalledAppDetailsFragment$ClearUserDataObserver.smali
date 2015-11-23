@@ -1,19 +1,19 @@
-.class Lcom/android/settings/applications/InstalledAppDetailsFragment$ClearUserDataObserver;
+.class Lcom/android/settings_ext/applications/InstalledAppDetailsFragment$ClearUserDataObserver;
 .super Landroid/content/pm/IPackageDataObserver$Stub;
 .source "InstalledAppDetailsFragment.java"
 
 
 # instance fields
-.field final synthetic GE:Lcom/android/settings/applications/InstalledAppDetailsFragment;
+.field final synthetic GE:Lcom/android/settings_ext/applications/InstalledAppDetailsFragment;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/applications/InstalledAppDetailsFragment;)V
+.method constructor <init>(Lcom/android/settings_ext/applications/InstalledAppDetailsFragment;)V
     .locals 0
 
     .prologue
     .line 205
-    iput-object p1, p0, Lcom/android/settings/applications/InstalledAppDetailsFragment$ClearUserDataObserver;->GE:Lcom/android/settings/applications/InstalledAppDetailsFragment;
+    iput-object p1, p0, Lcom/android/settings_ext/applications/InstalledAppDetailsFragment$ClearUserDataObserver;->GE:Lcom/android/settings_ext/applications/InstalledAppDetailsFragment;
 
     invoke-direct {p0}, Landroid/content/pm/IPackageDataObserver$Stub;-><init>()V
 
@@ -29,9 +29,9 @@
     const/4 v0, 0x1
 
     .line 207
-    iget-object v1, p0, Lcom/android/settings/applications/InstalledAppDetailsFragment$ClearUserDataObserver;->GE:Lcom/android/settings/applications/InstalledAppDetailsFragment;
+    iget-object v1, p0, Lcom/android/settings_ext/applications/InstalledAppDetailsFragment$ClearUserDataObserver;->GE:Lcom/android/settings_ext/applications/InstalledAppDetailsFragment;
 
-    invoke-static {v1}, Lcom/android/settings/applications/InstalledAppDetailsFragment;->c(Lcom/android/settings/applications/InstalledAppDetailsFragment;)Landroid/os/Handler;
+    invoke-static {v1}, Lcom/android/settings_ext/applications/InstalledAppDetailsFragment;->c(Lcom/android/settings_ext/applications/InstalledAppDetailsFragment;)Landroid/os/Handler;
 
     move-result-object v1
 
@@ -46,9 +46,9 @@
     iput v0, v1, Landroid/os/Message;->arg1:I
 
     .line 209
-    iget-object v0, p0, Lcom/android/settings/applications/InstalledAppDetailsFragment$ClearUserDataObserver;->GE:Lcom/android/settings/applications/InstalledAppDetailsFragment;
+    iget-object v0, p0, Lcom/android/settings_ext/applications/InstalledAppDetailsFragment$ClearUserDataObserver;->GE:Lcom/android/settings_ext/applications/InstalledAppDetailsFragment;
 
-    invoke-static {v0}, Lcom/android/settings/applications/InstalledAppDetailsFragment;->c(Lcom/android/settings/applications/InstalledAppDetailsFragment;)Landroid/os/Handler;
+    invoke-static {v0}, Lcom/android/settings_ext/applications/InstalledAppDetailsFragment;->c(Lcom/android/settings_ext/applications/InstalledAppDetailsFragment;)Landroid/os/Handler;
 
     move-result-object v0
 

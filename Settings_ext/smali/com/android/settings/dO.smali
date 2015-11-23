@@ -1,19 +1,19 @@
-.class Lcom/android/settings/dO;
+.class Lcom/android/settings_ext/dO;
 .super Landroid/widget/ArrayAdapter;
 .source "MiuiLocaleSettings.java"
 
 
 # instance fields
-.field final synthetic qj:Lcom/android/settings/MiuiLocaleSettings;
+.field final synthetic qj:Lcom/android/settings_ext/MiuiLocaleSettings;
 
 
 # direct methods
-.method public constructor <init>(Lcom/android/settings/MiuiLocaleSettings;Landroid/content/Context;IILjava/util/List;)V
+.method public constructor <init>(Lcom/android/settings_ext/MiuiLocaleSettings;Landroid/content/Context;IILjava/util/List;)V
     .locals 0
 
     .prologue
     .line 139
-    iput-object p1, p0, Lcom/android/settings/dO;->qj:Lcom/android/settings/MiuiLocaleSettings;
+    iput-object p1, p0, Lcom/android/settings_ext/dO;->qj:Lcom/android/settings_ext/MiuiLocaleSettings;
 
     .line 140
     invoke-direct {p0, p2, p3, p4, p5}, Landroid/widget/ArrayAdapter;-><init>(Landroid/content/Context;IILjava/util/List;)V
@@ -43,17 +43,17 @@
     check-cast v0, Landroid/widget/RadioButton;
 
     .line 147
-    invoke-virtual {p0, p1}, Lcom/android/settings/dO;->getItem(I)Ljava/lang/Object;
+    invoke-virtual {p0, p1}, Lcom/android/settings_ext/dO;->getItem(I)Ljava/lang/Object;
 
     move-result-object v1
 
-    check-cast v1, Lcom/android/settings/dP;
+    check-cast v1, Lcom/android/settings_ext/dP;
 
-    iget-object v1, v1, Lcom/android/settings/dP;->qk:Ljava/lang/String;
+    iget-object v1, v1, Lcom/android/settings_ext/dP;->qk:Ljava/lang/String;
 
-    iget-object v3, p0, Lcom/android/settings/dO;->qj:Lcom/android/settings/MiuiLocaleSettings;
+    iget-object v3, p0, Lcom/android/settings_ext/dO;->qj:Lcom/android/settings_ext/MiuiLocaleSettings;
 
-    invoke-static {v3}, Lcom/android/settings/MiuiLocaleSettings;->c(Lcom/android/settings/MiuiLocaleSettings;)Ljava/lang/String;
+    invoke-static {v3}, Lcom/android/settings_ext/MiuiLocaleSettings;->c(Lcom/android/settings_ext/MiuiLocaleSettings;)Ljava/lang/String;
 
     move-result-object v3
 

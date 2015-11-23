@@ -1,5 +1,5 @@
-.class public Lcom/android/settings/ResetLegacyPassword;
-.super Lcom/android/settings/Settings;
+.class public Lcom/android/settings_ext/ResetLegacyPassword;
+.super Lcom/android/settings_ext/Settings;
 .source "ResetLegacyPassword.java"
 
 
@@ -9,7 +9,7 @@
 
     .prologue
     .line 13
-    invoke-direct {p0}, Lcom/android/settings/Settings;-><init>()V
+    invoke-direct {p0}, Lcom/android/settings_ext/Settings;-><init>()V
 
     .line 22
     return-void

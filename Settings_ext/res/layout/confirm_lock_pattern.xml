@@ -3,7 +3,7 @@
   xmlns:android="http://schemas.android.com/apk/res/android"
   xmlns:miui="http://schemas.android.com/apk/res/settings">
     <TextView android:textSize="18.0sp" android:gravity="center" android:id="@id/headerText" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
-    <com.android.settings.LockPatternView android:layout_gravity="center_horizontal" android:id="@id/lockPattern" android:layout_marginLeft="18.0dip" android:layout_marginRight="18.0dip" style="@style/SecurityLockPatternView" />
+    <com.android.settings_ext.LockPatternView android:layout_gravity="center_horizontal" android:id="@id/lockPattern" android:layout_marginLeft="18.0dip" android:layout_marginRight="18.0dip" style="@style/SecurityLockPatternView" />
     <LinearLayout android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content">
         <Button android:gravity="center" android:layout_gravity="center" android:id="@id/emergencyCall" android:visibility="gone" android:layout_width="144.0dip" android:layout_height="wrap_content" android:text="@android.miui:string/android_lockscreen_emergency_call" android:singleLine="true" android:drawableLeft="@drawable/ic_emergency" />
         <Button android:gravity="center" android:layout_gravity="center" android:id="@id/forgetPattern" android:visibility="gone" android:layout_width="144.0dip" android:layout_height="wrap_content" android:text="@android.miui:string/android_lockscreen_forgot_pattern_button_text" android:singleLine="true" />

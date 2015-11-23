@@ -1,4 +1,4 @@
-.class Lcom/android/settings/ee;
+.class Lcom/android/settings_ext/ee;
 .super Ljava/lang/Object;
 .source "MiuiSecurityBluetoothMatchDeviceFragment.java"
 
@@ -7,16 +7,16 @@
 
 
 # instance fields
-.field final synthetic qJ:Lcom/android/settings/MiuiSecurityBluetoothMatchDeviceFragment;
+.field final synthetic qJ:Lcom/android/settings_ext/MiuiSecurityBluetoothMatchDeviceFragment;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/MiuiSecurityBluetoothMatchDeviceFragment;)V
+.method constructor <init>(Lcom/android/settings_ext/MiuiSecurityBluetoothMatchDeviceFragment;)V
     .locals 0
 
     .prologue
     .line 297
-    iput-object p1, p0, Lcom/android/settings/ee;->qJ:Lcom/android/settings/MiuiSecurityBluetoothMatchDeviceFragment;
+    iput-object p1, p0, Lcom/android/settings_ext/ee;->qJ:Lcom/android/settings_ext/MiuiSecurityBluetoothMatchDeviceFragment;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -30,9 +30,9 @@
 
     .prologue
     .line 300
-    iget-object v0, p0, Lcom/android/settings/ee;->qJ:Lcom/android/settings/MiuiSecurityBluetoothMatchDeviceFragment;
+    iget-object v0, p0, Lcom/android/settings_ext/ee;->qJ:Lcom/android/settings_ext/MiuiSecurityBluetoothMatchDeviceFragment;
 
-    invoke-virtual {v0}, Lcom/android/settings/MiuiSecurityBluetoothMatchDeviceFragment;->getTargetFragment()Landroid/app/Fragment;
+    invoke-virtual {v0}, Lcom/android/settings_ext/MiuiSecurityBluetoothMatchDeviceFragment;->getTargetFragment()Landroid/app/Fragment;
 
     move-result-object v0
 
@@ -40,9 +40,9 @@
     if-nez v0, :cond_0
 
     .line 302
-    iget-object v0, p0, Lcom/android/settings/ee;->qJ:Lcom/android/settings/MiuiSecurityBluetoothMatchDeviceFragment;
+    iget-object v0, p0, Lcom/android/settings_ext/ee;->qJ:Lcom/android/settings_ext/MiuiSecurityBluetoothMatchDeviceFragment;
 
-    invoke-virtual {v0}, Lcom/android/settings/MiuiSecurityBluetoothMatchDeviceFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {v0}, Lcom/android/settings_ext/MiuiSecurityBluetoothMatchDeviceFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
@@ -51,9 +51,9 @@
     invoke-virtual {v0, v1}, Landroid/app/Activity;->setResult(I)V
 
     .line 303
-    iget-object v0, p0, Lcom/android/settings/ee;->qJ:Lcom/android/settings/MiuiSecurityBluetoothMatchDeviceFragment;
+    iget-object v0, p0, Lcom/android/settings_ext/ee;->qJ:Lcom/android/settings_ext/MiuiSecurityBluetoothMatchDeviceFragment;
 
-    invoke-virtual {v0}, Lcom/android/settings/MiuiSecurityBluetoothMatchDeviceFragment;->finish()V
+    invoke-virtual {v0}, Lcom/android/settings_ext/MiuiSecurityBluetoothMatchDeviceFragment;->finish()V
 
     .line 311
     :goto_0
@@ -61,9 +61,9 @@
 
     .line 305
     :cond_0
-    iget-object v1, p0, Lcom/android/settings/ee;->qJ:Lcom/android/settings/MiuiSecurityBluetoothMatchDeviceFragment;
+    iget-object v1, p0, Lcom/android/settings_ext/ee;->qJ:Lcom/android/settings_ext/MiuiSecurityBluetoothMatchDeviceFragment;
 
-    invoke-virtual {v1}, Lcom/android/settings/MiuiSecurityBluetoothMatchDeviceFragment;->finish()V
+    invoke-virtual {v1}, Lcom/android/settings_ext/MiuiSecurityBluetoothMatchDeviceFragment;->finish()V
 
     .line 307
     new-instance v1, Landroid/os/Bundle;
@@ -78,15 +78,15 @@
     invoke-virtual {v1, v2, v3}, Landroid/os/Bundle;->putInt(Ljava/lang/String;I)V
 
     .line 309
-    check-cast v0, Lcom/android/settings/SettingsPreferenceFragment;
+    check-cast v0, Lcom/android/settings_ext/SettingsPreferenceFragment;
 
-    iget-object v2, p0, Lcom/android/settings/ee;->qJ:Lcom/android/settings/MiuiSecurityBluetoothMatchDeviceFragment;
+    iget-object v2, p0, Lcom/android/settings_ext/ee;->qJ:Lcom/android/settings_ext/MiuiSecurityBluetoothMatchDeviceFragment;
 
-    invoke-virtual {v2}, Lcom/android/settings/MiuiSecurityBluetoothMatchDeviceFragment;->getTargetRequestCode()I
+    invoke-virtual {v2}, Lcom/android/settings_ext/MiuiSecurityBluetoothMatchDeviceFragment;->getTargetRequestCode()I
 
     move-result v2
 
-    invoke-virtual {v0, v2, v1}, Lcom/android/settings/SettingsPreferenceFragment;->a(ILandroid/os/Bundle;)V
+    invoke-virtual {v0, v2, v1}, Lcom/android/settings_ext/SettingsPreferenceFragment;->a(ILandroid/os/Bundle;)V
 
     goto :goto_0
 .end method

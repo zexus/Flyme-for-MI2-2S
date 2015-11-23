@@ -14,13 +14,13 @@
     <Preference android:persistent="false" android:title="@string/wifi_priority_settings_title" android:key="priority_settings" android:summary="@string/wifi_priority_settings_summary" android:dependency="priority_type" />
     <Preference android:title="@string/wifi_advanced_mac_address_title" android:key="mac_address" style="?android:attr/preferenceInformationStyle" />
     <Preference android:title="@string/wifi_advanced_ip_address_title" android:key="current_ip_address" style="?android:attr/preferenceInformationStyle" />
-    <Preference android:persistent="false" android:title="@string/wifi_menu_p2p" android:key="wifi_direct" android:fragment="com.android.settings.wifi.p2p.WifiP2pSettings" />
+    <Preference android:persistent="false" android:title="@string/wifi_menu_p2p" android:key="wifi_direct" android:fragment="com.android.settings_ext.wifi.p2p.WifiP2pSettings" />
     <PreferenceCategory android:title="@string/wifi_wapi_cert_mgmt_titlebar" android:key="wapi_cert_category">
         <Preference android:persistent="false" android:title="@string/wifi_wapi_cert_install" android:key="wapi_cert_install" />
         <Preference android:persistent="false" android:title="@string/wifi_wapi_cert_uninstall" android:key="wapi_cert_uninstall" />
     </PreferenceCategory>
     <PreferenceCategory android:title="@string/wps_category">
-        <Preference android:persistent="false" android:title="@string/wps_connect_title" android:key="wps_connect" android:summary="@string/wps_connect_summary" android:fragment="com.android.settings.wifi.WpsFragment" />
-        <Preference android:persistent="false" android:title="@string/wifi_menu_wps_pin" android:key="wps_pin" android:summary="@string/wps_connect_summary" android:fragment="com.android.settings.wifi.WpsFragment" />
+        <Preference android:persistent="false" android:title="@string/wps_connect_title" android:key="wps_connect" android:summary="@string/wps_connect_summary" android:fragment="com.android.settings_ext.wifi.WpsFragment" />
+        <Preference android:persistent="false" android:title="@string/wifi_menu_wps_pin" android:key="wps_pin" android:summary="@string/wps_connect_summary" android:fragment="com.android.settings_ext.wifi.WpsFragment" />
     </PreferenceCategory>
 </PreferenceScreen>

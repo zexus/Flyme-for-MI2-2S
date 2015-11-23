@@ -1,22 +1,22 @@
-.class Lcom/android/settings/dndmode/y;
+.class Lcom/android/settings_ext/dndmode/y;
 .super Ljava/lang/Object;
 .source "VipCallSettingsFragment.java"
 
 # interfaces
-.implements Lcom/android/settings/dndmode/C;
+.implements Lcom/android/settings_ext/dndmode/C;
 
 
 # instance fields
-.field final synthetic Xs:Lcom/android/settings/dndmode/u;
+.field final synthetic Xs:Lcom/android/settings_ext/dndmode/u;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/dndmode/u;)V
+.method constructor <init>(Lcom/android/settings_ext/dndmode/u;)V
     .locals 0
 
     .prologue
     .line 235
-    iput-object p1, p0, Lcom/android/settings/dndmode/y;->Xs:Lcom/android/settings/dndmode/u;
+    iput-object p1, p0, Lcom/android/settings_ext/dndmode/y;->Xs:Lcom/android/settings_ext/dndmode/u;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -37,9 +37,9 @@
     .line 239
     new-instance v1, Landroid/app/AlertDialog$Builder;
 
-    iget-object v2, p0, Lcom/android/settings/dndmode/y;->Xs:Lcom/android/settings/dndmode/u;
+    iget-object v2, p0, Lcom/android/settings_ext/dndmode/y;->Xs:Lcom/android/settings_ext/dndmode/u;
 
-    invoke-static {v2}, Lcom/android/settings/dndmode/u;->a(Lcom/android/settings/dndmode/u;)Lmiui/app/Activity;
+    invoke-static {v2}, Lcom/android/settings_ext/dndmode/u;->a(Lcom/android/settings_ext/dndmode/u;)Lmiui/app/Activity;
 
     move-result-object v2
 
@@ -61,9 +61,9 @@
 
     const v2, 0x7f090a7a
 
-    new-instance v3, Lcom/android/settings/dndmode/z;
+    new-instance v3, Lcom/android/settings_ext/dndmode/z;
 
-    invoke-direct {v3, p0, v0}, Lcom/android/settings/dndmode/z;-><init>(Lcom/android/settings/dndmode/y;Ljava/lang/String;)V
+    invoke-direct {v3, p0, v0}, Lcom/android/settings_ext/dndmode/z;-><init>(Lcom/android/settings_ext/dndmode/y;Ljava/lang/String;)V
 
     invoke-virtual {v1, v2, v3}, Landroid/app/AlertDialog$Builder;->setPositiveButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 

@@ -1,4 +1,4 @@
-.class Lcom/android/settings/applications/InstalledAppDetailsFragment$MyAlertDialogFragment$7;
+.class Lcom/android/settings_ext/applications/InstalledAppDetailsFragment$MyAlertDialogFragment$7;
 .super Ljava/lang/Object;
 .source "InstalledAppDetailsFragment.java"
 
@@ -7,16 +7,16 @@
 
 
 # instance fields
-.field final synthetic GG:Lcom/android/settings/applications/InstalledAppDetailsFragment$MyAlertDialogFragment;
+.field final synthetic GG:Lcom/android/settings_ext/applications/InstalledAppDetailsFragment$MyAlertDialogFragment;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/applications/InstalledAppDetailsFragment$MyAlertDialogFragment;)V
+.method constructor <init>(Lcom/android/settings_ext/applications/InstalledAppDetailsFragment$MyAlertDialogFragment;)V
     .locals 0
 
     .prologue
     .line 867
-    iput-object p1, p0, Lcom/android/settings/applications/InstalledAppDetailsFragment$MyAlertDialogFragment$7;->GG:Lcom/android/settings/applications/InstalledAppDetailsFragment$MyAlertDialogFragment;
+    iput-object p1, p0, Lcom/android/settings_ext/applications/InstalledAppDetailsFragment$MyAlertDialogFragment$7;->GG:Lcom/android/settings_ext/applications/InstalledAppDetailsFragment$MyAlertDialogFragment;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -30,19 +30,19 @@
 
     .prologue
     .line 870
-    iget-object v0, p0, Lcom/android/settings/applications/InstalledAppDetailsFragment$MyAlertDialogFragment$7;->GG:Lcom/android/settings/applications/InstalledAppDetailsFragment$MyAlertDialogFragment;
+    iget-object v0, p0, Lcom/android/settings_ext/applications/InstalledAppDetailsFragment$MyAlertDialogFragment$7;->GG:Lcom/android/settings_ext/applications/InstalledAppDetailsFragment$MyAlertDialogFragment;
 
-    invoke-virtual {v0}, Lcom/android/settings/applications/InstalledAppDetailsFragment$MyAlertDialogFragment;->jm()Lcom/android/settings/applications/InstalledAppDetailsFragment;
+    invoke-virtual {v0}, Lcom/android/settings_ext/applications/InstalledAppDetailsFragment$MyAlertDialogFragment;->jm()Lcom/android/settings_ext/applications/InstalledAppDetailsFragment;
 
     move-result-object v0
 
-    invoke-static {v0}, Lcom/android/settings/applications/InstalledAppDetailsFragment;->e(Lcom/android/settings/applications/InstalledAppDetailsFragment;)Landroid/preference/CheckBoxPreference;
+    invoke-static {v0}, Lcom/android/settings_ext/applications/InstalledAppDetailsFragment;->e(Lcom/android/settings_ext/applications/InstalledAppDetailsFragment;)Landroid/preference/CheckBoxPreference;
 
     move-result-object v1
 
-    iget-object v0, p0, Lcom/android/settings/applications/InstalledAppDetailsFragment$MyAlertDialogFragment$7;->GG:Lcom/android/settings/applications/InstalledAppDetailsFragment$MyAlertDialogFragment;
+    iget-object v0, p0, Lcom/android/settings_ext/applications/InstalledAppDetailsFragment$MyAlertDialogFragment$7;->GG:Lcom/android/settings_ext/applications/InstalledAppDetailsFragment$MyAlertDialogFragment;
 
-    invoke-static {v0}, Lcom/android/settings/applications/InstalledAppDetailsFragment$MyAlertDialogFragment;->a(Lcom/android/settings/applications/InstalledAppDetailsFragment$MyAlertDialogFragment;)Z
+    invoke-static {v0}, Lcom/android/settings_ext/applications/InstalledAppDetailsFragment$MyAlertDialogFragment;->a(Lcom/android/settings_ext/applications/InstalledAppDetailsFragment$MyAlertDialogFragment;)Z
 
     move-result v0
 

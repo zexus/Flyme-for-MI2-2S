@@ -1,4 +1,4 @@
-.class interface abstract Lcom/android/settings/bluetooth/BluetoothEventManager$Handler;
+.class interface abstract Lcom/android/settings_ext/bluetooth/BluetoothEventManager$Handler;
 .super Ljava/lang/Object;
 .source "BluetoothEventManager.java"
 

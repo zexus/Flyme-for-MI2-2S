@@ -1,4 +1,4 @@
-.class public Lcom/android/settings/MasterClear;
+.class public Lcom/android/settings_ext/MasterClear;
 .super Landroid/app/Fragment;
 .source "MasterClear.java"
 
@@ -24,43 +24,43 @@
     invoke-direct {p0}, Landroid/app/Fragment;-><init>()V
 
     .line 110
-    new-instance v0, Lcom/android/settings/cT;
+    new-instance v0, Lcom/android/settings_ext/cT;
 
-    invoke-direct {v0, p0}, Lcom/android/settings/cT;-><init>(Lcom/android/settings/MasterClear;)V
+    invoke-direct {v0, p0}, Lcom/android/settings_ext/cT;-><init>(Lcom/android/settings_ext/MasterClear;)V
 
-    iput-object v0, p0, Lcom/android/settings/MasterClear;->fp:Landroid/view/View$OnClickListener;
+    iput-object v0, p0, Lcom/android/settings_ext/MasterClear;->fp:Landroid/view/View$OnClickListener;
 
     return-void
 .end method
 
-.method static synthetic a(Lcom/android/settings/MasterClear;)V
+.method static synthetic a(Lcom/android/settings_ext/MasterClear;)V
     .locals 0
 
     .prologue
     .line 54
-    invoke-direct {p0}, Lcom/android/settings/MasterClear;->ej()V
+    invoke-direct {p0}, Lcom/android/settings_ext/MasterClear;->ej()V
 
     return-void
 .end method
 
-.method static synthetic a(Lcom/android/settings/MasterClear;I)Z
+.method static synthetic a(Lcom/android/settings_ext/MasterClear;I)Z
     .locals 1
 
     .prologue
     .line 54
-    invoke-direct {p0, p1}, Lcom/android/settings/MasterClear;->l(I)Z
+    invoke-direct {p0, p1}, Lcom/android/settings_ext/MasterClear;->l(I)Z
 
     move-result v0
 
     return v0
 .end method
 
-.method static synthetic b(Lcom/android/settings/MasterClear;)Landroid/widget/CheckBox;
+.method static synthetic b(Lcom/android/settings_ext/MasterClear;)Landroid/widget/CheckBox;
     .locals 1
 
     .prologue
     .line 54
-    iget-object v0, p0, Lcom/android/settings/MasterClear;->nZ:Landroid/widget/CheckBox;
+    iget-object v0, p0, Lcom/android/settings_ext/MasterClear;->nZ:Landroid/widget/CheckBox;
 
     return-object v0
 .end method
@@ -72,14 +72,14 @@
     .line 98
     new-instance v1, Landroid/preference/Preference;
 
-    invoke-virtual {p0}, Lcom/android/settings/MasterClear;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/MasterClear;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
     invoke-direct {v1, v0}, Landroid/preference/Preference;-><init>(Landroid/content/Context;)V
 
     .line 99
-    const-class v0, Lcom/android/settings/MasterClearConfirm;
+    const-class v0, Lcom/android/settings_ext/MasterClearConfirm;
 
     invoke-virtual {v0}, Ljava/lang/Class;->getName()Ljava/lang/String;
 
@@ -99,7 +99,7 @@
 
     const-string v2, "erase_sd"
 
-    iget-object v3, p0, Lcom/android/settings/MasterClear;->nZ:Landroid/widget/CheckBox;
+    iget-object v3, p0, Lcom/android/settings_ext/MasterClear;->nZ:Landroid/widget/CheckBox;
 
     invoke-virtual {v3}, Landroid/widget/CheckBox;->isChecked()Z
 
@@ -108,15 +108,15 @@
     invoke-virtual {v0, v2, v3}, Landroid/os/Bundle;->putBoolean(Ljava/lang/String;Z)V
 
     .line 102
-    invoke-virtual {p0}, Lcom/android/settings/MasterClear;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/MasterClear;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
-    check-cast v0, Lcom/android/settings/gh;
+    check-cast v0, Lcom/android/settings_ext/gh;
 
     const/4 v2, 0x0
 
-    invoke-virtual {v0, v2, v1}, Lcom/android/settings/gh;->onPreferenceStartFragment(Landroid/preference/PreferenceFragment;Landroid/preference/Preference;)Z
+    invoke-virtual {v0, v2, v1}, Lcom/android/settings_ext/gh;->onPreferenceStartFragment(Landroid/preference/PreferenceFragment;Landroid/preference/Preference;)Z
 
     .line 103
     return-void
@@ -131,14 +131,14 @@
     const/4 v1, 0x0
 
     .line 134
-    iget-object v0, p0, Lcom/android/settings/MasterClear;->fm:Landroid/widget/Button;
+    iget-object v0, p0, Lcom/android/settings_ext/MasterClear;->fm:Landroid/widget/Button;
 
-    iget-object v2, p0, Lcom/android/settings/MasterClear;->fp:Landroid/view/View$OnClickListener;
+    iget-object v2, p0, Lcom/android/settings_ext/MasterClear;->fp:Landroid/view/View$OnClickListener;
 
     invoke-virtual {v0, v2}, Landroid/widget/Button;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     .line 135
-    iget-object v0, p0, Lcom/android/settings/MasterClear;->fh:Landroid/view/View;
+    iget-object v0, p0, Lcom/android/settings_ext/MasterClear;->fh:Landroid/view/View;
 
     const v2, 0x7f10012f
 
@@ -146,10 +146,10 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/MasterClear;->nY:Landroid/view/View;
+    iput-object v0, p0, Lcom/android/settings_ext/MasterClear;->nY:Landroid/view/View;
 
     .line 136
-    iget-object v0, p0, Lcom/android/settings/MasterClear;->fh:Landroid/view/View;
+    iget-object v0, p0, Lcom/android/settings_ext/MasterClear;->fh:Landroid/view/View;
 
     const v2, 0x7f100130
 
@@ -159,7 +159,7 @@
 
     check-cast v0, Landroid/widget/CheckBox;
 
-    iput-object v0, p0, Lcom/android/settings/MasterClear;->nZ:Landroid/widget/CheckBox;
+    iput-object v0, p0, Lcom/android/settings_ext/MasterClear;->nZ:Landroid/widget/CheckBox;
 
     .line 145
     invoke-static {}, Landroid/os/Environment;->isExternalStorageEmulated()Z
@@ -175,7 +175,7 @@
 
     if-nez v2, :cond_2
 
-    invoke-direct {p0}, Lcom/android/settings/MasterClear;->el()Z
+    invoke-direct {p0}, Lcom/android/settings_ext/MasterClear;->el()Z
 
     move-result v2
 
@@ -183,12 +183,12 @@
 
     .line 148
     :cond_0
-    iget-object v2, p0, Lcom/android/settings/MasterClear;->nY:Landroid/view/View;
+    iget-object v2, p0, Lcom/android/settings_ext/MasterClear;->nY:Landroid/view/View;
 
     invoke-virtual {v2, v4}, Landroid/view/View;->setVisibility(I)V
 
     .line 150
-    iget-object v2, p0, Lcom/android/settings/MasterClear;->fh:Landroid/view/View;
+    iget-object v2, p0, Lcom/android/settings_ext/MasterClear;->fh:Landroid/view/View;
 
     const v3, 0x7f10012e
 
@@ -200,7 +200,7 @@
     invoke-virtual {v2, v4}, Landroid/view/View;->setVisibility(I)V
 
     .line 153
-    iget-object v2, p0, Lcom/android/settings/MasterClear;->fh:Landroid/view/View;
+    iget-object v2, p0, Lcom/android/settings_ext/MasterClear;->fh:Landroid/view/View;
 
     const v3, 0x7f10012b
 
@@ -212,7 +212,7 @@
     invoke-virtual {v2, v1}, Landroid/view/View;->setVisibility(I)V
 
     .line 158
-    iget-object v2, p0, Lcom/android/settings/MasterClear;->nZ:Landroid/widget/CheckBox;
+    iget-object v2, p0, Lcom/android/settings_ext/MasterClear;->nZ:Landroid/widget/CheckBox;
 
     if-nez v0, :cond_1
 
@@ -223,7 +223,7 @@
 
     .line 169
     :goto_1
-    invoke-direct {p0}, Lcom/android/settings/MasterClear;->em()V
+    invoke-direct {p0}, Lcom/android/settings_ext/MasterClear;->em()V
 
     .line 170
     return-void
@@ -236,11 +236,11 @@
 
     .line 160
     :cond_2
-    iget-object v0, p0, Lcom/android/settings/MasterClear;->nY:Landroid/view/View;
+    iget-object v0, p0, Lcom/android/settings_ext/MasterClear;->nY:Landroid/view/View;
 
-    new-instance v1, Lcom/android/settings/cU;
+    new-instance v1, Lcom/android/settings_ext/cU;
 
-    invoke-direct {v1, p0}, Lcom/android/settings/cU;-><init>(Lcom/android/settings/MasterClear;)V
+    invoke-direct {v1, p0}, Lcom/android/settings_ext/cU;-><init>(Lcom/android/settings_ext/MasterClear;)V
 
     invoke-virtual {v0, v1}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
@@ -283,7 +283,7 @@
 
     .prologue
     .line 178
-    iget-object v0, p0, Lcom/android/settings/MasterClear;->fh:Landroid/view/View;
+    iget-object v0, p0, Lcom/android/settings_ext/MasterClear;->fh:Landroid/view/View;
 
     const v1, 0x7f10012c
 
@@ -292,7 +292,7 @@
     move-result-object v5
 
     .line 179
-    iget-object v0, p0, Lcom/android/settings/MasterClear;->fh:Landroid/view/View;
+    iget-object v0, p0, Lcom/android/settings_ext/MasterClear;->fh:Landroid/view/View;
 
     const v1, 0x7f10012d
 
@@ -306,7 +306,7 @@
     invoke-virtual {v0}, Landroid/widget/LinearLayout;->removeAllViews()V
 
     .line 182
-    invoke-virtual {p0}, Lcom/android/settings/MasterClear;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/MasterClear;->getActivity()Landroid/app/Activity;
 
     move-result-object v6
 
@@ -582,7 +582,7 @@
 
     .prologue
     .line 73
-    invoke-virtual {p0}, Lcom/android/settings/MasterClear;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/MasterClear;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
@@ -591,13 +591,13 @@
     move-result-object v0
 
     .line 74
-    new-instance v1, Lcom/android/settings/ap;
+    new-instance v1, Lcom/android/settings_ext/ap;
 
-    invoke-virtual {p0}, Lcom/android/settings/MasterClear;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/MasterClear;->getActivity()Landroid/app/Activity;
 
     move-result-object v2
 
-    invoke-direct {v1, v2, p0}, Lcom/android/settings/ap;-><init>(Landroid/app/Activity;Landroid/app/Fragment;)V
+    invoke-direct {v1, v2, p0}, Lcom/android/settings_ext/ap;-><init>(Landroid/app/Activity;Landroid/app/Fragment;)V
 
     const v2, 0x7f09047d
 
@@ -611,7 +611,7 @@
 
     move-result-object v0
 
-    invoke-virtual {v1, p1, v2, v0}, Lcom/android/settings/ap;->launchConfirmationActivity(ILjava/lang/CharSequence;Ljava/lang/CharSequence;)Z
+    invoke-virtual {v1, p1, v2, v0}, Lcom/android/settings_ext/ap;->launchConfirmationActivity(ILjava/lang/CharSequence;Ljava/lang/CharSequence;)Z
 
     move-result v0
 
@@ -643,13 +643,13 @@
     if-ne p2, v0, :cond_1
 
     .line 91
-    invoke-direct {p0}, Lcom/android/settings/MasterClear;->ej()V
+    invoke-direct {p0}, Lcom/android/settings_ext/MasterClear;->ej()V
 
     goto :goto_0
 
     .line 93
     :cond_1
-    invoke-direct {p0}, Lcom/android/settings/MasterClear;->ek()V
+    invoke-direct {p0}, Lcom/android/settings_ext/MasterClear;->ek()V
 
     goto :goto_0
 .end method
@@ -671,7 +671,7 @@
 
     if-eqz v0, :cond_0
 
-    invoke-virtual {p0}, Lcom/android/settings/MasterClear;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/MasterClear;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
@@ -707,13 +707,13 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/MasterClear;->fh:Landroid/view/View;
+    iput-object v0, p0, Lcom/android/settings_ext/MasterClear;->fh:Landroid/view/View;
 
     .line 247
-    invoke-direct {p0}, Lcom/android/settings/MasterClear;->ek()V
+    invoke-direct {p0}, Lcom/android/settings_ext/MasterClear;->ek()V
 
     .line 248
-    iget-object v0, p0, Lcom/android/settings/MasterClear;->fh:Landroid/view/View;
+    iget-object v0, p0, Lcom/android/settings_ext/MasterClear;->fh:Landroid/view/View;
 
     goto :goto_0
 .end method

@@ -9,5 +9,5 @@
     <ListPreference android:title="@string/date_time_date_format" android:key="date_format" android:summary="mm/dd/yyyy" />
     <PreferenceCategory android:title="@string/timezone_settings" />
     <CheckBoxPreference android:title="@string/zone_auto" android:key="auto_zone" android:summaryOn="@string/zone_auto_summaryOn" android:summaryOff="@string/zone_auto_summaryOff" />
-    <PreferenceScreen android:title="@string/date_time_set_timezone" android:key="timezone" android:summary="GMT-8:00" android:fragment="com.android.settings.ZonePicker" />
+    <PreferenceScreen android:title="@string/date_time_set_timezone" android:key="timezone" android:summary="GMT-8:00" android:fragment="com.android.settings_ext.ZonePicker" />
 </PreferenceScreen>

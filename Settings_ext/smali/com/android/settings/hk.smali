@@ -1,4 +1,4 @@
-.class public Lcom/android/settings/hk;
+.class public Lcom/android/settings_ext/hk;
 .super Ljava/lang/Object;
 .source "UserSpinnerAdapter.java"
 
@@ -20,10 +20,10 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 50
-    iput-object p1, p0, Lcom/android/settings/hk;->zA:Landroid/os/UserHandle;
+    iput-object p1, p0, Lcom/android/settings_ext/hk;->zA:Landroid/os/UserHandle;
 
     .line 51
-    iget-object v0, p0, Lcom/android/settings/hk;->zA:Landroid/os/UserHandle;
+    iget-object v0, p0, Lcom/android/settings_ext/hk;->zA:Landroid/os/UserHandle;
 
     invoke-virtual {v0}, Landroid/os/UserHandle;->getIdentifier()I
 
@@ -47,7 +47,7 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/hk;->name:Ljava/lang/String;
+    iput-object v0, p0, Lcom/android/settings_ext/hk;->name:Ljava/lang/String;
 
     .line 54
     invoke-static {}, Landroid/content/res/Resources;->getSystem()Landroid/content/res/Resources;
@@ -60,7 +60,7 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/hk;->icon:Landroid/graphics/drawable/Drawable;
+    iput-object v0, p0, Lcom/android/settings_ext/hk;->icon:Landroid/graphics/drawable/Drawable;
 
     .line 65
     :goto_0
@@ -70,7 +70,7 @@
     :cond_0
     iget-object v1, v0, Landroid/content/pm/UserInfo;->name:Ljava/lang/String;
 
-    iput-object v1, p0, Lcom/android/settings/hk;->name:Ljava/lang/String;
+    iput-object v1, p0, Lcom/android/settings_ext/hk;->name:Ljava/lang/String;
 
     .line 58
     iget v0, v0, Landroid/content/pm/UserInfo;->id:I
@@ -95,7 +95,7 @@
 
     invoke-direct {v1, v2, v0}, Landroid/graphics/drawable/BitmapDrawable;-><init>(Landroid/content/res/Resources;Landroid/graphics/Bitmap;)V
 
-    iput-object v1, p0, Lcom/android/settings/hk;->icon:Landroid/graphics/drawable/Drawable;
+    iput-object v1, p0, Lcom/android/settings_ext/hk;->icon:Landroid/graphics/drawable/Drawable;
 
     goto :goto_0
 
@@ -107,37 +107,37 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/hk;->icon:Landroid/graphics/drawable/Drawable;
+    iput-object v0, p0, Lcom/android/settings_ext/hk;->icon:Landroid/graphics/drawable/Drawable;
 
     goto :goto_0
 .end method
 
-.method static synthetic a(Lcom/android/settings/hk;)Landroid/os/UserHandle;
+.method static synthetic a(Lcom/android/settings_ext/hk;)Landroid/os/UserHandle;
     .locals 1
 
     .prologue
     .line 44
-    iget-object v0, p0, Lcom/android/settings/hk;->zA:Landroid/os/UserHandle;
+    iget-object v0, p0, Lcom/android/settings_ext/hk;->zA:Landroid/os/UserHandle;
 
     return-object v0
 .end method
 
-.method static synthetic b(Lcom/android/settings/hk;)Landroid/graphics/drawable/Drawable;
+.method static synthetic b(Lcom/android/settings_ext/hk;)Landroid/graphics/drawable/Drawable;
     .locals 1
 
     .prologue
     .line 44
-    iget-object v0, p0, Lcom/android/settings/hk;->icon:Landroid/graphics/drawable/Drawable;
+    iget-object v0, p0, Lcom/android/settings_ext/hk;->icon:Landroid/graphics/drawable/Drawable;
 
     return-object v0
 .end method
 
-.method static synthetic c(Lcom/android/settings/hk;)Ljava/lang/String;
+.method static synthetic c(Lcom/android/settings_ext/hk;)Ljava/lang/String;
     .locals 1
 
     .prologue
     .line 44
-    iget-object v0, p0, Lcom/android/settings/hk;->name:Ljava/lang/String;
+    iget-object v0, p0, Lcom/android/settings_ext/hk;->name:Ljava/lang/String;
 
     return-object v0
 .end method

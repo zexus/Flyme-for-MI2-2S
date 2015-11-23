@@ -1,4 +1,4 @@
-.class Lcom/android/settings/ds;
+.class Lcom/android/settings_ext/ds;
 .super Ljava/lang/Object;
 .source "MiuiBackgroundDataEnable.java"
 
@@ -7,16 +7,16 @@
 
 
 # instance fields
-.field final synthetic ow:Lcom/android/settings/dq;
+.field final synthetic ow:Lcom/android/settings_ext/dq;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/dq;)V
+.method constructor <init>(Lcom/android/settings_ext/dq;)V
     .locals 0
 
     .prologue
     .line 82
-    iput-object p1, p0, Lcom/android/settings/ds;->ow:Lcom/android/settings/dq;
+    iput-object p1, p0, Lcom/android/settings_ext/ds;->ow:Lcom/android/settings_ext/dq;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -30,9 +30,9 @@
 
     .prologue
     .line 85
-    iget-object v0, p0, Lcom/android/settings/ds;->ow:Lcom/android/settings/dq;
+    iget-object v0, p0, Lcom/android/settings_ext/ds;->ow:Lcom/android/settings_ext/dq;
 
-    iget-object v0, v0, Lcom/android/settings/dq;->bU:Lmiui/widget/SlidingButton;
+    iget-object v0, v0, Lcom/android/settings_ext/dq;->bU:Lmiui/widget/SlidingButton;
 
     const/4 v1, 0x0
 

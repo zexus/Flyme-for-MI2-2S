@@ -1,4 +1,4 @@
-.class public Lcom/android/settings/I;
+.class public Lcom/android/settings_ext/I;
 .super Landroid/widget/ArrayAdapter;
 .source "AppPicker.java"
 
@@ -6,20 +6,20 @@
 # instance fields
 .field private final bj:Ljava/util/List;
 
-.field final synthetic bk:Lcom/android/settings/AppPicker;
+.field final synthetic bk:Lcom/android/settings_ext/AppPicker;
 
 .field private final mInflater:Landroid/view/LayoutInflater;
 
 
 # direct methods
-.method public constructor <init>(Lcom/android/settings/AppPicker;Landroid/content/Context;)V
+.method public constructor <init>(Lcom/android/settings_ext/AppPicker;Landroid/content/Context;)V
     .locals 6
 
     .prologue
     const/4 v2, 0x0
 
     .line 86
-    iput-object p1, p0, Lcom/android/settings/I;->bk:Lcom/android/settings/AppPicker;
+    iput-object p1, p0, Lcom/android/settings_ext/I;->bk:Lcom/android/settings_ext/AppPicker;
 
     .line 87
     invoke-direct {p0, p2, v2}, Landroid/widget/ArrayAdapter;-><init>(Landroid/content/Context;I)V
@@ -29,7 +29,7 @@
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
-    iput-object v0, p0, Lcom/android/settings/I;->bj:Ljava/util/List;
+    iput-object v0, p0, Lcom/android/settings_ext/I;->bj:Ljava/util/List;
 
     .line 88
     const-string v0, "layout_inflater"
@@ -40,7 +40,7 @@
 
     check-cast v0, Landroid/view/LayoutInflater;
 
-    iput-object v0, p0, Lcom/android/settings/I;->mInflater:Landroid/view/LayoutInflater;
+    iput-object v0, p0, Lcom/android/settings_ext/I;->mInflater:Landroid/view/LayoutInflater;
 
     .line 89
     invoke-virtual {p2}, Landroid/content/Context;->getPackageManager()Landroid/content/pm/PackageManager;
@@ -104,17 +104,17 @@
 
     .line 102
     :cond_2
-    new-instance v4, Lcom/android/settings/J;
+    new-instance v4, Lcom/android/settings_ext/J;
 
-    invoke-direct {v4, p1}, Lcom/android/settings/J;-><init>(Lcom/android/settings/AppPicker;)V
+    invoke-direct {v4, p1}, Lcom/android/settings_ext/J;-><init>(Lcom/android/settings_ext/AppPicker;)V
 
     .line 103
-    iput-object v0, v4, Lcom/android/settings/J;->bl:Landroid/content/pm/ApplicationInfo;
+    iput-object v0, v4, Lcom/android/settings_ext/J;->bl:Landroid/content/pm/ApplicationInfo;
 
     .line 104
-    iget-object v0, v4, Lcom/android/settings/J;->bl:Landroid/content/pm/ApplicationInfo;
+    iget-object v0, v4, Lcom/android/settings_ext/J;->bl:Landroid/content/pm/ApplicationInfo;
 
-    invoke-virtual {p1}, Lcom/android/settings/AppPicker;->getPackageManager()Landroid/content/pm/PackageManager;
+    invoke-virtual {p1}, Lcom/android/settings_ext/AppPicker;->getPackageManager()Landroid/content/pm/PackageManager;
 
     move-result-object v5
 
@@ -126,10 +126,10 @@
 
     move-result-object v0
 
-    iput-object v0, v4, Lcom/android/settings/J;->label:Ljava/lang/CharSequence;
+    iput-object v0, v4, Lcom/android/settings_ext/J;->label:Ljava/lang/CharSequence;
 
     .line 105
-    iget-object v0, p0, Lcom/android/settings/I;->bj:Ljava/util/List;
+    iget-object v0, p0, Lcom/android/settings_ext/I;->bj:Ljava/util/List;
 
     invoke-interface {v0, v4}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
@@ -137,18 +137,18 @@
 
     .line 107
     :cond_3
-    iget-object v0, p0, Lcom/android/settings/I;->bj:Ljava/util/List;
+    iget-object v0, p0, Lcom/android/settings_ext/I;->bj:Ljava/util/List;
 
-    invoke-static {}, Lcom/android/settings/AppPicker;->L()Ljava/util/Comparator;
+    invoke-static {}, Lcom/android/settings_ext/AppPicker;->L()Ljava/util/Comparator;
 
     move-result-object v1
 
     invoke-static {v0, v1}, Ljava/util/Collections;->sort(Ljava/util/List;Ljava/util/Comparator;)V
 
     .line 108
-    new-instance v0, Lcom/android/settings/J;
+    new-instance v0, Lcom/android/settings_ext/J;
 
-    invoke-direct {v0, p1}, Lcom/android/settings/J;-><init>(Lcom/android/settings/AppPicker;)V
+    invoke-direct {v0, p1}, Lcom/android/settings_ext/J;-><init>(Lcom/android/settings_ext/AppPicker;)V
 
     .line 109
     const v1, 0x7f090810
@@ -157,17 +157,17 @@
 
     move-result-object v1
 
-    iput-object v1, v0, Lcom/android/settings/J;->label:Ljava/lang/CharSequence;
+    iput-object v1, v0, Lcom/android/settings_ext/J;->label:Ljava/lang/CharSequence;
 
     .line 110
-    iget-object v1, p0, Lcom/android/settings/I;->bj:Ljava/util/List;
+    iget-object v1, p0, Lcom/android/settings_ext/I;->bj:Ljava/util/List;
 
     invoke-interface {v1, v2, v0}, Ljava/util/List;->add(ILjava/lang/Object;)V
 
     .line 111
-    iget-object v0, p0, Lcom/android/settings/I;->bj:Ljava/util/List;
+    iget-object v0, p0, Lcom/android/settings_ext/I;->bj:Ljava/util/List;
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/I;->addAll(Ljava/util/Collection;)V
+    invoke-virtual {p0, v0}, Lcom/android/settings_ext/I;->addAll(Ljava/util/Collection;)V
 
     .line 112
     return-void
@@ -182,42 +182,42 @@
     const/16 v6, 0x8
 
     .line 118
-    iget-object v0, p0, Lcom/android/settings/I;->mInflater:Landroid/view/LayoutInflater;
+    iget-object v0, p0, Lcom/android/settings_ext/I;->mInflater:Landroid/view/LayoutInflater;
 
-    invoke-static {v0, p2}, Lcom/android/settings/applications/AppViewHolder;->a(Landroid/view/LayoutInflater;Landroid/view/View;)Lcom/android/settings/applications/AppViewHolder;
+    invoke-static {v0, p2}, Lcom/android/settings_ext/applications/AppViewHolder;->a(Landroid/view/LayoutInflater;Landroid/view/View;)Lcom/android/settings_ext/applications/AppViewHolder;
 
     move-result-object v1
 
     .line 119
-    iget-object v2, v1, Lcom/android/settings/applications/AppViewHolder;->Dy:Landroid/view/View;
+    iget-object v2, v1, Lcom/android/settings_ext/applications/AppViewHolder;->Dy:Landroid/view/View;
 
     .line 120
-    invoke-virtual {p0, p1}, Lcom/android/settings/I;->getItem(I)Ljava/lang/Object;
+    invoke-virtual {p0, p1}, Lcom/android/settings_ext/I;->getItem(I)Ljava/lang/Object;
 
     move-result-object v0
 
-    check-cast v0, Lcom/android/settings/J;
+    check-cast v0, Lcom/android/settings_ext/J;
 
     .line 121
-    iget-object v3, v1, Lcom/android/settings/applications/AppViewHolder;->Dz:Landroid/widget/TextView;
+    iget-object v3, v1, Lcom/android/settings_ext/applications/AppViewHolder;->Dz:Landroid/widget/TextView;
 
-    iget-object v4, v0, Lcom/android/settings/J;->label:Ljava/lang/CharSequence;
+    iget-object v4, v0, Lcom/android/settings_ext/J;->label:Ljava/lang/CharSequence;
 
     invoke-virtual {v3, v4}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
     .line 122
-    iget-object v3, v0, Lcom/android/settings/J;->bl:Landroid/content/pm/ApplicationInfo;
+    iget-object v3, v0, Lcom/android/settings_ext/J;->bl:Landroid/content/pm/ApplicationInfo;
 
     if-eqz v3, :cond_0
 
     .line 123
-    iget-object v3, v1, Lcom/android/settings/applications/AppViewHolder;->DA:Landroid/widget/ImageView;
+    iget-object v3, v1, Lcom/android/settings_ext/applications/AppViewHolder;->DA:Landroid/widget/ImageView;
 
-    iget-object v4, v0, Lcom/android/settings/J;->bl:Landroid/content/pm/ApplicationInfo;
+    iget-object v4, v0, Lcom/android/settings_ext/J;->bl:Landroid/content/pm/ApplicationInfo;
 
-    iget-object v5, p0, Lcom/android/settings/I;->bk:Lcom/android/settings/AppPicker;
+    iget-object v5, p0, Lcom/android/settings_ext/I;->bk:Lcom/android/settings_ext/AppPicker;
 
-    invoke-virtual {v5}, Lcom/android/settings/AppPicker;->getPackageManager()Landroid/content/pm/PackageManager;
+    invoke-virtual {v5}, Lcom/android/settings_ext/AppPicker;->getPackageManager()Landroid/content/pm/PackageManager;
 
     move-result-object v5
 
@@ -228,9 +228,9 @@
     invoke-virtual {v3, v4}, Landroid/widget/ImageView;->setImageDrawable(Landroid/graphics/drawable/Drawable;)V
 
     .line 124
-    iget-object v3, v1, Lcom/android/settings/applications/AppViewHolder;->DB:Landroid/widget/TextView;
+    iget-object v3, v1, Lcom/android/settings_ext/applications/AppViewHolder;->DB:Landroid/widget/TextView;
 
-    iget-object v0, v0, Lcom/android/settings/J;->bl:Landroid/content/pm/ApplicationInfo;
+    iget-object v0, v0, Lcom/android/settings_ext/J;->bl:Landroid/content/pm/ApplicationInfo;
 
     iget-object v0, v0, Landroid/content/pm/ApplicationInfo;->packageName:Ljava/lang/String;
 
@@ -238,12 +238,12 @@
 
     .line 129
     :goto_0
-    iget-object v0, v1, Lcom/android/settings/applications/AppViewHolder;->DC:Landroid/widget/TextView;
+    iget-object v0, v1, Lcom/android/settings_ext/applications/AppViewHolder;->DC:Landroid/widget/TextView;
 
     invoke-virtual {v0, v6}, Landroid/widget/TextView;->setVisibility(I)V
 
     .line 130
-    iget-object v0, v1, Lcom/android/settings/applications/AppViewHolder;->DD:Landroid/widget/CheckBox;
+    iget-object v0, v1, Lcom/android/settings_ext/applications/AppViewHolder;->DD:Landroid/widget/CheckBox;
 
     invoke-virtual {v0, v6}, Landroid/widget/CheckBox;->setVisibility(I)V
 
@@ -252,14 +252,14 @@
 
     .line 126
     :cond_0
-    iget-object v0, v1, Lcom/android/settings/applications/AppViewHolder;->DA:Landroid/widget/ImageView;
+    iget-object v0, v1, Lcom/android/settings_ext/applications/AppViewHolder;->DA:Landroid/widget/ImageView;
 
     const/4 v3, 0x0
 
     invoke-virtual {v0, v3}, Landroid/widget/ImageView;->setImageDrawable(Landroid/graphics/drawable/Drawable;)V
 
     .line 127
-    iget-object v0, v1, Lcom/android/settings/applications/AppViewHolder;->DB:Landroid/widget/TextView;
+    iget-object v0, v1, Lcom/android/settings_ext/applications/AppViewHolder;->DB:Landroid/widget/TextView;
 
     const-string v3, ""
 

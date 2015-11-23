@@ -1,11 +1,11 @@
-.class public Lcom/android/settings/display/PaperModeFragment;
-.super Lcom/android/settings/SettingsPreferenceFragment;
+.class public Lcom/android/settings_ext/display/PaperModeFragment;
+.super Lcom/android/settings_ext/SettingsPreferenceFragment;
 .source "PaperModeFragment.java"
 
 # interfaces
 .implements Landroid/preference/Preference$OnPreferenceChangeListener;
 .implements Landroid/preference/Preference$OnPreferenceClickListener;
-.implements Lcom/android/settings/display/z;
+.implements Lcom/android/settings_ext/display/z;
 
 
 # instance fields
@@ -22,17 +22,17 @@
 
     .prologue
     .line 56
-    invoke-direct {p0}, Lcom/android/settings/SettingsPreferenceFragment;-><init>()V
+    invoke-direct {p0}, Lcom/android/settings_ext/SettingsPreferenceFragment;-><init>()V
 
     return-void
 .end method
 
-.method static synthetic a(Lcom/android/settings/display/PaperModeFragment;)I
+.method static synthetic a(Lcom/android/settings_ext/display/PaperModeFragment;)I
     .locals 1
 
     .prologue
     .line 56
-    invoke-direct {p0}, Lcom/android/settings/display/PaperModeFragment;->oG()I
+    invoke-direct {p0}, Lcom/android/settings_ext/display/PaperModeFragment;->oG()I
 
     move-result v0
 
@@ -44,7 +44,7 @@
 
     .prologue
     .line 176
-    invoke-virtual {p0}, Lcom/android/settings/display/PaperModeFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/display/PaperModeFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
@@ -80,12 +80,12 @@
     return v0
 .end method
 
-.method static synthetic b(Lcom/android/settings/display/PaperModeFragment;)Landroid/preference/CheckBoxPreference;
+.method static synthetic b(Lcom/android/settings_ext/display/PaperModeFragment;)Landroid/preference/CheckBoxPreference;
     .locals 1
 
     .prologue
     .line 56
-    iget-object v0, p0, Lcom/android/settings/display/PaperModeFragment;->VD:Landroid/preference/CheckBoxPreference;
+    iget-object v0, p0, Lcom/android/settings_ext/display/PaperModeFragment;->VD:Landroid/preference/CheckBoxPreference;
 
     return-object v0
 .end method
@@ -97,7 +97,7 @@
     const/4 v2, 0x1
 
     .line 181
-    invoke-direct {p0}, Lcom/android/settings/display/PaperModeFragment;->oF()I
+    invoke-direct {p0}, Lcom/android/settings_ext/display/PaperModeFragment;->oF()I
 
     move-result v0
 
@@ -115,7 +115,7 @@
     invoke-static {v0, v1}, Landroid/os/SystemProperties;->set(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 184
-    invoke-direct {p0}, Lcom/android/settings/display/PaperModeFragment;->oG()I
+    invoke-direct {p0}, Lcom/android/settings_ext/display/PaperModeFragment;->oG()I
 
     move-result v0
 
@@ -135,7 +135,7 @@
 
     .prologue
     .line 196
-    invoke-virtual {p0}, Lcom/android/settings/display/PaperModeFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/display/PaperModeFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
@@ -174,7 +174,7 @@
 
     .prologue
     .line 201
-    invoke-virtual {p0}, Lcom/android/settings/display/PaperModeFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/display/PaperModeFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
@@ -214,7 +214,7 @@
     if-eqz v0, :cond_0
 
     .line 164
-    const-class v0, Lcom/android/settings/display/PaperModeSetAppsFragment;
+    const-class v0, Lcom/android/settings_ext/display/PaperModeSetAppsFragment;
 
     invoke-virtual {v0}, Ljava/lang/Class;->getName()Ljava/lang/String;
 
@@ -230,7 +230,7 @@
 
     move-object v1, p0
 
-    invoke-virtual/range {v0 .. v5}, Lcom/android/settings/display/PaperModeFragment;->a(Landroid/app/Fragment;Ljava/lang/String;ILandroid/os/Bundle;I)Z
+    invoke-virtual/range {v0 .. v5}, Lcom/android/settings_ext/display/PaperModeFragment;->a(Landroid/app/Fragment;Ljava/lang/String;ILandroid/os/Bundle;I)Z
 
     .line 167
     :cond_0
@@ -246,28 +246,28 @@
     const/4 v3, 0x1
 
     .line 78
-    invoke-super {p0, p1}, Lcom/android/settings/SettingsPreferenceFragment;->onCreate(Landroid/os/Bundle;)V
+    invoke-super {p0, p1}, Lcom/android/settings_ext/SettingsPreferenceFragment;->onCreate(Landroid/os/Bundle;)V
 
     .line 79
     const v0, 0x7f06005a
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/display/PaperModeFragment;->addPreferencesFromResource(I)V
+    invoke-virtual {p0, v0}, Lcom/android/settings_ext/display/PaperModeFragment;->addPreferencesFromResource(I)V
 
     .line 80
     const-string v0, "paper_mode_enable"
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/display/PaperModeFragment;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v0}, Lcom/android/settings_ext/display/PaperModeFragment;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v0
 
     check-cast v0, Landroid/preference/CheckBoxPreference;
 
     .line 81
-    invoke-virtual {p0}, Lcom/android/settings/display/PaperModeFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/display/PaperModeFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v1
 
-    invoke-static {v1}, Lcom/android/settings/display/PaperModeFragment;->aI(Landroid/content/Context;)Z
+    invoke-static {v1}, Lcom/android/settings_ext/display/PaperModeFragment;->aI(Landroid/content/Context;)Z
 
     move-result v1
 
@@ -279,54 +279,54 @@
     .line 84
     const-string v1, "paper_mode_update_pkg_list"
 
-    invoke-virtual {p0, v1}, Lcom/android/settings/display/PaperModeFragment;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v1}, Lcom/android/settings_ext/display/PaperModeFragment;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v1
 
     check-cast v1, Landroid/preference/CheckBoxPreference;
 
-    iput-object v1, p0, Lcom/android/settings/display/PaperModeFragment;->VD:Landroid/preference/CheckBoxPreference;
+    iput-object v1, p0, Lcom/android/settings_ext/display/PaperModeFragment;->VD:Landroid/preference/CheckBoxPreference;
 
     .line 85
-    iget-object v1, p0, Lcom/android/settings/display/PaperModeFragment;->VD:Landroid/preference/CheckBoxPreference;
+    iget-object v1, p0, Lcom/android/settings_ext/display/PaperModeFragment;->VD:Landroid/preference/CheckBoxPreference;
 
-    invoke-virtual {p0}, Lcom/android/settings/display/PaperModeFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/display/PaperModeFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v2
 
-    invoke-static {v2}, Lcom/android/settings/display/d;->aA(Landroid/content/Context;)Z
+    invoke-static {v2}, Lcom/android/settings_ext/display/d;->aA(Landroid/content/Context;)Z
 
     move-result v2
 
     invoke-virtual {v1, v2}, Landroid/preference/CheckBoxPreference;->setChecked(Z)V
 
     .line 86
-    iget-object v1, p0, Lcom/android/settings/display/PaperModeFragment;->VD:Landroid/preference/CheckBoxPreference;
+    iget-object v1, p0, Lcom/android/settings_ext/display/PaperModeFragment;->VD:Landroid/preference/CheckBoxPreference;
 
     invoke-virtual {v1, p0}, Landroid/preference/CheckBoxPreference;->setOnPreferenceChangeListener(Landroid/preference/Preference$OnPreferenceChangeListener;)V
 
     .line 88
     const-string v1, "paper_mode_adjust_level"
 
-    invoke-virtual {p0, v1}, Lcom/android/settings/display/PaperModeFragment;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v1}, Lcom/android/settings_ext/display/PaperModeFragment;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v1
 
-    check-cast v1, Lcom/android/settings/SeekBarPreference;
+    check-cast v1, Lcom/android/settings_ext/SeekBarPreference;
 
     .line 89
     const/16 v2, 0x64
 
-    invoke-virtual {v1, v2}, Lcom/android/settings/SeekBarPreference;->setMax(I)V
+    invoke-virtual {v1, v2}, Lcom/android/settings_ext/SeekBarPreference;->setMax(I)V
 
     .line 90
-    invoke-virtual {v1}, Lcom/android/settings/SeekBarPreference;->getSharedPreferences()Landroid/content/SharedPreferences;
+    invoke-virtual {v1}, Lcom/android/settings_ext/SeekBarPreference;->getSharedPreferences()Landroid/content/SharedPreferences;
 
     move-result-object v2
 
     const-string v5, "paper_mode_adjust_level"
 
-    invoke-direct {p0}, Lcom/android/settings/display/PaperModeFragment;->oF()I
+    invoke-direct {p0}, Lcom/android/settings_ext/display/PaperModeFragment;->oF()I
 
     move-result v6
 
@@ -336,25 +336,25 @@
 
     move-result v2
 
-    invoke-virtual {v1, v2}, Lcom/android/settings/SeekBarPreference;->setProgress(I)V
+    invoke-virtual {v1, v2}, Lcom/android/settings_ext/SeekBarPreference;->setProgress(I)V
 
     .line 92
-    invoke-virtual {v1, v3}, Lcom/android/settings/SeekBarPreference;->J(Z)V
+    invoke-virtual {v1, v3}, Lcom/android/settings_ext/SeekBarPreference;->J(Z)V
 
     .line 93
-    invoke-virtual {v1, p0}, Lcom/android/settings/SeekBarPreference;->setOnPreferenceChangeListener(Landroid/preference/Preference$OnPreferenceChangeListener;)V
+    invoke-virtual {v1, p0}, Lcom/android/settings_ext/SeekBarPreference;->setOnPreferenceChangeListener(Landroid/preference/Preference$OnPreferenceChangeListener;)V
 
     .line 95
     const-string v1, "pape_mode_global"
 
-    invoke-virtual {p0, v1}, Lcom/android/settings/display/PaperModeFragment;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v1}, Lcom/android/settings_ext/display/PaperModeFragment;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v1
 
-    check-cast v1, Lcom/android/settings/display/PaperModePreference;
+    check-cast v1, Lcom/android/settings_ext/display/PaperModePreference;
 
     .line 96
-    invoke-direct {p0}, Lcom/android/settings/display/PaperModeFragment;->oG()I
+    invoke-direct {p0}, Lcom/android/settings_ext/display/PaperModeFragment;->oG()I
 
     move-result v2
 
@@ -363,22 +363,22 @@
     move v2, v3
 
     :goto_0
-    invoke-virtual {v1, v2}, Lcom/android/settings/display/PaperModePreference;->setChecked(Z)V
+    invoke-virtual {v1, v2}, Lcom/android/settings_ext/display/PaperModePreference;->setChecked(Z)V
 
     .line 97
-    invoke-virtual {v1, p0}, Lcom/android/settings/display/PaperModePreference;->setOnPreferenceClickListener(Landroid/preference/Preference$OnPreferenceClickListener;)V
+    invoke-virtual {v1, p0}, Lcom/android/settings_ext/display/PaperModePreference;->setOnPreferenceClickListener(Landroid/preference/Preference$OnPreferenceClickListener;)V
 
     .line 98
     const-string v2, "pape_mode_local"
 
-    invoke-virtual {p0, v2}, Lcom/android/settings/display/PaperModeFragment;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v2}, Lcom/android/settings_ext/display/PaperModeFragment;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v2
 
-    check-cast v2, Lcom/android/settings/display/PaperModePreference;
+    check-cast v2, Lcom/android/settings_ext/display/PaperModePreference;
 
     .line 99
-    invoke-direct {p0}, Lcom/android/settings/display/PaperModeFragment;->oG()I
+    invoke-direct {p0}, Lcom/android/settings_ext/display/PaperModeFragment;->oG()I
 
     move-result v5
 
@@ -389,30 +389,30 @@
     move v5, v3
 
     :goto_1
-    invoke-virtual {v2, v5}, Lcom/android/settings/display/PaperModePreference;->setChecked(Z)V
+    invoke-virtual {v2, v5}, Lcom/android/settings_ext/display/PaperModePreference;->setChecked(Z)V
 
     .line 100
-    invoke-virtual {v2, p0}, Lcom/android/settings/display/PaperModePreference;->setOnPreferenceClickListener(Landroid/preference/Preference$OnPreferenceClickListener;)V
+    invoke-virtual {v2, p0}, Lcom/android/settings_ext/display/PaperModePreference;->setOnPreferenceClickListener(Landroid/preference/Preference$OnPreferenceClickListener;)V
 
     .line 101
-    invoke-virtual {v2, p0}, Lcom/android/settings/display/PaperModePreference;->a(Lcom/android/settings/display/z;)V
+    invoke-virtual {v2, p0}, Lcom/android/settings_ext/display/PaperModePreference;->a(Lcom/android/settings_ext/display/z;)V
 
     .line 102
-    invoke-virtual {v2, v3}, Lcom/android/settings/display/PaperModePreference;->setShowRightArrow(Z)V
+    invoke-virtual {v2, v3}, Lcom/android/settings_ext/display/PaperModePreference;->setShowRightArrow(Z)V
 
     .line 104
-    new-instance v3, Lcom/android/settings/display/w;
+    new-instance v3, Lcom/android/settings_ext/display/w;
 
     new-instance v5, Landroid/os/Handler;
 
     invoke-direct {v5}, Landroid/os/Handler;-><init>()V
 
-    invoke-direct {v3, p0, v5, v0}, Lcom/android/settings/display/w;-><init>(Lcom/android/settings/display/PaperModeFragment;Landroid/os/Handler;Landroid/preference/CheckBoxPreference;)V
+    invoke-direct {v3, p0, v5, v0}, Lcom/android/settings_ext/display/w;-><init>(Lcom/android/settings_ext/display/PaperModeFragment;Landroid/os/Handler;Landroid/preference/CheckBoxPreference;)V
 
-    iput-object v3, p0, Lcom/android/settings/display/PaperModeFragment;->pC:Landroid/database/ContentObserver;
+    iput-object v3, p0, Lcom/android/settings_ext/display/PaperModeFragment;->pC:Landroid/database/ContentObserver;
 
     .line 110
-    invoke-virtual {p0}, Lcom/android/settings/display/PaperModeFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/display/PaperModeFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
@@ -426,23 +426,23 @@
 
     move-result-object v3
 
-    iget-object v5, p0, Lcom/android/settings/display/PaperModeFragment;->pC:Landroid/database/ContentObserver;
+    iget-object v5, p0, Lcom/android/settings_ext/display/PaperModeFragment;->pC:Landroid/database/ContentObserver;
 
     invoke-virtual {v0, v3, v4, v5}, Landroid/content/ContentResolver;->registerContentObserver(Landroid/net/Uri;ZLandroid/database/ContentObserver;)V
 
     .line 115
-    new-instance v0, Lcom/android/settings/display/x;
+    new-instance v0, Lcom/android/settings_ext/display/x;
 
     new-instance v3, Landroid/os/Handler;
 
     invoke-direct {v3}, Landroid/os/Handler;-><init>()V
 
-    invoke-direct {v0, p0, v3, v1, v2}, Lcom/android/settings/display/x;-><init>(Lcom/android/settings/display/PaperModeFragment;Landroid/os/Handler;Lcom/android/settings/display/PaperModePreference;Lcom/android/settings/display/PaperModePreference;)V
+    invoke-direct {v0, p0, v3, v1, v2}, Lcom/android/settings_ext/display/x;-><init>(Lcom/android/settings_ext/display/PaperModeFragment;Landroid/os/Handler;Lcom/android/settings_ext/display/PaperModePreference;Lcom/android/settings_ext/display/PaperModePreference;)V
 
-    iput-object v0, p0, Lcom/android/settings/display/PaperModeFragment;->VC:Landroid/database/ContentObserver;
+    iput-object v0, p0, Lcom/android/settings_ext/display/PaperModeFragment;->VC:Landroid/database/ContentObserver;
 
     .line 123
-    invoke-virtual {p0}, Lcom/android/settings/display/PaperModeFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/display/PaperModeFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
@@ -456,7 +456,7 @@
 
     move-result-object v1
 
-    iget-object v2, p0, Lcom/android/settings/display/PaperModeFragment;->VC:Landroid/database/ContentObserver;
+    iget-object v2, p0, Lcom/android/settings_ext/display/PaperModeFragment;->VC:Landroid/database/ContentObserver;
 
     invoke-virtual {v0, v1, v4, v2}, Landroid/content/ContentResolver;->registerContentObserver(Landroid/net/Uri;ZLandroid/database/ContentObserver;)V
 
@@ -488,7 +488,7 @@
     if-ne p1, v0, :cond_0
 
     .line 209
-    invoke-virtual {p0}, Lcom/android/settings/display/PaperModeFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/display/PaperModeFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
@@ -533,7 +533,7 @@
     .line 214
     new-instance v1, Landroid/app/AlertDialog$Builder;
 
-    invoke-virtual {p0}, Lcom/android/settings/display/PaperModeFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/display/PaperModeFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v3
 
@@ -548,9 +548,9 @@
 
     const v4, 0x7f090c4d
 
-    new-instance v5, Lcom/android/settings/display/y;
+    new-instance v5, Lcom/android/settings_ext/display/y;
 
-    invoke-direct {v5, p0, v0}, Lcom/android/settings/display/y;-><init>(Lcom/android/settings/display/PaperModeFragment;Landroid/widget/CheckBox;)V
+    invoke-direct {v5, p0, v0}, Lcom/android/settings_ext/display/y;-><init>(Lcom/android/settings_ext/display/PaperModeFragment;Landroid/widget/CheckBox;)V
 
     invoke-virtual {v3, v4, v5}, Landroid/app/AlertDialog$Builder;->setPositiveButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
@@ -573,7 +573,7 @@
     return-object v0
 
     :cond_0
-    invoke-super {p0, p1}, Lcom/android/settings/SettingsPreferenceFragment;->onCreateDialog(I)Landroid/app/Dialog;
+    invoke-super {p0, p1}, Lcom/android/settings_ext/SettingsPreferenceFragment;->onCreateDialog(I)Landroid/app/Dialog;
 
     move-result-object v0
 
@@ -587,7 +587,7 @@
     const/4 v2, 0x0
 
     .line 235
-    invoke-virtual {p0}, Lcom/android/settings/display/PaperModeFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/display/PaperModeFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
@@ -596,23 +596,23 @@
     move-result-object v0
 
     .line 236
-    iget-object v1, p0, Lcom/android/settings/display/PaperModeFragment;->pC:Landroid/database/ContentObserver;
+    iget-object v1, p0, Lcom/android/settings_ext/display/PaperModeFragment;->pC:Landroid/database/ContentObserver;
 
     invoke-virtual {v0, v1}, Landroid/content/ContentResolver;->unregisterContentObserver(Landroid/database/ContentObserver;)V
 
     .line 237
-    iget-object v1, p0, Lcom/android/settings/display/PaperModeFragment;->VC:Landroid/database/ContentObserver;
+    iget-object v1, p0, Lcom/android/settings_ext/display/PaperModeFragment;->VC:Landroid/database/ContentObserver;
 
     invoke-virtual {v0, v1}, Landroid/content/ContentResolver;->unregisterContentObserver(Landroid/database/ContentObserver;)V
 
     .line 238
-    iput-object v2, p0, Lcom/android/settings/display/PaperModeFragment;->pC:Landroid/database/ContentObserver;
+    iput-object v2, p0, Lcom/android/settings_ext/display/PaperModeFragment;->pC:Landroid/database/ContentObserver;
 
     .line 239
-    iput-object v2, p0, Lcom/android/settings/display/PaperModeFragment;->VC:Landroid/database/ContentObserver;
+    iput-object v2, p0, Lcom/android/settings_ext/display/PaperModeFragment;->VC:Landroid/database/ContentObserver;
 
     .line 240
-    invoke-super {p0}, Lcom/android/settings/SettingsPreferenceFragment;->onDestroy()V
+    invoke-super {p0}, Lcom/android/settings_ext/SettingsPreferenceFragment;->onDestroy()V
 
     .line 241
     return-void
@@ -647,7 +647,7 @@
 
     move-result v0
 
-    invoke-direct {p0, v0}, Lcom/android/settings/display/PaperModeFragment;->aA(Z)V
+    invoke-direct {p0, v0}, Lcom/android/settings_ext/display/PaperModeFragment;->aA(Z)V
 
     :cond_0
     :goto_0
@@ -668,35 +668,35 @@
     if-eqz v3, :cond_4
 
     .line 135
-    invoke-virtual {p0}, Lcom/android/settings/display/PaperModeFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/display/PaperModeFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v2
 
-    invoke-static {v2}, Lcom/android/settings/display/d;->aA(Landroid/content/Context;)Z
+    invoke-static {v2}, Lcom/android/settings_ext/display/d;->aA(Landroid/content/Context;)Z
 
     move-result v2
 
     .line 136
     if-nez v2, :cond_2
 
-    invoke-virtual {p0}, Lcom/android/settings/display/PaperModeFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/display/PaperModeFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v3
 
-    invoke-static {v3}, Lcom/android/settings/display/d;->aB(Landroid/content/Context;)Z
+    invoke-static {v3}, Lcom/android/settings_ext/display/d;->aB(Landroid/content/Context;)Z
 
     move-result v3
 
     if-nez v3, :cond_2
 
     .line 137
-    invoke-virtual {p0, v1}, Lcom/android/settings/display/PaperModeFragment;->showDialog(I)V
+    invoke-virtual {p0, v1}, Lcom/android/settings_ext/display/PaperModeFragment;->showDialog(I)V
 
     goto :goto_1
 
     .line 140
     :cond_2
-    invoke-virtual {p0}, Lcom/android/settings/display/PaperModeFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/display/PaperModeFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v3
 
@@ -705,7 +705,7 @@
     move v0, v1
 
     :cond_3
-    invoke-static {v3, v0}, Lcom/android/settings/display/d;->l(Landroid/content/Context;Z)V
+    invoke-static {v3, v0}, Lcom/android/settings_ext/display/d;->l(Landroid/content/Context;Z)V
 
     goto :goto_0
 
@@ -739,7 +739,7 @@
 
     float-to-int v0, v0
 
-    invoke-direct {p0, v0}, Lcom/android/settings/display/PaperModeFragment;->bx(I)V
+    invoke-direct {p0, v0}, Lcom/android/settings_ext/display/PaperModeFragment;->bx(I)V
 
     goto :goto_0
 .end method
@@ -767,12 +767,12 @@
     .line 152
     const/4 v0, 0x1
 
-    invoke-direct {p0, v0}, Lcom/android/settings/display/PaperModeFragment;->by(I)V
+    invoke-direct {p0, v0}, Lcom/android/settings_ext/display/PaperModeFragment;->by(I)V
 
     .line 156
     :cond_0
     :goto_0
-    iget-object v0, p0, Lcom/android/settings/display/PaperModeFragment;->VC:Landroid/database/ContentObserver;
+    iget-object v0, p0, Lcom/android/settings_ext/display/PaperModeFragment;->VC:Landroid/database/ContentObserver;
 
     invoke-virtual {v0, v2}, Landroid/database/ContentObserver;->onChange(Z)V
 
@@ -792,7 +792,7 @@
     .line 154
     const/4 v0, 0x2
 
-    invoke-direct {p0, v0}, Lcom/android/settings/display/PaperModeFragment;->by(I)V
+    invoke-direct {p0, v0}, Lcom/android/settings_ext/display/PaperModeFragment;->by(I)V
 
     goto :goto_0
 .end method
@@ -802,7 +802,7 @@
 
     .prologue
     .line 245
-    invoke-super {p0}, Lcom/android/settings/SettingsPreferenceFragment;->onResume()V
+    invoke-super {p0}, Lcom/android/settings_ext/SettingsPreferenceFragment;->onResume()V
 
     .line 246
     return-void

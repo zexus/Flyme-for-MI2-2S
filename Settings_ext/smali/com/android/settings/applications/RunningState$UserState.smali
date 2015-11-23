@@ -1,4 +1,4 @@
-.class Lcom/android/settings/applications/RunningState$UserState;
+.class Lcom/android/settings_ext/applications/RunningState$UserState;
 .super Ljava/lang/Object;
 .source "RunningState.java"
 

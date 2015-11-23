@@ -1,19 +1,19 @@
-.class Lcom/android/settings/vpn2/MiuiVpnSettings$1;
+.class Lcom/android/settings_ext/vpn2/MiuiVpnSettings$1;
 .super Landroid/content/BroadcastReceiver;
 .source "MiuiVpnSettings.java"
 
 
 # instance fields
-.field final synthetic anW:Lcom/android/settings/vpn2/MiuiVpnSettings;
+.field final synthetic anW:Lcom/android/settings_ext/vpn2/MiuiVpnSettings;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/vpn2/MiuiVpnSettings;)V
+.method constructor <init>(Lcom/android/settings_ext/vpn2/MiuiVpnSettings;)V
     .locals 0
 
     .prologue
     .line 75
-    iput-object p1, p0, Lcom/android/settings/vpn2/MiuiVpnSettings$1;->anW:Lcom/android/settings/vpn2/MiuiVpnSettings;
+    iput-object p1, p0, Lcom/android/settings_ext/vpn2/MiuiVpnSettings$1;->anW:Lcom/android/settings_ext/vpn2/MiuiVpnSettings;
 
     invoke-direct {p0}, Landroid/content/BroadcastReceiver;-><init>()V
 
@@ -36,18 +36,18 @@
     move-result v0
 
     .line 79
-    iget-object v1, p0, Lcom/android/settings/vpn2/MiuiVpnSettings$1;->anW:Lcom/android/settings/vpn2/MiuiVpnSettings;
+    iget-object v1, p0, Lcom/android/settings_ext/vpn2/MiuiVpnSettings$1;->anW:Lcom/android/settings_ext/vpn2/MiuiVpnSettings;
 
-    invoke-static {v1}, Lcom/android/settings/vpn2/MiuiVpnSettings;->a(Lcom/android/settings/vpn2/MiuiVpnSettings;)Landroid/preference/CheckBoxPreference;
+    invoke-static {v1}, Lcom/android/settings_ext/vpn2/MiuiVpnSettings;->a(Lcom/android/settings_ext/vpn2/MiuiVpnSettings;)Landroid/preference/CheckBoxPreference;
 
     move-result-object v1
 
     invoke-virtual {v1, v0}, Landroid/preference/CheckBoxPreference;->setChecked(Z)V
 
     .line 80
-    iget-object v1, p0, Lcom/android/settings/vpn2/MiuiVpnSettings$1;->anW:Lcom/android/settings/vpn2/MiuiVpnSettings;
+    iget-object v1, p0, Lcom/android/settings_ext/vpn2/MiuiVpnSettings$1;->anW:Lcom/android/settings_ext/vpn2/MiuiVpnSettings;
 
-    invoke-static {v1, v0}, Lcom/android/settings/vpn2/MiuiVpnSettings;->a(Lcom/android/settings/vpn2/MiuiVpnSettings;Z)V
+    invoke-static {v1, v0}, Lcom/android/settings_ext/vpn2/MiuiVpnSettings;->a(Lcom/android/settings_ext/vpn2/MiuiVpnSettings;Z)V
 
     .line 81
     return-void

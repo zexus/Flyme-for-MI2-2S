@@ -1,4 +1,4 @@
-.class final Lcom/android/settings/inputmethod/KeyboardLayoutDialogFragment$KeyboardLayoutLoader;
+.class final Lcom/android/settings_ext/inputmethod/KeyboardLayoutDialogFragment$KeyboardLayoutLoader;
 .super Landroid/content/AsyncTaskLoader;
 .source "KeyboardLayoutDialogFragment.java"
 
@@ -16,7 +16,7 @@
     invoke-direct {p0, p1}, Landroid/content/AsyncTaskLoader;-><init>(Landroid/content/Context;)V
 
     .line 310
-    iput-object p2, p0, Lcom/android/settings/inputmethod/KeyboardLayoutDialogFragment$KeyboardLayoutLoader;->abF:Landroid/hardware/input/InputDeviceIdentifier;
+    iput-object p2, p0, Lcom/android/settings_ext/inputmethod/KeyboardLayoutDialogFragment$KeyboardLayoutLoader;->abF:Landroid/hardware/input/InputDeviceIdentifier;
 
     .line 311
     return-void
@@ -29,7 +29,7 @@
 
     .prologue
     .line 305
-    invoke-virtual {p0}, Lcom/android/settings/inputmethod/KeyboardLayoutDialogFragment$KeyboardLayoutLoader;->pR()Lcom/android/settings/inputmethod/KeyboardLayoutDialogFragment$Keyboards;
+    invoke-virtual {p0}, Lcom/android/settings_ext/inputmethod/KeyboardLayoutDialogFragment$KeyboardLayoutLoader;->pR()Lcom/android/settings_ext/inputmethod/KeyboardLayoutDialogFragment$Keyboards;
 
     move-result-object v0
 
@@ -44,7 +44,7 @@
     invoke-super {p0}, Landroid/content/AsyncTaskLoader;->onStartLoading()V
 
     .line 350
-    invoke-virtual {p0}, Lcom/android/settings/inputmethod/KeyboardLayoutDialogFragment$KeyboardLayoutLoader;->forceLoad()V
+    invoke-virtual {p0}, Lcom/android/settings_ext/inputmethod/KeyboardLayoutDialogFragment$KeyboardLayoutLoader;->forceLoad()V
 
     .line 351
     return-void
@@ -58,25 +58,25 @@
     invoke-super {p0}, Landroid/content/AsyncTaskLoader;->onStopLoading()V
 
     .line 356
-    invoke-virtual {p0}, Lcom/android/settings/inputmethod/KeyboardLayoutDialogFragment$KeyboardLayoutLoader;->cancelLoad()Z
+    invoke-virtual {p0}, Lcom/android/settings_ext/inputmethod/KeyboardLayoutDialogFragment$KeyboardLayoutLoader;->cancelLoad()Z
 
     .line 357
     return-void
 .end method
 
-.method public pR()Lcom/android/settings/inputmethod/KeyboardLayoutDialogFragment$Keyboards;
+.method public pR()Lcom/android/settings_ext/inputmethod/KeyboardLayoutDialogFragment$Keyboards;
     .locals 8
 
     .prologue
     const/4 v2, 0x0
 
     .line 315
-    new-instance v3, Lcom/android/settings/inputmethod/KeyboardLayoutDialogFragment$Keyboards;
+    new-instance v3, Lcom/android/settings_ext/inputmethod/KeyboardLayoutDialogFragment$Keyboards;
 
-    invoke-direct {v3}, Lcom/android/settings/inputmethod/KeyboardLayoutDialogFragment$Keyboards;-><init>()V
+    invoke-direct {v3}, Lcom/android/settings_ext/inputmethod/KeyboardLayoutDialogFragment$Keyboards;-><init>()V
 
     .line 316
-    invoke-virtual {p0}, Lcom/android/settings/inputmethod/KeyboardLayoutDialogFragment$KeyboardLayoutLoader;->getContext()Landroid/content/Context;
+    invoke-virtual {p0}, Lcom/android/settings_ext/inputmethod/KeyboardLayoutDialogFragment$KeyboardLayoutLoader;->getContext()Landroid/content/Context;
 
     move-result-object v0
 
@@ -89,7 +89,7 @@
     check-cast v0, Landroid/hardware/input/InputManager;
 
     .line 317
-    iget-object v1, p0, Lcom/android/settings/inputmethod/KeyboardLayoutDialogFragment$KeyboardLayoutLoader;->abF:Landroid/hardware/input/InputDeviceIdentifier;
+    iget-object v1, p0, Lcom/android/settings_ext/inputmethod/KeyboardLayoutDialogFragment$KeyboardLayoutLoader;->abF:Landroid/hardware/input/InputDeviceIdentifier;
 
     invoke-virtual {v0, v1}, Landroid/hardware/input/InputManager;->getKeyboardLayoutsForInputDevice(Landroid/hardware/input/InputDeviceIdentifier;)[Ljava/lang/String;
 
@@ -114,7 +114,7 @@
     if-eqz v6, :cond_0
 
     .line 322
-    iget-object v7, v3, Lcom/android/settings/inputmethod/KeyboardLayoutDialogFragment$Keyboards;->abJ:Ljava/util/ArrayList;
+    iget-object v7, v3, Lcom/android/settings_ext/inputmethod/KeyboardLayoutDialogFragment$Keyboards;->abJ:Ljava/util/ArrayList;
 
     invoke-virtual {v7, v6}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
@@ -126,12 +126,12 @@
 
     .line 325
     :cond_1
-    iget-object v1, v3, Lcom/android/settings/inputmethod/KeyboardLayoutDialogFragment$Keyboards;->abJ:Ljava/util/ArrayList;
+    iget-object v1, v3, Lcom/android/settings_ext/inputmethod/KeyboardLayoutDialogFragment$Keyboards;->abJ:Ljava/util/ArrayList;
 
     invoke-static {v1}, Ljava/util/Collections;->sort(Ljava/util/List;)V
 
     .line 327
-    iget-object v1, p0, Lcom/android/settings/inputmethod/KeyboardLayoutDialogFragment$KeyboardLayoutLoader;->abF:Landroid/hardware/input/InputDeviceIdentifier;
+    iget-object v1, p0, Lcom/android/settings_ext/inputmethod/KeyboardLayoutDialogFragment$KeyboardLayoutLoader;->abF:Landroid/hardware/input/InputDeviceIdentifier;
 
     invoke-virtual {v0, v1}, Landroid/hardware/input/InputManager;->getCurrentKeyboardLayoutForInputDevice(Landroid/hardware/input/InputDeviceIdentifier;)Ljava/lang/String;
 
@@ -141,7 +141,7 @@
     if-eqz v4, :cond_2
 
     .line 330
-    iget-object v0, v3, Lcom/android/settings/inputmethod/KeyboardLayoutDialogFragment$Keyboards;->abJ:Ljava/util/ArrayList;
+    iget-object v0, v3, Lcom/android/settings_ext/inputmethod/KeyboardLayoutDialogFragment$Keyboards;->abJ:Ljava/util/ArrayList;
 
     invoke-virtual {v0}, Ljava/util/ArrayList;->size()I
 
@@ -154,7 +154,7 @@
     if-ge v1, v5, :cond_2
 
     .line 332
-    iget-object v0, v3, Lcom/android/settings/inputmethod/KeyboardLayoutDialogFragment$Keyboards;->abJ:Ljava/util/ArrayList;
+    iget-object v0, v3, Lcom/android/settings_ext/inputmethod/KeyboardLayoutDialogFragment$Keyboards;->abJ:Ljava/util/ArrayList;
 
     invoke-virtual {v0, v1}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
 
@@ -173,11 +173,11 @@
     if-eqz v0, :cond_4
 
     .line 334
-    iput v1, v3, Lcom/android/settings/inputmethod/KeyboardLayoutDialogFragment$Keyboards;->abK:I
+    iput v1, v3, Lcom/android/settings_ext/inputmethod/KeyboardLayoutDialogFragment$Keyboards;->abK:I
 
     .line 340
     :cond_2
-    iget-object v0, v3, Lcom/android/settings/inputmethod/KeyboardLayoutDialogFragment$Keyboards;->abJ:Ljava/util/ArrayList;
+    iget-object v0, v3, Lcom/android/settings_ext/inputmethod/KeyboardLayoutDialogFragment$Keyboards;->abJ:Ljava/util/ArrayList;
 
     invoke-virtual {v0}, Ljava/util/ArrayList;->isEmpty()Z
 
@@ -186,14 +186,14 @@
     if-eqz v0, :cond_3
 
     .line 341
-    iget-object v0, v3, Lcom/android/settings/inputmethod/KeyboardLayoutDialogFragment$Keyboards;->abJ:Ljava/util/ArrayList;
+    iget-object v0, v3, Lcom/android/settings_ext/inputmethod/KeyboardLayoutDialogFragment$Keyboards;->abJ:Ljava/util/ArrayList;
 
     const/4 v1, 0x0
 
     invoke-virtual {v0, v1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
     .line 342
-    iput v2, v3, Lcom/android/settings/inputmethod/KeyboardLayoutDialogFragment$Keyboards;->abK:I
+    iput v2, v3, Lcom/android/settings_ext/inputmethod/KeyboardLayoutDialogFragment$Keyboards;->abK:I
 
     .line 344
     :cond_3

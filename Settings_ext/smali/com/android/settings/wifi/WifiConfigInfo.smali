@@ -1,4 +1,4 @@
-.class public Lcom/android/settings/wifi/WifiConfigInfo;
+.class public Lcom/android/settings_ext/wifi/WifiConfigInfo;
 .super Lmiui/app/Activity;
 .source "WifiConfigInfo.java"
 
@@ -32,29 +32,29 @@
     .line 41
     const-string v0, "wifi"
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/wifi/WifiConfigInfo;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
+    invoke-virtual {p0, v0}, Lcom/android/settings_ext/wifi/WifiConfigInfo;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object v0
 
     check-cast v0, Landroid/net/wifi/WifiManager;
 
-    iput-object v0, p0, Lcom/android/settings/wifi/WifiConfigInfo;->hD:Landroid/net/wifi/WifiManager;
+    iput-object v0, p0, Lcom/android/settings_ext/wifi/WifiConfigInfo;->hD:Landroid/net/wifi/WifiManager;
 
     .line 42
     const v0, 0x7f04012e
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/wifi/WifiConfigInfo;->setContentView(I)V
+    invoke-virtual {p0, v0}, Lcom/android/settings_ext/wifi/WifiConfigInfo;->setContentView(I)V
 
     .line 43
     const v0, 0x7f100300
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/wifi/WifiConfigInfo;->findViewById(I)Landroid/view/View;
+    invoke-virtual {p0, v0}, Lcom/android/settings_ext/wifi/WifiConfigInfo;->findViewById(I)Landroid/view/View;
 
     move-result-object v0
 
     check-cast v0, Landroid/widget/TextView;
 
-    iput-object v0, p0, Lcom/android/settings/wifi/WifiConfigInfo;->avk:Landroid/widget/TextView;
+    iput-object v0, p0, Lcom/android/settings_ext/wifi/WifiConfigInfo;->avk:Landroid/widget/TextView;
 
     .line 44
     return-void
@@ -68,7 +68,7 @@
     invoke-super {p0}, Lmiui/app/Activity;->onResume()V
 
     .line 49
-    iget-object v0, p0, Lcom/android/settings/wifi/WifiConfigInfo;->hD:Landroid/net/wifi/WifiManager;
+    iget-object v0, p0, Lcom/android/settings_ext/wifi/WifiConfigInfo;->hD:Landroid/net/wifi/WifiManager;
 
     invoke-virtual {v0}, Landroid/net/wifi/WifiManager;->isWifiEnabled()Z
 
@@ -77,7 +77,7 @@
     if-eqz v0, :cond_2
 
     .line 50
-    iget-object v0, p0, Lcom/android/settings/wifi/WifiConfigInfo;->hD:Landroid/net/wifi/WifiManager;
+    iget-object v0, p0, Lcom/android/settings_ext/wifi/WifiConfigInfo;->hD:Landroid/net/wifi/WifiManager;
 
     invoke-virtual {v0}, Landroid/net/wifi/WifiManager;->getConfiguredNetworks()Ljava/util/List;
 
@@ -120,7 +120,7 @@
 
     .line 60
     :cond_1
-    iget-object v0, p0, Lcom/android/settings/wifi/WifiConfigInfo;->avk:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/android/settings_ext/wifi/WifiConfigInfo;->avk:Landroid/widget/TextView;
 
     invoke-virtual {v0, v2}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
@@ -128,7 +128,7 @@
 
     .line 62
     :cond_2
-    iget-object v0, p0, Lcom/android/settings/wifi/WifiConfigInfo;->avk:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/android/settings_ext/wifi/WifiConfigInfo;->avk:Landroid/widget/TextView;
 
     const v1, 0x7f090358
 

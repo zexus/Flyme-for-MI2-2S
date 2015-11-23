@@ -1,4 +1,4 @@
-.class public Lcom/android/settings/UsageAccessSettings$WarningDialogFragment;
+.class public Lcom/android/settings_ext/UsageAccessSettings$WarningDialogFragment;
 .super Landroid/app/DialogFragment;
 .source "UsageAccessSettings.java"
 
@@ -17,14 +17,14 @@
     return-void
 .end method
 
-.method public static O(Ljava/lang/String;)Lcom/android/settings/UsageAccessSettings$WarningDialogFragment;
+.method public static O(Ljava/lang/String;)Lcom/android/settings_ext/UsageAccessSettings$WarningDialogFragment;
     .locals 3
 
     .prologue
     .line 371
-    new-instance v0, Lcom/android/settings/UsageAccessSettings$WarningDialogFragment;
+    new-instance v0, Lcom/android/settings_ext/UsageAccessSettings$WarningDialogFragment;
 
-    invoke-direct {v0}, Lcom/android/settings/UsageAccessSettings$WarningDialogFragment;-><init>()V
+    invoke-direct {v0}, Lcom/android/settings_ext/UsageAccessSettings$WarningDialogFragment;-><init>()V
 
     .line 372
     new-instance v1, Landroid/os/Bundle;
@@ -37,7 +37,7 @@
     invoke-virtual {v1, v2, p0}, Landroid/os/Bundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 374
-    invoke-virtual {v0, v1}, Lcom/android/settings/UsageAccessSettings$WarningDialogFragment;->setArguments(Landroid/os/Bundle;)V
+    invoke-virtual {v0, v1}, Lcom/android/settings_ext/UsageAccessSettings$WarningDialogFragment;->setArguments(Landroid/os/Bundle;)V
 
     .line 375
     return-object v0
@@ -55,13 +55,13 @@
     if-ne p2, v0, :cond_0
 
     .line 392
-    invoke-virtual {p0}, Lcom/android/settings/UsageAccessSettings$WarningDialogFragment;->getParentFragment()Landroid/app/Fragment;
+    invoke-virtual {p0}, Lcom/android/settings_ext/UsageAccessSettings$WarningDialogFragment;->getParentFragment()Landroid/app/Fragment;
 
     move-result-object v0
 
-    check-cast v0, Lcom/android/settings/UsageAccessSettings;
+    check-cast v0, Lcom/android/settings_ext/UsageAccessSettings;
 
-    invoke-virtual {p0}, Lcom/android/settings/UsageAccessSettings$WarningDialogFragment;->getArguments()Landroid/os/Bundle;
+    invoke-virtual {p0}, Lcom/android/settings_ext/UsageAccessSettings$WarningDialogFragment;->getArguments()Landroid/os/Bundle;
 
     move-result-object v1
 
@@ -71,7 +71,7 @@
 
     move-result-object v1
 
-    invoke-virtual {v0, v1}, Lcom/android/settings/UsageAccessSettings;->N(Ljava/lang/String;)V
+    invoke-virtual {v0, v1}, Lcom/android/settings_ext/UsageAccessSettings;->N(Ljava/lang/String;)V
 
     .line 397
     :goto_0
@@ -91,7 +91,7 @@
     .line 380
     new-instance v0, Landroid/app/AlertDialog$Builder;
 
-    invoke-virtual {p0}, Lcom/android/settings/UsageAccessSettings$WarningDialogFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/UsageAccessSettings$WarningDialogFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v1
 

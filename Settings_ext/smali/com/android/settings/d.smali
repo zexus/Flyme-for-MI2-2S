@@ -1,4 +1,4 @@
-.class Lcom/android/settings/d;
+.class Lcom/android/settings_ext/d;
 .super Ljava/lang/Object;
 .source "AccessControlFragment.java"
 
@@ -7,16 +7,16 @@
 
 
 # instance fields
-.field final synthetic g:Lcom/android/settings/AccessControlFragment;
+.field final synthetic g:Lcom/android/settings_ext/AccessControlFragment;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/AccessControlFragment;)V
+.method constructor <init>(Lcom/android/settings_ext/AccessControlFragment;)V
     .locals 0
 
     .prologue
     .line 94
-    iput-object p1, p0, Lcom/android/settings/d;->g:Lcom/android/settings/AccessControlFragment;
+    iput-object p1, p0, Lcom/android/settings_ext/d;->g:Lcom/android/settings_ext/AccessControlFragment;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 

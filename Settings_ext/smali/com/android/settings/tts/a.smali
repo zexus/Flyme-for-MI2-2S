@@ -1,4 +1,4 @@
-.class Lcom/android/settings/tts/a;
+.class Lcom/android/settings_ext/tts/a;
 .super Ljava/lang/Object;
 .source "TextToSpeechSettings.java"
 
@@ -7,16 +7,16 @@
 
 
 # instance fields
-.field final synthetic akZ:Lcom/android/settings/tts/TextToSpeechSettings;
+.field final synthetic akZ:Lcom/android/settings_ext/tts/TextToSpeechSettings;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/tts/TextToSpeechSettings;)V
+.method constructor <init>(Lcom/android/settings_ext/tts/TextToSpeechSettings;)V
     .locals 0
 
     .prologue
     .line 136
-    iput-object p1, p0, Lcom/android/settings/tts/a;->akZ:Lcom/android/settings/tts/TextToSpeechSettings;
+    iput-object p1, p0, Lcom/android/settings_ext/tts/a;->akZ:Lcom/android/settings_ext/tts/TextToSpeechSettings;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -30,9 +30,9 @@
 
     .prologue
     .line 139
-    iget-object v0, p0, Lcom/android/settings/tts/a;->akZ:Lcom/android/settings/tts/TextToSpeechSettings;
+    iget-object v0, p0, Lcom/android/settings_ext/tts/a;->akZ:Lcom/android/settings_ext/tts/TextToSpeechSettings;
 
-    invoke-virtual {v0, p1}, Lcom/android/settings/tts/TextToSpeechSettings;->ct(I)V
+    invoke-virtual {v0, p1}, Lcom/android/settings_ext/tts/TextToSpeechSettings;->ct(I)V
 
     .line 140
     return-void

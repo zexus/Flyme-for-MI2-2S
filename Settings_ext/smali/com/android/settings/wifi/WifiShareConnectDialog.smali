@@ -1,4 +1,4 @@
-.class public Lcom/android/settings/wifi/WifiShareConnectDialog;
+.class public Lcom/android/settings_ext/wifi/WifiShareConnectDialog;
 .super Landroid/app/Activity;
 .source "WifiShareConnectDialog.java"
 
@@ -18,12 +18,12 @@
     return-void
 .end method
 
-.method static synthetic a(Lcom/android/settings/wifi/WifiShareConnectDialog;Landroid/app/Dialog;)Landroid/app/Dialog;
+.method static synthetic a(Lcom/android/settings_ext/wifi/WifiShareConnectDialog;Landroid/app/Dialog;)Landroid/app/Dialog;
     .locals 0
 
     .prologue
     .line 15
-    iput-object p1, p0, Lcom/android/settings/wifi/WifiShareConnectDialog;->mDialog:Landroid/app/Dialog;
+    iput-object p1, p0, Lcom/android/settings_ext/wifi/WifiShareConnectDialog;->mDialog:Landroid/app/Dialog;
 
     return-object p1
 .end method
@@ -40,7 +40,7 @@
     invoke-super {p0, p1}, Landroid/app/Activity;->onCreate(Landroid/os/Bundle;)V
 
     .line 21
-    invoke-virtual {p0}, Lcom/android/settings/wifi/WifiShareConnectDialog;->getLayoutInflater()Landroid/view/LayoutInflater;
+    invoke-virtual {p0}, Lcom/android/settings_ext/wifi/WifiShareConnectDialog;->getLayoutInflater()Landroid/view/LayoutInflater;
 
     move-result-object v0
 
@@ -66,7 +66,7 @@
 
     const v3, 0x7f090ca9
 
-    invoke-virtual {p0, v3}, Lcom/android/settings/wifi/WifiShareConnectDialog;->getString(I)Ljava/lang/String;
+    invoke-virtual {p0, v3}, Lcom/android/settings_ext/wifi/WifiShareConnectDialog;->getString(I)Ljava/lang/String;
 
     move-result-object v3
 
@@ -76,7 +76,7 @@
 
     const v3, 0x7f090caa
 
-    invoke-virtual {p0, v3}, Lcom/android/settings/wifi/WifiShareConnectDialog;->getString(I)Ljava/lang/String;
+    invoke-virtual {p0, v3}, Lcom/android/settings_ext/wifi/WifiShareConnectDialog;->getString(I)Ljava/lang/String;
 
     move-result-object v3
 
@@ -107,9 +107,9 @@
 
     const v1, 0x7f090ca5
 
-    new-instance v2, Lcom/android/settings/wifi/aB;
+    new-instance v2, Lcom/android/settings_ext/wifi/aB;
 
-    invoke-direct {v2, p0}, Lcom/android/settings/wifi/aB;-><init>(Lcom/android/settings/wifi/WifiShareConnectDialog;)V
+    invoke-direct {v2, p0}, Lcom/android/settings_ext/wifi/aB;-><init>(Lcom/android/settings_ext/wifi/WifiShareConnectDialog;)V
 
     invoke-virtual {v0, v1, v2}, Landroid/app/AlertDialog$Builder;->setNegativeButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
@@ -120,19 +120,19 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/wifi/WifiShareConnectDialog;->mDialog:Landroid/app/Dialog;
+    iput-object v0, p0, Lcom/android/settings_ext/wifi/WifiShareConnectDialog;->mDialog:Landroid/app/Dialog;
 
     .line 39
-    iget-object v0, p0, Lcom/android/settings/wifi/WifiShareConnectDialog;->mDialog:Landroid/app/Dialog;
+    iget-object v0, p0, Lcom/android/settings_ext/wifi/WifiShareConnectDialog;->mDialog:Landroid/app/Dialog;
 
-    new-instance v1, Lcom/android/settings/wifi/aC;
+    new-instance v1, Lcom/android/settings_ext/wifi/aC;
 
-    invoke-direct {v1, p0}, Lcom/android/settings/wifi/aC;-><init>(Lcom/android/settings/wifi/WifiShareConnectDialog;)V
+    invoke-direct {v1, p0}, Lcom/android/settings_ext/wifi/aC;-><init>(Lcom/android/settings_ext/wifi/WifiShareConnectDialog;)V
 
     invoke-virtual {v0, v1}, Landroid/app/Dialog;->setOnDismissListener(Landroid/content/DialogInterface$OnDismissListener;)V
 
     .line 47
-    iget-object v0, p0, Lcom/android/settings/wifi/WifiShareConnectDialog;->mDialog:Landroid/app/Dialog;
+    iget-object v0, p0, Lcom/android/settings_ext/wifi/WifiShareConnectDialog;->mDialog:Landroid/app/Dialog;
 
     invoke-virtual {v0}, Landroid/app/Dialog;->show()V
 
@@ -145,11 +145,11 @@
 
     .prologue
     .line 52
-    iget-object v0, p0, Lcom/android/settings/wifi/WifiShareConnectDialog;->mDialog:Landroid/app/Dialog;
+    iget-object v0, p0, Lcom/android/settings_ext/wifi/WifiShareConnectDialog;->mDialog:Landroid/app/Dialog;
 
     if-eqz v0, :cond_0
 
-    iget-object v0, p0, Lcom/android/settings/wifi/WifiShareConnectDialog;->mDialog:Landroid/app/Dialog;
+    iget-object v0, p0, Lcom/android/settings_ext/wifi/WifiShareConnectDialog;->mDialog:Landroid/app/Dialog;
 
     invoke-virtual {v0}, Landroid/app/Dialog;->isShowing()Z
 
@@ -158,7 +158,7 @@
     if-eqz v0, :cond_0
 
     .line 53
-    iget-object v0, p0, Lcom/android/settings/wifi/WifiShareConnectDialog;->mDialog:Landroid/app/Dialog;
+    iget-object v0, p0, Lcom/android/settings_ext/wifi/WifiShareConnectDialog;->mDialog:Landroid/app/Dialog;
 
     invoke-virtual {v0}, Landroid/app/Dialog;->dismiss()V
 

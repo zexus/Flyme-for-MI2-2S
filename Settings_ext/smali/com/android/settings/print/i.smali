@@ -1,4 +1,4 @@
-.class Lcom/android/settings/print/i;
+.class Lcom/android/settings_ext/print/i;
 .super Landroid/content/Loader;
 .source "PrintServiceSettingsFragment.java"
 
@@ -22,18 +22,18 @@
 
     invoke-direct {v0}, Ljava/util/LinkedHashMap;-><init>()V
 
-    iput-object v0, p0, Lcom/android/settings/print/i;->ahl:Ljava/util/Map;
+    iput-object v0, p0, Lcom/android/settings_ext/print/i;->ahl:Ljava/util/Map;
 
     .line 652
     return-void
 .end method
 
-.method static synthetic a(Lcom/android/settings/print/i;)Landroid/print/PrinterDiscoverySession;
+.method static synthetic a(Lcom/android/settings_ext/print/i;)Landroid/print/PrinterDiscoverySession;
     .locals 1
 
     .prologue
     .line 639
-    iget-object v0, p0, Lcom/android/settings/print/i;->ahm:Landroid/print/PrinterDiscoverySession;
+    iget-object v0, p0, Lcom/android/settings_ext/print/i;->ahm:Landroid/print/PrinterDiscoverySession;
 
     return-object v0
 .end method
@@ -43,11 +43,11 @@
 
     .prologue
     .line 721
-    iget-object v0, p0, Lcom/android/settings/print/i;->ahm:Landroid/print/PrinterDiscoverySession;
+    iget-object v0, p0, Lcom/android/settings_ext/print/i;->ahm:Landroid/print/PrinterDiscoverySession;
 
     if-eqz v0, :cond_0
 
-    iget-object v0, p0, Lcom/android/settings/print/i;->ahm:Landroid/print/PrinterDiscoverySession;
+    iget-object v0, p0, Lcom/android/settings_ext/print/i;->ahm:Landroid/print/PrinterDiscoverySession;
 
     invoke-virtual {v0}, Landroid/print/PrinterDiscoverySession;->isPrinterDiscoveryStarted()Z
 
@@ -56,7 +56,7 @@
     if-eqz v0, :cond_0
 
     .line 723
-    iget-object v0, p0, Lcom/android/settings/print/i;->ahm:Landroid/print/PrinterDiscoverySession;
+    iget-object v0, p0, Lcom/android/settings_ext/print/i;->ahm:Landroid/print/PrinterDiscoverySession;
 
     invoke-virtual {v0}, Landroid/print/PrinterDiscoverySession;->stopPrinterDiscovery()V
 
@@ -78,12 +78,12 @@
 
     .prologue
     .line 730
-    iget-object v0, p0, Lcom/android/settings/print/i;->ahm:Landroid/print/PrinterDiscoverySession;
+    iget-object v0, p0, Lcom/android/settings_ext/print/i;->ahm:Landroid/print/PrinterDiscoverySession;
 
     if-nez v0, :cond_0
 
     .line 731
-    invoke-virtual {p0}, Lcom/android/settings/print/i;->getContext()Landroid/content/Context;
+    invoke-virtual {p0}, Lcom/android/settings_ext/print/i;->getContext()Landroid/content/Context;
 
     move-result-object v0
 
@@ -100,20 +100,20 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/print/i;->ahm:Landroid/print/PrinterDiscoverySession;
+    iput-object v0, p0, Lcom/android/settings_ext/print/i;->ahm:Landroid/print/PrinterDiscoverySession;
 
     .line 734
-    iget-object v0, p0, Lcom/android/settings/print/i;->ahm:Landroid/print/PrinterDiscoverySession;
+    iget-object v0, p0, Lcom/android/settings_ext/print/i;->ahm:Landroid/print/PrinterDiscoverySession;
 
-    new-instance v1, Lcom/android/settings/print/j;
+    new-instance v1, Lcom/android/settings_ext/print/j;
 
-    invoke-direct {v1, p0}, Lcom/android/settings/print/j;-><init>(Lcom/android/settings/print/i;)V
+    invoke-direct {v1, p0}, Lcom/android/settings_ext/print/j;-><init>(Lcom/android/settings_ext/print/i;)V
 
     invoke-virtual {v0, v1}, Landroid/print/PrinterDiscoverySession;->setOnPrintersChangeListener(Landroid/print/PrinterDiscoverySession$OnPrintersChangeListener;)V
 
     .line 742
     :cond_0
-    iget-object v0, p0, Lcom/android/settings/print/i;->ahm:Landroid/print/PrinterDiscoverySession;
+    iget-object v0, p0, Lcom/android/settings_ext/print/i;->ahm:Landroid/print/PrinterDiscoverySession;
 
     const/4 v1, 0x0
 
@@ -132,7 +132,7 @@
     .line 639
     check-cast p1, Ljava/util/List;
 
-    invoke-virtual {p0, p1}, Lcom/android/settings/print/i;->i(Ljava/util/List;)V
+    invoke-virtual {p0, p1}, Lcom/android/settings_ext/print/i;->i(Ljava/util/List;)V
 
     return-void
 .end method
@@ -142,7 +142,7 @@
 
     .prologue
     .line 656
-    invoke-virtual {p0}, Lcom/android/settings/print/i;->isStarted()Z
+    invoke-virtual {p0}, Lcom/android/settings_ext/print/i;->isStarted()Z
 
     move-result v0
 
@@ -161,7 +161,7 @@
 
     .prologue
     .line 717
-    invoke-virtual {p0}, Lcom/android/settings/print/i;->onStopLoading()V
+    invoke-virtual {p0}, Lcom/android/settings_ext/print/i;->onStopLoading()V
 
     .line 718
     return-void
@@ -172,7 +172,7 @@
 
     .prologue
     .line 696
-    invoke-direct {p0}, Lcom/android/settings/print/i;->rg()Z
+    invoke-direct {p0}, Lcom/android/settings_ext/print/i;->rg()Z
 
     move-result v0
 
@@ -184,7 +184,7 @@
 
     .prologue
     .line 688
-    invoke-direct {p0}, Lcom/android/settings/print/i;->rh()V
+    invoke-direct {p0}, Lcom/android/settings_ext/print/i;->rh()V
 
     .line 689
     return-void
@@ -195,27 +195,27 @@
 
     .prologue
     .line 704
-    invoke-virtual {p0}, Lcom/android/settings/print/i;->onStopLoading()V
+    invoke-virtual {p0}, Lcom/android/settings_ext/print/i;->onStopLoading()V
 
     .line 705
-    iget-object v0, p0, Lcom/android/settings/print/i;->ahl:Ljava/util/Map;
+    iget-object v0, p0, Lcom/android/settings_ext/print/i;->ahl:Ljava/util/Map;
 
     invoke-interface {v0}, Ljava/util/Map;->clear()V
 
     .line 706
-    iget-object v0, p0, Lcom/android/settings/print/i;->ahm:Landroid/print/PrinterDiscoverySession;
+    iget-object v0, p0, Lcom/android/settings_ext/print/i;->ahm:Landroid/print/PrinterDiscoverySession;
 
     if-eqz v0, :cond_0
 
     .line 707
-    iget-object v0, p0, Lcom/android/settings/print/i;->ahm:Landroid/print/PrinterDiscoverySession;
+    iget-object v0, p0, Lcom/android/settings_ext/print/i;->ahm:Landroid/print/PrinterDiscoverySession;
 
     invoke-virtual {v0}, Landroid/print/PrinterDiscoverySession;->destroy()V
 
     .line 708
     const/4 v0, 0x0
 
-    iput-object v0, p0, Lcom/android/settings/print/i;->ahm:Landroid/print/PrinterDiscoverySession;
+    iput-object v0, p0, Lcom/android/settings_ext/print/i;->ahm:Landroid/print/PrinterDiscoverySession;
 
     .line 710
     :cond_0
@@ -227,7 +227,7 @@
 
     .prologue
     .line 668
-    iget-object v0, p0, Lcom/android/settings/print/i;->ahl:Ljava/util/Map;
+    iget-object v0, p0, Lcom/android/settings_ext/print/i;->ahl:Ljava/util/Map;
 
     invoke-interface {v0}, Ljava/util/Map;->isEmpty()Z
 
@@ -238,7 +238,7 @@
     .line 669
     new-instance v0, Ljava/util/ArrayList;
 
-    iget-object v1, p0, Lcom/android/settings/print/i;->ahl:Ljava/util/Map;
+    iget-object v1, p0, Lcom/android/settings_ext/print/i;->ahl:Ljava/util/Map;
 
     invoke-interface {v1}, Ljava/util/Map;->values()Ljava/util/Collection;
 
@@ -246,11 +246,11 @@
 
     invoke-direct {v0, v1}, Ljava/util/ArrayList;-><init>(Ljava/util/Collection;)V
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/print/i;->i(Ljava/util/List;)V
+    invoke-virtual {p0, v0}, Lcom/android/settings_ext/print/i;->i(Ljava/util/List;)V
 
     .line 672
     :cond_0
-    invoke-virtual {p0}, Lcom/android/settings/print/i;->onForceLoad()V
+    invoke-virtual {p0}, Lcom/android/settings_ext/print/i;->onForceLoad()V
 
     .line 673
     return-void
@@ -261,7 +261,7 @@
 
     .prologue
     .line 680
-    invoke-virtual {p0}, Lcom/android/settings/print/i;->onCancelLoad()Z
+    invoke-virtual {p0}, Lcom/android/settings_ext/print/i;->onCancelLoad()Z
 
     .line 681
     return-void

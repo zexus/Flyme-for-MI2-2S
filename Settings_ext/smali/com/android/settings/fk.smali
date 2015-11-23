@@ -1,4 +1,4 @@
-.class public Lcom/android/settings/fk;
+.class public Lcom/android/settings_ext/fk;
 .super Ljava/lang/Object;
 .source "PlatformUtils.java"
 
@@ -88,7 +88,7 @@
 
     move-result-object v0
 
-    invoke-static {p0}, Lcom/android/settings/fk;->T(I)J
+    invoke-static {p0}, Lcom/android/settings_ext/fk;->T(I)J
 
     move-result-wide v2
 

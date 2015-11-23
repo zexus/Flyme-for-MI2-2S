@@ -1,4 +1,4 @@
-.class Lcom/android/settings/location/SettingsInjector;
+.class Lcom/android/settings_ext/location/SettingsInjector;
 .super Ljava/lang/Object;
 .source "SettingsInjector.java"
 
@@ -20,43 +20,43 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 99
-    iput-object p1, p0, Lcom/android/settings/location/SettingsInjector;->mContext:Landroid/content/Context;
+    iput-object p1, p0, Lcom/android/settings_ext/location/SettingsInjector;->mContext:Landroid/content/Context;
 
     .line 100
     new-instance v0, Ljava/util/HashSet;
 
     invoke-direct {v0}, Ljava/util/HashSet;-><init>()V
 
-    iput-object v0, p0, Lcom/android/settings/location/SettingsInjector;->adb:Ljava/util/Set;
+    iput-object v0, p0, Lcom/android/settings_ext/location/SettingsInjector;->adb:Ljava/util/Set;
 
     .line 101
-    new-instance v0, Lcom/android/settings/location/SettingsInjector$StatusLoadingHandler;
+    new-instance v0, Lcom/android/settings_ext/location/SettingsInjector$StatusLoadingHandler;
 
     const/4 v1, 0x0
 
-    invoke-direct {v0, p0, v1}, Lcom/android/settings/location/SettingsInjector$StatusLoadingHandler;-><init>(Lcom/android/settings/location/SettingsInjector;Lcom/android/settings/location/SettingsInjector$1;)V
+    invoke-direct {v0, p0, v1}, Lcom/android/settings_ext/location/SettingsInjector$StatusLoadingHandler;-><init>(Lcom/android/settings_ext/location/SettingsInjector;Lcom/android/settings_ext/location/SettingsInjector$1;)V
 
-    iput-object v0, p0, Lcom/android/settings/location/SettingsInjector;->mHandler:Landroid/os/Handler;
+    iput-object v0, p0, Lcom/android/settings_ext/location/SettingsInjector;->mHandler:Landroid/os/Handler;
 
     .line 102
     return-void
 .end method
 
-.method private a(Ljava/util/List;Lcom/android/settings/location/InjectedSetting;)Landroid/preference/Preference;
+.method private a(Ljava/util/List;Lcom/android/settings_ext/location/InjectedSetting;)Landroid/preference/Preference;
     .locals 5
 
     .prologue
     const/4 v4, 0x0
 
     .line 253
-    new-instance v1, Lcom/android/settings/location/DimmableIconPreference;
+    new-instance v1, Lcom/android/settings_ext/location/DimmableIconPreference;
 
-    iget-object v0, p0, Lcom/android/settings/location/SettingsInjector;->mContext:Landroid/content/Context;
+    iget-object v0, p0, Lcom/android/settings_ext/location/SettingsInjector;->mContext:Landroid/content/Context;
 
-    invoke-direct {v1, v0}, Lcom/android/settings/location/DimmableIconPreference;-><init>(Landroid/content/Context;)V
+    invoke-direct {v1, v0}, Lcom/android/settings_ext/location/DimmableIconPreference;-><init>(Landroid/content/Context;)V
 
     .line 254
-    iget-object v0, p2, Lcom/android/settings/location/InjectedSetting;->title:Ljava/lang/String;
+    iget-object v0, p2, Lcom/android/settings_ext/location/InjectedSetting;->title:Ljava/lang/String;
 
     invoke-virtual {v1, v0}, Landroid/preference/Preference;->setTitle(Ljava/lang/CharSequence;)V
 
@@ -64,16 +64,16 @@
     invoke-virtual {v1, v4}, Landroid/preference/Preference;->setSummary(Ljava/lang/CharSequence;)V
 
     .line 256
-    iget-object v0, p0, Lcom/android/settings/location/SettingsInjector;->mContext:Landroid/content/Context;
+    iget-object v0, p0, Lcom/android/settings_ext/location/SettingsInjector;->mContext:Landroid/content/Context;
 
     invoke-virtual {v0}, Landroid/content/Context;->getPackageManager()Landroid/content/pm/PackageManager;
 
     move-result-object v2
 
     .line 257
-    iget-object v0, p2, Lcom/android/settings/location/InjectedSetting;->packageName:Ljava/lang/String;
+    iget-object v0, p2, Lcom/android/settings_ext/location/InjectedSetting;->packageName:Ljava/lang/String;
 
-    iget v3, p2, Lcom/android/settings/location/InjectedSetting;->iconId:I
+    iget v3, p2, Lcom/android/settings_ext/location/InjectedSetting;->iconId:I
 
     invoke-virtual {v2, v0, v3, v4}, Landroid/content/pm/PackageManager;->getDrawable(Ljava/lang/String;ILandroid/content/pm/ApplicationInfo;)Landroid/graphics/drawable/Drawable;
 
@@ -81,7 +81,7 @@
 
     .line 260
     :try_start_0
-    iget-object v3, p2, Lcom/android/settings/location/InjectedSetting;->packageName:Ljava/lang/String;
+    iget-object v3, p2, Lcom/android/settings_ext/location/InjectedSetting;->packageName:Ljava/lang/String;
 
     const/4 v4, 0x0
 
@@ -90,7 +90,7 @@
     move-result-object v3
 
     .line 261
-    iget-object v4, p0, Lcom/android/settings/location/SettingsInjector;->mContext:Landroid/content/Context;
+    iget-object v4, p0, Lcom/android/settings_ext/location/SettingsInjector;->mContext:Landroid/content/Context;
 
     invoke-static {v4, v3, v2}, Lmiui/maml/util/AppIconsHelper;->getIconDrawable(Landroid/content/Context;Landroid/content/pm/PackageItemInfo;Landroid/content/pm/PackageManager;)Landroid/graphics/drawable/Drawable;
     :try_end_0
@@ -108,9 +108,9 @@
     invoke-direct {v0}, Landroid/content/Intent;-><init>()V
 
     .line 271
-    iget-object v2, p2, Lcom/android/settings/location/InjectedSetting;->packageName:Ljava/lang/String;
+    iget-object v2, p2, Lcom/android/settings_ext/location/InjectedSetting;->packageName:Ljava/lang/String;
 
-    iget-object v3, p2, Lcom/android/settings/location/InjectedSetting;->act:Ljava/lang/String;
+    iget-object v3, p2, Lcom/android/settings_ext/location/InjectedSetting;->act:Ljava/lang/String;
 
     invoke-virtual {v0, v2, v3}, Landroid/content/Intent;->setClassName(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
 
@@ -135,7 +135,7 @@
     goto :goto_0
 .end method
 
-.method private static a(Ljava/lang/String;Ljava/lang/String;Landroid/content/res/Resources;Landroid/util/AttributeSet;)Lcom/android/settings/location/InjectedSetting;
+.method private static a(Ljava/lang/String;Ljava/lang/String;Landroid/content/res/Resources;Landroid/util/AttributeSet;)Lcom/android/settings_ext/location/InjectedSetting;
     .locals 7
 
     .prologue
@@ -226,7 +226,7 @@
 
     .line 216
     :cond_0
-    invoke-static {p0, p1, v0, v2, v3}, Lcom/android/settings/location/InjectedSetting;->a(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ILjava/lang/String;)Lcom/android/settings/location/InjectedSetting;
+    invoke-static {p0, p1, v0, v2, v3}, Lcom/android/settings_ext/location/InjectedSetting;->a(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ILjava/lang/String;)Lcom/android/settings_ext/location/InjectedSetting;
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
@@ -245,27 +245,27 @@
     throw v0
 .end method
 
-.method static synthetic a(Lcom/android/settings/location/SettingsInjector;)Ljava/util/Set;
+.method static synthetic a(Lcom/android/settings_ext/location/SettingsInjector;)Ljava/util/Set;
     .locals 1
 
     .prologue
     .line 64
-    iget-object v0, p0, Lcom/android/settings/location/SettingsInjector;->adb:Ljava/util/Set;
+    iget-object v0, p0, Lcom/android/settings_ext/location/SettingsInjector;->adb:Ljava/util/Set;
 
     return-object v0
 .end method
 
-.method static synthetic b(Lcom/android/settings/location/SettingsInjector;)Landroid/os/Handler;
+.method static synthetic b(Lcom/android/settings_ext/location/SettingsInjector;)Landroid/os/Handler;
     .locals 1
 
     .prologue
     .line 64
-    iget-object v0, p0, Lcom/android/settings/location/SettingsInjector;->mHandler:Landroid/os/Handler;
+    iget-object v0, p0, Lcom/android/settings_ext/location/SettingsInjector;->mHandler:Landroid/os/Handler;
 
     return-object v0
 .end method
 
-.method private static b(Landroid/content/pm/ResolveInfo;Landroid/content/pm/PackageManager;)Lcom/android/settings/location/InjectedSetting;
+.method private static b(Landroid/content/pm/ResolveInfo;Landroid/content/pm/PackageManager;)Lcom/android/settings_ext/location/InjectedSetting;
     .locals 7
 
     .prologue
@@ -495,7 +495,7 @@
 
     iget-object v5, v2, Landroid/content/pm/ServiceInfo;->name:Ljava/lang/String;
 
-    invoke-static {v4, v5, v3, v0}, Lcom/android/settings/location/SettingsInjector;->a(Ljava/lang/String;Ljava/lang/String;Landroid/content/res/Resources;Landroid/util/AttributeSet;)Lcom/android/settings/location/InjectedSetting;
+    invoke-static {v4, v5, v3, v0}, Lcom/android/settings_ext/location/SettingsInjector;->a(Ljava/lang/String;Ljava/lang/String;Landroid/content/res/Resources;Landroid/util/AttributeSet;)Lcom/android/settings_ext/location/InjectedSetting;
     :try_end_3
     .catch Landroid/content/pm/PackageManager$NameNotFoundException; {:try_start_3 .. :try_end_3} :catch_0
     .catchall {:try_start_3 .. :try_end_3} :catchall_1
@@ -529,12 +529,12 @@
     goto :goto_1
 .end method
 
-.method static synthetic c(Lcom/android/settings/location/SettingsInjector;)Landroid/content/Context;
+.method static synthetic c(Lcom/android/settings_ext/location/SettingsInjector;)Landroid/content/Context;
     .locals 1
 
     .prologue
     .line 64
-    iget-object v0, p0, Lcom/android/settings/location/SettingsInjector;->mContext:Landroid/content/Context;
+    iget-object v0, p0, Lcom/android/settings_ext/location/SettingsInjector;->mContext:Landroid/content/Context;
 
     return-object v0
 .end method
@@ -546,7 +546,7 @@
     const/4 v8, 0x3
 
     .line 114
-    iget-object v0, p0, Lcom/android/settings/location/SettingsInjector;->mContext:Landroid/content/Context;
+    iget-object v0, p0, Lcom/android/settings_ext/location/SettingsInjector;->mContext:Landroid/content/Context;
 
     invoke-virtual {v0}, Landroid/content/Context;->getPackageManager()Landroid/content/pm/PackageManager;
 
@@ -628,7 +628,7 @@
 
     .line 125
     :try_start_0
-    invoke-static {v0, v2}, Lcom/android/settings/location/SettingsInjector;->b(Landroid/content/pm/ResolveInfo;Landroid/content/pm/PackageManager;)Lcom/android/settings/location/InjectedSetting;
+    invoke-static {v0, v2}, Lcom/android/settings_ext/location/SettingsInjector;->b(Landroid/content/pm/ResolveInfo;Landroid/content/pm/PackageManager;)Lcom/android/settings_ext/location/InjectedSetting;
 
     move-result-object v1
 
@@ -776,7 +776,7 @@
 
     .prologue
     .line 227
-    invoke-direct {p0}, Lcom/android/settings/location/SettingsInjector;->qg()Ljava/util/List;
+    invoke-direct {p0}, Lcom/android/settings_ext/location/SettingsInjector;->qg()Ljava/util/List;
 
     move-result-object v0
 
@@ -801,21 +801,21 @@
 
     move-result-object v0
 
-    check-cast v0, Lcom/android/settings/location/InjectedSetting;
+    check-cast v0, Lcom/android/settings_ext/location/InjectedSetting;
 
     .line 230
-    invoke-direct {p0, v1, v0}, Lcom/android/settings/location/SettingsInjector;->a(Ljava/util/List;Lcom/android/settings/location/InjectedSetting;)Landroid/preference/Preference;
+    invoke-direct {p0, v1, v0}, Lcom/android/settings_ext/location/SettingsInjector;->a(Ljava/util/List;Lcom/android/settings_ext/location/InjectedSetting;)Landroid/preference/Preference;
 
     move-result-object v3
 
     .line 231
-    iget-object v4, p0, Lcom/android/settings/location/SettingsInjector;->adb:Ljava/util/Set;
+    iget-object v4, p0, Lcom/android/settings_ext/location/SettingsInjector;->adb:Ljava/util/Set;
 
-    new-instance v5, Lcom/android/settings/location/SettingsInjector$Setting;
+    new-instance v5, Lcom/android/settings_ext/location/SettingsInjector$Setting;
 
     const/4 v6, 0x0
 
-    invoke-direct {v5, p0, v0, v3, v6}, Lcom/android/settings/location/SettingsInjector$Setting;-><init>(Lcom/android/settings/location/SettingsInjector;Lcom/android/settings/location/InjectedSetting;Landroid/preference/Preference;Lcom/android/settings/location/SettingsInjector$1;)V
+    invoke-direct {v5, p0, v0, v3, v6}, Lcom/android/settings_ext/location/SettingsInjector$Setting;-><init>(Lcom/android/settings_ext/location/SettingsInjector;Lcom/android/settings_ext/location/InjectedSetting;Landroid/preference/Preference;Lcom/android/settings_ext/location/SettingsInjector$1;)V
 
     invoke-interface {v4, v5}, Ljava/util/Set;->add(Ljava/lang/Object;)Z
 
@@ -823,7 +823,7 @@
 
     .line 234
     :cond_0
-    invoke-virtual {p0}, Lcom/android/settings/location/SettingsInjector;->qi()V
+    invoke-virtual {p0}, Lcom/android/settings_ext/location/SettingsInjector;->qi()V
 
     .line 236
     return-object v1
@@ -857,7 +857,7 @@
 
     move-result-object v1
 
-    iget-object v2, p0, Lcom/android/settings/location/SettingsInjector;->adb:Ljava/util/Set;
+    iget-object v2, p0, Lcom/android/settings_ext/location/SettingsInjector;->adb:Ljava/util/Set;
 
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
@@ -871,9 +871,9 @@
 
     .line 246
     :cond_0
-    iget-object v0, p0, Lcom/android/settings/location/SettingsInjector;->mHandler:Landroid/os/Handler;
+    iget-object v0, p0, Lcom/android/settings_ext/location/SettingsInjector;->mHandler:Landroid/os/Handler;
 
-    iget-object v1, p0, Lcom/android/settings/location/SettingsInjector;->mHandler:Landroid/os/Handler;
+    iget-object v1, p0, Lcom/android/settings_ext/location/SettingsInjector;->mHandler:Landroid/os/Handler;
 
     const/4 v2, 0x1
 

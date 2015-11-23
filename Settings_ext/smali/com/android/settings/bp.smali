@@ -1,5 +1,5 @@
-.class public Lcom/android/settings/bp;
-.super Lcom/android/settings/br;
+.class public Lcom/android/settings_ext/bp;
+.super Lcom/android/settings_ext/br;
 .source "DataUsageSummary.java"
 
 
@@ -15,7 +15,7 @@
 
     move-result-object v0
 
-    invoke-direct {p0, v0}, Lcom/android/settings/br;-><init>(Ljava/lang/CharSequence;)V
+    invoke-direct {p0, v0}, Lcom/android/settings_ext/br;-><init>(Ljava/lang/CharSequence;)V
 
     .line 1480
     return-void

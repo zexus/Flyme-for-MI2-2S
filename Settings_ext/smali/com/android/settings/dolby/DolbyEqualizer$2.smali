@@ -1,4 +1,4 @@
-.class Lcom/android/settings/dolby/DolbyEqualizer$2;
+.class Lcom/android/settings_ext/dolby/DolbyEqualizer$2;
 .super Ljava/lang/Object;
 .source "DolbyEqualizer.java"
 
@@ -7,16 +7,16 @@
 
 
 # instance fields
-.field final synthetic XU:Lcom/android/settings/dolby/DolbyEqualizer;
+.field final synthetic XU:Lcom/android/settings_ext/dolby/DolbyEqualizer;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/dolby/DolbyEqualizer;)V
+.method constructor <init>(Lcom/android/settings_ext/dolby/DolbyEqualizer;)V
     .locals 0
 
     .prologue
     .line 361
-    iput-object p1, p0, Lcom/android/settings/dolby/DolbyEqualizer$2;->XU:Lcom/android/settings/dolby/DolbyEqualizer;
+    iput-object p1, p0, Lcom/android/settings_ext/dolby/DolbyEqualizer$2;->XU:Lcom/android/settings_ext/dolby/DolbyEqualizer;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -32,15 +32,15 @@
     const/4 v1, 0x1
 
     .line 365
-    iget-object v0, p0, Lcom/android/settings/dolby/DolbyEqualizer$2;->XU:Lcom/android/settings/dolby/DolbyEqualizer;
+    iget-object v0, p0, Lcom/android/settings_ext/dolby/DolbyEqualizer$2;->XU:Lcom/android/settings_ext/dolby/DolbyEqualizer;
 
-    invoke-static {v0, v1}, Lcom/android/settings/dolby/DolbyEqualizer;->a(Lcom/android/settings/dolby/DolbyEqualizer;Z)Z
+    invoke-static {v0, v1}, Lcom/android/settings_ext/dolby/DolbyEqualizer;->a(Lcom/android/settings_ext/dolby/DolbyEqualizer;Z)Z
 
     .line 367
     :try_start_0
-    iget-object v0, p0, Lcom/android/settings/dolby/DolbyEqualizer$2;->XU:Lcom/android/settings/dolby/DolbyEqualizer;
+    iget-object v0, p0, Lcom/android/settings_ext/dolby/DolbyEqualizer$2;->XU:Lcom/android/settings_ext/dolby/DolbyEqualizer;
 
-    invoke-static {v0}, Lcom/android/settings/dolby/DolbyEqualizer;->d(Lcom/android/settings/dolby/DolbyEqualizer;)Landroid/dolby/DsClient;
+    invoke-static {v0}, Lcom/android/settings_ext/dolby/DolbyEqualizer;->d(Lcom/android/settings_ext/dolby/DolbyEqualizer;)Landroid/dolby/DsClient;
 
     move-result-object v0
 
@@ -56,9 +56,9 @@
     invoke-virtual {v0, v1}, Landroid/dolby/DsClientSettings;->setGeqOn(Z)V
 
     .line 369
-    iget-object v1, p0, Lcom/android/settings/dolby/DolbyEqualizer$2;->XU:Lcom/android/settings/dolby/DolbyEqualizer;
+    iget-object v1, p0, Lcom/android/settings_ext/dolby/DolbyEqualizer$2;->XU:Lcom/android/settings_ext/dolby/DolbyEqualizer;
 
-    invoke-static {v1}, Lcom/android/settings/dolby/DolbyEqualizer;->d(Lcom/android/settings/dolby/DolbyEqualizer;)Landroid/dolby/DsClient;
+    invoke-static {v1}, Lcom/android/settings_ext/dolby/DolbyEqualizer;->d(Lcom/android/settings_ext/dolby/DolbyEqualizer;)Landroid/dolby/DsClient;
 
     move-result-object v1
 
@@ -76,19 +76,19 @@
 
     .line 385
     :goto_0
-    iget-object v0, p0, Lcom/android/settings/dolby/DolbyEqualizer$2;->XU:Lcom/android/settings/dolby/DolbyEqualizer;
+    iget-object v0, p0, Lcom/android/settings_ext/dolby/DolbyEqualizer$2;->XU:Lcom/android/settings_ext/dolby/DolbyEqualizer;
 
-    invoke-static {v0}, Lcom/android/settings/dolby/DolbyEqualizer;->c(Lcom/android/settings/dolby/DolbyEqualizer;)V
+    invoke-static {v0}, Lcom/android/settings_ext/dolby/DolbyEqualizer;->c(Lcom/android/settings_ext/dolby/DolbyEqualizer;)V
 
     .line 386
-    iget-object v0, p0, Lcom/android/settings/dolby/DolbyEqualizer$2;->XU:Lcom/android/settings/dolby/DolbyEqualizer;
+    iget-object v0, p0, Lcom/android/settings_ext/dolby/DolbyEqualizer$2;->XU:Lcom/android/settings_ext/dolby/DolbyEqualizer;
 
-    invoke-static {v0}, Lcom/android/settings/dolby/DolbyEqualizer;->b(Lcom/android/settings/dolby/DolbyEqualizer;)V
+    invoke-static {v0}, Lcom/android/settings_ext/dolby/DolbyEqualizer;->b(Lcom/android/settings_ext/dolby/DolbyEqualizer;)V
 
     .line 387
-    iget-object v0, p0, Lcom/android/settings/dolby/DolbyEqualizer$2;->XU:Lcom/android/settings/dolby/DolbyEqualizer;
+    iget-object v0, p0, Lcom/android/settings_ext/dolby/DolbyEqualizer$2;->XU:Lcom/android/settings_ext/dolby/DolbyEqualizer;
 
-    invoke-static {v0}, Lcom/android/settings/dolby/DolbyEqualizer;->a(Lcom/android/settings/dolby/DolbyEqualizer;)V
+    invoke-static {v0}, Lcom/android/settings_ext/dolby/DolbyEqualizer;->a(Lcom/android/settings_ext/dolby/DolbyEqualizer;)V
 
     .line 388
     return-void
@@ -162,11 +162,11 @@
 
     .prologue
     .line 392
-    iget-object v0, p0, Lcom/android/settings/dolby/DolbyEqualizer$2;->XU:Lcom/android/settings/dolby/DolbyEqualizer;
+    iget-object v0, p0, Lcom/android/settings_ext/dolby/DolbyEqualizer$2;->XU:Lcom/android/settings_ext/dolby/DolbyEqualizer;
 
     const/4 v1, 0x0
 
-    invoke-static {v0, v1}, Lcom/android/settings/dolby/DolbyEqualizer;->a(Lcom/android/settings/dolby/DolbyEqualizer;Z)Z
+    invoke-static {v0, v1}, Lcom/android/settings_ext/dolby/DolbyEqualizer;->a(Lcom/android/settings_ext/dolby/DolbyEqualizer;Z)Z
 
     .line 393
     return-void

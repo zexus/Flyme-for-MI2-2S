@@ -1,4 +1,4 @@
-.class Lcom/android/settings/dW;
+.class Lcom/android/settings_ext/dW;
 .super Ljava/lang/Object;
 .source "MiuiSecurityBluetoothDeviceInfoFragment.java"
 
@@ -7,16 +7,16 @@
 
 
 # instance fields
-.field final synthetic qB:Lcom/android/settings/MiuiSecurityBluetoothDeviceInfoFragment;
+.field final synthetic qB:Lcom/android/settings_ext/MiuiSecurityBluetoothDeviceInfoFragment;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/MiuiSecurityBluetoothDeviceInfoFragment;)V
+.method constructor <init>(Lcom/android/settings_ext/MiuiSecurityBluetoothDeviceInfoFragment;)V
     .locals 0
 
     .prologue
     .line 43
-    iput-object p1, p0, Lcom/android/settings/dW;->qB:Lcom/android/settings/MiuiSecurityBluetoothDeviceInfoFragment;
+    iput-object p1, p0, Lcom/android/settings_ext/dW;->qB:Lcom/android/settings_ext/MiuiSecurityBluetoothDeviceInfoFragment;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -34,8 +34,8 @@
     const/4 v3, 0x2
 
     .line 48
-    # getter for: Lcom/android/settings/MiuiSecurityBluetoothDeviceInfoFragment;->TAG:Ljava/lang/String;
-    invoke-static {}, Lcom/android/settings/MiuiSecurityBluetoothDeviceInfoFragment;->access$000()Ljava/lang/String;
+    # getter for: Lcom/android/settings_ext/MiuiSecurityBluetoothDeviceInfoFragment;->TAG:Ljava/lang/String;
+    invoke-static {}, Lcom/android/settings_ext/MiuiSecurityBluetoothDeviceInfoFragment;->access$000()Ljava/lang/String;
 
     move-result-object v0
 
@@ -60,9 +60,9 @@
     invoke-static {v0, v1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
     .line 51
-    iget-object v0, p0, Lcom/android/settings/dW;->qB:Lcom/android/settings/MiuiSecurityBluetoothDeviceInfoFragment;
+    iget-object v0, p0, Lcom/android/settings_ext/dW;->qB:Lcom/android/settings_ext/MiuiSecurityBluetoothDeviceInfoFragment;
 
-    invoke-virtual {v0}, Lcom/android/settings/MiuiSecurityBluetoothDeviceInfoFragment;->isAdded()Z
+    invoke-virtual {v0}, Lcom/android/settings_ext/MiuiSecurityBluetoothDeviceInfoFragment;->isAdded()Z
 
     move-result v0
 
@@ -77,9 +77,9 @@
     if-ne p1, v3, :cond_2
 
     .line 56
-    iget-object v0, p0, Lcom/android/settings/dW;->qB:Lcom/android/settings/MiuiSecurityBluetoothDeviceInfoFragment;
+    iget-object v0, p0, Lcom/android/settings_ext/dW;->qB:Lcom/android/settings_ext/MiuiSecurityBluetoothDeviceInfoFragment;
 
-    invoke-static {v0}, Lcom/android/settings/MiuiSecurityBluetoothDeviceInfoFragment;->a(Lcom/android/settings/MiuiSecurityBluetoothDeviceInfoFragment;)Landroid/widget/ImageView;
+    invoke-static {v0}, Lcom/android/settings_ext/MiuiSecurityBluetoothDeviceInfoFragment;->a(Lcom/android/settings_ext/MiuiSecurityBluetoothDeviceInfoFragment;)Landroid/widget/ImageView;
 
     move-result-object v0
 
@@ -90,9 +90,9 @@
     if-eqz v0, :cond_1
 
     .line 57
-    iget-object v0, p0, Lcom/android/settings/dW;->qB:Lcom/android/settings/MiuiSecurityBluetoothDeviceInfoFragment;
+    iget-object v0, p0, Lcom/android/settings_ext/dW;->qB:Lcom/android/settings_ext/MiuiSecurityBluetoothDeviceInfoFragment;
 
-    invoke-static {v0}, Lcom/android/settings/MiuiSecurityBluetoothDeviceInfoFragment;->a(Lcom/android/settings/MiuiSecurityBluetoothDeviceInfoFragment;)Landroid/widget/ImageView;
+    invoke-static {v0}, Lcom/android/settings_ext/MiuiSecurityBluetoothDeviceInfoFragment;->a(Lcom/android/settings_ext/MiuiSecurityBluetoothDeviceInfoFragment;)Landroid/widget/ImageView;
 
     move-result-object v0
 
@@ -103,9 +103,9 @@
     .line 65
     :cond_1
     :goto_1
-    iget-object v0, p0, Lcom/android/settings/dW;->qB:Lcom/android/settings/MiuiSecurityBluetoothDeviceInfoFragment;
+    iget-object v0, p0, Lcom/android/settings_ext/dW;->qB:Lcom/android/settings_ext/MiuiSecurityBluetoothDeviceInfoFragment;
 
-    invoke-static {v0}, Lcom/android/settings/MiuiSecurityBluetoothDeviceInfoFragment;->b(Lcom/android/settings/MiuiSecurityBluetoothDeviceInfoFragment;)Z
+    invoke-static {v0}, Lcom/android/settings_ext/MiuiSecurityBluetoothDeviceInfoFragment;->b(Lcom/android/settings_ext/MiuiSecurityBluetoothDeviceInfoFragment;)Z
 
     move-result v0
 
@@ -115,9 +115,9 @@
     if-ne p1, v3, :cond_3
 
     .line 67
-    iget-object v0, p0, Lcom/android/settings/dW;->qB:Lcom/android/settings/MiuiSecurityBluetoothDeviceInfoFragment;
+    iget-object v0, p0, Lcom/android/settings_ext/dW;->qB:Lcom/android/settings_ext/MiuiSecurityBluetoothDeviceInfoFragment;
 
-    invoke-static {v0}, Lcom/android/settings/MiuiSecurityBluetoothDeviceInfoFragment;->c(Lcom/android/settings/MiuiSecurityBluetoothDeviceInfoFragment;)Landroid/widget/TextView;
+    invoke-static {v0}, Lcom/android/settings_ext/MiuiSecurityBluetoothDeviceInfoFragment;->c(Lcom/android/settings_ext/MiuiSecurityBluetoothDeviceInfoFragment;)Landroid/widget/TextView;
 
     move-result-object v0
 
@@ -129,9 +129,9 @@
 
     .line 60
     :cond_2
-    iget-object v0, p0, Lcom/android/settings/dW;->qB:Lcom/android/settings/MiuiSecurityBluetoothDeviceInfoFragment;
+    iget-object v0, p0, Lcom/android/settings_ext/dW;->qB:Lcom/android/settings_ext/MiuiSecurityBluetoothDeviceInfoFragment;
 
-    invoke-static {v0}, Lcom/android/settings/MiuiSecurityBluetoothDeviceInfoFragment;->a(Lcom/android/settings/MiuiSecurityBluetoothDeviceInfoFragment;)Landroid/widget/ImageView;
+    invoke-static {v0}, Lcom/android/settings_ext/MiuiSecurityBluetoothDeviceInfoFragment;->a(Lcom/android/settings_ext/MiuiSecurityBluetoothDeviceInfoFragment;)Landroid/widget/ImageView;
 
     move-result-object v0
 
@@ -142,9 +142,9 @@
     if-eq v0, v4, :cond_1
 
     .line 61
-    iget-object v0, p0, Lcom/android/settings/dW;->qB:Lcom/android/settings/MiuiSecurityBluetoothDeviceInfoFragment;
+    iget-object v0, p0, Lcom/android/settings_ext/dW;->qB:Lcom/android/settings_ext/MiuiSecurityBluetoothDeviceInfoFragment;
 
-    invoke-static {v0}, Lcom/android/settings/MiuiSecurityBluetoothDeviceInfoFragment;->a(Lcom/android/settings/MiuiSecurityBluetoothDeviceInfoFragment;)Landroid/widget/ImageView;
+    invoke-static {v0}, Lcom/android/settings_ext/MiuiSecurityBluetoothDeviceInfoFragment;->a(Lcom/android/settings_ext/MiuiSecurityBluetoothDeviceInfoFragment;)Landroid/widget/ImageView;
 
     move-result-object v0
 
@@ -159,9 +159,9 @@
     if-ne p1, v0, :cond_4
 
     .line 69
-    iget-object v0, p0, Lcom/android/settings/dW;->qB:Lcom/android/settings/MiuiSecurityBluetoothDeviceInfoFragment;
+    iget-object v0, p0, Lcom/android/settings_ext/dW;->qB:Lcom/android/settings_ext/MiuiSecurityBluetoothDeviceInfoFragment;
 
-    invoke-static {v0}, Lcom/android/settings/MiuiSecurityBluetoothDeviceInfoFragment;->c(Lcom/android/settings/MiuiSecurityBluetoothDeviceInfoFragment;)Landroid/widget/TextView;
+    invoke-static {v0}, Lcom/android/settings_ext/MiuiSecurityBluetoothDeviceInfoFragment;->c(Lcom/android/settings_ext/MiuiSecurityBluetoothDeviceInfoFragment;)Landroid/widget/TextView;
 
     move-result-object v0
 
@@ -173,9 +173,9 @@
 
     .line 71
     :cond_4
-    iget-object v0, p0, Lcom/android/settings/dW;->qB:Lcom/android/settings/MiuiSecurityBluetoothDeviceInfoFragment;
+    iget-object v0, p0, Lcom/android/settings_ext/dW;->qB:Lcom/android/settings_ext/MiuiSecurityBluetoothDeviceInfoFragment;
 
-    invoke-static {v0}, Lcom/android/settings/MiuiSecurityBluetoothDeviceInfoFragment;->c(Lcom/android/settings/MiuiSecurityBluetoothDeviceInfoFragment;)Landroid/widget/TextView;
+    invoke-static {v0}, Lcom/android/settings_ext/MiuiSecurityBluetoothDeviceInfoFragment;->c(Lcom/android/settings_ext/MiuiSecurityBluetoothDeviceInfoFragment;)Landroid/widget/TextView;
 
     move-result-object v0
 
@@ -187,9 +187,9 @@
 
     .line 74
     :cond_5
-    iget-object v0, p0, Lcom/android/settings/dW;->qB:Lcom/android/settings/MiuiSecurityBluetoothDeviceInfoFragment;
+    iget-object v0, p0, Lcom/android/settings_ext/dW;->qB:Lcom/android/settings_ext/MiuiSecurityBluetoothDeviceInfoFragment;
 
-    invoke-static {v0}, Lcom/android/settings/MiuiSecurityBluetoothDeviceInfoFragment;->c(Lcom/android/settings/MiuiSecurityBluetoothDeviceInfoFragment;)Landroid/widget/TextView;
+    invoke-static {v0}, Lcom/android/settings_ext/MiuiSecurityBluetoothDeviceInfoFragment;->c(Lcom/android/settings_ext/MiuiSecurityBluetoothDeviceInfoFragment;)Landroid/widget/TextView;
 
     move-result-object v0
 

@@ -1,4 +1,4 @@
-.class Lcom/android/settings/accounts/AccountSettings$MasterSyncStateClickListener;
+.class Lcom/android/settings_ext/accounts/AccountSettings$MasterSyncStateClickListener;
 .super Ljava/lang/Object;
 .source "AccountSettings.java"
 
@@ -7,23 +7,23 @@
 
 
 # instance fields
-.field final synthetic BD:Lcom/android/settings/accounts/AccountSettings;
+.field final synthetic BD:Lcom/android/settings_ext/accounts/AccountSettings;
 
 .field private final zA:Landroid/os/UserHandle;
 
 
 # direct methods
-.method public constructor <init>(Lcom/android/settings/accounts/AccountSettings;Landroid/os/UserHandle;)V
+.method public constructor <init>(Lcom/android/settings_ext/accounts/AccountSettings;Landroid/os/UserHandle;)V
     .locals 0
 
     .prologue
     .line 518
-    iput-object p1, p0, Lcom/android/settings/accounts/AccountSettings$MasterSyncStateClickListener;->BD:Lcom/android/settings/accounts/AccountSettings;
+    iput-object p1, p0, Lcom/android/settings_ext/accounts/AccountSettings$MasterSyncStateClickListener;->BD:Lcom/android/settings_ext/accounts/AccountSettings;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 519
-    iput-object p2, p0, Lcom/android/settings/accounts/AccountSettings$MasterSyncStateClickListener;->zA:Landroid/os/UserHandle;
+    iput-object p2, p0, Lcom/android/settings_ext/accounts/AccountSettings$MasterSyncStateClickListener;->zA:Landroid/os/UserHandle;
 
     .line 520
     return-void
@@ -57,7 +57,7 @@
 
     .line 527
     :cond_0
-    iget-object v2, p0, Lcom/android/settings/accounts/AccountSettings$MasterSyncStateClickListener;->BD:Lcom/android/settings/accounts/AccountSettings;
+    iget-object v2, p0, Lcom/android/settings_ext/accounts/AccountSettings$MasterSyncStateClickListener;->BD:Lcom/android/settings_ext/accounts/AccountSettings;
 
     invoke-interface {p1}, Landroid/view/MenuItem;->isChecked()Z
 
@@ -68,9 +68,9 @@
     move v0, v1
 
     :goto_1
-    iget-object v3, p0, Lcom/android/settings/accounts/AccountSettings$MasterSyncStateClickListener;->zA:Landroid/os/UserHandle;
+    iget-object v3, p0, Lcom/android/settings_ext/accounts/AccountSettings$MasterSyncStateClickListener;->zA:Landroid/os/UserHandle;
 
-    invoke-static {v2, v0, v3}, Lcom/android/settings/accounts/AccountSettings$ConfirmAutoSyncChangeFragment;->a(Lcom/android/settings/accounts/AccountSettings;ZLandroid/os/UserHandle;)V
+    invoke-static {v2, v0, v3}, Lcom/android/settings_ext/accounts/AccountSettings$ConfirmAutoSyncChangeFragment;->a(Lcom/android/settings_ext/accounts/AccountSettings;ZLandroid/os/UserHandle;)V
 
     goto :goto_0
 

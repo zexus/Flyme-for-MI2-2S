@@ -1,4 +1,4 @@
-.class final Lcom/android/settings/bj;
+.class final Lcom/android/settings_ext/bj;
 .super Ljava/lang/Object;
 .source "DataUsageSummary.java"
 
@@ -19,14 +19,14 @@
 
 
 # virtual methods
-.method public a(Landroid/os/Parcel;)Lcom/android/settings/DataUsageSummary$AppItem;
+.method public a(Landroid/os/Parcel;)Lcom/android/settings_ext/DataUsageSummary$AppItem;
     .locals 1
 
     .prologue
     .line 1586
-    new-instance v0, Lcom/android/settings/DataUsageSummary$AppItem;
+    new-instance v0, Lcom/android/settings_ext/DataUsageSummary$AppItem;
 
-    invoke-direct {v0, p1}, Lcom/android/settings/DataUsageSummary$AppItem;-><init>(Landroid/os/Parcel;)V
+    invoke-direct {v0, p1}, Lcom/android/settings_ext/DataUsageSummary$AppItem;-><init>(Landroid/os/Parcel;)V
 
     return-object v0
 .end method
@@ -36,7 +36,7 @@
 
     .prologue
     .line 1583
-    invoke-virtual {p0, p1}, Lcom/android/settings/bj;->a(Landroid/os/Parcel;)Lcom/android/settings/DataUsageSummary$AppItem;
+    invoke-virtual {p0, p1}, Lcom/android/settings_ext/bj;->a(Landroid/os/Parcel;)Lcom/android/settings_ext/DataUsageSummary$AppItem;
 
     move-result-object v0
 
@@ -48,19 +48,19 @@
 
     .prologue
     .line 1583
-    invoke-virtual {p0, p1}, Lcom/android/settings/bj;->q(I)[Lcom/android/settings/DataUsageSummary$AppItem;
+    invoke-virtual {p0, p1}, Lcom/android/settings_ext/bj;->q(I)[Lcom/android/settings_ext/DataUsageSummary$AppItem;
 
     move-result-object v0
 
     return-object v0
 .end method
 
-.method public q(I)[Lcom/android/settings/DataUsageSummary$AppItem;
+.method public q(I)[Lcom/android/settings_ext/DataUsageSummary$AppItem;
     .locals 1
 
     .prologue
     .line 1591
-    new-array v0, p1, [Lcom/android/settings/DataUsageSummary$AppItem;
+    new-array v0, p1, [Lcom/android/settings_ext/DataUsageSummary$AppItem;
 
     return-object v0
 .end method

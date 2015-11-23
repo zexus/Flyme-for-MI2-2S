@@ -1,4 +1,4 @@
-.class Lcom/android/settings/fp;
+.class Lcom/android/settings_ext/fp;
 .super Ljava/lang/Object;
 .source "PrivacySettings.java"
 
@@ -7,16 +7,16 @@
 
 
 # instance fields
-.field final synthetic ue:Lcom/android/settings/PrivacySettings;
+.field final synthetic ue:Lcom/android/settings_ext/PrivacySettings;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/PrivacySettings;)V
+.method constructor <init>(Lcom/android/settings_ext/PrivacySettings;)V
     .locals 0
 
     .prologue
     .line 152
-    iput-object p1, p0, Lcom/android/settings/fp;->ue:Lcom/android/settings/PrivacySettings;
+    iput-object p1, p0, Lcom/android/settings_ext/fp;->ue:Lcom/android/settings_ext/PrivacySettings;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -51,9 +51,9 @@
     move-result v2
 
     .line 160
-    iget-object v3, p0, Lcom/android/settings/fp;->ue:Lcom/android/settings/PrivacySettings;
+    iget-object v3, p0, Lcom/android/settings_ext/fp;->ue:Lcom/android/settings_ext/PrivacySettings;
 
-    invoke-static {v3}, Lcom/android/settings/PrivacySettings;->a(Lcom/android/settings/PrivacySettings;)Landroid/preference/CheckBoxPreference;
+    invoke-static {v3}, Lcom/android/settings_ext/PrivacySettings;->a(Lcom/android/settings_ext/PrivacySettings;)Landroid/preference/CheckBoxPreference;
 
     move-result-object v3
 
@@ -63,9 +63,9 @@
     if-nez v2, :cond_2
 
     .line 164
-    iget-object v0, p0, Lcom/android/settings/fp;->ue:Lcom/android/settings/PrivacySettings;
+    iget-object v0, p0, Lcom/android/settings_ext/fp;->ue:Lcom/android/settings_ext/PrivacySettings;
 
-    invoke-static {v0}, Lcom/android/settings/PrivacySettings;->b(Lcom/android/settings/PrivacySettings;)V
+    invoke-static {v0}, Lcom/android/settings_ext/PrivacySettings;->b(Lcom/android/settings_ext/PrivacySettings;)V
 
     :cond_1
     :goto_1
@@ -76,9 +76,9 @@
 
     .line 166
     :cond_2
-    iget-object v1, p0, Lcom/android/settings/fp;->ue:Lcom/android/settings/PrivacySettings;
+    iget-object v1, p0, Lcom/android/settings_ext/fp;->ue:Lcom/android/settings_ext/PrivacySettings;
 
-    invoke-static {v1, v0}, Lcom/android/settings/PrivacySettings;->a(Lcom/android/settings/PrivacySettings;Z)V
+    invoke-static {v1, v0}, Lcom/android/settings_ext/PrivacySettings;->a(Lcom/android/settings_ext/PrivacySettings;Z)V
 
     move v1, v0
 
@@ -87,9 +87,9 @@
 
     .line 169
     :cond_3
-    iget-object v3, p0, Lcom/android/settings/fp;->ue:Lcom/android/settings/PrivacySettings;
+    iget-object v3, p0, Lcom/android/settings_ext/fp;->ue:Lcom/android/settings_ext/PrivacySettings;
 
-    invoke-static {v3}, Lcom/android/settings/PrivacySettings;->c(Lcom/android/settings/PrivacySettings;)Landroid/preference/CheckBoxPreference;
+    invoke-static {v3}, Lcom/android/settings_ext/PrivacySettings;->c(Lcom/android/settings_ext/PrivacySettings;)Landroid/preference/CheckBoxPreference;
 
     move-result-object v3
 
@@ -97,9 +97,9 @@
 
     .line 171
     :try_start_0
-    iget-object v3, p0, Lcom/android/settings/fp;->ue:Lcom/android/settings/PrivacySettings;
+    iget-object v3, p0, Lcom/android/settings_ext/fp;->ue:Lcom/android/settings_ext/PrivacySettings;
 
-    invoke-static {v3}, Lcom/android/settings/PrivacySettings;->d(Lcom/android/settings/PrivacySettings;)Landroid/app/backup/IBackupManager;
+    invoke-static {v3}, Lcom/android/settings_ext/PrivacySettings;->d(Lcom/android/settings_ext/PrivacySettings;)Landroid/app/backup/IBackupManager;
 
     move-result-object v3
 
@@ -117,9 +117,9 @@
     move-exception v3
 
     .line 174
-    iget-object v3, p0, Lcom/android/settings/fp;->ue:Lcom/android/settings/PrivacySettings;
+    iget-object v3, p0, Lcom/android/settings_ext/fp;->ue:Lcom/android/settings_ext/PrivacySettings;
 
-    invoke-static {v3}, Lcom/android/settings/PrivacySettings;->c(Lcom/android/settings/PrivacySettings;)Landroid/preference/CheckBoxPreference;
+    invoke-static {v3}, Lcom/android/settings_ext/PrivacySettings;->c(Lcom/android/settings_ext/PrivacySettings;)Landroid/preference/CheckBoxPreference;
 
     move-result-object v3
 

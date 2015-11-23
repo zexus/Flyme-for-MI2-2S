@@ -1,4 +1,4 @@
-.class Lcom/android/settings/notification/MiuiZenModeSettings$1;
+.class Lcom/android/settings_ext/notification/MiuiZenModeSettings$1;
 .super Ljava/lang/Object;
 .source "MiuiZenModeSettings.java"
 
@@ -7,16 +7,16 @@
 
 
 # instance fields
-.field final synthetic aeC:Lcom/android/settings/notification/MiuiZenModeSettings;
+.field final synthetic aeC:Lcom/android/settings_ext/notification/MiuiZenModeSettings;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/notification/MiuiZenModeSettings;)V
+.method constructor <init>(Lcom/android/settings_ext/notification/MiuiZenModeSettings;)V
     .locals 0
 
     .prologue
     .line 109
-    iput-object p1, p0, Lcom/android/settings/notification/MiuiZenModeSettings$1;->aeC:Lcom/android/settings/notification/MiuiZenModeSettings;
+    iput-object p1, p0, Lcom/android/settings_ext/notification/MiuiZenModeSettings$1;->aeC:Lcom/android/settings_ext/notification/MiuiZenModeSettings;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -32,20 +32,20 @@
     .line 113
     new-instance v0, Landroid/content/Intent;
 
-    iget-object v1, p0, Lcom/android/settings/notification/MiuiZenModeSettings$1;->aeC:Lcom/android/settings/notification/MiuiZenModeSettings;
+    iget-object v1, p0, Lcom/android/settings_ext/notification/MiuiZenModeSettings$1;->aeC:Lcom/android/settings_ext/notification/MiuiZenModeSettings;
 
-    invoke-static {v1}, Lcom/android/settings/notification/MiuiZenModeSettings;->a(Lcom/android/settings/notification/MiuiZenModeSettings;)Landroid/content/Context;
+    invoke-static {v1}, Lcom/android/settings_ext/notification/MiuiZenModeSettings;->a(Lcom/android/settings_ext/notification/MiuiZenModeSettings;)Landroid/content/Context;
 
     move-result-object v1
 
-    const-class v2, Lcom/android/settings/dndmode/AlarmContentActivity;
+    const-class v2, Lcom/android/settings_ext/dndmode/AlarmContentActivity;
 
     invoke-direct {v0, v1, v2}, Landroid/content/Intent;-><init>(Landroid/content/Context;Ljava/lang/Class;)V
 
     .line 114
-    iget-object v1, p0, Lcom/android/settings/notification/MiuiZenModeSettings$1;->aeC:Lcom/android/settings/notification/MiuiZenModeSettings;
+    iget-object v1, p0, Lcom/android/settings_ext/notification/MiuiZenModeSettings$1;->aeC:Lcom/android/settings_ext/notification/MiuiZenModeSettings;
 
-    invoke-static {v1}, Lcom/android/settings/notification/MiuiZenModeSettings;->a(Lcom/android/settings/notification/MiuiZenModeSettings;)Landroid/content/Context;
+    invoke-static {v1}, Lcom/android/settings_ext/notification/MiuiZenModeSettings;->a(Lcom/android/settings_ext/notification/MiuiZenModeSettings;)Landroid/content/Context;
 
     move-result-object v1
 

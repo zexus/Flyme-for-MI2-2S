@@ -1,4 +1,4 @@
-.class public Lcom/android/settings/Application;
+.class public Lcom/android/settings_ext/Application;
 .super Lmiui/external/a;
 .source "Application.java"
 
@@ -21,9 +21,9 @@
 
     .prologue
     .line 9
-    new-instance v0, Lcom/android/settings/go;
+    new-instance v0, Lcom/android/settings_ext/go;
 
-    invoke-direct {v0}, Lcom/android/settings/go;-><init>()V
+    invoke-direct {v0}, Lcom/android/settings_ext/go;-><init>()V
 
     return-object v0
 .end method

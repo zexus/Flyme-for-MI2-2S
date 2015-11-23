@@ -1,5 +1,5 @@
-.class public Lcom/android/settings/NewFingerprintInternalActivity$NewFingerprintFragment;
-.super Lcom/android/settings/BaseEditFragment;
+.class public Lcom/android/settings_ext/NewFingerprintInternalActivity$NewFingerprintFragment;
+.super Lcom/android/settings_ext/BaseEditFragment;
 .source "NewFingerprintInternalActivity.java"
 
 
@@ -8,7 +8,7 @@
 
 .field private mHandler:Landroid/os/Handler;
 
-.field private oX:Lcom/android/settings/cu;
+.field private oX:Lcom/android/settings_ext/cu;
 
 .field private ot:Landroid/app/AlertDialog;
 
@@ -40,7 +40,7 @@
 
 .field private final sV:Ljava/lang/Runnable;
 
-.field private sW:Lcom/android/settings/ct;
+.field private sW:Lcom/android/settings_ext/ct;
 
 
 # direct methods
@@ -53,50 +53,50 @@
     const/4 v1, 0x0
 
     .line 41
-    invoke-direct {p0}, Lcom/android/settings/BaseEditFragment;-><init>()V
+    invoke-direct {p0}, Lcom/android/settings_ext/BaseEditFragment;-><init>()V
 
     .line 52
-    iput-object v1, p0, Lcom/android/settings/NewFingerprintInternalActivity$NewFingerprintFragment;->oX:Lcom/android/settings/cu;
+    iput-object v1, p0, Lcom/android/settings_ext/NewFingerprintInternalActivity$NewFingerprintFragment;->oX:Lcom/android/settings_ext/cu;
 
     .line 53
     const/4 v0, 0x1
 
-    iput v0, p0, Lcom/android/settings/NewFingerprintInternalActivity$NewFingerprintFragment;->sJ:I
+    iput v0, p0, Lcom/android/settings_ext/NewFingerprintInternalActivity$NewFingerprintFragment;->sJ:I
 
     .line 54
-    iput-object v1, p0, Lcom/android/settings/NewFingerprintInternalActivity$NewFingerprintFragment;->sK:Landroid/os/Vibrator;
+    iput-object v1, p0, Lcom/android/settings_ext/NewFingerprintInternalActivity$NewFingerprintFragment;->sK:Landroid/os/Vibrator;
 
     .line 63
-    iput-object v1, p0, Lcom/android/settings/NewFingerprintInternalActivity$NewFingerprintFragment;->ot:Landroid/app/AlertDialog;
+    iput-object v1, p0, Lcom/android/settings_ext/NewFingerprintInternalActivity$NewFingerprintFragment;->ot:Landroid/app/AlertDialog;
 
-    iput-object v1, p0, Lcom/android/settings/NewFingerprintInternalActivity$NewFingerprintFragment;->sR:Landroid/app/AlertDialog;
+    iput-object v1, p0, Lcom/android/settings_ext/NewFingerprintInternalActivity$NewFingerprintFragment;->sR:Landroid/app/AlertDialog;
 
     .line 64
     new-instance v0, Landroid/os/Handler;
 
     invoke-direct {v0}, Landroid/os/Handler;-><init>()V
 
-    iput-object v0, p0, Lcom/android/settings/NewFingerprintInternalActivity$NewFingerprintFragment;->mHandler:Landroid/os/Handler;
+    iput-object v0, p0, Lcom/android/settings_ext/NewFingerprintInternalActivity$NewFingerprintFragment;->mHandler:Landroid/os/Handler;
 
     .line 65
-    iput-boolean v2, p0, Lcom/android/settings/NewFingerprintInternalActivity$NewFingerprintFragment;->sS:Z
+    iput-boolean v2, p0, Lcom/android/settings_ext/NewFingerprintInternalActivity$NewFingerprintFragment;->sS:Z
 
     .line 66
-    iput v2, p0, Lcom/android/settings/NewFingerprintInternalActivity$NewFingerprintFragment;->sT:I
+    iput v2, p0, Lcom/android/settings_ext/NewFingerprintInternalActivity$NewFingerprintFragment;->sT:I
 
     .line 154
-    new-instance v0, Lcom/android/settings/eQ;
+    new-instance v0, Lcom/android/settings_ext/eQ;
 
-    invoke-direct {v0, p0}, Lcom/android/settings/eQ;-><init>(Lcom/android/settings/NewFingerprintInternalActivity$NewFingerprintFragment;)V
+    invoke-direct {v0, p0}, Lcom/android/settings_ext/eQ;-><init>(Lcom/android/settings_ext/NewFingerprintInternalActivity$NewFingerprintFragment;)V
 
-    iput-object v0, p0, Lcom/android/settings/NewFingerprintInternalActivity$NewFingerprintFragment;->sV:Ljava/lang/Runnable;
+    iput-object v0, p0, Lcom/android/settings_ext/NewFingerprintInternalActivity$NewFingerprintFragment;->sV:Ljava/lang/Runnable;
 
     .line 189
-    new-instance v0, Lcom/android/settings/eR;
+    new-instance v0, Lcom/android/settings_ext/eR;
 
-    invoke-direct {v0, p0}, Lcom/android/settings/eR;-><init>(Lcom/android/settings/NewFingerprintInternalActivity$NewFingerprintFragment;)V
+    invoke-direct {v0, p0}, Lcom/android/settings_ext/eR;-><init>(Lcom/android/settings_ext/NewFingerprintInternalActivity$NewFingerprintFragment;)V
 
-    iput-object v0, p0, Lcom/android/settings/NewFingerprintInternalActivity$NewFingerprintFragment;->sW:Lcom/android/settings/ct;
+    iput-object v0, p0, Lcom/android/settings_ext/NewFingerprintInternalActivity$NewFingerprintFragment;->sW:Lcom/android/settings_ext/ct;
 
     return-void
 .end method
@@ -106,7 +106,7 @@
 
     .prologue
     .line 173
-    invoke-virtual {p0}, Lcom/android/settings/NewFingerprintInternalActivity$NewFingerprintFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/NewFingerprintInternalActivity$NewFingerprintFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
@@ -115,7 +115,7 @@
     move-result-object v0
 
     .line 174
-    invoke-virtual {p0}, Lcom/android/settings/NewFingerprintInternalActivity$NewFingerprintFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/NewFingerprintInternalActivity$NewFingerprintFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v1
 
@@ -182,7 +182,7 @@
     .line 165
     new-instance v0, Landroid/app/AlertDialog$Builder;
 
-    invoke-virtual {p0}, Lcom/android/settings/NewFingerprintInternalActivity$NewFingerprintFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/NewFingerprintInternalActivity$NewFingerprintFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v1
 
@@ -219,34 +219,34 @@
     return-object v0
 .end method
 
-.method static synthetic a(Lcom/android/settings/NewFingerprintInternalActivity$NewFingerprintFragment;I)Landroid/app/AlertDialog;
+.method static synthetic a(Lcom/android/settings_ext/NewFingerprintInternalActivity$NewFingerprintFragment;I)Landroid/app/AlertDialog;
     .locals 1
 
     .prologue
     .line 41
-    invoke-direct {p0, p1}, Lcom/android/settings/NewFingerprintInternalActivity$NewFingerprintFragment;->Q(I)Landroid/app/AlertDialog;
+    invoke-direct {p0, p1}, Lcom/android/settings_ext/NewFingerprintInternalActivity$NewFingerprintFragment;->Q(I)Landroid/app/AlertDialog;
 
     move-result-object v0
 
     return-object v0
 .end method
 
-.method static synthetic a(Lcom/android/settings/NewFingerprintInternalActivity$NewFingerprintFragment;Landroid/app/AlertDialog;)Landroid/app/AlertDialog;
+.method static synthetic a(Lcom/android/settings_ext/NewFingerprintInternalActivity$NewFingerprintFragment;Landroid/app/AlertDialog;)Landroid/app/AlertDialog;
     .locals 0
 
     .prologue
     .line 41
-    iput-object p1, p0, Lcom/android/settings/NewFingerprintInternalActivity$NewFingerprintFragment;->ot:Landroid/app/AlertDialog;
+    iput-object p1, p0, Lcom/android/settings_ext/NewFingerprintInternalActivity$NewFingerprintFragment;->ot:Landroid/app/AlertDialog;
 
     return-object p1
 .end method
 
-.method static synthetic a(Lcom/android/settings/NewFingerprintInternalActivity$NewFingerprintFragment;Ljava/lang/String;)Landroid/net/Uri;
+.method static synthetic a(Lcom/android/settings_ext/NewFingerprintInternalActivity$NewFingerprintFragment;Ljava/lang/String;)Landroid/net/Uri;
     .locals 1
 
     .prologue
     .line 41
-    invoke-direct {p0, p1}, Lcom/android/settings/NewFingerprintInternalActivity$NewFingerprintFragment;->D(Ljava/lang/String;)Landroid/net/Uri;
+    invoke-direct {p0, p1}, Lcom/android/settings_ext/NewFingerprintInternalActivity$NewFingerprintFragment;->D(Ljava/lang/String;)Landroid/net/Uri;
 
     move-result-object v0
 
@@ -292,72 +292,72 @@
     return-void
 .end method
 
-.method static synthetic a(Lcom/android/settings/NewFingerprintInternalActivity$NewFingerprintFragment;Landroid/net/Uri;Landroid/widget/VideoView;)V
+.method static synthetic a(Lcom/android/settings_ext/NewFingerprintInternalActivity$NewFingerprintFragment;Landroid/net/Uri;Landroid/widget/VideoView;)V
     .locals 0
 
     .prologue
     .line 41
-    invoke-direct {p0, p1, p2}, Lcom/android/settings/NewFingerprintInternalActivity$NewFingerprintFragment;->a(Landroid/net/Uri;Landroid/widget/VideoView;)V
+    invoke-direct {p0, p1, p2}, Lcom/android/settings_ext/NewFingerprintInternalActivity$NewFingerprintFragment;->a(Landroid/net/Uri;Landroid/widget/VideoView;)V
 
     return-void
 .end method
 
-.method static synthetic a(Lcom/android/settings/NewFingerprintInternalActivity$NewFingerprintFragment;)Z
+.method static synthetic a(Lcom/android/settings_ext/NewFingerprintInternalActivity$NewFingerprintFragment;)Z
     .locals 1
 
     .prologue
     .line 41
-    iget-boolean v0, p0, Lcom/android/settings/NewFingerprintInternalActivity$NewFingerprintFragment;->sS:Z
+    iget-boolean v0, p0, Lcom/android/settings_ext/NewFingerprintInternalActivity$NewFingerprintFragment;->sS:Z
 
     return v0
 .end method
 
-.method static synthetic a(Lcom/android/settings/NewFingerprintInternalActivity$NewFingerprintFragment;Z)Z
+.method static synthetic a(Lcom/android/settings_ext/NewFingerprintInternalActivity$NewFingerprintFragment;Z)Z
     .locals 0
 
     .prologue
     .line 41
-    iput-boolean p1, p0, Lcom/android/settings/NewFingerprintInternalActivity$NewFingerprintFragment;->sS:Z
+    iput-boolean p1, p0, Lcom/android/settings_ext/NewFingerprintInternalActivity$NewFingerprintFragment;->sS:Z
 
     return p1
 .end method
 
-.method static synthetic b(Lcom/android/settings/NewFingerprintInternalActivity$NewFingerprintFragment;)Landroid/widget/VideoView;
+.method static synthetic b(Lcom/android/settings_ext/NewFingerprintInternalActivity$NewFingerprintFragment;)Landroid/widget/VideoView;
     .locals 1
 
     .prologue
     .line 41
-    iget-object v0, p0, Lcom/android/settings/NewFingerprintInternalActivity$NewFingerprintFragment;->sO:Landroid/widget/VideoView;
+    iget-object v0, p0, Lcom/android/settings_ext/NewFingerprintInternalActivity$NewFingerprintFragment;->sO:Landroid/widget/VideoView;
 
     return-object v0
 .end method
 
-.method static synthetic c(Lcom/android/settings/NewFingerprintInternalActivity$NewFingerprintFragment;)Landroid/app/AlertDialog;
+.method static synthetic c(Lcom/android/settings_ext/NewFingerprintInternalActivity$NewFingerprintFragment;)Landroid/app/AlertDialog;
     .locals 1
 
     .prologue
     .line 41
-    iget-object v0, p0, Lcom/android/settings/NewFingerprintInternalActivity$NewFingerprintFragment;->ot:Landroid/app/AlertDialog;
+    iget-object v0, p0, Lcom/android/settings_ext/NewFingerprintInternalActivity$NewFingerprintFragment;->ot:Landroid/app/AlertDialog;
 
     return-object v0
 .end method
 
-.method static synthetic d(Lcom/android/settings/NewFingerprintInternalActivity$NewFingerprintFragment;)Landroid/widget/TextView;
+.method static synthetic d(Lcom/android/settings_ext/NewFingerprintInternalActivity$NewFingerprintFragment;)Landroid/widget/TextView;
     .locals 1
 
     .prologue
     .line 41
-    iget-object v0, p0, Lcom/android/settings/NewFingerprintInternalActivity$NewFingerprintFragment;->sL:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/android/settings_ext/NewFingerprintInternalActivity$NewFingerprintFragment;->sL:Landroid/widget/TextView;
 
     return-object v0
 .end method
 
-.method static synthetic e(Lcom/android/settings/NewFingerprintInternalActivity$NewFingerprintFragment;)Landroid/widget/TextView;
+.method static synthetic e(Lcom/android/settings_ext/NewFingerprintInternalActivity$NewFingerprintFragment;)Landroid/widget/TextView;
     .locals 1
 
     .prologue
     .line 41
-    iget-object v0, p0, Lcom/android/settings/NewFingerprintInternalActivity$NewFingerprintFragment;->qE:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/android/settings_ext/NewFingerprintInternalActivity$NewFingerprintFragment;->qE:Landroid/widget/TextView;
 
     return-object v0
 .end method
@@ -367,41 +367,41 @@
 
     .prologue
     .line 101
-    iget-object v0, p0, Lcom/android/settings/NewFingerprintInternalActivity$NewFingerprintFragment;->oX:Lcom/android/settings/cu;
+    iget-object v0, p0, Lcom/android/settings_ext/NewFingerprintInternalActivity$NewFingerprintFragment;->oX:Lcom/android/settings_ext/cu;
 
     if-eqz v0, :cond_0
 
     .line 102
-    iget-object v0, p0, Lcom/android/settings/NewFingerprintInternalActivity$NewFingerprintFragment;->oX:Lcom/android/settings/cu;
+    iget-object v0, p0, Lcom/android/settings_ext/NewFingerprintInternalActivity$NewFingerprintFragment;->oX:Lcom/android/settings_ext/cu;
 
-    invoke-virtual {v0}, Lcom/android/settings/cu;->dF()V
+    invoke-virtual {v0}, Lcom/android/settings_ext/cu;->dF()V
 
     .line 103
     const/4 v0, 0x0
 
-    iput-object v0, p0, Lcom/android/settings/NewFingerprintInternalActivity$NewFingerprintFragment;->oX:Lcom/android/settings/cu;
+    iput-object v0, p0, Lcom/android/settings_ext/NewFingerprintInternalActivity$NewFingerprintFragment;->oX:Lcom/android/settings_ext/cu;
 
     .line 105
     :cond_0
     return-void
 .end method
 
-.method static synthetic f(Lcom/android/settings/NewFingerprintInternalActivity$NewFingerprintFragment;)Landroid/widget/Button;
+.method static synthetic f(Lcom/android/settings_ext/NewFingerprintInternalActivity$NewFingerprintFragment;)Landroid/widget/Button;
     .locals 1
 
     .prologue
     .line 41
-    iget-object v0, p0, Lcom/android/settings/NewFingerprintInternalActivity$NewFingerprintFragment;->sP:Landroid/widget/Button;
+    iget-object v0, p0, Lcom/android/settings_ext/NewFingerprintInternalActivity$NewFingerprintFragment;->sP:Landroid/widget/Button;
 
     return-object v0
 .end method
 
-.method static synthetic g(Lcom/android/settings/NewFingerprintInternalActivity$NewFingerprintFragment;)Landroid/view/View;
+.method static synthetic g(Lcom/android/settings_ext/NewFingerprintInternalActivity$NewFingerprintFragment;)Landroid/view/View;
     .locals 1
 
     .prologue
     .line 41
-    iget-object v0, p0, Lcom/android/settings/NewFingerprintInternalActivity$NewFingerprintFragment;->sQ:Landroid/view/View;
+    iget-object v0, p0, Lcom/android/settings_ext/NewFingerprintInternalActivity$NewFingerprintFragment;->sQ:Landroid/view/View;
 
     return-object v0
 .end method
@@ -423,10 +423,10 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/NewFingerprintInternalActivity$NewFingerprintFragment;->fh:Landroid/view/View;
+    iput-object v0, p0, Lcom/android/settings_ext/NewFingerprintInternalActivity$NewFingerprintFragment;->fh:Landroid/view/View;
 
     .line 111
-    iget-object v0, p0, Lcom/android/settings/NewFingerprintInternalActivity$NewFingerprintFragment;->fh:Landroid/view/View;
+    iget-object v0, p0, Lcom/android/settings_ext/NewFingerprintInternalActivity$NewFingerprintFragment;->fh:Landroid/view/View;
 
     const v1, 0x7f100163
 
@@ -436,10 +436,10 @@
 
     check-cast v0, Landroid/widget/TextView;
 
-    iput-object v0, p0, Lcom/android/settings/NewFingerprintInternalActivity$NewFingerprintFragment;->sL:Landroid/widget/TextView;
+    iput-object v0, p0, Lcom/android/settings_ext/NewFingerprintInternalActivity$NewFingerprintFragment;->sL:Landroid/widget/TextView;
 
     .line 112
-    iget-object v0, p0, Lcom/android/settings/NewFingerprintInternalActivity$NewFingerprintFragment;->fh:Landroid/view/View;
+    iget-object v0, p0, Lcom/android/settings_ext/NewFingerprintInternalActivity$NewFingerprintFragment;->fh:Landroid/view/View;
 
     const v1, 0x7f100164
 
@@ -449,10 +449,10 @@
 
     check-cast v0, Landroid/widget/TextView;
 
-    iput-object v0, p0, Lcom/android/settings/NewFingerprintInternalActivity$NewFingerprintFragment;->qE:Landroid/widget/TextView;
+    iput-object v0, p0, Lcom/android/settings_ext/NewFingerprintInternalActivity$NewFingerprintFragment;->qE:Landroid/widget/TextView;
 
     .line 113
-    iget-object v0, p0, Lcom/android/settings/NewFingerprintInternalActivity$NewFingerprintFragment;->fh:Landroid/view/View;
+    iget-object v0, p0, Lcom/android/settings_ext/NewFingerprintInternalActivity$NewFingerprintFragment;->fh:Landroid/view/View;
 
     const v1, 0x7f100160
 
@@ -462,10 +462,10 @@
 
     check-cast v0, Landroid/widget/ImageView;
 
-    iput-object v0, p0, Lcom/android/settings/NewFingerprintInternalActivity$NewFingerprintFragment;->sM:Landroid/widget/ImageView;
+    iput-object v0, p0, Lcom/android/settings_ext/NewFingerprintInternalActivity$NewFingerprintFragment;->sM:Landroid/widget/ImageView;
 
     .line 114
-    iget-object v0, p0, Lcom/android/settings/NewFingerprintInternalActivity$NewFingerprintFragment;->fh:Landroid/view/View;
+    iget-object v0, p0, Lcom/android/settings_ext/NewFingerprintInternalActivity$NewFingerprintFragment;->fh:Landroid/view/View;
 
     const v1, 0x7f100161
 
@@ -475,10 +475,10 @@
 
     check-cast v0, Landroid/widget/VideoView;
 
-    iput-object v0, p0, Lcom/android/settings/NewFingerprintInternalActivity$NewFingerprintFragment;->sN:Landroid/widget/VideoView;
+    iput-object v0, p0, Lcom/android/settings_ext/NewFingerprintInternalActivity$NewFingerprintFragment;->sN:Landroid/widget/VideoView;
 
     .line 115
-    iget-object v0, p0, Lcom/android/settings/NewFingerprintInternalActivity$NewFingerprintFragment;->fh:Landroid/view/View;
+    iget-object v0, p0, Lcom/android/settings_ext/NewFingerprintInternalActivity$NewFingerprintFragment;->fh:Landroid/view/View;
 
     const v1, 0x7f100162
 
@@ -488,10 +488,10 @@
 
     check-cast v0, Landroid/widget/VideoView;
 
-    iput-object v0, p0, Lcom/android/settings/NewFingerprintInternalActivity$NewFingerprintFragment;->sO:Landroid/widget/VideoView;
+    iput-object v0, p0, Lcom/android/settings_ext/NewFingerprintInternalActivity$NewFingerprintFragment;->sO:Landroid/widget/VideoView;
 
     .line 117
-    iget-object v0, p0, Lcom/android/settings/NewFingerprintInternalActivity$NewFingerprintFragment;->fh:Landroid/view/View;
+    iget-object v0, p0, Lcom/android/settings_ext/NewFingerprintInternalActivity$NewFingerprintFragment;->fh:Landroid/view/View;
 
     const v1, 0x7f100165
 
@@ -501,43 +501,43 @@
 
     check-cast v0, Landroid/widget/Button;
 
-    iput-object v0, p0, Lcom/android/settings/NewFingerprintInternalActivity$NewFingerprintFragment;->sP:Landroid/widget/Button;
+    iput-object v0, p0, Lcom/android/settings_ext/NewFingerprintInternalActivity$NewFingerprintFragment;->sP:Landroid/widget/Button;
 
     .line 118
-    iget-object v0, p0, Lcom/android/settings/NewFingerprintInternalActivity$NewFingerprintFragment;->sN:Landroid/widget/VideoView;
+    iget-object v0, p0, Lcom/android/settings_ext/NewFingerprintInternalActivity$NewFingerprintFragment;->sN:Landroid/widget/VideoView;
 
     invoke-virtual {v0, v2}, Landroid/widget/VideoView;->setZOrderOnTop(Z)V
 
     .line 119
-    iget-object v0, p0, Lcom/android/settings/NewFingerprintInternalActivity$NewFingerprintFragment;->sO:Landroid/widget/VideoView;
+    iget-object v0, p0, Lcom/android/settings_ext/NewFingerprintInternalActivity$NewFingerprintFragment;->sO:Landroid/widget/VideoView;
 
     invoke-virtual {v0, v2}, Landroid/widget/VideoView;->setZOrderOnTop(Z)V
 
     .line 120
-    iget-object v0, p0, Lcom/android/settings/NewFingerprintInternalActivity$NewFingerprintFragment;->sO:Landroid/widget/VideoView;
+    iget-object v0, p0, Lcom/android/settings_ext/NewFingerprintInternalActivity$NewFingerprintFragment;->sO:Landroid/widget/VideoView;
 
-    new-instance v1, Lcom/android/settings/eO;
+    new-instance v1, Lcom/android/settings_ext/eO;
 
-    invoke-direct {v1, p0}, Lcom/android/settings/eO;-><init>(Lcom/android/settings/NewFingerprintInternalActivity$NewFingerprintFragment;)V
+    invoke-direct {v1, p0}, Lcom/android/settings_ext/eO;-><init>(Lcom/android/settings_ext/NewFingerprintInternalActivity$NewFingerprintFragment;)V
 
     invoke-virtual {v0, v1}, Landroid/widget/VideoView;->setOnCompletionListener(Landroid/media/MediaPlayer$OnCompletionListener;)V
 
     .line 130
-    iget-object v0, p0, Lcom/android/settings/NewFingerprintInternalActivity$NewFingerprintFragment;->sM:Landroid/widget/ImageView;
+    iget-object v0, p0, Lcom/android/settings_ext/NewFingerprintInternalActivity$NewFingerprintFragment;->sM:Landroid/widget/ImageView;
 
     const/16 v1, 0x8
 
     invoke-virtual {v0, v1}, Landroid/widget/ImageView;->setVisibility(I)V
 
     .line 132
-    iget-object v0, p0, Lcom/android/settings/NewFingerprintInternalActivity$NewFingerprintFragment;->sL:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/android/settings_ext/NewFingerprintInternalActivity$NewFingerprintFragment;->sL:Landroid/widget/TextView;
 
     const v1, 0x7f090e3f
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setText(I)V
 
     .line 133
-    iget-object v0, p0, Lcom/android/settings/NewFingerprintInternalActivity$NewFingerprintFragment;->qE:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/android/settings_ext/NewFingerprintInternalActivity$NewFingerprintFragment;->qE:Landroid/widget/TextView;
 
     const v1, 0x7f090e40
 
@@ -546,7 +546,7 @@
     .line 134
     const-string v0, "core_scan_gesture"
 
-    invoke-direct {p0, v0}, Lcom/android/settings/NewFingerprintInternalActivity$NewFingerprintFragment;->D(Ljava/lang/String;)Landroid/net/Uri;
+    invoke-direct {p0, v0}, Lcom/android/settings_ext/NewFingerprintInternalActivity$NewFingerprintFragment;->D(Ljava/lang/String;)Landroid/net/Uri;
 
     move-result-object v0
 
@@ -554,12 +554,12 @@
     if-eqz v0, :cond_0
 
     .line 136
-    iget-object v1, p0, Lcom/android/settings/NewFingerprintInternalActivity$NewFingerprintFragment;->sN:Landroid/widget/VideoView;
+    iget-object v1, p0, Lcom/android/settings_ext/NewFingerprintInternalActivity$NewFingerprintFragment;->sN:Landroid/widget/VideoView;
 
     invoke-virtual {v1, v0}, Landroid/widget/VideoView;->setVideoURI(Landroid/net/Uri;)V
 
     .line 137
-    iget-object v0, p0, Lcom/android/settings/NewFingerprintInternalActivity$NewFingerprintFragment;->sN:Landroid/widget/VideoView;
+    iget-object v0, p0, Lcom/android/settings_ext/NewFingerprintInternalActivity$NewFingerprintFragment;->sN:Landroid/widget/VideoView;
 
     invoke-virtual {v0}, Landroid/widget/VideoView;->start()V
 
@@ -579,7 +579,7 @@
 
     move-result-object v0
 
-    invoke-direct {p0, v0}, Lcom/android/settings/NewFingerprintInternalActivity$NewFingerprintFragment;->D(Ljava/lang/String;)Landroid/net/Uri;
+    invoke-direct {p0, v0}, Lcom/android/settings_ext/NewFingerprintInternalActivity$NewFingerprintFragment;->D(Ljava/lang/String;)Landroid/net/Uri;
 
     move-result-object v0
 
@@ -587,22 +587,22 @@
     if-eqz v0, :cond_1
 
     .line 141
-    iget-object v1, p0, Lcom/android/settings/NewFingerprintInternalActivity$NewFingerprintFragment;->sO:Landroid/widget/VideoView;
+    iget-object v1, p0, Lcom/android/settings_ext/NewFingerprintInternalActivity$NewFingerprintFragment;->sO:Landroid/widget/VideoView;
 
     invoke-virtual {v1, v0}, Landroid/widget/VideoView;->setVideoURI(Landroid/net/Uri;)V
 
     .line 143
     :cond_1
-    iget-object v0, p0, Lcom/android/settings/NewFingerprintInternalActivity$NewFingerprintFragment;->sP:Landroid/widget/Button;
+    iget-object v0, p0, Lcom/android/settings_ext/NewFingerprintInternalActivity$NewFingerprintFragment;->sP:Landroid/widget/Button;
 
-    new-instance v1, Lcom/android/settings/eP;
+    new-instance v1, Lcom/android/settings_ext/eP;
 
-    invoke-direct {v1, p0}, Lcom/android/settings/eP;-><init>(Lcom/android/settings/NewFingerprintInternalActivity$NewFingerprintFragment;)V
+    invoke-direct {v1, p0}, Lcom/android/settings_ext/eP;-><init>(Lcom/android/settings_ext/NewFingerprintInternalActivity$NewFingerprintFragment;)V
 
     invoke-virtual {v0, v1}, Landroid/widget/Button;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     .line 151
-    iget-object v0, p0, Lcom/android/settings/NewFingerprintInternalActivity$NewFingerprintFragment;->fh:Landroid/view/View;
+    iget-object v0, p0, Lcom/android/settings_ext/NewFingerprintInternalActivity$NewFingerprintFragment;->fh:Landroid/view/View;
 
     return-object v0
 .end method
@@ -612,30 +612,30 @@
 
     .prologue
     .line 71
-    invoke-direct {p0}, Lcom/android/settings/NewFingerprintInternalActivity$NewFingerprintFragment;->ez()V
+    invoke-direct {p0}, Lcom/android/settings_ext/NewFingerprintInternalActivity$NewFingerprintFragment;->ez()V
 
     .line 72
-    iget-object v0, p0, Lcom/android/settings/NewFingerprintInternalActivity$NewFingerprintFragment;->ot:Landroid/app/AlertDialog;
+    iget-object v0, p0, Lcom/android/settings_ext/NewFingerprintInternalActivity$NewFingerprintFragment;->ot:Landroid/app/AlertDialog;
 
-    invoke-direct {p0, v0}, Lcom/android/settings/NewFingerprintInternalActivity$NewFingerprintFragment;->a(Landroid/app/AlertDialog;)V
+    invoke-direct {p0, v0}, Lcom/android/settings_ext/NewFingerprintInternalActivity$NewFingerprintFragment;->a(Landroid/app/AlertDialog;)V
 
     .line 73
-    iget-object v0, p0, Lcom/android/settings/NewFingerprintInternalActivity$NewFingerprintFragment;->sR:Landroid/app/AlertDialog;
+    iget-object v0, p0, Lcom/android/settings_ext/NewFingerprintInternalActivity$NewFingerprintFragment;->sR:Landroid/app/AlertDialog;
 
-    invoke-direct {p0, v0}, Lcom/android/settings/NewFingerprintInternalActivity$NewFingerprintFragment;->a(Landroid/app/AlertDialog;)V
+    invoke-direct {p0, v0}, Lcom/android/settings_ext/NewFingerprintInternalActivity$NewFingerprintFragment;->a(Landroid/app/AlertDialog;)V
 
     .line 74
-    invoke-virtual {p0}, Lcom/android/settings/NewFingerprintInternalActivity$NewFingerprintFragment;->finish()V
+    invoke-virtual {p0}, Lcom/android/settings_ext/NewFingerprintInternalActivity$NewFingerprintFragment;->finish()V
 
     .line 75
-    iget-object v0, p0, Lcom/android/settings/NewFingerprintInternalActivity$NewFingerprintFragment;->mHandler:Landroid/os/Handler;
+    iget-object v0, p0, Lcom/android/settings_ext/NewFingerprintInternalActivity$NewFingerprintFragment;->mHandler:Landroid/os/Handler;
 
-    iget-object v1, p0, Lcom/android/settings/NewFingerprintInternalActivity$NewFingerprintFragment;->sV:Ljava/lang/Runnable;
+    iget-object v1, p0, Lcom/android/settings_ext/NewFingerprintInternalActivity$NewFingerprintFragment;->sV:Ljava/lang/Runnable;
 
     invoke-virtual {v0, v1}, Landroid/os/Handler;->removeCallbacks(Ljava/lang/Runnable;)V
 
     .line 76
-    invoke-super {p0}, Lcom/android/settings/BaseEditFragment;->onPause()V
+    invoke-super {p0}, Lcom/android/settings_ext/BaseEditFragment;->onPause()V
 
     .line 77
     return-void
@@ -646,40 +646,40 @@
 
     .prologue
     .line 81
-    invoke-super {p0}, Lcom/android/settings/BaseEditFragment;->onResume()V
+    invoke-super {p0}, Lcom/android/settings_ext/BaseEditFragment;->onResume()V
 
     .line 82
-    invoke-direct {p0}, Lcom/android/settings/NewFingerprintInternalActivity$NewFingerprintFragment;->ez()V
+    invoke-direct {p0}, Lcom/android/settings_ext/NewFingerprintInternalActivity$NewFingerprintFragment;->ez()V
 
     .line 83
-    new-instance v0, Lcom/android/settings/cu;
+    new-instance v0, Lcom/android/settings_ext/cu;
 
-    invoke-virtual {p0}, Lcom/android/settings/NewFingerprintInternalActivity$NewFingerprintFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/NewFingerprintInternalActivity$NewFingerprintFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v1
 
-    invoke-direct {v0, v1}, Lcom/android/settings/cu;-><init>(Landroid/content/Context;)V
+    invoke-direct {v0, v1}, Lcom/android/settings_ext/cu;-><init>(Landroid/content/Context;)V
 
-    iput-object v0, p0, Lcom/android/settings/NewFingerprintInternalActivity$NewFingerprintFragment;->oX:Lcom/android/settings/cu;
+    iput-object v0, p0, Lcom/android/settings_ext/NewFingerprintInternalActivity$NewFingerprintFragment;->oX:Lcom/android/settings_ext/cu;
 
     .line 84
-    iget-object v0, p0, Lcom/android/settings/NewFingerprintInternalActivity$NewFingerprintFragment;->oX:Lcom/android/settings/cu;
+    iget-object v0, p0, Lcom/android/settings_ext/NewFingerprintInternalActivity$NewFingerprintFragment;->oX:Lcom/android/settings_ext/cu;
 
-    invoke-virtual {v0}, Lcom/android/settings/cu;->dE()Ljava/util/List;
+    invoke-virtual {v0}, Lcom/android/settings_ext/cu;->dE()Ljava/util/List;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/NewFingerprintInternalActivity$NewFingerprintFragment;->sU:Ljava/util/List;
+    iput-object v0, p0, Lcom/android/settings_ext/NewFingerprintInternalActivity$NewFingerprintFragment;->sU:Ljava/util/List;
 
     .line 85
-    iget-object v0, p0, Lcom/android/settings/NewFingerprintInternalActivity$NewFingerprintFragment;->oX:Lcom/android/settings/cu;
+    iget-object v0, p0, Lcom/android/settings_ext/NewFingerprintInternalActivity$NewFingerprintFragment;->oX:Lcom/android/settings_ext/cu;
 
-    iget-object v1, p0, Lcom/android/settings/NewFingerprintInternalActivity$NewFingerprintFragment;->sW:Lcom/android/settings/ct;
+    iget-object v1, p0, Lcom/android/settings_ext/NewFingerprintInternalActivity$NewFingerprintFragment;->sW:Lcom/android/settings_ext/ct;
 
-    invoke-virtual {v0, v1}, Lcom/android/settings/cu;->a(Lcom/android/settings/ct;)V
+    invoke-virtual {v0, v1}, Lcom/android/settings_ext/cu;->a(Lcom/android/settings_ext/ct;)V
 
     .line 87
-    invoke-virtual {p0}, Lcom/android/settings/NewFingerprintInternalActivity$NewFingerprintFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/NewFingerprintInternalActivity$NewFingerprintFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
@@ -691,12 +691,12 @@
 
     check-cast v0, Landroid/os/Vibrator;
 
-    iput-object v0, p0, Lcom/android/settings/NewFingerprintInternalActivity$NewFingerprintFragment;->sK:Landroid/os/Vibrator;
+    iput-object v0, p0, Lcom/android/settings_ext/NewFingerprintInternalActivity$NewFingerprintFragment;->sK:Landroid/os/Vibrator;
 
     .line 88
-    iget-object v0, p0, Lcom/android/settings/NewFingerprintInternalActivity$NewFingerprintFragment;->mHandler:Landroid/os/Handler;
+    iget-object v0, p0, Lcom/android/settings_ext/NewFingerprintInternalActivity$NewFingerprintFragment;->mHandler:Landroid/os/Handler;
 
-    iget-object v1, p0, Lcom/android/settings/NewFingerprintInternalActivity$NewFingerprintFragment;->sV:Ljava/lang/Runnable;
+    iget-object v1, p0, Lcom/android/settings_ext/NewFingerprintInternalActivity$NewFingerprintFragment;->sV:Ljava/lang/Runnable;
 
     const-wide/16 v2, 0x1388
 
@@ -711,10 +711,10 @@
 
     .prologue
     .line 93
-    invoke-super {p0}, Lcom/android/settings/BaseEditFragment;->onStart()V
+    invoke-super {p0}, Lcom/android/settings_ext/BaseEditFragment;->onStart()V
 
     .line 96
-    invoke-virtual {p0}, Lcom/android/settings/NewFingerprintInternalActivity$NewFingerprintFragment;->getActionBar()Lmiui/app/ActionBar;
+    invoke-virtual {p0}, Lcom/android/settings_ext/NewFingerprintInternalActivity$NewFingerprintFragment;->getActionBar()Lmiui/app/ActionBar;
 
     move-result-object v0
 
@@ -728,10 +728,10 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/NewFingerprintInternalActivity$NewFingerprintFragment;->sQ:Landroid/view/View;
+    iput-object v0, p0, Lcom/android/settings_ext/NewFingerprintInternalActivity$NewFingerprintFragment;->sQ:Landroid/view/View;
 
     .line 97
-    invoke-virtual {p0}, Lcom/android/settings/NewFingerprintInternalActivity$NewFingerprintFragment;->getActionBar()Lmiui/app/ActionBar;
+    invoke-virtual {p0}, Lcom/android/settings_ext/NewFingerprintInternalActivity$NewFingerprintFragment;->getActionBar()Lmiui/app/ActionBar;
 
     move-result-object v0
 

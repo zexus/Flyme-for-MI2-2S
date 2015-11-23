@@ -1,4 +1,4 @@
-.class public Lcom/android/settings/cloud/push/ExistCompatibilityProvider;
+.class public Lcom/android/settings_ext/cloud/push/ExistCompatibilityProvider;
 .super Landroid/content/ContentProvider;
 .source "ExistCompatibilityProvider.java"
 
@@ -10,7 +10,7 @@
 
 
 # instance fields
-.field private QU:Lcom/android/settings/cloud/push/f;
+.field private QU:Lcom/android/settings_ext/cloud/push/f;
 
 
 # direct methods
@@ -25,10 +25,10 @@
 
     invoke-direct {v0, v1}, Landroid/content/UriMatcher;-><init>(I)V
 
-    sput-object v0, Lcom/android/settings/cloud/push/ExistCompatibilityProvider;->QT:Landroid/content/UriMatcher;
+    sput-object v0, Lcom/android/settings_ext/cloud/push/ExistCompatibilityProvider;->QT:Landroid/content/UriMatcher;
 
     .line 27
-    sget-object v0, Lcom/android/settings/cloud/push/ExistCompatibilityProvider;->QT:Landroid/content/UriMatcher;
+    sget-object v0, Lcom/android/settings_ext/cloud/push/ExistCompatibilityProvider;->QT:Landroid/content/UriMatcher;
 
     const-string v1, "com.android.settings.cloud.compatibility.exist"
 
@@ -39,7 +39,7 @@
     invoke-virtual {v0, v1, v2, v3}, Landroid/content/UriMatcher;->addURI(Ljava/lang/String;Ljava/lang/String;I)V
 
     .line 28
-    sget-object v0, Lcom/android/settings/cloud/push/ExistCompatibilityProvider;->QT:Landroid/content/UriMatcher;
+    sget-object v0, Lcom/android/settings_ext/cloud/push/ExistCompatibilityProvider;->QT:Landroid/content/UriMatcher;
 
     const-string v1, "com.android.settings.cloud.compatibility.exist"
 
@@ -54,10 +54,10 @@
 
     invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
 
-    sput-object v0, Lcom/android/settings/cloud/push/ExistCompatibilityProvider;->QS:Ljava/util/HashMap;
+    sput-object v0, Lcom/android/settings_ext/cloud/push/ExistCompatibilityProvider;->QS:Ljava/util/HashMap;
 
     .line 31
-    sget-object v0, Lcom/android/settings/cloud/push/ExistCompatibilityProvider;->QS:Ljava/util/HashMap;
+    sget-object v0, Lcom/android/settings_ext/cloud/push/ExistCompatibilityProvider;->QS:Ljava/util/HashMap;
 
     const-string v1, "_id"
 
@@ -66,7 +66,7 @@
     invoke-virtual {v0, v1, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 32
-    sget-object v0, Lcom/android/settings/cloud/push/ExistCompatibilityProvider;->QS:Ljava/util/HashMap;
+    sget-object v0, Lcom/android/settings_ext/cloud/push/ExistCompatibilityProvider;->QS:Ljava/util/HashMap;
 
     const-string v1, "c_package_name"
 
@@ -75,7 +75,7 @@
     invoke-virtual {v0, v1, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 34
-    sget-object v0, Lcom/android/settings/cloud/push/ExistCompatibilityProvider;->QS:Ljava/util/HashMap;
+    sget-object v0, Lcom/android/settings_ext/cloud/push/ExistCompatibilityProvider;->QS:Ljava/util/HashMap;
 
     const-string v1, "c_message"
 
@@ -84,7 +84,7 @@
     invoke-virtual {v0, v1, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 36
-    sget-object v0, Lcom/android/settings/cloud/push/ExistCompatibilityProvider;->QS:Ljava/util/HashMap;
+    sget-object v0, Lcom/android/settings_ext/cloud/push/ExistCompatibilityProvider;->QS:Ljava/util/HashMap;
 
     const-string v1, "c_precise"
 
@@ -93,7 +93,7 @@
     invoke-virtual {v0, v1, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 38
-    sget-object v0, Lcom/android/settings/cloud/push/ExistCompatibilityProvider;->QS:Ljava/util/HashMap;
+    sget-object v0, Lcom/android/settings_ext/cloud/push/ExistCompatibilityProvider;->QS:Ljava/util/HashMap;
 
     const-string v1, "c_versions"
 
@@ -102,7 +102,7 @@
     invoke-virtual {v0, v1, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 40
-    sget-object v0, Lcom/android/settings/cloud/push/ExistCompatibilityProvider;->QS:Ljava/util/HashMap;
+    sget-object v0, Lcom/android/settings_ext/cloud/push/ExistCompatibilityProvider;->QS:Ljava/util/HashMap;
 
     const-string v1, "c_title"
 
@@ -111,7 +111,7 @@
     invoke-virtual {v0, v1, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 42
-    sget-object v0, Lcom/android/settings/cloud/push/ExistCompatibilityProvider;->QS:Ljava/util/HashMap;
+    sget-object v0, Lcom/android/settings_ext/cloud/push/ExistCompatibilityProvider;->QS:Ljava/util/HashMap;
 
     const-string v1, "c_ticker"
 
@@ -140,14 +140,14 @@
 
     .prologue
     .line 49
-    iget-object v0, p0, Lcom/android/settings/cloud/push/ExistCompatibilityProvider;->QU:Lcom/android/settings/cloud/push/f;
+    iget-object v0, p0, Lcom/android/settings_ext/cloud/push/ExistCompatibilityProvider;->QU:Lcom/android/settings_ext/cloud/push/f;
 
-    invoke-virtual {v0}, Lcom/android/settings/cloud/push/f;->getWritableDatabase()Landroid/database/sqlite/SQLiteDatabase;
+    invoke-virtual {v0}, Lcom/android/settings_ext/cloud/push/f;->getWritableDatabase()Landroid/database/sqlite/SQLiteDatabase;
 
     move-result-object v1
 
     .line 51
-    sget-object v0, Lcom/android/settings/cloud/push/ExistCompatibilityProvider;->QT:Landroid/content/UriMatcher;
+    sget-object v0, Lcom/android/settings_ext/cloud/push/ExistCompatibilityProvider;->QT:Landroid/content/UriMatcher;
 
     invoke-virtual {v0, p1}, Landroid/content/UriMatcher;->match(Landroid/net/Uri;)I
 
@@ -190,7 +190,7 @@
 
     .line 70
     :goto_0
-    invoke-virtual {p0}, Lcom/android/settings/cloud/push/ExistCompatibilityProvider;->getContext()Landroid/content/Context;
+    invoke-virtual {p0}, Lcom/android/settings_ext/cloud/push/ExistCompatibilityProvider;->getContext()Landroid/content/Context;
 
     move-result-object v1
 
@@ -299,7 +299,7 @@
 
     .prologue
     .line 77
-    sget-object v0, Lcom/android/settings/cloud/push/ExistCompatibilityProvider;->QT:Landroid/content/UriMatcher;
+    sget-object v0, Lcom/android/settings_ext/cloud/push/ExistCompatibilityProvider;->QT:Landroid/content/UriMatcher;
 
     invoke-virtual {v0, p1}, Landroid/content/UriMatcher;->match(Landroid/net/Uri;)I
 
@@ -360,7 +360,7 @@
     const/4 v4, 0x0
 
     .line 90
-    sget-object v0, Lcom/android/settings/cloud/push/ExistCompatibilityProvider;->QT:Landroid/content/UriMatcher;
+    sget-object v0, Lcom/android/settings_ext/cloud/push/ExistCompatibilityProvider;->QT:Landroid/content/UriMatcher;
 
     invoke-virtual {v0, p1}, Landroid/content/UriMatcher;->match(Landroid/net/Uri;)I
 
@@ -512,9 +512,9 @@
 
     .line 119
     :cond_6
-    iget-object v1, p0, Lcom/android/settings/cloud/push/ExistCompatibilityProvider;->QU:Lcom/android/settings/cloud/push/f;
+    iget-object v1, p0, Lcom/android/settings_ext/cloud/push/ExistCompatibilityProvider;->QU:Lcom/android/settings_ext/cloud/push/f;
 
-    invoke-virtual {v1}, Lcom/android/settings/cloud/push/f;->getWritableDatabase()Landroid/database/sqlite/SQLiteDatabase;
+    invoke-virtual {v1}, Lcom/android/settings_ext/cloud/push/f;->getWritableDatabase()Landroid/database/sqlite/SQLiteDatabase;
 
     move-result-object v1
 
@@ -533,14 +533,14 @@
     if-lez v2, :cond_8
 
     .line 122
-    sget-object v2, Lcom/android/settings/cloud/push/b;->CONTENT_URI:Landroid/net/Uri;
+    sget-object v2, Lcom/android/settings_ext/cloud/push/b;->CONTENT_URI:Landroid/net/Uri;
 
     invoke-static {v2, v0, v1}, Landroid/content/ContentUris;->withAppendedId(Landroid/net/Uri;J)Landroid/net/Uri;
 
     move-result-object v0
 
     .line 124
-    invoke-virtual {p0}, Lcom/android/settings/cloud/push/ExistCompatibilityProvider;->getContext()Landroid/content/Context;
+    invoke-virtual {p0}, Lcom/android/settings_ext/cloud/push/ExistCompatibilityProvider;->getContext()Landroid/content/Context;
 
     move-result-object v1
 
@@ -593,15 +593,15 @@
 
     .prologue
     .line 133
-    new-instance v0, Lcom/android/settings/cloud/push/f;
+    new-instance v0, Lcom/android/settings_ext/cloud/push/f;
 
-    invoke-virtual {p0}, Lcom/android/settings/cloud/push/ExistCompatibilityProvider;->getContext()Landroid/content/Context;
+    invoke-virtual {p0}, Lcom/android/settings_ext/cloud/push/ExistCompatibilityProvider;->getContext()Landroid/content/Context;
 
     move-result-object v1
 
-    invoke-direct {v0, v1}, Lcom/android/settings/cloud/push/f;-><init>(Landroid/content/Context;)V
+    invoke-direct {v0, v1}, Lcom/android/settings_ext/cloud/push/f;-><init>(Landroid/content/Context;)V
 
-    iput-object v0, p0, Lcom/android/settings/cloud/push/ExistCompatibilityProvider;->QU:Lcom/android/settings/cloud/push/f;
+    iput-object v0, p0, Lcom/android/settings_ext/cloud/push/ExistCompatibilityProvider;->QU:Lcom/android/settings_ext/cloud/push/f;
 
     .line 134
     const/4 v0, 0x1
@@ -621,7 +621,7 @@
     invoke-direct {v0}, Landroid/database/sqlite/SQLiteQueryBuilder;-><init>()V
 
     .line 142
-    sget-object v1, Lcom/android/settings/cloud/push/ExistCompatibilityProvider;->QT:Landroid/content/UriMatcher;
+    sget-object v1, Lcom/android/settings_ext/cloud/push/ExistCompatibilityProvider;->QT:Landroid/content/UriMatcher;
 
     invoke-virtual {v1, p1}, Landroid/content/UriMatcher;->match(Landroid/net/Uri;)I
 
@@ -661,7 +661,7 @@
     invoke-virtual {v0, v1}, Landroid/database/sqlite/SQLiteQueryBuilder;->setTables(Ljava/lang/String;)V
 
     .line 145
-    sget-object v1, Lcom/android/settings/cloud/push/ExistCompatibilityProvider;->QS:Ljava/util/HashMap;
+    sget-object v1, Lcom/android/settings_ext/cloud/push/ExistCompatibilityProvider;->QS:Ljava/util/HashMap;
 
     invoke-virtual {v0, v1}, Landroid/database/sqlite/SQLiteQueryBuilder;->setProjectionMap(Ljava/util/Map;)V
 
@@ -678,9 +678,9 @@
 
     .line 163
     :goto_1
-    iget-object v1, p0, Lcom/android/settings/cloud/push/ExistCompatibilityProvider;->QU:Lcom/android/settings/cloud/push/f;
+    iget-object v1, p0, Lcom/android/settings_ext/cloud/push/ExistCompatibilityProvider;->QU:Lcom/android/settings_ext/cloud/push/f;
 
-    invoke-virtual {v1}, Lcom/android/settings/cloud/push/f;->getReadableDatabase()Landroid/database/sqlite/SQLiteDatabase;
+    invoke-virtual {v1}, Lcom/android/settings_ext/cloud/push/f;->getReadableDatabase()Landroid/database/sqlite/SQLiteDatabase;
 
     move-result-object v1
 
@@ -698,7 +698,7 @@
     move-result-object v0
 
     .line 166
-    invoke-virtual {p0}, Lcom/android/settings/cloud/push/ExistCompatibilityProvider;->getContext()Landroid/content/Context;
+    invoke-virtual {p0}, Lcom/android/settings_ext/cloud/push/ExistCompatibilityProvider;->getContext()Landroid/content/Context;
 
     move-result-object v1
 
@@ -718,7 +718,7 @@
     invoke-virtual {v0, v1}, Landroid/database/sqlite/SQLiteQueryBuilder;->setTables(Ljava/lang/String;)V
 
     .line 149
-    sget-object v1, Lcom/android/settings/cloud/push/ExistCompatibilityProvider;->QS:Ljava/util/HashMap;
+    sget-object v1, Lcom/android/settings_ext/cloud/push/ExistCompatibilityProvider;->QS:Ljava/util/HashMap;
 
     invoke-virtual {v0, v1}, Landroid/database/sqlite/SQLiteQueryBuilder;->setProjectionMap(Ljava/util/Map;)V
 
@@ -776,14 +776,14 @@
 
     .prologue
     .line 174
-    iget-object v0, p0, Lcom/android/settings/cloud/push/ExistCompatibilityProvider;->QU:Lcom/android/settings/cloud/push/f;
+    iget-object v0, p0, Lcom/android/settings_ext/cloud/push/ExistCompatibilityProvider;->QU:Lcom/android/settings_ext/cloud/push/f;
 
-    invoke-virtual {v0}, Lcom/android/settings/cloud/push/f;->getWritableDatabase()Landroid/database/sqlite/SQLiteDatabase;
+    invoke-virtual {v0}, Lcom/android/settings_ext/cloud/push/f;->getWritableDatabase()Landroid/database/sqlite/SQLiteDatabase;
 
     move-result-object v1
 
     .line 175
-    sget-object v0, Lcom/android/settings/cloud/push/ExistCompatibilityProvider;->QT:Landroid/content/UriMatcher;
+    sget-object v0, Lcom/android/settings_ext/cloud/push/ExistCompatibilityProvider;->QT:Landroid/content/UriMatcher;
 
     invoke-virtual {v0, p1}, Landroid/content/UriMatcher;->match(Landroid/net/Uri;)I
 

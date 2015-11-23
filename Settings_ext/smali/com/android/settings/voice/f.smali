@@ -1,4 +1,4 @@
-.class Lcom/android/settings/voice/f;
+.class Lcom/android/settings_ext/voice/f;
 .super Ljava/lang/Object;
 .source "VoiceInputPreference.java"
 
@@ -7,16 +7,16 @@
 
 
 # instance fields
-.field final synthetic anr:Lcom/android/settings/voice/e;
+.field final synthetic anr:Lcom/android/settings_ext/voice/e;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/voice/e;)V
+.method constructor <init>(Lcom/android/settings_ext/voice/e;)V
     .locals 0
 
     .prologue
     .line 63
-    iput-object p1, p0, Lcom/android/settings/voice/f;->anr:Lcom/android/settings/voice/e;
+    iput-object p1, p0, Lcom/android/settings_ext/voice/f;->anr:Lcom/android/settings_ext/voice/e;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -30,9 +30,9 @@
 
     .prologue
     .line 66
-    iget-object v0, p0, Lcom/android/settings/voice/f;->anr:Lcom/android/settings/voice/e;
+    iget-object v0, p0, Lcom/android/settings_ext/voice/f;->anr:Lcom/android/settings_ext/voice/e;
 
-    invoke-virtual {v0, p1, p2}, Lcom/android/settings/voice/e;->a(Landroid/widget/CompoundButton;Z)V
+    invoke-virtual {v0, p1, p2}, Lcom/android/settings_ext/voice/e;->a(Landroid/widget/CompoundButton;Z)V
 
     .line 67
     return-void

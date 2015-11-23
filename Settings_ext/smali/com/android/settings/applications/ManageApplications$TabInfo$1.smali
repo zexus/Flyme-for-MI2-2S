@@ -1,4 +1,4 @@
-.class Lcom/android/settings/applications/ManageApplications$TabInfo$1;
+.class Lcom/android/settings_ext/applications/ManageApplications$TabInfo$1;
 .super Ljava/lang/Object;
 .source "ManageApplications.java"
 
@@ -7,16 +7,16 @@
 
 
 # instance fields
-.field final synthetic HA:Lcom/android/settings/applications/ManageApplications$TabInfo;
+.field final synthetic HA:Lcom/android/settings_ext/applications/ManageApplications$TabInfo;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/applications/ManageApplications$TabInfo;)V
+.method constructor <init>(Lcom/android/settings_ext/applications/ManageApplications$TabInfo;)V
     .locals 0
 
     .prologue
     .line 214
-    iput-object p1, p0, Lcom/android/settings/applications/ManageApplications$TabInfo$1;->HA:Lcom/android/settings/applications/ManageApplications$TabInfo;
+    iput-object p1, p0, Lcom/android/settings_ext/applications/ManageApplications$TabInfo$1;->HA:Lcom/android/settings_ext/applications/ManageApplications$TabInfo;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -30,9 +30,9 @@
 
     .prologue
     .line 216
-    iget-object v0, p0, Lcom/android/settings/applications/ManageApplications$TabInfo$1;->HA:Lcom/android/settings/applications/ManageApplications$TabInfo;
+    iget-object v0, p0, Lcom/android/settings_ext/applications/ManageApplications$TabInfo$1;->HA:Lcom/android/settings_ext/applications/ManageApplications$TabInfo;
 
-    invoke-virtual {v0}, Lcom/android/settings/applications/ManageApplications$TabInfo;->iQ()V
+    invoke-virtual {v0}, Lcom/android/settings_ext/applications/ManageApplications$TabInfo;->iQ()V
 
     .line 217
     return-void

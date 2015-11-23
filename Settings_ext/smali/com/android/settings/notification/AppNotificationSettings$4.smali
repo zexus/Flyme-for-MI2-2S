@@ -1,4 +1,4 @@
-.class Lcom/android/settings/notification/AppNotificationSettings$4;
+.class Lcom/android/settings_ext/notification/AppNotificationSettings$4;
 .super Ljava/lang/Object;
 .source "AppNotificationSettings.java"
 
@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final synthetic adT:Lcom/android/settings/notification/AppNotificationSettings;
+.field final synthetic adT:Lcom/android/settings_ext/notification/AppNotificationSettings;
 
 .field final synthetic val$pkg:Ljava/lang/String;
 
@@ -15,16 +15,16 @@
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/notification/AppNotificationSettings;Ljava/lang/String;I)V
+.method constructor <init>(Lcom/android/settings_ext/notification/AppNotificationSettings;Ljava/lang/String;I)V
     .locals 0
 
     .prologue
     .line 182
-    iput-object p1, p0, Lcom/android/settings/notification/AppNotificationSettings$4;->adT:Lcom/android/settings/notification/AppNotificationSettings;
+    iput-object p1, p0, Lcom/android/settings_ext/notification/AppNotificationSettings$4;->adT:Lcom/android/settings_ext/notification/AppNotificationSettings;
 
-    iput-object p2, p0, Lcom/android/settings/notification/AppNotificationSettings$4;->val$pkg:Ljava/lang/String;
+    iput-object p2, p0, Lcom/android/settings_ext/notification/AppNotificationSettings$4;->val$pkg:Ljava/lang/String;
 
-    iput p3, p0, Lcom/android/settings/notification/AppNotificationSettings$4;->val$uid:I
+    iput p3, p0, Lcom/android/settings_ext/notification/AppNotificationSettings$4;->val$uid:I
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -45,17 +45,17 @@
     move-result v0
 
     .line 186
-    iget-object v1, p0, Lcom/android/settings/notification/AppNotificationSettings$4;->adT:Lcom/android/settings/notification/AppNotificationSettings;
+    iget-object v1, p0, Lcom/android/settings_ext/notification/AppNotificationSettings$4;->adT:Lcom/android/settings_ext/notification/AppNotificationSettings;
 
-    invoke-static {v1}, Lcom/android/settings/notification/AppNotificationSettings;->c(Lcom/android/settings/notification/AppNotificationSettings;)Lcom/android/settings/notification/NotificationAppList$Backend;
+    invoke-static {v1}, Lcom/android/settings_ext/notification/AppNotificationSettings;->c(Lcom/android/settings_ext/notification/AppNotificationSettings;)Lcom/android/settings_ext/notification/NotificationAppList$Backend;
 
     move-result-object v1
 
-    iget-object v2, p0, Lcom/android/settings/notification/AppNotificationSettings$4;->val$pkg:Ljava/lang/String;
+    iget-object v2, p0, Lcom/android/settings_ext/notification/AppNotificationSettings$4;->val$pkg:Ljava/lang/String;
 
-    iget v3, p0, Lcom/android/settings/notification/AppNotificationSettings$4;->val$uid:I
+    iget v3, p0, Lcom/android/settings_ext/notification/AppNotificationSettings$4;->val$uid:I
 
-    invoke-virtual {v1, v2, v3, v0}, Lcom/android/settings/notification/NotificationAppList$Backend;->c(Ljava/lang/String;IZ)Z
+    invoke-virtual {v1, v2, v3, v0}, Lcom/android/settings_ext/notification/NotificationAppList$Backend;->c(Ljava/lang/String;IZ)Z
 
     move-result v0
 

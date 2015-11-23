@@ -1,5 +1,5 @@
-.class public Lcom/android/settings/MiuiStatusBarSettings;
-.super Lcom/android/settings/SettingsPreferenceFragment;
+.class public Lcom/android/settings_ext/MiuiStatusBarSettings;
+.super Lcom/android/settings_ext/SettingsPreferenceFragment;
 .source "MiuiStatusBarSettings.java"
 
 # interfaces
@@ -30,7 +30,7 @@
 
     .prologue
     .line 38
-    invoke-direct {p0}, Lcom/android/settings/SettingsPreferenceFragment;-><init>()V
+    invoke-direct {p0}, Lcom/android/settings_ext/SettingsPreferenceFragment;-><init>()V
 
     return-void
 .end method
@@ -43,7 +43,7 @@
     if-eqz p1, :cond_0
 
     .line 120
-    iget-object v0, p0, Lcom/android/settings/MiuiStatusBarSettings;->sy:Landroid/preference/CheckBoxPreference;
+    iget-object v0, p0, Lcom/android/settings_ext/MiuiStatusBarSettings;->sy:Landroid/preference/CheckBoxPreference;
 
     const/4 v1, 0x0
 
@@ -55,7 +55,7 @@
 
     .line 123
     :cond_0
-    iget-object v0, p0, Lcom/android/settings/MiuiStatusBarSettings;->sy:Landroid/preference/CheckBoxPreference;
+    iget-object v0, p0, Lcom/android/settings_ext/MiuiStatusBarSettings;->sy:Landroid/preference/CheckBoxPreference;
 
     const v1, 0x7f090063
 
@@ -71,49 +71,49 @@
 
     .prologue
     .line 60
-    invoke-super {p0, p1}, Lcom/android/settings/SettingsPreferenceFragment;->onCreate(Landroid/os/Bundle;)V
+    invoke-super {p0, p1}, Lcom/android/settings_ext/SettingsPreferenceFragment;->onCreate(Landroid/os/Bundle;)V
 
     .line 62
     const v0, 0x7f060089
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/MiuiStatusBarSettings;->addPreferencesFromResource(I)V
+    invoke-virtual {p0, v0}, Lcom/android/settings_ext/MiuiStatusBarSettings;->addPreferencesFromResource(I)V
 
     .line 64
     const-string v0, "show_notification_icon"
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/MiuiStatusBarSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v0}, Lcom/android/settings_ext/MiuiStatusBarSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v0
 
     check-cast v0, Landroid/preference/CheckBoxPreference;
 
-    iput-object v0, p0, Lcom/android/settings/MiuiStatusBarSettings;->st:Landroid/preference/CheckBoxPreference;
+    iput-object v0, p0, Lcom/android/settings_ext/MiuiStatusBarSettings;->st:Landroid/preference/CheckBoxPreference;
 
     .line 65
-    iget-object v0, p0, Lcom/android/settings/MiuiStatusBarSettings;->st:Landroid/preference/CheckBoxPreference;
+    iget-object v0, p0, Lcom/android/settings_ext/MiuiStatusBarSettings;->st:Landroid/preference/CheckBoxPreference;
 
     invoke-virtual {v0, p0}, Landroid/preference/CheckBoxPreference;->setOnPreferenceChangeListener(Landroid/preference/Preference$OnPreferenceChangeListener;)V
 
     .line 67
     const-string v0, "show_network_speed"
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/MiuiStatusBarSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v0}, Lcom/android/settings_ext/MiuiStatusBarSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v0
 
     check-cast v0, Landroid/preference/CheckBoxPreference;
 
-    iput-object v0, p0, Lcom/android/settings/MiuiStatusBarSettings;->su:Landroid/preference/CheckBoxPreference;
+    iput-object v0, p0, Lcom/android/settings_ext/MiuiStatusBarSettings;->su:Landroid/preference/CheckBoxPreference;
 
     .line 68
-    iget-object v0, p0, Lcom/android/settings/MiuiStatusBarSettings;->su:Landroid/preference/CheckBoxPreference;
+    iget-object v0, p0, Lcom/android/settings_ext/MiuiStatusBarSettings;->su:Landroid/preference/CheckBoxPreference;
 
     invoke-virtual {v0, p0}, Landroid/preference/CheckBoxPreference;->setOnPreferenceChangeListener(Landroid/preference/Preference$OnPreferenceChangeListener;)V
 
     .line 70
     const-string v0, "connectivity"
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/MiuiStatusBarSettings;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
+    invoke-virtual {p0, v0}, Lcom/android/settings_ext/MiuiStatusBarSettings;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object v0
 
@@ -126,21 +126,21 @@
 
     move-result v0
 
-    iput-boolean v0, p0, Lcom/android/settings/MiuiStatusBarSettings;->sA:Z
+    iput-boolean v0, p0, Lcom/android/settings_ext/MiuiStatusBarSettings;->sA:Z
 
     .line 73
     const-string v0, "custom_carrier"
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/MiuiStatusBarSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v0}, Lcom/android/settings_ext/MiuiStatusBarSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v0
 
     check-cast v0, Lmiui/preference/ValuePreference;
 
-    iput-object v0, p0, Lcom/android/settings/MiuiStatusBarSettings;->sz:Lmiui/preference/ValuePreference;
+    iput-object v0, p0, Lcom/android/settings_ext/MiuiStatusBarSettings;->sz:Lmiui/preference/ValuePreference;
 
     .line 74
-    iget-object v0, p0, Lcom/android/settings/MiuiStatusBarSettings;->sz:Lmiui/preference/ValuePreference;
+    iget-object v0, p0, Lcom/android/settings_ext/MiuiStatusBarSettings;->sz:Lmiui/preference/ValuePreference;
 
     const/4 v1, 0x1
 
@@ -149,28 +149,28 @@
     .line 76
     const-string v0, "show_carrier"
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/MiuiStatusBarSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v0}, Lcom/android/settings_ext/MiuiStatusBarSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v0
 
     check-cast v0, Landroid/preference/CheckBoxPreference;
 
-    iput-object v0, p0, Lcom/android/settings/MiuiStatusBarSettings;->sy:Landroid/preference/CheckBoxPreference;
+    iput-object v0, p0, Lcom/android/settings_ext/MiuiStatusBarSettings;->sy:Landroid/preference/CheckBoxPreference;
 
     .line 77
-    iget-object v0, p0, Lcom/android/settings/MiuiStatusBarSettings;->sy:Landroid/preference/CheckBoxPreference;
+    iget-object v0, p0, Lcom/android/settings_ext/MiuiStatusBarSettings;->sy:Landroid/preference/CheckBoxPreference;
 
     invoke-virtual {v0, p0}, Landroid/preference/CheckBoxPreference;->setOnPreferenceChangeListener(Landroid/preference/Preference$OnPreferenceChangeListener;)V
 
     .line 78
-    iget-boolean v0, p0, Lcom/android/settings/MiuiStatusBarSettings;->sA:Z
+    iget-boolean v0, p0, Lcom/android/settings_ext/MiuiStatusBarSettings;->sA:Z
 
     if-nez v0, :cond_0
 
     .line 79
-    iget-object v0, p0, Lcom/android/settings/MiuiStatusBarSettings;->sy:Landroid/preference/CheckBoxPreference;
+    iget-object v0, p0, Lcom/android/settings_ext/MiuiStatusBarSettings;->sy:Landroid/preference/CheckBoxPreference;
 
-    invoke-virtual {p0}, Lcom/android/settings/MiuiStatusBarSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/MiuiStatusBarSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v1
 
@@ -187,9 +187,9 @@
     invoke-virtual {v0, v1}, Landroid/preference/CheckBoxPreference;->setTitle(Ljava/lang/CharSequence;)V
 
     .line 80
-    iget-object v0, p0, Lcom/android/settings/MiuiStatusBarSettings;->sz:Lmiui/preference/ValuePreference;
+    iget-object v0, p0, Lcom/android/settings_ext/MiuiStatusBarSettings;->sz:Lmiui/preference/ValuePreference;
 
-    invoke-virtual {p0}, Lcom/android/settings/MiuiStatusBarSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/MiuiStatusBarSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v1
 
@@ -209,23 +209,23 @@
     :cond_0
     const-string v0, "show_screenshot_notification"
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/MiuiStatusBarSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v0}, Lcom/android/settings_ext/MiuiStatusBarSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v0
 
     check-cast v0, Landroid/preference/CheckBoxPreference;
 
-    iput-object v0, p0, Lcom/android/settings/MiuiStatusBarSettings;->sw:Landroid/preference/CheckBoxPreference;
+    iput-object v0, p0, Lcom/android/settings_ext/MiuiStatusBarSettings;->sw:Landroid/preference/CheckBoxPreference;
 
     .line 85
-    iget-object v0, p0, Lcom/android/settings/MiuiStatusBarSettings;->sw:Landroid/preference/CheckBoxPreference;
+    iget-object v0, p0, Lcom/android/settings_ext/MiuiStatusBarSettings;->sw:Landroid/preference/CheckBoxPreference;
 
     invoke-virtual {v0, p0}, Landroid/preference/CheckBoxPreference;->setOnPreferenceChangeListener(Landroid/preference/Preference$OnPreferenceChangeListener;)V
 
     .line 86
-    iget-object v0, p0, Lcom/android/settings/MiuiStatusBarSettings;->sw:Landroid/preference/CheckBoxPreference;
+    iget-object v0, p0, Lcom/android/settings_ext/MiuiStatusBarSettings;->sw:Landroid/preference/CheckBoxPreference;
 
-    invoke-virtual {p0}, Lcom/android/settings/MiuiStatusBarSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/MiuiStatusBarSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v1
 
@@ -238,23 +238,23 @@
     .line 88
     const-string v0, "toggle_collapse_after_clicked"
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/MiuiStatusBarSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v0}, Lcom/android/settings_ext/MiuiStatusBarSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v0
 
     check-cast v0, Landroid/preference/CheckBoxPreference;
 
-    iput-object v0, p0, Lcom/android/settings/MiuiStatusBarSettings;->sx:Landroid/preference/CheckBoxPreference;
+    iput-object v0, p0, Lcom/android/settings_ext/MiuiStatusBarSettings;->sx:Landroid/preference/CheckBoxPreference;
 
     .line 89
-    iget-object v0, p0, Lcom/android/settings/MiuiStatusBarSettings;->sx:Landroid/preference/CheckBoxPreference;
+    iget-object v0, p0, Lcom/android/settings_ext/MiuiStatusBarSettings;->sx:Landroid/preference/CheckBoxPreference;
 
     invoke-virtual {v0, p0}, Landroid/preference/CheckBoxPreference;->setOnPreferenceChangeListener(Landroid/preference/Preference$OnPreferenceChangeListener;)V
 
     .line 90
-    iget-object v0, p0, Lcom/android/settings/MiuiStatusBarSettings;->sx:Landroid/preference/CheckBoxPreference;
+    iget-object v0, p0, Lcom/android/settings_ext/MiuiStatusBarSettings;->sx:Landroid/preference/CheckBoxPreference;
 
-    invoke-virtual {p0}, Lcom/android/settings/MiuiStatusBarSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/MiuiStatusBarSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v1
 
@@ -267,23 +267,23 @@
     .line 92
     const-string v0, "expandable_under_keyguard"
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/MiuiStatusBarSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v0}, Lcom/android/settings_ext/MiuiStatusBarSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v0
 
     check-cast v0, Landroid/preference/CheckBoxPreference;
 
-    iput-object v0, p0, Lcom/android/settings/MiuiStatusBarSettings;->sv:Landroid/preference/CheckBoxPreference;
+    iput-object v0, p0, Lcom/android/settings_ext/MiuiStatusBarSettings;->sv:Landroid/preference/CheckBoxPreference;
 
     .line 93
-    iget-object v0, p0, Lcom/android/settings/MiuiStatusBarSettings;->sv:Landroid/preference/CheckBoxPreference;
+    iget-object v0, p0, Lcom/android/settings_ext/MiuiStatusBarSettings;->sv:Landroid/preference/CheckBoxPreference;
 
     invoke-virtual {v0, p0}, Landroid/preference/CheckBoxPreference;->setOnPreferenceChangeListener(Landroid/preference/Preference$OnPreferenceChangeListener;)V
 
     .line 94
-    iget-object v0, p0, Lcom/android/settings/MiuiStatusBarSettings;->sv:Landroid/preference/CheckBoxPreference;
+    iget-object v0, p0, Lcom/android/settings_ext/MiuiStatusBarSettings;->sv:Landroid/preference/CheckBoxPreference;
 
-    invoke-virtual {p0}, Lcom/android/settings/MiuiStatusBarSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/MiuiStatusBarSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v1
 
@@ -316,7 +316,7 @@
     if-eqz v1, :cond_1
 
     .line 131
-    invoke-virtual {p0}, Lcom/android/settings/MiuiStatusBarSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/MiuiStatusBarSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
@@ -346,7 +346,7 @@
     if-eqz v1, :cond_2
 
     .line 133
-    invoke-virtual {p0}, Lcom/android/settings/MiuiStatusBarSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/MiuiStatusBarSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v1
 
@@ -367,7 +367,7 @@
 
     move-result v0
 
-    invoke-direct {p0, v0}, Lcom/android/settings/MiuiStatusBarSettings;->E(Z)V
+    invoke-direct {p0, v0}, Lcom/android/settings_ext/MiuiStatusBarSettings;->E(Z)V
 
     goto :goto_0
 
@@ -382,7 +382,7 @@
     if-eqz v1, :cond_3
 
     .line 137
-    invoke-virtual {p0}, Lcom/android/settings/MiuiStatusBarSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/MiuiStatusBarSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
@@ -407,7 +407,7 @@
     if-eqz v1, :cond_4
 
     .line 140
-    invoke-virtual {p0}, Lcom/android/settings/MiuiStatusBarSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/MiuiStatusBarSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
@@ -432,7 +432,7 @@
     if-eqz v1, :cond_5
 
     .line 143
-    invoke-virtual {p0}, Lcom/android/settings/MiuiStatusBarSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/MiuiStatusBarSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
@@ -457,7 +457,7 @@
     if-eqz v0, :cond_0
 
     .line 146
-    invoke-virtual {p0}, Lcom/android/settings/MiuiStatusBarSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/MiuiStatusBarSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
@@ -477,7 +477,7 @@
 
     .prologue
     .line 153
-    iget-object v0, p0, Lcom/android/settings/MiuiStatusBarSettings;->sz:Lmiui/preference/ValuePreference;
+    iget-object v0, p0, Lcom/android/settings_ext/MiuiStatusBarSettings;->sz:Lmiui/preference/ValuePreference;
 
     if-ne p2, v0, :cond_0
 
@@ -488,7 +488,7 @@
 
     const/4 v4, 0x0
 
-    iget-boolean v0, p0, Lcom/android/settings/MiuiStatusBarSettings;->sA:Z
+    iget-boolean v0, p0, Lcom/android/settings_ext/MiuiStatusBarSettings;->sA:Z
 
     if-eqz v0, :cond_1
 
@@ -499,11 +499,11 @@
 
     move-object v1, p0
 
-    invoke-virtual/range {v0 .. v5}, Lcom/android/settings/MiuiStatusBarSettings;->a(Landroid/app/Fragment;Ljava/lang/String;ILandroid/os/Bundle;I)Z
+    invoke-virtual/range {v0 .. v5}, Lcom/android/settings_ext/MiuiStatusBarSettings;->a(Landroid/app/Fragment;Ljava/lang/String;ILandroid/os/Bundle;I)Z
 
     .line 162
     :cond_0
-    invoke-super {p0, p1, p2}, Lcom/android/settings/SettingsPreferenceFragment;->onPreferenceTreeClick(Landroid/preference/PreferenceScreen;Landroid/preference/Preference;)Z
+    invoke-super {p0, p1, p2}, Lcom/android/settings_ext/SettingsPreferenceFragment;->onPreferenceTreeClick(Landroid/preference/PreferenceScreen;Landroid/preference/Preference;)Z
 
     move-result v0
 
@@ -521,12 +521,12 @@
 
     .prologue
     .line 99
-    invoke-super {p0}, Lcom/android/settings/SettingsPreferenceFragment;->onResume()V
+    invoke-super {p0}, Lcom/android/settings_ext/SettingsPreferenceFragment;->onResume()V
 
     .line 100
-    iget-object v0, p0, Lcom/android/settings/MiuiStatusBarSettings;->su:Landroid/preference/CheckBoxPreference;
+    iget-object v0, p0, Lcom/android/settings_ext/MiuiStatusBarSettings;->su:Landroid/preference/CheckBoxPreference;
 
-    invoke-virtual {p0}, Lcom/android/settings/MiuiStatusBarSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/MiuiStatusBarSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v1
 
@@ -537,9 +537,9 @@
     invoke-virtual {v0, v1}, Landroid/preference/CheckBoxPreference;->setChecked(Z)V
 
     .line 101
-    iget-object v0, p0, Lcom/android/settings/MiuiStatusBarSettings;->st:Landroid/preference/CheckBoxPreference;
+    iget-object v0, p0, Lcom/android/settings_ext/MiuiStatusBarSettings;->st:Landroid/preference/CheckBoxPreference;
 
-    invoke-virtual {p0}, Lcom/android/settings/MiuiStatusBarSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/MiuiStatusBarSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v1
 
@@ -555,7 +555,7 @@
     invoke-direct {v3}, Ljava/lang/StringBuilder;-><init>()V
 
     .line 104
-    invoke-virtual {p0}, Lcom/android/settings/MiuiStatusBarSettings;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {p0}, Lcom/android/settings_ext/MiuiStatusBarSettings;->getResources()Landroid/content/res/Resources;
 
     move-result-object v0
 
@@ -589,7 +589,7 @@
     if-ge v0, v1, :cond_2
 
     .line 107
-    invoke-virtual {p0}, Lcom/android/settings/MiuiStatusBarSettings;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/settings_ext/MiuiStatusBarSettings;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v1
 
@@ -664,7 +664,7 @@
 
     .line 113
     :cond_2
-    iget-object v0, p0, Lcom/android/settings/MiuiStatusBarSettings;->sz:Lmiui/preference/ValuePreference;
+    iget-object v0, p0, Lcom/android/settings_ext/MiuiStatusBarSettings;->sz:Lmiui/preference/ValuePreference;
 
     invoke-virtual {v3}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
@@ -673,9 +673,9 @@
     invoke-virtual {v0, v1}, Lmiui/preference/ValuePreference;->setValue(Ljava/lang/String;)V
 
     .line 114
-    iget-object v0, p0, Lcom/android/settings/MiuiStatusBarSettings;->sy:Landroid/preference/CheckBoxPreference;
+    iget-object v0, p0, Lcom/android/settings_ext/MiuiStatusBarSettings;->sy:Landroid/preference/CheckBoxPreference;
 
-    invoke-virtual {p0}, Lcom/android/settings/MiuiStatusBarSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/MiuiStatusBarSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v1
 
@@ -686,13 +686,13 @@
     invoke-virtual {v0, v1}, Landroid/preference/CheckBoxPreference;->setChecked(Z)V
 
     .line 115
-    iget-object v0, p0, Lcom/android/settings/MiuiStatusBarSettings;->sy:Landroid/preference/CheckBoxPreference;
+    iget-object v0, p0, Lcom/android/settings_ext/MiuiStatusBarSettings;->sy:Landroid/preference/CheckBoxPreference;
 
     invoke-virtual {v0}, Landroid/preference/CheckBoxPreference;->isChecked()Z
 
     move-result v0
 
-    invoke-direct {p0, v0}, Lcom/android/settings/MiuiStatusBarSettings;->E(Z)V
+    invoke-direct {p0, v0}, Lcom/android/settings_ext/MiuiStatusBarSettings;->E(Z)V
 
     .line 116
     return-void

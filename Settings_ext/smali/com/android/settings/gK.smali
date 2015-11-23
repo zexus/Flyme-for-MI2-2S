@@ -1,4 +1,4 @@
-.class Lcom/android/settings/gK;
+.class Lcom/android/settings_ext/gK;
 .super Ljava/lang/Object;
 .source "TrustedCredentialsSettings.java"
 
@@ -7,20 +7,20 @@
 
 
 # instance fields
-.field final synthetic yE:Lcom/android/settings/TrustedCredentialsSettings;
+.field final synthetic yE:Lcom/android/settings_ext/TrustedCredentialsSettings;
 
-.field final synthetic yF:Lcom/android/settings/gV;
+.field final synthetic yF:Lcom/android/settings_ext/gV;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/TrustedCredentialsSettings;Lcom/android/settings/gV;)V
+.method constructor <init>(Lcom/android/settings_ext/TrustedCredentialsSettings;Lcom/android/settings_ext/gV;)V
     .locals 0
 
     .prologue
     .line 225
-    iput-object p1, p0, Lcom/android/settings/gK;->yE:Lcom/android/settings/TrustedCredentialsSettings;
+    iput-object p1, p0, Lcom/android/settings_ext/gK;->yE:Lcom/android/settings_ext/TrustedCredentialsSettings;
 
-    iput-object p2, p0, Lcom/android/settings/gK;->yF:Lcom/android/settings/gV;
+    iput-object p2, p0, Lcom/android/settings_ext/gK;->yF:Lcom/android/settings_ext/gV;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -34,15 +34,15 @@
 
     .prologue
     .line 228
-    iget-object v0, p0, Lcom/android/settings/gK;->yE:Lcom/android/settings/TrustedCredentialsSettings;
+    iget-object v0, p0, Lcom/android/settings_ext/gK;->yE:Lcom/android/settings_ext/TrustedCredentialsSettings;
 
-    iget-object v1, p0, Lcom/android/settings/gK;->yF:Lcom/android/settings/gV;
+    iget-object v1, p0, Lcom/android/settings_ext/gK;->yF:Lcom/android/settings_ext/gV;
 
-    invoke-virtual {v1, p3}, Lcom/android/settings/gV;->ab(I)Lcom/android/settings/gU;
+    invoke-virtual {v1, p3}, Lcom/android/settings_ext/gV;->ab(I)Lcom/android/settings_ext/gU;
 
     move-result-object v1
 
-    invoke-static {v0, v1}, Lcom/android/settings/TrustedCredentialsSettings;->a(Lcom/android/settings/TrustedCredentialsSettings;Lcom/android/settings/gU;)V
+    invoke-static {v0, v1}, Lcom/android/settings_ext/TrustedCredentialsSettings;->a(Lcom/android/settings_ext/TrustedCredentialsSettings;Lcom/android/settings_ext/gU;)V
 
     .line 229
     return-void

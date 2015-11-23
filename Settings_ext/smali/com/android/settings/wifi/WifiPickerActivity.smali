@@ -1,5 +1,5 @@
-.class public Lcom/android/settings/wifi/WifiPickerActivity;
-.super Lcom/android/settings/gh;
+.class public Lcom/android/settings_ext/wifi/WifiPickerActivity;
+.super Lcom/android/settings_ext/gh;
 .source "WifiPickerActivity.java"
 
 
@@ -9,7 +9,7 @@
 
     .prologue
     .line 31
-    invoke-direct {p0}, Lcom/android/settings/gh;-><init>()V
+    invoke-direct {p0}, Lcom/android/settings_ext/gh;-><init>()V
 
     return-void
 .end method
@@ -25,7 +25,7 @@
     .line 49
     new-instance v0, Landroid/content/Intent;
 
-    invoke-super {p0}, Lcom/android/settings/gh;->getIntent()Landroid/content/Intent;
+    invoke-super {p0}, Lcom/android/settings_ext/gh;->getIntent()Landroid/content/Intent;
 
     move-result-object v1
 
@@ -43,7 +43,7 @@
     .line 53
     const-string v1, ":settings:show_fragment"
 
-    const-class v2, Lcom/android/settings/wifi/MiuiWifiSettings;
+    const-class v2, Lcom/android/settings_ext/wifi/MiuiWifiSettings;
 
     invoke-virtual {v2}, Ljava/lang/Class;->getName()Ljava/lang/String;
 
@@ -96,7 +96,7 @@
 
     .prologue
     .line 36
-    invoke-super {p0, p1}, Lcom/android/settings/gh;->onCreate(Landroid/os/Bundle;)V
+    invoke-super {p0, p1}, Lcom/android/settings_ext/gh;->onCreate(Landroid/os/Bundle;)V
 
     .line 37
     sget-boolean v0, Lmiui/os/Build;->IS_TABLET:Z
@@ -120,7 +120,7 @@
     .line 40
     const-string v1, "com.android.settings.FRAGMENT_CLASS"
 
-    const-class v2, Lcom/android/settings/wifi/MiuiWifiSettings;
+    const-class v2, Lcom/android/settings_ext/wifi/MiuiWifiSettings;
 
     invoke-virtual {v2}, Ljava/lang/Class;->getName()Ljava/lang/String;
 
@@ -129,10 +129,10 @@
     invoke-virtual {v0, v1, v2}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
 
     .line 41
-    invoke-virtual {p0, v0}, Lcom/android/settings/wifi/WifiPickerActivity;->startActivity(Landroid/content/Intent;)V
+    invoke-virtual {p0, v0}, Lcom/android/settings_ext/wifi/WifiPickerActivity;->startActivity(Landroid/content/Intent;)V
 
     .line 42
-    invoke-virtual {p0}, Lcom/android/settings/wifi/WifiPickerActivity;->finish()V
+    invoke-virtual {p0}, Lcom/android/settings_ext/wifi/WifiPickerActivity;->finish()V
 
     .line 44
     :cond_0

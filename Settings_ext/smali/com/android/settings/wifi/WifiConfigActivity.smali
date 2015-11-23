@@ -1,4 +1,4 @@
-.class public Lcom/android/settings/wifi/WifiConfigActivity;
+.class public Lcom/android/settings_ext/wifi/WifiConfigActivity;
 .super Landroid/app/Activity;
 .source "WifiConfigActivity.java"
 
@@ -7,9 +7,9 @@
 
 
 # instance fields
-.field private asR:Lcom/android/settings/wifi/AccessPoint;
+.field private asR:Lcom/android/settings_ext/wifi/AccessPoint;
 
-.field private atL:Lcom/android/settings/wifi/aa;
+.field private atL:Lcom/android/settings_ext/wifi/aa;
 
 .field private hD:Landroid/net/wifi/WifiManager;
 
@@ -37,19 +37,19 @@
     if-ne p2, v0, :cond_0
 
     .line 48
-    iget-object v0, p0, Lcom/android/settings/wifi/WifiConfigActivity;->atL:Lcom/android/settings/wifi/aa;
+    iget-object v0, p0, Lcom/android/settings_ext/wifi/WifiConfigActivity;->atL:Lcom/android/settings_ext/wifi/aa;
 
-    invoke-virtual {v0}, Lcom/android/settings/wifi/aa;->vb()Lcom/android/settings/wifi/T;
+    invoke-virtual {v0}, Lcom/android/settings_ext/wifi/aa;->vb()Lcom/android/settings_ext/wifi/T;
 
     move-result-object v0
 
     .line 49
-    invoke-virtual {v0}, Lcom/android/settings/wifi/T;->tN()Landroid/net/wifi/WifiConfiguration;
+    invoke-virtual {v0}, Lcom/android/settings_ext/wifi/T;->tN()Landroid/net/wifi/WifiConfiguration;
 
     move-result-object v1
 
     .line 51
-    iget-object v2, p0, Lcom/android/settings/wifi/WifiConfigActivity;->hD:Landroid/net/wifi/WifiManager;
+    iget-object v2, p0, Lcom/android/settings_ext/wifi/WifiConfigActivity;->hD:Landroid/net/wifi/WifiManager;
 
     const/4 v3, 0x0
 
@@ -61,9 +61,9 @@
     invoke-direct {v2, v1}, Landroid/net/wifi/WifiConfiguration;-><init>(Landroid/net/wifi/WifiConfiguration;)V
 
     .line 53
-    iget-object v1, p0, Lcom/android/settings/wifi/WifiConfigActivity;->asR:Lcom/android/settings/wifi/AccessPoint;
+    iget-object v1, p0, Lcom/android/settings_ext/wifi/WifiConfigActivity;->asR:Lcom/android/settings_ext/wifi/AccessPoint;
 
-    invoke-virtual {v1}, Lcom/android/settings/wifi/AccessPoint;->tN()Landroid/net/wifi/WifiConfiguration;
+    invoke-virtual {v1}, Lcom/android/settings_ext/wifi/AccessPoint;->tN()Landroid/net/wifi/WifiConfiguration;
 
     move-result-object v1
 
@@ -72,14 +72,14 @@
     iput-object v1, v2, Landroid/net/wifi/WifiConfiguration;->SSID:Ljava/lang/String;
 
     .line 54
-    iget-object v1, p0, Lcom/android/settings/wifi/WifiConfigActivity;->asR:Lcom/android/settings/wifi/AccessPoint;
+    iget-object v1, p0, Lcom/android/settings_ext/wifi/WifiConfigActivity;->asR:Lcom/android/settings_ext/wifi/AccessPoint;
 
-    iget-object v1, v1, Lcom/android/settings/wifi/AccessPoint;->bssid:Ljava/lang/String;
+    iget-object v1, v1, Lcom/android/settings_ext/wifi/AccessPoint;->bssid:Ljava/lang/String;
 
     iput-object v1, v2, Landroid/net/wifi/WifiConfiguration;->BSSID:Ljava/lang/String;
 
     .line 55
-    invoke-virtual {v0}, Lcom/android/settings/wifi/T;->tZ()Z
+    invoke-virtual {v0}, Lcom/android/settings_ext/wifi/T;->tZ()Z
 
     move-result v0
 
@@ -89,7 +89,7 @@
 
     .line 56
     :goto_0
-    invoke-static {p0, v2, v0}, Lcom/android/settings/wifi/Y;->b(Landroid/content/Context;Landroid/net/wifi/WifiConfiguration;I)V
+    invoke-static {p0, v2, v0}, Lcom/android/settings_ext/wifi/Y;->b(Landroid/content/Context;Landroid/net/wifi/WifiConfiguration;I)V
 
     .line 58
     :cond_0
@@ -112,16 +112,16 @@
     .line 24
     const-string v0, "wifi"
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/wifi/WifiConfigActivity;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
+    invoke-virtual {p0, v0}, Lcom/android/settings_ext/wifi/WifiConfigActivity;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object v0
 
     check-cast v0, Landroid/net/wifi/WifiManager;
 
-    iput-object v0, p0, Lcom/android/settings/wifi/WifiConfigActivity;->hD:Landroid/net/wifi/WifiManager;
+    iput-object v0, p0, Lcom/android/settings_ext/wifi/WifiConfigActivity;->hD:Landroid/net/wifi/WifiManager;
 
     .line 26
-    invoke-virtual {p0}, Lcom/android/settings/wifi/WifiConfigActivity;->getIntent()Landroid/content/Intent;
+    invoke-virtual {p0}, Lcom/android/settings_ext/wifi/WifiConfigActivity;->getIntent()Landroid/content/Intent;
 
     move-result-object v0
 
@@ -134,18 +134,18 @@
     check-cast v0, Landroid/net/wifi/WifiConfiguration;
 
     .line 27
-    invoke-static {p0, v0}, Lcom/android/settings/wifi/Y;->d(Landroid/content/Context;Landroid/net/wifi/WifiConfiguration;)Landroid/net/wifi/WifiConfiguration;
+    invoke-static {p0, v0}, Lcom/android/settings_ext/wifi/Y;->d(Landroid/content/Context;Landroid/net/wifi/WifiConfiguration;)Landroid/net/wifi/WifiConfiguration;
 
     move-result-object v1
 
     .line 28
     iget-object v2, v0, Landroid/net/wifi/WifiConfiguration;->SSID:Ljava/lang/String;
 
-    invoke-static {v2}, Lcom/android/settings/wifi/AccessPoint;->removeDoubleQuotes(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v2}, Lcom/android/settings_ext/wifi/AccessPoint;->removeDoubleQuotes(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v2
 
-    invoke-static {p0, v2}, Lcom/android/settings/wifi/Y;->w(Landroid/content/Context;Ljava/lang/String;)Landroid/net/wifi/WifiConfiguration;
+    invoke-static {p0, v2}, Lcom/android/settings_ext/wifi/Y;->w(Landroid/content/Context;Ljava/lang/String;)Landroid/net/wifi/WifiConfiguration;
 
     move-result-object v2
 
@@ -166,14 +166,14 @@
 
     .line 30
     :cond_0
-    iget-object v0, p0, Lcom/android/settings/wifi/WifiConfigActivity;->hD:Landroid/net/wifi/WifiManager;
+    iget-object v0, p0, Lcom/android/settings_ext/wifi/WifiConfigActivity;->hD:Landroid/net/wifi/WifiManager;
 
     const/4 v2, 0x0
 
     invoke-virtual {v0, v1, v2}, Landroid/net/wifi/WifiManager;->save(Landroid/net/wifi/WifiConfiguration;Landroid/net/wifi/WifiManager$ActionListener;)V
 
     .line 31
-    invoke-virtual {p0}, Lcom/android/settings/wifi/WifiConfigActivity;->finish()V
+    invoke-virtual {p0}, Lcom/android/settings_ext/wifi/WifiConfigActivity;->finish()V
 
     .line 43
     :goto_0
@@ -181,36 +181,36 @@
 
     .line 34
     :cond_1
-    new-instance v1, Lcom/android/settings/wifi/AccessPoint;
+    new-instance v1, Lcom/android/settings_ext/wifi/AccessPoint;
 
-    invoke-direct {v1, p0, v0}, Lcom/android/settings/wifi/AccessPoint;-><init>(Landroid/content/Context;Landroid/net/wifi/WifiConfiguration;)V
+    invoke-direct {v1, p0, v0}, Lcom/android/settings_ext/wifi/AccessPoint;-><init>(Landroid/content/Context;Landroid/net/wifi/WifiConfiguration;)V
 
-    iput-object v1, p0, Lcom/android/settings/wifi/WifiConfigActivity;->asR:Lcom/android/settings/wifi/AccessPoint;
+    iput-object v1, p0, Lcom/android/settings_ext/wifi/WifiConfigActivity;->asR:Lcom/android/settings_ext/wifi/AccessPoint;
 
     .line 35
-    new-instance v0, Lcom/android/settings/wifi/aa;
+    new-instance v0, Lcom/android/settings_ext/wifi/aa;
 
-    iget-object v1, p0, Lcom/android/settings/wifi/WifiConfigActivity;->asR:Lcom/android/settings/wifi/AccessPoint;
+    iget-object v1, p0, Lcom/android/settings_ext/wifi/WifiConfigActivity;->asR:Lcom/android/settings_ext/wifi/AccessPoint;
 
     const/4 v2, 0x1
 
-    invoke-direct {v0, p0, p0, v1, v2}, Lcom/android/settings/wifi/aa;-><init>(Landroid/content/Context;Landroid/content/DialogInterface$OnClickListener;Lcom/android/settings/wifi/AccessPoint;Z)V
+    invoke-direct {v0, p0, p0, v1, v2}, Lcom/android/settings_ext/wifi/aa;-><init>(Landroid/content/Context;Landroid/content/DialogInterface$OnClickListener;Lcom/android/settings_ext/wifi/AccessPoint;Z)V
 
-    iput-object v0, p0, Lcom/android/settings/wifi/WifiConfigActivity;->atL:Lcom/android/settings/wifi/aa;
+    iput-object v0, p0, Lcom/android/settings_ext/wifi/WifiConfigActivity;->atL:Lcom/android/settings_ext/wifi/aa;
 
     .line 36
-    iget-object v0, p0, Lcom/android/settings/wifi/WifiConfigActivity;->atL:Lcom/android/settings/wifi/aa;
+    iget-object v0, p0, Lcom/android/settings_ext/wifi/WifiConfigActivity;->atL:Lcom/android/settings_ext/wifi/aa;
 
-    new-instance v1, Lcom/android/settings/wifi/S;
+    new-instance v1, Lcom/android/settings_ext/wifi/S;
 
-    invoke-direct {v1, p0}, Lcom/android/settings/wifi/S;-><init>(Lcom/android/settings/wifi/WifiConfigActivity;)V
+    invoke-direct {v1, p0}, Lcom/android/settings_ext/wifi/S;-><init>(Lcom/android/settings_ext/wifi/WifiConfigActivity;)V
 
-    invoke-virtual {v0, v1}, Lcom/android/settings/wifi/aa;->setOnDismissListener(Landroid/content/DialogInterface$OnDismissListener;)V
+    invoke-virtual {v0, v1}, Lcom/android/settings_ext/wifi/aa;->setOnDismissListener(Landroid/content/DialogInterface$OnDismissListener;)V
 
     .line 42
-    iget-object v0, p0, Lcom/android/settings/wifi/WifiConfigActivity;->atL:Lcom/android/settings/wifi/aa;
+    iget-object v0, p0, Lcom/android/settings_ext/wifi/WifiConfigActivity;->atL:Lcom/android/settings_ext/wifi/aa;
 
-    invoke-virtual {v0}, Lcom/android/settings/wifi/aa;->show()V
+    invoke-virtual {v0}, Lcom/android/settings_ext/wifi/aa;->show()V
 
     goto :goto_0
 .end method
@@ -220,14 +220,14 @@
 
     .prologue
     .line 62
-    iget-object v0, p0, Lcom/android/settings/wifi/WifiConfigActivity;->atL:Lcom/android/settings/wifi/aa;
+    iget-object v0, p0, Lcom/android/settings_ext/wifi/WifiConfigActivity;->atL:Lcom/android/settings_ext/wifi/aa;
 
     if-eqz v0, :cond_0
 
     .line 63
-    iget-object v0, p0, Lcom/android/settings/wifi/WifiConfigActivity;->atL:Lcom/android/settings/wifi/aa;
+    iget-object v0, p0, Lcom/android/settings_ext/wifi/WifiConfigActivity;->atL:Lcom/android/settings_ext/wifi/aa;
 
-    invoke-virtual {v0}, Lcom/android/settings/wifi/aa;->dismiss()V
+    invoke-virtual {v0}, Lcom/android/settings_ext/wifi/aa;->dismiss()V
 
     .line 66
     :cond_0

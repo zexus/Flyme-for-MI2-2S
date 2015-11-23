@@ -1,5 +1,5 @@
-.class public Lcom/android/settings/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;
-.super Lcom/android/settings/SettingsPreferenceFragment;
+.class public Lcom/android/settings_ext/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;
+.super Lcom/android/settings_ext/SettingsPreferenceFragment;
 .source "MiuiSecurityCommonSettings.java"
 
 
@@ -45,40 +45,40 @@
 
     .prologue
     .line 221
-    invoke-direct {p0}, Lcom/android/settings/SettingsPreferenceFragment;-><init>()V
+    invoke-direct {p0}, Lcom/android/settings_ext/SettingsPreferenceFragment;-><init>()V
 
     .line 265
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
-    iput-object v0, p0, Lcom/android/settings/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;->ra:Ljava/util/List;
+    iput-object v0, p0, Lcom/android/settings_ext/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;->ra:Ljava/util/List;
 
     .line 267
-    new-instance v0, Lcom/android/settings/eh;
+    new-instance v0, Lcom/android/settings_ext/eh;
 
-    invoke-direct {v0, p0}, Lcom/android/settings/eh;-><init>(Lcom/android/settings/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;)V
+    invoke-direct {v0, p0}, Lcom/android/settings_ext/eh;-><init>(Lcom/android/settings_ext/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;)V
 
-    iput-object v0, p0, Lcom/android/settings/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;->rb:Landroid/preference/Preference$OnPreferenceChangeListener;
+    iput-object v0, p0, Lcom/android/settings_ext/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;->rb:Landroid/preference/Preference$OnPreferenceChangeListener;
 
     .line 506
-    new-instance v0, Lcom/android/settings/ek;
+    new-instance v0, Lcom/android/settings_ext/ek;
 
-    invoke-direct {v0, p0}, Lcom/android/settings/ek;-><init>(Lcom/android/settings/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;)V
+    invoke-direct {v0, p0}, Lcom/android/settings_ext/ek;-><init>(Lcom/android/settings_ext/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;)V
 
-    iput-object v0, p0, Lcom/android/settings/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;->rc:Landroid/preference/Preference$OnPreferenceChangeListener;
+    iput-object v0, p0, Lcom/android/settings_ext/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;->rc:Landroid/preference/Preference$OnPreferenceChangeListener;
 
     .line 533
-    new-instance v0, Lcom/android/settings/el;
+    new-instance v0, Lcom/android/settings_ext/el;
 
-    invoke-direct {v0, p0}, Lcom/android/settings/el;-><init>(Lcom/android/settings/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;)V
+    invoke-direct {v0, p0}, Lcom/android/settings_ext/el;-><init>(Lcom/android/settings_ext/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;)V
 
-    iput-object v0, p0, Lcom/android/settings/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;->rd:Landroid/preference/Preference$OnPreferenceClickListener;
+    iput-object v0, p0, Lcom/android/settings_ext/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;->rd:Landroid/preference/Preference$OnPreferenceClickListener;
 
     .line 711
     const/4 v0, 0x0
 
-    iput-boolean v0, p0, Lcom/android/settings/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;->re:Z
+    iput-boolean v0, p0, Lcom/android/settings_ext/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;->re:Z
 
     return-void
 .end method
@@ -92,14 +92,14 @@
     .line 699
     new-instance v2, Landroid/security/MiuiLockPatternUtils;
 
-    invoke-virtual {p0}, Lcom/android/settings/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
     invoke-direct {v2, v0}, Landroid/security/MiuiLockPatternUtils;-><init>(Landroid/content/Context;)V
 
     .line 700
-    invoke-virtual {p0}, Lcom/android/settings/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/settings_ext/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v0
 
@@ -132,7 +132,7 @@
     .line 617
     new-instance v0, Landroid/app/AlertDialog$Builder;
 
-    invoke-virtual {p0}, Lcom/android/settings/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v1
 
@@ -179,7 +179,7 @@
     const/4 v4, 0x0
 
     .line 301
-    invoke-virtual {p0}, Lcom/android/settings/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/settings_ext/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v0
 
@@ -199,7 +199,7 @@
 
     .line 305
     :sswitch_0
-    const-class v0, Lcom/android/settings/MiuiSecurityCommonSettings$MiuiConfirmLockPatternFragment;
+    const-class v0, Lcom/android/settings_ext/MiuiSecurityCommonSettings$MiuiConfirmLockPatternFragment;
 
     invoke-virtual {v0}, Ljava/lang/Class;->getName()Ljava/lang/String;
 
@@ -213,13 +213,13 @@
 
     move v3, p1
 
-    invoke-virtual/range {v0 .. v5}, Lcom/android/settings/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;->a(Landroid/app/Fragment;Ljava/lang/String;ILandroid/os/Bundle;I)Z
+    invoke-virtual/range {v0 .. v5}, Lcom/android/settings_ext/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;->a(Landroid/app/Fragment;Ljava/lang/String;ILandroid/os/Bundle;I)Z
 
     goto :goto_0
 
     .line 313
     :sswitch_1
-    const-class v0, Lcom/android/settings/MiuiSecurityCommonSettings$MiuiConfirmLockPasswordFragment;
+    const-class v0, Lcom/android/settings_ext/MiuiSecurityCommonSettings$MiuiConfirmLockPasswordFragment;
 
     invoke-virtual {v0}, Ljava/lang/Class;->getName()Ljava/lang/String;
 
@@ -233,7 +233,7 @@
 
     move v3, p1
 
-    invoke-virtual/range {v0 .. v5}, Lcom/android/settings/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;->a(Landroid/app/Fragment;Ljava/lang/String;ILandroid/os/Bundle;I)Z
+    invoke-virtual/range {v0 .. v5}, Lcom/android/settings_ext/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;->a(Landroid/app/Fragment;Ljava/lang/String;ILandroid/os/Bundle;I)Z
 
     goto :goto_0
 
@@ -254,11 +254,11 @@
 
     .prologue
     .line 613
-    invoke-virtual {p0, p1}, Lcom/android/settings/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;->getString(I)Ljava/lang/String;
+    invoke-virtual {p0, p1}, Lcom/android/settings_ext/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;->getString(I)Ljava/lang/String;
 
     move-result-object v0
 
-    invoke-direct {p0, v0}, Lcom/android/settings/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;->C(Ljava/lang/String;)V
+    invoke-direct {p0, v0}, Lcom/android/settings_ext/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;->C(Ljava/lang/String;)V
 
     .line 614
     return-void
@@ -319,12 +319,12 @@
     return-object v0
 .end method
 
-.method static synthetic a(Lcom/android/settings/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;)Ljava/util/List;
+.method static synthetic a(Lcom/android/settings_ext/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;)Ljava/util/List;
     .locals 1
 
     .prologue
     .line 221
-    iget-object v0, p0, Lcom/android/settings/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;->ra:Ljava/util/List;
+    iget-object v0, p0, Lcom/android/settings_ext/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;->ra:Ljava/util/List;
 
     return-object v0
 .end method
@@ -336,7 +336,7 @@
     .line 690
     new-instance v0, Landroid/app/AlertDialog$Builder;
 
-    invoke-virtual {p0}, Lcom/android/settings/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v1
 
@@ -380,62 +380,62 @@
     return-void
 .end method
 
-.method static synthetic a(Lcom/android/settings/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;I)V
+.method static synthetic a(Lcom/android/settings_ext/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;I)V
     .locals 0
 
     .prologue
     .line 221
-    invoke-direct {p0, p1}, Lcom/android/settings/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;->M(I)V
+    invoke-direct {p0, p1}, Lcom/android/settings_ext/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;->M(I)V
 
     return-void
 .end method
 
-.method static synthetic a(Lcom/android/settings/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;J)V
+.method static synthetic a(Lcom/android/settings_ext/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;J)V
     .locals 1
 
     .prologue
     .line 221
-    invoke-direct {p0, p1, p2}, Lcom/android/settings/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;->i(J)V
+    invoke-direct {p0, p1, p2}, Lcom/android/settings_ext/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;->i(J)V
 
     return-void
 .end method
 
-.method static synthetic a(Lcom/android/settings/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;Landroid/preference/Preference;)V
+.method static synthetic a(Lcom/android/settings_ext/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;Landroid/preference/Preference;)V
     .locals 0
 
     .prologue
     .line 221
-    invoke-direct {p0, p1}, Lcom/android/settings/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;->d(Landroid/preference/Preference;)V
+    invoke-direct {p0, p1}, Lcom/android/settings_ext/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;->d(Landroid/preference/Preference;)V
 
     return-void
 .end method
 
-.method static synthetic a(Lcom/android/settings/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;Ljava/lang/String;Ljava/lang/String;)V
+.method static synthetic a(Lcom/android/settings_ext/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;Ljava/lang/String;Ljava/lang/String;)V
     .locals 0
 
     .prologue
     .line 221
-    invoke-direct {p0, p1, p2}, Lcom/android/settings/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;->h(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-direct {p0, p1, p2}, Lcom/android/settings_ext/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;->h(Ljava/lang/String;Ljava/lang/String;)V
 
     return-void
 .end method
 
-.method static synthetic a(Lcom/android/settings/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;Ljava/lang/String;Z)V
+.method static synthetic a(Lcom/android/settings_ext/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;Ljava/lang/String;Z)V
     .locals 0
 
     .prologue
     .line 221
-    invoke-direct {p0, p1, p2}, Lcom/android/settings/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;->a(Ljava/lang/String;Z)V
+    invoke-direct {p0, p1, p2}, Lcom/android/settings_ext/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;->a(Ljava/lang/String;Z)V
 
     return-void
 .end method
 
-.method static synthetic a(Lcom/android/settings/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;Z)V
+.method static synthetic a(Lcom/android/settings_ext/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;Z)V
     .locals 0
 
     .prologue
     .line 221
-    invoke-direct {p0, p1}, Lcom/android/settings/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;->B(Z)V
+    invoke-direct {p0, p1}, Lcom/android/settings_ext/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;->B(Z)V
 
     return-void
 .end method
@@ -445,7 +445,7 @@
 
     .prologue
     .line 542
-    iget-boolean v0, p0, Lcom/android/settings/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;->re:Z
+    iget-boolean v0, p0, Lcom/android/settings_ext/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;->re:Z
 
     if-eqz v0, :cond_0
 
@@ -455,7 +455,7 @@
     move v1, v0
 
     :goto_0
-    iget-object v0, p0, Lcom/android/settings/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;->qY:Landroid/preference/PreferenceCategory;
+    iget-object v0, p0, Lcom/android/settings_ext/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;->qY:Landroid/preference/PreferenceCategory;
 
     invoke-virtual {v0}, Landroid/preference/PreferenceCategory;->getPreferenceCount()I
 
@@ -464,7 +464,7 @@
     if-ge v1, v0, :cond_0
 
     .line 544
-    iget-object v0, p0, Lcom/android/settings/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;->qY:Landroid/preference/PreferenceCategory;
+    iget-object v0, p0, Lcom/android/settings_ext/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;->qY:Landroid/preference/PreferenceCategory;
 
     invoke-virtual {v0, v1}, Landroid/preference/PreferenceCategory;->getPreference(I)Landroid/preference/Preference;
 
@@ -520,7 +520,7 @@
     .line 566
     new-instance v2, Landroid/preference/CheckBoxPreference;
 
-    invoke-virtual {p0}, Lcom/android/settings/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v3
 
@@ -533,17 +533,17 @@
     invoke-virtual {v2, p3}, Landroid/preference/CheckBoxPreference;->setTitle(Ljava/lang/CharSequence;)V
 
     .line 569
-    iget-object v3, p0, Lcom/android/settings/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;->rc:Landroid/preference/Preference$OnPreferenceChangeListener;
+    iget-object v3, p0, Lcom/android/settings_ext/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;->rc:Landroid/preference/Preference$OnPreferenceChangeListener;
 
     invoke-virtual {v2, v3}, Landroid/preference/CheckBoxPreference;->setOnPreferenceChangeListener(Landroid/preference/Preference$OnPreferenceChangeListener;)V
 
     .line 570
-    iget-object v3, p0, Lcom/android/settings/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;->rd:Landroid/preference/Preference$OnPreferenceClickListener;
+    iget-object v3, p0, Lcom/android/settings_ext/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;->rd:Landroid/preference/Preference$OnPreferenceClickListener;
 
     invoke-virtual {v2, v3}, Landroid/preference/CheckBoxPreference;->setOnPreferenceClickListener(Landroid/preference/Preference$OnPreferenceClickListener;)V
 
     .line 571
-    iget-object v3, p0, Lcom/android/settings/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;->qU:Landroid/preference/PreferenceCategory;
+    iget-object v3, p0, Lcom/android/settings_ext/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;->qU:Landroid/preference/PreferenceCategory;
 
     invoke-virtual {v3, v2}, Landroid/preference/PreferenceCategory;->addPreference(Landroid/preference/Preference;)Z
 
@@ -551,7 +551,7 @@
     if-eqz p1, :cond_1
 
     .line 573
-    iget-object v3, p0, Lcom/android/settings/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;->b:Landroid/security/ChooseLockSettingsHelper;
+    iget-object v3, p0, Lcom/android/settings_ext/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;->b:Landroid/security/ChooseLockSettingsHelper;
 
     invoke-virtual {v3}, Landroid/security/ChooseLockSettingsHelper;->utils()Landroid/security/MiuiLockPatternUtils;
 
@@ -578,7 +578,7 @@
 
     .line 576
     :cond_1
-    invoke-virtual {p0}, Lcom/android/settings/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/settings_ext/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v3
 
@@ -599,12 +599,12 @@
     goto :goto_2
 .end method
 
-.method static synthetic b(Lcom/android/settings/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;)V
+.method static synthetic b(Lcom/android/settings_ext/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;)V
     .locals 0
 
     .prologue
     .line 221
-    invoke-direct {p0}, Lcom/android/settings/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;->fc()V
+    invoke-direct {p0}, Lcom/android/settings_ext/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;->fc()V
 
     return-void
 .end method
@@ -630,7 +630,7 @@
     if-ne p2, v0, :cond_0
 
     .line 874
-    invoke-virtual {p0}, Lcom/android/settings/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;->fg()V
+    invoke-virtual {p0}, Lcom/android/settings_ext/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;->fg()V
 
     goto :goto_0
 
@@ -639,7 +639,7 @@
     if-ne p2, v0, :cond_0
 
     .line 879
-    iget-object v0, p0, Lcom/android/settings/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;->b:Landroid/security/ChooseLockSettingsHelper;
+    iget-object v0, p0, Lcom/android/settings_ext/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;->b:Landroid/security/ChooseLockSettingsHelper;
 
     invoke-virtual {v0}, Landroid/security/ChooseLockSettingsHelper;->utils()Landroid/security/MiuiLockPatternUtils;
 
@@ -648,7 +648,7 @@
     invoke-virtual {v0, v1}, Landroid/security/MiuiLockPatternUtils;->setBiometricWeakLivelinessEnabled(Z)V
 
     .line 880
-    iget-object v0, p0, Lcom/android/settings/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;->qQ:Landroid/preference/CheckBoxPreference;
+    iget-object v0, p0, Lcom/android/settings_ext/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;->qQ:Landroid/preference/CheckBoxPreference;
 
     invoke-virtual {v0, v1}, Landroid/preference/CheckBoxPreference;->setChecked(Z)V
 
@@ -656,7 +656,7 @@
 
     .line 884
     :sswitch_2
-    iget-object v0, p0, Lcom/android/settings/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;->b:Landroid/security/ChooseLockSettingsHelper;
+    iget-object v0, p0, Lcom/android/settings_ext/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;->b:Landroid/security/ChooseLockSettingsHelper;
 
     invoke-virtual {v0}, Landroid/security/ChooseLockSettingsHelper;->utils()Landroid/security/MiuiLockPatternUtils;
 
@@ -665,14 +665,14 @@
     invoke-virtual {v0}, Landroid/security/MiuiLockPatternUtils;->deleteTempGallery()V
 
     .line 885
-    invoke-virtual {p0}, Lcom/android/settings/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
     invoke-virtual {v0, p2}, Landroid/app/Activity;->setResult(I)V
 
     .line 886
-    invoke-virtual {p0}, Lcom/android/settings/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;->finish()V
+    invoke-virtual {p0}, Lcom/android/settings_ext/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;->finish()V
 
     goto :goto_0
 
@@ -683,7 +683,7 @@
     .line 890
     new-instance v0, Landroid/security/MiuiLockPatternUtils;
 
-    invoke-virtual {p0}, Lcom/android/settings/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v1
 
@@ -696,7 +696,7 @@
     if-eqz v0, :cond_1
 
     .line 891
-    invoke-virtual {p0}, Lcom/android/settings/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
@@ -710,16 +710,16 @@
 
     .line 894
     :cond_1
-    iget-boolean v0, p0, Lcom/android/settings/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;->re:Z
+    iget-boolean v0, p0, Lcom/android/settings_ext/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;->re:Z
 
     if-eqz v0, :cond_0
 
     .line 895
-    iget-object v0, p0, Lcom/android/settings/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;->ra:Ljava/util/List;
+    iget-object v0, p0, Lcom/android/settings_ext/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;->ra:Ljava/util/List;
 
     if-eqz v0, :cond_2
 
-    iget-object v0, p0, Lcom/android/settings/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;->ra:Ljava/util/List;
+    iget-object v0, p0, Lcom/android/settings_ext/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;->ra:Ljava/util/List;
 
     invoke-interface {v0}, Ljava/util/List;->size()I
 
@@ -729,13 +729,13 @@
 
     .line 897
     :cond_2
-    invoke-direct {p0}, Lcom/android/settings/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;->fc()V
+    invoke-direct {p0}, Lcom/android/settings_ext/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;->fc()V
 
     goto :goto_0
 
     .line 899
     :cond_3
-    invoke-direct {p0}, Lcom/android/settings/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;->fh()V
+    invoke-direct {p0}, Lcom/android/settings_ext/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;->fh()V
 
     goto :goto_0
 
@@ -744,7 +744,7 @@
     if-eq p2, v0, :cond_0
 
     .line 906
-    invoke-virtual {p0}, Lcom/android/settings/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;->finish()V
+    invoke-virtual {p0}, Lcom/android/settings_ext/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;->finish()V
 
     goto :goto_0
 
@@ -753,10 +753,10 @@
     if-ne p2, v0, :cond_0
 
     .line 911
-    invoke-direct {p0}, Lcom/android/settings/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;->fk()V
+    invoke-direct {p0}, Lcom/android/settings_ext/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;->fk()V
 
     .line 912
-    invoke-direct {p0}, Lcom/android/settings/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;->fb()V
+    invoke-direct {p0}, Lcom/android/settings_ext/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;->fb()V
 
     goto :goto_0
 
@@ -765,7 +765,7 @@
     if-ne p2, v0, :cond_0
 
     .line 917
-    invoke-virtual {p0}, Lcom/android/settings/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
@@ -776,13 +776,13 @@
     if-eqz v0, :cond_4
 
     .line 918
-    invoke-direct {p0}, Lcom/android/settings/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;->fh()V
+    invoke-direct {p0}, Lcom/android/settings_ext/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;->fh()V
 
     goto/16 :goto_0
 
     .line 920
     :cond_4
-    invoke-direct {p0}, Lcom/android/settings/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;->fj()V
+    invoke-direct {p0}, Lcom/android/settings_ext/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;->fj()V
 
     goto/16 :goto_0
 
@@ -801,22 +801,22 @@
     .end sparse-switch
 .end method
 
-.method static synthetic c(Lcom/android/settings/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;)V
+.method static synthetic c(Lcom/android/settings_ext/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;)V
     .locals 0
 
     .prologue
     .line 221
-    invoke-direct {p0}, Lcom/android/settings/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;->ff()V
+    invoke-direct {p0}, Lcom/android/settings_ext/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;->ff()V
 
     return-void
 .end method
 
-.method static synthetic d(Lcom/android/settings/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;)Landroid/preference/PreferenceCategory;
+.method static synthetic d(Lcom/android/settings_ext/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;)Landroid/preference/PreferenceCategory;
     .locals 1
 
     .prologue
     .line 221
-    iget-object v0, p0, Lcom/android/settings/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;->qU:Landroid/preference/PreferenceCategory;
+    iget-object v0, p0, Lcom/android/settings_ext/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;->qU:Landroid/preference/PreferenceCategory;
 
     return-object v0
 .end method
@@ -826,39 +826,39 @@
 
     .prologue
     .line 554
-    new-instance v0, Lcom/android/settings/em;
+    new-instance v0, Lcom/android/settings_ext/em;
 
-    invoke-direct {v0, p0}, Lcom/android/settings/em;-><init>(Lcom/android/settings/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;)V
+    invoke-direct {v0, p0}, Lcom/android/settings_ext/em;-><init>(Lcom/android/settings_ext/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;)V
 
     .line 562
     const v1, 0x7f090e36
 
-    invoke-virtual {p0, v1}, Lcom/android/settings/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;->getString(I)Ljava/lang/String;
+    invoke-virtual {p0, v1}, Lcom/android/settings_ext/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;->getString(I)Ljava/lang/String;
 
     move-result-object v1
 
-    invoke-direct {p0, v0, v1}, Lcom/android/settings/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;->a(Landroid/content/DialogInterface$OnClickListener;Ljava/lang/String;)V
+    invoke-direct {p0, v0, v1}, Lcom/android/settings_ext/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;->a(Landroid/content/DialogInterface$OnClickListener;Ljava/lang/String;)V
 
     .line 563
     return-void
 .end method
 
-.method static synthetic e(Lcom/android/settings/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;)Landroid/preference/ListPreference;
+.method static synthetic e(Lcom/android/settings_ext/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;)Landroid/preference/ListPreference;
     .locals 1
 
     .prologue
     .line 221
-    iget-object v0, p0, Lcom/android/settings/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;->qT:Landroid/preference/ListPreference;
+    iget-object v0, p0, Lcom/android/settings_ext/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;->qT:Landroid/preference/ListPreference;
 
     return-object v0
 .end method
 
-.method static synthetic f(Lcom/android/settings/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;)V
+.method static synthetic f(Lcom/android/settings_ext/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;)V
     .locals 0
 
     .prologue
     .line 221
-    invoke-direct {p0}, Lcom/android/settings/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;->fj()V
+    invoke-direct {p0}, Lcom/android/settings_ext/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;->fj()V
 
     return-void
 .end method
@@ -870,7 +870,7 @@
     const/4 v1, 0x0
 
     .line 455
-    invoke-virtual {p0}, Lcom/android/settings/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {p0}, Lcom/android/settings_ext/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;->getResources()Landroid/content/res/Resources;
 
     move-result-object v0
 
@@ -881,7 +881,7 @@
     move-result-object v3
 
     .line 456
-    invoke-virtual {p0}, Lcom/android/settings/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {p0}, Lcom/android/settings_ext/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;->getResources()Landroid/content/res/Resources;
 
     move-result-object v0
 
@@ -909,14 +909,14 @@
 
     aget-object v6, v4, v0
 
-    invoke-direct {p0, v2, v5, v6}, Lcom/android/settings/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;->a(ZLjava/lang/String;Ljava/lang/String;)V
+    invoke-direct {p0, v2, v5, v6}, Lcom/android/settings_ext/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;->a(ZLjava/lang/String;Ljava/lang/String;)V
 
     .line 460
     aget-object v2, v3, v0
 
     aget-object v5, v4, v0
 
-    invoke-direct {p0, v2, v5}, Lcom/android/settings/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;->g(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-direct {p0, v2, v5}, Lcom/android/settings_ext/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;->g(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 458
     add-int/lit8 v0, v0, 0x1
@@ -939,48 +939,48 @@
 
     .prologue
     .line 582
-    iget-boolean v0, p0, Lcom/android/settings/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;->re:Z
+    iget-boolean v0, p0, Lcom/android/settings_ext/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;->re:Z
 
     if-nez v0, :cond_0
 
     .line 583
-    invoke-virtual {p0}, Lcom/android/settings/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
+    invoke-virtual {p0}, Lcom/android/settings_ext/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/android/settings/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;->qZ:Landroid/preference/PreferenceCategory;
+    iget-object v1, p0, Lcom/android/settings_ext/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;->qZ:Landroid/preference/PreferenceCategory;
 
     invoke-virtual {v0, v1}, Landroid/preference/PreferenceScreen;->removePreference(Landroid/preference/Preference;)Z
 
     .line 584
-    invoke-virtual {p0}, Lcom/android/settings/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
+    invoke-virtual {p0}, Lcom/android/settings_ext/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/android/settings/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;->qY:Landroid/preference/PreferenceCategory;
+    iget-object v1, p0, Lcom/android/settings_ext/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;->qY:Landroid/preference/PreferenceCategory;
 
     invoke-virtual {v0, v1}, Landroid/preference/PreferenceScreen;->removePreference(Landroid/preference/Preference;)Z
 
     .line 589
     :goto_0
-    invoke-direct {p0}, Lcom/android/settings/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;->fe()Z
+    invoke-direct {p0}, Lcom/android/settings_ext/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;->fe()Z
 
     move-result v0
 
     if-eqz v0, :cond_1
 
     .line 590
-    invoke-direct {p0}, Lcom/android/settings/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;->fa()V
+    invoke-direct {p0}, Lcom/android/settings_ext/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;->fa()V
 
     .line 591
-    iget-object v0, p0, Lcom/android/settings/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;->qV:Landroid/preference/Preference;
+    iget-object v0, p0, Lcom/android/settings_ext/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;->qV:Landroid/preference/Preference;
 
     const v1, 0x7f090cdc
 
     invoke-virtual {v0, v1}, Landroid/preference/Preference;->setTitle(I)V
 
     .line 592
-    iget-object v0, p0, Lcom/android/settings/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;->qW:Landroid/preference/Preference;
+    iget-object v0, p0, Lcom/android/settings_ext/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;->qW:Landroid/preference/Preference;
 
     const/4 v1, 0x1
 
@@ -992,49 +992,49 @@
 
     .line 586
     :cond_0
-    invoke-direct {p0}, Lcom/android/settings/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;->fd()V
+    invoke-direct {p0}, Lcom/android/settings_ext/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;->fd()V
 
     goto :goto_0
 
     .line 594
     :cond_1
-    iget-object v0, p0, Lcom/android/settings/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;->qV:Landroid/preference/Preference;
+    iget-object v0, p0, Lcom/android/settings_ext/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;->qV:Landroid/preference/Preference;
 
     const v1, 0x7f090e32
 
     invoke-virtual {v0, v1}, Landroid/preference/Preference;->setTitle(I)V
 
     .line 595
-    iget-object v0, p0, Lcom/android/settings/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;->qW:Landroid/preference/Preference;
+    iget-object v0, p0, Lcom/android/settings_ext/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;->qW:Landroid/preference/Preference;
 
     const/4 v1, 0x0
 
     invoke-virtual {v0, v1}, Landroid/preference/Preference;->setEnabled(Z)V
 
     .line 596
-    invoke-virtual {p0}, Lcom/android/settings/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
+    invoke-virtual {p0}, Lcom/android/settings_ext/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/android/settings/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;->qU:Landroid/preference/PreferenceCategory;
+    iget-object v1, p0, Lcom/android/settings_ext/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;->qU:Landroid/preference/PreferenceCategory;
 
     invoke-virtual {v0, v1}, Landroid/preference/PreferenceScreen;->removePreference(Landroid/preference/Preference;)Z
 
     .line 597
-    invoke-virtual {p0}, Lcom/android/settings/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
+    invoke-virtual {p0}, Lcom/android/settings_ext/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/android/settings/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;->qY:Landroid/preference/PreferenceCategory;
+    iget-object v1, p0, Lcom/android/settings_ext/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;->qY:Landroid/preference/PreferenceCategory;
 
     invoke-virtual {v0, v1}, Landroid/preference/PreferenceScreen;->removePreference(Landroid/preference/Preference;)Z
 
     .line 598
-    invoke-virtual {p0}, Lcom/android/settings/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
+    invoke-virtual {p0}, Lcom/android/settings_ext/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/android/settings/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;->qX:Landroid/preference/PreferenceCategory;
+    iget-object v1, p0, Lcom/android/settings_ext/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;->qX:Landroid/preference/PreferenceCategory;
 
     invoke-virtual {v0, v1}, Landroid/preference/PreferenceScreen;->removePreference(Landroid/preference/Preference;)Z
 
@@ -1046,11 +1046,11 @@
 
     .prologue
     .line 603
-    iget-object v0, p0, Lcom/android/settings/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;->ra:Ljava/util/List;
+    iget-object v0, p0, Lcom/android/settings_ext/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;->ra:Ljava/util/List;
 
     if-eqz v0, :cond_0
 
-    iget-object v0, p0, Lcom/android/settings/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;->ra:Ljava/util/List;
+    iget-object v0, p0, Lcom/android/settings_ext/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;->ra:Ljava/util/List;
 
     invoke-interface {v0}, Ljava/util/List;->size()I
 
@@ -1063,7 +1063,7 @@
     .line 604
     const v0, 0x7f090e48
 
-    invoke-direct {p0, v0}, Lcom/android/settings/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;->N(I)V
+    invoke-direct {p0, v0}, Lcom/android/settings_ext/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;->N(I)V
 
     .line 610
     :goto_0
@@ -1073,18 +1073,18 @@
     :cond_0
     new-instance v0, Landroid/content/Intent;
 
-    invoke-virtual {p0}, Lcom/android/settings/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v1
 
-    const-class v2, Lcom/android/settings/NewFingerprintInternalActivity;
+    const-class v2, Lcom/android/settings_ext/NewFingerprintInternalActivity;
 
     invoke-direct {v0, v1, v2}, Landroid/content/Intent;-><init>(Landroid/content/Context;Ljava/lang/Class;)V
 
     .line 609
     const/16 v1, 0x6b
 
-    invoke-virtual {p0, v0, v1}, Lcom/android/settings/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;->startActivityForResult(Landroid/content/Intent;I)V
+    invoke-virtual {p0, v0, v1}, Lcom/android/settings_ext/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;->startActivityForResult(Landroid/content/Intent;I)V
 
     goto :goto_0
 .end method
@@ -1094,37 +1094,37 @@
 
     .prologue
     .line 633
-    new-instance v0, Lcom/android/settings/cu;
+    new-instance v0, Lcom/android/settings_ext/cu;
 
-    invoke-virtual {p0}, Lcom/android/settings/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v1
 
-    invoke-direct {v0, v1}, Lcom/android/settings/cu;-><init>(Landroid/content/Context;)V
+    invoke-direct {v0, v1}, Lcom/android/settings_ext/cu;-><init>(Landroid/content/Context;)V
 
     .line 634
-    invoke-virtual {v0}, Lcom/android/settings/cu;->dE()Ljava/util/List;
+    invoke-virtual {v0}, Lcom/android/settings_ext/cu;->dE()Ljava/util/List;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;->ra:Ljava/util/List;
+    iput-object v0, p0, Lcom/android/settings_ext/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;->ra:Ljava/util/List;
 
     .line 636
-    iget-object v0, p0, Lcom/android/settings/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;->ra:Ljava/util/List;
+    iget-object v0, p0, Lcom/android/settings_ext/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;->ra:Ljava/util/List;
 
-    new-instance v1, Lcom/android/settings/en;
+    new-instance v1, Lcom/android/settings_ext/en;
 
-    invoke-direct {v1, p0}, Lcom/android/settings/en;-><init>(Lcom/android/settings/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;)V
+    invoke-direct {v1, p0}, Lcom/android/settings_ext/en;-><init>(Lcom/android/settings_ext/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;)V
 
     invoke-static {v0, v1}, Ljava/util/Collections;->sort(Ljava/util/List;Ljava/util/Comparator;)V
 
     .line 647
-    new-instance v2, Lcom/android/settings/eo;
+    new-instance v2, Lcom/android/settings_ext/eo;
 
-    invoke-direct {v2, p0}, Lcom/android/settings/eo;-><init>(Lcom/android/settings/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;)V
+    invoke-direct {v2, p0}, Lcom/android/settings_ext/eo;-><init>(Lcom/android/settings_ext/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;)V
 
     .line 663
-    iget-object v0, p0, Lcom/android/settings/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;->qZ:Landroid/preference/PreferenceCategory;
+    iget-object v0, p0, Lcom/android/settings_ext/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;->qZ:Landroid/preference/PreferenceCategory;
 
     invoke-virtual {v0}, Landroid/preference/PreferenceCategory;->removeAll()V
 
@@ -1134,7 +1134,7 @@
     move v1, v0
 
     :goto_0
-    iget-object v0, p0, Lcom/android/settings/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;->ra:Ljava/util/List;
+    iget-object v0, p0, Lcom/android/settings_ext/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;->ra:Ljava/util/List;
 
     invoke-interface {v0}, Ljava/util/List;->size()I
 
@@ -1143,7 +1143,7 @@
     if-ge v1, v0, :cond_1
 
     .line 665
-    iget-object v0, p0, Lcom/android/settings/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;->ra:Ljava/util/List;
+    iget-object v0, p0, Lcom/android/settings_ext/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;->ra:Ljava/util/List;
 
     invoke-interface {v0, v1}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
@@ -1154,7 +1154,7 @@
     .line 667
     new-instance v3, Landroid/preference/Preference;
 
-    invoke-virtual {p0}, Lcom/android/settings/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v4
 
@@ -1183,7 +1183,7 @@
     move-result-object v4
 
     .line 671
-    invoke-virtual {p0}, Lcom/android/settings/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/settings_ext/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v0
 
@@ -1205,7 +1205,7 @@
 
     const v5, 0x7f090e38
 
-    invoke-virtual {p0, v5}, Lcom/android/settings/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;->getString(I)Ljava/lang/String;
+    invoke-virtual {p0, v5}, Lcom/android/settings_ext/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;->getString(I)Ljava/lang/String;
 
     move-result-object v5
 
@@ -1224,7 +1224,7 @@
     move-result-object v0
 
     .line 674
-    invoke-virtual {p0}, Lcom/android/settings/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/settings_ext/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v5
 
@@ -1238,7 +1238,7 @@
     invoke-virtual {v3, v2}, Landroid/preference/Preference;->setOnPreferenceClickListener(Landroid/preference/Preference$OnPreferenceClickListener;)V
 
     .line 679
-    iget-object v0, p0, Lcom/android/settings/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;->qZ:Landroid/preference/PreferenceCategory;
+    iget-object v0, p0, Lcom/android/settings_ext/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;->qZ:Landroid/preference/PreferenceCategory;
 
     invoke-virtual {v0, v3}, Landroid/preference/PreferenceCategory;->addPreference(Landroid/preference/Preference;)Z
 
@@ -1253,7 +1253,7 @@
     :cond_1
     new-instance v0, Landroid/preference/Preference;
 
-    invoke-virtual {p0}, Lcom/android/settings/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v1
 
@@ -1273,7 +1273,7 @@
     invoke-virtual {v0, v2}, Landroid/preference/Preference;->setOnPreferenceClickListener(Landroid/preference/Preference$OnPreferenceClickListener;)V
 
     .line 686
-    iget-object v1, p0, Lcom/android/settings/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;->qZ:Landroid/preference/PreferenceCategory;
+    iget-object v1, p0, Lcom/android/settings_ext/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;->qZ:Landroid/preference/PreferenceCategory;
 
     invoke-virtual {v1, v0}, Landroid/preference/PreferenceCategory;->addPreference(Landroid/preference/Preference;)Z
 
@@ -1286,7 +1286,7 @@
 
     .prologue
     .line 708
-    invoke-virtual {p0}, Lcom/android/settings/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
@@ -1308,21 +1308,21 @@
     const/4 v4, 0x0
 
     .line 729
-    iget-object v0, p0, Lcom/android/settings/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;->qT:Landroid/preference/ListPreference;
+    iget-object v0, p0, Lcom/android/settings_ext/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;->qT:Landroid/preference/ListPreference;
 
     const v1, 0x7f0b00c7
 
     invoke-virtual {v0, v1}, Landroid/preference/ListPreference;->setEntries(I)V
 
     .line 730
-    iget-object v0, p0, Lcom/android/settings/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;->qT:Landroid/preference/ListPreference;
+    iget-object v0, p0, Lcom/android/settings_ext/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;->qT:Landroid/preference/ListPreference;
 
     const v1, 0x7f0b00c6
 
     invoke-virtual {v0, v1}, Landroid/preference/ListPreference;->setEntryValues(I)V
 
     .line 732
-    invoke-virtual {p0}, Lcom/android/settings/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/settings_ext/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v0
 
@@ -1336,11 +1336,11 @@
 
     if-ne v0, v1, :cond_0
 
-    iget-object v0, p0, Lcom/android/settings/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;->ra:Ljava/util/List;
+    iget-object v0, p0, Lcom/android/settings_ext/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;->ra:Ljava/util/List;
 
     if-eqz v0, :cond_0
 
-    iget-object v0, p0, Lcom/android/settings/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;->ra:Ljava/util/List;
+    iget-object v0, p0, Lcom/android/settings_ext/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;->ra:Ljava/util/List;
 
     invoke-interface {v0}, Ljava/util/List;->size()I
 
@@ -1349,7 +1349,7 @@
     if-lez v0, :cond_0
 
     .line 734
-    invoke-virtual {p0}, Lcom/android/settings/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
@@ -1362,21 +1362,21 @@
     invoke-static {v0, v1, v6, v7}, Landroid/provider/Settings$Secure;->putLong(Landroid/content/ContentResolver;Ljava/lang/String;J)Z
 
     .line 736
-    iget-object v0, p0, Lcom/android/settings/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;->qT:Landroid/preference/ListPreference;
+    iget-object v0, p0, Lcom/android/settings_ext/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;->qT:Landroid/preference/ListPreference;
 
     invoke-virtual {v0}, Landroid/preference/ListPreference;->getEntries()[Ljava/lang/CharSequence;
 
     move-result-object v0
 
     .line 737
-    iget-object v1, p0, Lcom/android/settings/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;->qT:Landroid/preference/ListPreference;
+    iget-object v1, p0, Lcom/android/settings_ext/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;->qT:Landroid/preference/ListPreference;
 
     invoke-virtual {v1}, Landroid/preference/ListPreference;->getEntryValues()[Ljava/lang/CharSequence;
 
     move-result-object v1
 
     .line 738
-    iget-object v2, p0, Lcom/android/settings/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;->qT:Landroid/preference/ListPreference;
+    iget-object v2, p0, Lcom/android/settings_ext/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;->qT:Landroid/preference/ListPreference;
 
     new-array v3, v5, [Ljava/lang/CharSequence;
 
@@ -1387,7 +1387,7 @@
     invoke-virtual {v2, v3}, Landroid/preference/ListPreference;->setEntries([Ljava/lang/CharSequence;)V
 
     .line 739
-    iget-object v0, p0, Lcom/android/settings/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;->qT:Landroid/preference/ListPreference;
+    iget-object v0, p0, Lcom/android/settings_ext/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;->qT:Landroid/preference/ListPreference;
 
     new-array v2, v5, [Ljava/lang/CharSequence;
 
@@ -1399,7 +1399,7 @@
 
     .line 742
     :cond_0
-    invoke-virtual {p0}, Lcom/android/settings/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/settings_ext/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v0
 
@@ -1410,7 +1410,7 @@
     move-result-wide v0
 
     .line 743
-    iget-object v2, p0, Lcom/android/settings/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;->qT:Landroid/preference/ListPreference;
+    iget-object v2, p0, Lcom/android/settings_ext/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;->qT:Landroid/preference/ListPreference;
 
     invoke-static {v0, v1}, Ljava/lang/String;->valueOf(J)Ljava/lang/String;
 
@@ -1419,16 +1419,16 @@
     invoke-virtual {v2, v3}, Landroid/preference/ListPreference;->setValue(Ljava/lang/String;)V
 
     .line 744
-    iget-object v2, p0, Lcom/android/settings/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;->qT:Landroid/preference/ListPreference;
+    iget-object v2, p0, Lcom/android/settings_ext/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;->qT:Landroid/preference/ListPreference;
 
-    new-instance v3, Lcom/android/settings/ep;
+    new-instance v3, Lcom/android/settings_ext/ep;
 
-    invoke-direct {v3, p0}, Lcom/android/settings/ep;-><init>(Lcom/android/settings/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;)V
+    invoke-direct {v3, p0}, Lcom/android/settings_ext/ep;-><init>(Lcom/android/settings_ext/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;)V
 
     invoke-virtual {v2, v3}, Landroid/preference/ListPreference;->setOnPreferenceChangeListener(Landroid/preference/Preference$OnPreferenceChangeListener;)V
 
     .line 761
-    invoke-direct {p0, v0, v1}, Lcom/android/settings/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;->i(J)V
+    invoke-direct {p0, v0, v1}, Lcom/android/settings_ext/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;->i(J)V
 
     .line 762
     return-void
@@ -1439,7 +1439,7 @@
 
     .prologue
     .line 928
-    invoke-virtual {p0}, Lcom/android/settings/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/settings_ext/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v0
 
@@ -1458,7 +1458,7 @@
 
     .prologue
     .line 932
-    invoke-direct {p0}, Lcom/android/settings/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;->fe()Z
+    invoke-direct {p0}, Lcom/android/settings_ext/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;->fe()Z
 
     move-result v0
 
@@ -1467,7 +1467,7 @@
     .line 933
     const/16 v0, 0x65
 
-    invoke-direct {p0, v0}, Lcom/android/settings/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;->M(I)V
+    invoke-direct {p0, v0}, Lcom/android/settings_ext/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;->M(I)V
 
     .line 963
     :goto_0
@@ -1475,11 +1475,11 @@
 
     .line 935
     :cond_0
-    iget-object v0, p0, Lcom/android/settings/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;->ra:Ljava/util/List;
+    iget-object v0, p0, Lcom/android/settings_ext/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;->ra:Ljava/util/List;
 
     if-eqz v0, :cond_1
 
-    iget-object v0, p0, Lcom/android/settings/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;->ra:Ljava/util/List;
+    iget-object v0, p0, Lcom/android/settings_ext/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;->ra:Ljava/util/List;
 
     invoke-interface {v0}, Ljava/util/List;->size()I
 
@@ -1489,20 +1489,20 @@
 
     .line 936
     :cond_1
-    invoke-direct {p0}, Lcom/android/settings/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;->fj()V
+    invoke-direct {p0}, Lcom/android/settings_ext/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;->fj()V
 
     goto :goto_0
 
     .line 940
     :cond_2
-    new-instance v0, Lcom/android/settings/ei;
+    new-instance v0, Lcom/android/settings_ext/ei;
 
-    invoke-direct {v0, p0}, Lcom/android/settings/ei;-><init>(Lcom/android/settings/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;)V
+    invoke-direct {v0, p0}, Lcom/android/settings_ext/ei;-><init>(Lcom/android/settings_ext/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;)V
 
     .line 956
     new-instance v1, Landroid/app/AlertDialog$Builder;
 
-    invoke-virtual {p0}, Lcom/android/settings/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v2
 
@@ -1561,7 +1561,7 @@
 
     const/16 v2, 0x6a
 
-    invoke-virtual {p0, p0, v1, v2, v0}, Lcom/android/settings/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;->a(Landroid/app/Fragment;Ljava/lang/String;ILandroid/os/Bundle;)Z
+    invoke-virtual {p0, p0, v1, v2, v0}, Lcom/android/settings_ext/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;->a(Landroid/app/Fragment;Ljava/lang/String;ILandroid/os/Bundle;)Z
 
     .line 969
     return-void
@@ -1574,7 +1574,7 @@
     const/4 v3, 0x0
 
     .line 990
-    invoke-virtual {p0}, Lcom/android/settings/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/settings_ext/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v0
 
@@ -1583,7 +1583,7 @@
     invoke-static {v0, v1, v3}, Landroid/provider/Settings$Secure;->putInt(Landroid/content/ContentResolver;Ljava/lang/String;I)Z
 
     .line 992
-    iget-object v0, p0, Lcom/android/settings/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;->b:Landroid/security/ChooseLockSettingsHelper;
+    iget-object v0, p0, Lcom/android/settings_ext/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;->b:Landroid/security/ChooseLockSettingsHelper;
 
     invoke-virtual {v0}, Landroid/security/ChooseLockSettingsHelper;->utils()Landroid/security/MiuiLockPatternUtils;
 
@@ -1592,7 +1592,7 @@
     invoke-virtual {v0, v3}, Landroid/security/MiuiLockPatternUtils;->clearLock(Z)V
 
     .line 993
-    iget-object v0, p0, Lcom/android/settings/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;->b:Landroid/security/ChooseLockSettingsHelper;
+    iget-object v0, p0, Lcom/android/settings_ext/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;->b:Landroid/security/ChooseLockSettingsHelper;
 
     invoke-virtual {v0}, Landroid/security/ChooseLockSettingsHelper;->utils()Landroid/security/MiuiLockPatternUtils;
 
@@ -1603,7 +1603,7 @@
     .line 995
     new-instance v0, Landroid/security/MiuiLockPatternUtils;
 
-    invoke-virtual {p0}, Lcom/android/settings/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v1
 
@@ -1616,7 +1616,7 @@
     if-eqz v0, :cond_0
 
     .line 996
-    invoke-virtual {p0}, Lcom/android/settings/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
@@ -1630,7 +1630,7 @@
 
     .line 998
     :cond_0
-    invoke-virtual {p0}, Lcom/android/settings/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
@@ -1647,7 +1647,7 @@
     if-gtz v0, :cond_1
 
     .line 1000
-    iget-object v0, p0, Lcom/android/settings/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;->cJ:Landroid/security/KeyStore;
+    iget-object v0, p0, Lcom/android/settings_ext/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;->cJ:Landroid/security/KeyStore;
 
     const-string v1, ""
 
@@ -1669,7 +1669,7 @@
     const/4 v2, 0x0
 
     .line 465
-    iget-boolean v0, p0, Lcom/android/settings/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;->re:Z
+    iget-boolean v0, p0, Lcom/android/settings_ext/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;->re:Z
 
     if-nez v0, :cond_0
 
@@ -1681,7 +1681,7 @@
     :cond_0
     new-instance v4, Landroid/preference/CheckBoxPreference;
 
-    invoke-virtual {p0}, Lcom/android/settings/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
@@ -1694,14 +1694,14 @@
     invoke-virtual {v4, p2}, Landroid/preference/CheckBoxPreference;->setTitle(Ljava/lang/CharSequence;)V
 
     .line 472
-    new-instance v0, Lcom/android/settings/ej;
+    new-instance v0, Lcom/android/settings_ext/ej;
 
-    invoke-direct {v0, p0}, Lcom/android/settings/ej;-><init>(Lcom/android/settings/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;)V
+    invoke-direct {v0, p0}, Lcom/android/settings_ext/ej;-><init>(Lcom/android/settings_ext/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;)V
 
     invoke-virtual {v4, v0}, Landroid/preference/CheckBoxPreference;->setOnPreferenceClickListener(Landroid/preference/Preference$OnPreferenceClickListener;)V
 
     .line 486
-    iget-object v0, p0, Lcom/android/settings/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;->qY:Landroid/preference/PreferenceCategory;
+    iget-object v0, p0, Lcom/android/settings_ext/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;->qY:Landroid/preference/PreferenceCategory;
 
     invoke-virtual {v0, v4}, Landroid/preference/PreferenceCategory;->addPreference(Landroid/preference/Preference;)Z
 
@@ -1709,7 +1709,7 @@
 
     .line 489
     :goto_1
-    iget-object v0, p0, Lcom/android/settings/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;->qU:Landroid/preference/PreferenceCategory;
+    iget-object v0, p0, Lcom/android/settings_ext/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;->qU:Landroid/preference/PreferenceCategory;
 
     invoke-virtual {v0}, Landroid/preference/PreferenceCategory;->getPreferenceCount()I
 
@@ -1718,7 +1718,7 @@
     if-ge v1, v0, :cond_5
 
     .line 490
-    iget-object v0, p0, Lcom/android/settings/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;->qU:Landroid/preference/PreferenceCategory;
+    iget-object v0, p0, Lcom/android/settings_ext/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;->qU:Landroid/preference/PreferenceCategory;
 
     invoke-virtual {v0, v1}, Landroid/preference/PreferenceCategory;->getPreference(I)Landroid/preference/Preference;
 
@@ -1744,7 +1744,7 @@
 
     .line 497
     :goto_2
-    invoke-virtual {p0}, Lcom/android/settings/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/settings_ext/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v1
 
@@ -1755,11 +1755,11 @@
     .line 498
     if-ne v1, v6, :cond_2
 
-    iget-object v5, p0, Lcom/android/settings/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;->ra:Ljava/util/List;
+    iget-object v5, p0, Lcom/android/settings_ext/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;->ra:Ljava/util/List;
 
     if-eqz v5, :cond_1
 
-    iget-object v5, p0, Lcom/android/settings/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;->ra:Ljava/util/List;
+    iget-object v5, p0, Lcom/android/settings_ext/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;->ra:Ljava/util/List;
 
     invoke-interface {v5}, Ljava/util/List;->size()I
 
@@ -1769,7 +1769,7 @@
 
     .line 500
     :cond_1
-    invoke-virtual {p0}, Lcom/android/settings/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/settings_ext/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v1
 
@@ -1829,7 +1829,7 @@
     invoke-virtual {v4, v0, p2}, Landroid/os/Bundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 628
-    const-class v0, Lcom/android/settings/MiuiFingerprintDetailFragment;
+    const-class v0, Lcom/android/settings_ext/MiuiFingerprintDetailFragment;
 
     invoke-virtual {v0}, Ljava/lang/Class;->getName()Ljava/lang/String;
 
@@ -1843,7 +1843,7 @@
 
     move-object v1, p0
 
-    invoke-virtual/range {v0 .. v5}, Lcom/android/settings/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;->a(Landroid/app/Fragment;Ljava/lang/String;ILandroid/os/Bundle;I)Z
+    invoke-virtual/range {v0 .. v5}, Lcom/android/settings_ext/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;->a(Landroid/app/Fragment;Ljava/lang/String;ILandroid/os/Bundle;I)Z
 
     .line 630
     return-void
@@ -1856,7 +1856,7 @@
     .line 765
     const v0, 0x7f090e12
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;->getString(I)Ljava/lang/String;
+    invoke-virtual {p0, v0}, Lcom/android/settings_ext/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;->getString(I)Ljava/lang/String;
 
     move-result-object v0
 
@@ -1876,21 +1876,21 @@
 
     const/4 v2, 0x0
 
-    iget-object v3, p0, Lcom/android/settings/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;->qT:Landroid/preference/ListPreference;
+    iget-object v3, p0, Lcom/android/settings_ext/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;->qT:Landroid/preference/ListPreference;
 
-    invoke-direct {p0, v3, p1, p2}, Lcom/android/settings/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;->a(Landroid/preference/ListPreference;J)Ljava/lang/CharSequence;
+    invoke-direct {p0, v3, p1, p2}, Lcom/android/settings_ext/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;->a(Landroid/preference/ListPreference;J)Ljava/lang/CharSequence;
 
     move-result-object v3
 
     aput-object v3, v1, v2
 
-    invoke-virtual {p0, v0, v1}, Lcom/android/settings/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;->getString(I[Ljava/lang/Object;)Ljava/lang/String;
+    invoke-virtual {p0, v0, v1}, Lcom/android/settings_ext/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;->getString(I[Ljava/lang/Object;)Ljava/lang/String;
 
     move-result-object v0
 
     .line 771
     :cond_0
-    iget-object v1, p0, Lcom/android/settings/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;->qT:Landroid/preference/ListPreference;
+    iget-object v1, p0, Lcom/android/settings_ext/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;->qT:Landroid/preference/ListPreference;
 
     invoke-virtual {v1, v0}, Landroid/preference/ListPreference;->setSummary(Ljava/lang/CharSequence;)V
 
@@ -1926,7 +1926,7 @@
     if-eqz v2, :cond_1
 
     :goto_1
-    invoke-direct {p0, p1, v0}, Lcom/android/settings/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;->c(II)V
+    invoke-direct {p0, p1, v0}, Lcom/android/settings_ext/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;->c(II)V
 
     .line 868
     return-void
@@ -1961,7 +1961,7 @@
     invoke-virtual {v0, v1, v2}, Landroid/content/Intent;->setClassName(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
 
     .line 855
-    invoke-virtual {p0, v0}, Lcom/android/settings/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;->startActivity(Landroid/content/Intent;)V
+    invoke-virtual {p0, v0}, Lcom/android/settings_ext/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;->startActivity(Landroid/content/Intent;)V
 
     .line 856
     return-void
@@ -1972,10 +1972,10 @@
 
     .prologue
     .line 860
-    invoke-super {p0, p1, p2, p3}, Lcom/android/settings/SettingsPreferenceFragment;->onActivityResult(IILandroid/content/Intent;)V
+    invoke-super {p0, p1, p2, p3}, Lcom/android/settings_ext/SettingsPreferenceFragment;->onActivityResult(IILandroid/content/Intent;)V
 
     .line 861
-    invoke-direct {p0, p1, p2}, Lcom/android/settings/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;->c(II)V
+    invoke-direct {p0, p1, p2}, Lcom/android/settings_ext/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;->c(II)V
 
     .line 862
     return-void
@@ -1986,44 +1986,44 @@
 
     .prologue
     .line 715
-    invoke-super {p0, p1}, Lcom/android/settings/SettingsPreferenceFragment;->onCreate(Landroid/os/Bundle;)V
+    invoke-super {p0, p1}, Lcom/android/settings_ext/SettingsPreferenceFragment;->onCreate(Landroid/os/Bundle;)V
 
     .line 717
     new-instance v0, Landroid/security/ChooseLockSettingsHelper;
 
-    invoke-virtual {p0}, Lcom/android/settings/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v1
 
     invoke-direct {v0, v1, p0}, Landroid/security/ChooseLockSettingsHelper;-><init>(Landroid/app/Activity;Landroid/app/Fragment;)V
 
-    iput-object v0, p0, Lcom/android/settings/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;->b:Landroid/security/ChooseLockSettingsHelper;
+    iput-object v0, p0, Lcom/android/settings_ext/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;->b:Landroid/security/ChooseLockSettingsHelper;
 
     .line 718
     invoke-static {}, Landroid/security/KeyStore;->getInstance()Landroid/security/KeyStore;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;->cJ:Landroid/security/KeyStore;
+    iput-object v0, p0, Lcom/android/settings_ext/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;->cJ:Landroid/security/KeyStore;
 
     .line 720
-    new-instance v0, Lcom/android/settings/cu;
+    new-instance v0, Lcom/android/settings_ext/cu;
 
-    invoke-virtual {p0}, Lcom/android/settings/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v1
 
-    invoke-direct {v0, v1}, Lcom/android/settings/cu;-><init>(Landroid/content/Context;)V
+    invoke-direct {v0, v1}, Lcom/android/settings_ext/cu;-><init>(Landroid/content/Context;)V
 
     .line 721
-    invoke-virtual {v0}, Lcom/android/settings/cu;->dD()Z
+    invoke-virtual {v0}, Lcom/android/settings_ext/cu;->dD()Z
 
     move-result v0
 
-    iput-boolean v0, p0, Lcom/android/settings/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;->re:Z
+    iput-boolean v0, p0, Lcom/android/settings_ext/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;->re:Z
 
     .line 723
-    invoke-direct {p0}, Lcom/android/settings/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;->fe()Z
+    invoke-direct {p0}, Lcom/android/settings_ext/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;->fe()Z
 
     move-result v0
 
@@ -2034,7 +2034,7 @@
     .line 724
     const/16 v0, 0x64
 
-    invoke-direct {p0, v0}, Lcom/android/settings/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;->M(I)V
+    invoke-direct {p0, v0}, Lcom/android/settings_ext/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;->M(I)V
 
     .line 726
     :cond_0
@@ -2066,7 +2066,7 @@
     if-eqz v2, :cond_1
 
     .line 793
-    invoke-direct {p0}, Lcom/android/settings/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;->fi()V
+    invoke-direct {p0}, Lcom/android/settings_ext/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;->fi()V
 
     .line 849
     :cond_0
@@ -2084,7 +2084,7 @@
     if-eqz v2, :cond_2
 
     .line 795
-    iget-object v1, p0, Lcom/android/settings/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;->b:Landroid/security/ChooseLockSettingsHelper;
+    iget-object v1, p0, Lcom/android/settings_ext/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;->b:Landroid/security/ChooseLockSettingsHelper;
 
     const/16 v2, 0x67
 
@@ -2095,7 +2095,7 @@
     if-nez v1, :cond_0
 
     .line 797
-    invoke-virtual {p0}, Lcom/android/settings/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;->fg()V
+    invoke-virtual {p0}, Lcom/android/settings_ext/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;->fg()V
 
     goto :goto_0
 
@@ -2110,7 +2110,7 @@
     if-eqz v2, :cond_3
 
     .line 800
-    iget-object v1, p0, Lcom/android/settings/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;->b:Landroid/security/ChooseLockSettingsHelper;
+    iget-object v1, p0, Lcom/android/settings_ext/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;->b:Landroid/security/ChooseLockSettingsHelper;
 
     invoke-virtual {v1}, Landroid/security/ChooseLockSettingsHelper;->utils()Landroid/security/MiuiLockPatternUtils;
 
@@ -2147,14 +2147,14 @@
     if-eqz v1, :cond_4
 
     .line 804
-    new-instance v1, Lcom/android/settings/eq;
+    new-instance v1, Lcom/android/settings_ext/eq;
 
-    invoke-direct {v1, p0, p2}, Lcom/android/settings/eq;-><init>(Lcom/android/settings/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;Landroid/preference/CheckBoxPreference;)V
+    invoke-direct {v1, p0, p2}, Lcom/android/settings_ext/eq;-><init>(Lcom/android/settings_ext/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;Landroid/preference/CheckBoxPreference;)V
 
     .line 817
     new-instance v2, Landroid/app/AlertDialog$Builder;
 
-    invoke-virtual {p0}, Lcom/android/settings/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v3
 
@@ -2197,7 +2197,7 @@
 
     .line 826
     :cond_4
-    invoke-virtual {p0}, Lcom/android/settings/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v1
 
@@ -2240,7 +2240,7 @@
     if-eqz v1, :cond_6
 
     .line 836
-    iget-object v1, p0, Lcom/android/settings/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;->b:Landroid/security/ChooseLockSettingsHelper;
+    iget-object v1, p0, Lcom/android/settings_ext/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;->b:Landroid/security/ChooseLockSettingsHelper;
 
     invoke-virtual {v1}, Landroid/security/ChooseLockSettingsHelper;->utils()Landroid/security/MiuiLockPatternUtils;
 
@@ -2252,12 +2252,12 @@
 
     .line 838
     :cond_6
-    iget-object v1, p0, Lcom/android/settings/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;->qQ:Landroid/preference/CheckBoxPreference;
+    iget-object v1, p0, Lcom/android/settings_ext/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;->qQ:Landroid/preference/CheckBoxPreference;
 
     invoke-virtual {v1, v0}, Landroid/preference/CheckBoxPreference;->setChecked(Z)V
 
     .line 839
-    iget-object v1, p0, Lcom/android/settings/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;->b:Landroid/security/ChooseLockSettingsHelper;
+    iget-object v1, p0, Lcom/android/settings_ext/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;->b:Landroid/security/ChooseLockSettingsHelper;
 
     const/16 v2, 0x68
 
@@ -2268,7 +2268,7 @@
     if-nez v1, :cond_0
 
     .line 841
-    iget-object v1, p0, Lcom/android/settings/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;->b:Landroid/security/ChooseLockSettingsHelper;
+    iget-object v1, p0, Lcom/android/settings_ext/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;->b:Landroid/security/ChooseLockSettingsHelper;
 
     invoke-virtual {v1}, Landroid/security/ChooseLockSettingsHelper;->utils()Landroid/security/MiuiLockPatternUtils;
 
@@ -2277,7 +2277,7 @@
     invoke-virtual {v1, v4}, Landroid/security/MiuiLockPatternUtils;->setBiometricWeakLivelinessEnabled(Z)V
 
     .line 842
-    iget-object v1, p0, Lcom/android/settings/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;->qQ:Landroid/preference/CheckBoxPreference;
+    iget-object v1, p0, Lcom/android/settings_ext/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;->qQ:Landroid/preference/CheckBoxPreference;
 
     invoke-virtual {v1, v4}, Landroid/preference/CheckBoxPreference;->setChecked(Z)V
 
@@ -2285,7 +2285,7 @@
 
     .line 846
     :cond_7
-    invoke-super {p0, p1, p2}, Lcom/android/settings/SettingsPreferenceFragment;->onPreferenceTreeClick(Landroid/preference/PreferenceScreen;Landroid/preference/Preference;)Z
+    invoke-super {p0, p1, p2}, Lcom/android/settings_ext/SettingsPreferenceFragment;->onPreferenceTreeClick(Landroid/preference/PreferenceScreen;Landroid/preference/Preference;)Z
 
     move-result v0
 
@@ -2305,10 +2305,10 @@
     const/4 v3, -0x1
 
     .line 321
-    invoke-super {p0}, Lcom/android/settings/SettingsPreferenceFragment;->onResume()V
+    invoke-super {p0}, Lcom/android/settings_ext/SettingsPreferenceFragment;->onResume()V
 
     .line 323
-    invoke-virtual {p0}, Lcom/android/settings/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
+    invoke-virtual {p0}, Lcom/android/settings_ext/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
 
     move-result-object v0
 
@@ -2322,61 +2322,61 @@
     :cond_0
     const v0, 0x7f06007d
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;->addPreferencesFromResource(I)V
+    invoke-virtual {p0, v0}, Lcom/android/settings_ext/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;->addPreferencesFromResource(I)V
 
     .line 330
     const-string v0, "visiblepattern"
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v0}, Lcom/android/settings_ext/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v0
 
     check-cast v0, Landroid/preference/CheckBoxPreference;
 
-    iput-object v0, p0, Lcom/android/settings/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;->qR:Landroid/preference/CheckBoxPreference;
+    iput-object v0, p0, Lcom/android/settings_ext/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;->qR:Landroid/preference/CheckBoxPreference;
 
     .line 331
     const-string v0, "biometric_weak_liveliness"
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v0}, Lcom/android/settings_ext/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v0
 
     check-cast v0, Landroid/preference/CheckBoxPreference;
 
-    iput-object v0, p0, Lcom/android/settings/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;->qQ:Landroid/preference/CheckBoxPreference;
+    iput-object v0, p0, Lcom/android/settings_ext/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;->qQ:Landroid/preference/CheckBoxPreference;
 
     .line 332
     const-string v0, "turn_off_security_lock"
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v0}, Lcom/android/settings_ext/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;->qV:Landroid/preference/Preference;
+    iput-object v0, p0, Lcom/android/settings_ext/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;->qV:Landroid/preference/Preference;
 
     .line 333
     const-string v0, "change_password"
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v0}, Lcom/android/settings_ext/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;->qW:Landroid/preference/Preference;
+    iput-object v0, p0, Lcom/android/settings_ext/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;->qW:Landroid/preference/Preference;
 
     .line 334
     const-string v0, "lock_screen_common_options"
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v0}, Lcom/android/settings_ext/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v0
 
     check-cast v0, Landroid/preference/PreferenceCategory;
 
-    iput-object v0, p0, Lcom/android/settings/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;->qX:Landroid/preference/PreferenceCategory;
+    iput-object v0, p0, Lcom/android/settings_ext/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;->qX:Landroid/preference/PreferenceCategory;
 
     .line 338
-    iget-object v0, p0, Lcom/android/settings/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;->b:Landroid/security/ChooseLockSettingsHelper;
+    iget-object v0, p0, Lcom/android/settings_ext/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;->b:Landroid/security/ChooseLockSettingsHelper;
 
     invoke-virtual {v0}, Landroid/security/ChooseLockSettingsHelper;->utils()Landroid/security/MiuiLockPatternUtils;
 
@@ -2398,11 +2398,11 @@
     if-eq v5, v3, :cond_1
 
     .line 361
-    invoke-virtual {p0}, Lcom/android/settings/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;->getPreferenceManager()Landroid/preference/PreferenceManager;
+    invoke-virtual {p0}, Lcom/android/settings_ext/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;->getPreferenceManager()Landroid/preference/PreferenceManager;
 
     move-result-object v0
 
-    invoke-virtual {p0}, Lcom/android/settings/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v7
 
@@ -2429,7 +2429,7 @@
     invoke-virtual {v2, v7}, Landroid/preference/PreferenceScreen;->removePreference(Landroid/preference/Preference;)Z
 
     .line 367
-    iget-object v8, p0, Lcom/android/settings/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;->qX:Landroid/preference/PreferenceCategory;
+    iget-object v8, p0, Lcom/android/settings_ext/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;->qX:Landroid/preference/PreferenceCategory;
 
     invoke-virtual {v8, v7}, Landroid/preference/PreferenceCategory;->addPreference(Landroid/preference/Preference;)Z
 
@@ -2491,7 +2491,7 @@
     :cond_1
     if-ne v5, v6, :cond_2
 
-    iget-object v0, p0, Lcom/android/settings/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;->b:Landroid/security/ChooseLockSettingsHelper;
+    iget-object v0, p0, Lcom/android/settings_ext/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;->b:Landroid/security/ChooseLockSettingsHelper;
 
     invoke-virtual {v0}, Landroid/security/ChooseLockSettingsHelper;->utils()Landroid/security/MiuiLockPatternUtils;
 
@@ -2506,18 +2506,18 @@
     if-eq v0, v2, :cond_2
 
     .line 375
-    iget-object v0, p0, Lcom/android/settings/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;->qX:Landroid/preference/PreferenceCategory;
+    iget-object v0, p0, Lcom/android/settings_ext/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;->qX:Landroid/preference/PreferenceCategory;
 
     if-eqz v0, :cond_2
 
-    iget-object v0, p0, Lcom/android/settings/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;->qR:Landroid/preference/CheckBoxPreference;
+    iget-object v0, p0, Lcom/android/settings_ext/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;->qR:Landroid/preference/CheckBoxPreference;
 
     if-eqz v0, :cond_2
 
     .line 376
-    iget-object v0, p0, Lcom/android/settings/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;->qX:Landroid/preference/PreferenceCategory;
+    iget-object v0, p0, Lcom/android/settings_ext/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;->qX:Landroid/preference/PreferenceCategory;
 
-    iget-object v2, p0, Lcom/android/settings/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;->qR:Landroid/preference/CheckBoxPreference;
+    iget-object v2, p0, Lcom/android/settings_ext/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;->qR:Landroid/preference/CheckBoxPreference;
 
     invoke-virtual {v0, v2}, Landroid/preference/PreferenceCategory;->removePreference(Landroid/preference/Preference;)Z
 
@@ -2525,18 +2525,18 @@
     :cond_2
     const-string v0, "unlock_tactile_feedback"
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v0}, Lcom/android/settings_ext/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v0
 
     check-cast v0, Landroid/preference/CheckBoxPreference;
 
-    iput-object v0, p0, Lcom/android/settings/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;->qS:Landroid/preference/CheckBoxPreference;
+    iput-object v0, p0, Lcom/android/settings_ext/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;->qS:Landroid/preference/CheckBoxPreference;
 
     .line 381
     const-string v0, "vibrator"
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
+    invoke-virtual {p0, v0}, Lcom/android/settings_ext/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object v0
 
@@ -2549,18 +2549,18 @@
     if-nez v0, :cond_3
 
     .line 382
-    iget-object v0, p0, Lcom/android/settings/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;->qX:Landroid/preference/PreferenceCategory;
+    iget-object v0, p0, Lcom/android/settings_ext/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;->qX:Landroid/preference/PreferenceCategory;
 
     if-eqz v0, :cond_3
 
-    iget-object v0, p0, Lcom/android/settings/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;->qS:Landroid/preference/CheckBoxPreference;
+    iget-object v0, p0, Lcom/android/settings_ext/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;->qS:Landroid/preference/CheckBoxPreference;
 
     if-eqz v0, :cond_3
 
     .line 383
-    iget-object v0, p0, Lcom/android/settings/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;->qX:Landroid/preference/PreferenceCategory;
+    iget-object v0, p0, Lcom/android/settings_ext/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;->qX:Landroid/preference/PreferenceCategory;
 
-    iget-object v2, p0, Lcom/android/settings/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;->qS:Landroid/preference/CheckBoxPreference;
+    iget-object v2, p0, Lcom/android/settings_ext/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;->qS:Landroid/preference/CheckBoxPreference;
 
     invoke-virtual {v0, v2}, Landroid/preference/PreferenceCategory;->removePreference(Landroid/preference/Preference;)Z
 
@@ -2568,7 +2568,7 @@
     :cond_3
     const-string v0, "lock_screen_unlock_show"
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v0}, Lcom/android/settings_ext/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v0
 
@@ -2578,7 +2578,7 @@
     if-eqz v0, :cond_4
 
     .line 389
-    invoke-virtual {p0}, Lcom/android/settings/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v2
 
@@ -2606,50 +2606,50 @@
     :cond_4
     const-string v0, "apply_password_to"
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v0}, Lcom/android/settings_ext/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v0
 
     check-cast v0, Landroid/preference/PreferenceCategory;
 
-    iput-object v0, p0, Lcom/android/settings/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;->qU:Landroid/preference/PreferenceCategory;
+    iput-object v0, p0, Lcom/android/settings_ext/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;->qU:Landroid/preference/PreferenceCategory;
 
     .line 397
     const-string v0, "apply_fingerprint_to"
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v0}, Lcom/android/settings_ext/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v0
 
     check-cast v0, Landroid/preference/PreferenceCategory;
 
-    iput-object v0, p0, Lcom/android/settings/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;->qY:Landroid/preference/PreferenceCategory;
+    iput-object v0, p0, Lcom/android/settings_ext/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;->qY:Landroid/preference/PreferenceCategory;
 
     .line 398
     const-string v0, "fingerprint_list"
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v0}, Lcom/android/settings_ext/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v0
 
     check-cast v0, Landroid/preference/PreferenceCategory;
 
-    iput-object v0, p0, Lcom/android/settings/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;->qZ:Landroid/preference/PreferenceCategory;
+    iput-object v0, p0, Lcom/android/settings_ext/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;->qZ:Landroid/preference/PreferenceCategory;
 
     .line 400
-    iget-object v0, p0, Lcom/android/settings/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;->b:Landroid/security/ChooseLockSettingsHelper;
+    iget-object v0, p0, Lcom/android/settings_ext/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;->b:Landroid/security/ChooseLockSettingsHelper;
 
     invoke-virtual {v0}, Landroid/security/ChooseLockSettingsHelper;->utils()Landroid/security/MiuiLockPatternUtils;
 
     move-result-object v0
 
     .line 401
-    iget-object v2, p0, Lcom/android/settings/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;->qR:Landroid/preference/CheckBoxPreference;
+    iget-object v2, p0, Lcom/android/settings_ext/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;->qR:Landroid/preference/CheckBoxPreference;
 
     if-eqz v2, :cond_5
 
     .line 402
-    iget-object v2, p0, Lcom/android/settings/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;->qR:Landroid/preference/CheckBoxPreference;
+    iget-object v2, p0, Lcom/android/settings_ext/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;->qR:Landroid/preference/CheckBoxPreference;
 
     invoke-virtual {v0}, Lcom/android/internal/widget/LockPatternUtils;->isVisiblePatternEnabled()Z
 
@@ -2659,12 +2659,12 @@
 
     .line 404
     :cond_5
-    iget-object v2, p0, Lcom/android/settings/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;->qQ:Landroid/preference/CheckBoxPreference;
+    iget-object v2, p0, Lcom/android/settings_ext/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;->qQ:Landroid/preference/CheckBoxPreference;
 
     if-eqz v2, :cond_6
 
     .line 405
-    iget-object v2, p0, Lcom/android/settings/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;->qQ:Landroid/preference/CheckBoxPreference;
+    iget-object v2, p0, Lcom/android/settings_ext/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;->qQ:Landroid/preference/CheckBoxPreference;
 
     invoke-virtual {v0}, Lcom/android/internal/widget/LockPatternUtils;->isBiometricWeakLivelinessEnabled()Z
 
@@ -2674,12 +2674,12 @@
 
     .line 407
     :cond_6
-    iget-object v2, p0, Lcom/android/settings/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;->qS:Landroid/preference/CheckBoxPreference;
+    iget-object v2, p0, Lcom/android/settings_ext/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;->qS:Landroid/preference/CheckBoxPreference;
 
     if-eqz v2, :cond_7
 
     .line 408
-    iget-object v2, p0, Lcom/android/settings/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;->qS:Landroid/preference/CheckBoxPreference;
+    iget-object v2, p0, Lcom/android/settings_ext/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;->qS:Landroid/preference/CheckBoxPreference;
 
     invoke-virtual {v0}, Lcom/android/internal/widget/LockPatternUtils;->isTactileFeedbackEnabled()Z
 
@@ -2691,11 +2691,11 @@
     :cond_7
     const-string v0, "change_password"
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v0}, Lcom/android/settings_ext/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v0
 
-    iget-object v2, p0, Lcom/android/settings/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;->rb:Landroid/preference/Preference$OnPreferenceChangeListener;
+    iget-object v2, p0, Lcom/android/settings_ext/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;->rb:Landroid/preference/Preference$OnPreferenceChangeListener;
 
     invoke-virtual {v0, v2}, Landroid/preference/Preference;->setOnPreferenceChangeListener(Landroid/preference/Preference$OnPreferenceChangeListener;)V
 
@@ -2709,7 +2709,7 @@
     .line 413
     const-string v0, "change_password"
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v0}, Lcom/android/settings_ext/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v0
 
@@ -2719,7 +2719,7 @@
 
     .line 415
     :cond_8
-    iget-object v0, p0, Lcom/android/settings/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;->b:Landroid/security/ChooseLockSettingsHelper;
+    iget-object v0, p0, Lcom/android/settings_ext/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;->b:Landroid/security/ChooseLockSettingsHelper;
 
     invoke-virtual {v0}, Landroid/security/ChooseLockSettingsHelper;->utils()Landroid/security/MiuiLockPatternUtils;
 
@@ -2734,7 +2734,7 @@
     .line 416
     const-string v0, "change_password"
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v0}, Lcom/android/settings_ext/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v0
 
@@ -2856,26 +2856,26 @@
 
     .line 446
     :cond_e
-    invoke-direct {p0}, Lcom/android/settings/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;->fb()V
+    invoke-direct {p0}, Lcom/android/settings_ext/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;->fb()V
 
     .line 448
     const-string v0, "lock_screen_secure_after_timeout"
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v0}, Lcom/android/settings_ext/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v0
 
     check-cast v0, Landroid/preference/ListPreference;
 
-    iput-object v0, p0, Lcom/android/settings/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;->qT:Landroid/preference/ListPreference;
+    iput-object v0, p0, Lcom/android/settings_ext/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;->qT:Landroid/preference/ListPreference;
 
     .line 449
-    iget-object v0, p0, Lcom/android/settings/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;->qT:Landroid/preference/ListPreference;
+    iget-object v0, p0, Lcom/android/settings_ext/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;->qT:Landroid/preference/ListPreference;
 
     if-eqz v0, :cond_f
 
     .line 450
-    invoke-direct {p0}, Lcom/android/settings/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;->ff()V
+    invoke-direct {p0}, Lcom/android/settings_ext/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;->ff()V
 
     .line 452
     :cond_f

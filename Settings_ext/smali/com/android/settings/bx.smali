@@ -1,19 +1,19 @@
-.class Lcom/android/settings/bx;
+.class Lcom/android/settings_ext/bx;
 .super Landroid/content/BroadcastReceiver;
 .source "DateTimeSettingsSetupWizard.java"
 
 
 # instance fields
-.field final synthetic hy:Lcom/android/settings/DateTimeSettingsSetupWizard;
+.field final synthetic hy:Lcom/android/settings_ext/DateTimeSettingsSetupWizard;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/DateTimeSettingsSetupWizard;)V
+.method constructor <init>(Lcom/android/settings_ext/DateTimeSettingsSetupWizard;)V
     .locals 0
 
     .prologue
     .line 328
-    iput-object p1, p0, Lcom/android/settings/bx;->hy:Lcom/android/settings/DateTimeSettingsSetupWizard;
+    iput-object p1, p0, Lcom/android/settings_ext/bx;->hy:Lcom/android/settings_ext/DateTimeSettingsSetupWizard;
 
     invoke-direct {p0}, Landroid/content/BroadcastReceiver;-><init>()V
 
@@ -27,9 +27,9 @@
 
     .prologue
     .line 331
-    iget-object v0, p0, Lcom/android/settings/bx;->hy:Lcom/android/settings/DateTimeSettingsSetupWizard;
+    iget-object v0, p0, Lcom/android/settings_ext/bx;->hy:Lcom/android/settings_ext/DateTimeSettingsSetupWizard;
 
-    invoke-static {v0}, Lcom/android/settings/DateTimeSettingsSetupWizard;->a(Lcom/android/settings/DateTimeSettingsSetupWizard;)V
+    invoke-static {v0}, Lcom/android/settings_ext/DateTimeSettingsSetupWizard;->a(Lcom/android/settings_ext/DateTimeSettingsSetupWizard;)V
 
     .line 332
     return-void

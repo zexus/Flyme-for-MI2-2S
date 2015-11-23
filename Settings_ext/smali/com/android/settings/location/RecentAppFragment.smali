@@ -1,5 +1,5 @@
-.class public Lcom/android/settings/location/RecentAppFragment;
-.super Lcom/android/settings/SettingsPreferenceFragment;
+.class public Lcom/android/settings_ext/location/RecentAppFragment;
+.super Lcom/android/settings_ext/SettingsPreferenceFragment;
 .source "RecentAppFragment.java"
 
 
@@ -9,7 +9,7 @@
 
     .prologue
     .line 25
-    invoke-direct {p0}, Lcom/android/settings/SettingsPreferenceFragment;-><init>()V
+    invoke-direct {p0}, Lcom/android/settings_ext/SettingsPreferenceFragment;-><init>()V
 
     return-void
 .end method
@@ -19,9 +19,9 @@
 
     .prologue
     .line 37
-    new-instance v0, Lcom/android/settings/location/RecentAppFragment$1;
+    new-instance v0, Lcom/android/settings_ext/location/RecentAppFragment$1;
 
-    invoke-direct {v0, p0}, Lcom/android/settings/location/RecentAppFragment$1;-><init>(Lcom/android/settings/location/RecentAppFragment;)V
+    invoke-direct {v0, p0}, Lcom/android/settings_ext/location/RecentAppFragment$1;-><init>(Lcom/android/settings_ext/location/RecentAppFragment;)V
 
     invoke-static {p1, v0}, Ljava/util/Collections;->sort(Ljava/util/List;Ljava/util/Comparator;)V
 
@@ -58,21 +58,21 @@
 
     .prologue
     .line 49
-    invoke-virtual {p0}, Lcom/android/settings/location/RecentAppFragment;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
+    invoke-virtual {p0}, Lcom/android/settings_ext/location/RecentAppFragment;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
 
     move-result-object v0
 
     .line 50
-    new-instance v1, Lcom/android/settings/location/RecentLocationApps;
+    new-instance v1, Lcom/android/settings_ext/location/RecentLocationApps;
 
-    invoke-virtual {p0}, Lcom/android/settings/location/RecentAppFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/location/RecentAppFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v2
 
-    invoke-direct {v1, v2}, Lcom/android/settings/location/RecentLocationApps;-><init>(Landroid/app/Activity;)V
+    invoke-direct {v1, v2}, Lcom/android/settings_ext/location/RecentLocationApps;-><init>(Landroid/app/Activity;)V
 
     .line 51
-    invoke-virtual {v1}, Lcom/android/settings/location/RecentLocationApps;->qf()Ljava/util/List;
+    invoke-virtual {v1}, Lcom/android/settings_ext/location/RecentLocationApps;->qf()Ljava/util/List;
 
     move-result-object v1
 
@@ -84,7 +84,7 @@
     if-lez v2, :cond_0
 
     .line 53
-    invoke-direct {p0, v1, v0}, Lcom/android/settings/location/RecentAppFragment;->a(Ljava/util/List;Landroid/preference/PreferenceGroup;)V
+    invoke-direct {p0, v1, v0}, Lcom/android/settings_ext/location/RecentAppFragment;->a(Ljava/util/List;Landroid/preference/PreferenceGroup;)V
 
     .line 62
     :goto_0
@@ -94,7 +94,7 @@
     :cond_0
     new-instance v1, Landroid/preference/Preference;
 
-    invoke-virtual {p0}, Lcom/android/settings/location/RecentAppFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/location/RecentAppFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v2
 
@@ -128,15 +128,15 @@
 
     .prologue
     .line 30
-    invoke-super {p0, p1}, Lcom/android/settings/SettingsPreferenceFragment;->onCreate(Landroid/os/Bundle;)V
+    invoke-super {p0, p1}, Lcom/android/settings_ext/SettingsPreferenceFragment;->onCreate(Landroid/os/Bundle;)V
 
     .line 31
     const v0, 0x7f060046
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/location/RecentAppFragment;->addPreferencesFromResource(I)V
+    invoke-virtual {p0, v0}, Lcom/android/settings_ext/location/RecentAppFragment;->addPreferencesFromResource(I)V
 
     .line 32
-    invoke-direct {p0}, Lcom/android/settings/location/RecentAppFragment;->qe()V
+    invoke-direct {p0}, Lcom/android/settings_ext/location/RecentAppFragment;->qe()V
 
     .line 33
     return-void
@@ -151,7 +151,7 @@
     const/4 v2, 0x1
 
     .line 66
-    invoke-super {p0, p1}, Lcom/android/settings/SettingsPreferenceFragment;->onCreateOptionsMenu(Landroid/view/Menu;)Z
+    invoke-super {p0, p1}, Lcom/android/settings_ext/SettingsPreferenceFragment;->onCreateOptionsMenu(Landroid/view/Menu;)Z
 
     .line 67
     sget-boolean v0, Lmiui/os/Build;->IS_TABLET:Z
@@ -206,7 +206,7 @@
     invoke-virtual {v1, v2, v3}, Landroid/content/Intent;->setClassName(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
 
     .line 80
-    invoke-virtual {p0}, Lcom/android/settings/location/RecentAppFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/location/RecentAppFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v2
 
@@ -217,7 +217,7 @@
     return v0
 
     :cond_0
-    invoke-super {p0, p1}, Lcom/android/settings/SettingsPreferenceFragment;->onOptionsItemSelected(Landroid/view/MenuItem;)Z
+    invoke-super {p0, p1}, Lcom/android/settings_ext/SettingsPreferenceFragment;->onOptionsItemSelected(Landroid/view/MenuItem;)Z
 
     move-result v0
 

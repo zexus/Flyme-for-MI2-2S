@@ -1,15 +1,15 @@
-.class public Lcom/android/settings/DisplaySettings;
-.super Lcom/android/settings/SettingsPreferenceFragment;
+.class public Lcom/android/settings_ext/DisplaySettings;
+.super Lcom/android/settings_ext/SettingsPreferenceFragment;
 .source "DisplaySettings.java"
 
 # interfaces
 .implements Landroid/preference/Preference$OnPreferenceChangeListener;
 .implements Landroid/preference/Preference$OnPreferenceClickListener;
-.implements Lcom/android/settings/search/k;
+.implements Lcom/android/settings_ext/search/k;
 
 
 # static fields
-.field public static final gG:Lcom/android/settings/search/l;
+.field public static final gG:Lcom/android/settings_ext/search/l;
 
 .field private static jU:Landroid/util/SparseArray;
 
@@ -17,7 +17,7 @@
 # instance fields
 .field private final jS:Landroid/content/res/Configuration;
 
-.field private jV:Lcom/android/settings/WarnedListPreference;
+.field private jV:Lcom/android/settings_ext/WarnedListPreference;
 
 .field private jW:Landroid/preference/ListPreference;
 
@@ -48,10 +48,10 @@
 
     invoke-direct {v0}, Landroid/util/SparseArray;-><init>()V
 
-    sput-object v0, Lcom/android/settings/DisplaySettings;->jU:Landroid/util/SparseArray;
+    sput-object v0, Lcom/android/settings_ext/DisplaySettings;->jU:Landroid/util/SparseArray;
 
     .line 94
-    sget-object v0, Lcom/android/settings/DisplaySettings;->jU:Landroid/util/SparseArray;
+    sget-object v0, Lcom/android/settings_ext/DisplaySettings;->jU:Landroid/util/SparseArray;
 
     const/16 v1, 0xc
 
@@ -64,7 +64,7 @@
     invoke-virtual {v0, v1, v2}, Landroid/util/SparseArray;->put(ILjava/lang/Object;)V
 
     .line 95
-    sget-object v0, Lcom/android/settings/DisplaySettings;->jU:Landroid/util/SparseArray;
+    sget-object v0, Lcom/android/settings_ext/DisplaySettings;->jU:Landroid/util/SparseArray;
 
     invoke-static {v3}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -73,7 +73,7 @@
     invoke-virtual {v0, v3, v1}, Landroid/util/SparseArray;->put(ILjava/lang/Object;)V
 
     .line 96
-    sget-object v0, Lcom/android/settings/DisplaySettings;->jU:Landroid/util/SparseArray;
+    sget-object v0, Lcom/android/settings_ext/DisplaySettings;->jU:Landroid/util/SparseArray;
 
     const/16 v1, 0xd
 
@@ -86,7 +86,7 @@
     invoke-virtual {v0, v1, v2}, Landroid/util/SparseArray;->put(ILjava/lang/Object;)V
 
     .line 97
-    sget-object v0, Lcom/android/settings/DisplaySettings;->jU:Landroid/util/SparseArray;
+    sget-object v0, Lcom/android/settings_ext/DisplaySettings;->jU:Landroid/util/SparseArray;
 
     const/16 v1, 0xe
 
@@ -99,7 +99,7 @@
     invoke-virtual {v0, v1, v2}, Landroid/util/SparseArray;->put(ILjava/lang/Object;)V
 
     .line 98
-    sget-object v0, Lcom/android/settings/DisplaySettings;->jU:Landroid/util/SparseArray;
+    sget-object v0, Lcom/android/settings_ext/DisplaySettings;->jU:Landroid/util/SparseArray;
 
     const/16 v1, 0xf
 
@@ -112,7 +112,7 @@
     invoke-virtual {v0, v1, v2}, Landroid/util/SparseArray;->put(ILjava/lang/Object;)V
 
     .line 99
-    sget-object v0, Lcom/android/settings/DisplaySettings;->jU:Landroid/util/SparseArray;
+    sget-object v0, Lcom/android/settings_ext/DisplaySettings;->jU:Landroid/util/SparseArray;
 
     const/16 v1, 0xb
 
@@ -125,11 +125,11 @@
     invoke-virtual {v0, v1, v2}, Landroid/util/SparseArray;->put(ILjava/lang/Object;)V
 
     .line 532
-    new-instance v0, Lcom/android/settings/bV;
+    new-instance v0, Lcom/android/settings_ext/bV;
 
-    invoke-direct {v0}, Lcom/android/settings/bV;-><init>()V
+    invoke-direct {v0}, Lcom/android/settings_ext/bV;-><init>()V
 
-    sput-object v0, Lcom/android/settings/DisplaySettings;->gG:Lcom/android/settings/search/l;
+    sput-object v0, Lcom/android/settings_ext/DisplaySettings;->gG:Lcom/android/settings_ext/search/l;
 
     return-void
 .end method
@@ -139,32 +139,32 @@
 
     .prologue
     .line 90
-    invoke-direct {p0}, Lcom/android/settings/SettingsPreferenceFragment;-><init>()V
+    invoke-direct {p0}, Lcom/android/settings_ext/SettingsPreferenceFragment;-><init>()V
 
     .line 105
     new-instance v0, Landroid/content/res/Configuration;
 
     invoke-direct {v0}, Landroid/content/res/Configuration;-><init>()V
 
-    iput-object v0, p0, Lcom/android/settings/DisplaySettings;->jS:Landroid/content/res/Configuration;
+    iput-object v0, p0, Lcom/android/settings_ext/DisplaySettings;->jS:Landroid/content/res/Configuration;
 
     .line 578
-    new-instance v0, Lcom/android/settings/bW;
+    new-instance v0, Lcom/android/settings_ext/bW;
 
-    invoke-direct {v0, p0}, Lcom/android/settings/bW;-><init>(Lcom/android/settings/DisplaySettings;)V
+    invoke-direct {v0, p0}, Lcom/android/settings_ext/bW;-><init>(Lcom/android/settings_ext/DisplaySettings;)V
 
-    iput-object v0, p0, Lcom/android/settings/DisplaySettings;->kd:Lcom/android/internal/view/RotationPolicy$RotationPolicyListener;
+    iput-object v0, p0, Lcom/android/settings_ext/DisplaySettings;->kd:Lcom/android/internal/view/RotationPolicy$RotationPolicyListener;
 
     .line 90
     return-void
 .end method
 
-.method static synthetic a(Lcom/android/settings/DisplaySettings;)Lcom/android/settings/WarnedListPreference;
+.method static synthetic a(Lcom/android/settings_ext/DisplaySettings;)Lcom/android/settings_ext/WarnedListPreference;
     .locals 1
 
     .prologue
     .line 70
-    iget-object v0, p0, Lcom/android/settings/DisplaySettings;->jV:Lcom/android/settings/WarnedListPreference;
+    iget-object v0, p0, Lcom/android/settings_ext/DisplaySettings;->jV:Lcom/android/settings_ext/WarnedListPreference;
 
     return-object v0
 .end method
@@ -178,7 +178,7 @@
     const/4 v1, 0x0
 
     .line 313
-    invoke-virtual {p0}, Lcom/android/settings/DisplaySettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/DisplaySettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
@@ -425,19 +425,19 @@
 
     .prologue
     .line 70
-    invoke-static {p0}, Lcom/android/settings/DisplaySettings;->n(Landroid/content/Context;)Z
+    invoke-static {p0}, Lcom/android/settings_ext/DisplaySettings;->n(Landroid/content/Context;)Z
 
     move-result v0
 
     return v0
 .end method
 
-.method static synthetic b(Lcom/android/settings/DisplaySettings;)V
+.method static synthetic b(Lcom/android/settings_ext/DisplaySettings;)V
     .locals 0
 
     .prologue
     .line 70
-    invoke-direct {p0}, Lcom/android/settings/DisplaySettings;->da()V
+    invoke-direct {p0}, Lcom/android/settings_ext/DisplaySettings;->da()V
 
     return-void
 .end method
@@ -447,7 +447,7 @@
 
     .prologue
     .line 70
-    invoke-static {p0}, Lcom/android/settings/DisplaySettings;->a(Landroid/content/res/Resources;)Z
+    invoke-static {p0}, Lcom/android/settings_ext/DisplaySettings;->a(Landroid/content/res/Resources;)Z
 
     move-result v0
 
@@ -459,18 +459,18 @@
 
     .prologue
     .line 437
-    iget-object v0, p0, Lcom/android/settings/DisplaySettings;->jX:Landroid/preference/Preference;
+    iget-object v0, p0, Lcom/android/settings_ext/DisplaySettings;->jX:Landroid/preference/Preference;
 
     if-eqz v0, :cond_0
 
     .line 438
-    iget-object v0, p0, Lcom/android/settings/DisplaySettings;->jX:Landroid/preference/Preference;
+    iget-object v0, p0, Lcom/android/settings_ext/DisplaySettings;->jX:Landroid/preference/Preference;
 
-    invoke-virtual {p0}, Lcom/android/settings/DisplaySettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/DisplaySettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v1
 
-    invoke-static {v1}, Lcom/android/settings/DreamSettings;->q(Landroid/content/Context;)Ljava/lang/CharSequence;
+    invoke-static {v1}, Lcom/android/settings_ext/DreamSettings;->q(Landroid/content/Context;)Ljava/lang/CharSequence;
 
     move-result-object v1
 
@@ -486,7 +486,7 @@
 
     .prologue
     .line 586
-    invoke-virtual {p0}, Lcom/android/settings/DisplaySettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/DisplaySettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
@@ -499,14 +499,14 @@
 
     .line 587
     :cond_1
-    iget-object v0, p0, Lcom/android/settings/DisplaySettings;->kc:Landroid/preference/CheckBoxPreference;
+    iget-object v0, p0, Lcom/android/settings_ext/DisplaySettings;->kc:Landroid/preference/CheckBoxPreference;
 
     if-eqz v0, :cond_0
 
     .line 588
-    iget-object v1, p0, Lcom/android/settings/DisplaySettings;->kc:Landroid/preference/CheckBoxPreference;
+    iget-object v1, p0, Lcom/android/settings_ext/DisplaySettings;->kc:Landroid/preference/CheckBoxPreference;
 
-    invoke-virtual {p0}, Lcom/android/settings/DisplaySettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/DisplaySettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
@@ -536,7 +536,7 @@
     const/4 v1, 0x0
 
     .line 282
-    iget-object v3, p0, Lcom/android/settings/DisplaySettings;->jW:Landroid/preference/ListPreference;
+    iget-object v3, p0, Lcom/android/settings_ext/DisplaySettings;->jW:Landroid/preference/ListPreference;
 
     .line 284
     const-wide/16 v4, 0x0
@@ -559,7 +559,7 @@
     .line 306
     const v0, 0x7f090af4
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/DisplaySettings;->getString(I)Ljava/lang/String;
+    invoke-virtual {p0, v0}, Lcom/android/settings_ext/DisplaySettings;->getString(I)Ljava/lang/String;
 
     move-result-object v0
 
@@ -787,7 +787,7 @@
 
     .prologue
     .line 70
-    invoke-static {p0}, Lcom/android/settings/DisplaySettings;->o(Landroid/content/Context;)Z
+    invoke-static {p0}, Lcom/android/settings_ext/DisplaySettings;->o(Landroid/content/Context;)Z
 
     move-result v0
 
@@ -803,23 +803,23 @@
     const/4 v2, 0x0
 
     .line 412
-    invoke-direct {p0}, Lcom/android/settings/DisplaySettings;->da()V
+    invoke-direct {p0}, Lcom/android/settings_ext/DisplaySettings;->da()V
 
     .line 413
-    iget-object v0, p0, Lcom/android/settings/DisplaySettings;->jV:Lcom/android/settings/WarnedListPreference;
+    iget-object v0, p0, Lcom/android/settings_ext/DisplaySettings;->jV:Lcom/android/settings_ext/WarnedListPreference;
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/DisplaySettings;->b(Landroid/preference/ListPreference;)V
+    invoke-virtual {p0, v0}, Lcom/android/settings_ext/DisplaySettings;->b(Landroid/preference/ListPreference;)V
 
     .line 414
-    invoke-direct {p0}, Lcom/android/settings/DisplaySettings;->cZ()V
+    invoke-direct {p0}, Lcom/android/settings_ext/DisplaySettings;->cZ()V
 
     .line 417
-    iget-object v0, p0, Lcom/android/settings/DisplaySettings;->kb:Landroid/preference/SwitchPreference;
+    iget-object v0, p0, Lcom/android/settings_ext/DisplaySettings;->kb:Landroid/preference/SwitchPreference;
 
     if-eqz v0, :cond_0
 
     .line 418
-    invoke-virtual {p0}, Lcom/android/settings/DisplaySettings;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/settings_ext/DisplaySettings;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v0
 
@@ -830,7 +830,7 @@
     move-result v0
 
     .line 420
-    iget-object v3, p0, Lcom/android/settings/DisplaySettings;->kb:Landroid/preference/SwitchPreference;
+    iget-object v3, p0, Lcom/android/settings_ext/DisplaySettings;->kb:Landroid/preference/SwitchPreference;
 
     if-eqz v0, :cond_3
 
@@ -841,12 +841,12 @@
 
     .line 424
     :cond_0
-    iget-object v0, p0, Lcom/android/settings/DisplaySettings;->jY:Landroid/preference/CheckBoxPreference;
+    iget-object v0, p0, Lcom/android/settings_ext/DisplaySettings;->jY:Landroid/preference/CheckBoxPreference;
 
     if-eqz v0, :cond_1
 
     .line 425
-    invoke-virtual {p0}, Lcom/android/settings/DisplaySettings;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/settings_ext/DisplaySettings;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v0
 
@@ -857,7 +857,7 @@
     move-result v0
 
     .line 426
-    iget-object v3, p0, Lcom/android/settings/DisplaySettings;->jY:Landroid/preference/CheckBoxPreference;
+    iget-object v3, p0, Lcom/android/settings_ext/DisplaySettings;->jY:Landroid/preference/CheckBoxPreference;
 
     if-eqz v0, :cond_4
 
@@ -868,12 +868,12 @@
 
     .line 430
     :cond_1
-    iget-object v0, p0, Lcom/android/settings/DisplaySettings;->jZ:Landroid/preference/CheckBoxPreference;
+    iget-object v0, p0, Lcom/android/settings_ext/DisplaySettings;->jZ:Landroid/preference/CheckBoxPreference;
 
     if-eqz v0, :cond_2
 
     .line 431
-    invoke-virtual {p0}, Lcom/android/settings/DisplaySettings;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/settings_ext/DisplaySettings;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v0
 
@@ -884,7 +884,7 @@
     move-result v0
 
     .line 432
-    iget-object v3, p0, Lcom/android/settings/DisplaySettings;->jZ:Landroid/preference/CheckBoxPreference;
+    iget-object v3, p0, Lcom/android/settings_ext/DisplaySettings;->jZ:Landroid/preference/CheckBoxPreference;
 
     if-eqz v0, :cond_5
 
@@ -922,7 +922,7 @@
     .prologue
     .line 368
     :try_start_0
-    iget-object v0, p0, Lcom/android/settings/DisplaySettings;->jS:Landroid/content/res/Configuration;
+    iget-object v0, p0, Lcom/android/settings_ext/DisplaySettings;->jS:Landroid/content/res/Configuration;
 
     invoke-static {}, Landroid/app/ActivityManagerNative;->getDefault()Landroid/app/IActivityManager;
 
@@ -938,9 +938,9 @@
 
     .line 374
     :goto_0
-    sget-object v0, Lcom/android/settings/DisplaySettings;->jU:Landroid/util/SparseArray;
+    sget-object v0, Lcom/android/settings_ext/DisplaySettings;->jU:Landroid/util/SparseArray;
 
-    iget-object v1, p0, Lcom/android/settings/DisplaySettings;->jS:Landroid/content/res/Configuration;
+    iget-object v1, p0, Lcom/android/settings_ext/DisplaySettings;->jS:Landroid/content/res/Configuration;
 
     iget v1, v1, Landroid/content/res/Configuration;->uiMode:I
 
@@ -960,7 +960,7 @@
     invoke-virtual {p1, v0}, Landroid/preference/ListPreference;->setValueIndex(I)V
 
     .line 378
-    invoke-virtual {p0}, Lcom/android/settings/DisplaySettings;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {p0}, Lcom/android/settings_ext/DisplaySettings;->getResources()Landroid/content/res/Resources;
 
     move-result-object v1
 
@@ -1019,7 +1019,7 @@
 
     .line 445
     .line 446
-    invoke-virtual {p0}, Lcom/android/settings/DisplaySettings;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {p0}, Lcom/android/settings_ext/DisplaySettings;->getResources()Landroid/content/res/Resources;
 
     move-result-object v1
 
@@ -1064,9 +1064,9 @@
 
     .line 452
     :cond_1
-    sget-object v0, Lcom/android/settings/DisplaySettings;->jU:Landroid/util/SparseArray;
+    sget-object v0, Lcom/android/settings_ext/DisplaySettings;->jU:Landroid/util/SparseArray;
 
-    sget-object v1, Lcom/android/settings/DisplaySettings;->jU:Landroid/util/SparseArray;
+    sget-object v1, Lcom/android/settings_ext/DisplaySettings;->jU:Landroid/util/SparseArray;
 
     invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -1081,7 +1081,7 @@
     move-result v0
 
     .line 454
-    iget-object v1, p0, Lcom/android/settings/DisplaySettings;->jS:Landroid/content/res/Configuration;
+    iget-object v1, p0, Lcom/android/settings_ext/DisplaySettings;->jS:Landroid/content/res/Configuration;
 
     iget v1, v1, Landroid/content/res/Configuration;->uiMode:I
 
@@ -1090,11 +1090,11 @@
     if-eq v0, v1, :cond_2
 
     .line 455
-    invoke-virtual {p0}, Lcom/android/settings/DisplaySettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/DisplaySettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v1
 
-    invoke-static {v1, v0}, Lcom/android/settings/display/n;->e(Landroid/content/Context;I)Z
+    invoke-static {v1, v0}, Lcom/android/settings_ext/display/n;->e(Landroid/content/Context;I)Z
 
     .line 467
     :cond_2
@@ -1110,10 +1110,10 @@
     const/4 v3, 0x0
 
     .line 120
-    invoke-super {p0, p1}, Lcom/android/settings/SettingsPreferenceFragment;->onCreate(Landroid/os/Bundle;)V
+    invoke-super {p0, p1}, Lcom/android/settings_ext/SettingsPreferenceFragment;->onCreate(Landroid/os/Bundle;)V
 
     .line 121
-    invoke-virtual {p0}, Lcom/android/settings/DisplaySettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/DisplaySettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v4
 
@@ -1125,28 +1125,28 @@
     .line 124
     const v0, 0x7f06002b
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/DisplaySettings;->addPreferencesFromResource(I)V
+    invoke-virtual {p0, v0}, Lcom/android/settings_ext/DisplaySettings;->addPreferencesFromResource(I)V
 
     .line 126
     const-string v0, "screensaver"
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/DisplaySettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v0}, Lcom/android/settings_ext/DisplaySettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/DisplaySettings;->jX:Landroid/preference/Preference;
+    iput-object v0, p0, Lcom/android/settings_ext/DisplaySettings;->jX:Landroid/preference/Preference;
 
     .line 127
-    iget-object v0, p0, Lcom/android/settings/DisplaySettings;->jX:Landroid/preference/Preference;
+    iget-object v0, p0, Lcom/android/settings_ext/DisplaySettings;->jX:Landroid/preference/Preference;
 
     if-eqz v0, :cond_0
 
     .line 133
-    invoke-virtual {p0}, Lcom/android/settings/DisplaySettings;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
+    invoke-virtual {p0}, Lcom/android/settings_ext/DisplaySettings;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/android/settings/DisplaySettings;->jX:Landroid/preference/Preference;
+    iget-object v1, p0, Lcom/android/settings_ext/DisplaySettings;->jX:Landroid/preference/Preference;
 
     invoke-virtual {v0, v1}, Landroid/preference/PreferenceScreen;->removePreference(Landroid/preference/Preference;)Z
 
@@ -1154,13 +1154,13 @@
     :cond_0
     const-string v0, "screen_timeout"
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/DisplaySettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v0}, Lcom/android/settings_ext/DisplaySettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v0
 
     check-cast v0, Landroid/preference/ListPreference;
 
-    iput-object v0, p0, Lcom/android/settings/DisplaySettings;->jW:Landroid/preference/ListPreference;
+    iput-object v0, p0, Lcom/android/settings_ext/DisplaySettings;->jW:Landroid/preference/ListPreference;
 
     .line 141
     const-string v0, "screen_off_timeout"
@@ -1188,7 +1188,7 @@
 
     .line 149
     :cond_1
-    invoke-static {}, Lcom/android/settings/fc;->fL()Z
+    invoke-static {}, Lcom/android/settings_ext/fc;->fL()Z
 
     move-result v6
 
@@ -1197,7 +1197,7 @@
     .line 150
     const-string v6, "wallpaper"
 
-    invoke-virtual {p0, v6}, Lcom/android/settings/DisplaySettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v6}, Lcom/android/settings_ext/DisplaySettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v6
 
@@ -1205,7 +1205,7 @@
     if-eqz v6, :cond_2
 
     .line 152
-    invoke-virtual {p0}, Lcom/android/settings/DisplaySettings;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
+    invoke-virtual {p0}, Lcom/android/settings_ext/DisplaySettings;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
 
     move-result-object v7
 
@@ -1213,7 +1213,7 @@
 
     .line 155
     :cond_2
-    iget-object v6, p0, Lcom/android/settings/DisplaySettings;->jW:Landroid/preference/ListPreference;
+    iget-object v6, p0, Lcom/android/settings_ext/DisplaySettings;->jW:Landroid/preference/ListPreference;
 
     invoke-static {v0, v1}, Ljava/lang/String;->valueOf(J)Ljava/lang/String;
 
@@ -1222,38 +1222,38 @@
     invoke-virtual {v6, v7}, Landroid/preference/ListPreference;->setValue(Ljava/lang/String;)V
 
     .line 156
-    iget-object v6, p0, Lcom/android/settings/DisplaySettings;->jW:Landroid/preference/ListPreference;
+    iget-object v6, p0, Lcom/android/settings_ext/DisplaySettings;->jW:Landroid/preference/ListPreference;
 
     invoke-virtual {v6, p0}, Landroid/preference/ListPreference;->setOnPreferenceChangeListener(Landroid/preference/Preference$OnPreferenceChangeListener;)V
 
     .line 157
-    iget-object v6, p0, Lcom/android/settings/DisplaySettings;->jW:Landroid/preference/ListPreference;
+    iget-object v6, p0, Lcom/android/settings_ext/DisplaySettings;->jW:Landroid/preference/ListPreference;
 
-    invoke-direct {p0, v6}, Lcom/android/settings/DisplaySettings;->a(Landroid/preference/ListPreference;)V
+    invoke-direct {p0, v6}, Lcom/android/settings_ext/DisplaySettings;->a(Landroid/preference/ListPreference;)V
 
     .line 158
-    invoke-direct {p0, v0, v1}, Lcom/android/settings/DisplaySettings;->f(J)V
+    invoke-direct {p0, v0, v1}, Lcom/android/settings_ext/DisplaySettings;->f(J)V
 
     .line 160
     const-string v0, "font_size"
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/DisplaySettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v0}, Lcom/android/settings_ext/DisplaySettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v0
 
-    check-cast v0, Lcom/android/settings/WarnedListPreference;
+    check-cast v0, Lcom/android/settings_ext/WarnedListPreference;
 
-    iput-object v0, p0, Lcom/android/settings/DisplaySettings;->jV:Lcom/android/settings/WarnedListPreference;
+    iput-object v0, p0, Lcom/android/settings_ext/DisplaySettings;->jV:Lcom/android/settings_ext/WarnedListPreference;
 
     .line 161
-    iget-object v0, p0, Lcom/android/settings/DisplaySettings;->jV:Lcom/android/settings/WarnedListPreference;
+    iget-object v0, p0, Lcom/android/settings_ext/DisplaySettings;->jV:Lcom/android/settings_ext/WarnedListPreference;
 
-    invoke-virtual {v0, p0}, Lcom/android/settings/WarnedListPreference;->setOnPreferenceChangeListener(Landroid/preference/Preference$OnPreferenceChangeListener;)V
+    invoke-virtual {v0, p0}, Lcom/android/settings_ext/WarnedListPreference;->setOnPreferenceChangeListener(Landroid/preference/Preference$OnPreferenceChangeListener;)V
 
     .line 162
-    iget-object v0, p0, Lcom/android/settings/DisplaySettings;->jV:Lcom/android/settings/WarnedListPreference;
+    iget-object v0, p0, Lcom/android/settings_ext/DisplaySettings;->jV:Lcom/android/settings_ext/WarnedListPreference;
 
-    invoke-virtual {v0, p0}, Lcom/android/settings/WarnedListPreference;->setOnPreferenceClickListener(Landroid/preference/Preference$OnPreferenceClickListener;)V
+    invoke-virtual {v0, p0}, Lcom/android/settings_ext/WarnedListPreference;->setOnPreferenceClickListener(Landroid/preference/Preference$OnPreferenceClickListener;)V
 
     .line 164
     sget-boolean v0, Lmiui/os/Build;->IS_TABLET:Z
@@ -1261,17 +1261,17 @@
     if-nez v0, :cond_3
 
     .line 165
-    invoke-virtual {p0}, Lcom/android/settings/DisplaySettings;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
+    invoke-virtual {p0}, Lcom/android/settings_ext/DisplaySettings;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/android/settings/DisplaySettings;->jV:Lcom/android/settings/WarnedListPreference;
+    iget-object v1, p0, Lcom/android/settings_ext/DisplaySettings;->jV:Lcom/android/settings_ext/WarnedListPreference;
 
     invoke-virtual {v0, v1}, Landroid/preference/PreferenceScreen;->removePreference(Landroid/preference/Preference;)Z
 
     .line 175
     :cond_3
-    invoke-static {v4}, Lcom/android/settings/DisplaySettings;->n(Landroid/content/Context;)Z
+    invoke-static {v4}, Lcom/android/settings_ext/DisplaySettings;->n(Landroid/content/Context;)Z
 
     move-result v0
 
@@ -1280,22 +1280,22 @@
     .line 178
     const-string v0, "lift_to_wake"
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/DisplaySettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v0}, Lcom/android/settings_ext/DisplaySettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v0
 
     check-cast v0, Landroid/preference/CheckBoxPreference;
 
-    iput-object v0, p0, Lcom/android/settings/DisplaySettings;->jY:Landroid/preference/CheckBoxPreference;
+    iput-object v0, p0, Lcom/android/settings_ext/DisplaySettings;->jY:Landroid/preference/CheckBoxPreference;
 
     .line 179
-    iget-object v0, p0, Lcom/android/settings/DisplaySettings;->jY:Landroid/preference/CheckBoxPreference;
+    iget-object v0, p0, Lcom/android/settings_ext/DisplaySettings;->jY:Landroid/preference/CheckBoxPreference;
 
     invoke-virtual {v0, p0}, Landroid/preference/CheckBoxPreference;->setOnPreferenceChangeListener(Landroid/preference/Preference$OnPreferenceChangeListener;)V
 
     .line 184
     :goto_0
-    invoke-static {v4}, Lcom/android/settings/DisplaySettings;->o(Landroid/content/Context;)Z
+    invoke-static {v4}, Lcom/android/settings_ext/DisplaySettings;->o(Landroid/content/Context;)Z
 
     move-result v0
 
@@ -1304,16 +1304,16 @@
     .line 187
     const-string v0, "doze"
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/DisplaySettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v0}, Lcom/android/settings_ext/DisplaySettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v0
 
     check-cast v0, Landroid/preference/CheckBoxPreference;
 
-    iput-object v0, p0, Lcom/android/settings/DisplaySettings;->jZ:Landroid/preference/CheckBoxPreference;
+    iput-object v0, p0, Lcom/android/settings_ext/DisplaySettings;->jZ:Landroid/preference/CheckBoxPreference;
 
     .line 188
-    iget-object v0, p0, Lcom/android/settings/DisplaySettings;->jZ:Landroid/preference/CheckBoxPreference;
+    iget-object v0, p0, Lcom/android/settings_ext/DisplaySettings;->jZ:Landroid/preference/CheckBoxPreference;
 
     invoke-virtual {v0, p0}, Landroid/preference/CheckBoxPreference;->setOnPreferenceChangeListener(Landroid/preference/Preference$OnPreferenceChangeListener;)V
 
@@ -1321,32 +1321,32 @@
     :goto_1
     const-string v0, "auto_rotate"
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/DisplaySettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v0}, Lcom/android/settings_ext/DisplaySettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v0
 
     check-cast v0, Landroid/preference/CheckBoxPreference;
 
-    iput-object v0, p0, Lcom/android/settings/DisplaySettings;->kc:Landroid/preference/CheckBoxPreference;
+    iput-object v0, p0, Lcom/android/settings_ext/DisplaySettings;->kc:Landroid/preference/CheckBoxPreference;
 
     .line 195
-    iget-object v0, p0, Lcom/android/settings/DisplaySettings;->kc:Landroid/preference/CheckBoxPreference;
+    iget-object v0, p0, Lcom/android/settings_ext/DisplaySettings;->kc:Landroid/preference/CheckBoxPreference;
 
     invoke-virtual {v0, v3}, Landroid/preference/CheckBoxPreference;->setPersistent(Z)V
 
     .line 233
     const-string v0, "notification_pulse"
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/DisplaySettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v0}, Lcom/android/settings_ext/DisplaySettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v0
 
     check-cast v0, Landroid/preference/CheckBoxPreference;
 
-    iput-object v0, p0, Lcom/android/settings/DisplaySettings;->ka:Landroid/preference/CheckBoxPreference;
+    iput-object v0, p0, Lcom/android/settings_ext/DisplaySettings;->ka:Landroid/preference/CheckBoxPreference;
 
     .line 234
-    iget-object v0, p0, Lcom/android/settings/DisplaySettings;->ka:Landroid/preference/CheckBoxPreference;
+    iget-object v0, p0, Lcom/android/settings_ext/DisplaySettings;->ka:Landroid/preference/CheckBoxPreference;
 
     if-eqz v0, :cond_7
 
@@ -1359,18 +1359,18 @@
     if-eqz v0, :cond_7
 
     .line 236
-    invoke-virtual {p0}, Lcom/android/settings/DisplaySettings;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
+    invoke-virtual {p0}, Lcom/android/settings_ext/DisplaySettings;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/android/settings/DisplaySettings;->ka:Landroid/preference/CheckBoxPreference;
+    iget-object v1, p0, Lcom/android/settings_ext/DisplaySettings;->ka:Landroid/preference/CheckBoxPreference;
 
     invoke-virtual {v0, v1}, Landroid/preference/PreferenceScreen;->removePreference(Landroid/preference/Preference;)Z
 
     .line 237
     const/4 v0, 0x0
 
-    iput-object v0, p0, Lcom/android/settings/DisplaySettings;->ka:Landroid/preference/CheckBoxPreference;
+    iput-object v0, p0, Lcom/android/settings_ext/DisplaySettings;->ka:Landroid/preference/CheckBoxPreference;
 
     .line 248
     :cond_4
@@ -1381,7 +1381,7 @@
     :cond_5
     const-string v0, "lift_to_wake"
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/DisplaySettings;->K(Ljava/lang/String;)V
+    invoke-virtual {p0, v0}, Lcom/android/settings_ext/DisplaySettings;->K(Ljava/lang/String;)V
 
     goto :goto_0
 
@@ -1389,19 +1389,19 @@
     :cond_6
     const-string v0, "doze"
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/DisplaySettings;->K(Ljava/lang/String;)V
+    invoke-virtual {p0, v0}, Lcom/android/settings_ext/DisplaySettings;->K(Ljava/lang/String;)V
 
     goto :goto_1
 
     .line 238
     :cond_7
-    iget-object v0, p0, Lcom/android/settings/DisplaySettings;->ka:Landroid/preference/CheckBoxPreference;
+    iget-object v0, p0, Lcom/android/settings_ext/DisplaySettings;->ka:Landroid/preference/CheckBoxPreference;
 
     if-eqz v0, :cond_4
 
     .line 240
     :try_start_0
-    iget-object v1, p0, Lcom/android/settings/DisplaySettings;->ka:Landroid/preference/CheckBoxPreference;
+    iget-object v1, p0, Lcom/android/settings_ext/DisplaySettings;->ka:Landroid/preference/CheckBoxPreference;
 
     const-string v0, "notification_light_pulse"
 
@@ -1417,7 +1417,7 @@
     invoke-virtual {v1, v0}, Landroid/preference/CheckBoxPreference;->setChecked(Z)V
 
     .line 242
-    iget-object v0, p0, Lcom/android/settings/DisplaySettings;->ka:Landroid/preference/CheckBoxPreference;
+    iget-object v0, p0, Lcom/android/settings_ext/DisplaySettings;->ka:Landroid/preference/CheckBoxPreference;
 
     invoke-virtual {v0, p0}, Landroid/preference/CheckBoxPreference;->setOnPreferenceChangeListener(Landroid/preference/Preference$OnPreferenceChangeListener;)V
     :try_end_0
@@ -1455,17 +1455,17 @@
     if-ne p1, v0, :cond_0
 
     .line 398
-    invoke-virtual {p0}, Lcom/android/settings/DisplaySettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/DisplaySettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
     const v1, 0x7f090925
 
-    new-instance v2, Lcom/android/settings/bU;
+    new-instance v2, Lcom/android/settings_ext/bU;
 
-    invoke-direct {v2, p0}, Lcom/android/settings/bU;-><init>(Lcom/android/settings/DisplaySettings;)V
+    invoke-direct {v2, p0}, Lcom/android/settings_ext/bU;-><init>(Lcom/android/settings_ext/DisplaySettings;)V
 
-    invoke-static {v0, v1, v2}, Lcom/android/settings/hl;->a(Landroid/content/Context;ILjava/lang/Runnable;)Landroid/app/Dialog;
+    invoke-static {v0, v1, v2}, Lcom/android/settings_ext/hl;->a(Landroid/content/Context;ILjava/lang/Runnable;)Landroid/app/Dialog;
 
     move-result-object v0
 
@@ -1484,14 +1484,14 @@
 
     .prologue
     .line 597
-    invoke-super {p0}, Lcom/android/settings/SettingsPreferenceFragment;->onPause()V
+    invoke-super {p0}, Lcom/android/settings_ext/SettingsPreferenceFragment;->onPause()V
 
     .line 598
-    invoke-virtual {p0}, Lcom/android/settings/DisplaySettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/DisplaySettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/android/settings/DisplaySettings;->kd:Lcom/android/internal/view/RotationPolicy$RotationPolicyListener;
+    iget-object v1, p0, Lcom/android/settings_ext/DisplaySettings;->kd:Lcom/android/internal/view/RotationPolicy$RotationPolicyListener;
 
     invoke-static {v0, v1}, Lcom/android/internal/view/RotationPolicy;->unregisterRotationPolicyListener(Landroid/content/Context;Lcom/android/internal/view/RotationPolicy$RotationPolicyListener;)V
 
@@ -1534,7 +1534,7 @@
     move-result v2
 
     .line 487
-    invoke-virtual {p0}, Lcom/android/settings/DisplaySettings;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/settings_ext/DisplaySettings;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v6
 
@@ -1545,7 +1545,7 @@
     .line 488
     int-to-long v6, v2
 
-    invoke-direct {p0, v6, v7}, Lcom/android/settings/DisplaySettings;->f(J)V
+    invoke-direct {p0, v6, v7}, Lcom/android/settings_ext/DisplaySettings;->f(J)V
     :try_end_0
     .catch Ljava/lang/NumberFormatException; {:try_start_0 .. :try_end_0} :catch_0
 
@@ -1561,11 +1561,11 @@
     if-eqz v2, :cond_1
 
     .line 494
-    invoke-virtual {p0, p2}, Lcom/android/settings/DisplaySettings;->k(Ljava/lang/Object;)V
+    invoke-virtual {p0, p2}, Lcom/android/settings_ext/DisplaySettings;->k(Ljava/lang/Object;)V
 
     .line 496
     :cond_1
-    iget-object v2, p0, Lcom/android/settings/DisplaySettings;->kb:Landroid/preference/SwitchPreference;
+    iget-object v2, p0, Lcom/android/settings_ext/DisplaySettings;->kb:Landroid/preference/SwitchPreference;
 
     if-ne p1, v2, :cond_2
 
@@ -1579,7 +1579,7 @@
     move-result v2
 
     .line 498
-    invoke-virtual {p0}, Lcom/android/settings/DisplaySettings;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/settings_ext/DisplaySettings;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v5
 
@@ -1594,7 +1594,7 @@
 
     .line 501
     :cond_2
-    iget-object v2, p0, Lcom/android/settings/DisplaySettings;->jY:Landroid/preference/CheckBoxPreference;
+    iget-object v2, p0, Lcom/android/settings_ext/DisplaySettings;->jY:Landroid/preference/CheckBoxPreference;
 
     if-ne p1, v2, :cond_3
 
@@ -1608,7 +1608,7 @@
     move-result v2
 
     .line 503
-    invoke-virtual {p0}, Lcom/android/settings/DisplaySettings;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/settings_ext/DisplaySettings;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v5
 
@@ -1623,7 +1623,7 @@
 
     .line 505
     :cond_3
-    iget-object v2, p0, Lcom/android/settings/DisplaySettings;->jZ:Landroid/preference/CheckBoxPreference;
+    iget-object v2, p0, Lcom/android/settings_ext/DisplaySettings;->jZ:Landroid/preference/CheckBoxPreference;
 
     if-ne p1, v2, :cond_4
 
@@ -1637,7 +1637,7 @@
     move-result v2
 
     .line 507
-    invoke-virtual {p0}, Lcom/android/settings/DisplaySettings;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/settings_ext/DisplaySettings;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v5
 
@@ -1652,7 +1652,7 @@
 
     .line 510
     :cond_4
-    iget-object v2, p0, Lcom/android/settings/DisplaySettings;->ka:Landroid/preference/CheckBoxPreference;
+    iget-object v2, p0, Lcom/android/settings_ext/DisplaySettings;->ka:Landroid/preference/CheckBoxPreference;
 
     if-ne p1, v2, :cond_6
 
@@ -1664,7 +1664,7 @@
     move-result v2
 
     .line 512
-    invoke-virtual {p0}, Lcom/android/settings/DisplaySettings;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/settings_ext/DisplaySettings;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v5
 
@@ -1720,23 +1720,23 @@
     const/4 v0, 0x1
 
     .line 521
-    iget-object v1, p0, Lcom/android/settings/DisplaySettings;->jV:Lcom/android/settings/WarnedListPreference;
+    iget-object v1, p0, Lcom/android/settings_ext/DisplaySettings;->jV:Lcom/android/settings_ext/WarnedListPreference;
 
     if-ne p1, v1, :cond_1
 
     .line 522
-    invoke-virtual {p0}, Lcom/android/settings/DisplaySettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/DisplaySettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v1
 
-    invoke-static {v1}, Lcom/android/settings/hl;->S(Landroid/content/Context;)Z
+    invoke-static {v1}, Lcom/android/settings_ext/hl;->S(Landroid/content/Context;)Z
 
     move-result v1
 
     if-eqz v1, :cond_0
 
     .line 523
-    invoke-virtual {p0, v0}, Lcom/android/settings/DisplaySettings;->showDialog(I)V
+    invoke-virtual {p0, v0}, Lcom/android/settings_ext/DisplaySettings;->showDialog(I)V
 
     .line 529
     :goto_0
@@ -1744,9 +1744,9 @@
 
     .line 526
     :cond_0
-    iget-object v0, p0, Lcom/android/settings/DisplaySettings;->jV:Lcom/android/settings/WarnedListPreference;
+    iget-object v0, p0, Lcom/android/settings_ext/DisplaySettings;->jV:Lcom/android/settings_ext/WarnedListPreference;
 
-    invoke-virtual {v0}, Lcom/android/settings/WarnedListPreference;->click()V
+    invoke-virtual {v0}, Lcom/android/settings_ext/WarnedListPreference;->click()V
 
     .line 529
     :cond_1
@@ -1760,16 +1760,16 @@
 
     .prologue
     .line 473
-    iget-object v0, p0, Lcom/android/settings/DisplaySettings;->kc:Landroid/preference/CheckBoxPreference;
+    iget-object v0, p0, Lcom/android/settings_ext/DisplaySettings;->kc:Landroid/preference/CheckBoxPreference;
 
     if-ne p2, v0, :cond_0
 
     .line 474
-    invoke-virtual {p0}, Lcom/android/settings/DisplaySettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/DisplaySettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v1
 
-    iget-object v0, p0, Lcom/android/settings/DisplaySettings;->kc:Landroid/preference/CheckBoxPreference;
+    iget-object v0, p0, Lcom/android/settings_ext/DisplaySettings;->kc:Landroid/preference/CheckBoxPreference;
 
     invoke-virtual {v0}, Landroid/preference/CheckBoxPreference;->isChecked()Z
 
@@ -1784,7 +1784,7 @@
 
     .line 478
     :cond_0
-    invoke-super {p0, p1, p2}, Lcom/android/settings/SettingsPreferenceFragment;->onPreferenceTreeClick(Landroid/preference/PreferenceScreen;Landroid/preference/Preference;)Z
+    invoke-super {p0, p1, p2}, Lcom/android/settings_ext/SettingsPreferenceFragment;->onPreferenceTreeClick(Landroid/preference/PreferenceScreen;Landroid/preference/Preference;)Z
 
     move-result v0
 
@@ -1802,19 +1802,19 @@
 
     .prologue
     .line 386
-    invoke-super {p0}, Lcom/android/settings/SettingsPreferenceFragment;->onResume()V
+    invoke-super {p0}, Lcom/android/settings_ext/SettingsPreferenceFragment;->onResume()V
 
     .line 389
-    invoke-virtual {p0}, Lcom/android/settings/DisplaySettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/DisplaySettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/android/settings/DisplaySettings;->kd:Lcom/android/internal/view/RotationPolicy$RotationPolicyListener;
+    iget-object v1, p0, Lcom/android/settings_ext/DisplaySettings;->kd:Lcom/android/internal/view/RotationPolicy$RotationPolicyListener;
 
     invoke-static {v0, v1}, Lcom/android/internal/view/RotationPolicy;->registerRotationPolicyListener(Landroid/content/Context;Lcom/android/internal/view/RotationPolicy$RotationPolicyListener;)V
 
     .line 392
-    invoke-direct {p0}, Lcom/android/settings/DisplaySettings;->updateState()V
+    invoke-direct {p0}, Lcom/android/settings_ext/DisplaySettings;->updateState()V
 
     .line 393
     return-void

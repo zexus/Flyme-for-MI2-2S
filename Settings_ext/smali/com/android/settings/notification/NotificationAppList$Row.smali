@@ -1,4 +1,4 @@
-.class Lcom/android/settings/notification/NotificationAppList$Row;
+.class Lcom/android/settings_ext/notification/NotificationAppList$Row;
 .super Ljava/lang/Object;
 .source "NotificationAppList.java"
 
@@ -18,12 +18,12 @@
     return-void
 .end method
 
-.method synthetic constructor <init>(Lcom/android/settings/notification/NotificationAppList$1;)V
+.method synthetic constructor <init>(Lcom/android/settings_ext/notification/NotificationAppList$1;)V
     .locals 0
 
     .prologue
     .line 348
-    invoke-direct {p0}, Lcom/android/settings/notification/NotificationAppList$Row;-><init>()V
+    invoke-direct {p0}, Lcom/android/settings_ext/notification/NotificationAppList$Row;-><init>()V
 
     return-void
 .end method

@@ -1,13 +1,13 @@
-.class public Lcom/android/settings/s;
+.class public Lcom/android/settings_ext/s;
 .super Ljava/lang/Object;
 .source "ActivityPicker.java"
 
 # interfaces
-.implements Lcom/android/settings/N;
+.implements Lcom/android/settings_ext/N;
 
 
 # static fields
-.field protected static T:Lcom/android/settings/q;
+.field protected static T:Lcom/android/settings_ext/q;
 
 
 # instance fields
@@ -35,10 +35,10 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/s;->label:Ljava/lang/CharSequence;
+    iput-object v0, p0, Lcom/android/settings_ext/s;->label:Ljava/lang/CharSequence;
 
     .line 236
-    iget-object v0, p0, Lcom/android/settings/s;->label:Ljava/lang/CharSequence;
+    iget-object v0, p0, Lcom/android/settings_ext/s;->label:Ljava/lang/CharSequence;
 
     if-nez v0, :cond_0
 
@@ -51,11 +51,11 @@
 
     iget-object v0, v0, Landroid/content/pm/ActivityInfo;->name:Ljava/lang/String;
 
-    iput-object v0, p0, Lcom/android/settings/s;->label:Ljava/lang/CharSequence;
+    iput-object v0, p0, Lcom/android/settings_ext/s;->label:Ljava/lang/CharSequence;
 
     .line 240
     :cond_0
-    invoke-virtual {p0, p1}, Lcom/android/settings/s;->a(Landroid/content/Context;)Lcom/android/settings/q;
+    invoke-virtual {p0, p1}, Lcom/android/settings_ext/s;->a(Landroid/content/Context;)Lcom/android/settings_ext/q;
 
     move-result-object v0
 
@@ -63,11 +63,11 @@
 
     move-result-object v1
 
-    invoke-virtual {v0, v1}, Lcom/android/settings/q;->createIconThumbnail(Landroid/graphics/drawable/Drawable;)Landroid/graphics/drawable/Drawable;
+    invoke-virtual {v0, v1}, Lcom/android/settings_ext/q;->createIconThumbnail(Landroid/graphics/drawable/Drawable;)Landroid/graphics/drawable/Drawable;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/s;->icon:Landroid/graphics/drawable/Drawable;
+    iput-object v0, p0, Lcom/android/settings_ext/s;->icon:Landroid/graphics/drawable/Drawable;
 
     .line 241
     iget-object v0, p3, Landroid/content/pm/ResolveInfo;->activityInfo:Landroid/content/pm/ActivityInfo;
@@ -76,14 +76,14 @@
 
     iget-object v0, v0, Landroid/content/pm/ApplicationInfo;->packageName:Ljava/lang/String;
 
-    iput-object v0, p0, Lcom/android/settings/s;->packageName:Ljava/lang/String;
+    iput-object v0, p0, Lcom/android/settings_ext/s;->packageName:Ljava/lang/String;
 
     .line 242
     iget-object v0, p3, Landroid/content/pm/ResolveInfo;->activityInfo:Landroid/content/pm/ActivityInfo;
 
     iget-object v0, v0, Landroid/content/pm/ActivityInfo;->name:Ljava/lang/String;
 
-    iput-object v0, p0, Lcom/android/settings/s;->className:Ljava/lang/String;
+    iput-object v0, p0, Lcom/android/settings_ext/s;->className:Ljava/lang/String;
 
     .line 243
     return-void
@@ -97,18 +97,18 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 226
-    iput-object p2, p0, Lcom/android/settings/s;->label:Ljava/lang/CharSequence;
+    iput-object p2, p0, Lcom/android/settings_ext/s;->label:Ljava/lang/CharSequence;
 
     .line 227
-    invoke-virtual {p0, p1}, Lcom/android/settings/s;->a(Landroid/content/Context;)Lcom/android/settings/q;
+    invoke-virtual {p0, p1}, Lcom/android/settings_ext/s;->a(Landroid/content/Context;)Lcom/android/settings_ext/q;
 
     move-result-object v0
 
-    invoke-virtual {v0, p3}, Lcom/android/settings/q;->createIconThumbnail(Landroid/graphics/drawable/Drawable;)Landroid/graphics/drawable/Drawable;
+    invoke-virtual {v0, p3}, Lcom/android/settings_ext/q;->createIconThumbnail(Landroid/graphics/drawable/Drawable;)Landroid/graphics/drawable/Drawable;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/s;->icon:Landroid/graphics/drawable/Drawable;
+    iput-object v0, p0, Lcom/android/settings_ext/s;->icon:Landroid/graphics/drawable/Drawable;
 
     .line 228
     return-void
@@ -126,28 +126,28 @@
     invoke-direct {v0, p1}, Landroid/content/Intent;-><init>(Landroid/content/Intent;)V
 
     .line 252
-    iget-object v1, p0, Lcom/android/settings/s;->packageName:Ljava/lang/String;
+    iget-object v1, p0, Lcom/android/settings_ext/s;->packageName:Ljava/lang/String;
 
     if-eqz v1, :cond_1
 
-    iget-object v1, p0, Lcom/android/settings/s;->className:Ljava/lang/String;
+    iget-object v1, p0, Lcom/android/settings_ext/s;->className:Ljava/lang/String;
 
     if-eqz v1, :cond_1
 
     .line 254
-    iget-object v1, p0, Lcom/android/settings/s;->packageName:Ljava/lang/String;
+    iget-object v1, p0, Lcom/android/settings_ext/s;->packageName:Ljava/lang/String;
 
-    iget-object v2, p0, Lcom/android/settings/s;->className:Ljava/lang/String;
+    iget-object v2, p0, Lcom/android/settings_ext/s;->className:Ljava/lang/String;
 
     invoke-virtual {v0, v1, v2}, Landroid/content/Intent;->setClassName(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
 
     .line 255
-    iget-object v1, p0, Lcom/android/settings/s;->extras:Landroid/os/Bundle;
+    iget-object v1, p0, Lcom/android/settings_ext/s;->extras:Landroid/os/Bundle;
 
     if-eqz v1, :cond_0
 
     .line 256
-    iget-object v1, p0, Lcom/android/settings/s;->extras:Landroid/os/Bundle;
+    iget-object v1, p0, Lcom/android/settings_ext/s;->extras:Landroid/os/Bundle;
 
     invoke-virtual {v0, v1}, Landroid/content/Intent;->putExtras(Landroid/os/Bundle;)Landroid/content/Intent;
 
@@ -165,19 +165,19 @@
     .line 261
     const-string v1, "android.intent.extra.shortcut.NAME"
 
-    iget-object v2, p0, Lcom/android/settings/s;->label:Ljava/lang/CharSequence;
+    iget-object v2, p0, Lcom/android/settings_ext/s;->label:Ljava/lang/CharSequence;
 
     invoke-virtual {v0, v1, v2}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Ljava/lang/CharSequence;)Landroid/content/Intent;
 
     goto :goto_0
 .end method
 
-.method protected a(Landroid/content/Context;)Lcom/android/settings/q;
+.method protected a(Landroid/content/Context;)Lcom/android/settings_ext/q;
     .locals 3
 
     .prologue
     .line 208
-    sget-object v0, Lcom/android/settings/s;->T:Lcom/android/settings/q;
+    sget-object v0, Lcom/android/settings_ext/s;->T:Lcom/android/settings_ext/q;
 
     if-nez v0, :cond_0
 
@@ -196,19 +196,19 @@
     float-to-int v1, v1
 
     .line 211
-    new-instance v2, Lcom/android/settings/q;
+    new-instance v2, Lcom/android/settings_ext/q;
 
     invoke-virtual {v0}, Landroid/content/res/Resources;->getDisplayMetrics()Landroid/util/DisplayMetrics;
 
     move-result-object v0
 
-    invoke-direct {v2, v1, v1, v0}, Lcom/android/settings/q;-><init>(IILandroid/util/DisplayMetrics;)V
+    invoke-direct {v2, v1, v1, v0}, Lcom/android/settings_ext/q;-><init>(IILandroid/util/DisplayMetrics;)V
 
-    sput-object v2, Lcom/android/settings/s;->T:Lcom/android/settings/q;
+    sput-object v2, Lcom/android/settings_ext/s;->T:Lcom/android/settings_ext/q;
 
     .line 213
     :cond_0
-    sget-object v0, Lcom/android/settings/s;->T:Lcom/android/settings/q;
+    sget-object v0, Lcom/android/settings_ext/s;->T:Lcom/android/settings_ext/q;
 
     return-object v0
 .end method
@@ -218,7 +218,7 @@
 
     .prologue
     .line 267
-    iget-object v0, p0, Lcom/android/settings/s;->label:Ljava/lang/CharSequence;
+    iget-object v0, p0, Lcom/android/settings_ext/s;->label:Ljava/lang/CharSequence;
 
     return-object v0
 .end method

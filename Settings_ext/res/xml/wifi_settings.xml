@@ -5,6 +5,6 @@
     <miui.preference.ValuePreference android:title="@string/wifi_share" android:key="wifi_share" android:order="2" />
     <PreferenceCategory android:title="@string/wifi_settings_category" android:key="wifi_settings" android:order="100">
         <CheckBoxPreference android:persistent="false" android:title="@string/wifi_notify_open_networks" android:key="notify_open_networks" android:summary="@string/wifi_notify_open_networks_summary" />
-        <Preference android:persistent="false" android:title="@string/advanced_settings" android:fragment="com.android.settings.wifi.AdvancedWifiSettings" />
+        <Preference android:persistent="false" android:title="@string/advanced_settings" android:fragment="com.android.settings_ext.wifi.AdvancedWifiSettings" />
     </PreferenceCategory>
 </PreferenceScreen>

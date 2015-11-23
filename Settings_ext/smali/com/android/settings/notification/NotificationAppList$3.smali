@@ -1,4 +1,4 @@
-.class Lcom/android/settings/notification/NotificationAppList$3;
+.class Lcom/android/settings_ext/notification/NotificationAppList$3;
 .super Ljava/lang/Object;
 .source "NotificationAppList.java"
 
@@ -7,16 +7,16 @@
 
 
 # instance fields
-.field final synthetic aeO:Lcom/android/settings/notification/NotificationAppList;
+.field final synthetic aeO:Lcom/android/settings_ext/notification/NotificationAppList;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/notification/NotificationAppList;)V
+.method constructor <init>(Lcom/android/settings_ext/notification/NotificationAppList;)V
     .locals 0
 
     .prologue
     .line 523
-    iput-object p1, p0, Lcom/android/settings/notification/NotificationAppList$3;->aeO:Lcom/android/settings/notification/NotificationAppList;
+    iput-object p1, p0, Lcom/android/settings_ext/notification/NotificationAppList$3;->aeO:Lcom/android/settings_ext/notification/NotificationAppList;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -30,9 +30,9 @@
 
     .prologue
     .line 526
-    iget-object v0, p0, Lcom/android/settings/notification/NotificationAppList$3;->aeO:Lcom/android/settings/notification/NotificationAppList;
+    iget-object v0, p0, Lcom/android/settings_ext/notification/NotificationAppList$3;->aeO:Lcom/android/settings_ext/notification/NotificationAppList;
 
-    invoke-static {v0}, Lcom/android/settings/notification/NotificationAppList;->k(Lcom/android/settings/notification/NotificationAppList;)V
+    invoke-static {v0}, Lcom/android/settings_ext/notification/NotificationAppList;->k(Lcom/android/settings_ext/notification/NotificationAppList;)V
 
     .line 527
     return-void

@@ -1,4 +1,4 @@
-.class public Lcom/android/settings/display/PaperModePreference;
+.class public Lcom/android/settings_ext/display/PaperModePreference;
 .super Lmiui/preference/RadioButtonPreference;
 .source "PaperModePreference.java"
 
@@ -9,7 +9,7 @@
 # instance fields
 .field private VJ:Z
 
-.field private VK:Lcom/android/settings/display/z;
+.field private VK:Lcom/android/settings_ext/display/z;
 
 
 # direct methods
@@ -20,7 +20,7 @@
     .line 24
     const/4 v0, 0x0
 
-    invoke-direct {p0, p1, v0}, Lcom/android/settings/display/PaperModePreference;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
+    invoke-direct {p0, p1, v0}, Lcom/android/settings_ext/display/PaperModePreference;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
     .line 25
     return-void
@@ -36,12 +36,12 @@
     .line 16
     const/4 v0, 0x0
 
-    iput-object v0, p0, Lcom/android/settings/display/PaperModePreference;->VK:Lcom/android/settings/display/z;
+    iput-object v0, p0, Lcom/android/settings_ext/display/PaperModePreference;->VK:Lcom/android/settings_ext/display/z;
 
     .line 20
     const v0, 0x7f0400c8
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/display/PaperModePreference;->setWidgetLayoutResource(I)V
+    invoke-virtual {p0, v0}, Lcom/android/settings_ext/display/PaperModePreference;->setWidgetLayoutResource(I)V
 
     .line 21
     return-void
@@ -49,12 +49,12 @@
 
 
 # virtual methods
-.method public a(Lcom/android/settings/display/z;)V
+.method public a(Lcom/android/settings_ext/display/z;)V
     .locals 0
 
     .prologue
     .line 36
-    iput-object p1, p0, Lcom/android/settings/display/PaperModePreference;->VK:Lcom/android/settings/display/z;
+    iput-object p1, p0, Lcom/android/settings_ext/display/PaperModePreference;->VK:Lcom/android/settings_ext/display/z;
 
     .line 37
     return-void
@@ -80,7 +80,7 @@
     invoke-virtual {v0, p0}, Landroid/widget/ImageView;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     .line 32
-    iget-boolean v1, p0, Lcom/android/settings/display/PaperModePreference;->VJ:Z
+    iget-boolean v1, p0, Lcom/android/settings_ext/display/PaperModePreference;->VJ:Z
 
     if-eqz v1, :cond_0
 
@@ -104,14 +104,14 @@
 
     .prologue
     .line 41
-    iget-object v0, p0, Lcom/android/settings/display/PaperModePreference;->VK:Lcom/android/settings/display/z;
+    iget-object v0, p0, Lcom/android/settings_ext/display/PaperModePreference;->VK:Lcom/android/settings_ext/display/z;
 
     if-eqz v0, :cond_0
 
     .line 42
-    iget-object v0, p0, Lcom/android/settings/display/PaperModePreference;->VK:Lcom/android/settings/display/z;
+    iget-object v0, p0, Lcom/android/settings_ext/display/PaperModePreference;->VK:Lcom/android/settings_ext/display/z;
 
-    invoke-interface {v0, p0}, Lcom/android/settings/display/z;->a(Lmiui/preference/RadioButtonPreference;)V
+    invoke-interface {v0, p0}, Lcom/android/settings_ext/display/z;->a(Lmiui/preference/RadioButtonPreference;)V
 
     .line 44
     :cond_0
@@ -123,7 +123,7 @@
 
     .prologue
     .line 47
-    iput-boolean p1, p0, Lcom/android/settings/display/PaperModePreference;->VJ:Z
+    iput-boolean p1, p0, Lcom/android/settings_ext/display/PaperModePreference;->VJ:Z
 
     .line 48
     return-void

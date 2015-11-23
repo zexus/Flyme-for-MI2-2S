@@ -1,4 +1,4 @@
-.class Lcom/android/settings/applications/PreferredSmsSettings$DisplayNameComparator;
+.class Lcom/android/settings_ext/applications/PreferredSmsSettings$DisplayNameComparator;
 .super Ljava/lang/Object;
 .source "PreferredSmsSettings.java"
 
@@ -23,10 +23,10 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/applications/PreferredSmsSettings$DisplayNameComparator;->bn:Ljava/text/Collator;
+    iput-object v0, p0, Lcom/android/settings_ext/applications/PreferredSmsSettings$DisplayNameComparator;->bn:Ljava/text/Collator;
 
     .line 131
-    iget-object v0, p0, Lcom/android/settings/applications/PreferredSmsSettings$DisplayNameComparator;->bn:Ljava/text/Collator;
+    iget-object v0, p0, Lcom/android/settings_ext/applications/PreferredSmsSettings$DisplayNameComparator;->bn:Ljava/text/Collator;
 
     const/4 v1, 0x0
 
@@ -43,7 +43,7 @@
 
     .prologue
     .line 135
-    iget-object v0, p0, Lcom/android/settings/applications/PreferredSmsSettings$DisplayNameComparator;->bn:Ljava/text/Collator;
+    iget-object v0, p0, Lcom/android/settings_ext/applications/PreferredSmsSettings$DisplayNameComparator;->bn:Ljava/text/Collator;
 
     iget-object v1, p1, Lcom/android/internal/telephony/SmsApplication$SmsApplicationData;->mApplicationName:Ljava/lang/String;
 
@@ -69,7 +69,7 @@
 
     check-cast p2, Lcom/android/internal/telephony/SmsApplication$SmsApplicationData;
 
-    invoke-virtual {p0, p1, p2}, Lcom/android/settings/applications/PreferredSmsSettings$DisplayNameComparator;->a(Lcom/android/internal/telephony/SmsApplication$SmsApplicationData;Lcom/android/internal/telephony/SmsApplication$SmsApplicationData;)I
+    invoke-virtual {p0, p1, p2}, Lcom/android/settings_ext/applications/PreferredSmsSettings$DisplayNameComparator;->a(Lcom/android/internal/telephony/SmsApplication$SmsApplicationData;Lcom/android/internal/telephony/SmsApplication$SmsApplicationData;)I
 
     move-result v0
 

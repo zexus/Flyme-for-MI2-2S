@@ -1,4 +1,4 @@
-.class public Lcom/android/settings/ringtone/MultiSimRingtonePreference;
+.class public Lcom/android/settings_ext/ringtone/MultiSimRingtonePreference;
 .super Lmiui/preference/ValuePreference;
 .source "MultiSimRingtonePreference.java"
 
@@ -28,67 +28,67 @@
     invoke-direct {p0, p1, p2}, Lmiui/preference/ValuePreference;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
     .line 32
-    iput v2, p0, Lcom/android/settings/ringtone/MultiSimRingtonePreference;->aic:I
+    iput v2, p0, Lcom/android/settings_ext/ringtone/MultiSimRingtonePreference;->aic:I
 
     .line 33
-    iput v3, p0, Lcom/android/settings/ringtone/MultiSimRingtonePreference;->aid:I
+    iput v3, p0, Lcom/android/settings_ext/ringtone/MultiSimRingtonePreference;->aid:I
 
     .line 35
-    new-instance v0, Lcom/android/settings/ringtone/MultiSimRingtonePreference$1;
+    new-instance v0, Lcom/android/settings_ext/ringtone/MultiSimRingtonePreference$1;
 
     invoke-static {}, Landroid/os/Looper;->getMainLooper()Landroid/os/Looper;
 
     move-result-object v1
 
-    invoke-direct {v0, p0, v1}, Lcom/android/settings/ringtone/MultiSimRingtonePreference$1;-><init>(Lcom/android/settings/ringtone/MultiSimRingtonePreference;Landroid/os/Looper;)V
+    invoke-direct {v0, p0, v1}, Lcom/android/settings_ext/ringtone/MultiSimRingtonePreference$1;-><init>(Lcom/android/settings_ext/ringtone/MultiSimRingtonePreference;Landroid/os/Looper;)V
 
-    iput-object v0, p0, Lcom/android/settings/ringtone/MultiSimRingtonePreference;->mHandler:Landroid/os/Handler;
+    iput-object v0, p0, Lcom/android/settings_ext/ringtone/MultiSimRingtonePreference;->mHandler:Landroid/os/Handler;
 
     .line 46
-    new-instance v0, Lcom/android/settings/ringtone/MultiSimRingtonePreference$2;
+    new-instance v0, Lcom/android/settings_ext/ringtone/MultiSimRingtonePreference$2;
 
-    invoke-direct {v0, p0}, Lcom/android/settings/ringtone/MultiSimRingtonePreference$2;-><init>(Lcom/android/settings/ringtone/MultiSimRingtonePreference;)V
+    invoke-direct {v0, p0}, Lcom/android/settings_ext/ringtone/MultiSimRingtonePreference$2;-><init>(Lcom/android/settings_ext/ringtone/MultiSimRingtonePreference;)V
 
-    iput-object v0, p0, Lcom/android/settings/ringtone/MultiSimRingtonePreference;->aie:Ljava/lang/Runnable;
+    iput-object v0, p0, Lcom/android/settings_ext/ringtone/MultiSimRingtonePreference;->aie:Ljava/lang/Runnable;
 
     .line 55
-    iput v2, p0, Lcom/android/settings/ringtone/MultiSimRingtonePreference;->aif:I
+    iput v2, p0, Lcom/android/settings_ext/ringtone/MultiSimRingtonePreference;->aif:I
 
     .line 59
-    invoke-virtual {p0, v3}, Lcom/android/settings/ringtone/MultiSimRingtonePreference;->setShowRightArrow(Z)V
+    invoke-virtual {p0, v3}, Lcom/android/settings_ext/ringtone/MultiSimRingtonePreference;->setShowRightArrow(Z)V
 
     .line 60
     return-void
 .end method
 
-.method static synthetic a(Lcom/android/settings/ringtone/MultiSimRingtonePreference;)Landroid/util/Pair;
+.method static synthetic a(Lcom/android/settings_ext/ringtone/MultiSimRingtonePreference;)Landroid/util/Pair;
     .locals 1
 
     .prologue
     .line 30
-    invoke-direct {p0}, Lcom/android/settings/ringtone/MultiSimRingtonePreference;->rr()Landroid/util/Pair;
+    invoke-direct {p0}, Lcom/android/settings_ext/ringtone/MultiSimRingtonePreference;->rr()Landroid/util/Pair;
 
     move-result-object v0
 
     return-object v0
 .end method
 
-.method static synthetic b(Lcom/android/settings/ringtone/MultiSimRingtonePreference;)Landroid/os/Handler;
+.method static synthetic b(Lcom/android/settings_ext/ringtone/MultiSimRingtonePreference;)Landroid/os/Handler;
     .locals 1
 
     .prologue
     .line 30
-    iget-object v0, p0, Lcom/android/settings/ringtone/MultiSimRingtonePreference;->mHandler:Landroid/os/Handler;
+    iget-object v0, p0, Lcom/android/settings_ext/ringtone/MultiSimRingtonePreference;->mHandler:Landroid/os/Handler;
 
     return-object v0
 .end method
 
-.method static synthetic c(Lcom/android/settings/ringtone/MultiSimRingtonePreference;)Ljava/lang/String;
+.method static synthetic c(Lcom/android/settings_ext/ringtone/MultiSimRingtonePreference;)Ljava/lang/String;
     .locals 1
 
     .prologue
     .line 30
-    invoke-direct {p0}, Lcom/android/settings/ringtone/MultiSimRingtonePreference;->rs()Ljava/lang/String;
+    invoke-direct {p0}, Lcom/android/settings_ext/ringtone/MultiSimRingtonePreference;->rs()Ljava/lang/String;
 
     move-result-object v0
 
@@ -100,14 +100,14 @@
 
     .prologue
     .line 109
-    invoke-direct {p0}, Lcom/android/settings/ringtone/MultiSimRingtonePreference;->rt()Z
+    invoke-direct {p0}, Lcom/android/settings_ext/ringtone/MultiSimRingtonePreference;->rt()Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
     .line 110
-    invoke-virtual {p0}, Lcom/android/settings/ringtone/MultiSimRingtonePreference;->getContext()Landroid/content/Context;
+    invoke-virtual {p0}, Lcom/android/settings_ext/ringtone/MultiSimRingtonePreference;->getContext()Landroid/content/Context;
 
     move-result-object v0
 
@@ -127,14 +127,14 @@
 
     .line 111
     :cond_0
-    invoke-direct {p0}, Lcom/android/settings/ringtone/MultiSimRingtonePreference;->ru()Z
+    invoke-direct {p0}, Lcom/android/settings_ext/ringtone/MultiSimRingtonePreference;->ru()Z
 
     move-result v0
 
     if-eqz v0, :cond_1
 
     .line 112
-    invoke-virtual {p0}, Lcom/android/settings/ringtone/MultiSimRingtonePreference;->getContext()Landroid/content/Context;
+    invoke-virtual {p0}, Lcom/android/settings_ext/ringtone/MultiSimRingtonePreference;->getContext()Landroid/content/Context;
 
     move-result-object v0
 
@@ -165,14 +165,14 @@
 
     .line 118
     .line 119
-    iget v1, p0, Lcom/android/settings/ringtone/MultiSimRingtonePreference;->aif:I
+    iget v1, p0, Lcom/android/settings_ext/ringtone/MultiSimRingtonePreference;->aif:I
 
     const/4 v2, 0x1
 
     if-ne v1, v2, :cond_0
 
     .line 120
-    invoke-virtual {p0}, Lcom/android/settings/ringtone/MultiSimRingtonePreference;->getContext()Landroid/content/Context;
+    invoke-virtual {p0}, Lcom/android/settings_ext/ringtone/MultiSimRingtonePreference;->getContext()Landroid/content/Context;
 
     move-result-object v1
 
@@ -192,14 +192,14 @@
 
     .line 121
     :cond_0
-    iget v1, p0, Lcom/android/settings/ringtone/MultiSimRingtonePreference;->aif:I
+    iget v1, p0, Lcom/android/settings_ext/ringtone/MultiSimRingtonePreference;->aif:I
 
     const/16 v2, 0x8
 
     if-ne v1, v2, :cond_1
 
     .line 122
-    invoke-virtual {p0}, Lcom/android/settings/ringtone/MultiSimRingtonePreference;->getContext()Landroid/content/Context;
+    invoke-virtual {p0}, Lcom/android/settings_ext/ringtone/MultiSimRingtonePreference;->getContext()Landroid/content/Context;
 
     move-result-object v1
 
@@ -213,14 +213,14 @@
 
     .line 123
     :cond_1
-    iget v1, p0, Lcom/android/settings/ringtone/MultiSimRingtonePreference;->aif:I
+    iget v1, p0, Lcom/android/settings_ext/ringtone/MultiSimRingtonePreference;->aif:I
 
     const/16 v2, 0x10
 
     if-ne v1, v2, :cond_2
 
     .line 124
-    invoke-virtual {p0}, Lcom/android/settings/ringtone/MultiSimRingtonePreference;->getContext()Landroid/content/Context;
+    invoke-virtual {p0}, Lcom/android/settings_ext/ringtone/MultiSimRingtonePreference;->getContext()Landroid/content/Context;
 
     move-result-object v1
 
@@ -238,7 +238,7 @@
 
     move-result-object v1
 
-    invoke-direct {p0}, Lcom/android/settings/ringtone/MultiSimRingtonePreference;->rv()I
+    invoke-direct {p0}, Lcom/android/settings_ext/ringtone/MultiSimRingtonePreference;->rv()I
 
     move-result v2
 
@@ -276,11 +276,11 @@
 
     .prologue
     .line 136
-    invoke-virtual {p0}, Lcom/android/settings/ringtone/MultiSimRingtonePreference;->getContext()Landroid/content/Context;
+    invoke-virtual {p0}, Lcom/android/settings_ext/ringtone/MultiSimRingtonePreference;->getContext()Landroid/content/Context;
 
     move-result-object v0
 
-    iget v1, p0, Lcom/android/settings/ringtone/MultiSimRingtonePreference;->aif:I
+    iget v1, p0, Lcom/android/settings_ext/ringtone/MultiSimRingtonePreference;->aif:I
 
     invoke-static {v0, v1}, Landroid/media/ExtraRingtoneManager;->getDefaultSoundName(Landroid/content/Context;I)Ljava/lang/String;
 
@@ -294,19 +294,19 @@
 
     .prologue
     .line 140
-    iget v0, p0, Lcom/android/settings/ringtone/MultiSimRingtonePreference;->aif:I
+    iget v0, p0, Lcom/android/settings_ext/ringtone/MultiSimRingtonePreference;->aif:I
 
     const/16 v1, 0x40
 
     if-eq v0, v1, :cond_0
 
-    iget v0, p0, Lcom/android/settings/ringtone/MultiSimRingtonePreference;->aif:I
+    iget v0, p0, Lcom/android/settings_ext/ringtone/MultiSimRingtonePreference;->aif:I
 
     const/16 v1, 0x400
 
     if-eq v0, v1, :cond_0
 
-    iget v0, p0, Lcom/android/settings/ringtone/MultiSimRingtonePreference;->aif:I
+    iget v0, p0, Lcom/android/settings_ext/ringtone/MultiSimRingtonePreference;->aif:I
 
     const/16 v1, 0x100
 
@@ -329,19 +329,19 @@
 
     .prologue
     .line 146
-    iget v0, p0, Lcom/android/settings/ringtone/MultiSimRingtonePreference;->aif:I
+    iget v0, p0, Lcom/android/settings_ext/ringtone/MultiSimRingtonePreference;->aif:I
 
     const/16 v1, 0x80
 
     if-eq v0, v1, :cond_0
 
-    iget v0, p0, Lcom/android/settings/ringtone/MultiSimRingtonePreference;->aif:I
+    iget v0, p0, Lcom/android/settings_ext/ringtone/MultiSimRingtonePreference;->aif:I
 
     const/16 v1, 0x800
 
     if-eq v0, v1, :cond_0
 
-    iget v0, p0, Lcom/android/settings/ringtone/MultiSimRingtonePreference;->aif:I
+    iget v0, p0, Lcom/android/settings_ext/ringtone/MultiSimRingtonePreference;->aif:I
 
     const/16 v1, 0x200
 
@@ -364,7 +364,7 @@
 
     .prologue
     .line 152
-    invoke-direct {p0}, Lcom/android/settings/ringtone/MultiSimRingtonePreference;->rt()Z
+    invoke-direct {p0}, Lcom/android/settings_ext/ringtone/MultiSimRingtonePreference;->rt()Z
 
     move-result v0
 
@@ -379,7 +379,7 @@
 
     .line 154
     :cond_0
-    invoke-direct {p0}, Lcom/android/settings/ringtone/MultiSimRingtonePreference;->ru()Z
+    invoke-direct {p0}, Lcom/android/settings_ext/ringtone/MultiSimRingtonePreference;->ru()Z
 
     move-result v0
 
@@ -404,25 +404,25 @@
 
     .prologue
     .line 71
-    iget v0, p0, Lcom/android/settings/ringtone/MultiSimRingtonePreference;->aif:I
+    iget v0, p0, Lcom/android/settings_ext/ringtone/MultiSimRingtonePreference;->aif:I
 
     if-eq v0, p1, :cond_0
 
     .line 72
-    iput p1, p0, Lcom/android/settings/ringtone/MultiSimRingtonePreference;->aif:I
+    iput p1, p0, Lcom/android/settings_ext/ringtone/MultiSimRingtonePreference;->aif:I
 
     .line 73
-    invoke-direct {p0}, Lcom/android/settings/ringtone/MultiSimRingtonePreference;->rq()Landroid/graphics/drawable/Drawable;
+    invoke-direct {p0}, Lcom/android/settings_ext/ringtone/MultiSimRingtonePreference;->rq()Landroid/graphics/drawable/Drawable;
 
     move-result-object v0
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/ringtone/MultiSimRingtonePreference;->setIcon(Landroid/graphics/drawable/Drawable;)V
+    invoke-virtual {p0, v0}, Lcom/android/settings_ext/ringtone/MultiSimRingtonePreference;->setIcon(Landroid/graphics/drawable/Drawable;)V
 
     .line 75
     :cond_0
     new-instance v0, Ljava/lang/Thread;
 
-    iget-object v1, p0, Lcom/android/settings/ringtone/MultiSimRingtonePreference;->aie:Ljava/lang/Runnable;
+    iget-object v1, p0, Lcom/android/settings_ext/ringtone/MultiSimRingtonePreference;->aie:Ljava/lang/Runnable;
 
     invoke-direct {v0, v1}, Ljava/lang/Thread;-><init>(Ljava/lang/Runnable;)V
 
@@ -467,11 +467,11 @@
 
     .prologue
     .line 105
-    invoke-virtual {p0}, Lcom/android/settings/ringtone/MultiSimRingtonePreference;->getContext()Landroid/content/Context;
+    invoke-virtual {p0}, Lcom/android/settings_ext/ringtone/MultiSimRingtonePreference;->getContext()Landroid/content/Context;
 
     move-result-object v0
 
-    iget v1, p0, Lcom/android/settings/ringtone/MultiSimRingtonePreference;->aif:I
+    iget v1, p0, Lcom/android/settings_ext/ringtone/MultiSimRingtonePreference;->aif:I
 
     invoke-static {v0, v1, p1}, Landroid/media/ExtraRingtoneManager;->saveDefaultSound(Landroid/content/Context;ILandroid/net/Uri;)V
 
@@ -493,7 +493,7 @@
     invoke-direct {v0, v1}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
 
     .line 80
-    iget v1, p0, Lcom/android/settings/ringtone/MultiSimRingtonePreference;->aif:I
+    iget v1, p0, Lcom/android/settings_ext/ringtone/MultiSimRingtonePreference;->aif:I
 
     sparse-switch v1, :sswitch_data_0
 
@@ -501,11 +501,11 @@
     :goto_0
     const-string v1, "android.intent.extra.ringtone.EXISTING_URI"
 
-    invoke-virtual {p0}, Lcom/android/settings/ringtone/MultiSimRingtonePreference;->getContext()Landroid/content/Context;
+    invoke-virtual {p0}, Lcom/android/settings_ext/ringtone/MultiSimRingtonePreference;->getContext()Landroid/content/Context;
 
     move-result-object v2
 
-    iget v3, p0, Lcom/android/settings/ringtone/MultiSimRingtonePreference;->aif:I
+    iget v3, p0, Lcom/android/settings_ext/ringtone/MultiSimRingtonePreference;->aif:I
 
     invoke-static {v2, v3}, Landroid/media/ExtraRingtoneManager;->getDefaultSoundSettingUri(Landroid/content/Context;I)Landroid/net/Uri;
 

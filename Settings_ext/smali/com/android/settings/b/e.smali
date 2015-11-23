@@ -1,10 +1,10 @@
-.class Lcom/android/settings/b/e;
+.class Lcom/android/settings_ext/b/e;
 .super Landroid/preference/SwitchPreference;
 .source "DataUsageMeteredSettings.java"
 
 
 # instance fields
-.field final synthetic ads:Lcom/android/settings/b/c;
+.field final synthetic ads:Lcom/android/settings_ext/b/c;
 
 .field private final gf:Landroid/net/NetworkTemplate;
 
@@ -12,7 +12,7 @@
 
 
 # direct methods
-.method public constructor <init>(Lcom/android/settings/b/c;Landroid/content/Context;Landroid/net/NetworkTemplate;)V
+.method public constructor <init>(Lcom/android/settings_ext/b/c;Landroid/content/Context;Landroid/net/NetworkTemplate;)V
     .locals 8
 
     .prologue
@@ -21,26 +21,26 @@
     const/4 v6, 0x0
 
     .line 122
-    iput-object p1, p0, Lcom/android/settings/b/e;->ads:Lcom/android/settings/b/c;
+    iput-object p1, p0, Lcom/android/settings_ext/b/e;->ads:Lcom/android/settings_ext/b/c;
 
     .line 123
     invoke-direct {p0, p2}, Landroid/preference/SwitchPreference;-><init>(Landroid/content/Context;)V
 
     .line 124
-    iput-object p3, p0, Lcom/android/settings/b/e;->gf:Landroid/net/NetworkTemplate;
+    iput-object p3, p0, Lcom/android/settings_ext/b/e;->gf:Landroid/net/NetworkTemplate;
 
     .line 126
-    invoke-virtual {p0, v6}, Lcom/android/settings/b/e;->setPersistent(Z)V
+    invoke-virtual {p0, v6}, Lcom/android/settings_ext/b/e;->setPersistent(Z)V
 
     .line 128
-    iput-boolean v7, p0, Lcom/android/settings/b/e;->gr:Z
+    iput-boolean v7, p0, Lcom/android/settings_ext/b/e;->gr:Z
 
     .line 129
-    invoke-static {p1}, Lcom/android/settings/b/c;->a(Lcom/android/settings/b/c;)Lcom/android/settings/b/f;
+    invoke-static {p1}, Lcom/android/settings_ext/b/c;->a(Lcom/android/settings_ext/b/c;)Lcom/android/settings_ext/b/f;
 
     move-result-object v0
 
-    invoke-virtual {v0, p3}, Lcom/android/settings/b/f;->c(Landroid/net/NetworkTemplate;)Landroid/net/NetworkPolicy;
+    invoke-virtual {v0, p3}, Lcom/android/settings_ext/b/f;->c(Landroid/net/NetworkTemplate;)Landroid/net/NetworkPolicy;
 
     move-result-object v0
 
@@ -57,14 +57,14 @@
     if-eqz v1, :cond_0
 
     .line 132
-    invoke-virtual {p0, v7}, Lcom/android/settings/b/e;->setChecked(Z)V
+    invoke-virtual {p0, v7}, Lcom/android/settings_ext/b/e;->setChecked(Z)V
 
     .line 133
-    invoke-virtual {p0, v6}, Lcom/android/settings/b/e;->setEnabled(Z)V
+    invoke-virtual {p0, v6}, Lcom/android/settings_ext/b/e;->setEnabled(Z)V
 
     .line 140
     :goto_0
-    iput-boolean v6, p0, Lcom/android/settings/b/e;->gr:Z
+    iput-boolean v6, p0, Lcom/android/settings_ext/b/e;->gr:Z
 
     .line 141
     return-void
@@ -73,13 +73,13 @@
     :cond_0
     iget-boolean v0, v0, Landroid/net/NetworkPolicy;->metered:Z
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/b/e;->setChecked(Z)V
+    invoke-virtual {p0, v0}, Lcom/android/settings_ext/b/e;->setChecked(Z)V
 
     goto :goto_0
 
     .line 138
     :cond_1
-    invoke-virtual {p0, v6}, Lcom/android/settings/b/e;->setChecked(Z)V
+    invoke-virtual {p0, v6}, Lcom/android/settings_ext/b/e;->setChecked(Z)V
 
     goto :goto_0
 .end method
@@ -94,24 +94,24 @@
     invoke-super {p0}, Landroid/preference/SwitchPreference;->notifyChanged()V
 
     .line 146
-    iget-boolean v0, p0, Lcom/android/settings/b/e;->gr:Z
+    iget-boolean v0, p0, Lcom/android/settings_ext/b/e;->gr:Z
 
     if-nez v0, :cond_0
 
     .line 147
-    iget-object v0, p0, Lcom/android/settings/b/e;->ads:Lcom/android/settings/b/c;
+    iget-object v0, p0, Lcom/android/settings_ext/b/e;->ads:Lcom/android/settings_ext/b/c;
 
-    invoke-static {v0}, Lcom/android/settings/b/c;->a(Lcom/android/settings/b/c;)Lcom/android/settings/b/f;
+    invoke-static {v0}, Lcom/android/settings_ext/b/c;->a(Lcom/android/settings_ext/b/c;)Lcom/android/settings_ext/b/f;
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/android/settings/b/e;->gf:Landroid/net/NetworkTemplate;
+    iget-object v1, p0, Lcom/android/settings_ext/b/e;->gf:Landroid/net/NetworkTemplate;
 
-    invoke-virtual {p0}, Lcom/android/settings/b/e;->isChecked()Z
+    invoke-virtual {p0}, Lcom/android/settings_ext/b/e;->isChecked()Z
 
     move-result v2
 
-    invoke-virtual {v0, v1, v2}, Lcom/android/settings/b/f;->a(Landroid/net/NetworkTemplate;Z)V
+    invoke-virtual {v0, v1, v2}, Lcom/android/settings_ext/b/f;->a(Landroid/net/NetworkTemplate;Z)V
 
     .line 149
     :cond_0

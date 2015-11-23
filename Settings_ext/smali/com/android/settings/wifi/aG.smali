@@ -1,4 +1,4 @@
-.class public Lcom/android/settings/wifi/aG;
+.class public Lcom/android/settings_ext/wifi/aG;
 .super Ljava/lang/Object;
 .source "WifiShareUtils.java"
 
@@ -55,7 +55,7 @@
 
     const v1, 0x7f090cac
 
-    invoke-static {p0, v0, v1}, Lcom/android/settings/wifi/aG;->f(Landroid/content/Context;Ljava/lang/String;I)V
+    invoke-static {p0, v0, v1}, Lcom/android/settings_ext/wifi/aG;->f(Landroid/content/Context;Ljava/lang/String;I)V
 
     .line 73
     return-void
@@ -71,7 +71,7 @@
     move-result-object v0
 
     .line 90
-    invoke-static {v0}, Lcom/android/settings/wifi/aG;->bK(Landroid/content/Context;)Z
+    invoke-static {v0}, Lcom/android/settings_ext/wifi/aG;->bK(Landroid/content/Context;)Z
 
     move-result v1
 
@@ -79,7 +79,7 @@
     if-eqz v1, :cond_0
 
     .line 92
-    invoke-static {v0}, Lcom/android/settings/wifi/aG;->bL(Landroid/content/Context;)V
+    invoke-static {v0}, Lcom/android/settings_ext/wifi/aG;->bL(Landroid/content/Context;)V
 
     .line 97
     :goto_0
@@ -89,7 +89,7 @@
     :cond_0
     new-instance v1, Landroid/content/Intent;
 
-    const-class v2, Lcom/android/settings/wifi/WifiShareActivity;
+    const-class v2, Lcom/android/settings_ext/wifi/WifiShareActivity;
 
     invoke-direct {v1, v0, v2}, Landroid/content/Intent;-><init>(Landroid/content/Context;Ljava/lang/Class;)V
 
@@ -322,7 +322,7 @@
 
     .prologue
     .line 45
-    invoke-static {p0}, Lcom/android/settings/wifi/aG;->getXiaomiAccount(Landroid/content/Context;)Landroid/accounts/Account;
+    invoke-static {p0}, Lcom/android/settings_ext/wifi/aG;->getXiaomiAccount(Landroid/content/Context;)Landroid/accounts/Account;
 
     move-result-object v0
 

@@ -1,4 +1,4 @@
-.class public interface abstract Lcom/android/settings/applications/ApplicationsState$AppFilter;
+.class public interface abstract Lcom/android/settings_ext/applications/ApplicationsState$AppFilter;
 .super Ljava/lang/Object;
 .source "ApplicationsState.java"
 

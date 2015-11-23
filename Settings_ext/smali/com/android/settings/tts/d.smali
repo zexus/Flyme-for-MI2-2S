@@ -1,4 +1,4 @@
-.class Lcom/android/settings/tts/d;
+.class Lcom/android/settings_ext/tts/d;
 .super Ljava/lang/Object;
 .source "TextToSpeechSettings.java"
 
@@ -7,16 +7,16 @@
 
 
 # instance fields
-.field final synthetic akZ:Lcom/android/settings/tts/TextToSpeechSettings;
+.field final synthetic akZ:Lcom/android/settings_ext/tts/TextToSpeechSettings;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/tts/TextToSpeechSettings;)V
+.method constructor <init>(Lcom/android/settings_ext/tts/TextToSpeechSettings;)V
     .locals 0
 
     .prologue
     .line 534
-    iput-object p1, p0, Lcom/android/settings/tts/d;->akZ:Lcom/android/settings/tts/TextToSpeechSettings;
+    iput-object p1, p0, Lcom/android/settings_ext/tts/d;->akZ:Lcom/android/settings_ext/tts/TextToSpeechSettings;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -30,11 +30,11 @@
 
     .prologue
     .line 537
-    iget-object v0, p0, Lcom/android/settings/tts/d;->akZ:Lcom/android/settings/tts/TextToSpeechSettings;
+    iget-object v0, p0, Lcom/android/settings_ext/tts/d;->akZ:Lcom/android/settings_ext/tts/TextToSpeechSettings;
 
-    iget-object v1, p0, Lcom/android/settings/tts/d;->akZ:Lcom/android/settings/tts/TextToSpeechSettings;
+    iget-object v1, p0, Lcom/android/settings_ext/tts/d;->akZ:Lcom/android/settings_ext/tts/TextToSpeechSettings;
 
-    invoke-static {v1}, Lcom/android/settings/tts/TextToSpeechSettings;->a(Lcom/android/settings/tts/TextToSpeechSettings;)Landroid/speech/tts/TextToSpeech;
+    invoke-static {v1}, Lcom/android/settings_ext/tts/TextToSpeechSettings;->a(Lcom/android/settings_ext/tts/TextToSpeechSettings;)Landroid/speech/tts/TextToSpeech;
 
     move-result-object v1
 
@@ -42,18 +42,18 @@
 
     move-result-object v1
 
-    invoke-static {v0, v1}, Lcom/android/settings/tts/TextToSpeechSettings;->a(Lcom/android/settings/tts/TextToSpeechSettings;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v0, v1}, Lcom/android/settings_ext/tts/TextToSpeechSettings;->a(Lcom/android/settings_ext/tts/TextToSpeechSettings;Ljava/lang/String;)Ljava/lang/String;
 
     .line 538
-    iget-object v0, p0, Lcom/android/settings/tts/d;->akZ:Lcom/android/settings/tts/TextToSpeechSettings;
+    iget-object v0, p0, Lcom/android/settings_ext/tts/d;->akZ:Lcom/android/settings_ext/tts/TextToSpeechSettings;
 
-    iget-object v1, p0, Lcom/android/settings/tts/d;->akZ:Lcom/android/settings/tts/TextToSpeechSettings;
+    iget-object v1, p0, Lcom/android/settings_ext/tts/d;->akZ:Lcom/android/settings_ext/tts/TextToSpeechSettings;
 
-    invoke-static {v1}, Lcom/android/settings/tts/TextToSpeechSettings;->b(Lcom/android/settings/tts/TextToSpeechSettings;)Ljava/lang/String;
+    invoke-static {v1}, Lcom/android/settings_ext/tts/TextToSpeechSettings;->b(Lcom/android/settings_ext/tts/TextToSpeechSettings;)Ljava/lang/String;
 
     move-result-object v1
 
-    invoke-static {v0, v1}, Lcom/android/settings/tts/TextToSpeechSettings;->b(Lcom/android/settings/tts/TextToSpeechSettings;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/android/settings_ext/tts/TextToSpeechSettings;->b(Lcom/android/settings_ext/tts/TextToSpeechSettings;Ljava/lang/String;)V
 
     .line 539
     return-void

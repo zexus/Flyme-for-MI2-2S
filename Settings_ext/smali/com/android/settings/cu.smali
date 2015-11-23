@@ -1,4 +1,4 @@
-.class public Lcom/android/settings/cu;
+.class public Lcom/android/settings_ext/cu;
 .super Ljava/lang/Object;
 .source "FingerprintHelper.java"
 
@@ -17,7 +17,7 @@
 
 
 # virtual methods
-.method public a(Lcom/android/settings/ct;)V
+.method public a(Lcom/android/settings_ext/ct;)V
     .locals 0
 
     .prologue
@@ -25,7 +25,7 @@
     return-void
 .end method
 
-.method public a(Lcom/android/settings/cv;Ljava/util/List;)V
+.method public a(Lcom/android/settings_ext/cv;Ljava/util/List;)V
     .locals 0
 
     .prologue

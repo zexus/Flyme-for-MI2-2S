@@ -1,4 +1,4 @@
-.class Lcom/android/settings/eo;
+.class Lcom/android/settings_ext/eo;
 .super Ljava/lang/Object;
 .source "MiuiSecurityCommonSettings.java"
 
@@ -7,16 +7,16 @@
 
 
 # instance fields
-.field final synthetic rf:Lcom/android/settings/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;
+.field final synthetic rf:Lcom/android/settings_ext/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;)V
+.method constructor <init>(Lcom/android/settings_ext/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;)V
     .locals 0
 
     .prologue
     .line 647
-    iput-object p1, p0, Lcom/android/settings/eo;->rf:Lcom/android/settings/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;
+    iput-object p1, p0, Lcom/android/settings_ext/eo;->rf:Lcom/android/settings_ext/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -51,9 +51,9 @@
     if-eqz v2, :cond_0
 
     .line 654
-    iget-object v0, p0, Lcom/android/settings/eo;->rf:Lcom/android/settings/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;
+    iget-object v0, p0, Lcom/android/settings_ext/eo;->rf:Lcom/android/settings_ext/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;
 
-    invoke-static {v0}, Lcom/android/settings/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;->b(Lcom/android/settings/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;)V
+    invoke-static {v0}, Lcom/android/settings_ext/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;->b(Lcom/android/settings_ext/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;)V
 
     .line 659
     :goto_0
@@ -63,9 +63,9 @@
 
     .line 656
     :cond_0
-    iget-object v2, p0, Lcom/android/settings/eo;->rf:Lcom/android/settings/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;
+    iget-object v2, p0, Lcom/android/settings_ext/eo;->rf:Lcom/android/settings_ext/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;
 
-    invoke-static {v2, v1, v0}, Lcom/android/settings/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;->a(Lcom/android/settings/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v2, v1, v0}, Lcom/android/settings_ext/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;->a(Lcom/android/settings_ext/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;Ljava/lang/String;Ljava/lang/String;)V
 
     goto :goto_0
 .end method

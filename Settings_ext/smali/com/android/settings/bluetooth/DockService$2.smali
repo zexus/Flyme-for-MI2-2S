@@ -1,4 +1,4 @@
-.class Lcom/android/settings/bluetooth/DockService$2;
+.class Lcom/android/settings_ext/bluetooth/DockService$2;
 .super Ljava/lang/Object;
 .source "DockService.java"
 
@@ -7,16 +7,16 @@
 
 
 # instance fields
-.field final synthetic Ow:Lcom/android/settings/bluetooth/DockService;
+.field final synthetic Ow:Lcom/android/settings_ext/bluetooth/DockService;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/bluetooth/DockService;)V
+.method constructor <init>(Lcom/android/settings_ext/bluetooth/DockService;)V
     .locals 0
 
     .prologue
     .line 562
-    iput-object p1, p0, Lcom/android/settings/bluetooth/DockService$2;->Ow:Lcom/android/settings/bluetooth/DockService;
+    iput-object p1, p0, Lcom/android/settings_ext/bluetooth/DockService$2;->Ow:Lcom/android/settings_ext/bluetooth/DockService;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -30,9 +30,9 @@
 
     .prologue
     .line 567
-    iget-object v0, p0, Lcom/android/settings/bluetooth/DockService$2;->Ow:Lcom/android/settings/bluetooth/DockService;
+    iget-object v0, p0, Lcom/android/settings_ext/bluetooth/DockService$2;->Ow:Lcom/android/settings_ext/bluetooth/DockService;
 
-    invoke-static {v0}, Lcom/android/settings/bluetooth/DockService;->a(Lcom/android/settings/bluetooth/DockService;)[Z
+    invoke-static {v0}, Lcom/android/settings_ext/bluetooth/DockService;->a(Lcom/android/settings_ext/bluetooth/DockService;)[Z
 
     move-result-object v0
 

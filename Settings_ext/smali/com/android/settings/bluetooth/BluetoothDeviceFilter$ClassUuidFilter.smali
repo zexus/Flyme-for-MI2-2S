@@ -1,9 +1,9 @@
-.class abstract Lcom/android/settings/bluetooth/BluetoothDeviceFilter$ClassUuidFilter;
+.class abstract Lcom/android/settings_ext/bluetooth/BluetoothDeviceFilter$ClassUuidFilter;
 .super Ljava/lang/Object;
 .source "BluetoothDeviceFilter.java"
 
 # interfaces
-.implements Lcom/android/settings/bluetooth/BluetoothDeviceFilter$Filter;
+.implements Lcom/android/settings_ext/bluetooth/BluetoothDeviceFilter$Filter;
 
 
 # direct methods
@@ -17,12 +17,12 @@
     return-void
 .end method
 
-.method synthetic constructor <init>(Lcom/android/settings/bluetooth/BluetoothDeviceFilter$1;)V
+.method synthetic constructor <init>(Lcom/android/settings_ext/bluetooth/BluetoothDeviceFilter$1;)V
     .locals 0
 
     .prologue
     .line 101
-    invoke-direct {p0}, Lcom/android/settings/bluetooth/BluetoothDeviceFilter$ClassUuidFilter;-><init>()V
+    invoke-direct {p0}, Lcom/android/settings_ext/bluetooth/BluetoothDeviceFilter$ClassUuidFilter;-><init>()V
 
     return-void
 .end method
@@ -45,7 +45,7 @@
 
     move-result-object v1
 
-    invoke-virtual {p0, v0, v1}, Lcom/android/settings/bluetooth/BluetoothDeviceFilter$ClassUuidFilter;->a([Landroid/os/ParcelUuid;Landroid/bluetooth/BluetoothClass;)Z
+    invoke-virtual {p0, v0, v1}, Lcom/android/settings_ext/bluetooth/BluetoothDeviceFilter$ClassUuidFilter;->a([Landroid/os/ParcelUuid;Landroid/bluetooth/BluetoothClass;)Z
 
     move-result v0
 

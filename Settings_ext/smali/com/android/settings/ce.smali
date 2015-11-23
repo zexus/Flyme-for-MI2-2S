@@ -1,21 +1,21 @@
-.class Lcom/android/settings/ce;
+.class Lcom/android/settings_ext/ce;
 .super Landroid/widget/ArrayAdapter;
 .source "DreamSettings.java"
 
 
 # instance fields
-.field final synthetic kt:Lcom/android/settings/DreamSettings;
+.field final synthetic kt:Lcom/android/settings_ext/DreamSettings;
 
 .field private final mInflater:Landroid/view/LayoutInflater;
 
 
 # direct methods
-.method public constructor <init>(Lcom/android/settings/DreamSettings;Landroid/content/Context;)V
+.method public constructor <init>(Lcom/android/settings_ext/DreamSettings;Landroid/content/Context;)V
     .locals 1
 
     .prologue
     .line 285
-    iput-object p1, p0, Lcom/android/settings/ce;->kt:Lcom/android/settings/DreamSettings;
+    iput-object p1, p0, Lcom/android/settings_ext/ce;->kt:Lcom/android/settings_ext/DreamSettings;
 
     .line 286
     const/4 v0, 0x0
@@ -31,18 +31,18 @@
 
     check-cast v0, Landroid/view/LayoutInflater;
 
-    iput-object v0, p0, Lcom/android/settings/ce;->mInflater:Landroid/view/LayoutInflater;
+    iput-object v0, p0, Lcom/android/settings_ext/ce;->mInflater:Landroid/view/LayoutInflater;
 
     .line 288
     return-void
 .end method
 
-.method static synthetic a(Lcom/android/settings/ce;Lcom/android/settings/bY;)V
+.method static synthetic a(Lcom/android/settings_ext/ce;Lcom/android/settings_ext/bY;)V
     .locals 0
 
     .prologue
     .line 282
-    invoke-direct {p0, p1}, Lcom/android/settings/ce;->c(Lcom/android/settings/bY;)V
+    invoke-direct {p0, p1}, Lcom/android/settings_ext/ce;->c(Lcom/android/settings_ext/bY;)V
 
     return-void
 .end method
@@ -52,7 +52,7 @@
 
     .prologue
     .line 333
-    iget-object v0, p0, Lcom/android/settings/ce;->mInflater:Landroid/view/LayoutInflater;
+    iget-object v0, p0, Lcom/android/settings_ext/ce;->mInflater:Landroid/view/LayoutInflater;
 
     const v1, 0x7f040055
 
@@ -70,9 +70,9 @@
     move-result-object v1
 
     .line 335
-    new-instance v2, Lcom/android/settings/ch;
+    new-instance v2, Lcom/android/settings_ext/ch;
 
-    invoke-direct {v2, p0, v0}, Lcom/android/settings/ch;-><init>(Lcom/android/settings/ce;Landroid/view/View;)V
+    invoke-direct {v2, p0, v0}, Lcom/android/settings_ext/ch;-><init>(Lcom/android/settings_ext/ce;Landroid/view/View;)V
 
     invoke-virtual {v1, v2}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
@@ -80,14 +80,14 @@
     return-object v0
 .end method
 
-.method private c(Lcom/android/settings/bY;)V
+.method private c(Lcom/android/settings_ext/bY;)V
     .locals 3
 
     .prologue
     const/4 v2, 0x0
 
     .line 353
-    invoke-direct {p0}, Lcom/android/settings/ce;->dk()Lcom/android/settings/bY;
+    invoke-direct {p0}, Lcom/android/settings_ext/ce;->dk()Lcom/android/settings_ext/bY;
 
     move-result-object v0
 
@@ -106,20 +106,20 @@
 
     .line 355
     :goto_1
-    invoke-virtual {p0}, Lcom/android/settings/ce;->getCount()I
+    invoke-virtual {p0}, Lcom/android/settings_ext/ce;->getCount()I
 
     move-result v0
 
     if-ge v1, v0, :cond_1
 
     .line 356
-    invoke-virtual {p0, v1}, Lcom/android/settings/ce;->getItem(I)Ljava/lang/Object;
+    invoke-virtual {p0, v1}, Lcom/android/settings_ext/ce;->getItem(I)Ljava/lang/Object;
 
     move-result-object v0
 
-    check-cast v0, Lcom/android/settings/bY;
+    check-cast v0, Lcom/android/settings_ext/bY;
 
-    iput-boolean v2, v0, Lcom/android/settings/bY;->kl:Z
+    iput-boolean v2, v0, Lcom/android/settings_ext/bY;->kl:Z
 
     .line 355
     add-int/lit8 v0, v1, 0x1
@@ -132,26 +132,26 @@
     :cond_1
     const/4 v0, 0x1
 
-    iput-boolean v0, p1, Lcom/android/settings/bY;->kl:Z
+    iput-boolean v0, p1, Lcom/android/settings_ext/bY;->kl:Z
 
     .line 359
-    iget-object v0, p0, Lcom/android/settings/ce;->kt:Lcom/android/settings/DreamSettings;
+    iget-object v0, p0, Lcom/android/settings_ext/ce;->kt:Lcom/android/settings_ext/DreamSettings;
 
-    invoke-static {v0}, Lcom/android/settings/DreamSettings;->a(Lcom/android/settings/DreamSettings;)Lcom/android/settings/bX;
+    invoke-static {v0}, Lcom/android/settings_ext/DreamSettings;->a(Lcom/android/settings_ext/DreamSettings;)Lcom/android/settings_ext/bX;
 
     move-result-object v0
 
-    iget-object v1, p1, Lcom/android/settings/bY;->componentName:Landroid/content/ComponentName;
+    iget-object v1, p1, Lcom/android/settings_ext/bY;->componentName:Landroid/content/ComponentName;
 
-    invoke-virtual {v0, v1}, Lcom/android/settings/bX;->a(Landroid/content/ComponentName;)V
+    invoke-virtual {v0, v1}, Lcom/android/settings_ext/bX;->a(Landroid/content/ComponentName;)V
 
     .line 360
-    invoke-virtual {p0}, Lcom/android/settings/ce;->notifyDataSetChanged()V
+    invoke-virtual {p0}, Lcom/android/settings_ext/ce;->notifyDataSetChanged()V
 
     goto :goto_0
 .end method
 
-.method private dk()Lcom/android/settings/bY;
+.method private dk()Lcom/android/settings_ext/bY;
     .locals 3
 
     .prologue
@@ -161,21 +161,21 @@
     move v1, v0
 
     :goto_0
-    invoke-virtual {p0}, Lcom/android/settings/ce;->getCount()I
+    invoke-virtual {p0}, Lcom/android/settings_ext/ce;->getCount()I
 
     move-result v0
 
     if-ge v1, v0, :cond_1
 
     .line 346
-    invoke-virtual {p0, v1}, Lcom/android/settings/ce;->getItem(I)Ljava/lang/Object;
+    invoke-virtual {p0, v1}, Lcom/android/settings_ext/ce;->getItem(I)Ljava/lang/Object;
 
     move-result-object v0
 
-    check-cast v0, Lcom/android/settings/bY;
+    check-cast v0, Lcom/android/settings_ext/bY;
 
     .line 347
-    iget-boolean v2, v0, Lcom/android/settings/bY;->kl:Z
+    iget-boolean v2, v0, Lcom/android/settings_ext/bY;->kl:Z
 
     if-eqz v2, :cond_0
 
@@ -211,22 +211,22 @@
     const/4 v3, 0x0
 
     .line 292
-    invoke-virtual {p0, p1}, Lcom/android/settings/ce;->getItem(I)Ljava/lang/Object;
+    invoke-virtual {p0, p1}, Lcom/android/settings_ext/ce;->getItem(I)Ljava/lang/Object;
 
     move-result-object v0
 
-    check-cast v0, Lcom/android/settings/bY;
+    check-cast v0, Lcom/android/settings_ext/bY;
 
     .line 293
     const-string v1, "getView(%s)"
 
     new-array v5, v2, [Ljava/lang/Object;
 
-    iget-object v6, v0, Lcom/android/settings/bY;->kk:Ljava/lang/CharSequence;
+    iget-object v6, v0, Lcom/android/settings_ext/bY;->kk:Ljava/lang/CharSequence;
 
     aput-object v6, v5, v3
 
-    invoke-static {v1, v5}, Lcom/android/settings/DreamSettings;->b(Ljava/lang/String;[Ljava/lang/Object;)V
+    invoke-static {v1, v5}, Lcom/android/settings_ext/DreamSettings;->b(Ljava/lang/String;[Ljava/lang/Object;)V
 
     .line 294
     if-eqz p2, :cond_0
@@ -244,7 +244,7 @@
 
     check-cast v1, Landroid/widget/ImageView;
 
-    iget-object v5, v0, Lcom/android/settings/bY;->icon:Landroid/graphics/drawable/Drawable;
+    iget-object v5, v0, Lcom/android/settings_ext/bY;->icon:Landroid/graphics/drawable/Drawable;
 
     invoke-virtual {v1, v5}, Landroid/widget/ImageView;->setImageDrawable(Landroid/graphics/drawable/Drawable;)V
 
@@ -257,7 +257,7 @@
 
     check-cast v1, Landroid/widget/TextView;
 
-    iget-object v5, v0, Lcom/android/settings/bY;->kk:Ljava/lang/CharSequence;
+    iget-object v5, v0, Lcom/android/settings_ext/bY;->kk:Ljava/lang/CharSequence;
 
     invoke-virtual {v1, v5}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
@@ -271,19 +271,19 @@
     check-cast v1, Landroid/widget/RadioButton;
 
     .line 305
-    iget-boolean v5, v0, Lcom/android/settings/bY;->kl:Z
+    iget-boolean v5, v0, Lcom/android/settings_ext/bY;->kl:Z
 
     invoke-virtual {v1, v5}, Landroid/widget/RadioButton;->setChecked(Z)V
 
     .line 306
-    new-instance v5, Lcom/android/settings/cf;
+    new-instance v5, Lcom/android/settings_ext/cf;
 
-    invoke-direct {v5, p0, p2}, Lcom/android/settings/cf;-><init>(Lcom/android/settings/ce;Landroid/view/View;)V
+    invoke-direct {v5, p0, p2}, Lcom/android/settings_ext/cf;-><init>(Lcom/android/settings_ext/ce;Landroid/view/View;)V
 
     invoke-virtual {v1, v5}, Landroid/widget/RadioButton;->setOnTouchListener(Landroid/view/View$OnTouchListener;)V
 
     .line 314
-    iget-object v1, v0, Lcom/android/settings/bY;->km:Landroid/content/ComponentName;
+    iget-object v1, v0, Lcom/android/settings_ext/bY;->km:Landroid/content/ComponentName;
 
     if-eqz v1, :cond_1
 
@@ -319,7 +319,7 @@
     invoke-virtual {v1, v3}, Landroid/widget/ImageView;->setVisibility(I)V
 
     .line 320
-    iget-boolean v2, v0, Lcom/android/settings/bY;->kl:Z
+    iget-boolean v2, v0, Lcom/android/settings_ext/bY;->kl:Z
 
     if-eqz v2, :cond_4
 
@@ -329,19 +329,19 @@
     invoke-virtual {v1, v2}, Landroid/widget/ImageView;->setAlpha(F)V
 
     .line 321
-    iget-boolean v2, v0, Lcom/android/settings/bY;->kl:Z
+    iget-boolean v2, v0, Lcom/android/settings_ext/bY;->kl:Z
 
     invoke-virtual {v1, v2}, Landroid/widget/ImageView;->setEnabled(Z)V
 
     .line 322
-    iget-boolean v0, v0, Lcom/android/settings/bY;->kl:Z
+    iget-boolean v0, v0, Lcom/android/settings_ext/bY;->kl:Z
 
     invoke-virtual {v1, v0}, Landroid/widget/ImageView;->setFocusable(Z)V
 
     .line 323
-    new-instance v0, Lcom/android/settings/cg;
+    new-instance v0, Lcom/android/settings_ext/cg;
 
-    invoke-direct {v0, p0, p2}, Lcom/android/settings/cg;-><init>(Lcom/android/settings/ce;Landroid/view/View;)V
+    invoke-direct {v0, p0, p2}, Lcom/android/settings_ext/cg;-><init>(Lcom/android/settings_ext/ce;Landroid/view/View;)V
 
     invoke-virtual {v1, v0}, Landroid/widget/ImageView;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
@@ -350,7 +350,7 @@
 
     .line 294
     :cond_0
-    invoke-direct {p0, p3}, Lcom/android/settings/ce;->c(Landroid/view/ViewGroup;)Landroid/view/View;
+    invoke-direct {p0, p3}, Lcom/android/settings_ext/ce;->c(Landroid/view/ViewGroup;)Landroid/view/View;
 
     move-result-object p2
 

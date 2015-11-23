@@ -1,4 +1,4 @@
-.class public final Lcom/android/settings/voice/a;
+.class public final Lcom/android/settings_ext/voice/a;
 .super Ljava/lang/Object;
 .source "VoiceInputHelper.java"
 
@@ -34,20 +34,20 @@
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
-    iput-object v0, p0, Lcom/android/settings/voice/a;->anf:Ljava/util/ArrayList;
+    iput-object v0, p0, Lcom/android/settings_ext/voice/a;->anf:Ljava/util/ArrayList;
 
     .line 93
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
-    iput-object v0, p0, Lcom/android/settings/voice/a;->ang:Ljava/util/ArrayList;
+    iput-object v0, p0, Lcom/android/settings_ext/voice/a;->ang:Ljava/util/ArrayList;
 
     .line 99
-    iput-object p1, p0, Lcom/android/settings/voice/a;->mContext:Landroid/content/Context;
+    iput-object p1, p0, Lcom/android/settings_ext/voice/a;->mContext:Landroid/content/Context;
 
     .line 101
-    iget-object v0, p0, Lcom/android/settings/voice/a;->mContext:Landroid/content/Context;
+    iget-object v0, p0, Lcom/android/settings_ext/voice/a;->mContext:Landroid/content/Context;
 
     invoke-virtual {v0}, Landroid/content/Context;->getPackageManager()Landroid/content/pm/PackageManager;
 
@@ -63,10 +63,10 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/voice/a;->and:Ljava/util/List;
+    iput-object v0, p0, Lcom/android/settings_ext/voice/a;->and:Ljava/util/List;
 
     .line 104
-    iget-object v0, p0, Lcom/android/settings/voice/a;->mContext:Landroid/content/Context;
+    iget-object v0, p0, Lcom/android/settings_ext/voice/a;->mContext:Landroid/content/Context;
 
     invoke-virtual {v0}, Landroid/content/Context;->getPackageManager()Landroid/content/pm/PackageManager;
 
@@ -82,7 +82,7 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/voice/a;->ane:Ljava/util/List;
+    iput-object v0, p0, Lcom/android/settings_ext/voice/a;->ane:Ljava/util/List;
 
     .line 107
     return-void
@@ -95,7 +95,7 @@
 
     .prologue
     .line 110
-    iget-object v0, p0, Lcom/android/settings/voice/a;->and:Ljava/util/List;
+    iget-object v0, p0, Lcom/android/settings_ext/voice/a;->and:Ljava/util/List;
 
     invoke-interface {v0}, Ljava/util/List;->size()I
 
@@ -103,7 +103,7 @@
 
     if-gtz v0, :cond_0
 
-    iget-object v0, p0, Lcom/android/settings/voice/a;->ane:Ljava/util/List;
+    iget-object v0, p0, Lcom/android/settings_ext/voice/a;->ane:Ljava/util/List;
 
     invoke-interface {v0}, Ljava/util/List;->size()I
 
@@ -132,7 +132,7 @@
     const/4 v3, 0x0
 
     .line 115
-    iget-object v0, p0, Lcom/android/settings/voice/a;->mContext:Landroid/content/Context;
+    iget-object v0, p0, Lcom/android/settings_ext/voice/a;->mContext:Landroid/content/Context;
 
     invoke-virtual {v0}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
 
@@ -158,7 +158,7 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/voice/a;->anh:Landroid/content/ComponentName;
+    iput-object v0, p0, Lcom/android/settings_ext/voice/a;->anh:Landroid/content/ComponentName;
 
     .line 123
     :goto_0
@@ -167,7 +167,7 @@
     invoke-direct {v6}, Landroid/util/ArraySet;-><init>()V
 
     .line 127
-    iget-object v0, p0, Lcom/android/settings/voice/a;->and:Ljava/util/List;
+    iget-object v0, p0, Lcom/android/settings_ext/voice/a;->and:Ljava/util/List;
 
     invoke-interface {v0}, Ljava/util/List;->size()I
 
@@ -180,7 +180,7 @@
     if-ge v2, v4, :cond_3
 
     .line 129
-    iget-object v0, p0, Lcom/android/settings/voice/a;->and:Ljava/util/List;
+    iget-object v0, p0, Lcom/android/settings_ext/voice/a;->and:Ljava/util/List;
 
     invoke-interface {v0, v2}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
@@ -191,7 +191,7 @@
     .line 130
     new-instance v5, Landroid/service/voice/VoiceInteractionServiceInfo;
 
-    iget-object v7, p0, Lcom/android/settings/voice/a;->mContext:Landroid/content/Context;
+    iget-object v7, p0, Lcom/android/settings_ext/voice/a;->mContext:Landroid/content/Context;
 
     invoke-virtual {v7}, Landroid/content/Context;->getPackageManager()Landroid/content/pm/PackageManager;
 
@@ -274,23 +274,23 @@
 
     .line 120
     :cond_1
-    iput-object v3, p0, Lcom/android/settings/voice/a;->anh:Landroid/content/ComponentName;
+    iput-object v3, p0, Lcom/android/settings_ext/voice/a;->anh:Landroid/content/ComponentName;
 
     goto :goto_0
 
     .line 138
     :cond_2
-    iget-object v7, p0, Lcom/android/settings/voice/a;->anf:Ljava/util/ArrayList;
+    iget-object v7, p0, Lcom/android/settings_ext/voice/a;->anf:Ljava/util/ArrayList;
 
-    new-instance v8, Lcom/android/settings/voice/c;
+    new-instance v8, Lcom/android/settings_ext/voice/c;
 
-    iget-object v9, p0, Lcom/android/settings/voice/a;->mContext:Landroid/content/Context;
+    iget-object v9, p0, Lcom/android/settings_ext/voice/a;->mContext:Landroid/content/Context;
 
     invoke-virtual {v9}, Landroid/content/Context;->getPackageManager()Landroid/content/pm/PackageManager;
 
     move-result-object v9
 
-    invoke-direct {v8, v9, v5}, Lcom/android/settings/voice/c;-><init>(Landroid/content/pm/PackageManager;Landroid/service/voice/VoiceInteractionServiceInfo;)V
+    invoke-direct {v8, v9, v5}, Lcom/android/settings_ext/voice/c;-><init>(Landroid/content/pm/PackageManager;Landroid/service/voice/VoiceInteractionServiceInfo;)V
 
     invoke-virtual {v7, v8}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
@@ -320,12 +320,12 @@
 
     .line 144
     :cond_3
-    iget-object v0, p0, Lcom/android/settings/voice/a;->anf:Ljava/util/ArrayList;
+    iget-object v0, p0, Lcom/android/settings_ext/voice/a;->anf:Ljava/util/ArrayList;
 
     invoke-static {v0}, Ljava/util/Collections;->sort(Ljava/util/List;)V
 
     .line 147
-    iget-object v0, p0, Lcom/android/settings/voice/a;->mContext:Landroid/content/Context;
+    iget-object v0, p0, Lcom/android/settings_ext/voice/a;->mContext:Landroid/content/Context;
 
     invoke-virtual {v0}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
 
@@ -351,11 +351,11 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/voice/a;->ani:Landroid/content/ComponentName;
+    iput-object v0, p0, Lcom/android/settings_ext/voice/a;->ani:Landroid/content/ComponentName;
 
     .line 157
     :goto_3
-    iget-object v0, p0, Lcom/android/settings/voice/a;->ane:Ljava/util/List;
+    iget-object v0, p0, Lcom/android/settings_ext/voice/a;->ane:Ljava/util/List;
 
     invoke-interface {v0}, Ljava/util/List;->size()I
 
@@ -368,7 +368,7 @@
     if-ge v5, v7, :cond_c
 
     .line 159
-    iget-object v0, p0, Lcom/android/settings/voice/a;->ane:Ljava/util/List;
+    iget-object v0, p0, Lcom/android/settings_ext/voice/a;->ane:Ljava/util/List;
 
     invoke-interface {v0, v5}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
@@ -402,7 +402,7 @@
 
     .line 169
     :try_start_0
-    iget-object v2, p0, Lcom/android/settings/voice/a;->mContext:Landroid/content/Context;
+    iget-object v2, p0, Lcom/android/settings_ext/voice/a;->mContext:Landroid/content/Context;
 
     invoke-virtual {v2}, Landroid/content/Context;->getPackageManager()Landroid/content/pm/PackageManager;
 
@@ -482,11 +482,11 @@
     .line 206
     :cond_5
     :goto_6
-    iget-object v2, p0, Lcom/android/settings/voice/a;->ang:Ljava/util/ArrayList;
+    iget-object v2, p0, Lcom/android/settings_ext/voice/a;->ang:Ljava/util/ArrayList;
 
-    new-instance v4, Lcom/android/settings/voice/d;
+    new-instance v4, Lcom/android/settings_ext/voice/d;
 
-    iget-object v8, p0, Lcom/android/settings/voice/a;->mContext:Landroid/content/Context;
+    iget-object v8, p0, Lcom/android/settings_ext/voice/a;->mContext:Landroid/content/Context;
 
     invoke-virtual {v8}, Landroid/content/Context;->getPackageManager()Landroid/content/pm/PackageManager;
 
@@ -494,7 +494,7 @@
 
     iget-object v0, v0, Landroid/content/pm/ResolveInfo;->serviceInfo:Landroid/content/pm/ServiceInfo;
 
-    invoke-direct {v4, v8, v0, v1}, Lcom/android/settings/voice/d;-><init>(Landroid/content/pm/PackageManager;Landroid/content/pm/ServiceInfo;Ljava/lang/String;)V
+    invoke-direct {v4, v8, v0, v1}, Lcom/android/settings_ext/voice/d;-><init>(Landroid/content/pm/PackageManager;Landroid/content/pm/ServiceInfo;Ljava/lang/String;)V
 
     invoke-virtual {v2, v4}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
@@ -507,14 +507,14 @@
 
     .line 152
     :cond_6
-    iput-object v3, p0, Lcom/android/settings/voice/a;->ani:Landroid/content/ComponentName;
+    iput-object v3, p0, Lcom/android/settings_ext/voice/a;->ani:Landroid/content/ComponentName;
 
     goto :goto_3
 
     .line 176
     :cond_7
     :try_start_3
-    iget-object v2, p0, Lcom/android/settings/voice/a;->mContext:Landroid/content/Context;
+    iget-object v2, p0, Lcom/android/settings_ext/voice/a;->mContext:Landroid/content/Context;
 
     invoke-virtual {v2}, Landroid/content/Context;->getPackageManager()Landroid/content/pm/PackageManager;
 
@@ -680,7 +680,7 @@
 
     .line 209
     :cond_c
-    iget-object v0, p0, Lcom/android/settings/voice/a;->ang:Ljava/util/ArrayList;
+    iget-object v0, p0, Lcom/android/settings_ext/voice/a;->ang:Ljava/util/ArrayList;
 
     invoke-static {v0}, Ljava/util/Collections;->sort(Ljava/util/List;)V
 

@@ -1,16 +1,16 @@
-.class Lcom/android/settings/deviceinfo/Memory$ClearCacheObserver;
+.class Lcom/android/settings_ext/deviceinfo/Memory$ClearCacheObserver;
 .super Landroid/content/pm/IPackageDataObserver$Stub;
 .source "Memory.java"
 
 
 # instance fields
-.field private final RN:Lcom/android/settings/deviceinfo/Memory;
+.field private final RN:Lcom/android/settings_ext/deviceinfo/Memory;
 
 .field private RO:I
 
 
 # direct methods
-.method public constructor <init>(Lcom/android/settings/deviceinfo/Memory;I)V
+.method public constructor <init>(Lcom/android/settings_ext/deviceinfo/Memory;I)V
     .locals 0
 
     .prologue
@@ -18,10 +18,10 @@
     invoke-direct {p0}, Landroid/content/pm/IPackageDataObserver$Stub;-><init>()V
 
     .line 470
-    iput-object p1, p0, Lcom/android/settings/deviceinfo/Memory$ClearCacheObserver;->RN:Lcom/android/settings/deviceinfo/Memory;
+    iput-object p1, p0, Lcom/android/settings_ext/deviceinfo/Memory$ClearCacheObserver;->RN:Lcom/android/settings_ext/deviceinfo/Memory;
 
     .line 471
-    iput p2, p0, Lcom/android/settings/deviceinfo/Memory$ClearCacheObserver;->RO:I
+    iput p2, p0, Lcom/android/settings_ext/deviceinfo/Memory$ClearCacheObserver;->RO:I
 
     .line 472
     return-void
@@ -38,18 +38,18 @@
 
     .line 477
     :try_start_0
-    iget v0, p0, Lcom/android/settings/deviceinfo/Memory$ClearCacheObserver;->RO:I
+    iget v0, p0, Lcom/android/settings_ext/deviceinfo/Memory$ClearCacheObserver;->RO:I
 
     add-int/lit8 v0, v0, -0x1
 
-    iput v0, p0, Lcom/android/settings/deviceinfo/Memory$ClearCacheObserver;->RO:I
+    iput v0, p0, Lcom/android/settings_ext/deviceinfo/Memory$ClearCacheObserver;->RO:I
 
     if-nez v0, :cond_0
 
     .line 478
-    iget-object v0, p0, Lcom/android/settings/deviceinfo/Memory$ClearCacheObserver;->RN:Lcom/android/settings/deviceinfo/Memory;
+    iget-object v0, p0, Lcom/android/settings_ext/deviceinfo/Memory$ClearCacheObserver;->RN:Lcom/android/settings_ext/deviceinfo/Memory;
 
-    invoke-static {v0}, Lcom/android/settings/deviceinfo/Memory;->d(Lcom/android/settings/deviceinfo/Memory;)V
+    invoke-static {v0}, Lcom/android/settings_ext/deviceinfo/Memory;->d(Lcom/android/settings_ext/deviceinfo/Memory;)V
 
     .line 480
     :cond_0

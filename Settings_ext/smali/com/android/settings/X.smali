@@ -1,4 +1,4 @@
-.class Lcom/android/settings/X;
+.class Lcom/android/settings_ext/X;
 .super Ljava/lang/Object;
 .source "BasePreferenceFragment.java"
 
@@ -7,16 +7,16 @@
 
 
 # instance fields
-.field final synthetic bZ:Lcom/android/settings/BasePreferenceFragment;
+.field final synthetic bZ:Lcom/android/settings_ext/BasePreferenceFragment;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/BasePreferenceFragment;)V
+.method constructor <init>(Lcom/android/settings_ext/BasePreferenceFragment;)V
     .locals 0
 
     .prologue
     .line 100
-    iput-object p1, p0, Lcom/android/settings/X;->bZ:Lcom/android/settings/BasePreferenceFragment;
+    iput-object p1, p0, Lcom/android/settings_ext/X;->bZ:Lcom/android/settings_ext/BasePreferenceFragment;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -35,9 +35,9 @@
     if-eqz v0, :cond_0
 
     .line 106
-    iget-object v0, p0, Lcom/android/settings/X;->bZ:Lcom/android/settings/BasePreferenceFragment;
+    iget-object v0, p0, Lcom/android/settings_ext/X;->bZ:Lcom/android/settings_ext/BasePreferenceFragment;
 
-    invoke-virtual {v0}, Lcom/android/settings/BasePreferenceFragment;->getListView()Landroid/widget/ListView;
+    invoke-virtual {v0}, Lcom/android/settings_ext/BasePreferenceFragment;->getListView()Landroid/widget/ListView;
 
     move-result-object v0
 
@@ -47,9 +47,9 @@
 
     .line 108
     :cond_0
-    iget-object v0, p0, Lcom/android/settings/X;->bZ:Lcom/android/settings/BasePreferenceFragment;
+    iget-object v0, p0, Lcom/android/settings_ext/X;->bZ:Lcom/android/settings_ext/BasePreferenceFragment;
 
-    iget-object v0, v0, Lcom/android/settings/BasePreferenceFragment;->bY:Ljava/util/List;
+    iget-object v0, v0, Lcom/android/settings_ext/BasePreferenceFragment;->bY:Ljava/util/List;
 
     invoke-interface {v0, p3}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
@@ -58,9 +58,9 @@
     check-cast v0, Landroid/preference/PreferenceActivity$Header;
 
     .line 109
-    iget-object v1, p0, Lcom/android/settings/X;->bZ:Lcom/android/settings/BasePreferenceFragment;
+    iget-object v1, p0, Lcom/android/settings_ext/X;->bZ:Lcom/android/settings_ext/BasePreferenceFragment;
 
-    invoke-static {v1, v0, p3}, Lcom/android/settings/BasePreferenceFragment;->a(Lcom/android/settings/BasePreferenceFragment;Landroid/preference/PreferenceActivity$Header;I)V
+    invoke-static {v1, v0, p3}, Lcom/android/settings_ext/BasePreferenceFragment;->a(Lcom/android/settings_ext/BasePreferenceFragment;Landroid/preference/PreferenceActivity$Header;I)V
 
     .line 110
     return-void

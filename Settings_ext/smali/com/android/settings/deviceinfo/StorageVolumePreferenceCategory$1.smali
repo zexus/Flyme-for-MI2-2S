@@ -1,19 +1,19 @@
-.class Lcom/android/settings/deviceinfo/StorageVolumePreferenceCategory$1;
+.class Lcom/android/settings_ext/deviceinfo/StorageVolumePreferenceCategory$1;
 .super Landroid/os/Handler;
 .source "StorageVolumePreferenceCategory.java"
 
 
 # instance fields
-.field final synthetic Uc:Lcom/android/settings/deviceinfo/StorageVolumePreferenceCategory;
+.field final synthetic Uc:Lcom/android/settings_ext/deviceinfo/StorageVolumePreferenceCategory;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/deviceinfo/StorageVolumePreferenceCategory;)V
+.method constructor <init>(Lcom/android/settings_ext/deviceinfo/StorageVolumePreferenceCategory;)V
     .locals 0
 
     .prologue
     .line 94
-    iput-object p1, p0, Lcom/android/settings/deviceinfo/StorageVolumePreferenceCategory$1;->Uc:Lcom/android/settings/deviceinfo/StorageVolumePreferenceCategory;
+    iput-object p1, p0, Lcom/android/settings_ext/deviceinfo/StorageVolumePreferenceCategory$1;->Uc:Lcom/android/settings_ext/deviceinfo/StorageVolumePreferenceCategory;
 
     invoke-direct {p0}, Landroid/os/Handler;-><init>()V
 
@@ -44,7 +44,7 @@
     check-cast v0, [J
 
     .line 100
-    iget-object v1, p0, Lcom/android/settings/deviceinfo/StorageVolumePreferenceCategory$1;->Uc:Lcom/android/settings/deviceinfo/StorageVolumePreferenceCategory;
+    iget-object v1, p0, Lcom/android/settings_ext/deviceinfo/StorageVolumePreferenceCategory$1;->Uc:Lcom/android/settings_ext/deviceinfo/StorageVolumePreferenceCategory;
 
     const/4 v2, 0x0
 
@@ -54,7 +54,7 @@
 
     aget-wide v4, v0, v4
 
-    invoke-virtual {v1, v2, v3, v4, v5}, Lcom/android/settings/deviceinfo/StorageVolumePreferenceCategory;->b(JJ)V
+    invoke-virtual {v1, v2, v3, v4, v5}, Lcom/android/settings_ext/deviceinfo/StorageVolumePreferenceCategory;->b(JJ)V
 
     goto :goto_0
 
@@ -62,12 +62,12 @@
     :pswitch_1
     iget-object v0, p1, Landroid/os/Message;->obj:Ljava/lang/Object;
 
-    check-cast v0, Lcom/android/settings/deviceinfo/StorageMeasurement$MeasurementDetails;
+    check-cast v0, Lcom/android/settings_ext/deviceinfo/StorageMeasurement$MeasurementDetails;
 
     .line 105
-    iget-object v1, p0, Lcom/android/settings/deviceinfo/StorageVolumePreferenceCategory$1;->Uc:Lcom/android/settings/deviceinfo/StorageVolumePreferenceCategory;
+    iget-object v1, p0, Lcom/android/settings_ext/deviceinfo/StorageVolumePreferenceCategory$1;->Uc:Lcom/android/settings_ext/deviceinfo/StorageVolumePreferenceCategory;
 
-    invoke-virtual {v1, v0}, Lcom/android/settings/deviceinfo/StorageVolumePreferenceCategory;->c(Lcom/android/settings/deviceinfo/StorageMeasurement$MeasurementDetails;)V
+    invoke-virtual {v1, v0}, Lcom/android/settings_ext/deviceinfo/StorageVolumePreferenceCategory;->c(Lcom/android/settings_ext/deviceinfo/StorageMeasurement$MeasurementDetails;)V
 
     goto :goto_0
 

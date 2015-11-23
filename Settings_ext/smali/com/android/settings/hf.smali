@@ -1,4 +1,4 @@
-.class Lcom/android/settings/hf;
+.class Lcom/android/settings_ext/hf;
 .super Landroid/widget/BaseAdapter;
 .source "UsageStatsActivity.java"
 
@@ -6,61 +6,61 @@
 # instance fields
 .field private zn:I
 
-.field private zo:Lcom/android/settings/he;
+.field private zo:Lcom/android/settings_ext/he;
 
-.field private zp:Lcom/android/settings/hg;
+.field private zp:Lcom/android/settings_ext/hg;
 
-.field private zq:Lcom/android/settings/hc;
+.field private zq:Lcom/android/settings_ext/hc;
 
 .field private final zr:Landroid/util/ArrayMap;
 
 .field private final zs:Ljava/util/ArrayList;
 
-.field final synthetic zt:Lcom/android/settings/UsageStatsActivity;
+.field final synthetic zt:Lcom/android/settings_ext/UsageStatsActivity;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/UsageStatsActivity;)V
+.method constructor <init>(Lcom/android/settings_ext/UsageStatsActivity;)V
     .locals 8
 
     .prologue
     const/4 v6, 0x0
 
     .line 110
-    iput-object p1, p0, Lcom/android/settings/hf;->zt:Lcom/android/settings/UsageStatsActivity;
+    iput-object p1, p0, Lcom/android/settings_ext/hf;->zt:Lcom/android/settings_ext/UsageStatsActivity;
 
     invoke-direct {p0}, Landroid/widget/BaseAdapter;-><init>()V
 
     .line 103
-    iput v6, p0, Lcom/android/settings/hf;->zn:I
+    iput v6, p0, Lcom/android/settings_ext/hf;->zn:I
 
     .line 104
-    new-instance v0, Lcom/android/settings/he;
+    new-instance v0, Lcom/android/settings_ext/he;
 
-    invoke-direct {v0}, Lcom/android/settings/he;-><init>()V
+    invoke-direct {v0}, Lcom/android/settings_ext/he;-><init>()V
 
-    iput-object v0, p0, Lcom/android/settings/hf;->zo:Lcom/android/settings/he;
+    iput-object v0, p0, Lcom/android/settings_ext/hf;->zo:Lcom/android/settings_ext/he;
 
     .line 105
-    new-instance v0, Lcom/android/settings/hg;
+    new-instance v0, Lcom/android/settings_ext/hg;
 
-    invoke-direct {v0}, Lcom/android/settings/hg;-><init>()V
+    invoke-direct {v0}, Lcom/android/settings_ext/hg;-><init>()V
 
-    iput-object v0, p0, Lcom/android/settings/hf;->zp:Lcom/android/settings/hg;
+    iput-object v0, p0, Lcom/android/settings_ext/hf;->zp:Lcom/android/settings_ext/hg;
 
     .line 107
     new-instance v0, Landroid/util/ArrayMap;
 
     invoke-direct {v0}, Landroid/util/ArrayMap;-><init>()V
 
-    iput-object v0, p0, Lcom/android/settings/hf;->zr:Landroid/util/ArrayMap;
+    iput-object v0, p0, Lcom/android/settings_ext/hf;->zr:Landroid/util/ArrayMap;
 
     .line 108
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
-    iput-object v0, p0, Lcom/android/settings/hf;->zs:Ljava/util/ArrayList;
+    iput-object v0, p0, Lcom/android/settings_ext/hf;->zs:Ljava/util/ArrayList;
 
     .line 111
     invoke-static {}, Ljava/util/Calendar;->getInstance()Ljava/util/Calendar;
@@ -75,7 +75,7 @@
     invoke-virtual {v2, v0, v1}, Ljava/util/Calendar;->add(II)V
 
     .line 114
-    invoke-static {p1}, Lcom/android/settings/UsageStatsActivity;->a(Lcom/android/settings/UsageStatsActivity;)Landroid/app/usage/UsageStatsManager;
+    invoke-static {p1}, Lcom/android/settings_ext/UsageStatsActivity;->a(Lcom/android/settings_ext/UsageStatsActivity;)Landroid/app/usage/UsageStatsManager;
 
     move-result-object v0
 
@@ -126,7 +126,7 @@
 
     .line 128
     :try_start_0
-    invoke-static {p1}, Lcom/android/settings/UsageStatsActivity;->b(Lcom/android/settings/UsageStatsActivity;)Landroid/content/pm/PackageManager;
+    invoke-static {p1}, Lcom/android/settings_ext/UsageStatsActivity;->b(Lcom/android/settings_ext/UsageStatsActivity;)Landroid/content/pm/PackageManager;
 
     move-result-object v1
 
@@ -141,7 +141,7 @@
     move-result-object v1
 
     .line 129
-    invoke-static {p1}, Lcom/android/settings/UsageStatsActivity;->b(Lcom/android/settings/UsageStatsActivity;)Landroid/content/pm/PackageManager;
+    invoke-static {p1}, Lcom/android/settings_ext/UsageStatsActivity;->b(Lcom/android/settings_ext/UsageStatsActivity;)Landroid/content/pm/PackageManager;
 
     move-result-object v6
 
@@ -154,7 +154,7 @@
     move-result-object v1
 
     .line 130
-    iget-object v6, p0, Lcom/android/settings/hf;->zr:Landroid/util/ArrayMap;
+    iget-object v6, p0, Lcom/android/settings_ext/hf;->zr:Landroid/util/ArrayMap;
 
     invoke-virtual {v0}, Landroid/app/usage/UsageStats;->getPackageName()Ljava/lang/String;
 
@@ -207,7 +207,7 @@
 
     .line 144
     :cond_2
-    iget-object v0, p0, Lcom/android/settings/hf;->zs:Ljava/util/ArrayList;
+    iget-object v0, p0, Lcom/android/settings_ext/hf;->zs:Ljava/util/ArrayList;
 
     invoke-virtual {v4}, Landroid/util/ArrayMap;->values()Ljava/util/Collection;
 
@@ -216,16 +216,16 @@
     invoke-virtual {v0, v1}, Ljava/util/ArrayList;->addAll(Ljava/util/Collection;)Z
 
     .line 147
-    new-instance v0, Lcom/android/settings/hc;
+    new-instance v0, Lcom/android/settings_ext/hc;
 
-    iget-object v1, p0, Lcom/android/settings/hf;->zr:Landroid/util/ArrayMap;
+    iget-object v1, p0, Lcom/android/settings_ext/hf;->zr:Landroid/util/ArrayMap;
 
-    invoke-direct {v0, v1}, Lcom/android/settings/hc;-><init>(Ljava/util/Map;)V
+    invoke-direct {v0, v1}, Lcom/android/settings_ext/hc;-><init>(Ljava/util/Map;)V
 
-    iput-object v0, p0, Lcom/android/settings/hf;->zq:Lcom/android/settings/hc;
+    iput-object v0, p0, Lcom/android/settings_ext/hf;->zq:Lcom/android/settings_ext/hc;
 
     .line 148
-    invoke-direct {p0}, Lcom/android/settings/hf;->hp()V
+    invoke-direct {p0}, Lcom/android/settings_ext/hf;->hp()V
 
     goto :goto_0
 .end method
@@ -235,37 +235,37 @@
 
     .prologue
     .line 215
-    iget v0, p0, Lcom/android/settings/hf;->zn:I
+    iget v0, p0, Lcom/android/settings_ext/hf;->zn:I
 
     if-nez v0, :cond_1
 
     .line 217
-    iget-object v0, p0, Lcom/android/settings/hf;->zs:Ljava/util/ArrayList;
+    iget-object v0, p0, Lcom/android/settings_ext/hf;->zs:Ljava/util/ArrayList;
 
-    iget-object v1, p0, Lcom/android/settings/hf;->zp:Lcom/android/settings/hg;
+    iget-object v1, p0, Lcom/android/settings_ext/hf;->zp:Lcom/android/settings_ext/hg;
 
     invoke-static {v0, v1}, Ljava/util/Collections;->sort(Ljava/util/List;Ljava/util/Comparator;)V
 
     .line 225
     :cond_0
     :goto_0
-    invoke-virtual {p0}, Lcom/android/settings/hf;->notifyDataSetChanged()V
+    invoke-virtual {p0}, Lcom/android/settings_ext/hf;->notifyDataSetChanged()V
 
     .line 226
     return-void
 
     .line 218
     :cond_1
-    iget v0, p0, Lcom/android/settings/hf;->zn:I
+    iget v0, p0, Lcom/android/settings_ext/hf;->zn:I
 
     const/4 v1, 0x1
 
     if-ne v0, v1, :cond_2
 
     .line 220
-    iget-object v0, p0, Lcom/android/settings/hf;->zs:Ljava/util/ArrayList;
+    iget-object v0, p0, Lcom/android/settings_ext/hf;->zs:Ljava/util/ArrayList;
 
-    iget-object v1, p0, Lcom/android/settings/hf;->zo:Lcom/android/settings/he;
+    iget-object v1, p0, Lcom/android/settings_ext/hf;->zo:Lcom/android/settings_ext/he;
 
     invoke-static {v0, v1}, Ljava/util/Collections;->sort(Ljava/util/List;Ljava/util/Comparator;)V
 
@@ -273,16 +273,16 @@
 
     .line 221
     :cond_2
-    iget v0, p0, Lcom/android/settings/hf;->zn:I
+    iget v0, p0, Lcom/android/settings_ext/hf;->zn:I
 
     const/4 v1, 0x2
 
     if-ne v0, v1, :cond_0
 
     .line 223
-    iget-object v0, p0, Lcom/android/settings/hf;->zs:Ljava/util/ArrayList;
+    iget-object v0, p0, Lcom/android/settings_ext/hf;->zs:Ljava/util/ArrayList;
 
-    iget-object v1, p0, Lcom/android/settings/hf;->zq:Lcom/android/settings/hc;
+    iget-object v1, p0, Lcom/android/settings_ext/hf;->zq:Lcom/android/settings_ext/hc;
 
     invoke-static {v0, v1}, Ljava/util/Collections;->sort(Ljava/util/List;Ljava/util/Comparator;)V
 
@@ -296,7 +296,7 @@
 
     .prologue
     .line 207
-    iget v0, p0, Lcom/android/settings/hf;->zn:I
+    iget v0, p0, Lcom/android/settings_ext/hf;->zn:I
 
     if-ne v0, p1, :cond_0
 
@@ -306,10 +306,10 @@
 
     .line 211
     :cond_0
-    iput p1, p0, Lcom/android/settings/hf;->zn:I
+    iput p1, p0, Lcom/android/settings_ext/hf;->zn:I
 
     .line 212
-    invoke-direct {p0}, Lcom/android/settings/hf;->hp()V
+    invoke-direct {p0}, Lcom/android/settings_ext/hf;->hp()V
 
     goto :goto_0
 .end method
@@ -319,7 +319,7 @@
 
     .prologue
     .line 153
-    iget-object v0, p0, Lcom/android/settings/hf;->zs:Ljava/util/ArrayList;
+    iget-object v0, p0, Lcom/android/settings_ext/hf;->zs:Ljava/util/ArrayList;
 
     invoke-virtual {v0}, Ljava/util/ArrayList;->size()I
 
@@ -333,7 +333,7 @@
 
     .prologue
     .line 158
-    iget-object v0, p0, Lcom/android/settings/hf;->zs:Ljava/util/ArrayList;
+    iget-object v0, p0, Lcom/android/settings_ext/hf;->zs:Ljava/util/ArrayList;
 
     invoke-virtual {v0, p1}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
 
@@ -362,9 +362,9 @@
     if-nez p2, :cond_0
 
     .line 176
-    iget-object v0, p0, Lcom/android/settings/hf;->zt:Lcom/android/settings/UsageStatsActivity;
+    iget-object v0, p0, Lcom/android/settings_ext/hf;->zt:Lcom/android/settings_ext/UsageStatsActivity;
 
-    invoke-static {v0}, Lcom/android/settings/UsageStatsActivity;->c(Lcom/android/settings/UsageStatsActivity;)Landroid/view/LayoutInflater;
+    invoke-static {v0}, Lcom/android/settings_ext/UsageStatsActivity;->c(Lcom/android/settings_ext/UsageStatsActivity;)Landroid/view/LayoutInflater;
 
     move-result-object v0
 
@@ -377,9 +377,9 @@
     move-result-object p2
 
     .line 180
-    new-instance v1, Lcom/android/settings/hd;
+    new-instance v1, Lcom/android/settings_ext/hd;
 
-    invoke-direct {v1}, Lcom/android/settings/hd;-><init>()V
+    invoke-direct {v1}, Lcom/android/settings_ext/hd;-><init>()V
 
     .line 181
     const v0, 0x7f1002c1
@@ -390,7 +390,7 @@
 
     check-cast v0, Landroid/widget/TextView;
 
-    iput-object v0, v1, Lcom/android/settings/hd;->zk:Landroid/widget/TextView;
+    iput-object v0, v1, Lcom/android/settings_ext/hd;->zk:Landroid/widget/TextView;
 
     .line 182
     const v0, 0x7f1002c2
@@ -401,7 +401,7 @@
 
     check-cast v0, Landroid/widget/TextView;
 
-    iput-object v0, v1, Lcom/android/settings/hd;->zl:Landroid/widget/TextView;
+    iput-object v0, v1, Lcom/android/settings_ext/hd;->zl:Landroid/widget/TextView;
 
     .line 183
     const v0, 0x7f1002c3
@@ -412,7 +412,7 @@
 
     check-cast v0, Landroid/widget/TextView;
 
-    iput-object v0, v1, Lcom/android/settings/hd;->zm:Landroid/widget/TextView;
+    iput-object v0, v1, Lcom/android/settings_ext/hd;->zm:Landroid/widget/TextView;
 
     .line 184
     invoke-virtual {p2, v1}, Landroid/view/View;->setTag(Ljava/lang/Object;)V
@@ -421,7 +421,7 @@
 
     .line 192
     :goto_0
-    iget-object v0, p0, Lcom/android/settings/hf;->zs:Ljava/util/ArrayList;
+    iget-object v0, p0, Lcom/android/settings_ext/hf;->zs:Ljava/util/ArrayList;
 
     invoke-virtual {v0, p1}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
 
@@ -435,7 +435,7 @@
     if-eqz v6, :cond_1
 
     .line 194
-    iget-object v0, p0, Lcom/android/settings/hf;->zr:Landroid/util/ArrayMap;
+    iget-object v0, p0, Lcom/android/settings_ext/hf;->zr:Landroid/util/ArrayMap;
 
     invoke-virtual {v6}, Landroid/app/usage/UsageStats;->getPackageName()Ljava/lang/String;
 
@@ -448,12 +448,12 @@
     check-cast v0, Ljava/lang/String;
 
     .line 195
-    iget-object v1, v7, Lcom/android/settings/hd;->zk:Landroid/widget/TextView;
+    iget-object v1, v7, Lcom/android/settings_ext/hd;->zk:Landroid/widget/TextView;
 
     invoke-virtual {v1, v0}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
     .line 196
-    iget-object v8, v7, Lcom/android/settings/hd;->zl:Landroid/widget/TextView;
+    iget-object v8, v7, Lcom/android/settings_ext/hd;->zl:Landroid/widget/TextView;
 
     invoke-virtual {v6}, Landroid/app/usage/UsageStats;->getLastTimeUsed()J
 
@@ -472,7 +472,7 @@
     invoke-virtual {v8, v0}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
     .line 198
-    iget-object v0, v7, Lcom/android/settings/hd;->zm:Landroid/widget/TextView;
+    iget-object v0, v7, Lcom/android/settings_ext/hd;->zm:Landroid/widget/TextView;
 
     invoke-virtual {v6}, Landroid/app/usage/UsageStats;->getTotalTimeInForeground()J
 
@@ -498,7 +498,7 @@
 
     move-result-object v0
 
-    check-cast v0, Lcom/android/settings/hd;
+    check-cast v0, Lcom/android/settings_ext/hd;
 
     move-object v7, v0
 

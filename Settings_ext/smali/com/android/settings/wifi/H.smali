@@ -1,17 +1,17 @@
-.class public Lcom/android/settings/wifi/H;
+.class public Lcom/android/settings_ext/wifi/H;
 .super Ljava/lang/Object;
 .source "QRCodeUtils.java"
 
 
 # direct methods
-.method public static a(Landroid/content/Context;Lcom/android/settings/wifi/d;)Ljava/lang/String;
+.method public static a(Landroid/content/Context;Lcom/android/settings_ext/wifi/d;)Ljava/lang/String;
     .locals 5
 
     .prologue
     const/4 v0, 0x0
 
     .line 24
-    invoke-virtual {p1}, Lcom/android/settings/wifi/d;->ub()Ljava/lang/String;
+    invoke-virtual {p1}, Lcom/android/settings_ext/wifi/d;->ub()Ljava/lang/String;
 
     move-result-object v1
 
@@ -29,18 +29,18 @@
 
     .line 29
     :cond_1
-    invoke-virtual {p1}, Lcom/android/settings/wifi/d;->tN()Landroid/net/wifi/WifiConfiguration;
+    invoke-virtual {p1}, Lcom/android/settings_ext/wifi/d;->tN()Landroid/net/wifi/WifiConfiguration;
 
     move-result-object v2
 
     iget-object v2, v2, Landroid/net/wifi/WifiConfiguration;->SSID:Ljava/lang/String;
 
-    invoke-static {v2}, Lcom/android/settings/wifi/AccessPoint;->removeDoubleQuotes(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v2}, Lcom/android/settings_ext/wifi/AccessPoint;->removeDoubleQuotes(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v2
 
     .line 30
-    invoke-static {p0, v2}, Lcom/android/settings/wifi/Y;->w(Landroid/content/Context;Ljava/lang/String;)Landroid/net/wifi/WifiConfiguration;
+    invoke-static {p0, v2}, Lcom/android/settings_ext/wifi/Y;->w(Landroid/content/Context;Ljava/lang/String;)Landroid/net/wifi/WifiConfiguration;
 
     move-result-object v3
 
@@ -77,7 +77,7 @@
 
     if-eqz v1, :cond_2
 
-    invoke-virtual {p1}, Lcom/android/settings/wifi/d;->tN()Landroid/net/wifi/WifiConfiguration;
+    invoke-virtual {p1}, Lcom/android/settings_ext/wifi/d;->tN()Landroid/net/wifi/WifiConfiguration;
 
     move-result-object v1
 
@@ -86,7 +86,7 @@
     if-eqz v1, :cond_2
 
     .line 41
-    invoke-virtual {p1}, Lcom/android/settings/wifi/d;->tN()Landroid/net/wifi/WifiConfiguration;
+    invoke-virtual {p1}, Lcom/android/settings_ext/wifi/d;->tN()Landroid/net/wifi/WifiConfiguration;
 
     move-result-object v0
 
@@ -132,7 +132,7 @@
     goto :goto_0
 .end method
 
-.method public static b(Landroid/content/Context;Lcom/android/settings/wifi/d;)Landroid/graphics/Bitmap;
+.method public static b(Landroid/content/Context;Lcom/android/settings_ext/wifi/d;)Landroid/graphics/Bitmap;
     .locals 12
 
     .prologue
@@ -141,7 +141,7 @@
     const/4 v4, 0x0
 
     .line 54
-    invoke-static {p0, p1}, Lcom/android/settings/wifi/H;->a(Landroid/content/Context;Lcom/android/settings/wifi/d;)Ljava/lang/String;
+    invoke-static {p0, p1}, Lcom/android/settings_ext/wifi/H;->a(Landroid/content/Context;Lcom/android/settings_ext/wifi/d;)Ljava/lang/String;
 
     move-result-object v0
 

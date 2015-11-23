@@ -1,4 +1,4 @@
-.class Lcom/android/settings/cm;
+.class Lcom/android/settings_ext/cm;
 .super Ljava/lang/Object;
 .source "EditPinPreference.java"
 
@@ -9,18 +9,18 @@
 # instance fields
 .field final synthetic kF:Landroid/widget/Button;
 
-.field final synthetic kG:Lcom/android/settings/EditPinPreference;
+.field final synthetic kG:Lcom/android/settings_ext/EditPinPreference;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/EditPinPreference;Landroid/widget/Button;)V
+.method constructor <init>(Lcom/android/settings_ext/EditPinPreference;Landroid/widget/Button;)V
     .locals 0
 
     .prologue
     .line 102
-    iput-object p1, p0, Lcom/android/settings/cm;->kG:Lcom/android/settings/EditPinPreference;
+    iput-object p1, p0, Lcom/android/settings_ext/cm;->kG:Lcom/android/settings_ext/EditPinPreference;
 
-    iput-object p2, p0, Lcom/android/settings/cm;->kF:Landroid/widget/Button;
+    iput-object p2, p0, Lcom/android/settings_ext/cm;->kF:Landroid/widget/Button;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -34,7 +34,7 @@
 
     .prologue
     .line 113
-    iget-object v1, p0, Lcom/android/settings/cm;->kF:Landroid/widget/Button;
+    iget-object v1, p0, Lcom/android/settings_ext/cm;->kF:Landroid/widget/Button;
 
     invoke-virtual {p1}, Ljava/lang/Object;->toString()Ljava/lang/String;
 

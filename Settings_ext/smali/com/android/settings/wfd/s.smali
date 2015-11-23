@@ -1,4 +1,4 @@
-.class Lcom/android/settings/wfd/s;
+.class Lcom/android/settings_ext/wfd/s;
 .super Ljava/lang/Object;
 .source "WifiDisplaySettings.java"
 
@@ -7,16 +7,16 @@
 
 
 # instance fields
-.field final synthetic aoA:Lcom/android/settings/wfd/WifiDisplaySettings;
+.field final synthetic aoA:Lcom/android/settings_ext/wfd/WifiDisplaySettings;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/wfd/WifiDisplaySettings;)V
+.method constructor <init>(Lcom/android/settings_ext/wfd/WifiDisplaySettings;)V
     .locals 0
 
     .prologue
     .line 517
-    iput-object p1, p0, Lcom/android/settings/wfd/s;->aoA:Lcom/android/settings/wfd/WifiDisplaySettings;
+    iput-object p1, p0, Lcom/android/settings_ext/wfd/s;->aoA:Lcom/android/settings_ext/wfd/WifiDisplaySettings;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 

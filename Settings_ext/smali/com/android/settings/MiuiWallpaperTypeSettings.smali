@@ -1,5 +1,5 @@
-.class public Lcom/android/settings/MiuiWallpaperTypeSettings;
-.super Lcom/android/settings/SettingsPreferenceFragment;
+.class public Lcom/android/settings_ext/MiuiWallpaperTypeSettings;
+.super Lcom/android/settings_ext/SettingsPreferenceFragment;
 .source "MiuiWallpaperTypeSettings.java"
 
 
@@ -9,7 +9,7 @@
 
     .prologue
     .line 10
-    invoke-direct {p0}, Lcom/android/settings/SettingsPreferenceFragment;-><init>()V
+    invoke-direct {p0}, Lcom/android/settings_ext/SettingsPreferenceFragment;-><init>()V
 
     return-void
 .end method
@@ -19,26 +19,26 @@
 
     .prologue
     .line 21
-    invoke-virtual {p0}, Lcom/android/settings/MiuiWallpaperTypeSettings;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
+    invoke-virtual {p0}, Lcom/android/settings_ext/MiuiWallpaperTypeSettings;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
 
     move-result-object v0
 
     .line 22
-    invoke-direct {p0}, Lcom/android/settings/MiuiWallpaperTypeSettings;->fD()Landroid/preference/Preference;
+    invoke-direct {p0}, Lcom/android/settings_ext/MiuiWallpaperTypeSettings;->fD()Landroid/preference/Preference;
 
     move-result-object v1
 
     invoke-virtual {v0, v1}, Landroid/preference/PreferenceScreen;->addPreference(Landroid/preference/Preference;)Z
 
     .line 23
-    invoke-direct {p0}, Lcom/android/settings/MiuiWallpaperTypeSettings;->fE()Landroid/preference/Preference;
+    invoke-direct {p0}, Lcom/android/settings_ext/MiuiWallpaperTypeSettings;->fE()Landroid/preference/Preference;
 
     move-result-object v1
 
     invoke-virtual {v0, v1}, Landroid/preference/PreferenceScreen;->addPreference(Landroid/preference/Preference;)Z
 
     .line 24
-    invoke-direct {p0}, Lcom/android/settings/MiuiWallpaperTypeSettings;->fF()Landroid/preference/Preference;
+    invoke-direct {p0}, Lcom/android/settings_ext/MiuiWallpaperTypeSettings;->fF()Landroid/preference/Preference;
 
     move-result-object v1
 
@@ -74,7 +74,7 @@
     .line 33
     new-instance v1, Landroid/preference/Preference;
 
-    invoke-virtual {p0}, Lcom/android/settings/MiuiWallpaperTypeSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/MiuiWallpaperTypeSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v2
 
@@ -118,7 +118,7 @@
     .line 44
     new-instance v1, Landroid/preference/Preference;
 
-    invoke-virtual {p0}, Lcom/android/settings/MiuiWallpaperTypeSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/MiuiWallpaperTypeSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v2
 
@@ -155,7 +155,7 @@
     .line 54
     new-instance v1, Landroid/preference/Preference;
 
-    invoke-virtual {p0}, Lcom/android/settings/MiuiWallpaperTypeSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/MiuiWallpaperTypeSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v2
 
@@ -180,15 +180,15 @@
 
     .prologue
     .line 13
-    invoke-super {p0, p1}, Lcom/android/settings/SettingsPreferenceFragment;->onCreate(Landroid/os/Bundle;)V
+    invoke-super {p0, p1}, Lcom/android/settings_ext/SettingsPreferenceFragment;->onCreate(Landroid/os/Bundle;)V
 
     .line 15
     const v0, 0x7f06009f
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/MiuiWallpaperTypeSettings;->addPreferencesFromResource(I)V
+    invoke-virtual {p0, v0}, Lcom/android/settings_ext/MiuiWallpaperTypeSettings;->addPreferencesFromResource(I)V
 
     .line 16
-    invoke-direct {p0}, Lcom/android/settings/MiuiWallpaperTypeSettings;->fC()V
+    invoke-direct {p0}, Lcom/android/settings_ext/MiuiWallpaperTypeSettings;->fC()V
 
     .line 17
     return-void

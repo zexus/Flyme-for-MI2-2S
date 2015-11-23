@@ -1,4 +1,4 @@
-.class final Lcom/android/settings/print/g;
+.class final Lcom/android/settings_ext/print/g;
 .super Landroid/widget/BaseAdapter;
 .source "PrintServiceSettingsFragment.java"
 
@@ -8,7 +8,7 @@
 
 
 # instance fields
-.field final synthetic ahg:Lcom/android/settings/print/PrintServiceSettingsFragment;
+.field final synthetic ahg:Lcom/android/settings_ext/print/PrintServiceSettingsFragment;
 
 .field private final ahh:Ljava/util/List;
 
@@ -20,12 +20,12 @@
 
 
 # direct methods
-.method private constructor <init>(Lcom/android/settings/print/PrintServiceSettingsFragment;)V
+.method private constructor <init>(Lcom/android/settings_ext/print/PrintServiceSettingsFragment;)V
     .locals 1
 
     .prologue
     .line 466
-    iput-object p1, p0, Lcom/android/settings/print/g;->ahg:Lcom/android/settings/print/PrintServiceSettingsFragment;
+    iput-object p1, p0, Lcom/android/settings_ext/print/g;->ahg:Lcom/android/settings_ext/print/PrintServiceSettingsFragment;
 
     invoke-direct {p0}, Landroid/widget/BaseAdapter;-><init>()V
 
@@ -34,71 +34,71 @@
 
     invoke-direct {v0}, Ljava/lang/Object;-><init>()V
 
-    iput-object v0, p0, Lcom/android/settings/print/g;->mLock:Ljava/lang/Object;
+    iput-object v0, p0, Lcom/android/settings_ext/print/g;->mLock:Ljava/lang/Object;
 
     .line 470
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
-    iput-object v0, p0, Lcom/android/settings/print/g;->ahh:Ljava/util/List;
+    iput-object v0, p0, Lcom/android/settings_ext/print/g;->ahh:Ljava/util/List;
 
     .line 472
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
-    iput-object v0, p0, Lcom/android/settings/print/g;->ahi:Ljava/util/List;
+    iput-object v0, p0, Lcom/android/settings_ext/print/g;->ahi:Ljava/util/List;
 
     return-void
 .end method
 
-.method synthetic constructor <init>(Lcom/android/settings/print/PrintServiceSettingsFragment;Lcom/android/settings/print/b;)V
+.method synthetic constructor <init>(Lcom/android/settings_ext/print/PrintServiceSettingsFragment;Lcom/android/settings_ext/print/b;)V
     .locals 0
 
     .prologue
     .line 466
-    invoke-direct {p0, p1}, Lcom/android/settings/print/g;-><init>(Lcom/android/settings/print/PrintServiceSettingsFragment;)V
+    invoke-direct {p0, p1}, Lcom/android/settings_ext/print/g;-><init>(Lcom/android/settings_ext/print/PrintServiceSettingsFragment;)V
 
     return-void
 .end method
 
-.method static synthetic a(Lcom/android/settings/print/g;Ljava/lang/CharSequence;)Ljava/lang/CharSequence;
+.method static synthetic a(Lcom/android/settings_ext/print/g;Ljava/lang/CharSequence;)Ljava/lang/CharSequence;
     .locals 0
 
     .prologue
     .line 466
-    iput-object p1, p0, Lcom/android/settings/print/g;->ahj:Ljava/lang/CharSequence;
+    iput-object p1, p0, Lcom/android/settings_ext/print/g;->ahj:Ljava/lang/CharSequence;
 
     return-object p1
 .end method
 
-.method static synthetic a(Lcom/android/settings/print/g;)Ljava/lang/Object;
+.method static synthetic a(Lcom/android/settings_ext/print/g;)Ljava/lang/Object;
     .locals 1
 
     .prologue
     .line 466
-    iget-object v0, p0, Lcom/android/settings/print/g;->mLock:Ljava/lang/Object;
+    iget-object v0, p0, Lcom/android/settings_ext/print/g;->mLock:Ljava/lang/Object;
 
     return-object v0
 .end method
 
-.method static synthetic b(Lcom/android/settings/print/g;)Ljava/util/List;
+.method static synthetic b(Lcom/android/settings_ext/print/g;)Ljava/util/List;
     .locals 1
 
     .prologue
     .line 466
-    iget-object v0, p0, Lcom/android/settings/print/g;->ahh:Ljava/util/List;
+    iget-object v0, p0, Lcom/android/settings_ext/print/g;->ahh:Ljava/util/List;
 
     return-object v0
 .end method
 
-.method static synthetic c(Lcom/android/settings/print/g;)Ljava/util/List;
+.method static synthetic c(Lcom/android/settings_ext/print/g;)Ljava/util/List;
     .locals 1
 
     .prologue
     .line 466
-    iget-object v0, p0, Lcom/android/settings/print/g;->ahi:Ljava/util/List;
+    iget-object v0, p0, Lcom/android/settings_ext/print/g;->ahi:Ljava/util/List;
 
     return-object v0
 .end method
@@ -110,13 +110,13 @@
 
     .prologue
     .line 610
-    iget-object v2, p0, Lcom/android/settings/print/g;->mLock:Ljava/lang/Object;
+    iget-object v2, p0, Lcom/android/settings_ext/print/g;->mLock:Ljava/lang/Object;
 
     monitor-enter v2
 
     .line 611
     :try_start_0
-    iget-object v0, p0, Lcom/android/settings/print/g;->ahh:Ljava/util/List;
+    iget-object v0, p0, Lcom/android/settings_ext/print/g;->ahh:Ljava/util/List;
 
     invoke-interface {v0}, Ljava/util/List;->clear()V
 
@@ -149,9 +149,9 @@
 
     move-result-object v4
 
-    iget-object v5, p0, Lcom/android/settings/print/g;->ahg:Lcom/android/settings/print/PrintServiceSettingsFragment;
+    iget-object v5, p0, Lcom/android/settings_ext/print/g;->ahg:Lcom/android/settings_ext/print/PrintServiceSettingsFragment;
 
-    invoke-static {v5}, Lcom/android/settings/print/PrintServiceSettingsFragment;->k(Lcom/android/settings/print/PrintServiceSettingsFragment;)Landroid/content/ComponentName;
+    invoke-static {v5}, Lcom/android/settings_ext/print/PrintServiceSettingsFragment;->k(Lcom/android/settings_ext/print/PrintServiceSettingsFragment;)Landroid/content/ComponentName;
 
     move-result-object v5
 
@@ -162,7 +162,7 @@
     if-eqz v4, :cond_0
 
     .line 616
-    iget-object v4, p0, Lcom/android/settings/print/g;->ahh:Ljava/util/List;
+    iget-object v4, p0, Lcom/android/settings_ext/print/g;->ahh:Ljava/util/List;
 
     invoke-interface {v4, v0}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
@@ -176,19 +176,19 @@
 
     .line 619
     :cond_1
-    iget-object v0, p0, Lcom/android/settings/print/g;->ahi:Ljava/util/List;
+    iget-object v0, p0, Lcom/android/settings_ext/print/g;->ahi:Ljava/util/List;
 
     invoke-interface {v0}, Ljava/util/List;->clear()V
 
     .line 620
-    iget-object v0, p0, Lcom/android/settings/print/g;->ahi:Ljava/util/List;
+    iget-object v0, p0, Lcom/android/settings_ext/print/g;->ahi:Ljava/util/List;
 
-    iget-object v1, p0, Lcom/android/settings/print/g;->ahh:Ljava/util/List;
+    iget-object v1, p0, Lcom/android/settings_ext/print/g;->ahh:Ljava/util/List;
 
     invoke-interface {v0, v1}, Ljava/util/List;->addAll(Ljava/util/Collection;)Z
 
     .line 621
-    iget-object v0, p0, Lcom/android/settings/print/g;->ahj:Ljava/lang/CharSequence;
+    iget-object v0, p0, Lcom/android/settings_ext/print/g;->ahj:Ljava/lang/CharSequence;
 
     invoke-static {v0}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
@@ -197,11 +197,11 @@
     if-nez v0, :cond_2
 
     .line 622
-    invoke-virtual {p0}, Lcom/android/settings/print/g;->getFilter()Landroid/widget/Filter;
+    invoke-virtual {p0}, Lcom/android/settings_ext/print/g;->getFilter()Landroid/widget/Filter;
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/android/settings/print/g;->ahj:Ljava/lang/CharSequence;
+    iget-object v1, p0, Lcom/android/settings_ext/print/g;->ahj:Ljava/lang/CharSequence;
 
     invoke-virtual {v0, v1}, Landroid/widget/Filter;->filter(Ljava/lang/CharSequence;)V
 
@@ -212,7 +212,7 @@
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
     .line 625
-    invoke-virtual {p0}, Lcom/android/settings/print/g;->notifyDataSetChanged()V
+    invoke-virtual {p0}, Lcom/android/settings_ext/print/g;->notifyDataSetChanged()V
 
     .line 626
     return-void
@@ -234,9 +234,9 @@
 
     .prologue
     .line 481
-    iget-object v0, p0, Lcom/android/settings/print/g;->ahg:Lcom/android/settings/print/PrintServiceSettingsFragment;
+    iget-object v0, p0, Lcom/android/settings_ext/print/g;->ahg:Lcom/android/settings_ext/print/PrintServiceSettingsFragment;
 
-    invoke-virtual {v0}, Lcom/android/settings/print/PrintServiceSettingsFragment;->getLoaderManager()Landroid/app/LoaderManager;
+    invoke-virtual {v0}, Lcom/android/settings_ext/print/PrintServiceSettingsFragment;->getLoaderManager()Landroid/app/LoaderManager;
 
     move-result-object v0
 
@@ -245,7 +245,7 @@
     invoke-virtual {v0, v1}, Landroid/app/LoaderManager;->destroyLoader(I)V
 
     .line 482
-    iget-object v0, p0, Lcom/android/settings/print/g;->ahh:Ljava/util/List;
+    iget-object v0, p0, Lcom/android/settings_ext/print/g;->ahh:Ljava/util/List;
 
     invoke-interface {v0}, Ljava/util/List;->clear()V
 
@@ -258,9 +258,9 @@
 
     .prologue
     .line 477
-    iget-object v0, p0, Lcom/android/settings/print/g;->ahg:Lcom/android/settings/print/PrintServiceSettingsFragment;
+    iget-object v0, p0, Lcom/android/settings_ext/print/g;->ahg:Lcom/android/settings_ext/print/PrintServiceSettingsFragment;
 
-    invoke-virtual {v0}, Lcom/android/settings/print/PrintServiceSettingsFragment;->getLoaderManager()Landroid/app/LoaderManager;
+    invoke-virtual {v0}, Lcom/android/settings_ext/print/PrintServiceSettingsFragment;->getLoaderManager()Landroid/app/LoaderManager;
 
     move-result-object v0
 
@@ -279,13 +279,13 @@
 
     .prologue
     .line 534
-    iget-object v1, p0, Lcom/android/settings/print/g;->mLock:Ljava/lang/Object;
+    iget-object v1, p0, Lcom/android/settings_ext/print/g;->mLock:Ljava/lang/Object;
 
     monitor-enter v1
 
     .line 535
     :try_start_0
-    iget-object v0, p0, Lcom/android/settings/print/g;->ahi:Ljava/util/List;
+    iget-object v0, p0, Lcom/android/settings_ext/print/g;->ahi:Ljava/util/List;
 
     invoke-interface {v0}, Ljava/util/List;->size()I
 
@@ -311,9 +311,9 @@
 
     .prologue
     .line 491
-    new-instance v0, Lcom/android/settings/print/h;
+    new-instance v0, Lcom/android/settings_ext/print/h;
 
-    invoke-direct {v0, p0}, Lcom/android/settings/print/h;-><init>(Lcom/android/settings/print/g;)V
+    invoke-direct {v0, p0}, Lcom/android/settings_ext/print/h;-><init>(Lcom/android/settings_ext/print/g;)V
 
     return-object v0
 .end method
@@ -323,13 +323,13 @@
 
     .prologue
     .line 541
-    iget-object v1, p0, Lcom/android/settings/print/g;->mLock:Ljava/lang/Object;
+    iget-object v1, p0, Lcom/android/settings_ext/print/g;->mLock:Ljava/lang/Object;
 
     monitor-enter v1
 
     .line 542
     :try_start_0
-    iget-object v0, p0, Lcom/android/settings/print/g;->ahi:Ljava/util/List;
+    iget-object v0, p0, Lcom/android/settings_ext/print/g;->ahi:Ljava/util/List;
 
     invoke-interface {v0, p1}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
@@ -374,9 +374,9 @@
     if-nez p2, :cond_0
 
     .line 554
-    iget-object v0, p0, Lcom/android/settings/print/g;->ahg:Lcom/android/settings/print/PrintServiceSettingsFragment;
+    iget-object v0, p0, Lcom/android/settings_ext/print/g;->ahg:Lcom/android/settings_ext/print/PrintServiceSettingsFragment;
 
-    invoke-virtual {v0}, Lcom/android/settings/print/PrintServiceSettingsFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {v0}, Lcom/android/settings_ext/print/PrintServiceSettingsFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
@@ -392,7 +392,7 @@
 
     .line 558
     :cond_0
-    invoke-virtual {p0, p1}, Lcom/android/settings/print/g;->getItem(I)Ljava/lang/Object;
+    invoke-virtual {p0, p1}, Lcom/android/settings_ext/print/g;->getItem(I)Ljava/lang/Object;
 
     move-result-object v0
 
@@ -405,9 +405,9 @@
 
     .line 563
     :try_start_0
-    iget-object v1, p0, Lcom/android/settings/print/g;->ahg:Lcom/android/settings/print/PrintServiceSettingsFragment;
+    iget-object v1, p0, Lcom/android/settings_ext/print/g;->ahg:Lcom/android/settings_ext/print/PrintServiceSettingsFragment;
 
-    invoke-static {v1}, Lcom/android/settings/print/PrintServiceSettingsFragment;->h(Lcom/android/settings/print/PrintServiceSettingsFragment;)Landroid/content/pm/PackageManager;
+    invoke-static {v1}, Lcom/android/settings_ext/print/PrintServiceSettingsFragment;->h(Lcom/android/settings_ext/print/PrintServiceSettingsFragment;)Landroid/content/pm/PackageManager;
 
     move-result-object v1
 
@@ -432,9 +432,9 @@
     .line 565
     iget-object v1, v0, Landroid/content/pm/PackageInfo;->applicationInfo:Landroid/content/pm/ApplicationInfo;
 
-    iget-object v3, p0, Lcom/android/settings/print/g;->ahg:Lcom/android/settings/print/PrintServiceSettingsFragment;
+    iget-object v3, p0, Lcom/android/settings_ext/print/g;->ahg:Lcom/android/settings_ext/print/PrintServiceSettingsFragment;
 
-    invoke-static {v3}, Lcom/android/settings/print/PrintServiceSettingsFragment;->i(Lcom/android/settings/print/PrintServiceSettingsFragment;)Landroid/content/pm/PackageManager;
+    invoke-static {v3}, Lcom/android/settings_ext/print/PrintServiceSettingsFragment;->i(Lcom/android/settings_ext/print/PrintServiceSettingsFragment;)Landroid/content/pm/PackageManager;
 
     move-result-object v3
 
@@ -448,9 +448,9 @@
     :try_start_1
     iget-object v0, v0, Landroid/content/pm/PackageInfo;->applicationInfo:Landroid/content/pm/ApplicationInfo;
 
-    iget-object v3, p0, Lcom/android/settings/print/g;->ahg:Lcom/android/settings/print/PrintServiceSettingsFragment;
+    iget-object v3, p0, Lcom/android/settings_ext/print/g;->ahg:Lcom/android/settings_ext/print/PrintServiceSettingsFragment;
 
-    invoke-static {v3}, Lcom/android/settings/print/PrintServiceSettingsFragment;->j(Lcom/android/settings/print/PrintServiceSettingsFragment;)Landroid/content/pm/PackageManager;
+    invoke-static {v3}, Lcom/android/settings_ext/print/PrintServiceSettingsFragment;->j(Lcom/android/settings_ext/print/PrintServiceSettingsFragment;)Landroid/content/pm/PackageManager;
 
     move-result-object v3
 
@@ -579,15 +579,15 @@
     if-ne p1, v0, :cond_0
 
     .line 602
-    new-instance v0, Lcom/android/settings/print/i;
+    new-instance v0, Lcom/android/settings_ext/print/i;
 
-    iget-object v1, p0, Lcom/android/settings/print/g;->ahg:Lcom/android/settings/print/PrintServiceSettingsFragment;
+    iget-object v1, p0, Lcom/android/settings_ext/print/g;->ahg:Lcom/android/settings_ext/print/PrintServiceSettingsFragment;
 
-    invoke-virtual {v1}, Lcom/android/settings/print/PrintServiceSettingsFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {v1}, Lcom/android/settings_ext/print/PrintServiceSettingsFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v1
 
-    invoke-direct {v0, v1}, Lcom/android/settings/print/i;-><init>(Landroid/content/Context;)V
+    invoke-direct {v0, v1}, Lcom/android/settings_ext/print/i;-><init>(Landroid/content/Context;)V
 
     .line 604
     :goto_0
@@ -606,7 +606,7 @@
     .line 466
     check-cast p2, Ljava/util/List;
 
-    invoke-virtual {p0, p1, p2}, Lcom/android/settings/print/g;->a(Landroid/content/Loader;Ljava/util/List;)V
+    invoke-virtual {p0, p1, p2}, Lcom/android/settings_ext/print/g;->a(Landroid/content/Loader;Ljava/util/List;)V
 
     return-void
 .end method
@@ -616,25 +616,25 @@
 
     .prologue
     .line 630
-    iget-object v1, p0, Lcom/android/settings/print/g;->mLock:Ljava/lang/Object;
+    iget-object v1, p0, Lcom/android/settings_ext/print/g;->mLock:Ljava/lang/Object;
 
     monitor-enter v1
 
     .line 631
     :try_start_0
-    iget-object v0, p0, Lcom/android/settings/print/g;->ahh:Ljava/util/List;
+    iget-object v0, p0, Lcom/android/settings_ext/print/g;->ahh:Ljava/util/List;
 
     invoke-interface {v0}, Ljava/util/List;->clear()V
 
     .line 632
-    iget-object v0, p0, Lcom/android/settings/print/g;->ahi:Ljava/util/List;
+    iget-object v0, p0, Lcom/android/settings_ext/print/g;->ahi:Ljava/util/List;
 
     invoke-interface {v0}, Ljava/util/List;->clear()V
 
     .line 633
     const/4 v0, 0x0
 
-    iput-object v0, p0, Lcom/android/settings/print/g;->ahj:Ljava/lang/CharSequence;
+    iput-object v0, p0, Lcom/android/settings_ext/print/g;->ahj:Ljava/lang/CharSequence;
 
     .line 634
     monitor-exit v1
@@ -642,7 +642,7 @@
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
     .line 635
-    invoke-virtual {p0}, Lcom/android/settings/print/g;->notifyDataSetInvalidated()V
+    invoke-virtual {p0}, Lcom/android/settings_ext/print/g;->notifyDataSetInvalidated()V
 
     .line 636
     return-void
@@ -664,7 +664,7 @@
 
     .prologue
     .line 486
-    iget-object v0, p0, Lcom/android/settings/print/g;->ahh:Ljava/util/List;
+    iget-object v0, p0, Lcom/android/settings_ext/print/g;->ahh:Ljava/util/List;
 
     invoke-interface {v0}, Ljava/util/List;->size()I
 

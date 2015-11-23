@@ -1,4 +1,4 @@
-.class public Lcom/android/settings/provider/b;
+.class public Lcom/android/settings_ext/provider/b;
 .super Ljava/lang/Object;
 .source "MiuiSettingsUtil.java"
 
@@ -25,7 +25,7 @@
 
     move-result-object v0
 
-    sput-object v0, Lcom/android/settings/provider/b;->CONTENT_URI:Landroid/net/Uri;
+    sput-object v0, Lcom/android/settings_ext/provider/b;->CONTENT_URI:Landroid/net/Uri;
 
     .line 29
     sget-boolean v0, Lmiui/os/Build;->IS_MITHREE:Z
@@ -48,14 +48,14 @@
     const/16 v0, 0xa
 
     :goto_0
-    sput v0, Lcom/android/settings/provider/b;->LIMIT:I
+    sput v0, Lcom/android/settings_ext/provider/b;->LIMIT:I
 
     .line 157
     new-instance v0, Ljava/util/HashMap;
 
     invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
 
-    sput-object v0, Lcom/android/settings/provider/b;->ahz:Ljava/util/HashMap;
+    sput-object v0, Lcom/android/settings_ext/provider/b;->ahz:Ljava/util/HashMap;
 
     return-void
 
@@ -80,7 +80,7 @@
     move-result-object v0
 
     .line 96
-    sget-object v1, Lcom/android/settings/provider/b;->CONTENT_URI:Landroid/net/Uri;
+    sget-object v1, Lcom/android/settings_ext/provider/b;->CONTENT_URI:Landroid/net/Uri;
 
     new-array v2, v6, [Ljava/lang/String;
 
@@ -151,7 +151,7 @@
     if-eqz v1, :cond_0
 
     .line 114
-    sget-object v1, Lcom/android/settings/provider/b;->CONTENT_URI:Landroid/net/Uri;
+    sget-object v1, Lcom/android/settings_ext/provider/b;->CONTENT_URI:Landroid/net/Uri;
 
     const-string v3, "key=?"
 
@@ -186,7 +186,7 @@
     invoke-virtual {v2, v1, v3}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/Integer;)V
 
     .line 119
-    sget-object v1, Lcom/android/settings/provider/b;->CONTENT_URI:Landroid/net/Uri;
+    sget-object v1, Lcom/android/settings_ext/provider/b;->CONTENT_URI:Landroid/net/Uri;
 
     invoke-virtual {v0, v1, v2}, Landroid/content/ContentResolver;->insert(Landroid/net/Uri;Landroid/content/ContentValues;)Landroid/net/Uri;
 
@@ -208,46 +208,46 @@
 
     .prologue
     .line 145
-    sget-object v0, Lcom/android/settings/provider/b;->ahz:Ljava/util/HashMap;
+    sget-object v0, Lcom/android/settings_ext/provider/b;->ahz:Ljava/util/HashMap;
 
     invoke-virtual {v0, p0}, Ljava/util/HashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v0
 
-    check-cast v0, Lcom/android/settings/provider/d;
+    check-cast v0, Lcom/android/settings_ext/provider/d;
 
     .line 146
     if-nez v0, :cond_0
 
     .line 147
-    new-instance v0, Lcom/android/settings/provider/d;
+    new-instance v0, Lcom/android/settings_ext/provider/d;
 
-    invoke-direct {v0}, Lcom/android/settings/provider/d;-><init>()V
+    invoke-direct {v0}, Lcom/android/settings_ext/provider/d;-><init>()V
 
     .line 148
-    iput-object p0, v0, Lcom/android/settings/provider/d;->key:Ljava/lang/String;
+    iput-object p0, v0, Lcom/android/settings_ext/provider/d;->key:Ljava/lang/String;
 
     .line 149
-    iput-object p1, v0, Lcom/android/settings/provider/d;->ahB:Ljava/lang/String;
+    iput-object p1, v0, Lcom/android/settings_ext/provider/d;->ahB:Ljava/lang/String;
 
     .line 150
-    iput p2, v0, Lcom/android/settings/provider/d;->index:I
+    iput p2, v0, Lcom/android/settings_ext/provider/d;->index:I
 
     .line 151
     const/4 v1, -0x1
 
-    iput v1, v0, Lcom/android/settings/provider/d;->count:I
+    iput v1, v0, Lcom/android/settings_ext/provider/d;->count:I
 
     .line 153
     :cond_0
-    iget v1, v0, Lcom/android/settings/provider/d;->count:I
+    iget v1, v0, Lcom/android/settings_ext/provider/d;->count:I
 
     add-int/lit8 v1, v1, 0x1
 
-    iput v1, v0, Lcom/android/settings/provider/d;->count:I
+    iput v1, v0, Lcom/android/settings_ext/provider/d;->count:I
 
     .line 154
-    sget-object v1, Lcom/android/settings/provider/b;->ahz:Ljava/util/HashMap;
+    sget-object v1, Lcom/android/settings_ext/provider/b;->ahz:Ljava/util/HashMap;
 
     invoke-virtual {v1, p0, v0}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -260,7 +260,7 @@
 
     .prologue
     .line 15
-    invoke-static {p0, p1, p2, p3, p4}, Lcom/android/settings/provider/b;->a(Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;II)V
+    invoke-static {p0, p1, p2, p3, p4}, Lcom/android/settings_ext/provider/b;->a(Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;II)V
 
     return-void
 .end method
@@ -272,7 +272,7 @@
     .line 64
     const/4 v0, 0x5
 
-    invoke-static {p0, v0}, Lcom/android/settings/provider/b;->k(Landroid/content/Context;I)[I
+    invoke-static {p0, v0}, Lcom/android/settings_ext/provider/b;->k(Landroid/content/Context;I)[I
 
     move-result-object v0
 
@@ -284,7 +284,7 @@
 
     .prologue
     .line 126
-    sget-object v0, Lcom/android/settings/provider/b;->ahz:Ljava/util/HashMap;
+    sget-object v0, Lcom/android/settings_ext/provider/b;->ahz:Ljava/util/HashMap;
 
     invoke-virtual {v0}, Ljava/util/HashMap;->size()I
 
@@ -303,7 +303,7 @@
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
     .line 130
-    sget-object v1, Lcom/android/settings/provider/b;->ahz:Ljava/util/HashMap;
+    sget-object v1, Lcom/android/settings_ext/provider/b;->ahz:Ljava/util/HashMap;
 
     invoke-virtual {v1}, Ljava/util/HashMap;->values()Ljava/util/Collection;
 
@@ -312,21 +312,21 @@
     invoke-virtual {v0, v1}, Ljava/util/ArrayList;->addAll(Ljava/util/Collection;)Z
 
     .line 131
-    sget-object v1, Lcom/android/settings/provider/b;->ahz:Ljava/util/HashMap;
+    sget-object v1, Lcom/android/settings_ext/provider/b;->ahz:Ljava/util/HashMap;
 
     invoke-virtual {v1}, Ljava/util/HashMap;->clear()V
 
     .line 132
     const/4 v1, 0x1
 
-    sput-boolean v1, Lcom/android/settings/provider/b;->ahy:Z
+    sput-boolean v1, Lcom/android/settings_ext/provider/b;->ahy:Z
 
     .line 134
-    new-instance v1, Lcom/android/settings/provider/c;
+    new-instance v1, Lcom/android/settings_ext/provider/c;
 
-    invoke-direct {v1, v0, p0}, Lcom/android/settings/provider/c;-><init>(Ljava/util/ArrayList;Landroid/content/Context;)V
+    invoke-direct {v1, v0, p0}, Lcom/android/settings_ext/provider/c;-><init>(Ljava/util/ArrayList;Landroid/content/Context;)V
 
-    invoke-virtual {v1}, Lcom/android/settings/provider/c;->start()V
+    invoke-virtual {v1}, Lcom/android/settings_ext/provider/c;->start()V
 
     goto :goto_0
 .end method
@@ -350,7 +350,7 @@
     const-string v5, "count desc "
 
     .line 70
-    sget-object v1, Lcom/android/settings/provider/b;->CONTENT_URI:Landroid/net/Uri;
+    sget-object v1, Lcom/android/settings_ext/provider/b;->CONTENT_URI:Landroid/net/Uri;
 
     invoke-virtual {v1}, Landroid/net/Uri;->buildUpon()Landroid/net/Uri$Builder;
 
@@ -358,7 +358,7 @@
 
     const-string v2, "limit"
 
-    sget v4, Lcom/android/settings/provider/b;->LIMIT:I
+    sget v4, Lcom/android/settings_ext/provider/b;->LIMIT:I
 
     invoke-static {v4}, Ljava/lang/String;->valueOf(I)Ljava/lang/String;
 
@@ -462,7 +462,7 @@
     move-result-object v0
 
     .line 91
-    sget-object v1, Lcom/android/settings/provider/b;->CONTENT_URI:Landroid/net/Uri;
+    sget-object v1, Lcom/android/settings_ext/provider/b;->CONTENT_URI:Landroid/net/Uri;
 
     new-instance v2, Ljava/lang/StringBuilder;
 

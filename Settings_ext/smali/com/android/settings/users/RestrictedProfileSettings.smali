@@ -1,9 +1,9 @@
-.class public Lcom/android/settings/users/RestrictedProfileSettings;
-.super Lcom/android/settings/users/AppRestrictionsFragment;
+.class public Lcom/android/settings_ext/users/RestrictedProfileSettings;
+.super Lcom/android/settings_ext/users/AppRestrictionsFragment;
 .source "RestrictedProfileSettings.java"
 
 # interfaces
-.implements Lcom/android/settings/users/EditUserInfoController$OnContentChangedCallback;
+.implements Lcom/android/settings_ext/users/EditUserInfoController$OnContentChangedCallback;
 
 
 # instance fields
@@ -13,7 +13,7 @@
 
 .field private ams:Landroid/widget/ImageView;
 
-.field private amt:Lcom/android/settings/users/EditUserInfoController;
+.field private amt:Lcom/android/settings_ext/users/EditUserInfoController;
 
 .field private mHeaderView:Landroid/view/View;
 
@@ -24,24 +24,24 @@
 
     .prologue
     .line 36
-    invoke-direct {p0}, Lcom/android/settings/users/AppRestrictionsFragment;-><init>()V
+    invoke-direct {p0}, Lcom/android/settings_ext/users/AppRestrictionsFragment;-><init>()V
 
     .line 48
-    new-instance v0, Lcom/android/settings/users/EditUserInfoController;
+    new-instance v0, Lcom/android/settings_ext/users/EditUserInfoController;
 
-    invoke-direct {v0}, Lcom/android/settings/users/EditUserInfoController;-><init>()V
+    invoke-direct {v0}, Lcom/android/settings_ext/users/EditUserInfoController;-><init>()V
 
-    iput-object v0, p0, Lcom/android/settings/users/RestrictedProfileSettings;->amt:Lcom/android/settings/users/EditUserInfoController;
+    iput-object v0, p0, Lcom/android/settings_ext/users/RestrictedProfileSettings;->amt:Lcom/android/settings_ext/users/EditUserInfoController;
 
     return-void
 .end method
 
-.method static synthetic a(Lcom/android/settings/users/RestrictedProfileSettings;)V
+.method static synthetic a(Lcom/android/settings_ext/users/RestrictedProfileSettings;)V
     .locals 0
 
     .prologue
     .line 36
-    invoke-direct {p0}, Lcom/android/settings/users/RestrictedProfileSettings;->removeUser()V
+    invoke-direct {p0}, Lcom/android/settings_ext/users/RestrictedProfileSettings;->removeUser()V
 
     return-void
 .end method
@@ -51,7 +51,7 @@
 
     .prologue
     .line 101
-    iget-object v0, p0, Lcom/android/settings/users/RestrictedProfileSettings;->mUserManager:Landroid/os/UserManager;
+    iget-object v0, p0, Lcom/android/settings_ext/users/RestrictedProfileSettings;->mUserManager:Landroid/os/UserManager;
 
     const/4 v1, 0x1
 
@@ -101,13 +101,13 @@
 
     .prologue
     .line 156
-    invoke-virtual {p0}, Lcom/android/settings/users/RestrictedProfileSettings;->getView()Landroid/view/View;
+    invoke-virtual {p0}, Lcom/android/settings_ext/users/RestrictedProfileSettings;->getView()Landroid/view/View;
 
     move-result-object v0
 
-    new-instance v1, Lcom/android/settings/users/RestrictedProfileSettings$2;
+    new-instance v1, Lcom/android/settings_ext/users/RestrictedProfileSettings$2;
 
-    invoke-direct {v1, p0}, Lcom/android/settings/users/RestrictedProfileSettings$2;-><init>(Lcom/android/settings/users/RestrictedProfileSettings;)V
+    invoke-direct {v1, p0}, Lcom/android/settings_ext/users/RestrictedProfileSettings$2;-><init>(Lcom/android/settings_ext/users/RestrictedProfileSettings;)V
 
     invoke-virtual {v0, v1}, Landroid/view/View;->post(Ljava/lang/Runnable;)Z
 
@@ -122,7 +122,7 @@
 
     .prologue
     .line 166
-    iget-object v0, p0, Lcom/android/settings/users/RestrictedProfileSettings;->amq:Landroid/widget/ImageView;
+    iget-object v0, p0, Lcom/android/settings_ext/users/RestrictedProfileSettings;->amq:Landroid/widget/ImageView;
 
     invoke-virtual {v0, p1}, Landroid/widget/ImageView;->setImageDrawable(Landroid/graphics/drawable/Drawable;)V
 
@@ -135,7 +135,7 @@
 
     .prologue
     .line 171
-    iget-object v0, p0, Lcom/android/settings/users/RestrictedProfileSettings;->amr:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/android/settings_ext/users/RestrictedProfileSettings;->amr:Landroid/widget/TextView;
 
     invoke-virtual {v0, p1}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
@@ -148,12 +148,12 @@
 
     .prologue
     .line 64
-    iget-object v0, p0, Lcom/android/settings/users/RestrictedProfileSettings;->mHeaderView:Landroid/view/View;
+    iget-object v0, p0, Lcom/android/settings_ext/users/RestrictedProfileSettings;->mHeaderView:Landroid/view/View;
 
     if-nez v0, :cond_0
 
     .line 65
-    invoke-virtual {p0}, Lcom/android/settings/users/RestrictedProfileSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/users/RestrictedProfileSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
@@ -169,20 +169,20 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/users/RestrictedProfileSettings;->mHeaderView:Landroid/view/View;
+    iput-object v0, p0, Lcom/android/settings_ext/users/RestrictedProfileSettings;->mHeaderView:Landroid/view/View;
 
     .line 67
-    iget-object v0, p0, Lcom/android/settings/users/RestrictedProfileSettings;->mHeaderView:Landroid/view/View;
+    iget-object v0, p0, Lcom/android/settings_ext/users/RestrictedProfileSettings;->mHeaderView:Landroid/view/View;
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/users/RestrictedProfileSettings;->c(Landroid/view/View;)V
+    invoke-virtual {p0, v0}, Lcom/android/settings_ext/users/RestrictedProfileSettings;->c(Landroid/view/View;)V
 
     .line 68
-    iget-object v0, p0, Lcom/android/settings/users/RestrictedProfileSettings;->mHeaderView:Landroid/view/View;
+    iget-object v0, p0, Lcom/android/settings_ext/users/RestrictedProfileSettings;->mHeaderView:Landroid/view/View;
 
     invoke-virtual {v0, p0}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     .line 69
-    iget-object v0, p0, Lcom/android/settings/users/RestrictedProfileSettings;->mHeaderView:Landroid/view/View;
+    iget-object v0, p0, Lcom/android/settings_ext/users/RestrictedProfileSettings;->mHeaderView:Landroid/view/View;
 
     const v1, 0x1020006
 
@@ -192,10 +192,10 @@
 
     check-cast v0, Landroid/widget/ImageView;
 
-    iput-object v0, p0, Lcom/android/settings/users/RestrictedProfileSettings;->amq:Landroid/widget/ImageView;
+    iput-object v0, p0, Lcom/android/settings_ext/users/RestrictedProfileSettings;->amq:Landroid/widget/ImageView;
 
     .line 70
-    iget-object v0, p0, Lcom/android/settings/users/RestrictedProfileSettings;->mHeaderView:Landroid/view/View;
+    iget-object v0, p0, Lcom/android/settings_ext/users/RestrictedProfileSettings;->mHeaderView:Landroid/view/View;
 
     const v1, 0x1020016
 
@@ -205,10 +205,10 @@
 
     check-cast v0, Landroid/widget/TextView;
 
-    iput-object v0, p0, Lcom/android/settings/users/RestrictedProfileSettings;->amr:Landroid/widget/TextView;
+    iput-object v0, p0, Lcom/android/settings_ext/users/RestrictedProfileSettings;->amr:Landroid/widget/TextView;
 
     .line 71
-    iget-object v0, p0, Lcom/android/settings/users/RestrictedProfileSettings;->mHeaderView:Landroid/view/View;
+    iget-object v0, p0, Lcom/android/settings_ext/users/RestrictedProfileSettings;->mHeaderView:Landroid/view/View;
 
     const v1, 0x7f1002cc
 
@@ -218,15 +218,15 @@
 
     check-cast v0, Landroid/widget/ImageView;
 
-    iput-object v0, p0, Lcom/android/settings/users/RestrictedProfileSettings;->ams:Landroid/widget/ImageView;
+    iput-object v0, p0, Lcom/android/settings_ext/users/RestrictedProfileSettings;->ams:Landroid/widget/ImageView;
 
     .line 72
-    iget-object v0, p0, Lcom/android/settings/users/RestrictedProfileSettings;->ams:Landroid/widget/ImageView;
+    iget-object v0, p0, Lcom/android/settings_ext/users/RestrictedProfileSettings;->ams:Landroid/widget/ImageView;
 
     invoke-virtual {v0, p0}, Landroid/widget/ImageView;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     .line 73
-    invoke-virtual {p0}, Lcom/android/settings/users/RestrictedProfileSettings;->getListView()Landroid/widget/ListView;
+    invoke-virtual {p0}, Lcom/android/settings_ext/users/RestrictedProfileSettings;->getListView()Landroid/widget/ListView;
 
     move-result-object v0
 
@@ -236,7 +236,7 @@
 
     .line 76
     :cond_0
-    invoke-super {p0, p1}, Lcom/android/settings/users/AppRestrictionsFragment;->onActivityCreated(Landroid/os/Bundle;)V
+    invoke-super {p0, p1}, Lcom/android/settings_ext/users/AppRestrictionsFragment;->onActivityCreated(Landroid/os/Bundle;)V
 
     .line 77
     return-void
@@ -247,12 +247,12 @@
 
     .prologue
     .line 118
-    invoke-super {p0, p1, p2, p3}, Lcom/android/settings/users/AppRestrictionsFragment;->onActivityResult(IILandroid/content/Intent;)V
+    invoke-super {p0, p1, p2, p3}, Lcom/android/settings_ext/users/AppRestrictionsFragment;->onActivityResult(IILandroid/content/Intent;)V
 
     .line 120
-    iget-object v0, p0, Lcom/android/settings/users/RestrictedProfileSettings;->amt:Lcom/android/settings/users/EditUserInfoController;
+    iget-object v0, p0, Lcom/android/settings_ext/users/RestrictedProfileSettings;->amt:Lcom/android/settings_ext/users/EditUserInfoController;
 
-    invoke-virtual {v0, p1, p2, p3}, Lcom/android/settings/users/EditUserInfoController;->onActivityResult(IILandroid/content/Intent;)V
+    invoke-virtual {v0, p1, p2, p3}, Lcom/android/settings_ext/users/EditUserInfoController;->onActivityResult(IILandroid/content/Intent;)V
 
     .line 121
     return-void
@@ -263,14 +263,14 @@
 
     .prologue
     .line 125
-    iget-object v0, p0, Lcom/android/settings/users/RestrictedProfileSettings;->mHeaderView:Landroid/view/View;
+    iget-object v0, p0, Lcom/android/settings_ext/users/RestrictedProfileSettings;->mHeaderView:Landroid/view/View;
 
     if-ne p1, v0, :cond_0
 
     .line 126
     const/4 v0, 0x1
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/users/RestrictedProfileSettings;->showDialog(I)V
+    invoke-virtual {p0, v0}, Lcom/android/settings_ext/users/RestrictedProfileSettings;->showDialog(I)V
 
     .line 132
     :goto_0
@@ -278,20 +278,20 @@
 
     .line 127
     :cond_0
-    iget-object v0, p0, Lcom/android/settings/users/RestrictedProfileSettings;->ams:Landroid/widget/ImageView;
+    iget-object v0, p0, Lcom/android/settings_ext/users/RestrictedProfileSettings;->ams:Landroid/widget/ImageView;
 
     if-ne p1, v0, :cond_1
 
     .line 128
     const/4 v0, 0x2
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/users/RestrictedProfileSettings;->showDialog(I)V
+    invoke-virtual {p0, v0}, Lcom/android/settings_ext/users/RestrictedProfileSettings;->showDialog(I)V
 
     goto :goto_0
 
     .line 130
     :cond_1
-    invoke-super {p0, p1}, Lcom/android/settings/users/AppRestrictionsFragment;->onClick(Landroid/view/View;)V
+    invoke-super {p0, p1}, Lcom/android/settings_ext/users/AppRestrictionsFragment;->onClick(Landroid/view/View;)V
 
     goto :goto_0
 .end method
@@ -301,19 +301,19 @@
 
     .prologue
     .line 53
-    invoke-super {p0, p1}, Lcom/android/settings/users/AppRestrictionsFragment;->onCreate(Landroid/os/Bundle;)V
+    invoke-super {p0, p1}, Lcom/android/settings_ext/users/AppRestrictionsFragment;->onCreate(Landroid/os/Bundle;)V
 
     .line 55
     if-eqz p1, :cond_0
 
     .line 56
-    iget-object v0, p0, Lcom/android/settings/users/RestrictedProfileSettings;->amt:Lcom/android/settings/users/EditUserInfoController;
+    iget-object v0, p0, Lcom/android/settings_ext/users/RestrictedProfileSettings;->amt:Lcom/android/settings_ext/users/EditUserInfoController;
 
-    invoke-virtual {v0, p1}, Lcom/android/settings/users/EditUserInfoController;->onRestoreInstanceState(Landroid/os/Bundle;)V
+    invoke-virtual {v0, p1}, Lcom/android/settings_ext/users/EditUserInfoController;->onRestoreInstanceState(Landroid/os/Bundle;)V
 
     .line 59
     :cond_0
-    invoke-virtual {p0, p1}, Lcom/android/settings/users/RestrictedProfileSettings;->j(Landroid/os/Bundle;)V
+    invoke-virtual {p0, p1}, Lcom/android/settings_ext/users/RestrictedProfileSettings;->j(Landroid/os/Bundle;)V
 
     .line 60
     return-void
@@ -329,15 +329,15 @@
     if-ne p1, v0, :cond_0
 
     .line 137
-    iget-object v0, p0, Lcom/android/settings/users/RestrictedProfileSettings;->amt:Lcom/android/settings/users/EditUserInfoController;
+    iget-object v0, p0, Lcom/android/settings_ext/users/RestrictedProfileSettings;->amt:Lcom/android/settings_ext/users/EditUserInfoController;
 
-    iget-object v1, p0, Lcom/android/settings/users/RestrictedProfileSettings;->amq:Landroid/widget/ImageView;
+    iget-object v1, p0, Lcom/android/settings_ext/users/RestrictedProfileSettings;->amq:Landroid/widget/ImageView;
 
     invoke-virtual {v1}, Landroid/widget/ImageView;->getDrawable()Landroid/graphics/drawable/Drawable;
 
     move-result-object v2
 
-    iget-object v1, p0, Lcom/android/settings/users/RestrictedProfileSettings;->amr:Landroid/widget/TextView;
+    iget-object v1, p0, Lcom/android/settings_ext/users/RestrictedProfileSettings;->amr:Landroid/widget/TextView;
 
     invoke-virtual {v1}, Landroid/widget/TextView;->getText()Ljava/lang/CharSequence;
 
@@ -345,13 +345,13 @@
 
     const v4, 0x7f0901ac
 
-    iget-object v6, p0, Lcom/android/settings/users/RestrictedProfileSettings;->alv:Landroid/os/UserHandle;
+    iget-object v6, p0, Lcom/android/settings_ext/users/RestrictedProfileSettings;->alv:Landroid/os/UserHandle;
 
     move-object v1, p0
 
     move-object v5, p0
 
-    invoke-virtual/range {v0 .. v6}, Lcom/android/settings/users/EditUserInfoController;->a(Landroid/app/Fragment;Landroid/graphics/drawable/Drawable;Ljava/lang/CharSequence;ILcom/android/settings/users/EditUserInfoController$OnContentChangedCallback;Landroid/os/UserHandle;)Landroid/app/Dialog;
+    invoke-virtual/range {v0 .. v6}, Lcom/android/settings_ext/users/EditUserInfoController;->a(Landroid/app/Fragment;Landroid/graphics/drawable/Drawable;Ljava/lang/CharSequence;ILcom/android/settings_ext/users/EditUserInfoController$OnContentChangedCallback;Landroid/os/UserHandle;)Landroid/app/Dialog;
 
     move-result-object v0
 
@@ -366,21 +366,21 @@
     if-ne p1, v0, :cond_1
 
     .line 141
-    invoke-virtual {p0}, Lcom/android/settings/users/RestrictedProfileSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/users/RestrictedProfileSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/android/settings/users/RestrictedProfileSettings;->alv:Landroid/os/UserHandle;
+    iget-object v1, p0, Lcom/android/settings_ext/users/RestrictedProfileSettings;->alv:Landroid/os/UserHandle;
 
     invoke-virtual {v1}, Landroid/os/UserHandle;->getIdentifier()I
 
     move-result v1
 
-    new-instance v2, Lcom/android/settings/users/RestrictedProfileSettings$1;
+    new-instance v2, Lcom/android/settings_ext/users/RestrictedProfileSettings$1;
 
-    invoke-direct {v2, p0}, Lcom/android/settings/users/RestrictedProfileSettings$1;-><init>(Lcom/android/settings/users/RestrictedProfileSettings;)V
+    invoke-direct {v2, p0}, Lcom/android/settings_ext/users/RestrictedProfileSettings$1;-><init>(Lcom/android/settings_ext/users/RestrictedProfileSettings;)V
 
-    invoke-static {v0, v1, v2}, Lcom/android/settings/hl;->a(Landroid/content/Context;ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/Dialog;
+    invoke-static {v0, v1, v2}, Lcom/android/settings_ext/hl;->a(Landroid/content/Context;ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/Dialog;
 
     move-result-object v0
 
@@ -398,12 +398,12 @@
 
     .prologue
     .line 87
-    invoke-super {p0}, Lcom/android/settings/users/AppRestrictionsFragment;->onResume()V
+    invoke-super {p0}, Lcom/android/settings_ext/users/AppRestrictionsFragment;->onResume()V
 
     .line 90
-    iget-object v0, p0, Lcom/android/settings/users/RestrictedProfileSettings;->alv:Landroid/os/UserHandle;
+    iget-object v0, p0, Lcom/android/settings_ext/users/RestrictedProfileSettings;->alv:Landroid/os/UserHandle;
 
-    invoke-direct {p0, v0}, Lcom/android/settings/users/RestrictedProfileSettings;->b(Landroid/os/UserHandle;)Landroid/content/pm/UserInfo;
+    invoke-direct {p0, v0}, Lcom/android/settings_ext/users/RestrictedProfileSettings;->b(Landroid/os/UserHandle;)Landroid/content/pm/UserInfo;
 
     move-result-object v1
 
@@ -411,7 +411,7 @@
     if-nez v1, :cond_0
 
     .line 92
-    invoke-virtual {p0}, Lcom/android/settings/users/RestrictedProfileSettings;->gW()V
+    invoke-virtual {p0}, Lcom/android/settings_ext/users/RestrictedProfileSettings;->gW()V
 
     .line 98
     :goto_0
@@ -419,7 +419,7 @@
 
     .line 94
     :cond_0
-    iget-object v0, p0, Lcom/android/settings/users/RestrictedProfileSettings;->mHeaderView:Landroid/view/View;
+    iget-object v0, p0, Lcom/android/settings_ext/users/RestrictedProfileSettings;->mHeaderView:Landroid/view/View;
 
     const v2, 0x1020016
 
@@ -434,7 +434,7 @@
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
     .line 95
-    iget-object v0, p0, Lcom/android/settings/users/RestrictedProfileSettings;->mHeaderView:Landroid/view/View;
+    iget-object v0, p0, Lcom/android/settings_ext/users/RestrictedProfileSettings;->mHeaderView:Landroid/view/View;
 
     const v1, 0x1020006
 
@@ -444,7 +444,7 @@
 
     check-cast v0, Landroid/widget/ImageView;
 
-    invoke-virtual {p0}, Lcom/android/settings/users/RestrictedProfileSettings;->sm()Landroid/graphics/drawable/Drawable;
+    invoke-virtual {p0}, Lcom/android/settings_ext/users/RestrictedProfileSettings;->sm()Landroid/graphics/drawable/Drawable;
 
     move-result-object v1
 
@@ -458,12 +458,12 @@
 
     .prologue
     .line 81
-    invoke-super {p0, p1}, Lcom/android/settings/users/AppRestrictionsFragment;->onSaveInstanceState(Landroid/os/Bundle;)V
+    invoke-super {p0, p1}, Lcom/android/settings_ext/users/AppRestrictionsFragment;->onSaveInstanceState(Landroid/os/Bundle;)V
 
     .line 82
-    iget-object v0, p0, Lcom/android/settings/users/RestrictedProfileSettings;->amt:Lcom/android/settings/users/EditUserInfoController;
+    iget-object v0, p0, Lcom/android/settings_ext/users/RestrictedProfileSettings;->amt:Lcom/android/settings_ext/users/EditUserInfoController;
 
-    invoke-virtual {v0, p1}, Lcom/android/settings/users/EditUserInfoController;->onSaveInstanceState(Landroid/os/Bundle;)V
+    invoke-virtual {v0, p1}, Lcom/android/settings_ext/users/EditUserInfoController;->onSaveInstanceState(Landroid/os/Bundle;)V
 
     .line 83
     return-void
@@ -474,12 +474,12 @@
 
     .prologue
     .line 112
-    iget-object v0, p0, Lcom/android/settings/users/RestrictedProfileSettings;->amt:Lcom/android/settings/users/EditUserInfoController;
+    iget-object v0, p0, Lcom/android/settings_ext/users/RestrictedProfileSettings;->amt:Lcom/android/settings_ext/users/EditUserInfoController;
 
-    invoke-virtual {v0}, Lcom/android/settings/users/EditUserInfoController;->ss()V
+    invoke-virtual {v0}, Lcom/android/settings_ext/users/EditUserInfoController;->ss()V
 
     .line 113
-    invoke-super {p0, p1, p2}, Lcom/android/settings/users/AppRestrictionsFragment;->startActivityForResult(Landroid/content/Intent;I)V
+    invoke-super {p0, p1, p2}, Lcom/android/settings_ext/users/AppRestrictionsFragment;->startActivityForResult(Landroid/content/Intent;I)V
 
     .line 114
     return-void

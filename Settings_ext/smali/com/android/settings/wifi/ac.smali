@@ -1,4 +1,4 @@
-.class Lcom/android/settings/wifi/ac;
+.class Lcom/android/settings_ext/wifi/ac;
 .super Ljava/lang/Object;
 .source "WifiDialog.java"
 
@@ -7,16 +7,16 @@
 
 
 # instance fields
-.field final synthetic avy:Lcom/android/settings/wifi/aa;
+.field final synthetic avy:Lcom/android/settings_ext/wifi/aa;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/wifi/aa;)V
+.method constructor <init>(Lcom/android/settings_ext/wifi/aa;)V
     .locals 0
 
     .prologue
     .line 146
-    iput-object p1, p0, Lcom/android/settings/wifi/ac;->avy:Lcom/android/settings/wifi/aa;
+    iput-object p1, p0, Lcom/android/settings_ext/wifi/ac;->avy:Lcom/android/settings_ext/wifi/aa;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -30,13 +30,13 @@
 
     .prologue
     .line 150
-    iget-object v0, p0, Lcom/android/settings/wifi/ac;->avy:Lcom/android/settings/wifi/aa;
+    iget-object v0, p0, Lcom/android/settings_ext/wifi/ac;->avy:Lcom/android/settings_ext/wifi/aa;
 
-    invoke-static {v0}, Lcom/android/settings/wifi/aa;->b(Lcom/android/settings/wifi/aa;)Lcom/android/settings/wifi/T;
+    invoke-static {v0}, Lcom/android/settings_ext/wifi/aa;->b(Lcom/android/settings_ext/wifi/aa;)Lcom/android/settings_ext/wifi/T;
 
     move-result-object v0
 
-    invoke-virtual {v0, p2}, Lcom/android/settings/wifi/T;->bi(Z)V
+    invoke-virtual {v0, p2}, Lcom/android/settings_ext/wifi/T;->bi(Z)V
 
     .line 151
     return-void

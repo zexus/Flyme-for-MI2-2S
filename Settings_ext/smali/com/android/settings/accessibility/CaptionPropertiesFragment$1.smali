@@ -1,4 +1,4 @@
-.class Lcom/android/settings/accessibility/CaptionPropertiesFragment$1;
+.class Lcom/android/settings_ext/accessibility/CaptionPropertiesFragment$1;
 .super Ljava/lang/Object;
 .source "CaptionPropertiesFragment.java"
 
@@ -7,16 +7,16 @@
 
 
 # instance fields
-.field final synthetic AW:Lcom/android/settings/accessibility/CaptionPropertiesFragment;
+.field final synthetic AW:Lcom/android/settings_ext/accessibility/CaptionPropertiesFragment;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/accessibility/CaptionPropertiesFragment;)V
+.method constructor <init>(Lcom/android/settings_ext/accessibility/CaptionPropertiesFragment;)V
     .locals 0
 
     .prologue
     .line 143
-    iput-object p1, p0, Lcom/android/settings/accessibility/CaptionPropertiesFragment$1;->AW:Lcom/android/settings/accessibility/CaptionPropertiesFragment;
+    iput-object p1, p0, Lcom/android/settings_ext/accessibility/CaptionPropertiesFragment$1;->AW:Lcom/android/settings_ext/accessibility/CaptionPropertiesFragment;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -30,9 +30,9 @@
 
     .prologue
     .line 147
-    iget-object v0, p0, Lcom/android/settings/accessibility/CaptionPropertiesFragment$1;->AW:Lcom/android/settings/accessibility/CaptionPropertiesFragment;
+    iget-object v0, p0, Lcom/android/settings_ext/accessibility/CaptionPropertiesFragment$1;->AW:Lcom/android/settings_ext/accessibility/CaptionPropertiesFragment;
 
-    invoke-static {v0}, Lcom/android/settings/accessibility/CaptionPropertiesFragment;->a(Lcom/android/settings/accessibility/CaptionPropertiesFragment;)V
+    invoke-static {v0}, Lcom/android/settings_ext/accessibility/CaptionPropertiesFragment;->a(Lcom/android/settings_ext/accessibility/CaptionPropertiesFragment;)V
 
     .line 148
     return-void

@@ -1,4 +1,4 @@
-.class Lcom/android/settings/an;
+.class Lcom/android/settings_ext/an;
 .super Ljava/lang/Object;
 .source "ChooseLockPattern.java"
 
@@ -7,16 +7,16 @@
 
 
 # instance fields
-.field final synthetic dy:Lcom/android/settings/ChooseLockPattern$ChooseLockPatternFragment;
+.field final synthetic dy:Lcom/android/settings_ext/ChooseLockPattern$ChooseLockPatternFragment;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/ChooseLockPattern$ChooseLockPatternFragment;)V
+.method constructor <init>(Lcom/android/settings_ext/ChooseLockPattern$ChooseLockPatternFragment;)V
     .locals 0
 
     .prologue
     .line 165
-    iput-object p1, p0, Lcom/android/settings/an;->dy:Lcom/android/settings/ChooseLockPattern$ChooseLockPatternFragment;
+    iput-object p1, p0, Lcom/android/settings_ext/an;->dy:Lcom/android/settings_ext/ChooseLockPattern$ChooseLockPatternFragment;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -30,36 +30,36 @@
     const/4 v2, 0x0
 
     .line 207
-    iget-object v0, p0, Lcom/android/settings/an;->dy:Lcom/android/settings/ChooseLockPattern$ChooseLockPatternFragment;
+    iget-object v0, p0, Lcom/android/settings_ext/an;->dy:Lcom/android/settings_ext/ChooseLockPattern$ChooseLockPatternFragment;
 
-    iget-object v0, v0, Lcom/android/settings/ChooseLockPattern$ChooseLockPatternFragment;->db:Landroid/widget/TextView;
+    iget-object v0, v0, Lcom/android/settings_ext/ChooseLockPattern$ChooseLockPatternFragment;->db:Landroid/widget/TextView;
 
     const v1, 0x7f0904f5
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setText(I)V
 
     .line 208
-    iget-object v0, p0, Lcom/android/settings/an;->dy:Lcom/android/settings/ChooseLockPattern$ChooseLockPatternFragment;
+    iget-object v0, p0, Lcom/android/settings_ext/an;->dy:Lcom/android/settings_ext/ChooseLockPattern$ChooseLockPatternFragment;
 
-    iget-object v0, v0, Lcom/android/settings/ChooseLockPattern$ChooseLockPatternFragment;->dp:Landroid/widget/TextView;
+    iget-object v0, v0, Lcom/android/settings_ext/ChooseLockPattern$ChooseLockPatternFragment;->dp:Landroid/widget/TextView;
 
     const-string v1, ""
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
     .line 209
-    iget-object v0, p0, Lcom/android/settings/an;->dy:Lcom/android/settings/ChooseLockPattern$ChooseLockPatternFragment;
+    iget-object v0, p0, Lcom/android/settings_ext/an;->dy:Lcom/android/settings_ext/ChooseLockPattern$ChooseLockPatternFragment;
 
-    invoke-static {v0}, Lcom/android/settings/ChooseLockPattern$ChooseLockPatternFragment;->c(Lcom/android/settings/ChooseLockPattern$ChooseLockPatternFragment;)Landroid/widget/TextView;
+    invoke-static {v0}, Lcom/android/settings_ext/ChooseLockPattern$ChooseLockPatternFragment;->c(Lcom/android/settings_ext/ChooseLockPattern$ChooseLockPatternFragment;)Landroid/widget/TextView;
 
     move-result-object v0
 
     invoke-virtual {v0, v2}, Landroid/widget/TextView;->setEnabled(Z)V
 
     .line 210
-    iget-object v0, p0, Lcom/android/settings/an;->dy:Lcom/android/settings/ChooseLockPattern$ChooseLockPatternFragment;
+    iget-object v0, p0, Lcom/android/settings_ext/an;->dy:Lcom/android/settings_ext/ChooseLockPattern$ChooseLockPatternFragment;
 
-    invoke-static {v0}, Lcom/android/settings/ChooseLockPattern$ChooseLockPatternFragment;->d(Lcom/android/settings/ChooseLockPattern$ChooseLockPatternFragment;)Landroid/widget/TextView;
+    invoke-static {v0}, Lcom/android/settings_ext/ChooseLockPattern$ChooseLockPatternFragment;->d(Lcom/android/settings_ext/ChooseLockPattern$ChooseLockPatternFragment;)Landroid/widget/TextView;
 
     move-result-object v0
 
@@ -84,13 +84,13 @@
 
     .prologue
     .line 173
-    iget-object v0, p0, Lcom/android/settings/an;->dy:Lcom/android/settings/ChooseLockPattern$ChooseLockPatternFragment;
+    iget-object v0, p0, Lcom/android/settings_ext/an;->dy:Lcom/android/settings_ext/ChooseLockPattern$ChooseLockPatternFragment;
 
-    iget-object v0, v0, Lcom/android/settings/ChooseLockPattern$ChooseLockPatternFragment;->do:Lcom/android/internal/widget/LockPatternView;
+    iget-object v0, v0, Lcom/android/settings_ext/ChooseLockPattern$ChooseLockPatternFragment;->do:Lcom/android/internal/widget/LockPatternView;
 
-    iget-object v1, p0, Lcom/android/settings/an;->dy:Lcom/android/settings/ChooseLockPattern$ChooseLockPatternFragment;
+    iget-object v1, p0, Lcom/android/settings_ext/an;->dy:Lcom/android/settings_ext/ChooseLockPattern$ChooseLockPatternFragment;
 
-    invoke-static {v1}, Lcom/android/settings/ChooseLockPattern$ChooseLockPatternFragment;->a(Lcom/android/settings/ChooseLockPattern$ChooseLockPatternFragment;)Ljava/lang/Runnable;
+    invoke-static {v1}, Lcom/android/settings_ext/ChooseLockPattern$ChooseLockPatternFragment;->a(Lcom/android/settings_ext/ChooseLockPattern$ChooseLockPatternFragment;)Ljava/lang/Runnable;
 
     move-result-object v1
 
@@ -105,31 +105,31 @@
 
     .prologue
     .line 179
-    iget-object v0, p0, Lcom/android/settings/an;->dy:Lcom/android/settings/ChooseLockPattern$ChooseLockPatternFragment;
+    iget-object v0, p0, Lcom/android/settings_ext/an;->dy:Lcom/android/settings_ext/ChooseLockPattern$ChooseLockPatternFragment;
 
-    invoke-static {v0}, Lcom/android/settings/ChooseLockPattern$ChooseLockPatternFragment;->b(Lcom/android/settings/ChooseLockPattern$ChooseLockPatternFragment;)Lcom/android/settings/ChooseLockPattern$ChooseLockPatternFragment$Stage;
+    invoke-static {v0}, Lcom/android/settings_ext/ChooseLockPattern$ChooseLockPatternFragment;->b(Lcom/android/settings_ext/ChooseLockPattern$ChooseLockPatternFragment;)Lcom/android/settings_ext/ChooseLockPattern$ChooseLockPatternFragment$Stage;
 
     move-result-object v0
 
-    sget-object v1, Lcom/android/settings/ChooseLockPattern$ChooseLockPatternFragment$Stage;->dP:Lcom/android/settings/ChooseLockPattern$ChooseLockPatternFragment$Stage;
+    sget-object v1, Lcom/android/settings_ext/ChooseLockPattern$ChooseLockPatternFragment$Stage;->dP:Lcom/android/settings_ext/ChooseLockPattern$ChooseLockPatternFragment$Stage;
 
     if-eq v0, v1, :cond_0
 
-    iget-object v0, p0, Lcom/android/settings/an;->dy:Lcom/android/settings/ChooseLockPattern$ChooseLockPatternFragment;
+    iget-object v0, p0, Lcom/android/settings_ext/an;->dy:Lcom/android/settings_ext/ChooseLockPattern$ChooseLockPatternFragment;
 
-    invoke-static {v0}, Lcom/android/settings/ChooseLockPattern$ChooseLockPatternFragment;->b(Lcom/android/settings/ChooseLockPattern$ChooseLockPatternFragment;)Lcom/android/settings/ChooseLockPattern$ChooseLockPatternFragment$Stage;
+    invoke-static {v0}, Lcom/android/settings_ext/ChooseLockPattern$ChooseLockPatternFragment;->b(Lcom/android/settings_ext/ChooseLockPattern$ChooseLockPatternFragment;)Lcom/android/settings_ext/ChooseLockPattern$ChooseLockPatternFragment$Stage;
 
     move-result-object v0
 
-    sget-object v1, Lcom/android/settings/ChooseLockPattern$ChooseLockPatternFragment$Stage;->dQ:Lcom/android/settings/ChooseLockPattern$ChooseLockPatternFragment$Stage;
+    sget-object v1, Lcom/android/settings_ext/ChooseLockPattern$ChooseLockPatternFragment$Stage;->dQ:Lcom/android/settings_ext/ChooseLockPattern$ChooseLockPatternFragment$Stage;
 
     if-ne v0, v1, :cond_3
 
     .line 180
     :cond_0
-    iget-object v0, p0, Lcom/android/settings/an;->dy:Lcom/android/settings/ChooseLockPattern$ChooseLockPatternFragment;
+    iget-object v0, p0, Lcom/android/settings_ext/an;->dy:Lcom/android/settings_ext/ChooseLockPattern$ChooseLockPatternFragment;
 
-    iget-object v0, v0, Lcom/android/settings/ChooseLockPattern$ChooseLockPatternFragment;->ds:Ljava/util/List;
+    iget-object v0, v0, Lcom/android/settings_ext/ChooseLockPattern$ChooseLockPatternFragment;->ds:Ljava/util/List;
 
     if-nez v0, :cond_1
 
@@ -143,9 +143,9 @@
 
     .line 182
     :cond_1
-    iget-object v0, p0, Lcom/android/settings/an;->dy:Lcom/android/settings/ChooseLockPattern$ChooseLockPatternFragment;
+    iget-object v0, p0, Lcom/android/settings_ext/an;->dy:Lcom/android/settings_ext/ChooseLockPattern$ChooseLockPatternFragment;
 
-    iget-object v0, v0, Lcom/android/settings/ChooseLockPattern$ChooseLockPatternFragment;->ds:Ljava/util/List;
+    iget-object v0, v0, Lcom/android/settings_ext/ChooseLockPattern$ChooseLockPatternFragment;->ds:Ljava/util/List;
 
     invoke-interface {v0, p1}, Ljava/util/List;->equals(Ljava/lang/Object;)Z
 
@@ -154,11 +154,11 @@
     if-eqz v0, :cond_2
 
     .line 183
-    iget-object v0, p0, Lcom/android/settings/an;->dy:Lcom/android/settings/ChooseLockPattern$ChooseLockPatternFragment;
+    iget-object v0, p0, Lcom/android/settings_ext/an;->dy:Lcom/android/settings_ext/ChooseLockPattern$ChooseLockPatternFragment;
 
-    sget-object v1, Lcom/android/settings/ChooseLockPattern$ChooseLockPatternFragment$Stage;->dR:Lcom/android/settings/ChooseLockPattern$ChooseLockPatternFragment$Stage;
+    sget-object v1, Lcom/android/settings_ext/ChooseLockPattern$ChooseLockPatternFragment$Stage;->dR:Lcom/android/settings_ext/ChooseLockPattern$ChooseLockPatternFragment$Stage;
 
-    invoke-virtual {v0, v1}, Lcom/android/settings/ChooseLockPattern$ChooseLockPatternFragment;->a(Lcom/android/settings/ChooseLockPattern$ChooseLockPatternFragment$Stage;)V
+    invoke-virtual {v0, v1}, Lcom/android/settings_ext/ChooseLockPattern$ChooseLockPatternFragment;->a(Lcom/android/settings_ext/ChooseLockPattern$ChooseLockPatternFragment$Stage;)V
 
     .line 200
     :goto_0
@@ -166,33 +166,33 @@
 
     .line 185
     :cond_2
-    iget-object v0, p0, Lcom/android/settings/an;->dy:Lcom/android/settings/ChooseLockPattern$ChooseLockPatternFragment;
+    iget-object v0, p0, Lcom/android/settings_ext/an;->dy:Lcom/android/settings_ext/ChooseLockPattern$ChooseLockPatternFragment;
 
-    sget-object v1, Lcom/android/settings/ChooseLockPattern$ChooseLockPatternFragment$Stage;->dQ:Lcom/android/settings/ChooseLockPattern$ChooseLockPatternFragment$Stage;
+    sget-object v1, Lcom/android/settings_ext/ChooseLockPattern$ChooseLockPatternFragment$Stage;->dQ:Lcom/android/settings_ext/ChooseLockPattern$ChooseLockPatternFragment$Stage;
 
-    invoke-virtual {v0, v1}, Lcom/android/settings/ChooseLockPattern$ChooseLockPatternFragment;->a(Lcom/android/settings/ChooseLockPattern$ChooseLockPatternFragment$Stage;)V
+    invoke-virtual {v0, v1}, Lcom/android/settings_ext/ChooseLockPattern$ChooseLockPatternFragment;->a(Lcom/android/settings_ext/ChooseLockPattern$ChooseLockPatternFragment$Stage;)V
 
     goto :goto_0
 
     .line 187
     :cond_3
-    iget-object v0, p0, Lcom/android/settings/an;->dy:Lcom/android/settings/ChooseLockPattern$ChooseLockPatternFragment;
+    iget-object v0, p0, Lcom/android/settings_ext/an;->dy:Lcom/android/settings_ext/ChooseLockPattern$ChooseLockPatternFragment;
 
-    invoke-static {v0}, Lcom/android/settings/ChooseLockPattern$ChooseLockPatternFragment;->b(Lcom/android/settings/ChooseLockPattern$ChooseLockPatternFragment;)Lcom/android/settings/ChooseLockPattern$ChooseLockPatternFragment$Stage;
+    invoke-static {v0}, Lcom/android/settings_ext/ChooseLockPattern$ChooseLockPatternFragment;->b(Lcom/android/settings_ext/ChooseLockPattern$ChooseLockPatternFragment;)Lcom/android/settings_ext/ChooseLockPattern$ChooseLockPatternFragment$Stage;
 
     move-result-object v0
 
-    sget-object v1, Lcom/android/settings/ChooseLockPattern$ChooseLockPatternFragment$Stage;->dL:Lcom/android/settings/ChooseLockPattern$ChooseLockPatternFragment$Stage;
+    sget-object v1, Lcom/android/settings_ext/ChooseLockPattern$ChooseLockPatternFragment$Stage;->dL:Lcom/android/settings_ext/ChooseLockPattern$ChooseLockPatternFragment$Stage;
 
     if-eq v0, v1, :cond_4
 
-    iget-object v0, p0, Lcom/android/settings/an;->dy:Lcom/android/settings/ChooseLockPattern$ChooseLockPatternFragment;
+    iget-object v0, p0, Lcom/android/settings_ext/an;->dy:Lcom/android/settings_ext/ChooseLockPattern$ChooseLockPatternFragment;
 
-    invoke-static {v0}, Lcom/android/settings/ChooseLockPattern$ChooseLockPatternFragment;->b(Lcom/android/settings/ChooseLockPattern$ChooseLockPatternFragment;)Lcom/android/settings/ChooseLockPattern$ChooseLockPatternFragment$Stage;
+    invoke-static {v0}, Lcom/android/settings_ext/ChooseLockPattern$ChooseLockPatternFragment;->b(Lcom/android/settings_ext/ChooseLockPattern$ChooseLockPatternFragment;)Lcom/android/settings_ext/ChooseLockPattern$ChooseLockPatternFragment$Stage;
 
     move-result-object v0
 
-    sget-object v1, Lcom/android/settings/ChooseLockPattern$ChooseLockPatternFragment$Stage;->dN:Lcom/android/settings/ChooseLockPattern$ChooseLockPatternFragment$Stage;
+    sget-object v1, Lcom/android/settings_ext/ChooseLockPattern$ChooseLockPatternFragment$Stage;->dN:Lcom/android/settings_ext/ChooseLockPattern$ChooseLockPatternFragment$Stage;
 
     if-ne v0, v1, :cond_6
 
@@ -207,30 +207,30 @@
     if-ge v0, v1, :cond_5
 
     .line 189
-    iget-object v0, p0, Lcom/android/settings/an;->dy:Lcom/android/settings/ChooseLockPattern$ChooseLockPatternFragment;
+    iget-object v0, p0, Lcom/android/settings_ext/an;->dy:Lcom/android/settings_ext/ChooseLockPattern$ChooseLockPatternFragment;
 
-    sget-object v1, Lcom/android/settings/ChooseLockPattern$ChooseLockPatternFragment$Stage;->dN:Lcom/android/settings/ChooseLockPattern$ChooseLockPatternFragment$Stage;
+    sget-object v1, Lcom/android/settings_ext/ChooseLockPattern$ChooseLockPatternFragment$Stage;->dN:Lcom/android/settings_ext/ChooseLockPattern$ChooseLockPatternFragment$Stage;
 
-    invoke-virtual {v0, v1}, Lcom/android/settings/ChooseLockPattern$ChooseLockPatternFragment;->a(Lcom/android/settings/ChooseLockPattern$ChooseLockPatternFragment$Stage;)V
+    invoke-virtual {v0, v1}, Lcom/android/settings_ext/ChooseLockPattern$ChooseLockPatternFragment;->a(Lcom/android/settings_ext/ChooseLockPattern$ChooseLockPatternFragment$Stage;)V
 
     goto :goto_0
 
     .line 193
     :cond_5
-    iget-object v0, p0, Lcom/android/settings/an;->dy:Lcom/android/settings/ChooseLockPattern$ChooseLockPatternFragment;
+    iget-object v0, p0, Lcom/android/settings_ext/an;->dy:Lcom/android/settings_ext/ChooseLockPattern$ChooseLockPatternFragment;
 
     new-instance v1, Ljava/util/ArrayList;
 
     invoke-direct {v1, p1}, Ljava/util/ArrayList;-><init>(Ljava/util/Collection;)V
 
-    iput-object v1, v0, Lcom/android/settings/ChooseLockPattern$ChooseLockPatternFragment;->ds:Ljava/util/List;
+    iput-object v1, v0, Lcom/android/settings_ext/ChooseLockPattern$ChooseLockPatternFragment;->ds:Ljava/util/List;
 
     .line 194
-    iget-object v0, p0, Lcom/android/settings/an;->dy:Lcom/android/settings/ChooseLockPattern$ChooseLockPatternFragment;
+    iget-object v0, p0, Lcom/android/settings_ext/an;->dy:Lcom/android/settings_ext/ChooseLockPattern$ChooseLockPatternFragment;
 
-    sget-object v1, Lcom/android/settings/ChooseLockPattern$ChooseLockPatternFragment$Stage;->dO:Lcom/android/settings/ChooseLockPattern$ChooseLockPatternFragment$Stage;
+    sget-object v1, Lcom/android/settings_ext/ChooseLockPattern$ChooseLockPatternFragment$Stage;->dO:Lcom/android/settings_ext/ChooseLockPattern$ChooseLockPatternFragment$Stage;
 
-    invoke-virtual {v0, v1}, Lcom/android/settings/ChooseLockPattern$ChooseLockPatternFragment;->a(Lcom/android/settings/ChooseLockPattern$ChooseLockPatternFragment$Stage;)V
+    invoke-virtual {v0, v1}, Lcom/android/settings_ext/ChooseLockPattern$ChooseLockPatternFragment;->a(Lcom/android/settings_ext/ChooseLockPattern$ChooseLockPatternFragment$Stage;)V
 
     goto :goto_0
 
@@ -248,9 +248,9 @@
 
     move-result-object v1
 
-    iget-object v2, p0, Lcom/android/settings/an;->dy:Lcom/android/settings/ChooseLockPattern$ChooseLockPatternFragment;
+    iget-object v2, p0, Lcom/android/settings_ext/an;->dy:Lcom/android/settings_ext/ChooseLockPattern$ChooseLockPatternFragment;
 
-    invoke-static {v2}, Lcom/android/settings/ChooseLockPattern$ChooseLockPatternFragment;->b(Lcom/android/settings/ChooseLockPattern$ChooseLockPatternFragment;)Lcom/android/settings/ChooseLockPattern$ChooseLockPatternFragment$Stage;
+    invoke-static {v2}, Lcom/android/settings_ext/ChooseLockPattern$ChooseLockPatternFragment;->b(Lcom/android/settings_ext/ChooseLockPattern$ChooseLockPatternFragment;)Lcom/android/settings_ext/ChooseLockPattern$ChooseLockPatternFragment$Stage;
 
     move-result-object v2
 
@@ -284,20 +284,20 @@
 
     .prologue
     .line 168
-    iget-object v0, p0, Lcom/android/settings/an;->dy:Lcom/android/settings/ChooseLockPattern$ChooseLockPatternFragment;
+    iget-object v0, p0, Lcom/android/settings_ext/an;->dy:Lcom/android/settings_ext/ChooseLockPattern$ChooseLockPatternFragment;
 
-    iget-object v0, v0, Lcom/android/settings/ChooseLockPattern$ChooseLockPatternFragment;->do:Lcom/android/internal/widget/LockPatternView;
+    iget-object v0, v0, Lcom/android/settings_ext/ChooseLockPattern$ChooseLockPatternFragment;->do:Lcom/android/internal/widget/LockPatternView;
 
-    iget-object v1, p0, Lcom/android/settings/an;->dy:Lcom/android/settings/ChooseLockPattern$ChooseLockPatternFragment;
+    iget-object v1, p0, Lcom/android/settings_ext/an;->dy:Lcom/android/settings_ext/ChooseLockPattern$ChooseLockPatternFragment;
 
-    invoke-static {v1}, Lcom/android/settings/ChooseLockPattern$ChooseLockPatternFragment;->a(Lcom/android/settings/ChooseLockPattern$ChooseLockPatternFragment;)Ljava/lang/Runnable;
+    invoke-static {v1}, Lcom/android/settings_ext/ChooseLockPattern$ChooseLockPatternFragment;->a(Lcom/android/settings_ext/ChooseLockPattern$ChooseLockPatternFragment;)Ljava/lang/Runnable;
 
     move-result-object v1
 
     invoke-virtual {v0, v1}, Lcom/android/internal/widget/LockPatternView;->removeCallbacks(Ljava/lang/Runnable;)Z
 
     .line 169
-    invoke-direct {p0}, Lcom/android/settings/an;->as()V
+    invoke-direct {p0}, Lcom/android/settings_ext/an;->as()V
 
     .line 170
     return-void

@@ -1,4 +1,4 @@
-.class public Lcom/android/settings/ManagedProfileSetup;
+.class public Lcom/android/settings_ext/ManagedProfileSetup;
 .super Landroid/content/BroadcastReceiver;
 .source "ManagedProfileSetup.java"
 
@@ -34,7 +34,7 @@
     check-cast v0, Landroid/os/UserManager;
 
     .line 48
-    invoke-static {v0}, Lcom/android/settings/hl;->a(Landroid/os/UserManager;)Z
+    invoke-static {v0}, Lcom/android/settings_ext/hl;->a(Landroid/os/UserManager;)Z
 
     move-result v0
 
@@ -182,7 +182,7 @@
     :cond_2
     new-instance v0, Landroid/content/ComponentName;
 
-    const-class v1, Lcom/android/settings/Settings;
+    const-class v1, Lcom/android/settings_ext/Settings;
 
     invoke-direct {v0, p1, v1}, Landroid/content/ComponentName;-><init>(Landroid/content/Context;Ljava/lang/Class;)V
 

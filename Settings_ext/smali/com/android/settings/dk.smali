@@ -1,4 +1,4 @@
-.class public Lcom/android/settings/dk;
+.class public Lcom/android/settings_ext/dk;
 .super Lmiui/preference/RadioButtonPreference;
 .source "MiuiApnPreference.java"
 
@@ -14,7 +14,7 @@
     .line 24
     const/4 v0, 0x0
 
-    invoke-direct {p0, p1, v0}, Lcom/android/settings/dk;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
+    invoke-direct {p0, p1, v0}, Lcom/android/settings_ext/dk;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
     .line 25
     return-void
@@ -30,7 +30,7 @@
     .line 20
     const v0, 0x7f0400c8
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/dk;->setWidgetLayoutResource(I)V
+    invoke-virtual {p0, v0}, Lcom/android/settings_ext/dk;->setWidgetLayoutResource(I)V
 
     .line 21
     return-void
@@ -66,7 +66,7 @@
 
     .prologue
     .line 36
-    invoke-virtual {p0}, Lcom/android/settings/dk;->getKey()Ljava/lang/String;
+    invoke-virtual {p0}, Lcom/android/settings_ext/dk;->getKey()Ljava/lang/String;
 
     move-result-object v0
 
@@ -84,7 +84,7 @@
     move-result-object v0
 
     .line 38
-    invoke-virtual {p0}, Lcom/android/settings/dk;->getContext()Landroid/content/Context;
+    invoke-virtual {p0}, Lcom/android/settings_ext/dk;->getContext()Landroid/content/Context;
 
     move-result-object v1
 

@@ -1,4 +1,4 @@
-.class final Lcom/android/settings/cS;
+.class final Lcom/android/settings_ext/cS;
 .super Ljava/lang/Object;
 .source "LockPatternView.java"
 
@@ -19,26 +19,26 @@
 
 
 # virtual methods
-.method public J(I)[Lcom/android/settings/LockPatternView$SavedState;
+.method public J(I)[Lcom/android/settings_ext/LockPatternView$SavedState;
     .locals 1
 
     .prologue
     .line 961
-    new-array v0, p1, [Lcom/android/settings/LockPatternView$SavedState;
+    new-array v0, p1, [Lcom/android/settings_ext/LockPatternView$SavedState;
 
     return-object v0
 .end method
 
-.method public b(Landroid/os/Parcel;)Lcom/android/settings/LockPatternView$SavedState;
+.method public b(Landroid/os/Parcel;)Lcom/android/settings_ext/LockPatternView$SavedState;
     .locals 2
 
     .prologue
     .line 957
-    new-instance v0, Lcom/android/settings/LockPatternView$SavedState;
+    new-instance v0, Lcom/android/settings_ext/LockPatternView$SavedState;
 
     const/4 v1, 0x0
 
-    invoke-direct {v0, p1, v1}, Lcom/android/settings/LockPatternView$SavedState;-><init>(Landroid/os/Parcel;Lcom/android/settings/cQ;)V
+    invoke-direct {v0, p1, v1}, Lcom/android/settings_ext/LockPatternView$SavedState;-><init>(Landroid/os/Parcel;Lcom/android/settings_ext/cQ;)V
 
     return-object v0
 .end method
@@ -48,7 +48,7 @@
 
     .prologue
     .line 955
-    invoke-virtual {p0, p1}, Lcom/android/settings/cS;->b(Landroid/os/Parcel;)Lcom/android/settings/LockPatternView$SavedState;
+    invoke-virtual {p0, p1}, Lcom/android/settings_ext/cS;->b(Landroid/os/Parcel;)Lcom/android/settings_ext/LockPatternView$SavedState;
 
     move-result-object v0
 
@@ -60,7 +60,7 @@
 
     .prologue
     .line 955
-    invoke-virtual {p0, p1}, Lcom/android/settings/cS;->J(I)[Lcom/android/settings/LockPatternView$SavedState;
+    invoke-virtual {p0, p1}, Lcom/android/settings_ext/cS;->J(I)[Lcom/android/settings_ext/LockPatternView$SavedState;
 
     move-result-object v0
 

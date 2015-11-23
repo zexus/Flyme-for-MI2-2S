@@ -1,4 +1,4 @@
-.class Lcom/android/settings/wifi/aD;
+.class Lcom/android/settings_ext/wifi/aD;
 .super Ljava/lang/Object;
 .source "WifiShareUploadFragment.java"
 
@@ -9,18 +9,18 @@
 # instance fields
 .field final synthetic awL:Z
 
-.field final synthetic awM:Lcom/android/settings/wifi/WifiShareUploadFragment;
+.field final synthetic awM:Lcom/android/settings_ext/wifi/WifiShareUploadFragment;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/wifi/WifiShareUploadFragment;Z)V
+.method constructor <init>(Lcom/android/settings_ext/wifi/WifiShareUploadFragment;Z)V
     .locals 0
 
     .prologue
     .line 123
-    iput-object p1, p0, Lcom/android/settings/wifi/aD;->awM:Lcom/android/settings/wifi/WifiShareUploadFragment;
+    iput-object p1, p0, Lcom/android/settings_ext/wifi/aD;->awM:Lcom/android/settings_ext/wifi/WifiShareUploadFragment;
 
-    iput-boolean p2, p0, Lcom/android/settings/wifi/aD;->awL:Z
+    iput-boolean p2, p0, Lcom/android/settings_ext/wifi/aD;->awL:Z
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -34,16 +34,16 @@
 
     .prologue
     .line 126
-    iget-object v1, p0, Lcom/android/settings/wifi/aD;->awM:Lcom/android/settings/wifi/WifiShareUploadFragment;
+    iget-object v1, p0, Lcom/android/settings_ext/wifi/aD;->awM:Lcom/android/settings_ext/wifi/WifiShareUploadFragment;
 
-    iget-boolean v0, p0, Lcom/android/settings/wifi/aD;->awL:Z
+    iget-boolean v0, p0, Lcom/android/settings_ext/wifi/aD;->awL:Z
 
     if-nez v0, :cond_0
 
     const/4 v0, 0x1
 
     :goto_0
-    invoke-static {v1, v0}, Lcom/android/settings/wifi/WifiShareUploadFragment;->a(Lcom/android/settings/wifi/WifiShareUploadFragment;Z)V
+    invoke-static {v1, v0}, Lcom/android/settings_ext/wifi/WifiShareUploadFragment;->a(Lcom/android/settings_ext/wifi/WifiShareUploadFragment;Z)V
 
     .line 127
     return-void

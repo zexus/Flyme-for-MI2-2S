@@ -1,4 +1,4 @@
-.class Lcom/android/settings/bz;
+.class Lcom/android/settings_ext/bz;
 .super Ljava/lang/Object;
 .source "DevelopmentSettings.java"
 
@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final synthetic iV:Lcom/android/settings/DevelopmentSettings;
+.field final synthetic iV:Lcom/android/settings_ext/DevelopmentSettings;
 
 .field final synthetic iW:Ljava/lang/Class;
 
@@ -17,18 +17,18 @@
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/DevelopmentSettings;Ljava/lang/reflect/Method;Ljava/lang/Class;I)V
+.method constructor <init>(Lcom/android/settings_ext/DevelopmentSettings;Ljava/lang/reflect/Method;Ljava/lang/Class;I)V
     .locals 0
 
     .prologue
     .line 1501
-    iput-object p1, p0, Lcom/android/settings/bz;->iV:Lcom/android/settings/DevelopmentSettings;
+    iput-object p1, p0, Lcom/android/settings_ext/bz;->iV:Lcom/android/settings_ext/DevelopmentSettings;
 
-    iput-object p2, p0, Lcom/android/settings/bz;->val$method:Ljava/lang/reflect/Method;
+    iput-object p2, p0, Lcom/android/settings_ext/bz;->val$method:Ljava/lang/reflect/Method;
 
-    iput-object p3, p0, Lcom/android/settings/bz;->iW:Ljava/lang/Class;
+    iput-object p3, p0, Lcom/android/settings_ext/bz;->iW:Ljava/lang/Class;
 
-    iput p4, p0, Lcom/android/settings/bz;->iX:I
+    iput p4, p0, Lcom/android/settings_ext/bz;->iX:I
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -43,9 +43,9 @@
     .prologue
     .line 1507
     :try_start_0
-    iget-object v0, p0, Lcom/android/settings/bz;->val$method:Ljava/lang/reflect/Method;
+    iget-object v0, p0, Lcom/android/settings_ext/bz;->val$method:Ljava/lang/reflect/Method;
 
-    iget-object v1, p0, Lcom/android/settings/bz;->iW:Ljava/lang/Class;
+    iget-object v1, p0, Lcom/android/settings_ext/bz;->iW:Ljava/lang/Class;
 
     const/4 v2, 0x1
 
@@ -53,7 +53,7 @@
 
     const/4 v3, 0x0
 
-    iget v4, p0, Lcom/android/settings/bz;->iX:I
+    iget v4, p0, Lcom/android/settings_ext/bz;->iX:I
 
     invoke-static {v4}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -76,9 +76,9 @@
     invoke-virtual {v0, v1}, Landroid/content/Intent;->addFlags(I)Landroid/content/Intent;
 
     .line 1510
-    iget-object v1, p0, Lcom/android/settings/bz;->iV:Lcom/android/settings/DevelopmentSettings;
+    iget-object v1, p0, Lcom/android/settings_ext/bz;->iV:Lcom/android/settings_ext/DevelopmentSettings;
 
-    invoke-virtual {v1}, Lcom/android/settings/DevelopmentSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {v1}, Lcom/android/settings_ext/DevelopmentSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v1
 

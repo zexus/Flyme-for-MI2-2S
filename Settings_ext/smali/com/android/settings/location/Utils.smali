@@ -1,4 +1,4 @@
-.class public Lcom/android/settings/location/Utils;
+.class public Lcom/android/settings_ext/location/Utils;
 .super Ljava/lang/Object;
 .source "Utils.java"
 
@@ -97,7 +97,7 @@
     move-result-object v6
 
     .line 34
-    invoke-static {v6}, Lcom/android/settings/location/Utils;->d(Landroid/content/pm/ApplicationInfo;)Z
+    invoke-static {v6}, Lcom/android/settings_ext/location/Utils;->d(Landroid/content/pm/ApplicationInfo;)Z
 
     move-result v6
 

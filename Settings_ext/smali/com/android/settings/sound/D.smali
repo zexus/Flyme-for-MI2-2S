@@ -1,19 +1,19 @@
-.class Lcom/android/settings/sound/D;
+.class Lcom/android/settings_ext/sound/D;
 .super Landroid/content/BroadcastReceiver;
 .source "RingerVolumeFragment.java"
 
 
 # instance fields
-.field final synthetic ajT:Lcom/android/settings/sound/RingerVolumeFragment;
+.field final synthetic ajT:Lcom/android/settings_ext/sound/RingerVolumeFragment;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/sound/RingerVolumeFragment;)V
+.method constructor <init>(Lcom/android/settings_ext/sound/RingerVolumeFragment;)V
     .locals 0
 
     .prologue
     .line 178
-    iput-object p1, p0, Lcom/android/settings/sound/D;->ajT:Lcom/android/settings/sound/RingerVolumeFragment;
+    iput-object p1, p0, Lcom/android/settings_ext/sound/D;->ajT:Lcom/android/settings_ext/sound/RingerVolumeFragment;
 
     invoke-direct {p0}, Landroid/content/BroadcastReceiver;-><init>()V
 
@@ -53,15 +53,15 @@
     if-ltz v0, :cond_0
 
     .line 184
-    iget-object v1, p0, Lcom/android/settings/sound/D;->ajT:Lcom/android/settings/sound/RingerVolumeFragment;
+    iget-object v1, p0, Lcom/android/settings_ext/sound/D;->ajT:Lcom/android/settings_ext/sound/RingerVolumeFragment;
 
-    invoke-static {v1}, Lcom/android/settings/sound/RingerVolumeFragment;->b(Lcom/android/settings/sound/RingerVolumeFragment;)Landroid/os/Handler;
+    invoke-static {v1}, Lcom/android/settings_ext/sound/RingerVolumeFragment;->b(Lcom/android/settings_ext/sound/RingerVolumeFragment;)Landroid/os/Handler;
 
     move-result-object v1
 
-    iget-object v2, p0, Lcom/android/settings/sound/D;->ajT:Lcom/android/settings/sound/RingerVolumeFragment;
+    iget-object v2, p0, Lcom/android/settings_ext/sound/D;->ajT:Lcom/android/settings_ext/sound/RingerVolumeFragment;
 
-    invoke-static {v2}, Lcom/android/settings/sound/RingerVolumeFragment;->b(Lcom/android/settings/sound/RingerVolumeFragment;)Landroid/os/Handler;
+    invoke-static {v2}, Lcom/android/settings_ext/sound/RingerVolumeFragment;->b(Lcom/android/settings_ext/sound/RingerVolumeFragment;)Landroid/os/Handler;
 
     move-result-object v2
 

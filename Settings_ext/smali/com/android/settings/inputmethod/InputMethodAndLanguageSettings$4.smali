@@ -1,5 +1,5 @@
-.class final Lcom/android/settings/inputmethod/InputMethodAndLanguageSettings$4;
-.super Lcom/android/settings/search/a;
+.class final Lcom/android/settings_ext/inputmethod/InputMethodAndLanguageSettings$4;
+.super Lcom/android/settings_ext/search/a;
 .source "InputMethodAndLanguageSettings.java"
 
 
@@ -9,7 +9,7 @@
 
     .prologue
     .line 715
-    invoke-direct {p0}, Lcom/android/settings/search/a;-><init>()V
+    invoke-direct {p0}, Lcom/android/settings_ext/search/a;-><init>()V
 
     return-void
 .end method
@@ -48,19 +48,19 @@
     if-le v0, v1, :cond_0
 
     .line 724
-    invoke-static {p1}, Lcom/android/settings/inputmethod/InputMethodAndLanguageSettings;->aQ(Landroid/content/Context;)Ljava/lang/String;
+    invoke-static {p1}, Lcom/android/settings_ext/inputmethod/InputMethodAndLanguageSettings;->aQ(Landroid/content/Context;)Ljava/lang/String;
 
     move-result-object v0
 
     .line 725
-    new-instance v1, Lcom/android/settings/search/n;
+    new-instance v1, Lcom/android/settings_ext/search/n;
 
-    invoke-direct {v1, p1}, Lcom/android/settings/search/n;-><init>(Landroid/content/Context;)V
+    invoke-direct {v1, p1}, Lcom/android/settings_ext/search/n;-><init>(Landroid/content/Context;)V
 
     .line 726
     const-string v2, "phone_language"
 
-    iput-object v2, v1, Lcom/android/settings/search/n;->key:Ljava/lang/String;
+    iput-object v2, v1, Lcom/android/settings_ext/search/n;->key:Ljava/lang/String;
 
     .line 727
     const v2, 0x7f0905aa
@@ -69,30 +69,30 @@
 
     move-result-object v2
 
-    iput-object v2, v1, Lcom/android/settings/search/n;->title:Ljava/lang/String;
+    iput-object v2, v1, Lcom/android/settings_ext/search/n;->title:Ljava/lang/String;
 
     .line 728
-    iput-object v0, v1, Lcom/android/settings/search/n;->Rz:Ljava/lang/String;
+    iput-object v0, v1, Lcom/android/settings_ext/search/n;->Rz:Ljava/lang/String;
 
     .line 729
-    iput-object v0, v1, Lcom/android/settings/search/n;->RA:Ljava/lang/String;
+    iput-object v0, v1, Lcom/android/settings_ext/search/n;->RA:Ljava/lang/String;
 
     .line 730
-    iput-object v7, v1, Lcom/android/settings/search/n;->aiY:Ljava/lang/String;
+    iput-object v7, v1, Lcom/android/settings_ext/search/n;->aiY:Ljava/lang/String;
 
     .line 731
     invoke-interface {v6, v1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
     .line 735
     :cond_0
-    new-instance v0, Lcom/android/settings/search/n;
+    new-instance v0, Lcom/android/settings_ext/search/n;
 
-    invoke-direct {v0, p1}, Lcom/android/settings/search/n;-><init>(Landroid/content/Context;)V
+    invoke-direct {v0, p1}, Lcom/android/settings_ext/search/n;-><init>(Landroid/content/Context;)V
 
     .line 736
     const-string v1, "spellcheckers_settings"
 
-    iput-object v1, v0, Lcom/android/settings/search/n;->key:Ljava/lang/String;
+    iput-object v1, v0, Lcom/android/settings_ext/search/n;->key:Ljava/lang/String;
 
     .line 737
     const v1, 0x7f0908c2
@@ -101,30 +101,30 @@
 
     move-result-object v1
 
-    iput-object v1, v0, Lcom/android/settings/search/n;->title:Ljava/lang/String;
+    iput-object v1, v0, Lcom/android/settings_ext/search/n;->title:Ljava/lang/String;
 
     .line 738
-    iput-object v7, v0, Lcom/android/settings/search/n;->aiY:Ljava/lang/String;
+    iput-object v7, v0, Lcom/android/settings_ext/search/n;->aiY:Ljava/lang/String;
 
     .line 739
     invoke-interface {v6, v0}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
     .line 742
-    invoke-static {p1}, Lcom/android/settings/inputmethod/UserDictionaryList;->aV(Landroid/content/Context;)Ljava/util/TreeSet;
+    invoke-static {p1}, Lcom/android/settings_ext/inputmethod/UserDictionaryList;->aV(Landroid/content/Context;)Ljava/util/TreeSet;
 
     move-result-object v0
 
     if-eqz v0, :cond_1
 
     .line 743
-    new-instance v0, Lcom/android/settings/search/n;
+    new-instance v0, Lcom/android/settings_ext/search/n;
 
-    invoke-direct {v0, p1}, Lcom/android/settings/search/n;-><init>(Landroid/content/Context;)V
+    invoke-direct {v0, p1}, Lcom/android/settings_ext/search/n;-><init>(Landroid/content/Context;)V
 
     .line 744
     const-string v1, "user_dict_settings"
 
-    iput-object v1, v0, Lcom/android/settings/search/n;->key:Ljava/lang/String;
+    iput-object v1, v0, Lcom/android/settings_ext/search/n;->key:Ljava/lang/String;
 
     .line 745
     const v1, 0x7f0905c3
@@ -133,24 +133,24 @@
 
     move-result-object v1
 
-    iput-object v1, v0, Lcom/android/settings/search/n;->title:Ljava/lang/String;
+    iput-object v1, v0, Lcom/android/settings_ext/search/n;->title:Ljava/lang/String;
 
     .line 746
-    iput-object v7, v0, Lcom/android/settings/search/n;->aiY:Ljava/lang/String;
+    iput-object v7, v0, Lcom/android/settings_ext/search/n;->aiY:Ljava/lang/String;
 
     .line 747
     invoke-interface {v6, v0}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
     .line 751
     :cond_1
-    new-instance v0, Lcom/android/settings/search/n;
+    new-instance v0, Lcom/android/settings_ext/search/n;
 
-    invoke-direct {v0, p1}, Lcom/android/settings/search/n;-><init>(Landroid/content/Context;)V
+    invoke-direct {v0, p1}, Lcom/android/settings_ext/search/n;-><init>(Landroid/content/Context;)V
 
     .line 752
     const-string v1, "keyboard_settings"
 
-    iput-object v1, v0, Lcom/android/settings/search/n;->key:Ljava/lang/String;
+    iput-object v1, v0, Lcom/android/settings_ext/search/n;->key:Ljava/lang/String;
 
     .line 753
     const v1, 0x7f0905a9
@@ -159,24 +159,24 @@
 
     move-result-object v1
 
-    iput-object v1, v0, Lcom/android/settings/search/n;->title:Ljava/lang/String;
+    iput-object v1, v0, Lcom/android/settings_ext/search/n;->title:Ljava/lang/String;
 
     .line 754
-    iput-object v7, v0, Lcom/android/settings/search/n;->aiY:Ljava/lang/String;
+    iput-object v7, v0, Lcom/android/settings_ext/search/n;->aiY:Ljava/lang/String;
 
     .line 755
     invoke-interface {v6, v0}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
     .line 757
-    invoke-static {p1}, Lcom/android/settings/inputmethod/InputMethodSettingValuesWrapper;->aR(Landroid/content/Context;)Lcom/android/settings/inputmethod/InputMethodSettingValuesWrapper;
+    invoke-static {p1}, Lcom/android/settings_ext/inputmethod/InputMethodSettingValuesWrapper;->aR(Landroid/content/Context;)Lcom/android/settings_ext/inputmethod/InputMethodSettingValuesWrapper;
 
     move-result-object v1
 
     .line 759
-    invoke-virtual {v1}, Lcom/android/settings/inputmethod/InputMethodSettingValuesWrapper;->pN()V
+    invoke-virtual {v1}, Lcom/android/settings_ext/inputmethod/InputMethodSettingValuesWrapper;->pN()V
 
     .line 762
-    invoke-virtual {v1, p1}, Lcom/android/settings/inputmethod/InputMethodSettingValuesWrapper;->aS(Landroid/content/Context;)Ljava/lang/CharSequence;
+    invoke-virtual {v1, p1}, Lcom/android/settings_ext/inputmethod/InputMethodSettingValuesWrapper;->aS(Landroid/content/Context;)Ljava/lang/CharSequence;
 
     move-result-object v0
 
@@ -185,14 +185,14 @@
     move-result-object v0
 
     .line 763
-    new-instance v2, Lcom/android/settings/search/n;
+    new-instance v2, Lcom/android/settings_ext/search/n;
 
-    invoke-direct {v2, p1}, Lcom/android/settings/search/n;-><init>(Landroid/content/Context;)V
+    invoke-direct {v2, p1}, Lcom/android/settings_ext/search/n;-><init>(Landroid/content/Context;)V
 
     .line 764
     const-string v3, "current_input_method"
 
-    iput-object v3, v2, Lcom/android/settings/search/n;->key:Ljava/lang/String;
+    iput-object v3, v2, Lcom/android/settings_ext/search/n;->key:Ljava/lang/String;
 
     .line 765
     const v3, 0x7f0905e7
@@ -201,16 +201,16 @@
 
     move-result-object v3
 
-    iput-object v3, v2, Lcom/android/settings/search/n;->title:Ljava/lang/String;
+    iput-object v3, v2, Lcom/android/settings_ext/search/n;->title:Ljava/lang/String;
 
     .line 766
-    iput-object v0, v2, Lcom/android/settings/search/n;->Rz:Ljava/lang/String;
+    iput-object v0, v2, Lcom/android/settings_ext/search/n;->Rz:Ljava/lang/String;
 
     .line 767
-    iput-object v0, v2, Lcom/android/settings/search/n;->RA:Ljava/lang/String;
+    iput-object v0, v2, Lcom/android/settings_ext/search/n;->RA:Ljava/lang/String;
 
     .line 768
-    iput-object v7, v2, Lcom/android/settings/search/n;->aiY:Ljava/lang/String;
+    iput-object v7, v2, Lcom/android/settings_ext/search/n;->aiY:Ljava/lang/String;
 
     .line 769
     invoke-interface {v6, v2}, Ljava/util/List;->add(Ljava/lang/Object;)Z
@@ -225,7 +225,7 @@
     check-cast v0, Landroid/view/inputmethod/InputMethodManager;
 
     .line 775
-    invoke-virtual {v1}, Lcom/android/settings/inputmethod/InputMethodSettingValuesWrapper;->getInputMethodList()Ljava/util/List;
+    invoke-virtual {v1}, Lcom/android/settings_ext/inputmethod/InputMethodSettingValuesWrapper;->getInputMethodList()Ljava/util/List;
 
     move-result-object v8
 
@@ -353,16 +353,16 @@
     invoke-direct {v9, v10, v4}, Landroid/content/ComponentName;-><init>(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 800
-    new-instance v4, Lcom/android/settings/search/n;
+    new-instance v4, Lcom/android/settings_ext/search/n;
 
-    invoke-direct {v4, p1}, Lcom/android/settings/search/n;-><init>(Landroid/content/Context;)V
+    invoke-direct {v4, p1}, Lcom/android/settings_ext/search/n;-><init>(Landroid/content/Context;)V
 
     .line 801
     invoke-virtual {v9}, Landroid/content/ComponentName;->flattenToString()Ljava/lang/String;
 
     move-result-object v9
 
-    iput-object v9, v4, Lcom/android/settings/search/n;->key:Ljava/lang/String;
+    iput-object v9, v4, Lcom/android/settings_ext/search/n;->key:Ljava/lang/String;
 
     .line 802
     invoke-virtual {p1}, Landroid/content/Context;->getPackageManager()Landroid/content/pm/PackageManager;
@@ -377,16 +377,16 @@
 
     move-result-object v1
 
-    iput-object v1, v4, Lcom/android/settings/search/n;->title:Ljava/lang/String;
+    iput-object v1, v4, Lcom/android/settings_ext/search/n;->title:Ljava/lang/String;
 
     .line 803
-    iput-object v2, v4, Lcom/android/settings/search/n;->Rz:Ljava/lang/String;
+    iput-object v2, v4, Lcom/android/settings_ext/search/n;->Rz:Ljava/lang/String;
 
     .line 804
-    iput-object v2, v4, Lcom/android/settings/search/n;->RA:Ljava/lang/String;
+    iput-object v2, v4, Lcom/android/settings_ext/search/n;->RA:Ljava/lang/String;
 
     .line 805
-    iput-object v7, v4, Lcom/android/settings/search/n;->aiY:Ljava/lang/String;
+    iput-object v7, v4, Lcom/android/settings_ext/search/n;->aiY:Ljava/lang/String;
 
     .line 806
     invoke-interface {v6, v4}, Ljava/util/List;->add(Ljava/lang/Object;)Z
@@ -485,32 +485,32 @@
 
     .line 836
     :goto_6
-    new-instance v8, Lcom/android/settings/search/n;
+    new-instance v8, Lcom/android/settings_ext/search/n;
 
-    invoke-direct {v8, p1}, Lcom/android/settings/search/n;-><init>(Landroid/content/Context;)V
+    invoke-direct {v8, p1}, Lcom/android/settings_ext/search/n;-><init>(Landroid/content/Context;)V
 
     .line 837
     invoke-virtual {v5}, Landroid/view/InputDevice;->getName()Ljava/lang/String;
 
     move-result-object v9
 
-    iput-object v9, v8, Lcom/android/settings/search/n;->key:Ljava/lang/String;
+    iput-object v9, v8, Lcom/android/settings_ext/search/n;->key:Ljava/lang/String;
 
     .line 838
     invoke-virtual {v5}, Landroid/view/InputDevice;->getName()Ljava/lang/String;
 
     move-result-object v5
 
-    iput-object v5, v8, Lcom/android/settings/search/n;->title:Ljava/lang/String;
+    iput-object v5, v8, Lcom/android/settings_ext/search/n;->title:Ljava/lang/String;
 
     .line 839
-    iput-object v2, v8, Lcom/android/settings/search/n;->Rz:Ljava/lang/String;
+    iput-object v2, v8, Lcom/android/settings_ext/search/n;->Rz:Ljava/lang/String;
 
     .line 840
-    iput-object v2, v8, Lcom/android/settings/search/n;->RA:Ljava/lang/String;
+    iput-object v2, v8, Lcom/android/settings_ext/search/n;->RA:Ljava/lang/String;
 
     .line 841
-    iput-object v7, v8, Lcom/android/settings/search/n;->aiY:Ljava/lang/String;
+    iput-object v7, v8, Lcom/android/settings_ext/search/n;->aiY:Ljava/lang/String;
 
     .line 842
     invoke-interface {v6, v8}, Ljava/util/List;->add(Ljava/lang/Object;)Z
@@ -540,14 +540,14 @@
     if-eqz v2, :cond_b
 
     .line 847
-    new-instance v0, Lcom/android/settings/search/n;
+    new-instance v0, Lcom/android/settings_ext/search/n;
 
-    invoke-direct {v0, p1}, Lcom/android/settings/search/n;-><init>(Landroid/content/Context;)V
+    invoke-direct {v0, p1}, Lcom/android/settings_ext/search/n;-><init>(Landroid/content/Context;)V
 
     .line 848
     const-string v1, "builtin_keyboard_settings"
 
-    iput-object v1, v0, Lcom/android/settings/search/n;->key:Ljava/lang/String;
+    iput-object v1, v0, Lcom/android/settings_ext/search/n;->key:Ljava/lang/String;
 
     .line 849
     const v1, 0x7f0905f4
@@ -556,24 +556,24 @@
 
     move-result-object v1
 
-    iput-object v1, v0, Lcom/android/settings/search/n;->title:Ljava/lang/String;
+    iput-object v1, v0, Lcom/android/settings_ext/search/n;->title:Ljava/lang/String;
 
     .line 851
-    iput-object v7, v0, Lcom/android/settings/search/n;->aiY:Ljava/lang/String;
+    iput-object v7, v0, Lcom/android/settings_ext/search/n;->aiY:Ljava/lang/String;
 
     .line 852
     invoke-interface {v6, v0}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
     .line 856
     :cond_b
-    new-instance v0, Lcom/android/settings/search/n;
+    new-instance v0, Lcom/android/settings_ext/search/n;
 
-    invoke-direct {v0, p1}, Lcom/android/settings/search/n;-><init>(Landroid/content/Context;)V
+    invoke-direct {v0, p1}, Lcom/android/settings_ext/search/n;-><init>(Landroid/content/Context;)V
 
     .line 857
     const-string v1, "voice_input_settings"
 
-    iput-object v1, v0, Lcom/android/settings/search/n;->key:Ljava/lang/String;
+    iput-object v1, v0, Lcom/android/settings_ext/search/n;->key:Ljava/lang/String;
 
     .line 858
     const v1, 0x7f090726
@@ -582,10 +582,10 @@
 
     move-result-object v1
 
-    iput-object v1, v0, Lcom/android/settings/search/n;->title:Ljava/lang/String;
+    iput-object v1, v0, Lcom/android/settings_ext/search/n;->title:Ljava/lang/String;
 
     .line 859
-    iput-object v7, v0, Lcom/android/settings/search/n;->aiY:Ljava/lang/String;
+    iput-object v7, v0, Lcom/android/settings_ext/search/n;->aiY:Ljava/lang/String;
 
     .line 860
     invoke-interface {v6, v0}, Ljava/util/List;->add(Ljava/lang/Object;)Z
@@ -607,14 +607,14 @@
     if-nez v0, :cond_c
 
     .line 865
-    new-instance v0, Lcom/android/settings/search/n;
+    new-instance v0, Lcom/android/settings_ext/search/n;
 
-    invoke-direct {v0, p1}, Lcom/android/settings/search/n;-><init>(Landroid/content/Context;)V
+    invoke-direct {v0, p1}, Lcom/android/settings_ext/search/n;-><init>(Landroid/content/Context;)V
 
     .line 866
     const-string v1, "tts_settings"
 
-    iput-object v1, v0, Lcom/android/settings/search/n;->key:Ljava/lang/String;
+    iput-object v1, v0, Lcom/android/settings_ext/search/n;->key:Ljava/lang/String;
 
     .line 867
     const v1, 0x7f09072d
@@ -623,24 +623,24 @@
 
     move-result-object v1
 
-    iput-object v1, v0, Lcom/android/settings/search/n;->title:Ljava/lang/String;
+    iput-object v1, v0, Lcom/android/settings_ext/search/n;->title:Ljava/lang/String;
 
     .line 868
-    iput-object v7, v0, Lcom/android/settings/search/n;->aiY:Ljava/lang/String;
+    iput-object v7, v0, Lcom/android/settings_ext/search/n;->aiY:Ljava/lang/String;
 
     .line 869
     invoke-interface {v6, v0}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
     .line 873
     :cond_c
-    new-instance v0, Lcom/android/settings/search/n;
+    new-instance v0, Lcom/android/settings_ext/search/n;
 
-    invoke-direct {v0, p1}, Lcom/android/settings/search/n;-><init>(Landroid/content/Context;)V
+    invoke-direct {v0, p1}, Lcom/android/settings_ext/search/n;-><init>(Landroid/content/Context;)V
 
     .line 874
     const-string v1, "pointer_settings_category"
 
-    iput-object v1, v0, Lcom/android/settings/search/n;->key:Ljava/lang/String;
+    iput-object v1, v0, Lcom/android/settings_ext/search/n;->key:Ljava/lang/String;
 
     .line 875
     const v1, 0x7f0905b9
@@ -649,23 +649,23 @@
 
     move-result-object v1
 
-    iput-object v1, v0, Lcom/android/settings/search/n;->title:Ljava/lang/String;
+    iput-object v1, v0, Lcom/android/settings_ext/search/n;->title:Ljava/lang/String;
 
     .line 876
-    iput-object v7, v0, Lcom/android/settings/search/n;->aiY:Ljava/lang/String;
+    iput-object v7, v0, Lcom/android/settings_ext/search/n;->aiY:Ljava/lang/String;
 
     .line 877
     invoke-interface {v6, v0}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
     .line 879
-    new-instance v0, Lcom/android/settings/search/n;
+    new-instance v0, Lcom/android/settings_ext/search/n;
 
-    invoke-direct {v0, p1}, Lcom/android/settings/search/n;-><init>(Landroid/content/Context;)V
+    invoke-direct {v0, p1}, Lcom/android/settings_ext/search/n;-><init>(Landroid/content/Context;)V
 
     .line 880
     const-string v1, "pointer_speed"
 
-    iput-object v1, v0, Lcom/android/settings/search/n;->key:Ljava/lang/String;
+    iput-object v1, v0, Lcom/android/settings_ext/search/n;->key:Ljava/lang/String;
 
     .line 881
     const v1, 0x7f0905ba
@@ -674,31 +674,31 @@
 
     move-result-object v1
 
-    iput-object v1, v0, Lcom/android/settings/search/n;->title:Ljava/lang/String;
+    iput-object v1, v0, Lcom/android/settings_ext/search/n;->title:Ljava/lang/String;
 
     .line 882
-    iput-object v7, v0, Lcom/android/settings/search/n;->aiY:Ljava/lang/String;
+    iput-object v7, v0, Lcom/android/settings_ext/search/n;->aiY:Ljava/lang/String;
 
     .line 883
     invoke-interface {v6, v0}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
     .line 886
-    # invokes: Lcom/android/settings/inputmethod/InputMethodAndLanguageSettings;->pF()Z
-    invoke-static {}, Lcom/android/settings/inputmethod/InputMethodAndLanguageSettings;->access$300()Z
+    # invokes: Lcom/android/settings_ext/inputmethod/InputMethodAndLanguageSettings;->pF()Z
+    invoke-static {}, Lcom/android/settings_ext/inputmethod/InputMethodAndLanguageSettings;->access$300()Z
 
     move-result v0
 
     if-eqz v0, :cond_d
 
     .line 887
-    new-instance v0, Lcom/android/settings/search/n;
+    new-instance v0, Lcom/android/settings_ext/search/n;
 
-    invoke-direct {v0, p1}, Lcom/android/settings/search/n;-><init>(Landroid/content/Context;)V
+    invoke-direct {v0, p1}, Lcom/android/settings_ext/search/n;-><init>(Landroid/content/Context;)V
 
     .line 888
     const-string v1, "vibrate_input_devices"
 
-    iput-object v1, v0, Lcom/android/settings/search/n;->key:Ljava/lang/String;
+    iput-object v1, v0, Lcom/android/settings_ext/search/n;->key:Ljava/lang/String;
 
     .line 889
     const v1, 0x7f0905bc
@@ -707,7 +707,7 @@
 
     move-result-object v1
 
-    iput-object v1, v0, Lcom/android/settings/search/n;->title:Ljava/lang/String;
+    iput-object v1, v0, Lcom/android/settings_ext/search/n;->title:Ljava/lang/String;
 
     .line 890
     const v1, 0x7f0905bd
@@ -716,7 +716,7 @@
 
     move-result-object v1
 
-    iput-object v1, v0, Lcom/android/settings/search/n;->Rz:Ljava/lang/String;
+    iput-object v1, v0, Lcom/android/settings_ext/search/n;->Rz:Ljava/lang/String;
 
     .line 891
     const v1, 0x7f0905bd
@@ -725,10 +725,10 @@
 
     move-result-object v1
 
-    iput-object v1, v0, Lcom/android/settings/search/n;->RA:Ljava/lang/String;
+    iput-object v1, v0, Lcom/android/settings_ext/search/n;->RA:Ljava/lang/String;
 
     .line 892
-    iput-object v7, v0, Lcom/android/settings/search/n;->aiY:Ljava/lang/String;
+    iput-object v7, v0, Lcom/android/settings_ext/search/n;->aiY:Ljava/lang/String;
 
     .line 893
     invoke-interface {v6, v0}, Ljava/util/List;->add(Ljava/lang/Object;)Z

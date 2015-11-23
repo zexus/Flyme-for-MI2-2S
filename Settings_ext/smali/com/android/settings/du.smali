@@ -1,4 +1,4 @@
-.class synthetic Lcom/android/settings/du;
+.class synthetic Lcom/android/settings_ext/du;
 .super Ljava/lang/Object;
 .source "MiuiChooseLockPattern.java"
 
@@ -13,7 +13,7 @@
 
     .prologue
     .line 453
-    invoke-static {}, Lcom/android/settings/MiuiChooseLockPattern$ChooseLockPatternFragment$Stage;->values()[Lcom/android/settings/MiuiChooseLockPattern$ChooseLockPatternFragment$Stage;
+    invoke-static {}, Lcom/android/settings_ext/MiuiChooseLockPattern$ChooseLockPatternFragment$Stage;->values()[Lcom/android/settings_ext/MiuiChooseLockPattern$ChooseLockPatternFragment$Stage;
 
     move-result-object v0
 
@@ -21,14 +21,14 @@
 
     new-array v0, v0, [I
 
-    sput-object v0, Lcom/android/settings/du;->ox:[I
+    sput-object v0, Lcom/android/settings_ext/du;->ox:[I
 
     :try_start_0
-    sget-object v0, Lcom/android/settings/du;->ox:[I
+    sget-object v0, Lcom/android/settings_ext/du;->ox:[I
 
-    sget-object v1, Lcom/android/settings/MiuiChooseLockPattern$ChooseLockPatternFragment$Stage;->oO:Lcom/android/settings/MiuiChooseLockPattern$ChooseLockPatternFragment$Stage;
+    sget-object v1, Lcom/android/settings_ext/MiuiChooseLockPattern$ChooseLockPatternFragment$Stage;->oO:Lcom/android/settings_ext/MiuiChooseLockPattern$ChooseLockPatternFragment$Stage;
 
-    invoke-virtual {v1}, Lcom/android/settings/MiuiChooseLockPattern$ChooseLockPatternFragment$Stage;->ordinal()I
+    invoke-virtual {v1}, Lcom/android/settings_ext/MiuiChooseLockPattern$ChooseLockPatternFragment$Stage;->ordinal()I
 
     move-result v1
 
@@ -40,11 +40,11 @@
 
     :goto_0
     :try_start_1
-    sget-object v0, Lcom/android/settings/du;->ox:[I
+    sget-object v0, Lcom/android/settings_ext/du;->ox:[I
 
-    sget-object v1, Lcom/android/settings/MiuiChooseLockPattern$ChooseLockPatternFragment$Stage;->oP:Lcom/android/settings/MiuiChooseLockPattern$ChooseLockPatternFragment$Stage;
+    sget-object v1, Lcom/android/settings_ext/MiuiChooseLockPattern$ChooseLockPatternFragment$Stage;->oP:Lcom/android/settings_ext/MiuiChooseLockPattern$ChooseLockPatternFragment$Stage;
 
-    invoke-virtual {v1}, Lcom/android/settings/MiuiChooseLockPattern$ChooseLockPatternFragment$Stage;->ordinal()I
+    invoke-virtual {v1}, Lcom/android/settings_ext/MiuiChooseLockPattern$ChooseLockPatternFragment$Stage;->ordinal()I
 
     move-result v1
 
@@ -56,11 +56,11 @@
 
     :goto_1
     :try_start_2
-    sget-object v0, Lcom/android/settings/du;->ox:[I
+    sget-object v0, Lcom/android/settings_ext/du;->ox:[I
 
-    sget-object v1, Lcom/android/settings/MiuiChooseLockPattern$ChooseLockPatternFragment$Stage;->oQ:Lcom/android/settings/MiuiChooseLockPattern$ChooseLockPatternFragment$Stage;
+    sget-object v1, Lcom/android/settings_ext/MiuiChooseLockPattern$ChooseLockPatternFragment$Stage;->oQ:Lcom/android/settings_ext/MiuiChooseLockPattern$ChooseLockPatternFragment$Stage;
 
-    invoke-virtual {v1}, Lcom/android/settings/MiuiChooseLockPattern$ChooseLockPatternFragment$Stage;->ordinal()I
+    invoke-virtual {v1}, Lcom/android/settings_ext/MiuiChooseLockPattern$ChooseLockPatternFragment$Stage;->ordinal()I
 
     move-result v1
 
@@ -72,11 +72,11 @@
 
     :goto_2
     :try_start_3
-    sget-object v0, Lcom/android/settings/du;->ox:[I
+    sget-object v0, Lcom/android/settings_ext/du;->ox:[I
 
-    sget-object v1, Lcom/android/settings/MiuiChooseLockPattern$ChooseLockPatternFragment$Stage;->oR:Lcom/android/settings/MiuiChooseLockPattern$ChooseLockPatternFragment$Stage;
+    sget-object v1, Lcom/android/settings_ext/MiuiChooseLockPattern$ChooseLockPatternFragment$Stage;->oR:Lcom/android/settings_ext/MiuiChooseLockPattern$ChooseLockPatternFragment$Stage;
 
-    invoke-virtual {v1}, Lcom/android/settings/MiuiChooseLockPattern$ChooseLockPatternFragment$Stage;->ordinal()I
+    invoke-virtual {v1}, Lcom/android/settings_ext/MiuiChooseLockPattern$ChooseLockPatternFragment$Stage;->ordinal()I
 
     move-result v1
 
@@ -88,11 +88,11 @@
 
     :goto_3
     :try_start_4
-    sget-object v0, Lcom/android/settings/du;->ox:[I
+    sget-object v0, Lcom/android/settings_ext/du;->ox:[I
 
-    sget-object v1, Lcom/android/settings/MiuiChooseLockPattern$ChooseLockPatternFragment$Stage;->oS:Lcom/android/settings/MiuiChooseLockPattern$ChooseLockPatternFragment$Stage;
+    sget-object v1, Lcom/android/settings_ext/MiuiChooseLockPattern$ChooseLockPatternFragment$Stage;->oS:Lcom/android/settings_ext/MiuiChooseLockPattern$ChooseLockPatternFragment$Stage;
 
-    invoke-virtual {v1}, Lcom/android/settings/MiuiChooseLockPattern$ChooseLockPatternFragment$Stage;->ordinal()I
+    invoke-virtual {v1}, Lcom/android/settings_ext/MiuiChooseLockPattern$ChooseLockPatternFragment$Stage;->ordinal()I
 
     move-result v1
 
@@ -104,11 +104,11 @@
 
     :goto_4
     :try_start_5
-    sget-object v0, Lcom/android/settings/du;->ox:[I
+    sget-object v0, Lcom/android/settings_ext/du;->ox:[I
 
-    sget-object v1, Lcom/android/settings/MiuiChooseLockPattern$ChooseLockPatternFragment$Stage;->oT:Lcom/android/settings/MiuiChooseLockPattern$ChooseLockPatternFragment$Stage;
+    sget-object v1, Lcom/android/settings_ext/MiuiChooseLockPattern$ChooseLockPatternFragment$Stage;->oT:Lcom/android/settings_ext/MiuiChooseLockPattern$ChooseLockPatternFragment$Stage;
 
-    invoke-virtual {v1}, Lcom/android/settings/MiuiChooseLockPattern$ChooseLockPatternFragment$Stage;->ordinal()I
+    invoke-virtual {v1}, Lcom/android/settings_ext/MiuiChooseLockPattern$ChooseLockPatternFragment$Stage;->ordinal()I
 
     move-result v1
 
@@ -120,11 +120,11 @@
 
     :goto_5
     :try_start_6
-    sget-object v0, Lcom/android/settings/du;->ox:[I
+    sget-object v0, Lcom/android/settings_ext/du;->ox:[I
 
-    sget-object v1, Lcom/android/settings/MiuiChooseLockPattern$ChooseLockPatternFragment$Stage;->oU:Lcom/android/settings/MiuiChooseLockPattern$ChooseLockPatternFragment$Stage;
+    sget-object v1, Lcom/android/settings_ext/MiuiChooseLockPattern$ChooseLockPatternFragment$Stage;->oU:Lcom/android/settings_ext/MiuiChooseLockPattern$ChooseLockPatternFragment$Stage;
 
-    invoke-virtual {v1}, Lcom/android/settings/MiuiChooseLockPattern$ChooseLockPatternFragment$Stage;->ordinal()I
+    invoke-virtual {v1}, Lcom/android/settings_ext/MiuiChooseLockPattern$ChooseLockPatternFragment$Stage;->ordinal()I
 
     move-result v1
 

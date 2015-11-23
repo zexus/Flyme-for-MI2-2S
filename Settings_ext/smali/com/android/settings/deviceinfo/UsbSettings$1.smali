@@ -1,19 +1,19 @@
-.class Lcom/android/settings/deviceinfo/UsbSettings$1;
+.class Lcom/android/settings_ext/deviceinfo/UsbSettings$1;
 .super Landroid/content/BroadcastReceiver;
 .source "UsbSettings.java"
 
 
 # instance fields
-.field final synthetic Uj:Lcom/android/settings/deviceinfo/UsbSettings;
+.field final synthetic Uj:Lcom/android/settings_ext/deviceinfo/UsbSettings;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/deviceinfo/UsbSettings;)V
+.method constructor <init>(Lcom/android/settings_ext/deviceinfo/UsbSettings;)V
     .locals 0
 
     .prologue
     .line 74
-    iput-object p1, p0, Lcom/android/settings/deviceinfo/UsbSettings$1;->Uj:Lcom/android/settings/deviceinfo/UsbSettings;
+    iput-object p1, p0, Lcom/android/settings_ext/deviceinfo/UsbSettings$1;->Uj:Lcom/android/settings_ext/deviceinfo/UsbSettings;
 
     invoke-direct {p0}, Landroid/content/BroadcastReceiver;-><init>()V
 
@@ -43,7 +43,7 @@
     if-eqz v0, :cond_0
 
     .line 78
-    iget-object v0, p0, Lcom/android/settings/deviceinfo/UsbSettings$1;->Uj:Lcom/android/settings/deviceinfo/UsbSettings;
+    iget-object v0, p0, Lcom/android/settings_ext/deviceinfo/UsbSettings$1;->Uj:Lcom/android/settings_ext/deviceinfo/UsbSettings;
 
     const-string v1, "accessory"
 
@@ -51,7 +51,7 @@
 
     move-result v1
 
-    invoke-static {v0, v1}, Lcom/android/settings/deviceinfo/UsbSettings;->a(Lcom/android/settings/deviceinfo/UsbSettings;Z)Z
+    invoke-static {v0, v1}, Lcom/android/settings_ext/deviceinfo/UsbSettings;->a(Lcom/android/settings_ext/deviceinfo/UsbSettings;Z)Z
 
     .line 79
     const-string v0, "UsbSettings"
@@ -66,9 +66,9 @@
 
     move-result-object v1
 
-    iget-object v2, p0, Lcom/android/settings/deviceinfo/UsbSettings$1;->Uj:Lcom/android/settings/deviceinfo/UsbSettings;
+    iget-object v2, p0, Lcom/android/settings_ext/deviceinfo/UsbSettings$1;->Uj:Lcom/android/settings_ext/deviceinfo/UsbSettings;
 
-    invoke-static {v2}, Lcom/android/settings/deviceinfo/UsbSettings;->a(Lcom/android/settings/deviceinfo/UsbSettings;)Z
+    invoke-static {v2}, Lcom/android/settings_ext/deviceinfo/UsbSettings;->a(Lcom/android/settings_ext/deviceinfo/UsbSettings;)Z
 
     move-result v2
 
@@ -97,9 +97,9 @@
     if-nez v0, :cond_1
 
     .line 82
-    iget-object v0, p0, Lcom/android/settings/deviceinfo/UsbSettings$1;->Uj:Lcom/android/settings/deviceinfo/UsbSettings;
+    iget-object v0, p0, Lcom/android/settings_ext/deviceinfo/UsbSettings$1;->Uj:Lcom/android/settings_ext/deviceinfo/UsbSettings;
 
-    invoke-virtual {v0}, Lcom/android/settings/deviceinfo/UsbSettings;->finish()V
+    invoke-virtual {v0}, Lcom/android/settings_ext/deviceinfo/UsbSettings;->finish()V
 
     .line 90
     :cond_0
@@ -108,14 +108,14 @@
 
     .line 86
     :cond_1
-    iget-object v0, p0, Lcom/android/settings/deviceinfo/UsbSettings$1;->Uj:Lcom/android/settings/deviceinfo/UsbSettings;
+    iget-object v0, p0, Lcom/android/settings_ext/deviceinfo/UsbSettings$1;->Uj:Lcom/android/settings_ext/deviceinfo/UsbSettings;
 
-    invoke-static {v0, v3}, Lcom/android/settings/deviceinfo/UsbSettings;->b(Lcom/android/settings/deviceinfo/UsbSettings;Z)Z
+    invoke-static {v0, v3}, Lcom/android/settings_ext/deviceinfo/UsbSettings;->b(Lcom/android/settings_ext/deviceinfo/UsbSettings;Z)Z
 
     .line 87
-    iget-object v0, p0, Lcom/android/settings/deviceinfo/UsbSettings$1;->Uj:Lcom/android/settings/deviceinfo/UsbSettings;
+    iget-object v0, p0, Lcom/android/settings_ext/deviceinfo/UsbSettings$1;->Uj:Lcom/android/settings_ext/deviceinfo/UsbSettings;
 
-    invoke-static {v0}, Lcom/android/settings/deviceinfo/UsbSettings;->b(Lcom/android/settings/deviceinfo/UsbSettings;)V
+    invoke-static {v0}, Lcom/android/settings_ext/deviceinfo/UsbSettings;->b(Lcom/android/settings_ext/deviceinfo/UsbSettings;)V
 
     goto :goto_0
 .end method

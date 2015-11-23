@@ -1,4 +1,4 @@
-.class Lcom/android/settings/eh;
+.class Lcom/android/settings_ext/eh;
 .super Ljava/lang/Object;
 .source "MiuiSecurityCommonSettings.java"
 
@@ -7,16 +7,16 @@
 
 
 # instance fields
-.field final synthetic rf:Lcom/android/settings/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;
+.field final synthetic rf:Lcom/android/settings_ext/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;)V
+.method constructor <init>(Lcom/android/settings_ext/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;)V
     .locals 0
 
     .prologue
     .line 267
-    iput-object p1, p0, Lcom/android/settings/eh;->rf:Lcom/android/settings/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;
+    iput-object p1, p0, Lcom/android/settings_ext/eh;->rf:Lcom/android/settings_ext/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -48,9 +48,9 @@
     check-cast p2, Ljava/lang/String;
 
     .line 272
-    iget-object v0, p0, Lcom/android/settings/eh;->rf:Lcom/android/settings/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;
+    iget-object v0, p0, Lcom/android/settings_ext/eh;->rf:Lcom/android/settings_ext/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;
 
-    invoke-virtual {v0}, Lcom/android/settings/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;->getTargetFragment()Landroid/app/Fragment;
+    invoke-virtual {v0}, Lcom/android/settings_ext/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;->getTargetFragment()Landroid/app/Fragment;
 
     move-result-object v0
 
@@ -66,9 +66,9 @@
     .line 274
     const v0, 0x8000
 
-    iget-object v1, p0, Lcom/android/settings/eh;->rf:Lcom/android/settings/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;
+    iget-object v1, p0, Lcom/android/settings_ext/eh;->rf:Lcom/android/settings_ext/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;
 
-    invoke-static {v0, v1}, Lcom/android/settings/MiuiSecurityChooseUnlock;->a(ILcom/android/settings/SettingsPreferenceFragment;)V
+    invoke-static {v0, v1}, Lcom/android/settings_ext/MiuiSecurityChooseUnlock;->a(ILcom/android/settings_ext/SettingsPreferenceFragment;)V
 
     .line 296
     :cond_0
@@ -93,17 +93,17 @@
     .line 278
     const/high16 v0, 0x10000
 
-    iget-object v1, p0, Lcom/android/settings/eh;->rf:Lcom/android/settings/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;
+    iget-object v1, p0, Lcom/android/settings_ext/eh;->rf:Lcom/android/settings_ext/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;
 
-    invoke-static {v0, v1}, Lcom/android/settings/MiuiSecurityChooseUnlock;->a(ILcom/android/settings/SettingsPreferenceFragment;)V
+    invoke-static {v0, v1}, Lcom/android/settings_ext/MiuiSecurityChooseUnlock;->a(ILcom/android/settings_ext/SettingsPreferenceFragment;)V
 
     goto :goto_0
 
     .line 280
     :cond_2
-    iget-object v0, p0, Lcom/android/settings/eh;->rf:Lcom/android/settings/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;
+    iget-object v0, p0, Lcom/android/settings_ext/eh;->rf:Lcom/android/settings_ext/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;
 
-    invoke-static {v0, v2}, Lcom/android/settings/MiuiSecurityChooseUnlock;->b(Lcom/android/settings/SettingsPreferenceFragment;I)V
+    invoke-static {v0, v2}, Lcom/android/settings_ext/MiuiSecurityChooseUnlock;->b(Lcom/android/settings_ext/SettingsPreferenceFragment;I)V
 
     goto :goto_0
 
@@ -123,17 +123,17 @@
     .line 284
     const/high16 v0, 0x20000
 
-    iget-object v1, p0, Lcom/android/settings/eh;->rf:Lcom/android/settings/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;
+    iget-object v1, p0, Lcom/android/settings_ext/eh;->rf:Lcom/android/settings_ext/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;
 
-    invoke-static {v0, v1}, Lcom/android/settings/MiuiSecurityChooseUnlock;->a(ILcom/android/settings/SettingsPreferenceFragment;)V
+    invoke-static {v0, v1}, Lcom/android/settings_ext/MiuiSecurityChooseUnlock;->a(ILcom/android/settings_ext/SettingsPreferenceFragment;)V
 
     goto :goto_0
 
     .line 286
     :cond_4
-    iget-object v0, p0, Lcom/android/settings/eh;->rf:Lcom/android/settings/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;
+    iget-object v0, p0, Lcom/android/settings_ext/eh;->rf:Lcom/android/settings_ext/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;
 
-    invoke-static {v0, v2}, Lcom/android/settings/MiuiSecurityChooseUnlock;->c(Lcom/android/settings/SettingsPreferenceFragment;I)V
+    invoke-static {v0, v2}, Lcom/android/settings_ext/MiuiSecurityChooseUnlock;->c(Lcom/android/settings_ext/SettingsPreferenceFragment;I)V
 
     goto :goto_0
 
@@ -153,17 +153,17 @@
     .line 290
     const/high16 v0, 0x40000
 
-    iget-object v1, p0, Lcom/android/settings/eh;->rf:Lcom/android/settings/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;
+    iget-object v1, p0, Lcom/android/settings_ext/eh;->rf:Lcom/android/settings_ext/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;
 
-    invoke-static {v0, v1}, Lcom/android/settings/MiuiSecurityChooseUnlock;->a(ILcom/android/settings/SettingsPreferenceFragment;)V
+    invoke-static {v0, v1}, Lcom/android/settings_ext/MiuiSecurityChooseUnlock;->a(ILcom/android/settings_ext/SettingsPreferenceFragment;)V
 
     goto :goto_0
 
     .line 292
     :cond_6
-    iget-object v0, p0, Lcom/android/settings/eh;->rf:Lcom/android/settings/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;
+    iget-object v0, p0, Lcom/android/settings_ext/eh;->rf:Lcom/android/settings_ext/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;
 
-    invoke-static {v0, v2}, Lcom/android/settings/MiuiSecurityChooseUnlock;->d(Lcom/android/settings/SettingsPreferenceFragment;I)V
+    invoke-static {v0, v2}, Lcom/android/settings_ext/MiuiSecurityChooseUnlock;->d(Lcom/android/settings_ext/SettingsPreferenceFragment;I)V
 
     goto :goto_0
 .end method

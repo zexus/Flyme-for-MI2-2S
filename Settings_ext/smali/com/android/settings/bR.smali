@@ -1,4 +1,4 @@
-.class Lcom/android/settings/bR;
+.class Lcom/android/settings_ext/bR;
 .super Ljava/lang/Object;
 .source "DiracHeadsetAdapter.java"
 
@@ -20,13 +20,13 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 36
-    iput p1, p0, Lcom/android/settings/bR;->jJ:I
+    iput p1, p0, Lcom/android/settings_ext/bR;->jJ:I
 
     .line 37
-    iput p2, p0, Lcom/android/settings/bR;->jK:I
+    iput p2, p0, Lcom/android/settings_ext/bR;->jK:I
 
     .line 38
-    iput p3, p0, Lcom/android/settings/bR;->mType:I
+    iput p3, p0, Lcom/android/settings_ext/bR;->mType:I
 
     .line 39
     return-void

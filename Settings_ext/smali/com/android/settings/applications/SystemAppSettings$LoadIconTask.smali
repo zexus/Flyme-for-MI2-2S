@@ -1,4 +1,4 @@
-.class public Lcom/android/settings/applications/SystemAppSettings$LoadIconTask;
+.class public Lcom/android/settings_ext/applications/SystemAppSettings$LoadIconTask;
 .super Landroid/os/AsyncTask;
 .source "SystemAppSettings.java"
 
@@ -6,30 +6,30 @@
 # instance fields
 .field private Ly:Ljava/util/HashMap;
 
-.field final synthetic Lz:Lcom/android/settings/applications/SystemAppSettings;
+.field final synthetic Lz:Lcom/android/settings_ext/applications/SystemAppSettings;
 
 
 # direct methods
-.method public constructor <init>(Lcom/android/settings/applications/SystemAppSettings;)V
+.method public constructor <init>(Lcom/android/settings_ext/applications/SystemAppSettings;)V
     .locals 2
 
     .prologue
     .line 131
-    iput-object p1, p0, Lcom/android/settings/applications/SystemAppSettings$LoadIconTask;->Lz:Lcom/android/settings/applications/SystemAppSettings;
+    iput-object p1, p0, Lcom/android/settings_ext/applications/SystemAppSettings$LoadIconTask;->Lz:Lcom/android/settings_ext/applications/SystemAppSettings;
 
     invoke-direct {p0}, Landroid/os/AsyncTask;-><init>()V
 
     .line 132
     new-instance v0, Ljava/util/HashMap;
 
-    # getter for: Lcom/android/settings/applications/SystemAppSettings;->Lv:Ljava/util/HashMap;
-    invoke-static {}, Lcom/android/settings/applications/SystemAppSettings;->access$000()Ljava/util/HashMap;
+    # getter for: Lcom/android/settings_ext/applications/SystemAppSettings;->Lv:Ljava/util/HashMap;
+    invoke-static {}, Lcom/android/settings_ext/applications/SystemAppSettings;->access$000()Ljava/util/HashMap;
 
     move-result-object v1
 
     invoke-direct {v0, v1}, Ljava/util/HashMap;-><init>(Ljava/util/Map;)V
 
-    iput-object v0, p0, Lcom/android/settings/applications/SystemAppSettings$LoadIconTask;->Ly:Ljava/util/HashMap;
+    iput-object v0, p0, Lcom/android/settings_ext/applications/SystemAppSettings$LoadIconTask;->Ly:Ljava/util/HashMap;
 
     .line 133
     return-void
@@ -44,7 +44,7 @@
     .line 128
     check-cast p1, [Ljava/lang/Void;
 
-    invoke-virtual {p0, p1}, Lcom/android/settings/applications/SystemAppSettings$LoadIconTask;->doInBackground([Ljava/lang/Void;)Ljava/lang/Void;
+    invoke-virtual {p0, p1}, Lcom/android/settings_ext/applications/SystemAppSettings$LoadIconTask;->doInBackground([Ljava/lang/Void;)Ljava/lang/Void;
 
     move-result-object v0
 
@@ -56,7 +56,7 @@
 
     .prologue
     .line 137
-    iget-object v0, p0, Lcom/android/settings/applications/SystemAppSettings$LoadIconTask;->Ly:Ljava/util/HashMap;
+    iget-object v0, p0, Lcom/android/settings_ext/applications/SystemAppSettings$LoadIconTask;->Ly:Ljava/util/HashMap;
 
     invoke-virtual {v0}, Ljava/util/HashMap;->entrySet()Ljava/util/Set;
 
@@ -89,13 +89,13 @@
     check-cast v0, Landroid/preference/PreferenceActivity$Header;
 
     .line 141
-    iget-object v2, p0, Lcom/android/settings/applications/SystemAppSettings$LoadIconTask;->Lz:Lcom/android/settings/applications/SystemAppSettings;
+    iget-object v2, p0, Lcom/android/settings_ext/applications/SystemAppSettings$LoadIconTask;->Lz:Lcom/android/settings_ext/applications/SystemAppSettings;
 
-    invoke-static {v2}, Lcom/android/settings/applications/SystemAppSettings;->a(Lcom/android/settings/applications/SystemAppSettings;)Landroid/app/Activity;
+    invoke-static {v2}, Lcom/android/settings_ext/applications/SystemAppSettings;->a(Lcom/android/settings_ext/applications/SystemAppSettings;)Landroid/app/Activity;
 
     move-result-object v2
 
-    invoke-static {v2, v0}, Lcom/android/settings/applications/SystemAppSettings;->b(Landroid/content/Context;Landroid/preference/PreferenceActivity$Header;)V
+    invoke-static {v2, v0}, Lcom/android/settings_ext/applications/SystemAppSettings;->b(Landroid/content/Context;Landroid/preference/PreferenceActivity$Header;)V
 
     goto :goto_0
 
@@ -113,7 +113,7 @@
     .line 128
     check-cast p1, Ljava/lang/Void;
 
-    invoke-virtual {p0, p1}, Lcom/android/settings/applications/SystemAppSettings$LoadIconTask;->onPostExecute(Ljava/lang/Void;)V
+    invoke-virtual {p0, p1}, Lcom/android/settings_ext/applications/SystemAppSettings$LoadIconTask;->onPostExecute(Ljava/lang/Void;)V
 
     return-void
 .end method
@@ -123,9 +123,9 @@
 
     .prologue
     .line 148
-    iget-object v0, p0, Lcom/android/settings/applications/SystemAppSettings$LoadIconTask;->Ly:Ljava/util/HashMap;
+    iget-object v0, p0, Lcom/android/settings_ext/applications/SystemAppSettings$LoadIconTask;->Ly:Ljava/util/HashMap;
 
-    invoke-static {v0}, Lcom/android/settings/applications/SystemAppSettings;->a(Ljava/util/HashMap;)Ljava/util/HashMap;
+    invoke-static {v0}, Lcom/android/settings_ext/applications/SystemAppSettings;->a(Ljava/util/HashMap;)Ljava/util/HashMap;
 
     .line 149
     return-void

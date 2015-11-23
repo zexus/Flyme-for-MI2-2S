@@ -1,4 +1,4 @@
-.class public Lcom/android/settings/DeviceAdminAdd;
+.class public Lcom/android/settings_ext/DeviceAdminAdd;
 .super Landroid/app/Activity;
 .source "DeviceAdminAdd.java"
 
@@ -66,21 +66,21 @@
     .line 85
     const/4 v0, 0x1
 
-    iput-boolean v0, p0, Lcom/android/settings/DeviceAdminAdd;->jh:Z
+    iput-boolean v0, p0, Lcom/android/settings_ext/DeviceAdminAdd;->jh:Z
 
     .line 91
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
-    iput-object v0, p0, Lcom/android/settings/DeviceAdminAdd;->jl:Ljava/util/ArrayList;
+    iput-object v0, p0, Lcom/android/settings_ext/DeviceAdminAdd;->jl:Ljava/util/ArrayList;
 
     .line 92
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
-    iput-object v0, p0, Lcom/android/settings/DeviceAdminAdd;->jm:Ljava/util/ArrayList;
+    iput-object v0, p0, Lcom/android/settings_ext/DeviceAdminAdd;->jm:Ljava/util/ArrayList;
 
     return-void
 .end method
@@ -133,17 +133,17 @@
     check-cast p1, Landroid/widget/TextView;
 
     .line 485
-    iget-boolean v0, p0, Lcom/android/settings/DeviceAdminAdd;->jh:Z
+    iget-boolean v0, p0, Lcom/android/settings_ext/DeviceAdminAdd;->jh:Z
 
     if-nez v0, :cond_0
 
     const/4 v0, 0x1
 
     :goto_0
-    iput-boolean v0, p0, Lcom/android/settings/DeviceAdminAdd;->jh:Z
+    iput-boolean v0, p0, Lcom/android/settings_ext/DeviceAdminAdd;->jh:Z
 
     .line 486
-    iget-boolean v0, p0, Lcom/android/settings/DeviceAdminAdd;->jh:Z
+    iget-boolean v0, p0, Lcom/android/settings_ext/DeviceAdminAdd;->jh:Z
 
     if-eqz v0, :cond_1
 
@@ -153,11 +153,11 @@
     invoke-virtual {p1, v0}, Landroid/widget/TextView;->setEllipsize(Landroid/text/TextUtils$TruncateAt;)V
 
     .line 487
-    iget-boolean v0, p0, Lcom/android/settings/DeviceAdminAdd;->jh:Z
+    iget-boolean v0, p0, Lcom/android/settings_ext/DeviceAdminAdd;->jh:Z
 
     if-eqz v0, :cond_2
 
-    invoke-virtual {p0}, Lcom/android/settings/DeviceAdminAdd;->cS()I
+    invoke-virtual {p0}, Lcom/android/settings_ext/DeviceAdminAdd;->cS()I
 
     move-result v0
 
@@ -165,9 +165,9 @@
     invoke-virtual {p1, v0}, Landroid/widget/TextView;->setMaxLines(I)V
 
     .line 489
-    iget-object v1, p0, Lcom/android/settings/DeviceAdminAdd;->jg:Landroid/widget/ImageView;
+    iget-object v1, p0, Lcom/android/settings_ext/DeviceAdminAdd;->jg:Landroid/widget/ImageView;
 
-    iget-boolean v0, p0, Lcom/android/settings/DeviceAdminAdd;->jh:Z
+    iget-boolean v0, p0, Lcom/android/settings_ext/DeviceAdminAdd;->jh:Z
 
     if-eqz v0, :cond_3
 
@@ -209,7 +209,7 @@
 
     .prologue
     .line 331
-    iget-boolean v0, p0, Lcom/android/settings/DeviceAdminAdd;->jp:Z
+    iget-boolean v0, p0, Lcom/android/settings_ext/DeviceAdminAdd;->jp:Z
 
     if-nez v0, :cond_0
 
@@ -221,7 +221,7 @@
     :cond_0
     const/4 v0, 0x0
 
-    iput-boolean v0, p0, Lcom/android/settings/DeviceAdminAdd;->jp:Z
+    iput-boolean v0, p0, Lcom/android/settings_ext/DeviceAdminAdd;->jp:Z
 
     .line 335
     if-nez p1, :cond_1
@@ -238,9 +238,9 @@
 
     .line 340
     :goto_1
-    iget-object v0, p0, Lcom/android/settings/DeviceAdminAdd;->cI:Landroid/app/admin/DevicePolicyManager;
+    iget-object v0, p0, Lcom/android/settings_ext/DeviceAdminAdd;->cI:Landroid/app/admin/DevicePolicyManager;
 
-    iget-object v1, p0, Lcom/android/settings/DeviceAdminAdd;->iY:Landroid/app/admin/DeviceAdminInfo;
+    iget-object v1, p0, Lcom/android/settings_ext/DeviceAdminAdd;->iY:Landroid/app/admin/DeviceAdminInfo;
 
     invoke-virtual {v1}, Landroid/app/admin/DeviceAdminInfo;->getComponent()Landroid/content/ComponentName;
 
@@ -249,7 +249,7 @@
     invoke-virtual {v0, v1}, Landroid/app/admin/DevicePolicyManager;->removeActiveAdmin(Landroid/content/ComponentName;)V
 
     .line 341
-    invoke-virtual {p0}, Lcom/android/settings/DeviceAdminAdd;->finish()V
+    invoke-virtual {p0}, Lcom/android/settings_ext/DeviceAdminAdd;->finish()V
 
     goto :goto_0
 
@@ -278,7 +278,7 @@
     .line 351
     const/4 v1, 0x1
 
-    invoke-virtual {p0, v1, v0}, Lcom/android/settings/DeviceAdminAdd;->showDialog(ILandroid/os/Bundle;)Z
+    invoke-virtual {p0, v1, v0}, Lcom/android/settings_ext/DeviceAdminAdd;->showDialog(ILandroid/os/Bundle;)Z
 
     goto :goto_0
 
@@ -303,22 +303,22 @@
 
     .line 306
     :try_start_0
-    iget-object v0, p0, Lcom/android/settings/DeviceAdminAdd;->cI:Landroid/app/admin/DevicePolicyManager;
+    iget-object v0, p0, Lcom/android/settings_ext/DeviceAdminAdd;->cI:Landroid/app/admin/DevicePolicyManager;
 
-    iget-object v1, p0, Lcom/android/settings/DeviceAdminAdd;->iY:Landroid/app/admin/DeviceAdminInfo;
+    iget-object v1, p0, Lcom/android/settings_ext/DeviceAdminAdd;->iY:Landroid/app/admin/DeviceAdminInfo;
 
     invoke-virtual {v1}, Landroid/app/admin/DeviceAdminInfo;->getComponent()Landroid/content/ComponentName;
 
     move-result-object v1
 
-    iget-boolean v2, p0, Lcom/android/settings/DeviceAdminAdd;->jo:Z
+    iget-boolean v2, p0, Lcom/android/settings_ext/DeviceAdminAdd;->jo:Z
 
     invoke-virtual {v0, v1, v2}, Landroid/app/admin/DevicePolicyManager;->setActiveAdmin(Landroid/content/ComponentName;Z)V
 
     .line 307
     const v0, 0x16059
 
-    iget-object v1, p0, Lcom/android/settings/DeviceAdminAdd;->iY:Landroid/app/admin/DeviceAdminInfo;
+    iget-object v1, p0, Lcom/android/settings_ext/DeviceAdminAdd;->iY:Landroid/app/admin/DeviceAdminInfo;
 
     invoke-virtual {v1}, Landroid/app/admin/DeviceAdminInfo;->getActivityInfo()Landroid/content/pm/ActivityInfo;
 
@@ -333,28 +333,28 @@
     .line 309
     const/4 v0, -0x1
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/DeviceAdminAdd;->setResult(I)V
+    invoke-virtual {p0, v0}, Lcom/android/settings_ext/DeviceAdminAdd;->setResult(I)V
     :try_end_0
     .catch Ljava/lang/RuntimeException; {:try_start_0 .. :try_end_0} :catch_0
 
     .line 319
     :cond_0
     :goto_0
-    iget-boolean v0, p0, Lcom/android/settings/DeviceAdminAdd;->jq:Z
+    iget-boolean v0, p0, Lcom/android/settings_ext/DeviceAdminAdd;->jq:Z
 
     if-eqz v0, :cond_1
 
     .line 321
     :try_start_1
-    iget-object v0, p0, Lcom/android/settings/DeviceAdminAdd;->cI:Landroid/app/admin/DevicePolicyManager;
+    iget-object v0, p0, Lcom/android/settings_ext/DeviceAdminAdd;->cI:Landroid/app/admin/DevicePolicyManager;
 
-    iget-object v1, p0, Lcom/android/settings/DeviceAdminAdd;->iY:Landroid/app/admin/DeviceAdminInfo;
+    iget-object v1, p0, Lcom/android/settings_ext/DeviceAdminAdd;->iY:Landroid/app/admin/DeviceAdminInfo;
 
     invoke-virtual {v1}, Landroid/app/admin/DeviceAdminInfo;->getComponent()Landroid/content/ComponentName;
 
     move-result-object v1
 
-    iget-object v2, p0, Lcom/android/settings/DeviceAdminAdd;->ja:Ljava/lang/String;
+    iget-object v2, p0, Lcom/android/settings_ext/DeviceAdminAdd;->ja:Ljava/lang/String;
 
     invoke-static {}, Landroid/os/UserHandle;->myUserId()I
 
@@ -367,7 +367,7 @@
     .line 327
     :cond_1
     :goto_1
-    invoke-virtual {p0}, Lcom/android/settings/DeviceAdminAdd;->finish()V
+    invoke-virtual {p0}, Lcom/android/settings_ext/DeviceAdminAdd;->finish()V
 
     .line 328
     return-void
@@ -389,7 +389,7 @@
 
     move-result-object v2
 
-    iget-object v3, p0, Lcom/android/settings/DeviceAdminAdd;->iY:Landroid/app/admin/DeviceAdminInfo;
+    iget-object v3, p0, Lcom/android/settings_ext/DeviceAdminAdd;->iY:Landroid/app/admin/DeviceAdminInfo;
 
     invoke-virtual {v3}, Landroid/app/admin/DeviceAdminInfo;->getComponent()Landroid/content/ComponentName;
 
@@ -406,9 +406,9 @@
     invoke-static {v1, v2, v0}, Landroid/util/Log;->w(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)I
 
     .line 315
-    iget-object v0, p0, Lcom/android/settings/DeviceAdminAdd;->cI:Landroid/app/admin/DevicePolicyManager;
+    iget-object v0, p0, Lcom/android/settings_ext/DeviceAdminAdd;->cI:Landroid/app/admin/DevicePolicyManager;
 
-    iget-object v1, p0, Lcom/android/settings/DeviceAdminAdd;->iY:Landroid/app/admin/DeviceAdminInfo;
+    iget-object v1, p0, Lcom/android/settings_ext/DeviceAdminAdd;->iY:Landroid/app/admin/DeviceAdminInfo;
 
     invoke-virtual {v1}, Landroid/app/admin/DeviceAdminInfo;->getComponent()Landroid/content/ComponentName;
 
@@ -421,7 +421,7 @@
     if-eqz v0, :cond_0
 
     .line 316
-    invoke-virtual {p0, v4}, Lcom/android/settings/DeviceAdminAdd;->setResult(I)V
+    invoke-virtual {p0, v4}, Lcom/android/settings_ext/DeviceAdminAdd;->setResult(I)V
 
     goto :goto_0
 
@@ -432,7 +432,7 @@
     .line 324
     const/4 v0, 0x0
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/DeviceAdminAdd;->setResult(I)V
+    invoke-virtual {p0, v0}, Lcom/android/settings_ext/DeviceAdminAdd;->setResult(I)V
 
     goto :goto_1
 .end method
@@ -448,11 +448,11 @@
     const/4 v2, 0x0
 
     .line 418
-    iget-object v0, p0, Lcom/android/settings/DeviceAdminAdd;->jb:Landroid/widget/ImageView;
+    iget-object v0, p0, Lcom/android/settings_ext/DeviceAdminAdd;->jb:Landroid/widget/ImageView;
 
-    iget-object v1, p0, Lcom/android/settings/DeviceAdminAdd;->iY:Landroid/app/admin/DeviceAdminInfo;
+    iget-object v1, p0, Lcom/android/settings_ext/DeviceAdminAdd;->iY:Landroid/app/admin/DeviceAdminInfo;
 
-    invoke-virtual {p0}, Lcom/android/settings/DeviceAdminAdd;->getPackageManager()Landroid/content/pm/PackageManager;
+    invoke-virtual {p0}, Lcom/android/settings_ext/DeviceAdminAdd;->getPackageManager()Landroid/content/pm/PackageManager;
 
     move-result-object v3
 
@@ -463,11 +463,11 @@
     invoke-virtual {v0, v1}, Landroid/widget/ImageView;->setImageDrawable(Landroid/graphics/drawable/Drawable;)V
 
     .line 419
-    iget-object v0, p0, Lcom/android/settings/DeviceAdminAdd;->jc:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/android/settings_ext/DeviceAdminAdd;->jc:Landroid/widget/TextView;
 
-    iget-object v1, p0, Lcom/android/settings/DeviceAdminAdd;->iY:Landroid/app/admin/DeviceAdminInfo;
+    iget-object v1, p0, Lcom/android/settings_ext/DeviceAdminAdd;->iY:Landroid/app/admin/DeviceAdminInfo;
 
-    invoke-virtual {p0}, Lcom/android/settings/DeviceAdminAdd;->getPackageManager()Landroid/content/pm/PackageManager;
+    invoke-virtual {p0}, Lcom/android/settings_ext/DeviceAdminAdd;->getPackageManager()Landroid/content/pm/PackageManager;
 
     move-result-object v3
 
@@ -479,11 +479,11 @@
 
     .line 421
     :try_start_0
-    iget-object v0, p0, Lcom/android/settings/DeviceAdminAdd;->jd:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/android/settings_ext/DeviceAdminAdd;->jd:Landroid/widget/TextView;
 
-    iget-object v1, p0, Lcom/android/settings/DeviceAdminAdd;->iY:Landroid/app/admin/DeviceAdminInfo;
+    iget-object v1, p0, Lcom/android/settings_ext/DeviceAdminAdd;->iY:Landroid/app/admin/DeviceAdminInfo;
 
-    invoke-virtual {p0}, Lcom/android/settings/DeviceAdminAdd;->getPackageManager()Landroid/content/pm/PackageManager;
+    invoke-virtual {p0}, Lcom/android/settings_ext/DeviceAdminAdd;->getPackageManager()Landroid/content/pm/PackageManager;
 
     move-result-object v3
 
@@ -494,7 +494,7 @@
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
     .line 423
-    iget-object v0, p0, Lcom/android/settings/DeviceAdminAdd;->jd:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/android/settings_ext/DeviceAdminAdd;->jd:Landroid/widget/TextView;
 
     const/4 v1, 0x0
 
@@ -504,46 +504,46 @@
 
     .line 427
     :goto_0
-    iget-boolean v0, p0, Lcom/android/settings/DeviceAdminAdd;->jq:Z
+    iget-boolean v0, p0, Lcom/android/settings_ext/DeviceAdminAdd;->jq:Z
 
     if-eqz v0, :cond_0
 
     .line 428
-    iget-object v0, p0, Lcom/android/settings/DeviceAdminAdd;->jf:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/android/settings_ext/DeviceAdminAdd;->jf:Landroid/widget/TextView;
 
     invoke-virtual {v0, v2}, Landroid/widget/TextView;->setVisibility(I)V
 
     .line 430
     :cond_0
-    iget-object v0, p0, Lcom/android/settings/DeviceAdminAdd;->iZ:Ljava/lang/CharSequence;
+    iget-object v0, p0, Lcom/android/settings_ext/DeviceAdminAdd;->iZ:Ljava/lang/CharSequence;
 
     if-eqz v0, :cond_1
 
     .line 431
-    iget-object v0, p0, Lcom/android/settings/DeviceAdminAdd;->je:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/android/settings_ext/DeviceAdminAdd;->je:Landroid/widget/TextView;
 
-    iget-object v1, p0, Lcom/android/settings/DeviceAdminAdd;->iZ:Ljava/lang/CharSequence;
+    iget-object v1, p0, Lcom/android/settings_ext/DeviceAdminAdd;->iZ:Ljava/lang/CharSequence;
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
     .line 432
-    iget-object v0, p0, Lcom/android/settings/DeviceAdminAdd;->je:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/android/settings_ext/DeviceAdminAdd;->je:Landroid/widget/TextView;
 
     invoke-virtual {v0, v2}, Landroid/widget/TextView;->setVisibility(I)V
 
     .line 437
     :goto_1
-    iget-boolean v0, p0, Lcom/android/settings/DeviceAdminAdd;->jo:Z
+    iget-boolean v0, p0, Lcom/android/settings_ext/DeviceAdminAdd;->jo:Z
 
     if-nez v0, :cond_3
 
-    iget-boolean v0, p0, Lcom/android/settings/DeviceAdminAdd;->jq:Z
+    iget-boolean v0, p0, Lcom/android/settings_ext/DeviceAdminAdd;->jq:Z
 
     if-nez v0, :cond_3
 
-    iget-object v0, p0, Lcom/android/settings/DeviceAdminAdd;->cI:Landroid/app/admin/DevicePolicyManager;
+    iget-object v0, p0, Lcom/android/settings_ext/DeviceAdminAdd;->cI:Landroid/app/admin/DevicePolicyManager;
 
-    iget-object v1, p0, Lcom/android/settings/DeviceAdminAdd;->iY:Landroid/app/admin/DeviceAdminInfo;
+    iget-object v1, p0, Lcom/android/settings_ext/DeviceAdminAdd;->iY:Landroid/app/admin/DeviceAdminInfo;
 
     invoke-virtual {v1}, Landroid/app/admin/DeviceAdminInfo;->getComponent()Landroid/content/ComponentName;
 
@@ -556,7 +556,7 @@
     if-eqz v0, :cond_3
 
     .line 439
-    iget-object v0, p0, Lcom/android/settings/DeviceAdminAdd;->jm:Ljava/util/ArrayList;
+    iget-object v0, p0, Lcom/android/settings_ext/DeviceAdminAdd;->jm:Ljava/util/ArrayList;
 
     invoke-virtual {v0}, Ljava/util/ArrayList;->size()I
 
@@ -565,7 +565,7 @@
     if-nez v0, :cond_2
 
     .line 440
-    iget-object v0, p0, Lcom/android/settings/DeviceAdminAdd;->iY:Landroid/app/admin/DeviceAdminInfo;
+    iget-object v0, p0, Lcom/android/settings_ext/DeviceAdminAdd;->iY:Landroid/app/admin/DeviceAdminInfo;
 
     invoke-virtual {v0}, Landroid/app/admin/DeviceAdminInfo;->getUsedPolicies()Ljava/util/ArrayList;
 
@@ -591,7 +591,7 @@
     .line 443
     iget v0, v0, Landroid/app/admin/DeviceAdminInfo$PolicyInfo;->label:I
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/DeviceAdminAdd;->getText(I)Ljava/lang/CharSequence;
+    invoke-virtual {p0, v0}, Lcom/android/settings_ext/DeviceAdminAdd;->getText(I)Ljava/lang/CharSequence;
 
     move-result-object v0
 
@@ -602,12 +602,12 @@
     move-result-object v0
 
     .line 445
-    iget-object v4, p0, Lcom/android/settings/DeviceAdminAdd;->jm:Ljava/util/ArrayList;
+    iget-object v4, p0, Lcom/android/settings_ext/DeviceAdminAdd;->jm:Ljava/util/ArrayList;
 
     invoke-virtual {v4, v0}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
     .line 446
-    iget-object v4, p0, Lcom/android/settings/DeviceAdminAdd;->jj:Landroid/view/ViewGroup;
+    iget-object v4, p0, Lcom/android/settings_ext/DeviceAdminAdd;->jj:Landroid/view/ViewGroup;
 
     invoke-virtual {v4, v0}, Landroid/view/ViewGroup;->addView(Landroid/view/View;)V
 
@@ -623,7 +623,7 @@
     move-exception v0
 
     .line 425
-    iget-object v0, p0, Lcom/android/settings/DeviceAdminAdd;->jd:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/android/settings_ext/DeviceAdminAdd;->jd:Landroid/widget/TextView;
 
     invoke-virtual {v0, v5}, Landroid/widget/TextView;->setVisibility(I)V
 
@@ -631,12 +631,12 @@
 
     .line 434
     :cond_1
-    iget-object v0, p0, Lcom/android/settings/DeviceAdminAdd;->je:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/android/settings_ext/DeviceAdminAdd;->je:Landroid/widget/TextView;
 
     invoke-virtual {v0, v5}, Landroid/widget/TextView;->setVisibility(I)V
 
     .line 435
-    iget-object v0, p0, Lcom/android/settings/DeviceAdminAdd;->jg:Landroid/widget/ImageView;
+    iget-object v0, p0, Lcom/android/settings_ext/DeviceAdminAdd;->jg:Landroid/widget/ImageView;
 
     invoke-virtual {v0, v5}, Landroid/widget/ImageView;->setVisibility(I)V
 
@@ -644,23 +644,23 @@
 
     .line 449
     :cond_2
-    iget-object v0, p0, Lcom/android/settings/DeviceAdminAdd;->jm:Ljava/util/ArrayList;
+    iget-object v0, p0, Lcom/android/settings_ext/DeviceAdminAdd;->jm:Ljava/util/ArrayList;
 
-    invoke-static {v0, v2}, Lcom/android/settings/DeviceAdminAdd;->a(Ljava/util/ArrayList;I)V
+    invoke-static {v0, v2}, Lcom/android/settings_ext/DeviceAdminAdd;->a(Ljava/util/ArrayList;I)V
 
     .line 450
-    iget-object v0, p0, Lcom/android/settings/DeviceAdminAdd;->jl:Ljava/util/ArrayList;
+    iget-object v0, p0, Lcom/android/settings_ext/DeviceAdminAdd;->jl:Ljava/util/ArrayList;
 
-    invoke-static {v0, v5}, Lcom/android/settings/DeviceAdminAdd;->a(Ljava/util/ArrayList;I)V
+    invoke-static {v0, v5}, Lcom/android/settings_ext/DeviceAdminAdd;->a(Ljava/util/ArrayList;I)V
 
     .line 451
-    iget-object v0, p0, Lcom/android/settings/DeviceAdminAdd;->ji:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/android/settings_ext/DeviceAdminAdd;->ji:Landroid/widget/TextView;
 
     const v1, 0x7f0907ad
 
     new-array v3, v6, [Ljava/lang/Object;
 
-    iget-object v4, p0, Lcom/android/settings/DeviceAdminAdd;->iY:Landroid/app/admin/DeviceAdminInfo;
+    iget-object v4, p0, Lcom/android/settings_ext/DeviceAdminAdd;->iY:Landroid/app/admin/DeviceAdminInfo;
 
     invoke-virtual {v4}, Landroid/app/admin/DeviceAdminInfo;->getActivityInfo()Landroid/content/pm/ActivityInfo;
 
@@ -668,7 +668,7 @@
 
     iget-object v4, v4, Landroid/content/pm/ActivityInfo;->applicationInfo:Landroid/content/pm/ApplicationInfo;
 
-    invoke-virtual {p0}, Lcom/android/settings/DeviceAdminAdd;->getPackageManager()Landroid/content/pm/PackageManager;
+    invoke-virtual {p0}, Lcom/android/settings_ext/DeviceAdminAdd;->getPackageManager()Landroid/content/pm/PackageManager;
 
     move-result-object v5
 
@@ -678,7 +678,7 @@
 
     aput-object v4, v3, v2
 
-    invoke-virtual {p0, v1, v3}, Lcom/android/settings/DeviceAdminAdd;->getString(I[Ljava/lang/Object;)Ljava/lang/String;
+    invoke-virtual {p0, v1, v3}, Lcom/android/settings_ext/DeviceAdminAdd;->getString(I[Ljava/lang/Object;)Ljava/lang/String;
 
     move-result-object v1
 
@@ -687,25 +687,25 @@
     .line 453
     const v0, 0x7f0907a1
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/DeviceAdminAdd;->getText(I)Ljava/lang/CharSequence;
+    invoke-virtual {p0, v0}, Lcom/android/settings_ext/DeviceAdminAdd;->getText(I)Ljava/lang/CharSequence;
 
     move-result-object v0
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/DeviceAdminAdd;->setTitle(Ljava/lang/CharSequence;)V
+    invoke-virtual {p0, v0}, Lcom/android/settings_ext/DeviceAdminAdd;->setTitle(Ljava/lang/CharSequence;)V
 
     .line 454
-    iget-object v0, p0, Lcom/android/settings/DeviceAdminAdd;->jk:Landroid/widget/Button;
+    iget-object v0, p0, Lcom/android/settings_ext/DeviceAdminAdd;->jk:Landroid/widget/Button;
 
     const v1, 0x7f0907a2
 
-    invoke-virtual {p0, v1}, Lcom/android/settings/DeviceAdminAdd;->getText(I)Ljava/lang/CharSequence;
+    invoke-virtual {p0, v1}, Lcom/android/settings_ext/DeviceAdminAdd;->getText(I)Ljava/lang/CharSequence;
 
     move-result-object v1
 
     invoke-virtual {v0, v1}, Landroid/widget/Button;->setText(Ljava/lang/CharSequence;)V
 
     .line 455
-    iput-boolean v2, p0, Lcom/android/settings/DeviceAdminAdd;->jn:Z
+    iput-boolean v2, p0, Lcom/android/settings_ext/DeviceAdminAdd;->jn:Z
 
     .line 479
     :goto_3
@@ -713,7 +713,7 @@
 
     .line 457
     :cond_3
-    iget-object v0, p0, Lcom/android/settings/DeviceAdminAdd;->jl:Ljava/util/ArrayList;
+    iget-object v0, p0, Lcom/android/settings_ext/DeviceAdminAdd;->jl:Ljava/util/ArrayList;
 
     invoke-virtual {v0}, Ljava/util/ArrayList;->size()I
 
@@ -722,7 +722,7 @@
     if-nez v0, :cond_4
 
     .line 458
-    iget-object v0, p0, Lcom/android/settings/DeviceAdminAdd;->iY:Landroid/app/admin/DeviceAdminInfo;
+    iget-object v0, p0, Lcom/android/settings_ext/DeviceAdminAdd;->iY:Landroid/app/admin/DeviceAdminInfo;
 
     invoke-virtual {v0}, Landroid/app/admin/DeviceAdminInfo;->getUsedPolicies()Ljava/util/ArrayList;
 
@@ -748,13 +748,13 @@
     .line 461
     iget v4, v0, Landroid/app/admin/DeviceAdminInfo$PolicyInfo;->label:I
 
-    invoke-virtual {p0, v4}, Lcom/android/settings/DeviceAdminAdd;->getText(I)Ljava/lang/CharSequence;
+    invoke-virtual {p0, v4}, Lcom/android/settings_ext/DeviceAdminAdd;->getText(I)Ljava/lang/CharSequence;
 
     move-result-object v4
 
     iget v0, v0, Landroid/app/admin/DeviceAdminInfo$PolicyInfo;->description:I
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/DeviceAdminAdd;->getText(I)Ljava/lang/CharSequence;
+    invoke-virtual {p0, v0}, Lcom/android/settings_ext/DeviceAdminAdd;->getText(I)Ljava/lang/CharSequence;
 
     move-result-object v0
 
@@ -763,12 +763,12 @@
     move-result-object v0
 
     .line 463
-    iget-object v4, p0, Lcom/android/settings/DeviceAdminAdd;->jl:Ljava/util/ArrayList;
+    iget-object v4, p0, Lcom/android/settings_ext/DeviceAdminAdd;->jl:Ljava/util/ArrayList;
 
     invoke-virtual {v4, v0}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
     .line 464
-    iget-object v4, p0, Lcom/android/settings/DeviceAdminAdd;->jj:Landroid/view/ViewGroup;
+    iget-object v4, p0, Lcom/android/settings_ext/DeviceAdminAdd;->jj:Landroid/view/ViewGroup;
 
     invoke-virtual {v4, v0}, Landroid/view/ViewGroup;->addView(Landroid/view/View;)V
 
@@ -781,23 +781,23 @@
 
     .line 467
     :cond_4
-    iget-object v0, p0, Lcom/android/settings/DeviceAdminAdd;->jl:Ljava/util/ArrayList;
+    iget-object v0, p0, Lcom/android/settings_ext/DeviceAdminAdd;->jl:Ljava/util/ArrayList;
 
-    invoke-static {v0, v2}, Lcom/android/settings/DeviceAdminAdd;->a(Ljava/util/ArrayList;I)V
+    invoke-static {v0, v2}, Lcom/android/settings_ext/DeviceAdminAdd;->a(Ljava/util/ArrayList;I)V
 
     .line 468
-    iget-object v0, p0, Lcom/android/settings/DeviceAdminAdd;->jm:Ljava/util/ArrayList;
+    iget-object v0, p0, Lcom/android/settings_ext/DeviceAdminAdd;->jm:Ljava/util/ArrayList;
 
-    invoke-static {v0, v5}, Lcom/android/settings/DeviceAdminAdd;->a(Ljava/util/ArrayList;I)V
+    invoke-static {v0, v5}, Lcom/android/settings_ext/DeviceAdminAdd;->a(Ljava/util/ArrayList;I)V
 
     .line 469
-    iget-object v0, p0, Lcom/android/settings/DeviceAdminAdd;->ji:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/android/settings_ext/DeviceAdminAdd;->ji:Landroid/widget/TextView;
 
     const v1, 0x7f0907ac
 
     new-array v3, v6, [Ljava/lang/Object;
 
-    iget-object v4, p0, Lcom/android/settings/DeviceAdminAdd;->iY:Landroid/app/admin/DeviceAdminInfo;
+    iget-object v4, p0, Lcom/android/settings_ext/DeviceAdminAdd;->iY:Landroid/app/admin/DeviceAdminInfo;
 
     invoke-virtual {v4}, Landroid/app/admin/DeviceAdminInfo;->getActivityInfo()Landroid/content/pm/ActivityInfo;
 
@@ -805,7 +805,7 @@
 
     iget-object v4, v4, Landroid/content/pm/ActivityInfo;->applicationInfo:Landroid/content/pm/ApplicationInfo;
 
-    invoke-virtual {p0}, Lcom/android/settings/DeviceAdminAdd;->getPackageManager()Landroid/content/pm/PackageManager;
+    invoke-virtual {p0}, Lcom/android/settings_ext/DeviceAdminAdd;->getPackageManager()Landroid/content/pm/PackageManager;
 
     move-result-object v5
 
@@ -815,40 +815,40 @@
 
     aput-object v4, v3, v2
 
-    invoke-virtual {p0, v1, v3}, Lcom/android/settings/DeviceAdminAdd;->getString(I[Ljava/lang/Object;)Ljava/lang/String;
+    invoke-virtual {p0, v1, v3}, Lcom/android/settings_ext/DeviceAdminAdd;->getString(I[Ljava/lang/Object;)Ljava/lang/String;
 
     move-result-object v1
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
     .line 471
-    iget-boolean v0, p0, Lcom/android/settings/DeviceAdminAdd;->jq:Z
+    iget-boolean v0, p0, Lcom/android/settings_ext/DeviceAdminAdd;->jq:Z
 
     if-eqz v0, :cond_5
 
     .line 472
     const v0, 0x7f0907ae
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/DeviceAdminAdd;->getText(I)Ljava/lang/CharSequence;
+    invoke-virtual {p0, v0}, Lcom/android/settings_ext/DeviceAdminAdd;->getText(I)Ljava/lang/CharSequence;
 
     move-result-object v0
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/DeviceAdminAdd;->setTitle(Ljava/lang/CharSequence;)V
+    invoke-virtual {p0, v0}, Lcom/android/settings_ext/DeviceAdminAdd;->setTitle(Ljava/lang/CharSequence;)V
 
     .line 476
     :goto_5
-    iget-object v0, p0, Lcom/android/settings/DeviceAdminAdd;->jk:Landroid/widget/Button;
+    iget-object v0, p0, Lcom/android/settings_ext/DeviceAdminAdd;->jk:Landroid/widget/Button;
 
     const v1, 0x7f0907aa
 
-    invoke-virtual {p0, v1}, Lcom/android/settings/DeviceAdminAdd;->getText(I)Ljava/lang/CharSequence;
+    invoke-virtual {p0, v1}, Lcom/android/settings_ext/DeviceAdminAdd;->getText(I)Ljava/lang/CharSequence;
 
     move-result-object v1
 
     invoke-virtual {v0, v1}, Landroid/widget/Button;->setText(Ljava/lang/CharSequence;)V
 
     .line 477
-    iput-boolean v6, p0, Lcom/android/settings/DeviceAdminAdd;->jn:Z
+    iput-boolean v6, p0, Lcom/android/settings_ext/DeviceAdminAdd;->jn:Z
 
     goto :goto_3
 
@@ -856,11 +856,11 @@
     :cond_5
     const v0, 0x7f0907a9
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/DeviceAdminAdd;->getText(I)Ljava/lang/CharSequence;
+    invoke-virtual {p0, v0}, Lcom/android/settings_ext/DeviceAdminAdd;->getText(I)Ljava/lang/CharSequence;
 
     move-result-object v0
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/DeviceAdminAdd;->setTitle(Ljava/lang/CharSequence;)V
+    invoke-virtual {p0, v0}, Lcom/android/settings_ext/DeviceAdminAdd;->setTitle(Ljava/lang/CharSequence;)V
 
     goto :goto_5
 .end method
@@ -872,7 +872,7 @@
     .line 498
     const-string v0, "window"
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/DeviceAdminAdd;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
+    invoke-virtual {p0, v0}, Lcom/android/settings_ext/DeviceAdminAdd;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object v0
 
@@ -918,43 +918,43 @@
     .line 105
     new-instance v0, Landroid/os/Handler;
 
-    invoke-virtual {p0}, Lcom/android/settings/DeviceAdminAdd;->getMainLooper()Landroid/os/Looper;
+    invoke-virtual {p0}, Lcom/android/settings_ext/DeviceAdminAdd;->getMainLooper()Landroid/os/Looper;
 
     move-result-object v1
 
     invoke-direct {v0, v1}, Landroid/os/Handler;-><init>(Landroid/os/Looper;)V
 
-    iput-object v0, p0, Lcom/android/settings/DeviceAdminAdd;->mHandler:Landroid/os/Handler;
+    iput-object v0, p0, Lcom/android/settings_ext/DeviceAdminAdd;->mHandler:Landroid/os/Handler;
 
     .line 107
     const-string v0, "device_policy"
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/DeviceAdminAdd;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
+    invoke-virtual {p0, v0}, Lcom/android/settings_ext/DeviceAdminAdd;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object v0
 
     check-cast v0, Landroid/app/admin/DevicePolicyManager;
 
-    iput-object v0, p0, Lcom/android/settings/DeviceAdminAdd;->cI:Landroid/app/admin/DevicePolicyManager;
+    iput-object v0, p0, Lcom/android/settings_ext/DeviceAdminAdd;->cI:Landroid/app/admin/DevicePolicyManager;
 
     .line 108
     const-string v0, "appops"
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/DeviceAdminAdd;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
+    invoke-virtual {p0, v0}, Lcom/android/settings_ext/DeviceAdminAdd;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object v0
 
     check-cast v0, Landroid/app/AppOpsManager;
 
-    iput-object v0, p0, Lcom/android/settings/DeviceAdminAdd;->mAppOps:Landroid/app/AppOpsManager;
+    iput-object v0, p0, Lcom/android/settings_ext/DeviceAdminAdd;->mAppOps:Landroid/app/AppOpsManager;
 
     .line 109
-    invoke-virtual {p0}, Lcom/android/settings/DeviceAdminAdd;->getPackageManager()Landroid/content/pm/PackageManager;
+    invoke-virtual {p0}, Lcom/android/settings_ext/DeviceAdminAdd;->getPackageManager()Landroid/content/pm/PackageManager;
 
     move-result-object v1
 
     .line 111
-    invoke-virtual {p0}, Lcom/android/settings/DeviceAdminAdd;->getIntent()Landroid/content/Intent;
+    invoke-virtual {p0}, Lcom/android/settings_ext/DeviceAdminAdd;->getIntent()Landroid/content/Intent;
 
     move-result-object v0
 
@@ -976,7 +976,7 @@
     invoke-static {v0, v1}, Landroid/util/Log;->w(Ljava/lang/String;Ljava/lang/String;)I
 
     .line 113
-    invoke-virtual {p0}, Lcom/android/settings/DeviceAdminAdd;->finish()V
+    invoke-virtual {p0}, Lcom/android/settings_ext/DeviceAdminAdd;->finish()V
 
     .line 302
     :goto_0
@@ -984,7 +984,7 @@
 
     .line 117
     :cond_0
-    invoke-virtual {p0}, Lcom/android/settings/DeviceAdminAdd;->getIntent()Landroid/content/Intent;
+    invoke-virtual {p0}, Lcom/android/settings_ext/DeviceAdminAdd;->getIntent()Landroid/content/Intent;
 
     move-result-object v0
 
@@ -993,7 +993,7 @@
     move-result-object v2
 
     .line 118
-    invoke-virtual {p0}, Lcom/android/settings/DeviceAdminAdd;->getIntent()Landroid/content/Intent;
+    invoke-virtual {p0}, Lcom/android/settings_ext/DeviceAdminAdd;->getIntent()Landroid/content/Intent;
 
     move-result-object v0
 
@@ -1032,7 +1032,7 @@
     invoke-static {v0, v1}, Landroid/util/Log;->w(Ljava/lang/String;Ljava/lang/String;)I
 
     .line 122
-    invoke-virtual {p0}, Lcom/android/settings/DeviceAdminAdd;->finish()V
+    invoke-virtual {p0}, Lcom/android/settings_ext/DeviceAdminAdd;->finish()V
 
     goto :goto_0
 
@@ -1049,16 +1049,16 @@
     if-eqz v2, :cond_4
 
     .line 127
-    invoke-virtual {p0, v3}, Lcom/android/settings/DeviceAdminAdd;->setResult(I)V
+    invoke-virtual {p0, v3}, Lcom/android/settings_ext/DeviceAdminAdd;->setResult(I)V
 
     .line 128
-    invoke-virtual {p0, v4}, Lcom/android/settings/DeviceAdminAdd;->setFinishOnTouchOutside(Z)V
+    invoke-virtual {p0, v4}, Lcom/android/settings_ext/DeviceAdminAdd;->setFinishOnTouchOutside(Z)V
 
     .line 129
-    iput-boolean v4, p0, Lcom/android/settings/DeviceAdminAdd;->jq:Z
+    iput-boolean v4, p0, Lcom/android/settings_ext/DeviceAdminAdd;->jq:Z
 
     .line 130
-    invoke-virtual {p0}, Lcom/android/settings/DeviceAdminAdd;->getIntent()Landroid/content/Intent;
+    invoke-virtual {p0}, Lcom/android/settings_ext/DeviceAdminAdd;->getIntent()Landroid/content/Intent;
 
     move-result-object v2
 
@@ -1068,10 +1068,10 @@
 
     move-result-object v2
 
-    iput-object v2, p0, Lcom/android/settings/DeviceAdminAdd;->ja:Ljava/lang/String;
+    iput-object v2, p0, Lcom/android/settings_ext/DeviceAdminAdd;->ja:Ljava/lang/String;
 
     .line 132
-    invoke-virtual {p0}, Lcom/android/settings/DeviceAdminAdd;->getCallingPackage()Ljava/lang/String;
+    invoke-virtual {p0}, Lcom/android/settings_ext/DeviceAdminAdd;->getCallingPackage()Ljava/lang/String;
 
     move-result-object v2
 
@@ -1097,7 +1097,7 @@
     invoke-static {v0, v1}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
 
     .line 135
-    invoke-virtual {p0}, Lcom/android/settings/DeviceAdminAdd;->finish()V
+    invoke-virtual {p0}, Lcom/android/settings_ext/DeviceAdminAdd;->finish()V
 
     goto :goto_0
 
@@ -1127,7 +1127,7 @@
     invoke-static {v0, v1}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
 
     .line 142
-    invoke-virtual {p0}, Lcom/android/settings/DeviceAdminAdd;->finish()V
+    invoke-virtual {p0}, Lcom/android/settings_ext/DeviceAdminAdd;->finish()V
     :try_end_0
     .catch Landroid/content/pm/PackageManager$NameNotFoundException; {:try_start_0 .. :try_end_0} :catch_0
 
@@ -1161,7 +1161,7 @@
     invoke-static {v0, v1}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
 
     .line 147
-    invoke-virtual {p0}, Lcom/android/settings/DeviceAdminAdd;->finish()V
+    invoke-virtual {p0}, Lcom/android/settings_ext/DeviceAdminAdd;->finish()V
 
     goto/16 :goto_0
 
@@ -1177,7 +1177,7 @@
     move-result-object v6
 
     .line 164
-    iget-object v2, p0, Lcom/android/settings/DeviceAdminAdd;->cI:Landroid/app/admin/DevicePolicyManager;
+    iget-object v2, p0, Lcom/android/settings_ext/DeviceAdminAdd;->cI:Landroid/app/admin/DevicePolicyManager;
 
     invoke-virtual {v2, v0}, Landroid/app/admin/DevicePolicyManager;->isAdminActive(Landroid/content/ComponentName;)Z
 
@@ -1284,7 +1284,7 @@
     invoke-static {v1, v0}, Landroid/util/Log;->w(Ljava/lang/String;Ljava/lang/String;)I
 
     .line 190
-    invoke-virtual {p0}, Lcom/android/settings/DeviceAdminAdd;->finish()V
+    invoke-virtual {p0}, Lcom/android/settings_ext/DeviceAdminAdd;->finish()V
 
     goto/16 :goto_0
 
@@ -1316,7 +1316,7 @@
     invoke-static {v2, v0, v1}, Landroid/util/Log;->w(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)I
 
     .line 157
-    invoke-virtual {p0}, Lcom/android/settings/DeviceAdminAdd;->finish()V
+    invoke-virtual {p0}, Lcom/android/settings_ext/DeviceAdminAdd;->finish()V
 
     goto/16 :goto_0
 
@@ -1421,7 +1421,7 @@
 
     invoke-direct {v2, p0, v1}, Landroid/app/admin/DeviceAdminInfo;-><init>(Landroid/content/Context;Landroid/content/pm/ResolveInfo;)V
 
-    iput-object v2, p0, Lcom/android/settings/DeviceAdminAdd;->iY:Landroid/app/admin/DeviceAdminInfo;
+    iput-object v2, p0, Lcom/android/settings_ext/DeviceAdminAdd;->iY:Landroid/app/admin/DeviceAdminInfo;
     :try_end_3
     .catch Lorg/xmlpull/v1/XmlPullParserException; {:try_start_3 .. :try_end_3} :catch_4
     .catch Ljava/io/IOException; {:try_start_3 .. :try_end_3} :catch_5
@@ -1429,7 +1429,7 @@
     .line 212
     const-string v1, "android.app.action.ADD_DEVICE_ADMIN"
 
-    invoke-virtual {p0}, Lcom/android/settings/DeviceAdminAdd;->getIntent()Landroid/content/Intent;
+    invoke-virtual {p0}, Lcom/android/settings_ext/DeviceAdminAdd;->getIntent()Landroid/content/Intent;
 
     move-result-object v2
 
@@ -1444,10 +1444,10 @@
     if-eqz v1, :cond_a
 
     .line 213
-    iput-boolean v3, p0, Lcom/android/settings/DeviceAdminAdd;->jo:Z
+    iput-boolean v3, p0, Lcom/android/settings_ext/DeviceAdminAdd;->jo:Z
 
     .line 214
-    iget-object v1, p0, Lcom/android/settings/DeviceAdminAdd;->cI:Landroid/app/admin/DevicePolicyManager;
+    iget-object v1, p0, Lcom/android/settings_ext/DeviceAdminAdd;->cI:Landroid/app/admin/DevicePolicyManager;
 
     invoke-virtual {v1, v0}, Landroid/app/admin/DevicePolicyManager;->isAdminActive(Landroid/content/ComponentName;)Z
 
@@ -1456,7 +1456,7 @@
     if-eqz v1, :cond_a
 
     .line 215
-    iget-object v1, p0, Lcom/android/settings/DeviceAdminAdd;->iY:Landroid/app/admin/DeviceAdminInfo;
+    iget-object v1, p0, Lcom/android/settings_ext/DeviceAdminAdd;->iY:Landroid/app/admin/DeviceAdminInfo;
 
     invoke-virtual {v1}, Landroid/app/admin/DeviceAdminInfo;->getUsedPolicies()Ljava/util/ArrayList;
 
@@ -1478,7 +1478,7 @@
     check-cast v1, Landroid/app/admin/DeviceAdminInfo$PolicyInfo;
 
     .line 218
-    iget-object v5, p0, Lcom/android/settings/DeviceAdminAdd;->cI:Landroid/app/admin/DevicePolicyManager;
+    iget-object v5, p0, Lcom/android/settings_ext/DeviceAdminAdd;->cI:Landroid/app/admin/DevicePolicyManager;
 
     iget v1, v1, Landroid/app/admin/DeviceAdminInfo$PolicyInfo;->ident:I
 
@@ -1489,21 +1489,21 @@
     if-nez v1, :cond_9
 
     .line 219
-    iput-boolean v4, p0, Lcom/android/settings/DeviceAdminAdd;->jo:Z
+    iput-boolean v4, p0, Lcom/android/settings_ext/DeviceAdminAdd;->jo:Z
 
     .line 223
     :cond_8
-    iget-boolean v0, p0, Lcom/android/settings/DeviceAdminAdd;->jo:Z
+    iget-boolean v0, p0, Lcom/android/settings_ext/DeviceAdminAdd;->jo:Z
 
     if-nez v0, :cond_a
 
     .line 225
     const/4 v0, -0x1
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/DeviceAdminAdd;->setResult(I)V
+    invoke-virtual {p0, v0}, Lcom/android/settings_ext/DeviceAdminAdd;->setResult(I)V
 
     .line 226
-    invoke-virtual {p0}, Lcom/android/settings/DeviceAdminAdd;->finish()V
+    invoke-virtual {p0}, Lcom/android/settings_ext/DeviceAdminAdd;->finish()V
 
     goto/16 :goto_0
 
@@ -1535,7 +1535,7 @@
     invoke-static {v2, v0, v1}, Landroid/util/Log;->w(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)I
 
     .line 201
-    invoke-virtual {p0}, Lcom/android/settings/DeviceAdminAdd;->finish()V
+    invoke-virtual {p0}, Lcom/android/settings_ext/DeviceAdminAdd;->finish()V
 
     goto/16 :goto_0
 
@@ -1567,7 +1567,7 @@
     invoke-static {v2, v0, v1}, Landroid/util/Log;->w(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)I
 
     .line 205
-    invoke-virtual {p0}, Lcom/android/settings/DeviceAdminAdd;->finish()V
+    invoke-virtual {p0}, Lcom/android/settings_ext/DeviceAdminAdd;->finish()V
 
     goto/16 :goto_0
 
@@ -1579,11 +1579,11 @@
 
     .line 234
     :cond_a
-    iget-boolean v0, p0, Lcom/android/settings/DeviceAdminAdd;->jq:Z
+    iget-boolean v0, p0, Lcom/android/settings_ext/DeviceAdminAdd;->jq:Z
 
     if-eqz v0, :cond_b
 
-    iget-object v0, p0, Lcom/android/settings/DeviceAdminAdd;->cI:Landroid/app/admin/DevicePolicyManager;
+    iget-object v0, p0, Lcom/android/settings_ext/DeviceAdminAdd;->cI:Landroid/app/admin/DevicePolicyManager;
 
     invoke-virtual {v0}, Landroid/app/admin/DevicePolicyManager;->hasUserSetupCompleted()Z
 
@@ -1592,13 +1592,13 @@
     if-nez v0, :cond_b
 
     .line 235
-    invoke-virtual {p0}, Lcom/android/settings/DeviceAdminAdd;->cQ()V
+    invoke-virtual {p0}, Lcom/android/settings_ext/DeviceAdminAdd;->cQ()V
 
     goto/16 :goto_0
 
     .line 239
     :cond_b
-    invoke-virtual {p0}, Lcom/android/settings/DeviceAdminAdd;->getIntent()Landroid/content/Intent;
+    invoke-virtual {p0}, Lcom/android/settings_ext/DeviceAdminAdd;->getIntent()Landroid/content/Intent;
 
     move-result-object v0
 
@@ -1608,152 +1608,152 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/DeviceAdminAdd;->iZ:Ljava/lang/CharSequence;
+    iput-object v0, p0, Lcom/android/settings_ext/DeviceAdminAdd;->iZ:Ljava/lang/CharSequence;
 
     .line 241
     const v0, 0x7f04004b
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/DeviceAdminAdd;->setContentView(I)V
+    invoke-virtual {p0, v0}, Lcom/android/settings_ext/DeviceAdminAdd;->setContentView(I)V
 
     .line 243
     const v0, 0x7f1000a9
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/DeviceAdminAdd;->findViewById(I)Landroid/view/View;
+    invoke-virtual {p0, v0}, Lcom/android/settings_ext/DeviceAdminAdd;->findViewById(I)Landroid/view/View;
 
     move-result-object v0
 
     check-cast v0, Landroid/widget/ImageView;
 
-    iput-object v0, p0, Lcom/android/settings/DeviceAdminAdd;->jb:Landroid/widget/ImageView;
+    iput-object v0, p0, Lcom/android/settings_ext/DeviceAdminAdd;->jb:Landroid/widget/ImageView;
 
     .line 244
     const v0, 0x7f1000aa
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/DeviceAdminAdd;->findViewById(I)Landroid/view/View;
+    invoke-virtual {p0, v0}, Lcom/android/settings_ext/DeviceAdminAdd;->findViewById(I)Landroid/view/View;
 
     move-result-object v0
 
     check-cast v0, Landroid/widget/TextView;
 
-    iput-object v0, p0, Lcom/android/settings/DeviceAdminAdd;->jc:Landroid/widget/TextView;
+    iput-object v0, p0, Lcom/android/settings_ext/DeviceAdminAdd;->jc:Landroid/widget/TextView;
 
     .line 245
     const v0, 0x7f1000ac
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/DeviceAdminAdd;->findViewById(I)Landroid/view/View;
+    invoke-virtual {p0, v0}, Lcom/android/settings_ext/DeviceAdminAdd;->findViewById(I)Landroid/view/View;
 
     move-result-object v0
 
     check-cast v0, Landroid/widget/TextView;
 
-    iput-object v0, p0, Lcom/android/settings/DeviceAdminAdd;->jd:Landroid/widget/TextView;
+    iput-object v0, p0, Lcom/android/settings_ext/DeviceAdminAdd;->jd:Landroid/widget/TextView;
 
     .line 246
     const v0, 0x7f1000ab
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/DeviceAdminAdd;->findViewById(I)Landroid/view/View;
+    invoke-virtual {p0, v0}, Lcom/android/settings_ext/DeviceAdminAdd;->findViewById(I)Landroid/view/View;
 
     move-result-object v0
 
     check-cast v0, Landroid/widget/TextView;
 
-    iput-object v0, p0, Lcom/android/settings/DeviceAdminAdd;->jf:Landroid/widget/TextView;
+    iput-object v0, p0, Lcom/android/settings_ext/DeviceAdminAdd;->jf:Landroid/widget/TextView;
 
     .line 248
     const v0, 0x7f1000ae
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/DeviceAdminAdd;->findViewById(I)Landroid/view/View;
+    invoke-virtual {p0, v0}, Lcom/android/settings_ext/DeviceAdminAdd;->findViewById(I)Landroid/view/View;
 
     move-result-object v0
 
     check-cast v0, Landroid/widget/TextView;
 
-    iput-object v0, p0, Lcom/android/settings/DeviceAdminAdd;->je:Landroid/widget/TextView;
+    iput-object v0, p0, Lcom/android/settings_ext/DeviceAdminAdd;->je:Landroid/widget/TextView;
 
     .line 249
     const v0, 0x7f1000ad
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/DeviceAdminAdd;->findViewById(I)Landroid/view/View;
+    invoke-virtual {p0, v0}, Lcom/android/settings_ext/DeviceAdminAdd;->findViewById(I)Landroid/view/View;
 
     move-result-object v0
 
     check-cast v0, Landroid/widget/ImageView;
 
-    iput-object v0, p0, Lcom/android/settings/DeviceAdminAdd;->jg:Landroid/widget/ImageView;
+    iput-object v0, p0, Lcom/android/settings_ext/DeviceAdminAdd;->jg:Landroid/widget/ImageView;
 
     .line 250
-    iget-object v0, p0, Lcom/android/settings/DeviceAdminAdd;->je:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/android/settings_ext/DeviceAdminAdd;->je:Landroid/widget/TextView;
 
-    new-instance v1, Lcom/android/settings/bC;
+    new-instance v1, Lcom/android/settings_ext/bC;
 
-    invoke-direct {v1, p0}, Lcom/android/settings/bC;-><init>(Lcom/android/settings/DeviceAdminAdd;)V
+    invoke-direct {v1, p0}, Lcom/android/settings_ext/bC;-><init>(Lcom/android/settings_ext/DeviceAdminAdd;)V
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     .line 257
-    iget-object v0, p0, Lcom/android/settings/DeviceAdminAdd;->je:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/android/settings_ext/DeviceAdminAdd;->je:Landroid/widget/TextView;
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/DeviceAdminAdd;->a(Landroid/view/View;)V
+    invoke-virtual {p0, v0}, Lcom/android/settings_ext/DeviceAdminAdd;->a(Landroid/view/View;)V
 
     .line 259
     const v0, 0x7f1000af
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/DeviceAdminAdd;->findViewById(I)Landroid/view/View;
+    invoke-virtual {p0, v0}, Lcom/android/settings_ext/DeviceAdminAdd;->findViewById(I)Landroid/view/View;
 
     move-result-object v0
 
     check-cast v0, Landroid/widget/TextView;
 
-    iput-object v0, p0, Lcom/android/settings/DeviceAdminAdd;->ji:Landroid/widget/TextView;
+    iput-object v0, p0, Lcom/android/settings_ext/DeviceAdminAdd;->ji:Landroid/widget/TextView;
 
     .line 260
     const v0, 0x7f1000b0
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/DeviceAdminAdd;->findViewById(I)Landroid/view/View;
+    invoke-virtual {p0, v0}, Lcom/android/settings_ext/DeviceAdminAdd;->findViewById(I)Landroid/view/View;
 
     move-result-object v0
 
     check-cast v0, Landroid/view/ViewGroup;
 
-    iput-object v0, p0, Lcom/android/settings/DeviceAdminAdd;->jj:Landroid/view/ViewGroup;
+    iput-object v0, p0, Lcom/android/settings_ext/DeviceAdminAdd;->jj:Landroid/view/ViewGroup;
 
     .line 261
     const v0, 0x7f1000b3
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/DeviceAdminAdd;->findViewById(I)Landroid/view/View;
+    invoke-virtual {p0, v0}, Lcom/android/settings_ext/DeviceAdminAdd;->findViewById(I)Landroid/view/View;
 
     move-result-object v0
 
     check-cast v0, Landroid/widget/Button;
 
-    iput-object v0, p0, Lcom/android/settings/DeviceAdminAdd;->df:Landroid/widget/Button;
+    iput-object v0, p0, Lcom/android/settings_ext/DeviceAdminAdd;->df:Landroid/widget/Button;
 
     .line 262
-    iget-object v0, p0, Lcom/android/settings/DeviceAdminAdd;->df:Landroid/widget/Button;
+    iget-object v0, p0, Lcom/android/settings_ext/DeviceAdminAdd;->df:Landroid/widget/Button;
 
-    new-instance v1, Lcom/android/settings/bD;
+    new-instance v1, Lcom/android/settings_ext/bD;
 
-    invoke-direct {v1, p0}, Lcom/android/settings/bD;-><init>(Lcom/android/settings/DeviceAdminAdd;)V
+    invoke-direct {v1, p0}, Lcom/android/settings_ext/bD;-><init>(Lcom/android/settings_ext/DeviceAdminAdd;)V
 
     invoke-virtual {v0, v1}, Landroid/widget/Button;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     .line 269
     const v0, 0x7f1000b4
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/DeviceAdminAdd;->findViewById(I)Landroid/view/View;
+    invoke-virtual {p0, v0}, Lcom/android/settings_ext/DeviceAdminAdd;->findViewById(I)Landroid/view/View;
 
     move-result-object v0
 
     check-cast v0, Landroid/widget/Button;
 
-    iput-object v0, p0, Lcom/android/settings/DeviceAdminAdd;->jk:Landroid/widget/Button;
+    iput-object v0, p0, Lcom/android/settings_ext/DeviceAdminAdd;->jk:Landroid/widget/Button;
 
     .line 270
-    iget-object v0, p0, Lcom/android/settings/DeviceAdminAdd;->jk:Landroid/widget/Button;
+    iget-object v0, p0, Lcom/android/settings_ext/DeviceAdminAdd;->jk:Landroid/widget/Button;
 
-    new-instance v1, Lcom/android/settings/bE;
+    new-instance v1, Lcom/android/settings_ext/bE;
 
-    invoke-direct {v1, p0}, Lcom/android/settings/bE;-><init>(Lcom/android/settings/DeviceAdminAdd;)V
+    invoke-direct {v1, p0}, Lcom/android/settings_ext/bE;-><init>(Lcom/android/settings_ext/DeviceAdminAdd;)V
 
     invoke-virtual {v0, v1}, Landroid/widget/Button;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
@@ -1799,9 +1799,9 @@
     .line 390
     const v0, 0x7f09054e
 
-    new-instance v2, Lcom/android/settings/bG;
+    new-instance v2, Lcom/android/settings_ext/bG;
 
-    invoke-direct {v2, p0}, Lcom/android/settings/bG;-><init>(Lcom/android/settings/DeviceAdminAdd;)V
+    invoke-direct {v2, p0}, Lcom/android/settings_ext/bG;-><init>(Lcom/android/settings_ext/DeviceAdminAdd;)V
 
     invoke-virtual {v1, v0, v2}, Landroid/app/AlertDialog$Builder;->setPositiveButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
@@ -1836,7 +1836,7 @@
     invoke-super {p0}, Landroid/app/Activity;->onPause()V
 
     .line 372
-    iget-object v0, p0, Lcom/android/settings/DeviceAdminAdd;->iY:Landroid/app/admin/DeviceAdminInfo;
+    iget-object v0, p0, Lcom/android/settings_ext/DeviceAdminAdd;->iY:Landroid/app/admin/DeviceAdminInfo;
 
     invoke-virtual {v0}, Landroid/app/admin/DeviceAdminInfo;->getActivityInfo()Landroid/content/pm/ActivityInfo;
 
@@ -1847,7 +1847,7 @@
     iget v0, v0, Landroid/content/pm/ApplicationInfo;->uid:I
 
     .line 373
-    iget-object v1, p0, Lcom/android/settings/DeviceAdminAdd;->iY:Landroid/app/admin/DeviceAdminInfo;
+    iget-object v1, p0, Lcom/android/settings_ext/DeviceAdminAdd;->iY:Landroid/app/admin/DeviceAdminInfo;
 
     invoke-virtual {v1}, Landroid/app/admin/DeviceAdminInfo;->getActivityInfo()Landroid/content/pm/ActivityInfo;
 
@@ -1858,20 +1858,20 @@
     iget-object v1, v1, Landroid/content/pm/ApplicationInfo;->packageName:Ljava/lang/String;
 
     .line 374
-    iget-object v2, p0, Lcom/android/settings/DeviceAdminAdd;->mAppOps:Landroid/app/AppOpsManager;
+    iget-object v2, p0, Lcom/android/settings_ext/DeviceAdminAdd;->mAppOps:Landroid/app/AppOpsManager;
 
     const/16 v3, 0x18
 
-    iget v4, p0, Lcom/android/settings/DeviceAdminAdd;->jr:I
+    iget v4, p0, Lcom/android/settings_ext/DeviceAdminAdd;->jr:I
 
     invoke-virtual {v2, v3, v0, v1, v4}, Landroid/app/AppOpsManager;->setMode(IILjava/lang/String;I)V
 
     .line 375
-    iget-object v2, p0, Lcom/android/settings/DeviceAdminAdd;->mAppOps:Landroid/app/AppOpsManager;
+    iget-object v2, p0, Lcom/android/settings_ext/DeviceAdminAdd;->mAppOps:Landroid/app/AppOpsManager;
 
     const/16 v3, 0x3c
 
-    iget v4, p0, Lcom/android/settings/DeviceAdminAdd;->js:I
+    iget v4, p0, Lcom/android/settings_ext/DeviceAdminAdd;->js:I
 
     invoke-virtual {v2, v3, v0, v1, v4}, Landroid/app/AppOpsManager;->setMode(IILjava/lang/String;I)V
 
@@ -1910,10 +1910,10 @@
     invoke-super {p0}, Landroid/app/Activity;->onResume()V
 
     .line 358
-    invoke-virtual {p0}, Lcom/android/settings/DeviceAdminAdd;->cR()V
+    invoke-virtual {p0}, Lcom/android/settings_ext/DeviceAdminAdd;->cR()V
 
     .line 360
-    iget-object v0, p0, Lcom/android/settings/DeviceAdminAdd;->iY:Landroid/app/admin/DeviceAdminInfo;
+    iget-object v0, p0, Lcom/android/settings_ext/DeviceAdminAdd;->iY:Landroid/app/admin/DeviceAdminInfo;
 
     invoke-virtual {v0}, Landroid/app/admin/DeviceAdminInfo;->getActivityInfo()Landroid/content/pm/ActivityInfo;
 
@@ -1924,7 +1924,7 @@
     iget v0, v0, Landroid/content/pm/ApplicationInfo;->uid:I
 
     .line 361
-    iget-object v1, p0, Lcom/android/settings/DeviceAdminAdd;->iY:Landroid/app/admin/DeviceAdminInfo;
+    iget-object v1, p0, Lcom/android/settings_ext/DeviceAdminAdd;->iY:Landroid/app/admin/DeviceAdminInfo;
 
     invoke-virtual {v1}, Landroid/app/admin/DeviceAdminInfo;->getActivityInfo()Landroid/content/pm/ActivityInfo;
 
@@ -1935,30 +1935,30 @@
     iget-object v1, v1, Landroid/content/pm/ApplicationInfo;->packageName:Ljava/lang/String;
 
     .line 362
-    iget-object v2, p0, Lcom/android/settings/DeviceAdminAdd;->mAppOps:Landroid/app/AppOpsManager;
+    iget-object v2, p0, Lcom/android/settings_ext/DeviceAdminAdd;->mAppOps:Landroid/app/AppOpsManager;
 
     invoke-virtual {v2, v4, v0, v1}, Landroid/app/AppOpsManager;->checkOp(IILjava/lang/String;)I
 
     move-result v2
 
-    iput v2, p0, Lcom/android/settings/DeviceAdminAdd;->jr:I
+    iput v2, p0, Lcom/android/settings_ext/DeviceAdminAdd;->jr:I
 
     .line 363
-    iget-object v2, p0, Lcom/android/settings/DeviceAdminAdd;->mAppOps:Landroid/app/AppOpsManager;
+    iget-object v2, p0, Lcom/android/settings_ext/DeviceAdminAdd;->mAppOps:Landroid/app/AppOpsManager;
 
     invoke-virtual {v2, v5, v0, v1}, Landroid/app/AppOpsManager;->checkOp(IILjava/lang/String;)I
 
     move-result v2
 
-    iput v2, p0, Lcom/android/settings/DeviceAdminAdd;->js:I
+    iput v2, p0, Lcom/android/settings_ext/DeviceAdminAdd;->js:I
 
     .line 364
-    iget-object v2, p0, Lcom/android/settings/DeviceAdminAdd;->mAppOps:Landroid/app/AppOpsManager;
+    iget-object v2, p0, Lcom/android/settings_ext/DeviceAdminAdd;->mAppOps:Landroid/app/AppOpsManager;
 
     invoke-virtual {v2, v4, v0, v1, v3}, Landroid/app/AppOpsManager;->setMode(IILjava/lang/String;I)V
 
     .line 365
-    iget-object v2, p0, Lcom/android/settings/DeviceAdminAdd;->mAppOps:Landroid/app/AppOpsManager;
+    iget-object v2, p0, Lcom/android/settings_ext/DeviceAdminAdd;->mAppOps:Landroid/app/AppOpsManager;
 
     invoke-virtual {v2, v5, v0, v1, v3}, Landroid/app/AppOpsManager;->setMode(IILjava/lang/String;I)V
 

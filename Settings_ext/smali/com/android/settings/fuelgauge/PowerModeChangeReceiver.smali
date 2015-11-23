@@ -1,4 +1,4 @@
-.class public Lcom/android/settings/fuelgauge/PowerModeChangeReceiver;
+.class public Lcom/android/settings_ext/fuelgauge/PowerModeChangeReceiver;
 .super Landroid/content/BroadcastReceiver;
 .source "PowerModeChangeReceiver.java"
 
@@ -53,7 +53,7 @@
     move-result v0
 
     .line 30
-    invoke-virtual {p0, p1, v0}, Lcom/android/settings/fuelgauge/PowerModeChangeReceiver;->r(Landroid/content/Context;Z)V
+    invoke-virtual {p0, p1, v0}, Lcom/android/settings_ext/fuelgauge/PowerModeChangeReceiver;->r(Landroid/content/Context;Z)V
 
     goto :goto_0
 .end method
@@ -91,7 +91,7 @@
     :cond_0
     new-instance v1, Landroid/content/Intent;
 
-    const-class v2, Lcom/android/settings/fuelgauge/PowerModeSettings;
+    const-class v2, Lcom/android/settings_ext/fuelgauge/PowerModeSettings;
 
     invoke-direct {v1, p1, v2}, Landroid/content/Intent;-><init>(Landroid/content/Context;Ljava/lang/Class;)V
 

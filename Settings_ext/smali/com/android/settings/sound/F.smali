@@ -1,4 +1,4 @@
-.class final Lcom/android/settings/sound/F;
+.class final Lcom/android/settings_ext/sound/F;
 .super Ljava/lang/Object;
 .source "RingerVolumeFragment.java"
 
@@ -19,12 +19,12 @@
 
 
 # virtual methods
-.method public co(I)[Lcom/android/settings/sound/RingerVolumeFragment$SavedState;
+.method public co(I)[Lcom/android/settings_ext/sound/RingerVolumeFragment$SavedState;
     .locals 1
 
     .prologue
     .line 400
-    new-array v0, p1, [Lcom/android/settings/sound/RingerVolumeFragment$SavedState;
+    new-array v0, p1, [Lcom/android/settings_ext/sound/RingerVolumeFragment$SavedState;
 
     return-object v0
 .end method
@@ -34,21 +34,21 @@
 
     .prologue
     .line 394
-    invoke-virtual {p0, p1}, Lcom/android/settings/sound/F;->n(Landroid/os/Parcel;)Lcom/android/settings/sound/RingerVolumeFragment$SavedState;
+    invoke-virtual {p0, p1}, Lcom/android/settings_ext/sound/F;->n(Landroid/os/Parcel;)Lcom/android/settings_ext/sound/RingerVolumeFragment$SavedState;
 
     move-result-object v0
 
     return-object v0
 .end method
 
-.method public n(Landroid/os/Parcel;)Lcom/android/settings/sound/RingerVolumeFragment$SavedState;
+.method public n(Landroid/os/Parcel;)Lcom/android/settings_ext/sound/RingerVolumeFragment$SavedState;
     .locals 1
 
     .prologue
     .line 396
-    new-instance v0, Lcom/android/settings/sound/RingerVolumeFragment$SavedState;
+    new-instance v0, Lcom/android/settings_ext/sound/RingerVolumeFragment$SavedState;
 
-    invoke-direct {v0, p1}, Lcom/android/settings/sound/RingerVolumeFragment$SavedState;-><init>(Landroid/os/Parcel;)V
+    invoke-direct {v0, p1}, Lcom/android/settings_ext/sound/RingerVolumeFragment$SavedState;-><init>(Landroid/os/Parcel;)V
 
     return-object v0
 .end method
@@ -58,7 +58,7 @@
 
     .prologue
     .line 394
-    invoke-virtual {p0, p1}, Lcom/android/settings/sound/F;->co(I)[Lcom/android/settings/sound/RingerVolumeFragment$SavedState;
+    invoke-virtual {p0, p1}, Lcom/android/settings_ext/sound/F;->co(I)[Lcom/android/settings_ext/sound/RingerVolumeFragment$SavedState;
 
     move-result-object v0
 

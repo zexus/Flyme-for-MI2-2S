@@ -1,4 +1,4 @@
-.class Lcom/android/settings/bi;
+.class Lcom/android/settings_ext/bi;
 .super Ljava/lang/Object;
 .source "DataUsageSummary.java"
 
@@ -7,16 +7,16 @@
 
 
 # instance fields
-.field final synthetic gH:Lcom/android/settings/DataUsageSummary;
+.field final synthetic gH:Lcom/android/settings_ext/DataUsageSummary;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/DataUsageSummary;)V
+.method constructor <init>(Lcom/android/settings_ext/DataUsageSummary;)V
     .locals 0
 
     .prologue
     .line 1192
-    iput-object p1, p0, Lcom/android/settings/bi;->gH:Lcom/android/settings/DataUsageSummary;
+    iput-object p1, p0, Lcom/android/settings_ext/bi;->gH:Lcom/android/settings_ext/DataUsageSummary;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -37,12 +37,12 @@
 
     move-result-object v0
 
-    check-cast v0, Lcom/android/settings/DataUsageSummary$AppItem;
+    check-cast v0, Lcom/android/settings_ext/DataUsageSummary$AppItem;
 
     .line 1199
-    iget-object v1, p0, Lcom/android/settings/bi;->gH:Lcom/android/settings/DataUsageSummary;
+    iget-object v1, p0, Lcom/android/settings_ext/bi;->gH:Lcom/android/settings_ext/DataUsageSummary;
 
-    invoke-static {v1}, Lcom/android/settings/DataUsageSummary;->j(Lcom/android/settings/DataUsageSummary;)Lcom/android/settings/b/j;
+    invoke-static {v1}, Lcom/android/settings_ext/DataUsageSummary;->j(Lcom/android/settings_ext/DataUsageSummary;)Lcom/android/settings_ext/b/j;
 
     move-result-object v1
 
@@ -57,26 +57,26 @@
 
     .line 1201
     :cond_1
-    iget-object v1, p0, Lcom/android/settings/bi;->gH:Lcom/android/settings/DataUsageSummary;
+    iget-object v1, p0, Lcom/android/settings_ext/bi;->gH:Lcom/android/settings_ext/DataUsageSummary;
 
-    invoke-static {v1}, Lcom/android/settings/DataUsageSummary;->j(Lcom/android/settings/DataUsageSummary;)Lcom/android/settings/b/j;
+    invoke-static {v1}, Lcom/android/settings_ext/DataUsageSummary;->j(Lcom/android/settings_ext/DataUsageSummary;)Lcom/android/settings_ext/b/j;
 
     move-result-object v1
 
-    iget v2, v0, Lcom/android/settings/DataUsageSummary$AppItem;->key:I
+    iget v2, v0, Lcom/android/settings_ext/DataUsageSummary$AppItem;->key:I
 
     const/4 v3, 0x1
 
-    invoke-virtual {v1, v2, v3}, Lcom/android/settings/b/j;->g(IZ)Lcom/android/settings/b/i;
+    invoke-virtual {v1, v2, v3}, Lcom/android/settings_ext/b/j;->g(IZ)Lcom/android/settings_ext/b/i;
 
     move-result-object v1
 
     .line 1202
-    iget-object v2, p0, Lcom/android/settings/bi;->gH:Lcom/android/settings/DataUsageSummary;
+    iget-object v2, p0, Lcom/android/settings_ext/bi;->gH:Lcom/android/settings_ext/DataUsageSummary;
 
-    iget-object v1, v1, Lcom/android/settings/b/i;->label:Ljava/lang/CharSequence;
+    iget-object v1, v1, Lcom/android/settings_ext/b/i;->label:Ljava/lang/CharSequence;
 
-    invoke-static {v2, v0, v1}, Lcom/android/settings/DataUsageSummary$AppDetailsFragment;->a(Lcom/android/settings/DataUsageSummary;Lcom/android/settings/DataUsageSummary$AppItem;Ljava/lang/CharSequence;)V
+    invoke-static {v2, v0, v1}, Lcom/android/settings_ext/DataUsageSummary$AppDetailsFragment;->a(Lcom/android/settings_ext/DataUsageSummary;Lcom/android/settings_ext/DataUsageSummary$AppItem;Ljava/lang/CharSequence;)V
 
     goto :goto_0
 .end method

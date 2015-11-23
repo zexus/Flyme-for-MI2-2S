@@ -1,4 +1,4 @@
-.class synthetic Lcom/android/settings/wifi/a;
+.class synthetic Lcom/android/settings_ext/wifi/a;
 .super Ljava/lang/Object;
 .source "AccessPoint.java"
 
@@ -13,7 +13,7 @@
 
     .prologue
     .line 200
-    invoke-static {}, Lcom/android/settings/wifi/AccessPoint$PskType;->values()[Lcom/android/settings/wifi/AccessPoint$PskType;
+    invoke-static {}, Lcom/android/settings_ext/wifi/AccessPoint$PskType;->values()[Lcom/android/settings_ext/wifi/AccessPoint$PskType;
 
     move-result-object v0
 
@@ -21,14 +21,14 @@
 
     new-array v0, v0, [I
 
-    sput-object v0, Lcom/android/settings/wifi/a;->ask:[I
+    sput-object v0, Lcom/android/settings_ext/wifi/a;->ask:[I
 
     :try_start_0
-    sget-object v0, Lcom/android/settings/wifi/a;->ask:[I
+    sget-object v0, Lcom/android/settings_ext/wifi/a;->ask:[I
 
-    sget-object v1, Lcom/android/settings/wifi/AccessPoint$PskType;->asm:Lcom/android/settings/wifi/AccessPoint$PskType;
+    sget-object v1, Lcom/android/settings_ext/wifi/AccessPoint$PskType;->asm:Lcom/android/settings_ext/wifi/AccessPoint$PskType;
 
-    invoke-virtual {v1}, Lcom/android/settings/wifi/AccessPoint$PskType;->ordinal()I
+    invoke-virtual {v1}, Lcom/android/settings_ext/wifi/AccessPoint$PskType;->ordinal()I
 
     move-result v1
 
@@ -40,11 +40,11 @@
 
     :goto_0
     :try_start_1
-    sget-object v0, Lcom/android/settings/wifi/a;->ask:[I
+    sget-object v0, Lcom/android/settings_ext/wifi/a;->ask:[I
 
-    sget-object v1, Lcom/android/settings/wifi/AccessPoint$PskType;->asn:Lcom/android/settings/wifi/AccessPoint$PskType;
+    sget-object v1, Lcom/android/settings_ext/wifi/AccessPoint$PskType;->asn:Lcom/android/settings_ext/wifi/AccessPoint$PskType;
 
-    invoke-virtual {v1}, Lcom/android/settings/wifi/AccessPoint$PskType;->ordinal()I
+    invoke-virtual {v1}, Lcom/android/settings_ext/wifi/AccessPoint$PskType;->ordinal()I
 
     move-result v1
 
@@ -56,11 +56,11 @@
 
     :goto_1
     :try_start_2
-    sget-object v0, Lcom/android/settings/wifi/a;->ask:[I
+    sget-object v0, Lcom/android/settings_ext/wifi/a;->ask:[I
 
-    sget-object v1, Lcom/android/settings/wifi/AccessPoint$PskType;->aso:Lcom/android/settings/wifi/AccessPoint$PskType;
+    sget-object v1, Lcom/android/settings_ext/wifi/AccessPoint$PskType;->aso:Lcom/android/settings_ext/wifi/AccessPoint$PskType;
 
-    invoke-virtual {v1}, Lcom/android/settings/wifi/AccessPoint$PskType;->ordinal()I
+    invoke-virtual {v1}, Lcom/android/settings_ext/wifi/AccessPoint$PskType;->ordinal()I
 
     move-result v1
 
@@ -72,11 +72,11 @@
 
     :goto_2
     :try_start_3
-    sget-object v0, Lcom/android/settings/wifi/a;->ask:[I
+    sget-object v0, Lcom/android/settings_ext/wifi/a;->ask:[I
 
-    sget-object v1, Lcom/android/settings/wifi/AccessPoint$PskType;->asl:Lcom/android/settings/wifi/AccessPoint$PskType;
+    sget-object v1, Lcom/android/settings_ext/wifi/AccessPoint$PskType;->asl:Lcom/android/settings_ext/wifi/AccessPoint$PskType;
 
-    invoke-virtual {v1}, Lcom/android/settings/wifi/AccessPoint$PskType;->ordinal()I
+    invoke-virtual {v1}, Lcom/android/settings_ext/wifi/AccessPoint$PskType;->ordinal()I
 
     move-result v1
 

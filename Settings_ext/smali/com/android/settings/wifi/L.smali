@@ -1,4 +1,4 @@
-.class Lcom/android/settings/wifi/L;
+.class Lcom/android/settings_ext/wifi/L;
 .super Ljava/lang/Object;
 .source "WifiAPITest.java"
 
@@ -9,18 +9,18 @@
 # instance fields
 .field final synthetic auh:Landroid/widget/EditText;
 
-.field final synthetic aui:Lcom/android/settings/wifi/WifiAPITest;
+.field final synthetic aui:Lcom/android/settings_ext/wifi/WifiAPITest;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/wifi/WifiAPITest;Landroid/widget/EditText;)V
+.method constructor <init>(Lcom/android/settings_ext/wifi/WifiAPITest;Landroid/widget/EditText;)V
     .locals 0
 
     .prologue
     .line 112
-    iput-object p1, p0, Lcom/android/settings/wifi/L;->aui:Lcom/android/settings/wifi/WifiAPITest;
+    iput-object p1, p0, Lcom/android/settings_ext/wifi/L;->aui:Lcom/android/settings_ext/wifi/WifiAPITest;
 
-    iput-object p2, p0, Lcom/android/settings/wifi/L;->auh:Landroid/widget/EditText;
+    iput-object p2, p0, Lcom/android/settings_ext/wifi/L;->auh:Landroid/widget/EditText;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -34,7 +34,7 @@
 
     .prologue
     .line 114
-    iget-object v0, p0, Lcom/android/settings/wifi/L;->auh:Landroid/widget/EditText;
+    iget-object v0, p0, Lcom/android/settings_ext/wifi/L;->auh:Landroid/widget/EditText;
 
     invoke-virtual {v0}, Landroid/widget/EditText;->getText()Landroid/text/Editable;
 
@@ -42,7 +42,7 @@
 
     .line 119
     :try_start_0
-    iget-object v1, p0, Lcom/android/settings/wifi/L;->aui:Lcom/android/settings/wifi/WifiAPITest;
+    iget-object v1, p0, Lcom/android/settings_ext/wifi/L;->aui:Lcom/android/settings_ext/wifi/WifiAPITest;
 
     invoke-virtual {v0}, Ljava/lang/Object;->toString()Ljava/lang/String;
 
@@ -52,18 +52,18 @@
 
     move-result v0
 
-    invoke-static {v1, v0}, Lcom/android/settings/wifi/WifiAPITest;->a(Lcom/android/settings/wifi/WifiAPITest;I)I
+    invoke-static {v1, v0}, Lcom/android/settings_ext/wifi/WifiAPITest;->a(Lcom/android/settings_ext/wifi/WifiAPITest;I)I
 
     .line 120
-    iget-object v0, p0, Lcom/android/settings/wifi/L;->aui:Lcom/android/settings/wifi/WifiAPITest;
+    iget-object v0, p0, Lcom/android/settings_ext/wifi/L;->aui:Lcom/android/settings_ext/wifi/WifiAPITest;
 
-    invoke-static {v0}, Lcom/android/settings/wifi/WifiAPITest;->b(Lcom/android/settings/wifi/WifiAPITest;)Landroid/net/wifi/WifiManager;
+    invoke-static {v0}, Lcom/android/settings_ext/wifi/WifiAPITest;->b(Lcom/android/settings_ext/wifi/WifiAPITest;)Landroid/net/wifi/WifiManager;
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/android/settings/wifi/L;->aui:Lcom/android/settings/wifi/WifiAPITest;
+    iget-object v1, p0, Lcom/android/settings_ext/wifi/L;->aui:Lcom/android/settings_ext/wifi/WifiAPITest;
 
-    invoke-static {v1}, Lcom/android/settings/wifi/WifiAPITest;->a(Lcom/android/settings/wifi/WifiAPITest;)I
+    invoke-static {v1}, Lcom/android/settings_ext/wifi/WifiAPITest;->a(Lcom/android/settings_ext/wifi/WifiAPITest;)I
 
     move-result v1
 

@@ -1,5 +1,5 @@
-.class public Lcom/android/settings/dV;
-.super Lcom/android/settings/dg;
+.class public Lcom/android/settings_ext/dV;
+.super Lcom/android/settings_ext/dg;
 .source "MiuiSearchDrawable.java"
 
 
@@ -11,7 +11,7 @@
     .line 12
     const v0, 0x7f020016
 
-    invoke-direct {p0, p1, v0}, Lcom/android/settings/dV;-><init>(Landroid/content/Context;I)V
+    invoke-direct {p0, p1, v0}, Lcom/android/settings_ext/dV;-><init>(Landroid/content/Context;I)V
 
     .line 13
     return-void
@@ -22,7 +22,7 @@
 
     .prologue
     .line 16
-    invoke-direct {p0, p1, p2}, Lcom/android/settings/dg;-><init>(Landroid/content/Context;I)V
+    invoke-direct {p0, p1, p2}, Lcom/android/settings_ext/dg;-><init>(Landroid/content/Context;I)V
 
     .line 17
     return-void
@@ -68,7 +68,7 @@
 
     .prologue
     .line 20
-    invoke-virtual {p0}, Lcom/android/settings/dV;->er()Landroid/graphics/drawable/Drawable;
+    invoke-virtual {p0}, Lcom/android/settings_ext/dV;->er()Landroid/graphics/drawable/Drawable;
 
     move-result-object v0
 
@@ -80,10 +80,10 @@
 
     .prologue
     .line 25
-    invoke-super {p0}, Lcom/android/settings/dg;->stopAnimation()V
+    invoke-super {p0}, Lcom/android/settings_ext/dg;->stopAnimation()V
 
     .line 26
-    invoke-virtual {p0}, Lcom/android/settings/dV;->es()Landroid/graphics/drawable/Animatable;
+    invoke-virtual {p0}, Lcom/android/settings_ext/dV;->es()Landroid/graphics/drawable/Animatable;
 
     move-result-object v0
 

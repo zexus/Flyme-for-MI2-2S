@@ -1,4 +1,4 @@
-.class Lcom/android/settings/bU;
+.class Lcom/android/settings_ext/bU;
 .super Ljava/lang/Object;
 .source "DisplaySettings.java"
 
@@ -7,16 +7,16 @@
 
 
 # instance fields
-.field final synthetic ke:Lcom/android/settings/DisplaySettings;
+.field final synthetic ke:Lcom/android/settings_ext/DisplaySettings;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/DisplaySettings;)V
+.method constructor <init>(Lcom/android/settings_ext/DisplaySettings;)V
     .locals 0
 
     .prologue
     .line 400
-    iput-object p1, p0, Lcom/android/settings/bU;->ke:Lcom/android/settings/DisplaySettings;
+    iput-object p1, p0, Lcom/android/settings_ext/bU;->ke:Lcom/android/settings_ext/DisplaySettings;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -30,13 +30,13 @@
 
     .prologue
     .line 402
-    iget-object v0, p0, Lcom/android/settings/bU;->ke:Lcom/android/settings/DisplaySettings;
+    iget-object v0, p0, Lcom/android/settings_ext/bU;->ke:Lcom/android/settings_ext/DisplaySettings;
 
-    invoke-static {v0}, Lcom/android/settings/DisplaySettings;->a(Lcom/android/settings/DisplaySettings;)Lcom/android/settings/WarnedListPreference;
+    invoke-static {v0}, Lcom/android/settings_ext/DisplaySettings;->a(Lcom/android/settings_ext/DisplaySettings;)Lcom/android/settings_ext/WarnedListPreference;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/android/settings/WarnedListPreference;->click()V
+    invoke-virtual {v0}, Lcom/android/settings_ext/WarnedListPreference;->click()V
 
     .line 403
     return-void

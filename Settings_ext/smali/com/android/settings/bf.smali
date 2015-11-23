@@ -1,4 +1,4 @@
-.class Lcom/android/settings/bf;
+.class Lcom/android/settings_ext/bf;
 .super Ljava/lang/Object;
 .source "DataUsageSummary.java"
 
@@ -7,16 +7,16 @@
 
 
 # instance fields
-.field final synthetic gH:Lcom/android/settings/DataUsageSummary;
+.field final synthetic gH:Lcom/android/settings_ext/DataUsageSummary;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/DataUsageSummary;)V
+.method constructor <init>(Lcom/android/settings_ext/DataUsageSummary;)V
     .locals 0
 
     .prologue
     .line 1141
-    iput-object p1, p0, Lcom/android/settings/bf;->gH:Lcom/android/settings/DataUsageSummary;
+    iput-object p1, p0, Lcom/android/settings_ext/bf;->gH:Lcom/android/settings_ext/DataUsageSummary;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -34,9 +34,9 @@
     const/4 v2, 0x0
 
     .line 1144
-    iget-object v0, p0, Lcom/android/settings/bf;->gH:Lcom/android/settings/DataUsageSummary;
+    iget-object v0, p0, Lcom/android/settings_ext/bf;->gH:Lcom/android/settings_ext/DataUsageSummary;
 
-    invoke-static {v0}, Lcom/android/settings/DataUsageSummary;->e(Lcom/android/settings/DataUsageSummary;)Z
+    invoke-static {v0}, Lcom/android/settings_ext/DataUsageSummary;->e(Lcom/android/settings_ext/DataUsageSummary;)Z
 
     move-result v0
 
@@ -48,9 +48,9 @@
 
     .line 1146
     :cond_0
-    iget-object v0, p0, Lcom/android/settings/bf;->gH:Lcom/android/settings/DataUsageSummary;
+    iget-object v0, p0, Lcom/android/settings_ext/bf;->gH:Lcom/android/settings_ext/DataUsageSummary;
 
-    invoke-static {v0}, Lcom/android/settings/DataUsageSummary;->f(Lcom/android/settings/DataUsageSummary;)Landroid/widget/Switch;
+    invoke-static {v0}, Lcom/android/settings_ext/DataUsageSummary;->f(Lcom/android/settings_ext/DataUsageSummary;)Landroid/widget/Switch;
 
     move-result-object v0
 
@@ -64,9 +64,9 @@
 
     .line 1147
     :goto_1
-    iget-object v3, p0, Lcom/android/settings/bf;->gH:Lcom/android/settings/DataUsageSummary;
+    iget-object v3, p0, Lcom/android/settings_ext/bf;->gH:Lcom/android/settings_ext/DataUsageSummary;
 
-    invoke-static {v3}, Lcom/android/settings/DataUsageSummary;->g(Lcom/android/settings/DataUsageSummary;)Ljava/lang/String;
+    invoke-static {v3}, Lcom/android/settings_ext/DataUsageSummary;->g(Lcom/android/settings_ext/DataUsageSummary;)Ljava/lang/String;
 
     move-result-object v3
 
@@ -92,16 +92,16 @@
     if-eqz v0, :cond_4
 
     .line 1150
-    iget-object v0, p0, Lcom/android/settings/bf;->gH:Lcom/android/settings/DataUsageSummary;
+    iget-object v0, p0, Lcom/android/settings_ext/bf;->gH:Lcom/android/settings_ext/DataUsageSummary;
 
-    invoke-static {v0, v1}, Lcom/android/settings/DataUsageSummary;->a(Lcom/android/settings/DataUsageSummary;Z)V
+    invoke-static {v0, v1}, Lcom/android/settings_ext/DataUsageSummary;->a(Lcom/android/settings_ext/DataUsageSummary;Z)V
 
     .line 1158
     :cond_2
     :goto_2
-    iget-object v0, p0, Lcom/android/settings/bf;->gH:Lcom/android/settings/DataUsageSummary;
+    iget-object v0, p0, Lcom/android/settings_ext/bf;->gH:Lcom/android/settings_ext/DataUsageSummary;
 
-    invoke-static {v0, v2}, Lcom/android/settings/DataUsageSummary;->b(Lcom/android/settings/DataUsageSummary;Z)V
+    invoke-static {v0, v2}, Lcom/android/settings_ext/DataUsageSummary;->b(Lcom/android/settings_ext/DataUsageSummary;Z)V
 
     goto :goto_0
 
@@ -113,9 +113,9 @@
 
     .line 1154
     :cond_4
-    iget-object v0, p0, Lcom/android/settings/bf;->gH:Lcom/android/settings/DataUsageSummary;
+    iget-object v0, p0, Lcom/android/settings_ext/bf;->gH:Lcom/android/settings_ext/DataUsageSummary;
 
-    invoke-static {v0}, Lcom/android/settings/DataUsageSummary$ConfirmDataDisableFragment;->y(Lcom/android/settings/DataUsageSummary;)V
+    invoke-static {v0}, Lcom/android/settings_ext/DataUsageSummary$ConfirmDataDisableFragment;->y(Lcom/android/settings_ext/DataUsageSummary;)V
 
     goto :goto_2
 .end method

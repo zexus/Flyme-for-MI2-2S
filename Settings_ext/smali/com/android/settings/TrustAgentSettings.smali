@@ -1,5 +1,5 @@
-.class public Lcom/android/settings/TrustAgentSettings;
-.super Lcom/android/settings/SettingsPreferenceFragment;
+.class public Lcom/android/settings_ext/TrustAgentSettings;
+.super Lcom/android/settings_ext/SettingsPreferenceFragment;
 .source "TrustAgentSettings.java"
 
 # interfaces
@@ -20,14 +20,14 @@
 
     .prologue
     .line 37
-    invoke-direct {p0}, Lcom/android/settings/SettingsPreferenceFragment;-><init>()V
+    invoke-direct {p0}, Lcom/android/settings_ext/SettingsPreferenceFragment;-><init>()V
 
     .line 41
     new-instance v0, Landroid/util/ArraySet;
 
     invoke-direct {v0}, Landroid/util/ArraySet;-><init>()V
 
-    iput-object v0, p0, Lcom/android/settings/TrustAgentSettings;->yz:Landroid/util/ArraySet;
+    iput-object v0, p0, Lcom/android/settings_ext/TrustAgentSettings;->yz:Landroid/util/ArraySet;
 
     .line 44
     return-void
@@ -40,45 +40,45 @@
     const/4 v3, 0x0
 
     .line 75
-    invoke-virtual {p0}, Lcom/android/settings/TrustAgentSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/TrustAgentSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v4
 
     .line 76
-    iget-object v0, p0, Lcom/android/settings/TrustAgentSettings;->yy:Landroid/util/ArrayMap;
+    iget-object v0, p0, Lcom/android/settings_ext/TrustAgentSettings;->yy:Landroid/util/ArrayMap;
 
     if-nez v0, :cond_0
 
     .line 77
-    invoke-virtual {p0}, Lcom/android/settings/TrustAgentSettings;->hm()Landroid/util/ArrayMap;
+    invoke-virtual {p0}, Lcom/android/settings_ext/TrustAgentSettings;->hm()Landroid/util/ArrayMap;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/TrustAgentSettings;->yy:Landroid/util/ArrayMap;
+    iput-object v0, p0, Lcom/android/settings_ext/TrustAgentSettings;->yy:Landroid/util/ArrayMap;
 
     .line 79
     :cond_0
-    iget-object v0, p0, Lcom/android/settings/TrustAgentSettings;->cP:Lcom/android/internal/widget/LockPatternUtils;
+    iget-object v0, p0, Lcom/android/settings_ext/TrustAgentSettings;->cP:Lcom/android/internal/widget/LockPatternUtils;
 
     if-nez v0, :cond_1
 
     .line 80
     new-instance v0, Lcom/android/internal/widget/LockPatternUtils;
 
-    invoke-virtual {p0}, Lcom/android/settings/TrustAgentSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/TrustAgentSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v1
 
     invoke-direct {v0, v1}, Lcom/android/internal/widget/LockPatternUtils;-><init>(Landroid/content/Context;)V
 
-    iput-object v0, p0, Lcom/android/settings/TrustAgentSettings;->cP:Lcom/android/internal/widget/LockPatternUtils;
+    iput-object v0, p0, Lcom/android/settings_ext/TrustAgentSettings;->cP:Lcom/android/internal/widget/LockPatternUtils;
 
     .line 82
     :cond_1
-    invoke-direct {p0}, Lcom/android/settings/TrustAgentSettings;->hk()V
+    invoke-direct {p0}, Lcom/android/settings_ext/TrustAgentSettings;->hk()V
 
     .line 83
-    invoke-virtual {p0}, Lcom/android/settings/TrustAgentSettings;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
+    invoke-virtual {p0}, Lcom/android/settings_ext/TrustAgentSettings;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
 
     move-result-object v0
 
@@ -94,7 +94,7 @@
     invoke-virtual {v0}, Landroid/preference/PreferenceGroup;->removeAll()V
 
     .line 86
-    iget-object v1, p0, Lcom/android/settings/TrustAgentSettings;->yy:Landroid/util/ArrayMap;
+    iget-object v1, p0, Lcom/android/settings_ext/TrustAgentSettings;->yy:Landroid/util/ArrayMap;
 
     invoke-virtual {v1}, Landroid/util/ArrayMap;->size()I
 
@@ -107,13 +107,13 @@
     if-ge v2, v5, :cond_2
 
     .line 88
-    iget-object v1, p0, Lcom/android/settings/TrustAgentSettings;->yy:Landroid/util/ArrayMap;
+    iget-object v1, p0, Lcom/android/settings_ext/TrustAgentSettings;->yy:Landroid/util/ArrayMap;
 
     invoke-virtual {v1, v2}, Landroid/util/ArrayMap;->valueAt(I)Ljava/lang/Object;
 
     move-result-object v1
 
-    check-cast v1, Lcom/android/settings/gG;
+    check-cast v1, Lcom/android/settings_ext/gG;
 
     .line 89
     new-instance v6, Landroid/preference/SwitchPreference;
@@ -121,18 +121,18 @@
     invoke-direct {v6, v4}, Landroid/preference/SwitchPreference;-><init>(Landroid/content/Context;)V
 
     .line 90
-    iput-object v6, v1, Lcom/android/settings/gG;->yB:Landroid/preference/SwitchPreference;
+    iput-object v6, v1, Lcom/android/settings_ext/gG;->yB:Landroid/preference/SwitchPreference;
 
     .line 91
     invoke-virtual {v6, v3}, Landroid/preference/SwitchPreference;->setPersistent(Z)V
 
     .line 92
-    iget-object v7, v1, Lcom/android/settings/gG;->label:Ljava/lang/CharSequence;
+    iget-object v7, v1, Lcom/android/settings_ext/gG;->label:Ljava/lang/CharSequence;
 
     invoke-virtual {v6, v7}, Landroid/preference/SwitchPreference;->setTitle(Ljava/lang/CharSequence;)V
 
     .line 93
-    iget-object v7, v1, Lcom/android/settings/gG;->icon:Landroid/graphics/drawable/Drawable;
+    iget-object v7, v1, Lcom/android/settings_ext/gG;->icon:Landroid/graphics/drawable/Drawable;
 
     invoke-virtual {v6, v7}, Landroid/preference/SwitchPreference;->setIcon(Landroid/graphics/drawable/Drawable;)V
 
@@ -143,9 +143,9 @@
     invoke-virtual {v6, p0}, Landroid/preference/SwitchPreference;->setOnPreferenceChangeListener(Landroid/preference/Preference$OnPreferenceChangeListener;)V
 
     .line 96
-    iget-object v7, p0, Lcom/android/settings/TrustAgentSettings;->yz:Landroid/util/ArraySet;
+    iget-object v7, p0, Lcom/android/settings_ext/TrustAgentSettings;->yz:Landroid/util/ArraySet;
 
-    iget-object v8, v1, Lcom/android/settings/gG;->yA:Landroid/content/ComponentName;
+    iget-object v8, v1, Lcom/android/settings_ext/gG;->yA:Landroid/content/ComponentName;
 
     invoke-virtual {v7, v8}, Landroid/util/ArraySet;->contains(Ljava/lang/Object;)Z
 
@@ -154,7 +154,7 @@
     invoke-virtual {v6, v7}, Landroid/preference/SwitchPreference;->setChecked(Z)V
 
     .line 97
-    iget-object v1, v1, Lcom/android/settings/gG;->yB:Landroid/preference/SwitchPreference;
+    iget-object v1, v1, Lcom/android/settings_ext/gG;->yB:Landroid/preference/SwitchPreference;
 
     invoke-virtual {v0, v1}, Landroid/preference/PreferenceGroup;->addPreference(Landroid/preference/Preference;)Z
 
@@ -175,7 +175,7 @@
 
     .prologue
     .line 102
-    iget-object v0, p0, Lcom/android/settings/TrustAgentSettings;->cP:Lcom/android/internal/widget/LockPatternUtils;
+    iget-object v0, p0, Lcom/android/settings_ext/TrustAgentSettings;->cP:Lcom/android/internal/widget/LockPatternUtils;
 
     invoke-virtual {v0}, Lcom/android/internal/widget/LockPatternUtils;->getEnabledTrustAgents()Ljava/util/List;
 
@@ -185,7 +185,7 @@
     if-eqz v0, :cond_0
 
     .line 104
-    iget-object v1, p0, Lcom/android/settings/TrustAgentSettings;->yz:Landroid/util/ArraySet;
+    iget-object v1, p0, Lcom/android/settings_ext/TrustAgentSettings;->yz:Landroid/util/ArraySet;
 
     invoke-virtual {v1, v0}, Landroid/util/ArraySet;->addAll(Ljava/util/Collection;)Z
 
@@ -199,9 +199,9 @@
 
     .prologue
     .line 109
-    iget-object v0, p0, Lcom/android/settings/TrustAgentSettings;->cP:Lcom/android/internal/widget/LockPatternUtils;
+    iget-object v0, p0, Lcom/android/settings_ext/TrustAgentSettings;->cP:Lcom/android/internal/widget/LockPatternUtils;
 
-    iget-object v1, p0, Lcom/android/settings/TrustAgentSettings;->yz:Landroid/util/ArraySet;
+    iget-object v1, p0, Lcom/android/settings_ext/TrustAgentSettings;->yz:Landroid/util/ArraySet;
 
     invoke-virtual {v0, v1}, Lcom/android/internal/widget/LockPatternUtils;->setEnabledTrustAgents(Ljava/util/Collection;)V
 
@@ -216,7 +216,7 @@
 
     .prologue
     .line 113
-    invoke-virtual {p0}, Lcom/android/settings/TrustAgentSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/TrustAgentSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
@@ -282,38 +282,38 @@
 
     .line 124
     :cond_1
-    invoke-static {v0, v2}, Lcom/android/settings/gH;->a(Landroid/content/pm/ResolveInfo;Landroid/content/pm/PackageManager;)Z
+    invoke-static {v0, v2}, Lcom/android/settings_ext/gH;->a(Landroid/content/pm/ResolveInfo;Landroid/content/pm/PackageManager;)Z
 
     move-result v6
 
     if-eqz v6, :cond_0
 
     .line 125
-    invoke-static {v0}, Lcom/android/settings/gH;->getComponentName(Landroid/content/pm/ResolveInfo;)Landroid/content/ComponentName;
+    invoke-static {v0}, Lcom/android/settings_ext/gH;->getComponentName(Landroid/content/pm/ResolveInfo;)Landroid/content/ComponentName;
 
     move-result-object v6
 
     .line 126
-    new-instance v7, Lcom/android/settings/gG;
+    new-instance v7, Lcom/android/settings_ext/gG;
 
-    invoke-direct {v7}, Lcom/android/settings/gG;-><init>()V
+    invoke-direct {v7}, Lcom/android/settings_ext/gG;-><init>()V
 
     .line 127
     invoke-virtual {v0, v2}, Landroid/content/pm/ResolveInfo;->loadLabel(Landroid/content/pm/PackageManager;)Ljava/lang/CharSequence;
 
     move-result-object v8
 
-    iput-object v8, v7, Lcom/android/settings/gG;->label:Ljava/lang/CharSequence;
+    iput-object v8, v7, Lcom/android/settings_ext/gG;->label:Ljava/lang/CharSequence;
 
     .line 128
     invoke-virtual {v0, v2}, Landroid/content/pm/ResolveInfo;->loadIcon(Landroid/content/pm/PackageManager;)Landroid/graphics/drawable/Drawable;
 
     move-result-object v0
 
-    iput-object v0, v7, Lcom/android/settings/gG;->icon:Landroid/graphics/drawable/Drawable;
+    iput-object v0, v7, Lcom/android/settings_ext/gG;->icon:Landroid/graphics/drawable/Drawable;
 
     .line 129
-    iput-object v6, v7, Lcom/android/settings/gG;->yA:Landroid/content/ComponentName;
+    iput-object v6, v7, Lcom/android/settings_ext/gG;->yA:Landroid/content/ComponentName;
 
     .line 130
     invoke-virtual {v4, v6, v7}, Landroid/util/ArrayMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
@@ -330,12 +330,12 @@
 
     .prologue
     .line 65
-    invoke-super {p0, p1}, Lcom/android/settings/SettingsPreferenceFragment;->onCreate(Landroid/os/Bundle;)V
+    invoke-super {p0, p1}, Lcom/android/settings_ext/SettingsPreferenceFragment;->onCreate(Landroid/os/Bundle;)V
 
     .line 66
     const v0, 0x7f060093
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/TrustAgentSettings;->addPreferencesFromResource(I)V
+    invoke-virtual {p0, v0}, Lcom/android/settings_ext/TrustAgentSettings;->addPreferencesFromResource(I)V
 
     .line 67
     return-void
@@ -353,7 +353,7 @@
     if-eqz v0, :cond_3
 
     .line 138
-    iget-object v0, p0, Lcom/android/settings/TrustAgentSettings;->yy:Landroid/util/ArrayMap;
+    iget-object v0, p0, Lcom/android/settings_ext/TrustAgentSettings;->yy:Landroid/util/ArrayMap;
 
     invoke-virtual {v0}, Landroid/util/ArrayMap;->size()I
 
@@ -366,16 +366,16 @@
     if-ge v2, v3, :cond_3
 
     .line 140
-    iget-object v0, p0, Lcom/android/settings/TrustAgentSettings;->yy:Landroid/util/ArrayMap;
+    iget-object v0, p0, Lcom/android/settings_ext/TrustAgentSettings;->yy:Landroid/util/ArrayMap;
 
     invoke-virtual {v0, v2}, Landroid/util/ArrayMap;->valueAt(I)Ljava/lang/Object;
 
     move-result-object v0
 
-    check-cast v0, Lcom/android/settings/gG;
+    check-cast v0, Lcom/android/settings_ext/gG;
 
     .line 141
-    iget-object v4, v0, Lcom/android/settings/gG;->yB:Landroid/preference/SwitchPreference;
+    iget-object v4, v0, Lcom/android/settings_ext/gG;->yB:Landroid/preference/SwitchPreference;
 
     if-ne v4, p1, :cond_2
 
@@ -389,9 +389,9 @@
     if-eqz v1, :cond_1
 
     .line 143
-    iget-object v1, p0, Lcom/android/settings/TrustAgentSettings;->yz:Landroid/util/ArraySet;
+    iget-object v1, p0, Lcom/android/settings_ext/TrustAgentSettings;->yz:Landroid/util/ArraySet;
 
-    iget-object v2, v0, Lcom/android/settings/gG;->yA:Landroid/content/ComponentName;
+    iget-object v2, v0, Lcom/android/settings_ext/gG;->yA:Landroid/content/ComponentName;
 
     invoke-virtual {v1, v2}, Landroid/util/ArraySet;->contains(Ljava/lang/Object;)Z
 
@@ -400,16 +400,16 @@
     if-nez v1, :cond_0
 
     .line 144
-    iget-object v1, p0, Lcom/android/settings/TrustAgentSettings;->yz:Landroid/util/ArraySet;
+    iget-object v1, p0, Lcom/android/settings_ext/TrustAgentSettings;->yz:Landroid/util/ArraySet;
 
-    iget-object v0, v0, Lcom/android/settings/gG;->yA:Landroid/content/ComponentName;
+    iget-object v0, v0, Lcom/android/settings_ext/gG;->yA:Landroid/content/ComponentName;
 
     invoke-virtual {v1, v0}, Landroid/util/ArraySet;->add(Ljava/lang/Object;)Z
 
     .line 149
     :cond_0
     :goto_1
-    invoke-direct {p0}, Lcom/android/settings/TrustAgentSettings;->hl()V
+    invoke-direct {p0}, Lcom/android/settings_ext/TrustAgentSettings;->hl()V
 
     .line 150
     const/4 v0, 0x1
@@ -420,9 +420,9 @@
 
     .line 147
     :cond_1
-    iget-object v1, p0, Lcom/android/settings/TrustAgentSettings;->yz:Landroid/util/ArraySet;
+    iget-object v1, p0, Lcom/android/settings_ext/TrustAgentSettings;->yz:Landroid/util/ArraySet;
 
-    iget-object v0, v0, Lcom/android/settings/gG;->yA:Landroid/content/ComponentName;
+    iget-object v0, v0, Lcom/android/settings_ext/gG;->yA:Landroid/content/ComponentName;
 
     invoke-virtual {v1, v0}, Landroid/util/ArraySet;->remove(Ljava/lang/Object;)Z
 
@@ -448,10 +448,10 @@
 
     .prologue
     .line 70
-    invoke-super {p0}, Lcom/android/settings/SettingsPreferenceFragment;->onResume()V
+    invoke-super {p0}, Lcom/android/settings_ext/SettingsPreferenceFragment;->onResume()V
 
     .line 71
-    invoke-direct {p0}, Lcom/android/settings/TrustAgentSettings;->hj()V
+    invoke-direct {p0}, Lcom/android/settings_ext/TrustAgentSettings;->hj()V
 
     .line 72
     return-void

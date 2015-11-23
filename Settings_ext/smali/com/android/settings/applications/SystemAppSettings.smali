@@ -1,5 +1,5 @@
-.class public Lcom/android/settings/applications/SystemAppSettings;
-.super Lcom/android/settings/BaseListFragment;
+.class public Lcom/android/settings_ext/applications/SystemAppSettings;
+.super Lcom/android/settings_ext/BaseListFragment;
 .source "SystemAppSettings.java"
 
 
@@ -8,9 +8,9 @@
 
 
 # instance fields
-.field private Lw:Lcom/android/settings/applications/SystemAppSettings$LoadIconTask;
+.field private Lw:Lcom/android/settings_ext/applications/SystemAppSettings$LoadIconTask;
 
-.field private Lx:Lcom/android/settings/applications/SystemAppSettings$HeaderAdapter;
+.field private Lx:Lcom/android/settings_ext/applications/SystemAppSettings$HeaderAdapter;
 
 .field private mActivity:Landroid/app/Activity;
 
@@ -25,7 +25,7 @@
 
     invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
 
-    sput-object v0, Lcom/android/settings/applications/SystemAppSettings;->Lv:Ljava/util/HashMap;
+    sput-object v0, Lcom/android/settings_ext/applications/SystemAppSettings;->Lv:Ljava/util/HashMap;
 
     return-void
 .end method
@@ -35,18 +35,18 @@
 
     .prologue
     .line 38
-    invoke-direct {p0}, Lcom/android/settings/BaseListFragment;-><init>()V
+    invoke-direct {p0}, Lcom/android/settings_ext/BaseListFragment;-><init>()V
 
     .line 221
     return-void
 .end method
 
-.method static synthetic a(Lcom/android/settings/applications/SystemAppSettings;)Landroid/app/Activity;
+.method static synthetic a(Lcom/android/settings_ext/applications/SystemAppSettings;)Landroid/app/Activity;
     .locals 1
 
     .prologue
     .line 38
-    iget-object v0, p0, Lcom/android/settings/applications/SystemAppSettings;->mActivity:Landroid/app/Activity;
+    iget-object v0, p0, Lcom/android/settings_ext/applications/SystemAppSettings;->mActivity:Landroid/app/Activity;
 
     return-object v0
 .end method
@@ -56,7 +56,7 @@
 
     .prologue
     .line 38
-    sput-object p0, Lcom/android/settings/applications/SystemAppSettings;->Lv:Ljava/util/HashMap;
+    sput-object p0, Lcom/android/settings_ext/applications/SystemAppSettings;->Lv:Ljava/util/HashMap;
 
     return-object p0
 .end method
@@ -129,7 +129,7 @@
 
     .prologue
     .line 38
-    sget-object v0, Lcom/android/settings/applications/SystemAppSettings;->Lv:Ljava/util/HashMap;
+    sget-object v0, Lcom/android/settings_ext/applications/SystemAppSettings;->Lv:Ljava/util/HashMap;
 
     return-object v0
 .end method
@@ -139,7 +139,7 @@
 
     .prologue
     .line 38
-    invoke-static {p0, p1}, Lcom/android/settings/applications/SystemAppSettings;->a(Landroid/content/Context;Landroid/preference/PreferenceActivity$Header;)V
+    invoke-static {p0, p1}, Lcom/android/settings_ext/applications/SystemAppSettings;->a(Landroid/content/Context;Landroid/preference/PreferenceActivity$Header;)V
 
     return-void
 .end method
@@ -151,7 +151,7 @@
     const/4 v8, 0x0
 
     .line 70
-    iget-object v0, p0, Lcom/android/settings/applications/SystemAppSettings;->mActivity:Landroid/app/Activity;
+    iget-object v0, p0, Lcom/android/settings_ext/applications/SystemAppSettings;->mActivity:Landroid/app/Activity;
 
     invoke-virtual {v0}, Landroid/app/Activity;->getPackageManager()Landroid/content/pm/PackageManager;
 
@@ -180,7 +180,7 @@
     invoke-direct {v3}, Ljava/util/ArrayList;-><init>()V
 
     .line 76
-    iget-object v4, p0, Lcom/android/settings/applications/SystemAppSettings;->mActivity:Landroid/app/Activity;
+    iget-object v4, p0, Lcom/android/settings_ext/applications/SystemAppSettings;->mActivity:Landroid/app/Activity;
 
     invoke-static {v4}, Lmiui/payment/PaymentManager;->get(Landroid/content/Context;)Lmiui/payment/PaymentManager;
 
@@ -234,7 +234,7 @@
     .line 85
     const v6, 0x7f090c86
 
-    invoke-virtual {p0, v6}, Lcom/android/settings/applications/SystemAppSettings;->getString(I)Ljava/lang/String;
+    invoke-virtual {p0, v6}, Lcom/android/settings_ext/applications/SystemAppSettings;->getString(I)Ljava/lang/String;
 
     move-result-object v6
 
@@ -298,7 +298,7 @@
     invoke-interface {v3, v6}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
     .line 101
-    sget-object v1, Lcom/android/settings/applications/SystemAppSettings;->Lv:Ljava/util/HashMap;
+    sget-object v1, Lcom/android/settings_ext/applications/SystemAppSettings;->Lv:Ljava/util/HashMap;
 
     iget-object v7, v0, Landroid/content/pm/ResolveInfo;->activityInfo:Landroid/content/pm/ActivityInfo;
 
@@ -311,7 +311,7 @@
     if-nez v1, :cond_2
 
     .line 102
-    sget-object v1, Lcom/android/settings/applications/SystemAppSettings;->Lv:Ljava/util/HashMap;
+    sget-object v1, Lcom/android/settings_ext/applications/SystemAppSettings;->Lv:Ljava/util/HashMap;
 
     iget-object v7, v0, Landroid/content/pm/ResolveInfo;->activityInfo:Landroid/content/pm/ActivityInfo;
 
@@ -357,23 +357,23 @@
 
     .line 113
     :cond_4
-    iget-object v0, p0, Lcom/android/settings/applications/SystemAppSettings;->Lw:Lcom/android/settings/applications/SystemAppSettings$LoadIconTask;
+    iget-object v0, p0, Lcom/android/settings_ext/applications/SystemAppSettings;->Lw:Lcom/android/settings_ext/applications/SystemAppSettings$LoadIconTask;
 
     if-nez v0, :cond_5
 
     .line 114
-    new-instance v0, Lcom/android/settings/applications/SystemAppSettings$LoadIconTask;
+    new-instance v0, Lcom/android/settings_ext/applications/SystemAppSettings$LoadIconTask;
 
-    invoke-direct {v0, p0}, Lcom/android/settings/applications/SystemAppSettings$LoadIconTask;-><init>(Lcom/android/settings/applications/SystemAppSettings;)V
+    invoke-direct {v0, p0}, Lcom/android/settings_ext/applications/SystemAppSettings$LoadIconTask;-><init>(Lcom/android/settings_ext/applications/SystemAppSettings;)V
 
-    iput-object v0, p0, Lcom/android/settings/applications/SystemAppSettings;->Lw:Lcom/android/settings/applications/SystemAppSettings$LoadIconTask;
+    iput-object v0, p0, Lcom/android/settings_ext/applications/SystemAppSettings;->Lw:Lcom/android/settings_ext/applications/SystemAppSettings$LoadIconTask;
 
     .line 115
-    iget-object v0, p0, Lcom/android/settings/applications/SystemAppSettings;->Lw:Lcom/android/settings/applications/SystemAppSettings$LoadIconTask;
+    iget-object v0, p0, Lcom/android/settings_ext/applications/SystemAppSettings;->Lw:Lcom/android/settings_ext/applications/SystemAppSettings$LoadIconTask;
 
     new-array v1, v8, [Ljava/lang/Void;
 
-    invoke-virtual {v0, v1}, Lcom/android/settings/applications/SystemAppSettings$LoadIconTask;->execute([Ljava/lang/Object;)Landroid/os/AsyncTask;
+    invoke-virtual {v0, v1}, Lcom/android/settings_ext/applications/SystemAppSettings$LoadIconTask;->execute([Ljava/lang/Object;)Landroid/os/AsyncTask;
 
     .line 117
     :cond_5
@@ -387,14 +387,14 @@
 
     .prologue
     .line 50
-    invoke-super {p0, p1}, Lcom/android/settings/BaseListFragment;->onCreate(Landroid/os/Bundle;)V
+    invoke-super {p0, p1}, Lcom/android/settings_ext/BaseListFragment;->onCreate(Landroid/os/Bundle;)V
 
     .line 51
-    invoke-virtual {p0}, Lcom/android/settings/applications/SystemAppSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/applications/SystemAppSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/applications/SystemAppSettings;->mActivity:Landroid/app/Activity;
+    iput-object v0, p0, Lcom/android/settings_ext/applications/SystemAppSettings;->mActivity:Landroid/app/Activity;
 
     .line 52
     new-instance v0, Ljava/util/ArrayList;
@@ -404,21 +404,21 @@
     .line 53
     const/4 v1, 0x0
 
-    invoke-direct {p0, v0, v1}, Lcom/android/settings/applications/SystemAppSettings;->c(Ljava/util/List;I)I
+    invoke-direct {p0, v0, v1}, Lcom/android/settings_ext/applications/SystemAppSettings;->c(Ljava/util/List;I)I
 
     .line 54
-    new-instance v1, Lcom/android/settings/applications/SystemAppSettings$HeaderAdapter;
+    new-instance v1, Lcom/android/settings_ext/applications/SystemAppSettings$HeaderAdapter;
 
-    iget-object v2, p0, Lcom/android/settings/applications/SystemAppSettings;->mActivity:Landroid/app/Activity;
+    iget-object v2, p0, Lcom/android/settings_ext/applications/SystemAppSettings;->mActivity:Landroid/app/Activity;
 
-    invoke-direct {v1, v2, v0}, Lcom/android/settings/applications/SystemAppSettings$HeaderAdapter;-><init>(Landroid/content/Context;Ljava/util/List;)V
+    invoke-direct {v1, v2, v0}, Lcom/android/settings_ext/applications/SystemAppSettings$HeaderAdapter;-><init>(Landroid/content/Context;Ljava/util/List;)V
 
-    iput-object v1, p0, Lcom/android/settings/applications/SystemAppSettings;->Lx:Lcom/android/settings/applications/SystemAppSettings$HeaderAdapter;
+    iput-object v1, p0, Lcom/android/settings_ext/applications/SystemAppSettings;->Lx:Lcom/android/settings_ext/applications/SystemAppSettings$HeaderAdapter;
 
     .line 55
-    iget-object v0, p0, Lcom/android/settings/applications/SystemAppSettings;->Lx:Lcom/android/settings/applications/SystemAppSettings$HeaderAdapter;
+    iget-object v0, p0, Lcom/android/settings_ext/applications/SystemAppSettings;->Lx:Lcom/android/settings_ext/applications/SystemAppSettings$HeaderAdapter;
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/applications/SystemAppSettings;->setListAdapter(Landroid/widget/ListAdapter;)V
+    invoke-virtual {p0, v0}, Lcom/android/settings_ext/applications/SystemAppSettings;->setListAdapter(Landroid/widget/ListAdapter;)V
 
     .line 56
     return-void
@@ -429,12 +429,12 @@
 
     .prologue
     .line 60
-    invoke-super/range {p0 .. p5}, Lcom/android/settings/BaseListFragment;->onListItemClick(Landroid/widget/ListView;Landroid/view/View;IJ)V
+    invoke-super/range {p0 .. p5}, Lcom/android/settings_ext/BaseListFragment;->onListItemClick(Landroid/widget/ListView;Landroid/view/View;IJ)V
 
     .line 61
-    iget-object v0, p0, Lcom/android/settings/applications/SystemAppSettings;->Lx:Lcom/android/settings/applications/SystemAppSettings$HeaderAdapter;
+    iget-object v0, p0, Lcom/android/settings_ext/applications/SystemAppSettings;->Lx:Lcom/android/settings_ext/applications/SystemAppSettings$HeaderAdapter;
 
-    invoke-virtual {v0, p3}, Lcom/android/settings/applications/SystemAppSettings$HeaderAdapter;->getItem(I)Ljava/lang/Object;
+    invoke-virtual {v0, p3}, Lcom/android/settings_ext/applications/SystemAppSettings$HeaderAdapter;->getItem(I)Ljava/lang/Object;
 
     move-result-object v0
 
@@ -450,13 +450,13 @@
     if-nez v1, :cond_1
 
     .line 63
-    iget-object v0, p0, Lcom/android/settings/applications/SystemAppSettings;->mActivity:Landroid/app/Activity;
+    iget-object v0, p0, Lcom/android/settings_ext/applications/SystemAppSettings;->mActivity:Landroid/app/Activity;
 
     invoke-static {v0}, Lmiui/payment/PaymentManager;->get(Landroid/content/Context;)Lmiui/payment/PaymentManager;
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/android/settings/applications/SystemAppSettings;->mActivity:Landroid/app/Activity;
+    iget-object v1, p0, Lcom/android/settings_ext/applications/SystemAppSettings;->mActivity:Landroid/app/Activity;
 
     invoke-virtual {v0, v1}, Lmiui/payment/PaymentManager;->gotoMiliCenter(Landroid/app/Activity;)V
 
@@ -474,7 +474,7 @@
     .line 65
     iget-object v0, v0, Landroid/preference/PreferenceActivity$Header;->intent:Landroid/content/Intent;
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/applications/SystemAppSettings;->startActivity(Landroid/content/Intent;)V
+    invoke-virtual {p0, v0}, Lcom/android/settings_ext/applications/SystemAppSettings;->startActivity(Landroid/content/Intent;)V
 
     goto :goto_0
 .end method

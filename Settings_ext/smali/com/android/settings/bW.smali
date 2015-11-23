@@ -1,19 +1,19 @@
-.class Lcom/android/settings/bW;
+.class Lcom/android/settings_ext/bW;
 .super Lcom/android/internal/view/RotationPolicy$RotationPolicyListener;
 .source "DisplaySettings.java"
 
 
 # instance fields
-.field final synthetic ke:Lcom/android/settings/DisplaySettings;
+.field final synthetic ke:Lcom/android/settings_ext/DisplaySettings;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/DisplaySettings;)V
+.method constructor <init>(Lcom/android/settings_ext/DisplaySettings;)V
     .locals 0
 
     .prologue
     .line 579
-    iput-object p1, p0, Lcom/android/settings/bW;->ke:Lcom/android/settings/DisplaySettings;
+    iput-object p1, p0, Lcom/android/settings_ext/bW;->ke:Lcom/android/settings_ext/DisplaySettings;
 
     invoke-direct {p0}, Lcom/android/internal/view/RotationPolicy$RotationPolicyListener;-><init>()V
 
@@ -27,9 +27,9 @@
 
     .prologue
     .line 582
-    iget-object v0, p0, Lcom/android/settings/bW;->ke:Lcom/android/settings/DisplaySettings;
+    iget-object v0, p0, Lcom/android/settings_ext/bW;->ke:Lcom/android/settings_ext/DisplaySettings;
 
-    invoke-static {v0}, Lcom/android/settings/DisplaySettings;->b(Lcom/android/settings/DisplaySettings;)V
+    invoke-static {v0}, Lcom/android/settings_ext/DisplaySettings;->b(Lcom/android/settings_ext/DisplaySettings;)V
 
     .line 583
     return-void

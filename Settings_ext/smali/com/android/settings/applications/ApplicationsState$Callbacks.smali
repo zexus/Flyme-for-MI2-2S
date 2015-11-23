@@ -1,4 +1,4 @@
-.class public interface abstract Lcom/android/settings/applications/ApplicationsState$Callbacks;
+.class public interface abstract Lcom/android/settings_ext/applications/ApplicationsState$Callbacks;
 .super Ljava/lang/Object;
 .source "ApplicationsState.java"
 

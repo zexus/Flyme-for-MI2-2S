@@ -1,22 +1,22 @@
-.class Lcom/android/settings/cE;
+.class Lcom/android/settings_ext/cE;
 .super Ljava/lang/Object;
 .source "HeadsetSettings.java"
 
 # interfaces
-.implements Lcom/android/settings/eN;
+.implements Lcom/android/settings_ext/eN;
 
 
 # instance fields
-.field final synthetic mq:Lcom/android/settings/HeadsetSettings;
+.field final synthetic mq:Lcom/android/settings_ext/HeadsetSettings;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/HeadsetSettings;)V
+.method constructor <init>(Lcom/android/settings_ext/HeadsetSettings;)V
     .locals 0
 
     .prologue
     .line 305
-    iput-object p1, p0, Lcom/android/settings/cE;->mq:Lcom/android/settings/HeadsetSettings;
+    iput-object p1, p0, Lcom/android/settings_ext/cE;->mq:Lcom/android/settings_ext/HeadsetSettings;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -30,16 +30,16 @@
 
     .prologue
     .line 309
-    iget-object v0, p0, Lcom/android/settings/cE;->mq:Lcom/android/settings/HeadsetSettings;
+    iget-object v0, p0, Lcom/android/settings_ext/cE;->mq:Lcom/android/settings_ext/HeadsetSettings;
 
     const/4 v1, 0x1
 
-    invoke-static {v0, v1}, Lcom/android/settings/HeadsetSettings;->a(Lcom/android/settings/HeadsetSettings;Z)Z
+    invoke-static {v0, v1}, Lcom/android/settings_ext/HeadsetSettings;->a(Lcom/android/settings_ext/HeadsetSettings;Z)Z
 
     .line 310
-    iget-object v0, p0, Lcom/android/settings/cE;->mq:Lcom/android/settings/HeadsetSettings;
+    iget-object v0, p0, Lcom/android/settings_ext/cE;->mq:Lcom/android/settings_ext/HeadsetSettings;
 
-    invoke-static {v0}, Lcom/android/settings/HeadsetSettings;->b(Lcom/android/settings/HeadsetSettings;)V
+    invoke-static {v0}, Lcom/android/settings_ext/HeadsetSettings;->b(Lcom/android/settings_ext/HeadsetSettings;)V
 
     .line 311
     return-void
@@ -50,11 +50,11 @@
 
     .prologue
     .line 315
-    iget-object v0, p0, Lcom/android/settings/cE;->mq:Lcom/android/settings/HeadsetSettings;
+    iget-object v0, p0, Lcom/android/settings_ext/cE;->mq:Lcom/android/settings_ext/HeadsetSettings;
 
     const/4 v1, 0x0
 
-    invoke-static {v0, v1}, Lcom/android/settings/HeadsetSettings;->a(Lcom/android/settings/HeadsetSettings;Z)Z
+    invoke-static {v0, v1}, Lcom/android/settings_ext/HeadsetSettings;->a(Lcom/android/settings_ext/HeadsetSettings;Z)Z
 
     .line 316
     return-void

@@ -1,5 +1,5 @@
-.class Lcom/android/settings/location/RecentLocationApps$AccessiblePreference;
-.super Lcom/android/settings/location/DimmableIconPreference;
+.class Lcom/android/settings_ext/location/RecentLocationApps$AccessiblePreference;
+.super Lcom/android/settings_ext/location/DimmableIconPreference;
 .source "RecentLocationApps.java"
 
 
@@ -13,10 +13,10 @@
 
     .prologue
     .line 102
-    invoke-direct {p0, p1}, Lcom/android/settings/location/DimmableIconPreference;-><init>(Landroid/content/Context;)V
+    invoke-direct {p0, p1}, Lcom/android/settings_ext/location/DimmableIconPreference;-><init>(Landroid/content/Context;)V
 
     .line 103
-    iput-object p2, p0, Lcom/android/settings/location/RecentLocationApps$AccessiblePreference;->mContentDescription:Ljava/lang/CharSequence;
+    iput-object p2, p0, Lcom/android/settings_ext/location/RecentLocationApps$AccessiblePreference;->mContentDescription:Ljava/lang/CharSequence;
 
     .line 104
     return-void
@@ -29,10 +29,10 @@
 
     .prologue
     .line 108
-    invoke-super {p0, p1}, Lcom/android/settings/location/DimmableIconPreference;->onBindView(Landroid/view/View;)V
+    invoke-super {p0, p1}, Lcom/android/settings_ext/location/DimmableIconPreference;->onBindView(Landroid/view/View;)V
 
     .line 109
-    iget-object v0, p0, Lcom/android/settings/location/RecentLocationApps$AccessiblePreference;->mContentDescription:Ljava/lang/CharSequence;
+    iget-object v0, p0, Lcom/android/settings_ext/location/RecentLocationApps$AccessiblePreference;->mContentDescription:Ljava/lang/CharSequence;
 
     if-eqz v0, :cond_0
 
@@ -46,7 +46,7 @@
     check-cast v0, Landroid/widget/TextView;
 
     .line 111
-    iget-object v1, p0, Lcom/android/settings/location/RecentLocationApps$AccessiblePreference;->mContentDescription:Ljava/lang/CharSequence;
+    iget-object v1, p0, Lcom/android/settings_ext/location/RecentLocationApps$AccessiblePreference;->mContentDescription:Ljava/lang/CharSequence;
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setContentDescription(Ljava/lang/CharSequence;)V
 

@@ -1,4 +1,4 @@
-.class final Lcom/android/settings/applications/ProcessStatsDetail$2;
+.class final Lcom/android/settings_ext/applications/ProcessStatsDetail$2;
 .super Ljava/lang/Object;
 .source "ProcessStatsDetail.java"
 
@@ -38,9 +38,9 @@
 
     move-result-object v0
 
-    check-cast v0, Lcom/android/settings/applications/ProcStatsEntry$Service;
+    check-cast v0, Lcom/android/settings_ext/applications/ProcStatsEntry$Service;
 
-    iget-wide v0, v0, Lcom/android/settings/applications/ProcStatsEntry$Service;->mDuration:J
+    iget-wide v0, v0, Lcom/android/settings_ext/applications/ProcStatsEntry$Service;->mDuration:J
 
     move-wide v2, v0
 
@@ -56,9 +56,9 @@
 
     move-result-object v0
 
-    check-cast v0, Lcom/android/settings/applications/ProcStatsEntry$Service;
+    check-cast v0, Lcom/android/settings_ext/applications/ProcStatsEntry$Service;
 
-    iget-wide v4, v0, Lcom/android/settings/applications/ProcStatsEntry$Service;->mDuration:J
+    iget-wide v4, v0, Lcom/android/settings_ext/applications/ProcStatsEntry$Service;->mDuration:J
 
     .line 230
     :cond_0
@@ -106,7 +106,7 @@
 
     check-cast p2, Ljava/util/ArrayList;
 
-    invoke-virtual {p0, p1, p2}, Lcom/android/settings/applications/ProcessStatsDetail$2;->a(Ljava/util/ArrayList;Ljava/util/ArrayList;)I
+    invoke-virtual {p0, p1, p2}, Lcom/android/settings_ext/applications/ProcessStatsDetail$2;->a(Ljava/util/ArrayList;Ljava/util/ArrayList;)I
 
     move-result v0
 

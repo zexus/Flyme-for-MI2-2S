@@ -1,5 +1,5 @@
-.class public Lcom/android/settings/UsageAccessSettings;
-.super Lcom/android/settings/SettingsPreferenceFragment;
+.class public Lcom/android/settings_ext/UsageAccessSettings;
+.super Lcom/android/settings_ext/SettingsPreferenceFragment;
 .source "UsageAccessSettings.java"
 
 # interfaces
@@ -15,7 +15,7 @@
 # instance fields
 .field mAppOpsManager:Landroid/app/AppOpsManager;
 
-.field private yX:Lcom/android/settings/ha;
+.field private yX:Lcom/android/settings_ext/ha;
 
 .field yY:Landroid/util/ArrayMap;
 
@@ -40,7 +40,7 @@
 
     aput-object v1, v0, v2
 
-    sput-object v0, Lcom/android/settings/UsageAccessSettings;->yV:[Ljava/lang/String;
+    sput-object v0, Lcom/android/settings_ext/UsageAccessSettings;->yV:[Ljava/lang/String;
 
     .line 56
     new-array v0, v3, [I
@@ -49,7 +49,7 @@
 
     aput v1, v0, v2
 
-    sput-object v0, Lcom/android/settings/UsageAccessSettings;->yW:[I
+    sput-object v0, Lcom/android/settings_ext/UsageAccessSettings;->yW:[I
 
     return-void
 .end method
@@ -59,21 +59,21 @@
 
     .prologue
     .line 47
-    invoke-direct {p0}, Lcom/android/settings/SettingsPreferenceFragment;-><init>()V
+    invoke-direct {p0}, Lcom/android/settings_ext/SettingsPreferenceFragment;-><init>()V
 
     .line 252
     new-instance v0, Landroid/util/ArrayMap;
 
     invoke-direct {v0}, Landroid/util/ArrayMap;-><init>()V
 
-    iput-object v0, p0, Lcom/android/settings/UsageAccessSettings;->yY:Landroid/util/ArrayMap;
+    iput-object v0, p0, Lcom/android/settings_ext/UsageAccessSettings;->yY:Landroid/util/ArrayMap;
 
     .line 354
-    new-instance v0, Lcom/android/settings/gZ;
+    new-instance v0, Lcom/android/settings_ext/gZ;
 
-    invoke-direct {v0, p0}, Lcom/android/settings/gZ;-><init>(Lcom/android/settings/UsageAccessSettings;)V
+    invoke-direct {v0, p0}, Lcom/android/settings_ext/gZ;-><init>(Lcom/android/settings_ext/UsageAccessSettings;)V
 
-    iput-object v0, p0, Lcom/android/settings/UsageAccessSettings;->za:Lcom/android/internal/content/PackageMonitor;
+    iput-object v0, p0, Lcom/android/settings_ext/UsageAccessSettings;->za:Lcom/android/internal/content/PackageMonitor;
 
     .line 366
     return-void
@@ -112,22 +112,22 @@
     goto :goto_0
 .end method
 
-.method static synthetic a(Lcom/android/settings/UsageAccessSettings;Lcom/android/settings/ha;)Lcom/android/settings/ha;
+.method static synthetic a(Lcom/android/settings_ext/UsageAccessSettings;Lcom/android/settings_ext/ha;)Lcom/android/settings_ext/ha;
     .locals 0
 
     .prologue
     .line 47
-    iput-object p1, p0, Lcom/android/settings/UsageAccessSettings;->yX:Lcom/android/settings/ha;
+    iput-object p1, p0, Lcom/android/settings_ext/UsageAccessSettings;->yX:Lcom/android/settings_ext/ha;
 
     return-object p1
 .end method
 
-.method static synthetic a(Lcom/android/settings/UsageAccessSettings;)V
+.method static synthetic a(Lcom/android/settings_ext/UsageAccessSettings;)V
     .locals 0
 
     .prologue
     .line 47
-    invoke-direct {p0}, Lcom/android/settings/UsageAccessSettings;->ho()V
+    invoke-direct {p0}, Lcom/android/settings_ext/UsageAccessSettings;->ho()V
 
     return-void
 .end method
@@ -137,7 +137,7 @@
 
     .prologue
     .line 47
-    sget-object v0, Lcom/android/settings/UsageAccessSettings;->yV:[Ljava/lang/String;
+    sget-object v0, Lcom/android/settings_ext/UsageAccessSettings;->yV:[Ljava/lang/String;
 
     return-object v0
 .end method
@@ -147,7 +147,7 @@
 
     .prologue
     .line 47
-    sget-object v0, Lcom/android/settings/UsageAccessSettings;->yW:[I
+    sget-object v0, Lcom/android/settings_ext/UsageAccessSettings;->yW:[I
 
     return-object v0
 .end method
@@ -157,37 +157,37 @@
 
     .prologue
     .line 286
-    iget-object v0, p0, Lcom/android/settings/UsageAccessSettings;->yX:Lcom/android/settings/ha;
+    iget-object v0, p0, Lcom/android/settings_ext/UsageAccessSettings;->yX:Lcom/android/settings_ext/ha;
 
     if-eqz v0, :cond_0
 
     .line 291
-    iget-object v0, p0, Lcom/android/settings/UsageAccessSettings;->yX:Lcom/android/settings/ha;
+    iget-object v0, p0, Lcom/android/settings_ext/UsageAccessSettings;->yX:Lcom/android/settings_ext/ha;
 
     const/4 v1, 0x1
 
-    invoke-virtual {v0, v1}, Lcom/android/settings/ha;->cancel(Z)Z
+    invoke-virtual {v0, v1}, Lcom/android/settings_ext/ha;->cancel(Z)Z
 
     .line 294
     :cond_0
-    new-instance v0, Lcom/android/settings/ha;
+    new-instance v0, Lcom/android/settings_ext/ha;
 
-    invoke-virtual {p0}, Lcom/android/settings/UsageAccessSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/UsageAccessSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v1
 
-    invoke-direct {v0, p0, v1}, Lcom/android/settings/ha;-><init>(Lcom/android/settings/UsageAccessSettings;Landroid/content/Context;)V
+    invoke-direct {v0, p0, v1}, Lcom/android/settings_ext/ha;-><init>(Lcom/android/settings_ext/UsageAccessSettings;Landroid/content/Context;)V
 
-    iput-object v0, p0, Lcom/android/settings/UsageAccessSettings;->yX:Lcom/android/settings/ha;
+    iput-object v0, p0, Lcom/android/settings_ext/UsageAccessSettings;->yX:Lcom/android/settings_ext/ha;
 
     .line 295
-    iget-object v0, p0, Lcom/android/settings/UsageAccessSettings;->yX:Lcom/android/settings/ha;
+    iget-object v0, p0, Lcom/android/settings_ext/UsageAccessSettings;->yX:Lcom/android/settings_ext/ha;
 
     const/4 v1, 0x0
 
     new-array v1, v1, [Ljava/lang/Void;
 
-    invoke-virtual {v0, v1}, Lcom/android/settings/ha;->execute([Ljava/lang/Object;)Landroid/os/AsyncTask;
+    invoke-virtual {v0, v1}, Lcom/android/settings_ext/ha;->execute([Ljava/lang/Object;)Landroid/os/AsyncTask;
 
     .line 296
     return-void
@@ -200,13 +200,13 @@
 
     .prologue
     .line 344
-    iget-object v0, p0, Lcom/android/settings/UsageAccessSettings;->yY:Landroid/util/ArrayMap;
+    iget-object v0, p0, Lcom/android/settings_ext/UsageAccessSettings;->yY:Landroid/util/ArrayMap;
 
     invoke-virtual {v0, p1}, Landroid/util/ArrayMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v0
 
-    check-cast v0, Lcom/android/settings/hb;
+    check-cast v0, Lcom/android/settings_ext/hb;
 
     .line 345
     if-nez v0, :cond_0
@@ -248,10 +248,10 @@
     :cond_0
     const/4 v1, 0x0
 
-    invoke-virtual {p0, v0, v1}, Lcom/android/settings/UsageAccessSettings;->a(Lcom/android/settings/hb;I)V
+    invoke-virtual {p0, v0, v1}, Lcom/android/settings_ext/UsageAccessSettings;->a(Lcom/android/settings_ext/hb;I)V
 
     .line 351
-    iget-object v0, v0, Lcom/android/settings/hb;->zg:Landroid/preference/CheckBoxPreference;
+    iget-object v0, v0, Lcom/android/settings_ext/hb;->zg:Landroid/preference/CheckBoxPreference;
 
     const/4 v1, 0x1
 
@@ -260,27 +260,27 @@
     goto :goto_0
 .end method
 
-.method a(Lcom/android/settings/hb;I)V
+.method a(Lcom/android/settings_ext/hb;I)V
     .locals 4
 
     .prologue
     .line 338
-    iget-object v0, p0, Lcom/android/settings/UsageAccessSettings;->mAppOpsManager:Landroid/app/AppOpsManager;
+    iget-object v0, p0, Lcom/android/settings_ext/UsageAccessSettings;->mAppOpsManager:Landroid/app/AppOpsManager;
 
     const/16 v1, 0x3a
 
-    iget-object v2, p1, Lcom/android/settings/hb;->zd:Landroid/content/pm/PackageInfo;
+    iget-object v2, p1, Lcom/android/settings_ext/hb;->zd:Landroid/content/pm/PackageInfo;
 
     iget-object v2, v2, Landroid/content/pm/PackageInfo;->applicationInfo:Landroid/content/pm/ApplicationInfo;
 
     iget v2, v2, Landroid/content/pm/ApplicationInfo;->uid:I
 
-    iget-object v3, p1, Lcom/android/settings/hb;->packageName:Ljava/lang/String;
+    iget-object v3, p1, Lcom/android/settings_ext/hb;->packageName:Ljava/lang/String;
 
     invoke-virtual {v0, v1, v2, v3, p2}, Landroid/app/AppOpsManager;->setMode(IILjava/lang/String;I)V
 
     .line 340
-    iput p2, p1, Lcom/android/settings/hb;->zf:I
+    iput p2, p1, Lcom/android/settings_ext/hb;->zf:I
 
     .line 341
     return-void
@@ -291,22 +291,22 @@
 
     .prologue
     .line 258
-    invoke-super {p0, p1}, Lcom/android/settings/SettingsPreferenceFragment;->onCreate(Landroid/os/Bundle;)V
+    invoke-super {p0, p1}, Lcom/android/settings_ext/SettingsPreferenceFragment;->onCreate(Landroid/os/Bundle;)V
 
     .line 260
     const v0, 0x7f060097
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/UsageAccessSettings;->addPreferencesFromResource(I)V
+    invoke-virtual {p0, v0}, Lcom/android/settings_ext/UsageAccessSettings;->addPreferencesFromResource(I)V
 
     .line 261
-    invoke-virtual {p0}, Lcom/android/settings/UsageAccessSettings;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
+    invoke-virtual {p0}, Lcom/android/settings_ext/UsageAccessSettings;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/UsageAccessSettings;->yZ:Landroid/preference/PreferenceScreen;
+    iput-object v0, p0, Lcom/android/settings_ext/UsageAccessSettings;->yZ:Landroid/preference/PreferenceScreen;
 
     .line 262
-    iget-object v0, p0, Lcom/android/settings/UsageAccessSettings;->yZ:Landroid/preference/PreferenceScreen;
+    iget-object v0, p0, Lcom/android/settings_ext/UsageAccessSettings;->yZ:Landroid/preference/PreferenceScreen;
 
     const/4 v1, 0x0
 
@@ -315,13 +315,13 @@
     .line 263
     const-string v0, "appops"
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/UsageAccessSettings;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
+    invoke-virtual {p0, v0}, Lcom/android/settings_ext/UsageAccessSettings;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object v0
 
     check-cast v0, Landroid/app/AppOpsManager;
 
-    iput-object v0, p0, Lcom/android/settings/UsageAccessSettings;->mAppOpsManager:Landroid/app/AppOpsManager;
+    iput-object v0, p0, Lcom/android/settings_ext/UsageAccessSettings;->mAppOpsManager:Landroid/app/AppOpsManager;
 
     .line 264
     return-void
@@ -332,29 +332,29 @@
 
     .prologue
     .line 276
-    invoke-super {p0}, Lcom/android/settings/SettingsPreferenceFragment;->onPause()V
+    invoke-super {p0}, Lcom/android/settings_ext/SettingsPreferenceFragment;->onPause()V
 
     .line 278
-    iget-object v0, p0, Lcom/android/settings/UsageAccessSettings;->za:Lcom/android/internal/content/PackageMonitor;
+    iget-object v0, p0, Lcom/android/settings_ext/UsageAccessSettings;->za:Lcom/android/internal/content/PackageMonitor;
 
     invoke-virtual {v0}, Lcom/android/internal/content/PackageMonitor;->unregister()V
 
     .line 279
-    iget-object v0, p0, Lcom/android/settings/UsageAccessSettings;->yX:Lcom/android/settings/ha;
+    iget-object v0, p0, Lcom/android/settings_ext/UsageAccessSettings;->yX:Lcom/android/settings_ext/ha;
 
     if-eqz v0, :cond_0
 
     .line 280
-    iget-object v0, p0, Lcom/android/settings/UsageAccessSettings;->yX:Lcom/android/settings/ha;
+    iget-object v0, p0, Lcom/android/settings_ext/UsageAccessSettings;->yX:Lcom/android/settings_ext/ha;
 
     const/4 v1, 0x1
 
-    invoke-virtual {v0, v1}, Lcom/android/settings/ha;->cancel(Z)Z
+    invoke-virtual {v0, v1}, Lcom/android/settings_ext/ha;->cancel(Z)Z
 
     .line 281
     const/4 v0, 0x0
 
-    iput-object v0, p0, Lcom/android/settings/UsageAccessSettings;->yX:Lcom/android/settings/ha;
+    iput-object v0, p0, Lcom/android/settings_ext/UsageAccessSettings;->yX:Lcom/android/settings_ext/ha;
 
     .line 283
     :cond_0
@@ -375,13 +375,13 @@
     move-result-object v1
 
     .line 301
-    iget-object v0, p0, Lcom/android/settings/UsageAccessSettings;->yY:Landroid/util/ArrayMap;
+    iget-object v0, p0, Lcom/android/settings_ext/UsageAccessSettings;->yY:Landroid/util/ArrayMap;
 
     invoke-virtual {v0, v1}, Landroid/util/ArrayMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v0
 
-    check-cast v0, Lcom/android/settings/hb;
+    check-cast v0, Lcom/android/settings_ext/hb;
 
     .line 302
     if-nez v0, :cond_0
@@ -482,7 +482,7 @@
 
     .line 318
     :goto_1
-    iget v4, v0, Lcom/android/settings/hb;->zf:I
+    iget v4, v0, Lcom/android/settings_ext/hb;->zf:I
 
     if-eq v4, v1, :cond_5
 
@@ -490,7 +490,7 @@
     if-eqz v1, :cond_3
 
     .line 321
-    invoke-virtual {p0, v0, v1}, Lcom/android/settings/UsageAccessSettings;->a(Lcom/android/settings/hb;I)V
+    invoke-virtual {p0, v0, v1}, Lcom/android/settings_ext/UsageAccessSettings;->a(Lcom/android/settings_ext/hb;I)V
 
     move v2, v3
 
@@ -505,7 +505,7 @@
 
     .line 326
     :cond_3
-    invoke-virtual {p0}, Lcom/android/settings/UsageAccessSettings;->getChildFragmentManager()Landroid/app/FragmentManager;
+    invoke-virtual {p0}, Lcom/android/settings_ext/UsageAccessSettings;->getChildFragmentManager()Landroid/app/FragmentManager;
 
     move-result-object v1
 
@@ -514,7 +514,7 @@
     move-result-object v1
 
     .line 327
-    invoke-virtual {p0}, Lcom/android/settings/UsageAccessSettings;->getChildFragmentManager()Landroid/app/FragmentManager;
+    invoke-virtual {p0}, Lcom/android/settings_ext/UsageAccessSettings;->getChildFragmentManager()Landroid/app/FragmentManager;
 
     move-result-object v3
 
@@ -532,15 +532,15 @@
 
     .line 331
     :cond_4
-    iget-object v0, v0, Lcom/android/settings/hb;->packageName:Ljava/lang/String;
+    iget-object v0, v0, Lcom/android/settings_ext/hb;->packageName:Ljava/lang/String;
 
-    invoke-static {v0}, Lcom/android/settings/UsageAccessSettings$WarningDialogFragment;->O(Ljava/lang/String;)Lcom/android/settings/UsageAccessSettings$WarningDialogFragment;
+    invoke-static {v0}, Lcom/android/settings_ext/UsageAccessSettings$WarningDialogFragment;->O(Ljava/lang/String;)Lcom/android/settings_ext/UsageAccessSettings$WarningDialogFragment;
 
     move-result-object v0
 
     const-string v3, "warning"
 
-    invoke-virtual {v0, v1, v3}, Lcom/android/settings/UsageAccessSettings$WarningDialogFragment;->show(Landroid/app/FragmentTransaction;Ljava/lang/String;)I
+    invoke-virtual {v0, v1, v3}, Lcom/android/settings_ext/UsageAccessSettings$WarningDialogFragment;->show(Landroid/app/FragmentTransaction;Ljava/lang/String;)I
 
     goto :goto_0
 
@@ -556,15 +556,15 @@
 
     .prologue
     .line 268
-    invoke-super {p0}, Lcom/android/settings/SettingsPreferenceFragment;->onResume()V
+    invoke-super {p0}, Lcom/android/settings_ext/SettingsPreferenceFragment;->onResume()V
 
     .line 270
-    invoke-direct {p0}, Lcom/android/settings/UsageAccessSettings;->ho()V
+    invoke-direct {p0}, Lcom/android/settings_ext/UsageAccessSettings;->ho()V
 
     .line 271
-    iget-object v0, p0, Lcom/android/settings/UsageAccessSettings;->za:Lcom/android/internal/content/PackageMonitor;
+    iget-object v0, p0, Lcom/android/settings_ext/UsageAccessSettings;->za:Lcom/android/internal/content/PackageMonitor;
 
-    invoke-virtual {p0}, Lcom/android/settings/UsageAccessSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/UsageAccessSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v1
 

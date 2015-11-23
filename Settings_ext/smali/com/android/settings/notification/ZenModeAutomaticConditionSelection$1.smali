@@ -1,4 +1,4 @@
-.class Lcom/android/settings/notification/ZenModeAutomaticConditionSelection$1;
+.class Lcom/android/settings_ext/notification/ZenModeAutomaticConditionSelection$1;
 .super Ljava/lang/Object;
 .source "ZenModeAutomaticConditionSelection.java"
 
@@ -9,18 +9,18 @@
 # instance fields
 .field final synthetic agf:Landroid/widget/CheckBox;
 
-.field final synthetic agg:Lcom/android/settings/notification/ZenModeAutomaticConditionSelection;
+.field final synthetic agg:Lcom/android/settings_ext/notification/ZenModeAutomaticConditionSelection;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/notification/ZenModeAutomaticConditionSelection;Landroid/widget/CheckBox;)V
+.method constructor <init>(Lcom/android/settings_ext/notification/ZenModeAutomaticConditionSelection;Landroid/widget/CheckBox;)V
     .locals 0
 
     .prologue
     .line 75
-    iput-object p1, p0, Lcom/android/settings/notification/ZenModeAutomaticConditionSelection$1;->agg:Lcom/android/settings/notification/ZenModeAutomaticConditionSelection;
+    iput-object p1, p0, Lcom/android/settings_ext/notification/ZenModeAutomaticConditionSelection$1;->agg:Lcom/android/settings_ext/notification/ZenModeAutomaticConditionSelection;
 
-    iput-object p2, p0, Lcom/android/settings/notification/ZenModeAutomaticConditionSelection$1;->agf:Landroid/widget/CheckBox;
+    iput-object p2, p0, Lcom/android/settings_ext/notification/ZenModeAutomaticConditionSelection$1;->agf:Landroid/widget/CheckBox;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -34,9 +34,9 @@
 
     .prologue
     .line 78
-    iget-object v1, p0, Lcom/android/settings/notification/ZenModeAutomaticConditionSelection$1;->agg:Lcom/android/settings/notification/ZenModeAutomaticConditionSelection;
+    iget-object v1, p0, Lcom/android/settings_ext/notification/ZenModeAutomaticConditionSelection$1;->agg:Lcom/android/settings_ext/notification/ZenModeAutomaticConditionSelection;
 
-    iget-object v0, p0, Lcom/android/settings/notification/ZenModeAutomaticConditionSelection$1;->agf:Landroid/widget/CheckBox;
+    iget-object v0, p0, Lcom/android/settings_ext/notification/ZenModeAutomaticConditionSelection$1;->agf:Landroid/widget/CheckBox;
 
     invoke-virtual {v0}, Landroid/widget/CheckBox;->getTag()Ljava/lang/Object;
 
@@ -44,7 +44,7 @@
 
     check-cast v0, Landroid/net/Uri;
 
-    invoke-static {v1, v0, p2}, Lcom/android/settings/notification/ZenModeAutomaticConditionSelection;->a(Lcom/android/settings/notification/ZenModeAutomaticConditionSelection;Landroid/net/Uri;Z)V
+    invoke-static {v1, v0, p2}, Lcom/android/settings_ext/notification/ZenModeAutomaticConditionSelection;->a(Lcom/android/settings_ext/notification/ZenModeAutomaticConditionSelection;Landroid/net/Uri;Z)V
 
     .line 79
     return-void

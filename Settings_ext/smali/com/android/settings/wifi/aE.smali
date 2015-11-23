@@ -1,10 +1,10 @@
-.class Lcom/android/settings/wifi/aE;
+.class Lcom/android/settings_ext/wifi/aE;
 .super Landroid/widget/BaseAdapter;
 .source "WifiShareUploadFragment.java"
 
 
 # instance fields
-.field final synthetic awM:Lcom/android/settings/wifi/WifiShareUploadFragment;
+.field final synthetic awM:Lcom/android/settings_ext/wifi/WifiShareUploadFragment;
 
 .field private awN:Ljava/util/ArrayList;
 
@@ -22,38 +22,38 @@
 
 
 # direct methods
-.method public constructor <init>(Lcom/android/settings/wifi/WifiShareUploadFragment;Ljava/util/ArrayList;Ljava/util/ArrayList;Landroid/content/Context;)V
+.method public constructor <init>(Lcom/android/settings_ext/wifi/WifiShareUploadFragment;Ljava/util/ArrayList;Ljava/util/ArrayList;Landroid/content/Context;)V
     .locals 4
 
     .prologue
     const/4 v3, 0x0
 
     .line 198
-    iput-object p1, p0, Lcom/android/settings/wifi/aE;->awM:Lcom/android/settings/wifi/WifiShareUploadFragment;
+    iput-object p1, p0, Lcom/android/settings_ext/wifi/aE;->awM:Lcom/android/settings_ext/wifi/WifiShareUploadFragment;
 
     invoke-direct {p0}, Landroid/widget/BaseAdapter;-><init>()V
 
     .line 194
-    iput v3, p0, Lcom/android/settings/wifi/aE;->awQ:I
+    iput v3, p0, Lcom/android/settings_ext/wifi/aE;->awQ:I
 
     .line 195
     const/4 v0, 0x1
 
-    iput v0, p0, Lcom/android/settings/wifi/aE;->awR:I
+    iput v0, p0, Lcom/android/settings_ext/wifi/aE;->awR:I
 
     .line 196
     const/4 v0, 0x2
 
-    iput v0, p0, Lcom/android/settings/wifi/aE;->awS:I
+    iput v0, p0, Lcom/android/settings_ext/wifi/aE;->awS:I
 
     .line 199
-    iput-object p2, p0, Lcom/android/settings/wifi/aE;->awN:Ljava/util/ArrayList;
+    iput-object p2, p0, Lcom/android/settings_ext/wifi/aE;->awN:Ljava/util/ArrayList;
 
     .line 200
-    iput-object p4, p0, Lcom/android/settings/wifi/aE;->mContext:Landroid/content/Context;
+    iput-object p4, p0, Lcom/android/settings_ext/wifi/aE;->mContext:Landroid/content/Context;
 
     .line 201
-    iput-object p3, p0, Lcom/android/settings/wifi/aE;->awO:Ljava/util/ArrayList;
+    iput-object p3, p0, Lcom/android/settings_ext/wifi/aE;->awO:Ljava/util/ArrayList;
 
     .line 202
     const-string v0, "wifi"
@@ -77,10 +77,10 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/wifi/aE;->awP:Ljava/lang/String;
+    iput-object v0, p0, Lcom/android/settings_ext/wifi/aE;->awP:Ljava/lang/String;
 
     .line 206
-    iget-object v0, p0, Lcom/android/settings/wifi/aE;->awP:Ljava/lang/String;
+    iget-object v0, p0, Lcom/android/settings_ext/wifi/aE;->awP:Ljava/lang/String;
 
     invoke-static {v0}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
@@ -89,18 +89,18 @@
     if-nez v0, :cond_0
 
     .line 207
-    iget-object v0, p0, Lcom/android/settings/wifi/aE;->awP:Ljava/lang/String;
+    iget-object v0, p0, Lcom/android/settings_ext/wifi/aE;->awP:Ljava/lang/String;
 
-    invoke-static {v0}, Lcom/android/settings/wifi/AccessPoint;->removeDoubleQuotes(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v0}, Lcom/android/settings_ext/wifi/AccessPoint;->removeDoubleQuotes(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/wifi/aE;->awP:Ljava/lang/String;
+    iput-object v0, p0, Lcom/android/settings_ext/wifi/aE;->awP:Ljava/lang/String;
 
     .line 208
-    iget-object v0, p0, Lcom/android/settings/wifi/aE;->awN:Ljava/util/ArrayList;
+    iget-object v0, p0, Lcom/android/settings_ext/wifi/aE;->awN:Ljava/util/ArrayList;
 
-    iget-object v1, p0, Lcom/android/settings/wifi/aE;->awP:Ljava/lang/String;
+    iget-object v1, p0, Lcom/android/settings_ext/wifi/aE;->awP:Ljava/lang/String;
 
     invoke-virtual {v0, v1}, Ljava/util/ArrayList;->contains(Ljava/lang/Object;)Z
 
@@ -109,16 +109,16 @@
     if-eqz v0, :cond_1
 
     .line 209
-    iget-object v0, p0, Lcom/android/settings/wifi/aE;->awN:Ljava/util/ArrayList;
+    iget-object v0, p0, Lcom/android/settings_ext/wifi/aE;->awN:Ljava/util/ArrayList;
 
-    iget-object v1, p0, Lcom/android/settings/wifi/aE;->awP:Ljava/lang/String;
+    iget-object v1, p0, Lcom/android/settings_ext/wifi/aE;->awP:Ljava/lang/String;
 
     invoke-virtual {v0, v1}, Ljava/util/ArrayList;->indexOf(Ljava/lang/Object;)I
 
     move-result v1
 
     .line 210
-    iget-object v0, p0, Lcom/android/settings/wifi/aE;->awO:Ljava/util/ArrayList;
+    iget-object v0, p0, Lcom/android/settings_ext/wifi/aE;->awO:Ljava/util/ArrayList;
 
     invoke-virtual {v0, v1}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
 
@@ -127,26 +127,26 @@
     check-cast v0, Ljava/lang/Boolean;
 
     .line 211
-    iget-object v2, p0, Lcom/android/settings/wifi/aE;->awO:Ljava/util/ArrayList;
+    iget-object v2, p0, Lcom/android/settings_ext/wifi/aE;->awO:Ljava/util/ArrayList;
 
     invoke-virtual {v2, v1}, Ljava/util/ArrayList;->remove(I)Ljava/lang/Object;
 
     .line 212
-    iget-object v1, p0, Lcom/android/settings/wifi/aE;->awO:Ljava/util/ArrayList;
+    iget-object v1, p0, Lcom/android/settings_ext/wifi/aE;->awO:Ljava/util/ArrayList;
 
     invoke-virtual {v1, v3, v0}, Ljava/util/ArrayList;->add(ILjava/lang/Object;)V
 
     .line 214
-    iget-object v0, p0, Lcom/android/settings/wifi/aE;->awN:Ljava/util/ArrayList;
+    iget-object v0, p0, Lcom/android/settings_ext/wifi/aE;->awN:Ljava/util/ArrayList;
 
-    iget-object v1, p0, Lcom/android/settings/wifi/aE;->awP:Ljava/lang/String;
+    iget-object v1, p0, Lcom/android/settings_ext/wifi/aE;->awP:Ljava/lang/String;
 
     invoke-virtual {v0, v1}, Ljava/util/ArrayList;->remove(Ljava/lang/Object;)Z
 
     .line 215
-    iget-object v0, p0, Lcom/android/settings/wifi/aE;->awN:Ljava/util/ArrayList;
+    iget-object v0, p0, Lcom/android/settings_ext/wifi/aE;->awN:Ljava/util/ArrayList;
 
-    iget-object v1, p0, Lcom/android/settings/wifi/aE;->awP:Ljava/lang/String;
+    iget-object v1, p0, Lcom/android/settings_ext/wifi/aE;->awP:Ljava/lang/String;
 
     invoke-virtual {v0, v3, v1}, Ljava/util/ArrayList;->add(ILjava/lang/Object;)V
 
@@ -159,7 +159,7 @@
     :cond_1
     const/4 v0, 0x0
 
-    iput-object v0, p0, Lcom/android/settings/wifi/aE;->awP:Ljava/lang/String;
+    iput-object v0, p0, Lcom/android/settings_ext/wifi/aE;->awP:Ljava/lang/String;
 
     goto :goto_0
 .end method
@@ -171,7 +171,7 @@
 
     .prologue
     .line 299
-    iget-object v0, p0, Lcom/android/settings/wifi/aE;->awP:Ljava/lang/String;
+    iget-object v0, p0, Lcom/android/settings_ext/wifi/aE;->awP:Ljava/lang/String;
 
     invoke-static {v0}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
@@ -179,7 +179,7 @@
 
     if-eqz v0, :cond_0
 
-    iget-object v0, p0, Lcom/android/settings/wifi/aE;->awN:Ljava/util/ArrayList;
+    iget-object v0, p0, Lcom/android/settings_ext/wifi/aE;->awN:Ljava/util/ArrayList;
 
     invoke-virtual {v0}, Ljava/util/ArrayList;->size()I
 
@@ -189,7 +189,7 @@
     return v0
 
     :cond_0
-    iget-object v0, p0, Lcom/android/settings/wifi/aE;->awN:Ljava/util/ArrayList;
+    iget-object v0, p0, Lcom/android/settings_ext/wifi/aE;->awN:Ljava/util/ArrayList;
 
     invoke-virtual {v0}, Ljava/util/ArrayList;->size()I
 
@@ -205,7 +205,7 @@
 
     .prologue
     .line 281
-    iget-object v0, p0, Lcom/android/settings/wifi/aE;->awN:Ljava/util/ArrayList;
+    iget-object v0, p0, Lcom/android/settings_ext/wifi/aE;->awN:Ljava/util/ArrayList;
 
     invoke-virtual {v0, p1}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
 
@@ -237,7 +237,7 @@
     const/4 v4, 0x0
 
     .line 225
-    iget-object v0, p0, Lcom/android/settings/wifi/aE;->mContext:Landroid/content/Context;
+    iget-object v0, p0, Lcom/android/settings_ext/wifi/aE;->mContext:Landroid/content/Context;
 
     const-string v1, "layout_inflater"
 
@@ -248,7 +248,7 @@
     check-cast v0, Landroid/view/LayoutInflater;
 
     .line 228
-    iget-object v1, p0, Lcom/android/settings/wifi/aE;->awP:Ljava/lang/String;
+    iget-object v1, p0, Lcom/android/settings_ext/wifi/aE;->awP:Ljava/lang/String;
 
     invoke-static {v1}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
@@ -308,7 +308,7 @@
     check-cast v0, Landroid/widget/TextView;
 
     .line 263
-    invoke-virtual {p0, p1}, Lcom/android/settings/wifi/aE;->getItem(I)Ljava/lang/Object;
+    invoke-virtual {p0, p1}, Lcom/android/settings_ext/wifi/aE;->getItem(I)Ljava/lang/Object;
 
     move-result-object v1
 
@@ -326,7 +326,7 @@
     check-cast v0, Landroid/widget/Button;
 
     .line 265
-    iget-object v1, p0, Lcom/android/settings/wifi/aE;->awO:Ljava/util/ArrayList;
+    iget-object v1, p0, Lcom/android/settings_ext/wifi/aE;->awO:Ljava/util/ArrayList;
 
     invoke-virtual {v1, p1}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
 
@@ -346,9 +346,9 @@
     invoke-virtual {v0, v1}, Landroid/widget/Button;->setVisibility(I)V
 
     .line 266
-    new-instance v1, Lcom/android/settings/wifi/aF;
+    new-instance v1, Lcom/android/settings_ext/wifi/aF;
 
-    invoke-direct {v1, p0, p1}, Lcom/android/settings/wifi/aF;-><init>(Lcom/android/settings/wifi/aE;I)V
+    invoke-direct {v1, p0, p1}, Lcom/android/settings_ext/wifi/aF;-><init>(Lcom/android/settings_ext/wifi/aE;I)V
 
     invoke-virtual {v0, v1}, Landroid/widget/Button;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
@@ -362,7 +362,7 @@
     check-cast v0, Landroid/widget/TextView;
 
     .line 273
-    iget-object v1, p0, Lcom/android/settings/wifi/aE;->awO:Ljava/util/ArrayList;
+    iget-object v1, p0, Lcom/android/settings_ext/wifi/aE;->awO:Ljava/util/ArrayList;
 
     invoke-virtual {v1, p1}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
 

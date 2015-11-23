@@ -1,5 +1,5 @@
-.class public Lcom/android/settings/applications/ApplicationsState$AppEntry;
-.super Lcom/android/settings/applications/ApplicationsState$SizeInfo;
+.class public Lcom/android/settings_ext/applications/ApplicationsState$AppEntry;
+.super Lcom/android/settings_ext/applications/ApplicationsState$SizeInfo;
 .source "ApplicationsState.java"
 
 
@@ -41,7 +41,7 @@
 
     .prologue
     .line 128
-    invoke-direct {p0}, Lcom/android/settings/applications/ApplicationsState$SizeInfo;-><init>()V
+    invoke-direct {p0}, Lcom/android/settings_ext/applications/ApplicationsState$SizeInfo;-><init>()V
 
     .line 129
     new-instance v0, Ljava/io/File;
@@ -50,31 +50,31 @@
 
     invoke-direct {v0, v1}, Ljava/io/File;-><init>(Ljava/lang/String;)V
 
-    iput-object v0, p0, Lcom/android/settings/applications/ApplicationsState$AppEntry;->ER:Ljava/io/File;
+    iput-object v0, p0, Lcom/android/settings_ext/applications/ApplicationsState$AppEntry;->ER:Ljava/io/File;
 
     .line 130
-    iput-wide p3, p0, Lcom/android/settings/applications/ApplicationsState$AppEntry;->id:J
+    iput-wide p3, p0, Lcom/android/settings_ext/applications/ApplicationsState$AppEntry;->id:J
 
     .line 131
-    iput-object p2, p0, Lcom/android/settings/applications/ApplicationsState$AppEntry;->bl:Landroid/content/pm/ApplicationInfo;
+    iput-object p2, p0, Lcom/android/settings_ext/applications/ApplicationsState$AppEntry;->bl:Landroid/content/pm/ApplicationInfo;
 
     .line 132
     const-wide/16 v0, -0x1
 
-    iput-wide v0, p0, Lcom/android/settings/applications/ApplicationsState$AppEntry;->size:J
+    iput-wide v0, p0, Lcom/android/settings_ext/applications/ApplicationsState$AppEntry;->size:J
 
     .line 133
     const/4 v0, 0x1
 
-    iput-boolean v0, p0, Lcom/android/settings/applications/ApplicationsState$AppEntry;->EZ:Z
+    iput-boolean v0, p0, Lcom/android/settings_ext/applications/ApplicationsState$AppEntry;->EZ:Z
 
     .line 135
     const-string v0, ""
 
-    iput-object v0, p0, Lcom/android/settings/applications/ApplicationsState$AppEntry;->ES:Ljava/lang/String;
+    iput-object v0, p0, Lcom/android/settings_ext/applications/ApplicationsState$AppEntry;->ES:Ljava/lang/String;
 
     .line 136
-    invoke-virtual {p0, p1}, Lcom/android/settings/applications/ApplicationsState$AppEntry;->ab(Landroid/content/Context;)V
+    invoke-virtual {p0, p1}, Lcom/android/settings_ext/applications/ApplicationsState$AppEntry;->ab(Landroid/content/Context;)V
 
     .line 137
     return-void
@@ -145,17 +145,17 @@
     const/4 v2, 0x0
 
     .line 140
-    iget-object v0, p0, Lcom/android/settings/applications/ApplicationsState$AppEntry;->label:Ljava/lang/String;
+    iget-object v0, p0, Lcom/android/settings_ext/applications/ApplicationsState$AppEntry;->label:Ljava/lang/String;
 
     if-eqz v0, :cond_0
 
-    iget-boolean v0, p0, Lcom/android/settings/applications/ApplicationsState$AppEntry;->EV:Z
+    iget-boolean v0, p0, Lcom/android/settings_ext/applications/ApplicationsState$AppEntry;->EV:Z
 
     if-nez v0, :cond_1
 
     .line 141
     :cond_0
-    iget-object v0, p0, Lcom/android/settings/applications/ApplicationsState$AppEntry;->ER:Ljava/io/File;
+    iget-object v0, p0, Lcom/android/settings_ext/applications/ApplicationsState$AppEntry;->ER:Ljava/io/File;
 
     invoke-virtual {v0}, Ljava/io/File;->exists()Z
 
@@ -164,25 +164,25 @@
     if-nez v0, :cond_2
 
     .line 142
-    iput-boolean v2, p0, Lcom/android/settings/applications/ApplicationsState$AppEntry;->EV:Z
+    iput-boolean v2, p0, Lcom/android/settings_ext/applications/ApplicationsState$AppEntry;->EV:Z
 
     .line 143
-    iget-object v0, p0, Lcom/android/settings/applications/ApplicationsState$AppEntry;->bl:Landroid/content/pm/ApplicationInfo;
+    iget-object v0, p0, Lcom/android/settings_ext/applications/ApplicationsState$AppEntry;->bl:Landroid/content/pm/ApplicationInfo;
 
     iget-object v0, v0, Landroid/content/pm/ApplicationInfo;->packageName:Ljava/lang/String;
 
-    iput-object v0, p0, Lcom/android/settings/applications/ApplicationsState$AppEntry;->label:Ljava/lang/String;
+    iput-object v0, p0, Lcom/android/settings_ext/applications/ApplicationsState$AppEntry;->label:Ljava/lang/String;
 
     .line 151
     :goto_0
-    iget-object v0, p0, Lcom/android/settings/applications/ApplicationsState$AppEntry;->label:Ljava/lang/String;
+    iget-object v0, p0, Lcom/android/settings_ext/applications/ApplicationsState$AppEntry;->label:Ljava/lang/String;
 
     if-eqz v0, :cond_1
 
     .line 152
-    iget-object v0, p0, Lcom/android/settings/applications/ApplicationsState$AppEntry;->label:Ljava/lang/String;
+    iget-object v0, p0, Lcom/android/settings_ext/applications/ApplicationsState$AppEntry;->label:Ljava/lang/String;
 
-    invoke-direct {p0, v0}, Lcom/android/settings/applications/ApplicationsState$AppEntry;->trim(Ljava/lang/String;)Ljava/lang/String;
+    invoke-direct {p0, v0}, Lcom/android/settings_ext/applications/ApplicationsState$AppEntry;->trim(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 
@@ -216,7 +216,7 @@
 
     iget-object v0, v0, Lmiui/text/ChinesePinyinConverter$Token;->target:Ljava/lang/String;
 
-    iput-object v0, p0, Lcom/android/settings/applications/ApplicationsState$AppEntry;->ES:Ljava/lang/String;
+    iput-object v0, p0, Lcom/android/settings_ext/applications/ApplicationsState$AppEntry;->ES:Ljava/lang/String;
 
     .line 164
     :cond_1
@@ -227,10 +227,10 @@
     :cond_2
     const/4 v0, 0x1
 
-    iput-boolean v0, p0, Lcom/android/settings/applications/ApplicationsState$AppEntry;->EV:Z
+    iput-boolean v0, p0, Lcom/android/settings_ext/applications/ApplicationsState$AppEntry;->EV:Z
 
     .line 146
-    iget-object v0, p0, Lcom/android/settings/applications/ApplicationsState$AppEntry;->bl:Landroid/content/pm/ApplicationInfo;
+    iget-object v0, p0, Lcom/android/settings_ext/applications/ApplicationsState$AppEntry;->bl:Landroid/content/pm/ApplicationInfo;
 
     invoke-virtual {p1}, Landroid/content/Context;->getPackageManager()Landroid/content/pm/PackageManager;
 
@@ -248,12 +248,12 @@
     move-result-object v0
 
     :goto_2
-    iput-object v0, p0, Lcom/android/settings/applications/ApplicationsState$AppEntry;->label:Ljava/lang/String;
+    iput-object v0, p0, Lcom/android/settings_ext/applications/ApplicationsState$AppEntry;->label:Ljava/lang/String;
 
     goto :goto_0
 
     :cond_3
-    iget-object v0, p0, Lcom/android/settings/applications/ApplicationsState$AppEntry;->bl:Landroid/content/pm/ApplicationInfo;
+    iget-object v0, p0, Lcom/android/settings_ext/applications/ApplicationsState$AppEntry;->bl:Landroid/content/pm/ApplicationInfo;
 
     iget-object v0, v0, Landroid/content/pm/ApplicationInfo;->packageName:Ljava/lang/String;
 
@@ -261,9 +261,9 @@
 
     .line 159
     :cond_4
-    iget-object v0, p0, Lcom/android/settings/applications/ApplicationsState$AppEntry;->label:Ljava/lang/String;
+    iget-object v0, p0, Lcom/android/settings_ext/applications/ApplicationsState$AppEntry;->label:Ljava/lang/String;
 
-    iput-object v0, p0, Lcom/android/settings/applications/ApplicationsState$AppEntry;->ES:Ljava/lang/String;
+    iput-object v0, p0, Lcom/android/settings_ext/applications/ApplicationsState$AppEntry;->ES:Ljava/lang/String;
 
     goto :goto_1
 .end method
@@ -273,7 +273,7 @@
 
     .prologue
     .line 184
-    iget-object v0, p0, Lcom/android/settings/applications/ApplicationsState$AppEntry;->bl:Landroid/content/pm/ApplicationInfo;
+    iget-object v0, p0, Lcom/android/settings_ext/applications/ApplicationsState$AppEntry;->bl:Landroid/content/pm/ApplicationInfo;
 
     return-object v0
 .end method
@@ -283,7 +283,7 @@
 
     .prologue
     .line 192
-    iget-object v0, p0, Lcom/android/settings/applications/ApplicationsState$AppEntry;->bl:Landroid/content/pm/ApplicationInfo;
+    iget-object v0, p0, Lcom/android/settings_ext/applications/ApplicationsState$AppEntry;->bl:Landroid/content/pm/ApplicationInfo;
 
     invoke-virtual {p1}, Landroid/content/Context;->getPackageManager()Landroid/content/pm/PackageManager;
 
@@ -303,7 +303,7 @@
 
     .prologue
     .line 188
-    iget-object v0, p0, Lcom/android/settings/applications/ApplicationsState$AppEntry;->label:Ljava/lang/String;
+    iget-object v0, p0, Lcom/android/settings_ext/applications/ApplicationsState$AppEntry;->label:Ljava/lang/String;
 
     return-object v0
 .end method
@@ -313,12 +313,12 @@
 
     .prologue
     .line 108
-    iget-object v0, p0, Lcom/android/settings/applications/ApplicationsState$AppEntry;->Fb:Ljava/lang/String;
+    iget-object v0, p0, Lcom/android/settings_ext/applications/ApplicationsState$AppEntry;->Fb:Ljava/lang/String;
 
     if-eqz v0, :cond_0
 
     .line 109
-    iget-object v0, p0, Lcom/android/settings/applications/ApplicationsState$AppEntry;->Fb:Ljava/lang/String;
+    iget-object v0, p0, Lcom/android/settings_ext/applications/ApplicationsState$AppEntry;->Fb:Ljava/lang/String;
 
     .line 112
     :goto_0
@@ -326,16 +326,16 @@
 
     .line 111
     :cond_0
-    iget-object v0, p0, Lcom/android/settings/applications/ApplicationsState$AppEntry;->label:Ljava/lang/String;
+    iget-object v0, p0, Lcom/android/settings_ext/applications/ApplicationsState$AppEntry;->label:Ljava/lang/String;
 
-    invoke-static {v0}, Lcom/android/settings/applications/ApplicationsState;->normalize(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v0}, Lcom/android/settings_ext/applications/ApplicationsState;->normalize(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/applications/ApplicationsState$AppEntry;->Fb:Ljava/lang/String;
+    iput-object v0, p0, Lcom/android/settings_ext/applications/ApplicationsState$AppEntry;->Fb:Ljava/lang/String;
 
     .line 112
-    iget-object v0, p0, Lcom/android/settings/applications/ApplicationsState$AppEntry;->Fb:Ljava/lang/String;
+    iget-object v0, p0, Lcom/android/settings_ext/applications/ApplicationsState$AppEntry;->Fb:Ljava/lang/String;
 
     goto :goto_0
 .end method

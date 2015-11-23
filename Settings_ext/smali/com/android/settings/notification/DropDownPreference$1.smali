@@ -1,4 +1,4 @@
-.class Lcom/android/settings/notification/DropDownPreference$1;
+.class Lcom/android/settings_ext/notification/DropDownPreference$1;
 .super Ljava/lang/Object;
 .source "DropDownPreference.java"
 
@@ -7,16 +7,16 @@
 
 
 # instance fields
-.field final synthetic adY:Lcom/android/settings/notification/DropDownPreference;
+.field final synthetic adY:Lcom/android/settings_ext/notification/DropDownPreference;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/notification/DropDownPreference;)V
+.method constructor <init>(Lcom/android/settings_ext/notification/DropDownPreference;)V
     .locals 0
 
     .prologue
     .line 55
-    iput-object p1, p0, Lcom/android/settings/notification/DropDownPreference$1;->adY:Lcom/android/settings/notification/DropDownPreference;
+    iput-object p1, p0, Lcom/android/settings_ext/notification/DropDownPreference$1;->adY:Lcom/android/settings_ext/notification/DropDownPreference;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -30,9 +30,9 @@
 
     .prologue
     .line 58
-    iget-object v0, p0, Lcom/android/settings/notification/DropDownPreference$1;->adY:Lcom/android/settings/notification/DropDownPreference;
+    iget-object v0, p0, Lcom/android/settings_ext/notification/DropDownPreference$1;->adY:Lcom/android/settings_ext/notification/DropDownPreference;
 
-    invoke-virtual {v0, p3}, Lcom/android/settings/notification/DropDownPreference;->setSelectedItem(I)V
+    invoke-virtual {v0, p3}, Lcom/android/settings_ext/notification/DropDownPreference;->setSelectedItem(I)V
 
     .line 59
     return-void

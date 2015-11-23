@@ -1,4 +1,4 @@
-.class Lcom/android/settings/eP;
+.class Lcom/android/settings_ext/eP;
 .super Ljava/lang/Object;
 .source "NewFingerprintInternalActivity.java"
 
@@ -7,16 +7,16 @@
 
 
 # instance fields
-.field final synthetic sX:Lcom/android/settings/NewFingerprintInternalActivity$NewFingerprintFragment;
+.field final synthetic sX:Lcom/android/settings_ext/NewFingerprintInternalActivity$NewFingerprintFragment;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/NewFingerprintInternalActivity$NewFingerprintFragment;)V
+.method constructor <init>(Lcom/android/settings_ext/NewFingerprintInternalActivity$NewFingerprintFragment;)V
     .locals 0
 
     .prologue
     .line 143
-    iput-object p1, p0, Lcom/android/settings/eP;->sX:Lcom/android/settings/NewFingerprintInternalActivity$NewFingerprintFragment;
+    iput-object p1, p0, Lcom/android/settings_ext/eP;->sX:Lcom/android/settings_ext/NewFingerprintInternalActivity$NewFingerprintFragment;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -30,9 +30,9 @@
 
     .prologue
     .line 146
-    iget-object v0, p0, Lcom/android/settings/eP;->sX:Lcom/android/settings/NewFingerprintInternalActivity$NewFingerprintFragment;
+    iget-object v0, p0, Lcom/android/settings_ext/eP;->sX:Lcom/android/settings_ext/NewFingerprintInternalActivity$NewFingerprintFragment;
 
-    invoke-virtual {v0}, Lcom/android/settings/NewFingerprintInternalActivity$NewFingerprintFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {v0}, Lcom/android/settings_ext/NewFingerprintInternalActivity$NewFingerprintFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
@@ -41,9 +41,9 @@
     invoke-virtual {v0, v1}, Landroid/app/Activity;->setResult(I)V
 
     .line 147
-    iget-object v0, p0, Lcom/android/settings/eP;->sX:Lcom/android/settings/NewFingerprintInternalActivity$NewFingerprintFragment;
+    iget-object v0, p0, Lcom/android/settings_ext/eP;->sX:Lcom/android/settings_ext/NewFingerprintInternalActivity$NewFingerprintFragment;
 
-    invoke-virtual {v0}, Lcom/android/settings/NewFingerprintInternalActivity$NewFingerprintFragment;->finish()V
+    invoke-virtual {v0}, Lcom/android/settings_ext/NewFingerprintInternalActivity$NewFingerprintFragment;->finish()V
 
     .line 148
     return-void

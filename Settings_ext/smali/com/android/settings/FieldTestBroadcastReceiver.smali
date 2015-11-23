@@ -1,4 +1,4 @@
-.class public Lcom/android/settings/FieldTestBroadcastReceiver;
+.class public Lcom/android/settings_ext/FieldTestBroadcastReceiver;
 .super Landroid/content/BroadcastReceiver;
 .source "FieldTestBroadcastReceiver.java"
 
@@ -29,7 +29,7 @@
     invoke-direct {v0, v1}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
 
     .line 21
-    const-class v1, Lcom/android/settings/FieldTestInfo;
+    const-class v1, Lcom/android/settings_ext/FieldTestInfo;
 
     invoke-virtual {v0, p1, v1}, Landroid/content/Intent;->setClass(Landroid/content/Context;Ljava/lang/Class;)Landroid/content/Intent;
 

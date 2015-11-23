@@ -1,4 +1,4 @@
-.class Lcom/android/settings/bl;
+.class Lcom/android/settings_ext/bl;
 .super Ljava/lang/Object;
 .source "DataUsageSummary.java"
 
@@ -7,16 +7,16 @@
 
 
 # instance fields
-.field final synthetic gM:Lcom/android/settings/DataUsageSummary$ConfirmDataDisableFragment;
+.field final synthetic gM:Lcom/android/settings_ext/DataUsageSummary$ConfirmDataDisableFragment;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/DataUsageSummary$ConfirmDataDisableFragment;)V
+.method constructor <init>(Lcom/android/settings_ext/DataUsageSummary$ConfirmDataDisableFragment;)V
     .locals 0
 
     .prologue
     .line 2129
-    iput-object p1, p0, Lcom/android/settings/bl;->gM:Lcom/android/settings/DataUsageSummary$ConfirmDataDisableFragment;
+    iput-object p1, p0, Lcom/android/settings_ext/bl;->gM:Lcom/android/settings_ext/DataUsageSummary$ConfirmDataDisableFragment;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -30,13 +30,13 @@
 
     .prologue
     .line 2132
-    iget-object v0, p0, Lcom/android/settings/bl;->gM:Lcom/android/settings/DataUsageSummary$ConfirmDataDisableFragment;
+    iget-object v0, p0, Lcom/android/settings_ext/bl;->gM:Lcom/android/settings_ext/DataUsageSummary$ConfirmDataDisableFragment;
 
-    invoke-virtual {v0}, Lcom/android/settings/DataUsageSummary$ConfirmDataDisableFragment;->getTargetFragment()Landroid/app/Fragment;
+    invoke-virtual {v0}, Lcom/android/settings_ext/DataUsageSummary$ConfirmDataDisableFragment;->getTargetFragment()Landroid/app/Fragment;
 
     move-result-object v0
 
-    check-cast v0, Lcom/android/settings/DataUsageSummary;
+    check-cast v0, Lcom/android/settings_ext/DataUsageSummary;
 
     .line 2133
     if-eqz v0, :cond_0
@@ -44,7 +44,7 @@
     .line 2135
     const/4 v1, 0x0
 
-    invoke-static {v0, v1}, Lcom/android/settings/DataUsageSummary;->a(Lcom/android/settings/DataUsageSummary;Z)V
+    invoke-static {v0, v1}, Lcom/android/settings_ext/DataUsageSummary;->a(Lcom/android/settings_ext/DataUsageSummary;Z)V
 
     .line 2137
     :cond_0

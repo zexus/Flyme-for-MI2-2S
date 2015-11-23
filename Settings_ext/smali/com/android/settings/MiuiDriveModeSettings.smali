@@ -1,4 +1,4 @@
-.class public Lcom/android/settings/MiuiDriveModeSettings;
+.class public Lcom/android/settings_ext/MiuiDriveModeSettings;
 .super Lmiui/preference/PreferenceActivity;
 .source "MiuiDriveModeSettings.java"
 
@@ -54,52 +54,52 @@
     .line 24
     const-string v0, "drive_mode_"
 
-    sput-object v0, Lcom/android/settings/MiuiDriveModeSettings;->PREFIX:Ljava/lang/String;
+    sput-object v0, Lcom/android/settings_ext/MiuiDriveModeSettings;->PREFIX:Ljava/lang/String;
 
     .line 25
     const-string v0, "drive_mode"
 
-    sput-object v0, Lcom/android/settings/MiuiDriveModeSettings;->pE:Ljava/lang/String;
+    sput-object v0, Lcom/android/settings_ext/MiuiDriveModeSettings;->pE:Ljava/lang/String;
 
     .line 26
     const-string v0, "phone_report"
 
-    sput-object v0, Lcom/android/settings/MiuiDriveModeSettings;->pF:Ljava/lang/String;
+    sput-object v0, Lcom/android/settings_ext/MiuiDriveModeSettings;->pF:Ljava/lang/String;
 
     .line 27
     const-string v0, "sms_report"
 
-    sput-object v0, Lcom/android/settings/MiuiDriveModeSettings;->pG:Ljava/lang/String;
+    sput-object v0, Lcom/android/settings_ext/MiuiDriveModeSettings;->pG:Ljava/lang/String;
 
     .line 28
     const-string v0, "invert_stop_report"
 
-    sput-object v0, Lcom/android/settings/MiuiDriveModeSettings;->pH:Ljava/lang/String;
+    sput-object v0, Lcom/android/settings_ext/MiuiDriveModeSettings;->pH:Ljava/lang/String;
 
     .line 29
     const-string v0, "calling_auto_sms_reply"
 
-    sput-object v0, Lcom/android/settings/MiuiDriveModeSettings;->pI:Ljava/lang/String;
+    sput-object v0, Lcom/android/settings_ext/MiuiDriveModeSettings;->pI:Ljava/lang/String;
 
     .line 30
     const-string v0, "sms_auto_sms_reply"
 
-    sput-object v0, Lcom/android/settings/MiuiDriveModeSettings;->pJ:Ljava/lang/String;
+    sput-object v0, Lcom/android/settings_ext/MiuiDriveModeSettings;->pJ:Ljava/lang/String;
 
     .line 31
     const-string v0, "only_contact_reply"
 
-    sput-object v0, Lcom/android/settings/MiuiDriveModeSettings;->pK:Ljava/lang/String;
+    sput-object v0, Lcom/android/settings_ext/MiuiDriveModeSettings;->pK:Ljava/lang/String;
 
     .line 32
     const-string v0, "sms_auto_reply_content"
 
-    sput-object v0, Lcom/android/settings/MiuiDriveModeSettings;->pL:Ljava/lang/String;
+    sput-object v0, Lcom/android/settings_ext/MiuiDriveModeSettings;->pL:Ljava/lang/String;
 
     .line 33
     const-string v0, "enable_drive_mode"
 
-    sput-object v0, Lcom/android/settings/MiuiDriveModeSettings;->pM:Ljava/lang/String;
+    sput-object v0, Lcom/android/settings_ext/MiuiDriveModeSettings;->pM:Ljava/lang/String;
 
     return-void
 .end method
@@ -122,62 +122,62 @@
 
     .line 101
     .line 103
-    iget-object v0, p0, Lcom/android/settings/MiuiDriveModeSettings;->pT:Landroid/preference/CheckBoxPreference;
+    iget-object v0, p0, Lcom/android/settings_ext/MiuiDriveModeSettings;->pT:Landroid/preference/CheckBoxPreference;
 
     invoke-virtual {v0, v1}, Landroid/preference/CheckBoxPreference;->setChecked(Z)V
 
     .line 105
-    iget-object v0, p0, Lcom/android/settings/MiuiDriveModeSettings;->pN:Landroid/preference/TwoStatePreference;
+    iget-object v0, p0, Lcom/android/settings_ext/MiuiDriveModeSettings;->pN:Landroid/preference/TwoStatePreference;
 
     invoke-virtual {v0, v1}, Landroid/preference/TwoStatePreference;->setChecked(Z)V
 
     .line 106
-    iget-object v0, p0, Lcom/android/settings/MiuiDriveModeSettings;->pN:Landroid/preference/TwoStatePreference;
+    iget-object v0, p0, Lcom/android/settings_ext/MiuiDriveModeSettings;->pN:Landroid/preference/TwoStatePreference;
 
     invoke-virtual {v0, v1}, Landroid/preference/TwoStatePreference;->setEnabled(Z)V
 
     .line 107
-    iget-object v0, p0, Lcom/android/settings/MiuiDriveModeSettings;->pO:Landroid/preference/TwoStatePreference;
+    iget-object v0, p0, Lcom/android/settings_ext/MiuiDriveModeSettings;->pO:Landroid/preference/TwoStatePreference;
 
     invoke-virtual {v0, v1}, Landroid/preference/TwoStatePreference;->setChecked(Z)V
 
     .line 108
-    iget-object v0, p0, Lcom/android/settings/MiuiDriveModeSettings;->pO:Landroid/preference/TwoStatePreference;
+    iget-object v0, p0, Lcom/android/settings_ext/MiuiDriveModeSettings;->pO:Landroid/preference/TwoStatePreference;
 
     invoke-virtual {v0, v1}, Landroid/preference/TwoStatePreference;->setEnabled(Z)V
 
     .line 109
-    iget-object v0, p0, Lcom/android/settings/MiuiDriveModeSettings;->pP:Landroid/preference/TwoStatePreference;
+    iget-object v0, p0, Lcom/android/settings_ext/MiuiDriveModeSettings;->pP:Landroid/preference/TwoStatePreference;
 
     invoke-virtual {v0, v1}, Landroid/preference/TwoStatePreference;->setChecked(Z)V
 
     .line 110
-    iget-object v0, p0, Lcom/android/settings/MiuiDriveModeSettings;->pP:Landroid/preference/TwoStatePreference;
+    iget-object v0, p0, Lcom/android/settings_ext/MiuiDriveModeSettings;->pP:Landroid/preference/TwoStatePreference;
 
     invoke-virtual {v0, v1}, Landroid/preference/TwoStatePreference;->setEnabled(Z)V
 
     .line 111
-    iget-object v0, p0, Lcom/android/settings/MiuiDriveModeSettings;->pQ:Landroid/preference/TwoStatePreference;
+    iget-object v0, p0, Lcom/android/settings_ext/MiuiDriveModeSettings;->pQ:Landroid/preference/TwoStatePreference;
 
     invoke-virtual {v0, v1}, Landroid/preference/TwoStatePreference;->setChecked(Z)V
 
     .line 112
-    iget-object v0, p0, Lcom/android/settings/MiuiDriveModeSettings;->pQ:Landroid/preference/TwoStatePreference;
+    iget-object v0, p0, Lcom/android/settings_ext/MiuiDriveModeSettings;->pQ:Landroid/preference/TwoStatePreference;
 
     invoke-virtual {v0, v1}, Landroid/preference/TwoStatePreference;->setEnabled(Z)V
 
     .line 113
-    iget-object v0, p0, Lcom/android/settings/MiuiDriveModeSettings;->pR:Landroid/preference/TwoStatePreference;
+    iget-object v0, p0, Lcom/android/settings_ext/MiuiDriveModeSettings;->pR:Landroid/preference/TwoStatePreference;
 
     invoke-virtual {v0, v1}, Landroid/preference/TwoStatePreference;->setChecked(Z)V
 
     .line 114
-    iget-object v0, p0, Lcom/android/settings/MiuiDriveModeSettings;->pR:Landroid/preference/TwoStatePreference;
+    iget-object v0, p0, Lcom/android/settings_ext/MiuiDriveModeSettings;->pR:Landroid/preference/TwoStatePreference;
 
     invoke-virtual {v0, v1}, Landroid/preference/TwoStatePreference;->setEnabled(Z)V
 
     .line 115
-    iget-object v0, p0, Lcom/android/settings/MiuiDriveModeSettings;->pS:Landroid/preference/EditTextPreference;
+    iget-object v0, p0, Lcom/android/settings_ext/MiuiDriveModeSettings;->pS:Landroid/preference/EditTextPreference;
 
     invoke-virtual {v0, v1}, Landroid/preference/EditTextPreference;->setEnabled(Z)V
 
@@ -197,106 +197,106 @@
     .line 47
     const v0, 0x7f060032
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/MiuiDriveModeSettings;->addPreferencesFromResource(I)V
+    invoke-virtual {p0, v0}, Lcom/android/settings_ext/MiuiDriveModeSettings;->addPreferencesFromResource(I)V
 
     .line 49
-    sget-object v0, Lcom/android/settings/MiuiDriveModeSettings;->pF:Ljava/lang/String;
+    sget-object v0, Lcom/android/settings_ext/MiuiDriveModeSettings;->pF:Ljava/lang/String;
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/MiuiDriveModeSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v0}, Lcom/android/settings_ext/MiuiDriveModeSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v0
 
     check-cast v0, Landroid/preference/TwoStatePreference;
 
-    iput-object v0, p0, Lcom/android/settings/MiuiDriveModeSettings;->pN:Landroid/preference/TwoStatePreference;
+    iput-object v0, p0, Lcom/android/settings_ext/MiuiDriveModeSettings;->pN:Landroid/preference/TwoStatePreference;
 
     .line 50
-    iget-object v0, p0, Lcom/android/settings/MiuiDriveModeSettings;->pN:Landroid/preference/TwoStatePreference;
+    iget-object v0, p0, Lcom/android/settings_ext/MiuiDriveModeSettings;->pN:Landroid/preference/TwoStatePreference;
 
     invoke-virtual {v0, p0}, Landroid/preference/TwoStatePreference;->setOnPreferenceChangeListener(Landroid/preference/Preference$OnPreferenceChangeListener;)V
 
     .line 51
-    sget-object v0, Lcom/android/settings/MiuiDriveModeSettings;->pG:Ljava/lang/String;
+    sget-object v0, Lcom/android/settings_ext/MiuiDriveModeSettings;->pG:Ljava/lang/String;
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/MiuiDriveModeSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v0}, Lcom/android/settings_ext/MiuiDriveModeSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v0
 
     check-cast v0, Landroid/preference/TwoStatePreference;
 
-    iput-object v0, p0, Lcom/android/settings/MiuiDriveModeSettings;->pO:Landroid/preference/TwoStatePreference;
+    iput-object v0, p0, Lcom/android/settings_ext/MiuiDriveModeSettings;->pO:Landroid/preference/TwoStatePreference;
 
     .line 52
-    iget-object v0, p0, Lcom/android/settings/MiuiDriveModeSettings;->pO:Landroid/preference/TwoStatePreference;
+    iget-object v0, p0, Lcom/android/settings_ext/MiuiDriveModeSettings;->pO:Landroid/preference/TwoStatePreference;
 
     invoke-virtual {v0, p0}, Landroid/preference/TwoStatePreference;->setOnPreferenceChangeListener(Landroid/preference/Preference$OnPreferenceChangeListener;)V
 
     .line 53
-    sget-object v0, Lcom/android/settings/MiuiDriveModeSettings;->pI:Ljava/lang/String;
+    sget-object v0, Lcom/android/settings_ext/MiuiDriveModeSettings;->pI:Ljava/lang/String;
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/MiuiDriveModeSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v0}, Lcom/android/settings_ext/MiuiDriveModeSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v0
 
     check-cast v0, Landroid/preference/TwoStatePreference;
 
-    iput-object v0, p0, Lcom/android/settings/MiuiDriveModeSettings;->pP:Landroid/preference/TwoStatePreference;
+    iput-object v0, p0, Lcom/android/settings_ext/MiuiDriveModeSettings;->pP:Landroid/preference/TwoStatePreference;
 
     .line 54
-    iget-object v0, p0, Lcom/android/settings/MiuiDriveModeSettings;->pP:Landroid/preference/TwoStatePreference;
+    iget-object v0, p0, Lcom/android/settings_ext/MiuiDriveModeSettings;->pP:Landroid/preference/TwoStatePreference;
 
     invoke-virtual {v0, p0}, Landroid/preference/TwoStatePreference;->setOnPreferenceChangeListener(Landroid/preference/Preference$OnPreferenceChangeListener;)V
 
     .line 55
-    sget-object v0, Lcom/android/settings/MiuiDriveModeSettings;->pJ:Ljava/lang/String;
+    sget-object v0, Lcom/android/settings_ext/MiuiDriveModeSettings;->pJ:Ljava/lang/String;
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/MiuiDriveModeSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v0}, Lcom/android/settings_ext/MiuiDriveModeSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v0
 
     check-cast v0, Landroid/preference/TwoStatePreference;
 
-    iput-object v0, p0, Lcom/android/settings/MiuiDriveModeSettings;->pQ:Landroid/preference/TwoStatePreference;
+    iput-object v0, p0, Lcom/android/settings_ext/MiuiDriveModeSettings;->pQ:Landroid/preference/TwoStatePreference;
 
     .line 56
-    iget-object v0, p0, Lcom/android/settings/MiuiDriveModeSettings;->pQ:Landroid/preference/TwoStatePreference;
+    iget-object v0, p0, Lcom/android/settings_ext/MiuiDriveModeSettings;->pQ:Landroid/preference/TwoStatePreference;
 
     invoke-virtual {v0, p0}, Landroid/preference/TwoStatePreference;->setOnPreferenceChangeListener(Landroid/preference/Preference$OnPreferenceChangeListener;)V
 
     .line 57
-    sget-object v0, Lcom/android/settings/MiuiDriveModeSettings;->pK:Ljava/lang/String;
+    sget-object v0, Lcom/android/settings_ext/MiuiDriveModeSettings;->pK:Ljava/lang/String;
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/MiuiDriveModeSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v0}, Lcom/android/settings_ext/MiuiDriveModeSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v0
 
     check-cast v0, Landroid/preference/TwoStatePreference;
 
-    iput-object v0, p0, Lcom/android/settings/MiuiDriveModeSettings;->pR:Landroid/preference/TwoStatePreference;
+    iput-object v0, p0, Lcom/android/settings_ext/MiuiDriveModeSettings;->pR:Landroid/preference/TwoStatePreference;
 
     .line 58
-    iget-object v0, p0, Lcom/android/settings/MiuiDriveModeSettings;->pR:Landroid/preference/TwoStatePreference;
+    iget-object v0, p0, Lcom/android/settings_ext/MiuiDriveModeSettings;->pR:Landroid/preference/TwoStatePreference;
 
     invoke-virtual {v0, p0}, Landroid/preference/TwoStatePreference;->setOnPreferenceChangeListener(Landroid/preference/Preference$OnPreferenceChangeListener;)V
 
     .line 59
-    sget-object v0, Lcom/android/settings/MiuiDriveModeSettings;->pL:Ljava/lang/String;
+    sget-object v0, Lcom/android/settings_ext/MiuiDriveModeSettings;->pL:Ljava/lang/String;
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/MiuiDriveModeSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v0}, Lcom/android/settings_ext/MiuiDriveModeSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v0
 
     check-cast v0, Landroid/preference/EditTextPreference;
 
-    iput-object v0, p0, Lcom/android/settings/MiuiDriveModeSettings;->pS:Landroid/preference/EditTextPreference;
+    iput-object v0, p0, Lcom/android/settings_ext/MiuiDriveModeSettings;->pS:Landroid/preference/EditTextPreference;
 
     .line 60
-    iget-object v0, p0, Lcom/android/settings/MiuiDriveModeSettings;->pS:Landroid/preference/EditTextPreference;
+    iget-object v0, p0, Lcom/android/settings_ext/MiuiDriveModeSettings;->pS:Landroid/preference/EditTextPreference;
 
     invoke-virtual {v0, p0}, Landroid/preference/EditTextPreference;->setOnPreferenceChangeListener(Landroid/preference/Preference$OnPreferenceChangeListener;)V
 
     .line 61
-    invoke-virtual {p0}, Lcom/android/settings/MiuiDriveModeSettings;->getActionBar()Lmiui/app/ActionBar;
+    invoke-virtual {p0}, Lcom/android/settings_ext/MiuiDriveModeSettings;->getActionBar()Lmiui/app/ActionBar;
 
     move-result-object v0
 
@@ -307,21 +307,21 @@
     .line 62
     const/4 v0, 0x0
 
-    iput-boolean v0, p0, Lcom/android/settings/MiuiDriveModeSettings;->pU:Z
+    iput-boolean v0, p0, Lcom/android/settings_ext/MiuiDriveModeSettings;->pU:Z
 
     .line 63
-    sget-object v0, Lcom/android/settings/MiuiDriveModeSettings;->pM:Ljava/lang/String;
+    sget-object v0, Lcom/android/settings_ext/MiuiDriveModeSettings;->pM:Ljava/lang/String;
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/MiuiDriveModeSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v0}, Lcom/android/settings_ext/MiuiDriveModeSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v0
 
     check-cast v0, Landroid/preference/CheckBoxPreference;
 
-    iput-object v0, p0, Lcom/android/settings/MiuiDriveModeSettings;->pT:Landroid/preference/CheckBoxPreference;
+    iput-object v0, p0, Lcom/android/settings_ext/MiuiDriveModeSettings;->pT:Landroid/preference/CheckBoxPreference;
 
     .line 64
-    iget-object v0, p0, Lcom/android/settings/MiuiDriveModeSettings;->pT:Landroid/preference/CheckBoxPreference;
+    iget-object v0, p0, Lcom/android/settings_ext/MiuiDriveModeSettings;->pT:Landroid/preference/CheckBoxPreference;
 
     invoke-virtual {v0, p0}, Landroid/preference/CheckBoxPreference;->setOnPreferenceChangeListener(Landroid/preference/Preference$OnPreferenceChangeListener;)V
 
@@ -348,7 +348,7 @@
     invoke-super {p0}, Lmiui/preference/PreferenceActivity;->onPause()V
 
     .line 92
-    invoke-virtual {p0}, Lcom/android/settings/MiuiDriveModeSettings;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/settings_ext/MiuiDriveModeSettings;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v1
 
@@ -373,7 +373,7 @@
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
 
-    sget-object v2, Lcom/android/settings/MiuiDriveModeSettings;->PREFIX:Ljava/lang/String;
+    sget-object v2, Lcom/android/settings_ext/MiuiDriveModeSettings;->PREFIX:Ljava/lang/String;
 
     invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -392,12 +392,12 @@
     move-result-object v2
 
     .line 173
-    iget-object v0, p0, Lcom/android/settings/MiuiDriveModeSettings;->pS:Landroid/preference/EditTextPreference;
+    iget-object v0, p0, Lcom/android/settings_ext/MiuiDriveModeSettings;->pS:Landroid/preference/EditTextPreference;
 
     if-ne p1, v0, :cond_0
 
     .line 174
-    invoke-virtual {p0}, Lcom/android/settings/MiuiDriveModeSettings;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/settings_ext/MiuiDriveModeSettings;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v0
 
@@ -409,25 +409,25 @@
 
     .line 186
     :goto_0
-    invoke-direct {p0}, Lcom/android/settings/MiuiDriveModeSettings;->eI()V
+    invoke-direct {p0}, Lcom/android/settings_ext/MiuiDriveModeSettings;->eI()V
 
     .line 187
     return v1
 
     .line 175
     :cond_0
-    iget-object v0, p0, Lcom/android/settings/MiuiDriveModeSettings;->pT:Landroid/preference/CheckBoxPreference;
+    iget-object v0, p0, Lcom/android/settings_ext/MiuiDriveModeSettings;->pT:Landroid/preference/CheckBoxPreference;
 
     if-ne p1, v0, :cond_1
 
     .line 182
-    invoke-direct {p0}, Lcom/android/settings/MiuiDriveModeSettings;->eI()V
+    invoke-direct {p0}, Lcom/android/settings_ext/MiuiDriveModeSettings;->eI()V
 
     goto :goto_0
 
     .line 184
     :cond_1
-    invoke-virtual {p0}, Lcom/android/settings/MiuiDriveModeSettings;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/settings_ext/MiuiDriveModeSettings;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v3
 
@@ -460,12 +460,12 @@
     invoke-super {p0}, Lmiui/preference/PreferenceActivity;->onResume()V
 
     .line 75
-    invoke-direct {p0}, Lcom/android/settings/MiuiDriveModeSettings;->eI()V
+    invoke-direct {p0}, Lcom/android/settings_ext/MiuiDriveModeSettings;->eI()V
 
     .line 79
     const-string v0, "keyguard"
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/MiuiDriveModeSettings;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
+    invoke-virtual {p0, v0}, Lcom/android/settings_ext/MiuiDriveModeSettings;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object v0
 

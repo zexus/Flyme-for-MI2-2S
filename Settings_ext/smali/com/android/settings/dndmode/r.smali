@@ -1,19 +1,19 @@
-.class Lcom/android/settings/dndmode/r;
+.class Lcom/android/settings_ext/dndmode/r;
 .super Landroid/database/ContentObserver;
 .source "QuietActivity.java"
 
 
 # instance fields
-.field final synthetic Xb:Lcom/android/settings/dndmode/q;
+.field final synthetic Xb:Lcom/android/settings_ext/dndmode/q;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/dndmode/q;Landroid/os/Handler;)V
+.method constructor <init>(Lcom/android/settings_ext/dndmode/q;Landroid/os/Handler;)V
     .locals 0
 
     .prologue
     .line 41
-    iput-object p1, p0, Lcom/android/settings/dndmode/r;->Xb:Lcom/android/settings/dndmode/q;
+    iput-object p1, p0, Lcom/android/settings_ext/dndmode/r;->Xb:Lcom/android/settings_ext/dndmode/q;
 
     invoke-direct {p0, p2}, Landroid/database/ContentObserver;-><init>(Landroid/os/Handler;)V
 
@@ -27,9 +27,9 @@
 
     .prologue
     .line 45
-    iget-object v0, p0, Lcom/android/settings/dndmode/r;->Xb:Lcom/android/settings/dndmode/q;
+    iget-object v0, p0, Lcom/android/settings_ext/dndmode/r;->Xb:Lcom/android/settings_ext/dndmode/q;
 
-    invoke-static {v0}, Lcom/android/settings/dndmode/q;->a(Lcom/android/settings/dndmode/q;)Lmiui/app/Activity;
+    invoke-static {v0}, Lcom/android/settings_ext/dndmode/q;->a(Lcom/android/settings_ext/dndmode/q;)Lmiui/app/Activity;
 
     move-result-object v0
 
@@ -46,9 +46,9 @@
     move-result v0
 
     .line 47
-    iget-object v1, p0, Lcom/android/settings/dndmode/r;->Xb:Lcom/android/settings/dndmode/q;
+    iget-object v1, p0, Lcom/android/settings_ext/dndmode/r;->Xb:Lcom/android/settings_ext/dndmode/q;
 
-    invoke-static {v1, v0}, Lcom/android/settings/dndmode/q;->a(Lcom/android/settings/dndmode/q;I)V
+    invoke-static {v1, v0}, Lcom/android/settings_ext/dndmode/q;->a(Lcom/android/settings_ext/dndmode/q;I)V
 
     .line 48
     invoke-super {p0, p1}, Landroid/database/ContentObserver;->onChange(Z)V

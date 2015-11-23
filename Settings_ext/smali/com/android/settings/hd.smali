@@ -1,4 +1,4 @@
-.class Lcom/android/settings/hd;
+.class Lcom/android/settings_ext/hd;
 .super Ljava/lang/Object;
 .source "UsageStatsActivity.java"
 

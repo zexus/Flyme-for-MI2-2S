@@ -1,4 +1,4 @@
-.class Lcom/android/settings/dashboard/m;
+.class Lcom/android/settings_ext/dashboard/m;
 .super Ljava/lang/Object;
 .source "SearchResultsSummary.java"
 
@@ -16,7 +16,7 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 396
-    iput-object p1, p0, Lcom/android/settings/dashboard/m;->RD:Ljava/lang/String;
+    iput-object p1, p0, Lcom/android/settings_ext/dashboard/m;->RD:Ljava/lang/String;
 
     .line 397
     return-void

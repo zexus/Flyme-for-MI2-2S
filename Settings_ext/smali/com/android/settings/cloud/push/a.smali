@@ -1,4 +1,4 @@
-.class public interface abstract Lcom/android/settings/cloud/push/a;
+.class public interface abstract Lcom/android/settings_ext/cloud/push/a;
 .super Ljava/lang/Object;
 
 # interfaces

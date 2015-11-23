@@ -1,4 +1,4 @@
-.class Lcom/android/settings/dolby/DolbyEqualizerAlert$1;
+.class Lcom/android/settings_ext/dolby/DolbyEqualizerAlert$1;
 .super Ljava/lang/Object;
 .source "DolbyEqualizerAlert.java"
 
@@ -7,16 +7,16 @@
 
 
 # instance fields
-.field final synthetic XV:Lcom/android/settings/dolby/DolbyEqualizerAlert;
+.field final synthetic XV:Lcom/android/settings_ext/dolby/DolbyEqualizerAlert;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/dolby/DolbyEqualizerAlert;)V
+.method constructor <init>(Lcom/android/settings_ext/dolby/DolbyEqualizerAlert;)V
     .locals 0
 
     .prologue
     .line 90
-    iput-object p1, p0, Lcom/android/settings/dolby/DolbyEqualizerAlert$1;->XV:Lcom/android/settings/dolby/DolbyEqualizerAlert;
+    iput-object p1, p0, Lcom/android/settings_ext/dolby/DolbyEqualizerAlert$1;->XV:Lcom/android/settings_ext/dolby/DolbyEqualizerAlert;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -32,15 +32,15 @@
     const/4 v3, 0x1
 
     .line 94
-    iget-object v0, p0, Lcom/android/settings/dolby/DolbyEqualizerAlert$1;->XV:Lcom/android/settings/dolby/DolbyEqualizerAlert;
+    iget-object v0, p0, Lcom/android/settings_ext/dolby/DolbyEqualizerAlert$1;->XV:Lcom/android/settings_ext/dolby/DolbyEqualizerAlert;
 
-    invoke-static {v0, v3}, Lcom/android/settings/dolby/DolbyEqualizerAlert;->a(Lcom/android/settings/dolby/DolbyEqualizerAlert;Z)Z
+    invoke-static {v0, v3}, Lcom/android/settings_ext/dolby/DolbyEqualizerAlert;->a(Lcom/android/settings_ext/dolby/DolbyEqualizerAlert;Z)Z
 
     .line 96
     :try_start_0
-    iget-object v0, p0, Lcom/android/settings/dolby/DolbyEqualizerAlert$1;->XV:Lcom/android/settings/dolby/DolbyEqualizerAlert;
+    iget-object v0, p0, Lcom/android/settings_ext/dolby/DolbyEqualizerAlert$1;->XV:Lcom/android/settings_ext/dolby/DolbyEqualizerAlert;
 
-    invoke-static {v0}, Lcom/android/settings/dolby/DolbyEqualizerAlert;->a(Lcom/android/settings/dolby/DolbyEqualizerAlert;)Landroid/dolby/DsClient;
+    invoke-static {v0}, Lcom/android/settings_ext/dolby/DolbyEqualizerAlert;->a(Lcom/android/settings_ext/dolby/DolbyEqualizerAlert;)Landroid/dolby/DsClient;
 
     move-result-object v0
 
@@ -51,9 +51,9 @@
     if-eqz v0, :cond_0
 
     .line 97
-    iget-object v0, p0, Lcom/android/settings/dolby/DolbyEqualizerAlert$1;->XV:Lcom/android/settings/dolby/DolbyEqualizerAlert;
+    iget-object v0, p0, Lcom/android/settings_ext/dolby/DolbyEqualizerAlert$1;->XV:Lcom/android/settings_ext/dolby/DolbyEqualizerAlert;
 
-    invoke-static {v0}, Lcom/android/settings/dolby/DolbyEqualizerAlert;->a(Lcom/android/settings/dolby/DolbyEqualizerAlert;)Landroid/dolby/DsClient;
+    invoke-static {v0}, Lcom/android/settings_ext/dolby/DolbyEqualizerAlert;->a(Lcom/android/settings_ext/dolby/DolbyEqualizerAlert;)Landroid/dolby/DsClient;
 
     move-result-object v0
 
@@ -64,14 +64,14 @@
     if-ne v0, v3, :cond_0
 
     .line 98
-    iget-object v0, p0, Lcom/android/settings/dolby/DolbyEqualizerAlert$1;->XV:Lcom/android/settings/dolby/DolbyEqualizerAlert;
+    iget-object v0, p0, Lcom/android/settings_ext/dolby/DolbyEqualizerAlert$1;->XV:Lcom/android/settings_ext/dolby/DolbyEqualizerAlert;
 
-    invoke-virtual {v0}, Lcom/android/settings/dolby/DolbyEqualizerAlert;->pi()V
+    invoke-virtual {v0}, Lcom/android/settings_ext/dolby/DolbyEqualizerAlert;->pi()V
 
     .line 99
-    iget-object v0, p0, Lcom/android/settings/dolby/DolbyEqualizerAlert$1;->XV:Lcom/android/settings/dolby/DolbyEqualizerAlert;
+    iget-object v0, p0, Lcom/android/settings_ext/dolby/DolbyEqualizerAlert$1;->XV:Lcom/android/settings_ext/dolby/DolbyEqualizerAlert;
 
-    invoke-virtual {v0}, Lcom/android/settings/dolby/DolbyEqualizerAlert;->finish()V
+    invoke-virtual {v0}, Lcom/android/settings_ext/dolby/DolbyEqualizerAlert;->finish()V
     :try_end_0
     .catch Landroid/os/DeadObjectException; {:try_start_0 .. :try_end_0} :catch_0
     .catch Ljava/lang/IllegalArgumentException; {:try_start_0 .. :try_end_0} :catch_1
@@ -97,9 +97,9 @@
     :goto_1
     new-instance v0, Landroid/app/AlertDialog$Builder;
 
-    iget-object v1, p0, Lcom/android/settings/dolby/DolbyEqualizerAlert$1;->XV:Lcom/android/settings/dolby/DolbyEqualizerAlert;
+    iget-object v1, p0, Lcom/android/settings_ext/dolby/DolbyEqualizerAlert$1;->XV:Lcom/android/settings_ext/dolby/DolbyEqualizerAlert;
 
-    invoke-virtual {v1}, Lcom/android/settings/dolby/DolbyEqualizerAlert;->getActivity()Landroid/app/Activity;
+    invoke-virtual {v1}, Lcom/android/settings_ext/dolby/DolbyEqualizerAlert;->getActivity()Landroid/app/Activity;
 
     move-result-object v1
 
@@ -119,7 +119,7 @@
 
     const v1, 0x104000a
 
-    iget-object v2, p0, Lcom/android/settings/dolby/DolbyEqualizerAlert$1;->XV:Lcom/android/settings/dolby/DolbyEqualizerAlert;
+    iget-object v2, p0, Lcom/android/settings_ext/dolby/DolbyEqualizerAlert$1;->XV:Lcom/android/settings_ext/dolby/DolbyEqualizerAlert;
 
     invoke-virtual {v0, v1, v2}, Landroid/app/AlertDialog$Builder;->setPositiveButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
@@ -127,7 +127,7 @@
 
     const/high16 v1, 0x1040000
 
-    iget-object v2, p0, Lcom/android/settings/dolby/DolbyEqualizerAlert$1;->XV:Lcom/android/settings/dolby/DolbyEqualizerAlert;
+    iget-object v2, p0, Lcom/android/settings_ext/dolby/DolbyEqualizerAlert$1;->XV:Lcom/android/settings_ext/dolby/DolbyEqualizerAlert;
 
     invoke-virtual {v0, v1, v2}, Landroid/app/AlertDialog$Builder;->setNegativeButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
@@ -137,7 +137,7 @@
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/android/settings/dolby/DolbyEqualizerAlert$1;->XV:Lcom/android/settings/dolby/DolbyEqualizerAlert;
+    iget-object v1, p0, Lcom/android/settings_ext/dolby/DolbyEqualizerAlert$1;->XV:Lcom/android/settings_ext/dolby/DolbyEqualizerAlert;
 
     invoke-virtual {v0, v1}, Landroid/app/AlertDialog$Builder;->setOnCancelListener(Landroid/content/DialogInterface$OnCancelListener;)Landroid/app/AlertDialog$Builder;
 
@@ -148,7 +148,7 @@
     move-result-object v0
 
     .line 128
-    iget-object v1, p0, Lcom/android/settings/dolby/DolbyEqualizerAlert$1;->XV:Lcom/android/settings/dolby/DolbyEqualizerAlert;
+    iget-object v1, p0, Lcom/android/settings_ext/dolby/DolbyEqualizerAlert$1;->XV:Lcom/android/settings_ext/dolby/DolbyEqualizerAlert;
 
     invoke-virtual {v0, v1}, Landroid/app/AlertDialog;->setOnDismissListener(Landroid/content/DialogInterface$OnDismissListener;)V
 
@@ -217,11 +217,11 @@
 
     .prologue
     .line 134
-    iget-object v0, p0, Lcom/android/settings/dolby/DolbyEqualizerAlert$1;->XV:Lcom/android/settings/dolby/DolbyEqualizerAlert;
+    iget-object v0, p0, Lcom/android/settings_ext/dolby/DolbyEqualizerAlert$1;->XV:Lcom/android/settings_ext/dolby/DolbyEqualizerAlert;
 
     const/4 v1, 0x0
 
-    invoke-static {v0, v1}, Lcom/android/settings/dolby/DolbyEqualizerAlert;->a(Lcom/android/settings/dolby/DolbyEqualizerAlert;Z)Z
+    invoke-static {v0, v1}, Lcom/android/settings_ext/dolby/DolbyEqualizerAlert;->a(Lcom/android/settings_ext/dolby/DolbyEqualizerAlert;Z)Z
 
     .line 135
     return-void

@@ -1,4 +1,4 @@
-.class public Lcom/android/settings/display/ScreenPaperModeUpdateService;
+.class public Lcom/android/settings_ext/display/ScreenPaperModeUpdateService;
 .super Landroid/app/IntentService;
 .source "ScreenPaperModeUpdateService.java"
 
@@ -13,13 +13,13 @@
 
     .prologue
     .line 16
-    const-class v0, Lcom/android/settings/display/ScreenPaperModeUpdateService;
+    const-class v0, Lcom/android/settings_ext/display/ScreenPaperModeUpdateService;
 
     invoke-virtual {v0}, Ljava/lang/Class;->getSimpleName()Ljava/lang/String;
 
     move-result-object v0
 
-    sput-object v0, Lcom/android/settings/display/ScreenPaperModeUpdateService;->TAG:Ljava/lang/String;
+    sput-object v0, Lcom/android/settings_ext/display/ScreenPaperModeUpdateService;->TAG:Ljava/lang/String;
 
     return-void
 .end method
@@ -29,7 +29,7 @@
 
     .prologue
     .line 21
-    sget-object v0, Lcom/android/settings/display/ScreenPaperModeUpdateService;->TAG:Ljava/lang/String;
+    sget-object v0, Lcom/android/settings_ext/display/ScreenPaperModeUpdateService;->TAG:Ljava/lang/String;
 
     invoke-direct {p0, v0}, Landroid/app/IntentService;-><init>(Ljava/lang/String;)V
 
@@ -44,7 +44,7 @@
     const/4 v1, 0x0
 
     .line 30
-    invoke-static {p0}, Lcom/android/settings/display/d;->az(Landroid/content/Context;)J
+    invoke-static {p0}, Lcom/android/settings_ext/display/d;->az(Landroid/content/Context;)J
 
     move-result-wide v2
 
@@ -78,7 +78,7 @@
 
     const-string v3, "5cdd8678-cddf-4269-ab73-48387445bba7"
 
-    invoke-static {p0, v0, v2, v3}, Lcom/android/settings/display/r;->a(Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {p0, v0, v2, v3}, Lcom/android/settings_ext/display/r;->a(Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 
@@ -127,7 +127,7 @@
     move-result-wide v4
 
     .line 55
-    invoke-static {p0, v4, v5}, Lcom/android/settings/display/d;->c(Landroid/content/Context;J)V
+    invoke-static {p0, v4, v5}, Lcom/android/settings_ext/display/d;->c(Landroid/content/Context;J)V
 
     .line 56
     invoke-static {p0}, Landroid/provider/MiuiSettings$System;->getScreenPaperModePkgList(Landroid/content/Context;)Ljava/util/HashMap;
@@ -253,7 +253,7 @@
     .line 78
     :cond_5
     :try_start_2
-    invoke-static {p0}, Lcom/android/settings/display/d;->ay(Landroid/content/Context;)V
+    invoke-static {p0}, Lcom/android/settings_ext/display/d;->ay(Landroid/content/Context;)V
 
     .line 79
     invoke-static {p0, v3}, Landroid/provider/MiuiSettings$System;->setScreenPaperModePkgList(Landroid/content/Context;Ljava/util/HashMap;)V
@@ -270,7 +270,7 @@
 
     .prologue
     .line 26
-    invoke-direct {p0}, Lcom/android/settings/display/ScreenPaperModeUpdateService;->oL()V
+    invoke-direct {p0}, Lcom/android/settings_ext/display/ScreenPaperModeUpdateService;->oL()V
 
     .line 27
     return-void

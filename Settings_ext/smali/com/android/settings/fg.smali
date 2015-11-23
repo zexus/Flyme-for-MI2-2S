@@ -1,4 +1,4 @@
-.class Lcom/android/settings/fg;
+.class Lcom/android/settings_ext/fg;
 .super Ljava/lang/Object;
 .source "OtherPersonalSettings.java"
 
@@ -7,16 +7,16 @@
 
 
 # instance fields
-.field final synthetic tH:Lcom/android/settings/OtherPersonalSettings;
+.field final synthetic tH:Lcom/android/settings_ext/OtherPersonalSettings;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/OtherPersonalSettings;)V
+.method constructor <init>(Lcom/android/settings_ext/OtherPersonalSettings;)V
     .locals 0
 
     .prologue
     .line 80
-    iput-object p1, p0, Lcom/android/settings/fg;->tH:Lcom/android/settings/OtherPersonalSettings;
+    iput-object p1, p0, Lcom/android/settings_ext/fg;->tH:Lcom/android/settings_ext/OtherPersonalSettings;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -42,9 +42,9 @@
     invoke-virtual {v0, v1, v2}, Landroid/content/Intent;->setClassName(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
 
     .line 85
-    iget-object v1, p0, Lcom/android/settings/fg;->tH:Lcom/android/settings/OtherPersonalSettings;
+    iget-object v1, p0, Lcom/android/settings_ext/fg;->tH:Lcom/android/settings_ext/OtherPersonalSettings;
 
-    invoke-virtual {v1, v0}, Lcom/android/settings/OtherPersonalSettings;->startActivity(Landroid/content/Intent;)V
+    invoke-virtual {v1, v0}, Lcom/android/settings_ext/OtherPersonalSettings;->startActivity(Landroid/content/Intent;)V
 
     .line 86
     const/4 v0, 0x1

@@ -1,4 +1,4 @@
-.class Lcom/android/settings/bluetooth/BluetoothDiscoverableEnabler$2;
+.class Lcom/android/settings_ext/bluetooth/BluetoothDiscoverableEnabler$2;
 .super Ljava/lang/Object;
 .source "BluetoothDiscoverableEnabler.java"
 
@@ -7,16 +7,16 @@
 
 
 # instance fields
-.field final synthetic MG:Lcom/android/settings/bluetooth/BluetoothDiscoverableEnabler;
+.field final synthetic MG:Lcom/android/settings_ext/bluetooth/BluetoothDiscoverableEnabler;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/bluetooth/BluetoothDiscoverableEnabler;)V
+.method constructor <init>(Lcom/android/settings_ext/bluetooth/BluetoothDiscoverableEnabler;)V
     .locals 0
 
     .prologue
     .line 96
-    iput-object p1, p0, Lcom/android/settings/bluetooth/BluetoothDiscoverableEnabler$2;->MG:Lcom/android/settings/bluetooth/BluetoothDiscoverableEnabler;
+    iput-object p1, p0, Lcom/android/settings_ext/bluetooth/BluetoothDiscoverableEnabler$2;->MG:Lcom/android/settings_ext/bluetooth/BluetoothDiscoverableEnabler;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -30,9 +30,9 @@
 
     .prologue
     .line 98
-    iget-object v0, p0, Lcom/android/settings/bluetooth/BluetoothDiscoverableEnabler$2;->MG:Lcom/android/settings/bluetooth/BluetoothDiscoverableEnabler;
+    iget-object v0, p0, Lcom/android/settings_ext/bluetooth/BluetoothDiscoverableEnabler$2;->MG:Lcom/android/settings_ext/bluetooth/BluetoothDiscoverableEnabler;
 
-    invoke-static {v0}, Lcom/android/settings/bluetooth/BluetoothDiscoverableEnabler;->a(Lcom/android/settings/bluetooth/BluetoothDiscoverableEnabler;)V
+    invoke-static {v0}, Lcom/android/settings_ext/bluetooth/BluetoothDiscoverableEnabler;->a(Lcom/android/settings_ext/bluetooth/BluetoothDiscoverableEnabler;)V
 
     .line 99
     return-void

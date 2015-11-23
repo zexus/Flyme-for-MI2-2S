@@ -1,4 +1,4 @@
-.class public Lcom/android/settings/cloud/CloudSettingsProvider;
+.class public Lcom/android/settings_ext/cloud/CloudSettingsProvider;
 .super Landroid/content/ContentProvider;
 .source "CloudSettingsProvider.java"
 
@@ -10,7 +10,7 @@
 
 
 # instance fields
-.field private Pw:Lcom/android/settings/cloud/a;
+.field private Pw:Lcom/android/settings_ext/cloud/a;
 
 
 # direct methods
@@ -29,7 +29,7 @@
 
     aput-object v1, v0, v3
 
-    sput-object v0, Lcom/android/settings/cloud/CloudSettingsProvider;->Px:[Ljava/lang/String;
+    sput-object v0, Lcom/android/settings_ext/cloud/CloudSettingsProvider;->Px:[Ljava/lang/String;
 
     .line 25
     new-instance v0, Landroid/content/UriMatcher;
@@ -38,10 +38,10 @@
 
     invoke-direct {v0, v1}, Landroid/content/UriMatcher;-><init>(I)V
 
-    sput-object v0, Lcom/android/settings/cloud/CloudSettingsProvider;->Py:Landroid/content/UriMatcher;
+    sput-object v0, Lcom/android/settings_ext/cloud/CloudSettingsProvider;->Py:Landroid/content/UriMatcher;
 
     .line 27
-    sget-object v0, Lcom/android/settings/cloud/CloudSettingsProvider;->Py:Landroid/content/UriMatcher;
+    sget-object v0, Lcom/android/settings_ext/cloud/CloudSettingsProvider;->Py:Landroid/content/UriMatcher;
 
     const-string v1, "com.android.settings.cloud.CloudSettings"
 
@@ -95,9 +95,9 @@
     .line 176
     :cond_1
     :try_start_0
-    iget-object v2, p0, Lcom/android/settings/cloud/CloudSettingsProvider;->Pw:Lcom/android/settings/cloud/a;
+    iget-object v2, p0, Lcom/android/settings_ext/cloud/CloudSettingsProvider;->Pw:Lcom/android/settings_ext/cloud/a;
 
-    invoke-virtual {v2}, Lcom/android/settings/cloud/a;->getWritableDatabase()Landroid/database/sqlite/SQLiteDatabase;
+    invoke-virtual {v2}, Lcom/android/settings_ext/cloud/a;->getWritableDatabase()Landroid/database/sqlite/SQLiteDatabase;
     :try_end_0
     .catch Landroid/database/sqlite/SQLiteException; {:try_start_0 .. :try_end_0} :catch_0
 
@@ -296,7 +296,7 @@
     invoke-static {v0, v1}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
 
     .line 132
-    sget-object v0, Lcom/android/settings/cloud/CloudSettingsProvider;->Py:Landroid/content/UriMatcher;
+    sget-object v0, Lcom/android/settings_ext/cloud/CloudSettingsProvider;->Py:Landroid/content/UriMatcher;
 
     invoke-virtual {v0, p1}, Landroid/content/UriMatcher;->match(Landroid/net/Uri;)I
 
@@ -332,7 +332,7 @@
 
     .line 135
     :pswitch_0
-    invoke-direct {p0, p2}, Lcom/android/settings/cloud/CloudSettingsProvider;->a([Landroid/content/ContentValues;)I
+    invoke-direct {p0, p2}, Lcom/android/settings_ext/cloud/CloudSettingsProvider;->a([Landroid/content/ContentValues;)I
 
     move-result v0
 
@@ -360,14 +360,14 @@
 
     .line 146
     :try_start_0
-    iget-object v0, p0, Lcom/android/settings/cloud/CloudSettingsProvider;->Pw:Lcom/android/settings/cloud/a;
+    iget-object v0, p0, Lcom/android/settings_ext/cloud/CloudSettingsProvider;->Pw:Lcom/android/settings_ext/cloud/a;
 
-    invoke-virtual {v0}, Lcom/android/settings/cloud/a;->getWritableDatabase()Landroid/database/sqlite/SQLiteDatabase;
+    invoke-virtual {v0}, Lcom/android/settings_ext/cloud/a;->getWritableDatabase()Landroid/database/sqlite/SQLiteDatabase;
     :try_end_0
     .catch Landroid/database/sqlite/SQLiteException; {:try_start_0 .. :try_end_0} :catch_0
 
     .line 151
-    sget-object v0, Lcom/android/settings/cloud/CloudSettingsProvider;->Py:Landroid/content/UriMatcher;
+    sget-object v0, Lcom/android/settings_ext/cloud/CloudSettingsProvider;->Py:Landroid/content/UriMatcher;
 
     invoke-virtual {v0, p1}, Landroid/content/UriMatcher;->match(Landroid/net/Uri;)I
 
@@ -472,14 +472,14 @@
 
     .line 112
     :try_start_0
-    iget-object v0, p0, Lcom/android/settings/cloud/CloudSettingsProvider;->Pw:Lcom/android/settings/cloud/a;
+    iget-object v0, p0, Lcom/android/settings_ext/cloud/CloudSettingsProvider;->Pw:Lcom/android/settings_ext/cloud/a;
 
-    invoke-virtual {v0}, Lcom/android/settings/cloud/a;->getWritableDatabase()Landroid/database/sqlite/SQLiteDatabase;
+    invoke-virtual {v0}, Lcom/android/settings_ext/cloud/a;->getWritableDatabase()Landroid/database/sqlite/SQLiteDatabase;
     :try_end_0
     .catch Landroid/database/sqlite/SQLiteException; {:try_start_0 .. :try_end_0} :catch_0
 
     .line 117
-    sget-object v0, Lcom/android/settings/cloud/CloudSettingsProvider;->Py:Landroid/content/UriMatcher;
+    sget-object v0, Lcom/android/settings_ext/cloud/CloudSettingsProvider;->Py:Landroid/content/UriMatcher;
 
     invoke-virtual {v0, p1}, Landroid/content/UriMatcher;->match(Landroid/net/Uri;)I
 
@@ -569,15 +569,15 @@
     invoke-static {v0, v1}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
 
     .line 41
-    invoke-virtual {p0}, Lcom/android/settings/cloud/CloudSettingsProvider;->getContext()Landroid/content/Context;
+    invoke-virtual {p0}, Lcom/android/settings_ext/cloud/CloudSettingsProvider;->getContext()Landroid/content/Context;
 
     move-result-object v0
 
-    invoke-static {v0}, Lcom/android/settings/cloud/a;->an(Landroid/content/Context;)Lcom/android/settings/cloud/a;
+    invoke-static {v0}, Lcom/android/settings_ext/cloud/a;->an(Landroid/content/Context;)Lcom/android/settings_ext/cloud/a;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/cloud/CloudSettingsProvider;->Pw:Lcom/android/settings/cloud/a;
+    iput-object v0, p0, Lcom/android/settings_ext/cloud/CloudSettingsProvider;->Pw:Lcom/android/settings_ext/cloud/a;
 
     .line 42
     const/4 v0, 0x1
@@ -593,16 +593,16 @@
 
     .line 51
     :try_start_0
-    iget-object v0, p0, Lcom/android/settings/cloud/CloudSettingsProvider;->Pw:Lcom/android/settings/cloud/a;
+    iget-object v0, p0, Lcom/android/settings_ext/cloud/CloudSettingsProvider;->Pw:Lcom/android/settings_ext/cloud/a;
 
-    invoke-virtual {v0}, Lcom/android/settings/cloud/a;->getReadableDatabase()Landroid/database/sqlite/SQLiteDatabase;
+    invoke-virtual {v0}, Lcom/android/settings_ext/cloud/a;->getReadableDatabase()Landroid/database/sqlite/SQLiteDatabase;
     :try_end_0
     .catch Landroid/database/sqlite/SQLiteException; {:try_start_0 .. :try_end_0} :catch_0
 
     move-result-object v0
 
     .line 58
-    sget-object v1, Lcom/android/settings/cloud/CloudSettingsProvider;->Py:Landroid/content/UriMatcher;
+    sget-object v1, Lcom/android/settings_ext/cloud/CloudSettingsProvider;->Py:Landroid/content/UriMatcher;
 
     invoke-virtual {v1, p1}, Landroid/content/UriMatcher;->match(Landroid/net/Uri;)I
 
@@ -715,14 +715,14 @@
 
     .line 88
     :try_start_0
-    iget-object v0, p0, Lcom/android/settings/cloud/CloudSettingsProvider;->Pw:Lcom/android/settings/cloud/a;
+    iget-object v0, p0, Lcom/android/settings_ext/cloud/CloudSettingsProvider;->Pw:Lcom/android/settings_ext/cloud/a;
 
-    invoke-virtual {v0}, Lcom/android/settings/cloud/a;->getWritableDatabase()Landroid/database/sqlite/SQLiteDatabase;
+    invoke-virtual {v0}, Lcom/android/settings_ext/cloud/a;->getWritableDatabase()Landroid/database/sqlite/SQLiteDatabase;
     :try_end_0
     .catch Landroid/database/sqlite/SQLiteException; {:try_start_0 .. :try_end_0} :catch_0
 
     .line 94
-    sget-object v0, Lcom/android/settings/cloud/CloudSettingsProvider;->Py:Landroid/content/UriMatcher;
+    sget-object v0, Lcom/android/settings_ext/cloud/CloudSettingsProvider;->Py:Landroid/content/UriMatcher;
 
     invoke-virtual {v0, p1}, Landroid/content/UriMatcher;->match(Landroid/net/Uri;)I
 

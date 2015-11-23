@@ -1,4 +1,4 @@
-.class Lcom/android/settings/bluetooth/BluetoothSettings$3$4;
+.class Lcom/android/settings_ext/bluetooth/BluetoothSettings$3$4;
 .super Ljava/lang/Object;
 .source "BluetoothSettings.java"
 
@@ -16,7 +16,7 @@
 
     .prologue
     .line 551
-    iget-object v0, p0, Lcom/android/settings/bluetooth/BluetoothSettings$3$4;->val$dialog:Landroid/app/AlertDialog;
+    iget-object v0, p0, Lcom/android/settings_ext/bluetooth/BluetoothSettings$3$4;->val$dialog:Landroid/app/AlertDialog;
 
     const/4 v1, -0x1
 
@@ -69,7 +69,7 @@
 
     .prologue
     .line 561
-    iget-object v0, p0, Lcom/android/settings/bluetooth/BluetoothSettings$3$4;->val$dialog:Landroid/app/AlertDialog;
+    iget-object v0, p0, Lcom/android/settings_ext/bluetooth/BluetoothSettings$3$4;->val$dialog:Landroid/app/AlertDialog;
 
     const/4 v1, -0x1
 

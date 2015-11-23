@@ -1,19 +1,19 @@
-.class final Lcom/android/settings/notification/OtherSoundSettings$SettingsObserver;
+.class final Lcom/android/settings_ext/notification/OtherSoundSettings$SettingsObserver;
 .super Landroid/database/ContentObserver;
 .source "OtherSoundSettings.java"
 
 
 # instance fields
-.field final synthetic afN:Lcom/android/settings/notification/OtherSoundSettings;
+.field final synthetic afN:Lcom/android/settings_ext/notification/OtherSoundSettings;
 
 
 # direct methods
-.method public constructor <init>(Lcom/android/settings/notification/OtherSoundSettings;)V
+.method public constructor <init>(Lcom/android/settings_ext/notification/OtherSoundSettings;)V
     .locals 1
 
     .prologue
     .line 205
-    iput-object p1, p0, Lcom/android/settings/notification/OtherSoundSettings$SettingsObserver;->afN:Lcom/android/settings/notification/OtherSoundSettings;
+    iput-object p1, p0, Lcom/android/settings_ext/notification/OtherSoundSettings$SettingsObserver;->afN:Lcom/android/settings_ext/notification/OtherSoundSettings;
 
     .line 206
     new-instance v0, Landroid/os/Handler;
@@ -35,9 +35,9 @@
     const/4 v1, 0x0
 
     .line 210
-    iget-object v0, p0, Lcom/android/settings/notification/OtherSoundSettings$SettingsObserver;->afN:Lcom/android/settings/notification/OtherSoundSettings;
+    iget-object v0, p0, Lcom/android/settings_ext/notification/OtherSoundSettings$SettingsObserver;->afN:Lcom/android/settings_ext/notification/OtherSoundSettings;
 
-    invoke-static {v0}, Lcom/android/settings/notification/OtherSoundSettings;->a(Lcom/android/settings/notification/OtherSoundSettings;)Landroid/content/ContentResolver;
+    invoke-static {v0}, Lcom/android/settings_ext/notification/OtherSoundSettings;->a(Lcom/android/settings_ext/notification/OtherSoundSettings;)Landroid/content/ContentResolver;
 
     move-result-object v2
 
@@ -45,7 +45,7 @@
     if-eqz p1, :cond_0
 
     .line 212
-    invoke-static {}, Lcom/android/settings/notification/OtherSoundSettings;->qO()[Lcom/android/settings/notification/SettingPref;
+    invoke-static {}, Lcom/android/settings_ext/notification/OtherSoundSettings;->qO()[Lcom/android/settings_ext/notification/SettingPref;
 
     move-result-object v3
 
@@ -59,7 +59,7 @@
     aget-object v5, v3, v0
 
     .line 213
-    invoke-virtual {v5}, Lcom/android/settings/notification/SettingPref;->getUri()Landroid/net/Uri;
+    invoke-virtual {v5}, Lcom/android/settings_ext/notification/SettingPref;->getUri()Landroid/net/Uri;
 
     move-result-object v5
 
@@ -87,7 +87,7 @@
     invoke-super {p0, p1, p2}, Landroid/database/ContentObserver;->onChange(ZLandroid/net/Uri;)V
 
     .line 223
-    invoke-static {}, Lcom/android/settings/notification/OtherSoundSettings;->qO()[Lcom/android/settings/notification/SettingPref;
+    invoke-static {}, Lcom/android/settings_ext/notification/OtherSoundSettings;->qO()[Lcom/android/settings_ext/notification/SettingPref;
 
     move-result-object v1
 
@@ -101,7 +101,7 @@
     aget-object v3, v1, v0
 
     .line 224
-    invoke-virtual {v3}, Lcom/android/settings/notification/SettingPref;->getUri()Landroid/net/Uri;
+    invoke-virtual {v3}, Lcom/android/settings_ext/notification/SettingPref;->getUri()Landroid/net/Uri;
 
     move-result-object v4
 
@@ -112,13 +112,13 @@
     if-eqz v4, :cond_1
 
     .line 225
-    iget-object v0, p0, Lcom/android/settings/notification/OtherSoundSettings$SettingsObserver;->afN:Lcom/android/settings/notification/OtherSoundSettings;
+    iget-object v0, p0, Lcom/android/settings_ext/notification/OtherSoundSettings$SettingsObserver;->afN:Lcom/android/settings_ext/notification/OtherSoundSettings;
 
-    invoke-static {v0}, Lcom/android/settings/notification/OtherSoundSettings;->b(Lcom/android/settings/notification/OtherSoundSettings;)Landroid/content/Context;
+    invoke-static {v0}, Lcom/android/settings_ext/notification/OtherSoundSettings;->b(Lcom/android/settings_ext/notification/OtherSoundSettings;)Landroid/content/Context;
 
     move-result-object v0
 
-    invoke-virtual {v3, v0}, Lcom/android/settings/notification/SettingPref;->bg(Landroid/content/Context;)V
+    invoke-virtual {v3, v0}, Lcom/android/settings_ext/notification/SettingPref;->bg(Landroid/content/Context;)V
 
     .line 229
     :cond_0

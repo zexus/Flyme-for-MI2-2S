@@ -1,4 +1,4 @@
-.class Lcom/android/settings/wifi/E;
+.class Lcom/android/settings_ext/wifi/E;
 .super Ljava/lang/Object;
 .source "MultiSimAdapter.java"
 
@@ -10,28 +10,28 @@
 
 .field atJ:Landroid/widget/TextView;
 
-.field final synthetic atK:Lcom/android/settings/wifi/C;
+.field final synthetic atK:Lcom/android/settings_ext/wifi/C;
 
 
 # direct methods
-.method private constructor <init>(Lcom/android/settings/wifi/C;)V
+.method private constructor <init>(Lcom/android/settings_ext/wifi/C;)V
     .locals 0
 
     .prologue
     .line 176
-    iput-object p1, p0, Lcom/android/settings/wifi/E;->atK:Lcom/android/settings/wifi/C;
+    iput-object p1, p0, Lcom/android/settings_ext/wifi/E;->atK:Lcom/android/settings_ext/wifi/C;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
 .end method
 
-.method synthetic constructor <init>(Lcom/android/settings/wifi/C;Lcom/android/settings/wifi/D;)V
+.method synthetic constructor <init>(Lcom/android/settings_ext/wifi/C;Lcom/android/settings_ext/wifi/D;)V
     .locals 0
 
     .prologue
     .line 176
-    invoke-direct {p0, p1}, Lcom/android/settings/wifi/E;-><init>(Lcom/android/settings/wifi/C;)V
+    invoke-direct {p0, p1}, Lcom/android/settings_ext/wifi/E;-><init>(Lcom/android/settings_ext/wifi/C;)V
 
     return-void
 .end method

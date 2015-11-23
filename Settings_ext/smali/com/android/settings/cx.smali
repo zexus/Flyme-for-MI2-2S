@@ -1,4 +1,4 @@
-.class Lcom/android/settings/cx;
+.class Lcom/android/settings_ext/cx;
 .super Ljava/lang/Object;
 .source "FrequentlyFragment.java"
 
@@ -7,16 +7,16 @@
 
 
 # instance fields
-.field final synthetic lz:Lcom/android/settings/FrequentlyFragment;
+.field final synthetic lz:Lcom/android/settings_ext/FrequentlyFragment;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/FrequentlyFragment;)V
+.method constructor <init>(Lcom/android/settings_ext/FrequentlyFragment;)V
     .locals 0
 
     .prologue
     .line 35
-    iput-object p1, p0, Lcom/android/settings/cx;->lz:Lcom/android/settings/FrequentlyFragment;
+    iput-object p1, p0, Lcom/android/settings_ext/cx;->lz:Lcom/android/settings_ext/FrequentlyFragment;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -34,9 +34,9 @@
     const/4 v7, 0x1
 
     .line 39
-    iget-object v0, p0, Lcom/android/settings/cx;->lz:Lcom/android/settings/FrequentlyFragment;
+    iget-object v0, p0, Lcom/android/settings_ext/cx;->lz:Lcom/android/settings_ext/FrequentlyFragment;
 
-    iget-object v0, v0, Lcom/android/settings/FrequentlyFragment;->bY:Ljava/util/List;
+    iget-object v0, v0, Lcom/android/settings_ext/FrequentlyFragment;->bY:Ljava/util/List;
 
     invoke-interface {v0, p3}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
@@ -47,9 +47,9 @@
     .line 41
     new-instance v1, Landroid/app/AlertDialog$Builder;
 
-    iget-object v2, p0, Lcom/android/settings/cx;->lz:Lcom/android/settings/FrequentlyFragment;
+    iget-object v2, p0, Lcom/android/settings_ext/cx;->lz:Lcom/android/settings_ext/FrequentlyFragment;
 
-    invoke-virtual {v2}, Lcom/android/settings/FrequentlyFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {v2}, Lcom/android/settings_ext/FrequentlyFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v2
 
@@ -65,11 +65,11 @@
 
     move-result-object v1
 
-    iget-object v2, p0, Lcom/android/settings/cx;->lz:Lcom/android/settings/FrequentlyFragment;
+    iget-object v2, p0, Lcom/android/settings_ext/cx;->lz:Lcom/android/settings_ext/FrequentlyFragment;
 
     const v3, 0x7f090b95
 
-    invoke-virtual {v2, v3}, Lcom/android/settings/FrequentlyFragment;->getString(I)Ljava/lang/String;
+    invoke-virtual {v2, v3}, Lcom/android/settings_ext/FrequentlyFragment;->getString(I)Ljava/lang/String;
 
     move-result-object v2
 
@@ -77,11 +77,11 @@
 
     const/4 v4, 0x0
 
-    iget-object v5, p0, Lcom/android/settings/cx;->lz:Lcom/android/settings/FrequentlyFragment;
+    iget-object v5, p0, Lcom/android/settings_ext/cx;->lz:Lcom/android/settings_ext/FrequentlyFragment;
 
     iget v6, v0, Landroid/preference/PreferenceActivity$Header;->titleRes:I
 
-    invoke-virtual {v5, v6}, Lcom/android/settings/FrequentlyFragment;->getString(I)Ljava/lang/String;
+    invoke-virtual {v5, v6}, Lcom/android/settings_ext/FrequentlyFragment;->getString(I)Ljava/lang/String;
 
     move-result-object v5
 
@@ -95,9 +95,9 @@
 
     move-result-object v1
 
-    new-instance v2, Lcom/android/settings/cy;
+    new-instance v2, Lcom/android/settings_ext/cy;
 
-    invoke-direct {v2, p0, v0}, Lcom/android/settings/cy;-><init>(Lcom/android/settings/cx;Landroid/preference/PreferenceActivity$Header;)V
+    invoke-direct {v2, p0, v0}, Lcom/android/settings_ext/cy;-><init>(Lcom/android/settings_ext/cx;Landroid/preference/PreferenceActivity$Header;)V
 
     invoke-virtual {v1, v8, v2}, Landroid/app/AlertDialog$Builder;->setPositiveButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 

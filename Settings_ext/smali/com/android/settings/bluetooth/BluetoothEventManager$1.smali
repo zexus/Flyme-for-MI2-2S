@@ -1,19 +1,19 @@
-.class Lcom/android/settings/bluetooth/BluetoothEventManager$1;
+.class Lcom/android/settings_ext/bluetooth/BluetoothEventManager$1;
 .super Landroid/content/BroadcastReceiver;
 .source "BluetoothEventManager.java"
 
 
 # instance fields
-.field final synthetic MP:Lcom/android/settings/bluetooth/BluetoothEventManager;
+.field final synthetic MP:Lcom/android/settings_ext/bluetooth/BluetoothEventManager;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/bluetooth/BluetoothEventManager;)V
+.method constructor <init>(Lcom/android/settings_ext/bluetooth/BluetoothEventManager;)V
     .locals 0
 
     .prologue
     .line 141
-    iput-object p1, p0, Lcom/android/settings/bluetooth/BluetoothEventManager$1;->MP:Lcom/android/settings/bluetooth/BluetoothEventManager;
+    iput-object p1, p0, Lcom/android/settings_ext/bluetooth/BluetoothEventManager$1;->MP:Lcom/android/settings_ext/bluetooth/BluetoothEventManager;
 
     invoke-direct {p0}, Landroid/content/BroadcastReceiver;-><init>()V
 
@@ -41,9 +41,9 @@
     check-cast v0, Landroid/bluetooth/BluetoothDevice;
 
     .line 148
-    iget-object v2, p0, Lcom/android/settings/bluetooth/BluetoothEventManager$1;->MP:Lcom/android/settings/bluetooth/BluetoothEventManager;
+    iget-object v2, p0, Lcom/android/settings_ext/bluetooth/BluetoothEventManager$1;->MP:Lcom/android/settings_ext/bluetooth/BluetoothEventManager;
 
-    invoke-static {v2}, Lcom/android/settings/bluetooth/BluetoothEventManager;->a(Lcom/android/settings/bluetooth/BluetoothEventManager;)Ljava/util/Map;
+    invoke-static {v2}, Lcom/android/settings_ext/bluetooth/BluetoothEventManager;->a(Lcom/android/settings_ext/bluetooth/BluetoothEventManager;)Ljava/util/Map;
 
     move-result-object v2
 
@@ -51,13 +51,13 @@
 
     move-result-object v1
 
-    check-cast v1, Lcom/android/settings/bluetooth/BluetoothEventManager$Handler;
+    check-cast v1, Lcom/android/settings_ext/bluetooth/BluetoothEventManager$Handler;
 
     .line 149
     if-eqz v1, :cond_0
 
     .line 150
-    invoke-interface {v1, p1, p2, v0}, Lcom/android/settings/bluetooth/BluetoothEventManager$Handler;->a(Landroid/content/Context;Landroid/content/Intent;Landroid/bluetooth/BluetoothDevice;)V
+    invoke-interface {v1, p1, p2, v0}, Lcom/android/settings_ext/bluetooth/BluetoothEventManager$Handler;->a(Landroid/content/Context;Landroid/content/Intent;Landroid/bluetooth/BluetoothDevice;)V
 
     .line 152
     :cond_0

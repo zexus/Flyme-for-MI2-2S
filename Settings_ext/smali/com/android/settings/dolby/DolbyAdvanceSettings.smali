@@ -1,5 +1,5 @@
-.class public Lcom/android/settings/dolby/DolbyAdvanceSettings;
-.super Lcom/android/settings/SettingsPreferenceFragment;
+.class public Lcom/android/settings_ext/dolby/DolbyAdvanceSettings;
+.super Lcom/android/settings_ext/SettingsPreferenceFragment;
 .source "DolbyAdvanceSettings.java"
 
 # interfaces
@@ -38,13 +38,13 @@
 
     .prologue
     .line 28
-    const-class v0, Lcom/android/settings/dolby/DolbyAdvanceSettings;
+    const-class v0, Lcom/android/settings_ext/dolby/DolbyAdvanceSettings;
 
     invoke-virtual {v0}, Ljava/lang/Class;->getName()Ljava/lang/String;
 
     move-result-object v0
 
-    sput-object v0, Lcom/android/settings/dolby/DolbyAdvanceSettings;->TAG:Ljava/lang/String;
+    sput-object v0, Lcom/android/settings_ext/dolby/DolbyAdvanceSettings;->TAG:Ljava/lang/String;
 
     return-void
 .end method
@@ -54,51 +54,51 @@
 
     .prologue
     .line 26
-    invoke-direct {p0}, Lcom/android/settings/SettingsPreferenceFragment;-><init>()V
+    invoke-direct {p0}, Lcom/android/settings_ext/SettingsPreferenceFragment;-><init>()V
 
     .line 186
-    new-instance v0, Lcom/android/settings/dolby/DolbyAdvanceSettings$1;
+    new-instance v0, Lcom/android/settings_ext/dolby/DolbyAdvanceSettings$1;
 
-    invoke-direct {v0, p0}, Lcom/android/settings/dolby/DolbyAdvanceSettings$1;-><init>(Lcom/android/settings/dolby/DolbyAdvanceSettings;)V
+    invoke-direct {v0, p0}, Lcom/android/settings_ext/dolby/DolbyAdvanceSettings$1;-><init>(Lcom/android/settings_ext/dolby/DolbyAdvanceSettings;)V
 
-    iput-object v0, p0, Lcom/android/settings/dolby/DolbyAdvanceSettings;->XG:Landroid/dolby/IDsClientEvents;
+    iput-object v0, p0, Lcom/android/settings_ext/dolby/DolbyAdvanceSettings;->XG:Landroid/dolby/IDsClientEvents;
 
     .line 222
-    new-instance v0, Lcom/android/settings/dolby/DolbyAdvanceSettings$2;
+    new-instance v0, Lcom/android/settings_ext/dolby/DolbyAdvanceSettings$2;
 
-    invoke-direct {v0, p0}, Lcom/android/settings/dolby/DolbyAdvanceSettings$2;-><init>(Lcom/android/settings/dolby/DolbyAdvanceSettings;)V
+    invoke-direct {v0, p0}, Lcom/android/settings_ext/dolby/DolbyAdvanceSettings$2;-><init>(Lcom/android/settings_ext/dolby/DolbyAdvanceSettings;)V
 
-    iput-object v0, p0, Lcom/android/settings/dolby/DolbyAdvanceSettings;->mo:Landroid/content/BroadcastReceiver;
-
-    return-void
-.end method
-
-.method static synthetic a(Lcom/android/settings/dolby/DolbyAdvanceSettings;)V
-    .locals 0
-
-    .prologue
-    .line 26
-    invoke-direct {p0}, Lcom/android/settings/dolby/DolbyAdvanceSettings;->refresh()V
+    iput-object v0, p0, Lcom/android/settings_ext/dolby/DolbyAdvanceSettings;->mo:Landroid/content/BroadcastReceiver;
 
     return-void
 .end method
 
-.method static synthetic a(Lcom/android/settings/dolby/DolbyAdvanceSettings;Landroid/content/Context;)V
+.method static synthetic a(Lcom/android/settings_ext/dolby/DolbyAdvanceSettings;)V
     .locals 0
 
     .prologue
     .line 26
-    invoke-direct {p0, p1}, Lcom/android/settings/dolby/DolbyAdvanceSettings;->aO(Landroid/content/Context;)V
+    invoke-direct {p0}, Lcom/android/settings_ext/dolby/DolbyAdvanceSettings;->refresh()V
 
     return-void
 .end method
 
-.method static synthetic a(Lcom/android/settings/dolby/DolbyAdvanceSettings;Z)Z
+.method static synthetic a(Lcom/android/settings_ext/dolby/DolbyAdvanceSettings;Landroid/content/Context;)V
     .locals 0
 
     .prologue
     .line 26
-    iput-boolean p1, p0, Lcom/android/settings/dolby/DolbyAdvanceSettings;->mn:Z
+    invoke-direct {p0, p1}, Lcom/android/settings_ext/dolby/DolbyAdvanceSettings;->aO(Landroid/content/Context;)V
+
+    return-void
+.end method
+
+.method static synthetic a(Lcom/android/settings_ext/dolby/DolbyAdvanceSettings;Z)Z
+    .locals 0
+
+    .prologue
+    .line 26
+    iput-boolean p1, p0, Lcom/android/settings_ext/dolby/DolbyAdvanceSettings;->mn:Z
 
     return p1
 .end method
@@ -134,12 +134,12 @@
 
     .line 255
     :goto_0
-    iget-object v1, p0, Lcom/android/settings/dolby/DolbyAdvanceSettings;->XB:Landroid/preference/CheckBoxPreference;
+    iget-object v1, p0, Lcom/android/settings_ext/dolby/DolbyAdvanceSettings;->XB:Landroid/preference/CheckBoxPreference;
 
     invoke-virtual {v1, v0}, Landroid/preference/CheckBoxPreference;->setEnabled(Z)V
 
     .line 256
-    iget-object v1, p0, Lcom/android/settings/dolby/DolbyAdvanceSettings;->XE:Landroid/preference/CheckBoxPreference;
+    iget-object v1, p0, Lcom/android/settings_ext/dolby/DolbyAdvanceSettings;->XE:Landroid/preference/CheckBoxPreference;
 
     invoke-virtual {v1, v0}, Landroid/preference/CheckBoxPreference;->setEnabled(Z)V
 
@@ -158,13 +158,13 @@
 
     .prologue
     .line 104
-    invoke-virtual {p0}, Lcom/android/settings/dolby/DolbyAdvanceSettings;->isResumed()Z
+    invoke-virtual {p0}, Lcom/android/settings_ext/dolby/DolbyAdvanceSettings;->isResumed()Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
-    iget-boolean v0, p0, Lcom/android/settings/dolby/DolbyAdvanceSettings;->mn:Z
+    iget-boolean v0, p0, Lcom/android/settings_ext/dolby/DolbyAdvanceSettings;->mn:Z
 
     if-nez v0, :cond_1
 
@@ -176,7 +176,7 @@
     .line 109
     :cond_1
     :try_start_0
-    iget-object v0, p0, Lcom/android/settings/dolby/DolbyAdvanceSettings;->XF:Landroid/dolby/DsClient;
+    iget-object v0, p0, Lcom/android/settings_ext/dolby/DolbyAdvanceSettings;->XF:Landroid/dolby/DsClient;
 
     const/4 v1, 0x1
 
@@ -185,7 +185,7 @@
     move-result-object v0
 
     .line 110
-    iget-object v1, p0, Lcom/android/settings/dolby/DolbyAdvanceSettings;->Xz:Landroid/preference/CheckBoxPreference;
+    iget-object v1, p0, Lcom/android/settings_ext/dolby/DolbyAdvanceSettings;->Xz:Landroid/preference/CheckBoxPreference;
 
     invoke-virtual {v0}, Landroid/dolby/DsClientSettings;->getVolumeLevellerOn()Z
 
@@ -194,7 +194,7 @@
     invoke-virtual {v1, v2}, Landroid/preference/CheckBoxPreference;->setChecked(Z)V
 
     .line 111
-    iget-object v1, p0, Lcom/android/settings/dolby/DolbyAdvanceSettings;->XA:Landroid/preference/CheckBoxPreference;
+    iget-object v1, p0, Lcom/android/settings_ext/dolby/DolbyAdvanceSettings;->XA:Landroid/preference/CheckBoxPreference;
 
     invoke-virtual {v0}, Landroid/dolby/DsClientSettings;->getDialogEnhancerOn()Z
 
@@ -203,7 +203,7 @@
     invoke-virtual {v1, v2}, Landroid/preference/CheckBoxPreference;->setChecked(Z)V
 
     .line 112
-    iget-object v1, p0, Lcom/android/settings/dolby/DolbyAdvanceSettings;->XB:Landroid/preference/CheckBoxPreference;
+    iget-object v1, p0, Lcom/android/settings_ext/dolby/DolbyAdvanceSettings;->XB:Landroid/preference/CheckBoxPreference;
 
     invoke-virtual {v0}, Landroid/dolby/DsClientSettings;->getHeadphoneVirtualizerOn()Z
 
@@ -212,7 +212,7 @@
     invoke-virtual {v1, v0}, Landroid/preference/CheckBoxPreference;->setChecked(Z)V
 
     .line 114
-    iget-object v0, p0, Lcom/android/settings/dolby/DolbyAdvanceSettings;->XF:Landroid/dolby/DsClient;
+    iget-object v0, p0, Lcom/android/settings_ext/dolby/DolbyAdvanceSettings;->XF:Landroid/dolby/DsClient;
 
     const/4 v1, 0x0
 
@@ -221,7 +221,7 @@
     move-result-object v0
 
     .line 115
-    iget-object v1, p0, Lcom/android/settings/dolby/DolbyAdvanceSettings;->XC:Landroid/preference/CheckBoxPreference;
+    iget-object v1, p0, Lcom/android/settings_ext/dolby/DolbyAdvanceSettings;->XC:Landroid/preference/CheckBoxPreference;
 
     invoke-virtual {v0}, Landroid/dolby/DsClientSettings;->getVolumeLevellerOn()Z
 
@@ -230,7 +230,7 @@
     invoke-virtual {v1, v2}, Landroid/preference/CheckBoxPreference;->setChecked(Z)V
 
     .line 116
-    iget-object v1, p0, Lcom/android/settings/dolby/DolbyAdvanceSettings;->XD:Landroid/preference/CheckBoxPreference;
+    iget-object v1, p0, Lcom/android/settings_ext/dolby/DolbyAdvanceSettings;->XD:Landroid/preference/CheckBoxPreference;
 
     invoke-virtual {v0}, Landroid/dolby/DsClientSettings;->getDialogEnhancerOn()Z
 
@@ -239,7 +239,7 @@
     invoke-virtual {v1, v2}, Landroid/preference/CheckBoxPreference;->setChecked(Z)V
 
     .line 117
-    iget-object v1, p0, Lcom/android/settings/dolby/DolbyAdvanceSettings;->XE:Landroid/preference/CheckBoxPreference;
+    iget-object v1, p0, Lcom/android/settings_ext/dolby/DolbyAdvanceSettings;->XE:Landroid/preference/CheckBoxPreference;
 
     invoke-virtual {v0}, Landroid/dolby/DsClientSettings;->getHeadphoneVirtualizerOn()Z
 
@@ -248,11 +248,11 @@
     invoke-virtual {v1, v0}, Landroid/preference/CheckBoxPreference;->setChecked(Z)V
 
     .line 119
-    invoke-virtual {p0}, Lcom/android/settings/dolby/DolbyAdvanceSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/dolby/DolbyAdvanceSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
-    invoke-direct {p0, v0}, Lcom/android/settings/dolby/DolbyAdvanceSettings;->aO(Landroid/content/Context;)V
+    invoke-direct {p0, v0}, Lcom/android/settings_ext/dolby/DolbyAdvanceSettings;->aO(Landroid/content/Context;)V
     :try_end_0
     .catch Landroid/os/RemoteException; {:try_start_0 .. :try_end_0} :catch_0
 
@@ -263,7 +263,7 @@
     move-exception v0
 
     .line 121
-    sget-object v1, Lcom/android/settings/dolby/DolbyAdvanceSettings;->TAG:Ljava/lang/String;
+    sget-object v1, Lcom/android/settings_ext/dolby/DolbyAdvanceSettings;->TAG:Ljava/lang/String;
 
     const-string v2, ""
 
@@ -279,31 +279,31 @@
 
     .prologue
     .line 49
-    invoke-super {p0, p1}, Lcom/android/settings/SettingsPreferenceFragment;->onCreate(Landroid/os/Bundle;)V
+    invoke-super {p0, p1}, Lcom/android/settings_ext/SettingsPreferenceFragment;->onCreate(Landroid/os/Bundle;)V
 
     .line 50
     const v0, 0x7f060050
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/dolby/DolbyAdvanceSettings;->addPreferencesFromResource(I)V
+    invoke-virtual {p0, v0}, Lcom/android/settings_ext/dolby/DolbyAdvanceSettings;->addPreferencesFromResource(I)V
 
     .line 53
     new-instance v0, Landroid/dolby/DsClient;
 
     invoke-direct {v0}, Landroid/dolby/DsClient;-><init>()V
 
-    iput-object v0, p0, Lcom/android/settings/dolby/DolbyAdvanceSettings;->XF:Landroid/dolby/DsClient;
+    iput-object v0, p0, Lcom/android/settings_ext/dolby/DolbyAdvanceSettings;->XF:Landroid/dolby/DsClient;
 
     .line 54
-    iget-object v0, p0, Lcom/android/settings/dolby/DolbyAdvanceSettings;->XF:Landroid/dolby/DsClient;
+    iget-object v0, p0, Lcom/android/settings_ext/dolby/DolbyAdvanceSettings;->XF:Landroid/dolby/DsClient;
 
-    iget-object v1, p0, Lcom/android/settings/dolby/DolbyAdvanceSettings;->XG:Landroid/dolby/IDsClientEvents;
+    iget-object v1, p0, Lcom/android/settings_ext/dolby/DolbyAdvanceSettings;->XG:Landroid/dolby/IDsClientEvents;
 
     invoke-virtual {v0, v1}, Landroid/dolby/DsClient;->setEventListener(Landroid/dolby/IDsClientEvents;)V
 
     .line 55
-    iget-object v0, p0, Lcom/android/settings/dolby/DolbyAdvanceSettings;->XF:Landroid/dolby/DsClient;
+    iget-object v0, p0, Lcom/android/settings_ext/dolby/DolbyAdvanceSettings;->XF:Landroid/dolby/DsClient;
 
-    invoke-virtual {p0}, Lcom/android/settings/dolby/DolbyAdvanceSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/dolby/DolbyAdvanceSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v1
 
@@ -312,96 +312,96 @@
     .line 57
     const-string v0, "music_volume_leveler"
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/dolby/DolbyAdvanceSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v0}, Lcom/android/settings_ext/dolby/DolbyAdvanceSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v0
 
     check-cast v0, Landroid/preference/CheckBoxPreference;
 
-    iput-object v0, p0, Lcom/android/settings/dolby/DolbyAdvanceSettings;->Xz:Landroid/preference/CheckBoxPreference;
+    iput-object v0, p0, Lcom/android/settings_ext/dolby/DolbyAdvanceSettings;->Xz:Landroid/preference/CheckBoxPreference;
 
     .line 58
-    iget-object v0, p0, Lcom/android/settings/dolby/DolbyAdvanceSettings;->Xz:Landroid/preference/CheckBoxPreference;
+    iget-object v0, p0, Lcom/android/settings_ext/dolby/DolbyAdvanceSettings;->Xz:Landroid/preference/CheckBoxPreference;
 
     invoke-virtual {v0, p0}, Landroid/preference/CheckBoxPreference;->setOnPreferenceChangeListener(Landroid/preference/Preference$OnPreferenceChangeListener;)V
 
     .line 60
     const-string v0, "music_dialogue_enhancer"
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/dolby/DolbyAdvanceSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v0}, Lcom/android/settings_ext/dolby/DolbyAdvanceSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v0
 
     check-cast v0, Landroid/preference/CheckBoxPreference;
 
-    iput-object v0, p0, Lcom/android/settings/dolby/DolbyAdvanceSettings;->XA:Landroid/preference/CheckBoxPreference;
+    iput-object v0, p0, Lcom/android/settings_ext/dolby/DolbyAdvanceSettings;->XA:Landroid/preference/CheckBoxPreference;
 
     .line 61
-    iget-object v0, p0, Lcom/android/settings/dolby/DolbyAdvanceSettings;->XA:Landroid/preference/CheckBoxPreference;
+    iget-object v0, p0, Lcom/android/settings_ext/dolby/DolbyAdvanceSettings;->XA:Landroid/preference/CheckBoxPreference;
 
     invoke-virtual {v0, p0}, Landroid/preference/CheckBoxPreference;->setOnPreferenceChangeListener(Landroid/preference/Preference$OnPreferenceChangeListener;)V
 
     .line 63
     const-string v0, "music_surround_virtualizer"
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/dolby/DolbyAdvanceSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v0}, Lcom/android/settings_ext/dolby/DolbyAdvanceSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v0
 
     check-cast v0, Landroid/preference/CheckBoxPreference;
 
-    iput-object v0, p0, Lcom/android/settings/dolby/DolbyAdvanceSettings;->XB:Landroid/preference/CheckBoxPreference;
+    iput-object v0, p0, Lcom/android/settings_ext/dolby/DolbyAdvanceSettings;->XB:Landroid/preference/CheckBoxPreference;
 
     .line 64
-    iget-object v0, p0, Lcom/android/settings/dolby/DolbyAdvanceSettings;->XB:Landroid/preference/CheckBoxPreference;
+    iget-object v0, p0, Lcom/android/settings_ext/dolby/DolbyAdvanceSettings;->XB:Landroid/preference/CheckBoxPreference;
 
     invoke-virtual {v0, p0}, Landroid/preference/CheckBoxPreference;->setOnPreferenceChangeListener(Landroid/preference/Preference$OnPreferenceChangeListener;)V
 
     .line 66
     const-string v0, "movie_volume_leveler"
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/dolby/DolbyAdvanceSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v0}, Lcom/android/settings_ext/dolby/DolbyAdvanceSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v0
 
     check-cast v0, Landroid/preference/CheckBoxPreference;
 
-    iput-object v0, p0, Lcom/android/settings/dolby/DolbyAdvanceSettings;->XC:Landroid/preference/CheckBoxPreference;
+    iput-object v0, p0, Lcom/android/settings_ext/dolby/DolbyAdvanceSettings;->XC:Landroid/preference/CheckBoxPreference;
 
     .line 67
-    iget-object v0, p0, Lcom/android/settings/dolby/DolbyAdvanceSettings;->XC:Landroid/preference/CheckBoxPreference;
+    iget-object v0, p0, Lcom/android/settings_ext/dolby/DolbyAdvanceSettings;->XC:Landroid/preference/CheckBoxPreference;
 
     invoke-virtual {v0, p0}, Landroid/preference/CheckBoxPreference;->setOnPreferenceChangeListener(Landroid/preference/Preference$OnPreferenceChangeListener;)V
 
     .line 69
     const-string v0, "movie_dialogue_enhancer"
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/dolby/DolbyAdvanceSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v0}, Lcom/android/settings_ext/dolby/DolbyAdvanceSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v0
 
     check-cast v0, Landroid/preference/CheckBoxPreference;
 
-    iput-object v0, p0, Lcom/android/settings/dolby/DolbyAdvanceSettings;->XD:Landroid/preference/CheckBoxPreference;
+    iput-object v0, p0, Lcom/android/settings_ext/dolby/DolbyAdvanceSettings;->XD:Landroid/preference/CheckBoxPreference;
 
     .line 70
-    iget-object v0, p0, Lcom/android/settings/dolby/DolbyAdvanceSettings;->XD:Landroid/preference/CheckBoxPreference;
+    iget-object v0, p0, Lcom/android/settings_ext/dolby/DolbyAdvanceSettings;->XD:Landroid/preference/CheckBoxPreference;
 
     invoke-virtual {v0, p0}, Landroid/preference/CheckBoxPreference;->setOnPreferenceChangeListener(Landroid/preference/Preference$OnPreferenceChangeListener;)V
 
     .line 72
     const-string v0, "movie_surround_virtualizer"
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/dolby/DolbyAdvanceSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v0}, Lcom/android/settings_ext/dolby/DolbyAdvanceSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v0
 
     check-cast v0, Landroid/preference/CheckBoxPreference;
 
-    iput-object v0, p0, Lcom/android/settings/dolby/DolbyAdvanceSettings;->XE:Landroid/preference/CheckBoxPreference;
+    iput-object v0, p0, Lcom/android/settings_ext/dolby/DolbyAdvanceSettings;->XE:Landroid/preference/CheckBoxPreference;
 
     .line 73
-    iget-object v0, p0, Lcom/android/settings/dolby/DolbyAdvanceSettings;->XE:Landroid/preference/CheckBoxPreference;
+    iget-object v0, p0, Lcom/android/settings_ext/dolby/DolbyAdvanceSettings;->XE:Landroid/preference/CheckBoxPreference;
 
     invoke-virtual {v0, p0}, Landroid/preference/CheckBoxPreference;->setOnPreferenceChangeListener(Landroid/preference/Preference$OnPreferenceChangeListener;)V
 
@@ -414,14 +414,14 @@
 
     .prologue
     .line 97
-    iget-boolean v0, p0, Lcom/android/settings/dolby/DolbyAdvanceSettings;->mn:Z
+    iget-boolean v0, p0, Lcom/android/settings_ext/dolby/DolbyAdvanceSettings;->mn:Z
 
     if-eqz v0, :cond_0
 
     .line 98
-    iget-object v0, p0, Lcom/android/settings/dolby/DolbyAdvanceSettings;->XF:Landroid/dolby/DsClient;
+    iget-object v0, p0, Lcom/android/settings_ext/dolby/DolbyAdvanceSettings;->XF:Landroid/dolby/DsClient;
 
-    invoke-virtual {p0}, Lcom/android/settings/dolby/DolbyAdvanceSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/dolby/DolbyAdvanceSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v1
 
@@ -429,7 +429,7 @@
 
     .line 100
     :cond_0
-    invoke-super {p0}, Lcom/android/settings/SettingsPreferenceFragment;->onDestroy()V
+    invoke-super {p0}, Lcom/android/settings_ext/SettingsPreferenceFragment;->onDestroy()V
 
     .line 101
     return-void
@@ -440,16 +440,16 @@
 
     .prologue
     .line 91
-    invoke-virtual {p0}, Lcom/android/settings/dolby/DolbyAdvanceSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/dolby/DolbyAdvanceSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/android/settings/dolby/DolbyAdvanceSettings;->mo:Landroid/content/BroadcastReceiver;
+    iget-object v1, p0, Lcom/android/settings_ext/dolby/DolbyAdvanceSettings;->mo:Landroid/content/BroadcastReceiver;
 
     invoke-virtual {v0, v1}, Landroid/app/Activity;->unregisterReceiver(Landroid/content/BroadcastReceiver;)V
 
     .line 92
-    invoke-super {p0}, Lcom/android/settings/SettingsPreferenceFragment;->onPause()V
+    invoke-super {p0}, Lcom/android/settings_ext/SettingsPreferenceFragment;->onPause()V
 
     .line 93
     return-void
@@ -466,7 +466,7 @@
     const/4 v0, 0x0
 
     .line 127
-    iget-boolean v2, p0, Lcom/android/settings/dolby/DolbyAdvanceSettings;->mn:Z
+    iget-boolean v2, p0, Lcom/android/settings_ext/dolby/DolbyAdvanceSettings;->mn:Z
 
     if-nez v2, :cond_1
 
@@ -505,7 +505,7 @@
     const/4 v2, 0x1
 
     .line 139
-    iget-object v5, p0, Lcom/android/settings/dolby/DolbyAdvanceSettings;->XF:Landroid/dolby/DsClient;
+    iget-object v5, p0, Lcom/android/settings_ext/dolby/DolbyAdvanceSettings;->XF:Landroid/dolby/DsClient;
 
     invoke-virtual {v5, v2}, Landroid/dolby/DsClient;->getProfileSettings(I)Landroid/dolby/DsClientSettings;
 
@@ -521,7 +521,7 @@
     if-eq v3, v4, :cond_0
 
     .line 164
-    iget-object v4, p0, Lcom/android/settings/dolby/DolbyAdvanceSettings;->XF:Landroid/dolby/DsClient;
+    iget-object v4, p0, Lcom/android/settings_ext/dolby/DolbyAdvanceSettings;->XF:Landroid/dolby/DsClient;
 
     invoke-virtual {v4, v3, v2}, Landroid/dolby/DsClient;->setProfileSettings(ILandroid/dolby/DsClientSettings;)V
 
@@ -544,7 +544,7 @@
     const/4 v2, 0x1
 
     .line 143
-    iget-object v5, p0, Lcom/android/settings/dolby/DolbyAdvanceSettings;->XF:Landroid/dolby/DsClient;
+    iget-object v5, p0, Lcom/android/settings_ext/dolby/DolbyAdvanceSettings;->XF:Landroid/dolby/DsClient;
 
     invoke-virtual {v5, v2}, Landroid/dolby/DsClient;->getProfileSettings(I)Landroid/dolby/DsClientSettings;
 
@@ -571,7 +571,7 @@
     const/4 v2, 0x1
 
     .line 147
-    iget-object v5, p0, Lcom/android/settings/dolby/DolbyAdvanceSettings;->XF:Landroid/dolby/DsClient;
+    iget-object v5, p0, Lcom/android/settings_ext/dolby/DolbyAdvanceSettings;->XF:Landroid/dolby/DsClient;
 
     invoke-virtual {v5, v2}, Landroid/dolby/DsClient;->getProfileSettings(I)Landroid/dolby/DsClientSettings;
 
@@ -598,7 +598,7 @@
     const/4 v2, 0x0
 
     .line 151
-    iget-object v5, p0, Lcom/android/settings/dolby/DolbyAdvanceSettings;->XF:Landroid/dolby/DsClient;
+    iget-object v5, p0, Lcom/android/settings_ext/dolby/DolbyAdvanceSettings;->XF:Landroid/dolby/DsClient;
 
     invoke-virtual {v5, v2}, Landroid/dolby/DsClient;->getProfileSettings(I)Landroid/dolby/DsClientSettings;
 
@@ -625,7 +625,7 @@
     const/4 v2, 0x0
 
     .line 155
-    iget-object v5, p0, Lcom/android/settings/dolby/DolbyAdvanceSettings;->XF:Landroid/dolby/DsClient;
+    iget-object v5, p0, Lcom/android/settings_ext/dolby/DolbyAdvanceSettings;->XF:Landroid/dolby/DsClient;
 
     invoke-virtual {v5, v2}, Landroid/dolby/DsClient;->getProfileSettings(I)Landroid/dolby/DsClientSettings;
 
@@ -652,7 +652,7 @@
     const/4 v2, 0x0
 
     .line 159
-    iget-object v5, p0, Lcom/android/settings/dolby/DolbyAdvanceSettings;->XF:Landroid/dolby/DsClient;
+    iget-object v5, p0, Lcom/android/settings_ext/dolby/DolbyAdvanceSettings;->XF:Landroid/dolby/DsClient;
 
     invoke-virtual {v5, v2}, Landroid/dolby/DsClient;->getProfileSettings(I)Landroid/dolby/DsClientSettings;
 
@@ -747,7 +747,7 @@
 
     .prologue
     .line 79
-    invoke-super {p0}, Lcom/android/settings/SettingsPreferenceFragment;->onResume()V
+    invoke-super {p0}, Lcom/android/settings_ext/SettingsPreferenceFragment;->onResume()V
 
     .line 81
     new-instance v0, Landroid/content/IntentFilter;
@@ -765,16 +765,16 @@
     invoke-virtual {v0, v1}, Landroid/content/IntentFilter;->addAction(Ljava/lang/String;)V
 
     .line 84
-    invoke-virtual {p0}, Lcom/android/settings/dolby/DolbyAdvanceSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/dolby/DolbyAdvanceSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v1
 
-    iget-object v2, p0, Lcom/android/settings/dolby/DolbyAdvanceSettings;->mo:Landroid/content/BroadcastReceiver;
+    iget-object v2, p0, Lcom/android/settings_ext/dolby/DolbyAdvanceSettings;->mo:Landroid/content/BroadcastReceiver;
 
     invoke-virtual {v1, v2, v0}, Landroid/app/Activity;->registerReceiver(Landroid/content/BroadcastReceiver;Landroid/content/IntentFilter;)Landroid/content/Intent;
 
     .line 86
-    invoke-direct {p0}, Lcom/android/settings/dolby/DolbyAdvanceSettings;->refresh()V
+    invoke-direct {p0}, Lcom/android/settings_ext/dolby/DolbyAdvanceSettings;->refresh()V
 
     .line 87
     return-void

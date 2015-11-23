@@ -1,19 +1,19 @@
-.class Lcom/android/settings/deviceinfo/MiuiMemory$1;
+.class Lcom/android/settings_ext/deviceinfo/MiuiMemory$1;
 .super Landroid/content/BroadcastReceiver;
 .source "MiuiMemory.java"
 
 
 # instance fields
-.field final synthetic Sc:Lcom/android/settings/deviceinfo/MiuiMemory;
+.field final synthetic Sc:Lcom/android/settings_ext/deviceinfo/MiuiMemory;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/deviceinfo/MiuiMemory;)V
+.method constructor <init>(Lcom/android/settings_ext/deviceinfo/MiuiMemory;)V
     .locals 0
 
     .prologue
     .line 136
-    iput-object p1, p0, Lcom/android/settings/deviceinfo/MiuiMemory$1;->Sc:Lcom/android/settings/deviceinfo/MiuiMemory;
+    iput-object p1, p0, Lcom/android/settings_ext/deviceinfo/MiuiMemory$1;->Sc:Lcom/android/settings_ext/deviceinfo/MiuiMemory;
 
     invoke-direct {p0}, Landroid/content/BroadcastReceiver;-><init>()V
 
@@ -50,9 +50,9 @@
 
     .line 141
     :cond_0
-    iget-object v0, p0, Lcom/android/settings/deviceinfo/MiuiMemory$1;->Sc:Lcom/android/settings/deviceinfo/MiuiMemory;
+    iget-object v0, p0, Lcom/android/settings_ext/deviceinfo/MiuiMemory$1;->Sc:Lcom/android/settings_ext/deviceinfo/MiuiMemory;
 
-    invoke-static {v0}, Lcom/android/settings/deviceinfo/MiuiMemory;->a(Lcom/android/settings/deviceinfo/MiuiMemory;)V
+    invoke-static {v0}, Lcom/android/settings_ext/deviceinfo/MiuiMemory;->a(Lcom/android/settings_ext/deviceinfo/MiuiMemory;)V
 
     .line 143
     :cond_1

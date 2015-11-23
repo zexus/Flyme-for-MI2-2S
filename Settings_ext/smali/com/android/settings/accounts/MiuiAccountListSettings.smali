@@ -1,5 +1,5 @@
-.class public Lcom/android/settings/accounts/MiuiAccountListSettings;
-.super Lcom/android/settings/SettingsPreferenceFragment;
+.class public Lcom/android/settings_ext/accounts/MiuiAccountListSettings;
+.super Lcom/android/settings_ext/SettingsPreferenceFragment;
 .source "MiuiAccountListSettings.java"
 
 # interfaces
@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field private Cp:Lcom/android/settings/accounts/MiuiAccountListSettings$HeaderAdapter;
+.field private Cp:Lcom/android/settings_ext/accounts/MiuiAccountListSettings$HeaderAdapter;
 
 .field private bY:Ljava/util/List;
 
@@ -15,7 +15,7 @@
 
 .field private mHandler:Landroid/os/Handler;
 
-.field private rR:Lcom/android/settings/accounts/AuthenticatorHelper;
+.field private rR:Lcom/android/settings_ext/accounts/AuthenticatorHelper;
 
 
 # direct methods
@@ -24,18 +24,18 @@
 
     .prologue
     .line 51
-    invoke-direct {p0}, Lcom/android/settings/SettingsPreferenceFragment;-><init>()V
+    invoke-direct {p0}, Lcom/android/settings_ext/SettingsPreferenceFragment;-><init>()V
 
     .line 248
     return-void
 .end method
 
-.method static synthetic a(Lcom/android/settings/accounts/MiuiAccountListSettings;)Lcom/android/settings/accounts/MiuiAccountListSettings$HeaderAdapter;
+.method static synthetic a(Lcom/android/settings_ext/accounts/MiuiAccountListSettings;)Lcom/android/settings_ext/accounts/MiuiAccountListSettings$HeaderAdapter;
     .locals 1
 
     .prologue
     .line 51
-    iget-object v0, p0, Lcom/android/settings/accounts/MiuiAccountListSettings;->Cp:Lcom/android/settings/accounts/MiuiAccountListSettings$HeaderAdapter;
+    iget-object v0, p0, Lcom/android/settings_ext/accounts/MiuiAccountListSettings;->Cp:Lcom/android/settings_ext/accounts/MiuiAccountListSettings$HeaderAdapter;
 
     return-object v0
 .end method
@@ -91,12 +91,12 @@
     goto :goto_0
 .end method
 
-.method static synthetic b(Lcom/android/settings/accounts/MiuiAccountListSettings;)Ljava/util/List;
+.method static synthetic b(Lcom/android/settings_ext/accounts/MiuiAccountListSettings;)Ljava/util/List;
     .locals 1
 
     .prologue
     .line 51
-    iget-object v0, p0, Lcom/android/settings/accounts/MiuiAccountListSettings;->bY:Ljava/util/List;
+    iget-object v0, p0, Lcom/android/settings_ext/accounts/MiuiAccountListSettings;->bY:Ljava/util/List;
 
     return-object v0
 .end method
@@ -136,7 +136,7 @@
     .line 211
     iget-object v0, p1, Landroid/preference/PreferenceActivity$Header;->intent:Landroid/content/Intent;
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/accounts/MiuiAccountListSettings;->startActivity(Landroid/content/Intent;)V
+    invoke-virtual {p0, v0}, Lcom/android/settings_ext/accounts/MiuiAccountListSettings;->startActivity(Landroid/content/Intent;)V
 
     .line 218
     :goto_0
@@ -156,7 +156,7 @@
 
     move-object v1, p0
 
-    invoke-virtual/range {v0 .. v5}, Lcom/android/settings/accounts/MiuiAccountListSettings;->a(Landroid/app/Fragment;Ljava/lang/String;ILandroid/os/Bundle;I)Z
+    invoke-virtual/range {v0 .. v5}, Lcom/android/settings_ext/accounts/MiuiAccountListSettings;->a(Landroid/app/Fragment;Ljava/lang/String;ILandroid/os/Bundle;I)Z
 
     goto :goto_0
 .end method
@@ -168,11 +168,11 @@
     const/4 v1, 0x1
 
     .line 243
-    iget-object v0, p0, Lcom/android/settings/accounts/MiuiAccountListSettings;->mHandler:Landroid/os/Handler;
+    iget-object v0, p0, Lcom/android/settings_ext/accounts/MiuiAccountListSettings;->mHandler:Landroid/os/Handler;
 
     if-eqz v0, :cond_0
 
-    iget-object v0, p0, Lcom/android/settings/accounts/MiuiAccountListSettings;->mHandler:Landroid/os/Handler;
+    iget-object v0, p0, Lcom/android/settings_ext/accounts/MiuiAccountListSettings;->mHandler:Landroid/os/Handler;
 
     invoke-virtual {v0, v1}, Landroid/os/Handler;->hasMessages(I)Z
 
@@ -181,7 +181,7 @@
     if-nez v0, :cond_0
 
     .line 244
-    iget-object v0, p0, Lcom/android/settings/accounts/MiuiAccountListSettings;->mHandler:Landroid/os/Handler;
+    iget-object v0, p0, Lcom/android/settings_ext/accounts/MiuiAccountListSettings;->mHandler:Landroid/os/Handler;
 
     invoke-virtual {v0, v1}, Landroid/os/Handler;->sendEmptyMessage(I)Z
 
@@ -195,12 +195,12 @@
 
     .prologue
     .line 238
-    iget-object v0, p0, Lcom/android/settings/accounts/MiuiAccountListSettings;->rR:Lcom/android/settings/accounts/AuthenticatorHelper;
+    iget-object v0, p0, Lcom/android/settings_ext/accounts/MiuiAccountListSettings;->rR:Lcom/android/settings_ext/accounts/AuthenticatorHelper;
 
-    invoke-virtual {v0, p1}, Lcom/android/settings/accounts/AuthenticatorHelper;->onAccountsUpdated([Landroid/accounts/Account;)V
+    invoke-virtual {v0, p1}, Lcom/android/settings_ext/accounts/AuthenticatorHelper;->onAccountsUpdated([Landroid/accounts/Account;)V
 
     .line 239
-    invoke-virtual {p0}, Lcom/android/settings/accounts/MiuiAccountListSettings;->invalidateHeaders()V
+    invoke-virtual {p0}, Lcom/android/settings_ext/accounts/MiuiAccountListSettings;->invalidateHeaders()V
 
     .line 240
     return-void
@@ -211,30 +211,30 @@
 
     .prologue
     .line 76
-    invoke-super {p0, p1}, Lcom/android/settings/SettingsPreferenceFragment;->onActivityCreated(Landroid/os/Bundle;)V
+    invoke-super {p0, p1}, Lcom/android/settings_ext/SettingsPreferenceFragment;->onActivityCreated(Landroid/os/Bundle;)V
 
     .line 78
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
-    iput-object v0, p0, Lcom/android/settings/accounts/MiuiAccountListSettings;->bY:Ljava/util/List;
+    iput-object v0, p0, Lcom/android/settings_ext/accounts/MiuiAccountListSettings;->bY:Ljava/util/List;
 
     .line 79
-    new-instance v0, Lcom/android/settings/accounts/MiuiAccountListSettings$HeaderAdapter;
+    new-instance v0, Lcom/android/settings_ext/accounts/MiuiAccountListSettings$HeaderAdapter;
 
-    iget-object v1, p0, Lcom/android/settings/accounts/MiuiAccountListSettings;->mActivity:Landroid/app/Activity;
+    iget-object v1, p0, Lcom/android/settings_ext/accounts/MiuiAccountListSettings;->mActivity:Landroid/app/Activity;
 
-    iget-object v2, p0, Lcom/android/settings/accounts/MiuiAccountListSettings;->bY:Ljava/util/List;
+    iget-object v2, p0, Lcom/android/settings_ext/accounts/MiuiAccountListSettings;->bY:Ljava/util/List;
 
-    iget-object v3, p0, Lcom/android/settings/accounts/MiuiAccountListSettings;->rR:Lcom/android/settings/accounts/AuthenticatorHelper;
+    iget-object v3, p0, Lcom/android/settings_ext/accounts/MiuiAccountListSettings;->rR:Lcom/android/settings_ext/accounts/AuthenticatorHelper;
 
-    invoke-direct {v0, v1, v2, v3}, Lcom/android/settings/accounts/MiuiAccountListSettings$HeaderAdapter;-><init>(Landroid/app/Activity;Ljava/util/List;Lcom/android/settings/accounts/AuthenticatorHelper;)V
+    invoke-direct {v0, v1, v2, v3}, Lcom/android/settings_ext/accounts/MiuiAccountListSettings$HeaderAdapter;-><init>(Landroid/app/Activity;Ljava/util/List;Lcom/android/settings_ext/accounts/AuthenticatorHelper;)V
 
-    iput-object v0, p0, Lcom/android/settings/accounts/MiuiAccountListSettings;->Cp:Lcom/android/settings/accounts/MiuiAccountListSettings$HeaderAdapter;
+    iput-object v0, p0, Lcom/android/settings_ext/accounts/MiuiAccountListSettings;->Cp:Lcom/android/settings_ext/accounts/MiuiAccountListSettings$HeaderAdapter;
 
     .line 81
-    invoke-virtual {p0}, Lcom/android/settings/accounts/MiuiAccountListSettings;->getView()Landroid/view/View;
+    invoke-virtual {p0}, Lcom/android/settings_ext/accounts/MiuiAccountListSettings;->getView()Landroid/view/View;
 
     move-result-object v0
 
@@ -247,23 +247,23 @@
     check-cast v0, Landroid/widget/ListView;
 
     .line 82
-    iget-object v1, p0, Lcom/android/settings/accounts/MiuiAccountListSettings;->Cp:Lcom/android/settings/accounts/MiuiAccountListSettings$HeaderAdapter;
+    iget-object v1, p0, Lcom/android/settings_ext/accounts/MiuiAccountListSettings;->Cp:Lcom/android/settings_ext/accounts/MiuiAccountListSettings$HeaderAdapter;
 
     invoke-virtual {v0, v1}, Landroid/widget/ListView;->setAdapter(Landroid/widget/ListAdapter;)V
 
     .line 83
-    new-instance v1, Lcom/android/settings/accounts/MiuiAccountListSettings$1;
+    new-instance v1, Lcom/android/settings_ext/accounts/MiuiAccountListSettings$1;
 
-    invoke-direct {v1, p0}, Lcom/android/settings/accounts/MiuiAccountListSettings$1;-><init>(Lcom/android/settings/accounts/MiuiAccountListSettings;)V
+    invoke-direct {v1, p0}, Lcom/android/settings_ext/accounts/MiuiAccountListSettings$1;-><init>(Lcom/android/settings_ext/accounts/MiuiAccountListSettings;)V
 
     invoke-virtual {v0, v1}, Landroid/widget/ListView;->setOnItemClickListener(Landroid/widget/AdapterView$OnItemClickListener;)V
 
     .line 93
-    new-instance v0, Lcom/android/settings/accounts/MiuiAccountListSettings$2;
+    new-instance v0, Lcom/android/settings_ext/accounts/MiuiAccountListSettings$2;
 
-    invoke-direct {v0, p0}, Lcom/android/settings/accounts/MiuiAccountListSettings$2;-><init>(Lcom/android/settings/accounts/MiuiAccountListSettings;)V
+    invoke-direct {v0, p0}, Lcom/android/settings_ext/accounts/MiuiAccountListSettings$2;-><init>(Lcom/android/settings_ext/accounts/MiuiAccountListSettings;)V
 
-    iput-object v0, p0, Lcom/android/settings/accounts/MiuiAccountListSettings;->mHandler:Landroid/os/Handler;
+    iput-object v0, p0, Lcom/android/settings_ext/accounts/MiuiAccountListSettings;->mHandler:Landroid/os/Handler;
 
     .line 105
     return-void
@@ -276,22 +276,22 @@
     const/4 v4, 0x0
 
     .line 65
-    invoke-super {p0, p1}, Lcom/android/settings/SettingsPreferenceFragment;->onAttach(Landroid/app/Activity;)V
+    invoke-super {p0, p1}, Lcom/android/settings_ext/SettingsPreferenceFragment;->onAttach(Landroid/app/Activity;)V
 
     .line 67
     const-string v0, "user"
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/accounts/MiuiAccountListSettings;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
+    invoke-virtual {p0, v0}, Lcom/android/settings_ext/accounts/MiuiAccountListSettings;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object v0
 
     check-cast v0, Landroid/os/UserManager;
 
     .line 68
-    iput-object p1, p0, Lcom/android/settings/accounts/MiuiAccountListSettings;->mActivity:Landroid/app/Activity;
+    iput-object p1, p0, Lcom/android/settings_ext/accounts/MiuiAccountListSettings;->mActivity:Landroid/app/Activity;
 
     .line 69
-    new-instance v1, Lcom/android/settings/accounts/AuthenticatorHelper;
+    new-instance v1, Lcom/android/settings_ext/accounts/AuthenticatorHelper;
 
     new-instance v2, Landroid/os/UserHandle;
 
@@ -301,19 +301,19 @@
 
     invoke-direct {v2, v3}, Landroid/os/UserHandle;-><init>(I)V
 
-    invoke-direct {v1, p1, v2, v0, v4}, Lcom/android/settings/accounts/AuthenticatorHelper;-><init>(Landroid/content/Context;Landroid/os/UserHandle;Landroid/os/UserManager;Lcom/android/settings/accounts/AuthenticatorHelper$OnAccountsUpdateListener;)V
+    invoke-direct {v1, p1, v2, v0, v4}, Lcom/android/settings_ext/accounts/AuthenticatorHelper;-><init>(Landroid/content/Context;Landroid/os/UserHandle;Landroid/os/UserManager;Lcom/android/settings_ext/accounts/AuthenticatorHelper$OnAccountsUpdateListener;)V
 
-    iput-object v1, p0, Lcom/android/settings/accounts/MiuiAccountListSettings;->rR:Lcom/android/settings/accounts/AuthenticatorHelper;
+    iput-object v1, p0, Lcom/android/settings_ext/accounts/MiuiAccountListSettings;->rR:Lcom/android/settings_ext/accounts/AuthenticatorHelper;
 
     .line 70
-    iget-object v0, p0, Lcom/android/settings/accounts/MiuiAccountListSettings;->rR:Lcom/android/settings/accounts/AuthenticatorHelper;
+    iget-object v0, p0, Lcom/android/settings_ext/accounts/MiuiAccountListSettings;->rR:Lcom/android/settings_ext/accounts/AuthenticatorHelper;
 
-    iget-object v1, p0, Lcom/android/settings/accounts/MiuiAccountListSettings;->mActivity:Landroid/app/Activity;
+    iget-object v1, p0, Lcom/android/settings_ext/accounts/MiuiAccountListSettings;->mActivity:Landroid/app/Activity;
 
-    invoke-virtual {v0, v1}, Lcom/android/settings/accounts/AuthenticatorHelper;->Z(Landroid/content/Context;)V
+    invoke-virtual {v0, v1}, Lcom/android/settings_ext/accounts/AuthenticatorHelper;->Z(Landroid/content/Context;)V
 
     .line 71
-    iget-object v0, p0, Lcom/android/settings/accounts/MiuiAccountListSettings;->mActivity:Landroid/app/Activity;
+    iget-object v0, p0, Lcom/android/settings_ext/accounts/MiuiAccountListSettings;->mActivity:Landroid/app/Activity;
 
     invoke-static {v0}, Landroid/accounts/AccountManager;->get(Landroid/content/Context;)Landroid/accounts/AccountManager;
 
@@ -338,9 +338,9 @@
     const/4 v2, 0x0
 
     .line 129
-    iget-object v0, p0, Lcom/android/settings/accounts/MiuiAccountListSettings;->rR:Lcom/android/settings/accounts/AuthenticatorHelper;
+    iget-object v0, p0, Lcom/android/settings_ext/accounts/MiuiAccountListSettings;->rR:Lcom/android/settings_ext/accounts/AuthenticatorHelper;
 
-    invoke-virtual {v0}, Lcom/android/settings/accounts/AuthenticatorHelper;->ik()[Ljava/lang/String;
+    invoke-virtual {v0}, Lcom/android/settings_ext/accounts/AuthenticatorHelper;->ik()[Ljava/lang/String;
 
     move-result-object v4
 
@@ -389,11 +389,11 @@
 
     .line 140
     :cond_1
-    iget-object v0, p0, Lcom/android/settings/accounts/MiuiAccountListSettings;->rR:Lcom/android/settings/accounts/AuthenticatorHelper;
+    iget-object v0, p0, Lcom/android/settings_ext/accounts/MiuiAccountListSettings;->rR:Lcom/android/settings_ext/accounts/AuthenticatorHelper;
 
-    iget-object v8, p0, Lcom/android/settings/accounts/MiuiAccountListSettings;->mActivity:Landroid/app/Activity;
+    iget-object v8, p0, Lcom/android/settings_ext/accounts/MiuiAccountListSettings;->mActivity:Landroid/app/Activity;
 
-    invoke-virtual {v0, v8, v7}, Lcom/android/settings/accounts/AuthenticatorHelper;->i(Landroid/content/Context;Ljava/lang/String;)Ljava/lang/CharSequence;
+    invoke-virtual {v0, v8, v7}, Lcom/android/settings_ext/accounts/AuthenticatorHelper;->i(Landroid/content/Context;Ljava/lang/String;)Ljava/lang/CharSequence;
 
     move-result-object v8
 
@@ -401,14 +401,14 @@
     if-eqz v8, :cond_0
 
     .line 145
-    invoke-static {v7}, Lcom/android/settings/accounts/MiuiAccountListSettings;->ab(Ljava/lang/String;)Z
+    invoke-static {v7}, Lcom/android/settings_ext/accounts/MiuiAccountListSettings;->ab(Ljava/lang/String;)Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
     .line 149
-    iget-object v0, p0, Lcom/android/settings/accounts/MiuiAccountListSettings;->mActivity:Landroid/app/Activity;
+    iget-object v0, p0, Lcom/android/settings_ext/accounts/MiuiAccountListSettings;->mActivity:Landroid/app/Activity;
 
     invoke-static {v0}, Landroid/accounts/AccountManager;->get(Landroid/content/Context;)Landroid/accounts/AccountManager;
 
@@ -423,9 +423,9 @@
 
     if-ne v0, v1, :cond_3
 
-    iget-object v0, p0, Lcom/android/settings/accounts/MiuiAccountListSettings;->rR:Lcom/android/settings/accounts/AuthenticatorHelper;
+    iget-object v0, p0, Lcom/android/settings_ext/accounts/MiuiAccountListSettings;->rR:Lcom/android/settings_ext/accounts/AuthenticatorHelper;
 
-    invoke-virtual {v0, v7}, Lcom/android/settings/accounts/AuthenticatorHelper;->Z(Ljava/lang/String;)Z
+    invoke-virtual {v0, v7}, Lcom/android/settings_ext/accounts/AuthenticatorHelper;->Z(Ljava/lang/String;)Z
 
     move-result v0
 
@@ -465,7 +465,7 @@
     iput v12, v10, Landroid/preference/PreferenceActivity$Header;->breadCrumbShortTitleRes:I
 
     .line 161
-    const-class v0, Lcom/android/settings/accounts/AccountSyncSettings;
+    const-class v0, Lcom/android/settings_ext/accounts/AccountSyncSettings;
 
     invoke-virtual {v0}, Ljava/lang/Class;->getName()Ljava/lang/String;
 
@@ -532,7 +532,7 @@
     iput-object v8, v10, Landroid/preference/PreferenceActivity$Header;->breadCrumbShortTitle:Ljava/lang/CharSequence;
 
     .line 173
-    const-class v0, Lcom/android/settings/accounts/ManageAccountsSettings;
+    const-class v0, Lcom/android/settings_ext/accounts/ManageAccountsSettings;
 
     invoke-virtual {v0}, Ljava/lang/Class;->getName()Ljava/lang/String;
 
@@ -576,9 +576,9 @@
 
     .line 186
     :cond_5
-    new-instance v0, Lcom/android/settings/accounts/MiuiAccountListSettings$3;
+    new-instance v0, Lcom/android/settings_ext/accounts/MiuiAccountListSettings$3;
 
-    invoke-direct {v0, p0}, Lcom/android/settings/accounts/MiuiAccountListSettings$3;-><init>(Lcom/android/settings/accounts/MiuiAccountListSettings;)V
+    invoke-direct {v0, p0}, Lcom/android/settings_ext/accounts/MiuiAccountListSettings$3;-><init>(Lcom/android/settings_ext/accounts/MiuiAccountListSettings;)V
 
     invoke-static {v5, v0}, Ljava/util/Collections;->sort(Ljava/util/List;Ljava/util/Comparator;)V
 
@@ -642,7 +642,7 @@
 
     .prologue
     .line 109
-    iget-object v0, p0, Lcom/android/settings/accounts/MiuiAccountListSettings;->mActivity:Landroid/app/Activity;
+    iget-object v0, p0, Lcom/android/settings_ext/accounts/MiuiAccountListSettings;->mActivity:Landroid/app/Activity;
 
     invoke-static {v0}, Landroid/accounts/AccountManager;->get(Landroid/content/Context;)Landroid/accounts/AccountManager;
 
@@ -651,7 +651,7 @@
     invoke-virtual {v0, p0}, Landroid/accounts/AccountManager;->removeOnAccountsUpdatedListener(Landroid/accounts/OnAccountsUpdateListener;)V
 
     .line 110
-    invoke-super {p0}, Lcom/android/settings/SettingsPreferenceFragment;->onDetach()V
+    invoke-super {p0}, Lcom/android/settings_ext/SettingsPreferenceFragment;->onDetach()V
 
     .line 111
     return-void
@@ -671,7 +671,7 @@
     if-ne v0, v6, :cond_0
 
     .line 230
-    const-class v0, Lcom/android/settings/accounts/ChooseAccountFragment;
+    const-class v0, Lcom/android/settings_ext/accounts/ChooseAccountFragment;
 
     invoke-virtual {v0}, Ljava/lang/Class;->getName()Ljava/lang/String;
 
@@ -687,7 +687,7 @@
 
     move-object v1, p0
 
-    invoke-virtual/range {v0 .. v5}, Lcom/android/settings/accounts/MiuiAccountListSettings;->a(Landroid/app/Fragment;Ljava/lang/String;ILandroid/os/Bundle;I)Z
+    invoke-virtual/range {v0 .. v5}, Lcom/android/settings_ext/accounts/MiuiAccountListSettings;->a(Landroid/app/Fragment;Ljava/lang/String;ILandroid/os/Bundle;I)Z
 
     move v0, v6
 
@@ -696,7 +696,7 @@
     return v0
 
     :cond_0
-    invoke-super {p0, p1}, Lcom/android/settings/SettingsPreferenceFragment;->onOptionsItemSelected(Landroid/view/MenuItem;)Z
+    invoke-super {p0, p1}, Lcom/android/settings_ext/SettingsPreferenceFragment;->onOptionsItemSelected(Landroid/view/MenuItem;)Z
 
     move-result v0
 
@@ -708,17 +708,17 @@
 
     .prologue
     .line 122
-    invoke-super {p0}, Lcom/android/settings/SettingsPreferenceFragment;->onResume()V
+    invoke-super {p0}, Lcom/android/settings_ext/SettingsPreferenceFragment;->onResume()V
 
     .line 124
-    iget-object v0, p0, Lcom/android/settings/accounts/MiuiAccountListSettings;->bY:Ljava/util/List;
+    iget-object v0, p0, Lcom/android/settings_ext/accounts/MiuiAccountListSettings;->bY:Ljava/util/List;
 
     invoke-interface {v0}, Ljava/util/List;->clear()V
 
     .line 125
-    iget-object v0, p0, Lcom/android/settings/accounts/MiuiAccountListSettings;->bY:Ljava/util/List;
+    iget-object v0, p0, Lcom/android/settings_ext/accounts/MiuiAccountListSettings;->bY:Ljava/util/List;
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/accounts/MiuiAccountListSettings;->onBuildHeaders(Ljava/util/List;)V
+    invoke-virtual {p0, v0}, Lcom/android/settings_ext/accounts/MiuiAccountListSettings;->onBuildHeaders(Ljava/util/List;)V
 
     .line 126
     return-void

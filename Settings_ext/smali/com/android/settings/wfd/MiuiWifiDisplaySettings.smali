@@ -1,5 +1,5 @@
-.class public Lcom/android/settings/wfd/MiuiWifiDisplaySettings;
-.super Lcom/android/settings/wfd/WifiDisplaySettings;
+.class public Lcom/android/settings_ext/wfd/MiuiWifiDisplaySettings;
+.super Lcom/android/settings_ext/wfd/WifiDisplaySettings;
 .source "MiuiWifiDisplaySettings.java"
 
 
@@ -13,27 +13,27 @@
 
     .prologue
     .line 21
-    invoke-direct {p0}, Lcom/android/settings/wfd/WifiDisplaySettings;-><init>()V
+    invoke-direct {p0}, Lcom/android/settings_ext/wfd/WifiDisplaySettings;-><init>()V
 
     return-void
 .end method
 
-.method static synthetic a(Lcom/android/settings/wfd/MiuiWifiDisplaySettings;)Landroid/net/wifi/WifiManager;
+.method static synthetic a(Lcom/android/settings_ext/wfd/MiuiWifiDisplaySettings;)Landroid/net/wifi/WifiManager;
     .locals 1
 
     .prologue
     .line 21
-    iget-object v0, p0, Lcom/android/settings/wfd/MiuiWifiDisplaySettings;->hD:Landroid/net/wifi/WifiManager;
+    iget-object v0, p0, Lcom/android/settings_ext/wfd/MiuiWifiDisplaySettings;->hD:Landroid/net/wifi/WifiManager;
 
     return-object v0
 .end method
 
-.method static synthetic a(Lcom/android/settings/wfd/MiuiWifiDisplaySettings;Z)V
+.method static synthetic a(Lcom/android/settings_ext/wfd/MiuiWifiDisplaySettings;Z)V
     .locals 0
 
     .prologue
     .line 21
-    invoke-direct {p0, p1}, Lcom/android/settings/wfd/MiuiWifiDisplaySettings;->aT(Z)V
+    invoke-direct {p0, p1}, Lcom/android/settings_ext/wfd/MiuiWifiDisplaySettings;->aT(Z)V
 
     return-void
 .end method
@@ -43,16 +43,16 @@
 
     .prologue
     .line 85
-    iput-boolean p1, p0, Lcom/android/settings/wfd/MiuiWifiDisplaySettings;->aoo:Z
+    iput-boolean p1, p0, Lcom/android/settings_ext/wfd/MiuiWifiDisplaySettings;->aoo:Z
 
     .line 86
-    invoke-virtual {p0}, Lcom/android/settings/wfd/MiuiWifiDisplaySettings;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/settings_ext/wfd/MiuiWifiDisplaySettings;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v1
 
     const-string v2, "wifi_display_on"
 
-    iget-boolean v0, p0, Lcom/android/settings/wfd/MiuiWifiDisplaySettings;->aoo:Z
+    iget-boolean v0, p0, Lcom/android/settings_ext/wfd/MiuiWifiDisplaySettings;->aoo:Z
 
     if-eqz v0, :cond_0
 
@@ -64,13 +64,13 @@
     .line 87
     const-string v0, "enable_wifi_display"
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/wfd/MiuiWifiDisplaySettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v0}, Lcom/android/settings_ext/wfd/MiuiWifiDisplaySettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v0
 
     check-cast v0, Landroid/preference/CheckBoxPreference;
 
-    iget-boolean v1, p0, Lcom/android/settings/wfd/MiuiWifiDisplaySettings;->aoo:Z
+    iget-boolean v1, p0, Lcom/android/settings_ext/wfd/MiuiWifiDisplaySettings;->aoo:Z
 
     invoke-virtual {v0, v1}, Landroid/preference/CheckBoxPreference;->setChecked(Z)V
 
@@ -91,12 +91,12 @@
     const/16 v1, 0x2710
 
     .line 91
-    iget-boolean v0, p0, Lcom/android/settings/wfd/MiuiWifiDisplaySettings;->aoo:Z
+    iget-boolean v0, p0, Lcom/android/settings_ext/wfd/MiuiWifiDisplaySettings;->aoo:Z
 
     if-eqz v0, :cond_1
 
     .line 92
-    iget-object v0, p0, Lcom/android/settings/wfd/MiuiWifiDisplaySettings;->hD:Landroid/net/wifi/WifiManager;
+    iget-object v0, p0, Lcom/android/settings_ext/wfd/MiuiWifiDisplaySettings;->hD:Landroid/net/wifi/WifiManager;
 
     invoke-virtual {v0}, Landroid/net/wifi/WifiManager;->isWifiEnabled()Z
 
@@ -104,19 +104,19 @@
 
     if-nez v0, :cond_0
 
-    invoke-virtual {p0, v1}, Lcom/android/settings/wfd/MiuiWifiDisplaySettings;->Z(I)Z
+    invoke-virtual {p0, v1}, Lcom/android/settings_ext/wfd/MiuiWifiDisplaySettings;->Z(I)Z
 
     move-result v0
 
     if-nez v0, :cond_0
 
     .line 93
-    invoke-virtual {p0, v1}, Lcom/android/settings/wfd/MiuiWifiDisplaySettings;->showDialog(I)V
+    invoke-virtual {p0, v1}, Lcom/android/settings_ext/wfd/MiuiWifiDisplaySettings;->showDialog(I)V
 
     .line 94
     const/4 v0, 0x0
 
-    invoke-direct {p0, v0}, Lcom/android/settings/wfd/MiuiWifiDisplaySettings;->aT(Z)V
+    invoke-direct {p0, v0}, Lcom/android/settings_ext/wfd/MiuiWifiDisplaySettings;->aT(Z)V
 
     .line 99
     :cond_0
@@ -125,7 +125,7 @@
 
     .line 97
     :cond_1
-    invoke-virtual {p0, v1}, Lcom/android/settings/wfd/MiuiWifiDisplaySettings;->removeDialog(I)V
+    invoke-virtual {p0, v1}, Lcom/android/settings_ext/wfd/MiuiWifiDisplaySettings;->removeDialog(I)V
 
     goto :goto_0
 .end method
@@ -139,7 +139,7 @@
     .line 102
     const-string v0, "wifip2p"
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/wfd/MiuiWifiDisplaySettings;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
+    invoke-virtual {p0, v0}, Lcom/android/settings_ext/wfd/MiuiWifiDisplaySettings;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object v0
 
@@ -149,11 +149,11 @@
     if-eqz v0, :cond_0
 
     .line 104
-    invoke-virtual {p0}, Lcom/android/settings/wfd/MiuiWifiDisplaySettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/wfd/MiuiWifiDisplaySettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v1
 
-    invoke-virtual {p0}, Lcom/android/settings/wfd/MiuiWifiDisplaySettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/wfd/MiuiWifiDisplaySettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v2
 
@@ -166,11 +166,11 @@
     move-result-object v1
 
     .line 106
-    invoke-virtual {p0}, Lcom/android/settings/wfd/MiuiWifiDisplaySettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/wfd/MiuiWifiDisplaySettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v2
 
-    invoke-static {v2}, Lcom/android/settings/eK;->D(Landroid/content/Context;)Ljava/lang/String;
+    invoke-static {v2}, Lcom/android/settings_ext/eK;->D(Landroid/content/Context;)Ljava/lang/String;
 
     move-result-object v2
 
@@ -189,21 +189,21 @@
 
     .prologue
     .line 27
-    invoke-direct {p0}, Lcom/android/settings/wfd/MiuiWifiDisplaySettings;->sT()V
+    invoke-direct {p0}, Lcom/android/settings_ext/wfd/MiuiWifiDisplaySettings;->sT()V
 
     .line 28
     const-string v0, "wifi"
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/wfd/MiuiWifiDisplaySettings;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
+    invoke-virtual {p0, v0}, Lcom/android/settings_ext/wfd/MiuiWifiDisplaySettings;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object v0
 
     check-cast v0, Landroid/net/wifi/WifiManager;
 
-    iput-object v0, p0, Lcom/android/settings/wfd/MiuiWifiDisplaySettings;->hD:Landroid/net/wifi/WifiManager;
+    iput-object v0, p0, Lcom/android/settings_ext/wfd/MiuiWifiDisplaySettings;->hD:Landroid/net/wifi/WifiManager;
 
     .line 29
-    invoke-super {p0, p1}, Lcom/android/settings/wfd/WifiDisplaySettings;->onCreate(Landroid/os/Bundle;)V
+    invoke-super {p0, p1}, Lcom/android/settings_ext/wfd/WifiDisplaySettings;->onCreate(Landroid/os/Bundle;)V
 
     .line 30
     return-void
@@ -217,7 +217,7 @@
     packed-switch p1, :pswitch_data_0
 
     .line 81
-    invoke-super {p0, p1}, Lcom/android/settings/wfd/WifiDisplaySettings;->onCreateDialog(I)Landroid/app/Dialog;
+    invoke-super {p0, p1}, Lcom/android/settings_ext/wfd/WifiDisplaySettings;->onCreateDialog(I)Landroid/app/Dialog;
 
     move-result-object v0
 
@@ -228,7 +228,7 @@
     :pswitch_0
     new-instance v0, Landroid/app/AlertDialog$Builder;
 
-    invoke-virtual {p0}, Lcom/android/settings/wfd/MiuiWifiDisplaySettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/wfd/MiuiWifiDisplaySettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v1
 
@@ -242,13 +242,13 @@
 
     const v1, 0x7f09054e
 
-    invoke-virtual {p0, v1}, Lcom/android/settings/wfd/MiuiWifiDisplaySettings;->getString(I)Ljava/lang/String;
+    invoke-virtual {p0, v1}, Lcom/android/settings_ext/wfd/MiuiWifiDisplaySettings;->getString(I)Ljava/lang/String;
 
     move-result-object v1
 
-    new-instance v2, Lcom/android/settings/wfd/b;
+    new-instance v2, Lcom/android/settings_ext/wfd/b;
 
-    invoke-direct {v2, p0}, Lcom/android/settings/wfd/b;-><init>(Lcom/android/settings/wfd/MiuiWifiDisplaySettings;)V
+    invoke-direct {v2, p0}, Lcom/android/settings_ext/wfd/b;-><init>(Lcom/android/settings_ext/wfd/MiuiWifiDisplaySettings;)V
 
     invoke-virtual {v0, v1, v2}, Landroid/app/AlertDialog$Builder;->setPositiveButton(Ljava/lang/CharSequence;Landroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
@@ -256,13 +256,13 @@
 
     const v1, 0x7f09054f
 
-    invoke-virtual {p0, v1}, Lcom/android/settings/wfd/MiuiWifiDisplaySettings;->getString(I)Ljava/lang/String;
+    invoke-virtual {p0, v1}, Lcom/android/settings_ext/wfd/MiuiWifiDisplaySettings;->getString(I)Ljava/lang/String;
 
     move-result-object v1
 
-    new-instance v2, Lcom/android/settings/wfd/a;
+    new-instance v2, Lcom/android/settings_ext/wfd/a;
 
-    invoke-direct {v2, p0}, Lcom/android/settings/wfd/a;-><init>(Lcom/android/settings/wfd/MiuiWifiDisplaySettings;)V
+    invoke-direct {v2, p0}, Lcom/android/settings_ext/wfd/a;-><init>(Lcom/android/settings_ext/wfd/MiuiWifiDisplaySettings;)V
 
     invoke-virtual {v0, v1, v2}, Landroid/app/AlertDialog$Builder;->setNegativeButton(Ljava/lang/CharSequence;Landroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
@@ -317,16 +317,16 @@
 
     move-result v0
 
-    iput-boolean v0, p0, Lcom/android/settings/wfd/MiuiWifiDisplaySettings;->aoo:Z
+    iput-boolean v0, p0, Lcom/android/settings_ext/wfd/MiuiWifiDisplaySettings;->aoo:Z
 
     .line 49
-    invoke-virtual {p0}, Lcom/android/settings/wfd/MiuiWifiDisplaySettings;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/settings_ext/wfd/MiuiWifiDisplaySettings;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v2
 
     const-string v3, "wifi_display_on"
 
-    iget-boolean v0, p0, Lcom/android/settings/wfd/MiuiWifiDisplaySettings;->aoo:Z
+    iget-boolean v0, p0, Lcom/android/settings_ext/wfd/MiuiWifiDisplaySettings;->aoo:Z
 
     if-eqz v0, :cond_0
 
@@ -336,7 +336,7 @@
     invoke-static {v2, v3, v0}, Landroid/provider/Settings$Global;->putInt(Landroid/content/ContentResolver;Ljava/lang/String;I)Z
 
     .line 51
-    invoke-direct {p0}, Lcom/android/settings/wfd/MiuiWifiDisplaySettings;->sS()V
+    invoke-direct {p0}, Lcom/android/settings_ext/wfd/MiuiWifiDisplaySettings;->sS()V
 
     .line 54
     :goto_1
@@ -350,7 +350,7 @@
 
     .line 54
     :cond_1
-    invoke-super {p0, p1, p2}, Lcom/android/settings/wfd/WifiDisplaySettings;->onPreferenceTreeClick(Landroid/preference/PreferenceScreen;Landroid/preference/Preference;)Z
+    invoke-super {p0, p1, p2}, Lcom/android/settings_ext/wfd/WifiDisplaySettings;->onPreferenceTreeClick(Landroid/preference/PreferenceScreen;Landroid/preference/Preference;)Z
 
     move-result v1
 
@@ -362,10 +362,10 @@
 
     .prologue
     .line 34
-    invoke-super {p0}, Lcom/android/settings/wfd/WifiDisplaySettings;->onStart()V
+    invoke-super {p0}, Lcom/android/settings_ext/wfd/WifiDisplaySettings;->onStart()V
 
     .line 35
-    invoke-direct {p0}, Lcom/android/settings/wfd/MiuiWifiDisplaySettings;->sS()V
+    invoke-direct {p0}, Lcom/android/settings_ext/wfd/MiuiWifiDisplaySettings;->sS()V
 
     .line 36
     return-void

@@ -1,4 +1,4 @@
-.class Lcom/android/settings/ringtone/MultiSimRingtoneSettings$1;
+.class Lcom/android/settings_ext/ringtone/MultiSimRingtoneSettings$1;
 .super Ljava/lang/Object;
 .source "MultiSimRingtoneSettings.java"
 
@@ -7,16 +7,16 @@
 
 
 # instance fields
-.field final synthetic aip:Lcom/android/settings/ringtone/MultiSimRingtoneSettings;
+.field final synthetic aip:Lcom/android/settings_ext/ringtone/MultiSimRingtoneSettings;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/ringtone/MultiSimRingtoneSettings;)V
+.method constructor <init>(Lcom/android/settings_ext/ringtone/MultiSimRingtoneSettings;)V
     .locals 0
 
     .prologue
     .line 48
-    iput-object p1, p0, Lcom/android/settings/ringtone/MultiSimRingtoneSettings$1;->aip:Lcom/android/settings/ringtone/MultiSimRingtoneSettings;
+    iput-object p1, p0, Lcom/android/settings_ext/ringtone/MultiSimRingtoneSettings$1;->aip:Lcom/android/settings_ext/ringtone/MultiSimRingtoneSettings;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -30,9 +30,9 @@
 
     .prologue
     .line 52
-    iget-object v0, p0, Lcom/android/settings/ringtone/MultiSimRingtoneSettings$1;->aip:Lcom/android/settings/ringtone/MultiSimRingtoneSettings;
+    iget-object v0, p0, Lcom/android/settings_ext/ringtone/MultiSimRingtoneSettings$1;->aip:Lcom/android/settings_ext/ringtone/MultiSimRingtoneSettings;
 
-    invoke-static {v0}, Lcom/android/settings/ringtone/MultiSimRingtoneSettings;->a(Lcom/android/settings/ringtone/MultiSimRingtoneSettings;)V
+    invoke-static {v0}, Lcom/android/settings_ext/ringtone/MultiSimRingtoneSettings;->a(Lcom/android/settings_ext/ringtone/MultiSimRingtoneSettings;)V
 
     .line 53
     return-void

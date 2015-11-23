@@ -1,4 +1,4 @@
-.class Lcom/android/settings/gD;
+.class Lcom/android/settings_ext/gD;
 .super Ljava/lang/Object;
 .source "TetherSettings.java"
 
@@ -7,16 +7,16 @@
 
 
 # instance fields
-.field final synthetic yt:Lcom/android/settings/TetherSettings;
+.field final synthetic yt:Lcom/android/settings_ext/TetherSettings;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/TetherSettings;)V
+.method constructor <init>(Lcom/android/settings_ext/TetherSettings;)V
     .locals 0
 
     .prologue
     .line 583
-    iput-object p1, p0, Lcom/android/settings/gD;->yt:Lcom/android/settings/TetherSettings;
+    iput-object p1, p0, Lcom/android/settings_ext/gD;->yt:Lcom/android/settings_ext/TetherSettings;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -30,11 +30,11 @@
 
     .prologue
     .line 588
-    iget-object v0, p0, Lcom/android/settings/gD;->yt:Lcom/android/settings/TetherSettings;
+    iget-object v0, p0, Lcom/android/settings_ext/gD;->yt:Lcom/android/settings_ext/TetherSettings;
 
     const/4 v1, 0x0
 
-    invoke-static {v0, v1}, Lcom/android/settings/TetherSettings;->a(Lcom/android/settings/TetherSettings;I)V
+    invoke-static {v0, v1}, Lcom/android/settings_ext/TetherSettings;->a(Lcom/android/settings_ext/TetherSettings;I)V
 
     .line 589
     return-void

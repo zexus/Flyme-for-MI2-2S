@@ -1,5 +1,5 @@
-.class public Lcom/android/settings/MiuiFingerprintDetailFragment;
-.super Lcom/android/settings/SettingsPreferenceFragment;
+.class public Lcom/android/settings_ext/MiuiFingerprintDetailFragment;
+.super Lcom/android/settings_ext/SettingsPreferenceFragment;
 .source "MiuiFingerprintDetailFragment.java"
 
 
@@ -23,32 +23,32 @@
 
     .prologue
     .line 16
-    invoke-direct {p0}, Lcom/android/settings/SettingsPreferenceFragment;-><init>()V
+    invoke-direct {p0}, Lcom/android/settings_ext/SettingsPreferenceFragment;-><init>()V
 
     .line 23
     const/4 v0, 0x0
 
-    iput-boolean v0, p0, Lcom/android/settings/MiuiFingerprintDetailFragment;->pZ:Z
+    iput-boolean v0, p0, Lcom/android/settings_ext/MiuiFingerprintDetailFragment;->pZ:Z
 
     return-void
 .end method
 
-.method static synthetic a(Lcom/android/settings/MiuiFingerprintDetailFragment;)Ljava/lang/String;
+.method static synthetic a(Lcom/android/settings_ext/MiuiFingerprintDetailFragment;)Ljava/lang/String;
     .locals 1
 
     .prologue
     .line 16
-    iget-object v0, p0, Lcom/android/settings/MiuiFingerprintDetailFragment;->pV:Ljava/lang/String;
+    iget-object v0, p0, Lcom/android/settings_ext/MiuiFingerprintDetailFragment;->pV:Ljava/lang/String;
 
     return-object v0
 .end method
 
-.method static synthetic a(Lcom/android/settings/MiuiFingerprintDetailFragment;Z)Z
+.method static synthetic a(Lcom/android/settings_ext/MiuiFingerprintDetailFragment;Z)Z
     .locals 0
 
     .prologue
     .line 16
-    iput-boolean p1, p0, Lcom/android/settings/MiuiFingerprintDetailFragment;->pZ:Z
+    iput-boolean p1, p0, Lcom/android/settings_ext/MiuiFingerprintDetailFragment;->pZ:Z
 
     return p1
 .end method
@@ -58,7 +58,7 @@
 
     .prologue
     .line 44
-    iget-object v0, p0, Lcom/android/settings/MiuiFingerprintDetailFragment;->mView:Landroid/view/View;
+    iget-object v0, p0, Lcom/android/settings_ext/MiuiFingerprintDetailFragment;->mView:Landroid/view/View;
 
     const v1, 0x7f1000e3
 
@@ -68,10 +68,10 @@
 
     check-cast v0, Landroid/widget/EditText;
 
-    iput-object v0, p0, Lcom/android/settings/MiuiFingerprintDetailFragment;->pX:Landroid/widget/EditText;
+    iput-object v0, p0, Lcom/android/settings_ext/MiuiFingerprintDetailFragment;->pX:Landroid/widget/EditText;
 
     .line 45
-    iget-object v0, p0, Lcom/android/settings/MiuiFingerprintDetailFragment;->mView:Landroid/view/View;
+    iget-object v0, p0, Lcom/android/settings_ext/MiuiFingerprintDetailFragment;->mView:Landroid/view/View;
 
     const v1, 0x7f1000e4
 
@@ -81,25 +81,25 @@
 
     check-cast v0, Landroid/widget/Button;
 
-    iput-object v0, p0, Lcom/android/settings/MiuiFingerprintDetailFragment;->pY:Landroid/widget/Button;
+    iput-object v0, p0, Lcom/android/settings_ext/MiuiFingerprintDetailFragment;->pY:Landroid/widget/Button;
 
     .line 46
-    iget-object v0, p0, Lcom/android/settings/MiuiFingerprintDetailFragment;->pX:Landroid/widget/EditText;
+    iget-object v0, p0, Lcom/android/settings_ext/MiuiFingerprintDetailFragment;->pX:Landroid/widget/EditText;
 
-    iget-object v1, p0, Lcom/android/settings/MiuiFingerprintDetailFragment;->pW:Ljava/lang/String;
+    iget-object v1, p0, Lcom/android/settings_ext/MiuiFingerprintDetailFragment;->pW:Ljava/lang/String;
 
     invoke-virtual {v0, v1}, Landroid/widget/EditText;->setText(Ljava/lang/CharSequence;)V
 
     .line 47
-    iget-object v0, p0, Lcom/android/settings/MiuiFingerprintDetailFragment;->pX:Landroid/widget/EditText;
+    iget-object v0, p0, Lcom/android/settings_ext/MiuiFingerprintDetailFragment;->pX:Landroid/widget/EditText;
 
-    iget-object v1, p0, Lcom/android/settings/MiuiFingerprintDetailFragment;->pW:Ljava/lang/String;
+    iget-object v1, p0, Lcom/android/settings_ext/MiuiFingerprintDetailFragment;->pW:Ljava/lang/String;
 
     invoke-virtual {v1}, Ljava/lang/String;->length()I
 
     move-result v1
 
-    iget-object v2, p0, Lcom/android/settings/MiuiFingerprintDetailFragment;->pW:Ljava/lang/String;
+    iget-object v2, p0, Lcom/android/settings_ext/MiuiFingerprintDetailFragment;->pW:Ljava/lang/String;
 
     invoke-virtual {v2}, Ljava/lang/String;->length()I
 
@@ -108,23 +108,23 @@
     invoke-virtual {v0, v1, v2}, Landroid/widget/EditText;->setSelection(II)V
 
     .line 48
-    iget-object v0, p0, Lcom/android/settings/MiuiFingerprintDetailFragment;->pY:Landroid/widget/Button;
+    iget-object v0, p0, Lcom/android/settings_ext/MiuiFingerprintDetailFragment;->pY:Landroid/widget/Button;
 
     const/high16 v1, -0x10000
 
     invoke-virtual {v0, v1}, Landroid/widget/Button;->setTextColor(I)V
 
     .line 50
-    new-instance v0, Lcom/android/settings/dI;
+    new-instance v0, Lcom/android/settings_ext/dI;
 
-    invoke-direct {v0, p0}, Lcom/android/settings/dI;-><init>(Lcom/android/settings/MiuiFingerprintDetailFragment;)V
+    invoke-direct {v0, p0}, Lcom/android/settings_ext/dI;-><init>(Lcom/android/settings_ext/MiuiFingerprintDetailFragment;)V
 
     .line 66
-    iget-object v1, p0, Lcom/android/settings/MiuiFingerprintDetailFragment;->pY:Landroid/widget/Button;
+    iget-object v1, p0, Lcom/android/settings_ext/MiuiFingerprintDetailFragment;->pY:Landroid/widget/Button;
 
-    new-instance v2, Lcom/android/settings/dJ;
+    new-instance v2, Lcom/android/settings_ext/dJ;
 
-    invoke-direct {v2, p0, v0}, Lcom/android/settings/dJ;-><init>(Lcom/android/settings/MiuiFingerprintDetailFragment;Landroid/content/DialogInterface$OnClickListener;)V
+    invoke-direct {v2, p0, v0}, Lcom/android/settings_ext/dJ;-><init>(Lcom/android/settings_ext/MiuiFingerprintDetailFragment;Landroid/content/DialogInterface$OnClickListener;)V
 
     invoke-virtual {v1, v2}, Landroid/widget/Button;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
@@ -137,7 +137,7 @@
 
     .prologue
     .line 87
-    iget-object v0, p0, Lcom/android/settings/MiuiFingerprintDetailFragment;->pX:Landroid/widget/EditText;
+    iget-object v0, p0, Lcom/android/settings_ext/MiuiFingerprintDetailFragment;->pX:Landroid/widget/EditText;
 
     invoke-virtual {v0}, Landroid/widget/EditText;->getText()Landroid/text/Editable;
 
@@ -154,12 +154,12 @@
 
     if-nez v1, :cond_0
 
-    iget-boolean v1, p0, Lcom/android/settings/MiuiFingerprintDetailFragment;->pZ:Z
+    iget-boolean v1, p0, Lcom/android/settings_ext/MiuiFingerprintDetailFragment;->pZ:Z
 
     if-nez v1, :cond_0
 
     .line 90
-    invoke-virtual {p0}, Lcom/android/settings/MiuiFingerprintDetailFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/MiuiFingerprintDetailFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v1
 
@@ -177,7 +177,7 @@
 
     move-result-object v2
 
-    iget-object v3, p0, Lcom/android/settings/MiuiFingerprintDetailFragment;->pV:Ljava/lang/String;
+    iget-object v3, p0, Lcom/android/settings_ext/MiuiFingerprintDetailFragment;->pV:Ljava/lang/String;
 
     invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -209,13 +209,13 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/MiuiFingerprintDetailFragment;->mView:Landroid/view/View;
+    iput-object v0, p0, Lcom/android/settings_ext/MiuiFingerprintDetailFragment;->mView:Landroid/view/View;
 
     .line 39
-    invoke-direct {p0}, Lcom/android/settings/MiuiFingerprintDetailFragment;->eJ()V
+    invoke-direct {p0}, Lcom/android/settings_ext/MiuiFingerprintDetailFragment;->eJ()V
 
     .line 40
-    iget-object v0, p0, Lcom/android/settings/MiuiFingerprintDetailFragment;->mView:Landroid/view/View;
+    iget-object v0, p0, Lcom/android/settings_ext/MiuiFingerprintDetailFragment;->mView:Landroid/view/View;
 
     return-object v0
 .end method
@@ -225,10 +225,10 @@
 
     .prologue
     .line 27
-    invoke-super {p0, p1}, Lcom/android/settings/SettingsPreferenceFragment;->onCreate(Landroid/os/Bundle;)V
+    invoke-super {p0, p1}, Lcom/android/settings_ext/SettingsPreferenceFragment;->onCreate(Landroid/os/Bundle;)V
 
     .line 29
-    invoke-virtual {p0}, Lcom/android/settings/MiuiFingerprintDetailFragment;->getArguments()Landroid/os/Bundle;
+    invoke-virtual {p0}, Lcom/android/settings_ext/MiuiFingerprintDetailFragment;->getArguments()Landroid/os/Bundle;
 
     move-result-object v0
 
@@ -242,7 +242,7 @@
 
     move-result-object v1
 
-    iput-object v1, p0, Lcom/android/settings/MiuiFingerprintDetailFragment;->pV:Ljava/lang/String;
+    iput-object v1, p0, Lcom/android/settings_ext/MiuiFingerprintDetailFragment;->pV:Ljava/lang/String;
 
     .line 32
     const-string v1, "extra_fingerprint_title"
@@ -251,7 +251,7 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/MiuiFingerprintDetailFragment;->pW:Ljava/lang/String;
+    iput-object v0, p0, Lcom/android/settings_ext/MiuiFingerprintDetailFragment;->pW:Ljava/lang/String;
 
     .line 34
     :cond_0
@@ -263,10 +263,10 @@
 
     .prologue
     .line 82
-    invoke-direct {p0}, Lcom/android/settings/MiuiFingerprintDetailFragment;->eK()V
+    invoke-direct {p0}, Lcom/android/settings_ext/MiuiFingerprintDetailFragment;->eK()V
 
     .line 83
-    invoke-super {p0}, Lcom/android/settings/SettingsPreferenceFragment;->onPause()V
+    invoke-super {p0}, Lcom/android/settings_ext/SettingsPreferenceFragment;->onPause()V
 
     .line 84
     return-void

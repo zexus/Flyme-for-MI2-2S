@@ -1,22 +1,22 @@
-.class Lcom/android/settings/gB;
+.class Lcom/android/settings_ext/gB;
 .super Ljava/lang/Object;
 .source "SoundSettings.java"
 
 # interfaces
-.implements Lcom/android/settings/eN;
+.implements Lcom/android/settings_ext/eN;
 
 
 # instance fields
-.field final synthetic xX:Lcom/android/settings/SoundSettings;
+.field final synthetic xX:Lcom/android/settings_ext/SoundSettings;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/SoundSettings;)V
+.method constructor <init>(Lcom/android/settings_ext/SoundSettings;)V
     .locals 0
 
     .prologue
     .line 337
-    iput-object p1, p0, Lcom/android/settings/gB;->xX:Lcom/android/settings/SoundSettings;
+    iput-object p1, p0, Lcom/android/settings_ext/gB;->xX:Lcom/android/settings_ext/SoundSettings;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -30,16 +30,16 @@
 
     .prologue
     .line 341
-    iget-object v0, p0, Lcom/android/settings/gB;->xX:Lcom/android/settings/SoundSettings;
+    iget-object v0, p0, Lcom/android/settings_ext/gB;->xX:Lcom/android/settings_ext/SoundSettings;
 
     const/4 v1, 0x1
 
-    invoke-static {v0, v1}, Lcom/android/settings/SoundSettings;->a(Lcom/android/settings/SoundSettings;Z)Z
+    invoke-static {v0, v1}, Lcom/android/settings_ext/SoundSettings;->a(Lcom/android/settings_ext/SoundSettings;Z)Z
 
     .line 342
-    iget-object v0, p0, Lcom/android/settings/gB;->xX:Lcom/android/settings/SoundSettings;
+    iget-object v0, p0, Lcom/android/settings_ext/gB;->xX:Lcom/android/settings_ext/SoundSettings;
 
-    invoke-static {v0}, Lcom/android/settings/SoundSettings;->c(Lcom/android/settings/SoundSettings;)V
+    invoke-static {v0}, Lcom/android/settings_ext/SoundSettings;->c(Lcom/android/settings_ext/SoundSettings;)V
 
     .line 343
     return-void
@@ -50,11 +50,11 @@
 
     .prologue
     .line 347
-    iget-object v0, p0, Lcom/android/settings/gB;->xX:Lcom/android/settings/SoundSettings;
+    iget-object v0, p0, Lcom/android/settings_ext/gB;->xX:Lcom/android/settings_ext/SoundSettings;
 
     const/4 v1, 0x0
 
-    invoke-static {v0, v1}, Lcom/android/settings/SoundSettings;->a(Lcom/android/settings/SoundSettings;Z)Z
+    invoke-static {v0, v1}, Lcom/android/settings_ext/SoundSettings;->a(Lcom/android/settings_ext/SoundSettings;Z)Z
 
     .line 348
     return-void

@@ -1,4 +1,4 @@
-.class public Lcom/android/settings/deviceinfo/StorageMeasurement$MeasurementDetails;
+.class public Lcom/android/settings_ext/deviceinfo/StorageMeasurement$MeasurementDetails;
 .super Ljava/lang/Object;
 .source "StorageMeasurement.java"
 
@@ -32,14 +32,14 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/deviceinfo/StorageMeasurement$MeasurementDetails;->TA:Ljava/util/HashMap;
+    iput-object v0, p0, Lcom/android/settings_ext/deviceinfo/StorageMeasurement$MeasurementDetails;->TA:Ljava/util/HashMap;
 
     .line 166
     new-instance v0, Landroid/util/SparseLongArray;
 
     invoke-direct {v0}, Landroid/util/SparseLongArray;-><init>()V
 
-    iput-object v0, p0, Lcom/android/settings/deviceinfo/StorageMeasurement$MeasurementDetails;->TC:Landroid/util/SparseLongArray;
+    iput-object v0, p0, Lcom/android/settings_ext/deviceinfo/StorageMeasurement$MeasurementDetails;->TC:Landroid/util/SparseLongArray;
 
     return-void
 .end method

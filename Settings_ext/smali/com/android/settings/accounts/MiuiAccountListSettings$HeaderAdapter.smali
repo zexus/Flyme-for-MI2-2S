@@ -1,4 +1,4 @@
-.class Lcom/android/settings/accounts/MiuiAccountListSettings$HeaderAdapter;
+.class Lcom/android/settings_ext/accounts/MiuiAccountListSettings$HeaderAdapter;
 .super Landroid/widget/ArrayAdapter;
 .source "MiuiAccountListSettings.java"
 
@@ -6,11 +6,11 @@
 # instance fields
 .field private mInflater:Landroid/view/LayoutInflater;
 
-.field private rR:Lcom/android/settings/accounts/AuthenticatorHelper;
+.field private rR:Lcom/android/settings_ext/accounts/AuthenticatorHelper;
 
 
 # direct methods
-.method public constructor <init>(Landroid/app/Activity;Ljava/util/List;Lcom/android/settings/accounts/AuthenticatorHelper;)V
+.method public constructor <init>(Landroid/app/Activity;Ljava/util/List;Lcom/android/settings_ext/accounts/AuthenticatorHelper;)V
     .locals 1
 
     .prologue
@@ -20,14 +20,14 @@
     invoke-direct {p0, p1, v0, p2}, Landroid/widget/ArrayAdapter;-><init>(Landroid/content/Context;ILjava/util/List;)V
 
     .line 263
-    iput-object p3, p0, Lcom/android/settings/accounts/MiuiAccountListSettings$HeaderAdapter;->rR:Lcom/android/settings/accounts/AuthenticatorHelper;
+    iput-object p3, p0, Lcom/android/settings_ext/accounts/MiuiAccountListSettings$HeaderAdapter;->rR:Lcom/android/settings_ext/accounts/AuthenticatorHelper;
 
     .line 264
     invoke-static {p1}, Landroid/view/LayoutInflater;->from(Landroid/content/Context;)Landroid/view/LayoutInflater;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/accounts/MiuiAccountListSettings$HeaderAdapter;->mInflater:Landroid/view/LayoutInflater;
+    iput-object v0, p0, Lcom/android/settings_ext/accounts/MiuiAccountListSettings$HeaderAdapter;->mInflater:Landroid/view/LayoutInflater;
 
     .line 265
     return-void
@@ -35,18 +35,18 @@
 
 
 # virtual methods
-.method public a(Lcom/android/settings/accounts/MiuiAccountListSettings$HeaderAdapter$HeaderViewHolder;Landroid/preference/PreferenceActivity$Header;)V
+.method public a(Lcom/android/settings_ext/accounts/MiuiAccountListSettings$HeaderAdapter$HeaderViewHolder;Landroid/preference/PreferenceActivity$Header;)V
     .locals 3
 
     .prologue
     .line 305
     if-eqz p1, :cond_0
 
-    iget-object v0, p1, Lcom/android/settings/accounts/MiuiAccountListSettings$HeaderAdapter$HeaderViewHolder;->icon:Landroid/widget/ImageView;
+    iget-object v0, p1, Lcom/android/settings_ext/accounts/MiuiAccountListSettings$HeaderAdapter$HeaderViewHolder;->icon:Landroid/widget/ImageView;
 
     if-eqz v0, :cond_0
 
-    iget-object v0, p1, Lcom/android/settings/accounts/MiuiAccountListSettings$HeaderAdapter$HeaderViewHolder;->icon:Landroid/widget/ImageView;
+    iget-object v0, p1, Lcom/android/settings_ext/accounts/MiuiAccountListSettings$HeaderAdapter$HeaderViewHolder;->icon:Landroid/widget/ImageView;
 
     invoke-virtual {v0}, Landroid/widget/ImageView;->getVisibility()I
 
@@ -87,13 +87,13 @@
     move-result-object v0
 
     .line 314
-    iget-object v1, p0, Lcom/android/settings/accounts/MiuiAccountListSettings$HeaderAdapter;->rR:Lcom/android/settings/accounts/AuthenticatorHelper;
+    iget-object v1, p0, Lcom/android/settings_ext/accounts/MiuiAccountListSettings$HeaderAdapter;->rR:Lcom/android/settings_ext/accounts/AuthenticatorHelper;
 
-    invoke-virtual {p0}, Lcom/android/settings/accounts/MiuiAccountListSettings$HeaderAdapter;->getContext()Landroid/content/Context;
+    invoke-virtual {p0}, Lcom/android/settings_ext/accounts/MiuiAccountListSettings$HeaderAdapter;->getContext()Landroid/content/Context;
 
     move-result-object v2
 
-    invoke-virtual {v1, v2, v0}, Lcom/android/settings/accounts/AuthenticatorHelper;->h(Landroid/content/Context;Ljava/lang/String;)Landroid/graphics/drawable/Drawable;
+    invoke-virtual {v1, v2, v0}, Lcom/android/settings_ext/accounts/AuthenticatorHelper;->h(Landroid/content/Context;Ljava/lang/String;)Landroid/graphics/drawable/Drawable;
 
     move-result-object v0
 
@@ -107,7 +107,7 @@
 
     .line 320
     :cond_2
-    iget-object v1, p1, Lcom/android/settings/accounts/MiuiAccountListSettings$HeaderAdapter$HeaderViewHolder;->icon:Landroid/widget/ImageView;
+    iget-object v1, p1, Lcom/android/settings_ext/accounts/MiuiAccountListSettings$HeaderAdapter$HeaderViewHolder;->icon:Landroid/widget/ImageView;
 
     invoke-virtual {v1, v0}, Landroid/widget/ImageView;->setImageDrawable(Landroid/graphics/drawable/Drawable;)V
 
@@ -123,7 +123,7 @@
     const/4 v4, 0x0
 
     .line 269
-    invoke-virtual {p0, p1}, Lcom/android/settings/accounts/MiuiAccountListSettings$HeaderAdapter;->getItem(I)Ljava/lang/Object;
+    invoke-virtual {p0, p1}, Lcom/android/settings_ext/accounts/MiuiAccountListSettings$HeaderAdapter;->getItem(I)Ljava/lang/Object;
 
     move-result-object v0
 
@@ -137,7 +137,7 @@
 
     move-result-object v1
 
-    check-cast v1, Lcom/android/settings/accounts/MiuiAccountListSettings$HeaderAdapter$HeaderViewHolder;
+    check-cast v1, Lcom/android/settings_ext/accounts/MiuiAccountListSettings$HeaderAdapter$HeaderViewHolder;
 
     .line 290
     :goto_0
@@ -146,9 +146,9 @@
     invoke-virtual {p2, v2}, Landroid/view/View;->setBackgroundResource(I)V
 
     .line 291
-    iget-object v2, v1, Lcom/android/settings/accounts/MiuiAccountListSettings$HeaderAdapter$HeaderViewHolder;->title:Landroid/widget/TextView;
+    iget-object v2, v1, Lcom/android/settings_ext/accounts/MiuiAccountListSettings$HeaderAdapter$HeaderViewHolder;->title:Landroid/widget/TextView;
 
-    invoke-virtual {p0}, Lcom/android/settings/accounts/MiuiAccountListSettings$HeaderAdapter;->getContext()Landroid/content/Context;
+    invoke-virtual {p0}, Lcom/android/settings_ext/accounts/MiuiAccountListSettings$HeaderAdapter;->getContext()Landroid/content/Context;
 
     move-result-object v3
 
@@ -163,7 +163,7 @@
     invoke-virtual {v2, v3}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
     .line 292
-    invoke-virtual {p0}, Lcom/android/settings/accounts/MiuiAccountListSettings$HeaderAdapter;->getContext()Landroid/content/Context;
+    invoke-virtual {p0}, Lcom/android/settings_ext/accounts/MiuiAccountListSettings$HeaderAdapter;->getContext()Landroid/content/Context;
 
     move-result-object v2
 
@@ -183,30 +183,30 @@
     if-nez v3, :cond_1
 
     .line 294
-    iget-object v3, v1, Lcom/android/settings/accounts/MiuiAccountListSettings$HeaderAdapter$HeaderViewHolder;->summary:Landroid/widget/TextView;
+    iget-object v3, v1, Lcom/android/settings_ext/accounts/MiuiAccountListSettings$HeaderAdapter$HeaderViewHolder;->summary:Landroid/widget/TextView;
 
     invoke-virtual {v3, v4}, Landroid/widget/TextView;->setVisibility(I)V
 
     .line 295
-    iget-object v3, v1, Lcom/android/settings/accounts/MiuiAccountListSettings$HeaderAdapter$HeaderViewHolder;->summary:Landroid/widget/TextView;
+    iget-object v3, v1, Lcom/android/settings_ext/accounts/MiuiAccountListSettings$HeaderAdapter$HeaderViewHolder;->summary:Landroid/widget/TextView;
 
     invoke-virtual {v3, v2}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
     .line 300
     :goto_1
-    invoke-virtual {p0, v1, v0}, Lcom/android/settings/accounts/MiuiAccountListSettings$HeaderAdapter;->a(Lcom/android/settings/accounts/MiuiAccountListSettings$HeaderAdapter$HeaderViewHolder;Landroid/preference/PreferenceActivity$Header;)V
+    invoke-virtual {p0, v1, v0}, Lcom/android/settings_ext/accounts/MiuiAccountListSettings$HeaderAdapter;->a(Lcom/android/settings_ext/accounts/MiuiAccountListSettings$HeaderAdapter$HeaderViewHolder;Landroid/preference/PreferenceActivity$Header;)V
 
     .line 301
     return-object p2
 
     .line 276
     :cond_0
-    new-instance v2, Lcom/android/settings/accounts/MiuiAccountListSettings$HeaderAdapter$HeaderViewHolder;
+    new-instance v2, Lcom/android/settings_ext/accounts/MiuiAccountListSettings$HeaderAdapter$HeaderViewHolder;
 
-    invoke-direct {v2}, Lcom/android/settings/accounts/MiuiAccountListSettings$HeaderAdapter$HeaderViewHolder;-><init>()V
+    invoke-direct {v2}, Lcom/android/settings_ext/accounts/MiuiAccountListSettings$HeaderAdapter$HeaderViewHolder;-><init>()V
 
     .line 277
-    iget-object v1, p0, Lcom/android/settings/accounts/MiuiAccountListSettings$HeaderAdapter;->mInflater:Landroid/view/LayoutInflater;
+    iget-object v1, p0, Lcom/android/settings_ext/accounts/MiuiAccountListSettings$HeaderAdapter;->mInflater:Landroid/view/LayoutInflater;
 
     sget v3, Lmiui/R$layout;->preference:I
 
@@ -232,7 +232,7 @@
 
     check-cast v1, Landroid/widget/ImageView;
 
-    iput-object v1, v2, Lcom/android/settings/accounts/MiuiAccountListSettings$HeaderAdapter$HeaderViewHolder;->icon:Landroid/widget/ImageView;
+    iput-object v1, v2, Lcom/android/settings_ext/accounts/MiuiAccountListSettings$HeaderAdapter$HeaderViewHolder;->icon:Landroid/widget/ImageView;
 
     .line 282
     const v1, 0x1020016
@@ -243,7 +243,7 @@
 
     check-cast v1, Landroid/widget/TextView;
 
-    iput-object v1, v2, Lcom/android/settings/accounts/MiuiAccountListSettings$HeaderAdapter$HeaderViewHolder;->title:Landroid/widget/TextView;
+    iput-object v1, v2, Lcom/android/settings_ext/accounts/MiuiAccountListSettings$HeaderAdapter$HeaderViewHolder;->title:Landroid/widget/TextView;
 
     .line 284
     const v1, 0x1020010
@@ -254,7 +254,7 @@
 
     check-cast v1, Landroid/widget/TextView;
 
-    iput-object v1, v2, Lcom/android/settings/accounts/MiuiAccountListSettings$HeaderAdapter$HeaderViewHolder;->summary:Landroid/widget/TextView;
+    iput-object v1, v2, Lcom/android/settings_ext/accounts/MiuiAccountListSettings$HeaderAdapter$HeaderViewHolder;->summary:Landroid/widget/TextView;
 
     .line 286
     invoke-virtual {p2, v2}, Landroid/view/View;->setTag(Ljava/lang/Object;)V
@@ -265,7 +265,7 @@
 
     .line 297
     :cond_1
-    iget-object v2, v1, Lcom/android/settings/accounts/MiuiAccountListSettings$HeaderAdapter$HeaderViewHolder;->summary:Landroid/widget/TextView;
+    iget-object v2, v1, Lcom/android/settings_ext/accounts/MiuiAccountListSettings$HeaderAdapter$HeaderViewHolder;->summary:Landroid/widget/TextView;
 
     invoke-virtual {v2, v5}, Landroid/widget/TextView;->setVisibility(I)V
 

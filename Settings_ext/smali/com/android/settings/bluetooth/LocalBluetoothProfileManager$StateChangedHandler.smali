@@ -1,29 +1,29 @@
-.class Lcom/android/settings/bluetooth/LocalBluetoothProfileManager$StateChangedHandler;
+.class Lcom/android/settings_ext/bluetooth/LocalBluetoothProfileManager$StateChangedHandler;
 .super Ljava/lang/Object;
 .source "LocalBluetoothProfileManager.java"
 
 # interfaces
-.implements Lcom/android/settings/bluetooth/BluetoothEventManager$Handler;
+.implements Lcom/android/settings_ext/bluetooth/BluetoothEventManager$Handler;
 
 
 # instance fields
-.field final synthetic OX:Lcom/android/settings/bluetooth/LocalBluetoothProfileManager;
+.field final synthetic OX:Lcom/android/settings_ext/bluetooth/LocalBluetoothProfileManager;
 
-.field final OY:Lcom/android/settings/bluetooth/LocalBluetoothProfile;
+.field final OY:Lcom/android/settings_ext/bluetooth/LocalBluetoothProfile;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/bluetooth/LocalBluetoothProfileManager;Lcom/android/settings/bluetooth/LocalBluetoothProfile;)V
+.method constructor <init>(Lcom/android/settings_ext/bluetooth/LocalBluetoothProfileManager;Lcom/android/settings_ext/bluetooth/LocalBluetoothProfile;)V
     .locals 0
 
     .prologue
     .line 237
-    iput-object p1, p0, Lcom/android/settings/bluetooth/LocalBluetoothProfileManager$StateChangedHandler;->OX:Lcom/android/settings/bluetooth/LocalBluetoothProfileManager;
+    iput-object p1, p0, Lcom/android/settings_ext/bluetooth/LocalBluetoothProfileManager$StateChangedHandler;->OX:Lcom/android/settings_ext/bluetooth/LocalBluetoothProfileManager;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 238
-    iput-object p2, p0, Lcom/android/settings/bluetooth/LocalBluetoothProfileManager$StateChangedHandler;->OY:Lcom/android/settings/bluetooth/LocalBluetoothProfile;
+    iput-object p2, p0, Lcom/android/settings_ext/bluetooth/LocalBluetoothProfileManager$StateChangedHandler;->OY:Lcom/android/settings_ext/bluetooth/LocalBluetoothProfile;
 
     .line 239
     return-void
@@ -38,13 +38,13 @@
     const/4 v3, 0x0
 
     .line 242
-    iget-object v0, p0, Lcom/android/settings/bluetooth/LocalBluetoothProfileManager$StateChangedHandler;->OX:Lcom/android/settings/bluetooth/LocalBluetoothProfileManager;
+    iget-object v0, p0, Lcom/android/settings_ext/bluetooth/LocalBluetoothProfileManager$StateChangedHandler;->OX:Lcom/android/settings_ext/bluetooth/LocalBluetoothProfileManager;
 
-    invoke-static {v0}, Lcom/android/settings/bluetooth/LocalBluetoothProfileManager;->b(Lcom/android/settings/bluetooth/LocalBluetoothProfileManager;)Lcom/android/settings/bluetooth/CachedBluetoothDeviceManager;
+    invoke-static {v0}, Lcom/android/settings_ext/bluetooth/LocalBluetoothProfileManager;->b(Lcom/android/settings_ext/bluetooth/LocalBluetoothProfileManager;)Lcom/android/settings_ext/bluetooth/CachedBluetoothDeviceManager;
 
     move-result-object v0
 
-    invoke-virtual {v0, p3}, Lcom/android/settings/bluetooth/CachedBluetoothDeviceManager;->h(Landroid/bluetooth/BluetoothDevice;)Lcom/android/settings/bluetooth/CachedBluetoothDevice;
+    invoke-virtual {v0, p3}, Lcom/android/settings_ext/bluetooth/CachedBluetoothDeviceManager;->h(Landroid/bluetooth/BluetoothDevice;)Lcom/android/settings_ext/bluetooth/CachedBluetoothDevice;
 
     move-result-object v0
 
@@ -75,21 +75,21 @@
     invoke-static {v0, v1}, Landroid/util/Log;->w(Ljava/lang/String;Ljava/lang/String;)I
 
     .line 245
-    iget-object v0, p0, Lcom/android/settings/bluetooth/LocalBluetoothProfileManager$StateChangedHandler;->OX:Lcom/android/settings/bluetooth/LocalBluetoothProfileManager;
+    iget-object v0, p0, Lcom/android/settings_ext/bluetooth/LocalBluetoothProfileManager$StateChangedHandler;->OX:Lcom/android/settings_ext/bluetooth/LocalBluetoothProfileManager;
 
-    invoke-static {v0}, Lcom/android/settings/bluetooth/LocalBluetoothProfileManager;->b(Lcom/android/settings/bluetooth/LocalBluetoothProfileManager;)Lcom/android/settings/bluetooth/CachedBluetoothDeviceManager;
+    invoke-static {v0}, Lcom/android/settings_ext/bluetooth/LocalBluetoothProfileManager;->b(Lcom/android/settings_ext/bluetooth/LocalBluetoothProfileManager;)Lcom/android/settings_ext/bluetooth/CachedBluetoothDeviceManager;
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/android/settings/bluetooth/LocalBluetoothProfileManager$StateChangedHandler;->OX:Lcom/android/settings/bluetooth/LocalBluetoothProfileManager;
+    iget-object v1, p0, Lcom/android/settings_ext/bluetooth/LocalBluetoothProfileManager$StateChangedHandler;->OX:Lcom/android/settings_ext/bluetooth/LocalBluetoothProfileManager;
 
-    invoke-static {v1}, Lcom/android/settings/bluetooth/LocalBluetoothProfileManager;->c(Lcom/android/settings/bluetooth/LocalBluetoothProfileManager;)Lcom/android/settings/bluetooth/LocalBluetoothAdapter;
+    invoke-static {v1}, Lcom/android/settings_ext/bluetooth/LocalBluetoothProfileManager;->c(Lcom/android/settings_ext/bluetooth/LocalBluetoothProfileManager;)Lcom/android/settings_ext/bluetooth/LocalBluetoothAdapter;
 
     move-result-object v1
 
-    iget-object v2, p0, Lcom/android/settings/bluetooth/LocalBluetoothProfileManager$StateChangedHandler;->OX:Lcom/android/settings/bluetooth/LocalBluetoothProfileManager;
+    iget-object v2, p0, Lcom/android/settings_ext/bluetooth/LocalBluetoothProfileManager$StateChangedHandler;->OX:Lcom/android/settings_ext/bluetooth/LocalBluetoothProfileManager;
 
-    invoke-virtual {v0, v1, v2, p3}, Lcom/android/settings/bluetooth/CachedBluetoothDeviceManager;->a(Lcom/android/settings/bluetooth/LocalBluetoothAdapter;Lcom/android/settings/bluetooth/LocalBluetoothProfileManager;Landroid/bluetooth/BluetoothDevice;)Lcom/android/settings/bluetooth/CachedBluetoothDevice;
+    invoke-virtual {v0, v1, v2, p3}, Lcom/android/settings_ext/bluetooth/CachedBluetoothDeviceManager;->a(Lcom/android/settings_ext/bluetooth/LocalBluetoothAdapter;Lcom/android/settings_ext/bluetooth/LocalBluetoothProfileManager;Landroid/bluetooth/BluetoothDevice;)Lcom/android/settings_ext/bluetooth/CachedBluetoothDevice;
 
     move-result-object v0
 
@@ -128,7 +128,7 @@
 
     move-result-object v3
 
-    iget-object v4, p0, Lcom/android/settings/bluetooth/LocalBluetoothProfileManager$StateChangedHandler;->OY:Lcom/android/settings/bluetooth/LocalBluetoothProfile;
+    iget-object v4, p0, Lcom/android/settings_ext/bluetooth/LocalBluetoothProfileManager$StateChangedHandler;->OY:Lcom/android/settings_ext/bluetooth/LocalBluetoothProfile;
 
     invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
@@ -148,12 +148,12 @@
 
     .line 255
     :cond_1
-    iget-object v2, p0, Lcom/android/settings/bluetooth/LocalBluetoothProfileManager$StateChangedHandler;->OY:Lcom/android/settings/bluetooth/LocalBluetoothProfile;
+    iget-object v2, p0, Lcom/android/settings_ext/bluetooth/LocalBluetoothProfileManager$StateChangedHandler;->OY:Lcom/android/settings_ext/bluetooth/LocalBluetoothProfile;
 
-    invoke-virtual {v0, v2, v1}, Lcom/android/settings/bluetooth/CachedBluetoothDevice;->a(Lcom/android/settings/bluetooth/LocalBluetoothProfile;I)V
+    invoke-virtual {v0, v2, v1}, Lcom/android/settings_ext/bluetooth/CachedBluetoothDevice;->a(Lcom/android/settings_ext/bluetooth/LocalBluetoothProfile;I)V
 
     .line 256
-    invoke-virtual {v0}, Lcom/android/settings/bluetooth/CachedBluetoothDevice;->refresh()V
+    invoke-virtual {v0}, Lcom/android/settings_ext/bluetooth/CachedBluetoothDevice;->refresh()V
 
     .line 257
     return-void

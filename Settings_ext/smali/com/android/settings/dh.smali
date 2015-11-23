@@ -1,4 +1,4 @@
-.class Lcom/android/settings/dh;
+.class Lcom/android/settings_ext/dh;
 .super Ljava/lang/Object;
 .source "MiuiAnimationController.java"
 
@@ -7,16 +7,16 @@
 
 
 # instance fields
-.field final synthetic oq:Lcom/android/settings/dg;
+.field final synthetic oq:Lcom/android/settings_ext/dg;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/dg;)V
+.method constructor <init>(Lcom/android/settings_ext/dg;)V
     .locals 0
 
     .prologue
     .line 19
-    iput-object p1, p0, Lcom/android/settings/dh;->oq:Lcom/android/settings/dg;
+    iput-object p1, p0, Lcom/android/settings_ext/dh;->oq:Lcom/android/settings_ext/dg;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -30,9 +30,9 @@
 
     .prologue
     .line 22
-    iget-object v0, p0, Lcom/android/settings/dh;->oq:Lcom/android/settings/dg;
+    iget-object v0, p0, Lcom/android/settings_ext/dh;->oq:Lcom/android/settings_ext/dg;
 
-    invoke-static {v0}, Lcom/android/settings/dg;->a(Lcom/android/settings/dg;)V
+    invoke-static {v0}, Lcom/android/settings_ext/dg;->a(Lcom/android/settings_ext/dg;)V
 
     .line 23
     return-void

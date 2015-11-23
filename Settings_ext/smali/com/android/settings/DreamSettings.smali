@@ -1,9 +1,9 @@
-.class public Lcom/android/settings/DreamSettings;
-.super Lcom/android/settings/SettingsPreferenceFragment;
+.class public Lcom/android/settings_ext/DreamSettings;
+.super Lcom/android/settings_ext/SettingsPreferenceFragment;
 .source "DreamSettings.java"
 
 # interfaces
-.implements Lcom/android/settings/widget/I;
+.implements Lcom/android/settings_ext/widget/I;
 
 
 # static fields
@@ -13,13 +13,13 @@
 # instance fields
 .field private jo:Z
 
-.field private final ko:Lcom/android/settings/ci;
+.field private final ko:Lcom/android/settings_ext/ci;
 
-.field private kp:Lcom/android/settings/bX;
+.field private kp:Lcom/android/settings_ext/bX;
 
-.field private kq:Lcom/android/settings/ce;
+.field private kq:Lcom/android/settings_ext/ce;
 
-.field private kr:Lcom/android/settings/widget/SwitchBar;
+.field private kr:Lcom/android/settings_ext/widget/SwitchBar;
 
 .field private ks:[Landroid/view/MenuItem;
 
@@ -32,13 +32,13 @@
 
     .prologue
     .line 53
-    const-class v0, Lcom/android/settings/DreamSettings;
+    const-class v0, Lcom/android/settings_ext/DreamSettings;
 
     invoke-virtual {v0}, Ljava/lang/Class;->getSimpleName()Ljava/lang/String;
 
     move-result-object v0
 
-    sput-object v0, Lcom/android/settings/DreamSettings;->TAG:Ljava/lang/String;
+    sput-object v0, Lcom/android/settings_ext/DreamSettings;->TAG:Ljava/lang/String;
 
     return-void
 .end method
@@ -48,16 +48,16 @@
 
     .prologue
     .line 51
-    invoke-direct {p0}, Lcom/android/settings/SettingsPreferenceFragment;-><init>()V
+    invoke-direct {p0}, Lcom/android/settings_ext/SettingsPreferenceFragment;-><init>()V
 
     .line 58
-    new-instance v0, Lcom/android/settings/ci;
+    new-instance v0, Lcom/android/settings_ext/ci;
 
     const/4 v1, 0x0
 
-    invoke-direct {v0, p0, v1}, Lcom/android/settings/ci;-><init>(Lcom/android/settings/DreamSettings;Lcom/android/settings/ca;)V
+    invoke-direct {v0, p0, v1}, Lcom/android/settings_ext/ci;-><init>(Lcom/android/settings_ext/DreamSettings;Lcom/android/settings_ext/ca;)V
 
-    iput-object v0, p0, Lcom/android/settings/DreamSettings;->ko:Lcom/android/settings/ci;
+    iput-object v0, p0, Lcom/android/settings_ext/DreamSettings;->ko:Lcom/android/settings_ext/ci;
 
     .line 364
     return-void
@@ -79,9 +79,9 @@
     invoke-interface {v0, p4}, Landroid/view/MenuItem;->setEnabled(Z)Landroid/view/MenuItem;
 
     .line 170
-    new-instance v1, Lcom/android/settings/cc;
+    new-instance v1, Lcom/android/settings_ext/cc;
 
-    invoke-direct {v1, p0, p5}, Lcom/android/settings/cc;-><init>(Lcom/android/settings/DreamSettings;Ljava/lang/Runnable;)V
+    invoke-direct {v1, p0, p5}, Lcom/android/settings_ext/cc;-><init>(Lcom/android/settings_ext/DreamSettings;Ljava/lang/Runnable;)V
 
     invoke-interface {v0, v1}, Landroid/view/MenuItem;->setOnMenuItemClickListener(Landroid/view/MenuItem$OnMenuItemClickListener;)Landroid/view/MenuItem;
 
@@ -89,12 +89,12 @@
     return-object v0
 .end method
 
-.method static synthetic a(Lcom/android/settings/DreamSettings;)Lcom/android/settings/bX;
+.method static synthetic a(Lcom/android/settings_ext/DreamSettings;)Lcom/android/settings_ext/bX;
     .locals 1
 
     .prologue
     .line 51
-    iget-object v0, p0, Lcom/android/settings/DreamSettings;->kp:Lcom/android/settings/bX;
+    iget-object v0, p0, Lcom/android/settings_ext/DreamSettings;->kp:Lcom/android/settings_ext/bX;
 
     return-object v0
 .end method
@@ -107,12 +107,12 @@
     return-void
 .end method
 
-.method static synthetic b(Lcom/android/settings/DreamSettings;)V
+.method static synthetic b(Lcom/android/settings_ext/DreamSettings;)V
     .locals 0
 
     .prologue
     .line 51
-    invoke-direct {p0}, Lcom/android/settings/DreamSettings;->dj()V
+    invoke-direct {p0}, Lcom/android/settings_ext/DreamSettings;->dj()V
 
     return-void
 .end method
@@ -122,7 +122,7 @@
 
     .prologue
     .line 51
-    invoke-static {p0, p1}, Lcom/android/settings/DreamSettings;->a(Ljava/lang/String;[Ljava/lang/Object;)V
+    invoke-static {p0, p1}, Lcom/android/settings_ext/DreamSettings;->a(Ljava/lang/String;[Ljava/lang/Object;)V
 
     return-void
 .end method
@@ -142,7 +142,7 @@
 
     new-array v3, v3, [Ljava/lang/CharSequence;
 
-    iget-object v4, p0, Lcom/android/settings/DreamSettings;->mContext:Landroid/content/Context;
+    iget-object v4, p0, Lcom/android/settings_ext/DreamSettings;->mContext:Landroid/content/Context;
 
     const v5, 0x7f0903a1
 
@@ -152,7 +152,7 @@
 
     aput-object v4, v3, v1
 
-    iget-object v4, p0, Lcom/android/settings/DreamSettings;->mContext:Landroid/content/Context;
+    iget-object v4, p0, Lcom/android/settings_ext/DreamSettings;->mContext:Landroid/content/Context;
 
     const v5, 0x7f0903a0
 
@@ -162,7 +162,7 @@
 
     aput-object v4, v3, v2
 
-    iget-object v4, p0, Lcom/android/settings/DreamSettings;->mContext:Landroid/content/Context;
+    iget-object v4, p0, Lcom/android/settings_ext/DreamSettings;->mContext:Landroid/content/Context;
 
     const v5, 0x7f09039f
 
@@ -173,17 +173,17 @@
     aput-object v4, v3, v0
 
     .line 195
-    iget-object v4, p0, Lcom/android/settings/DreamSettings;->kp:Lcom/android/settings/bX;
+    iget-object v4, p0, Lcom/android/settings_ext/DreamSettings;->kp:Lcom/android/settings_ext/bX;
 
-    invoke-virtual {v4}, Lcom/android/settings/bX;->de()Z
+    invoke-virtual {v4}, Lcom/android/settings_ext/bX;->de()Z
 
     move-result v4
 
     if-eqz v4, :cond_0
 
-    iget-object v4, p0, Lcom/android/settings/DreamSettings;->kp:Lcom/android/settings/bX;
+    iget-object v4, p0, Lcom/android/settings_ext/DreamSettings;->kp:Lcom/android/settings_ext/bX;
 
-    invoke-virtual {v4}, Lcom/android/settings/bX;->df()Z
+    invoke-virtual {v4}, Lcom/android/settings_ext/bX;->df()Z
 
     move-result v4
 
@@ -193,7 +193,7 @@
     :goto_0
     new-instance v1, Landroid/app/AlertDialog$Builder;
 
-    iget-object v2, p0, Lcom/android/settings/DreamSettings;->mContext:Landroid/content/Context;
+    iget-object v2, p0, Lcom/android/settings_ext/DreamSettings;->mContext:Landroid/content/Context;
 
     invoke-direct {v1, v2}, Landroid/app/AlertDialog$Builder;-><init>(Landroid/content/Context;)V
 
@@ -203,9 +203,9 @@
 
     move-result-object v1
 
-    new-instance v2, Lcom/android/settings/cd;
+    new-instance v2, Lcom/android/settings_ext/cd;
 
-    invoke-direct {v2, p0}, Lcom/android/settings/cd;-><init>(Lcom/android/settings/DreamSettings;)V
+    invoke-direct {v2, p0}, Lcom/android/settings_ext/cd;-><init>(Lcom/android/settings_ext/DreamSettings;)V
 
     invoke-virtual {v1, v3, v0, v2}, Landroid/app/AlertDialog$Builder;->setSingleChoiceItems([Ljava/lang/CharSequence;ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
@@ -219,9 +219,9 @@
 
     .line 195
     :cond_0
-    iget-object v0, p0, Lcom/android/settings/DreamSettings;->kp:Lcom/android/settings/bX;
+    iget-object v0, p0, Lcom/android/settings_ext/DreamSettings;->kp:Lcom/android/settings_ext/bX;
 
-    invoke-virtual {v0}, Lcom/android/settings/bX;->de()Z
+    invoke-virtual {v0}, Lcom/android/settings_ext/bX;->de()Z
 
     move-result v0
 
@@ -232,9 +232,9 @@
     goto :goto_0
 
     :cond_1
-    iget-object v0, p0, Lcom/android/settings/DreamSettings;->kp:Lcom/android/settings/bX;
+    iget-object v0, p0, Lcom/android/settings_ext/DreamSettings;->kp:Lcom/android/settings_ext/bX;
 
-    invoke-virtual {v0}, Lcom/android/settings/bX;->df()Z
+    invoke-virtual {v0}, Lcom/android/settings_ext/bX;->df()Z
 
     move-result v0
 
@@ -261,63 +261,63 @@
 
     new-array v2, v1, [Ljava/lang/Object;
 
-    invoke-static {v0, v2}, Lcom/android/settings/DreamSettings;->a(Ljava/lang/String;[Ljava/lang/Object;)V
+    invoke-static {v0, v2}, Lcom/android/settings_ext/DreamSettings;->a(Ljava/lang/String;[Ljava/lang/Object;)V
 
     .line 261
     const/4 v0, 0x1
 
-    iput-boolean v0, p0, Lcom/android/settings/DreamSettings;->jo:Z
+    iput-boolean v0, p0, Lcom/android/settings_ext/DreamSettings;->jo:Z
 
     .line 262
-    iget-object v0, p0, Lcom/android/settings/DreamSettings;->kp:Lcom/android/settings/bX;
+    iget-object v0, p0, Lcom/android/settings_ext/DreamSettings;->kp:Lcom/android/settings_ext/bX;
 
-    invoke-virtual {v0}, Lcom/android/settings/bX;->isEnabled()Z
+    invoke-virtual {v0}, Lcom/android/settings_ext/bX;->isEnabled()Z
 
     move-result v2
 
     .line 263
-    iget-object v0, p0, Lcom/android/settings/DreamSettings;->kr:Lcom/android/settings/widget/SwitchBar;
+    iget-object v0, p0, Lcom/android/settings_ext/DreamSettings;->kr:Lcom/android/settings_ext/widget/SwitchBar;
 
-    invoke-virtual {v0}, Lcom/android/settings/widget/SwitchBar;->isChecked()Z
+    invoke-virtual {v0}, Lcom/android/settings_ext/widget/SwitchBar;->isChecked()Z
 
     move-result v0
 
     if-eq v0, v2, :cond_0
 
     .line 264
-    iget-object v0, p0, Lcom/android/settings/DreamSettings;->kr:Lcom/android/settings/widget/SwitchBar;
+    iget-object v0, p0, Lcom/android/settings_ext/DreamSettings;->kr:Lcom/android/settings_ext/widget/SwitchBar;
 
-    invoke-virtual {v0, v2}, Lcom/android/settings/widget/SwitchBar;->setChecked(Z)V
+    invoke-virtual {v0, v2}, Lcom/android/settings_ext/widget/SwitchBar;->setChecked(Z)V
 
     .line 266
     :cond_0
-    iget-object v0, p0, Lcom/android/settings/DreamSettings;->kq:Lcom/android/settings/ce;
+    iget-object v0, p0, Lcom/android/settings_ext/DreamSettings;->kq:Lcom/android/settings_ext/ce;
 
-    invoke-virtual {v0}, Lcom/android/settings/ce;->clear()V
+    invoke-virtual {v0}, Lcom/android/settings_ext/ce;->clear()V
 
     .line 267
     if-eqz v2, :cond_1
 
     .line 268
-    iget-object v0, p0, Lcom/android/settings/DreamSettings;->kp:Lcom/android/settings/bX;
+    iget-object v0, p0, Lcom/android/settings_ext/DreamSettings;->kp:Lcom/android/settings_ext/bX;
 
-    invoke-virtual {v0}, Lcom/android/settings/bX;->db()Ljava/util/List;
+    invoke-virtual {v0}, Lcom/android/settings_ext/bX;->db()Ljava/util/List;
 
     move-result-object v0
 
     .line 269
-    iget-object v3, p0, Lcom/android/settings/DreamSettings;->kq:Lcom/android/settings/ce;
+    iget-object v3, p0, Lcom/android/settings_ext/DreamSettings;->kq:Lcom/android/settings_ext/ce;
 
-    invoke-virtual {v3, v0}, Lcom/android/settings/ce;->addAll(Ljava/util/Collection;)V
+    invoke-virtual {v3, v0}, Lcom/android/settings_ext/ce;->addAll(Ljava/util/Collection;)V
 
     .line 271
     :cond_1
-    iget-object v0, p0, Lcom/android/settings/DreamSettings;->ks:[Landroid/view/MenuItem;
+    iget-object v0, p0, Lcom/android/settings_ext/DreamSettings;->ks:[Landroid/view/MenuItem;
 
     if-eqz v0, :cond_2
 
     .line 272
-    iget-object v3, p0, Lcom/android/settings/DreamSettings;->ks:[Landroid/view/MenuItem;
+    iget-object v3, p0, Lcom/android/settings_ext/DreamSettings;->ks:[Landroid/view/MenuItem;
 
     array-length v4, v3
 
@@ -338,7 +338,7 @@
 
     .line 274
     :cond_2
-    iput-boolean v1, p0, Lcom/android/settings/DreamSettings;->jo:Z
+    iput-boolean v1, p0, Lcom/android/settings_ext/DreamSettings;->jo:Z
 
     .line 275
     return-void
@@ -349,12 +349,12 @@
 
     .prologue
     .line 250
-    new-instance v0, Lcom/android/settings/bX;
+    new-instance v0, Lcom/android/settings_ext/bX;
 
-    invoke-direct {v0, p0}, Lcom/android/settings/bX;-><init>(Landroid/content/Context;)V
+    invoke-direct {v0, p0}, Lcom/android/settings_ext/bX;-><init>(Landroid/content/Context;)V
 
     .line 251
-    invoke-virtual {v0}, Lcom/android/settings/bX;->isEnabled()Z
+    invoke-virtual {v0}, Lcom/android/settings_ext/bX;->isEnabled()Z
 
     move-result v1
 
@@ -373,7 +373,7 @@
     return-object v0
 
     :cond_0
-    invoke-virtual {v0}, Lcom/android/settings/bX;->dd()Ljava/lang/CharSequence;
+    invoke-virtual {v0}, Lcom/android/settings_ext/bX;->dd()Ljava/lang/CharSequence;
 
     move-result-object v0
 
@@ -387,17 +387,17 @@
 
     .prologue
     .line 91
-    iget-boolean v0, p0, Lcom/android/settings/DreamSettings;->jo:Z
+    iget-boolean v0, p0, Lcom/android/settings_ext/DreamSettings;->jo:Z
 
     if-nez v0, :cond_0
 
     .line 92
-    iget-object v0, p0, Lcom/android/settings/DreamSettings;->kp:Lcom/android/settings/bX;
+    iget-object v0, p0, Lcom/android/settings_ext/DreamSettings;->kp:Lcom/android/settings_ext/bX;
 
-    invoke-virtual {v0, p2}, Lcom/android/settings/bX;->setEnabled(Z)V
+    invoke-virtual {v0, p2}, Lcom/android/settings_ext/bX;->setEnabled(Z)V
 
     .line 93
-    invoke-direct {p0}, Lcom/android/settings/DreamSettings;->dj()V
+    invoke-direct {p0}, Lcom/android/settings_ext/DreamSettings;->dj()V
 
     .line 95
     :cond_0
@@ -429,13 +429,13 @@
 
     aput-object p1, v1, v2
 
-    invoke-static {v0, v1}, Lcom/android/settings/DreamSettings;->a(Ljava/lang/String;[Ljava/lang/Object;)V
+    invoke-static {v0, v1}, Lcom/android/settings_ext/DreamSettings;->a(Ljava/lang/String;[Ljava/lang/Object;)V
 
     .line 115
-    invoke-super {p0, p1}, Lcom/android/settings/SettingsPreferenceFragment;->onActivityCreated(Landroid/os/Bundle;)V
+    invoke-super {p0, p1}, Lcom/android/settings_ext/SettingsPreferenceFragment;->onActivityCreated(Landroid/os/Bundle;)V
 
     .line 117
-    invoke-virtual {p0}, Lcom/android/settings/DreamSettings;->getListView()Landroid/widget/ListView;
+    invoke-virtual {p0}, Lcom/android/settings_ext/DreamSettings;->getListView()Landroid/widget/ListView;
 
     move-result-object v1
 
@@ -443,7 +443,7 @@
     invoke-virtual {v1, v3}, Landroid/widget/ListView;->setItemsCanFocus(Z)V
 
     .line 120
-    invoke-virtual {p0}, Lcom/android/settings/DreamSettings;->getView()Landroid/view/View;
+    invoke-virtual {p0}, Lcom/android/settings_ext/DreamSettings;->getView()Landroid/view/View;
 
     move-result-object v0
 
@@ -464,42 +464,42 @@
     invoke-virtual {v1, v0}, Landroid/widget/ListView;->setEmptyView(Landroid/view/View;)V
 
     .line 124
-    new-instance v0, Lcom/android/settings/ce;
+    new-instance v0, Lcom/android/settings_ext/ce;
 
-    iget-object v2, p0, Lcom/android/settings/DreamSettings;->mContext:Landroid/content/Context;
+    iget-object v2, p0, Lcom/android/settings_ext/DreamSettings;->mContext:Landroid/content/Context;
 
-    invoke-direct {v0, p0, v2}, Lcom/android/settings/ce;-><init>(Lcom/android/settings/DreamSettings;Landroid/content/Context;)V
+    invoke-direct {v0, p0, v2}, Lcom/android/settings_ext/ce;-><init>(Lcom/android/settings_ext/DreamSettings;Landroid/content/Context;)V
 
-    iput-object v0, p0, Lcom/android/settings/DreamSettings;->kq:Lcom/android/settings/ce;
+    iput-object v0, p0, Lcom/android/settings_ext/DreamSettings;->kq:Lcom/android/settings_ext/ce;
 
     .line 125
-    iget-object v0, p0, Lcom/android/settings/DreamSettings;->kq:Lcom/android/settings/ce;
+    iget-object v0, p0, Lcom/android/settings_ext/DreamSettings;->kq:Lcom/android/settings_ext/ce;
 
     invoke-virtual {v1, v0}, Landroid/widget/ListView;->setAdapter(Landroid/widget/ListAdapter;)V
 
     .line 127
-    invoke-virtual {p0}, Lcom/android/settings/DreamSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/DreamSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
-    check-cast v0, Lcom/android/settings/gh;
+    check-cast v0, Lcom/android/settings_ext/gh;
 
     .line 128
-    invoke-virtual {v0}, Lcom/android/settings/gh;->gH()Lcom/android/settings/widget/SwitchBar;
+    invoke-virtual {v0}, Lcom/android/settings_ext/gh;->gH()Lcom/android/settings_ext/widget/SwitchBar;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/DreamSettings;->kr:Lcom/android/settings/widget/SwitchBar;
+    iput-object v0, p0, Lcom/android/settings_ext/DreamSettings;->kr:Lcom/android/settings_ext/widget/SwitchBar;
 
     .line 129
-    iget-object v0, p0, Lcom/android/settings/DreamSettings;->kr:Lcom/android/settings/widget/SwitchBar;
+    iget-object v0, p0, Lcom/android/settings_ext/DreamSettings;->kr:Lcom/android/settings_ext/widget/SwitchBar;
 
-    invoke-virtual {v0, p0}, Lcom/android/settings/widget/SwitchBar;->a(Lcom/android/settings/widget/I;)V
+    invoke-virtual {v0, p0}, Lcom/android/settings_ext/widget/SwitchBar;->a(Lcom/android/settings_ext/widget/I;)V
 
     .line 130
-    iget-object v0, p0, Lcom/android/settings/DreamSettings;->kr:Lcom/android/settings/widget/SwitchBar;
+    iget-object v0, p0, Lcom/android/settings_ext/DreamSettings;->kr:Lcom/android/settings_ext/widget/SwitchBar;
 
-    invoke-virtual {v0}, Lcom/android/settings/widget/SwitchBar;->show()V
+    invoke-virtual {v0}, Lcom/android/settings_ext/widget/SwitchBar;->show()V
 
     .line 131
     return-void
@@ -528,13 +528,13 @@
 
     aput-object v3, v1, v2
 
-    invoke-static {v0, v1}, Lcom/android/settings/DreamSettings;->a(Ljava/lang/String;[Ljava/lang/Object;)V
+    invoke-static {v0, v1}, Lcom/android/settings_ext/DreamSettings;->a(Ljava/lang/String;[Ljava/lang/Object;)V
 
     .line 75
-    invoke-super {p0, p1}, Lcom/android/settings/SettingsPreferenceFragment;->onAttach(Landroid/app/Activity;)V
+    invoke-super {p0, p1}, Lcom/android/settings_ext/SettingsPreferenceFragment;->onAttach(Landroid/app/Activity;)V
 
     .line 76
-    iput-object p1, p0, Lcom/android/settings/DreamSettings;->mContext:Landroid/content/Context;
+    iput-object p1, p0, Lcom/android/settings_ext/DreamSettings;->mContext:Landroid/content/Context;
 
     .line 77
     return-void
@@ -555,24 +555,24 @@
 
     aput-object p1, v1, v2
 
-    invoke-static {v0, v1}, Lcom/android/settings/DreamSettings;->a(Ljava/lang/String;[Ljava/lang/Object;)V
+    invoke-static {v0, v1}, Lcom/android/settings_ext/DreamSettings;->a(Ljava/lang/String;[Ljava/lang/Object;)V
 
     .line 82
-    invoke-super {p0, p1}, Lcom/android/settings/SettingsPreferenceFragment;->onCreate(Landroid/os/Bundle;)V
+    invoke-super {p0, p1}, Lcom/android/settings_ext/SettingsPreferenceFragment;->onCreate(Landroid/os/Bundle;)V
 
     .line 84
-    new-instance v0, Lcom/android/settings/bX;
+    new-instance v0, Lcom/android/settings_ext/bX;
 
-    invoke-virtual {p0}, Lcom/android/settings/DreamSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/DreamSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v1
 
-    invoke-direct {v0, v1}, Lcom/android/settings/bX;-><init>(Landroid/content/Context;)V
+    invoke-direct {v0, v1}, Lcom/android/settings_ext/bX;-><init>(Landroid/content/Context;)V
 
-    iput-object v0, p0, Lcom/android/settings/DreamSettings;->kp:Lcom/android/settings/bX;
+    iput-object v0, p0, Lcom/android/settings_ext/DreamSettings;->kp:Lcom/android/settings_ext/bX;
 
     .line 86
-    invoke-virtual {p0, v3}, Lcom/android/settings/DreamSettings;->setHasOptionsMenu(Z)V
+    invoke-virtual {p0, v3}, Lcom/android/settings_ext/DreamSettings;->setHasOptionsMenu(Z)V
 
     .line 87
     return-void
@@ -597,13 +597,13 @@
 
     aput-object v3, v1, v2
 
-    invoke-static {v0, v1}, Lcom/android/settings/DreamSettings;->a(Ljava/lang/String;[Ljava/lang/Object;)V
+    invoke-static {v0, v1}, Lcom/android/settings_ext/DreamSettings;->a(Ljava/lang/String;[Ljava/lang/Object;)V
 
     .line 183
     if-ne p1, v4, :cond_0
 
     .line 184
-    invoke-direct {p0}, Lcom/android/settings/DreamSettings;->di()Landroid/app/Dialog;
+    invoke-direct {p0}, Lcom/android/settings_ext/DreamSettings;->di()Landroid/app/Dialog;
 
     move-result-object v0
 
@@ -612,7 +612,7 @@
     return-object v0
 
     :cond_0
-    invoke-super {p0, p1}, Lcom/android/settings/SettingsPreferenceFragment;->onCreateDialog(I)Landroid/app/Dialog;
+    invoke-super {p0, p1}, Lcom/android/settings_ext/SettingsPreferenceFragment;->onCreateDialog(I)Landroid/app/Dialog;
 
     move-result-object v0
 
@@ -630,47 +630,47 @@
 
     new-array v1, v3, [Ljava/lang/Object;
 
-    invoke-static {v0, v1}, Lcom/android/settings/DreamSettings;->a(Ljava/lang/String;[Ljava/lang/Object;)V
+    invoke-static {v0, v1}, Lcom/android/settings_ext/DreamSettings;->a(Ljava/lang/String;[Ljava/lang/Object;)V
 
     .line 137
-    iget-object v0, p0, Lcom/android/settings/DreamSettings;->kp:Lcom/android/settings/bX;
+    iget-object v0, p0, Lcom/android/settings_ext/DreamSettings;->kp:Lcom/android/settings_ext/bX;
 
-    invoke-virtual {v0}, Lcom/android/settings/bX;->isEnabled()Z
+    invoke-virtual {v0}, Lcom/android/settings_ext/bX;->isEnabled()Z
 
     move-result v4
 
     .line 140
     const v2, 0x7f0903a5
 
-    new-instance v5, Lcom/android/settings/ca;
+    new-instance v5, Lcom/android/settings_ext/ca;
 
-    invoke-direct {v5, p0}, Lcom/android/settings/ca;-><init>(Lcom/android/settings/DreamSettings;)V
+    invoke-direct {v5, p0}, Lcom/android/settings_ext/ca;-><init>(Lcom/android/settings_ext/DreamSettings;)V
 
     move-object v0, p0
 
     move-object v1, p1
 
-    invoke-direct/range {v0 .. v5}, Lcom/android/settings/DreamSettings;->a(Landroid/view/Menu;IIZLjava/lang/Runnable;)Landroid/view/MenuItem;
+    invoke-direct/range {v0 .. v5}, Lcom/android/settings_ext/DreamSettings;->a(Landroid/view/Menu;IIZLjava/lang/Runnable;)Landroid/view/MenuItem;
 
     move-result-object v6
 
     .line 149
     const v2, 0x7f0903a4
 
-    new-instance v5, Lcom/android/settings/cb;
+    new-instance v5, Lcom/android/settings_ext/cb;
 
-    invoke-direct {v5, p0}, Lcom/android/settings/cb;-><init>(Lcom/android/settings/DreamSettings;)V
+    invoke-direct {v5, p0}, Lcom/android/settings_ext/cb;-><init>(Lcom/android/settings_ext/DreamSettings;)V
 
     move-object v0, p0
 
     move-object v1, p1
 
-    invoke-direct/range {v0 .. v5}, Lcom/android/settings/DreamSettings;->a(Landroid/view/Menu;IIZLjava/lang/Runnable;)Landroid/view/MenuItem;
+    invoke-direct/range {v0 .. v5}, Lcom/android/settings_ext/DreamSettings;->a(Landroid/view/Menu;IIZLjava/lang/Runnable;)Landroid/view/MenuItem;
 
     move-result-object v0
 
     .line 160
-    invoke-super {p0, p1, p2}, Lcom/android/settings/SettingsPreferenceFragment;->onCreateOptionsMenu(Landroid/view/Menu;Landroid/view/MenuInflater;)V
+    invoke-super {p0, p1, p2}, Lcom/android/settings_ext/SettingsPreferenceFragment;->onCreateOptionsMenu(Landroid/view/Menu;Landroid/view/MenuInflater;)V
 
     .line 162
     const/4 v1, 0x2
@@ -683,7 +683,7 @@
 
     aput-object v0, v1, v2
 
-    iput-object v1, p0, Lcom/android/settings/DreamSettings;->ks:[Landroid/view/MenuItem;
+    iput-object v1, p0, Lcom/android/settings_ext/DreamSettings;->ks:[Landroid/view/MenuItem;
 
     .line 163
     return-void
@@ -700,20 +700,20 @@
 
     new-array v1, v1, [Ljava/lang/Object;
 
-    invoke-static {v0, v1}, Lcom/android/settings/DreamSettings;->a(Ljava/lang/String;[Ljava/lang/Object;)V
+    invoke-static {v0, v1}, Lcom/android/settings_ext/DreamSettings;->a(Ljava/lang/String;[Ljava/lang/Object;)V
 
     .line 106
-    invoke-super {p0}, Lcom/android/settings/SettingsPreferenceFragment;->onDestroyView()V
+    invoke-super {p0}, Lcom/android/settings_ext/SettingsPreferenceFragment;->onDestroyView()V
 
     .line 108
-    iget-object v0, p0, Lcom/android/settings/DreamSettings;->kr:Lcom/android/settings/widget/SwitchBar;
+    iget-object v0, p0, Lcom/android/settings_ext/DreamSettings;->kr:Lcom/android/settings_ext/widget/SwitchBar;
 
-    invoke-virtual {v0, p0}, Lcom/android/settings/widget/SwitchBar;->b(Lcom/android/settings/widget/I;)V
+    invoke-virtual {v0, p0}, Lcom/android/settings_ext/widget/SwitchBar;->b(Lcom/android/settings_ext/widget/I;)V
 
     .line 109
-    iget-object v0, p0, Lcom/android/settings/DreamSettings;->kr:Lcom/android/settings/widget/SwitchBar;
+    iget-object v0, p0, Lcom/android/settings_ext/DreamSettings;->kr:Lcom/android/settings_ext/widget/SwitchBar;
 
-    invoke-virtual {v0}, Lcom/android/settings/widget/SwitchBar;->hide()V
+    invoke-virtual {v0}, Lcom/android/settings_ext/widget/SwitchBar;->hide()V
 
     .line 110
     return-void
@@ -730,15 +730,15 @@
 
     new-array v1, v1, [Ljava/lang/Object;
 
-    invoke-static {v0, v1}, Lcom/android/settings/DreamSettings;->a(Ljava/lang/String;[Ljava/lang/Object;)V
+    invoke-static {v0, v1}, Lcom/android/settings_ext/DreamSettings;->a(Ljava/lang/String;[Ljava/lang/Object;)V
 
     .line 215
-    invoke-super {p0}, Lcom/android/settings/SettingsPreferenceFragment;->onPause()V
+    invoke-super {p0}, Lcom/android/settings_ext/SettingsPreferenceFragment;->onPause()V
 
     .line 217
-    iget-object v0, p0, Lcom/android/settings/DreamSettings;->mContext:Landroid/content/Context;
+    iget-object v0, p0, Lcom/android/settings_ext/DreamSettings;->mContext:Landroid/content/Context;
 
-    iget-object v1, p0, Lcom/android/settings/DreamSettings;->ko:Lcom/android/settings/ci;
+    iget-object v1, p0, Lcom/android/settings_ext/DreamSettings;->ko:Lcom/android/settings_ext/ci;
 
     invoke-virtual {v0, v1}, Landroid/content/Context;->unregisterReceiver(Landroid/content/BroadcastReceiver;)V
 
@@ -757,13 +757,13 @@
 
     new-array v1, v1, [Ljava/lang/Object;
 
-    invoke-static {v0, v1}, Lcom/android/settings/DreamSettings;->a(Ljava/lang/String;[Ljava/lang/Object;)V
+    invoke-static {v0, v1}, Lcom/android/settings_ext/DreamSettings;->a(Ljava/lang/String;[Ljava/lang/Object;)V
 
     .line 223
-    invoke-super {p0}, Lcom/android/settings/SettingsPreferenceFragment;->onResume()V
+    invoke-super {p0}, Lcom/android/settings_ext/SettingsPreferenceFragment;->onResume()V
 
     .line 224
-    invoke-direct {p0}, Lcom/android/settings/DreamSettings;->dj()V
+    invoke-direct {p0}, Lcom/android/settings_ext/DreamSettings;->dj()V
 
     .line 227
     new-instance v0, Landroid/content/IntentFilter;
@@ -796,9 +796,9 @@
     invoke-virtual {v0, v1}, Landroid/content/IntentFilter;->addDataScheme(Ljava/lang/String;)V
 
     .line 233
-    iget-object v1, p0, Lcom/android/settings/DreamSettings;->mContext:Landroid/content/Context;
+    iget-object v1, p0, Lcom/android/settings_ext/DreamSettings;->mContext:Landroid/content/Context;
 
-    iget-object v2, p0, Lcom/android/settings/DreamSettings;->ko:Lcom/android/settings/ci;
+    iget-object v2, p0, Lcom/android/settings_ext/DreamSettings;->ko:Lcom/android/settings_ext/ci;
 
     invoke-virtual {v1, v2, v0}, Landroid/content/Context;->registerReceiver(Landroid/content/BroadcastReceiver;Landroid/content/IntentFilter;)Landroid/content/Intent;
 
@@ -817,10 +817,10 @@
 
     new-array v1, v1, [Ljava/lang/Object;
 
-    invoke-static {v0, v1}, Lcom/android/settings/DreamSettings;->a(Ljava/lang/String;[Ljava/lang/Object;)V
+    invoke-static {v0, v1}, Lcom/android/settings_ext/DreamSettings;->a(Ljava/lang/String;[Ljava/lang/Object;)V
 
     .line 100
-    invoke-super {p0}, Lcom/android/settings/SettingsPreferenceFragment;->onStart()V
+    invoke-super {p0}, Lcom/android/settings_ext/SettingsPreferenceFragment;->onStart()V
 
     .line 101
     return-void

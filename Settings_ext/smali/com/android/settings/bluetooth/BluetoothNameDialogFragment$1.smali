@@ -1,19 +1,19 @@
-.class Lcom/android/settings/bluetooth/BluetoothNameDialogFragment$1;
+.class Lcom/android/settings_ext/bluetooth/BluetoothNameDialogFragment$1;
 .super Landroid/content/BroadcastReceiver;
 .source "BluetoothNameDialogFragment.java"
 
 
 # instance fields
-.field final synthetic MT:Lcom/android/settings/bluetooth/BluetoothNameDialogFragment;
+.field final synthetic MT:Lcom/android/settings_ext/bluetooth/BluetoothNameDialogFragment;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/bluetooth/BluetoothNameDialogFragment;)V
+.method constructor <init>(Lcom/android/settings_ext/bluetooth/BluetoothNameDialogFragment;)V
     .locals 0
 
     .prologue
     .line 69
-    iput-object p1, p0, Lcom/android/settings/bluetooth/BluetoothNameDialogFragment$1;->MT:Lcom/android/settings/bluetooth/BluetoothNameDialogFragment;
+    iput-object p1, p0, Lcom/android/settings_ext/bluetooth/BluetoothNameDialogFragment$1;->MT:Lcom/android/settings_ext/bluetooth/BluetoothNameDialogFragment;
 
     invoke-direct {p0}, Landroid/content/BroadcastReceiver;-><init>()V
 
@@ -41,9 +41,9 @@
     if-eqz v1, :cond_1
 
     .line 74
-    iget-object v0, p0, Lcom/android/settings/bluetooth/BluetoothNameDialogFragment$1;->MT:Lcom/android/settings/bluetooth/BluetoothNameDialogFragment;
+    iget-object v0, p0, Lcom/android/settings_ext/bluetooth/BluetoothNameDialogFragment$1;->MT:Lcom/android/settings_ext/bluetooth/BluetoothNameDialogFragment;
 
-    invoke-virtual {v0}, Lcom/android/settings/bluetooth/BluetoothNameDialogFragment;->lS()V
+    invoke-virtual {v0}, Lcom/android/settings_ext/bluetooth/BluetoothNameDialogFragment;->lS()V
 
     .line 80
     :cond_0
@@ -73,9 +73,9 @@
     if-ne v0, v1, :cond_0
 
     .line 78
-    iget-object v0, p0, Lcom/android/settings/bluetooth/BluetoothNameDialogFragment$1;->MT:Lcom/android/settings/bluetooth/BluetoothNameDialogFragment;
+    iget-object v0, p0, Lcom/android/settings_ext/bluetooth/BluetoothNameDialogFragment$1;->MT:Lcom/android/settings_ext/bluetooth/BluetoothNameDialogFragment;
 
-    invoke-virtual {v0}, Lcom/android/settings/bluetooth/BluetoothNameDialogFragment;->lS()V
+    invoke-virtual {v0}, Lcom/android/settings_ext/bluetooth/BluetoothNameDialogFragment;->lS()V
 
     goto :goto_0
 .end method

@@ -1,4 +1,4 @@
-.class public Lcom/android/settings/widget/ScreenView;
+.class public Lcom/android/settings_ext/widget/ScreenView;
 .super Landroid/view/ViewGroup;
 .source "ScreenView.java"
 
@@ -50,15 +50,15 @@
 
 .field private aqT:I
 
-.field private aqU:Lcom/android/settings/widget/s;
+.field private aqU:Lcom/android/settings_ext/widget/s;
 
 .field private aqV:I
 
 .field private aqW:F
 
-.field private aqX:Lcom/android/settings/widget/v;
+.field private aqX:Lcom/android/settings_ext/widget/v;
 
-.field private aqY:Lcom/android/settings/widget/o;
+.field private aqY:Lcom/android/settings_ext/widget/o;
 
 .field private final aqj:F
 
@@ -76,13 +76,13 @@
 
 .field private aqq:I
 
-.field private aqr:Lcom/android/settings/widget/n;
+.field private aqr:Lcom/android/settings_ext/widget/n;
 
-.field private aqs:Lcom/android/settings/widget/n;
+.field private aqs:Lcom/android/settings_ext/widget/n;
 
-.field private aqt:Lcom/android/settings/widget/t;
+.field private aqt:Lcom/android/settings_ext/widget/t;
 
-.field private aqu:Lcom/android/settings/widget/u;
+.field private aqu:Lcom/android/settings_ext/widget/u;
 
 .field private aqv:Z
 
@@ -129,7 +129,7 @@
 
     invoke-direct {v0, v2, v2, v1}, Landroid/widget/LinearLayout$LayoutParams;-><init>(IIF)V
 
-    sput-object v0, Lcom/android/settings/widget/ScreenView;->aqh:Landroid/widget/LinearLayout$LayoutParams;
+    sput-object v0, Lcom/android/settings_ext/widget/ScreenView;->aqh:Landroid/widget/LinearLayout$LayoutParams;
 
     .line 186
     const-wide v0, 0x3f90624dd2f1a9fcL    # 0.016
@@ -144,7 +144,7 @@
 
     double-to-float v0, v0
 
-    sput v0, Lcom/android/settings/widget/ScreenView;->aqi:F
+    sput v0, Lcom/android/settings_ext/widget/ScreenView;->aqi:F
 
     return-void
 .end method
@@ -179,99 +179,99 @@
 
     mul-float/2addr v0, v1
 
-    iput v0, p0, Lcom/android/settings/widget/ScreenView;->aqj:F
+    iput v0, p0, Lcom/android/settings_ext/widget/ScreenView;->aqj:F
 
     .line 203
-    iput-boolean v3, p0, Lcom/android/settings/widget/ScreenView;->aqk:Z
+    iput-boolean v3, p0, Lcom/android/settings_ext/widget/ScreenView;->aqk:Z
 
     .line 207
     const v0, 0x7f02024a
 
-    iput v0, p0, Lcom/android/settings/widget/ScreenView;->aqm:I
+    iput v0, p0, Lcom/android/settings_ext/widget/ScreenView;->aqm:I
 
     .line 209
     const v0, 0x7f02024b
 
-    iput v0, p0, Lcom/android/settings/widget/ScreenView;->aqn:I
+    iput v0, p0, Lcom/android/settings_ext/widget/ScreenView;->aqn:I
 
     .line 211
     const v0, 0x7f02024c
 
-    iput v0, p0, Lcom/android/settings/widget/ScreenView;->aqo:I
+    iput v0, p0, Lcom/android/settings_ext/widget/ScreenView;->aqo:I
 
     .line 213
     const v0, 0x7f02024d
 
-    iput v0, p0, Lcom/android/settings/widget/ScreenView;->aqp:I
+    iput v0, p0, Lcom/android/settings_ext/widget/ScreenView;->aqp:I
 
     .line 215
     const v0, 0x7f0201ff
 
-    iput v0, p0, Lcom/android/settings/widget/ScreenView;->aqq:I
+    iput v0, p0, Lcom/android/settings_ext/widget/ScreenView;->aqq:I
 
     .line 233
-    new-instance v0, Lcom/android/settings/widget/l;
+    new-instance v0, Lcom/android/settings_ext/widget/l;
 
-    invoke-direct {v0, p0}, Lcom/android/settings/widget/l;-><init>(Lcom/android/settings/widget/ScreenView;)V
+    invoke-direct {v0, p0}, Lcom/android/settings_ext/widget/l;-><init>(Lcom/android/settings_ext/widget/ScreenView;)V
 
-    iput-object v0, p0, Lcom/android/settings/widget/ScreenView;->aqw:Ljava/lang/Runnable;
+    iput-object v0, p0, Lcom/android/settings_ext/widget/ScreenView;->aqw:Ljava/lang/Runnable;
 
     .line 251
-    iput v3, p0, Lcom/android/settings/widget/ScreenView;->mVisibleRange:I
+    iput v3, p0, Lcom/android/settings_ext/widget/ScreenView;->mVisibleRange:I
 
     .line 256
-    iput v2, p0, Lcom/android/settings/widget/ScreenView;->mScreenWidth:I
+    iput v2, p0, Lcom/android/settings_ext/widget/ScreenView;->mScreenWidth:I
 
     .line 265
-    iput v5, p0, Lcom/android/settings/widget/ScreenView;->aqB:I
+    iput v5, p0, Lcom/android/settings_ext/widget/ScreenView;->aqB:I
 
     .line 271
     const v0, 0x3eaaaaab
 
-    iput v0, p0, Lcom/android/settings/widget/ScreenView;->aqE:F
+    iput v0, p0, Lcom/android/settings_ext/widget/ScreenView;->aqE:F
 
     .line 277
-    iput v4, p0, Lcom/android/settings/widget/ScreenView;->aqG:F
+    iput v4, p0, Lcom/android/settings_ext/widget/ScreenView;->aqG:F
 
     .line 279
-    iput v2, p0, Lcom/android/settings/widget/ScreenView;->aqH:I
+    iput v2, p0, Lcom/android/settings_ext/widget/ScreenView;->aqH:I
 
     .line 288
-    iput v2, p0, Lcom/android/settings/widget/ScreenView;->aqJ:I
+    iput v2, p0, Lcom/android/settings_ext/widget/ScreenView;->aqJ:I
 
     .line 294
-    iput-boolean v3, p0, Lcom/android/settings/widget/ScreenView;->aqM:Z
+    iput-boolean v3, p0, Lcom/android/settings_ext/widget/ScreenView;->aqM:Z
 
     .line 300
-    iput v5, p0, Lcom/android/settings/widget/ScreenView;->aqP:I
+    iput v5, p0, Lcom/android/settings_ext/widget/ScreenView;->aqP:I
 
     .line 306
-    iput v4, p0, Lcom/android/settings/widget/ScreenView;->aqS:F
+    iput v4, p0, Lcom/android/settings_ext/widget/ScreenView;->aqS:F
 
     .line 308
     const/16 v0, 0x12c
 
-    iput v0, p0, Lcom/android/settings/widget/ScreenView;->aqT:I
+    iput v0, p0, Lcom/android/settings_ext/widget/ScreenView;->aqT:I
 
     .line 312
-    iput v2, p0, Lcom/android/settings/widget/ScreenView;->aqV:I
+    iput v2, p0, Lcom/android/settings_ext/widget/ScreenView;->aqV:I
 
     .line 314
     const v0, 0x3fa66666    # 1.3f
 
-    iput v0, p0, Lcom/android/settings/widget/ScreenView;->aqW:F
+    iput v0, p0, Lcom/android/settings_ext/widget/ScreenView;->aqW:F
 
     .line 318
-    new-instance v0, Lcom/android/settings/widget/o;
+    new-instance v0, Lcom/android/settings_ext/widget/o;
 
     const/4 v1, 0x0
 
-    invoke-direct {v0, p0, v1}, Lcom/android/settings/widget/o;-><init>(Lcom/android/settings/widget/ScreenView;Lcom/android/settings/widget/l;)V
+    invoke-direct {v0, p0, v1}, Lcom/android/settings_ext/widget/o;-><init>(Lcom/android/settings_ext/widget/ScreenView;Lcom/android/settings_ext/widget/l;)V
 
-    iput-object v0, p0, Lcom/android/settings/widget/ScreenView;->aqY:Lcom/android/settings/widget/o;
+    iput-object v0, p0, Lcom/android/settings_ext/widget/ScreenView;->aqY:Lcom/android/settings_ext/widget/o;
 
     .line 328
-    invoke-direct {p0}, Lcom/android/settings/widget/ScreenView;->tx()V
+    invoke-direct {p0}, Lcom/android/settings_ext/widget/ScreenView;->tx()V
 
     .line 329
     return-void
@@ -284,7 +284,7 @@
     .line 339
     const/4 v0, 0x0
 
-    invoke-direct {p0, p1, p2, v0}, Lcom/android/settings/widget/ScreenView;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
+    invoke-direct {p0, p1, p2, v0}, Lcom/android/settings_ext/widget/ScreenView;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
 
     .line 340
     return-void
@@ -320,99 +320,99 @@
 
     mul-float/2addr v0, v1
 
-    iput v0, p0, Lcom/android/settings/widget/ScreenView;->aqj:F
+    iput v0, p0, Lcom/android/settings_ext/widget/ScreenView;->aqj:F
 
     .line 203
-    iput-boolean v3, p0, Lcom/android/settings/widget/ScreenView;->aqk:Z
+    iput-boolean v3, p0, Lcom/android/settings_ext/widget/ScreenView;->aqk:Z
 
     .line 207
     const v0, 0x7f02024a
 
-    iput v0, p0, Lcom/android/settings/widget/ScreenView;->aqm:I
+    iput v0, p0, Lcom/android/settings_ext/widget/ScreenView;->aqm:I
 
     .line 209
     const v0, 0x7f02024b
 
-    iput v0, p0, Lcom/android/settings/widget/ScreenView;->aqn:I
+    iput v0, p0, Lcom/android/settings_ext/widget/ScreenView;->aqn:I
 
     .line 211
     const v0, 0x7f02024c
 
-    iput v0, p0, Lcom/android/settings/widget/ScreenView;->aqo:I
+    iput v0, p0, Lcom/android/settings_ext/widget/ScreenView;->aqo:I
 
     .line 213
     const v0, 0x7f02024d
 
-    iput v0, p0, Lcom/android/settings/widget/ScreenView;->aqp:I
+    iput v0, p0, Lcom/android/settings_ext/widget/ScreenView;->aqp:I
 
     .line 215
     const v0, 0x7f0201ff
 
-    iput v0, p0, Lcom/android/settings/widget/ScreenView;->aqq:I
+    iput v0, p0, Lcom/android/settings_ext/widget/ScreenView;->aqq:I
 
     .line 233
-    new-instance v0, Lcom/android/settings/widget/l;
+    new-instance v0, Lcom/android/settings_ext/widget/l;
 
-    invoke-direct {v0, p0}, Lcom/android/settings/widget/l;-><init>(Lcom/android/settings/widget/ScreenView;)V
+    invoke-direct {v0, p0}, Lcom/android/settings_ext/widget/l;-><init>(Lcom/android/settings_ext/widget/ScreenView;)V
 
-    iput-object v0, p0, Lcom/android/settings/widget/ScreenView;->aqw:Ljava/lang/Runnable;
+    iput-object v0, p0, Lcom/android/settings_ext/widget/ScreenView;->aqw:Ljava/lang/Runnable;
 
     .line 251
-    iput v3, p0, Lcom/android/settings/widget/ScreenView;->mVisibleRange:I
+    iput v3, p0, Lcom/android/settings_ext/widget/ScreenView;->mVisibleRange:I
 
     .line 256
-    iput v2, p0, Lcom/android/settings/widget/ScreenView;->mScreenWidth:I
+    iput v2, p0, Lcom/android/settings_ext/widget/ScreenView;->mScreenWidth:I
 
     .line 265
-    iput v5, p0, Lcom/android/settings/widget/ScreenView;->aqB:I
+    iput v5, p0, Lcom/android/settings_ext/widget/ScreenView;->aqB:I
 
     .line 271
     const v0, 0x3eaaaaab
 
-    iput v0, p0, Lcom/android/settings/widget/ScreenView;->aqE:F
+    iput v0, p0, Lcom/android/settings_ext/widget/ScreenView;->aqE:F
 
     .line 277
-    iput v4, p0, Lcom/android/settings/widget/ScreenView;->aqG:F
+    iput v4, p0, Lcom/android/settings_ext/widget/ScreenView;->aqG:F
 
     .line 279
-    iput v2, p0, Lcom/android/settings/widget/ScreenView;->aqH:I
+    iput v2, p0, Lcom/android/settings_ext/widget/ScreenView;->aqH:I
 
     .line 288
-    iput v2, p0, Lcom/android/settings/widget/ScreenView;->aqJ:I
+    iput v2, p0, Lcom/android/settings_ext/widget/ScreenView;->aqJ:I
 
     .line 294
-    iput-boolean v3, p0, Lcom/android/settings/widget/ScreenView;->aqM:Z
+    iput-boolean v3, p0, Lcom/android/settings_ext/widget/ScreenView;->aqM:Z
 
     .line 300
-    iput v5, p0, Lcom/android/settings/widget/ScreenView;->aqP:I
+    iput v5, p0, Lcom/android/settings_ext/widget/ScreenView;->aqP:I
 
     .line 306
-    iput v4, p0, Lcom/android/settings/widget/ScreenView;->aqS:F
+    iput v4, p0, Lcom/android/settings_ext/widget/ScreenView;->aqS:F
 
     .line 308
     const/16 v0, 0x12c
 
-    iput v0, p0, Lcom/android/settings/widget/ScreenView;->aqT:I
+    iput v0, p0, Lcom/android/settings_ext/widget/ScreenView;->aqT:I
 
     .line 312
-    iput v2, p0, Lcom/android/settings/widget/ScreenView;->aqV:I
+    iput v2, p0, Lcom/android/settings_ext/widget/ScreenView;->aqV:I
 
     .line 314
     const v0, 0x3fa66666    # 1.3f
 
-    iput v0, p0, Lcom/android/settings/widget/ScreenView;->aqW:F
+    iput v0, p0, Lcom/android/settings_ext/widget/ScreenView;->aqW:F
 
     .line 318
-    new-instance v0, Lcom/android/settings/widget/o;
+    new-instance v0, Lcom/android/settings_ext/widget/o;
 
     const/4 v1, 0x0
 
-    invoke-direct {v0, p0, v1}, Lcom/android/settings/widget/o;-><init>(Lcom/android/settings/widget/ScreenView;Lcom/android/settings/widget/l;)V
+    invoke-direct {v0, p0, v1}, Lcom/android/settings_ext/widget/o;-><init>(Lcom/android/settings_ext/widget/ScreenView;Lcom/android/settings_ext/widget/l;)V
 
-    iput-object v0, p0, Lcom/android/settings/widget/ScreenView;->aqY:Lcom/android/settings/widget/o;
+    iput-object v0, p0, Lcom/android/settings_ext/widget/ScreenView;->aqY:Lcom/android/settings_ext/widget/o;
 
     .line 352
-    invoke-direct {p0}, Lcom/android/settings/widget/ScreenView;->tx()V
+    invoke-direct {p0}, Lcom/android/settings_ext/widget/ScreenView;->tx()V
 
     .line 353
     return-void
@@ -427,14 +427,14 @@
     const/4 v2, 0x0
 
     .line 1029
-    iput p2, p0, Lcom/android/settings/widget/ScreenView;->aqJ:I
+    iput p2, p0, Lcom/android/settings_ext/widget/ScreenView;->aqJ:I
 
     .line 1030
-    invoke-virtual {p0}, Lcom/android/settings/widget/ScreenView;->getParent()Landroid/view/ViewParent;
+    invoke-virtual {p0}, Lcom/android/settings_ext/widget/ScreenView;->getParent()Landroid/view/ViewParent;
 
     move-result-object v3
 
-    iget v0, p0, Lcom/android/settings/widget/ScreenView;->aqJ:I
+    iget v0, p0, Lcom/android/settings_ext/widget/ScreenView;->aqJ:I
 
     if-eqz v0, :cond_1
 
@@ -444,27 +444,27 @@
     invoke-interface {v3, v0}, Landroid/view/ViewParent;->requestDisallowInterceptTouchEvent(Z)V
 
     .line 1032
-    iget v0, p0, Lcom/android/settings/widget/ScreenView;->aqJ:I
+    iget v0, p0, Lcom/android/settings_ext/widget/ScreenView;->aqJ:I
 
     if-nez v0, :cond_2
 
     .line 1033
     const/4 v0, -0x1
 
-    iput v0, p0, Lcom/android/settings/widget/ScreenView;->aqP:I
+    iput v0, p0, Lcom/android/settings_ext/widget/ScreenView;->aqP:I
 
     .line 1034
-    iput-boolean v2, p0, Lcom/android/settings/widget/ScreenView;->aqM:Z
+    iput-boolean v2, p0, Lcom/android/settings_ext/widget/ScreenView;->aqM:Z
 
     .line 1035
-    iget-object v0, p0, Lcom/android/settings/widget/ScreenView;->aqY:Lcom/android/settings/widget/o;
+    iget-object v0, p0, Lcom/android/settings_ext/widget/ScreenView;->aqY:Lcom/android/settings_ext/widget/o;
 
-    invoke-virtual {v0}, Lcom/android/settings/widget/o;->recycle()V
+    invoke-virtual {v0}, Lcom/android/settings_ext/widget/o;->recycle()V
 
     .line 1057
     :cond_0
     :goto_1
-    invoke-direct {p0}, Lcom/android/settings/widget/ScreenView;->ty()V
+    invoke-direct {p0}, Lcom/android/settings_ext/widget/ScreenView;->ty()V
 
     .line 1058
     return-void
@@ -484,10 +484,10 @@
 
     move-result v0
 
-    iput v0, p0, Lcom/android/settings/widget/ScreenView;->aqP:I
+    iput v0, p0, Lcom/android/settings_ext/widget/ScreenView;->aqP:I
 
     .line 1039
-    iget v0, p0, Lcom/android/settings/widget/ScreenView;->aqP:I
+    iget v0, p0, Lcom/android/settings_ext/widget/ScreenView;->aqP:I
 
     invoke-virtual {p1, v0}, Landroid/view/MotionEvent;->findPointerIndex(I)I
 
@@ -497,21 +497,21 @@
 
     move-result v0
 
-    iput v0, p0, Lcom/android/settings/widget/ScreenView;->mLastMotionX:F
+    iput v0, p0, Lcom/android/settings_ext/widget/ScreenView;->mLastMotionX:F
 
     .line 1042
     :cond_3
-    iget-boolean v0, p0, Lcom/android/settings/widget/ScreenView;->aqM:Z
+    iget-boolean v0, p0, Lcom/android/settings_ext/widget/ScreenView;->aqM:Z
 
     if-eqz v0, :cond_4
 
     .line 1043
-    iput-boolean v2, p0, Lcom/android/settings/widget/ScreenView;->aqM:Z
+    iput-boolean v2, p0, Lcom/android/settings_ext/widget/ScreenView;->aqM:Z
 
     .line 1047
-    iget v0, p0, Lcom/android/settings/widget/ScreenView;->mCurrentScreen:I
+    iget v0, p0, Lcom/android/settings_ext/widget/ScreenView;->mCurrentScreen:I
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/widget/ScreenView;->getChildAt(I)Landroid/view/View;
+    invoke-virtual {p0, v0}, Lcom/android/settings_ext/widget/ScreenView;->getChildAt(I)Landroid/view/View;
 
     move-result-object v0
 
@@ -523,18 +523,18 @@
 
     .line 1052
     :cond_4
-    iget v0, p0, Lcom/android/settings/widget/ScreenView;->aqJ:I
+    iget v0, p0, Lcom/android/settings_ext/widget/ScreenView;->aqJ:I
 
     if-ne v0, v1, :cond_0
 
     .line 1053
-    invoke-virtual {p0}, Lcom/android/settings/widget/ScreenView;->getScrollX()I
+    invoke-virtual {p0}, Lcom/android/settings_ext/widget/ScreenView;->getScrollX()I
 
     move-result v0
 
     int-to-float v0, v0
 
-    iput v0, p0, Lcom/android/settings/widget/ScreenView;->aqR:F
+    iput v0, p0, Lcom/android/settings_ext/widget/ScreenView;->aqR:F
 
     .line 1054
     invoke-static {}, Ljava/lang/System;->nanoTime()J
@@ -547,47 +547,47 @@
 
     div-float/2addr v0, v1
 
-    iput v0, p0, Lcom/android/settings/widget/ScreenView;->aqQ:F
+    iput v0, p0, Lcom/android/settings_ext/widget/ScreenView;->aqQ:F
 
     goto :goto_1
 .end method
 
-.method static synthetic a(Lcom/android/settings/widget/ScreenView;)V
+.method static synthetic a(Lcom/android/settings_ext/widget/ScreenView;)V
     .locals 0
 
     .prologue
     .line 55
-    invoke-direct {p0}, Lcom/android/settings/widget/ScreenView;->tz()V
+    invoke-direct {p0}, Lcom/android/settings_ext/widget/ScreenView;->tz()V
 
     return-void
 .end method
 
-.method static synthetic a(Lcom/android/settings/widget/ScreenView;Landroid/view/MotionEvent;I)V
+.method static synthetic a(Lcom/android/settings_ext/widget/ScreenView;Landroid/view/MotionEvent;I)V
     .locals 0
 
     .prologue
     .line 55
-    invoke-direct {p0, p1, p2}, Lcom/android/settings/widget/ScreenView;->a(Landroid/view/MotionEvent;I)V
+    invoke-direct {p0, p1, p2}, Lcom/android/settings_ext/widget/ScreenView;->a(Landroid/view/MotionEvent;I)V
 
     return-void
 .end method
 
-.method static synthetic b(Lcom/android/settings/widget/ScreenView;)Lcom/android/settings/widget/u;
+.method static synthetic b(Lcom/android/settings_ext/widget/ScreenView;)Lcom/android/settings_ext/widget/u;
     .locals 1
 
     .prologue
     .line 55
-    iget-object v0, p0, Lcom/android/settings/widget/ScreenView;->aqu:Lcom/android/settings/widget/u;
+    iget-object v0, p0, Lcom/android/settings_ext/widget/ScreenView;->aqu:Lcom/android/settings_ext/widget/u;
 
     return-object v0
 .end method
 
-.method static synthetic c(Lcom/android/settings/widget/ScreenView;)F
+.method static synthetic c(Lcom/android/settings_ext/widget/ScreenView;)F
     .locals 1
 
     .prologue
     .line 55
-    iget v0, p0, Lcom/android/settings/widget/ScreenView;->aqW:F
+    iget v0, p0, Lcom/android/settings_ext/widget/ScreenView;->aqW:F
 
     return v0
 .end method
@@ -597,28 +597,28 @@
 
     .prologue
     .line 754
-    invoke-virtual {p0}, Lcom/android/settings/widget/ScreenView;->getScreenCount()I
+    invoke-virtual {p0}, Lcom/android/settings_ext/widget/ScreenView;->getScreenCount()I
 
     move-result v0
 
     .line 755
-    iget-object v1, p0, Lcom/android/settings/widget/ScreenView;->aqu:Lcom/android/settings/widget/u;
+    iget-object v1, p0, Lcom/android/settings_ext/widget/ScreenView;->aqu:Lcom/android/settings_ext/widget/u;
 
     if-eqz v1, :cond_0
 
     if-lez v0, :cond_0
 
     .line 756
-    iget-object v1, p0, Lcom/android/settings/widget/ScreenView;->aqu:Lcom/android/settings/widget/u;
+    iget-object v1, p0, Lcom/android/settings_ext/widget/ScreenView;->aqu:Lcom/android/settings_ext/widget/u;
 
-    invoke-virtual {v1}, Lcom/android/settings/widget/u;->getSlideWidth()I
+    invoke-virtual {v1}, Lcom/android/settings_ext/widget/u;->getSlideWidth()I
 
     move-result v1
 
     .line 757
     div-int v2, v1, v0
 
-    iget v3, p0, Lcom/android/settings/widget/ScreenView;->mVisibleRange:I
+    iget v3, p0, Lcom/android/settings_ext/widget/ScreenView;->mVisibleRange:I
 
     mul-int/2addr v2, v3
 
@@ -629,7 +629,7 @@
     move-result v2
 
     .line 760
-    iget v3, p0, Lcom/android/settings/widget/ScreenView;->mChildScreenWidth:I
+    iget v3, p0, Lcom/android/settings_ext/widget/ScreenView;->mChildScreenWidth:I
 
     mul-int/2addr v0, v3
 
@@ -640,23 +640,23 @@
 
     .line 766
     :goto_0
-    iget-object v1, p0, Lcom/android/settings/widget/ScreenView;->aqu:Lcom/android/settings/widget/u;
+    iget-object v1, p0, Lcom/android/settings_ext/widget/ScreenView;->aqu:Lcom/android/settings_ext/widget/u;
 
     add-int/2addr v2, v0
 
-    invoke-virtual {v1, v0, v2}, Lcom/android/settings/widget/u;->setPosition(II)V
+    invoke-virtual {v1, v0, v2}, Lcom/android/settings_ext/widget/u;->setPosition(II)V
 
     .line 767
-    invoke-virtual {p0}, Lcom/android/settings/widget/ScreenView;->isHardwareAccelerated()Z
+    invoke-virtual {p0}, Lcom/android/settings_ext/widget/ScreenView;->isHardwareAccelerated()Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
     .line 768
-    iget-object v0, p0, Lcom/android/settings/widget/ScreenView;->aqu:Lcom/android/settings/widget/u;
+    iget-object v0, p0, Lcom/android/settings_ext/widget/ScreenView;->aqu:Lcom/android/settings_ext/widget/u;
 
-    invoke-virtual {v0}, Lcom/android/settings/widget/u;->invalidate()V
+    invoke-virtual {v0}, Lcom/android/settings_ext/widget/u;->invalidate()V
 
     .line 771
     :cond_0
@@ -680,45 +680,45 @@
 
     .prologue
     .line 774
-    iget-object v0, p0, Lcom/android/settings/widget/ScreenView;->aqr:Lcom/android/settings/widget/n;
+    iget-object v0, p0, Lcom/android/settings_ext/widget/ScreenView;->aqr:Lcom/android/settings_ext/widget/n;
 
     if-eqz v0, :cond_0
 
     .line 775
-    iget-object v1, p0, Lcom/android/settings/widget/ScreenView;->aqr:Lcom/android/settings/widget/n;
+    iget-object v1, p0, Lcom/android/settings_ext/widget/ScreenView;->aqr:Lcom/android/settings_ext/widget/n;
 
     if-gtz p1, :cond_1
 
-    iget v0, p0, Lcom/android/settings/widget/ScreenView;->aqn:I
+    iget v0, p0, Lcom/android/settings_ext/widget/ScreenView;->aqn:I
 
     :goto_0
-    invoke-virtual {v1, v0}, Lcom/android/settings/widget/n;->setImageResource(I)V
+    invoke-virtual {v1, v0}, Lcom/android/settings_ext/widget/n;->setImageResource(I)V
 
     .line 779
-    iget-object v1, p0, Lcom/android/settings/widget/ScreenView;->aqs:Lcom/android/settings/widget/n;
+    iget-object v1, p0, Lcom/android/settings_ext/widget/ScreenView;->aqs:Lcom/android/settings_ext/widget/n;
 
-    invoke-virtual {p0}, Lcom/android/settings/widget/ScreenView;->getScreenCount()I
+    invoke-virtual {p0}, Lcom/android/settings_ext/widget/ScreenView;->getScreenCount()I
 
     move-result v0
 
-    iget v2, p0, Lcom/android/settings/widget/ScreenView;->mChildScreenWidth:I
+    iget v2, p0, Lcom/android/settings_ext/widget/ScreenView;->mChildScreenWidth:I
 
     mul-int/2addr v0, v2
 
-    iget v2, p0, Lcom/android/settings/widget/ScreenView;->mScreenWidth:I
+    iget v2, p0, Lcom/android/settings_ext/widget/ScreenView;->mScreenWidth:I
 
     sub-int/2addr v0, v2
 
-    iget v2, p0, Lcom/android/settings/widget/ScreenView;->aqA:I
+    iget v2, p0, Lcom/android/settings_ext/widget/ScreenView;->aqA:I
 
     sub-int/2addr v0, v2
 
     if-lt p1, v0, :cond_2
 
-    iget v0, p0, Lcom/android/settings/widget/ScreenView;->aqp:I
+    iget v0, p0, Lcom/android/settings_ext/widget/ScreenView;->aqp:I
 
     :goto_1
-    invoke-virtual {v1, v0}, Lcom/android/settings/widget/n;->setImageResource(I)V
+    invoke-virtual {v1, v0}, Lcom/android/settings_ext/widget/n;->setImageResource(I)V
 
     .line 785
     :cond_0
@@ -726,13 +726,13 @@
 
     .line 775
     :cond_1
-    iget v0, p0, Lcom/android/settings/widget/ScreenView;->aqm:I
+    iget v0, p0, Lcom/android/settings_ext/widget/ScreenView;->aqm:I
 
     goto :goto_0
 
     .line 779
     :cond_2
-    iget v0, p0, Lcom/android/settings/widget/ScreenView;->aqo:I
+    iget v0, p0, Lcom/android/settings_ext/widget/ScreenView;->aqo:I
 
     goto :goto_1
 .end method
@@ -742,11 +742,11 @@
 
     .prologue
     .line 1181
-    iget v0, p0, Lcom/android/settings/widget/ScreenView;->mChildScreenWidth:I
+    iget v0, p0, Lcom/android/settings_ext/widget/ScreenView;->mChildScreenWidth:I
 
     if-lez v0, :cond_0
 
-    invoke-virtual {p0}, Lcom/android/settings/widget/ScreenView;->getCurrentScreen()Landroid/view/View;
+    invoke-virtual {p0}, Lcom/android/settings_ext/widget/ScreenView;->getCurrentScreen()Landroid/view/View;
 
     move-result-object v0
 
@@ -759,20 +759,20 @@
 
     .line 1184
     :cond_1
-    iget-object v0, p0, Lcom/android/settings/widget/ScreenView;->aqY:Lcom/android/settings/widget/o;
+    iget-object v0, p0, Lcom/android/settings_ext/widget/ScreenView;->aqY:Lcom/android/settings_ext/widget/o;
 
     const/16 v1, 0x3e8
 
-    iget v2, p0, Lcom/android/settings/widget/ScreenView;->aqO:I
+    iget v2, p0, Lcom/android/settings_ext/widget/ScreenView;->aqO:I
 
-    invoke-virtual {v0, v1, v2, p1}, Lcom/android/settings/widget/o;->getXVelocity(III)F
+    invoke-virtual {v0, v1, v2, p1}, Lcom/android/settings_ext/widget/o;->getXVelocity(III)F
 
     move-result v0
 
     float-to-int v0, v0
 
     .line 1186
-    iget-object v1, p0, Lcom/android/settings/widget/ScreenView;->aqY:Lcom/android/settings/widget/o;
+    iget-object v1, p0, Lcom/android/settings_ext/widget/ScreenView;->aqY:Lcom/android/settings_ext/widget/o;
 
     invoke-static {v0}, Ljava/lang/Math;->abs(I)I
 
@@ -780,12 +780,12 @@
 
     int-to-float v2, v2
 
-    invoke-virtual {v1, v2}, Lcom/android/settings/widget/o;->getFlingDirection(F)I
+    invoke-virtual {v1, v2}, Lcom/android/settings_ext/widget/o;->getFlingDirection(F)I
 
     move-result v1
 
     .line 1188
-    invoke-virtual {p0, v0, v1}, Lcom/android/settings/widget/ScreenView;->snapByVelocity(II)V
+    invoke-virtual {p0, v0, v1}, Lcom/android/settings_ext/widget/ScreenView;->snapByVelocity(II)V
 
     goto :goto_0
 .end method
@@ -795,28 +795,28 @@
 
     .prologue
     .line 1352
-    iget v0, p0, Lcom/android/settings/widget/ScreenView;->mCurrentScreen:I
+    iget v0, p0, Lcom/android/settings_ext/widget/ScreenView;->mCurrentScreen:I
 
-    invoke-direct {p0, v0, p1}, Lcom/android/settings/widget/ScreenView;->s(II)V
+    invoke-direct {p0, v0, p1}, Lcom/android/settings_ext/widget/ScreenView;->s(II)V
 
     .line 1353
-    iput p1, p0, Lcom/android/settings/widget/ScreenView;->mCurrentScreen:I
+    iput p1, p0, Lcom/android/settings_ext/widget/ScreenView;->mCurrentScreen:I
 
     .line 1354
     const/4 v0, -0x1
 
-    iput v0, p0, Lcom/android/settings/widget/ScreenView;->aqB:I
+    iput v0, p0, Lcom/android/settings_ext/widget/ScreenView;->aqB:I
 
     .line 1355
     return-void
 .end method
 
-.method static synthetic d(Lcom/android/settings/widget/ScreenView;)I
+.method static synthetic d(Lcom/android/settings_ext/widget/ScreenView;)I
     .locals 1
 
     .prologue
     .line 55
-    iget v0, p0, Lcom/android/settings/widget/ScreenView;->aqJ:I
+    iget v0, p0, Lcom/android/settings_ext/widget/ScreenView;->aqJ:I
 
     return v0
 .end method
@@ -832,7 +832,7 @@
 
     move-result v1
 
-    iget v2, p0, Lcom/android/settings/widget/ScreenView;->mLastMotionX:F
+    iget v2, p0, Lcom/android/settings_ext/widget/ScreenView;->mLastMotionX:F
 
     sub-float/2addr v1, v2
 
@@ -845,7 +845,7 @@
 
     move-result v2
 
-    iget v3, p0, Lcom/android/settings/widget/ScreenView;->mLastMotionY:F
+    iget v3, p0, Lcom/android/settings_ext/widget/ScreenView;->mLastMotionY:F
 
     sub-float/2addr v2, v3
 
@@ -854,7 +854,7 @@
     move-result v2
 
     .line 1109
-    iget v3, p0, Lcom/android/settings/widget/ScreenView;->aqS:F
+    iget v3, p0, Lcom/android/settings_ext/widget/ScreenView;->aqS:F
 
     mul-float/2addr v2, v3
 
@@ -862,7 +862,7 @@
 
     if-lez v2, :cond_0
 
-    iget v2, p0, Lcom/android/settings/widget/ScreenView;->aqN:I
+    iget v2, p0, Lcom/android/settings_ext/widget/ScreenView;->aqN:I
 
     invoke-virtual {p1}, Landroid/view/MotionEvent;->getPointerCount()I
 
@@ -887,24 +887,24 @@
 
     .prologue
     .line 1114
-    iget-object v0, p0, Lcom/android/settings/widget/ScreenView;->aqY:Lcom/android/settings/widget/o;
+    iget-object v0, p0, Lcom/android/settings_ext/widget/ScreenView;->aqY:Lcom/android/settings_ext/widget/o;
 
-    invoke-virtual {v0, p1}, Lcom/android/settings/widget/o;->addMovement(Landroid/view/MotionEvent;)V
+    invoke-virtual {v0, p1}, Lcom/android/settings_ext/widget/o;->addMovement(Landroid/view/MotionEvent;)V
 
     .line 1115
-    iget v0, p0, Lcom/android/settings/widget/ScreenView;->aqJ:I
+    iget v0, p0, Lcom/android/settings_ext/widget/ScreenView;->aqJ:I
 
     if-eqz v0, :cond_0
 
     const/4 v0, 0x4
 
-    iget v1, p0, Lcom/android/settings/widget/ScreenView;->aqJ:I
+    iget v1, p0, Lcom/android/settings_ext/widget/ScreenView;->aqJ:I
 
     if-ne v0, v1, :cond_1
 
     .line 1117
     :cond_0
-    iget-object v0, p0, Lcom/android/settings/widget/ScreenView;->aqI:Landroid/view/ScaleGestureDetector;
+    iget-object v0, p0, Lcom/android/settings_ext/widget/ScreenView;->aqI:Landroid/view/ScaleGestureDetector;
 
     invoke-virtual {v0, p1}, Landroid/view/ScaleGestureDetector;->onTouchEvent(Landroid/view/MotionEvent;)Z
 
@@ -920,24 +920,24 @@
     const/4 v2, 0x0
 
     .line 693
-    invoke-virtual {p0}, Lcom/android/settings/widget/ScreenView;->getWidth()I
+    invoke-virtual {p0}, Lcom/android/settings_ext/widget/ScreenView;->getWidth()I
 
     move-result v0
 
     if-lez v0, :cond_1
 
     .line 694
-    invoke-virtual {p0}, Lcom/android/settings/widget/ScreenView;->getScreenCount()I
+    invoke-virtual {p0}, Lcom/android/settings_ext/widget/ScreenView;->getScreenCount()I
 
     move-result v4
 
     .line 695
-    invoke-virtual {p0}, Lcom/android/settings/widget/ScreenView;->getWidth()I
+    invoke-virtual {p0}, Lcom/android/settings_ext/widget/ScreenView;->getWidth()I
 
     move-result v5
 
     .line 696
-    invoke-virtual {p0}, Lcom/android/settings/widget/ScreenView;->getHeight()I
+    invoke-virtual {p0}, Lcom/android/settings_ext/widget/ScreenView;->getHeight()I
 
     move-result v6
 
@@ -945,14 +945,14 @@
 
     .line 697
     :goto_0
-    iget v0, p0, Lcom/android/settings/widget/ScreenView;->aql:I
+    iget v0, p0, Lcom/android/settings_ext/widget/ScreenView;->aql:I
 
     if-ge v1, v0, :cond_1
 
     .line 698
     add-int v0, v1, v4
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/widget/ScreenView;->getChildAt(I)Landroid/view/View;
+    invoke-virtual {p0, v0}, Lcom/android/settings_ext/widget/ScreenView;->getChildAt(I)Landroid/view/View;
 
     move-result-object v7
 
@@ -1155,7 +1155,7 @@
     const/4 v1, 0x0
 
     .line 1752
-    instance-of v0, p1, Lcom/android/settings/widget/p;
+    instance-of v0, p1, Lcom/android/settings_ext/widget/p;
 
     if-eqz v0, :cond_0
 
@@ -1180,7 +1180,7 @@
     int-to-float v2, v2
 
     .line 1757
-    invoke-virtual {p0}, Lcom/android/settings/widget/ScreenView;->getMeasuredWidth()I
+    invoke-virtual {p0}, Lcom/android/settings_ext/widget/ScreenView;->getMeasuredWidth()I
 
     move-result v3
 
@@ -1195,7 +1195,7 @@
     div-float v5, v2, v5
 
     .line 1760
-    invoke-virtual {p0}, Lcom/android/settings/widget/ScreenView;->getScrollX()I
+    invoke-virtual {p0}, Lcom/android/settings_ext/widget/ScreenView;->getScrollX()I
 
     move-result v6
 
@@ -1216,7 +1216,7 @@
     div-float/2addr v3, v0
 
     .line 1763
-    iget v6, p0, Lcom/android/settings/widget/ScreenView;->aqV:I
+    iget v6, p0, Lcom/android/settings_ext/widget/ScreenView;->aqV:I
 
     packed-switch v6, :pswitch_data_0
 
@@ -1224,13 +1224,13 @@
 
     .line 1765
     :pswitch_1
-    invoke-virtual {p0, p1}, Lcom/android/settings/widget/ScreenView;->resetTransformation(Landroid/view/View;)V
+    invoke-virtual {p0, p1}, Lcom/android/settings_ext/widget/ScreenView;->resetTransformation(Landroid/view/View;)V
 
     goto :goto_0
 
     .line 1768
     :pswitch_2
-    invoke-virtual {p0, p1}, Lcom/android/settings/widget/ScreenView;->resetTransformation(Landroid/view/View;)V
+    invoke-virtual {p0, p1}, Lcom/android/settings_ext/widget/ScreenView;->resetTransformation(Landroid/view/View;)V
 
     goto :goto_0
 
@@ -1250,7 +1250,7 @@
 
     .line 1772
     :cond_1
-    invoke-virtual {p0, p1}, Lcom/android/settings/widget/ScreenView;->resetTransformation(Landroid/view/View;)V
+    invoke-virtual {p0, p1}, Lcom/android/settings_ext/widget/ScreenView;->resetTransformation(Landroid/view/View;)V
 
     goto :goto_0
 
@@ -1298,7 +1298,7 @@
     invoke-virtual {p1, v1}, Landroid/view/View;->setRotationY(F)V
 
     .line 1785
-    iget v0, p0, Lcom/android/settings/widget/ScreenView;->aqj:F
+    iget v0, p0, Lcom/android/settings_ext/widget/ScreenView;->aqj:F
 
     invoke-virtual {p1, v0}, Landroid/view/View;->setCameraDistance(F)V
 
@@ -1320,7 +1320,7 @@
 
     .line 1789
     :cond_3
-    invoke-virtual {p0, p1}, Lcom/android/settings/widget/ScreenView;->resetTransformation(Landroid/view/View;)V
+    invoke-virtual {p0, p1}, Lcom/android/settings_ext/widget/ScreenView;->resetTransformation(Landroid/view/View;)V
 
     goto :goto_0
 
@@ -1362,7 +1362,7 @@
     invoke-virtual {p1, v1}, Landroid/view/View;->setRotationY(F)V
 
     .line 1802
-    iget v0, p0, Lcom/android/settings/widget/ScreenView;->aqj:F
+    iget v0, p0, Lcom/android/settings_ext/widget/ScreenView;->aqj:F
 
     invoke-virtual {p1, v0}, Landroid/view/View;->setCameraDistance(F)V
 
@@ -1384,7 +1384,7 @@
 
     .line 1806
     :cond_5
-    invoke-virtual {p0, p1}, Lcom/android/settings/widget/ScreenView;->resetTransformation(Landroid/view/View;)V
+    invoke-virtual {p0, p1}, Lcom/android/settings_ext/widget/ScreenView;->resetTransformation(Landroid/view/View;)V
 
     goto/16 :goto_0
 
@@ -1451,7 +1451,7 @@
 
     .line 1823
     :cond_8
-    invoke-virtual {p0, p1}, Lcom/android/settings/widget/ScreenView;->resetTransformation(Landroid/view/View;)V
+    invoke-virtual {p0, p1}, Lcom/android/settings_ext/widget/ScreenView;->resetTransformation(Landroid/view/View;)V
 
     goto/16 :goto_0
 
@@ -1527,7 +1527,7 @@
     if-gtz v4, :cond_a
 
     .line 1844
-    invoke-virtual {p0, p1}, Lcom/android/settings/widget/ScreenView;->resetTransformation(Landroid/view/View;)V
+    invoke-virtual {p0, p1}, Lcom/android/settings_ext/widget/ScreenView;->resetTransformation(Landroid/view/View;)V
 
     goto/16 :goto_0
 
@@ -1592,7 +1592,7 @@
     invoke-virtual {p1, v1}, Landroid/view/View;->setRotationY(F)V
 
     .line 1858
-    iget v0, p0, Lcom/android/settings/widget/ScreenView;->aqj:F
+    iget v0, p0, Lcom/android/settings_ext/widget/ScreenView;->aqj:F
 
     invoke-virtual {p1, v0}, Landroid/view/View;->setCameraDistance(F)V
 
@@ -1614,7 +1614,7 @@
 
     .line 1862
     :cond_b
-    invoke-virtual {p0, p1}, Lcom/android/settings/widget/ScreenView;->resetTransformation(Landroid/view/View;)V
+    invoke-virtual {p0, p1}, Lcom/android/settings_ext/widget/ScreenView;->resetTransformation(Landroid/view/View;)V
 
     goto/16 :goto_0
 
@@ -1670,7 +1670,7 @@
 
     .line 1878
     :pswitch_9
-    invoke-virtual {p0, p1, v3}, Lcom/android/settings/widget/ScreenView;->updateChildStaticTransformationByScreen(Landroid/view/View;F)V
+    invoke-virtual {p0, p1, v3}, Lcom/android/settings_ext/widget/ScreenView;->updateChildStaticTransformationByScreen(Landroid/view/View;F)V
 
     goto/16 :goto_0
 
@@ -1699,12 +1699,12 @@
     const/4 v1, 0x0
 
     .line 1623
-    iget-object v0, p0, Lcom/android/settings/widget/ScreenView;->aqt:Lcom/android/settings/widget/t;
+    iget-object v0, p0, Lcom/android/settings_ext/widget/ScreenView;->aqt:Lcom/android/settings_ext/widget/t;
 
     if-eqz v0, :cond_1
 
     .line 1624
-    invoke-virtual {p0}, Lcom/android/settings/widget/ScreenView;->getScreenCount()I
+    invoke-virtual {p0}, Lcom/android/settings_ext/widget/ScreenView;->getScreenCount()I
 
     move-result v2
 
@@ -1712,7 +1712,7 @@
 
     .line 1625
     :goto_0
-    iget v3, p0, Lcom/android/settings/widget/ScreenView;->mVisibleRange:I
+    iget v3, p0, Lcom/android/settings_ext/widget/ScreenView;->mVisibleRange:I
 
     if-ge v0, v3, :cond_0
 
@@ -1721,11 +1721,11 @@
     if-ge v3, v2, :cond_0
 
     .line 1626
-    iget-object v3, p0, Lcom/android/settings/widget/ScreenView;->aqt:Lcom/android/settings/widget/t;
+    iget-object v3, p0, Lcom/android/settings_ext/widget/ScreenView;->aqt:Lcom/android/settings_ext/widget/t;
 
     add-int v4, p1, v0
 
-    invoke-virtual {v3, v4}, Lcom/android/settings/widget/t;->getChildAt(I)Landroid/view/View;
+    invoke-virtual {v3, v4}, Lcom/android/settings_ext/widget/t;->getChildAt(I)Landroid/view/View;
 
     move-result-object v3
 
@@ -1739,7 +1739,7 @@
     .line 1630
     :cond_0
     :goto_1
-    iget v0, p0, Lcom/android/settings/widget/ScreenView;->mVisibleRange:I
+    iget v0, p0, Lcom/android/settings_ext/widget/ScreenView;->mVisibleRange:I
 
     if-ge v1, v0, :cond_1
 
@@ -1748,11 +1748,11 @@
     if-ge v0, v2, :cond_1
 
     .line 1631
-    iget-object v0, p0, Lcom/android/settings/widget/ScreenView;->aqt:Lcom/android/settings/widget/t;
+    iget-object v0, p0, Lcom/android/settings_ext/widget/ScreenView;->aqt:Lcom/android/settings_ext/widget/t;
 
     add-int v3, p2, v1
 
-    invoke-virtual {v0, v3}, Lcom/android/settings/widget/t;->getChildAt(I)Landroid/view/View;
+    invoke-virtual {v0, v3}, Lcom/android/settings_ext/widget/t;->getChildAt(I)Landroid/view/View;
 
     move-result-object v0
 
@@ -1775,30 +1775,30 @@
 
     .prologue
     .line 675
-    iget v0, p0, Lcom/android/settings/widget/ScreenView;->aqz:I
+    iget v0, p0, Lcom/android/settings_ext/widget/ScreenView;->aqz:I
 
     packed-switch v0, :pswitch_data_0
 
     .line 689
     :goto_0
-    iget v0, p0, Lcom/android/settings/widget/ScreenView;->aqA:I
+    iget v0, p0, Lcom/android/settings_ext/widget/ScreenView;->aqA:I
 
-    invoke-virtual {p0}, Lcom/android/settings/widget/ScreenView;->getPaddingLeft()I
+    invoke-virtual {p0}, Lcom/android/settings_ext/widget/ScreenView;->getPaddingLeft()I
 
     move-result v1
 
     add-int/2addr v0, v1
 
-    iput v0, p0, Lcom/android/settings/widget/ScreenView;->aqA:I
+    iput v0, p0, Lcom/android/settings_ext/widget/ScreenView;->aqA:I
 
     .line 690
     return-void
 
     .line 677
     :pswitch_0
-    iget v0, p0, Lcom/android/settings/widget/ScreenView;->mScreenOffset:I
+    iget v0, p0, Lcom/android/settings_ext/widget/ScreenView;->mScreenOffset:I
 
-    iput v0, p0, Lcom/android/settings/widget/ScreenView;->aqA:I
+    iput v0, p0, Lcom/android/settings_ext/widget/ScreenView;->aqA:I
 
     goto :goto_0
 
@@ -1806,33 +1806,33 @@
     :pswitch_1
     const/4 v0, 0x0
 
-    iput v0, p0, Lcom/android/settings/widget/ScreenView;->aqA:I
+    iput v0, p0, Lcom/android/settings_ext/widget/ScreenView;->aqA:I
 
     goto :goto_0
 
     .line 683
     :pswitch_2
-    iget v0, p0, Lcom/android/settings/widget/ScreenView;->mScreenWidth:I
+    iget v0, p0, Lcom/android/settings_ext/widget/ScreenView;->mScreenWidth:I
 
-    iget v1, p0, Lcom/android/settings/widget/ScreenView;->mChildScreenWidth:I
+    iget v1, p0, Lcom/android/settings_ext/widget/ScreenView;->mChildScreenWidth:I
 
     sub-int/2addr v0, v1
 
     div-int/lit8 v0, v0, 0x2
 
-    iput v0, p0, Lcom/android/settings/widget/ScreenView;->aqA:I
+    iput v0, p0, Lcom/android/settings_ext/widget/ScreenView;->aqA:I
 
     goto :goto_0
 
     .line 686
     :pswitch_3
-    iget v0, p0, Lcom/android/settings/widget/ScreenView;->mScreenWidth:I
+    iget v0, p0, Lcom/android/settings_ext/widget/ScreenView;->mScreenWidth:I
 
-    iget v1, p0, Lcom/android/settings/widget/ScreenView;->mChildScreenWidth:I
+    iget v1, p0, Lcom/android/settings_ext/widget/ScreenView;->mChildScreenWidth:I
 
     sub-int/2addr v0, v1
 
-    iput v0, p0, Lcom/android/settings/widget/ScreenView;->aqA:I
+    iput v0, p0, Lcom/android/settings_ext/widget/ScreenView;->aqA:I
 
     goto :goto_0
 
@@ -1851,47 +1851,47 @@
 
     .prologue
     .line 810
-    iget v0, p0, Lcom/android/settings/widget/ScreenView;->mChildScreenWidth:I
+    iget v0, p0, Lcom/android/settings_ext/widget/ScreenView;->mChildScreenWidth:I
 
     neg-int v0, v0
 
     int-to-float v0, v0
 
-    iget v1, p0, Lcom/android/settings/widget/ScreenView;->aqE:F
+    iget v1, p0, Lcom/android/settings_ext/widget/ScreenView;->aqE:F
 
     mul-float/2addr v0, v1
 
     float-to-int v0, v0
 
-    iget v1, p0, Lcom/android/settings/widget/ScreenView;->aqA:I
+    iget v1, p0, Lcom/android/settings_ext/widget/ScreenView;->aqA:I
 
     sub-int/2addr v0, v1
 
-    iput v0, p0, Lcom/android/settings/widget/ScreenView;->aqD:I
+    iput v0, p0, Lcom/android/settings_ext/widget/ScreenView;->aqD:I
 
     .line 812
-    iget-boolean v0, p0, Lcom/android/settings/widget/ScreenView;->aqF:Z
+    iget-boolean v0, p0, Lcom/android/settings_ext/widget/ScreenView;->aqF:Z
 
     if-nez v0, :cond_0
 
     .line 813
-    iget v0, p0, Lcom/android/settings/widget/ScreenView;->mChildScreenWidth:I
+    iget v0, p0, Lcom/android/settings_ext/widget/ScreenView;->mChildScreenWidth:I
 
     int-to-float v0, v0
 
-    invoke-virtual {p0}, Lcom/android/settings/widget/ScreenView;->getScreenCount()I
+    invoke-virtual {p0}, Lcom/android/settings_ext/widget/ScreenView;->getScreenCount()I
 
     move-result v1
 
     int-to-float v1, v1
 
-    iget v2, p0, Lcom/android/settings/widget/ScreenView;->aqE:F
+    iget v2, p0, Lcom/android/settings_ext/widget/ScreenView;->aqE:F
 
     add-float/2addr v1, v2
 
     mul-float/2addr v0, v1
 
-    iget v1, p0, Lcom/android/settings/widget/ScreenView;->mScreenWidth:I
+    iget v1, p0, Lcom/android/settings_ext/widget/ScreenView;->mScreenWidth:I
 
     int-to-float v1, v1
 
@@ -1899,11 +1899,11 @@
 
     float-to-int v0, v0
 
-    iget v1, p0, Lcom/android/settings/widget/ScreenView;->aqA:I
+    iget v1, p0, Lcom/android/settings_ext/widget/ScreenView;->aqA:I
 
     add-int/2addr v0, v1
 
-    iput v0, p0, Lcom/android/settings/widget/ScreenView;->aqC:I
+    iput v0, p0, Lcom/android/settings_ext/widget/ScreenView;->aqC:I
 
     .line 821
     :goto_0
@@ -1911,27 +1911,27 @@
 
     .line 817
     :cond_0
-    invoke-virtual {p0}, Lcom/android/settings/widget/ScreenView;->getScreenCount()I
+    invoke-virtual {p0}, Lcom/android/settings_ext/widget/ScreenView;->getScreenCount()I
 
     move-result v0
 
     add-int/lit8 v0, v0, -0x1
 
-    iget v1, p0, Lcom/android/settings/widget/ScreenView;->mVisibleRange:I
+    iget v1, p0, Lcom/android/settings_ext/widget/ScreenView;->mVisibleRange:I
 
     div-int/2addr v0, v1
 
-    iget v1, p0, Lcom/android/settings/widget/ScreenView;->mScreenWidth:I
+    iget v1, p0, Lcom/android/settings_ext/widget/ScreenView;->mScreenWidth:I
 
     mul-int/2addr v0, v1
 
     int-to-float v0, v0
 
-    iget v1, p0, Lcom/android/settings/widget/ScreenView;->mChildScreenWidth:I
+    iget v1, p0, Lcom/android/settings_ext/widget/ScreenView;->mChildScreenWidth:I
 
     int-to-float v1, v1
 
-    iget v2, p0, Lcom/android/settings/widget/ScreenView;->aqE:F
+    iget v2, p0, Lcom/android/settings_ext/widget/ScreenView;->aqE:F
 
     mul-float/2addr v1, v2
 
@@ -1939,7 +1939,7 @@
 
     float-to-int v0, v0
 
-    iput v0, p0, Lcom/android/settings/widget/ScreenView;->aqC:I
+    iput v0, p0, Lcom/android/settings_ext/widget/ScreenView;->aqC:I
 
     goto :goto_0
 .end method
@@ -1951,7 +1951,7 @@
     .line 1609
     new-instance v0, Landroid/widget/ImageView;
 
-    invoke-virtual {p0}, Lcom/android/settings/widget/ScreenView;->getContext()Landroid/content/Context;
+    invoke-virtual {p0}, Lcom/android/settings_ext/widget/ScreenView;->getContext()Landroid/content/Context;
 
     move-result-object v1
 
@@ -1963,7 +1963,7 @@
     invoke-virtual {v0, v1}, Landroid/widget/ImageView;->setScaleType(Landroid/widget/ImageView$ScaleType;)V
 
     .line 1611
-    iget v1, p0, Lcom/android/settings/widget/ScreenView;->aqq:I
+    iget v1, p0, Lcom/android/settings_ext/widget/ScreenView;->aqq:I
 
     invoke-virtual {v0, v1}, Landroid/widget/ImageView;->setImageResource(I)V
 
@@ -1978,7 +1978,7 @@
     .line 1616
     new-instance v0, Landroid/widget/ImageView;
 
-    invoke-virtual {p0}, Lcom/android/settings/widget/ScreenView;->getContext()Landroid/content/Context;
+    invoke-virtual {p0}, Lcom/android/settings_ext/widget/ScreenView;->getContext()Landroid/content/Context;
 
     move-result-object v1
 
@@ -2005,38 +2005,38 @@
     const/4 v0, 0x1
 
     .line 420
-    invoke-virtual {p0, v0}, Lcom/android/settings/widget/ScreenView;->setAlwaysDrawnWithCacheEnabled(Z)V
+    invoke-virtual {p0, v0}, Lcom/android/settings_ext/widget/ScreenView;->setAlwaysDrawnWithCacheEnabled(Z)V
 
     .line 421
-    invoke-virtual {p0, v0}, Lcom/android/settings/widget/ScreenView;->setClipToPadding(Z)V
+    invoke-virtual {p0, v0}, Lcom/android/settings_ext/widget/ScreenView;->setClipToPadding(Z)V
 
     .line 422
-    new-instance v0, Lcom/android/settings/widget/s;
+    new-instance v0, Lcom/android/settings_ext/widget/s;
 
-    invoke-direct {v0, p0}, Lcom/android/settings/widget/s;-><init>(Lcom/android/settings/widget/ScreenView;)V
+    invoke-direct {v0, p0}, Lcom/android/settings_ext/widget/s;-><init>(Lcom/android/settings_ext/widget/ScreenView;)V
 
-    iput-object v0, p0, Lcom/android/settings/widget/ScreenView;->aqU:Lcom/android/settings/widget/s;
+    iput-object v0, p0, Lcom/android/settings_ext/widget/ScreenView;->aqU:Lcom/android/settings_ext/widget/s;
 
     .line 423
     new-instance v0, Landroid/widget/Scroller;
 
-    invoke-virtual {p0}, Lcom/android/settings/widget/ScreenView;->getContext()Landroid/content/Context;
+    invoke-virtual {p0}, Lcom/android/settings_ext/widget/ScreenView;->getContext()Landroid/content/Context;
 
     move-result-object v1
 
-    iget-object v2, p0, Lcom/android/settings/widget/ScreenView;->aqU:Lcom/android/settings/widget/s;
+    iget-object v2, p0, Lcom/android/settings_ext/widget/ScreenView;->aqU:Lcom/android/settings_ext/widget/s;
 
     invoke-direct {v0, v1, v2}, Landroid/widget/Scroller;-><init>(Landroid/content/Context;Landroid/view/animation/Interpolator;)V
 
-    iput-object v0, p0, Lcom/android/settings/widget/ScreenView;->mScroller:Landroid/widget/Scroller;
+    iput-object v0, p0, Lcom/android/settings_ext/widget/ScreenView;->mScroller:Landroid/widget/Scroller;
 
     .line 424
     const/4 v0, 0x0
 
-    invoke-direct {p0, v0}, Lcom/android/settings/widget/ScreenView;->cO(I)V
+    invoke-direct {p0, v0}, Lcom/android/settings_ext/widget/ScreenView;->cO(I)V
 
     .line 425
-    invoke-virtual {p0}, Lcom/android/settings/widget/ScreenView;->getContext()Landroid/content/Context;
+    invoke-virtual {p0}, Lcom/android/settings_ext/widget/ScreenView;->getContext()Landroid/content/Context;
 
     move-result-object v0
 
@@ -2049,31 +2049,31 @@
 
     move-result v1
 
-    iput v1, p0, Lcom/android/settings/widget/ScreenView;->aqN:I
+    iput v1, p0, Lcom/android/settings_ext/widget/ScreenView;->aqN:I
 
     .line 427
     invoke-virtual {v0}, Landroid/view/ViewConfiguration;->getScaledMaximumFlingVelocity()I
 
     move-result v0
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/widget/ScreenView;->setMaximumSnapVelocity(I)V
+    invoke-virtual {p0, v0}, Lcom/android/settings_ext/widget/ScreenView;->setMaximumSnapVelocity(I)V
 
     .line 428
     new-instance v0, Landroid/view/ScaleGestureDetector;
 
-    invoke-virtual {p0}, Lcom/android/settings/widget/ScreenView;->getContext()Landroid/content/Context;
+    invoke-virtual {p0}, Lcom/android/settings_ext/widget/ScreenView;->getContext()Landroid/content/Context;
 
     move-result-object v1
 
-    new-instance v2, Lcom/android/settings/widget/r;
+    new-instance v2, Lcom/android/settings_ext/widget/r;
 
     const/4 v3, 0x0
 
-    invoke-direct {v2, p0, v3}, Lcom/android/settings/widget/r;-><init>(Lcom/android/settings/widget/ScreenView;Lcom/android/settings/widget/l;)V
+    invoke-direct {v2, p0, v3}, Lcom/android/settings_ext/widget/r;-><init>(Lcom/android/settings_ext/widget/ScreenView;Lcom/android/settings_ext/widget/l;)V
 
     invoke-direct {v0, v1, v2}, Landroid/view/ScaleGestureDetector;-><init>(Landroid/content/Context;Landroid/view/ScaleGestureDetector$OnScaleGestureListener;)V
 
-    iput-object v0, p0, Lcom/android/settings/widget/ScreenView;->aqI:Landroid/view/ScaleGestureDetector;
+    iput-object v0, p0, Lcom/android/settings_ext/widget/ScreenView;->aqI:Landroid/view/ScaleGestureDetector;
 
     .line 430
     return-void
@@ -2084,11 +2084,11 @@
 
     .prologue
     .line 563
-    iget-object v0, p0, Lcom/android/settings/widget/ScreenView;->aqu:Lcom/android/settings/widget/u;
+    iget-object v0, p0, Lcom/android/settings_ext/widget/ScreenView;->aqu:Lcom/android/settings_ext/widget/u;
 
     if-eqz v0, :cond_0
 
-    iget-boolean v0, p0, Lcom/android/settings/widget/ScreenView;->aqv:Z
+    iget-boolean v0, p0, Lcom/android/settings_ext/widget/ScreenView;->aqv:Z
 
     if-nez v0, :cond_1
 
@@ -2099,44 +2099,44 @@
 
     .line 566
     :cond_1
-    iget-object v0, p0, Lcom/android/settings/widget/ScreenView;->aqw:Ljava/lang/Runnable;
+    iget-object v0, p0, Lcom/android/settings_ext/widget/ScreenView;->aqw:Ljava/lang/Runnable;
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/widget/ScreenView;->removeCallbacks(Ljava/lang/Runnable;)Z
+    invoke-virtual {p0, v0}, Lcom/android/settings_ext/widget/ScreenView;->removeCallbacks(Ljava/lang/Runnable;)Z
 
     .line 567
-    iget-object v0, p0, Lcom/android/settings/widget/ScreenView;->aqu:Lcom/android/settings/widget/u;
+    iget-object v0, p0, Lcom/android/settings_ext/widget/ScreenView;->aqu:Lcom/android/settings_ext/widget/u;
 
-    invoke-virtual {v0}, Lcom/android/settings/widget/u;->animate()Landroid/view/ViewPropertyAnimator;
+    invoke-virtual {v0}, Lcom/android/settings_ext/widget/u;->animate()Landroid/view/ViewPropertyAnimator;
 
     move-result-object v0
 
     invoke-virtual {v0}, Landroid/view/ViewPropertyAnimator;->cancel()V
 
     .line 568
-    iget-object v0, p0, Lcom/android/settings/widget/ScreenView;->aqu:Lcom/android/settings/widget/u;
+    iget-object v0, p0, Lcom/android/settings_ext/widget/ScreenView;->aqu:Lcom/android/settings_ext/widget/u;
 
     const/high16 v1, 0x3f800000    # 1.0f
 
-    invoke-virtual {v0, v1}, Lcom/android/settings/widget/u;->setAlpha(F)V
+    invoke-virtual {v0, v1}, Lcom/android/settings_ext/widget/u;->setAlpha(F)V
 
     .line 569
-    iget-object v0, p0, Lcom/android/settings/widget/ScreenView;->aqu:Lcom/android/settings/widget/u;
+    iget-object v0, p0, Lcom/android/settings_ext/widget/ScreenView;->aqu:Lcom/android/settings_ext/widget/u;
 
     const/4 v1, 0x0
 
-    invoke-virtual {v0, v1}, Lcom/android/settings/widget/u;->setVisibility(I)V
+    invoke-virtual {v0, v1}, Lcom/android/settings_ext/widget/u;->setVisibility(I)V
 
     .line 570
-    iget v0, p0, Lcom/android/settings/widget/ScreenView;->aqJ:I
+    iget v0, p0, Lcom/android/settings_ext/widget/ScreenView;->aqJ:I
 
     if-nez v0, :cond_0
 
     .line 571
-    iget-object v0, p0, Lcom/android/settings/widget/ScreenView;->aqw:Ljava/lang/Runnable;
+    iget-object v0, p0, Lcom/android/settings_ext/widget/ScreenView;->aqw:Ljava/lang/Runnable;
 
     const-wide/16 v2, 0x3e8
 
-    invoke-virtual {p0, v0, v2, v3}, Lcom/android/settings/widget/ScreenView;->postDelayed(Ljava/lang/Runnable;J)Z
+    invoke-virtual {p0, v0, v2, v3}, Lcom/android/settings_ext/widget/ScreenView;->postDelayed(Ljava/lang/Runnable;J)Z
 
     goto :goto_0
 .end method
@@ -2146,7 +2146,7 @@
 
     .prologue
     .line 576
-    iget-boolean v0, p0, Lcom/android/settings/widget/ScreenView;->aqv:Z
+    iget-boolean v0, p0, Lcom/android/settings_ext/widget/ScreenView;->aqv:Z
 
     if-nez v0, :cond_0
 
@@ -2156,9 +2156,9 @@
 
     .line 579
     :cond_0
-    iget-object v0, p0, Lcom/android/settings/widget/ScreenView;->aqu:Lcom/android/settings/widget/u;
+    iget-object v0, p0, Lcom/android/settings_ext/widget/ScreenView;->aqu:Lcom/android/settings_ext/widget/u;
 
-    invoke-virtual {v0}, Lcom/android/settings/widget/u;->animate()Landroid/view/ViewPropertyAnimator;
+    invoke-virtual {v0}, Lcom/android/settings_ext/widget/u;->animate()Landroid/view/ViewPropertyAnimator;
 
     move-result-object v0
 
@@ -2174,9 +2174,9 @@
 
     move-result-object v0
 
-    new-instance v1, Lcom/android/settings/widget/m;
+    new-instance v1, Lcom/android/settings_ext/widget/m;
 
-    invoke-direct {v1, p0}, Lcom/android/settings/widget/m;-><init>(Lcom/android/settings/widget/ScreenView;)V
+    invoke-direct {v1, p0}, Lcom/android/settings_ext/widget/m;-><init>(Lcom/android/settings_ext/widget/ScreenView;)V
 
     invoke-virtual {v0, v1}, Landroid/view/ViewPropertyAnimator;->setListener(Landroid/animation/Animator$AnimatorListener;)Landroid/view/ViewPropertyAnimator;
 
@@ -2185,7 +2185,7 @@
 
 
 # virtual methods
-.method protected a(IIZLcom/android/settings/widget/v;)V
+.method protected a(IIZLcom/android/settings_ext/widget/v;)V
     .locals 8
 
     .prologue
@@ -2194,7 +2194,7 @@
     const/4 v2, 0x0
 
     .line 1244
-    iget v0, p0, Lcom/android/settings/widget/ScreenView;->mScreenWidth:I
+    iget v0, p0, Lcom/android/settings_ext/widget/ScreenView;->mScreenWidth:I
 
     if-gtz v0, :cond_1
 
@@ -2205,12 +2205,12 @@
 
     .line 1247
     :cond_1
-    iget-boolean v0, p0, Lcom/android/settings/widget/ScreenView;->aqF:Z
+    iget-boolean v0, p0, Lcom/android/settings_ext/widget/ScreenView;->aqF:Z
 
     if-eqz v0, :cond_6
 
     .line 1248
-    invoke-virtual {p0}, Lcom/android/settings/widget/ScreenView;->getScreenCount()I
+    invoke-virtual {p0}, Lcom/android/settings_ext/widget/ScreenView;->getScreenCount()I
 
     move-result v0
 
@@ -2224,26 +2224,26 @@
 
     move-result v0
 
-    iput v0, p0, Lcom/android/settings/widget/ScreenView;->aqB:I
+    iput v0, p0, Lcom/android/settings_ext/widget/ScreenView;->aqB:I
 
     .line 1250
-    iget v0, p0, Lcom/android/settings/widget/ScreenView;->aqB:I
+    iget v0, p0, Lcom/android/settings_ext/widget/ScreenView;->aqB:I
 
-    iget v1, p0, Lcom/android/settings/widget/ScreenView;->aqB:I
+    iget v1, p0, Lcom/android/settings_ext/widget/ScreenView;->aqB:I
 
-    iget v3, p0, Lcom/android/settings/widget/ScreenView;->mVisibleRange:I
+    iget v3, p0, Lcom/android/settings_ext/widget/ScreenView;->mVisibleRange:I
 
     rem-int/2addr v1, v3
 
     sub-int/2addr v0, v1
 
-    iput v0, p0, Lcom/android/settings/widget/ScreenView;->aqB:I
+    iput v0, p0, Lcom/android/settings_ext/widget/ScreenView;->aqB:I
 
     .line 1255
     :goto_1
-    iget v0, p0, Lcom/android/settings/widget/ScreenView;->aqB:I
+    iget v0, p0, Lcom/android/settings_ext/widget/ScreenView;->aqB:I
 
-    iget v1, p0, Lcom/android/settings/widget/ScreenView;->mCurrentScreen:I
+    iget v1, p0, Lcom/android/settings_ext/widget/ScreenView;->mCurrentScreen:I
 
     sub-int/2addr v0, v1
 
@@ -2256,7 +2256,7 @@
     move-result v1
 
     .line 1257
-    iget-object v0, p0, Lcom/android/settings/widget/ScreenView;->mScroller:Landroid/widget/Scroller;
+    iget-object v0, p0, Lcom/android/settings_ext/widget/ScreenView;->mScroller:Landroid/widget/Scroller;
 
     invoke-virtual {v0}, Landroid/widget/Scroller;->isFinished()Z
 
@@ -2265,24 +2265,24 @@
     if-nez v0, :cond_3
 
     .line 1258
-    iget-object v0, p0, Lcom/android/settings/widget/ScreenView;->aqX:Lcom/android/settings/widget/v;
+    iget-object v0, p0, Lcom/android/settings_ext/widget/ScreenView;->aqX:Lcom/android/settings_ext/widget/v;
 
     if-eqz v0, :cond_2
 
     .line 1259
-    iget-object v0, p0, Lcom/android/settings/widget/ScreenView;->aqX:Lcom/android/settings/widget/v;
+    iget-object v0, p0, Lcom/android/settings_ext/widget/ScreenView;->aqX:Lcom/android/settings_ext/widget/v;
 
-    invoke-interface {v0, p0}, Lcom/android/settings/widget/v;->e(Lcom/android/settings/widget/ScreenView;)V
+    invoke-interface {v0, p0}, Lcom/android/settings_ext/widget/v;->e(Lcom/android/settings_ext/widget/ScreenView;)V
 
     .line 1261
     :cond_2
-    iget-object v0, p0, Lcom/android/settings/widget/ScreenView;->mScroller:Landroid/widget/Scroller;
+    iget-object v0, p0, Lcom/android/settings_ext/widget/ScreenView;->mScroller:Landroid/widget/Scroller;
 
     invoke-virtual {v0}, Landroid/widget/Scroller;->abortAnimation()V
 
     .line 1263
     :cond_3
-    iput-object p4, p0, Lcom/android/settings/widget/ScreenView;->aqX:Lcom/android/settings/widget/v;
+    iput-object p4, p0, Lcom/android/settings_ext/widget/ScreenView;->aqX:Lcom/android/settings_ext/widget/v;
 
     .line 1264
     invoke-static {p2}, Ljava/lang/Math;->abs(I)I
@@ -2293,24 +2293,24 @@
     if-eqz p3, :cond_7
 
     .line 1266
-    iget-object v0, p0, Lcom/android/settings/widget/ScreenView;->aqU:Lcom/android/settings/widget/s;
+    iget-object v0, p0, Lcom/android/settings_ext/widget/ScreenView;->aqU:Lcom/android/settings_ext/widget/s;
 
-    invoke-virtual {v0, v1, v4}, Lcom/android/settings/widget/s;->setDistance(II)V
+    invoke-virtual {v0, v1, v4}, Lcom/android/settings_ext/widget/s;->setDistance(II)V
 
     .line 1270
     :goto_2
-    iget v0, p0, Lcom/android/settings/widget/ScreenView;->aqB:I
+    iget v0, p0, Lcom/android/settings_ext/widget/ScreenView;->aqB:I
 
-    iget v3, p0, Lcom/android/settings/widget/ScreenView;->mChildScreenWidth:I
+    iget v3, p0, Lcom/android/settings_ext/widget/ScreenView;->mChildScreenWidth:I
 
     mul-int/2addr v0, v3
 
-    iget v3, p0, Lcom/android/settings/widget/ScreenView;->aqA:I
+    iget v3, p0, Lcom/android/settings_ext/widget/ScreenView;->aqA:I
 
     sub-int/2addr v0, v3
 
     .line 1271
-    invoke-virtual {p0}, Lcom/android/settings/widget/ScreenView;->getScrollX()I
+    invoke-virtual {p0}, Lcom/android/settings_ext/widget/ScreenView;->getScrollX()I
 
     move-result v3
 
@@ -2324,11 +2324,11 @@
 
     move-result v0
 
-    iget v5, p0, Lcom/android/settings/widget/ScreenView;->aqT:I
+    iget v5, p0, Lcom/android/settings_ext/widget/ScreenView;->aqT:I
 
     mul-int/2addr v0, v5
 
-    iget v5, p0, Lcom/android/settings/widget/ScreenView;->mScreenWidth:I
+    iget v5, p0, Lcom/android/settings_ext/widget/ScreenView;->mScreenWidth:I
 
     div-int/2addr v0, v5
 
@@ -2356,7 +2356,7 @@
 
     .line 1280
     :cond_4
-    iget v4, p0, Lcom/android/settings/widget/ScreenView;->aqT:I
+    iget v4, p0, Lcom/android/settings_ext/widget/ScreenView;->aqT:I
 
     invoke-static {v4, v0}, Ljava/lang/Math;->max(II)I
 
@@ -2366,7 +2366,7 @@
     if-gt v1, v7, :cond_5
 
     .line 1282
-    iget v0, p0, Lcom/android/settings/widget/ScreenView;->aqT:I
+    iget v0, p0, Lcom/android/settings_ext/widget/ScreenView;->aqT:I
 
     mul-int/lit8 v0, v0, 0x2
 
@@ -2376,9 +2376,9 @@
 
     .line 1284
     :cond_5
-    iget-object v0, p0, Lcom/android/settings/widget/ScreenView;->mScroller:Landroid/widget/Scroller;
+    iget-object v0, p0, Lcom/android/settings_ext/widget/ScreenView;->mScroller:Landroid/widget/Scroller;
 
-    invoke-virtual {p0}, Lcom/android/settings/widget/ScreenView;->getScrollX()I
+    invoke-virtual {p0}, Lcom/android/settings_ext/widget/ScreenView;->getScrollX()I
 
     move-result v1
 
@@ -2387,17 +2387,17 @@
     invoke-virtual/range {v0 .. v5}, Landroid/widget/Scroller;->startScroll(IIIII)V
 
     .line 1285
-    invoke-virtual {p0}, Lcom/android/settings/widget/ScreenView;->invalidate()V
+    invoke-virtual {p0}, Lcom/android/settings_ext/widget/ScreenView;->invalidate()V
 
     goto/16 :goto_0
 
     .line 1252
     :cond_6
-    invoke-virtual {p0}, Lcom/android/settings/widget/ScreenView;->getScreenCount()I
+    invoke-virtual {p0}, Lcom/android/settings_ext/widget/ScreenView;->getScreenCount()I
 
     move-result v0
 
-    iget v1, p0, Lcom/android/settings/widget/ScreenView;->mVisibleRange:I
+    iget v1, p0, Lcom/android/settings_ext/widget/ScreenView;->mVisibleRange:I
 
     sub-int/2addr v0, v1
 
@@ -2409,15 +2409,15 @@
 
     move-result v0
 
-    iput v0, p0, Lcom/android/settings/widget/ScreenView;->aqB:I
+    iput v0, p0, Lcom/android/settings_ext/widget/ScreenView;->aqB:I
 
     goto/16 :goto_1
 
     .line 1268
     :cond_7
-    iget-object v0, p0, Lcom/android/settings/widget/ScreenView;->aqU:Lcom/android/settings/widget/s;
+    iget-object v0, p0, Lcom/android/settings_ext/widget/ScreenView;->aqU:Lcom/android/settings_ext/widget/s;
 
-    invoke-virtual {v0}, Lcom/android/settings/widget/s;->disableSettle()V
+    invoke-virtual {v0}, Lcom/android/settings_ext/widget/s;->disableSettle()V
 
     goto :goto_2
 .end method
@@ -2427,11 +2427,11 @@
 
     .prologue
     .line 1474
-    iget v0, p0, Lcom/android/settings/widget/ScreenView;->aql:I
+    iget v0, p0, Lcom/android/settings_ext/widget/ScreenView;->aql:I
 
     add-int/lit8 v0, v0, 0x1
 
-    iput v0, p0, Lcom/android/settings/widget/ScreenView;->aql:I
+    iput v0, p0, Lcom/android/settings_ext/widget/ScreenView;->aql:I
 
     .line 1475
     const/4 v0, -0x1
@@ -2447,7 +2447,7 @@
 
     .prologue
     .line 1391
-    invoke-virtual {p0}, Lcom/android/settings/widget/ScreenView;->getScreenCount()I
+    invoke-virtual {p0}, Lcom/android/settings_ext/widget/ScreenView;->getScreenCount()I
 
     move-result v0
 
@@ -2456,34 +2456,34 @@
 
     .line 1397
     :goto_0
-    iget-object v1, p0, Lcom/android/settings/widget/ScreenView;->aqt:Lcom/android/settings/widget/t;
+    iget-object v1, p0, Lcom/android/settings_ext/widget/ScreenView;->aqt:Lcom/android/settings_ext/widget/t;
 
     if-eqz v1, :cond_2
 
     if-nez v0, :cond_2
 
     .line 1398
-    iget-object v1, p0, Lcom/android/settings/widget/ScreenView;->aqt:Lcom/android/settings/widget/t;
+    iget-object v1, p0, Lcom/android/settings_ext/widget/ScreenView;->aqt:Lcom/android/settings_ext/widget/t;
 
-    invoke-direct {p0}, Lcom/android/settings/widget/ScreenView;->tC()Landroid/widget/ImageView;
+    invoke-direct {p0}, Lcom/android/settings_ext/widget/ScreenView;->tC()Landroid/widget/ImageView;
 
     move-result-object v2
 
-    sget-object v3, Lcom/android/settings/widget/ScreenView;->aqh:Landroid/widget/LinearLayout$LayoutParams;
+    sget-object v3, Lcom/android/settings_ext/widget/ScreenView;->aqh:Landroid/widget/LinearLayout$LayoutParams;
 
-    invoke-virtual {v1, v2, v0, v3}, Lcom/android/settings/widget/t;->addView(Landroid/view/View;ILandroid/view/ViewGroup$LayoutParams;)V
+    invoke-virtual {v1, v2, v0, v3}, Lcom/android/settings_ext/widget/t;->addView(Landroid/view/View;ILandroid/view/ViewGroup$LayoutParams;)V
 
     .line 1405
     :cond_0
     :goto_1
-    iget v1, p0, Lcom/android/settings/widget/ScreenView;->aqH:I
+    iget v1, p0, Lcom/android/settings_ext/widget/ScreenView;->aqH:I
 
     add-int/lit8 v1, v1, 0x1
 
-    iput v1, p0, Lcom/android/settings/widget/ScreenView;->aqH:I
+    iput v1, p0, Lcom/android/settings_ext/widget/ScreenView;->aqH:I
 
     .line 1406
-    invoke-direct {p0}, Lcom/android/settings/widget/ScreenView;->tB()V
+    invoke-direct {p0}, Lcom/android/settings_ext/widget/ScreenView;->tB()V
 
     .line 1407
     invoke-super {p0, p1, v0, p3}, Landroid/view/ViewGroup;->addView(Landroid/view/View;ILandroid/view/ViewGroup$LayoutParams;)V
@@ -2501,7 +2501,7 @@
 
     .line 1401
     :cond_2
-    iget-object v1, p0, Lcom/android/settings/widget/ScreenView;->aqt:Lcom/android/settings/widget/t;
+    iget-object v1, p0, Lcom/android/settings_ext/widget/ScreenView;->aqt:Lcom/android/settings_ext/widget/t;
 
     if-eqz v1, :cond_0
 
@@ -2510,15 +2510,15 @@
     if-ne v0, v1, :cond_0
 
     .line 1402
-    iget-object v1, p0, Lcom/android/settings/widget/ScreenView;->aqt:Lcom/android/settings/widget/t;
+    iget-object v1, p0, Lcom/android/settings_ext/widget/ScreenView;->aqt:Lcom/android/settings_ext/widget/t;
 
-    invoke-direct {p0}, Lcom/android/settings/widget/ScreenView;->tD()Landroid/widget/ImageView;
+    invoke-direct {p0}, Lcom/android/settings_ext/widget/ScreenView;->tD()Landroid/widget/ImageView;
 
     move-result-object v2
 
-    sget-object v3, Lcom/android/settings/widget/ScreenView;->aqh:Landroid/widget/LinearLayout$LayoutParams;
+    sget-object v3, Lcom/android/settings_ext/widget/ScreenView;->aqh:Landroid/widget/LinearLayout$LayoutParams;
 
-    invoke-virtual {v1, v2, v0, v3}, Lcom/android/settings/widget/t;->addView(Landroid/view/View;ILandroid/view/ViewGroup$LayoutParams;)V
+    invoke-virtual {v1, v2, v0, v3}, Lcom/android/settings_ext/widget/t;->addView(Landroid/view/View;ILandroid/view/ViewGroup$LayoutParams;)V
 
     goto :goto_1
 .end method
@@ -2534,7 +2534,7 @@
     const v2, 0x4e6e6b28    # 1.0E9f
 
     .line 846
-    iget-object v0, p0, Lcom/android/settings/widget/ScreenView;->mScroller:Landroid/widget/Scroller;
+    iget-object v0, p0, Lcom/android/settings_ext/widget/ScreenView;->mScroller:Landroid/widget/Scroller;
 
     invoke-virtual {v0}, Landroid/widget/Scroller;->computeScrollOffset()Z
 
@@ -2543,7 +2543,7 @@
     if-eqz v0, :cond_1
 
     .line 847
-    iget-object v0, p0, Lcom/android/settings/widget/ScreenView;->mScroller:Landroid/widget/Scroller;
+    iget-object v0, p0, Lcom/android/settings_ext/widget/ScreenView;->mScroller:Landroid/widget/Scroller;
 
     invoke-virtual {v0}, Landroid/widget/Scroller;->getCurrX()I
 
@@ -2551,14 +2551,14 @@
 
     int-to-float v0, v0
 
-    iput v0, p0, Lcom/android/settings/widget/ScreenView;->aqR:F
+    iput v0, p0, Lcom/android/settings_ext/widget/ScreenView;->aqR:F
 
     .line 848
-    iget v0, p0, Lcom/android/settings/widget/ScreenView;->aqR:F
+    iget v0, p0, Lcom/android/settings_ext/widget/ScreenView;->aqR:F
 
     float-to-int v0, v0
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/widget/ScreenView;->setScrollX(I)V
+    invoke-virtual {p0, v0}, Lcom/android/settings_ext/widget/ScreenView;->setScrollX(I)V
 
     .line 849
     invoke-static {}, Ljava/lang/System;->nanoTime()J
@@ -2569,62 +2569,62 @@
 
     div-float/2addr v0, v2
 
-    iput v0, p0, Lcom/android/settings/widget/ScreenView;->aqQ:F
+    iput v0, p0, Lcom/android/settings_ext/widget/ScreenView;->aqQ:F
 
     .line 850
-    iget-object v0, p0, Lcom/android/settings/widget/ScreenView;->mScroller:Landroid/widget/Scroller;
+    iget-object v0, p0, Lcom/android/settings_ext/widget/ScreenView;->mScroller:Landroid/widget/Scroller;
 
     invoke-virtual {v0}, Landroid/widget/Scroller;->getCurrY()I
 
     move-result v0
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/widget/ScreenView;->setScrollY(I)V
+    invoke-virtual {p0, v0}, Lcom/android/settings_ext/widget/ScreenView;->setScrollY(I)V
 
     .line 851
-    invoke-virtual {p0}, Lcom/android/settings/widget/ScreenView;->postInvalidateOnAnimation()V
+    invoke-virtual {p0}, Lcom/android/settings_ext/widget/ScreenView;->postInvalidateOnAnimation()V
 
     .line 872
     :cond_0
     :goto_0
-    invoke-virtual {p0}, Lcom/android/settings/widget/ScreenView;->getScrollX()I
+    invoke-virtual {p0}, Lcom/android/settings_ext/widget/ScreenView;->getScrollX()I
 
     move-result v0
 
-    invoke-direct {p0, v0, v4}, Lcom/android/settings/widget/ScreenView;->j(IZ)V
+    invoke-direct {p0, v0, v4}, Lcom/android/settings_ext/widget/ScreenView;->j(IZ)V
 
     .line 873
-    invoke-virtual {p0}, Lcom/android/settings/widget/ScreenView;->getScrollX()I
+    invoke-virtual {p0}, Lcom/android/settings_ext/widget/ScreenView;->getScrollX()I
 
     move-result v0
 
-    invoke-direct {p0, v0}, Lcom/android/settings/widget/ScreenView;->cL(I)V
+    invoke-direct {p0, v0}, Lcom/android/settings_ext/widget/ScreenView;->cL(I)V
 
     .line 874
-    invoke-virtual {p0}, Lcom/android/settings/widget/ScreenView;->getScrollX()I
+    invoke-virtual {p0}, Lcom/android/settings_ext/widget/ScreenView;->getScrollX()I
 
     move-result v0
 
-    invoke-direct {p0, v0}, Lcom/android/settings/widget/ScreenView;->cM(I)V
+    invoke-direct {p0, v0}, Lcom/android/settings_ext/widget/ScreenView;->cM(I)V
 
     .line 875
     return-void
 
     .line 852
     :cond_1
-    iget v0, p0, Lcom/android/settings/widget/ScreenView;->aqB:I
+    iget v0, p0, Lcom/android/settings_ext/widget/ScreenView;->aqB:I
 
     if-eq v0, v3, :cond_2
 
-    iget v0, p0, Lcom/android/settings/widget/ScreenView;->aqB:I
+    iget v0, p0, Lcom/android/settings_ext/widget/ScreenView;->aqB:I
 
-    iget v1, p0, Lcom/android/settings/widget/ScreenView;->mCurrentScreen:I
+    iget v1, p0, Lcom/android/settings_ext/widget/ScreenView;->mCurrentScreen:I
 
     if-eq v0, v1, :cond_2
 
     .line 853
-    iget v0, p0, Lcom/android/settings/widget/ScreenView;->aqB:I
+    iget v0, p0, Lcom/android/settings_ext/widget/ScreenView;->aqB:I
 
-    invoke-virtual {p0}, Lcom/android/settings/widget/ScreenView;->getScreenCount()I
+    invoke-virtual {p0}, Lcom/android/settings_ext/widget/ScreenView;->getScreenCount()I
 
     move-result v1
 
@@ -2638,31 +2638,31 @@
 
     move-result v0
 
-    invoke-direct {p0, v0}, Lcom/android/settings/widget/ScreenView;->cO(I)V
+    invoke-direct {p0, v0}, Lcom/android/settings_ext/widget/ScreenView;->cO(I)V
 
     .line 855
-    iput v3, p0, Lcom/android/settings/widget/ScreenView;->aqB:I
+    iput v3, p0, Lcom/android/settings_ext/widget/ScreenView;->aqB:I
 
     .line 856
-    iget-object v0, p0, Lcom/android/settings/widget/ScreenView;->aqX:Lcom/android/settings/widget/v;
+    iget-object v0, p0, Lcom/android/settings_ext/widget/ScreenView;->aqX:Lcom/android/settings_ext/widget/v;
 
     if-eqz v0, :cond_0
 
     .line 857
-    iget-object v0, p0, Lcom/android/settings/widget/ScreenView;->aqX:Lcom/android/settings/widget/v;
+    iget-object v0, p0, Lcom/android/settings_ext/widget/ScreenView;->aqX:Lcom/android/settings_ext/widget/v;
 
-    invoke-interface {v0, p0}, Lcom/android/settings/widget/v;->f(Lcom/android/settings/widget/ScreenView;)V
+    invoke-interface {v0, p0}, Lcom/android/settings_ext/widget/v;->f(Lcom/android/settings_ext/widget/ScreenView;)V
 
     .line 858
     const/4 v0, 0x0
 
-    iput-object v0, p0, Lcom/android/settings/widget/ScreenView;->aqX:Lcom/android/settings/widget/v;
+    iput-object v0, p0, Lcom/android/settings_ext/widget/ScreenView;->aqX:Lcom/android/settings_ext/widget/v;
 
     goto :goto_0
 
     .line 860
     :cond_2
-    iget v0, p0, Lcom/android/settings/widget/ScreenView;->aqJ:I
+    iget v0, p0, Lcom/android/settings_ext/widget/ScreenView;->aqJ:I
 
     const/4 v1, 0x1
 
@@ -2678,11 +2678,11 @@
     div-float/2addr v0, v2
 
     .line 862
-    iget v1, p0, Lcom/android/settings/widget/ScreenView;->aqQ:F
+    iget v1, p0, Lcom/android/settings_ext/widget/ScreenView;->aqQ:F
 
     sub-float v1, v0, v1
 
-    sget v2, Lcom/android/settings/widget/ScreenView;->aqi:F
+    sget v2, Lcom/android/settings_ext/widget/ScreenView;->aqi:F
 
     div-float/2addr v1, v2
 
@@ -2695,9 +2695,9 @@
     double-to-float v1, v2
 
     .line 864
-    iget v2, p0, Lcom/android/settings/widget/ScreenView;->aqR:F
+    iget v2, p0, Lcom/android/settings_ext/widget/ScreenView;->aqR:F
 
-    invoke-virtual {p0}, Lcom/android/settings/widget/ScreenView;->getScrollX()I
+    invoke-virtual {p0}, Lcom/android/settings_ext/widget/ScreenView;->getScrollX()I
 
     move-result v3
 
@@ -2706,7 +2706,7 @@
     sub-float/2addr v2, v3
 
     .line 865
-    invoke-virtual {p0}, Lcom/android/settings/widget/ScreenView;->getScrollX()I
+    invoke-virtual {p0}, Lcom/android/settings_ext/widget/ScreenView;->getScrollX()I
 
     move-result v3
 
@@ -2718,10 +2718,10 @@
 
     float-to-int v1, v1
 
-    invoke-virtual {p0, v1}, Lcom/android/settings/widget/ScreenView;->setScrollX(I)V
+    invoke-virtual {p0, v1}, Lcom/android/settings_ext/widget/ScreenView;->setScrollX(I)V
 
     .line 866
-    iput v0, p0, Lcom/android/settings/widget/ScreenView;->aqQ:F
+    iput v0, p0, Lcom/android/settings_ext/widget/ScreenView;->aqQ:F
 
     .line 868
     const/high16 v0, 0x3f800000    # 1.0f
@@ -2738,7 +2738,7 @@
 
     .line 869
     :cond_3
-    invoke-virtual {p0}, Lcom/android/settings/widget/ScreenView;->postInvalidate()V
+    invoke-virtual {p0}, Lcom/android/settings_ext/widget/ScreenView;->postInvalidate()V
 
     goto :goto_0
 .end method
@@ -2755,16 +2755,16 @@
     if-ne p2, v1, :cond_0
 
     .line 1010
-    iget v1, p0, Lcom/android/settings/widget/ScreenView;->mCurrentScreen:I
+    iget v1, p0, Lcom/android/settings_ext/widget/ScreenView;->mCurrentScreen:I
 
     if-lez v1, :cond_1
 
     .line 1011
-    iget v1, p0, Lcom/android/settings/widget/ScreenView;->mCurrentScreen:I
+    iget v1, p0, Lcom/android/settings_ext/widget/ScreenView;->mCurrentScreen:I
 
     add-int/lit8 v1, v1, -0x1
 
-    invoke-virtual {p0, v1}, Lcom/android/settings/widget/ScreenView;->snapToScreen(I)V
+    invoke-virtual {p0, v1}, Lcom/android/settings_ext/widget/ScreenView;->snapToScreen(I)V
 
     .line 1020
     :goto_0
@@ -2777,9 +2777,9 @@
     if-ne p2, v1, :cond_1
 
     .line 1015
-    iget v1, p0, Lcom/android/settings/widget/ScreenView;->mCurrentScreen:I
+    iget v1, p0, Lcom/android/settings_ext/widget/ScreenView;->mCurrentScreen:I
 
-    invoke-virtual {p0}, Lcom/android/settings/widget/ScreenView;->getScreenCount()I
+    invoke-virtual {p0}, Lcom/android/settings_ext/widget/ScreenView;->getScreenCount()I
 
     move-result v2
 
@@ -2788,11 +2788,11 @@
     if-ge v1, v2, :cond_1
 
     .line 1016
-    iget v1, p0, Lcom/android/settings/widget/ScreenView;->mCurrentScreen:I
+    iget v1, p0, Lcom/android/settings_ext/widget/ScreenView;->mCurrentScreen:I
 
     add-int/lit8 v1, v1, 0x1
 
-    invoke-virtual {p0, v1}, Lcom/android/settings/widget/ScreenView;->snapToScreen(I)V
+    invoke-virtual {p0, v1}, Lcom/android/settings_ext/widget/ScreenView;->snapToScreen(I)V
 
     goto :goto_0
 
@@ -2810,7 +2810,7 @@
 
     .prologue
     .line 989
-    invoke-direct {p0, p2}, Lcom/android/settings/widget/ScreenView;->l(Landroid/view/View;)V
+    invoke-direct {p0, p2}, Lcom/android/settings_ext/widget/ScreenView;->l(Landroid/view/View;)V
 
     .line 990
     invoke-super {p0, p1, p2, p3, p4}, Landroid/view/ViewGroup;->drawChild(Landroid/graphics/Canvas;Landroid/view/View;J)Z
@@ -2827,14 +2827,14 @@
     .line 1915
     const/4 v0, 0x1
 
-    iput-boolean v0, p0, Lcom/android/settings/widget/ScreenView;->aqL:Z
+    iput-boolean v0, p0, Lcom/android/settings_ext/widget/ScreenView;->aqL:Z
 
     .line 1916
     const/4 v0, 0x0
 
     const/4 v1, 0x0
 
-    invoke-direct {p0, v0, v1}, Lcom/android/settings/widget/ScreenView;->a(Landroid/view/MotionEvent;I)V
+    invoke-direct {p0, v0, v1}, Lcom/android/settings_ext/widget/ScreenView;->a(Landroid/view/MotionEvent;I)V
 
     .line 1917
     return-void
@@ -2845,9 +2845,9 @@
 
     .prologue
     .line 1326
-    iget v0, p0, Lcom/android/settings/widget/ScreenView;->mCurrentScreen:I
+    iget v0, p0, Lcom/android/settings_ext/widget/ScreenView;->mCurrentScreen:I
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/widget/ScreenView;->getScreen(I)Landroid/view/View;
+    invoke-virtual {p0, v0}, Lcom/android/settings_ext/widget/ScreenView;->getScreen(I)Landroid/view/View;
 
     move-result-object v0
 
@@ -2861,7 +2861,7 @@
     .line 1365
     if-ltz p1, :cond_0
 
-    invoke-virtual {p0}, Lcom/android/settings/widget/ScreenView;->getScreenCount()I
+    invoke-virtual {p0}, Lcom/android/settings_ext/widget/ScreenView;->getScreenCount()I
 
     move-result v0
 
@@ -2876,7 +2876,7 @@
     return-object v0
 
     :cond_1
-    invoke-virtual {p0, p1}, Lcom/android/settings/widget/ScreenView;->getChildAt(I)Landroid/view/View;
+    invoke-virtual {p0, p1}, Lcom/android/settings_ext/widget/ScreenView;->getChildAt(I)Landroid/view/View;
 
     move-result-object v0
 
@@ -2888,7 +2888,7 @@
 
     .prologue
     .line 1305
-    iget v0, p0, Lcom/android/settings/widget/ScreenView;->aqH:I
+    iget v0, p0, Lcom/android/settings_ext/widget/ScreenView;->aqH:I
 
     return v0
 .end method
@@ -2901,10 +2901,10 @@
     invoke-super {p0}, Landroid/view/ViewGroup;->onAttachedToWindow()V
 
     .line 880
-    invoke-virtual {p0}, Lcom/android/settings/widget/ScreenView;->computeScroll()V
+    invoke-virtual {p0}, Lcom/android/settings_ext/widget/ScreenView;->computeScroll()V
 
     .line 881
-    invoke-direct {p0}, Lcom/android/settings/widget/ScreenView;->ty()V
+    invoke-direct {p0}, Lcom/android/settings_ext/widget/ScreenView;->ty()V
 
     .line 882
     return-void
@@ -2943,19 +2943,19 @@
     if-eq v2, v3, :cond_1
 
     .line 1099
-    invoke-direct {p0, p1}, Lcom/android/settings/widget/ScreenView;->g(Landroid/view/MotionEvent;)V
+    invoke-direct {p0, p1}, Lcom/android/settings_ext/widget/ScreenView;->g(Landroid/view/MotionEvent;)V
 
     .line 1101
     :cond_1
-    iget-boolean v2, p0, Lcom/android/settings/widget/ScreenView;->aqL:Z
+    iget-boolean v2, p0, Lcom/android/settings_ext/widget/ScreenView;->aqL:Z
 
     if-nez v2, :cond_2
 
-    iget v2, p0, Lcom/android/settings/widget/ScreenView;->aqJ:I
+    iget v2, p0, Lcom/android/settings_ext/widget/ScreenView;->aqJ:I
 
     if-eqz v2, :cond_3
 
-    iget v2, p0, Lcom/android/settings/widget/ScreenView;->aqJ:I
+    iget v2, p0, Lcom/android/settings_ext/widget/ScreenView;->aqJ:I
 
     if-eq v2, v4, :cond_3
 
@@ -2967,21 +2967,21 @@
 
     .line 1064
     :pswitch_0
-    invoke-direct {p0, p1}, Lcom/android/settings/widget/ScreenView;->g(Landroid/view/MotionEvent;)V
+    invoke-direct {p0, p1}, Lcom/android/settings_ext/widget/ScreenView;->g(Landroid/view/MotionEvent;)V
 
     .line 1065
-    iget v2, p0, Lcom/android/settings/widget/ScreenView;->aqJ:I
+    iget v2, p0, Lcom/android/settings_ext/widget/ScreenView;->aqJ:I
 
     if-nez v2, :cond_0
 
-    invoke-direct {p0, p1}, Lcom/android/settings/widget/ScreenView;->f(Landroid/view/MotionEvent;)Z
+    invoke-direct {p0, p1}, Lcom/android/settings_ext/widget/ScreenView;->f(Landroid/view/MotionEvent;)Z
 
     move-result v2
 
     if-eqz v2, :cond_0
 
     .line 1066
-    invoke-direct {p0, p1, v1}, Lcom/android/settings/widget/ScreenView;->a(Landroid/view/MotionEvent;I)V
+    invoke-direct {p0, p1, v1}, Lcom/android/settings_ext/widget/ScreenView;->a(Landroid/view/MotionEvent;I)V
 
     goto :goto_0
 
@@ -2990,7 +2990,7 @@
     invoke-virtual {p1, v4}, Landroid/view/MotionEvent;->setAction(I)V
 
     .line 1072
-    iget-object v2, p0, Lcom/android/settings/widget/ScreenView;->aqI:Landroid/view/ScaleGestureDetector;
+    iget-object v2, p0, Lcom/android/settings_ext/widget/ScreenView;->aqI:Landroid/view/ScaleGestureDetector;
 
     invoke-virtual {v2, p1}, Landroid/view/ScaleGestureDetector;->onTouchEvent(Landroid/view/MotionEvent;)Z
 
@@ -2998,27 +2998,27 @@
     invoke-virtual {p1, v0}, Landroid/view/MotionEvent;->setAction(I)V
 
     .line 1074
-    iput-boolean v0, p0, Lcom/android/settings/widget/ScreenView;->aqL:Z
+    iput-boolean v0, p0, Lcom/android/settings_ext/widget/ScreenView;->aqL:Z
 
     .line 1075
-    iput-boolean v0, p0, Lcom/android/settings/widget/ScreenView;->aqK:Z
+    iput-boolean v0, p0, Lcom/android/settings_ext/widget/ScreenView;->aqK:Z
 
     .line 1077
     invoke-virtual {p1}, Landroid/view/MotionEvent;->getX()F
 
     move-result v2
 
-    iput v2, p0, Lcom/android/settings/widget/ScreenView;->mLastMotionX:F
+    iput v2, p0, Lcom/android/settings_ext/widget/ScreenView;->mLastMotionX:F
 
     .line 1078
     invoke-virtual {p1}, Landroid/view/MotionEvent;->getY()F
 
     move-result v2
 
-    iput v2, p0, Lcom/android/settings/widget/ScreenView;->mLastMotionY:F
+    iput v2, p0, Lcom/android/settings_ext/widget/ScreenView;->mLastMotionY:F
 
     .line 1079
-    iget-object v2, p0, Lcom/android/settings/widget/ScreenView;->mScroller:Landroid/widget/Scroller;
+    iget-object v2, p0, Lcom/android/settings_ext/widget/ScreenView;->mScroller:Landroid/widget/Scroller;
 
     invoke-virtual {v2}, Landroid/widget/Scroller;->isFinished()Z
 
@@ -3027,24 +3027,24 @@
     if-eqz v2, :cond_4
 
     .line 1080
-    iput-boolean v1, p0, Lcom/android/settings/widget/ScreenView;->aqM:Z
+    iput-boolean v1, p0, Lcom/android/settings_ext/widget/ScreenView;->aqM:Z
 
     goto :goto_0
 
     .line 1087
     :cond_4
-    iget-object v2, p0, Lcom/android/settings/widget/ScreenView;->mScroller:Landroid/widget/Scroller;
+    iget-object v2, p0, Lcom/android/settings_ext/widget/ScreenView;->mScroller:Landroid/widget/Scroller;
 
     invoke-virtual {v2}, Landroid/widget/Scroller;->abortAnimation()V
 
     .line 1088
-    invoke-direct {p0, p1, v1}, Lcom/android/settings/widget/ScreenView;->a(Landroid/view/MotionEvent;I)V
+    invoke-direct {p0, p1, v1}, Lcom/android/settings_ext/widget/ScreenView;->a(Landroid/view/MotionEvent;I)V
 
     goto :goto_0
 
     .line 1094
     :pswitch_2
-    invoke-direct {p0, p1, v0}, Lcom/android/settings/widget/ScreenView;->a(Landroid/view/MotionEvent;I)V
+    invoke-direct {p0, p1, v0}, Lcom/android/settings_ext/widget/ScreenView;->a(Landroid/view/MotionEvent;I)V
 
     goto :goto_0
 
@@ -3065,16 +3065,16 @@
     const/4 v0, 0x0
 
     .line 966
-    invoke-virtual {p0}, Lcom/android/settings/widget/ScreenView;->getScrollX()I
+    invoke-virtual {p0}, Lcom/android/settings_ext/widget/ScreenView;->getScrollX()I
 
     move-result v1
 
     const/4 v2, 0x1
 
-    invoke-direct {p0, v1, v2}, Lcom/android/settings/widget/ScreenView;->j(IZ)V
+    invoke-direct {p0, v1, v2}, Lcom/android/settings_ext/widget/ScreenView;->j(IZ)V
 
     .line 968
-    invoke-virtual {p0}, Lcom/android/settings/widget/ScreenView;->getScreenCount()I
+    invoke-virtual {p0}, Lcom/android/settings_ext/widget/ScreenView;->getScreenCount()I
 
     move-result v2
 
@@ -3085,7 +3085,7 @@
     if-ge v1, v2, :cond_1
 
     .line 971
-    invoke-virtual {p0, v1}, Lcom/android/settings/widget/ScreenView;->getChildAt(I)Landroid/view/View;
+    invoke-virtual {p0, v1}, Lcom/android/settings_ext/widget/ScreenView;->getChildAt(I)Landroid/view/View;
 
     move-result-object v3
 
@@ -3099,11 +3099,11 @@
     if-eq v4, v5, :cond_0
 
     .line 973
-    invoke-virtual {p0}, Lcom/android/settings/widget/ScreenView;->getPaddingTop()I
+    invoke-virtual {p0}, Lcom/android/settings_ext/widget/ScreenView;->getPaddingTop()I
 
     move-result v4
 
-    iget v5, p0, Lcom/android/settings/widget/ScreenView;->aqx:I
+    iget v5, p0, Lcom/android/settings_ext/widget/ScreenView;->aqx:I
 
     add-int/2addr v4, v5
 
@@ -3113,11 +3113,11 @@
 
     add-int/2addr v5, v0
 
-    invoke-virtual {p0}, Lcom/android/settings/widget/ScreenView;->getPaddingTop()I
+    invoke-virtual {p0}, Lcom/android/settings_ext/widget/ScreenView;->getPaddingTop()I
 
     move-result v6
 
-    iget v7, p0, Lcom/android/settings/widget/ScreenView;->aqx:I
+    iget v7, p0, Lcom/android/settings_ext/widget/ScreenView;->aqx:I
 
     add-int/2addr v6, v7
 
@@ -3144,30 +3144,30 @@
 
     .line 982
     :cond_1
-    iget-boolean v0, p0, Lcom/android/settings/widget/ScreenView;->aqF:Z
+    iget-boolean v0, p0, Lcom/android/settings_ext/widget/ScreenView;->aqF:Z
 
     if-eqz v0, :cond_2
 
-    iget v0, p0, Lcom/android/settings/widget/ScreenView;->mCurrentScreen:I
+    iget v0, p0, Lcom/android/settings_ext/widget/ScreenView;->mCurrentScreen:I
 
-    iget v1, p0, Lcom/android/settings/widget/ScreenView;->mVisibleRange:I
+    iget v1, p0, Lcom/android/settings_ext/widget/ScreenView;->mVisibleRange:I
 
     rem-int/2addr v0, v1
 
     if-lez v0, :cond_2
 
     .line 983
-    iget v0, p0, Lcom/android/settings/widget/ScreenView;->mCurrentScreen:I
+    iget v0, p0, Lcom/android/settings_ext/widget/ScreenView;->mCurrentScreen:I
 
-    iget v1, p0, Lcom/android/settings/widget/ScreenView;->mCurrentScreen:I
+    iget v1, p0, Lcom/android/settings_ext/widget/ScreenView;->mCurrentScreen:I
 
-    iget v2, p0, Lcom/android/settings/widget/ScreenView;->mVisibleRange:I
+    iget v2, p0, Lcom/android/settings_ext/widget/ScreenView;->mVisibleRange:I
 
     rem-int/2addr v1, v2
 
     sub-int/2addr v0, v1
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/widget/ScreenView;->setCurrentScreen(I)V
+    invoke-virtual {p0, v0}, Lcom/android/settings_ext/widget/ScreenView;->setCurrentScreen(I)V
 
     .line 985
     :cond_2
@@ -3183,13 +3183,13 @@
     const/4 v1, 0x0
 
     .line 894
-    iput p1, p0, Lcom/android/settings/widget/ScreenView;->mWidthMeasureSpec:I
+    iput p1, p0, Lcom/android/settings_ext/widget/ScreenView;->mWidthMeasureSpec:I
 
     .line 895
-    iput p2, p0, Lcom/android/settings/widget/ScreenView;->mHeightMeasureSpec:I
+    iput p2, p0, Lcom/android/settings_ext/widget/ScreenView;->mHeightMeasureSpec:I
 
     .line 898
-    invoke-virtual {p0}, Lcom/android/settings/widget/ScreenView;->getScreenCount()I
+    invoke-virtual {p0}, Lcom/android/settings_ext/widget/ScreenView;->getScreenCount()I
 
     move-result v6
 
@@ -3201,14 +3201,14 @@
 
     .line 900
     :goto_0
-    iget v4, p0, Lcom/android/settings/widget/ScreenView;->aql:I
+    iget v4, p0, Lcom/android/settings_ext/widget/ScreenView;->aql:I
 
     if-ge v0, v4, :cond_0
 
     .line 901
     add-int v4, v0, v6
 
-    invoke-virtual {p0, v4}, Lcom/android/settings/widget/ScreenView;->getChildAt(I)Landroid/view/View;
+    invoke-virtual {p0, v4}, Lcom/android/settings_ext/widget/ScreenView;->getChildAt(I)Landroid/view/View;
 
     move-result-object v4
 
@@ -3218,11 +3218,11 @@
     move-result-object v5
 
     .line 903
-    invoke-virtual {p0}, Lcom/android/settings/widget/ScreenView;->getPaddingLeft()I
+    invoke-virtual {p0}, Lcom/android/settings_ext/widget/ScreenView;->getPaddingLeft()I
 
     move-result v7
 
-    invoke-virtual {p0}, Lcom/android/settings/widget/ScreenView;->getPaddingRight()I
+    invoke-virtual {p0}, Lcom/android/settings_ext/widget/ScreenView;->getPaddingRight()I
 
     move-result v8
 
@@ -3230,32 +3230,32 @@
 
     iget v8, v5, Landroid/view/ViewGroup$LayoutParams;->width:I
 
-    invoke-static {p1, v7, v8}, Lcom/android/settings/widget/ScreenView;->getChildMeasureSpec(III)I
+    invoke-static {p1, v7, v8}, Lcom/android/settings_ext/widget/ScreenView;->getChildMeasureSpec(III)I
 
     move-result v7
 
     .line 906
-    invoke-virtual {p0}, Lcom/android/settings/widget/ScreenView;->getPaddingTop()I
+    invoke-virtual {p0}, Lcom/android/settings_ext/widget/ScreenView;->getPaddingTop()I
 
     move-result v8
 
-    iget v9, p0, Lcom/android/settings/widget/ScreenView;->aqx:I
+    iget v9, p0, Lcom/android/settings_ext/widget/ScreenView;->aqx:I
 
     add-int/2addr v8, v9
 
-    invoke-virtual {p0}, Lcom/android/settings/widget/ScreenView;->getPaddingBottom()I
+    invoke-virtual {p0}, Lcom/android/settings_ext/widget/ScreenView;->getPaddingBottom()I
 
     move-result v9
 
     add-int/2addr v8, v9
 
-    iget v9, p0, Lcom/android/settings/widget/ScreenView;->aqy:I
+    iget v9, p0, Lcom/android/settings_ext/widget/ScreenView;->aqy:I
 
     add-int/2addr v8, v9
 
     iget v5, v5, Landroid/view/ViewGroup$LayoutParams;->height:I
 
-    invoke-static {p2, v8, v5}, Lcom/android/settings/widget/ScreenView;->getChildMeasureSpec(III)I
+    invoke-static {p2, v8, v5}, Lcom/android/settings_ext/widget/ScreenView;->getChildMeasureSpec(III)I
 
     move-result v5
 
@@ -3297,7 +3297,7 @@
     if-ge v0, v6, :cond_1
 
     .line 919
-    invoke-virtual {p0, v0}, Lcom/android/settings/widget/ScreenView;->getChildAt(I)Landroid/view/View;
+    invoke-virtual {p0, v0}, Lcom/android/settings_ext/widget/ScreenView;->getChildAt(I)Landroid/view/View;
 
     move-result-object v7
 
@@ -3307,11 +3307,11 @@
     move-result-object v8
 
     .line 921
-    invoke-virtual {p0}, Lcom/android/settings/widget/ScreenView;->getPaddingLeft()I
+    invoke-virtual {p0}, Lcom/android/settings_ext/widget/ScreenView;->getPaddingLeft()I
 
     move-result v9
 
-    invoke-virtual {p0}, Lcom/android/settings/widget/ScreenView;->getPaddingRight()I
+    invoke-virtual {p0}, Lcom/android/settings_ext/widget/ScreenView;->getPaddingRight()I
 
     move-result v10
 
@@ -3319,32 +3319,32 @@
 
     iget v10, v8, Landroid/view/ViewGroup$LayoutParams;->width:I
 
-    invoke-static {p1, v9, v10}, Lcom/android/settings/widget/ScreenView;->getChildMeasureSpec(III)I
+    invoke-static {p1, v9, v10}, Lcom/android/settings_ext/widget/ScreenView;->getChildMeasureSpec(III)I
 
     move-result v9
 
     .line 924
-    invoke-virtual {p0}, Lcom/android/settings/widget/ScreenView;->getPaddingTop()I
+    invoke-virtual {p0}, Lcom/android/settings_ext/widget/ScreenView;->getPaddingTop()I
 
     move-result v10
 
-    iget v11, p0, Lcom/android/settings/widget/ScreenView;->aqx:I
+    iget v11, p0, Lcom/android/settings_ext/widget/ScreenView;->aqx:I
 
     add-int/2addr v10, v11
 
-    invoke-virtual {p0}, Lcom/android/settings/widget/ScreenView;->getPaddingBottom()I
+    invoke-virtual {p0}, Lcom/android/settings_ext/widget/ScreenView;->getPaddingBottom()I
 
     move-result v11
 
     add-int/2addr v10, v11
 
-    iget v11, p0, Lcom/android/settings/widget/ScreenView;->aqy:I
+    iget v11, p0, Lcom/android/settings_ext/widget/ScreenView;->aqy:I
 
     add-int/2addr v10, v11
 
     iget v8, v8, Landroid/view/ViewGroup$LayoutParams;->height:I
 
-    invoke-static {p2, v10, v8}, Lcom/android/settings/widget/ScreenView;->getChildMeasureSpec(III)I
+    invoke-static {p2, v10, v8}, Lcom/android/settings_ext/widget/ScreenView;->getChildMeasureSpec(III)I
 
     move-result v8
 
@@ -3386,11 +3386,11 @@
     move-result v2
 
     .line 937
-    invoke-virtual {p0}, Lcom/android/settings/widget/ScreenView;->getPaddingLeft()I
+    invoke-virtual {p0}, Lcom/android/settings_ext/widget/ScreenView;->getPaddingLeft()I
 
     move-result v3
 
-    invoke-virtual {p0}, Lcom/android/settings/widget/ScreenView;->getPaddingRight()I
+    invoke-virtual {p0}, Lcom/android/settings_ext/widget/ScreenView;->getPaddingRight()I
 
     move-result v5
 
@@ -3399,78 +3399,78 @@
     add-int/2addr v0, v3
 
     .line 938
-    invoke-virtual {p0}, Lcom/android/settings/widget/ScreenView;->getPaddingTop()I
+    invoke-virtual {p0}, Lcom/android/settings_ext/widget/ScreenView;->getPaddingTop()I
 
     move-result v3
 
-    iget v5, p0, Lcom/android/settings/widget/ScreenView;->aqx:I
+    iget v5, p0, Lcom/android/settings_ext/widget/ScreenView;->aqx:I
 
     add-int/2addr v3, v5
 
-    invoke-virtual {p0}, Lcom/android/settings/widget/ScreenView;->getPaddingBottom()I
+    invoke-virtual {p0}, Lcom/android/settings_ext/widget/ScreenView;->getPaddingBottom()I
 
     move-result v5
 
     add-int/2addr v3, v5
 
-    iget v5, p0, Lcom/android/settings/widget/ScreenView;->aqy:I
+    iget v5, p0, Lcom/android/settings_ext/widget/ScreenView;->aqy:I
 
     add-int/2addr v3, v5
 
     add-int/2addr v2, v3
 
     .line 940
-    invoke-static {v0, p1}, Lcom/android/settings/widget/ScreenView;->resolveSize(II)I
+    invoke-static {v0, p1}, Lcom/android/settings_ext/widget/ScreenView;->resolveSize(II)I
 
     move-result v0
 
-    invoke-static {v2, p2}, Lcom/android/settings/widget/ScreenView;->resolveSize(II)I
+    invoke-static {v2, p2}, Lcom/android/settings_ext/widget/ScreenView;->resolveSize(II)I
 
     move-result v2
 
-    invoke-virtual {p0, v0, v2}, Lcom/android/settings/widget/ScreenView;->setMeasuredDimension(II)V
+    invoke-virtual {p0, v0, v2}, Lcom/android/settings_ext/widget/ScreenView;->setMeasuredDimension(II)V
 
     .line 943
     if-lez v6, :cond_3
 
     .line 944
-    iput v4, p0, Lcom/android/settings/widget/ScreenView;->mChildScreenWidth:I
+    iput v4, p0, Lcom/android/settings_ext/widget/ScreenView;->mChildScreenWidth:I
 
     .line 945
     invoke-static {p1}, Landroid/view/View$MeasureSpec;->getSize(I)I
 
     move-result v0
 
-    invoke-virtual {p0}, Lcom/android/settings/widget/ScreenView;->getPaddingLeft()I
+    invoke-virtual {p0}, Lcom/android/settings_ext/widget/ScreenView;->getPaddingLeft()I
 
     move-result v2
 
     sub-int/2addr v0, v2
 
-    invoke-virtual {p0}, Lcom/android/settings/widget/ScreenView;->getPaddingRight()I
+    invoke-virtual {p0}, Lcom/android/settings_ext/widget/ScreenView;->getPaddingRight()I
 
     move-result v2
 
     sub-int/2addr v0, v2
 
-    iput v0, p0, Lcom/android/settings/widget/ScreenView;->mScreenWidth:I
+    iput v0, p0, Lcom/android/settings_ext/widget/ScreenView;->mScreenWidth:I
 
     .line 947
-    invoke-direct {p0}, Lcom/android/settings/widget/ScreenView;->tA()V
+    invoke-direct {p0}, Lcom/android/settings_ext/widget/ScreenView;->tA()V
 
     .line 948
-    iget v0, p0, Lcom/android/settings/widget/ScreenView;->mChildScreenWidth:I
+    iget v0, p0, Lcom/android/settings_ext/widget/ScreenView;->mChildScreenWidth:I
 
     if-lez v0, :cond_2
 
     .line 949
-    iget v0, p0, Lcom/android/settings/widget/ScreenView;->mScreenWidth:I
+    iget v0, p0, Lcom/android/settings_ext/widget/ScreenView;->mScreenWidth:I
 
-    iget v2, p0, Lcom/android/settings/widget/ScreenView;->mChildScreenWidth:I
+    iget v2, p0, Lcom/android/settings_ext/widget/ScreenView;->mChildScreenWidth:I
 
     int-to-float v2, v2
 
-    iget v3, p0, Lcom/android/settings/widget/ScreenView;->aqG:F
+    iget v3, p0, Lcom/android/settings_ext/widget/ScreenView;->aqG:F
 
     mul-float/2addr v2, v3
 
@@ -3478,7 +3478,7 @@
 
     add-int/2addr v0, v2
 
-    iget v2, p0, Lcom/android/settings/widget/ScreenView;->mChildScreenWidth:I
+    iget v2, p0, Lcom/android/settings_ext/widget/ScreenView;->mChildScreenWidth:I
 
     div-int/2addr v0, v2
 
@@ -3486,37 +3486,37 @@
 
     move-result v0
 
-    iput v0, p0, Lcom/android/settings/widget/ScreenView;->mVisibleRange:I
+    iput v0, p0, Lcom/android/settings_ext/widget/ScreenView;->mVisibleRange:I
 
     .line 953
     :cond_2
-    iget v0, p0, Lcom/android/settings/widget/ScreenView;->aqE:F
+    iget v0, p0, Lcom/android/settings_ext/widget/ScreenView;->aqE:F
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/widget/ScreenView;->setOverScrollRatio(F)V
+    invoke-virtual {p0, v0}, Lcom/android/settings_ext/widget/ScreenView;->setOverScrollRatio(F)V
 
     .line 955
     :cond_3
-    iget-boolean v0, p0, Lcom/android/settings/widget/ScreenView;->aqk:Z
+    iget-boolean v0, p0, Lcom/android/settings_ext/widget/ScreenView;->aqk:Z
 
     if-eqz v0, :cond_4
 
-    iget v0, p0, Lcom/android/settings/widget/ScreenView;->mVisibleRange:I
+    iget v0, p0, Lcom/android/settings_ext/widget/ScreenView;->mVisibleRange:I
 
     if-lez v0, :cond_4
 
     .line 956
-    iput-boolean v1, p0, Lcom/android/settings/widget/ScreenView;->aqk:Z
+    iput-boolean v1, p0, Lcom/android/settings_ext/widget/ScreenView;->aqk:Z
 
     .line 957
-    invoke-virtual {p0, v1}, Lcom/android/settings/widget/ScreenView;->setHorizontalScrollBarEnabled(Z)V
+    invoke-virtual {p0, v1}, Lcom/android/settings_ext/widget/ScreenView;->setHorizontalScrollBarEnabled(Z)V
 
     .line 958
-    iget v0, p0, Lcom/android/settings/widget/ScreenView;->mCurrentScreen:I
+    iget v0, p0, Lcom/android/settings_ext/widget/ScreenView;->mCurrentScreen:I
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/widget/ScreenView;->setCurrentScreen(I)V
+    invoke-virtual {p0, v0}, Lcom/android/settings_ext/widget/ScreenView;->setCurrentScreen(I)V
 
     .line 959
-    invoke-virtual {p0, v12}, Lcom/android/settings/widget/ScreenView;->setHorizontalScrollBarEnabled(Z)V
+    invoke-virtual {p0, v12}, Lcom/android/settings_ext/widget/ScreenView;->setHorizontalScrollBarEnabled(Z)V
 
     .line 961
     :cond_4
@@ -3544,26 +3544,26 @@
 
     .prologue
     .line 1927
-    check-cast p1, Lcom/android/settings/widget/ScreenView$SavedState;
+    check-cast p1, Lcom/android/settings_ext/widget/ScreenView$SavedState;
 
     .line 1928
-    invoke-virtual {p1}, Lcom/android/settings/widget/ScreenView$SavedState;->getSuperState()Landroid/os/Parcelable;
+    invoke-virtual {p1}, Lcom/android/settings_ext/widget/ScreenView$SavedState;->getSuperState()Landroid/os/Parcelable;
 
     move-result-object v0
 
     invoke-super {p0, v0}, Landroid/view/ViewGroup;->onRestoreInstanceState(Landroid/os/Parcelable;)V
 
     .line 1929
-    iget v0, p1, Lcom/android/settings/widget/ScreenView$SavedState;->currentScreen:I
+    iget v0, p1, Lcom/android/settings_ext/widget/ScreenView$SavedState;->currentScreen:I
 
     const/4 v1, -0x1
 
     if-eq v0, v1, :cond_0
 
     .line 1930
-    iget v0, p1, Lcom/android/settings/widget/ScreenView$SavedState;->currentScreen:I
+    iget v0, p1, Lcom/android/settings_ext/widget/ScreenView$SavedState;->currentScreen:I
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/widget/ScreenView;->setCurrentScreen(I)V
+    invoke-virtual {p0, v0}, Lcom/android/settings_ext/widget/ScreenView;->setCurrentScreen(I)V
 
     .line 1932
     :cond_0
@@ -3575,18 +3575,18 @@
 
     .prologue
     .line 1920
-    new-instance v0, Lcom/android/settings/widget/ScreenView$SavedState;
+    new-instance v0, Lcom/android/settings_ext/widget/ScreenView$SavedState;
 
     invoke-super {p0}, Landroid/view/ViewGroup;->onSaveInstanceState()Landroid/os/Parcelable;
 
     move-result-object v1
 
-    invoke-direct {v0, v1}, Lcom/android/settings/widget/ScreenView$SavedState;-><init>(Landroid/os/Parcelable;)V
+    invoke-direct {v0, v1}, Lcom/android/settings_ext/widget/ScreenView$SavedState;-><init>(Landroid/os/Parcelable;)V
 
     .line 1921
-    iget v1, p0, Lcom/android/settings/widget/ScreenView;->mCurrentScreen:I
+    iget v1, p0, Lcom/android/settings_ext/widget/ScreenView;->mCurrentScreen:I
 
-    iput v1, v0, Lcom/android/settings/widget/ScreenView$SavedState;->currentScreen:I
+    iput v1, v0, Lcom/android/settings_ext/widget/ScreenView$SavedState;->currentScreen:I
 
     .line 1922
     return-object v0
@@ -3603,7 +3603,7 @@
     const/4 v1, 0x1
 
     .line 1123
-    iget-boolean v0, p0, Lcom/android/settings/widget/ScreenView;->aqL:Z
+    iget-boolean v0, p0, Lcom/android/settings_ext/widget/ScreenView;->aqL:Z
 
     if-eqz v0, :cond_0
 
@@ -3613,12 +3613,12 @@
 
     .line 1126
     :cond_0
-    iget-boolean v0, p0, Lcom/android/settings/widget/ScreenView;->aqK:Z
+    iget-boolean v0, p0, Lcom/android/settings_ext/widget/ScreenView;->aqK:Z
 
     if-eqz v0, :cond_1
 
     .line 1127
-    invoke-direct {p0, p1}, Lcom/android/settings/widget/ScreenView;->g(Landroid/view/MotionEvent;)V
+    invoke-direct {p0, p1}, Lcom/android/settings_ext/widget/ScreenView;->g(Landroid/view/MotionEvent;)V
 
     .line 1129
     :cond_1
@@ -3634,33 +3634,33 @@
     :cond_2
     :goto_1
     :pswitch_0
-    iput-boolean v1, p0, Lcom/android/settings/widget/ScreenView;->aqK:Z
+    iput-boolean v1, p0, Lcom/android/settings_ext/widget/ScreenView;->aqK:Z
 
     goto :goto_0
 
     .line 1133
     :pswitch_1
-    iget v0, p0, Lcom/android/settings/widget/ScreenView;->aqJ:I
+    iget v0, p0, Lcom/android/settings_ext/widget/ScreenView;->aqJ:I
 
     if-nez v0, :cond_3
 
-    invoke-direct {p0, p1}, Lcom/android/settings/widget/ScreenView;->f(Landroid/view/MotionEvent;)Z
+    invoke-direct {p0, p1}, Lcom/android/settings_ext/widget/ScreenView;->f(Landroid/view/MotionEvent;)Z
 
     move-result v0
 
     if-eqz v0, :cond_3
 
     .line 1134
-    invoke-direct {p0, p1, v1}, Lcom/android/settings/widget/ScreenView;->a(Landroid/view/MotionEvent;I)V
+    invoke-direct {p0, p1, v1}, Lcom/android/settings_ext/widget/ScreenView;->a(Landroid/view/MotionEvent;I)V
 
     .line 1136
     :cond_3
-    iget v0, p0, Lcom/android/settings/widget/ScreenView;->aqJ:I
+    iget v0, p0, Lcom/android/settings_ext/widget/ScreenView;->aqJ:I
 
     if-ne v0, v1, :cond_2
 
     .line 1138
-    iget v0, p0, Lcom/android/settings/widget/ScreenView;->aqP:I
+    iget v0, p0, Lcom/android/settings_ext/widget/ScreenView;->aqP:I
 
     invoke-virtual {p1, v0}, Landroid/view/MotionEvent;->findPointerIndex(I)I
 
@@ -3672,10 +3672,10 @@
     if-ne v0, v3, :cond_4
 
     .line 1140
-    invoke-direct {p0, p1, v1}, Lcom/android/settings/widget/ScreenView;->a(Landroid/view/MotionEvent;I)V
+    invoke-direct {p0, p1, v1}, Lcom/android/settings_ext/widget/ScreenView;->a(Landroid/view/MotionEvent;I)V
 
     .line 1141
-    iget v0, p0, Lcom/android/settings/widget/ScreenView;->aqP:I
+    iget v0, p0, Lcom/android/settings_ext/widget/ScreenView;->aqP:I
 
     invoke-virtual {p1, v0}, Landroid/view/MotionEvent;->findPointerIndex(I)I
 
@@ -3688,12 +3688,12 @@
     move-result v0
 
     .line 1144
-    iget v3, p0, Lcom/android/settings/widget/ScreenView;->mLastMotionX:F
+    iget v3, p0, Lcom/android/settings_ext/widget/ScreenView;->mLastMotionX:F
 
     sub-float/2addr v3, v0
 
     .line 1145
-    iput v0, p0, Lcom/android/settings/widget/ScreenView;->mLastMotionX:F
+    iput v0, p0, Lcom/android/settings_ext/widget/ScreenView;->mLastMotionX:F
 
     .line 1146
     cmpl-float v0, v3, v4
@@ -3704,7 +3704,7 @@
 
     if-gez v0, :cond_5
 
-    iget v0, p0, Lcom/android/settings/widget/ScreenView;->mCurrentScreen:I
+    iget v0, p0, Lcom/android/settings_ext/widget/ScreenView;->mCurrentScreen:I
 
     if-eqz v0, :cond_7
 
@@ -3713,9 +3713,9 @@
 
     if-lez v0, :cond_6
 
-    iget v0, p0, Lcom/android/settings/widget/ScreenView;->mCurrentScreen:I
+    iget v0, p0, Lcom/android/settings_ext/widget/ScreenView;->mCurrentScreen:I
 
-    invoke-virtual {p0}, Lcom/android/settings/widget/ScreenView;->getScreenCount()I
+    invoke-virtual {p0}, Lcom/android/settings_ext/widget/ScreenView;->getScreenCount()I
 
     move-result v4
 
@@ -3725,7 +3725,7 @@
 
     .line 1147
     :cond_6
-    iget v0, p0, Lcom/android/settings/widget/ScreenView;->aqR:F
+    iget v0, p0, Lcom/android/settings_ext/widget/ScreenView;->aqR:F
 
     add-float/2addr v0, v3
 
@@ -3733,30 +3733,30 @@
 
     move-result v0
 
-    invoke-virtual {p0, v0, v2}, Lcom/android/settings/widget/ScreenView;->scrollTo(II)V
+    invoke-virtual {p0, v0, v2}, Lcom/android/settings_ext/widget/ScreenView;->scrollTo(II)V
 
     goto :goto_1
 
     .line 1149
     :cond_7
-    invoke-virtual {p0}, Lcom/android/settings/widget/ScreenView;->awakenScrollBars()Z
+    invoke-virtual {p0}, Lcom/android/settings_ext/widget/ScreenView;->awakenScrollBars()Z
 
     goto :goto_1
 
     .line 1155
     :pswitch_2
-    iget v0, p0, Lcom/android/settings/widget/ScreenView;->aqJ:I
+    iget v0, p0, Lcom/android/settings_ext/widget/ScreenView;->aqJ:I
 
     if-ne v0, v1, :cond_8
 
     .line 1156
-    iget v0, p0, Lcom/android/settings/widget/ScreenView;->aqP:I
+    iget v0, p0, Lcom/android/settings_ext/widget/ScreenView;->aqP:I
 
-    invoke-direct {p0, v0}, Lcom/android/settings/widget/ScreenView;->cN(I)V
+    invoke-direct {p0, v0}, Lcom/android/settings_ext/widget/ScreenView;->cN(I)V
 
     .line 1158
     :cond_8
-    invoke-direct {p0, p1, v2}, Lcom/android/settings/widget/ScreenView;->a(Landroid/view/MotionEvent;I)V
+    invoke-direct {p0, p1, v2}, Lcom/android/settings_ext/widget/ScreenView;->a(Landroid/view/MotionEvent;I)V
 
     goto :goto_1
 
@@ -3778,7 +3778,7 @@
     move-result v3
 
     .line 1165
-    iget v4, p0, Lcom/android/settings/widget/ScreenView;->aqP:I
+    iget v4, p0, Lcom/android/settings_ext/widget/ScreenView;->aqP:I
 
     if-ne v3, v4, :cond_2
 
@@ -3793,21 +3793,21 @@
 
     move-result v2
 
-    iput v2, p0, Lcom/android/settings/widget/ScreenView;->mLastMotionX:F
+    iput v2, p0, Lcom/android/settings_ext/widget/ScreenView;->mLastMotionX:F
 
     .line 1171
     invoke-virtual {p1, v0}, Landroid/view/MotionEvent;->getPointerId(I)I
 
     move-result v0
 
-    iput v0, p0, Lcom/android/settings/widget/ScreenView;->aqP:I
+    iput v0, p0, Lcom/android/settings_ext/widget/ScreenView;->aqP:I
 
     .line 1172
-    iget-object v0, p0, Lcom/android/settings/widget/ScreenView;->aqY:Lcom/android/settings/widget/o;
+    iget-object v0, p0, Lcom/android/settings_ext/widget/ScreenView;->aqY:Lcom/android/settings_ext/widget/o;
 
-    iget v2, p0, Lcom/android/settings/widget/ScreenView;->aqP:I
+    iget v2, p0, Lcom/android/settings_ext/widget/ScreenView;->aqP:I
 
-    invoke-virtual {v0, v2}, Lcom/android/settings/widget/o;->init(I)V
+    invoke-virtual {v0, v2}, Lcom/android/settings_ext/widget/o;->init(I)V
 
     goto/16 :goto_1
 
@@ -3839,9 +3839,9 @@
     .line 1462
     const/4 v0, 0x0
 
-    iput v0, p0, Lcom/android/settings/widget/ScreenView;->aql:I
+    iput v0, p0, Lcom/android/settings_ext/widget/ScreenView;->aql:I
 
-    iput v0, p0, Lcom/android/settings/widget/ScreenView;->aqH:I
+    iput v0, p0, Lcom/android/settings_ext/widget/ScreenView;->aqH:I
 
     .line 1463
     invoke-super {p0}, Landroid/view/ViewGroup;->removeAllViewsInLayout()V
@@ -3855,12 +3855,12 @@
 
     .prologue
     .line 1503
-    invoke-virtual {p0, p1}, Lcom/android/settings/widget/ScreenView;->indexOfChild(Landroid/view/View;)I
+    invoke-virtual {p0, p1}, Lcom/android/settings_ext/widget/ScreenView;->indexOfChild(Landroid/view/View;)I
 
     move-result v0
 
     .line 1504
-    invoke-virtual {p0}, Lcom/android/settings/widget/ScreenView;->getScreenCount()I
+    invoke-virtual {p0}, Lcom/android/settings_ext/widget/ScreenView;->getScreenCount()I
 
     move-result v1
 
@@ -3877,11 +3877,11 @@
 
     .line 1508
     :cond_0
-    iget v1, p0, Lcom/android/settings/widget/ScreenView;->aql:I
+    iget v1, p0, Lcom/android/settings_ext/widget/ScreenView;->aql:I
 
     add-int/lit8 v1, v1, -0x1
 
-    iput v1, p0, Lcom/android/settings/widget/ScreenView;->aql:I
+    iput v1, p0, Lcom/android/settings_ext/widget/ScreenView;->aql:I
 
     .line 1509
     invoke-super {p0, v0}, Landroid/view/ViewGroup;->removeViewAt(I)V
@@ -3965,23 +3965,23 @@
 
     .prologue
     .line 996
-    invoke-virtual {p0, p1}, Lcom/android/settings/widget/ScreenView;->indexOfChild(Landroid/view/View;)I
+    invoke-virtual {p0, p1}, Lcom/android/settings_ext/widget/ScreenView;->indexOfChild(Landroid/view/View;)I
 
     move-result v0
 
     .line 997
-    invoke-virtual {p0}, Lcom/android/settings/widget/ScreenView;->getScreenCount()I
+    invoke-virtual {p0}, Lcom/android/settings_ext/widget/ScreenView;->getScreenCount()I
 
     move-result v1
 
     if-ge v0, v1, :cond_2
 
     .line 998
-    iget v1, p0, Lcom/android/settings/widget/ScreenView;->mCurrentScreen:I
+    iget v1, p0, Lcom/android/settings_ext/widget/ScreenView;->mCurrentScreen:I
 
     if-ne v0, v1, :cond_0
 
-    iget-object v1, p0, Lcom/android/settings/widget/ScreenView;->mScroller:Landroid/widget/Scroller;
+    iget-object v1, p0, Lcom/android/settings_ext/widget/ScreenView;->mScroller:Landroid/widget/Scroller;
 
     invoke-virtual {v1}, Landroid/widget/Scroller;->isFinished()Z
 
@@ -3991,7 +3991,7 @@
 
     .line 999
     :cond_0
-    invoke-virtual {p0, v0}, Lcom/android/settings/widget/ScreenView;->snapToScreen(I)V
+    invoke-virtual {p0, v0}, Lcom/android/settings_ext/widget/ScreenView;->snapToScreen(I)V
 
     .line 1000
     const/4 v0, 0x1
@@ -4048,7 +4048,7 @@
     invoke-virtual {p1, v0}, Landroid/view/View;->setRotationY(F)V
 
     .line 1741
-    iget v0, p0, Lcom/android/settings/widget/ScreenView;->aqj:F
+    iget v0, p0, Lcom/android/settings_ext/widget/ScreenView;->aqj:F
 
     invoke-virtual {p1, v0}, Landroid/view/View;->setCameraDistance(F)V
 
@@ -4067,9 +4067,9 @@
 
     .prologue
     .line 838
-    iget v0, p0, Lcom/android/settings/widget/ScreenView;->aqD:I
+    iget v0, p0, Lcom/android/settings_ext/widget/ScreenView;->aqD:I
 
-    iget v1, p0, Lcom/android/settings/widget/ScreenView;->aqC:I
+    iget v1, p0, Lcom/android/settings_ext/widget/ScreenView;->aqC:I
 
     invoke-static {p1, v1}, Ljava/lang/Math;->min(II)I
 
@@ -4082,7 +4082,7 @@
     .line 839
     int-to-float v0, v0
 
-    iput v0, p0, Lcom/android/settings/widget/ScreenView;->aqR:F
+    iput v0, p0, Lcom/android/settings_ext/widget/ScreenView;->aqR:F
 
     .line 840
     invoke-static {}, Ljava/lang/System;->nanoTime()J
@@ -4095,10 +4095,10 @@
 
     div-float/2addr v0, v1
 
-    iput v0, p0, Lcom/android/settings/widget/ScreenView;->aqQ:F
+    iput v0, p0, Lcom/android/settings_ext/widget/ScreenView;->aqQ:F
 
     .line 841
-    iget v0, p0, Lcom/android/settings/widget/ScreenView;->aqR:F
+    iget v0, p0, Lcom/android/settings_ext/widget/ScreenView;->aqR:F
 
     float-to-int v0, v0
 
@@ -4113,12 +4113,12 @@
 
     .prologue
     .line 829
-    iget-boolean v0, p0, Lcom/android/settings/widget/ScreenView;->aqF:Z
+    iget-boolean v0, p0, Lcom/android/settings_ext/widget/ScreenView;->aqF:Z
 
     if-eqz v0, :cond_0
 
     .line 830
-    iget v0, p0, Lcom/android/settings/widget/ScreenView;->mVisibleRange:I
+    iget v0, p0, Lcom/android/settings_ext/widget/ScreenView;->mVisibleRange:I
 
     rem-int v0, p1, v0
 
@@ -4126,24 +4126,24 @@
 
     .line 832
     :cond_0
-    iget v0, p0, Lcom/android/settings/widget/ScreenView;->mWidthMeasureSpec:I
+    iget v0, p0, Lcom/android/settings_ext/widget/ScreenView;->mWidthMeasureSpec:I
 
-    iget v1, p0, Lcom/android/settings/widget/ScreenView;->mHeightMeasureSpec:I
+    iget v1, p0, Lcom/android/settings_ext/widget/ScreenView;->mHeightMeasureSpec:I
 
-    invoke-virtual {p0, v0, v1}, Lcom/android/settings/widget/ScreenView;->measure(II)V
+    invoke-virtual {p0, v0, v1}, Lcom/android/settings_ext/widget/ScreenView;->measure(II)V
 
     .line 833
-    iget v0, p0, Lcom/android/settings/widget/ScreenView;->mChildScreenWidth:I
+    iget v0, p0, Lcom/android/settings_ext/widget/ScreenView;->mChildScreenWidth:I
 
     mul-int/2addr v0, p1
 
-    iget v1, p0, Lcom/android/settings/widget/ScreenView;->aqA:I
+    iget v1, p0, Lcom/android/settings_ext/widget/ScreenView;->aqA:I
 
     sub-int/2addr v0, v1
 
     const/4 v1, 0x0
 
-    invoke-virtual {p0, v0, v1}, Lcom/android/settings/widget/ScreenView;->scrollTo(II)V
+    invoke-virtual {p0, v0, v1}, Lcom/android/settings_ext/widget/ScreenView;->scrollTo(II)V
 
     .line 834
     return-void
@@ -4156,12 +4156,12 @@
     const/4 v2, 0x0
 
     .line 1333
-    iget-boolean v0, p0, Lcom/android/settings/widget/ScreenView;->aqF:Z
+    iget-boolean v0, p0, Lcom/android/settings_ext/widget/ScreenView;->aqF:Z
 
     if-eqz v0, :cond_2
 
     .line 1334
-    invoke-virtual {p0}, Lcom/android/settings/widget/ScreenView;->getScreenCount()I
+    invoke-virtual {p0}, Lcom/android/settings_ext/widget/ScreenView;->getScreenCount()I
 
     move-result v0
 
@@ -4176,7 +4176,7 @@
     move-result v0
 
     .line 1336
-    iget v1, p0, Lcom/android/settings/widget/ScreenView;->mVisibleRange:I
+    iget v1, p0, Lcom/android/settings_ext/widget/ScreenView;->mVisibleRange:I
 
     rem-int v1, v0, v1
 
@@ -4184,15 +4184,15 @@
 
     .line 1341
     :goto_0
-    invoke-direct {p0, v0}, Lcom/android/settings/widget/ScreenView;->cO(I)V
+    invoke-direct {p0, v0}, Lcom/android/settings_ext/widget/ScreenView;->cO(I)V
 
     .line 1342
-    iget-boolean v0, p0, Lcom/android/settings/widget/ScreenView;->aqk:Z
+    iget-boolean v0, p0, Lcom/android/settings_ext/widget/ScreenView;->aqk:Z
 
     if-nez v0, :cond_1
 
     .line 1343
-    iget-object v0, p0, Lcom/android/settings/widget/ScreenView;->mScroller:Landroid/widget/Scroller;
+    iget-object v0, p0, Lcom/android/settings_ext/widget/ScreenView;->mScroller:Landroid/widget/Scroller;
 
     invoke-virtual {v0}, Landroid/widget/Scroller;->isFinished()Z
 
@@ -4201,18 +4201,18 @@
     if-nez v0, :cond_0
 
     .line 1344
-    iget-object v0, p0, Lcom/android/settings/widget/ScreenView;->mScroller:Landroid/widget/Scroller;
+    iget-object v0, p0, Lcom/android/settings_ext/widget/ScreenView;->mScroller:Landroid/widget/Scroller;
 
     invoke-virtual {v0}, Landroid/widget/Scroller;->abortAnimation()V
 
     .line 1346
     :cond_0
-    iget v0, p0, Lcom/android/settings/widget/ScreenView;->mCurrentScreen:I
+    iget v0, p0, Lcom/android/settings_ext/widget/ScreenView;->mCurrentScreen:I
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/widget/ScreenView;->scrollToScreen(I)V
+    invoke-virtual {p0, v0}, Lcom/android/settings_ext/widget/ScreenView;->scrollToScreen(I)V
 
     .line 1347
-    invoke-virtual {p0}, Lcom/android/settings/widget/ScreenView;->invalidate()V
+    invoke-virtual {p0}, Lcom/android/settings_ext/widget/ScreenView;->invalidate()V
 
     .line 1349
     :cond_1
@@ -4220,11 +4220,11 @@
 
     .line 1338
     :cond_2
-    invoke-virtual {p0}, Lcom/android/settings/widget/ScreenView;->getScreenCount()I
+    invoke-virtual {p0}, Lcom/android/settings_ext/widget/ScreenView;->getScreenCount()I
 
     move-result v0
 
-    iget v1, p0, Lcom/android/settings/widget/ScreenView;->mVisibleRange:I
+    iget v1, p0, Lcom/android/settings_ext/widget/ScreenView;->mVisibleRange:I
 
     sub-int/2addr v0, v1
 
@@ -4244,7 +4244,7 @@
 
     .prologue
     .line 403
-    iput p1, p0, Lcom/android/settings/widget/ScreenView;->aqO:I
+    iput p1, p0, Lcom/android/settings_ext/widget/ScreenView;->aqO:I
 
     .line 404
     return-void
@@ -4255,7 +4255,7 @@
 
     .prologue
     .line 1591
-    invoke-virtual {p0}, Lcom/android/settings/widget/ScreenView;->getScreenCount()I
+    invoke-virtual {p0}, Lcom/android/settings_ext/widget/ScreenView;->getScreenCount()I
 
     move-result v1
 
@@ -4266,7 +4266,7 @@
     if-ge v0, v1, :cond_0
 
     .line 1593
-    invoke-virtual {p0, v0}, Lcom/android/settings/widget/ScreenView;->getChildAt(I)Landroid/view/View;
+    invoke-virtual {p0, v0}, Lcom/android/settings_ext/widget/ScreenView;->getChildAt(I)Landroid/view/View;
 
     move-result-object v2
 
@@ -4287,10 +4287,10 @@
 
     .prologue
     .line 795
-    iput p1, p0, Lcom/android/settings/widget/ScreenView;->aqE:F
+    iput p1, p0, Lcom/android/settings_ext/widget/ScreenView;->aqE:F
 
     .line 796
-    invoke-direct {p0}, Lcom/android/settings/widget/ScreenView;->tB()V
+    invoke-direct {p0}, Lcom/android/settings_ext/widget/ScreenView;->tB()V
 
     .line 797
     return-void
@@ -4306,36 +4306,36 @@
     if-eqz p1, :cond_5
 
     .line 505
-    iget-object v1, p0, Lcom/android/settings/widget/ScreenView;->aqt:Lcom/android/settings/widget/t;
+    iget-object v1, p0, Lcom/android/settings_ext/widget/ScreenView;->aqt:Lcom/android/settings_ext/widget/t;
 
     if-nez v1, :cond_4
 
     .line 506
-    new-instance v1, Lcom/android/settings/widget/t;
+    new-instance v1, Lcom/android/settings_ext/widget/t;
 
-    invoke-virtual {p0}, Lcom/android/settings/widget/ScreenView;->getContext()Landroid/content/Context;
+    invoke-virtual {p0}, Lcom/android/settings_ext/widget/ScreenView;->getContext()Landroid/content/Context;
 
     move-result-object v2
 
-    invoke-direct {v1, p0, v2}, Lcom/android/settings/widget/t;-><init>(Lcom/android/settings/widget/ScreenView;Landroid/content/Context;)V
+    invoke-direct {v1, p0, v2}, Lcom/android/settings_ext/widget/t;-><init>(Lcom/android/settings_ext/widget/ScreenView;Landroid/content/Context;)V
 
-    iput-object v1, p0, Lcom/android/settings/widget/ScreenView;->aqt:Lcom/android/settings/widget/t;
+    iput-object v1, p0, Lcom/android/settings_ext/widget/ScreenView;->aqt:Lcom/android/settings_ext/widget/t;
 
     .line 507
-    iget-object v1, p0, Lcom/android/settings/widget/ScreenView;->aqt:Lcom/android/settings/widget/t;
+    iget-object v1, p0, Lcom/android/settings_ext/widget/ScreenView;->aqt:Lcom/android/settings_ext/widget/t;
 
     const/16 v2, 0x10
 
-    invoke-virtual {v1, v2}, Lcom/android/settings/widget/t;->setGravity(I)V
+    invoke-virtual {v1, v2}, Lcom/android/settings_ext/widget/t;->setGravity(I)V
 
     .line 508
-    iget-object v1, p0, Lcom/android/settings/widget/ScreenView;->aqt:Lcom/android/settings/widget/t;
+    iget-object v1, p0, Lcom/android/settings_ext/widget/ScreenView;->aqt:Lcom/android/settings_ext/widget/t;
 
-    invoke-virtual {v1, v0}, Lcom/android/settings/widget/t;->setAnimationCacheEnabled(Z)V
+    invoke-virtual {v1, v0}, Lcom/android/settings_ext/widget/t;->setAnimationCacheEnabled(Z)V
 
     .line 509
     :goto_0
-    invoke-virtual {p0}, Lcom/android/settings/widget/ScreenView;->getChildCount()I
+    invoke-virtual {p0}, Lcom/android/settings_ext/widget/ScreenView;->getChildCount()I
 
     move-result v1
 
@@ -4345,15 +4345,15 @@
     if-nez v0, :cond_1
 
     .line 511
-    iget-object v1, p0, Lcom/android/settings/widget/ScreenView;->aqt:Lcom/android/settings/widget/t;
+    iget-object v1, p0, Lcom/android/settings_ext/widget/ScreenView;->aqt:Lcom/android/settings_ext/widget/t;
 
-    invoke-direct {p0}, Lcom/android/settings/widget/ScreenView;->tC()Landroid/widget/ImageView;
+    invoke-direct {p0}, Lcom/android/settings_ext/widget/ScreenView;->tC()Landroid/widget/ImageView;
 
     move-result-object v2
 
-    sget-object v3, Lcom/android/settings/widget/ScreenView;->aqh:Landroid/widget/LinearLayout$LayoutParams;
+    sget-object v3, Lcom/android/settings_ext/widget/ScreenView;->aqh:Landroid/widget/LinearLayout$LayoutParams;
 
-    invoke-virtual {v1, v2, v3}, Lcom/android/settings/widget/t;->addView(Landroid/view/View;Landroid/view/ViewGroup$LayoutParams;)V
+    invoke-virtual {v1, v2, v3}, Lcom/android/settings_ext/widget/t;->addView(Landroid/view/View;Landroid/view/ViewGroup$LayoutParams;)V
 
     .line 509
     :cond_0
@@ -4369,23 +4369,23 @@
     if-ne v0, v1, :cond_0
 
     .line 513
-    iget-object v1, p0, Lcom/android/settings/widget/ScreenView;->aqt:Lcom/android/settings/widget/t;
+    iget-object v1, p0, Lcom/android/settings_ext/widget/ScreenView;->aqt:Lcom/android/settings_ext/widget/t;
 
-    invoke-direct {p0}, Lcom/android/settings/widget/ScreenView;->tD()Landroid/widget/ImageView;
+    invoke-direct {p0}, Lcom/android/settings_ext/widget/ScreenView;->tD()Landroid/widget/ImageView;
 
     move-result-object v2
 
-    sget-object v3, Lcom/android/settings/widget/ScreenView;->aqh:Landroid/widget/LinearLayout$LayoutParams;
+    sget-object v3, Lcom/android/settings_ext/widget/ScreenView;->aqh:Landroid/widget/LinearLayout$LayoutParams;
 
-    invoke-virtual {v1, v2, v3}, Lcom/android/settings/widget/t;->addView(Landroid/view/View;Landroid/view/ViewGroup$LayoutParams;)V
+    invoke-virtual {v1, v2, v3}, Lcom/android/settings_ext/widget/t;->addView(Landroid/view/View;Landroid/view/ViewGroup$LayoutParams;)V
 
     goto :goto_1
 
     .line 516
     :cond_2
-    iget-object v0, p0, Lcom/android/settings/widget/ScreenView;->aqt:Lcom/android/settings/widget/t;
+    iget-object v0, p0, Lcom/android/settings_ext/widget/ScreenView;->aqt:Lcom/android/settings_ext/widget/t;
 
-    invoke-virtual {p0, v0, p1}, Lcom/android/settings/widget/ScreenView;->addIndicator(Landroid/view/View;Landroid/widget/FrameLayout$LayoutParams;)V
+    invoke-virtual {p0, v0, p1}, Lcom/android/settings_ext/widget/ScreenView;->addIndicator(Landroid/view/View;Landroid/widget/FrameLayout$LayoutParams;)V
 
     .line 524
     :cond_3
@@ -4394,27 +4394,27 @@
 
     .line 518
     :cond_4
-    iget-object v0, p0, Lcom/android/settings/widget/ScreenView;->aqt:Lcom/android/settings/widget/t;
+    iget-object v0, p0, Lcom/android/settings_ext/widget/ScreenView;->aqt:Lcom/android/settings_ext/widget/t;
 
-    invoke-virtual {v0, p1}, Lcom/android/settings/widget/t;->setLayoutParams(Landroid/view/ViewGroup$LayoutParams;)V
+    invoke-virtual {v0, p1}, Lcom/android/settings_ext/widget/t;->setLayoutParams(Landroid/view/ViewGroup$LayoutParams;)V
 
     goto :goto_2
 
     .line 520
     :cond_5
-    iget-object v0, p0, Lcom/android/settings/widget/ScreenView;->aqt:Lcom/android/settings/widget/t;
+    iget-object v0, p0, Lcom/android/settings_ext/widget/ScreenView;->aqt:Lcom/android/settings_ext/widget/t;
 
     if-eqz v0, :cond_3
 
     .line 521
-    iget-object v0, p0, Lcom/android/settings/widget/ScreenView;->aqt:Lcom/android/settings/widget/t;
+    iget-object v0, p0, Lcom/android/settings_ext/widget/ScreenView;->aqt:Lcom/android/settings_ext/widget/t;
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/widget/ScreenView;->removeIndicator(Landroid/view/View;)V
+    invoke-virtual {p0, v0}, Lcom/android/settings_ext/widget/ScreenView;->removeIndicator(Landroid/view/View;)V
 
     .line 522
     const/4 v0, 0x0
 
-    iput-object v0, p0, Lcom/android/settings/widget/ScreenView;->aqt:Lcom/android/settings/widget/t;
+    iput-object v0, p0, Lcom/android/settings_ext/widget/ScreenView;->aqt:Lcom/android/settings_ext/widget/t;
 
     goto :goto_2
 .end method
@@ -4427,7 +4427,7 @@
     if-nez p1, :cond_0
 
     .line 887
-    invoke-direct {p0}, Lcom/android/settings/widget/ScreenView;->ty()V
+    invoke-direct {p0}, Lcom/android/settings_ext/widget/ScreenView;->ty()V
 
     .line 889
     :cond_0
@@ -4446,18 +4446,18 @@
     .line 1198
     if-ne p2, v1, :cond_0
 
-    iget v0, p0, Lcom/android/settings/widget/ScreenView;->mCurrentScreen:I
+    iget v0, p0, Lcom/android/settings_ext/widget/ScreenView;->mCurrentScreen:I
 
     if-lez v0, :cond_0
 
     .line 1199
-    iget v0, p0, Lcom/android/settings/widget/ScreenView;->mCurrentScreen:I
+    iget v0, p0, Lcom/android/settings_ext/widget/ScreenView;->mCurrentScreen:I
 
-    iget v2, p0, Lcom/android/settings/widget/ScreenView;->mVisibleRange:I
+    iget v2, p0, Lcom/android/settings_ext/widget/ScreenView;->mVisibleRange:I
 
     sub-int/2addr v0, v2
 
-    invoke-virtual {p0, v0, p1, v1}, Lcom/android/settings/widget/ScreenView;->snapToScreen(IIZ)V
+    invoke-virtual {p0, v0, p1, v1}, Lcom/android/settings_ext/widget/ScreenView;->snapToScreen(IIZ)V
 
     .line 1212
     :goto_0
@@ -4469,9 +4469,9 @@
 
     if-ne p2, v0, :cond_1
 
-    iget v0, p0, Lcom/android/settings/widget/ScreenView;->mCurrentScreen:I
+    iget v0, p0, Lcom/android/settings_ext/widget/ScreenView;->mCurrentScreen:I
 
-    invoke-virtual {p0}, Lcom/android/settings/widget/ScreenView;->getScreenCount()I
+    invoke-virtual {p0}, Lcom/android/settings_ext/widget/ScreenView;->getScreenCount()I
 
     move-result v2
 
@@ -4480,13 +4480,13 @@
     if-ge v0, v2, :cond_1
 
     .line 1202
-    iget v0, p0, Lcom/android/settings/widget/ScreenView;->mCurrentScreen:I
+    iget v0, p0, Lcom/android/settings_ext/widget/ScreenView;->mCurrentScreen:I
 
-    iget v2, p0, Lcom/android/settings/widget/ScreenView;->mVisibleRange:I
+    iget v2, p0, Lcom/android/settings_ext/widget/ScreenView;->mVisibleRange:I
 
     add-int/2addr v0, v2
 
-    invoke-virtual {p0, v0, p1, v1}, Lcom/android/settings/widget/ScreenView;->snapToScreen(IIZ)V
+    invoke-virtual {p0, v0, p1, v1}, Lcom/android/settings_ext/widget/ScreenView;->snapToScreen(IIZ)V
 
     goto :goto_0
 
@@ -4497,27 +4497,27 @@
     if-ne p2, v0, :cond_2
 
     .line 1204
-    iget v0, p0, Lcom/android/settings/widget/ScreenView;->mCurrentScreen:I
+    iget v0, p0, Lcom/android/settings_ext/widget/ScreenView;->mCurrentScreen:I
 
-    invoke-virtual {p0, v0, p1, v1}, Lcom/android/settings/widget/ScreenView;->snapToScreen(IIZ)V
+    invoke-virtual {p0, v0, p1, v1}, Lcom/android/settings_ext/widget/ScreenView;->snapToScreen(IIZ)V
 
     goto :goto_0
 
     .line 1206
     :cond_2
-    iget v2, p0, Lcom/android/settings/widget/ScreenView;->mChildScreenWidth:I
+    iget v2, p0, Lcom/android/settings_ext/widget/ScreenView;->mChildScreenWidth:I
 
-    iget-boolean v0, p0, Lcom/android/settings/widget/ScreenView;->aqF:Z
+    iget-boolean v0, p0, Lcom/android/settings_ext/widget/ScreenView;->aqF:Z
 
     if-eqz v0, :cond_3
 
-    iget v0, p0, Lcom/android/settings/widget/ScreenView;->mVisibleRange:I
+    iget v0, p0, Lcom/android/settings_ext/widget/ScreenView;->mVisibleRange:I
 
     :goto_1
     mul-int/2addr v0, v2
 
     .line 1208
-    invoke-virtual {p0}, Lcom/android/settings/widget/ScreenView;->getScrollX()I
+    invoke-virtual {p0}, Lcom/android/settings_ext/widget/ScreenView;->getScrollX()I
 
     move-result v2
 
@@ -4525,14 +4525,14 @@
 
     add-int/2addr v0, v2
 
-    iget v2, p0, Lcom/android/settings/widget/ScreenView;->mChildScreenWidth:I
+    iget v2, p0, Lcom/android/settings_ext/widget/ScreenView;->mChildScreenWidth:I
 
     div-int/2addr v0, v2
 
     .line 1210
     const/4 v2, 0x0
 
-    invoke-virtual {p0, v0, v2, v1}, Lcom/android/settings/widget/ScreenView;->snapToScreen(IIZ)V
+    invoke-virtual {p0, v0, v2, v1}, Lcom/android/settings_ext/widget/ScreenView;->snapToScreen(IIZ)V
 
     goto :goto_0
 
@@ -4550,7 +4550,7 @@
     const/4 v0, 0x0
 
     .line 1220
-    invoke-virtual {p0, p1, v0, v0}, Lcom/android/settings/widget/ScreenView;->snapToScreen(IIZ)V
+    invoke-virtual {p0, p1, v0, v0}, Lcom/android/settings_ext/widget/ScreenView;->snapToScreen(IIZ)V
 
     .line 1221
     return-void
@@ -4563,7 +4563,7 @@
     .line 1296
     const/4 v0, 0x0
 
-    invoke-virtual {p0, p1, p2, p3, v0}, Lcom/android/settings/widget/ScreenView;->a(IIZLcom/android/settings/widget/v;)V
+    invoke-virtual {p0, p1, p2, p3, v0}, Lcom/android/settings_ext/widget/ScreenView;->a(IIZLcom/android/settings_ext/widget/v;)V
 
     .line 1297
     return-void

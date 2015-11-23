@@ -1,19 +1,19 @@
-.class Lcom/android/settings/ga;
+.class Lcom/android/settings_ext/ga;
 .super Landroid/content/BroadcastReceiver;
 .source "RingerVolumePreference.java"
 
 
 # instance fields
-.field final synthetic wo:Lcom/android/settings/RingerVolumePreference;
+.field final synthetic wo:Lcom/android/settings_ext/RingerVolumePreference;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/RingerVolumePreference;)V
+.method constructor <init>(Lcom/android/settings_ext/RingerVolumePreference;)V
     .locals 0
 
     .prologue
     .line 208
-    iput-object p1, p0, Lcom/android/settings/ga;->wo:Lcom/android/settings/RingerVolumePreference;
+    iput-object p1, p0, Lcom/android/settings_ext/ga;->wo:Lcom/android/settings_ext/RingerVolumePreference;
 
     invoke-direct {p0}, Landroid/content/BroadcastReceiver;-><init>()V
 
@@ -41,15 +41,15 @@
     if-eqz v0, :cond_0
 
     .line 212
-    iget-object v0, p0, Lcom/android/settings/ga;->wo:Lcom/android/settings/RingerVolumePreference;
+    iget-object v0, p0, Lcom/android/settings_ext/ga;->wo:Lcom/android/settings_ext/RingerVolumePreference;
 
-    invoke-static {v0}, Lcom/android/settings/RingerVolumePreference;->a(Lcom/android/settings/RingerVolumePreference;)Landroid/os/Handler;
+    invoke-static {v0}, Lcom/android/settings_ext/RingerVolumePreference;->a(Lcom/android/settings_ext/RingerVolumePreference;)Landroid/os/Handler;
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/android/settings/ga;->wo:Lcom/android/settings/RingerVolumePreference;
+    iget-object v1, p0, Lcom/android/settings_ext/ga;->wo:Lcom/android/settings_ext/RingerVolumePreference;
 
-    invoke-static {v1}, Lcom/android/settings/RingerVolumePreference;->a(Lcom/android/settings/RingerVolumePreference;)Landroid/os/Handler;
+    invoke-static {v1}, Lcom/android/settings_ext/RingerVolumePreference;->a(Lcom/android/settings_ext/RingerVolumePreference;)Landroid/os/Handler;
 
     move-result-object v1
 

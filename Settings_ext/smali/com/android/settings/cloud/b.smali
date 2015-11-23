@@ -1,4 +1,4 @@
-.class public Lcom/android/settings/cloud/b;
+.class public Lcom/android/settings_ext/cloud/b;
 .super Ljava/lang/Object;
 .source "Constants.java"
 
@@ -91,15 +91,15 @@
     .line 355
     const-string v0, "http://staging.appapi.n.xiaomi.com/apm/"
 
-    sput-object v0, Lcom/android/settings/cloud/b;->PG:Ljava/lang/String;
+    sput-object v0, Lcom/android/settings_ext/cloud/b;->PG:Ljava/lang/String;
 
     .line 356
     const-string v0, "https://staging.api.sec.miui.com/"
 
-    sput-object v0, Lcom/android/settings/cloud/b;->PB:Ljava/lang/String;
+    sput-object v0, Lcom/android/settings_ext/cloud/b;->PB:Ljava/lang/String;
 
     .line 357
-    invoke-static {}, Lcom/android/settings/cloud/b;->nB()V
+    invoke-static {}, Lcom/android/settings_ext/cloud/b;->nB()V
 
     .line 359
     return-void
@@ -114,7 +114,7 @@
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
 
-    sget-object v1, Lcom/android/settings/cloud/b;->PG:Ljava/lang/String;
+    sget-object v1, Lcom/android/settings_ext/cloud/b;->PG:Ljava/lang/String;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -130,14 +130,14 @@
 
     move-result-object v0
 
-    sput-object v0, Lcom/android/settings/cloud/b;->PU:Ljava/lang/String;
+    sput-object v0, Lcom/android/settings_ext/cloud/b;->PU:Ljava/lang/String;
 
     .line 370
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
 
-    sget-object v1, Lcom/android/settings/cloud/b;->PG:Ljava/lang/String;
+    sget-object v1, Lcom/android/settings_ext/cloud/b;->PG:Ljava/lang/String;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -153,14 +153,14 @@
 
     move-result-object v0
 
-    sput-object v0, Lcom/android/settings/cloud/b;->PT:Ljava/lang/String;
+    sput-object v0, Lcom/android/settings_ext/cloud/b;->PT:Ljava/lang/String;
 
     .line 372
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
 
-    sget-object v1, Lcom/android/settings/cloud/b;->PG:Ljava/lang/String;
+    sget-object v1, Lcom/android/settings_ext/cloud/b;->PG:Ljava/lang/String;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -176,14 +176,14 @@
 
     move-result-object v0
 
-    sput-object v0, Lcom/android/settings/cloud/b;->PR:Ljava/lang/String;
+    sput-object v0, Lcom/android/settings_ext/cloud/b;->PR:Ljava/lang/String;
 
     .line 374
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
 
-    sget-object v1, Lcom/android/settings/cloud/b;->PG:Ljava/lang/String;
+    sget-object v1, Lcom/android/settings_ext/cloud/b;->PG:Ljava/lang/String;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -199,14 +199,14 @@
 
     move-result-object v0
 
-    sput-object v0, Lcom/android/settings/cloud/b;->PW:Ljava/lang/String;
+    sput-object v0, Lcom/android/settings_ext/cloud/b;->PW:Ljava/lang/String;
 
     .line 375
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
 
-    sget-object v1, Lcom/android/settings/cloud/b;->PB:Ljava/lang/String;
+    sget-object v1, Lcom/android/settings_ext/cloud/b;->PB:Ljava/lang/String;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -222,14 +222,14 @@
 
     move-result-object v0
 
-    sput-object v0, Lcom/android/settings/cloud/b;->PE:Ljava/lang/String;
+    sput-object v0, Lcom/android/settings_ext/cloud/b;->PE:Ljava/lang/String;
 
     .line 376
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
 
-    sget-object v1, Lcom/android/settings/cloud/b;->PB:Ljava/lang/String;
+    sget-object v1, Lcom/android/settings_ext/cloud/b;->PB:Ljava/lang/String;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -245,14 +245,14 @@
 
     move-result-object v0
 
-    sput-object v0, Lcom/android/settings/cloud/b;->PF:Ljava/lang/String;
+    sput-object v0, Lcom/android/settings_ext/cloud/b;->PF:Ljava/lang/String;
 
     .line 378
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
 
-    sget-object v1, Lcom/android/settings/cloud/b;->PB:Ljava/lang/String;
+    sget-object v1, Lcom/android/settings_ext/cloud/b;->PB:Ljava/lang/String;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -268,14 +268,14 @@
 
     move-result-object v0
 
-    sput-object v0, Lcom/android/settings/cloud/b;->PC:Ljava/lang/String;
+    sput-object v0, Lcom/android/settings_ext/cloud/b;->PC:Ljava/lang/String;
 
     .line 379
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
 
-    sget-object v1, Lcom/android/settings/cloud/b;->PB:Ljava/lang/String;
+    sget-object v1, Lcom/android/settings_ext/cloud/b;->PB:Ljava/lang/String;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -291,14 +291,14 @@
 
     move-result-object v0
 
-    sput-object v0, Lcom/android/settings/cloud/b;->PD:Ljava/lang/String;
+    sput-object v0, Lcom/android/settings_ext/cloud/b;->PD:Ljava/lang/String;
 
     .line 380
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
 
-    sget-object v1, Lcom/android/settings/cloud/b;->PG:Ljava/lang/String;
+    sget-object v1, Lcom/android/settings_ext/cloud/b;->PG:Ljava/lang/String;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -314,14 +314,14 @@
 
     move-result-object v0
 
-    sput-object v0, Lcom/android/settings/cloud/b;->PP:Ljava/lang/String;
+    sput-object v0, Lcom/android/settings_ext/cloud/b;->PP:Ljava/lang/String;
 
     .line 381
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
 
-    sget-object v1, Lcom/android/settings/cloud/b;->PG:Ljava/lang/String;
+    sget-object v1, Lcom/android/settings_ext/cloud/b;->PG:Ljava/lang/String;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -337,14 +337,14 @@
 
     move-result-object v0
 
-    sput-object v0, Lcom/android/settings/cloud/b;->PS:Ljava/lang/String;
+    sput-object v0, Lcom/android/settings_ext/cloud/b;->PS:Ljava/lang/String;
 
     .line 383
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
 
-    sget-object v1, Lcom/android/settings/cloud/b;->PG:Ljava/lang/String;
+    sget-object v1, Lcom/android/settings_ext/cloud/b;->PG:Ljava/lang/String;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -360,14 +360,14 @@
 
     move-result-object v0
 
-    sput-object v0, Lcom/android/settings/cloud/b;->PL:Ljava/lang/String;
+    sput-object v0, Lcom/android/settings_ext/cloud/b;->PL:Ljava/lang/String;
 
     .line 384
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
 
-    sget-object v1, Lcom/android/settings/cloud/b;->PG:Ljava/lang/String;
+    sget-object v1, Lcom/android/settings_ext/cloud/b;->PG:Ljava/lang/String;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -383,14 +383,14 @@
 
     move-result-object v0
 
-    sput-object v0, Lcom/android/settings/cloud/b;->PM:Ljava/lang/String;
+    sput-object v0, Lcom/android/settings_ext/cloud/b;->PM:Ljava/lang/String;
 
     .line 386
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
 
-    sget-object v1, Lcom/android/settings/cloud/b;->PG:Ljava/lang/String;
+    sget-object v1, Lcom/android/settings_ext/cloud/b;->PG:Ljava/lang/String;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -406,14 +406,14 @@
 
     move-result-object v0
 
-    sput-object v0, Lcom/android/settings/cloud/b;->PQ:Ljava/lang/String;
+    sput-object v0, Lcom/android/settings_ext/cloud/b;->PQ:Ljava/lang/String;
 
     .line 388
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
 
-    sget-object v1, Lcom/android/settings/cloud/b;->PG:Ljava/lang/String;
+    sget-object v1, Lcom/android/settings_ext/cloud/b;->PG:Ljava/lang/String;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -429,14 +429,14 @@
 
     move-result-object v0
 
-    sput-object v0, Lcom/android/settings/cloud/b;->Qa:Ljava/lang/String;
+    sput-object v0, Lcom/android/settings_ext/cloud/b;->Qa:Ljava/lang/String;
 
     .line 389
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
 
-    sget-object v1, Lcom/android/settings/cloud/b;->PG:Ljava/lang/String;
+    sget-object v1, Lcom/android/settings_ext/cloud/b;->PG:Ljava/lang/String;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -452,14 +452,14 @@
 
     move-result-object v0
 
-    sput-object v0, Lcom/android/settings/cloud/b;->Qb:Ljava/lang/String;
+    sput-object v0, Lcom/android/settings_ext/cloud/b;->Qb:Ljava/lang/String;
 
     .line 390
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
 
-    sget-object v1, Lcom/android/settings/cloud/b;->PG:Ljava/lang/String;
+    sget-object v1, Lcom/android/settings_ext/cloud/b;->PG:Ljava/lang/String;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -475,14 +475,14 @@
 
     move-result-object v0
 
-    sput-object v0, Lcom/android/settings/cloud/b;->PX:Ljava/lang/String;
+    sput-object v0, Lcom/android/settings_ext/cloud/b;->PX:Ljava/lang/String;
 
     .line 391
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
 
-    sget-object v1, Lcom/android/settings/cloud/b;->PG:Ljava/lang/String;
+    sget-object v1, Lcom/android/settings_ext/cloud/b;->PG:Ljava/lang/String;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -498,14 +498,14 @@
 
     move-result-object v0
 
-    sput-object v0, Lcom/android/settings/cloud/b;->Qc:Ljava/lang/String;
+    sput-object v0, Lcom/android/settings_ext/cloud/b;->Qc:Ljava/lang/String;
 
     .line 393
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
 
-    sget-object v1, Lcom/android/settings/cloud/b;->PG:Ljava/lang/String;
+    sget-object v1, Lcom/android/settings_ext/cloud/b;->PG:Ljava/lang/String;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -521,14 +521,14 @@
 
     move-result-object v0
 
-    sput-object v0, Lcom/android/settings/cloud/b;->PI:Ljava/lang/String;
+    sput-object v0, Lcom/android/settings_ext/cloud/b;->PI:Ljava/lang/String;
 
     .line 394
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
 
-    sget-object v1, Lcom/android/settings/cloud/b;->PG:Ljava/lang/String;
+    sget-object v1, Lcom/android/settings_ext/cloud/b;->PG:Ljava/lang/String;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -544,14 +544,14 @@
 
     move-result-object v0
 
-    sput-object v0, Lcom/android/settings/cloud/b;->PH:Ljava/lang/String;
+    sput-object v0, Lcom/android/settings_ext/cloud/b;->PH:Ljava/lang/String;
 
     .line 395
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
 
-    sget-object v1, Lcom/android/settings/cloud/b;->PG:Ljava/lang/String;
+    sget-object v1, Lcom/android/settings_ext/cloud/b;->PG:Ljava/lang/String;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -567,14 +567,14 @@
 
     move-result-object v0
 
-    sput-object v0, Lcom/android/settings/cloud/b;->PJ:Ljava/lang/String;
+    sput-object v0, Lcom/android/settings_ext/cloud/b;->PJ:Ljava/lang/String;
 
     .line 396
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
 
-    sget-object v1, Lcom/android/settings/cloud/b;->PG:Ljava/lang/String;
+    sget-object v1, Lcom/android/settings_ext/cloud/b;->PG:Ljava/lang/String;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -590,14 +590,14 @@
 
     move-result-object v0
 
-    sput-object v0, Lcom/android/settings/cloud/b;->PK:Ljava/lang/String;
+    sput-object v0, Lcom/android/settings_ext/cloud/b;->PK:Ljava/lang/String;
 
     .line 398
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
 
-    sget-object v1, Lcom/android/settings/cloud/b;->PG:Ljava/lang/String;
+    sget-object v1, Lcom/android/settings_ext/cloud/b;->PG:Ljava/lang/String;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -613,14 +613,14 @@
 
     move-result-object v0
 
-    sput-object v0, Lcom/android/settings/cloud/b;->PY:Ljava/lang/String;
+    sput-object v0, Lcom/android/settings_ext/cloud/b;->PY:Ljava/lang/String;
 
     .line 400
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
 
-    sget-object v1, Lcom/android/settings/cloud/b;->PG:Ljava/lang/String;
+    sget-object v1, Lcom/android/settings_ext/cloud/b;->PG:Ljava/lang/String;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -636,14 +636,14 @@
 
     move-result-object v0
 
-    sput-object v0, Lcom/android/settings/cloud/b;->PO:Ljava/lang/String;
+    sput-object v0, Lcom/android/settings_ext/cloud/b;->PO:Ljava/lang/String;
 
     .line 401
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
 
-    sget-object v1, Lcom/android/settings/cloud/b;->PG:Ljava/lang/String;
+    sget-object v1, Lcom/android/settings_ext/cloud/b;->PG:Ljava/lang/String;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -659,14 +659,14 @@
 
     move-result-object v0
 
-    sput-object v0, Lcom/android/settings/cloud/b;->Qi:Ljava/lang/String;
+    sput-object v0, Lcom/android/settings_ext/cloud/b;->Qi:Ljava/lang/String;
 
     .line 402
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
 
-    sget-object v1, Lcom/android/settings/cloud/b;->PG:Ljava/lang/String;
+    sget-object v1, Lcom/android/settings_ext/cloud/b;->PG:Ljava/lang/String;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -682,14 +682,14 @@
 
     move-result-object v0
 
-    sput-object v0, Lcom/android/settings/cloud/b;->Qj:Ljava/lang/String;
+    sput-object v0, Lcom/android/settings_ext/cloud/b;->Qj:Ljava/lang/String;
 
     .line 403
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
 
-    sget-object v1, Lcom/android/settings/cloud/b;->PG:Ljava/lang/String;
+    sget-object v1, Lcom/android/settings_ext/cloud/b;->PG:Ljava/lang/String;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -705,14 +705,14 @@
 
     move-result-object v0
 
-    sput-object v0, Lcom/android/settings/cloud/b;->Qk:Ljava/lang/String;
+    sput-object v0, Lcom/android/settings_ext/cloud/b;->Qk:Ljava/lang/String;
 
     .line 404
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
 
-    sget-object v1, Lcom/android/settings/cloud/b;->PG:Ljava/lang/String;
+    sget-object v1, Lcom/android/settings_ext/cloud/b;->PG:Ljava/lang/String;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -728,14 +728,14 @@
 
     move-result-object v0
 
-    sput-object v0, Lcom/android/settings/cloud/b;->Qh:Ljava/lang/String;
+    sput-object v0, Lcom/android/settings_ext/cloud/b;->Qh:Ljava/lang/String;
 
     .line 405
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
 
-    sget-object v1, Lcom/android/settings/cloud/b;->PG:Ljava/lang/String;
+    sget-object v1, Lcom/android/settings_ext/cloud/b;->PG:Ljava/lang/String;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -751,14 +751,14 @@
 
     move-result-object v0
 
-    sput-object v0, Lcom/android/settings/cloud/b;->PN:Ljava/lang/String;
+    sput-object v0, Lcom/android/settings_ext/cloud/b;->PN:Ljava/lang/String;
 
     .line 407
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
 
-    sget-object v1, Lcom/android/settings/cloud/b;->PG:Ljava/lang/String;
+    sget-object v1, Lcom/android/settings_ext/cloud/b;->PG:Ljava/lang/String;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -774,14 +774,14 @@
 
     move-result-object v0
 
-    sput-object v0, Lcom/android/settings/cloud/b;->PZ:Ljava/lang/String;
+    sput-object v0, Lcom/android/settings_ext/cloud/b;->PZ:Ljava/lang/String;
 
     .line 409
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
 
-    sget-object v1, Lcom/android/settings/cloud/b;->PG:Ljava/lang/String;
+    sget-object v1, Lcom/android/settings_ext/cloud/b;->PG:Ljava/lang/String;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -797,14 +797,14 @@
 
     move-result-object v0
 
-    sput-object v0, Lcom/android/settings/cloud/b;->Qd:Ljava/lang/String;
+    sput-object v0, Lcom/android/settings_ext/cloud/b;->Qd:Ljava/lang/String;
 
     .line 410
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
 
-    sget-object v1, Lcom/android/settings/cloud/b;->PG:Ljava/lang/String;
+    sget-object v1, Lcom/android/settings_ext/cloud/b;->PG:Ljava/lang/String;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -820,14 +820,14 @@
 
     move-result-object v0
 
-    sput-object v0, Lcom/android/settings/cloud/b;->Qf:Ljava/lang/String;
+    sput-object v0, Lcom/android/settings_ext/cloud/b;->Qf:Ljava/lang/String;
 
     .line 411
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
 
-    sget-object v1, Lcom/android/settings/cloud/b;->PG:Ljava/lang/String;
+    sget-object v1, Lcom/android/settings_ext/cloud/b;->PG:Ljava/lang/String;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -843,14 +843,14 @@
 
     move-result-object v0
 
-    sput-object v0, Lcom/android/settings/cloud/b;->Qe:Ljava/lang/String;
+    sput-object v0, Lcom/android/settings_ext/cloud/b;->Qe:Ljava/lang/String;
 
     .line 413
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
 
-    sget-object v1, Lcom/android/settings/cloud/b;->PG:Ljava/lang/String;
+    sget-object v1, Lcom/android/settings_ext/cloud/b;->PG:Ljava/lang/String;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -866,14 +866,14 @@
 
     move-result-object v0
 
-    sput-object v0, Lcom/android/settings/cloud/b;->Qm:Ljava/lang/String;
+    sput-object v0, Lcom/android/settings_ext/cloud/b;->Qm:Ljava/lang/String;
 
     .line 414
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
 
-    sget-object v1, Lcom/android/settings/cloud/b;->PG:Ljava/lang/String;
+    sget-object v1, Lcom/android/settings_ext/cloud/b;->PG:Ljava/lang/String;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -889,14 +889,14 @@
 
     move-result-object v0
 
-    sput-object v0, Lcom/android/settings/cloud/b;->Qn:Ljava/lang/String;
+    sput-object v0, Lcom/android/settings_ext/cloud/b;->Qn:Ljava/lang/String;
 
     .line 415
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
 
-    sget-object v1, Lcom/android/settings/cloud/b;->PG:Ljava/lang/String;
+    sget-object v1, Lcom/android/settings_ext/cloud/b;->PG:Ljava/lang/String;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -912,14 +912,14 @@
 
     move-result-object v0
 
-    sput-object v0, Lcom/android/settings/cloud/b;->Ql:Ljava/lang/String;
+    sput-object v0, Lcom/android/settings_ext/cloud/b;->Ql:Ljava/lang/String;
 
     .line 417
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
 
-    sget-object v1, Lcom/android/settings/cloud/b;->PG:Ljava/lang/String;
+    sget-object v1, Lcom/android/settings_ext/cloud/b;->PG:Ljava/lang/String;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -935,14 +935,14 @@
 
     move-result-object v0
 
-    sput-object v0, Lcom/android/settings/cloud/b;->Qg:Ljava/lang/String;
+    sput-object v0, Lcom/android/settings_ext/cloud/b;->Qg:Ljava/lang/String;
 
     .line 418
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
 
-    sget-object v1, Lcom/android/settings/cloud/b;->PG:Ljava/lang/String;
+    sget-object v1, Lcom/android/settings_ext/cloud/b;->PG:Ljava/lang/String;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -958,7 +958,7 @@
 
     move-result-object v0
 
-    sput-object v0, Lcom/android/settings/cloud/b;->PV:Ljava/lang/String;
+    sput-object v0, Lcom/android/settings_ext/cloud/b;->PV:Ljava/lang/String;
 
     .line 419
     return-void
@@ -982,7 +982,7 @@
     if-eqz v0, :cond_0
 
     .line 341
-    invoke-static {}, Lcom/android/settings/cloud/b;->nA()V
+    invoke-static {}, Lcom/android/settings_ext/cloud/b;->nA()V
 
     .line 345
     :goto_0
@@ -990,7 +990,7 @@
 
     .line 343
     :cond_0
-    invoke-static {}, Lcom/android/settings/cloud/b;->nz()V
+    invoke-static {}, Lcom/android/settings_ext/cloud/b;->nz()V
 
     goto :goto_0
 .end method
@@ -1002,15 +1002,15 @@
     .line 348
     const-string v0, "http://market.xiaomi.com/apm/"
 
-    sput-object v0, Lcom/android/settings/cloud/b;->PG:Ljava/lang/String;
+    sput-object v0, Lcom/android/settings_ext/cloud/b;->PG:Ljava/lang/String;
 
     .line 349
     const-string v0, "https://api.sec.miui.com/"
 
-    sput-object v0, Lcom/android/settings/cloud/b;->PB:Ljava/lang/String;
+    sput-object v0, Lcom/android/settings_ext/cloud/b;->PB:Ljava/lang/String;
 
     .line 350
-    invoke-static {}, Lcom/android/settings/cloud/b;->nB()V
+    invoke-static {}, Lcom/android/settings_ext/cloud/b;->nB()V
 
     .line 352
     return-void

@@ -1,25 +1,25 @@
-.class public final Lcom/android/settings/bluetooth/DockService;
+.class public final Lcom/android/settings_ext/bluetooth/DockService;
 .super Landroid/app/Service;
 .source "DockService.java"
 
 # interfaces
-.implements Lcom/android/settings/bluetooth/LocalBluetoothProfileManager$ServiceListener;
+.implements Lcom/android/settings_ext/bluetooth/LocalBluetoothProfileManager$ServiceListener;
 
 
 # instance fields
-.field private Mh:Lcom/android/settings/bluetooth/LocalBluetoothAdapter;
+.field private Mh:Lcom/android/settings_ext/bluetooth/LocalBluetoothAdapter;
 
-.field private Mi:Lcom/android/settings/bluetooth/CachedBluetoothDeviceManager;
+.field private Mi:Lcom/android/settings_ext/bluetooth/CachedBluetoothDeviceManager;
 
-.field private Mk:Lcom/android/settings/bluetooth/LocalBluetoothProfileManager;
+.field private Mk:Lcom/android/settings_ext/bluetooth/LocalBluetoothProfileManager;
 
 .field private volatile Og:Landroid/os/Looper;
 
-.field private volatile Oh:Lcom/android/settings/bluetooth/DockService$ServiceHandler;
+.field private volatile Oh:Lcom/android/settings_ext/bluetooth/DockService$ServiceHandler;
 
 .field private Oi:Ljava/lang/Runnable;
 
-.field private Oj:[Lcom/android/settings/bluetooth/LocalBluetoothProfile;
+.field private Oj:[Lcom/android/settings_ext/bluetooth/LocalBluetoothProfile;
 
 .field private Ok:I
 
@@ -59,38 +59,38 @@
     invoke-direct {p0}, Landroid/app/Service;-><init>()V
 
     .line 120
-    iput v0, p0, Lcom/android/settings/bluetooth/DockService;->On:I
+    iput v0, p0, Lcom/android/settings_ext/bluetooth/DockService;->On:I
 
     .line 121
-    iput v0, p0, Lcom/android/settings/bluetooth/DockService;->Oo:I
+    iput v0, p0, Lcom/android/settings_ext/bluetooth/DockService;->Oo:I
 
     .line 561
-    new-instance v0, Lcom/android/settings/bluetooth/DockService$2;
+    new-instance v0, Lcom/android/settings_ext/bluetooth/DockService$2;
 
-    invoke-direct {v0, p0}, Lcom/android/settings/bluetooth/DockService$2;-><init>(Lcom/android/settings/bluetooth/DockService;)V
+    invoke-direct {v0, p0}, Lcom/android/settings_ext/bluetooth/DockService$2;-><init>(Lcom/android/settings_ext/bluetooth/DockService;)V
 
-    iput-object v0, p0, Lcom/android/settings/bluetooth/DockService;->Oq:Landroid/content/DialogInterface$OnMultiChoiceClickListener;
+    iput-object v0, p0, Lcom/android/settings_ext/bluetooth/DockService;->Oq:Landroid/content/DialogInterface$OnMultiChoiceClickListener;
 
     .line 573
-    new-instance v0, Lcom/android/settings/bluetooth/DockService$3;
+    new-instance v0, Lcom/android/settings_ext/bluetooth/DockService$3;
 
-    invoke-direct {v0, p0}, Lcom/android/settings/bluetooth/DockService$3;-><init>(Lcom/android/settings/bluetooth/DockService;)V
+    invoke-direct {v0, p0}, Lcom/android/settings_ext/bluetooth/DockService$3;-><init>(Lcom/android/settings_ext/bluetooth/DockService;)V
 
-    iput-object v0, p0, Lcom/android/settings/bluetooth/DockService;->Or:Landroid/widget/CompoundButton$OnCheckedChangeListener;
+    iput-object v0, p0, Lcom/android/settings_ext/bluetooth/DockService;->Or:Landroid/widget/CompoundButton$OnCheckedChangeListener;
 
     .line 591
-    new-instance v0, Lcom/android/settings/bluetooth/DockService$4;
+    new-instance v0, Lcom/android/settings_ext/bluetooth/DockService$4;
 
-    invoke-direct {v0, p0}, Lcom/android/settings/bluetooth/DockService$4;-><init>(Lcom/android/settings/bluetooth/DockService;)V
+    invoke-direct {v0, p0}, Lcom/android/settings_ext/bluetooth/DockService$4;-><init>(Lcom/android/settings_ext/bluetooth/DockService;)V
 
-    iput-object v0, p0, Lcom/android/settings/bluetooth/DockService;->Os:Landroid/content/DialogInterface$OnDismissListener;
+    iput-object v0, p0, Lcom/android/settings_ext/bluetooth/DockService;->Os:Landroid/content/DialogInterface$OnDismissListener;
 
     .line 605
-    new-instance v0, Lcom/android/settings/bluetooth/DockService$5;
+    new-instance v0, Lcom/android/settings_ext/bluetooth/DockService$5;
 
-    invoke-direct {v0, p0}, Lcom/android/settings/bluetooth/DockService$5;-><init>(Lcom/android/settings/bluetooth/DockService;)V
+    invoke-direct {v0, p0}, Lcom/android/settings_ext/bluetooth/DockService$5;-><init>(Lcom/android/settings_ext/bluetooth/DockService;)V
 
-    iput-object v0, p0, Lcom/android/settings/bluetooth/DockService;->Ot:Landroid/content/DialogInterface$OnClickListener;
+    iput-object v0, p0, Lcom/android/settings_ext/bluetooth/DockService;->Ot:Landroid/content/DialogInterface$OnClickListener;
 
     return-void
 .end method
@@ -100,26 +100,26 @@
 
     .prologue
     .line 325
-    iget-object v0, p0, Lcom/android/settings/bluetooth/DockService;->Oh:Lcom/android/settings/bluetooth/DockService$ServiceHandler;
+    iget-object v0, p0, Lcom/android/settings_ext/bluetooth/DockService;->Oh:Lcom/android/settings_ext/bluetooth/DockService$ServiceHandler;
 
     const/16 v1, 0x1bc
 
-    invoke-virtual {v0, v1, p2, p3, p1}, Lcom/android/settings/bluetooth/DockService$ServiceHandler;->obtainMessage(IIILjava/lang/Object;)Landroid/os/Message;
+    invoke-virtual {v0, v1, p2, p3, p1}, Lcom/android/settings_ext/bluetooth/DockService$ServiceHandler;->obtainMessage(IIILjava/lang/Object;)Landroid/os/Message;
 
     move-result-object v0
 
     .line 327
-    iget-object v1, p0, Lcom/android/settings/bluetooth/DockService;->Oh:Lcom/android/settings/bluetooth/DockService$ServiceHandler;
+    iget-object v1, p0, Lcom/android/settings_ext/bluetooth/DockService;->Oh:Lcom/android/settings_ext/bluetooth/DockService$ServiceHandler;
 
     const-wide/16 v2, 0x3e8
 
-    invoke-virtual {v1, v0, v2, v3}, Lcom/android/settings/bluetooth/DockService$ServiceHandler;->sendMessageDelayed(Landroid/os/Message;J)Z
+    invoke-virtual {v1, v0, v2, v3}, Lcom/android/settings_ext/bluetooth/DockService$ServiceHandler;->sendMessageDelayed(Landroid/os/Message;J)Z
 
     .line 328
     return-void
 .end method
 
-.method private declared-synchronized a(Landroid/bluetooth/BluetoothDevice;Lcom/android/settings/bluetooth/LocalBluetoothProfile;I)V
+.method private declared-synchronized a(Landroid/bluetooth/BluetoothDevice;Lcom/android/settings_ext/bluetooth/LocalBluetoothProfile;I)V
     .locals 3
 
     .prologue
@@ -138,7 +138,7 @@
 
     invoke-direct {v1, v2}, Landroid/content/IntentFilter;-><init>(Ljava/lang/String;)V
 
-    invoke-virtual {p0, v0, v1}, Lcom/android/settings/bluetooth/DockService;->registerReceiver(Landroid/content/BroadcastReceiver;Landroid/content/IntentFilter;)Landroid/content/Intent;
+    invoke-virtual {p0, v0, v1}, Lcom/android/settings_ext/bluetooth/DockService;->registerReceiver(Landroid/content/BroadcastReceiver;Landroid/content/IntentFilter;)Landroid/content/Intent;
 
     move-result-object v0
 
@@ -176,16 +176,16 @@
     if-eqz v1, :cond_0
 
     .line 784
-    invoke-direct {p0, v0}, Lcom/android/settings/bluetooth/DockService;->p(Landroid/bluetooth/BluetoothDevice;)Lcom/android/settings/bluetooth/CachedBluetoothDevice;
+    invoke-direct {p0, v0}, Lcom/android/settings_ext/bluetooth/DockService;->p(Landroid/bluetooth/BluetoothDevice;)Lcom/android/settings_ext/bluetooth/CachedBluetoothDevice;
 
     move-result-object v0
 
     .line 786
-    invoke-virtual {v0, p2}, Lcom/android/settings/bluetooth/CachedBluetoothDevice;->c(Lcom/android/settings/bluetooth/LocalBluetoothProfile;)V
+    invoke-virtual {v0, p2}, Lcom/android/settings_ext/bluetooth/CachedBluetoothDevice;->c(Lcom/android/settings_ext/bluetooth/LocalBluetoothProfile;)V
 
     .line 792
     :cond_0
-    invoke-static {p0, p3}, Lcom/android/settings/bluetooth/DockEventReceiver;->a(Landroid/app/Service;I)V
+    invoke-static {p0, p3}, Lcom/android/settings_ext/bluetooth/DockEventReceiver;->a(Landroid/app/Service;I)V
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
@@ -228,7 +228,7 @@
 
     .line 690
     :try_start_0
-    invoke-direct {p0, p2}, Lcom/android/settings/bluetooth/DockService;->ba(I)V
+    invoke-direct {p0, p2}, Lcom/android/settings_ext/bluetooth/DockService;->ba(I)V
 
     .line 716
     :cond_0
@@ -245,7 +245,7 @@
     if-ne v0, v1, :cond_2
 
     .line 696
-    invoke-direct {p0}, Lcom/android/settings/bluetooth/DockService;->mT()Landroid/content/SharedPreferences;
+    invoke-direct {p0}, Lcom/android/settings_ext/bluetooth/DockService;->mT()Landroid/content/SharedPreferences;
 
     move-result-object v0
 
@@ -262,7 +262,7 @@
     invoke-interface {v0}, Landroid/content/SharedPreferences$Editor;->apply()V
 
     .line 697
-    invoke-static {p0, p2}, Lcom/android/settings/bluetooth/DockEventReceiver;->a(Landroid/app/Service;I)V
+    invoke-static {p0, p2}, Lcom/android/settings_ext/bluetooth/DockEventReceiver;->a(Landroid/app/Service;I)V
 
     goto :goto_0
 
@@ -284,17 +284,17 @@
 
     .line 703
     :try_start_1
-    iget v0, p0, Lcom/android/settings/bluetooth/DockService;->Oo:I
+    iget v0, p0, Lcom/android/settings_ext/bluetooth/DockService;->Oo:I
 
     if-eq v0, v2, :cond_3
 
     .line 704
-    iget v0, p0, Lcom/android/settings/bluetooth/DockService;->Oo:I
+    iget v0, p0, Lcom/android/settings_ext/bluetooth/DockService;->Oo:I
 
-    invoke-static {p0, v0}, Lcom/android/settings/bluetooth/DockEventReceiver;->a(Landroid/app/Service;I)V
+    invoke-static {p0, v0}, Lcom/android/settings_ext/bluetooth/DockEventReceiver;->a(Landroid/app/Service;I)V
 
     .line 705
-    invoke-direct {p0}, Lcom/android/settings/bluetooth/DockService;->mT()Landroid/content/SharedPreferences;
+    invoke-direct {p0}, Lcom/android/settings_ext/bluetooth/DockService;->mT()Landroid/content/SharedPreferences;
 
     move-result-object v0
 
@@ -313,59 +313,59 @@
     .line 706
     const/16 v0, -0x64
 
-    iput v0, p0, Lcom/android/settings/bluetooth/DockService;->Oo:I
+    iput v0, p0, Lcom/android/settings_ext/bluetooth/DockService;->Oo:I
 
     .line 709
     :cond_3
-    iget-object v0, p0, Lcom/android/settings/bluetooth/DockService;->Ol:Landroid/bluetooth/BluetoothDevice;
+    iget-object v0, p0, Lcom/android/settings_ext/bluetooth/DockService;->Ol:Landroid/bluetooth/BluetoothDevice;
 
     if-eqz v0, :cond_4
 
     .line 710
-    iget-object v0, p0, Lcom/android/settings/bluetooth/DockService;->Mh:Lcom/android/settings/bluetooth/LocalBluetoothAdapter;
+    iget-object v0, p0, Lcom/android/settings_ext/bluetooth/DockService;->Mh:Lcom/android/settings_ext/bluetooth/LocalBluetoothAdapter;
 
-    invoke-virtual {v0}, Lcom/android/settings/bluetooth/LocalBluetoothAdapter;->enable()Z
+    invoke-virtual {v0}, Lcom/android/settings_ext/bluetooth/LocalBluetoothAdapter;->enable()Z
 
     .line 711
-    iput p2, p0, Lcom/android/settings/bluetooth/DockService;->On:I
+    iput p2, p0, Lcom/android/settings_ext/bluetooth/DockService;->On:I
 
     goto :goto_0
 
     .line 713
     :cond_4
-    invoke-static {p0, p2}, Lcom/android/settings/bluetooth/DockEventReceiver;->a(Landroid/app/Service;I)V
+    invoke-static {p0, p2}, Lcom/android/settings_ext/bluetooth/DockEventReceiver;->a(Landroid/app/Service;I)V
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
     goto :goto_0
 .end method
 
-.method static synthetic a(Lcom/android/settings/bluetooth/DockService;Landroid/bluetooth/BluetoothDevice;I)V
+.method static synthetic a(Lcom/android/settings_ext/bluetooth/DockService;Landroid/bluetooth/BluetoothDevice;I)V
     .locals 0
 
     .prologue
     .line 51
-    invoke-direct {p0, p1, p2}, Lcom/android/settings/bluetooth/DockService;->b(Landroid/bluetooth/BluetoothDevice;I)V
+    invoke-direct {p0, p1, p2}, Lcom/android/settings_ext/bluetooth/DockService;->b(Landroid/bluetooth/BluetoothDevice;I)V
 
     return-void
 .end method
 
-.method static synthetic a(Lcom/android/settings/bluetooth/DockService;Landroid/bluetooth/BluetoothDevice;II)V
+.method static synthetic a(Lcom/android/settings_ext/bluetooth/DockService;Landroid/bluetooth/BluetoothDevice;II)V
     .locals 0
 
     .prologue
     .line 51
-    invoke-direct {p0, p1, p2, p3}, Lcom/android/settings/bluetooth/DockService;->d(Landroid/bluetooth/BluetoothDevice;II)V
+    invoke-direct {p0, p1, p2, p3}, Lcom/android/settings_ext/bluetooth/DockService;->d(Landroid/bluetooth/BluetoothDevice;II)V
 
     return-void
 .end method
 
-.method static synthetic a(Lcom/android/settings/bluetooth/DockService;Landroid/os/Message;)V
+.method static synthetic a(Lcom/android/settings_ext/bluetooth/DockService;Landroid/os/Message;)V
     .locals 0
 
     .prologue
     .line 51
-    invoke-direct {p0, p1}, Lcom/android/settings/bluetooth/DockService;->d(Landroid/os/Message;)V
+    invoke-direct {p0, p1}, Lcom/android/settings_ext/bluetooth/DockService;->d(Landroid/os/Message;)V
 
     return-void
 .end method
@@ -377,13 +377,13 @@
     const/4 v0, 0x0
 
     .line 332
-    invoke-direct {p0, p1}, Lcom/android/settings/bluetooth/DockService;->o(Landroid/bluetooth/BluetoothDevice;)V
+    invoke-direct {p0, p1}, Lcom/android/settings_ext/bluetooth/DockService;->o(Landroid/bluetooth/BluetoothDevice;)V
 
     .line 333
     if-eqz p1, :cond_0
 
     .line 334
-    invoke-direct {p0}, Lcom/android/settings/bluetooth/DockService;->mT()Landroid/content/SharedPreferences;
+    invoke-direct {p0}, Lcom/android/settings_ext/bluetooth/DockService;->mT()Landroid/content/SharedPreferences;
 
     move-result-object v1
 
@@ -397,7 +397,7 @@
     if-eqz v2, :cond_0
 
     .line 342
-    invoke-virtual {p0, p1}, Lcom/android/settings/bluetooth/DockService;->m(Landroid/bluetooth/BluetoothDevice;)Z
+    invoke-virtual {p0, p1}, Lcom/android/settings_ext/bluetooth/DockService;->m(Landroid/bluetooth/BluetoothDevice;)Z
 
     move-result v2
 
@@ -423,22 +423,22 @@
 
     .line 351
     :cond_1
-    iget-object v1, p0, Lcom/android/settings/bluetooth/DockService;->Oh:Lcom/android/settings/bluetooth/DockService$ServiceHandler;
+    iget-object v1, p0, Lcom/android/settings_ext/bluetooth/DockService;->Oh:Lcom/android/settings_ext/bluetooth/DockService$ServiceHandler;
 
     const/16 v2, 0x22b
 
     const/4 v3, 0x0
 
-    invoke-virtual {v1, v2, v0, p2, v3}, Lcom/android/settings/bluetooth/DockService$ServiceHandler;->obtainMessage(IIILjava/lang/Object;)Landroid/os/Message;
+    invoke-virtual {v1, v2, v0, p2, v3}, Lcom/android/settings_ext/bluetooth/DockService$ServiceHandler;->obtainMessage(IIILjava/lang/Object;)Landroid/os/Message;
 
     move-result-object v0
 
     .line 353
-    iget-object v1, p0, Lcom/android/settings/bluetooth/DockService;->Oh:Lcom/android/settings/bluetooth/DockService$ServiceHandler;
+    iget-object v1, p0, Lcom/android/settings_ext/bluetooth/DockService;->Oh:Lcom/android/settings_ext/bluetooth/DockService$ServiceHandler;
 
     const-wide/16 v2, 0x7d0
 
-    invoke-virtual {v1, v0, v2, v3}, Lcom/android/settings/bluetooth/DockService$ServiceHandler;->sendMessageDelayed(Landroid/os/Message;J)Z
+    invoke-virtual {v1, v0, v2, v3}, Lcom/android/settings_ext/bluetooth/DockService$ServiceHandler;->sendMessageDelayed(Landroid/os/Message;J)Z
 
     .line 355
     const/4 v0, 0x1
@@ -471,14 +471,14 @@
 
     .line 647
     :goto_1
-    new-array v2, v0, [Lcom/android/settings/bluetooth/LocalBluetoothProfile;
+    new-array v2, v0, [Lcom/android/settings_ext/bluetooth/LocalBluetoothProfile;
 
-    iput-object v2, p0, Lcom/android/settings/bluetooth/DockService;->Oj:[Lcom/android/settings/bluetooth/LocalBluetoothProfile;
+    iput-object v2, p0, Lcom/android/settings_ext/bluetooth/DockService;->Oj:[Lcom/android/settings_ext/bluetooth/LocalBluetoothProfile;
 
     .line 648
     new-array v2, v0, [Z
 
-    iput-object v2, p0, Lcom/android/settings/bluetooth/DockService;->mCheckedItems:[Z
+    iput-object v2, p0, Lcom/android/settings_ext/bluetooth/DockService;->mCheckedItems:[Z
 
     .line 649
     new-array v0, v0, [Ljava/lang/CharSequence;
@@ -490,18 +490,18 @@
 
     .line 671
     :pswitch_1
-    invoke-virtual {p0, v3}, Lcom/android/settings/bluetooth/DockService;->getString(I)Ljava/lang/String;
+    invoke-virtual {p0, v3}, Lcom/android/settings_ext/bluetooth/DockService;->getString(I)Ljava/lang/String;
 
     move-result-object v1
 
     aput-object v1, v0, v4
 
     .line 672
-    iget-object v1, p0, Lcom/android/settings/bluetooth/DockService;->Oj:[Lcom/android/settings/bluetooth/LocalBluetoothProfile;
+    iget-object v1, p0, Lcom/android/settings_ext/bluetooth/DockService;->Oj:[Lcom/android/settings_ext/bluetooth/LocalBluetoothProfile;
 
-    iget-object v2, p0, Lcom/android/settings/bluetooth/DockService;->Mk:Lcom/android/settings/bluetooth/LocalBluetoothProfileManager;
+    iget-object v2, p0, Lcom/android/settings_ext/bluetooth/DockService;->Mk:Lcom/android/settings_ext/bluetooth/LocalBluetoothProfileManager;
 
-    invoke-virtual {v2}, Lcom/android/settings/bluetooth/LocalBluetoothProfileManager;->nl()Lcom/android/settings/bluetooth/A2dpProfile;
+    invoke-virtual {v2}, Lcom/android/settings_ext/bluetooth/LocalBluetoothProfileManager;->nl()Lcom/android/settings_ext/bluetooth/A2dpProfile;
 
     move-result-object v2
 
@@ -511,7 +511,7 @@
     if-eqz p3, :cond_1
 
     .line 675
-    iget-object v1, p0, Lcom/android/settings/bluetooth/DockService;->mCheckedItems:[Z
+    iget-object v1, p0, Lcom/android/settings_ext/bluetooth/DockService;->mCheckedItems:[Z
 
     aput-boolean v4, v1, v4
 
@@ -528,36 +528,36 @@
     :pswitch_3
     const v2, 0x7f090264
 
-    invoke-virtual {p0, v2}, Lcom/android/settings/bluetooth/DockService;->getString(I)Ljava/lang/String;
+    invoke-virtual {p0, v2}, Lcom/android/settings_ext/bluetooth/DockService;->getString(I)Ljava/lang/String;
 
     move-result-object v2
 
     aput-object v2, v0, v4
 
     .line 655
-    invoke-virtual {p0, v3}, Lcom/android/settings/bluetooth/DockService;->getString(I)Ljava/lang/String;
+    invoke-virtual {p0, v3}, Lcom/android/settings_ext/bluetooth/DockService;->getString(I)Ljava/lang/String;
 
     move-result-object v2
 
     aput-object v2, v0, v1
 
     .line 656
-    iget-object v2, p0, Lcom/android/settings/bluetooth/DockService;->Oj:[Lcom/android/settings/bluetooth/LocalBluetoothProfile;
+    iget-object v2, p0, Lcom/android/settings_ext/bluetooth/DockService;->Oj:[Lcom/android/settings_ext/bluetooth/LocalBluetoothProfile;
 
-    iget-object v3, p0, Lcom/android/settings/bluetooth/DockService;->Mk:Lcom/android/settings/bluetooth/LocalBluetoothProfileManager;
+    iget-object v3, p0, Lcom/android/settings_ext/bluetooth/DockService;->Mk:Lcom/android/settings_ext/bluetooth/LocalBluetoothProfileManager;
 
-    invoke-virtual {v3}, Lcom/android/settings/bluetooth/LocalBluetoothProfileManager;->nm()Lcom/android/settings/bluetooth/HeadsetProfile;
+    invoke-virtual {v3}, Lcom/android/settings_ext/bluetooth/LocalBluetoothProfileManager;->nm()Lcom/android/settings_ext/bluetooth/HeadsetProfile;
 
     move-result-object v3
 
     aput-object v3, v2, v4
 
     .line 657
-    iget-object v2, p0, Lcom/android/settings/bluetooth/DockService;->Oj:[Lcom/android/settings/bluetooth/LocalBluetoothProfile;
+    iget-object v2, p0, Lcom/android/settings_ext/bluetooth/DockService;->Oj:[Lcom/android/settings_ext/bluetooth/LocalBluetoothProfile;
 
-    iget-object v3, p0, Lcom/android/settings/bluetooth/DockService;->Mk:Lcom/android/settings/bluetooth/LocalBluetoothProfileManager;
+    iget-object v3, p0, Lcom/android/settings_ext/bluetooth/DockService;->Mk:Lcom/android/settings_ext/bluetooth/LocalBluetoothProfileManager;
 
-    invoke-virtual {v3}, Lcom/android/settings/bluetooth/LocalBluetoothProfileManager;->nl()Lcom/android/settings/bluetooth/A2dpProfile;
+    invoke-virtual {v3}, Lcom/android/settings_ext/bluetooth/LocalBluetoothProfileManager;->nl()Lcom/android/settings_ext/bluetooth/A2dpProfile;
 
     move-result-object v3
 
@@ -567,12 +567,12 @@
     if-eqz p3, :cond_0
 
     .line 660
-    iget-object v2, p0, Lcom/android/settings/bluetooth/DockService;->mCheckedItems:[Z
+    iget-object v2, p0, Lcom/android/settings_ext/bluetooth/DockService;->mCheckedItems:[Z
 
     aput-boolean v1, v2, v4
 
     .line 661
-    iget-object v2, p0, Lcom/android/settings/bluetooth/DockService;->mCheckedItems:[Z
+    iget-object v2, p0, Lcom/android/settings_ext/bluetooth/DockService;->mCheckedItems:[Z
 
     aput-boolean v1, v2, v1
 
@@ -580,26 +580,26 @@
 
     .line 663
     :cond_0
-    iget-object v2, p0, Lcom/android/settings/bluetooth/DockService;->mCheckedItems:[Z
+    iget-object v2, p0, Lcom/android/settings_ext/bluetooth/DockService;->mCheckedItems:[Z
 
-    iget-object v3, p0, Lcom/android/settings/bluetooth/DockService;->Oj:[Lcom/android/settings/bluetooth/LocalBluetoothProfile;
+    iget-object v3, p0, Lcom/android/settings_ext/bluetooth/DockService;->Oj:[Lcom/android/settings_ext/bluetooth/LocalBluetoothProfile;
 
     aget-object v3, v3, v4
 
-    invoke-interface {v3, p1}, Lcom/android/settings/bluetooth/LocalBluetoothProfile;->b(Landroid/bluetooth/BluetoothDevice;)Z
+    invoke-interface {v3, p1}, Lcom/android/settings_ext/bluetooth/LocalBluetoothProfile;->b(Landroid/bluetooth/BluetoothDevice;)Z
 
     move-result v3
 
     aput-boolean v3, v2, v4
 
     .line 664
-    iget-object v2, p0, Lcom/android/settings/bluetooth/DockService;->mCheckedItems:[Z
+    iget-object v2, p0, Lcom/android/settings_ext/bluetooth/DockService;->mCheckedItems:[Z
 
-    iget-object v3, p0, Lcom/android/settings/bluetooth/DockService;->Oj:[Lcom/android/settings/bluetooth/LocalBluetoothProfile;
+    iget-object v3, p0, Lcom/android/settings_ext/bluetooth/DockService;->Oj:[Lcom/android/settings_ext/bluetooth/LocalBluetoothProfile;
 
     aget-object v3, v3, v1
 
-    invoke-interface {v3, p1}, Lcom/android/settings/bluetooth/LocalBluetoothProfile;->b(Landroid/bluetooth/BluetoothDevice;)Z
+    invoke-interface {v3, p1}, Lcom/android/settings_ext/bluetooth/LocalBluetoothProfile;->b(Landroid/bluetooth/BluetoothDevice;)Z
 
     move-result v3
 
@@ -609,13 +609,13 @@
 
     .line 677
     :cond_1
-    iget-object v1, p0, Lcom/android/settings/bluetooth/DockService;->mCheckedItems:[Z
+    iget-object v1, p0, Lcom/android/settings_ext/bluetooth/DockService;->mCheckedItems:[Z
 
-    iget-object v2, p0, Lcom/android/settings/bluetooth/DockService;->Oj:[Lcom/android/settings/bluetooth/LocalBluetoothProfile;
+    iget-object v2, p0, Lcom/android/settings_ext/bluetooth/DockService;->Oj:[Lcom/android/settings_ext/bluetooth/LocalBluetoothProfile;
 
     aget-object v2, v2, v4
 
-    invoke-interface {v2, p1}, Lcom/android/settings/bluetooth/LocalBluetoothProfile;->b(Landroid/bluetooth/BluetoothDevice;)Z
+    invoke-interface {v2, p1}, Lcom/android/settings_ext/bluetooth/LocalBluetoothProfile;->b(Landroid/bluetooth/BluetoothDevice;)Z
 
     move-result v2
 
@@ -642,12 +642,12 @@
     .end packed-switch
 .end method
 
-.method static synthetic a(Lcom/android/settings/bluetooth/DockService;)[Z
+.method static synthetic a(Lcom/android/settings_ext/bluetooth/DockService;)[Z
     .locals 1
 
     .prologue
     .line 51
-    iget-object v0, p0, Lcom/android/settings/bluetooth/DockService;->mCheckedItems:[Z
+    iget-object v0, p0, Lcom/android/settings_ext/bluetooth/DockService;->mCheckedItems:[Z
 
     return-object v0
 .end method
@@ -659,14 +659,14 @@
     const/4 v0, 0x1
 
     .line 307
-    invoke-direct {p0}, Lcom/android/settings/bluetooth/DockService;->mT()Landroid/content/SharedPreferences;
+    invoke-direct {p0}, Lcom/android/settings_ext/bluetooth/DockService;->mT()Landroid/content/SharedPreferences;
 
     move-result-object v1
 
     .line 308
-    iget-object v2, p0, Lcom/android/settings/bluetooth/DockService;->Mh:Lcom/android/settings/bluetooth/LocalBluetoothAdapter;
+    iget-object v2, p0, Lcom/android/settings_ext/bluetooth/DockService;->Mh:Lcom/android/settings_ext/bluetooth/LocalBluetoothAdapter;
 
-    invoke-virtual {v2}, Lcom/android/settings/bluetooth/LocalBluetoothAdapter;->disable()Z
+    invoke-virtual {v2}, Lcom/android/settings_ext/bluetooth/LocalBluetoothAdapter;->disable()Z
 
     move-result v2
 
@@ -707,17 +707,17 @@
     invoke-interface {v1}, Landroid/content/SharedPreferences$Editor;->apply()V
 
     .line 314
-    iput p1, p0, Lcom/android/settings/bluetooth/DockService;->Oo:I
+    iput p1, p0, Lcom/android/settings_ext/bluetooth/DockService;->Oo:I
 
     goto :goto_0
 .end method
 
-.method static synthetic b(Lcom/android/settings/bluetooth/DockService;)Landroid/bluetooth/BluetoothDevice;
+.method static synthetic b(Lcom/android/settings_ext/bluetooth/DockService;)Landroid/bluetooth/BluetoothDevice;
     .locals 1
 
     .prologue
     .line 51
-    iget-object v0, p0, Lcom/android/settings/bluetooth/DockService;->mDevice:Landroid/bluetooth/BluetoothDevice;
+    iget-object v0, p0, Lcom/android/settings_ext/bluetooth/DockService;->mDevice:Landroid/bluetooth/BluetoothDevice;
 
     return-object v0
 .end method
@@ -736,15 +736,15 @@
     if-eqz p1, :cond_0
 
     :try_start_0
-    iget-object v2, p0, Lcom/android/settings/bluetooth/DockService;->Oj:[Lcom/android/settings/bluetooth/LocalBluetoothProfile;
+    iget-object v2, p0, Lcom/android/settings_ext/bluetooth/DockService;->Oj:[Lcom/android/settings_ext/bluetooth/LocalBluetoothProfile;
 
     if-eqz v2, :cond_0
 
-    iget-object v2, p0, Lcom/android/settings/bluetooth/DockService;->mCheckedItems:[Z
+    iget-object v2, p0, Lcom/android/settings_ext/bluetooth/DockService;->mCheckedItems:[Z
 
     if-eqz v2, :cond_0
 
-    iget-object v2, p0, Lcom/android/settings/bluetooth/DockService;->Mh:Lcom/android/settings/bluetooth/LocalBluetoothAdapter;
+    iget-object v2, p0, Lcom/android/settings_ext/bluetooth/DockService;->Mh:Lcom/android/settings_ext/bluetooth/LocalBluetoothAdapter;
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
@@ -760,7 +760,7 @@
     .line 814
     :cond_1
     :try_start_1
-    iget-object v3, p0, Lcom/android/settings/bluetooth/DockService;->mCheckedItems:[Z
+    iget-object v3, p0, Lcom/android/settings_ext/bluetooth/DockService;->mCheckedItems:[Z
 
     array-length v4, v3
 
@@ -775,16 +775,16 @@
     if-eqz v5, :cond_3
 
     .line 816
-    iget-object v5, p0, Lcom/android/settings/bluetooth/DockService;->Mh:Lcom/android/settings/bluetooth/LocalBluetoothAdapter;
+    iget-object v5, p0, Lcom/android/settings_ext/bluetooth/DockService;->Mh:Lcom/android/settings_ext/bluetooth/LocalBluetoothAdapter;
 
-    invoke-virtual {v5}, Lcom/android/settings/bluetooth/LocalBluetoothAdapter;->mY()I
+    invoke-virtual {v5}, Lcom/android/settings_ext/bluetooth/LocalBluetoothAdapter;->mY()I
 
     move-result v5
 
     .line 822
-    iget-object v6, p0, Lcom/android/settings/bluetooth/DockService;->Mh:Lcom/android/settings/bluetooth/LocalBluetoothAdapter;
+    iget-object v6, p0, Lcom/android/settings_ext/bluetooth/DockService;->Mh:Lcom/android/settings_ext/bluetooth/LocalBluetoothAdapter;
 
-    invoke-virtual {v6}, Lcom/android/settings/bluetooth/LocalBluetoothAdapter;->enable()Z
+    invoke-virtual {v6}, Lcom/android/settings_ext/bluetooth/LocalBluetoothAdapter;->enable()Z
 
     .line 825
     const/16 v6, 0xc
@@ -792,13 +792,13 @@
     if-eq v5, v6, :cond_3
 
     .line 826
-    iget-object v0, p0, Lcom/android/settings/bluetooth/DockService;->Ol:Landroid/bluetooth/BluetoothDevice;
+    iget-object v0, p0, Lcom/android/settings_ext/bluetooth/DockService;->Ol:Landroid/bluetooth/BluetoothDevice;
 
     if-eqz v0, :cond_2
 
-    iget-object v0, p0, Lcom/android/settings/bluetooth/DockService;->Ol:Landroid/bluetooth/BluetoothDevice;
+    iget-object v0, p0, Lcom/android/settings_ext/bluetooth/DockService;->Ol:Landroid/bluetooth/BluetoothDevice;
 
-    iget-object v1, p0, Lcom/android/settings/bluetooth/DockService;->mDevice:Landroid/bluetooth/BluetoothDevice;
+    iget-object v1, p0, Lcom/android/settings_ext/bluetooth/DockService;->mDevice:Landroid/bluetooth/BluetoothDevice;
 
     invoke-virtual {v0, v1}, Landroid/bluetooth/BluetoothDevice;->equals(Ljava/lang/Object;)Z
 
@@ -808,10 +808,10 @@
 
     .line 830
     :cond_2
-    iput-object p1, p0, Lcom/android/settings/bluetooth/DockService;->Ol:Landroid/bluetooth/BluetoothDevice;
+    iput-object p1, p0, Lcom/android/settings_ext/bluetooth/DockService;->Ol:Landroid/bluetooth/BluetoothDevice;
 
     .line 831
-    iput p2, p0, Lcom/android/settings/bluetooth/DockService;->Om:I
+    iput p2, p0, Lcom/android/settings_ext/bluetooth/DockService;->Om:I
 
     .line 832
     const/16 v0, 0xb
@@ -819,7 +819,7 @@
     if-eq v5, v0, :cond_0
 
     .line 833
-    invoke-direct {p0}, Lcom/android/settings/bluetooth/DockService;->mT()Landroid/content/SharedPreferences;
+    invoke-direct {p0}, Lcom/android/settings_ext/bluetooth/DockService;->mT()Landroid/content/SharedPreferences;
 
     move-result-object v0
 
@@ -860,10 +860,10 @@
     const/4 v2, 0x0
 
     :try_start_2
-    iput-object v2, p0, Lcom/android/settings/bluetooth/DockService;->Ol:Landroid/bluetooth/BluetoothDevice;
+    iput-object v2, p0, Lcom/android/settings_ext/bluetooth/DockService;->Ol:Landroid/bluetooth/BluetoothDevice;
 
     .line 844
-    invoke-direct {p0, p1}, Lcom/android/settings/bluetooth/DockService;->p(Landroid/bluetooth/BluetoothDevice;)Lcom/android/settings/bluetooth/CachedBluetoothDevice;
+    invoke-direct {p0, p1}, Lcom/android/settings_ext/bluetooth/DockService;->p(Landroid/bluetooth/BluetoothDevice;)Lcom/android/settings_ext/bluetooth/CachedBluetoothDevice;
 
     move-result-object v3
 
@@ -871,19 +871,19 @@
 
     .line 846
     :goto_2
-    iget-object v4, p0, Lcom/android/settings/bluetooth/DockService;->Oj:[Lcom/android/settings/bluetooth/LocalBluetoothProfile;
+    iget-object v4, p0, Lcom/android/settings_ext/bluetooth/DockService;->Oj:[Lcom/android/settings_ext/bluetooth/LocalBluetoothProfile;
 
     array-length v4, v4
 
     if-ge v2, v4, :cond_7
 
     .line 847
-    iget-object v4, p0, Lcom/android/settings/bluetooth/DockService;->Oj:[Lcom/android/settings/bluetooth/LocalBluetoothProfile;
+    iget-object v4, p0, Lcom/android/settings_ext/bluetooth/DockService;->Oj:[Lcom/android/settings_ext/bluetooth/LocalBluetoothProfile;
 
     aget-object v4, v4, v2
 
     .line 850
-    iget-object v5, p0, Lcom/android/settings/bluetooth/DockService;->mCheckedItems:[Z
+    iget-object v5, p0, Lcom/android/settings_ext/bluetooth/DockService;->mCheckedItems:[Z
 
     aget-boolean v5, v5, v2
 
@@ -894,11 +894,11 @@
     .line 861
     :cond_5
     :goto_3
-    iget-object v5, p0, Lcom/android/settings/bluetooth/DockService;->mCheckedItems:[Z
+    iget-object v5, p0, Lcom/android/settings_ext/bluetooth/DockService;->mCheckedItems:[Z
 
     aget-boolean v5, v5, v2
 
-    invoke-interface {v4, p1, v5}, Lcom/android/settings/bluetooth/LocalBluetoothProfile;->a(Landroid/bluetooth/BluetoothDevice;Z)V
+    invoke-interface {v4, p1, v5}, Lcom/android/settings_ext/bluetooth/LocalBluetoothProfile;->a(Landroid/bluetooth/BluetoothDevice;Z)V
 
     .line 846
     add-int/lit8 v2, v2, 0x1
@@ -907,18 +907,18 @@
 
     .line 853
     :cond_6
-    iget-object v5, p0, Lcom/android/settings/bluetooth/DockService;->mCheckedItems:[Z
+    iget-object v5, p0, Lcom/android/settings_ext/bluetooth/DockService;->mCheckedItems:[Z
 
     aget-boolean v5, v5, v2
 
     if-nez v5, :cond_5
 
     .line 855
-    invoke-virtual {v3}, Lcom/android/settings/bluetooth/CachedBluetoothDevice;->getDevice()Landroid/bluetooth/BluetoothDevice;
+    invoke-virtual {v3}, Lcom/android/settings_ext/bluetooth/CachedBluetoothDevice;->getDevice()Landroid/bluetooth/BluetoothDevice;
 
     move-result-object v5
 
-    invoke-interface {v4, v5}, Lcom/android/settings/bluetooth/LocalBluetoothProfile;->a(Landroid/bluetooth/BluetoothDevice;)I
+    invoke-interface {v4, v5}, Lcom/android/settings_ext/bluetooth/LocalBluetoothProfile;->a(Landroid/bluetooth/BluetoothDevice;)I
 
     move-result v5
 
@@ -928,11 +928,11 @@
     if-ne v5, v6, :cond_5
 
     .line 858
-    iget-object v5, p0, Lcom/android/settings/bluetooth/DockService;->Oj:[Lcom/android/settings/bluetooth/LocalBluetoothProfile;
+    iget-object v5, p0, Lcom/android/settings_ext/bluetooth/DockService;->Oj:[Lcom/android/settings_ext/bluetooth/LocalBluetoothProfile;
 
     aget-object v5, v5, v2
 
-    invoke-virtual {v3, v5}, Lcom/android/settings/bluetooth/CachedBluetoothDevice;->b(Lcom/android/settings/bluetooth/LocalBluetoothProfile;)V
+    invoke-virtual {v3, v5}, Lcom/android/settings_ext/bluetooth/CachedBluetoothDevice;->b(Lcom/android/settings_ext/bluetooth/LocalBluetoothProfile;)V
 
     goto :goto_3
 
@@ -943,7 +943,7 @@
     .line 871
     const/4 v0, 0x0
 
-    invoke-virtual {v3, v0}, Lcom/android/settings/bluetooth/CachedBluetoothDevice;->ao(Z)V
+    invoke-virtual {v3, v0}, Lcom/android/settings_ext/bluetooth/CachedBluetoothDevice;->ao(Z)V
     :try_end_2
     .catchall {:try_start_2 .. :try_end_2} :catchall_0
 
@@ -959,21 +959,21 @@
     const/4 v3, -0x1
 
     .line 373
-    iget-object v1, p0, Lcom/android/settings/bluetooth/DockService;->Oh:Lcom/android/settings/bluetooth/DockService$ServiceHandler;
+    iget-object v1, p0, Lcom/android/settings_ext/bluetooth/DockService;->Oh:Lcom/android/settings_ext/bluetooth/DockService$ServiceHandler;
 
     const/16 v2, 0x1bc
 
-    invoke-virtual {v1, v2}, Lcom/android/settings/bluetooth/DockService$ServiceHandler;->removeMessages(I)V
+    invoke-virtual {v1, v2}, Lcom/android/settings_ext/bluetooth/DockService$ServiceHandler;->removeMessages(I)V
 
     .line 374
-    iget-object v1, p0, Lcom/android/settings/bluetooth/DockService;->Oh:Lcom/android/settings/bluetooth/DockService$ServiceHandler;
+    iget-object v1, p0, Lcom/android/settings_ext/bluetooth/DockService;->Oh:Lcom/android/settings_ext/bluetooth/DockService$ServiceHandler;
 
     const/16 v2, 0x22b
 
-    invoke-virtual {v1, v2}, Lcom/android/settings/bluetooth/DockService$ServiceHandler;->removeMessages(I)V
+    invoke-virtual {v1, v2}, Lcom/android/settings_ext/bluetooth/DockService$ServiceHandler;->removeMessages(I)V
 
     .line 375
-    invoke-direct {p0}, Lcom/android/settings/bluetooth/DockService;->mT()Landroid/content/SharedPreferences;
+    invoke-direct {p0}, Lcom/android/settings_ext/bluetooth/DockService;->mT()Landroid/content/SharedPreferences;
 
     move-result-object v1
 
@@ -993,7 +993,7 @@
     if-eqz p1, :cond_3
 
     .line 378
-    iget-object v1, p0, Lcom/android/settings/bluetooth/DockService;->mDevice:Landroid/bluetooth/BluetoothDevice;
+    iget-object v1, p0, Lcom/android/settings_ext/bluetooth/DockService;->mDevice:Landroid/bluetooth/BluetoothDevice;
 
     invoke-virtual {p1, v1}, Landroid/bluetooth/BluetoothDevice;->equals(Ljava/lang/Object;)Z
 
@@ -1002,40 +1002,40 @@
     if-nez v1, :cond_1
 
     .line 379
-    iget-object v1, p0, Lcom/android/settings/bluetooth/DockService;->mDevice:Landroid/bluetooth/BluetoothDevice;
+    iget-object v1, p0, Lcom/android/settings_ext/bluetooth/DockService;->mDevice:Landroid/bluetooth/BluetoothDevice;
 
     if-eqz v1, :cond_0
 
     .line 381
-    iget-object v1, p0, Lcom/android/settings/bluetooth/DockService;->mDevice:Landroid/bluetooth/BluetoothDevice;
+    iget-object v1, p0, Lcom/android/settings_ext/bluetooth/DockService;->mDevice:Landroid/bluetooth/BluetoothDevice;
 
-    invoke-direct {p0, v1}, Lcom/android/settings/bluetooth/DockService;->o(Landroid/bluetooth/BluetoothDevice;)V
+    invoke-direct {p0, v1}, Lcom/android/settings_ext/bluetooth/DockService;->o(Landroid/bluetooth/BluetoothDevice;)V
 
     .line 384
     :cond_0
-    iput-object p1, p0, Lcom/android/settings/bluetooth/DockService;->mDevice:Landroid/bluetooth/BluetoothDevice;
+    iput-object p1, p0, Lcom/android/settings_ext/bluetooth/DockService;->mDevice:Landroid/bluetooth/BluetoothDevice;
 
     .line 389
-    iget-object v1, p0, Lcom/android/settings/bluetooth/DockService;->Mk:Lcom/android/settings/bluetooth/LocalBluetoothProfileManager;
+    iget-object v1, p0, Lcom/android/settings_ext/bluetooth/DockService;->Mk:Lcom/android/settings_ext/bluetooth/LocalBluetoothProfileManager;
 
-    invoke-virtual {v1, p0}, Lcom/android/settings/bluetooth/LocalBluetoothProfileManager;->a(Lcom/android/settings/bluetooth/LocalBluetoothProfileManager$ServiceListener;)V
+    invoke-virtual {v1, p0}, Lcom/android/settings_ext/bluetooth/LocalBluetoothProfileManager;->a(Lcom/android/settings_ext/bluetooth/LocalBluetoothProfileManager$ServiceListener;)V
 
     .line 390
-    iget-object v1, p0, Lcom/android/settings/bluetooth/DockService;->Mk:Lcom/android/settings/bluetooth/LocalBluetoothProfileManager;
+    iget-object v1, p0, Lcom/android/settings_ext/bluetooth/DockService;->Mk:Lcom/android/settings_ext/bluetooth/LocalBluetoothProfileManager;
 
-    invoke-virtual {v1}, Lcom/android/settings/bluetooth/LocalBluetoothProfileManager;->nk()Z
+    invoke-virtual {v1}, Lcom/android/settings_ext/bluetooth/LocalBluetoothProfileManager;->nk()Z
 
     move-result v1
 
     if-eqz v1, :cond_2
 
     .line 391
-    invoke-direct {p0, p1, p2, p3}, Lcom/android/settings/bluetooth/DockService;->d(Landroid/bluetooth/BluetoothDevice;II)V
+    invoke-direct {p0, p1, p2, p3}, Lcom/android/settings_ext/bluetooth/DockService;->d(Landroid/bluetooth/BluetoothDevice;II)V
 
     .line 393
-    iget-object v0, p0, Lcom/android/settings/bluetooth/DockService;->Mk:Lcom/android/settings/bluetooth/LocalBluetoothProfileManager;
+    iget-object v0, p0, Lcom/android/settings_ext/bluetooth/DockService;->Mk:Lcom/android/settings_ext/bluetooth/LocalBluetoothProfileManager;
 
-    invoke-virtual {v0, p0}, Lcom/android/settings/bluetooth/LocalBluetoothProfileManager;->b(Lcom/android/settings/bluetooth/LocalBluetoothProfileManager$ServiceListener;)V
+    invoke-virtual {v0, p0}, Lcom/android/settings_ext/bluetooth/LocalBluetoothProfileManager;->b(Lcom/android/settings_ext/bluetooth/LocalBluetoothProfileManager$ServiceListener;)V
 
     .line 415
     :cond_1
@@ -1046,17 +1046,17 @@
 
     .line 396
     :cond_2
-    new-instance v1, Lcom/android/settings/bluetooth/DockService$1;
+    new-instance v1, Lcom/android/settings_ext/bluetooth/DockService$1;
 
-    invoke-direct {v1, p0, p1, p2, p3}, Lcom/android/settings/bluetooth/DockService$1;-><init>(Lcom/android/settings/bluetooth/DockService;Landroid/bluetooth/BluetoothDevice;II)V
+    invoke-direct {v1, p0, p1, p2, p3}, Lcom/android/settings_ext/bluetooth/DockService$1;-><init>(Lcom/android/settings_ext/bluetooth/DockService;Landroid/bluetooth/BluetoothDevice;II)V
 
-    iput-object v1, p0, Lcom/android/settings/bluetooth/DockService;->Oi:Ljava/lang/Runnable;
+    iput-object v1, p0, Lcom/android/settings_ext/bluetooth/DockService;->Oi:Ljava/lang/Runnable;
 
     goto :goto_0
 
     .line 407
     :cond_3
-    invoke-virtual {p0}, Lcom/android/settings/bluetooth/DockService;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/settings_ext/bluetooth/DockService;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v1
 
@@ -1076,7 +1076,7 @@
     .line 411
     const/4 v1, 0x0
 
-    invoke-direct {p0, v1, p2, p3}, Lcom/android/settings/bluetooth/DockService;->d(Landroid/bluetooth/BluetoothDevice;II)V
+    invoke-direct {p0, v1, p2, p3}, Lcom/android/settings_ext/bluetooth/DockService;->d(Landroid/bluetooth/BluetoothDevice;II)V
 
     goto :goto_0
 .end method
@@ -1092,14 +1092,14 @@
     const/16 v3, -0x64
 
     .line 720
-    iget-object v0, p0, Lcom/android/settings/bluetooth/DockService;->Ol:Landroid/bluetooth/BluetoothDevice;
+    iget-object v0, p0, Lcom/android/settings_ext/bluetooth/DockService;->Ol:Landroid/bluetooth/BluetoothDevice;
 
     if-eqz v0, :cond_3
 
     .line 721
-    iget-object v0, p0, Lcom/android/settings/bluetooth/DockService;->Ol:Landroid/bluetooth/BluetoothDevice;
+    iget-object v0, p0, Lcom/android/settings_ext/bluetooth/DockService;->Ol:Landroid/bluetooth/BluetoothDevice;
 
-    iget-object v1, p0, Lcom/android/settings/bluetooth/DockService;->mDevice:Landroid/bluetooth/BluetoothDevice;
+    iget-object v1, p0, Lcom/android/settings_ext/bluetooth/DockService;->mDevice:Landroid/bluetooth/BluetoothDevice;
 
     invoke-virtual {v0, v1}, Landroid/bluetooth/BluetoothDevice;->equals(Ljava/lang/Object;)Z
 
@@ -1108,39 +1108,39 @@
     if-eqz v0, :cond_0
 
     .line 725
-    iget-object v0, p0, Lcom/android/settings/bluetooth/DockService;->Ol:Landroid/bluetooth/BluetoothDevice;
+    iget-object v0, p0, Lcom/android/settings_ext/bluetooth/DockService;->Ol:Landroid/bluetooth/BluetoothDevice;
 
-    iget v1, p0, Lcom/android/settings/bluetooth/DockService;->Om:I
+    iget v1, p0, Lcom/android/settings_ext/bluetooth/DockService;->Om:I
 
-    invoke-direct {p0, v0, v1}, Lcom/android/settings/bluetooth/DockService;->b(Landroid/bluetooth/BluetoothDevice;I)V
+    invoke-direct {p0, v0, v1}, Lcom/android/settings_ext/bluetooth/DockService;->b(Landroid/bluetooth/BluetoothDevice;I)V
 
     .line 731
     :cond_0
-    iput-object v5, p0, Lcom/android/settings/bluetooth/DockService;->Ol:Landroid/bluetooth/BluetoothDevice;
+    iput-object v5, p0, Lcom/android/settings_ext/bluetooth/DockService;->Ol:Landroid/bluetooth/BluetoothDevice;
 
     .line 732
-    iget v0, p0, Lcom/android/settings/bluetooth/DockService;->Om:I
+    iget v0, p0, Lcom/android/settings_ext/bluetooth/DockService;->Om:I
 
-    invoke-static {p0, v0}, Lcom/android/settings/bluetooth/DockEventReceiver;->a(Landroid/app/Service;I)V
+    invoke-static {p0, v0}, Lcom/android/settings_ext/bluetooth/DockEventReceiver;->a(Landroid/app/Service;I)V
 
     .line 759
     :cond_1
     :goto_0
-    iget v0, p0, Lcom/android/settings/bluetooth/DockService;->On:I
+    iget v0, p0, Lcom/android/settings_ext/bluetooth/DockService;->On:I
 
     if-eq v0, v3, :cond_2
 
     .line 760
-    iget v0, p0, Lcom/android/settings/bluetooth/DockService;->On:I
+    iget v0, p0, Lcom/android/settings_ext/bluetooth/DockService;->On:I
 
-    invoke-static {p0, v0}, Lcom/android/settings/bluetooth/DockEventReceiver;->a(Landroid/app/Service;I)V
+    invoke-static {p0, v0}, Lcom/android/settings_ext/bluetooth/DockEventReceiver;->a(Landroid/app/Service;I)V
 
     .line 761
-    iput v3, p0, Lcom/android/settings/bluetooth/DockService;->On:I
+    iput v3, p0, Lcom/android/settings_ext/bluetooth/DockService;->On:I
 
     .line 764
     :cond_2
-    invoke-static {p0, p1}, Lcom/android/settings/bluetooth/DockEventReceiver;->a(Landroid/app/Service;I)V
+    invoke-static {p0, p1}, Lcom/android/settings_ext/bluetooth/DockEventReceiver;->a(Landroid/app/Service;I)V
 
     .line 765
     :goto_1
@@ -1148,7 +1148,7 @@
 
     .line 734
     :cond_3
-    invoke-direct {p0}, Lcom/android/settings/bluetooth/DockService;->mT()Landroid/content/SharedPreferences;
+    invoke-direct {p0}, Lcom/android/settings_ext/bluetooth/DockService;->mT()Landroid/content/SharedPreferences;
 
     move-result-object v0
 
@@ -1159,7 +1159,7 @@
 
     invoke-direct {v1, v2}, Landroid/content/IntentFilter;-><init>(Ljava/lang/String;)V
 
-    invoke-virtual {p0, v5, v1}, Lcom/android/settings/bluetooth/DockService;->registerReceiver(Landroid/content/BroadcastReceiver;Landroid/content/IntentFilter;)Landroid/content/Intent;
+    invoke-virtual {p0, v5, v1}, Lcom/android/settings_ext/bluetooth/DockService;->registerReceiver(Landroid/content/BroadcastReceiver;Landroid/content/IntentFilter;)Landroid/content/Intent;
 
     move-result-object v1
 
@@ -1189,7 +1189,7 @@
     if-eqz v0, :cond_1
 
     .line 748
-    invoke-direct {p0, v0}, Lcom/android/settings/bluetooth/DockService;->n(Landroid/bluetooth/BluetoothDevice;)V
+    invoke-direct {p0, v0}, Lcom/android/settings_ext/bluetooth/DockService;->n(Landroid/bluetooth/BluetoothDevice;)V
 
     goto :goto_0
 
@@ -1203,16 +1203,16 @@
 
     if-eqz v1, :cond_1
 
-    iget-object v1, p0, Lcom/android/settings/bluetooth/DockService;->Mh:Lcom/android/settings/bluetooth/LocalBluetoothAdapter;
+    iget-object v1, p0, Lcom/android/settings_ext/bluetooth/DockService;->Mh:Lcom/android/settings_ext/bluetooth/LocalBluetoothAdapter;
 
-    invoke-virtual {v1}, Lcom/android/settings/bluetooth/LocalBluetoothAdapter;->disable()Z
+    invoke-virtual {v1}, Lcom/android/settings_ext/bluetooth/LocalBluetoothAdapter;->disable()Z
 
     move-result v1
 
     if-eqz v1, :cond_1
 
     .line 752
-    iput p1, p0, Lcom/android/settings/bluetooth/DockService;->Oo:I
+    iput p1, p0, Lcom/android/settings_ext/bluetooth/DockService;->Oo:I
 
     .line 753
     invoke-interface {v0}, Landroid/content/SharedPreferences;->edit()Landroid/content/SharedPreferences$Editor;
@@ -1230,12 +1230,12 @@
     goto :goto_1
 .end method
 
-.method static synthetic c(Lcom/android/settings/bluetooth/DockService;)Landroid/bluetooth/BluetoothDevice;
+.method static synthetic c(Lcom/android/settings_ext/bluetooth/DockService;)Landroid/bluetooth/BluetoothDevice;
     .locals 1
 
     .prologue
     .line 51
-    iget-object v0, p0, Lcom/android/settings/bluetooth/DockService;->Ol:Landroid/bluetooth/BluetoothDevice;
+    iget-object v0, p0, Lcom/android/settings_ext/bluetooth/DockService;->Ol:Landroid/bluetooth/BluetoothDevice;
 
     return-object v0
 .end method
@@ -1255,21 +1255,21 @@
     const/4 v3, 0x0
 
     .line 482
-    iget-object v0, p0, Lcom/android/settings/bluetooth/DockService;->mDialog:Landroid/app/AlertDialog;
+    iget-object v0, p0, Lcom/android/settings_ext/bluetooth/DockService;->mDialog:Landroid/app/AlertDialog;
 
     if-eqz v0, :cond_0
 
     .line 484
-    iget-object v0, p0, Lcom/android/settings/bluetooth/DockService;->mDialog:Landroid/app/AlertDialog;
+    iget-object v0, p0, Lcom/android/settings_ext/bluetooth/DockService;->mDialog:Landroid/app/AlertDialog;
 
     invoke-virtual {v0}, Landroid/app/AlertDialog;->dismiss()V
 
     .line 485
-    iput-object v8, p0, Lcom/android/settings/bluetooth/DockService;->mDialog:Landroid/app/AlertDialog;
+    iput-object v8, p0, Lcom/android/settings_ext/bluetooth/DockService;->mDialog:Landroid/app/AlertDialog;
 
     .line 487
     :cond_0
-    iput-object p1, p0, Lcom/android/settings/bluetooth/DockService;->mDevice:Landroid/bluetooth/BluetoothDevice;
+    iput-object p1, p0, Lcom/android/settings_ext/bluetooth/DockService;->mDevice:Landroid/bluetooth/BluetoothDevice;
 
     .line 488
     packed-switch p2, :pswitch_data_0
@@ -1284,7 +1284,7 @@
 
     invoke-direct {v0}, Landroid/app/Notification;-><init>()V
 
-    invoke-virtual {p0, v3, v0}, Lcom/android/settings/bluetooth/DockService;->startForeground(ILandroid/app/Notification;)V
+    invoke-virtual {p0, v3, v0}, Lcom/android/settings_ext/bluetooth/DockService;->startForeground(ILandroid/app/Notification;)V
 
     .line 500
     new-instance v0, Landroid/app/AlertDialog$Builder;
@@ -1294,14 +1294,14 @@
     .line 502
     const-string v1, "layout_inflater"
 
-    invoke-virtual {p0, v1}, Lcom/android/settings/bluetooth/DockService;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
+    invoke-virtual {p0, v1}, Lcom/android/settings_ext/bluetooth/DockService;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object v1
 
     check-cast v1, Landroid/view/LayoutInflater;
 
     .line 504
-    iput-object v8, p0, Lcom/android/settings/bluetooth/DockService;->Op:Landroid/widget/CheckBox;
+    iput-object v8, p0, Lcom/android/settings_ext/bluetooth/DockService;->Op:Landroid/widget/CheckBox;
 
     .line 506
     if-eqz p1, :cond_4
@@ -1311,7 +1311,7 @@
 
     move-result-object v2
 
-    invoke-static {p0, v2}, Lcom/android/settings/bluetooth/LocalBluetoothPreferences;->m(Landroid/content/Context;Ljava/lang/String;)Z
+    invoke-static {p0, v2}, Lcom/android/settings_ext/bluetooth/LocalBluetoothPreferences;->m(Landroid/content/Context;Ljava/lang/String;)Z
 
     move-result v2
 
@@ -1321,21 +1321,21 @@
 
     .line 511
     :goto_1
-    invoke-direct {p0, p1, p2, v2}, Lcom/android/settings/bluetooth/DockService;->a(Landroid/bluetooth/BluetoothDevice;IZ)[Ljava/lang/CharSequence;
+    invoke-direct {p0, p1, p2, v2}, Lcom/android/settings_ext/bluetooth/DockService;->a(Landroid/bluetooth/BluetoothDevice;IZ)[Ljava/lang/CharSequence;
 
     move-result-object v5
 
     .line 513
-    invoke-virtual {p0, v6}, Lcom/android/settings/bluetooth/DockService;->getString(I)Ljava/lang/String;
+    invoke-virtual {p0, v6}, Lcom/android/settings_ext/bluetooth/DockService;->getString(I)Ljava/lang/String;
 
     move-result-object v6
 
     invoke-virtual {v0, v6}, Landroid/app/AlertDialog$Builder;->setTitle(Ljava/lang/CharSequence;)Landroid/app/AlertDialog$Builder;
 
     .line 516
-    iget-object v6, p0, Lcom/android/settings/bluetooth/DockService;->mCheckedItems:[Z
+    iget-object v6, p0, Lcom/android/settings_ext/bluetooth/DockService;->mCheckedItems:[Z
 
-    iget-object v7, p0, Lcom/android/settings/bluetooth/DockService;->Oq:Landroid/content/DialogInterface$OnMultiChoiceClickListener;
+    iget-object v7, p0, Lcom/android/settings_ext/bluetooth/DockService;->Oq:Landroid/content/DialogInterface$OnMultiChoiceClickListener;
 
     invoke-virtual {v0, v5, v6, v7}, Landroid/app/AlertDialog$Builder;->setMultiChoiceItems([Ljava/lang/CharSequence;[ZLandroid/content/DialogInterface$OnMultiChoiceClickListener;)Landroid/app/AlertDialog$Builder;
 
@@ -1362,7 +1362,7 @@
 
     move-result-object v2
 
-    invoke-static {p0, v2}, Lcom/android/settings/bluetooth/LocalBluetoothPreferences;->n(Landroid/content/Context;Ljava/lang/String;)Z
+    invoke-static {p0, v2}, Lcom/android/settings_ext/bluetooth/LocalBluetoothPreferences;->n(Landroid/content/Context;Ljava/lang/String;)Z
 
     move-result v2
 
@@ -1374,7 +1374,7 @@
     invoke-virtual {v1, v4}, Landroid/widget/CheckBox;->setChecked(Z)V
 
     .line 526
-    iget-object v2, p0, Lcom/android/settings/bluetooth/DockService;->Or:Landroid/widget/CompoundButton$OnCheckedChangeListener;
+    iget-object v2, p0, Lcom/android/settings_ext/bluetooth/DockService;->Or:Landroid/widget/CompoundButton$OnCheckedChangeListener;
 
     invoke-virtual {v1, v2}, Landroid/widget/CheckBox;->setOnCheckedChangeListener(Landroid/widget/CompoundButton$OnCheckedChangeListener;)V
 
@@ -1382,7 +1382,7 @@
 
     .line 545
     :goto_3
-    invoke-virtual {p0}, Lcom/android/settings/bluetooth/DockService;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {p0}, Lcom/android/settings_ext/bluetooth/DockService;->getResources()Landroid/content/res/Resources;
 
     move-result-object v2
 
@@ -1410,26 +1410,26 @@
     .line 551
     const v1, 0x104000a
 
-    invoke-virtual {p0, v1}, Lcom/android/settings/bluetooth/DockService;->getString(I)Ljava/lang/String;
+    invoke-virtual {p0, v1}, Lcom/android/settings_ext/bluetooth/DockService;->getString(I)Ljava/lang/String;
 
     move-result-object v1
 
-    iget-object v2, p0, Lcom/android/settings/bluetooth/DockService;->Ot:Landroid/content/DialogInterface$OnClickListener;
+    iget-object v2, p0, Lcom/android/settings_ext/bluetooth/DockService;->Ot:Landroid/content/DialogInterface$OnClickListener;
 
     invoke-virtual {v0, v1, v2}, Landroid/app/AlertDialog$Builder;->setPositiveButton(Ljava/lang/CharSequence;Landroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
     .line 553
-    iput p3, p0, Lcom/android/settings/bluetooth/DockService;->Ok:I
+    iput p3, p0, Lcom/android/settings_ext/bluetooth/DockService;->Ok:I
 
     .line 554
     invoke-virtual {v0}, Landroid/app/AlertDialog$Builder;->create()Landroid/app/AlertDialog;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/bluetooth/DockService;->mDialog:Landroid/app/AlertDialog;
+    iput-object v0, p0, Lcom/android/settings_ext/bluetooth/DockService;->mDialog:Landroid/app/AlertDialog;
 
     .line 555
-    iget-object v0, p0, Lcom/android/settings/bluetooth/DockService;->mDialog:Landroid/app/AlertDialog;
+    iget-object v0, p0, Lcom/android/settings_ext/bluetooth/DockService;->mDialog:Landroid/app/AlertDialog;
 
     invoke-virtual {v0}, Landroid/app/AlertDialog;->getWindow()Landroid/view/Window;
 
@@ -1440,14 +1440,14 @@
     invoke-virtual {v0, v1}, Landroid/view/Window;->setType(I)V
 
     .line 556
-    iget-object v0, p0, Lcom/android/settings/bluetooth/DockService;->mDialog:Landroid/app/AlertDialog;
+    iget-object v0, p0, Lcom/android/settings_ext/bluetooth/DockService;->mDialog:Landroid/app/AlertDialog;
 
-    iget-object v1, p0, Lcom/android/settings/bluetooth/DockService;->Os:Landroid/content/DialogInterface$OnDismissListener;
+    iget-object v1, p0, Lcom/android/settings_ext/bluetooth/DockService;->Os:Landroid/content/DialogInterface$OnDismissListener;
 
     invoke-virtual {v0, v1}, Landroid/app/AlertDialog;->setOnDismissListener(Landroid/content/DialogInterface$OnDismissListener;)V
 
     .line 557
-    iget-object v0, p0, Lcom/android/settings/bluetooth/DockService;->mDialog:Landroid/app/AlertDialog;
+    iget-object v0, p0, Lcom/android/settings_ext/bluetooth/DockService;->mDialog:Landroid/app/AlertDialog;
 
     invoke-virtual {v0}, Landroid/app/AlertDialog;->show()V
 
@@ -1467,7 +1467,7 @@
 
     .line 532
     :cond_4
-    invoke-virtual {p0, v6}, Lcom/android/settings/bluetooth/DockService;->getString(I)Ljava/lang/String;
+    invoke-virtual {p0, v6}, Lcom/android/settings_ext/bluetooth/DockService;->getString(I)Ljava/lang/String;
 
     move-result-object v2
 
@@ -1489,10 +1489,10 @@
 
     check-cast v1, Landroid/widget/CheckBox;
 
-    iput-object v1, p0, Lcom/android/settings/bluetooth/DockService;->Op:Landroid/widget/CheckBox;
+    iput-object v1, p0, Lcom/android/settings_ext/bluetooth/DockService;->Op:Landroid/widget/CheckBox;
 
     .line 538
-    invoke-virtual {p0}, Lcom/android/settings/bluetooth/DockService;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/settings_ext/bluetooth/DockService;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v1
 
@@ -1506,14 +1506,14 @@
 
     .line 541
     :goto_4
-    iget-object v1, p0, Lcom/android/settings/bluetooth/DockService;->Op:Landroid/widget/CheckBox;
+    iget-object v1, p0, Lcom/android/settings_ext/bluetooth/DockService;->Op:Landroid/widget/CheckBox;
 
     invoke-virtual {v1, v4}, Landroid/widget/CheckBox;->setChecked(Z)V
 
     .line 542
-    iget-object v1, p0, Lcom/android/settings/bluetooth/DockService;->Op:Landroid/widget/CheckBox;
+    iget-object v1, p0, Lcom/android/settings_ext/bluetooth/DockService;->Op:Landroid/widget/CheckBox;
 
-    iget-object v4, p0, Lcom/android/settings/bluetooth/DockService;->Or:Landroid/widget/CompoundButton$OnCheckedChangeListener;
+    iget-object v4, p0, Lcom/android/settings_ext/bluetooth/DockService;->Or:Landroid/widget/CompoundButton$OnCheckedChangeListener;
 
     invoke-virtual {v1, v4}, Landroid/widget/CheckBox;->setOnCheckedChangeListener(Landroid/widget/CompoundButton$OnCheckedChangeListener;)V
 
@@ -1539,12 +1539,12 @@
     .end packed-switch
 .end method
 
-.method static synthetic d(Lcom/android/settings/bluetooth/DockService;)I
+.method static synthetic d(Lcom/android/settings_ext/bluetooth/DockService;)I
     .locals 1
 
     .prologue
     .line 51
-    iget v0, p0, Lcom/android/settings/bluetooth/DockService;->Ok:I
+    iget v0, p0, Lcom/android/settings_ext/bluetooth/DockService;->Ok:I
 
     return v0
 .end method
@@ -1563,7 +1563,7 @@
 
     move-result-object v0
 
-    invoke-static {p0, v0}, Lcom/android/settings/bluetooth/LocalBluetoothPreferences;->n(Landroid/content/Context;Ljava/lang/String;)Z
+    invoke-static {p0, v0}, Lcom/android/settings_ext/bluetooth/LocalBluetoothPreferences;->n(Landroid/content/Context;Ljava/lang/String;)Z
 
     move-result v0
 
@@ -1572,12 +1572,12 @@
     .line 880
     const/4 v0, 0x0
 
-    invoke-direct {p0, p1, p2, v0}, Lcom/android/settings/bluetooth/DockService;->a(Landroid/bluetooth/BluetoothDevice;IZ)[Ljava/lang/CharSequence;
+    invoke-direct {p0, p1, p2, v0}, Lcom/android/settings_ext/bluetooth/DockService;->a(Landroid/bluetooth/BluetoothDevice;IZ)[Ljava/lang/CharSequence;
 
     .line 881
-    iget-object v0, p0, Lcom/android/settings/bluetooth/DockService;->mDevice:Landroid/bluetooth/BluetoothDevice;
+    iget-object v0, p0, Lcom/android/settings_ext/bluetooth/DockService;->mDevice:Landroid/bluetooth/BluetoothDevice;
 
-    invoke-direct {p0, v0, p3}, Lcom/android/settings/bluetooth/DockService;->b(Landroid/bluetooth/BluetoothDevice;I)V
+    invoke-direct {p0, v0, p3}, Lcom/android/settings_ext/bluetooth/DockService;->b(Landroid/bluetooth/BluetoothDevice;I)V
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
@@ -1590,7 +1590,7 @@
     .line 883
     :cond_0
     :try_start_1
-    invoke-direct {p0, p1, p2, p3}, Lcom/android/settings/bluetooth/DockService;->c(Landroid/bluetooth/BluetoothDevice;II)V
+    invoke-direct {p0, p1, p2, p3}, Lcom/android/settings_ext/bluetooth/DockService;->c(Landroid/bluetooth/BluetoothDevice;II)V
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
@@ -1646,11 +1646,11 @@
     .line 295
     :cond_0
     :goto_1
-    iget-object v1, p0, Lcom/android/settings/bluetooth/DockService;->mDialog:Landroid/app/AlertDialog;
+    iget-object v1, p0, Lcom/android/settings_ext/bluetooth/DockService;->mDialog:Landroid/app/AlertDialog;
 
     if-nez v1, :cond_1
 
-    iget-object v1, p0, Lcom/android/settings/bluetooth/DockService;->Ol:Landroid/bluetooth/BluetoothDevice;
+    iget-object v1, p0, Lcom/android/settings_ext/bluetooth/DockService;->Ol:Landroid/bluetooth/BluetoothDevice;
 
     if-nez v1, :cond_1
 
@@ -1661,7 +1661,7 @@
     if-nez v0, :cond_1
 
     .line 299
-    invoke-static {p0, v4}, Lcom/android/settings/bluetooth/DockEventReceiver;->a(Landroid/app/Service;I)V
+    invoke-static {p0, v4}, Lcom/android/settings_ext/bluetooth/DockEventReceiver;->a(Landroid/app/Service;I)V
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
@@ -1677,7 +1677,7 @@
 
     .line 274
     :try_start_1
-    invoke-direct {p0, v1, v3, v4}, Lcom/android/settings/bluetooth/DockService;->c(Landroid/bluetooth/BluetoothDevice;II)V
+    invoke-direct {p0, v1, v3, v4}, Lcom/android/settings_ext/bluetooth/DockService;->c(Landroid/bluetooth/BluetoothDevice;II)V
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
@@ -1694,7 +1694,7 @@
     .line 279
     :sswitch_1
     :try_start_2
-    invoke-direct {p0, v1, v3, v4}, Lcom/android/settings/bluetooth/DockService;->b(Landroid/bluetooth/BluetoothDevice;II)Z
+    invoke-direct {p0, v1, v3, v4}, Lcom/android/settings_ext/bluetooth/DockService;->b(Landroid/bluetooth/BluetoothDevice;II)Z
 
     move-result v0
 
@@ -1702,7 +1702,7 @@
 
     .line 283
     :sswitch_2
-    invoke-direct {p0, v1, v4}, Lcom/android/settings/bluetooth/DockService;->a(Landroid/bluetooth/BluetoothDevice;I)Z
+    invoke-direct {p0, v1, v4}, Lcom/android/settings_ext/bluetooth/DockService;->a(Landroid/bluetooth/BluetoothDevice;I)Z
 
     move-result v0
 
@@ -1710,13 +1710,13 @@
 
     .line 287
     :sswitch_3
-    invoke-direct {p0, v1, v3, v4}, Lcom/android/settings/bluetooth/DockService;->a(Landroid/bluetooth/BluetoothDevice;II)V
+    invoke-direct {p0, v1, v3, v4}, Lcom/android/settings_ext/bluetooth/DockService;->a(Landroid/bluetooth/BluetoothDevice;II)V
 
     goto :goto_1
 
     .line 291
     :sswitch_4
-    invoke-direct {p0, v4}, Lcom/android/settings/bluetooth/DockService;->aZ(I)Z
+    invoke-direct {p0, v4}, Lcom/android/settings_ext/bluetooth/DockService;->aZ(I)Z
     :try_end_2
     .catchall {:try_start_2 .. :try_end_2} :catchall_0
 
@@ -1740,12 +1740,12 @@
     .end sparse-switch
 .end method
 
-.method static synthetic e(Lcom/android/settings/bluetooth/DockService;)Landroid/widget/CheckBox;
+.method static synthetic e(Lcom/android/settings_ext/bluetooth/DockService;)Landroid/widget/CheckBox;
     .locals 1
 
     .prologue
     .line 51
-    iget-object v0, p0, Lcom/android/settings/bluetooth/DockService;->Op:Landroid/widget/CheckBox;
+    iget-object v0, p0, Lcom/android/settings_ext/bluetooth/DockService;->Op:Landroid/widget/CheckBox;
 
     return-object v0
 .end method
@@ -1759,7 +1759,7 @@
 
     const/4 v1, 0x0
 
-    invoke-virtual {p0, v0, v1}, Lcom/android/settings/bluetooth/DockService;->getSharedPreferences(Ljava/lang/String;I)Landroid/content/SharedPreferences;
+    invoke-virtual {p0, v0, v1}, Lcom/android/settings_ext/bluetooth/DockService;->getSharedPreferences(Ljava/lang/String;I)Landroid/content/SharedPreferences;
 
     move-result-object v0
 
@@ -1774,12 +1774,12 @@
     monitor-enter p0
 
     :try_start_0
-    invoke-direct {p0, p1}, Lcom/android/settings/bluetooth/DockService;->p(Landroid/bluetooth/BluetoothDevice;)Lcom/android/settings/bluetooth/CachedBluetoothDevice;
+    invoke-direct {p0, p1}, Lcom/android/settings_ext/bluetooth/DockService;->p(Landroid/bluetooth/BluetoothDevice;)Lcom/android/settings_ext/bluetooth/CachedBluetoothDevice;
 
     move-result-object v1
 
     .line 798
-    invoke-virtual {v1}, Lcom/android/settings/bluetooth/CachedBluetoothDevice;->mA()Ljava/util/List;
+    invoke-virtual {v1}, Lcom/android/settings_ext/bluetooth/CachedBluetoothDevice;->mA()Ljava/util/List;
 
     move-result-object v0
 
@@ -1799,10 +1799,10 @@
 
     move-result-object v0
 
-    check-cast v0, Lcom/android/settings/bluetooth/LocalBluetoothProfile;
+    check-cast v0, Lcom/android/settings_ext/bluetooth/LocalBluetoothProfile;
 
     .line 800
-    invoke-interface {v0, p1}, Lcom/android/settings/bluetooth/LocalBluetoothProfile;->c(Landroid/bluetooth/BluetoothDevice;)I
+    invoke-interface {v0, p1}, Lcom/android/settings_ext/bluetooth/LocalBluetoothProfile;->c(Landroid/bluetooth/BluetoothDevice;)I
 
     move-result v0
 
@@ -1813,7 +1813,7 @@
     .line 801
     const/4 v0, 0x0
 
-    invoke-virtual {v1, v0}, Lcom/android/settings/bluetooth/CachedBluetoothDevice;->ao(Z)V
+    invoke-virtual {v1, v0}, Lcom/android/settings_ext/bluetooth/CachedBluetoothDevice;->ao(Z)V
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
@@ -1842,49 +1842,49 @@
     const/4 v0, 0x0
 
     :try_start_0
-    iput-object v0, p0, Lcom/android/settings/bluetooth/DockService;->Oi:Ljava/lang/Runnable;
+    iput-object v0, p0, Lcom/android/settings_ext/bluetooth/DockService;->Oi:Ljava/lang/Runnable;
 
     .line 889
-    iget-object v0, p0, Lcom/android/settings/bluetooth/DockService;->Mk:Lcom/android/settings/bluetooth/LocalBluetoothProfileManager;
+    iget-object v0, p0, Lcom/android/settings_ext/bluetooth/DockService;->Mk:Lcom/android/settings_ext/bluetooth/LocalBluetoothProfileManager;
 
-    invoke-virtual {v0, p0}, Lcom/android/settings/bluetooth/LocalBluetoothProfileManager;->b(Lcom/android/settings/bluetooth/LocalBluetoothProfileManager$ServiceListener;)V
+    invoke-virtual {v0, p0}, Lcom/android/settings_ext/bluetooth/LocalBluetoothProfileManager;->b(Lcom/android/settings_ext/bluetooth/LocalBluetoothProfileManager$ServiceListener;)V
 
     .line 890
-    iget-object v0, p0, Lcom/android/settings/bluetooth/DockService;->mDialog:Landroid/app/AlertDialog;
+    iget-object v0, p0, Lcom/android/settings_ext/bluetooth/DockService;->mDialog:Landroid/app/AlertDialog;
 
     if-eqz v0, :cond_0
 
     .line 891
-    iget-object v0, p0, Lcom/android/settings/bluetooth/DockService;->mDialog:Landroid/app/AlertDialog;
+    iget-object v0, p0, Lcom/android/settings_ext/bluetooth/DockService;->mDialog:Landroid/app/AlertDialog;
 
     invoke-virtual {v0}, Landroid/app/AlertDialog;->dismiss()V
 
     .line 892
     const/4 v0, 0x0
 
-    iput-object v0, p0, Lcom/android/settings/bluetooth/DockService;->mDialog:Landroid/app/AlertDialog;
+    iput-object v0, p0, Lcom/android/settings_ext/bluetooth/DockService;->mDialog:Landroid/app/AlertDialog;
 
     .line 894
     :cond_0
     const/4 v0, 0x0
 
-    iput-object v0, p0, Lcom/android/settings/bluetooth/DockService;->mDevice:Landroid/bluetooth/BluetoothDevice;
+    iput-object v0, p0, Lcom/android/settings_ext/bluetooth/DockService;->mDevice:Landroid/bluetooth/BluetoothDevice;
 
     .line 895
     const/4 v0, 0x0
 
-    iput-object v0, p0, Lcom/android/settings/bluetooth/DockService;->Ol:Landroid/bluetooth/BluetoothDevice;
+    iput-object v0, p0, Lcom/android/settings_ext/bluetooth/DockService;->Ol:Landroid/bluetooth/BluetoothDevice;
 
     .line 896
     if-eqz p1, :cond_1
 
     .line 897
-    invoke-direct {p0, p1}, Lcom/android/settings/bluetooth/DockService;->p(Landroid/bluetooth/BluetoothDevice;)Lcom/android/settings/bluetooth/CachedBluetoothDevice;
+    invoke-direct {p0, p1}, Lcom/android/settings_ext/bluetooth/DockService;->p(Landroid/bluetooth/BluetoothDevice;)Lcom/android/settings_ext/bluetooth/CachedBluetoothDevice;
 
     move-result-object v0
 
     .line 898
-    invoke-virtual {v0}, Lcom/android/settings/bluetooth/CachedBluetoothDevice;->disconnect()V
+    invoke-virtual {v0}, Lcom/android/settings_ext/bluetooth/CachedBluetoothDevice;->disconnect()V
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
@@ -1903,14 +1903,14 @@
     throw v0
 .end method
 
-.method private p(Landroid/bluetooth/BluetoothDevice;)Lcom/android/settings/bluetooth/CachedBluetoothDevice;
+.method private p(Landroid/bluetooth/BluetoothDevice;)Lcom/android/settings_ext/bluetooth/CachedBluetoothDevice;
     .locals 3
 
     .prologue
     .line 903
-    iget-object v0, p0, Lcom/android/settings/bluetooth/DockService;->Mi:Lcom/android/settings/bluetooth/CachedBluetoothDeviceManager;
+    iget-object v0, p0, Lcom/android/settings_ext/bluetooth/DockService;->Mi:Lcom/android/settings_ext/bluetooth/CachedBluetoothDeviceManager;
 
-    invoke-virtual {v0, p1}, Lcom/android/settings/bluetooth/CachedBluetoothDeviceManager;->h(Landroid/bluetooth/BluetoothDevice;)Lcom/android/settings/bluetooth/CachedBluetoothDevice;
+    invoke-virtual {v0, p1}, Lcom/android/settings_ext/bluetooth/CachedBluetoothDeviceManager;->h(Landroid/bluetooth/BluetoothDevice;)Lcom/android/settings_ext/bluetooth/CachedBluetoothDevice;
 
     move-result-object v0
 
@@ -1918,13 +1918,13 @@
     if-nez v0, :cond_0
 
     .line 905
-    iget-object v0, p0, Lcom/android/settings/bluetooth/DockService;->Mi:Lcom/android/settings/bluetooth/CachedBluetoothDeviceManager;
+    iget-object v0, p0, Lcom/android/settings_ext/bluetooth/DockService;->Mi:Lcom/android/settings_ext/bluetooth/CachedBluetoothDeviceManager;
 
-    iget-object v1, p0, Lcom/android/settings/bluetooth/DockService;->Mh:Lcom/android/settings/bluetooth/LocalBluetoothAdapter;
+    iget-object v1, p0, Lcom/android/settings_ext/bluetooth/DockService;->Mh:Lcom/android/settings_ext/bluetooth/LocalBluetoothAdapter;
 
-    iget-object v2, p0, Lcom/android/settings/bluetooth/DockService;->Mk:Lcom/android/settings/bluetooth/LocalBluetoothProfileManager;
+    iget-object v2, p0, Lcom/android/settings_ext/bluetooth/DockService;->Mk:Lcom/android/settings_ext/bluetooth/LocalBluetoothProfileManager;
 
-    invoke-virtual {v0, v1, v2, p1}, Lcom/android/settings/bluetooth/CachedBluetoothDeviceManager;->a(Lcom/android/settings/bluetooth/LocalBluetoothAdapter;Lcom/android/settings/bluetooth/LocalBluetoothProfileManager;Landroid/bluetooth/BluetoothDevice;)Lcom/android/settings/bluetooth/CachedBluetoothDevice;
+    invoke-virtual {v0, v1, v2, p1}, Lcom/android/settings_ext/bluetooth/CachedBluetoothDeviceManager;->a(Lcom/android/settings_ext/bluetooth/LocalBluetoothAdapter;Lcom/android/settings_ext/bluetooth/LocalBluetoothProfileManager;Landroid/bluetooth/BluetoothDevice;)Lcom/android/settings_ext/bluetooth/CachedBluetoothDevice;
 
     move-result-object v0
 
@@ -1972,11 +1972,11 @@
 
     .line 477
     :goto_1
-    iget-object v3, p0, Lcom/android/settings/bluetooth/DockService;->Oh:Lcom/android/settings/bluetooth/DockService$ServiceHandler;
+    iget-object v3, p0, Lcom/android/settings_ext/bluetooth/DockService;->Oh:Lcom/android/settings_ext/bluetooth/DockService$ServiceHandler;
 
     const/4 v4, 0x0
 
-    invoke-virtual {v3, v1, v2, v4, v0}, Lcom/android/settings/bluetooth/DockService$ServiceHandler;->obtainMessage(IIILjava/lang/Object;)Landroid/os/Message;
+    invoke-virtual {v3, v1, v2, v4, v0}, Lcom/android/settings_ext/bluetooth/DockService$ServiceHandler;->obtainMessage(IIILjava/lang/Object;)Landroid/os/Message;
 
     move-result-object v0
 
@@ -2064,16 +2064,16 @@
     monitor-enter p0
 
     :try_start_0
-    iget-object v0, p0, Lcom/android/settings/bluetooth/DockService;->Mi:Lcom/android/settings/bluetooth/CachedBluetoothDeviceManager;
+    iget-object v0, p0, Lcom/android/settings_ext/bluetooth/DockService;->Mi:Lcom/android/settings_ext/bluetooth/CachedBluetoothDeviceManager;
 
-    invoke-virtual {v0}, Lcom/android/settings/bluetooth/CachedBluetoothDeviceManager;->mK()Ljava/util/Collection;
+    invoke-virtual {v0}, Lcom/android/settings_ext/bluetooth/CachedBluetoothDeviceManager;->mK()Ljava/util/Collection;
 
     move-result-object v0
 
     .line 420
-    iget-object v2, p0, Lcom/android/settings/bluetooth/DockService;->Mh:Lcom/android/settings/bluetooth/LocalBluetoothAdapter;
+    iget-object v2, p0, Lcom/android/settings_ext/bluetooth/DockService;->Mh:Lcom/android/settings_ext/bluetooth/LocalBluetoothAdapter;
 
-    invoke-virtual {v2}, Lcom/android/settings/bluetooth/LocalBluetoothAdapter;->getBondedDevices()Ljava/util/Set;
+    invoke-virtual {v2}, Lcom/android/settings_ext/bluetooth/LocalBluetoothAdapter;->getBondedDevices()Ljava/util/Set;
 
     move-result-object v2
 
@@ -2117,10 +2117,10 @@
 
     move-result-object v0
 
-    check-cast v0, Lcom/android/settings/bluetooth/CachedBluetoothDevice;
+    check-cast v0, Lcom/android/settings_ext/bluetooth/CachedBluetoothDevice;
 
     .line 430
-    invoke-virtual {v0}, Lcom/android/settings/bluetooth/CachedBluetoothDevice;->getDevice()Landroid/bluetooth/BluetoothDevice;
+    invoke-virtual {v0}, Lcom/android/settings_ext/bluetooth/CachedBluetoothDevice;->getDevice()Landroid/bluetooth/BluetoothDevice;
 
     move-result-object v4
 
@@ -2137,7 +2137,7 @@
 
     if-eqz v4, :cond_2
 
-    invoke-virtual {v0}, Lcom/android/settings/bluetooth/CachedBluetoothDevice;->isConnected()Z
+    invoke-virtual {v0}, Lcom/android/settings_ext/bluetooth/CachedBluetoothDevice;->isConnected()Z
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
@@ -2180,7 +2180,7 @@
 
     .prologue
     .line 129
-    invoke-static {p0}, Lcom/android/settings/bluetooth/LocalBluetoothManager;->ai(Landroid/content/Context;)Lcom/android/settings/bluetooth/LocalBluetoothManager;
+    invoke-static {p0}, Lcom/android/settings_ext/bluetooth/LocalBluetoothManager;->ai(Landroid/content/Context;)Lcom/android/settings_ext/bluetooth/LocalBluetoothManager;
 
     move-result-object v0
 
@@ -2200,28 +2200,28 @@
 
     .line 135
     :cond_0
-    invoke-virtual {v0}, Lcom/android/settings/bluetooth/LocalBluetoothManager;->nb()Lcom/android/settings/bluetooth/LocalBluetoothAdapter;
+    invoke-virtual {v0}, Lcom/android/settings_ext/bluetooth/LocalBluetoothManager;->nb()Lcom/android/settings_ext/bluetooth/LocalBluetoothAdapter;
 
     move-result-object v1
 
-    iput-object v1, p0, Lcom/android/settings/bluetooth/DockService;->Mh:Lcom/android/settings/bluetooth/LocalBluetoothAdapter;
+    iput-object v1, p0, Lcom/android/settings_ext/bluetooth/DockService;->Mh:Lcom/android/settings_ext/bluetooth/LocalBluetoothAdapter;
 
     .line 136
-    invoke-virtual {v0}, Lcom/android/settings/bluetooth/LocalBluetoothManager;->ne()Lcom/android/settings/bluetooth/CachedBluetoothDeviceManager;
+    invoke-virtual {v0}, Lcom/android/settings_ext/bluetooth/LocalBluetoothManager;->ne()Lcom/android/settings_ext/bluetooth/CachedBluetoothDeviceManager;
 
     move-result-object v1
 
-    iput-object v1, p0, Lcom/android/settings/bluetooth/DockService;->Mi:Lcom/android/settings/bluetooth/CachedBluetoothDeviceManager;
+    iput-object v1, p0, Lcom/android/settings_ext/bluetooth/DockService;->Mi:Lcom/android/settings_ext/bluetooth/CachedBluetoothDeviceManager;
 
     .line 137
-    invoke-virtual {v0}, Lcom/android/settings/bluetooth/LocalBluetoothManager;->ng()Lcom/android/settings/bluetooth/LocalBluetoothProfileManager;
+    invoke-virtual {v0}, Lcom/android/settings_ext/bluetooth/LocalBluetoothManager;->ng()Lcom/android/settings_ext/bluetooth/LocalBluetoothProfileManager;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/bluetooth/DockService;->Mk:Lcom/android/settings/bluetooth/LocalBluetoothProfileManager;
+    iput-object v0, p0, Lcom/android/settings_ext/bluetooth/DockService;->Mk:Lcom/android/settings_ext/bluetooth/LocalBluetoothProfileManager;
 
     .line 138
-    iget-object v0, p0, Lcom/android/settings/bluetooth/DockService;->Mk:Lcom/android/settings/bluetooth/LocalBluetoothProfileManager;
+    iget-object v0, p0, Lcom/android/settings_ext/bluetooth/DockService;->Mk:Lcom/android/settings_ext/bluetooth/LocalBluetoothProfileManager;
 
     if-nez v0, :cond_1
 
@@ -2250,18 +2250,18 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/bluetooth/DockService;->Og:Landroid/os/Looper;
+    iput-object v0, p0, Lcom/android/settings_ext/bluetooth/DockService;->Og:Landroid/os/Looper;
 
     .line 147
-    new-instance v0, Lcom/android/settings/bluetooth/DockService$ServiceHandler;
+    new-instance v0, Lcom/android/settings_ext/bluetooth/DockService$ServiceHandler;
 
-    iget-object v1, p0, Lcom/android/settings/bluetooth/DockService;->Og:Landroid/os/Looper;
+    iget-object v1, p0, Lcom/android/settings_ext/bluetooth/DockService;->Og:Landroid/os/Looper;
 
     const/4 v2, 0x0
 
-    invoke-direct {v0, p0, v1, v2}, Lcom/android/settings/bluetooth/DockService$ServiceHandler;-><init>(Lcom/android/settings/bluetooth/DockService;Landroid/os/Looper;Lcom/android/settings/bluetooth/DockService$1;)V
+    invoke-direct {v0, p0, v1, v2}, Lcom/android/settings_ext/bluetooth/DockService$ServiceHandler;-><init>(Lcom/android/settings_ext/bluetooth/DockService;Landroid/os/Looper;Lcom/android/settings_ext/bluetooth/DockService$1;)V
 
-    iput-object v0, p0, Lcom/android/settings/bluetooth/DockService;->Oh:Lcom/android/settings/bluetooth/DockService$ServiceHandler;
+    iput-object v0, p0, Lcom/android/settings_ext/bluetooth/DockService;->Oh:Lcom/android/settings_ext/bluetooth/DockService$ServiceHandler;
 
     goto :goto_0
 .end method
@@ -2273,58 +2273,58 @@
     const/4 v1, 0x0
 
     .line 153
-    iput-object v1, p0, Lcom/android/settings/bluetooth/DockService;->Oi:Ljava/lang/Runnable;
+    iput-object v1, p0, Lcom/android/settings_ext/bluetooth/DockService;->Oi:Ljava/lang/Runnable;
 
     .line 154
-    iget-object v0, p0, Lcom/android/settings/bluetooth/DockService;->mDialog:Landroid/app/AlertDialog;
+    iget-object v0, p0, Lcom/android/settings_ext/bluetooth/DockService;->mDialog:Landroid/app/AlertDialog;
 
     if-eqz v0, :cond_0
 
     .line 155
-    iget-object v0, p0, Lcom/android/settings/bluetooth/DockService;->mDialog:Landroid/app/AlertDialog;
+    iget-object v0, p0, Lcom/android/settings_ext/bluetooth/DockService;->mDialog:Landroid/app/AlertDialog;
 
     invoke-virtual {v0}, Landroid/app/AlertDialog;->dismiss()V
 
     .line 156
-    iput-object v1, p0, Lcom/android/settings/bluetooth/DockService;->mDialog:Landroid/app/AlertDialog;
+    iput-object v1, p0, Lcom/android/settings_ext/bluetooth/DockService;->mDialog:Landroid/app/AlertDialog;
 
     .line 158
     :cond_0
-    iget-object v0, p0, Lcom/android/settings/bluetooth/DockService;->Mk:Lcom/android/settings/bluetooth/LocalBluetoothProfileManager;
+    iget-object v0, p0, Lcom/android/settings_ext/bluetooth/DockService;->Mk:Lcom/android/settings_ext/bluetooth/LocalBluetoothProfileManager;
 
     if-eqz v0, :cond_1
 
     .line 159
-    iget-object v0, p0, Lcom/android/settings/bluetooth/DockService;->Mk:Lcom/android/settings/bluetooth/LocalBluetoothProfileManager;
+    iget-object v0, p0, Lcom/android/settings_ext/bluetooth/DockService;->Mk:Lcom/android/settings_ext/bluetooth/LocalBluetoothProfileManager;
 
-    invoke-virtual {v0, p0}, Lcom/android/settings/bluetooth/LocalBluetoothProfileManager;->b(Lcom/android/settings/bluetooth/LocalBluetoothProfileManager$ServiceListener;)V
+    invoke-virtual {v0, p0}, Lcom/android/settings_ext/bluetooth/LocalBluetoothProfileManager;->b(Lcom/android/settings_ext/bluetooth/LocalBluetoothProfileManager$ServiceListener;)V
 
     .line 161
     :cond_1
-    iget-object v0, p0, Lcom/android/settings/bluetooth/DockService;->Og:Landroid/os/Looper;
+    iget-object v0, p0, Lcom/android/settings_ext/bluetooth/DockService;->Og:Landroid/os/Looper;
 
     if-eqz v0, :cond_2
 
     .line 162
-    iget-object v0, p0, Lcom/android/settings/bluetooth/DockService;->Og:Landroid/os/Looper;
+    iget-object v0, p0, Lcom/android/settings_ext/bluetooth/DockService;->Og:Landroid/os/Looper;
 
     invoke-virtual {v0}, Landroid/os/Looper;->quit()V
 
     .line 165
     :cond_2
-    iput-object v1, p0, Lcom/android/settings/bluetooth/DockService;->Mh:Lcom/android/settings/bluetooth/LocalBluetoothAdapter;
+    iput-object v1, p0, Lcom/android/settings_ext/bluetooth/DockService;->Mh:Lcom/android/settings_ext/bluetooth/LocalBluetoothAdapter;
 
     .line 166
-    iput-object v1, p0, Lcom/android/settings/bluetooth/DockService;->Mi:Lcom/android/settings/bluetooth/CachedBluetoothDeviceManager;
+    iput-object v1, p0, Lcom/android/settings_ext/bluetooth/DockService;->Mi:Lcom/android/settings_ext/bluetooth/CachedBluetoothDeviceManager;
 
     .line 167
-    iput-object v1, p0, Lcom/android/settings/bluetooth/DockService;->Mk:Lcom/android/settings/bluetooth/LocalBluetoothProfileManager;
+    iput-object v1, p0, Lcom/android/settings_ext/bluetooth/DockService;->Mk:Lcom/android/settings_ext/bluetooth/LocalBluetoothProfileManager;
 
     .line 168
-    iput-object v1, p0, Lcom/android/settings/bluetooth/DockService;->Og:Landroid/os/Looper;
+    iput-object v1, p0, Lcom/android/settings_ext/bluetooth/DockService;->Og:Landroid/os/Looper;
 
     .line 169
-    iput-object v1, p0, Lcom/android/settings/bluetooth/DockService;->Oh:Lcom/android/settings/bluetooth/DockService$ServiceHandler;
+    iput-object v1, p0, Lcom/android/settings_ext/bluetooth/DockService;->Oh:Lcom/android/settings_ext/bluetooth/DockService$ServiceHandler;
 
     .line 170
     return-void
@@ -2338,24 +2338,24 @@
     monitor-enter p0
 
     :try_start_0
-    iget-object v0, p0, Lcom/android/settings/bluetooth/DockService;->Oi:Ljava/lang/Runnable;
+    iget-object v0, p0, Lcom/android/settings_ext/bluetooth/DockService;->Oi:Ljava/lang/Runnable;
 
     if-eqz v0, :cond_0
 
     .line 912
-    iget-object v0, p0, Lcom/android/settings/bluetooth/DockService;->Oi:Ljava/lang/Runnable;
+    iget-object v0, p0, Lcom/android/settings_ext/bluetooth/DockService;->Oi:Ljava/lang/Runnable;
 
     invoke-interface {v0}, Ljava/lang/Runnable;->run()V
 
     .line 913
     const/4 v0, 0x0
 
-    iput-object v0, p0, Lcom/android/settings/bluetooth/DockService;->Oi:Ljava/lang/Runnable;
+    iput-object v0, p0, Lcom/android/settings_ext/bluetooth/DockService;->Oi:Ljava/lang/Runnable;
 
     .line 914
-    iget-object v0, p0, Lcom/android/settings/bluetooth/DockService;->Mk:Lcom/android/settings/bluetooth/LocalBluetoothProfileManager;
+    iget-object v0, p0, Lcom/android/settings_ext/bluetooth/DockService;->Mk:Lcom/android/settings_ext/bluetooth/LocalBluetoothProfileManager;
 
-    invoke-virtual {v0, p0}, Lcom/android/settings/bluetooth/LocalBluetoothProfileManager;->b(Lcom/android/settings/bluetooth/LocalBluetoothProfileManager$ServiceListener;)V
+    invoke-virtual {v0, p0}, Lcom/android/settings_ext/bluetooth/LocalBluetoothProfileManager;->b(Lcom/android/settings_ext/bluetooth/LocalBluetoothProfileManager$ServiceListener;)V
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
@@ -2396,7 +2396,7 @@
     if-nez p1, :cond_1
 
     .line 192
-    invoke-static {p0, p3}, Lcom/android/settings/bluetooth/DockEventReceiver;->a(Landroid/app/Service;I)V
+    invoke-static {p0, p3}, Lcom/android/settings_ext/bluetooth/DockEventReceiver;->a(Landroid/app/Service;I)V
 
     .line 242
     :cond_0
@@ -2418,13 +2418,13 @@
     if-eqz v0, :cond_2
 
     .line 197
-    invoke-direct {p0, p1, p3}, Lcom/android/settings/bluetooth/DockService;->a(Landroid/content/Intent;I)V
+    invoke-direct {p0, p1, p3}, Lcom/android/settings_ext/bluetooth/DockService;->a(Landroid/content/Intent;I)V
 
     goto :goto_0
 
     .line 205
     :cond_2
-    invoke-direct {p0}, Lcom/android/settings/bluetooth/DockService;->mT()Landroid/content/SharedPreferences;
+    invoke-direct {p0}, Lcom/android/settings_ext/bluetooth/DockService;->mT()Landroid/content/SharedPreferences;
 
     move-result-object v1
 
@@ -2476,13 +2476,13 @@
     invoke-interface {v1}, Landroid/content/SharedPreferences$Editor;->apply()V
 
     .line 212
-    iget-object v1, p0, Lcom/android/settings/bluetooth/DockService;->Mk:Lcom/android/settings/bluetooth/LocalBluetoothProfileManager;
+    iget-object v1, p0, Lcom/android/settings_ext/bluetooth/DockService;->Mk:Lcom/android/settings_ext/bluetooth/LocalBluetoothProfileManager;
 
-    invoke-virtual {v1}, Lcom/android/settings/bluetooth/LocalBluetoothProfileManager;->nm()Lcom/android/settings/bluetooth/HeadsetProfile;
+    invoke-virtual {v1}, Lcom/android/settings_ext/bluetooth/LocalBluetoothProfileManager;->nm()Lcom/android/settings_ext/bluetooth/HeadsetProfile;
 
     move-result-object v1
 
-    invoke-direct {p0, v0, v1, p3}, Lcom/android/settings/bluetooth/DockService;->a(Landroid/bluetooth/BluetoothDevice;Lcom/android/settings/bluetooth/LocalBluetoothProfile;I)V
+    invoke-direct {p0, v0, v1, p3}, Lcom/android/settings_ext/bluetooth/DockService;->a(Landroid/bluetooth/BluetoothDevice;Lcom/android/settings_ext/bluetooth/LocalBluetoothProfile;I)V
 
     goto :goto_0
 
@@ -2535,19 +2535,19 @@
     invoke-interface {v1}, Landroid/content/SharedPreferences$Editor;->apply()V
 
     .line 222
-    iget-object v1, p0, Lcom/android/settings/bluetooth/DockService;->Mk:Lcom/android/settings/bluetooth/LocalBluetoothProfileManager;
+    iget-object v1, p0, Lcom/android/settings_ext/bluetooth/DockService;->Mk:Lcom/android/settings_ext/bluetooth/LocalBluetoothProfileManager;
 
-    invoke-virtual {v1}, Lcom/android/settings/bluetooth/LocalBluetoothProfileManager;->nl()Lcom/android/settings/bluetooth/A2dpProfile;
+    invoke-virtual {v1}, Lcom/android/settings_ext/bluetooth/LocalBluetoothProfileManager;->nl()Lcom/android/settings_ext/bluetooth/A2dpProfile;
 
     move-result-object v1
 
-    invoke-direct {p0, v0, v1, p3}, Lcom/android/settings/bluetooth/DockService;->a(Landroid/bluetooth/BluetoothDevice;Lcom/android/settings/bluetooth/LocalBluetoothProfile;I)V
+    invoke-direct {p0, v0, v1, p3}, Lcom/android/settings_ext/bluetooth/DockService;->a(Landroid/bluetooth/BluetoothDevice;Lcom/android/settings_ext/bluetooth/LocalBluetoothProfile;I)V
 
     goto :goto_0
 
     .line 227
     :cond_4
-    invoke-direct {p0, p1}, Lcom/android/settings/bluetooth/DockService;->q(Landroid/content/Intent;)Landroid/os/Message;
+    invoke-direct {p0, p1}, Lcom/android/settings_ext/bluetooth/DockService;->q(Landroid/content/Intent;)Landroid/os/Message;
 
     move-result-object v0
 
@@ -2555,7 +2555,7 @@
     if-nez v0, :cond_5
 
     .line 231
-    invoke-static {p0, p3}, Lcom/android/settings/bluetooth/DockEventReceiver;->a(Landroid/app/Service;I)V
+    invoke-static {p0, p3}, Lcom/android/settings_ext/bluetooth/DockEventReceiver;->a(Landroid/app/Service;I)V
 
     goto/16 :goto_0
 
@@ -2585,7 +2585,7 @@
     iput p3, v0, Landroid/os/Message;->arg2:I
 
     .line 240
-    invoke-direct {p0, v0}, Lcom/android/settings/bluetooth/DockService;->d(Landroid/os/Message;)V
+    invoke-direct {p0, v0}, Lcom/android/settings_ext/bluetooth/DockService;->d(Landroid/os/Message;)V
 
     goto/16 :goto_0
 .end method

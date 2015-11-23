@@ -1,19 +1,19 @@
-.class Lcom/android/settings/deviceinfo/Status$1;
+.class Lcom/android/settings_ext/deviceinfo/Status$1;
 .super Landroid/content/BroadcastReceiver;
 .source "Status.java"
 
 
 # instance fields
-.field final synthetic Tj:Lcom/android/settings/deviceinfo/Status;
+.field final synthetic Tj:Lcom/android/settings_ext/deviceinfo/Status;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/deviceinfo/Status;)V
+.method constructor <init>(Lcom/android/settings_ext/deviceinfo/Status;)V
     .locals 0
 
     .prologue
     .line 216
-    iput-object p1, p0, Lcom/android/settings/deviceinfo/Status$1;->Tj:Lcom/android/settings/deviceinfo/Status;
+    iput-object p1, p0, Lcom/android/settings_ext/deviceinfo/Status$1;->Tj:Lcom/android/settings_ext/deviceinfo/Status;
 
     invoke-direct {p0}, Landroid/content/BroadcastReceiver;-><init>()V
 
@@ -41,36 +41,36 @@
     if-eqz v0, :cond_0
 
     .line 225
-    iget-object v0, p0, Lcom/android/settings/deviceinfo/Status$1;->Tj:Lcom/android/settings/deviceinfo/Status;
+    iget-object v0, p0, Lcom/android/settings_ext/deviceinfo/Status$1;->Tj:Lcom/android/settings_ext/deviceinfo/Status;
 
-    invoke-static {v0}, Lcom/android/settings/deviceinfo/Status;->b(Lcom/android/settings/deviceinfo/Status;)Landroid/preference/Preference;
+    invoke-static {v0}, Lcom/android/settings_ext/deviceinfo/Status;->b(Lcom/android/settings_ext/deviceinfo/Status;)Landroid/preference/Preference;
 
     move-result-object v0
 
     check-cast v0, Lmiui/preference/ValuePreference;
 
-    invoke-static {p2}, Lcom/android/settings/hl;->n(Landroid/content/Intent;)Ljava/lang/String;
+    invoke-static {p2}, Lcom/android/settings_ext/hl;->n(Landroid/content/Intent;)Ljava/lang/String;
 
     move-result-object v1
 
     invoke-virtual {v0, v1}, Lmiui/preference/ValuePreference;->setValue(Ljava/lang/String;)V
 
     .line 226
-    iget-object v0, p0, Lcom/android/settings/deviceinfo/Status$1;->Tj:Lcom/android/settings/deviceinfo/Status;
+    iget-object v0, p0, Lcom/android/settings_ext/deviceinfo/Status$1;->Tj:Lcom/android/settings_ext/deviceinfo/Status;
 
-    invoke-static {v0}, Lcom/android/settings/deviceinfo/Status;->c(Lcom/android/settings/deviceinfo/Status;)Landroid/preference/Preference;
+    invoke-static {v0}, Lcom/android/settings_ext/deviceinfo/Status;->c(Lcom/android/settings_ext/deviceinfo/Status;)Landroid/preference/Preference;
 
     move-result-object v0
 
     check-cast v0, Lmiui/preference/ValuePreference;
 
-    iget-object v1, p0, Lcom/android/settings/deviceinfo/Status$1;->Tj:Lcom/android/settings/deviceinfo/Status;
+    iget-object v1, p0, Lcom/android/settings_ext/deviceinfo/Status$1;->Tj:Lcom/android/settings_ext/deviceinfo/Status;
 
-    invoke-virtual {v1}, Lcom/android/settings/deviceinfo/Status;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {v1}, Lcom/android/settings_ext/deviceinfo/Status;->getResources()Landroid/content/res/Resources;
 
     move-result-object v1
 
-    invoke-static {v1, p2}, Lcom/android/settings/hl;->a(Landroid/content/res/Resources;Landroid/content/Intent;)Ljava/lang/String;
+    invoke-static {v1, p2}, Lcom/android/settings_ext/hl;->a(Landroid/content/res/Resources;Landroid/content/Intent;)Ljava/lang/String;
 
     move-result-object v1
 

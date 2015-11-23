@@ -1,5 +1,5 @@
-.class public Lcom/android/settings/ChooseLockPattern;
-.super Lcom/android/settings/gh;
+.class public Lcom/android/settings_ext/ChooseLockPattern;
+.super Lcom/android/settings_ext/gh;
 .source "ChooseLockPattern.java"
 
 
@@ -9,7 +9,7 @@
 
     .prologue
     .line 53
-    invoke-direct {p0}, Lcom/android/settings/gh;-><init>()V
+    invoke-direct {p0}, Lcom/android/settings_ext/gh;-><init>()V
 
     .line 103
     return-void
@@ -24,7 +24,7 @@
     .line 67
     new-instance v0, Landroid/content/Intent;
 
-    invoke-super {p0}, Lcom/android/settings/gh;->getIntent()Landroid/content/Intent;
+    invoke-super {p0}, Lcom/android/settings_ext/gh;->getIntent()Landroid/content/Intent;
 
     move-result-object v1
 
@@ -33,7 +33,7 @@
     .line 68
     const-string v1, ":settings:show_fragment"
 
-    const-class v2, Lcom/android/settings/ChooseLockPattern$ChooseLockPatternFragment;
+    const-class v2, Lcom/android/settings_ext/ChooseLockPattern$ChooseLockPatternFragment;
 
     invoke-virtual {v2}, Ljava/lang/Class;->getName()Ljava/lang/String;
 
@@ -50,7 +50,7 @@
 
     .prologue
     .line 84
-    const-class v0, Lcom/android/settings/ChooseLockPattern$ChooseLockPatternFragment;
+    const-class v0, Lcom/android/settings_ext/ChooseLockPattern$ChooseLockPatternFragment;
 
     invoke-virtual {v0}, Ljava/lang/Class;->getName()Ljava/lang/String;
 
@@ -79,17 +79,17 @@
 
     .prologue
     .line 91
-    invoke-super {p0, p1}, Lcom/android/settings/gh;->onCreate(Landroid/os/Bundle;)V
+    invoke-super {p0, p1}, Lcom/android/settings_ext/gh;->onCreate(Landroid/os/Bundle;)V
 
     .line 92
     const v0, 0x7f0904e1
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/ChooseLockPattern;->getText(I)Ljava/lang/CharSequence;
+    invoke-virtual {p0, v0}, Lcom/android/settings_ext/ChooseLockPattern;->getText(I)Ljava/lang/CharSequence;
 
     move-result-object v0
 
     .line 93
-    invoke-virtual {p0, v0}, Lcom/android/settings/ChooseLockPattern;->setTitle(Ljava/lang/CharSequence;)V
+    invoke-virtual {p0, v0}, Lcom/android/settings_ext/ChooseLockPattern;->setTitle(Ljava/lang/CharSequence;)V
 
     .line 94
     return-void
@@ -100,7 +100,7 @@
 
     .prologue
     .line 100
-    invoke-super {p0, p1, p2}, Lcom/android/settings/gh;->onKeyDown(ILandroid/view/KeyEvent;)Z
+    invoke-super {p0, p1, p2}, Lcom/android/settings_ext/gh;->onKeyDown(ILandroid/view/KeyEvent;)Z
 
     move-result v0
 

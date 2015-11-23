@@ -1,4 +1,4 @@
-.class public Lcom/android/settings/i;
+.class public Lcom/android/settings_ext/i;
 .super Ljava/lang/Object;
 .source "AccountUnlockDialog.java"
 
@@ -44,30 +44,30 @@
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
-    iput-object v0, p0, Lcom/android/settings/i;->H:Ljava/util/ArrayList;
+    iput-object v0, p0, Lcom/android/settings_ext/i;->H:Ljava/util/ArrayList;
 
     .line 64
-    iput-object p1, p0, Lcom/android/settings/i;->mContext:Landroid/content/Context;
+    iput-object p1, p0, Lcom/android/settings_ext/i;->mContext:Landroid/content/Context;
 
     .line 65
-    iput-object p2, p0, Lcom/android/settings/i;->A:Landroid/app/AlertDialog;
+    iput-object p2, p0, Lcom/android/settings_ext/i;->A:Landroid/app/AlertDialog;
 
     .line 66
-    iget-object v0, p0, Lcom/android/settings/i;->A:Landroid/app/AlertDialog;
+    iget-object v0, p0, Lcom/android/settings_ext/i;->A:Landroid/app/AlertDialog;
 
     invoke-virtual {v0, p4}, Landroid/app/AlertDialog;->setTitle(Ljava/lang/CharSequence;)V
 
     .line 67
-    iput-object p5, p0, Lcom/android/settings/i;->w:Ljava/lang/String;
+    iput-object p5, p0, Lcom/android/settings_ext/i;->w:Ljava/lang/String;
 
     .line 68
-    iput-object p6, p0, Lcom/android/settings/i;->y:Landroid/security/MiuiLockPatternUtils;
+    iput-object p6, p0, Lcom/android/settings_ext/i;->y:Landroid/security/MiuiLockPatternUtils;
 
     .line 69
-    iput-object p7, p0, Lcom/android/settings/i;->mActivity:Landroid/app/Activity;
+    iput-object p7, p0, Lcom/android/settings_ext/i;->mActivity:Landroid/app/Activity;
 
     .line 70
-    iput-object p8, p0, Lcom/android/settings/i;->z:Landroid/content/Intent;
+    iput-object p8, p0, Lcom/android/settings_ext/i;->z:Landroid/content/Intent;
 
     .line 73
     const v0, 0x7f100008
@@ -78,7 +78,7 @@
 
     check-cast v0, Landroid/widget/Spinner;
 
-    iput-object v0, p0, Lcom/android/settings/i;->C:Landroid/widget/Spinner;
+    iput-object v0, p0, Lcom/android/settings_ext/i;->C:Landroid/widget/Spinner;
 
     .line 74
     const v0, 0x7f100009
@@ -89,7 +89,7 @@
 
     check-cast v0, Landroid/widget/EditText;
 
-    iput-object v0, p0, Lcom/android/settings/i;->D:Landroid/widget/EditText;
+    iput-object v0, p0, Lcom/android/settings_ext/i;->D:Landroid/widget/EditText;
 
     .line 75
     if-eqz p9, :cond_0
@@ -109,30 +109,30 @@
     if-nez v1, :cond_0
 
     .line 78
-    iget-object v1, p0, Lcom/android/settings/i;->D:Landroid/widget/EditText;
+    iget-object v1, p0, Lcom/android/settings_ext/i;->D:Landroid/widget/EditText;
 
     invoke-virtual {v1, v0}, Landroid/widget/EditText;->setText(Ljava/lang/CharSequence;)V
 
     .line 82
     :cond_0
-    invoke-direct {p0}, Lcom/android/settings/i;->j()V
+    invoke-direct {p0}, Lcom/android/settings_ext/i;->j()V
 
     .line 83
-    new-instance v0, Lcom/android/settings/j;
+    new-instance v0, Lcom/android/settings_ext/j;
 
-    invoke-direct {v0, p0}, Lcom/android/settings/j;-><init>(Lcom/android/settings/i;)V
+    invoke-direct {v0, p0}, Lcom/android/settings_ext/j;-><init>(Lcom/android/settings_ext/i;)V
 
     .line 119
-    iget-object v1, p0, Lcom/android/settings/i;->C:Landroid/widget/Spinner;
+    iget-object v1, p0, Lcom/android/settings_ext/i;->C:Landroid/widget/Spinner;
 
     invoke-virtual {v1, v0}, Landroid/widget/Spinner;->setAdapter(Landroid/widget/SpinnerAdapter;)V
 
     .line 121
-    iget-object v0, p0, Lcom/android/settings/i;->C:Landroid/widget/Spinner;
+    iget-object v0, p0, Lcom/android/settings_ext/i;->C:Landroid/widget/Spinner;
 
-    new-instance v1, Lcom/android/settings/k;
+    new-instance v1, Lcom/android/settings_ext/k;
 
-    invoke-direct {v1, p0}, Lcom/android/settings/k;-><init>(Lcom/android/settings/i;)V
+    invoke-direct {v1, p0}, Lcom/android/settings_ext/k;-><init>(Lcom/android/settings_ext/i;)V
 
     invoke-virtual {v0, v1}, Landroid/widget/Spinner;->setOnItemSelectedListener(Landroid/widget/AdapterView$OnItemSelectedListener;)V
 
@@ -145,14 +145,14 @@
 
     check-cast v0, Landroid/widget/Button;
 
-    iput-object v0, p0, Lcom/android/settings/i;->E:Landroid/widget/Button;
+    iput-object v0, p0, Lcom/android/settings_ext/i;->E:Landroid/widget/Button;
 
     .line 135
-    iget-object v0, p0, Lcom/android/settings/i;->E:Landroid/widget/Button;
+    iget-object v0, p0, Lcom/android/settings_ext/i;->E:Landroid/widget/Button;
 
-    new-instance v1, Lcom/android/settings/l;
+    new-instance v1, Lcom/android/settings_ext/l;
 
-    invoke-direct {v1, p0}, Lcom/android/settings/l;-><init>(Lcom/android/settings/i;)V
+    invoke-direct {v1, p0}, Lcom/android/settings_ext/l;-><init>(Lcom/android/settings_ext/i;)V
 
     invoke-virtual {v0, v1}, Landroid/widget/Button;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
@@ -160,17 +160,17 @@
     return-void
 .end method
 
-.method static synthetic a(Lcom/android/settings/i;Landroid/accounts/Account;)Landroid/accounts/Account;
+.method static synthetic a(Lcom/android/settings_ext/i;Landroid/accounts/Account;)Landroid/accounts/Account;
     .locals 0
 
     .prologue
     .line 40
-    iput-object p1, p0, Lcom/android/settings/i;->F:Landroid/accounts/Account;
+    iput-object p1, p0, Lcom/android/settings_ext/i;->F:Landroid/accounts/Account;
 
     return-object p1
 .end method
 
-.method public static a(Landroid/content/Context;Ljava/lang/CharSequence;Ljava/lang/String;Landroid/security/MiuiLockPatternUtils;Landroid/app/Activity;Landroid/content/Intent;Landroid/os/Bundle;)Lcom/android/settings/i;
+.method public static a(Landroid/content/Context;Ljava/lang/CharSequence;Ljava/lang/String;Landroid/security/MiuiLockPatternUtils;Landroid/app/Activity;Landroid/content/Intent;Landroid/os/Bundle;)Lcom/android/settings_ext/i;
     .locals 10
 
     .prologue
@@ -196,7 +196,7 @@
     invoke-virtual {v1, v3}, Landroid/app/AlertDialog$Builder;->setView(Landroid/view/View;)Landroid/app/AlertDialog$Builder;
 
     .line 149
-    new-instance v0, Lcom/android/settings/i;
+    new-instance v0, Lcom/android/settings_ext/i;
 
     invoke-virtual {v1}, Landroid/app/AlertDialog$Builder;->create()Landroid/app/AlertDialog;
 
@@ -216,37 +216,37 @@
 
     move-object/from16 v9, p6
 
-    invoke-direct/range {v0 .. v9}, Lcom/android/settings/i;-><init>(Landroid/content/Context;Landroid/app/AlertDialog;Landroid/view/View;Ljava/lang/CharSequence;Ljava/lang/String;Landroid/security/MiuiLockPatternUtils;Landroid/app/Activity;Landroid/content/Intent;Landroid/os/Bundle;)V
+    invoke-direct/range {v0 .. v9}, Lcom/android/settings_ext/i;-><init>(Landroid/content/Context;Landroid/app/AlertDialog;Landroid/view/View;Ljava/lang/CharSequence;Ljava/lang/String;Landroid/security/MiuiLockPatternUtils;Landroid/app/Activity;Landroid/content/Intent;Landroid/os/Bundle;)V
 
     return-object v0
 .end method
 
-.method static synthetic a(Lcom/android/settings/i;)Ljava/util/ArrayList;
+.method static synthetic a(Lcom/android/settings_ext/i;)Ljava/util/ArrayList;
     .locals 1
 
     .prologue
     .line 40
-    iget-object v0, p0, Lcom/android/settings/i;->H:Ljava/util/ArrayList;
+    iget-object v0, p0, Lcom/android/settings_ext/i;->H:Ljava/util/ArrayList;
 
     return-object v0
 .end method
 
-.method static synthetic a(Lcom/android/settings/i;Z)V
+.method static synthetic a(Lcom/android/settings_ext/i;Z)V
     .locals 0
 
     .prologue
     .line 40
-    invoke-direct {p0, p1}, Lcom/android/settings/i;->b(Z)V
+    invoke-direct {p0, p1}, Lcom/android/settings_ext/i;->b(Z)V
 
     return-void
 .end method
 
-.method static synthetic b(Lcom/android/settings/i;)Landroid/content/Context;
+.method static synthetic b(Lcom/android/settings_ext/i;)Landroid/content/Context;
     .locals 1
 
     .prologue
     .line 40
-    iget-object v0, p0, Lcom/android/settings/i;->mContext:Landroid/content/Context;
+    iget-object v0, p0, Lcom/android/settings_ext/i;->mContext:Landroid/content/Context;
 
     return-object v0
 .end method
@@ -256,11 +256,11 @@
 
     .prologue
     .line 244
-    iget-object v0, p0, Lcom/android/settings/i;->C:Landroid/widget/Spinner;
+    iget-object v0, p0, Lcom/android/settings_ext/i;->C:Landroid/widget/Spinner;
 
-    new-instance v1, Lcom/android/settings/n;
+    new-instance v1, Lcom/android/settings_ext/n;
 
-    invoke-direct {v1, p0, p1}, Lcom/android/settings/n;-><init>(Lcom/android/settings/i;Z)V
+    invoke-direct {v1, p0, p1}, Lcom/android/settings_ext/n;-><init>(Lcom/android/settings_ext/i;Z)V
 
     invoke-virtual {v0, v1}, Landroid/widget/Spinner;->post(Ljava/lang/Runnable;)Z
 
@@ -268,84 +268,84 @@
     return-void
 .end method
 
-.method static synthetic c(Lcom/android/settings/i;)Landroid/graphics/drawable/Drawable;
+.method static synthetic c(Lcom/android/settings_ext/i;)Landroid/graphics/drawable/Drawable;
     .locals 1
 
     .prologue
     .line 40
-    iget-object v0, p0, Lcom/android/settings/i;->G:Landroid/graphics/drawable/Drawable;
+    iget-object v0, p0, Lcom/android/settings_ext/i;->G:Landroid/graphics/drawable/Drawable;
 
     return-object v0
 .end method
 
-.method static synthetic d(Lcom/android/settings/i;)V
+.method static synthetic d(Lcom/android/settings_ext/i;)V
     .locals 0
 
     .prologue
     .line 40
-    invoke-direct {p0}, Lcom/android/settings/i;->k()V
+    invoke-direct {p0}, Lcom/android/settings_ext/i;->k()V
 
     return-void
 .end method
 
-.method static synthetic e(Lcom/android/settings/i;)Landroid/app/Dialog;
+.method static synthetic e(Lcom/android/settings_ext/i;)Landroid/app/Dialog;
     .locals 1
 
     .prologue
     .line 40
-    invoke-direct {p0}, Lcom/android/settings/i;->l()Landroid/app/Dialog;
+    invoke-direct {p0}, Lcom/android/settings_ext/i;->l()Landroid/app/Dialog;
 
     move-result-object v0
 
     return-object v0
 .end method
 
-.method static synthetic f(Lcom/android/settings/i;)Ljava/lang/String;
+.method static synthetic f(Lcom/android/settings_ext/i;)Ljava/lang/String;
     .locals 1
 
     .prologue
     .line 40
-    iget-object v0, p0, Lcom/android/settings/i;->w:Ljava/lang/String;
+    iget-object v0, p0, Lcom/android/settings_ext/i;->w:Ljava/lang/String;
 
     return-object v0
 .end method
 
-.method static synthetic g(Lcom/android/settings/i;)Landroid/app/AlertDialog;
+.method static synthetic g(Lcom/android/settings_ext/i;)Landroid/app/AlertDialog;
     .locals 1
 
     .prologue
     .line 40
-    iget-object v0, p0, Lcom/android/settings/i;->A:Landroid/app/AlertDialog;
+    iget-object v0, p0, Lcom/android/settings_ext/i;->A:Landroid/app/AlertDialog;
 
     return-object v0
 .end method
 
-.method static synthetic h(Lcom/android/settings/i;)Landroid/security/MiuiLockPatternUtils;
+.method static synthetic h(Lcom/android/settings_ext/i;)Landroid/security/MiuiLockPatternUtils;
     .locals 1
 
     .prologue
     .line 40
-    iget-object v0, p0, Lcom/android/settings/i;->y:Landroid/security/MiuiLockPatternUtils;
+    iget-object v0, p0, Lcom/android/settings_ext/i;->y:Landroid/security/MiuiLockPatternUtils;
 
     return-object v0
 .end method
 
-.method static synthetic i(Lcom/android/settings/i;)Landroid/app/Activity;
+.method static synthetic i(Lcom/android/settings_ext/i;)Landroid/app/Activity;
     .locals 1
 
     .prologue
     .line 40
-    iget-object v0, p0, Lcom/android/settings/i;->mActivity:Landroid/app/Activity;
+    iget-object v0, p0, Lcom/android/settings_ext/i;->mActivity:Landroid/app/Activity;
 
     return-object v0
 .end method
 
-.method static synthetic j(Lcom/android/settings/i;)Landroid/content/Intent;
+.method static synthetic j(Lcom/android/settings_ext/i;)Landroid/content/Intent;
     .locals 1
 
     .prologue
     .line 40
-    iget-object v0, p0, Lcom/android/settings/i;->z:Landroid/content/Intent;
+    iget-object v0, p0, Lcom/android/settings_ext/i;->z:Landroid/content/Intent;
 
     return-object v0
 .end method
@@ -357,7 +357,7 @@
     const/4 v1, 0x0
 
     .line 181
-    iget-object v0, p0, Lcom/android/settings/i;->mContext:Landroid/content/Context;
+    iget-object v0, p0, Lcom/android/settings_ext/i;->mContext:Landroid/content/Context;
 
     invoke-static {v0}, Landroid/accounts/AccountManager;->get(Landroid/content/Context;)Landroid/accounts/AccountManager;
 
@@ -379,7 +379,7 @@
 
     .line 184
     :try_start_0
-    iget-object v5, p0, Lcom/android/settings/i;->mContext:Landroid/content/Context;
+    iget-object v5, p0, Lcom/android/settings_ext/i;->mContext:Landroid/content/Context;
 
     iget-object v6, v4, Landroid/accounts/AuthenticatorDescription;->packageName:Ljava/lang/String;
 
@@ -411,7 +411,7 @@
 
     move-result-object v4
 
-    iput-object v4, p0, Lcom/android/settings/i;->G:Landroid/graphics/drawable/Drawable;
+    iput-object v4, p0, Lcom/android/settings_ext/i;->G:Landroid/graphics/drawable/Drawable;
     :try_end_0
     .catch Landroid/content/pm/PackageManager$NameNotFoundException; {:try_start_0 .. :try_end_0} :catch_1
     .catch Landroid/content/res/Resources$NotFoundException; {:try_start_0 .. :try_end_0} :catch_0
@@ -425,7 +425,7 @@
 
     .line 193
     :cond_1
-    iget-object v0, p0, Lcom/android/settings/i;->mContext:Landroid/content/Context;
+    iget-object v0, p0, Lcom/android/settings_ext/i;->mContext:Landroid/content/Context;
 
     invoke-static {v0}, Landroid/accounts/AccountManager;->get(Landroid/content/Context;)Landroid/accounts/AccountManager;
 
@@ -448,7 +448,7 @@
     aget-object v4, v2, v0
 
     .line 195
-    iget-object v5, p0, Lcom/android/settings/i;->H:Ljava/util/ArrayList;
+    iget-object v5, p0, Lcom/android/settings_ext/i;->H:Ljava/util/ArrayList;
 
     invoke-virtual {v5, v4}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
@@ -459,7 +459,7 @@
 
     .line 197
     :cond_2
-    iget-object v0, p0, Lcom/android/settings/i;->H:Ljava/util/ArrayList;
+    iget-object v0, p0, Lcom/android/settings_ext/i;->H:Ljava/util/ArrayList;
 
     invoke-virtual {v0}, Ljava/util/ArrayList;->size()I
 
@@ -468,7 +468,7 @@
     if-lez v0, :cond_3
 
     .line 198
-    iget-object v0, p0, Lcom/android/settings/i;->H:Ljava/util/ArrayList;
+    iget-object v0, p0, Lcom/android/settings_ext/i;->H:Ljava/util/ArrayList;
 
     invoke-virtual {v0, v1}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
 
@@ -476,7 +476,7 @@
 
     check-cast v0, Landroid/accounts/Account;
 
-    iput-object v0, p0, Lcom/android/settings/i;->F:Landroid/accounts/Account;
+    iput-object v0, p0, Lcom/android/settings_ext/i;->F:Landroid/accounts/Account;
 
     .line 200
     :cond_3
@@ -495,12 +495,12 @@
     goto :goto_1
 .end method
 
-.method static synthetic k(Lcom/android/settings/i;)Landroid/widget/EditText;
+.method static synthetic k(Lcom/android/settings_ext/i;)Landroid/widget/EditText;
     .locals 1
 
     .prologue
     .line 40
-    iget-object v0, p0, Lcom/android/settings/i;->D:Landroid/widget/EditText;
+    iget-object v0, p0, Lcom/android/settings_ext/i;->D:Landroid/widget/EditText;
 
     return-object v0
 .end method
@@ -514,7 +514,7 @@
     const/4 v2, 0x0
 
     .line 203
-    iget-object v0, p0, Lcom/android/settings/i;->D:Landroid/widget/EditText;
+    iget-object v0, p0, Lcom/android/settings_ext/i;->D:Landroid/widget/EditText;
 
     invoke-virtual {v0}, Landroid/widget/EditText;->getText()Landroid/text/Editable;
 
@@ -532,7 +532,7 @@
     if-eqz v1, :cond_0
 
     .line 205
-    iget-object v0, p0, Lcom/android/settings/i;->mContext:Landroid/content/Context;
+    iget-object v0, p0, Lcom/android/settings_ext/i;->mContext:Landroid/content/Context;
 
     const v1, 0x7f090d3c
 
@@ -548,18 +548,18 @@
 
     .line 210
     :cond_0
-    iget-object v1, p0, Lcom/android/settings/i;->F:Landroid/accounts/Account;
+    iget-object v1, p0, Lcom/android/settings_ext/i;->F:Landroid/accounts/Account;
 
     if-nez v1, :cond_1
 
     .line 211
-    invoke-direct {p0, v2}, Lcom/android/settings/i;->b(Z)V
+    invoke-direct {p0, v2}, Lcom/android/settings_ext/i;->b(Z)V
 
     goto :goto_0
 
     .line 214
     :cond_1
-    invoke-direct {p0}, Lcom/android/settings/i;->l()Landroid/app/Dialog;
+    invoke-direct {p0}, Lcom/android/settings_ext/i;->l()Landroid/app/Dialog;
 
     move-result-object v1
 
@@ -576,17 +576,17 @@
     invoke-virtual {v2, v1, v0}, Landroid/os/Bundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 217
-    iget-object v0, p0, Lcom/android/settings/i;->mContext:Landroid/content/Context;
+    iget-object v0, p0, Lcom/android/settings_ext/i;->mContext:Landroid/content/Context;
 
     invoke-static {v0}, Landroid/accounts/AccountManager;->get(Landroid/content/Context;)Landroid/accounts/AccountManager;
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/android/settings/i;->F:Landroid/accounts/Account;
+    iget-object v1, p0, Lcom/android/settings_ext/i;->F:Landroid/accounts/Account;
 
-    new-instance v4, Lcom/android/settings/m;
+    new-instance v4, Lcom/android/settings_ext/m;
 
-    invoke-direct {v4, p0}, Lcom/android/settings/m;-><init>(Lcom/android/settings/i;)V
+    invoke-direct {v4, p0}, Lcom/android/settings_ext/m;-><init>(Lcom/android/settings_ext/i;)V
 
     move-object v5, v3
 
@@ -600,23 +600,23 @@
 
     .prologue
     .line 232
-    iget-object v0, p0, Lcom/android/settings/i;->B:Landroid/app/ProgressDialog;
+    iget-object v0, p0, Lcom/android/settings_ext/i;->B:Landroid/app/ProgressDialog;
 
     if-nez v0, :cond_0
 
     .line 233
     new-instance v0, Landroid/app/ProgressDialog;
 
-    iget-object v1, p0, Lcom/android/settings/i;->mContext:Landroid/content/Context;
+    iget-object v1, p0, Lcom/android/settings_ext/i;->mContext:Landroid/content/Context;
 
     invoke-direct {v0, v1}, Landroid/app/ProgressDialog;-><init>(Landroid/content/Context;)V
 
-    iput-object v0, p0, Lcom/android/settings/i;->B:Landroid/app/ProgressDialog;
+    iput-object v0, p0, Lcom/android/settings_ext/i;->B:Landroid/app/ProgressDialog;
 
     .line 234
-    iget-object v0, p0, Lcom/android/settings/i;->B:Landroid/app/ProgressDialog;
+    iget-object v0, p0, Lcom/android/settings_ext/i;->B:Landroid/app/ProgressDialog;
 
-    iget-object v1, p0, Lcom/android/settings/i;->mContext:Landroid/content/Context;
+    iget-object v1, p0, Lcom/android/settings_ext/i;->mContext:Landroid/content/Context;
 
     const v2, 0x7f090d3d
 
@@ -627,14 +627,14 @@
     invoke-virtual {v0, v1}, Landroid/app/ProgressDialog;->setMessage(Ljava/lang/CharSequence;)V
 
     .line 236
-    iget-object v0, p0, Lcom/android/settings/i;->B:Landroid/app/ProgressDialog;
+    iget-object v0, p0, Lcom/android/settings_ext/i;->B:Landroid/app/ProgressDialog;
 
     const/4 v1, 0x1
 
     invoke-virtual {v0, v1}, Landroid/app/ProgressDialog;->setIndeterminate(Z)V
 
     .line 237
-    iget-object v0, p0, Lcom/android/settings/i;->B:Landroid/app/ProgressDialog;
+    iget-object v0, p0, Lcom/android/settings_ext/i;->B:Landroid/app/ProgressDialog;
 
     const/4 v1, 0x0
 
@@ -642,7 +642,7 @@
 
     .line 239
     :cond_0
-    iget-object v0, p0, Lcom/android/settings/i;->B:Landroid/app/ProgressDialog;
+    iget-object v0, p0, Lcom/android/settings_ext/i;->B:Landroid/app/ProgressDialog;
 
     return-object v0
 .end method
@@ -654,23 +654,23 @@
 
     .prologue
     .line 159
-    iget-object v0, p0, Lcom/android/settings/i;->A:Landroid/app/AlertDialog;
+    iget-object v0, p0, Lcom/android/settings_ext/i;->A:Landroid/app/AlertDialog;
 
     if-eqz v0, :cond_0
 
     .line 160
-    iget-object v0, p0, Lcom/android/settings/i;->A:Landroid/app/AlertDialog;
+    iget-object v0, p0, Lcom/android/settings_ext/i;->A:Landroid/app/AlertDialog;
 
     invoke-virtual {v0}, Landroid/app/AlertDialog;->dismiss()V
 
     .line 162
     :cond_0
-    iget-object v0, p0, Lcom/android/settings/i;->B:Landroid/app/ProgressDialog;
+    iget-object v0, p0, Lcom/android/settings_ext/i;->B:Landroid/app/ProgressDialog;
 
     if-eqz v0, :cond_1
 
     .line 163
-    iget-object v0, p0, Lcom/android/settings/i;->B:Landroid/app/ProgressDialog;
+    iget-object v0, p0, Lcom/android/settings_ext/i;->B:Landroid/app/ProgressDialog;
 
     invoke-virtual {v0}, Landroid/app/ProgressDialog;->dismiss()V
 
@@ -684,11 +684,11 @@
 
     .prologue
     .line 176
-    iget-object v0, p0, Lcom/android/settings/i;->A:Landroid/app/AlertDialog;
+    iget-object v0, p0, Lcom/android/settings_ext/i;->A:Landroid/app/AlertDialog;
 
     if-eqz v0, :cond_0
 
-    iget-object v0, p0, Lcom/android/settings/i;->A:Landroid/app/AlertDialog;
+    iget-object v0, p0, Lcom/android/settings_ext/i;->A:Landroid/app/AlertDialog;
 
     invoke-virtual {v0}, Landroid/app/AlertDialog;->isShowing()Z
 
@@ -697,11 +697,11 @@
     if-nez v0, :cond_1
 
     :cond_0
-    iget-object v0, p0, Lcom/android/settings/i;->B:Landroid/app/ProgressDialog;
+    iget-object v0, p0, Lcom/android/settings_ext/i;->B:Landroid/app/ProgressDialog;
 
     if-eqz v0, :cond_2
 
-    iget-object v0, p0, Lcom/android/settings/i;->B:Landroid/app/ProgressDialog;
+    iget-object v0, p0, Lcom/android/settings_ext/i;->B:Landroid/app/ProgressDialog;
 
     invoke-virtual {v0}, Landroid/app/ProgressDialog;->isShowing()Z
 
@@ -731,7 +731,7 @@
     invoke-direct {v0}, Landroid/os/Bundle;-><init>()V
 
     .line 169
-    iget-object v1, p0, Lcom/android/settings/i;->D:Landroid/widget/EditText;
+    iget-object v1, p0, Lcom/android/settings_ext/i;->D:Landroid/widget/EditText;
 
     invoke-virtual {v1}, Landroid/widget/EditText;->getText()Landroid/text/Editable;
 
@@ -742,7 +742,7 @@
     .line 170
     const-string v1, "input_password"
 
-    iget-object v2, p0, Lcom/android/settings/i;->D:Landroid/widget/EditText;
+    iget-object v2, p0, Lcom/android/settings_ext/i;->D:Landroid/widget/EditText;
 
     invoke-virtual {v2}, Landroid/widget/EditText;->getText()Landroid/text/Editable;
 
@@ -764,12 +764,12 @@
 
     .prologue
     .line 153
-    iget-object v0, p0, Lcom/android/settings/i;->A:Landroid/app/AlertDialog;
+    iget-object v0, p0, Lcom/android/settings_ext/i;->A:Landroid/app/AlertDialog;
 
     if-eqz v0, :cond_0
 
     .line 154
-    iget-object v0, p0, Lcom/android/settings/i;->A:Landroid/app/AlertDialog;
+    iget-object v0, p0, Lcom/android/settings_ext/i;->A:Landroid/app/AlertDialog;
 
     invoke-virtual {v0}, Landroid/app/AlertDialog;->show()V
 

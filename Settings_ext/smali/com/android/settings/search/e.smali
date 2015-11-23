@@ -1,4 +1,4 @@
-.class public Lcom/android/settings/search/e;
+.class public Lcom/android/settings_ext/search/e;
 .super Ljava/lang/Object;
 .source "Index.java"
 
@@ -16,13 +16,13 @@
 
 .field private static aiI:J
 
-.field private static aiJ:Lcom/android/settings/search/e;
+.field private static aiJ:Lcom/android/settings_ext/search/e;
 
 
 # instance fields
 .field private final aiK:Ljava/util/concurrent/atomic/AtomicBoolean;
 
-.field private final aiL:Lcom/android/settings/search/h;
+.field private final aiL:Lcom/android/settings_ext/search/h;
 
 .field private final aiM:Ljava/lang/String;
 
@@ -123,7 +123,7 @@
 
     aput-object v2, v0, v1
 
-    sput-object v0, Lcom/android/settings/search/e;->aiF:[Ljava/lang/String;
+    sput-object v0, Lcom/android/settings_ext/search/e;->aiF:[Ljava/lang/String;
 
     .line 129
     new-array v0, v6, [Ljava/lang/String;
@@ -140,7 +140,7 @@
 
     aput-object v1, v0, v5
 
-    sput-object v0, Lcom/android/settings/search/e;->aiG:[Ljava/lang/String;
+    sput-object v0, Lcom/android/settings_ext/search/e;->aiG:[Ljava/lang/String;
 
     .line 135
     const/4 v0, 0x5
@@ -167,19 +167,19 @@
 
     aput-object v1, v0, v7
 
-    sput-object v0, Lcom/android/settings/search/e;->aiH:[Ljava/lang/String;
+    sput-object v0, Lcom/android/settings_ext/search/e;->aiH:[Ljava/lang/String;
 
     .line 144
     const-wide/16 v0, 0x40
 
-    sput-wide v0, Lcom/android/settings/search/e;->aiI:J
+    sput-wide v0, Lcom/android/settings_ext/search/e;->aiI:J
 
     .line 161
     invoke-static {}, Ljava/util/Collections;->emptyList()Ljava/util/List;
 
     move-result-object v0
 
-    sput-object v0, Lcom/android/settings/search/e;->EMPTY_LIST:Ljava/util/List;
+    sput-object v0, Lcom/android/settings_ext/search/e;->EMPTY_LIST:Ljava/util/List;
 
     .line 165
     const-string v0, "\\p{InCombiningDiacriticalMarks}+"
@@ -188,7 +188,7 @@
 
     move-result-object v0
 
-    sput-object v0, Lcom/android/settings/search/e;->Eq:Ljava/util/regex/Pattern;
+    sput-object v0, Lcom/android/settings_ext/search/e;->Eq:Ljava/util/regex/Pattern;
 
     return-void
 .end method
@@ -207,20 +207,20 @@
 
     invoke-direct {v0, v1}, Ljava/util/concurrent/atomic/AtomicBoolean;-><init>(Z)V
 
-    iput-object v0, p0, Lcom/android/settings/search/e;->aiK:Ljava/util/concurrent/atomic/AtomicBoolean;
+    iput-object v0, p0, Lcom/android/settings_ext/search/e;->aiK:Ljava/util/concurrent/atomic/AtomicBoolean;
 
     .line 204
-    new-instance v0, Lcom/android/settings/search/h;
+    new-instance v0, Lcom/android/settings_ext/search/h;
 
-    invoke-direct {v0}, Lcom/android/settings/search/h;-><init>()V
+    invoke-direct {v0}, Lcom/android/settings_ext/search/h;-><init>()V
 
-    iput-object v0, p0, Lcom/android/settings/search/e;->aiL:Lcom/android/settings/search/h;
+    iput-object v0, p0, Lcom/android/settings_ext/search/e;->aiL:Lcom/android/settings_ext/search/h;
 
     .line 221
-    iput-object p1, p0, Lcom/android/settings/search/e;->mContext:Landroid/content/Context;
+    iput-object p1, p0, Lcom/android/settings_ext/search/e;->mContext:Landroid/content/Context;
 
     .line 222
-    iput-object p2, p0, Lcom/android/settings/search/e;->aiM:Ljava/lang/String;
+    iput-object p2, p0, Lcom/android/settings_ext/search/e;->aiM:Ljava/lang/String;
 
     .line 223
     return-void
@@ -304,21 +304,21 @@
     const/4 v0, 0x0
 
     :goto_0
-    sget-object v2, Lcom/android/settings/search/e;->aiF:[Ljava/lang/String;
+    sget-object v2, Lcom/android/settings_ext/search/e;->aiF:[Ljava/lang/String;
 
     array-length v2, v2
 
     if-ge v0, v2, :cond_1
 
     .line 654
-    sget-object v2, Lcom/android/settings/search/e;->aiF:[Ljava/lang/String;
+    sget-object v2, Lcom/android/settings_ext/search/e;->aiF:[Ljava/lang/String;
 
     aget-object v2, v2, v0
 
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     .line 655
-    sget-object v2, Lcom/android/settings/search/e;->aiF:[Ljava/lang/String;
+    sget-object v2, Lcom/android/settings_ext/search/e;->aiF:[Ljava/lang/String;
 
     array-length v2, v2
 
@@ -354,7 +354,7 @@
     invoke-virtual {v1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     .line 662
-    invoke-direct {p0, p1, p2}, Lcom/android/settings/search/e;->b(Ljava/lang/String;[Ljava/lang/String;)Ljava/lang/String;
+    invoke-direct {p0, p1, p2}, Lcom/android/settings_ext/search/e;->b(Ljava/lang/String;[Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 
@@ -378,7 +378,7 @@
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
 
     .line 642
-    invoke-direct {p0, p1, p2}, Lcom/android/settings/search/e;->a(Ljava/lang/String;[Ljava/lang/String;)Ljava/lang/String;
+    invoke-direct {p0, p1, p2}, Lcom/android/settings_ext/search/e;->a(Ljava/lang/String;[Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v1
 
@@ -461,7 +461,7 @@
     invoke-static {v0, v1}, Landroid/util/Log;->w(Ljava/lang/String;Ljava/lang/String;)I
 
     .line 373
-    sget-object v0, Lcom/android/settings/search/e;->EMPTY_LIST:Ljava/util/List;
+    sget-object v0, Lcom/android/settings_ext/search/e;->EMPTY_LIST:Ljava/util/List;
 
     .line 387
     :goto_0
@@ -518,12 +518,12 @@
     goto :goto_0
 .end method
 
-.method static synthetic a(Lcom/android/settings/search/e;)Ljava/util/concurrent/atomic/AtomicBoolean;
+.method static synthetic a(Lcom/android/settings_ext/search/e;)Ljava/util/concurrent/atomic/AtomicBoolean;
     .locals 1
 
     .prologue
     .line 88
-    iget-object v0, p0, Lcom/android/settings/search/e;->aiK:Ljava/util/concurrent/atomic/AtomicBoolean;
+    iget-object v0, p0, Lcom/android/settings_ext/search/e;->aiK:Ljava/util/concurrent/atomic/AtomicBoolean;
 
     return-object v0
 .end method
@@ -676,7 +676,7 @@
 
     move-object/from16 v2, v23
 
-    invoke-direct {v0, v1, v2}, Lcom/android/settings/search/e;->c(Landroid/content/Context;Landroid/util/AttributeSet;)Ljava/lang/String;
+    invoke-direct {v0, v1, v2}, Lcom/android/settings_ext/search/e;->c(Landroid/content/Context;Landroid/util/AttributeSet;)Ljava/lang/String;
 
     move-result-object v11
 
@@ -687,7 +687,7 @@
 
     move-object/from16 v2, v23
 
-    invoke-direct {v0, v1, v2}, Lcom/android/settings/search/e;->b(Landroid/content/Context;Landroid/util/AttributeSet;)Ljava/lang/String;
+    invoke-direct {v0, v1, v2}, Lcom/android/settings_ext/search/e;->b(Landroid/content/Context;Landroid/util/AttributeSet;)Ljava/lang/String;
 
     move-result-object v19
 
@@ -709,7 +709,7 @@
 
     move-object/from16 v2, v23
 
-    invoke-direct {v0, v1, v2}, Lcom/android/settings/search/e;->c(Landroid/content/Context;Landroid/util/AttributeSet;)Ljava/lang/String;
+    invoke-direct {v0, v1, v2}, Lcom/android/settings_ext/search/e;->c(Landroid/content/Context;Landroid/util/AttributeSet;)Ljava/lang/String;
 
     move-result-object v6
 
@@ -720,7 +720,7 @@
 
     move-object/from16 v2, v23
 
-    invoke-direct {v0, v1, v2}, Lcom/android/settings/search/e;->d(Landroid/content/Context;Landroid/util/AttributeSet;)Ljava/lang/String;
+    invoke-direct {v0, v1, v2}, Lcom/android/settings_ext/search/e;->d(Landroid/content/Context;Landroid/util/AttributeSet;)Ljava/lang/String;
 
     move-result-object v7
 
@@ -731,7 +731,7 @@
 
     move-object/from16 v2, v23
 
-    invoke-direct {v0, v1, v2}, Lcom/android/settings/search/e;->h(Landroid/content/Context;Landroid/util/AttributeSet;)Ljava/lang/String;
+    invoke-direct {v0, v1, v2}, Lcom/android/settings_ext/search/e;->h(Landroid/content/Context;Landroid/util/AttributeSet;)Ljava/lang/String;
 
     move-result-object v14
 
@@ -762,7 +762,7 @@
 
     move-object/from16 v17, p10
 
-    invoke-direct/range {v3 .. v20}, Lcom/android/settings/search/e;->a(Landroid/database/sqlite/SQLiteDatabase;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;IILjava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ZLjava/lang/String;I)V
+    invoke-direct/range {v3 .. v20}, Lcom/android/settings_ext/search/e;->a(Landroid/database/sqlite/SQLiteDatabase;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;IILjava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ZLjava/lang/String;I)V
 
     .line 861
     :cond_4
@@ -809,7 +809,7 @@
 
     move-object/from16 v2, v23
 
-    invoke-direct {v0, v1, v2}, Lcom/android/settings/search/e;->b(Landroid/content/Context;Landroid/util/AttributeSet;)Ljava/lang/String;
+    invoke-direct {v0, v1, v2}, Lcom/android/settings_ext/search/e;->b(Landroid/content/Context;Landroid/util/AttributeSet;)Ljava/lang/String;
 
     move-result-object v19
 
@@ -831,7 +831,7 @@
 
     move-object/from16 v2, v23
 
-    invoke-direct {v0, v1, v2}, Lcom/android/settings/search/e;->c(Landroid/content/Context;Landroid/util/AttributeSet;)Ljava/lang/String;
+    invoke-direct {v0, v1, v2}, Lcom/android/settings_ext/search/e;->c(Landroid/content/Context;Landroid/util/AttributeSet;)Ljava/lang/String;
 
     move-result-object v6
 
@@ -842,7 +842,7 @@
 
     move-object/from16 v2, v23
 
-    invoke-direct {v0, v1, v2}, Lcom/android/settings/search/e;->h(Landroid/content/Context;Landroid/util/AttributeSet;)Ljava/lang/String;
+    invoke-direct {v0, v1, v2}, Lcom/android/settings_ext/search/e;->h(Landroid/content/Context;Landroid/util/AttributeSet;)Ljava/lang/String;
 
     move-result-object v14
 
@@ -862,7 +862,7 @@
 
     move-object/from16 v2, v23
 
-    invoke-direct {v0, v1, v2}, Lcom/android/settings/search/e;->d(Landroid/content/Context;Landroid/util/AttributeSet;)Ljava/lang/String;
+    invoke-direct {v0, v1, v2}, Lcom/android/settings_ext/search/e;->d(Landroid/content/Context;Landroid/util/AttributeSet;)Ljava/lang/String;
 
     move-result-object v7
 
@@ -885,7 +885,7 @@
 
     move-object/from16 v2, v23
 
-    invoke-direct {v0, v1, v2}, Lcom/android/settings/search/e;->g(Landroid/content/Context;Landroid/util/AttributeSet;)Ljava/lang/String;
+    invoke-direct {v0, v1, v2}, Lcom/android/settings_ext/search/e;->g(Landroid/content/Context;Landroid/util/AttributeSet;)Ljava/lang/String;
 
     move-result-object v9
 
@@ -915,7 +915,7 @@
 
     move-object/from16 v17, p10
 
-    invoke-direct/range {v3 .. v20}, Lcom/android/settings/search/e;->a(Landroid/database/sqlite/SQLiteDatabase;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;IILjava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ZLjava/lang/String;I)V
+    invoke-direct/range {v3 .. v20}, Lcom/android/settings_ext/search/e;->a(Landroid/database/sqlite/SQLiteDatabase;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;IILjava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ZLjava/lang/String;I)V
     :try_end_3
     .catch Lorg/xmlpull/v1/XmlPullParserException; {:try_start_3 .. :try_end_3} :catch_0
     .catch Ljava/io/IOException; {:try_start_3 .. :try_end_3} :catch_1
@@ -955,7 +955,7 @@
 
     move-object/from16 v2, v23
 
-    invoke-direct {v0, v1, v2}, Lcom/android/settings/search/e;->e(Landroid/content/Context;Landroid/util/AttributeSet;)Ljava/lang/String;
+    invoke-direct {v0, v1, v2}, Lcom/android/settings_ext/search/e;->e(Landroid/content/Context;Landroid/util/AttributeSet;)Ljava/lang/String;
 
     move-result-object v7
 
@@ -966,7 +966,7 @@
 
     move-object/from16 v2, v23
 
-    invoke-direct {v0, v1, v2}, Lcom/android/settings/search/e;->f(Landroid/content/Context;Landroid/util/AttributeSet;)Ljava/lang/String;
+    invoke-direct {v0, v1, v2}, Lcom/android/settings_ext/search/e;->f(Landroid/content/Context;Landroid/util/AttributeSet;)Ljava/lang/String;
 
     move-result-object v8
 
@@ -990,7 +990,7 @@
 
     move-object/from16 v2, v23
 
-    invoke-direct {v0, v1, v2}, Lcom/android/settings/search/e;->d(Landroid/content/Context;Landroid/util/AttributeSet;)Ljava/lang/String;
+    invoke-direct {v0, v1, v2}, Lcom/android/settings_ext/search/e;->d(Landroid/content/Context;Landroid/util/AttributeSet;)Ljava/lang/String;
 
     move-result-object v7
 
@@ -1020,7 +1020,7 @@
 
     move-object/from16 v17, p10
 
-    invoke-direct/range {v3 .. v20}, Lcom/android/settings/search/e;->a(Landroid/database/sqlite/SQLiteDatabase;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;IILjava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ZLjava/lang/String;I)V
+    invoke-direct/range {v3 .. v20}, Lcom/android/settings_ext/search/e;->a(Landroid/database/sqlite/SQLiteDatabase;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;IILjava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ZLjava/lang/String;I)V
     :try_end_5
     .catch Lorg/xmlpull/v1/XmlPullParserException; {:try_start_5 .. :try_end_5} :catch_0
     .catch Ljava/io/IOException; {:try_start_5 .. :try_end_5} :catch_1
@@ -1061,7 +1061,7 @@
     goto/16 :goto_0
 .end method
 
-.method private a(Landroid/content/Context;Landroid/database/sqlite/SQLiteDatabase;Ljava/lang/String;Lcom/android/settings/search/l;Ljava/lang/String;IIZLjava/util/List;)V
+.method private a(Landroid/content/Context;Landroid/database/sqlite/SQLiteDatabase;Ljava/lang/String;Lcom/android/settings_ext/search/l;Ljava/lang/String;IIZLjava/util/List;)V
     .locals 24
 
     .prologue
@@ -1105,7 +1105,7 @@
 
     move/from16 v2, p8
 
-    invoke-interface {v0, v1, v2}, Lcom/android/settings/search/l;->a(Landroid/content/Context;Z)Ljava/util/List;
+    invoke-interface {v0, v1, v2}, Lcom/android/settings_ext/search/l;->a(Landroid/content/Context;Z)Ljava/util/List;
 
     move-result-object v22
 
@@ -1138,10 +1138,10 @@
 
     move-result-object v3
 
-    check-cast v3, Lcom/android/settings/search/n;
+    check-cast v3, Lcom/android/settings_ext/search/n;
 
     .line 931
-    iget-object v4, v3, Lcom/android/settings/search/n;->locale:Ljava/util/Locale;
+    iget-object v4, v3, Lcom/android/settings_ext/search/n;->locale:Ljava/util/Locale;
 
     invoke-virtual {v4}, Ljava/util/Locale;->toString()Ljava/lang/String;
 
@@ -1166,7 +1166,7 @@
 
     .line 935
     :cond_3
-    iget-object v4, v3, Lcom/android/settings/search/n;->key:Ljava/lang/String;
+    iget-object v4, v3, Lcom/android/settings_ext/search/n;->key:Ljava/lang/String;
 
     move-object/from16 v0, p9
 
@@ -1177,37 +1177,37 @@
     if-nez v4, :cond_2
 
     .line 939
-    iget-object v6, v3, Lcom/android/settings/search/n;->title:Ljava/lang/String;
+    iget-object v6, v3, Lcom/android/settings_ext/search/n;->title:Ljava/lang/String;
 
-    iget-object v7, v3, Lcom/android/settings/search/n;->Rz:Ljava/lang/String;
+    iget-object v7, v3, Lcom/android/settings_ext/search/n;->Rz:Ljava/lang/String;
 
-    iget-object v8, v3, Lcom/android/settings/search/n;->RA:Ljava/lang/String;
+    iget-object v8, v3, Lcom/android/settings_ext/search/n;->RA:Ljava/lang/String;
 
-    iget-object v9, v3, Lcom/android/settings/search/n;->RB:Ljava/lang/String;
+    iget-object v9, v3, Lcom/android/settings_ext/search/n;->RB:Ljava/lang/String;
 
-    iget-object v11, v3, Lcom/android/settings/search/n;->aiY:Ljava/lang/String;
+    iget-object v11, v3, Lcom/android/settings_ext/search/n;->aiY:Ljava/lang/String;
 
-    iget-object v14, v3, Lcom/android/settings/search/n;->aiX:Ljava/lang/String;
+    iget-object v14, v3, Lcom/android/settings_ext/search/n;->aiX:Ljava/lang/String;
 
-    iget-object v15, v3, Lcom/android/settings/search/n;->intentAction:Ljava/lang/String;
+    iget-object v15, v3, Lcom/android/settings_ext/search/n;->intentAction:Ljava/lang/String;
 
-    iget-object v0, v3, Lcom/android/settings/search/n;->intentTargetPackage:Ljava/lang/String;
+    iget-object v0, v3, Lcom/android/settings_ext/search/n;->intentTargetPackage:Ljava/lang/String;
 
     move-object/from16 v16, v0
 
-    iget-object v0, v3, Lcom/android/settings/search/n;->intentTargetClass:Ljava/lang/String;
+    iget-object v0, v3, Lcom/android/settings_ext/search/n;->intentTargetClass:Ljava/lang/String;
 
     move-object/from16 v17, v0
 
-    iget-boolean v0, v3, Lcom/android/settings/search/n;->enabled:Z
+    iget-boolean v0, v3, Lcom/android/settings_ext/search/n;->enabled:Z
 
     move/from16 v18, v0
 
-    iget-object v0, v3, Lcom/android/settings/search/n;->key:Ljava/lang/String;
+    iget-object v0, v3, Lcom/android/settings_ext/search/n;->key:Ljava/lang/String;
 
     move-object/from16 v19, v0
 
-    iget v0, v3, Lcom/android/settings/search/n;->userId:I
+    iget v0, v3, Lcom/android/settings_ext/search/n;->userId:I
 
     move/from16 v20, v0
 
@@ -1223,7 +1223,7 @@
 
     move/from16 v13, p7
 
-    invoke-direct/range {v3 .. v20}, Lcom/android/settings/search/e;->a(Landroid/database/sqlite/SQLiteDatabase;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;IILjava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ZLjava/lang/String;I)V
+    invoke-direct/range {v3 .. v20}, Lcom/android/settings_ext/search/e;->a(Landroid/database/sqlite/SQLiteDatabase;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;IILjava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ZLjava/lang/String;I)V
 
     goto :goto_1
 
@@ -1235,7 +1235,7 @@
 
     move/from16 v2, p8
 
-    invoke-interface {v0, v1, v2}, Lcom/android/settings/search/l;->b(Landroid/content/Context;Z)Ljava/util/List;
+    invoke-interface {v0, v1, v2}, Lcom/android/settings_ext/search/l;->b(Landroid/content/Context;Z)Ljava/util/List;
 
     move-result-object v16
 
@@ -1337,7 +1337,7 @@
 
     move-object/from16 v14, p9
 
-    invoke-direct/range {v3 .. v14}, Lcom/android/settings/search/e;->a(Landroid/content/Context;Landroid/database/sqlite/SQLiteDatabase;Ljava/lang/String;ILjava/lang/String;IILjava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/util/List;)V
+    invoke-direct/range {v3 .. v14}, Lcom/android/settings_ext/search/e;->a(Landroid/content/Context;Landroid/database/sqlite/SQLiteDatabase;Ljava/lang/String;ILjava/lang/String;IILjava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/util/List;)V
 
     goto :goto_3
 
@@ -1521,7 +1521,7 @@
     iput-object v7, v8, Landroid/provider/SearchIndexableResource;->intentTargetClass:Ljava/lang/String;
 
     .line 569
-    invoke-virtual {p0, v8}, Lcom/android/settings/search/e;->a(Landroid/provider/SearchIndexableData;)V
+    invoke-virtual {p0, v8}, Lcom/android/settings_ext/search/e;->a(Landroid/provider/SearchIndexableData;)V
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
@@ -1560,7 +1560,7 @@
     .line 700
     check-cast p3, Landroid/provider/SearchIndexableResource;
 
-    invoke-direct {p0, p1, p2, p3, p4}, Lcom/android/settings/search/e;->a(Landroid/database/sqlite/SQLiteDatabase;Ljava/lang/String;Landroid/provider/SearchIndexableResource;Ljava/util/Map;)V
+    invoke-direct {p0, p1, p2, p3, p4}, Lcom/android/settings_ext/search/e;->a(Landroid/database/sqlite/SQLiteDatabase;Ljava/lang/String;Landroid/provider/SearchIndexableResource;Ljava/util/Map;)V
 
     .line 704
     :cond_0
@@ -1569,14 +1569,14 @@
 
     .line 701
     :cond_1
-    instance-of v0, p3, Lcom/android/settings/search/n;
+    instance-of v0, p3, Lcom/android/settings_ext/search/n;
 
     if-eqz v0, :cond_0
 
     .line 702
-    check-cast p3, Lcom/android/settings/search/n;
+    check-cast p3, Lcom/android/settings_ext/search/n;
 
-    invoke-direct {p0, p1, p2, p3}, Lcom/android/settings/search/e;->a(Landroid/database/sqlite/SQLiteDatabase;Ljava/lang/String;Lcom/android/settings/search/n;)V
+    invoke-direct {p0, p1, p2, p3}, Lcom/android/settings_ext/search/e;->a(Landroid/database/sqlite/SQLiteDatabase;Ljava/lang/String;Lcom/android/settings_ext/search/n;)V
 
     goto :goto_0
 .end method
@@ -1611,7 +1611,7 @@
 
     iget v1, v0, Landroid/provider/SearchIndexableResource;->xmlResId:I
 
-    sget v2, Lcom/android/settings/search/o;->aiZ:I
+    sget v2, Lcom/android/settings_ext/search/o;->aiZ:I
 
     if-le v1, v2, :cond_3
 
@@ -1680,7 +1680,7 @@
 
     move-object v4, p2
 
-    invoke-direct/range {v1 .. v12}, Lcom/android/settings/search/e;->a(Landroid/content/Context;Landroid/database/sqlite/SQLiteDatabase;Ljava/lang/String;ILjava/lang/String;IILjava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/util/List;)V
+    invoke-direct/range {v1 .. v12}, Lcom/android/settings_ext/search/e;->a(Landroid/content/Context;Landroid/database/sqlite/SQLiteDatabase;Ljava/lang/String;ILjava/lang/String;IILjava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/util/List;)V
 
     goto :goto_0
 
@@ -1711,7 +1711,7 @@
 
     iget-object v1, v0, Landroid/provider/SearchIndexableResource;->className:Ljava/lang/String;
 
-    invoke-static {v1}, Lcom/android/settings/search/e;->bi(Ljava/lang/String;)Ljava/lang/Class;
+    invoke-static {v1}, Lcom/android/settings_ext/search/e;->bi(Ljava/lang/String;)Ljava/lang/Class;
 
     move-result-object v1
 
@@ -1745,7 +1745,7 @@
 
     move-result-object v2
 
-    const-class v3, Lcom/android/settings/search/k;
+    const-class v3, Lcom/android/settings_ext/search/k;
 
     invoke-virtual {v3}, Ljava/lang/Class;->getName()Ljava/lang/String;
 
@@ -1771,7 +1771,7 @@
 
     .line 781
     :cond_5
-    invoke-direct {p0, v1}, Lcom/android/settings/search/e;->b(Ljava/lang/Class;)Lcom/android/settings/search/l;
+    invoke-direct {p0, v1}, Lcom/android/settings_ext/search/e;->b(Ljava/lang/Class;)Lcom/android/settings_ext/search/l;
 
     move-result-object v7
 
@@ -1783,7 +1783,7 @@
 
     iget-object v1, v0, Landroid/provider/SearchIndexableResource;->context:Landroid/content/Context;
 
-    invoke-interface {v7, v1}, Lcom/android/settings/search/l;->k(Landroid/content/Context;)Ljava/util/List;
+    invoke-interface {v7, v1}, Lcom/android/settings_ext/search/l;->k(Landroid/content/Context;)Ljava/util/List;
 
     move-result-object v1
 
@@ -1801,7 +1801,7 @@
 
     .line 788
     :cond_6
-    iget-object v4, p0, Lcom/android/settings/search/e;->mContext:Landroid/content/Context;
+    iget-object v4, p0, Lcom/android/settings_ext/search/e;->mContext:Landroid/content/Context;
 
     move-object/from16 v0, p3
 
@@ -1825,19 +1825,19 @@
 
     move-object v6, p2
 
-    invoke-direct/range {v3 .. v12}, Lcom/android/settings/search/e;->a(Landroid/content/Context;Landroid/database/sqlite/SQLiteDatabase;Ljava/lang/String;Lcom/android/settings/search/l;Ljava/lang/String;IIZLjava/util/List;)V
+    invoke-direct/range {v3 .. v12}, Lcom/android/settings_ext/search/e;->a(Landroid/content/Context;Landroid/database/sqlite/SQLiteDatabase;Ljava/lang/String;Lcom/android/settings_ext/search/l;Ljava/lang/String;IIZLjava/util/List;)V
 
     goto/16 :goto_0
 .end method
 
-.method private a(Landroid/database/sqlite/SQLiteDatabase;Ljava/lang/String;Lcom/android/settings/search/n;)V
+.method private a(Landroid/database/sqlite/SQLiteDatabase;Ljava/lang/String;Lcom/android/settings_ext/search/n;)V
     .locals 19
 
     .prologue
     .line 709
     move-object/from16 v0, p3
 
-    iget-object v1, v0, Lcom/android/settings/search/n;->locale:Ljava/util/Locale;
+    iget-object v1, v0, Lcom/android/settings_ext/search/n;->locale:Ljava/util/Locale;
 
     invoke-virtual {v1}, Ljava/util/Locale;->toString()Ljava/lang/String;
 
@@ -1859,67 +1859,67 @@
     :cond_0
     move-object/from16 v0, p3
 
-    iget-object v4, v0, Lcom/android/settings/search/n;->title:Ljava/lang/String;
+    iget-object v4, v0, Lcom/android/settings_ext/search/n;->title:Ljava/lang/String;
 
     move-object/from16 v0, p3
 
-    iget-object v5, v0, Lcom/android/settings/search/n;->Rz:Ljava/lang/String;
+    iget-object v5, v0, Lcom/android/settings_ext/search/n;->Rz:Ljava/lang/String;
 
     move-object/from16 v0, p3
 
-    iget-object v6, v0, Lcom/android/settings/search/n;->RA:Ljava/lang/String;
+    iget-object v6, v0, Lcom/android/settings_ext/search/n;->RA:Ljava/lang/String;
 
     move-object/from16 v0, p3
 
-    iget-object v7, v0, Lcom/android/settings/search/n;->RB:Ljava/lang/String;
+    iget-object v7, v0, Lcom/android/settings_ext/search/n;->RB:Ljava/lang/String;
 
     move-object/from16 v0, p3
 
-    iget-object v8, v0, Lcom/android/settings/search/n;->className:Ljava/lang/String;
+    iget-object v8, v0, Lcom/android/settings_ext/search/n;->className:Ljava/lang/String;
 
     move-object/from16 v0, p3
 
-    iget-object v9, v0, Lcom/android/settings/search/n;->aiY:Ljava/lang/String;
+    iget-object v9, v0, Lcom/android/settings_ext/search/n;->aiY:Ljava/lang/String;
 
     move-object/from16 v0, p3
 
-    iget v10, v0, Lcom/android/settings/search/n;->iconResId:I
+    iget v10, v0, Lcom/android/settings_ext/search/n;->iconResId:I
 
     move-object/from16 v0, p3
 
-    iget v11, v0, Lcom/android/settings/search/n;->rank:I
+    iget v11, v0, Lcom/android/settings_ext/search/n;->rank:I
 
     move-object/from16 v0, p3
 
-    iget-object v12, v0, Lcom/android/settings/search/n;->aiX:Ljava/lang/String;
+    iget-object v12, v0, Lcom/android/settings_ext/search/n;->aiX:Ljava/lang/String;
 
     move-object/from16 v0, p3
 
-    iget-object v13, v0, Lcom/android/settings/search/n;->intentAction:Ljava/lang/String;
+    iget-object v13, v0, Lcom/android/settings_ext/search/n;->intentAction:Ljava/lang/String;
 
     move-object/from16 v0, p3
 
-    iget-object v14, v0, Lcom/android/settings/search/n;->intentTargetPackage:Ljava/lang/String;
+    iget-object v14, v0, Lcom/android/settings_ext/search/n;->intentTargetPackage:Ljava/lang/String;
 
     move-object/from16 v0, p3
 
-    iget-object v15, v0, Lcom/android/settings/search/n;->intentTargetClass:Ljava/lang/String;
+    iget-object v15, v0, Lcom/android/settings_ext/search/n;->intentTargetClass:Ljava/lang/String;
 
     move-object/from16 v0, p3
 
-    iget-boolean v0, v0, Lcom/android/settings/search/n;->enabled:Z
+    iget-boolean v0, v0, Lcom/android/settings_ext/search/n;->enabled:Z
 
     move/from16 v16, v0
 
     move-object/from16 v0, p3
 
-    iget-object v0, v0, Lcom/android/settings/search/n;->key:Ljava/lang/String;
+    iget-object v0, v0, Lcom/android/settings_ext/search/n;->key:Ljava/lang/String;
 
     move-object/from16 v17, v0
 
     move-object/from16 v0, p3
 
-    iget v0, v0, Lcom/android/settings/search/n;->userId:I
+    iget v0, v0, Lcom/android/settings_ext/search/n;->userId:I
 
     move/from16 v18, v0
 
@@ -1929,7 +1929,7 @@
 
     move-object/from16 v3, p2
 
-    invoke-direct/range {v1 .. v18}, Lcom/android/settings/search/e;->a(Landroid/database/sqlite/SQLiteDatabase;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;IILjava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ZLjava/lang/String;I)V
+    invoke-direct/range {v1 .. v18}, Lcom/android/settings_ext/search/e;->a(Landroid/database/sqlite/SQLiteDatabase;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;IILjava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ZLjava/lang/String;I)V
 
     goto :goto_0
 .end method
@@ -1939,32 +1939,32 @@
 
     .prologue
     .line 990
-    invoke-static/range {p3 .. p3}, Lcom/android/settings/search/e;->bj(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static/range {p3 .. p3}, Lcom/android/settings_ext/search/e;->bj(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v3
 
     .line 991
-    invoke-static/range {p4 .. p4}, Lcom/android/settings/search/e;->bj(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static/range {p4 .. p4}, Lcom/android/settings_ext/search/e;->bj(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v5
 
     .line 992
-    invoke-static/range {p5 .. p5}, Lcom/android/settings/search/e;->bj(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static/range {p5 .. p5}, Lcom/android/settings_ext/search/e;->bj(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v7
 
     .line 994
-    invoke-static {v3}, Lcom/android/settings/search/e;->bk(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v3}, Lcom/android/settings_ext/search/e;->bk(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v4
 
     .line 995
-    invoke-static {v5}, Lcom/android/settings/search/e;->bk(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v5}, Lcom/android/settings_ext/search/e;->bk(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v6
 
     .line 996
-    invoke-static {v7}, Lcom/android/settings/search/e;->bk(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v7}, Lcom/android/settings_ext/search/e;->bk(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v8
 
@@ -1999,7 +1999,7 @@
     move/from16 v20, p17
 
     .line 998
-    invoke-direct/range {v0 .. v20}, Lcom/android/settings/search/e;->a(Landroid/database/sqlite/SQLiteDatabase;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;IILjava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ZLjava/lang/String;I)V
+    invoke-direct/range {v0 .. v20}, Lcom/android/settings_ext/search/e;->a(Landroid/database/sqlite/SQLiteDatabase;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;IILjava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ZLjava/lang/String;I)V
 
     .line 1004
     return-void
@@ -2183,12 +2183,12 @@
     goto/16 :goto_0
 .end method
 
-.method static synthetic a(Lcom/android/settings/search/e;Landroid/database/sqlite/SQLiteDatabase;Ljava/lang/String;Landroid/provider/SearchIndexableData;Ljava/util/Map;)V
+.method static synthetic a(Lcom/android/settings_ext/search/e;Landroid/database/sqlite/SQLiteDatabase;Ljava/lang/String;Landroid/provider/SearchIndexableData;Ljava/util/Map;)V
     .locals 0
 
     .prologue
     .line 88
-    invoke-direct {p0, p1, p2, p3, p4}, Lcom/android/settings/search/e;->a(Landroid/database/sqlite/SQLiteDatabase;Ljava/lang/String;Landroid/provider/SearchIndexableData;Ljava/util/Map;)V
+    invoke-direct {p0, p1, p2, p3, p4}, Lcom/android/settings_ext/search/e;->a(Landroid/database/sqlite/SQLiteDatabase;Ljava/lang/String;Landroid/provider/SearchIndexableData;Ljava/util/Map;)V
 
     return-void
 .end method
@@ -2200,7 +2200,7 @@
     .line 732
     if-eqz p0, :cond_0
 
-    const-class v0, Lcom/android/settings/search/k;
+    const-class v0, Lcom/android/settings_ext/search/k;
 
     invoke-virtual {v0, p0}, Ljava/lang/Class;->isAssignableFrom(Ljava/lang/Class;)Z
 
@@ -2219,19 +2219,19 @@
     goto :goto_0
 .end method
 
-.method static synthetic b(Lcom/android/settings/search/e;)Landroid/database/sqlite/SQLiteDatabase;
+.method static synthetic b(Lcom/android/settings_ext/search/e;)Landroid/database/sqlite/SQLiteDatabase;
     .locals 1
 
     .prologue
     .line 88
-    invoke-direct {p0}, Lcom/android/settings/search/e;->getWritableDatabase()Landroid/database/sqlite/SQLiteDatabase;
+    invoke-direct {p0}, Lcom/android/settings_ext/search/e;->getWritableDatabase()Landroid/database/sqlite/SQLiteDatabase;
 
     move-result-object v0
 
     return-object v0
 .end method
 
-.method private b(Ljava/lang/Class;)Lcom/android/settings/search/l;
+.method private b(Ljava/lang/Class;)Lcom/android/settings_ext/search/l;
     .locals 3
 
     .prologue
@@ -2252,7 +2252,7 @@
 
     move-result-object v0
 
-    check-cast v0, Lcom/android/settings/search/l;
+    check-cast v0, Lcom/android/settings_ext/search/l;
     :try_end_0
     .catch Ljava/lang/NoSuchFieldException; {:try_start_0 .. :try_end_0} :catch_0
     .catch Ljava/lang/SecurityException; {:try_start_0 .. :try_end_0} :catch_1
@@ -2329,7 +2329,7 @@
 
     const/4 v1, 0x6
 
-    invoke-direct {p0, p1, p2, v0, v1}, Lcom/android/settings/search/e;->a(Landroid/content/Context;Landroid/util/AttributeSet;[II)Ljava/lang/String;
+    invoke-direct {p0, p1, p2, v0, v1}, Lcom/android/settings_ext/search/e;->a(Landroid/content/Context;Landroid/util/AttributeSet;[II)Ljava/lang/String;
 
     move-result-object v0
 
@@ -2459,7 +2459,7 @@
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     .line 670
-    invoke-direct {p0, p1, p2}, Lcom/android/settings/search/e;->c(Ljava/lang/String;[Ljava/lang/String;)Ljava/lang/String;
+    invoke-direct {p0, p1, p2}, Lcom/android/settings_ext/search/e;->c(Ljava/lang/String;[Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v1
 
@@ -2697,99 +2697,99 @@
     move-result v16
 
     .line 615
-    new-instance v17, Lcom/android/settings/search/n;
+    new-instance v17, Lcom/android/settings_ext/search/n;
 
     move-object/from16 v0, v17
 
     move-object/from16 v1, p1
 
-    invoke-direct {v0, v1}, Lcom/android/settings/search/n;-><init>(Landroid/content/Context;)V
+    invoke-direct {v0, v1}, Lcom/android/settings_ext/search/n;-><init>(Landroid/content/Context;)V
 
     .line 616
     move-object/from16 v0, v17
 
-    iput v2, v0, Lcom/android/settings/search/n;->rank:I
+    iput v2, v0, Lcom/android/settings_ext/search/n;->rank:I
 
     .line 617
     move-object/from16 v0, v17
 
-    iput-object v4, v0, Lcom/android/settings/search/n;->title:Ljava/lang/String;
+    iput-object v4, v0, Lcom/android/settings_ext/search/n;->title:Ljava/lang/String;
 
     .line 618
     move-object/from16 v0, v17
 
-    iput-object v5, v0, Lcom/android/settings/search/n;->Rz:Ljava/lang/String;
+    iput-object v5, v0, Lcom/android/settings_ext/search/n;->Rz:Ljava/lang/String;
 
     .line 619
     move-object/from16 v0, v17
 
-    iput-object v6, v0, Lcom/android/settings/search/n;->RA:Ljava/lang/String;
+    iput-object v6, v0, Lcom/android/settings_ext/search/n;->RA:Ljava/lang/String;
 
     .line 620
     move-object/from16 v0, v17
 
-    iput-object v7, v0, Lcom/android/settings/search/n;->RB:Ljava/lang/String;
+    iput-object v7, v0, Lcom/android/settings_ext/search/n;->RB:Ljava/lang/String;
 
     .line 621
     move-object/from16 v0, v17
 
-    iput-object v8, v0, Lcom/android/settings/search/n;->aiX:Ljava/lang/String;
+    iput-object v8, v0, Lcom/android/settings_ext/search/n;->aiX:Ljava/lang/String;
 
     .line 622
     move-object/from16 v0, v17
 
-    iput-object v9, v0, Lcom/android/settings/search/n;->aiY:Ljava/lang/String;
+    iput-object v9, v0, Lcom/android/settings_ext/search/n;->aiY:Ljava/lang/String;
 
     .line 623
     move-object/from16 v0, v17
 
-    iput-object v10, v0, Lcom/android/settings/search/n;->className:Ljava/lang/String;
+    iput-object v10, v0, Lcom/android/settings_ext/search/n;->className:Ljava/lang/String;
 
     .line 624
     move-object/from16 v0, p2
 
     move-object/from16 v1, v17
 
-    iput-object v0, v1, Lcom/android/settings/search/n;->packageName:Ljava/lang/String;
+    iput-object v0, v1, Lcom/android/settings_ext/search/n;->packageName:Ljava/lang/String;
 
     .line 625
     move-object/from16 v0, v17
 
-    iput v11, v0, Lcom/android/settings/search/n;->iconResId:I
+    iput v11, v0, Lcom/android/settings_ext/search/n;->iconResId:I
 
     .line 626
     move-object/from16 v0, v17
 
-    iput-object v12, v0, Lcom/android/settings/search/n;->intentAction:Ljava/lang/String;
+    iput-object v12, v0, Lcom/android/settings_ext/search/n;->intentAction:Ljava/lang/String;
 
     .line 627
     move-object/from16 v0, v17
 
-    iput-object v13, v0, Lcom/android/settings/search/n;->intentTargetPackage:Ljava/lang/String;
+    iput-object v13, v0, Lcom/android/settings_ext/search/n;->intentTargetPackage:Ljava/lang/String;
 
     .line 628
     move-object/from16 v0, v17
 
-    iput-object v14, v0, Lcom/android/settings/search/n;->intentTargetClass:Ljava/lang/String;
+    iput-object v14, v0, Lcom/android/settings_ext/search/n;->intentTargetClass:Ljava/lang/String;
 
     .line 629
     move-object/from16 v0, v17
 
-    iput-object v15, v0, Lcom/android/settings/search/n;->key:Ljava/lang/String;
+    iput-object v15, v0, Lcom/android/settings_ext/search/n;->key:Ljava/lang/String;
 
     .line 630
     move/from16 v0, v16
 
     move-object/from16 v1, v17
 
-    iput v0, v1, Lcom/android/settings/search/n;->userId:I
+    iput v0, v1, Lcom/android/settings_ext/search/n;->userId:I
 
     .line 632
     move-object/from16 v0, p0
 
     move-object/from16 v1, v17
 
-    invoke-virtual {v0, v1}, Lcom/android/settings/search/e;->a(Landroid/provider/SearchIndexableData;)V
+    invoke-virtual {v0, v1}, Lcom/android/settings_ext/search/e;->a(Landroid/provider/SearchIndexableData;)V
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
@@ -2919,7 +2919,7 @@
     const/4 v0, 0x0
 
     .line 448
-    iget-object v1, p0, Lcom/android/settings/search/e;->mContext:Landroid/content/Context;
+    iget-object v1, p0, Lcom/android/settings_ext/search/e;->mContext:Landroid/content/Context;
 
     invoke-virtual {v1}, Landroid/content/Context;->getPackageManager()Landroid/content/pm/PackageManager;
 
@@ -3101,7 +3101,7 @@
     move-result-object v0
 
     .line 743
-    invoke-static {v0}, Lcom/android/settings/search/e;->a(Ljava/lang/Class;)Z
+    invoke-static {v0}, Lcom/android/settings_ext/search/e;->a(Ljava/lang/Class;)Z
 
     move-result v2
 
@@ -3197,7 +3197,7 @@
     move-result-object v0
 
     .line 1014
-    sget-object v1, Lcom/android/settings/search/e;->Eq:Ljava/util/regex/Pattern;
+    sget-object v1, Lcom/android/settings_ext/search/e;->Eq:Ljava/util/regex/Pattern;
 
     invoke-virtual {v1, v0}, Ljava/util/regex/Pattern;->matcher(Ljava/lang/CharSequence;)Ljava/util/regex/Matcher;
 
@@ -3222,35 +3222,35 @@
     goto :goto_0
 .end method
 
-.method public static bn(Landroid/content/Context;)Lcom/android/settings/search/e;
+.method public static bn(Landroid/content/Context;)Lcom/android/settings_ext/search/e;
     .locals 2
 
     .prologue
     .line 212
-    sget-object v0, Lcom/android/settings/search/e;->aiJ:Lcom/android/settings/search/e;
+    sget-object v0, Lcom/android/settings_ext/search/e;->aiJ:Lcom/android/settings_ext/search/e;
 
     if-nez v0, :cond_0
 
     .line 213
-    new-instance v0, Lcom/android/settings/search/e;
+    new-instance v0, Lcom/android/settings_ext/search/e;
 
     const-string v1, "com.android.settings"
 
-    invoke-direct {v0, p0, v1}, Lcom/android/settings/search/e;-><init>(Landroid/content/Context;Ljava/lang/String;)V
+    invoke-direct {v0, p0, v1}, Lcom/android/settings_ext/search/e;-><init>(Landroid/content/Context;Ljava/lang/String;)V
 
-    sput-object v0, Lcom/android/settings/search/e;->aiJ:Lcom/android/settings/search/e;
+    sput-object v0, Lcom/android/settings_ext/search/e;->aiJ:Lcom/android/settings_ext/search/e;
 
     .line 217
     :goto_0
-    sget-object v0, Lcom/android/settings/search/e;->aiJ:Lcom/android/settings/search/e;
+    sget-object v0, Lcom/android/settings_ext/search/e;->aiJ:Lcom/android/settings_ext/search/e;
 
     return-object v0
 
     .line 215
     :cond_0
-    sget-object v0, Lcom/android/settings/search/e;->aiJ:Lcom/android/settings/search/e;
+    sget-object v0, Lcom/android/settings_ext/search/e;->aiJ:Lcom/android/settings_ext/search/e;
 
-    invoke-virtual {v0, p0}, Lcom/android/settings/search/e;->setContext(Landroid/content/Context;)V
+    invoke-virtual {v0, p0}, Lcom/android/settings_ext/search/e;->setContext(Landroid/content/Context;)V
 
     goto :goto_0
 .end method
@@ -3264,7 +3264,7 @@
 
     const/4 v1, 0x4
 
-    invoke-direct {p0, p1, p2, v0, v1}, Lcom/android/settings/search/e;->a(Landroid/content/Context;Landroid/util/AttributeSet;[II)Ljava/lang/String;
+    invoke-direct {p0, p1, p2, v0, v1}, Lcom/android/settings_ext/search/e;->a(Landroid/content/Context;Landroid/util/AttributeSet;[II)Ljava/lang/String;
 
     move-result-object v0
 
@@ -3355,7 +3355,7 @@
 
     const/4 v1, 0x7
 
-    invoke-direct {p0, p1, p2, v0, v1}, Lcom/android/settings/search/e;->a(Landroid/content/Context;Landroid/util/AttributeSet;[II)Ljava/lang/String;
+    invoke-direct {p0, p1, p2, v0, v1}, Lcom/android/settings_ext/search/e;->a(Landroid/content/Context;Landroid/util/AttributeSet;[II)Ljava/lang/String;
 
     move-result-object v0
 
@@ -3371,7 +3371,7 @@
 
     const/4 v1, 0x0
 
-    invoke-direct {p0, p1, p2, v0, v1}, Lcom/android/settings/search/e;->a(Landroid/content/Context;Landroid/util/AttributeSet;[II)Ljava/lang/String;
+    invoke-direct {p0, p1, p2, v0, v1}, Lcom/android/settings_ext/search/e;->a(Landroid/content/Context;Landroid/util/AttributeSet;[II)Ljava/lang/String;
 
     move-result-object v0
 
@@ -3387,7 +3387,7 @@
 
     const/4 v1, 0x1
 
-    invoke-direct {p0, p1, p2, v0, v1}, Lcom/android/settings/search/e;->a(Landroid/content/Context;Landroid/util/AttributeSet;[II)Ljava/lang/String;
+    invoke-direct {p0, p1, p2, v0, v1}, Lcom/android/settings_ext/search/e;->a(Landroid/content/Context;Landroid/util/AttributeSet;[II)Ljava/lang/String;
 
     move-result-object v0
 
@@ -3403,7 +3403,7 @@
 
     const/4 v1, 0x0
 
-    invoke-direct {p0, p1, p2, v0, v1}, Lcom/android/settings/search/e;->b(Landroid/content/Context;Landroid/util/AttributeSet;[II)Ljava/lang/String;
+    invoke-direct {p0, p1, p2, v0, v1}, Lcom/android/settings_ext/search/e;->b(Landroid/content/Context;Landroid/util/AttributeSet;[II)Ljava/lang/String;
 
     move-result-object v0
 
@@ -3415,13 +3415,13 @@
 
     .prologue
     .line 499
-    iget-object v0, p0, Lcom/android/settings/search/e;->mContext:Landroid/content/Context;
+    iget-object v0, p0, Lcom/android/settings_ext/search/e;->mContext:Landroid/content/Context;
 
-    invoke-static {v0}, Lcom/android/settings/search/j;->bo(Landroid/content/Context;)Lcom/android/settings/search/j;
+    invoke-static {v0}, Lcom/android/settings_ext/search/j;->bo(Landroid/content/Context;)Lcom/android/settings_ext/search/j;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/android/settings/search/j;->getReadableDatabase()Landroid/database/sqlite/SQLiteDatabase;
+    invoke-virtual {v0}, Lcom/android/settings_ext/search/j;->getReadableDatabase()Landroid/database/sqlite/SQLiteDatabase;
 
     move-result-object v0
 
@@ -3433,13 +3433,13 @@
 
     .prologue
     .line 503
-    iget-object v0, p0, Lcom/android/settings/search/e;->mContext:Landroid/content/Context;
+    iget-object v0, p0, Lcom/android/settings_ext/search/e;->mContext:Landroid/content/Context;
 
-    invoke-static {v0}, Lcom/android/settings/search/j;->bo(Landroid/content/Context;)Lcom/android/settings/search/j;
+    invoke-static {v0}, Lcom/android/settings_ext/search/j;->bo(Landroid/content/Context;)Lcom/android/settings_ext/search/j;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/android/settings/search/j;->getWritableDatabase()Landroid/database/sqlite/SQLiteDatabase;
+    invoke-virtual {v0}, Lcom/android/settings_ext/search/j;->getWritableDatabase()Landroid/database/sqlite/SQLiteDatabase;
 
     move-result-object v0
 
@@ -3451,11 +3451,11 @@
 
     .prologue
     .line 1097
-    sget-object v0, Lcom/android/settings/fz;->Preference:[I
+    sget-object v0, Lcom/android/settings_ext/fz;->Preference:[I
 
     const/4 v1, 0x0
 
-    invoke-direct {p0, p1, p2, v0, v1}, Lcom/android/settings/search/e;->a(Landroid/content/Context;Landroid/util/AttributeSet;[II)Ljava/lang/String;
+    invoke-direct {p0, p1, p2, v0, v1}, Lcom/android/settings_ext/search/e;->a(Landroid/content/Context;Landroid/util/AttributeSet;[II)Ljava/lang/String;
 
     move-result-object v0
 
@@ -3540,7 +3540,7 @@
     if-eqz v1, :cond_0
 
     .line 444
-    invoke-direct {p0, v2}, Lcom/android/settings/search/e;->be(Ljava/lang/String;)Z
+    invoke-direct {p0, v2}, Lcom/android/settings_ext/search/e;->be(Ljava/lang/String;)Z
 
     move-result v0
 
@@ -3555,12 +3555,12 @@
 
     .line 323
     :try_start_0
-    invoke-static {p2}, Lcom/android/settings/search/m;->bm(Ljava/lang/String;)I
+    invoke-static {p2}, Lcom/android/settings_ext/search/m;->bm(Ljava/lang/String;)I
 
     move-result v5
 
     .line 325
-    iget-object v0, p0, Lcom/android/settings/search/e;->aiM:Ljava/lang/String;
+    iget-object v0, p0, Lcom/android/settings_ext/search/e;->aiM:Ljava/lang/String;
 
     invoke-virtual {v0, p2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
@@ -3568,11 +3568,11 @@
 
     if-eqz v0, :cond_0
 
-    iget-object v1, p0, Lcom/android/settings/search/e;->mContext:Landroid/content/Context;
+    iget-object v1, p0, Lcom/android/settings_ext/search/e;->mContext:Landroid/content/Context;
 
     .line 328
     :goto_0
-    invoke-static {p2}, Lcom/android/settings/search/e;->bf(Ljava/lang/String;)Landroid/net/Uri;
+    invoke-static {p2}, Lcom/android/settings_ext/search/e;->bf(Ljava/lang/String;)Landroid/net/Uri;
 
     move-result-object v3
 
@@ -3583,10 +3583,10 @@
 
     move-object v2, p1
 
-    invoke-direct/range {v0 .. v5}, Lcom/android/settings/search/e;->a(Landroid/content/Context;Ljava/lang/String;Landroid/net/Uri;[Ljava/lang/String;I)V
+    invoke-direct/range {v0 .. v5}, Lcom/android/settings_ext/search/e;->a(Landroid/content/Context;Ljava/lang/String;Landroid/net/Uri;[Ljava/lang/String;I)V
 
     .line 332
-    invoke-static {p2}, Lcom/android/settings/search/e;->bg(Ljava/lang/String;)Landroid/net/Uri;
+    invoke-static {p2}, Lcom/android/settings_ext/search/e;->bg(Ljava/lang/String;)Landroid/net/Uri;
 
     move-result-object v3
 
@@ -3597,7 +3597,7 @@
 
     move-object v2, p1
 
-    invoke-direct/range {v0 .. v5}, Lcom/android/settings/search/e;->b(Landroid/content/Context;Ljava/lang/String;Landroid/net/Uri;[Ljava/lang/String;I)V
+    invoke-direct/range {v0 .. v5}, Lcom/android/settings_ext/search/e;->b(Landroid/content/Context;Ljava/lang/String;Landroid/net/Uri;[Ljava/lang/String;I)V
 
     .line 335
     const/4 v0, 0x1
@@ -3608,7 +3608,7 @@
 
     .line 325
     :cond_0
-    iget-object v0, p0, Lcom/android/settings/search/e;->mContext:Landroid/content/Context;
+    iget-object v0, p0, Lcom/android/settings_ext/search/e;->mContext:Landroid/content/Context;
 
     const/4 v1, 0x0
 
@@ -3672,12 +3672,12 @@
 
     .prologue
     .line 345
-    invoke-direct {p0, p1, p2}, Lcom/android/settings/search/e;->s(Ljava/lang/String;Ljava/lang/String;)Ljava/util/List;
+    invoke-direct {p0, p1, p2}, Lcom/android/settings_ext/search/e;->s(Ljava/lang/String;Ljava/lang/String;)Ljava/util/List;
 
     move-result-object v0
 
     .line 347
-    invoke-virtual {p0, p1, v0}, Lcom/android/settings/search/e;->a(Ljava/lang/String;Ljava/util/List;)V
+    invoke-virtual {p0, p1, v0}, Lcom/android/settings_ext/search/e;->a(Ljava/lang/String;Ljava/util/List;)V
 
     .line 348
     return-void
@@ -3688,40 +3688,40 @@
 
     .prologue
     .line 522
-    iget-object v1, p0, Lcom/android/settings/search/e;->aiL:Lcom/android/settings/search/h;
+    iget-object v1, p0, Lcom/android/settings_ext/search/e;->aiL:Lcom/android/settings_ext/search/h;
 
     monitor-enter v1
 
     .line 523
     :try_start_0
-    new-instance v0, Lcom/android/settings/search/i;
+    new-instance v0, Lcom/android/settings_ext/search/i;
 
     const/4 v2, 0x0
 
-    invoke-direct {v0, p0, v2}, Lcom/android/settings/search/i;-><init>(Lcom/android/settings/search/e;Lcom/android/settings/search/f;)V
+    invoke-direct {v0, p0, v2}, Lcom/android/settings_ext/search/i;-><init>(Lcom/android/settings_ext/search/e;Lcom/android/settings_ext/search/f;)V
 
     .line 524
-    iget-object v2, p0, Lcom/android/settings/search/e;->aiL:Lcom/android/settings/search/h;
+    iget-object v2, p0, Lcom/android/settings_ext/search/e;->aiL:Lcom/android/settings_ext/search/h;
 
-    invoke-virtual {v2}, Lcom/android/settings/search/h;->rz()Lcom/android/settings/search/h;
+    invoke-virtual {v2}, Lcom/android/settings_ext/search/h;->rz()Lcom/android/settings_ext/search/h;
 
     move-result-object v2
 
     .line 525
     const/4 v3, 0x1
 
-    new-array v3, v3, [Lcom/android/settings/search/h;
+    new-array v3, v3, [Lcom/android/settings_ext/search/h;
 
     const/4 v4, 0x0
 
     aput-object v2, v3, v4
 
-    invoke-virtual {v0, v3}, Lcom/android/settings/search/i;->execute([Ljava/lang/Object;)Landroid/os/AsyncTask;
+    invoke-virtual {v0, v3}, Lcom/android/settings_ext/search/i;->execute([Ljava/lang/Object;)Landroid/os/AsyncTask;
 
     .line 526
-    iget-object v0, p0, Lcom/android/settings/search/e;->aiL:Lcom/android/settings/search/h;
+    iget-object v0, p0, Lcom/android/settings_ext/search/e;->aiL:Lcom/android/settings_ext/search/h;
 
-    invoke-virtual {v0}, Lcom/android/settings/search/h;->clear()V
+    invoke-virtual {v0}, Lcom/android/settings_ext/search/h;->clear()V
 
     .line 527
     monitor-exit v1
@@ -3745,7 +3745,7 @@
 
     .prologue
     .line 88
-    sget-wide v0, Lcom/android/settings/search/e;->aiI:J
+    sget-wide v0, Lcom/android/settings_ext/search/e;->aiI:J
 
     return-wide v0
 .end method
@@ -3756,7 +3756,7 @@
     .prologue
     .line 353
     :try_start_0
-    iget-object v0, p0, Lcom/android/settings/search/e;->mContext:Landroid/content/Context;
+    iget-object v0, p0, Lcom/android/settings_ext/search/e;->mContext:Landroid/content/Context;
 
     const/4 v1, 0x0
 
@@ -3765,14 +3765,14 @@
     move-result-object v0
 
     .line 355
-    invoke-static {p2}, Lcom/android/settings/search/e;->bh(Ljava/lang/String;)Landroid/net/Uri;
+    invoke-static {p2}, Lcom/android/settings_ext/search/e;->bh(Ljava/lang/String;)Landroid/net/Uri;
 
     move-result-object v1
 
     .line 356
     sget-object v2, Landroid/provider/SearchIndexablesContract;->NON_INDEXABLES_KEYS_COLUMNS:[Ljava/lang/String;
 
-    invoke-direct {p0, v0, v1, v2}, Lcom/android/settings/search/e;->a(Landroid/content/Context;Landroid/net/Uri;[Ljava/lang/String;)Ljava/util/List;
+    invoke-direct {p0, v0, v1, v2}, Lcom/android/settings_ext/search/e;->a(Landroid/content/Context;Landroid/net/Uri;[Ljava/lang/String;)Ljava/util/List;
     :try_end_0
     .catch Landroid/content/pm/PackageManager$NameNotFoundException; {:try_start_0 .. :try_end_0} :catch_0
 
@@ -3824,7 +3824,7 @@
     invoke-static {v1, v0}, Landroid/util/Log;->w(Ljava/lang/String;Ljava/lang/String;)I
 
     .line 361
-    sget-object v0, Lcom/android/settings/search/e;->EMPTY_LIST:Ljava/util/List;
+    sget-object v0, Lcom/android/settings_ext/search/e;->EMPTY_LIST:Ljava/util/List;
 
     goto :goto_0
 .end method
@@ -3836,15 +3836,15 @@
 
     .prologue
     .line 392
-    iget-object v1, p0, Lcom/android/settings/search/e;->aiL:Lcom/android/settings/search/h;
+    iget-object v1, p0, Lcom/android/settings_ext/search/e;->aiL:Lcom/android/settings_ext/search/h;
 
     monitor-enter v1
 
     .line 393
     :try_start_0
-    iget-object v0, p0, Lcom/android/settings/search/e;->aiL:Lcom/android/settings/search/h;
+    iget-object v0, p0, Lcom/android/settings_ext/search/e;->aiL:Lcom/android/settings_ext/search/h;
 
-    iget-object v0, v0, Lcom/android/settings/search/h;->aiO:Ljava/util/List;
+    iget-object v0, v0, Lcom/android/settings_ext/search/h;->aiO:Ljava/util/List;
 
     invoke-interface {v0, p1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
@@ -3870,15 +3870,15 @@
 
     .prologue
     .line 413
-    iget-object v1, p0, Lcom/android/settings/search/e;->aiL:Lcom/android/settings/search/h;
+    iget-object v1, p0, Lcom/android/settings_ext/search/e;->aiL:Lcom/android/settings_ext/search/h;
 
     monitor-enter v1
 
     .line 414
     :try_start_0
-    iget-object v0, p0, Lcom/android/settings/search/e;->aiL:Lcom/android/settings/search/h;
+    iget-object v0, p0, Lcom/android/settings_ext/search/e;->aiL:Lcom/android/settings_ext/search/h;
 
-    iget-object v0, v0, Lcom/android/settings/search/h;->aiQ:Ljava/util/Map;
+    iget-object v0, v0, Lcom/android/settings_ext/search/h;->aiQ:Ljava/util/Map;
 
     invoke-interface {v0, p1, p2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -3904,15 +3904,15 @@
 
     .prologue
     .line 407
-    iget-object v1, p0, Lcom/android/settings/search/e;->aiL:Lcom/android/settings/search/h;
+    iget-object v1, p0, Lcom/android/settings_ext/search/e;->aiL:Lcom/android/settings_ext/search/h;
 
     monitor-enter v1
 
     .line 408
     :try_start_0
-    iget-object v0, p0, Lcom/android/settings/search/e;->aiL:Lcom/android/settings/search/h;
+    iget-object v0, p0, Lcom/android/settings_ext/search/e;->aiL:Lcom/android/settings_ext/search/h;
 
-    iget-object v0, v0, Lcom/android/settings/search/h;->aiP:Ljava/util/List;
+    iget-object v0, v0, Lcom/android/settings_ext/search/h;->aiP:Ljava/util/List;
 
     invoke-interface {v0, p1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
@@ -3951,7 +3951,7 @@
 
     .line 476
     :cond_0
-    invoke-static {p1}, Lcom/android/settings/search/o;->bn(Ljava/lang/String;)Landroid/provider/SearchIndexableResource;
+    invoke-static {p1}, Lcom/android/settings_ext/search/o;->bn(Ljava/lang/String;)Landroid/provider/SearchIndexableResource;
 
     move-result-object v0
 
@@ -3987,7 +3987,7 @@
 
     .line 481
     :cond_1
-    iget-object v1, p0, Lcom/android/settings/search/e;->mContext:Landroid/content/Context;
+    iget-object v1, p0, Lcom/android/settings_ext/search/e;->mContext:Landroid/content/Context;
 
     iput-object v1, v0, Landroid/provider/SearchIndexableResource;->context:Landroid/content/Context;
 
@@ -3998,21 +3998,21 @@
     if-eqz p2, :cond_2
 
     .line 484
-    invoke-virtual {p0, v0}, Lcom/android/settings/search/e;->b(Landroid/provider/SearchIndexableData;)V
+    invoke-virtual {p0, v0}, Lcom/android/settings_ext/search/e;->b(Landroid/provider/SearchIndexableData;)V
 
     .line 486
     :cond_2
-    invoke-virtual {p0, v0}, Lcom/android/settings/search/e;->a(Landroid/provider/SearchIndexableData;)V
+    invoke-virtual {p0, v0}, Lcom/android/settings_ext/search/e;->a(Landroid/provider/SearchIndexableData;)V
 
     .line 487
-    iget-object v1, p0, Lcom/android/settings/search/e;->aiL:Lcom/android/settings/search/h;
+    iget-object v1, p0, Lcom/android/settings_ext/search/e;->aiL:Lcom/android/settings_ext/search/h;
 
     const/4 v2, 0x1
 
-    iput-boolean v2, v1, Lcom/android/settings/search/h;->aiR:Z
+    iput-boolean v2, v1, Lcom/android/settings_ext/search/h;->aiR:Z
 
     .line 488
-    invoke-direct {p0}, Lcom/android/settings/search/e;->rx()V
+    invoke-direct {p0}, Lcom/android/settings_ext/search/e;->rx()V
 
     .line 489
     const/4 v1, 0x0
@@ -4033,7 +4033,7 @@
     const/4 v6, 0x0
 
     .line 234
-    invoke-direct {p0}, Lcom/android/settings/search/e;->getReadableDatabase()Landroid/database/sqlite/SQLiteDatabase;
+    invoke-direct {p0}, Lcom/android/settings_ext/search/e;->getReadableDatabase()Landroid/database/sqlite/SQLiteDatabase;
 
     move-result-object v0
 
@@ -4043,9 +4043,9 @@
     new-array v1, v1, [Landroid/database/Cursor;
 
     .line 237
-    sget-object v2, Lcom/android/settings/search/e;->aiG:[Ljava/lang/String;
+    sget-object v2, Lcom/android/settings_ext/search/e;->aiG:[Ljava/lang/String;
 
-    invoke-direct {p0, p1, v2, v7}, Lcom/android/settings/search/e;->a(Ljava/lang/String;[Ljava/lang/String;Z)Ljava/lang/String;
+    invoke-direct {p0, p1, v2, v7}, Lcom/android/settings_ext/search/e;->a(Ljava/lang/String;[Ljava/lang/String;Z)Ljava/lang/String;
 
     move-result-object v2
 
@@ -4082,9 +4082,9 @@
     .line 242
     new-instance v3, Ljava/lang/StringBuilder;
 
-    sget-object v4, Lcom/android/settings/search/e;->aiH:[Ljava/lang/String;
+    sget-object v4, Lcom/android/settings_ext/search/e;->aiH:[Ljava/lang/String;
 
-    invoke-direct {p0, p1, v4, v6}, Lcom/android/settings/search/e;->a(Ljava/lang/String;[Ljava/lang/String;Z)Ljava/lang/String;
+    invoke-direct {p0, p1, v4, v6}, Lcom/android/settings_ext/search/e;->a(Ljava/lang/String;[Ljava/lang/String;Z)Ljava/lang/String;
 
     move-result-object v4
 
@@ -4146,7 +4146,7 @@
 
     .prologue
     .line 255
-    invoke-direct {p0, p1}, Lcom/android/settings/search/e;->bc(Ljava/lang/String;)Ljava/lang/String;
+    invoke-direct {p0, p1}, Lcom/android/settings_ext/search/e;->bc(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 
@@ -4174,7 +4174,7 @@
     invoke-static {v1, v2}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
     .line 257
-    invoke-direct {p0}, Lcom/android/settings/search/e;->getReadableDatabase()Landroid/database/sqlite/SQLiteDatabase;
+    invoke-direct {p0}, Lcom/android/settings_ext/search/e;->getReadableDatabase()Landroid/database/sqlite/SQLiteDatabase;
 
     move-result-object v1
 
@@ -4194,11 +4194,11 @@
     const-wide/16 v2, -0x1
 
     .line 287
-    new-instance v0, Lcom/android/settings/search/g;
+    new-instance v0, Lcom/android/settings_ext/search/g;
 
     const/4 v1, 0x0
 
-    invoke-direct {v0, p0, v1}, Lcom/android/settings/search/g;-><init>(Lcom/android/settings/search/e;Lcom/android/settings/search/f;)V
+    invoke-direct {v0, p0, v1}, Lcom/android/settings_ext/search/g;-><init>(Lcom/android/settings_ext/search/e;Lcom/android/settings_ext/search/f;)V
 
     .line 288
     const/4 v1, 0x1
@@ -4209,11 +4209,11 @@
 
     aput-object p1, v1, v4
 
-    invoke-virtual {v0, v1}, Lcom/android/settings/search/g;->execute([Ljava/lang/Object;)Landroid/os/AsyncTask;
+    invoke-virtual {v0, v1}, Lcom/android/settings_ext/search/g;->execute([Ljava/lang/Object;)Landroid/os/AsyncTask;
 
     .line 290
     :try_start_0
-    invoke-virtual {v0}, Lcom/android/settings/search/g;->get()Ljava/lang/Object;
+    invoke-virtual {v0}, Lcom/android/settings_ext/search/g;->get()Ljava/lang/Object;
 
     move-result-object v0
 
@@ -4300,17 +4300,17 @@
 
     .prologue
     .line 493
-    invoke-virtual {p0, p1}, Lcom/android/settings/search/e;->a(Landroid/provider/SearchIndexableData;)V
+    invoke-virtual {p0, p1}, Lcom/android/settings_ext/search/e;->a(Landroid/provider/SearchIndexableData;)V
 
     .line 494
-    iget-object v0, p0, Lcom/android/settings/search/e;->aiL:Lcom/android/settings/search/h;
+    iget-object v0, p0, Lcom/android/settings_ext/search/e;->aiL:Lcom/android/settings_ext/search/h;
 
     const/4 v1, 0x1
 
-    iput-boolean v1, v0, Lcom/android/settings/search/h;->aiR:Z
+    iput-boolean v1, v0, Lcom/android/settings_ext/search/h;->aiR:Z
 
     .line 495
-    invoke-direct {p0}, Lcom/android/settings/search/e;->rx()V
+    invoke-direct {p0}, Lcom/android/settings_ext/search/e;->rx()V
 
     .line 496
     return-void
@@ -4321,7 +4321,7 @@
 
     .prologue
     .line 226
-    iput-object p1, p0, Lcom/android/settings/search/e;->mContext:Landroid/content/Context;
+    iput-object p1, p0, Lcom/android/settings_ext/search/e;->mContext:Landroid/content/Context;
 
     .line 227
     return-void
@@ -4341,7 +4341,7 @@
     invoke-direct {v1, v2}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
 
     .line 302
-    iget-object v2, p0, Lcom/android/settings/search/e;->mContext:Landroid/content/Context;
+    iget-object v2, p0, Lcom/android/settings_ext/search/e;->mContext:Landroid/content/Context;
 
     invoke-virtual {v2}, Landroid/content/Context;->getPackageManager()Landroid/content/pm/PackageManager;
 
@@ -4370,7 +4370,7 @@
     check-cast v0, Landroid/content/pm/ResolveInfo;
 
     .line 308
-    invoke-direct {p0, v0}, Lcom/android/settings/search/e;->h(Landroid/content/pm/ResolveInfo;)Z
+    invoke-direct {p0, v0}, Lcom/android/settings_ext/search/e;->h(Landroid/content/pm/ResolveInfo;)Z
 
     move-result v4
 
@@ -4396,16 +4396,16 @@
     iget-object v0, v0, Landroid/content/pm/ProviderInfo;->packageName:Ljava/lang/String;
 
     .line 314
-    invoke-direct {p0, v0, v4}, Lcom/android/settings/search/e;->q(Ljava/lang/String;Ljava/lang/String;)Z
+    invoke-direct {p0, v0, v4}, Lcom/android/settings_ext/search/e;->q(Ljava/lang/String;Ljava/lang/String;)Z
 
     .line 315
-    invoke-direct {p0, v0, v4}, Lcom/android/settings/search/e;->r(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-direct {p0, v0, v4}, Lcom/android/settings_ext/search/e;->r(Ljava/lang/String;Ljava/lang/String;)V
 
     goto :goto_1
 
     .line 318
     :cond_1
-    invoke-direct {p0}, Lcom/android/settings/search/e;->rx()V
+    invoke-direct {p0}, Lcom/android/settings_ext/search/e;->rx()V
 
     .line 319
     return-void

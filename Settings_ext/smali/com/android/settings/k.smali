@@ -1,4 +1,4 @@
-.class Lcom/android/settings/k;
+.class Lcom/android/settings_ext/k;
 .super Ljava/lang/Object;
 .source "AccountUnlockDialog.java"
 
@@ -7,16 +7,16 @@
 
 
 # instance fields
-.field final synthetic I:Lcom/android/settings/i;
+.field final synthetic I:Lcom/android/settings_ext/i;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/i;)V
+.method constructor <init>(Lcom/android/settings_ext/i;)V
     .locals 0
 
     .prologue
     .line 121
-    iput-object p1, p0, Lcom/android/settings/k;->I:Lcom/android/settings/i;
+    iput-object p1, p0, Lcom/android/settings_ext/k;->I:Lcom/android/settings_ext/i;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -30,11 +30,11 @@
 
     .prologue
     .line 125
-    iget-object v1, p0, Lcom/android/settings/k;->I:Lcom/android/settings/i;
+    iget-object v1, p0, Lcom/android/settings_ext/k;->I:Lcom/android/settings_ext/i;
 
-    iget-object v0, p0, Lcom/android/settings/k;->I:Lcom/android/settings/i;
+    iget-object v0, p0, Lcom/android/settings_ext/k;->I:Lcom/android/settings_ext/i;
 
-    invoke-static {v0}, Lcom/android/settings/i;->a(Lcom/android/settings/i;)Ljava/util/ArrayList;
+    invoke-static {v0}, Lcom/android/settings_ext/i;->a(Lcom/android/settings_ext/i;)Ljava/util/ArrayList;
 
     move-result-object v0
 
@@ -44,7 +44,7 @@
 
     check-cast v0, Landroid/accounts/Account;
 
-    invoke-static {v1, v0}, Lcom/android/settings/i;->a(Lcom/android/settings/i;Landroid/accounts/Account;)Landroid/accounts/Account;
+    invoke-static {v1, v0}, Lcom/android/settings_ext/i;->a(Lcom/android/settings_ext/i;Landroid/accounts/Account;)Landroid/accounts/Account;
 
     .line 126
     return-void
@@ -55,11 +55,11 @@
 
     .prologue
     .line 129
-    iget-object v0, p0, Lcom/android/settings/k;->I:Lcom/android/settings/i;
+    iget-object v0, p0, Lcom/android/settings_ext/k;->I:Lcom/android/settings_ext/i;
 
     const/4 v1, 0x0
 
-    invoke-static {v0, v1}, Lcom/android/settings/i;->a(Lcom/android/settings/i;Landroid/accounts/Account;)Landroid/accounts/Account;
+    invoke-static {v0, v1}, Lcom/android/settings_ext/i;->a(Lcom/android/settings_ext/i;Landroid/accounts/Account;)Landroid/accounts/Account;
 
     .line 130
     return-void

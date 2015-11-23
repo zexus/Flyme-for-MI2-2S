@@ -1,4 +1,4 @@
-.class Lcom/android/settings/accounts/AccountSettings$ConfirmAutoSyncChangeFragment$1;
+.class Lcom/android/settings_ext/accounts/AccountSettings$ConfirmAutoSyncChangeFragment$1;
 .super Ljava/lang/Object;
 .source "AccountSettings.java"
 
@@ -7,16 +7,16 @@
 
 
 # instance fields
-.field final synthetic BH:Lcom/android/settings/accounts/AccountSettings$ConfirmAutoSyncChangeFragment;
+.field final synthetic BH:Lcom/android/settings_ext/accounts/AccountSettings$ConfirmAutoSyncChangeFragment;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/accounts/AccountSettings$ConfirmAutoSyncChangeFragment;)V
+.method constructor <init>(Lcom/android/settings_ext/accounts/AccountSettings$ConfirmAutoSyncChangeFragment;)V
     .locals 0
 
     .prologue
     .line 568
-    iput-object p1, p0, Lcom/android/settings/accounts/AccountSettings$ConfirmAutoSyncChangeFragment$1;->BH:Lcom/android/settings/accounts/AccountSettings$ConfirmAutoSyncChangeFragment;
+    iput-object p1, p0, Lcom/android/settings_ext/accounts/AccountSettings$ConfirmAutoSyncChangeFragment$1;->BH:Lcom/android/settings_ext/accounts/AccountSettings$ConfirmAutoSyncChangeFragment;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -30,15 +30,15 @@
 
     .prologue
     .line 571
-    iget-object v0, p0, Lcom/android/settings/accounts/AccountSettings$ConfirmAutoSyncChangeFragment$1;->BH:Lcom/android/settings/accounts/AccountSettings$ConfirmAutoSyncChangeFragment;
+    iget-object v0, p0, Lcom/android/settings_ext/accounts/AccountSettings$ConfirmAutoSyncChangeFragment$1;->BH:Lcom/android/settings_ext/accounts/AccountSettings$ConfirmAutoSyncChangeFragment;
 
-    invoke-static {v0}, Lcom/android/settings/accounts/AccountSettings$ConfirmAutoSyncChangeFragment;->a(Lcom/android/settings/accounts/AccountSettings$ConfirmAutoSyncChangeFragment;)Z
+    invoke-static {v0}, Lcom/android/settings_ext/accounts/AccountSettings$ConfirmAutoSyncChangeFragment;->a(Lcom/android/settings_ext/accounts/AccountSettings$ConfirmAutoSyncChangeFragment;)Z
 
     move-result v0
 
-    iget-object v1, p0, Lcom/android/settings/accounts/AccountSettings$ConfirmAutoSyncChangeFragment$1;->BH:Lcom/android/settings/accounts/AccountSettings$ConfirmAutoSyncChangeFragment;
+    iget-object v1, p0, Lcom/android/settings_ext/accounts/AccountSettings$ConfirmAutoSyncChangeFragment$1;->BH:Lcom/android/settings_ext/accounts/AccountSettings$ConfirmAutoSyncChangeFragment;
 
-    invoke-static {v1}, Lcom/android/settings/accounts/AccountSettings$ConfirmAutoSyncChangeFragment;->b(Lcom/android/settings/accounts/AccountSettings$ConfirmAutoSyncChangeFragment;)Landroid/os/UserHandle;
+    invoke-static {v1}, Lcom/android/settings_ext/accounts/AccountSettings$ConfirmAutoSyncChangeFragment;->b(Lcom/android/settings_ext/accounts/AccountSettings$ConfirmAutoSyncChangeFragment;)Landroid/os/UserHandle;
 
     move-result-object v1
 

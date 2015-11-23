@@ -1,19 +1,19 @@
-.class Lcom/android/settings/bb;
+.class Lcom/android/settings_ext/bb;
 .super Landroid/os/AsyncTask;
 .source "DataUsageSummary.java"
 
 
 # instance fields
-.field final synthetic gH:Lcom/android/settings/DataUsageSummary;
+.field final synthetic gH:Lcom/android/settings_ext/DataUsageSummary;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/DataUsageSummary;)V
+.method constructor <init>(Lcom/android/settings_ext/DataUsageSummary;)V
     .locals 0
 
     .prologue
     .line 459
-    iput-object p1, p0, Lcom/android/settings/bb;->gH:Lcom/android/settings/DataUsageSummary;
+    iput-object p1, p0, Lcom/android/settings_ext/bb;->gH:Lcom/android/settings_ext/DataUsageSummary;
 
     invoke-direct {p0}, Landroid/os/AsyncTask;-><init>()V
 
@@ -29,7 +29,7 @@
     .line 459
     check-cast p1, [Ljava/lang/Void;
 
-    invoke-virtual {p0, p1}, Lcom/android/settings/bb;->doInBackground([Ljava/lang/Void;)Ljava/lang/Void;
+    invoke-virtual {p0, p1}, Lcom/android/settings_ext/bb;->doInBackground([Ljava/lang/Void;)Ljava/lang/Void;
 
     move-result-object v0
 
@@ -47,9 +47,9 @@
     invoke-static {v0, v1}, Ljava/lang/Thread;->sleep(J)V
 
     .line 465
-    iget-object v0, p0, Lcom/android/settings/bb;->gH:Lcom/android/settings/DataUsageSummary;
+    iget-object v0, p0, Lcom/android/settings_ext/bb;->gH:Lcom/android/settings_ext/DataUsageSummary;
 
-    invoke-static {v0}, Lcom/android/settings/DataUsageSummary;->a(Lcom/android/settings/DataUsageSummary;)Landroid/net/INetworkStatsService;
+    invoke-static {v0}, Lcom/android/settings_ext/DataUsageSummary;->a(Lcom/android/settings_ext/DataUsageSummary;)Landroid/net/INetworkStatsService;
 
     move-result-object v0
 
@@ -84,7 +84,7 @@
     .line 459
     check-cast p1, Ljava/lang/Void;
 
-    invoke-virtual {p0, p1}, Lcom/android/settings/bb;->onPostExecute(Ljava/lang/Void;)V
+    invoke-virtual {p0, p1}, Lcom/android/settings_ext/bb;->onPostExecute(Ljava/lang/Void;)V
 
     return-void
 .end method
@@ -94,18 +94,18 @@
 
     .prologue
     .line 474
-    iget-object v0, p0, Lcom/android/settings/bb;->gH:Lcom/android/settings/DataUsageSummary;
+    iget-object v0, p0, Lcom/android/settings_ext/bb;->gH:Lcom/android/settings_ext/DataUsageSummary;
 
-    invoke-virtual {v0}, Lcom/android/settings/DataUsageSummary;->isAdded()Z
+    invoke-virtual {v0}, Lcom/android/settings_ext/DataUsageSummary;->isAdded()Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
     .line 475
-    iget-object v0, p0, Lcom/android/settings/bb;->gH:Lcom/android/settings/DataUsageSummary;
+    iget-object v0, p0, Lcom/android/settings_ext/bb;->gH:Lcom/android/settings_ext/DataUsageSummary;
 
-    invoke-static {v0}, Lcom/android/settings/DataUsageSummary;->b(Lcom/android/settings/DataUsageSummary;)V
+    invoke-static {v0}, Lcom/android/settings_ext/DataUsageSummary;->b(Lcom/android/settings_ext/DataUsageSummary;)V
 
     .line 477
     :cond_0

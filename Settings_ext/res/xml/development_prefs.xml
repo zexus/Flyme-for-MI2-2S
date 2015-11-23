@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PreferenceScreen android:title="@string/development_settings_title"
   xmlns:android="http://schemas.android.com/apk/res/android">
-    <com.android.settings.BugreportPreference android:title="@android:string/bugreport_title" android:key="bugreport" android:dialogTitle="@android:string/bugreport_title" />
+    <com.android.settings_ext.BugreportPreference android:title="@android:string/bugreport_title" android:key="bugreport" android:dialogTitle="@android:string/bugreport_title" />
     <CheckBoxPreference android:title="@string/bugreport_in_power" android:key="bugreport_in_power" android:summary="@string/bugreport_in_power_summary" />
     <CheckBoxPreference android:title="@string/development_enable" android:key="development_enable" />
     <PreferenceCategory />
@@ -11,7 +11,7 @@
     <CheckBoxPreference android:title="@string/bt_hci_snoop_log" android:key="bt_hci_snoop_log" android:summary="@string/bt_hci_snoop_log_summary" />
     <CheckBoxPreference android:title="@string/bt_trace_log" android:key="bt_trace_log" android:summary="@string/bt_trace_log_summary" />
     <CheckBoxPreference android:title="@string/oem_unlock_enable" android:key="oem_unlock_enable" android:summary="@string/oem_unlock_enable_summary" />
-    <PreferenceScreen android:title="@string/process_stats_summary_title" android:key="proc_stats" android:summary="@string/process_stats_summary" android:fragment="com.android.settings.applications.ProcessStatsUi" />
+    <PreferenceScreen android:title="@string/process_stats_summary_title" android:key="proc_stats" android:summary="@string/process_stats_summary" android:fragment="com.android.settings_ext.applications.ProcessStatsUi" />
     <CheckBoxPreference android:title="@string/enable_quickboot_title" android:key="enable_quickboot" android:summary="@string/enable_quickboot_summary" />
     <PreferenceCategory android:title="@string/debug_debugging_category" android:key="debug_debugging_category">
         <CheckBoxPreference android:title="@string/enable_adb" android:key="enable_adb" android:summary="@string/enable_adb_summary" />

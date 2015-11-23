@@ -1,4 +1,4 @@
-.class public Lcom/android/settings/SmsRingtonePreference;
+.class public Lcom/android/settings_ext/SmsRingtonePreference;
 .super Landroid/preference/RingtonePreference;
 .source "SmsRingtonePreference.java"
 
@@ -14,10 +14,10 @@
     invoke-direct {p0, p1, p2}, Landroid/preference/RingtonePreference;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
     .line 42
-    invoke-virtual {p0, v0}, Lcom/android/settings/SmsRingtonePreference;->setShowDefault(Z)V
+    invoke-virtual {p0, v0}, Lcom/android/settings_ext/SmsRingtonePreference;->setShowDefault(Z)V
 
     .line 43
-    invoke-virtual {p0, v0}, Lcom/android/settings/SmsRingtonePreference;->setShowSilent(Z)V
+    invoke-virtual {p0, v0}, Lcom/android/settings_ext/SmsRingtonePreference;->setShowSilent(Z)V
 
     .line 45
     invoke-static {}, Lmiui/telephony/TelephonyManager;->getDefault()Lmiui/telephony/TelephonyManager;
@@ -31,14 +31,14 @@
     if-eqz v0, :cond_0
 
     .line 46
-    invoke-virtual {p0}, Lcom/android/settings/SmsRingtonePreference;->getExtras()Landroid/os/Bundle;
+    invoke-virtual {p0}, Lcom/android/settings_ext/SmsRingtonePreference;->getExtras()Landroid/os/Bundle;
 
     move-result-object v0
 
     .line 47
     const-string v1, "android.intent.extra.ringtone.SHOW_DEFAULT"
 
-    invoke-virtual {p0}, Lcom/android/settings/SmsRingtonePreference;->getShowDefault()Z
+    invoke-virtual {p0}, Lcom/android/settings_ext/SmsRingtonePreference;->getShowDefault()Z
 
     move-result v2
 
@@ -47,7 +47,7 @@
     .line 48
     const-string v1, "android.intent.extra.ringtone.SHOW_SILENT"
 
-    invoke-virtual {p0}, Lcom/android/settings/SmsRingtonePreference;->getShowSilent()Z
+    invoke-virtual {p0}, Lcom/android/settings_ext/SmsRingtonePreference;->getShowSilent()Z
 
     move-result v2
 
@@ -56,18 +56,18 @@
     .line 49
     const-string v1, "android.intent.extra.ringtone.TYPE"
 
-    invoke-virtual {p0}, Lcom/android/settings/SmsRingtonePreference;->getRingtoneType()I
+    invoke-virtual {p0}, Lcom/android/settings_ext/SmsRingtonePreference;->getRingtoneType()I
 
     move-result v2
 
     invoke-virtual {v0, v1, v2}, Landroid/os/Bundle;->putInt(Ljava/lang/String;I)V
 
     .line 50
-    invoke-static {}, Lcom/android/settings/ringtone/MultiRingtoneSettingUtils;->ro()Ljava/lang/String;
+    invoke-static {}, Lcom/android/settings_ext/ringtone/MultiRingtoneSettingUtils;->ro()Ljava/lang/String;
 
     move-result-object v0
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/SmsRingtonePreference;->setFragment(Ljava/lang/String;)V
+    invoke-virtual {p0, v0}, Lcom/android/settings_ext/SmsRingtonePreference;->setFragment(Ljava/lang/String;)V
 
     .line 52
     :cond_0
@@ -81,7 +81,7 @@
 
     .prologue
     .line 129
-    invoke-virtual {p0}, Lcom/android/settings/SmsRingtonePreference;->getContext()Landroid/content/Context;
+    invoke-virtual {p0}, Lcom/android/settings_ext/SmsRingtonePreference;->getContext()Landroid/content/Context;
 
     move-result-object v0
 
@@ -89,7 +89,7 @@
 
     move-result-object v0
 
-    invoke-virtual {p0}, Lcom/android/settings/SmsRingtonePreference;->getKey()Ljava/lang/String;
+    invoke-virtual {p0}, Lcom/android/settings_ext/SmsRingtonePreference;->getKey()Ljava/lang/String;
 
     move-result-object v1
 
@@ -119,7 +119,7 @@
     .line 145
     const-string v1, "sms_received_sound"
 
-    invoke-virtual {p0}, Lcom/android/settings/SmsRingtonePreference;->getKey()Ljava/lang/String;
+    invoke-virtual {p0}, Lcom/android/settings_ext/SmsRingtonePreference;->getKey()Ljava/lang/String;
 
     move-result-object v2
 
@@ -142,7 +142,7 @@
 
     .prologue
     .line 65
-    invoke-virtual {p0}, Lcom/android/settings/SmsRingtonePreference;->getFragment()Ljava/lang/String;
+    invoke-virtual {p0}, Lcom/android/settings_ext/SmsRingtonePreference;->getFragment()Ljava/lang/String;
 
     move-result-object v0
 
@@ -180,7 +180,7 @@
     .line 82
     const-string v0, "REQUEST_ENTRY_TYPE"
 
-    invoke-virtual {p0}, Lcom/android/settings/SmsRingtonePreference;->getContext()Landroid/content/Context;
+    invoke-virtual {p0}, Lcom/android/settings_ext/SmsRingtonePreference;->getContext()Landroid/content/Context;
 
     move-result-object v1
 
@@ -199,11 +199,11 @@
 
     .prologue
     .line 153
-    invoke-virtual {p0}, Lcom/android/settings/SmsRingtonePreference;->getContext()Landroid/content/Context;
+    invoke-virtual {p0}, Lcom/android/settings_ext/SmsRingtonePreference;->getContext()Landroid/content/Context;
 
     move-result-object v0
 
-    invoke-virtual {p0}, Lcom/android/settings/SmsRingtonePreference;->getRingtoneType()I
+    invoke-virtual {p0}, Lcom/android/settings_ext/SmsRingtonePreference;->getRingtoneType()I
 
     move-result v1
 
@@ -222,14 +222,14 @@
     const/4 v1, 0x1
 
     .line 100
-    invoke-virtual {p0}, Lcom/android/settings/SmsRingtonePreference;->shouldPersist()Z
+    invoke-virtual {p0}, Lcom/android/settings_ext/SmsRingtonePreference;->shouldPersist()Z
 
     move-result v2
 
     if-eqz v2, :cond_2
 
     .line 102
-    invoke-virtual {p0, v0}, Lcom/android/settings/SmsRingtonePreference;->getPersistedString(Ljava/lang/String;)Ljava/lang/String;
+    invoke-virtual {p0, v0}, Lcom/android/settings_ext/SmsRingtonePreference;->getPersistedString(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v2
 
@@ -243,7 +243,7 @@
 
     .line 107
     :cond_0
-    invoke-virtual {p0}, Lcom/android/settings/SmsRingtonePreference;->getContext()Landroid/content/Context;
+    invoke-virtual {p0}, Lcom/android/settings_ext/SmsRingtonePreference;->getContext()Landroid/content/Context;
 
     move-result-object v2
 
@@ -251,7 +251,7 @@
 
     move-result-object v2
 
-    invoke-virtual {p0}, Lcom/android/settings/SmsRingtonePreference;->getKey()Ljava/lang/String;
+    invoke-virtual {p0}, Lcom/android/settings_ext/SmsRingtonePreference;->getKey()Ljava/lang/String;
 
     move-result-object v3
 
@@ -281,11 +281,11 @@
 
     .prologue
     .line 56
-    invoke-static {}, Lcom/android/settings/ringtone/MultiRingtoneSettingUtils;->ro()Ljava/lang/String;
+    invoke-static {}, Lcom/android/settings_ext/ringtone/MultiRingtoneSettingUtils;->ro()Ljava/lang/String;
 
     move-result-object v0
 
-    invoke-virtual {p0}, Lcom/android/settings/SmsRingtonePreference;->getFragment()Ljava/lang/String;
+    invoke-virtual {p0}, Lcom/android/settings_ext/SmsRingtonePreference;->getFragment()Ljava/lang/String;
 
     move-result-object v1
 
@@ -295,11 +295,11 @@
 
     if-eqz v0, :cond_0
 
-    invoke-virtual {p0}, Lcom/android/settings/SmsRingtonePreference;->getContext()Landroid/content/Context;
+    invoke-virtual {p0}, Lcom/android/settings_ext/SmsRingtonePreference;->getContext()Landroid/content/Context;
 
     move-result-object v0
 
-    invoke-virtual {p0}, Lcom/android/settings/SmsRingtonePreference;->getRingtoneType()I
+    invoke-virtual {p0}, Lcom/android/settings_ext/SmsRingtonePreference;->getRingtoneType()I
 
     move-result v1
 
@@ -325,13 +325,13 @@
 
     .prologue
     .line 135
-    invoke-virtual {p0}, Lcom/android/settings/SmsRingtonePreference;->isPersistent()Z
+    invoke-virtual {p0}, Lcom/android/settings_ext/SmsRingtonePreference;->isPersistent()Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
-    invoke-virtual {p0}, Lcom/android/settings/SmsRingtonePreference;->hasKey()Z
+    invoke-virtual {p0}, Lcom/android/settings_ext/SmsRingtonePreference;->hasKey()Z
 
     move-result v0
 

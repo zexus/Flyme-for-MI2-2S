@@ -1,4 +1,4 @@
-.class public interface abstract Lcom/android/settings/voice/l;
+.class public interface abstract Lcom/android/settings_ext/voice/l;
 .super Ljava/lang/Object;
 .source "VoiceInputPreference.java"
 

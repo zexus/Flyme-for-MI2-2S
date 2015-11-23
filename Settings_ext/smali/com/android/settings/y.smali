@@ -1,5 +1,5 @@
-.class Lcom/android/settings/y;
-.super Lcom/android/settings/A;
+.class Lcom/android/settings_ext/y;
+.super Lcom/android/settings_ext/A;
 .source "ApkIconLoader.java"
 
 
@@ -15,17 +15,17 @@
     .line 82
     const/4 v0, 0x0
 
-    invoke-direct {p0, v0}, Lcom/android/settings/A;-><init>(Lcom/android/settings/x;)V
+    invoke-direct {p0, v0}, Lcom/android/settings_ext/A;-><init>(Lcom/android/settings_ext/x;)V
 
     return-void
 .end method
 
-.method synthetic constructor <init>(Lcom/android/settings/x;)V
+.method synthetic constructor <init>(Lcom/android/settings_ext/x;)V
     .locals 0
 
     .prologue
     .line 82
-    invoke-direct {p0}, Lcom/android/settings/y;-><init>()V
+    invoke-direct {p0}, Lcom/android/settings_ext/y;-><init>()V
 
     return-void
 .end method
@@ -42,7 +42,7 @@
     const/4 v0, 0x0
 
     :goto_0
-    iput-object v0, p0, Lcom/android/settings/y;->ap:Ljava/lang/ref/SoftReference;
+    iput-object v0, p0, Lcom/android/settings_ext/y;->ap:Ljava/lang/ref/SoftReference;
 
     .line 102
     return-void
@@ -63,7 +63,7 @@
 
     .prologue
     .line 87
-    iget-object v0, p0, Lcom/android/settings/y;->ap:Ljava/lang/ref/SoftReference;
+    iget-object v0, p0, Lcom/android/settings_ext/y;->ap:Ljava/lang/ref/SoftReference;
 
     invoke-virtual {v0}, Ljava/lang/ref/SoftReference;->get()Ljava/lang/Object;
 
@@ -80,7 +80,7 @@
 
     .line 90
     :cond_0
-    iget-object v0, p0, Lcom/android/settings/y;->ap:Ljava/lang/ref/SoftReference;
+    iget-object v0, p0, Lcom/android/settings_ext/y;->ap:Ljava/lang/ref/SoftReference;
 
     invoke-virtual {v0}, Ljava/lang/ref/SoftReference;->get()Ljava/lang/Object;
 
@@ -101,7 +101,7 @@
 
     .prologue
     .line 96
-    iget-object v0, p0, Lcom/android/settings/y;->ap:Ljava/lang/ref/SoftReference;
+    iget-object v0, p0, Lcom/android/settings_ext/y;->ap:Ljava/lang/ref/SoftReference;
 
     if-nez v0, :cond_0
 

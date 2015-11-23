@@ -1,4 +1,4 @@
-.class Lcom/android/settings/fX;
+.class Lcom/android/settings_ext/fX;
 .super Ljava/lang/Object;
 .source "RadioInfo.java"
 
@@ -9,18 +9,18 @@
 # instance fields
 .field index:I
 
-.field final synthetic vV:Lcom/android/settings/RadioInfo;
+.field final synthetic vV:Lcom/android/settings_ext/RadioInfo;
 
 .field vY:[I
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/RadioInfo;)V
+.method constructor <init>(Lcom/android/settings_ext/RadioInfo;)V
     .locals 1
 
     .prologue
     .line 998
-    iput-object p1, p0, Lcom/android/settings/fX;->vV:Lcom/android/settings/RadioInfo;
+    iput-object p1, p0, Lcom/android/settings_ext/fX;->vV:Lcom/android/settings_ext/RadioInfo;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -31,12 +31,12 @@
 
     fill-array-data v0, :array_0
 
-    iput-object v0, p0, Lcom/android/settings/fX;->vY:[I
+    iput-object v0, p0, Lcom/android/settings_ext/fX;->vY:[I
 
     .line 1000
     const/4 v0, 0x0
 
-    iput v0, p0, Lcom/android/settings/fX;->index:I
+    iput v0, p0, Lcom/android/settings_ext/fX;->index:I
 
     return-void
 
@@ -58,9 +58,9 @@
 
     .prologue
     .line 1003
-    iget-object v0, p0, Lcom/android/settings/fX;->vY:[I
+    iget-object v0, p0, Lcom/android/settings_ext/fX;->vY:[I
 
-    iget v1, p0, Lcom/android/settings/fX;->index:I
+    iget v1, p0, Lcom/android/settings_ext/fX;->index:I
 
     aget v0, v0, v1
 
@@ -72,16 +72,16 @@
 
     .prologue
     .line 1008
-    iget v0, p0, Lcom/android/settings/fX;->index:I
+    iget v0, p0, Lcom/android/settings_ext/fX;->index:I
 
     add-int/lit8 v0, v0, 0x1
 
-    iput v0, p0, Lcom/android/settings/fX;->index:I
+    iput v0, p0, Lcom/android/settings_ext/fX;->index:I
 
     .line 1009
-    iget v0, p0, Lcom/android/settings/fX;->index:I
+    iget v0, p0, Lcom/android/settings_ext/fX;->index:I
 
-    iget-object v1, p0, Lcom/android/settings/fX;->vY:[I
+    iget-object v1, p0, Lcom/android/settings_ext/fX;->vY:[I
 
     array-length v1, v1
 
@@ -90,28 +90,28 @@
     .line 1010
     const/4 v0, 0x0
 
-    iput v0, p0, Lcom/android/settings/fX;->index:I
+    iput v0, p0, Lcom/android/settings_ext/fX;->index:I
 
     .line 1012
     :cond_0
-    iget-object v0, p0, Lcom/android/settings/fX;->vV:Lcom/android/settings/RadioInfo;
+    iget-object v0, p0, Lcom/android/settings_ext/fX;->vV:Lcom/android/settings_ext/RadioInfo;
 
-    invoke-static {v0}, Lcom/android/settings/RadioInfo;->n(Lcom/android/settings/RadioInfo;)Lcom/android/internal/telephony/Phone;
+    invoke-static {v0}, Lcom/android/settings_ext/RadioInfo;->n(Lcom/android/settings_ext/RadioInfo;)Lcom/android/internal/telephony/Phone;
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/android/settings/fX;->vY:[I
+    iget-object v1, p0, Lcom/android/settings_ext/fX;->vY:[I
 
-    iget v2, p0, Lcom/android/settings/fX;->index:I
+    iget v2, p0, Lcom/android/settings_ext/fX;->index:I
 
     aget v1, v1, v2
 
     invoke-interface {v0, v1}, Lcom/android/internal/telephony/Phone;->setCellInfoListRate(I)V
 
     .line 1013
-    iget-object v0, p0, Lcom/android/settings/fX;->vV:Lcom/android/settings/RadioInfo;
+    iget-object v0, p0, Lcom/android/settings_ext/fX;->vV:Lcom/android/settings_ext/RadioInfo;
 
-    invoke-static {v0}, Lcom/android/settings/RadioInfo;->C(Lcom/android/settings/RadioInfo;)V
+    invoke-static {v0}, Lcom/android/settings_ext/RadioInfo;->C(Lcom/android/settings_ext/RadioInfo;)V
 
     .line 1014
     return-void

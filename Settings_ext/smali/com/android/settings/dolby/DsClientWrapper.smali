@@ -1,5 +1,5 @@
-.class public Lcom/android/settings/dolby/DsClientWrapper;
-.super Lcom/android/settings/eM;
+.class public Lcom/android/settings_ext/dolby/DsClientWrapper;
+.super Lcom/android/settings_ext/eM;
 .source "DsClientWrapper.java"
 
 
@@ -13,14 +13,14 @@
 
     .prologue
     .line 13
-    invoke-direct {p0}, Lcom/android/settings/eM;-><init>()V
+    invoke-direct {p0}, Lcom/android/settings_ext/eM;-><init>()V
 
     .line 15
     new-instance v0, Landroid/dolby/DsClient;
 
     invoke-direct {v0}, Landroid/dolby/DsClient;-><init>()V
 
-    iput-object v0, p0, Lcom/android/settings/dolby/DsClientWrapper;->XF:Landroid/dolby/DsClient;
+    iput-object v0, p0, Lcom/android/settings_ext/dolby/DsClientWrapper;->XF:Landroid/dolby/DsClient;
 
     .line 56
     return-void
@@ -28,7 +28,7 @@
 
 
 # virtual methods
-.method public a(Lcom/android/settings/eN;)V
+.method public a(Lcom/android/settings_ext/eN;)V
     .locals 2
 
     .prologue
@@ -36,11 +36,11 @@
     if-eqz p1, :cond_0
 
     .line 20
-    iget-object v0, p0, Lcom/android/settings/dolby/DsClientWrapper;->XF:Landroid/dolby/DsClient;
+    iget-object v0, p0, Lcom/android/settings_ext/dolby/DsClientWrapper;->XF:Landroid/dolby/DsClient;
 
-    new-instance v1, Lcom/android/settings/dolby/DsClientWrapper$DsListenerWrapper;
+    new-instance v1, Lcom/android/settings_ext/dolby/DsClientWrapper$DsListenerWrapper;
 
-    invoke-direct {v1, p1}, Lcom/android/settings/dolby/DsClientWrapper$DsListenerWrapper;-><init>(Lcom/android/settings/eN;)V
+    invoke-direct {v1, p1}, Lcom/android/settings_ext/dolby/DsClientWrapper$DsListenerWrapper;-><init>(Lcom/android/settings_ext/eN;)V
 
     invoke-virtual {v0, v1}, Landroid/dolby/DsClient;->setEventListener(Landroid/dolby/IDsClientEvents;)V
 
@@ -54,7 +54,7 @@
 
     .prologue
     .line 26
-    iget-object v0, p0, Lcom/android/settings/dolby/DsClientWrapper;->XF:Landroid/dolby/DsClient;
+    iget-object v0, p0, Lcom/android/settings_ext/dolby/DsClientWrapper;->XF:Landroid/dolby/DsClient;
 
     invoke-virtual {v0, p1}, Landroid/dolby/DsClient;->bindDsService(Landroid/content/Context;)Z
 
@@ -88,7 +88,7 @@
 
     .prologue
     .line 37
-    iget-object v0, p0, Lcom/android/settings/dolby/DsClientWrapper;->XF:Landroid/dolby/DsClient;
+    iget-object v0, p0, Lcom/android/settings_ext/dolby/DsClientWrapper;->XF:Landroid/dolby/DsClient;
 
     invoke-virtual {v0}, Landroid/dolby/DsClient;->getDsOn()Z
 
@@ -102,7 +102,7 @@
 
     .prologue
     .line 43
-    iget-object v0, p0, Lcom/android/settings/dolby/DsClientWrapper;->XF:Landroid/dolby/DsClient;
+    iget-object v0, p0, Lcom/android/settings_ext/dolby/DsClientWrapper;->XF:Landroid/dolby/DsClient;
 
     invoke-virtual {v0}, Landroid/dolby/DsClient;->getSelectedProfile()I
 
@@ -116,7 +116,7 @@
 
     .prologue
     .line 31
-    iget-object v0, p0, Lcom/android/settings/dolby/DsClientWrapper;->XF:Landroid/dolby/DsClient;
+    iget-object v0, p0, Lcom/android/settings_ext/dolby/DsClientWrapper;->XF:Landroid/dolby/DsClient;
 
     invoke-virtual {v0, p1}, Landroid/dolby/DsClient;->unBindDsService(Landroid/content/Context;)V
 

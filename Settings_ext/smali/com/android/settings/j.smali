@@ -1,19 +1,19 @@
-.class Lcom/android/settings/j;
+.class Lcom/android/settings_ext/j;
 .super Landroid/widget/BaseAdapter;
 .source "AccountUnlockDialog.java"
 
 
 # instance fields
-.field final synthetic I:Lcom/android/settings/i;
+.field final synthetic I:Lcom/android/settings_ext/i;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/i;)V
+.method constructor <init>(Lcom/android/settings_ext/i;)V
     .locals 0
 
     .prologue
     .line 84
-    iput-object p1, p0, Lcom/android/settings/j;->I:Lcom/android/settings/i;
+    iput-object p1, p0, Lcom/android/settings_ext/j;->I:Lcom/android/settings_ext/i;
 
     invoke-direct {p0}, Landroid/widget/BaseAdapter;-><init>()V
 
@@ -27,9 +27,9 @@
 
     .prologue
     .line 87
-    iget-object v0, p0, Lcom/android/settings/j;->I:Lcom/android/settings/i;
+    iget-object v0, p0, Lcom/android/settings_ext/j;->I:Lcom/android/settings_ext/i;
 
-    invoke-static {v0}, Lcom/android/settings/i;->a(Lcom/android/settings/i;)Ljava/util/ArrayList;
+    invoke-static {v0}, Lcom/android/settings_ext/i;->a(Lcom/android/settings_ext/i;)Ljava/util/ArrayList;
 
     move-result-object v0
 
@@ -71,16 +71,16 @@
     if-nez p2, :cond_0
 
     .line 105
-    new-instance v1, Lcom/android/settings/o;
+    new-instance v1, Lcom/android/settings_ext/o;
 
-    iget-object v0, p0, Lcom/android/settings/j;->I:Lcom/android/settings/i;
+    iget-object v0, p0, Lcom/android/settings_ext/j;->I:Lcom/android/settings_ext/i;
 
-    invoke-direct {v1, v0, v3}, Lcom/android/settings/o;-><init>(Lcom/android/settings/i;Lcom/android/settings/j;)V
+    invoke-direct {v1, v0, v3}, Lcom/android/settings_ext/o;-><init>(Lcom/android/settings_ext/i;Lcom/android/settings_ext/j;)V
 
     .line 106
-    iget-object v0, p0, Lcom/android/settings/j;->I:Lcom/android/settings/i;
+    iget-object v0, p0, Lcom/android/settings_ext/j;->I:Lcom/android/settings_ext/i;
 
-    invoke-static {v0}, Lcom/android/settings/i;->b(Lcom/android/settings/i;)Landroid/content/Context;
+    invoke-static {v0}, Lcom/android/settings_ext/i;->b(Lcom/android/settings_ext/i;)Landroid/content/Context;
 
     move-result-object v0
 
@@ -103,7 +103,7 @@
 
     check-cast v0, Landroid/widget/ImageView;
 
-    iput-object v0, v1, Lcom/android/settings/o;->K:Landroid/widget/ImageView;
+    iput-object v0, v1, Lcom/android/settings_ext/o;->K:Landroid/widget/ImageView;
 
     .line 108
     const v0, 0x7f10011c
@@ -114,7 +114,7 @@
 
     check-cast v0, Landroid/widget/TextView;
 
-    iput-object v0, v1, Lcom/android/settings/o;->L:Landroid/widget/TextView;
+    iput-object v0, v1, Lcom/android/settings_ext/o;->L:Landroid/widget/TextView;
 
     .line 109
     invoke-virtual {p2, v1}, Landroid/view/View;->setTag(Ljava/lang/Object;)V
@@ -123,22 +123,22 @@
 
     .line 114
     :goto_0
-    iget-object v1, v0, Lcom/android/settings/o;->K:Landroid/widget/ImageView;
+    iget-object v1, v0, Lcom/android/settings_ext/o;->K:Landroid/widget/ImageView;
 
-    iget-object v2, p0, Lcom/android/settings/j;->I:Lcom/android/settings/i;
+    iget-object v2, p0, Lcom/android/settings_ext/j;->I:Lcom/android/settings_ext/i;
 
-    invoke-static {v2}, Lcom/android/settings/i;->c(Lcom/android/settings/i;)Landroid/graphics/drawable/Drawable;
+    invoke-static {v2}, Lcom/android/settings_ext/i;->c(Lcom/android/settings_ext/i;)Landroid/graphics/drawable/Drawable;
 
     move-result-object v2
 
     invoke-virtual {v1, v2}, Landroid/widget/ImageView;->setImageDrawable(Landroid/graphics/drawable/Drawable;)V
 
     .line 115
-    iget-object v1, v0, Lcom/android/settings/o;->L:Landroid/widget/TextView;
+    iget-object v1, v0, Lcom/android/settings_ext/o;->L:Landroid/widget/TextView;
 
-    iget-object v0, p0, Lcom/android/settings/j;->I:Lcom/android/settings/i;
+    iget-object v0, p0, Lcom/android/settings_ext/j;->I:Lcom/android/settings_ext/i;
 
-    invoke-static {v0}, Lcom/android/settings/i;->a(Lcom/android/settings/i;)Ljava/util/ArrayList;
+    invoke-static {v0}, Lcom/android/settings_ext/i;->a(Lcom/android/settings_ext/i;)Ljava/util/ArrayList;
 
     move-result-object v0
 
@@ -161,7 +161,7 @@
 
     move-result-object v0
 
-    check-cast v0, Lcom/android/settings/o;
+    check-cast v0, Lcom/android/settings_ext/o;
 
     goto :goto_0
 .end method

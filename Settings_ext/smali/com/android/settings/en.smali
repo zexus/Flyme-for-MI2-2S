@@ -1,4 +1,4 @@
-.class Lcom/android/settings/en;
+.class Lcom/android/settings_ext/en;
 .super Ljava/lang/Object;
 .source "MiuiSecurityCommonSettings.java"
 
@@ -7,16 +7,16 @@
 
 
 # instance fields
-.field final synthetic rf:Lcom/android/settings/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;
+.field final synthetic rf:Lcom/android/settings_ext/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;)V
+.method constructor <init>(Lcom/android/settings_ext/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;)V
     .locals 0
 
     .prologue
     .line 636
-    iput-object p1, p0, Lcom/android/settings/en;->rf:Lcom/android/settings/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;
+    iput-object p1, p0, Lcom/android/settings_ext/en;->rf:Lcom/android/settings_ext/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -34,7 +34,7 @@
 
     check-cast p2, Ljava/lang/String;
 
-    invoke-virtual {p0, p1, p2}, Lcom/android/settings/en;->compare(Ljava/lang/String;Ljava/lang/String;)I
+    invoke-virtual {p0, p1, p2}, Lcom/android/settings_ext/en;->compare(Ljava/lang/String;Ljava/lang/String;)I
 
     move-result v0
 

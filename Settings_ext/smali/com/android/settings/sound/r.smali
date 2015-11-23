@@ -1,4 +1,4 @@
-.class public abstract Lcom/android/settings/sound/r;
+.class public abstract Lcom/android/settings_ext/sound/r;
 .super Landroid/app/Activity;
 .source "BaseSoundActivity.java"
 
@@ -31,7 +31,7 @@
     if-ne p1, v0, :cond_0
 
     .line 42
-    invoke-virtual {p0}, Lcom/android/settings/sound/r;->getRingtoneType()I
+    invoke-virtual {p0}, Lcom/android/settings_ext/sound/r;->getRingtoneType()I
 
     move-result v1
 
@@ -49,7 +49,7 @@
 
     .line 46
     :cond_0
-    invoke-virtual {p0}, Lcom/android/settings/sound/r;->finish()V
+    invoke-virtual {p0}, Lcom/android/settings_ext/sound/r;->finish()V
 
     .line 47
     return-void
@@ -63,13 +63,13 @@
     invoke-super {p0, p1}, Landroid/app/Activity;->onCreate(Landroid/os/Bundle;)V
 
     .line 17
-    invoke-virtual {p0}, Lcom/android/settings/sound/r;->rF()Landroid/content/Intent;
+    invoke-virtual {p0}, Lcom/android/settings_ext/sound/r;->rF()Landroid/content/Intent;
 
     move-result-object v0
 
     const/4 v1, 0x1
 
-    invoke-virtual {p0, v0, v1}, Lcom/android/settings/sound/r;->startActivityForResult(Landroid/content/Intent;I)V
+    invoke-virtual {p0, v0, v1}, Lcom/android/settings_ext/sound/r;->startActivityForResult(Landroid/content/Intent;I)V
 
     .line 18
     return-void
@@ -103,7 +103,7 @@
     invoke-virtual {v2, v3, v0}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Z)Landroid/content/Intent;
 
     .line 26
-    invoke-virtual {p0}, Lcom/android/settings/sound/r;->getRingtoneType()I
+    invoke-virtual {p0}, Lcom/android/settings_ext/sound/r;->getRingtoneType()I
 
     move-result v3
 
@@ -139,11 +139,11 @@
     .line 31
     const-string v0, "android.intent.extra.ringtone.TITLE"
 
-    invoke-virtual {p0}, Lcom/android/settings/sound/r;->rG()I
+    invoke-virtual {p0}, Lcom/android/settings_ext/sound/r;->rG()I
 
     move-result v1
 
-    invoke-virtual {p0, v1}, Lcom/android/settings/sound/r;->getString(I)Ljava/lang/String;
+    invoke-virtual {p0, v1}, Lcom/android/settings_ext/sound/r;->getString(I)Ljava/lang/String;
 
     move-result-object v1
 

@@ -1,19 +1,19 @@
-.class Lcom/android/settings/deviceinfo/Status$3;
+.class Lcom/android/settings_ext/deviceinfo/Status$3;
 .super Landroid/content/BroadcastReceiver;
 .source "Status.java"
 
 
 # instance fields
-.field final synthetic Tj:Lcom/android/settings/deviceinfo/Status;
+.field final synthetic Tj:Lcom/android/settings_ext/deviceinfo/Status;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/deviceinfo/Status;)V
+.method constructor <init>(Lcom/android/settings_ext/deviceinfo/Status;)V
     .locals 0
 
     .prologue
     .line 239
-    iput-object p1, p0, Lcom/android/settings/deviceinfo/Status$3;->Tj:Lcom/android/settings/deviceinfo/Status;
+    iput-object p1, p0, Lcom/android/settings_ext/deviceinfo/Status$3;->Tj:Lcom/android/settings_ext/deviceinfo/Status;
 
     invoke-direct {p0}, Landroid/content/BroadcastReceiver;-><init>()V
 
@@ -80,9 +80,9 @@
     move-result-object v0
 
     .line 251
-    iget-object v1, p0, Lcom/android/settings/deviceinfo/Status$3;->Tj:Lcom/android/settings/deviceinfo/Status;
+    iget-object v1, p0, Lcom/android/settings_ext/deviceinfo/Status$3;->Tj:Lcom/android/settings_ext/deviceinfo/Status;
 
-    invoke-static {v1, v0}, Lcom/android/settings/deviceinfo/Status;->a(Lcom/android/settings/deviceinfo/Status;Ljava/lang/String;)V
+    invoke-static {v1, v0}, Lcom/android/settings_ext/deviceinfo/Status;->a(Lcom/android/settings_ext/deviceinfo/Status;Ljava/lang/String;)V
 
     goto :goto_0
 .end method

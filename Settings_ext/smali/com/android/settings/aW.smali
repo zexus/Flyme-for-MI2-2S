@@ -1,4 +1,4 @@
-.class Lcom/android/settings/aW;
+.class Lcom/android/settings_ext/aW;
 .super Ljava/lang/Object;
 .source "DataUsageSummary.java"
 
@@ -7,16 +7,16 @@
 
 
 # instance fields
-.field final synthetic gH:Lcom/android/settings/DataUsageSummary;
+.field final synthetic gH:Lcom/android/settings_ext/DataUsageSummary;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/DataUsageSummary;)V
+.method constructor <init>(Lcom/android/settings_ext/DataUsageSummary;)V
     .locals 0
 
     .prologue
     .line 1206
-    iput-object p1, p0, Lcom/android/settings/aW;->gH:Lcom/android/settings/DataUsageSummary;
+    iput-object p1, p0, Lcom/android/settings_ext/aW;->gH:Lcom/android/settings_ext/DataUsageSummary;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -34,22 +34,22 @@
 
     move-result-object v0
 
-    check-cast v0, Lcom/android/settings/br;
+    check-cast v0, Lcom/android/settings_ext/br;
 
     .line 1210
-    instance-of v1, v0, Lcom/android/settings/bp;
+    instance-of v1, v0, Lcom/android/settings_ext/bp;
 
     if-eqz v1, :cond_0
 
     .line 1213
-    iget-object v0, p0, Lcom/android/settings/aW;->gH:Lcom/android/settings/DataUsageSummary;
+    iget-object v0, p0, Lcom/android/settings_ext/aW;->gH:Lcom/android/settings_ext/DataUsageSummary;
 
-    invoke-static {v0}, Lcom/android/settings/DataUsageSummary$CycleEditorFragment;->y(Lcom/android/settings/DataUsageSummary;)V
+    invoke-static {v0}, Lcom/android/settings_ext/DataUsageSummary$CycleEditorFragment;->y(Lcom/android/settings_ext/DataUsageSummary;)V
 
     .line 1216
-    iget-object v0, p0, Lcom/android/settings/aW;->gH:Lcom/android/settings/DataUsageSummary;
+    iget-object v0, p0, Lcom/android/settings_ext/aW;->gH:Lcom/android/settings_ext/DataUsageSummary;
 
-    invoke-static {v0}, Lcom/android/settings/DataUsageSummary;->k(Lcom/android/settings/DataUsageSummary;)Landroid/widget/Spinner;
+    invoke-static {v0}, Lcom/android/settings_ext/DataUsageSummary;->k(Lcom/android/settings_ext/DataUsageSummary;)Landroid/widget/Spinner;
 
     move-result-object v0
 
@@ -63,22 +63,22 @@
 
     .line 1226
     :cond_0
-    iget-object v1, p0, Lcom/android/settings/aW;->gH:Lcom/android/settings/DataUsageSummary;
+    iget-object v1, p0, Lcom/android/settings_ext/aW;->gH:Lcom/android/settings_ext/DataUsageSummary;
 
-    invoke-static {v1}, Lcom/android/settings/DataUsageSummary;->l(Lcom/android/settings/DataUsageSummary;)Lcom/android/settings/widget/ChartDataUsageView;
+    invoke-static {v1}, Lcom/android/settings_ext/DataUsageSummary;->l(Lcom/android/settings_ext/DataUsageSummary;)Lcom/android/settings_ext/widget/ChartDataUsageView;
 
     move-result-object v1
 
-    iget-wide v2, v0, Lcom/android/settings/br;->start:J
+    iget-wide v2, v0, Lcom/android/settings_ext/br;->start:J
 
-    iget-wide v4, v0, Lcom/android/settings/br;->gY:J
+    iget-wide v4, v0, Lcom/android/settings_ext/br;->gY:J
 
-    invoke-virtual {v1, v2, v3, v4, v5}, Lcom/android/settings/widget/ChartDataUsageView;->d(JJ)V
+    invoke-virtual {v1, v2, v3, v4, v5}, Lcom/android/settings_ext/widget/ChartDataUsageView;->d(JJ)V
 
     .line 1228
-    iget-object v0, p0, Lcom/android/settings/aW;->gH:Lcom/android/settings/DataUsageSummary;
+    iget-object v0, p0, Lcom/android/settings_ext/aW;->gH:Lcom/android/settings_ext/DataUsageSummary;
 
-    invoke-static {v0}, Lcom/android/settings/DataUsageSummary;->m(Lcom/android/settings/DataUsageSummary;)V
+    invoke-static {v0}, Lcom/android/settings_ext/DataUsageSummary;->m(Lcom/android/settings_ext/DataUsageSummary;)V
 
     goto :goto_0
 .end method

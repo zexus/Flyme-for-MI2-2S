@@ -1,10 +1,10 @@
-.class Lcom/android/settings/applications/RunningState$ServiceItem;
-.super Lcom/android/settings/applications/RunningState$BaseItem;
+.class Lcom/android/settings_ext/applications/RunningState$ServiceItem;
+.super Lcom/android/settings_ext/applications/RunningState$BaseItem;
 .source "RunningState.java"
 
 
 # instance fields
-.field JS:Lcom/android/settings/applications/RunningState$MergedItem;
+.field JS:Lcom/android/settings_ext/applications/RunningState$MergedItem;
 
 .field Lr:Landroid/app/ActivityManager$RunningServiceInfo;
 
@@ -21,7 +21,7 @@
     .line 340
     const/4 v0, 0x0
 
-    invoke-direct {p0, v0, p1}, Lcom/android/settings/applications/RunningState$BaseItem;-><init>(ZI)V
+    invoke-direct {p0, v0, p1}, Lcom/android/settings_ext/applications/RunningState$BaseItem;-><init>(ZI)V
 
     .line 341
     return-void

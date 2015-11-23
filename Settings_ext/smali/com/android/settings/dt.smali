@@ -1,19 +1,19 @@
-.class Lcom/android/settings/dt;
+.class Lcom/android/settings_ext/dt;
 .super Landroid/content/BroadcastReceiver;
 .source "MiuiBackgroundDataEnable.java"
 
 
 # instance fields
-.field final synthetic ow:Lcom/android/settings/dq;
+.field final synthetic ow:Lcom/android/settings_ext/dq;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/dq;)V
+.method constructor <init>(Lcom/android/settings_ext/dq;)V
     .locals 0
 
     .prologue
     .line 95
-    iput-object p1, p0, Lcom/android/settings/dt;->ow:Lcom/android/settings/dq;
+    iput-object p1, p0, Lcom/android/settings_ext/dt;->ow:Lcom/android/settings_ext/dq;
 
     invoke-direct {p0}, Landroid/content/BroadcastReceiver;-><init>()V
 
@@ -27,9 +27,9 @@
 
     .prologue
     .line 99
-    iget-object v0, p0, Lcom/android/settings/dt;->ow:Lcom/android/settings/dq;
+    iget-object v0, p0, Lcom/android/settings_ext/dt;->ow:Lcom/android/settings_ext/dq;
 
-    invoke-virtual {v0}, Lcom/android/settings/dq;->update()V
+    invoke-virtual {v0}, Lcom/android/settings_ext/dq;->update()V
 
     .line 100
     return-void

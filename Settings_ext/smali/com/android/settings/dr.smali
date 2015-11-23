@@ -1,4 +1,4 @@
-.class Lcom/android/settings/dr;
+.class Lcom/android/settings_ext/dr;
 .super Ljava/lang/Object;
 .source "MiuiBackgroundDataEnable.java"
 
@@ -7,16 +7,16 @@
 
 
 # instance fields
-.field final synthetic ow:Lcom/android/settings/dq;
+.field final synthetic ow:Lcom/android/settings_ext/dq;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/dq;)V
+.method constructor <init>(Lcom/android/settings_ext/dq;)V
     .locals 0
 
     .prologue
     .line 76
-    iput-object p1, p0, Lcom/android/settings/dr;->ow:Lcom/android/settings/dq;
+    iput-object p1, p0, Lcom/android/settings_ext/dr;->ow:Lcom/android/settings_ext/dq;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -30,9 +30,9 @@
 
     .prologue
     .line 79
-    iget-object v0, p0, Lcom/android/settings/dr;->ow:Lcom/android/settings/dq;
+    iget-object v0, p0, Lcom/android/settings_ext/dr;->ow:Lcom/android/settings_ext/dq;
 
-    invoke-static {v0}, Lcom/android/settings/dq;->a(Lcom/android/settings/dq;)Landroid/net/NetworkPolicyManager;
+    invoke-static {v0}, Lcom/android/settings_ext/dq;->a(Lcom/android/settings_ext/dq;)Landroid/net/NetworkPolicyManager;
 
     move-result-object v0
 

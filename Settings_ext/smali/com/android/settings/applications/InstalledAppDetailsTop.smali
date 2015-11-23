@@ -1,5 +1,5 @@
-.class public Lcom/android/settings/applications/InstalledAppDetailsTop;
-.super Lcom/android/settings/gh;
+.class public Lcom/android/settings_ext/applications/InstalledAppDetailsTop;
+.super Lcom/android/settings_ext/gh;
 .source "InstalledAppDetailsTop.java"
 
 
@@ -9,7 +9,7 @@
 
     .prologue
     .line 25
-    invoke-direct {p0}, Lcom/android/settings/gh;-><init>()V
+    invoke-direct {p0}, Lcom/android/settings_ext/gh;-><init>()V
 
     return-void
 .end method
@@ -23,7 +23,7 @@
     .line 29
     new-instance v0, Landroid/content/Intent;
 
-    invoke-super {p0}, Lcom/android/settings/gh;->getIntent()Landroid/content/Intent;
+    invoke-super {p0}, Lcom/android/settings_ext/gh;->getIntent()Landroid/content/Intent;
 
     move-result-object v1
 
@@ -32,7 +32,7 @@
     .line 32
     const-string v1, ":settings:show_fragment"
 
-    const-class v2, Lcom/android/settings/applications/InstalledAppDetailsFragment;
+    const-class v2, Lcom/android/settings_ext/applications/InstalledAppDetailsFragment;
 
     invoke-virtual {v2}, Ljava/lang/Class;->getName()Ljava/lang/String;
 
@@ -99,7 +99,7 @@
 
     .prologue
     .line 54
-    const-class v0, Lcom/android/settings/applications/InstalledAppDetailsFragment;
+    const-class v0, Lcom/android/settings_ext/applications/InstalledAppDetailsFragment;
 
     invoke-virtual {v0}, Ljava/lang/Class;->getName()Ljava/lang/String;
 

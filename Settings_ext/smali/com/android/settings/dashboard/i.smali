@@ -1,4 +1,4 @@
-.class Lcom/android/settings/dashboard/i;
+.class Lcom/android/settings_ext/dashboard/i;
 .super Ljava/lang/Object;
 .source "SearchResultsSummary.java"
 
@@ -7,16 +7,16 @@
 
 
 # instance fields
-.field final synthetic Ry:Lcom/android/settings/dashboard/h;
+.field final synthetic Ry:Lcom/android/settings_ext/dashboard/h;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/dashboard/h;)V
+.method constructor <init>(Lcom/android/settings_ext/dashboard/h;)V
     .locals 0
 
     .prologue
     .line 166
-    iput-object p1, p0, Lcom/android/settings/dashboard/i;->Ry:Lcom/android/settings/dashboard/h;
+    iput-object p1, p0, Lcom/android/settings_ext/dashboard/i;->Ry:Lcom/android/settings_ext/dashboard/h;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -41,13 +41,13 @@
 
     .line 178
     :cond_0
-    iget-object v1, p0, Lcom/android/settings/dashboard/i;->Ry:Lcom/android/settings/dashboard/h;
+    iget-object v1, p0, Lcom/android/settings_ext/dashboard/i;->Ry:Lcom/android/settings_ext/dashboard/h;
 
-    invoke-static {v1}, Lcom/android/settings/dashboard/h;->a(Lcom/android/settings/dashboard/h;)Lcom/android/settings/dashboard/l;
+    invoke-static {v1}, Lcom/android/settings_ext/dashboard/h;->a(Lcom/android/settings_ext/dashboard/h;)Lcom/android/settings_ext/dashboard/l;
 
     move-result-object v1
 
-    invoke-static {v1}, Lcom/android/settings/dashboard/l;->a(Lcom/android/settings/dashboard/l;)Landroid/database/Cursor;
+    invoke-static {v1}, Lcom/android/settings_ext/dashboard/l;->a(Lcom/android/settings_ext/dashboard/l;)Landroid/database/Cursor;
 
     move-result-object v2
 
@@ -83,16 +83,16 @@
     move-result-object v4
 
     .line 186
-    iget-object v0, p0, Lcom/android/settings/dashboard/i;->Ry:Lcom/android/settings/dashboard/h;
+    iget-object v0, p0, Lcom/android/settings_ext/dashboard/i;->Ry:Lcom/android/settings_ext/dashboard/h;
 
-    invoke-virtual {v0}, Lcom/android/settings/dashboard/h;->getActivity()Landroid/app/Activity;
+    invoke-virtual {v0}, Lcom/android/settings_ext/dashboard/h;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
-    check-cast v0, Lcom/android/settings/gh;
+    check-cast v0, Lcom/android/settings_ext/gh;
 
     .line 187
-    invoke-virtual {v0}, Lcom/android/settings/gh;->gN()V
+    invoke-virtual {v0}, Lcom/android/settings_ext/gh;->gN()V
 
     .line 189
     invoke-static {v3}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
@@ -118,13 +118,13 @@
 
     const/4 v5, -0x1
 
-    invoke-static/range {v0 .. v6}, Lcom/android/settings/hl;->a(Landroid/content/Context;Ljava/lang/String;Landroid/os/Bundle;Landroid/app/Fragment;IILjava/lang/CharSequence;)V
+    invoke-static/range {v0 .. v6}, Lcom/android/settings_ext/hl;->a(Landroid/content/Context;Ljava/lang/String;Landroid/os/Bundle;Landroid/app/Fragment;IILjava/lang/CharSequence;)V
 
     .line 211
     :goto_1
-    iget-object v0, p0, Lcom/android/settings/dashboard/i;->Ry:Lcom/android/settings/dashboard/h;
+    iget-object v0, p0, Lcom/android/settings_ext/dashboard/i;->Ry:Lcom/android/settings_ext/dashboard/h;
 
-    invoke-static {v0}, Lcom/android/settings/dashboard/h;->b(Lcom/android/settings/dashboard/h;)V
+    invoke-static {v0}, Lcom/android/settings_ext/dashboard/h;->b(Lcom/android/settings_ext/dashboard/h;)V
 
     goto :goto_0
 
@@ -176,7 +176,7 @@
     invoke-virtual {v1, v2, v4}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
 
     .line 208
-    invoke-virtual {v0, v1}, Lcom/android/settings/gh;->startActivity(Landroid/content/Intent;)V
+    invoke-virtual {v0, v1}, Lcom/android/settings_ext/gh;->startActivity(Landroid/content/Intent;)V
 
     goto :goto_1
 .end method

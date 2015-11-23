@@ -1,4 +1,4 @@
-.class Lcom/android/settings/sound/E;
+.class Lcom/android/settings_ext/sound/E;
 .super Ljava/lang/Object;
 .source "RingerVolumeFragment.java"
 
@@ -7,16 +7,16 @@
 
 
 # instance fields
-.field final synthetic ajT:Lcom/android/settings/sound/RingerVolumeFragment;
+.field final synthetic ajT:Lcom/android/settings_ext/sound/RingerVolumeFragment;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/sound/RingerVolumeFragment;)V
+.method constructor <init>(Lcom/android/settings_ext/sound/RingerVolumeFragment;)V
     .locals 0
 
     .prologue
     .line 218
-    iput-object p1, p0, Lcom/android/settings/sound/E;->ajT:Lcom/android/settings/sound/RingerVolumeFragment;
+    iput-object p1, p0, Lcom/android/settings_ext/sound/E;->ajT:Lcom/android/settings_ext/sound/RingerVolumeFragment;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -30,9 +30,9 @@
 
     .prologue
     .line 222
-    iget-object v0, p0, Lcom/android/settings/sound/E;->ajT:Lcom/android/settings/sound/RingerVolumeFragment;
+    iget-object v0, p0, Lcom/android/settings_ext/sound/E;->ajT:Lcom/android/settings_ext/sound/RingerVolumeFragment;
 
-    invoke-virtual {v0}, Lcom/android/settings/sound/RingerVolumeFragment;->rN()V
+    invoke-virtual {v0}, Lcom/android/settings_ext/sound/RingerVolumeFragment;->rN()V
 
     .line 223
     return-void

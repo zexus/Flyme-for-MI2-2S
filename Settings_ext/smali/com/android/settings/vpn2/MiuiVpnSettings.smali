@@ -1,5 +1,5 @@
-.class public Lcom/android/settings/vpn2/MiuiVpnSettings;
-.super Lcom/android/settings/vpn2/VpnSettings;
+.class public Lcom/android/settings_ext/vpn2/MiuiVpnSettings;
+.super Lcom/android/settings_ext/vpn2/VpnSettings;
 .source "MiuiVpnSettings.java"
 
 # interfaces
@@ -9,7 +9,7 @@
 # instance fields
 .field private anT:Z
 
-.field private anU:Lcom/android/settings/vpn2/VpnSettings$VpnPreference;
+.field private anU:Lcom/android/settings_ext/vpn2/VpnSettings$VpnPreference;
 
 .field private anV:Landroid/preference/CheckBoxPreference;
 
@@ -24,35 +24,35 @@
 
     .prologue
     .line 62
-    invoke-direct {p0}, Lcom/android/settings/vpn2/VpnSettings;-><init>()V
+    invoke-direct {p0}, Lcom/android/settings_ext/vpn2/VpnSettings;-><init>()V
 
     .line 75
-    new-instance v0, Lcom/android/settings/vpn2/MiuiVpnSettings$1;
+    new-instance v0, Lcom/android/settings_ext/vpn2/MiuiVpnSettings$1;
 
-    invoke-direct {v0, p0}, Lcom/android/settings/vpn2/MiuiVpnSettings$1;-><init>(Lcom/android/settings/vpn2/MiuiVpnSettings;)V
+    invoke-direct {v0, p0}, Lcom/android/settings_ext/vpn2/MiuiVpnSettings$1;-><init>(Lcom/android/settings_ext/vpn2/MiuiVpnSettings;)V
 
-    iput-object v0, p0, Lcom/android/settings/vpn2/MiuiVpnSettings;->mReceiver:Landroid/content/BroadcastReceiver;
+    iput-object v0, p0, Lcom/android/settings_ext/vpn2/MiuiVpnSettings;->mReceiver:Landroid/content/BroadcastReceiver;
 
     .line 228
     return-void
 .end method
 
-.method static synthetic a(Lcom/android/settings/vpn2/MiuiVpnSettings;)Landroid/preference/CheckBoxPreference;
+.method static synthetic a(Lcom/android/settings_ext/vpn2/MiuiVpnSettings;)Landroid/preference/CheckBoxPreference;
     .locals 1
 
     .prologue
     .line 62
-    iget-object v0, p0, Lcom/android/settings/vpn2/MiuiVpnSettings;->anV:Landroid/preference/CheckBoxPreference;
+    iget-object v0, p0, Lcom/android/settings_ext/vpn2/MiuiVpnSettings;->anV:Landroid/preference/CheckBoxPreference;
 
     return-object v0
 .end method
 
-.method static synthetic a(Lcom/android/settings/vpn2/MiuiVpnSettings;Z)V
+.method static synthetic a(Lcom/android/settings_ext/vpn2/MiuiVpnSettings;Z)V
     .locals 0
 
     .prologue
     .line 62
-    invoke-direct {p0, p1}, Lcom/android/settings/vpn2/MiuiVpnSettings;->aQ(Z)V
+    invoke-direct {p0, p1}, Lcom/android/settings_ext/vpn2/MiuiVpnSettings;->aQ(Z)V
 
     return-void
 .end method
@@ -62,29 +62,29 @@
 
     .prologue
     .line 184
-    invoke-virtual {p0}, Lcom/android/settings/vpn2/MiuiVpnSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/vpn2/MiuiVpnSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
-    invoke-static {v0}, Lcom/android/settings/vpn2/VpnUtils;->br(Landroid/content/Context;)Ljava/lang/String;
+    invoke-static {v0}, Lcom/android/settings_ext/vpn2/VpnUtils;->br(Landroid/content/Context;)Ljava/lang/String;
 
     move-result-object v0
 
     .line 185
-    iget-object v1, p0, Lcom/android/settings/vpn2/MiuiVpnSettings;->aoa:Ljava/util/HashMap;
+    iget-object v1, p0, Lcom/android/settings_ext/vpn2/MiuiVpnSettings;->aoa:Ljava/util/HashMap;
 
     invoke-virtual {v1, v0}, Ljava/util/HashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v0
 
-    check-cast v0, Lcom/android/settings/vpn2/VpnSettings$VpnPreference;
+    check-cast v0, Lcom/android/settings_ext/vpn2/VpnSettings$VpnPreference;
 
     .line 186
     const/4 v1, 0x0
 
     .line 188
     :try_start_0
-    iget-object v2, p0, Lcom/android/settings/vpn2/MiuiVpnSettings;->anY:Landroid/net/IConnectivityManager;
+    iget-object v2, p0, Lcom/android/settings_ext/vpn2/MiuiVpnSettings;->anY:Landroid/net/IConnectivityManager;
 
     invoke-interface {v2}, Landroid/net/IConnectivityManager;->getLegacyVpnInfo()Lcom/android/internal/net/LegacyVpnInfo;
     :try_end_0
@@ -100,7 +100,7 @@
     if-eqz v0, :cond_0
 
     .line 194
-    invoke-virtual {v0}, Lcom/android/settings/vpn2/VpnSettings$VpnPreference;->sP()Lcom/android/internal/net/VpnProfile;
+    invoke-virtual {v0}, Lcom/android/settings_ext/vpn2/VpnSettings$VpnPreference;->sP()Lcom/android/internal/net/VpnProfile;
 
     move-result-object v0
 
@@ -125,7 +125,7 @@
     .line 199
     :cond_1
     :try_start_1
-    invoke-virtual {p0, v0}, Lcom/android/settings/vpn2/MiuiVpnSettings;->b(Lcom/android/internal/net/VpnProfile;)V
+    invoke-virtual {p0, v0}, Lcom/android/settings_ext/vpn2/MiuiVpnSettings;->b(Lcom/android/internal/net/VpnProfile;)V
     :try_end_1
     .catch Ljava/lang/Exception; {:try_start_1 .. :try_end_1} :catch_0
 
@@ -144,7 +144,7 @@
     .line 205
     iget-object v0, v1, Lcom/android/internal/net/LegacyVpnInfo;->key:Ljava/lang/String;
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/vpn2/MiuiVpnSettings;->disconnect(Ljava/lang/String;)V
+    invoke-virtual {p0, v0}, Lcom/android/settings_ext/vpn2/MiuiVpnSettings;->disconnect(Ljava/lang/String;)V
 
     goto :goto_1
 
@@ -162,7 +162,7 @@
     .line 318
     const-string v0, "vpn_password_enable"
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/vpn2/MiuiVpnSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v0}, Lcom/android/settings_ext/vpn2/MiuiVpnSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v0
 
@@ -186,7 +186,7 @@
     invoke-virtual {v0, v1}, Landroid/preference/CheckBoxPreference;->setChecked(Z)V
 
     .line 323
-    invoke-direct {p0, v1}, Lcom/android/settings/vpn2/MiuiVpnSettings;->aS(Z)V
+    invoke-direct {p0, v1}, Lcom/android/settings_ext/vpn2/MiuiVpnSettings;->aS(Z)V
 
     .line 325
     :cond_0
@@ -204,7 +204,7 @@
 
     .prologue
     .line 328
-    invoke-virtual {p0}, Lcom/android/settings/vpn2/MiuiVpnSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/vpn2/MiuiVpnSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
@@ -231,22 +231,22 @@
     goto :goto_0
 .end method
 
-.method static synthetic b(Lcom/android/settings/vpn2/MiuiVpnSettings;Z)Z
+.method static synthetic b(Lcom/android/settings_ext/vpn2/MiuiVpnSettings;Z)Z
     .locals 0
 
     .prologue
     .line 62
-    iput-boolean p1, p0, Lcom/android/settings/vpn2/MiuiVpnSettings;->anT:Z
+    iput-boolean p1, p0, Lcom/android/settings_ext/vpn2/MiuiVpnSettings;->anT:Z
 
     return p1
 .end method
 
-.method static synthetic c(Lcom/android/settings/vpn2/MiuiVpnSettings;Z)V
+.method static synthetic c(Lcom/android/settings_ext/vpn2/MiuiVpnSettings;Z)V
     .locals 0
 
     .prologue
     .line 62
-    invoke-direct {p0, p1}, Lcom/android/settings/vpn2/MiuiVpnSettings;->aR(Z)V
+    invoke-direct {p0, p1}, Lcom/android/settings_ext/vpn2/MiuiVpnSettings;->aR(Z)V
 
     return-void
 .end method
@@ -260,18 +260,18 @@
     const/4 v2, 0x0
 
     .line 424
-    iget-object v0, p0, Lcom/android/settings/vpn2/MiuiVpnSettings;->anU:Lcom/android/settings/vpn2/VpnSettings$VpnPreference;
+    iget-object v0, p0, Lcom/android/settings_ext/vpn2/MiuiVpnSettings;->anU:Lcom/android/settings_ext/vpn2/VpnSettings$VpnPreference;
 
     if-eqz v0, :cond_0
 
     .line 425
-    iget-object v0, p0, Lcom/android/settings/vpn2/MiuiVpnSettings;->anU:Lcom/android/settings/vpn2/VpnSettings$VpnPreference;
+    iget-object v0, p0, Lcom/android/settings_ext/vpn2/MiuiVpnSettings;->anU:Lcom/android/settings_ext/vpn2/VpnSettings$VpnPreference;
 
-    invoke-virtual {v0, v2}, Lcom/android/settings/vpn2/VpnSettings$VpnPreference;->setChecked(Z)V
+    invoke-virtual {v0, v2}, Lcom/android/settings_ext/vpn2/VpnSettings$VpnPreference;->setChecked(Z)V
 
     .line 427
     :cond_0
-    iget-object v0, p0, Lcom/android/settings/vpn2/MiuiVpnSettings;->aoa:Ljava/util/HashMap;
+    iget-object v0, p0, Lcom/android/settings_ext/vpn2/MiuiVpnSettings;->aoa:Ljava/util/HashMap;
 
     iget-object v3, p1, Lcom/android/internal/net/VpnProfile;->key:Ljava/lang/String;
 
@@ -279,27 +279,27 @@
 
     move-result-object v0
 
-    check-cast v0, Lcom/android/settings/vpn2/VpnSettings$VpnPreference;
+    check-cast v0, Lcom/android/settings_ext/vpn2/VpnSettings$VpnPreference;
 
-    iput-object v0, p0, Lcom/android/settings/vpn2/MiuiVpnSettings;->anU:Lcom/android/settings/vpn2/VpnSettings$VpnPreference;
+    iput-object v0, p0, Lcom/android/settings_ext/vpn2/MiuiVpnSettings;->anU:Lcom/android/settings_ext/vpn2/VpnSettings$VpnPreference;
 
     .line 428
-    iget-object v0, p0, Lcom/android/settings/vpn2/MiuiVpnSettings;->anU:Lcom/android/settings/vpn2/VpnSettings$VpnPreference;
+    iget-object v0, p0, Lcom/android/settings_ext/vpn2/MiuiVpnSettings;->anU:Lcom/android/settings_ext/vpn2/VpnSettings$VpnPreference;
 
-    invoke-virtual {v0, v1}, Lcom/android/settings/vpn2/VpnSettings$VpnPreference;->setChecked(Z)V
+    invoke-virtual {v0, v1}, Lcom/android/settings_ext/vpn2/VpnSettings$VpnPreference;->setChecked(Z)V
 
     .line 429
-    invoke-virtual {p0}, Lcom/android/settings/vpn2/MiuiVpnSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/vpn2/MiuiVpnSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
-    iget-object v3, p0, Lcom/android/settings/vpn2/MiuiVpnSettings;->anU:Lcom/android/settings/vpn2/VpnSettings$VpnPreference;
+    iget-object v3, p0, Lcom/android/settings_ext/vpn2/MiuiVpnSettings;->anU:Lcom/android/settings_ext/vpn2/VpnSettings$VpnPreference;
 
-    invoke-virtual {v3}, Lcom/android/settings/vpn2/VpnSettings$VpnPreference;->sP()Lcom/android/internal/net/VpnProfile;
+    invoke-virtual {v3}, Lcom/android/settings_ext/vpn2/VpnSettings$VpnPreference;->sP()Lcom/android/internal/net/VpnProfile;
 
     move-result-object v3
 
-    invoke-static {v0, v3}, Lcom/android/settings/vpn2/VpnUtils;->a(Landroid/content/Context;Lcom/android/internal/net/VpnProfile;)V
+    invoke-static {v0, v3}, Lcom/android/settings_ext/vpn2/VpnUtils;->a(Landroid/content/Context;Lcom/android/internal/net/VpnProfile;)V
 
     .line 430
     iget-object v0, p1, Lcom/android/internal/net/VpnProfile;->name:Ljava/lang/String;
@@ -338,16 +338,16 @@
     const/4 v3, 0x0
 
     .line 211
-    new-instance v0, Lcom/android/settings/ap;
+    new-instance v0, Lcom/android/settings_ext/ap;
 
-    invoke-virtual {p0}, Lcom/android/settings/vpn2/MiuiVpnSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/vpn2/MiuiVpnSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v1
 
-    invoke-direct {v0, v1, p0}, Lcom/android/settings/ap;-><init>(Landroid/app/Activity;Landroid/app/Fragment;)V
+    invoke-direct {v0, v1, p0}, Lcom/android/settings_ext/ap;-><init>(Landroid/app/Activity;Landroid/app/Fragment;)V
 
     .line 212
-    invoke-virtual {v0}, Lcom/android/settings/ap;->at()Lcom/android/internal/widget/LockPatternUtils;
+    invoke-virtual {v0}, Lcom/android/settings_ext/ap;->at()Lcom/android/internal/widget/LockPatternUtils;
 
     move-result-object v0
 
@@ -363,7 +363,7 @@
 
     .line 214
     :sswitch_0
-    const-class v0, Lcom/android/settings/MiuiSecurityCommonSettings$MiuiConfirmLockPatternFragment;
+    const-class v0, Lcom/android/settings_ext/MiuiSecurityCommonSettings$MiuiConfirmLockPatternFragment;
 
     invoke-virtual {v0}, Ljava/lang/Class;->getName()Ljava/lang/String;
 
@@ -375,13 +375,13 @@
 
     move-object v1, p0
 
-    invoke-virtual/range {v0 .. v5}, Lcom/android/settings/vpn2/MiuiVpnSettings;->a(Landroid/app/Fragment;Ljava/lang/String;ILandroid/os/Bundle;I)Z
+    invoke-virtual/range {v0 .. v5}, Lcom/android/settings_ext/vpn2/MiuiVpnSettings;->a(Landroid/app/Fragment;Ljava/lang/String;ILandroid/os/Bundle;I)Z
 
     goto :goto_0
 
     .line 222
     :sswitch_1
-    const-class v0, Lcom/android/settings/MiuiSecurityCommonSettings$MiuiConfirmLockPasswordFragment;
+    const-class v0, Lcom/android/settings_ext/MiuiSecurityCommonSettings$MiuiConfirmLockPasswordFragment;
 
     invoke-virtual {v0}, Ljava/lang/Class;->getName()Ljava/lang/String;
 
@@ -393,7 +393,7 @@
 
     move-object v1, p0
 
-    invoke-virtual/range {v0 .. v5}, Lcom/android/settings/vpn2/MiuiVpnSettings;->a(Landroid/app/Fragment;Ljava/lang/String;ILandroid/os/Bundle;I)Z
+    invoke-virtual/range {v0 .. v5}, Lcom/android/settings_ext/vpn2/MiuiVpnSettings;->a(Landroid/app/Fragment;Ljava/lang/String;ILandroid/os/Bundle;I)Z
 
     goto :goto_0
 
@@ -454,7 +454,7 @@
 
     if-eqz v0, :cond_0
 
-    iget-object v3, p0, Lcom/android/settings/vpn2/MiuiVpnSettings;->aoa:Ljava/util/HashMap;
+    iget-object v3, p0, Lcom/android/settings_ext/vpn2/MiuiVpnSettings;->aoa:Ljava/util/HashMap;
 
     if-nez v3, :cond_1
 
@@ -470,13 +470,13 @@
     move-result-object v3
 
     .line 286
-    iget-object v0, p0, Lcom/android/settings/vpn2/MiuiVpnSettings;->aoa:Ljava/util/HashMap;
+    iget-object v0, p0, Lcom/android/settings_ext/vpn2/MiuiVpnSettings;->aoa:Ljava/util/HashMap;
 
     invoke-virtual {v0, v1}, Ljava/util/HashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v0
 
-    check-cast v0, Lcom/android/settings/vpn2/VpnSettings$VpnPreference;
+    check-cast v0, Lcom/android/settings_ext/vpn2/VpnSettings$VpnPreference;
 
     .line 287
     if-eqz v2, :cond_2
@@ -485,20 +485,20 @@
     if-eqz v0, :cond_0
 
     .line 289
-    invoke-virtual {p0, v1}, Lcom/android/settings/vpn2/MiuiVpnSettings;->disconnect(Ljava/lang/String;)V
+    invoke-virtual {p0, v1}, Lcom/android/settings_ext/vpn2/MiuiVpnSettings;->disconnect(Ljava/lang/String;)V
 
     .line 290
-    iget-object v2, p0, Lcom/android/settings/vpn2/MiuiVpnSettings;->aoe:Landroid/preference/PreferenceCategory;
+    iget-object v2, p0, Lcom/android/settings_ext/vpn2/MiuiVpnSettings;->aoe:Landroid/preference/PreferenceCategory;
 
     invoke-virtual {v2, v0}, Landroid/preference/PreferenceCategory;->removePreference(Landroid/preference/Preference;)Z
 
     .line 291
-    iget-object v0, p0, Lcom/android/settings/vpn2/MiuiVpnSettings;->aoa:Ljava/util/HashMap;
+    iget-object v0, p0, Lcom/android/settings_ext/vpn2/MiuiVpnSettings;->aoa:Ljava/util/HashMap;
 
     invoke-virtual {v0, v1}, Ljava/util/HashMap;->remove(Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 292
-    iget-object v0, p0, Lcom/android/settings/vpn2/MiuiVpnSettings;->cJ:Landroid/security/KeyStore;
+    iget-object v0, p0, Lcom/android/settings_ext/vpn2/MiuiVpnSettings;->cJ:Landroid/security/KeyStore;
 
     new-instance v2, Ljava/lang/StringBuilder;
 
@@ -524,7 +524,7 @@
 
     .line 295
     :cond_2
-    iget-object v1, p0, Lcom/android/settings/vpn2/MiuiVpnSettings;->cJ:Landroid/security/KeyStore;
+    iget-object v1, p0, Lcom/android/settings_ext/vpn2/MiuiVpnSettings;->cJ:Landroid/security/KeyStore;
 
     new-instance v2, Ljava/lang/StringBuilder;
 
@@ -562,14 +562,14 @@
     .line 299
     iget-object v1, v3, Lcom/android/internal/net/VpnProfile;->key:Ljava/lang/String;
 
-    invoke-virtual {p0, v1}, Lcom/android/settings/vpn2/MiuiVpnSettings;->disconnect(Ljava/lang/String;)V
+    invoke-virtual {p0, v1}, Lcom/android/settings_ext/vpn2/MiuiVpnSettings;->disconnect(Ljava/lang/String;)V
 
     .line 300
-    invoke-virtual {v0, v3}, Lcom/android/settings/vpn2/VpnSettings$VpnPreference;->d(Lcom/android/internal/net/VpnProfile;)V
+    invoke-virtual {v0, v3}, Lcom/android/settings_ext/vpn2/VpnSettings$VpnPreference;->d(Lcom/android/internal/net/VpnProfile;)V
 
     .line 307
     :goto_1
-    invoke-direct {p0, v3}, Lcom/android/settings/vpn2/MiuiVpnSettings;->c(Lcom/android/internal/net/VpnProfile;)Z
+    invoke-direct {p0, v3}, Lcom/android/settings_ext/vpn2/MiuiVpnSettings;->c(Lcom/android/internal/net/VpnProfile;)Z
 
     move-result v0
 
@@ -577,7 +577,7 @@
 
     .line 309
     :try_start_0
-    invoke-virtual {p0, v3}, Lcom/android/settings/vpn2/MiuiVpnSettings;->b(Lcom/android/internal/net/VpnProfile;)V
+    invoke-virtual {p0, v3}, Lcom/android/settings_ext/vpn2/MiuiVpnSettings;->b(Lcom/android/internal/net/VpnProfile;)V
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 
@@ -591,28 +591,28 @@
 
     .line 302
     :cond_3
-    new-instance v0, Lcom/android/settings/vpn2/VpnSettings$VpnPreference;
+    new-instance v0, Lcom/android/settings_ext/vpn2/VpnSettings$VpnPreference;
 
-    invoke-virtual {p0}, Lcom/android/settings/vpn2/MiuiVpnSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/vpn2/MiuiVpnSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v1
 
-    invoke-direct {v0, p0, v1, v3}, Lcom/android/settings/vpn2/VpnSettings$VpnPreference;-><init>(Lcom/android/settings/vpn2/VpnSettings;Landroid/content/Context;Lcom/android/internal/net/VpnProfile;)V
+    invoke-direct {v0, p0, v1, v3}, Lcom/android/settings_ext/vpn2/VpnSettings$VpnPreference;-><init>(Lcom/android/settings_ext/vpn2/VpnSettings;Landroid/content/Context;Lcom/android/internal/net/VpnProfile;)V
 
     .line 303
-    iget-object v1, p0, Lcom/android/settings/vpn2/MiuiVpnSettings;->aoa:Ljava/util/HashMap;
+    iget-object v1, p0, Lcom/android/settings_ext/vpn2/MiuiVpnSettings;->aoa:Ljava/util/HashMap;
 
     iget-object v2, v3, Lcom/android/internal/net/VpnProfile;->key:Ljava/lang/String;
 
     invoke-virtual {v1, v2, v0}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 304
-    iget-object v1, p0, Lcom/android/settings/vpn2/MiuiVpnSettings;->aoe:Landroid/preference/PreferenceCategory;
+    iget-object v1, p0, Lcom/android/settings_ext/vpn2/MiuiVpnSettings;->aoe:Landroid/preference/PreferenceCategory;
 
     invoke-virtual {v1, v0}, Landroid/preference/PreferenceCategory;->addPreference(Landroid/preference/Preference;)Z
 
     .line 305
-    invoke-virtual {v0, p0}, Lcom/android/settings/vpn2/VpnSettings$VpnPreference;->setOnPreferenceChangeListener(Landroid/preference/Preference$OnPreferenceChangeListener;)V
+    invoke-virtual {v0, p0}, Lcom/android/settings_ext/vpn2/VpnSettings$VpnPreference;->setOnPreferenceChangeListener(Landroid/preference/Preference$OnPreferenceChangeListener;)V
 
     goto :goto_1
 .end method
@@ -624,7 +624,7 @@
     .line 352
     const/4 v0, 0x0
 
-    invoke-virtual {p0, p1, v0}, Lcom/android/settings/vpn2/MiuiVpnSettings;->a(Lcom/android/internal/net/VpnProfile;Z)V
+    invoke-virtual {p0, p1, v0}, Lcom/android/settings_ext/vpn2/MiuiVpnSettings;->a(Lcom/android/internal/net/VpnProfile;Z)V
 
     .line 353
     return-void
@@ -661,7 +661,7 @@
     invoke-virtual {v4, v0, p2}, Landroid/os/Bundle;->putBoolean(Ljava/lang/String;Z)V
 
     .line 360
-    const-class v0, Lcom/android/settings/vpn2/MiuiVpnEditFragment;
+    const-class v0, Lcom/android/settings_ext/vpn2/MiuiVpnEditFragment;
 
     invoke-virtual {v0}, Ljava/lang/Class;->getName()Ljava/lang/String;
 
@@ -675,7 +675,7 @@
 
     move-object v1, p0
 
-    invoke-virtual/range {v0 .. v5}, Lcom/android/settings/vpn2/MiuiVpnSettings;->a(Landroid/app/Fragment;Ljava/lang/String;ILandroid/os/Bundle;I)Z
+    invoke-virtual/range {v0 .. v5}, Lcom/android/settings_ext/vpn2/MiuiVpnSettings;->a(Landroid/app/Fragment;Ljava/lang/String;ILandroid/os/Bundle;I)Z
 
     .line 361
     return-void
@@ -686,11 +686,11 @@
 
     .prologue
     .line 417
-    invoke-virtual {p0}, Lcom/android/settings/vpn2/MiuiVpnSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/vpn2/MiuiVpnSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
-    invoke-static {v0}, Lcom/android/settings/vpn2/VpnUtils;->bs(Landroid/content/Context;)Z
+    invoke-static {v0}, Lcom/android/settings_ext/vpn2/VpnUtils;->bs(Landroid/content/Context;)Z
 
     move-result v0
 
@@ -702,7 +702,7 @@
 
     .line 420
     :cond_0
-    invoke-super {p0, p1}, Lcom/android/settings/vpn2/VpnSettings;->b(Lcom/android/internal/net/VpnProfile;)V
+    invoke-super {p0, p1}, Lcom/android/settings_ext/vpn2/VpnSettings;->b(Lcom/android/internal/net/VpnProfile;)V
 
     goto :goto_0
 .end method
@@ -712,7 +712,7 @@
 
     .prologue
     .line 266
-    invoke-super {p0, p1, p2, p3}, Lcom/android/settings/vpn2/VpnSettings;->onActivityResult(IILandroid/content/Intent;)V
+    invoke-super {p0, p1, p2, p3}, Lcom/android/settings_ext/vpn2/VpnSettings;->onActivityResult(IILandroid/content/Intent;)V
 
     .line 267
     const/16 v0, 0x64
@@ -727,7 +727,7 @@
     const/4 v0, 0x1
 
     :goto_0
-    invoke-direct {p0, v0}, Lcom/android/settings/vpn2/MiuiVpnSettings;->aR(Z)V
+    invoke-direct {p0, v0}, Lcom/android/settings_ext/vpn2/MiuiVpnSettings;->aR(Z)V
 
     .line 273
     :cond_0
@@ -749,7 +749,7 @@
 
     move-result-object v0
 
-    invoke-virtual {p0, p1, v0}, Lcom/android/settings/vpn2/MiuiVpnSettings;->a(ILandroid/os/Bundle;)V
+    invoke-virtual {p0, p1, v0}, Lcom/android/settings_ext/vpn2/MiuiVpnSettings;->a(ILandroid/os/Bundle;)V
 
     goto :goto_1
 .end method
@@ -763,33 +763,33 @@
     const/4 v3, 0x0
 
     .line 86
-    invoke-super {p0, p1}, Lcom/android/settings/vpn2/VpnSettings;->onCreate(Landroid/os/Bundle;)V
+    invoke-super {p0, p1}, Lcom/android/settings_ext/vpn2/VpnSettings;->onCreate(Landroid/os/Bundle;)V
 
     .line 87
-    invoke-virtual {p0, v4}, Lcom/android/settings/vpn2/MiuiVpnSettings;->setHasOptionsMenu(Z)V
+    invoke-virtual {p0, v4}, Lcom/android/settings_ext/vpn2/MiuiVpnSettings;->setHasOptionsMenu(Z)V
 
     .line 89
     new-instance v0, Lcom/android/internal/widget/LockPatternUtils;
 
-    invoke-virtual {p0}, Lcom/android/settings/vpn2/MiuiVpnSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/vpn2/MiuiVpnSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v1
 
     invoke-direct {v0, v1}, Lcom/android/internal/widget/LockPatternUtils;-><init>(Landroid/content/Context;)V
 
-    iput-object v0, p0, Lcom/android/settings/vpn2/MiuiVpnSettings;->cP:Lcom/android/internal/widget/LockPatternUtils;
+    iput-object v0, p0, Lcom/android/settings_ext/vpn2/MiuiVpnSettings;->cP:Lcom/android/internal/widget/LockPatternUtils;
 
     .line 90
     const-string v0, "vpn_password_enable"
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/vpn2/MiuiVpnSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v0}, Lcom/android/settings_ext/vpn2/MiuiVpnSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v0
 
     check-cast v0, Landroid/preference/CheckBoxPreference;
 
     .line 91
-    invoke-virtual {p0}, Lcom/android/settings/vpn2/MiuiVpnSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/vpn2/MiuiVpnSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v1
 
@@ -805,7 +805,7 @@
 
     if-lez v1, :cond_0
 
-    iget-object v1, p0, Lcom/android/settings/vpn2/MiuiVpnSettings;->cP:Lcom/android/internal/widget/LockPatternUtils;
+    iget-object v1, p0, Lcom/android/settings_ext/vpn2/MiuiVpnSettings;->cP:Lcom/android/internal/widget/LockPatternUtils;
 
     invoke-virtual {v1}, Lcom/android/internal/widget/LockPatternUtils;->isSecure()Z
 
@@ -820,22 +820,22 @@
     :goto_0
     const-string v0, "vpn_enable"
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/vpn2/MiuiVpnSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v0}, Lcom/android/settings_ext/vpn2/MiuiVpnSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v0
 
     check-cast v0, Landroid/preference/CheckBoxPreference;
 
-    iput-object v0, p0, Lcom/android/settings/vpn2/MiuiVpnSettings;->anV:Landroid/preference/CheckBoxPreference;
+    iput-object v0, p0, Lcom/android/settings_ext/vpn2/MiuiVpnSettings;->anV:Landroid/preference/CheckBoxPreference;
 
     .line 101
-    iget-object v0, p0, Lcom/android/settings/vpn2/MiuiVpnSettings;->anV:Landroid/preference/CheckBoxPreference;
+    iget-object v0, p0, Lcom/android/settings_ext/vpn2/MiuiVpnSettings;->anV:Landroid/preference/CheckBoxPreference;
 
-    invoke-virtual {p0}, Lcom/android/settings/vpn2/MiuiVpnSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/vpn2/MiuiVpnSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v1
 
-    invoke-static {v1}, Lcom/android/settings/vpn2/VpnUtils;->bs(Landroid/content/Context;)Z
+    invoke-static {v1}, Lcom/android/settings_ext/vpn2/VpnUtils;->bs(Landroid/content/Context;)Z
 
     move-result v1
 
@@ -844,13 +844,13 @@
     .line 102
     const-string v0, "vpn_configure_category"
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/vpn2/MiuiVpnSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v0}, Lcom/android/settings_ext/vpn2/MiuiVpnSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v0
 
     check-cast v0, Landroid/preference/PreferenceCategory;
 
-    iput-object v0, p0, Lcom/android/settings/vpn2/MiuiVpnSettings;->aoe:Landroid/preference/PreferenceCategory;
+    iput-object v0, p0, Lcom/android/settings_ext/vpn2/MiuiVpnSettings;->aoe:Landroid/preference/PreferenceCategory;
 
     .line 104
     new-instance v0, Landroid/content/IntentFilter;
@@ -863,11 +863,11 @@
     invoke-virtual {v0, v1}, Landroid/content/IntentFilter;->addAction(Ljava/lang/String;)V
 
     .line 106
-    invoke-virtual {p0}, Lcom/android/settings/vpn2/MiuiVpnSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/vpn2/MiuiVpnSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v1
 
-    iget-object v2, p0, Lcom/android/settings/vpn2/MiuiVpnSettings;->mReceiver:Landroid/content/BroadcastReceiver;
+    iget-object v2, p0, Lcom/android/settings_ext/vpn2/MiuiVpnSettings;->mReceiver:Landroid/content/BroadcastReceiver;
 
     invoke-virtual {v1, v2, v0}, Landroid/app/Activity;->registerReceiver(Landroid/content/BroadcastReceiver;Landroid/content/IntentFilter;)Landroid/content/Intent;
 
@@ -879,7 +879,7 @@
     invoke-virtual {v0, v3}, Landroid/preference/CheckBoxPreference;->setChecked(Z)V
 
     .line 96
-    invoke-direct {p0, v3}, Lcom/android/settings/vpn2/MiuiVpnSettings;->aS(Z)V
+    invoke-direct {p0, v3}, Lcom/android/settings_ext/vpn2/MiuiVpnSettings;->aS(Z)V
 
     .line 97
     invoke-static {}, Landroid/security/KeyStore;->getInstance()Landroid/security/KeyStore;
@@ -933,14 +933,14 @@
 
     .prologue
     .line 143
-    invoke-super {p0}, Lcom/android/settings/vpn2/VpnSettings;->onDestroy()V
+    invoke-super {p0}, Lcom/android/settings_ext/vpn2/VpnSettings;->onDestroy()V
 
     .line 144
-    invoke-virtual {p0}, Lcom/android/settings/vpn2/MiuiVpnSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/vpn2/MiuiVpnSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/android/settings/vpn2/MiuiVpnSettings;->mReceiver:Landroid/content/BroadcastReceiver;
+    iget-object v1, p0, Lcom/android/settings_ext/vpn2/MiuiVpnSettings;->mReceiver:Landroid/content/BroadcastReceiver;
 
     invoke-virtual {v0, v1}, Landroid/app/Activity;->unregisterReceiver(Landroid/content/BroadcastReceiver;)V
 
@@ -968,7 +968,7 @@
 
     .line 341
     :goto_0
-    iget-object v3, p0, Lcom/android/settings/vpn2/MiuiVpnSettings;->aoa:Ljava/util/HashMap;
+    iget-object v3, p0, Lcom/android/settings_ext/vpn2/MiuiVpnSettings;->aoa:Ljava/util/HashMap;
 
     invoke-static {v0, v1}, Ljava/lang/Long;->toHexString(J)Ljava/lang/String;
 
@@ -997,7 +997,7 @@
 
     invoke-direct {v3, v0}, Lcom/android/internal/net/VpnProfile;-><init>(Ljava/lang/String;)V
 
-    invoke-virtual {p0, v3, v2}, Lcom/android/settings/vpn2/MiuiVpnSettings;->a(Lcom/android/internal/net/VpnProfile;Z)V
+    invoke-virtual {p0, v3, v2}, Lcom/android/settings_ext/vpn2/MiuiVpnSettings;->a(Lcom/android/internal/net/VpnProfile;Z)V
 
     move v0, v2
 
@@ -1006,7 +1006,7 @@
     return v0
 
     :cond_1
-    invoke-super {p0, p1}, Lcom/android/settings/vpn2/VpnSettings;->onOptionsItemSelected(Landroid/view/MenuItem;)Z
+    invoke-super {p0, p1}, Lcom/android/settings_ext/vpn2/VpnSettings;->onOptionsItemSelected(Landroid/view/MenuItem;)Z
 
     move-result v0
 
@@ -1022,7 +1022,7 @@
     const/4 v1, 0x0
 
     .line 372
-    iget-object v2, p0, Lcom/android/settings/vpn2/MiuiVpnSettings;->aob:Lcom/android/settings/vpn2/VpnDialog;
+    iget-object v2, p0, Lcom/android/settings_ext/vpn2/MiuiVpnSettings;->aob:Lcom/android/settings_ext/vpn2/VpnDialog;
 
     if-eqz v2, :cond_0
 
@@ -1032,11 +1032,11 @@
 
     .line 376
     :cond_0
-    invoke-virtual {p0}, Lcom/android/settings/vpn2/MiuiVpnSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/vpn2/MiuiVpnSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v2
 
-    invoke-static {v2}, Lcom/android/settings/vpn2/VpnUtils;->bs(Landroid/content/Context;)Z
+    invoke-static {v2}, Lcom/android/settings_ext/vpn2/VpnUtils;->bs(Landroid/content/Context;)Z
 
     move-result v2
 
@@ -1049,25 +1049,25 @@
 
     .line 380
     :cond_1
-    instance-of v2, p1, Lcom/android/settings/vpn2/VpnSettings$VpnPreference;
+    instance-of v2, p1, Lcom/android/settings_ext/vpn2/VpnSettings$VpnPreference;
 
     if-eqz v2, :cond_4
 
     .line 381
-    check-cast p1, Lcom/android/settings/vpn2/VpnSettings$VpnPreference;
+    check-cast p1, Lcom/android/settings_ext/vpn2/VpnSettings$VpnPreference;
 
-    invoke-virtual {p1}, Lcom/android/settings/vpn2/VpnSettings$VpnPreference;->sP()Lcom/android/internal/net/VpnProfile;
+    invoke-virtual {p1}, Lcom/android/settings_ext/vpn2/VpnSettings$VpnPreference;->sP()Lcom/android/internal/net/VpnProfile;
 
     move-result-object v2
 
     .line 382
-    iget-object v3, p0, Lcom/android/settings/vpn2/MiuiVpnSettings;->aod:Lcom/android/internal/net/LegacyVpnInfo;
+    iget-object v3, p0, Lcom/android/settings_ext/vpn2/MiuiVpnSettings;->aod:Lcom/android/internal/net/LegacyVpnInfo;
 
     if-eqz v3, :cond_2
 
     iget-object v3, v2, Lcom/android/internal/net/VpnProfile;->key:Ljava/lang/String;
 
-    iget-object v4, p0, Lcom/android/settings/vpn2/MiuiVpnSettings;->aod:Lcom/android/internal/net/LegacyVpnInfo;
+    iget-object v4, p0, Lcom/android/settings_ext/vpn2/MiuiVpnSettings;->aod:Lcom/android/internal/net/LegacyVpnInfo;
 
     iget-object v4, v4, Lcom/android/internal/net/LegacyVpnInfo;->key:Ljava/lang/String;
 
@@ -1077,7 +1077,7 @@
 
     if-eqz v3, :cond_2
 
-    iget-object v3, p0, Lcom/android/settings/vpn2/MiuiVpnSettings;->aod:Lcom/android/internal/net/LegacyVpnInfo;
+    iget-object v3, p0, Lcom/android/settings_ext/vpn2/MiuiVpnSettings;->aod:Lcom/android/internal/net/LegacyVpnInfo;
 
     iget v3, v3, Lcom/android/internal/net/LegacyVpnInfo;->state:I
 
@@ -1087,7 +1087,7 @@
 
     .line 385
     :try_start_0
-    iget-object v3, p0, Lcom/android/settings/vpn2/MiuiVpnSettings;->aod:Lcom/android/internal/net/LegacyVpnInfo;
+    iget-object v3, p0, Lcom/android/settings_ext/vpn2/MiuiVpnSettings;->aod:Lcom/android/internal/net/LegacyVpnInfo;
 
     iget-object v3, v3, Lcom/android/internal/net/LegacyVpnInfo;->intent:Landroid/app/PendingIntent;
 
@@ -1103,7 +1103,7 @@
 
     .line 391
     :cond_2
-    invoke-direct {p0, v2}, Lcom/android/settings/vpn2/MiuiVpnSettings;->c(Lcom/android/internal/net/VpnProfile;)Z
+    invoke-direct {p0, v2}, Lcom/android/settings_ext/vpn2/MiuiVpnSettings;->c(Lcom/android/internal/net/VpnProfile;)Z
 
     move-result v3
 
@@ -1111,7 +1111,7 @@
 
     .line 393
     :try_start_1
-    invoke-virtual {p0, v2}, Lcom/android/settings/vpn2/MiuiVpnSettings;->b(Lcom/android/internal/net/VpnProfile;)V
+    invoke-virtual {p0, v2}, Lcom/android/settings_ext/vpn2/MiuiVpnSettings;->b(Lcom/android/internal/net/VpnProfile;)V
     :try_end_1
     .catch Ljava/lang/Exception; {:try_start_1 .. :try_end_1} :catch_1
 
@@ -1125,26 +1125,26 @@
 
     .line 398
     :cond_3
-    new-instance v0, Lcom/android/settings/vpn2/VpnDialog;
+    new-instance v0, Lcom/android/settings_ext/vpn2/VpnDialog;
 
-    invoke-virtual {p0}, Lcom/android/settings/vpn2/MiuiVpnSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/vpn2/MiuiVpnSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v3
 
-    invoke-direct {v0, v3, p0, v2, v1}, Lcom/android/settings/vpn2/VpnDialog;-><init>(Landroid/content/Context;Landroid/content/DialogInterface$OnClickListener;Lcom/android/internal/net/VpnProfile;Z)V
+    invoke-direct {v0, v3, p0, v2, v1}, Lcom/android/settings_ext/vpn2/VpnDialog;-><init>(Landroid/content/Context;Landroid/content/DialogInterface$OnClickListener;Lcom/android/internal/net/VpnProfile;Z)V
 
-    iput-object v0, p0, Lcom/android/settings/vpn2/MiuiVpnSettings;->aob:Lcom/android/settings/vpn2/VpnDialog;
+    iput-object v0, p0, Lcom/android/settings_ext/vpn2/MiuiVpnSettings;->aob:Lcom/android/settings_ext/vpn2/VpnDialog;
 
     .line 401
     :cond_4
-    iget-object v0, p0, Lcom/android/settings/vpn2/MiuiVpnSettings;->aob:Lcom/android/settings/vpn2/VpnDialog;
+    iget-object v0, p0, Lcom/android/settings_ext/vpn2/MiuiVpnSettings;->aob:Lcom/android/settings_ext/vpn2/VpnDialog;
 
-    invoke-virtual {v0, p0}, Lcom/android/settings/vpn2/VpnDialog;->setOnDismissListener(Landroid/content/DialogInterface$OnDismissListener;)V
+    invoke-virtual {v0, p0}, Lcom/android/settings_ext/vpn2/VpnDialog;->setOnDismissListener(Landroid/content/DialogInterface$OnDismissListener;)V
 
     .line 402
-    iget-object v0, p0, Lcom/android/settings/vpn2/MiuiVpnSettings;->aob:Lcom/android/settings/vpn2/VpnDialog;
+    iget-object v0, p0, Lcom/android/settings_ext/vpn2/MiuiVpnSettings;->aob:Lcom/android/settings_ext/vpn2/VpnDialog;
 
-    invoke-virtual {v0}, Lcom/android/settings/vpn2/VpnDialog;->show()V
+    invoke-virtual {v0}, Lcom/android/settings_ext/vpn2/VpnDialog;->show()V
 
     move v0, v1
 
@@ -1157,19 +1157,19 @@
 
     .prologue
     .line 408
-    instance-of v0, p1, Lcom/android/settings/vpn2/VpnSettings$VpnPreference;
+    instance-of v0, p1, Lcom/android/settings_ext/vpn2/VpnSettings$VpnPreference;
 
     if-eqz v0, :cond_0
 
     .line 409
-    check-cast p1, Lcom/android/settings/vpn2/VpnSettings$VpnPreference;
+    check-cast p1, Lcom/android/settings_ext/vpn2/VpnSettings$VpnPreference;
 
     .line 410
-    invoke-virtual {p1}, Lcom/android/settings/vpn2/VpnSettings$VpnPreference;->sP()Lcom/android/internal/net/VpnProfile;
+    invoke-virtual {p1}, Lcom/android/settings_ext/vpn2/VpnSettings$VpnPreference;->sP()Lcom/android/internal/net/VpnProfile;
 
     move-result-object v0
 
-    invoke-direct {p0, v0}, Lcom/android/settings/vpn2/MiuiVpnSettings;->c(Lcom/android/internal/net/VpnProfile;)Z
+    invoke-direct {p0, v0}, Lcom/android/settings_ext/vpn2/MiuiVpnSettings;->c(Lcom/android/internal/net/VpnProfile;)Z
 
     .line 412
     :cond_0
@@ -1207,12 +1207,12 @@
     move-result v0
 
     .line 153
-    invoke-direct {p0, v0}, Lcom/android/settings/vpn2/MiuiVpnSettings;->aS(Z)V
+    invoke-direct {p0, v0}, Lcom/android/settings_ext/vpn2/MiuiVpnSettings;->aS(Z)V
 
     .line 155
     if-eqz v0, :cond_2
 
-    iget-object v0, p0, Lcom/android/settings/vpn2/MiuiVpnSettings;->cP:Lcom/android/internal/widget/LockPatternUtils;
+    iget-object v0, p0, Lcom/android/settings_ext/vpn2/MiuiVpnSettings;->cP:Lcom/android/internal/widget/LockPatternUtils;
 
     invoke-virtual {v0}, Lcom/android/internal/widget/LockPatternUtils;->isSecure()Z
 
@@ -1221,16 +1221,16 @@
     if-nez v0, :cond_2
 
     .line 157
-    new-instance v0, Lcom/android/settings/vpn2/MiuiVpnSettings$ConfigureKeyGuardDialog;
+    new-instance v0, Lcom/android/settings_ext/vpn2/MiuiVpnSettings$ConfigureKeyGuardDialog;
 
     const/4 v1, 0x0
 
-    invoke-direct {v0, p0, v1}, Lcom/android/settings/vpn2/MiuiVpnSettings$ConfigureKeyGuardDialog;-><init>(Lcom/android/settings/vpn2/MiuiVpnSettings;Lcom/android/settings/vpn2/MiuiVpnSettings$1;)V
+    invoke-direct {v0, p0, v1}, Lcom/android/settings_ext/vpn2/MiuiVpnSettings$ConfigureKeyGuardDialog;-><init>(Lcom/android/settings_ext/vpn2/MiuiVpnSettings;Lcom/android/settings_ext/vpn2/MiuiVpnSettings$1;)V
 
     .line 169
     :cond_0
     :goto_0
-    invoke-super {p0, p1, p2}, Lcom/android/settings/vpn2/VpnSettings;->onPreferenceTreeClick(Landroid/preference/PreferenceScreen;Landroid/preference/Preference;)Z
+    invoke-super {p0, p1, p2}, Lcom/android/settings_ext/vpn2/VpnSettings;->onPreferenceTreeClick(Landroid/preference/PreferenceScreen;Landroid/preference/Preference;)Z
 
     move-result v0
 
@@ -1238,25 +1238,25 @@
     if-eqz v0, :cond_1
 
     .line 171
-    instance-of v1, p2, Lcom/android/settings/vpn2/VpnSettings$VpnPreference;
+    instance-of v1, p2, Lcom/android/settings_ext/vpn2/VpnSettings$VpnPreference;
 
     if-eqz v1, :cond_1
 
     .line 172
-    check-cast p2, Lcom/android/settings/vpn2/VpnSettings$VpnPreference;
+    check-cast p2, Lcom/android/settings_ext/vpn2/VpnSettings$VpnPreference;
 
-    invoke-virtual {p2}, Lcom/android/settings/vpn2/VpnSettings$VpnPreference;->sP()Lcom/android/internal/net/VpnProfile;
+    invoke-virtual {p2}, Lcom/android/settings_ext/vpn2/VpnSettings$VpnPreference;->sP()Lcom/android/internal/net/VpnProfile;
 
     move-result-object v1
 
     .line 173
-    iget-object v2, p0, Lcom/android/settings/vpn2/MiuiVpnSettings;->aod:Lcom/android/internal/net/LegacyVpnInfo;
+    iget-object v2, p0, Lcom/android/settings_ext/vpn2/MiuiVpnSettings;->aod:Lcom/android/internal/net/LegacyVpnInfo;
 
     if-eqz v2, :cond_1
 
     iget-object v1, v1, Lcom/android/internal/net/VpnProfile;->key:Ljava/lang/String;
 
-    iget-object v2, p0, Lcom/android/settings/vpn2/MiuiVpnSettings;->aod:Lcom/android/internal/net/LegacyVpnInfo;
+    iget-object v2, p0, Lcom/android/settings_ext/vpn2/MiuiVpnSettings;->aod:Lcom/android/internal/net/LegacyVpnInfo;
 
     iget-object v2, v2, Lcom/android/internal/net/LegacyVpnInfo;->key:Ljava/lang/String;
 
@@ -1266,7 +1266,7 @@
 
     if-eqz v1, :cond_1
 
-    iget-object v1, p0, Lcom/android/settings/vpn2/MiuiVpnSettings;->aod:Lcom/android/internal/net/LegacyVpnInfo;
+    iget-object v1, p0, Lcom/android/settings_ext/vpn2/MiuiVpnSettings;->aod:Lcom/android/internal/net/LegacyVpnInfo;
 
     iget v1, v1, Lcom/android/internal/net/LegacyVpnInfo;->state:I
 
@@ -1280,7 +1280,7 @@
     move-result-object v1
 
     .line 176
-    invoke-virtual {p0, v1}, Lcom/android/settings/vpn2/MiuiVpnSettings;->startActivity(Landroid/content/Intent;)V
+    invoke-virtual {p0, v1}, Lcom/android/settings_ext/vpn2/MiuiVpnSettings;->startActivity(Landroid/content/Intent;)V
 
     .line 180
     :cond_1
@@ -1288,7 +1288,7 @@
 
     .line 160
     :cond_2
-    invoke-direct {p0}, Lcom/android/settings/vpn2/MiuiVpnSettings;->sQ()V
+    invoke-direct {p0}, Lcom/android/settings_ext/vpn2/MiuiVpnSettings;->sQ()V
 
     goto :goto_0
 
@@ -1313,14 +1313,14 @@
     move-result v0
 
     .line 165
-    invoke-virtual {p0}, Lcom/android/settings/vpn2/MiuiVpnSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/vpn2/MiuiVpnSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v1
 
-    invoke-static {v1, v0}, Lcom/android/settings/vpn2/VpnUtils;->s(Landroid/content/Context;Z)V
+    invoke-static {v1, v0}, Lcom/android/settings_ext/vpn2/VpnUtils;->s(Landroid/content/Context;Z)V
 
     .line 166
-    invoke-direct {p0, v0}, Lcom/android/settings/vpn2/MiuiVpnSettings;->aQ(Z)V
+    invoke-direct {p0, v0}, Lcom/android/settings_ext/vpn2/MiuiVpnSettings;->aQ(Z)V
 
     goto :goto_0
 .end method
@@ -1332,20 +1332,20 @@
     const/4 v0, 0x0
 
     .line 111
-    invoke-super {p0}, Lcom/android/settings/vpn2/VpnSettings;->onResume()V
+    invoke-super {p0}, Lcom/android/settings_ext/vpn2/VpnSettings;->onResume()V
 
     .line 113
-    iget-boolean v1, p0, Lcom/android/settings/vpn2/MiuiVpnSettings;->anT:Z
+    iget-boolean v1, p0, Lcom/android/settings_ext/vpn2/MiuiVpnSettings;->anT:Z
 
     if-eqz v1, :cond_0
 
     .line 114
-    iput-boolean v0, p0, Lcom/android/settings/vpn2/MiuiVpnSettings;->anT:Z
+    iput-boolean v0, p0, Lcom/android/settings_ext/vpn2/MiuiVpnSettings;->anT:Z
 
     .line 116
     new-instance v1, Lcom/android/internal/widget/LockPatternUtils;
 
-    invoke-virtual {p0}, Lcom/android/settings/vpn2/MiuiVpnSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/vpn2/MiuiVpnSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v2
 
@@ -1355,11 +1355,11 @@
 
     move-result v1
 
-    invoke-direct {p0, v1}, Lcom/android/settings/vpn2/MiuiVpnSettings;->aR(Z)V
+    invoke-direct {p0, v1}, Lcom/android/settings_ext/vpn2/MiuiVpnSettings;->aR(Z)V
 
     .line 119
     :cond_0
-    iget-object v1, p0, Lcom/android/settings/vpn2/MiuiVpnSettings;->aoe:Landroid/preference/PreferenceCategory;
+    iget-object v1, p0, Lcom/android/settings_ext/vpn2/MiuiVpnSettings;->aoe:Landroid/preference/PreferenceCategory;
 
     invoke-virtual {v1}, Landroid/preference/PreferenceCategory;->getPreferenceCount()I
 
@@ -1368,18 +1368,18 @@
     if-nez v1, :cond_2
 
     .line 120
-    iget-object v0, p0, Lcom/android/settings/vpn2/MiuiVpnSettings;->aoe:Landroid/preference/PreferenceCategory;
+    iget-object v0, p0, Lcom/android/settings_ext/vpn2/MiuiVpnSettings;->aoe:Landroid/preference/PreferenceCategory;
 
     const-string v1, ""
 
     invoke-virtual {v0, v1}, Landroid/preference/PreferenceCategory;->setTitle(Ljava/lang/CharSequence;)V
 
     .line 121
-    invoke-virtual {p0}, Lcom/android/settings/vpn2/MiuiVpnSettings;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
+    invoke-virtual {p0}, Lcom/android/settings_ext/vpn2/MiuiVpnSettings;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/android/settings/vpn2/MiuiVpnSettings;->aoe:Landroid/preference/PreferenceCategory;
+    iget-object v1, p0, Lcom/android/settings_ext/vpn2/MiuiVpnSettings;->aoe:Landroid/preference/PreferenceCategory;
 
     invoke-virtual {v0, v1}, Landroid/preference/PreferenceScreen;->removePreference(Landroid/preference/Preference;)Z
 
@@ -1391,35 +1391,35 @@
     :cond_2
     const-string v1, "vpn_configure_category"
 
-    invoke-virtual {p0, v1}, Lcom/android/settings/vpn2/MiuiVpnSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v1}, Lcom/android/settings_ext/vpn2/MiuiVpnSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v1
 
     if-nez v1, :cond_3
 
     .line 125
-    invoke-virtual {p0}, Lcom/android/settings/vpn2/MiuiVpnSettings;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
+    invoke-virtual {p0}, Lcom/android/settings_ext/vpn2/MiuiVpnSettings;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
 
     move-result-object v1
 
-    iget-object v2, p0, Lcom/android/settings/vpn2/MiuiVpnSettings;->aoe:Landroid/preference/PreferenceCategory;
+    iget-object v2, p0, Lcom/android/settings_ext/vpn2/MiuiVpnSettings;->aoe:Landroid/preference/PreferenceCategory;
 
     invoke-virtual {v1, v2}, Landroid/preference/PreferenceScreen;->addPreference(Landroid/preference/Preference;)Z
 
     .line 127
     :cond_3
-    iget-object v1, p0, Lcom/android/settings/vpn2/MiuiVpnSettings;->aoe:Landroid/preference/PreferenceCategory;
+    iget-object v1, p0, Lcom/android/settings_ext/vpn2/MiuiVpnSettings;->aoe:Landroid/preference/PreferenceCategory;
 
     const v2, 0x7f090c12
 
     invoke-virtual {v1, v2}, Landroid/preference/PreferenceCategory;->setTitle(I)V
 
     .line 128
-    invoke-virtual {p0}, Lcom/android/settings/vpn2/MiuiVpnSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/vpn2/MiuiVpnSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v1
 
-    invoke-static {v1}, Lcom/android/settings/vpn2/VpnUtils;->br(Landroid/content/Context;)Ljava/lang/String;
+    invoke-static {v1}, Lcom/android/settings_ext/vpn2/VpnUtils;->br(Landroid/content/Context;)Ljava/lang/String;
 
     move-result-object v2
 
@@ -1427,7 +1427,7 @@
 
     .line 129
     :goto_0
-    iget-object v0, p0, Lcom/android/settings/vpn2/MiuiVpnSettings;->aoe:Landroid/preference/PreferenceCategory;
+    iget-object v0, p0, Lcom/android/settings_ext/vpn2/MiuiVpnSettings;->aoe:Landroid/preference/PreferenceCategory;
 
     invoke-virtual {v0}, Landroid/preference/PreferenceCategory;->getPreferenceCount()I
 
@@ -1436,16 +1436,16 @@
     if-ge v1, v0, :cond_1
 
     .line 130
-    iget-object v0, p0, Lcom/android/settings/vpn2/MiuiVpnSettings;->aoe:Landroid/preference/PreferenceCategory;
+    iget-object v0, p0, Lcom/android/settings_ext/vpn2/MiuiVpnSettings;->aoe:Landroid/preference/PreferenceCategory;
 
     invoke-virtual {v0, v1}, Landroid/preference/PreferenceCategory;->getPreference(I)Landroid/preference/Preference;
 
     move-result-object v0
 
-    check-cast v0, Lcom/android/settings/vpn2/VpnSettings$VpnPreference;
+    check-cast v0, Lcom/android/settings_ext/vpn2/VpnSettings$VpnPreference;
 
     .line 131
-    invoke-virtual {v0}, Lcom/android/settings/vpn2/VpnSettings$VpnPreference;->sP()Lcom/android/internal/net/VpnProfile;
+    invoke-virtual {v0}, Lcom/android/settings_ext/vpn2/VpnSettings$VpnPreference;->sP()Lcom/android/internal/net/VpnProfile;
 
     move-result-object v3
 
@@ -1459,18 +1459,18 @@
     if-eqz v3, :cond_4
 
     .line 133
-    iput-object v0, p0, Lcom/android/settings/vpn2/MiuiVpnSettings;->anU:Lcom/android/settings/vpn2/VpnSettings$VpnPreference;
+    iput-object v0, p0, Lcom/android/settings_ext/vpn2/MiuiVpnSettings;->anU:Lcom/android/settings_ext/vpn2/VpnSettings$VpnPreference;
 
     .line 134
-    iget-object v3, p0, Lcom/android/settings/vpn2/MiuiVpnSettings;->anU:Lcom/android/settings/vpn2/VpnSettings$VpnPreference;
+    iget-object v3, p0, Lcom/android/settings_ext/vpn2/MiuiVpnSettings;->anU:Lcom/android/settings_ext/vpn2/VpnSettings$VpnPreference;
 
     const/4 v4, 0x1
 
-    invoke-virtual {v3, v4}, Lcom/android/settings/vpn2/VpnSettings$VpnPreference;->setChecked(Z)V
+    invoke-virtual {v3, v4}, Lcom/android/settings_ext/vpn2/VpnSettings$VpnPreference;->setChecked(Z)V
 
     .line 136
     :cond_4
-    invoke-virtual {v0, p0}, Lcom/android/settings/vpn2/VpnSettings$VpnPreference;->setOnPreferenceChangeListener(Landroid/preference/Preference$OnPreferenceChangeListener;)V
+    invoke-virtual {v0, p0}, Lcom/android/settings_ext/vpn2/VpnSettings$VpnPreference;->setOnPreferenceChangeListener(Landroid/preference/Preference$OnPreferenceChangeListener;)V
 
     .line 129
     add-int/lit8 v0, v1, 0x1

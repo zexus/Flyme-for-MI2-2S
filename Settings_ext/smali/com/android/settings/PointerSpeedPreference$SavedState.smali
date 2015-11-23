@@ -1,4 +1,4 @@
-.class Lcom/android/settings/PointerSpeedPreference$SavedState;
+.class Lcom/android/settings_ext/PointerSpeedPreference$SavedState;
 .super Landroid/preference/Preference$BaseSavedState;
 .source "PointerSpeedPreference.java"
 
@@ -19,11 +19,11 @@
 
     .prologue
     .line 173
-    new-instance v0, Lcom/android/settings/fm;
+    new-instance v0, Lcom/android/settings_ext/fm;
 
-    invoke-direct {v0}, Lcom/android/settings/fm;-><init>()V
+    invoke-direct {v0}, Lcom/android/settings_ext/fm;-><init>()V
 
-    sput-object v0, Lcom/android/settings/PointerSpeedPreference$SavedState;->CREATOR:Landroid/os/Parcelable$Creator;
+    sput-object v0, Lcom/android/settings_ext/PointerSpeedPreference$SavedState;->CREATOR:Landroid/os/Parcelable$Creator;
 
     return-void
 .end method
@@ -40,14 +40,14 @@
 
     move-result v0
 
-    iput v0, p0, Lcom/android/settings/PointerSpeedPreference$SavedState;->progress:I
+    iput v0, p0, Lcom/android/settings_ext/PointerSpeedPreference$SavedState;->progress:I
 
     .line 159
     invoke-virtual {p1}, Landroid/os/Parcel;->readInt()I
 
     move-result v0
 
-    iput v0, p0, Lcom/android/settings/PointerSpeedPreference$SavedState;->tV:I
+    iput v0, p0, Lcom/android/settings_ext/PointerSpeedPreference$SavedState;->tV:I
 
     .line 160
     return-void
@@ -74,12 +74,12 @@
     invoke-super {p0, p1, p2}, Landroid/preference/Preference$BaseSavedState;->writeToParcel(Landroid/os/Parcel;I)V
 
     .line 165
-    iget v0, p0, Lcom/android/settings/PointerSpeedPreference$SavedState;->progress:I
+    iget v0, p0, Lcom/android/settings_ext/PointerSpeedPreference$SavedState;->progress:I
 
     invoke-virtual {p1, v0}, Landroid/os/Parcel;->writeInt(I)V
 
     .line 166
-    iget v0, p0, Lcom/android/settings/PointerSpeedPreference$SavedState;->tV:I
+    iget v0, p0, Lcom/android/settings_ext/PointerSpeedPreference$SavedState;->tV:I
 
     invoke-virtual {p1, v0}, Landroid/os/Parcel;->writeInt(I)V
 

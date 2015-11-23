@@ -1,4 +1,4 @@
-.class Lcom/android/settings/dndmode/v;
+.class Lcom/android/settings_ext/dndmode/v;
 .super Ljava/lang/Object;
 .source "VipCallSettingsFragment.java"
 
@@ -7,16 +7,16 @@
 
 
 # instance fields
-.field final synthetic Xs:Lcom/android/settings/dndmode/u;
+.field final synthetic Xs:Lcom/android/settings_ext/dndmode/u;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/dndmode/u;)V
+.method constructor <init>(Lcom/android/settings_ext/dndmode/u;)V
     .locals 0
 
     .prologue
     .line 113
-    iput-object p1, p0, Lcom/android/settings/dndmode/v;->Xs:Lcom/android/settings/dndmode/u;
+    iput-object p1, p0, Lcom/android/settings_ext/dndmode/v;->Xs:Lcom/android/settings_ext/dndmode/u;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -30,7 +30,7 @@
 
     .prologue
     .line 113
-    invoke-virtual {p0}, Lcom/android/settings/dndmode/v;->pd()Ljava/lang/Boolean;
+    invoke-virtual {p0}, Lcom/android/settings_ext/dndmode/v;->pd()Ljava/lang/Boolean;
 
     move-result-object v0
 
@@ -48,9 +48,9 @@
     const/4 v6, 0x1
 
     .line 116
-    iget-object v0, p0, Lcom/android/settings/dndmode/v;->Xs:Lcom/android/settings/dndmode/u;
+    iget-object v0, p0, Lcom/android/settings_ext/dndmode/v;->Xs:Lcom/android/settings_ext/dndmode/u;
 
-    invoke-static {v0}, Lcom/android/settings/dndmode/u;->a(Lcom/android/settings/dndmode/u;)Lmiui/app/Activity;
+    invoke-static {v0}, Lcom/android/settings_ext/dndmode/u;->a(Lcom/android/settings_ext/dndmode/u;)Lmiui/app/Activity;
 
     move-result-object v0
 
@@ -85,8 +85,8 @@
 
     .line 123
     :try_start_0
-    # getter for: Lcom/android/settings/dndmode/u;->Xk:Ljava/util/HashMap;
-    invoke-static {}, Lcom/android/settings/dndmode/u;->access$100()Ljava/util/HashMap;
+    # getter for: Lcom/android/settings_ext/dndmode/u;->Xk:Ljava/util/HashMap;
+    invoke-static {}, Lcom/android/settings_ext/dndmode/u;->access$100()Ljava/util/HashMap;
 
     move-result-object v0
 
@@ -123,8 +123,8 @@
     if-nez v3, :cond_0
 
     .line 128
-    # getter for: Lcom/android/settings/dndmode/u;->Xk:Ljava/util/HashMap;
-    invoke-static {}, Lcom/android/settings/dndmode/u;->access$100()Ljava/util/HashMap;
+    # getter for: Lcom/android/settings_ext/dndmode/u;->Xk:Ljava/util/HashMap;
+    invoke-static {}, Lcom/android/settings_ext/dndmode/u;->access$100()Ljava/util/HashMap;
 
     move-result-object v3
 

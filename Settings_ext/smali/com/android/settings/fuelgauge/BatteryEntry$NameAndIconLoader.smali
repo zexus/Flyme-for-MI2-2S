@@ -1,4 +1,4 @@
-.class Lcom/android/settings/fuelgauge/BatteryEntry$NameAndIconLoader;
+.class Lcom/android/settings_ext/fuelgauge/BatteryEntry$NameAndIconLoader;
 .super Ljava/lang/Thread;
 .source "BatteryEntry.java"
 
@@ -20,7 +20,7 @@
     .line 55
     const/4 v0, 0x0
 
-    iput-boolean v0, p0, Lcom/android/settings/fuelgauge/BatteryEntry$NameAndIconLoader;->Yq:Z
+    iput-boolean v0, p0, Lcom/android/settings_ext/fuelgauge/BatteryEntry$NameAndIconLoader;->Yq:Z
 
     .line 59
     return-void
@@ -35,7 +35,7 @@
     .line 62
     const/4 v0, 0x1
 
-    iput-boolean v0, p0, Lcom/android/settings/fuelgauge/BatteryEntry$NameAndIconLoader;->Yq:Z
+    iput-boolean v0, p0, Lcom/android/settings_ext/fuelgauge/BatteryEntry$NameAndIconLoader;->Yq:Z
 
     .line 63
     return-void
@@ -47,13 +47,13 @@
     .prologue
     .line 69
     :goto_0
-    sget-object v1, Lcom/android/settings/fuelgauge/BatteryEntry;->Yl:Ljava/util/ArrayList;
+    sget-object v1, Lcom/android/settings_ext/fuelgauge/BatteryEntry;->Yl:Ljava/util/ArrayList;
 
     monitor-enter v1
 
     .line 70
     :try_start_0
-    sget-object v0, Lcom/android/settings/fuelgauge/BatteryEntry;->Yl:Ljava/util/ArrayList;
+    sget-object v0, Lcom/android/settings_ext/fuelgauge/BatteryEntry;->Yl:Ljava/util/ArrayList;
 
     invoke-virtual {v0}, Ljava/util/ArrayList;->isEmpty()Z
 
@@ -61,18 +61,18 @@
 
     if-nez v0, :cond_0
 
-    iget-boolean v0, p0, Lcom/android/settings/fuelgauge/BatteryEntry$NameAndIconLoader;->Yq:Z
+    iget-boolean v0, p0, Lcom/android/settings_ext/fuelgauge/BatteryEntry$NameAndIconLoader;->Yq:Z
 
     if-eqz v0, :cond_2
 
     .line 71
     :cond_0
-    sget-object v0, Lcom/android/settings/fuelgauge/BatteryEntry;->Ym:Landroid/os/Handler;
+    sget-object v0, Lcom/android/settings_ext/fuelgauge/BatteryEntry;->Ym:Landroid/os/Handler;
 
     if-eqz v0, :cond_1
 
     .line 72
-    sget-object v0, Lcom/android/settings/fuelgauge/BatteryEntry;->Ym:Landroid/os/Handler;
+    sget-object v0, Lcom/android/settings_ext/fuelgauge/BatteryEntry;->Ym:Landroid/os/Handler;
 
     const/4 v2, 0x2
 
@@ -80,7 +80,7 @@
 
     .line 74
     :cond_1
-    sget-object v0, Lcom/android/settings/fuelgauge/BatteryEntry;->Yl:Ljava/util/ArrayList;
+    sget-object v0, Lcom/android/settings_ext/fuelgauge/BatteryEntry;->Yl:Ljava/util/ArrayList;
 
     invoke-virtual {v0}, Ljava/util/ArrayList;->clear()V
 
@@ -91,7 +91,7 @@
 
     .line 77
     :cond_2
-    sget-object v0, Lcom/android/settings/fuelgauge/BatteryEntry;->Yl:Ljava/util/ArrayList;
+    sget-object v0, Lcom/android/settings_ext/fuelgauge/BatteryEntry;->Yl:Ljava/util/ArrayList;
 
     const/4 v2, 0x0
 
@@ -99,7 +99,7 @@
 
     move-result-object v0
 
-    check-cast v0, Lcom/android/settings/fuelgauge/BatteryEntry;
+    check-cast v0, Lcom/android/settings_ext/fuelgauge/BatteryEntry;
 
     .line 78
     monitor-exit v1
@@ -107,7 +107,7 @@
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
     .line 79
-    invoke-virtual {v0}, Lcom/android/settings/fuelgauge/BatteryEntry;->pm()V
+    invoke-virtual {v0}, Lcom/android/settings_ext/fuelgauge/BatteryEntry;->pm()V
 
     goto :goto_0
 

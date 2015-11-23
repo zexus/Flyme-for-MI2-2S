@@ -1,4 +1,4 @@
-.class Lcom/android/settings/users/UserSettings$5;
+.class Lcom/android/settings_ext/users/UserSettings$5;
 .super Ljava/lang/Object;
 .source "UserSettings.java"
 
@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final synthetic amU:Lcom/android/settings/users/UserSettings;
+.field final synthetic amU:Lcom/android/settings_ext/users/UserSettings;
 
 .field final synthetic amV:I
 
@@ -17,18 +17,18 @@
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/users/UserSettings;IZLandroid/content/SharedPreferences;)V
+.method constructor <init>(Lcom/android/settings_ext/users/UserSettings;IZLandroid/content/SharedPreferences;)V
     .locals 0
 
     .prologue
     .line 526
-    iput-object p1, p0, Lcom/android/settings/users/UserSettings$5;->amU:Lcom/android/settings/users/UserSettings;
+    iput-object p1, p0, Lcom/android/settings_ext/users/UserSettings$5;->amU:Lcom/android/settings_ext/users/UserSettings;
 
-    iput p2, p0, Lcom/android/settings/users/UserSettings$5;->amV:I
+    iput p2, p0, Lcom/android/settings_ext/users/UserSettings$5;->amV:I
 
-    iput-boolean p3, p0, Lcom/android/settings/users/UserSettings$5;->amW:Z
+    iput-boolean p3, p0, Lcom/android/settings_ext/users/UserSettings$5;->amW:Z
 
-    iput-object p4, p0, Lcom/android/settings/users/UserSettings$5;->amX:Landroid/content/SharedPreferences;
+    iput-object p4, p0, Lcom/android/settings_ext/users/UserSettings$5;->amX:Landroid/content/SharedPreferences;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -42,19 +42,19 @@
 
     .prologue
     .line 528
-    iget-object v0, p0, Lcom/android/settings/users/UserSettings$5;->amU:Lcom/android/settings/users/UserSettings;
+    iget-object v0, p0, Lcom/android/settings_ext/users/UserSettings$5;->amU:Lcom/android/settings_ext/users/UserSettings;
 
-    iget v1, p0, Lcom/android/settings/users/UserSettings$5;->amV:I
+    iget v1, p0, Lcom/android/settings_ext/users/UserSettings$5;->amV:I
 
-    invoke-static {v0, v1}, Lcom/android/settings/users/UserSettings;->c(Lcom/android/settings/users/UserSettings;I)V
+    invoke-static {v0, v1}, Lcom/android/settings_ext/users/UserSettings;->c(Lcom/android/settings_ext/users/UserSettings;I)V
 
     .line 529
-    iget-boolean v0, p0, Lcom/android/settings/users/UserSettings$5;->amW:Z
+    iget-boolean v0, p0, Lcom/android/settings_ext/users/UserSettings$5;->amW:Z
 
     if-nez v0, :cond_0
 
     .line 530
-    iget-object v0, p0, Lcom/android/settings/users/UserSettings$5;->amX:Landroid/content/SharedPreferences;
+    iget-object v0, p0, Lcom/android/settings_ext/users/UserSettings$5;->amX:Landroid/content/SharedPreferences;
 
     invoke-interface {v0}, Landroid/content/SharedPreferences;->edit()Landroid/content/SharedPreferences$Editor;
 

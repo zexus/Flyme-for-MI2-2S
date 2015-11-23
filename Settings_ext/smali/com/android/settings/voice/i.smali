@@ -1,4 +1,4 @@
-.class Lcom/android/settings/voice/i;
+.class Lcom/android/settings_ext/voice/i;
 .super Ljava/lang/Object;
 .source "VoiceInputPreference.java"
 
@@ -7,20 +7,20 @@
 
 
 # instance fields
-.field final synthetic anr:Lcom/android/settings/voice/e;
+.field final synthetic anr:Lcom/android/settings_ext/voice/e;
 
 .field final synthetic ans:Landroid/content/DialogInterface$OnClickListener;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/voice/e;Landroid/content/DialogInterface$OnClickListener;)V
+.method constructor <init>(Lcom/android/settings_ext/voice/e;Landroid/content/DialogInterface$OnClickListener;)V
     .locals 0
 
     .prologue
     .line 148
-    iput-object p1, p0, Lcom/android/settings/voice/i;->anr:Lcom/android/settings/voice/e;
+    iput-object p1, p0, Lcom/android/settings_ext/voice/i;->anr:Lcom/android/settings_ext/voice/e;
 
-    iput-object p2, p0, Lcom/android/settings/voice/i;->ans:Landroid/content/DialogInterface$OnClickListener;
+    iput-object p2, p0, Lcom/android/settings_ext/voice/i;->ans:Landroid/content/DialogInterface$OnClickListener;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -34,7 +34,7 @@
 
     .prologue
     .line 150
-    iget-object v0, p0, Lcom/android/settings/voice/i;->ans:Landroid/content/DialogInterface$OnClickListener;
+    iget-object v0, p0, Lcom/android/settings_ext/voice/i;->ans:Landroid/content/DialogInterface$OnClickListener;
 
     const/4 v1, -0x2
 

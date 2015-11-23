@@ -1,4 +1,4 @@
-.class public Lcom/android/settings/eE;
+.class public Lcom/android/settings_ext/eE;
 .super Ljava/lang/Object;
 .source "MiuiSettings.java"
 

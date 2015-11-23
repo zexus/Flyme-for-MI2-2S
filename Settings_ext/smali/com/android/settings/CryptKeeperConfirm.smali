@@ -1,4 +1,4 @@
-.class public Lcom/android/settings/CryptKeeperConfirm;
+.class public Lcom/android/settings_ext/CryptKeeperConfirm;
 .super Landroid/app/Fragment;
 .source "CryptKeeperConfirm.java"
 
@@ -20,11 +20,11 @@
     invoke-direct {p0}, Landroid/app/Fragment;-><init>()V
 
     .line 93
-    new-instance v0, Lcom/android/settings/aR;
+    new-instance v0, Lcom/android/settings_ext/aR;
 
-    invoke-direct {v0, p0}, Lcom/android/settings/aR;-><init>(Lcom/android/settings/CryptKeeperConfirm;)V
+    invoke-direct {v0, p0}, Lcom/android/settings_ext/aR;-><init>(Lcom/android/settings_ext/CryptKeeperConfirm;)V
 
-    iput-object v0, p0, Lcom/android/settings/CryptKeeperConfirm;->fj:Landroid/view/View$OnClickListener;
+    iput-object v0, p0, Lcom/android/settings_ext/CryptKeeperConfirm;->fj:Landroid/view/View$OnClickListener;
 
     return-void
 .end method
@@ -34,7 +34,7 @@
 
     .prologue
     .line 138
-    iget-object v0, p0, Lcom/android/settings/CryptKeeperConfirm;->fh:Landroid/view/View;
+    iget-object v0, p0, Lcom/android/settings_ext/CryptKeeperConfirm;->fh:Landroid/view/View;
 
     const v1, 0x7f10006c
 
@@ -44,12 +44,12 @@
 
     check-cast v0, Landroid/widget/Button;
 
-    iput-object v0, p0, Lcom/android/settings/CryptKeeperConfirm;->fi:Landroid/widget/Button;
+    iput-object v0, p0, Lcom/android/settings_ext/CryptKeeperConfirm;->fi:Landroid/widget/Button;
 
     .line 139
-    iget-object v0, p0, Lcom/android/settings/CryptKeeperConfirm;->fi:Landroid/widget/Button;
+    iget-object v0, p0, Lcom/android/settings_ext/CryptKeeperConfirm;->fi:Landroid/widget/Button;
 
-    iget-object v1, p0, Lcom/android/settings/CryptKeeperConfirm;->fj:Landroid/view/View$OnClickListener;
+    iget-object v1, p0, Lcom/android/settings_ext/CryptKeeperConfirm;->fj:Landroid/view/View$OnClickListener;
 
     invoke-virtual {v0, v1}, Landroid/widget/Button;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
@@ -72,13 +72,13 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/CryptKeeperConfirm;->fh:Landroid/view/View;
+    iput-object v0, p0, Lcom/android/settings_ext/CryptKeeperConfirm;->fh:Landroid/view/View;
 
     .line 146
-    invoke-direct {p0}, Lcom/android/settings/CryptKeeperConfirm;->aX()V
+    invoke-direct {p0}, Lcom/android/settings_ext/CryptKeeperConfirm;->aX()V
 
     .line 147
-    iget-object v0, p0, Lcom/android/settings/CryptKeeperConfirm;->fh:Landroid/view/View;
+    iget-object v0, p0, Lcom/android/settings_ext/CryptKeeperConfirm;->fh:Landroid/view/View;
 
     return-object v0
 .end method

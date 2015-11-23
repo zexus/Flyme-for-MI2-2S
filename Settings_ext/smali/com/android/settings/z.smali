@@ -1,4 +1,4 @@
-.class public Lcom/android/settings/z;
+.class public Lcom/android/settings_ext/z;
 .super Ljava/lang/Object;
 .source "ApkIconLoader.java"
 
@@ -16,7 +16,7 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 153
-    iput-object p1, p0, Lcom/android/settings/z;->mPkgName:Ljava/lang/String;
+    iput-object p1, p0, Lcom/android/settings_ext/z;->mPkgName:Ljava/lang/String;
 
     .line 154
     return-void

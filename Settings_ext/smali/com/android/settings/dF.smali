@@ -1,4 +1,4 @@
-.class public Lcom/android/settings/dF;
+.class public Lcom/android/settings_ext/dF;
 .super Ljava/lang/Object;
 .source "MiuiDeviceNameEditFragment.java"
 
@@ -19,7 +19,7 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 74
-    iput p1, p0, Lcom/android/settings/dF;->pv:I
+    iput p1, p0, Lcom/android/settings_ext/dF;->pv:I
 
     .line 75
     return-void
@@ -32,7 +32,7 @@
 
     .prologue
     .line 79
-    iget v0, p0, Lcom/android/settings/dF;->pv:I
+    iget v0, p0, Lcom/android/settings_ext/dF;->pv:I
 
     invoke-virtual {p4}, Ljava/lang/Object;->toString()Ljava/lang/String;
 

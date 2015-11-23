@@ -1,4 +1,4 @@
-.class final Lcom/android/settings/applications/ApplicationsState$1;
+.class final Lcom/android/settings_ext/applications/ApplicationsState$1;
 .super Ljava/lang/Object;
 .source "ApplicationsState.java"
 
@@ -23,14 +23,14 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/applications/ApplicationsState$1;->sCollator:Ljava/text/Collator;
+    iput-object v0, p0, Lcom/android/settings_ext/applications/ApplicationsState$1;->sCollator:Ljava/text/Collator;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public a(Lcom/android/settings/applications/ApplicationsState$AppEntry;Lcom/android/settings/applications/ApplicationsState$AppEntry;)I
+.method public a(Lcom/android/settings_ext/applications/ApplicationsState$AppEntry;Lcom/android/settings_ext/applications/ApplicationsState$AppEntry;)I
     .locals 5
 
     .prologue
@@ -41,13 +41,13 @@
     const/4 v1, 0x1
 
     .line 231
-    iget-object v0, p1, Lcom/android/settings/applications/ApplicationsState$AppEntry;->bl:Landroid/content/pm/ApplicationInfo;
+    iget-object v0, p1, Lcom/android/settings_ext/applications/ApplicationsState$AppEntry;->bl:Landroid/content/pm/ApplicationInfo;
 
     iget-boolean v0, v0, Landroid/content/pm/ApplicationInfo;->enabled:Z
 
     if-eqz v0, :cond_2
 
-    iget-object v0, p1, Lcom/android/settings/applications/ApplicationsState$AppEntry;->bl:Landroid/content/pm/ApplicationInfo;
+    iget-object v0, p1, Lcom/android/settings_ext/applications/ApplicationsState$AppEntry;->bl:Landroid/content/pm/ApplicationInfo;
 
     iget v0, v0, Landroid/content/pm/ApplicationInfo;->flags:I
 
@@ -59,13 +59,13 @@
 
     .line 233
     :goto_0
-    iget-object v3, p2, Lcom/android/settings/applications/ApplicationsState$AppEntry;->bl:Landroid/content/pm/ApplicationInfo;
+    iget-object v3, p2, Lcom/android/settings_ext/applications/ApplicationsState$AppEntry;->bl:Landroid/content/pm/ApplicationInfo;
 
     iget-boolean v3, v3, Landroid/content/pm/ApplicationInfo;->enabled:Z
 
     if-eqz v3, :cond_0
 
-    iget-object v3, p2, Lcom/android/settings/applications/ApplicationsState$AppEntry;->bl:Landroid/content/pm/ApplicationInfo;
+    iget-object v3, p2, Lcom/android/settings_ext/applications/ApplicationsState$AppEntry;->bl:Landroid/content/pm/ApplicationInfo;
 
     iget v3, v3, Landroid/content/pm/ApplicationInfo;->flags:I
 
@@ -97,11 +97,11 @@
 
     .line 240
     :cond_3
-    iget-object v0, p0, Lcom/android/settings/applications/ApplicationsState$1;->sCollator:Ljava/text/Collator;
+    iget-object v0, p0, Lcom/android/settings_ext/applications/ApplicationsState$1;->sCollator:Ljava/text/Collator;
 
-    iget-object v1, p1, Lcom/android/settings/applications/ApplicationsState$AppEntry;->ES:Ljava/lang/String;
+    iget-object v1, p1, Lcom/android/settings_ext/applications/ApplicationsState$AppEntry;->ES:Ljava/lang/String;
 
-    iget-object v2, p2, Lcom/android/settings/applications/ApplicationsState$AppEntry;->ES:Ljava/lang/String;
+    iget-object v2, p2, Lcom/android/settings_ext/applications/ApplicationsState$AppEntry;->ES:Ljava/lang/String;
 
     invoke-virtual {v0, v1, v2}, Ljava/text/Collator;->compare(Ljava/lang/String;Ljava/lang/String;)I
 
@@ -115,11 +115,11 @@
 
     .prologue
     .line 227
-    check-cast p1, Lcom/android/settings/applications/ApplicationsState$AppEntry;
+    check-cast p1, Lcom/android/settings_ext/applications/ApplicationsState$AppEntry;
 
-    check-cast p2, Lcom/android/settings/applications/ApplicationsState$AppEntry;
+    check-cast p2, Lcom/android/settings_ext/applications/ApplicationsState$AppEntry;
 
-    invoke-virtual {p0, p1, p2}, Lcom/android/settings/applications/ApplicationsState$1;->a(Lcom/android/settings/applications/ApplicationsState$AppEntry;Lcom/android/settings/applications/ApplicationsState$AppEntry;)I
+    invoke-virtual {p0, p1, p2}, Lcom/android/settings_ext/applications/ApplicationsState$1;->a(Lcom/android/settings_ext/applications/ApplicationsState$AppEntry;Lcom/android/settings_ext/applications/ApplicationsState$AppEntry;)I
 
     move-result v0
 

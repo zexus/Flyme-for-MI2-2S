@@ -1,4 +1,4 @@
-.class final Lcom/android/settings/wifi/g;
+.class final Lcom/android/settings_ext/wifi/g;
 .super Ljava/lang/Object;
 .source "MiuiAccessPoint.java"
 
@@ -19,12 +19,12 @@
 
 
 # virtual methods
-.method public a(Lcom/android/settings/wifi/AccessPoint;Lcom/android/settings/wifi/AccessPoint;)I
+.method public a(Lcom/android/settings_ext/wifi/AccessPoint;Lcom/android/settings_ext/wifi/AccessPoint;)I
     .locals 1
 
     .prologue
     .line 302
-    instance-of v0, p1, Lcom/android/settings/wifi/d;
+    instance-of v0, p1, Lcom/android/settings_ext/wifi/d;
 
     if-nez v0, :cond_0
 
@@ -37,7 +37,7 @@
 
     .line 305
     :cond_0
-    instance-of v0, p2, Lcom/android/settings/wifi/d;
+    instance-of v0, p2, Lcom/android/settings_ext/wifi/d;
 
     if-nez v0, :cond_1
 
@@ -48,9 +48,9 @@
 
     .line 308
     :cond_1
-    check-cast p1, Lcom/android/settings/wifi/d;
+    check-cast p1, Lcom/android/settings_ext/wifi/d;
 
-    invoke-virtual {p1, p2}, Lcom/android/settings/wifi/d;->k(Landroid/preference/Preference;)I
+    invoke-virtual {p1, p2}, Lcom/android/settings_ext/wifi/d;->k(Landroid/preference/Preference;)I
 
     move-result v0
 
@@ -62,11 +62,11 @@
 
     .prologue
     .line 299
-    check-cast p1, Lcom/android/settings/wifi/AccessPoint;
+    check-cast p1, Lcom/android/settings_ext/wifi/AccessPoint;
 
-    check-cast p2, Lcom/android/settings/wifi/AccessPoint;
+    check-cast p2, Lcom/android/settings_ext/wifi/AccessPoint;
 
-    invoke-virtual {p0, p1, p2}, Lcom/android/settings/wifi/g;->a(Lcom/android/settings/wifi/AccessPoint;Lcom/android/settings/wifi/AccessPoint;)I
+    invoke-virtual {p0, p1, p2}, Lcom/android/settings_ext/wifi/g;->a(Lcom/android/settings_ext/wifi/AccessPoint;Lcom/android/settings_ext/wifi/AccessPoint;)I
 
     move-result v0
 

@@ -1,4 +1,4 @@
-.class public interface abstract Lcom/android/settings/bluetooth/LocalBluetoothProfileManager$ServiceListener;
+.class public interface abstract Lcom/android/settings_ext/bluetooth/LocalBluetoothProfileManager$ServiceListener;
 .super Ljava/lang/Object;
 .source "LocalBluetoothProfileManager.java"
 

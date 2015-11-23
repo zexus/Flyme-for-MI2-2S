@@ -1,4 +1,4 @@
-.class final Lcom/android/settings/view/d;
+.class final Lcom/android/settings_ext/view/d;
 .super Ljava/lang/Object;
 .source "SeekBarPreference.java"
 
@@ -19,12 +19,12 @@
 
 
 # virtual methods
-.method public cD(I)[Lcom/android/settings/view/SeekBarPreference$SavedState;
+.method public cD(I)[Lcom/android/settings_ext/view/SeekBarPreference$SavedState;
     .locals 1
 
     .prologue
     .line 223
-    new-array v0, p1, [Lcom/android/settings/view/SeekBarPreference$SavedState;
+    new-array v0, p1, [Lcom/android/settings_ext/view/SeekBarPreference$SavedState;
 
     return-object v0
 .end method
@@ -34,7 +34,7 @@
 
     .prologue
     .line 217
-    invoke-virtual {p0, p1}, Lcom/android/settings/view/d;->o(Landroid/os/Parcel;)Lcom/android/settings/view/SeekBarPreference$SavedState;
+    invoke-virtual {p0, p1}, Lcom/android/settings_ext/view/d;->o(Landroid/os/Parcel;)Lcom/android/settings_ext/view/SeekBarPreference$SavedState;
 
     move-result-object v0
 
@@ -46,21 +46,21 @@
 
     .prologue
     .line 217
-    invoke-virtual {p0, p1}, Lcom/android/settings/view/d;->cD(I)[Lcom/android/settings/view/SeekBarPreference$SavedState;
+    invoke-virtual {p0, p1}, Lcom/android/settings_ext/view/d;->cD(I)[Lcom/android/settings_ext/view/SeekBarPreference$SavedState;
 
     move-result-object v0
 
     return-object v0
 .end method
 
-.method public o(Landroid/os/Parcel;)Lcom/android/settings/view/SeekBarPreference$SavedState;
+.method public o(Landroid/os/Parcel;)Lcom/android/settings_ext/view/SeekBarPreference$SavedState;
     .locals 1
 
     .prologue
     .line 219
-    new-instance v0, Lcom/android/settings/view/SeekBarPreference$SavedState;
+    new-instance v0, Lcom/android/settings_ext/view/SeekBarPreference$SavedState;
 
-    invoke-direct {v0, p1}, Lcom/android/settings/view/SeekBarPreference$SavedState;-><init>(Landroid/os/Parcel;)V
+    invoke-direct {v0, p1}, Lcom/android/settings_ext/view/SeekBarPreference$SavedState;-><init>(Landroid/os/Parcel;)V
 
     return-object v0
 .end method

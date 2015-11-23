@@ -1,4 +1,4 @@
-.class public Lcom/android/settings/G;
+.class public Lcom/android/settings_ext/G;
 .super Landroid/widget/ArrayAdapter;
 .source "AppListPreference.java"
 
@@ -8,16 +8,16 @@
 
 .field private be:I
 
-.field final synthetic bf:Lcom/android/settings/AppListPreference;
+.field final synthetic bf:Lcom/android/settings_ext/AppListPreference;
 
 
 # direct methods
-.method public constructor <init>(Lcom/android/settings/AppListPreference;Landroid/content/Context;I[Ljava/lang/CharSequence;[Landroid/graphics/drawable/Drawable;I)V
+.method public constructor <init>(Lcom/android/settings_ext/AppListPreference;Landroid/content/Context;I[Ljava/lang/CharSequence;[Landroid/graphics/drawable/Drawable;I)V
     .locals 1
 
     .prologue
     .line 49
-    iput-object p1, p0, Lcom/android/settings/G;->bf:Lcom/android/settings/AppListPreference;
+    iput-object p1, p0, Lcom/android/settings_ext/G;->bf:Lcom/android/settings_ext/AppListPreference;
 
     .line 50
     invoke-direct {p0, p2, p3, p4}, Landroid/widget/ArrayAdapter;-><init>(Landroid/content/Context;I[Ljava/lang/Object;)V
@@ -25,18 +25,18 @@
     .line 45
     const/4 v0, 0x0
 
-    iput-object v0, p0, Lcom/android/settings/G;->bd:[Landroid/graphics/drawable/Drawable;
+    iput-object v0, p0, Lcom/android/settings_ext/G;->bd:[Landroid/graphics/drawable/Drawable;
 
     .line 46
     const/4 v0, 0x0
 
-    iput v0, p0, Lcom/android/settings/G;->be:I
+    iput v0, p0, Lcom/android/settings_ext/G;->be:I
 
     .line 51
-    iput p6, p0, Lcom/android/settings/G;->be:I
+    iput p6, p0, Lcom/android/settings_ext/G;->be:I
 
     .line 52
-    iput-object p5, p0, Lcom/android/settings/G;->bd:[Landroid/graphics/drawable/Drawable;
+    iput-object p5, p0, Lcom/android/settings_ext/G;->bd:[Landroid/graphics/drawable/Drawable;
 
     .line 53
     return-void
@@ -49,7 +49,7 @@
 
     .prologue
     .line 57
-    invoke-virtual {p0}, Lcom/android/settings/G;->getContext()Landroid/content/Context;
+    invoke-virtual {p0}, Lcom/android/settings_ext/G;->getContext()Landroid/content/Context;
 
     move-result-object v0
 
@@ -78,7 +78,7 @@
     check-cast v0, Landroid/widget/CheckedTextView;
 
     .line 60
-    invoke-virtual {p0, p1}, Lcom/android/settings/G;->getItem(I)Ljava/lang/Object;
+    invoke-virtual {p0, p1}, Lcom/android/settings_ext/G;->getItem(I)Ljava/lang/Object;
 
     move-result-object v1
 
@@ -87,7 +87,7 @@
     invoke-virtual {v0, v1}, Landroid/widget/CheckedTextView;->setText(Ljava/lang/CharSequence;)V
 
     .line 61
-    iget v1, p0, Lcom/android/settings/G;->be:I
+    iget v1, p0, Lcom/android/settings_ext/G;->be:I
 
     if-ne p1, v1, :cond_0
 
@@ -107,7 +107,7 @@
     check-cast v0, Landroid/widget/ImageView;
 
     .line 65
-    iget-object v1, p0, Lcom/android/settings/G;->bd:[Landroid/graphics/drawable/Drawable;
+    iget-object v1, p0, Lcom/android/settings_ext/G;->bd:[Landroid/graphics/drawable/Drawable;
 
     aget-object v1, v1, p1
 

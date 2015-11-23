@@ -1,4 +1,4 @@
-.class Lcom/android/settings/accounts/ChooseAccountActivity$1;
+.class Lcom/android/settings_ext/accounts/ChooseAccountActivity$1;
 .super Ljava/lang/Object;
 .source "ChooseAccountActivity.java"
 
@@ -7,16 +7,16 @@
 
 
 # instance fields
-.field final synthetic Cj:Lcom/android/settings/accounts/ChooseAccountActivity;
+.field final synthetic Cj:Lcom/android/settings_ext/accounts/ChooseAccountActivity;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/accounts/ChooseAccountActivity;)V
+.method constructor <init>(Lcom/android/settings_ext/accounts/ChooseAccountActivity;)V
     .locals 0
 
     .prologue
     .line 133
-    iput-object p1, p0, Lcom/android/settings/accounts/ChooseAccountActivity$1;->Cj:Lcom/android/settings/accounts/ChooseAccountActivity;
+    iput-object p1, p0, Lcom/android/settings_ext/accounts/ChooseAccountActivity$1;->Cj:Lcom/android/settings_ext/accounts/ChooseAccountActivity;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -30,16 +30,16 @@
 
     .prologue
     .line 136
-    iget-object v0, p0, Lcom/android/settings/accounts/ChooseAccountActivity$1;->Cj:Lcom/android/settings/accounts/ChooseAccountActivity;
+    iget-object v0, p0, Lcom/android/settings_ext/accounts/ChooseAccountActivity$1;->Cj:Lcom/android/settings_ext/accounts/ChooseAccountActivity;
 
     const/4 v1, 0x0
 
-    invoke-virtual {v0, v1}, Lcom/android/settings/accounts/ChooseAccountActivity;->setResult(I)V
+    invoke-virtual {v0, v1}, Lcom/android/settings_ext/accounts/ChooseAccountActivity;->setResult(I)V
 
     .line 137
-    iget-object v0, p0, Lcom/android/settings/accounts/ChooseAccountActivity$1;->Cj:Lcom/android/settings/accounts/ChooseAccountActivity;
+    iget-object v0, p0, Lcom/android/settings_ext/accounts/ChooseAccountActivity$1;->Cj:Lcom/android/settings_ext/accounts/ChooseAccountActivity;
 
-    invoke-virtual {v0}, Lcom/android/settings/accounts/ChooseAccountActivity;->finish()V
+    invoke-virtual {v0}, Lcom/android/settings_ext/accounts/ChooseAccountActivity;->finish()V
 
     .line 138
     return-void

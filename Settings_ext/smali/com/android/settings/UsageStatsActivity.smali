@@ -1,4 +1,4 @@
-.class public Lcom/android/settings/UsageStatsActivity;
+.class public Lcom/android/settings_ext/UsageStatsActivity;
 .super Lmiui/app/Activity;
 .source "UsageStatsActivity.java"
 
@@ -13,7 +13,7 @@
 
 .field private zh:Landroid/app/usage/UsageStatsManager;
 
-.field private zi:Lcom/android/settings/hf;
+.field private zi:Lcom/android/settings_ext/hf;
 
 
 # direct methods
@@ -28,32 +28,32 @@
     return-void
 .end method
 
-.method static synthetic a(Lcom/android/settings/UsageStatsActivity;)Landroid/app/usage/UsageStatsManager;
+.method static synthetic a(Lcom/android/settings_ext/UsageStatsActivity;)Landroid/app/usage/UsageStatsManager;
     .locals 1
 
     .prologue
     .line 52
-    iget-object v0, p0, Lcom/android/settings/UsageStatsActivity;->zh:Landroid/app/usage/UsageStatsManager;
+    iget-object v0, p0, Lcom/android/settings_ext/UsageStatsActivity;->zh:Landroid/app/usage/UsageStatsManager;
 
     return-object v0
 .end method
 
-.method static synthetic b(Lcom/android/settings/UsageStatsActivity;)Landroid/content/pm/PackageManager;
+.method static synthetic b(Lcom/android/settings_ext/UsageStatsActivity;)Landroid/content/pm/PackageManager;
     .locals 1
 
     .prologue
     .line 52
-    iget-object v0, p0, Lcom/android/settings/UsageStatsActivity;->i:Landroid/content/pm/PackageManager;
+    iget-object v0, p0, Lcom/android/settings_ext/UsageStatsActivity;->i:Landroid/content/pm/PackageManager;
 
     return-object v0
 .end method
 
-.method static synthetic c(Lcom/android/settings/UsageStatsActivity;)Landroid/view/LayoutInflater;
+.method static synthetic c(Lcom/android/settings_ext/UsageStatsActivity;)Landroid/view/LayoutInflater;
     .locals 1
 
     .prologue
     .line 52
-    iget-object v0, p0, Lcom/android/settings/UsageStatsActivity;->mInflater:Landroid/view/LayoutInflater;
+    iget-object v0, p0, Lcom/android/settings_ext/UsageStatsActivity;->mInflater:Landroid/view/LayoutInflater;
 
     return-object v0
 .end method
@@ -70,41 +70,41 @@
     .line 233
     const v0, 0x7f04011b
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/UsageStatsActivity;->setContentView(I)V
+    invoke-virtual {p0, v0}, Lcom/android/settings_ext/UsageStatsActivity;->setContentView(I)V
 
     .line 235
     const-string v0, "usagestats"
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/UsageStatsActivity;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
+    invoke-virtual {p0, v0}, Lcom/android/settings_ext/UsageStatsActivity;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object v0
 
     check-cast v0, Landroid/app/usage/UsageStatsManager;
 
-    iput-object v0, p0, Lcom/android/settings/UsageStatsActivity;->zh:Landroid/app/usage/UsageStatsManager;
+    iput-object v0, p0, Lcom/android/settings_ext/UsageStatsActivity;->zh:Landroid/app/usage/UsageStatsManager;
 
     .line 236
     const-string v0, "layout_inflater"
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/UsageStatsActivity;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
+    invoke-virtual {p0, v0}, Lcom/android/settings_ext/UsageStatsActivity;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object v0
 
     check-cast v0, Landroid/view/LayoutInflater;
 
-    iput-object v0, p0, Lcom/android/settings/UsageStatsActivity;->mInflater:Landroid/view/LayoutInflater;
+    iput-object v0, p0, Lcom/android/settings_ext/UsageStatsActivity;->mInflater:Landroid/view/LayoutInflater;
 
     .line 237
-    invoke-virtual {p0}, Lcom/android/settings/UsageStatsActivity;->getPackageManager()Landroid/content/pm/PackageManager;
+    invoke-virtual {p0}, Lcom/android/settings_ext/UsageStatsActivity;->getPackageManager()Landroid/content/pm/PackageManager;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/UsageStatsActivity;->i:Landroid/content/pm/PackageManager;
+    iput-object v0, p0, Lcom/android/settings_ext/UsageStatsActivity;->i:Landroid/content/pm/PackageManager;
 
     .line 239
     const v0, 0x7f1002bf
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/UsageStatsActivity;->findViewById(I)Landroid/view/View;
+    invoke-virtual {p0, v0}, Lcom/android/settings_ext/UsageStatsActivity;->findViewById(I)Landroid/view/View;
 
     move-result-object v0
 
@@ -116,21 +116,21 @@
     .line 242
     const v0, 0x7f1002c0
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/UsageStatsActivity;->findViewById(I)Landroid/view/View;
+    invoke-virtual {p0, v0}, Lcom/android/settings_ext/UsageStatsActivity;->findViewById(I)Landroid/view/View;
 
     move-result-object v0
 
     check-cast v0, Landroid/widget/ListView;
 
     .line 243
-    new-instance v1, Lcom/android/settings/hf;
+    new-instance v1, Lcom/android/settings_ext/hf;
 
-    invoke-direct {v1, p0}, Lcom/android/settings/hf;-><init>(Lcom/android/settings/UsageStatsActivity;)V
+    invoke-direct {v1, p0}, Lcom/android/settings_ext/hf;-><init>(Lcom/android/settings_ext/UsageStatsActivity;)V
 
-    iput-object v1, p0, Lcom/android/settings/UsageStatsActivity;->zi:Lcom/android/settings/hf;
+    iput-object v1, p0, Lcom/android/settings_ext/UsageStatsActivity;->zi:Lcom/android/settings_ext/hf;
 
     .line 244
-    iget-object v1, p0, Lcom/android/settings/UsageStatsActivity;->zi:Lcom/android/settings/hf;
+    iget-object v1, p0, Lcom/android/settings_ext/UsageStatsActivity;->zi:Lcom/android/settings_ext/hf;
 
     invoke-virtual {v0, v1}, Landroid/widget/ListView;->setAdapter(Landroid/widget/ListAdapter;)V
 
@@ -143,9 +143,9 @@
 
     .prologue
     .line 249
-    iget-object v0, p0, Lcom/android/settings/UsageStatsActivity;->zi:Lcom/android/settings/hf;
+    iget-object v0, p0, Lcom/android/settings_ext/UsageStatsActivity;->zi:Lcom/android/settings_ext/hf;
 
-    invoke-virtual {v0, p3}, Lcom/android/settings/hf;->ad(I)V
+    invoke-virtual {v0, p3}, Lcom/android/settings_ext/hf;->ad(I)V
 
     .line 250
     return-void

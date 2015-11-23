@@ -1,4 +1,4 @@
-.class Lcom/android/settings/fw;
+.class Lcom/android/settings_ext/fw;
 .super Ljava/lang/Object;
 .source "ProxySelector.java"
 
@@ -7,16 +7,16 @@
 
 
 # instance fields
-.field final synthetic uy:Lcom/android/settings/ProxySelector;
+.field final synthetic uy:Lcom/android/settings_ext/ProxySelector;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/ProxySelector;)V
+.method constructor <init>(Lcom/android/settings_ext/ProxySelector;)V
     .locals 0
 
     .prologue
     .line 262
-    iput-object p1, p0, Lcom/android/settings/fw;->uy:Lcom/android/settings/ProxySelector;
+    iput-object p1, p0, Lcom/android/settings_ext/fw;->uy:Lcom/android/settings_ext/ProxySelector;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -30,9 +30,9 @@
 
     .prologue
     .line 265
-    iget-object v0, p0, Lcom/android/settings/fw;->uy:Lcom/android/settings/ProxySelector;
+    iget-object v0, p0, Lcom/android/settings_ext/fw;->uy:Lcom/android/settings_ext/ProxySelector;
 
-    invoke-virtual {v0}, Lcom/android/settings/ProxySelector;->fU()V
+    invoke-virtual {v0}, Lcom/android/settings_ext/ProxySelector;->fU()V
 
     .line 266
     return-void

@@ -1,10 +1,10 @@
-.class public Lcom/android/settings/MiuiZonePicker;
-.super Lcom/android/settings/ZonePicker;
+.class public Lcom/android/settings_ext/MiuiZonePicker;
+.super Lcom/android/settings_ext/ZonePicker;
 .source "MiuiZonePicker.java"
 
 # interfaces
 .implements Landroid/view/View$OnClickListener;
-.implements Lcom/android/settings/ff;
+.implements Lcom/android/settings_ext/ff;
 
 
 # static fields
@@ -29,12 +29,12 @@
     .line 23
     const-string v0, "zone_setup_wizard"
 
-    sput-object v0, Lcom/android/settings/MiuiZonePicker;->sC:Ljava/lang/String;
+    sput-object v0, Lcom/android/settings_ext/MiuiZonePicker;->sC:Ljava/lang/String;
 
     .line 24
     const-string v0, "pick_zone"
 
-    sput-object v0, Lcom/android/settings/MiuiZonePicker;->sD:Ljava/lang/String;
+    sput-object v0, Lcom/android/settings_ext/MiuiZonePicker;->sD:Ljava/lang/String;
 
     return-void
 .end method
@@ -44,12 +44,12 @@
 
     .prologue
     .line 22
-    invoke-direct {p0}, Lcom/android/settings/ZonePicker;-><init>()V
+    invoke-direct {p0}, Lcom/android/settings_ext/ZonePicker;-><init>()V
 
     .line 28
     const/4 v0, 0x0
 
-    iput-boolean v0, p0, Lcom/android/settings/MiuiZonePicker;->sG:Z
+    iput-boolean v0, p0, Lcom/android/settings_ext/MiuiZonePicker;->sG:Z
 
     return-void
 .end method
@@ -61,11 +61,11 @@
 
     .prologue
     .line 130
-    iget-boolean v0, p0, Lcom/android/settings/MiuiZonePicker;->sE:Z
+    iget-boolean v0, p0, Lcom/android/settings_ext/MiuiZonePicker;->sE:Z
 
     if-eqz v0, :cond_0
 
-    iget-boolean v0, p0, Lcom/android/settings/MiuiZonePicker;->sG:Z
+    iget-boolean v0, p0, Lcom/android/settings_ext/MiuiZonePicker;->sG:Z
 
     if-eqz v0, :cond_0
 
@@ -85,18 +85,18 @@
 
     .prologue
     .line 66
-    iget-boolean v0, p0, Lcom/android/settings/MiuiZonePicker;->sE:Z
+    iget-boolean v0, p0, Lcom/android/settings_ext/MiuiZonePicker;->sE:Z
 
     if-eqz v0, :cond_0
 
     .line 67
-    invoke-virtual {p0}, Lcom/android/settings/MiuiZonePicker;->getThemedContext()Landroid/content/Context;
+    invoke-virtual {p0}, Lcom/android/settings_ext/MiuiZonePicker;->getThemedContext()Landroid/content/Context;
 
     move-result-object v0
 
     const v1, 0x7f0400dc
 
-    invoke-static {v0, p2, v1}, Lcom/android/settings/ZonePicker;->a(Landroid/content/Context;ZI)Landroid/widget/SimpleAdapter;
+    invoke-static {v0, p2, v1}, Lcom/android/settings_ext/ZonePicker;->a(Landroid/content/Context;ZI)Landroid/widget/SimpleAdapter;
 
     move-result-object v0
 
@@ -105,7 +105,7 @@
     return-object v0
 
     :cond_0
-    invoke-super {p0, p1, p2}, Lcom/android/settings/ZonePicker;->e(Landroid/content/Context;Z)Landroid/widget/SimpleAdapter;
+    invoke-super {p0, p1, p2}, Lcom/android/settings_ext/ZonePicker;->e(Landroid/content/Context;Z)Landroid/widget/SimpleAdapter;
 
     move-result-object v0
 
@@ -119,22 +119,22 @@
     const/4 v2, 0x1
 
     .line 101
-    invoke-super {p0, p1}, Lcom/android/settings/ZonePicker;->onActivityCreated(Landroid/os/Bundle;)V
+    invoke-super {p0, p1}, Lcom/android/settings_ext/ZonePicker;->onActivityCreated(Landroid/os/Bundle;)V
 
     .line 102
-    iget-boolean v0, p0, Lcom/android/settings/MiuiZonePicker;->sE:Z
+    iget-boolean v0, p0, Lcom/android/settings_ext/MiuiZonePicker;->sE:Z
 
     if-eqz v0, :cond_0
 
     .line 103
-    invoke-virtual {p0}, Lcom/android/settings/MiuiZonePicker;->getListView()Landroid/widget/ListView;
+    invoke-virtual {p0}, Lcom/android/settings_ext/MiuiZonePicker;->getListView()Landroid/widget/ListView;
 
     move-result-object v0
 
     invoke-virtual {v0, v2}, Landroid/widget/ListView;->setChoiceMode(I)V
 
     .line 104
-    invoke-virtual {p0}, Lcom/android/settings/MiuiZonePicker;->getListAdapter()Landroid/widget/ListAdapter;
+    invoke-virtual {p0}, Lcom/android/settings_ext/MiuiZonePicker;->getListAdapter()Landroid/widget/ListAdapter;
 
     move-result-object v0
 
@@ -144,12 +144,12 @@
 
     move-result-object v1
 
-    invoke-static {v0, v1}, Lcom/android/settings/MiuiZonePicker;->a(Landroid/widget/SimpleAdapter;Ljava/util/TimeZone;)I
+    invoke-static {v0, v1}, Lcom/android/settings_ext/MiuiZonePicker;->a(Landroid/widget/SimpleAdapter;Ljava/util/TimeZone;)I
 
     move-result v0
 
     .line 105
-    invoke-virtual {p0}, Lcom/android/settings/MiuiZonePicker;->getListView()Landroid/widget/ListView;
+    invoke-virtual {p0}, Lcom/android/settings_ext/MiuiZonePicker;->getListView()Landroid/widget/ListView;
 
     move-result-object v1
 
@@ -159,7 +159,7 @@
     if-ltz v0, :cond_0
 
     .line 107
-    invoke-virtual {p0, v0}, Lcom/android/settings/MiuiZonePicker;->setSelection(I)V
+    invoke-virtual {p0, v0}, Lcom/android/settings_ext/MiuiZonePicker;->setSelection(I)V
 
     .line 110
     :cond_0
@@ -185,7 +185,7 @@
 
     .line 116
     :sswitch_0
-    invoke-virtual {p0}, Lcom/android/settings/MiuiZonePicker;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/MiuiZonePicker;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
@@ -194,26 +194,26 @@
     invoke-virtual {v0, v1}, Landroid/app/Activity;->setResult(I)V
 
     .line 117
-    iput-boolean v2, p0, Lcom/android/settings/MiuiZonePicker;->sG:Z
+    iput-boolean v2, p0, Lcom/android/settings_ext/MiuiZonePicker;->sG:Z
 
     .line 118
-    invoke-virtual {p0}, Lcom/android/settings/MiuiZonePicker;->finish()V
+    invoke-virtual {p0}, Lcom/android/settings_ext/MiuiZonePicker;->finish()V
 
     goto :goto_0
 
     .line 121
     :sswitch_1
-    invoke-virtual {p0}, Lcom/android/settings/MiuiZonePicker;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/MiuiZonePicker;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
     invoke-virtual {v0, v2}, Landroid/app/Activity;->setResult(I)V
 
     .line 122
-    iput-boolean v2, p0, Lcom/android/settings/MiuiZonePicker;->sG:Z
+    iput-boolean v2, p0, Lcom/android/settings_ext/MiuiZonePicker;->sG:Z
 
     .line 123
-    invoke-virtual {p0}, Lcom/android/settings/MiuiZonePicker;->finish()V
+    invoke-virtual {p0}, Lcom/android/settings_ext/MiuiZonePicker;->finish()V
 
     goto :goto_0
 
@@ -232,10 +232,10 @@
     const/4 v2, 0x0
 
     .line 32
-    invoke-super {p0, p1}, Lcom/android/settings/ZonePicker;->onCreate(Landroid/os/Bundle;)V
+    invoke-super {p0, p1}, Lcom/android/settings_ext/ZonePicker;->onCreate(Landroid/os/Bundle;)V
 
     .line 33
-    invoke-virtual {p0}, Lcom/android/settings/MiuiZonePicker;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/MiuiZonePicker;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
@@ -243,16 +243,16 @@
 
     move-result-object v0
 
-    sget-object v1, Lcom/android/settings/MiuiZonePicker;->sC:Ljava/lang/String;
+    sget-object v1, Lcom/android/settings_ext/MiuiZonePicker;->sC:Ljava/lang/String;
 
     invoke-virtual {v0, v1, v2}, Landroid/content/Intent;->getBooleanExtra(Ljava/lang/String;Z)Z
 
     move-result v0
 
-    iput-boolean v0, p0, Lcom/android/settings/MiuiZonePicker;->sE:Z
+    iput-boolean v0, p0, Lcom/android/settings_ext/MiuiZonePicker;->sE:Z
 
     .line 34
-    invoke-virtual {p0}, Lcom/android/settings/MiuiZonePicker;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/MiuiZonePicker;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
@@ -260,26 +260,26 @@
 
     move-result-object v0
 
-    sget-object v1, Lcom/android/settings/MiuiZonePicker;->sD:Ljava/lang/String;
+    sget-object v1, Lcom/android/settings_ext/MiuiZonePicker;->sD:Ljava/lang/String;
 
     invoke-virtual {v0, v1, v2}, Landroid/content/Intent;->getBooleanExtra(Ljava/lang/String;Z)Z
 
     move-result v0
 
-    iput-boolean v0, p0, Lcom/android/settings/MiuiZonePicker;->sF:Z
+    iput-boolean v0, p0, Lcom/android/settings_ext/MiuiZonePicker;->sF:Z
 
     .line 35
-    iget-boolean v0, p0, Lcom/android/settings/MiuiZonePicker;->sE:Z
+    iget-boolean v0, p0, Lcom/android/settings_ext/MiuiZonePicker;->sE:Z
 
     if-eqz v0, :cond_0
 
     .line 36
     const v0, 0x7f0a0080
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/MiuiZonePicker;->setThemeRes(I)V
+    invoke-virtual {p0, v0}, Lcom/android/settings_ext/MiuiZonePicker;->setThemeRes(I)V
 
     .line 37
-    invoke-virtual {p0}, Lcom/android/settings/MiuiZonePicker;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/MiuiZonePicker;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
@@ -288,7 +288,7 @@
     invoke-virtual {v0, v1}, Landroid/app/Activity;->setRequestedOrientation(I)V
 
     .line 38
-    invoke-virtual {p0}, Lcom/android/settings/MiuiZonePicker;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/MiuiZonePicker;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
@@ -302,7 +302,7 @@
 
     move-result v0
 
-    iput-boolean v0, p0, Lcom/android/settings/MiuiZonePicker;->sG:Z
+    iput-boolean v0, p0, Lcom/android/settings_ext/MiuiZonePicker;->sG:Z
 
     .line 40
     :cond_0
@@ -314,7 +314,7 @@
 
     .prologue
     .line 75
-    iget-boolean v0, p0, Lcom/android/settings/MiuiZonePicker;->sE:Z
+    iget-boolean v0, p0, Lcom/android/settings_ext/MiuiZonePicker;->sE:Z
 
     if-eqz v0, :cond_0
 
@@ -326,7 +326,7 @@
     return v0
 
     :cond_0
-    invoke-super {p0, p1}, Lcom/android/settings/ZonePicker;->onCreateOptionsMenu(Landroid/view/Menu;)Z
+    invoke-super {p0, p1}, Lcom/android/settings_ext/ZonePicker;->onCreateOptionsMenu(Landroid/view/Menu;)Z
 
     move-result v0
 
@@ -342,7 +342,7 @@
     const/4 v2, -0x1
 
     .line 44
-    iget-boolean v0, p0, Lcom/android/settings/MiuiZonePicker;->sE:Z
+    iget-boolean v0, p0, Lcom/android/settings_ext/MiuiZonePicker;->sE:Z
 
     if-eqz v0, :cond_1
 
@@ -381,7 +381,7 @@
     invoke-virtual {v0, p0}, Landroid/widget/Button;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     .line 51
-    iget-boolean v0, p0, Lcom/android/settings/MiuiZonePicker;->sG:Z
+    iget-boolean v0, p0, Lcom/android/settings_ext/MiuiZonePicker;->sG:Z
 
     if-eqz v0, :cond_0
 
@@ -437,7 +437,7 @@
 
     .line 60
     :cond_1
-    invoke-super {p0, p1, p2, p3}, Lcom/android/settings/ZonePicker;->onInflateView(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;
+    invoke-super {p0, p1, p2, p3}, Lcom/android/settings_ext/ZonePicker;->onInflateView(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;
 
     move-result-object v0
 
@@ -465,12 +465,12 @@
     check-cast v0, Ljava/lang/String;
 
     .line 86
-    iget-boolean v1, p0, Lcom/android/settings/MiuiZonePicker;->sE:Z
+    iget-boolean v1, p0, Lcom/android/settings_ext/MiuiZonePicker;->sE:Z
 
     if-eqz v1, :cond_0
 
     .line 87
-    invoke-virtual {p0}, Lcom/android/settings/MiuiZonePicker;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/MiuiZonePicker;->getActivity()Landroid/app/Activity;
 
     move-result-object v1
 
@@ -491,7 +491,7 @@
 
     .line 89
     :cond_0
-    iget-boolean v1, p0, Lcom/android/settings/MiuiZonePicker;->sF:Z
+    iget-boolean v1, p0, Lcom/android/settings_ext/MiuiZonePicker;->sF:Z
 
     if-eqz v1, :cond_1
 
@@ -506,7 +506,7 @@
     invoke-virtual {v1, v2, v0}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
 
     .line 92
-    invoke-virtual {p0}, Lcom/android/settings/MiuiZonePicker;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/MiuiZonePicker;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
@@ -515,13 +515,13 @@
     invoke-virtual {v0, v2, v1}, Landroid/app/Activity;->setResult(ILandroid/content/Intent;)V
 
     .line 93
-    invoke-virtual {p0}, Lcom/android/settings/MiuiZonePicker;->finish()V
+    invoke-virtual {p0}, Lcom/android/settings_ext/MiuiZonePicker;->finish()V
 
     goto :goto_0
 
     .line 95
     :cond_1
-    invoke-super/range {p0 .. p5}, Lcom/android/settings/ZonePicker;->onListItemClick(Landroid/widget/ListView;Landroid/view/View;IJ)V
+    invoke-super/range {p0 .. p5}, Lcom/android/settings_ext/ZonePicker;->onListItemClick(Landroid/widget/ListView;Landroid/view/View;IJ)V
 
     goto :goto_0
 .end method

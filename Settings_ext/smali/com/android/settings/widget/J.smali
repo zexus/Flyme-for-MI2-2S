@@ -1,4 +1,4 @@
-.class final Lcom/android/settings/widget/J;
+.class final Lcom/android/settings_ext/widget/J;
 .super Ljava/lang/Object;
 .source "SwitchBar.java"
 
@@ -19,12 +19,12 @@
 
 
 # virtual methods
-.method public cS(I)[Lcom/android/settings/widget/SwitchBar$SavedState;
+.method public cS(I)[Lcom/android/settings_ext/widget/SwitchBar$SavedState;
     .locals 1
 
     .prologue
     .line 224
-    new-array v0, p1, [Lcom/android/settings/widget/SwitchBar$SavedState;
+    new-array v0, p1, [Lcom/android/settings_ext/widget/SwitchBar$SavedState;
 
     return-object v0
 .end method
@@ -34,7 +34,7 @@
 
     .prologue
     .line 218
-    invoke-virtual {p0, p1}, Lcom/android/settings/widget/J;->q(Landroid/os/Parcel;)Lcom/android/settings/widget/SwitchBar$SavedState;
+    invoke-virtual {p0, p1}, Lcom/android/settings_ext/widget/J;->q(Landroid/os/Parcel;)Lcom/android/settings_ext/widget/SwitchBar$SavedState;
 
     move-result-object v0
 
@@ -46,23 +46,23 @@
 
     .prologue
     .line 218
-    invoke-virtual {p0, p1}, Lcom/android/settings/widget/J;->cS(I)[Lcom/android/settings/widget/SwitchBar$SavedState;
+    invoke-virtual {p0, p1}, Lcom/android/settings_ext/widget/J;->cS(I)[Lcom/android/settings_ext/widget/SwitchBar$SavedState;
 
     move-result-object v0
 
     return-object v0
 .end method
 
-.method public q(Landroid/os/Parcel;)Lcom/android/settings/widget/SwitchBar$SavedState;
+.method public q(Landroid/os/Parcel;)Lcom/android/settings_ext/widget/SwitchBar$SavedState;
     .locals 2
 
     .prologue
     .line 220
-    new-instance v0, Lcom/android/settings/widget/SwitchBar$SavedState;
+    new-instance v0, Lcom/android/settings_ext/widget/SwitchBar$SavedState;
 
     const/4 v1, 0x0
 
-    invoke-direct {v0, p1, v1}, Lcom/android/settings/widget/SwitchBar$SavedState;-><init>(Landroid/os/Parcel;Lcom/android/settings/widget/H;)V
+    invoke-direct {v0, p1, v1}, Lcom/android/settings_ext/widget/SwitchBar$SavedState;-><init>(Landroid/os/Parcel;Lcom/android/settings_ext/widget/H;)V
 
     return-object v0
 .end method

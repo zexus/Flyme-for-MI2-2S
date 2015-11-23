@@ -1,4 +1,4 @@
-.class public interface abstract Lcom/android/settings/notification/DropDownPreference$Callback;
+.class public interface abstract Lcom/android/settings_ext/notification/DropDownPreference$Callback;
 .super Ljava/lang/Object;
 .source "DropDownPreference.java"
 

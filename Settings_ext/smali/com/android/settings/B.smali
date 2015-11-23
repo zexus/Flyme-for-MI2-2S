@@ -1,4 +1,4 @@
-.class Lcom/android/settings/B;
+.class Lcom/android/settings_ext/B;
 .super Landroid/os/HandlerThread;
 .source "ApkIconLoader.java"
 
@@ -9,16 +9,16 @@
 # instance fields
 .field private aq:Landroid/os/Handler;
 
-.field final synthetic ar:Lcom/android/settings/w;
+.field final synthetic ar:Lcom/android/settings_ext/w;
 
 
 # direct methods
-.method public constructor <init>(Lcom/android/settings/w;)V
+.method public constructor <init>(Lcom/android/settings_ext/w;)V
     .locals 1
 
     .prologue
     .line 318
-    iput-object p1, p0, Lcom/android/settings/B;->ar:Lcom/android/settings/w;
+    iput-object p1, p0, Lcom/android/settings_ext/B;->ar:Lcom/android/settings_ext/w;
 
     .line 319
     const-string v0, "FileIconLoader"
@@ -83,9 +83,9 @@
     const/4 v5, 0x1
 
     .line 337
-    iget-object v0, p0, Lcom/android/settings/B;->ar:Lcom/android/settings/w;
+    iget-object v0, p0, Lcom/android/settings_ext/B;->ar:Lcom/android/settings_ext/w;
 
-    invoke-static {v0}, Lcom/android/settings/w;->a(Lcom/android/settings/w;)Ljava/util/concurrent/ConcurrentHashMap;
+    invoke-static {v0}, Lcom/android/settings_ext/w;->a(Lcom/android/settings_ext/w;)Ljava/util/concurrent/ConcurrentHashMap;
 
     move-result-object v0
 
@@ -111,56 +111,56 @@
 
     move-result-object v0
 
-    check-cast v0, Lcom/android/settings/z;
+    check-cast v0, Lcom/android/settings_ext/z;
 
     .line 340
-    invoke-static {}, Lcom/android/settings/w;->A()Ljava/util/concurrent/ConcurrentHashMap;
+    invoke-static {}, Lcom/android/settings_ext/w;->A()Ljava/util/concurrent/ConcurrentHashMap;
 
     move-result-object v1
 
-    iget-object v3, v0, Lcom/android/settings/z;->mPkgName:Ljava/lang/String;
+    iget-object v3, v0, Lcom/android/settings_ext/z;->mPkgName:Ljava/lang/String;
 
     invoke-virtual {v1, v3}, Ljava/util/concurrent/ConcurrentHashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v1
 
-    check-cast v1, Lcom/android/settings/A;
+    check-cast v1, Lcom/android/settings_ext/A;
 
     .line 341
     if-eqz v1, :cond_0
 
-    iget v3, v1, Lcom/android/settings/A;->state:I
+    iget v3, v1, Lcom/android/settings_ext/A;->state:I
 
     if-nez v3, :cond_0
 
     .line 343
-    iput v5, v1, Lcom/android/settings/A;->state:I
+    iput v5, v1, Lcom/android/settings_ext/A;->state:I
 
     .line 345
-    iget-object v3, p0, Lcom/android/settings/B;->ar:Lcom/android/settings/w;
+    iget-object v3, p0, Lcom/android/settings_ext/B;->ar:Lcom/android/settings_ext/w;
 
-    invoke-static {v3}, Lcom/android/settings/w;->b(Lcom/android/settings/w;)Landroid/content/Context;
+    invoke-static {v3}, Lcom/android/settings_ext/w;->b(Lcom/android/settings_ext/w;)Landroid/content/Context;
 
     move-result-object v3
 
-    iget-object v4, v0, Lcom/android/settings/z;->mPkgName:Ljava/lang/String;
+    iget-object v4, v0, Lcom/android/settings_ext/z;->mPkgName:Ljava/lang/String;
 
-    invoke-direct {p0, v3, v4}, Lcom/android/settings/B;->a(Landroid/content/Context;Ljava/lang/String;)Landroid/graphics/drawable/Drawable;
+    invoke-direct {p0, v3, v4}, Lcom/android/settings_ext/B;->a(Landroid/content/Context;Ljava/lang/String;)Landroid/graphics/drawable/Drawable;
 
     move-result-object v3
 
     .line 346
-    invoke-virtual {v1, v3}, Lcom/android/settings/A;->a(Ljava/lang/Object;)V
+    invoke-virtual {v1, v3}, Lcom/android/settings_ext/A;->a(Ljava/lang/Object;)V
 
     .line 348
-    iput v6, v1, Lcom/android/settings/A;->state:I
+    iput v6, v1, Lcom/android/settings_ext/A;->state:I
 
     .line 349
-    invoke-static {}, Lcom/android/settings/w;->A()Ljava/util/concurrent/ConcurrentHashMap;
+    invoke-static {}, Lcom/android/settings_ext/w;->A()Ljava/util/concurrent/ConcurrentHashMap;
 
     move-result-object v3
 
-    iget-object v0, v0, Lcom/android/settings/z;->mPkgName:Ljava/lang/String;
+    iget-object v0, v0, Lcom/android/settings_ext/z;->mPkgName:Ljava/lang/String;
 
     invoke-virtual {v3, v0, v1}, Ljava/util/concurrent/ConcurrentHashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -168,9 +168,9 @@
 
     .line 353
     :cond_1
-    iget-object v0, p0, Lcom/android/settings/B;->ar:Lcom/android/settings/w;
+    iget-object v0, p0, Lcom/android/settings_ext/B;->ar:Lcom/android/settings_ext/w;
 
-    invoke-static {v0}, Lcom/android/settings/w;->c(Lcom/android/settings/w;)Landroid/os/Handler;
+    invoke-static {v0}, Lcom/android/settings_ext/w;->c(Lcom/android/settings_ext/w;)Landroid/os/Handler;
 
     move-result-object v0
 
@@ -185,24 +185,24 @@
 
     .prologue
     .line 326
-    iget-object v0, p0, Lcom/android/settings/B;->aq:Landroid/os/Handler;
+    iget-object v0, p0, Lcom/android/settings_ext/B;->aq:Landroid/os/Handler;
 
     if-nez v0, :cond_0
 
     .line 327
     new-instance v0, Landroid/os/Handler;
 
-    invoke-virtual {p0}, Lcom/android/settings/B;->getLooper()Landroid/os/Looper;
+    invoke-virtual {p0}, Lcom/android/settings_ext/B;->getLooper()Landroid/os/Looper;
 
     move-result-object v1
 
     invoke-direct {v0, v1, p0}, Landroid/os/Handler;-><init>(Landroid/os/Looper;Landroid/os/Handler$Callback;)V
 
-    iput-object v0, p0, Lcom/android/settings/B;->aq:Landroid/os/Handler;
+    iput-object v0, p0, Lcom/android/settings_ext/B;->aq:Landroid/os/Handler;
 
     .line 329
     :cond_0
-    iget-object v0, p0, Lcom/android/settings/B;->aq:Landroid/os/Handler;
+    iget-object v0, p0, Lcom/android/settings_ext/B;->aq:Landroid/os/Handler;
 
     const/4 v1, 0x0
 

@@ -1,4 +1,4 @@
-.class public Lcom/android/settings/fb;
+.class public Lcom/android/settings_ext/fb;
 .super Ljava/lang/Object;
 .source "NsdEnabler.java"
 
@@ -33,12 +33,12 @@
     move-result v0
 
     .line 70
-    iget-object v1, p0, Lcom/android/settings/fb;->tz:Landroid/preference/CheckBoxPreference;
+    iget-object v1, p0, Lcom/android/settings_ext/fb;->tz:Landroid/preference/CheckBoxPreference;
 
     invoke-virtual {v1, v2}, Landroid/preference/CheckBoxPreference;->setEnabled(Z)V
 
     .line 71
-    iget-object v1, p0, Lcom/android/settings/fb;->tA:Landroid/net/nsd/NsdManager;
+    iget-object v1, p0, Lcom/android/settings_ext/fb;->tA:Landroid/net/nsd/NsdManager;
 
     invoke-virtual {v1, v0}, Landroid/net/nsd/NsdManager;->setEnabled(Z)V
 
@@ -51,14 +51,14 @@
 
     .prologue
     .line 63
-    iget-object v0, p0, Lcom/android/settings/fb;->mContext:Landroid/content/Context;
+    iget-object v0, p0, Lcom/android/settings_ext/fb;->mContext:Landroid/content/Context;
 
-    iget-object v1, p0, Lcom/android/settings/fb;->mReceiver:Landroid/content/BroadcastReceiver;
+    iget-object v1, p0, Lcom/android/settings_ext/fb;->mReceiver:Landroid/content/BroadcastReceiver;
 
     invoke-virtual {v0, v1}, Landroid/content/Context;->unregisterReceiver(Landroid/content/BroadcastReceiver;)V
 
     .line 64
-    iget-object v0, p0, Lcom/android/settings/fb;->tz:Landroid/preference/CheckBoxPreference;
+    iget-object v0, p0, Lcom/android/settings_ext/fb;->tz:Landroid/preference/CheckBoxPreference;
 
     const/4 v1, 0x0
 
@@ -73,16 +73,16 @@
 
     .prologue
     .line 58
-    iget-object v0, p0, Lcom/android/settings/fb;->mContext:Landroid/content/Context;
+    iget-object v0, p0, Lcom/android/settings_ext/fb;->mContext:Landroid/content/Context;
 
-    iget-object v1, p0, Lcom/android/settings/fb;->mReceiver:Landroid/content/BroadcastReceiver;
+    iget-object v1, p0, Lcom/android/settings_ext/fb;->mReceiver:Landroid/content/BroadcastReceiver;
 
-    iget-object v2, p0, Lcom/android/settings/fb;->mIntentFilter:Landroid/content/IntentFilter;
+    iget-object v2, p0, Lcom/android/settings_ext/fb;->mIntentFilter:Landroid/content/IntentFilter;
 
     invoke-virtual {v0, v1, v2}, Landroid/content/Context;->registerReceiver(Landroid/content/BroadcastReceiver;Landroid/content/IntentFilter;)Landroid/content/Intent;
 
     .line 59
-    iget-object v0, p0, Lcom/android/settings/fb;->tz:Landroid/preference/CheckBoxPreference;
+    iget-object v0, p0, Lcom/android/settings_ext/fb;->tz:Landroid/preference/CheckBoxPreference;
 
     invoke-virtual {v0, p0}, Landroid/preference/CheckBoxPreference;->setOnPreferenceChangeListener(Landroid/preference/Preference$OnPreferenceChangeListener;)V
 

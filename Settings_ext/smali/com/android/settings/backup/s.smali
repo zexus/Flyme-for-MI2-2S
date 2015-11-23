@@ -1,15 +1,15 @@
-.class public final Lcom/android/settings/backup/s;
+.class public final Lcom/android/settings_ext/backup/s;
 .super Lcom/google/protobuf/GeneratedMessageLite$Builder;
 .source "SyncRootProtos.java"
 
 # interfaces
-.implements Lcom/android/settings/backup/t;
+.implements Lcom/android/settings_ext/backup/t;
 
 
 # instance fields
 .field private bitField0_:I
 
-.field private setting_:Lcom/android/settings/backup/SettingProtos$Settings;
+.field private setting_:Lcom/android/settings_ext/backup/SettingProtos$Settings;
 
 
 # direct methods
@@ -21,25 +21,25 @@
     invoke-direct {p0}, Lcom/google/protobuf/GeneratedMessageLite$Builder;-><init>()V
 
     .line 267
-    invoke-static {}, Lcom/android/settings/backup/SettingProtos$Settings;->kL()Lcom/android/settings/backup/SettingProtos$Settings;
+    invoke-static {}, Lcom/android/settings_ext/backup/SettingProtos$Settings;->kL()Lcom/android/settings_ext/backup/SettingProtos$Settings;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/backup/s;->setting_:Lcom/android/settings/backup/SettingProtos$Settings;
+    iput-object v0, p0, Lcom/android/settings_ext/backup/s;->setting_:Lcom/android/settings_ext/backup/SettingProtos$Settings;
 
     .line 168
-    invoke-direct {p0}, Lcom/android/settings/backup/s;->ks()V
+    invoke-direct {p0}, Lcom/android/settings_ext/backup/s;->ks()V
 
     .line 169
     return-void
 .end method
 
-.method static synthetic a(Lcom/android/settings/backup/s;)Lcom/android/settings/backup/SyncRootProtos$SyncRoot;
+.method static synthetic a(Lcom/android/settings_ext/backup/s;)Lcom/android/settings_ext/backup/SyncRootProtos$SyncRoot;
     .locals 1
 
     .prologue
     .line 162
-    invoke-direct {p0}, Lcom/android/settings/backup/s;->lz()Lcom/android/settings/backup/SyncRootProtos$SyncRoot;
+    invoke-direct {p0}, Lcom/android/settings_ext/backup/s;->lz()Lcom/android/settings_ext/backup/SyncRootProtos$SyncRoot;
 
     move-result-object v0
 
@@ -54,48 +54,48 @@
     return-void
 .end method
 
-.method static synthetic lB()Lcom/android/settings/backup/s;
+.method static synthetic lB()Lcom/android/settings_ext/backup/s;
     .locals 1
 
     .prologue
     .line 162
-    invoke-static {}, Lcom/android/settings/backup/s;->lv()Lcom/android/settings/backup/s;
+    invoke-static {}, Lcom/android/settings_ext/backup/s;->lv()Lcom/android/settings_ext/backup/s;
 
     move-result-object v0
 
     return-object v0
 .end method
 
-.method private static lv()Lcom/android/settings/backup/s;
+.method private static lv()Lcom/android/settings_ext/backup/s;
     .locals 1
 
     .prologue
     .line 174
-    new-instance v0, Lcom/android/settings/backup/s;
+    new-instance v0, Lcom/android/settings_ext/backup/s;
 
-    invoke-direct {v0}, Lcom/android/settings/backup/s;-><init>()V
+    invoke-direct {v0}, Lcom/android/settings_ext/backup/s;-><init>()V
 
     return-object v0
 .end method
 
-.method private lz()Lcom/android/settings/backup/SyncRootProtos$SyncRoot;
+.method private lz()Lcom/android/settings_ext/backup/SyncRootProtos$SyncRoot;
     .locals 2
 
     .prologue
     .line 202
-    invoke-virtual {p0}, Lcom/android/settings/backup/s;->lA()Lcom/android/settings/backup/SyncRootProtos$SyncRoot;
+    invoke-virtual {p0}, Lcom/android/settings_ext/backup/s;->lA()Lcom/android/settings_ext/backup/SyncRootProtos$SyncRoot;
 
     move-result-object v0
 
     .line 203
-    invoke-virtual {v0}, Lcom/android/settings/backup/SyncRootProtos$SyncRoot;->isInitialized()Z
+    invoke-virtual {v0}, Lcom/android/settings_ext/backup/SyncRootProtos$SyncRoot;->isInitialized()Z
 
     move-result v1
 
     if-nez v1, :cond_0
 
     .line 204
-    invoke-static {v0}, Lcom/android/settings/backup/s;->newUninitializedMessageException(Lcom/google/protobuf/MessageLite;)Lcom/google/protobuf/UninitializedMessageException;
+    invoke-static {v0}, Lcom/android/settings_ext/backup/s;->newUninitializedMessageException(Lcom/google/protobuf/MessageLite;)Lcom/google/protobuf/UninitializedMessageException;
 
     move-result-object v0
 
@@ -112,12 +112,12 @@
 
 
 # virtual methods
-.method public b(Lcom/android/settings/backup/SyncRootProtos$SyncRoot;)Lcom/android/settings/backup/s;
+.method public b(Lcom/android/settings_ext/backup/SyncRootProtos$SyncRoot;)Lcom/android/settings_ext/backup/s;
     .locals 1
 
     .prologue
     .line 223
-    invoke-static {}, Lcom/android/settings/backup/SyncRootProtos$SyncRoot;->lo()Lcom/android/settings/backup/SyncRootProtos$SyncRoot;
+    invoke-static {}, Lcom/android/settings_ext/backup/SyncRootProtos$SyncRoot;->lo()Lcom/android/settings_ext/backup/SyncRootProtos$SyncRoot;
 
     move-result-object v0
 
@@ -130,18 +130,18 @@
 
     .line 224
     :cond_1
-    invoke-virtual {p1}, Lcom/android/settings/backup/SyncRootProtos$SyncRoot;->lq()Z
+    invoke-virtual {p1}, Lcom/android/settings_ext/backup/SyncRootProtos$SyncRoot;->lq()Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
     .line 225
-    invoke-virtual {p1}, Lcom/android/settings/backup/SyncRootProtos$SyncRoot;->lr()Lcom/android/settings/backup/SettingProtos$Settings;
+    invoke-virtual {p1}, Lcom/android/settings_ext/backup/SyncRootProtos$SyncRoot;->lr()Lcom/android/settings_ext/backup/SettingProtos$Settings;
 
     move-result-object v0
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/backup/s;->g(Lcom/android/settings/backup/SettingProtos$Settings;)Lcom/android/settings/backup/s;
+    invoke-virtual {p0, v0}, Lcom/android/settings_ext/backup/s;->g(Lcom/android/settings_ext/backup/SettingProtos$Settings;)Lcom/android/settings_ext/backup/s;
 
     goto :goto_0
 .end method
@@ -151,7 +151,7 @@
 
     .prologue
     .line 162
-    invoke-virtual {p0}, Lcom/android/settings/backup/s;->ly()Lcom/android/settings/backup/SyncRootProtos$SyncRoot;
+    invoke-virtual {p0}, Lcom/android/settings_ext/backup/s;->ly()Lcom/android/settings_ext/backup/SyncRootProtos$SyncRoot;
 
     move-result-object v0
 
@@ -163,7 +163,7 @@
 
     .prologue
     .line 162
-    invoke-virtual {p0}, Lcom/android/settings/backup/s;->lA()Lcom/android/settings/backup/SyncRootProtos$SyncRoot;
+    invoke-virtual {p0}, Lcom/android/settings_ext/backup/s;->lA()Lcom/android/settings_ext/backup/SyncRootProtos$SyncRoot;
 
     move-result-object v0
 
@@ -175,7 +175,7 @@
 
     .prologue
     .line 162
-    invoke-virtual {p0}, Lcom/android/settings/backup/s;->lw()Lcom/android/settings/backup/s;
+    invoke-virtual {p0}, Lcom/android/settings_ext/backup/s;->lw()Lcom/android/settings_ext/backup/s;
 
     move-result-object v0
 
@@ -187,7 +187,7 @@
 
     .prologue
     .line 162
-    invoke-virtual {p0}, Lcom/android/settings/backup/s;->lw()Lcom/android/settings/backup/s;
+    invoke-virtual {p0}, Lcom/android/settings_ext/backup/s;->lw()Lcom/android/settings_ext/backup/s;
 
     move-result-object v0
 
@@ -199,7 +199,7 @@
 
     .prologue
     .line 162
-    invoke-virtual {p0}, Lcom/android/settings/backup/s;->lx()Lcom/android/settings/backup/s;
+    invoke-virtual {p0}, Lcom/android/settings_ext/backup/s;->lx()Lcom/android/settings_ext/backup/s;
 
     move-result-object v0
 
@@ -211,7 +211,7 @@
 
     .prologue
     .line 162
-    invoke-virtual {p0}, Lcom/android/settings/backup/s;->lx()Lcom/android/settings/backup/s;
+    invoke-virtual {p0}, Lcom/android/settings_ext/backup/s;->lx()Lcom/android/settings_ext/backup/s;
 
     move-result-object v0
 
@@ -223,7 +223,7 @@
 
     .prologue
     .line 162
-    invoke-virtual {p0}, Lcom/android/settings/backup/s;->lx()Lcom/android/settings/backup/s;
+    invoke-virtual {p0}, Lcom/android/settings_ext/backup/s;->lx()Lcom/android/settings_ext/backup/s;
 
     move-result-object v0
 
@@ -235,14 +235,14 @@
 
     .prologue
     .line 162
-    invoke-virtual {p0}, Lcom/android/settings/backup/s;->lx()Lcom/android/settings/backup/s;
+    invoke-virtual {p0}, Lcom/android/settings_ext/backup/s;->lx()Lcom/android/settings_ext/backup/s;
 
     move-result-object v0
 
     return-object v0
 .end method
 
-.method public e(Lcom/google/protobuf/CodedInputStream;Lcom/google/protobuf/ExtensionRegistryLite;)Lcom/android/settings/backup/s;
+.method public e(Lcom/google/protobuf/CodedInputStream;Lcom/google/protobuf/ExtensionRegistryLite;)Lcom/android/settings_ext/backup/s;
     .locals 2
 
     .prologue
@@ -257,7 +257,7 @@
     sparse-switch v0, :sswitch_data_0
 
     .line 245
-    invoke-virtual {p0, p1, p2, v0}, Lcom/android/settings/backup/s;->parseUnknownField(Lcom/google/protobuf/CodedInputStream;Lcom/google/protobuf/ExtensionRegistryLite;I)Z
+    invoke-virtual {p0, p1, p2, v0}, Lcom/android/settings_ext/backup/s;->parseUnknownField(Lcom/google/protobuf/CodedInputStream;Lcom/google/protobuf/ExtensionRegistryLite;I)Z
 
     move-result v0
 
@@ -269,34 +269,34 @@
 
     .line 252
     :sswitch_1
-    invoke-static {}, Lcom/android/settings/backup/SettingProtos$Settings;->kQ()Lcom/android/settings/backup/n;
+    invoke-static {}, Lcom/android/settings_ext/backup/SettingProtos$Settings;->kQ()Lcom/android/settings_ext/backup/n;
 
     move-result-object v0
 
     .line 253
-    invoke-virtual {p0}, Lcom/android/settings/backup/s;->lq()Z
+    invoke-virtual {p0}, Lcom/android/settings_ext/backup/s;->lq()Z
 
     move-result v1
 
     if-eqz v1, :cond_1
 
     .line 254
-    invoke-virtual {p0}, Lcom/android/settings/backup/s;->lr()Lcom/android/settings/backup/SettingProtos$Settings;
+    invoke-virtual {p0}, Lcom/android/settings_ext/backup/s;->lr()Lcom/android/settings_ext/backup/SettingProtos$Settings;
 
     move-result-object v1
 
-    invoke-virtual {v0, v1}, Lcom/android/settings/backup/n;->e(Lcom/android/settings/backup/SettingProtos$Settings;)Lcom/android/settings/backup/n;
+    invoke-virtual {v0, v1}, Lcom/android/settings_ext/backup/n;->e(Lcom/android/settings_ext/backup/SettingProtos$Settings;)Lcom/android/settings_ext/backup/n;
 
     .line 256
     :cond_1
     invoke-virtual {p1, v0, p2}, Lcom/google/protobuf/CodedInputStream;->readMessage(Lcom/google/protobuf/MessageLite$Builder;Lcom/google/protobuf/ExtensionRegistryLite;)V
 
     .line 257
-    invoke-virtual {v0}, Lcom/android/settings/backup/n;->kX()Lcom/android/settings/backup/SettingProtos$Settings;
+    invoke-virtual {v0}, Lcom/android/settings_ext/backup/n;->kX()Lcom/android/settings_ext/backup/SettingProtos$Settings;
 
     move-result-object v0
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/backup/s;->f(Lcom/android/settings/backup/SettingProtos$Settings;)Lcom/android/settings/backup/s;
+    invoke-virtual {p0, v0}, Lcom/android/settings_ext/backup/s;->f(Lcom/android/settings_ext/backup/SettingProtos$Settings;)Lcom/android/settings_ext/backup/s;
 
     goto :goto_0
 
@@ -308,7 +308,7 @@
     .end sparse-switch
 .end method
 
-.method public f(Lcom/android/settings/backup/SettingProtos$Settings;)Lcom/android/settings/backup/s;
+.method public f(Lcom/android/settings_ext/backup/SettingProtos$Settings;)Lcom/android/settings_ext/backup/s;
     .locals 1
 
     .prologue
@@ -324,25 +324,25 @@
 
     .line 278
     :cond_0
-    iput-object p1, p0, Lcom/android/settings/backup/s;->setting_:Lcom/android/settings/backup/SettingProtos$Settings;
+    iput-object p1, p0, Lcom/android/settings_ext/backup/s;->setting_:Lcom/android/settings_ext/backup/SettingProtos$Settings;
 
     .line 280
-    iget v0, p0, Lcom/android/settings/backup/s;->bitField0_:I
+    iget v0, p0, Lcom/android/settings_ext/backup/s;->bitField0_:I
 
     or-int/lit8 v0, v0, 0x1
 
-    iput v0, p0, Lcom/android/settings/backup/s;->bitField0_:I
+    iput v0, p0, Lcom/android/settings_ext/backup/s;->bitField0_:I
 
     .line 281
     return-object p0
 .end method
 
-.method public g(Lcom/android/settings/backup/SettingProtos$Settings;)Lcom/android/settings/backup/s;
+.method public g(Lcom/android/settings_ext/backup/SettingProtos$Settings;)Lcom/android/settings_ext/backup/s;
     .locals 2
 
     .prologue
     .line 291
-    iget v0, p0, Lcom/android/settings/backup/s;->bitField0_:I
+    iget v0, p0, Lcom/android/settings_ext/backup/s;->bitField0_:I
 
     and-int/lit8 v0, v0, 0x1
 
@@ -350,45 +350,45 @@
 
     if-ne v0, v1, :cond_0
 
-    iget-object v0, p0, Lcom/android/settings/backup/s;->setting_:Lcom/android/settings/backup/SettingProtos$Settings;
+    iget-object v0, p0, Lcom/android/settings_ext/backup/s;->setting_:Lcom/android/settings_ext/backup/SettingProtos$Settings;
 
-    invoke-static {}, Lcom/android/settings/backup/SettingProtos$Settings;->kL()Lcom/android/settings/backup/SettingProtos$Settings;
+    invoke-static {}, Lcom/android/settings_ext/backup/SettingProtos$Settings;->kL()Lcom/android/settings_ext/backup/SettingProtos$Settings;
 
     move-result-object v1
 
     if-eq v0, v1, :cond_0
 
     .line 293
-    iget-object v0, p0, Lcom/android/settings/backup/s;->setting_:Lcom/android/settings/backup/SettingProtos$Settings;
+    iget-object v0, p0, Lcom/android/settings_ext/backup/s;->setting_:Lcom/android/settings_ext/backup/SettingProtos$Settings;
 
-    invoke-static {v0}, Lcom/android/settings/backup/SettingProtos$Settings;->a(Lcom/android/settings/backup/SettingProtos$Settings;)Lcom/android/settings/backup/n;
-
-    move-result-object v0
-
-    invoke-virtual {v0, p1}, Lcom/android/settings/backup/n;->e(Lcom/android/settings/backup/SettingProtos$Settings;)Lcom/android/settings/backup/n;
+    invoke-static {v0}, Lcom/android/settings_ext/backup/SettingProtos$Settings;->a(Lcom/android/settings_ext/backup/SettingProtos$Settings;)Lcom/android/settings_ext/backup/n;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/android/settings/backup/n;->kX()Lcom/android/settings/backup/SettingProtos$Settings;
+    invoke-virtual {v0, p1}, Lcom/android/settings_ext/backup/n;->e(Lcom/android/settings_ext/backup/SettingProtos$Settings;)Lcom/android/settings_ext/backup/n;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/backup/s;->setting_:Lcom/android/settings/backup/SettingProtos$Settings;
+    invoke-virtual {v0}, Lcom/android/settings_ext/backup/n;->kX()Lcom/android/settings_ext/backup/SettingProtos$Settings;
+
+    move-result-object v0
+
+    iput-object v0, p0, Lcom/android/settings_ext/backup/s;->setting_:Lcom/android/settings_ext/backup/SettingProtos$Settings;
 
     .line 299
     :goto_0
-    iget v0, p0, Lcom/android/settings/backup/s;->bitField0_:I
+    iget v0, p0, Lcom/android/settings_ext/backup/s;->bitField0_:I
 
     or-int/lit8 v0, v0, 0x1
 
-    iput v0, p0, Lcom/android/settings/backup/s;->bitField0_:I
+    iput v0, p0, Lcom/android/settings_ext/backup/s;->bitField0_:I
 
     .line 300
     return-object p0
 
     .line 296
     :cond_0
-    iput-object p1, p0, Lcom/android/settings/backup/s;->setting_:Lcom/android/settings/backup/SettingProtos$Settings;
+    iput-object p1, p0, Lcom/android/settings_ext/backup/s;->setting_:Lcom/android/settings_ext/backup/SettingProtos$Settings;
 
     goto :goto_0
 .end method
@@ -398,7 +398,7 @@
 
     .prologue
     .line 162
-    invoke-virtual {p0}, Lcom/android/settings/backup/s;->lp()Lcom/android/settings/backup/SyncRootProtos$SyncRoot;
+    invoke-virtual {p0}, Lcom/android/settings_ext/backup/s;->lp()Lcom/android/settings_ext/backup/SyncRootProtos$SyncRoot;
 
     move-result-object v0
 
@@ -410,7 +410,7 @@
 
     .prologue
     .line 162
-    invoke-virtual {p0}, Lcom/android/settings/backup/s;->lp()Lcom/android/settings/backup/SyncRootProtos$SyncRoot;
+    invoke-virtual {p0}, Lcom/android/settings_ext/backup/s;->lp()Lcom/android/settings_ext/backup/SyncRootProtos$SyncRoot;
 
     move-result-object v0
 
@@ -427,21 +427,21 @@
     return v0
 .end method
 
-.method public lA()Lcom/android/settings/backup/SyncRootProtos$SyncRoot;
+.method public lA()Lcom/android/settings_ext/backup/SyncRootProtos$SyncRoot;
     .locals 4
 
     .prologue
     const/4 v0, 0x1
 
     .line 211
-    new-instance v2, Lcom/android/settings/backup/SyncRootProtos$SyncRoot;
+    new-instance v2, Lcom/android/settings_ext/backup/SyncRootProtos$SyncRoot;
 
     const/4 v1, 0x0
 
-    invoke-direct {v2, p0, v1}, Lcom/android/settings/backup/SyncRootProtos$SyncRoot;-><init>(Lcom/android/settings/backup/s;Lcom/android/settings/backup/r;)V
+    invoke-direct {v2, p0, v1}, Lcom/android/settings_ext/backup/SyncRootProtos$SyncRoot;-><init>(Lcom/android/settings_ext/backup/s;Lcom/android/settings_ext/backup/r;)V
 
     .line 212
-    iget v3, p0, Lcom/android/settings/backup/s;->bitField0_:I
+    iget v3, p0, Lcom/android/settings_ext/backup/s;->bitField0_:I
 
     .line 213
     const/4 v1, 0x0
@@ -453,12 +453,12 @@
 
     .line 217
     :goto_0
-    iget-object v1, p0, Lcom/android/settings/backup/s;->setting_:Lcom/android/settings/backup/SettingProtos$Settings;
+    iget-object v1, p0, Lcom/android/settings_ext/backup/s;->setting_:Lcom/android/settings_ext/backup/SettingProtos$Settings;
 
-    invoke-static {v2, v1}, Lcom/android/settings/backup/SyncRootProtos$SyncRoot;->a(Lcom/android/settings/backup/SyncRootProtos$SyncRoot;Lcom/android/settings/backup/SettingProtos$Settings;)Lcom/android/settings/backup/SettingProtos$Settings;
+    invoke-static {v2, v1}, Lcom/android/settings_ext/backup/SyncRootProtos$SyncRoot;->a(Lcom/android/settings_ext/backup/SyncRootProtos$SyncRoot;Lcom/android/settings_ext/backup/SettingProtos$Settings;)Lcom/android/settings_ext/backup/SettingProtos$Settings;
 
     .line 218
-    invoke-static {v2, v0}, Lcom/android/settings/backup/SyncRootProtos$SyncRoot;->a(Lcom/android/settings/backup/SyncRootProtos$SyncRoot;I)I
+    invoke-static {v2, v0}, Lcom/android/settings_ext/backup/SyncRootProtos$SyncRoot;->a(Lcom/android/settings_ext/backup/SyncRootProtos$SyncRoot;I)I
 
     .line 219
     return-object v2
@@ -469,12 +469,12 @@
     goto :goto_0
 .end method
 
-.method public lp()Lcom/android/settings/backup/SyncRootProtos$SyncRoot;
+.method public lp()Lcom/android/settings_ext/backup/SyncRootProtos$SyncRoot;
     .locals 1
 
     .prologue
     .line 189
-    invoke-static {}, Lcom/android/settings/backup/SyncRootProtos$SyncRoot;->lo()Lcom/android/settings/backup/SyncRootProtos$SyncRoot;
+    invoke-static {}, Lcom/android/settings_ext/backup/SyncRootProtos$SyncRoot;->lo()Lcom/android/settings_ext/backup/SyncRootProtos$SyncRoot;
 
     move-result-object v0
 
@@ -488,7 +488,7 @@
     const/4 v0, 0x1
 
     .line 269
-    iget v1, p0, Lcom/android/settings/backup/s;->bitField0_:I
+    iget v1, p0, Lcom/android/settings_ext/backup/s;->bitField0_:I
 
     and-int/lit8 v1, v1, 0x1
 
@@ -503,17 +503,17 @@
     goto :goto_0
 .end method
 
-.method public lr()Lcom/android/settings/backup/SettingProtos$Settings;
+.method public lr()Lcom/android/settings_ext/backup/SettingProtos$Settings;
     .locals 1
 
     .prologue
     .line 272
-    iget-object v0, p0, Lcom/android/settings/backup/s;->setting_:Lcom/android/settings/backup/SettingProtos$Settings;
+    iget-object v0, p0, Lcom/android/settings_ext/backup/s;->setting_:Lcom/android/settings_ext/backup/SettingProtos$Settings;
 
     return-object v0
 .end method
 
-.method public lw()Lcom/android/settings/backup/s;
+.method public lw()Lcom/android/settings_ext/backup/s;
     .locals 1
 
     .prologue
@@ -521,61 +521,61 @@
     invoke-super {p0}, Lcom/google/protobuf/GeneratedMessageLite$Builder;->clear()Lcom/google/protobuf/GeneratedMessageLite$Builder;
 
     .line 179
-    invoke-static {}, Lcom/android/settings/backup/SettingProtos$Settings;->kL()Lcom/android/settings/backup/SettingProtos$Settings;
+    invoke-static {}, Lcom/android/settings_ext/backup/SettingProtos$Settings;->kL()Lcom/android/settings_ext/backup/SettingProtos$Settings;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/backup/s;->setting_:Lcom/android/settings/backup/SettingProtos$Settings;
+    iput-object v0, p0, Lcom/android/settings_ext/backup/s;->setting_:Lcom/android/settings_ext/backup/SettingProtos$Settings;
 
     .line 180
-    iget v0, p0, Lcom/android/settings/backup/s;->bitField0_:I
+    iget v0, p0, Lcom/android/settings_ext/backup/s;->bitField0_:I
 
     and-int/lit8 v0, v0, -0x2
 
-    iput v0, p0, Lcom/android/settings/backup/s;->bitField0_:I
+    iput v0, p0, Lcom/android/settings_ext/backup/s;->bitField0_:I
 
     .line 181
     return-object p0
 .end method
 
-.method public lx()Lcom/android/settings/backup/s;
+.method public lx()Lcom/android/settings_ext/backup/s;
     .locals 2
 
     .prologue
     .line 185
-    invoke-static {}, Lcom/android/settings/backup/s;->lv()Lcom/android/settings/backup/s;
+    invoke-static {}, Lcom/android/settings_ext/backup/s;->lv()Lcom/android/settings_ext/backup/s;
 
     move-result-object v0
 
-    invoke-virtual {p0}, Lcom/android/settings/backup/s;->lA()Lcom/android/settings/backup/SyncRootProtos$SyncRoot;
+    invoke-virtual {p0}, Lcom/android/settings_ext/backup/s;->lA()Lcom/android/settings_ext/backup/SyncRootProtos$SyncRoot;
 
     move-result-object v1
 
-    invoke-virtual {v0, v1}, Lcom/android/settings/backup/s;->b(Lcom/android/settings/backup/SyncRootProtos$SyncRoot;)Lcom/android/settings/backup/s;
+    invoke-virtual {v0, v1}, Lcom/android/settings_ext/backup/s;->b(Lcom/android/settings_ext/backup/SyncRootProtos$SyncRoot;)Lcom/android/settings_ext/backup/s;
 
     move-result-object v0
 
     return-object v0
 .end method
 
-.method public ly()Lcom/android/settings/backup/SyncRootProtos$SyncRoot;
+.method public ly()Lcom/android/settings_ext/backup/SyncRootProtos$SyncRoot;
     .locals 2
 
     .prologue
     .line 193
-    invoke-virtual {p0}, Lcom/android/settings/backup/s;->lA()Lcom/android/settings/backup/SyncRootProtos$SyncRoot;
+    invoke-virtual {p0}, Lcom/android/settings_ext/backup/s;->lA()Lcom/android/settings_ext/backup/SyncRootProtos$SyncRoot;
 
     move-result-object v0
 
     .line 194
-    invoke-virtual {v0}, Lcom/android/settings/backup/SyncRootProtos$SyncRoot;->isInitialized()Z
+    invoke-virtual {v0}, Lcom/android/settings_ext/backup/SyncRootProtos$SyncRoot;->isInitialized()Z
 
     move-result v1
 
     if-nez v1, :cond_0
 
     .line 195
-    invoke-static {v0}, Lcom/android/settings/backup/s;->newUninitializedMessageException(Lcom/google/protobuf/MessageLite;)Lcom/google/protobuf/UninitializedMessageException;
+    invoke-static {v0}, Lcom/android/settings_ext/backup/s;->newUninitializedMessageException(Lcom/google/protobuf/MessageLite;)Lcom/google/protobuf/UninitializedMessageException;
 
     move-result-object v0
 
@@ -591,7 +591,7 @@
 
     .prologue
     .line 162
-    invoke-virtual {p0, p1, p2}, Lcom/android/settings/backup/s;->e(Lcom/google/protobuf/CodedInputStream;Lcom/google/protobuf/ExtensionRegistryLite;)Lcom/android/settings/backup/s;
+    invoke-virtual {p0, p1, p2}, Lcom/android/settings_ext/backup/s;->e(Lcom/google/protobuf/CodedInputStream;Lcom/google/protobuf/ExtensionRegistryLite;)Lcom/android/settings_ext/backup/s;
 
     move-result-object v0
 
@@ -603,9 +603,9 @@
 
     .prologue
     .line 162
-    check-cast p1, Lcom/android/settings/backup/SyncRootProtos$SyncRoot;
+    check-cast p1, Lcom/android/settings_ext/backup/SyncRootProtos$SyncRoot;
 
-    invoke-virtual {p0, p1}, Lcom/android/settings/backup/s;->b(Lcom/android/settings/backup/SyncRootProtos$SyncRoot;)Lcom/android/settings/backup/s;
+    invoke-virtual {p0, p1}, Lcom/android/settings_ext/backup/s;->b(Lcom/android/settings_ext/backup/SyncRootProtos$SyncRoot;)Lcom/android/settings_ext/backup/s;
 
     move-result-object v0
 
@@ -617,7 +617,7 @@
 
     .prologue
     .line 162
-    invoke-virtual {p0, p1, p2}, Lcom/android/settings/backup/s;->e(Lcom/google/protobuf/CodedInputStream;Lcom/google/protobuf/ExtensionRegistryLite;)Lcom/android/settings/backup/s;
+    invoke-virtual {p0, p1, p2}, Lcom/android/settings_ext/backup/s;->e(Lcom/google/protobuf/CodedInputStream;Lcom/google/protobuf/ExtensionRegistryLite;)Lcom/android/settings_ext/backup/s;
 
     move-result-object v0
 

@@ -1,4 +1,4 @@
-.class Lcom/android/settings/wifi/A;
+.class Lcom/android/settings_ext/wifi/A;
 .super Ljava/lang/Object;
 .source "MiuiWifiSettings.java"
 
@@ -7,16 +7,16 @@
 
 
 # instance fields
-.field final synthetic atC:Lcom/android/settings/wifi/MiuiWifiSettings;
+.field final synthetic atC:Lcom/android/settings_ext/wifi/MiuiWifiSettings;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/wifi/MiuiWifiSettings;)V
+.method constructor <init>(Lcom/android/settings_ext/wifi/MiuiWifiSettings;)V
     .locals 0
 
     .prologue
     .line 186
-    iput-object p1, p0, Lcom/android/settings/wifi/A;->atC:Lcom/android/settings/wifi/MiuiWifiSettings;
+    iput-object p1, p0, Lcom/android/settings_ext/wifi/A;->atC:Lcom/android/settings_ext/wifi/MiuiWifiSettings;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -30,9 +30,9 @@
 
     .prologue
     .line 189
-    iget-object v0, p0, Lcom/android/settings/wifi/A;->atC:Lcom/android/settings/wifi/MiuiWifiSettings;
+    iget-object v0, p0, Lcom/android/settings_ext/wifi/A;->atC:Lcom/android/settings_ext/wifi/MiuiWifiSettings;
 
-    invoke-virtual {v0}, Lcom/android/settings/wifi/MiuiWifiSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {v0}, Lcom/android/settings_ext/wifi/MiuiWifiSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
@@ -41,16 +41,16 @@
     invoke-virtual {v0, v1}, Landroid/app/Activity;->setResult(I)V
 
     .line 190
-    iget-object v0, p0, Lcom/android/settings/wifi/A;->atC:Lcom/android/settings/wifi/MiuiWifiSettings;
+    iget-object v0, p0, Lcom/android/settings_ext/wifi/A;->atC:Lcom/android/settings_ext/wifi/MiuiWifiSettings;
 
     const/4 v1, 0x0
 
-    invoke-static {v0, v1}, Lcom/android/settings/wifi/MiuiWifiSettings;->a(Lcom/android/settings/wifi/MiuiWifiSettings;Z)Z
+    invoke-static {v0, v1}, Lcom/android/settings_ext/wifi/MiuiWifiSettings;->a(Lcom/android/settings_ext/wifi/MiuiWifiSettings;Z)Z
 
     .line 191
-    iget-object v0, p0, Lcom/android/settings/wifi/A;->atC:Lcom/android/settings/wifi/MiuiWifiSettings;
+    iget-object v0, p0, Lcom/android/settings_ext/wifi/A;->atC:Lcom/android/settings_ext/wifi/MiuiWifiSettings;
 
-    invoke-virtual {v0}, Lcom/android/settings/wifi/MiuiWifiSettings;->finish()V
+    invoke-virtual {v0}, Lcom/android/settings_ext/wifi/MiuiWifiSettings;->finish()V
 
     .line 192
     return-void

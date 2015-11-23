@@ -1,4 +1,4 @@
-.class public interface abstract Lcom/android/settings/display/z;
+.class public interface abstract Lcom/android/settings_ext/display/z;
 .super Ljava/lang/Object;
 .source "PaperModePreference.java"
 

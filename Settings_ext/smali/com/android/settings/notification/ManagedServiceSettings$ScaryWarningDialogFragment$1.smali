@@ -1,4 +1,4 @@
-.class Lcom/android/settings/notification/ManagedServiceSettings$ScaryWarningDialogFragment$1;
+.class Lcom/android/settings_ext/notification/ManagedServiceSettings$ScaryWarningDialogFragment$1;
 .super Ljava/lang/Object;
 .source "ManagedServiceSettings.java"
 
@@ -7,16 +7,16 @@
 
 
 # instance fields
-.field final synthetic ael:Lcom/android/settings/notification/ManagedServiceSettings$ScaryWarningDialogFragment;
+.field final synthetic ael:Lcom/android/settings_ext/notification/ManagedServiceSettings$ScaryWarningDialogFragment;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/notification/ManagedServiceSettings$ScaryWarningDialogFragment;)V
+.method constructor <init>(Lcom/android/settings_ext/notification/ManagedServiceSettings$ScaryWarningDialogFragment;)V
     .locals 0
 
     .prologue
     .line 123
-    iput-object p1, p0, Lcom/android/settings/notification/ManagedServiceSettings$ScaryWarningDialogFragment$1;->ael:Lcom/android/settings/notification/ManagedServiceSettings$ScaryWarningDialogFragment;
+    iput-object p1, p0, Lcom/android/settings_ext/notification/ManagedServiceSettings$ScaryWarningDialogFragment$1;->ael:Lcom/android/settings_ext/notification/ManagedServiceSettings$ScaryWarningDialogFragment;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 

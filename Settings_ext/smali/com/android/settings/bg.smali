@@ -1,4 +1,4 @@
-.class Lcom/android/settings/bg;
+.class Lcom/android/settings_ext/bg;
 .super Ljava/lang/Object;
 .source "DataUsageSummary.java"
 
@@ -7,16 +7,16 @@
 
 
 # instance fields
-.field final synthetic gH:Lcom/android/settings/DataUsageSummary;
+.field final synthetic gH:Lcom/android/settings_ext/DataUsageSummary;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/DataUsageSummary;)V
+.method constructor <init>(Lcom/android/settings_ext/DataUsageSummary;)V
     .locals 0
 
     .prologue
     .line 1162
-    iput-object p1, p0, Lcom/android/settings/bg;->gH:Lcom/android/settings/DataUsageSummary;
+    iput-object p1, p0, Lcom/android/settings_ext/bg;->gH:Lcom/android/settings_ext/DataUsageSummary;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -30,9 +30,9 @@
 
     .prologue
     .line 1165
-    iget-object v0, p0, Lcom/android/settings/bg;->gH:Lcom/android/settings/DataUsageSummary;
+    iget-object v0, p0, Lcom/android/settings_ext/bg;->gH:Lcom/android/settings_ext/DataUsageSummary;
 
-    invoke-static {v0}, Lcom/android/settings/DataUsageSummary;->h(Lcom/android/settings/DataUsageSummary;)Landroid/widget/Switch;
+    invoke-static {v0}, Lcom/android/settings_ext/DataUsageSummary;->h(Lcom/android/settings_ext/DataUsageSummary;)Landroid/widget/Switch;
 
     move-result-object v0
 
@@ -49,9 +49,9 @@
     if-eqz v0, :cond_1
 
     .line 1169
-    iget-object v0, p0, Lcom/android/settings/bg;->gH:Lcom/android/settings/DataUsageSummary;
+    iget-object v0, p0, Lcom/android/settings_ext/bg;->gH:Lcom/android/settings_ext/DataUsageSummary;
 
-    invoke-static {v0}, Lcom/android/settings/DataUsageSummary$ConfirmLimitFragment;->y(Lcom/android/settings/DataUsageSummary;)V
+    invoke-static {v0}, Lcom/android/settings_ext/DataUsageSummary$ConfirmLimitFragment;->y(Lcom/android/settings_ext/DataUsageSummary;)V
 
     .line 1173
     :goto_1
@@ -65,11 +65,11 @@
 
     .line 1171
     :cond_1
-    iget-object v0, p0, Lcom/android/settings/bg;->gH:Lcom/android/settings/DataUsageSummary;
+    iget-object v0, p0, Lcom/android/settings_ext/bg;->gH:Lcom/android/settings_ext/DataUsageSummary;
 
     const-wide/16 v2, -0x1
 
-    invoke-static {v0, v2, v3}, Lcom/android/settings/DataUsageSummary;->a(Lcom/android/settings/DataUsageSummary;J)V
+    invoke-static {v0, v2, v3}, Lcom/android/settings_ext/DataUsageSummary;->a(Lcom/android/settings_ext/DataUsageSummary;J)V
 
     goto :goto_1
 .end method

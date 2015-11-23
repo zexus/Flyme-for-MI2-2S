@@ -1,5 +1,5 @@
-.class public Lcom/android/settings/Autostar/AutoMangement;
-.super Lcom/android/settings/SettingsPreferenceFragment;
+.class public Lcom/android/settings_ext/Autostar/AutoMangement;
+.super Lcom/android/settings_ext/SettingsPreferenceFragment;
 .source "AutoMangement.java"
 
 
@@ -35,21 +35,21 @@
 
     .prologue
     .line 51
-    invoke-direct {p0}, Lcom/android/settings/SettingsPreferenceFragment;-><init>()V
+    invoke-direct {p0}, Lcom/android/settings_ext/SettingsPreferenceFragment;-><init>()V
 
     .line 54
-    new-instance v0, Lcom/android/settings/Autostar/a;
+    new-instance v0, Lcom/android/settings_ext/Autostar/a;
 
-    invoke-direct {v0, p0}, Lcom/android/settings/Autostar/a;-><init>(Lcom/android/settings/Autostar/AutoMangement;)V
+    invoke-direct {v0, p0}, Lcom/android/settings_ext/Autostar/a;-><init>(Lcom/android/settings_ext/Autostar/AutoMangement;)V
 
-    iput-object v0, p0, Lcom/android/settings/Autostar/AutoMangement;->bA:Landroid/view/View$OnClickListener;
+    iput-object v0, p0, Lcom/android/settings_ext/Autostar/AutoMangement;->bA:Landroid/view/View$OnClickListener;
 
     .line 79
-    new-instance v0, Lcom/android/settings/Autostar/b;
+    new-instance v0, Lcom/android/settings_ext/Autostar/b;
 
-    invoke-direct {v0, p0}, Lcom/android/settings/Autostar/b;-><init>(Lcom/android/settings/Autostar/AutoMangement;)V
+    invoke-direct {v0, p0}, Lcom/android/settings_ext/Autostar/b;-><init>(Lcom/android/settings_ext/Autostar/AutoMangement;)V
 
-    iput-object v0, p0, Lcom/android/settings/Autostar/AutoMangement;->bB:Landroid/view/View$OnClickListener;
+    iput-object v0, p0, Lcom/android/settings_ext/Autostar/AutoMangement;->bB:Landroid/view/View$OnClickListener;
 
     .line 52
     return-void
@@ -60,12 +60,12 @@
 
     .prologue
     .line 107
-    iget-object v0, p0, Lcom/android/settings/Autostar/AutoMangement;->bv:Ljava/util/List;
+    iget-object v0, p0, Lcom/android/settings_ext/Autostar/AutoMangement;->bv:Ljava/util/List;
 
     invoke-interface {v0}, Ljava/util/List;->clear()V
 
     .line 109
-    iget-object v0, p0, Lcom/android/settings/Autostar/AutoMangement;->i:Landroid/content/pm/PackageManager;
+    iget-object v0, p0, Lcom/android/settings_ext/Autostar/AutoMangement;->i:Landroid/content/pm/PackageManager;
 
     const/16 v1, 0x2000
 
@@ -93,13 +93,13 @@
     check-cast v0, Landroid/content/pm/ApplicationInfo;
 
     .line 112
-    invoke-static {v0}, Lcom/android/settings/Autostar/AutoMangement;->b(Landroid/content/pm/ApplicationInfo;)Z
+    invoke-static {v0}, Lcom/android/settings_ext/Autostar/AutoMangement;->b(Landroid/content/pm/ApplicationInfo;)Z
 
     move-result v2
 
     if-eqz v2, :cond_0
 
-    invoke-virtual {p0}, Lcom/android/settings/Autostar/AutoMangement;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/Autostar/AutoMangement;->getActivity()Landroid/app/Activity;
 
     move-result-object v2
 
@@ -112,7 +112,7 @@
     if-nez v2, :cond_0
 
     .line 114
-    iget-object v2, p0, Lcom/android/settings/Autostar/AutoMangement;->bv:Ljava/util/List;
+    iget-object v2, p0, Lcom/android/settings_ext/Autostar/AutoMangement;->bv:Ljava/util/List;
 
     invoke-interface {v2, v0}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
@@ -123,24 +123,24 @@
     return-void
 .end method
 
-.method static synthetic a(Lcom/android/settings/Autostar/AutoMangement;Ljava/lang/String;)Ljava/lang/Object;
+.method static synthetic a(Lcom/android/settings_ext/Autostar/AutoMangement;Ljava/lang/String;)Ljava/lang/Object;
     .locals 1
 
     .prologue
     .line 33
-    invoke-virtual {p0, p1}, Lcom/android/settings/Autostar/AutoMangement;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
+    invoke-virtual {p0, p1}, Lcom/android/settings_ext/Autostar/AutoMangement;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object v0
 
     return-object v0
 .end method
 
-.method static synthetic a(Lcom/android/settings/Autostar/AutoMangement;)Ljava/util/List;
+.method static synthetic a(Lcom/android/settings_ext/Autostar/AutoMangement;)Ljava/util/List;
     .locals 1
 
     .prologue
     .line 33
-    iget-object v0, p0, Lcom/android/settings/Autostar/AutoMangement;->bv:Ljava/util/List;
+    iget-object v0, p0, Lcom/android/settings_ext/Autostar/AutoMangement;->bv:Ljava/util/List;
 
     return-object v0
 .end method
@@ -184,22 +184,22 @@
 
     .prologue
     .line 131
-    invoke-virtual {p0}, Lcom/android/settings/Autostar/AutoMangement;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/Autostar/AutoMangement;->getActivity()Landroid/app/Activity;
 
     move-result-object v2
 
     .line 132
-    iget-object v0, p0, Lcom/android/settings/Autostar/AutoMangement;->bt:Landroid/preference/PreferenceGroup;
+    iget-object v0, p0, Lcom/android/settings_ext/Autostar/AutoMangement;->bt:Landroid/preference/PreferenceGroup;
 
     invoke-virtual {v0}, Landroid/preference/PreferenceGroup;->removeAll()V
 
     .line 133
-    iget-object v0, p0, Lcom/android/settings/Autostar/AutoMangement;->bu:Ljava/util/ArrayList;
+    iget-object v0, p0, Lcom/android/settings_ext/Autostar/AutoMangement;->bu:Ljava/util/ArrayList;
 
     invoke-virtual {v0}, Ljava/util/ArrayList;->clear()V
 
     .line 134
-    invoke-direct {p0}, Lcom/android/settings/Autostar/AutoMangement;->P()V
+    invoke-direct {p0}, Lcom/android/settings_ext/Autostar/AutoMangement;->P()V
 
     .line 136
     const/4 v0, 0x0
@@ -207,7 +207,7 @@
     move v7, v0
 
     :goto_0
-    iget-object v0, p0, Lcom/android/settings/Autostar/AutoMangement;->bv:Ljava/util/List;
+    iget-object v0, p0, Lcom/android/settings_ext/Autostar/AutoMangement;->bv:Ljava/util/List;
 
     invoke-interface {v0}, Ljava/util/List;->size()I
 
@@ -216,7 +216,7 @@
     if-ge v7, v0, :cond_0
 
     .line 137
-    iget-object v0, p0, Lcom/android/settings/Autostar/AutoMangement;->bv:Ljava/util/List;
+    iget-object v0, p0, Lcom/android/settings_ext/Autostar/AutoMangement;->bv:Ljava/util/List;
 
     invoke-interface {v0, v7}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
@@ -226,7 +226,7 @@
 
     .line 139
     :try_start_0
-    invoke-virtual {p0}, Lcom/android/settings/Autostar/AutoMangement;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/Autostar/AutoMangement;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
@@ -234,35 +234,35 @@
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/android/settings/Autostar/AutoMangement;->i:Landroid/content/pm/PackageManager;
+    iget-object v1, p0, Lcom/android/settings_ext/Autostar/AutoMangement;->i:Landroid/content/pm/PackageManager;
 
     invoke-static {v0, v6, v1}, Lmiui/maml/util/AppIconsHelper;->getIconDrawable(Landroid/content/Context;Landroid/content/pm/PackageItemInfo;Landroid/content/pm/PackageManager;)Landroid/graphics/drawable/Drawable;
 
     move-result-object v3
 
     .line 141
-    iget-object v0, p0, Lcom/android/settings/Autostar/AutoMangement;->i:Landroid/content/pm/PackageManager;
+    iget-object v0, p0, Lcom/android/settings_ext/Autostar/AutoMangement;->i:Landroid/content/pm/PackageManager;
 
     invoke-virtual {v6, v0}, Landroid/content/pm/ApplicationInfo;->loadLabel(Landroid/content/pm/PackageManager;)Ljava/lang/CharSequence;
 
     move-result-object v4
 
     .line 142
-    new-instance v0, Lcom/android/settings/Autostar/c;
+    new-instance v0, Lcom/android/settings_ext/Autostar/c;
 
     move-object v1, p0
 
     move-object v5, p0
 
-    invoke-direct/range {v0 .. v6}, Lcom/android/settings/Autostar/c;-><init>(Lcom/android/settings/Autostar/AutoMangement;Landroid/content/Context;Landroid/graphics/drawable/Drawable;Ljava/lang/CharSequence;Lcom/android/settings/Autostar/AutoMangement;Landroid/content/pm/ApplicationInfo;)V
+    invoke-direct/range {v0 .. v6}, Lcom/android/settings_ext/Autostar/c;-><init>(Lcom/android/settings_ext/Autostar/AutoMangement;Landroid/content/Context;Landroid/graphics/drawable/Drawable;Ljava/lang/CharSequence;Lcom/android/settings_ext/Autostar/AutoMangement;Landroid/content/pm/ApplicationInfo;)V
 
     .line 143
-    iget-object v1, p0, Lcom/android/settings/Autostar/AutoMangement;->bu:Ljava/util/ArrayList;
+    iget-object v1, p0, Lcom/android/settings_ext/Autostar/AutoMangement;->bu:Ljava/util/ArrayList;
 
     invoke-virtual {v1, v0}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
     .line 144
-    iget-object v1, p0, Lcom/android/settings/Autostar/AutoMangement;->bt:Landroid/preference/PreferenceGroup;
+    iget-object v1, p0, Lcom/android/settings_ext/Autostar/AutoMangement;->bt:Landroid/preference/PreferenceGroup;
 
     invoke-virtual {v1, v0}, Landroid/preference/PreferenceGroup;->addPreference(Landroid/preference/Preference;)Z
     :try_end_0
@@ -300,10 +300,10 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/Autostar/AutoMangement;->mView:Landroid/view/View;
+    iput-object v0, p0, Lcom/android/settings_ext/Autostar/AutoMangement;->mView:Landroid/view/View;
 
     .line 92
-    iget-object v0, p0, Lcom/android/settings/Autostar/AutoMangement;->mView:Landroid/view/View;
+    iget-object v0, p0, Lcom/android/settings_ext/Autostar/AutoMangement;->mView:Landroid/view/View;
 
     const v1, 0x7f100033
 
@@ -314,7 +314,7 @@
     check-cast v0, Landroid/widget/Button;
 
     .line 93
-    iget-object v1, p0, Lcom/android/settings/Autostar/AutoMangement;->mView:Landroid/view/View;
+    iget-object v1, p0, Lcom/android/settings_ext/Autostar/AutoMangement;->mView:Landroid/view/View;
 
     const v2, 0x1020004
 
@@ -324,10 +324,10 @@
 
     check-cast v1, Landroid/widget/TextView;
 
-    iput-object v1, p0, Lcom/android/settings/Autostar/AutoMangement;->by:Landroid/widget/TextView;
+    iput-object v1, p0, Lcom/android/settings_ext/Autostar/AutoMangement;->by:Landroid/widget/TextView;
 
     .line 94
-    iget-object v1, p0, Lcom/android/settings/Autostar/AutoMangement;->mView:Landroid/view/View;
+    iget-object v1, p0, Lcom/android/settings_ext/Autostar/AutoMangement;->mView:Landroid/view/View;
 
     const v2, 0x7f100032
 
@@ -337,10 +337,10 @@
 
     check-cast v1, Landroid/widget/TextView;
 
-    iput-object v1, p0, Lcom/android/settings/Autostar/AutoMangement;->bx:Landroid/widget/TextView;
+    iput-object v1, p0, Lcom/android/settings_ext/Autostar/AutoMangement;->bx:Landroid/widget/TextView;
 
     .line 95
-    iget-object v1, p0, Lcom/android/settings/Autostar/AutoMangement;->mView:Landroid/view/View;
+    iget-object v1, p0, Lcom/android/settings_ext/Autostar/AutoMangement;->mView:Landroid/view/View;
 
     const v2, 0x7f100031
 
@@ -350,15 +350,15 @@
 
     check-cast v1, Landroid/widget/FrameLayout;
 
-    iput-object v1, p0, Lcom/android/settings/Autostar/AutoMangement;->bz:Landroid/widget/FrameLayout;
+    iput-object v1, p0, Lcom/android/settings_ext/Autostar/AutoMangement;->bz:Landroid/widget/FrameLayout;
 
     .line 96
-    iget-object v1, p0, Lcom/android/settings/Autostar/AutoMangement;->bB:Landroid/view/View$OnClickListener;
+    iget-object v1, p0, Lcom/android/settings_ext/Autostar/AutoMangement;->bB:Landroid/view/View$OnClickListener;
 
     invoke-virtual {v0, v1}, Landroid/widget/Button;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     .line 97
-    iget-object v0, p0, Lcom/android/settings/Autostar/AutoMangement;->mView:Landroid/view/View;
+    iget-object v0, p0, Lcom/android/settings_ext/Autostar/AutoMangement;->mView:Landroid/view/View;
 
     return-object v0
 .end method
@@ -368,10 +368,10 @@
 
     .prologue
     .line 102
-    invoke-super {p0, p1, p2, p3}, Lcom/android/settings/SettingsPreferenceFragment;->onActivityResult(IILandroid/content/Intent;)V
+    invoke-super {p0, p1, p2, p3}, Lcom/android/settings_ext/SettingsPreferenceFragment;->onActivityResult(IILandroid/content/Intent;)V
 
     .line 103
-    invoke-virtual {p0}, Lcom/android/settings/Autostar/AutoMangement;->Q()V
+    invoke-virtual {p0}, Lcom/android/settings_ext/Autostar/AutoMangement;->Q()V
 
     .line 104
     return-void
@@ -382,64 +382,64 @@
 
     .prologue
     .line 153
-    invoke-super {p0, p1}, Lcom/android/settings/SettingsPreferenceFragment;->onCreate(Landroid/os/Bundle;)V
+    invoke-super {p0, p1}, Lcom/android/settings_ext/SettingsPreferenceFragment;->onCreate(Landroid/os/Bundle;)V
 
     .line 154
     const v0, 0x7f060014
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/Autostar/AutoMangement;->addPreferencesFromResource(I)V
+    invoke-virtual {p0, v0}, Lcom/android/settings_ext/Autostar/AutoMangement;->addPreferencesFromResource(I)V
 
     .line 155
-    invoke-virtual {p0}, Lcom/android/settings/Autostar/AutoMangement;->getPackageManager()Landroid/content/pm/PackageManager;
+    invoke-virtual {p0}, Lcom/android/settings_ext/Autostar/AutoMangement;->getPackageManager()Landroid/content/pm/PackageManager;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/Autostar/AutoMangement;->i:Landroid/content/pm/PackageManager;
+    iput-object v0, p0, Lcom/android/settings_ext/Autostar/AutoMangement;->i:Landroid/content/pm/PackageManager;
 
     .line 156
-    iput-object p0, p0, Lcom/android/settings/Autostar/AutoMangement;->bw:Landroid/app/Fragment;
+    iput-object p0, p0, Lcom/android/settings_ext/Autostar/AutoMangement;->bw:Landroid/app/Fragment;
 
     .line 157
-    invoke-virtual {p0}, Lcom/android/settings/Autostar/AutoMangement;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/Autostar/AutoMangement;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/Autostar/AutoMangement;->mActivity:Landroid/app/Activity;
+    iput-object v0, p0, Lcom/android/settings_ext/Autostar/AutoMangement;->mActivity:Landroid/app/Activity;
 
     .line 158
     const-string v0, "autorun"
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/Autostar/AutoMangement;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v0}, Lcom/android/settings_ext/Autostar/AutoMangement;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v0
 
     check-cast v0, Landroid/preference/PreferenceGroup;
 
-    iput-object v0, p0, Lcom/android/settings/Autostar/AutoMangement;->bt:Landroid/preference/PreferenceGroup;
+    iput-object v0, p0, Lcom/android/settings_ext/Autostar/AutoMangement;->bt:Landroid/preference/PreferenceGroup;
 
     .line 159
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
-    iput-object v0, p0, Lcom/android/settings/Autostar/AutoMangement;->bv:Ljava/util/List;
+    iput-object v0, p0, Lcom/android/settings_ext/Autostar/AutoMangement;->bv:Ljava/util/List;
 
     .line 160
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
-    iput-object v0, p0, Lcom/android/settings/Autostar/AutoMangement;->bu:Ljava/util/ArrayList;
+    iput-object v0, p0, Lcom/android/settings_ext/Autostar/AutoMangement;->bu:Ljava/util/ArrayList;
 
     .line 161
-    invoke-virtual {p0}, Lcom/android/settings/Autostar/AutoMangement;->Q()V
+    invoke-virtual {p0}, Lcom/android/settings_ext/Autostar/AutoMangement;->Q()V
 
     .line 162
-    iget-object v0, p0, Lcom/android/settings/Autostar/AutoMangement;->bt:Landroid/preference/PreferenceGroup;
+    iget-object v0, p0, Lcom/android/settings_ext/Autostar/AutoMangement;->bt:Landroid/preference/PreferenceGroup;
 
     const v1, 0x7f090c5f
 
-    invoke-virtual {p0, v1}, Lcom/android/settings/Autostar/AutoMangement;->getString(I)Ljava/lang/String;
+    invoke-virtual {p0, v1}, Lcom/android/settings_ext/Autostar/AutoMangement;->getString(I)Ljava/lang/String;
 
     move-result-object v1
 
@@ -449,7 +449,7 @@
 
     const/4 v3, 0x0
 
-    iget-object v4, p0, Lcom/android/settings/Autostar/AutoMangement;->bv:Ljava/util/List;
+    iget-object v4, p0, Lcom/android/settings_ext/Autostar/AutoMangement;->bv:Ljava/util/List;
 
     invoke-interface {v4}, Ljava/util/List;->size()I
 
@@ -480,17 +480,17 @@
     const/4 v4, 0x0
 
     .line 168
-    invoke-super {p0}, Lcom/android/settings/SettingsPreferenceFragment;->onResume()V
+    invoke-super {p0}, Lcom/android/settings_ext/SettingsPreferenceFragment;->onResume()V
 
     .line 169
-    invoke-virtual {p0}, Lcom/android/settings/Autostar/AutoMangement;->Q()V
+    invoke-virtual {p0}, Lcom/android/settings_ext/Autostar/AutoMangement;->Q()V
 
     .line 170
-    iget-object v0, p0, Lcom/android/settings/Autostar/AutoMangement;->bx:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/android/settings_ext/Autostar/AutoMangement;->bx:Landroid/widget/TextView;
 
     const v1, 0x7f090c5f
 
-    invoke-virtual {p0, v1}, Lcom/android/settings/Autostar/AutoMangement;->getString(I)Ljava/lang/String;
+    invoke-virtual {p0, v1}, Lcom/android/settings_ext/Autostar/AutoMangement;->getString(I)Ljava/lang/String;
 
     move-result-object v1
 
@@ -498,7 +498,7 @@
 
     new-array v2, v2, [Ljava/lang/Object;
 
-    iget-object v3, p0, Lcom/android/settings/Autostar/AutoMangement;->bv:Ljava/util/List;
+    iget-object v3, p0, Lcom/android/settings_ext/Autostar/AutoMangement;->bv:Ljava/util/List;
 
     invoke-interface {v3}, Ljava/util/List;->size()I
 
@@ -517,7 +517,7 @@
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
     .line 173
-    iget-object v0, p0, Lcom/android/settings/Autostar/AutoMangement;->bv:Ljava/util/List;
+    iget-object v0, p0, Lcom/android/settings_ext/Autostar/AutoMangement;->bv:Ljava/util/List;
 
     invoke-interface {v0}, Ljava/util/List;->isEmpty()Z
 
@@ -526,12 +526,12 @@
     if-eqz v0, :cond_0
 
     .line 174
-    iget-object v0, p0, Lcom/android/settings/Autostar/AutoMangement;->bz:Landroid/widget/FrameLayout;
+    iget-object v0, p0, Lcom/android/settings_ext/Autostar/AutoMangement;->bz:Landroid/widget/FrameLayout;
 
     invoke-virtual {v0, v5}, Landroid/widget/FrameLayout;->setVisibility(I)V
 
     .line 175
-    iget-object v0, p0, Lcom/android/settings/Autostar/AutoMangement;->by:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/android/settings_ext/Autostar/AutoMangement;->by:Landroid/widget/TextView;
 
     invoke-virtual {v0, v4}, Landroid/widget/TextView;->setVisibility(I)V
 
@@ -541,12 +541,12 @@
 
     .line 178
     :cond_0
-    iget-object v0, p0, Lcom/android/settings/Autostar/AutoMangement;->bz:Landroid/widget/FrameLayout;
+    iget-object v0, p0, Lcom/android/settings_ext/Autostar/AutoMangement;->bz:Landroid/widget/FrameLayout;
 
     invoke-virtual {v0, v4}, Landroid/widget/FrameLayout;->setVisibility(I)V
 
     .line 179
-    iget-object v0, p0, Lcom/android/settings/Autostar/AutoMangement;->by:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/android/settings_ext/Autostar/AutoMangement;->by:Landroid/widget/TextView;
 
     invoke-virtual {v0, v5}, Landroid/widget/TextView;->setVisibility(I)V
 

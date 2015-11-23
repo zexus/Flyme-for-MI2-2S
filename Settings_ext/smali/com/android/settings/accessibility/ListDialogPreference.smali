@@ -1,4 +1,4 @@
-.class public abstract Lcom/android/settings/accessibility/ListDialogPreference;
+.class public abstract Lcom/android/settings_ext/accessibility/ListDialogPreference;
 .super Landroid/preference/DialogPreference;
 .source "ListDialogPreference.java"
 
@@ -8,7 +8,7 @@
 
 .field private Bb:[I
 
-.field private Bc:Lcom/android/settings/accessibility/ListDialogPreference$OnValueChangedListener;
+.field private Bc:Lcom/android/settings_ext/accessibility/ListDialogPreference$OnValueChangedListener;
 
 .field private Bd:I
 
@@ -31,46 +31,46 @@
     return-void
 .end method
 
-.method static synthetic a(Lcom/android/settings/accessibility/ListDialogPreference;Ljava/lang/Object;)Z
+.method static synthetic a(Lcom/android/settings_ext/accessibility/ListDialogPreference;Ljava/lang/Object;)Z
     .locals 1
 
     .prologue
     .line 38
-    invoke-virtual {p0, p1}, Lcom/android/settings/accessibility/ListDialogPreference;->callChangeListener(Ljava/lang/Object;)Z
+    invoke-virtual {p0, p1}, Lcom/android/settings_ext/accessibility/ListDialogPreference;->callChangeListener(Ljava/lang/Object;)Z
 
     move-result v0
 
     return v0
 .end method
 
-.method static synthetic a(Lcom/android/settings/accessibility/ListDialogPreference;)[I
+.method static synthetic a(Lcom/android/settings_ext/accessibility/ListDialogPreference;)[I
     .locals 1
 
     .prologue
     .line 38
-    iget-object v0, p0, Lcom/android/settings/accessibility/ListDialogPreference;->Bb:[I
+    iget-object v0, p0, Lcom/android/settings_ext/accessibility/ListDialogPreference;->Bb:[I
 
     return-object v0
 .end method
 
-.method static synthetic b(Lcom/android/settings/accessibility/ListDialogPreference;)I
+.method static synthetic b(Lcom/android/settings_ext/accessibility/ListDialogPreference;)I
     .locals 1
 
     .prologue
     .line 38
-    iget v0, p0, Lcom/android/settings/accessibility/ListDialogPreference;->Bd:I
+    iget v0, p0, Lcom/android/settings_ext/accessibility/ListDialogPreference;->Bd:I
 
     return v0
 .end method
 
 
 # virtual methods
-.method public a(Lcom/android/settings/accessibility/ListDialogPreference$OnValueChangedListener;)V
+.method public a(Lcom/android/settings_ext/accessibility/ListDialogPreference$OnValueChangedListener;)V
     .locals 0
 
     .prologue
     .line 66
-    iput-object p1, p0, Lcom/android/settings/accessibility/ListDialogPreference;->Bc:Lcom/android/settings/accessibility/ListDialogPreference$OnValueChangedListener;
+    iput-object p1, p0, Lcom/android/settings_ext/accessibility/ListDialogPreference;->Bc:Lcom/android/settings_ext/accessibility/ListDialogPreference$OnValueChangedListener;
 
     .line 67
     return-void
@@ -81,27 +81,27 @@
 
     .prologue
     .line 84
-    iput-object p1, p0, Lcom/android/settings/accessibility/ListDialogPreference;->Bb:[I
+    iput-object p1, p0, Lcom/android/settings_ext/accessibility/ListDialogPreference;->Bb:[I
 
     .line 86
-    iget-boolean v0, p0, Lcom/android/settings/accessibility/ListDialogPreference;->Bf:Z
+    iget-boolean v0, p0, Lcom/android/settings_ext/accessibility/ListDialogPreference;->Bf:Z
 
     if-eqz v0, :cond_0
 
-    iget v0, p0, Lcom/android/settings/accessibility/ListDialogPreference;->Be:I
+    iget v0, p0, Lcom/android/settings_ext/accessibility/ListDialogPreference;->Be:I
 
     const/4 v1, -0x1
 
     if-ne v0, v1, :cond_0
 
     .line 87
-    iget v0, p0, Lcom/android/settings/accessibility/ListDialogPreference;->mValue:I
+    iget v0, p0, Lcom/android/settings_ext/accessibility/ListDialogPreference;->mValue:I
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/accessibility/ListDialogPreference;->am(I)I
+    invoke-virtual {p0, v0}, Lcom/android/settings_ext/accessibility/ListDialogPreference;->am(I)I
 
     move-result v0
 
-    iput v0, p0, Lcom/android/settings/accessibility/ListDialogPreference;->Be:I
+    iput v0, p0, Lcom/android/settings_ext/accessibility/ListDialogPreference;->Be:I
 
     .line 89
     :cond_0
@@ -113,7 +113,7 @@
 
     .prologue
     .line 98
-    iput-object p1, p0, Lcom/android/settings/accessibility/ListDialogPreference;->Ba:[Ljava/lang/CharSequence;
+    iput-object p1, p0, Lcom/android/settings_ext/accessibility/ListDialogPreference;->Ba:[Ljava/lang/CharSequence;
 
     .line 99
     return-void
@@ -124,11 +124,11 @@
 
     .prologue
     .line 116
-    iget-object v0, p0, Lcom/android/settings/accessibility/ListDialogPreference;->Ba:[Ljava/lang/CharSequence;
+    iget-object v0, p0, Lcom/android/settings_ext/accessibility/ListDialogPreference;->Ba:[Ljava/lang/CharSequence;
 
     if-eqz v0, :cond_0
 
-    iget-object v0, p0, Lcom/android/settings/accessibility/ListDialogPreference;->Ba:[Ljava/lang/CharSequence;
+    iget-object v0, p0, Lcom/android/settings_ext/accessibility/ListDialogPreference;->Ba:[Ljava/lang/CharSequence;
 
     array-length v0, v0
 
@@ -143,7 +143,7 @@
     return-object v0
 
     :cond_1
-    iget-object v0, p0, Lcom/android/settings/accessibility/ListDialogPreference;->Ba:[Ljava/lang/CharSequence;
+    iget-object v0, p0, Lcom/android/settings_ext/accessibility/ListDialogPreference;->Ba:[Ljava/lang/CharSequence;
 
     aget-object v0, v0, p1
 
@@ -155,7 +155,7 @@
 
     .prologue
     .line 75
-    iput p1, p0, Lcom/android/settings/accessibility/ListDialogPreference;->Bd:I
+    iput p1, p0, Lcom/android/settings_ext/accessibility/ListDialogPreference;->Bd:I
 
     .line 76
     return-void
@@ -166,7 +166,7 @@
 
     .prologue
     .line 127
-    iget-object v0, p0, Lcom/android/settings/accessibility/ListDialogPreference;->Bb:[I
+    iget-object v0, p0, Lcom/android/settings_ext/accessibility/ListDialogPreference;->Bb:[I
 
     aget v0, v0, p1
 
@@ -178,7 +178,7 @@
 
     .prologue
     .line 178
-    iget-object v1, p0, Lcom/android/settings/accessibility/ListDialogPreference;->Bb:[I
+    iget-object v1, p0, Lcom/android/settings_ext/accessibility/ListDialogPreference;->Bb:[I
 
     .line 179
     if-eqz v1, :cond_1
@@ -222,14 +222,14 @@
 
     .prologue
     .line 132
-    iget v0, p0, Lcom/android/settings/accessibility/ListDialogPreference;->Be:I
+    iget v0, p0, Lcom/android/settings_ext/accessibility/ListDialogPreference;->Be:I
 
     if-ltz v0, :cond_0
 
     .line 133
-    iget v0, p0, Lcom/android/settings/accessibility/ListDialogPreference;->Be:I
+    iget v0, p0, Lcom/android/settings_ext/accessibility/ListDialogPreference;->Be:I
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/accessibility/ListDialogPreference;->aj(I)Ljava/lang/CharSequence;
+    invoke-virtual {p0, v0}, Lcom/android/settings_ext/accessibility/ListDialogPreference;->aj(I)Ljava/lang/CharSequence;
 
     move-result-object v0
 
@@ -248,7 +248,7 @@
 
     .prologue
     .line 218
-    iget v0, p0, Lcom/android/settings/accessibility/ListDialogPreference;->mValue:I
+    iget v0, p0, Lcom/android/settings_ext/accessibility/ListDialogPreference;->mValue:I
 
     return v0
 .end method
@@ -281,12 +281,12 @@
     invoke-super {p0, p1}, Landroid/preference/DialogPreference;->onPrepareDialogBuilder(Landroid/app/AlertDialog$Builder;)V
 
     .line 143
-    invoke-virtual {p0}, Lcom/android/settings/accessibility/ListDialogPreference;->getContext()Landroid/content/Context;
+    invoke-virtual {p0}, Lcom/android/settings_ext/accessibility/ListDialogPreference;->getContext()Landroid/content/Context;
 
     move-result-object v0
 
     .line 144
-    invoke-virtual {p0}, Lcom/android/settings/accessibility/ListDialogPreference;->getDialogLayoutResource()I
+    invoke-virtual {p0}, Lcom/android/settings_ext/accessibility/ListDialogPreference;->getDialogLayoutResource()I
 
     move-result v1
 
@@ -300,9 +300,9 @@
     move-result-object v1
 
     .line 146
-    new-instance v2, Lcom/android/settings/accessibility/ListDialogPreference$ListPreferenceAdapter;
+    new-instance v2, Lcom/android/settings_ext/accessibility/ListDialogPreference$ListPreferenceAdapter;
 
-    invoke-direct {v2, p0, v4}, Lcom/android/settings/accessibility/ListDialogPreference$ListPreferenceAdapter;-><init>(Lcom/android/settings/accessibility/ListDialogPreference;Lcom/android/settings/accessibility/ListDialogPreference$1;)V
+    invoke-direct {v2, p0, v4}, Lcom/android/settings_ext/accessibility/ListDialogPreference$ListPreferenceAdapter;-><init>(Lcom/android/settings_ext/accessibility/ListDialogPreference;Lcom/android/settings_ext/accessibility/ListDialogPreference$1;)V
 
     .line 147
     const v0, 0x102000a
@@ -317,16 +317,16 @@
     invoke-virtual {v0, v2}, Landroid/widget/AbsListView;->setAdapter(Landroid/widget/ListAdapter;)V
 
     .line 149
-    new-instance v2, Lcom/android/settings/accessibility/ListDialogPreference$1;
+    new-instance v2, Lcom/android/settings_ext/accessibility/ListDialogPreference$1;
 
-    invoke-direct {v2, p0}, Lcom/android/settings/accessibility/ListDialogPreference$1;-><init>(Lcom/android/settings/accessibility/ListDialogPreference;)V
+    invoke-direct {v2, p0}, Lcom/android/settings_ext/accessibility/ListDialogPreference$1;-><init>(Lcom/android/settings_ext/accessibility/ListDialogPreference;)V
 
     invoke-virtual {v0, v2}, Landroid/widget/AbsListView;->setOnItemClickListener(Landroid/widget/AdapterView$OnItemClickListener;)V
 
     .line 164
-    iget v2, p0, Lcom/android/settings/accessibility/ListDialogPreference;->mValue:I
+    iget v2, p0, Lcom/android/settings_ext/accessibility/ListDialogPreference;->mValue:I
 
-    invoke-virtual {p0, v2}, Lcom/android/settings/accessibility/ListDialogPreference;->am(I)I
+    invoke-virtual {p0, v2}, Lcom/android/settings_ext/accessibility/ListDialogPreference;->am(I)I
 
     move-result v2
 
@@ -360,7 +360,7 @@
 
     move-result-object v0
 
-    const-class v1, Lcom/android/settings/accessibility/ListDialogPreference$SavedState;
+    const-class v1, Lcom/android/settings_ext/accessibility/ListDialogPreference$SavedState;
 
     invoke-virtual {v0, v1}, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
 
@@ -378,19 +378,19 @@
 
     .line 252
     :cond_1
-    check-cast p1, Lcom/android/settings/accessibility/ListDialogPreference$SavedState;
+    check-cast p1, Lcom/android/settings_ext/accessibility/ListDialogPreference$SavedState;
 
     .line 253
-    invoke-virtual {p1}, Lcom/android/settings/accessibility/ListDialogPreference$SavedState;->getSuperState()Landroid/os/Parcelable;
+    invoke-virtual {p1}, Lcom/android/settings_ext/accessibility/ListDialogPreference$SavedState;->getSuperState()Landroid/os/Parcelable;
 
     move-result-object v0
 
     invoke-super {p0, v0}, Landroid/preference/DialogPreference;->onRestoreInstanceState(Landroid/os/Parcelable;)V
 
     .line 254
-    iget v0, p1, Lcom/android/settings/accessibility/ListDialogPreference$SavedState;->value:I
+    iget v0, p1, Lcom/android/settings_ext/accessibility/ListDialogPreference$SavedState;->value:I
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/accessibility/ListDialogPreference;->setValue(I)V
+    invoke-virtual {p0, v0}, Lcom/android/settings_ext/accessibility/ListDialogPreference;->setValue(I)V
 
     goto :goto_0
 .end method
@@ -405,7 +405,7 @@
     move-result-object v0
 
     .line 234
-    invoke-virtual {p0}, Lcom/android/settings/accessibility/ListDialogPreference;->isPersistent()Z
+    invoke-virtual {p0}, Lcom/android/settings_ext/accessibility/ListDialogPreference;->isPersistent()Z
 
     move-result v1
 
@@ -417,16 +417,16 @@
 
     .line 239
     :cond_0
-    new-instance v1, Lcom/android/settings/accessibility/ListDialogPreference$SavedState;
+    new-instance v1, Lcom/android/settings_ext/accessibility/ListDialogPreference$SavedState;
 
-    invoke-direct {v1, v0}, Lcom/android/settings/accessibility/ListDialogPreference$SavedState;-><init>(Landroid/os/Parcelable;)V
+    invoke-direct {v1, v0}, Lcom/android/settings_ext/accessibility/ListDialogPreference$SavedState;-><init>(Landroid/os/Parcelable;)V
 
     .line 240
-    invoke-virtual {p0}, Lcom/android/settings/accessibility/ListDialogPreference;->getValue()I
+    invoke-virtual {p0}, Lcom/android/settings_ext/accessibility/ListDialogPreference;->getValue()I
 
     move-result v0
 
-    iput v0, v1, Lcom/android/settings/accessibility/ListDialogPreference$SavedState;->value:I
+    iput v0, v1, Lcom/android/settings_ext/accessibility/ListDialogPreference$SavedState;->value:I
 
     move-object v0, v1
 
@@ -441,14 +441,14 @@
     .line 228
     if-eqz p1, :cond_0
 
-    iget v0, p0, Lcom/android/settings/accessibility/ListDialogPreference;->mValue:I
+    iget v0, p0, Lcom/android/settings_ext/accessibility/ListDialogPreference;->mValue:I
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/accessibility/ListDialogPreference;->getPersistedInt(I)I
+    invoke-virtual {p0, v0}, Lcom/android/settings_ext/accessibility/ListDialogPreference;->getPersistedInt(I)I
 
     move-result v0
 
     :goto_0
-    invoke-virtual {p0, v0}, Lcom/android/settings/accessibility/ListDialogPreference;->setValue(I)V
+    invoke-virtual {p0, v0}, Lcom/android/settings_ext/accessibility/ListDialogPreference;->setValue(I)V
 
     .line 229
     return-void
@@ -471,7 +471,7 @@
     const/4 v1, 0x1
 
     .line 198
-    iget v0, p0, Lcom/android/settings/accessibility/ListDialogPreference;->mValue:I
+    iget v0, p0, Lcom/android/settings_ext/accessibility/ListDialogPreference;->mValue:I
 
     if-eq v0, p1, :cond_3
 
@@ -481,50 +481,50 @@
     :goto_0
     if-nez v0, :cond_0
 
-    iget-boolean v2, p0, Lcom/android/settings/accessibility/ListDialogPreference;->Bf:Z
+    iget-boolean v2, p0, Lcom/android/settings_ext/accessibility/ListDialogPreference;->Bf:Z
 
     if-nez v2, :cond_2
 
     .line 200
     :cond_0
-    iput p1, p0, Lcom/android/settings/accessibility/ListDialogPreference;->mValue:I
+    iput p1, p0, Lcom/android/settings_ext/accessibility/ListDialogPreference;->mValue:I
 
     .line 201
-    invoke-virtual {p0, p1}, Lcom/android/settings/accessibility/ListDialogPreference;->am(I)I
+    invoke-virtual {p0, p1}, Lcom/android/settings_ext/accessibility/ListDialogPreference;->am(I)I
 
     move-result v2
 
-    iput v2, p0, Lcom/android/settings/accessibility/ListDialogPreference;->Be:I
+    iput v2, p0, Lcom/android/settings_ext/accessibility/ListDialogPreference;->Be:I
 
     .line 202
-    iput-boolean v1, p0, Lcom/android/settings/accessibility/ListDialogPreference;->Bf:Z
+    iput-boolean v1, p0, Lcom/android/settings_ext/accessibility/ListDialogPreference;->Bf:Z
 
     .line 203
-    invoke-virtual {p0, p1}, Lcom/android/settings/accessibility/ListDialogPreference;->persistInt(I)Z
+    invoke-virtual {p0, p1}, Lcom/android/settings_ext/accessibility/ListDialogPreference;->persistInt(I)Z
 
     .line 204
     if-eqz v0, :cond_1
 
     .line 205
-    invoke-virtual {p0}, Lcom/android/settings/accessibility/ListDialogPreference;->shouldDisableDependents()Z
+    invoke-virtual {p0}, Lcom/android/settings_ext/accessibility/ListDialogPreference;->shouldDisableDependents()Z
 
     move-result v0
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/accessibility/ListDialogPreference;->notifyDependencyChange(Z)V
+    invoke-virtual {p0, v0}, Lcom/android/settings_ext/accessibility/ListDialogPreference;->notifyDependencyChange(Z)V
 
     .line 206
-    invoke-virtual {p0}, Lcom/android/settings/accessibility/ListDialogPreference;->notifyChanged()V
+    invoke-virtual {p0}, Lcom/android/settings_ext/accessibility/ListDialogPreference;->notifyChanged()V
 
     .line 208
     :cond_1
-    iget-object v0, p0, Lcom/android/settings/accessibility/ListDialogPreference;->Bc:Lcom/android/settings/accessibility/ListDialogPreference$OnValueChangedListener;
+    iget-object v0, p0, Lcom/android/settings_ext/accessibility/ListDialogPreference;->Bc:Lcom/android/settings_ext/accessibility/ListDialogPreference$OnValueChangedListener;
 
     if-eqz v0, :cond_2
 
     .line 209
-    iget-object v0, p0, Lcom/android/settings/accessibility/ListDialogPreference;->Bc:Lcom/android/settings/accessibility/ListDialogPreference$OnValueChangedListener;
+    iget-object v0, p0, Lcom/android/settings_ext/accessibility/ListDialogPreference;->Bc:Lcom/android/settings_ext/accessibility/ListDialogPreference$OnValueChangedListener;
 
-    invoke-interface {v0, p0, p1}, Lcom/android/settings/accessibility/ListDialogPreference$OnValueChangedListener;->a(Lcom/android/settings/accessibility/ListDialogPreference;I)V
+    invoke-interface {v0, p0, p1}, Lcom/android/settings_ext/accessibility/ListDialogPreference$OnValueChangedListener;->a(Lcom/android/settings_ext/accessibility/ListDialogPreference;I)V
 
     .line 212
     :cond_2

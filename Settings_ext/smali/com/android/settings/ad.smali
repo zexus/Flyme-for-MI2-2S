@@ -1,4 +1,4 @@
-.class Lcom/android/settings/ad;
+.class Lcom/android/settings_ext/ad;
 .super Ljava/lang/Object;
 .source "CarrierCustomEditFragment.java"
 
@@ -9,18 +9,18 @@
 # instance fields
 .field final synthetic cs:I
 
-.field final synthetic ct:Lcom/android/settings/CarrierCustomEditFragment;
+.field final synthetic ct:Lcom/android/settings_ext/CarrierCustomEditFragment;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/CarrierCustomEditFragment;I)V
+.method constructor <init>(Lcom/android/settings_ext/CarrierCustomEditFragment;I)V
     .locals 0
 
     .prologue
     .line 77
-    iput-object p1, p0, Lcom/android/settings/ad;->ct:Lcom/android/settings/CarrierCustomEditFragment;
+    iput-object p1, p0, Lcom/android/settings_ext/ad;->ct:Lcom/android/settings_ext/CarrierCustomEditFragment;
 
-    iput p2, p0, Lcom/android/settings/ad;->cs:I
+    iput p2, p0, Lcom/android/settings_ext/ad;->cs:I
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -34,9 +34,9 @@
 
     .prologue
     .line 86
-    iget-object v0, p0, Lcom/android/settings/ad;->ct:Lcom/android/settings/CarrierCustomEditFragment;
+    iget-object v0, p0, Lcom/android/settings_ext/ad;->ct:Lcom/android/settings_ext/CarrierCustomEditFragment;
 
-    invoke-virtual {v0}, Lcom/android/settings/CarrierCustomEditFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {v0}, Lcom/android/settings_ext/CarrierCustomEditFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
@@ -54,7 +54,7 @@
 
     move-result-object v1
 
-    iget v2, p0, Lcom/android/settings/ad;->cs:I
+    iget v2, p0, Lcom/android/settings_ext/ad;->cs:I
 
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
@@ -64,13 +64,13 @@
 
     move-result-object v1
 
-    iget-object v2, p0, Lcom/android/settings/ad;->ct:Lcom/android/settings/CarrierCustomEditFragment;
+    iget-object v2, p0, Lcom/android/settings_ext/ad;->ct:Lcom/android/settings_ext/CarrierCustomEditFragment;
 
-    invoke-static {v2}, Lcom/android/settings/CarrierCustomEditFragment;->a(Lcom/android/settings/CarrierCustomEditFragment;)[Landroid/widget/EditText;
+    invoke-static {v2}, Lcom/android/settings_ext/CarrierCustomEditFragment;->a(Lcom/android/settings_ext/CarrierCustomEditFragment;)[Landroid/widget/EditText;
 
     move-result-object v2
 
-    iget v3, p0, Lcom/android/settings/ad;->cs:I
+    iget v3, p0, Lcom/android/settings_ext/ad;->cs:I
 
     aget-object v2, v2, v3
 

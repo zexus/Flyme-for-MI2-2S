@@ -1,4 +1,4 @@
-.class public Lcom/android/settings/hj;
+.class public Lcom/android/settings_ext/hj;
 .super Ljava/lang/Object;
 .source "UserSpinnerAdapter.java"
 
@@ -34,7 +34,7 @@
 
     .line 74
     :cond_0
-    iput-object p2, p0, Lcom/android/settings/hj;->zz:Ljava/util/ArrayList;
+    iput-object p2, p0, Lcom/android/settings_ext/hj;->zz:Ljava/util/ArrayList;
 
     .line 75
     const-string v0, "layout_inflater"
@@ -45,7 +45,7 @@
 
     check-cast v0, Landroid/view/LayoutInflater;
 
-    iput-object v0, p0, Lcom/android/settings/hj;->mInflater:Landroid/view/LayoutInflater;
+    iput-object v0, p0, Lcom/android/settings_ext/hj;->mInflater:Landroid/view/LayoutInflater;
 
     .line 76
     return-void
@@ -56,7 +56,7 @@
 
     .prologue
     .line 96
-    iget-object v0, p0, Lcom/android/settings/hj;->mInflater:Landroid/view/LayoutInflater;
+    iget-object v0, p0, Lcom/android/settings_ext/hj;->mInflater:Landroid/view/LayoutInflater;
 
     const v1, 0x7f040124
 
@@ -78,7 +78,7 @@
     .line 79
     if-ltz p1, :cond_0
 
-    iget-object v0, p0, Lcom/android/settings/hj;->zz:Ljava/util/ArrayList;
+    iget-object v0, p0, Lcom/android/settings_ext/hj;->zz:Ljava/util/ArrayList;
 
     invoke-virtual {v0}, Ljava/util/ArrayList;->size()I
 
@@ -95,33 +95,33 @@
     return-object v0
 
     :cond_1
-    iget-object v0, p0, Lcom/android/settings/hj;->zz:Ljava/util/ArrayList;
+    iget-object v0, p0, Lcom/android/settings_ext/hj;->zz:Ljava/util/ArrayList;
 
     invoke-virtual {v0, p1}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
 
     move-result-object v0
 
-    check-cast v0, Lcom/android/settings/hk;
+    check-cast v0, Lcom/android/settings_ext/hk;
 
-    invoke-static {v0}, Lcom/android/settings/hk;->a(Lcom/android/settings/hk;)Landroid/os/UserHandle;
+    invoke-static {v0}, Lcom/android/settings_ext/hk;->a(Lcom/android/settings_ext/hk;)Landroid/os/UserHandle;
 
     move-result-object v0
 
     goto :goto_0
 .end method
 
-.method public ah(I)Lcom/android/settings/hk;
+.method public ah(I)Lcom/android/settings_ext/hk;
     .locals 1
 
     .prologue
     .line 116
-    iget-object v0, p0, Lcom/android/settings/hj;->zz:Ljava/util/ArrayList;
+    iget-object v0, p0, Lcom/android/settings_ext/hj;->zz:Ljava/util/ArrayList;
 
     invoke-virtual {v0, p1}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
 
     move-result-object v0
 
-    check-cast v0, Lcom/android/settings/hk;
+    check-cast v0, Lcom/android/settings_ext/hk;
 
     return-object v0
 .end method
@@ -131,7 +131,7 @@
 
     .prologue
     .line 111
-    iget-object v0, p0, Lcom/android/settings/hj;->zz:Ljava/util/ArrayList;
+    iget-object v0, p0, Lcom/android/settings_ext/hj;->zz:Ljava/util/ArrayList;
 
     invoke-virtual {v0}, Ljava/util/ArrayList;->size()I
 
@@ -149,13 +149,13 @@
 
     .line 89
     :goto_0
-    iget-object v0, p0, Lcom/android/settings/hj;->zz:Ljava/util/ArrayList;
+    iget-object v0, p0, Lcom/android/settings_ext/hj;->zz:Ljava/util/ArrayList;
 
     invoke-virtual {v0, p1}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
 
     move-result-object v0
 
-    check-cast v0, Lcom/android/settings/hk;
+    check-cast v0, Lcom/android/settings_ext/hk;
 
     .line 90
     const v1, 0x1020006
@@ -166,7 +166,7 @@
 
     check-cast v1, Landroid/widget/ImageView;
 
-    invoke-static {v0}, Lcom/android/settings/hk;->b(Lcom/android/settings/hk;)Landroid/graphics/drawable/Drawable;
+    invoke-static {v0}, Lcom/android/settings_ext/hk;->b(Lcom/android/settings_ext/hk;)Landroid/graphics/drawable/Drawable;
 
     move-result-object v2
 
@@ -181,7 +181,7 @@
 
     check-cast v1, Landroid/widget/TextView;
 
-    invoke-static {v0}, Lcom/android/settings/hk;->c(Lcom/android/settings/hk;)Ljava/lang/String;
+    invoke-static {v0}, Lcom/android/settings_ext/hk;->c(Lcom/android/settings_ext/hk;)Ljava/lang/String;
 
     move-result-object v0
 
@@ -192,7 +192,7 @@
 
     .line 87
     :cond_0
-    invoke-direct {p0, p3}, Lcom/android/settings/hj;->d(Landroid/view/ViewGroup;)Landroid/view/View;
+    invoke-direct {p0, p3}, Lcom/android/settings_ext/hj;->d(Landroid/view/ViewGroup;)Landroid/view/View;
 
     move-result-object p2
 
@@ -204,7 +204,7 @@
 
     .prologue
     .line 41
-    invoke-virtual {p0, p1}, Lcom/android/settings/hj;->ah(I)Lcom/android/settings/hk;
+    invoke-virtual {p0, p1}, Lcom/android/settings_ext/hj;->ah(I)Lcom/android/settings_ext/hk;
 
     move-result-object v0
 
@@ -216,15 +216,15 @@
 
     .prologue
     .line 121
-    iget-object v0, p0, Lcom/android/settings/hj;->zz:Ljava/util/ArrayList;
+    iget-object v0, p0, Lcom/android/settings_ext/hj;->zz:Ljava/util/ArrayList;
 
     invoke-virtual {v0, p1}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
 
     move-result-object v0
 
-    check-cast v0, Lcom/android/settings/hk;
+    check-cast v0, Lcom/android/settings_ext/hk;
 
-    invoke-static {v0}, Lcom/android/settings/hk;->a(Lcom/android/settings/hk;)Landroid/os/UserHandle;
+    invoke-static {v0}, Lcom/android/settings_ext/hk;->a(Lcom/android/settings_ext/hk;)Landroid/os/UserHandle;
 
     move-result-object v0
 
@@ -252,7 +252,7 @@
 
     .prologue
     .line 131
-    invoke-virtual {p0, p1, p2, p3}, Lcom/android/settings/hj;->getDropDownView(ILandroid/view/View;Landroid/view/ViewGroup;)Landroid/view/View;
+    invoke-virtual {p0, p1, p2, p3}, Lcom/android/settings_ext/hj;->getDropDownView(ILandroid/view/View;Landroid/view/ViewGroup;)Landroid/view/View;
 
     move-result-object v0
 
@@ -284,7 +284,7 @@
 
     .prologue
     .line 146
-    iget-object v0, p0, Lcom/android/settings/hj;->zz:Ljava/util/ArrayList;
+    iget-object v0, p0, Lcom/android/settings_ext/hj;->zz:Ljava/util/ArrayList;
 
     invoke-virtual {v0}, Ljava/util/ArrayList;->isEmpty()Z
 

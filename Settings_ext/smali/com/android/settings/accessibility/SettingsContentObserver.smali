@@ -1,4 +1,4 @@
-.class abstract Lcom/android/settings/accessibility/SettingsContentObserver;
+.class abstract Lcom/android/settings_ext/accessibility/SettingsContentObserver;
 .super Landroid/database/ContentObserver;
 .source "SettingsContentObserver.java"
 

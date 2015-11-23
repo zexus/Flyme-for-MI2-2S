@@ -1,5 +1,5 @@
-.class public Lcom/android/settings/ConfirmGalleryLockPattern$ConfirmGalleryLockFragment;
-.super Lcom/android/settings/ConfirmLockPattern$ConfirmLockPatternFragment;
+.class public Lcom/android/settings_ext/ConfirmGalleryLockPattern$ConfirmGalleryLockFragment;
+.super Lcom/android/settings_ext/ConfirmLockPattern$ConfirmLockPatternFragment;
 .source "ConfirmGalleryLockPattern.java"
 
 
@@ -19,7 +19,7 @@
 
     .prologue
     .line 59
-    invoke-direct {p0}, Lcom/android/settings/ConfirmLockPattern$ConfirmLockPatternFragment;-><init>()V
+    invoke-direct {p0}, Lcom/android/settings_ext/ConfirmLockPattern$ConfirmLockPatternFragment;-><init>()V
 
     .line 60
     return-void
@@ -30,14 +30,14 @@
 
     .prologue
     .line 89
-    iget v0, p0, Lcom/android/settings/ConfirmGalleryLockPattern$ConfirmGalleryLockFragment;->dY:I
+    iget v0, p0, Lcom/android/settings_ext/ConfirmGalleryLockPattern$ConfirmGalleryLockFragment;->dY:I
 
     const/4 v1, 0x1
 
     if-ne v0, v1, :cond_0
 
     .line 90
-    iget-object v0, p0, Lcom/android/settings/ConfirmGalleryLockPattern$ConfirmGalleryLockFragment;->b:Landroid/security/ChooseLockSettingsHelper;
+    iget-object v0, p0, Lcom/android/settings_ext/ConfirmGalleryLockPattern$ConfirmGalleryLockFragment;->b:Landroid/security/ChooseLockSettingsHelper;
 
     const/4 v1, 0x0
 
@@ -60,13 +60,13 @@
     move-result-wide v0
 
     .line 118
-    sget-wide v2, Lcom/android/settings/ConfirmGalleryLockPattern$ConfirmGalleryLockFragment;->ec:J
+    sget-wide v2, Lcom/android/settings_ext/ConfirmGalleryLockPattern$ConfirmGalleryLockFragment;->ec:J
 
     cmp-long v2, v2, v0
 
     if-ltz v2, :cond_0
 
-    sget-wide v2, Lcom/android/settings/ConfirmGalleryLockPattern$ConfirmGalleryLockFragment;->ec:J
+    sget-wide v2, Lcom/android/settings_ext/ConfirmGalleryLockPattern$ConfirmGalleryLockFragment;->ec:J
 
     const-wide/16 v4, 0x7530
 
@@ -80,11 +80,11 @@
     :cond_0
     const-wide/16 v0, 0x0
 
-    sput-wide v0, Lcom/android/settings/ConfirmGalleryLockPattern$ConfirmGalleryLockFragment;->ec:J
+    sput-wide v0, Lcom/android/settings_ext/ConfirmGalleryLockPattern$ConfirmGalleryLockFragment;->ec:J
 
     .line 121
     :cond_1
-    sget-wide v0, Lcom/android/settings/ConfirmGalleryLockPattern$ConfirmGalleryLockFragment;->ec:J
+    sget-wide v0, Lcom/android/settings_ext/ConfirmGalleryLockPattern$ConfirmGalleryLockFragment;->ec:J
 
     return-wide v0
 .end method
@@ -94,10 +94,10 @@
 
     .prologue
     .line 154
-    invoke-direct {p0}, Lcom/android/settings/ConfirmGalleryLockPattern$ConfirmGalleryLockFragment;->au()V
+    invoke-direct {p0}, Lcom/android/settings_ext/ConfirmGalleryLockPattern$ConfirmGalleryLockFragment;->au()V
 
     .line 155
-    invoke-super {p0, p1}, Lcom/android/settings/ConfirmLockPattern$ConfirmLockPatternFragment;->a(Ljava/util/List;)V
+    invoke-super {p0, p1}, Lcom/android/settings_ext/ConfirmLockPattern$ConfirmLockPatternFragment;->a(Ljava/util/List;)V
 
     .line 156
     return-void
@@ -110,7 +110,7 @@
     const/4 v0, 0x1
 
     .line 148
-    invoke-virtual {p0}, Lcom/android/settings/ConfirmGalleryLockPattern$ConfirmGalleryLockFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/ConfirmGalleryLockPattern$ConfirmGalleryLockFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v1
 
@@ -150,7 +150,7 @@
 
     .prologue
     .line 73
-    iget-object v0, p0, Lcom/android/settings/ConfirmGalleryLockPattern$ConfirmGalleryLockFragment;->eo:Landroid/security/MiuiLockPatternUtils;
+    iget-object v0, p0, Lcom/android/settings_ext/ConfirmGalleryLockPattern$ConfirmGalleryLockFragment;->eo:Landroid/security/MiuiLockPatternUtils;
 
     invoke-virtual {v0}, Landroid/security/MiuiLockPatternUtils;->savedMiuiLockPatternExists()Z
 
@@ -159,10 +159,10 @@
     if-nez v0, :cond_0
 
     .line 74
-    invoke-direct {p0}, Lcom/android/settings/ConfirmGalleryLockPattern$ConfirmGalleryLockFragment;->au()V
+    invoke-direct {p0}, Lcom/android/settings_ext/ConfirmGalleryLockPattern$ConfirmGalleryLockFragment;->au()V
 
     .line 75
-    invoke-virtual {p0}, Lcom/android/settings/ConfirmGalleryLockPattern$ConfirmGalleryLockFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/ConfirmGalleryLockPattern$ConfirmGalleryLockFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
@@ -171,7 +171,7 @@
     invoke-virtual {v0, v1}, Landroid/app/Activity;->setResult(I)V
 
     .line 76
-    invoke-virtual {p0}, Lcom/android/settings/ConfirmGalleryLockPattern$ConfirmGalleryLockFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/ConfirmGalleryLockPattern$ConfirmGalleryLockFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
@@ -189,11 +189,11 @@
     .line 96
     new-instance v0, Landroid/content/Intent;
 
-    invoke-virtual {p0}, Lcom/android/settings/ConfirmGalleryLockPattern$ConfirmGalleryLockFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/ConfirmGalleryLockPattern$ConfirmGalleryLockFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v1
 
-    const-class v2, Lcom/android/settings/ChooseGalleryLockPattern;
+    const-class v2, Lcom/android/settings_ext/ChooseGalleryLockPattern;
 
     invoke-direct {v0, v1, v2}, Landroid/content/Intent;-><init>(Landroid/content/Context;Ljava/lang/Class;)V
 
@@ -217,7 +217,7 @@
     .line 106
     const v0, 0x7f090c73
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/ConfirmGalleryLockPattern$ConfirmGalleryLockFragment;->getText(I)Ljava/lang/CharSequence;
+    invoke-virtual {p0, v0}, Lcom/android/settings_ext/ConfirmGalleryLockPattern$ConfirmGalleryLockFragment;->getText(I)Ljava/lang/CharSequence;
 
     move-result-object v0
 
@@ -239,10 +239,10 @@
 
     .prologue
     .line 126
-    sput-wide p1, Lcom/android/settings/ConfirmGalleryLockPattern$ConfirmGalleryLockFragment;->ec:J
+    sput-wide p1, Lcom/android/settings_ext/ConfirmGalleryLockPattern$ConfirmGalleryLockFragment;->ec:J
 
     .line 127
-    iget-object v0, p0, Lcom/android/settings/ConfirmGalleryLockPattern$ConfirmGalleryLockFragment;->eo:Landroid/security/MiuiLockPatternUtils;
+    iget-object v0, p0, Lcom/android/settings_ext/ConfirmGalleryLockPattern$ConfirmGalleryLockFragment;->eo:Landroid/security/MiuiLockPatternUtils;
 
     invoke-virtual {v0}, Landroid/security/MiuiLockPatternUtils;->clearLockoutAttemptDeadline()V
 
@@ -255,10 +255,10 @@
 
     .prologue
     .line 132
-    invoke-super {p0, p1, p2}, Lcom/android/settings/ConfirmLockPattern$ConfirmLockPatternFragment;->c(J)V
+    invoke-super {p0, p1, p2}, Lcom/android/settings_ext/ConfirmLockPattern$ConfirmLockPatternFragment;->c(J)V
 
     .line 133
-    invoke-virtual {p0}, Lcom/android/settings/ConfirmGalleryLockPattern$ConfirmGalleryLockFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/ConfirmGalleryLockPattern$ConfirmGalleryLockFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
@@ -280,7 +280,7 @@
     if-lez v0, :cond_0
 
     .line 135
-    iget-object v0, p0, Lcom/android/settings/ConfirmGalleryLockPattern$ConfirmGalleryLockFragment;->er:Landroid/widget/Button;
+    iget-object v0, p0, Lcom/android/settings_ext/ConfirmGalleryLockPattern$ConfirmGalleryLockFragment;->er:Landroid/widget/Button;
 
     const/4 v1, 0x0
 
@@ -292,7 +292,7 @@
 
     .line 137
     :cond_0
-    iget-object v0, p0, Lcom/android/settings/ConfirmGalleryLockPattern$ConfirmGalleryLockFragment;->er:Landroid/widget/Button;
+    iget-object v0, p0, Lcom/android/settings_ext/ConfirmGalleryLockPattern$ConfirmGalleryLockFragment;->er:Landroid/widget/Button;
 
     const/16 v1, 0x8
 
@@ -306,7 +306,7 @@
 
     .prologue
     .line 160
-    iget-object v0, p0, Lcom/android/settings/ConfirmGalleryLockPattern$ConfirmGalleryLockFragment;->eo:Landroid/security/MiuiLockPatternUtils;
+    iget-object v0, p0, Lcom/android/settings_ext/ConfirmGalleryLockPattern$ConfirmGalleryLockFragment;->eo:Landroid/security/MiuiLockPatternUtils;
 
     invoke-virtual {v0, p1}, Landroid/security/MiuiLockPatternUtils;->checkMiuiLockPattern(Ljava/util/List;)Z
 
@@ -323,7 +323,7 @@
     if-eqz p1, :cond_0
 
     .line 83
-    invoke-super {p0, p1}, Lcom/android/settings/ConfirmLockPattern$ConfirmLockPatternFragment;->e(Landroid/content/Intent;)V
+    invoke-super {p0, p1}, Lcom/android/settings_ext/ConfirmLockPattern$ConfirmLockPatternFragment;->e(Landroid/content/Intent;)V
 
     .line 84
     const-string v0, "confirm_purpose"
@@ -334,7 +334,7 @@
 
     move-result v0
 
-    iput v0, p0, Lcom/android/settings/ConfirmGalleryLockPattern$ConfirmGalleryLockFragment;->dY:I
+    iput v0, p0, Lcom/android/settings_ext/ConfirmGalleryLockPattern$ConfirmGalleryLockFragment;->dY:I
 
     .line 86
     :cond_0
@@ -346,12 +346,12 @@
 
     .prologue
     .line 64
-    invoke-super {p0, p1}, Lcom/android/settings/ConfirmLockPattern$ConfirmLockPatternFragment;->onCreate(Landroid/os/Bundle;)V
+    invoke-super {p0, p1}, Lcom/android/settings_ext/ConfirmLockPattern$ConfirmLockPatternFragment;->onCreate(Landroid/os/Bundle;)V
 
     .line 65
     new-instance v0, Landroid/security/ChooseLockSettingsHelper;
 
-    invoke-virtual {p0}, Lcom/android/settings/ConfirmGalleryLockPattern$ConfirmGalleryLockFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/ConfirmGalleryLockPattern$ConfirmGalleryLockFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v1
 
@@ -359,16 +359,16 @@
 
     invoke-direct {v0, v1, v2}, Landroid/security/ChooseLockSettingsHelper;-><init>(Landroid/app/Activity;I)V
 
-    iput-object v0, p0, Lcom/android/settings/ConfirmGalleryLockPattern$ConfirmGalleryLockFragment;->b:Landroid/security/ChooseLockSettingsHelper;
+    iput-object v0, p0, Lcom/android/settings_ext/ConfirmGalleryLockPattern$ConfirmGalleryLockFragment;->b:Landroid/security/ChooseLockSettingsHelper;
 
     .line 66
-    iget-object v0, p0, Lcom/android/settings/ConfirmGalleryLockPattern$ConfirmGalleryLockFragment;->b:Landroid/security/ChooseLockSettingsHelper;
+    iget-object v0, p0, Lcom/android/settings_ext/ConfirmGalleryLockPattern$ConfirmGalleryLockFragment;->b:Landroid/security/ChooseLockSettingsHelper;
 
     invoke-virtual {v0}, Landroid/security/ChooseLockSettingsHelper;->utils()Landroid/security/MiuiLockPatternUtils;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/ConfirmGalleryLockPattern$ConfirmGalleryLockFragment;->eo:Landroid/security/MiuiLockPatternUtils;
+    iput-object v0, p0, Lcom/android/settings_ext/ConfirmGalleryLockPattern$ConfirmGalleryLockFragment;->eo:Landroid/security/MiuiLockPatternUtils;
 
     .line 67
     return-void

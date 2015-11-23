@@ -1,4 +1,4 @@
-.class public interface abstract Lcom/android/settings/cR;
+.class public interface abstract Lcom/android/settings_ext/cR;
 .super Ljava/lang/Object;
 .source "LockPatternView.java"
 

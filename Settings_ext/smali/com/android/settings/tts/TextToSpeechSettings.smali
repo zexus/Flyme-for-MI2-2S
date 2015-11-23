@@ -1,11 +1,11 @@
-.class public Lcom/android/settings/tts/TextToSpeechSettings;
-.super Lcom/android/settings/SettingsPreferenceFragment;
+.class public Lcom/android/settings_ext/tts/TextToSpeechSettings;
+.super Lcom/android/settings_ext/SettingsPreferenceFragment;
 .source "TextToSpeechSettings.java"
 
 # interfaces
 .implements Landroid/preference/Preference$OnPreferenceChangeListener;
 .implements Landroid/preference/Preference$OnPreferenceClickListener;
-.implements Lcom/android/settings/tts/k;
+.implements Lcom/android/settings_ext/tts/k;
 
 
 # instance fields
@@ -48,55 +48,55 @@
     const/4 v1, 0x0
 
     .line 60
-    invoke-direct {p0}, Lcom/android/settings/SettingsPreferenceFragment;-><init>()V
+    invoke-direct {p0}, Lcom/android/settings_ext/SettingsPreferenceFragment;-><init>()V
 
     .line 95
     const/16 v0, 0x64
 
-    iput v0, p0, Lcom/android/settings/tts/TextToSpeechSettings;->akO:I
+    iput v0, p0, Lcom/android/settings_ext/tts/TextToSpeechSettings;->akO:I
 
     .line 114
-    iput-object v1, p0, Lcom/android/settings/tts/TextToSpeechSettings;->akS:Landroid/speech/tts/TextToSpeech;
+    iput-object v1, p0, Lcom/android/settings_ext/tts/TextToSpeechSettings;->akS:Landroid/speech/tts/TextToSpeech;
 
     .line 115
-    iput-object v1, p0, Lcom/android/settings/tts/TextToSpeechSettings;->akT:Landroid/speech/tts/TtsEngines;
+    iput-object v1, p0, Lcom/android/settings_ext/tts/TextToSpeechSettings;->akT:Landroid/speech/tts/TtsEngines;
 
     .line 117
-    iput-object v1, p0, Lcom/android/settings/tts/TextToSpeechSettings;->akU:Ljava/lang/String;
+    iput-object v1, p0, Lcom/android/settings_ext/tts/TextToSpeechSettings;->akU:Ljava/lang/String;
 
     .line 136
-    new-instance v0, Lcom/android/settings/tts/a;
+    new-instance v0, Lcom/android/settings_ext/tts/a;
 
-    invoke-direct {v0, p0}, Lcom/android/settings/tts/a;-><init>(Lcom/android/settings/tts/TextToSpeechSettings;)V
+    invoke-direct {v0, p0}, Lcom/android/settings_ext/tts/a;-><init>(Lcom/android/settings_ext/tts/TextToSpeechSettings;)V
 
-    iput-object v0, p0, Lcom/android/settings/tts/TextToSpeechSettings;->akX:Landroid/speech/tts/TextToSpeech$OnInitListener;
+    iput-object v0, p0, Lcom/android/settings_ext/tts/TextToSpeechSettings;->akX:Landroid/speech/tts/TextToSpeech$OnInitListener;
 
     .line 148
-    new-instance v0, Lcom/android/settings/tts/b;
+    new-instance v0, Lcom/android/settings_ext/tts/b;
 
-    invoke-direct {v0, p0}, Lcom/android/settings/tts/b;-><init>(Lcom/android/settings/tts/TextToSpeechSettings;)V
+    invoke-direct {v0, p0}, Lcom/android/settings_ext/tts/b;-><init>(Lcom/android/settings_ext/tts/TextToSpeechSettings;)V
 
-    iput-object v0, p0, Lcom/android/settings/tts/TextToSpeechSettings;->akY:Landroid/speech/tts/TextToSpeech$OnInitListener;
+    iput-object v0, p0, Lcom/android/settings_ext/tts/TextToSpeechSettings;->akY:Landroid/speech/tts/TextToSpeech$OnInitListener;
 
     return-void
 .end method
 
-.method static synthetic a(Lcom/android/settings/tts/TextToSpeechSettings;)Landroid/speech/tts/TextToSpeech;
+.method static synthetic a(Lcom/android/settings_ext/tts/TextToSpeechSettings;)Landroid/speech/tts/TextToSpeech;
     .locals 1
 
     .prologue
     .line 60
-    iget-object v0, p0, Lcom/android/settings/tts/TextToSpeechSettings;->akS:Landroid/speech/tts/TextToSpeech;
+    iget-object v0, p0, Lcom/android/settings_ext/tts/TextToSpeechSettings;->akS:Landroid/speech/tts/TextToSpeech;
 
     return-object v0
 .end method
 
-.method static synthetic a(Lcom/android/settings/tts/TextToSpeechSettings;Ljava/lang/String;)Ljava/lang/String;
+.method static synthetic a(Lcom/android/settings_ext/tts/TextToSpeechSettings;Ljava/lang/String;)Ljava/lang/String;
     .locals 0
 
     .prologue
     .line 60
-    iput-object p1, p0, Lcom/android/settings/tts/TextToSpeechSettings;->akP:Ljava/lang/String;
+    iput-object p1, p0, Lcom/android/settings_ext/tts/TextToSpeechSettings;->akP:Ljava/lang/String;
 
     return-object p1
 .end method
@@ -106,17 +106,17 @@
 
     .prologue
     .line 512
-    iget-object v0, p0, Lcom/android/settings/tts/TextToSpeechSettings;->akM:Landroid/preference/Preference;
+    iget-object v0, p0, Lcom/android/settings_ext/tts/TextToSpeechSettings;->akM:Landroid/preference/Preference;
 
     invoke-virtual {v0, p1}, Landroid/preference/Preference;->setEnabled(Z)V
 
     .line 513
-    iget-object v0, p0, Lcom/android/settings/tts/TextToSpeechSettings;->akL:Landroid/preference/ListPreference;
+    iget-object v0, p0, Lcom/android/settings_ext/tts/TextToSpeechSettings;->akL:Landroid/preference/ListPreference;
 
     invoke-virtual {v0, p1}, Landroid/preference/ListPreference;->setEnabled(Z)V
 
     .line 514
-    iget-object v0, p0, Lcom/android/settings/tts/TextToSpeechSettings;->akN:Landroid/preference/Preference;
+    iget-object v0, p0, Lcom/android/settings_ext/tts/TextToSpeechSettings;->akN:Landroid/preference/Preference;
 
     invoke-virtual {v0, p1}, Landroid/preference/Preference;->setEnabled(Z)V
 
@@ -124,12 +124,12 @@
     return-void
 .end method
 
-.method static synthetic b(Lcom/android/settings/tts/TextToSpeechSettings;)Ljava/lang/String;
+.method static synthetic b(Lcom/android/settings_ext/tts/TextToSpeechSettings;)Ljava/lang/String;
     .locals 1
 
     .prologue
     .line 60
-    iget-object v0, p0, Lcom/android/settings/tts/TextToSpeechSettings;->akP:Ljava/lang/String;
+    iget-object v0, p0, Lcom/android/settings_ext/tts/TextToSpeechSettings;->akP:Ljava/lang/String;
 
     return-object v0
 .end method
@@ -139,7 +139,7 @@
 
     .prologue
     .line 421
-    invoke-direct {p0}, Lcom/android/settings/tts/TextToSpeechSettings;->rY()Ljava/lang/String;
+    invoke-direct {p0}, Lcom/android/settings_ext/tts/TextToSpeechSettings;->rY()Ljava/lang/String;
 
     move-result-object v0
 
@@ -168,17 +168,17 @@
 
     .line 432
     :cond_0
-    iput-object v0, p0, Lcom/android/settings/tts/TextToSpeechSettings;->akU:Ljava/lang/String;
+    iput-object v0, p0, Lcom/android/settings_ext/tts/TextToSpeechSettings;->akU:Ljava/lang/String;
 
     .line 433
-    iget-object v0, p0, Lcom/android/settings/tts/TextToSpeechSettings;->akU:Ljava/lang/String;
+    iget-object v0, p0, Lcom/android/settings_ext/tts/TextToSpeechSettings;->akU:Ljava/lang/String;
 
     if-eqz v0, :cond_1
 
     .line 434
     const/4 v0, 0x1
 
-    invoke-direct {p0, v0}, Lcom/android/settings/tts/TextToSpeechSettings;->aK(Z)V
+    invoke-direct {p0, v0}, Lcom/android/settings_ext/tts/TextToSpeechSettings;->aK(Z)V
 
     .line 438
     :goto_0
@@ -195,12 +195,12 @@
     goto :goto_0
 .end method
 
-.method static synthetic b(Lcom/android/settings/tts/TextToSpeechSettings;Ljava/lang/String;)V
+.method static synthetic b(Lcom/android/settings_ext/tts/TextToSpeechSettings;Ljava/lang/String;)V
     .locals 0
 
     .prologue
     .line 60
-    invoke-direct {p0, p1}, Lcom/android/settings/tts/TextToSpeechSettings;->by(Ljava/lang/String;)V
+    invoke-direct {p0, p1}, Lcom/android/settings_ext/tts/TextToSpeechSettings;->by(Ljava/lang/String;)V
 
     return-void
 .end method
@@ -212,40 +212,40 @@
     .line 550
     const/4 v0, 0x0
 
-    invoke-direct {p0, v0}, Lcom/android/settings/tts/TextToSpeechSettings;->aK(Z)V
+    invoke-direct {p0, v0}, Lcom/android/settings_ext/tts/TextToSpeechSettings;->aK(Z)V
 
     .line 551
     const v0, 0x7f09074b
 
-    invoke-direct {p0, v0}, Lcom/android/settings/tts/TextToSpeechSettings;->cu(I)V
+    invoke-direct {p0, v0}, Lcom/android/settings_ext/tts/TextToSpeechSettings;->cu(I)V
 
     .line 553
-    invoke-virtual {p0, p1}, Lcom/android/settings/tts/TextToSpeechSettings;->bx(Ljava/lang/String;)V
+    invoke-virtual {p0, p1}, Lcom/android/settings_ext/tts/TextToSpeechSettings;->bx(Ljava/lang/String;)V
 
     .line 560
-    iget-object v0, p0, Lcom/android/settings/tts/TextToSpeechSettings;->akS:Landroid/speech/tts/TextToSpeech;
+    iget-object v0, p0, Lcom/android/settings_ext/tts/TextToSpeechSettings;->akS:Landroid/speech/tts/TextToSpeech;
 
     invoke-virtual {v0}, Landroid/speech/tts/TextToSpeech;->getCurrentEngine()Ljava/lang/String;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/tts/TextToSpeechSettings;->akR:Ljava/lang/String;
+    iput-object v0, p0, Lcom/android/settings_ext/tts/TextToSpeechSettings;->akR:Ljava/lang/String;
 
     .line 563
-    iget-object v0, p0, Lcom/android/settings/tts/TextToSpeechSettings;->akS:Landroid/speech/tts/TextToSpeech;
+    iget-object v0, p0, Lcom/android/settings_ext/tts/TextToSpeechSettings;->akS:Landroid/speech/tts/TextToSpeech;
 
     if-eqz v0, :cond_0
 
     .line 565
     :try_start_0
-    iget-object v0, p0, Lcom/android/settings/tts/TextToSpeechSettings;->akS:Landroid/speech/tts/TextToSpeech;
+    iget-object v0, p0, Lcom/android/settings_ext/tts/TextToSpeechSettings;->akS:Landroid/speech/tts/TextToSpeech;
 
     invoke-virtual {v0}, Landroid/speech/tts/TextToSpeech;->shutdown()V
 
     .line 566
     const/4 v0, 0x0
 
-    iput-object v0, p0, Lcom/android/settings/tts/TextToSpeechSettings;->akS:Landroid/speech/tts/TextToSpeech;
+    iput-object v0, p0, Lcom/android/settings_ext/tts/TextToSpeechSettings;->akS:Landroid/speech/tts/TextToSpeech;
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 
@@ -254,7 +254,7 @@
     :goto_0
     new-instance v0, Landroid/speech/tts/TextToSpeech;
 
-    invoke-virtual {p0}, Lcom/android/settings/tts/TextToSpeechSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/tts/TextToSpeechSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v1
 
@@ -262,14 +262,14 @@
 
     move-result-object v1
 
-    iget-object v2, p0, Lcom/android/settings/tts/TextToSpeechSettings;->akY:Landroid/speech/tts/TextToSpeech$OnInitListener;
+    iget-object v2, p0, Lcom/android/settings_ext/tts/TextToSpeechSettings;->akY:Landroid/speech/tts/TextToSpeech$OnInitListener;
 
     invoke-direct {v0, v1, v2, p1}, Landroid/speech/tts/TextToSpeech;-><init>(Landroid/content/Context;Landroid/speech/tts/TextToSpeech$OnInitListener;Ljava/lang/String;)V
 
-    iput-object v0, p0, Lcom/android/settings/tts/TextToSpeechSettings;->akS:Landroid/speech/tts/TextToSpeech;
+    iput-object v0, p0, Lcom/android/settings_ext/tts/TextToSpeechSettings;->akS:Landroid/speech/tts/TextToSpeech;
 
     .line 577
-    invoke-direct {p0}, Lcom/android/settings/tts/TextToSpeechSettings;->rT()V
+    invoke-direct {p0}, Lcom/android/settings_ext/tts/TextToSpeechSettings;->rT()V
 
     .line 578
     return-void
@@ -322,7 +322,7 @@
     const/16 v1, 0x7b9
 
     :try_start_0
-    invoke-virtual {p0, v0, v1}, Lcom/android/settings/tts/TextToSpeechSettings;->startActivityForResult(Landroid/content/Intent;I)V
+    invoke-virtual {p0, v0, v1}, Lcom/android/settings_ext/tts/TextToSpeechSettings;->startActivityForResult(Landroid/content/Intent;I)V
     :try_end_0
     .catch Landroid/content/ActivityNotFoundException; {:try_start_0 .. :try_end_0} :catch_0
 
@@ -371,7 +371,7 @@
 
     .prologue
     .line 518
-    iget-object v0, p0, Lcom/android/settings/tts/TextToSpeechSettings;->akV:Ljava/util/Locale;
+    iget-object v0, p0, Lcom/android/settings_ext/tts/TextToSpeechSettings;->akV:Ljava/util/Locale;
 
     .line 519
     if-nez v0, :cond_0
@@ -383,7 +383,7 @@
 
     .line 522
     :cond_0
-    iget-object v1, p0, Lcom/android/settings/tts/TextToSpeechSettings;->akN:Landroid/preference/Preference;
+    iget-object v1, p0, Lcom/android/settings_ext/tts/TextToSpeechSettings;->akN:Landroid/preference/Preference;
 
     const/4 v2, 0x1
 
@@ -397,7 +397,7 @@
 
     aput-object v0, v2, v3
 
-    invoke-virtual {p0, p1, v2}, Lcom/android/settings/tts/TextToSpeechSettings;->getString(I[Ljava/lang/Object;)Ljava/lang/String;
+    invoke-virtual {p0, p1, v2}, Lcom/android/settings_ext/tts/TextToSpeechSettings;->getString(I[Ljava/lang/Object;)Ljava/lang/String;
 
     move-result-object v0
 
@@ -412,7 +412,7 @@
 
     .prologue
     .line 198
-    iget-object v0, p0, Lcom/android/settings/tts/TextToSpeechSettings;->akS:Landroid/speech/tts/TextToSpeech;
+    iget-object v0, p0, Lcom/android/settings_ext/tts/TextToSpeechSettings;->akS:Landroid/speech/tts/TextToSpeech;
 
     if-nez v0, :cond_0
 
@@ -422,11 +422,11 @@
 
     .line 201
     :cond_0
-    iget-object v0, p0, Lcom/android/settings/tts/TextToSpeechSettings;->akS:Landroid/speech/tts/TextToSpeech;
+    iget-object v0, p0, Lcom/android/settings_ext/tts/TextToSpeechSettings;->akS:Landroid/speech/tts/TextToSpeech;
 
-    new-instance v1, Lcom/android/settings/tts/c;
+    new-instance v1, Lcom/android/settings_ext/tts/c;
 
-    invoke-direct {v1, p0}, Lcom/android/settings/tts/c;-><init>(Lcom/android/settings/tts/TextToSpeechSettings;)V
+    invoke-direct {v1, p0}, Lcom/android/settings_ext/tts/c;-><init>(Lcom/android/settings_ext/tts/TextToSpeechSettings;)V
 
     invoke-virtual {v0, v1}, Landroid/speech/tts/TextToSpeech;->setOnUtteranceProgressListener(Landroid/speech/tts/UtteranceProgressListener;)I
 
@@ -438,7 +438,7 @@
 
     .prologue
     .line 225
-    invoke-virtual {p0}, Lcom/android/settings/tts/TextToSpeechSettings;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/settings_ext/tts/TextToSpeechSettings;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v0
 
@@ -450,15 +450,15 @@
 
     move-result v0
 
-    iput v0, p0, Lcom/android/settings/tts/TextToSpeechSettings;->akO:I
+    iput v0, p0, Lcom/android/settings_ext/tts/TextToSpeechSettings;->akO:I
     :try_end_0
     .catch Landroid/provider/Settings$SettingNotFoundException; {:try_start_0 .. :try_end_0} :catch_0
 
     .line 234
     :goto_0
-    iget-object v0, p0, Lcom/android/settings/tts/TextToSpeechSettings;->akL:Landroid/preference/ListPreference;
+    iget-object v0, p0, Lcom/android/settings_ext/tts/TextToSpeechSettings;->akL:Landroid/preference/ListPreference;
 
-    iget v1, p0, Lcom/android/settings/tts/TextToSpeechSettings;->akO:I
+    iget v1, p0, Lcom/android/settings_ext/tts/TextToSpeechSettings;->akO:I
 
     invoke-static {v1}, Ljava/lang/String;->valueOf(I)Ljava/lang/String;
 
@@ -467,31 +467,31 @@
     invoke-virtual {v0, v1}, Landroid/preference/ListPreference;->setValue(Ljava/lang/String;)V
 
     .line 235
-    iget-object v0, p0, Lcom/android/settings/tts/TextToSpeechSettings;->akL:Landroid/preference/ListPreference;
+    iget-object v0, p0, Lcom/android/settings_ext/tts/TextToSpeechSettings;->akL:Landroid/preference/ListPreference;
 
     invoke-virtual {v0, p0}, Landroid/preference/ListPreference;->setOnPreferenceChangeListener(Landroid/preference/Preference$OnPreferenceChangeListener;)V
 
     .line 237
-    iget-object v0, p0, Lcom/android/settings/tts/TextToSpeechSettings;->akS:Landroid/speech/tts/TextToSpeech;
+    iget-object v0, p0, Lcom/android/settings_ext/tts/TextToSpeechSettings;->akS:Landroid/speech/tts/TextToSpeech;
 
     invoke-virtual {v0}, Landroid/speech/tts/TextToSpeech;->getCurrentEngine()Ljava/lang/String;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/tts/TextToSpeechSettings;->akP:Ljava/lang/String;
+    iput-object v0, p0, Lcom/android/settings_ext/tts/TextToSpeechSettings;->akP:Ljava/lang/String;
 
     .line 248
-    invoke-virtual {p0}, Lcom/android/settings/tts/TextToSpeechSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/tts/TextToSpeechSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v1
 
     .line 249
-    iget-object v0, p0, Lcom/android/settings/tts/TextToSpeechSettings;->akK:Landroid/preference/PreferenceCategory;
+    iget-object v0, p0, Lcom/android/settings_ext/tts/TextToSpeechSettings;->akK:Landroid/preference/PreferenceCategory;
 
     invoke-virtual {v0}, Landroid/preference/PreferenceCategory;->removeAll()V
 
     .line 251
-    iget-object v0, p0, Lcom/android/settings/tts/TextToSpeechSettings;->akT:Landroid/speech/tts/TtsEngines;
+    iget-object v0, p0, Lcom/android/settings_ext/tts/TextToSpeechSettings;->akT:Landroid/speech/tts/TtsEngines;
 
     invoke-virtual {v0}, Landroid/speech/tts/TtsEngines;->getEngines()Ljava/util/List;
 
@@ -516,16 +516,16 @@
     check-cast v0, Landroid/speech/tts/TextToSpeech$EngineInfo;
 
     .line 253
-    new-instance v3, Lcom/android/settings/tts/e;
+    new-instance v3, Lcom/android/settings_ext/tts/e;
 
-    invoke-virtual {p0}, Lcom/android/settings/tts/TextToSpeechSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/tts/TextToSpeechSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v4
 
-    invoke-direct {v3, v4, v0, p0, v1}, Lcom/android/settings/tts/e;-><init>(Landroid/content/Context;Landroid/speech/tts/TextToSpeech$EngineInfo;Lcom/android/settings/tts/k;Landroid/app/Activity;)V
+    invoke-direct {v3, v4, v0, p0, v1}, Lcom/android/settings_ext/tts/e;-><init>(Landroid/content/Context;Landroid/speech/tts/TextToSpeech$EngineInfo;Lcom/android/settings_ext/tts/k;Landroid/app/Activity;)V
 
     .line 255
-    iget-object v0, p0, Lcom/android/settings/tts/TextToSpeechSettings;->akK:Landroid/preference/PreferenceCategory;
+    iget-object v0, p0, Lcom/android/settings_ext/tts/TextToSpeechSettings;->akK:Landroid/preference/PreferenceCategory;
 
     invoke-virtual {v0, v3}, Landroid/preference/PreferenceCategory;->addPreference(Landroid/preference/Preference;)Z
 
@@ -538,20 +538,20 @@
     .line 232
     const/16 v0, 0x64
 
-    iput v0, p0, Lcom/android/settings/tts/TextToSpeechSettings;->akO:I
+    iput v0, p0, Lcom/android/settings_ext/tts/TextToSpeechSettings;->akO:I
 
     goto :goto_0
 
     .line 258
     :cond_0
-    iget-object v0, p0, Lcom/android/settings/tts/TextToSpeechSettings;->akP:Ljava/lang/String;
+    iget-object v0, p0, Lcom/android/settings_ext/tts/TextToSpeechSettings;->akP:Ljava/lang/String;
 
-    invoke-direct {p0, v0}, Lcom/android/settings/tts/TextToSpeechSettings;->bz(Ljava/lang/String;)V
+    invoke-direct {p0, v0}, Lcom/android/settings_ext/tts/TextToSpeechSettings;->bz(Ljava/lang/String;)V
 
     .line 260
-    iget-object v0, p0, Lcom/android/settings/tts/TextToSpeechSettings;->akP:Ljava/lang/String;
+    iget-object v0, p0, Lcom/android/settings_ext/tts/TextToSpeechSettings;->akP:Ljava/lang/String;
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/tts/TextToSpeechSettings;->bx(Ljava/lang/String;)V
+    invoke-virtual {p0, v0}, Lcom/android/settings_ext/tts/TextToSpeechSettings;->bx(Ljava/lang/String;)V
 
     .line 261
     return-void
@@ -562,7 +562,7 @@
 
     .prologue
     .line 277
-    iget-object v0, p0, Lcom/android/settings/tts/TextToSpeechSettings;->akS:Landroid/speech/tts/TextToSpeech;
+    iget-object v0, p0, Lcom/android/settings_ext/tts/TextToSpeechSettings;->akS:Landroid/speech/tts/TextToSpeech;
 
     invoke-virtual {v0}, Landroid/speech/tts/TextToSpeech;->getDefaultLanguage()Ljava/util/Locale;
 
@@ -584,7 +584,7 @@
 
     move-result-object v1
 
-    iget-object v2, p0, Lcom/android/settings/tts/TextToSpeechSettings;->akP:Ljava/lang/String;
+    iget-object v2, p0, Lcom/android/settings_ext/tts/TextToSpeechSettings;->akP:Ljava/lang/String;
 
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -599,12 +599,12 @@
     .line 280
     const/4 v0, 0x0
 
-    invoke-direct {p0, v0}, Lcom/android/settings/tts/TextToSpeechSettings;->aK(Z)V
+    invoke-direct {p0, v0}, Lcom/android/settings_ext/tts/TextToSpeechSettings;->aK(Z)V
 
     .line 281
     const v0, 0x7f09074a
 
-    invoke-direct {p0, v0}, Lcom/android/settings/tts/TextToSpeechSettings;->cu(I)V
+    invoke-direct {p0, v0}, Lcom/android/settings_ext/tts/TextToSpeechSettings;->cu(I)V
 
     .line 297
     :cond_0
@@ -613,10 +613,10 @@
 
     .line 287
     :cond_1
-    iget-object v1, p0, Lcom/android/settings/tts/TextToSpeechSettings;->akV:Ljava/util/Locale;
+    iget-object v1, p0, Lcom/android/settings_ext/tts/TextToSpeechSettings;->akV:Ljava/util/Locale;
 
     .line 288
-    iget-object v2, p0, Lcom/android/settings/tts/TextToSpeechSettings;->akT:Landroid/speech/tts/TtsEngines;
+    iget-object v2, p0, Lcom/android/settings_ext/tts/TextToSpeechSettings;->akT:Landroid/speech/tts/TtsEngines;
 
     invoke-virtual {v0}, Ljava/util/Locale;->toString()Ljava/lang/String;
 
@@ -626,10 +626,10 @@
 
     move-result-object v2
 
-    iput-object v2, p0, Lcom/android/settings/tts/TextToSpeechSettings;->akV:Ljava/util/Locale;
+    iput-object v2, p0, Lcom/android/settings_ext/tts/TextToSpeechSettings;->akV:Ljava/util/Locale;
 
     .line 289
-    iget-object v2, p0, Lcom/android/settings/tts/TextToSpeechSettings;->akV:Ljava/util/Locale;
+    iget-object v2, p0, Lcom/android/settings_ext/tts/TextToSpeechSettings;->akV:Ljava/util/Locale;
 
     invoke-static {v1, v2}, Ljava/util/Objects;->equals(Ljava/lang/Object;Ljava/lang/Object;)Z
 
@@ -640,27 +640,27 @@
     .line 290
     const/4 v1, 0x0
 
-    iput-object v1, p0, Lcom/android/settings/tts/TextToSpeechSettings;->akU:Ljava/lang/String;
+    iput-object v1, p0, Lcom/android/settings_ext/tts/TextToSpeechSettings;->akU:Ljava/lang/String;
 
     .line 293
     :cond_2
-    iget-object v1, p0, Lcom/android/settings/tts/TextToSpeechSettings;->akS:Landroid/speech/tts/TextToSpeech;
+    iget-object v1, p0, Lcom/android/settings_ext/tts/TextToSpeechSettings;->akS:Landroid/speech/tts/TextToSpeech;
 
     invoke-virtual {v1, v0}, Landroid/speech/tts/TextToSpeech;->setLanguage(Ljava/util/Locale;)I
 
     .line 294
-    invoke-direct {p0}, Lcom/android/settings/tts/TextToSpeechSettings;->rW()Z
+    invoke-direct {p0}, Lcom/android/settings_ext/tts/TextToSpeechSettings;->rW()Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
-    iget-object v0, p0, Lcom/android/settings/tts/TextToSpeechSettings;->akU:Ljava/lang/String;
+    iget-object v0, p0, Lcom/android/settings_ext/tts/TextToSpeechSettings;->akU:Ljava/lang/String;
 
     if-nez v0, :cond_0
 
     .line 295
-    invoke-direct {p0}, Lcom/android/settings/tts/TextToSpeechSettings;->rX()V
+    invoke-direct {p0}, Lcom/android/settings_ext/tts/TextToSpeechSettings;->rX()V
 
     goto :goto_0
 .end method
@@ -676,11 +676,11 @@
     const/4 v1, 0x0
 
     .line 302
-    iget-object v0, p0, Lcom/android/settings/tts/TextToSpeechSettings;->akV:Ljava/util/Locale;
+    iget-object v0, p0, Lcom/android/settings_ext/tts/TextToSpeechSettings;->akV:Ljava/util/Locale;
 
     if-eqz v0, :cond_0
 
-    iget-object v0, p0, Lcom/android/settings/tts/TextToSpeechSettings;->akW:Ljava/util/List;
+    iget-object v0, p0, Lcom/android/settings_ext/tts/TextToSpeechSettings;->akW:Ljava/util/List;
 
     if-nez v0, :cond_1
 
@@ -692,14 +692,14 @@
     .line 309
     :cond_1
     :try_start_0
-    iget-object v0, p0, Lcom/android/settings/tts/TextToSpeechSettings;->akV:Ljava/util/Locale;
+    iget-object v0, p0, Lcom/android/settings_ext/tts/TextToSpeechSettings;->akV:Ljava/util/Locale;
 
     invoke-virtual {v0}, Ljava/util/Locale;->getISO3Language()Ljava/lang/String;
 
     move-result-object v0
 
     .line 310
-    iget-object v3, p0, Lcom/android/settings/tts/TextToSpeechSettings;->akV:Ljava/util/Locale;
+    iget-object v3, p0, Lcom/android/settings_ext/tts/TextToSpeechSettings;->akV:Ljava/util/Locale;
 
     invoke-virtual {v3}, Ljava/util/Locale;->getISO3Country()Ljava/lang/String;
 
@@ -726,7 +726,7 @@
 
     move-result-object v0
 
-    iget-object v3, p0, Lcom/android/settings/tts/TextToSpeechSettings;->akV:Ljava/util/Locale;
+    iget-object v3, p0, Lcom/android/settings_ext/tts/TextToSpeechSettings;->akV:Ljava/util/Locale;
 
     invoke-virtual {v3}, Ljava/util/Locale;->getISO3Country()Ljava/lang/String;
 
@@ -742,7 +742,7 @@
 
     .line 313
     :cond_2
-    iget-object v3, p0, Lcom/android/settings/tts/TextToSpeechSettings;->akV:Ljava/util/Locale;
+    iget-object v3, p0, Lcom/android/settings_ext/tts/TextToSpeechSettings;->akV:Ljava/util/Locale;
 
     invoke-virtual {v3}, Ljava/util/Locale;->getVariant()Ljava/lang/String;
 
@@ -769,7 +769,7 @@
 
     move-result-object v0
 
-    iget-object v3, p0, Lcom/android/settings/tts/TextToSpeechSettings;->akV:Ljava/util/Locale;
+    iget-object v3, p0, Lcom/android/settings_ext/tts/TextToSpeechSettings;->akV:Ljava/util/Locale;
 
     invoke-virtual {v3}, Ljava/util/Locale;->getVariant()Ljava/lang/String;
 
@@ -787,7 +787,7 @@
 
     .line 317
     :goto_1
-    iget-object v0, p0, Lcom/android/settings/tts/TextToSpeechSettings;->akW:Ljava/util/List;
+    iget-object v0, p0, Lcom/android/settings_ext/tts/TextToSpeechSettings;->akW:Ljava/util/List;
 
     invoke-interface {v0}, Ljava/util/List;->iterator()Ljava/util/Iterator;
 
@@ -819,9 +819,9 @@
 
     .line 330
     :goto_2
-    iget-object v3, p0, Lcom/android/settings/tts/TextToSpeechSettings;->akS:Landroid/speech/tts/TextToSpeech;
+    iget-object v3, p0, Lcom/android/settings_ext/tts/TextToSpeechSettings;->akS:Landroid/speech/tts/TextToSpeech;
 
-    iget-object v4, p0, Lcom/android/settings/tts/TextToSpeechSettings;->akV:Ljava/util/Locale;
+    iget-object v4, p0, Lcom/android/settings_ext/tts/TextToSpeechSettings;->akV:Ljava/util/Locale;
 
     invoke-virtual {v3, v4}, Landroid/speech/tts/TextToSpeech;->setLanguage(Ljava/util/Locale;)I
 
@@ -840,10 +840,10 @@
 
     .line 335
     :cond_4
-    invoke-direct {p0, v5}, Lcom/android/settings/tts/TextToSpeechSettings;->cu(I)V
+    invoke-direct {p0, v5}, Lcom/android/settings_ext/tts/TextToSpeechSettings;->cu(I)V
 
     .line 336
-    invoke-direct {p0, v1}, Lcom/android/settings/tts/TextToSpeechSettings;->aK(Z)V
+    invoke-direct {p0, v1}, Lcom/android/settings_ext/tts/TextToSpeechSettings;->aK(Z)V
 
     goto/16 :goto_0
 
@@ -852,16 +852,16 @@
     move-exception v0
 
     .line 325
-    invoke-direct {p0, v5}, Lcom/android/settings/tts/TextToSpeechSettings;->cu(I)V
+    invoke-direct {p0, v5}, Lcom/android/settings_ext/tts/TextToSpeechSettings;->cu(I)V
 
     .line 326
-    invoke-direct {p0, v1}, Lcom/android/settings/tts/TextToSpeechSettings;->aK(Z)V
+    invoke-direct {p0, v1}, Lcom/android/settings_ext/tts/TextToSpeechSettings;->aK(Z)V
 
     goto/16 :goto_0
 
     .line 339
     :cond_5
-    invoke-direct {p0}, Lcom/android/settings/tts/TextToSpeechSettings;->rZ()Z
+    invoke-direct {p0}, Lcom/android/settings_ext/tts/TextToSpeechSettings;->rZ()Z
 
     move-result v0
 
@@ -870,11 +870,11 @@
     .line 340
     const v0, 0x7f090749
 
-    invoke-direct {p0, v0}, Lcom/android/settings/tts/TextToSpeechSettings;->cu(I)V
+    invoke-direct {p0, v0}, Lcom/android/settings_ext/tts/TextToSpeechSettings;->cu(I)V
 
     .line 344
     :goto_3
-    invoke-direct {p0, v2}, Lcom/android/settings/tts/TextToSpeechSettings;->aK(Z)V
+    invoke-direct {p0, v2}, Lcom/android/settings_ext/tts/TextToSpeechSettings;->aK(Z)V
 
     move v1, v2
 
@@ -885,7 +885,7 @@
     :cond_6
     const v0, 0x7f090748
 
-    invoke-direct {p0, v0}, Lcom/android/settings/tts/TextToSpeechSettings;->cu(I)V
+    invoke-direct {p0, v0}, Lcom/android/settings_ext/tts/TextToSpeechSettings;->cu(I)V
 
     goto :goto_3
 
@@ -905,7 +905,7 @@
 
     .prologue
     .line 354
-    iget-object v0, p0, Lcom/android/settings/tts/TextToSpeechSettings;->akS:Landroid/speech/tts/TextToSpeech;
+    iget-object v0, p0, Lcom/android/settings_ext/tts/TextToSpeechSettings;->akS:Landroid/speech/tts/TextToSpeech;
 
     invoke-virtual {v0}, Landroid/speech/tts/TextToSpeech;->getCurrentEngine()Ljava/lang/String;
 
@@ -918,7 +918,7 @@
 
     if-eqz v1, :cond_0
 
-    iget-object v0, p0, Lcom/android/settings/tts/TextToSpeechSettings;->akS:Landroid/speech/tts/TextToSpeech;
+    iget-object v0, p0, Lcom/android/settings_ext/tts/TextToSpeechSettings;->akS:Landroid/speech/tts/TextToSpeech;
 
     invoke-virtual {v0}, Landroid/speech/tts/TextToSpeech;->getDefaultEngine()Ljava/lang/String;
 
@@ -935,7 +935,7 @@
     .line 364
     const-string v2, "language"
 
-    iget-object v3, p0, Lcom/android/settings/tts/TextToSpeechSettings;->akV:Ljava/util/Locale;
+    iget-object v3, p0, Lcom/android/settings_ext/tts/TextToSpeechSettings;->akV:Ljava/util/Locale;
 
     invoke-virtual {v3}, Ljava/util/Locale;->getLanguage()Ljava/lang/String;
 
@@ -946,7 +946,7 @@
     .line 365
     const-string v2, "country"
 
-    iget-object v3, p0, Lcom/android/settings/tts/TextToSpeechSettings;->akV:Ljava/util/Locale;
+    iget-object v3, p0, Lcom/android/settings_ext/tts/TextToSpeechSettings;->akV:Ljava/util/Locale;
 
     invoke-virtual {v3}, Ljava/util/Locale;->getCountry()Ljava/lang/String;
 
@@ -957,7 +957,7 @@
     .line 366
     const-string v2, "variant"
 
-    iget-object v3, p0, Lcom/android/settings/tts/TextToSpeechSettings;->akV:Ljava/util/Locale;
+    iget-object v3, p0, Lcom/android/settings_ext/tts/TextToSpeechSettings;->akV:Ljava/util/Locale;
 
     invoke-virtual {v3}, Ljava/util/Locale;->getVariant()Ljava/lang/String;
 
@@ -972,7 +972,7 @@
     const/16 v0, 0x7bf
 
     :try_start_0
-    invoke-virtual {p0, v1, v0}, Lcom/android/settings/tts/TextToSpeechSettings;->startActivityForResult(Landroid/content/Intent;I)V
+    invoke-virtual {p0, v1, v0}, Lcom/android/settings_ext/tts/TextToSpeechSettings;->startActivityForResult(Landroid/content/Intent;I)V
     :try_end_0
     .catch Landroid/content/ActivityNotFoundException; {:try_start_0 .. :try_end_0} :catch_0
 
@@ -1021,11 +1021,11 @@
 
     .prologue
     .line 390
-    iget-object v0, p0, Lcom/android/settings/tts/TextToSpeechSettings;->akS:Landroid/speech/tts/TextToSpeech;
+    iget-object v0, p0, Lcom/android/settings_ext/tts/TextToSpeechSettings;->akS:Landroid/speech/tts/TextToSpeech;
 
     if-eqz v0, :cond_1
 
-    iget-object v0, p0, Lcom/android/settings/tts/TextToSpeechSettings;->akS:Landroid/speech/tts/TextToSpeech;
+    iget-object v0, p0, Lcom/android/settings_ext/tts/TextToSpeechSettings;->akS:Landroid/speech/tts/TextToSpeech;
 
     invoke-virtual {v0}, Landroid/speech/tts/TextToSpeech;->getLanguage()Ljava/util/Locale;
 
@@ -1035,7 +1035,7 @@
 
     .line 392
     :try_start_0
-    iget-object v0, p0, Lcom/android/settings/tts/TextToSpeechSettings;->akS:Landroid/speech/tts/TextToSpeech;
+    iget-object v0, p0, Lcom/android/settings_ext/tts/TextToSpeechSettings;->akS:Landroid/speech/tts/TextToSpeech;
 
     invoke-virtual {v0}, Landroid/speech/tts/TextToSpeech;->getLanguage()Ljava/util/Locale;
 
@@ -1046,7 +1046,7 @@
     move-result-object v1
 
     .line 393
-    invoke-virtual {p0}, Lcom/android/settings/tts/TextToSpeechSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/tts/TextToSpeechSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
@@ -1061,7 +1061,7 @@
     move-result-object v2
 
     .line 395
-    invoke-virtual {p0}, Lcom/android/settings/tts/TextToSpeechSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/tts/TextToSpeechSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
@@ -1115,7 +1115,7 @@
     :cond_1
     const v0, 0x7f090746
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/tts/TextToSpeechSettings;->getString(I)Ljava/lang/String;
+    invoke-virtual {p0, v0}, Lcom/android/settings_ext/tts/TextToSpeechSettings;->getString(I)Ljava/lang/String;
 
     move-result-object v0
 
@@ -1129,9 +1129,9 @@
     const/4 v0, 0x0
 
     .line 412
-    iget-object v1, p0, Lcom/android/settings/tts/TextToSpeechSettings;->akS:Landroid/speech/tts/TextToSpeech;
+    iget-object v1, p0, Lcom/android/settings_ext/tts/TextToSpeechSettings;->akS:Landroid/speech/tts/TextToSpeech;
 
-    iget-object v2, p0, Lcom/android/settings/tts/TextToSpeechSettings;->akV:Ljava/util/Locale;
+    iget-object v2, p0, Lcom/android/settings_ext/tts/TextToSpeechSettings;->akV:Ljava/util/Locale;
 
     invoke-virtual {v1, v2}, Landroid/speech/tts/TextToSpeech;->getFeatures(Ljava/util/Locale;)Ljava/util/Set;
 
@@ -1172,7 +1172,7 @@
 
     .prologue
     .line 623
-    iget-object v0, p0, Lcom/android/settings/tts/TextToSpeechSettings;->akS:Landroid/speech/tts/TextToSpeech;
+    iget-object v0, p0, Lcom/android/settings_ext/tts/TextToSpeechSettings;->akS:Landroid/speech/tts/TextToSpeech;
 
     invoke-virtual {v0}, Landroid/speech/tts/TextToSpeech;->getCurrentEngine()Ljava/lang/String;
 
@@ -1210,7 +1210,7 @@
 
     move-result-object v1
 
-    iget-object v2, p0, Lcom/android/settings/tts/TextToSpeechSettings;->akS:Landroid/speech/tts/TextToSpeech;
+    iget-object v2, p0, Lcom/android/settings_ext/tts/TextToSpeechSettings;->akS:Landroid/speech/tts/TextToSpeech;
 
     invoke-virtual {v2}, Landroid/speech/tts/TextToSpeech;->getCurrentEngine()Ljava/lang/String;
 
@@ -1230,7 +1230,7 @@
 
     .line 636
     :cond_2
-    invoke-virtual {p0}, Lcom/android/settings/tts/TextToSpeechSettings;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/settings_ext/tts/TextToSpeechSettings;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v0
 
@@ -1245,10 +1245,10 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/tts/TextToSpeechSettings;->akW:Ljava/util/List;
+    iput-object v0, p0, Lcom/android/settings_ext/tts/TextToSpeechSettings;->akW:Ljava/util/List;
 
     .line 640
-    iget-object v0, p0, Lcom/android/settings/tts/TextToSpeechSettings;->akW:Ljava/util/List;
+    iget-object v0, p0, Lcom/android/settings_ext/tts/TextToSpeechSettings;->akW:Ljava/util/List;
 
     if-nez v0, :cond_3
 
@@ -1264,22 +1264,22 @@
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
-    iput-object v0, p0, Lcom/android/settings/tts/TextToSpeechSettings;->akW:Ljava/util/List;
+    iput-object v0, p0, Lcom/android/settings_ext/tts/TextToSpeechSettings;->akW:Ljava/util/List;
 
     .line 645
     :cond_3
-    invoke-direct {p0}, Lcom/android/settings/tts/TextToSpeechSettings;->rW()Z
+    invoke-direct {p0}, Lcom/android/settings_ext/tts/TextToSpeechSettings;->rW()Z
 
     move-result v0
 
     if-eqz v0, :cond_4
 
     .line 646
-    invoke-direct {p0}, Lcom/android/settings/tts/TextToSpeechSettings;->rX()V
+    invoke-direct {p0}, Lcom/android/settings_ext/tts/TextToSpeechSettings;->rX()V
 
     .line 649
     :cond_4
-    iget-object v0, p0, Lcom/android/settings/tts/TextToSpeechSettings;->akK:Landroid/preference/PreferenceCategory;
+    iget-object v0, p0, Lcom/android/settings_ext/tts/TextToSpeechSettings;->akK:Landroid/preference/PreferenceCategory;
 
     invoke-virtual {v0}, Landroid/preference/PreferenceCategory;->getPreferenceCount()I
 
@@ -1294,22 +1294,22 @@
     if-ge v1, v3, :cond_0
 
     .line 651
-    iget-object v0, p0, Lcom/android/settings/tts/TextToSpeechSettings;->akK:Landroid/preference/PreferenceCategory;
+    iget-object v0, p0, Lcom/android/settings_ext/tts/TextToSpeechSettings;->akK:Landroid/preference/PreferenceCategory;
 
     invoke-virtual {v0, v1}, Landroid/preference/PreferenceCategory;->getPreference(I)Landroid/preference/Preference;
 
     move-result-object v0
 
     .line 652
-    instance-of v4, v0, Lcom/android/settings/tts/e;
+    instance-of v4, v0, Lcom/android/settings_ext/tts/e;
 
     if-eqz v4, :cond_5
 
     .line 653
-    check-cast v0, Lcom/android/settings/tts/e;
+    check-cast v0, Lcom/android/settings_ext/tts/e;
 
     .line 654
-    invoke-virtual {v0}, Lcom/android/settings/tts/e;->getKey()Ljava/lang/String;
+    invoke-virtual {v0}, Lcom/android/settings_ext/tts/e;->getKey()Ljava/lang/String;
 
     move-result-object v4
 
@@ -1320,7 +1320,7 @@
     if-eqz v4, :cond_5
 
     .line 655
-    invoke-virtual {v0, p1}, Lcom/android/settings/tts/e;->t(Landroid/content/Intent;)V
+    invoke-virtual {v0, p1}, Lcom/android/settings_ext/tts/e;->t(Landroid/content/Intent;)V
 
     goto :goto_0
 
@@ -1338,7 +1338,7 @@
 
     .prologue
     .line 441
-    invoke-direct {p0}, Lcom/android/settings/tts/TextToSpeechSettings;->rZ()Z
+    invoke-direct {p0}, Lcom/android/settings_ext/tts/TextToSpeechSettings;->rZ()Z
 
     move-result v0
 
@@ -1347,9 +1347,9 @@
 
     if-eqz v0, :cond_1
 
-    iget-object v0, p0, Lcom/android/settings/tts/TextToSpeechSettings;->akS:Landroid/speech/tts/TextToSpeech;
+    iget-object v0, p0, Lcom/android/settings_ext/tts/TextToSpeechSettings;->akS:Landroid/speech/tts/TextToSpeech;
 
-    iget-object v1, p0, Lcom/android/settings/tts/TextToSpeechSettings;->akV:Ljava/util/Locale;
+    iget-object v1, p0, Lcom/android/settings_ext/tts/TextToSpeechSettings;->akV:Ljava/util/Locale;
 
     invoke-virtual {v0, v1}, Landroid/speech/tts/TextToSpeech;->isLanguageAvailable(Ljava/util/Locale;)I
 
@@ -1371,9 +1371,9 @@
     invoke-virtual {v0, v1, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 447
-    iget-object v1, p0, Lcom/android/settings/tts/TextToSpeechSettings;->akS:Landroid/speech/tts/TextToSpeech;
+    iget-object v1, p0, Lcom/android/settings_ext/tts/TextToSpeechSettings;->akS:Landroid/speech/tts/TextToSpeech;
 
-    iget-object v2, p0, Lcom/android/settings/tts/TextToSpeechSettings;->akU:Ljava/lang/String;
+    iget-object v2, p0, Lcom/android/settings_ext/tts/TextToSpeechSettings;->akU:Ljava/lang/String;
 
     const/4 v3, 0x0
 
@@ -1392,7 +1392,7 @@
     invoke-static {v0, v1}, Landroid/util/Log;->w(Ljava/lang/String;Ljava/lang/String;)I
 
     .line 450
-    invoke-direct {p0}, Lcom/android/settings/tts/TextToSpeechSettings;->sd()V
+    invoke-direct {p0}, Lcom/android/settings_ext/tts/TextToSpeechSettings;->sd()V
 
     goto :goto_0
 .end method
@@ -1404,7 +1404,7 @@
     .line 526
     new-instance v0, Landroid/app/AlertDialog$Builder;
 
-    invoke-virtual {p0}, Lcom/android/settings/tts/TextToSpeechSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/tts/TextToSpeechSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v1
 
@@ -1417,7 +1417,7 @@
 
     move-result-object v1
 
-    invoke-virtual {p0}, Lcom/android/settings/tts/TextToSpeechSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/tts/TextToSpeechSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v2
 
@@ -1449,9 +1449,9 @@
     move-result-object v0
 
     .line 534
-    new-instance v1, Lcom/android/settings/tts/d;
+    new-instance v1, Lcom/android/settings_ext/tts/d;
 
-    invoke-direct {v1, p0}, Lcom/android/settings/tts/d;-><init>(Lcom/android/settings/tts/TextToSpeechSettings;)V
+    invoke-direct {v1, p0}, Lcom/android/settings_ext/tts/d;-><init>(Lcom/android/settings_ext/tts/TextToSpeechSettings;)V
 
     invoke-virtual {v0, v1}, Landroid/app/AlertDialog;->setOnDismissListener(Landroid/content/DialogInterface$OnDismissListener;)V
 
@@ -1469,7 +1469,7 @@
 
     .prologue
     .line 674
-    iput-object p1, p0, Lcom/android/settings/tts/TextToSpeechSettings;->akQ:Landroid/widget/Checkable;
+    iput-object p1, p0, Lcom/android/settings_ext/tts/TextToSpeechSettings;->akQ:Landroid/widget/Checkable;
 
     .line 675
     return-void
@@ -1480,12 +1480,12 @@
 
     .prologue
     .line 679
-    iput-object p1, p0, Lcom/android/settings/tts/TextToSpeechSettings;->akP:Ljava/lang/String;
+    iput-object p1, p0, Lcom/android/settings_ext/tts/TextToSpeechSettings;->akP:Ljava/lang/String;
 
     .line 680
-    iget-object v0, p0, Lcom/android/settings/tts/TextToSpeechSettings;->akP:Ljava/lang/String;
+    iget-object v0, p0, Lcom/android/settings_ext/tts/TextToSpeechSettings;->akP:Ljava/lang/String;
 
-    invoke-direct {p0, v0}, Lcom/android/settings/tts/TextToSpeechSettings;->by(Ljava/lang/String;)V
+    invoke-direct {p0, v0}, Lcom/android/settings_ext/tts/TextToSpeechSettings;->by(Ljava/lang/String;)V
 
     .line 681
     return-void
@@ -1505,7 +1505,7 @@
     if-eqz v0, :cond_0
 
     .line 456
-    invoke-virtual {p0}, Lcom/android/settings/tts/TextToSpeechSettings;->sb()V
+    invoke-virtual {p0}, Lcom/android/settings_ext/tts/TextToSpeechSettings;->sb()V
 
     .line 460
     :goto_0
@@ -1513,7 +1513,7 @@
 
     .line 458
     :cond_0
-    invoke-virtual {p0}, Lcom/android/settings/tts/TextToSpeechSettings;->sc()V
+    invoke-virtual {p0}, Lcom/android/settings_ext/tts/TextToSpeechSettings;->sc()V
 
     goto :goto_0
 .end method
@@ -1526,7 +1526,7 @@
     if-nez p1, :cond_0
 
     .line 269
-    invoke-direct {p0}, Lcom/android/settings/tts/TextToSpeechSettings;->rV()V
+    invoke-direct {p0}, Lcom/android/settings_ext/tts/TextToSpeechSettings;->rV()V
 
     .line 274
     :goto_0
@@ -1536,7 +1536,7 @@
     :cond_0
     const/4 v0, 0x0
 
-    invoke-direct {p0, v0}, Lcom/android/settings/tts/TextToSpeechSettings;->aK(Z)V
+    invoke-direct {p0, v0}, Lcom/android/settings_ext/tts/TextToSpeechSettings;->aK(Z)V
 
     goto :goto_0
 .end method
@@ -1549,13 +1549,13 @@
     if-nez p1, :cond_0
 
     .line 591
-    iget-object v0, p0, Lcom/android/settings/tts/TextToSpeechSettings;->akS:Landroid/speech/tts/TextToSpeech;
+    iget-object v0, p0, Lcom/android/settings_ext/tts/TextToSpeechSettings;->akS:Landroid/speech/tts/TextToSpeech;
 
     invoke-virtual {v0}, Landroid/speech/tts/TextToSpeech;->getCurrentEngine()Ljava/lang/String;
 
     move-result-object v0
 
-    invoke-direct {p0, v0}, Lcom/android/settings/tts/TextToSpeechSettings;->bz(Ljava/lang/String;)V
+    invoke-direct {p0, v0}, Lcom/android/settings_ext/tts/TextToSpeechSettings;->bz(Ljava/lang/String;)V
 
     .line 603
     :goto_0
@@ -1563,14 +1563,14 @@
 
     .line 594
     :cond_0
-    iget-object v0, p0, Lcom/android/settings/tts/TextToSpeechSettings;->akR:Ljava/lang/String;
+    iget-object v0, p0, Lcom/android/settings_ext/tts/TextToSpeechSettings;->akR:Ljava/lang/String;
 
     if-eqz v0, :cond_1
 
     .line 597
     new-instance v0, Landroid/speech/tts/TextToSpeech;
 
-    invoke-virtual {p0}, Lcom/android/settings/tts/TextToSpeechSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/tts/TextToSpeechSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v1
 
@@ -1578,22 +1578,22 @@
 
     move-result-object v1
 
-    iget-object v2, p0, Lcom/android/settings/tts/TextToSpeechSettings;->akX:Landroid/speech/tts/TextToSpeech$OnInitListener;
+    iget-object v2, p0, Lcom/android/settings_ext/tts/TextToSpeechSettings;->akX:Landroid/speech/tts/TextToSpeech$OnInitListener;
 
-    iget-object v3, p0, Lcom/android/settings/tts/TextToSpeechSettings;->akR:Ljava/lang/String;
+    iget-object v3, p0, Lcom/android/settings_ext/tts/TextToSpeechSettings;->akR:Ljava/lang/String;
 
     invoke-direct {v0, v1, v2, v3}, Landroid/speech/tts/TextToSpeech;-><init>(Landroid/content/Context;Landroid/speech/tts/TextToSpeech$OnInitListener;Ljava/lang/String;)V
 
-    iput-object v0, p0, Lcom/android/settings/tts/TextToSpeechSettings;->akS:Landroid/speech/tts/TextToSpeech;
+    iput-object v0, p0, Lcom/android/settings_ext/tts/TextToSpeechSettings;->akS:Landroid/speech/tts/TextToSpeech;
 
     .line 599
-    invoke-direct {p0}, Lcom/android/settings/tts/TextToSpeechSettings;->rT()V
+    invoke-direct {p0}, Lcom/android/settings_ext/tts/TextToSpeechSettings;->rT()V
 
     .line 601
     :cond_1
     const/4 v0, 0x0
 
-    iput-object v0, p0, Lcom/android/settings/tts/TextToSpeechSettings;->akR:Ljava/lang/String;
+    iput-object v0, p0, Lcom/android/settings_ext/tts/TextToSpeechSettings;->akR:Ljava/lang/String;
 
     goto :goto_0
 .end method
@@ -1608,7 +1608,7 @@
     if-ne p1, v0, :cond_1
 
     .line 383
-    invoke-direct {p0, p2, p3}, Lcom/android/settings/tts/TextToSpeechSettings;->b(ILandroid/content/Intent;)V
+    invoke-direct {p0, p2, p3}, Lcom/android/settings_ext/tts/TextToSpeechSettings;->b(ILandroid/content/Intent;)V
 
     .line 387
     :cond_0
@@ -1622,7 +1622,7 @@
     if-ne p1, v0, :cond_0
 
     .line 385
-    invoke-direct {p0, p3}, Lcom/android/settings/tts/TextToSpeechSettings;->s(Landroid/content/Intent;)V
+    invoke-direct {p0, p3}, Lcom/android/settings_ext/tts/TextToSpeechSettings;->s(Landroid/content/Intent;)V
 
     goto :goto_0
 .end method
@@ -1632,15 +1632,15 @@
 
     .prologue
     .line 157
-    invoke-super {p0, p1}, Lcom/android/settings/SettingsPreferenceFragment;->onCreate(Landroid/os/Bundle;)V
+    invoke-super {p0, p1}, Lcom/android/settings_ext/SettingsPreferenceFragment;->onCreate(Landroid/os/Bundle;)V
 
     .line 158
     const v0, 0x7f060095
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/tts/TextToSpeechSettings;->addPreferencesFromResource(I)V
+    invoke-virtual {p0, v0}, Lcom/android/settings_ext/tts/TextToSpeechSettings;->addPreferencesFromResource(I)V
 
     .line 160
-    invoke-virtual {p0}, Lcom/android/settings/tts/TextToSpeechSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/tts/TextToSpeechSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
@@ -1651,19 +1651,19 @@
     .line 162
     const-string v0, "tts_play_example"
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/tts/TextToSpeechSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v0}, Lcom/android/settings_ext/tts/TextToSpeechSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/tts/TextToSpeechSettings;->akM:Landroid/preference/Preference;
+    iput-object v0, p0, Lcom/android/settings_ext/tts/TextToSpeechSettings;->akM:Landroid/preference/Preference;
 
     .line 163
-    iget-object v0, p0, Lcom/android/settings/tts/TextToSpeechSettings;->akM:Landroid/preference/Preference;
+    iget-object v0, p0, Lcom/android/settings_ext/tts/TextToSpeechSettings;->akM:Landroid/preference/Preference;
 
     invoke-virtual {v0, p0}, Landroid/preference/Preference;->setOnPreferenceClickListener(Landroid/preference/Preference$OnPreferenceClickListener;)V
 
     .line 164
-    iget-object v0, p0, Lcom/android/settings/tts/TextToSpeechSettings;->akM:Landroid/preference/Preference;
+    iget-object v0, p0, Lcom/android/settings_ext/tts/TextToSpeechSettings;->akM:Landroid/preference/Preference;
 
     const/4 v1, 0x0
 
@@ -1672,43 +1672,43 @@
     .line 166
     const-string v0, "tts_engine_preference_section"
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/tts/TextToSpeechSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v0}, Lcom/android/settings_ext/tts/TextToSpeechSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v0
 
     check-cast v0, Landroid/preference/PreferenceCategory;
 
-    iput-object v0, p0, Lcom/android/settings/tts/TextToSpeechSettings;->akK:Landroid/preference/PreferenceCategory;
+    iput-object v0, p0, Lcom/android/settings_ext/tts/TextToSpeechSettings;->akK:Landroid/preference/PreferenceCategory;
 
     .line 168
     const-string v0, "tts_default_rate"
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/tts/TextToSpeechSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v0}, Lcom/android/settings_ext/tts/TextToSpeechSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v0
 
     check-cast v0, Landroid/preference/ListPreference;
 
-    iput-object v0, p0, Lcom/android/settings/tts/TextToSpeechSettings;->akL:Landroid/preference/ListPreference;
+    iput-object v0, p0, Lcom/android/settings_ext/tts/TextToSpeechSettings;->akL:Landroid/preference/ListPreference;
 
     .line 170
     const-string v0, "tts_status"
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/tts/TextToSpeechSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v0}, Lcom/android/settings_ext/tts/TextToSpeechSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/tts/TextToSpeechSettings;->akN:Landroid/preference/Preference;
+    iput-object v0, p0, Lcom/android/settings_ext/tts/TextToSpeechSettings;->akN:Landroid/preference/Preference;
 
     .line 171
     const v0, 0x7f09074b
 
-    invoke-direct {p0, v0}, Lcom/android/settings/tts/TextToSpeechSettings;->cu(I)V
+    invoke-direct {p0, v0}, Lcom/android/settings_ext/tts/TextToSpeechSettings;->cu(I)V
 
     .line 173
     new-instance v0, Landroid/speech/tts/TextToSpeech;
 
-    invoke-virtual {p0}, Lcom/android/settings/tts/TextToSpeechSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/tts/TextToSpeechSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v1
 
@@ -1716,16 +1716,16 @@
 
     move-result-object v1
 
-    iget-object v2, p0, Lcom/android/settings/tts/TextToSpeechSettings;->akX:Landroid/speech/tts/TextToSpeech$OnInitListener;
+    iget-object v2, p0, Lcom/android/settings_ext/tts/TextToSpeechSettings;->akX:Landroid/speech/tts/TextToSpeech$OnInitListener;
 
     invoke-direct {v0, v1, v2}, Landroid/speech/tts/TextToSpeech;-><init>(Landroid/content/Context;Landroid/speech/tts/TextToSpeech$OnInitListener;)V
 
-    iput-object v0, p0, Lcom/android/settings/tts/TextToSpeechSettings;->akS:Landroid/speech/tts/TextToSpeech;
+    iput-object v0, p0, Lcom/android/settings_ext/tts/TextToSpeechSettings;->akS:Landroid/speech/tts/TextToSpeech;
 
     .line 174
     new-instance v0, Landroid/speech/tts/TtsEngines;
 
-    invoke-virtual {p0}, Lcom/android/settings/tts/TextToSpeechSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/tts/TextToSpeechSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v1
 
@@ -1735,18 +1735,18 @@
 
     invoke-direct {v0, v1}, Landroid/speech/tts/TtsEngines;-><init>(Landroid/content/Context;)V
 
-    iput-object v0, p0, Lcom/android/settings/tts/TextToSpeechSettings;->akT:Landroid/speech/tts/TtsEngines;
+    iput-object v0, p0, Lcom/android/settings_ext/tts/TextToSpeechSettings;->akT:Landroid/speech/tts/TtsEngines;
 
     .line 176
-    invoke-direct {p0}, Lcom/android/settings/tts/TextToSpeechSettings;->rT()V
+    invoke-direct {p0}, Lcom/android/settings_ext/tts/TextToSpeechSettings;->rT()V
 
     .line 177
-    invoke-direct {p0}, Lcom/android/settings/tts/TextToSpeechSettings;->rU()V
+    invoke-direct {p0}, Lcom/android/settings_ext/tts/TextToSpeechSettings;->rU()V
 
     .line 180
     const/4 v0, 0x1
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/tts/TextToSpeechSettings;->setRetainInstance(Z)V
+    invoke-virtual {p0, v0}, Lcom/android/settings_ext/tts/TextToSpeechSettings;->setRetainInstance(Z)V
 
     .line 181
     return-void
@@ -1757,22 +1757,22 @@
 
     .prologue
     .line 217
-    invoke-super {p0}, Lcom/android/settings/SettingsPreferenceFragment;->onDestroy()V
+    invoke-super {p0}, Lcom/android/settings_ext/SettingsPreferenceFragment;->onDestroy()V
 
     .line 218
-    iget-object v0, p0, Lcom/android/settings/tts/TextToSpeechSettings;->akS:Landroid/speech/tts/TextToSpeech;
+    iget-object v0, p0, Lcom/android/settings_ext/tts/TextToSpeechSettings;->akS:Landroid/speech/tts/TextToSpeech;
 
     if-eqz v0, :cond_0
 
     .line 219
-    iget-object v0, p0, Lcom/android/settings/tts/TextToSpeechSettings;->akS:Landroid/speech/tts/TextToSpeech;
+    iget-object v0, p0, Lcom/android/settings_ext/tts/TextToSpeechSettings;->akS:Landroid/speech/tts/TextToSpeech;
 
     invoke-virtual {v0}, Landroid/speech/tts/TextToSpeech;->shutdown()V
 
     .line 220
     const/4 v0, 0x0
 
-    iput-object v0, p0, Lcom/android/settings/tts/TextToSpeechSettings;->akS:Landroid/speech/tts/TextToSpeech;
+    iput-object v0, p0, Lcom/android/settings_ext/tts/TextToSpeechSettings;->akS:Landroid/speech/tts/TextToSpeech;
 
     .line 222
     :cond_0
@@ -1803,29 +1803,29 @@
 
     move-result v0
 
-    iput v0, p0, Lcom/android/settings/tts/TextToSpeechSettings;->akO:I
+    iput v0, p0, Lcom/android/settings_ext/tts/TextToSpeechSettings;->akO:I
 
     .line 482
     :try_start_0
-    invoke-virtual {p0}, Lcom/android/settings/tts/TextToSpeechSettings;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/settings_ext/tts/TextToSpeechSettings;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v0
 
     const-string v1, "tts_default_rate"
 
-    iget v2, p0, Lcom/android/settings/tts/TextToSpeechSettings;->akO:I
+    iget v2, p0, Lcom/android/settings_ext/tts/TextToSpeechSettings;->akO:I
 
     invoke-static {v0, v1, v2}, Landroid/provider/Settings$Secure;->putInt(Landroid/content/ContentResolver;Ljava/lang/String;I)Z
 
     .line 484
-    iget-object v0, p0, Lcom/android/settings/tts/TextToSpeechSettings;->akS:Landroid/speech/tts/TextToSpeech;
+    iget-object v0, p0, Lcom/android/settings_ext/tts/TextToSpeechSettings;->akS:Landroid/speech/tts/TextToSpeech;
 
     if-eqz v0, :cond_0
 
     .line 485
-    iget-object v0, p0, Lcom/android/settings/tts/TextToSpeechSettings;->akS:Landroid/speech/tts/TextToSpeech;
+    iget-object v0, p0, Lcom/android/settings_ext/tts/TextToSpeechSettings;->akS:Landroid/speech/tts/TextToSpeech;
 
-    iget v1, p0, Lcom/android/settings/tts/TextToSpeechSettings;->akO:I
+    iget v1, p0, Lcom/android/settings_ext/tts/TextToSpeechSettings;->akO:I
 
     int-to-float v1, v1
 
@@ -1863,12 +1863,12 @@
 
     .prologue
     .line 501
-    iget-object v0, p0, Lcom/android/settings/tts/TextToSpeechSettings;->akM:Landroid/preference/Preference;
+    iget-object v0, p0, Lcom/android/settings_ext/tts/TextToSpeechSettings;->akM:Landroid/preference/Preference;
 
     if-ne p1, v0, :cond_0
 
     .line 504
-    invoke-direct {p0}, Lcom/android/settings/tts/TextToSpeechSettings;->sa()V
+    invoke-direct {p0}, Lcom/android/settings_ext/tts/TextToSpeechSettings;->sa()V
 
     .line 505
     const/4 v0, 0x1
@@ -1888,14 +1888,14 @@
 
     .prologue
     .line 185
-    invoke-super {p0}, Lcom/android/settings/SettingsPreferenceFragment;->onResume()V
+    invoke-super {p0}, Lcom/android/settings_ext/SettingsPreferenceFragment;->onResume()V
 
     .line 187
-    iget-object v0, p0, Lcom/android/settings/tts/TextToSpeechSettings;->akS:Landroid/speech/tts/TextToSpeech;
+    iget-object v0, p0, Lcom/android/settings_ext/tts/TextToSpeechSettings;->akS:Landroid/speech/tts/TextToSpeech;
 
     if-eqz v0, :cond_0
 
-    iget-object v0, p0, Lcom/android/settings/tts/TextToSpeechSettings;->akV:Ljava/util/Locale;
+    iget-object v0, p0, Lcom/android/settings_ext/tts/TextToSpeechSettings;->akV:Ljava/util/Locale;
 
     if-nez v0, :cond_1
 
@@ -1906,18 +1906,18 @@
 
     .line 190
     :cond_1
-    iget-object v0, p0, Lcom/android/settings/tts/TextToSpeechSettings;->akS:Landroid/speech/tts/TextToSpeech;
+    iget-object v0, p0, Lcom/android/settings_ext/tts/TextToSpeechSettings;->akS:Landroid/speech/tts/TextToSpeech;
 
     invoke-virtual {v0}, Landroid/speech/tts/TextToSpeech;->getDefaultLanguage()Ljava/util/Locale;
 
     move-result-object v0
 
     .line 191
-    iget-object v1, p0, Lcom/android/settings/tts/TextToSpeechSettings;->akV:Ljava/util/Locale;
+    iget-object v1, p0, Lcom/android/settings_ext/tts/TextToSpeechSettings;->akV:Ljava/util/Locale;
 
     if-eqz v1, :cond_0
 
-    iget-object v1, p0, Lcom/android/settings/tts/TextToSpeechSettings;->akV:Ljava/util/Locale;
+    iget-object v1, p0, Lcom/android/settings_ext/tts/TextToSpeechSettings;->akV:Ljava/util/Locale;
 
     invoke-virtual {v1, v0}, Ljava/util/Locale;->equals(Ljava/lang/Object;)Z
 
@@ -1928,10 +1928,10 @@
     .line 192
     const/4 v0, 0x0
 
-    invoke-direct {p0, v0}, Lcom/android/settings/tts/TextToSpeechSettings;->aK(Z)V
+    invoke-direct {p0, v0}, Lcom/android/settings_ext/tts/TextToSpeechSettings;->aK(Z)V
 
     .line 193
-    invoke-direct {p0}, Lcom/android/settings/tts/TextToSpeechSettings;->rV()V
+    invoke-direct {p0}, Lcom/android/settings_ext/tts/TextToSpeechSettings;->rV()V
 
     goto :goto_0
 .end method
@@ -1941,17 +1941,17 @@
 
     .prologue
     .line 464
-    invoke-virtual {p0}, Lcom/android/settings/tts/TextToSpeechSettings;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {p0}, Lcom/android/settings_ext/tts/TextToSpeechSettings;->getResources()Landroid/content/res/Resources;
 
     .line 465
-    iget-object v0, p0, Lcom/android/settings/tts/TextToSpeechSettings;->akL:Landroid/preference/ListPreference;
+    iget-object v0, p0, Lcom/android/settings_ext/tts/TextToSpeechSettings;->akL:Landroid/preference/ListPreference;
 
     const v1, 0x7f0b00b8
 
     invoke-virtual {v0, v1}, Landroid/preference/ListPreference;->setEntries(I)V
 
     .line 466
-    iget-object v0, p0, Lcom/android/settings/tts/TextToSpeechSettings;->akL:Landroid/preference/ListPreference;
+    iget-object v0, p0, Lcom/android/settings_ext/tts/TextToSpeechSettings;->akL:Landroid/preference/ListPreference;
 
     const v1, 0x7f0b00b9
 
@@ -1966,17 +1966,17 @@
 
     .prologue
     .line 471
-    invoke-virtual {p0}, Lcom/android/settings/tts/TextToSpeechSettings;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {p0}, Lcom/android/settings_ext/tts/TextToSpeechSettings;->getResources()Landroid/content/res/Resources;
 
     .line 472
-    iget-object v0, p0, Lcom/android/settings/tts/TextToSpeechSettings;->akL:Landroid/preference/ListPreference;
+    iget-object v0, p0, Lcom/android/settings_ext/tts/TextToSpeechSettings;->akL:Landroid/preference/ListPreference;
 
     const v1, 0x7f0b000b
 
     invoke-virtual {v0, v1}, Landroid/preference/ListPreference;->setEntries(I)V
 
     .line 473
-    iget-object v0, p0, Lcom/android/settings/tts/TextToSpeechSettings;->akL:Landroid/preference/ListPreference;
+    iget-object v0, p0, Lcom/android/settings_ext/tts/TextToSpeechSettings;->akL:Landroid/preference/ListPreference;
 
     const v1, 0x7f0b000c
 
@@ -1991,7 +1991,7 @@
 
     .prologue
     .line 664
-    iget-object v0, p0, Lcom/android/settings/tts/TextToSpeechSettings;->akQ:Landroid/widget/Checkable;
+    iget-object v0, p0, Lcom/android/settings_ext/tts/TextToSpeechSettings;->akQ:Landroid/widget/Checkable;
 
     return-object v0
 .end method
@@ -2001,7 +2001,7 @@
 
     .prologue
     .line 669
-    iget-object v0, p0, Lcom/android/settings/tts/TextToSpeechSettings;->akP:Ljava/lang/String;
+    iget-object v0, p0, Lcom/android/settings_ext/tts/TextToSpeechSettings;->akP:Ljava/lang/String;
 
     return-object v0
 .end method

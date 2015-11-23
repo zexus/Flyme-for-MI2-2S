@@ -1,4 +1,4 @@
-.class public Lcom/android/settings/MiuiSecurityCommonSettings;
+.class public Lcom/android/settings_ext/MiuiSecurityCommonSettings;
 .super Landroid/preference/PreferenceActivity;
 .source "MiuiSecurityCommonSettings.java"
 
@@ -30,7 +30,7 @@
 
     move-result-object v0
 
-    instance-of v0, v0, Lcom/android/settings/SettingsPreferenceFragment;
+    instance-of v0, v0, Lcom/android/settings_ext/SettingsPreferenceFragment;
 
     if-eqz v0, :cond_0
 
@@ -40,9 +40,9 @@
     invoke-direct {v0}, Landroid/os/Handler;-><init>()V
 
     .line 210
-    new-instance v1, Lcom/android/settings/eg;
+    new-instance v1, Lcom/android/settings_ext/eg;
 
-    invoke-direct {v1, p1, p0}, Lcom/android/settings/eg;-><init>(ILandroid/app/Fragment;)V
+    invoke-direct {v1, p1, p0}, Lcom/android/settings_ext/eg;-><init>(ILandroid/app/Fragment;)V
 
     invoke-virtual {v0, v1}, Landroid/os/Handler;->post(Ljava/lang/Runnable;)Z
 
@@ -69,7 +69,7 @@
     .line 61
     const-string v1, ":android:show_fragment"
 
-    const-class v2, Lcom/android/settings/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;
+    const-class v2, Lcom/android/settings_ext/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;
 
     invoke-virtual {v2}, Ljava/lang/Class;->getName()Ljava/lang/String;
 

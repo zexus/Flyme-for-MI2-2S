@@ -1,4 +1,4 @@
-.class public Lcom/android/settings/cz;
+.class public Lcom/android/settings_ext/cz;
 .super Ljava/lang/Object;
 .source "FrequentlySet.java"
 
@@ -37,45 +37,45 @@
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
-    sput-object v0, Lcom/android/settings/cz;->lE:Ljava/util/ArrayList;
+    sput-object v0, Lcom/android/settings_ext/cz;->lE:Ljava/util/ArrayList;
 
     .line 29
     new-instance v0, Ljava/util/HashMap;
 
     invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
 
-    sput-object v0, Lcom/android/settings/cz;->lC:Ljava/util/HashMap;
+    sput-object v0, Lcom/android/settings_ext/cz;->lC:Ljava/util/HashMap;
 
     .line 30
     new-instance v0, Ljava/util/HashMap;
 
     invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
 
-    sput-object v0, Lcom/android/settings/cz;->lD:Ljava/util/HashMap;
+    sput-object v0, Lcom/android/settings_ext/cz;->lD:Ljava/util/HashMap;
 
     .line 31
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
-    sput-object v0, Lcom/android/settings/cz;->lF:Ljava/util/ArrayList;
+    sput-object v0, Lcom/android/settings_ext/cz;->lF:Ljava/util/ArrayList;
 
     .line 32
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
-    sput-object v0, Lcom/android/settings/cz;->lG:Ljava/util/ArrayList;
+    sput-object v0, Lcom/android/settings_ext/cz;->lG:Ljava/util/ArrayList;
 
     .line 33
     new-instance v0, Ljava/util/HashSet;
 
     invoke-direct {v0}, Ljava/util/HashSet;-><init>()V
 
-    sput-object v0, Lcom/android/settings/cz;->lH:Ljava/util/HashSet;
+    sput-object v0, Lcom/android/settings_ext/cz;->lH:Ljava/util/HashSet;
 
     .line 34
-    sget-object v0, Lcom/android/settings/cz;->lH:Ljava/util/HashSet;
+    sget-object v0, Lcom/android/settings_ext/cz;->lH:Ljava/util/HashSet;
 
     invoke-static {v6}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -84,7 +84,7 @@
     invoke-virtual {v0, v1}, Ljava/util/HashSet;->add(Ljava/lang/Object;)Z
 
     .line 35
-    sget-object v0, Lcom/android/settings/cz;->lH:Ljava/util/HashSet;
+    sget-object v0, Lcom/android/settings_ext/cz;->lH:Ljava/util/HashSet;
 
     invoke-static {v7}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -93,7 +93,7 @@
     invoke-virtual {v0, v1}, Ljava/util/HashSet;->add(Ljava/lang/Object;)Z
 
     .line 36
-    sget-object v0, Lcom/android/settings/cz;->lH:Ljava/util/HashSet;
+    sget-object v0, Lcom/android/settings_ext/cz;->lH:Ljava/util/HashSet;
 
     invoke-static {v8}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -102,7 +102,7 @@
     invoke-virtual {v0, v1}, Ljava/util/HashSet;->add(Ljava/lang/Object;)Z
 
     .line 37
-    sget-object v0, Lcom/android/settings/cz;->lH:Ljava/util/HashSet;
+    sget-object v0, Lcom/android/settings_ext/cz;->lH:Ljava/util/HashSet;
 
     invoke-static {v9}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -111,7 +111,7 @@
     invoke-virtual {v0, v1}, Ljava/util/HashSet;->add(Ljava/lang/Object;)Z
 
     .line 38
-    sget-object v0, Lcom/android/settings/cz;->lH:Ljava/util/HashSet;
+    sget-object v0, Lcom/android/settings_ext/cz;->lH:Ljava/util/HashSet;
 
     const v1, 0x7f090ab3
 
@@ -122,7 +122,7 @@
     invoke-virtual {v0, v1}, Ljava/util/HashSet;->add(Ljava/lang/Object;)Z
 
     .line 39
-    sget-object v0, Lcom/android/settings/cz;->lH:Ljava/util/HashSet;
+    sget-object v0, Lcom/android/settings_ext/cz;->lH:Ljava/util/HashSet;
 
     const v1, 0x7f090ab5
 
@@ -133,7 +133,7 @@
     invoke-virtual {v0, v1}, Ljava/util/HashSet;->add(Ljava/lang/Object;)Z
 
     .line 40
-    sget-object v0, Lcom/android/settings/cz;->lH:Ljava/util/HashSet;
+    sget-object v0, Lcom/android/settings_ext/cz;->lH:Ljava/util/HashSet;
 
     const v1, 0x7f090abb
 
@@ -154,7 +154,7 @@
 
     const v4, 0x7f090aa5
 
-    invoke-static {v0, v1, v2, v3, v4}, Lcom/android/settings/cz;->a(Ljava/lang/String;IIII)V
+    invoke-static {v0, v1, v2, v3, v4}, Lcom/android/settings_ext/cz;->a(Ljava/lang/String;IIII)V
 
     .line 43
     const-string v0, "mobile_network_settings"
@@ -165,7 +165,7 @@
 
     const v3, 0x7f0904a5
 
-    invoke-static {v0, v1, v2, v3, v6}, Lcom/android/settings/cz;->a(Ljava/lang/String;IIII)V
+    invoke-static {v0, v1, v2, v3, v6}, Lcom/android/settings_ext/cz;->a(Ljava/lang/String;IIII)V
 
     .line 44
     const-string v0, "wifi_settings"
@@ -178,7 +178,7 @@
 
     const v4, 0x7f090aa7
 
-    invoke-static/range {v0 .. v5}, Lcom/android/settings/cz;->a(Ljava/lang/String;IIIIZ)V
+    invoke-static/range {v0 .. v5}, Lcom/android/settings_ext/cz;->a(Ljava/lang/String;IIIIZ)V
 
     .line 45
     const-string v0, "bluetooth_settings"
@@ -191,7 +191,7 @@
 
     const v4, 0x7f090aa8
 
-    invoke-static/range {v0 .. v5}, Lcom/android/settings/cz;->a(Ljava/lang/String;IIIIZ)V
+    invoke-static/range {v0 .. v5}, Lcom/android/settings_ext/cz;->a(Ljava/lang/String;IIIIZ)V
 
     .line 46
     const-string v0, "android_beam_settings"
@@ -204,7 +204,7 @@
 
     const v4, 0x7f090aa9
 
-    invoke-static {v0, v1, v2, v3, v4}, Lcom/android/settings/cz;->a(Ljava/lang/String;IIII)V
+    invoke-static {v0, v1, v2, v3, v4}, Lcom/android/settings_ext/cz;->a(Ljava/lang/String;IIII)V
 
     .line 47
     const-string v0, "vpn_settings"
@@ -217,7 +217,7 @@
 
     const v4, 0x7f090aaa
 
-    invoke-static {v0, v1, v2, v3, v4}, Lcom/android/settings/cz;->a(Ljava/lang/String;IIII)V
+    invoke-static {v0, v1, v2, v3, v4}, Lcom/android/settings_ext/cz;->a(Ljava/lang/String;IIII)V
 
     .line 48
     sget-boolean v0, Lmiui/os/Build;->IS_TABLET:Z
@@ -235,7 +235,7 @@
 
     const v4, 0x7f090aab
 
-    invoke-static {v0, v1, v2, v3, v4}, Lcom/android/settings/cz;->a(Ljava/lang/String;IIII)V
+    invoke-static {v0, v1, v2, v3, v4}, Lcom/android/settings_ext/cz;->a(Ljava/lang/String;IIII)V
 
     .line 51
     :cond_0
@@ -249,10 +249,10 @@
 
     const v4, 0x7f090aac
 
-    invoke-static/range {v0 .. v5}, Lcom/android/settings/cz;->a(Ljava/lang/String;IIIIZ)V
+    invoke-static/range {v0 .. v5}, Lcom/android/settings_ext/cz;->a(Ljava/lang/String;IIIIZ)V
 
     .line 52
-    invoke-static {}, Lcom/android/settings/fc;->fL()Z
+    invoke-static {}, Lcom/android/settings_ext/fc;->fL()Z
 
     move-result v0
 
@@ -270,7 +270,7 @@
 
     const v4, 0x7f090aae
 
-    invoke-static {v0, v1, v2, v3, v4}, Lcom/android/settings/cz;->a(Ljava/lang/String;IIII)V
+    invoke-static {v0, v1, v2, v3, v4}, Lcom/android/settings_ext/cz;->a(Ljava/lang/String;IIII)V
 
     .line 58
     const-string v0, "screen_timeout"
@@ -283,7 +283,7 @@
 
     const v4, 0x7f090aaf
 
-    invoke-static {v0, v1, v2, v3, v4}, Lcom/android/settings/cz;->a(Ljava/lang/String;IIII)V
+    invoke-static {v0, v1, v2, v3, v4}, Lcom/android/settings_ext/cz;->a(Ljava/lang/String;IIII)V
 
     .line 59
     const-string v0, "ring_volume"
@@ -296,7 +296,7 @@
 
     const v4, 0x7f090ab0
 
-    invoke-static/range {v0 .. v5}, Lcom/android/settings/cz;->a(Ljava/lang/String;IIIIZ)V
+    invoke-static/range {v0 .. v5}, Lcom/android/settings_ext/cz;->a(Ljava/lang/String;IIIIZ)V
 
     .line 60
     const-string v0, "ringtone"
@@ -309,7 +309,7 @@
 
     move v4, v8
 
-    invoke-static/range {v0 .. v5}, Lcom/android/settings/cz;->a(Ljava/lang/String;IIIIZ)V
+    invoke-static/range {v0 .. v5}, Lcom/android/settings_ext/cz;->a(Ljava/lang/String;IIIIZ)V
 
     .line 61
     const-string v0, "sms_received_sound"
@@ -322,7 +322,7 @@
 
     move v4, v9
 
-    invoke-static/range {v0 .. v5}, Lcom/android/settings/cz;->a(Ljava/lang/String;IIIIZ)V
+    invoke-static/range {v0 .. v5}, Lcom/android/settings_ext/cz;->a(Ljava/lang/String;IIIIZ)V
 
     .line 62
     const-string v0, "unlock_set_or_change"
@@ -335,7 +335,7 @@
 
     const v4, 0x7f090ab4
 
-    invoke-static {v0, v1, v2, v3, v4}, Lcom/android/settings/cz;->a(Ljava/lang/String;IIII)V
+    invoke-static {v0, v1, v2, v3, v4}, Lcom/android/settings_ext/cz;->a(Ljava/lang/String;IIII)V
 
     .line 63
     const-string v0, "access_control_settings"
@@ -348,7 +348,7 @@
 
     const v4, 0x7f090ab5
 
-    invoke-static {v0, v1, v2, v3, v4}, Lcom/android/settings/cz;->a(Ljava/lang/String;IIII)V
+    invoke-static {v0, v1, v2, v3, v4}, Lcom/android/settings_ext/cz;->a(Ljava/lang/String;IIII)V
 
     .line 64
     const-string v0, "location_gps"
@@ -361,7 +361,7 @@
 
     const v4, 0x7f090ab6
 
-    invoke-static {v0, v1, v2, v3, v4}, Lcom/android/settings/cz;->a(Ljava/lang/String;IIII)V
+    invoke-static {v0, v1, v2, v3, v4}, Lcom/android/settings_ext/cz;->a(Ljava/lang/String;IIII)V
 
     .line 65
     const-string v0, "status_bar_settings"
@@ -374,7 +374,7 @@
 
     const v4, 0x7f090ab7
 
-    invoke-static {v0, v1, v2, v3, v4}, Lcom/android/settings/cz;->a(Ljava/lang/String;IIII)V
+    invoke-static {v0, v1, v2, v3, v4}, Lcom/android/settings_ext/cz;->a(Ljava/lang/String;IIII)V
 
     .line 66
     const-string v0, "micloud_settings"
@@ -387,7 +387,7 @@
 
     const v4, 0x7f090ab8
 
-    invoke-static/range {v0 .. v5}, Lcom/android/settings/cz;->a(Ljava/lang/String;IIIIZ)V
+    invoke-static/range {v0 .. v5}, Lcom/android/settings_ext/cz;->a(Ljava/lang/String;IIIIZ)V
 
     .line 67
     const-string v0, "mimoney_settings"
@@ -400,10 +400,10 @@
 
     const/4 v4, 0x0
 
-    invoke-static/range {v0 .. v5}, Lcom/android/settings/cz;->a(Ljava/lang/String;IIIIZ)V
+    invoke-static/range {v0 .. v5}, Lcom/android/settings_ext/cz;->a(Ljava/lang/String;IIIIZ)V
 
     .line 68
-    invoke-static {}, Lcom/android/settings/fc;->fL()Z
+    invoke-static {}, Lcom/android/settings_ext/fc;->fL()Z
 
     move-result v0
 
@@ -421,7 +421,7 @@
 
     const v4, 0x7f090aba
 
-    invoke-static {v0, v1, v2, v3, v4}, Lcom/android/settings/cz;->a(Ljava/lang/String;IIII)V
+    invoke-static {v0, v1, v2, v3, v4}, Lcom/android/settings_ext/cz;->a(Ljava/lang/String;IIII)V
 
     .line 74
     const-string v0, "led_settings"
@@ -434,7 +434,7 @@
 
     const v4, 0x7f090abb
 
-    invoke-static {v0, v1, v2, v3, v4}, Lcom/android/settings/cz;->a(Ljava/lang/String;IIII)V
+    invoke-static {v0, v1, v2, v3, v4}, Lcom/android/settings_ext/cz;->a(Ljava/lang/String;IIII)V
 
     .line 75
     const-string v0, "date_time_settings"
@@ -447,7 +447,7 @@
 
     const v4, 0x7f090abc
 
-    invoke-static {v0, v1, v2, v3, v4}, Lcom/android/settings/cz;->a(Ljava/lang/String;IIII)V
+    invoke-static {v0, v1, v2, v3, v4}, Lcom/android/settings_ext/cz;->a(Ljava/lang/String;IIII)V
 
     .line 76
     const-string v0, "language_settings"
@@ -460,7 +460,7 @@
 
     const v4, 0x7f090abd
 
-    invoke-static {v0, v1, v2, v3, v4}, Lcom/android/settings/cz;->a(Ljava/lang/String;IIII)V
+    invoke-static {v0, v1, v2, v3, v4}, Lcom/android/settings_ext/cz;->a(Ljava/lang/String;IIII)V
 
     .line 77
     const-string v0, "about_settings"
@@ -473,7 +473,7 @@
 
     const v4, 0x7f090abe
 
-    invoke-static {v0, v1, v2, v3, v4}, Lcom/android/settings/cz;->a(Ljava/lang/String;IIII)V
+    invoke-static {v0, v1, v2, v3, v4}, Lcom/android/settings_ext/cz;->a(Ljava/lang/String;IIII)V
 
     .line 78
     sget-boolean v0, Lmiui/os/Build;->IS_MITWO:Z
@@ -504,7 +504,7 @@
 
     const v4, 0x7f090abf
 
-    invoke-static/range {v0 .. v5}, Lcom/android/settings/cz;->a(Ljava/lang/String;IIIIZ)V
+    invoke-static/range {v0 .. v5}, Lcom/android/settings_ext/cz;->a(Ljava/lang/String;IIIIZ)V
 
     .line 82
     :cond_2
@@ -522,7 +522,7 @@
 
     move v4, v7
 
-    invoke-static/range {v0 .. v5}, Lcom/android/settings/cz;->a(Ljava/lang/String;IIIIZ)V
+    invoke-static/range {v0 .. v5}, Lcom/android/settings_ext/cz;->a(Ljava/lang/String;IIIIZ)V
 
     goto/16 :goto_0
 
@@ -538,7 +538,7 @@
 
     const v4, 0x7f090ab9
 
-    invoke-static {v0, v1, v2, v3, v4}, Lcom/android/settings/cz;->a(Ljava/lang/String;IIII)V
+    invoke-static {v0, v1, v2, v3, v4}, Lcom/android/settings_ext/cz;->a(Ljava/lang/String;IIII)V
 
     goto/16 :goto_1
 .end method
@@ -548,7 +548,7 @@
 
     .prologue
     .line 137
-    sget-object v0, Lcom/android/settings/cz;->lD:Ljava/util/HashMap;
+    sget-object v0, Lcom/android/settings_ext/cz;->lD:Ljava/util/HashMap;
 
     invoke-static {p0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -585,7 +585,7 @@
     .line 156
     if-le p0, v0, :cond_0
 
-    sget-object v1, Lcom/android/settings/cz;->lG:Ljava/util/ArrayList;
+    sget-object v1, Lcom/android/settings_ext/cz;->lG:Ljava/util/ArrayList;
 
     invoke-virtual {v1}, Ljava/util/ArrayList;->size()I
 
@@ -594,7 +594,7 @@
     if-ge p0, v1, :cond_0
 
     .line 157
-    sget-object v0, Lcom/android/settings/cz;->lG:Ljava/util/ArrayList;
+    sget-object v0, Lcom/android/settings_ext/cz;->lG:Ljava/util/ArrayList;
 
     invoke-virtual {v0, p0}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
 
@@ -616,12 +616,12 @@
 
     .prologue
     .line 163
-    invoke-static {p0}, Lcom/android/settings/cz;->B(I)I
+    invoke-static {p0}, Lcom/android/settings_ext/cz;->B(I)I
 
     move-result v0
 
     .line 164
-    sget-object v1, Lcom/android/settings/cz;->lD:Ljava/util/HashMap;
+    sget-object v1, Lcom/android/settings_ext/cz;->lD:Ljava/util/HashMap;
 
     invoke-virtual {v1}, Ljava/util/HashMap;->keySet()Ljava/util/Set;
 
@@ -634,15 +634,15 @@
     .line 165
     if-ge v0, v1, :cond_0
 
-    sget-object v1, Lcom/android/settings/cz;->lE:Ljava/util/ArrayList;
+    sget-object v1, Lcom/android/settings_ext/cz;->lE:Ljava/util/ArrayList;
 
     invoke-virtual {v1, v0}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
 
     move-result-object v0
 
-    check-cast v0, Lcom/android/settings/cA;
+    check-cast v0, Lcom/android/settings_ext/cA;
 
-    iget v0, v0, Lcom/android/settings/cA;->lK:I
+    iget v0, v0, Lcom/android/settings_ext/cA;->lK:I
 
     :goto_0
     return v0
@@ -670,7 +670,7 @@
 
     move v4, p4
 
-    invoke-static/range {v0 .. v5}, Lcom/android/settings/cz;->a(Ljava/lang/String;IIIIZ)V
+    invoke-static/range {v0 .. v5}, Lcom/android/settings_ext/cz;->a(Ljava/lang/String;IIIIZ)V
 
     .line 86
     return-void
@@ -681,14 +681,14 @@
 
     .prologue
     .line 89
-    sget-object v0, Lcom/android/settings/cz;->lE:Ljava/util/ArrayList;
+    sget-object v0, Lcom/android/settings_ext/cz;->lE:Ljava/util/ArrayList;
 
     invoke-virtual {v0}, Ljava/util/ArrayList;->size()I
 
     move-result v7
 
     .line 90
-    sget-object v0, Lcom/android/settings/cz;->lC:Ljava/util/HashMap;
+    sget-object v0, Lcom/android/settings_ext/cz;->lC:Ljava/util/HashMap;
 
     invoke-static {v7}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -697,7 +697,7 @@
     invoke-virtual {v0, p0, v1}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 91
-    sget-object v0, Lcom/android/settings/cz;->lD:Ljava/util/HashMap;
+    sget-object v0, Lcom/android/settings_ext/cz;->lD:Ljava/util/HashMap;
 
     invoke-static {p2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -710,9 +710,9 @@
     invoke-virtual {v0, v1, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 92
-    sget-object v8, Lcom/android/settings/cz;->lE:Ljava/util/ArrayList;
+    sget-object v8, Lcom/android/settings_ext/cz;->lE:Ljava/util/ArrayList;
 
-    new-instance v0, Lcom/android/settings/cA;
+    new-instance v0, Lcom/android/settings_ext/cA;
 
     move-object v1, p0
 
@@ -726,21 +726,21 @@
 
     move v6, p5
 
-    invoke-direct/range {v0 .. v6}, Lcom/android/settings/cA;-><init>(Ljava/lang/String;IIIIZ)V
+    invoke-direct/range {v0 .. v6}, Lcom/android/settings_ext/cA;-><init>(Ljava/lang/String;IIIIZ)V
 
     invoke-virtual {v8, v0}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
     .line 94
     if-eqz p4, :cond_0
 
-    invoke-static {p4}, Lcom/android/settings/cz;->y(I)Z
+    invoke-static {p4}, Lcom/android/settings_ext/cz;->y(I)Z
 
     move-result v0
 
     if-nez v0, :cond_0
 
     .line 95
-    sget-object v0, Lcom/android/settings/cz;->lF:Ljava/util/ArrayList;
+    sget-object v0, Lcom/android/settings_ext/cz;->lF:Ljava/util/ArrayList;
 
     invoke-static {p4}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -749,7 +749,7 @@
     invoke-virtual {v0, v1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
     .line 96
-    sget-object v0, Lcom/android/settings/cz;->lG:Ljava/util/ArrayList;
+    sget-object v0, Lcom/android/settings_ext/cz;->lG:Ljava/util/ArrayList;
 
     invoke-static {v7}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -816,7 +816,7 @@
     invoke-direct {v1}, Ljava/util/ArrayList;-><init>()V
 
     .line 143
-    sget-object v0, Lcom/android/settings/cz;->lE:Ljava/util/ArrayList;
+    sget-object v0, Lcom/android/settings_ext/cz;->lE:Ljava/util/ArrayList;
 
     invoke-virtual {v0}, Ljava/util/ArrayList;->iterator()Ljava/util/Iterator;
 
@@ -834,15 +834,15 @@
 
     move-result-object v0
 
-    check-cast v0, Lcom/android/settings/cA;
+    check-cast v0, Lcom/android/settings_ext/cA;
 
     .line 144
-    iget-boolean v3, v0, Lcom/android/settings/cA;->lM:Z
+    iget-boolean v3, v0, Lcom/android/settings_ext/cA;->lM:Z
 
     if-eqz v3, :cond_0
 
     .line 145
-    iget-object v0, v0, Lcom/android/settings/cA;->key:Ljava/lang/String;
+    iget-object v0, v0, Lcom/android/settings_ext/cA;->key:Ljava/lang/String;
 
     invoke-virtual {v1, v0}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
@@ -858,7 +858,7 @@
 
     .prologue
     .line 152
-    sget-object v0, Lcom/android/settings/cz;->lF:Ljava/util/ArrayList;
+    sget-object v0, Lcom/android/settings_ext/cz;->lF:Ljava/util/ArrayList;
 
     return-object v0
 .end method
@@ -868,7 +868,7 @@
 
     .prologue
     .line 169
-    sget-object v0, Lcom/android/settings/cz;->lE:Ljava/util/ArrayList;
+    sget-object v0, Lcom/android/settings_ext/cz;->lE:Ljava/util/ArrayList;
 
     invoke-virtual {v0}, Ljava/util/ArrayList;->size()I
 
@@ -886,15 +886,15 @@
     if-ge v1, v2, :cond_0
 
     .line 172
-    sget-object v0, Lcom/android/settings/cz;->lE:Ljava/util/ArrayList;
+    sget-object v0, Lcom/android/settings_ext/cz;->lE:Ljava/util/ArrayList;
 
     invoke-virtual {v0, v1}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
 
     move-result-object v0
 
-    check-cast v0, Lcom/android/settings/cA;
+    check-cast v0, Lcom/android/settings_ext/cA;
 
-    iget v0, v0, Lcom/android/settings/cA;->lI:I
+    iget v0, v0, Lcom/android/settings_ext/cA;->lI:I
 
     aput v0, v3, v1
 
@@ -915,7 +915,7 @@
 
     .prologue
     .line 124
-    sget-object v0, Lcom/android/settings/cz;->lC:Ljava/util/HashMap;
+    sget-object v0, Lcom/android/settings_ext/cz;->lC:Ljava/util/HashMap;
 
     invoke-virtual {v0, p0}, Ljava/util/HashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -953,7 +953,7 @@
     if-ne v2, p0, :cond_2
 
     .line 102
-    invoke-static {}, Lcom/android/settings/cz;->dH()Z
+    invoke-static {}, Lcom/android/settings_ext/cz;->dH()Z
 
     move-result v2
 
@@ -972,7 +972,7 @@
 
     .line 104
     :cond_2
-    sget-object v2, Lcom/android/settings/cz;->lH:Ljava/util/HashSet;
+    sget-object v2, Lcom/android/settings_ext/cz;->lH:Ljava/util/HashSet;
 
     invoke-static {p0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -998,7 +998,7 @@
     const/4 v0, 0x0
 
     .line 130
-    sget-object v1, Lcom/android/settings/cz;->lE:Ljava/util/ArrayList;
+    sget-object v1, Lcom/android/settings_ext/cz;->lE:Ljava/util/ArrayList;
 
     invoke-virtual {v1}, Ljava/util/ArrayList;->size()I
 
@@ -1007,15 +1007,15 @@
     if-ge p0, v1, :cond_0
 
     .line 131
-    sget-object v0, Lcom/android/settings/cz;->lE:Ljava/util/ArrayList;
+    sget-object v0, Lcom/android/settings_ext/cz;->lE:Ljava/util/ArrayList;
 
     invoke-virtual {v0, p0}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
 
     move-result-object v0
 
-    check-cast v0, Lcom/android/settings/cA;
+    check-cast v0, Lcom/android/settings_ext/cA;
 
-    iget-object v0, v0, Lcom/android/settings/cA;->key:Ljava/lang/String;
+    iget-object v0, v0, Lcom/android/settings_ext/cA;->key:Ljava/lang/String;
 
     .line 133
     :cond_0

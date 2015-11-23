@@ -1,4 +1,4 @@
-.class public Lcom/android/settings/fc;
+.class public Lcom/android/settings_ext/fc;
 .super Ljava/lang/Object;
 .source "OldmanHelper.java"
 
@@ -108,7 +108,7 @@
     const/4 v1, 0x0
 
     .line 48
-    invoke-static {}, Lcom/android/settings/fc;->fL()Z
+    invoke-static {}, Lcom/android/settings_ext/fc;->fL()Z
 
     move-result v0
 
@@ -194,7 +194,7 @@
     const/4 v1, 0x0
 
     .line 66
-    invoke-static {}, Lcom/android/settings/fc;->fL()Z
+    invoke-static {}, Lcom/android/settings_ext/fc;->fL()Z
 
     move-result v2
 
@@ -235,7 +235,7 @@
 
     .prologue
     .line 77
-    invoke-static {}, Lcom/android/settings/fc;->fL()Z
+    invoke-static {}, Lcom/android/settings_ext/fc;->fL()Z
 
     move-result v0
 
@@ -275,7 +275,7 @@
     .line 85
     iget-object v0, v0, Landroid/content/pm/ApplicationInfo;->packageName:Ljava/lang/String;
 
-    invoke-static {v0}, Lcom/android/settings/fc;->E(Ljava/lang/String;)Z
+    invoke-static {v0}, Lcom/android/settings_ext/fc;->E(Ljava/lang/String;)Z
 
     move-result v0
 

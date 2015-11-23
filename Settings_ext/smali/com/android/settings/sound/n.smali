@@ -1,4 +1,4 @@
-.class Lcom/android/settings/sound/n;
+.class Lcom/android/settings_ext/sound/n;
 .super Ljava/lang/Object;
 .source "AudioSettingsFragment.java"
 
@@ -7,16 +7,16 @@
 
 
 # instance fields
-.field final synthetic ajw:Lcom/android/settings/sound/l;
+.field final synthetic ajw:Lcom/android/settings_ext/sound/l;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/sound/l;)V
+.method constructor <init>(Lcom/android/settings_ext/sound/l;)V
     .locals 0
 
     .prologue
     .line 247
-    iput-object p1, p0, Lcom/android/settings/sound/n;->ajw:Lcom/android/settings/sound/l;
+    iput-object p1, p0, Lcom/android/settings_ext/sound/n;->ajw:Lcom/android/settings_ext/sound/l;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -37,11 +37,11 @@
     .line 251
     const-string v0, "android.intent.extra.ringtone.SHOW_DEFAULT"
 
-    iget-object v2, p0, Lcom/android/settings/sound/n;->ajw:Lcom/android/settings/sound/l;
+    iget-object v2, p0, Lcom/android/settings_ext/sound/n;->ajw:Lcom/android/settings_ext/sound/l;
 
-    iget-object v2, v2, Lcom/android/settings/sound/l;->ajq:Lcom/android/settings/sound/e;
+    iget-object v2, v2, Lcom/android/settings_ext/sound/l;->ajq:Lcom/android/settings_ext/sound/e;
 
-    invoke-static {v2}, Lcom/android/settings/sound/e;->c(Lcom/android/settings/sound/e;)Z
+    invoke-static {v2}, Lcom/android/settings_ext/sound/e;->c(Lcom/android/settings_ext/sound/e;)Z
 
     move-result v2
 
@@ -50,11 +50,11 @@
     .line 252
     const-string v0, "android.intent.extra.ringtone.SHOW_SILENT"
 
-    iget-object v2, p0, Lcom/android/settings/sound/n;->ajw:Lcom/android/settings/sound/l;
+    iget-object v2, p0, Lcom/android/settings_ext/sound/n;->ajw:Lcom/android/settings_ext/sound/l;
 
-    iget-object v2, v2, Lcom/android/settings/sound/l;->ajq:Lcom/android/settings/sound/e;
+    iget-object v2, v2, Lcom/android/settings_ext/sound/l;->ajq:Lcom/android/settings_ext/sound/e;
 
-    invoke-static {v2}, Lcom/android/settings/sound/e;->d(Lcom/android/settings/sound/e;)Z
+    invoke-static {v2}, Lcom/android/settings_ext/sound/e;->d(Lcom/android/settings_ext/sound/e;)Z
 
     move-result v2
 
@@ -63,11 +63,11 @@
     .line 253
     const-string v0, "android.intent.extra.ringtone.TYPE"
 
-    iget-object v2, p0, Lcom/android/settings/sound/n;->ajw:Lcom/android/settings/sound/l;
+    iget-object v2, p0, Lcom/android/settings_ext/sound/n;->ajw:Lcom/android/settings_ext/sound/l;
 
-    iget-object v2, v2, Lcom/android/settings/sound/l;->ajq:Lcom/android/settings/sound/e;
+    iget-object v2, v2, Lcom/android/settings_ext/sound/l;->ajq:Lcom/android/settings_ext/sound/e;
 
-    invoke-static {v2}, Lcom/android/settings/sound/e;->b(Lcom/android/settings/sound/e;)I
+    invoke-static {v2}, Lcom/android/settings_ext/sound/e;->b(Lcom/android/settings_ext/sound/e;)I
 
     move-result v2
 
@@ -76,11 +76,11 @@
     .line 254
     const-string v0, "android.intent.extra.ringtone.TITLE"
 
-    iget-object v2, p0, Lcom/android/settings/sound/n;->ajw:Lcom/android/settings/sound/l;
+    iget-object v2, p0, Lcom/android/settings_ext/sound/n;->ajw:Lcom/android/settings_ext/sound/l;
 
-    iget-object v2, v2, Lcom/android/settings/sound/l;->ajq:Lcom/android/settings/sound/e;
+    iget-object v2, v2, Lcom/android/settings_ext/sound/l;->ajq:Lcom/android/settings_ext/sound/e;
 
-    invoke-virtual {v2}, Lcom/android/settings/sound/e;->getActionBar()Lmiui/app/ActionBar;
+    invoke-virtual {v2}, Lcom/android/settings_ext/sound/e;->getActionBar()Lmiui/app/ActionBar;
 
     move-result-object v2
 
@@ -98,11 +98,11 @@
     invoke-virtual {v1, v0, v2}, Landroid/content/Intent;->setClassName(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
 
     .line 257
-    iget-object v0, p0, Lcom/android/settings/sound/n;->ajw:Lcom/android/settings/sound/l;
+    iget-object v0, p0, Lcom/android/settings_ext/sound/n;->ajw:Lcom/android/settings_ext/sound/l;
 
-    iget-object v0, v0, Lcom/android/settings/sound/l;->ajq:Lcom/android/settings/sound/e;
+    iget-object v0, v0, Lcom/android/settings_ext/sound/l;->ajq:Lcom/android/settings_ext/sound/e;
 
-    invoke-static {v0}, Lcom/android/settings/sound/e;->b(Lcom/android/settings/sound/e;)I
+    invoke-static {v0}, Lcom/android/settings_ext/sound/e;->b(Lcom/android/settings_ext/sound/e;)I
 
     move-result v0
 
@@ -119,11 +119,11 @@
     invoke-virtual {v1, v2, v0}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
 
     .line 272
-    iget-object v0, p0, Lcom/android/settings/sound/n;->ajw:Lcom/android/settings/sound/l;
+    iget-object v0, p0, Lcom/android/settings_ext/sound/n;->ajw:Lcom/android/settings_ext/sound/l;
 
-    iget-object v0, v0, Lcom/android/settings/sound/l;->ajq:Lcom/android/settings/sound/e;
+    iget-object v0, v0, Lcom/android/settings_ext/sound/l;->ajq:Lcom/android/settings_ext/sound/e;
 
-    invoke-virtual {v0, v1}, Lcom/android/settings/sound/e;->startActivity(Landroid/content/Intent;)V
+    invoke-virtual {v0, v1}, Lcom/android/settings_ext/sound/e;->startActivity(Landroid/content/Intent;)V
 
     .line 273
     return-void

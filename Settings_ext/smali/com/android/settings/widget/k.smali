@@ -1,19 +1,19 @@
-.class public Lcom/android/settings/widget/k;
+.class public Lcom/android/settings_ext/widget/k;
 .super Ljava/lang/Object;
 .source "InvertedChartAxis.java"
 
 # interfaces
-.implements Lcom/android/settings/widget/a;
+.implements Lcom/android/settings_ext/widget/a;
 
 
 # instance fields
 .field private aoV:F
 
-.field private final aqg:Lcom/android/settings/widget/a;
+.field private final aqg:Lcom/android/settings_ext/widget/a;
 
 
 # direct methods
-.method public constructor <init>(Lcom/android/settings/widget/a;)V
+.method public constructor <init>(Lcom/android/settings_ext/widget/a;)V
     .locals 0
 
     .prologue
@@ -21,7 +21,7 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 30
-    iput-object p1, p0, Lcom/android/settings/widget/k;->aqg:Lcom/android/settings/widget/a;
+    iput-object p1, p0, Lcom/android/settings_ext/widget/k;->aqg:Lcom/android/settings_ext/widget/a;
 
     .line 31
     return-void
@@ -34,9 +34,9 @@
 
     .prologue
     .line 56
-    iget-object v0, p0, Lcom/android/settings/widget/k;->aqg:Lcom/android/settings/widget/a;
+    iget-object v0, p0, Lcom/android/settings_ext/widget/k;->aqg:Lcom/android/settings_ext/widget/a;
 
-    invoke-interface {v0, p1, p2, p3, p4}, Lcom/android/settings/widget/a;->a(Landroid/content/res/Resources;Landroid/text/SpannableStringBuilder;J)J
+    invoke-interface {v0, p1, p2, p3, p4}, Lcom/android/settings_ext/widget/a;->a(Landroid/content/res/Resources;Landroid/text/SpannableStringBuilder;J)J
 
     move-result-wide v0
 
@@ -48,9 +48,9 @@
 
     .prologue
     .line 35
-    iget-object v0, p0, Lcom/android/settings/widget/k;->aqg:Lcom/android/settings/widget/a;
+    iget-object v0, p0, Lcom/android/settings_ext/widget/k;->aqg:Lcom/android/settings_ext/widget/a;
 
-    invoke-interface {v0, p1, p2, p3, p4}, Lcom/android/settings/widget/a;->c(JJ)Z
+    invoke-interface {v0, p1, p2, p3, p4}, Lcom/android/settings_ext/widget/a;->c(JJ)Z
 
     move-result v0
 
@@ -62,12 +62,12 @@
 
     .prologue
     .line 40
-    iput p1, p0, Lcom/android/settings/widget/k;->aoV:F
+    iput p1, p0, Lcom/android/settings_ext/widget/k;->aoV:F
 
     .line 41
-    iget-object v0, p0, Lcom/android/settings/widget/k;->aqg:Lcom/android/settings/widget/a;
+    iget-object v0, p0, Lcom/android/settings_ext/widget/k;->aqg:Lcom/android/settings_ext/widget/a;
 
-    invoke-interface {v0, p1}, Lcom/android/settings/widget/a;->k(F)Z
+    invoke-interface {v0, p1}, Lcom/android/settings_ext/widget/a;->k(F)Z
 
     move-result v0
 
@@ -79,13 +79,13 @@
 
     .prologue
     .line 51
-    iget-object v0, p0, Lcom/android/settings/widget/k;->aqg:Lcom/android/settings/widget/a;
+    iget-object v0, p0, Lcom/android/settings_ext/widget/k;->aqg:Lcom/android/settings_ext/widget/a;
 
-    iget v1, p0, Lcom/android/settings/widget/k;->aoV:F
+    iget v1, p0, Lcom/android/settings_ext/widget/k;->aoV:F
 
     sub-float/2addr v1, p1
 
-    invoke-interface {v0, v1}, Lcom/android/settings/widget/a;->l(F)J
+    invoke-interface {v0, v1}, Lcom/android/settings_ext/widget/a;->l(F)J
 
     move-result-wide v0
 
@@ -97,9 +97,9 @@
 
     .prologue
     .line 61
-    iget-object v0, p0, Lcom/android/settings/widget/k;->aqg:Lcom/android/settings/widget/a;
+    iget-object v0, p0, Lcom/android/settings_ext/widget/k;->aqg:Lcom/android/settings_ext/widget/a;
 
-    invoke-interface {v0}, Lcom/android/settings/widget/a;->sY()[F
+    invoke-interface {v0}, Lcom/android/settings_ext/widget/a;->sY()[F
 
     move-result-object v1
 
@@ -112,7 +112,7 @@
     if-ge v0, v2, :cond_0
 
     .line 63
-    iget v2, p0, Lcom/android/settings/widget/k;->aoV:F
+    iget v2, p0, Lcom/android/settings_ext/widget/k;->aoV:F
 
     aget v3, v1, v0
 
@@ -135,11 +135,11 @@
 
     .prologue
     .line 46
-    iget v0, p0, Lcom/android/settings/widget/k;->aoV:F
+    iget v0, p0, Lcom/android/settings_ext/widget/k;->aoV:F
 
-    iget-object v1, p0, Lcom/android/settings/widget/k;->aqg:Lcom/android/settings/widget/a;
+    iget-object v1, p0, Lcom/android/settings_ext/widget/k;->aqg:Lcom/android/settings_ext/widget/a;
 
-    invoke-interface {v1, p1, p2}, Lcom/android/settings/widget/a;->t(J)F
+    invoke-interface {v1, p1, p2}, Lcom/android/settings_ext/widget/a;->t(J)F
 
     move-result v1
 
@@ -153,9 +153,9 @@
 
     .prologue
     .line 70
-    iget-object v0, p0, Lcom/android/settings/widget/k;->aqg:Lcom/android/settings/widget/a;
+    iget-object v0, p0, Lcom/android/settings_ext/widget/k;->aqg:Lcom/android/settings_ext/widget/a;
 
-    invoke-interface {v0, p1, p2}, Lcom/android/settings/widget/a;->u(J)I
+    invoke-interface {v0, p1, p2}, Lcom/android/settings_ext/widget/a;->u(J)I
 
     move-result v0
 

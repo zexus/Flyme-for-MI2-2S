@@ -1,4 +1,4 @@
-.class final Lcom/android/settings/provider/c;
+.class final Lcom/android/settings_ext/provider/c;
 .super Ljava/lang/Thread;
 .source "MiuiSettingsUtil.java"
 
@@ -15,9 +15,9 @@
 
     .prologue
     .line 134
-    iput-object p1, p0, Lcom/android/settings/provider/c;->ahA:Ljava/util/ArrayList;
+    iput-object p1, p0, Lcom/android/settings_ext/provider/c;->ahA:Ljava/util/ArrayList;
 
-    iput-object p2, p0, Lcom/android/settings/provider/c;->val$context:Landroid/content/Context;
+    iput-object p2, p0, Lcom/android/settings_ext/provider/c;->val$context:Landroid/content/Context;
 
     invoke-direct {p0}, Ljava/lang/Thread;-><init>()V
 
@@ -31,7 +31,7 @@
 
     .prologue
     .line 137
-    iget-object v0, p0, Lcom/android/settings/provider/c;->ahA:Ljava/util/ArrayList;
+    iget-object v0, p0, Lcom/android/settings_ext/provider/c;->ahA:Ljava/util/ArrayList;
 
     invoke-virtual {v0}, Ljava/util/ArrayList;->iterator()Ljava/util/Iterator;
 
@@ -48,20 +48,20 @@
 
     move-result-object v0
 
-    check-cast v0, Lcom/android/settings/provider/d;
+    check-cast v0, Lcom/android/settings_ext/provider/d;
 
     .line 138
-    iget-object v2, p0, Lcom/android/settings/provider/c;->val$context:Landroid/content/Context;
+    iget-object v2, p0, Lcom/android/settings_ext/provider/c;->val$context:Landroid/content/Context;
 
-    iget-object v3, v0, Lcom/android/settings/provider/d;->key:Ljava/lang/String;
+    iget-object v3, v0, Lcom/android/settings_ext/provider/d;->key:Ljava/lang/String;
 
-    iget-object v4, v0, Lcom/android/settings/provider/d;->ahB:Ljava/lang/String;
+    iget-object v4, v0, Lcom/android/settings_ext/provider/d;->ahB:Ljava/lang/String;
 
-    iget v5, v0, Lcom/android/settings/provider/d;->index:I
+    iget v5, v0, Lcom/android/settings_ext/provider/d;->index:I
 
-    iget v0, v0, Lcom/android/settings/provider/d;->count:I
+    iget v0, v0, Lcom/android/settings_ext/provider/d;->count:I
 
-    invoke-static {v2, v3, v4, v5, v0}, Lcom/android/settings/provider/b;->b(Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;II)V
+    invoke-static {v2, v3, v4, v5, v0}, Lcom/android/settings_ext/provider/b;->b(Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;II)V
 
     goto :goto_0
 

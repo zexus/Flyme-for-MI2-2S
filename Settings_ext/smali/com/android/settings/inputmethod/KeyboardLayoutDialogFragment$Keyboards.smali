@@ -1,4 +1,4 @@
-.class public final Lcom/android/settings/inputmethod/KeyboardLayoutDialogFragment$Keyboards;
+.class public final Lcom/android/settings_ext/inputmethod/KeyboardLayoutDialogFragment$Keyboards;
 .super Ljava/lang/Object;
 .source "KeyboardLayoutDialogFragment.java"
 
@@ -22,12 +22,12 @@
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
-    iput-object v0, p0, Lcom/android/settings/inputmethod/KeyboardLayoutDialogFragment$Keyboards;->abJ:Ljava/util/ArrayList;
+    iput-object v0, p0, Lcom/android/settings_ext/inputmethod/KeyboardLayoutDialogFragment$Keyboards;->abJ:Ljava/util/ArrayList;
 
     .line 362
     const/4 v0, -0x1
 
-    iput v0, p0, Lcom/android/settings/inputmethod/KeyboardLayoutDialogFragment$Keyboards;->abK:I
+    iput v0, p0, Lcom/android/settings_ext/inputmethod/KeyboardLayoutDialogFragment$Keyboards;->abK:I
 
     return-void
 .end method

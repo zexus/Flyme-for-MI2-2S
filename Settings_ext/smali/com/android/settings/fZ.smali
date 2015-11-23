@@ -1,19 +1,19 @@
-.class Lcom/android/settings/fZ;
+.class Lcom/android/settings_ext/fZ;
 .super Landroid/content/BroadcastReceiver;
 .source "RestrictedSettingsFragment.java"
 
 
 # instance fields
-.field final synthetic we:Lcom/android/settings/RestrictedSettingsFragment;
+.field final synthetic we:Lcom/android/settings_ext/RestrictedSettingsFragment;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/RestrictedSettingsFragment;)V
+.method constructor <init>(Lcom/android/settings_ext/RestrictedSettingsFragment;)V
     .locals 0
 
     .prologue
     .line 64
-    iput-object p1, p0, Lcom/android/settings/fZ;->we:Lcom/android/settings/RestrictedSettingsFragment;
+    iput-object p1, p0, Lcom/android/settings_ext/fZ;->we:Lcom/android/settings_ext/RestrictedSettingsFragment;
 
     invoke-direct {p0}, Landroid/content/BroadcastReceiver;-><init>()V
 
@@ -29,23 +29,23 @@
     const/4 v1, 0x0
 
     .line 67
-    iget-object v0, p0, Lcom/android/settings/fZ;->we:Lcom/android/settings/RestrictedSettingsFragment;
+    iget-object v0, p0, Lcom/android/settings_ext/fZ;->we:Lcom/android/settings_ext/RestrictedSettingsFragment;
 
-    invoke-static {v0}, Lcom/android/settings/RestrictedSettingsFragment;->a(Lcom/android/settings/RestrictedSettingsFragment;)Z
+    invoke-static {v0}, Lcom/android/settings_ext/RestrictedSettingsFragment;->a(Lcom/android/settings_ext/RestrictedSettingsFragment;)Z
 
     move-result v0
 
     if-nez v0, :cond_0
 
     .line 68
-    iget-object v0, p0, Lcom/android/settings/fZ;->we:Lcom/android/settings/RestrictedSettingsFragment;
+    iget-object v0, p0, Lcom/android/settings_ext/fZ;->we:Lcom/android/settings_ext/RestrictedSettingsFragment;
 
-    invoke-static {v0, v1}, Lcom/android/settings/RestrictedSettingsFragment;->a(Lcom/android/settings/RestrictedSettingsFragment;Z)Z
+    invoke-static {v0, v1}, Lcom/android/settings_ext/RestrictedSettingsFragment;->a(Lcom/android/settings_ext/RestrictedSettingsFragment;Z)Z
 
     .line 69
-    iget-object v0, p0, Lcom/android/settings/fZ;->we:Lcom/android/settings/RestrictedSettingsFragment;
+    iget-object v0, p0, Lcom/android/settings_ext/fZ;->we:Lcom/android/settings_ext/RestrictedSettingsFragment;
 
-    invoke-static {v0, v1}, Lcom/android/settings/RestrictedSettingsFragment;->b(Lcom/android/settings/RestrictedSettingsFragment;Z)Z
+    invoke-static {v0, v1}, Lcom/android/settings_ext/RestrictedSettingsFragment;->b(Lcom/android/settings_ext/RestrictedSettingsFragment;Z)Z
 
     .line 71
     :cond_0

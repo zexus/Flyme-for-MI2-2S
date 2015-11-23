@@ -1,4 +1,4 @@
-.class Lcom/android/settings/dndmode/f;
+.class Lcom/android/settings_ext/dndmode/f;
 .super Ljava/lang/Object;
 .source "AlarmContentFragment.java"
 
@@ -7,16 +7,16 @@
 
 
 # instance fields
-.field final synthetic Wt:Lcom/android/settings/dndmode/c;
+.field final synthetic Wt:Lcom/android/settings_ext/dndmode/c;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/dndmode/c;)V
+.method constructor <init>(Lcom/android/settings_ext/dndmode/c;)V
     .locals 0
 
     .prologue
     .line 72
-    iput-object p1, p0, Lcom/android/settings/dndmode/f;->Wt:Lcom/android/settings/dndmode/c;
+    iput-object p1, p0, Lcom/android/settings_ext/dndmode/f;->Wt:Lcom/android/settings_ext/dndmode/c;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -37,9 +37,9 @@
     move-result v0
 
     .line 76
-    iget-object v1, p0, Lcom/android/settings/dndmode/f;->Wt:Lcom/android/settings/dndmode/c;
+    iget-object v1, p0, Lcom/android/settings_ext/dndmode/f;->Wt:Lcom/android/settings_ext/dndmode/c;
 
-    invoke-static {v1}, Lcom/android/settings/dndmode/c;->a(Lcom/android/settings/dndmode/c;)Landroid/service/notification/ZenModeConfig;
+    invoke-static {v1}, Lcom/android/settings_ext/dndmode/c;->a(Lcom/android/settings_ext/dndmode/c;)Landroid/service/notification/ZenModeConfig;
 
     move-result-object v1
 
@@ -78,9 +78,9 @@
     invoke-static {v1, v2}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
     .line 78
-    iget-object v1, p0, Lcom/android/settings/dndmode/f;->Wt:Lcom/android/settings/dndmode/c;
+    iget-object v1, p0, Lcom/android/settings_ext/dndmode/f;->Wt:Lcom/android/settings_ext/dndmode/c;
 
-    invoke-static {v1}, Lcom/android/settings/dndmode/c;->a(Lcom/android/settings/dndmode/c;)Landroid/service/notification/ZenModeConfig;
+    invoke-static {v1}, Lcom/android/settings_ext/dndmode/c;->a(Lcom/android/settings_ext/dndmode/c;)Landroid/service/notification/ZenModeConfig;
 
     move-result-object v1
 
@@ -92,9 +92,9 @@
     iput-boolean v0, v1, Landroid/service/notification/ZenModeConfig;->allowEvents:Z
 
     .line 80
-    iget-object v0, p0, Lcom/android/settings/dndmode/f;->Wt:Lcom/android/settings/dndmode/c;
+    iget-object v0, p0, Lcom/android/settings_ext/dndmode/f;->Wt:Lcom/android/settings_ext/dndmode/c;
 
-    invoke-static {v0, v1}, Lcom/android/settings/dndmode/c;->a(Lcom/android/settings/dndmode/c;Landroid/service/notification/ZenModeConfig;)Z
+    invoke-static {v0, v1}, Lcom/android/settings_ext/dndmode/c;->a(Lcom/android/settings_ext/dndmode/c;Landroid/service/notification/ZenModeConfig;)Z
 
     move-result v0
 

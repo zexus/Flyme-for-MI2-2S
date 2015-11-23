@@ -1,4 +1,4 @@
-.class public final Lcom/android/settings/hl;
+.class public final Lcom/android/settings_ext/hl;
 .super Ljava/lang/Object;
 .source "Utils.java"
 
@@ -21,7 +21,7 @@
 
     fill-array-data v0, :array_0
 
-    sput-object v0, Lcom/android/settings/hl;->zB:[I
+    sput-object v0, Lcom/android/settings_ext/hl;->zB:[I
 
     return-void
 
@@ -126,7 +126,7 @@
     move-result-object v0
 
     .line 342
-    invoke-static {v0}, Lcom/android/settings/hl;->a(Landroid/net/LinkProperties;)Ljava/lang/String;
+    invoke-static {v0}, Lcom/android/settings_ext/hl;->a(Landroid/net/LinkProperties;)Ljava/lang/String;
 
     move-result-object v0
 
@@ -138,7 +138,7 @@
 
     .prologue
     .line 556
-    invoke-static {p0}, Lcom/android/settings/hl;->Q(Landroid/content/Context;)Ljava/lang/String;
+    invoke-static {p0}, Lcom/android/settings_ext/hl;->Q(Landroid/content/Context;)Ljava/lang/String;
 
     move-result-object v0
 
@@ -153,7 +153,7 @@
     return-object v0
 
     :cond_0
-    invoke-static {p0}, Lcom/android/settings/hl;->R(Landroid/content/Context;)Ljava/lang/String;
+    invoke-static {p0}, Lcom/android/settings_ext/hl;->R(Landroid/content/Context;)Ljava/lang/String;
 
     move-result-object v0
 
@@ -725,9 +725,9 @@
     .line 627
     const v1, 0x104000a
 
-    new-instance v2, Lcom/android/settings/hm;
+    new-instance v2, Lcom/android/settings_ext/hm;
 
-    invoke-direct {v2, p2}, Lcom/android/settings/hm;-><init>(Ljava/lang/Runnable;)V
+    invoke-direct {v2, p2}, Lcom/android/settings_ext/hm;-><init>(Ljava/lang/Runnable;)V
 
     invoke-virtual {v0, v1, v2}, Landroid/app/AlertDialog$Builder;->setPositiveButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
@@ -758,7 +758,7 @@
     invoke-direct {v0, v1}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
 
     .line 703
-    const-class v1, Lcom/android/settings/SubSettings;
+    const-class v1, Lcom/android/settings_ext/SubSettings;
 
     invoke-virtual {v0, p0, v1}, Landroid/content/Intent;->setClass(Landroid/content/Context;Ljava/lang/Class;)Landroid/content/Intent;
 
@@ -862,7 +862,7 @@
     move-result-object v0
 
     .line 974
-    invoke-static {v0}, Lcom/android/settings/hl;->a(Landroid/content/pm/PackageInfo;)Landroid/content/pm/Signature;
+    invoke-static {v0}, Lcom/android/settings_ext/hl;->a(Landroid/content/pm/PackageInfo;)Landroid/content/pm/Signature;
     :try_end_0
     .catch Landroid/content/pm/PackageManager$NameNotFoundException; {:try_start_0 .. :try_end_0} :catch_0
 
@@ -902,7 +902,7 @@
     if-eqz v0, :cond_0
 
     .line 933
-    invoke-static {p0, v0}, Lcom/android/settings/a/a;->a(Landroid/content/Context;Landroid/graphics/Bitmap;)Lcom/android/settings/a/a;
+    invoke-static {p0, v0}, Lcom/android/settings_ext/a/a;->a(Landroid/content/Context;Landroid/graphics/Bitmap;)Lcom/android/settings_ext/a/a;
 
     move-result-object v0
 
@@ -978,7 +978,7 @@
     if-nez v3, :cond_1
 
     .line 794
-    invoke-static {p1, v0}, Lcom/android/settings/hl;->a(Landroid/os/UserManager;Landroid/os/UserHandle;)Z
+    invoke-static {p1, v0}, Lcom/android/settings_ext/hl;->a(Landroid/os/UserManager;Landroid/os/UserHandle;)Z
 
     move-result v3
 
@@ -1014,7 +1014,7 @@
     .line 802
     if-eqz v4, :cond_2
 
-    invoke-static {p1, v0}, Lcom/android/settings/hl;->a(Landroid/os/UserManager;Landroid/os/UserHandle;)Z
+    invoke-static {p1, v0}, Lcom/android/settings_ext/hl;->a(Landroid/os/UserManager;Landroid/os/UserHandle;)Z
 
     move-result v3
 
@@ -1045,7 +1045,7 @@
     .line 810
     if-eqz v4, :cond_3
 
-    invoke-static {p1, v0}, Lcom/android/settings/hl;->a(Landroid/os/UserManager;Landroid/os/UserHandle;)Z
+    invoke-static {p1, v0}, Lcom/android/settings_ext/hl;->a(Landroid/os/UserManager;Landroid/os/UserHandle;)Z
     :try_end_0
     .catch Landroid/os/RemoteException; {:try_start_0 .. :try_end_0} :catch_0
 
@@ -1086,7 +1086,7 @@
     goto :goto_3
 .end method
 
-.method public static a(Landroid/os/UserManager;Landroid/content/Context;)Lcom/android/settings/hj;
+.method public static a(Landroid/os/UserManager;Landroid/content/Context;)Lcom/android/settings_ext/hj;
     .locals 6
 
     .prologue
@@ -1150,7 +1150,7 @@
     if-ge v1, v4, :cond_1
 
     .line 767
-    new-instance v5, Lcom/android/settings/hk;
+    new-instance v5, Lcom/android/settings_ext/hk;
 
     invoke-interface {v2, v1}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
@@ -1158,7 +1158,7 @@
 
     check-cast v0, Landroid/os/UserHandle;
 
-    invoke-direct {v5, v0, p0, p1}, Lcom/android/settings/hk;-><init>(Landroid/os/UserHandle;Landroid/os/UserManager;Landroid/content/Context;)V
+    invoke-direct {v5, v0, p0, p1}, Lcom/android/settings_ext/hk;-><init>(Landroid/os/UserHandle;Landroid/os/UserManager;Landroid/content/Context;)V
 
     invoke-virtual {v3, v5}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
@@ -1171,9 +1171,9 @@
 
     .line 769
     :cond_1
-    new-instance v0, Lcom/android/settings/hj;
+    new-instance v0, Lcom/android/settings_ext/hj;
 
-    invoke-direct {v0, p1, v3}, Lcom/android/settings/hj;-><init>(Landroid/content/Context;Ljava/util/ArrayList;)V
+    invoke-direct {v0, p1, v3}, Lcom/android/settings_ext/hj;-><init>(Landroid/content/Context;Ljava/util/ArrayList;)V
 
     goto :goto_0
 .end method
@@ -1214,7 +1214,7 @@
 
     div-double/2addr v0, v2
 
-    invoke-static {v0, v1}, Lcom/android/settings/hl;->a(D)Ljava/lang/String;
+    invoke-static {v0, v1}, Lcom/android/settings_ext/hl;->a(D)Ljava/lang/String;
 
     move-result-object v0
 
@@ -1671,7 +1671,7 @@
     move-result-object v0
 
     .line 353
-    invoke-static {v0}, Lcom/android/settings/hl;->a(Landroid/net/LinkProperties;)Ljava/lang/String;
+    invoke-static {v0}, Lcom/android/settings_ext/hl;->a(Landroid/net/LinkProperties;)Ljava/lang/String;
 
     move-result-object v0
 
@@ -1796,7 +1796,7 @@
 
     move-object v6, p6
 
-    invoke-static/range {v0 .. v7}, Lcom/android/settings/hl;->a(Landroid/content/Context;Ljava/lang/String;Landroid/os/Bundle;Landroid/app/Fragment;IILjava/lang/CharSequence;Z)V
+    invoke-static/range {v0 .. v7}, Lcom/android/settings_ext/hl;->a(Landroid/content/Context;Ljava/lang/String;Landroid/os/Bundle;Landroid/app/Fragment;IILjava/lang/CharSequence;Z)V
 
     .line 662
     return-void
@@ -1819,7 +1819,7 @@
 
     move v5, p7
 
-    invoke-static/range {v0 .. v5}, Lcom/android/settings/hl;->a(Landroid/content/Context;Ljava/lang/String;Landroid/os/Bundle;ILjava/lang/CharSequence;Z)Landroid/content/Intent;
+    invoke-static/range {v0 .. v5}, Lcom/android/settings_ext/hl;->a(Landroid/content/Context;Ljava/lang/String;Landroid/os/Bundle;ILjava/lang/CharSequence;Z)Landroid/content/Intent;
 
     move-result-object v0
 
@@ -2008,7 +2008,7 @@
     invoke-virtual {p2, v0}, Landroid/widget/ListView;->setClipToPadding(Z)V
 
     .line 456
-    invoke-static {p0, p1, p2, p3}, Lcom/android/settings/hl;->a(Landroid/view/ViewGroup;Landroid/view/View;Landroid/view/View;Z)V
+    invoke-static {p0, p1, p2, p3}, Lcom/android/settings_ext/hl;->a(Landroid/view/ViewGroup;Landroid/view/View;Landroid/view/View;Z)V
 
     .line 457
     return-void
@@ -2220,7 +2220,7 @@
     goto :goto_0
 .end method
 
-.method public static a(Landroid/content/Context;Lcom/android/settings/dashboard/DashboardTile;)Z
+.method public static a(Landroid/content/Context;Lcom/android/settings_ext/dashboard/DashboardTile;)Z
     .locals 8
 
     .prologue
@@ -2229,7 +2229,7 @@
     const/4 v2, 0x0
 
     .line 195
-    iget-object v0, p1, Lcom/android/settings/dashboard/DashboardTile;->intent:Landroid/content/Intent;
+    iget-object v0, p1, Lcom/android/settings_ext/dashboard/DashboardTile;->intent:Landroid/content/Intent;
 
     .line 196
     if-eqz v0, :cond_2
@@ -2352,10 +2352,10 @@
 
     .line 235
     :cond_0
-    iput-object v2, p1, Lcom/android/settings/dashboard/DashboardTile;->title:Ljava/lang/CharSequence;
+    iput-object v2, p1, Lcom/android/settings_ext/dashboard/DashboardTile;->title:Ljava/lang/CharSequence;
 
     .line 236
-    iput-object v1, p1, Lcom/android/settings/dashboard/DashboardTile;->summary:Ljava/lang/CharSequence;
+    iput-object v1, p1, Lcom/android/settings_ext/dashboard/DashboardTile;->summary:Ljava/lang/CharSequence;
 
     .line 238
     new-instance v1, Landroid/content/Intent;
@@ -2374,7 +2374,7 @@
 
     move-result-object v0
 
-    iput-object v0, p1, Lcom/android/settings/dashboard/DashboardTile;->intent:Landroid/content/Intent;
+    iput-object v0, p1, Lcom/android/settings_ext/dashboard/DashboardTile;->intent:Landroid/content/Intent;
 
     .line 241
     const/4 v0, 0x1
@@ -2650,34 +2650,34 @@
     const/4 v1, 0x0
 
     .line 956
-    sget-object v2, Lcom/android/settings/hl;->zC:[Landroid/content/pm/Signature;
+    sget-object v2, Lcom/android/settings_ext/hl;->zC:[Landroid/content/pm/Signature;
 
     if-nez v2, :cond_0
 
     .line 957
     new-array v2, v0, [Landroid/content/pm/Signature;
 
-    invoke-static {p0}, Lcom/android/settings/hl;->a(Landroid/content/pm/PackageManager;)Landroid/content/pm/Signature;
+    invoke-static {p0}, Lcom/android/settings_ext/hl;->a(Landroid/content/pm/PackageManager;)Landroid/content/pm/Signature;
 
     move-result-object v3
 
     aput-object v3, v2, v1
 
-    sput-object v2, Lcom/android/settings/hl;->zC:[Landroid/content/pm/Signature;
+    sput-object v2, Lcom/android/settings_ext/hl;->zC:[Landroid/content/pm/Signature;
 
     .line 959
     :cond_0
-    sget-object v2, Lcom/android/settings/hl;->zC:[Landroid/content/pm/Signature;
+    sget-object v2, Lcom/android/settings_ext/hl;->zC:[Landroid/content/pm/Signature;
 
     aget-object v2, v2, v1
 
     if-eqz v2, :cond_1
 
-    sget-object v2, Lcom/android/settings/hl;->zC:[Landroid/content/pm/Signature;
+    sget-object v2, Lcom/android/settings_ext/hl;->zC:[Landroid/content/pm/Signature;
 
     aget-object v2, v2, v1
 
-    invoke-static {p1}, Lcom/android/settings/hl;->a(Landroid/content/pm/PackageInfo;)Landroid/content/pm/Signature;
+    invoke-static {p1}, Lcom/android/settings_ext/hl;->a(Landroid/content/pm/PackageInfo;)Landroid/content/pm/Signature;
 
     move-result-object v3
 
@@ -2771,7 +2771,7 @@
 
     div-double/2addr v0, v2
 
-    invoke-static {v0, v1}, Lcom/android/settings/hl;->a(D)Ljava/lang/String;
+    invoke-static {v0, v1}, Lcom/android/settings_ext/hl;->a(D)Ljava/lang/String;
 
     move-result-object v0
 
@@ -2922,7 +2922,7 @@
     if-eqz p1, :cond_0
 
     .line 549
-    invoke-static {p0}, Lcom/android/settings/hl;->R(Landroid/content/Context;)Ljava/lang/String;
+    invoke-static {p0}, Lcom/android/settings_ext/hl;->R(Landroid/content/Context;)Ljava/lang/String;
 
     move-result-object v0
 
@@ -2931,7 +2931,7 @@
     return-object v0
 
     :cond_0
-    invoke-static {p0}, Lcom/android/settings/hl;->P(Landroid/content/Context;)Ljava/lang/String;
+    invoke-static {p0}, Lcom/android/settings_ext/hl;->P(Landroid/content/Context;)Ljava/lang/String;
 
     move-result-object v0
 
@@ -2991,11 +2991,11 @@
 
     .prologue
     .line 411
-    invoke-static {p0}, Lcom/android/settings/hl;->o(Landroid/content/Intent;)I
+    invoke-static {p0}, Lcom/android/settings_ext/hl;->o(Landroid/content/Intent;)I
 
     move-result v0
 
-    invoke-static {v0}, Lcom/android/settings/hl;->ai(I)Ljava/lang/String;
+    invoke-static {v0}, Lcom/android/settings_ext/hl;->ai(I)Ljava/lang/String;
 
     move-result-object v0
 

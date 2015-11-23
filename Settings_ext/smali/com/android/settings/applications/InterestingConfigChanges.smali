@@ -1,4 +1,4 @@
-.class Lcom/android/settings/applications/InterestingConfigChanges;
+.class Lcom/android/settings_ext/applications/InterestingConfigChanges;
 .super Ljava/lang/Object;
 .source "InterestingConfigChanges.java"
 
@@ -22,7 +22,7 @@
 
     invoke-direct {v0}, Landroid/content/res/Configuration;-><init>()V
 
-    iput-object v0, p0, Lcom/android/settings/applications/InterestingConfigChanges;->mLastConfiguration:Landroid/content/res/Configuration;
+    iput-object v0, p0, Lcom/android/settings_ext/applications/InterestingConfigChanges;->mLastConfiguration:Landroid/content/res/Configuration;
 
     return-void
 .end method
@@ -38,7 +38,7 @@
     const/4 v0, 0x0
 
     .line 30
-    iget-object v2, p0, Lcom/android/settings/applications/InterestingConfigChanges;->mLastConfiguration:Landroid/content/res/Configuration;
+    iget-object v2, p0, Lcom/android/settings_ext/applications/InterestingConfigChanges;->mLastConfiguration:Landroid/content/res/Configuration;
 
     invoke-virtual {p1}, Landroid/content/res/Resources;->getConfiguration()Landroid/content/res/Configuration;
 
@@ -49,7 +49,7 @@
     move-result v3
 
     .line 31
-    iget v2, p0, Lcom/android/settings/applications/InterestingConfigChanges;->CN:I
+    iget v2, p0, Lcom/android/settings_ext/applications/InterestingConfigChanges;->CN:I
 
     invoke-virtual {p1}, Landroid/content/res/Resources;->getDisplayMetrics()Landroid/util/DisplayMetrics;
 
@@ -79,7 +79,7 @@
 
     iget v0, v0, Landroid/util/DisplayMetrics;->densityDpi:I
 
-    iput v0, p0, Lcom/android/settings/applications/InterestingConfigChanges;->CN:I
+    iput v0, p0, Lcom/android/settings_ext/applications/InterestingConfigChanges;->CN:I
 
     move v0, v1
 

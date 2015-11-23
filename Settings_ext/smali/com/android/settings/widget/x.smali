@@ -1,5 +1,5 @@
-.class final Lcom/android/settings/widget/x;
-.super Lcom/android/settings/widget/C;
+.class final Lcom/android/settings_ext/widget/x;
+.super Lcom/android/settings_ext/widget/C;
 .source "SettingsAppWidgetProvider.java"
 
 
@@ -11,17 +11,17 @@
     .line 439
     const/4 v0, 0x0
 
-    invoke-direct {p0, v0}, Lcom/android/settings/widget/C;-><init>(Lcom/android/settings/widget/w;)V
+    invoke-direct {p0, v0}, Lcom/android/settings_ext/widget/C;-><init>(Lcom/android/settings_ext/widget/w;)V
 
     return-void
 .end method
 
-.method synthetic constructor <init>(Lcom/android/settings/widget/w;)V
+.method synthetic constructor <init>(Lcom/android/settings_ext/widget/w;)V
     .locals 0
 
     .prologue
     .line 439
-    invoke-direct {p0}, Lcom/android/settings/widget/x;-><init>()V
+    invoke-direct {p0}, Lcom/android/settings_ext/widget/x;-><init>()V
 
     return-void
 .end method
@@ -100,14 +100,14 @@
 
     .prologue
     .line 451
-    invoke-static {}, Lcom/android/settings/widget/SettingsAppWidgetProvider;->tF()Lcom/android/settings/bluetooth/LocalBluetoothAdapter;
+    invoke-static {}, Lcom/android/settings_ext/widget/SettingsAppWidgetProvider;->tF()Lcom/android/settings_ext/bluetooth/LocalBluetoothAdapter;
 
     move-result-object v0
 
     if-nez v0, :cond_1
 
     .line 452
-    invoke-static {p1}, Lcom/android/settings/bluetooth/LocalBluetoothManager;->ai(Landroid/content/Context;)Lcom/android/settings/bluetooth/LocalBluetoothManager;
+    invoke-static {p1}, Lcom/android/settings_ext/bluetooth/LocalBluetoothManager;->ai(Landroid/content/Context;)Lcom/android/settings_ext/bluetooth/LocalBluetoothManager;
 
     move-result-object v0
 
@@ -123,23 +123,23 @@
 
     .line 456
     :cond_0
-    invoke-virtual {v0}, Lcom/android/settings/bluetooth/LocalBluetoothManager;->nb()Lcom/android/settings/bluetooth/LocalBluetoothAdapter;
+    invoke-virtual {v0}, Lcom/android/settings_ext/bluetooth/LocalBluetoothManager;->nb()Lcom/android/settings_ext/bluetooth/LocalBluetoothAdapter;
 
     move-result-object v0
 
-    invoke-static {v0}, Lcom/android/settings/widget/SettingsAppWidgetProvider;->a(Lcom/android/settings/bluetooth/LocalBluetoothAdapter;)Lcom/android/settings/bluetooth/LocalBluetoothAdapter;
+    invoke-static {v0}, Lcom/android/settings_ext/widget/SettingsAppWidgetProvider;->a(Lcom/android/settings_ext/bluetooth/LocalBluetoothAdapter;)Lcom/android/settings_ext/bluetooth/LocalBluetoothAdapter;
 
     .line 458
     :cond_1
-    invoke-static {}, Lcom/android/settings/widget/SettingsAppWidgetProvider;->tF()Lcom/android/settings/bluetooth/LocalBluetoothAdapter;
+    invoke-static {}, Lcom/android/settings_ext/widget/SettingsAppWidgetProvider;->tF()Lcom/android/settings_ext/bluetooth/LocalBluetoothAdapter;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/android/settings/bluetooth/LocalBluetoothAdapter;->mY()I
+    invoke-virtual {v0}, Lcom/android/settings_ext/bluetooth/LocalBluetoothAdapter;->mY()I
 
     move-result v0
 
-    invoke-static {v0}, Lcom/android/settings/widget/x;->cQ(I)I
+    invoke-static {v0}, Lcom/android/settings_ext/widget/x;->cQ(I)I
 
     move-result v0
 
@@ -178,11 +178,11 @@
     move-result v0
 
     .line 486
-    invoke-static {v0}, Lcom/android/settings/widget/x;->cQ(I)I
+    invoke-static {v0}, Lcom/android/settings_ext/widget/x;->cQ(I)I
 
     move-result v0
 
-    invoke-virtual {p0, p1, v0}, Lcom/android/settings/widget/x;->setCurrentState(Landroid/content/Context;I)V
+    invoke-virtual {p0, p1, v0}, Lcom/android/settings_ext/widget/x;->setCurrentState(Landroid/content/Context;I)V
 
     goto :goto_0
 .end method
@@ -192,7 +192,7 @@
 
     .prologue
     .line 463
-    invoke-static {}, Lcom/android/settings/widget/SettingsAppWidgetProvider;->tF()Lcom/android/settings/bluetooth/LocalBluetoothAdapter;
+    invoke-static {}, Lcom/android/settings_ext/widget/SettingsAppWidgetProvider;->tF()Lcom/android/settings_ext/bluetooth/LocalBluetoothAdapter;
 
     move-result-object v0
 
@@ -211,15 +211,15 @@
 
     .line 471
     :cond_0
-    new-instance v0, Lcom/android/settings/widget/y;
+    new-instance v0, Lcom/android/settings_ext/widget/y;
 
-    invoke-direct {v0, p0, p2}, Lcom/android/settings/widget/y;-><init>(Lcom/android/settings/widget/x;Z)V
+    invoke-direct {v0, p0, p2}, Lcom/android/settings_ext/widget/y;-><init>(Lcom/android/settings_ext/widget/x;Z)V
 
     const/4 v1, 0x0
 
     new-array v1, v1, [Ljava/lang/Void;
 
-    invoke-virtual {v0, v1}, Lcom/android/settings/widget/y;->execute([Ljava/lang/Object;)Landroid/os/AsyncTask;
+    invoke-virtual {v0, v1}, Lcom/android/settings_ext/widget/y;->execute([Ljava/lang/Object;)Landroid/os/AsyncTask;
 
     goto :goto_0
 .end method

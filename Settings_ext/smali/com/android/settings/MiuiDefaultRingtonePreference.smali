@@ -1,5 +1,5 @@
-.class public Lcom/android/settings/MiuiDefaultRingtonePreference;
-.super Lcom/android/settings/DefaultRingtonePreference;
+.class public Lcom/android/settings_ext/MiuiDefaultRingtonePreference;
+.super Lcom/android/settings_ext/DefaultRingtonePreference;
 .source "MiuiDefaultRingtonePreference.java"
 
 
@@ -9,7 +9,7 @@
 
     .prologue
     .line 23
-    invoke-direct {p0, p1, p2}, Lcom/android/settings/DefaultRingtonePreference;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
+    invoke-direct {p0, p1, p2}, Lcom/android/settings_ext/DefaultRingtonePreference;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
     .line 25
     const/4 v0, 0x0
@@ -19,7 +19,7 @@
 
     if-nez v1, :cond_0
 
-    invoke-virtual {p0}, Lcom/android/settings/MiuiDefaultRingtonePreference;->getRingtoneType()I
+    invoke-virtual {p0}, Lcom/android/settings_ext/MiuiDefaultRingtonePreference;->getRingtoneType()I
 
     move-result v1
 
@@ -39,14 +39,14 @@
 
     .line 29
     :cond_0
-    invoke-virtual {p0}, Lcom/android/settings/MiuiDefaultRingtonePreference;->getExtras()Landroid/os/Bundle;
+    invoke-virtual {p0}, Lcom/android/settings_ext/MiuiDefaultRingtonePreference;->getExtras()Landroid/os/Bundle;
 
     move-result-object v0
 
     .line 30
     const-string v1, "android.intent.extra.ringtone.SHOW_DEFAULT"
 
-    invoke-virtual {p0}, Lcom/android/settings/MiuiDefaultRingtonePreference;->getShowDefault()Z
+    invoke-virtual {p0}, Lcom/android/settings_ext/MiuiDefaultRingtonePreference;->getShowDefault()Z
 
     move-result v2
 
@@ -55,7 +55,7 @@
     .line 31
     const-string v1, "android.intent.extra.ringtone.SHOW_SILENT"
 
-    invoke-virtual {p0}, Lcom/android/settings/MiuiDefaultRingtonePreference;->getShowSilent()Z
+    invoke-virtual {p0}, Lcom/android/settings_ext/MiuiDefaultRingtonePreference;->getShowSilent()Z
 
     move-result v2
 
@@ -64,7 +64,7 @@
     .line 32
     const-string v1, "android.intent.extra.ringtone.TYPE"
 
-    invoke-virtual {p0}, Lcom/android/settings/MiuiDefaultRingtonePreference;->getRingtoneType()I
+    invoke-virtual {p0}, Lcom/android/settings_ext/MiuiDefaultRingtonePreference;->getRingtoneType()I
 
     move-result v2
 
@@ -75,7 +75,7 @@
 
     if-eqz v0, :cond_2
 
-    const-class v0, Lcom/android/settings/sound/e;
+    const-class v0, Lcom/android/settings_ext/sound/e;
 
     invoke-virtual {v0}, Ljava/lang/Class;->getName()Ljava/lang/String;
 
@@ -84,14 +84,14 @@
     .line 38
     :cond_1
     :goto_0
-    invoke-virtual {p0, v0}, Lcom/android/settings/MiuiDefaultRingtonePreference;->setFragment(Ljava/lang/String;)V
+    invoke-virtual {p0, v0}, Lcom/android/settings_ext/MiuiDefaultRingtonePreference;->setFragment(Ljava/lang/String;)V
 
     .line 39
     return-void
 
     .line 34
     :cond_2
-    invoke-static {}, Lcom/android/settings/ringtone/MultiRingtoneSettingUtils;->ro()Ljava/lang/String;
+    invoke-static {}, Lcom/android/settings_ext/ringtone/MultiRingtoneSettingUtils;->ro()Ljava/lang/String;
 
     move-result-object v0
 
@@ -105,14 +105,14 @@
 
     .prologue
     .line 49
-    invoke-virtual {p0}, Lcom/android/settings/MiuiDefaultRingtonePreference;->getFragment()Ljava/lang/String;
+    invoke-virtual {p0}, Lcom/android/settings_ext/MiuiDefaultRingtonePreference;->getFragment()Ljava/lang/String;
 
     move-result-object v0
 
     if-nez v0, :cond_0
 
     .line 50
-    invoke-super {p0}, Lcom/android/settings/DefaultRingtonePreference;->onClick()V
+    invoke-super {p0}, Lcom/android/settings_ext/DefaultRingtonePreference;->onClick()V
 
     .line 52
     :cond_0
@@ -124,12 +124,12 @@
 
     .prologue
     .line 43
-    invoke-super {p0, p1}, Lcom/android/settings/DefaultRingtonePreference;->onPrepareRingtonePickerIntent(Landroid/content/Intent;)V
+    invoke-super {p0, p1}, Lcom/android/settings_ext/DefaultRingtonePreference;->onPrepareRingtonePickerIntent(Landroid/content/Intent;)V
 
     .line 44
     const-string v0, "REQUEST_ENTRY_TYPE"
 
-    invoke-virtual {p0}, Lcom/android/settings/MiuiDefaultRingtonePreference;->getContext()Landroid/content/Context;
+    invoke-virtual {p0}, Lcom/android/settings_ext/MiuiDefaultRingtonePreference;->getContext()Landroid/content/Context;
 
     move-result-object v1
 
@@ -148,11 +148,11 @@
 
     .prologue
     .line 56
-    invoke-static {}, Lcom/android/settings/ringtone/MultiRingtoneSettingUtils;->ro()Ljava/lang/String;
+    invoke-static {}, Lcom/android/settings_ext/ringtone/MultiRingtoneSettingUtils;->ro()Ljava/lang/String;
 
     move-result-object v0
 
-    invoke-virtual {p0}, Lcom/android/settings/MiuiDefaultRingtonePreference;->getFragment()Ljava/lang/String;
+    invoke-virtual {p0}, Lcom/android/settings_ext/MiuiDefaultRingtonePreference;->getFragment()Ljava/lang/String;
 
     move-result-object v1
 
@@ -162,11 +162,11 @@
 
     if-eqz v0, :cond_0
 
-    invoke-virtual {p0}, Lcom/android/settings/MiuiDefaultRingtonePreference;->getContext()Landroid/content/Context;
+    invoke-virtual {p0}, Lcom/android/settings_ext/MiuiDefaultRingtonePreference;->getContext()Landroid/content/Context;
 
     move-result-object v0
 
-    invoke-virtual {p0}, Lcom/android/settings/MiuiDefaultRingtonePreference;->getRingtoneType()I
+    invoke-virtual {p0}, Lcom/android/settings_ext/MiuiDefaultRingtonePreference;->getRingtoneType()I
 
     move-result v1
 
@@ -181,7 +181,7 @@
 
     .line 60
     :cond_0
-    invoke-super {p0, p1}, Lcom/android/settings/DefaultRingtonePreference;->setSummary(Ljava/lang/CharSequence;)V
+    invoke-super {p0, p1}, Lcom/android/settings_ext/DefaultRingtonePreference;->setSummary(Ljava/lang/CharSequence;)V
 
     .line 61
     return-void

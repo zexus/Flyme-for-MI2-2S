@@ -1,14 +1,14 @@
-.class final enum Lcom/android/settings/sound/BatchMediaPlayer$PlayState;
+.class final enum Lcom/android/settings_ext/sound/BatchMediaPlayer$PlayState;
 .super Ljava/lang/Enum;
 .source "BatchMediaPlayer.java"
 
 
 # static fields
-.field public static final enum ajI:Lcom/android/settings/sound/BatchMediaPlayer$PlayState;
+.field public static final enum ajI:Lcom/android/settings_ext/sound/BatchMediaPlayer$PlayState;
 
-.field public static final enum ajJ:Lcom/android/settings/sound/BatchMediaPlayer$PlayState;
+.field public static final enum ajJ:Lcom/android/settings_ext/sound/BatchMediaPlayer$PlayState;
 
-.field private static final synthetic ajK:[Lcom/android/settings/sound/BatchMediaPlayer$PlayState;
+.field private static final synthetic ajK:[Lcom/android/settings_ext/sound/BatchMediaPlayer$PlayState;
 
 
 # direct methods
@@ -21,36 +21,36 @@
     const/4 v2, 0x0
 
     .line 40
-    new-instance v0, Lcom/android/settings/sound/BatchMediaPlayer$PlayState;
+    new-instance v0, Lcom/android/settings_ext/sound/BatchMediaPlayer$PlayState;
 
     const-string v1, "UNDEFINED"
 
-    invoke-direct {v0, v1, v2}, Lcom/android/settings/sound/BatchMediaPlayer$PlayState;-><init>(Ljava/lang/String;I)V
+    invoke-direct {v0, v1, v2}, Lcom/android/settings_ext/sound/BatchMediaPlayer$PlayState;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Lcom/android/settings/sound/BatchMediaPlayer$PlayState;->ajI:Lcom/android/settings/sound/BatchMediaPlayer$PlayState;
+    sput-object v0, Lcom/android/settings_ext/sound/BatchMediaPlayer$PlayState;->ajI:Lcom/android/settings_ext/sound/BatchMediaPlayer$PlayState;
 
-    new-instance v0, Lcom/android/settings/sound/BatchMediaPlayer$PlayState;
+    new-instance v0, Lcom/android/settings_ext/sound/BatchMediaPlayer$PlayState;
 
     const-string v1, "PLAYING"
 
-    invoke-direct {v0, v1, v3}, Lcom/android/settings/sound/BatchMediaPlayer$PlayState;-><init>(Ljava/lang/String;I)V
+    invoke-direct {v0, v1, v3}, Lcom/android/settings_ext/sound/BatchMediaPlayer$PlayState;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Lcom/android/settings/sound/BatchMediaPlayer$PlayState;->ajJ:Lcom/android/settings/sound/BatchMediaPlayer$PlayState;
+    sput-object v0, Lcom/android/settings_ext/sound/BatchMediaPlayer$PlayState;->ajJ:Lcom/android/settings_ext/sound/BatchMediaPlayer$PlayState;
 
     .line 39
     const/4 v0, 0x2
 
-    new-array v0, v0, [Lcom/android/settings/sound/BatchMediaPlayer$PlayState;
+    new-array v0, v0, [Lcom/android/settings_ext/sound/BatchMediaPlayer$PlayState;
 
-    sget-object v1, Lcom/android/settings/sound/BatchMediaPlayer$PlayState;->ajI:Lcom/android/settings/sound/BatchMediaPlayer$PlayState;
+    sget-object v1, Lcom/android/settings_ext/sound/BatchMediaPlayer$PlayState;->ajI:Lcom/android/settings_ext/sound/BatchMediaPlayer$PlayState;
 
     aput-object v1, v0, v2
 
-    sget-object v1, Lcom/android/settings/sound/BatchMediaPlayer$PlayState;->ajJ:Lcom/android/settings/sound/BatchMediaPlayer$PlayState;
+    sget-object v1, Lcom/android/settings_ext/sound/BatchMediaPlayer$PlayState;->ajJ:Lcom/android/settings_ext/sound/BatchMediaPlayer$PlayState;
 
     aput-object v1, v0, v3
 
-    sput-object v0, Lcom/android/settings/sound/BatchMediaPlayer$PlayState;->ajK:[Lcom/android/settings/sound/BatchMediaPlayer$PlayState;
+    sput-object v0, Lcom/android/settings_ext/sound/BatchMediaPlayer$PlayState;->ajK:[Lcom/android/settings_ext/sound/BatchMediaPlayer$PlayState;
 
     return-void
 .end method
@@ -65,34 +65,34 @@
     return-void
 .end method
 
-.method public static valueOf(Ljava/lang/String;)Lcom/android/settings/sound/BatchMediaPlayer$PlayState;
+.method public static valueOf(Ljava/lang/String;)Lcom/android/settings_ext/sound/BatchMediaPlayer$PlayState;
     .locals 1
 
     .prologue
     .line 39
-    const-class v0, Lcom/android/settings/sound/BatchMediaPlayer$PlayState;
+    const-class v0, Lcom/android/settings_ext/sound/BatchMediaPlayer$PlayState;
 
     invoke-static {v0, p0}, Ljava/lang/Enum;->valueOf(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
 
     move-result-object v0
 
-    check-cast v0, Lcom/android/settings/sound/BatchMediaPlayer$PlayState;
+    check-cast v0, Lcom/android/settings_ext/sound/BatchMediaPlayer$PlayState;
 
     return-object v0
 .end method
 
-.method public static values()[Lcom/android/settings/sound/BatchMediaPlayer$PlayState;
+.method public static values()[Lcom/android/settings_ext/sound/BatchMediaPlayer$PlayState;
     .locals 1
 
     .prologue
     .line 39
-    sget-object v0, Lcom/android/settings/sound/BatchMediaPlayer$PlayState;->ajK:[Lcom/android/settings/sound/BatchMediaPlayer$PlayState;
+    sget-object v0, Lcom/android/settings_ext/sound/BatchMediaPlayer$PlayState;->ajK:[Lcom/android/settings_ext/sound/BatchMediaPlayer$PlayState;
 
-    invoke-virtual {v0}, [Lcom/android/settings/sound/BatchMediaPlayer$PlayState;->clone()Ljava/lang/Object;
+    invoke-virtual {v0}, [Lcom/android/settings_ext/sound/BatchMediaPlayer$PlayState;->clone()Ljava/lang/Object;
 
     move-result-object v0
 
-    check-cast v0, [Lcom/android/settings/sound/BatchMediaPlayer$PlayState;
+    check-cast v0, [Lcom/android/settings_ext/sound/BatchMediaPlayer$PlayState;
 
     return-object v0
 .end method

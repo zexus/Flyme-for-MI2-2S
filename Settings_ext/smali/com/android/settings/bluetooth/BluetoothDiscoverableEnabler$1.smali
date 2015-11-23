@@ -1,19 +1,19 @@
-.class Lcom/android/settings/bluetooth/BluetoothDiscoverableEnabler$1;
+.class Lcom/android/settings_ext/bluetooth/BluetoothDiscoverableEnabler$1;
 .super Landroid/content/BroadcastReceiver;
 .source "BluetoothDiscoverableEnabler.java"
 
 
 # instance fields
-.field final synthetic MG:Lcom/android/settings/bluetooth/BluetoothDiscoverableEnabler;
+.field final synthetic MG:Lcom/android/settings_ext/bluetooth/BluetoothDiscoverableEnabler;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/bluetooth/BluetoothDiscoverableEnabler;)V
+.method constructor <init>(Lcom/android/settings_ext/bluetooth/BluetoothDiscoverableEnabler;)V
     .locals 0
 
     .prologue
     .line 83
-    iput-object p1, p0, Lcom/android/settings/bluetooth/BluetoothDiscoverableEnabler$1;->MG:Lcom/android/settings/bluetooth/BluetoothDiscoverableEnabler;
+    iput-object p1, p0, Lcom/android/settings_ext/bluetooth/BluetoothDiscoverableEnabler$1;->MG:Lcom/android/settings_ext/bluetooth/BluetoothDiscoverableEnabler;
 
     invoke-direct {p0}, Landroid/content/BroadcastReceiver;-><init>()V
 
@@ -52,9 +52,9 @@
     if-eq v0, v2, :cond_0
 
     .line 90
-    iget-object v1, p0, Lcom/android/settings/bluetooth/BluetoothDiscoverableEnabler$1;->MG:Lcom/android/settings/bluetooth/BluetoothDiscoverableEnabler;
+    iget-object v1, p0, Lcom/android/settings_ext/bluetooth/BluetoothDiscoverableEnabler$1;->MG:Lcom/android/settings_ext/bluetooth/BluetoothDiscoverableEnabler;
 
-    invoke-virtual {v1, v0}, Lcom/android/settings/bluetooth/BluetoothDiscoverableEnabler;->aQ(I)V
+    invoke-virtual {v1, v0}, Lcom/android/settings_ext/bluetooth/BluetoothDiscoverableEnabler;->aQ(I)V
 
     .line 93
     :cond_0

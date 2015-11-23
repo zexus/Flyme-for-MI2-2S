@@ -1,5 +1,5 @@
-.class final Lcom/android/settings/bN;
-.super Lcom/android/settings/search/a;
+.class final Lcom/android/settings_ext/bN;
+.super Lcom/android/settings_ext/search/a;
 .source "DeviceInfoSettings.java"
 
 
@@ -9,7 +9,7 @@
 
     .prologue
     .line 417
-    invoke-direct {p0}, Lcom/android/settings/search/a;-><init>()V
+    invoke-direct {p0}, Lcom/android/settings_ext/search/a;-><init>()V
 
     return-void
 .end method
@@ -148,7 +148,7 @@
     .line 430
     const-string v1, "ro.build.selinux"
 
-    invoke-direct {p0, v1}, Lcom/android/settings/bN;->u(Ljava/lang/String;)Z
+    invoke-direct {p0, v1}, Lcom/android/settings_ext/bN;->u(Ljava/lang/String;)Z
 
     move-result v1
 
@@ -163,7 +163,7 @@
     :cond_0
     const-string v1, "ro.url.safetylegal"
 
-    invoke-direct {p0, v1}, Lcom/android/settings/bN;->u(Ljava/lang/String;)Z
+    invoke-direct {p0, v1}, Lcom/android/settings_ext/bN;->u(Ljava/lang/String;)Z
 
     move-result v1
 
@@ -178,7 +178,7 @@
     :cond_1
     const-string v1, "ro.ril.fccid"
 
-    invoke-direct {p0, v1}, Lcom/android/settings/bN;->u(Ljava/lang/String;)Z
+    invoke-direct {p0, v1}, Lcom/android/settings_ext/bN;->u(Ljava/lang/String;)Z
 
     move-result v1
 
@@ -191,7 +191,7 @@
 
     .line 440
     :cond_2
-    invoke-static {p1}, Lcom/android/settings/hl;->N(Landroid/content/Context;)Z
+    invoke-static {p1}, Lcom/android/settings_ext/hl;->N(Landroid/content/Context;)Z
 
     move-result v1
 
@@ -204,7 +204,7 @@
 
     .line 444
     :cond_3
-    invoke-static {p1}, Lcom/android/settings/DeviceInfoSettings;->m(Landroid/content/Context;)Ljava/lang/String;
+    invoke-static {p1}, Lcom/android/settings_ext/DeviceInfoSettings;->m(Landroid/content/Context;)Ljava/lang/String;
 
     move-result-object v1
 
@@ -223,7 +223,7 @@
     :cond_4
     const-string v1, "android.settings.TERMS"
 
-    invoke-direct {p0, p1, v1}, Lcom/android/settings/bN;->c(Landroid/content/Context;Ljava/lang/String;)Z
+    invoke-direct {p0, p1, v1}, Lcom/android/settings_ext/bN;->c(Landroid/content/Context;Ljava/lang/String;)Z
 
     move-result v1
 
@@ -238,7 +238,7 @@
     :cond_5
     const-string v1, "android.settings.LICENSE"
 
-    invoke-direct {p0, p1, v1}, Lcom/android/settings/bN;->c(Landroid/content/Context;Ljava/lang/String;)Z
+    invoke-direct {p0, p1, v1}, Lcom/android/settings_ext/bN;->c(Landroid/content/Context;Ljava/lang/String;)Z
 
     move-result v1
 
@@ -253,7 +253,7 @@
     :cond_6
     const-string v1, "android.settings.COPYRIGHT"
 
-    invoke-direct {p0, p1, v1}, Lcom/android/settings/bN;->c(Landroid/content/Context;Ljava/lang/String;)Z
+    invoke-direct {p0, p1, v1}, Lcom/android/settings_ext/bN;->c(Landroid/content/Context;Ljava/lang/String;)Z
 
     move-result v1
 

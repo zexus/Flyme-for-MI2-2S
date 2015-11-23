@@ -1,4 +1,4 @@
-.class public Lcom/android/settings/cloud/push/f;
+.class public Lcom/android/settings_ext/cloud/push/f;
 .super Landroid/database/sqlite/SQLiteOpenHelper;
 .source "CloudOpenHelper.java"
 
@@ -70,13 +70,13 @@
 
     .prologue
     .line 23
-    invoke-direct {p0, p1}, Lcom/android/settings/cloud/push/f;->f(Landroid/database/sqlite/SQLiteDatabase;)V
+    invoke-direct {p0, p1}, Lcom/android/settings_ext/cloud/push/f;->f(Landroid/database/sqlite/SQLiteDatabase;)V
 
     .line 24
-    invoke-direct {p0, p1}, Lcom/android/settings/cloud/push/f;->g(Landroid/database/sqlite/SQLiteDatabase;)V
+    invoke-direct {p0, p1}, Lcom/android/settings_ext/cloud/push/f;->g(Landroid/database/sqlite/SQLiteDatabase;)V
 
     .line 25
-    invoke-direct {p0, p1}, Lcom/android/settings/cloud/push/f;->h(Landroid/database/sqlite/SQLiteDatabase;)V
+    invoke-direct {p0, p1}, Lcom/android/settings_ext/cloud/push/f;->h(Landroid/database/sqlite/SQLiteDatabase;)V
 
     .line 26
     return-void

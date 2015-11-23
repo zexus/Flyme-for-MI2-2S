@@ -1,4 +1,4 @@
-.class Lcom/android/settings/cf;
+.class Lcom/android/settings_ext/cf;
 .super Ljava/lang/Object;
 .source "DreamSettings.java"
 
@@ -9,18 +9,18 @@
 # instance fields
 .field final synthetic kv:Landroid/view/View;
 
-.field final synthetic kw:Lcom/android/settings/ce;
+.field final synthetic kw:Lcom/android/settings_ext/ce;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/ce;Landroid/view/View;)V
+.method constructor <init>(Lcom/android/settings_ext/ce;Landroid/view/View;)V
     .locals 0
 
     .prologue
     .line 306
-    iput-object p1, p0, Lcom/android/settings/cf;->kw:Lcom/android/settings/ce;
+    iput-object p1, p0, Lcom/android/settings_ext/cf;->kw:Lcom/android/settings_ext/ce;
 
-    iput-object p2, p0, Lcom/android/settings/cf;->kv:Landroid/view/View;
+    iput-object p2, p0, Lcom/android/settings_ext/cf;->kv:Landroid/view/View;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -34,7 +34,7 @@
 
     .prologue
     .line 309
-    iget-object v0, p0, Lcom/android/settings/cf;->kv:Landroid/view/View;
+    iget-object v0, p0, Lcom/android/settings_ext/cf;->kv:Landroid/view/View;
 
     invoke-virtual {v0, p2}, Landroid/view/View;->onTouchEvent(Landroid/view/MotionEvent;)Z
 

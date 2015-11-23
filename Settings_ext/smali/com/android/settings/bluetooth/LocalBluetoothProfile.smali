@@ -1,4 +1,4 @@
-.class interface abstract Lcom/android/settings/bluetooth/LocalBluetoothProfile;
+.class interface abstract Lcom/android/settings_ext/bluetooth/LocalBluetoothProfile;
 .super Ljava/lang/Object;
 .source "LocalBluetoothProfile.java"
 

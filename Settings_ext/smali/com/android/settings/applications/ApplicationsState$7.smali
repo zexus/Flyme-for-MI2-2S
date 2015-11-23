@@ -1,9 +1,9 @@
-.class final Lcom/android/settings/applications/ApplicationsState$7;
+.class final Lcom/android/settings_ext/applications/ApplicationsState$7;
 .super Ljava/lang/Object;
 .source "ApplicationsState.java"
 
 # interfaces
-.implements Lcom/android/settings/applications/ApplicationsState$AppFilter;
+.implements Lcom/android/settings_ext/applications/ApplicationsState$AppFilter;
 
 
 # direct methods

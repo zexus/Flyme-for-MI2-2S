@@ -1,5 +1,5 @@
-.class public Lcom/android/settings/MiuiSecurityChooseUnlock;
-.super Lcom/android/settings/Settings;
+.class public Lcom/android/settings_ext/MiuiSecurityChooseUnlock;
+.super Lcom/android/settings_ext/Settings;
 .source "MiuiSecurityChooseUnlock.java"
 
 
@@ -9,7 +9,7 @@
 
     .prologue
     .line 27
-    invoke-direct {p0}, Lcom/android/settings/Settings;-><init>()V
+    invoke-direct {p0}, Lcom/android/settings_ext/Settings;-><init>()V
 
     .line 203
     return-void
@@ -36,17 +36,17 @@
     return p0
 .end method
 
-.method private static a(ILandroid/app/admin/DevicePolicyManager;Lcom/android/settings/SettingsPreferenceFragment;)I
+.method private static a(ILandroid/app/admin/DevicePolicyManager;Lcom/android/settings_ext/SettingsPreferenceFragment;)I
     .locals 4
 
     .prologue
     .line 158
-    invoke-static {p0, p1}, Lcom/android/settings/MiuiSecurityChooseUnlock;->a(ILandroid/app/admin/DevicePolicyManager;)I
+    invoke-static {p0, p1}, Lcom/android/settings_ext/MiuiSecurityChooseUnlock;->a(ILandroid/app/admin/DevicePolicyManager;)I
 
     move-result v0
 
     .line 159
-    invoke-virtual {p2}, Lcom/android/settings/SettingsPreferenceFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p2}, Lcom/android/settings_ext/SettingsPreferenceFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v1
 
@@ -65,13 +65,13 @@
     if-lez v1, :cond_0
 
     .line 162
-    invoke-static {v0}, Lcom/android/settings/MiuiSecurityChooseUnlock;->h(I)I
+    invoke-static {v0}, Lcom/android/settings_ext/MiuiSecurityChooseUnlock;->h(I)I
 
     move-result v0
 
     .line 164
     :cond_0
-    invoke-static {v0, p1}, Lcom/android/settings/MiuiSecurityChooseUnlock;->b(ILandroid/app/admin/DevicePolicyManager;)I
+    invoke-static {v0, p1}, Lcom/android/settings_ext/MiuiSecurityChooseUnlock;->b(ILandroid/app/admin/DevicePolicyManager;)I
 
     move-result v1
 
@@ -93,7 +93,7 @@
     goto :goto_0
 .end method
 
-.method private static a(Lcom/android/settings/SettingsPreferenceFragment;)Landroid/content/Intent;
+.method private static a(Lcom/android/settings_ext/SettingsPreferenceFragment;)Landroid/content/Intent;
     .locals 6
 
     .prologue
@@ -106,24 +106,24 @@
 
     invoke-direct {v2}, Landroid/content/Intent;-><init>()V
 
-    invoke-virtual {p0}, Lcom/android/settings/SettingsPreferenceFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/SettingsPreferenceFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v3
 
-    const-class v4, Lcom/android/settings/MiuiSecurityChooseUnlock;
+    const-class v4, Lcom/android/settings_ext/MiuiSecurityChooseUnlock;
 
     invoke-virtual {v2, v3, v4}, Landroid/content/Intent;->setClass(Landroid/content/Context;Ljava/lang/Class;)Landroid/content/Intent;
 
     move-result-object v2
 
     .line 143
-    new-instance v3, Lcom/android/settings/ap;
+    new-instance v3, Lcom/android/settings_ext/ap;
 
-    invoke-virtual {p0}, Lcom/android/settings/SettingsPreferenceFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/SettingsPreferenceFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v4
 
-    invoke-direct {v3, v4}, Lcom/android/settings/ap;-><init>(Landroid/app/Activity;)V
+    invoke-direct {v3, v4}, Lcom/android/settings_ext/ap;-><init>(Landroid/app/Activity;)V
 
     .line 145
     const-string v4, "lockscreen.biometric_weak_fallback"
@@ -138,7 +138,7 @@
     invoke-virtual {v2, v4, v5}, Landroid/content/Intent;->putExtra(Ljava/lang/String;I)Landroid/content/Intent;
 
     .line 148
-    invoke-virtual {v3}, Lcom/android/settings/ap;->at()Lcom/android/internal/widget/LockPatternUtils;
+    invoke-virtual {v3}, Lcom/android/settings_ext/ap;->at()Lcom/android/internal/widget/LockPatternUtils;
 
     move-result-object v3
 
@@ -167,7 +167,7 @@
     invoke-virtual {v3, v4, v0}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Z)Landroid/content/Intent;
 
     .line 152
-    invoke-virtual {p0}, Lcom/android/settings/SettingsPreferenceFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/SettingsPreferenceFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
@@ -190,7 +190,7 @@
     goto :goto_0
 .end method
 
-.method public static a(ILcom/android/settings/SettingsPreferenceFragment;)V
+.method public static a(ILcom/android/settings_ext/SettingsPreferenceFragment;)V
     .locals 9
 
     .prologue
@@ -205,7 +205,7 @@
     const/4 v1, 0x4
 
     .line 95
-    invoke-virtual {p1}, Lcom/android/settings/SettingsPreferenceFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p1}, Lcom/android/settings_ext/SettingsPreferenceFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
@@ -224,14 +224,14 @@
     .line 98
     const-string v0, "device_policy"
 
-    invoke-virtual {p1, v0}, Lcom/android/settings/SettingsPreferenceFragment;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
+    invoke-virtual {p1, v0}, Lcom/android/settings_ext/SettingsPreferenceFragment;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object v0
 
     check-cast v0, Landroid/app/admin/DevicePolicyManager;
 
     .line 100
-    invoke-static {p0, v0, p1}, Lcom/android/settings/MiuiSecurityChooseUnlock;->a(ILandroid/app/admin/DevicePolicyManager;Lcom/android/settings/SettingsPreferenceFragment;)I
+    invoke-static {p0, v0, p1}, Lcom/android/settings_ext/MiuiSecurityChooseUnlock;->a(ILandroid/app/admin/DevicePolicyManager;Lcom/android/settings_ext/SettingsPreferenceFragment;)I
 
     move-result v3
 
@@ -271,11 +271,11 @@
 
     invoke-direct {v1}, Landroid/content/Intent;-><init>()V
 
-    invoke-virtual {p1}, Lcom/android/settings/SettingsPreferenceFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p1}, Lcom/android/settings_ext/SettingsPreferenceFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v3
 
-    const-class v6, Lcom/android/settings/ChooseLockPassword;
+    const-class v6, Lcom/android/settings_ext/ChooseLockPassword;
 
     invoke-virtual {v1, v3, v6}, Landroid/content/Intent;->setClass(Landroid/content/Context;Ljava/lang/Class;)Landroid/content/Intent;
 
@@ -305,7 +305,7 @@
     if-eqz v5, :cond_4
 
     .line 121
-    invoke-virtual {p1, v1, v8}, Lcom/android/settings/SettingsPreferenceFragment;->startActivityForResult(Landroid/content/Intent;I)V
+    invoke-virtual {p1, v1, v8}, Lcom/android/settings_ext/SettingsPreferenceFragment;->startActivityForResult(Landroid/content/Intent;I)V
 
     .line 138
     :cond_2
@@ -322,7 +322,7 @@
 
     .line 123
     :cond_4
-    invoke-virtual {p1, v1, v7}, Lcom/android/settings/SettingsPreferenceFragment;->startActivityForResult(Landroid/content/Intent;I)V
+    invoke-virtual {p1, v1, v7}, Lcom/android/settings_ext/SettingsPreferenceFragment;->startActivityForResult(Landroid/content/Intent;I)V
 
     goto :goto_2
 
@@ -338,11 +338,11 @@
     invoke-direct {v0}, Landroid/content/Intent;-><init>()V
 
     .line 127
-    invoke-virtual {p1}, Lcom/android/settings/SettingsPreferenceFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p1}, Lcom/android/settings_ext/SettingsPreferenceFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v1
 
-    const-class v2, Lcom/android/settings/MiuiChooseLockPattern;
+    const-class v2, Lcom/android/settings_ext/MiuiChooseLockPattern;
 
     invoke-virtual {v0, v1, v2}, Landroid/content/Intent;->setClass(Landroid/content/Context;Ljava/lang/Class;)Landroid/content/Intent;
 
@@ -362,13 +362,13 @@
     if-eqz v5, :cond_6
 
     .line 131
-    invoke-virtual {p1, v0, v8}, Lcom/android/settings/SettingsPreferenceFragment;->startActivityForResult(Landroid/content/Intent;I)V
+    invoke-virtual {p1, v0, v8}, Lcom/android/settings_ext/SettingsPreferenceFragment;->startActivityForResult(Landroid/content/Intent;I)V
 
     goto :goto_2
 
     .line 133
     :cond_6
-    invoke-virtual {p1, v0, v7}, Lcom/android/settings/SettingsPreferenceFragment;->startActivityForResult(Landroid/content/Intent;I)V
+    invoke-virtual {p1, v0, v7}, Lcom/android/settings_ext/SettingsPreferenceFragment;->startActivityForResult(Landroid/content/Intent;I)V
 
     goto :goto_2
 
@@ -379,11 +379,11 @@
     if-ne v3, v0, :cond_2
 
     .line 136
-    invoke-static {p1}, Lcom/android/settings/MiuiSecurityChooseUnlock;->a(Lcom/android/settings/SettingsPreferenceFragment;)Landroid/content/Intent;
+    invoke-static {p1}, Lcom/android/settings_ext/MiuiSecurityChooseUnlock;->a(Lcom/android/settings_ext/SettingsPreferenceFragment;)Landroid/content/Intent;
 
     move-result-object v0
 
-    invoke-virtual {p1, v0, v7}, Lcom/android/settings/SettingsPreferenceFragment;->startActivityForResult(Landroid/content/Intent;I)V
+    invoke-virtual {p1, v0, v7}, Lcom/android/settings_ext/SettingsPreferenceFragment;->startActivityForResult(Landroid/content/Intent;I)V
 
     goto :goto_2
 
@@ -393,7 +393,7 @@
     goto :goto_0
 .end method
 
-.method public static a(Lcom/android/settings/SettingsPreferenceFragment;II)V
+.method public static a(Lcom/android/settings_ext/SettingsPreferenceFragment;II)V
     .locals 6
 
     .prologue
@@ -408,7 +408,7 @@
 
     .line 80
     :sswitch_0
-    const-class v0, Lcom/android/settings/MiuiSecurityCommonSettings$MiuiConfirmLockPatternFragment;
+    const-class v0, Lcom/android/settings_ext/MiuiSecurityCommonSettings$MiuiConfirmLockPatternFragment;
 
     invoke-virtual {v0}, Ljava/lang/Class;->getName()Ljava/lang/String;
 
@@ -422,13 +422,13 @@
 
     move v3, p2
 
-    invoke-virtual/range {v0 .. v5}, Lcom/android/settings/SettingsPreferenceFragment;->a(Landroid/app/Fragment;Ljava/lang/String;IILandroid/os/Bundle;)Z
+    invoke-virtual/range {v0 .. v5}, Lcom/android/settings_ext/SettingsPreferenceFragment;->a(Landroid/app/Fragment;Ljava/lang/String;IILandroid/os/Bundle;)Z
 
     goto :goto_0
 
     .line 88
     :sswitch_1
-    const-class v0, Lcom/android/settings/MiuiSecurityCommonSettings$MiuiConfirmLockPasswordFragment;
+    const-class v0, Lcom/android/settings_ext/MiuiSecurityCommonSettings$MiuiConfirmLockPasswordFragment;
 
     invoke-virtual {v0}, Ljava/lang/Class;->getName()Ljava/lang/String;
 
@@ -442,7 +442,7 @@
 
     move v3, p2
 
-    invoke-virtual/range {v0 .. v5}, Lcom/android/settings/SettingsPreferenceFragment;->a(Landroid/app/Fragment;Ljava/lang/String;IILandroid/os/Bundle;)Z
+    invoke-virtual/range {v0 .. v5}, Lcom/android/settings_ext/SettingsPreferenceFragment;->a(Landroid/app/Fragment;Ljava/lang/String;IILandroid/os/Bundle;)Z
 
     goto :goto_0
 
@@ -460,12 +460,12 @@
     .end sparse-switch
 .end method
 
-.method public static a(Lcom/android/settings/SettingsPreferenceFragment;IIII)V
+.method public static a(Lcom/android/settings_ext/SettingsPreferenceFragment;IIII)V
     .locals 6
 
     .prologue
     .line 60
-    invoke-virtual {p0}, Lcom/android/settings/SettingsPreferenceFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/SettingsPreferenceFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
@@ -498,7 +498,7 @@
     invoke-virtual {v5, v0, p4}, Landroid/os/Bundle;->putInt(Ljava/lang/String;I)V
 
     .line 65
-    const-class v0, Lcom/android/settings/ChooseLockPassword$ChooseLockPasswordFragment;
+    const-class v0, Lcom/android/settings_ext/ChooseLockPassword$ChooseLockPasswordFragment;
 
     invoke-virtual {v0}, Ljava/lang/Class;->getName()Ljava/lang/String;
 
@@ -512,7 +512,7 @@
 
     move v3, p1
 
-    invoke-virtual/range {v0 .. v5}, Lcom/android/settings/SettingsPreferenceFragment;->a(Landroid/app/Fragment;Ljava/lang/String;IILandroid/os/Bundle;)Z
+    invoke-virtual/range {v0 .. v5}, Lcom/android/settings_ext/SettingsPreferenceFragment;->a(Landroid/app/Fragment;Ljava/lang/String;IILandroid/os/Bundle;)Z
 
     .line 74
     :goto_0
@@ -522,11 +522,11 @@
     :cond_0
     new-instance v0, Landroid/content/Intent;
 
-    invoke-virtual {p0}, Lcom/android/settings/SettingsPreferenceFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/SettingsPreferenceFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v1
 
-    const-class v2, Lcom/android/settings/ChooseLockPassword;
+    const-class v2, Lcom/android/settings_ext/ChooseLockPassword;
 
     invoke-direct {v0, v1, v2}, Landroid/content/Intent;-><init>(Landroid/content/Context;Ljava/lang/Class;)V
 
@@ -546,7 +546,7 @@
     invoke-virtual {v0, v1, p4}, Landroid/content/Intent;->putExtra(Ljava/lang/String;I)Landroid/content/Intent;
 
     .line 72
-    invoke-virtual {p0, v0, p1}, Lcom/android/settings/SettingsPreferenceFragment;->startActivityForResult(Landroid/content/Intent;I)V
+    invoke-virtual {p0, v0, p1}, Lcom/android/settings_ext/SettingsPreferenceFragment;->startActivityForResult(Landroid/content/Intent;I)V
 
     goto :goto_0
 .end method
@@ -587,24 +587,24 @@
     goto :goto_0
 .end method
 
-.method static synthetic b(ILandroid/app/admin/DevicePolicyManager;Lcom/android/settings/SettingsPreferenceFragment;)I
+.method static synthetic b(ILandroid/app/admin/DevicePolicyManager;Lcom/android/settings_ext/SettingsPreferenceFragment;)I
     .locals 1
 
     .prologue
     .line 27
-    invoke-static {p0, p1, p2}, Lcom/android/settings/MiuiSecurityChooseUnlock;->a(ILandroid/app/admin/DevicePolicyManager;Lcom/android/settings/SettingsPreferenceFragment;)I
+    invoke-static {p0, p1, p2}, Lcom/android/settings_ext/MiuiSecurityChooseUnlock;->a(ILandroid/app/admin/DevicePolicyManager;Lcom/android/settings_ext/SettingsPreferenceFragment;)I
 
     move-result v0
 
     return v0
 .end method
 
-.method public static b(Lcom/android/settings/SettingsPreferenceFragment;I)V
+.method public static b(Lcom/android/settings_ext/SettingsPreferenceFragment;I)V
     .locals 6
 
     .prologue
     .line 42
-    const-class v0, Lcom/android/settings/MiuiChooseLockPattern$ChooseLockPatternFragment;
+    const-class v0, Lcom/android/settings_ext/MiuiChooseLockPattern$ChooseLockPatternFragment;
 
     invoke-virtual {v0}, Ljava/lang/Class;->getName()Ljava/lang/String;
 
@@ -620,13 +620,13 @@
 
     move v3, p1
 
-    invoke-virtual/range {v0 .. v5}, Lcom/android/settings/SettingsPreferenceFragment;->a(Landroid/app/Fragment;Ljava/lang/String;IILandroid/os/Bundle;)Z
+    invoke-virtual/range {v0 .. v5}, Lcom/android/settings_ext/SettingsPreferenceFragment;->a(Landroid/app/Fragment;Ljava/lang/String;IILandroid/os/Bundle;)Z
 
     .line 44
     return-void
 .end method
 
-.method public static c(Lcom/android/settings/SettingsPreferenceFragment;I)V
+.method public static c(Lcom/android/settings_ext/SettingsPreferenceFragment;I)V
     .locals 2
 
     .prologue
@@ -635,13 +635,13 @@
     .line 47
     const/high16 v0, 0x20000
 
-    invoke-static {p0, p1, v1, v1, v0}, Lcom/android/settings/MiuiSecurityChooseUnlock;->a(Lcom/android/settings/SettingsPreferenceFragment;IIII)V
+    invoke-static {p0, p1, v1, v1, v0}, Lcom/android/settings_ext/MiuiSecurityChooseUnlock;->a(Lcom/android/settings_ext/SettingsPreferenceFragment;IIII)V
 
     .line 48
     return-void
 .end method
 
-.method public static d(Lcom/android/settings/SettingsPreferenceFragment;I)V
+.method public static d(Lcom/android/settings_ext/SettingsPreferenceFragment;I)V
     .locals 5
 
     .prologue
@@ -652,7 +652,7 @@
     .line 51
     const-string v0, "device_policy"
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/SettingsPreferenceFragment;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
+    invoke-virtual {p0, v0}, Lcom/android/settings_ext/SettingsPreferenceFragment;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object v0
 
@@ -677,7 +677,7 @@
 
     .line 56
     :goto_0
-    invoke-static {p0, p1, v0, v3, v4}, Lcom/android/settings/MiuiSecurityChooseUnlock;->a(Lcom/android/settings/SettingsPreferenceFragment;IIII)V
+    invoke-static {p0, p1, v0, v3, v4}, Lcom/android/settings_ext/MiuiSecurityChooseUnlock;->a(Lcom/android/settings_ext/SettingsPreferenceFragment;IIII)V
 
     .line 57
     return-void
@@ -724,7 +724,7 @@
     .line 36
     new-instance v0, Landroid/content/Intent;
 
-    invoke-super {p0}, Lcom/android/settings/Settings;->getIntent()Landroid/content/Intent;
+    invoke-super {p0}, Lcom/android/settings_ext/Settings;->getIntent()Landroid/content/Intent;
 
     move-result-object v1
 
@@ -733,7 +733,7 @@
     .line 37
     const-string v1, ":settings:show_fragment"
 
-    const-class v2, Lcom/android/settings/MiuiSecurityChooseUnlock$MiuiSecurityChooseUnlockFragment;
+    const-class v2, Lcom/android/settings_ext/MiuiSecurityChooseUnlock$MiuiSecurityChooseUnlockFragment;
 
     invoke-virtual {v2}, Ljava/lang/Class;->getName()Ljava/lang/String;
 

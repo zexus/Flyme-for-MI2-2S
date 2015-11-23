@@ -1,29 +1,29 @@
-.class public Lcom/android/settings/print/PrintSettingsFragment;
-.super Lcom/android/settings/SettingsPreferenceFragment;
+.class public Lcom/android/settings_ext/print/PrintSettingsFragment;
+.super Lcom/android/settings_ext/SettingsPreferenceFragment;
 .source "PrintSettingsFragment.java"
 
 # interfaces
 .implements Landroid/widget/AdapterView$OnItemSelectedListener;
-.implements Lcom/android/settings/bP;
-.implements Lcom/android/settings/search/k;
+.implements Lcom/android/settings_ext/bP;
+.implements Lcom/android/settings_ext/search/k;
 
 
 # static fields
-.field public static final gG:Lcom/android/settings/search/l;
+.field public static final gG:Lcom/android/settings_ext/search/l;
 
 
 # instance fields
 .field private final Al:Lcom/android/internal/content/PackageMonitor;
 
-.field private Hh:Lcom/android/settings/hj;
+.field private Hh:Lcom/android/settings_ext/hj;
 
-.field private final aho:Lcom/android/settings/print/r;
+.field private final aho:Lcom/android/settings_ext/print/r;
 
 .field private ahp:Landroid/preference/PreferenceCategory;
 
 .field private ahq:Landroid/preference/PreferenceCategory;
 
-.field private ahr:Lcom/android/settings/print/o;
+.field private ahr:Lcom/android/settings_ext/print/o;
 
 .field private final mHandler:Landroid/os/Handler;
 
@@ -34,11 +34,11 @@
 
     .prologue
     .line 557
-    new-instance v0, Lcom/android/settings/print/n;
+    new-instance v0, Lcom/android/settings_ext/print/n;
 
-    invoke-direct {v0}, Lcom/android/settings/print/n;-><init>()V
+    invoke-direct {v0}, Lcom/android/settings_ext/print/n;-><init>()V
 
-    sput-object v0, Lcom/android/settings/print/PrintSettingsFragment;->gG:Lcom/android/settings/search/l;
+    sput-object v0, Lcom/android/settings_ext/print/PrintSettingsFragment;->gG:Lcom/android/settings_ext/search/l;
 
     return-void
 .end method
@@ -48,63 +48,63 @@
 
     .prologue
     .line 80
-    invoke-direct {p0}, Lcom/android/settings/SettingsPreferenceFragment;-><init>()V
+    invoke-direct {p0}, Lcom/android/settings_ext/SettingsPreferenceFragment;-><init>()V
 
     .line 105
-    new-instance v0, Lcom/android/settings/print/s;
+    new-instance v0, Lcom/android/settings_ext/print/s;
 
     const/4 v1, 0x0
 
-    invoke-direct {v0, p0, v1}, Lcom/android/settings/print/s;-><init>(Lcom/android/settings/print/PrintSettingsFragment;Lcom/android/settings/print/l;)V
+    invoke-direct {v0, p0, v1}, Lcom/android/settings_ext/print/s;-><init>(Lcom/android/settings_ext/print/PrintSettingsFragment;Lcom/android/settings_ext/print/l;)V
 
-    iput-object v0, p0, Lcom/android/settings/print/PrintSettingsFragment;->Al:Lcom/android/internal/content/PackageMonitor;
+    iput-object v0, p0, Lcom/android/settings_ext/print/PrintSettingsFragment;->Al:Lcom/android/internal/content/PackageMonitor;
 
     .line 107
-    new-instance v0, Lcom/android/settings/print/l;
+    new-instance v0, Lcom/android/settings_ext/print/l;
 
-    invoke-direct {v0, p0}, Lcom/android/settings/print/l;-><init>(Lcom/android/settings/print/PrintSettingsFragment;)V
+    invoke-direct {v0, p0}, Lcom/android/settings_ext/print/l;-><init>(Lcom/android/settings_ext/print/PrintSettingsFragment;)V
 
-    iput-object v0, p0, Lcom/android/settings/print/PrintSettingsFragment;->mHandler:Landroid/os/Handler;
+    iput-object v0, p0, Lcom/android/settings_ext/print/PrintSettingsFragment;->mHandler:Landroid/os/Handler;
 
     .line 114
-    new-instance v0, Lcom/android/settings/print/m;
+    new-instance v0, Lcom/android/settings_ext/print/m;
 
-    iget-object v1, p0, Lcom/android/settings/print/PrintSettingsFragment;->mHandler:Landroid/os/Handler;
+    iget-object v1, p0, Lcom/android/settings_ext/print/PrintSettingsFragment;->mHandler:Landroid/os/Handler;
 
-    invoke-direct {v0, p0, v1}, Lcom/android/settings/print/m;-><init>(Lcom/android/settings/print/PrintSettingsFragment;Landroid/os/Handler;)V
+    invoke-direct {v0, p0, v1}, Lcom/android/settings_ext/print/m;-><init>(Lcom/android/settings_ext/print/PrintSettingsFragment;Landroid/os/Handler;)V
 
-    iput-object v0, p0, Lcom/android/settings/print/PrintSettingsFragment;->aho:Lcom/android/settings/print/r;
+    iput-object v0, p0, Lcom/android/settings_ext/print/PrintSettingsFragment;->aho:Lcom/android/settings_ext/print/r;
 
     .line 449
     return-void
 .end method
 
-.method static synthetic a(Lcom/android/settings/print/PrintSettingsFragment;)V
+.method static synthetic a(Lcom/android/settings_ext/print/PrintSettingsFragment;)V
     .locals 0
 
     .prologue
     .line 80
-    invoke-direct {p0}, Lcom/android/settings/print/PrintSettingsFragment;->hK()V
+    invoke-direct {p0}, Lcom/android/settings_ext/print/PrintSettingsFragment;->hK()V
 
     return-void
 .end method
 
-.method static synthetic b(Lcom/android/settings/print/PrintSettingsFragment;)Landroid/os/Handler;
+.method static synthetic b(Lcom/android/settings_ext/print/PrintSettingsFragment;)Landroid/os/Handler;
     .locals 1
 
     .prologue
     .line 80
-    iget-object v0, p0, Lcom/android/settings/print/PrintSettingsFragment;->mHandler:Landroid/os/Handler;
+    iget-object v0, p0, Lcom/android/settings_ext/print/PrintSettingsFragment;->mHandler:Landroid/os/Handler;
 
     return-object v0
 .end method
 
-.method static synthetic c(Lcom/android/settings/print/PrintSettingsFragment;)Landroid/preference/PreferenceCategory;
+.method static synthetic c(Lcom/android/settings_ext/print/PrintSettingsFragment;)Landroid/preference/PreferenceCategory;
     .locals 1
 
     .prologue
     .line 80
-    iget-object v0, p0, Lcom/android/settings/print/PrintSettingsFragment;->ahp:Landroid/preference/PreferenceCategory;
+    iget-object v0, p0, Lcom/android/settings_ext/print/PrintSettingsFragment;->ahp:Landroid/preference/PreferenceCategory;
 
     return-object v0
 .end method
@@ -118,7 +118,7 @@
     const/4 v2, 0x0
 
     .line 196
-    invoke-virtual {p0}, Lcom/android/settings/print/PrintSettingsFragment;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
+    invoke-virtual {p0}, Lcom/android/settings_ext/print/PrintSettingsFragment;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
 
     move-result-object v0
 
@@ -131,26 +131,26 @@
     if-nez v0, :cond_2
 
     .line 197
-    invoke-virtual {p0}, Lcom/android/settings/print/PrintSettingsFragment;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
+    invoke-virtual {p0}, Lcom/android/settings_ext/print/PrintSettingsFragment;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/android/settings/print/PrintSettingsFragment;->ahq:Landroid/preference/PreferenceCategory;
+    iget-object v1, p0, Lcom/android/settings_ext/print/PrintSettingsFragment;->ahq:Landroid/preference/PreferenceCategory;
 
     invoke-virtual {v0, v1}, Landroid/preference/PreferenceScreen;->addPreference(Landroid/preference/Preference;)Z
 
     .line 204
     :goto_0
-    invoke-virtual {p0}, Lcom/android/settings/print/PrintSettingsFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/print/PrintSettingsFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
-    invoke-static {v0}, Lcom/android/settings/print/t;->bk(Landroid/content/Context;)Ljava/util/List;
+    invoke-static {v0}, Lcom/android/settings_ext/print/t;->bk(Landroid/content/Context;)Ljava/util/List;
 
     move-result-object v3
 
     .line 207
-    invoke-virtual {p0}, Lcom/android/settings/print/PrintSettingsFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/print/PrintSettingsFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
@@ -189,11 +189,11 @@
     check-cast v0, Landroid/content/pm/ResolveInfo;
 
     .line 216
-    invoke-virtual {p0}, Lcom/android/settings/print/PrintSettingsFragment;->getPreferenceManager()Landroid/preference/PreferenceManager;
+    invoke-virtual {p0}, Lcom/android/settings_ext/print/PrintSettingsFragment;->getPreferenceManager()Landroid/preference/PreferenceManager;
 
     move-result-object v6
 
-    invoke-virtual {p0}, Lcom/android/settings/print/PrintSettingsFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/print/PrintSettingsFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v7
 
@@ -202,7 +202,7 @@
     move-result-object v6
 
     .line 219
-    invoke-virtual {p0}, Lcom/android/settings/print/PrintSettingsFragment;->getPackageManager()Landroid/content/pm/PackageManager;
+    invoke-virtual {p0}, Lcom/android/settings_ext/print/PrintSettingsFragment;->getPackageManager()Landroid/content/pm/PackageManager;
 
     move-result-object v7
 
@@ -241,7 +241,7 @@
     invoke-virtual {v6, v1}, Landroid/preference/PreferenceScreen;->setOrder(I)V
 
     .line 228
-    const-class v9, Lcom/android/settings/print/PrintServiceSettingsFragment;
+    const-class v9, Lcom/android/settings_ext/print/PrintServiceSettingsFragment;
 
     invoke-virtual {v9}, Ljava/lang/Class;->getName()Ljava/lang/String;
 
@@ -263,7 +263,7 @@
     .line 233
     const v10, 0x7f09068e
 
-    invoke-virtual {p0, v10}, Lcom/android/settings/print/PrintSettingsFragment;->getString(I)Ljava/lang/String;
+    invoke-virtual {p0, v10}, Lcom/android/settings_ext/print/PrintSettingsFragment;->getString(I)Ljava/lang/String;
 
     move-result-object v10
 
@@ -295,7 +295,7 @@
     invoke-virtual {v10, v9, v7}, Landroid/os/Bundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 243
-    invoke-virtual {p0}, Lcom/android/settings/print/PrintSettingsFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/print/PrintSettingsFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v7
 
@@ -304,7 +304,7 @@
     move-result-object v7
 
     .line 246
-    invoke-virtual {p0}, Lcom/android/settings/print/PrintSettingsFragment;->getPackageManager()Landroid/content/pm/PackageManager;
+    invoke-virtual {p0}, Lcom/android/settings_ext/print/PrintSettingsFragment;->getPackageManager()Landroid/content/pm/PackageManager;
 
     move-result-object v9
 
@@ -321,7 +321,7 @@
 
     aput-object v9, v13, v2
 
-    invoke-virtual {p0, v12, v13}, Lcom/android/settings/print/PrintSettingsFragment;->getString(I[Ljava/lang/Object;)Ljava/lang/String;
+    invoke-virtual {p0, v12, v13}, Lcom/android/settings_ext/print/PrintSettingsFragment;->getString(I[Ljava/lang/Object;)Ljava/lang/String;
 
     move-result-object v12
 
@@ -336,7 +336,7 @@
 
     aput-object v9, v13, v2
 
-    invoke-virtual {p0, v12, v13}, Lcom/android/settings/print/PrintSettingsFragment;->getString(I[Ljava/lang/Object;)Ljava/lang/String;
+    invoke-virtual {p0, v12, v13}, Lcom/android/settings_ext/print/PrintSettingsFragment;->getString(I[Ljava/lang/Object;)Ljava/lang/String;
 
     move-result-object v9
 
@@ -359,7 +359,7 @@
 
     const v12, 0x7f09068c
 
-    invoke-virtual {p0, v12}, Lcom/android/settings/print/PrintSettingsFragment;->getString(I)Ljava/lang/String;
+    invoke-virtual {p0, v12}, Lcom/android/settings_ext/print/PrintSettingsFragment;->getString(I)Ljava/lang/String;
 
     move-result-object v12
 
@@ -400,7 +400,7 @@
 
     const v11, 0x7f09068d
 
-    invoke-virtual {p0, v11}, Lcom/android/settings/print/PrintSettingsFragment;->getString(I)Ljava/lang/String;
+    invoke-virtual {p0, v11}, Lcom/android/settings_ext/print/PrintSettingsFragment;->getString(I)Ljava/lang/String;
 
     move-result-object v11
 
@@ -434,7 +434,7 @@
     invoke-virtual {v10, v0, v7}, Landroid/os/Bundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 273
-    iget-object v0, p0, Lcom/android/settings/print/PrintSettingsFragment;->ahq:Landroid/preference/PreferenceCategory;
+    iget-object v0, p0, Lcom/android/settings_ext/print/PrintSettingsFragment;->ahq:Landroid/preference/PreferenceCategory;
 
     invoke-virtual {v0, v6}, Landroid/preference/PreferenceCategory;->addPreference(Landroid/preference/Preference;)Z
 
@@ -447,7 +447,7 @@
 
     .line 201
     :cond_2
-    iget-object v0, p0, Lcom/android/settings/print/PrintSettingsFragment;->ahq:Landroid/preference/PreferenceCategory;
+    iget-object v0, p0, Lcom/android/settings_ext/print/PrintSettingsFragment;->ahq:Landroid/preference/PreferenceCategory;
 
     invoke-virtual {v0}, Landroid/preference/PreferenceCategory;->removeAll()V
 
@@ -457,7 +457,7 @@
     :cond_3
     const v10, 0x7f09068f
 
-    invoke-virtual {p0, v10}, Lcom/android/settings/print/PrintSettingsFragment;->getString(I)Ljava/lang/String;
+    invoke-virtual {p0, v10}, Lcom/android/settings_ext/print/PrintSettingsFragment;->getString(I)Ljava/lang/String;
 
     move-result-object v10
 
@@ -467,7 +467,7 @@
 
     .line 276
     :cond_4
-    iget-object v0, p0, Lcom/android/settings/print/PrintSettingsFragment;->ahq:Landroid/preference/PreferenceCategory;
+    iget-object v0, p0, Lcom/android/settings_ext/print/PrintSettingsFragment;->ahq:Landroid/preference/PreferenceCategory;
 
     invoke-virtual {v0}, Landroid/preference/PreferenceCategory;->getPreferenceCount()I
 
@@ -476,11 +476,11 @@
     if-nez v0, :cond_5
 
     .line 277
-    invoke-virtual {p0}, Lcom/android/settings/print/PrintSettingsFragment;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
+    invoke-virtual {p0}, Lcom/android/settings_ext/print/PrintSettingsFragment;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/android/settings/print/PrintSettingsFragment;->ahq:Landroid/preference/PreferenceCategory;
+    iget-object v1, p0, Lcom/android/settings_ext/print/PrintSettingsFragment;->ahq:Landroid/preference/PreferenceCategory;
 
     invoke-virtual {v0, v1}, Landroid/preference/PreferenceScreen;->removePreference(Landroid/preference/Preference;)Z
 
@@ -494,7 +494,7 @@
 
     .prologue
     .line 282
-    invoke-virtual {p0}, Lcom/android/settings/print/PrintSettingsFragment;->getArguments()Landroid/os/Bundle;
+    invoke-virtual {p0}, Lcom/android/settings_ext/print/PrintSettingsFragment;->getArguments()Landroid/os/Bundle;
 
     move-result-object v0
 
@@ -507,7 +507,7 @@
 
     .line 285
     :cond_1
-    invoke-virtual {p0}, Lcom/android/settings/print/PrintSettingsFragment;->getArguments()Landroid/os/Bundle;
+    invoke-virtual {p0}, Lcom/android/settings_ext/print/PrintSettingsFragment;->getArguments()Landroid/os/Bundle;
 
     move-result-object v0
 
@@ -521,7 +521,7 @@
     if-eqz v0, :cond_0
 
     .line 287
-    invoke-virtual {p0}, Lcom/android/settings/print/PrintSettingsFragment;->getArguments()Landroid/os/Bundle;
+    invoke-virtual {p0}, Lcom/android/settings_ext/print/PrintSettingsFragment;->getArguments()Landroid/os/Bundle;
 
     move-result-object v1
 
@@ -530,7 +530,7 @@
     invoke-virtual {v1, v2}, Landroid/os/Bundle;->remove(Ljava/lang/String;)V
 
     .line 288
-    invoke-virtual {p0, v0}, Lcom/android/settings/print/PrintSettingsFragment;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v0}, Lcom/android/settings_ext/print/PrintSettingsFragment;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v0
 
@@ -538,7 +538,7 @@
     if-eqz v0, :cond_0
 
     .line 290
-    invoke-virtual {p0}, Lcom/android/settings/print/PrintSettingsFragment;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
+    invoke-virtual {p0}, Lcom/android/settings_ext/print/PrintSettingsFragment;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
 
     move-result-object v1
 
@@ -556,53 +556,53 @@
     const/4 v3, 0x0
 
     .line 130
-    invoke-super {p0, p1}, Lcom/android/settings/SettingsPreferenceFragment;->onCreate(Landroid/os/Bundle;)V
+    invoke-super {p0, p1}, Lcom/android/settings_ext/SettingsPreferenceFragment;->onCreate(Landroid/os/Bundle;)V
 
     .line 131
     const v0, 0x7f060060
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/print/PrintSettingsFragment;->addPreferencesFromResource(I)V
+    invoke-virtual {p0, v0}, Lcom/android/settings_ext/print/PrintSettingsFragment;->addPreferencesFromResource(I)V
 
     .line 133
     const-string v0, "print_jobs_category"
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/print/PrintSettingsFragment;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v0}, Lcom/android/settings_ext/print/PrintSettingsFragment;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v0
 
     check-cast v0, Landroid/preference/PreferenceCategory;
 
-    iput-object v0, p0, Lcom/android/settings/print/PrintSettingsFragment;->ahp:Landroid/preference/PreferenceCategory;
+    iput-object v0, p0, Lcom/android/settings_ext/print/PrintSettingsFragment;->ahp:Landroid/preference/PreferenceCategory;
 
     .line 135
     const-string v0, "print_services_category"
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/print/PrintSettingsFragment;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v0}, Lcom/android/settings_ext/print/PrintSettingsFragment;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v0
 
     check-cast v0, Landroid/preference/PreferenceCategory;
 
-    iput-object v0, p0, Lcom/android/settings/print/PrintSettingsFragment;->ahq:Landroid/preference/PreferenceCategory;
+    iput-object v0, p0, Lcom/android/settings_ext/print/PrintSettingsFragment;->ahq:Landroid/preference/PreferenceCategory;
 
     .line 137
-    invoke-virtual {p0}, Lcom/android/settings/print/PrintSettingsFragment;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
+    invoke-virtual {p0}, Lcom/android/settings_ext/print/PrintSettingsFragment;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/android/settings/print/PrintSettingsFragment;->ahp:Landroid/preference/PreferenceCategory;
+    iget-object v1, p0, Lcom/android/settings_ext/print/PrintSettingsFragment;->ahp:Landroid/preference/PreferenceCategory;
 
     invoke-virtual {v0, v1}, Landroid/preference/PreferenceScreen;->removePreference(Landroid/preference/Preference;)Z
 
     .line 139
-    new-instance v0, Lcom/android/settings/print/o;
+    new-instance v0, Lcom/android/settings_ext/print/o;
 
-    invoke-direct {v0, p0, v3}, Lcom/android/settings/print/o;-><init>(Lcom/android/settings/print/PrintSettingsFragment;Lcom/android/settings/print/l;)V
+    invoke-direct {v0, p0, v3}, Lcom/android/settings_ext/print/o;-><init>(Lcom/android/settings_ext/print/PrintSettingsFragment;Lcom/android/settings_ext/print/l;)V
 
-    iput-object v0, p0, Lcom/android/settings/print/PrintSettingsFragment;->ahr:Lcom/android/settings/print/o;
+    iput-object v0, p0, Lcom/android/settings_ext/print/PrintSettingsFragment;->ahr:Lcom/android/settings_ext/print/o;
 
     .line 140
-    invoke-virtual {p0}, Lcom/android/settings/print/PrintSettingsFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/print/PrintSettingsFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
@@ -612,7 +612,7 @@
 
     const/4 v1, 0x1
 
-    iget-object v2, p0, Lcom/android/settings/print/PrintSettingsFragment;->ahr:Lcom/android/settings/print/o;
+    iget-object v2, p0, Lcom/android/settings_ext/print/PrintSettingsFragment;->ahr:Lcom/android/settings_ext/print/o;
 
     invoke-virtual {v0, v1, v3, v2}, Landroid/app/LoaderManager;->initLoader(ILandroid/os/Bundle;Landroid/app/LoaderManager$LoaderCallbacks;)Landroid/content/Loader;
 
@@ -625,10 +625,10 @@
 
     .prologue
     .line 163
-    invoke-super {p0, p1, p2}, Lcom/android/settings/SettingsPreferenceFragment;->onCreateOptionsMenu(Landroid/view/Menu;Landroid/view/MenuInflater;)V
+    invoke-super {p0, p1, p2}, Lcom/android/settings_ext/SettingsPreferenceFragment;->onCreateOptionsMenu(Landroid/view/Menu;Landroid/view/MenuInflater;)V
 
     .line 164
-    invoke-virtual {p0}, Lcom/android/settings/print/PrintSettingsFragment;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/settings_ext/print/PrintSettingsFragment;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v0
 
@@ -680,9 +680,9 @@
 
     .prologue
     .line 297
-    iget-object v0, p0, Lcom/android/settings/print/PrintSettingsFragment;->Hh:Lcom/android/settings/hj;
+    iget-object v0, p0, Lcom/android/settings_ext/print/PrintSettingsFragment;->Hh:Lcom/android/settings_ext/hj;
 
-    invoke-virtual {v0, p3}, Lcom/android/settings/hj;->ag(I)Landroid/os/UserHandle;
+    invoke-virtual {v0, p3}, Lcom/android/settings_ext/hj;->ag(I)Landroid/os/UserHandle;
 
     move-result-object v0
 
@@ -715,7 +715,7 @@
     invoke-virtual {v1, v2}, Landroid/content/Intent;->addFlags(I)Landroid/content/Intent;
 
     .line 302
-    invoke-virtual {p0}, Lcom/android/settings/print/PrintSettingsFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/print/PrintSettingsFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v2
 
@@ -739,21 +739,21 @@
 
     .prologue
     .line 156
-    iget-object v0, p0, Lcom/android/settings/print/PrintSettingsFragment;->Al:Lcom/android/internal/content/PackageMonitor;
+    iget-object v0, p0, Lcom/android/settings_ext/print/PrintSettingsFragment;->Al:Lcom/android/internal/content/PackageMonitor;
 
     invoke-virtual {v0}, Lcom/android/internal/content/PackageMonitor;->unregister()V
 
     .line 157
-    iget-object v0, p0, Lcom/android/settings/print/PrintSettingsFragment;->aho:Lcom/android/settings/print/r;
+    iget-object v0, p0, Lcom/android/settings_ext/print/PrintSettingsFragment;->aho:Lcom/android/settings_ext/print/r;
 
-    invoke-virtual {p0}, Lcom/android/settings/print/PrintSettingsFragment;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/settings_ext/print/PrintSettingsFragment;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v1
 
-    invoke-virtual {v0, v1}, Lcom/android/settings/print/r;->b(Landroid/content/ContentResolver;)V
+    invoke-virtual {v0, v1}, Lcom/android/settings_ext/print/r;->b(Landroid/content/ContentResolver;)V
 
     .line 158
-    invoke-super {p0}, Lcom/android/settings/SettingsPreferenceFragment;->onPause()V
+    invoke-super {p0}, Lcom/android/settings_ext/SettingsPreferenceFragment;->onPause()V
 
     .line 159
     return-void
@@ -764,16 +764,16 @@
 
     .prologue
     .line 146
-    invoke-super {p0}, Lcom/android/settings/SettingsPreferenceFragment;->onResume()V
+    invoke-super {p0}, Lcom/android/settings_ext/SettingsPreferenceFragment;->onResume()V
 
     .line 147
-    iget-object v0, p0, Lcom/android/settings/print/PrintSettingsFragment;->Al:Lcom/android/internal/content/PackageMonitor;
+    iget-object v0, p0, Lcom/android/settings_ext/print/PrintSettingsFragment;->Al:Lcom/android/internal/content/PackageMonitor;
 
-    invoke-virtual {p0}, Lcom/android/settings/print/PrintSettingsFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/print/PrintSettingsFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v1
 
-    invoke-virtual {p0}, Lcom/android/settings/print/PrintSettingsFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/print/PrintSettingsFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v2
 
@@ -786,24 +786,24 @@
     invoke-virtual {v0, v1, v2, v3}, Lcom/android/internal/content/PackageMonitor;->register(Landroid/content/Context;Landroid/os/Looper;Z)V
 
     .line 148
-    iget-object v0, p0, Lcom/android/settings/print/PrintSettingsFragment;->aho:Lcom/android/settings/print/r;
+    iget-object v0, p0, Lcom/android/settings_ext/print/PrintSettingsFragment;->aho:Lcom/android/settings_ext/print/r;
 
-    invoke-virtual {p0}, Lcom/android/settings/print/PrintSettingsFragment;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/settings_ext/print/PrintSettingsFragment;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v1
 
-    invoke-virtual {v0, v1}, Lcom/android/settings/print/r;->a(Landroid/content/ContentResolver;)V
+    invoke-virtual {v0, v1}, Lcom/android/settings_ext/print/r;->a(Landroid/content/ContentResolver;)V
 
     .line 149
-    invoke-direct {p0}, Lcom/android/settings/print/PrintSettingsFragment;->hK()V
+    invoke-direct {p0}, Lcom/android/settings_ext/print/PrintSettingsFragment;->hK()V
 
     .line 150
     const/4 v0, 0x1
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/print/PrintSettingsFragment;->setHasOptionsMenu(Z)V
+    invoke-virtual {p0, v0}, Lcom/android/settings_ext/print/PrintSettingsFragment;->setHasOptionsMenu(Z)V
 
     .line 151
-    invoke-direct {p0}, Lcom/android/settings/print/PrintSettingsFragment;->ri()V
+    invoke-direct {p0}, Lcom/android/settings_ext/print/PrintSettingsFragment;->ri()V
 
     .line 152
     return-void
@@ -814,10 +814,10 @@
 
     .prologue
     .line 175
-    invoke-super {p0, p1, p2}, Lcom/android/settings/SettingsPreferenceFragment;->onViewCreated(Landroid/view/View;Landroid/os/Bundle;)V
+    invoke-super {p0, p1, p2}, Lcom/android/settings_ext/SettingsPreferenceFragment;->onViewCreated(Landroid/view/View;Landroid/os/Bundle;)V
 
     .line 176
-    invoke-virtual {p0}, Lcom/android/settings/print/PrintSettingsFragment;->getListView()Landroid/widget/ListView;
+    invoke-virtual {p0}, Lcom/android/settings_ext/print/PrintSettingsFragment;->getListView()Landroid/widget/ListView;
 
     move-result-object v0
 
@@ -828,7 +828,7 @@
     check-cast v0, Landroid/view/ViewGroup;
 
     .line 177
-    invoke-virtual {p0}, Lcom/android/settings/print/PrintSettingsFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/print/PrintSettingsFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v1
 
@@ -862,7 +862,7 @@
     invoke-virtual {v0, v2}, Landroid/view/ViewGroup;->addView(Landroid/view/View;)V
 
     .line 182
-    invoke-virtual {p0}, Lcom/android/settings/print/PrintSettingsFragment;->getListView()Landroid/widget/ListView;
+    invoke-virtual {p0}, Lcom/android/settings_ext/print/PrintSettingsFragment;->getListView()Landroid/widget/ListView;
 
     move-result-object v0
 
@@ -871,30 +871,30 @@
     .line 184
     const-string v0, "user"
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/print/PrintSettingsFragment;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
+    invoke-virtual {p0, v0}, Lcom/android/settings_ext/print/PrintSettingsFragment;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object v0
 
     check-cast v0, Landroid/os/UserManager;
 
     .line 185
-    invoke-virtual {p0}, Lcom/android/settings/print/PrintSettingsFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/print/PrintSettingsFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v1
 
-    invoke-static {v0, v1}, Lcom/android/settings/hl;->a(Landroid/os/UserManager;Landroid/content/Context;)Lcom/android/settings/hj;
+    invoke-static {v0, v1}, Lcom/android/settings_ext/hl;->a(Landroid/os/UserManager;Landroid/content/Context;)Lcom/android/settings_ext/hj;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/print/PrintSettingsFragment;->Hh:Lcom/android/settings/hj;
+    iput-object v0, p0, Lcom/android/settings_ext/print/PrintSettingsFragment;->Hh:Lcom/android/settings_ext/hj;
 
     .line 186
-    iget-object v0, p0, Lcom/android/settings/print/PrintSettingsFragment;->Hh:Lcom/android/settings/hj;
+    iget-object v0, p0, Lcom/android/settings_ext/print/PrintSettingsFragment;->Hh:Lcom/android/settings_ext/hj;
 
     if-eqz v0, :cond_0
 
     .line 187
-    invoke-virtual {p0}, Lcom/android/settings/print/PrintSettingsFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/print/PrintSettingsFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
@@ -913,7 +913,7 @@
     check-cast v0, Landroid/widget/Spinner;
 
     .line 189
-    iget-object v1, p0, Lcom/android/settings/print/PrintSettingsFragment;->Hh:Lcom/android/settings/hj;
+    iget-object v1, p0, Lcom/android/settings_ext/print/PrintSettingsFragment;->Hh:Lcom/android/settings_ext/hj;
 
     invoke-virtual {v0, v1}, Landroid/widget/Spinner;->setAdapter(Landroid/widget/SpinnerAdapter;)V
 
@@ -921,7 +921,7 @@
     invoke-virtual {v0, p0}, Landroid/widget/Spinner;->setOnItemSelectedListener(Landroid/widget/AdapterView$OnItemSelectedListener;)V
 
     .line 191
-    invoke-virtual {p0, v0}, Lcom/android/settings/print/PrintSettingsFragment;->c(Landroid/view/View;)V
+    invoke-virtual {p0, v0}, Lcom/android/settings_ext/print/PrintSettingsFragment;->c(Landroid/view/View;)V
 
     .line 193
     :cond_0

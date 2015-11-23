@@ -1,4 +1,4 @@
-.class Lcom/android/settings/users/EditUserPhotoController$2;
+.class Lcom/android/settings_ext/users/EditUserPhotoController$2;
 .super Ljava/lang/Object;
 .source "EditUserPhotoController.java"
 
@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final synthetic amk:Lcom/android/settings/users/EditUserPhotoController;
+.field final synthetic amk:Lcom/android/settings_ext/users/EditUserPhotoController;
 
 .field final synthetic aml:Ljava/util/List;
 
@@ -15,16 +15,16 @@
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/users/EditUserPhotoController;Ljava/util/List;Landroid/widget/ListPopupWindow;)V
+.method constructor <init>(Lcom/android/settings_ext/users/EditUserPhotoController;Ljava/util/List;Landroid/widget/ListPopupWindow;)V
     .locals 0
 
     .prologue
     .line 165
-    iput-object p1, p0, Lcom/android/settings/users/EditUserPhotoController$2;->amk:Lcom/android/settings/users/EditUserPhotoController;
+    iput-object p1, p0, Lcom/android/settings_ext/users/EditUserPhotoController$2;->amk:Lcom/android/settings_ext/users/EditUserPhotoController;
 
-    iput-object p2, p0, Lcom/android/settings/users/EditUserPhotoController$2;->aml:Ljava/util/List;
+    iput-object p2, p0, Lcom/android/settings_ext/users/EditUserPhotoController$2;->aml:Ljava/util/List;
 
-    iput-object p3, p0, Lcom/android/settings/users/EditUserPhotoController$2;->amm:Landroid/widget/ListPopupWindow;
+    iput-object p3, p0, Lcom/android/settings_ext/users/EditUserPhotoController$2;->amm:Landroid/widget/ListPopupWindow;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -38,16 +38,16 @@
 
     .prologue
     .line 168
-    iget-object v0, p0, Lcom/android/settings/users/EditUserPhotoController$2;->aml:Ljava/util/List;
+    iget-object v0, p0, Lcom/android/settings_ext/users/EditUserPhotoController$2;->aml:Ljava/util/List;
 
     invoke-interface {v0, p3}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
     move-result-object v0
 
-    check-cast v0, Lcom/android/settings/users/EditUserPhotoController$AdapterItem;
+    check-cast v0, Lcom/android/settings_ext/users/EditUserPhotoController$AdapterItem;
 
     .line 169
-    iget v0, v0, Lcom/android/settings/users/EditUserPhotoController$AdapterItem;->id:I
+    iget v0, v0, Lcom/android/settings_ext/users/EditUserPhotoController$AdapterItem;->id:I
 
     packed-switch v0, :pswitch_data_0
 
@@ -57,12 +57,12 @@
 
     .line 171
     :pswitch_0
-    iget-object v0, p0, Lcom/android/settings/users/EditUserPhotoController$2;->amk:Lcom/android/settings/users/EditUserPhotoController;
+    iget-object v0, p0, Lcom/android/settings_ext/users/EditUserPhotoController$2;->amk:Lcom/android/settings_ext/users/EditUserPhotoController;
 
-    invoke-static {v0}, Lcom/android/settings/users/EditUserPhotoController;->b(Lcom/android/settings/users/EditUserPhotoController;)V
+    invoke-static {v0}, Lcom/android/settings_ext/users/EditUserPhotoController;->b(Lcom/android/settings_ext/users/EditUserPhotoController;)V
 
     .line 172
-    iget-object v0, p0, Lcom/android/settings/users/EditUserPhotoController$2;->amm:Landroid/widget/ListPopupWindow;
+    iget-object v0, p0, Lcom/android/settings_ext/users/EditUserPhotoController$2;->amm:Landroid/widget/ListPopupWindow;
 
     invoke-virtual {v0}, Landroid/widget/ListPopupWindow;->dismiss()V
 
@@ -70,12 +70,12 @@
 
     .line 175
     :pswitch_1
-    iget-object v0, p0, Lcom/android/settings/users/EditUserPhotoController$2;->amk:Lcom/android/settings/users/EditUserPhotoController;
+    iget-object v0, p0, Lcom/android/settings_ext/users/EditUserPhotoController$2;->amk:Lcom/android/settings_ext/users/EditUserPhotoController;
 
-    invoke-static {v0}, Lcom/android/settings/users/EditUserPhotoController;->c(Lcom/android/settings/users/EditUserPhotoController;)V
+    invoke-static {v0}, Lcom/android/settings_ext/users/EditUserPhotoController;->c(Lcom/android/settings_ext/users/EditUserPhotoController;)V
 
     .line 176
-    iget-object v0, p0, Lcom/android/settings/users/EditUserPhotoController$2;->amm:Landroid/widget/ListPopupWindow;
+    iget-object v0, p0, Lcom/android/settings_ext/users/EditUserPhotoController$2;->amm:Landroid/widget/ListPopupWindow;
 
     invoke-virtual {v0}, Landroid/widget/ListPopupWindow;->dismiss()V
 

@@ -1,4 +1,4 @@
-.class public Lcom/android/settings/SettingsLicenseActivity;
+.class public Lcom/android/settings_ext/SettingsLicenseActivity;
 .super Lmiui/app/Activity;
 .source "SettingsLicenseActivity.java"
 
@@ -24,16 +24,16 @@
     invoke-direct {p0}, Lmiui/app/Activity;-><init>()V
 
     .line 125
-    iput-object v0, p0, Lcom/android/settings/SettingsLicenseActivity;->mHandler:Landroid/os/Handler;
+    iput-object v0, p0, Lcom/android/settings_ext/SettingsLicenseActivity;->mHandler:Landroid/os/Handler;
 
     .line 126
-    iput-object v0, p0, Lcom/android/settings/SettingsLicenseActivity;->xj:Landroid/webkit/WebView;
+    iput-object v0, p0, Lcom/android/settings_ext/SettingsLicenseActivity;->xj:Landroid/webkit/WebView;
 
     .line 127
-    iput-object v0, p0, Lcom/android/settings/SettingsLicenseActivity;->xk:Lmiui/app/ProgressDialog;
+    iput-object v0, p0, Lcom/android/settings_ext/SettingsLicenseActivity;->xk:Lmiui/app/ProgressDialog;
 
     .line 128
-    iput-object v0, p0, Lcom/android/settings/SettingsLicenseActivity;->xl:Lmiui/app/AlertDialog;
+    iput-object v0, p0, Lcom/android/settings_ext/SettingsLicenseActivity;->xl:Lmiui/app/AlertDialog;
 
     .line 129
     return-void
@@ -66,19 +66,19 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/SettingsLicenseActivity;->xl:Lmiui/app/AlertDialog;
+    iput-object v0, p0, Lcom/android/settings_ext/SettingsLicenseActivity;->xl:Lmiui/app/AlertDialog;
 
     .line 199
-    iget-object v0, p0, Lcom/android/settings/SettingsLicenseActivity;->xl:Lmiui/app/AlertDialog;
+    iget-object v0, p0, Lcom/android/settings_ext/SettingsLicenseActivity;->xl:Lmiui/app/AlertDialog;
 
-    new-instance v2, Lcom/android/settings/gq;
+    new-instance v2, Lcom/android/settings_ext/gq;
 
-    invoke-direct {v2, p0}, Lcom/android/settings/gq;-><init>(Lcom/android/settings/SettingsLicenseActivity;)V
+    invoke-direct {v2, p0}, Lcom/android/settings_ext/gq;-><init>(Lcom/android/settings_ext/SettingsLicenseActivity;)V
 
     invoke-virtual {v0, v2}, Lmiui/app/AlertDialog;->setOnDismissListener(Landroid/content/DialogInterface$OnDismissListener;)V
 
     .line 207
-    iget-object v0, p0, Lcom/android/settings/SettingsLicenseActivity;->xj:Landroid/webkit/WebView;
+    iget-object v0, p0, Lcom/android/settings_ext/SettingsLicenseActivity;->xj:Landroid/webkit/WebView;
 
     const-string v3, "text/html"
 
@@ -91,47 +91,47 @@
     invoke-virtual/range {v0 .. v5}, Landroid/webkit/WebView;->loadDataWithBaseURL(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
 
     .line 208
-    iget-object v0, p0, Lcom/android/settings/SettingsLicenseActivity;->xj:Landroid/webkit/WebView;
+    iget-object v0, p0, Lcom/android/settings_ext/SettingsLicenseActivity;->xj:Landroid/webkit/WebView;
 
-    new-instance v2, Lcom/android/settings/gr;
+    new-instance v2, Lcom/android/settings_ext/gr;
 
-    invoke-direct {v2, p0}, Lcom/android/settings/gr;-><init>(Lcom/android/settings/SettingsLicenseActivity;)V
+    invoke-direct {v2, p0}, Lcom/android/settings_ext/gr;-><init>(Lcom/android/settings_ext/SettingsLicenseActivity;)V
 
     invoke-virtual {v0, v2}, Landroid/webkit/WebView;->setWebViewClient(Landroid/webkit/WebViewClient;)V
 
     .line 219
-    iput-object v1, p0, Lcom/android/settings/SettingsLicenseActivity;->xj:Landroid/webkit/WebView;
+    iput-object v1, p0, Lcom/android/settings_ext/SettingsLicenseActivity;->xj:Landroid/webkit/WebView;
 
     .line 220
     return-void
 .end method
 
-.method static synthetic a(Lcom/android/settings/SettingsLicenseActivity;)V
+.method static synthetic a(Lcom/android/settings_ext/SettingsLicenseActivity;)V
     .locals 0
 
     .prologue
     .line 46
-    invoke-direct {p0}, Lcom/android/settings/SettingsLicenseActivity;->gS()V
+    invoke-direct {p0}, Lcom/android/settings_ext/SettingsLicenseActivity;->gS()V
 
     return-void
 .end method
 
-.method static synthetic a(Lcom/android/settings/SettingsLicenseActivity;Ljava/lang/String;)V
+.method static synthetic a(Lcom/android/settings_ext/SettingsLicenseActivity;Ljava/lang/String;)V
     .locals 0
 
     .prologue
     .line 46
-    invoke-direct {p0, p1}, Lcom/android/settings/SettingsLicenseActivity;->H(Ljava/lang/String;)V
+    invoke-direct {p0, p1}, Lcom/android/settings_ext/SettingsLicenseActivity;->H(Ljava/lang/String;)V
 
     return-void
 .end method
 
-.method static synthetic b(Lcom/android/settings/SettingsLicenseActivity;)Lmiui/app/ProgressDialog;
+.method static synthetic b(Lcom/android/settings_ext/SettingsLicenseActivity;)Lmiui/app/ProgressDialog;
     .locals 1
 
     .prologue
     .line 46
-    iget-object v0, p0, Lcom/android/settings/SettingsLicenseActivity;->xk:Lmiui/app/ProgressDialog;
+    iget-object v0, p0, Lcom/android/settings_ext/SettingsLicenseActivity;->xk:Lmiui/app/ProgressDialog;
 
     return-object v0
 .end method
@@ -141,14 +141,14 @@
 
     .prologue
     .line 223
-    iget-object v0, p0, Lcom/android/settings/SettingsLicenseActivity;->xk:Lmiui/app/ProgressDialog;
+    iget-object v0, p0, Lcom/android/settings_ext/SettingsLicenseActivity;->xk:Lmiui/app/ProgressDialog;
 
     invoke-virtual {v0}, Lmiui/app/ProgressDialog;->dismiss()V
 
     .line 224
     const/4 v0, 0x0
 
-    iput-object v0, p0, Lcom/android/settings/SettingsLicenseActivity;->xk:Lmiui/app/ProgressDialog;
+    iput-object v0, p0, Lcom/android/settings_ext/SettingsLicenseActivity;->xk:Lmiui/app/ProgressDialog;
 
     .line 225
     const v0, 0x7f0904da
@@ -162,7 +162,7 @@
     invoke-virtual {v0}, Landroid/widget/Toast;->show()V
 
     .line 227
-    invoke-virtual {p0}, Lcom/android/settings/SettingsLicenseActivity;->finish()V
+    invoke-virtual {p0}, Lcom/android/settings_ext/SettingsLicenseActivity;->finish()V
 
     .line 228
     return-void
@@ -203,7 +203,7 @@
     invoke-static {v0, v1}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
 
     .line 138
-    invoke-direct {p0}, Lcom/android/settings/SettingsLicenseActivity;->gS()V
+    invoke-direct {p0}, Lcom/android/settings_ext/SettingsLicenseActivity;->gS()V
 
     .line 177
     :goto_0
@@ -211,36 +211,36 @@
 
     .line 144
     :cond_0
-    invoke-virtual {p0, v4}, Lcom/android/settings/SettingsLicenseActivity;->setVisible(Z)V
+    invoke-virtual {p0, v4}, Lcom/android/settings_ext/SettingsLicenseActivity;->setVisible(Z)V
 
     .line 146
     new-instance v1, Landroid/webkit/WebView;
 
     invoke-direct {v1, p0}, Landroid/webkit/WebView;-><init>(Landroid/content/Context;)V
 
-    iput-object v1, p0, Lcom/android/settings/SettingsLicenseActivity;->xj:Landroid/webkit/WebView;
+    iput-object v1, p0, Lcom/android/settings_ext/SettingsLicenseActivity;->xj:Landroid/webkit/WebView;
 
     .line 148
-    iget-object v1, p0, Lcom/android/settings/SettingsLicenseActivity;->xj:Landroid/webkit/WebView;
+    iget-object v1, p0, Lcom/android/settings_ext/SettingsLicenseActivity;->xj:Landroid/webkit/WebView;
 
-    invoke-virtual {p0, v1}, Lcom/android/settings/SettingsLicenseActivity;->setContentView(Landroid/view/View;)V
+    invoke-virtual {p0, v1}, Lcom/android/settings_ext/SettingsLicenseActivity;->setContentView(Landroid/view/View;)V
 
     .line 150
-    new-instance v1, Lcom/android/settings/gp;
+    new-instance v1, Lcom/android/settings_ext/gp;
 
-    invoke-direct {v1, p0}, Lcom/android/settings/gp;-><init>(Lcom/android/settings/SettingsLicenseActivity;)V
+    invoke-direct {v1, p0}, Lcom/android/settings_ext/gp;-><init>(Lcom/android/settings_ext/SettingsLicenseActivity;)V
 
-    iput-object v1, p0, Lcom/android/settings/SettingsLicenseActivity;->mHandler:Landroid/os/Handler;
+    iput-object v1, p0, Lcom/android/settings_ext/SettingsLicenseActivity;->mHandler:Landroid/os/Handler;
 
     .line 165
     const v1, 0x7f0904d9
 
-    invoke-virtual {p0, v1}, Lcom/android/settings/SettingsLicenseActivity;->getText(I)Ljava/lang/CharSequence;
+    invoke-virtual {p0, v1}, Lcom/android/settings_ext/SettingsLicenseActivity;->getText(I)Ljava/lang/CharSequence;
 
     .line 166
     const v1, 0x7f0904db
 
-    invoke-virtual {p0, v1}, Lcom/android/settings/SettingsLicenseActivity;->getText(I)Ljava/lang/CharSequence;
+    invoke-virtual {p0, v1}, Lcom/android/settings_ext/SettingsLicenseActivity;->getText(I)Ljava/lang/CharSequence;
 
     move-result-object v1
 
@@ -257,16 +257,16 @@
     invoke-virtual {v1, v4}, Lmiui/app/ProgressDialog;->setProgressStyle(I)V
 
     .line 172
-    iput-object v1, p0, Lcom/android/settings/SettingsLicenseActivity;->xk:Lmiui/app/ProgressDialog;
+    iput-object v1, p0, Lcom/android/settings_ext/SettingsLicenseActivity;->xk:Lmiui/app/ProgressDialog;
 
     .line 175
     new-instance v1, Ljava/lang/Thread;
 
-    new-instance v2, Lcom/android/settings/gs;
+    new-instance v2, Lcom/android/settings_ext/gs;
 
-    iget-object v3, p0, Lcom/android/settings/SettingsLicenseActivity;->mHandler:Landroid/os/Handler;
+    iget-object v3, p0, Lcom/android/settings_ext/SettingsLicenseActivity;->mHandler:Landroid/os/Handler;
 
-    invoke-direct {v2, p0, v0, v3}, Lcom/android/settings/gs;-><init>(Lcom/android/settings/SettingsLicenseActivity;Ljava/lang/String;Landroid/os/Handler;)V
+    invoke-direct {v2, p0, v0, v3}, Lcom/android/settings_ext/gs;-><init>(Lcom/android/settings_ext/SettingsLicenseActivity;Ljava/lang/String;Landroid/os/Handler;)V
 
     invoke-direct {v1, v2}, Ljava/lang/Thread;-><init>(Ljava/lang/Runnable;)V
 
@@ -281,11 +281,11 @@
 
     .prologue
     .line 181
-    iget-object v0, p0, Lcom/android/settings/SettingsLicenseActivity;->xl:Lmiui/app/AlertDialog;
+    iget-object v0, p0, Lcom/android/settings_ext/SettingsLicenseActivity;->xl:Lmiui/app/AlertDialog;
 
     if-eqz v0, :cond_0
 
-    iget-object v0, p0, Lcom/android/settings/SettingsLicenseActivity;->xl:Lmiui/app/AlertDialog;
+    iget-object v0, p0, Lcom/android/settings_ext/SettingsLicenseActivity;->xl:Lmiui/app/AlertDialog;
 
     invoke-virtual {v0}, Lmiui/app/AlertDialog;->isShowing()Z
 
@@ -294,17 +294,17 @@
     if-eqz v0, :cond_0
 
     .line 182
-    iget-object v0, p0, Lcom/android/settings/SettingsLicenseActivity;->xl:Lmiui/app/AlertDialog;
+    iget-object v0, p0, Lcom/android/settings_ext/SettingsLicenseActivity;->xl:Lmiui/app/AlertDialog;
 
     invoke-virtual {v0}, Lmiui/app/AlertDialog;->dismiss()V
 
     .line 184
     :cond_0
-    iget-object v0, p0, Lcom/android/settings/SettingsLicenseActivity;->xk:Lmiui/app/ProgressDialog;
+    iget-object v0, p0, Lcom/android/settings_ext/SettingsLicenseActivity;->xk:Lmiui/app/ProgressDialog;
 
     if-eqz v0, :cond_1
 
-    iget-object v0, p0, Lcom/android/settings/SettingsLicenseActivity;->xk:Lmiui/app/ProgressDialog;
+    iget-object v0, p0, Lcom/android/settings_ext/SettingsLicenseActivity;->xk:Lmiui/app/ProgressDialog;
 
     invoke-virtual {v0}, Lmiui/app/ProgressDialog;->isShowing()Z
 
@@ -313,7 +313,7 @@
     if-eqz v0, :cond_1
 
     .line 185
-    iget-object v0, p0, Lcom/android/settings/SettingsLicenseActivity;->xk:Lmiui/app/ProgressDialog;
+    iget-object v0, p0, Lcom/android/settings_ext/SettingsLicenseActivity;->xk:Lmiui/app/ProgressDialog;
 
     invoke-virtual {v0}, Lmiui/app/ProgressDialog;->dismiss()V
 

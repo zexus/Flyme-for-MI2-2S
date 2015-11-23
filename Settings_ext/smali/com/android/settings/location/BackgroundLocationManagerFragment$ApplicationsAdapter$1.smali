@@ -1,19 +1,19 @@
-.class Lcom/android/settings/location/BackgroundLocationManagerFragment$ApplicationsAdapter$1;
+.class Lcom/android/settings_ext/location/BackgroundLocationManagerFragment$ApplicationsAdapter$1;
 .super Landroid/widget/Filter;
 .source "BackgroundLocationManagerFragment.java"
 
 
 # instance fields
-.field final synthetic acs:Lcom/android/settings/location/BackgroundLocationManagerFragment$ApplicationsAdapter;
+.field final synthetic acs:Lcom/android/settings_ext/location/BackgroundLocationManagerFragment$ApplicationsAdapter;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/location/BackgroundLocationManagerFragment$ApplicationsAdapter;)V
+.method constructor <init>(Lcom/android/settings_ext/location/BackgroundLocationManagerFragment$ApplicationsAdapter;)V
     .locals 0
 
     .prologue
     .line 240
-    iput-object p1, p0, Lcom/android/settings/location/BackgroundLocationManagerFragment$ApplicationsAdapter$1;->acs:Lcom/android/settings/location/BackgroundLocationManagerFragment$ApplicationsAdapter;
+    iput-object p1, p0, Lcom/android/settings_ext/location/BackgroundLocationManagerFragment$ApplicationsAdapter$1;->acs:Lcom/android/settings_ext/location/BackgroundLocationManagerFragment$ApplicationsAdapter;
 
     invoke-direct {p0}, Landroid/widget/Filter;-><init>()V
 
@@ -27,23 +27,23 @@
 
     .prologue
     .line 243
-    iget-object v0, p0, Lcom/android/settings/location/BackgroundLocationManagerFragment$ApplicationsAdapter$1;->acs:Lcom/android/settings/location/BackgroundLocationManagerFragment$ApplicationsAdapter;
+    iget-object v0, p0, Lcom/android/settings_ext/location/BackgroundLocationManagerFragment$ApplicationsAdapter$1;->acs:Lcom/android/settings_ext/location/BackgroundLocationManagerFragment$ApplicationsAdapter;
 
-    iget-object v1, p0, Lcom/android/settings/location/BackgroundLocationManagerFragment$ApplicationsAdapter$1;->acs:Lcom/android/settings/location/BackgroundLocationManagerFragment$ApplicationsAdapter;
+    iget-object v1, p0, Lcom/android/settings_ext/location/BackgroundLocationManagerFragment$ApplicationsAdapter$1;->acs:Lcom/android/settings_ext/location/BackgroundLocationManagerFragment$ApplicationsAdapter;
 
-    iget-object v1, v1, Lcom/android/settings/location/BackgroundLocationManagerFragment$ApplicationsAdapter;->acq:Lcom/android/settings/location/BackgroundLocationManagerFragment;
+    iget-object v1, v1, Lcom/android/settings_ext/location/BackgroundLocationManagerFragment$ApplicationsAdapter;->acq:Lcom/android/settings_ext/location/BackgroundLocationManagerFragment;
 
-    invoke-static {v1}, Lcom/android/settings/location/BackgroundLocationManagerFragment;->c(Lcom/android/settings/location/BackgroundLocationManagerFragment;)Ljava/util/ArrayList;
+    invoke-static {v1}, Lcom/android/settings_ext/location/BackgroundLocationManagerFragment;->c(Lcom/android/settings_ext/location/BackgroundLocationManagerFragment;)Ljava/util/ArrayList;
 
     move-result-object v1
 
-    iget-object v2, p0, Lcom/android/settings/location/BackgroundLocationManagerFragment$ApplicationsAdapter$1;->acs:Lcom/android/settings/location/BackgroundLocationManagerFragment$ApplicationsAdapter;
+    iget-object v2, p0, Lcom/android/settings_ext/location/BackgroundLocationManagerFragment$ApplicationsAdapter$1;->acs:Lcom/android/settings_ext/location/BackgroundLocationManagerFragment$ApplicationsAdapter;
 
-    invoke-static {v2}, Lcom/android/settings/location/BackgroundLocationManagerFragment$ApplicationsAdapter;->a(Lcom/android/settings/location/BackgroundLocationManagerFragment$ApplicationsAdapter;)Ljava/util/ArrayList;
+    invoke-static {v2}, Lcom/android/settings_ext/location/BackgroundLocationManagerFragment$ApplicationsAdapter;->a(Lcom/android/settings_ext/location/BackgroundLocationManagerFragment$ApplicationsAdapter;)Ljava/util/ArrayList;
 
     move-result-object v2
 
-    invoke-virtual {v0, v1, v2}, Lcom/android/settings/location/BackgroundLocationManagerFragment$ApplicationsAdapter;->c(Ljava/util/ArrayList;Ljava/util/ArrayList;)Ljava/util/ArrayList;
+    invoke-virtual {v0, v1, v2}, Lcom/android/settings_ext/location/BackgroundLocationManagerFragment$ApplicationsAdapter;->c(Ljava/util/ArrayList;Ljava/util/ArrayList;)Ljava/util/ArrayList;
 
     move-result-object v0
 
@@ -71,23 +71,23 @@
 
     .prologue
     .line 255
-    iget-object v0, p0, Lcom/android/settings/location/BackgroundLocationManagerFragment$ApplicationsAdapter$1;->acs:Lcom/android/settings/location/BackgroundLocationManagerFragment$ApplicationsAdapter;
+    iget-object v0, p0, Lcom/android/settings_ext/location/BackgroundLocationManagerFragment$ApplicationsAdapter$1;->acs:Lcom/android/settings_ext/location/BackgroundLocationManagerFragment$ApplicationsAdapter;
 
-    iput-object p1, v0, Lcom/android/settings/location/BackgroundLocationManagerFragment$ApplicationsAdapter;->Ec:Ljava/lang/CharSequence;
+    iput-object p1, v0, Lcom/android/settings_ext/location/BackgroundLocationManagerFragment$ApplicationsAdapter;->Ec:Ljava/lang/CharSequence;
 
     .line 256
-    iget-object v1, p0, Lcom/android/settings/location/BackgroundLocationManagerFragment$ApplicationsAdapter$1;->acs:Lcom/android/settings/location/BackgroundLocationManagerFragment$ApplicationsAdapter;
+    iget-object v1, p0, Lcom/android/settings_ext/location/BackgroundLocationManagerFragment$ApplicationsAdapter$1;->acs:Lcom/android/settings_ext/location/BackgroundLocationManagerFragment$ApplicationsAdapter;
 
     iget-object v0, p2, Landroid/widget/Filter$FilterResults;->values:Ljava/lang/Object;
 
     check-cast v0, Ljava/util/ArrayList;
 
-    invoke-static {v1, v0}, Lcom/android/settings/location/BackgroundLocationManagerFragment$ApplicationsAdapter;->a(Lcom/android/settings/location/BackgroundLocationManagerFragment$ApplicationsAdapter;Ljava/util/ArrayList;)Ljava/util/ArrayList;
+    invoke-static {v1, v0}, Lcom/android/settings_ext/location/BackgroundLocationManagerFragment$ApplicationsAdapter;->a(Lcom/android/settings_ext/location/BackgroundLocationManagerFragment$ApplicationsAdapter;Ljava/util/ArrayList;)Ljava/util/ArrayList;
 
     .line 257
-    iget-object v0, p0, Lcom/android/settings/location/BackgroundLocationManagerFragment$ApplicationsAdapter$1;->acs:Lcom/android/settings/location/BackgroundLocationManagerFragment$ApplicationsAdapter;
+    iget-object v0, p0, Lcom/android/settings_ext/location/BackgroundLocationManagerFragment$ApplicationsAdapter$1;->acs:Lcom/android/settings_ext/location/BackgroundLocationManagerFragment$ApplicationsAdapter;
 
-    invoke-virtual {v0}, Lcom/android/settings/location/BackgroundLocationManagerFragment$ApplicationsAdapter;->notifyDataSetChanged()V
+    invoke-virtual {v0}, Lcom/android/settings_ext/location/BackgroundLocationManagerFragment$ApplicationsAdapter;->notifyDataSetChanged()V
 
     .line 258
     return-void

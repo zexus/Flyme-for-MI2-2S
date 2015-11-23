@@ -1,4 +1,4 @@
-.class Lcom/android/settings/wifi/w;
+.class Lcom/android/settings_ext/wifi/w;
 .super Ljava/lang/Object;
 .source "MiuiWifiService.java"
 
@@ -7,16 +7,16 @@
 
 
 # instance fields
-.field final synthetic att:Lcom/android/settings/wifi/MiuiWifiService;
+.field final synthetic att:Lcom/android/settings_ext/wifi/MiuiWifiService;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/wifi/MiuiWifiService;)V
+.method constructor <init>(Lcom/android/settings_ext/wifi/MiuiWifiService;)V
     .locals 0
 
     .prologue
     .line 428
-    iput-object p1, p0, Lcom/android/settings/wifi/w;->att:Lcom/android/settings/wifi/MiuiWifiService;
+    iput-object p1, p0, Lcom/android/settings_ext/wifi/w;->att:Lcom/android/settings_ext/wifi/MiuiWifiService;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -30,12 +30,12 @@
 
     .prologue
     .line 432
-    iget-object v0, p0, Lcom/android/settings/wifi/w;->att:Lcom/android/settings/wifi/MiuiWifiService;
+    iget-object v0, p0, Lcom/android/settings_ext/wifi/w;->att:Lcom/android/settings_ext/wifi/MiuiWifiService;
 
-    invoke-virtual {v0}, Lcom/android/settings/wifi/MiuiWifiService;->us()V
+    invoke-virtual {v0}, Lcom/android/settings_ext/wifi/MiuiWifiService;->us()V
 
     .line 433
-    iget-object v0, p0, Lcom/android/settings/wifi/w;->att:Lcom/android/settings/wifi/MiuiWifiService;
+    iget-object v0, p0, Lcom/android/settings_ext/wifi/w;->att:Lcom/android/settings_ext/wifi/MiuiWifiService;
 
     invoke-static {v0}, Landroid/preference/PreferenceManager;->getDefaultSharedPreferences(Landroid/content/Context;)Landroid/content/SharedPreferences;
 
@@ -48,9 +48,9 @@
     .line 434
     const-string v2, "key_agreement_remind_again"
 
-    iget-object v0, p0, Lcom/android/settings/wifi/w;->att:Lcom/android/settings/wifi/MiuiWifiService;
+    iget-object v0, p0, Lcom/android/settings_ext/wifi/w;->att:Lcom/android/settings_ext/wifi/MiuiWifiService;
 
-    invoke-static {v0}, Lcom/android/settings/wifi/MiuiWifiService;->e(Lcom/android/settings/wifi/MiuiWifiService;)Landroid/widget/CheckBox;
+    invoke-static {v0}, Lcom/android/settings_ext/wifi/MiuiWifiService;->e(Lcom/android/settings_ext/wifi/MiuiWifiService;)Landroid/widget/CheckBox;
 
     move-result-object v0
 

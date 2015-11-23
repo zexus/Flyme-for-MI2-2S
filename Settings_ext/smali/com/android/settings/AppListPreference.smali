@@ -1,4 +1,4 @@
-.class public Lcom/android/settings/AppListPreference;
+.class public Lcom/android/settings_ext/AppListPreference;
 .super Landroid/preference/ListPreference;
 .source "AppListPreference.java"
 
@@ -31,7 +31,7 @@
 
     .line 76
     .line 77
-    invoke-virtual {p0}, Lcom/android/settings/AppListPreference;->getContext()Landroid/content/Context;
+    invoke-virtual {p0}, Lcom/android/settings_ext/AppListPreference;->getContext()Landroid/content/Context;
 
     move-result-object v0
 
@@ -84,7 +84,7 @@
     .line 90
     new-array v0, v2, [Landroid/graphics/drawable/Drawable;
 
-    iput-object v0, p0, Lcom/android/settings/AppListPreference;->bc:[Landroid/graphics/drawable/Drawable;
+    iput-object v0, p0, Lcom/android/settings_ext/AppListPreference;->bc:[Landroid/graphics/drawable/Drawable;
 
     .line 93
     array-length v7, v5
@@ -109,7 +109,7 @@
     aput-object v9, v6, v1
 
     .line 96
-    iget-object v9, p0, Lcom/android/settings/AppListPreference;->bc:[Landroid/graphics/drawable/Drawable;
+    iget-object v9, p0, Lcom/android/settings_ext/AppListPreference;->bc:[Landroid/graphics/drawable/Drawable;
 
     invoke-virtual {v8, v4}, Landroid/content/pm/ApplicationInfo;->loadIcon(Landroid/content/pm/PackageManager;)Landroid/graphics/drawable/Drawable;
 
@@ -142,16 +142,16 @@
 
     .line 104
     :cond_3
-    invoke-virtual {p0, v6}, Lcom/android/settings/AppListPreference;->setEntries([Ljava/lang/CharSequence;)V
+    invoke-virtual {p0, v6}, Lcom/android/settings_ext/AppListPreference;->setEntries([Ljava/lang/CharSequence;)V
 
     .line 105
-    invoke-virtual {p0, p1}, Lcom/android/settings/AppListPreference;->setEntryValues([Ljava/lang/CharSequence;)V
+    invoke-virtual {p0, p1}, Lcom/android/settings_ext/AppListPreference;->setEntryValues([Ljava/lang/CharSequence;)V
 
     .line 106
     if-eq v0, v3, :cond_4
 
     .line 107
-    invoke-virtual {p0, v0}, Lcom/android/settings/AppListPreference;->setValueIndex(I)V
+    invoke-virtual {p0, v0}, Lcom/android/settings_ext/AppListPreference;->setValueIndex(I)V
 
     .line 109
     :cond_4
@@ -169,32 +169,32 @@
 
     .prologue
     .line 113
-    invoke-virtual {p0}, Lcom/android/settings/AppListPreference;->getValue()Ljava/lang/String;
+    invoke-virtual {p0}, Lcom/android/settings_ext/AppListPreference;->getValue()Ljava/lang/String;
 
     move-result-object v0
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/AppListPreference;->findIndexOfValue(Ljava/lang/String;)I
+    invoke-virtual {p0, v0}, Lcom/android/settings_ext/AppListPreference;->findIndexOfValue(Ljava/lang/String;)I
 
     move-result v6
 
     .line 114
-    new-instance v0, Lcom/android/settings/G;
+    new-instance v0, Lcom/android/settings_ext/G;
 
-    invoke-virtual {p0}, Lcom/android/settings/AppListPreference;->getContext()Landroid/content/Context;
+    invoke-virtual {p0}, Lcom/android/settings_ext/AppListPreference;->getContext()Landroid/content/Context;
 
     move-result-object v2
 
     const v3, 0x7f04000f
 
-    invoke-virtual {p0}, Lcom/android/settings/AppListPreference;->getEntries()[Ljava/lang/CharSequence;
+    invoke-virtual {p0}, Lcom/android/settings_ext/AppListPreference;->getEntries()[Ljava/lang/CharSequence;
 
     move-result-object v4
 
-    iget-object v5, p0, Lcom/android/settings/AppListPreference;->bc:[Landroid/graphics/drawable/Drawable;
+    iget-object v5, p0, Lcom/android/settings_ext/AppListPreference;->bc:[Landroid/graphics/drawable/Drawable;
 
     move-object v1, p0
 
-    invoke-direct/range {v0 .. v6}, Lcom/android/settings/G;-><init>(Lcom/android/settings/AppListPreference;Landroid/content/Context;I[Ljava/lang/CharSequence;[Landroid/graphics/drawable/Drawable;I)V
+    invoke-direct/range {v0 .. v6}, Lcom/android/settings_ext/G;-><init>(Lcom/android/settings_ext/AppListPreference;Landroid/content/Context;I[Ljava/lang/CharSequence;[Landroid/graphics/drawable/Drawable;I)V
 
     .line 116
     invoke-virtual {p1, v0, p0}, Landroid/app/AlertDialog$Builder;->setAdapter(Landroid/widget/ListAdapter;Landroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;

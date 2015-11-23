@@ -1,4 +1,4 @@
-.class public Lcom/android/settings/ChooseLockPassword;
+.class public Lcom/android/settings_ext/ChooseLockPassword;
 .super Lmiui/preference/PreferenceActivity;
 .source "ChooseLockPassword.java"
 
@@ -15,14 +15,14 @@
     return-void
 .end method
 
-.method public static a(Lcom/android/settings/SettingsPreferenceFragment;I)V
+.method public static a(Lcom/android/settings_ext/SettingsPreferenceFragment;I)V
     .locals 4
 
     .prologue
     const/4 v3, 0x0
 
     .line 81
-    invoke-virtual {p0}, Lcom/android/settings/SettingsPreferenceFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/SettingsPreferenceFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
@@ -35,16 +35,16 @@
     move-result-object v0
 
     .line 82
-    invoke-virtual {p0}, Lcom/android/settings/SettingsPreferenceFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/SettingsPreferenceFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v1
 
-    instance-of v1, v1, Lcom/android/settings/MiuiSettings;
+    instance-of v1, v1, Lcom/android/settings_ext/MiuiSettings;
 
     if-eqz v1, :cond_0
 
     .line 83
-    invoke-virtual {p0}, Lcom/android/settings/SettingsPreferenceFragment;->getArguments()Landroid/os/Bundle;
+    invoke-virtual {p0}, Lcom/android/settings_ext/SettingsPreferenceFragment;->getArguments()Landroid/os/Bundle;
 
     move-result-object v0
 
@@ -62,23 +62,23 @@
     if-eqz v0, :cond_1
 
     .line 87
-    new-instance v0, Lcom/android/settings/ap;
+    new-instance v0, Lcom/android/settings_ext/ap;
 
-    invoke-virtual {p0}, Lcom/android/settings/SettingsPreferenceFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/SettingsPreferenceFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v1
 
-    invoke-direct {v0, v1, p0}, Lcom/android/settings/ap;-><init>(Landroid/app/Activity;Landroid/app/Fragment;)V
+    invoke-direct {v0, v1, p0}, Lcom/android/settings_ext/ap;-><init>(Landroid/app/Activity;Landroid/app/Fragment;)V
 
     .line 88
-    invoke-virtual {p0}, Lcom/android/settings/SettingsPreferenceFragment;->getTargetFragment()Landroid/app/Fragment;
+    invoke-virtual {p0}, Lcom/android/settings_ext/SettingsPreferenceFragment;->getTargetFragment()Landroid/app/Fragment;
 
     move-result-object v1
 
     if-nez v1, :cond_2
 
     .line 89
-    invoke-virtual {v0, p1, v3, v3}, Lcom/android/settings/ap;->launchConfirmationActivity(ILjava/lang/CharSequence;Ljava/lang/CharSequence;)Z
+    invoke-virtual {v0, p1, v3, v3}, Lcom/android/settings_ext/ap;->launchConfirmationActivity(ILjava/lang/CharSequence;Ljava/lang/CharSequence;)Z
 
     .line 95
     :cond_1
@@ -87,7 +87,7 @@
 
     .line 91
     :cond_2
-    invoke-virtual {v0}, Lcom/android/settings/ap;->at()Lcom/android/internal/widget/LockPatternUtils;
+    invoke-virtual {v0}, Lcom/android/settings_ext/ap;->at()Lcom/android/internal/widget/LockPatternUtils;
 
     move-result-object v0
 
@@ -95,7 +95,7 @@
 
     move-result v0
 
-    invoke-static {p0, v0, p1}, Lcom/android/settings/MiuiSecurityChooseUnlock;->a(Lcom/android/settings/SettingsPreferenceFragment;II)V
+    invoke-static {p0, v0, p1}, Lcom/android/settings_ext/MiuiSecurityChooseUnlock;->a(Lcom/android/settings_ext/SettingsPreferenceFragment;II)V
 
     goto :goto_0
 .end method
@@ -118,7 +118,7 @@
     .line 69
     const-string v1, ":android:show_fragment"
 
-    const-class v2, Lcom/android/settings/ChooseLockPassword$ChooseLockPasswordFragment;
+    const-class v2, Lcom/android/settings_ext/ChooseLockPassword$ChooseLockPasswordFragment;
 
     invoke-virtual {v2}, Ljava/lang/Class;->getName()Ljava/lang/String;
 
@@ -142,7 +142,7 @@
 
     .prologue
     .line 76
-    const-class v0, Lcom/android/settings/ChooseLockPassword$ChooseLockPasswordFragment;
+    const-class v0, Lcom/android/settings_ext/ChooseLockPassword$ChooseLockPasswordFragment;
 
     invoke-virtual {v0}, Ljava/lang/Class;->getName()Ljava/lang/String;
 

@@ -1,5 +1,5 @@
-.class public Lcom/android/settings/wifi/WpsFragment;
-.super Lcom/android/settings/BaseFragment;
+.class public Lcom/android/settings_ext/wifi/WpsFragment;
+.super Lcom/android/settings_ext/BaseFragment;
 .source "WpsFragment.java"
 
 
@@ -18,7 +18,7 @@
 
 .field private axI:Z
 
-.field axJ:Lcom/android/settings/wifi/WpsFragment$State;
+.field axJ:Lcom/android/settings_ext/wifi/WpsFragment$State;
 
 .field private axo:Ljava/util/Timer;
 
@@ -43,55 +43,55 @@
 
     .prologue
     .line 33
-    invoke-direct {p0}, Lcom/android/settings/BaseFragment;-><init>()V
+    invoke-direct {p0}, Lcom/android/settings_ext/BaseFragment;-><init>()V
 
     .line 54
     new-instance v0, Landroid/os/Handler;
 
     invoke-direct {v0}, Landroid/os/Handler;-><init>()V
 
-    iput-object v0, p0, Lcom/android/settings/wifi/WpsFragment;->mHandler:Landroid/os/Handler;
+    iput-object v0, p0, Lcom/android/settings_ext/wifi/WpsFragment;->mHandler:Landroid/os/Handler;
 
     .line 65
-    sget-object v0, Lcom/android/settings/wifi/WpsFragment$State;->axO:Lcom/android/settings/wifi/WpsFragment$State;
+    sget-object v0, Lcom/android/settings_ext/wifi/WpsFragment$State;->axO:Lcom/android/settings_ext/wifi/WpsFragment$State;
 
-    iput-object v0, p0, Lcom/android/settings/wifi/WpsFragment;->axJ:Lcom/android/settings/wifi/WpsFragment$State;
+    iput-object v0, p0, Lcom/android/settings_ext/wifi/WpsFragment;->axJ:Lcom/android/settings_ext/wifi/WpsFragment$State;
 
     return-void
 .end method
 
-.method static synthetic a(Lcom/android/settings/wifi/WpsFragment;Landroid/content/BroadcastReceiver;)Landroid/content/BroadcastReceiver;
+.method static synthetic a(Lcom/android/settings_ext/wifi/WpsFragment;Landroid/content/BroadcastReceiver;)Landroid/content/BroadcastReceiver;
     .locals 0
 
     .prologue
     .line 33
-    iput-object p1, p0, Lcom/android/settings/wifi/WpsFragment;->mReceiver:Landroid/content/BroadcastReceiver;
+    iput-object p1, p0, Lcom/android/settings_ext/wifi/WpsFragment;->mReceiver:Landroid/content/BroadcastReceiver;
 
     return-object p1
 .end method
 
-.method static synthetic a(Lcom/android/settings/wifi/WpsFragment;Ljava/lang/String;)Ljava/lang/String;
+.method static synthetic a(Lcom/android/settings_ext/wifi/WpsFragment;Ljava/lang/String;)Ljava/lang/String;
     .locals 0
 
     .prologue
     .line 33
-    iput-object p1, p0, Lcom/android/settings/wifi/WpsFragment;->mM:Ljava/lang/String;
+    iput-object p1, p0, Lcom/android/settings_ext/wifi/WpsFragment;->mM:Ljava/lang/String;
 
     return-object p1
 .end method
 
-.method private a(Lcom/android/settings/wifi/WpsFragment$State;Ljava/lang/String;)V
+.method private a(Lcom/android/settings_ext/wifi/WpsFragment$State;Ljava/lang/String;)V
     .locals 2
 
     .prologue
     .line 236
-    iget-object v0, p0, Lcom/android/settings/wifi/WpsFragment;->axJ:Lcom/android/settings/wifi/WpsFragment$State;
+    iget-object v0, p0, Lcom/android/settings_ext/wifi/WpsFragment;->axJ:Lcom/android/settings_ext/wifi/WpsFragment$State;
 
-    invoke-virtual {v0}, Lcom/android/settings/wifi/WpsFragment$State;->ordinal()I
+    invoke-virtual {v0}, Lcom/android/settings_ext/wifi/WpsFragment$State;->ordinal()I
 
     move-result v0
 
-    invoke-virtual {p1}, Lcom/android/settings/wifi/WpsFragment$State;->ordinal()I
+    invoke-virtual {p1}, Lcom/android/settings_ext/wifi/WpsFragment$State;->ordinal()I
 
     move-result v1
 
@@ -103,96 +103,96 @@
 
     .line 240
     :cond_0
-    iput-object p1, p0, Lcom/android/settings/wifi/WpsFragment;->axJ:Lcom/android/settings/wifi/WpsFragment$State;
+    iput-object p1, p0, Lcom/android/settings_ext/wifi/WpsFragment;->axJ:Lcom/android/settings_ext/wifi/WpsFragment$State;
 
     .line 242
-    iget-object v0, p0, Lcom/android/settings/wifi/WpsFragment;->mHandler:Landroid/os/Handler;
+    iget-object v0, p0, Lcom/android/settings_ext/wifi/WpsFragment;->mHandler:Landroid/os/Handler;
 
-    new-instance v1, Lcom/android/settings/wifi/bf;
+    new-instance v1, Lcom/android/settings_ext/wifi/bf;
 
-    invoke-direct {v1, p0, p1, p2}, Lcom/android/settings/wifi/bf;-><init>(Lcom/android/settings/wifi/WpsFragment;Lcom/android/settings/wifi/WpsFragment$State;Ljava/lang/String;)V
+    invoke-direct {v1, p0, p1, p2}, Lcom/android/settings_ext/wifi/bf;-><init>(Lcom/android/settings_ext/wifi/WpsFragment;Lcom/android/settings_ext/wifi/WpsFragment$State;Ljava/lang/String;)V
 
     invoke-virtual {v0, v1}, Landroid/os/Handler;->post(Ljava/lang/Runnable;)Z
 
     goto :goto_0
 .end method
 
-.method static synthetic a(Lcom/android/settings/wifi/WpsFragment;)V
+.method static synthetic a(Lcom/android/settings_ext/wifi/WpsFragment;)V
     .locals 0
 
     .prologue
     .line 33
-    invoke-direct {p0}, Lcom/android/settings/wifi/WpsFragment;->vT()V
+    invoke-direct {p0}, Lcom/android/settings_ext/wifi/WpsFragment;->vT()V
 
     return-void
 .end method
 
-.method static synthetic a(Lcom/android/settings/wifi/WpsFragment;Landroid/content/Context;Landroid/content/Intent;)V
+.method static synthetic a(Lcom/android/settings_ext/wifi/WpsFragment;Landroid/content/Context;Landroid/content/Intent;)V
     .locals 0
 
     .prologue
     .line 33
-    invoke-direct {p0, p1, p2}, Lcom/android/settings/wifi/WpsFragment;->f(Landroid/content/Context;Landroid/content/Intent;)V
+    invoke-direct {p0, p1, p2}, Lcom/android/settings_ext/wifi/WpsFragment;->f(Landroid/content/Context;Landroid/content/Intent;)V
 
     return-void
 .end method
 
-.method static synthetic a(Lcom/android/settings/wifi/WpsFragment;Lcom/android/settings/wifi/WpsFragment$State;Ljava/lang/String;)V
+.method static synthetic a(Lcom/android/settings_ext/wifi/WpsFragment;Lcom/android/settings_ext/wifi/WpsFragment$State;Ljava/lang/String;)V
     .locals 0
 
     .prologue
     .line 33
-    invoke-direct {p0, p1, p2}, Lcom/android/settings/wifi/WpsFragment;->a(Lcom/android/settings/wifi/WpsFragment$State;Ljava/lang/String;)V
+    invoke-direct {p0, p1, p2}, Lcom/android/settings_ext/wifi/WpsFragment;->a(Lcom/android/settings_ext/wifi/WpsFragment$State;Ljava/lang/String;)V
 
     return-void
 .end method
 
-.method static synthetic b(Lcom/android/settings/wifi/WpsFragment;)Lmiui/widget/ProgressBar;
+.method static synthetic b(Lcom/android/settings_ext/wifi/WpsFragment;)Lmiui/widget/ProgressBar;
     .locals 1
 
     .prologue
     .line 33
-    iget-object v0, p0, Lcom/android/settings/wifi/WpsFragment;->axE:Lmiui/widget/ProgressBar;
+    iget-object v0, p0, Lcom/android/settings_ext/wifi/WpsFragment;->axE:Lmiui/widget/ProgressBar;
 
     return-object v0
 .end method
 
-.method static synthetic c(Lcom/android/settings/wifi/WpsFragment;)V
+.method static synthetic c(Lcom/android/settings_ext/wifi/WpsFragment;)V
     .locals 0
 
     .prologue
     .line 33
-    invoke-direct {p0}, Lcom/android/settings/wifi/WpsFragment;->stop()V
+    invoke-direct {p0}, Lcom/android/settings_ext/wifi/WpsFragment;->stop()V
 
     return-void
 .end method
 
-.method static synthetic d(Lcom/android/settings/wifi/WpsFragment;)V
+.method static synthetic d(Lcom/android/settings_ext/wifi/WpsFragment;)V
     .locals 0
 
     .prologue
     .line 33
-    invoke-direct {p0}, Lcom/android/settings/wifi/WpsFragment;->start()V
+    invoke-direct {p0}, Lcom/android/settings_ext/wifi/WpsFragment;->start()V
 
     return-void
 .end method
 
-.method static synthetic e(Lcom/android/settings/wifi/WpsFragment;)Landroid/os/Handler;
+.method static synthetic e(Lcom/android/settings_ext/wifi/WpsFragment;)Landroid/os/Handler;
     .locals 1
 
     .prologue
     .line 33
-    iget-object v0, p0, Lcom/android/settings/wifi/WpsFragment;->mHandler:Landroid/os/Handler;
+    iget-object v0, p0, Lcom/android/settings_ext/wifi/WpsFragment;->mHandler:Landroid/os/Handler;
 
     return-object v0
 .end method
 
-.method static synthetic f(Lcom/android/settings/wifi/WpsFragment;)Ljava/lang/String;
+.method static synthetic f(Lcom/android/settings_ext/wifi/WpsFragment;)Ljava/lang/String;
     .locals 1
 
     .prologue
     .line 33
-    iget-object v0, p0, Lcom/android/settings/wifi/WpsFragment;->mM:Ljava/lang/String;
+    iget-object v0, p0, Lcom/android/settings_ext/wifi/WpsFragment;->mM:Ljava/lang/String;
 
     return-object v0
 .end method
@@ -234,76 +234,76 @@
 
     if-ne v0, v1, :cond_0
 
-    iget-object v0, p0, Lcom/android/settings/wifi/WpsFragment;->axJ:Lcom/android/settings/wifi/WpsFragment$State;
+    iget-object v0, p0, Lcom/android/settings_ext/wifi/WpsFragment;->axJ:Lcom/android/settings_ext/wifi/WpsFragment$State;
 
-    sget-object v1, Lcom/android/settings/wifi/WpsFragment$State;->axQ:Lcom/android/settings/wifi/WpsFragment$State;
+    sget-object v1, Lcom/android/settings_ext/wifi/WpsFragment$State;->axQ:Lcom/android/settings_ext/wifi/WpsFragment$State;
 
     if-ne v0, v1, :cond_0
 
     .line 297
-    invoke-direct {p0}, Lcom/android/settings/wifi/WpsFragment;->vS()V
+    invoke-direct {p0}, Lcom/android/settings_ext/wifi/WpsFragment;->vS()V
 
     .line 300
     :cond_0
     return-void
 .end method
 
-.method static synthetic g(Lcom/android/settings/wifi/WpsFragment;)Landroid/widget/TextView;
+.method static synthetic g(Lcom/android/settings_ext/wifi/WpsFragment;)Landroid/widget/TextView;
     .locals 1
 
     .prologue
     .line 33
-    iget-object v0, p0, Lcom/android/settings/wifi/WpsFragment;->Um:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/android/settings_ext/wifi/WpsFragment;->Um:Landroid/widget/TextView;
 
     return-object v0
 .end method
 
-.method static synthetic h(Lcom/android/settings/wifi/WpsFragment;)Landroid/widget/ImageView;
+.method static synthetic h(Lcom/android/settings_ext/wifi/WpsFragment;)Landroid/widget/ImageView;
     .locals 1
 
     .prologue
     .line 33
-    iget-object v0, p0, Lcom/android/settings/wifi/WpsFragment;->axH:Landroid/widget/ImageView;
+    iget-object v0, p0, Lcom/android/settings_ext/wifi/WpsFragment;->axH:Landroid/widget/ImageView;
 
     return-object v0
 .end method
 
-.method static synthetic i(Lcom/android/settings/wifi/WpsFragment;)Lmiui/widget/ProgressBar;
+.method static synthetic i(Lcom/android/settings_ext/wifi/WpsFragment;)Lmiui/widget/ProgressBar;
     .locals 1
 
     .prologue
     .line 33
-    iget-object v0, p0, Lcom/android/settings/wifi/WpsFragment;->rE:Lmiui/widget/ProgressBar;
+    iget-object v0, p0, Lcom/android/settings_ext/wifi/WpsFragment;->rE:Lmiui/widget/ProgressBar;
 
     return-object v0
 .end method
 
-.method static synthetic j(Lcom/android/settings/wifi/WpsFragment;)Landroid/widget/Button;
+.method static synthetic j(Lcom/android/settings_ext/wifi/WpsFragment;)Landroid/widget/Button;
     .locals 1
 
     .prologue
     .line 33
-    iget-object v0, p0, Lcom/android/settings/wifi/WpsFragment;->axG:Landroid/widget/Button;
+    iget-object v0, p0, Lcom/android/settings_ext/wifi/WpsFragment;->axG:Landroid/widget/Button;
 
     return-object v0
 .end method
 
-.method static synthetic k(Lcom/android/settings/wifi/WpsFragment;)Landroid/widget/Button;
+.method static synthetic k(Lcom/android/settings_ext/wifi/WpsFragment;)Landroid/widget/Button;
     .locals 1
 
     .prologue
     .line 33
-    iget-object v0, p0, Lcom/android/settings/wifi/WpsFragment;->axF:Landroid/widget/Button;
+    iget-object v0, p0, Lcom/android/settings_ext/wifi/WpsFragment;->axF:Landroid/widget/Button;
 
     return-object v0
 .end method
 
-.method static synthetic l(Lcom/android/settings/wifi/WpsFragment;)Landroid/content/BroadcastReceiver;
+.method static synthetic l(Lcom/android/settings_ext/wifi/WpsFragment;)Landroid/content/BroadcastReceiver;
     .locals 1
 
     .prologue
     .line 33
-    iget-object v0, p0, Lcom/android/settings/wifi/WpsFragment;->mReceiver:Landroid/content/BroadcastReceiver;
+    iget-object v0, p0, Lcom/android/settings_ext/wifi/WpsFragment;->mReceiver:Landroid/content/BroadcastReceiver;
 
     return-object v0
 .end method
@@ -321,44 +321,44 @@
 
     invoke-direct {v0, v1}, Ljava/util/Timer;-><init>(Z)V
 
-    iput-object v0, p0, Lcom/android/settings/wifi/WpsFragment;->axo:Ljava/util/Timer;
+    iput-object v0, p0, Lcom/android/settings_ext/wifi/WpsFragment;->axo:Ljava/util/Timer;
 
     .line 184
-    iget-object v0, p0, Lcom/android/settings/wifi/WpsFragment;->axo:Ljava/util/Timer;
+    iget-object v0, p0, Lcom/android/settings_ext/wifi/WpsFragment;->axo:Ljava/util/Timer;
 
-    new-instance v1, Lcom/android/settings/wifi/bc;
+    new-instance v1, Lcom/android/settings_ext/wifi/bc;
 
-    invoke-direct {v1, p0}, Lcom/android/settings/wifi/bc;-><init>(Lcom/android/settings/wifi/WpsFragment;)V
+    invoke-direct {v1, p0}, Lcom/android/settings_ext/wifi/bc;-><init>(Lcom/android/settings_ext/wifi/WpsFragment;)V
 
     move-wide v4, v2
 
     invoke-virtual/range {v0 .. v5}, Ljava/util/Timer;->schedule(Ljava/util/TimerTask;JJ)V
 
     .line 197
-    new-instance v0, Lcom/android/settings/wifi/be;
+    new-instance v0, Lcom/android/settings_ext/wifi/be;
 
-    invoke-direct {v0, p0}, Lcom/android/settings/wifi/be;-><init>(Lcom/android/settings/wifi/WpsFragment;)V
+    invoke-direct {v0, p0}, Lcom/android/settings_ext/wifi/be;-><init>(Lcom/android/settings_ext/wifi/WpsFragment;)V
 
-    iput-object v0, p0, Lcom/android/settings/wifi/WpsFragment;->mReceiver:Landroid/content/BroadcastReceiver;
+    iput-object v0, p0, Lcom/android/settings_ext/wifi/WpsFragment;->mReceiver:Landroid/content/BroadcastReceiver;
 
     .line 203
-    invoke-virtual {p0}, Lcom/android/settings/wifi/WpsFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/wifi/WpsFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/android/settings/wifi/WpsFragment;->mReceiver:Landroid/content/BroadcastReceiver;
+    iget-object v1, p0, Lcom/android/settings_ext/wifi/WpsFragment;->mReceiver:Landroid/content/BroadcastReceiver;
 
-    iget-object v2, p0, Lcom/android/settings/wifi/WpsFragment;->asr:Landroid/content/IntentFilter;
+    iget-object v2, p0, Lcom/android/settings_ext/wifi/WpsFragment;->asr:Landroid/content/IntentFilter;
 
     invoke-virtual {v0, v1, v2}, Landroid/app/Activity;->registerReceiver(Landroid/content/BroadcastReceiver;Landroid/content/IntentFilter;)Landroid/content/Intent;
 
     .line 205
-    iget-boolean v0, p0, Lcom/android/settings/wifi/WpsFragment;->axI:Z
+    iget-boolean v0, p0, Lcom/android/settings_ext/wifi/WpsFragment;->axI:Z
 
     if-eqz v0, :cond_0
 
     .line 206
-    invoke-direct {p0}, Lcom/android/settings/wifi/WpsFragment;->vS()V
+    invoke-direct {p0}, Lcom/android/settings_ext/wifi/WpsFragment;->vS()V
 
     .line 212
     :goto_0
@@ -371,14 +371,14 @@
     invoke-direct {v0}, Landroid/net/wifi/WpsInfo;-><init>()V
 
     .line 209
-    iget v1, p0, Lcom/android/settings/wifi/WpsFragment;->axq:I
+    iget v1, p0, Lcom/android/settings_ext/wifi/WpsFragment;->axq:I
 
     iput v1, v0, Landroid/net/wifi/WpsInfo;->setup:I
 
     .line 210
-    iget-object v1, p0, Lcom/android/settings/wifi/WpsFragment;->hD:Landroid/net/wifi/WifiManager;
+    iget-object v1, p0, Lcom/android/settings_ext/wifi/WpsFragment;->hD:Landroid/net/wifi/WifiManager;
 
-    iget-object v2, p0, Lcom/android/settings/wifi/WpsFragment;->axp:Landroid/net/wifi/WifiManager$WpsCallback;
+    iget-object v2, p0, Lcom/android/settings_ext/wifi/WpsFragment;->axp:Landroid/net/wifi/WifiManager$WpsCallback;
 
     invoke-virtual {v1, v0, v2}, Landroid/net/wifi/WifiManager;->startWps(Landroid/net/wifi/WpsInfo;Landroid/net/wifi/WifiManager$WpsCallback;)V
 
@@ -392,48 +392,48 @@
     const/4 v2, 0x0
 
     .line 215
-    iget-object v0, p0, Lcom/android/settings/wifi/WpsFragment;->axJ:Lcom/android/settings/wifi/WpsFragment$State;
+    iget-object v0, p0, Lcom/android/settings_ext/wifi/WpsFragment;->axJ:Lcom/android/settings_ext/wifi/WpsFragment$State;
 
-    sget-object v1, Lcom/android/settings/wifi/WpsFragment$State;->axQ:Lcom/android/settings/wifi/WpsFragment$State;
+    sget-object v1, Lcom/android/settings_ext/wifi/WpsFragment$State;->axQ:Lcom/android/settings_ext/wifi/WpsFragment$State;
 
     if-eq v0, v1, :cond_0
 
     .line 216
-    iget-object v0, p0, Lcom/android/settings/wifi/WpsFragment;->hD:Landroid/net/wifi/WifiManager;
+    iget-object v0, p0, Lcom/android/settings_ext/wifi/WpsFragment;->hD:Landroid/net/wifi/WifiManager;
 
     invoke-virtual {v0, v2}, Landroid/net/wifi/WifiManager;->cancelWps(Landroid/net/wifi/WifiManager$WpsCallback;)V
 
     .line 219
     :cond_0
-    iget-object v0, p0, Lcom/android/settings/wifi/WpsFragment;->axo:Ljava/util/Timer;
+    iget-object v0, p0, Lcom/android/settings_ext/wifi/WpsFragment;->axo:Ljava/util/Timer;
 
     if-eqz v0, :cond_1
 
     .line 220
-    iget-object v0, p0, Lcom/android/settings/wifi/WpsFragment;->axo:Ljava/util/Timer;
+    iget-object v0, p0, Lcom/android/settings_ext/wifi/WpsFragment;->axo:Ljava/util/Timer;
 
     invoke-virtual {v0}, Ljava/util/Timer;->cancel()V
 
     .line 221
-    iput-object v2, p0, Lcom/android/settings/wifi/WpsFragment;->axo:Ljava/util/Timer;
+    iput-object v2, p0, Lcom/android/settings_ext/wifi/WpsFragment;->axo:Ljava/util/Timer;
 
     .line 223
     :cond_1
-    iget-object v0, p0, Lcom/android/settings/wifi/WpsFragment;->mReceiver:Landroid/content/BroadcastReceiver;
+    iget-object v0, p0, Lcom/android/settings_ext/wifi/WpsFragment;->mReceiver:Landroid/content/BroadcastReceiver;
 
     if-eqz v0, :cond_2
 
     .line 224
-    invoke-virtual {p0}, Lcom/android/settings/wifi/WpsFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/wifi/WpsFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/android/settings/wifi/WpsFragment;->mReceiver:Landroid/content/BroadcastReceiver;
+    iget-object v1, p0, Lcom/android/settings_ext/wifi/WpsFragment;->mReceiver:Landroid/content/BroadcastReceiver;
 
     invoke-virtual {v0, v1}, Landroid/app/Activity;->unregisterReceiver(Landroid/content/BroadcastReceiver;)V
 
     .line 225
-    iput-object v2, p0, Lcom/android/settings/wifi/WpsFragment;->mReceiver:Landroid/content/BroadcastReceiver;
+    iput-object v2, p0, Lcom/android/settings_ext/wifi/WpsFragment;->mReceiver:Landroid/content/BroadcastReceiver;
 
     .line 227
     :cond_2
@@ -447,7 +447,7 @@
     const/4 v4, 0x1
 
     .line 303
-    iget-object v0, p0, Lcom/android/settings/wifi/WpsFragment;->hD:Landroid/net/wifi/WifiManager;
+    iget-object v0, p0, Lcom/android/settings_ext/wifi/WpsFragment;->hD:Landroid/net/wifi/WifiManager;
 
     invoke-virtual {v0}, Landroid/net/wifi/WifiManager;->getConnectionInfo()Landroid/net/wifi/WifiInfo;
 
@@ -469,7 +469,7 @@
     if-nez v1, :cond_0
 
     .line 307
-    invoke-static {v0}, Lcom/android/settings/wifi/d;->removeDoubleQuotes(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v0}, Lcom/android/settings_ext/wifi/d;->removeDoubleQuotes(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 
@@ -477,7 +477,7 @@
     :cond_0
     const v1, 0x7f0902cc
 
-    invoke-virtual {p0, v1}, Lcom/android/settings/wifi/WpsFragment;->getString(I)Ljava/lang/String;
+    invoke-virtual {p0, v1}, Lcom/android/settings_ext/wifi/WpsFragment;->getString(I)Ljava/lang/String;
 
     move-result-object v1
 
@@ -492,12 +492,12 @@
     move-result-object v0
 
     .line 311
-    iput-boolean v4, p0, Lcom/android/settings/wifi/WpsFragment;->axI:Z
+    iput-boolean v4, p0, Lcom/android/settings_ext/wifi/WpsFragment;->axI:Z
 
     .line 312
-    sget-object v1, Lcom/android/settings/wifi/WpsFragment$State;->axR:Lcom/android/settings/wifi/WpsFragment$State;
+    sget-object v1, Lcom/android/settings_ext/wifi/WpsFragment$State;->axR:Lcom/android/settings_ext/wifi/WpsFragment$State;
 
-    invoke-direct {p0, v1, v0}, Lcom/android/settings/wifi/WpsFragment;->a(Lcom/android/settings/wifi/WpsFragment$State;Ljava/lang/String;)V
+    invoke-direct {p0, v1, v0}, Lcom/android/settings_ext/wifi/WpsFragment;->a(Lcom/android/settings_ext/wifi/WpsFragment$State;Ljava/lang/String;)V
 
     .line 314
     :cond_1
@@ -511,16 +511,16 @@
     const/4 v4, 0x0
 
     .line 317
-    iget-object v0, p0, Lcom/android/settings/wifi/WpsFragment;->mM:Ljava/lang/String;
+    iget-object v0, p0, Lcom/android/settings_ext/wifi/WpsFragment;->mM:Ljava/lang/String;
 
     if-eqz v0, :cond_0
 
     .line 318
-    iget-object v0, p0, Lcom/android/settings/wifi/WpsFragment;->Um:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/android/settings_ext/wifi/WpsFragment;->Um:Landroid/widget/TextView;
 
     const v1, 0x7f0902ca
 
-    invoke-virtual {p0, v1}, Lcom/android/settings/wifi/WpsFragment;->getString(I)Ljava/lang/String;
+    invoke-virtual {p0, v1}, Lcom/android/settings_ext/wifi/WpsFragment;->getString(I)Ljava/lang/String;
 
     move-result-object v1
 
@@ -528,7 +528,7 @@
 
     new-array v2, v2, [Ljava/lang/Object;
 
-    iget-object v3, p0, Lcom/android/settings/wifi/WpsFragment;->mM:Ljava/lang/String;
+    iget-object v3, p0, Lcom/android/settings_ext/wifi/WpsFragment;->mM:Ljava/lang/String;
 
     aput-object v3, v2, v4
 
@@ -539,7 +539,7 @@
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
     .line 320
-    iget-object v0, p0, Lcom/android/settings/wifi/WpsFragment;->axH:Landroid/widget/ImageView;
+    iget-object v0, p0, Lcom/android/settings_ext/wifi/WpsFragment;->axH:Landroid/widget/ImageView;
 
     const/16 v1, 0x8
 
@@ -551,14 +551,14 @@
 
     .line 322
     :cond_0
-    iget-object v0, p0, Lcom/android/settings/wifi/WpsFragment;->Um:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/android/settings_ext/wifi/WpsFragment;->Um:Landroid/widget/TextView;
 
     const v1, 0x7f0902c9
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setText(I)V
 
     .line 323
-    iget-object v0, p0, Lcom/android/settings/wifi/WpsFragment;->axH:Landroid/widget/ImageView;
+    iget-object v0, p0, Lcom/android/settings_ext/wifi/WpsFragment;->axH:Landroid/widget/ImageView;
 
     invoke-virtual {v0, v4}, Landroid/widget/ImageView;->setVisibility(I)V
 
@@ -591,21 +591,21 @@
     const/4 v2, 0x0
 
     .line 69
-    invoke-super {p0, p1}, Lcom/android/settings/BaseFragment;->onCreate(Landroid/os/Bundle;)V
+    invoke-super {p0, p1}, Lcom/android/settings_ext/BaseFragment;->onCreate(Landroid/os/Bundle;)V
 
     .line 71
-    invoke-virtual {p0}, Lcom/android/settings/wifi/WpsFragment;->getArguments()Landroid/os/Bundle;
+    invoke-virtual {p0}, Lcom/android/settings_ext/wifi/WpsFragment;->getArguments()Landroid/os/Bundle;
 
     move-result-object v0
 
     if-nez v0, :cond_1
 
     .line 72
-    iput v2, p0, Lcom/android/settings/wifi/WpsFragment;->axq:I
+    iput v2, p0, Lcom/android/settings_ext/wifi/WpsFragment;->axq:I
 
     .line 76
     :goto_0
-    invoke-virtual {p0}, Lcom/android/settings/wifi/WpsFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/wifi/WpsFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
@@ -617,24 +617,24 @@
 
     check-cast v0, Landroid/net/wifi/WifiManager;
 
-    iput-object v0, p0, Lcom/android/settings/wifi/WpsFragment;->hD:Landroid/net/wifi/WifiManager;
+    iput-object v0, p0, Lcom/android/settings_ext/wifi/WpsFragment;->hD:Landroid/net/wifi/WifiManager;
 
     .line 126
-    new-instance v0, Lcom/android/settings/wifi/ba;
+    new-instance v0, Lcom/android/settings_ext/wifi/ba;
 
-    invoke-direct {v0, p0}, Lcom/android/settings/wifi/ba;-><init>(Lcom/android/settings/wifi/WpsFragment;)V
+    invoke-direct {v0, p0}, Lcom/android/settings_ext/wifi/ba;-><init>(Lcom/android/settings_ext/wifi/WpsFragment;)V
 
-    iput-object v0, p0, Lcom/android/settings/wifi/WpsFragment;->axp:Landroid/net/wifi/WifiManager$WpsCallback;
+    iput-object v0, p0, Lcom/android/settings_ext/wifi/WpsFragment;->axp:Landroid/net/wifi/WifiManager$WpsCallback;
 
     .line 127
     new-instance v0, Landroid/content/IntentFilter;
 
     invoke-direct {v0}, Landroid/content/IntentFilter;-><init>()V
 
-    iput-object v0, p0, Lcom/android/settings/wifi/WpsFragment;->asr:Landroid/content/IntentFilter;
+    iput-object v0, p0, Lcom/android/settings_ext/wifi/WpsFragment;->asr:Landroid/content/IntentFilter;
 
     .line 128
-    iget-object v0, p0, Lcom/android/settings/wifi/WpsFragment;->asr:Landroid/content/IntentFilter;
+    iget-object v0, p0, Lcom/android/settings_ext/wifi/WpsFragment;->asr:Landroid/content/IntentFilter;
 
     const-string v1, "android.net.wifi.STATE_CHANGE"
 
@@ -650,7 +650,7 @@
 
     move-result v0
 
-    iput-boolean v0, p0, Lcom/android/settings/wifi/WpsFragment;->axI:Z
+    iput-boolean v0, p0, Lcom/android/settings_ext/wifi/WpsFragment;->axI:Z
 
     .line 133
     :cond_0
@@ -658,7 +658,7 @@
 
     .line 74
     :cond_1
-    invoke-virtual {p0}, Lcom/android/settings/wifi/WpsFragment;->getArguments()Landroid/os/Bundle;
+    invoke-virtual {p0}, Lcom/android/settings_ext/wifi/WpsFragment;->getArguments()Landroid/os/Bundle;
 
     move-result-object v0
 
@@ -668,7 +668,7 @@
 
     move-result v0
 
-    iput v0, p0, Lcom/android/settings/wifi/WpsFragment;->axq:I
+    iput v0, p0, Lcom/android/settings_ext/wifi/WpsFragment;->axq:I
 
     goto :goto_0
 .end method
@@ -678,10 +678,10 @@
 
     .prologue
     .line 231
-    invoke-direct {p0}, Lcom/android/settings/wifi/WpsFragment;->stop()V
+    invoke-direct {p0}, Lcom/android/settings_ext/wifi/WpsFragment;->stop()V
 
     .line 232
-    invoke-super {p0}, Lcom/android/settings/BaseFragment;->onDestroy()V
+    invoke-super {p0}, Lcom/android/settings_ext/BaseFragment;->onDestroy()V
 
     .line 233
     return-void
@@ -694,12 +694,12 @@
     .line 329
     const-string v0, "wps_setup_finish"
 
-    iget-boolean v1, p0, Lcom/android/settings/wifi/WpsFragment;->axI:Z
+    iget-boolean v1, p0, Lcom/android/settings_ext/wifi/WpsFragment;->axI:Z
 
     invoke-virtual {p1, v0, v1}, Landroid/os/Bundle;->putBoolean(Ljava/lang/String;Z)V
 
     .line 330
-    invoke-super {p0, p1}, Lcom/android/settings/BaseFragment;->onSaveInstanceState(Landroid/os/Bundle;)V
+    invoke-super {p0, p1}, Lcom/android/settings_ext/BaseFragment;->onSaveInstanceState(Landroid/os/Bundle;)V
 
     .line 331
     return-void
@@ -710,7 +710,7 @@
 
     .prologue
     .line 143
-    invoke-super {p0, p1, p2}, Lcom/android/settings/BaseFragment;->onViewCreated(Landroid/view/View;Landroid/os/Bundle;)V
+    invoke-super {p0, p1, p2}, Lcom/android/settings_ext/BaseFragment;->onViewCreated(Landroid/view/View;Landroid/os/Bundle;)V
 
     .line 145
     const v0, 0x7f100342
@@ -721,7 +721,7 @@
 
     check-cast v0, Landroid/widget/TextView;
 
-    iput-object v0, p0, Lcom/android/settings/wifi/WpsFragment;->Um:Landroid/widget/TextView;
+    iput-object v0, p0, Lcom/android/settings_ext/wifi/WpsFragment;->Um:Landroid/widget/TextView;
 
     .line 146
     const v0, 0x7f100343
@@ -732,10 +732,10 @@
 
     check-cast v0, Landroid/widget/ImageView;
 
-    iput-object v0, p0, Lcom/android/settings/wifi/WpsFragment;->axH:Landroid/widget/ImageView;
+    iput-object v0, p0, Lcom/android/settings_ext/wifi/WpsFragment;->axH:Landroid/widget/ImageView;
 
     .line 147
-    invoke-direct {p0}, Lcom/android/settings/wifi/WpsFragment;->vT()V
+    invoke-direct {p0}, Lcom/android/settings_ext/wifi/WpsFragment;->vT()V
 
     .line 148
     const v0, 0x7f100344
@@ -746,17 +746,17 @@
 
     check-cast v0, Lmiui/widget/ProgressBar;
 
-    iput-object v0, p0, Lcom/android/settings/wifi/WpsFragment;->axE:Lmiui/widget/ProgressBar;
+    iput-object v0, p0, Lcom/android/settings_ext/wifi/WpsFragment;->axE:Lmiui/widget/ProgressBar;
 
     .line 149
-    iget-object v0, p0, Lcom/android/settings/wifi/WpsFragment;->axE:Lmiui/widget/ProgressBar;
+    iget-object v0, p0, Lcom/android/settings_ext/wifi/WpsFragment;->axE:Lmiui/widget/ProgressBar;
 
     const/16 v1, 0x78
 
     invoke-virtual {v0, v1}, Lmiui/widget/ProgressBar;->setMax(I)V
 
     .line 150
-    iget-object v0, p0, Lcom/android/settings/wifi/WpsFragment;->axE:Lmiui/widget/ProgressBar;
+    iget-object v0, p0, Lcom/android/settings_ext/wifi/WpsFragment;->axE:Lmiui/widget/ProgressBar;
 
     const/4 v1, 0x0
 
@@ -771,10 +771,10 @@
 
     check-cast v0, Lmiui/widget/ProgressBar;
 
-    iput-object v0, p0, Lcom/android/settings/wifi/WpsFragment;->rE:Lmiui/widget/ProgressBar;
+    iput-object v0, p0, Lcom/android/settings_ext/wifi/WpsFragment;->rE:Lmiui/widget/ProgressBar;
 
     .line 153
-    iget-object v0, p0, Lcom/android/settings/wifi/WpsFragment;->rE:Lmiui/widget/ProgressBar;
+    iget-object v0, p0, Lcom/android/settings_ext/wifi/WpsFragment;->rE:Lmiui/widget/ProgressBar;
 
     const/16 v1, 0x8
 
@@ -789,14 +789,14 @@
 
     check-cast v0, Landroid/widget/Button;
 
-    iput-object v0, p0, Lcom/android/settings/wifi/WpsFragment;->axF:Landroid/widget/Button;
+    iput-object v0, p0, Lcom/android/settings_ext/wifi/WpsFragment;->axF:Landroid/widget/Button;
 
     .line 156
-    iget-object v0, p0, Lcom/android/settings/wifi/WpsFragment;->axF:Landroid/widget/Button;
+    iget-object v0, p0, Lcom/android/settings_ext/wifi/WpsFragment;->axF:Landroid/widget/Button;
 
-    new-instance v1, Lcom/android/settings/wifi/aZ;
+    new-instance v1, Lcom/android/settings_ext/wifi/aZ;
 
-    invoke-direct {v1, p0}, Lcom/android/settings/wifi/aZ;-><init>(Lcom/android/settings/wifi/WpsFragment;)V
+    invoke-direct {v1, p0}, Lcom/android/settings_ext/wifi/aZ;-><init>(Lcom/android/settings_ext/wifi/WpsFragment;)V
 
     invoke-virtual {v0, v1}, Landroid/widget/Button;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
@@ -809,19 +809,19 @@
 
     check-cast v0, Landroid/widget/Button;
 
-    iput-object v0, p0, Lcom/android/settings/wifi/WpsFragment;->axG:Landroid/widget/Button;
+    iput-object v0, p0, Lcom/android/settings_ext/wifi/WpsFragment;->axG:Landroid/widget/Button;
 
     .line 164
-    iget-object v0, p0, Lcom/android/settings/wifi/WpsFragment;->axG:Landroid/widget/Button;
+    iget-object v0, p0, Lcom/android/settings_ext/wifi/WpsFragment;->axG:Landroid/widget/Button;
 
-    new-instance v1, Lcom/android/settings/wifi/bb;
+    new-instance v1, Lcom/android/settings_ext/wifi/bb;
 
-    invoke-direct {v1, p0}, Lcom/android/settings/wifi/bb;-><init>(Lcom/android/settings/wifi/WpsFragment;)V
+    invoke-direct {v1, p0}, Lcom/android/settings_ext/wifi/bb;-><init>(Lcom/android/settings_ext/wifi/WpsFragment;)V
 
     invoke-virtual {v0, v1}, Landroid/widget/Button;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     .line 176
-    invoke-direct {p0}, Lcom/android/settings/wifi/WpsFragment;->start()V
+    invoke-direct {p0}, Lcom/android/settings_ext/wifi/WpsFragment;->start()V
 
     .line 177
     return-void

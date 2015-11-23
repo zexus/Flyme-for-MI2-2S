@@ -1,4 +1,4 @@
-.class Lcom/android/settings/cI;
+.class Lcom/android/settings_ext/cI;
 .super Ljava/lang/Object;
 .source "HomeSettings.java"
 
@@ -7,16 +7,16 @@
 
 
 # instance fields
-.field final synthetic mE:Lcom/android/settings/HomeSettings;
+.field final synthetic mE:Lcom/android/settings_ext/HomeSettings;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/HomeSettings;)V
+.method constructor <init>(Lcom/android/settings_ext/HomeSettings;)V
     .locals 0
 
     .prologue
     .line 108
-    iput-object p1, p0, Lcom/android/settings/cI;->mE:Lcom/android/settings/HomeSettings;
+    iput-object p1, p0, Lcom/android/settings_ext/cI;->mE:Lcom/android/settings_ext/HomeSettings;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -41,11 +41,11 @@
     move-result v0
 
     .line 112
-    iget-object v1, p0, Lcom/android/settings/cI;->mE:Lcom/android/settings/HomeSettings;
+    iget-object v1, p0, Lcom/android/settings_ext/cI;->mE:Lcom/android/settings_ext/HomeSettings;
 
-    iget-object v2, p0, Lcom/android/settings/cI;->mE:Lcom/android/settings/HomeSettings;
+    iget-object v2, p0, Lcom/android/settings_ext/cI;->mE:Lcom/android/settings_ext/HomeSettings;
 
-    invoke-static {v2}, Lcom/android/settings/HomeSettings;->b(Lcom/android/settings/HomeSettings;)Ljava/util/ArrayList;
+    invoke-static {v2}, Lcom/android/settings_ext/HomeSettings;->b(Lcom/android/settings_ext/HomeSettings;)Ljava/util/ArrayList;
 
     move-result-object v2
 
@@ -53,9 +53,9 @@
 
     move-result-object v0
 
-    check-cast v0, Lcom/android/settings/cL;
+    check-cast v0, Lcom/android/settings_ext/cL;
 
-    invoke-virtual {v1, v0}, Lcom/android/settings/HomeSettings;->b(Lcom/android/settings/cL;)V
+    invoke-virtual {v1, v0}, Lcom/android/settings_ext/HomeSettings;->b(Lcom/android/settings_ext/cL;)V
 
     .line 113
     return-void

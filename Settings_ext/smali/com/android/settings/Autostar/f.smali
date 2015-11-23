@@ -1,12 +1,12 @@
-.class Lcom/android/settings/Autostar/f;
+.class Lcom/android/settings_ext/Autostar/f;
 .super Landroid/preference/Preference;
 .source "Autoallow.java"
 
 
 # instance fields
-.field final synthetic bF:Lcom/android/settings/Autostar/d;
+.field final synthetic bF:Lcom/android/settings_ext/Autostar/d;
 
-.field bG:Lcom/android/settings/Autostar/d;
+.field bG:Lcom/android/settings_ext/Autostar/d;
 
 .field bH:Landroid/widget/Button;
 
@@ -16,12 +16,12 @@
 
 
 # direct methods
-.method public constructor <init>(Lcom/android/settings/Autostar/d;Landroid/content/Context;Landroid/graphics/drawable/Drawable;Ljava/lang/CharSequence;Lcom/android/settings/Autostar/d;Landroid/content/pm/ApplicationInfo;)V
+.method public constructor <init>(Lcom/android/settings_ext/Autostar/d;Landroid/content/Context;Landroid/graphics/drawable/Drawable;Ljava/lang/CharSequence;Lcom/android/settings_ext/Autostar/d;Landroid/content/pm/ApplicationInfo;)V
     .locals 1
 
     .prologue
     .line 128
-    iput-object p1, p0, Lcom/android/settings/Autostar/f;->bF:Lcom/android/settings/Autostar/d;
+    iput-object p1, p0, Lcom/android/settings_ext/Autostar/f;->bF:Lcom/android/settings_ext/Autostar/d;
 
     .line 129
     invoke-direct {p0, p2}, Landroid/preference/Preference;-><init>(Landroid/content/Context;)V
@@ -29,19 +29,19 @@
     .line 130
     const v0, 0x7f040015
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/Autostar/f;->setLayoutResource(I)V
+    invoke-virtual {p0, v0}, Lcom/android/settings_ext/Autostar/f;->setLayoutResource(I)V
 
     .line 131
-    invoke-virtual {p0, p3}, Lcom/android/settings/Autostar/f;->setIcon(Landroid/graphics/drawable/Drawable;)V
+    invoke-virtual {p0, p3}, Lcom/android/settings_ext/Autostar/f;->setIcon(Landroid/graphics/drawable/Drawable;)V
 
     .line 132
-    invoke-virtual {p0, p4}, Lcom/android/settings/Autostar/f;->setTitle(Ljava/lang/CharSequence;)V
+    invoke-virtual {p0, p4}, Lcom/android/settings_ext/Autostar/f;->setTitle(Ljava/lang/CharSequence;)V
 
     .line 133
-    iput-object p5, p0, Lcom/android/settings/Autostar/f;->bG:Lcom/android/settings/Autostar/d;
+    iput-object p5, p0, Lcom/android/settings_ext/Autostar/f;->bG:Lcom/android/settings_ext/Autostar/d;
 
     .line 134
-    iput-object p6, p0, Lcom/android/settings/Autostar/f;->bl:Landroid/content/pm/ApplicationInfo;
+    iput-object p6, p0, Lcom/android/settings_ext/Autostar/f;->bl:Landroid/content/pm/ApplicationInfo;
 
     .line 135
     return-void
@@ -54,7 +54,7 @@
 
     .prologue
     .line 138
-    iget-object v0, p0, Lcom/android/settings/Autostar/f;->bl:Landroid/content/pm/ApplicationInfo;
+    iget-object v0, p0, Lcom/android/settings_ext/Autostar/f;->bl:Landroid/content/pm/ApplicationInfo;
 
     return-object v0
 .end method
@@ -79,7 +79,7 @@
 
     check-cast v0, Landroid/widget/Button;
 
-    iput-object v0, p0, Lcom/android/settings/Autostar/f;->bH:Landroid/widget/Button;
+    iput-object v0, p0, Lcom/android/settings_ext/Autostar/f;->bH:Landroid/widget/Button;
 
     .line 145
     const v0, 0x7f100037
@@ -90,26 +90,26 @@
 
     check-cast v0, Landroid/widget/TextView;
 
-    iput-object v0, p0, Lcom/android/settings/Autostar/f;->bI:Landroid/widget/TextView;
+    iput-object v0, p0, Lcom/android/settings_ext/Autostar/f;->bI:Landroid/widget/TextView;
 
     .line 146
-    iget-object v0, p0, Lcom/android/settings/Autostar/f;->bH:Landroid/widget/Button;
+    iget-object v0, p0, Lcom/android/settings_ext/Autostar/f;->bH:Landroid/widget/Button;
 
     const v1, 0x7f090c62
 
     invoke-virtual {v0, v1}, Landroid/widget/Button;->setText(I)V
 
     .line 147
-    iget-object v0, p0, Lcom/android/settings/Autostar/f;->bH:Landroid/widget/Button;
+    iget-object v0, p0, Lcom/android/settings_ext/Autostar/f;->bH:Landroid/widget/Button;
 
-    iget-object v1, p0, Lcom/android/settings/Autostar/f;->bF:Lcom/android/settings/Autostar/d;
+    iget-object v1, p0, Lcom/android/settings_ext/Autostar/f;->bF:Lcom/android/settings_ext/Autostar/d;
 
-    iget-object v1, v1, Lcom/android/settings/Autostar/d;->bE:Landroid/view/View$OnClickListener;
+    iget-object v1, v1, Lcom/android/settings_ext/Autostar/d;->bE:Landroid/view/View$OnClickListener;
 
     invoke-virtual {v0, v1}, Landroid/widget/Button;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     .line 148
-    iget-object v0, p0, Lcom/android/settings/Autostar/f;->bH:Landroid/widget/Button;
+    iget-object v0, p0, Lcom/android/settings_ext/Autostar/f;->bH:Landroid/widget/Button;
 
     invoke-virtual {v0, p0}, Landroid/widget/Button;->setTag(Ljava/lang/Object;)V
 
@@ -118,7 +118,7 @@
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/android/settings/Autostar/f;->bl:Landroid/content/pm/ApplicationInfo;
+    iget-object v1, p0, Lcom/android/settings_ext/Autostar/f;->bl:Landroid/content/pm/ApplicationInfo;
 
     iget-object v1, v1, Landroid/content/pm/ApplicationInfo;->packageName:Ljava/lang/String;
 
@@ -129,12 +129,12 @@
     if-nez v0, :cond_0
 
     .line 150
-    iget-object v0, p0, Lcom/android/settings/Autostar/f;->bH:Landroid/widget/Button;
+    iget-object v0, p0, Lcom/android/settings_ext/Autostar/f;->bH:Landroid/widget/Button;
 
     invoke-virtual {v0, v3}, Landroid/widget/Button;->setVisibility(I)V
 
     .line 151
-    iget-object v0, p0, Lcom/android/settings/Autostar/f;->bI:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/android/settings_ext/Autostar/f;->bI:Landroid/widget/TextView;
 
     invoke-virtual {v0, v2}, Landroid/widget/TextView;->setVisibility(I)V
 
@@ -144,12 +144,12 @@
 
     .line 153
     :cond_0
-    iget-object v0, p0, Lcom/android/settings/Autostar/f;->bI:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/android/settings_ext/Autostar/f;->bI:Landroid/widget/TextView;
 
     invoke-virtual {v0, v3}, Landroid/widget/TextView;->setVisibility(I)V
 
     .line 154
-    iget-object v0, p0, Lcom/android/settings/Autostar/f;->bH:Landroid/widget/Button;
+    iget-object v0, p0, Lcom/android/settings_ext/Autostar/f;->bH:Landroid/widget/Button;
 
     invoke-virtual {v0, v2}, Landroid/widget/Button;->setVisibility(I)V
 

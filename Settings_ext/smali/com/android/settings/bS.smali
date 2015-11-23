@@ -1,4 +1,4 @@
-.class Lcom/android/settings/bS;
+.class Lcom/android/settings_ext/bS;
 .super Ljava/lang/Object;
 .source "DiracHeadsetAdapter.java"
 
@@ -26,7 +26,7 @@
 
     check-cast v0, Landroid/widget/ImageView;
 
-    iput-object v0, p0, Lcom/android/settings/bS;->jL:Landroid/widget/ImageView;
+    iput-object v0, p0, Lcom/android/settings_ext/bS;->jL:Landroid/widget/ImageView;
 
     .line 26
     const v0, 0x7f10014e
@@ -37,7 +37,7 @@
 
     check-cast v0, Landroid/widget/TextView;
 
-    iput-object v0, p0, Lcom/android/settings/bS;->jM:Landroid/widget/TextView;
+    iput-object v0, p0, Lcom/android/settings_ext/bS;->jM:Landroid/widget/TextView;
 
     .line 27
     return-void

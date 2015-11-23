@@ -1,4 +1,4 @@
-.class Lcom/android/settings/applications/PreferredSmsSettings$1;
+.class Lcom/android/settings_ext/applications/PreferredSmsSettings$1;
 .super Ljava/lang/Object;
 .source "PreferredSmsSettings.java"
 
@@ -9,18 +9,18 @@
 # instance fields
 .field final synthetic HV:Lcom/android/internal/telephony/SmsApplication$SmsApplicationData;
 
-.field final synthetic HW:Lcom/android/settings/applications/PreferredSmsSettings;
+.field final synthetic HW:Lcom/android/settings_ext/applications/PreferredSmsSettings;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/applications/PreferredSmsSettings;Lcom/android/internal/telephony/SmsApplication$SmsApplicationData;)V
+.method constructor <init>(Lcom/android/settings_ext/applications/PreferredSmsSettings;Lcom/android/internal/telephony/SmsApplication$SmsApplicationData;)V
     .locals 0
 
     .prologue
     .line 110
-    iput-object p1, p0, Lcom/android/settings/applications/PreferredSmsSettings$1;->HW:Lcom/android/settings/applications/PreferredSmsSettings;
+    iput-object p1, p0, Lcom/android/settings_ext/applications/PreferredSmsSettings$1;->HW:Lcom/android/settings_ext/applications/PreferredSmsSettings;
 
-    iput-object p2, p0, Lcom/android/settings/applications/PreferredSmsSettings$1;->HV:Lcom/android/internal/telephony/SmsApplication$SmsApplicationData;
+    iput-object p2, p0, Lcom/android/settings_ext/applications/PreferredSmsSettings$1;->HV:Lcom/android/internal/telephony/SmsApplication$SmsApplicationData;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -34,13 +34,13 @@
 
     .prologue
     .line 113
-    iget-object v0, p0, Lcom/android/settings/applications/PreferredSmsSettings$1;->HW:Lcom/android/settings/applications/PreferredSmsSettings;
+    iget-object v0, p0, Lcom/android/settings_ext/applications/PreferredSmsSettings$1;->HW:Lcom/android/settings_ext/applications/PreferredSmsSettings;
 
-    iget-object v1, p0, Lcom/android/settings/applications/PreferredSmsSettings$1;->HV:Lcom/android/internal/telephony/SmsApplication$SmsApplicationData;
+    iget-object v1, p0, Lcom/android/settings_ext/applications/PreferredSmsSettings$1;->HV:Lcom/android/internal/telephony/SmsApplication$SmsApplicationData;
 
     iget-object v1, v1, Lcom/android/internal/telephony/SmsApplication$SmsApplicationData;->mPackageName:Ljava/lang/String;
 
-    invoke-static {v0, v1}, Lcom/android/settings/applications/PreferredSmsSettings;->a(Lcom/android/settings/applications/PreferredSmsSettings;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/android/settings_ext/applications/PreferredSmsSettings;->a(Lcom/android/settings_ext/applications/PreferredSmsSettings;Ljava/lang/String;)V
 
     .line 114
     return-void

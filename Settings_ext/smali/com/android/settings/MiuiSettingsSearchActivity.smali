@@ -1,4 +1,4 @@
-.class public Lcom/android/settings/MiuiSettingsSearchActivity;
+.class public Lcom/android/settings_ext/MiuiSettingsSearchActivity;
 .super Landroid/preference/PreferenceActivity;
 .source "MiuiSettingsSearchActivity.java"
 
@@ -28,7 +28,7 @@
     invoke-super {p0, p1}, Landroid/preference/PreferenceActivity;->onCreate(Landroid/os/Bundle;)V
 
     .line 18
-    invoke-virtual {p0}, Lcom/android/settings/MiuiSettingsSearchActivity;->getIntent()Landroid/content/Intent;
+    invoke-virtual {p0}, Lcom/android/settings_ext/MiuiSettingsSearchActivity;->getIntent()Landroid/content/Intent;
 
     move-result-object v0
 
@@ -66,17 +66,17 @@
     if-le v0, v1, :cond_0
 
     .line 29
-    invoke-static {v0}, Lcom/android/settings/cz;->B(I)I
+    invoke-static {v0}, Lcom/android/settings_ext/cz;->B(I)I
 
     move-result v0
 
     .line 30
-    invoke-static {}, Lcom/android/settings/cz;->dK()[I
+    invoke-static {}, Lcom/android/settings_ext/cz;->dK()[I
 
     move-result-object v1
 
     .line 31
-    invoke-static {v0}, Lcom/android/settings/cz;->z(I)Ljava/lang/String;
+    invoke-static {v0}, Lcom/android/settings_ext/cz;->z(I)Ljava/lang/String;
 
     move-result-object v2
 
@@ -92,17 +92,17 @@
     .line 33
     new-instance v0, Landroid/content/Intent;
 
-    const-class v1, Lcom/android/settings/MiuiSettings;
+    const-class v1, Lcom/android/settings_ext/MiuiSettings;
 
     invoke-direct {v0, p0, v1}, Landroid/content/Intent;-><init>(Landroid/content/Context;Ljava/lang/Class;)V
 
     .line 34
-    invoke-virtual {p0, v0}, Lcom/android/settings/MiuiSettingsSearchActivity;->startActivity(Landroid/content/Intent;)V
+    invoke-virtual {p0, v0}, Lcom/android/settings_ext/MiuiSettingsSearchActivity;->startActivity(Landroid/content/Intent;)V
 
     .line 50
     :cond_0
     :goto_1
-    invoke-virtual {p0}, Lcom/android/settings/MiuiSettingsSearchActivity;->finish()V
+    invoke-virtual {p0}, Lcom/android/settings_ext/MiuiSettingsSearchActivity;->finish()V
 
     .line 51
     return-void
@@ -129,7 +129,7 @@
     .line 37
     aget v0, v1, v0
 
-    invoke-virtual {p0, v0, v2}, Lcom/android/settings/MiuiSettingsSearchActivity;->loadHeadersFromResource(ILjava/util/List;)V
+    invoke-virtual {p0, v0, v2}, Lcom/android/settings_ext/MiuiSettingsSearchActivity;->loadHeadersFromResource(ILjava/util/List;)V
 
     .line 38
     invoke-interface {v2}, Ljava/util/List;->size()I
@@ -164,18 +164,18 @@
 
     iget v0, v0, Landroid/preference/PreferenceActivity$Header;->titleRes:I
 
-    invoke-virtual {p0, v1, v2, v0, v4}, Lcom/android/settings/MiuiSettingsSearchActivity;->onBuildStartFragmentIntent(Ljava/lang/String;Landroid/os/Bundle;II)Landroid/content/Intent;
+    invoke-virtual {p0, v1, v2, v0, v4}, Lcom/android/settings_ext/MiuiSettingsSearchActivity;->onBuildStartFragmentIntent(Ljava/lang/String;Landroid/os/Bundle;II)Landroid/content/Intent;
 
     move-result-object v0
 
     .line 43
-    const-class v1, Lcom/android/settings/SubSettings;
+    const-class v1, Lcom/android/settings_ext/SubSettings;
 
     invoke-virtual {v0, p0, v1}, Landroid/content/Intent;->setClass(Landroid/content/Context;Ljava/lang/Class;)Landroid/content/Intent;
 
     .line 45
     :goto_2
-    invoke-virtual {p0, v0}, Lcom/android/settings/MiuiSettingsSearchActivity;->startActivity(Landroid/content/Intent;)V
+    invoke-virtual {p0, v0}, Lcom/android/settings_ext/MiuiSettingsSearchActivity;->startActivity(Landroid/content/Intent;)V
 
     goto :goto_1
 

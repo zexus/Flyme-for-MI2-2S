@@ -1,4 +1,4 @@
-.class public Lcom/android/settings/quicklaunch/BookmarkPicker;
+.class public Lcom/android/settings_ext/quicklaunch/BookmarkPicker;
 .super Landroid/app/ListActivity;
 .source "BookmarkPicker.java"
 
@@ -48,14 +48,14 @@
 
     aput-object v2, v0, v1
 
-    sput-object v0, Lcom/android/settings/quicklaunch/BookmarkPicker;->ahF:[Ljava/lang/String;
+    sput-object v0, Lcom/android/settings_ext/quicklaunch/BookmarkPicker;->ahF:[Ljava/lang/String;
 
     .line 83
     new-array v0, v3, [I
 
     fill-array-data v0, :array_0
 
-    sput-object v0, Lcom/android/settings/quicklaunch/BookmarkPicker;->ahG:[I
+    sput-object v0, Lcom/android/settings_ext/quicklaunch/BookmarkPicker;->ahG:[I
 
     return-void
 
@@ -78,14 +78,14 @@
     .line 90
     const/4 v0, 0x0
 
-    iput v0, p0, Lcom/android/settings/quicklaunch/BookmarkPicker;->nW:I
+    iput v0, p0, Lcom/android/settings_ext/quicklaunch/BookmarkPicker;->nW:I
 
     .line 92
     new-instance v0, Landroid/os/Handler;
 
     invoke-direct {v0}, Landroid/os/Handler;-><init>()V
 
-    iput-object v0, p0, Lcom/android/settings/quicklaunch/BookmarkPicker;->Mz:Landroid/os/Handler;
+    iput-object v0, p0, Lcom/android/settings_ext/quicklaunch/BookmarkPicker;->Mz:Landroid/os/Handler;
 
     return-void
 .end method
@@ -113,22 +113,22 @@
     return-object v0
 .end method
 
-.method static synthetic a(Lcom/android/settings/quicklaunch/BookmarkPicker;)Landroid/widget/SimpleAdapter;
+.method static synthetic a(Lcom/android/settings_ext/quicklaunch/BookmarkPicker;)Landroid/widget/SimpleAdapter;
     .locals 1
 
     .prologue
     .line 50
-    iget-object v0, p0, Lcom/android/settings/quicklaunch/BookmarkPicker;->ahH:Landroid/widget/SimpleAdapter;
+    iget-object v0, p0, Lcom/android/settings_ext/quicklaunch/BookmarkPicker;->ahH:Landroid/widget/SimpleAdapter;
 
     return-object v0
 .end method
 
-.method static synthetic a(Lcom/android/settings/quicklaunch/BookmarkPicker;Landroid/widget/SimpleAdapter;)Landroid/widget/SimpleAdapter;
+.method static synthetic a(Lcom/android/settings_ext/quicklaunch/BookmarkPicker;Landroid/widget/SimpleAdapter;)Landroid/widget/SimpleAdapter;
     .locals 0
 
     .prologue
     .line 50
-    iput-object p1, p0, Lcom/android/settings/quicklaunch/BookmarkPicker;->ahH:Landroid/widget/SimpleAdapter;
+    iput-object p1, p0, Lcom/android/settings_ext/quicklaunch/BookmarkPicker;->ahH:Landroid/widget/SimpleAdapter;
 
     return-object p1
 .end method
@@ -138,7 +138,7 @@
 
     .prologue
     .line 313
-    invoke-virtual {p0}, Lcom/android/settings/quicklaunch/BookmarkPicker;->getIntent()Landroid/content/Intent;
+    invoke-virtual {p0}, Lcom/android/settings_ext/quicklaunch/BookmarkPicker;->getIntent()Landroid/content/Intent;
 
     move-result-object v0
 
@@ -152,51 +152,51 @@
     .line 316
     const/4 v0, -0x1
 
-    invoke-virtual {p0, v0, p1}, Lcom/android/settings/quicklaunch/BookmarkPicker;->setResult(ILandroid/content/Intent;)V
+    invoke-virtual {p0, v0, p1}, Lcom/android/settings_ext/quicklaunch/BookmarkPicker;->setResult(ILandroid/content/Intent;)V
 
     .line 317
-    invoke-virtual {p0}, Lcom/android/settings/quicklaunch/BookmarkPicker;->finish()V
+    invoke-virtual {p0}, Lcom/android/settings_ext/quicklaunch/BookmarkPicker;->finish()V
 
     .line 318
     return-void
 .end method
 
-.method static synthetic a(Lcom/android/settings/quicklaunch/BookmarkPicker;Ljava/util/ArrayList;Ljava/util/ArrayList;)V
+.method static synthetic a(Lcom/android/settings_ext/quicklaunch/BookmarkPicker;Ljava/util/ArrayList;Ljava/util/ArrayList;)V
     .locals 0
 
     .prologue
     .line 50
-    invoke-direct {p0, p1, p2}, Lcom/android/settings/quicklaunch/BookmarkPicker;->d(Ljava/util/ArrayList;Ljava/util/ArrayList;)V
+    invoke-direct {p0, p1, p2}, Lcom/android/settings_ext/quicklaunch/BookmarkPicker;->d(Ljava/util/ArrayList;Ljava/util/ArrayList;)V
 
     return-void
 .end method
 
-.method static synthetic a(Lcom/android/settings/quicklaunch/BookmarkPicker;Ljava/util/List;)V
+.method static synthetic a(Lcom/android/settings_ext/quicklaunch/BookmarkPicker;Ljava/util/List;)V
     .locals 0
 
     .prologue
     .line 50
-    invoke-direct {p0, p1}, Lcom/android/settings/quicklaunch/BookmarkPicker;->o(Ljava/util/List;)V
+    invoke-direct {p0, p1}, Lcom/android/settings_ext/quicklaunch/BookmarkPicker;->o(Ljava/util/List;)V
 
     return-void
 .end method
 
-.method static synthetic a(Lcom/android/settings/quicklaunch/BookmarkPicker;Ljava/util/List;Ljava/util/List;)V
+.method static synthetic a(Lcom/android/settings_ext/quicklaunch/BookmarkPicker;Ljava/util/List;Ljava/util/List;)V
     .locals 0
 
     .prologue
     .line 50
-    invoke-direct {p0, p1, p2}, Lcom/android/settings/quicklaunch/BookmarkPicker;->b(Ljava/util/List;Ljava/util/List;)V
+    invoke-direct {p0, p1, p2}, Lcom/android/settings_ext/quicklaunch/BookmarkPicker;->b(Ljava/util/List;Ljava/util/List;)V
 
     return-void
 .end method
 
-.method static synthetic b(Lcom/android/settings/quicklaunch/BookmarkPicker;Ljava/util/List;)Landroid/widget/SimpleAdapter;
+.method static synthetic b(Lcom/android/settings_ext/quicklaunch/BookmarkPicker;Ljava/util/List;)Landroid/widget/SimpleAdapter;
     .locals 1
 
     .prologue
     .line 50
-    invoke-direct {p0, p1}, Lcom/android/settings/quicklaunch/BookmarkPicker;->p(Ljava/util/List;)Landroid/widget/SimpleAdapter;
+    invoke-direct {p0, p1}, Lcom/android/settings_ext/quicklaunch/BookmarkPicker;->p(Ljava/util/List;)Landroid/widget/SimpleAdapter;
 
     move-result-object v0
 
@@ -238,7 +238,7 @@
     .line 230
     const-string v4, "TITLE"
 
-    invoke-direct {p0, v0}, Lcom/android/settings/quicklaunch/BookmarkPicker;->f(Landroid/content/pm/ResolveInfo;)Ljava/lang/String;
+    invoke-direct {p0, v0}, Lcom/android/settings_ext/quicklaunch/BookmarkPicker;->f(Landroid/content/pm/ResolveInfo;)Ljava/lang/String;
 
     move-result-object v5
 
@@ -264,12 +264,12 @@
     return-void
 .end method
 
-.method static synthetic c(Lcom/android/settings/quicklaunch/BookmarkPicker;Ljava/util/List;)Ljava/util/List;
+.method static synthetic c(Lcom/android/settings_ext/quicklaunch/BookmarkPicker;Ljava/util/List;)Ljava/util/List;
     .locals 0
 
     .prologue
     .line 50
-    iput-object p1, p0, Lcom/android/settings/quicklaunch/BookmarkPicker;->ahE:Ljava/util/List;
+    iput-object p1, p0, Lcom/android/settings_ext/quicklaunch/BookmarkPicker;->ahE:Ljava/util/List;
 
     return-object p1
 .end method
@@ -279,11 +279,11 @@
 
     .prologue
     .line 180
-    iget-object v0, p0, Lcom/android/settings/quicklaunch/BookmarkPicker;->Mz:Landroid/os/Handler;
+    iget-object v0, p0, Lcom/android/settings_ext/quicklaunch/BookmarkPicker;->Mz:Landroid/os/Handler;
 
-    new-instance v1, Lcom/android/settings/quicklaunch/b;
+    new-instance v1, Lcom/android/settings_ext/quicklaunch/b;
 
-    invoke-direct {v1, p0, p1, p2}, Lcom/android/settings/quicklaunch/b;-><init>(Lcom/android/settings/quicklaunch/BookmarkPicker;Ljava/util/ArrayList;Ljava/util/ArrayList;)V
+    invoke-direct {v1, p0, p1, p2}, Lcom/android/settings_ext/quicklaunch/b;-><init>(Lcom/android/settings_ext/quicklaunch/BookmarkPicker;Ljava/util/ArrayList;Ljava/util/ArrayList;)V
 
     invoke-virtual {v0, v1}, Landroid/os/Handler;->post(Ljava/lang/Runnable;)Z
 
@@ -296,7 +296,7 @@
 
     .prologue
     .line 238
-    invoke-virtual {p0}, Lcom/android/settings/quicklaunch/BookmarkPicker;->getPackageManager()Landroid/content/pm/PackageManager;
+    invoke-virtual {p0}, Lcom/android/settings_ext/quicklaunch/BookmarkPicker;->getPackageManager()Landroid/content/pm/PackageManager;
 
     move-result-object v0
 
@@ -335,14 +335,14 @@
     .line 281
     const-string v0, "android.intent.action.CREATE_SHORTCUT"
 
-    invoke-static {p1, v0}, Lcom/android/settings/quicklaunch/BookmarkPicker;->a(Landroid/content/pm/ResolveInfo;Ljava/lang/String;)Landroid/content/Intent;
+    invoke-static {p1, v0}, Lcom/android/settings_ext/quicklaunch/BookmarkPicker;->a(Landroid/content/pm/ResolveInfo;Ljava/lang/String;)Landroid/content/Intent;
 
     move-result-object v0
 
     .line 282
     const/4 v1, 0x1
 
-    invoke-virtual {p0, v0, v1}, Lcom/android/settings/quicklaunch/BookmarkPicker;->startActivityForResult(Landroid/content/Intent;I)V
+    invoke-virtual {p0, v0, v1}, Lcom/android/settings_ext/quicklaunch/BookmarkPicker;->startActivityForResult(Landroid/content/Intent;I)V
 
     .line 285
     return-void
@@ -355,10 +355,10 @@
     const/4 v3, 0x0
 
     .line 199
-    invoke-direct {p0}, Lcom/android/settings/quicklaunch/BookmarkPicker;->rj()V
+    invoke-direct {p0}, Lcom/android/settings_ext/quicklaunch/BookmarkPicker;->rj()V
 
     .line 200
-    invoke-virtual {p0}, Lcom/android/settings/quicklaunch/BookmarkPicker;->getPackageManager()Landroid/content/pm/PackageManager;
+    invoke-virtual {p0}, Lcom/android/settings_ext/quicklaunch/BookmarkPicker;->getPackageManager()Landroid/content/pm/PackageManager;
 
     move-result-object v0
 
@@ -366,12 +366,12 @@
     invoke-interface {p1}, Ljava/util/List;->clear()V
 
     .line 203
-    iget v1, p0, Lcom/android/settings/quicklaunch/BookmarkPicker;->nW:I
+    iget v1, p0, Lcom/android/settings_ext/quicklaunch/BookmarkPicker;->nW:I
 
     if-nez v1, :cond_1
 
     .line 204
-    sget-object v1, Lcom/android/settings/quicklaunch/BookmarkPicker;->ahC:Landroid/content/Intent;
+    sget-object v1, Lcom/android/settings_ext/quicklaunch/BookmarkPicker;->ahC:Landroid/content/Intent;
 
     invoke-virtual {v0, v1, v3}, Landroid/content/pm/PackageManager;->queryIntentActivities(Landroid/content/Intent;I)Ljava/util/List;
 
@@ -386,14 +386,14 @@
 
     .line 205
     :cond_1
-    iget v1, p0, Lcom/android/settings/quicklaunch/BookmarkPicker;->nW:I
+    iget v1, p0, Lcom/android/settings_ext/quicklaunch/BookmarkPicker;->nW:I
 
     const/4 v2, 0x1
 
     if-ne v1, v2, :cond_0
 
     .line 206
-    sget-object v1, Lcom/android/settings/quicklaunch/BookmarkPicker;->ahD:Landroid/content/Intent;
+    sget-object v1, Lcom/android/settings_ext/quicklaunch/BookmarkPicker;->ahD:Landroid/content/Intent;
 
     invoke-virtual {v0, v1, v3}, Landroid/content/pm/PackageManager;->queryIntentActivities(Landroid/content/Intent;I)Ljava/util/List;
 
@@ -413,9 +413,9 @@
 
     const v3, 0x7f040020
 
-    sget-object v4, Lcom/android/settings/quicklaunch/BookmarkPicker;->ahF:[Ljava/lang/String;
+    sget-object v4, Lcom/android/settings_ext/quicklaunch/BookmarkPicker;->ahF:[Ljava/lang/String;
 
-    sget-object v5, Lcom/android/settings/quicklaunch/BookmarkPicker;->ahG:[I
+    sget-object v5, Lcom/android/settings_ext/quicklaunch/BookmarkPicker;->ahG:[I
 
     move-object v1, p0
 
@@ -435,7 +435,7 @@
 
     .prologue
     .line 143
-    sget-object v0, Lcom/android/settings/quicklaunch/BookmarkPicker;->ahC:Landroid/content/Intent;
+    sget-object v0, Lcom/android/settings_ext/quicklaunch/BookmarkPicker;->ahC:Landroid/content/Intent;
 
     if-nez v0, :cond_0
 
@@ -452,7 +452,7 @@
 
     move-result-object v0
 
-    sput-object v0, Lcom/android/settings/quicklaunch/BookmarkPicker;->ahC:Landroid/content/Intent;
+    sput-object v0, Lcom/android/settings_ext/quicklaunch/BookmarkPicker;->ahC:Landroid/content/Intent;
 
     .line 145
     new-instance v0, Landroid/content/Intent;
@@ -461,7 +461,7 @@
 
     invoke-direct {v0, v1}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
 
-    sput-object v0, Lcom/android/settings/quicklaunch/BookmarkPicker;->ahD:Landroid/content/Intent;
+    sput-object v0, Lcom/android/settings_ext/quicklaunch/BookmarkPicker;->ahD:Landroid/content/Intent;
 
     .line 147
     :cond_0
@@ -473,13 +473,13 @@
 
     .prologue
     .line 154
-    new-instance v0, Lcom/android/settings/quicklaunch/a;
+    new-instance v0, Lcom/android/settings_ext/quicklaunch/a;
 
     const-string v1, "data updater"
 
-    invoke-direct {v0, p0, v1}, Lcom/android/settings/quicklaunch/a;-><init>(Lcom/android/settings/quicklaunch/BookmarkPicker;Ljava/lang/String;)V
+    invoke-direct {v0, p0, v1}, Lcom/android/settings_ext/quicklaunch/a;-><init>(Lcom/android/settings_ext/quicklaunch/BookmarkPicker;Ljava/lang/String;)V
 
-    invoke-virtual {v0}, Lcom/android/settings/quicklaunch/a;->start()V
+    invoke-virtual {v0}, Lcom/android/settings_ext/quicklaunch/a;->start()V
 
     .line 175
     return-void
@@ -529,7 +529,7 @@
 
     move-result-object v1
 
-    invoke-direct {p0, v0, v1}, Lcom/android/settings/quicklaunch/BookmarkPicker;->a(Landroid/content/Intent;Ljava/lang/String;)V
+    invoke-direct {p0, v0, v1}, Lcom/android/settings_ext/quicklaunch/BookmarkPicker;->a(Landroid/content/Intent;Ljava/lang/String;)V
 
     goto :goto_0
 
@@ -550,7 +550,7 @@
     invoke-super {p0, p1}, Landroid/app/ListActivity;->onCreate(Landroid/os/Bundle;)V
 
     .line 98
-    invoke-direct {p0}, Lcom/android/settings/quicklaunch/BookmarkPicker;->rk()V
+    invoke-direct {p0}, Lcom/android/settings_ext/quicklaunch/BookmarkPicker;->rk()V
 
     .line 99
     return-void
@@ -595,7 +595,7 @@
 
     .prologue
     .line 245
-    iget-object v0, p0, Lcom/android/settings/quicklaunch/BookmarkPicker;->ahE:Ljava/util/List;
+    iget-object v0, p0, Lcom/android/settings_ext/quicklaunch/BookmarkPicker;->ahE:Ljava/util/List;
 
     invoke-interface {v0}, Ljava/util/List;->size()I
 
@@ -609,7 +609,7 @@
 
     .line 247
     :cond_0
-    iget-object v0, p0, Lcom/android/settings/quicklaunch/BookmarkPicker;->ahE:Ljava/util/List;
+    iget-object v0, p0, Lcom/android/settings_ext/quicklaunch/BookmarkPicker;->ahE:Ljava/util/List;
 
     invoke-interface {v0, p3}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
@@ -618,7 +618,7 @@
     check-cast v0, Landroid/content/pm/ResolveInfo;
 
     .line 249
-    iget v1, p0, Lcom/android/settings/quicklaunch/BookmarkPicker;->nW:I
+    iget v1, p0, Lcom/android/settings_ext/quicklaunch/BookmarkPicker;->nW:I
 
     packed-switch v1, :pswitch_data_0
 
@@ -628,7 +628,7 @@
     :pswitch_0
     const-string v1, "android.intent.action.MAIN"
 
-    invoke-static {v0, v1}, Lcom/android/settings/quicklaunch/BookmarkPicker;->a(Landroid/content/pm/ResolveInfo;Ljava/lang/String;)Landroid/content/Intent;
+    invoke-static {v0, v1}, Lcom/android/settings_ext/quicklaunch/BookmarkPicker;->a(Landroid/content/pm/ResolveInfo;Ljava/lang/String;)Landroid/content/Intent;
 
     move-result-object v1
 
@@ -638,17 +638,17 @@
     invoke-virtual {v1, v2}, Landroid/content/Intent;->addCategory(Ljava/lang/String;)Landroid/content/Intent;
 
     .line 255
-    invoke-direct {p0, v0}, Lcom/android/settings/quicklaunch/BookmarkPicker;->f(Landroid/content/pm/ResolveInfo;)Ljava/lang/String;
+    invoke-direct {p0, v0}, Lcom/android/settings_ext/quicklaunch/BookmarkPicker;->f(Landroid/content/pm/ResolveInfo;)Ljava/lang/String;
 
     move-result-object v0
 
-    invoke-direct {p0, v1, v0}, Lcom/android/settings/quicklaunch/BookmarkPicker;->a(Landroid/content/Intent;Ljava/lang/String;)V
+    invoke-direct {p0, v1, v0}, Lcom/android/settings_ext/quicklaunch/BookmarkPicker;->a(Landroid/content/Intent;Ljava/lang/String;)V
 
     goto :goto_0
 
     .line 261
     :pswitch_1
-    invoke-direct {p0, v0}, Lcom/android/settings/quicklaunch/BookmarkPicker;->g(Landroid/content/pm/ResolveInfo;)V
+    invoke-direct {p0, v0}, Lcom/android/settings_ext/quicklaunch/BookmarkPicker;->g(Landroid/content/pm/ResolveInfo;)V
 
     goto :goto_0
 
@@ -681,11 +681,11 @@
 
     .line 127
     :pswitch_0
-    iput v0, p0, Lcom/android/settings/quicklaunch/BookmarkPicker;->nW:I
+    iput v0, p0, Lcom/android/settings_ext/quicklaunch/BookmarkPicker;->nW:I
 
     .line 138
     :goto_1
-    invoke-direct {p0}, Lcom/android/settings/quicklaunch/BookmarkPicker;->rk()V
+    invoke-direct {p0}, Lcom/android/settings_ext/quicklaunch/BookmarkPicker;->rk()V
 
     move v0, v1
 
@@ -694,7 +694,7 @@
 
     .line 131
     :pswitch_1
-    iput v1, p0, Lcom/android/settings/quicklaunch/BookmarkPicker;->nW:I
+    iput v1, p0, Lcom/android/settings_ext/quicklaunch/BookmarkPicker;->nW:I
 
     goto :goto_1
 
@@ -719,7 +719,7 @@
 
     move-result-object v3
 
-    iget v0, p0, Lcom/android/settings/quicklaunch/BookmarkPicker;->nW:I
+    iget v0, p0, Lcom/android/settings_ext/quicklaunch/BookmarkPicker;->nW:I
 
     if-eqz v0, :cond_1
 
@@ -733,7 +733,7 @@
 
     move-result-object v0
 
-    iget v3, p0, Lcom/android/settings/quicklaunch/BookmarkPicker;->nW:I
+    iget v3, p0, Lcom/android/settings_ext/quicklaunch/BookmarkPicker;->nW:I
 
     if-eq v3, v1, :cond_0
 
@@ -768,7 +768,7 @@
     .line 325
     check-cast p2, Landroid/content/pm/ResolveInfo;
 
-    invoke-virtual {p0}, Lcom/android/settings/quicklaunch/BookmarkPicker;->getPackageManager()Landroid/content/pm/PackageManager;
+    invoke-virtual {p0}, Lcom/android/settings_ext/quicklaunch/BookmarkPicker;->getPackageManager()Landroid/content/pm/PackageManager;
 
     move-result-object v0
 

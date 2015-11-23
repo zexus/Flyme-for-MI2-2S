@@ -1,4 +1,4 @@
-.class Lcom/android/settings/cA;
+.class Lcom/android/settings_ext/cA;
 .super Ljava/lang/Object;
 .source "FrequentlySet.java"
 
@@ -26,22 +26,22 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 185
-    iput-object p1, p0, Lcom/android/settings/cA;->key:Ljava/lang/String;
+    iput-object p1, p0, Lcom/android/settings_ext/cA;->key:Ljava/lang/String;
 
     .line 186
-    iput p2, p0, Lcom/android/settings/cA;->lI:I
+    iput p2, p0, Lcom/android/settings_ext/cA;->lI:I
 
     .line 187
-    iput p3, p0, Lcom/android/settings/cA;->lJ:I
+    iput p3, p0, Lcom/android/settings_ext/cA;->lJ:I
 
     .line 188
-    iput p4, p0, Lcom/android/settings/cA;->lK:I
+    iput p4, p0, Lcom/android/settings_ext/cA;->lK:I
 
     .line 189
-    iput p5, p0, Lcom/android/settings/cA;->lL:I
+    iput p5, p0, Lcom/android/settings_ext/cA;->lL:I
 
     .line 190
-    iput-boolean p6, p0, Lcom/android/settings/cA;->lM:Z
+    iput-boolean p6, p0, Lcom/android/settings_ext/cA;->lM:Z
 
     .line 191
     return-void

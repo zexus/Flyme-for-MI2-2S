@@ -1,4 +1,4 @@
-.class Lcom/android/settings/bT;
+.class Lcom/android/settings_ext/bT;
 .super Ljava/lang/Object;
 .source "Display.java"
 
@@ -7,16 +7,16 @@
 
 
 # instance fields
-.field final synthetic jT:Lcom/android/settings/Display;
+.field final synthetic jT:Lcom/android/settings_ext/Display;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/Display;)V
+.method constructor <init>(Lcom/android/settings_ext/Display;)V
     .locals 0
 
     .prologue
     .line 115
-    iput-object p1, p0, Lcom/android/settings/bT;->jT:Lcom/android/settings/Display;
+    iput-object p1, p0, Lcom/android/settings_ext/bT;->jT:Lcom/android/settings_ext/Display;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -33,9 +33,9 @@
     if-nez p3, :cond_0
 
     .line 119
-    iget-object v0, p0, Lcom/android/settings/bT;->jT:Lcom/android/settings/Display;
+    iget-object v0, p0, Lcom/android/settings_ext/bT;->jT:Lcom/android/settings_ext/Display;
 
-    invoke-static {v0}, Lcom/android/settings/Display;->a(Lcom/android/settings/Display;)Landroid/content/res/Configuration;
+    invoke-static {v0}, Lcom/android/settings_ext/Display;->a(Lcom/android/settings_ext/Display;)Landroid/content/res/Configuration;
 
     move-result-object v0
 
@@ -45,9 +45,9 @@
 
     .line 126
     :goto_0
-    iget-object v0, p0, Lcom/android/settings/bT;->jT:Lcom/android/settings/Display;
+    iget-object v0, p0, Lcom/android/settings_ext/bT;->jT:Lcom/android/settings_ext/Display;
 
-    invoke-static {v0}, Lcom/android/settings/Display;->b(Lcom/android/settings/Display;)V
+    invoke-static {v0}, Lcom/android/settings_ext/Display;->b(Lcom/android/settings_ext/Display;)V
 
     .line 127
     return-void
@@ -59,9 +59,9 @@
     if-ne p3, v0, :cond_1
 
     .line 121
-    iget-object v0, p0, Lcom/android/settings/bT;->jT:Lcom/android/settings/Display;
+    iget-object v0, p0, Lcom/android/settings_ext/bT;->jT:Lcom/android/settings_ext/Display;
 
-    invoke-static {v0}, Lcom/android/settings/Display;->a(Lcom/android/settings/Display;)Landroid/content/res/Configuration;
+    invoke-static {v0}, Lcom/android/settings_ext/Display;->a(Lcom/android/settings_ext/Display;)Landroid/content/res/Configuration;
 
     move-result-object v0
 
@@ -73,9 +73,9 @@
 
     .line 123
     :cond_1
-    iget-object v0, p0, Lcom/android/settings/bT;->jT:Lcom/android/settings/Display;
+    iget-object v0, p0, Lcom/android/settings_ext/bT;->jT:Lcom/android/settings_ext/Display;
 
-    invoke-static {v0}, Lcom/android/settings/Display;->a(Lcom/android/settings/Display;)Landroid/content/res/Configuration;
+    invoke-static {v0}, Lcom/android/settings_ext/Display;->a(Lcom/android/settings_ext/Display;)Landroid/content/res/Configuration;
 
     move-result-object v0
 

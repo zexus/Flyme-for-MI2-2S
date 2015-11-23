@@ -1,10 +1,10 @@
-.class public final Lcom/android/settings/bluetooth/MiuiBluetoothEnabler;
+.class public final Lcom/android/settings_ext/bluetooth/MiuiBluetoothEnabler;
 .super Ljava/lang/Object;
 .source "MiuiBluetoothEnabler.java"
 
 
 # instance fields
-.field private final Mh:Lcom/android/settings/bluetooth/LocalBluetoothAdapter;
+.field private final Mh:Lcom/android/settings_ext/bluetooth/LocalBluetoothAdapter;
 
 .field private Pc:Landroid/preference/CheckBoxPreference;
 
@@ -24,20 +24,20 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 43
-    new-instance v0, Lcom/android/settings/bluetooth/MiuiBluetoothEnabler$1;
+    new-instance v0, Lcom/android/settings_ext/bluetooth/MiuiBluetoothEnabler$1;
 
-    invoke-direct {v0, p0}, Lcom/android/settings/bluetooth/MiuiBluetoothEnabler$1;-><init>(Lcom/android/settings/bluetooth/MiuiBluetoothEnabler;)V
+    invoke-direct {v0, p0}, Lcom/android/settings_ext/bluetooth/MiuiBluetoothEnabler$1;-><init>(Lcom/android/settings_ext/bluetooth/MiuiBluetoothEnabler;)V
 
-    iput-object v0, p0, Lcom/android/settings/bluetooth/MiuiBluetoothEnabler;->mReceiver:Landroid/content/BroadcastReceiver;
+    iput-object v0, p0, Lcom/android/settings_ext/bluetooth/MiuiBluetoothEnabler;->mReceiver:Landroid/content/BroadcastReceiver;
 
     .line 52
-    iput-object p1, p0, Lcom/android/settings/bluetooth/MiuiBluetoothEnabler;->mContext:Landroid/content/Context;
+    iput-object p1, p0, Lcom/android/settings_ext/bluetooth/MiuiBluetoothEnabler;->mContext:Landroid/content/Context;
 
     .line 53
-    invoke-virtual {p0, p2}, Lcom/android/settings/bluetooth/MiuiBluetoothEnabler;->a(Landroid/preference/CheckBoxPreference;)V
+    invoke-virtual {p0, p2}, Lcom/android/settings_ext/bluetooth/MiuiBluetoothEnabler;->a(Landroid/preference/CheckBoxPreference;)V
 
     .line 55
-    invoke-static {p1}, Lcom/android/settings/bluetooth/LocalBluetoothManager;->ai(Landroid/content/Context;)Lcom/android/settings/bluetooth/LocalBluetoothManager;
+    invoke-static {p1}, Lcom/android/settings_ext/bluetooth/LocalBluetoothManager;->ai(Landroid/content/Context;)Lcom/android/settings_ext/bluetooth/LocalBluetoothManager;
 
     move-result-object v0
 
@@ -47,10 +47,10 @@
     .line 58
     const/4 v0, 0x0
 
-    iput-object v0, p0, Lcom/android/settings/bluetooth/MiuiBluetoothEnabler;->Mh:Lcom/android/settings/bluetooth/LocalBluetoothAdapter;
+    iput-object v0, p0, Lcom/android/settings_ext/bluetooth/MiuiBluetoothEnabler;->Mh:Lcom/android/settings_ext/bluetooth/LocalBluetoothAdapter;
 
     .line 59
-    iget-object v0, p0, Lcom/android/settings/bluetooth/MiuiBluetoothEnabler;->Pc:Landroid/preference/CheckBoxPreference;
+    iget-object v0, p0, Lcom/android/settings_ext/bluetooth/MiuiBluetoothEnabler;->Pc:Landroid/preference/CheckBoxPreference;
 
     const/4 v1, 0x0
 
@@ -64,18 +64,18 @@
 
     invoke-direct {v0, v1}, Landroid/content/IntentFilter;-><init>(Ljava/lang/String;)V
 
-    iput-object v0, p0, Lcom/android/settings/bluetooth/MiuiBluetoothEnabler;->mIntentFilter:Landroid/content/IntentFilter;
+    iput-object v0, p0, Lcom/android/settings_ext/bluetooth/MiuiBluetoothEnabler;->mIntentFilter:Landroid/content/IntentFilter;
 
     .line 64
     return-void
 
     .line 61
     :cond_0
-    invoke-virtual {v0}, Lcom/android/settings/bluetooth/LocalBluetoothManager;->nb()Lcom/android/settings/bluetooth/LocalBluetoothAdapter;
+    invoke-virtual {v0}, Lcom/android/settings_ext/bluetooth/LocalBluetoothManager;->nb()Lcom/android/settings_ext/bluetooth/LocalBluetoothAdapter;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/bluetooth/MiuiBluetoothEnabler;->Mh:Lcom/android/settings/bluetooth/LocalBluetoothAdapter;
+    iput-object v0, p0, Lcom/android/settings_ext/bluetooth/MiuiBluetoothEnabler;->Mh:Lcom/android/settings_ext/bluetooth/LocalBluetoothAdapter;
 
     goto :goto_0
 .end method
@@ -93,16 +93,16 @@
     const/4 v2, 0x0
 
     .line 87
-    iput-object p1, p0, Lcom/android/settings/bluetooth/MiuiBluetoothEnabler;->Pc:Landroid/preference/CheckBoxPreference;
+    iput-object p1, p0, Lcom/android/settings_ext/bluetooth/MiuiBluetoothEnabler;->Pc:Landroid/preference/CheckBoxPreference;
 
     .line 89
-    iget-object v0, p0, Lcom/android/settings/bluetooth/MiuiBluetoothEnabler;->Mh:Lcom/android/settings/bluetooth/LocalBluetoothAdapter;
+    iget-object v0, p0, Lcom/android/settings_ext/bluetooth/MiuiBluetoothEnabler;->Mh:Lcom/android/settings_ext/bluetooth/LocalBluetoothAdapter;
 
     if-eqz v0, :cond_4
 
-    iget-object v0, p0, Lcom/android/settings/bluetooth/MiuiBluetoothEnabler;->Mh:Lcom/android/settings/bluetooth/LocalBluetoothAdapter;
+    iget-object v0, p0, Lcom/android/settings_ext/bluetooth/MiuiBluetoothEnabler;->Mh:Lcom/android/settings_ext/bluetooth/LocalBluetoothAdapter;
 
-    invoke-virtual {v0}, Lcom/android/settings/bluetooth/LocalBluetoothAdapter;->mY()I
+    invoke-virtual {v0}, Lcom/android/settings_ext/bluetooth/LocalBluetoothAdapter;->mY()I
 
     move-result v0
 
@@ -122,12 +122,12 @@
 
     .line 92
     :goto_2
-    iget-object v4, p0, Lcom/android/settings/bluetooth/MiuiBluetoothEnabler;->Pc:Landroid/preference/CheckBoxPreference;
+    iget-object v4, p0, Lcom/android/settings_ext/bluetooth/MiuiBluetoothEnabler;->Pc:Landroid/preference/CheckBoxPreference;
 
     invoke-virtual {v4, v3}, Landroid/preference/CheckBoxPreference;->setChecked(Z)V
 
     .line 93
-    iget-object v4, p0, Lcom/android/settings/bluetooth/MiuiBluetoothEnabler;->Pc:Landroid/preference/CheckBoxPreference;
+    iget-object v4, p0, Lcom/android/settings_ext/bluetooth/MiuiBluetoothEnabler;->Pc:Landroid/preference/CheckBoxPreference;
 
     if-nez v3, :cond_0
 
@@ -172,12 +172,12 @@
     packed-switch p1, :pswitch_data_0
 
     .line 128
-    iget-object v0, p0, Lcom/android/settings/bluetooth/MiuiBluetoothEnabler;->Pc:Landroid/preference/CheckBoxPreference;
+    iget-object v0, p0, Lcom/android/settings_ext/bluetooth/MiuiBluetoothEnabler;->Pc:Landroid/preference/CheckBoxPreference;
 
     invoke-virtual {v0, v1}, Landroid/preference/CheckBoxPreference;->setChecked(Z)V
 
     .line 129
-    iget-object v0, p0, Lcom/android/settings/bluetooth/MiuiBluetoothEnabler;->Pc:Landroid/preference/CheckBoxPreference;
+    iget-object v0, p0, Lcom/android/settings_ext/bluetooth/MiuiBluetoothEnabler;->Pc:Landroid/preference/CheckBoxPreference;
 
     invoke-virtual {v0, v2}, Landroid/preference/CheckBoxPreference;->setEnabled(Z)V
 
@@ -187,7 +187,7 @@
 
     .line 114
     :pswitch_0
-    iget-object v0, p0, Lcom/android/settings/bluetooth/MiuiBluetoothEnabler;->Pc:Landroid/preference/CheckBoxPreference;
+    iget-object v0, p0, Lcom/android/settings_ext/bluetooth/MiuiBluetoothEnabler;->Pc:Landroid/preference/CheckBoxPreference;
 
     invoke-virtual {v0, v1}, Landroid/preference/CheckBoxPreference;->setEnabled(Z)V
 
@@ -195,12 +195,12 @@
 
     .line 117
     :pswitch_1
-    iget-object v0, p0, Lcom/android/settings/bluetooth/MiuiBluetoothEnabler;->Pc:Landroid/preference/CheckBoxPreference;
+    iget-object v0, p0, Lcom/android/settings_ext/bluetooth/MiuiBluetoothEnabler;->Pc:Landroid/preference/CheckBoxPreference;
 
     invoke-virtual {v0, v2}, Landroid/preference/CheckBoxPreference;->setChecked(Z)V
 
     .line 118
-    iget-object v0, p0, Lcom/android/settings/bluetooth/MiuiBluetoothEnabler;->Pc:Landroid/preference/CheckBoxPreference;
+    iget-object v0, p0, Lcom/android/settings_ext/bluetooth/MiuiBluetoothEnabler;->Pc:Landroid/preference/CheckBoxPreference;
 
     invoke-virtual {v0, v2}, Landroid/preference/CheckBoxPreference;->setEnabled(Z)V
 
@@ -208,7 +208,7 @@
 
     .line 121
     :pswitch_2
-    iget-object v0, p0, Lcom/android/settings/bluetooth/MiuiBluetoothEnabler;->Pc:Landroid/preference/CheckBoxPreference;
+    iget-object v0, p0, Lcom/android/settings_ext/bluetooth/MiuiBluetoothEnabler;->Pc:Landroid/preference/CheckBoxPreference;
 
     invoke-virtual {v0, v1}, Landroid/preference/CheckBoxPreference;->setEnabled(Z)V
 
@@ -216,12 +216,12 @@
 
     .line 124
     :pswitch_3
-    iget-object v0, p0, Lcom/android/settings/bluetooth/MiuiBluetoothEnabler;->Pc:Landroid/preference/CheckBoxPreference;
+    iget-object v0, p0, Lcom/android/settings_ext/bluetooth/MiuiBluetoothEnabler;->Pc:Landroid/preference/CheckBoxPreference;
 
     invoke-virtual {v0, v1}, Landroid/preference/CheckBoxPreference;->setChecked(Z)V
 
     .line 125
-    iget-object v0, p0, Lcom/android/settings/bluetooth/MiuiBluetoothEnabler;->Pc:Landroid/preference/CheckBoxPreference;
+    iget-object v0, p0, Lcom/android/settings_ext/bluetooth/MiuiBluetoothEnabler;->Pc:Landroid/preference/CheckBoxPreference;
 
     invoke-virtual {v0, v2}, Landroid/preference/CheckBoxPreference;->setEnabled(Z)V
 
@@ -246,18 +246,18 @@
     .line 98
     if-eqz p1, :cond_0
 
-    iget-object v0, p0, Lcom/android/settings/bluetooth/MiuiBluetoothEnabler;->mContext:Landroid/content/Context;
+    iget-object v0, p0, Lcom/android/settings_ext/bluetooth/MiuiBluetoothEnabler;->mContext:Landroid/content/Context;
 
     const-string v1, "bluetooth"
 
-    invoke-static {v0, v1}, Lcom/android/settings/WirelessSettings;->e(Landroid/content/Context;Ljava/lang/String;)Z
+    invoke-static {v0, v1}, Lcom/android/settings_ext/WirelessSettings;->e(Landroid/content/Context;Ljava/lang/String;)Z
 
     move-result v0
 
     if-nez v0, :cond_0
 
     .line 100
-    iget-object v0, p0, Lcom/android/settings/bluetooth/MiuiBluetoothEnabler;->mContext:Landroid/content/Context;
+    iget-object v0, p0, Lcom/android/settings_ext/bluetooth/MiuiBluetoothEnabler;->mContext:Landroid/content/Context;
 
     const v1, 0x7f09029a
 
@@ -268,24 +268,24 @@
     invoke-virtual {v0}, Landroid/widget/Toast;->show()V
 
     .line 102
-    iget-object v0, p0, Lcom/android/settings/bluetooth/MiuiBluetoothEnabler;->Pc:Landroid/preference/CheckBoxPreference;
+    iget-object v0, p0, Lcom/android/settings_ext/bluetooth/MiuiBluetoothEnabler;->Pc:Landroid/preference/CheckBoxPreference;
 
     invoke-virtual {v0, v2}, Landroid/preference/CheckBoxPreference;->setChecked(Z)V
 
     .line 105
     :cond_0
-    iget-object v0, p0, Lcom/android/settings/bluetooth/MiuiBluetoothEnabler;->Mh:Lcom/android/settings/bluetooth/LocalBluetoothAdapter;
+    iget-object v0, p0, Lcom/android/settings_ext/bluetooth/MiuiBluetoothEnabler;->Mh:Lcom/android/settings_ext/bluetooth/LocalBluetoothAdapter;
 
     if-eqz v0, :cond_1
 
     .line 106
-    iget-object v0, p0, Lcom/android/settings/bluetooth/MiuiBluetoothEnabler;->Mh:Lcom/android/settings/bluetooth/LocalBluetoothAdapter;
+    iget-object v0, p0, Lcom/android/settings_ext/bluetooth/MiuiBluetoothEnabler;->Mh:Lcom/android/settings_ext/bluetooth/LocalBluetoothAdapter;
 
-    invoke-virtual {v0, p1}, Lcom/android/settings/bluetooth/LocalBluetoothAdapter;->at(Z)V
+    invoke-virtual {v0, p1}, Lcom/android/settings_ext/bluetooth/LocalBluetoothAdapter;->at(Z)V
 
     .line 108
     :cond_1
-    iget-object v0, p0, Lcom/android/settings/bluetooth/MiuiBluetoothEnabler;->Pc:Landroid/preference/CheckBoxPreference;
+    iget-object v0, p0, Lcom/android/settings_ext/bluetooth/MiuiBluetoothEnabler;->Pc:Landroid/preference/CheckBoxPreference;
 
     invoke-virtual {v0, v2}, Landroid/preference/CheckBoxPreference;->setEnabled(Z)V
 
@@ -298,7 +298,7 @@
 
     .prologue
     .line 79
-    iget-object v0, p0, Lcom/android/settings/bluetooth/MiuiBluetoothEnabler;->Mh:Lcom/android/settings/bluetooth/LocalBluetoothAdapter;
+    iget-object v0, p0, Lcom/android/settings_ext/bluetooth/MiuiBluetoothEnabler;->Mh:Lcom/android/settings_ext/bluetooth/LocalBluetoothAdapter;
 
     if-nez v0, :cond_0
 
@@ -308,9 +308,9 @@
 
     .line 83
     :cond_0
-    iget-object v0, p0, Lcom/android/settings/bluetooth/MiuiBluetoothEnabler;->mContext:Landroid/content/Context;
+    iget-object v0, p0, Lcom/android/settings_ext/bluetooth/MiuiBluetoothEnabler;->mContext:Landroid/content/Context;
 
-    iget-object v1, p0, Lcom/android/settings/bluetooth/MiuiBluetoothEnabler;->mReceiver:Landroid/content/BroadcastReceiver;
+    iget-object v1, p0, Lcom/android/settings_ext/bluetooth/MiuiBluetoothEnabler;->mReceiver:Landroid/content/BroadcastReceiver;
 
     invoke-virtual {v0, v1}, Landroid/content/Context;->unregisterReceiver(Landroid/content/BroadcastReceiver;)V
 
@@ -322,12 +322,12 @@
 
     .prologue
     .line 67
-    iget-object v0, p0, Lcom/android/settings/bluetooth/MiuiBluetoothEnabler;->Mh:Lcom/android/settings/bluetooth/LocalBluetoothAdapter;
+    iget-object v0, p0, Lcom/android/settings_ext/bluetooth/MiuiBluetoothEnabler;->Mh:Lcom/android/settings_ext/bluetooth/LocalBluetoothAdapter;
 
     if-nez v0, :cond_0
 
     .line 68
-    iget-object v0, p0, Lcom/android/settings/bluetooth/MiuiBluetoothEnabler;->Pc:Landroid/preference/CheckBoxPreference;
+    iget-object v0, p0, Lcom/android/settings_ext/bluetooth/MiuiBluetoothEnabler;->Pc:Landroid/preference/CheckBoxPreference;
 
     const/4 v1, 0x0
 
@@ -339,20 +339,20 @@
 
     .line 73
     :cond_0
-    iget-object v0, p0, Lcom/android/settings/bluetooth/MiuiBluetoothEnabler;->Mh:Lcom/android/settings/bluetooth/LocalBluetoothAdapter;
+    iget-object v0, p0, Lcom/android/settings_ext/bluetooth/MiuiBluetoothEnabler;->Mh:Lcom/android/settings_ext/bluetooth/LocalBluetoothAdapter;
 
-    invoke-virtual {v0}, Lcom/android/settings/bluetooth/LocalBluetoothAdapter;->mY()I
+    invoke-virtual {v0}, Lcom/android/settings_ext/bluetooth/LocalBluetoothAdapter;->mY()I
 
     move-result v0
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/bluetooth/MiuiBluetoothEnabler;->aR(I)V
+    invoke-virtual {p0, v0}, Lcom/android/settings_ext/bluetooth/MiuiBluetoothEnabler;->aR(I)V
 
     .line 75
-    iget-object v0, p0, Lcom/android/settings/bluetooth/MiuiBluetoothEnabler;->mContext:Landroid/content/Context;
+    iget-object v0, p0, Lcom/android/settings_ext/bluetooth/MiuiBluetoothEnabler;->mContext:Landroid/content/Context;
 
-    iget-object v1, p0, Lcom/android/settings/bluetooth/MiuiBluetoothEnabler;->mReceiver:Landroid/content/BroadcastReceiver;
+    iget-object v1, p0, Lcom/android/settings_ext/bluetooth/MiuiBluetoothEnabler;->mReceiver:Landroid/content/BroadcastReceiver;
 
-    iget-object v2, p0, Lcom/android/settings/bluetooth/MiuiBluetoothEnabler;->mIntentFilter:Landroid/content/IntentFilter;
+    iget-object v2, p0, Lcom/android/settings_ext/bluetooth/MiuiBluetoothEnabler;->mIntentFilter:Landroid/content/IntentFilter;
 
     invoke-virtual {v0, v1, v2}, Landroid/content/Context;->registerReceiver(Landroid/content/BroadcastReceiver;Landroid/content/IntentFilter;)Landroid/content/Intent;
 

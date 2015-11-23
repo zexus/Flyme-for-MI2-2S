@@ -1,4 +1,4 @@
-.class Lcom/android/settings/location/LocationMode$3;
+.class Lcom/android/settings_ext/location/LocationMode$3;
 .super Ljava/lang/Object;
 .source "LocationMode.java"
 
@@ -7,16 +7,16 @@
 
 
 # instance fields
-.field final synthetic acC:Lcom/android/settings/location/LocationMode;
+.field final synthetic acC:Lcom/android/settings_ext/location/LocationMode;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/location/LocationMode;)V
+.method constructor <init>(Lcom/android/settings_ext/location/LocationMode;)V
     .locals 0
 
     .prologue
     .line 220
-    iput-object p1, p0, Lcom/android/settings/location/LocationMode$3;->acC:Lcom/android/settings/location/LocationMode;
+    iput-object p1, p0, Lcom/android/settings_ext/location/LocationMode$3;->acC:Lcom/android/settings_ext/location/LocationMode;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -41,18 +41,18 @@
 
     .line 225
     :try_start_0
-    iget-object v0, p0, Lcom/android/settings/location/LocationMode$3;->acC:Lcom/android/settings/location/LocationMode;
+    iget-object v0, p0, Lcom/android/settings_ext/location/LocationMode$3;->acC:Lcom/android/settings_ext/location/LocationMode;
 
-    invoke-static {v0}, Lcom/android/settings/location/LocationMode;->c(Lcom/android/settings/location/LocationMode;)Lcom/android/a/a/a;
+    invoke-static {v0}, Lcom/android/settings_ext/location/LocationMode;->c(Lcom/android/settings_ext/location/LocationMode;)Lcom/android/a/a/a;
 
     move-result-object v0
 
     if-eqz v0, :cond_0
 
     .line 226
-    iget-object v0, p0, Lcom/android/settings/location/LocationMode$3;->acC:Lcom/android/settings/location/LocationMode;
+    iget-object v0, p0, Lcom/android/settings_ext/location/LocationMode$3;->acC:Lcom/android/settings_ext/location/LocationMode;
 
-    invoke-static {v0}, Lcom/android/settings/location/LocationMode;->c(Lcom/android/settings/location/LocationMode;)Lcom/android/a/a/a;
+    invoke-static {v0}, Lcom/android/settings_ext/location/LocationMode;->c(Lcom/android/settings_ext/location/LocationMode;)Lcom/android/a/a/a;
 
     move-result-object v0
 
@@ -79,18 +79,18 @@
     .line 233
     :cond_1
     :try_start_1
-    iget-object v0, p0, Lcom/android/settings/location/LocationMode$3;->acC:Lcom/android/settings/location/LocationMode;
+    iget-object v0, p0, Lcom/android/settings_ext/location/LocationMode$3;->acC:Lcom/android/settings_ext/location/LocationMode;
 
-    invoke-static {v0}, Lcom/android/settings/location/LocationMode;->c(Lcom/android/settings/location/LocationMode;)Lcom/android/a/a/a;
+    invoke-static {v0}, Lcom/android/settings_ext/location/LocationMode;->c(Lcom/android/settings_ext/location/LocationMode;)Lcom/android/a/a/a;
 
     move-result-object v0
 
     if-eqz v0, :cond_0
 
     .line 234
-    iget-object v0, p0, Lcom/android/settings/location/LocationMode$3;->acC:Lcom/android/settings/location/LocationMode;
+    iget-object v0, p0, Lcom/android/settings_ext/location/LocationMode$3;->acC:Lcom/android/settings_ext/location/LocationMode;
 
-    invoke-static {v0}, Lcom/android/settings/location/LocationMode;->c(Lcom/android/settings/location/LocationMode;)Lcom/android/a/a/a;
+    invoke-static {v0}, Lcom/android/settings_ext/location/LocationMode;->c(Lcom/android/settings_ext/location/LocationMode;)Lcom/android/a/a/a;
 
     move-result-object v0
 

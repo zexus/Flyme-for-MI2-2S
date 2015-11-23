@@ -1,10 +1,10 @@
-.class Lcom/android/settings/ShortcutHelper;
+.class Lcom/android/settings_ext/ShortcutHelper;
 .super Ljava/lang/Object;
 .source "SettingsApplication.java"
 
 
 # static fields
-.field private static xA:Lcom/android/settings/ShortcutHelper;
+.field private static xA:Lcom/android/settings_ext/ShortcutHelper;
 
 
 # instance fields
@@ -20,40 +20,40 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 157
-    iput-object p1, p0, Lcom/android/settings/ShortcutHelper;->mContext:Landroid/content/Context;
+    iput-object p1, p0, Lcom/android/settings_ext/ShortcutHelper;->mContext:Landroid/content/Context;
 
     .line 158
     return-void
 .end method
 
-.method public static J(Landroid/content/Context;)Lcom/android/settings/ShortcutHelper;
+.method public static J(Landroid/content/Context;)Lcom/android/settings_ext/ShortcutHelper;
     .locals 2
 
     .prologue
     .line 161
-    sget-object v0, Lcom/android/settings/ShortcutHelper;->xA:Lcom/android/settings/ShortcutHelper;
+    sget-object v0, Lcom/android/settings_ext/ShortcutHelper;->xA:Lcom/android/settings_ext/ShortcutHelper;
 
     if-nez v0, :cond_0
 
     .line 162
-    new-instance v0, Lcom/android/settings/ShortcutHelper;
+    new-instance v0, Lcom/android/settings_ext/ShortcutHelper;
 
     invoke-virtual {p0}, Landroid/content/Context;->getApplicationContext()Landroid/content/Context;
 
     move-result-object v1
 
-    invoke-direct {v0, v1}, Lcom/android/settings/ShortcutHelper;-><init>(Landroid/content/Context;)V
+    invoke-direct {v0, v1}, Lcom/android/settings_ext/ShortcutHelper;-><init>(Landroid/content/Context;)V
 
-    sput-object v0, Lcom/android/settings/ShortcutHelper;->xA:Lcom/android/settings/ShortcutHelper;
+    sput-object v0, Lcom/android/settings_ext/ShortcutHelper;->xA:Lcom/android/settings_ext/ShortcutHelper;
 
     .line 164
     :cond_0
-    sget-object v0, Lcom/android/settings/ShortcutHelper;->xA:Lcom/android/settings/ShortcutHelper;
+    sget-object v0, Lcom/android/settings_ext/ShortcutHelper;->xA:Lcom/android/settings_ext/ShortcutHelper;
 
     return-object v0
 .end method
 
-.method private b(Lcom/android/settings/ShortcutHelper$Shortcut;)Landroid/content/Intent;
+.method private b(Lcom/android/settings_ext/ShortcutHelper$Shortcut;)Landroid/content/Intent;
     .locals 4
 
     .prologue
@@ -68,9 +68,9 @@
     invoke-virtual {v0, v1}, Landroid/content/Intent;->setFlags(I)Landroid/content/Intent;
 
     .line 267
-    sget-object v1, Lcom/android/settings/gx;->xB:[I
+    sget-object v1, Lcom/android/settings_ext/gx;->xB:[I
 
-    invoke-virtual {p1}, Lcom/android/settings/ShortcutHelper$Shortcut;->ordinal()I
+    invoke-virtual {p1}, Lcom/android/settings_ext/ShortcutHelper$Shortcut;->ordinal()I
 
     move-result v2
 
@@ -242,7 +242,7 @@
 
 
 # virtual methods
-.method public a(Lcom/android/settings/ShortcutHelper$Shortcut;Ljava/lang/String;)Landroid/content/Intent;
+.method public a(Lcom/android/settings_ext/ShortcutHelper$Shortcut;Ljava/lang/String;)Landroid/content/Intent;
     .locals 6
 
     .prologue
@@ -253,9 +253,9 @@
     const/4 v0, -0x1
 
     .line 213
-    sget-object v1, Lcom/android/settings/gx;->xB:[I
+    sget-object v1, Lcom/android/settings_ext/gx;->xB:[I
 
-    invoke-virtual {p1}, Lcom/android/settings/ShortcutHelper$Shortcut;->ordinal()I
+    invoke-virtual {p1}, Lcom/android/settings_ext/ShortcutHelper$Shortcut;->ordinal()I
 
     move-result v3
 
@@ -267,7 +267,7 @@
 
     .line 248
     :goto_0
-    invoke-direct {p0, p1}, Lcom/android/settings/ShortcutHelper;->b(Lcom/android/settings/ShortcutHelper$Shortcut;)Landroid/content/Intent;
+    invoke-direct {p0, p1}, Lcom/android/settings_ext/ShortcutHelper;->b(Lcom/android/settings_ext/ShortcutHelper$Shortcut;)Landroid/content/Intent;
 
     move-result-object v3
 
@@ -357,7 +357,7 @@
     invoke-virtual {v2, v4, v1}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
 
     .line 256
-    iget-object v1, p0, Lcom/android/settings/ShortcutHelper;->mContext:Landroid/content/Context;
+    iget-object v1, p0, Lcom/android/settings_ext/ShortcutHelper;->mContext:Landroid/content/Context;
 
     invoke-static {v1, v0}, Landroid/content/Intent$ShortcutIconResource;->fromContext(Landroid/content/Context;I)Landroid/content/Intent$ShortcutIconResource;
 
@@ -387,19 +387,19 @@
     .end packed-switch
 .end method
 
-.method public a(Lcom/android/settings/ShortcutHelper$Shortcut;)V
+.method public a(Lcom/android/settings_ext/ShortcutHelper$Shortcut;)V
     .locals 2
 
     .prologue
     .line 206
     const-string v0, "com.miui.home.launcher.action.UNINSTALL_SHORTCUT"
 
-    invoke-virtual {p0, p1, v0}, Lcom/android/settings/ShortcutHelper;->a(Lcom/android/settings/ShortcutHelper$Shortcut;Ljava/lang/String;)Landroid/content/Intent;
+    invoke-virtual {p0, p1, v0}, Lcom/android/settings_ext/ShortcutHelper;->a(Lcom/android/settings_ext/ShortcutHelper$Shortcut;Ljava/lang/String;)Landroid/content/Intent;
 
     move-result-object v0
 
     .line 207
-    iget-object v1, p0, Lcom/android/settings/ShortcutHelper;->mContext:Landroid/content/Context;
+    iget-object v1, p0, Lcom/android/settings_ext/ShortcutHelper;->mContext:Landroid/content/Context;
 
     invoke-virtual {v1, v0}, Landroid/content/Context;->sendBroadcast(Landroid/content/Intent;)V
 

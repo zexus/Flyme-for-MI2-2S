@@ -1,4 +1,4 @@
-.class interface abstract Lcom/android/settings/bluetooth/BluetoothDeviceFilter$Filter;
+.class interface abstract Lcom/android/settings_ext/bluetooth/BluetoothDeviceFilter$Filter;
 .super Ljava/lang/Object;
 .source "BluetoothDeviceFilter.java"
 

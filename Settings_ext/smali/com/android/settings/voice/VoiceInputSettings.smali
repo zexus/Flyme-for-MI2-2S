@@ -1,15 +1,15 @@
-.class public Lcom/android/settings/voice/VoiceInputSettings;
-.super Lcom/android/settings/SettingsPreferenceFragment;
+.class public Lcom/android/settings_ext/voice/VoiceInputSettings;
+.super Lcom/android/settings_ext/SettingsPreferenceFragment;
 .source "VoiceInputSettings.java"
 
 # interfaces
 .implements Landroid/preference/Preference$OnPreferenceClickListener;
-.implements Lcom/android/settings/search/k;
-.implements Lcom/android/settings/voice/l;
+.implements Lcom/android/settings_ext/search/k;
+.implements Lcom/android/settings_ext/voice/l;
 
 
 # static fields
-.field public static final gG:Lcom/android/settings/search/l;
+.field public static final gG:Lcom/android/settings_ext/search/l;
 
 
 # instance fields
@@ -25,7 +25,7 @@
 
 .field private anx:Ljava/lang/String;
 
-.field private any:Lcom/android/settings/voice/a;
+.field private any:Lcom/android/settings_ext/voice/a;
 
 
 # direct methods
@@ -34,11 +34,11 @@
 
     .prologue
     .line 180
-    new-instance v0, Lcom/android/settings/voice/m;
+    new-instance v0, Lcom/android/settings_ext/voice/m;
 
-    invoke-direct {v0}, Lcom/android/settings/voice/m;-><init>()V
+    invoke-direct {v0}, Lcom/android/settings_ext/voice/m;-><init>()V
 
-    sput-object v0, Lcom/android/settings/voice/VoiceInputSettings;->gG:Lcom/android/settings/search/l;
+    sput-object v0, Lcom/android/settings_ext/voice/VoiceInputSettings;->gG:Lcom/android/settings_ext/search/l;
 
     return-void
 .end method
@@ -48,7 +48,7 @@
 
     .prologue
     .line 44
-    invoke-direct {p0}, Lcom/android/settings/SettingsPreferenceFragment;-><init>()V
+    invoke-direct {p0}, Lcom/android/settings_ext/SettingsPreferenceFragment;-><init>()V
 
     return-void
 .end method
@@ -62,52 +62,52 @@
     const/4 v7, 0x0
 
     .line 97
-    new-instance v0, Lcom/android/settings/voice/a;
+    new-instance v0, Lcom/android/settings_ext/voice/a;
 
-    invoke-virtual {p0}, Lcom/android/settings/voice/VoiceInputSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/voice/VoiceInputSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v1
 
-    invoke-direct {v0, v1}, Lcom/android/settings/voice/a;-><init>(Landroid/content/Context;)V
+    invoke-direct {v0, v1}, Lcom/android/settings_ext/voice/a;-><init>(Landroid/content/Context;)V
 
-    iput-object v0, p0, Lcom/android/settings/voice/VoiceInputSettings;->any:Lcom/android/settings/voice/a;
+    iput-object v0, p0, Lcom/android/settings_ext/voice/VoiceInputSettings;->any:Lcom/android/settings_ext/voice/a;
 
     .line 98
-    iget-object v0, p0, Lcom/android/settings/voice/VoiceInputSettings;->any:Lcom/android/settings/voice/a;
+    iget-object v0, p0, Lcom/android/settings_ext/voice/VoiceInputSettings;->any:Lcom/android/settings_ext/voice/a;
 
-    invoke-virtual {v0}, Lcom/android/settings/voice/a;->sM()V
+    invoke-virtual {v0}, Lcom/android/settings_ext/voice/a;->sM()V
 
     .line 100
-    iget-object v0, p0, Lcom/android/settings/voice/VoiceInputSettings;->ant:Landroid/preference/PreferenceCategory;
+    iget-object v0, p0, Lcom/android/settings_ext/voice/VoiceInputSettings;->ant:Landroid/preference/PreferenceCategory;
 
     invoke-virtual {v0}, Landroid/preference/PreferenceCategory;->removeAll()V
 
     .line 102
-    iget-object v0, p0, Lcom/android/settings/voice/VoiceInputSettings;->any:Lcom/android/settings/voice/a;
+    iget-object v0, p0, Lcom/android/settings_ext/voice/VoiceInputSettings;->any:Lcom/android/settings_ext/voice/a;
 
-    iget-object v0, v0, Lcom/android/settings/voice/a;->anh:Landroid/content/ComponentName;
+    iget-object v0, v0, Lcom/android/settings_ext/voice/a;->anh:Landroid/content/ComponentName;
 
     if-eqz v0, :cond_0
 
     .line 103
-    iget-object v0, p0, Lcom/android/settings/voice/VoiceInputSettings;->any:Lcom/android/settings/voice/a;
+    iget-object v0, p0, Lcom/android/settings_ext/voice/VoiceInputSettings;->any:Lcom/android/settings_ext/voice/a;
 
-    iget-object v0, v0, Lcom/android/settings/voice/a;->anh:Landroid/content/ComponentName;
+    iget-object v0, v0, Lcom/android/settings_ext/voice/a;->anh:Landroid/content/ComponentName;
 
     invoke-virtual {v0}, Landroid/content/ComponentName;->flattenToShortString()Ljava/lang/String;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/voice/VoiceInputSettings;->anx:Ljava/lang/String;
+    iput-object v0, p0, Lcom/android/settings_ext/voice/VoiceInputSettings;->anx:Ljava/lang/String;
 
     :goto_0
     move v6, v7
 
     .line 110
     :goto_1
-    iget-object v0, p0, Lcom/android/settings/voice/VoiceInputSettings;->any:Lcom/android/settings/voice/a;
+    iget-object v0, p0, Lcom/android/settings_ext/voice/VoiceInputSettings;->any:Lcom/android/settings_ext/voice/a;
 
-    iget-object v0, v0, Lcom/android/settings/voice/a;->anf:Ljava/util/ArrayList;
+    iget-object v0, v0, Lcom/android/settings_ext/voice/a;->anf:Ljava/util/ArrayList;
 
     invoke-virtual {v0}, Ljava/util/ArrayList;->size()I
 
@@ -116,33 +116,33 @@
     if-ge v6, v0, :cond_2
 
     .line 111
-    iget-object v0, p0, Lcom/android/settings/voice/VoiceInputSettings;->any:Lcom/android/settings/voice/a;
+    iget-object v0, p0, Lcom/android/settings_ext/voice/VoiceInputSettings;->any:Lcom/android/settings_ext/voice/a;
 
-    iget-object v0, v0, Lcom/android/settings/voice/a;->anf:Ljava/util/ArrayList;
+    iget-object v0, v0, Lcom/android/settings_ext/voice/a;->anf:Ljava/util/ArrayList;
 
     invoke-virtual {v0, v6}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
 
     move-result-object v2
 
-    check-cast v2, Lcom/android/settings/voice/c;
+    check-cast v2, Lcom/android/settings_ext/voice/c;
 
     .line 112
-    new-instance v0, Lcom/android/settings/voice/e;
+    new-instance v0, Lcom/android/settings_ext/voice/e;
 
-    invoke-virtual {p0}, Lcom/android/settings/voice/VoiceInputSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/voice/VoiceInputSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v1
 
-    iget-object v3, p0, Lcom/android/settings/voice/VoiceInputSettings;->anu:Ljava/lang/CharSequence;
+    iget-object v3, p0, Lcom/android/settings_ext/voice/VoiceInputSettings;->anu:Ljava/lang/CharSequence;
 
-    iget-object v4, p0, Lcom/android/settings/voice/VoiceInputSettings;->anw:Ljava/lang/CharSequence;
+    iget-object v4, p0, Lcom/android/settings_ext/voice/VoiceInputSettings;->anw:Ljava/lang/CharSequence;
 
     move-object v5, p0
 
-    invoke-direct/range {v0 .. v5}, Lcom/android/settings/voice/e;-><init>(Landroid/content/Context;Lcom/android/settings/voice/b;Ljava/lang/CharSequence;Ljava/lang/CharSequence;Lcom/android/settings/voice/l;)V
+    invoke-direct/range {v0 .. v5}, Lcom/android/settings_ext/voice/e;-><init>(Landroid/content/Context;Lcom/android/settings_ext/voice/b;Ljava/lang/CharSequence;Ljava/lang/CharSequence;Lcom/android/settings_ext/voice/l;)V
 
     .line 114
-    iget-object v1, p0, Lcom/android/settings/voice/VoiceInputSettings;->ant:Landroid/preference/PreferenceCategory;
+    iget-object v1, p0, Lcom/android/settings_ext/voice/VoiceInputSettings;->ant:Landroid/preference/PreferenceCategory;
 
     invoke-virtual {v1, v0}, Landroid/preference/PreferenceCategory;->addPreference(Landroid/preference/Preference;)Z
 
@@ -155,37 +155,37 @@
 
     .line 104
     :cond_0
-    iget-object v0, p0, Lcom/android/settings/voice/VoiceInputSettings;->any:Lcom/android/settings/voice/a;
+    iget-object v0, p0, Lcom/android/settings_ext/voice/VoiceInputSettings;->any:Lcom/android/settings_ext/voice/a;
 
-    iget-object v0, v0, Lcom/android/settings/voice/a;->ani:Landroid/content/ComponentName;
+    iget-object v0, v0, Lcom/android/settings_ext/voice/a;->ani:Landroid/content/ComponentName;
 
     if-eqz v0, :cond_1
 
     .line 105
-    iget-object v0, p0, Lcom/android/settings/voice/VoiceInputSettings;->any:Lcom/android/settings/voice/a;
+    iget-object v0, p0, Lcom/android/settings_ext/voice/VoiceInputSettings;->any:Lcom/android/settings_ext/voice/a;
 
-    iget-object v0, v0, Lcom/android/settings/voice/a;->ani:Landroid/content/ComponentName;
+    iget-object v0, v0, Lcom/android/settings_ext/voice/a;->ani:Landroid/content/ComponentName;
 
     invoke-virtual {v0}, Landroid/content/ComponentName;->flattenToShortString()Ljava/lang/String;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/voice/VoiceInputSettings;->anx:Ljava/lang/String;
+    iput-object v0, p0, Lcom/android/settings_ext/voice/VoiceInputSettings;->anx:Ljava/lang/String;
 
     goto :goto_0
 
     .line 107
     :cond_1
-    iput-object v8, p0, Lcom/android/settings/voice/VoiceInputSettings;->anx:Ljava/lang/String;
+    iput-object v8, p0, Lcom/android/settings_ext/voice/VoiceInputSettings;->anx:Ljava/lang/String;
 
     goto :goto_0
 
     .line 117
     :cond_2
     :goto_2
-    iget-object v0, p0, Lcom/android/settings/voice/VoiceInputSettings;->any:Lcom/android/settings/voice/a;
+    iget-object v0, p0, Lcom/android/settings_ext/voice/VoiceInputSettings;->any:Lcom/android/settings_ext/voice/a;
 
-    iget-object v0, v0, Lcom/android/settings/voice/a;->ang:Ljava/util/ArrayList;
+    iget-object v0, v0, Lcom/android/settings_ext/voice/a;->ang:Ljava/util/ArrayList;
 
     invoke-virtual {v0}, Ljava/util/ArrayList;->size()I
 
@@ -194,33 +194,33 @@
     if-ge v7, v0, :cond_3
 
     .line 118
-    iget-object v0, p0, Lcom/android/settings/voice/VoiceInputSettings;->any:Lcom/android/settings/voice/a;
+    iget-object v0, p0, Lcom/android/settings_ext/voice/VoiceInputSettings;->any:Lcom/android/settings_ext/voice/a;
 
-    iget-object v0, v0, Lcom/android/settings/voice/a;->ang:Ljava/util/ArrayList;
+    iget-object v0, v0, Lcom/android/settings_ext/voice/a;->ang:Ljava/util/ArrayList;
 
     invoke-virtual {v0, v7}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
 
     move-result-object v2
 
-    check-cast v2, Lcom/android/settings/voice/d;
+    check-cast v2, Lcom/android/settings_ext/voice/d;
 
     .line 119
-    new-instance v0, Lcom/android/settings/voice/e;
+    new-instance v0, Lcom/android/settings_ext/voice/e;
 
-    invoke-virtual {p0}, Lcom/android/settings/voice/VoiceInputSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/voice/VoiceInputSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v1
 
-    iget-object v3, p0, Lcom/android/settings/voice/VoiceInputSettings;->anv:Ljava/lang/CharSequence;
+    iget-object v3, p0, Lcom/android/settings_ext/voice/VoiceInputSettings;->anv:Ljava/lang/CharSequence;
 
     move-object v4, v8
 
     move-object v5, p0
 
-    invoke-direct/range {v0 .. v5}, Lcom/android/settings/voice/e;-><init>(Landroid/content/Context;Lcom/android/settings/voice/b;Ljava/lang/CharSequence;Ljava/lang/CharSequence;Lcom/android/settings/voice/l;)V
+    invoke-direct/range {v0 .. v5}, Lcom/android/settings_ext/voice/e;-><init>(Landroid/content/Context;Lcom/android/settings_ext/voice/b;Ljava/lang/CharSequence;Ljava/lang/CharSequence;Lcom/android/settings_ext/voice/l;)V
 
     .line 121
-    iget-object v1, p0, Lcom/android/settings/voice/VoiceInputSettings;->ant:Landroid/preference/PreferenceCategory;
+    iget-object v1, p0, Lcom/android/settings_ext/voice/VoiceInputSettings;->ant:Landroid/preference/PreferenceCategory;
 
     invoke-virtual {v1, v0}, Landroid/preference/PreferenceCategory;->addPreference(Landroid/preference/Preference;)Z
 
@@ -241,7 +241,7 @@
 
     .prologue
     .line 137
-    iput-object p1, p0, Lcom/android/settings/voice/VoiceInputSettings;->akQ:Landroid/widget/Checkable;
+    iput-object p1, p0, Lcom/android/settings_ext/voice/VoiceInputSettings;->akQ:Landroid/widget/Checkable;
 
     .line 138
     return-void
@@ -254,15 +254,15 @@
     const/4 v2, 0x0
 
     .line 142
-    iput-object p1, p0, Lcom/android/settings/voice/VoiceInputSettings;->anx:Ljava/lang/String;
+    iput-object p1, p0, Lcom/android/settings_ext/voice/VoiceInputSettings;->anx:Ljava/lang/String;
 
     move v1, v2
 
     .line 143
     :goto_0
-    iget-object v0, p0, Lcom/android/settings/voice/VoiceInputSettings;->any:Lcom/android/settings/voice/a;
+    iget-object v0, p0, Lcom/android/settings_ext/voice/VoiceInputSettings;->any:Lcom/android/settings_ext/voice/a;
 
-    iget-object v0, v0, Lcom/android/settings/voice/a;->anf:Ljava/util/ArrayList;
+    iget-object v0, v0, Lcom/android/settings_ext/voice/a;->anf:Ljava/util/ArrayList;
 
     invoke-virtual {v0}, Ljava/util/ArrayList;->size()I
 
@@ -271,18 +271,18 @@
     if-ge v1, v0, :cond_3
 
     .line 144
-    iget-object v0, p0, Lcom/android/settings/voice/VoiceInputSettings;->any:Lcom/android/settings/voice/a;
+    iget-object v0, p0, Lcom/android/settings_ext/voice/VoiceInputSettings;->any:Lcom/android/settings_ext/voice/a;
 
-    iget-object v0, v0, Lcom/android/settings/voice/a;->anf:Ljava/util/ArrayList;
+    iget-object v0, v0, Lcom/android/settings_ext/voice/a;->anf:Ljava/util/ArrayList;
 
     invoke-virtual {v0, v1}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
 
     move-result-object v0
 
-    check-cast v0, Lcom/android/settings/voice/c;
+    check-cast v0, Lcom/android/settings_ext/voice/c;
 
     .line 145
-    iget-object v3, v0, Lcom/android/settings/voice/c;->key:Ljava/lang/String;
+    iget-object v3, v0, Lcom/android/settings_ext/voice/c;->key:Ljava/lang/String;
 
     invoke-virtual {v3, p1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
@@ -291,7 +291,7 @@
     if-eqz v3, :cond_1
 
     .line 147
-    invoke-virtual {p0}, Lcom/android/settings/voice/VoiceInputSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/voice/VoiceInputSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v1
 
@@ -304,12 +304,12 @@
     invoke-static {v1, v2, p1}, Landroid/provider/Settings$Secure;->putString(Landroid/content/ContentResolver;Ljava/lang/String;Ljava/lang/String;)Z
 
     .line 150
-    iget-object v1, v0, Lcom/android/settings/voice/c;->ank:Landroid/content/ComponentName;
+    iget-object v1, v0, Lcom/android/settings_ext/voice/c;->ank:Landroid/content/ComponentName;
 
     if-eqz v1, :cond_0
 
     .line 151
-    invoke-virtual {p0}, Lcom/android/settings/voice/VoiceInputSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/voice/VoiceInputSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v1
 
@@ -319,7 +319,7 @@
 
     const-string v2, "voice_recognition_service"
 
-    iget-object v0, v0, Lcom/android/settings/voice/c;->ank:Landroid/content/ComponentName;
+    iget-object v0, v0, Lcom/android/settings_ext/voice/c;->ank:Landroid/content/ComponentName;
 
     invoke-virtual {v0}, Landroid/content/ComponentName;->flattenToShortString()Ljava/lang/String;
 
@@ -345,9 +345,9 @@
     add-int/lit8 v2, v2, 0x1
 
     :cond_3
-    iget-object v0, p0, Lcom/android/settings/voice/VoiceInputSettings;->any:Lcom/android/settings/voice/a;
+    iget-object v0, p0, Lcom/android/settings_ext/voice/VoiceInputSettings;->any:Lcom/android/settings_ext/voice/a;
 
-    iget-object v0, v0, Lcom/android/settings/voice/a;->ang:Ljava/util/ArrayList;
+    iget-object v0, v0, Lcom/android/settings_ext/voice/a;->ang:Ljava/util/ArrayList;
 
     invoke-virtual {v0}, Ljava/util/ArrayList;->size()I
 
@@ -356,18 +356,18 @@
     if-ge v2, v0, :cond_0
 
     .line 160
-    iget-object v0, p0, Lcom/android/settings/voice/VoiceInputSettings;->any:Lcom/android/settings/voice/a;
+    iget-object v0, p0, Lcom/android/settings_ext/voice/VoiceInputSettings;->any:Lcom/android/settings_ext/voice/a;
 
-    iget-object v0, v0, Lcom/android/settings/voice/a;->ang:Ljava/util/ArrayList;
+    iget-object v0, v0, Lcom/android/settings_ext/voice/a;->ang:Ljava/util/ArrayList;
 
     invoke-virtual {v0, v2}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
 
     move-result-object v0
 
-    check-cast v0, Lcom/android/settings/voice/d;
+    check-cast v0, Lcom/android/settings_ext/voice/d;
 
     .line 161
-    iget-object v0, v0, Lcom/android/settings/voice/d;->key:Ljava/lang/String;
+    iget-object v0, v0, Lcom/android/settings_ext/voice/d;->key:Ljava/lang/String;
 
     invoke-virtual {v0, p1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
@@ -376,7 +376,7 @@
     if-eqz v0, :cond_2
 
     .line 162
-    invoke-virtual {p0}, Lcom/android/settings/voice/VoiceInputSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/voice/VoiceInputSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
@@ -391,7 +391,7 @@
     invoke-static {v0, v1, v2}, Landroid/provider/Settings$Secure;->putString(Landroid/content/ContentResolver;Ljava/lang/String;Ljava/lang/String;)Z
 
     .line 164
-    invoke-virtual {p0}, Lcom/android/settings/voice/VoiceInputSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/voice/VoiceInputSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
@@ -411,26 +411,26 @@
 
     .prologue
     .line 77
-    invoke-super {p0, p1}, Lcom/android/settings/SettingsPreferenceFragment;->onCreate(Landroid/os/Bundle;)V
+    invoke-super {p0, p1}, Lcom/android/settings_ext/SettingsPreferenceFragment;->onCreate(Landroid/os/Bundle;)V
 
     .line 78
     const v0, 0x7f06009b
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/voice/VoiceInputSettings;->addPreferencesFromResource(I)V
+    invoke-virtual {p0, v0}, Lcom/android/settings_ext/voice/VoiceInputSettings;->addPreferencesFromResource(I)V
 
     .line 80
     const-string v0, "voice_service_preference_section"
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/voice/VoiceInputSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v0}, Lcom/android/settings_ext/voice/VoiceInputSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v0
 
     check-cast v0, Landroid/preference/PreferenceCategory;
 
-    iput-object v0, p0, Lcom/android/settings/voice/VoiceInputSettings;->ant:Landroid/preference/PreferenceCategory;
+    iput-object v0, p0, Lcom/android/settings_ext/voice/VoiceInputSettings;->ant:Landroid/preference/PreferenceCategory;
 
     .line 83
-    invoke-virtual {p0}, Lcom/android/settings/voice/VoiceInputSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/voice/VoiceInputSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
@@ -440,10 +440,10 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/voice/VoiceInputSettings;->anu:Ljava/lang/CharSequence;
+    iput-object v0, p0, Lcom/android/settings_ext/voice/VoiceInputSettings;->anu:Ljava/lang/CharSequence;
 
     .line 85
-    invoke-virtual {p0}, Lcom/android/settings/voice/VoiceInputSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/voice/VoiceInputSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
@@ -453,10 +453,10 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/voice/VoiceInputSettings;->anv:Ljava/lang/CharSequence;
+    iput-object v0, p0, Lcom/android/settings_ext/voice/VoiceInputSettings;->anv:Ljava/lang/CharSequence;
 
     .line 87
-    invoke-virtual {p0}, Lcom/android/settings/voice/VoiceInputSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/voice/VoiceInputSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
@@ -466,7 +466,7 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/voice/VoiceInputSettings;->anw:Ljava/lang/CharSequence;
+    iput-object v0, p0, Lcom/android/settings_ext/voice/VoiceInputSettings;->anw:Ljava/lang/CharSequence;
 
     .line 88
     return-void
@@ -477,14 +477,14 @@
 
     .prologue
     .line 173
-    instance-of v0, p1, Lcom/android/settings/voice/e;
+    instance-of v0, p1, Lcom/android/settings_ext/voice/e;
 
     if-eqz v0, :cond_0
 
     .line 174
-    check-cast p1, Lcom/android/settings/voice/e;
+    check-cast p1, Lcom/android/settings_ext/voice/e;
 
-    invoke-virtual {p1}, Lcom/android/settings/voice/e;->sO()V
+    invoke-virtual {p1}, Lcom/android/settings_ext/voice/e;->sO()V
 
     .line 176
     :cond_0
@@ -498,10 +498,10 @@
 
     .prologue
     .line 92
-    invoke-super {p0}, Lcom/android/settings/SettingsPreferenceFragment;->onStart()V
+    invoke-super {p0}, Lcom/android/settings_ext/SettingsPreferenceFragment;->onStart()V
 
     .line 93
-    invoke-direct {p0}, Lcom/android/settings/voice/VoiceInputSettings;->rU()V
+    invoke-direct {p0}, Lcom/android/settings_ext/voice/VoiceInputSettings;->rU()V
 
     .line 94
     return-void
@@ -512,7 +512,7 @@
 
     .prologue
     .line 127
-    iget-object v0, p0, Lcom/android/settings/voice/VoiceInputSettings;->akQ:Landroid/widget/Checkable;
+    iget-object v0, p0, Lcom/android/settings_ext/voice/VoiceInputSettings;->akQ:Landroid/widget/Checkable;
 
     return-object v0
 .end method
@@ -522,7 +522,7 @@
 
     .prologue
     .line 132
-    iget-object v0, p0, Lcom/android/settings/voice/VoiceInputSettings;->anx:Ljava/lang/String;
+    iget-object v0, p0, Lcom/android/settings_ext/voice/VoiceInputSettings;->anx:Ljava/lang/String;
 
     return-object v0
 .end method

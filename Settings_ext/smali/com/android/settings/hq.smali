@@ -1,5 +1,5 @@
-.class final Lcom/android/settings/hq;
-.super Lcom/android/settings/search/a;
+.class final Lcom/android/settings_ext/hq;
+.super Lcom/android/settings_ext/search/a;
 .source "WirelessSettings.java"
 
 
@@ -9,7 +9,7 @@
 
     .prologue
     .line 600
-    invoke-direct {p0}, Lcom/android/settings/search/a;-><init>()V
+    invoke-direct {p0}, Lcom/android/settings_ext/search/a;-><init>()V
 
     return-void
 .end method
@@ -160,7 +160,7 @@
     :cond_3
     if-nez v3, :cond_4
 
-    invoke-static {p1}, Lcom/android/settings/hl;->N(Landroid/content/Context;)Z
+    invoke-static {p1}, Lcom/android/settings_ext/hl;->N(Landroid/content/Context;)Z
 
     move-result v0
 

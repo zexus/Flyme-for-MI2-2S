@@ -1,5 +1,5 @@
-.class public Lcom/android/settings/display/j;
-.super Lcom/android/settings/Z;
+.class public Lcom/android/settings_ext/display/j;
+.super Lcom/android/settings_ext/Z;
 .source "FontStatusController.java"
 
 
@@ -9,7 +9,7 @@
 
     .prologue
     .line 13
-    invoke-direct {p0, p1, p2}, Lcom/android/settings/Z;-><init>(Landroid/content/Context;Landroid/widget/TextView;)V
+    invoke-direct {p0, p1, p2}, Lcom/android/settings_ext/Z;-><init>(Landroid/content/Context;Landroid/widget/TextView;)V
 
     .line 14
     return-void
@@ -22,7 +22,7 @@
 
     .prologue
     .line 18
-    iget-object v0, p0, Lcom/android/settings/display/j;->ca:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/android/settings_ext/display/j;->ca:Landroid/widget/TextView;
 
     if-nez v0, :cond_0
 
@@ -32,11 +32,11 @@
 
     .line 21
     :cond_0
-    iget-object v0, p0, Lcom/android/settings/display/j;->ca:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/android/settings_ext/display/j;->ca:Landroid/widget/TextView;
 
-    iget-object v1, p0, Lcom/android/settings/display/j;->mContext:Landroid/content/Context;
+    iget-object v1, p0, Lcom/android/settings_ext/display/j;->mContext:Landroid/content/Context;
 
-    invoke-static {v1}, Lcom/android/settings/display/FontFragment;->aF(Landroid/content/Context;)Ljava/lang/String;
+    invoke-static {v1}, Lcom/android/settings_ext/display/FontFragment;->aF(Landroid/content/Context;)Ljava/lang/String;
 
     move-result-object v1
 

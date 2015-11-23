@@ -1,4 +1,4 @@
-.class Lcom/android/settings/dndmode/w;
+.class Lcom/android/settings_ext/dndmode/w;
 .super Ljava/lang/Object;
 .source "VipCallSettingsFragment.java"
 
@@ -7,20 +7,20 @@
 
 
 # instance fields
-.field final synthetic Xs:Lcom/android/settings/dndmode/u;
+.field final synthetic Xs:Lcom/android/settings_ext/dndmode/u;
 
 .field final synthetic Xt:[Ljava/lang/String;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/dndmode/u;[Ljava/lang/String;)V
+.method constructor <init>(Lcom/android/settings_ext/dndmode/u;[Ljava/lang/String;)V
     .locals 0
 
     .prologue
     .line 145
-    iput-object p1, p0, Lcom/android/settings/dndmode/w;->Xs:Lcom/android/settings/dndmode/u;
+    iput-object p1, p0, Lcom/android/settings_ext/dndmode/w;->Xs:Lcom/android/settings_ext/dndmode/u;
 
-    iput-object p2, p0, Lcom/android/settings/dndmode/w;->Xt:[Ljava/lang/String;
+    iput-object p2, p0, Lcom/android/settings_ext/dndmode/w;->Xt:[Ljava/lang/String;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -44,7 +44,7 @@
     if-eqz v0, :cond_0
 
     .line 150
-    iget-object v0, p0, Lcom/android/settings/dndmode/w;->Xt:[Ljava/lang/String;
+    iget-object v0, p0, Lcom/android/settings_ext/dndmode/w;->Xt:[Ljava/lang/String;
 
     invoke-static {v0}, Ljava/util/Arrays;->asList([Ljava/lang/Object;)Ljava/util/List;
 
@@ -63,9 +63,9 @@
     move-result v0
 
     .line 151
-    iget-object v1, p0, Lcom/android/settings/dndmode/w;->Xs:Lcom/android/settings/dndmode/u;
+    iget-object v1, p0, Lcom/android/settings_ext/dndmode/w;->Xs:Lcom/android/settings_ext/dndmode/u;
 
-    invoke-static {v1}, Lcom/android/settings/dndmode/u;->a(Lcom/android/settings/dndmode/u;)Lmiui/app/Activity;
+    invoke-static {v1}, Lcom/android/settings_ext/dndmode/u;->a(Lcom/android/settings_ext/dndmode/u;)Lmiui/app/Activity;
 
     move-result-object v1
 
@@ -75,9 +75,9 @@
     if-nez v0, :cond_1
 
     .line 153
-    iget-object v0, p0, Lcom/android/settings/dndmode/w;->Xs:Lcom/android/settings/dndmode/u;
+    iget-object v0, p0, Lcom/android/settings_ext/dndmode/w;->Xs:Lcom/android/settings_ext/dndmode/u;
 
-    invoke-static {v0}, Lcom/android/settings/dndmode/u;->b(Lcom/android/settings/dndmode/u;)V
+    invoke-static {v0}, Lcom/android/settings_ext/dndmode/u;->b(Lcom/android/settings_ext/dndmode/u;)V
 
     .line 158
     :cond_0
@@ -88,9 +88,9 @@
 
     .line 155
     :cond_1
-    iget-object v0, p0, Lcom/android/settings/dndmode/w;->Xs:Lcom/android/settings/dndmode/u;
+    iget-object v0, p0, Lcom/android/settings_ext/dndmode/w;->Xs:Lcom/android/settings_ext/dndmode/u;
 
-    invoke-static {v0}, Lcom/android/settings/dndmode/u;->c(Lcom/android/settings/dndmode/u;)V
+    invoke-static {v0}, Lcom/android/settings_ext/dndmode/u;->c(Lcom/android/settings_ext/dndmode/u;)V
 
     goto :goto_0
 .end method

@@ -1,23 +1,23 @@
-.class Lcom/android/settings/deviceinfo/Memory$5;
+.class Lcom/android/settings_ext/deviceinfo/Memory$5;
 .super Ljava/lang/Thread;
 .source "Memory.java"
 
 
 # instance fields
-.field final synthetic RL:Lcom/android/settings/deviceinfo/Memory;
+.field final synthetic RL:Lcom/android/settings_ext/deviceinfo/Memory;
 
 .field final synthetic val$mountService:Landroid/os/storage/IMountService;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/deviceinfo/Memory;Landroid/os/storage/IMountService;)V
+.method constructor <init>(Lcom/android/settings_ext/deviceinfo/Memory;Landroid/os/storage/IMountService;)V
     .locals 0
 
     .prologue
     .line 442
-    iput-object p1, p0, Lcom/android/settings/deviceinfo/Memory$5;->RL:Lcom/android/settings/deviceinfo/Memory;
+    iput-object p1, p0, Lcom/android/settings_ext/deviceinfo/Memory$5;->RL:Lcom/android/settings_ext/deviceinfo/Memory;
 
-    iput-object p2, p0, Lcom/android/settings/deviceinfo/Memory$5;->val$mountService:Landroid/os/storage/IMountService;
+    iput-object p2, p0, Lcom/android/settings_ext/deviceinfo/Memory$5;->val$mountService:Landroid/os/storage/IMountService;
 
     invoke-direct {p0}, Ljava/lang/Thread;-><init>()V
 
@@ -32,15 +32,15 @@
     .prologue
     .line 446
     :try_start_0
-    iget-object v0, p0, Lcom/android/settings/deviceinfo/Memory$5;->val$mountService:Landroid/os/storage/IMountService;
+    iget-object v0, p0, Lcom/android/settings_ext/deviceinfo/Memory$5;->val$mountService:Landroid/os/storage/IMountService;
 
     if-eqz v0, :cond_0
 
     .line 447
-    iget-object v0, p0, Lcom/android/settings/deviceinfo/Memory$5;->val$mountService:Landroid/os/storage/IMountService;
+    iget-object v0, p0, Lcom/android/settings_ext/deviceinfo/Memory$5;->val$mountService:Landroid/os/storage/IMountService;
 
-    # getter for: Lcom/android/settings/deviceinfo/Memory;->RI:Ljava/lang/String;
-    invoke-static {}, Lcom/android/settings/deviceinfo/Memory;->access$300()Ljava/lang/String;
+    # getter for: Lcom/android/settings_ext/deviceinfo/Memory;->RI:Ljava/lang/String;
+    invoke-static {}, Lcom/android/settings_ext/deviceinfo/Memory;->access$300()Ljava/lang/String;
 
     move-result-object v1
 

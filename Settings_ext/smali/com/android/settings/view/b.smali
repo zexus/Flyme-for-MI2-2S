@@ -1,19 +1,19 @@
-.class final Lcom/android/settings/view/b;
+.class final Lcom/android/settings_ext/view/b;
 .super Landroid/database/DataSetObserver;
 .source "GridPreference.java"
 
 
 # instance fields
-.field final synthetic anc:Lcom/android/settings/view/GridPreference;
+.field final synthetic anc:Lcom/android/settings_ext/view/GridPreference;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/view/GridPreference;)V
+.method constructor <init>(Lcom/android/settings_ext/view/GridPreference;)V
     .locals 0
 
     .prologue
     .line 42
-    iput-object p1, p0, Lcom/android/settings/view/b;->anc:Lcom/android/settings/view/GridPreference;
+    iput-object p1, p0, Lcom/android/settings_ext/view/b;->anc:Lcom/android/settings_ext/view/GridPreference;
 
     invoke-direct {p0}, Landroid/database/DataSetObserver;-><init>()V
 
@@ -27,9 +27,9 @@
 
     .prologue
     .line 46
-    iget-object v0, p0, Lcom/android/settings/view/b;->anc:Lcom/android/settings/view/GridPreference;
+    iget-object v0, p0, Lcom/android/settings_ext/view/b;->anc:Lcom/android/settings_ext/view/GridPreference;
 
-    invoke-virtual {v0}, Lcom/android/settings/view/GridPreference;->update()V
+    invoke-virtual {v0}, Lcom/android/settings_ext/view/GridPreference;->update()V
 
     .line 47
     return-void
@@ -40,9 +40,9 @@
 
     .prologue
     .line 51
-    iget-object v0, p0, Lcom/android/settings/view/b;->anc:Lcom/android/settings/view/GridPreference;
+    iget-object v0, p0, Lcom/android/settings_ext/view/b;->anc:Lcom/android/settings_ext/view/GridPreference;
 
-    invoke-virtual {v0}, Lcom/android/settings/view/GridPreference;->update()V
+    invoke-virtual {v0}, Lcom/android/settings_ext/view/GridPreference;->update()V
 
     .line 52
     return-void

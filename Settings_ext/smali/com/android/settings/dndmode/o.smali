@@ -1,4 +1,4 @@
-.class Lcom/android/settings/dndmode/o;
+.class Lcom/android/settings_ext/dndmode/o;
 .super Ljava/lang/Object;
 .source "LabelPreference.java"
 
@@ -9,18 +9,18 @@
 # instance fields
 .field final synthetic WV:Landroid/widget/LinearLayout;
 
-.field final synthetic WW:Lcom/android/settings/dndmode/LabelPreference;
+.field final synthetic WW:Lcom/android/settings_ext/dndmode/LabelPreference;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/dndmode/LabelPreference;Landroid/widget/LinearLayout;)V
+.method constructor <init>(Lcom/android/settings_ext/dndmode/LabelPreference;Landroid/widget/LinearLayout;)V
     .locals 0
 
     .prologue
     .line 56
-    iput-object p1, p0, Lcom/android/settings/dndmode/o;->WW:Lcom/android/settings/dndmode/LabelPreference;
+    iput-object p1, p0, Lcom/android/settings_ext/dndmode/o;->WW:Lcom/android/settings_ext/dndmode/LabelPreference;
 
-    iput-object p2, p0, Lcom/android/settings/dndmode/o;->WV:Landroid/widget/LinearLayout;
+    iput-object p2, p0, Lcom/android/settings_ext/dndmode/o;->WV:Landroid/widget/LinearLayout;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -34,7 +34,7 @@
 
     .prologue
     .line 59
-    iget-object v0, p0, Lcom/android/settings/dndmode/o;->WV:Landroid/widget/LinearLayout;
+    iget-object v0, p0, Lcom/android/settings_ext/dndmode/o;->WV:Landroid/widget/LinearLayout;
 
     invoke-virtual {v0}, Landroid/widget/LinearLayout;->getLayoutParams()Landroid/view/ViewGroup$LayoutParams;
 
@@ -46,14 +46,14 @@
     iput v1, v0, Landroid/view/ViewGroup$LayoutParams;->width:I
 
     .line 61
-    iget-object v1, p0, Lcom/android/settings/dndmode/o;->WV:Landroid/widget/LinearLayout;
+    iget-object v1, p0, Lcom/android/settings_ext/dndmode/o;->WV:Landroid/widget/LinearLayout;
 
     const/4 v2, 0x3
 
     invoke-virtual {v1, v2}, Landroid/widget/LinearLayout;->setGravity(I)V
 
     .line 62
-    iget-object v1, p0, Lcom/android/settings/dndmode/o;->WV:Landroid/widget/LinearLayout;
+    iget-object v1, p0, Lcom/android/settings_ext/dndmode/o;->WV:Landroid/widget/LinearLayout;
 
     invoke-virtual {v1, v0}, Landroid/widget/LinearLayout;->setLayoutParams(Landroid/view/ViewGroup$LayoutParams;)V
 

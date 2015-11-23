@@ -1,4 +1,4 @@
-.class public Lcom/android/settings/gI;
+.class public Lcom/android/settings_ext/gI;
 .super Ljava/lang/Object;
 .source "TrustAgentUtils.java"
 

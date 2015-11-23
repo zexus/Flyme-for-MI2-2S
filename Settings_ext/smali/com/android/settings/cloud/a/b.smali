@@ -1,4 +1,4 @@
-.class public Lcom/android/settings/cloud/a/b;
+.class public Lcom/android/settings_ext/cloud/a/b;
 .super Ljava/lang/Object;
 .source "Coder.java"
 
@@ -113,7 +113,7 @@
 
     aput-object v2, v0, v1
 
-    sput-object v0, Lcom/android/settings/cloud/a/b;->QY:[Ljava/lang/String;
+    sput-object v0, Lcom/android/settings_ext/cloud/a/b;->QY:[Ljava/lang/String;
 
     return-void
 .end method
@@ -138,7 +138,7 @@
     .line 85
     aget-byte v2, p0, v0
 
-    invoke-static {v2}, Lcom/android/settings/cloud/a/b;->byteToHexString(B)Ljava/lang/String;
+    invoke-static {v2}, Lcom/android/settings_ext/cloud/a/b;->byteToHexString(B)Ljava/lang/String;
 
     move-result-object v2
 
@@ -181,7 +181,7 @@
 
     invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
 
-    sget-object v3, Lcom/android/settings/cloud/a/b;->QY:[Ljava/lang/String;
+    sget-object v3, Lcom/android/settings_ext/cloud/a/b;->QY:[Ljava/lang/String;
 
     aget-object v0, v3, v0
 
@@ -189,7 +189,7 @@
 
     move-result-object v0
 
-    sget-object v2, Lcom/android/settings/cloud/a/b;->QY:[Ljava/lang/String;
+    sget-object v2, Lcom/android/settings_ext/cloud/a/b;->QY:[Ljava/lang/String;
 
     aget-object v1, v2, v1
 
@@ -292,7 +292,7 @@
 
     move-result-object v0
 
-    invoke-static {v0}, Lcom/android/settings/cloud/a/b;->b([B)Ljava/lang/String;
+    invoke-static {v0}, Lcom/android/settings_ext/cloud/a/b;->b([B)Ljava/lang/String;
 
     move-result-object v0
 

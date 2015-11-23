@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PreferenceScreen android:title="@string/miui_screensaver_title"
   xmlns:android="http://schemas.android.com/apk/res/android"
-  xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
+  xmlns:settings="http://schemas.android.com/apk/res/com.android.settings_ext">
     <PreferenceCategory android:key="miui_screensaver">
         <CheckBoxPreference android:persistent="false" android:title="@string/activate_miui_screensaver" android:key="screensaver_activate_mode" android:summary="@string/miui_screensaver_usage" />
         <miui.preference.ValuePreference android:persistent="false" android:title="@string/picture_source" android:key="picture_source" />

@@ -1,4 +1,4 @@
-.class public Lcom/android/settings/location/DimmableIconPreference;
+.class public Lcom/android/settings_ext/location/DimmableIconPreference;
 .super Landroid/preference/Preference;
 .source "DimmableIconPreference.java"
 
@@ -20,7 +20,7 @@
 
     .prologue
     .line 45
-    invoke-virtual {p0}, Lcom/android/settings/location/DimmableIconPreference;->getIcon()Landroid/graphics/drawable/Drawable;
+    invoke-virtual {p0}, Lcom/android/settings_ext/location/DimmableIconPreference;->getIcon()Landroid/graphics/drawable/Drawable;
 
     move-result-object v1
 
@@ -40,7 +40,7 @@
     invoke-virtual {v2, v0}, Landroid/graphics/drawable/Drawable;->setAlpha(I)V
 
     .line 48
-    invoke-virtual {p0, v1}, Lcom/android/settings/location/DimmableIconPreference;->setIcon(Landroid/graphics/drawable/Drawable;)V
+    invoke-virtual {p0, v1}, Lcom/android/settings_ext/location/DimmableIconPreference;->setIcon(Landroid/graphics/drawable/Drawable;)V
 
     .line 50
     :cond_0
@@ -60,7 +60,7 @@
 
     .prologue
     .line 54
-    invoke-direct {p0, p2}, Lcom/android/settings/location/DimmableIconPreference;->aG(Z)V
+    invoke-direct {p0, p2}, Lcom/android/settings_ext/location/DimmableIconPreference;->aG(Z)V
 
     .line 55
     invoke-super {p0, p1, p2}, Landroid/preference/Preference;->onParentChanged(Landroid/preference/Preference;Z)V
@@ -79,7 +79,7 @@
     const/4 v0, 0x1
 
     :goto_0
-    invoke-direct {p0, v0}, Lcom/android/settings/location/DimmableIconPreference;->aG(Z)V
+    invoke-direct {p0, v0}, Lcom/android/settings_ext/location/DimmableIconPreference;->aG(Z)V
 
     .line 61
     invoke-super {p0, p1}, Landroid/preference/Preference;->setEnabled(Z)V

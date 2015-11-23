@@ -1,4 +1,4 @@
-.class Lcom/android/settings/gu;
+.class Lcom/android/settings_ext/gu;
 .super Ljava/lang/Object;
 .source "SettingsPreferenceFragment.java"
 
@@ -11,24 +11,24 @@
 
 .field final synthetic val$position:I
 
-.field final synthetic xu:Lcom/android/settings/SettingsPreferenceFragment;
+.field final synthetic xu:Lcom/android/settings_ext/SettingsPreferenceFragment;
 
 .field final synthetic xv:Landroid/widget/ListView;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/SettingsPreferenceFragment;Landroid/widget/ListView;ILandroid/graphics/drawable/Drawable;)V
+.method constructor <init>(Lcom/android/settings_ext/SettingsPreferenceFragment;Landroid/widget/ListView;ILandroid/graphics/drawable/Drawable;)V
     .locals 0
 
     .prologue
     .line 281
-    iput-object p1, p0, Lcom/android/settings/gu;->xu:Lcom/android/settings/SettingsPreferenceFragment;
+    iput-object p1, p0, Lcom/android/settings_ext/gu;->xu:Lcom/android/settings_ext/SettingsPreferenceFragment;
 
-    iput-object p2, p0, Lcom/android/settings/gu;->xv:Landroid/widget/ListView;
+    iput-object p2, p0, Lcom/android/settings_ext/gu;->xv:Landroid/widget/ListView;
 
-    iput p3, p0, Lcom/android/settings/gu;->val$position:I
+    iput p3, p0, Lcom/android/settings_ext/gu;->val$position:I
 
-    iput-object p4, p0, Lcom/android/settings/gu;->mv:Landroid/graphics/drawable/Drawable;
+    iput-object p4, p0, Lcom/android/settings_ext/gu;->mv:Landroid/graphics/drawable/Drawable;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -42,18 +42,18 @@
 
     .prologue
     .line 284
-    iget-object v0, p0, Lcom/android/settings/gu;->xv:Landroid/widget/ListView;
+    iget-object v0, p0, Lcom/android/settings_ext/gu;->xv:Landroid/widget/ListView;
 
-    iget v1, p0, Lcom/android/settings/gu;->val$position:I
+    iget v1, p0, Lcom/android/settings_ext/gu;->val$position:I
 
     invoke-virtual {v0, v1}, Landroid/widget/ListView;->setSelection(I)V
 
     .line 285
-    iget-object v0, p0, Lcom/android/settings/gu;->xv:Landroid/widget/ListView;
+    iget-object v0, p0, Lcom/android/settings_ext/gu;->xv:Landroid/widget/ListView;
 
-    new-instance v1, Lcom/android/settings/gv;
+    new-instance v1, Lcom/android/settings_ext/gv;
 
-    invoke-direct {v1, p0}, Lcom/android/settings/gv;-><init>(Lcom/android/settings/gu;)V
+    invoke-direct {v1, p0}, Lcom/android/settings_ext/gv;-><init>(Lcom/android/settings_ext/gu;)V
 
     const-wide/16 v2, 0x258
 

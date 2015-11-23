@@ -1,9 +1,9 @@
-.class final Lcom/android/settings/bluetooth/PbapServerProfile;
+.class final Lcom/android/settings_ext/bluetooth/PbapServerProfile;
 .super Ljava/lang/Object;
 .source "PbapServerProfile.java"
 
 # interfaces
-.implements Lcom/android/settings/bluetooth/LocalBluetoothProfile;
+.implements Lcom/android/settings_ext/bluetooth/LocalBluetoothProfile;
 
 
 # static fields
@@ -24,7 +24,7 @@
     .line 37
     const/4 v0, 0x1
 
-    sput-boolean v0, Lcom/android/settings/bluetooth/PbapServerProfile;->Me:Z
+    sput-boolean v0, Lcom/android/settings_ext/bluetooth/PbapServerProfile;->Me:Z
 
     return-void
 .end method
@@ -39,11 +39,11 @@
     .line 68
     new-instance v0, Landroid/bluetooth/BluetoothPbap;
 
-    new-instance v1, Lcom/android/settings/bluetooth/PbapServerProfile$PbapServiceListener;
+    new-instance v1, Lcom/android/settings_ext/bluetooth/PbapServerProfile$PbapServiceListener;
 
     const/4 v2, 0x0
 
-    invoke-direct {v1, p0, v2}, Lcom/android/settings/bluetooth/PbapServerProfile$PbapServiceListener;-><init>(Lcom/android/settings/bluetooth/PbapServerProfile;Lcom/android/settings/bluetooth/PbapServerProfile$1;)V
+    invoke-direct {v1, p0, v2}, Lcom/android/settings_ext/bluetooth/PbapServerProfile$PbapServiceListener;-><init>(Lcom/android/settings_ext/bluetooth/PbapServerProfile;Lcom/android/settings_ext/bluetooth/PbapServerProfile$1;)V
 
     invoke-direct {v0, p1, v1}, Landroid/bluetooth/BluetoothPbap;-><init>(Landroid/content/Context;Landroid/bluetooth/BluetoothPbap$ServiceListener;)V
 
@@ -51,22 +51,22 @@
     return-void
 .end method
 
-.method static synthetic a(Lcom/android/settings/bluetooth/PbapServerProfile;Landroid/bluetooth/BluetoothPbap;)Landroid/bluetooth/BluetoothPbap;
+.method static synthetic a(Lcom/android/settings_ext/bluetooth/PbapServerProfile;Landroid/bluetooth/BluetoothPbap;)Landroid/bluetooth/BluetoothPbap;
     .locals 0
 
     .prologue
     .line 35
-    iput-object p1, p0, Lcom/android/settings/bluetooth/PbapServerProfile;->Po:Landroid/bluetooth/BluetoothPbap;
+    iput-object p1, p0, Lcom/android/settings_ext/bluetooth/PbapServerProfile;->Po:Landroid/bluetooth/BluetoothPbap;
 
     return-object p1
 .end method
 
-.method static synthetic a(Lcom/android/settings/bluetooth/PbapServerProfile;Z)Z
+.method static synthetic a(Lcom/android/settings_ext/bluetooth/PbapServerProfile;Z)Z
     .locals 0
 
     .prologue
     .line 35
-    iput-boolean p1, p0, Lcom/android/settings/bluetooth/PbapServerProfile;->Mg:Z
+    iput-boolean p1, p0, Lcom/android/settings_ext/bluetooth/PbapServerProfile;->Mg:Z
 
     return p1
 .end method
@@ -76,7 +76,7 @@
 
     .prologue
     .line 35
-    sget-boolean v0, Lcom/android/settings/bluetooth/PbapServerProfile;->Me:Z
+    sget-boolean v0, Lcom/android/settings_ext/bluetooth/PbapServerProfile;->Me:Z
 
     return v0
 .end method
@@ -100,7 +100,7 @@
     const/4 v0, 0x0
 
     .line 91
-    iget-object v1, p0, Lcom/android/settings/bluetooth/PbapServerProfile;->Po:Landroid/bluetooth/BluetoothPbap;
+    iget-object v1, p0, Lcom/android/settings_ext/bluetooth/PbapServerProfile;->Po:Landroid/bluetooth/BluetoothPbap;
 
     if-nez v1, :cond_1
 
@@ -111,7 +111,7 @@
 
     .line 94
     :cond_1
-    iget-object v1, p0, Lcom/android/settings/bluetooth/PbapServerProfile;->Po:Landroid/bluetooth/BluetoothPbap;
+    iget-object v1, p0, Lcom/android/settings_ext/bluetooth/PbapServerProfile;->Po:Landroid/bluetooth/BluetoothPbap;
 
     invoke-virtual {v1, p1}, Landroid/bluetooth/BluetoothPbap;->isConnected(Landroid/bluetooth/BluetoothDevice;)Z
 
@@ -178,7 +178,7 @@
 
     .prologue
     .line 86
-    iget-object v0, p0, Lcom/android/settings/bluetooth/PbapServerProfile;->Po:Landroid/bluetooth/BluetoothPbap;
+    iget-object v0, p0, Lcom/android/settings_ext/bluetooth/PbapServerProfile;->Po:Landroid/bluetooth/BluetoothPbap;
 
     if-nez v0, :cond_0
 
@@ -189,7 +189,7 @@
     return v0
 
     :cond_0
-    iget-object v0, p0, Lcom/android/settings/bluetooth/PbapServerProfile;->Po:Landroid/bluetooth/BluetoothPbap;
+    iget-object v0, p0, Lcom/android/settings_ext/bluetooth/PbapServerProfile;->Po:Landroid/bluetooth/BluetoothPbap;
 
     invoke-virtual {v0}, Landroid/bluetooth/BluetoothPbap;->disconnect()Z
 
@@ -213,7 +213,7 @@
 
     .prologue
     .line 133
-    sget-boolean v0, Lcom/android/settings/bluetooth/PbapServerProfile;->Me:Z
+    sget-boolean v0, Lcom/android/settings_ext/bluetooth/PbapServerProfile;->Me:Z
 
     if-eqz v0, :cond_0
 
@@ -225,20 +225,20 @@
 
     .line 134
     :cond_0
-    iget-object v0, p0, Lcom/android/settings/bluetooth/PbapServerProfile;->Po:Landroid/bluetooth/BluetoothPbap;
+    iget-object v0, p0, Lcom/android/settings_ext/bluetooth/PbapServerProfile;->Po:Landroid/bluetooth/BluetoothPbap;
 
     if-eqz v0, :cond_1
 
     .line 136
     :try_start_0
-    iget-object v0, p0, Lcom/android/settings/bluetooth/PbapServerProfile;->Po:Landroid/bluetooth/BluetoothPbap;
+    iget-object v0, p0, Lcom/android/settings_ext/bluetooth/PbapServerProfile;->Po:Landroid/bluetooth/BluetoothPbap;
 
     invoke-virtual {v0}, Landroid/bluetooth/BluetoothPbap;->close()V
 
     .line 137
     const/4 v0, 0x0
 
-    iput-object v0, p0, Lcom/android/settings/bluetooth/PbapServerProfile;->Po:Landroid/bluetooth/BluetoothPbap;
+    iput-object v0, p0, Lcom/android/settings_ext/bluetooth/PbapServerProfile;->Po:Landroid/bluetooth/BluetoothPbap;
     :try_end_0
     .catch Ljava/lang/Throwable; {:try_start_0 .. :try_end_0} :catch_0
 
@@ -276,7 +276,7 @@
 
     .prologue
     .line 64
-    iget-boolean v0, p0, Lcom/android/settings/bluetooth/PbapServerProfile;->Mg:Z
+    iget-boolean v0, p0, Lcom/android/settings_ext/bluetooth/PbapServerProfile;->Mg:Z
 
     return v0
 .end method

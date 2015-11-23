@@ -1,4 +1,4 @@
-.class final Lcom/android/settings/dndmode/a;
+.class final Lcom/android/settings_ext/dndmode/a;
 .super Ljava/lang/Object;
 .source "Alarm.java"
 
@@ -19,12 +19,12 @@
 
 
 # virtual methods
-.method public bB(I)[Lcom/android/settings/dndmode/Alarm;
+.method public bB(I)[Lcom/android/settings_ext/dndmode/Alarm;
     .locals 1
 
     .prologue
     .line 28
-    new-array v0, p1, [Lcom/android/settings/dndmode/Alarm;
+    new-array v0, p1, [Lcom/android/settings_ext/dndmode/Alarm;
 
     return-object v0
 .end method
@@ -34,21 +34,21 @@
 
     .prologue
     .line 22
-    invoke-virtual {p0, p1}, Lcom/android/settings/dndmode/a;->m(Landroid/os/Parcel;)Lcom/android/settings/dndmode/Alarm;
+    invoke-virtual {p0, p1}, Lcom/android/settings_ext/dndmode/a;->m(Landroid/os/Parcel;)Lcom/android/settings_ext/dndmode/Alarm;
 
     move-result-object v0
 
     return-object v0
 .end method
 
-.method public m(Landroid/os/Parcel;)Lcom/android/settings/dndmode/Alarm;
+.method public m(Landroid/os/Parcel;)Lcom/android/settings_ext/dndmode/Alarm;
     .locals 1
 
     .prologue
     .line 24
-    new-instance v0, Lcom/android/settings/dndmode/Alarm;
+    new-instance v0, Lcom/android/settings_ext/dndmode/Alarm;
 
-    invoke-direct {v0, p1}, Lcom/android/settings/dndmode/Alarm;-><init>(Landroid/os/Parcel;)V
+    invoke-direct {v0, p1}, Lcom/android/settings_ext/dndmode/Alarm;-><init>(Landroid/os/Parcel;)V
 
     return-object v0
 .end method
@@ -58,7 +58,7 @@
 
     .prologue
     .line 22
-    invoke-virtual {p0, p1}, Lcom/android/settings/dndmode/a;->bB(I)[Lcom/android/settings/dndmode/Alarm;
+    invoke-virtual {p0, p1}, Lcom/android/settings_ext/dndmode/a;->bB(I)[Lcom/android/settings_ext/dndmode/Alarm;
 
     move-result-object v0
 

@@ -1,4 +1,4 @@
-.class synthetic Lcom/android/settings/es;
+.class synthetic Lcom/android/settings_ext/es;
 .super Ljava/lang/Object;
 .source "MiuiSecurityTrustedCredentials.java"
 
@@ -13,7 +13,7 @@
 
     .prologue
     .line 77
-    invoke-static {}, Lcom/android/settings/MiuiSecurityTrustedCredentials$Tab;->values()[Lcom/android/settings/MiuiSecurityTrustedCredentials$Tab;
+    invoke-static {}, Lcom/android/settings_ext/MiuiSecurityTrustedCredentials$Tab;->values()[Lcom/android/settings_ext/MiuiSecurityTrustedCredentials$Tab;
 
     move-result-object v0
 
@@ -21,14 +21,14 @@
 
     new-array v0, v0, [I
 
-    sput-object v0, Lcom/android/settings/es;->rm:[I
+    sput-object v0, Lcom/android/settings_ext/es;->rm:[I
 
     :try_start_0
-    sget-object v0, Lcom/android/settings/es;->rm:[I
+    sget-object v0, Lcom/android/settings_ext/es;->rm:[I
 
-    sget-object v1, Lcom/android/settings/MiuiSecurityTrustedCredentials$Tab;->ry:Lcom/android/settings/MiuiSecurityTrustedCredentials$Tab;
+    sget-object v1, Lcom/android/settings_ext/MiuiSecurityTrustedCredentials$Tab;->ry:Lcom/android/settings_ext/MiuiSecurityTrustedCredentials$Tab;
 
-    invoke-virtual {v1}, Lcom/android/settings/MiuiSecurityTrustedCredentials$Tab;->ordinal()I
+    invoke-virtual {v1}, Lcom/android/settings_ext/MiuiSecurityTrustedCredentials$Tab;->ordinal()I
 
     move-result v1
 
@@ -40,11 +40,11 @@
 
     :goto_0
     :try_start_1
-    sget-object v0, Lcom/android/settings/es;->rm:[I
+    sget-object v0, Lcom/android/settings_ext/es;->rm:[I
 
-    sget-object v1, Lcom/android/settings/MiuiSecurityTrustedCredentials$Tab;->rz:Lcom/android/settings/MiuiSecurityTrustedCredentials$Tab;
+    sget-object v1, Lcom/android/settings_ext/MiuiSecurityTrustedCredentials$Tab;->rz:Lcom/android/settings_ext/MiuiSecurityTrustedCredentials$Tab;
 
-    invoke-virtual {v1}, Lcom/android/settings/MiuiSecurityTrustedCredentials$Tab;->ordinal()I
+    invoke-virtual {v1}, Lcom/android/settings_ext/MiuiSecurityTrustedCredentials$Tab;->ordinal()I
 
     move-result v1
 

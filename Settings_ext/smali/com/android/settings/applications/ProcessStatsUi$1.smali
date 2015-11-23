@@ -1,4 +1,4 @@
-.class final Lcom/android/settings/applications/ProcessStatsUi$1;
+.class final Lcom/android/settings_ext/applications/ProcessStatsUi$1;
 .super Ljava/lang/Object;
 .source "ProcessStatsUi.java"
 
@@ -19,7 +19,7 @@
 
 
 # virtual methods
-.method public a(Lcom/android/settings/applications/ProcStatsEntry;Lcom/android/settings/applications/ProcStatsEntry;)I
+.method public a(Lcom/android/settings_ext/applications/ProcStatsEntry;Lcom/android/settings_ext/applications/ProcStatsEntry;)I
     .locals 6
 
     .prologue
@@ -28,9 +28,9 @@
     const/4 v1, -0x1
 
     .line 82
-    iget-wide v2, p1, Lcom/android/settings/applications/ProcStatsEntry;->Id:J
+    iget-wide v2, p1, Lcom/android/settings_ext/applications/ProcStatsEntry;->Id:J
 
-    iget-wide v4, p2, Lcom/android/settings/applications/ProcStatsEntry;->Id:J
+    iget-wide v4, p2, Lcom/android/settings_ext/applications/ProcStatsEntry;->Id:J
 
     cmp-long v2, v2, v4
 
@@ -43,9 +43,9 @@
 
     .line 84
     :cond_1
-    iget-wide v2, p1, Lcom/android/settings/applications/ProcStatsEntry;->Id:J
+    iget-wide v2, p1, Lcom/android/settings_ext/applications/ProcStatsEntry;->Id:J
 
-    iget-wide v4, p2, Lcom/android/settings/applications/ProcStatsEntry;->Id:J
+    iget-wide v4, p2, Lcom/android/settings_ext/applications/ProcStatsEntry;->Id:J
 
     cmp-long v2, v2, v4
 
@@ -58,18 +58,18 @@
 
     .line 86
     :cond_2
-    iget-wide v2, p1, Lcom/android/settings/applications/ProcStatsEntry;->mDuration:J
+    iget-wide v2, p1, Lcom/android/settings_ext/applications/ProcStatsEntry;->mDuration:J
 
-    iget-wide v4, p2, Lcom/android/settings/applications/ProcStatsEntry;->mDuration:J
+    iget-wide v4, p2, Lcom/android/settings_ext/applications/ProcStatsEntry;->mDuration:J
 
     cmp-long v2, v2, v4
 
     if-ltz v2, :cond_0
 
     .line 88
-    iget-wide v2, p1, Lcom/android/settings/applications/ProcStatsEntry;->mDuration:J
+    iget-wide v2, p1, Lcom/android/settings_ext/applications/ProcStatsEntry;->mDuration:J
 
-    iget-wide v4, p2, Lcom/android/settings/applications/ProcStatsEntry;->mDuration:J
+    iget-wide v4, p2, Lcom/android/settings_ext/applications/ProcStatsEntry;->mDuration:J
 
     cmp-long v0, v2, v4
 
@@ -92,11 +92,11 @@
 
     .prologue
     .line 79
-    check-cast p1, Lcom/android/settings/applications/ProcStatsEntry;
+    check-cast p1, Lcom/android/settings_ext/applications/ProcStatsEntry;
 
-    check-cast p2, Lcom/android/settings/applications/ProcStatsEntry;
+    check-cast p2, Lcom/android/settings_ext/applications/ProcStatsEntry;
 
-    invoke-virtual {p0, p1, p2}, Lcom/android/settings/applications/ProcessStatsUi$1;->a(Lcom/android/settings/applications/ProcStatsEntry;Lcom/android/settings/applications/ProcStatsEntry;)I
+    invoke-virtual {p0, p1, p2}, Lcom/android/settings_ext/applications/ProcessStatsUi$1;->a(Lcom/android/settings_ext/applications/ProcStatsEntry;Lcom/android/settings_ext/applications/ProcStatsEntry;)I
 
     move-result v0
 

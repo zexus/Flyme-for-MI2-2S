@@ -1,5 +1,5 @@
-.class public Lcom/android/settings/bO;
-.super Lcom/android/settings/eK;
+.class public Lcom/android/settings_ext/bO;
+.super Lcom/android/settings_ext/eK;
 .source "DeviceUtils.java"
 
 
@@ -9,7 +9,7 @@
 
     .prologue
     .line 13
-    invoke-direct {p0}, Lcom/android/settings/eK;-><init>()V
+    invoke-direct {p0}, Lcom/android/settings_ext/eK;-><init>()V
 
     return-void
 .end method

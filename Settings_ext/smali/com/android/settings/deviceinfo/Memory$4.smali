@@ -1,23 +1,23 @@
-.class Lcom/android/settings/deviceinfo/Memory$4;
+.class Lcom/android/settings_ext/deviceinfo/Memory$4;
 .super Ljava/lang/Thread;
 .source "Memory.java"
 
 
 # instance fields
-.field final synthetic RL:Lcom/android/settings/deviceinfo/Memory;
+.field final synthetic RL:Lcom/android/settings_ext/deviceinfo/Memory;
 
 .field final synthetic val$mountService:Landroid/os/storage/IMountService;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/deviceinfo/Memory;Landroid/os/storage/IMountService;)V
+.method constructor <init>(Lcom/android/settings_ext/deviceinfo/Memory;Landroid/os/storage/IMountService;)V
     .locals 0
 
     .prologue
     .line 369
-    iput-object p1, p0, Lcom/android/settings/deviceinfo/Memory$4;->RL:Lcom/android/settings/deviceinfo/Memory;
+    iput-object p1, p0, Lcom/android/settings_ext/deviceinfo/Memory$4;->RL:Lcom/android/settings_ext/deviceinfo/Memory;
 
-    iput-object p2, p0, Lcom/android/settings/deviceinfo/Memory$4;->val$mountService:Landroid/os/storage/IMountService;
+    iput-object p2, p0, Lcom/android/settings_ext/deviceinfo/Memory$4;->val$mountService:Landroid/os/storage/IMountService;
 
     invoke-direct {p0}, Ljava/lang/Thread;-><init>()V
 
@@ -32,10 +32,10 @@
     .prologue
     .line 373
     :try_start_0
-    iget-object v0, p0, Lcom/android/settings/deviceinfo/Memory$4;->val$mountService:Landroid/os/storage/IMountService;
+    iget-object v0, p0, Lcom/android/settings_ext/deviceinfo/Memory$4;->val$mountService:Landroid/os/storage/IMountService;
 
-    # getter for: Lcom/android/settings/deviceinfo/Memory;->RI:Ljava/lang/String;
-    invoke-static {}, Lcom/android/settings/deviceinfo/Memory;->access$300()Ljava/lang/String;
+    # getter for: Lcom/android/settings_ext/deviceinfo/Memory;->RI:Ljava/lang/String;
+    invoke-static {}, Lcom/android/settings_ext/deviceinfo/Memory;->access$300()Ljava/lang/String;
 
     move-result-object v1
 
@@ -56,15 +56,15 @@
     move-exception v0
 
     .line 376
-    iget-object v0, p0, Lcom/android/settings/deviceinfo/Memory$4;->RL:Lcom/android/settings/deviceinfo/Memory;
+    iget-object v0, p0, Lcom/android/settings_ext/deviceinfo/Memory$4;->RL:Lcom/android/settings_ext/deviceinfo/Memory;
 
-    invoke-virtual {v0}, Lcom/android/settings/deviceinfo/Memory;->getActivity()Landroid/app/Activity;
+    invoke-virtual {v0}, Lcom/android/settings_ext/deviceinfo/Memory;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
-    new-instance v1, Lcom/android/settings/deviceinfo/Memory$4$1;
+    new-instance v1, Lcom/android/settings_ext/deviceinfo/Memory$4$1;
 
-    invoke-direct {v1, p0}, Lcom/android/settings/deviceinfo/Memory$4$1;-><init>(Lcom/android/settings/deviceinfo/Memory$4;)V
+    invoke-direct {v1, p0}, Lcom/android/settings_ext/deviceinfo/Memory$4$1;-><init>(Lcom/android/settings_ext/deviceinfo/Memory$4;)V
 
     invoke-virtual {v0, v1}, Landroid/app/Activity;->runOnUiThread(Ljava/lang/Runnable;)V
 

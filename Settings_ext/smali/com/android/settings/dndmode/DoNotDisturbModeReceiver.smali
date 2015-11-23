@@ -1,4 +1,4 @@
-.class public Lcom/android/settings/dndmode/DoNotDisturbModeReceiver;
+.class public Lcom/android/settings_ext/dndmode/DoNotDisturbModeReceiver;
 .super Landroid/content/BroadcastReceiver;
 .source "DoNotDisturbModeReceiver.java"
 
@@ -46,16 +46,16 @@
     sparse-switch v3, :sswitch_data_0
 
     .line 78
-    new-instance v2, Lcom/android/settings/dndmode/b;
+    new-instance v2, Lcom/android/settings_ext/dndmode/b;
 
     invoke-static {p1}, Landroid/provider/MiuiSettings$AntiSpam;->getQuietRepeatType(Landroid/content/Context;)I
 
     move-result v3
 
-    invoke-direct {v2, v3}, Lcom/android/settings/dndmode/b;-><init>(I)V
+    invoke-direct {v2, v3}, Lcom/android/settings_ext/dndmode/b;-><init>(I)V
 
     .line 79
-    invoke-virtual {v2}, Lcom/android/settings/dndmode/b;->oQ()Z
+    invoke-virtual {v2}, Lcom/android/settings_ext/dndmode/b;->oQ()Z
 
     move-result v2
 
@@ -71,7 +71,7 @@
 
     .line 72
     :sswitch_1
-    invoke-static {v2}, Lcom/android/settings/dndmode/n;->a(Ljava/util/Calendar;)Z
+    invoke-static {v2}, Lcom/android/settings_ext/dndmode/n;->a(Ljava/util/Calendar;)Z
 
     move-result v2
 
@@ -182,7 +182,7 @@
     if-eqz v1, :cond_1
 
     .line 29
-    invoke-static {p1}, Lcom/android/settings/dndmode/m;->aK(Landroid/content/Context;)V
+    invoke-static {p1}, Lcom/android/settings_ext/dndmode/m;->aK(Landroid/content/Context;)V
 
     .line 31
     const-string v1, "android.intent.action.BOOT_COMPLETED"
@@ -194,19 +194,19 @@
     if-eqz v0, :cond_1
 
     .line 32
-    invoke-static {p1}, Lcom/android/settings/dndmode/m;->aL(Landroid/content/Context;)Z
+    invoke-static {p1}, Lcom/android/settings_ext/dndmode/m;->aL(Landroid/content/Context;)Z
 
     move-result v0
 
     .line 33
-    invoke-direct {p0, p1, v0}, Lcom/android/settings/dndmode/DoNotDisturbModeReceiver;->p(Landroid/content/Context;Z)Z
+    invoke-direct {p0, p1, v0}, Lcom/android/settings_ext/dndmode/DoNotDisturbModeReceiver;->p(Landroid/content/Context;Z)Z
 
     move-result v1
 
     if-eqz v1, :cond_1
 
     .line 34
-    invoke-direct {p0, p1, v0}, Lcom/android/settings/dndmode/DoNotDisturbModeReceiver;->setQuietMode(Landroid/content/Context;Z)V
+    invoke-direct {p0, p1, v0}, Lcom/android/settings_ext/dndmode/DoNotDisturbModeReceiver;->setQuietMode(Landroid/content/Context;Z)V
 
     .line 35
     invoke-static {p1}, Landroid/provider/MiuiSettings$AntiSpam;->isQuietModeEnable(Landroid/content/Context;)Z
@@ -216,7 +216,7 @@
     if-eqz v0, :cond_1
 
     .line 36
-    invoke-static {p1, v3}, Lcom/android/settings/dndmode/m;->q(Landroid/content/Context;Z)V
+    invoke-static {p1, v3}, Lcom/android/settings_ext/dndmode/m;->q(Landroid/content/Context;Z)V
 
     .line 62
     :cond_1
@@ -240,21 +240,21 @@
 
     if-eqz v0, :cond_1
 
-    invoke-static {p1}, Lcom/android/settings/dndmode/m;->aL(Landroid/content/Context;)Z
+    invoke-static {p1}, Lcom/android/settings_ext/dndmode/m;->aL(Landroid/content/Context;)Z
 
     move-result v0
 
     if-eqz v0, :cond_1
 
     .line 45
-    invoke-direct {p0, p1, v3}, Lcom/android/settings/dndmode/DoNotDisturbModeReceiver;->p(Landroid/content/Context;Z)Z
+    invoke-direct {p0, p1, v3}, Lcom/android/settings_ext/dndmode/DoNotDisturbModeReceiver;->p(Landroid/content/Context;Z)Z
 
     move-result v0
 
     if-eqz v0, :cond_1
 
     .line 46
-    invoke-direct {p0, p1, v3}, Lcom/android/settings/dndmode/DoNotDisturbModeReceiver;->setQuietMode(Landroid/content/Context;Z)V
+    invoke-direct {p0, p1, v3}, Lcom/android/settings_ext/dndmode/DoNotDisturbModeReceiver;->setQuietMode(Landroid/content/Context;Z)V
 
     goto :goto_0
 
@@ -275,24 +275,24 @@
 
     if-eqz v0, :cond_1
 
-    invoke-static {p1}, Lcom/android/settings/dndmode/m;->aL(Landroid/content/Context;)Z
+    invoke-static {p1}, Lcom/android/settings_ext/dndmode/m;->aL(Landroid/content/Context;)Z
 
     move-result v0
 
     if-nez v0, :cond_1
 
     .line 53
-    invoke-direct {p0, p1, v2}, Lcom/android/settings/dndmode/DoNotDisturbModeReceiver;->p(Landroid/content/Context;Z)Z
+    invoke-direct {p0, p1, v2}, Lcom/android/settings_ext/dndmode/DoNotDisturbModeReceiver;->p(Landroid/content/Context;Z)Z
 
     move-result v0
 
     if-eqz v0, :cond_1
 
     .line 54
-    invoke-direct {p0, p1, v2}, Lcom/android/settings/dndmode/DoNotDisturbModeReceiver;->setQuietMode(Landroid/content/Context;Z)V
+    invoke-direct {p0, p1, v2}, Lcom/android/settings_ext/dndmode/DoNotDisturbModeReceiver;->setQuietMode(Landroid/content/Context;Z)V
 
     .line 55
-    invoke-static {p1}, Lcom/android/settings/dndmode/m;->aJ(Landroid/content/Context;)V
+    invoke-static {p1}, Lcom/android/settings_ext/dndmode/m;->aJ(Landroid/content/Context;)V
 
     goto :goto_0
 
@@ -314,7 +314,7 @@
     move-result v0
 
     .line 60
-    invoke-static {p1, v0}, Lcom/android/settings/dndmode/m;->q(Landroid/content/Context;Z)V
+    invoke-static {p1, v0}, Lcom/android/settings_ext/dndmode/m;->q(Landroid/content/Context;Z)V
 
     goto :goto_0
 .end method

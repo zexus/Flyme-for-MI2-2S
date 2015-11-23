@@ -1,23 +1,23 @@
-.class Lcom/android/settings/location/MiuiLocationSettings$6;
+.class Lcom/android/settings_ext/location/MiuiLocationSettings$6;
 .super Landroid/content/BroadcastReceiver;
 .source "MiuiLocationSettings.java"
 
 
 # instance fields
-.field final synthetic acW:Lcom/android/settings/location/MiuiLocationSettings;
+.field final synthetic acW:Lcom/android/settings_ext/location/MiuiLocationSettings;
 
-.field final synthetic acX:Lcom/android/settings/location/SettingsInjector;
+.field final synthetic acX:Lcom/android/settings_ext/location/SettingsInjector;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/location/MiuiLocationSettings;Lcom/android/settings/location/SettingsInjector;)V
+.method constructor <init>(Lcom/android/settings_ext/location/MiuiLocationSettings;Lcom/android/settings_ext/location/SettingsInjector;)V
     .locals 0
 
     .prologue
     .line 323
-    iput-object p1, p0, Lcom/android/settings/location/MiuiLocationSettings$6;->acW:Lcom/android/settings/location/MiuiLocationSettings;
+    iput-object p1, p0, Lcom/android/settings_ext/location/MiuiLocationSettings$6;->acW:Lcom/android/settings_ext/location/MiuiLocationSettings;
 
-    iput-object p2, p0, Lcom/android/settings/location/MiuiLocationSettings$6;->acX:Lcom/android/settings/location/SettingsInjector;
+    iput-object p2, p0, Lcom/android/settings_ext/location/MiuiLocationSettings$6;->acX:Lcom/android/settings_ext/location/SettingsInjector;
 
     invoke-direct {p0}, Landroid/content/BroadcastReceiver;-><init>()V
 
@@ -66,9 +66,9 @@
 
     .line 329
     :cond_0
-    iget-object v0, p0, Lcom/android/settings/location/MiuiLocationSettings$6;->acX:Lcom/android/settings/location/SettingsInjector;
+    iget-object v0, p0, Lcom/android/settings_ext/location/MiuiLocationSettings$6;->acX:Lcom/android/settings_ext/location/SettingsInjector;
 
-    invoke-virtual {v0}, Lcom/android/settings/location/SettingsInjector;->qi()V
+    invoke-virtual {v0}, Lcom/android/settings_ext/location/SettingsInjector;->qi()V
 
     .line 330
     return-void

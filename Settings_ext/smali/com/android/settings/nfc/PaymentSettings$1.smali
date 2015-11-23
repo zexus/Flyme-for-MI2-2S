@@ -1,4 +1,4 @@
-.class Lcom/android/settings/nfc/PaymentSettings$1;
+.class Lcom/android/settings_ext/nfc/PaymentSettings$1;
 .super Ljava/lang/Object;
 .source "PaymentSettings.java"
 
@@ -7,16 +7,16 @@
 
 
 # instance fields
-.field final synthetic adL:Lcom/android/settings/nfc/PaymentSettings;
+.field final synthetic adL:Lcom/android/settings_ext/nfc/PaymentSettings;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/nfc/PaymentSettings;)V
+.method constructor <init>(Lcom/android/settings_ext/nfc/PaymentSettings;)V
     .locals 0
 
     .prologue
     .line 123
-    iput-object p1, p0, Lcom/android/settings/nfc/PaymentSettings$1;->adL:Lcom/android/settings/nfc/PaymentSettings;
+    iput-object p1, p0, Lcom/android/settings_ext/nfc/PaymentSettings$1;->adL:Lcom/android/settings_ext/nfc/PaymentSettings;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -30,9 +30,9 @@
 
     .prologue
     .line 127
-    iget-object v0, p0, Lcom/android/settings/nfc/PaymentSettings$1;->adL:Lcom/android/settings/nfc/PaymentSettings;
+    iget-object v0, p0, Lcom/android/settings_ext/nfc/PaymentSettings$1;->adL:Lcom/android/settings_ext/nfc/PaymentSettings;
 
-    invoke-virtual {v0}, Lcom/android/settings/nfc/PaymentSettings;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {v0}, Lcom/android/settings_ext/nfc/PaymentSettings;->getResources()Landroid/content/res/Resources;
 
     move-result-object v0
 
@@ -49,9 +49,9 @@
     if-nez v1, :cond_0
 
     .line 129
-    iget-object v1, p0, Lcom/android/settings/nfc/PaymentSettings$1;->adL:Lcom/android/settings/nfc/PaymentSettings;
+    iget-object v1, p0, Lcom/android/settings_ext/nfc/PaymentSettings$1;->adL:Lcom/android/settings_ext/nfc/PaymentSettings;
 
-    invoke-virtual {v1}, Lcom/android/settings/nfc/PaymentSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {v1}, Lcom/android/settings_ext/nfc/PaymentSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v1
 
@@ -59,7 +59,7 @@
 
     move-result-object v0
 
-    invoke-static {v1, v0}, Lcom/android/settings/cF;->a(Landroid/content/Context;Landroid/net/Uri;)Landroid/net/Uri;
+    invoke-static {v1, v0}, Lcom/android/settings_ext/cF;->a(Landroid/content/Context;Landroid/net/Uri;)Landroid/net/Uri;
 
     move-result-object v0
 
@@ -76,9 +76,9 @@
     invoke-virtual {v1, v0}, Landroid/content/Intent;->setFlags(I)Landroid/content/Intent;
 
     .line 134
-    iget-object v0, p0, Lcom/android/settings/nfc/PaymentSettings$1;->adL:Lcom/android/settings/nfc/PaymentSettings;
+    iget-object v0, p0, Lcom/android/settings_ext/nfc/PaymentSettings$1;->adL:Lcom/android/settings_ext/nfc/PaymentSettings;
 
-    invoke-virtual {v0, v1}, Lcom/android/settings/nfc/PaymentSettings;->startActivity(Landroid/content/Intent;)V
+    invoke-virtual {v0, v1}, Lcom/android/settings_ext/nfc/PaymentSettings;->startActivity(Landroid/content/Intent;)V
 
     .line 138
     :goto_0

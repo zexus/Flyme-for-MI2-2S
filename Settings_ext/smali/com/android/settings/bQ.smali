@@ -1,10 +1,10 @@
-.class public Lcom/android/settings/bQ;
+.class public Lcom/android/settings_ext/bQ;
 .super Landroid/widget/BaseAdapter;
 .source "DiracHeadsetAdapter.java"
 
 
 # instance fields
-.field private final jI:[Lcom/android/settings/bR;
+.field private final jI:[Lcom/android/settings_ext/bR;
 
 
 # direct methods
@@ -25,9 +25,9 @@
 
     move-result v0
 
-    new-array v0, v0, [Lcom/android/settings/bR;
+    new-array v0, v0, [Lcom/android/settings_ext/bR;
 
-    iput-object v0, p0, Lcom/android/settings/bQ;->jI:[Lcom/android/settings/bR;
+    iput-object v0, p0, Lcom/android/settings_ext/bQ;->jI:[Lcom/android/settings_ext/bR;
 
     .line 45
     const/4 v0, 0x0
@@ -67,19 +67,19 @@
     move-result v0
 
     .line 49
-    iget-object v4, p0, Lcom/android/settings/bQ;->jI:[Lcom/android/settings/bR;
+    iget-object v4, p0, Lcom/android/settings_ext/bQ;->jI:[Lcom/android/settings_ext/bR;
 
-    new-instance v5, Lcom/android/settings/bR;
+    new-instance v5, Lcom/android/settings_ext/bR;
 
-    invoke-direct {p0, v1}, Lcom/android/settings/bQ;->w(I)I
+    invoke-direct {p0, v1}, Lcom/android/settings_ext/bQ;->w(I)I
 
     move-result v6
 
-    invoke-direct {p0, v1}, Lcom/android/settings/bQ;->x(I)I
+    invoke-direct {p0, v1}, Lcom/android/settings_ext/bQ;->x(I)I
 
     move-result v1
 
-    invoke-direct {v5, v6, v1, v0}, Lcom/android/settings/bR;-><init>(III)V
+    invoke-direct {v5, v6, v1, v0}, Lcom/android/settings_ext/bR;-><init>(III)V
 
     aput-object v5, v4, v2
 
@@ -315,7 +315,7 @@
 
     .prologue
     .line 55
-    iget-object v0, p0, Lcom/android/settings/bQ;->jI:[Lcom/android/settings/bR;
+    iget-object v0, p0, Lcom/android/settings_ext/bQ;->jI:[Lcom/android/settings_ext/bR;
 
     array-length v0, v0
 
@@ -327,7 +327,7 @@
 
     .prologue
     .line 60
-    iget-object v0, p0, Lcom/android/settings/bQ;->jI:[Lcom/android/settings/bR;
+    iget-object v0, p0, Lcom/android/settings_ext/bQ;->jI:[Lcom/android/settings_ext/bR;
 
     aget-object v0, v0, p1
 
@@ -365,38 +365,38 @@
     move-result-object p2
 
     .line 72
-    new-instance v0, Lcom/android/settings/bS;
+    new-instance v0, Lcom/android/settings_ext/bS;
 
-    invoke-direct {v0, p2}, Lcom/android/settings/bS;-><init>(Landroid/view/View;)V
+    invoke-direct {v0, p2}, Lcom/android/settings_ext/bS;-><init>(Landroid/view/View;)V
 
     invoke-virtual {p2, v0}, Landroid/view/View;->setTag(Ljava/lang/Object;)V
 
     .line 75
     :cond_0
-    invoke-virtual {p0, p1}, Lcom/android/settings/bQ;->getItem(I)Ljava/lang/Object;
+    invoke-virtual {p0, p1}, Lcom/android/settings_ext/bQ;->getItem(I)Ljava/lang/Object;
 
     move-result-object v0
 
-    check-cast v0, Lcom/android/settings/bR;
+    check-cast v0, Lcom/android/settings_ext/bR;
 
     .line 76
     invoke-virtual {p2}, Landroid/view/View;->getTag()Ljava/lang/Object;
 
     move-result-object v1
 
-    check-cast v1, Lcom/android/settings/bS;
+    check-cast v1, Lcom/android/settings_ext/bS;
 
     .line 77
-    iget-object v2, v1, Lcom/android/settings/bS;->jL:Landroid/widget/ImageView;
+    iget-object v2, v1, Lcom/android/settings_ext/bS;->jL:Landroid/widget/ImageView;
 
-    iget v3, v0, Lcom/android/settings/bR;->jJ:I
+    iget v3, v0, Lcom/android/settings_ext/bR;->jJ:I
 
     invoke-virtual {v2, v3}, Landroid/widget/ImageView;->setImageResource(I)V
 
     .line 78
-    iget-object v1, v1, Lcom/android/settings/bS;->jM:Landroid/widget/TextView;
+    iget-object v1, v1, Lcom/android/settings_ext/bS;->jM:Landroid/widget/TextView;
 
-    iget v0, v0, Lcom/android/settings/bR;->jK:I
+    iget v0, v0, Lcom/android/settings_ext/bR;->jK:I
 
     invoke-virtual {v1, v0}, Landroid/widget/TextView;->setText(I)V
 
@@ -412,14 +412,14 @@
     const/4 v0, 0x0
 
     :goto_0
-    invoke-virtual {p0}, Lcom/android/settings/bQ;->getCount()I
+    invoke-virtual {p0}, Lcom/android/settings_ext/bQ;->getCount()I
 
     move-result v1
 
     if-ge v0, v1, :cond_1
 
     .line 85
-    invoke-virtual {p0, v0}, Lcom/android/settings/bQ;->v(I)I
+    invoke-virtual {p0, v0}, Lcom/android/settings_ext/bQ;->v(I)I
 
     move-result v1
 
@@ -447,13 +447,13 @@
 
     .prologue
     .line 94
-    invoke-virtual {p0, p1}, Lcom/android/settings/bQ;->getItem(I)Ljava/lang/Object;
+    invoke-virtual {p0, p1}, Lcom/android/settings_ext/bQ;->getItem(I)Ljava/lang/Object;
 
     move-result-object v0
 
-    check-cast v0, Lcom/android/settings/bR;
+    check-cast v0, Lcom/android/settings_ext/bR;
 
-    iget v0, v0, Lcom/android/settings/bR;->mType:I
+    iget v0, v0, Lcom/android/settings_ext/bR;->mType:I
 
     return v0
 .end method

@@ -1,4 +1,4 @@
-.class Lcom/android/settings/bc;
+.class Lcom/android/settings_ext/bc;
 .super Ljava/lang/Object;
 .source "DataUsageSummary.java"
 
@@ -7,16 +7,16 @@
 
 
 # instance fields
-.field final synthetic gH:Lcom/android/settings/DataUsageSummary;
+.field final synthetic gH:Lcom/android/settings_ext/DataUsageSummary;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/DataUsageSummary;)V
+.method constructor <init>(Lcom/android/settings_ext/DataUsageSummary;)V
     .locals 0
 
     .prologue
     .line 709
-    iput-object p1, p0, Lcom/android/settings/bc;->gH:Lcom/android/settings/DataUsageSummary;
+    iput-object p1, p0, Lcom/android/settings_ext/bc;->gH:Lcom/android/settings_ext/DataUsageSummary;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -32,9 +32,9 @@
     .line 712
     new-instance v0, Landroid/view/View;
 
-    iget-object v1, p0, Lcom/android/settings/bc;->gH:Lcom/android/settings/DataUsageSummary;
+    iget-object v1, p0, Lcom/android/settings_ext/bc;->gH:Lcom/android/settings_ext/DataUsageSummary;
 
-    invoke-static {v1}, Lcom/android/settings/DataUsageSummary;->c(Lcom/android/settings/DataUsageSummary;)Landroid/widget/TabHost;
+    invoke-static {v1}, Lcom/android/settings_ext/DataUsageSummary;->c(Lcom/android/settings_ext/DataUsageSummary;)Landroid/widget/TabHost;
 
     move-result-object v1
 

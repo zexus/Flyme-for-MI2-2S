@@ -1,31 +1,31 @@
-.class Lcom/android/settings/gF;
+.class Lcom/android/settings_ext/gF;
 .super Landroid/content/BroadcastReceiver;
 .source "TetherSettings.java"
 
 
 # instance fields
-.field final synthetic yt:Lcom/android/settings/TetherSettings;
+.field final synthetic yt:Lcom/android/settings_ext/TetherSettings;
 
 
 # direct methods
-.method private constructor <init>(Lcom/android/settings/TetherSettings;)V
+.method private constructor <init>(Lcom/android/settings_ext/TetherSettings;)V
     .locals 0
 
     .prologue
     .line 272
-    iput-object p1, p0, Lcom/android/settings/gF;->yt:Lcom/android/settings/TetherSettings;
+    iput-object p1, p0, Lcom/android/settings_ext/gF;->yt:Lcom/android/settings_ext/TetherSettings;
 
     invoke-direct {p0}, Landroid/content/BroadcastReceiver;-><init>()V
 
     return-void
 .end method
 
-.method synthetic constructor <init>(Lcom/android/settings/TetherSettings;Lcom/android/settings/gC;)V
+.method synthetic constructor <init>(Lcom/android/settings_ext/TetherSettings;Lcom/android/settings_ext/gC;)V
     .locals 0
 
     .prologue
     .line 272
-    invoke-direct {p0, p1}, Lcom/android/settings/gF;-><init>(Lcom/android/settings/TetherSettings;)V
+    invoke-direct {p0, p1}, Lcom/android/settings_ext/gF;-><init>(Lcom/android/settings_ext/TetherSettings;)V
 
     return-void
 .end method
@@ -76,7 +76,7 @@
     move-result-object v2
 
     .line 284
-    iget-object v3, p0, Lcom/android/settings/gF;->yt:Lcom/android/settings/TetherSettings;
+    iget-object v3, p0, Lcom/android/settings_ext/gF;->yt:Lcom/android/settings_ext/TetherSettings;
 
     invoke-virtual {v0}, Ljava/util/ArrayList;->size()I
 
@@ -114,7 +114,7 @@
 
     check-cast v2, [Ljava/lang/String;
 
-    invoke-static {v3, v0, v1, v2}, Lcom/android/settings/TetherSettings;->a(Lcom/android/settings/TetherSettings;[Ljava/lang/String;[Ljava/lang/String;[Ljava/lang/String;)V
+    invoke-static {v3, v0, v1, v2}, Lcom/android/settings_ext/TetherSettings;->a(Lcom/android/settings_ext/TetherSettings;[Ljava/lang/String;[Ljava/lang/String;[Ljava/lang/String;)V
 
     .line 319
     :cond_0
@@ -132,14 +132,14 @@
     if-eqz v1, :cond_2
 
     .line 288
-    iget-object v0, p0, Lcom/android/settings/gF;->yt:Lcom/android/settings/TetherSettings;
+    iget-object v0, p0, Lcom/android/settings_ext/gF;->yt:Lcom/android/settings_ext/TetherSettings;
 
-    invoke-static {v0, v3}, Lcom/android/settings/TetherSettings;->a(Lcom/android/settings/TetherSettings;Z)Z
+    invoke-static {v0, v3}, Lcom/android/settings_ext/TetherSettings;->a(Lcom/android/settings_ext/TetherSettings;Z)Z
 
     .line 289
-    iget-object v0, p0, Lcom/android/settings/gF;->yt:Lcom/android/settings/TetherSettings;
+    iget-object v0, p0, Lcom/android/settings_ext/gF;->yt:Lcom/android/settings_ext/TetherSettings;
 
-    invoke-static {v0}, Lcom/android/settings/TetherSettings;->b(Lcom/android/settings/TetherSettings;)V
+    invoke-static {v0}, Lcom/android/settings_ext/TetherSettings;->b(Lcom/android/settings_ext/TetherSettings;)V
 
     goto :goto_0
 
@@ -154,14 +154,14 @@
     if-eqz v1, :cond_3
 
     .line 291
-    iget-object v0, p0, Lcom/android/settings/gF;->yt:Lcom/android/settings/TetherSettings;
+    iget-object v0, p0, Lcom/android/settings_ext/gF;->yt:Lcom/android/settings_ext/TetherSettings;
 
-    invoke-static {v0, v2}, Lcom/android/settings/TetherSettings;->a(Lcom/android/settings/TetherSettings;Z)Z
+    invoke-static {v0, v2}, Lcom/android/settings_ext/TetherSettings;->a(Lcom/android/settings_ext/TetherSettings;Z)Z
 
     .line 292
-    iget-object v0, p0, Lcom/android/settings/gF;->yt:Lcom/android/settings/TetherSettings;
+    iget-object v0, p0, Lcom/android/settings_ext/gF;->yt:Lcom/android/settings_ext/TetherSettings;
 
-    invoke-static {v0}, Lcom/android/settings/TetherSettings;->b(Lcom/android/settings/TetherSettings;)V
+    invoke-static {v0}, Lcom/android/settings_ext/TetherSettings;->b(Lcom/android/settings_ext/TetherSettings;)V
 
     goto :goto_0
 
@@ -176,7 +176,7 @@
     if-eqz v1, :cond_4
 
     .line 294
-    iget-object v0, p0, Lcom/android/settings/gF;->yt:Lcom/android/settings/TetherSettings;
+    iget-object v0, p0, Lcom/android/settings_ext/gF;->yt:Lcom/android/settings_ext/TetherSettings;
 
     const-string v1, "connected"
 
@@ -184,12 +184,12 @@
 
     move-result v1
 
-    invoke-static {v0, v1}, Lcom/android/settings/TetherSettings;->b(Lcom/android/settings/TetherSettings;Z)Z
+    invoke-static {v0, v1}, Lcom/android/settings_ext/TetherSettings;->b(Lcom/android/settings_ext/TetherSettings;Z)Z
 
     .line 295
-    iget-object v0, p0, Lcom/android/settings/gF;->yt:Lcom/android/settings/TetherSettings;
+    iget-object v0, p0, Lcom/android/settings_ext/gF;->yt:Lcom/android/settings_ext/TetherSettings;
 
-    invoke-static {v0}, Lcom/android/settings/TetherSettings;->b(Lcom/android/settings/TetherSettings;)V
+    invoke-static {v0}, Lcom/android/settings_ext/TetherSettings;->b(Lcom/android/settings_ext/TetherSettings;)V
 
     goto :goto_0
 
@@ -204,9 +204,9 @@
     if-eqz v0, :cond_0
 
     .line 297
-    iget-object v0, p0, Lcom/android/settings/gF;->yt:Lcom/android/settings/TetherSettings;
+    iget-object v0, p0, Lcom/android/settings_ext/gF;->yt:Lcom/android/settings_ext/TetherSettings;
 
-    invoke-static {v0}, Lcom/android/settings/TetherSettings;->c(Lcom/android/settings/TetherSettings;)Z
+    invoke-static {v0}, Lcom/android/settings_ext/TetherSettings;->c(Lcom/android/settings_ext/TetherSettings;)Z
 
     move-result v0
 
@@ -226,17 +226,17 @@
     .line 317
     :cond_5
     :goto_1
-    iget-object v0, p0, Lcom/android/settings/gF;->yt:Lcom/android/settings/TetherSettings;
+    iget-object v0, p0, Lcom/android/settings_ext/gF;->yt:Lcom/android/settings_ext/TetherSettings;
 
-    invoke-static {v0}, Lcom/android/settings/TetherSettings;->b(Lcom/android/settings/TetherSettings;)V
+    invoke-static {v0}, Lcom/android/settings_ext/TetherSettings;->b(Lcom/android/settings_ext/TetherSettings;)V
 
     goto :goto_0
 
     .line 301
     :sswitch_0
-    iget-object v0, p0, Lcom/android/settings/gF;->yt:Lcom/android/settings/TetherSettings;
+    iget-object v0, p0, Lcom/android/settings_ext/gF;->yt:Lcom/android/settings_ext/TetherSettings;
 
-    invoke-static {v0}, Lcom/android/settings/TetherSettings;->a(Lcom/android/settings/TetherSettings;)Ljava/util/concurrent/atomic/AtomicReference;
+    invoke-static {v0}, Lcom/android/settings_ext/TetherSettings;->a(Lcom/android/settings_ext/TetherSettings;)Ljava/util/concurrent/atomic/AtomicReference;
 
     move-result-object v0
 
@@ -253,17 +253,17 @@
     invoke-virtual {v0, v3}, Landroid/bluetooth/BluetoothPan;->setBluetoothTethering(Z)V
 
     .line 304
-    iget-object v0, p0, Lcom/android/settings/gF;->yt:Lcom/android/settings/TetherSettings;
+    iget-object v0, p0, Lcom/android/settings_ext/gF;->yt:Lcom/android/settings_ext/TetherSettings;
 
-    invoke-static {v0, v2}, Lcom/android/settings/TetherSettings;->c(Lcom/android/settings/TetherSettings;Z)Z
+    invoke-static {v0, v2}, Lcom/android/settings_ext/TetherSettings;->c(Lcom/android/settings_ext/TetherSettings;Z)Z
 
     goto :goto_1
 
     .line 310
     :sswitch_1
-    iget-object v0, p0, Lcom/android/settings/gF;->yt:Lcom/android/settings/TetherSettings;
+    iget-object v0, p0, Lcom/android/settings_ext/gF;->yt:Lcom/android/settings_ext/TetherSettings;
 
-    invoke-static {v0, v2}, Lcom/android/settings/TetherSettings;->c(Lcom/android/settings/TetherSettings;Z)Z
+    invoke-static {v0, v2}, Lcom/android/settings_ext/TetherSettings;->c(Lcom/android/settings_ext/TetherSettings;Z)Z
 
     goto :goto_1
 

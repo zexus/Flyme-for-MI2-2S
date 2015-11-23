@@ -1,4 +1,4 @@
-.class public Lcom/android/settings/accounts/AccountSettings$ConfirmAutoSyncChangeFragment;
+.class public Lcom/android/settings_ext/accounts/AccountSettings$ConfirmAutoSyncChangeFragment;
 .super Landroid/app/DialogFragment;
 .source "AccountSettings.java"
 
@@ -20,12 +20,12 @@
     return-void
 .end method
 
-.method public static a(Lcom/android/settings/accounts/AccountSettings;ZLandroid/os/UserHandle;)V
+.method public static a(Lcom/android/settings_ext/accounts/AccountSettings;ZLandroid/os/UserHandle;)V
     .locals 3
 
     .prologue
     .line 543
-    invoke-virtual {p0}, Lcom/android/settings/accounts/AccountSettings;->isAdded()Z
+    invoke-virtual {p0}, Lcom/android/settings_ext/accounts/AccountSettings;->isAdded()Z
 
     move-result v0
 
@@ -37,49 +37,49 @@
 
     .line 545
     :cond_0
-    new-instance v0, Lcom/android/settings/accounts/AccountSettings$ConfirmAutoSyncChangeFragment;
+    new-instance v0, Lcom/android/settings_ext/accounts/AccountSettings$ConfirmAutoSyncChangeFragment;
 
-    invoke-direct {v0}, Lcom/android/settings/accounts/AccountSettings$ConfirmAutoSyncChangeFragment;-><init>()V
+    invoke-direct {v0}, Lcom/android/settings_ext/accounts/AccountSettings$ConfirmAutoSyncChangeFragment;-><init>()V
 
     .line 546
-    iput-boolean p1, v0, Lcom/android/settings/accounts/AccountSettings$ConfirmAutoSyncChangeFragment;->BG:Z
+    iput-boolean p1, v0, Lcom/android/settings_ext/accounts/AccountSettings$ConfirmAutoSyncChangeFragment;->BG:Z
 
     .line 547
-    iput-object p2, v0, Lcom/android/settings/accounts/AccountSettings$ConfirmAutoSyncChangeFragment;->zA:Landroid/os/UserHandle;
+    iput-object p2, v0, Lcom/android/settings_ext/accounts/AccountSettings$ConfirmAutoSyncChangeFragment;->zA:Landroid/os/UserHandle;
 
     .line 548
     const/4 v1, 0x0
 
-    invoke-virtual {v0, p0, v1}, Lcom/android/settings/accounts/AccountSettings$ConfirmAutoSyncChangeFragment;->setTargetFragment(Landroid/app/Fragment;I)V
+    invoke-virtual {v0, p0, v1}, Lcom/android/settings_ext/accounts/AccountSettings$ConfirmAutoSyncChangeFragment;->setTargetFragment(Landroid/app/Fragment;I)V
 
     .line 549
-    invoke-virtual {p0}, Lcom/android/settings/accounts/AccountSettings;->getFragmentManager()Landroid/app/FragmentManager;
+    invoke-virtual {p0}, Lcom/android/settings_ext/accounts/AccountSettings;->getFragmentManager()Landroid/app/FragmentManager;
 
     move-result-object v1
 
     const-string v2, "confirmAutoSyncChange"
 
-    invoke-virtual {v0, v1, v2}, Lcom/android/settings/accounts/AccountSettings$ConfirmAutoSyncChangeFragment;->show(Landroid/app/FragmentManager;Ljava/lang/String;)V
+    invoke-virtual {v0, v1, v2}, Lcom/android/settings_ext/accounts/AccountSettings$ConfirmAutoSyncChangeFragment;->show(Landroid/app/FragmentManager;Ljava/lang/String;)V
 
     goto :goto_0
 .end method
 
-.method static synthetic a(Lcom/android/settings/accounts/AccountSettings$ConfirmAutoSyncChangeFragment;)Z
+.method static synthetic a(Lcom/android/settings_ext/accounts/AccountSettings$ConfirmAutoSyncChangeFragment;)Z
     .locals 1
 
     .prologue
     .line 537
-    iget-boolean v0, p0, Lcom/android/settings/accounts/AccountSettings$ConfirmAutoSyncChangeFragment;->BG:Z
+    iget-boolean v0, p0, Lcom/android/settings_ext/accounts/AccountSettings$ConfirmAutoSyncChangeFragment;->BG:Z
 
     return v0
 .end method
 
-.method static synthetic b(Lcom/android/settings/accounts/AccountSettings$ConfirmAutoSyncChangeFragment;)Landroid/os/UserHandle;
+.method static synthetic b(Lcom/android/settings_ext/accounts/AccountSettings$ConfirmAutoSyncChangeFragment;)Landroid/os/UserHandle;
     .locals 1
 
     .prologue
     .line 537
-    iget-object v0, p0, Lcom/android/settings/accounts/AccountSettings$ConfirmAutoSyncChangeFragment;->zA:Landroid/os/UserHandle;
+    iget-object v0, p0, Lcom/android/settings_ext/accounts/AccountSettings$ConfirmAutoSyncChangeFragment;->zA:Landroid/os/UserHandle;
 
     return-object v0
 .end method
@@ -91,7 +91,7 @@
 
     .prologue
     .line 554
-    invoke-virtual {p0}, Lcom/android/settings/accounts/AccountSettings$ConfirmAutoSyncChangeFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/accounts/AccountSettings$ConfirmAutoSyncChangeFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
@@ -105,7 +105,7 @@
 
     move-result v1
 
-    iput-boolean v1, p0, Lcom/android/settings/accounts/AccountSettings$ConfirmAutoSyncChangeFragment;->BG:Z
+    iput-boolean v1, p0, Lcom/android/settings_ext/accounts/AccountSettings$ConfirmAutoSyncChangeFragment;->BG:Z
 
     .line 559
     :cond_0
@@ -114,7 +114,7 @@
     invoke-direct {v1, v0}, Landroid/app/AlertDialog$Builder;-><init>(Landroid/content/Context;)V
 
     .line 560
-    iget-boolean v0, p0, Lcom/android/settings/accounts/AccountSettings$ConfirmAutoSyncChangeFragment;->BG:Z
+    iget-boolean v0, p0, Lcom/android/settings_ext/accounts/AccountSettings$ConfirmAutoSyncChangeFragment;->BG:Z
 
     if-nez v0, :cond_1
 
@@ -132,9 +132,9 @@
     :goto_0
     const v0, 0x104000a
 
-    new-instance v2, Lcom/android/settings/accounts/AccountSettings$ConfirmAutoSyncChangeFragment$1;
+    new-instance v2, Lcom/android/settings_ext/accounts/AccountSettings$ConfirmAutoSyncChangeFragment$1;
 
-    invoke-direct {v2, p0}, Lcom/android/settings/accounts/AccountSettings$ConfirmAutoSyncChangeFragment$1;-><init>(Lcom/android/settings/accounts/AccountSettings$ConfirmAutoSyncChangeFragment;)V
+    invoke-direct {v2, p0}, Lcom/android/settings_ext/accounts/AccountSettings$ConfirmAutoSyncChangeFragment$1;-><init>(Lcom/android/settings_ext/accounts/AccountSettings$ConfirmAutoSyncChangeFragment;)V
 
     invoke-virtual {v1, v0, v2}, Landroid/app/AlertDialog$Builder;->setPositiveButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
@@ -176,7 +176,7 @@
     .line 583
     const-string v0, "enabling"
 
-    iget-boolean v1, p0, Lcom/android/settings/accounts/AccountSettings$ConfirmAutoSyncChangeFragment;->BG:Z
+    iget-boolean v1, p0, Lcom/android/settings_ext/accounts/AccountSettings$ConfirmAutoSyncChangeFragment;->BG:Z
 
     invoke-virtual {p1, v0, v1}, Landroid/os/Bundle;->putBoolean(Ljava/lang/String;Z)V
 

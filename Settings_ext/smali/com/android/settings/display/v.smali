@@ -1,5 +1,5 @@
-.class public Lcom/android/settings/display/v;
-.super Lcom/android/settings/Z;
+.class public Lcom/android/settings_ext/display/v;
+.super Lcom/android/settings_ext/Z;
 .source "PageLayoutStatusController.java"
 
 
@@ -19,10 +19,10 @@
 
     invoke-direct {v0}, Landroid/util/SparseArray;-><init>()V
 
-    sput-object v0, Lcom/android/settings/display/v;->jU:Landroid/util/SparseArray;
+    sput-object v0, Lcom/android/settings_ext/display/v;->jU:Landroid/util/SparseArray;
 
     .line 24
-    sget-object v0, Lcom/android/settings/display/v;->jU:Landroid/util/SparseArray;
+    sget-object v0, Lcom/android/settings_ext/display/v;->jU:Landroid/util/SparseArray;
 
     const/16 v1, 0xc
 
@@ -35,7 +35,7 @@
     invoke-virtual {v0, v1, v2}, Landroid/util/SparseArray;->put(ILjava/lang/Object;)V
 
     .line 25
-    sget-object v0, Lcom/android/settings/display/v;->jU:Landroid/util/SparseArray;
+    sget-object v0, Lcom/android/settings_ext/display/v;->jU:Landroid/util/SparseArray;
 
     invoke-static {v3}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -44,7 +44,7 @@
     invoke-virtual {v0, v3, v1}, Landroid/util/SparseArray;->put(ILjava/lang/Object;)V
 
     .line 26
-    sget-object v0, Lcom/android/settings/display/v;->jU:Landroid/util/SparseArray;
+    sget-object v0, Lcom/android/settings_ext/display/v;->jU:Landroid/util/SparseArray;
 
     const/16 v1, 0xd
 
@@ -57,7 +57,7 @@
     invoke-virtual {v0, v1, v2}, Landroid/util/SparseArray;->put(ILjava/lang/Object;)V
 
     .line 27
-    sget-object v0, Lcom/android/settings/display/v;->jU:Landroid/util/SparseArray;
+    sget-object v0, Lcom/android/settings_ext/display/v;->jU:Landroid/util/SparseArray;
 
     const/16 v1, 0xe
 
@@ -70,7 +70,7 @@
     invoke-virtual {v0, v1, v2}, Landroid/util/SparseArray;->put(ILjava/lang/Object;)V
 
     .line 28
-    sget-object v0, Lcom/android/settings/display/v;->jU:Landroid/util/SparseArray;
+    sget-object v0, Lcom/android/settings_ext/display/v;->jU:Landroid/util/SparseArray;
 
     const/16 v1, 0xf
 
@@ -83,7 +83,7 @@
     invoke-virtual {v0, v1, v2}, Landroid/util/SparseArray;->put(ILjava/lang/Object;)V
 
     .line 29
-    sget-object v0, Lcom/android/settings/display/v;->jU:Landroid/util/SparseArray;
+    sget-object v0, Lcom/android/settings_ext/display/v;->jU:Landroid/util/SparseArray;
 
     const/16 v1, 0xb
 
@@ -104,7 +104,7 @@
 
     .prologue
     .line 19
-    invoke-direct {p0, p1, p2}, Lcom/android/settings/Z;-><init>(Landroid/content/Context;Landroid/widget/TextView;)V
+    invoke-direct {p0, p1, p2}, Lcom/android/settings_ext/Z;-><init>(Landroid/content/Context;Landroid/widget/TextView;)V
 
     .line 20
     return-void
@@ -133,7 +133,7 @@
     if-eqz v0, :cond_1
 
     .line 38
-    sget-object v2, Lcom/android/settings/display/v;->jU:Landroid/util/SparseArray;
+    sget-object v2, Lcom/android/settings_ext/display/v;->jU:Landroid/util/SparseArray;
 
     iget v0, v0, Landroid/content/res/Configuration;->uiMode:I
 
@@ -149,7 +149,7 @@
 
     .line 43
     :goto_0
-    iget-object v1, p0, Lcom/android/settings/display/v;->mContext:Landroid/content/Context;
+    iget-object v1, p0, Lcom/android/settings_ext/display/v;->mContext:Landroid/content/Context;
 
     invoke-virtual {v1}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
 
@@ -164,12 +164,12 @@
     .line 44
     if-eqz v0, :cond_0
 
-    iget-object v2, p0, Lcom/android/settings/display/v;->ca:Landroid/widget/TextView;
+    iget-object v2, p0, Lcom/android/settings_ext/display/v;->ca:Landroid/widget/TextView;
 
     if-eqz v2, :cond_0
 
     .line 45
-    iget-object v2, p0, Lcom/android/settings/display/v;->ca:Landroid/widget/TextView;
+    iget-object v2, p0, Lcom/android/settings_ext/display/v;->ca:Landroid/widget/TextView;
 
     invoke-virtual {v0}, Ljava/lang/Integer;->intValue()I
 

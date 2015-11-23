@@ -1,4 +1,4 @@
-.class Lcom/android/settings/bluetooth/BluetoothSettings$3;
+.class Lcom/android/settings_ext/bluetooth/BluetoothSettings$3;
 .super Ljava/lang/Object;
 .source "BluetoothSettings.java"
 
@@ -7,16 +7,16 @@
 
 
 # instance fields
-.field final synthetic Nt:Lcom/android/settings/bluetooth/BluetoothSettings;
+.field final synthetic Nt:Lcom/android/settings_ext/bluetooth/BluetoothSettings;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/bluetooth/BluetoothSettings;)V
+.method constructor <init>(Lcom/android/settings_ext/bluetooth/BluetoothSettings;)V
     .locals 0
 
     .prologue
     .line 455
-    iput-object p1, p0, Lcom/android/settings/bluetooth/BluetoothSettings$3;->Nt:Lcom/android/settings/bluetooth/BluetoothSettings;
+    iput-object p1, p0, Lcom/android/settings_ext/bluetooth/BluetoothSettings$3;->Nt:Lcom/android/settings_ext/bluetooth/BluetoothSettings;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -36,7 +36,7 @@
 
     move-result-object v0
 
-    instance-of v0, v0, Lcom/android/settings/bluetooth/CachedBluetoothDevice;
+    instance-of v0, v0, Lcom/android/settings_ext/bluetooth/CachedBluetoothDevice;
 
     if-nez v0, :cond_0
 
@@ -73,7 +73,7 @@
 
     move-result-object v0
 
-    check-cast v0, Lcom/android/settings/bluetooth/CachedBluetoothDevice;
+    check-cast v0, Lcom/android/settings_ext/bluetooth/CachedBluetoothDevice;
 
     .line 466
     new-instance v2, Landroid/os/Bundle;
@@ -85,20 +85,20 @@
     .line 467
     const-string v1, "device"
 
-    invoke-virtual {v0}, Lcom/android/settings/bluetooth/CachedBluetoothDevice;->getDevice()Landroid/bluetooth/BluetoothDevice;
+    invoke-virtual {v0}, Lcom/android/settings_ext/bluetooth/CachedBluetoothDevice;->getDevice()Landroid/bluetooth/BluetoothDevice;
 
     move-result-object v0
 
     invoke-virtual {v2, v1, v0}, Landroid/os/Bundle;->putParcelable(Ljava/lang/String;Landroid/os/Parcelable;)V
 
     .line 472
-    iget-object v0, p0, Lcom/android/settings/bluetooth/BluetoothSettings$3;->Nt:Lcom/android/settings/bluetooth/BluetoothSettings;
+    iget-object v0, p0, Lcom/android/settings_ext/bluetooth/BluetoothSettings$3;->Nt:Lcom/android/settings_ext/bluetooth/BluetoothSettings;
 
-    invoke-virtual {v0}, Lcom/android/settings/bluetooth/BluetoothSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {v0}, Lcom/android/settings_ext/bluetooth/BluetoothSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
-    const-class v1, Lcom/android/settings/bluetooth/DeviceProfilesSettings;
+    const-class v1, Lcom/android/settings_ext/bluetooth/DeviceProfilesSettings;
 
     invoke-virtual {v1}, Ljava/lang/Class;->getName()Ljava/lang/String;
 
@@ -110,7 +110,7 @@
 
     move-object v5, v4
 
-    invoke-static/range {v0 .. v6}, Lcom/android/settings/eK;->a(Landroid/app/Activity;Ljava/lang/String;Landroid/os/Bundle;ILjava/lang/CharSequence;Landroid/app/Fragment;I)V
+    invoke-static/range {v0 .. v6}, Lcom/android/settings_ext/eK;->a(Landroid/app/Activity;Ljava/lang/String;Landroid/os/Bundle;ILjava/lang/CharSequence;Landroid/app/Fragment;I)V
 
     goto :goto_0
 .end method

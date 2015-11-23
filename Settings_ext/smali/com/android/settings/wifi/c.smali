@@ -1,10 +1,10 @@
-.class public Lcom/android/settings/wifi/c;
+.class public Lcom/android/settings_ext/wifi/c;
 .super Ljava/lang/Object;
 .source "AutoConnectUtils.java"
 
 
 # static fields
-.field private static asx:Lcom/android/settings/wifi/c;
+.field private static asx:Lcom/android/settings_ext/wifi/c;
 
 
 # instance fields
@@ -24,38 +24,38 @@
     .line 17
     const-string v0, "open_wifi_auto_connect_ssid"
 
-    iput-object v0, p0, Lcom/android/settings/wifi/c;->asz:Ljava/lang/String;
+    iput-object v0, p0, Lcom/android/settings_ext/wifi/c;->asz:Ljava/lang/String;
 
     .line 19
     invoke-static {p1}, Landroid/provider/MiuiSettings$System;->getDisableWifiAutoConnectSsid(Landroid/content/Context;)Ljava/util/HashSet;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/wifi/c;->asy:Ljava/util/HashSet;
+    iput-object v0, p0, Lcom/android/settings_ext/wifi/c;->asy:Ljava/util/HashSet;
 
     .line 20
     return-void
 .end method
 
-.method public static bA(Landroid/content/Context;)Lcom/android/settings/wifi/c;
+.method public static bA(Landroid/content/Context;)Lcom/android/settings_ext/wifi/c;
     .locals 1
 
     .prologue
     .line 23
-    sget-object v0, Lcom/android/settings/wifi/c;->asx:Lcom/android/settings/wifi/c;
+    sget-object v0, Lcom/android/settings_ext/wifi/c;->asx:Lcom/android/settings_ext/wifi/c;
 
     if-nez v0, :cond_0
 
     .line 24
-    new-instance v0, Lcom/android/settings/wifi/c;
+    new-instance v0, Lcom/android/settings_ext/wifi/c;
 
-    invoke-direct {v0, p0}, Lcom/android/settings/wifi/c;-><init>(Landroid/content/Context;)V
+    invoke-direct {v0, p0}, Lcom/android/settings_ext/wifi/c;-><init>(Landroid/content/Context;)V
 
-    sput-object v0, Lcom/android/settings/wifi/c;->asx:Lcom/android/settings/wifi/c;
+    sput-object v0, Lcom/android/settings_ext/wifi/c;->asx:Lcom/android/settings_ext/wifi/c;
 
     .line 26
     :cond_0
-    sget-object v0, Lcom/android/settings/wifi/c;->asx:Lcom/android/settings/wifi/c;
+    sget-object v0, Lcom/android/settings_ext/wifi/c;->asx:Lcom/android/settings_ext/wifi/c;
 
     return-object v0
 .end method
@@ -75,7 +75,7 @@
     invoke-direct {v1}, Ljava/util/HashSet;-><init>()V
 
     .line 83
-    iget-object v2, p0, Lcom/android/settings/wifi/c;->asz:Ljava/lang/String;
+    iget-object v2, p0, Lcom/android/settings_ext/wifi/c;->asz:Ljava/lang/String;
 
     invoke-interface {v0, v2, v1}, Landroid/content/SharedPreferences;->getStringSet(Ljava/lang/String;Ljava/util/Set;)Ljava/util/Set;
 
@@ -130,7 +130,7 @@
     if-eqz p3, :cond_2
 
     .line 48
-    iget-object v2, p0, Lcom/android/settings/wifi/c;->asy:Ljava/util/HashSet;
+    iget-object v2, p0, Lcom/android/settings_ext/wifi/c;->asy:Ljava/util/HashSet;
 
     invoke-virtual {v2, v0}, Ljava/util/HashSet;->remove(Ljava/lang/Object;)Z
 
@@ -138,7 +138,7 @@
 
     .line 50
     :cond_2
-    iget-object v2, p0, Lcom/android/settings/wifi/c;->asy:Ljava/util/HashSet;
+    iget-object v2, p0, Lcom/android/settings_ext/wifi/c;->asy:Ljava/util/HashSet;
 
     invoke-virtual {v2, v0}, Ljava/util/HashSet;->add(Ljava/lang/Object;)Z
 
@@ -146,7 +146,7 @@
 
     .line 53
     :cond_3
-    iget-object v0, p0, Lcom/android/settings/wifi/c;->asy:Ljava/util/HashSet;
+    iget-object v0, p0, Lcom/android/settings_ext/wifi/c;->asy:Ljava/util/HashSet;
 
     invoke-static {p1, v0}, Landroid/provider/MiuiSettings$System;->setDisableWifiAutoConnectSsid(Landroid/content/Context;Ljava/util/HashSet;)V
 
@@ -158,7 +158,7 @@
 
     .prologue
     .line 30
-    iget-object v0, p0, Lcom/android/settings/wifi/c;->asy:Ljava/util/HashSet;
+    iget-object v0, p0, Lcom/android/settings_ext/wifi/c;->asy:Ljava/util/HashSet;
 
     invoke-virtual {v0, p1}, Ljava/util/HashSet;->contains(Ljava/lang/Object;)Z
 
@@ -185,13 +185,13 @@
     if-eqz p3, :cond_0
 
     .line 35
-    iget-object v0, p0, Lcom/android/settings/wifi/c;->asy:Ljava/util/HashSet;
+    iget-object v0, p0, Lcom/android/settings_ext/wifi/c;->asy:Ljava/util/HashSet;
 
     invoke-virtual {v0, p2}, Ljava/util/HashSet;->remove(Ljava/lang/Object;)Z
 
     .line 39
     :goto_0
-    iget-object v0, p0, Lcom/android/settings/wifi/c;->asy:Ljava/util/HashSet;
+    iget-object v0, p0, Lcom/android/settings_ext/wifi/c;->asy:Ljava/util/HashSet;
 
     invoke-static {p1, v0}, Landroid/provider/MiuiSettings$System;->setDisableWifiAutoConnectSsid(Landroid/content/Context;Ljava/util/HashSet;)V
 
@@ -200,7 +200,7 @@
 
     .line 37
     :cond_0
-    iget-object v0, p0, Lcom/android/settings/wifi/c;->asy:Ljava/util/HashSet;
+    iget-object v0, p0, Lcom/android/settings_ext/wifi/c;->asy:Ljava/util/HashSet;
 
     invoke-virtual {v0, p2}, Ljava/util/HashSet;->add(Ljava/lang/Object;)Z
 
@@ -212,7 +212,7 @@
 
     .prologue
     .line 66
-    invoke-direct {p0, p1}, Lcom/android/settings/wifi/c;->bB(Landroid/content/Context;)Ljava/util/HashSet;
+    invoke-direct {p0, p1}, Lcom/android/settings_ext/wifi/c;->bB(Landroid/content/Context;)Ljava/util/HashSet;
 
     move-result-object v0
 
@@ -237,7 +237,7 @@
     move-result-object v1
 
     .line 71
-    iget-object v2, p0, Lcom/android/settings/wifi/c;->asz:Ljava/lang/String;
+    iget-object v2, p0, Lcom/android/settings_ext/wifi/c;->asz:Ljava/lang/String;
 
     invoke-interface {v1, v2, v0}, Landroid/content/SharedPreferences$Editor;->putStringSet(Ljava/lang/String;Ljava/util/Set;)Landroid/content/SharedPreferences$Editor;
 
@@ -254,7 +254,7 @@
 
     .prologue
     .line 77
-    invoke-direct {p0, p1}, Lcom/android/settings/wifi/c;->bB(Landroid/content/Context;)Ljava/util/HashSet;
+    invoke-direct {p0, p1}, Lcom/android/settings_ext/wifi/c;->bB(Landroid/content/Context;)Ljava/util/HashSet;
 
     move-result-object v0
 

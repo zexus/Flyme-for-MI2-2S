@@ -1,4 +1,4 @@
-.class abstract Lcom/android/settings/print/r;
+.class abstract Lcom/android/settings_ext/print/r;
 .super Landroid/database/ContentObserver;
 .source "PrintSettingsFragment.java"
 

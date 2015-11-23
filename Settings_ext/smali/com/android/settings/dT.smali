@@ -1,26 +1,26 @@
-.class Lcom/android/settings/dT;
+.class Lcom/android/settings_ext/dT;
 .super Landroid/content/pm/IPackageDeleteObserver$Stub;
 .source "MiuiMasterClear.java"
 
 
 # instance fields
-.field private qs:Lcom/android/settings/dU;
+.field private qs:Lcom/android/settings_ext/dU;
 
-.field final synthetic qt:Lcom/android/settings/dS;
+.field final synthetic qt:Lcom/android/settings_ext/dS;
 
 
 # direct methods
-.method public constructor <init>(Lcom/android/settings/dS;Lcom/android/settings/dU;)V
+.method public constructor <init>(Lcom/android/settings_ext/dS;Lcom/android/settings_ext/dU;)V
     .locals 0
 
     .prologue
     .line 430
-    iput-object p1, p0, Lcom/android/settings/dT;->qt:Lcom/android/settings/dS;
+    iput-object p1, p0, Lcom/android/settings_ext/dT;->qt:Lcom/android/settings_ext/dS;
 
     invoke-direct {p0}, Landroid/content/pm/IPackageDeleteObserver$Stub;-><init>()V
 
     .line 431
-    iput-object p2, p0, Lcom/android/settings/dT;->qs:Lcom/android/settings/dU;
+    iput-object p2, p0, Lcom/android/settings_ext/dT;->qs:Lcom/android/settings_ext/dU;
 
     .line 432
     return-void
@@ -37,9 +37,9 @@
 
     .line 444
     :pswitch_0
-    iget-object v0, p0, Lcom/android/settings/dT;->qs:Lcom/android/settings/dU;
+    iget-object v0, p0, Lcom/android/settings_ext/dT;->qs:Lcom/android/settings_ext/dU;
 
-    invoke-virtual {v0}, Lcom/android/settings/dU;->finish()V
+    invoke-virtual {v0}, Lcom/android/settings_ext/dU;->finish()V
 
     .line 445
     return-void

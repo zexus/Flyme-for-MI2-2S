@@ -1,5 +1,5 @@
-.class public Lcom/android/settings/MiuiSecurityTrustedCredentials;
-.super Lcom/android/settings/BaseFragment;
+.class public Lcom/android/settings_ext/MiuiSecurityTrustedCredentials;
+.super Lcom/android/settings_ext/BaseFragment;
 .source "MiuiSecurityTrustedCredentials.java"
 
 # interfaces
@@ -12,13 +12,13 @@
 
     .prologue
     .line 54
-    invoke-direct {p0}, Lcom/android/settings/BaseFragment;-><init>()V
+    invoke-direct {p0}, Lcom/android/settings_ext/BaseFragment;-><init>()V
 
     .line 391
     return-void
 .end method
 
-.method private a(Lmiui/app/ActionBar;Lcom/android/settings/MiuiSecurityTrustedCredentials$Tab;I)V
+.method private a(Lmiui/app/ActionBar;Lcom/android/settings_ext/MiuiSecurityTrustedCredentials$Tab;I)V
     .locals 7
 
     .prologue
@@ -30,7 +30,7 @@
     .line 164
     const-string v0, "tab_tag"
 
-    invoke-static {p2}, Lcom/android/settings/MiuiSecurityTrustedCredentials$Tab;->a(Lcom/android/settings/MiuiSecurityTrustedCredentials$Tab;)Ljava/lang/String;
+    invoke-static {p2}, Lcom/android/settings_ext/MiuiSecurityTrustedCredentials$Tab;->a(Lcom/android/settings_ext/MiuiSecurityTrustedCredentials$Tab;)Ljava/lang/String;
 
     move-result-object v1
 
@@ -42,11 +42,11 @@
     move-result-object v2
 
     .line 166
-    invoke-virtual {p0}, Lcom/android/settings/MiuiSecurityTrustedCredentials;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/MiuiSecurityTrustedCredentials;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
-    invoke-static {p2}, Lcom/android/settings/MiuiSecurityTrustedCredentials$Tab;->b(Lcom/android/settings/MiuiSecurityTrustedCredentials$Tab;)I
+    invoke-static {p2}, Lcom/android/settings_ext/MiuiSecurityTrustedCredentials$Tab;->b(Lcom/android/settings_ext/MiuiSecurityTrustedCredentials$Tab;)I
 
     move-result v1
 
@@ -57,11 +57,11 @@
     invoke-virtual {v2, v0}, Landroid/app/ActionBar$Tab;->setText(Ljava/lang/CharSequence;)Landroid/app/ActionBar$Tab;
 
     .line 167
-    invoke-static {p2}, Lcom/android/settings/MiuiSecurityTrustedCredentials$Tab;->a(Lcom/android/settings/MiuiSecurityTrustedCredentials$Tab;)Ljava/lang/String;
+    invoke-static {p2}, Lcom/android/settings_ext/MiuiSecurityTrustedCredentials$Tab;->a(Lcom/android/settings_ext/MiuiSecurityTrustedCredentials$Tab;)Ljava/lang/String;
 
     move-result-object v1
 
-    const-class v4, Lcom/android/settings/MiuiSecurityTrustedCredentials$TrustedCredentialFragment;
+    const-class v4, Lcom/android/settings_ext/MiuiSecurityTrustedCredentials$TrustedCredentialFragment;
 
     const/4 v6, 0x1
 
@@ -86,7 +86,7 @@
     const/4 v3, 0x0
 
     .line 148
-    invoke-virtual {p0}, Lcom/android/settings/MiuiSecurityTrustedCredentials;->getActionBar()Lmiui/app/ActionBar;
+    invoke-virtual {p0}, Lcom/android/settings_ext/MiuiSecurityTrustedCredentials;->getActionBar()Lmiui/app/ActionBar;
 
     move-result-object v0
 
@@ -99,11 +99,11 @@
 
     .line 153
     :cond_0
-    invoke-virtual {p0}, Lcom/android/settings/MiuiSecurityTrustedCredentials;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/MiuiSecurityTrustedCredentials;->getActivity()Landroid/app/Activity;
 
     move-result-object v1
 
-    invoke-virtual {p0}, Lcom/android/settings/MiuiSecurityTrustedCredentials;->getChildFragmentManager()Landroid/app/FragmentManager;
+    invoke-virtual {p0}, Lcom/android/settings_ext/MiuiSecurityTrustedCredentials;->getChildFragmentManager()Landroid/app/FragmentManager;
 
     move-result-object v2
 
@@ -113,16 +113,16 @@
     invoke-virtual {v0, p0}, Lmiui/app/ActionBar;->addOnFragmentViewPagerChangeListener(Lmiui/app/ActionBar$FragmentViewPagerChangeListener;)V
 
     .line 155
-    sget-object v1, Lcom/android/settings/MiuiSecurityTrustedCredentials$Tab;->ry:Lcom/android/settings/MiuiSecurityTrustedCredentials$Tab;
+    sget-object v1, Lcom/android/settings_ext/MiuiSecurityTrustedCredentials$Tab;->ry:Lcom/android/settings_ext/MiuiSecurityTrustedCredentials$Tab;
 
-    invoke-direct {p0, v0, v1, v3}, Lcom/android/settings/MiuiSecurityTrustedCredentials;->a(Lmiui/app/ActionBar;Lcom/android/settings/MiuiSecurityTrustedCredentials$Tab;I)V
+    invoke-direct {p0, v0, v1, v3}, Lcom/android/settings_ext/MiuiSecurityTrustedCredentials;->a(Lmiui/app/ActionBar;Lcom/android/settings_ext/MiuiSecurityTrustedCredentials$Tab;I)V
 
     .line 156
-    sget-object v1, Lcom/android/settings/MiuiSecurityTrustedCredentials$Tab;->rz:Lcom/android/settings/MiuiSecurityTrustedCredentials$Tab;
+    sget-object v1, Lcom/android/settings_ext/MiuiSecurityTrustedCredentials$Tab;->rz:Lcom/android/settings_ext/MiuiSecurityTrustedCredentials$Tab;
 
     const/4 v2, 0x1
 
-    invoke-direct {p0, v0, v1, v2}, Lcom/android/settings/MiuiSecurityTrustedCredentials;->a(Lmiui/app/ActionBar;Lcom/android/settings/MiuiSecurityTrustedCredentials$Tab;I)V
+    invoke-direct {p0, v0, v1, v2}, Lcom/android/settings_ext/MiuiSecurityTrustedCredentials;->a(Lmiui/app/ActionBar;Lcom/android/settings_ext/MiuiSecurityTrustedCredentials$Tab;I)V
 
     .line 157
     invoke-virtual {v0, v3}, Lmiui/app/ActionBar;->setSelectedNavigationItem(I)V

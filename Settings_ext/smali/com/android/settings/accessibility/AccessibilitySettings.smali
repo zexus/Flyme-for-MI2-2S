@@ -1,11 +1,11 @@
-.class public Lcom/android/settings/accessibility/AccessibilitySettings;
-.super Lcom/android/settings/SettingsPreferenceFragment;
+.class public Lcom/android/settings_ext/accessibility/AccessibilitySettings;
+.super Lcom/android/settings_ext/SettingsPreferenceFragment;
 .source "AccessibilitySettings.java"
 
 # interfaces
 .implements Landroid/preference/Preference$OnPreferenceChangeListener;
-.implements Lcom/android/settings/bP;
-.implements Lcom/android/settings/search/k;
+.implements Lcom/android/settings_ext/bP;
+.implements Lcom/android/settings_ext/search/k;
 
 
 # static fields
@@ -13,7 +13,7 @@
 
 .field static final Ai:Ljava/util/Set;
 
-.field public static final gG:Lcom/android/settings/search/l;
+.field public static final gG:Lcom/android/settings_ext/search/l;
 
 
 # instance fields
@@ -29,7 +29,7 @@
 
 .field private final Al:Lcom/android/internal/content/PackageMonitor;
 
-.field private final Am:Lcom/android/settings/accessibility/SettingsContentObserver;
+.field private final Am:Lcom/android/settings_ext/accessibility/SettingsContentObserver;
 
 .field private An:Landroid/preference/PreferenceCategory;
 
@@ -78,21 +78,21 @@
 
     invoke-direct {v0, v1}, Landroid/text/TextUtils$SimpleStringSplitter;-><init>(C)V
 
-    sput-object v0, Lcom/android/settings/accessibility/AccessibilitySettings;->Ah:Landroid/text/TextUtils$SimpleStringSplitter;
+    sput-object v0, Lcom/android/settings_ext/accessibility/AccessibilitySettings;->Ah:Landroid/text/TextUtils$SimpleStringSplitter;
 
     .line 127
     new-instance v0, Ljava/util/HashSet;
 
     invoke-direct {v0}, Ljava/util/HashSet;-><init>()V
 
-    sput-object v0, Lcom/android/settings/accessibility/AccessibilitySettings;->Ai:Ljava/util/Set;
+    sput-object v0, Lcom/android/settings_ext/accessibility/AccessibilitySettings;->Ai:Ljava/util/Set;
 
     .line 673
-    new-instance v0, Lcom/android/settings/accessibility/AccessibilitySettings$5;
+    new-instance v0, Lcom/android/settings_ext/accessibility/AccessibilitySettings$5;
 
-    invoke-direct {v0}, Lcom/android/settings/accessibility/AccessibilitySettings$5;-><init>()V
+    invoke-direct {v0}, Lcom/android/settings_ext/accessibility/AccessibilitySettings$5;-><init>()V
 
-    sput-object v0, Lcom/android/settings/accessibility/AccessibilitySettings;->gG:Lcom/android/settings/search/l;
+    sput-object v0, Lcom/android/settings_ext/accessibility/AccessibilitySettings;->gG:Lcom/android/settings_ext/search/l;
 
     return-void
 .end method
@@ -102,58 +102,58 @@
 
     .prologue
     .line 71
-    invoke-direct {p0}, Lcom/android/settings/SettingsPreferenceFragment;-><init>()V
+    invoke-direct {p0}, Lcom/android/settings_ext/SettingsPreferenceFragment;-><init>()V
 
     .line 129
     new-instance v0, Ljava/util/HashMap;
 
     invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
 
-    iput-object v0, p0, Lcom/android/settings/accessibility/AccessibilitySettings;->Aj:Ljava/util/Map;
+    iput-object v0, p0, Lcom/android/settings_ext/accessibility/AccessibilitySettings;->Aj:Ljava/util/Map;
 
     .line 132
     new-instance v0, Landroid/content/res/Configuration;
 
     invoke-direct {v0}, Landroid/content/res/Configuration;-><init>()V
 
-    iput-object v0, p0, Lcom/android/settings/accessibility/AccessibilitySettings;->jS:Landroid/content/res/Configuration;
+    iput-object v0, p0, Lcom/android/settings_ext/accessibility/AccessibilitySettings;->jS:Landroid/content/res/Configuration;
 
     .line 134
     new-instance v0, Landroid/os/Handler;
 
     invoke-direct {v0}, Landroid/os/Handler;-><init>()V
 
-    iput-object v0, p0, Lcom/android/settings/accessibility/AccessibilitySettings;->mHandler:Landroid/os/Handler;
+    iput-object v0, p0, Lcom/android/settings_ext/accessibility/AccessibilitySettings;->mHandler:Landroid/os/Handler;
 
     .line 136
-    new-instance v0, Lcom/android/settings/accessibility/AccessibilitySettings$1;
+    new-instance v0, Lcom/android/settings_ext/accessibility/AccessibilitySettings$1;
 
-    invoke-direct {v0, p0}, Lcom/android/settings/accessibility/AccessibilitySettings$1;-><init>(Lcom/android/settings/accessibility/AccessibilitySettings;)V
+    invoke-direct {v0, p0}, Lcom/android/settings_ext/accessibility/AccessibilitySettings$1;-><init>(Lcom/android/settings_ext/accessibility/AccessibilitySettings;)V
 
-    iput-object v0, p0, Lcom/android/settings/accessibility/AccessibilitySettings;->Ak:Ljava/lang/Runnable;
+    iput-object v0, p0, Lcom/android/settings_ext/accessibility/AccessibilitySettings;->Ak:Ljava/lang/Runnable;
 
     .line 144
-    new-instance v0, Lcom/android/settings/accessibility/AccessibilitySettings$2;
+    new-instance v0, Lcom/android/settings_ext/accessibility/AccessibilitySettings$2;
 
-    invoke-direct {v0, p0}, Lcom/android/settings/accessibility/AccessibilitySettings$2;-><init>(Lcom/android/settings/accessibility/AccessibilitySettings;)V
+    invoke-direct {v0, p0}, Lcom/android/settings_ext/accessibility/AccessibilitySettings$2;-><init>(Lcom/android/settings_ext/accessibility/AccessibilitySettings;)V
 
-    iput-object v0, p0, Lcom/android/settings/accessibility/AccessibilitySettings;->Al:Lcom/android/internal/content/PackageMonitor;
+    iput-object v0, p0, Lcom/android/settings_ext/accessibility/AccessibilitySettings;->Al:Lcom/android/internal/content/PackageMonitor;
 
     .line 170
-    new-instance v0, Lcom/android/settings/accessibility/AccessibilitySettings$3;
+    new-instance v0, Lcom/android/settings_ext/accessibility/AccessibilitySettings$3;
 
-    iget-object v1, p0, Lcom/android/settings/accessibility/AccessibilitySettings;->mHandler:Landroid/os/Handler;
+    iget-object v1, p0, Lcom/android/settings_ext/accessibility/AccessibilitySettings;->mHandler:Landroid/os/Handler;
 
-    invoke-direct {v0, p0, v1}, Lcom/android/settings/accessibility/AccessibilitySettings$3;-><init>(Lcom/android/settings/accessibility/AccessibilitySettings;Landroid/os/Handler;)V
+    invoke-direct {v0, p0, v1}, Lcom/android/settings_ext/accessibility/AccessibilitySettings$3;-><init>(Lcom/android/settings_ext/accessibility/AccessibilitySettings;Landroid/os/Handler;)V
 
-    iput-object v0, p0, Lcom/android/settings/accessibility/AccessibilitySettings;->Am:Lcom/android/settings/accessibility/SettingsContentObserver;
+    iput-object v0, p0, Lcom/android/settings_ext/accessibility/AccessibilitySettings;->Am:Lcom/android/settings_ext/accessibility/SettingsContentObserver;
 
     .line 179
-    new-instance v0, Lcom/android/settings/accessibility/AccessibilitySettings$4;
+    new-instance v0, Lcom/android/settings_ext/accessibility/AccessibilitySettings$4;
 
-    invoke-direct {v0, p0}, Lcom/android/settings/accessibility/AccessibilitySettings$4;-><init>(Lcom/android/settings/accessibility/AccessibilitySettings;)V
+    invoke-direct {v0, p0}, Lcom/android/settings_ext/accessibility/AccessibilitySettings$4;-><init>(Lcom/android/settings_ext/accessibility/AccessibilitySettings;)V
 
-    iput-object v0, p0, Lcom/android/settings/accessibility/AccessibilitySettings;->kd:Lcom/android/internal/view/RotationPolicy$RotationPolicyListener;
+    iput-object v0, p0, Lcom/android/settings_ext/accessibility/AccessibilitySettings;->kd:Lcom/android/internal/view/RotationPolicy$RotationPolicyListener;
 
     return-void
 .end method
@@ -163,7 +163,7 @@
 
     .prologue
     .line 272
-    invoke-virtual {p0}, Lcom/android/settings/accessibility/AccessibilitySettings;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/settings_ext/accessibility/AccessibilitySettings;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v1
 
@@ -191,7 +191,7 @@
 
     .prologue
     .line 265
-    invoke-virtual {p0}, Lcom/android/settings/accessibility/AccessibilitySettings;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/settings_ext/accessibility/AccessibilitySettings;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v0
 
@@ -204,9 +204,9 @@
     invoke-static {v0, v1, v2}, Landroid/provider/Settings$Secure;->putInt(Landroid/content/ContentResolver;Ljava/lang/String;I)Z
 
     .line 267
-    iget-object v1, p0, Lcom/android/settings/accessibility/AccessibilitySettings;->Av:Landroid/preference/ListPreference;
+    iget-object v1, p0, Lcom/android/settings_ext/accessibility/AccessibilitySettings;->Av:Landroid/preference/ListPreference;
 
-    iget-object v0, p0, Lcom/android/settings/accessibility/AccessibilitySettings;->Aj:Ljava/util/Map;
+    iget-object v0, p0, Lcom/android/settings_ext/accessibility/AccessibilitySettings;->Aj:Ljava/util/Map;
 
     invoke-interface {v0, p1}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -220,12 +220,12 @@
     return-void
 .end method
 
-.method static synthetic a(Lcom/android/settings/accessibility/AccessibilitySettings;)V
+.method static synthetic a(Lcom/android/settings_ext/accessibility/AccessibilitySettings;)V
     .locals 0
 
     .prologue
     .line 71
-    invoke-direct {p0}, Lcom/android/settings/accessibility/AccessibilitySettings;->hN()V
+    invoke-direct {p0}, Lcom/android/settings_ext/accessibility/AccessibilitySettings;->hN()V
 
     return-void
 .end method
@@ -239,7 +239,7 @@
     const/4 v1, 0x0
 
     .line 637
-    invoke-virtual {p0}, Lcom/android/settings/accessibility/AccessibilitySettings;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/settings_ext/accessibility/AccessibilitySettings;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v2
 
@@ -274,42 +274,42 @@
     goto :goto_1
 .end method
 
-.method static synthetic b(Lcom/android/settings/accessibility/AccessibilitySettings;)V
+.method static synthetic b(Lcom/android/settings_ext/accessibility/AccessibilitySettings;)V
     .locals 0
 
     .prologue
     .line 71
-    invoke-direct {p0}, Lcom/android/settings/accessibility/AccessibilitySettings;->hK()V
+    invoke-direct {p0}, Lcom/android/settings_ext/accessibility/AccessibilitySettings;->hK()V
 
     return-void
 .end method
 
-.method static synthetic c(Lcom/android/settings/accessibility/AccessibilitySettings;)Ljava/lang/Runnable;
+.method static synthetic c(Lcom/android/settings_ext/accessibility/AccessibilitySettings;)Ljava/lang/Runnable;
     .locals 1
 
     .prologue
     .line 71
-    iget-object v0, p0, Lcom/android/settings/accessibility/AccessibilitySettings;->Ak:Ljava/lang/Runnable;
+    iget-object v0, p0, Lcom/android/settings_ext/accessibility/AccessibilitySettings;->Ak:Ljava/lang/Runnable;
 
     return-object v0
 .end method
 
-.method static synthetic d(Lcom/android/settings/accessibility/AccessibilitySettings;)Landroid/os/Handler;
+.method static synthetic d(Lcom/android/settings_ext/accessibility/AccessibilitySettings;)Landroid/os/Handler;
     .locals 1
 
     .prologue
     .line 71
-    iget-object v0, p0, Lcom/android/settings/accessibility/AccessibilitySettings;->mHandler:Landroid/os/Handler;
+    iget-object v0, p0, Lcom/android/settings_ext/accessibility/AccessibilitySettings;->mHandler:Landroid/os/Handler;
 
     return-object v0
 .end method
 
-.method static synthetic e(Lcom/android/settings/accessibility/AccessibilitySettings;)V
+.method static synthetic e(Lcom/android/settings_ext/accessibility/AccessibilitySettings;)V
     .locals 0
 
     .prologue
     .line 71
-    invoke-direct {p0}, Lcom/android/settings/accessibility/AccessibilitySettings;->hM()V
+    invoke-direct {p0}, Lcom/android/settings_ext/accessibility/AccessibilitySettings;->hM()V
 
     return-void
 .end method
@@ -320,9 +320,9 @@
     .prologue
     .line 305
     :try_start_0
-    iget-object v1, p0, Lcom/android/settings/accessibility/AccessibilitySettings;->jS:Landroid/content/res/Configuration;
+    iget-object v1, p0, Lcom/android/settings_ext/accessibility/AccessibilitySettings;->jS:Landroid/content/res/Configuration;
 
-    iget-object v0, p0, Lcom/android/settings/accessibility/AccessibilitySettings;->Aq:Landroid/preference/CheckBoxPreference;
+    iget-object v0, p0, Lcom/android/settings_ext/accessibility/AccessibilitySettings;->Aq:Landroid/preference/CheckBoxPreference;
 
     invoke-virtual {v0}, Landroid/preference/CheckBoxPreference;->isChecked()Z
 
@@ -340,7 +340,7 @@
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/android/settings/accessibility/AccessibilitySettings;->jS:Landroid/content/res/Configuration;
+    iget-object v1, p0, Lcom/android/settings_ext/accessibility/AccessibilitySettings;->jS:Landroid/content/res/Configuration;
 
     invoke-interface {v0, v1}, Landroid/app/IActivityManager;->updatePersistentConfiguration(Landroid/content/res/Configuration;)V
     :try_end_0
@@ -368,13 +368,13 @@
 
     .prologue
     .line 313
-    invoke-virtual {p0}, Lcom/android/settings/accessibility/AccessibilitySettings;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/settings_ext/accessibility/AccessibilitySettings;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v1
 
     const-string v2, "high_text_contrast_enabled"
 
-    iget-object v0, p0, Lcom/android/settings/accessibility/AccessibilitySettings;->Ar:Landroid/preference/CheckBoxPreference;
+    iget-object v0, p0, Lcom/android/settings_ext/accessibility/AccessibilitySettings;->Ar:Landroid/preference/CheckBoxPreference;
 
     invoke-virtual {v0}, Landroid/preference/CheckBoxPreference;->isChecked()Z
 
@@ -402,13 +402,13 @@
 
     .prologue
     .line 319
-    invoke-virtual {p0}, Lcom/android/settings/accessibility/AccessibilitySettings;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/settings_ext/accessibility/AccessibilitySettings;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v1
 
     const-string v2, "incall_power_button_behavior"
 
-    iget-object v0, p0, Lcom/android/settings/accessibility/AccessibilitySettings;->As:Landroid/preference/CheckBoxPreference;
+    iget-object v0, p0, Lcom/android/settings_ext/accessibility/AccessibilitySettings;->As:Landroid/preference/CheckBoxPreference;
 
     invoke-virtual {v0}, Landroid/preference/CheckBoxPreference;->isChecked()Z
 
@@ -436,11 +436,11 @@
 
     .prologue
     .line 327
-    invoke-virtual {p0}, Lcom/android/settings/accessibility/AccessibilitySettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/accessibility/AccessibilitySettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v1
 
-    iget-object v0, p0, Lcom/android/settings/accessibility/AccessibilitySettings;->At:Landroid/preference/CheckBoxPreference;
+    iget-object v0, p0, Lcom/android/settings_ext/accessibility/AccessibilitySettings;->At:Landroid/preference/CheckBoxPreference;
 
     invoke-virtual {v0}, Landroid/preference/CheckBoxPreference;->isChecked()Z
 
@@ -468,13 +468,13 @@
 
     .prologue
     .line 332
-    invoke-virtual {p0}, Lcom/android/settings/accessibility/AccessibilitySettings;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/settings_ext/accessibility/AccessibilitySettings;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v1
 
     const-string v2, "speak_password"
 
-    iget-object v0, p0, Lcom/android/settings/accessibility/AccessibilitySettings;->Au:Landroid/preference/CheckBoxPreference;
+    iget-object v0, p0, Lcom/android/settings_ext/accessibility/AccessibilitySettings;->Au:Landroid/preference/CheckBoxPreference;
 
     invoke-virtual {v0}, Landroid/preference/CheckBoxPreference;->isChecked()Z
 
@@ -506,7 +506,7 @@
     const/4 v1, 0x0
 
     .line 338
-    iget-object v2, p0, Lcom/android/settings/accessibility/AccessibilitySettings;->Az:Landroid/preference/PreferenceScreen;
+    iget-object v2, p0, Lcom/android/settings_ext/accessibility/AccessibilitySettings;->Az:Landroid/preference/PreferenceScreen;
 
     invoke-virtual {v2}, Landroid/preference/PreferenceScreen;->getExtras()Landroid/os/Bundle;
 
@@ -517,7 +517,7 @@
 
     const v4, 0x7f09063e
 
-    invoke-virtual {p0, v4}, Lcom/android/settings/accessibility/AccessibilitySettings;->getString(I)Ljava/lang/String;
+    invoke-virtual {p0, v4}, Lcom/android/settings_ext/accessibility/AccessibilitySettings;->getString(I)Ljava/lang/String;
 
     move-result-object v4
 
@@ -528,7 +528,7 @@
 
     const v4, 0x7f090641
 
-    invoke-virtual {p0, v4}, Lcom/android/settings/accessibility/AccessibilitySettings;->getString(I)Ljava/lang/String;
+    invoke-virtual {p0, v4}, Lcom/android/settings_ext/accessibility/AccessibilitySettings;->getString(I)Ljava/lang/String;
 
     move-result-object v4
 
@@ -537,7 +537,7 @@
     .line 343
     const-string v3, "checked"
 
-    invoke-virtual {p0}, Lcom/android/settings/accessibility/AccessibilitySettings;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/settings_ext/accessibility/AccessibilitySettings;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v4
 
@@ -553,11 +553,11 @@
     invoke-virtual {v2, v3, v0}, Landroid/os/Bundle;->putBoolean(Ljava/lang/String;Z)V
 
     .line 345
-    iget-object v0, p0, Lcom/android/settings/accessibility/AccessibilitySettings;->Az:Landroid/preference/PreferenceScreen;
+    iget-object v0, p0, Lcom/android/settings_ext/accessibility/AccessibilitySettings;->Az:Landroid/preference/PreferenceScreen;
 
-    iget-object v1, p0, Lcom/android/settings/accessibility/AccessibilitySettings;->Az:Landroid/preference/PreferenceScreen;
+    iget-object v1, p0, Lcom/android/settings_ext/accessibility/AccessibilitySettings;->Az:Landroid/preference/PreferenceScreen;
 
-    invoke-super {p0, v0, v1}, Lcom/android/settings/SettingsPreferenceFragment;->onPreferenceTreeClick(Landroid/preference/PreferenceScreen;Landroid/preference/Preference;)Z
+    invoke-super {p0, v0, v1}, Lcom/android/settings_ext/SettingsPreferenceFragment;->onPreferenceTreeClick(Landroid/preference/PreferenceScreen;Landroid/preference/Preference;)Z
 
     .line 347
     return-void
@@ -578,7 +578,7 @@
     const/4 v1, 0x0
 
     .line 350
-    iget-object v2, p0, Lcom/android/settings/accessibility/AccessibilitySettings;->Ay:Landroid/preference/PreferenceScreen;
+    iget-object v2, p0, Lcom/android/settings_ext/accessibility/AccessibilitySettings;->Ay:Landroid/preference/PreferenceScreen;
 
     invoke-virtual {v2}, Landroid/preference/PreferenceScreen;->getExtras()Landroid/os/Bundle;
 
@@ -589,7 +589,7 @@
 
     const v4, 0x7f09063c
 
-    invoke-virtual {p0, v4}, Lcom/android/settings/accessibility/AccessibilitySettings;->getString(I)Ljava/lang/String;
+    invoke-virtual {p0, v4}, Lcom/android/settings_ext/accessibility/AccessibilitySettings;->getString(I)Ljava/lang/String;
 
     move-result-object v4
 
@@ -598,7 +598,7 @@
     .line 353
     const-string v3, "summary"
 
-    invoke-virtual {p0}, Lcom/android/settings/accessibility/AccessibilitySettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/accessibility/AccessibilitySettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v4
 
@@ -617,7 +617,7 @@
     .line 355
     const-string v3, "checked"
 
-    invoke-virtual {p0}, Lcom/android/settings/accessibility/AccessibilitySettings;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/settings_ext/accessibility/AccessibilitySettings;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v4
 
@@ -633,11 +633,11 @@
     invoke-virtual {v2, v3, v0}, Landroid/os/Bundle;->putBoolean(Ljava/lang/String;Z)V
 
     .line 357
-    iget-object v0, p0, Lcom/android/settings/accessibility/AccessibilitySettings;->Ay:Landroid/preference/PreferenceScreen;
+    iget-object v0, p0, Lcom/android/settings_ext/accessibility/AccessibilitySettings;->Ay:Landroid/preference/PreferenceScreen;
 
-    iget-object v1, p0, Lcom/android/settings/accessibility/AccessibilitySettings;->Ay:Landroid/preference/PreferenceScreen;
+    iget-object v1, p0, Lcom/android/settings_ext/accessibility/AccessibilitySettings;->Ay:Landroid/preference/PreferenceScreen;
 
-    invoke-super {p0, v0, v1}, Lcom/android/settings/SettingsPreferenceFragment;->onPreferenceTreeClick(Landroid/preference/PreferenceScreen;Landroid/preference/Preference;)Z
+    invoke-super {p0, v0, v1}, Lcom/android/settings_ext/SettingsPreferenceFragment;->onPreferenceTreeClick(Landroid/preference/PreferenceScreen;Landroid/preference/Preference;)Z
 
     .line 359
     return-void
@@ -660,84 +660,84 @@
     .line 362
     const-string v0, "services_category"
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/accessibility/AccessibilitySettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v0}, Lcom/android/settings_ext/accessibility/AccessibilitySettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v0
 
     check-cast v0, Landroid/preference/PreferenceCategory;
 
-    iput-object v0, p0, Lcom/android/settings/accessibility/AccessibilitySettings;->An:Landroid/preference/PreferenceCategory;
+    iput-object v0, p0, Lcom/android/settings_ext/accessibility/AccessibilitySettings;->An:Landroid/preference/PreferenceCategory;
 
     .line 363
     const-string v0, "system_category"
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/accessibility/AccessibilitySettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v0}, Lcom/android/settings_ext/accessibility/AccessibilitySettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v0
 
     check-cast v0, Landroid/preference/PreferenceCategory;
 
-    iput-object v0, p0, Lcom/android/settings/accessibility/AccessibilitySettings;->Ao:Landroid/preference/PreferenceCategory;
+    iput-object v0, p0, Lcom/android/settings_ext/accessibility/AccessibilitySettings;->Ao:Landroid/preference/PreferenceCategory;
 
     .line 365
     const-string v0, "drive_mode_category"
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/accessibility/AccessibilitySettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v0}, Lcom/android/settings_ext/accessibility/AccessibilitySettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v0
 
     check-cast v0, Landroid/preference/PreferenceCategory;
 
-    iput-object v0, p0, Lcom/android/settings/accessibility/AccessibilitySettings;->Ap:Landroid/preference/PreferenceCategory;
+    iput-object v0, p0, Lcom/android/settings_ext/accessibility/AccessibilitySettings;->Ap:Landroid/preference/PreferenceCategory;
 
     .line 368
     const-string v0, "toggle_large_text_preference"
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/accessibility/AccessibilitySettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v0}, Lcom/android/settings_ext/accessibility/AccessibilitySettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v0
 
     check-cast v0, Landroid/preference/CheckBoxPreference;
 
-    iput-object v0, p0, Lcom/android/settings/accessibility/AccessibilitySettings;->Aq:Landroid/preference/CheckBoxPreference;
+    iput-object v0, p0, Lcom/android/settings_ext/accessibility/AccessibilitySettings;->Aq:Landroid/preference/CheckBoxPreference;
 
     .line 372
     const-string v0, "toggle_high_text_contrast_preference"
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/accessibility/AccessibilitySettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v0}, Lcom/android/settings_ext/accessibility/AccessibilitySettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v0
 
     check-cast v0, Landroid/preference/CheckBoxPreference;
 
-    iput-object v0, p0, Lcom/android/settings/accessibility/AccessibilitySettings;->Ar:Landroid/preference/CheckBoxPreference;
+    iput-object v0, p0, Lcom/android/settings_ext/accessibility/AccessibilitySettings;->Ar:Landroid/preference/CheckBoxPreference;
 
     .line 378
     const-string v0, "toggle_inversion_preference"
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/accessibility/AccessibilitySettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v0}, Lcom/android/settings_ext/accessibility/AccessibilitySettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v0
 
     check-cast v0, Landroid/preference/CheckBoxPreference;
 
-    iput-object v0, p0, Lcom/android/settings/accessibility/AccessibilitySettings;->AB:Landroid/preference/CheckBoxPreference;
+    iput-object v0, p0, Lcom/android/settings_ext/accessibility/AccessibilitySettings;->AB:Landroid/preference/CheckBoxPreference;
 
     .line 379
-    iget-object v0, p0, Lcom/android/settings/accessibility/AccessibilitySettings;->AB:Landroid/preference/CheckBoxPreference;
+    iget-object v0, p0, Lcom/android/settings_ext/accessibility/AccessibilitySettings;->AB:Landroid/preference/CheckBoxPreference;
 
     invoke-virtual {v0, p0}, Landroid/preference/CheckBoxPreference;->setOnPreferenceChangeListener(Landroid/preference/Preference$OnPreferenceChangeListener;)V
 
     .line 382
     const-string v0, "toggle_power_button_ends_call_preference"
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/accessibility/AccessibilitySettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v0}, Lcom/android/settings_ext/accessibility/AccessibilitySettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v0
 
     check-cast v0, Landroid/preference/CheckBoxPreference;
 
-    iput-object v0, p0, Lcom/android/settings/accessibility/AccessibilitySettings;->As:Landroid/preference/CheckBoxPreference;
+    iput-object v0, p0, Lcom/android/settings_ext/accessibility/AccessibilitySettings;->As:Landroid/preference/CheckBoxPreference;
 
     .line 384
     invoke-static {v7}, Landroid/view/KeyCharacterMap;->deviceHasKey(I)Z
@@ -746,11 +746,11 @@
 
     if-eqz v0, :cond_0
 
-    invoke-virtual {p0}, Lcom/android/settings/accessibility/AccessibilitySettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/accessibility/AccessibilitySettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
-    invoke-static {v0}, Lcom/android/settings/hl;->M(Landroid/content/Context;)Z
+    invoke-static {v0}, Lcom/android/settings_ext/hl;->M(Landroid/content/Context;)Z
 
     move-result v0
 
@@ -758,9 +758,9 @@
 
     .line 386
     :cond_0
-    iget-object v0, p0, Lcom/android/settings/accessibility/AccessibilitySettings;->Ao:Landroid/preference/PreferenceCategory;
+    iget-object v0, p0, Lcom/android/settings_ext/accessibility/AccessibilitySettings;->Ao:Landroid/preference/PreferenceCategory;
 
-    iget-object v2, p0, Lcom/android/settings/accessibility/AccessibilitySettings;->As:Landroid/preference/CheckBoxPreference;
+    iget-object v2, p0, Lcom/android/settings_ext/accessibility/AccessibilitySettings;->As:Landroid/preference/CheckBoxPreference;
 
     invoke-virtual {v0, v2}, Landroid/preference/PreferenceCategory;->removePreference(Landroid/preference/Preference;)Z
 
@@ -768,16 +768,16 @@
     :cond_1
     const-string v0, "toggle_lock_screen_rotation_preference"
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/accessibility/AccessibilitySettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v0}, Lcom/android/settings_ext/accessibility/AccessibilitySettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v0
 
     check-cast v0, Landroid/preference/CheckBoxPreference;
 
-    iput-object v0, p0, Lcom/android/settings/accessibility/AccessibilitySettings;->At:Landroid/preference/CheckBoxPreference;
+    iput-object v0, p0, Lcom/android/settings_ext/accessibility/AccessibilitySettings;->At:Landroid/preference/CheckBoxPreference;
 
     .line 394
-    invoke-virtual {p0}, Lcom/android/settings/accessibility/AccessibilitySettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/accessibility/AccessibilitySettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
@@ -787,14 +787,14 @@
 
     if-nez v0, :cond_2
 
-    iget-object v0, p0, Lcom/android/settings/accessibility/AccessibilitySettings;->At:Landroid/preference/CheckBoxPreference;
+    iget-object v0, p0, Lcom/android/settings_ext/accessibility/AccessibilitySettings;->At:Landroid/preference/CheckBoxPreference;
 
     if-eqz v0, :cond_2
 
     .line 395
-    iget-object v0, p0, Lcom/android/settings/accessibility/AccessibilitySettings;->Ao:Landroid/preference/PreferenceCategory;
+    iget-object v0, p0, Lcom/android/settings_ext/accessibility/AccessibilitySettings;->Ao:Landroid/preference/PreferenceCategory;
 
-    iget-object v2, p0, Lcom/android/settings/accessibility/AccessibilitySettings;->At:Landroid/preference/CheckBoxPreference;
+    iget-object v2, p0, Lcom/android/settings_ext/accessibility/AccessibilitySettings;->At:Landroid/preference/CheckBoxPreference;
 
     invoke-virtual {v0, v2}, Landroid/preference/PreferenceCategory;->removePreference(Landroid/preference/Preference;)Z
 
@@ -802,32 +802,32 @@
     :cond_2
     const-string v0, "toggle_speak_password_preference"
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/accessibility/AccessibilitySettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v0}, Lcom/android/settings_ext/accessibility/AccessibilitySettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v0
 
     check-cast v0, Landroid/preference/CheckBoxPreference;
 
-    iput-object v0, p0, Lcom/android/settings/accessibility/AccessibilitySettings;->Au:Landroid/preference/CheckBoxPreference;
+    iput-object v0, p0, Lcom/android/settings_ext/accessibility/AccessibilitySettings;->Au:Landroid/preference/CheckBoxPreference;
 
     .line 403
     const-string v0, "select_long_press_timeout_preference"
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/accessibility/AccessibilitySettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v0}, Lcom/android/settings_ext/accessibility/AccessibilitySettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v0
 
     check-cast v0, Landroid/preference/ListPreference;
 
-    iput-object v0, p0, Lcom/android/settings/accessibility/AccessibilitySettings;->Av:Landroid/preference/ListPreference;
+    iput-object v0, p0, Lcom/android/settings_ext/accessibility/AccessibilitySettings;->Av:Landroid/preference/ListPreference;
 
     .line 405
-    iget-object v0, p0, Lcom/android/settings/accessibility/AccessibilitySettings;->Av:Landroid/preference/ListPreference;
+    iget-object v0, p0, Lcom/android/settings_ext/accessibility/AccessibilitySettings;->Av:Landroid/preference/ListPreference;
 
     invoke-virtual {v0, p0}, Landroid/preference/ListPreference;->setOnPreferenceChangeListener(Landroid/preference/Preference$OnPreferenceChangeListener;)V
 
     .line 406
-    iget-object v0, p0, Lcom/android/settings/accessibility/AccessibilitySettings;->Aj:Ljava/util/Map;
+    iget-object v0, p0, Lcom/android/settings_ext/accessibility/AccessibilitySettings;->Aj:Ljava/util/Map;
 
     invoke-interface {v0}, Ljava/util/Map;->size()I
 
@@ -836,7 +836,7 @@
     if-nez v0, :cond_3
 
     .line 407
-    invoke-virtual {p0}, Lcom/android/settings/accessibility/AccessibilitySettings;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {p0}, Lcom/android/settings_ext/accessibility/AccessibilitySettings;->getResources()Landroid/content/res/Resources;
 
     move-result-object v0
 
@@ -853,10 +853,10 @@
 
     move-result v0
 
-    iput v0, p0, Lcom/android/settings/accessibility/AccessibilitySettings;->AC:I
+    iput v0, p0, Lcom/android/settings_ext/accessibility/AccessibilitySettings;->AC:I
 
     .line 410
-    invoke-virtual {p0}, Lcom/android/settings/accessibility/AccessibilitySettings;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {p0}, Lcom/android/settings_ext/accessibility/AccessibilitySettings;->getResources()Landroid/content/res/Resources;
 
     move-result-object v0
 
@@ -876,7 +876,7 @@
     if-ge v0, v4, :cond_3
 
     .line 414
-    iget-object v1, p0, Lcom/android/settings/accessibility/AccessibilitySettings;->Aj:Ljava/util/Map;
+    iget-object v1, p0, Lcom/android/settings_ext/accessibility/AccessibilitySettings;->Aj:Ljava/util/Map;
 
     aget-object v5, v2, v0
 
@@ -893,49 +893,49 @@
     :cond_3
     const-string v0, "captioning_preference_screen"
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/accessibility/AccessibilitySettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v0}, Lcom/android/settings_ext/accessibility/AccessibilitySettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v0
 
     check-cast v0, Landroid/preference/PreferenceScreen;
 
-    iput-object v0, p0, Lcom/android/settings/accessibility/AccessibilitySettings;->Ax:Landroid/preference/PreferenceScreen;
+    iput-object v0, p0, Lcom/android/settings_ext/accessibility/AccessibilitySettings;->Ax:Landroid/preference/PreferenceScreen;
 
     .line 423
     const-string v0, "screen_magnification_preference_screen"
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/accessibility/AccessibilitySettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v0}, Lcom/android/settings_ext/accessibility/AccessibilitySettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v0
 
     check-cast v0, Landroid/preference/PreferenceScreen;
 
-    iput-object v0, p0, Lcom/android/settings/accessibility/AccessibilitySettings;->Ay:Landroid/preference/PreferenceScreen;
+    iput-object v0, p0, Lcom/android/settings_ext/accessibility/AccessibilitySettings;->Ay:Landroid/preference/PreferenceScreen;
 
     .line 427
     const-string v0, "daltonizer_preference_screen"
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/accessibility/AccessibilitySettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v0}, Lcom/android/settings_ext/accessibility/AccessibilitySettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v0
 
     check-cast v0, Landroid/preference/PreferenceScreen;
 
-    iput-object v0, p0, Lcom/android/settings/accessibility/AccessibilitySettings;->AA:Landroid/preference/PreferenceScreen;
+    iput-object v0, p0, Lcom/android/settings_ext/accessibility/AccessibilitySettings;->AA:Landroid/preference/PreferenceScreen;
 
     .line 431
     const-string v0, "enable_global_gesture_preference_screen"
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/accessibility/AccessibilitySettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v0}, Lcom/android/settings_ext/accessibility/AccessibilitySettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v0
 
     check-cast v0, Landroid/preference/PreferenceScreen;
 
-    iput-object v0, p0, Lcom/android/settings/accessibility/AccessibilitySettings;->Az:Landroid/preference/PreferenceScreen;
+    iput-object v0, p0, Lcom/android/settings_ext/accessibility/AccessibilitySettings;->Az:Landroid/preference/PreferenceScreen;
 
     .line 433
-    invoke-virtual {p0}, Lcom/android/settings/accessibility/AccessibilitySettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/accessibility/AccessibilitySettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
@@ -962,21 +962,21 @@
 
     .line 441
     :cond_4
-    iget-object v0, p0, Lcom/android/settings/accessibility/AccessibilitySettings;->Az:Landroid/preference/PreferenceScreen;
+    iget-object v0, p0, Lcom/android/settings_ext/accessibility/AccessibilitySettings;->Az:Landroid/preference/PreferenceScreen;
 
     if-eqz v0, :cond_5
 
     .line 442
-    iget-object v0, p0, Lcom/android/settings/accessibility/AccessibilitySettings;->Ao:Landroid/preference/PreferenceCategory;
+    iget-object v0, p0, Lcom/android/settings_ext/accessibility/AccessibilitySettings;->Ao:Landroid/preference/PreferenceCategory;
 
-    iget-object v1, p0, Lcom/android/settings/accessibility/AccessibilitySettings;->Az:Landroid/preference/PreferenceScreen;
+    iget-object v1, p0, Lcom/android/settings_ext/accessibility/AccessibilitySettings;->Az:Landroid/preference/PreferenceScreen;
 
     invoke-virtual {v0, v1}, Landroid/preference/PreferenceCategory;->removePreference(Landroid/preference/Preference;)Z
 
     .line 449
     :cond_5
     :try_start_0
-    invoke-virtual {p0}, Lcom/android/settings/accessibility/AccessibilitySettings;->getPackageManager()Landroid/content/pm/PackageManager;
+    invoke-virtual {p0}, Lcom/android/settings_ext/accessibility/AccessibilitySettings;->getPackageManager()Landroid/content/pm/PackageManager;
 
     move-result-object v0
 
@@ -998,16 +998,16 @@
     move-exception v0
 
     .line 451
-    iget-object v0, p0, Lcom/android/settings/accessibility/AccessibilitySettings;->Ap:Landroid/preference/PreferenceCategory;
+    iget-object v0, p0, Lcom/android/settings_ext/accessibility/AccessibilitySettings;->Ap:Landroid/preference/PreferenceCategory;
 
     if-eqz v0, :cond_6
 
     .line 452
-    invoke-virtual {p0}, Lcom/android/settings/accessibility/AccessibilitySettings;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
+    invoke-virtual {p0}, Lcom/android/settings_ext/accessibility/AccessibilitySettings;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/android/settings/accessibility/AccessibilitySettings;->Ap:Landroid/preference/PreferenceCategory;
+    iget-object v1, p0, Lcom/android/settings_ext/accessibility/AccessibilitySettings;->Ap:Landroid/preference/PreferenceCategory;
 
     invoke-virtual {v0, v1}, Landroid/preference/PreferenceScreen;->removePreference(Landroid/preference/Preference;)Z
 
@@ -1019,10 +1019,10 @@
 
     .prologue
     .line 459
-    invoke-direct {p0}, Lcom/android/settings/accessibility/AccessibilitySettings;->hK()V
+    invoke-direct {p0}, Lcom/android/settings_ext/accessibility/AccessibilitySettings;->hK()V
 
     .line 460
-    invoke-direct {p0}, Lcom/android/settings/accessibility/AccessibilitySettings;->hL()V
+    invoke-direct {p0}, Lcom/android/settings_ext/accessibility/AccessibilitySettings;->hL()V
 
     .line 461
     return-void
@@ -1033,12 +1033,12 @@
 
     .prologue
     .line 469
-    iget-object v0, p0, Lcom/android/settings/accessibility/AccessibilitySettings;->An:Landroid/preference/PreferenceCategory;
+    iget-object v0, p0, Lcom/android/settings_ext/accessibility/AccessibilitySettings;->An:Landroid/preference/PreferenceCategory;
 
     invoke-virtual {v0}, Landroid/preference/PreferenceCategory;->removeAll()V
 
     .line 471
-    invoke-virtual {p0}, Lcom/android/settings/accessibility/AccessibilitySettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/accessibility/AccessibilitySettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
@@ -1052,16 +1052,16 @@
     move-result-object v7
 
     .line 475
-    invoke-virtual {p0}, Lcom/android/settings/accessibility/AccessibilitySettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/accessibility/AccessibilitySettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
-    invoke-static {v0}, Lcom/android/settings/accessibility/AccessibilityUtils;->W(Landroid/content/Context;)Ljava/util/Set;
+    invoke-static {v0}, Lcom/android/settings_ext/accessibility/AccessibilityUtils;->W(Landroid/content/Context;)Ljava/util/Set;
 
     move-result-object v8
 
     .line 477
-    iget-object v0, p0, Lcom/android/settings/accessibility/AccessibilitySettings;->hC:Landroid/app/admin/DevicePolicyManager;
+    iget-object v0, p0, Lcom/android/settings_ext/accessibility/AccessibilitySettings;->hC:Landroid/app/admin/DevicePolicyManager;
 
     invoke-static {}, Landroid/os/UserHandle;->myUserId()I
 
@@ -1072,7 +1072,7 @@
     move-result-object v9
 
     .line 479
-    invoke-virtual {p0}, Lcom/android/settings/accessibility/AccessibilitySettings;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/settings_ext/accessibility/AccessibilitySettings;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v0
 
@@ -1113,11 +1113,11 @@
     check-cast v0, Landroid/accessibilityservice/AccessibilityServiceInfo;
 
     .line 485
-    invoke-virtual {p0}, Lcom/android/settings/accessibility/AccessibilitySettings;->getPreferenceManager()Landroid/preference/PreferenceManager;
+    invoke-virtual {p0}, Lcom/android/settings_ext/accessibility/AccessibilitySettings;->getPreferenceManager()Landroid/preference/PreferenceManager;
 
     move-result-object v2
 
-    invoke-virtual {p0}, Lcom/android/settings/accessibility/AccessibilitySettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/accessibility/AccessibilitySettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v3
 
@@ -1130,7 +1130,7 @@
 
     move-result-object v2
 
-    invoke-virtual {p0}, Lcom/android/settings/accessibility/AccessibilitySettings;->getPackageManager()Landroid/content/pm/PackageManager;
+    invoke-virtual {p0}, Lcom/android/settings_ext/accessibility/AccessibilitySettings;->getPackageManager()Landroid/content/pm/PackageManager;
 
     move-result-object v3
 
@@ -1188,7 +1188,7 @@
     .line 500
     const v2, 0x7f090657
 
-    invoke-virtual {p0, v2}, Lcom/android/settings/accessibility/AccessibilitySettings;->getString(I)Ljava/lang/String;
+    invoke-virtual {p0, v2}, Lcom/android/settings_ext/accessibility/AccessibilitySettings;->getString(I)Ljava/lang/String;
 
     move-result-object v2
 
@@ -1233,7 +1233,7 @@
     invoke-virtual {v11, v6}, Landroid/preference/PreferenceScreen;->setOrder(I)V
 
     .line 520
-    const-class v2, Lcom/android/settings/accessibility/ToggleAccessibilityServicePreferenceFragment;
+    const-class v2, Lcom/android/settings_ext/accessibility/ToggleAccessibilityServicePreferenceFragment;
 
     invoke-virtual {v2}, Ljava/lang/Class;->getName()Ljava/lang/String;
 
@@ -1271,7 +1271,7 @@
     invoke-virtual {v3, v2, v12}, Landroid/os/Bundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 528
-    invoke-virtual {p0}, Lcom/android/settings/accessibility/AccessibilitySettings;->getPackageManager()Landroid/content/pm/PackageManager;
+    invoke-virtual {p0}, Lcom/android/settings_ext/accessibility/AccessibilitySettings;->getPackageManager()Landroid/content/pm/PackageManager;
 
     move-result-object v2
 
@@ -1289,7 +1289,7 @@
     .line 530
     const v2, 0x7f090684
 
-    invoke-virtual {p0, v2}, Lcom/android/settings/accessibility/AccessibilitySettings;->getString(I)Ljava/lang/String;
+    invoke-virtual {p0, v2}, Lcom/android/settings_ext/accessibility/AccessibilitySettings;->getString(I)Ljava/lang/String;
 
     move-result-object v2
 
@@ -1316,7 +1316,7 @@
 
     const v5, 0x7f090656
 
-    invoke-virtual {p0, v5}, Lcom/android/settings/accessibility/AccessibilitySettings;->getString(I)Ljava/lang/String;
+    invoke-virtual {p0, v5}, Lcom/android/settings_ext/accessibility/AccessibilitySettings;->getString(I)Ljava/lang/String;
 
     move-result-object v5
 
@@ -1350,7 +1350,7 @@
     invoke-virtual {v3, v0, v13}, Landroid/os/Bundle;->putParcelable(Ljava/lang/String;Landroid/os/Parcelable;)V
 
     .line 545
-    iget-object v0, p0, Lcom/android/settings/accessibility/AccessibilitySettings;->An:Landroid/preference/PreferenceCategory;
+    iget-object v0, p0, Lcom/android/settings_ext/accessibility/AccessibilitySettings;->An:Landroid/preference/PreferenceCategory;
 
     invoke-virtual {v0, v11}, Landroid/preference/PreferenceCategory;->addPreference(Landroid/preference/Preference;)Z
 
@@ -1381,7 +1381,7 @@
     :cond_6
     const v2, 0x7f090658
 
-    invoke-virtual {p0, v2}, Lcom/android/settings/accessibility/AccessibilitySettings;->getString(I)Ljava/lang/String;
+    invoke-virtual {p0, v2}, Lcom/android/settings_ext/accessibility/AccessibilitySettings;->getString(I)Ljava/lang/String;
 
     move-result-object v2
 
@@ -1405,7 +1405,7 @@
     :cond_9
     const v2, 0x7f090659
 
-    invoke-virtual {p0, v2}, Lcom/android/settings/accessibility/AccessibilitySettings;->getString(I)Ljava/lang/String;
+    invoke-virtual {p0, v2}, Lcom/android/settings_ext/accessibility/AccessibilitySettings;->getString(I)Ljava/lang/String;
 
     move-result-object v2
 
@@ -1413,7 +1413,7 @@
 
     .line 548
     :cond_a
-    iget-object v0, p0, Lcom/android/settings/accessibility/AccessibilitySettings;->An:Landroid/preference/PreferenceCategory;
+    iget-object v0, p0, Lcom/android/settings_ext/accessibility/AccessibilitySettings;->An:Landroid/preference/PreferenceCategory;
 
     invoke-virtual {v0}, Landroid/preference/PreferenceCategory;->getPreferenceCount()I
 
@@ -1422,48 +1422,48 @@
     if-nez v0, :cond_c
 
     .line 549
-    iget-object v0, p0, Lcom/android/settings/accessibility/AccessibilitySettings;->Aw:Landroid/preference/Preference;
+    iget-object v0, p0, Lcom/android/settings_ext/accessibility/AccessibilitySettings;->Aw:Landroid/preference/Preference;
 
     if-nez v0, :cond_b
 
     .line 550
     new-instance v0, Landroid/preference/Preference;
 
-    invoke-virtual {p0}, Lcom/android/settings/accessibility/AccessibilitySettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/accessibility/AccessibilitySettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v1
 
     invoke-direct {v0, v1}, Landroid/preference/Preference;-><init>(Landroid/content/Context;)V
 
-    iput-object v0, p0, Lcom/android/settings/accessibility/AccessibilitySettings;->Aw:Landroid/preference/Preference;
+    iput-object v0, p0, Lcom/android/settings_ext/accessibility/AccessibilitySettings;->Aw:Landroid/preference/Preference;
 
     .line 551
-    iget-object v0, p0, Lcom/android/settings/accessibility/AccessibilitySettings;->Aw:Landroid/preference/Preference;
+    iget-object v0, p0, Lcom/android/settings_ext/accessibility/AccessibilitySettings;->Aw:Landroid/preference/Preference;
 
     const/4 v1, 0x0
 
     invoke-virtual {v0, v1}, Landroid/preference/Preference;->setPersistent(Z)V
 
     .line 552
-    iget-object v0, p0, Lcom/android/settings/accessibility/AccessibilitySettings;->Aw:Landroid/preference/Preference;
+    iget-object v0, p0, Lcom/android/settings_ext/accessibility/AccessibilitySettings;->Aw:Landroid/preference/Preference;
 
     const v1, 0x7f040110
 
     invoke-virtual {v0, v1}, Landroid/preference/Preference;->setLayoutResource(I)V
 
     .line 554
-    iget-object v0, p0, Lcom/android/settings/accessibility/AccessibilitySettings;->Aw:Landroid/preference/Preference;
+    iget-object v0, p0, Lcom/android/settings_ext/accessibility/AccessibilitySettings;->Aw:Landroid/preference/Preference;
 
     const/4 v1, 0x0
 
     invoke-virtual {v0, v1}, Landroid/preference/Preference;->setSelectable(Z)V
 
     .line 555
-    iget-object v0, p0, Lcom/android/settings/accessibility/AccessibilitySettings;->Aw:Landroid/preference/Preference;
+    iget-object v0, p0, Lcom/android/settings_ext/accessibility/AccessibilitySettings;->Aw:Landroid/preference/Preference;
 
     const v1, 0x7f090683
 
-    invoke-virtual {p0, v1}, Lcom/android/settings/accessibility/AccessibilitySettings;->getString(I)Ljava/lang/String;
+    invoke-virtual {p0, v1}, Lcom/android/settings_ext/accessibility/AccessibilitySettings;->getString(I)Ljava/lang/String;
 
     move-result-object v1
 
@@ -1471,9 +1471,9 @@
 
     .line 558
     :cond_b
-    iget-object v0, p0, Lcom/android/settings/accessibility/AccessibilitySettings;->An:Landroid/preference/PreferenceCategory;
+    iget-object v0, p0, Lcom/android/settings_ext/accessibility/AccessibilitySettings;->An:Landroid/preference/PreferenceCategory;
 
-    iget-object v1, p0, Lcom/android/settings/accessibility/AccessibilitySettings;->Aw:Landroid/preference/Preference;
+    iget-object v1, p0, Lcom/android/settings_ext/accessibility/AccessibilitySettings;->Aw:Landroid/preference/Preference;
 
     invoke-virtual {v0, v1}, Landroid/preference/PreferenceCategory;->addPreference(Landroid/preference/Preference;)Z
 
@@ -1492,7 +1492,7 @@
 
     .line 565
     :try_start_0
-    iget-object v0, p0, Lcom/android/settings/accessibility/AccessibilitySettings;->jS:Landroid/content/res/Configuration;
+    iget-object v0, p0, Lcom/android/settings_ext/accessibility/AccessibilitySettings;->jS:Landroid/content/res/Configuration;
 
     invoke-static {}, Landroid/app/ActivityManagerNative;->getDefault()Landroid/app/IActivityManager;
 
@@ -1508,14 +1508,14 @@
 
     .line 572
     :goto_0
-    iget-object v0, p0, Lcom/android/settings/accessibility/AccessibilitySettings;->Aq:Landroid/preference/CheckBoxPreference;
+    iget-object v0, p0, Lcom/android/settings_ext/accessibility/AccessibilitySettings;->Aq:Landroid/preference/CheckBoxPreference;
 
     if-eqz v0, :cond_0
 
     .line 573
-    iget-object v3, p0, Lcom/android/settings/accessibility/AccessibilitySettings;->Aq:Landroid/preference/CheckBoxPreference;
+    iget-object v3, p0, Lcom/android/settings_ext/accessibility/AccessibilitySettings;->Aq:Landroid/preference/CheckBoxPreference;
 
-    iget-object v0, p0, Lcom/android/settings/accessibility/AccessibilitySettings;->jS:Landroid/content/res/Configuration;
+    iget-object v0, p0, Lcom/android/settings_ext/accessibility/AccessibilitySettings;->jS:Landroid/content/res/Configuration;
 
     iget v0, v0, Landroid/content/res/Configuration;->fontScale:F
 
@@ -1532,9 +1532,9 @@
 
     .line 577
     :cond_0
-    iget-object v3, p0, Lcom/android/settings/accessibility/AccessibilitySettings;->Ar:Landroid/preference/CheckBoxPreference;
+    iget-object v3, p0, Lcom/android/settings_ext/accessibility/AccessibilitySettings;->Ar:Landroid/preference/CheckBoxPreference;
 
-    invoke-virtual {p0}, Lcom/android/settings/accessibility/AccessibilitySettings;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/settings_ext/accessibility/AccessibilitySettings;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v0
 
@@ -1552,9 +1552,9 @@
     invoke-virtual {v3, v0}, Landroid/preference/CheckBoxPreference;->setChecked(Z)V
 
     .line 582
-    iget-object v3, p0, Lcom/android/settings/accessibility/AccessibilitySettings;->AB:Landroid/preference/CheckBoxPreference;
+    iget-object v3, p0, Lcom/android/settings_ext/accessibility/AccessibilitySettings;->AB:Landroid/preference/CheckBoxPreference;
 
-    invoke-virtual {p0}, Lcom/android/settings/accessibility/AccessibilitySettings;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/settings_ext/accessibility/AccessibilitySettings;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v0
 
@@ -1580,18 +1580,18 @@
 
     if-eqz v0, :cond_1
 
-    invoke-virtual {p0}, Lcom/android/settings/accessibility/AccessibilitySettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/accessibility/AccessibilitySettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
-    invoke-static {v0}, Lcom/android/settings/hl;->M(Landroid/content/Context;)Z
+    invoke-static {v0}, Lcom/android/settings_ext/hl;->M(Landroid/content/Context;)Z
 
     move-result v0
 
     if-eqz v0, :cond_1
 
     .line 588
-    invoke-virtual {p0}, Lcom/android/settings/accessibility/AccessibilitySettings;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/settings_ext/accessibility/AccessibilitySettings;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v0
 
@@ -1610,13 +1610,13 @@
 
     .line 593
     :goto_4
-    iget-object v3, p0, Lcom/android/settings/accessibility/AccessibilitySettings;->As:Landroid/preference/CheckBoxPreference;
+    iget-object v3, p0, Lcom/android/settings_ext/accessibility/AccessibilitySettings;->As:Landroid/preference/CheckBoxPreference;
 
     invoke-virtual {v3, v0}, Landroid/preference/CheckBoxPreference;->setChecked(Z)V
 
     .line 600
     :cond_1
-    invoke-virtual {p0}, Lcom/android/settings/accessibility/AccessibilitySettings;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/settings_ext/accessibility/AccessibilitySettings;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v0
 
@@ -1632,18 +1632,18 @@
 
     .line 602
     :goto_5
-    iget-object v3, p0, Lcom/android/settings/accessibility/AccessibilitySettings;->Au:Landroid/preference/CheckBoxPreference;
+    iget-object v3, p0, Lcom/android/settings_ext/accessibility/AccessibilitySettings;->Au:Landroid/preference/CheckBoxPreference;
 
     invoke-virtual {v3, v0}, Landroid/preference/CheckBoxPreference;->setChecked(Z)V
 
     .line 605
-    invoke-virtual {p0}, Lcom/android/settings/accessibility/AccessibilitySettings;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/settings_ext/accessibility/AccessibilitySettings;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v0
 
     const-string v3, "long_press_timeout"
 
-    iget v4, p0, Lcom/android/settings/accessibility/AccessibilitySettings;->AC:I
+    iget v4, p0, Lcom/android/settings_ext/accessibility/AccessibilitySettings;->AC:I
 
     invoke-static {v0, v3, v4}, Landroid/provider/Settings$Secure;->getInt(Landroid/content/ContentResolver;Ljava/lang/String;I)I
 
@@ -1655,14 +1655,14 @@
     move-result-object v0
 
     .line 608
-    iget-object v3, p0, Lcom/android/settings/accessibility/AccessibilitySettings;->Av:Landroid/preference/ListPreference;
+    iget-object v3, p0, Lcom/android/settings_ext/accessibility/AccessibilitySettings;->Av:Landroid/preference/ListPreference;
 
     invoke-virtual {v3, v0}, Landroid/preference/ListPreference;->setValue(Ljava/lang/String;)V
 
     .line 609
-    iget-object v3, p0, Lcom/android/settings/accessibility/AccessibilitySettings;->Av:Landroid/preference/ListPreference;
+    iget-object v3, p0, Lcom/android/settings_ext/accessibility/AccessibilitySettings;->Av:Landroid/preference/ListPreference;
 
-    iget-object v4, p0, Lcom/android/settings/accessibility/AccessibilitySettings;->Aj:Ljava/util/Map;
+    iget-object v4, p0, Lcom/android/settings_ext/accessibility/AccessibilitySettings;->Aj:Ljava/util/Map;
 
     invoke-interface {v4, v0}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -1675,26 +1675,26 @@
     .line 611
     const-string v0, "accessibility_captioning_enabled"
 
-    iget-object v3, p0, Lcom/android/settings/accessibility/AccessibilitySettings;->Ax:Landroid/preference/PreferenceScreen;
+    iget-object v3, p0, Lcom/android/settings_ext/accessibility/AccessibilitySettings;->Ax:Landroid/preference/PreferenceScreen;
 
-    invoke-direct {p0, v0, v3}, Lcom/android/settings/accessibility/AccessibilitySettings;->a(Ljava/lang/String;Landroid/preference/Preference;)V
+    invoke-direct {p0, v0, v3}, Lcom/android/settings_ext/accessibility/AccessibilitySettings;->a(Ljava/lang/String;Landroid/preference/Preference;)V
 
     .line 613
     const-string v0, "accessibility_display_magnification_enabled"
 
-    iget-object v3, p0, Lcom/android/settings/accessibility/AccessibilitySettings;->Ay:Landroid/preference/PreferenceScreen;
+    iget-object v3, p0, Lcom/android/settings_ext/accessibility/AccessibilitySettings;->Ay:Landroid/preference/PreferenceScreen;
 
-    invoke-direct {p0, v0, v3}, Lcom/android/settings/accessibility/AccessibilitySettings;->a(Ljava/lang/String;Landroid/preference/Preference;)V
+    invoke-direct {p0, v0, v3}, Lcom/android/settings_ext/accessibility/AccessibilitySettings;->a(Ljava/lang/String;Landroid/preference/Preference;)V
 
     .line 615
     const-string v0, "accessibility_display_daltonizer_enabled"
 
-    iget-object v3, p0, Lcom/android/settings/accessibility/AccessibilitySettings;->AA:Landroid/preference/PreferenceScreen;
+    iget-object v3, p0, Lcom/android/settings_ext/accessibility/AccessibilitySettings;->AA:Landroid/preference/PreferenceScreen;
 
-    invoke-direct {p0, v0, v3}, Lcom/android/settings/accessibility/AccessibilitySettings;->a(Ljava/lang/String;Landroid/preference/Preference;)V
+    invoke-direct {p0, v0, v3}, Lcom/android/settings_ext/accessibility/AccessibilitySettings;->a(Ljava/lang/String;Landroid/preference/Preference;)V
 
     .line 619
-    iget-object v0, p0, Lcom/android/settings/accessibility/AccessibilitySettings;->Az:Landroid/preference/PreferenceScreen;
+    iget-object v0, p0, Lcom/android/settings_ext/accessibility/AccessibilitySettings;->Az:Landroid/preference/PreferenceScreen;
 
     if-nez v0, :cond_7
 
@@ -1734,7 +1734,7 @@
 
     .line 625
     :cond_7
-    invoke-virtual {p0}, Lcom/android/settings/accessibility/AccessibilitySettings;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/settings_ext/accessibility/AccessibilitySettings;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v0
 
@@ -1751,7 +1751,7 @@
     if-eqz v1, :cond_9
 
     .line 628
-    iget-object v0, p0, Lcom/android/settings/accessibility/AccessibilitySettings;->Az:Landroid/preference/PreferenceScreen;
+    iget-object v0, p0, Lcom/android/settings_ext/accessibility/AccessibilitySettings;->Az:Landroid/preference/PreferenceScreen;
 
     const v1, 0x7f09063f
 
@@ -1767,7 +1767,7 @@
 
     .line 631
     :cond_9
-    iget-object v0, p0, Lcom/android/settings/accessibility/AccessibilitySettings;->Az:Landroid/preference/PreferenceScreen;
+    iget-object v0, p0, Lcom/android/settings_ext/accessibility/AccessibilitySettings;->Az:Landroid/preference/PreferenceScreen;
 
     const v1, 0x7f090640
 
@@ -1787,19 +1787,19 @@
 
     .prologue
     .line 643
-    invoke-virtual {p0}, Lcom/android/settings/accessibility/AccessibilitySettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/accessibility/AccessibilitySettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
     .line 646
     if-eqz v0, :cond_0
 
-    iget-object v1, p0, Lcom/android/settings/accessibility/AccessibilitySettings;->At:Landroid/preference/CheckBoxPreference;
+    iget-object v1, p0, Lcom/android/settings_ext/accessibility/AccessibilitySettings;->At:Landroid/preference/CheckBoxPreference;
 
     if-eqz v1, :cond_0
 
     .line 647
-    iget-object v1, p0, Lcom/android/settings/accessibility/AccessibilitySettings;->At:Landroid/preference/CheckBoxPreference;
+    iget-object v1, p0, Lcom/android/settings_ext/accessibility/AccessibilitySettings;->At:Landroid/preference/CheckBoxPreference;
 
     invoke-static {v0}, Lcom/android/internal/view/RotationPolicy;->isRotationLocked(Landroid/content/Context;)Z
 
@@ -1828,13 +1828,13 @@
 
     .prologue
     .line 653
-    sget-object v2, Lcom/android/settings/accessibility/AccessibilitySettings;->Ai:Ljava/util/Set;
+    sget-object v2, Lcom/android/settings_ext/accessibility/AccessibilitySettings;->Ai:Ljava/util/Set;
 
     .line 654
     invoke-interface {v2}, Ljava/util/Set;->clear()V
 
     .line 656
-    invoke-virtual {p0}, Lcom/android/settings/accessibility/AccessibilitySettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/accessibility/AccessibilitySettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
@@ -1909,18 +1909,18 @@
 
     .prologue
     .line 213
-    invoke-super {p0, p1}, Lcom/android/settings/SettingsPreferenceFragment;->onCreate(Landroid/os/Bundle;)V
+    invoke-super {p0, p1}, Lcom/android/settings_ext/SettingsPreferenceFragment;->onCreate(Landroid/os/Bundle;)V
 
     .line 214
     const v0, 0x7f060006
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/accessibility/AccessibilitySettings;->addPreferencesFromResource(I)V
+    invoke-virtual {p0, v0}, Lcom/android/settings_ext/accessibility/AccessibilitySettings;->addPreferencesFromResource(I)V
 
     .line 215
-    invoke-direct {p0}, Lcom/android/settings/accessibility/AccessibilitySettings;->hI()V
+    invoke-direct {p0}, Lcom/android/settings_ext/accessibility/AccessibilitySettings;->hI()V
 
     .line 216
-    invoke-virtual {p0}, Lcom/android/settings/accessibility/AccessibilitySettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/accessibility/AccessibilitySettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
@@ -1934,7 +1934,7 @@
 
     check-cast v0, Landroid/app/admin/DevicePolicyManager;
 
-    iput-object v0, p0, Lcom/android/settings/accessibility/AccessibilitySettings;->hC:Landroid/app/admin/DevicePolicyManager;
+    iput-object v0, p0, Lcom/android/settings_ext/accessibility/AccessibilitySettings;->hC:Landroid/app/admin/DevicePolicyManager;
 
     .line 218
     return-void
@@ -1945,14 +1945,14 @@
 
     .prologue
     .line 248
-    iget-object v0, p0, Lcom/android/settings/accessibility/AccessibilitySettings;->mHandler:Landroid/os/Handler;
+    iget-object v0, p0, Lcom/android/settings_ext/accessibility/AccessibilitySettings;->mHandler:Landroid/os/Handler;
 
     const/4 v1, 0x0
 
     invoke-virtual {v0, v1}, Landroid/os/Handler;->removeMessages(I)V
 
     .line 249
-    invoke-super {p0}, Lcom/android/settings/SettingsPreferenceFragment;->onDestroy()V
+    invoke-super {p0}, Lcom/android/settings_ext/SettingsPreferenceFragment;->onDestroy()V
 
     .line 250
     return-void
@@ -1963,21 +1963,21 @@
 
     .prologue
     .line 236
-    iget-object v0, p0, Lcom/android/settings/accessibility/AccessibilitySettings;->Al:Lcom/android/internal/content/PackageMonitor;
+    iget-object v0, p0, Lcom/android/settings_ext/accessibility/AccessibilitySettings;->Al:Lcom/android/internal/content/PackageMonitor;
 
     invoke-virtual {v0}, Lcom/android/internal/content/PackageMonitor;->unregister()V
 
     .line 237
-    iget-object v0, p0, Lcom/android/settings/accessibility/AccessibilitySettings;->Am:Lcom/android/settings/accessibility/SettingsContentObserver;
+    iget-object v0, p0, Lcom/android/settings_ext/accessibility/AccessibilitySettings;->Am:Lcom/android/settings_ext/accessibility/SettingsContentObserver;
 
-    invoke-virtual {p0}, Lcom/android/settings/accessibility/AccessibilitySettings;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/settings_ext/accessibility/AccessibilitySettings;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v1
 
-    invoke-virtual {v0, v1}, Lcom/android/settings/accessibility/SettingsContentObserver;->b(Landroid/content/ContentResolver;)V
+    invoke-virtual {v0, v1}, Lcom/android/settings_ext/accessibility/SettingsContentObserver;->b(Landroid/content/ContentResolver;)V
 
     .line 238
-    invoke-virtual {p0}, Lcom/android/settings/accessibility/AccessibilitySettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/accessibility/AccessibilitySettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
@@ -1988,17 +1988,17 @@
     if-eqz v0, :cond_0
 
     .line 239
-    invoke-virtual {p0}, Lcom/android/settings/accessibility/AccessibilitySettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/accessibility/AccessibilitySettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/android/settings/accessibility/AccessibilitySettings;->kd:Lcom/android/internal/view/RotationPolicy$RotationPolicyListener;
+    iget-object v1, p0, Lcom/android/settings_ext/accessibility/AccessibilitySettings;->kd:Lcom/android/internal/view/RotationPolicy$RotationPolicyListener;
 
     invoke-static {v0, v1}, Lcom/android/internal/view/RotationPolicy;->unregisterRotationPolicyListener(Landroid/content/Context;Lcom/android/internal/view/RotationPolicy$RotationPolicyListener;)V
 
     .line 242
     :cond_0
-    invoke-super {p0}, Lcom/android/settings/SettingsPreferenceFragment;->onPause()V
+    invoke-super {p0}, Lcom/android/settings_ext/SettingsPreferenceFragment;->onPause()V
 
     .line 243
     return-void
@@ -2011,14 +2011,14 @@
     const/4 v0, 0x1
 
     .line 254
-    iget-object v1, p0, Lcom/android/settings/accessibility/AccessibilitySettings;->Av:Landroid/preference/ListPreference;
+    iget-object v1, p0, Lcom/android/settings_ext/accessibility/AccessibilitySettings;->Av:Landroid/preference/ListPreference;
 
     if-ne v1, p1, :cond_0
 
     .line 255
     check-cast p2, Ljava/lang/String;
 
-    invoke-direct {p0, p2}, Lcom/android/settings/accessibility/AccessibilitySettings;->S(Ljava/lang/String;)V
+    invoke-direct {p0, p2}, Lcom/android/settings_ext/accessibility/AccessibilitySettings;->S(Ljava/lang/String;)V
 
     .line 261
     :goto_0
@@ -2026,7 +2026,7 @@
 
     .line 257
     :cond_0
-    iget-object v1, p0, Lcom/android/settings/accessibility/AccessibilitySettings;->AB:Landroid/preference/CheckBoxPreference;
+    iget-object v1, p0, Lcom/android/settings_ext/accessibility/AccessibilitySettings;->AB:Landroid/preference/CheckBoxPreference;
 
     if-ne v1, p1, :cond_1
 
@@ -2037,7 +2037,7 @@
 
     move-result v1
 
-    invoke-direct {p0, v1}, Lcom/android/settings/accessibility/AccessibilitySettings;->O(Z)V
+    invoke-direct {p0, v1}, Lcom/android/settings_ext/accessibility/AccessibilitySettings;->O(Z)V
 
     goto :goto_0
 
@@ -2055,12 +2055,12 @@
     const/4 v0, 0x1
 
     .line 278
-    iget-object v1, p0, Lcom/android/settings/accessibility/AccessibilitySettings;->Aq:Landroid/preference/CheckBoxPreference;
+    iget-object v1, p0, Lcom/android/settings_ext/accessibility/AccessibilitySettings;->Aq:Landroid/preference/CheckBoxPreference;
 
     if-ne v1, p2, :cond_0
 
     .line 279
-    invoke-direct {p0}, Lcom/android/settings/accessibility/AccessibilitySettings;->hB()V
+    invoke-direct {p0}, Lcom/android/settings_ext/accessibility/AccessibilitySettings;->hB()V
 
     .line 300
     :goto_0
@@ -2068,73 +2068,73 @@
 
     .line 281
     :cond_0
-    iget-object v1, p0, Lcom/android/settings/accessibility/AccessibilitySettings;->Ar:Landroid/preference/CheckBoxPreference;
+    iget-object v1, p0, Lcom/android/settings_ext/accessibility/AccessibilitySettings;->Ar:Landroid/preference/CheckBoxPreference;
 
     if-ne v1, p2, :cond_1
 
     .line 282
-    invoke-direct {p0}, Lcom/android/settings/accessibility/AccessibilitySettings;->hC()V
+    invoke-direct {p0}, Lcom/android/settings_ext/accessibility/AccessibilitySettings;->hC()V
 
     goto :goto_0
 
     .line 284
     :cond_1
-    iget-object v1, p0, Lcom/android/settings/accessibility/AccessibilitySettings;->As:Landroid/preference/CheckBoxPreference;
+    iget-object v1, p0, Lcom/android/settings_ext/accessibility/AccessibilitySettings;->As:Landroid/preference/CheckBoxPreference;
 
     if-ne v1, p2, :cond_2
 
     .line 285
-    invoke-direct {p0}, Lcom/android/settings/accessibility/AccessibilitySettings;->hD()V
+    invoke-direct {p0}, Lcom/android/settings_ext/accessibility/AccessibilitySettings;->hD()V
 
     goto :goto_0
 
     .line 287
     :cond_2
-    iget-object v1, p0, Lcom/android/settings/accessibility/AccessibilitySettings;->At:Landroid/preference/CheckBoxPreference;
+    iget-object v1, p0, Lcom/android/settings_ext/accessibility/AccessibilitySettings;->At:Landroid/preference/CheckBoxPreference;
 
     if-ne v1, p2, :cond_3
 
     .line 288
-    invoke-direct {p0}, Lcom/android/settings/accessibility/AccessibilitySettings;->hE()V
+    invoke-direct {p0}, Lcom/android/settings_ext/accessibility/AccessibilitySettings;->hE()V
 
     goto :goto_0
 
     .line 290
     :cond_3
-    iget-object v1, p0, Lcom/android/settings/accessibility/AccessibilitySettings;->Au:Landroid/preference/CheckBoxPreference;
+    iget-object v1, p0, Lcom/android/settings_ext/accessibility/AccessibilitySettings;->Au:Landroid/preference/CheckBoxPreference;
 
     if-ne v1, p2, :cond_4
 
     .line 291
-    invoke-direct {p0}, Lcom/android/settings/accessibility/AccessibilitySettings;->hF()V
+    invoke-direct {p0}, Lcom/android/settings_ext/accessibility/AccessibilitySettings;->hF()V
 
     goto :goto_0
 
     .line 293
     :cond_4
-    iget-object v1, p0, Lcom/android/settings/accessibility/AccessibilitySettings;->Az:Landroid/preference/PreferenceScreen;
+    iget-object v1, p0, Lcom/android/settings_ext/accessibility/AccessibilitySettings;->Az:Landroid/preference/PreferenceScreen;
 
     if-ne v1, p2, :cond_5
 
     .line 294
-    invoke-direct {p0}, Lcom/android/settings/accessibility/AccessibilitySettings;->hG()V
+    invoke-direct {p0}, Lcom/android/settings_ext/accessibility/AccessibilitySettings;->hG()V
 
     goto :goto_0
 
     .line 296
     :cond_5
-    iget-object v1, p0, Lcom/android/settings/accessibility/AccessibilitySettings;->Ay:Landroid/preference/PreferenceScreen;
+    iget-object v1, p0, Lcom/android/settings_ext/accessibility/AccessibilitySettings;->Ay:Landroid/preference/PreferenceScreen;
 
     if-ne v1, p2, :cond_6
 
     .line 297
-    invoke-direct {p0}, Lcom/android/settings/accessibility/AccessibilitySettings;->hH()V
+    invoke-direct {p0}, Lcom/android/settings_ext/accessibility/AccessibilitySettings;->hH()V
 
     goto :goto_0
 
     .line 300
     :cond_6
-    invoke-super {p0, p1, p2}, Lcom/android/settings/SettingsPreferenceFragment;->onPreferenceTreeClick(Landroid/preference/PreferenceScreen;Landroid/preference/Preference;)Z
+    invoke-super {p0, p1, p2}, Lcom/android/settings_ext/SettingsPreferenceFragment;->onPreferenceTreeClick(Landroid/preference/PreferenceScreen;Landroid/preference/Preference;)Z
 
     move-result v0
 
@@ -2146,22 +2146,22 @@
 
     .prologue
     .line 222
-    invoke-super {p0}, Lcom/android/settings/SettingsPreferenceFragment;->onResume()V
+    invoke-super {p0}, Lcom/android/settings_ext/SettingsPreferenceFragment;->onResume()V
 
     .line 223
-    invoke-direct {p0}, Lcom/android/settings/accessibility/AccessibilitySettings;->hN()V
+    invoke-direct {p0}, Lcom/android/settings_ext/accessibility/AccessibilitySettings;->hN()V
 
     .line 224
-    invoke-direct {p0}, Lcom/android/settings/accessibility/AccessibilitySettings;->hJ()V
+    invoke-direct {p0}, Lcom/android/settings_ext/accessibility/AccessibilitySettings;->hJ()V
 
     .line 226
-    iget-object v0, p0, Lcom/android/settings/accessibility/AccessibilitySettings;->Al:Lcom/android/internal/content/PackageMonitor;
+    iget-object v0, p0, Lcom/android/settings_ext/accessibility/AccessibilitySettings;->Al:Lcom/android/internal/content/PackageMonitor;
 
-    invoke-virtual {p0}, Lcom/android/settings/accessibility/AccessibilitySettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/accessibility/AccessibilitySettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v1
 
-    invoke-virtual {p0}, Lcom/android/settings/accessibility/AccessibilitySettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/accessibility/AccessibilitySettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v2
 
@@ -2174,16 +2174,16 @@
     invoke-virtual {v0, v1, v2, v3}, Lcom/android/internal/content/PackageMonitor;->register(Landroid/content/Context;Landroid/os/Looper;Z)V
 
     .line 227
-    iget-object v0, p0, Lcom/android/settings/accessibility/AccessibilitySettings;->Am:Lcom/android/settings/accessibility/SettingsContentObserver;
+    iget-object v0, p0, Lcom/android/settings_ext/accessibility/AccessibilitySettings;->Am:Lcom/android/settings_ext/accessibility/SettingsContentObserver;
 
-    invoke-virtual {p0}, Lcom/android/settings/accessibility/AccessibilitySettings;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/settings_ext/accessibility/AccessibilitySettings;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v1
 
-    invoke-virtual {v0, v1}, Lcom/android/settings/accessibility/SettingsContentObserver;->a(Landroid/content/ContentResolver;)V
+    invoke-virtual {v0, v1}, Lcom/android/settings_ext/accessibility/SettingsContentObserver;->a(Landroid/content/ContentResolver;)V
 
     .line 228
-    invoke-virtual {p0}, Lcom/android/settings/accessibility/AccessibilitySettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/accessibility/AccessibilitySettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
@@ -2194,11 +2194,11 @@
     if-eqz v0, :cond_0
 
     .line 229
-    invoke-virtual {p0}, Lcom/android/settings/accessibility/AccessibilitySettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/accessibility/AccessibilitySettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/android/settings/accessibility/AccessibilitySettings;->kd:Lcom/android/internal/view/RotationPolicy$RotationPolicyListener;
+    iget-object v1, p0, Lcom/android/settings_ext/accessibility/AccessibilitySettings;->kd:Lcom/android/internal/view/RotationPolicy$RotationPolicyListener;
 
     invoke-static {v0, v1}, Lcom/android/internal/view/RotationPolicy;->registerRotationPolicyListener(Landroid/content/Context;Lcom/android/internal/view/RotationPolicy$RotationPolicyListener;)V
 

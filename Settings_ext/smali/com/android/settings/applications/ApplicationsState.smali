@@ -1,4 +1,4 @@
-.class public Lcom/android/settings/applications/ApplicationsState;
+.class public Lcom/android/settings_ext/applications/ApplicationsState;
 .super Ljava/lang/Object;
 .source "ApplicationsState.java"
 
@@ -6,7 +6,7 @@
 # static fields
 .field static final EN:Ljava/lang/Object;
 
-.field static EO:Lcom/android/settings/applications/ApplicationsState;
+.field static EO:Lcom/android/settings_ext/applications/ApplicationsState;
 
 .field static final Eq:Ljava/util/regex/Pattern;
 
@@ -18,17 +18,17 @@
 
 .field public static final Eu:Ljava/util/Comparator;
 
-.field public static final Ev:Lcom/android/settings/applications/ApplicationsState$AppFilter;
+.field public static final Ev:Lcom/android/settings_ext/applications/ApplicationsState$AppFilter;
 
-.field public static final Ew:Lcom/android/settings/applications/ApplicationsState$AppFilter;
+.field public static final Ew:Lcom/android/settings_ext/applications/ApplicationsState$AppFilter;
 
-.field public static final Ex:Lcom/android/settings/applications/ApplicationsState$AppFilter;
+.field public static final Ex:Lcom/android/settings_ext/applications/ApplicationsState$AppFilter;
 
-.field public static final Ey:Lcom/android/settings/applications/ApplicationsState$AppFilter;
+.field public static final Ey:Lcom/android/settings_ext/applications/ApplicationsState$AppFilter;
 
 
 # instance fields
-.field EA:Lcom/android/settings/applications/ApplicationsState$PackageIntentReceiver;
+.field EA:Lcom/android/settings_ext/applications/ApplicationsState$PackageIntentReceiver;
 
 .field EB:Z
 
@@ -36,7 +36,7 @@
 
 .field final ED:Ljava/util/ArrayList;
 
-.field final EE:Lcom/android/settings/applications/InterestingConfigChanges;
+.field final EE:Lcom/android/settings_ext/applications/InterestingConfigChanges;
 
 .field final EF:Ljava/util/HashMap;
 
@@ -52,9 +52,9 @@
 
 .field final EL:Ljava/util/ArrayList;
 
-.field final EM:Lcom/android/settings/applications/ApplicationsState$MainHandler;
+.field final EM:Lcom/android/settings_ext/applications/ApplicationsState$MainHandler;
 
-.field final EP:Lcom/android/settings/applications/ApplicationsState$BackgroundHandler;
+.field final EP:Lcom/android/settings_ext/applications/ApplicationsState$BackgroundHandler;
 
 .field final Ez:I
 
@@ -79,70 +79,70 @@
 
     move-result-object v0
 
-    sput-object v0, Lcom/android/settings/applications/ApplicationsState;->Eq:Ljava/util/regex/Pattern;
+    sput-object v0, Lcom/android/settings_ext/applications/ApplicationsState;->Eq:Ljava/util/regex/Pattern;
 
     .line 227
-    new-instance v0, Lcom/android/settings/applications/ApplicationsState$1;
+    new-instance v0, Lcom/android/settings_ext/applications/ApplicationsState$1;
 
-    invoke-direct {v0}, Lcom/android/settings/applications/ApplicationsState$1;-><init>()V
+    invoke-direct {v0}, Lcom/android/settings_ext/applications/ApplicationsState$1;-><init>()V
 
-    sput-object v0, Lcom/android/settings/applications/ApplicationsState;->Er:Ljava/util/Comparator;
+    sput-object v0, Lcom/android/settings_ext/applications/ApplicationsState;->Er:Ljava/util/Comparator;
 
     .line 244
-    new-instance v0, Lcom/android/settings/applications/ApplicationsState$2;
+    new-instance v0, Lcom/android/settings_ext/applications/ApplicationsState$2;
 
-    invoke-direct {v0}, Lcom/android/settings/applications/ApplicationsState$2;-><init>()V
+    invoke-direct {v0}, Lcom/android/settings_ext/applications/ApplicationsState$2;-><init>()V
 
-    sput-object v0, Lcom/android/settings/applications/ApplicationsState;->Es:Ljava/util/Comparator;
+    sput-object v0, Lcom/android/settings_ext/applications/ApplicationsState;->Es:Ljava/util/Comparator;
 
     .line 255
-    new-instance v0, Lcom/android/settings/applications/ApplicationsState$3;
+    new-instance v0, Lcom/android/settings_ext/applications/ApplicationsState$3;
 
-    invoke-direct {v0}, Lcom/android/settings/applications/ApplicationsState$3;-><init>()V
+    invoke-direct {v0}, Lcom/android/settings_ext/applications/ApplicationsState$3;-><init>()V
 
-    sput-object v0, Lcom/android/settings/applications/ApplicationsState;->Et:Ljava/util/Comparator;
+    sput-object v0, Lcom/android/settings_ext/applications/ApplicationsState;->Et:Ljava/util/Comparator;
 
     .line 266
-    new-instance v0, Lcom/android/settings/applications/ApplicationsState$4;
+    new-instance v0, Lcom/android/settings_ext/applications/ApplicationsState$4;
 
-    invoke-direct {v0}, Lcom/android/settings/applications/ApplicationsState$4;-><init>()V
+    invoke-direct {v0}, Lcom/android/settings_ext/applications/ApplicationsState$4;-><init>()V
 
-    sput-object v0, Lcom/android/settings/applications/ApplicationsState;->Eu:Ljava/util/Comparator;
+    sput-object v0, Lcom/android/settings_ext/applications/ApplicationsState;->Eu:Ljava/util/Comparator;
 
     .line 277
-    new-instance v0, Lcom/android/settings/applications/ApplicationsState$5;
+    new-instance v0, Lcom/android/settings_ext/applications/ApplicationsState$5;
 
-    invoke-direct {v0}, Lcom/android/settings/applications/ApplicationsState$5;-><init>()V
+    invoke-direct {v0}, Lcom/android/settings_ext/applications/ApplicationsState$5;-><init>()V
 
-    sput-object v0, Lcom/android/settings/applications/ApplicationsState;->Ev:Lcom/android/settings/applications/ApplicationsState$AppFilter;
+    sput-object v0, Lcom/android/settings_ext/applications/ApplicationsState;->Ev:Lcom/android/settings_ext/applications/ApplicationsState$AppFilter;
 
     .line 292
-    new-instance v0, Lcom/android/settings/applications/ApplicationsState$6;
+    new-instance v0, Lcom/android/settings_ext/applications/ApplicationsState$6;
 
-    invoke-direct {v0}, Lcom/android/settings/applications/ApplicationsState$6;-><init>()V
+    invoke-direct {v0}, Lcom/android/settings_ext/applications/ApplicationsState$6;-><init>()V
 
-    sput-object v0, Lcom/android/settings/applications/ApplicationsState;->Ew:Lcom/android/settings/applications/ApplicationsState$AppFilter;
+    sput-object v0, Lcom/android/settings_ext/applications/ApplicationsState;->Ew:Lcom/android/settings_ext/applications/ApplicationsState$AppFilter;
 
     .line 306
-    new-instance v0, Lcom/android/settings/applications/ApplicationsState$7;
+    new-instance v0, Lcom/android/settings_ext/applications/ApplicationsState$7;
 
-    invoke-direct {v0}, Lcom/android/settings/applications/ApplicationsState$7;-><init>()V
+    invoke-direct {v0}, Lcom/android/settings_ext/applications/ApplicationsState$7;-><init>()V
 
-    sput-object v0, Lcom/android/settings/applications/ApplicationsState;->Ex:Lcom/android/settings/applications/ApplicationsState$AppFilter;
+    sput-object v0, Lcom/android/settings_ext/applications/ApplicationsState;->Ex:Lcom/android/settings_ext/applications/ApplicationsState$AppFilter;
 
     .line 319
-    new-instance v0, Lcom/android/settings/applications/ApplicationsState$8;
+    new-instance v0, Lcom/android/settings_ext/applications/ApplicationsState$8;
 
-    invoke-direct {v0}, Lcom/android/settings/applications/ApplicationsState$8;-><init>()V
+    invoke-direct {v0}, Lcom/android/settings_ext/applications/ApplicationsState$8;-><init>()V
 
-    sput-object v0, Lcom/android/settings/applications/ApplicationsState;->Ey:Lcom/android/settings/applications/ApplicationsState$AppFilter;
+    sput-object v0, Lcom/android/settings_ext/applications/ApplicationsState;->Ey:Lcom/android/settings_ext/applications/ApplicationsState$AppFilter;
 
     .line 480
     new-instance v0, Ljava/lang/Object;
 
     invoke-direct {v0}, Ljava/lang/Object;-><init>()V
 
-    sput-object v0, Lcom/android/settings/applications/ApplicationsState;->EN:Ljava/lang/Object;
+    sput-object v0, Lcom/android/settings_ext/applications/ApplicationsState;->EN:Ljava/lang/Object;
 
     return-void
 .end method
@@ -161,71 +161,71 @@
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
-    iput-object v0, p0, Lcom/android/settings/applications/ApplicationsState;->EC:Ljava/util/ArrayList;
+    iput-object v0, p0, Lcom/android/settings_ext/applications/ApplicationsState;->EC:Ljava/util/ArrayList;
 
     .line 343
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
-    iput-object v0, p0, Lcom/android/settings/applications/ApplicationsState;->ED:Ljava/util/ArrayList;
+    iput-object v0, p0, Lcom/android/settings_ext/applications/ApplicationsState;->ED:Ljava/util/ArrayList;
 
     .line 344
-    new-instance v0, Lcom/android/settings/applications/InterestingConfigChanges;
+    new-instance v0, Lcom/android/settings_ext/applications/InterestingConfigChanges;
 
-    invoke-direct {v0}, Lcom/android/settings/applications/InterestingConfigChanges;-><init>()V
+    invoke-direct {v0}, Lcom/android/settings_ext/applications/InterestingConfigChanges;-><init>()V
 
-    iput-object v0, p0, Lcom/android/settings/applications/ApplicationsState;->EE:Lcom/android/settings/applications/InterestingConfigChanges;
+    iput-object v0, p0, Lcom/android/settings_ext/applications/ApplicationsState;->EE:Lcom/android/settings_ext/applications/InterestingConfigChanges;
 
     .line 345
     new-instance v0, Ljava/util/HashMap;
 
     invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
 
-    iput-object v0, p0, Lcom/android/settings/applications/ApplicationsState;->EF:Ljava/util/HashMap;
+    iput-object v0, p0, Lcom/android/settings_ext/applications/ApplicationsState;->EF:Ljava/util/HashMap;
 
     .line 346
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
-    iput-object v0, p0, Lcom/android/settings/applications/ApplicationsState;->EG:Ljava/util/ArrayList;
+    iput-object v0, p0, Lcom/android/settings_ext/applications/ApplicationsState;->EG:Ljava/util/ArrayList;
 
     .line 347
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
-    iput-object v0, p0, Lcom/android/settings/applications/ApplicationsState;->EH:Ljava/util/List;
+    iput-object v0, p0, Lcom/android/settings_ext/applications/ApplicationsState;->EH:Ljava/util/List;
 
     .line 348
-    iput-wide v2, p0, Lcom/android/settings/applications/ApplicationsState;->EI:J
+    iput-wide v2, p0, Lcom/android/settings_ext/applications/ApplicationsState;->EI:J
 
     .line 353
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
-    iput-object v0, p0, Lcom/android/settings/applications/ApplicationsState;->EL:Ljava/util/ArrayList;
+    iput-object v0, p0, Lcom/android/settings_ext/applications/ApplicationsState;->EL:Ljava/util/ArrayList;
 
     .line 476
-    new-instance v0, Lcom/android/settings/applications/ApplicationsState$MainHandler;
+    new-instance v0, Lcom/android/settings_ext/applications/ApplicationsState$MainHandler;
 
-    invoke-direct {v0, p0}, Lcom/android/settings/applications/ApplicationsState$MainHandler;-><init>(Lcom/android/settings/applications/ApplicationsState;)V
+    invoke-direct {v0, p0}, Lcom/android/settings_ext/applications/ApplicationsState$MainHandler;-><init>(Lcom/android/settings_ext/applications/ApplicationsState;)V
 
-    iput-object v0, p0, Lcom/android/settings/applications/ApplicationsState;->EM:Lcom/android/settings/applications/ApplicationsState$MainHandler;
+    iput-object v0, p0, Lcom/android/settings_ext/applications/ApplicationsState;->EM:Lcom/android/settings_ext/applications/ApplicationsState$MainHandler;
 
     .line 495
-    iput-object p1, p0, Lcom/android/settings/applications/ApplicationsState;->mContext:Landroid/content/Context;
+    iput-object p1, p0, Lcom/android/settings_ext/applications/ApplicationsState;->mContext:Landroid/content/Context;
 
     .line 496
-    iget-object v0, p0, Lcom/android/settings/applications/ApplicationsState;->mContext:Landroid/content/Context;
+    iget-object v0, p0, Lcom/android/settings_ext/applications/ApplicationsState;->mContext:Landroid/content/Context;
 
     invoke-virtual {v0}, Landroid/content/Context;->getPackageManager()Landroid/content/pm/PackageManager;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/applications/ApplicationsState;->i:Landroid/content/pm/PackageManager;
+    iput-object v0, p0, Lcom/android/settings_ext/applications/ApplicationsState;->i:Landroid/content/pm/PackageManager;
 
     .line 497
     new-instance v0, Landroid/os/HandlerThread;
@@ -236,25 +236,25 @@
 
     invoke-direct {v0, v1, v2}, Landroid/os/HandlerThread;-><init>(Ljava/lang/String;I)V
 
-    iput-object v0, p0, Lcom/android/settings/applications/ApplicationsState;->j:Landroid/os/HandlerThread;
+    iput-object v0, p0, Lcom/android/settings_ext/applications/ApplicationsState;->j:Landroid/os/HandlerThread;
 
     .line 499
-    iget-object v0, p0, Lcom/android/settings/applications/ApplicationsState;->j:Landroid/os/HandlerThread;
+    iget-object v0, p0, Lcom/android/settings_ext/applications/ApplicationsState;->j:Landroid/os/HandlerThread;
 
     invoke-virtual {v0}, Landroid/os/HandlerThread;->start()V
 
     .line 500
-    new-instance v0, Lcom/android/settings/applications/ApplicationsState$BackgroundHandler;
+    new-instance v0, Lcom/android/settings_ext/applications/ApplicationsState$BackgroundHandler;
 
-    iget-object v1, p0, Lcom/android/settings/applications/ApplicationsState;->j:Landroid/os/HandlerThread;
+    iget-object v1, p0, Lcom/android/settings_ext/applications/ApplicationsState;->j:Landroid/os/HandlerThread;
 
     invoke-virtual {v1}, Landroid/os/HandlerThread;->getLooper()Landroid/os/Looper;
 
     move-result-object v1
 
-    invoke-direct {v0, p0, v1}, Lcom/android/settings/applications/ApplicationsState$BackgroundHandler;-><init>(Lcom/android/settings/applications/ApplicationsState;Landroid/os/Looper;)V
+    invoke-direct {v0, p0, v1}, Lcom/android/settings_ext/applications/ApplicationsState$BackgroundHandler;-><init>(Lcom/android/settings_ext/applications/ApplicationsState;Landroid/os/Looper;)V
 
-    iput-object v0, p0, Lcom/android/settings/applications/ApplicationsState;->EP:Lcom/android/settings/applications/ApplicationsState$BackgroundHandler;
+    iput-object v0, p0, Lcom/android/settings_ext/applications/ApplicationsState;->EP:Lcom/android/settings_ext/applications/ApplicationsState$BackgroundHandler;
 
     .line 503
     invoke-static {}, Landroid/os/UserHandle;->myUserId()I
@@ -266,17 +266,17 @@
     .line 504
     const v0, 0xa200
 
-    iput v0, p0, Lcom/android/settings/applications/ApplicationsState;->Ez:I
+    iput v0, p0, Lcom/android/settings_ext/applications/ApplicationsState;->Ez:I
 
     .line 526
     :goto_0
-    iget-object v1, p0, Lcom/android/settings/applications/ApplicationsState;->EF:Ljava/util/HashMap;
+    iget-object v1, p0, Lcom/android/settings_ext/applications/ApplicationsState;->EF:Ljava/util/HashMap;
 
     monitor-enter v1
 
     .line 528
     :try_start_0
-    iget-object v0, p0, Lcom/android/settings/applications/ApplicationsState;->EF:Ljava/util/HashMap;
+    iget-object v0, p0, Lcom/android/settings_ext/applications/ApplicationsState;->EF:Ljava/util/HashMap;
 
     const-wide/16 v2, 0x1
 
@@ -299,7 +299,7 @@
     :cond_0
     const v0, 0x8200
 
-    iput v0, p0, Lcom/android/settings/applications/ApplicationsState;->Ez:I
+    iput v0, p0, Lcom/android/settings_ext/applications/ApplicationsState;->Ez:I
 
     goto :goto_0
 
@@ -345,43 +345,43 @@
     goto :goto_0
 .end method
 
-.method static synthetic a(Lcom/android/settings/applications/ApplicationsState;Landroid/content/pm/PackageStats;)J
+.method static synthetic a(Lcom/android/settings_ext/applications/ApplicationsState;Landroid/content/pm/PackageStats;)J
     .locals 2
 
     .prologue
     .line 46
-    invoke-direct {p0, p1}, Lcom/android/settings/applications/ApplicationsState;->a(Landroid/content/pm/PackageStats;)J
+    invoke-direct {p0, p1}, Lcom/android/settings_ext/applications/ApplicationsState;->a(Landroid/content/pm/PackageStats;)J
 
     move-result-wide v0
 
     return-wide v0
 .end method
 
-.method public static a(Landroid/app/Application;)Lcom/android/settings/applications/ApplicationsState;
+.method public static a(Landroid/app/Application;)Lcom/android/settings_ext/applications/ApplicationsState;
     .locals 2
 
     .prologue
     .line 486
-    sget-object v1, Lcom/android/settings/applications/ApplicationsState;->EN:Ljava/lang/Object;
+    sget-object v1, Lcom/android/settings_ext/applications/ApplicationsState;->EN:Ljava/lang/Object;
 
     monitor-enter v1
 
     .line 487
     :try_start_0
-    sget-object v0, Lcom/android/settings/applications/ApplicationsState;->EO:Lcom/android/settings/applications/ApplicationsState;
+    sget-object v0, Lcom/android/settings_ext/applications/ApplicationsState;->EO:Lcom/android/settings_ext/applications/ApplicationsState;
 
     if-nez v0, :cond_0
 
     .line 488
-    new-instance v0, Lcom/android/settings/applications/ApplicationsState;
+    new-instance v0, Lcom/android/settings_ext/applications/ApplicationsState;
 
-    invoke-direct {v0, p0}, Lcom/android/settings/applications/ApplicationsState;-><init>(Landroid/app/Application;)V
+    invoke-direct {v0, p0}, Lcom/android/settings_ext/applications/ApplicationsState;-><init>(Landroid/app/Application;)V
 
-    sput-object v0, Lcom/android/settings/applications/ApplicationsState;->EO:Lcom/android/settings/applications/ApplicationsState;
+    sput-object v0, Lcom/android/settings_ext/applications/ApplicationsState;->EO:Lcom/android/settings_ext/applications/ApplicationsState;
 
     .line 490
     :cond_0
-    sget-object v0, Lcom/android/settings/applications/ApplicationsState;->EO:Lcom/android/settings/applications/ApplicationsState;
+    sget-object v0, Lcom/android/settings_ext/applications/ApplicationsState;->EO:Lcom/android/settings_ext/applications/ApplicationsState;
 
     monitor-exit v1
 
@@ -398,12 +398,12 @@
     throw v0
 .end method
 
-.method static synthetic a(Lcom/android/settings/applications/ApplicationsState;J)Ljava/lang/String;
+.method static synthetic a(Lcom/android/settings_ext/applications/ApplicationsState;J)Ljava/lang/String;
     .locals 1
 
     .prologue
     .line 46
-    invoke-direct {p0, p1, p2}, Lcom/android/settings/applications/ApplicationsState;->m(J)Ljava/lang/String;
+    invoke-direct {p0, p1, p2}, Lcom/android/settings_ext/applications/ApplicationsState;->m(J)Ljava/lang/String;
 
     move-result-object v0
 
@@ -446,12 +446,12 @@
     goto :goto_0
 .end method
 
-.method static synthetic b(Lcom/android/settings/applications/ApplicationsState;Landroid/content/pm/PackageStats;)J
+.method static synthetic b(Lcom/android/settings_ext/applications/ApplicationsState;Landroid/content/pm/PackageStats;)J
     .locals 2
 
     .prologue
     .line 46
-    invoke-direct {p0, p1}, Lcom/android/settings/applications/ApplicationsState;->b(Landroid/content/pm/PackageStats;)J
+    invoke-direct {p0, p1}, Lcom/android/settings_ext/applications/ApplicationsState;->b(Landroid/content/pm/PackageStats;)J
 
     move-result-wide v0
 
@@ -470,7 +470,7 @@
     if-ltz v0, :cond_0
 
     .line 958
-    iget-object v0, p0, Lcom/android/settings/applications/ApplicationsState;->mContext:Landroid/content/Context;
+    iget-object v0, p0, Lcom/android/settings_ext/applications/ApplicationsState;->mContext:Landroid/content/Context;
 
     invoke-static {v0, p1, p2}, Landroid/text/format/Formatter;->formatFileSize(Landroid/content/Context;J)Ljava/lang/String;
 
@@ -498,7 +498,7 @@
     move-result-object v0
 
     .line 73
-    sget-object v1, Lcom/android/settings/applications/ApplicationsState;->Eq:Ljava/util/regex/Pattern;
+    sget-object v1, Lcom/android/settings_ext/applications/ApplicationsState;->Eq:Ljava/util/regex/Pattern;
 
     invoke-virtual {v1, v0}, Ljava/util/regex/Pattern;->matcher(Ljava/lang/CharSequence;)Ljava/util/regex/Matcher;
 
@@ -519,23 +519,23 @@
 
 
 # virtual methods
-.method public a(Lcom/android/settings/applications/ApplicationsState$Callbacks;)Lcom/android/settings/applications/ApplicationsState$Session;
+.method public a(Lcom/android/settings_ext/applications/ApplicationsState$Callbacks;)Lcom/android/settings_ext/applications/ApplicationsState$Session;
     .locals 3
 
     .prologue
     .line 696
-    new-instance v0, Lcom/android/settings/applications/ApplicationsState$Session;
+    new-instance v0, Lcom/android/settings_ext/applications/ApplicationsState$Session;
 
-    invoke-direct {v0, p0, p1}, Lcom/android/settings/applications/ApplicationsState$Session;-><init>(Lcom/android/settings/applications/ApplicationsState;Lcom/android/settings/applications/ApplicationsState$Callbacks;)V
+    invoke-direct {v0, p0, p1}, Lcom/android/settings_ext/applications/ApplicationsState$Session;-><init>(Lcom/android/settings_ext/applications/ApplicationsState;Lcom/android/settings_ext/applications/ApplicationsState$Callbacks;)V
 
     .line 697
-    iget-object v1, p0, Lcom/android/settings/applications/ApplicationsState;->EF:Ljava/util/HashMap;
+    iget-object v1, p0, Lcom/android/settings_ext/applications/ApplicationsState;->EF:Ljava/util/HashMap;
 
     monitor-enter v1
 
     .line 698
     :try_start_0
-    iget-object v2, p0, Lcom/android/settings/applications/ApplicationsState;->EC:Ljava/util/ArrayList;
+    iget-object v2, p0, Lcom/android/settings_ext/applications/ApplicationsState;->EC:Ljava/util/ArrayList;
 
     invoke-virtual {v2, v0}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
@@ -556,24 +556,24 @@
     throw v0
 .end method
 
-.method ad(Ljava/lang/String;)Lcom/android/settings/applications/ApplicationsState$AppEntry;
+.method ad(Ljava/lang/String;)Lcom/android/settings_ext/applications/ApplicationsState$AppEntry;
     .locals 5
 
     .prologue
     .line 787
-    iget-object v3, p0, Lcom/android/settings/applications/ApplicationsState;->EF:Ljava/util/HashMap;
+    iget-object v3, p0, Lcom/android/settings_ext/applications/ApplicationsState;->EF:Ljava/util/HashMap;
 
     monitor-enter v3
 
     .line 788
     :try_start_0
-    iget-object v0, p0, Lcom/android/settings/applications/ApplicationsState;->EF:Ljava/util/HashMap;
+    iget-object v0, p0, Lcom/android/settings_ext/applications/ApplicationsState;->EF:Ljava/util/HashMap;
 
     invoke-virtual {v0, p1}, Ljava/util/HashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v0
 
-    check-cast v0, Lcom/android/settings/applications/ApplicationsState$AppEntry;
+    check-cast v0, Lcom/android/settings_ext/applications/ApplicationsState$AppEntry;
 
     .line 791
     if-nez v0, :cond_0
@@ -590,7 +590,7 @@
     move v2, v1
 
     :goto_0
-    iget-object v1, p0, Lcom/android/settings/applications/ApplicationsState;->EH:Ljava/util/List;
+    iget-object v1, p0, Lcom/android/settings_ext/applications/ApplicationsState;->EH:Ljava/util/List;
 
     invoke-interface {v1}, Ljava/util/List;->size()I
 
@@ -599,7 +599,7 @@
     if-ge v2, v1, :cond_0
 
     .line 793
-    iget-object v1, p0, Lcom/android/settings/applications/ApplicationsState;->EH:Ljava/util/List;
+    iget-object v1, p0, Lcom/android/settings_ext/applications/ApplicationsState;->EH:Ljava/util/List;
 
     invoke-interface {v1, v2}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
@@ -617,7 +617,7 @@
     if-eqz v4, :cond_1
 
     .line 795
-    invoke-virtual {p0, v1}, Lcom/android/settings/applications/ApplicationsState;->c(Landroid/content/pm/ApplicationInfo;)Lcom/android/settings/applications/ApplicationsState$AppEntry;
+    invoke-virtual {p0, v1}, Lcom/android/settings_ext/applications/ApplicationsState;->c(Landroid/content/pm/ApplicationInfo;)Lcom/android/settings_ext/applications/ApplicationsState$AppEntry;
 
     move-result-object v0
 
@@ -652,7 +652,7 @@
     .prologue
     .line 850
     :try_start_0
-    iget-object v1, p0, Lcom/android/settings/applications/ApplicationsState;->EF:Ljava/util/HashMap;
+    iget-object v1, p0, Lcom/android/settings_ext/applications/ApplicationsState;->EF:Ljava/util/HashMap;
 
     monitor-enter v1
     :try_end_0
@@ -660,7 +660,7 @@
 
     .line 853
     :try_start_1
-    iget-boolean v0, p0, Lcom/android/settings/applications/ApplicationsState;->mResumed:Z
+    iget-boolean v0, p0, Lcom/android/settings_ext/applications/ApplicationsState;->mResumed:Z
 
     if-nez v0, :cond_0
 
@@ -673,7 +673,7 @@
 
     .line 860
     :cond_0
-    invoke-virtual {p0, p1}, Lcom/android/settings/applications/ApplicationsState;->af(Ljava/lang/String;)I
+    invoke-virtual {p0, p1}, Lcom/android/settings_ext/applications/ApplicationsState;->af(Ljava/lang/String;)I
 
     move-result v0
 
@@ -706,9 +706,9 @@
     .line 865
     :cond_1
     :try_start_3
-    iget-object v0, p0, Lcom/android/settings/applications/ApplicationsState;->i:Landroid/content/pm/PackageManager;
+    iget-object v0, p0, Lcom/android/settings_ext/applications/ApplicationsState;->i:Landroid/content/pm/PackageManager;
 
-    iget v2, p0, Lcom/android/settings/applications/ApplicationsState;->Ez:I
+    iget v2, p0, Lcom/android/settings_ext/applications/ApplicationsState;->Ez:I
 
     invoke-virtual {v0, p1, v2}, Landroid/content/pm/PackageManager;->getApplicationInfo(Ljava/lang/String;I)Landroid/content/pm/ApplicationInfo;
 
@@ -735,50 +735,50 @@
     :cond_2
     const/4 v2, 0x1
 
-    iput-boolean v2, p0, Lcom/android/settings/applications/ApplicationsState;->EB:Z
+    iput-boolean v2, p0, Lcom/android/settings_ext/applications/ApplicationsState;->EB:Z
 
     .line 873
     :cond_3
-    iget-object v2, p0, Lcom/android/settings/applications/ApplicationsState;->EH:Ljava/util/List;
+    iget-object v2, p0, Lcom/android/settings_ext/applications/ApplicationsState;->EH:Ljava/util/List;
 
     invoke-interface {v2, v0}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
     .line 874
-    iget-object v0, p0, Lcom/android/settings/applications/ApplicationsState;->EP:Lcom/android/settings/applications/ApplicationsState$BackgroundHandler;
+    iget-object v0, p0, Lcom/android/settings_ext/applications/ApplicationsState;->EP:Lcom/android/settings_ext/applications/ApplicationsState$BackgroundHandler;
 
     const/4 v2, 0x2
 
-    invoke-virtual {v0, v2}, Lcom/android/settings/applications/ApplicationsState$BackgroundHandler;->hasMessages(I)Z
+    invoke-virtual {v0, v2}, Lcom/android/settings_ext/applications/ApplicationsState$BackgroundHandler;->hasMessages(I)Z
 
     move-result v0
 
     if-nez v0, :cond_4
 
     .line 875
-    iget-object v0, p0, Lcom/android/settings/applications/ApplicationsState;->EP:Lcom/android/settings/applications/ApplicationsState$BackgroundHandler;
+    iget-object v0, p0, Lcom/android/settings_ext/applications/ApplicationsState;->EP:Lcom/android/settings_ext/applications/ApplicationsState$BackgroundHandler;
 
     const/4 v2, 0x2
 
-    invoke-virtual {v0, v2}, Lcom/android/settings/applications/ApplicationsState$BackgroundHandler;->sendEmptyMessage(I)Z
+    invoke-virtual {v0, v2}, Lcom/android/settings_ext/applications/ApplicationsState$BackgroundHandler;->sendEmptyMessage(I)Z
 
     .line 877
     :cond_4
-    iget-object v0, p0, Lcom/android/settings/applications/ApplicationsState;->EM:Lcom/android/settings/applications/ApplicationsState$MainHandler;
+    iget-object v0, p0, Lcom/android/settings_ext/applications/ApplicationsState;->EM:Lcom/android/settings_ext/applications/ApplicationsState$MainHandler;
 
     const/4 v2, 0x2
 
-    invoke-virtual {v0, v2}, Lcom/android/settings/applications/ApplicationsState$MainHandler;->hasMessages(I)Z
+    invoke-virtual {v0, v2}, Lcom/android/settings_ext/applications/ApplicationsState$MainHandler;->hasMessages(I)Z
 
     move-result v0
 
     if-nez v0, :cond_5
 
     .line 878
-    iget-object v0, p0, Lcom/android/settings/applications/ApplicationsState;->EM:Lcom/android/settings/applications/ApplicationsState$MainHandler;
+    iget-object v0, p0, Lcom/android/settings_ext/applications/ApplicationsState;->EM:Lcom/android/settings_ext/applications/ApplicationsState$MainHandler;
 
     const/4 v2, 0x2
 
-    invoke-virtual {v0, v2}, Lcom/android/settings/applications/ApplicationsState$MainHandler;->sendEmptyMessage(I)Z
+    invoke-virtual {v0, v2}, Lcom/android/settings_ext/applications/ApplicationsState$MainHandler;->sendEmptyMessage(I)Z
 
     .line 881
     :cond_5
@@ -794,29 +794,29 @@
 
     .prologue
     .line 817
-    iget-object v1, p0, Lcom/android/settings/applications/ApplicationsState;->EF:Ljava/util/HashMap;
+    iget-object v1, p0, Lcom/android/settings_ext/applications/ApplicationsState;->EF:Ljava/util/HashMap;
 
     monitor-enter v1
 
     .line 818
     :try_start_0
-    iget-object v0, p0, Lcom/android/settings/applications/ApplicationsState;->EF:Ljava/util/HashMap;
+    iget-object v0, p0, Lcom/android/settings_ext/applications/ApplicationsState;->EF:Ljava/util/HashMap;
 
     invoke-virtual {v0, p1}, Ljava/util/HashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v0
 
-    check-cast v0, Lcom/android/settings/applications/ApplicationsState$AppEntry;
+    check-cast v0, Lcom/android/settings_ext/applications/ApplicationsState$AppEntry;
 
     .line 819
     if-eqz v0, :cond_0
 
     .line 820
-    iget-object v0, p0, Lcom/android/settings/applications/ApplicationsState;->i:Landroid/content/pm/PackageManager;
+    iget-object v0, p0, Lcom/android/settings_ext/applications/ApplicationsState;->i:Landroid/content/pm/PackageManager;
 
-    iget-object v2, p0, Lcom/android/settings/applications/ApplicationsState;->EP:Lcom/android/settings/applications/ApplicationsState$BackgroundHandler;
+    iget-object v2, p0, Lcom/android/settings_ext/applications/ApplicationsState;->EP:Lcom/android/settings_ext/applications/ApplicationsState$BackgroundHandler;
 
-    iget-object v2, v2, Lcom/android/settings/applications/ApplicationsState$BackgroundHandler;->Fc:Landroid/content/pm/IPackageStatsObserver$Stub;
+    iget-object v2, v2, Lcom/android/settings_ext/applications/ApplicationsState$BackgroundHandler;->Fc:Landroid/content/pm/IPackageStatsObserver$Stub;
 
     invoke-virtual {v0, p1, v2}, Landroid/content/pm/PackageManager;->getPackageSizeInfo(Ljava/lang/String;Landroid/content/pm/IPackageStatsObserver;)V
 
@@ -843,7 +843,7 @@
 
     .prologue
     .line 840
-    iget-object v0, p0, Lcom/android/settings/applications/ApplicationsState;->EH:Ljava/util/List;
+    iget-object v0, p0, Lcom/android/settings_ext/applications/ApplicationsState;->EH:Ljava/util/List;
 
     invoke-interface {v0}, Ljava/util/List;->size()I
 
@@ -855,7 +855,7 @@
     if-ltz v1, :cond_1
 
     .line 841
-    iget-object v0, p0, Lcom/android/settings/applications/ApplicationsState;->EH:Ljava/util/List;
+    iget-object v0, p0, Lcom/android/settings_ext/applications/ApplicationsState;->EH:Ljava/util/List;
 
     invoke-interface {v0, v1}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
@@ -897,13 +897,13 @@
     const/4 v1, 0x0
 
     .line 887
-    iget-object v2, p0, Lcom/android/settings/applications/ApplicationsState;->EF:Ljava/util/HashMap;
+    iget-object v2, p0, Lcom/android/settings_ext/applications/ApplicationsState;->EF:Ljava/util/HashMap;
 
     monitor-enter v2
 
     .line 889
     :try_start_0
-    invoke-virtual {p0, p1}, Lcom/android/settings/applications/ApplicationsState;->af(Ljava/lang/String;)I
+    invoke-virtual {p0, p1}, Lcom/android/settings_ext/applications/ApplicationsState;->af(Ljava/lang/String;)I
 
     move-result v3
 
@@ -911,30 +911,30 @@
     if-ltz v3, :cond_2
 
     .line 892
-    iget-object v0, p0, Lcom/android/settings/applications/ApplicationsState;->EF:Ljava/util/HashMap;
+    iget-object v0, p0, Lcom/android/settings_ext/applications/ApplicationsState;->EF:Ljava/util/HashMap;
 
     invoke-virtual {v0, p1}, Ljava/util/HashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v0
 
-    check-cast v0, Lcom/android/settings/applications/ApplicationsState$AppEntry;
+    check-cast v0, Lcom/android/settings_ext/applications/ApplicationsState$AppEntry;
 
     .line 894
     if-eqz v0, :cond_0
 
     .line 895
-    iget-object v4, p0, Lcom/android/settings/applications/ApplicationsState;->EF:Ljava/util/HashMap;
+    iget-object v4, p0, Lcom/android/settings_ext/applications/ApplicationsState;->EF:Ljava/util/HashMap;
 
     invoke-virtual {v4, p1}, Ljava/util/HashMap;->remove(Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 896
-    iget-object v4, p0, Lcom/android/settings/applications/ApplicationsState;->EG:Ljava/util/ArrayList;
+    iget-object v4, p0, Lcom/android/settings_ext/applications/ApplicationsState;->EG:Ljava/util/ArrayList;
 
     invoke-virtual {v4, v0}, Ljava/util/ArrayList;->remove(Ljava/lang/Object;)Z
 
     .line 898
     :cond_0
-    iget-object v0, p0, Lcom/android/settings/applications/ApplicationsState;->EH:Ljava/util/List;
+    iget-object v0, p0, Lcom/android/settings_ext/applications/ApplicationsState;->EH:Ljava/util/List;
 
     invoke-interface {v0, v3}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
@@ -943,7 +943,7 @@
     check-cast v0, Landroid/content/pm/ApplicationInfo;
 
     .line 899
-    iget-object v4, p0, Lcom/android/settings/applications/ApplicationsState;->EH:Ljava/util/List;
+    iget-object v4, p0, Lcom/android/settings_ext/applications/ApplicationsState;->EH:Ljava/util/List;
 
     invoke-interface {v4, v3}, Ljava/util/List;->remove(I)Ljava/lang/Object;
 
@@ -955,11 +955,11 @@
     .line 901
     const/4 v0, 0x0
 
-    iput-boolean v0, p0, Lcom/android/settings/applications/ApplicationsState;->EB:Z
+    iput-boolean v0, p0, Lcom/android/settings_ext/applications/ApplicationsState;->EB:Z
 
     .line 902
     :goto_0
-    iget-object v0, p0, Lcom/android/settings/applications/ApplicationsState;->EH:Ljava/util/List;
+    iget-object v0, p0, Lcom/android/settings_ext/applications/ApplicationsState;->EH:Ljava/util/List;
 
     invoke-interface {v0}, Ljava/util/List;->size()I
 
@@ -968,7 +968,7 @@
     if-ge v1, v0, :cond_1
 
     .line 903
-    iget-object v0, p0, Lcom/android/settings/applications/ApplicationsState;->EH:Ljava/util/List;
+    iget-object v0, p0, Lcom/android/settings_ext/applications/ApplicationsState;->EH:Ljava/util/List;
 
     invoke-interface {v0, v1}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
@@ -983,26 +983,26 @@
     .line 904
     const/4 v0, 0x1
 
-    iput-boolean v0, p0, Lcom/android/settings/applications/ApplicationsState;->EB:Z
+    iput-boolean v0, p0, Lcom/android/settings_ext/applications/ApplicationsState;->EB:Z
 
     .line 909
     :cond_1
-    iget-object v0, p0, Lcom/android/settings/applications/ApplicationsState;->EM:Lcom/android/settings/applications/ApplicationsState$MainHandler;
+    iget-object v0, p0, Lcom/android/settings_ext/applications/ApplicationsState;->EM:Lcom/android/settings_ext/applications/ApplicationsState$MainHandler;
 
     const/4 v1, 0x2
 
-    invoke-virtual {v0, v1}, Lcom/android/settings/applications/ApplicationsState$MainHandler;->hasMessages(I)Z
+    invoke-virtual {v0, v1}, Lcom/android/settings_ext/applications/ApplicationsState$MainHandler;->hasMessages(I)Z
 
     move-result v0
 
     if-nez v0, :cond_2
 
     .line 910
-    iget-object v0, p0, Lcom/android/settings/applications/ApplicationsState;->EM:Lcom/android/settings/applications/ApplicationsState$MainHandler;
+    iget-object v0, p0, Lcom/android/settings_ext/applications/ApplicationsState;->EM:Lcom/android/settings_ext/applications/ApplicationsState$MainHandler;
 
     const/4 v1, 0x2
 
-    invoke-virtual {v0, v1}, Lcom/android/settings/applications/ApplicationsState$MainHandler;->sendEmptyMessage(I)Z
+    invoke-virtual {v0, v1}, Lcom/android/settings_ext/applications/ApplicationsState$MainHandler;->sendEmptyMessage(I)Z
 
     .line 914
     :cond_2
@@ -1035,21 +1035,21 @@
 
     .prologue
     .line 918
-    invoke-virtual {p0, p1}, Lcom/android/settings/applications/ApplicationsState;->ag(Ljava/lang/String;)V
+    invoke-virtual {p0, p1}, Lcom/android/settings_ext/applications/ApplicationsState;->ag(Ljava/lang/String;)V
 
     .line 919
-    invoke-virtual {p0, p1}, Lcom/android/settings/applications/ApplicationsState;->addPackage(Ljava/lang/String;)V
+    invoke-virtual {p0, p1}, Lcom/android/settings_ext/applications/ApplicationsState;->addPackage(Ljava/lang/String;)V
 
     .line 920
     return-void
 .end method
 
-.method c(Landroid/content/pm/ApplicationInfo;)Lcom/android/settings/applications/ApplicationsState$AppEntry;
+.method c(Landroid/content/pm/ApplicationInfo;)Lcom/android/settings_ext/applications/ApplicationsState$AppEntry;
     .locals 6
 
     .prologue
     .line 923
-    iget-object v0, p0, Lcom/android/settings/applications/ApplicationsState;->EF:Ljava/util/HashMap;
+    iget-object v0, p0, Lcom/android/settings_ext/applications/ApplicationsState;->EF:Ljava/util/HashMap;
 
     iget-object v1, p1, Landroid/content/pm/ApplicationInfo;->packageName:Ljava/lang/String;
 
@@ -1057,35 +1057,35 @@
 
     move-result-object v0
 
-    check-cast v0, Lcom/android/settings/applications/ApplicationsState$AppEntry;
+    check-cast v0, Lcom/android/settings_ext/applications/ApplicationsState$AppEntry;
 
     .line 925
     if-nez v0, :cond_1
 
     .line 927
-    new-instance v0, Lcom/android/settings/applications/ApplicationsState$AppEntry;
+    new-instance v0, Lcom/android/settings_ext/applications/ApplicationsState$AppEntry;
 
-    iget-object v1, p0, Lcom/android/settings/applications/ApplicationsState;->mContext:Landroid/content/Context;
+    iget-object v1, p0, Lcom/android/settings_ext/applications/ApplicationsState;->mContext:Landroid/content/Context;
 
-    iget-wide v2, p0, Lcom/android/settings/applications/ApplicationsState;->EI:J
+    iget-wide v2, p0, Lcom/android/settings_ext/applications/ApplicationsState;->EI:J
 
     const-wide/16 v4, 0x1
 
     add-long/2addr v4, v2
 
-    iput-wide v4, p0, Lcom/android/settings/applications/ApplicationsState;->EI:J
+    iput-wide v4, p0, Lcom/android/settings_ext/applications/ApplicationsState;->EI:J
 
-    invoke-direct {v0, v1, p1, v2, v3}, Lcom/android/settings/applications/ApplicationsState$AppEntry;-><init>(Landroid/content/Context;Landroid/content/pm/ApplicationInfo;J)V
+    invoke-direct {v0, v1, p1, v2, v3}, Lcom/android/settings_ext/applications/ApplicationsState$AppEntry;-><init>(Landroid/content/Context;Landroid/content/pm/ApplicationInfo;J)V
 
     .line 928
-    iget-object v1, p0, Lcom/android/settings/applications/ApplicationsState;->EF:Ljava/util/HashMap;
+    iget-object v1, p0, Lcom/android/settings_ext/applications/ApplicationsState;->EF:Ljava/util/HashMap;
 
     iget-object v2, p1, Landroid/content/pm/ApplicationInfo;->packageName:Ljava/lang/String;
 
     invoke-virtual {v1, v2, v0}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 929
-    iget-object v1, p0, Lcom/android/settings/applications/ApplicationsState;->EG:Ljava/util/ArrayList;
+    iget-object v1, p0, Lcom/android/settings_ext/applications/ApplicationsState;->EG:Ljava/util/ArrayList;
 
     invoke-virtual {v1, v0}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
@@ -1096,12 +1096,12 @@
 
     .line 930
     :cond_1
-    iget-object v1, v0, Lcom/android/settings/applications/ApplicationsState$AppEntry;->bl:Landroid/content/pm/ApplicationInfo;
+    iget-object v1, v0, Lcom/android/settings_ext/applications/ApplicationsState$AppEntry;->bl:Landroid/content/pm/ApplicationInfo;
 
     if-eq v1, p1, :cond_0
 
     .line 931
-    iput-object p1, v0, Lcom/android/settings/applications/ApplicationsState$AppEntry;->bl:Landroid/content/pm/ApplicationInfo;
+    iput-object p1, v0, Lcom/android/settings_ext/applications/ApplicationsState$AppEntry;->bl:Landroid/content/pm/ApplicationInfo;
 
     goto :goto_0
 .end method
@@ -1111,13 +1111,13 @@
 
     .prologue
     .line 413
-    iget-object v2, p0, Lcom/android/settings/applications/ApplicationsState;->EF:Ljava/util/HashMap;
+    iget-object v2, p0, Lcom/android/settings_ext/applications/ApplicationsState;->EF:Ljava/util/HashMap;
 
     monitor-enter v2
 
     .line 414
     :try_start_0
-    iget-boolean v0, p0, Lcom/android/settings/applications/ApplicationsState;->EK:Z
+    iget-boolean v0, p0, Lcom/android/settings_ext/applications/ApplicationsState;->EK:Z
 
     if-nez v0, :cond_0
 
@@ -1130,7 +1130,7 @@
 
     .line 417
     :cond_0
-    iget-object v0, p0, Lcom/android/settings/applications/ApplicationsState;->EL:Ljava/util/ArrayList;
+    iget-object v0, p0, Lcom/android/settings_ext/applications/ApplicationsState;->EL:Ljava/util/ArrayList;
 
     invoke-virtual {v0}, Ljava/util/ArrayList;->clear()V
 
@@ -1140,7 +1140,7 @@
     move v1, v0
 
     :goto_1
-    iget-object v0, p0, Lcom/android/settings/applications/ApplicationsState;->EC:Ljava/util/ArrayList;
+    iget-object v0, p0, Lcom/android/settings_ext/applications/ApplicationsState;->EC:Ljava/util/ArrayList;
 
     invoke-virtual {v0}, Ljava/util/ArrayList;->size()I
 
@@ -1149,21 +1149,21 @@
     if-ge v1, v0, :cond_2
 
     .line 419
-    iget-object v0, p0, Lcom/android/settings/applications/ApplicationsState;->EC:Ljava/util/ArrayList;
+    iget-object v0, p0, Lcom/android/settings_ext/applications/ApplicationsState;->EC:Ljava/util/ArrayList;
 
     invoke-virtual {v0, v1}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
 
     move-result-object v0
 
-    check-cast v0, Lcom/android/settings/applications/ApplicationsState$Session;
+    check-cast v0, Lcom/android/settings_ext/applications/ApplicationsState$Session;
 
     .line 420
-    iget-boolean v3, v0, Lcom/android/settings/applications/ApplicationsState$Session;->mResumed:Z
+    iget-boolean v3, v0, Lcom/android/settings_ext/applications/ApplicationsState$Session;->mResumed:Z
 
     if-eqz v3, :cond_1
 
     .line 421
-    iget-object v3, p0, Lcom/android/settings/applications/ApplicationsState;->EL:Ljava/util/ArrayList;
+    iget-object v3, p0, Lcom/android/settings_ext/applications/ApplicationsState;->EL:Ljava/util/ArrayList;
 
     invoke-virtual {v3, v0}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
@@ -1204,7 +1204,7 @@
     const/4 v2, 0x0
 
     .line 704
-    iget-boolean v0, p0, Lcom/android/settings/applications/ApplicationsState;->mResumed:Z
+    iget-boolean v0, p0, Lcom/android/settings_ext/applications/ApplicationsState;->mResumed:Z
 
     if-eqz v0, :cond_1
 
@@ -1215,39 +1215,39 @@
 
     .line 707
     :cond_1
-    iput-boolean v4, p0, Lcom/android/settings/applications/ApplicationsState;->mResumed:Z
+    iput-boolean v4, p0, Lcom/android/settings_ext/applications/ApplicationsState;->mResumed:Z
 
     .line 708
-    iget-object v0, p0, Lcom/android/settings/applications/ApplicationsState;->EA:Lcom/android/settings/applications/ApplicationsState$PackageIntentReceiver;
+    iget-object v0, p0, Lcom/android/settings_ext/applications/ApplicationsState;->EA:Lcom/android/settings_ext/applications/ApplicationsState$PackageIntentReceiver;
 
     if-nez v0, :cond_2
 
     .line 709
-    new-instance v0, Lcom/android/settings/applications/ApplicationsState$PackageIntentReceiver;
+    new-instance v0, Lcom/android/settings_ext/applications/ApplicationsState$PackageIntentReceiver;
 
-    invoke-direct {v0, p0, v6}, Lcom/android/settings/applications/ApplicationsState$PackageIntentReceiver;-><init>(Lcom/android/settings/applications/ApplicationsState;Lcom/android/settings/applications/ApplicationsState$1;)V
+    invoke-direct {v0, p0, v6}, Lcom/android/settings_ext/applications/ApplicationsState$PackageIntentReceiver;-><init>(Lcom/android/settings_ext/applications/ApplicationsState;Lcom/android/settings_ext/applications/ApplicationsState$1;)V
 
-    iput-object v0, p0, Lcom/android/settings/applications/ApplicationsState;->EA:Lcom/android/settings/applications/ApplicationsState$PackageIntentReceiver;
+    iput-object v0, p0, Lcom/android/settings_ext/applications/ApplicationsState;->EA:Lcom/android/settings_ext/applications/ApplicationsState$PackageIntentReceiver;
 
     .line 710
-    iget-object v0, p0, Lcom/android/settings/applications/ApplicationsState;->EA:Lcom/android/settings/applications/ApplicationsState$PackageIntentReceiver;
+    iget-object v0, p0, Lcom/android/settings_ext/applications/ApplicationsState;->EA:Lcom/android/settings_ext/applications/ApplicationsState$PackageIntentReceiver;
 
-    invoke-virtual {v0}, Lcom/android/settings/applications/ApplicationsState$PackageIntentReceiver;->iY()V
+    invoke-virtual {v0}, Lcom/android/settings_ext/applications/ApplicationsState$PackageIntentReceiver;->iY()V
 
     .line 712
     :cond_2
-    iget-object v0, p0, Lcom/android/settings/applications/ApplicationsState;->i:Landroid/content/pm/PackageManager;
+    iget-object v0, p0, Lcom/android/settings_ext/applications/ApplicationsState;->i:Landroid/content/pm/PackageManager;
 
-    iget v1, p0, Lcom/android/settings/applications/ApplicationsState;->Ez:I
+    iget v1, p0, Lcom/android/settings_ext/applications/ApplicationsState;->Ez:I
 
     invoke-virtual {v0, v1}, Landroid/content/pm/PackageManager;->getInstalledApplications(I)Ljava/util/List;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/applications/ApplicationsState;->EH:Ljava/util/List;
+    iput-object v0, p0, Lcom/android/settings_ext/applications/ApplicationsState;->EH:Ljava/util/List;
 
     .line 713
-    iget-object v0, p0, Lcom/android/settings/applications/ApplicationsState;->EH:Ljava/util/List;
+    iget-object v0, p0, Lcom/android/settings_ext/applications/ApplicationsState;->EH:Ljava/util/List;
 
     if-nez v0, :cond_3
 
@@ -1256,41 +1256,41 @@
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
-    iput-object v0, p0, Lcom/android/settings/applications/ApplicationsState;->EH:Ljava/util/List;
+    iput-object v0, p0, Lcom/android/settings_ext/applications/ApplicationsState;->EH:Ljava/util/List;
 
     .line 717
     :cond_3
-    iget-object v0, p0, Lcom/android/settings/applications/ApplicationsState;->EE:Lcom/android/settings/applications/InterestingConfigChanges;
+    iget-object v0, p0, Lcom/android/settings_ext/applications/ApplicationsState;->EE:Lcom/android/settings_ext/applications/InterestingConfigChanges;
 
-    iget-object v1, p0, Lcom/android/settings/applications/ApplicationsState;->mContext:Landroid/content/Context;
+    iget-object v1, p0, Lcom/android/settings_ext/applications/ApplicationsState;->mContext:Landroid/content/Context;
 
     invoke-virtual {v1}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
 
     move-result-object v1
 
-    invoke-virtual {v0, v1}, Lcom/android/settings/applications/InterestingConfigChanges;->c(Landroid/content/res/Resources;)Z
+    invoke-virtual {v0, v1}, Lcom/android/settings_ext/applications/InterestingConfigChanges;->c(Landroid/content/res/Resources;)Z
 
     move-result v0
 
     if-eqz v0, :cond_6
 
     .line 720
-    iget-object v0, p0, Lcom/android/settings/applications/ApplicationsState;->EF:Ljava/util/HashMap;
+    iget-object v0, p0, Lcom/android/settings_ext/applications/ApplicationsState;->EF:Ljava/util/HashMap;
 
     invoke-virtual {v0}, Ljava/util/HashMap;->clear()V
 
     .line 721
-    iget-object v0, p0, Lcom/android/settings/applications/ApplicationsState;->EG:Ljava/util/ArrayList;
+    iget-object v0, p0, Lcom/android/settings_ext/applications/ApplicationsState;->EG:Ljava/util/ArrayList;
 
     invoke-virtual {v0}, Ljava/util/ArrayList;->clear()V
 
     .line 728
     :cond_4
-    iput-boolean v2, p0, Lcom/android/settings/applications/ApplicationsState;->EB:Z
+    iput-boolean v2, p0, Lcom/android/settings_ext/applications/ApplicationsState;->EB:Z
 
     .line 729
     :goto_1
-    iget-object v0, p0, Lcom/android/settings/applications/ApplicationsState;->EH:Ljava/util/List;
+    iget-object v0, p0, Lcom/android/settings_ext/applications/ApplicationsState;->EH:Ljava/util/List;
 
     invoke-interface {v0}, Ljava/util/List;->size()I
 
@@ -1299,7 +1299,7 @@
     if-ge v2, v0, :cond_9
 
     .line 730
-    iget-object v0, p0, Lcom/android/settings/applications/ApplicationsState;->EH:Ljava/util/List;
+    iget-object v0, p0, Lcom/android/settings_ext/applications/ApplicationsState;->EH:Ljava/util/List;
 
     invoke-interface {v0, v2}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
@@ -1320,7 +1320,7 @@
     if-eq v1, v3, :cond_7
 
     .line 735
-    iget-object v0, p0, Lcom/android/settings/applications/ApplicationsState;->EH:Ljava/util/List;
+    iget-object v0, p0, Lcom/android/settings_ext/applications/ApplicationsState;->EH:Ljava/util/List;
 
     invoke-interface {v0, v2}, Ljava/util/List;->remove(I)Ljava/lang/Object;
 
@@ -1339,7 +1339,7 @@
 
     .line 723
     :goto_3
-    iget-object v0, p0, Lcom/android/settings/applications/ApplicationsState;->EG:Ljava/util/ArrayList;
+    iget-object v0, p0, Lcom/android/settings_ext/applications/ApplicationsState;->EG:Ljava/util/ArrayList;
 
     invoke-virtual {v0}, Ljava/util/ArrayList;->size()I
 
@@ -1348,15 +1348,15 @@
     if-ge v1, v0, :cond_4
 
     .line 724
-    iget-object v0, p0, Lcom/android/settings/applications/ApplicationsState;->EG:Ljava/util/ArrayList;
+    iget-object v0, p0, Lcom/android/settings_ext/applications/ApplicationsState;->EG:Ljava/util/ArrayList;
 
     invoke-virtual {v0, v1}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
 
     move-result-object v0
 
-    check-cast v0, Lcom/android/settings/applications/ApplicationsState$AppEntry;
+    check-cast v0, Lcom/android/settings_ext/applications/ApplicationsState$AppEntry;
 
-    iput-boolean v4, v0, Lcom/android/settings/applications/ApplicationsState$AppEntry;->EZ:Z
+    iput-boolean v4, v0, Lcom/android/settings_ext/applications/ApplicationsState$AppEntry;->EZ:Z
 
     .line 723
     add-int/lit8 v0, v1, 0x1
@@ -1367,11 +1367,11 @@
 
     .line 739
     :cond_7
-    iput-boolean v4, p0, Lcom/android/settings/applications/ApplicationsState;->EB:Z
+    iput-boolean v4, p0, Lcom/android/settings_ext/applications/ApplicationsState;->EB:Z
 
     .line 741
     :cond_8
-    iget-object v1, p0, Lcom/android/settings/applications/ApplicationsState;->EF:Ljava/util/HashMap;
+    iget-object v1, p0, Lcom/android/settings_ext/applications/ApplicationsState;->EF:Ljava/util/HashMap;
 
     iget-object v3, v0, Landroid/content/pm/ApplicationInfo;->packageName:Ljava/lang/String;
 
@@ -1379,42 +1379,42 @@
 
     move-result-object v1
 
-    check-cast v1, Lcom/android/settings/applications/ApplicationsState$AppEntry;
+    check-cast v1, Lcom/android/settings_ext/applications/ApplicationsState$AppEntry;
 
     .line 742
     if-eqz v1, :cond_5
 
     .line 743
-    iput-object v0, v1, Lcom/android/settings/applications/ApplicationsState$AppEntry;->bl:Landroid/content/pm/ApplicationInfo;
+    iput-object v0, v1, Lcom/android/settings_ext/applications/ApplicationsState$AppEntry;->bl:Landroid/content/pm/ApplicationInfo;
 
     goto :goto_2
 
     .line 748
     :cond_9
-    iget-object v0, p0, Lcom/android/settings/applications/ApplicationsState;->EH:Ljava/util/List;
+    iget-object v0, p0, Lcom/android/settings_ext/applications/ApplicationsState;->EH:Ljava/util/List;
 
-    invoke-static {v0}, Lcom/android/settings/fc;->d(Ljava/util/List;)Ljava/util/List;
+    invoke-static {v0}, Lcom/android/settings_ext/fc;->d(Ljava/util/List;)Ljava/util/List;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/applications/ApplicationsState;->EH:Ljava/util/List;
+    iput-object v0, p0, Lcom/android/settings_ext/applications/ApplicationsState;->EH:Ljava/util/List;
 
     .line 750
-    iput-object v6, p0, Lcom/android/settings/applications/ApplicationsState;->EJ:Ljava/lang/String;
+    iput-object v6, p0, Lcom/android/settings_ext/applications/ApplicationsState;->EJ:Ljava/lang/String;
 
     .line 751
-    iget-object v0, p0, Lcom/android/settings/applications/ApplicationsState;->EP:Lcom/android/settings/applications/ApplicationsState$BackgroundHandler;
+    iget-object v0, p0, Lcom/android/settings_ext/applications/ApplicationsState;->EP:Lcom/android/settings_ext/applications/ApplicationsState$BackgroundHandler;
 
-    invoke-virtual {v0, v5}, Lcom/android/settings/applications/ApplicationsState$BackgroundHandler;->hasMessages(I)Z
+    invoke-virtual {v0, v5}, Lcom/android/settings_ext/applications/ApplicationsState$BackgroundHandler;->hasMessages(I)Z
 
     move-result v0
 
     if-nez v0, :cond_0
 
     .line 752
-    iget-object v0, p0, Lcom/android/settings/applications/ApplicationsState;->EP:Lcom/android/settings/applications/ApplicationsState$BackgroundHandler;
+    iget-object v0, p0, Lcom/android/settings_ext/applications/ApplicationsState;->EP:Lcom/android/settings_ext/applications/ApplicationsState$BackgroundHandler;
 
-    invoke-virtual {v0, v5}, Lcom/android/settings/applications/ApplicationsState$BackgroundHandler;->sendEmptyMessage(I)Z
+    invoke-virtual {v0, v5}, Lcom/android/settings_ext/applications/ApplicationsState$BackgroundHandler;->sendEmptyMessage(I)Z
 
     goto/16 :goto_0
 .end method
@@ -1424,7 +1424,7 @@
 
     .prologue
     .line 757
-    iget-boolean v0, p0, Lcom/android/settings/applications/ApplicationsState;->EB:Z
+    iget-boolean v0, p0, Lcom/android/settings_ext/applications/ApplicationsState;->EB:Z
 
     return v0
 .end method
@@ -1436,7 +1436,7 @@
     const/4 v2, 0x0
 
     .line 761
-    iget-boolean v0, p0, Lcom/android/settings/applications/ApplicationsState;->mResumed:Z
+    iget-boolean v0, p0, Lcom/android/settings_ext/applications/ApplicationsState;->mResumed:Z
 
     if-nez v0, :cond_1
 
@@ -1450,7 +1450,7 @@
 
     .line 764
     :goto_1
-    iget-object v0, p0, Lcom/android/settings/applications/ApplicationsState;->EC:Ljava/util/ArrayList;
+    iget-object v0, p0, Lcom/android/settings_ext/applications/ApplicationsState;->EC:Ljava/util/ArrayList;
 
     invoke-virtual {v0}, Ljava/util/ArrayList;->size()I
 
@@ -1459,15 +1459,15 @@
     if-ge v1, v0, :cond_2
 
     .line 765
-    iget-object v0, p0, Lcom/android/settings/applications/ApplicationsState;->EC:Ljava/util/ArrayList;
+    iget-object v0, p0, Lcom/android/settings_ext/applications/ApplicationsState;->EC:Ljava/util/ArrayList;
 
     invoke-virtual {v0, v1}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
 
     move-result-object v0
 
-    check-cast v0, Lcom/android/settings/applications/ApplicationsState$Session;
+    check-cast v0, Lcom/android/settings_ext/applications/ApplicationsState$Session;
 
-    iget-boolean v0, v0, Lcom/android/settings/applications/ApplicationsState$Session;->mResumed:Z
+    iget-boolean v0, v0, Lcom/android/settings_ext/applications/ApplicationsState$Session;->mResumed:Z
 
     if-nez v0, :cond_0
 
@@ -1480,22 +1480,22 @@
 
     .line 769
     :cond_2
-    iput-boolean v2, p0, Lcom/android/settings/applications/ApplicationsState;->mResumed:Z
+    iput-boolean v2, p0, Lcom/android/settings_ext/applications/ApplicationsState;->mResumed:Z
 
     .line 770
-    iget-object v0, p0, Lcom/android/settings/applications/ApplicationsState;->EA:Lcom/android/settings/applications/ApplicationsState$PackageIntentReceiver;
+    iget-object v0, p0, Lcom/android/settings_ext/applications/ApplicationsState;->EA:Lcom/android/settings_ext/applications/ApplicationsState$PackageIntentReceiver;
 
     if-eqz v0, :cond_0
 
     .line 771
-    iget-object v0, p0, Lcom/android/settings/applications/ApplicationsState;->EA:Lcom/android/settings/applications/ApplicationsState$PackageIntentReceiver;
+    iget-object v0, p0, Lcom/android/settings_ext/applications/ApplicationsState;->EA:Lcom/android/settings_ext/applications/ApplicationsState$PackageIntentReceiver;
 
-    invoke-virtual {v0}, Lcom/android/settings/applications/ApplicationsState$PackageIntentReceiver;->unregisterReceiver()V
+    invoke-virtual {v0}, Lcom/android/settings_ext/applications/ApplicationsState$PackageIntentReceiver;->unregisterReceiver()V
 
     .line 772
     const/4 v0, 0x0
 
-    iput-object v0, p0, Lcom/android/settings/applications/ApplicationsState;->EA:Lcom/android/settings/applications/ApplicationsState$PackageIntentReceiver;
+    iput-object v0, p0, Lcom/android/settings_ext/applications/ApplicationsState;->EA:Lcom/android/settings_ext/applications/ApplicationsState$PackageIntentReceiver;
 
     goto :goto_0
 .end method
@@ -1505,7 +1505,7 @@
 
     .prologue
     .line 778
-    iget-object v0, p0, Lcom/android/settings/applications/ApplicationsState;->EC:Ljava/util/ArrayList;
+    iget-object v0, p0, Lcom/android/settings_ext/applications/ApplicationsState;->EC:Ljava/util/ArrayList;
 
     invoke-virtual {v0}, Ljava/util/ArrayList;->isEmpty()Z
 
@@ -1514,12 +1514,12 @@
     if-eqz v0, :cond_0
 
     .line 779
-    iget-object v0, p0, Lcom/android/settings/applications/ApplicationsState;->EF:Ljava/util/HashMap;
+    iget-object v0, p0, Lcom/android/settings_ext/applications/ApplicationsState;->EF:Ljava/util/HashMap;
 
     invoke-virtual {v0}, Ljava/util/HashMap;->clear()V
 
     .line 780
-    iget-object v0, p0, Lcom/android/settings/applications/ApplicationsState;->EG:Ljava/util/ArrayList;
+    iget-object v0, p0, Lcom/android/settings_ext/applications/ApplicationsState;->EG:Ljava/util/ArrayList;
 
     invoke-virtual {v0}, Ljava/util/ArrayList;->clear()V
 
@@ -1536,13 +1536,13 @@
     const-wide/16 v2, 0x0
 
     .line 829
-    iget-object v4, p0, Lcom/android/settings/applications/ApplicationsState;->EF:Ljava/util/HashMap;
+    iget-object v4, p0, Lcom/android/settings_ext/applications/ApplicationsState;->EF:Ljava/util/HashMap;
 
     monitor-enter v4
 
     .line 831
     :try_start_0
-    iget-object v0, p0, Lcom/android/settings/applications/ApplicationsState;->EG:Ljava/util/ArrayList;
+    iget-object v0, p0, Lcom/android/settings_ext/applications/ApplicationsState;->EG:Ljava/util/ArrayList;
 
     invoke-virtual {v0}, Ljava/util/ArrayList;->size()I
 
@@ -1556,15 +1556,15 @@
     if-ltz v1, :cond_0
 
     .line 832
-    iget-object v0, p0, Lcom/android/settings/applications/ApplicationsState;->EG:Ljava/util/ArrayList;
+    iget-object v0, p0, Lcom/android/settings_ext/applications/ApplicationsState;->EG:Ljava/util/ArrayList;
 
     invoke-virtual {v0, v1}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
 
     move-result-object v0
 
-    check-cast v0, Lcom/android/settings/applications/ApplicationsState$AppEntry;
+    check-cast v0, Lcom/android/settings_ext/applications/ApplicationsState$AppEntry;
 
-    iget-wide v6, v0, Lcom/android/settings/applications/ApplicationsState$AppEntry;->cacheSize:J
+    iget-wide v6, v0, Lcom/android/settings_ext/applications/ApplicationsState$AppEntry;->cacheSize:J
 
     add-long/2addr v2, v6
 

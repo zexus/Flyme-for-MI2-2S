@@ -1,4 +1,4 @@
-.class Lcom/android/settings/sound/RingerVolumeFragment$SavedState;
+.class Lcom/android/settings_ext/sound/RingerVolumeFragment$SavedState;
 .super Ljava/lang/Object;
 .source "RingerVolumeFragment.java"
 
@@ -23,11 +23,11 @@
 
     .prologue
     .line 393
-    new-instance v0, Lcom/android/settings/sound/F;
+    new-instance v0, Lcom/android/settings_ext/sound/F;
 
-    invoke-direct {v0}, Lcom/android/settings/sound/F;-><init>()V
+    invoke-direct {v0}, Lcom/android/settings_ext/sound/F;-><init>()V
 
-    sput-object v0, Lcom/android/settings/sound/RingerVolumeFragment$SavedState;->CREATOR:Landroid/os/Parcelable$Creator;
+    sput-object v0, Lcom/android/settings_ext/sound/RingerVolumeFragment$SavedState;->CREATOR:Landroid/os/Parcelable$Creator;
 
     return-void
 .end method
@@ -40,26 +40,26 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 367
-    sget-object v0, Lcom/android/settings/sound/RingerVolumeFragment;->ajP:[I
+    sget-object v0, Lcom/android/settings_ext/sound/RingerVolumeFragment;->ajP:[I
 
     array-length v0, v0
 
     new-array v0, v0, [Landroid/preference/VolumePreference$VolumeStore;
 
-    iput-object v0, p0, Lcom/android/settings/sound/RingerVolumeFragment$SavedState;->mVolumeStore:[Landroid/preference/VolumePreference$VolumeStore;
+    iput-object v0, p0, Lcom/android/settings_ext/sound/RingerVolumeFragment$SavedState;->mVolumeStore:[Landroid/preference/VolumePreference$VolumeStore;
 
     .line 368
     const/4 v0, 0x0
 
     :goto_0
-    sget-object v1, Lcom/android/settings/sound/RingerVolumeFragment;->ajP:[I
+    sget-object v1, Lcom/android/settings_ext/sound/RingerVolumeFragment;->ajP:[I
 
     array-length v1, v1
 
     if-ge v0, v1, :cond_0
 
     .line 369
-    iget-object v1, p0, Lcom/android/settings/sound/RingerVolumeFragment$SavedState;->mVolumeStore:[Landroid/preference/VolumePreference$VolumeStore;
+    iget-object v1, p0, Lcom/android/settings_ext/sound/RingerVolumeFragment$SavedState;->mVolumeStore:[Landroid/preference/VolumePreference$VolumeStore;
 
     new-instance v2, Landroid/preference/VolumePreference$VolumeStore;
 
@@ -68,7 +68,7 @@
     aput-object v2, v1, v0
 
     .line 370
-    iget-object v1, p0, Lcom/android/settings/sound/RingerVolumeFragment$SavedState;->mVolumeStore:[Landroid/preference/VolumePreference$VolumeStore;
+    iget-object v1, p0, Lcom/android/settings_ext/sound/RingerVolumeFragment$SavedState;->mVolumeStore:[Landroid/preference/VolumePreference$VolumeStore;
 
     aget-object v1, v1, v0
 
@@ -79,7 +79,7 @@
     iput v2, v1, Landroid/preference/VolumePreference$VolumeStore;->volume:I
 
     .line 371
-    iget-object v1, p0, Lcom/android/settings/sound/RingerVolumeFragment$SavedState;->mVolumeStore:[Landroid/preference/VolumePreference$VolumeStore;
+    iget-object v1, p0, Lcom/android/settings_ext/sound/RingerVolumeFragment$SavedState;->mVolumeStore:[Landroid/preference/VolumePreference$VolumeStore;
 
     aget-object v1, v1, v0
 
@@ -107,7 +107,7 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 363
-    iput-object p1, p0, Lcom/android/settings/sound/RingerVolumeFragment$SavedState;->mVolumeStore:[Landroid/preference/VolumePreference$VolumeStore;
+    iput-object p1, p0, Lcom/android/settings_ext/sound/RingerVolumeFragment$SavedState;->mVolumeStore:[Landroid/preference/VolumePreference$VolumeStore;
 
     .line 364
     return-void
@@ -120,11 +120,11 @@
 
     .prologue
     .line 384
-    iget-object v0, p0, Lcom/android/settings/sound/RingerVolumeFragment$SavedState;->mVolumeStore:[Landroid/preference/VolumePreference$VolumeStore;
+    iget-object v0, p0, Lcom/android/settings_ext/sound/RingerVolumeFragment$SavedState;->mVolumeStore:[Landroid/preference/VolumePreference$VolumeStore;
 
     if-eqz v0, :cond_0
 
-    iget-object v0, p0, Lcom/android/settings/sound/RingerVolumeFragment$SavedState;->mVolumeStore:[Landroid/preference/VolumePreference$VolumeStore;
+    iget-object v0, p0, Lcom/android/settings_ext/sound/RingerVolumeFragment$SavedState;->mVolumeStore:[Landroid/preference/VolumePreference$VolumeStore;
 
     array-length v0, v0
 
@@ -134,7 +134,7 @@
     :cond_0
     new-array v0, p1, [Landroid/preference/VolumePreference$VolumeStore;
 
-    iput-object v0, p0, Lcom/android/settings/sound/RingerVolumeFragment$SavedState;->mVolumeStore:[Landroid/preference/VolumePreference$VolumeStore;
+    iput-object v0, p0, Lcom/android/settings_ext/sound/RingerVolumeFragment$SavedState;->mVolumeStore:[Landroid/preference/VolumePreference$VolumeStore;
 
     .line 386
     const/4 v0, 0x0
@@ -143,7 +143,7 @@
     if-ge v0, p1, :cond_1
 
     .line 387
-    iget-object v1, p0, Lcom/android/settings/sound/RingerVolumeFragment$SavedState;->mVolumeStore:[Landroid/preference/VolumePreference$VolumeStore;
+    iget-object v1, p0, Lcom/android/settings_ext/sound/RingerVolumeFragment$SavedState;->mVolumeStore:[Landroid/preference/VolumePreference$VolumeStore;
 
     new-instance v2, Landroid/preference/VolumePreference$VolumeStore;
 
@@ -158,7 +158,7 @@
 
     .line 390
     :cond_1
-    iget-object v0, p0, Lcom/android/settings/sound/RingerVolumeFragment$SavedState;->mVolumeStore:[Landroid/preference/VolumePreference$VolumeStore;
+    iget-object v0, p0, Lcom/android/settings_ext/sound/RingerVolumeFragment$SavedState;->mVolumeStore:[Landroid/preference/VolumePreference$VolumeStore;
 
     return-object v0
 .end method
@@ -181,14 +181,14 @@
     const/4 v0, 0x0
 
     :goto_0
-    sget-object v1, Lcom/android/settings/sound/RingerVolumeFragment;->ajP:[I
+    sget-object v1, Lcom/android/settings_ext/sound/RingerVolumeFragment;->ajP:[I
 
     array-length v1, v1
 
     if-ge v0, v1, :cond_0
 
     .line 378
-    iget-object v1, p0, Lcom/android/settings/sound/RingerVolumeFragment$SavedState;->mVolumeStore:[Landroid/preference/VolumePreference$VolumeStore;
+    iget-object v1, p0, Lcom/android/settings_ext/sound/RingerVolumeFragment$SavedState;->mVolumeStore:[Landroid/preference/VolumePreference$VolumeStore;
 
     aget-object v1, v1, v0
 
@@ -197,7 +197,7 @@
     invoke-virtual {p1, v1}, Landroid/os/Parcel;->writeInt(I)V
 
     .line 379
-    iget-object v1, p0, Lcom/android/settings/sound/RingerVolumeFragment$SavedState;->mVolumeStore:[Landroid/preference/VolumePreference$VolumeStore;
+    iget-object v1, p0, Lcom/android/settings_ext/sound/RingerVolumeFragment$SavedState;->mVolumeStore:[Landroid/preference/VolumePreference$VolumeStore;
 
     aget-object v1, v1, v0
 

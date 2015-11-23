@@ -1,4 +1,4 @@
-.class public final Lcom/android/settings/accounts/AuthenticatorHelper;
+.class public final Lcom/android/settings_ext/accounts/AuthenticatorHelper;
 .super Landroid/content/BroadcastReceiver;
 .source "AuthenticatorHelper.java"
 
@@ -14,7 +14,7 @@
 
 .field private Cc:Ljava/util/HashMap;
 
-.field private final Cd:Lcom/android/settings/accounts/AuthenticatorHelper$OnAccountsUpdateListener;
+.field private final Cd:Lcom/android/settings_ext/accounts/AuthenticatorHelper$OnAccountsUpdateListener;
 
 .field private Ce:Z
 
@@ -26,7 +26,7 @@
 
 
 # direct methods
-.method public constructor <init>(Landroid/content/Context;Landroid/os/UserHandle;Landroid/os/UserManager;Lcom/android/settings/accounts/AuthenticatorHelper$OnAccountsUpdateListener;)V
+.method public constructor <init>(Landroid/content/Context;Landroid/os/UserHandle;Landroid/os/UserManager;Lcom/android/settings_ext/accounts/AuthenticatorHelper$OnAccountsUpdateListener;)V
     .locals 1
 
     .prologue
@@ -38,45 +38,45 @@
 
     invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
 
-    iput-object v0, p0, Lcom/android/settings/accounts/AuthenticatorHelper;->BY:Ljava/util/Map;
+    iput-object v0, p0, Lcom/android/settings_ext/accounts/AuthenticatorHelper;->BY:Ljava/util/Map;
 
     .line 59
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
-    iput-object v0, p0, Lcom/android/settings/accounts/AuthenticatorHelper;->Ca:Ljava/util/ArrayList;
+    iput-object v0, p0, Lcom/android/settings_ext/accounts/AuthenticatorHelper;->Ca:Ljava/util/ArrayList;
 
     .line 60
     new-instance v0, Ljava/util/HashMap;
 
     invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
 
-    iput-object v0, p0, Lcom/android/settings/accounts/AuthenticatorHelper;->Cb:Ljava/util/Map;
+    iput-object v0, p0, Lcom/android/settings_ext/accounts/AuthenticatorHelper;->Cb:Ljava/util/Map;
 
     .line 61
     invoke-static {}, Lcom/google/android/collect/Maps;->newHashMap()Ljava/util/HashMap;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/accounts/AuthenticatorHelper;->Cc:Ljava/util/HashMap;
+    iput-object v0, p0, Lcom/android/settings_ext/accounts/AuthenticatorHelper;->Cc:Ljava/util/HashMap;
 
     .line 75
-    iput-object p1, p0, Lcom/android/settings/accounts/AuthenticatorHelper;->mContext:Landroid/content/Context;
+    iput-object p1, p0, Lcom/android/settings_ext/accounts/AuthenticatorHelper;->mContext:Landroid/content/Context;
 
     .line 76
-    iput-object p3, p0, Lcom/android/settings/accounts/AuthenticatorHelper;->aU:Landroid/os/UserManager;
+    iput-object p3, p0, Lcom/android/settings_ext/accounts/AuthenticatorHelper;->aU:Landroid/os/UserManager;
 
     .line 77
-    iput-object p2, p0, Lcom/android/settings/accounts/AuthenticatorHelper;->zA:Landroid/os/UserHandle;
+    iput-object p2, p0, Lcom/android/settings_ext/accounts/AuthenticatorHelper;->zA:Landroid/os/UserHandle;
 
     .line 78
-    iput-object p4, p0, Lcom/android/settings/accounts/AuthenticatorHelper;->Cd:Lcom/android/settings/accounts/AuthenticatorHelper$OnAccountsUpdateListener;
+    iput-object p4, p0, Lcom/android/settings_ext/accounts/AuthenticatorHelper;->Cd:Lcom/android/settings_ext/accounts/AuthenticatorHelper$OnAccountsUpdateListener;
 
     .line 81
     const/4 v0, 0x0
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/accounts/AuthenticatorHelper;->onAccountsUpdated([Landroid/accounts/Account;)V
+    invoke-virtual {p0, v0}, Lcom/android/settings_ext/accounts/AuthenticatorHelper;->onAccountsUpdated([Landroid/accounts/Account;)V
 
     .line 82
     return-void
@@ -87,12 +87,12 @@
 
     .prologue
     .line 240
-    iget-object v0, p0, Lcom/android/settings/accounts/AuthenticatorHelper;->Cc:Ljava/util/HashMap;
+    iget-object v0, p0, Lcom/android/settings_ext/accounts/AuthenticatorHelper;->Cc:Ljava/util/HashMap;
 
     invoke-virtual {v0}, Ljava/util/HashMap;->clear()V
 
     .line 241
-    iget-object v0, p0, Lcom/android/settings/accounts/AuthenticatorHelper;->zA:Landroid/os/UserHandle;
+    iget-object v0, p0, Lcom/android/settings_ext/accounts/AuthenticatorHelper;->zA:Landroid/os/UserHandle;
 
     invoke-virtual {v0}, Landroid/os/UserHandle;->getIdentifier()I
 
@@ -116,7 +116,7 @@
     aget-object v4, v2, v1
 
     .line 245
-    iget-object v0, p0, Lcom/android/settings/accounts/AuthenticatorHelper;->Cc:Ljava/util/HashMap;
+    iget-object v0, p0, Lcom/android/settings_ext/accounts/AuthenticatorHelper;->Cc:Ljava/util/HashMap;
 
     iget-object v5, v4, Landroid/content/SyncAdapterType;->accountType:Ljava/lang/String;
 
@@ -135,7 +135,7 @@
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
     .line 248
-    iget-object v5, p0, Lcom/android/settings/accounts/AuthenticatorHelper;->Cc:Ljava/util/HashMap;
+    iget-object v5, p0, Lcom/android/settings_ext/accounts/AuthenticatorHelper;->Cc:Ljava/util/HashMap;
 
     iget-object v6, v4, Landroid/content/SyncAdapterType;->accountType:Ljava/lang/String;
 
@@ -215,7 +215,7 @@
 
     .prologue
     .line 236
-    iget-object v0, p0, Lcom/android/settings/accounts/AuthenticatorHelper;->Cc:Ljava/util/HashMap;
+    iget-object v0, p0, Lcom/android/settings_ext/accounts/AuthenticatorHelper;->Cc:Ljava/util/HashMap;
 
     invoke-virtual {v0, p1}, Ljava/util/HashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -231,7 +231,7 @@
 
     .prologue
     .line 170
-    iget-object v0, p0, Lcom/android/settings/accounts/AuthenticatorHelper;->BY:Ljava/util/Map;
+    iget-object v0, p0, Lcom/android/settings_ext/accounts/AuthenticatorHelper;->BY:Ljava/util/Map;
 
     invoke-interface {v0, p1}, Ljava/util/Map;->containsKey(Ljava/lang/Object;)Z
 
@@ -245,7 +245,7 @@
 
     .prologue
     .line 174
-    iget-object v0, p0, Lcom/android/settings/accounts/AuthenticatorHelper;->BY:Ljava/util/Map;
+    iget-object v0, p0, Lcom/android/settings_ext/accounts/AuthenticatorHelper;->BY:Ljava/util/Map;
 
     invoke-interface {v0, p1}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -265,7 +265,7 @@
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/android/settings/accounts/AuthenticatorHelper;->zA:Landroid/os/UserHandle;
+    iget-object v1, p0, Lcom/android/settings_ext/accounts/AuthenticatorHelper;->zA:Landroid/os/UserHandle;
 
     invoke-virtual {v1}, Landroid/os/UserHandle;->getIdentifier()I
 
@@ -275,28 +275,28 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/accounts/AuthenticatorHelper;->BZ:[Landroid/accounts/AuthenticatorDescription;
+    iput-object v0, p0, Lcom/android/settings_ext/accounts/AuthenticatorHelper;->BZ:[Landroid/accounts/AuthenticatorDescription;
 
     .line 164
     const/4 v0, 0x0
 
     :goto_0
-    iget-object v1, p0, Lcom/android/settings/accounts/AuthenticatorHelper;->BZ:[Landroid/accounts/AuthenticatorDescription;
+    iget-object v1, p0, Lcom/android/settings_ext/accounts/AuthenticatorHelper;->BZ:[Landroid/accounts/AuthenticatorDescription;
 
     array-length v1, v1
 
     if-ge v0, v1, :cond_0
 
     .line 165
-    iget-object v1, p0, Lcom/android/settings/accounts/AuthenticatorHelper;->BY:Ljava/util/Map;
+    iget-object v1, p0, Lcom/android/settings_ext/accounts/AuthenticatorHelper;->BY:Ljava/util/Map;
 
-    iget-object v2, p0, Lcom/android/settings/accounts/AuthenticatorHelper;->BZ:[Landroid/accounts/AuthenticatorDescription;
+    iget-object v2, p0, Lcom/android/settings_ext/accounts/AuthenticatorHelper;->BZ:[Landroid/accounts/AuthenticatorDescription;
 
     aget-object v2, v2, v0
 
     iget-object v2, v2, Landroid/accounts/AuthenticatorDescription;->type:Ljava/lang/String;
 
-    iget-object v3, p0, Lcom/android/settings/accounts/AuthenticatorHelper;->BZ:[Landroid/accounts/AuthenticatorDescription;
+    iget-object v3, p0, Lcom/android/settings_ext/accounts/AuthenticatorHelper;->BZ:[Landroid/accounts/AuthenticatorDescription;
 
     aget-object v3, v3, v0
 
@@ -317,14 +317,14 @@
 
     .prologue
     .line 178
-    invoke-virtual {p0, p1}, Lcom/android/settings/accounts/AuthenticatorHelper;->X(Ljava/lang/String;)Z
+    invoke-virtual {p0, p1}, Lcom/android/settings_ext/accounts/AuthenticatorHelper;->X(Ljava/lang/String;)Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
     .line 179
-    invoke-virtual {p0, p1}, Lcom/android/settings/accounts/AuthenticatorHelper;->Y(Ljava/lang/String;)Landroid/accounts/AuthenticatorDescription;
+    invoke-virtual {p0, p1}, Lcom/android/settings_ext/accounts/AuthenticatorHelper;->Y(Ljava/lang/String;)Landroid/accounts/AuthenticatorDescription;
 
     move-result-object v0
 
@@ -353,9 +353,9 @@
 
     .prologue
     .line 89
-    new-instance v1, Lcom/android/settings/accounts/AuthenticatorHelper$1;
+    new-instance v1, Lcom/android/settings_ext/accounts/AuthenticatorHelper$1;
 
-    invoke-direct {v1, p0, p1, p2}, Lcom/android/settings/accounts/AuthenticatorHelper$1;-><init>(Lcom/android/settings/accounts/AuthenticatorHelper;Landroid/content/Context;Ljava/lang/String;)V
+    invoke-direct {v1, p0, p1, p2}, Lcom/android/settings_ext/accounts/AuthenticatorHelper$1;-><init>(Lcom/android/settings_ext/accounts/AuthenticatorHelper;Landroid/content/Context;Ljava/lang/String;)V
 
     sget-object v2, Landroid/os/AsyncTask;->THREAD_POOL_EXECUTOR:Ljava/util/concurrent/Executor;
 
@@ -363,7 +363,7 @@
 
     check-cast v0, [Ljava/lang/Void;
 
-    invoke-virtual {v1, v2, v0}, Lcom/android/settings/accounts/AuthenticatorHelper$1;->executeOnExecutor(Ljava/util/concurrent/Executor;[Ljava/lang/Object;)Landroid/os/AsyncTask;
+    invoke-virtual {v1, v2, v0}, Lcom/android/settings_ext/accounts/AuthenticatorHelper$1;->executeOnExecutor(Ljava/util/concurrent/Executor;[Ljava/lang/Object;)Landroid/os/AsyncTask;
 
     .line 96
     return-void
@@ -377,13 +377,13 @@
     const/4 v1, 0x0
 
     .line 105
-    iget-object v2, p0, Lcom/android/settings/accounts/AuthenticatorHelper;->Cb:Ljava/util/Map;
+    iget-object v2, p0, Lcom/android/settings_ext/accounts/AuthenticatorHelper;->Cb:Ljava/util/Map;
 
     monitor-enter v2
 
     .line 106
     :try_start_0
-    iget-object v0, p0, Lcom/android/settings/accounts/AuthenticatorHelper;->Cb:Ljava/util/Map;
+    iget-object v0, p0, Lcom/android/settings_ext/accounts/AuthenticatorHelper;->Cb:Ljava/util/Map;
 
     invoke-interface {v0, p2}, Ljava/util/Map;->containsKey(Ljava/lang/Object;)Z
 
@@ -392,7 +392,7 @@
     if-eqz v0, :cond_1
 
     .line 107
-    iget-object v0, p0, Lcom/android/settings/accounts/AuthenticatorHelper;->Cb:Ljava/util/Map;
+    iget-object v0, p0, Lcom/android/settings_ext/accounts/AuthenticatorHelper;->Cb:Ljava/util/Map;
 
     invoke-interface {v0, p2}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -414,7 +414,7 @@
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
     .line 110
-    iget-object v0, p0, Lcom/android/settings/accounts/AuthenticatorHelper;->BY:Ljava/util/Map;
+    iget-object v0, p0, Lcom/android/settings_ext/accounts/AuthenticatorHelper;->BY:Ljava/util/Map;
 
     invoke-interface {v0, p2}, Ljava/util/Map;->containsKey(Ljava/lang/Object;)Z
 
@@ -424,7 +424,7 @@
 
     .line 112
     :try_start_1
-    iget-object v0, p0, Lcom/android/settings/accounts/AuthenticatorHelper;->BY:Ljava/util/Map;
+    iget-object v0, p0, Lcom/android/settings_ext/accounts/AuthenticatorHelper;->BY:Ljava/util/Map;
 
     invoke-interface {v0, p2}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -437,14 +437,14 @@
 
     const/4 v3, 0x0
 
-    iget-object v4, p0, Lcom/android/settings/accounts/AuthenticatorHelper;->zA:Landroid/os/UserHandle;
+    iget-object v4, p0, Lcom/android/settings_ext/accounts/AuthenticatorHelper;->zA:Landroid/os/UserHandle;
 
     invoke-virtual {p1, v2, v3, v4}, Landroid/content/Context;->createPackageContextAsUser(Ljava/lang/String;ILandroid/os/UserHandle;)Landroid/content/Context;
 
     move-result-object v2
 
     .line 115
-    iget-object v3, p0, Lcom/android/settings/accounts/AuthenticatorHelper;->mContext:Landroid/content/Context;
+    iget-object v3, p0, Lcom/android/settings_ext/accounts/AuthenticatorHelper;->mContext:Landroid/content/Context;
 
     invoke-virtual {v3}, Landroid/content/Context;->getPackageManager()Landroid/content/pm/PackageManager;
 
@@ -460,14 +460,14 @@
 
     move-result-object v0
 
-    iget-object v2, p0, Lcom/android/settings/accounts/AuthenticatorHelper;->zA:Landroid/os/UserHandle;
+    iget-object v2, p0, Lcom/android/settings_ext/accounts/AuthenticatorHelper;->zA:Landroid/os/UserHandle;
 
     invoke-virtual {v3, v0, v2}, Landroid/content/pm/PackageManager;->getUserBadgedIcon(Landroid/graphics/drawable/Drawable;Landroid/os/UserHandle;)Landroid/graphics/drawable/Drawable;
 
     move-result-object v1
 
     .line 117
-    iget-object v2, p0, Lcom/android/settings/accounts/AuthenticatorHelper;->Cb:Ljava/util/Map;
+    iget-object v2, p0, Lcom/android/settings_ext/accounts/AuthenticatorHelper;->Cb:Ljava/util/Map;
 
     monitor-enter v2
     :try_end_1
@@ -485,7 +485,7 @@
 
     .line 123
     :cond_2
-    iget-object v0, p0, Lcom/android/settings/accounts/AuthenticatorHelper;->Cb:Ljava/util/Map;
+    iget-object v0, p0, Lcom/android/settings_ext/accounts/AuthenticatorHelper;->Cb:Ljava/util/Map;
 
     invoke-interface {v0, p2, v1}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -568,7 +568,7 @@
     const/4 v1, 0x0
 
     .line 142
-    iget-object v0, p0, Lcom/android/settings/accounts/AuthenticatorHelper;->BY:Ljava/util/Map;
+    iget-object v0, p0, Lcom/android/settings_ext/accounts/AuthenticatorHelper;->BY:Ljava/util/Map;
 
     invoke-interface {v0, p2}, Ljava/util/Map;->containsKey(Ljava/lang/Object;)Z
 
@@ -578,7 +578,7 @@
 
     .line 144
     :try_start_0
-    iget-object v0, p0, Lcom/android/settings/accounts/AuthenticatorHelper;->BY:Ljava/util/Map;
+    iget-object v0, p0, Lcom/android/settings_ext/accounts/AuthenticatorHelper;->BY:Ljava/util/Map;
 
     invoke-interface {v0, p2}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -591,7 +591,7 @@
 
     const/4 v3, 0x0
 
-    iget-object v4, p0, Lcom/android/settings/accounts/AuthenticatorHelper;->zA:Landroid/os/UserHandle;
+    iget-object v4, p0, Lcom/android/settings_ext/accounts/AuthenticatorHelper;->zA:Landroid/os/UserHandle;
 
     invoke-virtual {p1, v2, v3, v4}, Landroid/content/Context;->createPackageContextAsUser(Ljava/lang/String;ILandroid/os/UserHandle;)Landroid/content/Context;
 
@@ -687,7 +687,7 @@
     const/4 v4, 0x0
 
     .line 217
-    iget-boolean v0, p0, Lcom/android/settings/accounts/AuthenticatorHelper;->Ce:Z
+    iget-boolean v0, p0, Lcom/android/settings_ext/accounts/AuthenticatorHelper;->Ce:Z
 
     if-nez v0, :cond_0
 
@@ -707,9 +707,9 @@
     invoke-virtual {v3, v0}, Landroid/content/IntentFilter;->addAction(Ljava/lang/String;)V
 
     .line 223
-    iget-object v0, p0, Lcom/android/settings/accounts/AuthenticatorHelper;->mContext:Landroid/content/Context;
+    iget-object v0, p0, Lcom/android/settings_ext/accounts/AuthenticatorHelper;->mContext:Landroid/content/Context;
 
-    iget-object v2, p0, Lcom/android/settings/accounts/AuthenticatorHelper;->zA:Landroid/os/UserHandle;
+    iget-object v2, p0, Lcom/android/settings_ext/accounts/AuthenticatorHelper;->zA:Landroid/os/UserHandle;
 
     move-object v1, p0
 
@@ -720,7 +720,7 @@
     .line 224
     const/4 v0, 0x1
 
-    iput-boolean v0, p0, Lcom/android/settings/accounts/AuthenticatorHelper;->Ce:Z
+    iput-boolean v0, p0, Lcom/android/settings_ext/accounts/AuthenticatorHelper;->Ce:Z
 
     .line 226
     :cond_0
@@ -732,19 +732,19 @@
 
     .prologue
     .line 229
-    iget-boolean v0, p0, Lcom/android/settings/accounts/AuthenticatorHelper;->Ce:Z
+    iget-boolean v0, p0, Lcom/android/settings_ext/accounts/AuthenticatorHelper;->Ce:Z
 
     if-eqz v0, :cond_0
 
     .line 230
-    iget-object v0, p0, Lcom/android/settings/accounts/AuthenticatorHelper;->mContext:Landroid/content/Context;
+    iget-object v0, p0, Lcom/android/settings_ext/accounts/AuthenticatorHelper;->mContext:Landroid/content/Context;
 
     invoke-virtual {v0, p0}, Landroid/content/Context;->unregisterReceiver(Landroid/content/BroadcastReceiver;)V
 
     .line 231
     const/4 v0, 0x0
 
-    iput-boolean v0, p0, Lcom/android/settings/accounts/AuthenticatorHelper;->Ce:Z
+    iput-boolean v0, p0, Lcom/android/settings_ext/accounts/AuthenticatorHelper;->Ce:Z
 
     .line 233
     :cond_0
@@ -756,9 +756,9 @@
 
     .prologue
     .line 85
-    iget-object v0, p0, Lcom/android/settings/accounts/AuthenticatorHelper;->Ca:Ljava/util/ArrayList;
+    iget-object v0, p0, Lcom/android/settings_ext/accounts/AuthenticatorHelper;->Ca:Ljava/util/ArrayList;
 
-    iget-object v1, p0, Lcom/android/settings/accounts/AuthenticatorHelper;->Ca:Ljava/util/ArrayList;
+    iget-object v1, p0, Lcom/android/settings_ext/accounts/AuthenticatorHelper;->Ca:Ljava/util/ArrayList;
 
     invoke-virtual {v1}, Ljava/util/ArrayList;->size()I
 
@@ -780,21 +780,21 @@
 
     .prologue
     .line 190
-    iget-object v0, p0, Lcom/android/settings/accounts/AuthenticatorHelper;->mContext:Landroid/content/Context;
+    iget-object v0, p0, Lcom/android/settings_ext/accounts/AuthenticatorHelper;->mContext:Landroid/content/Context;
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/accounts/AuthenticatorHelper;->Z(Landroid/content/Context;)V
+    invoke-virtual {p0, v0}, Lcom/android/settings_ext/accounts/AuthenticatorHelper;->Z(Landroid/content/Context;)V
 
     .line 191
     if-nez p1, :cond_0
 
     .line 192
-    iget-object v0, p0, Lcom/android/settings/accounts/AuthenticatorHelper;->mContext:Landroid/content/Context;
+    iget-object v0, p0, Lcom/android/settings_ext/accounts/AuthenticatorHelper;->mContext:Landroid/content/Context;
 
     invoke-static {v0}, Landroid/accounts/AccountManager;->get(Landroid/content/Context;)Landroid/accounts/AccountManager;
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/android/settings/accounts/AuthenticatorHelper;->zA:Landroid/os/UserHandle;
+    iget-object v1, p0, Lcom/android/settings_ext/accounts/AuthenticatorHelper;->zA:Landroid/os/UserHandle;
 
     invoke-virtual {v1}, Landroid/os/UserHandle;->getIdentifier()I
 
@@ -806,12 +806,12 @@
 
     .line 194
     :cond_0
-    iget-object v0, p0, Lcom/android/settings/accounts/AuthenticatorHelper;->Ca:Ljava/util/ArrayList;
+    iget-object v0, p0, Lcom/android/settings_ext/accounts/AuthenticatorHelper;->Ca:Ljava/util/ArrayList;
 
     invoke-virtual {v0}, Ljava/util/ArrayList;->clear()V
 
     .line 195
-    iget-object v0, p0, Lcom/android/settings/accounts/AuthenticatorHelper;->Cb:Ljava/util/Map;
+    iget-object v0, p0, Lcom/android/settings_ext/accounts/AuthenticatorHelper;->Cb:Ljava/util/Map;
 
     invoke-interface {v0}, Ljava/util/Map;->clear()V
 
@@ -827,7 +827,7 @@
     aget-object v1, p1, v0
 
     .line 198
-    iget-object v2, p0, Lcom/android/settings/accounts/AuthenticatorHelper;->Ca:Ljava/util/ArrayList;
+    iget-object v2, p0, Lcom/android/settings_ext/accounts/AuthenticatorHelper;->Ca:Ljava/util/ArrayList;
 
     iget-object v3, v1, Landroid/accounts/Account;->type:Ljava/lang/String;
 
@@ -838,7 +838,7 @@
     if-nez v2, :cond_1
 
     .line 199
-    iget-object v2, p0, Lcom/android/settings/accounts/AuthenticatorHelper;->Ca:Ljava/util/ArrayList;
+    iget-object v2, p0, Lcom/android/settings_ext/accounts/AuthenticatorHelper;->Ca:Ljava/util/ArrayList;
 
     iget-object v1, v1, Landroid/accounts/Account;->type:Ljava/lang/String;
 
@@ -852,19 +852,19 @@
 
     .line 202
     :cond_2
-    invoke-direct {p0}, Lcom/android/settings/accounts/AuthenticatorHelper;->il()V
+    invoke-direct {p0}, Lcom/android/settings_ext/accounts/AuthenticatorHelper;->il()V
 
     .line 203
-    iget-boolean v0, p0, Lcom/android/settings/accounts/AuthenticatorHelper;->Ce:Z
+    iget-boolean v0, p0, Lcom/android/settings_ext/accounts/AuthenticatorHelper;->Ce:Z
 
     if-eqz v0, :cond_3
 
     .line 204
-    iget-object v0, p0, Lcom/android/settings/accounts/AuthenticatorHelper;->Cd:Lcom/android/settings/accounts/AuthenticatorHelper$OnAccountsUpdateListener;
+    iget-object v0, p0, Lcom/android/settings_ext/accounts/AuthenticatorHelper;->Cd:Lcom/android/settings_ext/accounts/AuthenticatorHelper$OnAccountsUpdateListener;
 
-    iget-object v1, p0, Lcom/android/settings/accounts/AuthenticatorHelper;->zA:Landroid/os/UserHandle;
+    iget-object v1, p0, Lcom/android/settings_ext/accounts/AuthenticatorHelper;->zA:Landroid/os/UserHandle;
 
-    invoke-interface {v0, v1}, Lcom/android/settings/accounts/AuthenticatorHelper$OnAccountsUpdateListener;->a(Landroid/os/UserHandle;)V
+    invoke-interface {v0, v1}, Lcom/android/settings_ext/accounts/AuthenticatorHelper$OnAccountsUpdateListener;->a(Landroid/os/UserHandle;)V
 
     .line 206
     :cond_3
@@ -876,13 +876,13 @@
 
     .prologue
     .line 211
-    iget-object v0, p0, Lcom/android/settings/accounts/AuthenticatorHelper;->mContext:Landroid/content/Context;
+    iget-object v0, p0, Lcom/android/settings_ext/accounts/AuthenticatorHelper;->mContext:Landroid/content/Context;
 
     invoke-static {v0}, Landroid/accounts/AccountManager;->get(Landroid/content/Context;)Landroid/accounts/AccountManager;
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/android/settings/accounts/AuthenticatorHelper;->zA:Landroid/os/UserHandle;
+    iget-object v1, p0, Lcom/android/settings_ext/accounts/AuthenticatorHelper;->zA:Landroid/os/UserHandle;
 
     invoke-virtual {v1}, Landroid/os/UserHandle;->getIdentifier()I
 
@@ -893,7 +893,7 @@
     move-result-object v0
 
     .line 213
-    invoke-virtual {p0, v0}, Lcom/android/settings/accounts/AuthenticatorHelper;->onAccountsUpdated([Landroid/accounts/Account;)V
+    invoke-virtual {p0, v0}, Lcom/android/settings_ext/accounts/AuthenticatorHelper;->onAccountsUpdated([Landroid/accounts/Account;)V
 
     .line 214
     return-void

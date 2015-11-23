@@ -1,4 +1,4 @@
-.class Lcom/android/settings/eH;
+.class Lcom/android/settings_ext/eH;
 .super Ljava/lang/Object;
 .source "MiuiSmartCoverSettingsFragment.java"
 
@@ -7,16 +7,16 @@
 
 
 # instance fields
-.field final synthetic si:Lcom/android/settings/MiuiSmartCoverSettingsFragment;
+.field final synthetic si:Lcom/android/settings_ext/MiuiSmartCoverSettingsFragment;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/MiuiSmartCoverSettingsFragment;)V
+.method constructor <init>(Lcom/android/settings_ext/MiuiSmartCoverSettingsFragment;)V
     .locals 0
 
     .prologue
     .line 48
-    iput-object p1, p0, Lcom/android/settings/eH;->si:Lcom/android/settings/MiuiSmartCoverSettingsFragment;
+    iput-object p1, p0, Lcom/android/settings_ext/eH;->si:Lcom/android/settings_ext/MiuiSmartCoverSettingsFragment;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -44,18 +44,18 @@
     if-eqz v0, :cond_0
 
     .line 53
-    iget-object v1, p0, Lcom/android/settings/eH;->si:Lcom/android/settings/MiuiSmartCoverSettingsFragment;
+    iget-object v1, p0, Lcom/android/settings_ext/eH;->si:Lcom/android/settings_ext/MiuiSmartCoverSettingsFragment;
 
-    invoke-static {v1}, Lcom/android/settings/MiuiSmartCoverSettingsFragment;->a(Lcom/android/settings/MiuiSmartCoverSettingsFragment;)Lmiui/preference/RadioButtonPreference;
+    invoke-static {v1}, Lcom/android/settings_ext/MiuiSmartCoverSettingsFragment;->a(Lcom/android/settings_ext/MiuiSmartCoverSettingsFragment;)Lmiui/preference/RadioButtonPreference;
 
     move-result-object v1
 
     invoke-virtual {v1, v2}, Lmiui/preference/RadioButtonPreference;->setEnabled(Z)V
 
     .line 54
-    iget-object v1, p0, Lcom/android/settings/eH;->si:Lcom/android/settings/MiuiSmartCoverSettingsFragment;
+    iget-object v1, p0, Lcom/android/settings_ext/eH;->si:Lcom/android/settings_ext/MiuiSmartCoverSettingsFragment;
 
-    invoke-static {v1}, Lcom/android/settings/MiuiSmartCoverSettingsFragment;->b(Lcom/android/settings/MiuiSmartCoverSettingsFragment;)Lmiui/preference/RadioButtonPreference;
+    invoke-static {v1}, Lcom/android/settings_ext/MiuiSmartCoverSettingsFragment;->b(Lcom/android/settings_ext/MiuiSmartCoverSettingsFragment;)Lmiui/preference/RadioButtonPreference;
 
     move-result-object v1
 
@@ -63,27 +63,27 @@
 
     .line 59
     :goto_0
-    iget-object v1, p0, Lcom/android/settings/eH;->si:Lcom/android/settings/MiuiSmartCoverSettingsFragment;
+    iget-object v1, p0, Lcom/android/settings_ext/eH;->si:Lcom/android/settings_ext/MiuiSmartCoverSettingsFragment;
 
-    invoke-static {v1, v0}, Lcom/android/settings/MiuiSmartCoverSettingsFragment;->a(Lcom/android/settings/MiuiSmartCoverSettingsFragment;Z)V
+    invoke-static {v1, v0}, Lcom/android/settings_ext/MiuiSmartCoverSettingsFragment;->a(Lcom/android/settings_ext/MiuiSmartCoverSettingsFragment;Z)V
 
     .line 60
     return v2
 
     .line 56
     :cond_0
-    iget-object v1, p0, Lcom/android/settings/eH;->si:Lcom/android/settings/MiuiSmartCoverSettingsFragment;
+    iget-object v1, p0, Lcom/android/settings_ext/eH;->si:Lcom/android/settings_ext/MiuiSmartCoverSettingsFragment;
 
-    invoke-static {v1}, Lcom/android/settings/MiuiSmartCoverSettingsFragment;->a(Lcom/android/settings/MiuiSmartCoverSettingsFragment;)Lmiui/preference/RadioButtonPreference;
+    invoke-static {v1}, Lcom/android/settings_ext/MiuiSmartCoverSettingsFragment;->a(Lcom/android/settings_ext/MiuiSmartCoverSettingsFragment;)Lmiui/preference/RadioButtonPreference;
 
     move-result-object v1
 
     invoke-virtual {v1, v3}, Lmiui/preference/RadioButtonPreference;->setEnabled(Z)V
 
     .line 57
-    iget-object v1, p0, Lcom/android/settings/eH;->si:Lcom/android/settings/MiuiSmartCoverSettingsFragment;
+    iget-object v1, p0, Lcom/android/settings_ext/eH;->si:Lcom/android/settings_ext/MiuiSmartCoverSettingsFragment;
 
-    invoke-static {v1}, Lcom/android/settings/MiuiSmartCoverSettingsFragment;->b(Lcom/android/settings/MiuiSmartCoverSettingsFragment;)Lmiui/preference/RadioButtonPreference;
+    invoke-static {v1}, Lcom/android/settings_ext/MiuiSmartCoverSettingsFragment;->b(Lcom/android/settings_ext/MiuiSmartCoverSettingsFragment;)Lmiui/preference/RadioButtonPreference;
 
     move-result-object v1
 

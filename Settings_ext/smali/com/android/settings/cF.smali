@@ -1,4 +1,4 @@
-.class public Lcom/android/settings/cF;
+.class public Lcom/android/settings_ext/cF;
 .super Ljava/lang/Object;
 .source "HelpUtils.java"
 
@@ -15,18 +15,18 @@
 
     .prologue
     .line 36
-    const-class v0, Lcom/android/settings/cF;
+    const-class v0, Lcom/android/settings_ext/cF;
 
     invoke-virtual {v0}, Ljava/lang/Class;->getName()Ljava/lang/String;
 
     move-result-object v0
 
-    sput-object v0, Lcom/android/settings/cF;->TAG:Ljava/lang/String;
+    sput-object v0, Lcom/android/settings_ext/cF;->TAG:Ljava/lang/String;
 
     .line 51
     const/4 v0, 0x0
 
-    sput-object v0, Lcom/android/settings/cF;->mr:Ljava/lang/String;
+    sput-object v0, Lcom/android/settings_ext/cF;->mr:Ljava/lang/String;
 
     return-void
 .end method
@@ -64,7 +64,7 @@
     invoke-virtual {v1, v0, v2}, Landroid/net/Uri$Builder;->appendQueryParameter(Ljava/lang/String;Ljava/lang/String;)Landroid/net/Uri$Builder;
 
     .line 126
-    sget-object v0, Lcom/android/settings/cF;->mr:Ljava/lang/String;
+    sget-object v0, Lcom/android/settings_ext/cF;->mr:Ljava/lang/String;
 
     if-nez v0, :cond_0
 
@@ -91,12 +91,12 @@
 
     move-result-object v0
 
-    sput-object v0, Lcom/android/settings/cF;->mr:Ljava/lang/String;
+    sput-object v0, Lcom/android/settings_ext/cF;->mr:Ljava/lang/String;
 
     .line 135
     const-string v0, "version"
 
-    sget-object v2, Lcom/android/settings/cF;->mr:Ljava/lang/String;
+    sget-object v2, Lcom/android/settings_ext/cF;->mr:Ljava/lang/String;
 
     invoke-virtual {v1, v0, v2}, Landroid/net/Uri$Builder;->appendQueryParameter(Ljava/lang/String;Ljava/lang/String;)Landroid/net/Uri$Builder;
     :try_end_0
@@ -115,7 +115,7 @@
     move-exception v0
 
     .line 139
-    sget-object v2, Lcom/android/settings/cF;->TAG:Ljava/lang/String;
+    sget-object v2, Lcom/android/settings_ext/cF;->TAG:Ljava/lang/String;
 
     const-string v3, "Invalid package name for context"
 
@@ -127,7 +127,7 @@
     :cond_0
     const-string v0, "version"
 
-    sget-object v2, Lcom/android/settings/cF;->mr:Ljava/lang/String;
+    sget-object v2, Lcom/android/settings_ext/cF;->mr:Ljava/lang/String;
 
     invoke-virtual {v1, v0, v2}, Landroid/net/Uri$Builder;->appendQueryParameter(Ljava/lang/String;Ljava/lang/String;)Landroid/net/Uri$Builder;
 
@@ -162,7 +162,7 @@
 
     move-result-object v2
 
-    invoke-static {p0, v2}, Lcom/android/settings/cF;->a(Landroid/content/Context;Landroid/net/Uri;)Landroid/net/Uri;
+    invoke-static {p0, v2}, Lcom/android/settings_ext/cF;->a(Landroid/content/Context;Landroid/net/Uri;)Landroid/net/Uri;
 
     move-result-object v2
 

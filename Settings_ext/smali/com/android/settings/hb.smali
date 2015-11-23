@@ -1,4 +1,4 @@
-.class Lcom/android/settings/hb;
+.class Lcom/android/settings_ext/hb;
 .super Ljava/lang/Object;
 .source "UsageAccessSettings.java"
 
@@ -24,12 +24,12 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 62
-    iput-object p1, p0, Lcom/android/settings/hb;->packageName:Ljava/lang/String;
+    iput-object p1, p0, Lcom/android/settings_ext/hb;->packageName:Ljava/lang/String;
 
     .line 63
     const/4 v0, 0x3
 
-    iput v0, p0, Lcom/android/settings/hb;->zf:I
+    iput v0, p0, Lcom/android/settings_ext/hb;->zf:I
 
     .line 64
     return-void

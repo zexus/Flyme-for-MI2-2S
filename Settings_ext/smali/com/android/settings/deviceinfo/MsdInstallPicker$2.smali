@@ -1,4 +1,4 @@
-.class Lcom/android/settings/deviceinfo/MsdInstallPicker$2;
+.class Lcom/android/settings_ext/deviceinfo/MsdInstallPicker$2;
 .super Ljava/lang/Object;
 .source "MsdInstallPicker.java"
 
@@ -7,16 +7,16 @@
 
 
 # instance fields
-.field final synthetic SK:Lcom/android/settings/deviceinfo/MsdInstallPicker;
+.field final synthetic SK:Lcom/android/settings_ext/deviceinfo/MsdInstallPicker;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/deviceinfo/MsdInstallPicker;)V
+.method constructor <init>(Lcom/android/settings_ext/deviceinfo/MsdInstallPicker;)V
     .locals 0
 
     .prologue
     .line 53
-    iput-object p1, p0, Lcom/android/settings/deviceinfo/MsdInstallPicker$2;->SK:Lcom/android/settings/deviceinfo/MsdInstallPicker;
+    iput-object p1, p0, Lcom/android/settings_ext/deviceinfo/MsdInstallPicker$2;->SK:Lcom/android/settings_ext/deviceinfo/MsdInstallPicker;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -35,26 +35,26 @@
     move v0, v1
 
     :goto_0
-    iget-object v2, p0, Lcom/android/settings/deviceinfo/MsdInstallPicker$2;->SK:Lcom/android/settings/deviceinfo/MsdInstallPicker;
+    iget-object v2, p0, Lcom/android/settings_ext/deviceinfo/MsdInstallPicker$2;->SK:Lcom/android/settings_ext/deviceinfo/MsdInstallPicker;
 
-    invoke-static {v2}, Lcom/android/settings/deviceinfo/MsdInstallPicker;->a(Lcom/android/settings/deviceinfo/MsdInstallPicker;)Lcom/android/settings/deviceinfo/MsdInstallPicker$MyAdapter;
+    invoke-static {v2}, Lcom/android/settings_ext/deviceinfo/MsdInstallPicker;->a(Lcom/android/settings_ext/deviceinfo/MsdInstallPicker;)Lcom/android/settings_ext/deviceinfo/MsdInstallPicker$MyAdapter;
 
     move-result-object v2
 
-    invoke-virtual {v2}, Lcom/android/settings/deviceinfo/MsdInstallPicker$MyAdapter;->getCount()I
+    invoke-virtual {v2}, Lcom/android/settings_ext/deviceinfo/MsdInstallPicker$MyAdapter;->getCount()I
 
     move-result v2
 
     if-ge v0, v2, :cond_1
 
     .line 57
-    iget-object v2, p0, Lcom/android/settings/deviceinfo/MsdInstallPicker$2;->SK:Lcom/android/settings/deviceinfo/MsdInstallPicker;
+    iget-object v2, p0, Lcom/android/settings_ext/deviceinfo/MsdInstallPicker$2;->SK:Lcom/android/settings_ext/deviceinfo/MsdInstallPicker;
 
-    invoke-static {v2}, Lcom/android/settings/deviceinfo/MsdInstallPicker;->a(Lcom/android/settings/deviceinfo/MsdInstallPicker;)Lcom/android/settings/deviceinfo/MsdInstallPicker$MyAdapter;
+    invoke-static {v2}, Lcom/android/settings_ext/deviceinfo/MsdInstallPicker;->a(Lcom/android/settings_ext/deviceinfo/MsdInstallPicker;)Lcom/android/settings_ext/deviceinfo/MsdInstallPicker$MyAdapter;
 
     move-result-object v2
 
-    invoke-virtual {v2, v0}, Lcom/android/settings/deviceinfo/MsdInstallPicker$MyAdapter;->bl(I)Lcom/android/settings/deviceinfo/MsdInstallPicker$Holder;
+    invoke-virtual {v2, v0}, Lcom/android/settings_ext/deviceinfo/MsdInstallPicker$MyAdapter;->bl(I)Lcom/android/settings_ext/deviceinfo/MsdInstallPicker$Holder;
 
     move-result-object v3
 
@@ -63,7 +63,7 @@
     const/4 v2, 0x1
 
     :goto_1
-    iput-boolean v2, v3, Lcom/android/settings/deviceinfo/MsdInstallPicker$Holder;->SL:Z
+    iput-boolean v2, v3, Lcom/android/settings_ext/deviceinfo/MsdInstallPicker$Holder;->SL:Z
 
     .line 56
     add-int/lit8 v0, v0, 0x1
@@ -78,20 +78,20 @@
 
     .line 59
     :cond_1
-    iget-object v0, p0, Lcom/android/settings/deviceinfo/MsdInstallPicker$2;->SK:Lcom/android/settings/deviceinfo/MsdInstallPicker;
+    iget-object v0, p0, Lcom/android/settings_ext/deviceinfo/MsdInstallPicker$2;->SK:Lcom/android/settings_ext/deviceinfo/MsdInstallPicker;
 
-    invoke-static {v0}, Lcom/android/settings/deviceinfo/MsdInstallPicker;->a(Lcom/android/settings/deviceinfo/MsdInstallPicker;)Lcom/android/settings/deviceinfo/MsdInstallPicker$MyAdapter;
+    invoke-static {v0}, Lcom/android/settings_ext/deviceinfo/MsdInstallPicker;->a(Lcom/android/settings_ext/deviceinfo/MsdInstallPicker;)Lcom/android/settings_ext/deviceinfo/MsdInstallPicker$MyAdapter;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/android/settings/deviceinfo/MsdInstallPicker$MyAdapter;->notifyDataSetChanged()V
+    invoke-virtual {v0}, Lcom/android/settings_ext/deviceinfo/MsdInstallPicker$MyAdapter;->notifyDataSetChanged()V
 
     .line 60
     new-instance v0, Landroid/content/Intent;
 
-    iget-object v2, p0, Lcom/android/settings/deviceinfo/MsdInstallPicker$2;->SK:Lcom/android/settings/deviceinfo/MsdInstallPicker;
+    iget-object v2, p0, Lcom/android/settings_ext/deviceinfo/MsdInstallPicker$2;->SK:Lcom/android/settings_ext/deviceinfo/MsdInstallPicker;
 
-    const-class v3, Lcom/android/settings/deviceinfo/MsdInstallActivity;
+    const-class v3, Lcom/android/settings_ext/deviceinfo/MsdInstallActivity;
 
     invoke-direct {v0, v2, v3}, Landroid/content/Intent;-><init>(Landroid/content/Context;Ljava/lang/Class;)V
 
@@ -101,9 +101,9 @@
     invoke-virtual {v0, v2, p3}, Landroid/content/Intent;->putExtra(Ljava/lang/String;I)Landroid/content/Intent;
 
     .line 62
-    iget-object v2, p0, Lcom/android/settings/deviceinfo/MsdInstallPicker$2;->SK:Lcom/android/settings/deviceinfo/MsdInstallPicker;
+    iget-object v2, p0, Lcom/android/settings_ext/deviceinfo/MsdInstallPicker$2;->SK:Lcom/android/settings_ext/deviceinfo/MsdInstallPicker;
 
-    invoke-virtual {v2, v0, v1}, Lcom/android/settings/deviceinfo/MsdInstallPicker;->startActivityForResult(Landroid/content/Intent;I)V
+    invoke-virtual {v2, v0, v1}, Lcom/android/settings_ext/deviceinfo/MsdInstallPicker;->startActivityForResult(Landroid/content/Intent;I)V
 
     .line 63
     return-void

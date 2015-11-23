@@ -1,4 +1,4 @@
-.class abstract Lcom/android/settings/A;
+.class abstract Lcom/android/settings_ext/A;
 .super Ljava/lang/Object;
 .source "ApkIconLoader.java"
 
@@ -18,26 +18,26 @@
     return-void
 .end method
 
-.method synthetic constructor <init>(Lcom/android/settings/x;)V
+.method synthetic constructor <init>(Lcom/android/settings_ext/x;)V
     .locals 0
 
     .prologue
     .line 40
-    invoke-direct {p0}, Lcom/android/settings/A;-><init>()V
+    invoke-direct {p0}, Lcom/android/settings_ext/A;-><init>()V
 
     return-void
 .end method
 
-.method public static B()Lcom/android/settings/A;
+.method public static B()Lcom/android/settings_ext/A;
     .locals 2
 
     .prologue
     .line 50
-    new-instance v0, Lcom/android/settings/y;
+    new-instance v0, Lcom/android/settings_ext/y;
 
     const/4 v1, 0x0
 
-    invoke-direct {v0, v1}, Lcom/android/settings/y;-><init>(Lcom/android/settings/x;)V
+    invoke-direct {v0, v1}, Lcom/android/settings_ext/y;-><init>(Lcom/android/settings_ext/x;)V
 
     return-object v0
 .end method

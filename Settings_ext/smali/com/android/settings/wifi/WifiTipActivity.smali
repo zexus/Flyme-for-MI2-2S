@@ -1,4 +1,4 @@
-.class public Lcom/android/settings/wifi/WifiTipActivity;
+.class public Lcom/android/settings_ext/wifi/WifiTipActivity;
 .super Lmiui/app/Activity;
 .source "WifiTipActivity.java"
 
@@ -18,12 +18,12 @@
     return-void
 .end method
 
-.method static synthetic a(Lcom/android/settings/wifi/WifiTipActivity;)I
+.method static synthetic a(Lcom/android/settings_ext/wifi/WifiTipActivity;)I
     .locals 1
 
     .prologue
     .line 15
-    iget v0, p0, Lcom/android/settings/wifi/WifiTipActivity;->uc:I
+    iget v0, p0, Lcom/android/settings_ext/wifi/WifiTipActivity;->uc:I
 
     return v0
 .end method
@@ -91,7 +91,7 @@
     const-string v0, ""
 
     .line 85
-    iget v1, p0, Lcom/android/settings/wifi/WifiTipActivity;->uc:I
+    iget v1, p0, Lcom/android/settings_ext/wifi/WifiTipActivity;->uc:I
 
     packed-switch v1, :pswitch_data_0
 
@@ -103,7 +103,7 @@
     :pswitch_0
     const v0, 0x7f090dfb
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/wifi/WifiTipActivity;->getString(I)Ljava/lang/String;
+    invoke-virtual {p0, v0}, Lcom/android/settings_ext/wifi/WifiTipActivity;->getString(I)Ljava/lang/String;
 
     move-result-object v0
 
@@ -113,7 +113,7 @@
     :pswitch_1
     const v0, 0x7f090e00
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/wifi/WifiTipActivity;->getString(I)Ljava/lang/String;
+    invoke-virtual {p0, v0}, Lcom/android/settings_ext/wifi/WifiTipActivity;->getString(I)Ljava/lang/String;
 
     move-result-object v0
 
@@ -142,14 +142,14 @@
     invoke-virtual {v0, v1}, Lmiui/app/AlertDialog$Builder;->setCancelable(Z)Lmiui/app/AlertDialog$Builder;
 
     .line 37
-    invoke-direct {p0}, Lcom/android/settings/wifi/WifiTipActivity;->vO()Ljava/lang/String;
+    invoke-direct {p0}, Lcom/android/settings_ext/wifi/WifiTipActivity;->vO()Ljava/lang/String;
 
     move-result-object v1
 
     invoke-virtual {v0, v1}, Lmiui/app/AlertDialog$Builder;->setTitle(Ljava/lang/CharSequence;)Lmiui/app/AlertDialog$Builder;
 
     .line 38
-    invoke-direct {p0}, Lcom/android/settings/wifi/WifiTipActivity;->getMessage()Ljava/lang/String;
+    invoke-direct {p0}, Lcom/android/settings_ext/wifi/WifiTipActivity;->getMessage()Ljava/lang/String;
 
     move-result-object v1
 
@@ -158,31 +158,31 @@
     .line 39
     const/4 v1, 0x1
 
-    invoke-direct {p0}, Lcom/android/settings/wifi/WifiTipActivity;->vP()Ljava/lang/String;
+    invoke-direct {p0}, Lcom/android/settings_ext/wifi/WifiTipActivity;->vP()Ljava/lang/String;
 
     move-result-object v2
 
     invoke-virtual {v0, v1, v2}, Lmiui/app/AlertDialog$Builder;->setCheckBox(ZLjava/lang/CharSequence;)Lmiui/app/AlertDialog$Builder;
 
     .line 40
-    invoke-direct {p0}, Lcom/android/settings/wifi/WifiTipActivity;->vQ()Ljava/lang/String;
+    invoke-direct {p0}, Lcom/android/settings_ext/wifi/WifiTipActivity;->vQ()Ljava/lang/String;
 
     move-result-object v1
 
-    new-instance v2, Lcom/android/settings/wifi/aQ;
+    new-instance v2, Lcom/android/settings_ext/wifi/aQ;
 
-    invoke-direct {v2, p0}, Lcom/android/settings/wifi/aQ;-><init>(Lcom/android/settings/wifi/WifiTipActivity;)V
+    invoke-direct {v2, p0}, Lcom/android/settings_ext/wifi/aQ;-><init>(Lcom/android/settings_ext/wifi/WifiTipActivity;)V
 
     invoke-virtual {v0, v1, v2}, Lmiui/app/AlertDialog$Builder;->setNegativeButton(Ljava/lang/CharSequence;Landroid/content/DialogInterface$OnClickListener;)Lmiui/app/AlertDialog$Builder;
 
     .line 53
-    invoke-direct {p0}, Lcom/android/settings/wifi/WifiTipActivity;->vR()Ljava/lang/String;
+    invoke-direct {p0}, Lcom/android/settings_ext/wifi/WifiTipActivity;->vR()Ljava/lang/String;
 
     move-result-object v1
 
-    new-instance v2, Lcom/android/settings/wifi/aR;
+    new-instance v2, Lcom/android/settings_ext/wifi/aR;
 
-    invoke-direct {v2, p0}, Lcom/android/settings/wifi/aR;-><init>(Lcom/android/settings/wifi/WifiTipActivity;)V
+    invoke-direct {v2, p0}, Lcom/android/settings_ext/wifi/aR;-><init>(Lcom/android/settings_ext/wifi/WifiTipActivity;)V
 
     invoke-virtual {v0, v1, v2}, Lmiui/app/AlertDialog$Builder;->setPositiveButton(Ljava/lang/CharSequence;Landroid/content/DialogInterface$OnClickListener;)Lmiui/app/AlertDialog$Builder;
 
@@ -205,7 +205,7 @@
     const-string v0, ""
 
     .line 72
-    iget v1, p0, Lcom/android/settings/wifi/WifiTipActivity;->uc:I
+    iget v1, p0, Lcom/android/settings_ext/wifi/WifiTipActivity;->uc:I
 
     packed-switch v1, :pswitch_data_0
 
@@ -217,7 +217,7 @@
     :pswitch_0
     const v0, 0x7f090dfa
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/wifi/WifiTipActivity;->getString(I)Ljava/lang/String;
+    invoke-virtual {p0, v0}, Lcom/android/settings_ext/wifi/WifiTipActivity;->getString(I)Ljava/lang/String;
 
     move-result-object v0
 
@@ -227,7 +227,7 @@
     :pswitch_1
     const v0, 0x7f090dff
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/wifi/WifiTipActivity;->getString(I)Ljava/lang/String;
+    invoke-virtual {p0, v0}, Lcom/android/settings_ext/wifi/WifiTipActivity;->getString(I)Ljava/lang/String;
 
     move-result-object v0
 
@@ -249,7 +249,7 @@
     const-string v0, ""
 
     .line 98
-    iget v1, p0, Lcom/android/settings/wifi/WifiTipActivity;->uc:I
+    iget v1, p0, Lcom/android/settings_ext/wifi/WifiTipActivity;->uc:I
 
     packed-switch v1, :pswitch_data_0
 
@@ -261,7 +261,7 @@
     :pswitch_0
     const v0, 0x7f090dfc
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/wifi/WifiTipActivity;->getString(I)Ljava/lang/String;
+    invoke-virtual {p0, v0}, Lcom/android/settings_ext/wifi/WifiTipActivity;->getString(I)Ljava/lang/String;
 
     move-result-object v0
 
@@ -271,7 +271,7 @@
     :pswitch_1
     const v0, 0x7f090e01
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/wifi/WifiTipActivity;->getString(I)Ljava/lang/String;
+    invoke-virtual {p0, v0}, Lcom/android/settings_ext/wifi/WifiTipActivity;->getString(I)Ljava/lang/String;
 
     move-result-object v0
 
@@ -293,7 +293,7 @@
     const-string v0, ""
 
     .line 111
-    iget v1, p0, Lcom/android/settings/wifi/WifiTipActivity;->uc:I
+    iget v1, p0, Lcom/android/settings_ext/wifi/WifiTipActivity;->uc:I
 
     packed-switch v1, :pswitch_data_0
 
@@ -305,7 +305,7 @@
     :pswitch_0
     const v0, 0x7f090dfd
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/wifi/WifiTipActivity;->getString(I)Ljava/lang/String;
+    invoke-virtual {p0, v0}, Lcom/android/settings_ext/wifi/WifiTipActivity;->getString(I)Ljava/lang/String;
 
     move-result-object v0
 
@@ -315,7 +315,7 @@
     :pswitch_1
     const v0, 0x7f090e02
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/wifi/WifiTipActivity;->getString(I)Ljava/lang/String;
+    invoke-virtual {p0, v0}, Lcom/android/settings_ext/wifi/WifiTipActivity;->getString(I)Ljava/lang/String;
 
     move-result-object v0
 
@@ -337,7 +337,7 @@
     const-string v0, ""
 
     .line 124
-    iget v1, p0, Lcom/android/settings/wifi/WifiTipActivity;->uc:I
+    iget v1, p0, Lcom/android/settings_ext/wifi/WifiTipActivity;->uc:I
 
     packed-switch v1, :pswitch_data_0
 
@@ -349,7 +349,7 @@
     :pswitch_0
     const v0, 0x7f090dfe
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/wifi/WifiTipActivity;->getString(I)Ljava/lang/String;
+    invoke-virtual {p0, v0}, Lcom/android/settings_ext/wifi/WifiTipActivity;->getString(I)Ljava/lang/String;
 
     move-result-object v0
 
@@ -359,7 +359,7 @@
     :pswitch_1
     const v0, 0x7f090e03
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/wifi/WifiTipActivity;->getString(I)Ljava/lang/String;
+    invoke-virtual {p0, v0}, Lcom/android/settings_ext/wifi/WifiTipActivity;->getString(I)Ljava/lang/String;
 
     move-result-object v0
 
@@ -409,7 +409,7 @@
     invoke-super {p0, p1}, Lmiui/app/Activity;->onCreate(Landroid/os/Bundle;)V
 
     .line 30
-    invoke-virtual {p0}, Lcom/android/settings/wifi/WifiTipActivity;->getIntent()Landroid/content/Intent;
+    invoke-virtual {p0}, Lcom/android/settings_ext/wifi/WifiTipActivity;->getIntent()Landroid/content/Intent;
 
     move-result-object v0
 
@@ -421,10 +421,10 @@
 
     move-result v0
 
-    iput v0, p0, Lcom/android/settings/wifi/WifiTipActivity;->uc:I
+    iput v0, p0, Lcom/android/settings_ext/wifi/WifiTipActivity;->uc:I
 
     .line 31
-    invoke-direct {p0}, Lcom/android/settings/wifi/WifiTipActivity;->vN()V
+    invoke-direct {p0}, Lcom/android/settings_ext/wifi/WifiTipActivity;->vN()V
 
     .line 32
     return-void

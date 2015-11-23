@@ -1,4 +1,4 @@
-.class public Lcom/android/settings/deviceinfo/LockDeviceReceiver;
+.class public Lcom/android/settings_ext/deviceinfo/LockDeviceReceiver;
 .super Landroid/content/BroadcastReceiver;
 .source "LockDeviceReceiver.java"
 
@@ -163,7 +163,7 @@
 
     if-eqz v0, :cond_2
 
-    invoke-static {p0}, Lcom/android/settings/deviceinfo/LockDeviceReceiver;->isFindDeviceEnabled(Landroid/content/Context;)Z
+    invoke-static {p0}, Lcom/android/settings_ext/deviceinfo/LockDeviceReceiver;->isFindDeviceEnabled(Landroid/content/Context;)Z
 
     move-result v0
 
@@ -242,7 +242,7 @@
 
     .prologue
     .line 115
-    iget-object v0, p0, Lcom/android/settings/deviceinfo/LockDeviceReceiver;->LV:Lcom/android/internal/widget/ILockSettings;
+    iget-object v0, p0, Lcom/android/settings_ext/deviceinfo/LockDeviceReceiver;->LV:Lcom/android/internal/widget/ILockSettings;
 
     if-nez v0, :cond_0
 
@@ -257,16 +257,16 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/deviceinfo/LockDeviceReceiver;->LV:Lcom/android/internal/widget/ILockSettings;
+    iput-object v0, p0, Lcom/android/settings_ext/deviceinfo/LockDeviceReceiver;->LV:Lcom/android/internal/widget/ILockSettings;
 
     .line 119
     :cond_0
-    iget-object v0, p0, Lcom/android/settings/deviceinfo/LockDeviceReceiver;->LV:Lcom/android/internal/widget/ILockSettings;
+    iget-object v0, p0, Lcom/android/settings_ext/deviceinfo/LockDeviceReceiver;->LV:Lcom/android/internal/widget/ILockSettings;
 
     return-object v0
 .end method
 
-.method private nU()Lcom/android/settings/deviceinfo/LockDeviceUtils;
+.method private nU()Lcom/android/settings_ext/deviceinfo/LockDeviceUtils;
     .locals 1
 
     .prologue
@@ -286,7 +286,7 @@
 
     move-result-object v0
 
-    check-cast v0, Lcom/android/settings/deviceinfo/LockDeviceUtils;
+    check-cast v0, Lcom/android/settings_ext/deviceinfo/LockDeviceUtils;
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 
@@ -300,9 +300,9 @@
 
     .line 101
     :cond_0
-    new-instance v0, Lcom/android/settings/deviceinfo/LockDeviceUtils;
+    new-instance v0, Lcom/android/settings_ext/deviceinfo/LockDeviceUtils;
 
-    invoke-direct {v0}, Lcom/android/settings/deviceinfo/LockDeviceUtils;-><init>()V
+    invoke-direct {v0}, Lcom/android/settings_ext/deviceinfo/LockDeviceUtils;-><init>()V
 
     goto :goto_0
 .end method
@@ -342,7 +342,7 @@
     move-result-wide v0
 
     .line 109
-    invoke-direct {p0}, Lcom/android/settings/deviceinfo/LockDeviceReceiver;->ka()Lcom/android/internal/widget/ILockSettings;
+    invoke-direct {p0}, Lcom/android/settings_ext/deviceinfo/LockDeviceReceiver;->ka()Lcom/android/internal/widget/ILockSettings;
 
     move-result-object v2
 
@@ -400,17 +400,17 @@
 
     if-eqz v1, :cond_2
 
-    invoke-static {p1}, Lcom/android/settings/t;->b(Landroid/content/Context;)Z
+    invoke-static {p1}, Lcom/android/settings_ext/t;->b(Landroid/content/Context;)Z
 
     move-result v1
 
     if-nez v1, :cond_2
 
     .line 53
-    invoke-direct {p0, p1}, Lcom/android/settings/deviceinfo/LockDeviceReceiver;->as(Landroid/content/Context;)V
+    invoke-direct {p0, p1}, Lcom/android/settings_ext/deviceinfo/LockDeviceReceiver;->as(Landroid/content/Context;)V
 
     .line 54
-    invoke-static {p1}, Lcom/android/settings/deviceinfo/LockDeviceReceiver;->au(Landroid/content/Context;)V
+    invoke-static {p1}, Lcom/android/settings_ext/deviceinfo/LockDeviceReceiver;->au(Landroid/content/Context;)V
 
     goto :goto_0
 
@@ -457,10 +457,10 @@
     invoke-virtual {v2, v3}, Lcom/android/internal/widget/LockPatternUtils;->clearLock(Z)V
 
     .line 66
-    invoke-direct {p0, p1, v1}, Lcom/android/settings/deviceinfo/LockDeviceReceiver;->q(Landroid/content/Context;Ljava/lang/String;)V
+    invoke-direct {p0, p1, v1}, Lcom/android/settings_ext/deviceinfo/LockDeviceReceiver;->q(Landroid/content/Context;Ljava/lang/String;)V
 
     .line 67
-    invoke-direct {p0}, Lcom/android/settings/deviceinfo/LockDeviceReceiver;->ka()Lcom/android/internal/widget/ILockSettings;
+    invoke-direct {p0}, Lcom/android/settings_ext/deviceinfo/LockDeviceReceiver;->ka()Lcom/android/internal/widget/ILockSettings;
 
     move-result-object v1
 
@@ -473,7 +473,7 @@
     invoke-interface {v1, v0, v2}, Lcom/android/internal/widget/ILockSettings;->setRawLockPassword([BI)V
 
     .line 68
-    invoke-direct {p0}, Lcom/android/settings/deviceinfo/LockDeviceReceiver;->ka()Lcom/android/internal/widget/ILockSettings;
+    invoke-direct {p0}, Lcom/android/settings_ext/deviceinfo/LockDeviceReceiver;->ka()Lcom/android/internal/widget/ILockSettings;
 
     move-result-object v0
 
@@ -486,7 +486,7 @@
     invoke-interface {v0, v1, v2, v3, v4}, Lcom/android/internal/widget/ILockSettings;->setLong(Ljava/lang/String;JI)V
 
     .line 69
-    invoke-direct {p0}, Lcom/android/settings/deviceinfo/LockDeviceReceiver;->ka()Lcom/android/internal/widget/ILockSettings;
+    invoke-direct {p0}, Lcom/android/settings_ext/deviceinfo/LockDeviceReceiver;->ka()Lcom/android/internal/widget/ILockSettings;
 
     move-result-object v0
 
@@ -525,11 +525,11 @@
     .line 78
     :cond_3
     :goto_1
-    invoke-direct {p0}, Lcom/android/settings/deviceinfo/LockDeviceReceiver;->nU()Lcom/android/settings/deviceinfo/LockDeviceUtils;
+    invoke-direct {p0}, Lcom/android/settings_ext/deviceinfo/LockDeviceReceiver;->nU()Lcom/android/settings_ext/deviceinfo/LockDeviceUtils;
 
     move-result-object v0
 
-    invoke-virtual {v0, p1}, Lcom/android/settings/deviceinfo/LockDeviceUtils;->av(Landroid/content/Context;)V
+    invoke-virtual {v0, p1}, Lcom/android/settings_ext/deviceinfo/LockDeviceUtils;->av(Landroid/content/Context;)V
 
     goto :goto_0
 
@@ -575,10 +575,10 @@
 
     .line 83
     :cond_5
-    invoke-static {p1}, Lcom/android/settings/deviceinfo/LockDeviceReceiver;->au(Landroid/content/Context;)V
+    invoke-static {p1}, Lcom/android/settings_ext/deviceinfo/LockDeviceReceiver;->au(Landroid/content/Context;)V
 
     .line 84
-    invoke-direct {p0, p1}, Lcom/android/settings/deviceinfo/LockDeviceReceiver;->at(Landroid/content/Context;)V
+    invoke-direct {p0, p1}, Lcom/android/settings_ext/deviceinfo/LockDeviceReceiver;->at(Landroid/content/Context;)V
 
     goto/16 :goto_0
 
@@ -600,11 +600,11 @@
     move-result v0
 
     .line 87
-    invoke-direct {p0}, Lcom/android/settings/deviceinfo/LockDeviceReceiver;->nU()Lcom/android/settings/deviceinfo/LockDeviceUtils;
+    invoke-direct {p0}, Lcom/android/settings_ext/deviceinfo/LockDeviceReceiver;->nU()Lcom/android/settings_ext/deviceinfo/LockDeviceUtils;
 
     move-result-object v1
 
-    invoke-virtual {v1, p1, v0}, Lcom/android/settings/deviceinfo/LockDeviceUtils;->k(Landroid/content/Context;Z)V
+    invoke-virtual {v1, p1, v0}, Lcom/android/settings_ext/deviceinfo/LockDeviceUtils;->k(Landroid/content/Context;Z)V
 
     goto/16 :goto_0
 

@@ -1,4 +1,4 @@
-.class Lcom/android/settings/inputmethod/SpellCheckersSettings$3;
+.class Lcom/android/settings_ext/inputmethod/SpellCheckersSettings$3;
 .super Ljava/lang/Object;
 .source "SpellCheckersSettings.java"
 
@@ -7,16 +7,16 @@
 
 
 # instance fields
-.field final synthetic abY:Lcom/android/settings/inputmethod/SpellCheckersSettings;
+.field final synthetic abY:Lcom/android/settings_ext/inputmethod/SpellCheckersSettings;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/inputmethod/SpellCheckersSettings;)V
+.method constructor <init>(Lcom/android/settings_ext/inputmethod/SpellCheckersSettings;)V
     .locals 0
 
     .prologue
     .line 225
-    iput-object p1, p0, Lcom/android/settings/inputmethod/SpellCheckersSettings$3;->abY:Lcom/android/settings/inputmethod/SpellCheckersSettings;
+    iput-object p1, p0, Lcom/android/settings_ext/inputmethod/SpellCheckersSettings$3;->abY:Lcom/android/settings_ext/inputmethod/SpellCheckersSettings;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 

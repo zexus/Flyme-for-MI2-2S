@@ -1,4 +1,4 @@
-.class public Lcom/android/settings/cloud/ConnectivityChangeReceiver;
+.class public Lcom/android/settings_ext/cloud/ConnectivityChangeReceiver;
 .super Landroid/content/BroadcastReceiver;
 .source "ConnectivityChangeReceiver.java"
 
@@ -24,7 +24,7 @@
     .line 20
     const/4 v0, 0x0
 
-    iput-object v0, p0, Lcom/android/settings/cloud/ConnectivityChangeReceiver;->mContext:Landroid/content/Context;
+    iput-object v0, p0, Lcom/android/settings_ext/cloud/ConnectivityChangeReceiver;->mContext:Landroid/content/Context;
 
     return-void
 .end method
@@ -38,7 +38,7 @@
     .line 80
     new-instance v0, Landroid/content/Intent;
 
-    const-class v1, Lcom/android/settings/cloud/CloudSettingsService;
+    const-class v1, Lcom/android/settings_ext/cloud/CloudSettingsService;
 
     invoke-direct {v0, p2, v1}, Landroid/content/Intent;-><init>(Landroid/content/Context;Ljava/lang/Class;)V
 
@@ -83,7 +83,7 @@
 
     .prologue
     .line 45
-    sget-object v0, Lcom/android/settings/cloud/ConnectivityChangeReceiver;->Pz:Ljava/util/Date;
+    sget-object v0, Lcom/android/settings_ext/cloud/ConnectivityChangeReceiver;->Pz:Ljava/util/Date;
 
     if-eqz v0, :cond_0
 
@@ -97,7 +97,7 @@
 
     move-result-wide v0
 
-    sget-object v2, Lcom/android/settings/cloud/ConnectivityChangeReceiver;->Pz:Ljava/util/Date;
+    sget-object v2, Lcom/android/settings_ext/cloud/ConnectivityChangeReceiver;->Pz:Ljava/util/Date;
 
     invoke-virtual {v2}, Ljava/util/Date;->getTime()J
 
@@ -134,9 +134,9 @@
 
     .prologue
     .line 64
-    iget-object v0, p0, Lcom/android/settings/cloud/ConnectivityChangeReceiver;->mContext:Landroid/content/Context;
+    iget-object v0, p0, Lcom/android/settings_ext/cloud/ConnectivityChangeReceiver;->mContext:Landroid/content/Context;
 
-    invoke-static {v0}, Lcom/android/settings/cloud/a/c;->isWifiConnected(Landroid/content/Context;)Z
+    invoke-static {v0}, Lcom/android/settings_ext/cloud/a/c;->isWifiConnected(Landroid/content/Context;)Z
 
     move-result v0
 
@@ -170,13 +170,13 @@
 
     check-cast v0, Landroid/app/AlarmManager;
 
-    iput-object v0, p0, Lcom/android/settings/cloud/ConnectivityChangeReceiver;->PA:Landroid/app/AlarmManager;
+    iput-object v0, p0, Lcom/android/settings_ext/cloud/ConnectivityChangeReceiver;->PA:Landroid/app/AlarmManager;
 
     .line 27
-    iput-object p1, p0, Lcom/android/settings/cloud/ConnectivityChangeReceiver;->mContext:Landroid/content/Context;
+    iput-object p1, p0, Lcom/android/settings_ext/cloud/ConnectivityChangeReceiver;->mContext:Landroid/content/Context;
 
     .line 29
-    invoke-direct {p0}, Lcom/android/settings/cloud/ConnectivityChangeReceiver;->nw()Z
+    invoke-direct {p0}, Lcom/android/settings_ext/cloud/ConnectivityChangeReceiver;->nw()Z
 
     move-result v0
 
@@ -189,25 +189,25 @@
 
     .line 33
     :cond_1
-    invoke-direct {p0}, Lcom/android/settings/cloud/ConnectivityChangeReceiver;->nx()Z
+    invoke-direct {p0}, Lcom/android/settings_ext/cloud/ConnectivityChangeReceiver;->nx()Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
     .line 34
-    iget-object v0, p0, Lcom/android/settings/cloud/ConnectivityChangeReceiver;->PA:Landroid/app/AlarmManager;
+    iget-object v0, p0, Lcom/android/settings_ext/cloud/ConnectivityChangeReceiver;->PA:Landroid/app/AlarmManager;
 
-    iget-object v1, p0, Lcom/android/settings/cloud/ConnectivityChangeReceiver;->mContext:Landroid/content/Context;
+    iget-object v1, p0, Lcom/android/settings_ext/cloud/ConnectivityChangeReceiver;->mContext:Landroid/content/Context;
 
-    invoke-direct {p0, v0, v1}, Lcom/android/settings/cloud/ConnectivityChangeReceiver;->a(Landroid/app/AlarmManager;Landroid/content/Context;)V
+    invoke-direct {p0, v0, v1}, Lcom/android/settings_ext/cloud/ConnectivityChangeReceiver;->a(Landroid/app/AlarmManager;Landroid/content/Context;)V
 
     .line 35
     new-instance v0, Ljava/util/Date;
 
     invoke-direct {v0}, Ljava/util/Date;-><init>()V
 
-    sput-object v0, Lcom/android/settings/cloud/ConnectivityChangeReceiver;->Pz:Ljava/util/Date;
+    sput-object v0, Lcom/android/settings_ext/cloud/ConnectivityChangeReceiver;->Pz:Ljava/util/Date;
 
     goto :goto_0
 .end method

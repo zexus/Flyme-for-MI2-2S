@@ -1,4 +1,4 @@
-.class Lcom/android/settings/notification/NotificationStation$1;
+.class Lcom/android/settings_ext/notification/NotificationStation$1;
 .super Ljava/lang/Object;
 .source "NotificationStation.java"
 
@@ -7,16 +7,16 @@
 
 
 # instance fields
-.field final synthetic afy:Lcom/android/settings/notification/NotificationStation;
+.field final synthetic afy:Lcom/android/settings_ext/notification/NotificationStation;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/notification/NotificationStation;)V
+.method constructor <init>(Lcom/android/settings_ext/notification/NotificationStation;)V
     .locals 0
 
     .prologue
     .line 77
-    iput-object p1, p0, Lcom/android/settings/notification/NotificationStation$1;->afy:Lcom/android/settings/notification/NotificationStation;
+    iput-object p1, p0, Lcom/android/settings_ext/notification/NotificationStation$1;->afy:Lcom/android/settings_ext/notification/NotificationStation;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -30,9 +30,9 @@
 
     .prologue
     .line 80
-    iget-object v0, p0, Lcom/android/settings/notification/NotificationStation$1;->afy:Lcom/android/settings/notification/NotificationStation;
+    iget-object v0, p0, Lcom/android/settings_ext/notification/NotificationStation$1;->afy:Lcom/android/settings_ext/notification/NotificationStation;
 
-    invoke-static {v0}, Lcom/android/settings/notification/NotificationStation;->a(Lcom/android/settings/notification/NotificationStation;)V
+    invoke-static {v0}, Lcom/android/settings_ext/notification/NotificationStation;->a(Lcom/android/settings_ext/notification/NotificationStation;)V
 
     .line 81
     return-void

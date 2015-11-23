@@ -1,4 +1,4 @@
-.class public Lcom/android/settings/analytics/ObserverService;
+.class public Lcom/android/settings_ext/analytics/ObserverService;
 .super Landroid/app/Service;
 .source "ObserverService.java"
 
@@ -25,7 +25,7 @@
 
     move-result-object v0
 
-    sput-object v0, Lcom/android/settings/analytics/ObserverService;->Cz:Landroid/net/Uri;
+    sput-object v0, Lcom/android/settings_ext/analytics/ObserverService;->Cz:Landroid/net/Uri;
 
     .line 18
     const-string v0, "drive_mode_drive_mode"
@@ -34,7 +34,7 @@
 
     move-result-object v0
 
-    sput-object v0, Lcom/android/settings/analytics/ObserverService;->CA:Landroid/net/Uri;
+    sput-object v0, Lcom/android/settings_ext/analytics/ObserverService;->CA:Landroid/net/Uri;
 
     return-void
 .end method
@@ -47,15 +47,15 @@
     invoke-direct {p0}, Landroid/app/Service;-><init>()V
 
     .line 20
-    new-instance v0, Lcom/android/settings/analytics/a;
+    new-instance v0, Lcom/android/settings_ext/analytics/a;
 
     new-instance v1, Landroid/os/Handler;
 
     invoke-direct {v1}, Landroid/os/Handler;-><init>()V
 
-    invoke-direct {v0, p0, v1}, Lcom/android/settings/analytics/a;-><init>(Lcom/android/settings/analytics/ObserverService;Landroid/os/Handler;)V
+    invoke-direct {v0, p0, v1}, Lcom/android/settings_ext/analytics/a;-><init>(Lcom/android/settings_ext/analytics/ObserverService;Landroid/os/Handler;)V
 
-    iput-object v0, p0, Lcom/android/settings/analytics/ObserverService;->ul:Landroid/database/ContentObserver;
+    iput-object v0, p0, Lcom/android/settings_ext/analytics/ObserverService;->ul:Landroid/database/ContentObserver;
 
     return-void
 .end method
@@ -65,7 +65,7 @@
 
     .prologue
     .line 15
-    sget-object v0, Lcom/android/settings/analytics/ObserverService;->Cz:Landroid/net/Uri;
+    sget-object v0, Lcom/android/settings_ext/analytics/ObserverService;->Cz:Landroid/net/Uri;
 
     return-object v0
 .end method
@@ -75,7 +75,7 @@
 
     .prologue
     .line 15
-    sget-object v0, Lcom/android/settings/analytics/ObserverService;->CA:Landroid/net/Uri;
+    sget-object v0, Lcom/android/settings_ext/analytics/ObserverService;->CA:Landroid/net/Uri;
 
     return-object v0
 .end method
@@ -102,24 +102,24 @@
     invoke-super {p0}, Landroid/app/Service;->onCreate()V
 
     .line 43
-    invoke-virtual {p0}, Lcom/android/settings/analytics/ObserverService;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/settings_ext/analytics/ObserverService;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v0
 
-    sget-object v1, Lcom/android/settings/analytics/ObserverService;->Cz:Landroid/net/Uri;
+    sget-object v1, Lcom/android/settings_ext/analytics/ObserverService;->Cz:Landroid/net/Uri;
 
-    iget-object v2, p0, Lcom/android/settings/analytics/ObserverService;->ul:Landroid/database/ContentObserver;
+    iget-object v2, p0, Lcom/android/settings_ext/analytics/ObserverService;->ul:Landroid/database/ContentObserver;
 
     invoke-virtual {v0, v1, v3, v2}, Landroid/content/ContentResolver;->registerContentObserver(Landroid/net/Uri;ZLandroid/database/ContentObserver;)V
 
     .line 44
-    invoke-virtual {p0}, Lcom/android/settings/analytics/ObserverService;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/settings_ext/analytics/ObserverService;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v0
 
-    sget-object v1, Lcom/android/settings/analytics/ObserverService;->CA:Landroid/net/Uri;
+    sget-object v1, Lcom/android/settings_ext/analytics/ObserverService;->CA:Landroid/net/Uri;
 
-    iget-object v2, p0, Lcom/android/settings/analytics/ObserverService;->ul:Landroid/database/ContentObserver;
+    iget-object v2, p0, Lcom/android/settings_ext/analytics/ObserverService;->ul:Landroid/database/ContentObserver;
 
     invoke-virtual {v0, v1, v3, v2}, Landroid/content/ContentResolver;->registerContentObserver(Landroid/net/Uri;ZLandroid/database/ContentObserver;)V
 
@@ -135,11 +135,11 @@
     invoke-super {p0}, Landroid/app/Service;->onDestroy()V
 
     .line 51
-    invoke-virtual {p0}, Lcom/android/settings/analytics/ObserverService;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/settings_ext/analytics/ObserverService;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/android/settings/analytics/ObserverService;->ul:Landroid/database/ContentObserver;
+    iget-object v1, p0, Lcom/android/settings_ext/analytics/ObserverService;->ul:Landroid/database/ContentObserver;
 
     invoke-virtual {v0, v1}, Landroid/content/ContentResolver;->unregisterContentObserver(Landroid/database/ContentObserver;)V
 

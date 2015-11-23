@@ -1,12 +1,12 @@
-.class public Lcom/android/settings/wifi/EditTetherFragment;
-.super Lcom/android/settings/BaseEditFragment;
+.class public Lcom/android/settings_ext/wifi/EditTetherFragment;
+.super Lcom/android/settings_ext/BaseEditFragment;
 .source "EditTetherFragment.java"
 
 # interfaces
 .implements Landroid/text/TextWatcher;
 .implements Landroid/view/View$OnClickListener;
 .implements Landroid/widget/AdapterView$OnItemSelectedListener;
-.implements Lcom/android/settings/wifi/j;
+.implements Lcom/android/settings_ext/wifi/j;
 
 
 # instance fields
@@ -27,12 +27,12 @@
 
     .prologue
     .line 29
-    invoke-direct {p0}, Lcom/android/settings/BaseEditFragment;-><init>()V
+    invoke-direct {p0}, Lcom/android/settings_ext/BaseEditFragment;-><init>()V
 
     .line 37
     const/4 v0, 0x0
 
-    iput v0, p0, Lcom/android/settings/wifi/EditTetherFragment;->asB:I
+    iput v0, p0, Lcom/android/settings_ext/wifi/EditTetherFragment;->asB:I
 
     return-void
 .end method
@@ -72,12 +72,12 @@
     const v2, 0x7f1002f9
 
     .line 153
-    invoke-virtual {p0}, Lcom/android/settings/wifi/EditTetherFragment;->getView()Landroid/view/View;
+    invoke-virtual {p0}, Lcom/android/settings_ext/wifi/EditTetherFragment;->getView()Landroid/view/View;
 
     move-result-object v0
 
     .line 154
-    iget v1, p0, Lcom/android/settings/wifi/EditTetherFragment;->asB:I
+    iget v1, p0, Lcom/android/settings_ext/wifi/EditTetherFragment;->asB:I
 
     if-nez v1, :cond_0
 
@@ -112,9 +112,9 @@
 
     .prologue
     .line 162
-    iget-object v1, p0, Lcom/android/settings/wifi/EditTetherFragment;->D:Landroid/widget/EditText;
+    iget-object v1, p0, Lcom/android/settings_ext/wifi/EditTetherFragment;->D:Landroid/widget/EditText;
 
-    iget-object v0, p0, Lcom/android/settings/wifi/EditTetherFragment;->asC:Landroid/widget/CheckBox;
+    iget-object v0, p0, Lcom/android/settings_ext/wifi/EditTetherFragment;->asC:Landroid/widget/CheckBox;
 
     invoke-virtual {v0}, Landroid/widget/CheckBox;->isChecked()Z
 
@@ -146,11 +146,11 @@
     const/4 v2, 0x1
 
     .line 143
-    iget-object v0, p0, Lcom/android/settings/wifi/EditTetherFragment;->asA:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/android/settings_ext/wifi/EditTetherFragment;->asA:Landroid/widget/TextView;
 
     if-eqz v0, :cond_0
 
-    iget-object v0, p0, Lcom/android/settings/wifi/EditTetherFragment;->asA:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/android/settings_ext/wifi/EditTetherFragment;->asA:Landroid/widget/TextView;
 
     invoke-virtual {v0}, Landroid/widget/TextView;->length()I
 
@@ -159,11 +159,11 @@
     if-eqz v0, :cond_1
 
     :cond_0
-    iget v0, p0, Lcom/android/settings/wifi/EditTetherFragment;->asB:I
+    iget v0, p0, Lcom/android/settings_ext/wifi/EditTetherFragment;->asB:I
 
     if-ne v0, v2, :cond_2
 
-    iget-object v0, p0, Lcom/android/settings/wifi/EditTetherFragment;->D:Landroid/widget/EditText;
+    iget-object v0, p0, Lcom/android/settings_ext/wifi/EditTetherFragment;->D:Landroid/widget/EditText;
 
     invoke-virtual {v0}, Landroid/widget/EditText;->length()I
 
@@ -177,7 +177,7 @@
     :cond_1
     const/4 v0, 0x0
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/wifi/EditTetherFragment;->bf(Z)V
+    invoke-virtual {p0, v0}, Lcom/android/settings_ext/wifi/EditTetherFragment;->bf(Z)V
 
     .line 150
     :goto_0
@@ -185,7 +185,7 @@
 
     .line 148
     :cond_2
-    invoke-virtual {p0, v2}, Lcom/android/settings/wifi/EditTetherFragment;->bf(Z)V
+    invoke-virtual {p0, v2}, Lcom/android/settings_ext/wifi/EditTetherFragment;->bf(Z)V
 
     goto :goto_0
 .end method
@@ -197,7 +197,7 @@
 
     .prologue
     .line 133
-    invoke-virtual {p0}, Lcom/android/settings/wifi/EditTetherFragment;->tN()Landroid/net/wifi/WifiConfiguration;
+    invoke-virtual {p0}, Lcom/android/settings_ext/wifi/EditTetherFragment;->tN()Landroid/net/wifi/WifiConfiguration;
 
     move-result-object v1
 
@@ -219,7 +219,7 @@
 
     .line 139
     :cond_0
-    invoke-virtual {p0, v0}, Lcom/android/settings/wifi/EditTetherFragment;->b(Landroid/os/Bundle;)V
+    invoke-virtual {p0, v0}, Lcom/android/settings_ext/wifi/EditTetherFragment;->b(Landroid/os/Bundle;)V
 
     .line 140
     return-void
@@ -247,7 +247,7 @@
 
     .prologue
     .line 175
-    invoke-direct {p0}, Lcom/android/settings/wifi/EditTetherFragment;->validate()V
+    invoke-direct {p0}, Lcom/android/settings_ext/wifi/EditTetherFragment;->validate()V
 
     .line 176
     return-void
@@ -266,7 +266,7 @@
 
     .prologue
     .line 123
-    invoke-virtual {p0, p1}, Lcom/android/settings/wifi/EditTetherFragment;->i(Z)V
+    invoke-virtual {p0, p1}, Lcom/android/settings_ext/wifi/EditTetherFragment;->i(Z)V
 
     .line 124
     return-void
@@ -279,7 +279,7 @@
     .line 128
     const v0, 0x7f09033d
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/wifi/EditTetherFragment;->getString(I)Ljava/lang/String;
+    invoke-virtual {p0, v0}, Lcom/android/settings_ext/wifi/EditTetherFragment;->getString(I)Ljava/lang/String;
 
     move-result-object v0
 
@@ -291,7 +291,7 @@
 
     .prologue
     .line 170
-    invoke-direct {p0}, Lcom/android/settings/wifi/EditTetherFragment;->tY()V
+    invoke-direct {p0}, Lcom/android/settings_ext/wifi/EditTetherFragment;->tY()V
 
     .line 171
     return-void
@@ -302,13 +302,13 @@
 
     .prologue
     .line 190
-    iput p3, p0, Lcom/android/settings/wifi/EditTetherFragment;->asB:I
+    iput p3, p0, Lcom/android/settings_ext/wifi/EditTetherFragment;->asB:I
 
     .line 191
-    invoke-direct {p0}, Lcom/android/settings/wifi/EditTetherFragment;->tX()V
+    invoke-direct {p0}, Lcom/android/settings_ext/wifi/EditTetherFragment;->tX()V
 
     .line 192
-    invoke-direct {p0}, Lcom/android/settings/wifi/EditTetherFragment;->validate()V
+    invoke-direct {p0}, Lcom/android/settings_ext/wifi/EditTetherFragment;->validate()V
 
     .line 193
     return-void
@@ -339,10 +339,10 @@
     const/4 v5, 0x0
 
     .line 52
-    invoke-super {p0, p1, p2}, Lcom/android/settings/BaseEditFragment;->onViewCreated(Landroid/view/View;Landroid/os/Bundle;)V
+    invoke-super {p0, p1, p2}, Lcom/android/settings_ext/BaseEditFragment;->onViewCreated(Landroid/view/View;Landroid/os/Bundle;)V
 
     .line 53
-    invoke-virtual {p0}, Lcom/android/settings/wifi/EditTetherFragment;->getArguments()Landroid/os/Bundle;
+    invoke-virtual {p0}, Lcom/android/settings_ext/wifi/EditTetherFragment;->getArguments()Landroid/os/Bundle;
 
     move-result-object v0
 
@@ -354,21 +354,21 @@
 
     check-cast v0, Landroid/net/wifi/WifiConfiguration;
 
-    iput-object v0, p0, Lcom/android/settings/wifi/EditTetherFragment;->ym:Landroid/net/wifi/WifiConfiguration;
+    iput-object v0, p0, Lcom/android/settings_ext/wifi/EditTetherFragment;->ym:Landroid/net/wifi/WifiConfiguration;
 
     .line 54
-    iget-object v0, p0, Lcom/android/settings/wifi/EditTetherFragment;->ym:Landroid/net/wifi/WifiConfiguration;
+    iget-object v0, p0, Lcom/android/settings_ext/wifi/EditTetherFragment;->ym:Landroid/net/wifi/WifiConfiguration;
 
     if-eqz v0, :cond_0
 
     .line 55
-    iget-object v0, p0, Lcom/android/settings/wifi/EditTetherFragment;->ym:Landroid/net/wifi/WifiConfiguration;
+    iget-object v0, p0, Lcom/android/settings_ext/wifi/EditTetherFragment;->ym:Landroid/net/wifi/WifiConfiguration;
 
-    invoke-static {v0}, Lcom/android/settings/wifi/EditTetherFragment;->c(Landroid/net/wifi/WifiConfiguration;)I
+    invoke-static {v0}, Lcom/android/settings_ext/wifi/EditTetherFragment;->c(Landroid/net/wifi/WifiConfiguration;)I
 
     move-result v0
 
-    iput v0, p0, Lcom/android/settings/wifi/EditTetherFragment;->asB:I
+    iput v0, p0, Lcom/android/settings_ext/wifi/EditTetherFragment;->asB:I
 
     .line 58
     :cond_0
@@ -398,18 +398,18 @@
 
     check-cast v1, Landroid/widget/TextView;
 
-    iput-object v1, p0, Lcom/android/settings/wifi/EditTetherFragment;->asA:Landroid/widget/TextView;
+    iput-object v1, p0, Lcom/android/settings_ext/wifi/EditTetherFragment;->asA:Landroid/widget/TextView;
 
     .line 61
-    iget-object v1, p0, Lcom/android/settings/wifi/EditTetherFragment;->asA:Landroid/widget/TextView;
+    iget-object v1, p0, Lcom/android/settings_ext/wifi/EditTetherFragment;->asA:Landroid/widget/TextView;
 
     new-array v2, v6, [Landroid/text/InputFilter;
 
-    new-instance v3, Lcom/android/settings/dF;
+    new-instance v3, Lcom/android/settings_ext/dF;
 
     const/16 v4, 0x20
 
-    invoke-direct {v3, v4}, Lcom/android/settings/dF;-><init>(I)V
+    invoke-direct {v3, v4}, Lcom/android/settings_ext/dF;-><init>(I)V
 
     aput-object v3, v2, v5
 
@@ -424,28 +424,28 @@
 
     check-cast v1, Landroid/widget/EditText;
 
-    iput-object v1, p0, Lcom/android/settings/wifi/EditTetherFragment;->D:Landroid/widget/EditText;
+    iput-object v1, p0, Lcom/android/settings_ext/wifi/EditTetherFragment;->D:Landroid/widget/EditText;
 
     .line 64
-    iget-object v1, p0, Lcom/android/settings/wifi/EditTetherFragment;->ym:Landroid/net/wifi/WifiConfiguration;
+    iget-object v1, p0, Lcom/android/settings_ext/wifi/EditTetherFragment;->ym:Landroid/net/wifi/WifiConfiguration;
 
     if-eqz v1, :cond_1
 
     .line 65
-    iget-object v1, p0, Lcom/android/settings/wifi/EditTetherFragment;->asA:Landroid/widget/TextView;
+    iget-object v1, p0, Lcom/android/settings_ext/wifi/EditTetherFragment;->asA:Landroid/widget/TextView;
 
-    iget-object v2, p0, Lcom/android/settings/wifi/EditTetherFragment;->ym:Landroid/net/wifi/WifiConfiguration;
+    iget-object v2, p0, Lcom/android/settings_ext/wifi/EditTetherFragment;->ym:Landroid/net/wifi/WifiConfiguration;
 
     iget-object v2, v2, Landroid/net/wifi/WifiConfiguration;->SSID:Ljava/lang/String;
 
     invoke-virtual {v1, v2}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
     .line 66
-    iget-object v1, p0, Lcom/android/settings/wifi/EditTetherFragment;->asA:Landroid/widget/TextView;
+    iget-object v1, p0, Lcom/android/settings_ext/wifi/EditTetherFragment;->asA:Landroid/widget/TextView;
 
     check-cast v1, Landroid/widget/EditText;
 
-    iget-object v2, p0, Lcom/android/settings/wifi/EditTetherFragment;->asA:Landroid/widget/TextView;
+    iget-object v2, p0, Lcom/android/settings_ext/wifi/EditTetherFragment;->asA:Landroid/widget/TextView;
 
     invoke-virtual {v2}, Landroid/widget/TextView;->getText()Ljava/lang/CharSequence;
 
@@ -462,19 +462,19 @@
     invoke-virtual {v1, v2}, Landroid/widget/EditText;->setSelection(I)V
 
     .line 67
-    iget v1, p0, Lcom/android/settings/wifi/EditTetherFragment;->asB:I
+    iget v1, p0, Lcom/android/settings_ext/wifi/EditTetherFragment;->asB:I
 
     invoke-virtual {v0, v1}, Landroid/widget/Spinner;->setSelection(I)V
 
     .line 68
-    iget v1, p0, Lcom/android/settings/wifi/EditTetherFragment;->asB:I
+    iget v1, p0, Lcom/android/settings_ext/wifi/EditTetherFragment;->asB:I
 
     if-ne v1, v6, :cond_1
 
     .line 69
-    iget-object v1, p0, Lcom/android/settings/wifi/EditTetherFragment;->D:Landroid/widget/EditText;
+    iget-object v1, p0, Lcom/android/settings_ext/wifi/EditTetherFragment;->D:Landroid/widget/EditText;
 
-    iget-object v2, p0, Lcom/android/settings/wifi/EditTetherFragment;->ym:Landroid/net/wifi/WifiConfiguration;
+    iget-object v2, p0, Lcom/android/settings_ext/wifi/EditTetherFragment;->ym:Landroid/net/wifi/WifiConfiguration;
 
     iget-object v2, v2, Landroid/net/wifi/WifiConfiguration;->preSharedKey:Ljava/lang/String;
 
@@ -482,12 +482,12 @@
 
     .line 73
     :cond_1
-    iget-object v1, p0, Lcom/android/settings/wifi/EditTetherFragment;->asA:Landroid/widget/TextView;
+    iget-object v1, p0, Lcom/android/settings_ext/wifi/EditTetherFragment;->asA:Landroid/widget/TextView;
 
     invoke-virtual {v1, p0}, Landroid/widget/TextView;->addTextChangedListener(Landroid/text/TextWatcher;)V
 
     .line 74
-    iget-object v1, p0, Lcom/android/settings/wifi/EditTetherFragment;->D:Landroid/widget/EditText;
+    iget-object v1, p0, Lcom/android/settings_ext/wifi/EditTetherFragment;->D:Landroid/widget/EditText;
 
     invoke-virtual {v1, p0}, Landroid/widget/EditText;->addTextChangedListener(Landroid/text/TextWatcher;)V
 
@@ -500,10 +500,10 @@
 
     check-cast v1, Landroid/widget/CheckBox;
 
-    iput-object v1, p0, Lcom/android/settings/wifi/EditTetherFragment;->asC:Landroid/widget/CheckBox;
+    iput-object v1, p0, Lcom/android/settings_ext/wifi/EditTetherFragment;->asC:Landroid/widget/CheckBox;
 
     .line 76
-    iget-object v1, p0, Lcom/android/settings/wifi/EditTetherFragment;->asC:Landroid/widget/CheckBox;
+    iget-object v1, p0, Lcom/android/settings_ext/wifi/EditTetherFragment;->asC:Landroid/widget/CheckBox;
 
     invoke-virtual {v1, p0}, Landroid/widget/CheckBox;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
@@ -518,10 +518,10 @@
     invoke-virtual {v0, v1}, Landroid/widget/Spinner;->setPrompt(Ljava/lang/CharSequence;)V
 
     .line 81
-    invoke-direct {p0}, Lcom/android/settings/wifi/EditTetherFragment;->tX()V
+    invoke-direct {p0}, Lcom/android/settings_ext/wifi/EditTetherFragment;->tX()V
 
     .line 82
-    invoke-direct {p0}, Lcom/android/settings/wifi/EditTetherFragment;->validate()V
+    invoke-direct {p0}, Lcom/android/settings_ext/wifi/EditTetherFragment;->validate()V
 
     .line 83
     return-void
@@ -532,10 +532,10 @@
 
     .prologue
     .line 87
-    invoke-super {p0, p1}, Lcom/android/settings/BaseEditFragment;->onViewStateRestored(Landroid/os/Bundle;)V
+    invoke-super {p0, p1}, Lcom/android/settings_ext/BaseEditFragment;->onViewStateRestored(Landroid/os/Bundle;)V
 
     .line 88
-    invoke-direct {p0}, Lcom/android/settings/wifi/EditTetherFragment;->tY()V
+    invoke-direct {p0}, Lcom/android/settings_ext/wifi/EditTetherFragment;->tY()V
 
     .line 89
     return-void
@@ -553,7 +553,7 @@
     invoke-direct {v0}, Landroid/net/wifi/WifiConfiguration;-><init>()V
 
     .line 102
-    iget-object v1, p0, Lcom/android/settings/wifi/EditTetherFragment;->asA:Landroid/widget/TextView;
+    iget-object v1, p0, Lcom/android/settings_ext/wifi/EditTetherFragment;->asA:Landroid/widget/TextView;
 
     invoke-virtual {v1}, Landroid/widget/TextView;->getText()Ljava/lang/CharSequence;
 
@@ -566,7 +566,7 @@
     iput-object v1, v0, Landroid/net/wifi/WifiConfiguration;->SSID:Ljava/lang/String;
 
     .line 104
-    iget v1, p0, Lcom/android/settings/wifi/EditTetherFragment;->asB:I
+    iget v1, p0, Lcom/android/settings_ext/wifi/EditTetherFragment;->asB:I
 
     packed-switch v1, :pswitch_data_0
 
@@ -599,7 +599,7 @@
     invoke-virtual {v1, v3}, Ljava/util/BitSet;->set(I)V
 
     .line 112
-    iget-object v1, p0, Lcom/android/settings/wifi/EditTetherFragment;->D:Landroid/widget/EditText;
+    iget-object v1, p0, Lcom/android/settings_ext/wifi/EditTetherFragment;->D:Landroid/widget/EditText;
 
     invoke-virtual {v1}, Landroid/widget/EditText;->length()I
 
@@ -608,7 +608,7 @@
     if-eqz v1, :cond_0
 
     .line 113
-    iget-object v1, p0, Lcom/android/settings/wifi/EditTetherFragment;->D:Landroid/widget/EditText;
+    iget-object v1, p0, Lcom/android/settings_ext/wifi/EditTetherFragment;->D:Landroid/widget/EditText;
 
     invoke-virtual {v1}, Landroid/widget/EditText;->getText()Landroid/text/Editable;
 

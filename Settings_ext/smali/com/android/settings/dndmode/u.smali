@@ -1,4 +1,4 @@
-.class public Lcom/android/settings/dndmode/u;
+.class public Lcom/android/settings_ext/dndmode/u;
 .super Landroid/preference/PreferenceFragment;
 .source "VipCallSettingsFragment.java"
 
@@ -25,7 +25,7 @@
 
 .field private Xq:Landroid/view/MenuItem;
 
-.field Xr:Lcom/android/settings/dndmode/C;
+.field Xr:Lcom/android/settings_ext/dndmode/C;
 
 .field private mCursor:Landroid/database/Cursor;
 
@@ -42,7 +42,7 @@
 
     invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
 
-    sput-object v0, Lcom/android/settings/dndmode/u;->Xk:Ljava/util/HashMap;
+    sput-object v0, Lcom/android/settings_ext/dndmode/u;->Xk:Ljava/util/HashMap;
 
     return-void
 .end method
@@ -59,25 +59,25 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/dndmode/u;->Xl:Ljava/util/concurrent/ExecutorService;
+    iput-object v0, p0, Lcom/android/settings_ext/dndmode/u;->Xl:Ljava/util/concurrent/ExecutorService;
 
     .line 235
-    new-instance v0, Lcom/android/settings/dndmode/y;
+    new-instance v0, Lcom/android/settings_ext/dndmode/y;
 
-    invoke-direct {v0, p0}, Lcom/android/settings/dndmode/y;-><init>(Lcom/android/settings/dndmode/u;)V
+    invoke-direct {v0, p0}, Lcom/android/settings_ext/dndmode/y;-><init>(Lcom/android/settings_ext/dndmode/u;)V
 
-    iput-object v0, p0, Lcom/android/settings/dndmode/u;->Xr:Lcom/android/settings/dndmode/C;
+    iput-object v0, p0, Lcom/android/settings_ext/dndmode/u;->Xr:Lcom/android/settings_ext/dndmode/C;
 
     .line 85
     return-void
 .end method
 
-.method static synthetic a(Lcom/android/settings/dndmode/u;)Lmiui/app/Activity;
+.method static synthetic a(Lcom/android/settings_ext/dndmode/u;)Lmiui/app/Activity;
     .locals 1
 
     .prologue
     .line 58
-    iget-object v0, p0, Lcom/android/settings/dndmode/u;->WJ:Lmiui/app/Activity;
+    iget-object v0, p0, Lcom/android/settings_ext/dndmode/u;->WJ:Lmiui/app/Activity;
 
     return-object v0
 .end method
@@ -87,47 +87,47 @@
 
     .prologue
     .line 58
-    sget-object v0, Lcom/android/settings/dndmode/u;->Xk:Ljava/util/HashMap;
+    sget-object v0, Lcom/android/settings_ext/dndmode/u;->Xk:Ljava/util/HashMap;
 
     return-object v0
 .end method
 
-.method static synthetic b(Lcom/android/settings/dndmode/u;)V
+.method static synthetic b(Lcom/android/settings_ext/dndmode/u;)V
     .locals 0
 
     .prologue
     .line 58
-    invoke-direct {p0}, Lcom/android/settings/dndmode/u;->oZ()V
+    invoke-direct {p0}, Lcom/android/settings_ext/dndmode/u;->oZ()V
 
     return-void
 .end method
 
-.method static synthetic c(Lcom/android/settings/dndmode/u;)V
+.method static synthetic c(Lcom/android/settings_ext/dndmode/u;)V
     .locals 0
 
     .prologue
     .line 58
-    invoke-direct {p0}, Lcom/android/settings/dndmode/u;->pa()V
+    invoke-direct {p0}, Lcom/android/settings_ext/dndmode/u;->pa()V
 
     return-void
 .end method
 
-.method static synthetic d(Lcom/android/settings/dndmode/u;)Landroid/database/Cursor;
+.method static synthetic d(Lcom/android/settings_ext/dndmode/u;)Landroid/database/Cursor;
     .locals 1
 
     .prologue
     .line 58
-    iget-object v0, p0, Lcom/android/settings/dndmode/u;->mCursor:Landroid/database/Cursor;
+    iget-object v0, p0, Lcom/android/settings_ext/dndmode/u;->mCursor:Landroid/database/Cursor;
 
     return-object v0
 .end method
 
-.method static synthetic e(Lcom/android/settings/dndmode/u;)Landroid/preference/PreferenceCategory;
+.method static synthetic e(Lcom/android/settings_ext/dndmode/u;)Landroid/preference/PreferenceCategory;
     .locals 1
 
     .prologue
     .line 58
-    iget-object v0, p0, Lcom/android/settings/dndmode/u;->Xp:Landroid/preference/PreferenceCategory;
+    iget-object v0, p0, Lcom/android/settings_ext/dndmode/u;->Xp:Landroid/preference/PreferenceCategory;
 
     return-object v0
 .end method
@@ -137,18 +137,18 @@
 
     .prologue
     .line 113
-    new-instance v0, Lcom/android/settings/dndmode/v;
+    new-instance v0, Lcom/android/settings_ext/dndmode/v;
 
-    invoke-direct {v0, p0}, Lcom/android/settings/dndmode/v;-><init>(Lcom/android/settings/dndmode/u;)V
+    invoke-direct {v0, p0}, Lcom/android/settings_ext/dndmode/v;-><init>(Lcom/android/settings_ext/dndmode/u;)V
 
     .line 140
-    iget-object v1, p0, Lcom/android/settings/dndmode/u;->Xl:Ljava/util/concurrent/ExecutorService;
+    iget-object v1, p0, Lcom/android/settings_ext/dndmode/u;->Xl:Ljava/util/concurrent/ExecutorService;
 
     invoke-interface {v1, v0}, Ljava/util/concurrent/ExecutorService;->submit(Ljava/util/concurrent/Callable;)Ljava/util/concurrent/Future;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/dndmode/u;->Xm:Ljava/util/concurrent/Future;
+    iput-object v0, p0, Lcom/android/settings_ext/dndmode/u;->Xm:Ljava/util/concurrent/Future;
 
     .line 141
     return-void
@@ -159,7 +159,7 @@
 
     .prologue
     .line 144
-    invoke-virtual {p0}, Lcom/android/settings/dndmode/u;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {p0}, Lcom/android/settings_ext/dndmode/u;->getResources()Landroid/content/res/Resources;
 
     move-result-object v0
 
@@ -170,9 +170,9 @@
     move-result-object v0
 
     .line 145
-    new-instance v1, Lcom/android/settings/dndmode/w;
+    new-instance v1, Lcom/android/settings_ext/dndmode/w;
 
-    invoke-direct {v1, p0, v0}, Lcom/android/settings/dndmode/w;-><init>(Lcom/android/settings/dndmode/u;[Ljava/lang/String;)V
+    invoke-direct {v1, p0, v0}, Lcom/android/settings_ext/dndmode/w;-><init>(Lcom/android/settings_ext/dndmode/u;[Ljava/lang/String;)V
 
     .line 161
     return-void
@@ -187,19 +187,19 @@
     const/4 v2, 0x0
 
     .line 164
-    iget-object v0, p0, Lcom/android/settings/dndmode/u;->Xo:Landroid/preference/PreferenceScreen;
+    iget-object v0, p0, Lcom/android/settings_ext/dndmode/u;->Xo:Landroid/preference/PreferenceScreen;
 
-    iget-object v1, p0, Lcom/android/settings/dndmode/u;->Xp:Landroid/preference/PreferenceCategory;
+    iget-object v1, p0, Lcom/android/settings_ext/dndmode/u;->Xp:Landroid/preference/PreferenceCategory;
 
     invoke-virtual {v0, v1}, Landroid/preference/PreferenceScreen;->addPreference(Landroid/preference/Preference;)Z
 
     .line 166
-    iget-object v0, p0, Lcom/android/settings/dndmode/u;->Xn:Landroid/content/CursorLoader;
+    iget-object v0, p0, Lcom/android/settings_ext/dndmode/u;->Xn:Landroid/content/CursorLoader;
 
     if-eqz v0, :cond_1
 
     .line 167
-    iget-object v0, p0, Lcom/android/settings/dndmode/u;->WJ:Lmiui/app/Activity;
+    iget-object v0, p0, Lcom/android/settings_ext/dndmode/u;->WJ:Lmiui/app/Activity;
 
     invoke-virtual {v0}, Lmiui/app/Activity;->getLoaderManager()Landroid/app/LoaderManager;
 
@@ -209,12 +209,12 @@
 
     .line 172
     :goto_0
-    iget-object v0, p0, Lcom/android/settings/dndmode/u;->Xq:Landroid/view/MenuItem;
+    iget-object v0, p0, Lcom/android/settings_ext/dndmode/u;->Xq:Landroid/view/MenuItem;
 
     if-eqz v0, :cond_0
 
     .line 173
-    iget-object v0, p0, Lcom/android/settings/dndmode/u;->Xq:Landroid/view/MenuItem;
+    iget-object v0, p0, Lcom/android/settings_ext/dndmode/u;->Xq:Landroid/view/MenuItem;
 
     const/4 v1, 0x1
 
@@ -226,7 +226,7 @@
 
     .line 169
     :cond_1
-    iget-object v0, p0, Lcom/android/settings/dndmode/u;->WJ:Lmiui/app/Activity;
+    iget-object v0, p0, Lcom/android/settings_ext/dndmode/u;->WJ:Lmiui/app/Activity;
 
     invoke-virtual {v0}, Lmiui/app/Activity;->getLoaderManager()Landroid/app/LoaderManager;
 
@@ -242,19 +242,19 @@
 
     .prologue
     .line 178
-    iget-object v0, p0, Lcom/android/settings/dndmode/u;->Xo:Landroid/preference/PreferenceScreen;
+    iget-object v0, p0, Lcom/android/settings_ext/dndmode/u;->Xo:Landroid/preference/PreferenceScreen;
 
-    iget-object v1, p0, Lcom/android/settings/dndmode/u;->Xp:Landroid/preference/PreferenceCategory;
+    iget-object v1, p0, Lcom/android/settings_ext/dndmode/u;->Xp:Landroid/preference/PreferenceCategory;
 
     invoke-virtual {v0, v1}, Landroid/preference/PreferenceScreen;->removePreference(Landroid/preference/Preference;)Z
 
     .line 179
-    iget-object v0, p0, Lcom/android/settings/dndmode/u;->Xq:Landroid/view/MenuItem;
+    iget-object v0, p0, Lcom/android/settings_ext/dndmode/u;->Xq:Landroid/view/MenuItem;
 
     if-eqz v0, :cond_0
 
     .line 180
-    iget-object v0, p0, Lcom/android/settings/dndmode/u;->Xq:Landroid/view/MenuItem;
+    iget-object v0, p0, Lcom/android/settings_ext/dndmode/u;->Xq:Landroid/view/MenuItem;
 
     const/4 v1, 0x0
 
@@ -270,7 +270,7 @@
 
     .prologue
     .line 186
-    iget-object v0, p0, Lcom/android/settings/dndmode/u;->mCursor:Landroid/database/Cursor;
+    iget-object v0, p0, Lcom/android/settings_ext/dndmode/u;->mCursor:Landroid/database/Cursor;
 
     if-nez v0, :cond_0
 
@@ -280,20 +280,20 @@
 
     .line 189
     :cond_0
-    iget-object v0, p0, Lcom/android/settings/dndmode/u;->Xp:Landroid/preference/PreferenceCategory;
+    iget-object v0, p0, Lcom/android/settings_ext/dndmode/u;->Xp:Landroid/preference/PreferenceCategory;
 
     invoke-virtual {v0}, Landroid/preference/PreferenceCategory;->removeAll()V
 
     .line 191
-    new-instance v0, Lcom/android/settings/dndmode/x;
+    new-instance v0, Lcom/android/settings_ext/dndmode/x;
 
-    invoke-direct {v0, p0}, Lcom/android/settings/dndmode/x;-><init>(Lcom/android/settings/dndmode/u;)V
+    invoke-direct {v0, p0}, Lcom/android/settings_ext/dndmode/x;-><init>(Lcom/android/settings_ext/dndmode/u;)V
 
     const/4 v1, 0x0
 
     new-array v1, v1, [Ljava/lang/Void;
 
-    invoke-virtual {v0, v1}, Lcom/android/settings/dndmode/x;->execute([Ljava/lang/Object;)Landroid/os/AsyncTask;
+    invoke-virtual {v0, v1}, Lcom/android/settings_ext/dndmode/x;->execute([Ljava/lang/Object;)Landroid/os/AsyncTask;
 
     goto :goto_0
 .end method
@@ -329,7 +329,7 @@
     .line 284
     const/16 v1, 0x3e8
 
-    invoke-virtual {p0, v0, v1}, Lcom/android/settings/dndmode/u;->startActivityForResult(Landroid/content/Intent;I)V
+    invoke-virtual {p0, v0, v1}, Lcom/android/settings_ext/dndmode/u;->startActivityForResult(Landroid/content/Intent;I)V
 
     .line 285
     return-void
@@ -342,10 +342,10 @@
 
     .prologue
     .line 224
-    iput-object p2, p0, Lcom/android/settings/dndmode/u;->mCursor:Landroid/database/Cursor;
+    iput-object p2, p0, Lcom/android/settings_ext/dndmode/u;->mCursor:Landroid/database/Cursor;
 
     .line 225
-    invoke-direct {p0}, Lcom/android/settings/dndmode/u;->pb()V
+    invoke-direct {p0}, Lcom/android/settings_ext/dndmode/u;->pb()V
 
     .line 226
     return-void
@@ -526,7 +526,7 @@
     move-result-object v3
 
     .line 317
-    iget-object v0, p0, Lcom/android/settings/dndmode/u;->WJ:Lmiui/app/Activity;
+    iget-object v0, p0, Lcom/android/settings_ext/dndmode/u;->WJ:Lmiui/app/Activity;
 
     invoke-virtual {v0}, Lmiui/app/Activity;->getContentResolver()Landroid/content/ContentResolver;
 
@@ -604,7 +604,7 @@
     if-lez v0, :cond_0
 
     .line 337
-    iget-object v1, p0, Lcom/android/settings/dndmode/u;->WJ:Lmiui/app/Activity;
+    iget-object v1, p0, Lcom/android/settings_ext/dndmode/u;->WJ:Lmiui/app/Activity;
 
     new-array v0, v6, [Ljava/lang/String;
 
@@ -614,7 +614,7 @@
 
     check-cast v0, [Ljava/lang/String;
 
-    invoke-static {v1, v0}, Lcom/android/settings/dndmode/m;->b(Landroid/content/Context;[Ljava/lang/String;)V
+    invoke-static {v1, v0}, Lcom/android/settings_ext/dndmode/m;->b(Landroid/content/Context;[Ljava/lang/String;)V
 
     goto/16 :goto_0
 .end method
@@ -629,49 +629,49 @@
     .line 90
     const v0, 0x7f060031
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/dndmode/u;->addPreferencesFromResource(I)V
+    invoke-virtual {p0, v0}, Lcom/android/settings_ext/dndmode/u;->addPreferencesFromResource(I)V
 
     .line 91
-    invoke-virtual {p0}, Lcom/android/settings/dndmode/u;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/dndmode/u;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
     check-cast v0, Lmiui/app/Activity;
 
-    iput-object v0, p0, Lcom/android/settings/dndmode/u;->WJ:Lmiui/app/Activity;
+    iput-object v0, p0, Lcom/android/settings_ext/dndmode/u;->WJ:Lmiui/app/Activity;
 
     .line 92
     const/4 v0, 0x1
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/dndmode/u;->setHasOptionsMenu(Z)V
+    invoke-virtual {p0, v0}, Lcom/android/settings_ext/dndmode/u;->setHasOptionsMenu(Z)V
 
     .line 94
     const-string v0, "key_vip_call_setting_root"
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/dndmode/u;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v0}, Lcom/android/settings_ext/dndmode/u;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v0
 
     check-cast v0, Landroid/preference/PreferenceScreen;
 
-    iput-object v0, p0, Lcom/android/settings/dndmode/u;->Xo:Landroid/preference/PreferenceScreen;
+    iput-object v0, p0, Lcom/android/settings_ext/dndmode/u;->Xo:Landroid/preference/PreferenceScreen;
 
     .line 95
     const-string v0, "key_vip_list_custom_category"
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/dndmode/u;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v0}, Lcom/android/settings_ext/dndmode/u;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v0
 
     check-cast v0, Landroid/preference/PreferenceCategory;
 
-    iput-object v0, p0, Lcom/android/settings/dndmode/u;->Xp:Landroid/preference/PreferenceCategory;
+    iput-object v0, p0, Lcom/android/settings_ext/dndmode/u;->Xp:Landroid/preference/PreferenceCategory;
 
     .line 96
-    invoke-direct {p0}, Lcom/android/settings/dndmode/u;->oY()V
+    invoke-direct {p0}, Lcom/android/settings_ext/dndmode/u;->oY()V
 
     .line 97
-    invoke-direct {p0}, Lcom/android/settings/dndmode/u;->oX()V
+    invoke-direct {p0}, Lcom/android/settings_ext/dndmode/u;->oX()V
 
     .line 98
     return-void
@@ -686,7 +686,7 @@
     .line 218
     new-instance v0, Landroid/content/CursorLoader;
 
-    iget-object v1, p0, Lcom/android/settings/dndmode/u;->WJ:Lmiui/app/Activity;
+    iget-object v1, p0, Lcom/android/settings_ext/dndmode/u;->WJ:Lmiui/app/Activity;
 
     sget-object v2, Lmiui/provider/ExtraTelephony$Phonelist;->CONTENT_URI:Landroid/net/Uri;
 
@@ -716,10 +716,10 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/dndmode/u;->Xq:Landroid/view/MenuItem;
+    iput-object v0, p0, Lcom/android/settings_ext/dndmode/u;->Xq:Landroid/view/MenuItem;
 
     .line 259
-    iget-object v0, p0, Lcom/android/settings/dndmode/u;->Xq:Landroid/view/MenuItem;
+    iget-object v0, p0, Lcom/android/settings_ext/dndmode/u;->Xq:Landroid/view/MenuItem;
 
     const v1, 0x7f020076
 
@@ -730,12 +730,12 @@
     invoke-interface {v0, v3}, Landroid/view/MenuItem;->setShowAsAction(I)V
 
     .line 260
-    iget v0, p0, Lcom/android/settings/dndmode/u;->mListIndex:I
+    iget v0, p0, Lcom/android/settings_ext/dndmode/u;->mListIndex:I
 
     if-nez v0, :cond_0
 
     .line 261
-    iget-object v0, p0, Lcom/android/settings/dndmode/u;->Xq:Landroid/view/MenuItem;
+    iget-object v0, p0, Lcom/android/settings_ext/dndmode/u;->Xq:Landroid/view/MenuItem;
 
     invoke-interface {v0, v3}, Landroid/view/MenuItem;->setVisible(Z)Landroid/view/MenuItem;
 
@@ -745,7 +745,7 @@
 
     .line 263
     :cond_0
-    iget-object v0, p0, Lcom/android/settings/dndmode/u;->Xq:Landroid/view/MenuItem;
+    iget-object v0, p0, Lcom/android/settings_ext/dndmode/u;->Xq:Landroid/view/MenuItem;
 
     invoke-interface {v0, v2}, Landroid/view/MenuItem;->setVisible(Z)Landroid/view/MenuItem;
 
@@ -759,7 +759,7 @@
     .line 58
     check-cast p2, Landroid/database/Cursor;
 
-    invoke-virtual {p0, p1, p2}, Lcom/android/settings/dndmode/u;->a(Landroid/content/Loader;Landroid/database/Cursor;)V
+    invoke-virtual {p0, p1, p2}, Lcom/android/settings_ext/dndmode/u;->a(Landroid/content/Loader;Landroid/database/Cursor;)V
 
     return-void
 .end method
@@ -769,12 +769,12 @@
 
     .prologue
     .line 230
-    iget-object v0, p0, Lcom/android/settings/dndmode/u;->mCursor:Landroid/database/Cursor;
+    iget-object v0, p0, Lcom/android/settings_ext/dndmode/u;->mCursor:Landroid/database/Cursor;
 
     if-eqz v0, :cond_0
 
     .line 231
-    iget-object v0, p0, Lcom/android/settings/dndmode/u;->mCursor:Landroid/database/Cursor;
+    iget-object v0, p0, Lcom/android/settings_ext/dndmode/u;->mCursor:Landroid/database/Cursor;
 
     invoke-interface {v0}, Landroid/database/Cursor;->close()V
 
@@ -804,7 +804,7 @@
 
     .line 271
     :pswitch_0
-    invoke-direct {p0}, Lcom/android/settings/dndmode/u;->pc()V
+    invoke-direct {p0}, Lcom/android/settings_ext/dndmode/u;->pc()V
 
     goto :goto_0
 
@@ -823,7 +823,7 @@
     invoke-super {p0}, Landroid/preference/PreferenceFragment;->onResume()V
 
     .line 103
-    invoke-direct {p0}, Lcom/android/settings/dndmode/u;->oZ()V
+    invoke-direct {p0}, Lcom/android/settings_ext/dndmode/u;->oZ()V
 
     .line 104
     return-void
@@ -837,7 +837,7 @@
     invoke-super {p0}, Landroid/preference/PreferenceFragment;->onStop()V
 
     .line 109
-    iget-object v0, p0, Lcom/android/settings/dndmode/u;->Xm:Ljava/util/concurrent/Future;
+    iget-object v0, p0, Lcom/android/settings_ext/dndmode/u;->Xm:Ljava/util/concurrent/Future;
 
     const/4 v1, 0x1
 

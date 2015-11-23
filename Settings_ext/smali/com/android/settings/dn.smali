@@ -1,4 +1,4 @@
-.class final Lcom/android/settings/dn;
+.class final Lcom/android/settings_ext/dn;
 .super Ljava/lang/Object;
 .source "MiuiAppPicker.java"
 
@@ -23,23 +23,23 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/dn;->bi:Ljava/text/Collator;
+    iput-object v0, p0, Lcom/android/settings_ext/dn;->bi:Ljava/text/Collator;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final a(Lcom/android/settings/dp;Lcom/android/settings/dp;)I
+.method public final a(Lcom/android/settings_ext/dp;Lcom/android/settings_ext/dp;)I
     .locals 3
 
     .prologue
     .line 144
-    iget-object v0, p0, Lcom/android/settings/dn;->bi:Ljava/text/Collator;
+    iget-object v0, p0, Lcom/android/settings_ext/dn;->bi:Ljava/text/Collator;
 
-    iget-object v1, p1, Lcom/android/settings/dp;->label:Ljava/lang/CharSequence;
+    iget-object v1, p1, Lcom/android/settings_ext/dp;->label:Ljava/lang/CharSequence;
 
-    iget-object v2, p2, Lcom/android/settings/dp;->label:Ljava/lang/CharSequence;
+    iget-object v2, p2, Lcom/android/settings_ext/dp;->label:Ljava/lang/CharSequence;
 
     invoke-virtual {v0, v1, v2}, Ljava/text/Collator;->compare(Ljava/lang/Object;Ljava/lang/Object;)I
 
@@ -53,11 +53,11 @@
 
     .prologue
     .line 141
-    check-cast p1, Lcom/android/settings/dp;
+    check-cast p1, Lcom/android/settings_ext/dp;
 
-    check-cast p2, Lcom/android/settings/dp;
+    check-cast p2, Lcom/android/settings_ext/dp;
 
-    invoke-virtual {p0, p1, p2}, Lcom/android/settings/dn;->a(Lcom/android/settings/dp;Lcom/android/settings/dp;)I
+    invoke-virtual {p0, p1, p2}, Lcom/android/settings_ext/dn;->a(Lcom/android/settings_ext/dp;Lcom/android/settings_ext/dp;)I
 
     move-result v0
 

@@ -1,31 +1,31 @@
-.class Lcom/android/settings/ci;
+.class Lcom/android/settings_ext/ci;
 .super Landroid/content/BroadcastReceiver;
 .source "DreamSettings.java"
 
 
 # instance fields
-.field final synthetic kt:Lcom/android/settings/DreamSettings;
+.field final synthetic kt:Lcom/android/settings_ext/DreamSettings;
 
 
 # direct methods
-.method private constructor <init>(Lcom/android/settings/DreamSettings;)V
+.method private constructor <init>(Lcom/android/settings_ext/DreamSettings;)V
     .locals 0
 
     .prologue
     .line 364
-    iput-object p1, p0, Lcom/android/settings/ci;->kt:Lcom/android/settings/DreamSettings;
+    iput-object p1, p0, Lcom/android/settings_ext/ci;->kt:Lcom/android/settings_ext/DreamSettings;
 
     invoke-direct {p0}, Landroid/content/BroadcastReceiver;-><init>()V
 
     return-void
 .end method
 
-.method synthetic constructor <init>(Lcom/android/settings/DreamSettings;Lcom/android/settings/ca;)V
+.method synthetic constructor <init>(Lcom/android/settings_ext/DreamSettings;Lcom/android/settings_ext/ca;)V
     .locals 0
 
     .prologue
     .line 364
-    invoke-direct {p0, p1}, Lcom/android/settings/ci;-><init>(Lcom/android/settings/DreamSettings;)V
+    invoke-direct {p0, p1}, Lcom/android/settings_ext/ci;-><init>(Lcom/android/settings_ext/DreamSettings;)V
 
     return-void
 .end method
@@ -43,12 +43,12 @@
 
     new-array v1, v1, [Ljava/lang/Object;
 
-    invoke-static {v0, v1}, Lcom/android/settings/DreamSettings;->b(Ljava/lang/String;[Ljava/lang/Object;)V
+    invoke-static {v0, v1}, Lcom/android/settings_ext/DreamSettings;->b(Ljava/lang/String;[Ljava/lang/Object;)V
 
     .line 368
-    iget-object v0, p0, Lcom/android/settings/ci;->kt:Lcom/android/settings/DreamSettings;
+    iget-object v0, p0, Lcom/android/settings_ext/ci;->kt:Lcom/android/settings_ext/DreamSettings;
 
-    invoke-static {v0}, Lcom/android/settings/DreamSettings;->b(Lcom/android/settings/DreamSettings;)V
+    invoke-static {v0}, Lcom/android/settings_ext/DreamSettings;->b(Lcom/android/settings_ext/DreamSettings;)V
 
     .line 369
     return-void

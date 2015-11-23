@@ -1,4 +1,4 @@
-.class Lcom/android/settings/notification/NotificationAppList$NotificationAppAdapter;
+.class Lcom/android/settings_ext/notification/NotificationAppList$NotificationAppAdapter;
 .super Landroid/widget/ArrayAdapter;
 .source "NotificationAppList.java"
 
@@ -7,18 +7,18 @@
 
 
 # instance fields
-.field final synthetic aeO:Lcom/android/settings/notification/NotificationAppList;
+.field final synthetic aeO:Lcom/android/settings_ext/notification/NotificationAppList;
 
 
 # direct methods
-.method public constructor <init>(Lcom/android/settings/notification/NotificationAppList;Landroid/content/Context;)V
+.method public constructor <init>(Lcom/android/settings_ext/notification/NotificationAppList;Landroid/content/Context;)V
     .locals 1
 
     .prologue
     const/4 v0, 0x0
 
     .line 213
-    iput-object p1, p0, Lcom/android/settings/notification/NotificationAppList$NotificationAppAdapter;->aeO:Lcom/android/settings/notification/NotificationAppList;
+    iput-object p1, p0, Lcom/android/settings_ext/notification/NotificationAppList$NotificationAppAdapter;->aeO:Lcom/android/settings_ext/notification/NotificationAppList;
 
     .line 214
     invoke-direct {p0, p2, v0, v0}, Landroid/widget/ArrayAdapter;-><init>(Landroid/content/Context;II)V
@@ -27,19 +27,19 @@
     return-void
 .end method
 
-.method private a(Lcom/android/settings/notification/NotificationAppList$AppRow;)Ljava/lang/String;
+.method private a(Lcom/android/settings_ext/notification/NotificationAppList$AppRow;)Ljava/lang/String;
     .locals 4
 
     .prologue
     .line 309
-    iget-boolean v0, p1, Lcom/android/settings/notification/NotificationAppList$AppRow;->aeQ:Z
+    iget-boolean v0, p1, Lcom/android/settings_ext/notification/NotificationAppList$AppRow;->aeQ:Z
 
     if-eqz v0, :cond_1
 
     .line 310
-    iget-object v0, p0, Lcom/android/settings/notification/NotificationAppList$NotificationAppAdapter;->aeO:Lcom/android/settings/notification/NotificationAppList;
+    iget-object v0, p0, Lcom/android/settings_ext/notification/NotificationAppList$NotificationAppAdapter;->aeO:Lcom/android/settings_ext/notification/NotificationAppList;
 
-    invoke-static {v0}, Lcom/android/settings/notification/NotificationAppList;->b(Lcom/android/settings/notification/NotificationAppList;)Landroid/content/Context;
+    invoke-static {v0}, Lcom/android/settings_ext/notification/NotificationAppList;->b(Lcom/android/settings_ext/notification/NotificationAppList;)Landroid/content/Context;
 
     move-result-object v0
 
@@ -56,11 +56,11 @@
 
     .line 312
     :cond_1
-    iget-boolean v0, p1, Lcom/android/settings/notification/NotificationAppList$AppRow;->aeR:Z
+    iget-boolean v0, p1, Lcom/android/settings_ext/notification/NotificationAppList$AppRow;->aeR:Z
 
     if-nez v0, :cond_2
 
-    iget-boolean v0, p1, Lcom/android/settings/notification/NotificationAppList$AppRow;->aeS:Z
+    iget-boolean v0, p1, Lcom/android/settings_ext/notification/NotificationAppList$AppRow;->aeS:Z
 
     if-nez v0, :cond_2
 
@@ -71,9 +71,9 @@
 
     .line 315
     :cond_2
-    iget-object v0, p0, Lcom/android/settings/notification/NotificationAppList$NotificationAppAdapter;->aeO:Lcom/android/settings/notification/NotificationAppList;
+    iget-object v0, p0, Lcom/android/settings_ext/notification/NotificationAppList$NotificationAppAdapter;->aeO:Lcom/android/settings_ext/notification/NotificationAppList;
 
-    invoke-static {v0}, Lcom/android/settings/notification/NotificationAppList;->b(Lcom/android/settings/notification/NotificationAppList;)Landroid/content/Context;
+    invoke-static {v0}, Lcom/android/settings_ext/notification/NotificationAppList;->b(Lcom/android/settings_ext/notification/NotificationAppList;)Landroid/content/Context;
 
     move-result-object v0
 
@@ -84,9 +84,9 @@
     move-result-object v0
 
     .line 316
-    iget-object v1, p0, Lcom/android/settings/notification/NotificationAppList$NotificationAppAdapter;->aeO:Lcom/android/settings/notification/NotificationAppList;
+    iget-object v1, p0, Lcom/android/settings_ext/notification/NotificationAppList$NotificationAppAdapter;->aeO:Lcom/android/settings_ext/notification/NotificationAppList;
 
-    invoke-static {v1}, Lcom/android/settings/notification/NotificationAppList;->b(Lcom/android/settings/notification/NotificationAppList;)Landroid/content/Context;
+    invoke-static {v1}, Lcom/android/settings_ext/notification/NotificationAppList;->b(Lcom/android/settings_ext/notification/NotificationAppList;)Landroid/content/Context;
 
     move-result-object v1
 
@@ -97,14 +97,14 @@
     move-result-object v1
 
     .line 317
-    iget-boolean v2, p1, Lcom/android/settings/notification/NotificationAppList$AppRow;->aeR:Z
+    iget-boolean v2, p1, Lcom/android/settings_ext/notification/NotificationAppList$AppRow;->aeR:Z
 
-    iget-boolean v3, p1, Lcom/android/settings/notification/NotificationAppList$AppRow;->aeS:Z
+    iget-boolean v3, p1, Lcom/android/settings_ext/notification/NotificationAppList$AppRow;->aeS:Z
 
     if-eq v2, v3, :cond_3
 
     .line 318
-    iget-boolean v2, p1, Lcom/android/settings/notification/NotificationAppList$AppRow;->aeR:Z
+    iget-boolean v2, p1, Lcom/android/settings_ext/notification/NotificationAppList$AppRow;->aeR:Z
 
     if-nez v2, :cond_0
 
@@ -122,9 +122,9 @@
 
     move-result-object v0
 
-    iget-object v2, p0, Lcom/android/settings/notification/NotificationAppList$NotificationAppAdapter;->aeO:Lcom/android/settings/notification/NotificationAppList;
+    iget-object v2, p0, Lcom/android/settings_ext/notification/NotificationAppList$NotificationAppAdapter;->aeO:Lcom/android/settings_ext/notification/NotificationAppList;
 
-    invoke-static {v2}, Lcom/android/settings/notification/NotificationAppList;->b(Lcom/android/settings/notification/NotificationAppList;)Landroid/content/Context;
+    invoke-static {v2}, Lcom/android/settings_ext/notification/NotificationAppList;->b(Lcom/android/settings_ext/notification/NotificationAppList;)Landroid/content/Context;
 
     move-result-object v2
 
@@ -198,21 +198,21 @@
 
 
 # virtual methods
-.method public a(Landroid/view/ViewGroup;Lcom/android/settings/notification/NotificationAppList$Row;)Landroid/view/View;
+.method public a(Landroid/view/ViewGroup;Lcom/android/settings_ext/notification/NotificationAppList$Row;)Landroid/view/View;
     .locals 4
 
     .prologue
     const/4 v2, 0x0
 
     .line 251
-    instance-of v0, p2, Lcom/android/settings/notification/NotificationAppList$AppRow;
+    instance-of v0, p2, Lcom/android/settings_ext/notification/NotificationAppList$AppRow;
 
     if-nez v0, :cond_0
 
     .line 252
-    iget-object v0, p0, Lcom/android/settings/notification/NotificationAppList$NotificationAppAdapter;->aeO:Lcom/android/settings/notification/NotificationAppList;
+    iget-object v0, p0, Lcom/android/settings_ext/notification/NotificationAppList$NotificationAppAdapter;->aeO:Lcom/android/settings_ext/notification/NotificationAppList;
 
-    invoke-static {v0}, Lcom/android/settings/notification/NotificationAppList;->a(Lcom/android/settings/notification/NotificationAppList;)Landroid/view/LayoutInflater;
+    invoke-static {v0}, Lcom/android/settings_ext/notification/NotificationAppList;->a(Lcom/android/settings_ext/notification/NotificationAppList;)Landroid/view/LayoutInflater;
 
     move-result-object v0
 
@@ -228,9 +228,9 @@
 
     .line 254
     :cond_0
-    iget-object v0, p0, Lcom/android/settings/notification/NotificationAppList$NotificationAppAdapter;->aeO:Lcom/android/settings/notification/NotificationAppList;
+    iget-object v0, p0, Lcom/android/settings_ext/notification/NotificationAppList$NotificationAppAdapter;->aeO:Lcom/android/settings_ext/notification/NotificationAppList;
 
-    invoke-static {v0}, Lcom/android/settings/notification/NotificationAppList;->a(Lcom/android/settings/notification/NotificationAppList;)Landroid/view/LayoutInflater;
+    invoke-static {v0}, Lcom/android/settings_ext/notification/NotificationAppList;->a(Lcom/android/settings_ext/notification/NotificationAppList;)Landroid/view/LayoutInflater;
 
     move-result-object v0
 
@@ -241,21 +241,21 @@
     move-result-object v1
 
     .line 255
-    new-instance v2, Lcom/android/settings/notification/NotificationAppList$ViewHolder;
+    new-instance v2, Lcom/android/settings_ext/notification/NotificationAppList$ViewHolder;
 
     const/4 v0, 0x0
 
-    invoke-direct {v2, v0}, Lcom/android/settings/notification/NotificationAppList$ViewHolder;-><init>(Lcom/android/settings/notification/NotificationAppList$1;)V
+    invoke-direct {v2, v0}, Lcom/android/settings_ext/notification/NotificationAppList$ViewHolder;-><init>(Lcom/android/settings_ext/notification/NotificationAppList$1;)V
 
     move-object v0, v1
 
     .line 256
     check-cast v0, Landroid/view/ViewGroup;
 
-    iput-object v0, v2, Lcom/android/settings/notification/NotificationAppList$ViewHolder;->aeX:Landroid/view/ViewGroup;
+    iput-object v0, v2, Lcom/android/settings_ext/notification/NotificationAppList$ViewHolder;->aeX:Landroid/view/ViewGroup;
 
     .line 257
-    iget-object v0, v2, Lcom/android/settings/notification/NotificationAppList$ViewHolder;->aeX:Landroid/view/ViewGroup;
+    iget-object v0, v2, Lcom/android/settings_ext/notification/NotificationAppList$ViewHolder;->aeX:Landroid/view/ViewGroup;
 
     new-instance v3, Landroid/animation/LayoutTransition;
 
@@ -264,7 +264,7 @@
     invoke-virtual {v0, v3}, Landroid/view/ViewGroup;->setLayoutTransition(Landroid/animation/LayoutTransition;)V
 
     .line 258
-    iget-object v0, v2, Lcom/android/settings/notification/NotificationAppList$ViewHolder;->aeX:Landroid/view/ViewGroup;
+    iget-object v0, v2, Lcom/android/settings_ext/notification/NotificationAppList$ViewHolder;->aeX:Landroid/view/ViewGroup;
 
     new-instance v3, Landroid/animation/LayoutTransition;
 
@@ -281,7 +281,7 @@
 
     check-cast v0, Landroid/widget/ImageView;
 
-    iput-object v0, v2, Lcom/android/settings/notification/NotificationAppList$ViewHolder;->icon:Landroid/widget/ImageView;
+    iput-object v0, v2, Lcom/android/settings_ext/notification/NotificationAppList$ViewHolder;->icon:Landroid/widget/ImageView;
 
     .line 260
     const v0, 0x1020016
@@ -292,7 +292,7 @@
 
     check-cast v0, Landroid/widget/TextView;
 
-    iput-object v0, v2, Lcom/android/settings/notification/NotificationAppList$ViewHolder;->title:Landroid/widget/TextView;
+    iput-object v0, v2, Lcom/android/settings_ext/notification/NotificationAppList$ViewHolder;->title:Landroid/widget/TextView;
 
     .line 261
     const v0, 0x1020014
@@ -303,7 +303,7 @@
 
     check-cast v0, Landroid/widget/TextView;
 
-    iput-object v0, v2, Lcom/android/settings/notification/NotificationAppList$ViewHolder;->aeY:Landroid/widget/TextView;
+    iput-object v0, v2, Lcom/android/settings_ext/notification/NotificationAppList$ViewHolder;->aeY:Landroid/widget/TextView;
 
     .line 262
     const v0, 0x7f100016
@@ -312,7 +312,7 @@
 
     move-result-object v0
 
-    iput-object v0, v2, Lcom/android/settings/notification/NotificationAppList$ViewHolder;->aeZ:Landroid/view/View;
+    iput-object v0, v2, Lcom/android/settings_ext/notification/NotificationAppList$ViewHolder;->aeZ:Landroid/view/View;
 
     .line 263
     invoke-virtual {v1, v2}, Landroid/view/View;->setTag(Ljava/lang/Object;)V
@@ -320,7 +320,7 @@
     goto :goto_0
 .end method
 
-.method public a(Landroid/view/View;Lcom/android/settings/notification/NotificationAppList$Row;Z)V
+.method public a(Landroid/view/View;Lcom/android/settings_ext/notification/NotificationAppList$Row;Z)V
     .locals 5
 
     .prologue
@@ -329,7 +329,7 @@
     const/4 v3, 0x0
 
     .line 278
-    instance-of v0, p2, Lcom/android/settings/notification/NotificationAppList$AppRow;
+    instance-of v0, p2, Lcom/android/settings_ext/notification/NotificationAppList$AppRow;
 
     if-nez v0, :cond_0
 
@@ -343,7 +343,7 @@
     check-cast v0, Landroid/widget/TextView;
 
     .line 281
-    iget-object v1, p2, Lcom/android/settings/notification/NotificationAppList$Row;->aeW:Ljava/lang/String;
+    iget-object v1, p2, Lcom/android/settings_ext/notification/NotificationAppList$Row;->aeW:Ljava/lang/String;
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
@@ -353,24 +353,24 @@
 
     .line 285
     :cond_0
-    check-cast p2, Lcom/android/settings/notification/NotificationAppList$AppRow;
+    check-cast p2, Lcom/android/settings_ext/notification/NotificationAppList$AppRow;
 
     .line 286
     invoke-virtual {p1}, Landroid/view/View;->getTag()Ljava/lang/Object;
 
     move-result-object v0
 
-    check-cast v0, Lcom/android/settings/notification/NotificationAppList$ViewHolder;
+    check-cast v0, Lcom/android/settings_ext/notification/NotificationAppList$ViewHolder;
 
     .line 287
-    iget-object v1, v0, Lcom/android/settings/notification/NotificationAppList$ViewHolder;->aeX:Landroid/view/ViewGroup;
+    iget-object v1, v0, Lcom/android/settings_ext/notification/NotificationAppList$ViewHolder;->aeX:Landroid/view/ViewGroup;
 
-    invoke-direct {p0, v1, p3}, Lcom/android/settings/notification/NotificationAppList$NotificationAppAdapter;->a(Landroid/view/ViewGroup;Z)V
+    invoke-direct {p0, v1, p3}, Lcom/android/settings_ext/notification/NotificationAppList$NotificationAppAdapter;->a(Landroid/view/ViewGroup;Z)V
 
     .line 288
-    iget-object v4, v0, Lcom/android/settings/notification/NotificationAppList$ViewHolder;->aeZ:Landroid/view/View;
+    iget-object v4, v0, Lcom/android/settings_ext/notification/NotificationAppList$ViewHolder;->aeZ:Landroid/view/View;
 
-    iget-boolean v1, p2, Lcom/android/settings/notification/NotificationAppList$AppRow;->aeT:Z
+    iget-boolean v1, p2, Lcom/android/settings_ext/notification/NotificationAppList$AppRow;->aeT:Z
 
     if-eqz v1, :cond_1
 
@@ -380,45 +380,45 @@
     invoke-virtual {v4, v1}, Landroid/view/View;->setVisibility(I)V
 
     .line 289
-    iget-object v1, v0, Lcom/android/settings/notification/NotificationAppList$ViewHolder;->aeX:Landroid/view/ViewGroup;
+    iget-object v1, v0, Lcom/android/settings_ext/notification/NotificationAppList$ViewHolder;->aeX:Landroid/view/ViewGroup;
 
-    new-instance v4, Lcom/android/settings/notification/NotificationAppList$NotificationAppAdapter$1;
+    new-instance v4, Lcom/android/settings_ext/notification/NotificationAppList$NotificationAppAdapter$1;
 
-    invoke-direct {v4, p0, p2}, Lcom/android/settings/notification/NotificationAppList$NotificationAppAdapter$1;-><init>(Lcom/android/settings/notification/NotificationAppList$NotificationAppAdapter;Lcom/android/settings/notification/NotificationAppList$AppRow;)V
+    invoke-direct {v4, p0, p2}, Lcom/android/settings_ext/notification/NotificationAppList$NotificationAppAdapter$1;-><init>(Lcom/android/settings_ext/notification/NotificationAppList$NotificationAppAdapter;Lcom/android/settings_ext/notification/NotificationAppList$AppRow;)V
 
     invoke-virtual {v1, v4}, Landroid/view/ViewGroup;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     .line 300
-    iget-object v1, v0, Lcom/android/settings/notification/NotificationAppList$ViewHolder;->aeX:Landroid/view/ViewGroup;
+    iget-object v1, v0, Lcom/android/settings_ext/notification/NotificationAppList$ViewHolder;->aeX:Landroid/view/ViewGroup;
 
-    invoke-direct {p0, v1, p3}, Lcom/android/settings/notification/NotificationAppList$NotificationAppAdapter;->a(Landroid/view/ViewGroup;Z)V
+    invoke-direct {p0, v1, p3}, Lcom/android/settings_ext/notification/NotificationAppList$NotificationAppAdapter;->a(Landroid/view/ViewGroup;Z)V
 
     .line 301
-    iget-object v1, v0, Lcom/android/settings/notification/NotificationAppList$ViewHolder;->icon:Landroid/widget/ImageView;
+    iget-object v1, v0, Lcom/android/settings_ext/notification/NotificationAppList$ViewHolder;->icon:Landroid/widget/ImageView;
 
-    iget-object v4, p2, Lcom/android/settings/notification/NotificationAppList$AppRow;->icon:Landroid/graphics/drawable/Drawable;
+    iget-object v4, p2, Lcom/android/settings_ext/notification/NotificationAppList$AppRow;->icon:Landroid/graphics/drawable/Drawable;
 
     invoke-virtual {v1, v4}, Landroid/widget/ImageView;->setImageDrawable(Landroid/graphics/drawable/Drawable;)V
 
     .line 302
-    iget-object v1, v0, Lcom/android/settings/notification/NotificationAppList$ViewHolder;->title:Landroid/widget/TextView;
+    iget-object v1, v0, Lcom/android/settings_ext/notification/NotificationAppList$ViewHolder;->title:Landroid/widget/TextView;
 
-    iget-object v4, p2, Lcom/android/settings/notification/NotificationAppList$AppRow;->label:Ljava/lang/CharSequence;
+    iget-object v4, p2, Lcom/android/settings_ext/notification/NotificationAppList$AppRow;->label:Ljava/lang/CharSequence;
 
     invoke-virtual {v1, v4}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
     .line 303
-    invoke-direct {p0, p2}, Lcom/android/settings/notification/NotificationAppList$NotificationAppAdapter;->a(Lcom/android/settings/notification/NotificationAppList$AppRow;)Ljava/lang/String;
+    invoke-direct {p0, p2}, Lcom/android/settings_ext/notification/NotificationAppList$NotificationAppAdapter;->a(Lcom/android/settings_ext/notification/NotificationAppList$AppRow;)Ljava/lang/String;
 
     move-result-object v1
 
     .line 304
-    iget-object v4, v0, Lcom/android/settings/notification/NotificationAppList$ViewHolder;->aeY:Landroid/widget/TextView;
+    iget-object v4, v0, Lcom/android/settings_ext/notification/NotificationAppList$ViewHolder;->aeY:Landroid/widget/TextView;
 
     invoke-virtual {v4, v1}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
     .line 305
-    iget-object v0, v0, Lcom/android/settings/notification/NotificationAppList$ViewHolder;->aeY:Landroid/widget/TextView;
+    iget-object v0, v0, Lcom/android/settings_ext/notification/NotificationAppList$ViewHolder;->aeY:Landroid/widget/TextView;
 
     invoke-virtual {v1}, Ljava/lang/String;->isEmpty()Z
 
@@ -459,14 +459,14 @@
 
     .prologue
     .line 234
-    invoke-virtual {p0, p1}, Lcom/android/settings/notification/NotificationAppList$NotificationAppAdapter;->getItem(I)Ljava/lang/Object;
+    invoke-virtual {p0, p1}, Lcom/android/settings_ext/notification/NotificationAppList$NotificationAppAdapter;->getItem(I)Ljava/lang/Object;
 
     move-result-object v0
 
-    check-cast v0, Lcom/android/settings/notification/NotificationAppList$Row;
+    check-cast v0, Lcom/android/settings_ext/notification/NotificationAppList$Row;
 
     .line 235
-    instance-of v0, v0, Lcom/android/settings/notification/NotificationAppList$AppRow;
+    instance-of v0, v0, Lcom/android/settings_ext/notification/NotificationAppList$AppRow;
 
     if-eqz v0, :cond_0
 
@@ -488,9 +488,9 @@
     const/4 v3, 0x0
 
     .line 330
-    iget-object v0, p0, Lcom/android/settings/notification/NotificationAppList$NotificationAppAdapter;->aeO:Lcom/android/settings/notification/NotificationAppList;
+    iget-object v0, p0, Lcom/android/settings_ext/notification/NotificationAppList$NotificationAppAdapter;->aeO:Lcom/android/settings_ext/notification/NotificationAppList;
 
-    invoke-static {v0}, Lcom/android/settings/notification/NotificationAppList;->c(Lcom/android/settings/notification/NotificationAppList;)Ljava/util/ArrayList;
+    invoke-static {v0}, Lcom/android/settings_ext/notification/NotificationAppList;->c(Lcom/android/settings_ext/notification/NotificationAppList;)Ljava/util/ArrayList;
 
     move-result-object v0
 
@@ -501,7 +501,7 @@
     check-cast v0, Ljava/lang/String;
 
     .line 331
-    invoke-virtual {p0}, Lcom/android/settings/notification/NotificationAppList$NotificationAppAdapter;->getCount()I
+    invoke-virtual {p0}, Lcom/android/settings_ext/notification/NotificationAppList$NotificationAppAdapter;->getCount()I
 
     move-result v4
 
@@ -512,14 +512,14 @@
     if-ge v2, v4, :cond_1
 
     .line 333
-    invoke-virtual {p0, v2}, Lcom/android/settings/notification/NotificationAppList$NotificationAppAdapter;->getItem(I)Ljava/lang/Object;
+    invoke-virtual {p0, v2}, Lcom/android/settings_ext/notification/NotificationAppList$NotificationAppAdapter;->getItem(I)Ljava/lang/Object;
 
     move-result-object v1
 
-    check-cast v1, Lcom/android/settings/notification/NotificationAppList$Row;
+    check-cast v1, Lcom/android/settings_ext/notification/NotificationAppList$Row;
 
     .line 334
-    iget-object v1, v1, Lcom/android/settings/notification/NotificationAppList$Row;->aeW:Ljava/lang/String;
+    iget-object v1, v1, Lcom/android/settings_ext/notification/NotificationAppList$Row;->aeW:Ljava/lang/String;
 
     invoke-virtual {v1, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
@@ -551,20 +551,20 @@
 
     .prologue
     .line 343
-    invoke-virtual {p0, p1}, Lcom/android/settings/notification/NotificationAppList$NotificationAppAdapter;->getItem(I)Ljava/lang/Object;
+    invoke-virtual {p0, p1}, Lcom/android/settings_ext/notification/NotificationAppList$NotificationAppAdapter;->getItem(I)Ljava/lang/Object;
 
     move-result-object v0
 
-    check-cast v0, Lcom/android/settings/notification/NotificationAppList$Row;
+    check-cast v0, Lcom/android/settings_ext/notification/NotificationAppList$Row;
 
     .line 344
-    iget-object v1, p0, Lcom/android/settings/notification/NotificationAppList$NotificationAppAdapter;->aeO:Lcom/android/settings/notification/NotificationAppList;
+    iget-object v1, p0, Lcom/android/settings_ext/notification/NotificationAppList$NotificationAppAdapter;->aeO:Lcom/android/settings_ext/notification/NotificationAppList;
 
-    invoke-static {v1}, Lcom/android/settings/notification/NotificationAppList;->c(Lcom/android/settings/notification/NotificationAppList;)Ljava/util/ArrayList;
+    invoke-static {v1}, Lcom/android/settings_ext/notification/NotificationAppList;->c(Lcom/android/settings_ext/notification/NotificationAppList;)Ljava/util/ArrayList;
 
     move-result-object v1
 
-    iget-object v0, v0, Lcom/android/settings/notification/NotificationAppList$Row;->aeW:Ljava/lang/String;
+    iget-object v0, v0, Lcom/android/settings_ext/notification/NotificationAppList$Row;->aeW:Ljava/lang/String;
 
     invoke-virtual {v1, v0}, Ljava/util/ArrayList;->indexOf(Ljava/lang/Object;)I
 
@@ -578,15 +578,15 @@
 
     .prologue
     .line 325
-    iget-object v0, p0, Lcom/android/settings/notification/NotificationAppList$NotificationAppAdapter;->aeO:Lcom/android/settings/notification/NotificationAppList;
+    iget-object v0, p0, Lcom/android/settings_ext/notification/NotificationAppList$NotificationAppAdapter;->aeO:Lcom/android/settings_ext/notification/NotificationAppList;
 
-    invoke-static {v0}, Lcom/android/settings/notification/NotificationAppList;->c(Lcom/android/settings/notification/NotificationAppList;)Ljava/util/ArrayList;
+    invoke-static {v0}, Lcom/android/settings_ext/notification/NotificationAppList;->c(Lcom/android/settings_ext/notification/NotificationAppList;)Ljava/util/ArrayList;
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/android/settings/notification/NotificationAppList$NotificationAppAdapter;->aeO:Lcom/android/settings/notification/NotificationAppList;
+    iget-object v1, p0, Lcom/android/settings_ext/notification/NotificationAppList$NotificationAppAdapter;->aeO:Lcom/android/settings_ext/notification/NotificationAppList;
 
-    invoke-static {v1}, Lcom/android/settings/notification/NotificationAppList;->c(Lcom/android/settings/notification/NotificationAppList;)Ljava/util/ArrayList;
+    invoke-static {v1}, Lcom/android/settings_ext/notification/NotificationAppList;->c(Lcom/android/settings_ext/notification/NotificationAppList;)Ljava/util/ArrayList;
 
     move-result-object v1
 
@@ -608,17 +608,17 @@
 
     .prologue
     .line 239
-    invoke-virtual {p0, p1}, Lcom/android/settings/notification/NotificationAppList$NotificationAppAdapter;->getItem(I)Ljava/lang/Object;
+    invoke-virtual {p0, p1}, Lcom/android/settings_ext/notification/NotificationAppList$NotificationAppAdapter;->getItem(I)Ljava/lang/Object;
 
     move-result-object v0
 
-    check-cast v0, Lcom/android/settings/notification/NotificationAppList$Row;
+    check-cast v0, Lcom/android/settings_ext/notification/NotificationAppList$Row;
 
     .line 241
     if-nez p2, :cond_0
 
     .line 242
-    invoke-virtual {p0, p3, v0}, Lcom/android/settings/notification/NotificationAppList$NotificationAppAdapter;->a(Landroid/view/ViewGroup;Lcom/android/settings/notification/NotificationAppList$Row;)Landroid/view/View;
+    invoke-virtual {p0, p3, v0}, Lcom/android/settings_ext/notification/NotificationAppList$NotificationAppAdapter;->a(Landroid/view/ViewGroup;Lcom/android/settings_ext/notification/NotificationAppList$Row;)Landroid/view/View;
 
     move-result-object p2
 
@@ -626,7 +626,7 @@
     :cond_0
     const/4 v1, 0x0
 
-    invoke-virtual {p0, p2, v0, v1}, Lcom/android/settings/notification/NotificationAppList$NotificationAppAdapter;->a(Landroid/view/View;Lcom/android/settings/notification/NotificationAppList$Row;Z)V
+    invoke-virtual {p0, p2, v0, v1}, Lcom/android/settings_ext/notification/NotificationAppList$NotificationAppAdapter;->a(Landroid/view/View;Lcom/android/settings_ext/notification/NotificationAppList$Row;Z)V
 
     .line 247
     return-object p2

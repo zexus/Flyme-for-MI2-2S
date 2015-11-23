@@ -1,12 +1,12 @@
-.class public Lcom/android/settings/TogglePositionFragment;
-.super Lcom/android/settings/BaseFragment;
+.class public Lcom/android/settings_ext/TogglePositionFragment;
+.super Lcom/android/settings_ext/BaseFragment;
 .source "TogglePositionFragment.java"
 
 
 # instance fields
 .field private yu:Ljava/util/List;
 
-.field private yv:Lcom/android/settings/toggleposition/DragGridView;
+.field private yv:Lcom/android/settings_ext/toggleposition/DragGridView;
 
 .field private yw:I
 
@@ -19,14 +19,14 @@
 
     .prologue
     .line 29
-    invoke-direct {p0}, Lcom/android/settings/BaseFragment;-><init>()V
+    invoke-direct {p0}, Lcom/android/settings_ext/BaseFragment;-><init>()V
 
     .line 30
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
-    iput-object v0, p0, Lcom/android/settings/TogglePositionFragment;->yu:Ljava/util/List;
+    iput-object v0, p0, Lcom/android/settings_ext/TogglePositionFragment;->yu:Ljava/util/List;
 
     return-void
 .end method
@@ -36,7 +36,7 @@
 
     .prologue
     .line 87
-    invoke-virtual {p0}, Lcom/android/settings/TogglePositionFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/TogglePositionFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
@@ -55,11 +55,11 @@
     if-ne v0, v1, :cond_0
 
     .line 88
-    iget-object v0, p0, Lcom/android/settings/TogglePositionFragment;->yv:Lcom/android/settings/toggleposition/DragGridView;
+    iget-object v0, p0, Lcom/android/settings_ext/TogglePositionFragment;->yv:Lcom/android/settings_ext/toggleposition/DragGridView;
 
-    iget v1, p0, Lcom/android/settings/TogglePositionFragment;->yx:I
+    iget v1, p0, Lcom/android/settings_ext/TogglePositionFragment;->yx:I
 
-    invoke-virtual {v0, v1}, Lcom/android/settings/toggleposition/DragGridView;->setNumColumns(I)V
+    invoke-virtual {v0, v1}, Lcom/android/settings_ext/toggleposition/DragGridView;->setNumColumns(I)V
 
     .line 93
     :goto_0
@@ -67,11 +67,11 @@
 
     .line 91
     :cond_0
-    iget-object v0, p0, Lcom/android/settings/TogglePositionFragment;->yv:Lcom/android/settings/toggleposition/DragGridView;
+    iget-object v0, p0, Lcom/android/settings_ext/TogglePositionFragment;->yv:Lcom/android/settings_ext/toggleposition/DragGridView;
 
-    iget v1, p0, Lcom/android/settings/TogglePositionFragment;->yw:I
+    iget v1, p0, Lcom/android/settings_ext/TogglePositionFragment;->yw:I
 
-    invoke-virtual {v0, v1}, Lcom/android/settings/toggleposition/DragGridView;->setNumColumns(I)V
+    invoke-virtual {v0, v1}, Lcom/android/settings_ext/toggleposition/DragGridView;->setNumColumns(I)V
 
     goto :goto_0
 .end method
@@ -83,10 +83,10 @@
 
     .prologue
     .line 82
-    invoke-super {p0, p1}, Lcom/android/settings/BaseFragment;->onConfigurationChanged(Landroid/content/res/Configuration;)V
+    invoke-super {p0, p1}, Lcom/android/settings_ext/BaseFragment;->onConfigurationChanged(Landroid/content/res/Configuration;)V
 
     .line 83
-    invoke-direct {p0}, Lcom/android/settings/TogglePositionFragment;->hh()V
+    invoke-direct {p0}, Lcom/android/settings_ext/TogglePositionFragment;->hh()V
 
     .line 84
     return-void
@@ -176,9 +176,9 @@
 
     move-result-object v0
 
-    check-cast v0, Lcom/android/settings/toggleposition/DragGridView;
+    check-cast v0, Lcom/android/settings_ext/toggleposition/DragGridView;
 
-    iput-object v0, p0, Lcom/android/settings/TogglePositionFragment;->yv:Lcom/android/settings/toggleposition/DragGridView;
+    iput-object v0, p0, Lcom/android/settings_ext/TogglePositionFragment;->yv:Lcom/android/settings_ext/toggleposition/DragGridView;
 
     .line 57
     invoke-virtual {p1}, Landroid/view/View;->getContext()Landroid/content/Context;
@@ -262,7 +262,7 @@
     invoke-virtual {v5, v6, v0}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 67
-    iget-object v0, p0, Lcom/android/settings/TogglePositionFragment;->yu:Ljava/util/List;
+    iget-object v0, p0, Lcom/android/settings_ext/TogglePositionFragment;->yu:Ljava/util/List;
 
     invoke-interface {v0, v5}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
@@ -276,7 +276,7 @@
 
     .line 70
     :cond_2
-    invoke-virtual {p0}, Lcom/android/settings/TogglePositionFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/TogglePositionFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
@@ -290,10 +290,10 @@
 
     move-result v0
 
-    iput v0, p0, Lcom/android/settings/TogglePositionFragment;->yw:I
+    iput v0, p0, Lcom/android/settings_ext/TogglePositionFragment;->yw:I
 
     .line 72
-    invoke-virtual {p0}, Lcom/android/settings/TogglePositionFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/TogglePositionFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
@@ -307,26 +307,26 @@
 
     move-result v0
 
-    iput v0, p0, Lcom/android/settings/TogglePositionFragment;->yx:I
+    iput v0, p0, Lcom/android/settings_ext/TogglePositionFragment;->yx:I
 
     .line 75
-    new-instance v0, Lcom/android/settings/toggleposition/a;
+    new-instance v0, Lcom/android/settings_ext/toggleposition/a;
 
     invoke-virtual {p1}, Landroid/view/View;->getContext()Landroid/content/Context;
 
     move-result-object v1
 
-    iget-object v2, p0, Lcom/android/settings/TogglePositionFragment;->yu:Ljava/util/List;
+    iget-object v2, p0, Lcom/android/settings_ext/TogglePositionFragment;->yu:Ljava/util/List;
 
-    invoke-direct {v0, v1, v2}, Lcom/android/settings/toggleposition/a;-><init>(Landroid/content/Context;Ljava/util/List;)V
+    invoke-direct {v0, v1, v2}, Lcom/android/settings_ext/toggleposition/a;-><init>(Landroid/content/Context;Ljava/util/List;)V
 
     .line 76
-    iget-object v1, p0, Lcom/android/settings/TogglePositionFragment;->yv:Lcom/android/settings/toggleposition/DragGridView;
+    iget-object v1, p0, Lcom/android/settings_ext/TogglePositionFragment;->yv:Lcom/android/settings_ext/toggleposition/DragGridView;
 
-    invoke-virtual {v1, v0}, Lcom/android/settings/toggleposition/DragGridView;->setAdapter(Landroid/widget/ListAdapter;)V
+    invoke-virtual {v1, v0}, Lcom/android/settings_ext/toggleposition/DragGridView;->setAdapter(Landroid/widget/ListAdapter;)V
 
     .line 77
-    invoke-direct {p0}, Lcom/android/settings/TogglePositionFragment;->hh()V
+    invoke-direct {p0}, Lcom/android/settings_ext/TogglePositionFragment;->hh()V
 
     .line 78
     return-void

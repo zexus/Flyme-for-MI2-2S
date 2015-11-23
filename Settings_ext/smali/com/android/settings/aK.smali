@@ -1,4 +1,4 @@
-.class Lcom/android/settings/aK;
+.class Lcom/android/settings_ext/aK;
 .super Ljava/lang/Object;
 .source "CryptKeeper.java"
 
@@ -7,16 +7,16 @@
 
 
 # instance fields
-.field final synthetic fb:Lcom/android/settings/CryptKeeper;
+.field final synthetic fb:Lcom/android/settings_ext/CryptKeeper;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/CryptKeeper;)V
+.method constructor <init>(Lcom/android/settings_ext/CryptKeeper;)V
     .locals 0
 
     .prologue
     .line 684
-    iput-object p1, p0, Lcom/android/settings/aK;->fb:Lcom/android/settings/CryptKeeper;
+    iput-object p1, p0, Lcom/android/settings_ext/aK;->fb:Lcom/android/settings_ext/CryptKeeper;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -48,22 +48,22 @@
     const/4 v3, 0x0
 
     .line 697
-    iget-object v0, p0, Lcom/android/settings/aK;->fb:Lcom/android/settings/CryptKeeper;
+    iget-object v0, p0, Lcom/android/settings_ext/aK;->fb:Lcom/android/settings_ext/CryptKeeper;
 
-    invoke-static {v0}, Lcom/android/settings/CryptKeeper;->a(Lcom/android/settings/CryptKeeper;)Lcom/android/internal/widget/LockPatternView;
+    invoke-static {v0}, Lcom/android/settings_ext/CryptKeeper;->a(Lcom/android/settings_ext/CryptKeeper;)Lcom/android/internal/widget/LockPatternView;
 
     move-result-object v0
 
     invoke-virtual {v0, v3}, Lcom/android/internal/widget/LockPatternView;->setEnabled(Z)V
 
     .line 698
-    new-instance v0, Lcom/android/settings/aO;
+    new-instance v0, Lcom/android/settings_ext/aO;
 
-    iget-object v1, p0, Lcom/android/settings/aK;->fb:Lcom/android/settings/CryptKeeper;
+    iget-object v1, p0, Lcom/android/settings_ext/aK;->fb:Lcom/android/settings_ext/CryptKeeper;
 
     const/4 v2, 0x0
 
-    invoke-direct {v0, v1, v2}, Lcom/android/settings/aO;-><init>(Lcom/android/settings/CryptKeeper;Lcom/android/settings/aG;)V
+    invoke-direct {v0, v1, v2}, Lcom/android/settings_ext/aO;-><init>(Lcom/android/settings_ext/CryptKeeper;Lcom/android/settings_ext/aG;)V
 
     const/4 v1, 0x1
 
@@ -75,7 +75,7 @@
 
     aput-object v2, v1, v3
 
-    invoke-virtual {v0, v1}, Lcom/android/settings/aO;->execute([Ljava/lang/Object;)Landroid/os/AsyncTask;
+    invoke-virtual {v0, v1}, Lcom/android/settings_ext/aO;->execute([Ljava/lang/Object;)Landroid/os/AsyncTask;
 
     .line 699
     return-void
@@ -86,15 +86,15 @@
 
     .prologue
     .line 688
-    iget-object v0, p0, Lcom/android/settings/aK;->fb:Lcom/android/settings/CryptKeeper;
+    iget-object v0, p0, Lcom/android/settings_ext/aK;->fb:Lcom/android/settings_ext/CryptKeeper;
 
-    invoke-static {v0}, Lcom/android/settings/CryptKeeper;->a(Lcom/android/settings/CryptKeeper;)Lcom/android/internal/widget/LockPatternView;
+    invoke-static {v0}, Lcom/android/settings_ext/CryptKeeper;->a(Lcom/android/settings_ext/CryptKeeper;)Lcom/android/internal/widget/LockPatternView;
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/android/settings/aK;->fb:Lcom/android/settings/CryptKeeper;
+    iget-object v1, p0, Lcom/android/settings_ext/aK;->fb:Lcom/android/settings_ext/CryptKeeper;
 
-    invoke-static {v1}, Lcom/android/settings/CryptKeeper;->c(Lcom/android/settings/CryptKeeper;)Ljava/lang/Runnable;
+    invoke-static {v1}, Lcom/android/settings_ext/CryptKeeper;->c(Lcom/android/settings_ext/CryptKeeper;)Ljava/lang/Runnable;
 
     move-result-object v1
 

@@ -1,4 +1,4 @@
-.class public Lcom/android/settings/MiuiAppPicker;
+.class public Lcom/android/settings_ext/MiuiAppPicker;
 .super Landroid/app/Activity;
 .source "MiuiAppPicker.java"
 
@@ -8,7 +8,7 @@
 
 
 # instance fields
-.field private os:Lcom/android/settings/do;
+.field private os:Lcom/android/settings_ext/do;
 
 .field private ot:Landroid/app/AlertDialog;
 
@@ -19,11 +19,11 @@
 
     .prologue
     .line 140
-    new-instance v0, Lcom/android/settings/dn;
+    new-instance v0, Lcom/android/settings_ext/dn;
 
-    invoke-direct {v0}, Lcom/android/settings/dn;-><init>()V
+    invoke-direct {v0}, Lcom/android/settings_ext/dn;-><init>()V
 
-    sput-object v0, Lcom/android/settings/MiuiAppPicker;->bh:Ljava/util/Comparator;
+    sput-object v0, Lcom/android/settings_ext/MiuiAppPicker;->bh:Ljava/util/Comparator;
 
     return-void
 .end method
@@ -39,22 +39,22 @@
     return-void
 .end method
 
-.method static synthetic a(Lcom/android/settings/MiuiAppPicker;Landroid/app/AlertDialog;)Landroid/app/AlertDialog;
+.method static synthetic a(Lcom/android/settings_ext/MiuiAppPicker;Landroid/app/AlertDialog;)Landroid/app/AlertDialog;
     .locals 0
 
     .prologue
     .line 29
-    iput-object p1, p0, Lcom/android/settings/MiuiAppPicker;->ot:Landroid/app/AlertDialog;
+    iput-object p1, p0, Lcom/android/settings_ext/MiuiAppPicker;->ot:Landroid/app/AlertDialog;
 
     return-object p1
 .end method
 
-.method static synthetic a(Lcom/android/settings/MiuiAppPicker;)Lcom/android/settings/do;
+.method static synthetic a(Lcom/android/settings_ext/MiuiAppPicker;)Lcom/android/settings_ext/do;
     .locals 1
 
     .prologue
     .line 29
-    iget-object v0, p0, Lcom/android/settings/MiuiAppPicker;->os:Lcom/android/settings/do;
+    iget-object v0, p0, Lcom/android/settings_ext/MiuiAppPicker;->os:Lcom/android/settings_ext/do;
 
     return-object v0
 .end method
@@ -64,7 +64,7 @@
 
     .prologue
     .line 29
-    sget-object v0, Lcom/android/settings/MiuiAppPicker;->bh:Ljava/util/Comparator;
+    sget-object v0, Lcom/android/settings_ext/MiuiAppPicker;->bh:Ljava/util/Comparator;
 
     return-object v0
 .end method
@@ -79,7 +79,7 @@
     invoke-super {p0, p1}, Landroid/app/Activity;->onCreate(Landroid/os/Bundle;)V
 
     .line 37
-    invoke-virtual {p0}, Lcom/android/settings/MiuiAppPicker;->getLayoutInflater()Landroid/view/LayoutInflater;
+    invoke-virtual {p0}, Lcom/android/settings_ext/MiuiAppPicker;->getLayoutInflater()Landroid/view/LayoutInflater;
 
     move-result-object v0
 
@@ -108,51 +108,51 @@
 
     move-result-object v1
 
-    iput-object v1, p0, Lcom/android/settings/MiuiAppPicker;->ot:Landroid/app/AlertDialog;
+    iput-object v1, p0, Lcom/android/settings_ext/MiuiAppPicker;->ot:Landroid/app/AlertDialog;
 
     .line 41
-    iget-object v1, p0, Lcom/android/settings/MiuiAppPicker;->ot:Landroid/app/AlertDialog;
+    iget-object v1, p0, Lcom/android/settings_ext/MiuiAppPicker;->ot:Landroid/app/AlertDialog;
 
     invoke-virtual {v1, v0}, Landroid/app/AlertDialog;->setView(Landroid/view/View;)V
 
     .line 42
-    new-instance v1, Lcom/android/settings/dl;
+    new-instance v1, Lcom/android/settings_ext/dl;
 
-    invoke-direct {v1, p0}, Lcom/android/settings/dl;-><init>(Lcom/android/settings/MiuiAppPicker;)V
+    invoke-direct {v1, p0}, Lcom/android/settings_ext/dl;-><init>(Lcom/android/settings_ext/MiuiAppPicker;)V
 
     invoke-virtual {v0, v1}, Landroid/widget/ListView;->setOnItemClickListener(Landroid/widget/AdapterView$OnItemClickListener;)V
 
     .line 54
-    new-instance v1, Lcom/android/settings/do;
+    new-instance v1, Lcom/android/settings_ext/do;
 
-    invoke-direct {v1, p0, p0}, Lcom/android/settings/do;-><init>(Lcom/android/settings/MiuiAppPicker;Landroid/content/Context;)V
+    invoke-direct {v1, p0, p0}, Lcom/android/settings_ext/do;-><init>(Lcom/android/settings_ext/MiuiAppPicker;Landroid/content/Context;)V
 
-    iput-object v1, p0, Lcom/android/settings/MiuiAppPicker;->os:Lcom/android/settings/do;
+    iput-object v1, p0, Lcom/android/settings_ext/MiuiAppPicker;->os:Lcom/android/settings_ext/do;
 
     .line 55
-    iget-object v1, p0, Lcom/android/settings/MiuiAppPicker;->os:Lcom/android/settings/do;
+    iget-object v1, p0, Lcom/android/settings_ext/MiuiAppPicker;->os:Lcom/android/settings_ext/do;
 
-    invoke-virtual {v1}, Lcom/android/settings/do;->getCount()I
+    invoke-virtual {v1}, Lcom/android/settings_ext/do;->getCount()I
 
     move-result v1
 
     if-gtz v1, :cond_0
 
     .line 56
-    invoke-virtual {p0}, Lcom/android/settings/MiuiAppPicker;->finish()V
+    invoke-virtual {p0}, Lcom/android/settings_ext/MiuiAppPicker;->finish()V
 
     .line 60
     :goto_0
-    iget-object v0, p0, Lcom/android/settings/MiuiAppPicker;->ot:Landroid/app/AlertDialog;
+    iget-object v0, p0, Lcom/android/settings_ext/MiuiAppPicker;->ot:Landroid/app/AlertDialog;
 
     invoke-virtual {v0}, Landroid/app/AlertDialog;->show()V
 
     .line 61
-    iget-object v0, p0, Lcom/android/settings/MiuiAppPicker;->ot:Landroid/app/AlertDialog;
+    iget-object v0, p0, Lcom/android/settings_ext/MiuiAppPicker;->ot:Landroid/app/AlertDialog;
 
-    new-instance v1, Lcom/android/settings/dm;
+    new-instance v1, Lcom/android/settings_ext/dm;
 
-    invoke-direct {v1, p0}, Lcom/android/settings/dm;-><init>(Lcom/android/settings/MiuiAppPicker;)V
+    invoke-direct {v1, p0}, Lcom/android/settings_ext/dm;-><init>(Lcom/android/settings_ext/MiuiAppPicker;)V
 
     invoke-virtual {v0, v1}, Landroid/app/AlertDialog;->setOnDismissListener(Landroid/content/DialogInterface$OnDismissListener;)V
 
@@ -161,7 +161,7 @@
 
     .line 58
     :cond_0
-    iget-object v1, p0, Lcom/android/settings/MiuiAppPicker;->os:Lcom/android/settings/do;
+    iget-object v1, p0, Lcom/android/settings_ext/MiuiAppPicker;->os:Lcom/android/settings_ext/do;
 
     invoke-virtual {v0, v1}, Landroid/widget/ListView;->setAdapter(Landroid/widget/ListAdapter;)V
 
@@ -173,11 +173,11 @@
 
     .prologue
     .line 72
-    iget-object v0, p0, Lcom/android/settings/MiuiAppPicker;->ot:Landroid/app/AlertDialog;
+    iget-object v0, p0, Lcom/android/settings_ext/MiuiAppPicker;->ot:Landroid/app/AlertDialog;
 
     if-eqz v0, :cond_0
 
-    iget-object v0, p0, Lcom/android/settings/MiuiAppPicker;->ot:Landroid/app/AlertDialog;
+    iget-object v0, p0, Lcom/android/settings_ext/MiuiAppPicker;->ot:Landroid/app/AlertDialog;
 
     invoke-virtual {v0}, Landroid/app/AlertDialog;->isShowing()Z
 
@@ -186,7 +186,7 @@
     if-eqz v0, :cond_0
 
     .line 73
-    iget-object v0, p0, Lcom/android/settings/MiuiAppPicker;->ot:Landroid/app/AlertDialog;
+    iget-object v0, p0, Lcom/android/settings_ext/MiuiAppPicker;->ot:Landroid/app/AlertDialog;
 
     invoke-virtual {v0}, Landroid/app/AlertDialog;->dismiss()V
 

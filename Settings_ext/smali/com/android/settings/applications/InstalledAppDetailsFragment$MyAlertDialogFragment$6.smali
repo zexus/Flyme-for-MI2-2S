@@ -1,4 +1,4 @@
-.class Lcom/android/settings/applications/InstalledAppDetailsFragment$MyAlertDialogFragment$6;
+.class Lcom/android/settings_ext/applications/InstalledAppDetailsFragment$MyAlertDialogFragment$6;
 .super Ljava/lang/Object;
 .source "InstalledAppDetailsFragment.java"
 
@@ -7,16 +7,16 @@
 
 
 # instance fields
-.field final synthetic GG:Lcom/android/settings/applications/InstalledAppDetailsFragment$MyAlertDialogFragment;
+.field final synthetic GG:Lcom/android/settings_ext/applications/InstalledAppDetailsFragment$MyAlertDialogFragment;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/applications/InstalledAppDetailsFragment$MyAlertDialogFragment;)V
+.method constructor <init>(Lcom/android/settings_ext/applications/InstalledAppDetailsFragment$MyAlertDialogFragment;)V
     .locals 0
 
     .prologue
     .line 822
-    iput-object p1, p0, Lcom/android/settings/applications/InstalledAppDetailsFragment$MyAlertDialogFragment$6;->GG:Lcom/android/settings/applications/InstalledAppDetailsFragment$MyAlertDialogFragment;
+    iput-object p1, p0, Lcom/android/settings_ext/applications/InstalledAppDetailsFragment$MyAlertDialogFragment$6;->GG:Lcom/android/settings_ext/applications/InstalledAppDetailsFragment$MyAlertDialogFragment;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -30,29 +30,29 @@
 
     .prologue
     .line 825
-    new-instance v1, Lcom/android/settings/applications/InstalledAppDetailsFragment$DisableChanger;
+    new-instance v1, Lcom/android/settings_ext/applications/InstalledAppDetailsFragment$DisableChanger;
 
-    iget-object v0, p0, Lcom/android/settings/applications/InstalledAppDetailsFragment$MyAlertDialogFragment$6;->GG:Lcom/android/settings/applications/InstalledAppDetailsFragment$MyAlertDialogFragment;
+    iget-object v0, p0, Lcom/android/settings_ext/applications/InstalledAppDetailsFragment$MyAlertDialogFragment$6;->GG:Lcom/android/settings_ext/applications/InstalledAppDetailsFragment$MyAlertDialogFragment;
 
-    invoke-virtual {v0}, Lcom/android/settings/applications/InstalledAppDetailsFragment$MyAlertDialogFragment;->jm()Lcom/android/settings/applications/InstalledAppDetailsFragment;
+    invoke-virtual {v0}, Lcom/android/settings_ext/applications/InstalledAppDetailsFragment$MyAlertDialogFragment;->jm()Lcom/android/settings_ext/applications/InstalledAppDetailsFragment;
 
     move-result-object v0
 
-    iget-object v2, p0, Lcom/android/settings/applications/InstalledAppDetailsFragment$MyAlertDialogFragment$6;->GG:Lcom/android/settings/applications/InstalledAppDetailsFragment$MyAlertDialogFragment;
+    iget-object v2, p0, Lcom/android/settings_ext/applications/InstalledAppDetailsFragment$MyAlertDialogFragment$6;->GG:Lcom/android/settings_ext/applications/InstalledAppDetailsFragment$MyAlertDialogFragment;
 
-    invoke-virtual {v2}, Lcom/android/settings/applications/InstalledAppDetailsFragment$MyAlertDialogFragment;->jm()Lcom/android/settings/applications/InstalledAppDetailsFragment;
-
-    move-result-object v2
-
-    invoke-static {v2}, Lcom/android/settings/applications/InstalledAppDetailsFragment;->a(Lcom/android/settings/applications/InstalledAppDetailsFragment;)Lcom/android/settings/applications/ApplicationsState$AppEntry;
+    invoke-virtual {v2}, Lcom/android/settings_ext/applications/InstalledAppDetailsFragment$MyAlertDialogFragment;->jm()Lcom/android/settings_ext/applications/InstalledAppDetailsFragment;
 
     move-result-object v2
 
-    iget-object v2, v2, Lcom/android/settings/applications/ApplicationsState$AppEntry;->bl:Landroid/content/pm/ApplicationInfo;
+    invoke-static {v2}, Lcom/android/settings_ext/applications/InstalledAppDetailsFragment;->a(Lcom/android/settings_ext/applications/InstalledAppDetailsFragment;)Lcom/android/settings_ext/applications/ApplicationsState$AppEntry;
+
+    move-result-object v2
+
+    iget-object v2, v2, Lcom/android/settings_ext/applications/ApplicationsState$AppEntry;->bl:Landroid/content/pm/ApplicationInfo;
 
     const/4 v3, 0x3
 
-    invoke-direct {v1, v0, v2, v3}, Lcom/android/settings/applications/InstalledAppDetailsFragment$DisableChanger;-><init>(Lcom/android/settings/applications/InstalledAppDetailsFragment;Landroid/content/pm/ApplicationInfo;I)V
+    invoke-direct {v1, v0, v2, v3}, Lcom/android/settings_ext/applications/InstalledAppDetailsFragment$DisableChanger;-><init>(Lcom/android/settings_ext/applications/InstalledAppDetailsFragment;Landroid/content/pm/ApplicationInfo;I)V
 
     const/4 v0, 0x1
 
@@ -66,7 +66,7 @@
 
     aput-object v0, v2, v3
 
-    invoke-virtual {v1, v2}, Lcom/android/settings/applications/InstalledAppDetailsFragment$DisableChanger;->execute([Ljava/lang/Object;)Landroid/os/AsyncTask;
+    invoke-virtual {v1, v2}, Lcom/android/settings_ext/applications/InstalledAppDetailsFragment$DisableChanger;->execute([Ljava/lang/Object;)Landroid/os/AsyncTask;
 
     .line 828
     return-void

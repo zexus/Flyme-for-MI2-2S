@@ -1,4 +1,4 @@
-.class public Lcom/android/settings/wifi/WifiShareUploadFragment;
+.class public Lcom/android/settings_ext/wifi/WifiShareUploadFragment;
 .super Landroid/app/Fragment;
 .source "WifiShareUploadFragment.java"
 
@@ -6,7 +6,7 @@
 # instance fields
 .field private awF:Landroid/widget/Button;
 
-.field private awI:Lcom/android/settings/wifi/aE;
+.field private awI:Lcom/android/settings_ext/wifi/aE;
 
 .field private awJ:Landroid/app/ProgressDialog;
 
@@ -25,12 +25,12 @@
     return-void
 .end method
 
-.method static synthetic a(Lcom/android/settings/wifi/WifiShareUploadFragment;Z)V
+.method static synthetic a(Lcom/android/settings_ext/wifi/WifiShareUploadFragment;Z)V
     .locals 0
 
     .prologue
     .line 39
-    invoke-direct {p0, p1}, Lcom/android/settings/wifi/WifiShareUploadFragment;->br(Z)V
+    invoke-direct {p0, p1}, Lcom/android/settings_ext/wifi/WifiShareUploadFragment;->br(Z)V
 
     return-void
 .end method
@@ -78,17 +78,17 @@
 
     .prologue
     .line 132
-    invoke-virtual {p0}, Lcom/android/settings/wifi/WifiShareUploadFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/wifi/WifiShareUploadFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
-    invoke-static {v0, p1}, Lcom/android/settings/wifi/aG;->v(Landroid/content/Context;Z)V
+    invoke-static {v0, p1}, Lcom/android/settings_ext/wifi/aG;->v(Landroid/content/Context;Z)V
 
     .line 133
     if-nez p1, :cond_0
 
     .line 134
-    invoke-virtual {p0}, Lcom/android/settings/wifi/WifiShareUploadFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/wifi/WifiShareUploadFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
@@ -100,7 +100,7 @@
 
     .line 137
     :cond_0
-    invoke-virtual {p0}, Lcom/android/settings/wifi/WifiShareUploadFragment;->ju()V
+    invoke-virtual {p0}, Lcom/android/settings_ext/wifi/WifiShareUploadFragment;->ju()V
 
     goto :goto_0
 .end method
@@ -110,7 +110,7 @@
 
     .prologue
     .line 181
-    invoke-virtual {p0}, Lcom/android/settings/wifi/WifiShareUploadFragment;->isAdded()Z
+    invoke-virtual {p0}, Lcom/android/settings_ext/wifi/WifiShareUploadFragment;->isAdded()Z
 
     move-result v0
 
@@ -122,18 +122,18 @@
 
     .line 184
     :cond_0
-    invoke-virtual {p0}, Lcom/android/settings/wifi/WifiShareUploadFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/wifi/WifiShareUploadFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
-    invoke-static {v0}, Lcom/android/settings/wifi/Y;->bF(Landroid/content/Context;)I
+    invoke-static {v0}, Lcom/android/settings_ext/wifi/Y;->bF(Landroid/content/Context;)I
 
     move-result v0
 
     .line 185
-    iget-object v1, p0, Lcom/android/settings/wifi/WifiShareUploadFragment;->awK:Landroid/widget/TextView;
+    iget-object v1, p0, Lcom/android/settings_ext/wifi/WifiShareUploadFragment;->awK:Landroid/widget/TextView;
 
-    invoke-virtual {p0}, Lcom/android/settings/wifi/WifiShareUploadFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/wifi/WifiShareUploadFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v2
 
@@ -169,12 +169,12 @@
     const/4 v3, 0x1
 
     .line 46
-    invoke-virtual {p0}, Lcom/android/settings/wifi/WifiShareUploadFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/wifi/WifiShareUploadFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v1
 
     .line 47
-    invoke-static {v1}, Lcom/android/settings/wifi/WifiShareUploadFragment;->bJ(Landroid/content/Context;)Z
+    invoke-static {v1}, Lcom/android/settings_ext/wifi/WifiShareUploadFragment;->bJ(Landroid/content/Context;)Z
 
     move-result v0
 
@@ -187,7 +187,7 @@
 
     .line 50
     :cond_1
-    iget-object v0, p0, Lcom/android/settings/wifi/WifiShareUploadFragment;->awI:Lcom/android/settings/wifi/aE;
+    iget-object v0, p0, Lcom/android/settings_ext/wifi/WifiShareUploadFragment;->awI:Lcom/android/settings_ext/wifi/aE;
 
     if-eqz v0, :cond_0
 
@@ -197,9 +197,9 @@
     invoke-direct {v2}, Ljava/util/ArrayList;-><init>()V
 
     .line 55
-    iget-object v0, p0, Lcom/android/settings/wifi/WifiShareUploadFragment;->awI:Lcom/android/settings/wifi/aE;
+    iget-object v0, p0, Lcom/android/settings_ext/wifi/WifiShareUploadFragment;->awI:Lcom/android/settings_ext/wifi/aE;
 
-    invoke-virtual {v0, p1}, Lcom/android/settings/wifi/aE;->getItem(I)Ljava/lang/Object;
+    invoke-virtual {v0, p1}, Lcom/android/settings_ext/wifi/aE;->getItem(I)Ljava/lang/Object;
 
     move-result-object v0
 
@@ -215,7 +215,7 @@
     if-lez v0, :cond_2
 
     .line 58
-    invoke-static {v1, v2}, Lcom/android/settings/wifi/Y;->b(Landroid/content/Context;Ljava/util/ArrayList;)V
+    invoke-static {v1, v2}, Lcom/android/settings_ext/wifi/Y;->b(Landroid/content/Context;Ljava/util/ArrayList;)V
 
     .line 61
     :cond_2
@@ -223,7 +223,7 @@
 
     const v2, 0x7f090ca3
 
-    invoke-virtual {p0, v2}, Lcom/android/settings/wifi/WifiShareUploadFragment;->getString(I)Ljava/lang/String;
+    invoke-virtual {p0, v2}, Lcom/android/settings_ext/wifi/WifiShareUploadFragment;->getString(I)Ljava/lang/String;
 
     move-result-object v2
 
@@ -231,10 +231,10 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/wifi/WifiShareUploadFragment;->awJ:Landroid/app/ProgressDialog;
+    iput-object v0, p0, Lcom/android/settings_ext/wifi/WifiShareUploadFragment;->awJ:Landroid/app/ProgressDialog;
 
     .line 62
-    iget-object v0, p0, Lcom/android/settings/wifi/WifiShareUploadFragment;->awJ:Landroid/app/ProgressDialog;
+    iget-object v0, p0, Lcom/android/settings_ext/wifi/WifiShareUploadFragment;->awJ:Landroid/app/ProgressDialog;
 
     invoke-virtual {v0}, Landroid/app/ProgressDialog;->show()V
 
@@ -246,16 +246,16 @@
 
     .prologue
     .line 120
-    invoke-virtual {p0}, Lcom/android/settings/wifi/WifiShareUploadFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/wifi/WifiShareUploadFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
-    invoke-static {v0}, Lcom/android/settings/wifi/aG;->bK(Landroid/content/Context;)Z
+    invoke-static {v0}, Lcom/android/settings_ext/wifi/aG;->bK(Landroid/content/Context;)Z
 
     move-result v1
 
     .line 121
-    iget-object v2, p0, Lcom/android/settings/wifi/WifiShareUploadFragment;->awF:Landroid/widget/Button;
+    iget-object v2, p0, Lcom/android/settings_ext/wifi/WifiShareUploadFragment;->awF:Landroid/widget/Button;
 
     if-eqz v1, :cond_0
 
@@ -265,11 +265,11 @@
     invoke-virtual {v2, v0}, Landroid/widget/Button;->setText(I)V
 
     .line 123
-    iget-object v0, p0, Lcom/android/settings/wifi/WifiShareUploadFragment;->awF:Landroid/widget/Button;
+    iget-object v0, p0, Lcom/android/settings_ext/wifi/WifiShareUploadFragment;->awF:Landroid/widget/Button;
 
-    new-instance v2, Lcom/android/settings/wifi/aD;
+    new-instance v2, Lcom/android/settings_ext/wifi/aD;
 
-    invoke-direct {v2, p0, v1}, Lcom/android/settings/wifi/aD;-><init>(Lcom/android/settings/wifi/WifiShareUploadFragment;Z)V
+    invoke-direct {v2, p0, v1}, Lcom/android/settings_ext/wifi/aD;-><init>(Lcom/android/settings_ext/wifi/WifiShareUploadFragment;Z)V
 
     invoke-virtual {v0, v2}, Landroid/widget/Button;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
@@ -297,7 +297,7 @@
     invoke-super {p0, p1}, Landroid/app/Fragment;->onActivityCreated(Landroid/os/Bundle;)V
 
     .line 150
-    invoke-virtual {p0}, Lcom/android/settings/wifi/WifiShareUploadFragment;->getView()Landroid/view/View;
+    invoke-virtual {p0}, Lcom/android/settings_ext/wifi/WifiShareUploadFragment;->getView()Landroid/view/View;
 
     move-result-object v5
 
@@ -323,7 +323,7 @@
     invoke-virtual {v0, v1}, Landroid/widget/ListView;->setEmptyView(Landroid/view/View;)V
 
     .line 155
-    invoke-virtual {p0}, Lcom/android/settings/wifi/WifiShareUploadFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/wifi/WifiShareUploadFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v2
 
@@ -340,15 +340,15 @@
 
     check-cast v2, Landroid/widget/TextView;
 
-    iput-object v2, p0, Lcom/android/settings/wifi/WifiShareUploadFragment;->awK:Landroid/widget/TextView;
+    iput-object v2, p0, Lcom/android/settings_ext/wifi/WifiShareUploadFragment;->awK:Landroid/widget/TextView;
 
     .line 157
-    iget-object v2, p0, Lcom/android/settings/wifi/WifiShareUploadFragment;->awK:Landroid/widget/TextView;
+    iget-object v2, p0, Lcom/android/settings_ext/wifi/WifiShareUploadFragment;->awK:Landroid/widget/TextView;
 
     invoke-virtual {v0, v2}, Landroid/widget/ListView;->addHeaderView(Landroid/view/View;)V
 
     .line 159
-    invoke-direct {p0}, Lcom/android/settings/wifi/WifiShareUploadFragment;->vL()V
+    invoke-direct {p0}, Lcom/android/settings_ext/wifi/WifiShareUploadFragment;->vL()V
 
     .line 160
     new-instance v7, Ljava/util/ArrayList;
@@ -356,11 +356,11 @@
     invoke-direct {v7}, Ljava/util/ArrayList;-><init>()V
 
     .line 161
-    invoke-virtual {p0}, Lcom/android/settings/wifi/WifiShareUploadFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/wifi/WifiShareUploadFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v2
 
-    invoke-static {v2, v7}, Lcom/android/settings/wifi/Y;->a(Landroid/content/Context;Ljava/util/ArrayList;)Ljava/util/ArrayList;
+    invoke-static {v2, v7}, Lcom/android/settings_ext/wifi/Y;->a(Landroid/content/Context;Ljava/util/ArrayList;)Ljava/util/ArrayList;
 
     move-result-object v8
 
@@ -377,7 +377,7 @@
     invoke-virtual {v1, v2}, Landroid/widget/TextView;->setVisibility(I)V
 
     .line 163
-    iget-object v2, p0, Lcom/android/settings/wifi/WifiShareUploadFragment;->awK:Landroid/widget/TextView;
+    iget-object v2, p0, Lcom/android/settings_ext/wifi/WifiShareUploadFragment;->awK:Landroid/widget/TextView;
 
     invoke-virtual {v8}, Ljava/util/ArrayList;->size()I
 
@@ -408,18 +408,18 @@
     if-lez v3, :cond_2
 
     .line 168
-    new-instance v1, Lcom/android/settings/wifi/aE;
+    new-instance v1, Lcom/android/settings_ext/wifi/aE;
 
-    invoke-virtual {p0}, Lcom/android/settings/wifi/WifiShareUploadFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/wifi/WifiShareUploadFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v3
 
-    invoke-direct {v1, p0, v8, v7, v3}, Lcom/android/settings/wifi/aE;-><init>(Lcom/android/settings/wifi/WifiShareUploadFragment;Ljava/util/ArrayList;Ljava/util/ArrayList;Landroid/content/Context;)V
+    invoke-direct {v1, p0, v8, v7, v3}, Lcom/android/settings_ext/wifi/aE;-><init>(Lcom/android/settings_ext/wifi/WifiShareUploadFragment;Ljava/util/ArrayList;Ljava/util/ArrayList;Landroid/content/Context;)V
 
-    iput-object v1, p0, Lcom/android/settings/wifi/WifiShareUploadFragment;->awI:Lcom/android/settings/wifi/aE;
+    iput-object v1, p0, Lcom/android/settings_ext/wifi/WifiShareUploadFragment;->awI:Lcom/android/settings_ext/wifi/aE;
 
     .line 169
-    iget-object v1, p0, Lcom/android/settings/wifi/WifiShareUploadFragment;->awI:Lcom/android/settings/wifi/aE;
+    iget-object v1, p0, Lcom/android/settings_ext/wifi/WifiShareUploadFragment;->awI:Lcom/android/settings_ext/wifi/aE;
 
     invoke-virtual {v0, v1}, Landroid/widget/ListView;->setAdapter(Landroid/widget/ListAdapter;)V
 
@@ -432,11 +432,11 @@
 
     check-cast v0, Landroid/widget/Button;
 
-    iput-object v0, p0, Lcom/android/settings/wifi/WifiShareUploadFragment;->awF:Landroid/widget/Button;
+    iput-object v0, p0, Lcom/android/settings_ext/wifi/WifiShareUploadFragment;->awF:Landroid/widget/Button;
 
     .line 177
     :goto_1
-    invoke-virtual {p0}, Lcom/android/settings/wifi/WifiShareUploadFragment;->ju()V
+    invoke-virtual {p0}, Lcom/android/settings_ext/wifi/WifiShareUploadFragment;->ju()V
 
     .line 178
     return-void
@@ -460,10 +460,10 @@
 
     check-cast v0, Landroid/widget/Button;
 
-    iput-object v0, p0, Lcom/android/settings/wifi/WifiShareUploadFragment;->awF:Landroid/widget/Button;
+    iput-object v0, p0, Lcom/android/settings_ext/wifi/WifiShareUploadFragment;->awF:Landroid/widget/Button;
 
     .line 174
-    iget-object v0, p0, Lcom/android/settings/wifi/WifiShareUploadFragment;->awF:Landroid/widget/Button;
+    iget-object v0, p0, Lcom/android/settings_ext/wifi/WifiShareUploadFragment;->awF:Landroid/widget/Button;
 
     invoke-virtual {v0, v4}, Landroid/widget/Button;->setVisibility(I)V
 
@@ -475,7 +475,7 @@
 
     .prologue
     .line 143
-    invoke-virtual {p0}, Lcom/android/settings/wifi/WifiShareUploadFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/wifi/WifiShareUploadFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
@@ -500,11 +500,11 @@
 
     .prologue
     .line 112
-    iget-object v0, p0, Lcom/android/settings/wifi/WifiShareUploadFragment;->awJ:Landroid/app/ProgressDialog;
+    iget-object v0, p0, Lcom/android/settings_ext/wifi/WifiShareUploadFragment;->awJ:Landroid/app/ProgressDialog;
 
     if-eqz v0, :cond_0
 
-    iget-object v0, p0, Lcom/android/settings/wifi/WifiShareUploadFragment;->awJ:Landroid/app/ProgressDialog;
+    iget-object v0, p0, Lcom/android/settings_ext/wifi/WifiShareUploadFragment;->awJ:Landroid/app/ProgressDialog;
 
     invoke-virtual {v0}, Landroid/app/ProgressDialog;->isShowing()Z
 
@@ -513,14 +513,14 @@
     if-eqz v0, :cond_0
 
     .line 113
-    iget-object v0, p0, Lcom/android/settings/wifi/WifiShareUploadFragment;->awJ:Landroid/app/ProgressDialog;
+    iget-object v0, p0, Lcom/android/settings_ext/wifi/WifiShareUploadFragment;->awJ:Landroid/app/ProgressDialog;
 
     invoke-virtual {v0}, Landroid/app/ProgressDialog;->dismiss()V
 
     .line 114
     const/4 v0, 0x0
 
-    iput-object v0, p0, Lcom/android/settings/wifi/WifiShareUploadFragment;->awJ:Landroid/app/ProgressDialog;
+    iput-object v0, p0, Lcom/android/settings_ext/wifi/WifiShareUploadFragment;->awJ:Landroid/app/ProgressDialog;
 
     .line 116
     :cond_0

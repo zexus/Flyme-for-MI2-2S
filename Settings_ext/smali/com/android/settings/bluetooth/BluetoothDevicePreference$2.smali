@@ -1,19 +1,19 @@
-.class Lcom/android/settings/bluetooth/BluetoothDevicePreference$2;
+.class Lcom/android/settings_ext/bluetooth/BluetoothDevicePreference$2;
 .super Landroid/content/BroadcastReceiver;
 .source "BluetoothDevicePreference.java"
 
 
 # instance fields
-.field final synthetic My:Lcom/android/settings/bluetooth/BluetoothDevicePreference;
+.field final synthetic My:Lcom/android/settings_ext/bluetooth/BluetoothDevicePreference;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/bluetooth/BluetoothDevicePreference;)V
+.method constructor <init>(Lcom/android/settings_ext/bluetooth/BluetoothDevicePreference;)V
     .locals 0
 
     .prologue
     .line 469
-    iput-object p1, p0, Lcom/android/settings/bluetooth/BluetoothDevicePreference$2;->My:Lcom/android/settings/bluetooth/BluetoothDevicePreference;
+    iput-object p1, p0, Lcom/android/settings_ext/bluetooth/BluetoothDevicePreference$2;->My:Lcom/android/settings_ext/bluetooth/BluetoothDevicePreference;
 
     invoke-direct {p0}, Landroid/content/BroadcastReceiver;-><init>()V
 
@@ -65,17 +65,17 @@
     invoke-static {v0, v1}, Landroid/util/Log;->v(Ljava/lang/String;Ljava/lang/String;)I
 
     .line 477
-    iget-object v0, p0, Lcom/android/settings/bluetooth/BluetoothDevicePreference$2;->My:Lcom/android/settings/bluetooth/BluetoothDevicePreference;
+    iget-object v0, p0, Lcom/android/settings_ext/bluetooth/BluetoothDevicePreference$2;->My:Lcom/android/settings_ext/bluetooth/BluetoothDevicePreference;
 
-    invoke-static {v0}, Lcom/android/settings/bluetooth/BluetoothDevicePreference;->c(Lcom/android/settings/bluetooth/BluetoothDevicePreference;)Landroid/app/AlertDialog;
+    invoke-static {v0}, Lcom/android/settings_ext/bluetooth/BluetoothDevicePreference;->c(Lcom/android/settings_ext/bluetooth/BluetoothDevicePreference;)Landroid/app/AlertDialog;
 
     move-result-object v0
 
     if-eqz v0, :cond_1
 
-    iget-object v0, p0, Lcom/android/settings/bluetooth/BluetoothDevicePreference$2;->My:Lcom/android/settings/bluetooth/BluetoothDevicePreference;
+    iget-object v0, p0, Lcom/android/settings_ext/bluetooth/BluetoothDevicePreference$2;->My:Lcom/android/settings_ext/bluetooth/BluetoothDevicePreference;
 
-    invoke-static {v0}, Lcom/android/settings/bluetooth/BluetoothDevicePreference;->c(Lcom/android/settings/bluetooth/BluetoothDevicePreference;)Landroid/app/AlertDialog;
+    invoke-static {v0}, Lcom/android/settings_ext/bluetooth/BluetoothDevicePreference;->c(Lcom/android/settings_ext/bluetooth/BluetoothDevicePreference;)Landroid/app/AlertDialog;
 
     move-result-object v0
 
@@ -86,9 +86,9 @@
     if-eqz v0, :cond_1
 
     .line 478
-    iget-object v0, p0, Lcom/android/settings/bluetooth/BluetoothDevicePreference$2;->My:Lcom/android/settings/bluetooth/BluetoothDevicePreference;
+    iget-object v0, p0, Lcom/android/settings_ext/bluetooth/BluetoothDevicePreference$2;->My:Lcom/android/settings_ext/bluetooth/BluetoothDevicePreference;
 
-    invoke-static {v0}, Lcom/android/settings/bluetooth/BluetoothDevicePreference;->c(Lcom/android/settings/bluetooth/BluetoothDevicePreference;)Landroid/app/AlertDialog;
+    invoke-static {v0}, Lcom/android/settings_ext/bluetooth/BluetoothDevicePreference;->c(Lcom/android/settings_ext/bluetooth/BluetoothDevicePreference;)Landroid/app/AlertDialog;
 
     move-result-object v0
 
@@ -96,15 +96,15 @@
 
     .line 480
     :cond_1
-    iget-object v0, p0, Lcom/android/settings/bluetooth/BluetoothDevicePreference$2;->My:Lcom/android/settings/bluetooth/BluetoothDevicePreference;
+    iget-object v0, p0, Lcom/android/settings_ext/bluetooth/BluetoothDevicePreference$2;->My:Lcom/android/settings_ext/bluetooth/BluetoothDevicePreference;
 
-    invoke-static {v0}, Lcom/android/settings/bluetooth/BluetoothDevicePreference;->b(Lcom/android/settings/bluetooth/BluetoothDevicePreference;)Landroid/content/Context;
+    invoke-static {v0}, Lcom/android/settings_ext/bluetooth/BluetoothDevicePreference;->b(Lcom/android/settings_ext/bluetooth/BluetoothDevicePreference;)Landroid/content/Context;
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/android/settings/bluetooth/BluetoothDevicePreference$2;->My:Lcom/android/settings/bluetooth/BluetoothDevicePreference;
+    iget-object v1, p0, Lcom/android/settings_ext/bluetooth/BluetoothDevicePreference$2;->My:Lcom/android/settings_ext/bluetooth/BluetoothDevicePreference;
 
-    invoke-static {v1}, Lcom/android/settings/bluetooth/BluetoothDevicePreference;->a(Lcom/android/settings/bluetooth/BluetoothDevicePreference;)Landroid/content/BroadcastReceiver;
+    invoke-static {v1}, Lcom/android/settings_ext/bluetooth/BluetoothDevicePreference;->a(Lcom/android/settings_ext/bluetooth/BluetoothDevicePreference;)Landroid/content/BroadcastReceiver;
 
     move-result-object v1
 

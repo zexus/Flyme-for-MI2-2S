@@ -1,4 +1,4 @@
-.class Lcom/android/settings/display/p;
+.class Lcom/android/settings_ext/display/p;
 .super Ljava/lang/Object;
 .source "MiuiScreenSaverFragment.java"
 
@@ -7,16 +7,16 @@
 
 
 # instance fields
-.field final synthetic Vb:Lcom/android/settings/display/MiuiScreenSaverFragment;
+.field final synthetic Vb:Lcom/android/settings_ext/display/MiuiScreenSaverFragment;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/display/MiuiScreenSaverFragment;)V
+.method constructor <init>(Lcom/android/settings_ext/display/MiuiScreenSaverFragment;)V
     .locals 0
 
     .prologue
     .line 58
-    iput-object p1, p0, Lcom/android/settings/display/p;->Vb:Lcom/android/settings/display/MiuiScreenSaverFragment;
+    iput-object p1, p0, Lcom/android/settings_ext/display/p;->Vb:Lcom/android/settings_ext/display/MiuiScreenSaverFragment;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -30,9 +30,9 @@
 
     .prologue
     .line 62
-    iget-object v0, p0, Lcom/android/settings/display/p;->Vb:Lcom/android/settings/display/MiuiScreenSaverFragment;
+    iget-object v0, p0, Lcom/android/settings_ext/display/p;->Vb:Lcom/android/settings_ext/display/MiuiScreenSaverFragment;
 
-    invoke-static {v0}, Lcom/android/settings/display/MiuiScreenSaverFragment;->a(Lcom/android/settings/display/MiuiScreenSaverFragment;)V
+    invoke-static {v0}, Lcom/android/settings_ext/display/MiuiScreenSaverFragment;->a(Lcom/android/settings_ext/display/MiuiScreenSaverFragment;)V
 
     .line 63
     const/4 v0, 0x1

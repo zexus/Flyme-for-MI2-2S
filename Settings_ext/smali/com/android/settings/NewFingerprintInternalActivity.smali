@@ -1,4 +1,4 @@
-.class public Lcom/android/settings/NewFingerprintInternalActivity;
+.class public Lcom/android/settings_ext/NewFingerprintInternalActivity;
 .super Landroid/preference/PreferenceActivity;
 .source "NewFingerprintInternalActivity.java"
 
@@ -33,7 +33,7 @@
     .line 31
     const-string v1, ":android:show_fragment"
 
-    const-class v2, Lcom/android/settings/NewFingerprintInternalActivity$NewFingerprintFragment;
+    const-class v2, Lcom/android/settings_ext/NewFingerprintInternalActivity$NewFingerprintFragment;
 
     invoke-virtual {v2}, Ljava/lang/Class;->getName()Ljava/lang/String;
 

@@ -1,5 +1,5 @@
-.class public Lcom/android/settings/DummyFragment;
-.super Lcom/android/settings/BaseFragment;
+.class public Lcom/android/settings_ext/DummyFragment;
+.super Lcom/android/settings_ext/BaseFragment;
 .source "DummyFragment.java"
 
 
@@ -9,7 +9,7 @@
 
     .prologue
     .line 3
-    invoke-direct {p0}, Lcom/android/settings/BaseFragment;-><init>()V
+    invoke-direct {p0}, Lcom/android/settings_ext/BaseFragment;-><init>()V
 
     return-void
 .end method

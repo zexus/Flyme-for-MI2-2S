@@ -1,5 +1,5 @@
-.class final Lcom/android/settings/voice/m;
-.super Lcom/android/settings/search/a;
+.class final Lcom/android/settings_ext/voice/m;
+.super Lcom/android/settings_ext/search/a;
 .source "VoiceInputSettings.java"
 
 
@@ -9,12 +9,12 @@
 
     .prologue
     .line 181
-    invoke-direct {p0}, Lcom/android/settings/search/a;-><init>()V
+    invoke-direct {p0}, Lcom/android/settings_ext/search/a;-><init>()V
 
     return-void
 .end method
 
-.method private a(Landroid/content/Context;Landroid/content/pm/ResolveInfo;Ljava/lang/String;)Lcom/android/settings/search/n;
+.method private a(Landroid/content/Context;Landroid/content/pm/ResolveInfo;Ljava/lang/String;)Lcom/android/settings_ext/search/n;
     .locals 3
 
     .prologue
@@ -31,16 +31,16 @@
     invoke-direct {v1, v2, v0}, Landroid/content/ComponentName;-><init>(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 234
-    new-instance v0, Lcom/android/settings/search/n;
+    new-instance v0, Lcom/android/settings_ext/search/n;
 
-    invoke-direct {v0, p1}, Lcom/android/settings/search/n;-><init>(Landroid/content/Context;)V
+    invoke-direct {v0, p1}, Lcom/android/settings_ext/search/n;-><init>(Landroid/content/Context;)V
 
     .line 235
     invoke-virtual {v1}, Landroid/content/ComponentName;->flattenToString()Ljava/lang/String;
 
     move-result-object v1
 
-    iput-object v1, v0, Lcom/android/settings/search/n;->key:Ljava/lang/String;
+    iput-object v1, v0, Lcom/android/settings_ext/search/n;->key:Ljava/lang/String;
 
     .line 236
     invoke-virtual {p1}, Landroid/content/Context;->getPackageManager()Landroid/content/pm/PackageManager;
@@ -55,10 +55,10 @@
 
     move-result-object v1
 
-    iput-object v1, v0, Lcom/android/settings/search/n;->title:Ljava/lang/String;
+    iput-object v1, v0, Lcom/android/settings_ext/search/n;->title:Ljava/lang/String;
 
     .line 237
-    iput-object p3, v0, Lcom/android/settings/search/n;->aiY:Ljava/lang/String;
+    iput-object p3, v0, Lcom/android/settings_ext/search/n;->aiY:Ljava/lang/String;
 
     .line 239
     return-object v0
@@ -87,14 +87,14 @@
     move-result-object v4
 
     .line 191
-    new-instance v0, Lcom/android/settings/search/n;
+    new-instance v0, Lcom/android/settings_ext/search/n;
 
-    invoke-direct {v0, p1}, Lcom/android/settings/search/n;-><init>(Landroid/content/Context;)V
+    invoke-direct {v0, p1}, Lcom/android/settings_ext/search/n;-><init>(Landroid/content/Context;)V
 
     .line 192
     const-string v2, "voice_service_preference_section_title"
 
-    iput-object v2, v0, Lcom/android/settings/search/n;->key:Ljava/lang/String;
+    iput-object v2, v0, Lcom/android/settings_ext/search/n;->key:Ljava/lang/String;
 
     .line 193
     const v2, 0x7f090728
@@ -103,10 +103,10 @@
 
     move-result-object v2
 
-    iput-object v2, v0, Lcom/android/settings/search/n;->title:Ljava/lang/String;
+    iput-object v2, v0, Lcom/android/settings_ext/search/n;->title:Ljava/lang/String;
 
     .line 194
-    iput-object v4, v0, Lcom/android/settings/search/n;->aiY:Ljava/lang/String;
+    iput-object v4, v0, Lcom/android/settings_ext/search/n;->aiY:Ljava/lang/String;
 
     .line 195
     invoke-interface {v3, v0}, Ljava/util/List;->add(Ljava/lang/Object;)Z
@@ -172,7 +172,7 @@
 
     .line 210
     :cond_0
-    invoke-direct {p0, p1, v0, v4}, Lcom/android/settings/voice/m;->a(Landroid/content/Context;Landroid/content/pm/ResolveInfo;Ljava/lang/String;)Lcom/android/settings/search/n;
+    invoke-direct {p0, p1, v0, v4}, Lcom/android/settings_ext/voice/m;->a(Landroid/content/Context;Landroid/content/pm/ResolveInfo;Ljava/lang/String;)Lcom/android/settings_ext/search/n;
 
     move-result-object v0
 
@@ -213,7 +213,7 @@
     check-cast v0, Landroid/content/pm/ResolveInfo;
 
     .line 221
-    invoke-direct {p0, p1, v0, v4}, Lcom/android/settings/voice/m;->a(Landroid/content/Context;Landroid/content/pm/ResolveInfo;Ljava/lang/String;)Lcom/android/settings/search/n;
+    invoke-direct {p0, p1, v0, v4}, Lcom/android/settings_ext/voice/m;->a(Landroid/content/Context;Landroid/content/pm/ResolveInfo;Ljava/lang/String;)Lcom/android/settings_ext/search/n;
 
     move-result-object v0
 

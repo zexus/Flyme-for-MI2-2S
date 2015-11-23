@@ -1,4 +1,4 @@
-.class public Lcom/android/settings/TestingSettings;
+.class public Lcom/android/settings_ext/TestingSettings;
 .super Lmiui/preference/PreferenceActivity;
 .source "TestingSettings.java"
 
@@ -35,37 +35,37 @@
     .line 48
     const v0, 0x7f06008e
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/TestingSettings;->addPreferencesFromResource(I)V
+    invoke-virtual {p0, v0}, Lcom/android/settings_ext/TestingSettings;->addPreferencesFromResource(I)V
 
     .line 50
     const-string v0, "phone1"
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/TestingSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v0}, Lcom/android/settings_ext/TestingSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v0
 
     check-cast v0, Landroid/preference/PreferenceScreen;
 
-    iput-object v0, p0, Lcom/android/settings/TestingSettings;->xY:Landroid/preference/PreferenceScreen;
+    iput-object v0, p0, Lcom/android/settings_ext/TestingSettings;->xY:Landroid/preference/PreferenceScreen;
 
     .line 51
-    iget-object v0, p0, Lcom/android/settings/TestingSettings;->xY:Landroid/preference/PreferenceScreen;
+    iget-object v0, p0, Lcom/android/settings_ext/TestingSettings;->xY:Landroid/preference/PreferenceScreen;
 
     invoke-virtual {v0, p0}, Landroid/preference/PreferenceScreen;->setOnPreferenceClickListener(Landroid/preference/Preference$OnPreferenceClickListener;)V
 
     .line 53
     const-string v0, "phone2"
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/TestingSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v0}, Lcom/android/settings_ext/TestingSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v0
 
     check-cast v0, Landroid/preference/PreferenceScreen;
 
-    iput-object v0, p0, Lcom/android/settings/TestingSettings;->xZ:Landroid/preference/PreferenceScreen;
+    iput-object v0, p0, Lcom/android/settings_ext/TestingSettings;->xZ:Landroid/preference/PreferenceScreen;
 
     .line 54
-    iget-object v0, p0, Lcom/android/settings/TestingSettings;->xZ:Landroid/preference/PreferenceScreen;
+    iget-object v0, p0, Lcom/android/settings_ext/TestingSettings;->xZ:Landroid/preference/PreferenceScreen;
 
     invoke-virtual {v0, p0}, Landroid/preference/PreferenceScreen;->setOnPreferenceClickListener(Landroid/preference/Preference$OnPreferenceClickListener;)V
 
@@ -81,13 +81,13 @@
     if-eqz v0, :cond_1
 
     .line 57
-    iget-object v0, p0, Lcom/android/settings/TestingSettings;->xY:Landroid/preference/PreferenceScreen;
+    iget-object v0, p0, Lcom/android/settings_ext/TestingSettings;->xY:Landroid/preference/PreferenceScreen;
 
     new-instance v1, Ljava/lang/StringBuilder;
 
     invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
 
-    iget-object v2, p0, Lcom/android/settings/TestingSettings;->xY:Landroid/preference/PreferenceScreen;
+    iget-object v2, p0, Lcom/android/settings_ext/TestingSettings;->xY:Landroid/preference/PreferenceScreen;
 
     invoke-virtual {v2}, Landroid/preference/PreferenceScreen;->getTitle()Ljava/lang/CharSequence;
 
@@ -110,13 +110,13 @@
     invoke-virtual {v0, v1}, Landroid/preference/PreferenceScreen;->setTitle(Ljava/lang/CharSequence;)V
 
     .line 58
-    iget-object v0, p0, Lcom/android/settings/TestingSettings;->xZ:Landroid/preference/PreferenceScreen;
+    iget-object v0, p0, Lcom/android/settings_ext/TestingSettings;->xZ:Landroid/preference/PreferenceScreen;
 
     new-instance v1, Ljava/lang/StringBuilder;
 
     invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
 
-    iget-object v2, p0, Lcom/android/settings/TestingSettings;->xZ:Landroid/preference/PreferenceScreen;
+    iget-object v2, p0, Lcom/android/settings_ext/TestingSettings;->xZ:Landroid/preference/PreferenceScreen;
 
     invoke-virtual {v2}, Landroid/preference/PreferenceScreen;->getTitle()Ljava/lang/CharSequence;
 
@@ -140,18 +140,18 @@
 
     .line 64
     :goto_0
-    invoke-static {p0}, Lcom/android/settings/hl;->N(Landroid/content/Context;)Z
+    invoke-static {p0}, Lcom/android/settings_ext/hl;->N(Landroid/content/Context;)Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
     .line 65
-    invoke-virtual {p0}, Lcom/android/settings/TestingSettings;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
+    invoke-virtual {p0}, Lcom/android/settings_ext/TestingSettings;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/android/settings/TestingSettings;->xY:Landroid/preference/PreferenceScreen;
+    iget-object v1, p0, Lcom/android/settings_ext/TestingSettings;->xY:Landroid/preference/PreferenceScreen;
 
     invoke-virtual {v0, v1}, Landroid/preference/PreferenceScreen;->removePreference(Landroid/preference/Preference;)Z
 
@@ -161,11 +161,11 @@
 
     .line 60
     :cond_1
-    invoke-virtual {p0}, Lcom/android/settings/TestingSettings;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
+    invoke-virtual {p0}, Lcom/android/settings_ext/TestingSettings;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/android/settings/TestingSettings;->xZ:Landroid/preference/PreferenceScreen;
+    iget-object v1, p0, Lcom/android/settings_ext/TestingSettings;->xZ:Landroid/preference/PreferenceScreen;
 
     invoke-virtual {v0, v1}, Landroid/preference/PreferenceScreen;->removePreference(Landroid/preference/Preference;)Z
 
@@ -177,7 +177,7 @@
 
     .prologue
     .line 73
-    invoke-virtual {p0}, Lcom/android/settings/TestingSettings;->getMenuInflater()Landroid/view/MenuInflater;
+    invoke-virtual {p0}, Lcom/android/settings_ext/TestingSettings;->getMenuInflater()Landroid/view/MenuInflater;
 
     move-result-object v0
 
@@ -216,12 +216,12 @@
     :pswitch_0
     new-instance v0, Landroid/content/Intent;
 
-    const-class v1, Lcom/android/settings/UsageStatsActivity;
+    const-class v1, Lcom/android/settings_ext/UsageStatsActivity;
 
     invoke-direct {v0, p0, v1}, Landroid/content/Intent;-><init>(Landroid/content/Context;Ljava/lang/Class;)V
 
     .line 83
-    invoke-virtual {p0, v0}, Lcom/android/settings/TestingSettings;->startActivity(Landroid/content/Intent;)V
+    invoke-virtual {p0, v0}, Lcom/android/settings_ext/TestingSettings;->startActivity(Landroid/content/Intent;)V
 
     .line 84
     const/4 v0, 0x1
@@ -242,14 +242,14 @@
     const/4 v0, 0x1
 
     .line 92
-    iget-object v1, p0, Lcom/android/settings/TestingSettings;->xY:Landroid/preference/PreferenceScreen;
+    iget-object v1, p0, Lcom/android/settings_ext/TestingSettings;->xY:Landroid/preference/PreferenceScreen;
 
     if-ne p1, v1, :cond_0
 
     .line 93
     new-instance v1, Landroid/content/Intent;
 
-    const-class v2, Lcom/android/settings/RadioInfo;
+    const-class v2, Lcom/android/settings_ext/RadioInfo;
 
     invoke-direct {v1, p0, v2}, Landroid/content/Intent;-><init>(Landroid/content/Context;Ljava/lang/Class;)V
 
@@ -261,7 +261,7 @@
     invoke-virtual {v1, v2, v3}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
 
     .line 95
-    invoke-virtual {p0, v1}, Lcom/android/settings/TestingSettings;->startActivity(Landroid/content/Intent;)V
+    invoke-virtual {p0, v1}, Lcom/android/settings_ext/TestingSettings;->startActivity(Landroid/content/Intent;)V
 
     .line 104
     :goto_0
@@ -269,14 +269,14 @@
 
     .line 97
     :cond_0
-    iget-object v1, p0, Lcom/android/settings/TestingSettings;->xZ:Landroid/preference/PreferenceScreen;
+    iget-object v1, p0, Lcom/android/settings_ext/TestingSettings;->xZ:Landroid/preference/PreferenceScreen;
 
     if-ne p1, v1, :cond_1
 
     .line 98
     new-instance v1, Landroid/content/Intent;
 
-    const-class v2, Lcom/android/settings/RadioInfo;
+    const-class v2, Lcom/android/settings_ext/RadioInfo;
 
     invoke-direct {v1, p0, v2}, Landroid/content/Intent;-><init>(Landroid/content/Context;Ljava/lang/Class;)V
 
@@ -288,7 +288,7 @@
     invoke-virtual {v1, v2, v3}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
 
     .line 100
-    invoke-virtual {p0, v1}, Lcom/android/settings/TestingSettings;->startActivity(Landroid/content/Intent;)V
+    invoke-virtual {p0, v1}, Lcom/android/settings_ext/TestingSettings;->startActivity(Landroid/content/Intent;)V
 
     goto :goto_0
 

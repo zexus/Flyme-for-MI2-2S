@@ -1,5 +1,5 @@
-.class public Lcom/android/settings/EdgeModeSettings;
-.super Lcom/android/settings/SettingsPreferenceFragment;
+.class public Lcom/android/settings_ext/EdgeModeSettings;
+.super Lcom/android/settings_ext/SettingsPreferenceFragment;
 .source "EdgeModeSettings.java"
 
 
@@ -9,7 +9,7 @@
 
     .prologue
     .line 11
-    invoke-direct {p0}, Lcom/android/settings/SettingsPreferenceFragment;-><init>()V
+    invoke-direct {p0}, Lcom/android/settings_ext/SettingsPreferenceFragment;-><init>()V
 
     return-void
 .end method
@@ -21,10 +21,10 @@
 
     .prologue
     .line 19
-    invoke-super {p0, p1}, Lcom/android/settings/SettingsPreferenceFragment;->onCreate(Landroid/os/Bundle;)V
+    invoke-super {p0, p1}, Lcom/android/settings_ext/SettingsPreferenceFragment;->onCreate(Landroid/os/Bundle;)V
 
     .line 21
-    invoke-virtual {p0}, Lcom/android/settings/EdgeModeSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/EdgeModeSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
@@ -35,10 +35,10 @@
     .line 22
     const v0, 0x7f060034
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/EdgeModeSettings;->addPreferencesFromResource(I)V
+    invoke-virtual {p0, v0}, Lcom/android/settings_ext/EdgeModeSettings;->addPreferencesFromResource(I)V
 
     .line 23
-    invoke-virtual {p0}, Lcom/android/settings/EdgeModeSettings;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
+    invoke-virtual {p0}, Lcom/android/settings_ext/EdgeModeSettings;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
 
     move-result-object v0
 
@@ -49,7 +49,7 @@
     move-result-object v0
 
     .line 24
-    invoke-virtual {p0}, Lcom/android/settings/EdgeModeSettings;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
+    invoke-virtual {p0}, Lcom/android/settings_ext/EdgeModeSettings;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
 
     move-result-object v1
 
@@ -114,7 +114,7 @@
     invoke-virtual {v1, v2}, Landroid/content/Intent;->putExtras(Landroid/os/Bundle;)Landroid/content/Intent;
 
     .line 45
-    invoke-virtual {p0, v1}, Lcom/android/settings/EdgeModeSettings;->startActivity(Landroid/content/Intent;)V
+    invoke-virtual {p0, v1}, Lcom/android/settings_ext/EdgeModeSettings;->startActivity(Landroid/content/Intent;)V
 
     .line 48
     :goto_1
@@ -152,7 +152,7 @@
 
     .line 48
     :cond_2
-    invoke-super {p0, p1, p2}, Lcom/android/settings/SettingsPreferenceFragment;->onPreferenceTreeClick(Landroid/preference/PreferenceScreen;Landroid/preference/Preference;)Z
+    invoke-super {p0, p1, p2}, Lcom/android/settings_ext/SettingsPreferenceFragment;->onPreferenceTreeClick(Landroid/preference/PreferenceScreen;Landroid/preference/Preference;)Z
 
     move-result v0
 

@@ -1,4 +1,4 @@
-.class public final Lcom/android/settings/search/o;
+.class public final Lcom/android/settings_ext/search/o;
 .super Ljava/lang/Object;
 .source "SearchIndexableResources.java"
 
@@ -27,19 +27,19 @@
     .line 56
     const/4 v0, 0x0
 
-    sput v0, Lcom/android/settings/search/o;->aiZ:I
+    sput v0, Lcom/android/settings_ext/search/o;->aiZ:I
 
     .line 58
     new-instance v0, Ljava/util/HashMap;
 
     invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
 
-    sput-object v0, Lcom/android/settings/search/o;->aja:Ljava/util/HashMap;
+    sput-object v0, Lcom/android/settings_ext/search/o;->aja:Ljava/util/HashMap;
 
     .line 62
-    sget-object v0, Lcom/android/settings/search/o;->aja:Ljava/util/HashMap;
+    sget-object v0, Lcom/android/settings_ext/search/o;->aja:Ljava/util/HashMap;
 
-    const-class v1, Lcom/android/settings/wifi/WifiSettings;
+    const-class v1, Lcom/android/settings_ext/wifi/WifiSettings;
 
     invoke-virtual {v1}, Ljava/lang/Class;->getName()Ljava/lang/String;
 
@@ -47,19 +47,19 @@
 
     new-instance v2, Landroid/provider/SearchIndexableResource;
 
-    const-class v3, Lcom/android/settings/wifi/WifiSettings;
+    const-class v3, Lcom/android/settings_ext/wifi/WifiSettings;
 
     invoke-virtual {v3}, Ljava/lang/Class;->getName()Ljava/lang/String;
 
     move-result-object v3
 
-    invoke-static {v3}, Lcom/android/settings/search/m;->bl(Ljava/lang/String;)I
+    invoke-static {v3}, Lcom/android/settings_ext/search/m;->bl(Ljava/lang/String;)I
 
     move-result v3
 
-    sget v4, Lcom/android/settings/search/o;->aiZ:I
+    sget v4, Lcom/android/settings_ext/search/o;->aiZ:I
 
-    const-class v5, Lcom/android/settings/wifi/WifiSettings;
+    const-class v5, Lcom/android/settings_ext/wifi/WifiSettings;
 
     invoke-virtual {v5}, Ljava/lang/Class;->getName()Ljava/lang/String;
 
@@ -70,9 +70,9 @@
     invoke-virtual {v0, v1, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 69
-    sget-object v0, Lcom/android/settings/search/o;->aja:Ljava/util/HashMap;
+    sget-object v0, Lcom/android/settings_ext/search/o;->aja:Ljava/util/HashMap;
 
-    const-class v1, Lcom/android/settings/wifi/AdvancedWifiSettings;
+    const-class v1, Lcom/android/settings_ext/wifi/AdvancedWifiSettings;
 
     invoke-virtual {v1}, Ljava/lang/Class;->getName()Ljava/lang/String;
 
@@ -80,19 +80,19 @@
 
     new-instance v2, Landroid/provider/SearchIndexableResource;
 
-    const-class v3, Lcom/android/settings/wifi/AdvancedWifiSettings;
+    const-class v3, Lcom/android/settings_ext/wifi/AdvancedWifiSettings;
 
     invoke-virtual {v3}, Ljava/lang/Class;->getName()Ljava/lang/String;
 
     move-result-object v3
 
-    invoke-static {v3}, Lcom/android/settings/search/m;->bl(Ljava/lang/String;)I
+    invoke-static {v3}, Lcom/android/settings_ext/search/m;->bl(Ljava/lang/String;)I
 
     move-result v3
 
     const v4, 0x7f0600a2
 
-    const-class v5, Lcom/android/settings/wifi/AdvancedWifiSettings;
+    const-class v5, Lcom/android/settings_ext/wifi/AdvancedWifiSettings;
 
     invoke-virtual {v5}, Ljava/lang/Class;->getName()Ljava/lang/String;
 
@@ -103,9 +103,9 @@
     invoke-virtual {v0, v1, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 76
-    sget-object v0, Lcom/android/settings/search/o;->aja:Ljava/util/HashMap;
+    sget-object v0, Lcom/android/settings_ext/search/o;->aja:Ljava/util/HashMap;
 
-    const-class v1, Lcom/android/settings/wifi/SavedAccessPointsWifiSettings;
+    const-class v1, Lcom/android/settings_ext/wifi/SavedAccessPointsWifiSettings;
 
     invoke-virtual {v1}, Ljava/lang/Class;->getName()Ljava/lang/String;
 
@@ -113,19 +113,19 @@
 
     new-instance v2, Landroid/provider/SearchIndexableResource;
 
-    const-class v3, Lcom/android/settings/wifi/SavedAccessPointsWifiSettings;
+    const-class v3, Lcom/android/settings_ext/wifi/SavedAccessPointsWifiSettings;
 
     invoke-virtual {v3}, Ljava/lang/Class;->getName()Ljava/lang/String;
 
     move-result-object v3
 
-    invoke-static {v3}, Lcom/android/settings/search/m;->bl(Ljava/lang/String;)I
+    invoke-static {v3}, Lcom/android/settings_ext/search/m;->bl(Ljava/lang/String;)I
 
     move-result v3
 
     const v4, 0x7f0600a3
 
-    const-class v5, Lcom/android/settings/wifi/SavedAccessPointsWifiSettings;
+    const-class v5, Lcom/android/settings_ext/wifi/SavedAccessPointsWifiSettings;
 
     invoke-virtual {v5}, Ljava/lang/Class;->getName()Ljava/lang/String;
 
@@ -136,9 +136,9 @@
     invoke-virtual {v0, v1, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 83
-    sget-object v0, Lcom/android/settings/search/o;->aja:Ljava/util/HashMap;
+    sget-object v0, Lcom/android/settings_ext/search/o;->aja:Ljava/util/HashMap;
 
-    const-class v1, Lcom/android/settings/bluetooth/BluetoothSettings;
+    const-class v1, Lcom/android/settings_ext/bluetooth/BluetoothSettings;
 
     invoke-virtual {v1}, Ljava/lang/Class;->getName()Ljava/lang/String;
 
@@ -146,19 +146,19 @@
 
     new-instance v2, Landroid/provider/SearchIndexableResource;
 
-    const-class v3, Lcom/android/settings/bluetooth/BluetoothSettings;
+    const-class v3, Lcom/android/settings_ext/bluetooth/BluetoothSettings;
 
     invoke-virtual {v3}, Ljava/lang/Class;->getName()Ljava/lang/String;
 
     move-result-object v3
 
-    invoke-static {v3}, Lcom/android/settings/search/m;->bl(Ljava/lang/String;)I
+    invoke-static {v3}, Lcom/android/settings_ext/search/m;->bl(Ljava/lang/String;)I
 
     move-result v3
 
-    sget v4, Lcom/android/settings/search/o;->aiZ:I
+    sget v4, Lcom/android/settings_ext/search/o;->aiZ:I
 
-    const-class v5, Lcom/android/settings/bluetooth/BluetoothSettings;
+    const-class v5, Lcom/android/settings_ext/bluetooth/BluetoothSettings;
 
     invoke-virtual {v5}, Ljava/lang/Class;->getName()Ljava/lang/String;
 
@@ -171,9 +171,9 @@
     invoke-virtual {v0, v1, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 90
-    sget-object v0, Lcom/android/settings/search/o;->aja:Ljava/util/HashMap;
+    sget-object v0, Lcom/android/settings_ext/search/o;->aja:Ljava/util/HashMap;
 
-    const-class v1, Lcom/android/settings/DataUsageSummary;
+    const-class v1, Lcom/android/settings_ext/DataUsageSummary;
 
     invoke-virtual {v1}, Ljava/lang/Class;->getName()Ljava/lang/String;
 
@@ -181,19 +181,19 @@
 
     new-instance v2, Landroid/provider/SearchIndexableResource;
 
-    const-class v3, Lcom/android/settings/DataUsageSummary;
+    const-class v3, Lcom/android/settings_ext/DataUsageSummary;
 
     invoke-virtual {v3}, Ljava/lang/Class;->getName()Ljava/lang/String;
 
     move-result-object v3
 
-    invoke-static {v3}, Lcom/android/settings/search/m;->bl(Ljava/lang/String;)I
+    invoke-static {v3}, Lcom/android/settings_ext/search/m;->bl(Ljava/lang/String;)I
 
     move-result v3
 
-    sget v4, Lcom/android/settings/search/o;->aiZ:I
+    sget v4, Lcom/android/settings_ext/search/o;->aiZ:I
 
-    const-class v5, Lcom/android/settings/DataUsageSummary;
+    const-class v5, Lcom/android/settings_ext/DataUsageSummary;
 
     invoke-virtual {v5}, Ljava/lang/Class;->getName()Ljava/lang/String;
 
@@ -204,9 +204,9 @@
     invoke-virtual {v0, v1, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 97
-    sget-object v0, Lcom/android/settings/search/o;->aja:Ljava/util/HashMap;
+    sget-object v0, Lcom/android/settings_ext/search/o;->aja:Ljava/util/HashMap;
 
-    const-class v1, Lcom/android/settings/b/c;
+    const-class v1, Lcom/android/settings_ext/b/c;
 
     invoke-virtual {v1}, Ljava/lang/Class;->getName()Ljava/lang/String;
 
@@ -214,19 +214,19 @@
 
     new-instance v2, Landroid/provider/SearchIndexableResource;
 
-    const-class v3, Lcom/android/settings/b/c;
+    const-class v3, Lcom/android/settings_ext/b/c;
 
     invoke-virtual {v3}, Ljava/lang/Class;->getName()Ljava/lang/String;
 
     move-result-object v3
 
-    invoke-static {v3}, Lcom/android/settings/search/m;->bl(Ljava/lang/String;)I
+    invoke-static {v3}, Lcom/android/settings_ext/search/m;->bl(Ljava/lang/String;)I
 
     move-result v3
 
-    sget v4, Lcom/android/settings/search/o;->aiZ:I
+    sget v4, Lcom/android/settings_ext/search/o;->aiZ:I
 
-    const-class v5, Lcom/android/settings/b/c;
+    const-class v5, Lcom/android/settings_ext/b/c;
 
     invoke-virtual {v5}, Ljava/lang/Class;->getName()Ljava/lang/String;
 
@@ -237,9 +237,9 @@
     invoke-virtual {v0, v1, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 104
-    sget-object v0, Lcom/android/settings/search/o;->aja:Ljava/util/HashMap;
+    sget-object v0, Lcom/android/settings_ext/search/o;->aja:Ljava/util/HashMap;
 
-    const-class v1, Lcom/android/settings/WirelessSettings;
+    const-class v1, Lcom/android/settings_ext/WirelessSettings;
 
     invoke-virtual {v1}, Ljava/lang/Class;->getName()Ljava/lang/String;
 
@@ -247,19 +247,19 @@
 
     new-instance v2, Landroid/provider/SearchIndexableResource;
 
-    const-class v3, Lcom/android/settings/WirelessSettings;
+    const-class v3, Lcom/android/settings_ext/WirelessSettings;
 
     invoke-virtual {v3}, Ljava/lang/Class;->getName()Ljava/lang/String;
 
     move-result-object v3
 
-    invoke-static {v3}, Lcom/android/settings/search/m;->bl(Ljava/lang/String;)I
+    invoke-static {v3}, Lcom/android/settings_ext/search/m;->bl(Ljava/lang/String;)I
 
     move-result v3
 
-    sget v4, Lcom/android/settings/search/o;->aiZ:I
+    sget v4, Lcom/android/settings_ext/search/o;->aiZ:I
 
-    const-class v5, Lcom/android/settings/WirelessSettings;
+    const-class v5, Lcom/android/settings_ext/WirelessSettings;
 
     invoke-virtual {v5}, Ljava/lang/Class;->getName()Ljava/lang/String;
 
@@ -272,9 +272,9 @@
     invoke-virtual {v0, v1, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 111
-    sget-object v0, Lcom/android/settings/search/o;->aja:Ljava/util/HashMap;
+    sget-object v0, Lcom/android/settings_ext/search/o;->aja:Ljava/util/HashMap;
 
-    const-class v1, Lcom/android/settings/HomeSettings;
+    const-class v1, Lcom/android/settings_ext/HomeSettings;
 
     invoke-virtual {v1}, Ljava/lang/Class;->getName()Ljava/lang/String;
 
@@ -282,19 +282,19 @@
 
     new-instance v2, Landroid/provider/SearchIndexableResource;
 
-    const-class v3, Lcom/android/settings/HomeSettings;
+    const-class v3, Lcom/android/settings_ext/HomeSettings;
 
     invoke-virtual {v3}, Ljava/lang/Class;->getName()Ljava/lang/String;
 
     move-result-object v3
 
-    invoke-static {v3}, Lcom/android/settings/search/m;->bl(Ljava/lang/String;)I
+    invoke-static {v3}, Lcom/android/settings_ext/search/m;->bl(Ljava/lang/String;)I
 
     move-result v3
 
-    sget v4, Lcom/android/settings/search/o;->aiZ:I
+    sget v4, Lcom/android/settings_ext/search/o;->aiZ:I
 
-    const-class v5, Lcom/android/settings/HomeSettings;
+    const-class v5, Lcom/android/settings_ext/HomeSettings;
 
     invoke-virtual {v5}, Ljava/lang/Class;->getName()Ljava/lang/String;
 
@@ -307,9 +307,9 @@
     invoke-virtual {v0, v1, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 118
-    sget-object v0, Lcom/android/settings/search/o;->aja:Ljava/util/HashMap;
+    sget-object v0, Lcom/android/settings_ext/search/o;->aja:Ljava/util/HashMap;
 
-    const-class v1, Lcom/android/settings/DisplaySettings;
+    const-class v1, Lcom/android/settings_ext/DisplaySettings;
 
     invoke-virtual {v1}, Ljava/lang/Class;->getName()Ljava/lang/String;
 
@@ -317,19 +317,19 @@
 
     new-instance v2, Landroid/provider/SearchIndexableResource;
 
-    const-class v3, Lcom/android/settings/DisplaySettings;
+    const-class v3, Lcom/android/settings_ext/DisplaySettings;
 
     invoke-virtual {v3}, Ljava/lang/Class;->getName()Ljava/lang/String;
 
     move-result-object v3
 
-    invoke-static {v3}, Lcom/android/settings/search/m;->bl(Ljava/lang/String;)I
+    invoke-static {v3}, Lcom/android/settings_ext/search/m;->bl(Ljava/lang/String;)I
 
     move-result v3
 
-    sget v4, Lcom/android/settings/search/o;->aiZ:I
+    sget v4, Lcom/android/settings_ext/search/o;->aiZ:I
 
-    const-class v5, Lcom/android/settings/DisplaySettings;
+    const-class v5, Lcom/android/settings_ext/DisplaySettings;
 
     invoke-virtual {v5}, Ljava/lang/Class;->getName()Ljava/lang/String;
 
@@ -340,9 +340,9 @@
     invoke-virtual {v0, v1, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 125
-    sget-object v0, Lcom/android/settings/search/o;->aja:Ljava/util/HashMap;
+    sget-object v0, Lcom/android/settings_ext/search/o;->aja:Ljava/util/HashMap;
 
-    const-class v1, Lcom/android/settings/WallpaperTypeSettings;
+    const-class v1, Lcom/android/settings_ext/WallpaperTypeSettings;
 
     invoke-virtual {v1}, Ljava/lang/Class;->getName()Ljava/lang/String;
 
@@ -350,19 +350,19 @@
 
     new-instance v2, Landroid/provider/SearchIndexableResource;
 
-    const-class v3, Lcom/android/settings/WallpaperTypeSettings;
+    const-class v3, Lcom/android/settings_ext/WallpaperTypeSettings;
 
     invoke-virtual {v3}, Ljava/lang/Class;->getName()Ljava/lang/String;
 
     move-result-object v3
 
-    invoke-static {v3}, Lcom/android/settings/search/m;->bl(Ljava/lang/String;)I
+    invoke-static {v3}, Lcom/android/settings_ext/search/m;->bl(Ljava/lang/String;)I
 
     move-result v3
 
-    sget v4, Lcom/android/settings/search/o;->aiZ:I
+    sget v4, Lcom/android/settings_ext/search/o;->aiZ:I
 
-    const-class v5, Lcom/android/settings/WallpaperTypeSettings;
+    const-class v5, Lcom/android/settings_ext/WallpaperTypeSettings;
 
     invoke-virtual {v5}, Ljava/lang/Class;->getName()Ljava/lang/String;
 
@@ -373,9 +373,9 @@
     invoke-virtual {v0, v1, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 132
-    sget-object v0, Lcom/android/settings/search/o;->aja:Ljava/util/HashMap;
+    sget-object v0, Lcom/android/settings_ext/search/o;->aja:Ljava/util/HashMap;
 
-    const-class v1, Lcom/android/settings/notification/NotificationSettings;
+    const-class v1, Lcom/android/settings_ext/notification/NotificationSettings;
 
     invoke-virtual {v1}, Ljava/lang/Class;->getName()Ljava/lang/String;
 
@@ -383,19 +383,19 @@
 
     new-instance v2, Landroid/provider/SearchIndexableResource;
 
-    const-class v3, Lcom/android/settings/notification/NotificationSettings;
+    const-class v3, Lcom/android/settings_ext/notification/NotificationSettings;
 
     invoke-virtual {v3}, Ljava/lang/Class;->getName()Ljava/lang/String;
 
     move-result-object v3
 
-    invoke-static {v3}, Lcom/android/settings/search/m;->bl(Ljava/lang/String;)I
+    invoke-static {v3}, Lcom/android/settings_ext/search/m;->bl(Ljava/lang/String;)I
 
     move-result v3
 
-    sget v4, Lcom/android/settings/search/o;->aiZ:I
+    sget v4, Lcom/android/settings_ext/search/o;->aiZ:I
 
-    const-class v5, Lcom/android/settings/notification/NotificationSettings;
+    const-class v5, Lcom/android/settings_ext/notification/NotificationSettings;
 
     invoke-virtual {v5}, Ljava/lang/Class;->getName()Ljava/lang/String;
 
@@ -406,9 +406,9 @@
     invoke-virtual {v0, v1, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 139
-    sget-object v0, Lcom/android/settings/search/o;->aja:Ljava/util/HashMap;
+    sget-object v0, Lcom/android/settings_ext/search/o;->aja:Ljava/util/HashMap;
 
-    const-class v1, Lcom/android/settings/notification/OtherSoundSettings;
+    const-class v1, Lcom/android/settings_ext/notification/OtherSoundSettings;
 
     invoke-virtual {v1}, Ljava/lang/Class;->getName()Ljava/lang/String;
 
@@ -416,19 +416,19 @@
 
     new-instance v2, Landroid/provider/SearchIndexableResource;
 
-    const-class v3, Lcom/android/settings/notification/OtherSoundSettings;
+    const-class v3, Lcom/android/settings_ext/notification/OtherSoundSettings;
 
     invoke-virtual {v3}, Ljava/lang/Class;->getName()Ljava/lang/String;
 
     move-result-object v3
 
-    invoke-static {v3}, Lcom/android/settings/search/m;->bl(Ljava/lang/String;)I
+    invoke-static {v3}, Lcom/android/settings_ext/search/m;->bl(Ljava/lang/String;)I
 
     move-result v3
 
-    sget v4, Lcom/android/settings/search/o;->aiZ:I
+    sget v4, Lcom/android/settings_ext/search/o;->aiZ:I
 
-    const-class v5, Lcom/android/settings/notification/OtherSoundSettings;
+    const-class v5, Lcom/android/settings_ext/notification/OtherSoundSettings;
 
     invoke-virtual {v5}, Ljava/lang/Class;->getName()Ljava/lang/String;
 
@@ -439,9 +439,9 @@
     invoke-virtual {v0, v1, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 146
-    sget-object v0, Lcom/android/settings/search/o;->aja:Ljava/util/HashMap;
+    sget-object v0, Lcom/android/settings_ext/search/o;->aja:Ljava/util/HashMap;
 
-    const-class v1, Lcom/android/settings/notification/MiuiZenModeSettings;
+    const-class v1, Lcom/android/settings_ext/notification/MiuiZenModeSettings;
 
     invoke-virtual {v1}, Ljava/lang/Class;->getName()Ljava/lang/String;
 
@@ -449,19 +449,19 @@
 
     new-instance v2, Landroid/provider/SearchIndexableResource;
 
-    const-class v3, Lcom/android/settings/notification/MiuiZenModeSettings;
+    const-class v3, Lcom/android/settings_ext/notification/MiuiZenModeSettings;
 
     invoke-virtual {v3}, Ljava/lang/Class;->getName()Ljava/lang/String;
 
     move-result-object v3
 
-    invoke-static {v3}, Lcom/android/settings/search/m;->bl(Ljava/lang/String;)I
+    invoke-static {v3}, Lcom/android/settings_ext/search/m;->bl(Ljava/lang/String;)I
 
     move-result v3
 
-    sget v4, Lcom/android/settings/search/o;->aiZ:I
+    sget v4, Lcom/android/settings_ext/search/o;->aiZ:I
 
-    const-class v5, Lcom/android/settings/notification/MiuiZenModeSettings;
+    const-class v5, Lcom/android/settings_ext/notification/MiuiZenModeSettings;
 
     invoke-virtual {v5}, Ljava/lang/Class;->getName()Ljava/lang/String;
 
@@ -472,9 +472,9 @@
     invoke-virtual {v0, v1, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 156
-    sget-object v0, Lcom/android/settings/search/o;->aja:Ljava/util/HashMap;
+    sget-object v0, Lcom/android/settings_ext/search/o;->aja:Ljava/util/HashMap;
 
-    const-class v1, Lcom/android/settings/deviceinfo/Memory;
+    const-class v1, Lcom/android/settings_ext/deviceinfo/Memory;
 
     invoke-virtual {v1}, Ljava/lang/Class;->getName()Ljava/lang/String;
 
@@ -482,19 +482,19 @@
 
     new-instance v2, Landroid/provider/SearchIndexableResource;
 
-    const-class v3, Lcom/android/settings/deviceinfo/Memory;
+    const-class v3, Lcom/android/settings_ext/deviceinfo/Memory;
 
     invoke-virtual {v3}, Ljava/lang/Class;->getName()Ljava/lang/String;
 
     move-result-object v3
 
-    invoke-static {v3}, Lcom/android/settings/search/m;->bl(Ljava/lang/String;)I
+    invoke-static {v3}, Lcom/android/settings_ext/search/m;->bl(Ljava/lang/String;)I
 
     move-result v3
 
-    sget v4, Lcom/android/settings/search/o;->aiZ:I
+    sget v4, Lcom/android/settings_ext/search/o;->aiZ:I
 
-    const-class v5, Lcom/android/settings/deviceinfo/Memory;
+    const-class v5, Lcom/android/settings_ext/deviceinfo/Memory;
 
     invoke-virtual {v5}, Ljava/lang/Class;->getName()Ljava/lang/String;
 
@@ -507,9 +507,9 @@
     invoke-virtual {v0, v1, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 163
-    sget-object v0, Lcom/android/settings/search/o;->aja:Ljava/util/HashMap;
+    sget-object v0, Lcom/android/settings_ext/search/o;->aja:Ljava/util/HashMap;
 
-    const-class v1, Lcom/android/settings/fuelgauge/PowerUsageSummary;
+    const-class v1, Lcom/android/settings_ext/fuelgauge/PowerUsageSummary;
 
     invoke-virtual {v1}, Ljava/lang/Class;->getName()Ljava/lang/String;
 
@@ -517,19 +517,19 @@
 
     new-instance v2, Landroid/provider/SearchIndexableResource;
 
-    const-class v3, Lcom/android/settings/fuelgauge/PowerUsageSummary;
+    const-class v3, Lcom/android/settings_ext/fuelgauge/PowerUsageSummary;
 
     invoke-virtual {v3}, Ljava/lang/Class;->getName()Ljava/lang/String;
 
     move-result-object v3
 
-    invoke-static {v3}, Lcom/android/settings/search/m;->bl(Ljava/lang/String;)I
+    invoke-static {v3}, Lcom/android/settings_ext/search/m;->bl(Ljava/lang/String;)I
 
     move-result v3
 
     const v4, 0x7f06005d
 
-    const-class v5, Lcom/android/settings/fuelgauge/PowerUsageSummary;
+    const-class v5, Lcom/android/settings_ext/fuelgauge/PowerUsageSummary;
 
     invoke-virtual {v5}, Ljava/lang/Class;->getName()Ljava/lang/String;
 
@@ -540,9 +540,9 @@
     invoke-virtual {v0, v1, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 170
-    sget-object v0, Lcom/android/settings/search/o;->aja:Ljava/util/HashMap;
+    sget-object v0, Lcom/android/settings_ext/search/o;->aja:Ljava/util/HashMap;
 
-    const-class v1, Lcom/android/settings/fuelgauge/BatterySaverSettings;
+    const-class v1, Lcom/android/settings_ext/fuelgauge/BatterySaverSettings;
 
     invoke-virtual {v1}, Ljava/lang/Class;->getName()Ljava/lang/String;
 
@@ -550,19 +550,19 @@
 
     new-instance v2, Landroid/provider/SearchIndexableResource;
 
-    const-class v3, Lcom/android/settings/fuelgauge/BatterySaverSettings;
+    const-class v3, Lcom/android/settings_ext/fuelgauge/BatterySaverSettings;
 
     invoke-virtual {v3}, Ljava/lang/Class;->getName()Ljava/lang/String;
 
     move-result-object v3
 
-    invoke-static {v3}, Lcom/android/settings/search/m;->bl(Ljava/lang/String;)I
+    invoke-static {v3}, Lcom/android/settings_ext/search/m;->bl(Ljava/lang/String;)I
 
     move-result v3
 
     const v4, 0x7f060016
 
-    const-class v5, Lcom/android/settings/fuelgauge/BatterySaverSettings;
+    const-class v5, Lcom/android/settings_ext/fuelgauge/BatterySaverSettings;
 
     invoke-virtual {v5}, Ljava/lang/Class;->getName()Ljava/lang/String;
 
@@ -573,9 +573,9 @@
     invoke-virtual {v0, v1, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 177
-    sget-object v0, Lcom/android/settings/search/o;->aja:Ljava/util/HashMap;
+    sget-object v0, Lcom/android/settings_ext/search/o;->aja:Ljava/util/HashMap;
 
-    const-class v1, Lcom/android/settings/users/UserSettings;
+    const-class v1, Lcom/android/settings_ext/users/UserSettings;
 
     invoke-virtual {v1}, Ljava/lang/Class;->getName()Ljava/lang/String;
 
@@ -583,19 +583,19 @@
 
     new-instance v2, Landroid/provider/SearchIndexableResource;
 
-    const-class v3, Lcom/android/settings/users/UserSettings;
+    const-class v3, Lcom/android/settings_ext/users/UserSettings;
 
     invoke-virtual {v3}, Ljava/lang/Class;->getName()Ljava/lang/String;
 
     move-result-object v3
 
-    invoke-static {v3}, Lcom/android/settings/search/m;->bl(Ljava/lang/String;)I
+    invoke-static {v3}, Lcom/android/settings_ext/search/m;->bl(Ljava/lang/String;)I
 
     move-result v3
 
     const v4, 0x7f06009a
 
-    const-class v5, Lcom/android/settings/users/UserSettings;
+    const-class v5, Lcom/android/settings_ext/users/UserSettings;
 
     invoke-virtual {v5}, Ljava/lang/Class;->getName()Ljava/lang/String;
 
@@ -608,9 +608,9 @@
     invoke-virtual {v0, v1, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 184
-    sget-object v0, Lcom/android/settings/search/o;->aja:Ljava/util/HashMap;
+    sget-object v0, Lcom/android/settings_ext/search/o;->aja:Ljava/util/HashMap;
 
-    const-class v1, Lcom/android/settings/location/LocationSettings;
+    const-class v1, Lcom/android/settings_ext/location/LocationSettings;
 
     invoke-virtual {v1}, Ljava/lang/Class;->getName()Ljava/lang/String;
 
@@ -618,19 +618,19 @@
 
     new-instance v2, Landroid/provider/SearchIndexableResource;
 
-    const-class v3, Lcom/android/settings/location/LocationSettings;
+    const-class v3, Lcom/android/settings_ext/location/LocationSettings;
 
     invoke-virtual {v3}, Ljava/lang/Class;->getName()Ljava/lang/String;
 
     move-result-object v3
 
-    invoke-static {v3}, Lcom/android/settings/search/m;->bl(Ljava/lang/String;)I
+    invoke-static {v3}, Lcom/android/settings_ext/search/m;->bl(Ljava/lang/String;)I
 
     move-result v3
 
     const v4, 0x7f060047
 
-    const-class v5, Lcom/android/settings/location/LocationSettings;
+    const-class v5, Lcom/android/settings_ext/location/LocationSettings;
 
     invoke-virtual {v5}, Ljava/lang/Class;->getName()Ljava/lang/String;
 
@@ -643,9 +643,9 @@
     invoke-virtual {v0, v1, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 191
-    sget-object v0, Lcom/android/settings/search/o;->aja:Ljava/util/HashMap;
+    sget-object v0, Lcom/android/settings_ext/search/o;->aja:Ljava/util/HashMap;
 
-    const-class v1, Lcom/android/settings/SecuritySettings;
+    const-class v1, Lcom/android/settings_ext/SecuritySettings;
 
     invoke-virtual {v1}, Ljava/lang/Class;->getName()Ljava/lang/String;
 
@@ -653,19 +653,19 @@
 
     new-instance v2, Landroid/provider/SearchIndexableResource;
 
-    const-class v3, Lcom/android/settings/SecuritySettings;
+    const-class v3, Lcom/android/settings_ext/SecuritySettings;
 
     invoke-virtual {v3}, Ljava/lang/Class;->getName()Ljava/lang/String;
 
     move-result-object v3
 
-    invoke-static {v3}, Lcom/android/settings/search/m;->bl(Ljava/lang/String;)I
+    invoke-static {v3}, Lcom/android/settings_ext/search/m;->bl(Ljava/lang/String;)I
 
     move-result v3
 
-    sget v4, Lcom/android/settings/search/o;->aiZ:I
+    sget v4, Lcom/android/settings_ext/search/o;->aiZ:I
 
-    const-class v5, Lcom/android/settings/SecuritySettings;
+    const-class v5, Lcom/android/settings_ext/SecuritySettings;
 
     invoke-virtual {v5}, Ljava/lang/Class;->getName()Ljava/lang/String;
 
@@ -678,9 +678,9 @@
     invoke-virtual {v0, v1, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 198
-    sget-object v0, Lcom/android/settings/search/o;->aja:Ljava/util/HashMap;
+    sget-object v0, Lcom/android/settings_ext/search/o;->aja:Ljava/util/HashMap;
 
-    const-class v1, Lcom/android/settings/ScreenPinningSettings;
+    const-class v1, Lcom/android/settings_ext/ScreenPinningSettings;
 
     invoke-virtual {v1}, Ljava/lang/Class;->getName()Ljava/lang/String;
 
@@ -688,19 +688,19 @@
 
     new-instance v2, Landroid/provider/SearchIndexableResource;
 
-    const-class v3, Lcom/android/settings/ScreenPinningSettings;
+    const-class v3, Lcom/android/settings_ext/ScreenPinningSettings;
 
     invoke-virtual {v3}, Ljava/lang/Class;->getName()Ljava/lang/String;
 
     move-result-object v3
 
-    invoke-static {v3}, Lcom/android/settings/search/m;->bl(Ljava/lang/String;)I
+    invoke-static {v3}, Lcom/android/settings_ext/search/m;->bl(Ljava/lang/String;)I
 
     move-result v3
 
-    sget v4, Lcom/android/settings/search/o;->aiZ:I
+    sget v4, Lcom/android/settings_ext/search/o;->aiZ:I
 
-    const-class v5, Lcom/android/settings/ScreenPinningSettings;
+    const-class v5, Lcom/android/settings_ext/ScreenPinningSettings;
 
     invoke-virtual {v5}, Ljava/lang/Class;->getName()Ljava/lang/String;
 
@@ -713,9 +713,9 @@
     invoke-virtual {v0, v1, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 205
-    sget-object v0, Lcom/android/settings/search/o;->aja:Ljava/util/HashMap;
+    sget-object v0, Lcom/android/settings_ext/search/o;->aja:Ljava/util/HashMap;
 
-    const-class v1, Lcom/android/settings/inputmethod/InputMethodAndLanguageSettings;
+    const-class v1, Lcom/android/settings_ext/inputmethod/InputMethodAndLanguageSettings;
 
     invoke-virtual {v1}, Ljava/lang/Class;->getName()Ljava/lang/String;
 
@@ -723,19 +723,19 @@
 
     new-instance v2, Landroid/provider/SearchIndexableResource;
 
-    const-class v3, Lcom/android/settings/inputmethod/InputMethodAndLanguageSettings;
+    const-class v3, Lcom/android/settings_ext/inputmethod/InputMethodAndLanguageSettings;
 
     invoke-virtual {v3}, Ljava/lang/Class;->getName()Ljava/lang/String;
 
     move-result-object v3
 
-    invoke-static {v3}, Lcom/android/settings/search/m;->bl(Ljava/lang/String;)I
+    invoke-static {v3}, Lcom/android/settings_ext/search/m;->bl(Ljava/lang/String;)I
 
     move-result v3
 
-    sget v4, Lcom/android/settings/search/o;->aiZ:I
+    sget v4, Lcom/android/settings_ext/search/o;->aiZ:I
 
-    const-class v5, Lcom/android/settings/inputmethod/InputMethodAndLanguageSettings;
+    const-class v5, Lcom/android/settings_ext/inputmethod/InputMethodAndLanguageSettings;
 
     invoke-virtual {v5}, Ljava/lang/Class;->getName()Ljava/lang/String;
 
@@ -748,9 +748,9 @@
     invoke-virtual {v0, v1, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 212
-    sget-object v0, Lcom/android/settings/search/o;->aja:Ljava/util/HashMap;
+    sget-object v0, Lcom/android/settings_ext/search/o;->aja:Ljava/util/HashMap;
 
-    const-class v1, Lcom/android/settings/voice/VoiceInputSettings;
+    const-class v1, Lcom/android/settings_ext/voice/VoiceInputSettings;
 
     invoke-virtual {v1}, Ljava/lang/Class;->getName()Ljava/lang/String;
 
@@ -758,19 +758,19 @@
 
     new-instance v2, Landroid/provider/SearchIndexableResource;
 
-    const-class v3, Lcom/android/settings/voice/VoiceInputSettings;
+    const-class v3, Lcom/android/settings_ext/voice/VoiceInputSettings;
 
     invoke-virtual {v3}, Ljava/lang/Class;->getName()Ljava/lang/String;
 
     move-result-object v3
 
-    invoke-static {v3}, Lcom/android/settings/search/m;->bl(Ljava/lang/String;)I
+    invoke-static {v3}, Lcom/android/settings_ext/search/m;->bl(Ljava/lang/String;)I
 
     move-result v3
 
-    sget v4, Lcom/android/settings/search/o;->aiZ:I
+    sget v4, Lcom/android/settings_ext/search/o;->aiZ:I
 
-    const-class v5, Lcom/android/settings/voice/VoiceInputSettings;
+    const-class v5, Lcom/android/settings_ext/voice/VoiceInputSettings;
 
     invoke-virtual {v5}, Ljava/lang/Class;->getName()Ljava/lang/String;
 
@@ -783,9 +783,9 @@
     invoke-virtual {v0, v1, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 219
-    sget-object v0, Lcom/android/settings/search/o;->aja:Ljava/util/HashMap;
+    sget-object v0, Lcom/android/settings_ext/search/o;->aja:Ljava/util/HashMap;
 
-    const-class v1, Lcom/android/settings/PrivacySettings;
+    const-class v1, Lcom/android/settings_ext/PrivacySettings;
 
     invoke-virtual {v1}, Ljava/lang/Class;->getName()Ljava/lang/String;
 
@@ -793,19 +793,19 @@
 
     new-instance v2, Landroid/provider/SearchIndexableResource;
 
-    const-class v3, Lcom/android/settings/PrivacySettings;
+    const-class v3, Lcom/android/settings_ext/PrivacySettings;
 
     invoke-virtual {v3}, Ljava/lang/Class;->getName()Ljava/lang/String;
 
     move-result-object v3
 
-    invoke-static {v3}, Lcom/android/settings/search/m;->bl(Ljava/lang/String;)I
+    invoke-static {v3}, Lcom/android/settings_ext/search/m;->bl(Ljava/lang/String;)I
 
     move-result v3
 
-    sget v4, Lcom/android/settings/search/o;->aiZ:I
+    sget v4, Lcom/android/settings_ext/search/o;->aiZ:I
 
-    const-class v5, Lcom/android/settings/PrivacySettings;
+    const-class v5, Lcom/android/settings_ext/PrivacySettings;
 
     invoke-virtual {v5}, Ljava/lang/Class;->getName()Ljava/lang/String;
 
@@ -818,9 +818,9 @@
     invoke-virtual {v0, v1, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 226
-    sget-object v0, Lcom/android/settings/search/o;->aja:Ljava/util/HashMap;
+    sget-object v0, Lcom/android/settings_ext/search/o;->aja:Ljava/util/HashMap;
 
-    const-class v1, Lcom/android/settings/DateTimeSettings;
+    const-class v1, Lcom/android/settings_ext/DateTimeSettings;
 
     invoke-virtual {v1}, Ljava/lang/Class;->getName()Ljava/lang/String;
 
@@ -828,19 +828,19 @@
 
     new-instance v2, Landroid/provider/SearchIndexableResource;
 
-    const-class v3, Lcom/android/settings/DateTimeSettings;
+    const-class v3, Lcom/android/settings_ext/DateTimeSettings;
 
     invoke-virtual {v3}, Ljava/lang/Class;->getName()Ljava/lang/String;
 
     move-result-object v3
 
-    invoke-static {v3}, Lcom/android/settings/search/m;->bl(Ljava/lang/String;)I
+    invoke-static {v3}, Lcom/android/settings_ext/search/m;->bl(Ljava/lang/String;)I
 
     move-result v3
 
     const v4, 0x7f060021
 
-    const-class v5, Lcom/android/settings/DateTimeSettings;
+    const-class v5, Lcom/android/settings_ext/DateTimeSettings;
 
     invoke-virtual {v5}, Ljava/lang/Class;->getName()Ljava/lang/String;
 
@@ -853,9 +853,9 @@
     invoke-virtual {v0, v1, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 233
-    sget-object v0, Lcom/android/settings/search/o;->aja:Ljava/util/HashMap;
+    sget-object v0, Lcom/android/settings_ext/search/o;->aja:Ljava/util/HashMap;
 
-    const-class v1, Lcom/android/settings/accessibility/AccessibilitySettings;
+    const-class v1, Lcom/android/settings_ext/accessibility/AccessibilitySettings;
 
     invoke-virtual {v1}, Ljava/lang/Class;->getName()Ljava/lang/String;
 
@@ -863,19 +863,19 @@
 
     new-instance v2, Landroid/provider/SearchIndexableResource;
 
-    const-class v3, Lcom/android/settings/accessibility/AccessibilitySettings;
+    const-class v3, Lcom/android/settings_ext/accessibility/AccessibilitySettings;
 
     invoke-virtual {v3}, Ljava/lang/Class;->getName()Ljava/lang/String;
 
     move-result-object v3
 
-    invoke-static {v3}, Lcom/android/settings/search/m;->bl(Ljava/lang/String;)I
+    invoke-static {v3}, Lcom/android/settings_ext/search/m;->bl(Ljava/lang/String;)I
 
     move-result v3
 
-    sget v4, Lcom/android/settings/search/o;->aiZ:I
+    sget v4, Lcom/android/settings_ext/search/o;->aiZ:I
 
-    const-class v5, Lcom/android/settings/accessibility/AccessibilitySettings;
+    const-class v5, Lcom/android/settings_ext/accessibility/AccessibilitySettings;
 
     invoke-virtual {v5}, Ljava/lang/Class;->getName()Ljava/lang/String;
 
@@ -888,9 +888,9 @@
     invoke-virtual {v0, v1, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 240
-    sget-object v0, Lcom/android/settings/search/o;->aja:Ljava/util/HashMap;
+    sget-object v0, Lcom/android/settings_ext/search/o;->aja:Ljava/util/HashMap;
 
-    const-class v1, Lcom/android/settings/print/PrintSettingsFragment;
+    const-class v1, Lcom/android/settings_ext/print/PrintSettingsFragment;
 
     invoke-virtual {v1}, Ljava/lang/Class;->getName()Ljava/lang/String;
 
@@ -898,19 +898,19 @@
 
     new-instance v2, Landroid/provider/SearchIndexableResource;
 
-    const-class v3, Lcom/android/settings/print/PrintSettingsFragment;
+    const-class v3, Lcom/android/settings_ext/print/PrintSettingsFragment;
 
     invoke-virtual {v3}, Ljava/lang/Class;->getName()Ljava/lang/String;
 
     move-result-object v3
 
-    invoke-static {v3}, Lcom/android/settings/search/m;->bl(Ljava/lang/String;)I
+    invoke-static {v3}, Lcom/android/settings_ext/search/m;->bl(Ljava/lang/String;)I
 
     move-result v3
 
-    sget v4, Lcom/android/settings/search/o;->aiZ:I
+    sget v4, Lcom/android/settings_ext/search/o;->aiZ:I
 
-    const-class v5, Lcom/android/settings/print/PrintSettingsFragment;
+    const-class v5, Lcom/android/settings_ext/print/PrintSettingsFragment;
 
     invoke-virtual {v5}, Ljava/lang/Class;->getName()Ljava/lang/String;
 
@@ -923,9 +923,9 @@
     invoke-virtual {v0, v1, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 247
-    sget-object v0, Lcom/android/settings/search/o;->aja:Ljava/util/HashMap;
+    sget-object v0, Lcom/android/settings_ext/search/o;->aja:Ljava/util/HashMap;
 
-    const-class v1, Lcom/android/settings/DevelopmentSettings;
+    const-class v1, Lcom/android/settings_ext/DevelopmentSettings;
 
     invoke-virtual {v1}, Ljava/lang/Class;->getName()Ljava/lang/String;
 
@@ -933,19 +933,19 @@
 
     new-instance v2, Landroid/provider/SearchIndexableResource;
 
-    const-class v3, Lcom/android/settings/DevelopmentSettings;
+    const-class v3, Lcom/android/settings_ext/DevelopmentSettings;
 
     invoke-virtual {v3}, Ljava/lang/Class;->getName()Ljava/lang/String;
 
     move-result-object v3
 
-    invoke-static {v3}, Lcom/android/settings/search/m;->bl(Ljava/lang/String;)I
+    invoke-static {v3}, Lcom/android/settings_ext/search/m;->bl(Ljava/lang/String;)I
 
     move-result v3
 
-    sget v4, Lcom/android/settings/search/o;->aiZ:I
+    sget v4, Lcom/android/settings_ext/search/o;->aiZ:I
 
-    const-class v5, Lcom/android/settings/DevelopmentSettings;
+    const-class v5, Lcom/android/settings_ext/DevelopmentSettings;
 
     invoke-virtual {v5}, Ljava/lang/Class;->getName()Ljava/lang/String;
 
@@ -958,9 +958,9 @@
     invoke-virtual {v0, v1, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 254
-    sget-object v0, Lcom/android/settings/search/o;->aja:Ljava/util/HashMap;
+    sget-object v0, Lcom/android/settings_ext/search/o;->aja:Ljava/util/HashMap;
 
-    const-class v1, Lcom/android/settings/DeviceInfoSettings;
+    const-class v1, Lcom/android/settings_ext/DeviceInfoSettings;
 
     invoke-virtual {v1}, Ljava/lang/Class;->getName()Ljava/lang/String;
 
@@ -968,19 +968,19 @@
 
     new-instance v2, Landroid/provider/SearchIndexableResource;
 
-    const-class v3, Lcom/android/settings/DeviceInfoSettings;
+    const-class v3, Lcom/android/settings_ext/DeviceInfoSettings;
 
     invoke-virtual {v3}, Ljava/lang/Class;->getName()Ljava/lang/String;
 
     move-result-object v3
 
-    invoke-static {v3}, Lcom/android/settings/search/m;->bl(Ljava/lang/String;)I
+    invoke-static {v3}, Lcom/android/settings_ext/search/m;->bl(Ljava/lang/String;)I
 
     move-result v3
 
-    sget v4, Lcom/android/settings/search/o;->aiZ:I
+    sget v4, Lcom/android/settings_ext/search/o;->aiZ:I
 
-    const-class v5, Lcom/android/settings/DeviceInfoSettings;
+    const-class v5, Lcom/android/settings_ext/DeviceInfoSettings;
 
     invoke-virtual {v5}, Ljava/lang/Class;->getName()Ljava/lang/String;
 
@@ -1001,7 +1001,7 @@
 
     .prologue
     .line 270
-    sget-object v0, Lcom/android/settings/search/o;->aja:Ljava/util/HashMap;
+    sget-object v0, Lcom/android/settings_ext/search/o;->aja:Ljava/util/HashMap;
 
     invoke-virtual {v0, p0}, Ljava/util/HashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -1017,7 +1017,7 @@
 
     .prologue
     .line 274
-    sget-object v0, Lcom/android/settings/search/o;->aja:Ljava/util/HashMap;
+    sget-object v0, Lcom/android/settings_ext/search/o;->aja:Ljava/util/HashMap;
 
     invoke-virtual {v0}, Ljava/util/HashMap;->values()Ljava/util/Collection;
 

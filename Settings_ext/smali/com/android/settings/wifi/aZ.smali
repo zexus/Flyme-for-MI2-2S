@@ -1,4 +1,4 @@
-.class Lcom/android/settings/wifi/aZ;
+.class Lcom/android/settings_ext/wifi/aZ;
 .super Ljava/lang/Object;
 .source "WpsFragment.java"
 
@@ -7,16 +7,16 @@
 
 
 # instance fields
-.field final synthetic axK:Lcom/android/settings/wifi/WpsFragment;
+.field final synthetic axK:Lcom/android/settings_ext/wifi/WpsFragment;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/wifi/WpsFragment;)V
+.method constructor <init>(Lcom/android/settings_ext/wifi/WpsFragment;)V
     .locals 0
 
     .prologue
     .line 156
-    iput-object p1, p0, Lcom/android/settings/wifi/aZ;->axK:Lcom/android/settings/wifi/WpsFragment;
+    iput-object p1, p0, Lcom/android/settings_ext/wifi/aZ;->axK:Lcom/android/settings_ext/wifi/WpsFragment;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -30,9 +30,9 @@
 
     .prologue
     .line 159
-    iget-object v0, p0, Lcom/android/settings/wifi/aZ;->axK:Lcom/android/settings/wifi/WpsFragment;
+    iget-object v0, p0, Lcom/android/settings_ext/wifi/aZ;->axK:Lcom/android/settings_ext/wifi/WpsFragment;
 
-    invoke-virtual {v0}, Lcom/android/settings/wifi/WpsFragment;->finish()V
+    invoke-virtual {v0}, Lcom/android/settings_ext/wifi/WpsFragment;->finish()V
 
     .line 160
     return-void

@@ -1,4 +1,4 @@
-.class Lcom/android/settings/aG;
+.class Lcom/android/settings_ext/aG;
 .super Ljava/lang/Object;
 .source "CryptKeeper.java"
 
@@ -7,16 +7,16 @@
 
 
 # instance fields
-.field final synthetic fb:Lcom/android/settings/CryptKeeper;
+.field final synthetic fb:Lcom/android/settings_ext/CryptKeeper;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/CryptKeeper;)V
+.method constructor <init>(Lcom/android/settings_ext/CryptKeeper;)V
     .locals 0
 
     .prologue
     .line 141
-    iput-object p1, p0, Lcom/android/settings/aG;->fb:Lcom/android/settings/CryptKeeper;
+    iput-object p1, p0, Lcom/android/settings_ext/aG;->fb:Lcom/android/settings_ext/CryptKeeper;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -30,9 +30,9 @@
 
     .prologue
     .line 143
-    iget-object v0, p0, Lcom/android/settings/aG;->fb:Lcom/android/settings/CryptKeeper;
+    iget-object v0, p0, Lcom/android/settings_ext/aG;->fb:Lcom/android/settings_ext/CryptKeeper;
 
-    invoke-static {v0}, Lcom/android/settings/CryptKeeper;->a(Lcom/android/settings/CryptKeeper;)Lcom/android/internal/widget/LockPatternView;
+    invoke-static {v0}, Lcom/android/settings_ext/CryptKeeper;->a(Lcom/android/settings_ext/CryptKeeper;)Lcom/android/internal/widget/LockPatternView;
 
     move-result-object v0
 

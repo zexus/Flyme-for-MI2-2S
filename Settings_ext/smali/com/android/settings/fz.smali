@@ -1,4 +1,4 @@
-.class public final Lcom/android/settings/fz;
+.class public final Lcom/android/settings_ext/fz;
 .super Ljava/lang/Object;
 .source "R.java"
 
@@ -55,14 +55,14 @@
 
     fill-array-data v0, :array_0
 
-    sput-object v0, Lcom/android/settings/fz;->uz:[I
+    sput-object v0, Lcom/android/settings_ext/fz;->uz:[I
 
     .line 14136
     new-array v0, v1, [I
 
     fill-array-data v0, :array_1
 
-    sput-object v0, Lcom/android/settings/fz;->uA:[I
+    sput-object v0, Lcom/android/settings_ext/fz;->uA:[I
 
     .line 14198
     const/4 v0, 0x4
@@ -71,7 +71,7 @@
 
     fill-array-data v0, :array_2
 
-    sput-object v0, Lcom/android/settings/fz;->uB:[I
+    sput-object v0, Lcom/android/settings_ext/fz;->uB:[I
 
     .line 14284
     const/4 v0, 0x7
@@ -80,28 +80,28 @@
 
     fill-array-data v0, :array_3
 
-    sput-object v0, Lcom/android/settings/fz;->uC:[I
+    sput-object v0, Lcom/android/settings_ext/fz;->uC:[I
 
     .line 14400
     new-array v0, v4, [I
 
     fill-array-data v0, :array_4
 
-    sput-object v0, Lcom/android/settings/fz;->uD:[I
+    sput-object v0, Lcom/android/settings_ext/fz;->uD:[I
 
     .line 14455
     new-array v0, v1, [I
 
     fill-array-data v0, :array_5
 
-    sput-object v0, Lcom/android/settings/fz;->uE:[I
+    sput-object v0, Lcom/android/settings_ext/fz;->uE:[I
 
     .line 14543
     new-array v0, v5, [I
 
     fill-array-data v0, :array_6
 
-    sput-object v0, Lcom/android/settings/fz;->uF:[I
+    sput-object v0, Lcom/android/settings_ext/fz;->uF:[I
 
     .line 14600
     new-array v0, v3, [I
@@ -110,7 +110,7 @@
 
     aput v1, v0, v2
 
-    sput-object v0, Lcom/android/settings/fz;->uG:[I
+    sput-object v0, Lcom/android/settings_ext/fz;->uG:[I
 
     .line 14649
     const/16 v0, 0xe
@@ -119,14 +119,14 @@
 
     fill-array-data v0, :array_7
 
-    sput-object v0, Lcom/android/settings/fz;->LockPatternView:[I
+    sput-object v0, Lcom/android/settings_ext/fz;->LockPatternView:[I
 
     .line 14858
     new-array v0, v4, [I
 
     fill-array-data v0, :array_8
 
-    sput-object v0, Lcom/android/settings/fz;->uH:[I
+    sput-object v0, Lcom/android/settings_ext/fz;->uH:[I
 
     .line 14906
     new-array v0, v3, [I
@@ -135,14 +135,14 @@
 
     aput v1, v0, v2
 
-    sput-object v0, Lcom/android/settings/fz;->Preference:[I
+    sput-object v0, Lcom/android/settings_ext/fz;->Preference:[I
 
     .line 14937
     new-array v0, v5, [I
 
     fill-array-data v0, :array_9
 
-    sput-object v0, Lcom/android/settings/fz;->uI:[I
+    sput-object v0, Lcom/android/settings_ext/fz;->uI:[I
 
     .line 14984
     new-array v0, v3, [I
@@ -151,7 +151,7 @@
 
     aput v1, v0, v2
 
-    sput-object v0, Lcom/android/settings/fz;->uJ:[I
+    sput-object v0, Lcom/android/settings_ext/fz;->uJ:[I
 
     .line 15011
     new-array v0, v3, [I
@@ -160,7 +160,7 @@
 
     aput v1, v0, v2
 
-    sput-object v0, Lcom/android/settings/fz;->uK:[I
+    sput-object v0, Lcom/android/settings_ext/fz;->uK:[I
 
     return-void
 

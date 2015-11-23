@@ -1,19 +1,19 @@
-.class Lcom/android/settings/b;
+.class Lcom/android/settings_ext/b;
 .super Landroid/database/ContentObserver;
 .source "AccessControlFragment.java"
 
 
 # instance fields
-.field final synthetic g:Lcom/android/settings/AccessControlFragment;
+.field final synthetic g:Lcom/android/settings_ext/AccessControlFragment;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/AccessControlFragment;Landroid/os/Handler;)V
+.method constructor <init>(Lcom/android/settings_ext/AccessControlFragment;Landroid/os/Handler;)V
     .locals 0
 
     .prologue
     .line 31
-    iput-object p1, p0, Lcom/android/settings/b;->g:Lcom/android/settings/AccessControlFragment;
+    iput-object p1, p0, Lcom/android/settings_ext/b;->g:Lcom/android/settings_ext/AccessControlFragment;
 
     invoke-direct {p0, p2}, Landroid/database/ContentObserver;-><init>(Landroid/os/Handler;)V
 
@@ -27,9 +27,9 @@
 
     .prologue
     .line 34
-    iget-object v0, p0, Lcom/android/settings/b;->g:Lcom/android/settings/AccessControlFragment;
+    iget-object v0, p0, Lcom/android/settings_ext/b;->g:Lcom/android/settings_ext/AccessControlFragment;
 
-    invoke-static {v0}, Lcom/android/settings/AccessControlFragment;->a(Lcom/android/settings/AccessControlFragment;)V
+    invoke-static {v0}, Lcom/android/settings_ext/AccessControlFragment;->a(Lcom/android/settings_ext/AccessControlFragment;)V
 
     .line 35
     return-void

@@ -1,4 +1,4 @@
-.class Lcom/android/settings/g;
+.class Lcom/android/settings_ext/g;
 .super Ljava/lang/Object;
 .source "AccessControlSetApp.java"
 
@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final synthetic q:Lcom/android/settings/AccessControlSetApp;
+.field final synthetic q:Lcom/android/settings_ext/AccessControlSetApp;
 
 .field final synthetic r:Ljava/util/ArrayList;
 
@@ -15,16 +15,16 @@
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/AccessControlSetApp;Ljava/util/ArrayList;Z)V
+.method constructor <init>(Lcom/android/settings_ext/AccessControlSetApp;Ljava/util/ArrayList;Z)V
     .locals 0
 
     .prologue
     .line 180
-    iput-object p1, p0, Lcom/android/settings/g;->q:Lcom/android/settings/AccessControlSetApp;
+    iput-object p1, p0, Lcom/android/settings_ext/g;->q:Lcom/android/settings_ext/AccessControlSetApp;
 
-    iput-object p2, p0, Lcom/android/settings/g;->r:Ljava/util/ArrayList;
+    iput-object p2, p0, Lcom/android/settings_ext/g;->r:Ljava/util/ArrayList;
 
-    iput-boolean p3, p0, Lcom/android/settings/g;->s:Z
+    iput-boolean p3, p0, Lcom/android/settings_ext/g;->s:Z
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -38,18 +38,18 @@
 
     .prologue
     .line 183
-    iget-object v0, p0, Lcom/android/settings/g;->r:Ljava/util/ArrayList;
+    iget-object v0, p0, Lcom/android/settings_ext/g;->r:Ljava/util/ArrayList;
 
-    iget-object v1, p0, Lcom/android/settings/g;->q:Lcom/android/settings/AccessControlSetApp;
+    iget-object v1, p0, Lcom/android/settings_ext/g;->q:Lcom/android/settings_ext/AccessControlSetApp;
 
-    invoke-static {v1}, Lcom/android/settings/AccessControlSetApp;->c(Lcom/android/settings/AccessControlSetApp;)Ljava/util/Comparator;
+    invoke-static {v1}, Lcom/android/settings_ext/AccessControlSetApp;->c(Lcom/android/settings_ext/AccessControlSetApp;)Ljava/util/Comparator;
 
     move-result-object v1
 
     invoke-static {v0, v1}, Ljava/util/Collections;->sort(Ljava/util/List;Ljava/util/Comparator;)V
 
     .line 184
-    iget-object v0, p0, Lcom/android/settings/g;->r:Ljava/util/ArrayList;
+    iget-object v0, p0, Lcom/android/settings_ext/g;->r:Ljava/util/ArrayList;
 
     invoke-virtual {v0}, Ljava/util/ArrayList;->iterator()Ljava/util/Iterator;
 
@@ -71,14 +71,14 @@
     .line 185
     new-instance v3, Landroid/preference/CheckBoxPreference;
 
-    iget-object v1, p0, Lcom/android/settings/g;->q:Lcom/android/settings/AccessControlSetApp;
+    iget-object v1, p0, Lcom/android/settings_ext/g;->q:Lcom/android/settings_ext/AccessControlSetApp;
 
     invoke-direct {v3, v1}, Landroid/preference/CheckBoxPreference;-><init>(Landroid/content/Context;)V
 
     .line 187
-    iget-object v1, p0, Lcom/android/settings/g;->q:Lcom/android/settings/AccessControlSetApp;
+    iget-object v1, p0, Lcom/android/settings_ext/g;->q:Lcom/android/settings_ext/AccessControlSetApp;
 
-    invoke-static {v1}, Lcom/android/settings/AccessControlSetApp;->a(Lcom/android/settings/AccessControlSetApp;)Landroid/content/pm/PackageManager;
+    invoke-static {v1}, Lcom/android/settings_ext/AccessControlSetApp;->a(Lcom/android/settings_ext/AccessControlSetApp;)Landroid/content/pm/PackageManager;
 
     move-result-object v1
 
@@ -97,11 +97,11 @@
     invoke-virtual {v3, v1}, Landroid/preference/CheckBoxPreference;->setTitle(Ljava/lang/CharSequence;)V
 
     .line 193
-    iget-object v1, p0, Lcom/android/settings/g;->q:Lcom/android/settings/AccessControlSetApp;
+    iget-object v1, p0, Lcom/android/settings_ext/g;->q:Lcom/android/settings_ext/AccessControlSetApp;
 
-    iget-object v4, p0, Lcom/android/settings/g;->q:Lcom/android/settings/AccessControlSetApp;
+    iget-object v4, p0, Lcom/android/settings_ext/g;->q:Lcom/android/settings_ext/AccessControlSetApp;
 
-    invoke-static {v4}, Lcom/android/settings/AccessControlSetApp;->a(Lcom/android/settings/AccessControlSetApp;)Landroid/content/pm/PackageManager;
+    invoke-static {v4}, Lcom/android/settings_ext/AccessControlSetApp;->a(Lcom/android/settings_ext/AccessControlSetApp;)Landroid/content/pm/PackageManager;
 
     move-result-object v4
 
@@ -129,19 +129,19 @@
     invoke-virtual {v3, v0}, Landroid/preference/CheckBoxPreference;->setPersistent(Z)V
 
     .line 202
-    iget-boolean v0, p0, Lcom/android/settings/g;->s:Z
+    iget-boolean v0, p0, Lcom/android/settings_ext/g;->s:Z
 
     invoke-virtual {v3, v0}, Landroid/preference/CheckBoxPreference;->setChecked(Z)V
 
     .line 204
-    iget-object v0, p0, Lcom/android/settings/g;->q:Lcom/android/settings/AccessControlSetApp;
+    iget-object v0, p0, Lcom/android/settings_ext/g;->q:Lcom/android/settings_ext/AccessControlSetApp;
 
     invoke-virtual {v3, v0}, Landroid/preference/CheckBoxPreference;->setOnPreferenceChangeListener(Landroid/preference/Preference$OnPreferenceChangeListener;)V
 
     .line 205
-    iget-object v0, p0, Lcom/android/settings/g;->q:Lcom/android/settings/AccessControlSetApp;
+    iget-object v0, p0, Lcom/android/settings_ext/g;->q:Lcom/android/settings_ext/AccessControlSetApp;
 
-    invoke-virtual {v0}, Lcom/android/settings/AccessControlSetApp;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
+    invoke-virtual {v0}, Lcom/android/settings_ext/AccessControlSetApp;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
 
     move-result-object v0
 

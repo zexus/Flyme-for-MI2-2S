@@ -1,5 +1,5 @@
-.class public Lcom/android/settings/deviceinfo/UsbSettings;
-.super Lcom/android/settings/SettingsPreferenceFragment;
+.class public Lcom/android/settings_ext/deviceinfo/UsbSettings;
+.super Lcom/android/settings_ext/SettingsPreferenceFragment;
 .source "UsbSettings.java"
 
 
@@ -43,7 +43,7 @@
 
     move-result-object v0
 
-    sput-object v0, Lcom/android/settings/deviceinfo/UsbSettings;->Uf:Ljava/lang/String;
+    sput-object v0, Lcom/android/settings_ext/deviceinfo/UsbSettings;->Uf:Ljava/lang/String;
 
     return-void
 .end method
@@ -53,51 +53,51 @@
 
     .prologue
     .line 45
-    invoke-direct {p0}, Lcom/android/settings/SettingsPreferenceFragment;-><init>()V
+    invoke-direct {p0}, Lcom/android/settings_ext/SettingsPreferenceFragment;-><init>()V
 
     .line 70
     const/4 v0, 0x0
 
-    iput-boolean v0, p0, Lcom/android/settings/deviceinfo/UsbSettings;->Ui:Z
+    iput-boolean v0, p0, Lcom/android/settings_ext/deviceinfo/UsbSettings;->Ui:Z
 
     .line 72
     const/4 v0, 0x0
 
-    iput-object v0, p0, Lcom/android/settings/deviceinfo/UsbSettings;->pb:Landroid/os/storage/StorageManager;
+    iput-object v0, p0, Lcom/android/settings_ext/deviceinfo/UsbSettings;->pb:Landroid/os/storage/StorageManager;
 
     .line 74
-    new-instance v0, Lcom/android/settings/deviceinfo/UsbSettings$1;
+    new-instance v0, Lcom/android/settings_ext/deviceinfo/UsbSettings$1;
 
-    invoke-direct {v0, p0}, Lcom/android/settings/deviceinfo/UsbSettings$1;-><init>(Lcom/android/settings/deviceinfo/UsbSettings;)V
+    invoke-direct {v0, p0}, Lcom/android/settings_ext/deviceinfo/UsbSettings$1;-><init>(Lcom/android/settings_ext/deviceinfo/UsbSettings;)V
 
-    iput-object v0, p0, Lcom/android/settings/deviceinfo/UsbSettings;->Sn:Landroid/content/BroadcastReceiver;
+    iput-object v0, p0, Lcom/android/settings_ext/deviceinfo/UsbSettings;->Sn:Landroid/content/BroadcastReceiver;
 
     .line 148
-    new-instance v0, Lcom/android/settings/deviceinfo/UsbSettings$2;
+    new-instance v0, Lcom/android/settings_ext/deviceinfo/UsbSettings$2;
 
-    invoke-direct {v0, p0}, Lcom/android/settings/deviceinfo/UsbSettings$2;-><init>(Lcom/android/settings/deviceinfo/UsbSettings;)V
+    invoke-direct {v0, p0}, Lcom/android/settings_ext/deviceinfo/UsbSettings$2;-><init>(Lcom/android/settings_ext/deviceinfo/UsbSettings;)V
 
-    iput-object v0, p0, Lcom/android/settings/deviceinfo/UsbSettings;->mStorageListener:Landroid/os/storage/StorageEventListener;
+    iput-object v0, p0, Lcom/android/settings_ext/deviceinfo/UsbSettings;->mStorageListener:Landroid/os/storage/StorageEventListener;
 
     return-void
 .end method
 
-.method static synthetic a(Lcom/android/settings/deviceinfo/UsbSettings;)Z
+.method static synthetic a(Lcom/android/settings_ext/deviceinfo/UsbSettings;)Z
     .locals 1
 
     .prologue
     .line 45
-    iget-boolean v0, p0, Lcom/android/settings/deviceinfo/UsbSettings;->Uh:Z
+    iget-boolean v0, p0, Lcom/android/settings_ext/deviceinfo/UsbSettings;->Uh:Z
 
     return v0
 .end method
 
-.method static synthetic a(Lcom/android/settings/deviceinfo/UsbSettings;Z)Z
+.method static synthetic a(Lcom/android/settings_ext/deviceinfo/UsbSettings;Z)Z
     .locals 0
 
     .prologue
     .line 45
-    iput-boolean p1, p0, Lcom/android/settings/deviceinfo/UsbSettings;->Uh:Z
+    iput-boolean p1, p0, Lcom/android/settings_ext/deviceinfo/UsbSettings;->Uh:Z
 
     return p1
 .end method
@@ -120,28 +120,28 @@
     if-eqz v0, :cond_0
 
     .line 199
-    iget-object v0, p0, Lcom/android/settings/deviceinfo/UsbSettings;->Sd:Landroid/preference/CheckBoxPreference;
+    iget-object v0, p0, Lcom/android/settings_ext/deviceinfo/UsbSettings;->Sd:Landroid/preference/CheckBoxPreference;
 
     invoke-virtual {v0, v3}, Landroid/preference/CheckBoxPreference;->setChecked(Z)V
 
     .line 200
-    iget-object v0, p0, Lcom/android/settings/deviceinfo/UsbSettings;->Se:Landroid/preference/CheckBoxPreference;
+    iget-object v0, p0, Lcom/android/settings_ext/deviceinfo/UsbSettings;->Se:Landroid/preference/CheckBoxPreference;
 
     invoke-virtual {v0, v2}, Landroid/preference/CheckBoxPreference;->setChecked(Z)V
 
     .line 201
-    iget-object v0, p0, Lcom/android/settings/deviceinfo/UsbSettings;->Ug:Landroid/preference/CheckBoxPreference;
+    iget-object v0, p0, Lcom/android/settings_ext/deviceinfo/UsbSettings;->Ug:Landroid/preference/CheckBoxPreference;
 
     invoke-virtual {v0, v2}, Landroid/preference/CheckBoxPreference;->setChecked(Z)V
 
     .line 202
-    iget-object v0, p0, Lcom/android/settings/deviceinfo/UsbSettings;->Sg:Landroid/preference/CheckBoxPreference;
+    iget-object v0, p0, Lcom/android/settings_ext/deviceinfo/UsbSettings;->Sg:Landroid/preference/CheckBoxPreference;
 
     invoke-virtual {v0, v2}, Landroid/preference/CheckBoxPreference;->setChecked(Z)V
 
     .line 227
     :goto_0
-    invoke-virtual {p0}, Lcom/android/settings/deviceinfo/UsbSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/deviceinfo/UsbSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
@@ -170,17 +170,17 @@
     invoke-static {v0, v1}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
 
     .line 230
-    iget-object v0, p0, Lcom/android/settings/deviceinfo/UsbSettings;->Sd:Landroid/preference/CheckBoxPreference;
+    iget-object v0, p0, Lcom/android/settings_ext/deviceinfo/UsbSettings;->Sd:Landroid/preference/CheckBoxPreference;
 
     invoke-virtual {v0, v2}, Landroid/preference/CheckBoxPreference;->setEnabled(Z)V
 
     .line 231
-    iget-object v0, p0, Lcom/android/settings/deviceinfo/UsbSettings;->Se:Landroid/preference/CheckBoxPreference;
+    iget-object v0, p0, Lcom/android/settings_ext/deviceinfo/UsbSettings;->Se:Landroid/preference/CheckBoxPreference;
 
     invoke-virtual {v0, v2}, Landroid/preference/CheckBoxPreference;->setEnabled(Z)V
 
     .line 232
-    iget-object v0, p0, Lcom/android/settings/deviceinfo/UsbSettings;->Ug:Landroid/preference/CheckBoxPreference;
+    iget-object v0, p0, Lcom/android/settings_ext/deviceinfo/UsbSettings;->Ug:Landroid/preference/CheckBoxPreference;
 
     invoke-virtual {v0, v2}, Landroid/preference/CheckBoxPreference;->setEnabled(Z)V
 
@@ -199,22 +199,22 @@
     if-eqz v0, :cond_1
 
     .line 204
-    iget-object v0, p0, Lcom/android/settings/deviceinfo/UsbSettings;->Sd:Landroid/preference/CheckBoxPreference;
+    iget-object v0, p0, Lcom/android/settings_ext/deviceinfo/UsbSettings;->Sd:Landroid/preference/CheckBoxPreference;
 
     invoke-virtual {v0, v2}, Landroid/preference/CheckBoxPreference;->setChecked(Z)V
 
     .line 205
-    iget-object v0, p0, Lcom/android/settings/deviceinfo/UsbSettings;->Se:Landroid/preference/CheckBoxPreference;
+    iget-object v0, p0, Lcom/android/settings_ext/deviceinfo/UsbSettings;->Se:Landroid/preference/CheckBoxPreference;
 
     invoke-virtual {v0, v3}, Landroid/preference/CheckBoxPreference;->setChecked(Z)V
 
     .line 206
-    iget-object v0, p0, Lcom/android/settings/deviceinfo/UsbSettings;->Ug:Landroid/preference/CheckBoxPreference;
+    iget-object v0, p0, Lcom/android/settings_ext/deviceinfo/UsbSettings;->Ug:Landroid/preference/CheckBoxPreference;
 
     invoke-virtual {v0, v2}, Landroid/preference/CheckBoxPreference;->setChecked(Z)V
 
     .line 207
-    iget-object v0, p0, Lcom/android/settings/deviceinfo/UsbSettings;->Sg:Landroid/preference/CheckBoxPreference;
+    iget-object v0, p0, Lcom/android/settings_ext/deviceinfo/UsbSettings;->Sg:Landroid/preference/CheckBoxPreference;
 
     invoke-virtual {v0, v2}, Landroid/preference/CheckBoxPreference;->setChecked(Z)V
 
@@ -231,22 +231,22 @@
     if-eqz v0, :cond_2
 
     .line 209
-    iget-object v0, p0, Lcom/android/settings/deviceinfo/UsbSettings;->Sd:Landroid/preference/CheckBoxPreference;
+    iget-object v0, p0, Lcom/android/settings_ext/deviceinfo/UsbSettings;->Sd:Landroid/preference/CheckBoxPreference;
 
     invoke-virtual {v0, v2}, Landroid/preference/CheckBoxPreference;->setChecked(Z)V
 
     .line 210
-    iget-object v0, p0, Lcom/android/settings/deviceinfo/UsbSettings;->Se:Landroid/preference/CheckBoxPreference;
+    iget-object v0, p0, Lcom/android/settings_ext/deviceinfo/UsbSettings;->Se:Landroid/preference/CheckBoxPreference;
 
     invoke-virtual {v0, v2}, Landroid/preference/CheckBoxPreference;->setChecked(Z)V
 
     .line 211
-    iget-object v0, p0, Lcom/android/settings/deviceinfo/UsbSettings;->Ug:Landroid/preference/CheckBoxPreference;
+    iget-object v0, p0, Lcom/android/settings_ext/deviceinfo/UsbSettings;->Ug:Landroid/preference/CheckBoxPreference;
 
     invoke-virtual {v0, v3}, Landroid/preference/CheckBoxPreference;->setChecked(Z)V
 
     .line 212
-    iget-object v0, p0, Lcom/android/settings/deviceinfo/UsbSettings;->Sg:Landroid/preference/CheckBoxPreference;
+    iget-object v0, p0, Lcom/android/settings_ext/deviceinfo/UsbSettings;->Sg:Landroid/preference/CheckBoxPreference;
 
     invoke-virtual {v0, v2}, Landroid/preference/CheckBoxPreference;->setChecked(Z)V
 
@@ -263,22 +263,22 @@
     if-eqz v0, :cond_3
 
     .line 216
-    iget-object v0, p0, Lcom/android/settings/deviceinfo/UsbSettings;->Sd:Landroid/preference/CheckBoxPreference;
+    iget-object v0, p0, Lcom/android/settings_ext/deviceinfo/UsbSettings;->Sd:Landroid/preference/CheckBoxPreference;
 
     invoke-virtual {v0, v2}, Landroid/preference/CheckBoxPreference;->setChecked(Z)V
 
     .line 217
-    iget-object v0, p0, Lcom/android/settings/deviceinfo/UsbSettings;->Se:Landroid/preference/CheckBoxPreference;
+    iget-object v0, p0, Lcom/android/settings_ext/deviceinfo/UsbSettings;->Se:Landroid/preference/CheckBoxPreference;
 
     invoke-virtual {v0, v2}, Landroid/preference/CheckBoxPreference;->setChecked(Z)V
 
     .line 218
-    iget-object v0, p0, Lcom/android/settings/deviceinfo/UsbSettings;->Ug:Landroid/preference/CheckBoxPreference;
+    iget-object v0, p0, Lcom/android/settings_ext/deviceinfo/UsbSettings;->Ug:Landroid/preference/CheckBoxPreference;
 
     invoke-virtual {v0, v2}, Landroid/preference/CheckBoxPreference;->setChecked(Z)V
 
     .line 219
-    iget-object v0, p0, Lcom/android/settings/deviceinfo/UsbSettings;->Sg:Landroid/preference/CheckBoxPreference;
+    iget-object v0, p0, Lcom/android/settings_ext/deviceinfo/UsbSettings;->Sg:Landroid/preference/CheckBoxPreference;
 
     invoke-virtual {v0, v3}, Landroid/preference/CheckBoxPreference;->setChecked(Z)V
 
@@ -286,22 +286,22 @@
 
     .line 221
     :cond_3
-    iget-object v0, p0, Lcom/android/settings/deviceinfo/UsbSettings;->Sd:Landroid/preference/CheckBoxPreference;
+    iget-object v0, p0, Lcom/android/settings_ext/deviceinfo/UsbSettings;->Sd:Landroid/preference/CheckBoxPreference;
 
     invoke-virtual {v0, v2}, Landroid/preference/CheckBoxPreference;->setChecked(Z)V
 
     .line 222
-    iget-object v0, p0, Lcom/android/settings/deviceinfo/UsbSettings;->Se:Landroid/preference/CheckBoxPreference;
+    iget-object v0, p0, Lcom/android/settings_ext/deviceinfo/UsbSettings;->Se:Landroid/preference/CheckBoxPreference;
 
     invoke-virtual {v0, v2}, Landroid/preference/CheckBoxPreference;->setChecked(Z)V
 
     .line 223
-    iget-object v0, p0, Lcom/android/settings/deviceinfo/UsbSettings;->Ug:Landroid/preference/CheckBoxPreference;
+    iget-object v0, p0, Lcom/android/settings_ext/deviceinfo/UsbSettings;->Ug:Landroid/preference/CheckBoxPreference;
 
     invoke-virtual {v0, v2}, Landroid/preference/CheckBoxPreference;->setChecked(Z)V
 
     .line 224
-    iget-object v0, p0, Lcom/android/settings/deviceinfo/UsbSettings;->Sg:Landroid/preference/CheckBoxPreference;
+    iget-object v0, p0, Lcom/android/settings_ext/deviceinfo/UsbSettings;->Sg:Landroid/preference/CheckBoxPreference;
 
     invoke-virtual {v0, v2}, Landroid/preference/CheckBoxPreference;->setChecked(Z)V
 
@@ -309,11 +309,11 @@
 
     .line 233
     :cond_4
-    iget-boolean v0, p0, Lcom/android/settings/deviceinfo/UsbSettings;->Uh:Z
+    iget-boolean v0, p0, Lcom/android/settings_ext/deviceinfo/UsbSettings;->Uh:Z
 
     if-nez v0, :cond_5
 
-    iget-boolean v0, p0, Lcom/android/settings/deviceinfo/UsbSettings;->Ui:Z
+    iget-boolean v0, p0, Lcom/android/settings_ext/deviceinfo/UsbSettings;->Ui:Z
 
     if-nez v0, :cond_5
 
@@ -325,7 +325,7 @@
     invoke-static {v0, v1}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
 
     .line 236
-    invoke-virtual {p0}, Lcom/android/settings/deviceinfo/UsbSettings;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
+    invoke-virtual {p0}, Lcom/android/settings_ext/deviceinfo/UsbSettings;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
 
     move-result-object v0
 
@@ -335,7 +335,7 @@
 
     .line 238
     :cond_5
-    invoke-virtual {p0}, Lcom/android/settings/deviceinfo/UsbSettings;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
+    invoke-virtual {p0}, Lcom/android/settings_ext/deviceinfo/UsbSettings;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
 
     move-result-object v0
 
@@ -344,22 +344,22 @@
     goto/16 :goto_1
 .end method
 
-.method static synthetic b(Lcom/android/settings/deviceinfo/UsbSettings;)V
+.method static synthetic b(Lcom/android/settings_ext/deviceinfo/UsbSettings;)V
     .locals 0
 
     .prologue
     .line 45
-    invoke-direct {p0}, Lcom/android/settings/deviceinfo/UsbSettings;->ot()V
+    invoke-direct {p0}, Lcom/android/settings_ext/deviceinfo/UsbSettings;->ot()V
 
     return-void
 .end method
 
-.method static synthetic b(Lcom/android/settings/deviceinfo/UsbSettings;Z)Z
+.method static synthetic b(Lcom/android/settings_ext/deviceinfo/UsbSettings;Z)Z
     .locals 0
 
     .prologue
     .line 45
-    iput-boolean p1, p0, Lcom/android/settings/deviceinfo/UsbSettings;->Ui:Z
+    iput-boolean p1, p0, Lcom/android/settings_ext/deviceinfo/UsbSettings;->Ui:Z
 
     return p1
 .end method
@@ -371,7 +371,7 @@
     const/4 v3, 0x0
 
     .line 114
-    invoke-virtual {p0}, Lcom/android/settings/deviceinfo/UsbSettings;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
+    invoke-virtual {p0}, Lcom/android/settings_ext/deviceinfo/UsbSettings;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
 
     move-result-object v0
 
@@ -385,10 +385,10 @@
     :cond_0
     const v0, 0x7f060098
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/deviceinfo/UsbSettings;->addPreferencesFromResource(I)V
+    invoke-virtual {p0, v0}, Lcom/android/settings_ext/deviceinfo/UsbSettings;->addPreferencesFromResource(I)V
 
     .line 119
-    invoke-virtual {p0}, Lcom/android/settings/deviceinfo/UsbSettings;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
+    invoke-virtual {p0}, Lcom/android/settings_ext/deviceinfo/UsbSettings;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
 
     move-result-object v1
 
@@ -401,7 +401,7 @@
 
     check-cast v0, Landroid/preference/CheckBoxPreference;
 
-    iput-object v0, p0, Lcom/android/settings/deviceinfo/UsbSettings;->Sd:Landroid/preference/CheckBoxPreference;
+    iput-object v0, p0, Lcom/android/settings_ext/deviceinfo/UsbSettings;->Sd:Landroid/preference/CheckBoxPreference;
 
     .line 122
     const-string v0, "usb_ptp"
@@ -412,7 +412,7 @@
 
     check-cast v0, Landroid/preference/CheckBoxPreference;
 
-    iput-object v0, p0, Lcom/android/settings/deviceinfo/UsbSettings;->Se:Landroid/preference/CheckBoxPreference;
+    iput-object v0, p0, Lcom/android/settings_ext/deviceinfo/UsbSettings;->Se:Landroid/preference/CheckBoxPreference;
 
     .line 123
     const-string v0, "usb_charging"
@@ -423,7 +423,7 @@
 
     check-cast v0, Landroid/preference/CheckBoxPreference;
 
-    iput-object v0, p0, Lcom/android/settings/deviceinfo/UsbSettings;->Sg:Landroid/preference/CheckBoxPreference;
+    iput-object v0, p0, Lcom/android/settings_ext/deviceinfo/UsbSettings;->Sg:Landroid/preference/CheckBoxPreference;
 
     .line 124
     const-string v0, "usb_sdcard"
@@ -434,10 +434,10 @@
 
     check-cast v0, Landroid/preference/CheckBoxPreference;
 
-    iput-object v0, p0, Lcom/android/settings/deviceinfo/UsbSettings;->Ug:Landroid/preference/CheckBoxPreference;
+    iput-object v0, p0, Lcom/android/settings_ext/deviceinfo/UsbSettings;->Ug:Landroid/preference/CheckBoxPreference;
 
     .line 126
-    invoke-direct {p0}, Lcom/android/settings/deviceinfo/UsbSettings;->nV()Z
+    invoke-direct {p0}, Lcom/android/settings_ext/deviceinfo/UsbSettings;->nV()Z
 
     move-result v0
 
@@ -451,13 +451,13 @@
     invoke-static {v0, v2}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
     .line 128
-    iget-object v0, p0, Lcom/android/settings/deviceinfo/UsbSettings;->Ug:Landroid/preference/CheckBoxPreference;
+    iget-object v0, p0, Lcom/android/settings_ext/deviceinfo/UsbSettings;->Ug:Landroid/preference/CheckBoxPreference;
 
     invoke-virtual {v1, v0}, Landroid/preference/PreferenceScreen;->removePreference(Landroid/preference/Preference;)Z
 
     .line 131
     :cond_1
-    invoke-virtual {p0}, Lcom/android/settings/deviceinfo/UsbSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/deviceinfo/UsbSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
@@ -479,17 +479,17 @@
     if-eqz v0, :cond_2
 
     .line 133
-    iget-object v0, p0, Lcom/android/settings/deviceinfo/UsbSettings;->Sd:Landroid/preference/CheckBoxPreference;
+    iget-object v0, p0, Lcom/android/settings_ext/deviceinfo/UsbSettings;->Sd:Landroid/preference/CheckBoxPreference;
 
     invoke-virtual {v0, v3}, Landroid/preference/CheckBoxPreference;->setEnabled(Z)V
 
     .line 134
-    iget-object v0, p0, Lcom/android/settings/deviceinfo/UsbSettings;->Se:Landroid/preference/CheckBoxPreference;
+    iget-object v0, p0, Lcom/android/settings_ext/deviceinfo/UsbSettings;->Se:Landroid/preference/CheckBoxPreference;
 
     invoke-virtual {v0, v3}, Landroid/preference/CheckBoxPreference;->setEnabled(Z)V
 
     .line 135
-    iget-object v0, p0, Lcom/android/settings/deviceinfo/UsbSettings;->Ug:Landroid/preference/CheckBoxPreference;
+    iget-object v0, p0, Lcom/android/settings_ext/deviceinfo/UsbSettings;->Ug:Landroid/preference/CheckBoxPreference;
 
     invoke-virtual {v0, v3}, Landroid/preference/CheckBoxPreference;->setEnabled(Z)V
 
@@ -505,7 +505,7 @@
     const/4 v0, 0x0
 
     .line 104
-    iget-object v1, p0, Lcom/android/settings/deviceinfo/UsbSettings;->pb:Landroid/os/storage/StorageManager;
+    iget-object v1, p0, Lcom/android/settings_ext/deviceinfo/UsbSettings;->pb:Landroid/os/storage/StorageManager;
 
     invoke-virtual {v1}, Landroid/os/storage/StorageManager;->getVolumeList()[Landroid/os/storage/StorageVolume;
 
@@ -556,7 +556,7 @@
     move-result-object v0
 
     .line 95
-    sget-object v1, Lcom/android/settings/deviceinfo/UsbSettings;->Uf:Ljava/lang/String;
+    sget-object v1, Lcom/android/settings_ext/deviceinfo/UsbSettings;->Uf:Ljava/lang/String;
 
     invoke-virtual {v0, v1}, Ljava/lang/String;->contains(Ljava/lang/CharSequence;)Z
 
@@ -565,9 +565,9 @@
     if-eqz v0, :cond_0
 
     .line 96
-    sget-object v0, Lcom/android/settings/deviceinfo/UsbSettings;->Uf:Ljava/lang/String;
+    sget-object v0, Lcom/android/settings_ext/deviceinfo/UsbSettings;->Uf:Ljava/lang/String;
 
-    invoke-direct {p0, v0}, Lcom/android/settings/deviceinfo/UsbSettings;->aH(Ljava/lang/String;)V
+    invoke-direct {p0, v0}, Lcom/android/settings_ext/deviceinfo/UsbSettings;->aH(Ljava/lang/String;)V
 
     .line 100
     :goto_0
@@ -575,13 +575,13 @@
 
     .line 98
     :cond_0
-    iget-object v0, p0, Lcom/android/settings/deviceinfo/UsbSettings;->hE:Landroid/hardware/usb/UsbManager;
+    iget-object v0, p0, Lcom/android/settings_ext/deviceinfo/UsbSettings;->hE:Landroid/hardware/usb/UsbManager;
 
     invoke-virtual {v0}, Landroid/hardware/usb/UsbManager;->getDefaultFunction()Ljava/lang/String;
 
     move-result-object v0
 
-    invoke-direct {p0, v0}, Lcom/android/settings/deviceinfo/UsbSettings;->aH(Ljava/lang/String;)V
+    invoke-direct {p0, v0}, Lcom/android/settings_ext/deviceinfo/UsbSettings;->aH(Ljava/lang/String;)V
 
     goto :goto_0
 .end method
@@ -593,29 +593,29 @@
 
     .prologue
     .line 143
-    invoke-super {p0, p1}, Lcom/android/settings/SettingsPreferenceFragment;->onCreate(Landroid/os/Bundle;)V
+    invoke-super {p0, p1}, Lcom/android/settings_ext/SettingsPreferenceFragment;->onCreate(Landroid/os/Bundle;)V
 
     .line 144
     const-string v0, "usb"
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/deviceinfo/UsbSettings;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
+    invoke-virtual {p0, v0}, Lcom/android/settings_ext/deviceinfo/UsbSettings;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object v0
 
     check-cast v0, Landroid/hardware/usb/UsbManager;
 
-    iput-object v0, p0, Lcom/android/settings/deviceinfo/UsbSettings;->hE:Landroid/hardware/usb/UsbManager;
+    iput-object v0, p0, Lcom/android/settings_ext/deviceinfo/UsbSettings;->hE:Landroid/hardware/usb/UsbManager;
 
     .line 145
     const-string v0, "storage"
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/deviceinfo/UsbSettings;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
+    invoke-virtual {p0, v0}, Lcom/android/settings_ext/deviceinfo/UsbSettings;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object v0
 
     check-cast v0, Landroid/os/storage/StorageManager;
 
-    iput-object v0, p0, Lcom/android/settings/deviceinfo/UsbSettings;->pb:Landroid/os/storage/StorageManager;
+    iput-object v0, p0, Lcom/android/settings_ext/deviceinfo/UsbSettings;->pb:Landroid/os/storage/StorageManager;
 
     .line 146
     return-void
@@ -626,26 +626,26 @@
 
     .prologue
     .line 173
-    invoke-super {p0}, Lcom/android/settings/SettingsPreferenceFragment;->onPause()V
+    invoke-super {p0}, Lcom/android/settings_ext/SettingsPreferenceFragment;->onPause()V
 
     .line 174
-    invoke-virtual {p0}, Lcom/android/settings/deviceinfo/UsbSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/deviceinfo/UsbSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/android/settings/deviceinfo/UsbSettings;->Sn:Landroid/content/BroadcastReceiver;
+    iget-object v1, p0, Lcom/android/settings_ext/deviceinfo/UsbSettings;->Sn:Landroid/content/BroadcastReceiver;
 
     invoke-virtual {v0, v1}, Landroid/app/Activity;->unregisterReceiver(Landroid/content/BroadcastReceiver;)V
 
     .line 175
-    iget-object v0, p0, Lcom/android/settings/deviceinfo/UsbSettings;->pb:Landroid/os/storage/StorageManager;
+    iget-object v0, p0, Lcom/android/settings_ext/deviceinfo/UsbSettings;->pb:Landroid/os/storage/StorageManager;
 
     if-eqz v0, :cond_0
 
     .line 176
-    iget-object v0, p0, Lcom/android/settings/deviceinfo/UsbSettings;->pb:Landroid/os/storage/StorageManager;
+    iget-object v0, p0, Lcom/android/settings_ext/deviceinfo/UsbSettings;->pb:Landroid/os/storage/StorageManager;
 
-    iget-object v1, p0, Lcom/android/settings/deviceinfo/UsbSettings;->mStorageListener:Landroid/os/storage/StorageEventListener;
+    iget-object v1, p0, Lcom/android/settings_ext/deviceinfo/UsbSettings;->mStorageListener:Landroid/os/storage/StorageEventListener;
 
     invoke-virtual {v0, v1}, Landroid/os/storage/StorageManager;->unregisterListener(Landroid/os/storage/StorageEventListener;)V
 
@@ -661,7 +661,7 @@
     const/4 v1, 0x1
 
     .line 248
-    invoke-static {}, Lcom/android/settings/hl;->hr()Z
+    invoke-static {}, Lcom/android/settings_ext/hl;->hr()Z
 
     move-result v0
 
@@ -675,7 +675,7 @@
 
     .line 253
     :cond_0
-    invoke-virtual {p0}, Lcom/android/settings/deviceinfo/UsbSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/deviceinfo/UsbSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
@@ -703,14 +703,14 @@
 
     .line 259
     :cond_1
-    sget-object v0, Lcom/android/settings/deviceinfo/UsbSettings;->Uf:Ljava/lang/String;
+    sget-object v0, Lcom/android/settings_ext/deviceinfo/UsbSettings;->Uf:Ljava/lang/String;
 
     .line 260
-    iget-object v2, p0, Lcom/android/settings/deviceinfo/UsbSettings;->Sd:Landroid/preference/CheckBoxPreference;
+    iget-object v2, p0, Lcom/android/settings_ext/deviceinfo/UsbSettings;->Sd:Landroid/preference/CheckBoxPreference;
 
     if-ne p2, v2, :cond_3
 
-    iget-object v2, p0, Lcom/android/settings/deviceinfo/UsbSettings;->Sd:Landroid/preference/CheckBoxPreference;
+    iget-object v2, p0, Lcom/android/settings_ext/deviceinfo/UsbSettings;->Sd:Landroid/preference/CheckBoxPreference;
 
     invoke-virtual {v2}, Landroid/preference/CheckBoxPreference;->isChecked()Z
 
@@ -724,18 +724,18 @@
     .line 272
     :cond_2
     :goto_1
-    iput-boolean v1, p0, Lcom/android/settings/deviceinfo/UsbSettings;->Ui:Z
+    iput-boolean v1, p0, Lcom/android/settings_ext/deviceinfo/UsbSettings;->Ui:Z
 
     .line 273
-    iget-object v2, p0, Lcom/android/settings/deviceinfo/UsbSettings;->hE:Landroid/hardware/usb/UsbManager;
+    iget-object v2, p0, Lcom/android/settings_ext/deviceinfo/UsbSettings;->hE:Landroid/hardware/usb/UsbManager;
 
     invoke-virtual {v2, v0, v1}, Landroid/hardware/usb/UsbManager;->setCurrentFunction(Ljava/lang/String;Z)V
 
     .line 274
-    invoke-direct {p0, v0}, Lcom/android/settings/deviceinfo/UsbSettings;->aH(Ljava/lang/String;)V
+    invoke-direct {p0, v0}, Lcom/android/settings_ext/deviceinfo/UsbSettings;->aH(Ljava/lang/String;)V
 
     .line 278
-    invoke-super {p0, p1, p2}, Lcom/android/settings/SettingsPreferenceFragment;->onPreferenceTreeClick(Landroid/preference/PreferenceScreen;Landroid/preference/Preference;)Z
+    invoke-super {p0, p1, p2}, Lcom/android/settings_ext/SettingsPreferenceFragment;->onPreferenceTreeClick(Landroid/preference/PreferenceScreen;Landroid/preference/Preference;)Z
 
     move-result v0
 
@@ -743,11 +743,11 @@
 
     .line 262
     :cond_3
-    iget-object v2, p0, Lcom/android/settings/deviceinfo/UsbSettings;->Se:Landroid/preference/CheckBoxPreference;
+    iget-object v2, p0, Lcom/android/settings_ext/deviceinfo/UsbSettings;->Se:Landroid/preference/CheckBoxPreference;
 
     if-ne p2, v2, :cond_4
 
-    iget-object v2, p0, Lcom/android/settings/deviceinfo/UsbSettings;->Se:Landroid/preference/CheckBoxPreference;
+    iget-object v2, p0, Lcom/android/settings_ext/deviceinfo/UsbSettings;->Se:Landroid/preference/CheckBoxPreference;
 
     invoke-virtual {v2}, Landroid/preference/CheckBoxPreference;->isChecked()Z
 
@@ -762,11 +762,11 @@
 
     .line 264
     :cond_4
-    iget-object v2, p0, Lcom/android/settings/deviceinfo/UsbSettings;->Sg:Landroid/preference/CheckBoxPreference;
+    iget-object v2, p0, Lcom/android/settings_ext/deviceinfo/UsbSettings;->Sg:Landroid/preference/CheckBoxPreference;
 
     if-ne p2, v2, :cond_5
 
-    iget-object v2, p0, Lcom/android/settings/deviceinfo/UsbSettings;->Sg:Landroid/preference/CheckBoxPreference;
+    iget-object v2, p0, Lcom/android/settings_ext/deviceinfo/UsbSettings;->Sg:Landroid/preference/CheckBoxPreference;
 
     invoke-virtual {v2}, Landroid/preference/CheckBoxPreference;->isChecked()Z
 
@@ -781,11 +781,11 @@
 
     .line 268
     :cond_5
-    iget-object v2, p0, Lcom/android/settings/deviceinfo/UsbSettings;->Ug:Landroid/preference/CheckBoxPreference;
+    iget-object v2, p0, Lcom/android/settings_ext/deviceinfo/UsbSettings;->Ug:Landroid/preference/CheckBoxPreference;
 
     if-ne p2, v2, :cond_2
 
-    iget-object v2, p0, Lcom/android/settings/deviceinfo/UsbSettings;->Ug:Landroid/preference/CheckBoxPreference;
+    iget-object v2, p0, Lcom/android/settings_ext/deviceinfo/UsbSettings;->Ug:Landroid/preference/CheckBoxPreference;
 
     invoke-virtual {v2}, Landroid/preference/CheckBoxPreference;->isChecked()Z
 
@@ -804,17 +804,17 @@
 
     .prologue
     .line 182
-    invoke-super {p0}, Lcom/android/settings/SettingsPreferenceFragment;->onResume()V
+    invoke-super {p0}, Lcom/android/settings_ext/SettingsPreferenceFragment;->onResume()V
 
     .line 186
-    invoke-direct {p0}, Lcom/android/settings/deviceinfo/UsbSettings;->gC()Landroid/preference/PreferenceScreen;
+    invoke-direct {p0}, Lcom/android/settings_ext/deviceinfo/UsbSettings;->gC()Landroid/preference/PreferenceScreen;
 
     .line 189
-    invoke-virtual {p0}, Lcom/android/settings/deviceinfo/UsbSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/deviceinfo/UsbSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/android/settings/deviceinfo/UsbSettings;->Sn:Landroid/content/BroadcastReceiver;
+    iget-object v1, p0, Lcom/android/settings_ext/deviceinfo/UsbSettings;->Sn:Landroid/content/BroadcastReceiver;
 
     new-instance v2, Landroid/content/IntentFilter;
 
@@ -825,20 +825,20 @@
     invoke-virtual {v0, v1, v2}, Landroid/app/Activity;->registerReceiver(Landroid/content/BroadcastReceiver;Landroid/content/IntentFilter;)Landroid/content/Intent;
 
     .line 191
-    iget-object v0, p0, Lcom/android/settings/deviceinfo/UsbSettings;->pb:Landroid/os/storage/StorageManager;
+    iget-object v0, p0, Lcom/android/settings_ext/deviceinfo/UsbSettings;->pb:Landroid/os/storage/StorageManager;
 
     if-eqz v0, :cond_0
 
     .line 192
-    iget-object v0, p0, Lcom/android/settings/deviceinfo/UsbSettings;->pb:Landroid/os/storage/StorageManager;
+    iget-object v0, p0, Lcom/android/settings_ext/deviceinfo/UsbSettings;->pb:Landroid/os/storage/StorageManager;
 
-    iget-object v1, p0, Lcom/android/settings/deviceinfo/UsbSettings;->mStorageListener:Landroid/os/storage/StorageEventListener;
+    iget-object v1, p0, Lcom/android/settings_ext/deviceinfo/UsbSettings;->mStorageListener:Landroid/os/storage/StorageEventListener;
 
     invoke-virtual {v0, v1}, Landroid/os/storage/StorageManager;->registerListener(Landroid/os/storage/StorageEventListener;)V
 
     .line 194
     :cond_0
-    invoke-direct {p0}, Lcom/android/settings/deviceinfo/UsbSettings;->ot()V
+    invoke-direct {p0}, Lcom/android/settings_ext/deviceinfo/UsbSettings;->ot()V
 
     .line 195
     return-void

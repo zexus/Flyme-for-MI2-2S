@@ -1,4 +1,4 @@
-.class public Lcom/android/settings/hg;
+.class public Lcom/android/settings_ext/hg;
 .super Ljava/lang/Object;
 .source "UsageStatsActivity.java"
 
@@ -48,7 +48,7 @@
 
     check-cast p2, Landroid/app/usage/UsageStats;
 
-    invoke-virtual {p0, p1, p2}, Lcom/android/settings/hg;->a(Landroid/app/usage/UsageStats;Landroid/app/usage/UsageStats;)I
+    invoke-virtual {p0, p1, p2}, Lcom/android/settings_ext/hg;->a(Landroid/app/usage/UsageStats;Landroid/app/usage/UsageStats;)I
 
     move-result v0
 

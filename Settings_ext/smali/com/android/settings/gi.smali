@@ -1,19 +1,19 @@
-.class Lcom/android/settings/gi;
+.class Lcom/android/settings_ext/gi;
 .super Landroid/content/BroadcastReceiver;
 .source "SettingsActivity.java"
 
 
 # instance fields
-.field final synthetic xh:Lcom/android/settings/gh;
+.field final synthetic xh:Lcom/android/settings_ext/gh;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/gh;)V
+.method constructor <init>(Lcom/android/settings_ext/gh;)V
     .locals 0
 
     .prologue
     .line 320
-    iput-object p1, p0, Lcom/android/settings/gi;->xh:Lcom/android/settings/gh;
+    iput-object p1, p0, Lcom/android/settings_ext/gi;->xh:Lcom/android/settings_ext/gh;
 
     invoke-direct {p0}, Landroid/content/BroadcastReceiver;-><init>()V
 
@@ -41,30 +41,30 @@
     if-eqz v0, :cond_0
 
     .line 325
-    invoke-static {p2}, Lcom/android/settings/hl;->m(Landroid/content/Intent;)Z
+    invoke-static {p2}, Lcom/android/settings_ext/hl;->m(Landroid/content/Intent;)Z
 
     move-result v0
 
     .line 327
-    iget-object v1, p0, Lcom/android/settings/gi;->xh:Lcom/android/settings/gh;
+    iget-object v1, p0, Lcom/android/settings_ext/gi;->xh:Lcom/android/settings_ext/gh;
 
-    invoke-static {v1}, Lcom/android/settings/gh;->a(Lcom/android/settings/gh;)Z
+    invoke-static {v1}, Lcom/android/settings_ext/gh;->a(Lcom/android/settings_ext/gh;)Z
 
     move-result v1
 
     if-eq v1, v0, :cond_0
 
     .line 328
-    iget-object v1, p0, Lcom/android/settings/gi;->xh:Lcom/android/settings/gh;
+    iget-object v1, p0, Lcom/android/settings_ext/gi;->xh:Lcom/android/settings_ext/gh;
 
-    invoke-static {v1, v0}, Lcom/android/settings/gh;->a(Lcom/android/settings/gh;Z)Z
+    invoke-static {v1, v0}, Lcom/android/settings_ext/gh;->a(Lcom/android/settings_ext/gh;Z)Z
 
     .line 329
-    iget-object v0, p0, Lcom/android/settings/gi;->xh:Lcom/android/settings/gh;
+    iget-object v0, p0, Lcom/android/settings_ext/gi;->xh:Lcom/android/settings_ext/gh;
 
     const/4 v1, 0x1
 
-    invoke-static {v0, v1}, Lcom/android/settings/gh;->b(Lcom/android/settings/gh;Z)V
+    invoke-static {v0, v1}, Lcom/android/settings_ext/gh;->b(Lcom/android/settings_ext/gh;Z)V
 
     .line 332
     :cond_0

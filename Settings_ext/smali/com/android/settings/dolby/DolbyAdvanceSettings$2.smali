@@ -1,4 +1,4 @@
-.class Lcom/android/settings/dolby/DolbyAdvanceSettings$2;
+.class Lcom/android/settings_ext/dolby/DolbyAdvanceSettings$2;
 .super Landroid/content/BroadcastReceiver;
 .source "DolbyAdvanceSettings.java"
 
@@ -6,18 +6,18 @@
 # instance fields
 .field private final Oi:Ljava/lang/Runnable;
 
-.field final synthetic XH:Lcom/android/settings/dolby/DolbyAdvanceSettings;
+.field final synthetic XH:Lcom/android/settings_ext/dolby/DolbyAdvanceSettings;
 
 .field private final mHandler:Landroid/os/Handler;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/dolby/DolbyAdvanceSettings;)V
+.method constructor <init>(Lcom/android/settings_ext/dolby/DolbyAdvanceSettings;)V
     .locals 1
 
     .prologue
     .line 222
-    iput-object p1, p0, Lcom/android/settings/dolby/DolbyAdvanceSettings$2;->XH:Lcom/android/settings/dolby/DolbyAdvanceSettings;
+    iput-object p1, p0, Lcom/android/settings_ext/dolby/DolbyAdvanceSettings$2;->XH:Lcom/android/settings_ext/dolby/DolbyAdvanceSettings;
 
     invoke-direct {p0}, Landroid/content/BroadcastReceiver;-><init>()V
 
@@ -26,14 +26,14 @@
 
     invoke-direct {v0}, Landroid/os/Handler;-><init>()V
 
-    iput-object v0, p0, Lcom/android/settings/dolby/DolbyAdvanceSettings$2;->mHandler:Landroid/os/Handler;
+    iput-object v0, p0, Lcom/android/settings_ext/dolby/DolbyAdvanceSettings$2;->mHandler:Landroid/os/Handler;
 
     .line 226
-    new-instance v0, Lcom/android/settings/dolby/DolbyAdvanceSettings$2$1;
+    new-instance v0, Lcom/android/settings_ext/dolby/DolbyAdvanceSettings$2$1;
 
-    invoke-direct {v0, p0}, Lcom/android/settings/dolby/DolbyAdvanceSettings$2$1;-><init>(Lcom/android/settings/dolby/DolbyAdvanceSettings$2;)V
+    invoke-direct {v0, p0}, Lcom/android/settings_ext/dolby/DolbyAdvanceSettings$2$1;-><init>(Lcom/android/settings_ext/dolby/DolbyAdvanceSettings$2;)V
 
-    iput-object v0, p0, Lcom/android/settings/dolby/DolbyAdvanceSettings$2;->Oi:Ljava/lang/Runnable;
+    iput-object v0, p0, Lcom/android/settings_ext/dolby/DolbyAdvanceSettings$2;->Oi:Ljava/lang/Runnable;
 
     return-void
 .end method
@@ -76,16 +76,16 @@
 
     .line 243
     :cond_0
-    iget-object v0, p0, Lcom/android/settings/dolby/DolbyAdvanceSettings$2;->mHandler:Landroid/os/Handler;
+    iget-object v0, p0, Lcom/android/settings_ext/dolby/DolbyAdvanceSettings$2;->mHandler:Landroid/os/Handler;
 
-    iget-object v1, p0, Lcom/android/settings/dolby/DolbyAdvanceSettings$2;->Oi:Ljava/lang/Runnable;
+    iget-object v1, p0, Lcom/android/settings_ext/dolby/DolbyAdvanceSettings$2;->Oi:Ljava/lang/Runnable;
 
     invoke-virtual {v0, v1}, Landroid/os/Handler;->removeCallbacks(Ljava/lang/Runnable;)V
 
     .line 244
-    iget-object v0, p0, Lcom/android/settings/dolby/DolbyAdvanceSettings$2;->mHandler:Landroid/os/Handler;
+    iget-object v0, p0, Lcom/android/settings_ext/dolby/DolbyAdvanceSettings$2;->mHandler:Landroid/os/Handler;
 
-    iget-object v1, p0, Lcom/android/settings/dolby/DolbyAdvanceSettings$2;->Oi:Ljava/lang/Runnable;
+    iget-object v1, p0, Lcom/android/settings_ext/dolby/DolbyAdvanceSettings$2;->Oi:Ljava/lang/Runnable;
 
     const-wide/16 v2, 0x7d0
 
@@ -98,9 +98,9 @@
 
     .line 247
     :cond_2
-    iget-object v0, p0, Lcom/android/settings/dolby/DolbyAdvanceSettings$2;->XH:Lcom/android/settings/dolby/DolbyAdvanceSettings;
+    iget-object v0, p0, Lcom/android/settings_ext/dolby/DolbyAdvanceSettings$2;->XH:Lcom/android/settings_ext/dolby/DolbyAdvanceSettings;
 
-    invoke-static {v0, p1}, Lcom/android/settings/dolby/DolbyAdvanceSettings;->a(Lcom/android/settings/dolby/DolbyAdvanceSettings;Landroid/content/Context;)V
+    invoke-static {v0, p1}, Lcom/android/settings_ext/dolby/DolbyAdvanceSettings;->a(Lcom/android/settings_ext/dolby/DolbyAdvanceSettings;Landroid/content/Context;)V
 
     goto :goto_0
 .end method

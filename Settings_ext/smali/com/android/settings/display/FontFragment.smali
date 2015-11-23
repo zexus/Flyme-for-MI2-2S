@@ -1,5 +1,5 @@
-.class public Lcom/android/settings/display/FontFragment;
-.super Lcom/android/settings/SettingsPreferenceFragment;
+.class public Lcom/android/settings_ext/display/FontFragment;
+.super Lcom/android/settings_ext/SettingsPreferenceFragment;
 .source "FontFragment.java"
 
 # interfaces
@@ -28,10 +28,10 @@
 
     invoke-direct {v0}, Landroid/util/SparseArray;-><init>()V
 
-    sput-object v0, Lcom/android/settings/display/FontFragment;->jU:Landroid/util/SparseArray;
+    sput-object v0, Lcom/android/settings_ext/display/FontFragment;->jU:Landroid/util/SparseArray;
 
     .line 43
-    sget-object v0, Lcom/android/settings/display/FontFragment;->jU:Landroid/util/SparseArray;
+    sget-object v0, Lcom/android/settings_ext/display/FontFragment;->jU:Landroid/util/SparseArray;
 
     const/4 v1, 0x0
 
@@ -42,7 +42,7 @@
     invoke-virtual {v0, v2, v1}, Landroid/util/SparseArray;->put(ILjava/lang/Object;)V
 
     .line 44
-    sget-object v0, Lcom/android/settings/display/FontFragment;->jU:Landroid/util/SparseArray;
+    sget-object v0, Lcom/android/settings_ext/display/FontFragment;->jU:Landroid/util/SparseArray;
 
     const/16 v1, 0xd
 
@@ -53,7 +53,7 @@
     invoke-virtual {v0, v1, v2}, Landroid/util/SparseArray;->put(ILjava/lang/Object;)V
 
     .line 45
-    sget-object v0, Lcom/android/settings/display/FontFragment;->jU:Landroid/util/SparseArray;
+    sget-object v0, Lcom/android/settings_ext/display/FontFragment;->jU:Landroid/util/SparseArray;
 
     const/16 v1, 0xe
 
@@ -66,7 +66,7 @@
     invoke-virtual {v0, v1, v2}, Landroid/util/SparseArray;->put(ILjava/lang/Object;)V
 
     .line 46
-    sget-object v0, Lcom/android/settings/display/FontFragment;->jU:Landroid/util/SparseArray;
+    sget-object v0, Lcom/android/settings_ext/display/FontFragment;->jU:Landroid/util/SparseArray;
 
     const/16 v1, 0xf
 
@@ -79,7 +79,7 @@
     invoke-virtual {v0, v1, v2}, Landroid/util/SparseArray;->put(ILjava/lang/Object;)V
 
     .line 47
-    sget-object v0, Lcom/android/settings/display/FontFragment;->jU:Landroid/util/SparseArray;
+    sget-object v0, Lcom/android/settings_ext/display/FontFragment;->jU:Landroid/util/SparseArray;
 
     const/16 v1, 0xb
 
@@ -100,14 +100,14 @@
 
     .prologue
     .line 34
-    invoke-direct {p0}, Lcom/android/settings/SettingsPreferenceFragment;-><init>()V
+    invoke-direct {p0}, Lcom/android/settings_ext/SettingsPreferenceFragment;-><init>()V
 
     .line 50
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
-    iput-object v0, p0, Lcom/android/settings/display/FontFragment;->UF:Ljava/util/ArrayList;
+    iput-object v0, p0, Lcom/android/settings_ext/display/FontFragment;->UF:Ljava/util/ArrayList;
 
     return-void
 .end method
@@ -375,7 +375,7 @@
     const/4 v2, 0x1
 
     .line 55
-    invoke-super {p0, p1}, Lcom/android/settings/SettingsPreferenceFragment;->onCreate(Landroid/os/Bundle;)V
+    invoke-super {p0, p1}, Lcom/android/settings_ext/SettingsPreferenceFragment;->onCreate(Landroid/os/Bundle;)V
 
     .line 57
     new-instance v1, Landroid/content/Intent;
@@ -408,7 +408,7 @@
 
     move-result-object v0
 
-    invoke-virtual {p0}, Lcom/android/settings/display/FontFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/display/FontFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v3
 
@@ -440,12 +440,12 @@
     .line 67
     const v0, 0x7f060038
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/display/FontFragment;->addPreferencesFromResource(I)V
+    invoke-virtual {p0, v0}, Lcom/android/settings_ext/display/FontFragment;->addPreferencesFromResource(I)V
 
     .line 68
     const-string v0, "preferred_font"
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/display/FontFragment;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v0}, Lcom/android/settings_ext/display/FontFragment;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v0
 
@@ -455,11 +455,11 @@
     invoke-virtual {v0, v1}, Lmiui/preference/ValuePreference;->setIntent(Landroid/content/Intent;)V
 
     .line 70
-    invoke-virtual {p0}, Lcom/android/settings/display/FontFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/display/FontFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v1
 
-    invoke-static {v1}, Lcom/android/settings/display/FontFragment;->aF(Landroid/content/Context;)Ljava/lang/String;
+    invoke-static {v1}, Lcom/android/settings_ext/display/FontFragment;->aF(Landroid/content/Context;)Ljava/lang/String;
 
     move-result-object v1
 
@@ -471,7 +471,7 @@
     .line 73
     const-string v0, "font_size_summary"
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/display/FontFragment;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v0}, Lcom/android/settings_ext/display/FontFragment;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v0
 
@@ -481,7 +481,7 @@
     if-eqz v1, :cond_1
 
     .line 75
-    invoke-virtual {p0}, Lcom/android/settings/display/FontFragment;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
+    invoke-virtual {p0}, Lcom/android/settings_ext/display/FontFragment;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
 
     move-result-object v1
 
@@ -505,7 +505,7 @@
     if-eqz v0, :cond_3
 
     .line 85
-    sget-object v3, Lcom/android/settings/display/FontFragment;->jU:Landroid/util/SparseArray;
+    sget-object v3, Lcom/android/settings_ext/display/FontFragment;->jU:Landroid/util/SparseArray;
 
     iget v0, v0, Landroid/content/res/Configuration;->uiMode:I
 
@@ -531,10 +531,10 @@
     move-result v0
 
     :goto_3
-    iput v0, p0, Lcom/android/settings/display/FontFragment;->UG:I
+    iput v0, p0, Lcom/android/settings_ext/display/FontFragment;->UG:I
 
     .line 92
-    invoke-virtual {p0}, Lcom/android/settings/display/FontFragment;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {p0}, Lcom/android/settings_ext/display/FontFragment;->getResources()Landroid/content/res/Resources;
 
     move-result-object v0
 
@@ -556,7 +556,7 @@
     .line 98
     const-string v0, "preferred_page_layout"
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/display/FontFragment;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v0}, Lcom/android/settings_ext/display/FontFragment;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v0
 
@@ -580,11 +580,11 @@
 
     .line 77
     :cond_1
-    invoke-virtual {p0}, Lcom/android/settings/display/FontFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/display/FontFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v1
 
-    invoke-virtual {p0, v1}, Lcom/android/settings/display/FontFragment;->aG(Landroid/content/Context;)Ljava/lang/CharSequence;
+    invoke-virtual {p0, v1}, Lcom/android/settings_ext/display/FontFragment;->aG(Landroid/content/Context;)Ljava/lang/CharSequence;
 
     move-result-object v1
 
@@ -622,30 +622,30 @@
     move-result v2
 
     .line 107
-    iget v0, p0, Lcom/android/settings/display/FontFragment;->UG:I
+    iget v0, p0, Lcom/android/settings_ext/display/FontFragment;->UG:I
 
     if-eq v2, v0, :cond_0
 
     .line 108
-    iget-object v0, p0, Lcom/android/settings/display/FontFragment;->UF:Ljava/util/ArrayList;
+    iget-object v0, p0, Lcom/android/settings_ext/display/FontFragment;->UF:Ljava/util/ArrayList;
 
-    iget v3, p0, Lcom/android/settings/display/FontFragment;->UG:I
+    iget v3, p0, Lcom/android/settings_ext/display/FontFragment;->UG:I
 
     invoke-virtual {v0, v3}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
 
     move-result-object v0
 
-    check-cast v0, Lcom/android/settings/cw;
+    check-cast v0, Lcom/android/settings_ext/cw;
 
-    invoke-virtual {v0, v1}, Lcom/android/settings/cw;->setChecked(Z)V
+    invoke-virtual {v0, v1}, Lcom/android/settings_ext/cw;->setChecked(Z)V
 
     .line 109
-    iput v2, p0, Lcom/android/settings/display/FontFragment;->UG:I
+    iput v2, p0, Lcom/android/settings_ext/display/FontFragment;->UG:I
 
     .line 111
-    sget-object v0, Lcom/android/settings/display/FontFragment;->jU:Landroid/util/SparseArray;
+    sget-object v0, Lcom/android/settings_ext/display/FontFragment;->jU:Landroid/util/SparseArray;
 
-    sget-object v1, Lcom/android/settings/display/FontFragment;->jU:Landroid/util/SparseArray;
+    sget-object v1, Lcom/android/settings_ext/display/FontFragment;->jU:Landroid/util/SparseArray;
 
     invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -660,11 +660,11 @@
     move-result v0
 
     .line 112
-    invoke-virtual {p0}, Lcom/android/settings/display/FontFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/display/FontFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v1
 
-    invoke-static {v1, v0}, Lcom/android/settings/display/n;->e(Landroid/content/Context;I)Z
+    invoke-static {v1, v0}, Lcom/android/settings_ext/display/n;->e(Landroid/content/Context;I)Z
 
     move-result v0
 

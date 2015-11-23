@@ -1,10 +1,10 @@
-.class public Lcom/android/settings/cloud/a;
+.class public Lcom/android/settings_ext/cloud/a;
 .super Landroid/database/sqlite/SQLiteOpenHelper;
 .source "CloudSettingsDatabaseHelper.java"
 
 
 # static fields
-.field private static Pv:Lcom/android/settings/cloud/a;
+.field private static Pv:Lcom/android/settings_ext/cloud/a;
 
 
 # direct methods
@@ -15,7 +15,7 @@
     .line 13
     const/4 v0, 0x0
 
-    sput-object v0, Lcom/android/settings/cloud/a;->Pv:Lcom/android/settings/cloud/a;
+    sput-object v0, Lcom/android/settings_ext/cloud/a;->Pv:Lcom/android/settings_ext/cloud/a;
 
     return-void
 .end method
@@ -37,30 +37,30 @@
     return-void
 .end method
 
-.method static declared-synchronized an(Landroid/content/Context;)Lcom/android/settings/cloud/a;
+.method static declared-synchronized an(Landroid/content/Context;)Lcom/android/settings_ext/cloud/a;
     .locals 2
 
     .prologue
     .line 23
-    const-class v1, Lcom/android/settings/cloud/a;
+    const-class v1, Lcom/android/settings_ext/cloud/a;
 
     monitor-enter v1
 
     :try_start_0
-    sget-object v0, Lcom/android/settings/cloud/a;->Pv:Lcom/android/settings/cloud/a;
+    sget-object v0, Lcom/android/settings_ext/cloud/a;->Pv:Lcom/android/settings_ext/cloud/a;
 
     if-nez v0, :cond_0
 
     .line 24
-    new-instance v0, Lcom/android/settings/cloud/a;
+    new-instance v0, Lcom/android/settings_ext/cloud/a;
 
-    invoke-direct {v0, p0}, Lcom/android/settings/cloud/a;-><init>(Landroid/content/Context;)V
+    invoke-direct {v0, p0}, Lcom/android/settings_ext/cloud/a;-><init>(Landroid/content/Context;)V
 
-    sput-object v0, Lcom/android/settings/cloud/a;->Pv:Lcom/android/settings/cloud/a;
+    sput-object v0, Lcom/android/settings_ext/cloud/a;->Pv:Lcom/android/settings_ext/cloud/a;
 
     .line 26
     :cond_0
-    sget-object v0, Lcom/android/settings/cloud/a;->Pv:Lcom/android/settings/cloud/a;
+    sget-object v0, Lcom/android/settings_ext/cloud/a;->Pv:Lcom/android/settings_ext/cloud/a;
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
@@ -110,10 +110,10 @@
 
     .prologue
     .line 97
-    invoke-direct {p0, p1}, Lcom/android/settings/cloud/a;->e(Landroid/database/sqlite/SQLiteDatabase;)V
+    invoke-direct {p0, p1}, Lcom/android/settings_ext/cloud/a;->e(Landroid/database/sqlite/SQLiteDatabase;)V
 
     .line 98
-    invoke-virtual {p0, p1}, Lcom/android/settings/cloud/a;->onCreate(Landroid/database/sqlite/SQLiteDatabase;)V
+    invoke-virtual {p0, p1}, Lcom/android/settings_ext/cloud/a;->onCreate(Landroid/database/sqlite/SQLiteDatabase;)V
 
     .line 99
     return-void
@@ -131,7 +131,7 @@
     invoke-static {v0, v1}, Landroid/util/Log;->w(Ljava/lang/String;Ljava/lang/String;)I
 
     .line 32
-    invoke-direct {p0, p1}, Lcom/android/settings/cloud/a;->c(Landroid/database/sqlite/SQLiteDatabase;)V
+    invoke-direct {p0, p1}, Lcom/android/settings_ext/cloud/a;->c(Landroid/database/sqlite/SQLiteDatabase;)V
 
     .line 33
     return-void
@@ -142,7 +142,7 @@
 
     .prologue
     .line 93
-    invoke-virtual {p0, p1}, Lcom/android/settings/cloud/a;->d(Landroid/database/sqlite/SQLiteDatabase;)V
+    invoke-virtual {p0, p1}, Lcom/android/settings_ext/cloud/a;->d(Landroid/database/sqlite/SQLiteDatabase;)V
 
     .line 94
     return-void
@@ -199,7 +199,7 @@
     invoke-static {v0, v1}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
 
     .line 88
-    invoke-virtual {p0, p1}, Lcom/android/settings/cloud/a;->d(Landroid/database/sqlite/SQLiteDatabase;)V
+    invoke-virtual {p0, p1}, Lcom/android/settings_ext/cloud/a;->d(Landroid/database/sqlite/SQLiteDatabase;)V
 
     .line 89
     return-void

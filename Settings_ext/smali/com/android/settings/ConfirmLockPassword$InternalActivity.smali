@@ -1,5 +1,5 @@
-.class public Lcom/android/settings/ConfirmLockPassword$InternalActivity;
-.super Lcom/android/settings/ConfirmLockPassword;
+.class public Lcom/android/settings_ext/ConfirmLockPassword$InternalActivity;
+.super Lcom/android/settings_ext/ConfirmLockPassword;
 .source "ConfirmLockPassword.java"
 
 
@@ -9,7 +9,7 @@
 
     .prologue
     .line 52
-    invoke-direct {p0}, Lcom/android/settings/ConfirmLockPassword;-><init>()V
+    invoke-direct {p0}, Lcom/android/settings_ext/ConfirmLockPassword;-><init>()V
 
     return-void
 .end method

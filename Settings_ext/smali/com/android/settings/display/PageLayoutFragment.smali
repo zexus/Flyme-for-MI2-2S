@@ -1,10 +1,10 @@
-.class public Lcom/android/settings/display/PageLayoutFragment;
+.class public Lcom/android/settings_ext/display/PageLayoutFragment;
 .super Lmiui/app/Fragment;
 .source "PageLayoutFragment.java"
 
 # interfaces
 .implements Landroid/widget/SeekBar$OnSeekBarChangeListener;
-.implements Lcom/android/settings/widget/j;
+.implements Lcom/android/settings_ext/widget/j;
 
 
 # static fields
@@ -40,7 +40,7 @@
 
 
 # instance fields
-.field private Vu:Lcom/android/settings/widget/ScreenView;
+.field private Vu:Lcom/android/settings_ext/widget/ScreenView;
 
 .field private Vv:I
 
@@ -77,7 +77,7 @@
 
     fill-array-data v0, :array_0
 
-    sput-object v0, Lcom/android/settings/display/PageLayoutFragment;->Vf:[I
+    sput-object v0, Lcom/android/settings_ext/display/PageLayoutFragment;->Vf:[I
 
     .line 72
     const/4 v0, 0x5
@@ -86,7 +86,7 @@
 
     fill-array-data v0, :array_1
 
-    sput-object v0, Lcom/android/settings/display/PageLayoutFragment;->Vg:[I
+    sput-object v0, Lcom/android/settings_ext/display/PageLayoutFragment;->Vg:[I
 
     .line 80
     const/4 v0, 0x3
@@ -95,7 +95,7 @@
 
     fill-array-data v0, :array_2
 
-    sput-object v0, Lcom/android/settings/display/PageLayoutFragment;->Vh:[I
+    sput-object v0, Lcom/android/settings_ext/display/PageLayoutFragment;->Vh:[I
 
     .line 86
     const/4 v0, 0x3
@@ -104,7 +104,7 @@
 
     fill-array-data v0, :array_3
 
-    sput-object v0, Lcom/android/settings/display/PageLayoutFragment;->Vi:[I
+    sput-object v0, Lcom/android/settings_ext/display/PageLayoutFragment;->Vi:[I
 
     .line 92
     const/4 v0, 0x6
@@ -113,77 +113,77 @@
 
     fill-array-data v0, :array_4
 
-    sput-object v0, Lcom/android/settings/display/PageLayoutFragment;->Vj:[F
+    sput-object v0, Lcom/android/settings_ext/display/PageLayoutFragment;->Vj:[F
 
     .line 101
     new-instance v0, Ljava/util/HashMap;
 
     invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
 
-    sput-object v0, Lcom/android/settings/display/PageLayoutFragment;->Vk:Ljava/util/HashMap;
+    sput-object v0, Lcom/android/settings_ext/display/PageLayoutFragment;->Vk:Ljava/util/HashMap;
 
     .line 104
     new-instance v0, Ljava/util/HashMap;
 
     invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
 
-    sput-object v0, Lcom/android/settings/display/PageLayoutFragment;->Vl:Ljava/util/HashMap;
+    sput-object v0, Lcom/android/settings_ext/display/PageLayoutFragment;->Vl:Ljava/util/HashMap;
 
     .line 107
     new-instance v0, Ljava/util/HashMap;
 
     invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
 
-    sput-object v0, Lcom/android/settings/display/PageLayoutFragment;->Vm:Ljava/util/HashMap;
+    sput-object v0, Lcom/android/settings_ext/display/PageLayoutFragment;->Vm:Ljava/util/HashMap;
 
     .line 110
     new-instance v0, Ljava/util/HashMap;
 
     invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
 
-    sput-object v0, Lcom/android/settings/display/PageLayoutFragment;->Vn:Ljava/util/HashMap;
+    sput-object v0, Lcom/android/settings_ext/display/PageLayoutFragment;->Vn:Ljava/util/HashMap;
 
     .line 113
     new-instance v0, Ljava/util/HashMap;
 
     invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
 
-    sput-object v0, Lcom/android/settings/display/PageLayoutFragment;->Vo:Ljava/util/HashMap;
+    sput-object v0, Lcom/android/settings_ext/display/PageLayoutFragment;->Vo:Ljava/util/HashMap;
 
     .line 116
     new-instance v0, Ljava/util/HashMap;
 
     invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
 
-    sput-object v0, Lcom/android/settings/display/PageLayoutFragment;->Vp:Ljava/util/HashMap;
+    sput-object v0, Lcom/android/settings_ext/display/PageLayoutFragment;->Vp:Ljava/util/HashMap;
 
     .line 119
     new-instance v0, Ljava/util/HashMap;
 
     invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
 
-    sput-object v0, Lcom/android/settings/display/PageLayoutFragment;->Vq:Ljava/util/HashMap;
+    sput-object v0, Lcom/android/settings_ext/display/PageLayoutFragment;->Vq:Ljava/util/HashMap;
 
     .line 122
     new-instance v0, Ljava/util/HashMap;
 
     invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
 
-    sput-object v0, Lcom/android/settings/display/PageLayoutFragment;->Vr:Ljava/util/HashMap;
+    sput-object v0, Lcom/android/settings_ext/display/PageLayoutFragment;->Vr:Ljava/util/HashMap;
 
     .line 125
     new-instance v0, Ljava/util/HashMap;
 
     invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
 
-    sput-object v0, Lcom/android/settings/display/PageLayoutFragment;->Vs:Ljava/util/HashMap;
+    sput-object v0, Lcom/android/settings_ext/display/PageLayoutFragment;->Vs:Ljava/util/HashMap;
 
     .line 128
     new-instance v0, Ljava/util/HashMap;
 
     invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
 
-    sput-object v0, Lcom/android/settings/display/PageLayoutFragment;->Vt:Ljava/util/HashMap;
+    sput-object v0, Lcom/android/settings_ext/display/PageLayoutFragment;->Vt:Ljava/util/HashMap;
 
     .line 133
     sget-boolean v0, Lmiui/os/Build;->IS_INTERNATIONAL_BUILD:Z
@@ -191,7 +191,7 @@
     if-nez v0, :cond_0
 
     .line 134
-    sget-object v0, Lcom/android/settings/display/PageLayoutFragment;->Vm:Ljava/util/HashMap;
+    sget-object v0, Lcom/android/settings_ext/display/PageLayoutFragment;->Vm:Ljava/util/HashMap;
 
     invoke-static {v5}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -206,7 +206,7 @@
     invoke-virtual {v0, v1, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 135
-    sget-object v0, Lcom/android/settings/display/PageLayoutFragment;->Vm:Ljava/util/HashMap;
+    sget-object v0, Lcom/android/settings_ext/display/PageLayoutFragment;->Vm:Ljava/util/HashMap;
 
     invoke-static {v3}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -221,7 +221,7 @@
     invoke-virtual {v0, v1, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 136
-    sget-object v0, Lcom/android/settings/display/PageLayoutFragment;->Vm:Ljava/util/HashMap;
+    sget-object v0, Lcom/android/settings_ext/display/PageLayoutFragment;->Vm:Ljava/util/HashMap;
 
     invoke-static {v6}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -236,7 +236,7 @@
     invoke-virtual {v0, v1, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 137
-    sget-object v0, Lcom/android/settings/display/PageLayoutFragment;->Vm:Ljava/util/HashMap;
+    sget-object v0, Lcom/android/settings_ext/display/PageLayoutFragment;->Vm:Ljava/util/HashMap;
 
     invoke-static {v7}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -251,7 +251,7 @@
     invoke-virtual {v0, v1, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 138
-    sget-object v0, Lcom/android/settings/display/PageLayoutFragment;->Vm:Ljava/util/HashMap;
+    sget-object v0, Lcom/android/settings_ext/display/PageLayoutFragment;->Vm:Ljava/util/HashMap;
 
     const/16 v1, 0xf
 
@@ -268,7 +268,7 @@
     invoke-virtual {v0, v1, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 139
-    sget-object v0, Lcom/android/settings/display/PageLayoutFragment;->Vm:Ljava/util/HashMap;
+    sget-object v0, Lcom/android/settings_ext/display/PageLayoutFragment;->Vm:Ljava/util/HashMap;
 
     invoke-static {v4}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -334,7 +334,7 @@
     invoke-virtual {v0, v1, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 153
-    sget-object v1, Lcom/android/settings/display/PageLayoutFragment;->Vn:Ljava/util/HashMap;
+    sget-object v1, Lcom/android/settings_ext/display/PageLayoutFragment;->Vn:Ljava/util/HashMap;
 
     invoke-static {v5}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -343,7 +343,7 @@
     invoke-virtual {v1, v2, v0}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 154
-    sget-object v1, Lcom/android/settings/display/PageLayoutFragment;->Vn:Ljava/util/HashMap;
+    sget-object v1, Lcom/android/settings_ext/display/PageLayoutFragment;->Vn:Ljava/util/HashMap;
 
     invoke-static {v3}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -352,7 +352,7 @@
     invoke-virtual {v1, v2, v0}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 155
-    sget-object v1, Lcom/android/settings/display/PageLayoutFragment;->Vn:Ljava/util/HashMap;
+    sget-object v1, Lcom/android/settings_ext/display/PageLayoutFragment;->Vn:Ljava/util/HashMap;
 
     invoke-static {v6}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -361,7 +361,7 @@
     invoke-virtual {v1, v2, v0}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 156
-    sget-object v1, Lcom/android/settings/display/PageLayoutFragment;->Vn:Ljava/util/HashMap;
+    sget-object v1, Lcom/android/settings_ext/display/PageLayoutFragment;->Vn:Ljava/util/HashMap;
 
     invoke-static {v7}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -420,7 +420,7 @@
     invoke-virtual {v0, v1, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 161
-    sget-object v1, Lcom/android/settings/display/PageLayoutFragment;->Vn:Ljava/util/HashMap;
+    sget-object v1, Lcom/android/settings_ext/display/PageLayoutFragment;->Vn:Ljava/util/HashMap;
 
     const/16 v2, 0xf
 
@@ -431,7 +431,7 @@
     invoke-virtual {v1, v2, v0}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 162
-    sget-object v1, Lcom/android/settings/display/PageLayoutFragment;->Vn:Ljava/util/HashMap;
+    sget-object v1, Lcom/android/settings_ext/display/PageLayoutFragment;->Vn:Ljava/util/HashMap;
 
     invoke-static {v4}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -440,7 +440,7 @@
     invoke-virtual {v1, v2, v0}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 164
-    sget-object v0, Lcom/android/settings/display/PageLayoutFragment;->Vo:Ljava/util/HashMap;
+    sget-object v0, Lcom/android/settings_ext/display/PageLayoutFragment;->Vo:Ljava/util/HashMap;
 
     invoke-static {v5}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -455,7 +455,7 @@
     invoke-virtual {v0, v1, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 165
-    sget-object v0, Lcom/android/settings/display/PageLayoutFragment;->Vo:Ljava/util/HashMap;
+    sget-object v0, Lcom/android/settings_ext/display/PageLayoutFragment;->Vo:Ljava/util/HashMap;
 
     invoke-static {v3}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -470,7 +470,7 @@
     invoke-virtual {v0, v1, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 166
-    sget-object v0, Lcom/android/settings/display/PageLayoutFragment;->Vo:Ljava/util/HashMap;
+    sget-object v0, Lcom/android/settings_ext/display/PageLayoutFragment;->Vo:Ljava/util/HashMap;
 
     invoke-static {v6}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -485,7 +485,7 @@
     invoke-virtual {v0, v1, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 167
-    sget-object v0, Lcom/android/settings/display/PageLayoutFragment;->Vo:Ljava/util/HashMap;
+    sget-object v0, Lcom/android/settings_ext/display/PageLayoutFragment;->Vo:Ljava/util/HashMap;
 
     invoke-static {v7}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -500,7 +500,7 @@
     invoke-virtual {v0, v1, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 168
-    sget-object v0, Lcom/android/settings/display/PageLayoutFragment;->Vo:Ljava/util/HashMap;
+    sget-object v0, Lcom/android/settings_ext/display/PageLayoutFragment;->Vo:Ljava/util/HashMap;
 
     const/16 v1, 0xf
 
@@ -517,7 +517,7 @@
     invoke-virtual {v0, v1, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 169
-    sget-object v0, Lcom/android/settings/display/PageLayoutFragment;->Vo:Ljava/util/HashMap;
+    sget-object v0, Lcom/android/settings_ext/display/PageLayoutFragment;->Vo:Ljava/util/HashMap;
 
     invoke-static {v4}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -532,7 +532,7 @@
     invoke-virtual {v0, v1, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 171
-    sget-object v0, Lcom/android/settings/display/PageLayoutFragment;->Vp:Ljava/util/HashMap;
+    sget-object v0, Lcom/android/settings_ext/display/PageLayoutFragment;->Vp:Ljava/util/HashMap;
 
     invoke-static {v5}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -547,7 +547,7 @@
     invoke-virtual {v0, v1, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 172
-    sget-object v0, Lcom/android/settings/display/PageLayoutFragment;->Vp:Ljava/util/HashMap;
+    sget-object v0, Lcom/android/settings_ext/display/PageLayoutFragment;->Vp:Ljava/util/HashMap;
 
     invoke-static {v3}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -562,7 +562,7 @@
     invoke-virtual {v0, v1, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 173
-    sget-object v0, Lcom/android/settings/display/PageLayoutFragment;->Vp:Ljava/util/HashMap;
+    sget-object v0, Lcom/android/settings_ext/display/PageLayoutFragment;->Vp:Ljava/util/HashMap;
 
     invoke-static {v6}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -577,7 +577,7 @@
     invoke-virtual {v0, v1, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 174
-    sget-object v0, Lcom/android/settings/display/PageLayoutFragment;->Vp:Ljava/util/HashMap;
+    sget-object v0, Lcom/android/settings_ext/display/PageLayoutFragment;->Vp:Ljava/util/HashMap;
 
     invoke-static {v7}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -592,7 +592,7 @@
     invoke-virtual {v0, v1, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 175
-    sget-object v0, Lcom/android/settings/display/PageLayoutFragment;->Vp:Ljava/util/HashMap;
+    sget-object v0, Lcom/android/settings_ext/display/PageLayoutFragment;->Vp:Ljava/util/HashMap;
 
     const/16 v1, 0xf
 
@@ -609,7 +609,7 @@
     invoke-virtual {v0, v1, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 176
-    sget-object v0, Lcom/android/settings/display/PageLayoutFragment;->Vp:Ljava/util/HashMap;
+    sget-object v0, Lcom/android/settings_ext/display/PageLayoutFragment;->Vp:Ljava/util/HashMap;
 
     invoke-static {v4}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -624,7 +624,7 @@
     invoke-virtual {v0, v1, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 178
-    sget-object v0, Lcom/android/settings/display/PageLayoutFragment;->Vq:Ljava/util/HashMap;
+    sget-object v0, Lcom/android/settings_ext/display/PageLayoutFragment;->Vq:Ljava/util/HashMap;
 
     invoke-static {v5}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -639,7 +639,7 @@
     invoke-virtual {v0, v1, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 179
-    sget-object v0, Lcom/android/settings/display/PageLayoutFragment;->Vq:Ljava/util/HashMap;
+    sget-object v0, Lcom/android/settings_ext/display/PageLayoutFragment;->Vq:Ljava/util/HashMap;
 
     invoke-static {v3}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -654,7 +654,7 @@
     invoke-virtual {v0, v1, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 180
-    sget-object v0, Lcom/android/settings/display/PageLayoutFragment;->Vq:Ljava/util/HashMap;
+    sget-object v0, Lcom/android/settings_ext/display/PageLayoutFragment;->Vq:Ljava/util/HashMap;
 
     invoke-static {v6}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -669,7 +669,7 @@
     invoke-virtual {v0, v1, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 181
-    sget-object v0, Lcom/android/settings/display/PageLayoutFragment;->Vq:Ljava/util/HashMap;
+    sget-object v0, Lcom/android/settings_ext/display/PageLayoutFragment;->Vq:Ljava/util/HashMap;
 
     invoke-static {v7}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -684,7 +684,7 @@
     invoke-virtual {v0, v1, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 182
-    sget-object v0, Lcom/android/settings/display/PageLayoutFragment;->Vq:Ljava/util/HashMap;
+    sget-object v0, Lcom/android/settings_ext/display/PageLayoutFragment;->Vq:Ljava/util/HashMap;
 
     const/16 v1, 0xf
 
@@ -701,7 +701,7 @@
     invoke-virtual {v0, v1, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 183
-    sget-object v0, Lcom/android/settings/display/PageLayoutFragment;->Vq:Ljava/util/HashMap;
+    sget-object v0, Lcom/android/settings_ext/display/PageLayoutFragment;->Vq:Ljava/util/HashMap;
 
     invoke-static {v4}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -716,7 +716,7 @@
     invoke-virtual {v0, v1, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 185
-    sget-object v0, Lcom/android/settings/display/PageLayoutFragment;->Vt:Ljava/util/HashMap;
+    sget-object v0, Lcom/android/settings_ext/display/PageLayoutFragment;->Vt:Ljava/util/HashMap;
 
     invoke-static {v5}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -731,7 +731,7 @@
     invoke-virtual {v0, v1, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 186
-    sget-object v0, Lcom/android/settings/display/PageLayoutFragment;->Vt:Ljava/util/HashMap;
+    sget-object v0, Lcom/android/settings_ext/display/PageLayoutFragment;->Vt:Ljava/util/HashMap;
 
     invoke-static {v3}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -746,7 +746,7 @@
     invoke-virtual {v0, v1, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 187
-    sget-object v0, Lcom/android/settings/display/PageLayoutFragment;->Vt:Ljava/util/HashMap;
+    sget-object v0, Lcom/android/settings_ext/display/PageLayoutFragment;->Vt:Ljava/util/HashMap;
 
     invoke-static {v6}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -761,7 +761,7 @@
     invoke-virtual {v0, v1, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 188
-    sget-object v0, Lcom/android/settings/display/PageLayoutFragment;->Vt:Ljava/util/HashMap;
+    sget-object v0, Lcom/android/settings_ext/display/PageLayoutFragment;->Vt:Ljava/util/HashMap;
 
     invoke-static {v7}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -776,7 +776,7 @@
     invoke-virtual {v0, v1, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 189
-    sget-object v0, Lcom/android/settings/display/PageLayoutFragment;->Vt:Ljava/util/HashMap;
+    sget-object v0, Lcom/android/settings_ext/display/PageLayoutFragment;->Vt:Ljava/util/HashMap;
 
     const/16 v1, 0xf
 
@@ -793,7 +793,7 @@
     invoke-virtual {v0, v1, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 190
-    sget-object v0, Lcom/android/settings/display/PageLayoutFragment;->Vt:Ljava/util/HashMap;
+    sget-object v0, Lcom/android/settings_ext/display/PageLayoutFragment;->Vt:Ljava/util/HashMap;
 
     invoke-static {v4}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -808,7 +808,7 @@
     invoke-virtual {v0, v1, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 192
-    sget-object v0, Lcom/android/settings/display/PageLayoutFragment;->Vr:Ljava/util/HashMap;
+    sget-object v0, Lcom/android/settings_ext/display/PageLayoutFragment;->Vr:Ljava/util/HashMap;
 
     invoke-static {v5}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -823,7 +823,7 @@
     invoke-virtual {v0, v1, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 193
-    sget-object v0, Lcom/android/settings/display/PageLayoutFragment;->Vr:Ljava/util/HashMap;
+    sget-object v0, Lcom/android/settings_ext/display/PageLayoutFragment;->Vr:Ljava/util/HashMap;
 
     invoke-static {v3}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -838,7 +838,7 @@
     invoke-virtual {v0, v1, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 194
-    sget-object v0, Lcom/android/settings/display/PageLayoutFragment;->Vr:Ljava/util/HashMap;
+    sget-object v0, Lcom/android/settings_ext/display/PageLayoutFragment;->Vr:Ljava/util/HashMap;
 
     invoke-static {v6}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -853,7 +853,7 @@
     invoke-virtual {v0, v1, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 195
-    sget-object v0, Lcom/android/settings/display/PageLayoutFragment;->Vr:Ljava/util/HashMap;
+    sget-object v0, Lcom/android/settings_ext/display/PageLayoutFragment;->Vr:Ljava/util/HashMap;
 
     invoke-static {v7}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -868,7 +868,7 @@
     invoke-virtual {v0, v1, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 196
-    sget-object v0, Lcom/android/settings/display/PageLayoutFragment;->Vr:Ljava/util/HashMap;
+    sget-object v0, Lcom/android/settings_ext/display/PageLayoutFragment;->Vr:Ljava/util/HashMap;
 
     const/16 v1, 0xf
 
@@ -885,7 +885,7 @@
     invoke-virtual {v0, v1, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 197
-    sget-object v0, Lcom/android/settings/display/PageLayoutFragment;->Vr:Ljava/util/HashMap;
+    sget-object v0, Lcom/android/settings_ext/display/PageLayoutFragment;->Vr:Ljava/util/HashMap;
 
     invoke-static {v4}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -900,7 +900,7 @@
     invoke-virtual {v0, v1, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 199
-    sget-object v0, Lcom/android/settings/display/PageLayoutFragment;->Vs:Ljava/util/HashMap;
+    sget-object v0, Lcom/android/settings_ext/display/PageLayoutFragment;->Vs:Ljava/util/HashMap;
 
     invoke-static {v5}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -915,7 +915,7 @@
     invoke-virtual {v0, v1, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 200
-    sget-object v0, Lcom/android/settings/display/PageLayoutFragment;->Vs:Ljava/util/HashMap;
+    sget-object v0, Lcom/android/settings_ext/display/PageLayoutFragment;->Vs:Ljava/util/HashMap;
 
     invoke-static {v3}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -930,7 +930,7 @@
     invoke-virtual {v0, v1, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 201
-    sget-object v0, Lcom/android/settings/display/PageLayoutFragment;->Vs:Ljava/util/HashMap;
+    sget-object v0, Lcom/android/settings_ext/display/PageLayoutFragment;->Vs:Ljava/util/HashMap;
 
     invoke-static {v6}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -945,7 +945,7 @@
     invoke-virtual {v0, v1, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 202
-    sget-object v0, Lcom/android/settings/display/PageLayoutFragment;->Vs:Ljava/util/HashMap;
+    sget-object v0, Lcom/android/settings_ext/display/PageLayoutFragment;->Vs:Ljava/util/HashMap;
 
     invoke-static {v7}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -960,7 +960,7 @@
     invoke-virtual {v0, v1, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 203
-    sget-object v0, Lcom/android/settings/display/PageLayoutFragment;->Vs:Ljava/util/HashMap;
+    sget-object v0, Lcom/android/settings_ext/display/PageLayoutFragment;->Vs:Ljava/util/HashMap;
 
     const/16 v1, 0xf
 
@@ -977,7 +977,7 @@
     invoke-virtual {v0, v1, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 204
-    sget-object v0, Lcom/android/settings/display/PageLayoutFragment;->Vs:Ljava/util/HashMap;
+    sget-object v0, Lcom/android/settings_ext/display/PageLayoutFragment;->Vs:Ljava/util/HashMap;
 
     invoke-static {v4}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -996,7 +996,7 @@
 
     .line 141
     :cond_0
-    sget-object v0, Lcom/android/settings/display/PageLayoutFragment;->Vm:Ljava/util/HashMap;
+    sget-object v0, Lcom/android/settings_ext/display/PageLayoutFragment;->Vm:Ljava/util/HashMap;
 
     invoke-static {v5}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -1011,7 +1011,7 @@
     invoke-virtual {v0, v1, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 142
-    sget-object v0, Lcom/android/settings/display/PageLayoutFragment;->Vm:Ljava/util/HashMap;
+    sget-object v0, Lcom/android/settings_ext/display/PageLayoutFragment;->Vm:Ljava/util/HashMap;
 
     invoke-static {v3}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -1026,7 +1026,7 @@
     invoke-virtual {v0, v1, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 143
-    sget-object v0, Lcom/android/settings/display/PageLayoutFragment;->Vm:Ljava/util/HashMap;
+    sget-object v0, Lcom/android/settings_ext/display/PageLayoutFragment;->Vm:Ljava/util/HashMap;
 
     invoke-static {v6}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -1041,7 +1041,7 @@
     invoke-virtual {v0, v1, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 144
-    sget-object v0, Lcom/android/settings/display/PageLayoutFragment;->Vm:Ljava/util/HashMap;
+    sget-object v0, Lcom/android/settings_ext/display/PageLayoutFragment;->Vm:Ljava/util/HashMap;
 
     invoke-static {v7}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -1056,7 +1056,7 @@
     invoke-virtual {v0, v1, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 145
-    sget-object v0, Lcom/android/settings/display/PageLayoutFragment;->Vm:Ljava/util/HashMap;
+    sget-object v0, Lcom/android/settings_ext/display/PageLayoutFragment;->Vm:Ljava/util/HashMap;
 
     const/16 v1, 0xf
 
@@ -1073,7 +1073,7 @@
     invoke-virtual {v0, v1, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 146
-    sget-object v0, Lcom/android/settings/display/PageLayoutFragment;->Vm:Ljava/util/HashMap;
+    sget-object v0, Lcom/android/settings_ext/display/PageLayoutFragment;->Vm:Ljava/util/HashMap;
 
     invoke-static {v4}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -1145,25 +1145,25 @@
     .line 212
     const/4 v0, 0x1
 
-    iput v0, p0, Lcom/android/settings/display/PageLayoutFragment;->Vw:I
+    iput v0, p0, Lcom/android/settings_ext/display/PageLayoutFragment;->Vw:I
 
     .line 569
-    new-instance v0, Lcom/android/settings/display/s;
+    new-instance v0, Lcom/android/settings_ext/display/s;
 
-    invoke-direct {v0, p0}, Lcom/android/settings/display/s;-><init>(Lcom/android/settings/display/PageLayoutFragment;)V
+    invoke-direct {v0, p0}, Lcom/android/settings_ext/display/s;-><init>(Lcom/android/settings_ext/display/PageLayoutFragment;)V
 
-    iput-object v0, p0, Lcom/android/settings/display/PageLayoutFragment;->mOnClickListener:Landroid/view/View$OnClickListener;
+    iput-object v0, p0, Lcom/android/settings_ext/display/PageLayoutFragment;->mOnClickListener:Landroid/view/View$OnClickListener;
 
     .line 611
     return-void
 .end method
 
-.method static synthetic a(Lcom/android/settings/display/PageLayoutFragment;)I
+.method static synthetic a(Lcom/android/settings_ext/display/PageLayoutFragment;)I
     .locals 1
 
     .prologue
     .line 52
-    iget v0, p0, Lcom/android/settings/display/PageLayoutFragment;->Vw:I
+    iget v0, p0, Lcom/android/settings_ext/display/PageLayoutFragment;->Vw:I
 
     return v0
 .end method
@@ -1185,7 +1185,7 @@
     .line 606
     const-string v1, "data_selected_fontscale"
 
-    invoke-static {p1}, Lcom/android/settings/display/n;->getFontScale(I)F
+    invoke-static {p1}, Lcom/android/settings_ext/display/n;->getFontScale(I)F
 
     move-result v2
 
@@ -1245,7 +1245,7 @@
 
     move-result-object v1
 
-    invoke-direct {p0, v1, p2}, Lcom/android/settings/display/PageLayoutFragment;->a(Landroid/view/View;F)V
+    invoke-direct {p0, v1, p2}, Lcom/android/settings_ext/display/PageLayoutFragment;->a(Landroid/view/View;F)V
 
     .line 558
     add-int/lit8 v0, v0, 0x1
@@ -1258,7 +1258,7 @@
 
     .prologue
     .line 52
-    invoke-static {p0}, Lcom/android/settings/display/PageLayoutFragment;->c(Landroid/content/Context;)Z
+    invoke-static {p0}, Lcom/android/settings_ext/display/PageLayoutFragment;->c(Landroid/content/Context;)Z
 
     move-result v0
 
@@ -1270,17 +1270,17 @@
 
     .prologue
     .line 52
-    invoke-static {p0, p1}, Lcom/android/settings/display/PageLayoutFragment;->a(Landroid/app/Activity;I)V
+    invoke-static {p0, p1}, Lcom/android/settings_ext/display/PageLayoutFragment;->a(Landroid/app/Activity;I)V
 
     return-void
 .end method
 
-.method static synthetic b(Lcom/android/settings/display/PageLayoutFragment;)Z
+.method static synthetic b(Lcom/android/settings_ext/display/PageLayoutFragment;)Z
     .locals 1
 
     .prologue
     .line 52
-    iget-boolean v0, p0, Lcom/android/settings/display/PageLayoutFragment;->sE:Z
+    iget-boolean v0, p0, Lcom/android/settings_ext/display/PageLayoutFragment;->sE:Z
 
     return v0
 .end method
@@ -1326,10 +1326,10 @@
     const/4 v3, 0x0
 
     .line 351
-    iput-object p1, p0, Lcom/android/settings/display/PageLayoutFragment;->mRootView:Landroid/view/View;
+    iput-object p1, p0, Lcom/android/settings_ext/display/PageLayoutFragment;->mRootView:Landroid/view/View;
 
     .line 352
-    iget-object v0, p0, Lcom/android/settings/display/PageLayoutFragment;->mRootView:Landroid/view/View;
+    iget-object v0, p0, Lcom/android/settings_ext/display/PageLayoutFragment;->mRootView:Landroid/view/View;
 
     invoke-virtual {v0, v3}, Landroid/view/View;->setSystemUiVisibility(I)V
 
@@ -1340,9 +1340,9 @@
 
     move-result-object v0
 
-    check-cast v0, Lcom/android/settings/widget/ScreenView;
+    check-cast v0, Lcom/android/settings_ext/widget/ScreenView;
 
-    iput-object v0, p0, Lcom/android/settings/display/PageLayoutFragment;->Vu:Lcom/android/settings/widget/ScreenView;
+    iput-object v0, p0, Lcom/android/settings_ext/display/PageLayoutFragment;->Vu:Lcom/android/settings_ext/widget/ScreenView;
 
     .line 355
     const v0, 0x7f10017e
@@ -1351,7 +1351,7 @@
 
     move-result-object v0
 
-    iget-object v5, p0, Lcom/android/settings/display/PageLayoutFragment;->mOnClickListener:Landroid/view/View$OnClickListener;
+    iget-object v5, p0, Lcom/android/settings_ext/display/PageLayoutFragment;->mOnClickListener:Landroid/view/View$OnClickListener;
 
     invoke-virtual {v0, v5}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
@@ -1362,7 +1362,7 @@
 
     move-result-object v0
 
-    iget-object v5, p0, Lcom/android/settings/display/PageLayoutFragment;->mOnClickListener:Landroid/view/View$OnClickListener;
+    iget-object v5, p0, Lcom/android/settings_ext/display/PageLayoutFragment;->mOnClickListener:Landroid/view/View$OnClickListener;
 
     invoke-virtual {v0, v5}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
@@ -1373,7 +1373,7 @@
 
     move-result-object v0
 
-    iget-object v5, p0, Lcom/android/settings/display/PageLayoutFragment;->mOnClickListener:Landroid/view/View$OnClickListener;
+    iget-object v5, p0, Lcom/android/settings_ext/display/PageLayoutFragment;->mOnClickListener:Landroid/view/View$OnClickListener;
 
     invoke-virtual {v0, v5}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
@@ -1386,10 +1386,10 @@
 
     check-cast v0, Landroid/widget/SeekBar;
 
-    iput-object v0, p0, Lcom/android/settings/display/PageLayoutFragment;->tP:Landroid/widget/SeekBar;
+    iput-object v0, p0, Lcom/android/settings_ext/display/PageLayoutFragment;->tP:Landroid/widget/SeekBar;
 
     .line 360
-    iget-object v0, p0, Lcom/android/settings/display/PageLayoutFragment;->tP:Landroid/widget/SeekBar;
+    iget-object v0, p0, Lcom/android/settings_ext/display/PageLayoutFragment;->tP:Landroid/widget/SeekBar;
 
     invoke-virtual {v0, p0}, Landroid/widget/SeekBar;->setOnSeekBarChangeListener(Landroid/widget/SeekBar$OnSeekBarChangeListener;)V
 
@@ -1400,13 +1400,13 @@
 
     move-result-object v0
 
-    check-cast v0, Lcom/android/settings/widget/FontLinearLayout;
+    check-cast v0, Lcom/android/settings_ext/widget/FontLinearLayout;
 
     .line 363
-    invoke-virtual {v0, p0}, Lcom/android/settings/widget/FontLinearLayout;->a(Lcom/android/settings/widget/j;)V
+    invoke-virtual {v0, p0}, Lcom/android/settings_ext/widget/FontLinearLayout;->a(Lcom/android/settings_ext/widget/j;)V
 
     .line 367
-    iget v0, p0, Lcom/android/settings/display/PageLayoutFragment;->Vw:I
+    iget v0, p0, Lcom/android/settings_ext/display/PageLayoutFragment;->Vw:I
 
     sparse-switch v0, :sswitch_data_0
 
@@ -1416,7 +1416,7 @@
 
     .line 388
     :goto_0
-    iget-object v5, p0, Lcom/android/settings/display/PageLayoutFragment;->tP:Landroid/widget/SeekBar;
+    iget-object v5, p0, Lcom/android/settings_ext/display/PageLayoutFragment;->tP:Landroid/widget/SeekBar;
 
     mul-int/lit8 v0, v0, 0x3c
 
@@ -1439,7 +1439,7 @@
     check-cast v0, Landroid/widget/TextView;
 
     .line 392
-    invoke-virtual {p0}, Lcom/android/settings/display/PageLayoutFragment;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {p0}, Lcom/android/settings_ext/display/PageLayoutFragment;->getResources()Landroid/content/res/Resources;
 
     move-result-object v1
 
@@ -1461,7 +1461,7 @@
     check-cast v0, Landroid/widget/TextView;
 
     .line 394
-    invoke-virtual {p0}, Lcom/android/settings/display/PageLayoutFragment;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {p0}, Lcom/android/settings_ext/display/PageLayoutFragment;->getResources()Landroid/content/res/Resources;
 
     move-result-object v1
 
@@ -1483,7 +1483,7 @@
     check-cast v0, Landroid/widget/TextView;
 
     .line 396
-    invoke-virtual {p0}, Lcom/android/settings/display/PageLayoutFragment;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {p0}, Lcom/android/settings_ext/display/PageLayoutFragment;->getResources()Landroid/content/res/Resources;
 
     move-result-object v1
 
@@ -1505,7 +1505,7 @@
     check-cast v0, Landroid/widget/TextView;
 
     .line 398
-    invoke-virtual {p0}, Lcom/android/settings/display/PageLayoutFragment;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {p0}, Lcom/android/settings_ext/display/PageLayoutFragment;->getResources()Landroid/content/res/Resources;
 
     move-result-object v1
 
@@ -1527,7 +1527,7 @@
     check-cast v0, Landroid/widget/TextView;
 
     .line 400
-    invoke-virtual {p0}, Lcom/android/settings/display/PageLayoutFragment;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {p0}, Lcom/android/settings_ext/display/PageLayoutFragment;->getResources()Landroid/content/res/Resources;
 
     move-result-object v1
 
@@ -1549,7 +1549,7 @@
     check-cast v0, Landroid/widget/TextView;
 
     .line 402
-    invoke-virtual {p0}, Lcom/android/settings/display/PageLayoutFragment;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {p0}, Lcom/android/settings_ext/display/PageLayoutFragment;->getResources()Landroid/content/res/Resources;
 
     move-result-object v1
 
@@ -1582,7 +1582,7 @@
     invoke-direct {v0, v6, v6, v1}, Landroid/widget/FrameLayout$LayoutParams;-><init>(III)V
 
     .line 409
-    invoke-virtual {p0}, Lcom/android/settings/display/PageLayoutFragment;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {p0}, Lcom/android/settings_ext/display/PageLayoutFragment;->getResources()Landroid/content/res/Resources;
 
     move-result-object v1
 
@@ -1595,12 +1595,12 @@
     iput v1, v0, Landroid/widget/FrameLayout$LayoutParams;->bottomMargin:I
 
     .line 410
-    iget-object v1, p0, Lcom/android/settings/display/PageLayoutFragment;->Vu:Lcom/android/settings/widget/ScreenView;
+    iget-object v1, p0, Lcom/android/settings_ext/display/PageLayoutFragment;->Vu:Lcom/android/settings_ext/widget/ScreenView;
 
-    invoke-virtual {v1, v0}, Lcom/android/settings/widget/ScreenView;->setSeekBarPosition(Landroid/widget/FrameLayout$LayoutParams;)V
+    invoke-virtual {v1, v0}, Lcom/android/settings_ext/widget/ScreenView;->setSeekBarPosition(Landroid/widget/FrameLayout$LayoutParams;)V
 
     .line 411
-    iget-boolean v0, p0, Lcom/android/settings/display/PageLayoutFragment;->sE:Z
+    iget-boolean v0, p0, Lcom/android/settings_ext/display/PageLayoutFragment;->sE:Z
 
     if-eqz v0, :cond_1
 
@@ -1624,7 +1624,7 @@
 
     .line 416
     :cond_1
-    invoke-direct {p0}, Lcom/android/settings/display/PageLayoutFragment;->oD()V
+    invoke-direct {p0}, Lcom/android/settings_ext/display/PageLayoutFragment;->oD()V
 
     .line 417
     return-void
@@ -1693,7 +1693,7 @@
 
     .prologue
     .line 420
-    iget-object v0, p0, Lcom/android/settings/display/PageLayoutFragment;->mRootView:Landroid/view/View;
+    iget-object v0, p0, Lcom/android/settings_ext/display/PageLayoutFragment;->mRootView:Landroid/view/View;
 
     const v1, 0x7f10018c
 
@@ -1708,7 +1708,7 @@
 
     move-result v1
 
-    iget v2, p0, Lcom/android/settings/display/PageLayoutFragment;->Vv:I
+    iget v2, p0, Lcom/android/settings_ext/display/PageLayoutFragment;->Vv:I
 
     invoke-virtual {v0}, Landroid/widget/TextView;->getPaddingRight()I
 
@@ -1721,9 +1721,9 @@
     invoke-virtual {v0, v1, v2, v3, v4}, Landroid/widget/TextView;->setPadding(IIII)V
 
     .line 422
-    sget-object v1, Lcom/android/settings/display/PageLayoutFragment;->Vq:Ljava/util/HashMap;
+    sget-object v1, Lcom/android/settings_ext/display/PageLayoutFragment;->Vq:Ljava/util/HashMap;
 
-    iget v2, p0, Lcom/android/settings/display/PageLayoutFragment;->Vw:I
+    iget v2, p0, Lcom/android/settings_ext/display/PageLayoutFragment;->Vw:I
 
     invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -1742,13 +1742,13 @@
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setText(I)V
 
     .line 423
-    invoke-virtual {p0}, Lcom/android/settings/display/PageLayoutFragment;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {p0}, Lcom/android/settings_ext/display/PageLayoutFragment;->getResources()Landroid/content/res/Resources;
 
     move-result-object v2
 
-    sget-object v1, Lcom/android/settings/display/PageLayoutFragment;->Vt:Ljava/util/HashMap;
+    sget-object v1, Lcom/android/settings_ext/display/PageLayoutFragment;->Vt:Ljava/util/HashMap;
 
-    iget v3, p0, Lcom/android/settings/display/PageLayoutFragment;->Vw:I
+    iget v3, p0, Lcom/android/settings_ext/display/PageLayoutFragment;->Vw:I
 
     invoke-static {v3}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -1768,10 +1768,10 @@
 
     move-result v1
 
-    invoke-direct {p0, v0, v1}, Lcom/android/settings/display/PageLayoutFragment;->a(Landroid/view/View;F)V
+    invoke-direct {p0, v0, v1}, Lcom/android/settings_ext/display/PageLayoutFragment;->a(Landroid/view/View;F)V
 
     .line 424
-    iget-object v0, p0, Lcom/android/settings/display/PageLayoutFragment;->mRootView:Landroid/view/View;
+    iget-object v0, p0, Lcom/android/settings_ext/display/PageLayoutFragment;->mRootView:Landroid/view/View;
 
     const v1, 0x7f100181
 
@@ -1786,7 +1786,7 @@
 
     move-result v1
 
-    iget v2, p0, Lcom/android/settings/display/PageLayoutFragment;->Vv:I
+    iget v2, p0, Lcom/android/settings_ext/display/PageLayoutFragment;->Vv:I
 
     invoke-virtual {v0}, Landroid/widget/TextView;->getPaddingRight()I
 
@@ -1799,9 +1799,9 @@
     invoke-virtual {v0, v1, v2, v3, v4}, Landroid/widget/TextView;->setPadding(IIII)V
 
     .line 426
-    sget-object v1, Lcom/android/settings/display/PageLayoutFragment;->Vq:Ljava/util/HashMap;
+    sget-object v1, Lcom/android/settings_ext/display/PageLayoutFragment;->Vq:Ljava/util/HashMap;
 
-    iget v2, p0, Lcom/android/settings/display/PageLayoutFragment;->Vw:I
+    iget v2, p0, Lcom/android/settings_ext/display/PageLayoutFragment;->Vw:I
 
     invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -1820,13 +1820,13 @@
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setText(I)V
 
     .line 427
-    invoke-virtual {p0}, Lcom/android/settings/display/PageLayoutFragment;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {p0}, Lcom/android/settings_ext/display/PageLayoutFragment;->getResources()Landroid/content/res/Resources;
 
     move-result-object v2
 
-    sget-object v1, Lcom/android/settings/display/PageLayoutFragment;->Vt:Ljava/util/HashMap;
+    sget-object v1, Lcom/android/settings_ext/display/PageLayoutFragment;->Vt:Ljava/util/HashMap;
 
-    iget v3, p0, Lcom/android/settings/display/PageLayoutFragment;->Vw:I
+    iget v3, p0, Lcom/android/settings_ext/display/PageLayoutFragment;->Vw:I
 
     invoke-static {v3}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -1846,10 +1846,10 @@
 
     move-result v1
 
-    invoke-direct {p0, v0, v1}, Lcom/android/settings/display/PageLayoutFragment;->a(Landroid/view/View;F)V
+    invoke-direct {p0, v0, v1}, Lcom/android/settings_ext/display/PageLayoutFragment;->a(Landroid/view/View;F)V
 
     .line 428
-    iget-object v0, p0, Lcom/android/settings/display/PageLayoutFragment;->mRootView:Landroid/view/View;
+    iget-object v0, p0, Lcom/android/settings_ext/display/PageLayoutFragment;->mRootView:Landroid/view/View;
 
     const v1, 0x1020016
 
@@ -1860,13 +1860,13 @@
     check-cast v0, Landroid/widget/TextView;
 
     .line 429
-    invoke-virtual {p0}, Lcom/android/settings/display/PageLayoutFragment;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {p0}, Lcom/android/settings_ext/display/PageLayoutFragment;->getResources()Landroid/content/res/Resources;
 
     move-result-object v2
 
-    sget-object v1, Lcom/android/settings/display/PageLayoutFragment;->Vs:Ljava/util/HashMap;
+    sget-object v1, Lcom/android/settings_ext/display/PageLayoutFragment;->Vs:Ljava/util/HashMap;
 
-    iget v3, p0, Lcom/android/settings/display/PageLayoutFragment;->Vw:I
+    iget v3, p0, Lcom/android/settings_ext/display/PageLayoutFragment;->Vw:I
 
     invoke-static {v3}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -1886,10 +1886,10 @@
 
     move-result v1
 
-    invoke-direct {p0, v0, v1}, Lcom/android/settings/display/PageLayoutFragment;->a(Landroid/view/View;F)V
+    invoke-direct {p0, v0, v1}, Lcom/android/settings_ext/display/PageLayoutFragment;->a(Landroid/view/View;F)V
 
     .line 430
-    invoke-virtual {p0}, Lcom/android/settings/display/PageLayoutFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/display/PageLayoutFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v1
 
@@ -1906,9 +1906,9 @@
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setTextColor(Landroid/content/res/ColorStateList;)V
 
     .line 432
-    sget-object v0, Lcom/android/settings/display/PageLayoutFragment;->Vl:Ljava/util/HashMap;
+    sget-object v0, Lcom/android/settings_ext/display/PageLayoutFragment;->Vl:Ljava/util/HashMap;
 
-    iget v1, p0, Lcom/android/settings/display/PageLayoutFragment;->Vw:I
+    iget v1, p0, Lcom/android/settings_ext/display/PageLayoutFragment;->Vw:I
 
     invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -1924,7 +1924,7 @@
     if-eqz v0, :cond_0
 
     .line 434
-    sget-object v3, Lcom/android/settings/display/PageLayoutFragment;->Vf:[I
+    sget-object v3, Lcom/android/settings_ext/display/PageLayoutFragment;->Vf:[I
 
     array-length v4, v3
 
@@ -1938,7 +1938,7 @@
     aget v1, v3, v2
 
     .line 435
-    iget-object v5, p0, Lcom/android/settings/display/PageLayoutFragment;->mRootView:Landroid/view/View;
+    iget-object v5, p0, Lcom/android/settings_ext/display/PageLayoutFragment;->mRootView:Landroid/view/View;
 
     invoke-virtual {v5, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -1958,7 +1958,7 @@
 
     move-result v1
 
-    invoke-direct {p0, v5, v1}, Lcom/android/settings/display/PageLayoutFragment;->a(Landroid/view/View;F)V
+    invoke-direct {p0, v5, v1}, Lcom/android/settings_ext/display/PageLayoutFragment;->a(Landroid/view/View;F)V
 
     .line 434
     add-int/lit8 v1, v2, 0x1
@@ -1987,9 +1987,9 @@
     move-result v6
 
     .line 442
-    sget-object v0, Lcom/android/settings/display/PageLayoutFragment;->Vn:Ljava/util/HashMap;
+    sget-object v0, Lcom/android/settings_ext/display/PageLayoutFragment;->Vn:Ljava/util/HashMap;
 
-    iget v1, p0, Lcom/android/settings/display/PageLayoutFragment;->Vw:I
+    iget v1, p0, Lcom/android/settings_ext/display/PageLayoutFragment;->Vw:I
 
     invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -2002,7 +2002,7 @@
     check-cast v0, Ljava/util/HashMap;
 
     .line 443
-    sget-object v3, Lcom/android/settings/display/PageLayoutFragment;->Vh:[I
+    sget-object v3, Lcom/android/settings_ext/display/PageLayoutFragment;->Vh:[I
 
     array-length v4, v3
 
@@ -2016,14 +2016,14 @@
     aget v1, v3, v2
 
     .line 444
-    iget-object v7, p0, Lcom/android/settings/display/PageLayoutFragment;->mRootView:Landroid/view/View;
+    iget-object v7, p0, Lcom/android/settings_ext/display/PageLayoutFragment;->mRootView:Landroid/view/View;
 
     invoke-virtual {v7, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
     move-result-object v7
 
     .line 445
-    invoke-virtual {p0}, Lcom/android/settings/display/PageLayoutFragment;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {p0}, Lcom/android/settings_ext/display/PageLayoutFragment;->getResources()Landroid/content/res/Resources;
 
     move-result-object v8
 
@@ -2065,9 +2065,9 @@
 
     .line 449
     :cond_1
-    sget-object v0, Lcom/android/settings/display/PageLayoutFragment;->Vk:Ljava/util/HashMap;
+    sget-object v0, Lcom/android/settings_ext/display/PageLayoutFragment;->Vk:Ljava/util/HashMap;
 
-    iget v1, p0, Lcom/android/settings/display/PageLayoutFragment;->Vw:I
+    iget v1, p0, Lcom/android/settings_ext/display/PageLayoutFragment;->Vw:I
 
     invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -2083,7 +2083,7 @@
     if-eqz v0, :cond_4
 
     .line 451
-    sget-object v4, Lcom/android/settings/display/PageLayoutFragment;->Vf:[I
+    sget-object v4, Lcom/android/settings_ext/display/PageLayoutFragment;->Vf:[I
 
     array-length v7, v4
 
@@ -2097,7 +2097,7 @@
     aget v1, v4, v3
 
     .line 452
-    iget-object v2, p0, Lcom/android/settings/display/PageLayoutFragment;->mRootView:Landroid/view/View;
+    iget-object v2, p0, Lcom/android/settings_ext/display/PageLayoutFragment;->mRootView:Landroid/view/View;
 
     invoke-virtual {v2, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -2180,7 +2180,7 @@
     const/4 v1, 0x0
 
     .line 470
-    invoke-virtual {p0}, Lcom/android/settings/display/PageLayoutFragment;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {p0}, Lcom/android/settings_ext/display/PageLayoutFragment;->getResources()Landroid/content/res/Resources;
 
     move-result-object v0
 
@@ -2191,7 +2191,7 @@
     move-result v7
 
     .line 471
-    invoke-virtual {p0}, Lcom/android/settings/display/PageLayoutFragment;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {p0}, Lcom/android/settings_ext/display/PageLayoutFragment;->getResources()Landroid/content/res/Resources;
 
     move-result-object v0
 
@@ -2204,7 +2204,7 @@
     float-to-int v8, v0
 
     .line 472
-    sget-object v9, Lcom/android/settings/display/PageLayoutFragment;->Vg:[I
+    sget-object v9, Lcom/android/settings_ext/display/PageLayoutFragment;->Vg:[I
 
     array-length v10, v9
 
@@ -2220,7 +2220,7 @@
     aget v11, v9, v2
 
     .line 473
-    iget-object v0, p0, Lcom/android/settings/display/PageLayoutFragment;->mRootView:Landroid/view/View;
+    iget-object v0, p0, Lcom/android/settings_ext/display/PageLayoutFragment;->mRootView:Landroid/view/View;
 
     invoke-virtual {v0, v11}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -2258,7 +2258,7 @@
     iput v13, v0, Landroid/view/ViewGroup$MarginLayoutParams;->leftMargin:I
 
     .line 479
-    sget-object v0, Lcom/android/settings/display/PageLayoutFragment;->Vg:[I
+    sget-object v0, Lcom/android/settings_ext/display/PageLayoutFragment;->Vg:[I
 
     const/4 v13, 0x0
 
@@ -2292,7 +2292,7 @@
 
     .line 481
     :cond_7
-    sget-object v0, Lcom/android/settings/display/PageLayoutFragment;->Vg:[I
+    sget-object v0, Lcom/android/settings_ext/display/PageLayoutFragment;->Vg:[I
 
     const/4 v13, 0x1
 
@@ -2319,7 +2319,7 @@
 
     .line 489
     :cond_8
-    iget-object v0, p0, Lcom/android/settings/display/PageLayoutFragment;->mRootView:Landroid/view/View;
+    iget-object v0, p0, Lcom/android/settings_ext/display/PageLayoutFragment;->mRootView:Landroid/view/View;
 
     const v1, 0x7f100180
 
@@ -2327,9 +2327,9 @@
 
     move-result-object v1
 
-    sget-object v0, Lcom/android/settings/display/PageLayoutFragment;->Vm:Ljava/util/HashMap;
+    sget-object v0, Lcom/android/settings_ext/display/PageLayoutFragment;->Vm:Ljava/util/HashMap;
 
-    iget v2, p0, Lcom/android/settings/display/PageLayoutFragment;->Vw:I
+    iget v2, p0, Lcom/android/settings_ext/display/PageLayoutFragment;->Vw:I
 
     invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -2348,12 +2348,12 @@
     invoke-virtual {v1, v0}, Landroid/view/View;->setBackgroundResource(I)V
 
     .line 490
-    iget-object v0, p0, Lcom/android/settings/display/PageLayoutFragment;->mRootView:Landroid/view/View;
+    iget-object v0, p0, Lcom/android/settings_ext/display/PageLayoutFragment;->mRootView:Landroid/view/View;
 
     invoke-virtual {v0}, Landroid/view/View;->requestLayout()V
 
     .line 492
-    invoke-virtual {p0}, Lcom/android/settings/display/PageLayoutFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/display/PageLayoutFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
@@ -2368,7 +2368,7 @@
     move-result-object v1
 
     .line 493
-    iget-object v0, p0, Lcom/android/settings/display/PageLayoutFragment;->mRootView:Landroid/view/View;
+    iget-object v0, p0, Lcom/android/settings_ext/display/PageLayoutFragment;->mRootView:Landroid/view/View;
 
     const v2, 0x7f100177
 
@@ -2382,7 +2382,7 @@
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setTextColor(Landroid/content/res/ColorStateList;)V
 
     .line 495
-    iget-object v0, p0, Lcom/android/settings/display/PageLayoutFragment;->mRootView:Landroid/view/View;
+    iget-object v0, p0, Lcom/android/settings_ext/display/PageLayoutFragment;->mRootView:Landroid/view/View;
 
     const v2, 0x7f100176
 
@@ -2396,7 +2396,7 @@
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setTextColor(Landroid/content/res/ColorStateList;)V
 
     .line 497
-    iget-object v0, p0, Lcom/android/settings/display/PageLayoutFragment;->mRootView:Landroid/view/View;
+    iget-object v0, p0, Lcom/android/settings_ext/display/PageLayoutFragment;->mRootView:Landroid/view/View;
 
     const v2, 0x7f100178
 
@@ -2410,7 +2410,7 @@
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setTextColor(Landroid/content/res/ColorStateList;)V
 
     .line 499
-    iget-object v0, p0, Lcom/android/settings/display/PageLayoutFragment;->mRootView:Landroid/view/View;
+    iget-object v0, p0, Lcom/android/settings_ext/display/PageLayoutFragment;->mRootView:Landroid/view/View;
 
     const v2, 0x7f100179
 
@@ -2424,7 +2424,7 @@
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setTextColor(Landroid/content/res/ColorStateList;)V
 
     .line 501
-    iget-object v0, p0, Lcom/android/settings/display/PageLayoutFragment;->mRootView:Landroid/view/View;
+    iget-object v0, p0, Lcom/android/settings_ext/display/PageLayoutFragment;->mRootView:Landroid/view/View;
 
     const v2, 0x7f10017a
 
@@ -2438,7 +2438,7 @@
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setTextColor(Landroid/content/res/ColorStateList;)V
 
     .line 503
-    iget-object v0, p0, Lcom/android/settings/display/PageLayoutFragment;->mRootView:Landroid/view/View;
+    iget-object v0, p0, Lcom/android/settings_ext/display/PageLayoutFragment;->mRootView:Landroid/view/View;
 
     const v2, 0x7f10017b
 
@@ -2452,7 +2452,7 @@
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setTextColor(Landroid/content/res/ColorStateList;)V
 
     .line 505
-    invoke-virtual {p0}, Lcom/android/settings/display/PageLayoutFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/display/PageLayoutFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
@@ -2467,7 +2467,7 @@
     move-result-object v3
 
     .line 507
-    sget-object v4, Lcom/android/settings/display/PageLayoutFragment;->Vi:[I
+    sget-object v4, Lcom/android/settings_ext/display/PageLayoutFragment;->Vi:[I
 
     array-length v5, v4
 
@@ -2481,7 +2481,7 @@
     aget v0, v4, v2
 
     .line 508
-    iget-object v1, p0, Lcom/android/settings/display/PageLayoutFragment;->mRootView:Landroid/view/View;
+    iget-object v1, p0, Lcom/android/settings_ext/display/PageLayoutFragment;->mRootView:Landroid/view/View;
 
     invoke-virtual {v1, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -2497,9 +2497,9 @@
     check-cast v0, Landroid/widget/TextView;
 
     .line 510
-    sget-object v1, Lcom/android/settings/display/PageLayoutFragment;->Vo:Ljava/util/HashMap;
+    sget-object v1, Lcom/android/settings_ext/display/PageLayoutFragment;->Vo:Ljava/util/HashMap;
 
-    iget v7, p0, Lcom/android/settings/display/PageLayoutFragment;->Vw:I
+    iget v7, p0, Lcom/android/settings_ext/display/PageLayoutFragment;->Vw:I
 
     invoke-static {v7}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -2518,13 +2518,13 @@
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setText(I)V
 
     .line 511
-    invoke-virtual {p0}, Lcom/android/settings/display/PageLayoutFragment;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {p0}, Lcom/android/settings_ext/display/PageLayoutFragment;->getResources()Landroid/content/res/Resources;
 
     move-result-object v7
 
-    sget-object v1, Lcom/android/settings/display/PageLayoutFragment;->Vr:Ljava/util/HashMap;
+    sget-object v1, Lcom/android/settings_ext/display/PageLayoutFragment;->Vr:Ljava/util/HashMap;
 
-    iget v8, p0, Lcom/android/settings/display/PageLayoutFragment;->Vw:I
+    iget v8, p0, Lcom/android/settings_ext/display/PageLayoutFragment;->Vw:I
 
     invoke-static {v8}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -2544,7 +2544,7 @@
 
     move-result v1
 
-    invoke-direct {p0, v0, v1}, Lcom/android/settings/display/PageLayoutFragment;->a(Landroid/view/View;F)V
+    invoke-direct {p0, v0, v1}, Lcom/android/settings_ext/display/PageLayoutFragment;->a(Landroid/view/View;F)V
 
     .line 512
     const v0, 0x1020010
@@ -2556,9 +2556,9 @@
     check-cast v0, Landroid/widget/TextView;
 
     .line 513
-    sget-object v1, Lcom/android/settings/display/PageLayoutFragment;->Vp:Ljava/util/HashMap;
+    sget-object v1, Lcom/android/settings_ext/display/PageLayoutFragment;->Vp:Ljava/util/HashMap;
 
-    iget v7, p0, Lcom/android/settings/display/PageLayoutFragment;->Vw:I
+    iget v7, p0, Lcom/android/settings_ext/display/PageLayoutFragment;->Vw:I
 
     invoke-static {v7}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -2577,13 +2577,13 @@
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setText(I)V
 
     .line 514
-    invoke-virtual {p0}, Lcom/android/settings/display/PageLayoutFragment;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {p0}, Lcom/android/settings_ext/display/PageLayoutFragment;->getResources()Landroid/content/res/Resources;
 
     move-result-object v7
 
-    sget-object v1, Lcom/android/settings/display/PageLayoutFragment;->Vs:Ljava/util/HashMap;
+    sget-object v1, Lcom/android/settings_ext/display/PageLayoutFragment;->Vs:Ljava/util/HashMap;
 
-    iget v8, p0, Lcom/android/settings/display/PageLayoutFragment;->Vw:I
+    iget v8, p0, Lcom/android/settings_ext/display/PageLayoutFragment;->Vw:I
 
     invoke-static {v8}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -2603,10 +2603,10 @@
 
     move-result v1
 
-    invoke-direct {p0, v0, v1}, Lcom/android/settings/display/PageLayoutFragment;->a(Landroid/view/View;F)V
+    invoke-direct {p0, v0, v1}, Lcom/android/settings_ext/display/PageLayoutFragment;->a(Landroid/view/View;F)V
 
     .line 515
-    invoke-virtual {p0}, Lcom/android/settings/display/PageLayoutFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/display/PageLayoutFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v1
 
@@ -2623,14 +2623,14 @@
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setTextColor(Landroid/content/res/ColorStateList;)V
 
     .line 516
-    iget v1, p0, Lcom/android/settings/display/PageLayoutFragment;->Vw:I
+    iget v1, p0, Lcom/android/settings_ext/display/PageLayoutFragment;->Vw:I
 
     const/16 v7, 0xb
 
     if-ne v1, v7, :cond_9
 
     .line 517
-    invoke-virtual {p0}, Lcom/android/settings/display/PageLayoutFragment;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {p0}, Lcom/android/settings_ext/display/PageLayoutFragment;->getResources()Landroid/content/res/Resources;
 
     move-result-object v1
 
@@ -2694,7 +2694,7 @@
 
     .line 525
     :cond_a
-    iget v0, p0, Lcom/android/settings/display/PageLayoutFragment;->Vw:I
+    iget v0, p0, Lcom/android/settings_ext/display/PageLayoutFragment;->Vw:I
 
     sparse-switch v0, :sswitch_data_0
 
@@ -2704,7 +2704,7 @@
 
     .line 527
     :sswitch_0
-    iget-object v0, p0, Lcom/android/settings/display/PageLayoutFragment;->mRootView:Landroid/view/View;
+    iget-object v0, p0, Lcom/android/settings_ext/display/PageLayoutFragment;->mRootView:Landroid/view/View;
 
     const v1, 0x7f100176
 
@@ -2721,7 +2721,7 @@
 
     .line 531
     :sswitch_1
-    iget-object v0, p0, Lcom/android/settings/display/PageLayoutFragment;->mRootView:Landroid/view/View;
+    iget-object v0, p0, Lcom/android/settings_ext/display/PageLayoutFragment;->mRootView:Landroid/view/View;
 
     const v1, 0x7f100177
 
@@ -2738,7 +2738,7 @@
 
     .line 535
     :sswitch_2
-    iget-object v0, p0, Lcom/android/settings/display/PageLayoutFragment;->mRootView:Landroid/view/View;
+    iget-object v0, p0, Lcom/android/settings_ext/display/PageLayoutFragment;->mRootView:Landroid/view/View;
 
     const v1, 0x7f100178
 
@@ -2755,7 +2755,7 @@
 
     .line 539
     :sswitch_3
-    iget-object v0, p0, Lcom/android/settings/display/PageLayoutFragment;->mRootView:Landroid/view/View;
+    iget-object v0, p0, Lcom/android/settings_ext/display/PageLayoutFragment;->mRootView:Landroid/view/View;
 
     const v1, 0x7f100179
 
@@ -2772,7 +2772,7 @@
 
     .line 543
     :sswitch_4
-    iget-object v0, p0, Lcom/android/settings/display/PageLayoutFragment;->mRootView:Landroid/view/View;
+    iget-object v0, p0, Lcom/android/settings_ext/display/PageLayoutFragment;->mRootView:Landroid/view/View;
 
     const v1, 0x7f10017a
 
@@ -2789,7 +2789,7 @@
 
     .line 547
     :sswitch_5
-    iget-object v0, p0, Lcom/android/settings/display/PageLayoutFragment;->mRootView:Landroid/view/View;
+    iget-object v0, p0, Lcom/android/settings_ext/display/PageLayoutFragment;->mRootView:Landroid/view/View;
 
     const v1, 0x7f10017b
 
@@ -2818,7 +2818,7 @@
 
 
 # virtual methods
-.method public a(Lcom/android/settings/widget/FontLinearLayout;F)V
+.method public a(Lcom/android/settings_ext/widget/FontLinearLayout;F)V
     .locals 6
 
     .prologue
@@ -2826,14 +2826,14 @@
     const/4 v0, 0x0
 
     :goto_0
-    sget-object v1, Lcom/android/settings/display/PageLayoutFragment;->Vj:[F
+    sget-object v1, Lcom/android/settings_ext/display/PageLayoutFragment;->Vj:[F
 
     array-length v1, v1
 
     if-ge v0, v1, :cond_1
 
     .line 743
-    sget-object v1, Lcom/android/settings/display/PageLayoutFragment;->Vj:[F
+    sget-object v1, Lcom/android/settings_ext/display/PageLayoutFragment;->Vj:[F
 
     aget v1, v1, v0
 
@@ -2852,16 +2852,16 @@
     if-gez v1, :cond_0
 
     .line 744
-    iget-object v1, p0, Lcom/android/settings/display/PageLayoutFragment;->tP:Landroid/widget/SeekBar;
+    iget-object v1, p0, Lcom/android/settings_ext/display/PageLayoutFragment;->tP:Landroid/widget/SeekBar;
 
     mul-int/lit8 v2, v0, 0x3c
 
     invoke-virtual {v1, v2}, Landroid/widget/SeekBar;->setProgress(I)V
 
     .line 745
-    iget-object v1, p0, Lcom/android/settings/display/PageLayoutFragment;->tP:Landroid/widget/SeekBar;
+    iget-object v1, p0, Lcom/android/settings_ext/display/PageLayoutFragment;->tP:Landroid/widget/SeekBar;
 
-    invoke-virtual {p0, v1}, Lcom/android/settings/display/PageLayoutFragment;->onStopTrackingTouch(Landroid/widget/SeekBar;)V
+    invoke-virtual {p0, v1}, Lcom/android/settings_ext/display/PageLayoutFragment;->onStopTrackingTouch(Landroid/widget/SeekBar;)V
 
     .line 742
     :cond_0
@@ -2882,7 +2882,7 @@
     const/4 v0, 0x0
 
     .line 752
-    invoke-virtual {p0}, Lcom/android/settings/display/PageLayoutFragment;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {p0}, Lcom/android/settings_ext/display/PageLayoutFragment;->getResources()Landroid/content/res/Resources;
 
     move-result-object v1
 
@@ -2900,7 +2900,7 @@
     if-lez v1, :cond_0
 
     .line 754
-    invoke-virtual {p0}, Lcom/android/settings/display/PageLayoutFragment;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {p0}, Lcom/android/settings_ext/display/PageLayoutFragment;->getResources()Landroid/content/res/Resources;
 
     move-result-object v0
 
@@ -2931,25 +2931,25 @@
     invoke-super {p0, p1}, Lmiui/app/Fragment;->onCreate(Landroid/os/Bundle;)V
 
     .line 218
-    invoke-virtual {p0}, Lcom/android/settings/display/PageLayoutFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/display/PageLayoutFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
     invoke-virtual {v0, v1}, Landroid/app/Activity;->setRequestedOrientation(I)V
 
     .line 219
-    invoke-static {}, Lcom/android/settings/display/n;->oy()I
+    invoke-static {}, Lcom/android/settings_ext/display/n;->oy()I
 
     move-result v0
 
-    iput v0, p0, Lcom/android/settings/display/PageLayoutFragment;->Vw:I
+    iput v0, p0, Lcom/android/settings_ext/display/PageLayoutFragment;->Vw:I
 
     .line 220
-    invoke-virtual {p0}, Lcom/android/settings/display/PageLayoutFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/display/PageLayoutFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
-    invoke-static {v0}, Lcom/android/settings/display/PageLayoutFragment;->c(Landroid/content/Context;)Z
+    invoke-static {v0}, Lcom/android/settings_ext/display/PageLayoutFragment;->c(Landroid/content/Context;)Z
 
     move-result v0
 
@@ -2958,17 +2958,17 @@
     move v0, v1
 
     :goto_0
-    iput-boolean v0, p0, Lcom/android/settings/display/PageLayoutFragment;->sE:Z
+    iput-boolean v0, p0, Lcom/android/settings_ext/display/PageLayoutFragment;->sE:Z
 
     .line 222
-    invoke-virtual {p0}, Lcom/android/settings/display/PageLayoutFragment;->oE()I
+    invoke-virtual {p0}, Lcom/android/settings_ext/display/PageLayoutFragment;->oE()I
 
     move-result v0
 
-    iput v0, p0, Lcom/android/settings/display/PageLayoutFragment;->Vv:I
+    iput v0, p0, Lcom/android/settings_ext/display/PageLayoutFragment;->Vv:I
 
     .line 225
-    invoke-virtual {p0}, Lcom/android/settings/display/PageLayoutFragment;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {p0}, Lcom/android/settings_ext/display/PageLayoutFragment;->getResources()Landroid/content/res/Resources;
 
     move-result-object v4
 
@@ -2978,7 +2978,7 @@
     invoke-direct {v5}, Ljava/util/HashMap;-><init>()V
 
     .line 227
-    sget-object v0, Lcom/android/settings/display/PageLayoutFragment;->Vk:Ljava/util/HashMap;
+    sget-object v0, Lcom/android/settings_ext/display/PageLayoutFragment;->Vk:Ljava/util/HashMap;
 
     invoke-static {v9}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -3010,14 +3010,14 @@
 
     .line 232
     :goto_1
-    sget-object v6, Lcom/android/settings/display/PageLayoutFragment;->Vf:[I
+    sget-object v6, Lcom/android/settings_ext/display/PageLayoutFragment;->Vf:[I
 
     array-length v6, v6
 
     if-ge v3, v6, :cond_2
 
     .line 233
-    sget-object v6, Lcom/android/settings/display/PageLayoutFragment;->Vf:[I
+    sget-object v6, Lcom/android/settings_ext/display/PageLayoutFragment;->Vf:[I
 
     aget v6, v6, v3
 
@@ -3051,7 +3051,7 @@
     invoke-direct {v5}, Ljava/util/HashMap;-><init>()V
 
     .line 237
-    sget-object v0, Lcom/android/settings/display/PageLayoutFragment;->Vk:Ljava/util/HashMap;
+    sget-object v0, Lcom/android/settings_ext/display/PageLayoutFragment;->Vk:Ljava/util/HashMap;
 
     invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -3083,14 +3083,14 @@
 
     .line 242
     :goto_2
-    sget-object v6, Lcom/android/settings/display/PageLayoutFragment;->Vf:[I
+    sget-object v6, Lcom/android/settings_ext/display/PageLayoutFragment;->Vf:[I
 
     array-length v6, v6
 
     if-ge v3, v6, :cond_4
 
     .line 243
-    sget-object v6, Lcom/android/settings/display/PageLayoutFragment;->Vf:[I
+    sget-object v6, Lcom/android/settings_ext/display/PageLayoutFragment;->Vf:[I
 
     aget v6, v6, v3
 
@@ -3118,7 +3118,7 @@
     invoke-direct {v5}, Ljava/util/HashMap;-><init>()V
 
     .line 247
-    sget-object v0, Lcom/android/settings/display/PageLayoutFragment;->Vk:Ljava/util/HashMap;
+    sget-object v0, Lcom/android/settings_ext/display/PageLayoutFragment;->Vk:Ljava/util/HashMap;
 
     invoke-static {v10}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -3143,14 +3143,14 @@
 
     .line 253
     :goto_4
-    sget-object v6, Lcom/android/settings/display/PageLayoutFragment;->Vf:[I
+    sget-object v6, Lcom/android/settings_ext/display/PageLayoutFragment;->Vf:[I
 
     array-length v6, v6
 
     if-ge v3, v6, :cond_6
 
     .line 254
-    sget-object v6, Lcom/android/settings/display/PageLayoutFragment;->Vf:[I
+    sget-object v6, Lcom/android/settings_ext/display/PageLayoutFragment;->Vf:[I
 
     aget v6, v6, v3
 
@@ -3188,7 +3188,7 @@
     invoke-direct {v5}, Ljava/util/HashMap;-><init>()V
 
     .line 258
-    sget-object v0, Lcom/android/settings/display/PageLayoutFragment;->Vk:Ljava/util/HashMap;
+    sget-object v0, Lcom/android/settings_ext/display/PageLayoutFragment;->Vk:Ljava/util/HashMap;
 
     const/16 v3, 0xe
 
@@ -3215,14 +3215,14 @@
 
     .line 264
     :goto_6
-    sget-object v6, Lcom/android/settings/display/PageLayoutFragment;->Vf:[I
+    sget-object v6, Lcom/android/settings_ext/display/PageLayoutFragment;->Vf:[I
 
     array-length v6, v6
 
     if-ge v3, v6, :cond_8
 
     .line 265
-    sget-object v6, Lcom/android/settings/display/PageLayoutFragment;->Vf:[I
+    sget-object v6, Lcom/android/settings_ext/display/PageLayoutFragment;->Vf:[I
 
     aget v6, v6, v3
 
@@ -3260,7 +3260,7 @@
     invoke-direct {v5}, Ljava/util/HashMap;-><init>()V
 
     .line 269
-    sget-object v0, Lcom/android/settings/display/PageLayoutFragment;->Vk:Ljava/util/HashMap;
+    sget-object v0, Lcom/android/settings_ext/display/PageLayoutFragment;->Vk:Ljava/util/HashMap;
 
     const/16 v3, 0xf
 
@@ -3287,14 +3287,14 @@
 
     .line 275
     :goto_8
-    sget-object v6, Lcom/android/settings/display/PageLayoutFragment;->Vf:[I
+    sget-object v6, Lcom/android/settings_ext/display/PageLayoutFragment;->Vf:[I
 
     array-length v6, v6
 
     if-ge v3, v6, :cond_a
 
     .line 276
-    sget-object v6, Lcom/android/settings/display/PageLayoutFragment;->Vf:[I
+    sget-object v6, Lcom/android/settings_ext/display/PageLayoutFragment;->Vf:[I
 
     aget v6, v6, v3
 
@@ -3332,7 +3332,7 @@
     invoke-direct {v5}, Ljava/util/HashMap;-><init>()V
 
     .line 280
-    sget-object v0, Lcom/android/settings/display/PageLayoutFragment;->Vk:Ljava/util/HashMap;
+    sget-object v0, Lcom/android/settings_ext/display/PageLayoutFragment;->Vk:Ljava/util/HashMap;
 
     invoke-static {v8}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -3357,14 +3357,14 @@
 
     .line 286
     :goto_a
-    sget-object v6, Lcom/android/settings/display/PageLayoutFragment;->Vf:[I
+    sget-object v6, Lcom/android/settings_ext/display/PageLayoutFragment;->Vf:[I
 
     array-length v6, v6
 
     if-ge v3, v6, :cond_c
 
     .line 287
-    sget-object v6, Lcom/android/settings/display/PageLayoutFragment;->Vf:[I
+    sget-object v6, Lcom/android/settings_ext/display/PageLayoutFragment;->Vf:[I
 
     aget v6, v6, v3
 
@@ -3402,7 +3402,7 @@
     invoke-direct {v3}, Ljava/util/HashMap;-><init>()V
 
     .line 292
-    sget-object v0, Lcom/android/settings/display/PageLayoutFragment;->Vl:Ljava/util/HashMap;
+    sget-object v0, Lcom/android/settings_ext/display/PageLayoutFragment;->Vl:Ljava/util/HashMap;
 
     invoke-static {v9}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -3421,14 +3421,14 @@
 
     .line 294
     :goto_b
-    sget-object v6, Lcom/android/settings/display/PageLayoutFragment;->Vf:[I
+    sget-object v6, Lcom/android/settings_ext/display/PageLayoutFragment;->Vf:[I
 
     array-length v6, v6
 
     if-ge v0, v6, :cond_d
 
     .line 295
-    sget-object v6, Lcom/android/settings/display/PageLayoutFragment;->Vf:[I
+    sget-object v6, Lcom/android/settings_ext/display/PageLayoutFragment;->Vf:[I
 
     aget v6, v6, v0
 
@@ -3458,7 +3458,7 @@
     invoke-direct {v3}, Ljava/util/HashMap;-><init>()V
 
     .line 299
-    sget-object v0, Lcom/android/settings/display/PageLayoutFragment;->Vl:Ljava/util/HashMap;
+    sget-object v0, Lcom/android/settings_ext/display/PageLayoutFragment;->Vl:Ljava/util/HashMap;
 
     invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -3477,14 +3477,14 @@
 
     .line 301
     :goto_c
-    sget-object v5, Lcom/android/settings/display/PageLayoutFragment;->Vf:[I
+    sget-object v5, Lcom/android/settings_ext/display/PageLayoutFragment;->Vf:[I
 
     array-length v5, v5
 
     if-ge v0, v5, :cond_e
 
     .line 302
-    sget-object v5, Lcom/android/settings/display/PageLayoutFragment;->Vf:[I
+    sget-object v5, Lcom/android/settings_ext/display/PageLayoutFragment;->Vf:[I
 
     aget v5, v5, v0
 
@@ -3514,7 +3514,7 @@
     invoke-direct {v1}, Ljava/util/HashMap;-><init>()V
 
     .line 306
-    sget-object v0, Lcom/android/settings/display/PageLayoutFragment;->Vl:Ljava/util/HashMap;
+    sget-object v0, Lcom/android/settings_ext/display/PageLayoutFragment;->Vl:Ljava/util/HashMap;
 
     invoke-static {v10}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -3533,14 +3533,14 @@
 
     .line 308
     :goto_d
-    sget-object v5, Lcom/android/settings/display/PageLayoutFragment;->Vf:[I
+    sget-object v5, Lcom/android/settings_ext/display/PageLayoutFragment;->Vf:[I
 
     array-length v5, v5
 
     if-ge v0, v5, :cond_f
 
     .line 309
-    sget-object v5, Lcom/android/settings/display/PageLayoutFragment;->Vf:[I
+    sget-object v5, Lcom/android/settings_ext/display/PageLayoutFragment;->Vf:[I
 
     aget v5, v5, v0
 
@@ -3570,7 +3570,7 @@
     invoke-direct {v1}, Ljava/util/HashMap;-><init>()V
 
     .line 313
-    sget-object v0, Lcom/android/settings/display/PageLayoutFragment;->Vl:Ljava/util/HashMap;
+    sget-object v0, Lcom/android/settings_ext/display/PageLayoutFragment;->Vl:Ljava/util/HashMap;
 
     const/16 v3, 0xe
 
@@ -3591,14 +3591,14 @@
 
     .line 315
     :goto_e
-    sget-object v5, Lcom/android/settings/display/PageLayoutFragment;->Vf:[I
+    sget-object v5, Lcom/android/settings_ext/display/PageLayoutFragment;->Vf:[I
 
     array-length v5, v5
 
     if-ge v0, v5, :cond_10
 
     .line 316
-    sget-object v5, Lcom/android/settings/display/PageLayoutFragment;->Vf:[I
+    sget-object v5, Lcom/android/settings_ext/display/PageLayoutFragment;->Vf:[I
 
     aget v5, v5, v0
 
@@ -3628,7 +3628,7 @@
     invoke-direct {v1}, Ljava/util/HashMap;-><init>()V
 
     .line 320
-    sget-object v0, Lcom/android/settings/display/PageLayoutFragment;->Vl:Ljava/util/HashMap;
+    sget-object v0, Lcom/android/settings_ext/display/PageLayoutFragment;->Vl:Ljava/util/HashMap;
 
     const/16 v3, 0xf
 
@@ -3649,14 +3649,14 @@
 
     .line 322
     :goto_f
-    sget-object v5, Lcom/android/settings/display/PageLayoutFragment;->Vf:[I
+    sget-object v5, Lcom/android/settings_ext/display/PageLayoutFragment;->Vf:[I
 
     array-length v5, v5
 
     if-ge v0, v5, :cond_11
 
     .line 323
-    sget-object v5, Lcom/android/settings/display/PageLayoutFragment;->Vf:[I
+    sget-object v5, Lcom/android/settings_ext/display/PageLayoutFragment;->Vf:[I
 
     aget v5, v5, v0
 
@@ -3686,7 +3686,7 @@
     invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
 
     .line 327
-    sget-object v1, Lcom/android/settings/display/PageLayoutFragment;->Vl:Ljava/util/HashMap;
+    sget-object v1, Lcom/android/settings_ext/display/PageLayoutFragment;->Vl:Ljava/util/HashMap;
 
     invoke-static {v8}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -3703,14 +3703,14 @@
 
     .line 329
     :goto_10
-    sget-object v3, Lcom/android/settings/display/PageLayoutFragment;->Vf:[I
+    sget-object v3, Lcom/android/settings_ext/display/PageLayoutFragment;->Vf:[I
 
     array-length v3, v3
 
     if-ge v2, v3, :cond_12
 
     .line 330
-    sget-object v3, Lcom/android/settings/display/PageLayoutFragment;->Vf:[I
+    sget-object v3, Lcom/android/settings_ext/display/PageLayoutFragment;->Vf:[I
 
     aget v3, v3, v2
 
@@ -3839,29 +3839,29 @@
 
     .line 679
     :pswitch_0
-    iget v2, p0, Lcom/android/settings/display/PageLayoutFragment;->Vw:I
+    iget v2, p0, Lcom/android/settings_ext/display/PageLayoutFragment;->Vw:I
 
     if-eq v2, v5, :cond_1
 
     .line 680
-    iput v5, p0, Lcom/android/settings/display/PageLayoutFragment;->Vw:I
+    iput v5, p0, Lcom/android/settings_ext/display/PageLayoutFragment;->Vw:I
 
     .line 681
-    invoke-direct {p0}, Lcom/android/settings/display/PageLayoutFragment;->oD()V
+    invoke-direct {p0}, Lcom/android/settings_ext/display/PageLayoutFragment;->oD()V
 
     goto :goto_0
 
     .line 685
     :pswitch_1
-    iget v0, p0, Lcom/android/settings/display/PageLayoutFragment;->Vw:I
+    iget v0, p0, Lcom/android/settings_ext/display/PageLayoutFragment;->Vw:I
 
     if-eq v0, v3, :cond_2
 
     .line 686
-    iput v3, p0, Lcom/android/settings/display/PageLayoutFragment;->Vw:I
+    iput v3, p0, Lcom/android/settings_ext/display/PageLayoutFragment;->Vw:I
 
     .line 687
-    invoke-direct {p0}, Lcom/android/settings/display/PageLayoutFragment;->oD()V
+    invoke-direct {p0}, Lcom/android/settings_ext/display/PageLayoutFragment;->oD()V
 
     .line 689
     :cond_2
@@ -3872,15 +3872,15 @@
 
     .line 692
     :pswitch_2
-    iget v0, p0, Lcom/android/settings/display/PageLayoutFragment;->Vw:I
+    iget v0, p0, Lcom/android/settings_ext/display/PageLayoutFragment;->Vw:I
 
     if-eq v0, v6, :cond_3
 
     .line 693
-    iput v6, p0, Lcom/android/settings/display/PageLayoutFragment;->Vw:I
+    iput v6, p0, Lcom/android/settings_ext/display/PageLayoutFragment;->Vw:I
 
     .line 694
-    invoke-direct {p0}, Lcom/android/settings/display/PageLayoutFragment;->oD()V
+    invoke-direct {p0}, Lcom/android/settings_ext/display/PageLayoutFragment;->oD()V
 
     .line 696
     :cond_3
@@ -3891,15 +3891,15 @@
 
     .line 699
     :pswitch_3
-    iget v0, p0, Lcom/android/settings/display/PageLayoutFragment;->Vw:I
+    iget v0, p0, Lcom/android/settings_ext/display/PageLayoutFragment;->Vw:I
 
     if-eq v0, v7, :cond_4
 
     .line 700
-    iput v7, p0, Lcom/android/settings/display/PageLayoutFragment;->Vw:I
+    iput v7, p0, Lcom/android/settings_ext/display/PageLayoutFragment;->Vw:I
 
     .line 701
-    invoke-direct {p0}, Lcom/android/settings/display/PageLayoutFragment;->oD()V
+    invoke-direct {p0}, Lcom/android/settings_ext/display/PageLayoutFragment;->oD()V
 
     .line 703
     :cond_4
@@ -3910,7 +3910,7 @@
 
     .line 706
     :pswitch_4
-    iget v0, p0, Lcom/android/settings/display/PageLayoutFragment;->Vw:I
+    iget v0, p0, Lcom/android/settings_ext/display/PageLayoutFragment;->Vw:I
 
     const/16 v2, 0xf
 
@@ -3919,10 +3919,10 @@
     .line 707
     const/16 v0, 0xf
 
-    iput v0, p0, Lcom/android/settings/display/PageLayoutFragment;->Vw:I
+    iput v0, p0, Lcom/android/settings_ext/display/PageLayoutFragment;->Vw:I
 
     .line 708
-    invoke-direct {p0}, Lcom/android/settings/display/PageLayoutFragment;->oD()V
+    invoke-direct {p0}, Lcom/android/settings_ext/display/PageLayoutFragment;->oD()V
 
     .line 710
     :cond_5
@@ -3933,15 +3933,15 @@
 
     .line 713
     :pswitch_5
-    iget v2, p0, Lcom/android/settings/display/PageLayoutFragment;->Vw:I
+    iget v2, p0, Lcom/android/settings_ext/display/PageLayoutFragment;->Vw:I
 
     if-eq v2, v4, :cond_1
 
     .line 714
-    iput v4, p0, Lcom/android/settings/display/PageLayoutFragment;->Vw:I
+    iput v4, p0, Lcom/android/settings_ext/display/PageLayoutFragment;->Vw:I
 
     .line 715
-    invoke-direct {p0}, Lcom/android/settings/display/PageLayoutFragment;->oD()V
+    invoke-direct {p0}, Lcom/android/settings_ext/display/PageLayoutFragment;->oD()V
 
     goto :goto_0
 
@@ -3967,7 +3967,7 @@
     invoke-super {p0, p1, p2}, Lmiui/app/Fragment;->onViewCreated(Landroid/view/View;Landroid/os/Bundle;)V
 
     .line 347
-    invoke-direct {p0, p1}, Lcom/android/settings/display/PageLayoutFragment;->g(Landroid/view/View;)V
+    invoke-direct {p0, p1}, Lcom/android/settings_ext/display/PageLayoutFragment;->g(Landroid/view/View;)V
 
     .line 348
     return-void

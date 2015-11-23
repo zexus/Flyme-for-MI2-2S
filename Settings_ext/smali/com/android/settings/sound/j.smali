@@ -1,4 +1,4 @@
-.class Lcom/android/settings/sound/j;
+.class Lcom/android/settings_ext/sound/j;
 .super Ljava/lang/Object;
 .source "AudioSettingsFragment.java"
 
@@ -7,16 +7,16 @@
 
 
 # instance fields
-.field final synthetic ajr:Lcom/android/settings/sound/i;
+.field final synthetic ajr:Lcom/android/settings_ext/sound/i;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/sound/i;)V
+.method constructor <init>(Lcom/android/settings_ext/sound/i;)V
     .locals 0
 
     .prologue
     .line 390
-    iput-object p1, p0, Lcom/android/settings/sound/j;->ajr:Lcom/android/settings/sound/i;
+    iput-object p1, p0, Lcom/android/settings_ext/sound/j;->ajr:Lcom/android/settings_ext/sound/i;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -32,22 +32,22 @@
     const/4 v3, 0x0
 
     .line 394
-    iget-object v0, p0, Lcom/android/settings/sound/j;->ajr:Lcom/android/settings/sound/i;
+    iget-object v0, p0, Lcom/android/settings_ext/sound/j;->ajr:Lcom/android/settings_ext/sound/i;
 
-    iget-object v0, v0, Lcom/android/settings/sound/i;->ajq:Lcom/android/settings/sound/e;
+    iget-object v0, v0, Lcom/android/settings_ext/sound/i;->ajq:Lcom/android/settings_ext/sound/e;
 
-    invoke-static {v0}, Lcom/android/settings/sound/e;->j(Lcom/android/settings/sound/e;)Landroid/os/AsyncTask;
+    invoke-static {v0}, Lcom/android/settings_ext/sound/e;->j(Lcom/android/settings_ext/sound/e;)Landroid/os/AsyncTask;
 
     move-result-object v0
 
     if-eqz v0, :cond_0
 
     .line 395
-    iget-object v0, p0, Lcom/android/settings/sound/j;->ajr:Lcom/android/settings/sound/i;
+    iget-object v0, p0, Lcom/android/settings_ext/sound/j;->ajr:Lcom/android/settings_ext/sound/i;
 
-    iget-object v0, v0, Lcom/android/settings/sound/i;->ajq:Lcom/android/settings/sound/e;
+    iget-object v0, v0, Lcom/android/settings_ext/sound/i;->ajq:Lcom/android/settings_ext/sound/e;
 
-    invoke-static {v0}, Lcom/android/settings/sound/e;->j(Lcom/android/settings/sound/e;)Landroid/os/AsyncTask;
+    invoke-static {v0}, Lcom/android/settings_ext/sound/e;->j(Lcom/android/settings_ext/sound/e;)Landroid/os/AsyncTask;
 
     move-result-object v0
 
@@ -55,25 +55,25 @@
 
     .line 397
     :cond_0
-    iget-object v0, p0, Lcom/android/settings/sound/j;->ajr:Lcom/android/settings/sound/i;
+    iget-object v0, p0, Lcom/android/settings_ext/sound/j;->ajr:Lcom/android/settings_ext/sound/i;
 
-    iget-object v0, v0, Lcom/android/settings/sound/i;->ajq:Lcom/android/settings/sound/e;
+    iget-object v0, v0, Lcom/android/settings_ext/sound/i;->ajq:Lcom/android/settings_ext/sound/e;
 
-    new-instance v1, Lcom/android/settings/sound/k;
+    new-instance v1, Lcom/android/settings_ext/sound/k;
 
-    iget-object v2, p0, Lcom/android/settings/sound/j;->ajr:Lcom/android/settings/sound/i;
+    iget-object v2, p0, Lcom/android/settings_ext/sound/j;->ajr:Lcom/android/settings_ext/sound/i;
 
-    iget-object v2, v2, Lcom/android/settings/sound/i;->ajq:Lcom/android/settings/sound/e;
+    iget-object v2, v2, Lcom/android/settings_ext/sound/i;->ajq:Lcom/android/settings_ext/sound/e;
 
-    invoke-virtual {v2}, Lcom/android/settings/sound/e;->getFragmentManager()Landroid/app/FragmentManager;
+    invoke-virtual {v2}, Lcom/android/settings_ext/sound/e;->getFragmentManager()Landroid/app/FragmentManager;
 
     move-result-object v2
 
-    invoke-direct {v1, p0, v2}, Lcom/android/settings/sound/k;-><init>(Lcom/android/settings/sound/j;Landroid/app/FragmentManager;)V
+    invoke-direct {v1, p0, v2}, Lcom/android/settings_ext/sound/k;-><init>(Lcom/android/settings_ext/sound/j;Landroid/app/FragmentManager;)V
 
     const v2, 0x7f090041
 
-    invoke-virtual {v1, v2}, Lcom/android/settings/sound/k;->setMessage(I)Lmiui/os/AsyncTaskWithProgress;
+    invoke-virtual {v1, v2}, Lcom/android/settings_ext/sound/k;->setMessage(I)Lmiui/os/AsyncTaskWithProgress;
 
     move-result-object v1
 
@@ -87,7 +87,7 @@
 
     move-result-object v1
 
-    invoke-static {v0, v1}, Lcom/android/settings/sound/e;->a(Lcom/android/settings/sound/e;Landroid/os/AsyncTask;)Landroid/os/AsyncTask;
+    invoke-static {v0, v1}, Lcom/android/settings_ext/sound/e;->a(Lcom/android/settings_ext/sound/e;Landroid/os/AsyncTask;)Landroid/os/AsyncTask;
 
     .line 414
     return-void

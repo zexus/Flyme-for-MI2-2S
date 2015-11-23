@@ -1,4 +1,4 @@
-.class public Lcom/android/settings/bo;
+.class public Lcom/android/settings_ext/bo;
 .super Landroid/widget/ArrayAdapter;
 .source "DataUsageSummary.java"
 
@@ -8,7 +8,7 @@
 
 .field private gR:Z
 
-.field private final gS:Lcom/android/settings/bp;
+.field private final gS:Lcom/android/settings_ext/bp;
 
 
 # direct methods
@@ -24,22 +24,22 @@
     invoke-direct {p0, p1, v0}, Landroid/widget/ArrayAdapter;-><init>(Landroid/content/Context;I)V
 
     .line 1484
-    iput-boolean v1, p0, Lcom/android/settings/bo;->gQ:Z
+    iput-boolean v1, p0, Lcom/android/settings_ext/bo;->gQ:Z
 
     .line 1485
-    iput-boolean v1, p0, Lcom/android/settings/bo;->gR:Z
+    iput-boolean v1, p0, Lcom/android/settings_ext/bo;->gR:Z
 
     .line 1491
     const v0, 0x7f040042
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/bo;->setDropDownViewResource(I)V
+    invoke-virtual {p0, v0}, Lcom/android/settings_ext/bo;->setDropDownViewResource(I)V
 
     .line 1492
-    new-instance v0, Lcom/android/settings/bp;
+    new-instance v0, Lcom/android/settings_ext/bp;
 
-    invoke-direct {v0, p1}, Lcom/android/settings/bp;-><init>(Landroid/content/Context;)V
+    invoke-direct {v0, p1}, Lcom/android/settings_ext/bp;-><init>(Landroid/content/Context;)V
 
-    iput-object v0, p0, Lcom/android/settings/bo;->gS:Lcom/android/settings/bp;
+    iput-object v0, p0, Lcom/android/settings_ext/bo;->gS:Lcom/android/settings_ext/bp;
 
     .line 1493
     return-void
@@ -50,23 +50,23 @@
 
     .prologue
     .line 1506
-    iget-object v0, p0, Lcom/android/settings/bo;->gS:Lcom/android/settings/bp;
+    iget-object v0, p0, Lcom/android/settings_ext/bo;->gS:Lcom/android/settings_ext/bp;
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/bo;->remove(Ljava/lang/Object;)V
+    invoke-virtual {p0, v0}, Lcom/android/settings_ext/bo;->remove(Ljava/lang/Object;)V
 
     .line 1507
-    iget-boolean v0, p0, Lcom/android/settings/bo;->gQ:Z
+    iget-boolean v0, p0, Lcom/android/settings_ext/bo;->gQ:Z
 
     if-eqz v0, :cond_0
 
-    iget-boolean v0, p0, Lcom/android/settings/bo;->gR:Z
+    iget-boolean v0, p0, Lcom/android/settings_ext/bo;->gR:Z
 
     if-eqz v0, :cond_0
 
     .line 1508
-    iget-object v0, p0, Lcom/android/settings/bo;->gS:Lcom/android/settings/bp;
+    iget-object v0, p0, Lcom/android/settings_ext/bo;->gS:Lcom/android/settings_ext/bp;
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/bo;->add(Ljava/lang/Object;)V
+    invoke-virtual {p0, v0}, Lcom/android/settings_ext/bo;->add(Ljava/lang/Object;)V
 
     .line 1510
     :cond_0
@@ -75,7 +75,7 @@
 
 
 # virtual methods
-.method public a(Lcom/android/settings/br;)I
+.method public a(Lcom/android/settings_ext/br;)I
     .locals 3
 
     .prologue
@@ -83,7 +83,7 @@
     if-eqz p1, :cond_2
 
     .line 1518
-    invoke-virtual {p0}, Lcom/android/settings/bo;->getCount()I
+    invoke-virtual {p0}, Lcom/android/settings_ext/bo;->getCount()I
 
     move-result v0
 
@@ -94,14 +94,14 @@
     if-ltz v1, :cond_2
 
     .line 1520
-    invoke-virtual {p0, v1}, Lcom/android/settings/bo;->getItem(I)Ljava/lang/Object;
+    invoke-virtual {p0, v1}, Lcom/android/settings_ext/bo;->getItem(I)Ljava/lang/Object;
 
     move-result-object v0
 
-    check-cast v0, Lcom/android/settings/br;
+    check-cast v0, Lcom/android/settings_ext/br;
 
     .line 1521
-    instance-of v2, v0, Lcom/android/settings/bp;
+    instance-of v2, v0, Lcom/android/settings_ext/bp;
 
     if-eqz v2, :cond_1
 
@@ -113,7 +113,7 @@
 
     .line 1523
     :cond_1
-    invoke-virtual {v0, p1}, Lcom/android/settings/br;->b(Lcom/android/settings/br;)I
+    invoke-virtual {v0, p1}, Lcom/android/settings_ext/br;->b(Lcom/android/settings_ext/br;)I
 
     move-result v0
 
@@ -136,10 +136,10 @@
 
     .prologue
     .line 1496
-    iput-boolean p1, p0, Lcom/android/settings/bo;->gQ:Z
+    iput-boolean p1, p0, Lcom/android/settings_ext/bo;->gQ:Z
 
     .line 1497
-    invoke-direct {p0}, Lcom/android/settings/bo;->bp()V
+    invoke-direct {p0}, Lcom/android/settings_ext/bo;->bp()V
 
     .line 1498
     return-void
@@ -150,10 +150,10 @@
 
     .prologue
     .line 1501
-    iput-boolean p1, p0, Lcom/android/settings/bo;->gR:Z
+    iput-boolean p1, p0, Lcom/android/settings_ext/bo;->gR:Z
 
     .line 1502
-    invoke-direct {p0}, Lcom/android/settings/bo;->bp()V
+    invoke-direct {p0}, Lcom/android/settings_ext/bo;->bp()V
 
     .line 1503
     return-void

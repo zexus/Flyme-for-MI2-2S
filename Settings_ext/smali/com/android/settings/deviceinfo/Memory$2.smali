@@ -1,19 +1,19 @@
-.class Lcom/android/settings/deviceinfo/Memory$2;
+.class Lcom/android/settings_ext/deviceinfo/Memory$2;
 .super Landroid/content/BroadcastReceiver;
 .source "Memory.java"
 
 
 # instance fields
-.field final synthetic RL:Lcom/android/settings/deviceinfo/Memory;
+.field final synthetic RL:Lcom/android/settings_ext/deviceinfo/Memory;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/deviceinfo/Memory;)V
+.method constructor <init>(Lcom/android/settings_ext/deviceinfo/Memory;)V
     .locals 0
 
     .prologue
     .line 276
-    iput-object p1, p0, Lcom/android/settings/deviceinfo/Memory$2;->RL:Lcom/android/settings/deviceinfo/Memory;
+    iput-object p1, p0, Lcom/android/settings_ext/deviceinfo/Memory$2;->RL:Lcom/android/settings_ext/deviceinfo/Memory;
 
     invoke-direct {p0}, Landroid/content/BroadcastReceiver;-><init>()V
 
@@ -50,9 +50,9 @@
     move-result v1
 
     .line 282
-    iget-object v0, p0, Lcom/android/settings/deviceinfo/Memory$2;->RL:Lcom/android/settings/deviceinfo/Memory;
+    iget-object v0, p0, Lcom/android/settings_ext/deviceinfo/Memory$2;->RL:Lcom/android/settings_ext/deviceinfo/Memory;
 
-    invoke-static {v0}, Lcom/android/settings/deviceinfo/Memory;->b(Lcom/android/settings/deviceinfo/Memory;)Landroid/hardware/usb/UsbManager;
+    invoke-static {v0}, Lcom/android/settings_ext/deviceinfo/Memory;->b(Lcom/android/settings_ext/deviceinfo/Memory;)Landroid/hardware/usb/UsbManager;
 
     move-result-object v0
 
@@ -61,9 +61,9 @@
     move-result-object v2
 
     .line 283
-    iget-object v0, p0, Lcom/android/settings/deviceinfo/Memory$2;->RL:Lcom/android/settings/deviceinfo/Memory;
+    iget-object v0, p0, Lcom/android/settings_ext/deviceinfo/Memory$2;->RL:Lcom/android/settings_ext/deviceinfo/Memory;
 
-    invoke-static {v0}, Lcom/android/settings/deviceinfo/Memory;->a(Lcom/android/settings/deviceinfo/Memory;)Ljava/util/ArrayList;
+    invoke-static {v0}, Lcom/android/settings_ext/deviceinfo/Memory;->a(Lcom/android/settings_ext/deviceinfo/Memory;)Ljava/util/ArrayList;
 
     move-result-object v0
 
@@ -82,10 +82,10 @@
 
     move-result-object v0
 
-    check-cast v0, Lcom/android/settings/deviceinfo/StorageVolumePreferenceCategory;
+    check-cast v0, Lcom/android/settings_ext/deviceinfo/StorageVolumePreferenceCategory;
 
     .line 284
-    invoke-virtual {v0, v1, v2}, Lcom/android/settings/deviceinfo/StorageVolumePreferenceCategory;->a(ZLjava/lang/String;)V
+    invoke-virtual {v0, v1, v2}, Lcom/android/settings_ext/deviceinfo/StorageVolumePreferenceCategory;->a(ZLjava/lang/String;)V
 
     goto :goto_0
 
@@ -100,9 +100,9 @@
     if-eqz v0, :cond_1
 
     .line 287
-    iget-object v0, p0, Lcom/android/settings/deviceinfo/Memory$2;->RL:Lcom/android/settings/deviceinfo/Memory;
+    iget-object v0, p0, Lcom/android/settings_ext/deviceinfo/Memory$2;->RL:Lcom/android/settings_ext/deviceinfo/Memory;
 
-    invoke-static {v0}, Lcom/android/settings/deviceinfo/Memory;->a(Lcom/android/settings/deviceinfo/Memory;)Ljava/util/ArrayList;
+    invoke-static {v0}, Lcom/android/settings_ext/deviceinfo/Memory;->a(Lcom/android/settings_ext/deviceinfo/Memory;)Ljava/util/ArrayList;
 
     move-result-object v0
 
@@ -121,10 +121,10 @@
 
     move-result-object v0
 
-    check-cast v0, Lcom/android/settings/deviceinfo/StorageVolumePreferenceCategory;
+    check-cast v0, Lcom/android/settings_ext/deviceinfo/StorageVolumePreferenceCategory;
 
     .line 288
-    invoke-virtual {v0}, Lcom/android/settings/deviceinfo/StorageVolumePreferenceCategory;->os()V
+    invoke-virtual {v0}, Lcom/android/settings_ext/deviceinfo/StorageVolumePreferenceCategory;->os()V
 
     goto :goto_1
 

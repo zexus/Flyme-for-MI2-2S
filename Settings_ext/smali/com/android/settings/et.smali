@@ -1,4 +1,4 @@
-.class Lcom/android/settings/et;
+.class Lcom/android/settings_ext/et;
 .super Landroid/os/AsyncTask;
 .source "MiuiSecurityTrustedCredentials.java"
 
@@ -6,11 +6,11 @@
 # instance fields
 .field private mActivity:Landroid/app/Activity;
 
-.field private final rn:Lcom/android/settings/eu;
+.field private final rn:Lcom/android/settings_ext/eu;
 
 
 # direct methods
-.method private constructor <init>(Lcom/android/settings/eu;Landroid/app/Activity;)V
+.method private constructor <init>(Lcom/android/settings_ext/eu;Landroid/app/Activity;)V
     .locals 0
 
     .prologue
@@ -18,21 +18,21 @@
     invoke-direct {p0}, Landroid/os/AsyncTask;-><init>()V
 
     .line 355
-    iput-object p1, p0, Lcom/android/settings/et;->rn:Lcom/android/settings/eu;
+    iput-object p1, p0, Lcom/android/settings_ext/et;->rn:Lcom/android/settings_ext/eu;
 
     .line 356
-    iput-object p2, p0, Lcom/android/settings/et;->mActivity:Landroid/app/Activity;
+    iput-object p2, p0, Lcom/android/settings_ext/et;->mActivity:Landroid/app/Activity;
 
     .line 357
     return-void
 .end method
 
-.method synthetic constructor <init>(Lcom/android/settings/eu;Landroid/app/Activity;Lcom/android/settings/es;)V
+.method synthetic constructor <init>(Lcom/android/settings_ext/eu;Landroid/app/Activity;Lcom/android/settings_ext/es;)V
     .locals 0
 
     .prologue
     .line 351
-    invoke-direct {p0, p1, p2}, Lcom/android/settings/et;-><init>(Lcom/android/settings/eu;Landroid/app/Activity;)V
+    invoke-direct {p0, p1, p2}, Lcom/android/settings_ext/et;-><init>(Lcom/android/settings_ext/eu;Landroid/app/Activity;)V
 
     return-void
 .end method
@@ -47,7 +47,7 @@
 
     .line 360
     :try_start_0
-    iget-object v0, p0, Lcom/android/settings/et;->mActivity:Landroid/app/Activity;
+    iget-object v0, p0, Lcom/android/settings_ext/et;->mActivity:Landroid/app/Activity;
 
     invoke-static {v0}, Landroid/security/KeyChain;->bind(Landroid/content/Context;)Landroid/security/KeyChain$KeyChainConnection;
 
@@ -65,18 +65,18 @@
 
     .line 363
     :try_start_1
-    iget-object v2, p0, Lcom/android/settings/et;->rn:Lcom/android/settings/eu;
+    iget-object v2, p0, Lcom/android/settings_ext/et;->rn:Lcom/android/settings_ext/eu;
 
-    invoke-static {v2}, Lcom/android/settings/eu;->b(Lcom/android/settings/eu;)Z
+    invoke-static {v2}, Lcom/android/settings_ext/eu;->b(Lcom/android/settings_ext/eu;)Z
 
     move-result v2
 
     if-eqz v2, :cond_0
 
     .line 364
-    iget-object v2, p0, Lcom/android/settings/et;->rn:Lcom/android/settings/eu;
+    iget-object v2, p0, Lcom/android/settings_ext/et;->rn:Lcom/android/settings_ext/eu;
 
-    invoke-static {v2}, Lcom/android/settings/eu;->g(Lcom/android/settings/eu;)Ljava/security/cert/X509Certificate;
+    invoke-static {v2}, Lcom/android/settings_ext/eu;->g(Lcom/android/settings_ext/eu;)Ljava/security/cert/X509Certificate;
 
     move-result-object v2
 
@@ -112,9 +112,9 @@
     .line 368
     :cond_0
     :try_start_3
-    iget-object v2, p0, Lcom/android/settings/et;->rn:Lcom/android/settings/eu;
+    iget-object v2, p0, Lcom/android/settings_ext/et;->rn:Lcom/android/settings_ext/eu;
 
-    invoke-static {v2}, Lcom/android/settings/eu;->h(Lcom/android/settings/eu;)Ljava/lang/String;
+    invoke-static {v2}, Lcom/android/settings_ext/eu;->h(Lcom/android/settings_ext/eu;)Ljava/lang/String;
 
     move-result-object v2
 
@@ -210,9 +210,9 @@
 
     .prologue
     .line 386
-    iget-object v0, p0, Lcom/android/settings/et;->rn:Lcom/android/settings/eu;
+    iget-object v0, p0, Lcom/android/settings_ext/et;->rn:Lcom/android/settings_ext/eu;
 
-    invoke-static {v0}, Lcom/android/settings/eu;->c(Lcom/android/settings/eu;)Lcom/android/settings/MiuiSecurityTrustedCredentials$Tab;
+    invoke-static {v0}, Lcom/android/settings_ext/eu;->c(Lcom/android/settings_ext/eu;)Lcom/android/settings_ext/MiuiSecurityTrustedCredentials$Tab;
 
     move-result-object v0
 
@@ -220,9 +220,9 @@
 
     move-result v1
 
-    iget-object v2, p0, Lcom/android/settings/et;->rn:Lcom/android/settings/eu;
+    iget-object v2, p0, Lcom/android/settings_ext/et;->rn:Lcom/android/settings_ext/eu;
 
-    invoke-static {v0, v1, v2}, Lcom/android/settings/MiuiSecurityTrustedCredentials$Tab;->a(Lcom/android/settings/MiuiSecurityTrustedCredentials$Tab;ZLcom/android/settings/eu;)V
+    invoke-static {v0, v1, v2}, Lcom/android/settings_ext/MiuiSecurityTrustedCredentials$Tab;->a(Lcom/android/settings_ext/MiuiSecurityTrustedCredentials$Tab;ZLcom/android/settings_ext/eu;)V
 
     .line 387
     return-void
@@ -235,7 +235,7 @@
     .line 351
     check-cast p1, [Ljava/lang/Void;
 
-    invoke-virtual {p0, p1}, Lcom/android/settings/et;->a([Ljava/lang/Void;)Ljava/lang/Boolean;
+    invoke-virtual {p0, p1}, Lcom/android/settings_ext/et;->a([Ljava/lang/Void;)Ljava/lang/Boolean;
 
     move-result-object v0
 
@@ -249,7 +249,7 @@
     .line 351
     check-cast p1, Ljava/lang/Boolean;
 
-    invoke-virtual {p0, p1}, Lcom/android/settings/et;->a(Ljava/lang/Boolean;)V
+    invoke-virtual {p0, p1}, Lcom/android/settings_ext/et;->a(Ljava/lang/Boolean;)V
 
     return-void
 .end method

@@ -1,4 +1,4 @@
-.class Lcom/android/settings/wifi/af;
+.class Lcom/android/settings_ext/wifi/af;
 .super Ljava/lang/Object;
 .source "WifiScanModeActivity.java"
 
@@ -7,16 +7,16 @@
 
 
 # instance fields
-.field final synthetic avH:Lcom/android/settings/wifi/WifiScanModeActivity$AlertDialogFragment;
+.field final synthetic avH:Lcom/android/settings_ext/wifi/WifiScanModeActivity$AlertDialogFragment;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/wifi/WifiScanModeActivity$AlertDialogFragment;)V
+.method constructor <init>(Lcom/android/settings_ext/wifi/WifiScanModeActivity$AlertDialogFragment;)V
     .locals 0
 
     .prologue
     .line 137
-    iput-object p1, p0, Lcom/android/settings/wifi/af;->avH:Lcom/android/settings/wifi/WifiScanModeActivity$AlertDialogFragment;
+    iput-object p1, p0, Lcom/android/settings_ext/wifi/af;->avH:Lcom/android/settings_ext/wifi/WifiScanModeActivity$AlertDialogFragment;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -30,15 +30,15 @@
 
     .prologue
     .line 139
-    iget-object v0, p0, Lcom/android/settings/wifi/af;->avH:Lcom/android/settings/wifi/WifiScanModeActivity$AlertDialogFragment;
+    iget-object v0, p0, Lcom/android/settings_ext/wifi/af;->avH:Lcom/android/settings_ext/wifi/WifiScanModeActivity$AlertDialogFragment;
 
-    invoke-virtual {v0}, Lcom/android/settings/wifi/WifiScanModeActivity$AlertDialogFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {v0}, Lcom/android/settings_ext/wifi/WifiScanModeActivity$AlertDialogFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
-    check-cast v0, Lcom/android/settings/wifi/WifiScanModeActivity;
+    check-cast v0, Lcom/android/settings_ext/wifi/WifiScanModeActivity;
 
-    invoke-static {v0}, Lcom/android/settings/wifi/WifiScanModeActivity;->a(Lcom/android/settings/wifi/WifiScanModeActivity;)V
+    invoke-static {v0}, Lcom/android/settings_ext/wifi/WifiScanModeActivity;->a(Lcom/android/settings_ext/wifi/WifiScanModeActivity;)V
 
     .line 140
     return-void

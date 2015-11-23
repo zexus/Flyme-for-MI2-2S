@@ -1,4 +1,4 @@
-.class public final Lcom/android/settings/bluetooth/DevicePickerActivity;
+.class public final Lcom/android/settings_ext/bluetooth/DevicePickerActivity;
 .super Landroid/app/Activity;
 .source "DevicePickerActivity.java"
 
@@ -26,7 +26,7 @@
     .line 33
     const v0, 0x7f04001a
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/bluetooth/DevicePickerActivity;->setContentView(I)V
+    invoke-virtual {p0, v0}, Lcom/android/settings_ext/bluetooth/DevicePickerActivity;->setContentView(I)V
 
     .line 34
     return-void

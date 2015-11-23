@@ -1,4 +1,4 @@
-.class Lcom/android/settings/deviceinfo/StorageMeasurement$FileInfo;
+.class Lcom/android/settings_ext/deviceinfo/StorageMeasurement$FileInfo;
 .super Ljava/lang/Object;
 .source "StorageMeasurement.java"
 
@@ -15,16 +15,16 @@
 
 
 # virtual methods
-.method public a(Lcom/android/settings/deviceinfo/StorageMeasurement$FileInfo;)I
+.method public a(Lcom/android/settings_ext/deviceinfo/StorageMeasurement$FileInfo;)I
     .locals 4
 
     .prologue
     .line 625
     if-eq p0, p1, :cond_0
 
-    iget-wide v0, p0, Lcom/android/settings/deviceinfo/StorageMeasurement$FileInfo;->KY:J
+    iget-wide v0, p0, Lcom/android/settings_ext/deviceinfo/StorageMeasurement$FileInfo;->KY:J
 
-    iget-wide v2, p1, Lcom/android/settings/deviceinfo/StorageMeasurement$FileInfo;->KY:J
+    iget-wide v2, p1, Lcom/android/settings_ext/deviceinfo/StorageMeasurement$FileInfo;->KY:J
 
     cmp-long v0, v0, v2
 
@@ -38,9 +38,9 @@
     return v0
 
     :cond_1
-    iget-wide v0, p0, Lcom/android/settings/deviceinfo/StorageMeasurement$FileInfo;->KY:J
+    iget-wide v0, p0, Lcom/android/settings_ext/deviceinfo/StorageMeasurement$FileInfo;->KY:J
 
-    iget-wide v2, p1, Lcom/android/settings/deviceinfo/StorageMeasurement$FileInfo;->KY:J
+    iget-wide v2, p1, Lcom/android/settings_ext/deviceinfo/StorageMeasurement$FileInfo;->KY:J
 
     cmp-long v0, v0, v2
 
@@ -61,9 +61,9 @@
 
     .prologue
     .line 612
-    check-cast p1, Lcom/android/settings/deviceinfo/StorageMeasurement$FileInfo;
+    check-cast p1, Lcom/android/settings_ext/deviceinfo/StorageMeasurement$FileInfo;
 
-    invoke-virtual {p0, p1}, Lcom/android/settings/deviceinfo/StorageMeasurement$FileInfo;->a(Lcom/android/settings/deviceinfo/StorageMeasurement$FileInfo;)I
+    invoke-virtual {p0, p1}, Lcom/android/settings_ext/deviceinfo/StorageMeasurement$FileInfo;->a(Lcom/android/settings_ext/deviceinfo/StorageMeasurement$FileInfo;)I
 
     move-result v0
 
@@ -79,7 +79,7 @@
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
 
-    iget-object v1, p0, Lcom/android/settings/deviceinfo/StorageMeasurement$FileInfo;->xn:Ljava/lang/String;
+    iget-object v1, p0, Lcom/android/settings_ext/deviceinfo/StorageMeasurement$FileInfo;->xn:Ljava/lang/String;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -91,7 +91,7 @@
 
     move-result-object v0
 
-    iget-wide v2, p0, Lcom/android/settings/deviceinfo/StorageMeasurement$FileInfo;->KY:J
+    iget-wide v2, p0, Lcom/android/settings_ext/deviceinfo/StorageMeasurement$FileInfo;->KY:J
 
     invoke-virtual {v0, v2, v3}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
 
@@ -103,7 +103,7 @@
 
     move-result-object v0
 
-    iget-wide v2, p0, Lcom/android/settings/deviceinfo/StorageMeasurement$FileInfo;->Tw:J
+    iget-wide v2, p0, Lcom/android/settings_ext/deviceinfo/StorageMeasurement$FileInfo;->Tw:J
 
     invoke-virtual {v0, v2, v3}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
 

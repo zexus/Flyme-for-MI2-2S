@@ -1,4 +1,4 @@
-.class public Lcom/android/settings/analytics/AnalyticService;
+.class public Lcom/android/settings_ext/analytics/AnalyticService;
 .super Landroid/app/IntentService;
 .source "AnalyticService.java"
 
@@ -190,7 +190,7 @@
     if-eqz v0, :cond_1
 
     .line 90
-    invoke-direct {p0, p1}, Lcom/android/settings/analytics/AnalyticService;->p(Landroid/content/Intent;)V
+    invoke-direct {p0, p1}, Lcom/android/settings_ext/analytics/AnalyticService;->p(Landroid/content/Intent;)V
 
     .line 92
     :cond_1

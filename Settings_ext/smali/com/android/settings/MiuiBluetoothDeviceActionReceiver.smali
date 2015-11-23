@@ -1,4 +1,4 @@
-.class public Lcom/android/settings/MiuiBluetoothDeviceActionReceiver;
+.class public Lcom/android/settings_ext/MiuiBluetoothDeviceActionReceiver;
 .super Landroid/content/BroadcastReceiver;
 .source "MiuiBluetoothDeviceActionReceiver.java"
 

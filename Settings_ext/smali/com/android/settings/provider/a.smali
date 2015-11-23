@@ -1,4 +1,4 @@
-.class public Lcom/android/settings/provider/a;
+.class public Lcom/android/settings_ext/provider/a;
 .super Landroid/database/sqlite/SQLiteOpenHelper;
 .source "MiuiSettingsDatabaseHelper.java"
 
@@ -31,7 +31,7 @@
     invoke-virtual {p1, v0}, Landroid/database/sqlite/SQLiteDatabase;->execSQL(Ljava/lang/String;)V
 
     .line 33
-    invoke-static {}, Lcom/android/settings/cz;->dI()Ljava/util/ArrayList;
+    invoke-static {}, Lcom/android/settings_ext/cz;->dI()Ljava/util/ArrayList;
 
     move-result-object v0
 
@@ -71,7 +71,7 @@
 
     const/4 v4, 0x2
 
-    invoke-static {v0}, Lcom/android/settings/cz;->x(Ljava/lang/String;)I
+    invoke-static {v0}, Lcom/android/settings_ext/cz;->x(Ljava/lang/String;)I
 
     move-result v0
 
@@ -107,7 +107,7 @@
 
     .prologue
     .line 52
-    invoke-direct {p0, p1}, Lcom/android/settings/provider/a;->i(Landroid/database/sqlite/SQLiteDatabase;)V
+    invoke-direct {p0, p1}, Lcom/android/settings_ext/provider/a;->i(Landroid/database/sqlite/SQLiteDatabase;)V
 
     .line 53
     return-void

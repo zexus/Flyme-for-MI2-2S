@@ -1,4 +1,4 @@
-.class public abstract Lcom/android/settings/Z;
+.class public abstract Lcom/android/settings_ext/Z;
 .super Ljava/lang/Object;
 .source "BaseSettingsController.java"
 
@@ -18,10 +18,10 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 11
-    iput-object p1, p0, Lcom/android/settings/Z;->mContext:Landroid/content/Context;
+    iput-object p1, p0, Lcom/android/settings_ext/Z;->mContext:Landroid/content/Context;
 
     .line 12
-    iput-object p2, p0, Lcom/android/settings/Z;->ca:Landroid/widget/TextView;
+    iput-object p2, p0, Lcom/android/settings_ext/Z;->ca:Landroid/widget/TextView;
 
     .line 13
     return-void
@@ -36,7 +36,7 @@
     .line 16
     if-eqz p1, :cond_0
 
-    iget-object v0, p0, Lcom/android/settings/Z;->ca:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/android/settings_ext/Z;->ca:Landroid/widget/TextView;
 
     if-eq v0, p1, :cond_0
 
@@ -45,7 +45,7 @@
 
     move-result-object v0
 
-    check-cast v0, Lcom/android/settings/Z;
+    check-cast v0, Lcom/android/settings_ext/Z;
 
     .line 18
     if-eqz v0, :cond_0
@@ -53,14 +53,14 @@
     .line 19
     const/4 v1, 0x0
 
-    invoke-virtual {v0, v1}, Lcom/android/settings/Z;->a(Landroid/widget/TextView;)V
+    invoke-virtual {v0, v1}, Lcom/android/settings_ext/Z;->a(Landroid/widget/TextView;)V
 
     .line 22
     :cond_0
-    iput-object p1, p0, Lcom/android/settings/Z;->ca:Landroid/widget/TextView;
+    iput-object p1, p0, Lcom/android/settings_ext/Z;->ca:Landroid/widget/TextView;
 
     .line 23
-    invoke-virtual {p0}, Lcom/android/settings/Z;->ad()V
+    invoke-virtual {p0}, Lcom/android/settings_ext/Z;->ad()V
 
     .line 24
     return-void

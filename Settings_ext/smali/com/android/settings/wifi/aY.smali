@@ -1,4 +1,4 @@
-.class synthetic Lcom/android/settings/wifi/aY;
+.class synthetic Lcom/android/settings_ext/wifi/aY;
 .super Ljava/lang/Object;
 .source "WpsDialog.java"
 
@@ -13,7 +13,7 @@
 
     .prologue
     .line 238
-    invoke-static {}, Lcom/android/settings/wifi/WpsDialog$DialogState;->values()[Lcom/android/settings/wifi/WpsDialog$DialogState;
+    invoke-static {}, Lcom/android/settings_ext/wifi/WpsDialog$DialogState;->values()[Lcom/android/settings_ext/wifi/WpsDialog$DialogState;
 
     move-result-object v0
 
@@ -21,14 +21,14 @@
 
     new-array v0, v0, [I
 
-    sput-object v0, Lcom/android/settings/wifi/aY;->axx:[I
+    sput-object v0, Lcom/android/settings_ext/wifi/aY;->axx:[I
 
     :try_start_0
-    sget-object v0, Lcom/android/settings/wifi/aY;->axx:[I
+    sget-object v0, Lcom/android/settings_ext/wifi/aY;->axx:[I
 
-    sget-object v1, Lcom/android/settings/wifi/WpsDialog$DialogState;->axA:Lcom/android/settings/wifi/WpsDialog$DialogState;
+    sget-object v1, Lcom/android/settings_ext/wifi/WpsDialog$DialogState;->axA:Lcom/android/settings_ext/wifi/WpsDialog$DialogState;
 
-    invoke-virtual {v1}, Lcom/android/settings/wifi/WpsDialog$DialogState;->ordinal()I
+    invoke-virtual {v1}, Lcom/android/settings_ext/wifi/WpsDialog$DialogState;->ordinal()I
 
     move-result v1
 
@@ -40,11 +40,11 @@
 
     :goto_0
     :try_start_1
-    sget-object v0, Lcom/android/settings/wifi/aY;->axx:[I
+    sget-object v0, Lcom/android/settings_ext/wifi/aY;->axx:[I
 
-    sget-object v1, Lcom/android/settings/wifi/WpsDialog$DialogState;->axB:Lcom/android/settings/wifi/WpsDialog$DialogState;
+    sget-object v1, Lcom/android/settings_ext/wifi/WpsDialog$DialogState;->axB:Lcom/android/settings_ext/wifi/WpsDialog$DialogState;
 
-    invoke-virtual {v1}, Lcom/android/settings/wifi/WpsDialog$DialogState;->ordinal()I
+    invoke-virtual {v1}, Lcom/android/settings_ext/wifi/WpsDialog$DialogState;->ordinal()I
 
     move-result v1
 
@@ -56,11 +56,11 @@
 
     :goto_1
     :try_start_2
-    sget-object v0, Lcom/android/settings/wifi/aY;->axx:[I
+    sget-object v0, Lcom/android/settings_ext/wifi/aY;->axx:[I
 
-    sget-object v1, Lcom/android/settings/wifi/WpsDialog$DialogState;->axC:Lcom/android/settings/wifi/WpsDialog$DialogState;
+    sget-object v1, Lcom/android/settings_ext/wifi/WpsDialog$DialogState;->axC:Lcom/android/settings_ext/wifi/WpsDialog$DialogState;
 
-    invoke-virtual {v1}, Lcom/android/settings/wifi/WpsDialog$DialogState;->ordinal()I
+    invoke-virtual {v1}, Lcom/android/settings_ext/wifi/WpsDialog$DialogState;->ordinal()I
 
     move-result v1
 

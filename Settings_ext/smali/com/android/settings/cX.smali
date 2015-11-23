@@ -1,4 +1,4 @@
-.class Lcom/android/settings/cX;
+.class Lcom/android/settings_ext/cX;
 .super Ljava/lang/Object;
 .source "MediaFormat.java"
 
@@ -7,16 +7,16 @@
 
 
 # instance fields
-.field final synthetic ok:Lcom/android/settings/MediaFormat;
+.field final synthetic ok:Lcom/android/settings_ext/MediaFormat;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/MediaFormat;)V
+.method constructor <init>(Lcom/android/settings_ext/MediaFormat;)V
     .locals 0
 
     .prologue
     .line 101
-    iput-object p1, p0, Lcom/android/settings/cX;->ok:Lcom/android/settings/MediaFormat;
+    iput-object p1, p0, Lcom/android/settings_ext/cX;->ok:Lcom/android/settings_ext/MediaFormat;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -30,7 +30,7 @@
 
     .prologue
     .line 104
-    invoke-static {}, Lcom/android/settings/hl;->hr()Z
+    invoke-static {}, Lcom/android/settings_ext/hl;->hr()Z
 
     move-result v0
 
@@ -54,9 +54,9 @@
     invoke-virtual {v1, v0}, Landroid/content/Intent;->setComponent(Landroid/content/ComponentName;)Landroid/content/Intent;
 
     .line 110
-    iget-object v0, p0, Lcom/android/settings/cX;->ok:Lcom/android/settings/MediaFormat;
+    iget-object v0, p0, Lcom/android/settings_ext/cX;->ok:Lcom/android/settings_ext/MediaFormat;
 
-    invoke-virtual {v0}, Lcom/android/settings/MediaFormat;->getIntent()Landroid/content/Intent;
+    invoke-virtual {v0}, Lcom/android/settings_ext/MediaFormat;->getIntent()Landroid/content/Intent;
 
     move-result-object v0
 
@@ -74,9 +74,9 @@
     invoke-virtual {v1, v2, v0}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Landroid/os/Parcelable;)Landroid/content/Intent;
 
     .line 114
-    iget-object v0, p0, Lcom/android/settings/cX;->ok:Lcom/android/settings/MediaFormat;
+    iget-object v0, p0, Lcom/android/settings_ext/cX;->ok:Lcom/android/settings_ext/MediaFormat;
 
-    invoke-static {v0}, Lcom/android/settings/MediaFormat;->a(Lcom/android/settings/MediaFormat;)Z
+    invoke-static {v0}, Lcom/android/settings_ext/MediaFormat;->a(Lcom/android/settings_ext/MediaFormat;)Z
 
     move-result v0
 
@@ -91,14 +91,14 @@
 
     .line 118
     :cond_1
-    iget-object v0, p0, Lcom/android/settings/cX;->ok:Lcom/android/settings/MediaFormat;
+    iget-object v0, p0, Lcom/android/settings_ext/cX;->ok:Lcom/android/settings_ext/MediaFormat;
 
-    invoke-virtual {v0, v1}, Lcom/android/settings/MediaFormat;->startService(Landroid/content/Intent;)Landroid/content/ComponentName;
+    invoke-virtual {v0, v1}, Lcom/android/settings_ext/MediaFormat;->startService(Landroid/content/Intent;)Landroid/content/ComponentName;
 
     .line 119
-    iget-object v0, p0, Lcom/android/settings/cX;->ok:Lcom/android/settings/MediaFormat;
+    iget-object v0, p0, Lcom/android/settings_ext/cX;->ok:Lcom/android/settings_ext/MediaFormat;
 
-    invoke-virtual {v0}, Lcom/android/settings/MediaFormat;->finish()V
+    invoke-virtual {v0}, Lcom/android/settings_ext/MediaFormat;->finish()V
 
     goto :goto_0
 .end method

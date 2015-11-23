@@ -1,19 +1,19 @@
-.class Lcom/android/settings/wifi/as;
+.class Lcom/android/settings_ext/wifi/as;
 .super Landroid/database/DataSetObserver;
 .source "WifiSettingsForSetupWizard.java"
 
 
 # instance fields
-.field final synthetic awf:Lcom/android/settings/wifi/aq;
+.field final synthetic awf:Lcom/android/settings_ext/wifi/aq;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/wifi/aq;)V
+.method constructor <init>(Lcom/android/settings_ext/wifi/aq;)V
     .locals 0
 
     .prologue
     .line 105
-    iput-object p1, p0, Lcom/android/settings/wifi/as;->awf:Lcom/android/settings/wifi/aq;
+    iput-object p1, p0, Lcom/android/settings_ext/wifi/as;->awf:Lcom/android/settings_ext/wifi/aq;
 
     invoke-direct {p0}, Landroid/database/DataSetObserver;-><init>()V
 
@@ -30,9 +30,9 @@
     invoke-super {p0}, Landroid/database/DataSetObserver;->onChanged()V
 
     .line 109
-    iget-object v0, p0, Lcom/android/settings/wifi/as;->awf:Lcom/android/settings/wifi/aq;
+    iget-object v0, p0, Lcom/android/settings_ext/wifi/as;->awf:Lcom/android/settings_ext/wifi/aq;
 
-    invoke-virtual {v0}, Lcom/android/settings/wifi/aq;->vr()V
+    invoke-virtual {v0}, Lcom/android/settings_ext/wifi/aq;->vr()V
 
     .line 110
     return-void

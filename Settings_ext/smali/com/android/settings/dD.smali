@@ -1,4 +1,4 @@
-.class public Lcom/android/settings/dD;
+.class public Lcom/android/settings_ext/dD;
 .super Ljava/lang/Object;
 .source "MiuiDeviceInfoSettings.java"
 

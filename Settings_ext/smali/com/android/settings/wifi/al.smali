@@ -1,4 +1,4 @@
-.class Lcom/android/settings/wifi/al;
+.class Lcom/android/settings_ext/wifi/al;
 .super Ljava/lang/Object;
 .source "WifiSettings.java"
 
@@ -7,16 +7,16 @@
 
 
 # instance fields
-.field final synthetic avY:Lcom/android/settings/wifi/WifiSettings;
+.field final synthetic avY:Lcom/android/settings_ext/wifi/WifiSettings;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/wifi/WifiSettings;)V
+.method constructor <init>(Lcom/android/settings_ext/wifi/WifiSettings;)V
     .locals 0
 
     .prologue
     .line 819
-    iput-object p1, p0, Lcom/android/settings/wifi/al;->avY:Lcom/android/settings/wifi/WifiSettings;
+    iput-object p1, p0, Lcom/android/settings_ext/wifi/al;->avY:Lcom/android/settings_ext/wifi/WifiSettings;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -35,9 +35,9 @@
     invoke-direct {v0}, Landroid/content/Intent;-><init>()V
 
     .line 823
-    iget-object v1, p0, Lcom/android/settings/wifi/al;->avY:Lcom/android/settings/wifi/WifiSettings;
+    iget-object v1, p0, Lcom/android/settings_ext/wifi/al;->avY:Lcom/android/settings_ext/wifi/WifiSettings;
 
-    invoke-static {v1}, Lcom/android/settings/wifi/WifiSettings;->a(Lcom/android/settings/wifi/WifiSettings;)Landroid/net/NetworkScorerAppManager$NetworkScorerAppData;
+    invoke-static {v1}, Lcom/android/settings_ext/wifi/WifiSettings;->a(Lcom/android/settings_ext/wifi/WifiSettings;)Landroid/net/NetworkScorerAppManager$NetworkScorerAppData;
 
     move-result-object v1
 
@@ -46,17 +46,17 @@
     if-eqz v1, :cond_0
 
     .line 827
-    iget-object v1, p0, Lcom/android/settings/wifi/al;->avY:Lcom/android/settings/wifi/WifiSettings;
+    iget-object v1, p0, Lcom/android/settings_ext/wifi/al;->avY:Lcom/android/settings_ext/wifi/WifiSettings;
 
-    invoke-static {v1}, Lcom/android/settings/wifi/WifiSettings;->a(Lcom/android/settings/wifi/WifiSettings;)Landroid/net/NetworkScorerAppManager$NetworkScorerAppData;
+    invoke-static {v1}, Lcom/android/settings_ext/wifi/WifiSettings;->a(Lcom/android/settings_ext/wifi/WifiSettings;)Landroid/net/NetworkScorerAppManager$NetworkScorerAppData;
 
     move-result-object v1
 
     iget-object v1, v1, Landroid/net/NetworkScorerAppManager$NetworkScorerAppData;->mPackageName:Ljava/lang/String;
 
-    iget-object v2, p0, Lcom/android/settings/wifi/al;->avY:Lcom/android/settings/wifi/WifiSettings;
+    iget-object v2, p0, Lcom/android/settings_ext/wifi/al;->avY:Lcom/android/settings_ext/wifi/WifiSettings;
 
-    invoke-static {v2}, Lcom/android/settings/wifi/WifiSettings;->a(Lcom/android/settings/wifi/WifiSettings;)Landroid/net/NetworkScorerAppManager$NetworkScorerAppData;
+    invoke-static {v2}, Lcom/android/settings_ext/wifi/WifiSettings;->a(Lcom/android/settings_ext/wifi/WifiSettings;)Landroid/net/NetworkScorerAppManager$NetworkScorerAppData;
 
     move-result-object v2
 
@@ -66,11 +66,11 @@
 
     .line 835
     :goto_0
-    iget-object v1, p0, Lcom/android/settings/wifi/al;->avY:Lcom/android/settings/wifi/WifiSettings;
+    iget-object v1, p0, Lcom/android/settings_ext/wifi/al;->avY:Lcom/android/settings_ext/wifi/WifiSettings;
 
     const/4 v2, 0x1
 
-    invoke-virtual {v1, v0, v2}, Lcom/android/settings/wifi/WifiSettings;->startActivityForResult(Landroid/content/Intent;I)V
+    invoke-virtual {v1, v0, v2}, Lcom/android/settings_ext/wifi/WifiSettings;->startActivityForResult(Landroid/content/Intent;I)V
 
     .line 836
     return-void
@@ -84,9 +84,9 @@
     .line 832
     const-string v1, "packageName"
 
-    iget-object v2, p0, Lcom/android/settings/wifi/al;->avY:Lcom/android/settings/wifi/WifiSettings;
+    iget-object v2, p0, Lcom/android/settings_ext/wifi/al;->avY:Lcom/android/settings_ext/wifi/WifiSettings;
 
-    invoke-static {v2}, Lcom/android/settings/wifi/WifiSettings;->a(Lcom/android/settings/wifi/WifiSettings;)Landroid/net/NetworkScorerAppManager$NetworkScorerAppData;
+    invoke-static {v2}, Lcom/android/settings_ext/wifi/WifiSettings;->a(Lcom/android/settings_ext/wifi/WifiSettings;)Landroid/net/NetworkScorerAppManager$NetworkScorerAppData;
 
     move-result-object v2
 

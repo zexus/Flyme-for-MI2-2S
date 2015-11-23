@@ -1,13 +1,13 @@
-.class interface abstract Lcom/android/settings/bluetooth/BluetoothCallback;
+.class interface abstract Lcom/android/settings_ext/bluetooth/BluetoothCallback;
 .super Ljava/lang/Object;
 .source "BluetoothCallback.java"
 
 
 # virtual methods
-.method public abstract a(Lcom/android/settings/bluetooth/CachedBluetoothDevice;)V
+.method public abstract a(Lcom/android/settings_ext/bluetooth/CachedBluetoothDevice;)V
 .end method
 
-.method public abstract a(Lcom/android/settings/bluetooth/CachedBluetoothDevice;I)V
+.method public abstract a(Lcom/android/settings_ext/bluetooth/CachedBluetoothDevice;I)V
 .end method
 
 .method public abstract aL(I)V
@@ -16,5 +16,5 @@
 .method public abstract al(Z)V
 .end method
 
-.method public abstract b(Lcom/android/settings/bluetooth/CachedBluetoothDevice;)V
+.method public abstract b(Lcom/android/settings_ext/bluetooth/CachedBluetoothDevice;)V
 .end method

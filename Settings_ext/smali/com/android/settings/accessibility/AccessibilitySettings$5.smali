@@ -1,5 +1,5 @@
-.class final Lcom/android/settings/accessibility/AccessibilitySettings$5;
-.super Lcom/android/settings/search/a;
+.class final Lcom/android/settings_ext/accessibility/AccessibilitySettings$5;
+.super Lcom/android/settings_ext/search/a;
 .source "AccessibilitySettings.java"
 
 
@@ -9,7 +9,7 @@
 
     .prologue
     .line 674
-    invoke-direct {p0}, Lcom/android/settings/search/a;-><init>()V
+    invoke-direct {p0}, Lcom/android/settings_ext/search/a;-><init>()V
 
     return-void
 .end method
@@ -111,16 +111,16 @@
     invoke-direct {v8, v9, v7}, Landroid/content/ComponentName;-><init>(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 700
-    new-instance v7, Lcom/android/settings/search/n;
+    new-instance v7, Lcom/android/settings_ext/search/n;
 
-    invoke-direct {v7, p1}, Lcom/android/settings/search/n;-><init>(Landroid/content/Context;)V
+    invoke-direct {v7, p1}, Lcom/android/settings_ext/search/n;-><init>(Landroid/content/Context;)V
 
     .line 701
     invoke-virtual {v8}, Landroid/content/ComponentName;->flattenToString()Ljava/lang/String;
 
     move-result-object v8
 
-    iput-object v8, v7, Lcom/android/settings/search/n;->key:Ljava/lang/String;
+    iput-object v8, v7, Lcom/android/settings_ext/search/n;->key:Ljava/lang/String;
 
     .line 702
     invoke-virtual {v0}, Landroid/accessibilityservice/AccessibilityServiceInfo;->getResolveInfo()Landroid/content/pm/ResolveInfo;
@@ -135,7 +135,7 @@
 
     move-result-object v0
 
-    iput-object v0, v7, Lcom/android/settings/search/n;->title:Ljava/lang/String;
+    iput-object v0, v7, Lcom/android/settings_ext/search/n;->title:Ljava/lang/String;
 
     .line 703
     const v0, 0x7f090657
@@ -144,7 +144,7 @@
 
     move-result-object v0
 
-    iput-object v0, v7, Lcom/android/settings/search/n;->Rz:Ljava/lang/String;
+    iput-object v0, v7, Lcom/android/settings_ext/search/n;->Rz:Ljava/lang/String;
 
     .line 704
     const v0, 0x7f090658
@@ -153,10 +153,10 @@
 
     move-result-object v0
 
-    iput-object v0, v7, Lcom/android/settings/search/n;->RA:Ljava/lang/String;
+    iput-object v0, v7, Lcom/android/settings_ext/search/n;->RA:Ljava/lang/String;
 
     .line 705
-    iput-object v4, v7, Lcom/android/settings/search/n;->aiY:Ljava/lang/String;
+    iput-object v4, v7, Lcom/android/settings_ext/search/n;->aiY:Ljava/lang/String;
 
     .line 706
     invoke-interface {v2, v7}, Ljava/util/List;->add(Ljava/lang/Object;)Z

@@ -1,31 +1,31 @@
-.class Lcom/android/settings/nfc/PaymentSettings$SettingsPackageMonitor;
+.class Lcom/android/settings_ext/nfc/PaymentSettings$SettingsPackageMonitor;
 .super Lcom/android/internal/content/PackageMonitor;
 .source "PaymentSettings.java"
 
 
 # instance fields
-.field final synthetic adL:Lcom/android/settings/nfc/PaymentSettings;
+.field final synthetic adL:Lcom/android/settings_ext/nfc/PaymentSettings;
 
 
 # direct methods
-.method private constructor <init>(Lcom/android/settings/nfc/PaymentSettings;)V
+.method private constructor <init>(Lcom/android/settings_ext/nfc/PaymentSettings;)V
     .locals 0
 
     .prologue
     .line 186
-    iput-object p1, p0, Lcom/android/settings/nfc/PaymentSettings$SettingsPackageMonitor;->adL:Lcom/android/settings/nfc/PaymentSettings;
+    iput-object p1, p0, Lcom/android/settings_ext/nfc/PaymentSettings$SettingsPackageMonitor;->adL:Lcom/android/settings_ext/nfc/PaymentSettings;
 
     invoke-direct {p0}, Lcom/android/internal/content/PackageMonitor;-><init>()V
 
     return-void
 .end method
 
-.method synthetic constructor <init>(Lcom/android/settings/nfc/PaymentSettings;Lcom/android/settings/nfc/PaymentSettings$1;)V
+.method synthetic constructor <init>(Lcom/android/settings_ext/nfc/PaymentSettings;Lcom/android/settings_ext/nfc/PaymentSettings$1;)V
     .locals 0
 
     .prologue
     .line 186
-    invoke-direct {p0, p1}, Lcom/android/settings/nfc/PaymentSettings$SettingsPackageMonitor;-><init>(Lcom/android/settings/nfc/PaymentSettings;)V
+    invoke-direct {p0, p1}, Lcom/android/settings_ext/nfc/PaymentSettings$SettingsPackageMonitor;-><init>(Lcom/android/settings_ext/nfc/PaymentSettings;)V
 
     return-void
 .end method
@@ -37,9 +37,9 @@
 
     .prologue
     .line 189
-    iget-object v0, p0, Lcom/android/settings/nfc/PaymentSettings$SettingsPackageMonitor;->adL:Lcom/android/settings/nfc/PaymentSettings;
+    iget-object v0, p0, Lcom/android/settings_ext/nfc/PaymentSettings$SettingsPackageMonitor;->adL:Lcom/android/settings_ext/nfc/PaymentSettings;
 
-    invoke-static {v0}, Lcom/android/settings/nfc/PaymentSettings;->a(Lcom/android/settings/nfc/PaymentSettings;)Landroid/os/Handler;
+    invoke-static {v0}, Lcom/android/settings_ext/nfc/PaymentSettings;->a(Lcom/android/settings_ext/nfc/PaymentSettings;)Landroid/os/Handler;
 
     move-result-object v0
 
@@ -58,9 +58,9 @@
 
     .prologue
     .line 194
-    iget-object v0, p0, Lcom/android/settings/nfc/PaymentSettings$SettingsPackageMonitor;->adL:Lcom/android/settings/nfc/PaymentSettings;
+    iget-object v0, p0, Lcom/android/settings_ext/nfc/PaymentSettings$SettingsPackageMonitor;->adL:Lcom/android/settings_ext/nfc/PaymentSettings;
 
-    invoke-static {v0}, Lcom/android/settings/nfc/PaymentSettings;->a(Lcom/android/settings/nfc/PaymentSettings;)Landroid/os/Handler;
+    invoke-static {v0}, Lcom/android/settings_ext/nfc/PaymentSettings;->a(Lcom/android/settings_ext/nfc/PaymentSettings;)Landroid/os/Handler;
 
     move-result-object v0
 
@@ -79,9 +79,9 @@
 
     .prologue
     .line 199
-    iget-object v0, p0, Lcom/android/settings/nfc/PaymentSettings$SettingsPackageMonitor;->adL:Lcom/android/settings/nfc/PaymentSettings;
+    iget-object v0, p0, Lcom/android/settings_ext/nfc/PaymentSettings$SettingsPackageMonitor;->adL:Lcom/android/settings_ext/nfc/PaymentSettings;
 
-    invoke-static {v0}, Lcom/android/settings/nfc/PaymentSettings;->a(Lcom/android/settings/nfc/PaymentSettings;)Landroid/os/Handler;
+    invoke-static {v0}, Lcom/android/settings_ext/nfc/PaymentSettings;->a(Lcom/android/settings_ext/nfc/PaymentSettings;)Landroid/os/Handler;
 
     move-result-object v0
 
@@ -100,9 +100,9 @@
 
     .prologue
     .line 204
-    iget-object v0, p0, Lcom/android/settings/nfc/PaymentSettings$SettingsPackageMonitor;->adL:Lcom/android/settings/nfc/PaymentSettings;
+    iget-object v0, p0, Lcom/android/settings_ext/nfc/PaymentSettings$SettingsPackageMonitor;->adL:Lcom/android/settings_ext/nfc/PaymentSettings;
 
-    invoke-static {v0}, Lcom/android/settings/nfc/PaymentSettings;->a(Lcom/android/settings/nfc/PaymentSettings;)Landroid/os/Handler;
+    invoke-static {v0}, Lcom/android/settings_ext/nfc/PaymentSettings;->a(Lcom/android/settings_ext/nfc/PaymentSettings;)Landroid/os/Handler;
 
     move-result-object v0
 

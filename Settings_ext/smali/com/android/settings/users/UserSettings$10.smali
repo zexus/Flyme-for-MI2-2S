@@ -1,4 +1,4 @@
-.class Lcom/android/settings/users/UserSettings$10;
+.class Lcom/android/settings_ext/users/UserSettings$10;
 .super Ljava/lang/Object;
 .source "UserSettings.java"
 
@@ -7,16 +7,16 @@
 
 
 # instance fields
-.field final synthetic amU:Lcom/android/settings/users/UserSettings;
+.field final synthetic amU:Lcom/android/settings_ext/users/UserSettings;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/users/UserSettings;)V
+.method constructor <init>(Lcom/android/settings_ext/users/UserSettings;)V
     .locals 0
 
     .prologue
     .line 610
-    iput-object p1, p0, Lcom/android/settings/users/UserSettings$10;->amU:Lcom/android/settings/users/UserSettings;
+    iput-object p1, p0, Lcom/android/settings_ext/users/UserSettings$10;->amU:Lcom/android/settings_ext/users/UserSettings;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -30,9 +30,9 @@
 
     .prologue
     .line 613
-    iget-object v0, p0, Lcom/android/settings/users/UserSettings$10;->amU:Lcom/android/settings/users/UserSettings;
+    iget-object v0, p0, Lcom/android/settings_ext/users/UserSettings$10;->amU:Lcom/android/settings_ext/users/UserSettings;
 
-    invoke-static {v0}, Lcom/android/settings/users/UserSettings;->h(Lcom/android/settings/users/UserSettings;)V
+    invoke-static {v0}, Lcom/android/settings_ext/users/UserSettings;->h(Lcom/android/settings_ext/users/UserSettings;)V
 
     .line 614
     return-void

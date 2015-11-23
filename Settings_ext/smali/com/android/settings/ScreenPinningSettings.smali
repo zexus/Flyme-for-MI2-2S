@@ -1,18 +1,18 @@
-.class public Lcom/android/settings/ScreenPinningSettings;
-.super Lcom/android/settings/SettingsPreferenceFragment;
+.class public Lcom/android/settings_ext/ScreenPinningSettings;
+.super Lcom/android/settings_ext/SettingsPreferenceFragment;
 .source "ScreenPinningSettings.java"
 
 # interfaces
-.implements Lcom/android/settings/search/k;
-.implements Lcom/android/settings/widget/I;
+.implements Lcom/android/settings_ext/search/k;
+.implements Lcom/android/settings_ext/widget/I;
 
 
 # static fields
-.field public static final gG:Lcom/android/settings/search/l;
+.field public static final gG:Lcom/android/settings_ext/search/l;
 
 
 # instance fields
-.field private kr:Lcom/android/settings/widget/SwitchBar;
+.field private kr:Lcom/android/settings_ext/widget/SwitchBar;
 
 
 # direct methods
@@ -21,11 +21,11 @@
 
     .prologue
     .line 97
-    new-instance v0, Lcom/android/settings/gc;
+    new-instance v0, Lcom/android/settings_ext/gc;
 
-    invoke-direct {v0}, Lcom/android/settings/gc;-><init>()V
+    invoke-direct {v0}, Lcom/android/settings_ext/gc;-><init>()V
 
-    sput-object v0, Lcom/android/settings/ScreenPinningSettings;->gG:Lcom/android/settings/search/l;
+    sput-object v0, Lcom/android/settings_ext/ScreenPinningSettings;->gG:Lcom/android/settings_ext/search/l;
 
     return-void
 .end method
@@ -35,7 +35,7 @@
 
     .prologue
     .line 39
-    invoke-direct {p0}, Lcom/android/settings/SettingsPreferenceFragment;-><init>()V
+    invoke-direct {p0}, Lcom/android/settings_ext/SettingsPreferenceFragment;-><init>()V
 
     return-void
 .end method
@@ -45,7 +45,7 @@
 
     .prologue
     .line 82
-    invoke-virtual {p0}, Lcom/android/settings/ScreenPinningSettings;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/settings_ext/ScreenPinningSettings;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v1
 
@@ -76,7 +76,7 @@
 
     .line 74
     :try_start_0
-    invoke-virtual {p0}, Lcom/android/settings/ScreenPinningSettings;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/settings_ext/ScreenPinningSettings;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v1
 
@@ -127,7 +127,7 @@
 
     .prologue
     .line 91
-    invoke-direct {p0, p2}, Lcom/android/settings/ScreenPinningSettings;->H(Z)V
+    invoke-direct {p0, p2}, Lcom/android/settings_ext/ScreenPinningSettings;->H(Z)V
 
     .line 92
     return-void
@@ -138,40 +138,40 @@
 
     .prologue
     .line 46
-    invoke-super {p0, p1}, Lcom/android/settings/SettingsPreferenceFragment;->onActivityCreated(Landroid/os/Bundle;)V
+    invoke-super {p0, p1}, Lcom/android/settings_ext/SettingsPreferenceFragment;->onActivityCreated(Landroid/os/Bundle;)V
 
     .line 48
-    invoke-virtual {p0}, Lcom/android/settings/ScreenPinningSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/ScreenPinningSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
-    check-cast v0, Lcom/android/settings/gh;
+    check-cast v0, Lcom/android/settings_ext/gh;
 
     .line 50
-    invoke-virtual {v0}, Lcom/android/settings/gh;->gH()Lcom/android/settings/widget/SwitchBar;
+    invoke-virtual {v0}, Lcom/android/settings_ext/gh;->gH()Lcom/android/settings_ext/widget/SwitchBar;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/ScreenPinningSettings;->kr:Lcom/android/settings/widget/SwitchBar;
+    iput-object v0, p0, Lcom/android/settings_ext/ScreenPinningSettings;->kr:Lcom/android/settings_ext/widget/SwitchBar;
 
     .line 51
-    iget-object v0, p0, Lcom/android/settings/ScreenPinningSettings;->kr:Lcom/android/settings/widget/SwitchBar;
+    iget-object v0, p0, Lcom/android/settings_ext/ScreenPinningSettings;->kr:Lcom/android/settings_ext/widget/SwitchBar;
 
-    invoke-virtual {v0, p0}, Lcom/android/settings/widget/SwitchBar;->a(Lcom/android/settings/widget/I;)V
+    invoke-virtual {v0, p0}, Lcom/android/settings_ext/widget/SwitchBar;->a(Lcom/android/settings_ext/widget/I;)V
 
     .line 52
-    iget-object v0, p0, Lcom/android/settings/ScreenPinningSettings;->kr:Lcom/android/settings/widget/SwitchBar;
+    iget-object v0, p0, Lcom/android/settings_ext/ScreenPinningSettings;->kr:Lcom/android/settings_ext/widget/SwitchBar;
 
-    invoke-virtual {v0}, Lcom/android/settings/widget/SwitchBar;->show()V
+    invoke-virtual {v0}, Lcom/android/settings_ext/widget/SwitchBar;->show()V
 
     .line 53
-    iget-object v0, p0, Lcom/android/settings/ScreenPinningSettings;->kr:Lcom/android/settings/widget/SwitchBar;
+    iget-object v0, p0, Lcom/android/settings_ext/ScreenPinningSettings;->kr:Lcom/android/settings_ext/widget/SwitchBar;
 
-    invoke-direct {p0}, Lcom/android/settings/ScreenPinningSettings;->gB()Z
+    invoke-direct {p0}, Lcom/android/settings_ext/ScreenPinningSettings;->gB()Z
 
     move-result v1
 
-    invoke-virtual {v0, v1}, Lcom/android/settings/widget/SwitchBar;->setChecked(Z)V
+    invoke-virtual {v0, v1}, Lcom/android/settings_ext/widget/SwitchBar;->setChecked(Z)V
 
     .line 54
     return-void
@@ -182,17 +182,17 @@
 
     .prologue
     .line 58
-    invoke-super {p0}, Lcom/android/settings/SettingsPreferenceFragment;->onDestroyView()V
+    invoke-super {p0}, Lcom/android/settings_ext/SettingsPreferenceFragment;->onDestroyView()V
 
     .line 60
-    iget-object v0, p0, Lcom/android/settings/ScreenPinningSettings;->kr:Lcom/android/settings/widget/SwitchBar;
+    iget-object v0, p0, Lcom/android/settings_ext/ScreenPinningSettings;->kr:Lcom/android/settings_ext/widget/SwitchBar;
 
-    invoke-virtual {v0, p0}, Lcom/android/settings/widget/SwitchBar;->b(Lcom/android/settings/widget/I;)V
+    invoke-virtual {v0, p0}, Lcom/android/settings_ext/widget/SwitchBar;->b(Lcom/android/settings_ext/widget/I;)V
 
     .line 61
-    iget-object v0, p0, Lcom/android/settings/ScreenPinningSettings;->kr:Lcom/android/settings/widget/SwitchBar;
+    iget-object v0, p0, Lcom/android/settings_ext/ScreenPinningSettings;->kr:Lcom/android/settings_ext/widget/SwitchBar;
 
-    invoke-virtual {v0}, Lcom/android/settings/widget/SwitchBar;->hide()V
+    invoke-virtual {v0}, Lcom/android/settings_ext/widget/SwitchBar;->hide()V
 
     .line 62
     return-void

@@ -1,5 +1,5 @@
-.class public Lcom/android/settings/ChooseLockGeneric;
-.super Lcom/android/settings/gh;
+.class public Lcom/android/settings_ext/ChooseLockGeneric;
+.super Lcom/android/settings_ext/gh;
 .source "ChooseLockGeneric.java"
 
 
@@ -9,7 +9,7 @@
 
     .prologue
     .line 52
-    invoke-direct {p0}, Lcom/android/settings/gh;-><init>()V
+    invoke-direct {p0}, Lcom/android/settings_ext/gh;-><init>()V
 
     .line 71
     return-void
@@ -24,7 +24,7 @@
     .line 57
     new-instance v0, Landroid/content/Intent;
 
-    invoke-super {p0}, Lcom/android/settings/gh;->getIntent()Landroid/content/Intent;
+    invoke-super {p0}, Lcom/android/settings_ext/gh;->getIntent()Landroid/content/Intent;
 
     move-result-object v1
 
@@ -33,7 +33,7 @@
     .line 58
     const-string v1, ":settings:show_fragment"
 
-    const-class v2, Lcom/android/settings/ChooseLockGeneric$ChooseLockGenericFragment;
+    const-class v2, Lcom/android/settings_ext/ChooseLockGeneric$ChooseLockGenericFragment;
 
     invoke-virtual {v2}, Ljava/lang/Class;->getName()Ljava/lang/String;
 
@@ -50,7 +50,7 @@
 
     .prologue
     .line 64
-    const-class v0, Lcom/android/settings/ChooseLockGeneric$ChooseLockGenericFragment;
+    const-class v0, Lcom/android/settings_ext/ChooseLockGeneric$ChooseLockGenericFragment;
 
     invoke-virtual {v0}, Ljava/lang/Class;->getName()Ljava/lang/String;
 

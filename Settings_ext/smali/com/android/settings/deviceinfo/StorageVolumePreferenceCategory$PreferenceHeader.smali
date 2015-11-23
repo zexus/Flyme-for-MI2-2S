@@ -1,4 +1,4 @@
-.class public Lcom/android/settings/deviceinfo/StorageVolumePreferenceCategory$PreferenceHeader;
+.class public Lcom/android/settings_ext/deviceinfo/StorageVolumePreferenceCategory$PreferenceHeader;
 .super Landroid/preference/Preference;
 .source "StorageVolumePreferenceCategory.java"
 
@@ -12,7 +12,7 @@
     invoke-direct {p0, p1}, Landroid/preference/Preference;-><init>(Landroid/content/Context;)V
 
     .line 627
-    invoke-virtual {p0, p2}, Lcom/android/settings/deviceinfo/StorageVolumePreferenceCategory$PreferenceHeader;->setTitle(I)V
+    invoke-virtual {p0, p2}, Lcom/android/settings_ext/deviceinfo/StorageVolumePreferenceCategory$PreferenceHeader;->setTitle(I)V
 
     .line 628
     return-void
@@ -26,7 +26,7 @@
     invoke-direct {p0, p1}, Landroid/preference/Preference;-><init>(Landroid/content/Context;)V
 
     .line 634
-    invoke-virtual {p0, p2}, Lcom/android/settings/deviceinfo/StorageVolumePreferenceCategory$PreferenceHeader;->setTitle(Ljava/lang/CharSequence;)V
+    invoke-virtual {p0, p2}, Lcom/android/settings_ext/deviceinfo/StorageVolumePreferenceCategory$PreferenceHeader;->setTitle(Ljava/lang/CharSequence;)V
 
     .line 635
     return-void

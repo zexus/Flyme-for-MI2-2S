@@ -1,4 +1,4 @@
-.class Lcom/android/settings/wifi/bk;
+.class Lcom/android/settings_ext/wifi/bk;
 .super Ljava/lang/Object;
 .source "WriteWifiConfigToNfcDialog.java"
 
@@ -7,16 +7,16 @@
 
 
 # instance fields
-.field final synthetic aya:Lcom/android/settings/wifi/bh;
+.field final synthetic aya:Lcom/android/settings_ext/wifi/bh;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/wifi/bh;)V
+.method constructor <init>(Lcom/android/settings_ext/wifi/bh;)V
     .locals 0
 
     .prologue
     .line 216
-    iput-object p1, p0, Lcom/android/settings/wifi/bk;->aya:Lcom/android/settings/wifi/bh;
+    iput-object p1, p0, Lcom/android/settings_ext/wifi/bk;->aya:Lcom/android/settings_ext/wifi/bh;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -30,9 +30,9 @@
 
     .prologue
     .line 219
-    iget-object v0, p0, Lcom/android/settings/wifi/bk;->aya:Lcom/android/settings/wifi/bh;
+    iget-object v0, p0, Lcom/android/settings_ext/wifi/bk;->aya:Lcom/android/settings_ext/wifi/bh;
 
-    invoke-static {v0}, Lcom/android/settings/wifi/bh;->b(Lcom/android/settings/wifi/bh;)V
+    invoke-static {v0}, Lcom/android/settings_ext/wifi/bh;->b(Lcom/android/settings_ext/wifi/bh;)V
 
     .line 220
     return-void

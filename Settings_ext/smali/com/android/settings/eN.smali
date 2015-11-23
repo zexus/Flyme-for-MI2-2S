@@ -1,4 +1,4 @@
-.class public interface abstract Lcom/android/settings/eN;
+.class public interface abstract Lcom/android/settings_ext/eN;
 .super Ljava/lang/Object;
 .source "MusicDsClient.java"
 

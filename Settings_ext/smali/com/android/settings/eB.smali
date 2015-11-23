@@ -1,4 +1,4 @@
-.class Lcom/android/settings/eB;
+.class Lcom/android/settings_ext/eB;
 .super Ljava/lang/Object;
 .source "MiuiSecurityTrustedCredentials.java"
 
@@ -7,16 +7,16 @@
 
 
 # instance fields
-.field final synthetic rM:Lcom/android/settings/ez;
+.field final synthetic rM:Lcom/android/settings_ext/ez;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/ez;)V
+.method constructor <init>(Lcom/android/settings_ext/ez;)V
     .locals 0
 
     .prologue
     .line 467
-    iput-object p1, p0, Lcom/android/settings/eB;->rM:Lcom/android/settings/ez;
+    iput-object p1, p0, Lcom/android/settings_ext/eB;->rM:Lcom/android/settings_ext/ez;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 

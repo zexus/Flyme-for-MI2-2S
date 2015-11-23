@@ -1,4 +1,4 @@
-.class public Lcom/android/settings/applications/PreferredListSettings;
+.class public Lcom/android/settings_ext/applications/PreferredListSettings;
 .super Lmiui/preference/PreferenceActivity;
 .source "PreferredListSettings.java"
 
@@ -176,12 +176,12 @@
     goto :goto_0
 .end method
 
-.method static synthetic a(Lcom/android/settings/applications/PreferredListSettings;)Landroid/content/pm/PackageManager;
+.method static synthetic a(Lcom/android/settings_ext/applications/PreferredListSettings;)Landroid/content/pm/PackageManager;
     .locals 1
 
     .prologue
     .line 35
-    iget-object v0, p0, Lcom/android/settings/applications/PreferredListSettings;->mPackageManager:Landroid/content/pm/PackageManager;
+    iget-object v0, p0, Lcom/android/settings_ext/applications/PreferredListSettings;->mPackageManager:Landroid/content/pm/PackageManager;
 
     return-object v0
 .end method
@@ -203,7 +203,7 @@
     invoke-virtual {v2, v1, p1}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Landroid/os/Parcelable;)Landroid/content/Intent;
 
     .line 140
-    invoke-direct {p0, p1}, Lcom/android/settings/applications/PreferredListSettings;->a(Landroid/content/IntentFilter;)Landroid/content/Intent;
+    invoke-direct {p0, p1}, Lcom/android/settings_ext/applications/PreferredListSettings;->a(Landroid/content/IntentFilter;)Landroid/content/Intent;
 
     move-result-object v1
 
@@ -239,7 +239,7 @@
     invoke-virtual {v3, v2}, Lmiui/preference/ValuePreference;->setIntent(Landroid/content/Intent;)V
 
     .line 149
-    iget-object v4, p0, Lcom/android/settings/applications/PreferredListSettings;->mPackageManager:Landroid/content/pm/PackageManager;
+    iget-object v4, p0, Lcom/android/settings_ext/applications/PreferredListSettings;->mPackageManager:Landroid/content/pm/PackageManager;
 
     invoke-virtual {v4, v1, v0}, Landroid/content/pm/PackageManager;->resolveActivity(Landroid/content/Intent;I)Landroid/content/pm/ResolveInfo;
 
@@ -305,7 +305,7 @@
 
     .line 156
     :try_start_0
-    iget-object v1, p0, Lcom/android/settings/applications/PreferredListSettings;->mPackageManager:Landroid/content/pm/PackageManager;
+    iget-object v1, p0, Lcom/android/settings_ext/applications/PreferredListSettings;->mPackageManager:Landroid/content/pm/PackageManager;
 
     invoke-virtual {v0}, Landroid/content/ComponentName;->getPackageName()Ljava/lang/String;
 
@@ -318,7 +318,7 @@
     move-result-object v0
 
     .line 157
-    iget-object v1, p0, Lcom/android/settings/applications/PreferredListSettings;->mPackageManager:Landroid/content/pm/PackageManager;
+    iget-object v1, p0, Lcom/android/settings_ext/applications/PreferredListSettings;->mPackageManager:Landroid/content/pm/PackageManager;
 
     invoke-virtual {v0, v1}, Landroid/content/pm/ApplicationInfo;->loadLabel(Landroid/content/pm/PackageManager;)Ljava/lang/CharSequence;
 
@@ -332,7 +332,7 @@
     if-nez v1, :cond_0
 
     .line 159
-    iget-object v1, p0, Lcom/android/settings/applications/PreferredListSettings;->mPackageManager:Landroid/content/pm/PackageManager;
+    iget-object v1, p0, Lcom/android/settings_ext/applications/PreferredListSettings;->mPackageManager:Landroid/content/pm/PackageManager;
 
     invoke-virtual {v0, v1}, Landroid/content/pm/ApplicationInfo;->loadLabel(Landroid/content/pm/PackageManager;)Ljava/lang/CharSequence;
 
@@ -349,7 +349,7 @@
     .line 169
     :cond_0
     :goto_1
-    invoke-virtual {p0}, Lcom/android/settings/applications/PreferredListSettings;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
+    invoke-virtual {p0}, Lcom/android/settings_ext/applications/PreferredListSettings;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
 
     move-result-object v0
 
@@ -374,12 +374,12 @@
     goto :goto_1
 .end method
 
-.method static synthetic b(Lcom/android/settings/applications/PreferredListSettings;)V
+.method static synthetic b(Lcom/android/settings_ext/applications/PreferredListSettings;)V
     .locals 0
 
     .prologue
     .line 35
-    invoke-direct {p0}, Lcom/android/settings/applications/PreferredListSettings;->ju()V
+    invoke-direct {p0}, Lcom/android/settings_ext/applications/PreferredListSettings;->ju()V
 
     return-void
 .end method
@@ -389,7 +389,7 @@
 
     .prologue
     .line 61
-    invoke-virtual {p0}, Lcom/android/settings/applications/PreferredListSettings;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
+    invoke-virtual {p0}, Lcom/android/settings_ext/applications/PreferredListSettings;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
 
     move-result-object v0
 
@@ -406,14 +406,14 @@
     invoke-direct {v1}, Ljava/util/ArrayList;-><init>()V
 
     .line 64
-    iget-object v2, p0, Lcom/android/settings/applications/PreferredListSettings;->mPackageManager:Landroid/content/pm/PackageManager;
+    iget-object v2, p0, Lcom/android/settings_ext/applications/PreferredListSettings;->mPackageManager:Landroid/content/pm/PackageManager;
 
     const/4 v3, 0x0
 
     invoke-virtual {v2, v0, v1, v3}, Landroid/content/pm/PackageManager;->getPreferredActivities(Ljava/util/List;Ljava/util/List;Ljava/lang/String;)I
 
     .line 65
-    invoke-virtual {p0}, Lcom/android/settings/applications/PreferredListSettings;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {p0}, Lcom/android/settings_ext/applications/PreferredListSettings;->getResources()Landroid/content/res/Resources;
 
     move-result-object v0
 
@@ -443,10 +443,10 @@
 
     aget-object v3, v0, v3
 
-    invoke-direct {p0, v2, v3, v1}, Lcom/android/settings/applications/PreferredListSettings;->a(Landroid/content/IntentFilter;Ljava/lang/String;Ljava/util/ArrayList;)V
+    invoke-direct {p0, v2, v3, v1}, Lcom/android/settings_ext/applications/PreferredListSettings;->a(Landroid/content/IntentFilter;Ljava/lang/String;Ljava/util/ArrayList;)V
 
     .line 73
-    invoke-static {p0}, Lcom/android/settings/hl;->M(Landroid/content/Context;)Z
+    invoke-static {p0}, Lcom/android/settings_ext/hl;->M(Landroid/content/Context;)Z
 
     move-result v2
 
@@ -472,7 +472,7 @@
 
     aget-object v3, v0, v3
 
-    invoke-direct {p0, v2, v3, v1}, Lcom/android/settings/applications/PreferredListSettings;->a(Landroid/content/IntentFilter;Ljava/lang/String;Ljava/util/ArrayList;)V
+    invoke-direct {p0, v2, v3, v1}, Lcom/android/settings_ext/applications/PreferredListSettings;->a(Landroid/content/IntentFilter;Ljava/lang/String;Ljava/util/ArrayList;)V
 
     .line 81
     new-instance v2, Landroid/content/IntentFilter;
@@ -494,7 +494,7 @@
 
     aget-object v3, v0, v3
 
-    invoke-direct {p0, v2, v3, v1}, Lcom/android/settings/applications/PreferredListSettings;->a(Landroid/content/IntentFilter;Ljava/lang/String;Ljava/util/ArrayList;)V
+    invoke-direct {p0, v2, v3, v1}, Lcom/android/settings_ext/applications/PreferredListSettings;->a(Landroid/content/IntentFilter;Ljava/lang/String;Ljava/util/ArrayList;)V
 
     .line 88
     :cond_0
@@ -522,7 +522,7 @@
 
     aget-object v3, v0, v3
 
-    invoke-direct {p0, v2, v3, v1}, Lcom/android/settings/applications/PreferredListSettings;->a(Landroid/content/IntentFilter;Ljava/lang/String;Ljava/util/ArrayList;)V
+    invoke-direct {p0, v2, v3, v1}, Lcom/android/settings_ext/applications/PreferredListSettings;->a(Landroid/content/IntentFilter;Ljava/lang/String;Ljava/util/ArrayList;)V
 
     .line 95
     new-instance v2, Landroid/content/IntentFilter;
@@ -539,7 +539,7 @@
 
     aget-object v3, v0, v3
 
-    invoke-direct {p0, v2, v3, v1}, Lcom/android/settings/applications/PreferredListSettings;->a(Landroid/content/IntentFilter;Ljava/lang/String;Ljava/util/ArrayList;)V
+    invoke-direct {p0, v2, v3, v1}, Lcom/android/settings_ext/applications/PreferredListSettings;->a(Landroid/content/IntentFilter;Ljava/lang/String;Ljava/util/ArrayList;)V
 
     .line 100
     new-instance v2, Landroid/content/IntentFilter;
@@ -565,7 +565,7 @@
 
     aget-object v3, v0, v3
 
-    invoke-direct {p0, v2, v3, v1}, Lcom/android/settings/applications/PreferredListSettings;->a(Landroid/content/IntentFilter;Ljava/lang/String;Ljava/util/ArrayList;)V
+    invoke-direct {p0, v2, v3, v1}, Lcom/android/settings_ext/applications/PreferredListSettings;->a(Landroid/content/IntentFilter;Ljava/lang/String;Ljava/util/ArrayList;)V
 
     .line 109
     new-instance v2, Landroid/content/IntentFilter;
@@ -596,7 +596,7 @@
 
     aget-object v3, v0, v3
 
-    invoke-direct {p0, v2, v3, v1}, Lcom/android/settings/applications/PreferredListSettings;->a(Landroid/content/IntentFilter;Ljava/lang/String;Ljava/util/ArrayList;)V
+    invoke-direct {p0, v2, v3, v1}, Lcom/android/settings_ext/applications/PreferredListSettings;->a(Landroid/content/IntentFilter;Ljava/lang/String;Ljava/util/ArrayList;)V
 
     .line 119
     new-instance v2, Landroid/content/IntentFilter;
@@ -618,7 +618,7 @@
 
     aget-object v3, v0, v3
 
-    invoke-direct {p0, v2, v3, v1}, Lcom/android/settings/applications/PreferredListSettings;->a(Landroid/content/IntentFilter;Ljava/lang/String;Ljava/util/ArrayList;)V
+    invoke-direct {p0, v2, v3, v1}, Lcom/android/settings_ext/applications/PreferredListSettings;->a(Landroid/content/IntentFilter;Ljava/lang/String;Ljava/util/ArrayList;)V
 
     .line 125
     new-instance v2, Landroid/content/IntentFilter;
@@ -649,7 +649,7 @@
 
     aget-object v0, v0, v3
 
-    invoke-direct {p0, v2, v0, v1}, Lcom/android/settings/applications/PreferredListSettings;->a(Landroid/content/IntentFilter;Ljava/lang/String;Ljava/util/ArrayList;)V
+    invoke-direct {p0, v2, v0, v1}, Lcom/android/settings_ext/applications/PreferredListSettings;->a(Landroid/content/IntentFilter;Ljava/lang/String;Ljava/util/ArrayList;)V
 
     .line 133
     return-void
@@ -695,14 +695,14 @@
     .line 50
     const v0, 0x7f06005e
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/applications/PreferredListSettings;->addPreferencesFromResource(I)V
+    invoke-virtual {p0, v0}, Lcom/android/settings_ext/applications/PreferredListSettings;->addPreferencesFromResource(I)V
 
     .line 51
-    invoke-virtual {p0}, Lcom/android/settings/applications/PreferredListSettings;->getPackageManager()Landroid/content/pm/PackageManager;
+    invoke-virtual {p0}, Lcom/android/settings_ext/applications/PreferredListSettings;->getPackageManager()Landroid/content/pm/PackageManager;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/applications/PreferredListSettings;->mPackageManager:Landroid/content/pm/PackageManager;
+    iput-object v0, p0, Lcom/android/settings_ext/applications/PreferredListSettings;->mPackageManager:Landroid/content/pm/PackageManager;
 
     .line 52
     return-void
@@ -757,7 +757,7 @@
 
     const v2, 0x7f090d11
 
-    invoke-virtual {p0, v2}, Lcom/android/settings/applications/PreferredListSettings;->getString(I)Ljava/lang/String;
+    invoke-virtual {p0, v2}, Lcom/android/settings_ext/applications/PreferredListSettings;->getString(I)Ljava/lang/String;
 
     move-result-object v2
 
@@ -767,7 +767,7 @@
 
     const v2, 0x7f090d12
 
-    invoke-virtual {p0, v2}, Lcom/android/settings/applications/PreferredListSettings;->getString(I)Ljava/lang/String;
+    invoke-virtual {p0, v2}, Lcom/android/settings_ext/applications/PreferredListSettings;->getString(I)Ljava/lang/String;
 
     move-result-object v2
 
@@ -785,13 +785,13 @@
 
     const v2, 0x7f090d13
 
-    invoke-virtual {p0, v2}, Lcom/android/settings/applications/PreferredListSettings;->getString(I)Ljava/lang/String;
+    invoke-virtual {p0, v2}, Lcom/android/settings_ext/applications/PreferredListSettings;->getString(I)Ljava/lang/String;
 
     move-result-object v2
 
-    new-instance v3, Lcom/android/settings/applications/PreferredListSettings$1;
+    new-instance v3, Lcom/android/settings_ext/applications/PreferredListSettings$1;
 
-    invoke-direct {v3, p0}, Lcom/android/settings/applications/PreferredListSettings$1;-><init>(Lcom/android/settings/applications/PreferredListSettings;)V
+    invoke-direct {v3, p0}, Lcom/android/settings_ext/applications/PreferredListSettings$1;-><init>(Lcom/android/settings_ext/applications/PreferredListSettings;)V
 
     invoke-virtual {v1, v2, v3}, Landroid/app/AlertDialog$Builder;->setPositiveButton(Ljava/lang/CharSequence;Landroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
@@ -846,7 +846,7 @@
     .line 180
     new-instance v0, Landroid/content/Intent;
 
-    const-class v1, Lcom/android/settings/applications/PreferredSmsSettings;
+    const-class v1, Lcom/android/settings_ext/applications/PreferredSmsSettings;
 
     invoke-direct {v0, p0, v1}, Landroid/content/Intent;-><init>(Landroid/content/Context;Ljava/lang/Class;)V
 
@@ -912,7 +912,7 @@
     invoke-virtual {v0, v1, v2}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
 
     .line 188
-    invoke-virtual {p0, v0}, Lcom/android/settings/applications/PreferredListSettings;->startActivity(Landroid/content/Intent;)V
+    invoke-virtual {p0, v0}, Lcom/android/settings_ext/applications/PreferredListSettings;->startActivity(Landroid/content/Intent;)V
 
     .line 189
     const/4 v0, 0x1
@@ -923,7 +923,7 @@
     :cond_0
     new-instance v0, Landroid/content/Intent;
 
-    const-class v1, Lcom/android/settings/applications/PreferredSettings;
+    const-class v1, Lcom/android/settings_ext/applications/PreferredSettings;
 
     invoke-direct {v0, p0, v1}, Landroid/content/Intent;-><init>(Landroid/content/Context;Ljava/lang/Class;)V
 
@@ -938,7 +938,7 @@
     invoke-super {p0}, Lmiui/preference/PreferenceActivity;->onResume()V
 
     .line 57
-    invoke-direct {p0}, Lcom/android/settings/applications/PreferredListSettings;->ju()V
+    invoke-direct {p0}, Lcom/android/settings_ext/applications/PreferredListSettings;->ju()V
 
     .line 58
     return-void

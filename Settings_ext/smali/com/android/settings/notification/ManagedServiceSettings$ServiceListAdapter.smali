@@ -1,29 +1,29 @@
-.class Lcom/android/settings/notification/ManagedServiceSettings$ServiceListAdapter;
+.class Lcom/android/settings_ext/notification/ManagedServiceSettings$ServiceListAdapter;
 .super Landroid/widget/ArrayAdapter;
 .source "ManagedServiceSettings.java"
 
 
 # instance fields
-.field final synthetic aef:Lcom/android/settings/notification/ManagedServiceSettings;
+.field final synthetic aef:Lcom/android/settings_ext/notification/ManagedServiceSettings;
 
 .field final mInflater:Landroid/view/LayoutInflater;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/notification/ManagedServiceSettings;Landroid/content/Context;)V
+.method constructor <init>(Lcom/android/settings_ext/notification/ManagedServiceSettings;Landroid/content/Context;)V
     .locals 2
 
     .prologue
     const/4 v0, 0x0
 
     .line 289
-    iput-object p1, p0, Lcom/android/settings/notification/ManagedServiceSettings$ServiceListAdapter;->aef:Lcom/android/settings/notification/ManagedServiceSettings;
+    iput-object p1, p0, Lcom/android/settings_ext/notification/ManagedServiceSettings$ServiceListAdapter;->aef:Lcom/android/settings_ext/notification/ManagedServiceSettings;
 
     .line 290
     invoke-direct {p0, p2, v0, v0}, Landroid/widget/ArrayAdapter;-><init>(Landroid/content/Context;II)V
 
     .line 291
-    invoke-virtual {p1}, Lcom/android/settings/notification/ManagedServiceSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p1}, Lcom/android/settings_ext/notification/ManagedServiceSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
@@ -35,7 +35,7 @@
 
     check-cast v0, Landroid/view/LayoutInflater;
 
-    iput-object v0, p0, Lcom/android/settings/notification/ManagedServiceSettings$ServiceListAdapter;->mInflater:Landroid/view/LayoutInflater;
+    iput-object v0, p0, Lcom/android/settings_ext/notification/ManagedServiceSettings$ServiceListAdapter;->mInflater:Landroid/view/LayoutInflater;
 
     .line 293
     return-void
@@ -52,27 +52,27 @@
 
     move-result-object v0
 
-    check-cast v0, Lcom/android/settings/notification/ManagedServiceSettings$ViewHolder;
+    check-cast v0, Lcom/android/settings_ext/notification/ManagedServiceSettings$ViewHolder;
 
     .line 327
-    invoke-virtual {p0, p2}, Lcom/android/settings/notification/ManagedServiceSettings$ServiceListAdapter;->getItem(I)Ljava/lang/Object;
+    invoke-virtual {p0, p2}, Lcom/android/settings_ext/notification/ManagedServiceSettings$ServiceListAdapter;->getItem(I)Ljava/lang/Object;
 
     move-result-object v1
 
     check-cast v1, Landroid/content/pm/ServiceInfo;
 
     .line 331
-    iget-object v2, v0, Lcom/android/settings/notification/ManagedServiceSettings$ViewHolder;->icon:Landroid/widget/ImageView;
+    iget-object v2, v0, Lcom/android/settings_ext/notification/ManagedServiceSettings$ViewHolder;->icon:Landroid/widget/ImageView;
 
-    iget-object v3, p0, Lcom/android/settings/notification/ManagedServiceSettings$ServiceListAdapter;->aef:Lcom/android/settings/notification/ManagedServiceSettings;
+    iget-object v3, p0, Lcom/android/settings_ext/notification/ManagedServiceSettings$ServiceListAdapter;->aef:Lcom/android/settings_ext/notification/ManagedServiceSettings;
 
-    invoke-virtual {v3}, Lcom/android/settings/notification/ManagedServiceSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {v3}, Lcom/android/settings_ext/notification/ManagedServiceSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v3
 
-    iget-object v4, p0, Lcom/android/settings/notification/ManagedServiceSettings$ServiceListAdapter;->aef:Lcom/android/settings/notification/ManagedServiceSettings;
+    iget-object v4, p0, Lcom/android/settings_ext/notification/ManagedServiceSettings$ServiceListAdapter;->aef:Lcom/android/settings_ext/notification/ManagedServiceSettings;
 
-    invoke-static {v4}, Lcom/android/settings/notification/ManagedServiceSettings;->e(Lcom/android/settings/notification/ManagedServiceSettings;)Landroid/content/pm/PackageManager;
+    invoke-static {v4}, Lcom/android/settings_ext/notification/ManagedServiceSettings;->e(Lcom/android/settings_ext/notification/ManagedServiceSettings;)Landroid/content/pm/PackageManager;
 
     move-result-object v4
 
@@ -85,11 +85,11 @@
     invoke-virtual {v2, v3}, Landroid/widget/ImageView;->setImageDrawable(Landroid/graphics/drawable/Drawable;)V
 
     .line 332
-    iget-object v2, v0, Lcom/android/settings/notification/ManagedServiceSettings$ViewHolder;->jC:Landroid/widget/TextView;
+    iget-object v2, v0, Lcom/android/settings_ext/notification/ManagedServiceSettings$ViewHolder;->jC:Landroid/widget/TextView;
 
-    iget-object v3, p0, Lcom/android/settings/notification/ManagedServiceSettings$ServiceListAdapter;->aef:Lcom/android/settings/notification/ManagedServiceSettings;
+    iget-object v3, p0, Lcom/android/settings_ext/notification/ManagedServiceSettings$ServiceListAdapter;->aef:Lcom/android/settings_ext/notification/ManagedServiceSettings;
 
-    invoke-static {v3}, Lcom/android/settings/notification/ManagedServiceSettings;->e(Lcom/android/settings/notification/ManagedServiceSettings;)Landroid/content/pm/PackageManager;
+    invoke-static {v3}, Lcom/android/settings_ext/notification/ManagedServiceSettings;->e(Lcom/android/settings_ext/notification/ManagedServiceSettings;)Landroid/content/pm/PackageManager;
 
     move-result-object v3
 
@@ -100,18 +100,18 @@
     invoke-virtual {v2, v3}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
     .line 337
-    iget-object v2, v0, Lcom/android/settings/notification/ManagedServiceSettings$ViewHolder;->jE:Landroid/widget/TextView;
+    iget-object v2, v0, Lcom/android/settings_ext/notification/ManagedServiceSettings$ViewHolder;->jE:Landroid/widget/TextView;
 
     const/16 v3, 0x8
 
     invoke-virtual {v2, v3}, Landroid/widget/TextView;->setVisibility(I)V
 
     .line 339
-    iget-object v0, v0, Lcom/android/settings/notification/ManagedServiceSettings$ViewHolder;->jD:Landroid/widget/CheckBox;
+    iget-object v0, v0, Lcom/android/settings_ext/notification/ManagedServiceSettings$ViewHolder;->jD:Landroid/widget/CheckBox;
 
-    iget-object v2, p0, Lcom/android/settings/notification/ManagedServiceSettings$ServiceListAdapter;->aef:Lcom/android/settings/notification/ManagedServiceSettings;
+    iget-object v2, p0, Lcom/android/settings_ext/notification/ManagedServiceSettings$ServiceListAdapter;->aef:Lcom/android/settings_ext/notification/ManagedServiceSettings;
 
-    invoke-static {v2, v1}, Lcom/android/settings/notification/ManagedServiceSettings;->a(Lcom/android/settings/notification/ManagedServiceSettings;Landroid/content/pm/ServiceInfo;)Z
+    invoke-static {v2, v1}, Lcom/android/settings_ext/notification/ManagedServiceSettings;->a(Lcom/android/settings_ext/notification/ManagedServiceSettings;Landroid/content/pm/ServiceInfo;)Z
 
     move-result v1
 
@@ -126,7 +126,7 @@
 
     .prologue
     .line 315
-    iget-object v0, p0, Lcom/android/settings/notification/ManagedServiceSettings$ServiceListAdapter;->mInflater:Landroid/view/LayoutInflater;
+    iget-object v0, p0, Lcom/android/settings_ext/notification/ManagedServiceSettings$ServiceListAdapter;->mInflater:Landroid/view/LayoutInflater;
 
     const v1, 0x7f04007d
 
@@ -137,11 +137,11 @@
     move-result-object v1
 
     .line 316
-    new-instance v2, Lcom/android/settings/notification/ManagedServiceSettings$ViewHolder;
+    new-instance v2, Lcom/android/settings_ext/notification/ManagedServiceSettings$ViewHolder;
 
     const/4 v0, 0x0
 
-    invoke-direct {v2, v0}, Lcom/android/settings/notification/ManagedServiceSettings$ViewHolder;-><init>(Lcom/android/settings/notification/ManagedServiceSettings$1;)V
+    invoke-direct {v2, v0}, Lcom/android/settings_ext/notification/ManagedServiceSettings$ViewHolder;-><init>(Lcom/android/settings_ext/notification/ManagedServiceSettings$1;)V
 
     .line 317
     const v0, 0x7f100051
@@ -152,7 +152,7 @@
 
     check-cast v0, Landroid/widget/ImageView;
 
-    iput-object v0, v2, Lcom/android/settings/notification/ManagedServiceSettings$ViewHolder;->icon:Landroid/widget/ImageView;
+    iput-object v0, v2, Lcom/android/settings_ext/notification/ManagedServiceSettings$ViewHolder;->icon:Landroid/widget/ImageView;
 
     .line 318
     const v0, 0x7f100046
@@ -163,7 +163,7 @@
 
     check-cast v0, Landroid/widget/TextView;
 
-    iput-object v0, v2, Lcom/android/settings/notification/ManagedServiceSettings$ViewHolder;->jC:Landroid/widget/TextView;
+    iput-object v0, v2, Lcom/android/settings_ext/notification/ManagedServiceSettings$ViewHolder;->jC:Landroid/widget/TextView;
 
     .line 319
     const v0, 0x7f1000b7
@@ -174,7 +174,7 @@
 
     check-cast v0, Landroid/widget/CheckBox;
 
-    iput-object v0, v2, Lcom/android/settings/notification/ManagedServiceSettings$ViewHolder;->jD:Landroid/widget/CheckBox;
+    iput-object v0, v2, Lcom/android/settings_ext/notification/ManagedServiceSettings$ViewHolder;->jD:Landroid/widget/CheckBox;
 
     .line 320
     const v0, 0x7f1000b6
@@ -185,7 +185,7 @@
 
     check-cast v0, Landroid/widget/TextView;
 
-    iput-object v0, v2, Lcom/android/settings/notification/ManagedServiceSettings$ViewHolder;->jE:Landroid/widget/TextView;
+    iput-object v0, v2, Lcom/android/settings_ext/notification/ManagedServiceSettings$ViewHolder;->jE:Landroid/widget/TextView;
 
     .line 321
     invoke-virtual {v1, v2}, Landroid/view/View;->setTag(Ljava/lang/Object;)V
@@ -212,13 +212,13 @@
     if-nez p2, :cond_0
 
     .line 306
-    invoke-virtual {p0, p3}, Lcom/android/settings/notification/ManagedServiceSettings$ServiceListAdapter;->e(Landroid/view/ViewGroup;)Landroid/view/View;
+    invoke-virtual {p0, p3}, Lcom/android/settings_ext/notification/ManagedServiceSettings$ServiceListAdapter;->e(Landroid/view/ViewGroup;)Landroid/view/View;
 
     move-result-object p2
 
     .line 310
     :cond_0
-    invoke-virtual {p0, p2, p1}, Lcom/android/settings/notification/ManagedServiceSettings$ServiceListAdapter;->c(Landroid/view/View;I)V
+    invoke-virtual {p0, p2, p1}, Lcom/android/settings_ext/notification/ManagedServiceSettings$ServiceListAdapter;->c(Landroid/view/View;I)V
 
     .line 311
     return-object p2

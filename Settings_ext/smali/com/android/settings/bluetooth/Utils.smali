@@ -1,4 +1,4 @@
-.class final Lcom/android/settings/bluetooth/Utils;
+.class final Lcom/android/settings_ext/bluetooth/Utils;
 .super Ljava/lang/Object;
 .source "Utils.java"
 
@@ -86,31 +86,31 @@
 
     .prologue
     .line 112
-    new-instance v0, Lcom/android/settings/search/n;
+    new-instance v0, Lcom/android/settings_ext/search/n;
 
-    invoke-direct {v0, p0}, Lcom/android/settings/search/n;-><init>(Landroid/content/Context;)V
+    invoke-direct {v0, p0}, Lcom/android/settings_ext/search/n;-><init>(Landroid/content/Context;)V
 
     .line 113
-    iput-object p1, v0, Lcom/android/settings/search/n;->className:Ljava/lang/String;
+    iput-object p1, v0, Lcom/android/settings_ext/search/n;->className:Ljava/lang/String;
 
     .line 114
-    iput-object p2, v0, Lcom/android/settings/search/n;->title:Ljava/lang/String;
+    iput-object p2, v0, Lcom/android/settings_ext/search/n;->title:Ljava/lang/String;
 
     .line 115
-    iput-object p3, v0, Lcom/android/settings/search/n;->aiY:Ljava/lang/String;
+    iput-object p3, v0, Lcom/android/settings_ext/search/n;->aiY:Ljava/lang/String;
 
     .line 116
-    iput p4, v0, Lcom/android/settings/search/n;->iconResId:I
+    iput p4, v0, Lcom/android/settings_ext/search/n;->iconResId:I
 
     .line 117
-    iput-boolean p5, v0, Lcom/android/settings/search/n;->enabled:Z
+    iput-boolean p5, v0, Lcom/android/settings_ext/search/n;->enabled:Z
 
     .line 119
-    invoke-static {p0}, Lcom/android/settings/search/e;->bn(Landroid/content/Context;)Lcom/android/settings/search/e;
+    invoke-static {p0}, Lcom/android/settings_ext/search/e;->bn(Landroid/content/Context;)Lcom/android/settings_ext/search/e;
 
     move-result-object v1
 
-    invoke-virtual {v1, v0}, Lcom/android/settings/search/e;->c(Landroid/provider/SearchIndexableData;)V
+    invoke-virtual {v1, v0}, Lcom/android/settings_ext/search/e;->c(Landroid/provider/SearchIndexableData;)V
 
     .line 120
     return-void
@@ -183,17 +183,17 @@
     move-result-object v0
 
     .line 94
-    invoke-static {p0}, Lcom/android/settings/bluetooth/LocalBluetoothManager;->ai(Landroid/content/Context;)Lcom/android/settings/bluetooth/LocalBluetoothManager;
+    invoke-static {p0}, Lcom/android/settings_ext/bluetooth/LocalBluetoothManager;->ai(Landroid/content/Context;)Lcom/android/settings_ext/bluetooth/LocalBluetoothManager;
 
     move-result-object v1
 
     .line 95
-    invoke-virtual {v1}, Lcom/android/settings/bluetooth/LocalBluetoothManager;->nc()Landroid/content/Context;
+    invoke-virtual {v1}, Lcom/android/settings_ext/bluetooth/LocalBluetoothManager;->nc()Landroid/content/Context;
 
     move-result-object v2
 
     .line 96
-    invoke-virtual {v1}, Lcom/android/settings/bluetooth/LocalBluetoothManager;->nd()Z
+    invoke-virtual {v1}, Lcom/android/settings_ext/bluetooth/LocalBluetoothManager;->nd()Z
 
     move-result v1
 

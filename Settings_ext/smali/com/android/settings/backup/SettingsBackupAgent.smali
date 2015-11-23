@@ -1,4 +1,4 @@
-.class public Lcom/android/settings/backup/SettingsBackupAgent;
+.class public Lcom/android/settings_ext/backup/SettingsBackupAgent;
 .super Lmiui/app/backup/FullBackupAgent;
 .source "SettingsBackupAgent.java"
 
@@ -8,7 +8,7 @@
 
 .field private LU:Ljava/util/HashMap;
 
-.field private Ma:Lcom/android/settings/backup/h;
+.field private Ma:Lcom/android/settings_ext/backup/h;
 
 
 # direct methods
@@ -53,7 +53,7 @@
     invoke-virtual {v0, v1}, Landroid/content/Intent;->setPackage(Ljava/lang/String;)Landroid/content/Intent;
 
     .line 449
-    invoke-virtual {p0, v0}, Lcom/android/settings/backup/SettingsBackupAgent;->sendBroadcast(Landroid/content/Intent;)V
+    invoke-virtual {p0, v0}, Lcom/android/settings_ext/backup/SettingsBackupAgent;->sendBroadcast(Landroid/content/Intent;)V
 
     .line 450
     return-void
@@ -89,7 +89,7 @@
     .line 349
     new-instance v0, Ljava/io/File;
 
-    iget-object v1, p0, Lcom/android/settings/backup/SettingsBackupAgent;->LB:Ljava/io/File;
+    iget-object v1, p0, Lcom/android/settings_ext/backup/SettingsBackupAgent;->LB:Ljava/io/File;
 
     invoke-direct {v0, v1, p3}, Ljava/io/File;-><init>(Ljava/io/File;Ljava/lang/String;)V
 
@@ -183,7 +183,7 @@
     .line 362
     :cond_2
     :try_start_6
-    iget-object v2, p0, Lcom/android/settings/backup/SettingsBackupAgent;->LU:Ljava/util/HashMap;
+    iget-object v2, p0, Lcom/android/settings_ext/backup/SettingsBackupAgent;->LU:Ljava/util/HashMap;
 
     invoke-virtual {v0}, Ljava/io/File;->getName()Ljava/lang/String;
 
@@ -374,7 +374,7 @@
     .line 384
     new-instance v0, Ljava/io/File;
 
-    iget-object v1, p0, Lcom/android/settings/backup/SettingsBackupAgent;->LB:Ljava/io/File;
+    iget-object v1, p0, Lcom/android/settings_ext/backup/SettingsBackupAgent;->LB:Ljava/io/File;
 
     invoke-direct {v0, v1, p3}, Ljava/io/File;-><init>(Ljava/io/File;Ljava/lang/String;)V
 
@@ -740,15 +740,15 @@
     if-ne v0, v2, :cond_9
 
     .line 54
-    new-instance v0, Lcom/android/settings/backup/h;
+    new-instance v0, Lcom/android/settings_ext/backup/h;
 
-    invoke-virtual {p0}, Lcom/android/settings/backup/SettingsBackupAgent;->getApplicationContext()Landroid/content/Context;
+    invoke-virtual {p0}, Lcom/android/settings_ext/backup/SettingsBackupAgent;->getApplicationContext()Landroid/content/Context;
 
     move-result-object v2
 
-    invoke-direct {v0, v2}, Lcom/android/settings/backup/h;-><init>(Landroid/content/Context;)V
+    invoke-direct {v0, v2}, Lcom/android/settings_ext/backup/h;-><init>(Landroid/content/Context;)V
 
-    iput-object v0, p0, Lcom/android/settings/backup/SettingsBackupAgent;->Ma:Lcom/android/settings/backup/h;
+    iput-object v0, p0, Lcom/android/settings_ext/backup/SettingsBackupAgent;->Ma:Lcom/android/settings_ext/backup/h;
 
     .line 57
     :try_start_0
@@ -764,7 +764,7 @@
 
     .line 58
     :try_start_1
-    invoke-static {v2}, Lcom/android/settings/backup/SyncRootProtos$SyncRoot;->a(Ljava/io/InputStream;)Lcom/android/settings/backup/SyncRootProtos$SyncRoot;
+    invoke-static {v2}, Lcom/android/settings_ext/backup/SyncRootProtos$SyncRoot;->a(Ljava/io/InputStream;)Lcom/android/settings_ext/backup/SyncRootProtos$SyncRoot;
 
     move-result-object v0
 
@@ -772,7 +772,7 @@
     if-eqz v0, :cond_0
 
     .line 61
-    invoke-virtual {v0}, Lcom/android/settings/backup/SyncRootProtos$SyncRoot;->lr()Lcom/android/settings/backup/SettingProtos$Settings;
+    invoke-virtual {v0}, Lcom/android/settings_ext/backup/SyncRootProtos$SyncRoot;->lr()Lcom/android/settings_ext/backup/SettingProtos$Settings;
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
@@ -799,7 +799,7 @@
     .line 66
     :cond_2
     :try_start_2
-    invoke-virtual {v3}, Lcom/android/settings/backup/SettingProtos$Settings;->kN()Ljava/util/List;
+    invoke-virtual {v3}, Lcom/android/settings_ext/backup/SettingProtos$Settings;->kN()Ljava/util/List;
 
     move-result-object v0
 
@@ -818,15 +818,15 @@
 
     move-result-object v0
 
-    check-cast v0, Lcom/android/settings/backup/SettingProtos$SystemSetting;
+    check-cast v0, Lcom/android/settings_ext/backup/SettingProtos$SystemSetting;
     :try_end_2
     .catchall {:try_start_2 .. :try_end_2} :catchall_0
 
     .line 68
     :try_start_3
-    iget-object v5, p0, Lcom/android/settings/backup/SettingsBackupAgent;->Ma:Lcom/android/settings/backup/h;
+    iget-object v5, p0, Lcom/android/settings_ext/backup/SettingsBackupAgent;->Ma:Lcom/android/settings_ext/backup/h;
 
-    invoke-virtual {v5, v0}, Lcom/android/settings/backup/h;->a(Lcom/android/settings/backup/SettingProtos$SystemSetting;)Landroid/net/Uri;
+    invoke-virtual {v5, v0}, Lcom/android/settings_ext/backup/h;->a(Lcom/android/settings_ext/backup/SettingProtos$SystemSetting;)Landroid/net/Uri;
     :try_end_3
     .catch Ljava/lang/Exception; {:try_start_3 .. :try_end_3} :catch_0
     .catchall {:try_start_3 .. :try_end_3} :catchall_0
@@ -867,7 +867,7 @@
     .line 73
     :cond_4
     :try_start_5
-    invoke-virtual {v3}, Lcom/android/settings/backup/SettingProtos$Settings;->kO()Ljava/util/List;
+    invoke-virtual {v3}, Lcom/android/settings_ext/backup/SettingProtos$Settings;->kO()Ljava/util/List;
 
     move-result-object v0
 
@@ -886,15 +886,15 @@
 
     move-result-object v0
 
-    check-cast v0, Lcom/android/settings/backup/SettingProtos$SecureSetting;
+    check-cast v0, Lcom/android/settings_ext/backup/SettingProtos$SecureSetting;
     :try_end_5
     .catchall {:try_start_5 .. :try_end_5} :catchall_0
 
     .line 75
     :try_start_6
-    iget-object v5, p0, Lcom/android/settings/backup/SettingsBackupAgent;->Ma:Lcom/android/settings/backup/h;
+    iget-object v5, p0, Lcom/android/settings_ext/backup/SettingsBackupAgent;->Ma:Lcom/android/settings_ext/backup/h;
 
-    invoke-virtual {v5, v0}, Lcom/android/settings/backup/h;->a(Lcom/android/settings/backup/SettingProtos$SecureSetting;)Landroid/net/Uri;
+    invoke-virtual {v5, v0}, Lcom/android/settings_ext/backup/h;->a(Lcom/android/settings_ext/backup/SettingProtos$SecureSetting;)Landroid/net/Uri;
     :try_end_6
     .catch Ljava/lang/Exception; {:try_start_6 .. :try_end_6} :catch_1
     .catchall {:try_start_6 .. :try_end_6} :catchall_0
@@ -917,7 +917,7 @@
 
     .line 80
     :cond_5
-    invoke-virtual {v3}, Lcom/android/settings/backup/SettingProtos$Settings;->kP()Ljava/util/List;
+    invoke-virtual {v3}, Lcom/android/settings_ext/backup/SettingProtos$Settings;->kP()Ljava/util/List;
 
     move-result-object v0
 
@@ -936,15 +936,15 @@
 
     move-result-object v0
 
-    check-cast v0, Lcom/android/settings/backup/SettingProtos$LockSetting;
+    check-cast v0, Lcom/android/settings_ext/backup/SettingProtos$LockSetting;
     :try_end_7
     .catchall {:try_start_7 .. :try_end_7} :catchall_0
 
     .line 82
     :try_start_8
-    iget-object v4, p0, Lcom/android/settings/backup/SettingsBackupAgent;->Ma:Lcom/android/settings/backup/h;
+    iget-object v4, p0, Lcom/android/settings_ext/backup/SettingsBackupAgent;->Ma:Lcom/android/settings_ext/backup/h;
 
-    invoke-virtual {v4, v0}, Lcom/android/settings/backup/h;->a(Lcom/android/settings/backup/SettingProtos$LockSetting;)Z
+    invoke-virtual {v4, v0}, Lcom/android/settings_ext/backup/h;->a(Lcom/android/settings_ext/backup/SettingProtos$LockSetting;)Z
     :try_end_8
     .catch Ljava/lang/Exception; {:try_start_8 .. :try_end_8} :catch_2
     .catchall {:try_start_8 .. :try_end_8} :catchall_0
@@ -980,12 +980,12 @@
 
     invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
 
-    iput-object v0, p0, Lcom/android/settings/backup/SettingsBackupAgent;->LU:Ljava/util/HashMap;
+    iput-object v0, p0, Lcom/android/settings_ext/backup/SettingsBackupAgent;->LU:Ljava/util/HashMap;
 
     .line 94
     new-instance v0, Ljava/io/File;
 
-    invoke-virtual {p0}, Lcom/android/settings/backup/SettingsBackupAgent;->getCacheDir()Ljava/io/File;
+    invoke-virtual {p0}, Lcom/android/settings_ext/backup/SettingsBackupAgent;->getCacheDir()Ljava/io/File;
 
     move-result-object v2
 
@@ -993,10 +993,10 @@
 
     invoke-direct {v0, v2, v3}, Ljava/io/File;-><init>(Ljava/io/File;Ljava/lang/String;)V
 
-    iput-object v0, p0, Lcom/android/settings/backup/SettingsBackupAgent;->LB:Ljava/io/File;
+    iput-object v0, p0, Lcom/android/settings_ext/backup/SettingsBackupAgent;->LB:Ljava/io/File;
 
     .line 95
-    iget-object v0, p0, Lcom/android/settings/backup/SettingsBackupAgent;->LB:Ljava/io/File;
+    iget-object v0, p0, Lcom/android/settings_ext/backup/SettingsBackupAgent;->LB:Ljava/io/File;
 
     invoke-virtual {v0}, Ljava/io/File;->exists()Z
 
@@ -1005,7 +1005,7 @@
     if-nez v0, :cond_8
 
     .line 96
-    iget-object v0, p0, Lcom/android/settings/backup/SettingsBackupAgent;->LB:Ljava/io/File;
+    iget-object v0, p0, Lcom/android/settings_ext/backup/SettingsBackupAgent;->LB:Ljava/io/File;
 
     invoke-virtual {v0}, Ljava/io/File;->mkdirs()Z
 
@@ -1118,7 +1118,7 @@
     .line 131
     :cond_b
     :goto_9
-    invoke-direct {p0}, Lcom/android/settings/backup/SettingsBackupAgent;->ln()V
+    invoke-direct {p0}, Lcom/android/settings_ext/backup/SettingsBackupAgent;->ln()V
 
     goto :goto_5
 
@@ -1294,7 +1294,7 @@
     .line 133
     new-instance v0, Ljava/io/File;
 
-    invoke-virtual {p0}, Lcom/android/settings/backup/SettingsBackupAgent;->getCacheDir()Ljava/io/File;
+    invoke-virtual {p0}, Lcom/android/settings_ext/backup/SettingsBackupAgent;->getCacheDir()Ljava/io/File;
 
     move-result-object v2
 
@@ -1302,10 +1302,10 @@
 
     invoke-direct {v0, v2, v4}, Ljava/io/File;-><init>(Ljava/io/File;Ljava/lang/String;)V
 
-    iput-object v0, p0, Lcom/android/settings/backup/SettingsBackupAgent;->LB:Ljava/io/File;
+    iput-object v0, p0, Lcom/android/settings_ext/backup/SettingsBackupAgent;->LB:Ljava/io/File;
 
     .line 134
-    iget-object v0, p0, Lcom/android/settings/backup/SettingsBackupAgent;->LB:Ljava/io/File;
+    iget-object v0, p0, Lcom/android/settings_ext/backup/SettingsBackupAgent;->LB:Ljava/io/File;
 
     invoke-virtual {v0}, Ljava/io/File;->exists()Z
 
@@ -1314,7 +1314,7 @@
     if-nez v0, :cond_12
 
     .line 135
-    iget-object v0, p0, Lcom/android/settings/backup/SettingsBackupAgent;->LB:Ljava/io/File;
+    iget-object v0, p0, Lcom/android/settings_ext/backup/SettingsBackupAgent;->LB:Ljava/io/File;
 
     invoke-virtual {v0}, Ljava/io/File;->mkdirs()Z
 
@@ -1322,7 +1322,7 @@
     :cond_12
     new-instance v0, Ljava/io/File;
 
-    iget-object v2, p0, Lcom/android/settings/backup/SettingsBackupAgent;->LB:Ljava/io/File;
+    iget-object v2, p0, Lcom/android/settings_ext/backup/SettingsBackupAgent;->LB:Ljava/io/File;
 
     const-string v4, "accounts.db"
 
@@ -1661,7 +1661,7 @@
     .line 172
     new-instance v0, Ljava/io/File;
 
-    invoke-virtual {p0}, Lcom/android/settings/backup/SettingsBackupAgent;->getCacheDir()Ljava/io/File;
+    invoke-virtual {p0}, Lcom/android/settings_ext/backup/SettingsBackupAgent;->getCacheDir()Ljava/io/File;
 
     move-result-object v1
 
@@ -1669,10 +1669,10 @@
 
     invoke-direct {v0, v1, v3}, Ljava/io/File;-><init>(Ljava/io/File;Ljava/lang/String;)V
 
-    iput-object v0, p0, Lcom/android/settings/backup/SettingsBackupAgent;->LB:Ljava/io/File;
+    iput-object v0, p0, Lcom/android/settings_ext/backup/SettingsBackupAgent;->LB:Ljava/io/File;
 
     .line 173
-    iget-object v0, p0, Lcom/android/settings/backup/SettingsBackupAgent;->LB:Ljava/io/File;
+    iget-object v0, p0, Lcom/android/settings_ext/backup/SettingsBackupAgent;->LB:Ljava/io/File;
 
     invoke-virtual {v0}, Ljava/io/File;->exists()Z
 
@@ -1681,7 +1681,7 @@
     if-nez v0, :cond_0
 
     .line 174
-    iget-object v0, p0, Lcom/android/settings/backup/SettingsBackupAgent;->LB:Ljava/io/File;
+    iget-object v0, p0, Lcom/android/settings_ext/backup/SettingsBackupAgent;->LB:Ljava/io/File;
 
     invoke-virtual {v0}, Ljava/io/File;->mkdirs()Z
 
@@ -1690,39 +1690,39 @@
     if-ne p2, v10, :cond_a
 
     .line 177
-    new-instance v0, Lcom/android/settings/backup/h;
+    new-instance v0, Lcom/android/settings_ext/backup/h;
 
-    invoke-virtual {p0}, Lcom/android/settings/backup/SettingsBackupAgent;->getApplicationContext()Landroid/content/Context;
+    invoke-virtual {p0}, Lcom/android/settings_ext/backup/SettingsBackupAgent;->getApplicationContext()Landroid/content/Context;
 
     move-result-object v1
 
-    invoke-direct {v0, v1}, Lcom/android/settings/backup/h;-><init>(Landroid/content/Context;)V
+    invoke-direct {v0, v1}, Lcom/android/settings_ext/backup/h;-><init>(Landroid/content/Context;)V
 
-    iput-object v0, p0, Lcom/android/settings/backup/SettingsBackupAgent;->Ma:Lcom/android/settings/backup/h;
+    iput-object v0, p0, Lcom/android/settings_ext/backup/SettingsBackupAgent;->Ma:Lcom/android/settings_ext/backup/h;
 
     .line 178
-    invoke-static {}, Lcom/android/settings/backup/SettingProtos$Settings;->kQ()Lcom/android/settings/backup/n;
+    invoke-static {}, Lcom/android/settings_ext/backup/SettingProtos$Settings;->kQ()Lcom/android/settings_ext/backup/n;
 
     move-result-object v1
 
     .line 179
-    iget-object v0, p0, Lcom/android/settings/backup/SettingsBackupAgent;->Ma:Lcom/android/settings/backup/h;
+    iget-object v0, p0, Lcom/android/settings_ext/backup/SettingsBackupAgent;->Ma:Lcom/android/settings_ext/backup/h;
 
-    invoke-virtual {v0}, Lcom/android/settings/backup/h;->kc()Ljava/util/Vector;
+    invoke-virtual {v0}, Lcom/android/settings_ext/backup/h;->kc()Ljava/util/Vector;
 
     move-result-object v0
 
     .line 180
-    iget-object v3, p0, Lcom/android/settings/backup/SettingsBackupAgent;->Ma:Lcom/android/settings/backup/h;
+    iget-object v3, p0, Lcom/android/settings_ext/backup/SettingsBackupAgent;->Ma:Lcom/android/settings_ext/backup/h;
 
-    invoke-virtual {v3}, Lcom/android/settings/backup/h;->kd()Ljava/util/Vector;
+    invoke-virtual {v3}, Lcom/android/settings_ext/backup/h;->kd()Ljava/util/Vector;
 
     move-result-object v3
 
     .line 181
-    iget-object v4, p0, Lcom/android/settings/backup/SettingsBackupAgent;->Ma:Lcom/android/settings/backup/h;
+    iget-object v4, p0, Lcom/android/settings_ext/backup/SettingsBackupAgent;->Ma:Lcom/android/settings_ext/backup/h;
 
-    invoke-virtual {v4}, Lcom/android/settings/backup/h;->kb()Ljava/util/Vector;
+    invoke-virtual {v4}, Lcom/android/settings_ext/backup/h;->kb()Ljava/util/Vector;
 
     move-result-object v4
 
@@ -1747,13 +1747,13 @@
 
     .line 184
     :try_start_0
-    iget-object v7, p0, Lcom/android/settings/backup/SettingsBackupAgent;->Ma:Lcom/android/settings/backup/h;
+    iget-object v7, p0, Lcom/android/settings_ext/backup/SettingsBackupAgent;->Ma:Lcom/android/settings_ext/backup/h;
 
     invoke-static {v0}, Ljava/lang/Long;->parseLong(Ljava/lang/String;)J
 
     move-result-wide v8
 
-    invoke-virtual {v7, v8, v9}, Lcom/android/settings/backup/h;->n(J)Lcom/android/settings/backup/SettingProtos$SystemSetting;
+    invoke-virtual {v7, v8, v9}, Lcom/android/settings_ext/backup/h;->n(J)Lcom/android/settings_ext/backup/SettingProtos$SystemSetting;
 
     move-result-object v0
 
@@ -1761,7 +1761,7 @@
     if-eqz v0, :cond_1
 
     .line 186
-    invoke-virtual {v1, v0}, Lcom/android/settings/backup/n;->b(Lcom/android/settings/backup/SettingProtos$SystemSetting;)Lcom/android/settings/backup/n;
+    invoke-virtual {v1, v0}, Lcom/android/settings_ext/backup/n;->b(Lcom/android/settings_ext/backup/SettingProtos$SystemSetting;)Lcom/android/settings_ext/backup/n;
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 
@@ -1802,13 +1802,13 @@
 
     .line 194
     :try_start_1
-    iget-object v5, p0, Lcom/android/settings/backup/SettingsBackupAgent;->Ma:Lcom/android/settings/backup/h;
+    iget-object v5, p0, Lcom/android/settings_ext/backup/SettingsBackupAgent;->Ma:Lcom/android/settings_ext/backup/h;
 
     invoke-static {v0}, Ljava/lang/Long;->parseLong(Ljava/lang/String;)J
 
     move-result-wide v8
 
-    invoke-virtual {v5, v8, v9}, Lcom/android/settings/backup/h;->o(J)Lcom/android/settings/backup/SettingProtos$SecureSetting;
+    invoke-virtual {v5, v8, v9}, Lcom/android/settings_ext/backup/h;->o(J)Lcom/android/settings_ext/backup/SettingProtos$SecureSetting;
 
     move-result-object v0
 
@@ -1816,7 +1816,7 @@
     if-eqz v0, :cond_3
 
     .line 196
-    invoke-virtual {v1, v0}, Lcom/android/settings/backup/n;->d(Lcom/android/settings/backup/SettingProtos$SecureSetting;)Lcom/android/settings/backup/n;
+    invoke-virtual {v1, v0}, Lcom/android/settings_ext/backup/n;->d(Lcom/android/settings_ext/backup/SettingProtos$SecureSetting;)Lcom/android/settings_ext/backup/n;
     :try_end_1
     .catch Ljava/lang/Exception; {:try_start_1 .. :try_end_1} :catch_1
 
@@ -1852,25 +1852,25 @@
 
     move-result-object v0
 
-    check-cast v0, Lcom/android/settings/backup/SettingProtos$LockSetting;
+    check-cast v0, Lcom/android/settings_ext/backup/SettingProtos$LockSetting;
 
     .line 203
-    invoke-virtual {v1, v0}, Lcom/android/settings/backup/n;->d(Lcom/android/settings/backup/SettingProtos$LockSetting;)Lcom/android/settings/backup/n;
+    invoke-virtual {v1, v0}, Lcom/android/settings_ext/backup/n;->d(Lcom/android/settings_ext/backup/SettingProtos$LockSetting;)Lcom/android/settings_ext/backup/n;
 
     goto :goto_2
 
     .line 205
     :cond_5
-    invoke-static {}, Lcom/android/settings/backup/SyncRootProtos$SyncRoot;->ls()Lcom/android/settings/backup/s;
+    invoke-static {}, Lcom/android/settings_ext/backup/SyncRootProtos$SyncRoot;->ls()Lcom/android/settings_ext/backup/s;
 
     move-result-object v0
 
     .line 206
-    invoke-virtual {v1}, Lcom/android/settings/backup/n;->kW()Lcom/android/settings/backup/SettingProtos$Settings;
+    invoke-virtual {v1}, Lcom/android/settings_ext/backup/n;->kW()Lcom/android/settings_ext/backup/SettingProtos$Settings;
 
     move-result-object v1
 
-    invoke-virtual {v0, v1}, Lcom/android/settings/backup/s;->f(Lcom/android/settings/backup/SettingProtos$Settings;)Lcom/android/settings/backup/s;
+    invoke-virtual {v0, v1}, Lcom/android/settings_ext/backup/s;->f(Lcom/android/settings_ext/backup/SettingProtos$Settings;)Lcom/android/settings_ext/backup/s;
 
     .line 209
     :try_start_2
@@ -1886,11 +1886,11 @@
 
     .line 210
     :try_start_3
-    invoke-virtual {v0}, Lcom/android/settings/backup/s;->ly()Lcom/android/settings/backup/SyncRootProtos$SyncRoot;
+    invoke-virtual {v0}, Lcom/android/settings_ext/backup/s;->ly()Lcom/android/settings_ext/backup/SyncRootProtos$SyncRoot;
 
     move-result-object v0
 
-    invoke-virtual {v0, v1}, Lcom/android/settings/backup/SyncRootProtos$SyncRoot;->writeTo(Ljava/io/OutputStream;)V
+    invoke-virtual {v0, v1}, Lcom/android/settings_ext/backup/SyncRootProtos$SyncRoot;->writeTo(Ljava/io/OutputStream;)V
     :try_end_3
     .catchall {:try_start_3 .. :try_end_3} :catchall_8
 
@@ -1902,7 +1902,7 @@
 
     .line 218
     :cond_6
-    sget-object v1, Lcom/android/settings/backup/f;->LN:[Lcom/android/settings/backup/u;
+    sget-object v1, Lcom/android/settings_ext/backup/f;->LN:[Lcom/android/settings_ext/backup/u;
 
     array-length v2, v1
 
@@ -1914,9 +1914,9 @@
     aget-object v3, v1, v0
 
     .line 219
-    iget-object v3, v3, Lcom/android/settings/backup/u;->Mc:Ljava/lang/String;
+    iget-object v3, v3, Lcom/android/settings_ext/backup/u;->Mc:Ljava/lang/String;
 
-    invoke-virtual {p0, v3}, Lcom/android/settings/backup/SettingsBackupAgent;->addAttachedFile(Ljava/lang/String;)V
+    invoke-virtual {p0, v3}, Lcom/android/settings_ext/backup/SettingsBackupAgent;->addAttachedFile(Ljava/lang/String;)V
 
     .line 218
     add-int/lit8 v0, v0, 0x1
@@ -1940,48 +1940,48 @@
 
     .line 222
     :cond_8
-    iget-object v0, p0, Lcom/android/settings/backup/SettingsBackupAgent;->Ma:Lcom/android/settings/backup/h;
+    iget-object v0, p0, Lcom/android/settings_ext/backup/SettingsBackupAgent;->Ma:Lcom/android/settings_ext/backup/h;
 
-    invoke-virtual {v0, v10}, Lcom/android/settings/backup/h;->aK(I)Ljava/io/File;
+    invoke-virtual {v0, v10}, Lcom/android/settings_ext/backup/h;->aK(I)Ljava/io/File;
 
     move-result-object v7
 
     .line 223
-    iget-object v0, p0, Lcom/android/settings/backup/SettingsBackupAgent;->Ma:Lcom/android/settings/backup/h;
+    iget-object v0, p0, Lcom/android/settings_ext/backup/SettingsBackupAgent;->Ma:Lcom/android/settings_ext/backup/h;
 
-    invoke-virtual {v0, v11}, Lcom/android/settings/backup/h;->aK(I)Ljava/io/File;
+    invoke-virtual {v0, v11}, Lcom/android/settings_ext/backup/h;->aK(I)Ljava/io/File;
 
     move-result-object v8
 
     .line 224
-    iget-object v0, p0, Lcom/android/settings/backup/SettingsBackupAgent;->Ma:Lcom/android/settings/backup/h;
+    iget-object v0, p0, Lcom/android/settings_ext/backup/SettingsBackupAgent;->Ma:Lcom/android/settings_ext/backup/h;
 
     const/4 v1, 0x4
 
-    invoke-virtual {v0, v1}, Lcom/android/settings/backup/h;->aK(I)Ljava/io/File;
+    invoke-virtual {v0, v1}, Lcom/android/settings_ext/backup/h;->aK(I)Ljava/io/File;
 
     move-result-object v9
 
     .line 225
-    iget-object v0, p0, Lcom/android/settings/backup/SettingsBackupAgent;->Ma:Lcom/android/settings/backup/h;
+    iget-object v0, p0, Lcom/android/settings_ext/backup/SettingsBackupAgent;->Ma:Lcom/android/settings_ext/backup/h;
 
     const/16 v1, 0x8
 
-    invoke-virtual {v0, v1}, Lcom/android/settings/backup/h;->aK(I)Ljava/io/File;
+    invoke-virtual {v0, v1}, Lcom/android/settings_ext/backup/h;->aK(I)Ljava/io/File;
 
     move-result-object v10
 
     .line 226
-    iget-object v0, p0, Lcom/android/settings/backup/SettingsBackupAgent;->Ma:Lcom/android/settings/backup/h;
+    iget-object v0, p0, Lcom/android/settings_ext/backup/SettingsBackupAgent;->Ma:Lcom/android/settings_ext/backup/h;
 
     const/16 v1, 0x10
 
-    invoke-virtual {v0, v1}, Lcom/android/settings/backup/h;->aK(I)Ljava/io/File;
+    invoke-virtual {v0, v1}, Lcom/android/settings_ext/backup/h;->aK(I)Ljava/io/File;
 
     move-result-object v11
 
     .line 227
-    new-instance v0, Lcom/android/settings/backup/g;
+    new-instance v0, Lcom/android/settings_ext/backup/g;
 
     invoke-virtual {v7}, Ljava/io/File;->getName()Ljava/lang/String;
 
@@ -2003,53 +2003,53 @@
 
     move-result-object v5
 
-    invoke-direct/range {v0 .. v5}, Lcom/android/settings/backup/g;-><init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+    invoke-direct/range {v0 .. v5}, Lcom/android/settings_ext/backup/g;-><init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
 
     .line 229
     new-instance v1, Ljava/io/File;
 
-    iget-object v2, p0, Lcom/android/settings/backup/SettingsBackupAgent;->LB:Ljava/io/File;
+    iget-object v2, p0, Lcom/android/settings_ext/backup/SettingsBackupAgent;->LB:Ljava/io/File;
 
     const-string v3, "settings_descript.xml"
 
     invoke-direct {v1, v2, v3}, Ljava/io/File;-><init>(Ljava/io/File;Ljava/lang/String;)V
 
-    invoke-virtual {v0, v1}, Lcom/android/settings/backup/g;->c(Ljava/io/File;)V
+    invoke-virtual {v0, v1}, Lcom/android/settings_ext/backup/g;->c(Ljava/io/File;)V
 
     .line 230
     invoke-virtual {v7}, Ljava/io/File;->getAbsolutePath()Ljava/lang/String;
 
     move-result-object v0
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/backup/SettingsBackupAgent;->addAttachedFile(Ljava/lang/String;)V
+    invoke-virtual {p0, v0}, Lcom/android/settings_ext/backup/SettingsBackupAgent;->addAttachedFile(Ljava/lang/String;)V
 
     .line 231
     invoke-virtual {v8}, Ljava/io/File;->getAbsolutePath()Ljava/lang/String;
 
     move-result-object v0
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/backup/SettingsBackupAgent;->addAttachedFile(Ljava/lang/String;)V
+    invoke-virtual {p0, v0}, Lcom/android/settings_ext/backup/SettingsBackupAgent;->addAttachedFile(Ljava/lang/String;)V
 
     .line 232
     invoke-virtual {v9}, Ljava/io/File;->getAbsolutePath()Ljava/lang/String;
 
     move-result-object v0
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/backup/SettingsBackupAgent;->addAttachedFile(Ljava/lang/String;)V
+    invoke-virtual {p0, v0}, Lcom/android/settings_ext/backup/SettingsBackupAgent;->addAttachedFile(Ljava/lang/String;)V
 
     .line 233
     invoke-virtual {v10}, Ljava/io/File;->getCanonicalPath()Ljava/lang/String;
 
     move-result-object v0
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/backup/SettingsBackupAgent;->addAttachedFile(Ljava/lang/String;)V
+    invoke-virtual {p0, v0}, Lcom/android/settings_ext/backup/SettingsBackupAgent;->addAttachedFile(Ljava/lang/String;)V
 
     .line 234
     invoke-virtual {v11}, Ljava/io/File;->getCanonicalPath()Ljava/lang/String;
 
     move-result-object v0
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/backup/SettingsBackupAgent;->addAttachedFile(Ljava/lang/String;)V
+    invoke-virtual {p0, v0}, Lcom/android/settings_ext/backup/SettingsBackupAgent;->addAttachedFile(Ljava/lang/String;)V
 
     .line 308
     :cond_9
@@ -2063,7 +2063,7 @@
     .line 238
     new-instance v0, Ljava/io/File;
 
-    iget-object v1, p0, Lcom/android/settings/backup/SettingsBackupAgent;->LB:Ljava/io/File;
+    iget-object v1, p0, Lcom/android/settings_ext/backup/SettingsBackupAgent;->LB:Ljava/io/File;
 
     const-string v3, "wpa_supplicant.conf"
 
@@ -2342,7 +2342,7 @@
     .line 271
     new-instance v0, Ljava/io/File;
 
-    invoke-virtual {p0}, Lcom/android/settings/backup/SettingsBackupAgent;->getCacheDir()Ljava/io/File;
+    invoke-virtual {p0}, Lcom/android/settings_ext/backup/SettingsBackupAgent;->getCacheDir()Ljava/io/File;
 
     move-result-object v1
 
@@ -2350,10 +2350,10 @@
 
     invoke-direct {v0, v1, v3}, Ljava/io/File;-><init>(Ljava/io/File;Ljava/lang/String;)V
 
-    iput-object v0, p0, Lcom/android/settings/backup/SettingsBackupAgent;->LB:Ljava/io/File;
+    iput-object v0, p0, Lcom/android/settings_ext/backup/SettingsBackupAgent;->LB:Ljava/io/File;
 
     .line 272
-    iget-object v0, p0, Lcom/android/settings/backup/SettingsBackupAgent;->LB:Ljava/io/File;
+    iget-object v0, p0, Lcom/android/settings_ext/backup/SettingsBackupAgent;->LB:Ljava/io/File;
 
     invoke-virtual {v0}, Ljava/io/File;->exists()Z
 
@@ -2362,7 +2362,7 @@
     if-nez v0, :cond_12
 
     .line 273
-    iget-object v0, p0, Lcom/android/settings/backup/SettingsBackupAgent;->LB:Ljava/io/File;
+    iget-object v0, p0, Lcom/android/settings_ext/backup/SettingsBackupAgent;->LB:Ljava/io/File;
 
     invoke-virtual {v0}, Ljava/io/File;->mkdirs()Z
 
@@ -2370,14 +2370,14 @@
     :cond_12
     new-instance v3, Ljava/io/File;
 
-    iget-object v0, p0, Lcom/android/settings/backup/SettingsBackupAgent;->LB:Ljava/io/File;
+    iget-object v0, p0, Lcom/android/settings_ext/backup/SettingsBackupAgent;->LB:Ljava/io/File;
 
     const-string v1, "accounts.db"
 
     invoke-direct {v3, v0, v1}, Ljava/io/File;-><init>(Ljava/io/File;Ljava/lang/String;)V
 
     .line 276
-    sget-object v0, Lcom/android/settings/backup/a;->LH:Ljava/lang/String;
+    sget-object v0, Lcom/android/settings_ext/backup/a;->LH:Ljava/lang/String;
 
     invoke-virtual {v3}, Ljava/io/File;->getAbsolutePath()Ljava/lang/String;
 
@@ -2735,29 +2735,29 @@
     if-ne v0, v1, :cond_1
 
     .line 423
-    iget-object v0, p0, Lcom/android/settings/backup/SettingsBackupAgent;->Ma:Lcom/android/settings/backup/h;
+    iget-object v0, p0, Lcom/android/settings_ext/backup/SettingsBackupAgent;->Ma:Lcom/android/settings_ext/backup/h;
 
-    iget-object v1, p0, Lcom/android/settings/backup/SettingsBackupAgent;->LU:Ljava/util/HashMap;
+    iget-object v1, p0, Lcom/android/settings_ext/backup/SettingsBackupAgent;->LU:Ljava/util/HashMap;
 
-    invoke-virtual {v0, v1}, Lcom/android/settings/backup/h;->b(Ljava/util/HashMap;)V
+    invoke-virtual {v0, v1}, Lcom/android/settings_ext/backup/h;->b(Ljava/util/HashMap;)V
 
     .line 424
-    iget-object v0, p0, Lcom/android/settings/backup/SettingsBackupAgent;->Ma:Lcom/android/settings/backup/h;
+    iget-object v0, p0, Lcom/android/settings_ext/backup/SettingsBackupAgent;->Ma:Lcom/android/settings_ext/backup/h;
 
-    invoke-virtual {v0}, Lcom/android/settings/backup/h;->ke()V
+    invoke-virtual {v0}, Lcom/android/settings_ext/backup/h;->ke()V
 
     .line 425
-    iget-object v0, p0, Lcom/android/settings/backup/SettingsBackupAgent;->Ma:Lcom/android/settings/backup/h;
+    iget-object v0, p0, Lcom/android/settings_ext/backup/SettingsBackupAgent;->Ma:Lcom/android/settings_ext/backup/h;
 
-    invoke-virtual {v0}, Lcom/android/settings/backup/h;->kf()V
+    invoke-virtual {v0}, Lcom/android/settings_ext/backup/h;->kf()V
 
     .line 426
-    iget-object v0, p0, Lcom/android/settings/backup/SettingsBackupAgent;->LB:Ljava/io/File;
+    iget-object v0, p0, Lcom/android/settings_ext/backup/SettingsBackupAgent;->LB:Ljava/io/File;
 
     if-eqz v0, :cond_0
 
     .line 427
-    iget-object v0, p0, Lcom/android/settings/backup/SettingsBackupAgent;->LB:Ljava/io/File;
+    iget-object v0, p0, Lcom/android/settings_ext/backup/SettingsBackupAgent;->LB:Ljava/io/File;
 
     invoke-virtual {v0}, Ljava/io/File;->getAbsolutePath()Ljava/lang/String;
 
@@ -2781,23 +2781,23 @@
     if-ne v0, v1, :cond_0
 
     .line 430
-    new-instance v0, Lcom/android/settings/backup/a;
+    new-instance v0, Lcom/android/settings_ext/backup/a;
 
-    invoke-virtual {p0}, Lcom/android/settings/backup/SettingsBackupAgent;->getApplicationContext()Landroid/content/Context;
+    invoke-virtual {p0}, Lcom/android/settings_ext/backup/SettingsBackupAgent;->getApplicationContext()Landroid/content/Context;
 
     move-result-object v1
 
-    invoke-direct {v0, v1}, Lcom/android/settings/backup/a;-><init>(Landroid/content/Context;)V
+    invoke-direct {v0, v1}, Lcom/android/settings_ext/backup/a;-><init>(Landroid/content/Context;)V
 
     .line 431
-    iget-object v1, p0, Lcom/android/settings/backup/SettingsBackupAgent;->LB:Ljava/io/File;
+    iget-object v1, p0, Lcom/android/settings_ext/backup/SettingsBackupAgent;->LB:Ljava/io/File;
 
-    invoke-virtual {v0, v1}, Lcom/android/settings/backup/a;->b(Ljava/io/File;)V
+    invoke-virtual {v0, v1}, Lcom/android/settings_ext/backup/a;->b(Ljava/io/File;)V
 
     .line 432
     new-instance v1, Ljava/io/File;
 
-    iget-object v2, p0, Lcom/android/settings/backup/SettingsBackupAgent;->LB:Ljava/io/File;
+    iget-object v2, p0, Lcom/android/settings_ext/backup/SettingsBackupAgent;->LB:Ljava/io/File;
 
     const-string v3, "accounts.db"
 
@@ -2811,16 +2811,16 @@
     if-eqz v2, :cond_0
 
     .line 434
-    invoke-virtual {v0, v1}, Lcom/android/settings/backup/a;->a(Ljava/io/File;)V
+    invoke-virtual {v0, v1}, Lcom/android/settings_ext/backup/a;->a(Ljava/io/File;)V
 
     .line 435
-    invoke-virtual {v0}, Lcom/android/settings/backup/a;->jX()V
+    invoke-virtual {v0}, Lcom/android/settings_ext/backup/a;->jX()V
 
     .line 436
-    invoke-virtual {v0}, Lcom/android/settings/backup/a;->jT()V
+    invoke-virtual {v0}, Lcom/android/settings_ext/backup/a;->jT()V
 
     .line 437
-    invoke-virtual {v0}, Lcom/android/settings/backup/a;->jY()V
+    invoke-virtual {v0}, Lcom/android/settings_ext/backup/a;->jY()V
 
     .line 438
     invoke-virtual {v1}, Ljava/io/File;->delete()Z
@@ -2850,7 +2850,7 @@
     .line 316
     new-instance v7, Ljava/io/File;
 
-    iget-object v0, p0, Lcom/android/settings/backup/SettingsBackupAgent;->LB:Ljava/io/File;
+    iget-object v0, p0, Lcom/android/settings_ext/backup/SettingsBackupAgent;->LB:Ljava/io/File;
 
     const-string v1, "settings_descript.xml"
 
@@ -2898,7 +2898,7 @@
     .line 323
     new-instance v7, Ljava/io/File;
 
-    iget-object v0, p0, Lcom/android/settings/backup/SettingsBackupAgent;->LB:Ljava/io/File;
+    iget-object v0, p0, Lcom/android/settings_ext/backup/SettingsBackupAgent;->LB:Ljava/io/File;
 
     const-string v1, "EmailProvider.db"
 
@@ -2907,7 +2907,7 @@
     .line 324
     const-string v0, "/data/data/com.android.email/databases/EmailProvider.db"
 
-    iget-object v1, p0, Lcom/android/settings/backup/SettingsBackupAgent;->LB:Ljava/io/File;
+    iget-object v1, p0, Lcom/android/settings_ext/backup/SettingsBackupAgent;->LB:Ljava/io/File;
 
     invoke-virtual {v1}, Ljava/io/File;->getAbsolutePath()Ljava/lang/String;
 
@@ -2946,7 +2946,7 @@
     :cond_3
     new-instance v7, Ljava/io/File;
 
-    iget-object v0, p0, Lcom/android/settings/backup/SettingsBackupAgent;->LB:Ljava/io/File;
+    iget-object v0, p0, Lcom/android/settings_ext/backup/SettingsBackupAgent;->LB:Ljava/io/File;
 
     const-string v1, "EmailProviderBackup.db"
 
@@ -2955,7 +2955,7 @@
     .line 330
     const-string v0, "/data/data/com.android.email/databases/EmailProviderBackup.db"
 
-    iget-object v1, p0, Lcom/android/settings/backup/SettingsBackupAgent;->LB:Ljava/io/File;
+    iget-object v1, p0, Lcom/android/settings_ext/backup/SettingsBackupAgent;->LB:Ljava/io/File;
 
     invoke-virtual {v1}, Ljava/io/File;->getAbsolutePath()Ljava/lang/String;
 
@@ -2994,7 +2994,7 @@
     :cond_4
     new-instance v7, Ljava/io/File;
 
-    iget-object v0, p0, Lcom/android/settings/backup/SettingsBackupAgent;->LB:Ljava/io/File;
+    iget-object v0, p0, Lcom/android/settings_ext/backup/SettingsBackupAgent;->LB:Ljava/io/File;
 
     const-string v1, "EmailProviderBody.db"
 
@@ -3003,7 +3003,7 @@
     .line 336
     const-string v0, "/data/data/com.android.email/databases/EmailProviderBody.db"
 
-    iget-object v1, p0, Lcom/android/settings/backup/SettingsBackupAgent;->LB:Ljava/io/File;
+    iget-object v1, p0, Lcom/android/settings_ext/backup/SettingsBackupAgent;->LB:Ljava/io/File;
 
     invoke-virtual {v1}, Ljava/io/File;->getAbsolutePath()Ljava/lang/String;
 

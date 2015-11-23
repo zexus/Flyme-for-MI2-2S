@@ -1,4 +1,4 @@
-.class public Lcom/android/settings/wifi/WifiAPITest;
+.class public Lcom/android/settings_ext/wifi/WifiAPITest;
 .super Lmiui/preference/PreferenceActivity;
 .source "WifiAPITest.java"
 
@@ -29,32 +29,32 @@
     return-void
 .end method
 
-.method static synthetic a(Lcom/android/settings/wifi/WifiAPITest;)I
+.method static synthetic a(Lcom/android/settings_ext/wifi/WifiAPITest;)I
     .locals 1
 
     .prologue
     .line 39
-    iget v0, p0, Lcom/android/settings/wifi/WifiAPITest;->aud:I
+    iget v0, p0, Lcom/android/settings_ext/wifi/WifiAPITest;->aud:I
 
     return v0
 .end method
 
-.method static synthetic a(Lcom/android/settings/wifi/WifiAPITest;I)I
+.method static synthetic a(Lcom/android/settings_ext/wifi/WifiAPITest;I)I
     .locals 0
 
     .prologue
     .line 39
-    iput p1, p0, Lcom/android/settings/wifi/WifiAPITest;->aud:I
+    iput p1, p0, Lcom/android/settings_ext/wifi/WifiAPITest;->aud:I
 
     return p1
 .end method
 
-.method static synthetic b(Lcom/android/settings/wifi/WifiAPITest;)Landroid/net/wifi/WifiManager;
+.method static synthetic b(Lcom/android/settings_ext/wifi/WifiAPITest;)Landroid/net/wifi/WifiManager;
     .locals 1
 
     .prologue
     .line 39
-    iget-object v0, p0, Lcom/android/settings/wifi/WifiAPITest;->hD:Landroid/net/wifi/WifiManager;
+    iget-object v0, p0, Lcom/android/settings_ext/wifi/WifiAPITest;->hD:Landroid/net/wifi/WifiManager;
 
     return-object v0
 .end method
@@ -66,10 +66,10 @@
     .line 74
     const v0, 0x7f04012c
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/wifi/WifiAPITest;->addPreferencesFromResource(I)V
+    invoke-virtual {p0, v0}, Lcom/android/settings_ext/wifi/WifiAPITest;->addPreferencesFromResource(I)V
 
     .line 76
-    invoke-virtual {p0}, Lcom/android/settings/wifi/WifiAPITest;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
+    invoke-virtual {p0}, Lcom/android/settings_ext/wifi/WifiAPITest;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
 
     move-result-object v0
 
@@ -80,10 +80,10 @@
 
     move-result-object v1
 
-    iput-object v1, p0, Lcom/android/settings/wifi/WifiAPITest;->aue:Landroid/preference/Preference;
+    iput-object v1, p0, Lcom/android/settings_ext/wifi/WifiAPITest;->aue:Landroid/preference/Preference;
 
     .line 79
-    iget-object v1, p0, Lcom/android/settings/wifi/WifiAPITest;->aue:Landroid/preference/Preference;
+    iget-object v1, p0, Lcom/android/settings_ext/wifi/WifiAPITest;->aue:Landroid/preference/Preference;
 
     invoke-virtual {v1, p0}, Landroid/preference/Preference;->setOnPreferenceClickListener(Landroid/preference/Preference$OnPreferenceClickListener;)V
 
@@ -94,10 +94,10 @@
 
     move-result-object v1
 
-    iput-object v1, p0, Lcom/android/settings/wifi/WifiAPITest;->auf:Landroid/preference/Preference;
+    iput-object v1, p0, Lcom/android/settings_ext/wifi/WifiAPITest;->auf:Landroid/preference/Preference;
 
     .line 82
-    iget-object v1, p0, Lcom/android/settings/wifi/WifiAPITest;->auf:Landroid/preference/Preference;
+    iget-object v1, p0, Lcom/android/settings_ext/wifi/WifiAPITest;->auf:Landroid/preference/Preference;
 
     invoke-virtual {v1, p0}, Landroid/preference/Preference;->setOnPreferenceClickListener(Landroid/preference/Preference$OnPreferenceClickListener;)V
 
@@ -108,10 +108,10 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/wifi/WifiAPITest;->aug:Landroid/preference/Preference;
+    iput-object v0, p0, Lcom/android/settings_ext/wifi/WifiAPITest;->aug:Landroid/preference/Preference;
 
     .line 85
-    iget-object v0, p0, Lcom/android/settings/wifi/WifiAPITest;->aug:Landroid/preference/Preference;
+    iget-object v0, p0, Lcom/android/settings_ext/wifi/WifiAPITest;->aug:Landroid/preference/Preference;
 
     invoke-virtual {v0, p0}, Landroid/preference/Preference;->setOnPreferenceClickListener(Landroid/preference/Preference$OnPreferenceClickListener;)V
 
@@ -129,18 +129,18 @@
     invoke-super {p0, p1}, Lmiui/preference/PreferenceActivity;->onCreate(Landroid/os/Bundle;)V
 
     .line 68
-    invoke-direct {p0}, Lcom/android/settings/wifi/WifiAPITest;->uJ()V
+    invoke-direct {p0}, Lcom/android/settings_ext/wifi/WifiAPITest;->uJ()V
 
     .line 69
     const-string v0, "wifi"
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/wifi/WifiAPITest;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
+    invoke-virtual {p0, v0}, Lcom/android/settings_ext/wifi/WifiAPITest;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object v0
 
     check-cast v0, Landroid/net/wifi/WifiManager;
 
-    iput-object v0, p0, Lcom/android/settings/wifi/WifiAPITest;->hD:Landroid/net/wifi/WifiManager;
+    iput-object v0, p0, Lcom/android/settings_ext/wifi/WifiAPITest;->hD:Landroid/net/wifi/WifiManager;
 
     .line 70
     return-void
@@ -151,12 +151,12 @@
 
     .prologue
     .line 103
-    iget-object v0, p0, Lcom/android/settings/wifi/WifiAPITest;->aue:Landroid/preference/Preference;
+    iget-object v0, p0, Lcom/android/settings_ext/wifi/WifiAPITest;->aue:Landroid/preference/Preference;
 
     if-ne p1, v0, :cond_1
 
     .line 104
-    iget-object v0, p0, Lcom/android/settings/wifi/WifiAPITest;->hD:Landroid/net/wifi/WifiManager;
+    iget-object v0, p0, Lcom/android/settings_ext/wifi/WifiAPITest;->hD:Landroid/net/wifi/WifiManager;
 
     invoke-virtual {v0}, Landroid/net/wifi/WifiManager;->disconnect()Z
 
@@ -169,7 +169,7 @@
 
     .line 105
     :cond_1
-    iget-object v0, p0, Lcom/android/settings/wifi/WifiAPITest;->auf:Landroid/preference/Preference;
+    iget-object v0, p0, Lcom/android/settings_ext/wifi/WifiAPITest;->auf:Landroid/preference/Preference;
 
     if-ne p1, v0, :cond_2
 
@@ -199,18 +199,18 @@
     .line 112
     const-string v2, "Ok"
 
-    new-instance v3, Lcom/android/settings/wifi/L;
+    new-instance v3, Lcom/android/settings_ext/wifi/L;
 
-    invoke-direct {v3, p0, v1}, Lcom/android/settings/wifi/L;-><init>(Lcom/android/settings/wifi/WifiAPITest;Landroid/widget/EditText;)V
+    invoke-direct {v3, p0, v1}, Lcom/android/settings_ext/wifi/L;-><init>(Lcom/android/settings_ext/wifi/WifiAPITest;Landroid/widget/EditText;)V
 
     invoke-virtual {v0, v2, v3}, Landroid/app/AlertDialog$Builder;->setPositiveButton(Ljava/lang/CharSequence;Landroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
     .line 126
     const-string v1, "Cancel"
 
-    new-instance v2, Lcom/android/settings/wifi/M;
+    new-instance v2, Lcom/android/settings_ext/wifi/M;
 
-    invoke-direct {v2, p0}, Lcom/android/settings/wifi/M;-><init>(Lcom/android/settings/wifi/WifiAPITest;)V
+    invoke-direct {v2, p0}, Lcom/android/settings_ext/wifi/M;-><init>(Lcom/android/settings_ext/wifi/WifiAPITest;)V
 
     invoke-virtual {v0, v1, v2}, Landroid/app/AlertDialog$Builder;->setNegativeButton(Ljava/lang/CharSequence;Landroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
@@ -221,7 +221,7 @@
 
     .line 132
     :cond_2
-    iget-object v0, p0, Lcom/android/settings/wifi/WifiAPITest;->aug:Landroid/preference/Preference;
+    iget-object v0, p0, Lcom/android/settings_ext/wifi/WifiAPITest;->aug:Landroid/preference/Preference;
 
     if-ne p1, v0, :cond_0
 
@@ -251,18 +251,18 @@
     .line 139
     const-string v2, "Ok"
 
-    new-instance v3, Lcom/android/settings/wifi/N;
+    new-instance v3, Lcom/android/settings_ext/wifi/N;
 
-    invoke-direct {v3, p0, v1}, Lcom/android/settings/wifi/N;-><init>(Lcom/android/settings/wifi/WifiAPITest;Landroid/widget/EditText;)V
+    invoke-direct {v3, p0, v1}, Lcom/android/settings_ext/wifi/N;-><init>(Lcom/android/settings_ext/wifi/WifiAPITest;Landroid/widget/EditText;)V
 
     invoke-virtual {v0, v2, v3}, Landroid/app/AlertDialog$Builder;->setPositiveButton(Ljava/lang/CharSequence;Landroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
     .line 153
     const-string v1, "Cancel"
 
-    new-instance v2, Lcom/android/settings/wifi/O;
+    new-instance v2, Lcom/android/settings_ext/wifi/O;
 
-    invoke-direct {v2, p0}, Lcom/android/settings/wifi/O;-><init>(Lcom/android/settings/wifi/WifiAPITest;)V
+    invoke-direct {v2, p0}, Lcom/android/settings_ext/wifi/O;-><init>(Lcom/android/settings_ext/wifi/WifiAPITest;)V
 
     invoke-virtual {v0, v1, v2}, Landroid/app/AlertDialog$Builder;->setNegativeButton(Ljava/lang/CharSequence;Landroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 

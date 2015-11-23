@@ -1,4 +1,4 @@
-.class Lcom/android/settings/display/w;
+.class Lcom/android/settings_ext/display/w;
 .super Landroid/database/ContentObserver;
 .source "PaperModeFragment.java"
 
@@ -6,18 +6,18 @@
 # instance fields
 .field final synthetic VE:Landroid/preference/CheckBoxPreference;
 
-.field final synthetic VF:Lcom/android/settings/display/PaperModeFragment;
+.field final synthetic VF:Lcom/android/settings_ext/display/PaperModeFragment;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/display/PaperModeFragment;Landroid/os/Handler;Landroid/preference/CheckBoxPreference;)V
+.method constructor <init>(Lcom/android/settings_ext/display/PaperModeFragment;Landroid/os/Handler;Landroid/preference/CheckBoxPreference;)V
     .locals 0
 
     .prologue
     .line 104
-    iput-object p1, p0, Lcom/android/settings/display/w;->VF:Lcom/android/settings/display/PaperModeFragment;
+    iput-object p1, p0, Lcom/android/settings_ext/display/w;->VF:Lcom/android/settings_ext/display/PaperModeFragment;
 
-    iput-object p3, p0, Lcom/android/settings/display/w;->VE:Landroid/preference/CheckBoxPreference;
+    iput-object p3, p0, Lcom/android/settings_ext/display/w;->VE:Landroid/preference/CheckBoxPreference;
 
     invoke-direct {p0, p2}, Landroid/database/ContentObserver;-><init>(Landroid/os/Handler;)V
 
@@ -31,15 +31,15 @@
 
     .prologue
     .line 107
-    iget-object v0, p0, Lcom/android/settings/display/w;->VE:Landroid/preference/CheckBoxPreference;
+    iget-object v0, p0, Lcom/android/settings_ext/display/w;->VE:Landroid/preference/CheckBoxPreference;
 
-    iget-object v1, p0, Lcom/android/settings/display/w;->VF:Lcom/android/settings/display/PaperModeFragment;
+    iget-object v1, p0, Lcom/android/settings_ext/display/w;->VF:Lcom/android/settings_ext/display/PaperModeFragment;
 
-    invoke-virtual {v1}, Lcom/android/settings/display/PaperModeFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {v1}, Lcom/android/settings_ext/display/PaperModeFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v1
 
-    invoke-static {v1}, Lcom/android/settings/display/PaperModeFragment;->aI(Landroid/content/Context;)Z
+    invoke-static {v1}, Lcom/android/settings_ext/display/PaperModeFragment;->aI(Landroid/content/Context;)Z
 
     move-result v1
 

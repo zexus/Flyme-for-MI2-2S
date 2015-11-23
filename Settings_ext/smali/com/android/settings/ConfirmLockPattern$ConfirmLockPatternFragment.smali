@@ -1,4 +1,4 @@
-.class public Lcom/android/settings/ConfirmLockPattern$ConfirmLockPatternFragment;
+.class public Lcom/android/settings_ext/ConfirmLockPattern$ConfirmLockPatternFragment;
 .super Landroid/app/Fragment;
 .source "ConfirmLockPattern.java"
 
@@ -10,7 +10,7 @@
 
 .field private ej:Landroid/os/CountDownTimer;
 
-.field private en:Lcom/android/settings/LockPatternView;
+.field private en:Lcom/android/settings_ext/LockPatternView;
 
 .field protected eo:Landroid/security/MiuiLockPatternUtils;
 
@@ -28,13 +28,13 @@
 
 .field private ev:Ljava/lang/CharSequence;
 
-.field private ew:Lcom/android/settings/i;
+.field private ew:Lcom/android/settings_ext/i;
 
 .field private ex:Landroid/view/View$OnClickListener;
 
 .field private ey:Landroid/database/ContentObserver;
 
-.field private ez:Lcom/android/settings/cR;
+.field private ez:Lcom/android/settings_ext/cR;
 
 
 # direct methods
@@ -46,49 +46,49 @@
     invoke-direct {p0}, Landroid/app/Fragment;-><init>()V
 
     .line 383
-    new-instance v0, Lcom/android/settings/ay;
+    new-instance v0, Lcom/android/settings_ext/ay;
 
-    invoke-direct {v0, p0}, Lcom/android/settings/ay;-><init>(Lcom/android/settings/ConfirmLockPattern$ConfirmLockPatternFragment;)V
+    invoke-direct {v0, p0}, Lcom/android/settings_ext/ay;-><init>(Lcom/android/settings_ext/ConfirmLockPattern$ConfirmLockPatternFragment;)V
 
-    iput-object v0, p0, Lcom/android/settings/ConfirmLockPattern$ConfirmLockPatternFragment;->dx:Ljava/lang/Runnable;
+    iput-object v0, p0, Lcom/android/settings_ext/ConfirmLockPattern$ConfirmLockPatternFragment;->dx:Ljava/lang/Runnable;
 
     .line 400
-    new-instance v0, Lcom/android/settings/az;
+    new-instance v0, Lcom/android/settings_ext/az;
 
-    invoke-direct {v0, p0}, Lcom/android/settings/az;-><init>(Lcom/android/settings/ConfirmLockPattern$ConfirmLockPatternFragment;)V
+    invoke-direct {v0, p0}, Lcom/android/settings_ext/az;-><init>(Lcom/android/settings_ext/ConfirmLockPattern$ConfirmLockPatternFragment;)V
 
-    iput-object v0, p0, Lcom/android/settings/ConfirmLockPattern$ConfirmLockPatternFragment;->ez:Lcom/android/settings/cR;
+    iput-object v0, p0, Lcom/android/settings_ext/ConfirmLockPattern$ConfirmLockPatternFragment;->ez:Lcom/android/settings_ext/cR;
 
     .line 144
     return-void
 .end method
 
-.method static synthetic a(Lcom/android/settings/ConfirmLockPattern$ConfirmLockPatternFragment;I)I
+.method static synthetic a(Lcom/android/settings_ext/ConfirmLockPattern$ConfirmLockPatternFragment;I)I
     .locals 0
 
     .prologue
     .line 103
-    iput p1, p0, Lcom/android/settings/ConfirmLockPattern$ConfirmLockPatternFragment;->ei:I
+    iput p1, p0, Lcom/android/settings_ext/ConfirmLockPattern$ConfirmLockPatternFragment;->ei:I
 
     return p1
 .end method
 
-.method static synthetic a(Lcom/android/settings/ConfirmLockPattern$ConfirmLockPatternFragment;)Lcom/android/settings/i;
+.method static synthetic a(Lcom/android/settings_ext/ConfirmLockPattern$ConfirmLockPatternFragment;)Lcom/android/settings_ext/i;
     .locals 1
 
     .prologue
     .line 103
-    iget-object v0, p0, Lcom/android/settings/ConfirmLockPattern$ConfirmLockPatternFragment;->ew:Lcom/android/settings/i;
+    iget-object v0, p0, Lcom/android/settings_ext/ConfirmLockPattern$ConfirmLockPatternFragment;->ew:Lcom/android/settings_ext/i;
 
     return-object v0
 .end method
 
-.method static synthetic a(Lcom/android/settings/ConfirmLockPattern$ConfirmLockPatternFragment;Lcom/android/settings/i;)Lcom/android/settings/i;
+.method static synthetic a(Lcom/android/settings_ext/ConfirmLockPattern$ConfirmLockPatternFragment;Lcom/android/settings_ext/i;)Lcom/android/settings_ext/i;
     .locals 0
 
     .prologue
     .line 103
-    iput-object p1, p0, Lcom/android/settings/ConfirmLockPattern$ConfirmLockPatternFragment;->ew:Lcom/android/settings/i;
+    iput-object p1, p0, Lcom/android/settings_ext/ConfirmLockPattern$ConfirmLockPatternFragment;->ew:Lcom/android/settings_ext/i;
 
     return-object p1
 .end method
@@ -98,85 +98,85 @@
 
     .prologue
     .line 392
-    iget-object v0, p0, Lcom/android/settings/ConfirmLockPattern$ConfirmLockPatternFragment;->en:Lcom/android/settings/LockPatternView;
+    iget-object v0, p0, Lcom/android/settings_ext/ConfirmLockPattern$ConfirmLockPatternFragment;->en:Lcom/android/settings_ext/LockPatternView;
 
-    iget-object v1, p0, Lcom/android/settings/ConfirmLockPattern$ConfirmLockPatternFragment;->dx:Ljava/lang/Runnable;
+    iget-object v1, p0, Lcom/android/settings_ext/ConfirmLockPattern$ConfirmLockPatternFragment;->dx:Ljava/lang/Runnable;
 
-    invoke-virtual {v0, v1}, Lcom/android/settings/LockPatternView;->removeCallbacks(Ljava/lang/Runnable;)Z
+    invoke-virtual {v0, v1}, Lcom/android/settings_ext/LockPatternView;->removeCallbacks(Ljava/lang/Runnable;)Z
 
     .line 393
-    iget-object v0, p0, Lcom/android/settings/ConfirmLockPattern$ConfirmLockPatternFragment;->en:Lcom/android/settings/LockPatternView;
+    iget-object v0, p0, Lcom/android/settings_ext/ConfirmLockPattern$ConfirmLockPatternFragment;->en:Lcom/android/settings_ext/LockPatternView;
 
-    iget-object v1, p0, Lcom/android/settings/ConfirmLockPattern$ConfirmLockPatternFragment;->dx:Ljava/lang/Runnable;
+    iget-object v1, p0, Lcom/android/settings_ext/ConfirmLockPattern$ConfirmLockPatternFragment;->dx:Ljava/lang/Runnable;
 
     const-wide/16 v2, 0x7d0
 
-    invoke-virtual {v0, v1, v2, v3}, Lcom/android/settings/LockPatternView;->postDelayed(Ljava/lang/Runnable;J)Z
+    invoke-virtual {v0, v1, v2, v3}, Lcom/android/settings_ext/LockPatternView;->postDelayed(Ljava/lang/Runnable;J)Z
 
     .line 394
     return-void
 .end method
 
-.method static synthetic b(Lcom/android/settings/ConfirmLockPattern$ConfirmLockPatternFragment;)Lcom/android/settings/LockPatternView;
+.method static synthetic b(Lcom/android/settings_ext/ConfirmLockPattern$ConfirmLockPatternFragment;)Lcom/android/settings_ext/LockPatternView;
     .locals 1
 
     .prologue
     .line 103
-    iget-object v0, p0, Lcom/android/settings/ConfirmLockPattern$ConfirmLockPatternFragment;->en:Lcom/android/settings/LockPatternView;
+    iget-object v0, p0, Lcom/android/settings_ext/ConfirmLockPattern$ConfirmLockPatternFragment;->en:Lcom/android/settings_ext/LockPatternView;
 
     return-object v0
 .end method
 
-.method static synthetic c(Lcom/android/settings/ConfirmLockPattern$ConfirmLockPatternFragment;)Ljava/lang/Runnable;
+.method static synthetic c(Lcom/android/settings_ext/ConfirmLockPattern$ConfirmLockPatternFragment;)Ljava/lang/Runnable;
     .locals 1
 
     .prologue
     .line 103
-    iget-object v0, p0, Lcom/android/settings/ConfirmLockPattern$ConfirmLockPatternFragment;->dx:Ljava/lang/Runnable;
+    iget-object v0, p0, Lcom/android/settings_ext/ConfirmLockPattern$ConfirmLockPatternFragment;->dx:Ljava/lang/Runnable;
 
     return-object v0
 .end method
 
-.method static synthetic d(Lcom/android/settings/ConfirmLockPattern$ConfirmLockPatternFragment;)I
+.method static synthetic d(Lcom/android/settings_ext/ConfirmLockPattern$ConfirmLockPatternFragment;)I
     .locals 1
 
     .prologue
     .line 103
-    iget v0, p0, Lcom/android/settings/ConfirmLockPattern$ConfirmLockPatternFragment;->ei:I
+    iget v0, p0, Lcom/android/settings_ext/ConfirmLockPattern$ConfirmLockPatternFragment;->ei:I
 
     add-int/lit8 v0, v0, 0x1
 
-    iput v0, p0, Lcom/android/settings/ConfirmLockPattern$ConfirmLockPatternFragment;->ei:I
+    iput v0, p0, Lcom/android/settings_ext/ConfirmLockPattern$ConfirmLockPatternFragment;->ei:I
 
     return v0
 .end method
 
-.method static synthetic e(Lcom/android/settings/ConfirmLockPattern$ConfirmLockPatternFragment;)V
+.method static synthetic e(Lcom/android/settings_ext/ConfirmLockPattern$ConfirmLockPatternFragment;)V
     .locals 0
 
     .prologue
     .line 103
-    invoke-direct {p0}, Lcom/android/settings/ConfirmLockPattern$ConfirmLockPatternFragment;->ar()V
+    invoke-direct {p0}, Lcom/android/settings_ext/ConfirmLockPattern$ConfirmLockPatternFragment;->ar()V
 
     return-void
 .end method
 
-.method static synthetic f(Lcom/android/settings/ConfirmLockPattern$ConfirmLockPatternFragment;)Landroid/widget/TextView;
+.method static synthetic f(Lcom/android/settings_ext/ConfirmLockPattern$ConfirmLockPatternFragment;)Landroid/widget/TextView;
     .locals 1
 
     .prologue
     .line 103
-    iget-object v0, p0, Lcom/android/settings/ConfirmLockPattern$ConfirmLockPatternFragment;->ep:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/android/settings_ext/ConfirmLockPattern$ConfirmLockPatternFragment;->ep:Landroid/widget/TextView;
 
     return-object v0
 .end method
 
-.method static synthetic g(Lcom/android/settings/ConfirmLockPattern$ConfirmLockPatternFragment;)Landroid/widget/TextView;
+.method static synthetic g(Lcom/android/settings_ext/ConfirmLockPattern$ConfirmLockPatternFragment;)Landroid/widget/TextView;
     .locals 1
 
     .prologue
     .line 103
-    iget-object v0, p0, Lcom/android/settings/ConfirmLockPattern$ConfirmLockPatternFragment;->eq:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/android/settings_ext/ConfirmLockPattern$ConfirmLockPatternFragment;->eq:Landroid/widget/TextView;
 
     return-object v0
 .end method
@@ -191,16 +191,16 @@
     return-wide p1
 .end method
 
-.method protected a(Lcom/android/settings/ConfirmLockPattern$Stage;)V
+.method protected a(Lcom/android/settings_ext/ConfirmLockPattern$Stage;)V
     .locals 3
 
     .prologue
     const/4 v2, 0x1
 
     .line 334
-    sget-object v0, Lcom/android/settings/av;->dX:[I
+    sget-object v0, Lcom/android/settings_ext/av;->dX:[I
 
-    invoke-virtual {p1}, Lcom/android/settings/ConfirmLockPattern$Stage;->ordinal()I
+    invoke-virtual {p1}, Lcom/android/settings_ext/ConfirmLockPattern$Stage;->ordinal()I
 
     move-result v1
 
@@ -210,9 +210,9 @@
 
     .line 380
     :goto_0
-    iget-object v0, p0, Lcom/android/settings/ConfirmLockPattern$ConfirmLockPatternFragment;->ep:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/android/settings_ext/ConfirmLockPattern$ConfirmLockPatternFragment;->ep:Landroid/widget/TextView;
 
-    iget-object v1, p0, Lcom/android/settings/ConfirmLockPattern$ConfirmLockPatternFragment;->ep:Landroid/widget/TextView;
+    iget-object v1, p0, Lcom/android/settings_ext/ConfirmLockPattern$ConfirmLockPatternFragment;->ep:Landroid/widget/TextView;
 
     invoke-virtual {v1}, Landroid/widget/TextView;->getText()Ljava/lang/CharSequence;
 
@@ -225,57 +225,57 @@
 
     .line 336
     :pswitch_0
-    iget-object v0, p0, Lcom/android/settings/ConfirmLockPattern$ConfirmLockPatternFragment;->es:Ljava/lang/CharSequence;
+    iget-object v0, p0, Lcom/android/settings_ext/ConfirmLockPattern$ConfirmLockPatternFragment;->es:Ljava/lang/CharSequence;
 
     if-eqz v0, :cond_0
 
     .line 337
-    iget-object v0, p0, Lcom/android/settings/ConfirmLockPattern$ConfirmLockPatternFragment;->ep:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/android/settings_ext/ConfirmLockPattern$ConfirmLockPatternFragment;->ep:Landroid/widget/TextView;
 
-    iget-object v1, p0, Lcom/android/settings/ConfirmLockPattern$ConfirmLockPatternFragment;->es:Ljava/lang/CharSequence;
+    iget-object v1, p0, Lcom/android/settings_ext/ConfirmLockPattern$ConfirmLockPatternFragment;->es:Ljava/lang/CharSequence;
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
     .line 343
     :goto_1
-    iget-object v0, p0, Lcom/android/settings/ConfirmLockPattern$ConfirmLockPatternFragment;->et:Ljava/lang/CharSequence;
+    iget-object v0, p0, Lcom/android/settings_ext/ConfirmLockPattern$ConfirmLockPatternFragment;->et:Ljava/lang/CharSequence;
 
     if-eqz v0, :cond_1
 
     .line 344
-    iget-object v0, p0, Lcom/android/settings/ConfirmLockPattern$ConfirmLockPatternFragment;->eq:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/android/settings_ext/ConfirmLockPattern$ConfirmLockPatternFragment;->eq:Landroid/widget/TextView;
 
-    iget-object v1, p0, Lcom/android/settings/ConfirmLockPattern$ConfirmLockPatternFragment;->et:Ljava/lang/CharSequence;
+    iget-object v1, p0, Lcom/android/settings_ext/ConfirmLockPattern$ConfirmLockPatternFragment;->et:Ljava/lang/CharSequence;
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
     .line 350
     :goto_2
-    iget-object v0, p0, Lcom/android/settings/ConfirmLockPattern$ConfirmLockPatternFragment;->en:Lcom/android/settings/LockPatternView;
+    iget-object v0, p0, Lcom/android/settings_ext/ConfirmLockPattern$ConfirmLockPatternFragment;->en:Lcom/android/settings_ext/LockPatternView;
 
-    invoke-virtual {p0}, Lcom/android/settings/ConfirmLockPattern$ConfirmLockPatternFragment;->aA()Z
+    invoke-virtual {p0}, Lcom/android/settings_ext/ConfirmLockPattern$ConfirmLockPatternFragment;->aA()Z
 
     move-result v1
 
-    invoke-virtual {v0, v1}, Lcom/android/settings/LockPatternView;->setInStealthMode(Z)V
+    invoke-virtual {v0, v1}, Lcom/android/settings_ext/LockPatternView;->setInStealthMode(Z)V
 
     .line 351
-    iget-object v0, p0, Lcom/android/settings/ConfirmLockPattern$ConfirmLockPatternFragment;->en:Lcom/android/settings/LockPatternView;
+    iget-object v0, p0, Lcom/android/settings_ext/ConfirmLockPattern$ConfirmLockPatternFragment;->en:Lcom/android/settings_ext/LockPatternView;
 
-    invoke-virtual {v0, v2}, Lcom/android/settings/LockPatternView;->setEnabled(Z)V
+    invoke-virtual {v0, v2}, Lcom/android/settings_ext/LockPatternView;->setEnabled(Z)V
 
     .line 352
-    iget-object v0, p0, Lcom/android/settings/ConfirmLockPattern$ConfirmLockPatternFragment;->en:Lcom/android/settings/LockPatternView;
+    iget-object v0, p0, Lcom/android/settings_ext/ConfirmLockPattern$ConfirmLockPatternFragment;->en:Lcom/android/settings_ext/LockPatternView;
 
-    invoke-virtual {v0}, Lcom/android/settings/LockPatternView;->enableInput()V
+    invoke-virtual {v0}, Lcom/android/settings_ext/LockPatternView;->enableInput()V
 
     goto :goto_0
 
     .line 341
     :cond_0
-    iget-object v0, p0, Lcom/android/settings/ConfirmLockPattern$ConfirmLockPatternFragment;->ep:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/android/settings_ext/ConfirmLockPattern$ConfirmLockPatternFragment;->ep:Landroid/widget/TextView;
 
-    invoke-virtual {p0}, Lcom/android/settings/ConfirmLockPattern$ConfirmLockPatternFragment;->az()I
+    invoke-virtual {p0}, Lcom/android/settings_ext/ConfirmLockPattern$ConfirmLockPatternFragment;->az()I
 
     move-result v1
 
@@ -285,7 +285,7 @@
 
     .line 346
     :cond_1
-    iget-object v0, p0, Lcom/android/settings/ConfirmLockPattern$ConfirmLockPatternFragment;->eq:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/android/settings_ext/ConfirmLockPattern$ConfirmLockPatternFragment;->eq:Landroid/widget/TextView;
 
     const v1, 0x7f0904f0
 
@@ -295,53 +295,53 @@
 
     .line 355
     :pswitch_1
-    iget-object v0, p0, Lcom/android/settings/ConfirmLockPattern$ConfirmLockPatternFragment;->eu:Ljava/lang/CharSequence;
+    iget-object v0, p0, Lcom/android/settings_ext/ConfirmLockPattern$ConfirmLockPatternFragment;->eu:Ljava/lang/CharSequence;
 
     if-eqz v0, :cond_2
 
     .line 356
-    iget-object v0, p0, Lcom/android/settings/ConfirmLockPattern$ConfirmLockPatternFragment;->ep:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/android/settings_ext/ConfirmLockPattern$ConfirmLockPatternFragment;->ep:Landroid/widget/TextView;
 
-    iget-object v1, p0, Lcom/android/settings/ConfirmLockPattern$ConfirmLockPatternFragment;->eu:Ljava/lang/CharSequence;
+    iget-object v1, p0, Lcom/android/settings_ext/ConfirmLockPattern$ConfirmLockPatternFragment;->eu:Ljava/lang/CharSequence;
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
     .line 360
     :goto_3
-    iget-object v0, p0, Lcom/android/settings/ConfirmLockPattern$ConfirmLockPatternFragment;->ev:Ljava/lang/CharSequence;
+    iget-object v0, p0, Lcom/android/settings_ext/ConfirmLockPattern$ConfirmLockPatternFragment;->ev:Ljava/lang/CharSequence;
 
     if-eqz v0, :cond_3
 
     .line 361
-    iget-object v0, p0, Lcom/android/settings/ConfirmLockPattern$ConfirmLockPatternFragment;->eq:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/android/settings_ext/ConfirmLockPattern$ConfirmLockPatternFragment;->eq:Landroid/widget/TextView;
 
-    iget-object v1, p0, Lcom/android/settings/ConfirmLockPattern$ConfirmLockPatternFragment;->ev:Ljava/lang/CharSequence;
+    iget-object v1, p0, Lcom/android/settings_ext/ConfirmLockPattern$ConfirmLockPatternFragment;->ev:Ljava/lang/CharSequence;
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
     .line 366
     :goto_4
-    iget-object v0, p0, Lcom/android/settings/ConfirmLockPattern$ConfirmLockPatternFragment;->en:Lcom/android/settings/LockPatternView;
+    iget-object v0, p0, Lcom/android/settings_ext/ConfirmLockPattern$ConfirmLockPatternFragment;->en:Lcom/android/settings_ext/LockPatternView;
 
-    sget-object v1, Lcom/android/settings/LockPatternView$DisplayMode;->nT:Lcom/android/settings/LockPatternView$DisplayMode;
+    sget-object v1, Lcom/android/settings_ext/LockPatternView$DisplayMode;->nT:Lcom/android/settings_ext/LockPatternView$DisplayMode;
 
-    invoke-virtual {v0, v1}, Lcom/android/settings/LockPatternView;->a(Lcom/android/settings/LockPatternView$DisplayMode;)V
+    invoke-virtual {v0, v1}, Lcom/android/settings_ext/LockPatternView;->a(Lcom/android/settings_ext/LockPatternView$DisplayMode;)V
 
     .line 367
-    iget-object v0, p0, Lcom/android/settings/ConfirmLockPattern$ConfirmLockPatternFragment;->en:Lcom/android/settings/LockPatternView;
+    iget-object v0, p0, Lcom/android/settings_ext/ConfirmLockPattern$ConfirmLockPatternFragment;->en:Lcom/android/settings_ext/LockPatternView;
 
-    invoke-virtual {v0, v2}, Lcom/android/settings/LockPatternView;->setEnabled(Z)V
+    invoke-virtual {v0, v2}, Lcom/android/settings_ext/LockPatternView;->setEnabled(Z)V
 
     .line 368
-    iget-object v0, p0, Lcom/android/settings/ConfirmLockPattern$ConfirmLockPatternFragment;->en:Lcom/android/settings/LockPatternView;
+    iget-object v0, p0, Lcom/android/settings_ext/ConfirmLockPattern$ConfirmLockPatternFragment;->en:Lcom/android/settings_ext/LockPatternView;
 
-    invoke-virtual {v0}, Lcom/android/settings/LockPatternView;->enableInput()V
+    invoke-virtual {v0}, Lcom/android/settings_ext/LockPatternView;->enableInput()V
 
     goto :goto_0
 
     .line 358
     :cond_2
-    iget-object v0, p0, Lcom/android/settings/ConfirmLockPattern$ConfirmLockPatternFragment;->ep:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/android/settings_ext/ConfirmLockPattern$ConfirmLockPatternFragment;->ep:Landroid/widget/TextView;
 
     const v1, 0x7f0904f1
 
@@ -351,7 +351,7 @@
 
     .line 363
     :cond_3
-    iget-object v0, p0, Lcom/android/settings/ConfirmLockPattern$ConfirmLockPatternFragment;->eq:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/android/settings_ext/ConfirmLockPattern$ConfirmLockPatternFragment;->eq:Landroid/widget/TextView;
 
     const v1, 0x7f0904f2
 
@@ -361,16 +361,16 @@
 
     .line 371
     :pswitch_2
-    iget-object v0, p0, Lcom/android/settings/ConfirmLockPattern$ConfirmLockPatternFragment;->en:Lcom/android/settings/LockPatternView;
+    iget-object v0, p0, Lcom/android/settings_ext/ConfirmLockPattern$ConfirmLockPatternFragment;->en:Lcom/android/settings_ext/LockPatternView;
 
-    invoke-virtual {v0}, Lcom/android/settings/LockPatternView;->clearPattern()V
+    invoke-virtual {v0}, Lcom/android/settings_ext/LockPatternView;->clearPattern()V
 
     .line 374
-    iget-object v0, p0, Lcom/android/settings/ConfirmLockPattern$ConfirmLockPatternFragment;->en:Lcom/android/settings/LockPatternView;
+    iget-object v0, p0, Lcom/android/settings_ext/ConfirmLockPattern$ConfirmLockPatternFragment;->en:Lcom/android/settings_ext/LockPatternView;
 
     const/4 v1, 0x0
 
-    invoke-virtual {v0, v1}, Lcom/android/settings/LockPatternView;->setEnabled(Z)V
+    invoke-virtual {v0, v1}, Lcom/android/settings_ext/LockPatternView;->setEnabled(Z)V
 
     goto/16 :goto_0
 
@@ -409,7 +409,7 @@
     invoke-virtual {v0, v1, v2}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
 
     .line 498
-    invoke-virtual {p0}, Lcom/android/settings/ConfirmLockPattern$ConfirmLockPatternFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/ConfirmLockPattern$ConfirmLockPatternFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v1
 
@@ -418,7 +418,7 @@
     invoke-virtual {v1, v2, v0}, Landroid/app/Activity;->setResult(ILandroid/content/Intent;)V
 
     .line 499
-    invoke-virtual {p0}, Lcom/android/settings/ConfirmLockPattern$ConfirmLockPatternFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/ConfirmLockPattern$ConfirmLockPatternFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
@@ -433,7 +433,7 @@
 
     .prologue
     .line 486
-    iget-object v0, p0, Lcom/android/settings/ConfirmLockPattern$ConfirmLockPatternFragment;->eo:Landroid/security/MiuiLockPatternUtils;
+    iget-object v0, p0, Lcom/android/settings_ext/ConfirmLockPattern$ConfirmLockPatternFragment;->eo:Landroid/security/MiuiLockPatternUtils;
 
     invoke-virtual {v0}, Landroid/security/MiuiLockPatternUtils;->isVisiblePatternEnabled()Z
 
@@ -457,7 +457,7 @@
 
     .prologue
     .line 481
-    iget-object v0, p0, Lcom/android/settings/ConfirmLockPattern$ConfirmLockPatternFragment;->eo:Landroid/security/MiuiLockPatternUtils;
+    iget-object v0, p0, Lcom/android/settings_ext/ConfirmLockPattern$ConfirmLockPatternFragment;->eo:Landroid/security/MiuiLockPatternUtils;
 
     invoke-virtual {v0}, Landroid/security/MiuiLockPatternUtils;->isTactileFeedbackEnabled()Z
 
@@ -471,7 +471,7 @@
 
     .prologue
     .line 512
-    iget-object v0, p0, Lcom/android/settings/ConfirmLockPattern$ConfirmLockPatternFragment;->eo:Landroid/security/MiuiLockPatternUtils;
+    iget-object v0, p0, Lcom/android/settings_ext/ConfirmLockPattern$ConfirmLockPatternFragment;->eo:Landroid/security/MiuiLockPatternUtils;
 
     invoke-virtual {v0}, Landroid/security/MiuiLockPatternUtils;->savedPatternExists()Z
 
@@ -480,7 +480,7 @@
     if-nez v0, :cond_0
 
     .line 513
-    invoke-virtual {p0}, Lcom/android/settings/ConfirmLockPattern$ConfirmLockPatternFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/ConfirmLockPattern$ConfirmLockPatternFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
@@ -489,7 +489,7 @@
     invoke-virtual {v0, v1}, Landroid/app/Activity;->setResult(I)V
 
     .line 514
-    invoke-virtual {p0}, Lcom/android/settings/ConfirmLockPattern$ConfirmLockPatternFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/ConfirmLockPattern$ConfirmLockPatternFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
@@ -553,9 +553,9 @@
 
     .prologue
     .line 451
-    sget-object v0, Lcom/android/settings/ConfirmLockPattern$Stage;->eD:Lcom/android/settings/ConfirmLockPattern$Stage;
+    sget-object v0, Lcom/android/settings_ext/ConfirmLockPattern$Stage;->eD:Lcom/android/settings_ext/ConfirmLockPattern$Stage;
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/ConfirmLockPattern$ConfirmLockPatternFragment;->a(Lcom/android/settings/ConfirmLockPattern$Stage;)V
+    invoke-virtual {p0, v0}, Lcom/android/settings_ext/ConfirmLockPattern$ConfirmLockPatternFragment;->a(Lcom/android/settings_ext/ConfirmLockPattern$Stage;)V
 
     .line 452
     invoke-static {}, Landroid/os/SystemClock;->elapsedRealtime()J
@@ -563,7 +563,7 @@
     move-result-wide v2
 
     .line 453
-    new-instance v0, Lcom/android/settings/aA;
+    new-instance v0, Lcom/android/settings_ext/aA;
 
     sub-long v2, p1, v2
 
@@ -571,13 +571,13 @@
 
     move-object v1, p0
 
-    invoke-direct/range {v0 .. v5}, Lcom/android/settings/aA;-><init>(Lcom/android/settings/ConfirmLockPattern$ConfirmLockPatternFragment;JJ)V
+    invoke-direct/range {v0 .. v5}, Lcom/android/settings_ext/aA;-><init>(Lcom/android/settings_ext/ConfirmLockPattern$ConfirmLockPatternFragment;JJ)V
 
-    invoke-virtual {v0}, Lcom/android/settings/aA;->start()Landroid/os/CountDownTimer;
+    invoke-virtual {v0}, Lcom/android/settings_ext/aA;->start()Landroid/os/CountDownTimer;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/ConfirmLockPattern$ConfirmLockPatternFragment;->ej:Landroid/os/CountDownTimer;
+    iput-object v0, p0, Lcom/android/settings_ext/ConfirmLockPattern$ConfirmLockPatternFragment;->ej:Landroid/os/CountDownTimer;
 
     .line 472
     return-void
@@ -588,7 +588,7 @@
 
     .prologue
     .line 504
-    iget-object v0, p0, Lcom/android/settings/ConfirmLockPattern$ConfirmLockPatternFragment;->eo:Landroid/security/MiuiLockPatternUtils;
+    iget-object v0, p0, Lcom/android/settings_ext/ConfirmLockPattern$ConfirmLockPatternFragment;->eo:Landroid/security/MiuiLockPatternUtils;
 
     invoke-virtual {v0, p1}, Landroid/security/MiuiLockPatternUtils;->checkPattern(Ljava/util/List;)Z
 
@@ -611,7 +611,7 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/ConfirmLockPattern$ConfirmLockPatternFragment;->es:Ljava/lang/CharSequence;
+    iput-object v0, p0, Lcom/android/settings_ext/ConfirmLockPattern$ConfirmLockPatternFragment;->es:Ljava/lang/CharSequence;
 
     .line 522
     const-string v0, "com.android.settings.ConfirmLockPattern.footer"
@@ -620,7 +620,7 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/ConfirmLockPattern$ConfirmLockPatternFragment;->et:Ljava/lang/CharSequence;
+    iput-object v0, p0, Lcom/android/settings_ext/ConfirmLockPattern$ConfirmLockPatternFragment;->et:Ljava/lang/CharSequence;
 
     .line 523
     const-string v0, "com.android.settings.ConfirmLockPattern.header_wrong"
@@ -629,7 +629,7 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/ConfirmLockPattern$ConfirmLockPatternFragment;->eu:Ljava/lang/CharSequence;
+    iput-object v0, p0, Lcom/android/settings_ext/ConfirmLockPattern$ConfirmLockPatternFragment;->eu:Ljava/lang/CharSequence;
 
     .line 524
     const-string v0, "com.android.settings.ConfirmLockPattern.footer_wrong"
@@ -638,7 +638,7 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/ConfirmLockPattern$ConfirmLockPatternFragment;->ev:Ljava/lang/CharSequence;
+    iput-object v0, p0, Lcom/android/settings_ext/ConfirmLockPattern$ConfirmLockPatternFragment;->ev:Ljava/lang/CharSequence;
 
     .line 526
     :cond_0
@@ -664,14 +664,14 @@
     if-eqz v0, :cond_0
 
     .line 242
-    iget-object v0, p0, Lcom/android/settings/ConfirmLockPattern$ConfirmLockPatternFragment;->er:Landroid/widget/Button;
+    iget-object v0, p0, Lcom/android/settings_ext/ConfirmLockPattern$ConfirmLockPatternFragment;->er:Landroid/widget/Button;
 
     const/4 v1, 0x0
 
     invoke-virtual {v0, v1}, Landroid/widget/Button;->setVisibility(I)V
 
     .line 243
-    iget-object v0, p0, Lcom/android/settings/ConfirmLockPattern$ConfirmLockPatternFragment;->er:Landroid/widget/Button;
+    iget-object v0, p0, Lcom/android/settings_ext/ConfirmLockPattern$ConfirmLockPatternFragment;->er:Landroid/widget/Button;
 
     const-string v1, "account_dialog_state"
 
@@ -682,9 +682,9 @@
     invoke-virtual {v0, v1}, Landroid/widget/Button;->setTag(Ljava/lang/Object;)V
 
     .line 244
-    iget-object v0, p0, Lcom/android/settings/ConfirmLockPattern$ConfirmLockPatternFragment;->ex:Landroid/view/View$OnClickListener;
+    iget-object v0, p0, Lcom/android/settings_ext/ConfirmLockPattern$ConfirmLockPatternFragment;->ex:Landroid/view/View$OnClickListener;
 
-    iget-object v1, p0, Lcom/android/settings/ConfirmLockPattern$ConfirmLockPatternFragment;->er:Landroid/widget/Button;
+    iget-object v1, p0, Lcom/android/settings_ext/ConfirmLockPattern$ConfirmLockPatternFragment;->er:Landroid/widget/Button;
 
     invoke-interface {v0, v1}, Landroid/view/View$OnClickListener;->onClick(Landroid/view/View;)V
 
@@ -703,34 +703,34 @@
     .line 151
     new-instance v0, Landroid/security/MiuiLockPatternUtils;
 
-    invoke-virtual {p0}, Lcom/android/settings/ConfirmLockPattern$ConfirmLockPatternFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/ConfirmLockPattern$ConfirmLockPatternFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v1
 
     invoke-direct {v0, v1}, Landroid/security/MiuiLockPatternUtils;-><init>(Landroid/content/Context;)V
 
-    iput-object v0, p0, Lcom/android/settings/ConfirmLockPattern$ConfirmLockPatternFragment;->eo:Landroid/security/MiuiLockPatternUtils;
+    iput-object v0, p0, Lcom/android/settings_ext/ConfirmLockPattern$ConfirmLockPatternFragment;->eo:Landroid/security/MiuiLockPatternUtils;
 
     .line 152
-    invoke-virtual {p0}, Lcom/android/settings/ConfirmLockPattern$ConfirmLockPatternFragment;->ax()Ljava/lang/String;
+    invoke-virtual {p0}, Lcom/android/settings_ext/ConfirmLockPattern$ConfirmLockPatternFragment;->ax()Ljava/lang/String;
 
     move-result-object v0
 
     if-eqz v0, :cond_0
 
     .line 153
-    new-instance v0, Lcom/android/settings/aw;
+    new-instance v0, Lcom/android/settings_ext/aw;
 
     new-instance v1, Landroid/os/Handler;
 
     invoke-direct {v1}, Landroid/os/Handler;-><init>()V
 
-    invoke-direct {v0, p0, v1}, Lcom/android/settings/aw;-><init>(Lcom/android/settings/ConfirmLockPattern$ConfirmLockPatternFragment;Landroid/os/Handler;)V
+    invoke-direct {v0, p0, v1}, Lcom/android/settings_ext/aw;-><init>(Lcom/android/settings_ext/ConfirmLockPattern$ConfirmLockPatternFragment;Landroid/os/Handler;)V
 
-    iput-object v0, p0, Lcom/android/settings/ConfirmLockPattern$ConfirmLockPatternFragment;->ey:Landroid/database/ContentObserver;
+    iput-object v0, p0, Lcom/android/settings_ext/ConfirmLockPattern$ConfirmLockPatternFragment;->ey:Landroid/database/ContentObserver;
 
     .line 159
-    invoke-virtual {p0}, Lcom/android/settings/ConfirmLockPattern$ConfirmLockPatternFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/ConfirmLockPattern$ConfirmLockPatternFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
@@ -738,7 +738,7 @@
 
     move-result-object v0
 
-    invoke-virtual {p0}, Lcom/android/settings/ConfirmLockPattern$ConfirmLockPatternFragment;->ax()Ljava/lang/String;
+    invoke-virtual {p0}, Lcom/android/settings_ext/ConfirmLockPattern$ConfirmLockPatternFragment;->ax()Ljava/lang/String;
 
     move-result-object v1
 
@@ -748,7 +748,7 @@
 
     const/4 v2, 0x1
 
-    iget-object v3, p0, Lcom/android/settings/ConfirmLockPattern$ConfirmLockPatternFragment;->ey:Landroid/database/ContentObserver;
+    iget-object v3, p0, Lcom/android/settings_ext/ConfirmLockPattern$ConfirmLockPatternFragment;->ey:Landroid/database/ContentObserver;
 
     invoke-virtual {v0, v1, v2, v3}, Landroid/content/ContentResolver;->registerContentObserver(Landroid/net/Uri;ZLandroid/database/ContentObserver;)V
 
@@ -779,7 +779,7 @@
 
     check-cast v0, Landroid/widget/TextView;
 
-    iput-object v0, p0, Lcom/android/settings/ConfirmLockPattern$ConfirmLockPatternFragment;->ep:Landroid/widget/TextView;
+    iput-object v0, p0, Lcom/android/settings_ext/ConfirmLockPattern$ConfirmLockPatternFragment;->ep:Landroid/widget/TextView;
 
     .line 171
     const v0, 0x7f10005c
@@ -788,9 +788,9 @@
 
     move-result-object v0
 
-    check-cast v0, Lcom/android/settings/LockPatternView;
+    check-cast v0, Lcom/android/settings_ext/LockPatternView;
 
-    iput-object v0, p0, Lcom/android/settings/ConfirmLockPattern$ConfirmLockPatternFragment;->en:Lcom/android/settings/LockPatternView;
+    iput-object v0, p0, Lcom/android/settings_ext/ConfirmLockPattern$ConfirmLockPatternFragment;->en:Lcom/android/settings_ext/LockPatternView;
 
     .line 172
     const v0, 0x7f100066
@@ -801,10 +801,10 @@
 
     check-cast v0, Landroid/widget/TextView;
 
-    iput-object v0, p0, Lcom/android/settings/ConfirmLockPattern$ConfirmLockPatternFragment;->eq:Landroid/widget/TextView;
+    iput-object v0, p0, Lcom/android/settings_ext/ConfirmLockPattern$ConfirmLockPatternFragment;->eq:Landroid/widget/TextView;
 
     .line 175
-    invoke-virtual {p0}, Lcom/android/settings/ConfirmLockPattern$ConfirmLockPatternFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/ConfirmLockPattern$ConfirmLockPatternFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v2
 
@@ -817,19 +817,19 @@
 
     check-cast v0, Landroid/widget/Button;
 
-    iput-object v0, p0, Lcom/android/settings/ConfirmLockPattern$ConfirmLockPatternFragment;->er:Landroid/widget/Button;
+    iput-object v0, p0, Lcom/android/settings_ext/ConfirmLockPattern$ConfirmLockPatternFragment;->er:Landroid/widget/Button;
 
     .line 177
-    new-instance v0, Lcom/android/settings/ax;
+    new-instance v0, Lcom/android/settings_ext/ax;
 
-    invoke-direct {v0, p0, v2}, Lcom/android/settings/ax;-><init>(Lcom/android/settings/ConfirmLockPattern$ConfirmLockPatternFragment;Landroid/app/Activity;)V
+    invoke-direct {v0, p0, v2}, Lcom/android/settings_ext/ax;-><init>(Lcom/android/settings_ext/ConfirmLockPattern$ConfirmLockPatternFragment;Landroid/app/Activity;)V
 
-    iput-object v0, p0, Lcom/android/settings/ConfirmLockPattern$ConfirmLockPatternFragment;->ex:Landroid/view/View$OnClickListener;
+    iput-object v0, p0, Lcom/android/settings_ext/ConfirmLockPattern$ConfirmLockPatternFragment;->ex:Landroid/view/View$OnClickListener;
 
     .line 192
-    iget-object v0, p0, Lcom/android/settings/ConfirmLockPattern$ConfirmLockPatternFragment;->er:Landroid/widget/Button;
+    iget-object v0, p0, Lcom/android/settings_ext/ConfirmLockPattern$ConfirmLockPatternFragment;->er:Landroid/widget/Button;
 
-    iget-object v2, p0, Lcom/android/settings/ConfirmLockPattern$ConfirmLockPatternFragment;->ex:Landroid/view/View$OnClickListener;
+    iget-object v2, p0, Lcom/android/settings_ext/ConfirmLockPattern$ConfirmLockPatternFragment;->ex:Landroid/view/View$OnClickListener;
 
     invoke-virtual {v0, v2}, Landroid/widget/Button;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
@@ -843,12 +843,12 @@
     check-cast v0, Lcom/android/internal/widget/LinearLayoutWithDefaultTouchRecepient;
 
     .line 199
-    iget-object v2, p0, Lcom/android/settings/ConfirmLockPattern$ConfirmLockPatternFragment;->en:Lcom/android/settings/LockPatternView;
+    iget-object v2, p0, Lcom/android/settings_ext/ConfirmLockPattern$ConfirmLockPatternFragment;->en:Lcom/android/settings_ext/LockPatternView;
 
     invoke-virtual {v0, v2}, Lcom/android/internal/widget/LinearLayoutWithDefaultTouchRecepient;->setDefaultTouchRecepient(Landroid/view/View;)V
 
     .line 201
-    invoke-virtual {p0}, Lcom/android/settings/ConfirmLockPattern$ConfirmLockPatternFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/ConfirmLockPattern$ConfirmLockPatternFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
@@ -857,28 +857,28 @@
     move-result-object v0
 
     .line 211
-    invoke-virtual {p0, v0}, Lcom/android/settings/ConfirmLockPattern$ConfirmLockPatternFragment;->e(Landroid/content/Intent;)V
+    invoke-virtual {p0, v0}, Lcom/android/settings_ext/ConfirmLockPattern$ConfirmLockPatternFragment;->e(Landroid/content/Intent;)V
 
     .line 213
-    iget-object v0, p0, Lcom/android/settings/ConfirmLockPattern$ConfirmLockPatternFragment;->en:Lcom/android/settings/LockPatternView;
+    iget-object v0, p0, Lcom/android/settings_ext/ConfirmLockPattern$ConfirmLockPatternFragment;->en:Lcom/android/settings_ext/LockPatternView;
 
-    invoke-virtual {p0}, Lcom/android/settings/ConfirmLockPattern$ConfirmLockPatternFragment;->aB()Z
+    invoke-virtual {p0}, Lcom/android/settings_ext/ConfirmLockPattern$ConfirmLockPatternFragment;->aB()Z
 
     move-result v2
 
-    invoke-virtual {v0, v2}, Lcom/android/settings/LockPatternView;->setTactileFeedbackEnabled(Z)V
+    invoke-virtual {v0, v2}, Lcom/android/settings_ext/LockPatternView;->setTactileFeedbackEnabled(Z)V
 
     .line 215
-    iget-object v0, p0, Lcom/android/settings/ConfirmLockPattern$ConfirmLockPatternFragment;->en:Lcom/android/settings/LockPatternView;
+    iget-object v0, p0, Lcom/android/settings_ext/ConfirmLockPattern$ConfirmLockPatternFragment;->en:Lcom/android/settings_ext/LockPatternView;
 
-    iget-object v2, p0, Lcom/android/settings/ConfirmLockPattern$ConfirmLockPatternFragment;->ez:Lcom/android/settings/cR;
+    iget-object v2, p0, Lcom/android/settings_ext/ConfirmLockPattern$ConfirmLockPatternFragment;->ez:Lcom/android/settings_ext/cR;
 
-    invoke-virtual {v0, v2}, Lcom/android/settings/LockPatternView;->a(Lcom/android/settings/cR;)V
+    invoke-virtual {v0, v2}, Lcom/android/settings_ext/LockPatternView;->a(Lcom/android/settings_ext/cR;)V
 
     .line 216
-    sget-object v0, Lcom/android/settings/ConfirmLockPattern$Stage;->eB:Lcom/android/settings/ConfirmLockPattern$Stage;
+    sget-object v0, Lcom/android/settings_ext/ConfirmLockPattern$Stage;->eB:Lcom/android/settings_ext/ConfirmLockPattern$Stage;
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/ConfirmLockPattern$ConfirmLockPatternFragment;->a(Lcom/android/settings/ConfirmLockPattern$Stage;)V
+    invoke-virtual {p0, v0}, Lcom/android/settings_ext/ConfirmLockPattern$ConfirmLockPatternFragment;->a(Lcom/android/settings_ext/ConfirmLockPattern$Stage;)V
 
     .line 218
     if-eqz p3, :cond_0
@@ -890,7 +890,7 @@
 
     move-result v0
 
-    iput v0, p0, Lcom/android/settings/ConfirmLockPattern$ConfirmLockPatternFragment;->ei:I
+    iput v0, p0, Lcom/android/settings_ext/ConfirmLockPattern$ConfirmLockPatternFragment;->ei:I
 
     .line 234
     :goto_0
@@ -898,7 +898,7 @@
 
     .line 230
     :cond_0
-    invoke-virtual {p0}, Lcom/android/settings/ConfirmLockPattern$ConfirmLockPatternFragment;->av()V
+    invoke-virtual {p0}, Lcom/android/settings_ext/ConfirmLockPattern$ConfirmLockPatternFragment;->av()V
 
     goto :goto_0
 .end method
@@ -908,23 +908,23 @@
 
     .prologue
     .line 319
-    iget-object v0, p0, Lcom/android/settings/ConfirmLockPattern$ConfirmLockPatternFragment;->ew:Lcom/android/settings/i;
+    iget-object v0, p0, Lcom/android/settings_ext/ConfirmLockPattern$ConfirmLockPatternFragment;->ew:Lcom/android/settings_ext/i;
 
     if-eqz v0, :cond_0
 
     .line 320
-    iget-object v0, p0, Lcom/android/settings/ConfirmLockPattern$ConfirmLockPatternFragment;->ew:Lcom/android/settings/i;
+    iget-object v0, p0, Lcom/android/settings_ext/ConfirmLockPattern$ConfirmLockPatternFragment;->ew:Lcom/android/settings_ext/i;
 
-    invoke-virtual {v0}, Lcom/android/settings/i;->dismiss()V
+    invoke-virtual {v0}, Lcom/android/settings_ext/i;->dismiss()V
 
     .line 322
     :cond_0
-    iget-object v0, p0, Lcom/android/settings/ConfirmLockPattern$ConfirmLockPatternFragment;->ey:Landroid/database/ContentObserver;
+    iget-object v0, p0, Lcom/android/settings_ext/ConfirmLockPattern$ConfirmLockPatternFragment;->ey:Landroid/database/ContentObserver;
 
     if-eqz v0, :cond_1
 
     .line 323
-    invoke-virtual {p0}, Lcom/android/settings/ConfirmLockPattern$ConfirmLockPatternFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/ConfirmLockPattern$ConfirmLockPatternFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
@@ -932,7 +932,7 @@
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/android/settings/ConfirmLockPattern$ConfirmLockPatternFragment;->ey:Landroid/database/ContentObserver;
+    iget-object v1, p0, Lcom/android/settings_ext/ConfirmLockPattern$ConfirmLockPatternFragment;->ey:Landroid/database/ContentObserver;
 
     invoke-virtual {v0, v1}, Landroid/content/ContentResolver;->unregisterContentObserver(Landroid/database/ContentObserver;)V
 
@@ -952,12 +952,12 @@
     invoke-super {p0}, Landroid/app/Fragment;->onPause()V
 
     .line 282
-    iget-object v0, p0, Lcom/android/settings/ConfirmLockPattern$ConfirmLockPatternFragment;->ej:Landroid/os/CountDownTimer;
+    iget-object v0, p0, Lcom/android/settings_ext/ConfirmLockPattern$ConfirmLockPatternFragment;->ej:Landroid/os/CountDownTimer;
 
     if-eqz v0, :cond_0
 
     .line 283
-    iget-object v0, p0, Lcom/android/settings/ConfirmLockPattern$ConfirmLockPatternFragment;->ej:Landroid/os/CountDownTimer;
+    iget-object v0, p0, Lcom/android/settings_ext/ConfirmLockPattern$ConfirmLockPatternFragment;->ej:Landroid/os/CountDownTimer;
 
     invoke-virtual {v0}, Landroid/os/CountDownTimer;->cancel()V
 
@@ -974,14 +974,14 @@
     invoke-super {p0}, Landroid/app/Fragment;->onResume()V
 
     .line 303
-    iget-object v0, p0, Lcom/android/settings/ConfirmLockPattern$ConfirmLockPatternFragment;->eo:Landroid/security/MiuiLockPatternUtils;
+    iget-object v0, p0, Lcom/android/settings_ext/ConfirmLockPattern$ConfirmLockPatternFragment;->eo:Landroid/security/MiuiLockPatternUtils;
 
     invoke-virtual {v0}, Landroid/security/MiuiLockPatternUtils;->getLockoutAttemptDeadline()J
 
     move-result-wide v0
 
     .line 305
-    invoke-virtual {p0, v0, v1}, Lcom/android/settings/ConfirmLockPattern$ConfirmLockPatternFragment;->a(J)J
+    invoke-virtual {p0, v0, v1}, Lcom/android/settings_ext/ConfirmLockPattern$ConfirmLockPatternFragment;->a(J)J
 
     move-result-wide v0
 
@@ -993,7 +993,7 @@
     if-eqz v2, :cond_1
 
     .line 307
-    invoke-virtual {p0, v0, v1}, Lcom/android/settings/ConfirmLockPattern$ConfirmLockPatternFragment;->c(J)V
+    invoke-virtual {p0, v0, v1}, Lcom/android/settings_ext/ConfirmLockPattern$ConfirmLockPatternFragment;->c(J)V
 
     .line 314
     :cond_0
@@ -1002,9 +1002,9 @@
 
     .line 308
     :cond_1
-    iget-object v0, p0, Lcom/android/settings/ConfirmLockPattern$ConfirmLockPatternFragment;->en:Lcom/android/settings/LockPatternView;
+    iget-object v0, p0, Lcom/android/settings_ext/ConfirmLockPattern$ConfirmLockPatternFragment;->en:Lcom/android/settings_ext/LockPatternView;
 
-    invoke-virtual {v0}, Lcom/android/settings/LockPatternView;->isEnabled()Z
+    invoke-virtual {v0}, Lcom/android/settings_ext/LockPatternView;->isEnabled()Z
 
     move-result v0
 
@@ -1013,12 +1013,12 @@
     .line 311
     const/4 v0, 0x0
 
-    iput v0, p0, Lcom/android/settings/ConfirmLockPattern$ConfirmLockPatternFragment;->ei:I
+    iput v0, p0, Lcom/android/settings_ext/ConfirmLockPattern$ConfirmLockPatternFragment;->ei:I
 
     .line 312
-    sget-object v0, Lcom/android/settings/ConfirmLockPattern$Stage;->eB:Lcom/android/settings/ConfirmLockPattern$Stage;
+    sget-object v0, Lcom/android/settings_ext/ConfirmLockPattern$Stage;->eB:Lcom/android/settings_ext/ConfirmLockPattern$Stage;
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/ConfirmLockPattern$ConfirmLockPatternFragment;->a(Lcom/android/settings/ConfirmLockPattern$Stage;)V
+    invoke-virtual {p0, v0}, Lcom/android/settings_ext/ConfirmLockPattern$ConfirmLockPatternFragment;->a(Lcom/android/settings_ext/ConfirmLockPattern$Stage;)V
 
     goto :goto_0
 .end method
@@ -1030,18 +1030,18 @@
     .line 268
     const-string v0, "num_wrong_attempts"
 
-    iget v1, p0, Lcom/android/settings/ConfirmLockPattern$ConfirmLockPatternFragment;->ei:I
+    iget v1, p0, Lcom/android/settings_ext/ConfirmLockPattern$ConfirmLockPatternFragment;->ei:I
 
     invoke-virtual {p1, v0, v1}, Landroid/os/Bundle;->putInt(Ljava/lang/String;I)V
 
     .line 270
-    iget-object v0, p0, Lcom/android/settings/ConfirmLockPattern$ConfirmLockPatternFragment;->ew:Lcom/android/settings/i;
+    iget-object v0, p0, Lcom/android/settings_ext/ConfirmLockPattern$ConfirmLockPatternFragment;->ew:Lcom/android/settings_ext/i;
 
     if-eqz v0, :cond_1
 
-    iget-object v0, p0, Lcom/android/settings/ConfirmLockPattern$ConfirmLockPatternFragment;->ew:Lcom/android/settings/i;
+    iget-object v0, p0, Lcom/android/settings_ext/ConfirmLockPattern$ConfirmLockPatternFragment;->ew:Lcom/android/settings_ext/i;
 
-    invoke-virtual {v0}, Lcom/android/settings/i;->isShowing()Z
+    invoke-virtual {v0}, Lcom/android/settings_ext/i;->isShowing()Z
 
     move-result v0
 
@@ -1056,9 +1056,9 @@
     .line 272
     const-string v0, "account_dialog_state"
 
-    iget-object v1, p0, Lcom/android/settings/ConfirmLockPattern$ConfirmLockPatternFragment;->ew:Lcom/android/settings/i;
+    iget-object v1, p0, Lcom/android/settings_ext/ConfirmLockPattern$ConfirmLockPatternFragment;->ew:Lcom/android/settings_ext/i;
 
-    invoke-virtual {v1}, Lcom/android/settings/i;->onSaveInstanceState()Landroid/os/Bundle;
+    invoke-virtual {v1}, Lcom/android/settings_ext/i;->onSaveInstanceState()Landroid/os/Bundle;
 
     move-result-object v1
 

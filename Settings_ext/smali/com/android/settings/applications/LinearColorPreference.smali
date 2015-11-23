@@ -1,4 +1,4 @@
-.class public Lcom/android/settings/applications/LinearColorPreference;
+.class public Lcom/android/settings_ext/applications/LinearColorPreference;
 .super Landroid/preference/Preference;
 .source "LinearColorPreference.java"
 
@@ -10,7 +10,7 @@
 
 .field GJ:F
 
-.field GP:Lcom/android/settings/applications/LinearColorBar$OnRegionTappedListener;
+.field GP:Lcom/android/settings_ext/applications/LinearColorBar$OnRegionTappedListener;
 
 .field GQ:I
 
@@ -32,27 +32,27 @@
     .line 28
     const v0, -0x55afd0
 
-    iput v0, p0, Lcom/android/settings/applications/LinearColorPreference;->Hb:I
+    iput v0, p0, Lcom/android/settings_ext/applications/LinearColorPreference;->Hb:I
 
     .line 29
     const v0, -0x5555d0
 
-    iput v0, p0, Lcom/android/settings/applications/LinearColorPreference;->Hc:I
+    iput v0, p0, Lcom/android/settings_ext/applications/LinearColorPreference;->Hc:I
 
     .line 30
     const v0, -0xcf55b0
 
-    iput v0, p0, Lcom/android/settings/applications/LinearColorPreference;->Hd:I
+    iput v0, p0, Lcom/android/settings_ext/applications/LinearColorPreference;->Hd:I
 
     .line 31
     const/4 v0, 0x7
 
-    iput v0, p0, Lcom/android/settings/applications/LinearColorPreference;->GQ:I
+    iput v0, p0, Lcom/android/settings_ext/applications/LinearColorPreference;->GQ:I
 
     .line 36
     const v0, 0x7f0400b9
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/applications/LinearColorPreference;->setLayoutResource(I)V
+    invoke-virtual {p0, v0}, Lcom/android/settings_ext/applications/LinearColorPreference;->setLayoutResource(I)V
 
     .line 37
     return-void
@@ -65,16 +65,16 @@
 
     .prologue
     .line 40
-    iput p1, p0, Lcom/android/settings/applications/LinearColorPreference;->GH:F
+    iput p1, p0, Lcom/android/settings_ext/applications/LinearColorPreference;->GH:F
 
     .line 41
-    iput p2, p0, Lcom/android/settings/applications/LinearColorPreference;->GI:F
+    iput p2, p0, Lcom/android/settings_ext/applications/LinearColorPreference;->GI:F
 
     .line 42
-    iput p3, p0, Lcom/android/settings/applications/LinearColorPreference;->GJ:F
+    iput p3, p0, Lcom/android/settings_ext/applications/LinearColorPreference;->GJ:F
 
     .line 43
-    invoke-virtual {p0}, Lcom/android/settings/applications/LinearColorPreference;->notifyChanged()V
+    invoke-virtual {p0}, Lcom/android/settings_ext/applications/LinearColorPreference;->notifyChanged()V
 
     .line 44
     return-void
@@ -85,16 +85,16 @@
 
     .prologue
     .line 47
-    iput p1, p0, Lcom/android/settings/applications/LinearColorPreference;->Hb:I
+    iput p1, p0, Lcom/android/settings_ext/applications/LinearColorPreference;->Hb:I
 
     .line 48
-    iput p2, p0, Lcom/android/settings/applications/LinearColorPreference;->Hc:I
+    iput p2, p0, Lcom/android/settings_ext/applications/LinearColorPreference;->Hc:I
 
     .line 49
-    iput p3, p0, Lcom/android/settings/applications/LinearColorPreference;->Hd:I
+    iput p3, p0, Lcom/android/settings_ext/applications/LinearColorPreference;->Hd:I
 
     .line 50
-    invoke-virtual {p0}, Lcom/android/settings/applications/LinearColorPreference;->notifyChanged()V
+    invoke-virtual {p0}, Lcom/android/settings_ext/applications/LinearColorPreference;->notifyChanged()V
 
     .line 51
     return-void
@@ -105,10 +105,10 @@
 
     .prologue
     .line 59
-    iput p1, p0, Lcom/android/settings/applications/LinearColorPreference;->GQ:I
+    iput p1, p0, Lcom/android/settings_ext/applications/LinearColorPreference;->GQ:I
 
     .line 60
-    invoke-virtual {p0}, Lcom/android/settings/applications/LinearColorPreference;->notifyChanged()V
+    invoke-virtual {p0}, Lcom/android/settings_ext/applications/LinearColorPreference;->notifyChanged()V
 
     .line 61
     return-void
@@ -128,40 +128,40 @@
 
     move-result-object v0
 
-    check-cast v0, Lcom/android/settings/applications/LinearColorBar;
+    check-cast v0, Lcom/android/settings_ext/applications/LinearColorBar;
 
     .line 69
     const/4 v1, 0x0
 
-    invoke-virtual {v0, v1}, Lcom/android/settings/applications/LinearColorBar;->ag(Z)V
+    invoke-virtual {v0, v1}, Lcom/android/settings_ext/applications/LinearColorBar;->ag(Z)V
 
     .line 70
-    iget v1, p0, Lcom/android/settings/applications/LinearColorPreference;->Hb:I
+    iget v1, p0, Lcom/android/settings_ext/applications/LinearColorPreference;->Hb:I
 
-    iget v2, p0, Lcom/android/settings/applications/LinearColorPreference;->Hc:I
+    iget v2, p0, Lcom/android/settings_ext/applications/LinearColorPreference;->Hc:I
 
-    iget v3, p0, Lcom/android/settings/applications/LinearColorPreference;->Hd:I
+    iget v3, p0, Lcom/android/settings_ext/applications/LinearColorPreference;->Hd:I
 
-    invoke-virtual {v0, v1, v2, v3}, Lcom/android/settings/applications/LinearColorBar;->a(III)V
+    invoke-virtual {v0, v1, v2, v3}, Lcom/android/settings_ext/applications/LinearColorBar;->a(III)V
 
     .line 71
-    iget v1, p0, Lcom/android/settings/applications/LinearColorPreference;->GH:F
+    iget v1, p0, Lcom/android/settings_ext/applications/LinearColorPreference;->GH:F
 
-    iget v2, p0, Lcom/android/settings/applications/LinearColorPreference;->GI:F
+    iget v2, p0, Lcom/android/settings_ext/applications/LinearColorPreference;->GI:F
 
-    iget v3, p0, Lcom/android/settings/applications/LinearColorPreference;->GJ:F
+    iget v3, p0, Lcom/android/settings_ext/applications/LinearColorPreference;->GJ:F
 
-    invoke-virtual {v0, v1, v2, v3}, Lcom/android/settings/applications/LinearColorBar;->a(FFF)V
+    invoke-virtual {v0, v1, v2, v3}, Lcom/android/settings_ext/applications/LinearColorBar;->a(FFF)V
 
     .line 72
-    iget v1, p0, Lcom/android/settings/applications/LinearColorPreference;->GQ:I
+    iget v1, p0, Lcom/android/settings_ext/applications/LinearColorPreference;->GQ:I
 
-    invoke-virtual {v0, v1}, Lcom/android/settings/applications/LinearColorBar;->aB(I)V
+    invoke-virtual {v0, v1}, Lcom/android/settings_ext/applications/LinearColorBar;->aB(I)V
 
     .line 73
-    iget-object v1, p0, Lcom/android/settings/applications/LinearColorPreference;->GP:Lcom/android/settings/applications/LinearColorBar$OnRegionTappedListener;
+    iget-object v1, p0, Lcom/android/settings_ext/applications/LinearColorPreference;->GP:Lcom/android/settings_ext/applications/LinearColorBar$OnRegionTappedListener;
 
-    invoke-virtual {v0, v1}, Lcom/android/settings/applications/LinearColorBar;->a(Lcom/android/settings/applications/LinearColorBar$OnRegionTappedListener;)V
+    invoke-virtual {v0, v1}, Lcom/android/settings_ext/applications/LinearColorBar;->a(Lcom/android/settings_ext/applications/LinearColorBar$OnRegionTappedListener;)V
 
     .line 74
     return-void

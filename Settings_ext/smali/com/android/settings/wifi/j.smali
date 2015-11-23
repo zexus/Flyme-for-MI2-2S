@@ -1,4 +1,4 @@
-.class public interface abstract Lcom/android/settings/wifi/j;
+.class public interface abstract Lcom/android/settings_ext/wifi/j;
 .super Ljava/lang/Object;
 .source "MiuiWifiConfigController.java"
 

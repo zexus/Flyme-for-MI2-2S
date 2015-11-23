@@ -1,4 +1,4 @@
-.class Lcom/android/settings/L;
+.class Lcom/android/settings_ext/L;
 .super Ljava/lang/Object;
 .source "AppWidgetLoader.java"
 
@@ -9,16 +9,16 @@
 # instance fields
 .field bn:Ljava/text/Collator;
 
-.field final synthetic bo:Lcom/android/settings/K;
+.field final synthetic bo:Lcom/android/settings_ext/K;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/K;)V
+.method constructor <init>(Lcom/android/settings_ext/K;)V
     .locals 1
 
     .prologue
     .line 160
-    iput-object p1, p0, Lcom/android/settings/L;->bo:Lcom/android/settings/K;
+    iput-object p1, p0, Lcom/android/settings_ext/L;->bo:Lcom/android/settings_ext/K;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -27,25 +27,25 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/L;->bn:Ljava/text/Collator;
+    iput-object v0, p0, Lcom/android/settings_ext/L;->bn:Ljava/text/Collator;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public a(Lcom/android/settings/N;Lcom/android/settings/N;)I
+.method public a(Lcom/android/settings_ext/N;Lcom/android/settings_ext/N;)I
     .locals 3
 
     .prologue
     .line 164
-    iget-object v0, p0, Lcom/android/settings/L;->bn:Ljava/text/Collator;
+    iget-object v0, p0, Lcom/android/settings_ext/L;->bn:Ljava/text/Collator;
 
-    invoke-interface {p1}, Lcom/android/settings/N;->getLabel()Ljava/lang/CharSequence;
+    invoke-interface {p1}, Lcom/android/settings_ext/N;->getLabel()Ljava/lang/CharSequence;
 
     move-result-object v1
 
-    invoke-interface {p2}, Lcom/android/settings/N;->getLabel()Ljava/lang/CharSequence;
+    invoke-interface {p2}, Lcom/android/settings_ext/N;->getLabel()Ljava/lang/CharSequence;
 
     move-result-object v2
 
@@ -61,11 +61,11 @@
 
     .prologue
     .line 160
-    check-cast p1, Lcom/android/settings/N;
+    check-cast p1, Lcom/android/settings_ext/N;
 
-    check-cast p2, Lcom/android/settings/N;
+    check-cast p2, Lcom/android/settings_ext/N;
 
-    invoke-virtual {p0, p1, p2}, Lcom/android/settings/L;->a(Lcom/android/settings/N;Lcom/android/settings/N;)I
+    invoke-virtual {p0, p1, p2}, Lcom/android/settings_ext/L;->a(Lcom/android/settings_ext/N;Lcom/android/settings_ext/N;)I
 
     move-result v0
 

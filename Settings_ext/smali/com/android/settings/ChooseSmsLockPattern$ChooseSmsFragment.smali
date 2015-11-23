@@ -1,5 +1,5 @@
-.class public Lcom/android/settings/ChooseSmsLockPattern$ChooseSmsFragment;
-.super Lcom/android/settings/MiuiChooseLockPattern$ChooseLockPatternFragment;
+.class public Lcom/android/settings_ext/ChooseSmsLockPattern$ChooseSmsFragment;
+.super Lcom/android/settings_ext/MiuiChooseLockPattern$ChooseLockPatternFragment;
 .source "ChooseSmsLockPattern.java"
 
 
@@ -9,7 +9,7 @@
 
     .prologue
     .line 25
-    invoke-direct {p0}, Lcom/android/settings/MiuiChooseLockPattern$ChooseLockPatternFragment;-><init>()V
+    invoke-direct {p0}, Lcom/android/settings_ext/MiuiChooseLockPattern$ChooseLockPatternFragment;-><init>()V
 
     return-void
 .end method
@@ -21,9 +21,9 @@
 
     .prologue
     .line 28
-    sget-object v0, Lcom/android/settings/MiuiChooseLockPattern$ChooseLockPatternFragment$Stage;->oO:Lcom/android/settings/MiuiChooseLockPattern$ChooseLockPatternFragment$Stage;
+    sget-object v0, Lcom/android/settings_ext/MiuiChooseLockPattern$ChooseLockPatternFragment$Stage;->oO:Lcom/android/settings_ext/MiuiChooseLockPattern$ChooseLockPatternFragment$Stage;
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/ChooseSmsLockPattern$ChooseSmsFragment;->a(Lcom/android/settings/MiuiChooseLockPattern$ChooseLockPatternFragment$Stage;)V
+    invoke-virtual {p0, v0}, Lcom/android/settings_ext/ChooseSmsLockPattern$ChooseSmsFragment;->a(Lcom/android/settings_ext/MiuiChooseLockPattern$ChooseLockPatternFragment$Stage;)V
 
     .line 29
     return-void
@@ -34,26 +34,26 @@
 
     .prologue
     .line 38
-    iget-object v0, p0, Lcom/android/settings/ChooseSmsLockPattern$ChooseSmsFragment;->b:Landroid/security/ChooseLockSettingsHelper;
+    iget-object v0, p0, Lcom/android/settings_ext/ChooseSmsLockPattern$ChooseSmsFragment;->b:Landroid/security/ChooseLockSettingsHelper;
 
     invoke-virtual {v0}, Landroid/security/ChooseLockSettingsHelper;->utils()Landroid/security/MiuiLockPatternUtils;
 
     move-result-object v0
 
     .line 39
-    iget-object v1, p0, Lcom/android/settings/ChooseSmsLockPattern$ChooseSmsFragment;->ds:Ljava/util/List;
+    iget-object v1, p0, Lcom/android/settings_ext/ChooseSmsLockPattern$ChooseSmsFragment;->ds:Ljava/util/List;
 
     invoke-virtual {v0, v1}, Landroid/security/MiuiLockPatternUtils;->saveMiuiLockPattern(Ljava/util/List;)V
 
     .line 40
-    iget-object v0, p0, Lcom/android/settings/ChooseSmsLockPattern$ChooseSmsFragment;->b:Landroid/security/ChooseLockSettingsHelper;
+    iget-object v0, p0, Lcom/android/settings_ext/ChooseSmsLockPattern$ChooseSmsFragment;->b:Landroid/security/ChooseLockSettingsHelper;
 
     const/4 v1, 0x1
 
     invoke-virtual {v0, v1}, Landroid/security/ChooseLockSettingsHelper;->setPrivateSmsEnabled(Z)V
 
     .line 41
-    invoke-virtual {p0}, Lcom/android/settings/ChooseSmsLockPattern$ChooseSmsFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/ChooseSmsLockPattern$ChooseSmsFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
@@ -62,7 +62,7 @@
     invoke-virtual {v0, v1}, Landroid/app/Activity;->setResult(I)V
 
     .line 42
-    invoke-virtual {p0}, Lcom/android/settings/ChooseSmsLockPattern$ChooseSmsFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/ChooseSmsLockPattern$ChooseSmsFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
@@ -77,11 +77,11 @@
 
     .prologue
     .line 47
-    sget-object v0, Lcom/android/settings/MiuiChooseLockPattern$ChooseLockPatternFragment$Stage;->oO:Lcom/android/settings/MiuiChooseLockPattern$ChooseLockPatternFragment$Stage;
+    sget-object v0, Lcom/android/settings_ext/MiuiChooseLockPattern$ChooseLockPatternFragment$Stage;->oO:Lcom/android/settings_ext/MiuiChooseLockPattern$ChooseLockPatternFragment$Stage;
 
     const v1, 0x7f090c71
 
-    iput v1, v0, Lcom/android/settings/MiuiChooseLockPattern$ChooseLockPatternFragment$Stage;->headerMessage:I
+    iput v1, v0, Lcom/android/settings_ext/MiuiChooseLockPattern$ChooseLockPatternFragment$Stage;->headerMessage:I
 
     .line 48
     return-void
@@ -92,12 +92,12 @@
 
     .prologue
     .line 33
-    invoke-super {p0, p1}, Lcom/android/settings/MiuiChooseLockPattern$ChooseLockPatternFragment;->onCreate(Landroid/os/Bundle;)V
+    invoke-super {p0, p1}, Lcom/android/settings_ext/MiuiChooseLockPattern$ChooseLockPatternFragment;->onCreate(Landroid/os/Bundle;)V
 
     .line 34
     new-instance v0, Landroid/security/ChooseLockSettingsHelper;
 
-    invoke-virtual {p0}, Lcom/android/settings/ChooseSmsLockPattern$ChooseSmsFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/ChooseSmsLockPattern$ChooseSmsFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v1
 
@@ -105,7 +105,7 @@
 
     invoke-direct {v0, v1, v2}, Landroid/security/ChooseLockSettingsHelper;-><init>(Landroid/app/Activity;I)V
 
-    iput-object v0, p0, Lcom/android/settings/ChooseSmsLockPattern$ChooseSmsFragment;->b:Landroid/security/ChooseLockSettingsHelper;
+    iput-object v0, p0, Lcom/android/settings_ext/ChooseSmsLockPattern$ChooseSmsFragment;->b:Landroid/security/ChooseLockSettingsHelper;
 
     .line 35
     return-void

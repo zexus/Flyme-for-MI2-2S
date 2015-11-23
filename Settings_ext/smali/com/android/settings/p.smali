@@ -1,4 +1,4 @@
-.class Lcom/android/settings/p;
+.class Lcom/android/settings_ext/p;
 .super Landroid/graphics/drawable/Drawable;
 .source "ActivityPicker.java"
 
@@ -18,10 +18,10 @@
     invoke-direct {p0}, Landroid/graphics/drawable/Drawable;-><init>()V
 
     .line 438
-    iput p1, p0, Lcom/android/settings/p;->mWidth:I
+    iput p1, p0, Lcom/android/settings_ext/p;->mWidth:I
 
     .line 439
-    iput p2, p0, Lcom/android/settings/p;->mHeight:I
+    iput p2, p0, Lcom/android/settings_ext/p;->mHeight:I
 
     .line 440
     return-void
@@ -42,7 +42,7 @@
 
     .prologue
     .line 449
-    iget v0, p0, Lcom/android/settings/p;->mHeight:I
+    iget v0, p0, Lcom/android/settings_ext/p;->mHeight:I
 
     return v0
 .end method
@@ -52,7 +52,7 @@
 
     .prologue
     .line 444
-    iget v0, p0, Lcom/android/settings/p;->mWidth:I
+    iget v0, p0, Lcom/android/settings_ext/p;->mWidth:I
 
     return v0
 .end method
@@ -62,7 +62,7 @@
 
     .prologue
     .line 459
-    iget v0, p0, Lcom/android/settings/p;->mHeight:I
+    iget v0, p0, Lcom/android/settings_ext/p;->mHeight:I
 
     return v0
 .end method
@@ -72,7 +72,7 @@
 
     .prologue
     .line 454
-    iget v0, p0, Lcom/android/settings/p;->mWidth:I
+    iget v0, p0, Lcom/android/settings_ext/p;->mWidth:I
 
     return v0
 .end method

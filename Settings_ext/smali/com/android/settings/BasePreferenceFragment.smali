@@ -1,5 +1,5 @@
-.class public Lcom/android/settings/BasePreferenceFragment;
-.super Lcom/android/settings/SettingsPreferenceFragment;
+.class public Lcom/android/settings_ext/BasePreferenceFragment;
+.super Lcom/android/settings_ext/SettingsPreferenceFragment;
 .source "BasePreferenceFragment.java"
 
 
@@ -17,32 +17,32 @@
 
     .prologue
     .line 32
-    invoke-direct {p0}, Lcom/android/settings/SettingsPreferenceFragment;-><init>()V
+    invoke-direct {p0}, Lcom/android/settings_ext/SettingsPreferenceFragment;-><init>()V
 
     .line 100
-    new-instance v0, Lcom/android/settings/X;
+    new-instance v0, Lcom/android/settings_ext/X;
 
-    invoke-direct {v0, p0}, Lcom/android/settings/X;-><init>(Lcom/android/settings/BasePreferenceFragment;)V
+    invoke-direct {v0, p0}, Lcom/android/settings_ext/X;-><init>(Lcom/android/settings_ext/BasePreferenceFragment;)V
 
-    iput-object v0, p0, Lcom/android/settings/BasePreferenceFragment;->mOnItemClickListener:Landroid/widget/AdapterView$OnItemClickListener;
+    iput-object v0, p0, Lcom/android/settings_ext/BasePreferenceFragment;->mOnItemClickListener:Landroid/widget/AdapterView$OnItemClickListener;
 
     .line 155
-    new-instance v0, Lcom/android/settings/Y;
+    new-instance v0, Lcom/android/settings_ext/Y;
 
-    invoke-direct {v0, p0}, Lcom/android/settings/Y;-><init>(Lcom/android/settings/BasePreferenceFragment;)V
+    invoke-direct {v0, p0}, Lcom/android/settings_ext/Y;-><init>(Lcom/android/settings_ext/BasePreferenceFragment;)V
 
-    iput-object v0, p0, Lcom/android/settings/BasePreferenceFragment;->mReceiver:Landroid/content/BroadcastReceiver;
+    iput-object v0, p0, Lcom/android/settings_ext/BasePreferenceFragment;->mReceiver:Landroid/content/BroadcastReceiver;
 
     .line 34
     return-void
 .end method
 
-.method static synthetic a(Lcom/android/settings/BasePreferenceFragment;Landroid/preference/PreferenceActivity$Header;I)V
+.method static synthetic a(Lcom/android/settings_ext/BasePreferenceFragment;Landroid/preference/PreferenceActivity$Header;I)V
     .locals 0
 
     .prologue
     .line 29
-    invoke-direct {p0, p1, p2}, Lcom/android/settings/BasePreferenceFragment;->onHeaderClick(Landroid/preference/PreferenceActivity$Header;I)V
+    invoke-direct {p0, p1, p2}, Lcom/android/settings_ext/BasePreferenceFragment;->onHeaderClick(Landroid/preference/PreferenceActivity$Header;I)V
 
     return-void
 .end method
@@ -52,7 +52,7 @@
 
     .prologue
     .line 70
-    invoke-virtual {p0}, Lcom/android/settings/BasePreferenceFragment;->getListView()Landroid/widget/ListView;
+    invoke-virtual {p0}, Lcom/android/settings_ext/BasePreferenceFragment;->getListView()Landroid/widget/ListView;
 
     move-result-object v0
 
@@ -60,12 +60,12 @@
 
     move-result-object v0
 
-    check-cast v0, Lcom/android/settings/eD;
+    check-cast v0, Lcom/android/settings_ext/eD;
 
     .line 71
     iget-wide v2, p1, Landroid/preference/PreferenceActivity$Header;->id:J
 
-    invoke-virtual {v0, v2, v3}, Lcom/android/settings/eD;->j(J)Z
+    invoke-virtual {v0, v2, v3}, Lcom/android/settings_ext/eD;->j(J)Z
 
     move-result v0
 
@@ -95,25 +95,25 @@
     if-nez v0, :cond_3
 
     :cond_2
-    invoke-virtual {p0}, Lcom/android/settings/BasePreferenceFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/BasePreferenceFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
-    invoke-static {v0}, Lcom/android/settings/df;->b(Landroid/content/Context;)Z
+    invoke-static {v0}, Lcom/android/settings_ext/df;->b(Landroid/content/Context;)Z
 
     move-result v0
 
     if-nez v0, :cond_0
 
-    invoke-static {}, Lcom/android/settings/eK;->fB()Lcom/android/settings/eK;
+    invoke-static {}, Lcom/android/settings_ext/eK;->fB()Lcom/android/settings_ext/eK;
 
     move-result-object v0
 
-    invoke-virtual {p0}, Lcom/android/settings/BasePreferenceFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/BasePreferenceFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v1
 
-    invoke-virtual {v0, v1}, Lcom/android/settings/eK;->z(Landroid/content/Context;)Z
+    invoke-virtual {v0, v1}, Lcom/android/settings_ext/eK;->z(Landroid/content/Context;)Z
 
     move-result v0
 
@@ -121,15 +121,15 @@
 
     .line 83
     :cond_3
-    invoke-virtual {p0}, Lcom/android/settings/BasePreferenceFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/BasePreferenceFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
-    check-cast v0, Lcom/android/settings/MiuiSettings;
+    check-cast v0, Lcom/android/settings_ext/MiuiSettings;
 
     .line 86
     :try_start_0
-    invoke-virtual {v0, p1, p2}, Lcom/android/settings/MiuiSettings;->onHeaderClick(Landroid/preference/PreferenceActivity$Header;I)V
+    invoke-virtual {v0, p1, p2}, Lcom/android/settings_ext/MiuiSettings;->onHeaderClick(Landroid/preference/PreferenceActivity$Header;I)V
     :try_end_0
     .catch Landroid/content/ActivityNotFoundException; {:try_start_0 .. :try_end_0} :catch_0
 
@@ -138,7 +138,7 @@
 
     long-to-int v0, v0
 
-    invoke-static {v0}, Lcom/android/settings/cz;->A(I)I
+    invoke-static {v0}, Lcom/android/settings_ext/cz;->A(I)I
 
     move-result v0
 
@@ -146,7 +146,7 @@
     if-ltz v0, :cond_0
 
     .line 93
-    invoke-static {v0}, Lcom/android/settings/cz;->z(I)Ljava/lang/String;
+    invoke-static {v0}, Lcom/android/settings_ext/cz;->z(I)Ljava/lang/String;
 
     move-result-object v1
 
@@ -158,7 +158,7 @@
     if-nez v2, :cond_0
 
     .line 95
-    invoke-static {v1, v1, v0}, Lcom/android/settings/provider/b;->a(Ljava/lang/String;Ljava/lang/String;I)V
+    invoke-static {v1, v1, v0}, Lcom/android/settings_ext/provider/b;->a(Ljava/lang/String;Ljava/lang/String;I)V
 
     goto :goto_0
 
@@ -176,10 +176,10 @@
 
     .prologue
     .line 37
-    invoke-virtual {p0}, Lcom/android/settings/BasePreferenceFragment;->aa()V
+    invoke-virtual {p0}, Lcom/android/settings_ext/BasePreferenceFragment;->aa()V
 
     .line 39
-    iget-object v0, p0, Lcom/android/settings/BasePreferenceFragment;->bY:Ljava/util/List;
+    iget-object v0, p0, Lcom/android/settings_ext/BasePreferenceFragment;->bY:Ljava/util/List;
 
     if-nez v0, :cond_0
 
@@ -188,10 +188,10 @@
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
-    iput-object v0, p0, Lcom/android/settings/BasePreferenceFragment;->bY:Ljava/util/List;
+    iput-object v0, p0, Lcom/android/settings_ext/BasePreferenceFragment;->bY:Ljava/util/List;
 
     .line 43
-    invoke-virtual {p0}, Lcom/android/settings/BasePreferenceFragment;->getListView()Landroid/widget/ListView;
+    invoke-virtual {p0}, Lcom/android/settings_ext/BasePreferenceFragment;->getListView()Landroid/widget/ListView;
 
     move-result-object v0
 
@@ -215,7 +215,7 @@
     if-ge v1, v0, :cond_0
 
     .line 46
-    iget-object v3, p0, Lcom/android/settings/BasePreferenceFragment;->bY:Ljava/util/List;
+    iget-object v3, p0, Lcom/android/settings_ext/BasePreferenceFragment;->bY:Ljava/util/List;
 
     invoke-interface {v2, v1}, Landroid/widget/ListAdapter;->getItem(I)Ljava/lang/Object;
 
@@ -234,7 +234,7 @@
 
     .line 51
     :cond_0
-    invoke-virtual {p0}, Lcom/android/settings/BasePreferenceFragment;->getListView()Landroid/widget/ListView;
+    invoke-virtual {p0}, Lcom/android/settings_ext/BasePreferenceFragment;->getListView()Landroid/widget/ListView;
 
     move-result-object v0
 
@@ -242,13 +242,13 @@
 
     move-result-object v0
 
-    check-cast v0, Lcom/android/settings/eD;
+    check-cast v0, Lcom/android/settings_ext/eD;
 
     .line 52
     if-eqz v0, :cond_1
 
     .line 53
-    invoke-virtual {v0}, Lcom/android/settings/eD;->pause()V
+    invoke-virtual {v0}, Lcom/android/settings_ext/eD;->pause()V
 
     .line 55
     :cond_1
@@ -260,11 +260,11 @@
 
     .prologue
     .line 114
-    invoke-virtual {p0}, Lcom/android/settings/BasePreferenceFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/BasePreferenceFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
-    check-cast v0, Lcom/android/settings/MiuiSettings;
+    check-cast v0, Lcom/android/settings_ext/MiuiSettings;
 
     .line 115
     if-nez v0, :cond_0
@@ -280,7 +280,7 @@
     invoke-direct {v1}, Ljava/util/ArrayList;-><init>()V
 
     .line 120
-    invoke-virtual {p0}, Lcom/android/settings/BasePreferenceFragment;->ac()I
+    invoke-virtual {p0}, Lcom/android/settings_ext/BasePreferenceFragment;->ac()I
 
     move-result v2
 
@@ -288,14 +288,14 @@
     if-lez v2, :cond_1
 
     .line 122
-    invoke-virtual {v0, v2, v1}, Lcom/android/settings/MiuiSettings;->loadHeadersFromResource(ILjava/util/List;)V
+    invoke-virtual {v0, v2, v1}, Lcom/android/settings_ext/MiuiSettings;->loadHeadersFromResource(ILjava/util/List;)V
 
     .line 123
-    invoke-virtual {v0, v1}, Lcom/android/settings/MiuiSettings;->c(Ljava/util/List;)V
+    invoke-virtual {v0, v1}, Lcom/android/settings_ext/MiuiSettings;->c(Ljava/util/List;)V
 
     .line 125
     :cond_1
-    iput-object v1, p0, Lcom/android/settings/BasePreferenceFragment;->bY:Ljava/util/List;
+    iput-object v1, p0, Lcom/android/settings_ext/BasePreferenceFragment;->bY:Ljava/util/List;
 
     goto :goto_0
 .end method
@@ -316,14 +316,14 @@
 
     .line 132
     :cond_1
-    invoke-virtual {p0}, Lcom/android/settings/BasePreferenceFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/BasePreferenceFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
-    check-cast v0, Lcom/android/settings/MiuiSettings;
+    check-cast v0, Lcom/android/settings_ext/MiuiSettings;
 
     .line 133
-    invoke-virtual {p0}, Lcom/android/settings/BasePreferenceFragment;->getFragmentManager()Landroid/app/FragmentManager;
+    invoke-virtual {p0}, Lcom/android/settings_ext/BasePreferenceFragment;->getFragmentManager()Landroid/app/FragmentManager;
 
     move-result-object v1
 
@@ -333,7 +333,7 @@
     move-result v3
 
     .line 136
-    iget-object v1, p0, Lcom/android/settings/BasePreferenceFragment;->bY:Ljava/util/List;
+    iget-object v1, p0, Lcom/android/settings_ext/BasePreferenceFragment;->bY:Ljava/util/List;
 
     if-eqz v1, :cond_0
 
@@ -343,7 +343,7 @@
     move v2, v1
 
     :goto_1
-    iget-object v1, p0, Lcom/android/settings/BasePreferenceFragment;->bY:Ljava/util/List;
+    iget-object v1, p0, Lcom/android/settings_ext/BasePreferenceFragment;->bY:Ljava/util/List;
 
     invoke-interface {v1}, Ljava/util/List;->size()I
 
@@ -352,7 +352,7 @@
     if-ge v2, v1, :cond_0
 
     .line 138
-    iget-object v1, p0, Lcom/android/settings/BasePreferenceFragment;->bY:Ljava/util/List;
+    iget-object v1, p0, Lcom/android/settings_ext/BasePreferenceFragment;->bY:Ljava/util/List;
 
     invoke-interface {v1, v2}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
@@ -363,7 +363,7 @@
     .line 139
     iget-object v4, v1, Landroid/preference/PreferenceActivity$Header;->fragment:Ljava/lang/String;
 
-    invoke-virtual {v0}, Lcom/android/settings/MiuiSettings;->ft()Ljava/lang/String;
+    invoke-virtual {v0}, Lcom/android/settings_ext/MiuiSettings;->ft()Ljava/lang/String;
 
     move-result-object v5
 
@@ -374,7 +374,7 @@
     if-eqz v4, :cond_2
 
     .line 140
-    invoke-virtual {p0}, Lcom/android/settings/BasePreferenceFragment;->getListView()Landroid/widget/ListView;
+    invoke-virtual {p0}, Lcom/android/settings_ext/BasePreferenceFragment;->getListView()Landroid/widget/ListView;
 
     move-result-object v4
 
@@ -387,7 +387,7 @@
     if-nez v3, :cond_0
 
     .line 143
-    invoke-virtual {v0, v1, v2}, Lcom/android/settings/MiuiSettings;->onHeaderClick(Landroid/preference/PreferenceActivity$Header;I)V
+    invoke-virtual {v0, v1, v2}, Lcom/android/settings_ext/MiuiSettings;->onHeaderClick(Landroid/preference/PreferenceActivity$Header;I)V
 
     goto :goto_0
 
@@ -415,7 +415,7 @@
 
     .prologue
     .line 171
-    invoke-super {p0, p1}, Lcom/android/settings/SettingsPreferenceFragment;->onCreate(Landroid/os/Bundle;)V
+    invoke-super {p0, p1}, Lcom/android/settings_ext/SettingsPreferenceFragment;->onCreate(Landroid/os/Bundle;)V
 
     .line 172
     new-instance v0, Landroid/content/IntentFilter;
@@ -430,11 +430,11 @@
     invoke-virtual {v0, v1}, Landroid/content/IntentFilter;->addAction(Ljava/lang/String;)V
 
     .line 174
-    invoke-virtual {p0}, Lcom/android/settings/BasePreferenceFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/BasePreferenceFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v1
 
-    iget-object v2, p0, Lcom/android/settings/BasePreferenceFragment;->mReceiver:Landroid/content/BroadcastReceiver;
+    iget-object v2, p0, Lcom/android/settings_ext/BasePreferenceFragment;->mReceiver:Landroid/content/BroadcastReceiver;
 
     invoke-virtual {v1, v2, v0}, Landroid/app/Activity;->registerReceiver(Landroid/content/BroadcastReceiver;Landroid/content/IntentFilter;)Landroid/content/Intent;
 
@@ -447,7 +447,7 @@
 
     .line 178
     :goto_0
-    invoke-virtual {p0, v0}, Lcom/android/settings/BasePreferenceFragment;->setThemeRes(I)V
+    invoke-virtual {p0, v0}, Lcom/android/settings_ext/BasePreferenceFragment;->setThemeRes(I)V
 
     .line 179
     return-void
@@ -464,16 +464,16 @@
 
     .prologue
     .line 183
-    invoke-virtual {p0}, Lcom/android/settings/BasePreferenceFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/BasePreferenceFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/android/settings/BasePreferenceFragment;->mReceiver:Landroid/content/BroadcastReceiver;
+    iget-object v1, p0, Lcom/android/settings_ext/BasePreferenceFragment;->mReceiver:Landroid/content/BroadcastReceiver;
 
     invoke-virtual {v0, v1}, Landroid/app/Activity;->unregisterReceiver(Landroid/content/BroadcastReceiver;)V
 
     .line 184
-    invoke-super {p0}, Lcom/android/settings/SettingsPreferenceFragment;->onDestroy()V
+    invoke-super {p0}, Lcom/android/settings_ext/SettingsPreferenceFragment;->onDestroy()V
 
     .line 185
     return-void
@@ -484,10 +484,10 @@
 
     .prologue
     .line 199
-    invoke-super {p0}, Lcom/android/settings/SettingsPreferenceFragment;->onPause()V
+    invoke-super {p0}, Lcom/android/settings_ext/SettingsPreferenceFragment;->onPause()V
 
     .line 201
-    invoke-virtual {p0}, Lcom/android/settings/BasePreferenceFragment;->getListView()Landroid/widget/ListView;
+    invoke-virtual {p0}, Lcom/android/settings_ext/BasePreferenceFragment;->getListView()Landroid/widget/ListView;
 
     move-result-object v0
 
@@ -496,14 +496,14 @@
     move-result-object v0
 
     .line 202
-    instance-of v1, v0, Lcom/android/settings/eD;
+    instance-of v1, v0, Lcom/android/settings_ext/eD;
 
     if-eqz v1, :cond_0
 
     .line 203
-    check-cast v0, Lcom/android/settings/eD;
+    check-cast v0, Lcom/android/settings_ext/eD;
 
-    invoke-virtual {v0}, Lcom/android/settings/eD;->pause()V
+    invoke-virtual {v0}, Lcom/android/settings_ext/eD;->pause()V
 
     .line 205
     :cond_0
@@ -515,10 +515,10 @@
 
     .prologue
     .line 189
-    invoke-super {p0}, Lcom/android/settings/SettingsPreferenceFragment;->onResume()V
+    invoke-super {p0}, Lcom/android/settings_ext/SettingsPreferenceFragment;->onResume()V
 
     .line 191
-    invoke-virtual {p0}, Lcom/android/settings/BasePreferenceFragment;->getListView()Landroid/widget/ListView;
+    invoke-virtual {p0}, Lcom/android/settings_ext/BasePreferenceFragment;->getListView()Landroid/widget/ListView;
 
     move-result-object v0
 
@@ -527,14 +527,14 @@
     move-result-object v0
 
     .line 192
-    instance-of v1, v0, Lcom/android/settings/eD;
+    instance-of v1, v0, Lcom/android/settings_ext/eD;
 
     if-eqz v1, :cond_0
 
     .line 193
-    check-cast v0, Lcom/android/settings/eD;
+    check-cast v0, Lcom/android/settings_ext/eD;
 
-    invoke-virtual {v0}, Lcom/android/settings/eD;->resume()V
+    invoke-virtual {v0}, Lcom/android/settings_ext/eD;->resume()V
 
     .line 195
     :cond_0
@@ -548,26 +548,26 @@
     const/4 v2, 0x0
 
     .line 59
-    invoke-virtual {p0}, Lcom/android/settings/BasePreferenceFragment;->Z()V
+    invoke-virtual {p0}, Lcom/android/settings_ext/BasePreferenceFragment;->Z()V
 
     .line 60
-    invoke-virtual {p0}, Lcom/android/settings/BasePreferenceFragment;->getListView()Landroid/widget/ListView;
+    invoke-virtual {p0}, Lcom/android/settings_ext/BasePreferenceFragment;->getListView()Landroid/widget/ListView;
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/android/settings/BasePreferenceFragment;->mOnItemClickListener:Landroid/widget/AdapterView$OnItemClickListener;
+    iget-object v1, p0, Lcom/android/settings_ext/BasePreferenceFragment;->mOnItemClickListener:Landroid/widget/AdapterView$OnItemClickListener;
 
     invoke-virtual {v0, v1}, Landroid/widget/ListView;->setOnItemClickListener(Landroid/widget/AdapterView$OnItemClickListener;)V
 
     .line 61
-    invoke-virtual {p0}, Lcom/android/settings/BasePreferenceFragment;->getListView()Landroid/widget/ListView;
+    invoke-virtual {p0}, Lcom/android/settings_ext/BasePreferenceFragment;->getListView()Landroid/widget/ListView;
 
     move-result-object v0
 
     invoke-virtual {v0, v2, v2, v2, v2}, Landroid/widget/ListView;->setPadding(IIII)V
 
     .line 62
-    invoke-virtual {p0}, Lcom/android/settings/BasePreferenceFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/BasePreferenceFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
@@ -582,14 +582,14 @@
     move-result v0
 
     .line 64
-    invoke-virtual {p0}, Lcom/android/settings/BasePreferenceFragment;->getListView()Landroid/widget/ListView;
+    invoke-virtual {p0}, Lcom/android/settings_ext/BasePreferenceFragment;->getListView()Landroid/widget/ListView;
 
     move-result-object v1
 
     invoke-virtual {v1, v2, v2, v2, v0}, Landroid/widget/ListView;->setPadding(IIII)V
 
     .line 65
-    invoke-super {p0, p1, p2}, Lcom/android/settings/SettingsPreferenceFragment;->onViewCreated(Landroid/view/View;Landroid/os/Bundle;)V
+    invoke-super {p0, p1, p2}, Lcom/android/settings_ext/SettingsPreferenceFragment;->onViewCreated(Landroid/view/View;Landroid/os/Bundle;)V
 
     .line 66
     return-void

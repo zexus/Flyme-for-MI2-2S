@@ -1,4 +1,4 @@
-.class public Lcom/android/settings/nfc/NfcSeRoute;
+.class public Lcom/android/settings_ext/nfc/NfcSeRoute;
 .super Ljava/lang/Object;
 .source "NfcSeRoute.java"
 

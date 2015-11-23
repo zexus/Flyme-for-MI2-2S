@@ -1,4 +1,4 @@
-.class Lcom/android/settings/sound/h;
+.class Lcom/android/settings_ext/sound/h;
 .super Ljava/lang/Object;
 .source "AudioSettingsFragment.java"
 
@@ -7,16 +7,16 @@
 
 
 # instance fields
-.field final synthetic ajq:Lcom/android/settings/sound/e;
+.field final synthetic ajq:Lcom/android/settings_ext/sound/e;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/sound/e;)V
+.method constructor <init>(Lcom/android/settings_ext/sound/e;)V
     .locals 0
 
     .prologue
     .line 120
-    iput-object p1, p0, Lcom/android/settings/sound/h;->ajq:Lcom/android/settings/sound/e;
+    iput-object p1, p0, Lcom/android/settings_ext/sound/h;->ajq:Lcom/android/settings_ext/sound/e;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -30,9 +30,9 @@
 
     .prologue
     .line 123
-    iget-object v0, p0, Lcom/android/settings/sound/h;->ajq:Lcom/android/settings/sound/e;
+    iget-object v0, p0, Lcom/android/settings_ext/sound/h;->ajq:Lcom/android/settings_ext/sound/e;
 
-    invoke-static {v0}, Lcom/android/settings/sound/e;->a(Lcom/android/settings/sound/e;)V
+    invoke-static {v0}, Lcom/android/settings_ext/sound/e;->a(Lcom/android/settings_ext/sound/e;)V
 
     .line 124
     return-void

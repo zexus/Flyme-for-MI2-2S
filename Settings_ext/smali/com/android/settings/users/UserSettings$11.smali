@@ -1,19 +1,19 @@
-.class Lcom/android/settings/users/UserSettings$11;
+.class Lcom/android/settings_ext/users/UserSettings$11;
 .super Ljava/lang/Thread;
 .source "UserSettings.java"
 
 
 # instance fields
-.field final synthetic amU:Lcom/android/settings/users/UserSettings;
+.field final synthetic amU:Lcom/android/settings_ext/users/UserSettings;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/users/UserSettings;)V
+.method constructor <init>(Lcom/android/settings_ext/users/UserSettings;)V
     .locals 0
 
     .prologue
     .line 639
-    iput-object p1, p0, Lcom/android/settings/users/UserSettings$11;->amU:Lcom/android/settings/users/UserSettings;
+    iput-object p1, p0, Lcom/android/settings_ext/users/UserSettings$11;->amU:Lcom/android/settings_ext/users/UserSettings;
 
     invoke-direct {p0}, Ljava/lang/Thread;-><init>()V
 
@@ -27,9 +27,9 @@
 
     .prologue
     .line 641
-    iget-object v0, p0, Lcom/android/settings/users/UserSettings$11;->amU:Lcom/android/settings/users/UserSettings;
+    iget-object v0, p0, Lcom/android/settings_ext/users/UserSettings$11;->amU:Lcom/android/settings_ext/users/UserSettings;
 
-    invoke-static {v0}, Lcom/android/settings/users/UserSettings;->i(Lcom/android/settings/users/UserSettings;)Ljava/lang/Object;
+    invoke-static {v0}, Lcom/android/settings_ext/users/UserSettings;->i(Lcom/android/settings_ext/users/UserSettings;)Ljava/lang/Object;
 
     move-result-object v1
 
@@ -37,24 +37,24 @@
 
     .line 642
     :try_start_0
-    iget-object v0, p0, Lcom/android/settings/users/UserSettings$11;->amU:Lcom/android/settings/users/UserSettings;
+    iget-object v0, p0, Lcom/android/settings_ext/users/UserSettings$11;->amU:Lcom/android/settings_ext/users/UserSettings;
 
-    invoke-static {v0}, Lcom/android/settings/users/UserSettings;->d(Lcom/android/settings/users/UserSettings;)Landroid/os/UserManager;
+    invoke-static {v0}, Lcom/android/settings_ext/users/UserSettings;->d(Lcom/android/settings_ext/users/UserSettings;)Landroid/os/UserManager;
 
     move-result-object v0
 
-    iget-object v2, p0, Lcom/android/settings/users/UserSettings$11;->amU:Lcom/android/settings/users/UserSettings;
+    iget-object v2, p0, Lcom/android/settings_ext/users/UserSettings$11;->amU:Lcom/android/settings_ext/users/UserSettings;
 
-    invoke-static {v2}, Lcom/android/settings/users/UserSettings;->j(Lcom/android/settings/users/UserSettings;)I
+    invoke-static {v2}, Lcom/android/settings_ext/users/UserSettings;->j(Lcom/android/settings_ext/users/UserSettings;)I
 
     move-result v2
 
     invoke-virtual {v0, v2}, Landroid/os/UserManager;->removeUser(I)Z
 
     .line 643
-    iget-object v0, p0, Lcom/android/settings/users/UserSettings$11;->amU:Lcom/android/settings/users/UserSettings;
+    iget-object v0, p0, Lcom/android/settings_ext/users/UserSettings$11;->amU:Lcom/android/settings_ext/users/UserSettings;
 
-    invoke-static {v0}, Lcom/android/settings/users/UserSettings;->c(Lcom/android/settings/users/UserSettings;)Landroid/os/Handler;
+    invoke-static {v0}, Lcom/android/settings_ext/users/UserSettings;->c(Lcom/android/settings_ext/users/UserSettings;)Landroid/os/Handler;
 
     move-result-object v0
 

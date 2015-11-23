@@ -1,19 +1,19 @@
-.class Lcom/android/settings/applications/InstalledAppDetailsFragment$1;
+.class Lcom/android/settings_ext/applications/InstalledAppDetailsFragment$1;
 .super Landroid/os/Handler;
 .source "InstalledAppDetailsFragment.java"
 
 
 # instance fields
-.field final synthetic GE:Lcom/android/settings/applications/InstalledAppDetailsFragment;
+.field final synthetic GE:Lcom/android/settings_ext/applications/InstalledAppDetailsFragment;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/applications/InstalledAppDetailsFragment;)V
+.method constructor <init>(Lcom/android/settings_ext/applications/InstalledAppDetailsFragment;)V
     .locals 0
 
     .prologue
     .line 182
-    iput-object p1, p0, Lcom/android/settings/applications/InstalledAppDetailsFragment$1;->GE:Lcom/android/settings/applications/InstalledAppDetailsFragment;
+    iput-object p1, p0, Lcom/android/settings_ext/applications/InstalledAppDetailsFragment$1;->GE:Lcom/android/settings_ext/applications/InstalledAppDetailsFragment;
 
     invoke-direct {p0}, Landroid/os/Handler;-><init>()V
 
@@ -27,9 +27,9 @@
 
     .prologue
     .line 185
-    iget-object v0, p0, Lcom/android/settings/applications/InstalledAppDetailsFragment$1;->GE:Lcom/android/settings/applications/InstalledAppDetailsFragment;
+    iget-object v0, p0, Lcom/android/settings_ext/applications/InstalledAppDetailsFragment$1;->GE:Lcom/android/settings_ext/applications/InstalledAppDetailsFragment;
 
-    invoke-virtual {v0}, Lcom/android/settings/applications/InstalledAppDetailsFragment;->getView()Landroid/view/View;
+    invoke-virtual {v0}, Lcom/android/settings_ext/applications/InstalledAppDetailsFragment;->getView()Landroid/view/View;
 
     move-result-object v0
 
@@ -50,39 +50,39 @@
 
     .line 190
     :pswitch_1
-    iget-object v0, p0, Lcom/android/settings/applications/InstalledAppDetailsFragment$1;->GE:Lcom/android/settings/applications/InstalledAppDetailsFragment;
+    iget-object v0, p0, Lcom/android/settings_ext/applications/InstalledAppDetailsFragment$1;->GE:Lcom/android/settings_ext/applications/InstalledAppDetailsFragment;
 
-    invoke-static {v0, p1}, Lcom/android/settings/applications/InstalledAppDetailsFragment;->a(Lcom/android/settings/applications/InstalledAppDetailsFragment;Landroid/os/Message;)V
+    invoke-static {v0, p1}, Lcom/android/settings_ext/applications/InstalledAppDetailsFragment;->a(Lcom/android/settings_ext/applications/InstalledAppDetailsFragment;Landroid/os/Message;)V
 
     goto :goto_0
 
     .line 194
     :pswitch_2
-    iget-object v0, p0, Lcom/android/settings/applications/InstalledAppDetailsFragment$1;->GE:Lcom/android/settings/applications/InstalledAppDetailsFragment;
+    iget-object v0, p0, Lcom/android/settings_ext/applications/InstalledAppDetailsFragment$1;->GE:Lcom/android/settings_ext/applications/InstalledAppDetailsFragment;
 
-    invoke-static {v0}, Lcom/android/settings/applications/InstalledAppDetailsFragment;->b(Lcom/android/settings/applications/InstalledAppDetailsFragment;)Lcom/android/settings/applications/ApplicationsState;
+    invoke-static {v0}, Lcom/android/settings_ext/applications/InstalledAppDetailsFragment;->b(Lcom/android/settings_ext/applications/InstalledAppDetailsFragment;)Lcom/android/settings_ext/applications/ApplicationsState;
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/android/settings/applications/InstalledAppDetailsFragment$1;->GE:Lcom/android/settings/applications/InstalledAppDetailsFragment;
+    iget-object v1, p0, Lcom/android/settings_ext/applications/InstalledAppDetailsFragment$1;->GE:Lcom/android/settings_ext/applications/InstalledAppDetailsFragment;
 
-    invoke-static {v1}, Lcom/android/settings/applications/InstalledAppDetailsFragment;->a(Lcom/android/settings/applications/InstalledAppDetailsFragment;)Lcom/android/settings/applications/ApplicationsState$AppEntry;
+    invoke-static {v1}, Lcom/android/settings_ext/applications/InstalledAppDetailsFragment;->a(Lcom/android/settings_ext/applications/InstalledAppDetailsFragment;)Lcom/android/settings_ext/applications/ApplicationsState$AppEntry;
 
     move-result-object v1
 
-    iget-object v1, v1, Lcom/android/settings/applications/ApplicationsState$AppEntry;->bl:Landroid/content/pm/ApplicationInfo;
+    iget-object v1, v1, Lcom/android/settings_ext/applications/ApplicationsState$AppEntry;->bl:Landroid/content/pm/ApplicationInfo;
 
     iget-object v1, v1, Landroid/content/pm/ApplicationInfo;->packageName:Ljava/lang/String;
 
-    invoke-virtual {v0, v1}, Lcom/android/settings/applications/ApplicationsState;->ae(Ljava/lang/String;)V
+    invoke-virtual {v0, v1}, Lcom/android/settings_ext/applications/ApplicationsState;->ae(Ljava/lang/String;)V
 
     goto :goto_0
 
     .line 197
     :pswitch_3
-    iget-object v0, p0, Lcom/android/settings/applications/InstalledAppDetailsFragment$1;->GE:Lcom/android/settings/applications/InstalledAppDetailsFragment;
+    iget-object v0, p0, Lcom/android/settings_ext/applications/InstalledAppDetailsFragment$1;->GE:Lcom/android/settings_ext/applications/InstalledAppDetailsFragment;
 
-    invoke-static {v0, p1}, Lcom/android/settings/applications/InstalledAppDetailsFragment;->b(Lcom/android/settings/applications/InstalledAppDetailsFragment;Landroid/os/Message;)V
+    invoke-static {v0, p1}, Lcom/android/settings_ext/applications/InstalledAppDetailsFragment;->b(Lcom/android/settings_ext/applications/InstalledAppDetailsFragment;Landroid/os/Message;)V
 
     goto :goto_0
 

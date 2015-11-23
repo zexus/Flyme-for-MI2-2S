@@ -1,4 +1,4 @@
-.class Lcom/android/settings/fY;
+.class Lcom/android/settings_ext/fY;
 .super Ljava/lang/Object;
 .source "ResetLegacyPassword.java"
 
@@ -7,16 +7,16 @@
 
 
 # instance fields
-.field final synthetic wa:Lcom/android/settings/ResetLegacyPassword$ResetLegacyPasswordInstructionFragment;
+.field final synthetic wa:Lcom/android/settings_ext/ResetLegacyPassword$ResetLegacyPasswordInstructionFragment;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/ResetLegacyPassword$ResetLegacyPasswordInstructionFragment;)V
+.method constructor <init>(Lcom/android/settings_ext/ResetLegacyPassword$ResetLegacyPasswordInstructionFragment;)V
     .locals 0
 
     .prologue
     .line 33
-    iput-object p1, p0, Lcom/android/settings/fY;->wa:Lcom/android/settings/ResetLegacyPassword$ResetLegacyPasswordInstructionFragment;
+    iput-object p1, p0, Lcom/android/settings_ext/fY;->wa:Lcom/android/settings_ext/ResetLegacyPassword$ResetLegacyPasswordInstructionFragment;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -30,11 +30,11 @@
 
     .prologue
     .line 36
-    iget-object v0, p0, Lcom/android/settings/fY;->wa:Lcom/android/settings/ResetLegacyPassword$ResetLegacyPasswordInstructionFragment;
+    iget-object v0, p0, Lcom/android/settings_ext/fY;->wa:Lcom/android/settings_ext/ResetLegacyPassword$ResetLegacyPasswordInstructionFragment;
 
-    iget-object v1, p0, Lcom/android/settings/fY;->wa:Lcom/android/settings/ResetLegacyPassword$ResetLegacyPasswordInstructionFragment;
+    iget-object v1, p0, Lcom/android/settings_ext/fY;->wa:Lcom/android/settings_ext/ResetLegacyPassword$ResetLegacyPasswordInstructionFragment;
 
-    const-class v2, Lcom/android/settings/MiuiSecurityCommonSettings$MiuiConfirmLockPasswordFragment;
+    const-class v2, Lcom/android/settings_ext/MiuiSecurityCommonSettings$MiuiConfirmLockPasswordFragment;
 
     invoke-virtual {v2}, Ljava/lang/Class;->getName()Ljava/lang/String;
 
@@ -44,7 +44,7 @@
 
     const/4 v4, 0x0
 
-    invoke-virtual {v0, v1, v2, v3, v4}, Lcom/android/settings/ResetLegacyPassword$ResetLegacyPasswordInstructionFragment;->a(Landroid/app/Fragment;Ljava/lang/String;ILandroid/os/Bundle;)Z
+    invoke-virtual {v0, v1, v2, v3, v4}, Lcom/android/settings_ext/ResetLegacyPassword$ResetLegacyPasswordInstructionFragment;->a(Landroid/app/Fragment;Ljava/lang/String;ILandroid/os/Bundle;)Z
 
     .line 39
     return-void

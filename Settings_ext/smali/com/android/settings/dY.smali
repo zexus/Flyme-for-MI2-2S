@@ -1,4 +1,4 @@
-.class Lcom/android/settings/dY;
+.class Lcom/android/settings_ext/dY;
 .super Ljava/lang/Object;
 .source "MiuiSecurityBluetoothDeviceInfoFragment.java"
 
@@ -7,16 +7,16 @@
 
 
 # instance fields
-.field final synthetic qB:Lcom/android/settings/MiuiSecurityBluetoothDeviceInfoFragment;
+.field final synthetic qB:Lcom/android/settings_ext/MiuiSecurityBluetoothDeviceInfoFragment;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/MiuiSecurityBluetoothDeviceInfoFragment;)V
+.method constructor <init>(Lcom/android/settings_ext/MiuiSecurityBluetoothDeviceInfoFragment;)V
     .locals 0
 
     .prologue
     .line 127
-    iput-object p1, p0, Lcom/android/settings/dY;->qB:Lcom/android/settings/MiuiSecurityBluetoothDeviceInfoFragment;
+    iput-object p1, p0, Lcom/android/settings_ext/dY;->qB:Lcom/android/settings_ext/MiuiSecurityBluetoothDeviceInfoFragment;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -30,16 +30,16 @@
 
     .prologue
     .line 130
-    new-instance v0, Lcom/android/settings/dZ;
+    new-instance v0, Lcom/android/settings_ext/dZ;
 
-    invoke-direct {v0, p0}, Lcom/android/settings/dZ;-><init>(Lcom/android/settings/dY;)V
+    invoke-direct {v0, p0}, Lcom/android/settings_ext/dZ;-><init>(Lcom/android/settings_ext/dY;)V
 
     .line 141
     new-instance v1, Landroid/app/AlertDialog$Builder;
 
-    iget-object v2, p0, Lcom/android/settings/dY;->qB:Lcom/android/settings/MiuiSecurityBluetoothDeviceInfoFragment;
+    iget-object v2, p0, Lcom/android/settings_ext/dY;->qB:Lcom/android/settings_ext/MiuiSecurityBluetoothDeviceInfoFragment;
 
-    invoke-virtual {v2}, Lcom/android/settings/MiuiSecurityBluetoothDeviceInfoFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {v2}, Lcom/android/settings_ext/MiuiSecurityBluetoothDeviceInfoFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v2
 

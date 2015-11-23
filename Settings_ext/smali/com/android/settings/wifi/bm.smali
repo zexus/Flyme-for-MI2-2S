@@ -1,4 +1,4 @@
-.class public Lcom/android/settings/wifi/bm;
+.class public Lcom/android/settings_ext/wifi/bm;
 .super Ljava/lang/Object;
 .source "XiaomiRouterUtils.java"
 
@@ -15,7 +15,7 @@
     .line 14
     const/4 v0, 0x0
 
-    sput-object v0, Lcom/android/settings/wifi/bm;->ayc:Ljava/lang/String;
+    sput-object v0, Lcom/android/settings_ext/wifi/bm;->ayc:Ljava/lang/String;
 
     return-void
 .end method
@@ -27,7 +27,7 @@
     .line 16
     const/4 v0, 0x0
 
-    invoke-static {p0, v0}, Lcom/android/settings/wifi/bm;->y(Landroid/content/Context;Ljava/lang/String;)V
+    invoke-static {p0, v0}, Lcom/android/settings_ext/wifi/bm;->y(Landroid/content/Context;Ljava/lang/String;)V
 
     .line 17
     return-void
@@ -75,7 +75,7 @@
     .line 20
     if-eqz p1, :cond_0
 
-    sget-object v0, Lcom/android/settings/wifi/bm;->ayc:Ljava/lang/String;
+    sget-object v0, Lcom/android/settings_ext/wifi/bm;->ayc:Ljava/lang/String;
 
     invoke-static {p1, v0}, Landroid/text/TextUtils;->equals(Ljava/lang/CharSequence;Ljava/lang/CharSequence;)Z
 
@@ -89,7 +89,7 @@
 
     .line 24
     :cond_0
-    sput-object p1, Lcom/android/settings/wifi/bm;->ayc:Ljava/lang/String;
+    sput-object p1, Lcom/android/settings_ext/wifi/bm;->ayc:Ljava/lang/String;
 
     .line 25
     invoke-virtual {p0}, Landroid/content/Context;->getPackageManager()Landroid/content/pm/PackageManager;
@@ -169,7 +169,7 @@
     invoke-virtual {v0, v1}, Landroid/content/Intent;->setData(Landroid/net/Uri;)Landroid/content/Intent;
 
     .line 43
-    invoke-static {p0, v0}, Lcom/android/settings/wifi/bm;->g(Landroid/content/Context;Landroid/content/Intent;)Z
+    invoke-static {p0, v0}, Lcom/android/settings_ext/wifi/bm;->g(Landroid/content/Context;Landroid/content/Intent;)Z
 
     goto :goto_0
 .end method

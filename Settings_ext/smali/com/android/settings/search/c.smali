@@ -1,19 +1,19 @@
-.class Lcom/android/settings/search/c;
+.class Lcom/android/settings_ext/search/c;
 .super Landroid/os/Handler;
 .source "DynamicIndexableContentMonitor.java"
 
 
 # instance fields
-.field final synthetic aiE:Lcom/android/settings/search/b;
+.field final synthetic aiE:Lcom/android/settings_ext/search/b;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/search/b;)V
+.method constructor <init>(Lcom/android/settings_ext/search/b;)V
     .locals 0
 
     .prologue
     .line 60
-    iput-object p1, p0, Lcom/android/settings/search/c;->aiE:Lcom/android/settings/search/b;
+    iput-object p1, p0, Lcom/android/settings_ext/search/c;->aiE:Lcom/android/settings_ext/search/b;
 
     invoke-direct {p0}, Landroid/os/Handler;-><init>()V
 
@@ -42,9 +42,9 @@
     check-cast v0, Ljava/lang/String;
 
     .line 66
-    iget-object v1, p0, Lcom/android/settings/search/c;->aiE:Lcom/android/settings/search/b;
+    iget-object v1, p0, Lcom/android/settings_ext/search/c;->aiE:Lcom/android/settings_ext/search/b;
 
-    invoke-static {v1, v0}, Lcom/android/settings/search/b;->a(Lcom/android/settings/search/b;Ljava/lang/String;)V
+    invoke-static {v1, v0}, Lcom/android/settings_ext/search/b;->a(Lcom/android/settings_ext/search/b;Ljava/lang/String;)V
 
     goto :goto_0
 
@@ -55,9 +55,9 @@
     check-cast v0, Ljava/lang/String;
 
     .line 71
-    iget-object v1, p0, Lcom/android/settings/search/c;->aiE:Lcom/android/settings/search/b;
+    iget-object v1, p0, Lcom/android/settings_ext/search/c;->aiE:Lcom/android/settings_ext/search/b;
 
-    invoke-static {v1, v0}, Lcom/android/settings/search/b;->b(Lcom/android/settings/search/b;Ljava/lang/String;)V
+    invoke-static {v1, v0}, Lcom/android/settings_ext/search/b;->b(Lcom/android/settings_ext/search/b;Ljava/lang/String;)V
 
     goto :goto_0
 

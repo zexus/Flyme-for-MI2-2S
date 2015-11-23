@@ -1,18 +1,18 @@
-.class public Lcom/android/settings/wifi/W;
+.class public Lcom/android/settings_ext/wifi/W;
 .super Ljava/lang/Object;
 .source "WifiConfigUiForSetupWizardXL.java"
 
 # interfaces
 .implements Landroid/view/View$OnFocusChangeListener;
-.implements Lcom/android/settings/wifi/V;
+.implements Lcom/android/settings_ext/wifi/V;
 
 
 # instance fields
 .field private avl:Landroid/widget/Button;
 
-.field private final avm:Lcom/android/settings/wifi/WifiSettingsForSetupWizardXL;
+.field private final avm:Lcom/android/settings_ext/wifi/WifiSettingsForSetupWizardXL;
 
-.field private avn:Lcom/android/settings/wifi/T;
+.field private avn:Lcom/android/settings_ext/wifi/T;
 
 .field private df:Landroid/widget/Button;
 
@@ -26,22 +26,22 @@
 
 
 # direct methods
-.method static synthetic a(Lcom/android/settings/wifi/W;)Landroid/view/inputmethod/InputMethodManager;
+.method static synthetic a(Lcom/android/settings_ext/wifi/W;)Landroid/view/inputmethod/InputMethodManager;
     .locals 1
 
     .prologue
     .line 36
-    iget-object v0, p0, Lcom/android/settings/wifi/W;->hx:Landroid/view/inputmethod/InputMethodManager;
+    iget-object v0, p0, Lcom/android/settings_ext/wifi/W;->hx:Landroid/view/inputmethod/InputMethodManager;
 
     return-object v0
 .end method
 
-.method static synthetic b(Lcom/android/settings/wifi/W;)Lcom/android/settings/wifi/WifiSettingsForSetupWizardXL;
+.method static synthetic b(Lcom/android/settings_ext/wifi/W;)Lcom/android/settings_ext/wifi/WifiSettingsForSetupWizardXL;
     .locals 1
 
     .prologue
     .line 36
-    iget-object v0, p0, Lcom/android/settings/wifi/W;->avm:Lcom/android/settings/wifi/WifiSettingsForSetupWizardXL;
+    iget-object v0, p0, Lcom/android/settings_ext/wifi/W;->avm:Lcom/android/settings_ext/wifi/WifiSettingsForSetupWizardXL;
 
     return-object v0
 .end method
@@ -55,7 +55,7 @@
     const/4 v6, 0x0
 
     .line 89
-    iget-object v0, p0, Lcom/android/settings/wifi/W;->mView:Landroid/view/View;
+    iget-object v0, p0, Lcom/android/settings_ext/wifi/W;->mView:Landroid/view/View;
 
     invoke-virtual {v0, p1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -107,7 +107,7 @@
     invoke-static {v0, v2}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
 
     .line 97
-    iget-object v0, p0, Lcom/android/settings/wifi/W;->hx:Landroid/view/inputmethod/InputMethodManager;
+    iget-object v0, p0, Lcom/android/settings_ext/wifi/W;->hx:Landroid/view/inputmethod/InputMethodManager;
 
     invoke-virtual {v0, v1, v6}, Landroid/view/inputmethod/InputMethodManager;->showSoftInput(Landroid/view/View;I)Z
 
@@ -177,14 +177,14 @@
 
     .prologue
     .line 153
-    iget-object v0, p0, Lcom/android/settings/wifi/W;->avl:Landroid/widget/Button;
+    iget-object v0, p0, Lcom/android/settings_ext/wifi/W;->avl:Landroid/widget/Button;
 
     const/4 v1, 0x0
 
     invoke-virtual {v0, v1}, Landroid/widget/Button;->setVisibility(I)V
 
     .line 154
-    iget-object v0, p0, Lcom/android/settings/wifi/W;->avl:Landroid/widget/Button;
+    iget-object v0, p0, Lcom/android/settings_ext/wifi/W;->avl:Landroid/widget/Button;
 
     invoke-virtual {v0, p1}, Landroid/widget/Button;->setText(Ljava/lang/CharSequence;)V
 
@@ -205,7 +205,7 @@
 
     .prologue
     .line 171
-    iget-object v0, p0, Lcom/android/settings/wifi/W;->avm:Lcom/android/settings/wifi/WifiSettingsForSetupWizardXL;
+    iget-object v0, p0, Lcom/android/settings_ext/wifi/W;->avm:Lcom/android/settings_ext/wifi/WifiSettingsForSetupWizardXL;
 
     return-object v0
 .end method
@@ -215,7 +215,7 @@
 
     .prologue
     .line 133
-    iget-object v0, p0, Lcom/android/settings/wifi/W;->mInflater:Landroid/view/LayoutInflater;
+    iget-object v0, p0, Lcom/android/settings_ext/wifi/W;->mInflater:Landroid/view/LayoutInflater;
 
     return-object v0
 .end method
@@ -225,7 +225,7 @@
 
     .prologue
     .line 164
-    iget-object v0, p0, Lcom/android/settings/wifi/W;->df:Landroid/widget/Button;
+    iget-object v0, p0, Lcom/android/settings_ext/wifi/W;->df:Landroid/widget/Button;
 
     const/4 v1, 0x0
 
@@ -248,11 +248,11 @@
     if-eqz p2, :cond_0
 
     .line 207
-    iget-object v0, p0, Lcom/android/settings/wifi/W;->mHandler:Landroid/os/Handler;
+    iget-object v0, p0, Lcom/android/settings_ext/wifi/W;->mHandler:Landroid/os/Handler;
 
-    new-instance v1, Lcom/android/settings/wifi/X;
+    new-instance v1, Lcom/android/settings_ext/wifi/X;
 
-    invoke-direct {v1, p0, p1}, Lcom/android/settings/wifi/X;-><init>(Lcom/android/settings/wifi/W;Landroid/view/View;)V
+    invoke-direct {v1, p0, p1}, Lcom/android/settings_ext/wifi/X;-><init>(Lcom/android/settings_ext/wifi/W;Landroid/view/View;)V
 
     invoke-virtual {v0, v1}, Landroid/os/Handler;->post(Ljava/lang/Runnable;)Z
 
@@ -296,17 +296,17 @@
 
     .prologue
     .line 138
-    iget-object v0, p0, Lcom/android/settings/wifi/W;->avl:Landroid/widget/Button;
+    iget-object v0, p0, Lcom/android/settings_ext/wifi/W;->avl:Landroid/widget/Button;
 
     return-object v0
 .end method
 
-.method public vb()Lcom/android/settings/wifi/T;
+.method public vb()Lcom/android/settings_ext/wifi/T;
     .locals 1
 
     .prologue
     .line 123
-    iget-object v0, p0, Lcom/android/settings/wifi/W;->avn:Lcom/android/settings/wifi/T;
+    iget-object v0, p0, Lcom/android/settings_ext/wifi/W;->avn:Lcom/android/settings_ext/wifi/T;
 
     return-object v0
 .end method

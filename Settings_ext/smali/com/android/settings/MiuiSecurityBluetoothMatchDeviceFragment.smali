@@ -1,10 +1,10 @@
-.class public Lcom/android/settings/MiuiSecurityBluetoothMatchDeviceFragment;
-.super Lcom/android/settings/SettingsPreferenceFragment;
+.class public Lcom/android/settings_ext/MiuiSecurityBluetoothMatchDeviceFragment;
+.super Lcom/android/settings_ext/SettingsPreferenceFragment;
 .source "MiuiSecurityBluetoothMatchDeviceFragment.java"
 
 
 # instance fields
-.field private cH:Lcom/android/settings/ap;
+.field private cH:Lcom/android/settings_ext/ap;
 
 .field private eo:Landroid/security/MiuiLockPatternUtils;
 
@@ -37,92 +37,92 @@
     const/4 v0, 0x0
 
     .line 41
-    invoke-direct {p0}, Lcom/android/settings/SettingsPreferenceFragment;-><init>()V
+    invoke-direct {p0}, Lcom/android/settings_ext/SettingsPreferenceFragment;-><init>()V
 
     .line 61
-    iput-boolean v0, p0, Lcom/android/settings/MiuiSecurityBluetoothMatchDeviceFragment;->qG:Z
+    iput-boolean v0, p0, Lcom/android/settings_ext/MiuiSecurityBluetoothMatchDeviceFragment;->qG:Z
 
     .line 62
-    iput v0, p0, Lcom/android/settings/MiuiSecurityBluetoothMatchDeviceFragment;->qH:I
+    iput v0, p0, Lcom/android/settings_ext/MiuiSecurityBluetoothMatchDeviceFragment;->qH:I
 
     .line 64
-    new-instance v0, Lcom/android/settings/ea;
+    new-instance v0, Lcom/android/settings_ext/ea;
 
-    invoke-direct {v0, p0}, Lcom/android/settings/ea;-><init>(Lcom/android/settings/MiuiSecurityBluetoothMatchDeviceFragment;)V
+    invoke-direct {v0, p0}, Lcom/android/settings_ext/ea;-><init>(Lcom/android/settings_ext/MiuiSecurityBluetoothMatchDeviceFragment;)V
 
-    iput-object v0, p0, Lcom/android/settings/MiuiSecurityBluetoothMatchDeviceFragment;->qI:Lmiui/bluetooth/ble/MiBleProfile$IProfileStateChangeCallback;
+    iput-object v0, p0, Lcom/android/settings_ext/MiuiSecurityBluetoothMatchDeviceFragment;->qI:Lmiui/bluetooth/ble/MiBleProfile$IProfileStateChangeCallback;
 
     return-void
 .end method
 
-.method static synthetic a(Lcom/android/settings/MiuiSecurityBluetoothMatchDeviceFragment;I)I
+.method static synthetic a(Lcom/android/settings_ext/MiuiSecurityBluetoothMatchDeviceFragment;I)I
     .locals 0
 
     .prologue
     .line 41
-    iput p1, p0, Lcom/android/settings/MiuiSecurityBluetoothMatchDeviceFragment;->qH:I
+    iput p1, p0, Lcom/android/settings_ext/MiuiSecurityBluetoothMatchDeviceFragment;->qH:I
 
     return p1
 .end method
 
-.method static synthetic a(Lcom/android/settings/MiuiSecurityBluetoothMatchDeviceFragment;)Z
+.method static synthetic a(Lcom/android/settings_ext/MiuiSecurityBluetoothMatchDeviceFragment;)Z
     .locals 1
 
     .prologue
     .line 41
-    iget-boolean v0, p0, Lcom/android/settings/MiuiSecurityBluetoothMatchDeviceFragment;->qG:Z
+    iget-boolean v0, p0, Lcom/android/settings_ext/MiuiSecurityBluetoothMatchDeviceFragment;->qG:Z
 
     return v0
 .end method
 
-.method static synthetic a(Lcom/android/settings/MiuiSecurityBluetoothMatchDeviceFragment;Z)Z
+.method static synthetic a(Lcom/android/settings_ext/MiuiSecurityBluetoothMatchDeviceFragment;Z)Z
     .locals 0
 
     .prologue
     .line 41
-    iput-boolean p1, p0, Lcom/android/settings/MiuiSecurityBluetoothMatchDeviceFragment;->qG:Z
+    iput-boolean p1, p0, Lcom/android/settings_ext/MiuiSecurityBluetoothMatchDeviceFragment;->qG:Z
 
     return p1
 .end method
 
-.method static synthetic b(Lcom/android/settings/MiuiSecurityBluetoothMatchDeviceFragment;)V
+.method static synthetic b(Lcom/android/settings_ext/MiuiSecurityBluetoothMatchDeviceFragment;)V
     .locals 0
 
     .prologue
     .line 41
-    invoke-direct {p0}, Lcom/android/settings/MiuiSecurityBluetoothMatchDeviceFragment;->eW()V
+    invoke-direct {p0}, Lcom/android/settings_ext/MiuiSecurityBluetoothMatchDeviceFragment;->eW()V
 
     return-void
 .end method
 
-.method static synthetic c(Lcom/android/settings/MiuiSecurityBluetoothMatchDeviceFragment;)[B
+.method static synthetic c(Lcom/android/settings_ext/MiuiSecurityBluetoothMatchDeviceFragment;)[B
     .locals 1
 
     .prologue
     .line 41
-    invoke-direct {p0}, Lcom/android/settings/MiuiSecurityBluetoothMatchDeviceFragment;->generateKey()[B
+    invoke-direct {p0}, Lcom/android/settings_ext/MiuiSecurityBluetoothMatchDeviceFragment;->generateKey()[B
 
     move-result-object v0
 
     return-object v0
 .end method
 
-.method static synthetic d(Lcom/android/settings/MiuiSecurityBluetoothMatchDeviceFragment;)Lmiui/bluetooth/ble/MiBleUnlockProfile;
+.method static synthetic d(Lcom/android/settings_ext/MiuiSecurityBluetoothMatchDeviceFragment;)Lmiui/bluetooth/ble/MiBleUnlockProfile;
     .locals 1
 
     .prologue
     .line 41
-    iget-object v0, p0, Lcom/android/settings/MiuiSecurityBluetoothMatchDeviceFragment;->qv:Lmiui/bluetooth/ble/MiBleUnlockProfile;
+    iget-object v0, p0, Lcom/android/settings_ext/MiuiSecurityBluetoothMatchDeviceFragment;->qv:Lmiui/bluetooth/ble/MiBleUnlockProfile;
 
     return-object v0
 .end method
 
-.method static synthetic e(Lcom/android/settings/MiuiSecurityBluetoothMatchDeviceFragment;)Landroid/security/MiuiLockPatternUtils;
+.method static synthetic e(Lcom/android/settings_ext/MiuiSecurityBluetoothMatchDeviceFragment;)Landroid/security/MiuiLockPatternUtils;
     .locals 1
 
     .prologue
     .line 41
-    iget-object v0, p0, Lcom/android/settings/MiuiSecurityBluetoothMatchDeviceFragment;->eo:Landroid/security/MiuiLockPatternUtils;
+    iget-object v0, p0, Lcom/android/settings_ext/MiuiSecurityBluetoothMatchDeviceFragment;->eo:Landroid/security/MiuiLockPatternUtils;
 
     return-object v0
 .end method
@@ -134,29 +134,29 @@
     .line 148
     const/4 v0, 0x1
 
-    iput v0, p0, Lcom/android/settings/MiuiSecurityBluetoothMatchDeviceFragment;->qH:I
+    iput v0, p0, Lcom/android/settings_ext/MiuiSecurityBluetoothMatchDeviceFragment;->qH:I
 
     .line 149
-    invoke-virtual {p0}, Lcom/android/settings/MiuiSecurityBluetoothMatchDeviceFragment;->isAdded()Z
+    invoke-virtual {p0}, Lcom/android/settings_ext/MiuiSecurityBluetoothMatchDeviceFragment;->isAdded()Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
     .line 150
-    invoke-direct {p0}, Lcom/android/settings/MiuiSecurityBluetoothMatchDeviceFragment;->eX()V
+    invoke-direct {p0}, Lcom/android/settings_ext/MiuiSecurityBluetoothMatchDeviceFragment;->eX()V
 
     .line 153
     :cond_0
-    new-instance v0, Lcom/android/settings/eb;
+    new-instance v0, Lcom/android/settings_ext/eb;
 
-    invoke-direct {v0, p0}, Lcom/android/settings/eb;-><init>(Lcom/android/settings/MiuiSecurityBluetoothMatchDeviceFragment;)V
+    invoke-direct {v0, p0}, Lcom/android/settings_ext/eb;-><init>(Lcom/android/settings_ext/MiuiSecurityBluetoothMatchDeviceFragment;)V
 
     const/4 v1, 0x0
 
     new-array v1, v1, [Ljava/lang/Void;
 
-    invoke-virtual {v0, v1}, Lcom/android/settings/eb;->execute([Ljava/lang/Object;)Landroid/os/AsyncTask;
+    invoke-virtual {v0, v1}, Lcom/android/settings_ext/eb;->execute([Ljava/lang/Object;)Landroid/os/AsyncTask;
 
     .line 193
     return-void
@@ -167,7 +167,7 @@
 
     .prologue
     .line 196
-    iget-object v0, p0, Lcom/android/settings/MiuiSecurityBluetoothMatchDeviceFragment;->qv:Lmiui/bluetooth/ble/MiBleUnlockProfile;
+    iget-object v0, p0, Lcom/android/settings_ext/MiuiSecurityBluetoothMatchDeviceFragment;->qv:Lmiui/bluetooth/ble/MiBleUnlockProfile;
 
     invoke-virtual {v0}, Lmiui/bluetooth/ble/MiBleUnlockProfile;->isReady()Z
 
@@ -176,7 +176,7 @@
     if-eqz v0, :cond_0
 
     .line 197
-    invoke-direct {p0}, Lcom/android/settings/MiuiSecurityBluetoothMatchDeviceFragment;->eV()V
+    invoke-direct {p0}, Lcom/android/settings_ext/MiuiSecurityBluetoothMatchDeviceFragment;->eV()V
 
     .line 202
     :goto_0
@@ -184,14 +184,14 @@
 
     .line 199
     :cond_0
-    iget-object v0, p0, Lcom/android/settings/MiuiSecurityBluetoothMatchDeviceFragment;->qv:Lmiui/bluetooth/ble/MiBleUnlockProfile;
+    iget-object v0, p0, Lcom/android/settings_ext/MiuiSecurityBluetoothMatchDeviceFragment;->qv:Lmiui/bluetooth/ble/MiBleUnlockProfile;
 
     invoke-virtual {v0}, Lmiui/bluetooth/ble/MiBleUnlockProfile;->connect()V
 
     .line 200
     const/4 v0, 0x1
 
-    iput-boolean v0, p0, Lcom/android/settings/MiuiSecurityBluetoothMatchDeviceFragment;->qG:Z
+    iput-boolean v0, p0, Lcom/android/settings_ext/MiuiSecurityBluetoothMatchDeviceFragment;->qG:Z
 
     goto :goto_0
 .end method
@@ -212,13 +212,13 @@
 
     .line 205
     .line 207
-    iget-object v0, p0, Lcom/android/settings/MiuiSecurityBluetoothMatchDeviceFragment;->qw:Landroid/widget/ImageView;
+    iget-object v0, p0, Lcom/android/settings_ext/MiuiSecurityBluetoothMatchDeviceFragment;->qw:Landroid/widget/ImageView;
 
     invoke-virtual {v0}, Landroid/widget/ImageView;->getWidth()I
 
     move-result v0
 
-    iget-object v3, p0, Lcom/android/settings/MiuiSecurityBluetoothMatchDeviceFragment;->qw:Landroid/widget/ImageView;
+    iget-object v3, p0, Lcom/android/settings_ext/MiuiSecurityBluetoothMatchDeviceFragment;->qw:Landroid/widget/ImageView;
 
     invoke-virtual {v3}, Landroid/widget/ImageView;->getHeight()I
 
@@ -226,7 +226,7 @@
 
     if-ge v0, v3, :cond_0
 
-    iget-object v0, p0, Lcom/android/settings/MiuiSecurityBluetoothMatchDeviceFragment;->qw:Landroid/widget/ImageView;
+    iget-object v0, p0, Lcom/android/settings_ext/MiuiSecurityBluetoothMatchDeviceFragment;->qw:Landroid/widget/ImageView;
 
     invoke-virtual {v0}, Landroid/widget/ImageView;->getWidth()I
 
@@ -234,21 +234,21 @@
 
     .line 210
     :goto_0
-    iget-object v3, p0, Lcom/android/settings/MiuiSecurityBluetoothMatchDeviceFragment;->qE:Landroid/widget/TextView;
+    iget-object v3, p0, Lcom/android/settings_ext/MiuiSecurityBluetoothMatchDeviceFragment;->qE:Landroid/widget/TextView;
 
     const v4, 0x7f090d60
 
     invoke-virtual {v3, v4}, Landroid/widget/TextView;->setText(I)V
 
     .line 211
-    iget-object v3, p0, Lcom/android/settings/MiuiSecurityBluetoothMatchDeviceFragment;->qF:Landroid/widget/ImageView;
+    iget-object v3, p0, Lcom/android/settings_ext/MiuiSecurityBluetoothMatchDeviceFragment;->qF:Landroid/widget/ImageView;
 
     const/4 v4, 0x0
 
     invoke-virtual {v3, v4}, Landroid/widget/ImageView;->setVisibility(I)V
 
     .line 213
-    iget-object v3, p0, Lcom/android/settings/MiuiSecurityBluetoothMatchDeviceFragment;->qF:Landroid/widget/ImageView;
+    iget-object v3, p0, Lcom/android/settings_ext/MiuiSecurityBluetoothMatchDeviceFragment;->qF:Landroid/widget/ImageView;
 
     invoke-virtual {v3}, Landroid/widget/ImageView;->getLayoutParams()Landroid/view/ViewGroup$LayoutParams;
 
@@ -265,7 +265,7 @@
     iput v0, v3, Landroid/view/ViewGroup$LayoutParams;->height:I
 
     .line 216
-    iget-object v0, p0, Lcom/android/settings/MiuiSecurityBluetoothMatchDeviceFragment;->qF:Landroid/widget/ImageView;
+    iget-object v0, p0, Lcom/android/settings_ext/MiuiSecurityBluetoothMatchDeviceFragment;->qF:Landroid/widget/ImageView;
 
     invoke-virtual {v0, v3}, Landroid/widget/ImageView;->setLayoutParams(Landroid/view/ViewGroup$LayoutParams;)V
 
@@ -320,7 +320,7 @@
     invoke-virtual {v1, v0}, Landroid/view/animation/AnimationSet;->addAnimation(Landroid/view/animation/Animation;)V
 
     .line 233
-    iget-object v0, p0, Lcom/android/settings/MiuiSecurityBluetoothMatchDeviceFragment;->qF:Landroid/widget/ImageView;
+    iget-object v0, p0, Lcom/android/settings_ext/MiuiSecurityBluetoothMatchDeviceFragment;->qF:Landroid/widget/ImageView;
 
     invoke-virtual {v0, v1}, Landroid/widget/ImageView;->startAnimation(Landroid/view/animation/Animation;)V
 
@@ -329,7 +329,7 @@
 
     .line 207
     :cond_0
-    iget-object v0, p0, Lcom/android/settings/MiuiSecurityBluetoothMatchDeviceFragment;->qw:Landroid/widget/ImageView;
+    iget-object v0, p0, Lcom/android/settings_ext/MiuiSecurityBluetoothMatchDeviceFragment;->qw:Landroid/widget/ImageView;
 
     invoke-virtual {v0}, Landroid/widget/ImageView;->getHeight()I
 
@@ -349,19 +349,19 @@
     const/4 v2, 0x0
 
     .line 237
-    iget-object v0, p0, Lcom/android/settings/MiuiSecurityBluetoothMatchDeviceFragment;->qE:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/android/settings_ext/MiuiSecurityBluetoothMatchDeviceFragment;->qE:Landroid/widget/TextView;
 
     const v1, 0x7f090d61
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setText(I)V
 
     .line 238
-    iget-object v0, p0, Lcom/android/settings/MiuiSecurityBluetoothMatchDeviceFragment;->qF:Landroid/widget/ImageView;
+    iget-object v0, p0, Lcom/android/settings_ext/MiuiSecurityBluetoothMatchDeviceFragment;->qF:Landroid/widget/ImageView;
 
     invoke-virtual {v0}, Landroid/widget/ImageView;->clearAnimation()V
 
     .line 239
-    iget-object v0, p0, Lcom/android/settings/MiuiSecurityBluetoothMatchDeviceFragment;->qF:Landroid/widget/ImageView;
+    iget-object v0, p0, Lcom/android/settings_ext/MiuiSecurityBluetoothMatchDeviceFragment;->qF:Landroid/widget/ImageView;
 
     const/16 v1, 0x8
 
@@ -384,31 +384,31 @@
     invoke-virtual {v1, v4, v5}, Landroid/view/animation/Animation;->setDuration(J)V
 
     .line 246
-    new-instance v2, Lcom/android/settings/ec;
+    new-instance v2, Lcom/android/settings_ext/ec;
 
-    invoke-direct {v2, p0}, Lcom/android/settings/ec;-><init>(Lcom/android/settings/MiuiSecurityBluetoothMatchDeviceFragment;)V
+    invoke-direct {v2, p0}, Lcom/android/settings_ext/ec;-><init>(Lcom/android/settings_ext/MiuiSecurityBluetoothMatchDeviceFragment;)V
 
     invoke-virtual {v0, v2}, Landroid/view/animation/Animation;->setAnimationListener(Landroid/view/animation/Animation$AnimationListener;)V
 
     .line 258
-    new-instance v2, Lcom/android/settings/ed;
+    new-instance v2, Lcom/android/settings_ext/ed;
 
-    invoke-direct {v2, p0}, Lcom/android/settings/ed;-><init>(Lcom/android/settings/MiuiSecurityBluetoothMatchDeviceFragment;)V
+    invoke-direct {v2, p0}, Lcom/android/settings_ext/ed;-><init>(Lcom/android/settings_ext/MiuiSecurityBluetoothMatchDeviceFragment;)V
 
     invoke-virtual {v0, v2}, Landroid/view/animation/Animation;->setAnimationListener(Landroid/view/animation/Animation$AnimationListener;)V
 
     .line 270
-    iget-object v2, p0, Lcom/android/settings/MiuiSecurityBluetoothMatchDeviceFragment;->qw:Landroid/widget/ImageView;
+    iget-object v2, p0, Lcom/android/settings_ext/MiuiSecurityBluetoothMatchDeviceFragment;->qw:Landroid/widget/ImageView;
 
     invoke-virtual {v2, v0}, Landroid/widget/ImageView;->startAnimation(Landroid/view/animation/Animation;)V
 
     .line 271
-    iget-object v0, p0, Lcom/android/settings/MiuiSecurityBluetoothMatchDeviceFragment;->qx:Landroid/widget/ImageView;
+    iget-object v0, p0, Lcom/android/settings_ext/MiuiSecurityBluetoothMatchDeviceFragment;->qx:Landroid/widget/ImageView;
 
     invoke-virtual {v0, v1}, Landroid/widget/ImageView;->startAnimation(Landroid/view/animation/Animation;)V
 
     .line 272
-    iget-object v0, p0, Lcom/android/settings/MiuiSecurityBluetoothMatchDeviceFragment;->qD:Landroid/view/View;
+    iget-object v0, p0, Lcom/android/settings_ext/MiuiSecurityBluetoothMatchDeviceFragment;->qD:Landroid/view/View;
 
     const/4 v1, 0x0
 
@@ -418,22 +418,22 @@
     return-void
 .end method
 
-.method static synthetic f(Lcom/android/settings/MiuiSecurityBluetoothMatchDeviceFragment;)Landroid/bluetooth/BluetoothDevice;
+.method static synthetic f(Lcom/android/settings_ext/MiuiSecurityBluetoothMatchDeviceFragment;)Landroid/bluetooth/BluetoothDevice;
     .locals 1
 
     .prologue
     .line 41
-    iget-object v0, p0, Lcom/android/settings/MiuiSecurityBluetoothMatchDeviceFragment;->mDevice:Landroid/bluetooth/BluetoothDevice;
+    iget-object v0, p0, Lcom/android/settings_ext/MiuiSecurityBluetoothMatchDeviceFragment;->mDevice:Landroid/bluetooth/BluetoothDevice;
 
     return-object v0
 .end method
 
-.method static synthetic g(Lcom/android/settings/MiuiSecurityBluetoothMatchDeviceFragment;)V
+.method static synthetic g(Lcom/android/settings_ext/MiuiSecurityBluetoothMatchDeviceFragment;)V
     .locals 0
 
     .prologue
     .line 41
-    invoke-direct {p0}, Lcom/android/settings/MiuiSecurityBluetoothMatchDeviceFragment;->eY()V
+    invoke-direct {p0}, Lcom/android/settings_ext/MiuiSecurityBluetoothMatchDeviceFragment;->eY()V
 
     return-void
 .end method
@@ -458,22 +458,22 @@
     return-object v0
 .end method
 
-.method static synthetic h(Lcom/android/settings/MiuiSecurityBluetoothMatchDeviceFragment;)Landroid/widget/ImageView;
+.method static synthetic h(Lcom/android/settings_ext/MiuiSecurityBluetoothMatchDeviceFragment;)Landroid/widget/ImageView;
     .locals 1
 
     .prologue
     .line 41
-    iget-object v0, p0, Lcom/android/settings/MiuiSecurityBluetoothMatchDeviceFragment;->qw:Landroid/widget/ImageView;
+    iget-object v0, p0, Lcom/android/settings_ext/MiuiSecurityBluetoothMatchDeviceFragment;->qw:Landroid/widget/ImageView;
 
     return-object v0
 .end method
 
-.method static synthetic i(Lcom/android/settings/MiuiSecurityBluetoothMatchDeviceFragment;)Landroid/widget/ImageView;
+.method static synthetic i(Lcom/android/settings_ext/MiuiSecurityBluetoothMatchDeviceFragment;)Landroid/widget/ImageView;
     .locals 1
 
     .prologue
     .line 41
-    iget-object v0, p0, Lcom/android/settings/MiuiSecurityBluetoothMatchDeviceFragment;->qx:Landroid/widget/ImageView;
+    iget-object v0, p0, Lcom/android/settings_ext/MiuiSecurityBluetoothMatchDeviceFragment;->qx:Landroid/widget/ImageView;
 
     return-object v0
 .end method
@@ -502,7 +502,7 @@
 
     check-cast v0, Landroid/widget/TextView;
 
-    iput-object v0, p0, Lcom/android/settings/MiuiSecurityBluetoothMatchDeviceFragment;->qE:Landroid/widget/TextView;
+    iput-object v0, p0, Lcom/android/settings_ext/MiuiSecurityBluetoothMatchDeviceFragment;->qE:Landroid/widget/TextView;
 
     .line 288
     const v0, 0x7f100273
@@ -513,7 +513,7 @@
 
     check-cast v0, Landroid/widget/ImageView;
 
-    iput-object v0, p0, Lcom/android/settings/MiuiSecurityBluetoothMatchDeviceFragment;->qw:Landroid/widget/ImageView;
+    iput-object v0, p0, Lcom/android/settings_ext/MiuiSecurityBluetoothMatchDeviceFragment;->qw:Landroid/widget/ImageView;
 
     .line 289
     const v0, 0x7f100274
@@ -524,7 +524,7 @@
 
     check-cast v0, Landroid/widget/ImageView;
 
-    iput-object v0, p0, Lcom/android/settings/MiuiSecurityBluetoothMatchDeviceFragment;->qx:Landroid/widget/ImageView;
+    iput-object v0, p0, Lcom/android/settings_ext/MiuiSecurityBluetoothMatchDeviceFragment;->qx:Landroid/widget/ImageView;
 
     .line 290
     const v0, 0x7f100275
@@ -535,7 +535,7 @@
 
     check-cast v0, Landroid/widget/ImageView;
 
-    iput-object v0, p0, Lcom/android/settings/MiuiSecurityBluetoothMatchDeviceFragment;->qF:Landroid/widget/ImageView;
+    iput-object v0, p0, Lcom/android/settings_ext/MiuiSecurityBluetoothMatchDeviceFragment;->qF:Landroid/widget/ImageView;
 
     .line 291
     const v0, 0x7f100278
@@ -544,35 +544,35 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/MiuiSecurityBluetoothMatchDeviceFragment;->qD:Landroid/view/View;
+    iput-object v0, p0, Lcom/android/settings_ext/MiuiSecurityBluetoothMatchDeviceFragment;->qD:Landroid/view/View;
 
     .line 293
-    iget-object v0, p0, Lcom/android/settings/MiuiSecurityBluetoothMatchDeviceFragment;->qE:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/android/settings_ext/MiuiSecurityBluetoothMatchDeviceFragment;->qE:Landroid/widget/TextView;
 
     const v2, 0x7f090222
 
     invoke-virtual {v0, v2}, Landroid/widget/TextView;->setText(I)V
 
     .line 294
-    iget-object v0, p0, Lcom/android/settings/MiuiSecurityBluetoothMatchDeviceFragment;->qF:Landroid/widget/ImageView;
+    iget-object v0, p0, Lcom/android/settings_ext/MiuiSecurityBluetoothMatchDeviceFragment;->qF:Landroid/widget/ImageView;
 
     const/16 v2, 0x8
 
     invoke-virtual {v0, v2}, Landroid/widget/ImageView;->setVisibility(I)V
 
     .line 296
-    iget-object v0, p0, Lcom/android/settings/MiuiSecurityBluetoothMatchDeviceFragment;->qD:Landroid/view/View;
+    iget-object v0, p0, Lcom/android/settings_ext/MiuiSecurityBluetoothMatchDeviceFragment;->qD:Landroid/view/View;
 
     const/4 v2, 0x4
 
     invoke-virtual {v0, v2}, Landroid/view/View;->setVisibility(I)V
 
     .line 297
-    iget-object v0, p0, Lcom/android/settings/MiuiSecurityBluetoothMatchDeviceFragment;->qD:Landroid/view/View;
+    iget-object v0, p0, Lcom/android/settings_ext/MiuiSecurityBluetoothMatchDeviceFragment;->qD:Landroid/view/View;
 
-    new-instance v2, Lcom/android/settings/ee;
+    new-instance v2, Lcom/android/settings_ext/ee;
 
-    invoke-direct {v2, p0}, Lcom/android/settings/ee;-><init>(Lcom/android/settings/MiuiSecurityBluetoothMatchDeviceFragment;)V
+    invoke-direct {v2, p0}, Lcom/android/settings_ext/ee;-><init>(Lcom/android/settings_ext/MiuiSecurityBluetoothMatchDeviceFragment;)V
 
     invoke-virtual {v0, v2}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
@@ -585,7 +585,7 @@
 
     .prologue
     .line 117
-    invoke-super {p0, p1, p2, p3}, Lcom/android/settings/SettingsPreferenceFragment;->onActivityResult(IILandroid/content/Intent;)V
+    invoke-super {p0, p1, p2, p3}, Lcom/android/settings_ext/SettingsPreferenceFragment;->onActivityResult(IILandroid/content/Intent;)V
 
     .line 119
     const/16 v0, 0x64
@@ -598,7 +598,7 @@
     if-ne p2, v0, :cond_1
 
     .line 121
-    invoke-direct {p0}, Lcom/android/settings/MiuiSecurityBluetoothMatchDeviceFragment;->eW()V
+    invoke-direct {p0}, Lcom/android/settings_ext/MiuiSecurityBluetoothMatchDeviceFragment;->eW()V
 
     .line 126
     :cond_0
@@ -607,7 +607,7 @@
 
     .line 123
     :cond_1
-    invoke-virtual {p0}, Lcom/android/settings/MiuiSecurityBluetoothMatchDeviceFragment;->finish()V
+    invoke-virtual {p0}, Lcom/android/settings_ext/MiuiSecurityBluetoothMatchDeviceFragment;->finish()V
 
     goto :goto_0
 .end method
@@ -621,35 +621,35 @@
     const/4 v1, 0x0
 
     .line 78
-    invoke-super {p0, p1}, Lcom/android/settings/SettingsPreferenceFragment;->onCreate(Landroid/os/Bundle;)V
+    invoke-super {p0, p1}, Lcom/android/settings_ext/SettingsPreferenceFragment;->onCreate(Landroid/os/Bundle;)V
 
     .line 79
-    invoke-virtual {p0, v6}, Lcom/android/settings/MiuiSecurityBluetoothMatchDeviceFragment;->setRetainInstance(Z)V
+    invoke-virtual {p0, v6}, Lcom/android/settings_ext/MiuiSecurityBluetoothMatchDeviceFragment;->setRetainInstance(Z)V
 
     .line 81
     new-instance v0, Landroid/security/MiuiLockPatternUtils;
 
-    invoke-virtual {p0}, Lcom/android/settings/MiuiSecurityBluetoothMatchDeviceFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/MiuiSecurityBluetoothMatchDeviceFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v2
 
     invoke-direct {v0, v2}, Landroid/security/MiuiLockPatternUtils;-><init>(Landroid/content/Context;)V
 
-    iput-object v0, p0, Lcom/android/settings/MiuiSecurityBluetoothMatchDeviceFragment;->eo:Landroid/security/MiuiLockPatternUtils;
+    iput-object v0, p0, Lcom/android/settings_ext/MiuiSecurityBluetoothMatchDeviceFragment;->eo:Landroid/security/MiuiLockPatternUtils;
 
     .line 82
-    new-instance v0, Lcom/android/settings/ap;
+    new-instance v0, Lcom/android/settings_ext/ap;
 
-    invoke-virtual {p0}, Lcom/android/settings/MiuiSecurityBluetoothMatchDeviceFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/MiuiSecurityBluetoothMatchDeviceFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v2
 
-    invoke-direct {v0, v2, p0}, Lcom/android/settings/ap;-><init>(Landroid/app/Activity;Landroid/app/Fragment;)V
+    invoke-direct {v0, v2, p0}, Lcom/android/settings_ext/ap;-><init>(Landroid/app/Activity;Landroid/app/Fragment;)V
 
-    iput-object v0, p0, Lcom/android/settings/MiuiSecurityBluetoothMatchDeviceFragment;->cH:Lcom/android/settings/ap;
+    iput-object v0, p0, Lcom/android/settings_ext/MiuiSecurityBluetoothMatchDeviceFragment;->cH:Lcom/android/settings_ext/ap;
 
     .line 85
-    invoke-virtual {p0}, Lcom/android/settings/MiuiSecurityBluetoothMatchDeviceFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/MiuiSecurityBluetoothMatchDeviceFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
@@ -697,14 +697,14 @@
 
     if-eqz v3, :cond_1
 
-    invoke-virtual {p0}, Lcom/android/settings/MiuiSecurityBluetoothMatchDeviceFragment;->getArguments()Landroid/os/Bundle;
+    invoke-virtual {p0}, Lcom/android/settings_ext/MiuiSecurityBluetoothMatchDeviceFragment;->getArguments()Landroid/os/Bundle;
 
     move-result-object v3
 
     if-eqz v3, :cond_1
 
     .line 94
-    invoke-virtual {p0}, Lcom/android/settings/MiuiSecurityBluetoothMatchDeviceFragment;->getArguments()Landroid/os/Bundle;
+    invoke-virtual {p0}, Lcom/android/settings_ext/MiuiSecurityBluetoothMatchDeviceFragment;->getArguments()Landroid/os/Bundle;
 
     move-result-object v0
 
@@ -732,29 +732,29 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/MiuiSecurityBluetoothMatchDeviceFragment;->mDevice:Landroid/bluetooth/BluetoothDevice;
+    iput-object v0, p0, Lcom/android/settings_ext/MiuiSecurityBluetoothMatchDeviceFragment;->mDevice:Landroid/bluetooth/BluetoothDevice;
 
     .line 105
     new-instance v0, Lmiui/bluetooth/ble/MiBleUnlockProfile;
 
-    invoke-virtual {p0}, Lcom/android/settings/MiuiSecurityBluetoothMatchDeviceFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/MiuiSecurityBluetoothMatchDeviceFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v3
 
-    iget-object v4, p0, Lcom/android/settings/MiuiSecurityBluetoothMatchDeviceFragment;->mDevice:Landroid/bluetooth/BluetoothDevice;
+    iget-object v4, p0, Lcom/android/settings_ext/MiuiSecurityBluetoothMatchDeviceFragment;->mDevice:Landroid/bluetooth/BluetoothDevice;
 
     invoke-virtual {v4}, Landroid/bluetooth/BluetoothDevice;->getAddress()Ljava/lang/String;
 
     move-result-object v4
 
-    iget-object v5, p0, Lcom/android/settings/MiuiSecurityBluetoothMatchDeviceFragment;->qI:Lmiui/bluetooth/ble/MiBleProfile$IProfileStateChangeCallback;
+    iget-object v5, p0, Lcom/android/settings_ext/MiuiSecurityBluetoothMatchDeviceFragment;->qI:Lmiui/bluetooth/ble/MiBleProfile$IProfileStateChangeCallback;
 
     invoke-direct {v0, v3, v4, v5}, Lmiui/bluetooth/ble/MiBleUnlockProfile;-><init>(Landroid/content/Context;Ljava/lang/String;Lmiui/bluetooth/ble/MiBleProfile$IProfileStateChangeCallback;)V
 
-    iput-object v0, p0, Lcom/android/settings/MiuiSecurityBluetoothMatchDeviceFragment;->qv:Lmiui/bluetooth/ble/MiBleUnlockProfile;
+    iput-object v0, p0, Lcom/android/settings_ext/MiuiSecurityBluetoothMatchDeviceFragment;->qv:Lmiui/bluetooth/ble/MiBleUnlockProfile;
 
     .line 106
-    iget-object v0, p0, Lcom/android/settings/MiuiSecurityBluetoothMatchDeviceFragment;->qv:Lmiui/bluetooth/ble/MiBleUnlockProfile;
+    iget-object v0, p0, Lcom/android/settings_ext/MiuiSecurityBluetoothMatchDeviceFragment;->qv:Lmiui/bluetooth/ble/MiBleUnlockProfile;
 
     invoke-virtual {v0}, Lmiui/bluetooth/ble/MiBleUnlockProfile;->connect()V
 
@@ -768,7 +768,7 @@
     if-eqz v0, :cond_3
 
     .line 109
-    invoke-direct {p0}, Lcom/android/settings/MiuiSecurityBluetoothMatchDeviceFragment;->eW()V
+    invoke-direct {p0}, Lcom/android/settings_ext/MiuiSecurityBluetoothMatchDeviceFragment;->eW()V
 
     .line 113
     :goto_1
@@ -776,17 +776,17 @@
 
     .line 101
     :cond_2
-    invoke-virtual {p0}, Lcom/android/settings/MiuiSecurityBluetoothMatchDeviceFragment;->finish()V
+    invoke-virtual {p0}, Lcom/android/settings_ext/MiuiSecurityBluetoothMatchDeviceFragment;->finish()V
 
     goto :goto_1
 
     .line 111
     :cond_3
-    iget-object v0, p0, Lcom/android/settings/MiuiSecurityBluetoothMatchDeviceFragment;->cH:Lcom/android/settings/ap;
+    iget-object v0, p0, Lcom/android/settings_ext/MiuiSecurityBluetoothMatchDeviceFragment;->cH:Lcom/android/settings_ext/ap;
 
     const/16 v2, 0x64
 
-    invoke-virtual {v0, v2, v1, v1}, Lcom/android/settings/ap;->launchConfirmationActivity(ILjava/lang/CharSequence;Ljava/lang/CharSequence;)Z
+    invoke-virtual {v0, v2, v1, v1}, Lcom/android/settings_ext/ap;->launchConfirmationActivity(ILjava/lang/CharSequence;Ljava/lang/CharSequence;)Z
 
     goto :goto_1
 
@@ -801,18 +801,18 @@
 
     .prologue
     .line 141
-    iget-object v0, p0, Lcom/android/settings/MiuiSecurityBluetoothMatchDeviceFragment;->qv:Lmiui/bluetooth/ble/MiBleUnlockProfile;
+    iget-object v0, p0, Lcom/android/settings_ext/MiuiSecurityBluetoothMatchDeviceFragment;->qv:Lmiui/bluetooth/ble/MiBleUnlockProfile;
 
     if-eqz v0, :cond_0
 
     .line 142
-    iget-object v0, p0, Lcom/android/settings/MiuiSecurityBluetoothMatchDeviceFragment;->qv:Lmiui/bluetooth/ble/MiBleUnlockProfile;
+    iget-object v0, p0, Lcom/android/settings_ext/MiuiSecurityBluetoothMatchDeviceFragment;->qv:Lmiui/bluetooth/ble/MiBleUnlockProfile;
 
     invoke-virtual {v0}, Lmiui/bluetooth/ble/MiBleUnlockProfile;->disconnect()V
 
     .line 144
     :cond_0
-    invoke-super {p0}, Lcom/android/settings/SettingsPreferenceFragment;->onDestroy()V
+    invoke-super {p0}, Lcom/android/settings_ext/SettingsPreferenceFragment;->onDestroy()V
 
     .line 145
     return-void
@@ -823,17 +823,17 @@
 
     .prologue
     .line 130
-    invoke-super {p0}, Lcom/android/settings/SettingsPreferenceFragment;->onResume()V
+    invoke-super {p0}, Lcom/android/settings_ext/SettingsPreferenceFragment;->onResume()V
 
     .line 132
-    iget v0, p0, Lcom/android/settings/MiuiSecurityBluetoothMatchDeviceFragment;->qH:I
+    iget v0, p0, Lcom/android/settings_ext/MiuiSecurityBluetoothMatchDeviceFragment;->qH:I
 
     const/4 v1, 0x1
 
     if-ne v0, v1, :cond_1
 
     .line 133
-    invoke-direct {p0}, Lcom/android/settings/MiuiSecurityBluetoothMatchDeviceFragment;->eX()V
+    invoke-direct {p0}, Lcom/android/settings_ext/MiuiSecurityBluetoothMatchDeviceFragment;->eX()V
 
     .line 137
     :cond_0
@@ -842,14 +842,14 @@
 
     .line 134
     :cond_1
-    iget v0, p0, Lcom/android/settings/MiuiSecurityBluetoothMatchDeviceFragment;->qH:I
+    iget v0, p0, Lcom/android/settings_ext/MiuiSecurityBluetoothMatchDeviceFragment;->qH:I
 
     const/4 v1, 0x2
 
     if-ne v0, v1, :cond_0
 
     .line 135
-    invoke-direct {p0}, Lcom/android/settings/MiuiSecurityBluetoothMatchDeviceFragment;->eY()V
+    invoke-direct {p0}, Lcom/android/settings_ext/MiuiSecurityBluetoothMatchDeviceFragment;->eY()V
 
     goto :goto_0
 .end method

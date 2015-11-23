@@ -1,4 +1,4 @@
-.class Lcom/android/settings/notification/NotificationSettings$2;
+.class Lcom/android/settings_ext/notification/NotificationSettings$2;
 .super Ljava/lang/Object;
 .source "NotificationSettings.java"
 
@@ -7,16 +7,16 @@
 
 
 # instance fields
-.field final synthetic afn:Lcom/android/settings/notification/NotificationSettings;
+.field final synthetic afn:Lcom/android/settings_ext/notification/NotificationSettings;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/notification/NotificationSettings;)V
+.method constructor <init>(Lcom/android/settings_ext/notification/NotificationSettings;)V
     .locals 0
 
     .prologue
     .line 286
-    iput-object p1, p0, Lcom/android/settings/notification/NotificationSettings$2;->afn:Lcom/android/settings/notification/NotificationSettings;
+    iput-object p1, p0, Lcom/android/settings_ext/notification/NotificationSettings$2;->afn:Lcom/android/settings_ext/notification/NotificationSettings;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -37,9 +37,9 @@
     move-result v0
 
     .line 290
-    iget-object v1, p0, Lcom/android/settings/notification/NotificationSettings$2;->afn:Lcom/android/settings/notification/NotificationSettings;
+    iget-object v1, p0, Lcom/android/settings_ext/notification/NotificationSettings$2;->afn:Lcom/android/settings_ext/notification/NotificationSettings;
 
-    invoke-static {v1}, Lcom/android/settings/notification/NotificationSettings;->e(Lcom/android/settings/notification/NotificationSettings;)Landroid/content/ContentResolver;
+    invoke-static {v1}, Lcom/android/settings_ext/notification/NotificationSettings;->e(Lcom/android/settings_ext/notification/NotificationSettings;)Landroid/content/ContentResolver;
 
     move-result-object v1
 

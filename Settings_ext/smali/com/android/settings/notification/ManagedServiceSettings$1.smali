@@ -1,19 +1,19 @@
-.class Lcom/android/settings/notification/ManagedServiceSettings$1;
+.class Lcom/android/settings_ext/notification/ManagedServiceSettings$1;
 .super Landroid/database/ContentObserver;
 .source "ManagedServiceSettings.java"
 
 
 # instance fields
-.field final synthetic aef:Lcom/android/settings/notification/ManagedServiceSettings;
+.field final synthetic aef:Lcom/android/settings_ext/notification/ManagedServiceSettings;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/notification/ManagedServiceSettings;Landroid/os/Handler;)V
+.method constructor <init>(Lcom/android/settings_ext/notification/ManagedServiceSettings;Landroid/os/Handler;)V
     .locals 0
 
     .prologue
     .line 76
-    iput-object p1, p0, Lcom/android/settings/notification/ManagedServiceSettings$1;->aef:Lcom/android/settings/notification/ManagedServiceSettings;
+    iput-object p1, p0, Lcom/android/settings_ext/notification/ManagedServiceSettings$1;->aef:Lcom/android/settings_ext/notification/ManagedServiceSettings;
 
     invoke-direct {p0, p2}, Landroid/database/ContentObserver;-><init>(Landroid/os/Handler;)V
 
@@ -27,9 +27,9 @@
 
     .prologue
     .line 79
-    iget-object v0, p0, Lcom/android/settings/notification/ManagedServiceSettings$1;->aef:Lcom/android/settings/notification/ManagedServiceSettings;
+    iget-object v0, p0, Lcom/android/settings_ext/notification/ManagedServiceSettings$1;->aef:Lcom/android/settings_ext/notification/ManagedServiceSettings;
 
-    invoke-static {v0}, Lcom/android/settings/notification/ManagedServiceSettings;->a(Lcom/android/settings/notification/ManagedServiceSettings;)V
+    invoke-static {v0}, Lcom/android/settings_ext/notification/ManagedServiceSettings;->a(Lcom/android/settings_ext/notification/ManagedServiceSettings;)V
 
     .line 80
     return-void

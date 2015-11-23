@@ -1,4 +1,4 @@
-.class Lcom/android/settings/as;
+.class Lcom/android/settings_ext/as;
 .super Ljava/lang/Object;
 .source "ConfirmAccessControl.java"
 
@@ -7,16 +7,16 @@
 
 
 # instance fields
-.field final synthetic ed:Lcom/android/settings/ConfirmAccessControl$ConfirmAccessControlFragment;
+.field final synthetic ed:Lcom/android/settings_ext/ConfirmAccessControl$ConfirmAccessControlFragment;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/ConfirmAccessControl$ConfirmAccessControlFragment;)V
+.method constructor <init>(Lcom/android/settings_ext/ConfirmAccessControl$ConfirmAccessControlFragment;)V
     .locals 0
 
     .prologue
     .line 127
-    iput-object p1, p0, Lcom/android/settings/as;->ed:Lcom/android/settings/ConfirmAccessControl$ConfirmAccessControlFragment;
+    iput-object p1, p0, Lcom/android/settings_ext/as;->ed:Lcom/android/settings_ext/ConfirmAccessControl$ConfirmAccessControlFragment;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -42,9 +42,9 @@
     invoke-virtual {v0, v1}, Landroid/content/Intent;->setFlags(I)Landroid/content/Intent;
 
     .line 133
-    iget-object v1, p0, Lcom/android/settings/as;->ed:Lcom/android/settings/ConfirmAccessControl$ConfirmAccessControlFragment;
+    iget-object v1, p0, Lcom/android/settings_ext/as;->ed:Lcom/android/settings_ext/ConfirmAccessControl$ConfirmAccessControlFragment;
 
-    invoke-virtual {v1, v0}, Lcom/android/settings/ConfirmAccessControl$ConfirmAccessControlFragment;->startActivity(Landroid/content/Intent;)V
+    invoke-virtual {v1, v0}, Lcom/android/settings_ext/ConfirmAccessControl$ConfirmAccessControlFragment;->startActivity(Landroid/content/Intent;)V
 
     .line 134
     return-void

@@ -1,4 +1,4 @@
-.class public Lcom/android/settings/RingerVolumePreference;
+.class public Lcom/android/settings_ext/RingerVolumePreference;
 .super Lmiui/preference/VolumePreference;
 .source "RingerVolumePreference.java"
 
@@ -41,35 +41,35 @@
 
     fill-array-data v0, :array_0
 
-    sput-object v0, Lcom/android/settings/RingerVolumePreference;->wg:[I
+    sput-object v0, Lcom/android/settings_ext/RingerVolumePreference;->wg:[I
 
     .line 70
     new-array v0, v1, [I
 
     fill-array-data v0, :array_1
 
-    sput-object v0, Lcom/android/settings/RingerVolumePreference;->wh:[I
+    sput-object v0, Lcom/android/settings_ext/RingerVolumePreference;->wh:[I
 
     .line 77
     new-array v0, v1, [I
 
     fill-array-data v0, :array_2
 
-    sput-object v0, Lcom/android/settings/RingerVolumePreference;->wi:[I
+    sput-object v0, Lcom/android/settings_ext/RingerVolumePreference;->wi:[I
 
     .line 91
     new-array v0, v1, [I
 
     fill-array-data v0, :array_3
 
-    sput-object v0, Lcom/android/settings/RingerVolumePreference;->wj:[I
+    sput-object v0, Lcom/android/settings_ext/RingerVolumePreference;->wj:[I
 
     .line 106
     new-array v0, v1, [I
 
     fill-array-data v0, :array_4
 
-    sput-object v0, Lcom/android/settings/RingerVolumePreference;->wk:[I
+    sput-object v0, Lcom/android/settings_ext/RingerVolumePreference;->wk:[I
 
     return-void
 
@@ -167,12 +167,12 @@
     return-object v0
 .end method
 
-.method static synthetic a(Lcom/android/settings/RingerVolumePreference;)Landroid/os/Handler;
+.method static synthetic a(Lcom/android/settings_ext/RingerVolumePreference;)Landroid/os/Handler;
     .locals 1
 
     .prologue
     .line 56
-    iget-object v0, p0, Lcom/android/settings/RingerVolumePreference;->mHandler:Landroid/os/Handler;
+    iget-object v0, p0, Lcom/android/settings_ext/RingerVolumePreference;->mHandler:Landroid/os/Handler;
 
     return-object v0
 .end method
@@ -187,21 +187,21 @@
     const/4 v0, 0x0
 
     :goto_0
-    sget-object v1, Lcom/android/settings/RingerVolumePreference;->wg:[I
+    sget-object v1, Lcom/android/settings_ext/RingerVolumePreference;->wg:[I
 
     array-length v1, v1
 
     if-ge v0, v1, :cond_2
 
     .line 296
-    iget-object v1, p0, Lcom/android/settings/RingerVolumePreference;->wf:[Lmiui/preference/VolumePreference$SeekBarVolumizer;
+    iget-object v1, p0, Lcom/android/settings_ext/RingerVolumePreference;->wf:[Lmiui/preference/VolumePreference$SeekBarVolumizer;
 
     aget-object v1, v1, v0
 
     if-eqz v1, :cond_1
 
     .line 297
-    invoke-virtual {p0}, Lcom/android/settings/RingerVolumePreference;->getDialog()Landroid/app/Dialog;
+    invoke-virtual {p0}, Lcom/android/settings_ext/RingerVolumePreference;->getDialog()Landroid/app/Dialog;
 
     move-result-object v1
 
@@ -215,7 +215,7 @@
     if-eqz v1, :cond_0
 
     .line 300
-    iget-object v1, p0, Lcom/android/settings/RingerVolumePreference;->wf:[Lmiui/preference/VolumePreference$SeekBarVolumizer;
+    iget-object v1, p0, Lcom/android/settings_ext/RingerVolumePreference;->wf:[Lmiui/preference/VolumePreference$SeekBarVolumizer;
 
     aget-object v1, v1, v0
 
@@ -223,14 +223,14 @@
 
     .line 302
     :cond_0
-    iget-object v1, p0, Lcom/android/settings/RingerVolumePreference;->wf:[Lmiui/preference/VolumePreference$SeekBarVolumizer;
+    iget-object v1, p0, Lcom/android/settings_ext/RingerVolumePreference;->wf:[Lmiui/preference/VolumePreference$SeekBarVolumizer;
 
     aget-object v1, v1, v0
 
     invoke-virtual {v1}, Lmiui/preference/VolumePreference$SeekBarVolumizer;->stop()V
 
     .line 303
-    iget-object v1, p0, Lcom/android/settings/RingerVolumePreference;->wf:[Lmiui/preference/VolumePreference$SeekBarVolumizer;
+    iget-object v1, p0, Lcom/android/settings_ext/RingerVolumePreference;->wf:[Lmiui/preference/VolumePreference$SeekBarVolumizer;
 
     aput-object v2, v1, v0
 
@@ -242,21 +242,21 @@
 
     .line 306
     :cond_2
-    iget-object v0, p0, Lcom/android/settings/RingerVolumePreference;->wn:Landroid/content/BroadcastReceiver;
+    iget-object v0, p0, Lcom/android/settings_ext/RingerVolumePreference;->wn:Landroid/content/BroadcastReceiver;
 
     if-eqz v0, :cond_3
 
     .line 307
-    invoke-virtual {p0}, Lcom/android/settings/RingerVolumePreference;->getContext()Landroid/content/Context;
+    invoke-virtual {p0}, Lcom/android/settings_ext/RingerVolumePreference;->getContext()Landroid/content/Context;
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/android/settings/RingerVolumePreference;->wn:Landroid/content/BroadcastReceiver;
+    iget-object v1, p0, Lcom/android/settings_ext/RingerVolumePreference;->wn:Landroid/content/BroadcastReceiver;
 
     invoke-virtual {v0, v1}, Landroid/content/Context;->unregisterReceiver(Landroid/content/BroadcastReceiver;)V
 
     .line 308
-    iput-object v2, p0, Lcom/android/settings/RingerVolumePreference;->wn:Landroid/content/BroadcastReceiver;
+    iput-object v2, p0, Lcom/android/settings_ext/RingerVolumePreference;->wn:Landroid/content/BroadcastReceiver;
 
     .line 310
     :cond_3
@@ -268,7 +268,7 @@
 
     .prologue
     .line 56
-    sget-object v0, Lcom/android/settings/RingerVolumePreference;->wg:[I
+    sget-object v0, Lcom/android/settings_ext/RingerVolumePreference;->wg:[I
 
     return-object v0
 .end method
@@ -285,26 +285,26 @@
     move v0, v1
 
     :goto_0
-    sget-object v2, Lcom/android/settings/RingerVolumePreference;->wh:[I
+    sget-object v2, Lcom/android/settings_ext/RingerVolumePreference;->wh:[I
 
     array-length v2, v2
 
     if-ge v0, v2, :cond_6
 
     .line 131
-    sget-object v2, Lcom/android/settings/RingerVolumePreference;->wh:[I
+    sget-object v2, Lcom/android/settings_ext/RingerVolumePreference;->wh:[I
 
     aget v3, v2, v0
 
     .line 132
-    iget-object v2, p0, Lcom/android/settings/RingerVolumePreference;->mAudioManager:Landroid/media/AudioManager;
+    iget-object v2, p0, Lcom/android/settings_ext/RingerVolumePreference;->mAudioManager:Landroid/media/AudioManager;
 
     invoke-virtual {v2, v3}, Landroid/media/AudioManager;->isStreamMute(I)Z
 
     move-result v4
 
     .line 134
-    iget-object v2, p0, Lcom/android/settings/RingerVolumePreference;->wl:[Landroid/widget/ImageView;
+    iget-object v2, p0, Lcom/android/settings_ext/RingerVolumePreference;->wl:[Landroid/widget/ImageView;
 
     aget-object v2, v2, v0
 
@@ -320,7 +320,7 @@
     if-ne v3, v2, :cond_3
 
     :cond_0
-    iget-object v2, p0, Lcom/android/settings/RingerVolumePreference;->mAudioManager:Landroid/media/AudioManager;
+    iget-object v2, p0, Lcom/android/settings_ext/RingerVolumePreference;->mAudioManager:Landroid/media/AudioManager;
 
     invoke-virtual {v2}, Landroid/media/AudioManager;->getRingerMode()I
 
@@ -329,7 +329,7 @@
     if-ne v2, v6, :cond_3
 
     .line 138
-    iget-object v2, p0, Lcom/android/settings/RingerVolumePreference;->wl:[Landroid/widget/ImageView;
+    iget-object v2, p0, Lcom/android/settings_ext/RingerVolumePreference;->wl:[Landroid/widget/ImageView;
 
     aget-object v2, v2, v0
 
@@ -340,28 +340,28 @@
     .line 147
     :cond_1
     :goto_1
-    iget-object v2, p0, Lcom/android/settings/RingerVolumePreference;->wm:[Landroid/widget/SeekBar;
+    iget-object v2, p0, Lcom/android/settings_ext/RingerVolumePreference;->wm:[Landroid/widget/SeekBar;
 
     aget-object v2, v2, v0
 
     if-eqz v2, :cond_2
 
     .line 148
-    iget-object v2, p0, Lcom/android/settings/RingerVolumePreference;->mAudioManager:Landroid/media/AudioManager;
+    iget-object v2, p0, Lcom/android/settings_ext/RingerVolumePreference;->mAudioManager:Landroid/media/AudioManager;
 
     invoke-virtual {v2, v3}, Landroid/media/AudioManager;->getStreamVolume(I)I
 
     move-result v2
 
     .line 149
-    iget-object v5, p0, Lcom/android/settings/RingerVolumePreference;->wm:[Landroid/widget/SeekBar;
+    iget-object v5, p0, Lcom/android/settings_ext/RingerVolumePreference;->wm:[Landroid/widget/SeekBar;
 
     aget-object v5, v5, v0
 
     invoke-virtual {v5, v2}, Landroid/widget/SeekBar;->setProgress(I)V
 
     .line 150
-    iget-object v2, p0, Lcom/android/settings/RingerVolumePreference;->mAudioManager:Landroid/media/AudioManager;
+    iget-object v2, p0, Lcom/android/settings_ext/RingerVolumePreference;->mAudioManager:Landroid/media/AudioManager;
 
     invoke-virtual {v2}, Landroid/media/AudioManager;->getMasterStreamType()I
 
@@ -372,7 +372,7 @@
     if-eqz v4, :cond_5
 
     .line 151
-    iget-object v2, p0, Lcom/android/settings/RingerVolumePreference;->wm:[Landroid/widget/SeekBar;
+    iget-object v2, p0, Lcom/android/settings_ext/RingerVolumePreference;->wm:[Landroid/widget/SeekBar;
 
     aget-object v2, v2, v0
 
@@ -387,13 +387,13 @@
 
     .line 143
     :cond_3
-    iget-object v2, p0, Lcom/android/settings/RingerVolumePreference;->wl:[Landroid/widget/ImageView;
+    iget-object v2, p0, Lcom/android/settings_ext/RingerVolumePreference;->wl:[Landroid/widget/ImageView;
 
     aget-object v5, v2, v0
 
     if-eqz v4, :cond_4
 
-    sget-object v2, Lcom/android/settings/RingerVolumePreference;->wj:[I
+    sget-object v2, Lcom/android/settings_ext/RingerVolumePreference;->wj:[I
 
     aget v2, v2, v0
 
@@ -403,7 +403,7 @@
     goto :goto_1
 
     :cond_4
-    sget-object v2, Lcom/android/settings/RingerVolumePreference;->wk:[I
+    sget-object v2, Lcom/android/settings_ext/RingerVolumePreference;->wk:[I
 
     aget v2, v2, v0
 
@@ -411,7 +411,7 @@
 
     .line 153
     :cond_5
-    iget-object v2, p0, Lcom/android/settings/RingerVolumePreference;->wm:[Landroid/widget/SeekBar;
+    iget-object v2, p0, Lcom/android/settings_ext/RingerVolumePreference;->wm:[Landroid/widget/SeekBar;
 
     aget-object v2, v2, v0
 
@@ -433,12 +433,12 @@
     .line 125
     const v0, 0x104000a
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/RingerVolumePreference;->setPositiveButtonText(I)V
+    invoke-virtual {p0, v0}, Lcom/android/settings_ext/RingerVolumePreference;->setPositiveButtonText(I)V
 
     .line 126
     const/4 v0, 0x0
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/RingerVolumePreference;->setNegativeButtonText(Ljava/lang/CharSequence;)V
+    invoke-virtual {p0, v0}, Lcom/android/settings_ext/RingerVolumePreference;->setNegativeButtonText(Ljava/lang/CharSequence;)V
 
     .line 127
     return-void
@@ -452,7 +452,7 @@
     invoke-super {p0}, Lmiui/preference/VolumePreference;->onActivityStop()V
 
     .line 268
-    iget-object v1, p0, Lcom/android/settings/RingerVolumePreference;->wf:[Lmiui/preference/VolumePreference$SeekBarVolumizer;
+    iget-object v1, p0, Lcom/android/settings_ext/RingerVolumePreference;->wf:[Lmiui/preference/VolumePreference$SeekBarVolumizer;
 
     array-length v2, v1
 
@@ -492,14 +492,14 @@
 
     .line 183
     :goto_0
-    sget-object v0, Lcom/android/settings/RingerVolumePreference;->wg:[I
+    sget-object v0, Lcom/android/settings_ext/RingerVolumePreference;->wg:[I
 
     array-length v0, v0
 
     if-ge v6, v0, :cond_1
 
     .line 184
-    sget-object v0, Lcom/android/settings/RingerVolumePreference;->wg:[I
+    sget-object v0, Lcom/android/settings_ext/RingerVolumePreference;->wg:[I
 
     aget v0, v0, v6
 
@@ -510,12 +510,12 @@
     check-cast v3, Landroid/widget/SeekBar;
 
     .line 185
-    iget-object v0, p0, Lcom/android/settings/RingerVolumePreference;->wm:[Landroid/widget/SeekBar;
+    iget-object v0, p0, Lcom/android/settings_ext/RingerVolumePreference;->wm:[Landroid/widget/SeekBar;
 
     aput-object v3, v0, v6
 
     .line 186
-    sget-object v0, Lcom/android/settings/RingerVolumePreference;->wh:[I
+    sget-object v0, Lcom/android/settings_ext/RingerVolumePreference;->wh:[I
 
     aget v0, v0, v6
 
@@ -524,23 +524,23 @@
     if-ne v0, v1, :cond_0
 
     .line 187
-    iget-object v8, p0, Lcom/android/settings/RingerVolumePreference;->wf:[Lmiui/preference/VolumePreference$SeekBarVolumizer;
+    iget-object v8, p0, Lcom/android/settings_ext/RingerVolumePreference;->wf:[Lmiui/preference/VolumePreference$SeekBarVolumizer;
 
     new-instance v0, Lmiui/preference/VolumePreference$SeekBarVolumizer;
 
-    invoke-virtual {p0}, Lcom/android/settings/RingerVolumePreference;->getContext()Landroid/content/Context;
+    invoke-virtual {p0}, Lcom/android/settings_ext/RingerVolumePreference;->getContext()Landroid/content/Context;
 
     move-result-object v2
 
-    sget-object v1, Lcom/android/settings/RingerVolumePreference;->wh:[I
+    sget-object v1, Lcom/android/settings_ext/RingerVolumePreference;->wh:[I
 
     aget v4, v1, v6
 
-    invoke-virtual {p0}, Lcom/android/settings/RingerVolumePreference;->getContext()Landroid/content/Context;
+    invoke-virtual {p0}, Lcom/android/settings_ext/RingerVolumePreference;->getContext()Landroid/content/Context;
 
     move-result-object v1
 
-    invoke-direct {p0, v1}, Lcom/android/settings/RingerVolumePreference;->H(Landroid/content/Context;)Landroid/net/Uri;
+    invoke-direct {p0, v1}, Lcom/android/settings_ext/RingerVolumePreference;->H(Landroid/content/Context;)Landroid/net/Uri;
 
     move-result-object v5
 
@@ -560,15 +560,15 @@
 
     .line 190
     :cond_0
-    iget-object v0, p0, Lcom/android/settings/RingerVolumePreference;->wf:[Lmiui/preference/VolumePreference$SeekBarVolumizer;
+    iget-object v0, p0, Lcom/android/settings_ext/RingerVolumePreference;->wf:[Lmiui/preference/VolumePreference$SeekBarVolumizer;
 
     new-instance v1, Lmiui/preference/VolumePreference$SeekBarVolumizer;
 
-    invoke-virtual {p0}, Lcom/android/settings/RingerVolumePreference;->getContext()Landroid/content/Context;
+    invoke-virtual {p0}, Lcom/android/settings_ext/RingerVolumePreference;->getContext()Landroid/content/Context;
 
     move-result-object v2
 
-    sget-object v4, Lcom/android/settings/RingerVolumePreference;->wh:[I
+    sget-object v4, Lcom/android/settings_ext/RingerVolumePreference;->wh:[I
 
     aget v4, v4, v6
 
@@ -581,14 +581,14 @@
     .line 196
     :cond_1
     :goto_2
-    iget-object v0, p0, Lcom/android/settings/RingerVolumePreference;->wl:[Landroid/widget/ImageView;
+    iget-object v0, p0, Lcom/android/settings_ext/RingerVolumePreference;->wl:[Landroid/widget/ImageView;
 
     array-length v0, v0
 
     if-ge v7, v0, :cond_2
 
     .line 197
-    sget-object v0, Lcom/android/settings/RingerVolumePreference;->wi:[I
+    sget-object v0, Lcom/android/settings_ext/RingerVolumePreference;->wi:[I
 
     aget v0, v0, v7
 
@@ -599,7 +599,7 @@
     check-cast v0, Landroid/widget/ImageView;
 
     .line 198
-    iget-object v1, p0, Lcom/android/settings/RingerVolumePreference;->wl:[Landroid/widget/ImageView;
+    iget-object v1, p0, Lcom/android/settings_ext/RingerVolumePreference;->wl:[Landroid/widget/ImageView;
 
     aput-object v0, v1, v7
 
@@ -610,10 +610,10 @@
 
     .line 202
     :cond_2
-    invoke-direct {p0}, Lcom/android/settings/RingerVolumePreference;->gz()V
+    invoke-direct {p0}, Lcom/android/settings_ext/RingerVolumePreference;->gz()V
 
     .line 205
-    iget-object v0, p0, Lcom/android/settings/RingerVolumePreference;->wn:Landroid/content/BroadcastReceiver;
+    iget-object v0, p0, Lcom/android/settings_ext/RingerVolumePreference;->wn:Landroid/content/BroadcastReceiver;
 
     if-nez v0, :cond_3
 
@@ -628,24 +628,24 @@
     invoke-virtual {v0, v1}, Landroid/content/IntentFilter;->addAction(Ljava/lang/String;)V
 
     .line 208
-    new-instance v1, Lcom/android/settings/ga;
+    new-instance v1, Lcom/android/settings_ext/ga;
 
-    invoke-direct {v1, p0}, Lcom/android/settings/ga;-><init>(Lcom/android/settings/RingerVolumePreference;)V
+    invoke-direct {v1, p0}, Lcom/android/settings_ext/ga;-><init>(Lcom/android/settings_ext/RingerVolumePreference;)V
 
-    iput-object v1, p0, Lcom/android/settings/RingerVolumePreference;->wn:Landroid/content/BroadcastReceiver;
+    iput-object v1, p0, Lcom/android/settings_ext/RingerVolumePreference;->wn:Landroid/content/BroadcastReceiver;
 
     .line 217
-    invoke-virtual {p0}, Lcom/android/settings/RingerVolumePreference;->getContext()Landroid/content/Context;
+    invoke-virtual {p0}, Lcom/android/settings_ext/RingerVolumePreference;->getContext()Landroid/content/Context;
 
     move-result-object v1
 
-    iget-object v2, p0, Lcom/android/settings/RingerVolumePreference;->wn:Landroid/content/BroadcastReceiver;
+    iget-object v2, p0, Lcom/android/settings_ext/RingerVolumePreference;->wn:Landroid/content/BroadcastReceiver;
 
     invoke-virtual {v1, v2, v0}, Landroid/content/Context;->registerReceiver(Landroid/content/BroadcastReceiver;Landroid/content/IntentFilter;)Landroid/content/Intent;
 
     .line 220
     :cond_3
-    invoke-virtual {p0}, Lcom/android/settings/RingerVolumePreference;->getContext()Landroid/content/Context;
+    invoke-virtual {p0}, Lcom/android/settings_ext/RingerVolumePreference;->getContext()Landroid/content/Context;
 
     move-result-object v0
 
@@ -663,11 +663,11 @@
     if-eqz v0, :cond_5
 
     .line 228
-    invoke-virtual {p0}, Lcom/android/settings/RingerVolumePreference;->getContext()Landroid/content/Context;
+    invoke-virtual {p0}, Lcom/android/settings_ext/RingerVolumePreference;->getContext()Landroid/content/Context;
 
     move-result-object v0
 
-    invoke-static {v0}, Lcom/android/settings/hl;->M(Landroid/content/Context;)Z
+    invoke-static {v0}, Lcom/android/settings_ext/hl;->M(Landroid/content/Context;)Z
 
     move-result v0
 
@@ -680,11 +680,11 @@
 
     .line 236
     :cond_5
-    invoke-virtual {p0}, Lcom/android/settings/RingerVolumePreference;->getContext()Landroid/content/Context;
+    invoke-virtual {p0}, Lcom/android/settings_ext/RingerVolumePreference;->getContext()Landroid/content/Context;
 
     move-result-object v0
 
-    invoke-static {v0}, Lcom/android/settings/hl;->M(Landroid/content/Context;)Z
+    invoke-static {v0}, Lcom/android/settings_ext/hl;->M(Landroid/content/Context;)Z
 
     move-result v0
 
@@ -724,7 +724,7 @@
     if-nez p1, :cond_1
 
     .line 257
-    iget-object v1, p0, Lcom/android/settings/RingerVolumePreference;->wf:[Lmiui/preference/VolumePreference$SeekBarVolumizer;
+    iget-object v1, p0, Lcom/android/settings_ext/RingerVolumePreference;->wf:[Lmiui/preference/VolumePreference$SeekBarVolumizer;
 
     array-length v2, v1
 
@@ -748,7 +748,7 @@
 
     .line 261
     :cond_1
-    invoke-direct {p0}, Lcom/android/settings/RingerVolumePreference;->cleanup()V
+    invoke-direct {p0}, Lcom/android/settings_ext/RingerVolumePreference;->cleanup()V
 
     .line 262
     return-void
@@ -803,7 +803,7 @@
 
     move-result-object v0
 
-    const-class v1, Lcom/android/settings/RingerVolumePreference$SavedState;
+    const-class v1, Lcom/android/settings_ext/RingerVolumePreference$SavedState;
 
     invoke-virtual {v0, v1}, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
 
@@ -821,21 +821,21 @@
 
     .line 339
     :cond_2
-    check-cast p1, Lcom/android/settings/RingerVolumePreference$SavedState;
+    check-cast p1, Lcom/android/settings_ext/RingerVolumePreference$SavedState;
 
     .line 340
-    invoke-virtual {p1}, Lcom/android/settings/RingerVolumePreference$SavedState;->getSuperState()Landroid/os/Parcelable;
+    invoke-virtual {p1}, Lcom/android/settings_ext/RingerVolumePreference$SavedState;->getSuperState()Landroid/os/Parcelable;
 
     move-result-object v0
 
     invoke-super {p0, v0}, Lmiui/preference/VolumePreference;->onRestoreInstanceState(Landroid/os/Parcelable;)V
 
     .line 341
-    sget-object v0, Lcom/android/settings/RingerVolumePreference;->wg:[I
+    sget-object v0, Lcom/android/settings_ext/RingerVolumePreference;->wg:[I
 
     array-length v0, v0
 
-    invoke-virtual {p1, v0}, Lcom/android/settings/RingerVolumePreference$SavedState;->W(I)[Lmiui/preference/VolumePreference$VolumeStore;
+    invoke-virtual {p1, v0}, Lcom/android/settings_ext/RingerVolumePreference$SavedState;->W(I)[Lmiui/preference/VolumePreference$VolumeStore;
 
     move-result-object v1
 
@@ -843,14 +843,14 @@
     const/4 v0, 0x0
 
     :goto_0
-    sget-object v2, Lcom/android/settings/RingerVolumePreference;->wg:[I
+    sget-object v2, Lcom/android/settings_ext/RingerVolumePreference;->wg:[I
 
     array-length v2, v2
 
     if-ge v0, v2, :cond_1
 
     .line 343
-    iget-object v2, p0, Lcom/android/settings/RingerVolumePreference;->wf:[Lmiui/preference/VolumePreference$SeekBarVolumizer;
+    iget-object v2, p0, Lcom/android/settings_ext/RingerVolumePreference;->wf:[Lmiui/preference/VolumePreference$SeekBarVolumizer;
 
     aget-object v2, v2, v0
 
@@ -877,7 +877,7 @@
     invoke-super {p0, p1}, Lmiui/preference/VolumePreference;->onSampleStarting(Lmiui/preference/VolumePreference$SeekBarVolumizer;)V
 
     .line 289
-    iget-object v1, p0, Lcom/android/settings/RingerVolumePreference;->wf:[Lmiui/preference/VolumePreference$SeekBarVolumizer;
+    iget-object v1, p0, Lcom/android/settings_ext/RingerVolumePreference;->wf:[Lmiui/preference/VolumePreference$SeekBarVolumizer;
 
     array-length v2, v1
 
@@ -916,7 +916,7 @@
     move-result-object v0
 
     .line 315
-    invoke-virtual {p0}, Lcom/android/settings/RingerVolumePreference;->isPersistent()Z
+    invoke-virtual {p0}, Lcom/android/settings_ext/RingerVolumePreference;->isPersistent()Z
 
     move-result v1
 
@@ -928,16 +928,16 @@
 
     .line 320
     :cond_0
-    new-instance v1, Lcom/android/settings/RingerVolumePreference$SavedState;
+    new-instance v1, Lcom/android/settings_ext/RingerVolumePreference$SavedState;
 
-    invoke-direct {v1, v0}, Lcom/android/settings/RingerVolumePreference$SavedState;-><init>(Landroid/os/Parcelable;)V
+    invoke-direct {v1, v0}, Lcom/android/settings_ext/RingerVolumePreference$SavedState;-><init>(Landroid/os/Parcelable;)V
 
     .line 321
-    sget-object v0, Lcom/android/settings/RingerVolumePreference;->wg:[I
+    sget-object v0, Lcom/android/settings_ext/RingerVolumePreference;->wg:[I
 
     array-length v0, v0
 
-    invoke-virtual {v1, v0}, Lcom/android/settings/RingerVolumePreference$SavedState;->W(I)[Lmiui/preference/VolumePreference$VolumeStore;
+    invoke-virtual {v1, v0}, Lcom/android/settings_ext/RingerVolumePreference$SavedState;->W(I)[Lmiui/preference/VolumePreference$VolumeStore;
 
     move-result-object v2
 
@@ -945,14 +945,14 @@
     const/4 v0, 0x0
 
     :goto_1
-    sget-object v3, Lcom/android/settings/RingerVolumePreference;->wg:[I
+    sget-object v3, Lcom/android/settings_ext/RingerVolumePreference;->wg:[I
 
     array-length v3, v3
 
     if-ge v0, v3, :cond_2
 
     .line 323
-    iget-object v3, p0, Lcom/android/settings/RingerVolumePreference;->wf:[Lmiui/preference/VolumePreference$SeekBarVolumizer;
+    iget-object v3, p0, Lcom/android/settings_ext/RingerVolumePreference;->wf:[Lmiui/preference/VolumePreference$SeekBarVolumizer;
 
     aget-object v3, v3, v0
 

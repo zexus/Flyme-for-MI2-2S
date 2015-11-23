@@ -1,10 +1,10 @@
-.class Lcom/android/settings/bluetooth/BluetoothEnabler$2;
+.class Lcom/android/settings_ext/bluetooth/BluetoothEnabler$2;
 .super Landroid/content/BroadcastReceiver;
 .source "BluetoothEnabler.java"
 
 
 # instance fields
-.field final synthetic MJ:Lcom/android/settings/bluetooth/BluetoothEnabler;
+.field final synthetic MJ:Lcom/android/settings_ext/bluetooth/BluetoothEnabler;
 
 
 # virtual methods
@@ -22,9 +22,9 @@
     move-result v0
 
     .line 71
-    iget-object v1, p0, Lcom/android/settings/bluetooth/BluetoothEnabler$2;->MJ:Lcom/android/settings/bluetooth/BluetoothEnabler;
+    iget-object v1, p0, Lcom/android/settings_ext/bluetooth/BluetoothEnabler$2;->MJ:Lcom/android/settings_ext/bluetooth/BluetoothEnabler;
 
-    invoke-virtual {v1, v0}, Lcom/android/settings/bluetooth/BluetoothEnabler;->aR(I)V
+    invoke-virtual {v1, v0}, Lcom/android/settings_ext/bluetooth/BluetoothEnabler;->aR(I)V
 
     .line 72
     return-void

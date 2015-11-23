@@ -1,4 +1,4 @@
-.class Lcom/android/settings/wifi/at;
+.class Lcom/android/settings_ext/wifi/at;
 .super Ljava/lang/Object;
 .source "WifiSettingsForSetupWizardXL.java"
 
@@ -7,16 +7,16 @@
 
 
 # instance fields
-.field final synthetic aww:Lcom/android/settings/wifi/WifiSettingsForSetupWizardXL;
+.field final synthetic aww:Lcom/android/settings_ext/wifi/WifiSettingsForSetupWizardXL;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/wifi/WifiSettingsForSetupWizardXL;)V
+.method constructor <init>(Lcom/android/settings_ext/wifi/WifiSettingsForSetupWizardXL;)V
     .locals 0
 
     .prologue
     .line 596
-    iput-object p1, p0, Lcom/android/settings/wifi/at;->aww:Lcom/android/settings/wifi/WifiSettingsForSetupWizardXL;
+    iput-object p1, p0, Lcom/android/settings_ext/wifi/at;->aww:Lcom/android/settings_ext/wifi/WifiSettingsForSetupWizardXL;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 

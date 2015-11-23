@@ -1,4 +1,4 @@
-.class public Lcom/android/settings/go;
+.class public Lcom/android/settings_ext/go;
 .super Lmiui/external/b;
 .source "SettingsApplication.java"
 
@@ -20,13 +20,13 @@
 
     .prologue
     .line 31
-    const-class v0, Lcom/android/settings/go;
+    const-class v0, Lcom/android/settings_ext/go;
 
     invoke-virtual {v0}, Ljava/lang/Class;->getSimpleName()Ljava/lang/String;
 
     move-result-object v0
 
-    sput-object v0, Lcom/android/settings/go;->TAG:Ljava/lang/String;
+    sput-object v0, Lcom/android/settings_ext/go;->TAG:Ljava/lang/String;
 
     return-void
 .end method
@@ -41,7 +41,7 @@
     .line 37
     const-string v0, "SECURITY_TOPIC"
 
-    iput-object v0, p0, Lcom/android/settings/go;->xi:Ljava/lang/String;
+    iput-object v0, p0, Lcom/android/settings_ext/go;->xi:Ljava/lang/String;
 
     return-void
 .end method
@@ -75,39 +75,39 @@
 
     move-result-object v1
 
-    invoke-static {v1}, Lcom/android/settings/ShortcutHelper;->J(Landroid/content/Context;)Lcom/android/settings/ShortcutHelper;
+    invoke-static {v1}, Lcom/android/settings_ext/ShortcutHelper;->J(Landroid/content/Context;)Lcom/android/settings_ext/ShortcutHelper;
 
     move-result-object v1
 
     .line 67
-    sget-object v2, Lcom/android/settings/ShortcutHelper$Shortcut;->xC:Lcom/android/settings/ShortcutHelper$Shortcut;
+    sget-object v2, Lcom/android/settings_ext/ShortcutHelper$Shortcut;->xC:Lcom/android/settings_ext/ShortcutHelper$Shortcut;
 
-    invoke-virtual {v1, v2}, Lcom/android/settings/ShortcutHelper;->a(Lcom/android/settings/ShortcutHelper$Shortcut;)V
+    invoke-virtual {v1, v2}, Lcom/android/settings_ext/ShortcutHelper;->a(Lcom/android/settings_ext/ShortcutHelper$Shortcut;)V
 
     .line 68
-    sget-object v2, Lcom/android/settings/ShortcutHelper$Shortcut;->xD:Lcom/android/settings/ShortcutHelper$Shortcut;
+    sget-object v2, Lcom/android/settings_ext/ShortcutHelper$Shortcut;->xD:Lcom/android/settings_ext/ShortcutHelper$Shortcut;
 
-    invoke-virtual {v1, v2}, Lcom/android/settings/ShortcutHelper;->a(Lcom/android/settings/ShortcutHelper$Shortcut;)V
+    invoke-virtual {v1, v2}, Lcom/android/settings_ext/ShortcutHelper;->a(Lcom/android/settings_ext/ShortcutHelper$Shortcut;)V
 
     .line 69
-    sget-object v2, Lcom/android/settings/ShortcutHelper$Shortcut;->xE:Lcom/android/settings/ShortcutHelper$Shortcut;
+    sget-object v2, Lcom/android/settings_ext/ShortcutHelper$Shortcut;->xE:Lcom/android/settings_ext/ShortcutHelper$Shortcut;
 
-    invoke-virtual {v1, v2}, Lcom/android/settings/ShortcutHelper;->a(Lcom/android/settings/ShortcutHelper$Shortcut;)V
+    invoke-virtual {v1, v2}, Lcom/android/settings_ext/ShortcutHelper;->a(Lcom/android/settings_ext/ShortcutHelper$Shortcut;)V
 
     .line 70
-    sget-object v2, Lcom/android/settings/ShortcutHelper$Shortcut;->xF:Lcom/android/settings/ShortcutHelper$Shortcut;
+    sget-object v2, Lcom/android/settings_ext/ShortcutHelper$Shortcut;->xF:Lcom/android/settings_ext/ShortcutHelper$Shortcut;
 
-    invoke-virtual {v1, v2}, Lcom/android/settings/ShortcutHelper;->a(Lcom/android/settings/ShortcutHelper$Shortcut;)V
+    invoke-virtual {v1, v2}, Lcom/android/settings_ext/ShortcutHelper;->a(Lcom/android/settings_ext/ShortcutHelper$Shortcut;)V
 
     .line 71
-    sget-object v2, Lcom/android/settings/ShortcutHelper$Shortcut;->xG:Lcom/android/settings/ShortcutHelper$Shortcut;
+    sget-object v2, Lcom/android/settings_ext/ShortcutHelper$Shortcut;->xG:Lcom/android/settings_ext/ShortcutHelper$Shortcut;
 
-    invoke-virtual {v1, v2}, Lcom/android/settings/ShortcutHelper;->a(Lcom/android/settings/ShortcutHelper$Shortcut;)V
+    invoke-virtual {v1, v2}, Lcom/android/settings_ext/ShortcutHelper;->a(Lcom/android/settings_ext/ShortcutHelper$Shortcut;)V
 
     .line 72
-    sget-object v2, Lcom/android/settings/ShortcutHelper$Shortcut;->xH:Lcom/android/settings/ShortcutHelper$Shortcut;
+    sget-object v2, Lcom/android/settings_ext/ShortcutHelper$Shortcut;->xH:Lcom/android/settings_ext/ShortcutHelper$Shortcut;
 
-    invoke-virtual {v1, v2}, Lcom/android/settings/ShortcutHelper;->a(Lcom/android/settings/ShortcutHelper$Shortcut;)V
+    invoke-virtual {v1, v2}, Lcom/android/settings_ext/ShortcutHelper;->a(Lcom/android/settings_ext/ShortcutHelper$Shortcut;)V
 
     .line 73
     invoke-interface {v0}, Landroid/content/SharedPreferences;->edit()Landroid/content/SharedPreferences$Editor;
@@ -232,7 +232,7 @@
 
     const-string v4, "5881716163661"
 
-    invoke-direct {p0}, Lcom/android/settings/go;->gQ()Ljava/lang/String;
+    invoke-direct {p0}, Lcom/android/settings_ext/go;->gQ()Ljava/lang/String;
 
     move-result-object v5
 
@@ -280,7 +280,7 @@
     .line 133
     new-instance v0, Landroid/content/Intent;
 
-    const-class v1, Lcom/android/settings/cloud/push/CloudService;
+    const-class v1, Lcom/android/settings_ext/cloud/push/CloudService;
 
     invoke-direct {v0, p0, v1}, Landroid/content/Intent;-><init>(Landroid/content/Context;Ljava/lang/Class;)V
 
@@ -294,7 +294,7 @@
     invoke-virtual {v0, v1, v2}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
 
     .line 135
-    invoke-virtual {p0, v0}, Lcom/android/settings/go;->startService(Landroid/content/Intent;)Landroid/content/ComponentName;
+    invoke-virtual {p0, v0}, Lcom/android/settings_ext/go;->startService(Landroid/content/Intent;)Landroid/content/ComponentName;
 
     .line 136
     return-void
@@ -369,10 +369,10 @@
     invoke-static {v0}, Lcom/xiaomi/accountsdk/activate/ActivateManager;->setActivateServiceHostPackage(Ljava/lang/String;)V
 
     .line 51
-    invoke-direct {p0, p0}, Lcom/android/settings/go;->I(Landroid/content/Context;)V
+    invoke-direct {p0, p0}, Lcom/android/settings_ext/go;->I(Landroid/content/Context;)V
 
     .line 53
-    invoke-static {}, Lcom/android/settings/cloud/b;->ny()V
+    invoke-static {}, Lcom/android/settings_ext/cloud/b;->ny()V
 
     .line 54
     sget-boolean v0, Lmiui/os/Build;->IS_TABLET:Z
@@ -386,7 +386,7 @@
 
     const-string v4, "5881716163661"
 
-    invoke-direct {p0}, Lcom/android/settings/go;->gQ()Ljava/lang/String;
+    invoke-direct {p0}, Lcom/android/settings_ext/go;->gQ()Ljava/lang/String;
 
     move-result-object v5
 

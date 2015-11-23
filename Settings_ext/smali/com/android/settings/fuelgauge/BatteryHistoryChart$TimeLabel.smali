@@ -1,4 +1,4 @@
-.class Lcom/android/settings/fuelgauge/BatteryHistoryChart$TimeLabel;
+.class Lcom/android/settings_ext/fuelgauge/BatteryHistoryChart$TimeLabel;
 .super Ljava/lang/Object;
 .source "BatteryHistoryChart.java"
 
@@ -20,7 +20,7 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 333
-    iput p2, p0, Lcom/android/settings/fuelgauge/BatteryHistoryChart$TimeLabel;->x:I
+    iput p2, p0, Lcom/android/settings_ext/fuelgauge/BatteryHistoryChart$TimeLabel;->x:I
 
     .line 334
     invoke-static {}, Ljava/util/Locale;->getDefault()Ljava/util/Locale;
@@ -45,10 +45,10 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/fuelgauge/BatteryHistoryChart$TimeLabel;->label:Ljava/lang/String;
+    iput-object v0, p0, Lcom/android/settings_ext/fuelgauge/BatteryHistoryChart$TimeLabel;->label:Ljava/lang/String;
 
     .line 337
-    iget-object v0, p0, Lcom/android/settings/fuelgauge/BatteryHistoryChart$TimeLabel;->label:Ljava/lang/String;
+    iget-object v0, p0, Lcom/android/settings_ext/fuelgauge/BatteryHistoryChart$TimeLabel;->label:Ljava/lang/String;
 
     invoke-virtual {p1, v0}, Landroid/text/TextPaint;->measureText(Ljava/lang/String;)F
 
@@ -56,7 +56,7 @@
 
     float-to-int v0, v0
 
-    iput v0, p0, Lcom/android/settings/fuelgauge/BatteryHistoryChart$TimeLabel;->width:I
+    iput v0, p0, Lcom/android/settings_ext/fuelgauge/BatteryHistoryChart$TimeLabel;->width:I
 
     .line 338
     return-void

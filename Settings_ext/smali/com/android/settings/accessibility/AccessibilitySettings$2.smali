@@ -1,19 +1,19 @@
-.class Lcom/android/settings/accessibility/AccessibilitySettings$2;
+.class Lcom/android/settings_ext/accessibility/AccessibilitySettings$2;
 .super Lcom/android/internal/content/PackageMonitor;
 .source "AccessibilitySettings.java"
 
 
 # instance fields
-.field final synthetic AD:Lcom/android/settings/accessibility/AccessibilitySettings;
+.field final synthetic AD:Lcom/android/settings_ext/accessibility/AccessibilitySettings;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/accessibility/AccessibilitySettings;)V
+.method constructor <init>(Lcom/android/settings_ext/accessibility/AccessibilitySettings;)V
     .locals 0
 
     .prologue
     .line 144
-    iput-object p1, p0, Lcom/android/settings/accessibility/AccessibilitySettings$2;->AD:Lcom/android/settings/accessibility/AccessibilitySettings;
+    iput-object p1, p0, Lcom/android/settings_ext/accessibility/AccessibilitySettings$2;->AD:Lcom/android/settings_ext/accessibility/AccessibilitySettings;
 
     invoke-direct {p0}, Lcom/android/internal/content/PackageMonitor;-><init>()V
 
@@ -25,15 +25,15 @@
 
     .prologue
     .line 166
-    iget-object v0, p0, Lcom/android/settings/accessibility/AccessibilitySettings$2;->AD:Lcom/android/settings/accessibility/AccessibilitySettings;
+    iget-object v0, p0, Lcom/android/settings_ext/accessibility/AccessibilitySettings$2;->AD:Lcom/android/settings_ext/accessibility/AccessibilitySettings;
 
-    invoke-static {v0}, Lcom/android/settings/accessibility/AccessibilitySettings;->d(Lcom/android/settings/accessibility/AccessibilitySettings;)Landroid/os/Handler;
+    invoke-static {v0}, Lcom/android/settings_ext/accessibility/AccessibilitySettings;->d(Lcom/android/settings_ext/accessibility/AccessibilitySettings;)Landroid/os/Handler;
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/android/settings/accessibility/AccessibilitySettings$2;->AD:Lcom/android/settings/accessibility/AccessibilitySettings;
+    iget-object v1, p0, Lcom/android/settings_ext/accessibility/AccessibilitySettings$2;->AD:Lcom/android/settings_ext/accessibility/AccessibilitySettings;
 
-    invoke-static {v1}, Lcom/android/settings/accessibility/AccessibilitySettings;->c(Lcom/android/settings/accessibility/AccessibilitySettings;)Ljava/lang/Runnable;
+    invoke-static {v1}, Lcom/android/settings_ext/accessibility/AccessibilitySettings;->c(Lcom/android/settings_ext/accessibility/AccessibilitySettings;)Ljava/lang/Runnable;
 
     move-result-object v1
 
@@ -52,7 +52,7 @@
 
     .prologue
     .line 147
-    invoke-direct {p0}, Lcom/android/settings/accessibility/AccessibilitySettings$2;->hO()V
+    invoke-direct {p0}, Lcom/android/settings_ext/accessibility/AccessibilitySettings$2;->hO()V
 
     .line 148
     return-void
@@ -63,7 +63,7 @@
 
     .prologue
     .line 152
-    invoke-direct {p0}, Lcom/android/settings/accessibility/AccessibilitySettings$2;->hO()V
+    invoke-direct {p0}, Lcom/android/settings_ext/accessibility/AccessibilitySettings$2;->hO()V
 
     .line 153
     return-void
@@ -74,7 +74,7 @@
 
     .prologue
     .line 157
-    invoke-direct {p0}, Lcom/android/settings/accessibility/AccessibilitySettings$2;->hO()V
+    invoke-direct {p0}, Lcom/android/settings_ext/accessibility/AccessibilitySettings$2;->hO()V
 
     .line 158
     return-void
@@ -85,7 +85,7 @@
 
     .prologue
     .line 162
-    invoke-direct {p0}, Lcom/android/settings/accessibility/AccessibilitySettings$2;->hO()V
+    invoke-direct {p0}, Lcom/android/settings_ext/accessibility/AccessibilitySettings$2;->hO()V
 
     .line 163
     return-void

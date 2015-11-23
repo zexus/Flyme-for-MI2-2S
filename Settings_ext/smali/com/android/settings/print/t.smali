@@ -1,4 +1,4 @@
-.class public Lcom/android/settings/print/t;
+.class public Lcom/android/settings_ext/print/t;
 .super Ljava/lang/Object;
 .source "PrintSettingsUtils.java"
 

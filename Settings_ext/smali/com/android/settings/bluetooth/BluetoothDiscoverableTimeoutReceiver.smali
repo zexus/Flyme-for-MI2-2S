@@ -1,4 +1,4 @@
-.class public Lcom/android/settings/bluetooth/BluetoothDiscoverableTimeoutReceiver;
+.class public Lcom/android/settings_ext/bluetooth/BluetoothDiscoverableTimeoutReceiver;
 .super Landroid/content/BroadcastReceiver;
 .source "BluetoothDiscoverableTimeoutReceiver.java"
 
@@ -51,7 +51,7 @@
     invoke-direct {v1, v0}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
 
     .line 41
-    const-class v0, Lcom/android/settings/bluetooth/BluetoothDiscoverableTimeoutReceiver;
+    const-class v0, Lcom/android/settings_ext/bluetooth/BluetoothDiscoverableTimeoutReceiver;
 
     invoke-virtual {v1, p0, v0}, Landroid/content/Intent;->setClass(Landroid/content/Context;Ljava/lang/Class;)Landroid/content/Intent;
 
@@ -114,7 +114,7 @@
     invoke-direct {v0, v1}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
 
     .line 62
-    const-class v1, Lcom/android/settings/bluetooth/BluetoothDiscoverableTimeoutReceiver;
+    const-class v1, Lcom/android/settings_ext/bluetooth/BluetoothDiscoverableTimeoutReceiver;
 
     invoke-virtual {v0, p0, v1}, Landroid/content/Intent;->setClass(Landroid/content/Context;Ljava/lang/Class;)Landroid/content/Intent;
 
@@ -154,14 +154,14 @@
 
     .prologue
     .line 76
-    invoke-static {}, Lcom/android/settings/bluetooth/LocalBluetoothAdapter;->mV()Lcom/android/settings/bluetooth/LocalBluetoothAdapter;
+    invoke-static {}, Lcom/android/settings_ext/bluetooth/LocalBluetoothAdapter;->mV()Lcom/android/settings_ext/bluetooth/LocalBluetoothAdapter;
 
     move-result-object v0
 
     .line 78
     if-eqz v0, :cond_0
 
-    invoke-virtual {v0}, Lcom/android/settings/bluetooth/LocalBluetoothAdapter;->getState()I
+    invoke-virtual {v0}, Lcom/android/settings_ext/bluetooth/LocalBluetoothAdapter;->getState()I
 
     move-result v1
 
@@ -179,7 +179,7 @@
     .line 82
     const/16 v1, 0x15
 
-    invoke-virtual {v0, v1}, Lcom/android/settings/bluetooth/LocalBluetoothAdapter;->bb(I)V
+    invoke-virtual {v0, v1}, Lcom/android/settings_ext/bluetooth/LocalBluetoothAdapter;->bb(I)V
 
     .line 86
     :goto_0

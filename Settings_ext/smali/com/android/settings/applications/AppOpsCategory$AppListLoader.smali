@@ -1,22 +1,22 @@
-.class public Lcom/android/settings/applications/AppOpsCategory$AppListLoader;
+.class public Lcom/android/settings_ext/applications/AppOpsCategory$AppListLoader;
 .super Landroid/content/AsyncTaskLoader;
 .source "AppOpsCategory.java"
 
 
 # instance fields
-.field final CH:Lcom/android/settings/applications/AppOpsState;
+.field final CH:Lcom/android/settings_ext/applications/AppOpsState;
 
-.field final CK:Lcom/android/settings/applications/AppOpsCategory$InterestingConfigChanges;
+.field final CK:Lcom/android/settings_ext/applications/AppOpsCategory$InterestingConfigChanges;
 
-.field final CL:Lcom/android/settings/applications/AppOpsState$OpsTemplate;
+.field final CL:Lcom/android/settings_ext/applications/AppOpsState$OpsTemplate;
 
-.field CM:Lcom/android/settings/applications/AppOpsCategory$PackageIntentReceiver;
+.field CM:Lcom/android/settings_ext/applications/AppOpsCategory$PackageIntentReceiver;
 
 .field mApps:Ljava/util/List;
 
 
 # direct methods
-.method public constructor <init>(Landroid/content/Context;Lcom/android/settings/applications/AppOpsState;Lcom/android/settings/applications/AppOpsState$OpsTemplate;)V
+.method public constructor <init>(Landroid/content/Context;Lcom/android/settings_ext/applications/AppOpsState;Lcom/android/settings_ext/applications/AppOpsState$OpsTemplate;)V
     .locals 1
 
     .prologue
@@ -24,17 +24,17 @@
     invoke-direct {p0, p1}, Landroid/content/AsyncTaskLoader;-><init>(Landroid/content/Context;)V
 
     .line 117
-    new-instance v0, Lcom/android/settings/applications/AppOpsCategory$InterestingConfigChanges;
+    new-instance v0, Lcom/android/settings_ext/applications/AppOpsCategory$InterestingConfigChanges;
 
-    invoke-direct {v0}, Lcom/android/settings/applications/AppOpsCategory$InterestingConfigChanges;-><init>()V
+    invoke-direct {v0}, Lcom/android/settings_ext/applications/AppOpsCategory$InterestingConfigChanges;-><init>()V
 
-    iput-object v0, p0, Lcom/android/settings/applications/AppOpsCategory$AppListLoader;->CK:Lcom/android/settings/applications/AppOpsCategory$InterestingConfigChanges;
+    iput-object v0, p0, Lcom/android/settings_ext/applications/AppOpsCategory$AppListLoader;->CK:Lcom/android/settings_ext/applications/AppOpsCategory$InterestingConfigChanges;
 
     .line 126
-    iput-object p2, p0, Lcom/android/settings/applications/AppOpsCategory$AppListLoader;->CH:Lcom/android/settings/applications/AppOpsState;
+    iput-object p2, p0, Lcom/android/settings_ext/applications/AppOpsCategory$AppListLoader;->CH:Lcom/android/settings_ext/applications/AppOpsState;
 
     .line 127
-    iput-object p3, p0, Lcom/android/settings/applications/AppOpsCategory$AppListLoader;->CL:Lcom/android/settings/applications/AppOpsState$OpsTemplate;
+    iput-object p3, p0, Lcom/android/settings_ext/applications/AppOpsCategory$AppListLoader;->CL:Lcom/android/settings_ext/applications/AppOpsState$OpsTemplate;
 
     .line 128
     return-void
@@ -49,7 +49,7 @@
     .line 116
     check-cast p1, Ljava/util/List;
 
-    invoke-virtual {p0, p1}, Lcom/android/settings/applications/AppOpsCategory$AppListLoader;->i(Ljava/util/List;)V
+    invoke-virtual {p0, p1}, Lcom/android/settings_ext/applications/AppOpsCategory$AppListLoader;->i(Ljava/util/List;)V
 
     return-void
 .end method
@@ -59,7 +59,7 @@
 
     .prologue
     .line 140
-    invoke-virtual {p0}, Lcom/android/settings/applications/AppOpsCategory$AppListLoader;->isReset()Z
+    invoke-virtual {p0}, Lcom/android/settings_ext/applications/AppOpsCategory$AppListLoader;->isReset()Z
 
     move-result v0
 
@@ -69,14 +69,14 @@
     if-eqz p1, :cond_0
 
     .line 144
-    invoke-virtual {p0, p1}, Lcom/android/settings/applications/AppOpsCategory$AppListLoader;->k(Ljava/util/List;)V
+    invoke-virtual {p0, p1}, Lcom/android/settings_ext/applications/AppOpsCategory$AppListLoader;->k(Ljava/util/List;)V
 
     .line 148
     :cond_0
-    iput-object p1, p0, Lcom/android/settings/applications/AppOpsCategory$AppListLoader;->mApps:Ljava/util/List;
+    iput-object p1, p0, Lcom/android/settings_ext/applications/AppOpsCategory$AppListLoader;->mApps:Ljava/util/List;
 
     .line 150
-    invoke-virtual {p0}, Lcom/android/settings/applications/AppOpsCategory$AppListLoader;->isStarted()Z
+    invoke-virtual {p0}, Lcom/android/settings_ext/applications/AppOpsCategory$AppListLoader;->isStarted()Z
 
     move-result v0
 
@@ -90,7 +90,7 @@
     if-eqz p1, :cond_2
 
     .line 160
-    invoke-virtual {p0, p1}, Lcom/android/settings/applications/AppOpsCategory$AppListLoader;->k(Ljava/util/List;)V
+    invoke-virtual {p0, p1}, Lcom/android/settings_ext/applications/AppOpsCategory$AppListLoader;->k(Ljava/util/List;)V
 
     .line 162
     :cond_2
@@ -102,11 +102,11 @@
 
     .prologue
     .line 131
-    iget-object v0, p0, Lcom/android/settings/applications/AppOpsCategory$AppListLoader;->CH:Lcom/android/settings/applications/AppOpsState;
+    iget-object v0, p0, Lcom/android/settings_ext/applications/AppOpsCategory$AppListLoader;->CH:Lcom/android/settings_ext/applications/AppOpsState;
 
-    iget-object v1, p0, Lcom/android/settings/applications/AppOpsCategory$AppListLoader;->CL:Lcom/android/settings/applications/AppOpsState$OpsTemplate;
+    iget-object v1, p0, Lcom/android/settings_ext/applications/AppOpsCategory$AppListLoader;->CL:Lcom/android/settings_ext/applications/AppOpsState$OpsTemplate;
 
-    invoke-virtual {v0, v1}, Lcom/android/settings/applications/AppOpsState;->a(Lcom/android/settings/applications/AppOpsState$OpsTemplate;)Ljava/util/List;
+    invoke-virtual {v0, v1}, Lcom/android/settings_ext/applications/AppOpsState;->a(Lcom/android/settings_ext/applications/AppOpsState$OpsTemplate;)Ljava/util/List;
 
     move-result-object v0
 
@@ -121,7 +121,7 @@
     invoke-super {p0, p1}, Landroid/content/AsyncTaskLoader;->onCanceled(Ljava/lang/Object;)V
 
     .line 210
-    invoke-virtual {p0, p1}, Lcom/android/settings/applications/AppOpsCategory$AppListLoader;->k(Ljava/util/List;)V
+    invoke-virtual {p0, p1}, Lcom/android/settings_ext/applications/AppOpsCategory$AppListLoader;->k(Ljava/util/List;)V
 
     .line 211
     return-void
@@ -140,7 +140,7 @@
 
     .prologue
     .line 116
-    invoke-virtual {p0}, Lcom/android/settings/applications/AppOpsCategory$AppListLoader;->iA()Ljava/util/List;
+    invoke-virtual {p0}, Lcom/android/settings_ext/applications/AppOpsCategory$AppListLoader;->iA()Ljava/util/List;
 
     move-result-object v0
 
@@ -154,7 +154,7 @@
     .line 116
     check-cast p1, Ljava/util/List;
 
-    invoke-virtual {p0, p1}, Lcom/android/settings/applications/AppOpsCategory$AppListLoader;->j(Ljava/util/List;)V
+    invoke-virtual {p0, p1}, Lcom/android/settings_ext/applications/AppOpsCategory$AppListLoader;->j(Ljava/util/List;)V
 
     return-void
 .end method
@@ -169,38 +169,38 @@
     invoke-super {p0}, Landroid/content/AsyncTaskLoader;->onReset()V
 
     .line 220
-    invoke-virtual {p0}, Lcom/android/settings/applications/AppOpsCategory$AppListLoader;->onStopLoading()V
+    invoke-virtual {p0}, Lcom/android/settings_ext/applications/AppOpsCategory$AppListLoader;->onStopLoading()V
 
     .line 224
-    iget-object v0, p0, Lcom/android/settings/applications/AppOpsCategory$AppListLoader;->mApps:Ljava/util/List;
+    iget-object v0, p0, Lcom/android/settings_ext/applications/AppOpsCategory$AppListLoader;->mApps:Ljava/util/List;
 
     if-eqz v0, :cond_0
 
     .line 225
-    iget-object v0, p0, Lcom/android/settings/applications/AppOpsCategory$AppListLoader;->mApps:Ljava/util/List;
+    iget-object v0, p0, Lcom/android/settings_ext/applications/AppOpsCategory$AppListLoader;->mApps:Ljava/util/List;
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/applications/AppOpsCategory$AppListLoader;->k(Ljava/util/List;)V
+    invoke-virtual {p0, v0}, Lcom/android/settings_ext/applications/AppOpsCategory$AppListLoader;->k(Ljava/util/List;)V
 
     .line 226
-    iput-object v2, p0, Lcom/android/settings/applications/AppOpsCategory$AppListLoader;->mApps:Ljava/util/List;
+    iput-object v2, p0, Lcom/android/settings_ext/applications/AppOpsCategory$AppListLoader;->mApps:Ljava/util/List;
 
     .line 230
     :cond_0
-    iget-object v0, p0, Lcom/android/settings/applications/AppOpsCategory$AppListLoader;->CM:Lcom/android/settings/applications/AppOpsCategory$PackageIntentReceiver;
+    iget-object v0, p0, Lcom/android/settings_ext/applications/AppOpsCategory$AppListLoader;->CM:Lcom/android/settings_ext/applications/AppOpsCategory$PackageIntentReceiver;
 
     if-eqz v0, :cond_1
 
     .line 231
-    invoke-virtual {p0}, Lcom/android/settings/applications/AppOpsCategory$AppListLoader;->getContext()Landroid/content/Context;
+    invoke-virtual {p0}, Lcom/android/settings_ext/applications/AppOpsCategory$AppListLoader;->getContext()Landroid/content/Context;
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/android/settings/applications/AppOpsCategory$AppListLoader;->CM:Lcom/android/settings/applications/AppOpsCategory$PackageIntentReceiver;
+    iget-object v1, p0, Lcom/android/settings_ext/applications/AppOpsCategory$AppListLoader;->CM:Lcom/android/settings_ext/applications/AppOpsCategory$PackageIntentReceiver;
 
     invoke-virtual {v0, v1}, Landroid/content/Context;->unregisterReceiver(Landroid/content/BroadcastReceiver;)V
 
     .line 232
-    iput-object v2, p0, Lcom/android/settings/applications/AppOpsCategory$AppListLoader;->CM:Lcom/android/settings/applications/AppOpsCategory$PackageIntentReceiver;
+    iput-object v2, p0, Lcom/android/settings_ext/applications/AppOpsCategory$AppListLoader;->CM:Lcom/android/settings_ext/applications/AppOpsCategory$PackageIntentReceiver;
 
     .line 234
     :cond_1
@@ -212,36 +212,36 @@
 
     .prologue
     .line 170
-    invoke-virtual {p0}, Lcom/android/settings/applications/AppOpsCategory$AppListLoader;->onContentChanged()V
+    invoke-virtual {p0}, Lcom/android/settings_ext/applications/AppOpsCategory$AppListLoader;->onContentChanged()V
 
     .line 172
-    iget-object v0, p0, Lcom/android/settings/applications/AppOpsCategory$AppListLoader;->mApps:Ljava/util/List;
+    iget-object v0, p0, Lcom/android/settings_ext/applications/AppOpsCategory$AppListLoader;->mApps:Ljava/util/List;
 
     if-eqz v0, :cond_0
 
     .line 175
-    iget-object v0, p0, Lcom/android/settings/applications/AppOpsCategory$AppListLoader;->mApps:Ljava/util/List;
+    iget-object v0, p0, Lcom/android/settings_ext/applications/AppOpsCategory$AppListLoader;->mApps:Ljava/util/List;
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/applications/AppOpsCategory$AppListLoader;->i(Ljava/util/List;)V
+    invoke-virtual {p0, v0}, Lcom/android/settings_ext/applications/AppOpsCategory$AppListLoader;->i(Ljava/util/List;)V
 
     .line 179
     :cond_0
-    iget-object v0, p0, Lcom/android/settings/applications/AppOpsCategory$AppListLoader;->CM:Lcom/android/settings/applications/AppOpsCategory$PackageIntentReceiver;
+    iget-object v0, p0, Lcom/android/settings_ext/applications/AppOpsCategory$AppListLoader;->CM:Lcom/android/settings_ext/applications/AppOpsCategory$PackageIntentReceiver;
 
     if-nez v0, :cond_1
 
     .line 180
-    new-instance v0, Lcom/android/settings/applications/AppOpsCategory$PackageIntentReceiver;
+    new-instance v0, Lcom/android/settings_ext/applications/AppOpsCategory$PackageIntentReceiver;
 
-    invoke-direct {v0, p0}, Lcom/android/settings/applications/AppOpsCategory$PackageIntentReceiver;-><init>(Lcom/android/settings/applications/AppOpsCategory$AppListLoader;)V
+    invoke-direct {v0, p0}, Lcom/android/settings_ext/applications/AppOpsCategory$PackageIntentReceiver;-><init>(Lcom/android/settings_ext/applications/AppOpsCategory$AppListLoader;)V
 
-    iput-object v0, p0, Lcom/android/settings/applications/AppOpsCategory$AppListLoader;->CM:Lcom/android/settings/applications/AppOpsCategory$PackageIntentReceiver;
+    iput-object v0, p0, Lcom/android/settings_ext/applications/AppOpsCategory$AppListLoader;->CM:Lcom/android/settings_ext/applications/AppOpsCategory$PackageIntentReceiver;
 
     .line 185
     :cond_1
-    iget-object v0, p0, Lcom/android/settings/applications/AppOpsCategory$AppListLoader;->CK:Lcom/android/settings/applications/AppOpsCategory$InterestingConfigChanges;
+    iget-object v0, p0, Lcom/android/settings_ext/applications/AppOpsCategory$AppListLoader;->CK:Lcom/android/settings_ext/applications/AppOpsCategory$InterestingConfigChanges;
 
-    invoke-virtual {p0}, Lcom/android/settings/applications/AppOpsCategory$AppListLoader;->getContext()Landroid/content/Context;
+    invoke-virtual {p0}, Lcom/android/settings_ext/applications/AppOpsCategory$AppListLoader;->getContext()Landroid/content/Context;
 
     move-result-object v1
 
@@ -249,18 +249,18 @@
 
     move-result-object v1
 
-    invoke-virtual {v0, v1}, Lcom/android/settings/applications/AppOpsCategory$InterestingConfigChanges;->c(Landroid/content/res/Resources;)Z
+    invoke-virtual {v0, v1}, Lcom/android/settings_ext/applications/AppOpsCategory$InterestingConfigChanges;->c(Landroid/content/res/Resources;)Z
 
     move-result v0
 
     .line 187
-    invoke-virtual {p0}, Lcom/android/settings/applications/AppOpsCategory$AppListLoader;->takeContentChanged()Z
+    invoke-virtual {p0}, Lcom/android/settings_ext/applications/AppOpsCategory$AppListLoader;->takeContentChanged()Z
 
     move-result v1
 
     if-nez v1, :cond_2
 
-    iget-object v1, p0, Lcom/android/settings/applications/AppOpsCategory$AppListLoader;->mApps:Ljava/util/List;
+    iget-object v1, p0, Lcom/android/settings_ext/applications/AppOpsCategory$AppListLoader;->mApps:Ljava/util/List;
 
     if-eqz v1, :cond_2
 
@@ -268,7 +268,7 @@
 
     .line 190
     :cond_2
-    invoke-virtual {p0}, Lcom/android/settings/applications/AppOpsCategory$AppListLoader;->forceLoad()V
+    invoke-virtual {p0}, Lcom/android/settings_ext/applications/AppOpsCategory$AppListLoader;->forceLoad()V
 
     .line 192
     :cond_3
@@ -280,7 +280,7 @@
 
     .prologue
     .line 199
-    invoke-virtual {p0}, Lcom/android/settings/applications/AppOpsCategory$AppListLoader;->cancelLoad()Z
+    invoke-virtual {p0}, Lcom/android/settings_ext/applications/AppOpsCategory$AppListLoader;->cancelLoad()Z
 
     .line 200
     return-void

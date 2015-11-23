@@ -1,3 +1,3 @@
-.class synthetic Lcom/android/settings/bluetooth/PanProfile$1;
+.class synthetic Lcom/android/settings_ext/bluetooth/PanProfile$1;
 .super Ljava/lang/Object;
 .source "PanProfile.java"

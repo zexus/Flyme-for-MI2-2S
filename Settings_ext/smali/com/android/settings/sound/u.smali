@@ -1,4 +1,4 @@
-.class Lcom/android/settings/sound/u;
+.class Lcom/android/settings_ext/sound/u;
 .super Ljava/lang/Object;
 .source "BatchMediaPlayer.java"
 
@@ -7,16 +7,16 @@
 
 
 # instance fields
-.field final synthetic ajH:Lcom/android/settings/sound/BatchMediaPlayer;
+.field final synthetic ajH:Lcom/android/settings_ext/sound/BatchMediaPlayer;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/sound/BatchMediaPlayer;)V
+.method constructor <init>(Lcom/android/settings_ext/sound/BatchMediaPlayer;)V
     .locals 0
 
     .prologue
     .line 76
-    iput-object p1, p0, Lcom/android/settings/sound/u;->ajH:Lcom/android/settings/sound/BatchMediaPlayer;
+    iput-object p1, p0, Lcom/android/settings_ext/sound/u;->ajH:Lcom/android/settings_ext/sound/BatchMediaPlayer;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -52,30 +52,30 @@
     move-result-wide v0
 
     .line 81
-    iget-object v2, p0, Lcom/android/settings/sound/u;->ajH:Lcom/android/settings/sound/BatchMediaPlayer;
+    iget-object v2, p0, Lcom/android/settings_ext/sound/u;->ajH:Lcom/android/settings_ext/sound/BatchMediaPlayer;
 
-    invoke-static {v2}, Lcom/android/settings/sound/BatchMediaPlayer;->c(Lcom/android/settings/sound/BatchMediaPlayer;)Landroid/os/Handler;
+    invoke-static {v2}, Lcom/android/settings_ext/sound/BatchMediaPlayer;->c(Lcom/android/settings_ext/sound/BatchMediaPlayer;)Landroid/os/Handler;
 
     move-result-object v2
 
-    iget-object v3, p0, Lcom/android/settings/sound/u;->ajH:Lcom/android/settings/sound/BatchMediaPlayer;
+    iget-object v3, p0, Lcom/android/settings_ext/sound/u;->ajH:Lcom/android/settings_ext/sound/BatchMediaPlayer;
 
-    invoke-static {v3}, Lcom/android/settings/sound/BatchMediaPlayer;->b(Lcom/android/settings/sound/BatchMediaPlayer;)Ljava/lang/Runnable;
+    invoke-static {v3}, Lcom/android/settings_ext/sound/BatchMediaPlayer;->b(Lcom/android/settings_ext/sound/BatchMediaPlayer;)Ljava/lang/Runnable;
 
     move-result-object v3
 
     invoke-virtual {v2, v3}, Landroid/os/Handler;->removeCallbacks(Ljava/lang/Runnable;)V
 
     .line 82
-    iget-object v2, p0, Lcom/android/settings/sound/u;->ajH:Lcom/android/settings/sound/BatchMediaPlayer;
+    iget-object v2, p0, Lcom/android/settings_ext/sound/u;->ajH:Lcom/android/settings_ext/sound/BatchMediaPlayer;
 
-    invoke-static {v2}, Lcom/android/settings/sound/BatchMediaPlayer;->c(Lcom/android/settings/sound/BatchMediaPlayer;)Landroid/os/Handler;
+    invoke-static {v2}, Lcom/android/settings_ext/sound/BatchMediaPlayer;->c(Lcom/android/settings_ext/sound/BatchMediaPlayer;)Landroid/os/Handler;
 
     move-result-object v2
 
-    iget-object v3, p0, Lcom/android/settings/sound/u;->ajH:Lcom/android/settings/sound/BatchMediaPlayer;
+    iget-object v3, p0, Lcom/android/settings_ext/sound/u;->ajH:Lcom/android/settings_ext/sound/BatchMediaPlayer;
 
-    invoke-static {v3}, Lcom/android/settings/sound/BatchMediaPlayer;->b(Lcom/android/settings/sound/BatchMediaPlayer;)Ljava/lang/Runnable;
+    invoke-static {v3}, Lcom/android/settings_ext/sound/BatchMediaPlayer;->b(Lcom/android/settings_ext/sound/BatchMediaPlayer;)Ljava/lang/Runnable;
 
     move-result-object v3
 

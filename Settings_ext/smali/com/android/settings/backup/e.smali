@@ -1,25 +1,25 @@
-.class Lcom/android/settings/backup/e;
+.class Lcom/android/settings_ext/backup/e;
 .super Landroid/database/sqlite/SQLiteOpenHelper;
 .source "AccountRestoreManager.java"
 
 
 # instance fields
-.field final synthetic LM:Lcom/android/settings/backup/a;
+.field final synthetic LM:Lcom/android/settings_ext/backup/a;
 
 
 # direct methods
-.method public constructor <init>(Lcom/android/settings/backup/a;Landroid/content/Context;Ljava/lang/String;)V
+.method public constructor <init>(Lcom/android/settings_ext/backup/a;Landroid/content/Context;Ljava/lang/String;)V
     .locals 2
 
     .prologue
     .line 372
-    iput-object p1, p0, Lcom/android/settings/backup/e;->LM:Lcom/android/settings/backup/a;
+    iput-object p1, p0, Lcom/android/settings_ext/backup/e;->LM:Lcom/android/settings_ext/backup/a;
 
     .line 373
     const/4 v0, 0x0
 
-    # getter for: Lcom/android/settings/backup/a;->LI:I
-    invoke-static {}, Lcom/android/settings/backup/a;->access$200()I
+    # getter for: Lcom/android/settings_ext/backup/a;->LI:I
+    invoke-static {}, Lcom/android/settings_ext/backup/a;->access$200()I
 
     move-result v1
 
@@ -72,7 +72,7 @@
     invoke-virtual {p1, v0}, Landroid/database/sqlite/SQLiteDatabase;->execSQL(Ljava/lang/String;)V
 
     .line 399
-    invoke-direct {p0, p1}, Lcom/android/settings/backup/e;->b(Landroid/database/sqlite/SQLiteDatabase;)V
+    invoke-direct {p0, p1}, Lcom/android/settings_ext/backup/e;->b(Landroid/database/sqlite/SQLiteDatabase;)V
 
     .line 401
     const-string v0, "CREATE TABLE extras ( _id INTEGER PRIMARY KEY AUTOINCREMENT, accounts_id INTEGER, key TEXT NOT NULL, value TEXT, UNIQUE(accounts_id,key))"
@@ -85,7 +85,7 @@
     invoke-virtual {p1, v0}, Landroid/database/sqlite/SQLiteDatabase;->execSQL(Ljava/lang/String;)V
 
     .line 412
-    invoke-direct {p0, p1}, Lcom/android/settings/backup/e;->a(Landroid/database/sqlite/SQLiteDatabase;)V
+    invoke-direct {p0, p1}, Lcom/android/settings_ext/backup/e;->a(Landroid/database/sqlite/SQLiteDatabase;)V
 
     .line 413
     return-void
@@ -143,7 +143,7 @@
     if-ne v0, v1, :cond_0
 
     .line 448
-    invoke-direct {p0, p1}, Lcom/android/settings/backup/e;->b(Landroid/database/sqlite/SQLiteDatabase;)V
+    invoke-direct {p0, p1}, Lcom/android/settings_ext/backup/e;->b(Landroid/database/sqlite/SQLiteDatabase;)V
 
     .line 449
     const-string v1, "DROP TRIGGER accountsDelete"
@@ -151,7 +151,7 @@
     invoke-virtual {p1, v1}, Landroid/database/sqlite/SQLiteDatabase;->execSQL(Ljava/lang/String;)V
 
     .line 450
-    invoke-direct {p0, p1}, Lcom/android/settings/backup/e;->a(Landroid/database/sqlite/SQLiteDatabase;)V
+    invoke-direct {p0, p1}, Lcom/android/settings_ext/backup/e;->a(Landroid/database/sqlite/SQLiteDatabase;)V
 
     .line 451
     add-int/lit8 v0, v0, 0x1

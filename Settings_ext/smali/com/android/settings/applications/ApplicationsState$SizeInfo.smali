@@ -1,4 +1,4 @@
-.class public Lcom/android/settings/applications/ApplicationsState$SizeInfo;
+.class public Lcom/android/settings_ext/applications/ApplicationsState$SizeInfo;
 .super Ljava/lang/Object;
 .source "ApplicationsState.java"
 

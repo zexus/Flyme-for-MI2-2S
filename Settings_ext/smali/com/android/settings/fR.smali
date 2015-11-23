@@ -1,10 +1,10 @@
-.class Lcom/android/settings/fR;
+.class Lcom/android/settings_ext/fR;
 .super Ljava/lang/Thread;
 .source "RadioInfo.java"
 
 
 # instance fields
-.field final synthetic vV:Lcom/android/settings/RadioInfo;
+.field final synthetic vV:Lcom/android/settings_ext/RadioInfo;
 
 .field final synthetic vW:Landroid/os/Handler;
 
@@ -12,16 +12,16 @@
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/RadioInfo;Landroid/os/Handler;Ljava/lang/Runnable;)V
+.method constructor <init>(Lcom/android/settings_ext/RadioInfo;Landroid/os/Handler;Ljava/lang/Runnable;)V
     .locals 0
 
     .prologue
     .line 841
-    iput-object p1, p0, Lcom/android/settings/fR;->vV:Lcom/android/settings/RadioInfo;
+    iput-object p1, p0, Lcom/android/settings_ext/fR;->vV:Lcom/android/settings_ext/RadioInfo;
 
-    iput-object p2, p0, Lcom/android/settings/fR;->vW:Landroid/os/Handler;
+    iput-object p2, p0, Lcom/android/settings_ext/fR;->vW:Landroid/os/Handler;
 
-    iput-object p3, p0, Lcom/android/settings/fR;->vX:Ljava/lang/Runnable;
+    iput-object p3, p0, Lcom/android/settings_ext/fR;->vX:Ljava/lang/Runnable;
 
     invoke-direct {p0}, Ljava/lang/Thread;-><init>()V
 
@@ -35,14 +35,14 @@
 
     .prologue
     .line 844
-    iget-object v0, p0, Lcom/android/settings/fR;->vV:Lcom/android/settings/RadioInfo;
+    iget-object v0, p0, Lcom/android/settings_ext/fR;->vV:Lcom/android/settings_ext/RadioInfo;
 
-    invoke-static {v0}, Lcom/android/settings/RadioInfo;->x(Lcom/android/settings/RadioInfo;)V
+    invoke-static {v0}, Lcom/android/settings_ext/RadioInfo;->x(Lcom/android/settings_ext/RadioInfo;)V
 
     .line 845
-    iget-object v0, p0, Lcom/android/settings/fR;->vW:Landroid/os/Handler;
+    iget-object v0, p0, Lcom/android/settings_ext/fR;->vW:Landroid/os/Handler;
 
-    iget-object v1, p0, Lcom/android/settings/fR;->vX:Ljava/lang/Runnable;
+    iget-object v1, p0, Lcom/android/settings_ext/fR;->vX:Ljava/lang/Runnable;
 
     invoke-virtual {v0, v1}, Landroid/os/Handler;->post(Ljava/lang/Runnable;)Z
 

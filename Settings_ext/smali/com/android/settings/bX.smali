@@ -1,4 +1,4 @@
-.class public Lcom/android/settings/bX;
+.class public Lcom/android/settings_ext/bX;
 .super Ljava/lang/Object;
 .source "DreamBackend.java"
 
@@ -10,7 +10,7 @@
 # instance fields
 .field private final kf:Landroid/service/dreams/IDreamManager;
 
-.field private final kg:Lcom/android/settings/bZ;
+.field private final kg:Lcom/android/settings_ext/bZ;
 
 .field private final kh:Z
 
@@ -31,7 +31,7 @@
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
 
-    const-class v1, Lcom/android/settings/DreamSettings;
+    const-class v1, Lcom/android/settings_ext/DreamSettings;
 
     invoke-virtual {v1}, Ljava/lang/Class;->getSimpleName()Ljava/lang/String;
 
@@ -51,7 +51,7 @@
 
     move-result-object v0
 
-    sput-object v0, Lcom/android/settings/bX;->TAG:Ljava/lang/String;
+    sput-object v0, Lcom/android/settings_ext/bX;->TAG:Ljava/lang/String;
 
     return-void
 .end method
@@ -64,7 +64,7 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 83
-    iput-object p1, p0, Lcom/android/settings/bX;->mContext:Landroid/content/Context;
+    iput-object p1, p0, Lcom/android/settings_ext/bX;->mContext:Landroid/content/Context;
 
     .line 84
     const-string v0, "dreams"
@@ -77,18 +77,18 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/bX;->kf:Landroid/service/dreams/IDreamManager;
+    iput-object v0, p0, Lcom/android/settings_ext/bX;->kf:Landroid/service/dreams/IDreamManager;
 
     .line 86
-    new-instance v0, Lcom/android/settings/bZ;
+    new-instance v0, Lcom/android/settings_ext/bZ;
 
-    invoke-virtual {p0}, Lcom/android/settings/bX;->dc()Landroid/content/ComponentName;
+    invoke-virtual {p0}, Lcom/android/settings_ext/bX;->dc()Landroid/content/ComponentName;
 
     move-result-object v1
 
-    invoke-direct {v0, v1}, Lcom/android/settings/bZ;-><init>(Landroid/content/ComponentName;)V
+    invoke-direct {v0, v1}, Lcom/android/settings_ext/bZ;-><init>(Landroid/content/ComponentName;)V
 
-    iput-object v0, p0, Lcom/android/settings/bX;->kg:Lcom/android/settings/bZ;
+    iput-object v0, p0, Lcom/android/settings_ext/bX;->kg:Lcom/android/settings_ext/bZ;
 
     .line 95
     invoke-virtual {p1}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
@@ -101,7 +101,7 @@
 
     move-result v0
 
-    iput-boolean v0, p0, Lcom/android/settings/bX;->kh:Z
+    iput-boolean v0, p0, Lcom/android/settings_ext/bX;->kh:Z
 
     .line 97
     invoke-virtual {p1}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
@@ -114,7 +114,7 @@
 
     move-result v0
 
-    iput-boolean v0, p0, Lcom/android/settings/bX;->ki:Z
+    iput-boolean v0, p0, Lcom/android/settings_ext/bX;->ki:Z
 
     .line 99
     invoke-virtual {p1}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
@@ -127,7 +127,7 @@
 
     move-result v0
 
-    iput-boolean v0, p0, Lcom/android/settings/bX;->kj:Z
+    iput-boolean v0, p0, Lcom/android/settings_ext/bX;->kj:Z
 
     .line 102
     return-void
@@ -178,7 +178,7 @@
 
     .line 259
     :try_start_1
-    sget-object v1, Lcom/android/settings/bX;->TAG:Ljava/lang/String;
+    sget-object v1, Lcom/android/settings_ext/bX;->TAG:Ljava/lang/String;
 
     const-string v3, "No android.service.dream meta-data"
 
@@ -242,7 +242,7 @@
     if-nez v4, :cond_5
 
     .line 270
-    sget-object v1, Lcom/android/settings/bX;->TAG:Ljava/lang/String;
+    sget-object v1, Lcom/android/settings_ext/bX;->TAG:Ljava/lang/String;
 
     const-string v3, "Meta-data does not start with dream tag"
 
@@ -304,7 +304,7 @@
     if-eqz v2, :cond_7
 
     .line 286
-    sget-object v1, Lcom/android/settings/bX;->TAG:Ljava/lang/String;
+    sget-object v1, Lcom/android/settings_ext/bX;->TAG:Ljava/lang/String;
 
     new-instance v3, Ljava/lang/StringBuilder;
 
@@ -582,7 +582,7 @@
     const/4 v1, 0x1
 
     .line 182
-    iget-object v0, p0, Lcom/android/settings/bX;->mContext:Landroid/content/Context;
+    iget-object v0, p0, Lcom/android/settings_ext/bX;->mContext:Landroid/content/Context;
 
     invoke-virtual {v0}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
 
@@ -618,7 +618,7 @@
 
     .prologue
     .line 186
-    iget-object v0, p0, Lcom/android/settings/bX;->mContext:Landroid/content/Context;
+    iget-object v0, p0, Lcom/android/settings_ext/bX;->mContext:Landroid/content/Context;
 
     invoke-virtual {v0}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
 
@@ -658,10 +658,10 @@
 
     aput-object p1, v1, v2
 
-    invoke-static {v0, v1}, Lcom/android/settings/bX;->a(Ljava/lang/String;[Ljava/lang/Object;)V
+    invoke-static {v0, v1}, Lcom/android/settings_ext/bX;->a(Ljava/lang/String;[Ljava/lang/Object;)V
 
     .line 191
-    iget-object v0, p0, Lcom/android/settings/bX;->kf:Landroid/service/dreams/IDreamManager;
+    iget-object v0, p0, Lcom/android/settings_ext/bX;->kf:Landroid/service/dreams/IDreamManager;
 
     if-nez v0, :cond_0
 
@@ -681,7 +681,7 @@
     aput-object p1, v0, v1
 
     .line 195
-    iget-object v1, p0, Lcom/android/settings/bX;->kf:Landroid/service/dreams/IDreamManager;
+    iget-object v1, p0, Lcom/android/settings_ext/bX;->kf:Landroid/service/dreams/IDreamManager;
 
     if-nez p1, :cond_1
 
@@ -699,7 +699,7 @@
     move-exception v0
 
     .line 197
-    sget-object v1, Lcom/android/settings/bX;->TAG:Ljava/lang/String;
+    sget-object v1, Lcom/android/settings_ext/bX;->TAG:Ljava/lang/String;
 
     new-instance v2, Ljava/lang/StringBuilder;
 
@@ -724,7 +724,7 @@
     goto :goto_0
 .end method
 
-.method public a(Lcom/android/settings/bY;)V
+.method public a(Lcom/android/settings_ext/bY;)V
     .locals 3
 
     .prologue
@@ -739,12 +739,12 @@
 
     aput-object p1, v1, v2
 
-    invoke-static {v0, v1}, Lcom/android/settings/bX;->a(Ljava/lang/String;[Ljava/lang/Object;)V
+    invoke-static {v0, v1}, Lcom/android/settings_ext/bX;->a(Ljava/lang/String;[Ljava/lang/Object;)V
 
     .line 215
     if-eqz p1, :cond_0
 
-    iget-object v0, p1, Lcom/android/settings/bY;->km:Landroid/content/ComponentName;
+    iget-object v0, p1, Lcom/android/settings_ext/bY;->km:Landroid/content/ComponentName;
 
     if-nez v0, :cond_1
 
@@ -755,13 +755,13 @@
 
     .line 217
     :cond_1
-    iget-object v0, p0, Lcom/android/settings/bX;->mContext:Landroid/content/Context;
+    iget-object v0, p0, Lcom/android/settings_ext/bX;->mContext:Landroid/content/Context;
 
     new-instance v1, Landroid/content/Intent;
 
     invoke-direct {v1}, Landroid/content/Intent;-><init>()V
 
-    iget-object v2, p1, Lcom/android/settings/bY;->km:Landroid/content/ComponentName;
+    iget-object v2, p1, Lcom/android/settings_ext/bY;->km:Landroid/content/ComponentName;
 
     invoke-virtual {v1, v2}, Landroid/content/Intent;->setComponent(Landroid/content/ComponentName;)Landroid/content/Intent;
 
@@ -783,15 +783,15 @@
 
     new-array v1, v1, [Ljava/lang/Object;
 
-    invoke-static {v0, v1}, Lcom/android/settings/bX;->a(Ljava/lang/String;[Ljava/lang/Object;)V
+    invoke-static {v0, v1}, Lcom/android/settings_ext/bX;->a(Ljava/lang/String;[Ljava/lang/Object;)V
 
     .line 106
-    invoke-virtual {p0}, Lcom/android/settings/bX;->dg()Landroid/content/ComponentName;
+    invoke-virtual {p0}, Lcom/android/settings_ext/bX;->dg()Landroid/content/ComponentName;
 
     move-result-object v1
 
     .line 107
-    iget-object v0, p0, Lcom/android/settings/bX;->mContext:Landroid/content/Context;
+    iget-object v0, p0, Lcom/android/settings_ext/bX;->mContext:Landroid/content/Context;
 
     invoke-virtual {v0}, Landroid/content/Context;->getPackageManager()Landroid/content/pm/PackageManager;
 
@@ -845,46 +845,46 @@
     if-eqz v5, :cond_0
 
     .line 115
-    new-instance v5, Lcom/android/settings/bY;
+    new-instance v5, Lcom/android/settings_ext/bY;
 
-    invoke-direct {v5}, Lcom/android/settings/bY;-><init>()V
+    invoke-direct {v5}, Lcom/android/settings_ext/bY;-><init>()V
 
     .line 116
     invoke-virtual {v0, v2}, Landroid/content/pm/ResolveInfo;->loadLabel(Landroid/content/pm/PackageManager;)Ljava/lang/CharSequence;
 
     move-result-object v6
 
-    iput-object v6, v5, Lcom/android/settings/bY;->kk:Ljava/lang/CharSequence;
+    iput-object v6, v5, Lcom/android/settings_ext/bY;->kk:Ljava/lang/CharSequence;
 
     .line 117
     invoke-virtual {v0, v2}, Landroid/content/pm/ResolveInfo;->loadIcon(Landroid/content/pm/PackageManager;)Landroid/graphics/drawable/Drawable;
 
     move-result-object v6
 
-    iput-object v6, v5, Lcom/android/settings/bY;->icon:Landroid/graphics/drawable/Drawable;
+    iput-object v6, v5, Lcom/android/settings_ext/bY;->icon:Landroid/graphics/drawable/Drawable;
 
     .line 118
-    invoke-static {v0}, Lcom/android/settings/bX;->b(Landroid/content/pm/ResolveInfo;)Landroid/content/ComponentName;
+    invoke-static {v0}, Lcom/android/settings_ext/bX;->b(Landroid/content/pm/ResolveInfo;)Landroid/content/ComponentName;
 
     move-result-object v6
 
-    iput-object v6, v5, Lcom/android/settings/bY;->componentName:Landroid/content/ComponentName;
+    iput-object v6, v5, Lcom/android/settings_ext/bY;->componentName:Landroid/content/ComponentName;
 
     .line 119
-    iget-object v6, v5, Lcom/android/settings/bY;->componentName:Landroid/content/ComponentName;
+    iget-object v6, v5, Lcom/android/settings_ext/bY;->componentName:Landroid/content/ComponentName;
 
     invoke-virtual {v6, v1}, Landroid/content/ComponentName;->equals(Ljava/lang/Object;)Z
 
     move-result v6
 
-    iput-boolean v6, v5, Lcom/android/settings/bY;->kl:Z
+    iput-boolean v6, v5, Lcom/android/settings_ext/bY;->kl:Z
 
     .line 120
-    invoke-static {v2, v0}, Lcom/android/settings/bX;->a(Landroid/content/pm/PackageManager;Landroid/content/pm/ResolveInfo;)Landroid/content/ComponentName;
+    invoke-static {v2, v0}, Lcom/android/settings_ext/bX;->a(Landroid/content/pm/PackageManager;Landroid/content/pm/ResolveInfo;)Landroid/content/ComponentName;
 
     move-result-object v0
 
-    iput-object v0, v5, Lcom/android/settings/bY;->km:Landroid/content/ComponentName;
+    iput-object v0, v5, Lcom/android/settings_ext/bY;->km:Landroid/content/ComponentName;
 
     .line 121
     invoke-interface {v3, v5}, Ljava/util/List;->add(Ljava/lang/Object;)Z
@@ -893,7 +893,7 @@
 
     .line 123
     :cond_1
-    iget-object v0, p0, Lcom/android/settings/bX;->kg:Lcom/android/settings/bZ;
+    iget-object v0, p0, Lcom/android/settings_ext/bX;->kg:Lcom/android/settings_ext/bZ;
 
     invoke-static {v3, v0}, Ljava/util/Collections;->sort(Ljava/util/List;Ljava/util/Comparator;)V
 
@@ -908,7 +908,7 @@
     const/4 v0, 0x0
 
     .line 128
-    iget-object v1, p0, Lcom/android/settings/bX;->kf:Landroid/service/dreams/IDreamManager;
+    iget-object v1, p0, Lcom/android/settings_ext/bX;->kf:Landroid/service/dreams/IDreamManager;
 
     if-nez v1, :cond_0
 
@@ -919,7 +919,7 @@
     .line 131
     :cond_0
     :try_start_0
-    iget-object v1, p0, Lcom/android/settings/bX;->kf:Landroid/service/dreams/IDreamManager;
+    iget-object v1, p0, Lcom/android/settings_ext/bX;->kf:Landroid/service/dreams/IDreamManager;
 
     invoke-interface {v1}, Landroid/service/dreams/IDreamManager;->getDefaultDreamComponent()Landroid/content/ComponentName;
     :try_end_0
@@ -934,7 +934,7 @@
     move-exception v1
 
     .line 133
-    sget-object v2, Lcom/android/settings/bX;->TAG:Ljava/lang/String;
+    sget-object v2, Lcom/android/settings_ext/bX;->TAG:Ljava/lang/String;
 
     const-string v3, "Failed to get default dream"
 
@@ -950,7 +950,7 @@
     const/4 v0, 0x0
 
     .line 139
-    invoke-virtual {p0}, Lcom/android/settings/bX;->dg()Landroid/content/ComponentName;
+    invoke-virtual {p0}, Lcom/android/settings_ext/bX;->dg()Landroid/content/ComponentName;
 
     move-result-object v1
 
@@ -958,7 +958,7 @@
     if-eqz v1, :cond_0
 
     .line 141
-    iget-object v2, p0, Lcom/android/settings/bX;->mContext:Landroid/content/Context;
+    iget-object v2, p0, Lcom/android/settings_ext/bX;->mContext:Landroid/content/Context;
 
     invoke-virtual {v2}, Landroid/content/Context;->getPackageManager()Landroid/content/pm/PackageManager;
 
@@ -1001,9 +1001,9 @@
     .line 164
     const-string v0, "screensaver_activate_on_dock"
 
-    iget-boolean v1, p0, Lcom/android/settings/bX;->kj:Z
+    iget-boolean v1, p0, Lcom/android/settings_ext/bX;->kj:Z
 
-    invoke-direct {p0, v0, v1}, Lcom/android/settings/bX;->getBoolean(Ljava/lang/String;Z)Z
+    invoke-direct {p0, v0, v1}, Lcom/android/settings_ext/bX;->getBoolean(Ljava/lang/String;Z)Z
 
     move-result v0
 
@@ -1017,9 +1017,9 @@
     .line 173
     const-string v0, "screensaver_activate_on_sleep"
 
-    iget-boolean v1, p0, Lcom/android/settings/bX;->ki:Z
+    iget-boolean v1, p0, Lcom/android/settings_ext/bX;->ki:Z
 
-    invoke-direct {p0, v0, v1}, Lcom/android/settings/bX;->getBoolean(Ljava/lang/String;Z)Z
+    invoke-direct {p0, v0, v1}, Lcom/android/settings_ext/bX;->getBoolean(Ljava/lang/String;Z)Z
 
     move-result v0
 
@@ -1033,7 +1033,7 @@
     const/4 v0, 0x0
 
     .line 202
-    iget-object v1, p0, Lcom/android/settings/bX;->kf:Landroid/service/dreams/IDreamManager;
+    iget-object v1, p0, Lcom/android/settings_ext/bX;->kf:Landroid/service/dreams/IDreamManager;
 
     if-nez v1, :cond_1
 
@@ -1045,7 +1045,7 @@
     .line 205
     :cond_1
     :try_start_0
-    iget-object v1, p0, Lcom/android/settings/bX;->kf:Landroid/service/dreams/IDreamManager;
+    iget-object v1, p0, Lcom/android/settings_ext/bX;->kf:Landroid/service/dreams/IDreamManager;
 
     invoke-interface {v1}, Landroid/service/dreams/IDreamManager;->getDreamComponents()[Landroid/content/ComponentName;
 
@@ -1071,7 +1071,7 @@
     move-exception v1
 
     .line 208
-    sget-object v2, Lcom/android/settings/bX;->TAG:Ljava/lang/String;
+    sget-object v2, Lcom/android/settings_ext/bX;->TAG:Ljava/lang/String;
 
     const-string v3, "Failed to get active dream"
 
@@ -1091,10 +1091,10 @@
 
     new-array v1, v1, [Ljava/lang/Object;
 
-    invoke-static {v0, v1}, Lcom/android/settings/bX;->a(Ljava/lang/String;[Ljava/lang/Object;)V
+    invoke-static {v0, v1}, Lcom/android/settings_ext/bX;->a(Ljava/lang/String;[Ljava/lang/Object;)V
 
     .line 233
-    iget-object v0, p0, Lcom/android/settings/bX;->kf:Landroid/service/dreams/IDreamManager;
+    iget-object v0, p0, Lcom/android/settings_ext/bX;->kf:Landroid/service/dreams/IDreamManager;
 
     if-nez v0, :cond_0
 
@@ -1105,7 +1105,7 @@
     .line 236
     :cond_0
     :try_start_0
-    iget-object v0, p0, Lcom/android/settings/bX;->kf:Landroid/service/dreams/IDreamManager;
+    iget-object v0, p0, Lcom/android/settings_ext/bX;->kf:Landroid/service/dreams/IDreamManager;
 
     invoke-interface {v0}, Landroid/service/dreams/IDreamManager;->dream()V
     :try_end_0
@@ -1118,7 +1118,7 @@
     move-exception v0
 
     .line 238
-    sget-object v1, Lcom/android/settings/bX;->TAG:Ljava/lang/String;
+    sget-object v1, Lcom/android/settings_ext/bX;->TAG:Ljava/lang/String;
 
     const-string v2, "Failed to dream"
 
@@ -1134,9 +1134,9 @@
     .line 155
     const-string v0, "screensaver_enabled"
 
-    iget-boolean v1, p0, Lcom/android/settings/bX;->kh:Z
+    iget-boolean v1, p0, Lcom/android/settings_ext/bX;->kh:Z
 
-    invoke-direct {p0, v0, v1}, Lcom/android/settings/bX;->getBoolean(Ljava/lang/String;Z)Z
+    invoke-direct {p0, v0, v1}, Lcom/android/settings_ext/bX;->getBoolean(Ljava/lang/String;Z)Z
 
     move-result v0
 
@@ -1162,12 +1162,12 @@
 
     aput-object v3, v1, v2
 
-    invoke-static {v0, v1}, Lcom/android/settings/bX;->a(Ljava/lang/String;[Ljava/lang/Object;)V
+    invoke-static {v0, v1}, Lcom/android/settings_ext/bX;->a(Ljava/lang/String;[Ljava/lang/Object;)V
 
     .line 160
     const-string v0, "screensaver_enabled"
 
-    invoke-direct {p0, v0, p1}, Lcom/android/settings/bX;->setBoolean(Ljava/lang/String;Z)V
+    invoke-direct {p0, v0, p1}, Lcom/android/settings_ext/bX;->setBoolean(Ljava/lang/String;Z)V
 
     .line 161
     return-void
@@ -1192,12 +1192,12 @@
 
     aput-object v3, v1, v2
 
-    invoke-static {v0, v1}, Lcom/android/settings/bX;->a(Ljava/lang/String;[Ljava/lang/Object;)V
+    invoke-static {v0, v1}, Lcom/android/settings_ext/bX;->a(Ljava/lang/String;[Ljava/lang/Object;)V
 
     .line 169
     const-string v0, "screensaver_activate_on_dock"
 
-    invoke-direct {p0, v0, p1}, Lcom/android/settings/bX;->setBoolean(Ljava/lang/String;Z)V
+    invoke-direct {p0, v0, p1}, Lcom/android/settings_ext/bX;->setBoolean(Ljava/lang/String;Z)V
 
     .line 170
     return-void
@@ -1222,12 +1222,12 @@
 
     aput-object v3, v1, v2
 
-    invoke-static {v0, v1}, Lcom/android/settings/bX;->a(Ljava/lang/String;[Ljava/lang/Object;)V
+    invoke-static {v0, v1}, Lcom/android/settings_ext/bX;->a(Ljava/lang/String;[Ljava/lang/Object;)V
 
     .line 178
     const-string v0, "screensaver_activate_on_sleep"
 
-    invoke-direct {p0, v0, p1}, Lcom/android/settings/bX;->setBoolean(Ljava/lang/String;Z)V
+    invoke-direct {p0, v0, p1}, Lcom/android/settings_ext/bX;->setBoolean(Ljava/lang/String;Z)V
 
     .line 179
     return-void

@@ -1,4 +1,4 @@
-.class Lcom/android/settings/aP;
+.class Lcom/android/settings_ext/aP;
 .super Ljava/lang/Object;
 .source "CryptKeeper.java"
 
@@ -16,7 +16,7 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 154
-    iput-object p1, p0, Lcom/android/settings/aP;->fg:Landroid/os/PowerManager$WakeLock;
+    iput-object p1, p0, Lcom/android/settings_ext/aP;->fg:Landroid/os/PowerManager$WakeLock;
 
     .line 155
     return-void

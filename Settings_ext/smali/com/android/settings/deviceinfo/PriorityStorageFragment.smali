@@ -1,5 +1,5 @@
-.class public Lcom/android/settings/deviceinfo/PriorityStorageFragment;
-.super Lcom/android/settings/SettingsPreferenceFragment;
+.class public Lcom/android/settings_ext/deviceinfo/PriorityStorageFragment;
+.super Lcom/android/settings_ext/SettingsPreferenceFragment;
 .source "PriorityStorageFragment.java"
 
 # interfaces
@@ -17,7 +17,7 @@
 
     .prologue
     .line 20
-    invoke-direct {p0}, Lcom/android/settings/SettingsPreferenceFragment;-><init>()V
+    invoke-direct {p0}, Lcom/android/settings_ext/SettingsPreferenceFragment;-><init>()V
 
     return-void
 .end method
@@ -38,7 +38,7 @@
     invoke-direct {v0, v1}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
 
     .line 35
-    iget-object v1, p0, Lcom/android/settings/deviceinfo/PriorityStorageFragment;->i:Landroid/content/pm/PackageManager;
+    iget-object v1, p0, Lcom/android/settings_ext/deviceinfo/PriorityStorageFragment;->i:Landroid/content/pm/PackageManager;
 
     const/16 v4, 0x280
 
@@ -55,7 +55,7 @@
 
     .line 41
     :cond_1
-    invoke-virtual {p0}, Lcom/android/settings/deviceinfo/PriorityStorageFragment;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
+    invoke-virtual {p0}, Lcom/android/settings_ext/deviceinfo/PriorityStorageFragment;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
 
     move-result-object v4
 
@@ -80,7 +80,7 @@
     .line 43
     new-instance v6, Landroid/preference/ListPreference;
 
-    invoke-virtual {p0}, Lcom/android/settings/deviceinfo/PriorityStorageFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/deviceinfo/PriorityStorageFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v1
 
@@ -100,7 +100,7 @@
     invoke-direct {v1, v7, v8}, Landroid/content/ComponentName;-><init>(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 45
-    iget-object v7, p0, Lcom/android/settings/deviceinfo/PriorityStorageFragment;->i:Landroid/content/pm/PackageManager;
+    iget-object v7, p0, Lcom/android/settings_ext/deviceinfo/PriorityStorageFragment;->i:Landroid/content/pm/PackageManager;
 
     invoke-virtual {v0, v7}, Landroid/content/pm/ResolveInfo;->loadLabel(Landroid/content/pm/PackageManager;)Ljava/lang/CharSequence;
 
@@ -128,7 +128,7 @@
     invoke-virtual {v6, v8}, Landroid/preference/ListPreference;->setEntryValues(I)V
 
     .line 49
-    iget-object v8, p0, Lcom/android/settings/deviceinfo/PriorityStorageFragment;->i:Landroid/content/pm/PackageManager;
+    iget-object v8, p0, Lcom/android/settings_ext/deviceinfo/PriorityStorageFragment;->i:Landroid/content/pm/PackageManager;
 
     invoke-virtual {v8, v1}, Landroid/content/pm/PackageManager;->getComponentEnabledSetting(Landroid/content/ComponentName;)I
 
@@ -186,7 +186,7 @@
 
     aput-object v7, v8, v2
 
-    invoke-virtual {p0, v1, v8}, Lcom/android/settings/deviceinfo/PriorityStorageFragment;->getString(I[Ljava/lang/Object;)Ljava/lang/String;
+    invoke-virtual {p0, v1, v8}, Lcom/android/settings_ext/deviceinfo/PriorityStorageFragment;->getString(I[Ljava/lang/Object;)Ljava/lang/String;
 
     move-result-object v1
 
@@ -263,22 +263,22 @@
 
     .prologue
     .line 27
-    invoke-super {p0, p1}, Lcom/android/settings/SettingsPreferenceFragment;->onCreate(Landroid/os/Bundle;)V
+    invoke-super {p0, p1}, Lcom/android/settings_ext/SettingsPreferenceFragment;->onCreate(Landroid/os/Bundle;)V
 
     .line 28
-    invoke-virtual {p0}, Lcom/android/settings/deviceinfo/PriorityStorageFragment;->getPackageManager()Landroid/content/pm/PackageManager;
+    invoke-virtual {p0}, Lcom/android/settings_ext/deviceinfo/PriorityStorageFragment;->getPackageManager()Landroid/content/pm/PackageManager;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/deviceinfo/PriorityStorageFragment;->i:Landroid/content/pm/PackageManager;
+    iput-object v0, p0, Lcom/android/settings_ext/deviceinfo/PriorityStorageFragment;->i:Landroid/content/pm/PackageManager;
 
     .line 29
     const v0, 0x7f060061
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/deviceinfo/PriorityStorageFragment;->addPreferencesFromResource(I)V
+    invoke-virtual {p0, v0}, Lcom/android/settings_ext/deviceinfo/PriorityStorageFragment;->addPreferencesFromResource(I)V
 
     .line 30
-    invoke-direct {p0}, Lcom/android/settings/deviceinfo/PriorityStorageFragment;->od()V
+    invoke-direct {p0}, Lcom/android/settings_ext/deviceinfo/PriorityStorageFragment;->od()V
 
     .line 31
     return-void
@@ -331,7 +331,7 @@
     move-result v2
 
     .line 83
-    iget-object v5, p0, Lcom/android/settings/deviceinfo/PriorityStorageFragment;->i:Landroid/content/pm/PackageManager;
+    iget-object v5, p0, Lcom/android/settings_ext/deviceinfo/PriorityStorageFragment;->i:Landroid/content/pm/PackageManager;
 
     if-eqz v2, :cond_1
 

@@ -1,4 +1,4 @@
-.class Lcom/android/settings/deviceinfo/Status$5;
+.class Lcom/android/settings_ext/deviceinfo/Status$5;
 .super Ljava/lang/Object;
 .source "Status.java"
 
@@ -7,16 +7,16 @@
 
 
 # instance fields
-.field final synthetic Tj:Lcom/android/settings/deviceinfo/Status;
+.field final synthetic Tj:Lcom/android/settings_ext/deviceinfo/Status;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/deviceinfo/Status;)V
+.method constructor <init>(Lcom/android/settings_ext/deviceinfo/Status;)V
     .locals 0
 
     .prologue
     .line 436
-    iput-object p1, p0, Lcom/android/settings/deviceinfo/Status$5;->Tj:Lcom/android/settings/deviceinfo/Status;
+    iput-object p1, p0, Lcom/android/settings_ext/deviceinfo/Status$5;->Tj:Lcom/android/settings_ext/deviceinfo/Status;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -44,11 +44,11 @@
     check-cast v0, Landroid/preference/Preference;
 
     .line 443
-    iget-object v1, p0, Lcom/android/settings/deviceinfo/Status$5;->Tj:Lcom/android/settings/deviceinfo/Status;
+    iget-object v1, p0, Lcom/android/settings_ext/deviceinfo/Status$5;->Tj:Lcom/android/settings_ext/deviceinfo/Status;
 
     const-string v2, "clipboard"
 
-    invoke-virtual {v1, v2}, Lcom/android/settings/deviceinfo/Status;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
+    invoke-virtual {v1, v2}, Lcom/android/settings_ext/deviceinfo/Status;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object v1
 
@@ -62,7 +62,7 @@
     invoke-virtual {v1, v0}, Landroid/content/ClipboardManager;->setText(Ljava/lang/CharSequence;)V
 
     .line 446
-    iget-object v0, p0, Lcom/android/settings/deviceinfo/Status$5;->Tj:Lcom/android/settings/deviceinfo/Status;
+    iget-object v0, p0, Lcom/android/settings_ext/deviceinfo/Status$5;->Tj:Lcom/android/settings_ext/deviceinfo/Status;
 
     const v1, 0x104043c
 

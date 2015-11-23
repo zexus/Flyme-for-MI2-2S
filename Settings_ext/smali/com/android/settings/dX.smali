@@ -1,4 +1,4 @@
-.class Lcom/android/settings/dX;
+.class Lcom/android/settings_ext/dX;
 .super Ljava/lang/Object;
 .source "MiuiSecurityBluetoothDeviceInfoFragment.java"
 
@@ -7,16 +7,16 @@
 
 
 # instance fields
-.field final synthetic qB:Lcom/android/settings/MiuiSecurityBluetoothDeviceInfoFragment;
+.field final synthetic qB:Lcom/android/settings_ext/MiuiSecurityBluetoothDeviceInfoFragment;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/MiuiSecurityBluetoothDeviceInfoFragment;)V
+.method constructor <init>(Lcom/android/settings_ext/MiuiSecurityBluetoothDeviceInfoFragment;)V
     .locals 0
 
     .prologue
     .line 91
-    iput-object p1, p0, Lcom/android/settings/dX;->qB:Lcom/android/settings/MiuiSecurityBluetoothDeviceInfoFragment;
+    iput-object p1, p0, Lcom/android/settings_ext/dX;->qB:Lcom/android/settings_ext/MiuiSecurityBluetoothDeviceInfoFragment;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -30,8 +30,8 @@
 
     .prologue
     .line 96
-    # getter for: Lcom/android/settings/MiuiSecurityBluetoothDeviceInfoFragment;->TAG:Ljava/lang/String;
-    invoke-static {}, Lcom/android/settings/MiuiSecurityBluetoothDeviceInfoFragment;->access$000()Ljava/lang/String;
+    # getter for: Lcom/android/settings_ext/MiuiSecurityBluetoothDeviceInfoFragment;->TAG:Ljava/lang/String;
+    invoke-static {}, Lcom/android/settings_ext/MiuiSecurityBluetoothDeviceInfoFragment;->access$000()Ljava/lang/String;
 
     move-result-object v0
 
@@ -61,26 +61,26 @@
     if-ne p1, v0, :cond_0
 
     .line 99
-    iget-object v0, p0, Lcom/android/settings/dX;->qB:Lcom/android/settings/MiuiSecurityBluetoothDeviceInfoFragment;
+    iget-object v0, p0, Lcom/android/settings_ext/dX;->qB:Lcom/android/settings_ext/MiuiSecurityBluetoothDeviceInfoFragment;
 
-    invoke-static {v0}, Lcom/android/settings/MiuiSecurityBluetoothDeviceInfoFragment;->e(Lcom/android/settings/MiuiSecurityBluetoothDeviceInfoFragment;)Lmiui/bluetooth/ble/MiBleUnlockProfile;
+    invoke-static {v0}, Lcom/android/settings_ext/MiuiSecurityBluetoothDeviceInfoFragment;->e(Lcom/android/settings_ext/MiuiSecurityBluetoothDeviceInfoFragment;)Lmiui/bluetooth/ble/MiBleUnlockProfile;
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/android/settings/dX;->qB:Lcom/android/settings/MiuiSecurityBluetoothDeviceInfoFragment;
+    iget-object v1, p0, Lcom/android/settings_ext/dX;->qB:Lcom/android/settings_ext/MiuiSecurityBluetoothDeviceInfoFragment;
 
-    invoke-static {v1}, Lcom/android/settings/MiuiSecurityBluetoothDeviceInfoFragment;->d(Lcom/android/settings/MiuiSecurityBluetoothDeviceInfoFragment;)Lmiui/bluetooth/ble/MiBleUnlockProfile$OnUnlockStateChangeListener;
+    invoke-static {v1}, Lcom/android/settings_ext/MiuiSecurityBluetoothDeviceInfoFragment;->d(Lcom/android/settings_ext/MiuiSecurityBluetoothDeviceInfoFragment;)Lmiui/bluetooth/ble/MiBleUnlockProfile$OnUnlockStateChangeListener;
 
     move-result-object v1
 
     invoke-virtual {v0, v1}, Lmiui/bluetooth/ble/MiBleUnlockProfile;->registerUnlockListener(Lmiui/bluetooth/ble/MiBleUnlockProfile$OnUnlockStateChangeListener;)V
 
     .line 100
-    iget-object v0, p0, Lcom/android/settings/dX;->qB:Lcom/android/settings/MiuiSecurityBluetoothDeviceInfoFragment;
+    iget-object v0, p0, Lcom/android/settings_ext/dX;->qB:Lcom/android/settings_ext/MiuiSecurityBluetoothDeviceInfoFragment;
 
     const/4 v1, 0x1
 
-    invoke-static {v0, v1}, Lcom/android/settings/MiuiSecurityBluetoothDeviceInfoFragment;->a(Lcom/android/settings/MiuiSecurityBluetoothDeviceInfoFragment;Z)Z
+    invoke-static {v0, v1}, Lcom/android/settings_ext/MiuiSecurityBluetoothDeviceInfoFragment;->a(Lcom/android/settings_ext/MiuiSecurityBluetoothDeviceInfoFragment;Z)Z
 
     .line 104
     :goto_0
@@ -88,11 +88,11 @@
 
     .line 102
     :cond_0
-    iget-object v0, p0, Lcom/android/settings/dX;->qB:Lcom/android/settings/MiuiSecurityBluetoothDeviceInfoFragment;
+    iget-object v0, p0, Lcom/android/settings_ext/dX;->qB:Lcom/android/settings_ext/MiuiSecurityBluetoothDeviceInfoFragment;
 
     const/4 v1, 0x0
 
-    invoke-static {v0, v1}, Lcom/android/settings/MiuiSecurityBluetoothDeviceInfoFragment;->a(Lcom/android/settings/MiuiSecurityBluetoothDeviceInfoFragment;Z)Z
+    invoke-static {v0, v1}, Lcom/android/settings_ext/MiuiSecurityBluetoothDeviceInfoFragment;->a(Lcom/android/settings_ext/MiuiSecurityBluetoothDeviceInfoFragment;Z)Z
 
     goto :goto_0
 .end method

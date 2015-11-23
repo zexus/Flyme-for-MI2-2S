@@ -1,4 +1,4 @@
-.class public Lcom/android/settings/display/t;
+.class public Lcom/android/settings_ext/display/t;
 .super Landroid/app/DialogFragment;
 .source "PageLayoutFragment.java"
 
@@ -17,13 +17,13 @@
 
     .prologue
     .line 612
-    const-class v0, Lcom/android/settings/display/t;
+    const-class v0, Lcom/android/settings_ext/display/t;
 
     invoke-virtual {v0}, Ljava/lang/Class;->getName()Ljava/lang/String;
 
     move-result-object v0
 
-    sput-object v0, Lcom/android/settings/display/t;->Vy:Ljava/lang/String;
+    sput-object v0, Lcom/android/settings_ext/display/t;->Vy:Ljava/lang/String;
 
     return-void
 .end method
@@ -38,12 +38,12 @@
     return-void
 .end method
 
-.method static synthetic a(Lcom/android/settings/display/t;)I
+.method static synthetic a(Lcom/android/settings_ext/display/t;)I
     .locals 1
 
     .prologue
     .line 611
-    iget v0, p0, Lcom/android/settings/display/t;->Vz:I
+    iget v0, p0, Lcom/android/settings_ext/display/t;->Vz:I
 
     return v0
 .end method
@@ -53,7 +53,7 @@
 
     .prologue
     .line 611
-    sget-object v0, Lcom/android/settings/display/t;->Vy:Ljava/lang/String;
+    sget-object v0, Lcom/android/settings_ext/display/t;->Vy:Ljava/lang/String;
 
     return-object v0
 .end method
@@ -65,7 +65,7 @@
 
     .prologue
     .line 632
-    iput p1, p0, Lcom/android/settings/display/t;->Vz:I
+    iput p1, p0, Lcom/android/settings_ext/display/t;->Vz:I
 
     .line 633
     return-void
@@ -88,7 +88,7 @@
 
     move-result v0
 
-    iput v0, p0, Lcom/android/settings/display/t;->Vz:I
+    iput v0, p0, Lcom/android/settings_ext/display/t;->Vz:I
 
     .line 623
     :cond_0
@@ -100,11 +100,11 @@
 
     .prologue
     .line 637
-    invoke-virtual {p0}, Lcom/android/settings/display/t;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/display/t;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
-    invoke-static {v0}, Lcom/android/settings/display/PageLayoutFragment;->aH(Landroid/content/Context;)Z
+    invoke-static {v0}, Lcom/android/settings_ext/display/PageLayoutFragment;->aH(Landroid/content/Context;)Z
 
     move-result v0
 
@@ -116,7 +116,7 @@
     :goto_0
     new-instance v2, Lmiui/app/AlertDialog$Builder;
 
-    invoke-virtual {p0}, Lcom/android/settings/display/t;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/display/t;->getActivity()Landroid/app/Activity;
 
     move-result-object v1
 
@@ -138,9 +138,9 @@
     .line 642
     const v1, 0x104000a
 
-    new-instance v3, Lcom/android/settings/display/u;
+    new-instance v3, Lcom/android/settings_ext/display/u;
 
-    invoke-direct {v3, p0, v0}, Lcom/android/settings/display/u;-><init>(Lcom/android/settings/display/t;Z)V
+    invoke-direct {v3, p0, v0}, Lcom/android/settings_ext/display/u;-><init>(Lcom/android/settings_ext/display/t;Z)V
 
     invoke-virtual {v2, v1, v3}, Lmiui/app/AlertDialog$Builder;->setPositiveButton(ILandroid/content/DialogInterface$OnClickListener;)Lmiui/app/AlertDialog$Builder;
 
@@ -181,7 +181,7 @@
     .line 628
     const-string v0, "com.android.settings.display.PageLayoutFragment:STATE_UI_MODE"
 
-    iget v1, p0, Lcom/android/settings/display/t;->Vz:I
+    iget v1, p0, Lcom/android/settings_ext/display/t;->Vz:I
 
     invoke-virtual {p1, v0, v1}, Landroid/os/Bundle;->putInt(Ljava/lang/String;I)V
 

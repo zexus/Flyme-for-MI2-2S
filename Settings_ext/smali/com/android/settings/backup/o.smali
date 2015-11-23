@@ -1,4 +1,4 @@
-.class public interface abstract Lcom/android/settings/backup/o;
+.class public interface abstract Lcom/android/settings_ext/backup/o;
 .super Ljava/lang/Object;
 
 # interfaces

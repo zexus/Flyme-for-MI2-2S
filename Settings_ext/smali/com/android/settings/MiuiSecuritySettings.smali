@@ -1,5 +1,5 @@
-.class public Lcom/android/settings/MiuiSecuritySettings;
-.super Lcom/android/settings/SettingsPreferenceFragment;
+.class public Lcom/android/settings_ext/MiuiSecuritySettings;
+.super Lcom/android/settings_ext/SettingsPreferenceFragment;
 .source "MiuiSecuritySettings.java"
 
 # interfaces
@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field private cH:Lcom/android/settings/ap;
+.field private cH:Lcom/android/settings_ext/ap;
 
 .field private cI:Landroid/app/admin/DevicePolicyManager;
 
@@ -26,7 +26,7 @@
 
     .prologue
     .line 40
-    invoke-direct {p0}, Lcom/android/settings/SettingsPreferenceFragment;-><init>()V
+    invoke-direct {p0}, Lcom/android/settings_ext/SettingsPreferenceFragment;-><init>()V
 
     return-void
 .end method
@@ -36,18 +36,18 @@
 
     .prologue
     .line 199
-    iget-object v0, p0, Lcom/android/settings/MiuiSecuritySettings;->ri:Landroid/preference/CheckBoxPreference;
+    iget-object v0, p0, Lcom/android/settings_ext/MiuiSecuritySettings;->ri:Landroid/preference/CheckBoxPreference;
 
     if-eqz v0, :cond_0
 
     .line 200
-    iget-object v0, p0, Lcom/android/settings/MiuiSecuritySettings;->ri:Landroid/preference/CheckBoxPreference;
+    iget-object v0, p0, Lcom/android/settings_ext/MiuiSecuritySettings;->ri:Landroid/preference/CheckBoxPreference;
 
     invoke-virtual {v0, p1}, Landroid/preference/CheckBoxPreference;->setChecked(Z)V
 
     .line 202
     :cond_0
-    invoke-direct {p0, p1}, Lcom/android/settings/MiuiSecuritySettings;->y(Z)V
+    invoke-direct {p0, p1}, Lcom/android/settings_ext/MiuiSecuritySettings;->y(Z)V
 
     .line 203
     return-void
@@ -127,9 +127,9 @@
 
     .prologue
     .line 206
-    iget-object v0, p0, Lcom/android/settings/MiuiSecuritySettings;->cH:Lcom/android/settings/ap;
+    iget-object v0, p0, Lcom/android/settings_ext/MiuiSecuritySettings;->cH:Lcom/android/settings_ext/ap;
 
-    invoke-virtual {v0}, Lcom/android/settings/ap;->at()Lcom/android/internal/widget/LockPatternUtils;
+    invoke-virtual {v0}, Lcom/android/settings_ext/ap;->at()Lcom/android/internal/widget/LockPatternUtils;
 
     move-result-object v0
 
@@ -179,7 +179,7 @@
 
     .prologue
     .line 256
-    invoke-virtual {p0}, Lcom/android/settings/MiuiSecuritySettings;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/settings_ext/MiuiSecuritySettings;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v0
 
@@ -192,7 +192,7 @@
     move-result-wide v0
 
     .line 258
-    iget-object v2, p0, Lcom/android/settings/MiuiSecuritySettings;->rg:Landroid/preference/ListPreference;
+    iget-object v2, p0, Lcom/android/settings_ext/MiuiSecuritySettings;->rg:Landroid/preference/ListPreference;
 
     invoke-static {v0, v1}, Ljava/lang/String;->valueOf(J)Ljava/lang/String;
 
@@ -201,12 +201,12 @@
     invoke-virtual {v2, v0}, Landroid/preference/ListPreference;->setValue(Ljava/lang/String;)V
 
     .line 259
-    iget-object v0, p0, Lcom/android/settings/MiuiSecuritySettings;->rg:Landroid/preference/ListPreference;
+    iget-object v0, p0, Lcom/android/settings_ext/MiuiSecuritySettings;->rg:Landroid/preference/ListPreference;
 
     invoke-virtual {v0, p0}, Landroid/preference/ListPreference;->setOnPreferenceChangeListener(Landroid/preference/Preference$OnPreferenceChangeListener;)V
 
     .line 260
-    invoke-direct {p0}, Lcom/android/settings/MiuiSecuritySettings;->fo()V
+    invoke-direct {p0}, Lcom/android/settings_ext/MiuiSecuritySettings;->fo()V
 
     .line 261
     return-void
@@ -217,7 +217,7 @@
 
     .prologue
     .line 264
-    invoke-virtual {p0}, Lcom/android/settings/MiuiSecuritySettings;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/settings_ext/MiuiSecuritySettings;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v0
 
@@ -230,7 +230,7 @@
     move-result-wide v2
 
     .line 266
-    iget-object v1, p0, Lcom/android/settings/MiuiSecuritySettings;->rg:Landroid/preference/ListPreference;
+    iget-object v1, p0, Lcom/android/settings_ext/MiuiSecuritySettings;->rg:Landroid/preference/ListPreference;
 
     .line 268
     const-wide/16 v4, 0x0
@@ -253,7 +253,7 @@
     .line 281
     const v0, 0x7f090af4
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/MiuiSecuritySettings;->getString(I)Ljava/lang/String;
+    invoke-virtual {p0, v0}, Lcom/android/settings_ext/MiuiSecuritySettings;->getString(I)Ljava/lang/String;
 
     move-result-object v0
 
@@ -297,7 +297,7 @@
 
     const/4 v6, 0x0
 
-    invoke-direct {p0, v1, v2, v3}, Lcom/android/settings/MiuiSecuritySettings;->a(Landroid/preference/ListPreference;J)Ljava/lang/CharSequence;
+    invoke-direct {p0, v1, v2, v3}, Lcom/android/settings_ext/MiuiSecuritySettings;->a(Landroid/preference/ListPreference;J)Ljava/lang/CharSequence;
 
     move-result-object v7
 
@@ -319,7 +319,7 @@
     const/4 v1, 0x0
 
     .line 300
-    invoke-virtual {p0}, Lcom/android/settings/MiuiSecuritySettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/MiuiSecuritySettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
@@ -358,14 +358,14 @@
 
     .line 307
     :cond_1
-    iget-object v0, p0, Lcom/android/settings/MiuiSecuritySettings;->rg:Landroid/preference/ListPreference;
+    iget-object v0, p0, Lcom/android/settings_ext/MiuiSecuritySettings;->rg:Landroid/preference/ListPreference;
 
     invoke-virtual {v0}, Landroid/preference/ListPreference;->getEntries()[Ljava/lang/CharSequence;
 
     move-result-object v4
 
     .line 308
-    iget-object v0, p0, Lcom/android/settings/MiuiSecuritySettings;->rg:Landroid/preference/ListPreference;
+    iget-object v0, p0, Lcom/android/settings_ext/MiuiSecuritySettings;->rg:Landroid/preference/ListPreference;
 
     invoke-virtual {v0}, Landroid/preference/ListPreference;->getEntryValues()[Ljava/lang/CharSequence;
 
@@ -441,7 +441,7 @@
 
     .line 319
     :cond_4
-    iget-object v0, p0, Lcom/android/settings/MiuiSecuritySettings;->rg:Landroid/preference/ListPreference;
+    iget-object v0, p0, Lcom/android/settings_ext/MiuiSecuritySettings;->rg:Landroid/preference/ListPreference;
 
     invoke-virtual {v0}, Landroid/preference/ListPreference;->getValue()Ljava/lang/String;
 
@@ -452,7 +452,7 @@
     move-result v4
 
     .line 320
-    iget-object v5, p0, Lcom/android/settings/MiuiSecuritySettings;->rg:Landroid/preference/ListPreference;
+    iget-object v5, p0, Lcom/android/settings_ext/MiuiSecuritySettings;->rg:Landroid/preference/ListPreference;
 
     invoke-virtual {v6}, Ljava/util/ArrayList;->size()I
 
@@ -469,7 +469,7 @@
     invoke-virtual {v5, v0}, Landroid/preference/ListPreference;->setEntries([Ljava/lang/CharSequence;)V
 
     .line 322
-    iget-object v5, p0, Lcom/android/settings/MiuiSecuritySettings;->rg:Landroid/preference/ListPreference;
+    iget-object v5, p0, Lcom/android/settings_ext/MiuiSecuritySettings;->rg:Landroid/preference/ListPreference;
 
     invoke-virtual {v7}, Ljava/util/ArrayList;->size()I
 
@@ -493,7 +493,7 @@
     if-gtz v0, :cond_7
 
     .line 325
-    iget-object v0, p0, Lcom/android/settings/MiuiSecuritySettings;->rg:Landroid/preference/ListPreference;
+    iget-object v0, p0, Lcom/android/settings_ext/MiuiSecuritySettings;->rg:Landroid/preference/ListPreference;
 
     invoke-static {v4}, Ljava/lang/String;->valueOf(I)Ljava/lang/String;
 
@@ -504,7 +504,7 @@
     .line 337
     :cond_5
     :goto_3
-    iget-object v0, p0, Lcom/android/settings/MiuiSecuritySettings;->rg:Landroid/preference/ListPreference;
+    iget-object v0, p0, Lcom/android/settings_ext/MiuiSecuritySettings;->rg:Landroid/preference/ListPreference;
 
     invoke-virtual {v6}, Ljava/util/ArrayList;->size()I
 
@@ -552,7 +552,7 @@
     if-nez v0, :cond_5
 
     .line 330
-    iget-object v0, p0, Lcom/android/settings/MiuiSecuritySettings;->rg:Landroid/preference/ListPreference;
+    iget-object v0, p0, Lcom/android/settings_ext/MiuiSecuritySettings;->rg:Landroid/preference/ListPreference;
 
     invoke-static {v2, v3}, Ljava/lang/String;->valueOf(J)Ljava/lang/String;
 
@@ -568,7 +568,7 @@
 
     .prologue
     .line 193
-    invoke-virtual {p0}, Lcom/android/settings/MiuiSecuritySettings;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/settings_ext/MiuiSecuritySettings;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v0
 
@@ -587,29 +587,29 @@
 
     .prologue
     .line 66
-    invoke-super {p0, p1}, Lcom/android/settings/SettingsPreferenceFragment;->onCreate(Landroid/os/Bundle;)V
+    invoke-super {p0, p1}, Lcom/android/settings_ext/SettingsPreferenceFragment;->onCreate(Landroid/os/Bundle;)V
 
     .line 67
-    new-instance v0, Lcom/android/settings/ap;
+    new-instance v0, Lcom/android/settings_ext/ap;
 
-    invoke-virtual {p0}, Lcom/android/settings/MiuiSecuritySettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/MiuiSecuritySettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v1
 
-    invoke-direct {v0, v1}, Lcom/android/settings/ap;-><init>(Landroid/app/Activity;)V
+    invoke-direct {v0, v1}, Lcom/android/settings_ext/ap;-><init>(Landroid/app/Activity;)V
 
-    iput-object v0, p0, Lcom/android/settings/MiuiSecuritySettings;->cH:Lcom/android/settings/ap;
+    iput-object v0, p0, Lcom/android/settings_ext/MiuiSecuritySettings;->cH:Lcom/android/settings_ext/ap;
 
     .line 68
     const-string v0, "device_policy"
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/MiuiSecuritySettings;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
+    invoke-virtual {p0, v0}, Lcom/android/settings_ext/MiuiSecuritySettings;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object v0
 
     check-cast v0, Landroid/app/admin/DevicePolicyManager;
 
-    iput-object v0, p0, Lcom/android/settings/MiuiSecuritySettings;->cI:Landroid/app/admin/DevicePolicyManager;
+    iput-object v0, p0, Lcom/android/settings_ext/MiuiSecuritySettings;->cI:Landroid/app/admin/DevicePolicyManager;
 
     .line 69
     return-void
@@ -620,11 +620,11 @@
 
     .prologue
     .line 74
-    invoke-virtual {p0}, Lcom/android/settings/MiuiSecuritySettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/MiuiSecuritySettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
-    instance-of v0, v0, Lcom/android/settings/MiuiPasswordGuardActivity;
+    instance-of v0, v0, Lcom/android/settings_ext/MiuiPasswordGuardActivity;
 
     if-eqz v0, :cond_0
 
@@ -642,7 +642,7 @@
     return-object v0
 
     :cond_0
-    invoke-super {p0, p1, p2, p3}, Lcom/android/settings/SettingsPreferenceFragment;->onInflateView(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;
+    invoke-super {p0, p1, p2, p3}, Lcom/android/settings_ext/SettingsPreferenceFragment;->onInflateView(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;
 
     move-result-object v0
 
@@ -654,7 +654,7 @@
 
     .prologue
     .line 342
-    iget-object v0, p0, Lcom/android/settings/MiuiSecuritySettings;->rg:Landroid/preference/ListPreference;
+    iget-object v0, p0, Lcom/android/settings_ext/MiuiSecuritySettings;->rg:Landroid/preference/ListPreference;
 
     if-ne p1, v0, :cond_0
 
@@ -667,7 +667,7 @@
 
     .line 345
     :try_start_0
-    invoke-virtual {p0}, Lcom/android/settings/MiuiSecuritySettings;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/settings_ext/MiuiSecuritySettings;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v1
 
@@ -676,7 +676,7 @@
     invoke-static {v1, v2, v0}, Landroid/provider/Settings$System;->putInt(Landroid/content/ContentResolver;Ljava/lang/String;I)Z
 
     .line 347
-    invoke-direct {p0}, Lcom/android/settings/MiuiSecuritySettings;->fn()V
+    invoke-direct {p0}, Lcom/android/settings_ext/MiuiSecuritySettings;->fn()V
     :try_end_0
     .catch Ljava/lang/NumberFormatException; {:try_start_0 .. :try_end_0} :catch_0
 
@@ -717,30 +717,30 @@
     move-result-object v0
 
     .line 219
-    iget-object v1, p0, Lcom/android/settings/MiuiSecuritySettings;->cH:Lcom/android/settings/ap;
+    iget-object v1, p0, Lcom/android/settings_ext/MiuiSecuritySettings;->cH:Lcom/android/settings_ext/ap;
 
-    invoke-virtual {v1}, Lcom/android/settings/ap;->at()Lcom/android/internal/widget/LockPatternUtils;
+    invoke-virtual {v1}, Lcom/android/settings_ext/ap;->at()Lcom/android/internal/widget/LockPatternUtils;
 
     move-result-object v1
 
     .line 220
-    iget-object v2, p0, Lcom/android/settings/MiuiSecuritySettings;->ri:Landroid/preference/CheckBoxPreference;
+    iget-object v2, p0, Lcom/android/settings_ext/MiuiSecuritySettings;->ri:Landroid/preference/CheckBoxPreference;
 
     if-ne p2, v2, :cond_1
 
     .line 221
-    iget-object v0, p0, Lcom/android/settings/MiuiSecuritySettings;->ri:Landroid/preference/CheckBoxPreference;
+    iget-object v0, p0, Lcom/android/settings_ext/MiuiSecuritySettings;->ri:Landroid/preference/CheckBoxPreference;
 
     invoke-virtual {v0}, Landroid/preference/CheckBoxPreference;->isChecked()Z
 
     move-result v0
 
-    invoke-direct {p0, v0}, Lcom/android/settings/MiuiSecuritySettings;->y(Z)V
+    invoke-direct {p0, v0}, Lcom/android/settings_ext/MiuiSecuritySettings;->y(Z)V
 
     .line 247
     :cond_0
     :goto_0
-    invoke-super {p0, p1, p2}, Lcom/android/settings/SettingsPreferenceFragment;->onPreferenceTreeClick(Landroid/preference/PreferenceScreen;Landroid/preference/Preference;)Z
+    invoke-super {p0, p1, p2}, Lcom/android/settings_ext/SettingsPreferenceFragment;->onPreferenceTreeClick(Landroid/preference/PreferenceScreen;Landroid/preference/Preference;)Z
 
     move-result v0
 
@@ -757,7 +757,7 @@
     if-eqz v2, :cond_3
 
     .line 223
-    iget-boolean v0, p0, Lcom/android/settings/MiuiSecuritySettings;->rj:Z
+    iget-boolean v0, p0, Lcom/android/settings_ext/MiuiSecuritySettings;->rj:Z
 
     if-eqz v0, :cond_2
 
@@ -771,7 +771,7 @@
 
     move-object v1, p0
 
-    invoke-virtual/range {v0 .. v5}, Lcom/android/settings/MiuiSecuritySettings;->a(Landroid/app/Fragment;Ljava/lang/String;ILandroid/os/Bundle;I)Z
+    invoke-virtual/range {v0 .. v5}, Lcom/android/settings_ext/MiuiSecuritySettings;->a(Landroid/app/Fragment;Ljava/lang/String;ILandroid/os/Bundle;I)Z
 
     goto :goto_0
 
@@ -792,7 +792,7 @@
     if-eqz v2, :cond_4
 
     .line 228
-    invoke-direct {p0, p2}, Lcom/android/settings/MiuiSecuritySettings;->e(Landroid/preference/Preference;)Z
+    invoke-direct {p0, p2}, Lcom/android/settings_ext/MiuiSecuritySettings;->e(Landroid/preference/Preference;)Z
 
     move-result v0
 
@@ -811,7 +811,7 @@
     if-eqz v2, :cond_5
 
     .line 230
-    invoke-direct {p0, p2}, Lcom/android/settings/MiuiSecuritySettings;->e(Landroid/preference/Preference;)Z
+    invoke-direct {p0, p2}, Lcom/android/settings_ext/MiuiSecuritySettings;->e(Landroid/preference/Preference;)Z
 
     move-result v0
 
@@ -838,7 +838,7 @@
 
     move-object v1, p0
 
-    invoke-virtual/range {v0 .. v5}, Lcom/android/settings/MiuiSecuritySettings;->a(Landroid/app/Fragment;Ljava/lang/String;ILandroid/os/Bundle;I)Z
+    invoke-virtual/range {v0 .. v5}, Lcom/android/settings_ext/MiuiSecuritySettings;->a(Landroid/app/Fragment;Ljava/lang/String;ILandroid/os/Bundle;I)Z
 
     goto :goto_0
 
@@ -861,7 +861,7 @@
 
     move-object v1, p0
 
-    invoke-virtual/range {v0 .. v5}, Lcom/android/settings/MiuiSecuritySettings;->a(Landroid/app/Fragment;Ljava/lang/String;ILandroid/os/Bundle;I)Z
+    invoke-virtual/range {v0 .. v5}, Lcom/android/settings_ext/MiuiSecuritySettings;->a(Landroid/app/Fragment;Ljava/lang/String;ILandroid/os/Bundle;I)Z
 
     goto :goto_0
 
@@ -898,7 +898,7 @@
 
     move v5, v6
 
-    invoke-virtual/range {v0 .. v5}, Lcom/android/settings/MiuiSecuritySettings;->a(Landroid/app/Fragment;Ljava/lang/String;ILandroid/os/Bundle;I)Z
+    invoke-virtual/range {v0 .. v5}, Lcom/android/settings_ext/MiuiSecuritySettings;->a(Landroid/app/Fragment;Ljava/lang/String;ILandroid/os/Bundle;I)Z
 
     goto/16 :goto_0
 
@@ -913,7 +913,7 @@
     if-eqz v0, :cond_0
 
     .line 242
-    invoke-virtual {p0}, Lcom/android/settings/MiuiSecuritySettings;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/settings_ext/MiuiSecuritySettings;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v1
 
@@ -941,10 +941,10 @@
     const/4 v2, 0x0
 
     .line 84
-    invoke-super {p0}, Lcom/android/settings/SettingsPreferenceFragment;->onResume()V
+    invoke-super {p0}, Lcom/android/settings_ext/SettingsPreferenceFragment;->onResume()V
 
     .line 87
-    invoke-virtual {p0}, Lcom/android/settings/MiuiSecuritySettings;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
+    invoke-virtual {p0}, Lcom/android/settings_ext/MiuiSecuritySettings;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
 
     move-result-object v0
 
@@ -958,17 +958,17 @@
     :cond_0
     const v0, 0x7f06006c
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/MiuiSecuritySettings;->addPreferencesFromResource(I)V
+    invoke-virtual {p0, v0}, Lcom/android/settings_ext/MiuiSecuritySettings;->addPreferencesFromResource(I)V
 
     .line 92
-    invoke-virtual {p0}, Lcom/android/settings/MiuiSecuritySettings;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
+    invoke-virtual {p0}, Lcom/android/settings_ext/MiuiSecuritySettings;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
 
     move-result-object v3
 
     .line 93
     const v0, 0x7f060072
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/MiuiSecuritySettings;->addPreferencesFromResource(I)V
+    invoke-virtual {p0, v0}, Lcom/android/settings_ext/MiuiSecuritySettings;->addPreferencesFromResource(I)V
 
     .line 96
     const-string v0, "power_button_instantly_locks"
@@ -979,7 +979,7 @@
 
     check-cast v0, Landroid/preference/CheckBoxPreference;
 
-    iput-object v0, p0, Lcom/android/settings/MiuiSecuritySettings;->rh:Landroid/preference/CheckBoxPreference;
+    iput-object v0, p0, Lcom/android/settings_ext/MiuiSecuritySettings;->rh:Landroid/preference/CheckBoxPreference;
 
     .line 100
     const-string v0, "screen_timeout"
@@ -990,18 +990,18 @@
 
     check-cast v0, Landroid/preference/ListPreference;
 
-    iput-object v0, p0, Lcom/android/settings/MiuiSecuritySettings;->rg:Landroid/preference/ListPreference;
+    iput-object v0, p0, Lcom/android/settings_ext/MiuiSecuritySettings;->rg:Landroid/preference/ListPreference;
 
     .line 101
-    iget-object v0, p0, Lcom/android/settings/MiuiSecuritySettings;->rg:Landroid/preference/ListPreference;
+    iget-object v0, p0, Lcom/android/settings_ext/MiuiSecuritySettings;->rg:Landroid/preference/ListPreference;
 
     if-eqz v0, :cond_1
 
     .line 102
-    invoke-direct {p0}, Lcom/android/settings/MiuiSecuritySettings;->fm()V
+    invoke-direct {p0}, Lcom/android/settings_ext/MiuiSecuritySettings;->fm()V
 
     .line 103
-    invoke-direct {p0}, Lcom/android/settings/MiuiSecuritySettings;->fn()V
+    invoke-direct {p0}, Lcom/android/settings_ext/MiuiSecuritySettings;->fn()V
 
     .line 106
     :cond_1
@@ -1013,10 +1013,10 @@
 
     check-cast v0, Landroid/preference/CheckBoxPreference;
 
-    iput-object v0, p0, Lcom/android/settings/MiuiSecuritySettings;->ri:Landroid/preference/CheckBoxPreference;
+    iput-object v0, p0, Lcom/android/settings_ext/MiuiSecuritySettings;->ri:Landroid/preference/CheckBoxPreference;
 
     .line 107
-    invoke-virtual {p0}, Lcom/android/settings/MiuiSecuritySettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/MiuiSecuritySettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
@@ -1036,36 +1036,36 @@
     .line 109
     const-string v0, "security_category"
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/MiuiSecuritySettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v0}, Lcom/android/settings_ext/MiuiSecuritySettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v0
 
     check-cast v0, Landroid/preference/PreferenceCategory;
 
-    iget-object v3, p0, Lcom/android/settings/MiuiSecuritySettings;->ri:Landroid/preference/CheckBoxPreference;
+    iget-object v3, p0, Lcom/android/settings_ext/MiuiSecuritySettings;->ri:Landroid/preference/CheckBoxPreference;
 
     invoke-virtual {v0, v3}, Landroid/preference/PreferenceCategory;->removePreference(Landroid/preference/Preference;)Z
 
     .line 110
     const/4 v0, 0x0
 
-    iput-object v0, p0, Lcom/android/settings/MiuiSecuritySettings;->ri:Landroid/preference/CheckBoxPreference;
+    iput-object v0, p0, Lcom/android/settings_ext/MiuiSecuritySettings;->ri:Landroid/preference/CheckBoxPreference;
 
     .line 118
     :goto_0
-    iget-object v0, p0, Lcom/android/settings/MiuiSecuritySettings;->cH:Lcom/android/settings/ap;
+    iget-object v0, p0, Lcom/android/settings_ext/MiuiSecuritySettings;->cH:Lcom/android/settings_ext/ap;
 
-    invoke-virtual {v0}, Lcom/android/settings/ap;->at()Lcom/android/internal/widget/LockPatternUtils;
+    invoke-virtual {v0}, Lcom/android/settings_ext/ap;->at()Lcom/android/internal/widget/LockPatternUtils;
 
     move-result-object v0
 
     .line 119
-    iget-object v3, p0, Lcom/android/settings/MiuiSecuritySettings;->rh:Landroid/preference/CheckBoxPreference;
+    iget-object v3, p0, Lcom/android/settings_ext/MiuiSecuritySettings;->rh:Landroid/preference/CheckBoxPreference;
 
     if-eqz v3, :cond_2
 
     .line 120
-    iget-object v3, p0, Lcom/android/settings/MiuiSecuritySettings;->rh:Landroid/preference/CheckBoxPreference;
+    iget-object v3, p0, Lcom/android/settings_ext/MiuiSecuritySettings;->rh:Landroid/preference/CheckBoxPreference;
 
     invoke-virtual {v0}, Lcom/android/internal/widget/LockPatternUtils;->getPowerButtonInstantlyLocks()Z
 
@@ -1076,51 +1076,51 @@
     .line 121
     const-string v0, "security_category"
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/MiuiSecuritySettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v0}, Lcom/android/settings_ext/MiuiSecuritySettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v0
 
     check-cast v0, Landroid/preference/PreferenceCategory;
 
-    iget-object v3, p0, Lcom/android/settings/MiuiSecuritySettings;->rh:Landroid/preference/CheckBoxPreference;
+    iget-object v3, p0, Lcom/android/settings_ext/MiuiSecuritySettings;->rh:Landroid/preference/CheckBoxPreference;
 
     invoke-virtual {v0, v3}, Landroid/preference/PreferenceCategory;->removePreference(Landroid/preference/Preference;)Z
 
     .line 124
     :cond_2
-    invoke-virtual {p0}, Lcom/android/settings/MiuiSecuritySettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/MiuiSecuritySettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
-    instance-of v0, v0, Lcom/android/settings/MiuiPasswordGuardActivity;
+    instance-of v0, v0, Lcom/android/settings_ext/MiuiPasswordGuardActivity;
 
     if-eqz v0, :cond_3
 
     .line 129
     :cond_3
-    new-instance v0, Lcom/android/settings/cu;
+    new-instance v0, Lcom/android/settings_ext/cu;
 
-    invoke-virtual {p0}, Lcom/android/settings/MiuiSecuritySettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/MiuiSecuritySettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v3
 
-    invoke-direct {v0, v3}, Lcom/android/settings/cu;-><init>(Landroid/content/Context;)V
+    invoke-direct {v0, v3}, Lcom/android/settings_ext/cu;-><init>(Landroid/content/Context;)V
 
     .line 130
-    invoke-virtual {v0}, Lcom/android/settings/cu;->dD()Z
+    invoke-virtual {v0}, Lcom/android/settings_ext/cu;->dD()Z
 
     move-result v0
 
-    iput-boolean v0, p0, Lcom/android/settings/MiuiSecuritySettings;->rj:Z
+    iput-boolean v0, p0, Lcom/android/settings_ext/MiuiSecuritySettings;->rj:Z
 
     .line 131
     const-string v0, "unlock_set_or_change"
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/MiuiSecuritySettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v0}, Lcom/android/settings_ext/MiuiSecuritySettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v3
 
-    iget-boolean v0, p0, Lcom/android/settings/MiuiSecuritySettings;->rj:Z
+    iget-boolean v0, p0, Lcom/android/settings_ext/MiuiSecuritySettings;->rj:Z
 
     if-eqz v0, :cond_8
 
@@ -1130,7 +1130,7 @@
     invoke-virtual {v3, v0}, Landroid/preference/Preference;->setTitle(I)V
 
     .line 135
-    invoke-direct {p0}, Lcom/android/settings/MiuiSecuritySettings;->fl()Z
+    invoke-direct {p0}, Lcom/android/settings_ext/MiuiSecuritySettings;->fl()Z
 
     move-result v0
 
@@ -1139,19 +1139,19 @@
     .line 136
     const-string v0, "bluetooth_unlock"
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/MiuiSecuritySettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v0}, Lcom/android/settings_ext/MiuiSecuritySettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v0
 
     invoke-virtual {v0, v2}, Landroid/preference/Preference;->setEnabled(Z)V
 
     .line 137
-    iget-object v0, p0, Lcom/android/settings/MiuiSecuritySettings;->ri:Landroid/preference/CheckBoxPreference;
+    iget-object v0, p0, Lcom/android/settings_ext/MiuiSecuritySettings;->ri:Landroid/preference/CheckBoxPreference;
 
     if-eqz v0, :cond_4
 
     .line 138
-    iget-object v0, p0, Lcom/android/settings/MiuiSecuritySettings;->ri:Landroid/preference/CheckBoxPreference;
+    iget-object v0, p0, Lcom/android/settings_ext/MiuiSecuritySettings;->ri:Landroid/preference/CheckBoxPreference;
 
     invoke-virtual {v0, v1}, Landroid/preference/CheckBoxPreference;->setEnabled(Z)V
 
@@ -1160,7 +1160,7 @@
     :goto_2
     const-string v0, "smartcover_sensitive"
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/MiuiSecuritySettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v0}, Lcom/android/settings_ext/MiuiSecuritySettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v3
 
@@ -1176,7 +1176,7 @@
     .line 157
     const-string v0, "security_second_category"
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/MiuiSecuritySettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v0}, Lcom/android/settings_ext/MiuiSecuritySettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v0
 
@@ -1196,7 +1196,7 @@
     .line 159
     new-instance v3, Landroid/preference/CheckBoxPreference;
 
-    invoke-virtual {p0}, Lcom/android/settings/MiuiSecuritySettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/MiuiSecuritySettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
@@ -1226,16 +1226,16 @@
     invoke-virtual {v3, v2}, Landroid/preference/CheckBoxPreference;->setChecked(Z)V
 
     .line 165
-    new-instance v0, Lcom/android/settings/er;
+    new-instance v0, Lcom/android/settings_ext/er;
 
-    invoke-direct {v0, p0, v3}, Lcom/android/settings/er;-><init>(Lcom/android/settings/MiuiSecuritySettings;Landroid/preference/CheckBoxPreference;)V
+    invoke-direct {v0, p0, v3}, Lcom/android/settings_ext/er;-><init>(Lcom/android/settings_ext/MiuiSecuritySettings;Landroid/preference/CheckBoxPreference;)V
 
     invoke-virtual {v3, v0}, Landroid/preference/CheckBoxPreference;->setOnPreferenceClickListener(Landroid/preference/Preference$OnPreferenceClickListener;)V
 
     .line 173
     const-string v0, "security_second_category"
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/MiuiSecuritySettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v0}, Lcom/android/settings_ext/MiuiSecuritySettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v0
 
@@ -1247,7 +1247,7 @@
     :cond_6
     new-instance v0, Landroid/security/MiuiLockPatternUtils;
 
-    invoke-virtual {p0}, Lcom/android/settings/MiuiSecuritySettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/MiuiSecuritySettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v2
 
@@ -1263,7 +1263,7 @@
     .line 179
     const-string v0, "bluetooth_unlock"
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/MiuiSecuritySettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v0}, Lcom/android/settings_ext/MiuiSecuritySettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v0
 
@@ -1275,14 +1275,14 @@
     :goto_3
     const-string v0, "wakeup_for_keyguard_notification"
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/MiuiSecuritySettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v0}, Lcom/android/settings_ext/MiuiSecuritySettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v0
 
     check-cast v0, Landroid/preference/CheckBoxPreference;
 
     .line 186
-    invoke-virtual {p0}, Lcom/android/settings/MiuiSecuritySettings;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/settings_ext/MiuiSecuritySettings;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v2
 
@@ -1300,15 +1300,15 @@
 
     .line 113
     :cond_7
-    iget-object v0, p0, Lcom/android/settings/MiuiSecuritySettings;->ri:Landroid/preference/CheckBoxPreference;
+    iget-object v0, p0, Lcom/android/settings_ext/MiuiSecuritySettings;->ri:Landroid/preference/CheckBoxPreference;
 
-    invoke-virtual {p0}, Lcom/android/settings/MiuiSecuritySettings;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/settings_ext/MiuiSecuritySettings;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v3
 
     const-string v4, "enable_screen_on_proximity_sensor"
 
-    invoke-virtual {p0}, Lcom/android/settings/MiuiSecuritySettings;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {p0}, Lcom/android/settings_ext/MiuiSecuritySettings;->getResources()Landroid/content/res/Resources;
 
     move-result-object v5
 
@@ -1336,19 +1336,19 @@
     :cond_9
     const-string v0, "bluetooth_unlock"
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/MiuiSecuritySettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v0}, Lcom/android/settings_ext/MiuiSecuritySettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v0
 
     invoke-virtual {v0, v1}, Landroid/preference/Preference;->setEnabled(Z)V
 
     .line 142
-    iget-object v0, p0, Lcom/android/settings/MiuiSecuritySettings;->ri:Landroid/preference/CheckBoxPreference;
+    iget-object v0, p0, Lcom/android/settings_ext/MiuiSecuritySettings;->ri:Landroid/preference/CheckBoxPreference;
 
     if-eqz v0, :cond_4
 
     .line 143
-    invoke-virtual {p0}, Lcom/android/settings/MiuiSecuritySettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/MiuiSecuritySettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
@@ -1365,7 +1365,7 @@
     move-result v0
 
     .line 147
-    iget-object v3, p0, Lcom/android/settings/MiuiSecuritySettings;->ri:Landroid/preference/CheckBoxPreference;
+    iget-object v3, p0, Lcom/android/settings_ext/MiuiSecuritySettings;->ri:Landroid/preference/CheckBoxPreference;
 
     invoke-virtual {v3, v0}, Landroid/preference/CheckBoxPreference;->setEnabled(Z)V
 
@@ -1378,7 +1378,7 @@
     move v0, v1
 
     :goto_4
-    invoke-direct {p0, v0}, Lcom/android/settings/MiuiSecuritySettings;->C(Z)V
+    invoke-direct {p0, v0}, Lcom/android/settings_ext/MiuiSecuritySettings;->C(Z)V
 
     goto/16 :goto_2
 
@@ -1391,7 +1391,7 @@
     :cond_b
     const-string v0, "bluetooth_unlock"
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/MiuiSecuritySettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v0}, Lcom/android/settings_ext/MiuiSecuritySettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v0
 

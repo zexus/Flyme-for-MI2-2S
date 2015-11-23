@@ -1,19 +1,19 @@
-.class Lcom/android/settings/cr;
+.class Lcom/android/settings_ext/cr;
 .super Landroid/os/Handler;
 .source "FieldTestInfo.java"
 
 
 # instance fields
-.field final synthetic lx:Lcom/android/settings/FieldTestInfo;
+.field final synthetic lx:Lcom/android/settings_ext/FieldTestInfo;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/FieldTestInfo;)V
+.method constructor <init>(Lcom/android/settings_ext/FieldTestInfo;)V
     .locals 0
 
     .prologue
     .line 149
-    iput-object p1, p0, Lcom/android/settings/cr;->lx:Lcom/android/settings/FieldTestInfo;
+    iput-object p1, p0, Lcom/android/settings_ext/cr;->lx:Lcom/android/settings_ext/FieldTestInfo;
 
     invoke-direct {p0}, Landroid/os/Handler;-><init>()V
 

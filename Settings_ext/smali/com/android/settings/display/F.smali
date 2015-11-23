@@ -1,4 +1,4 @@
-.class Lcom/android/settings/display/F;
+.class Lcom/android/settings_ext/display/F;
 .super Ljava/lang/Object;
 .source "ResolutionListPreference.java"
 
@@ -9,18 +9,18 @@
 # instance fields
 .field final synthetic VS:Ljava/lang/String;
 
-.field final synthetic VT:Lcom/android/settings/display/ResolutionListPreference;
+.field final synthetic VT:Lcom/android/settings_ext/display/ResolutionListPreference;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/display/ResolutionListPreference;Ljava/lang/String;)V
+.method constructor <init>(Lcom/android/settings_ext/display/ResolutionListPreference;Ljava/lang/String;)V
     .locals 0
 
     .prologue
     .line 34
-    iput-object p1, p0, Lcom/android/settings/display/F;->VT:Lcom/android/settings/display/ResolutionListPreference;
+    iput-object p1, p0, Lcom/android/settings_ext/display/F;->VT:Lcom/android/settings_ext/display/ResolutionListPreference;
 
-    iput-object p2, p0, Lcom/android/settings/display/F;->VS:Ljava/lang/String;
+    iput-object p2, p0, Lcom/android/settings_ext/display/F;->VS:Ljava/lang/String;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -34,9 +34,9 @@
 
     .prologue
     .line 36
-    iget-object v0, p0, Lcom/android/settings/display/F;->VT:Lcom/android/settings/display/ResolutionListPreference;
+    iget-object v0, p0, Lcom/android/settings_ext/display/F;->VT:Lcom/android/settings_ext/display/ResolutionListPreference;
 
-    invoke-virtual {v0}, Lcom/android/settings/display/ResolutionListPreference;->getDialog()Landroid/app/Dialog;
+    invoke-virtual {v0}, Lcom/android/settings_ext/display/ResolutionListPreference;->getDialog()Landroid/app/Dialog;
 
     move-result-object v0
 
@@ -49,9 +49,9 @@
     move-result-object v0
 
     .line 38
-    iget-object v1, p0, Lcom/android/settings/display/F;->VT:Lcom/android/settings/display/ResolutionListPreference;
+    iget-object v1, p0, Lcom/android/settings_ext/display/F;->VT:Lcom/android/settings_ext/display/ResolutionListPreference;
 
-    invoke-virtual {v1}, Lcom/android/settings/display/ResolutionListPreference;->getEntryValues()[Ljava/lang/CharSequence;
+    invoke-virtual {v1}, Lcom/android/settings_ext/display/ResolutionListPreference;->getEntryValues()[Ljava/lang/CharSequence;
 
     move-result-object v1
 
@@ -62,7 +62,7 @@
     move-result-object v1
 
     .line 39
-    iget-object v2, p0, Lcom/android/settings/display/F;->VS:Ljava/lang/String;
+    iget-object v2, p0, Lcom/android/settings_ext/display/F;->VS:Ljava/lang/String;
 
     invoke-virtual {v1, v2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 

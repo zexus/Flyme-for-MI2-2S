@@ -1,10 +1,10 @@
-.class Lcom/android/settings/deviceinfo/MsdInstallPicker$MyAdapter;
+.class Lcom/android/settings_ext/deviceinfo/MsdInstallPicker$MyAdapter;
 .super Landroid/widget/BaseAdapter;
 .source "MsdInstallPicker.java"
 
 
 # instance fields
-.field final synthetic SK:Lcom/android/settings/deviceinfo/MsdInstallPicker;
+.field final synthetic SK:Lcom/android/settings_ext/deviceinfo/MsdInstallPicker;
 
 .field private SM:Ljava/util/ArrayList;
 
@@ -12,20 +12,20 @@
 
 
 # direct methods
-.method public constructor <init>(Lcom/android/settings/deviceinfo/MsdInstallPicker;Landroid/content/Context;Ljava/util/ArrayList;)V
+.method public constructor <init>(Lcom/android/settings_ext/deviceinfo/MsdInstallPicker;Landroid/content/Context;Ljava/util/ArrayList;)V
     .locals 0
 
     .prologue
     .line 82
-    iput-object p1, p0, Lcom/android/settings/deviceinfo/MsdInstallPicker$MyAdapter;->SK:Lcom/android/settings/deviceinfo/MsdInstallPicker;
+    iput-object p1, p0, Lcom/android/settings_ext/deviceinfo/MsdInstallPicker$MyAdapter;->SK:Lcom/android/settings_ext/deviceinfo/MsdInstallPicker;
 
     invoke-direct {p0}, Landroid/widget/BaseAdapter;-><init>()V
 
     .line 83
-    iput-object p2, p0, Lcom/android/settings/deviceinfo/MsdInstallPicker$MyAdapter;->mContext:Landroid/content/Context;
+    iput-object p2, p0, Lcom/android/settings_ext/deviceinfo/MsdInstallPicker$MyAdapter;->mContext:Landroid/content/Context;
 
     .line 84
-    iput-object p3, p0, Lcom/android/settings/deviceinfo/MsdInstallPicker$MyAdapter;->SM:Ljava/util/ArrayList;
+    iput-object p3, p0, Lcom/android/settings_ext/deviceinfo/MsdInstallPicker$MyAdapter;->SM:Ljava/util/ArrayList;
 
     .line 85
     return-void
@@ -33,18 +33,18 @@
 
 
 # virtual methods
-.method public bl(I)Lcom/android/settings/deviceinfo/MsdInstallPicker$Holder;
+.method public bl(I)Lcom/android/settings_ext/deviceinfo/MsdInstallPicker$Holder;
     .locals 1
 
     .prologue
     .line 94
-    iget-object v0, p0, Lcom/android/settings/deviceinfo/MsdInstallPicker$MyAdapter;->SM:Ljava/util/ArrayList;
+    iget-object v0, p0, Lcom/android/settings_ext/deviceinfo/MsdInstallPicker$MyAdapter;->SM:Ljava/util/ArrayList;
 
     invoke-virtual {v0, p1}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
 
     move-result-object v0
 
-    check-cast v0, Lcom/android/settings/deviceinfo/MsdInstallPicker$Holder;
+    check-cast v0, Lcom/android/settings_ext/deviceinfo/MsdInstallPicker$Holder;
 
     return-object v0
 .end method
@@ -54,7 +54,7 @@
 
     .prologue
     .line 89
-    iget-object v0, p0, Lcom/android/settings/deviceinfo/MsdInstallPicker$MyAdapter;->SM:Ljava/util/ArrayList;
+    iget-object v0, p0, Lcom/android/settings_ext/deviceinfo/MsdInstallPicker$MyAdapter;->SM:Ljava/util/ArrayList;
 
     invoke-virtual {v0}, Ljava/util/ArrayList;->size()I
 
@@ -68,7 +68,7 @@
 
     .prologue
     .line 78
-    invoke-virtual {p0, p1}, Lcom/android/settings/deviceinfo/MsdInstallPicker$MyAdapter;->bl(I)Lcom/android/settings/deviceinfo/MsdInstallPicker$Holder;
+    invoke-virtual {p0, p1}, Lcom/android/settings_ext/deviceinfo/MsdInstallPicker$MyAdapter;->bl(I)Lcom/android/settings_ext/deviceinfo/MsdInstallPicker$Holder;
 
     move-result-object v0
 
@@ -90,7 +90,7 @@
 
     .prologue
     .line 104
-    iget-object v0, p0, Lcom/android/settings/deviceinfo/MsdInstallPicker$MyAdapter;->mContext:Landroid/content/Context;
+    iget-object v0, p0, Lcom/android/settings_ext/deviceinfo/MsdInstallPicker$MyAdapter;->mContext:Landroid/content/Context;
 
     const-string v1, "layout_inflater"
 
@@ -113,7 +113,7 @@
 
     .line 110
     :goto_0
-    invoke-virtual {p0, p1}, Lcom/android/settings/deviceinfo/MsdInstallPicker$MyAdapter;->bl(I)Lcom/android/settings/deviceinfo/MsdInstallPicker$Holder;
+    invoke-virtual {p0, p1}, Lcom/android/settings_ext/deviceinfo/MsdInstallPicker$MyAdapter;->bl(I)Lcom/android/settings_ext/deviceinfo/MsdInstallPicker$Holder;
 
     move-result-object v2
 
@@ -125,7 +125,7 @@
     .line 112
     check-cast v0, Landroid/widget/RadioButton;
 
-    iget-object v3, v2, Lcom/android/settings/deviceinfo/MsdInstallPicker$Holder;->mText:Ljava/lang/String;
+    iget-object v3, v2, Lcom/android/settings_ext/deviceinfo/MsdInstallPicker$Holder;->mText:Ljava/lang/String;
 
     invoke-virtual {v0, v3}, Landroid/widget/RadioButton;->setText(Ljava/lang/CharSequence;)V
 
@@ -134,7 +134,7 @@
     .line 113
     check-cast v0, Landroid/widget/RadioButton;
 
-    iget-boolean v2, v2, Lcom/android/settings/deviceinfo/MsdInstallPicker$Holder;->SL:Z
+    iget-boolean v2, v2, Lcom/android/settings_ext/deviceinfo/MsdInstallPicker$Holder;->SL:Z
 
     invoke-virtual {v0, v2}, Landroid/widget/RadioButton;->setChecked(Z)V
 

@@ -1,4 +1,4 @@
-.class final Lcom/android/settings/notification/NotificationAppList$1;
+.class final Lcom/android/settings_ext/notification/NotificationAppList$1;
 .super Ljava/lang/Object;
 .source "NotificationAppList.java"
 
@@ -23,23 +23,23 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/notification/NotificationAppList$1;->sCollator:Ljava/text/Collator;
+    iput-object v0, p0, Lcom/android/settings_ext/notification/NotificationAppList$1;->sCollator:Ljava/text/Collator;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public a(Lcom/android/settings/notification/NotificationAppList$AppRow;Lcom/android/settings/notification/NotificationAppList$AppRow;)I
+.method public a(Lcom/android/settings_ext/notification/NotificationAppList$AppRow;Lcom/android/settings_ext/notification/NotificationAppList$AppRow;)I
     .locals 3
 
     .prologue
     .line 368
-    iget-object v0, p0, Lcom/android/settings/notification/NotificationAppList$1;->sCollator:Ljava/text/Collator;
+    iget-object v0, p0, Lcom/android/settings_ext/notification/NotificationAppList$1;->sCollator:Ljava/text/Collator;
 
-    iget-object v1, p1, Lcom/android/settings/notification/NotificationAppList$AppRow;->label:Ljava/lang/CharSequence;
+    iget-object v1, p1, Lcom/android/settings_ext/notification/NotificationAppList$AppRow;->label:Ljava/lang/CharSequence;
 
-    iget-object v2, p2, Lcom/android/settings/notification/NotificationAppList$AppRow;->label:Ljava/lang/CharSequence;
+    iget-object v2, p2, Lcom/android/settings_ext/notification/NotificationAppList$AppRow;->label:Ljava/lang/CharSequence;
 
     invoke-virtual {v0, v1, v2}, Ljava/text/Collator;->compare(Ljava/lang/Object;Ljava/lang/Object;)I
 
@@ -53,11 +53,11 @@
 
     .prologue
     .line 364
-    check-cast p1, Lcom/android/settings/notification/NotificationAppList$AppRow;
+    check-cast p1, Lcom/android/settings_ext/notification/NotificationAppList$AppRow;
 
-    check-cast p2, Lcom/android/settings/notification/NotificationAppList$AppRow;
+    check-cast p2, Lcom/android/settings_ext/notification/NotificationAppList$AppRow;
 
-    invoke-virtual {p0, p1, p2}, Lcom/android/settings/notification/NotificationAppList$1;->a(Lcom/android/settings/notification/NotificationAppList$AppRow;Lcom/android/settings/notification/NotificationAppList$AppRow;)I
+    invoke-virtual {p0, p1, p2}, Lcom/android/settings_ext/notification/NotificationAppList$1;->a(Lcom/android/settings_ext/notification/NotificationAppList$AppRow;Lcom/android/settings_ext/notification/NotificationAppList$AppRow;)I
 
     move-result v0
 

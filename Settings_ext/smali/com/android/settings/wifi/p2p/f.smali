@@ -1,4 +1,4 @@
-.class Lcom/android/settings/wifi/p2p/f;
+.class Lcom/android/settings_ext/wifi/p2p/f;
 .super Ljava/lang/Object;
 .source "WifiP2pSettings.java"
 
@@ -7,16 +7,16 @@
 
 
 # instance fields
-.field final synthetic azc:Lcom/android/settings/wifi/p2p/e;
+.field final synthetic azc:Lcom/android/settings_ext/wifi/p2p/e;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/wifi/p2p/e;)V
+.method constructor <init>(Lcom/android/settings_ext/wifi/p2p/e;)V
     .locals 0
 
     .prologue
     .line 261
-    iput-object p1, p0, Lcom/android/settings/wifi/p2p/f;->azc:Lcom/android/settings/wifi/p2p/e;
+    iput-object p1, p0, Lcom/android/settings_ext/wifi/p2p/f;->azc:Lcom/android/settings_ext/wifi/p2p/e;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -30,11 +30,11 @@
 
     .prologue
     .line 266
-    iget-object v0, p0, Lcom/android/settings/wifi/p2p/f;->azc:Lcom/android/settings/wifi/p2p/e;
+    iget-object v0, p0, Lcom/android/settings_ext/wifi/p2p/f;->azc:Lcom/android/settings_ext/wifi/p2p/e;
 
-    iget-object v0, v0, Lcom/android/settings/wifi/p2p/e;->azb:Lcom/android/settings/wifi/p2p/WifiP2pSettings;
+    iget-object v0, v0, Lcom/android/settings_ext/wifi/p2p/e;->azb:Lcom/android/settings_ext/wifi/p2p/WifiP2pSettings;
 
-    invoke-virtual {v0}, Lcom/android/settings/wifi/p2p/WifiP2pSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {v0}, Lcom/android/settings_ext/wifi/p2p/WifiP2pSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 

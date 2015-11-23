@@ -1,4 +1,4 @@
-.class Lcom/android/settings/aR;
+.class Lcom/android/settings_ext/aR;
 .super Ljava/lang/Object;
 .source "CryptKeeperConfirm.java"
 
@@ -7,16 +7,16 @@
 
 
 # instance fields
-.field final synthetic fk:Lcom/android/settings/CryptKeeperConfirm;
+.field final synthetic fk:Lcom/android/settings_ext/CryptKeeperConfirm;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/CryptKeeperConfirm;)V
+.method constructor <init>(Lcom/android/settings_ext/CryptKeeperConfirm;)V
     .locals 0
 
     .prologue
     .line 93
-    iput-object p1, p0, Lcom/android/settings/aR;->fk:Lcom/android/settings/CryptKeeperConfirm;
+    iput-object p1, p0, Lcom/android/settings_ext/aR;->fk:Lcom/android/settings_ext/CryptKeeperConfirm;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -32,7 +32,7 @@
     const/4 v2, 0x0
 
     .line 96
-    invoke-static {}, Lcom/android/settings/hl;->hr()Z
+    invoke-static {}, Lcom/android/settings_ext/hl;->hr()Z
 
     move-result v0
 
@@ -46,9 +46,9 @@
     :cond_0
     new-instance v0, Lcom/android/internal/widget/LockPatternUtils;
 
-    iget-object v1, p0, Lcom/android/settings/aR;->fk:Lcom/android/settings/CryptKeeperConfirm;
+    iget-object v1, p0, Lcom/android/settings_ext/aR;->fk:Lcom/android/settings_ext/CryptKeeperConfirm;
 
-    invoke-virtual {v1}, Lcom/android/settings/CryptKeeperConfirm;->getActivity()Landroid/app/Activity;
+    invoke-virtual {v1}, Lcom/android/settings_ext/CryptKeeperConfirm;->getActivity()Landroid/app/Activity;
 
     move-result-object v1
 
@@ -79,29 +79,29 @@
     :cond_1
     new-instance v0, Landroid/content/Intent;
 
-    iget-object v1, p0, Lcom/android/settings/aR;->fk:Lcom/android/settings/CryptKeeperConfirm;
+    iget-object v1, p0, Lcom/android/settings_ext/aR;->fk:Lcom/android/settings_ext/CryptKeeperConfirm;
 
-    invoke-virtual {v1}, Lcom/android/settings/CryptKeeperConfirm;->getActivity()Landroid/app/Activity;
+    invoke-virtual {v1}, Lcom/android/settings_ext/CryptKeeperConfirm;->getActivity()Landroid/app/Activity;
 
     move-result-object v1
 
-    const-class v2, Lcom/android/settings/CryptKeeperConfirm$Blank;
+    const-class v2, Lcom/android/settings_ext/CryptKeeperConfirm$Blank;
 
     invoke-direct {v0, v1, v2}, Landroid/content/Intent;-><init>(Landroid/content/Context;Ljava/lang/Class;)V
 
     .line 123
-    iget-object v1, p0, Lcom/android/settings/aR;->fk:Lcom/android/settings/CryptKeeperConfirm;
+    iget-object v1, p0, Lcom/android/settings_ext/aR;->fk:Lcom/android/settings_ext/CryptKeeperConfirm;
 
-    invoke-virtual {v1}, Lcom/android/settings/CryptKeeperConfirm;->getArguments()Landroid/os/Bundle;
+    invoke-virtual {v1}, Lcom/android/settings_ext/CryptKeeperConfirm;->getArguments()Landroid/os/Bundle;
 
     move-result-object v1
 
     invoke-virtual {v0, v1}, Landroid/content/Intent;->putExtras(Landroid/os/Bundle;)Landroid/content/Intent;
 
     .line 124
-    iget-object v1, p0, Lcom/android/settings/aR;->fk:Lcom/android/settings/CryptKeeperConfirm;
+    iget-object v1, p0, Lcom/android/settings_ext/aR;->fk:Lcom/android/settings_ext/CryptKeeperConfirm;
 
-    invoke-virtual {v1, v0}, Lcom/android/settings/CryptKeeperConfirm;->startActivity(Landroid/content/Intent;)V
+    invoke-virtual {v1, v0}, Lcom/android/settings_ext/CryptKeeperConfirm;->startActivity(Landroid/content/Intent;)V
 
     .line 128
     :try_start_0

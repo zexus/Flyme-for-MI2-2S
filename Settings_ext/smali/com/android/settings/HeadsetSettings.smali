@@ -1,10 +1,10 @@
-.class public Lcom/android/settings/HeadsetSettings;
-.super Lcom/android/settings/SettingsPreferenceFragment;
+.class public Lcom/android/settings_ext/HeadsetSettings;
+.super Lcom/android/settings_ext/SettingsPreferenceFragment;
 .source "HeadsetSettings.java"
 
 # interfaces
 .implements Landroid/preference/Preference$OnPreferenceClickListener;
-.implements Lcom/android/settings/view/c;
+.implements Lcom/android/settings_ext/view/c;
 
 
 # instance fields
@@ -18,21 +18,21 @@
 
 .field private mh:Landroid/preference/Preference;
 
-.field private mi:Lcom/android/settings/view/GridPreference;
+.field private mi:Lcom/android/settings_ext/view/GridPreference;
 
 .field private mj:Landroid/preference/Preference;
 
 .field private mk:Lcom/miui/player/a/a/a;
 
-.field private ml:Lcom/android/settings/bQ;
+.field private ml:Lcom/android/settings_ext/bQ;
 
-.field private mm:Lcom/android/settings/eM;
+.field private mm:Lcom/android/settings_ext/eM;
 
 .field private mn:Z
 
 .field private final mo:Landroid/content/BroadcastReceiver;
 
-.field private final mp:Lcom/android/settings/eN;
+.field private final mp:Lcom/android/settings_ext/eN;
 
 
 # direct methods
@@ -41,51 +41,51 @@
 
     .prologue
     .line 26
-    invoke-direct {p0}, Lcom/android/settings/SettingsPreferenceFragment;-><init>()V
+    invoke-direct {p0}, Lcom/android/settings_ext/SettingsPreferenceFragment;-><init>()V
 
     .line 245
-    new-instance v0, Lcom/android/settings/cD;
+    new-instance v0, Lcom/android/settings_ext/cD;
 
-    invoke-direct {v0, p0}, Lcom/android/settings/cD;-><init>(Lcom/android/settings/HeadsetSettings;)V
+    invoke-direct {v0, p0}, Lcom/android/settings_ext/cD;-><init>(Lcom/android/settings_ext/HeadsetSettings;)V
 
-    iput-object v0, p0, Lcom/android/settings/HeadsetSettings;->mo:Landroid/content/BroadcastReceiver;
+    iput-object v0, p0, Lcom/android/settings_ext/HeadsetSettings;->mo:Landroid/content/BroadcastReceiver;
 
     .line 305
-    new-instance v0, Lcom/android/settings/cE;
+    new-instance v0, Lcom/android/settings_ext/cE;
 
-    invoke-direct {v0, p0}, Lcom/android/settings/cE;-><init>(Lcom/android/settings/HeadsetSettings;)V
+    invoke-direct {v0, p0}, Lcom/android/settings_ext/cE;-><init>(Lcom/android/settings_ext/HeadsetSettings;)V
 
-    iput-object v0, p0, Lcom/android/settings/HeadsetSettings;->mp:Lcom/android/settings/eN;
-
-    return-void
-.end method
-
-.method static synthetic a(Lcom/android/settings/HeadsetSettings;)V
-    .locals 0
-
-    .prologue
-    .line 26
-    invoke-direct {p0}, Lcom/android/settings/HeadsetSettings;->dR()V
+    iput-object v0, p0, Lcom/android/settings_ext/HeadsetSettings;->mp:Lcom/android/settings_ext/eN;
 
     return-void
 .end method
 
-.method static synthetic a(Lcom/android/settings/HeadsetSettings;Z)Z
+.method static synthetic a(Lcom/android/settings_ext/HeadsetSettings;)V
     .locals 0
 
     .prologue
     .line 26
-    iput-boolean p1, p0, Lcom/android/settings/HeadsetSettings;->mn:Z
+    invoke-direct {p0}, Lcom/android/settings_ext/HeadsetSettings;->dR()V
+
+    return-void
+.end method
+
+.method static synthetic a(Lcom/android/settings_ext/HeadsetSettings;Z)Z
+    .locals 0
+
+    .prologue
+    .line 26
+    iput-boolean p1, p0, Lcom/android/settings_ext/HeadsetSettings;->mn:Z
 
     return p1
 .end method
 
-.method static synthetic b(Lcom/android/settings/HeadsetSettings;)V
+.method static synthetic b(Lcom/android/settings_ext/HeadsetSettings;)V
     .locals 0
 
     .prologue
     .line 26
-    invoke-direct {p0}, Lcom/android/settings/HeadsetSettings;->dT()V
+    invoke-direct {p0}, Lcom/android/settings_ext/HeadsetSettings;->dT()V
 
     return-void
 .end method
@@ -127,7 +127,7 @@
     :cond_0
     const-string v0, "audio"
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/HeadsetSettings;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
+    invoke-virtual {p0, v0}, Lcom/android/settings_ext/HeadsetSettings;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object v0
 
@@ -197,12 +197,12 @@
 
     .prologue
     .line 160
-    invoke-direct {p0}, Lcom/android/settings/HeadsetSettings;->dN()Z
+    invoke-direct {p0}, Lcom/android/settings_ext/HeadsetSettings;->dN()Z
 
     move-result v0
 
     .line 161
-    iget-object v1, p0, Lcom/android/settings/HeadsetSettings;->mf:Landroid/preference/CheckBoxPreference;
+    iget-object v1, p0, Lcom/android/settings_ext/HeadsetSettings;->mf:Landroid/preference/CheckBoxPreference;
 
     invoke-virtual {v1, v0}, Landroid/preference/CheckBoxPreference;->setChecked(Z)V
 
@@ -215,7 +215,7 @@
 
     .prologue
     .line 184
-    invoke-virtual {p0}, Lcom/android/settings/HeadsetSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/HeadsetSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
@@ -226,10 +226,10 @@
     if-eqz v0, :cond_0
 
     .line 185
-    invoke-direct {p0}, Lcom/android/settings/HeadsetSettings;->dS()V
+    invoke-direct {p0}, Lcom/android/settings_ext/HeadsetSettings;->dS()V
 
     .line 186
-    invoke-direct {p0}, Lcom/android/settings/HeadsetSettings;->dQ()V
+    invoke-direct {p0}, Lcom/android/settings_ext/HeadsetSettings;->dQ()V
 
     .line 188
     :cond_0
@@ -241,9 +241,9 @@
 
     .prologue
     .line 191
-    iget-object v0, p0, Lcom/android/settings/HeadsetSettings;->mk:Lcom/miui/player/a/a/a;
+    iget-object v0, p0, Lcom/android/settings_ext/HeadsetSettings;->mk:Lcom/miui/player/a/a/a;
 
-    invoke-virtual {p0}, Lcom/android/settings/HeadsetSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/HeadsetSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v1
 
@@ -252,9 +252,9 @@
     move-result v0
 
     .line 192
-    iget-object v1, p0, Lcom/android/settings/HeadsetSettings;->ml:Lcom/android/settings/bQ;
+    iget-object v1, p0, Lcom/android/settings_ext/HeadsetSettings;->ml:Lcom/android/settings_ext/bQ;
 
-    invoke-virtual {v1, v0}, Lcom/android/settings/bQ;->u(I)I
+    invoke-virtual {v1, v0}, Lcom/android/settings_ext/bQ;->u(I)I
 
     move-result v0
 
@@ -269,9 +269,9 @@
 
     .line 197
     :cond_0
-    iget-object v1, p0, Lcom/android/settings/HeadsetSettings;->mi:Lcom/android/settings/view/GridPreference;
+    iget-object v1, p0, Lcom/android/settings_ext/HeadsetSettings;->mi:Lcom/android/settings_ext/view/GridPreference;
 
-    invoke-virtual {v1, v0}, Lcom/android/settings/view/GridPreference;->cC(I)V
+    invoke-virtual {v1, v0}, Lcom/android/settings_ext/view/GridPreference;->cC(I)V
 
     goto :goto_0
 .end method
@@ -285,12 +285,12 @@
     const/4 v2, 0x0
 
     .line 254
-    invoke-direct {p0}, Lcom/android/settings/HeadsetSettings;->isWiredHeadsetOn()Z
+    invoke-direct {p0}, Lcom/android/settings_ext/HeadsetSettings;->isWiredHeadsetOn()Z
 
     move-result v4
 
     .line 255
-    invoke-virtual {p0}, Lcom/android/settings/HeadsetSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/HeadsetSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
@@ -303,7 +303,7 @@
     .line 256
     if-eqz v4, :cond_2
 
-    invoke-direct {p0}, Lcom/android/settings/HeadsetSettings;->dN()Z
+    invoke-direct {p0}, Lcom/android/settings_ext/HeadsetSettings;->dN()Z
 
     move-result v0
 
@@ -324,9 +324,9 @@
     if-eqz v3, :cond_4
 
     .line 261
-    iget-object v3, p0, Lcom/android/settings/HeadsetSettings;->mk:Lcom/miui/player/a/a/a;
+    iget-object v3, p0, Lcom/android/settings_ext/HeadsetSettings;->mk:Lcom/miui/player/a/a/a;
 
-    invoke-virtual {p0}, Lcom/android/settings/HeadsetSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/HeadsetSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v5
 
@@ -338,19 +338,19 @@
 
     .line 265
     :goto_1
-    iget-object v5, p0, Lcom/android/settings/HeadsetSettings;->mg:Landroid/preference/CheckBoxPreference;
+    iget-object v5, p0, Lcom/android/settings_ext/HeadsetSettings;->mg:Landroid/preference/CheckBoxPreference;
 
     invoke-virtual {v5, v0}, Landroid/preference/CheckBoxPreference;->setEnabled(Z)V
 
     .line 266
-    iget-object v5, p0, Lcom/android/settings/HeadsetSettings;->mh:Landroid/preference/Preference;
+    iget-object v5, p0, Lcom/android/settings_ext/HeadsetSettings;->mh:Landroid/preference/Preference;
 
     invoke-virtual {v5, v3}, Landroid/preference/Preference;->setEnabled(Z)V
 
     .line 267
     if-eqz v0, :cond_3
 
-    iget-object v0, p0, Lcom/android/settings/HeadsetSettings;->mg:Landroid/preference/CheckBoxPreference;
+    iget-object v0, p0, Lcom/android/settings_ext/HeadsetSettings;->mg:Landroid/preference/CheckBoxPreference;
 
     invoke-virtual {v0}, Landroid/preference/CheckBoxPreference;->isChecked()Z
 
@@ -360,14 +360,14 @@
 
     .line 268
     :goto_2
-    iget-object v0, p0, Lcom/android/settings/HeadsetSettings;->me:Landroid/preference/PreferenceCategory;
+    iget-object v0, p0, Lcom/android/settings_ext/HeadsetSettings;->me:Landroid/preference/PreferenceCategory;
 
     invoke-virtual {v0, v1}, Landroid/preference/PreferenceCategory;->setEnabled(Z)V
 
     .line 269
-    iget-object v0, p0, Lcom/android/settings/HeadsetSettings;->mi:Lcom/android/settings/view/GridPreference;
+    iget-object v0, p0, Lcom/android/settings_ext/HeadsetSettings;->mi:Lcom/android/settings_ext/view/GridPreference;
 
-    invoke-virtual {v0, v1}, Lcom/android/settings/view/GridPreference;->setEnabled(Z)V
+    invoke-virtual {v0, v1}, Lcom/android/settings_ext/view/GridPreference;->setEnabled(Z)V
 
     .line 272
     :cond_0
@@ -378,7 +378,7 @@
     if-eqz v0, :cond_1
 
     .line 273
-    iget-object v0, p0, Lcom/android/settings/HeadsetSettings;->mf:Landroid/preference/CheckBoxPreference;
+    iget-object v0, p0, Lcom/android/settings_ext/HeadsetSettings;->mf:Landroid/preference/CheckBoxPreference;
 
     invoke-virtual {v0, v4}, Landroid/preference/CheckBoxPreference;->setEnabled(Z)V
 
@@ -409,9 +409,9 @@
 
     .prologue
     .line 278
-    iget-object v0, p0, Lcom/android/settings/HeadsetSettings;->mk:Lcom/miui/player/a/a/a;
+    iget-object v0, p0, Lcom/android/settings_ext/HeadsetSettings;->mk:Lcom/miui/player/a/a/a;
 
-    invoke-virtual {p0}, Lcom/android/settings/HeadsetSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/HeadsetSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v1
 
@@ -420,19 +420,19 @@
     move-result v0
 
     .line 279
-    iget-object v1, p0, Lcom/android/settings/HeadsetSettings;->mg:Landroid/preference/CheckBoxPreference;
+    iget-object v1, p0, Lcom/android/settings_ext/HeadsetSettings;->mg:Landroid/preference/CheckBoxPreference;
 
     invoke-virtual {v1, v0}, Landroid/preference/CheckBoxPreference;->setChecked(Z)V
 
     .line 280
-    iget-object v1, p0, Lcom/android/settings/HeadsetSettings;->me:Landroid/preference/PreferenceCategory;
+    iget-object v1, p0, Lcom/android/settings_ext/HeadsetSettings;->me:Landroid/preference/PreferenceCategory;
 
     invoke-virtual {v1, v0}, Landroid/preference/PreferenceCategory;->setEnabled(Z)V
 
     .line 281
-    iget-object v1, p0, Lcom/android/settings/HeadsetSettings;->mi:Lcom/android/settings/view/GridPreference;
+    iget-object v1, p0, Lcom/android/settings_ext/HeadsetSettings;->mi:Lcom/android/settings_ext/view/GridPreference;
 
-    invoke-virtual {v1, v0}, Lcom/android/settings/view/GridPreference;->setEnabled(Z)V
+    invoke-virtual {v1, v0}, Lcom/android/settings_ext/view/GridPreference;->setEnabled(Z)V
 
     .line 282
     return-void
@@ -443,11 +443,11 @@
 
     .prologue
     .line 341
-    iget-boolean v0, p0, Lcom/android/settings/HeadsetSettings;->mn:Z
+    iget-boolean v0, p0, Lcom/android/settings_ext/HeadsetSettings;->mn:Z
 
     if-eqz v0, :cond_0
 
-    invoke-virtual {p0}, Lcom/android/settings/HeadsetSettings;->isResumed()Z
+    invoke-virtual {p0}, Lcom/android/settings_ext/HeadsetSettings;->isResumed()Z
 
     move-result v0
 
@@ -457,30 +457,30 @@
     :try_start_0
     const-string v0, "dolby_settings"
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/HeadsetSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v0}, Lcom/android/settings_ext/HeadsetSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v0
 
     .line 344
-    iget-object v1, p0, Lcom/android/settings/HeadsetSettings;->mm:Lcom/android/settings/eM;
+    iget-object v1, p0, Lcom/android/settings_ext/HeadsetSettings;->mm:Lcom/android/settings_ext/eM;
 
-    invoke-virtual {v1}, Lcom/android/settings/eM;->getDsOn()Z
+    invoke-virtual {v1}, Lcom/android/settings_ext/eM;->getDsOn()Z
 
     move-result v1
 
     if-eqz v1, :cond_2
 
     .line 345
-    iget-object v1, p0, Lcom/android/settings/HeadsetSettings;->mm:Lcom/android/settings/eM;
+    iget-object v1, p0, Lcom/android/settings_ext/HeadsetSettings;->mm:Lcom/android/settings_ext/eM;
 
-    invoke-virtual {v1}, Lcom/android/settings/eM;->getSelectedProfile()I
+    invoke-virtual {v1}, Lcom/android/settings_ext/eM;->getSelectedProfile()I
 
     move-result v1
 
     .line 346
-    iget-object v2, p0, Lcom/android/settings/HeadsetSettings;->mm:Lcom/android/settings/eM;
+    iget-object v2, p0, Lcom/android/settings_ext/HeadsetSettings;->mm:Lcom/android/settings_ext/eM;
 
-    invoke-virtual {v2}, Lcom/android/settings/eM;->fI()I
+    invoke-virtual {v2}, Lcom/android/settings_ext/eM;->fI()I
 
     move-result v2
 
@@ -498,9 +498,9 @@
 
     .line 348
     :cond_1
-    iget-object v2, p0, Lcom/android/settings/HeadsetSettings;->mm:Lcom/android/settings/eM;
+    iget-object v2, p0, Lcom/android/settings_ext/HeadsetSettings;->mm:Lcom/android/settings_ext/eM;
 
-    invoke-virtual {v2}, Lcom/android/settings/eM;->fH()I
+    invoke-virtual {v2}, Lcom/android/settings_ext/eM;->fH()I
 
     move-result v2
 
@@ -609,7 +609,7 @@
     .line 301
     const-string v0, "audio"
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/HeadsetSettings;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
+    invoke-virtual {p0, v0}, Lcom/android/settings_ext/HeadsetSettings;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object v0
 
@@ -625,12 +625,12 @@
 
 
 # virtual methods
-.method public a(Lcom/android/settings/view/GridPreference;I)V
+.method public a(Lcom/android/settings_ext/view/GridPreference;I)V
     .locals 3
 
     .prologue
     .line 286
-    iget-object v0, p0, Lcom/android/settings/HeadsetSettings;->mk:Lcom/miui/player/a/a/a;
+    iget-object v0, p0, Lcom/android/settings_ext/HeadsetSettings;->mk:Lcom/miui/player/a/a/a;
 
     invoke-virtual {v0}, Lcom/miui/player/a/a/a;->yD()Z
 
@@ -645,16 +645,16 @@
 
     .line 293
     :cond_1
-    iget-object v0, p0, Lcom/android/settings/HeadsetSettings;->ml:Lcom/android/settings/bQ;
+    iget-object v0, p0, Lcom/android/settings_ext/HeadsetSettings;->ml:Lcom/android/settings_ext/bQ;
 
-    invoke-virtual {v0, p2}, Lcom/android/settings/bQ;->v(I)I
+    invoke-virtual {v0, p2}, Lcom/android/settings_ext/bQ;->v(I)I
 
     move-result v0
 
     .line 294
-    iget-object v1, p0, Lcom/android/settings/HeadsetSettings;->mk:Lcom/miui/player/a/a/a;
+    iget-object v1, p0, Lcom/android/settings_ext/HeadsetSettings;->mk:Lcom/miui/player/a/a/a;
 
-    invoke-virtual {p0}, Lcom/android/settings/HeadsetSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/HeadsetSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v2
 
@@ -665,22 +665,22 @@
     if-eq v0, v1, :cond_0
 
     .line 295
-    iget-object v0, p0, Lcom/android/settings/HeadsetSettings;->mk:Lcom/miui/player/a/a/a;
+    iget-object v0, p0, Lcom/android/settings_ext/HeadsetSettings;->mk:Lcom/miui/player/a/a/a;
 
-    invoke-virtual {p1}, Lcom/android/settings/view/GridPreference;->getContext()Landroid/content/Context;
+    invoke-virtual {p1}, Lcom/android/settings_ext/view/GridPreference;->getContext()Landroid/content/Context;
 
     move-result-object v1
 
-    iget-object v2, p0, Lcom/android/settings/HeadsetSettings;->ml:Lcom/android/settings/bQ;
+    iget-object v2, p0, Lcom/android/settings_ext/HeadsetSettings;->ml:Lcom/android/settings_ext/bQ;
 
-    invoke-virtual {v2, p2}, Lcom/android/settings/bQ;->v(I)I
+    invoke-virtual {v2, p2}, Lcom/android/settings_ext/bQ;->v(I)I
 
     move-result v2
 
     invoke-virtual {v0, v1, v2}, Lcom/miui/player/a/a/a;->p(Landroid/content/Context;I)V
 
     .line 296
-    invoke-direct {p0}, Lcom/android/settings/HeadsetSettings;->dP()V
+    invoke-direct {p0}, Lcom/android/settings_ext/HeadsetSettings;->dP()V
 
     goto :goto_0
 .end method
@@ -690,85 +690,85 @@
 
     .prologue
     .line 58
-    invoke-super {p0, p1}, Lcom/android/settings/SettingsPreferenceFragment;->onCreate(Landroid/os/Bundle;)V
+    invoke-super {p0, p1}, Lcom/android/settings_ext/SettingsPreferenceFragment;->onCreate(Landroid/os/Bundle;)V
 
     .line 59
     const v0, 0x7f060053
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/HeadsetSettings;->addPreferencesFromResource(I)V
+    invoke-virtual {p0, v0}, Lcom/android/settings_ext/HeadsetSettings;->addPreferencesFromResource(I)V
 
     .line 62
     const-string v0, "audio_effect_optimize"
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/HeadsetSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v0}, Lcom/android/settings_ext/HeadsetSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v0
 
     check-cast v0, Landroid/preference/PreferenceCategory;
 
-    iput-object v0, p0, Lcom/android/settings/HeadsetSettings;->md:Landroid/preference/PreferenceCategory;
+    iput-object v0, p0, Lcom/android/settings_ext/HeadsetSettings;->md:Landroid/preference/PreferenceCategory;
 
     .line 63
     const-string v0, "dirac_enable"
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/HeadsetSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v0}, Lcom/android/settings_ext/HeadsetSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v0
 
     check-cast v0, Landroid/preference/CheckBoxPreference;
 
-    iput-object v0, p0, Lcom/android/settings/HeadsetSettings;->mg:Landroid/preference/CheckBoxPreference;
+    iput-object v0, p0, Lcom/android/settings_ext/HeadsetSettings;->mg:Landroid/preference/CheckBoxPreference;
 
     .line 64
     const-string v0, "hifi_enable"
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/HeadsetSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v0}, Lcom/android/settings_ext/HeadsetSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v0
 
     check-cast v0, Landroid/preference/CheckBoxPreference;
 
-    iput-object v0, p0, Lcom/android/settings/HeadsetSettings;->mf:Landroid/preference/CheckBoxPreference;
+    iput-object v0, p0, Lcom/android/settings_ext/HeadsetSettings;->mf:Landroid/preference/CheckBoxPreference;
 
     .line 65
     const-string v0, "headset_type_setting"
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/HeadsetSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v0}, Lcom/android/settings_ext/HeadsetSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v0
 
     check-cast v0, Landroid/preference/PreferenceCategory;
 
-    iput-object v0, p0, Lcom/android/settings/HeadsetSettings;->me:Landroid/preference/PreferenceCategory;
+    iput-object v0, p0, Lcom/android/settings_ext/HeadsetSettings;->me:Landroid/preference/PreferenceCategory;
 
     .line 66
     const-string v0, "headsets_grid"
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/HeadsetSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v0}, Lcom/android/settings_ext/HeadsetSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v0
 
-    check-cast v0, Lcom/android/settings/view/GridPreference;
+    check-cast v0, Lcom/android/settings_ext/view/GridPreference;
 
-    iput-object v0, p0, Lcom/android/settings/HeadsetSettings;->mi:Lcom/android/settings/view/GridPreference;
+    iput-object v0, p0, Lcom/android/settings_ext/HeadsetSettings;->mi:Lcom/android/settings_ext/view/GridPreference;
 
     .line 67
     const-string v0, "equalizer"
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/HeadsetSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v0}, Lcom/android/settings_ext/HeadsetSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/HeadsetSettings;->mh:Landroid/preference/Preference;
+    iput-object v0, p0, Lcom/android/settings_ext/HeadsetSettings;->mh:Landroid/preference/Preference;
 
     .line 68
     const-string v0, "dolby_settings"
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/HeadsetSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v0}, Lcom/android/settings_ext/HeadsetSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/HeadsetSettings;->mj:Landroid/preference/Preference;
+    iput-object v0, p0, Lcom/android/settings_ext/HeadsetSettings;->mj:Landroid/preference/Preference;
 
     .line 70
     invoke-static {}, Lcom/miui/player/a/a/a;->yE()Z
@@ -778,13 +778,13 @@
     if-eqz v0, :cond_1
 
     .line 71
-    iget-object v0, p0, Lcom/android/settings/HeadsetSettings;->mf:Landroid/preference/CheckBoxPreference;
+    iget-object v0, p0, Lcom/android/settings_ext/HeadsetSettings;->mf:Landroid/preference/CheckBoxPreference;
 
     invoke-virtual {v0, p0}, Landroid/preference/CheckBoxPreference;->setOnPreferenceClickListener(Landroid/preference/Preference$OnPreferenceClickListener;)V
 
     .line 76
     :goto_0
-    invoke-virtual {p0}, Lcom/android/settings/HeadsetSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/HeadsetSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
@@ -799,73 +799,73 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/HeadsetSettings;->mk:Lcom/miui/player/a/a/a;
+    iput-object v0, p0, Lcom/android/settings_ext/HeadsetSettings;->mk:Lcom/miui/player/a/a/a;
 
     .line 78
-    iget-object v0, p0, Lcom/android/settings/HeadsetSettings;->mk:Lcom/miui/player/a/a/a;
+    iget-object v0, p0, Lcom/android/settings_ext/HeadsetSettings;->mk:Lcom/miui/player/a/a/a;
 
     invoke-virtual {v0}, Lcom/miui/player/a/a/a;->initialize()V
 
     .line 80
-    iget-object v0, p0, Lcom/android/settings/HeadsetSettings;->mg:Landroid/preference/CheckBoxPreference;
+    iget-object v0, p0, Lcom/android/settings_ext/HeadsetSettings;->mg:Landroid/preference/CheckBoxPreference;
 
     invoke-virtual {v0, p0}, Landroid/preference/CheckBoxPreference;->setOnPreferenceClickListener(Landroid/preference/Preference$OnPreferenceClickListener;)V
 
     .line 81
-    new-instance v0, Lcom/android/settings/bQ;
+    new-instance v0, Lcom/android/settings_ext/bQ;
 
-    iget-object v1, p0, Lcom/android/settings/HeadsetSettings;->mk:Lcom/miui/player/a/a/a;
+    iget-object v1, p0, Lcom/android/settings_ext/HeadsetSettings;->mk:Lcom/miui/player/a/a/a;
 
-    invoke-direct {v0, v1}, Lcom/android/settings/bQ;-><init>(Lcom/miui/player/a/a/a;)V
+    invoke-direct {v0, v1}, Lcom/android/settings_ext/bQ;-><init>(Lcom/miui/player/a/a/a;)V
 
-    iput-object v0, p0, Lcom/android/settings/HeadsetSettings;->ml:Lcom/android/settings/bQ;
+    iput-object v0, p0, Lcom/android/settings_ext/HeadsetSettings;->ml:Lcom/android/settings_ext/bQ;
 
     .line 82
-    iget-object v0, p0, Lcom/android/settings/HeadsetSettings;->mi:Lcom/android/settings/view/GridPreference;
+    iget-object v0, p0, Lcom/android/settings_ext/HeadsetSettings;->mi:Lcom/android/settings_ext/view/GridPreference;
 
-    iget-object v1, p0, Lcom/android/settings/HeadsetSettings;->ml:Lcom/android/settings/bQ;
+    iget-object v1, p0, Lcom/android/settings_ext/HeadsetSettings;->ml:Lcom/android/settings_ext/bQ;
 
-    invoke-virtual {v0, v1}, Lcom/android/settings/view/GridPreference;->setAdapter(Landroid/widget/ListAdapter;)V
+    invoke-virtual {v0, v1}, Lcom/android/settings_ext/view/GridPreference;->setAdapter(Landroid/widget/ListAdapter;)V
 
     .line 83
-    iget-object v0, p0, Lcom/android/settings/HeadsetSettings;->mi:Lcom/android/settings/view/GridPreference;
+    iget-object v0, p0, Lcom/android/settings_ext/HeadsetSettings;->mi:Lcom/android/settings_ext/view/GridPreference;
 
-    invoke-virtual {v0, p0}, Lcom/android/settings/view/GridPreference;->a(Lcom/android/settings/view/c;)V
+    invoke-virtual {v0, p0}, Lcom/android/settings_ext/view/GridPreference;->a(Lcom/android/settings_ext/view/c;)V
 
     .line 91
     :goto_1
-    invoke-direct {p0}, Lcom/android/settings/HeadsetSettings;->dM()Z
+    invoke-direct {p0}, Lcom/android/settings_ext/HeadsetSettings;->dM()Z
 
     move-result v0
 
     if-eqz v0, :cond_3
 
     .line 92
-    invoke-static {}, Lcom/android/settings/eM;->fG()Lcom/android/settings/eM;
+    invoke-static {}, Lcom/android/settings_ext/eM;->fG()Lcom/android/settings_ext/eM;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/HeadsetSettings;->mm:Lcom/android/settings/eM;
+    iput-object v0, p0, Lcom/android/settings_ext/HeadsetSettings;->mm:Lcom/android/settings_ext/eM;
 
     .line 93
-    iget-object v0, p0, Lcom/android/settings/HeadsetSettings;->mm:Lcom/android/settings/eM;
+    iget-object v0, p0, Lcom/android/settings_ext/HeadsetSettings;->mm:Lcom/android/settings_ext/eM;
 
-    iget-object v1, p0, Lcom/android/settings/HeadsetSettings;->mp:Lcom/android/settings/eN;
+    iget-object v1, p0, Lcom/android/settings_ext/HeadsetSettings;->mp:Lcom/android/settings_ext/eN;
 
-    invoke-virtual {v0, v1}, Lcom/android/settings/eM;->a(Lcom/android/settings/eN;)V
+    invoke-virtual {v0, v1}, Lcom/android/settings_ext/eM;->a(Lcom/android/settings_ext/eN;)V
 
     .line 94
-    iget-object v0, p0, Lcom/android/settings/HeadsetSettings;->mm:Lcom/android/settings/eM;
+    iget-object v0, p0, Lcom/android/settings_ext/HeadsetSettings;->mm:Lcom/android/settings_ext/eM;
 
-    invoke-virtual {p0}, Lcom/android/settings/HeadsetSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/HeadsetSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v1
 
-    invoke-virtual {v0, v1}, Lcom/android/settings/eM;->bindDsService(Landroid/content/Context;)Z
+    invoke-virtual {v0, v1}, Lcom/android/settings_ext/eM;->bindDsService(Landroid/content/Context;)Z
 
     .line 99
     :goto_2
-    iget-object v0, p0, Lcom/android/settings/HeadsetSettings;->md:Landroid/preference/PreferenceCategory;
+    iget-object v0, p0, Lcom/android/settings_ext/HeadsetSettings;->md:Landroid/preference/PreferenceCategory;
 
     invoke-virtual {v0}, Landroid/preference/PreferenceCategory;->getPreferenceCount()I
 
@@ -874,12 +874,12 @@
     if-nez v0, :cond_0
 
     .line 100
-    invoke-virtual {p0}, Lcom/android/settings/HeadsetSettings;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
+    invoke-virtual {p0}, Lcom/android/settings_ext/HeadsetSettings;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
 
     move-result-object v0
 
     .line 101
-    iget-object v1, p0, Lcom/android/settings/HeadsetSettings;->md:Landroid/preference/PreferenceCategory;
+    iget-object v1, p0, Lcom/android/settings_ext/HeadsetSettings;->md:Landroid/preference/PreferenceCategory;
 
     invoke-virtual {v0, v1}, Landroid/preference/PreferenceScreen;->removePreference(Landroid/preference/Preference;)Z
 
@@ -889,9 +889,9 @@
 
     .line 73
     :cond_1
-    iget-object v0, p0, Lcom/android/settings/HeadsetSettings;->md:Landroid/preference/PreferenceCategory;
+    iget-object v0, p0, Lcom/android/settings_ext/HeadsetSettings;->md:Landroid/preference/PreferenceCategory;
 
-    iget-object v1, p0, Lcom/android/settings/HeadsetSettings;->mf:Landroid/preference/CheckBoxPreference;
+    iget-object v1, p0, Lcom/android/settings_ext/HeadsetSettings;->mf:Landroid/preference/CheckBoxPreference;
 
     invoke-virtual {v0, v1}, Landroid/preference/PreferenceCategory;->removePreference(Landroid/preference/Preference;)Z
 
@@ -899,26 +899,26 @@
 
     .line 85
     :cond_2
-    iget-object v0, p0, Lcom/android/settings/HeadsetSettings;->md:Landroid/preference/PreferenceCategory;
+    iget-object v0, p0, Lcom/android/settings_ext/HeadsetSettings;->md:Landroid/preference/PreferenceCategory;
 
-    iget-object v1, p0, Lcom/android/settings/HeadsetSettings;->mh:Landroid/preference/Preference;
+    iget-object v1, p0, Lcom/android/settings_ext/HeadsetSettings;->mh:Landroid/preference/Preference;
 
     invoke-virtual {v0, v1}, Landroid/preference/PreferenceCategory;->removePreference(Landroid/preference/Preference;)Z
 
     .line 86
-    iget-object v0, p0, Lcom/android/settings/HeadsetSettings;->md:Landroid/preference/PreferenceCategory;
+    iget-object v0, p0, Lcom/android/settings_ext/HeadsetSettings;->md:Landroid/preference/PreferenceCategory;
 
-    iget-object v1, p0, Lcom/android/settings/HeadsetSettings;->mg:Landroid/preference/CheckBoxPreference;
+    iget-object v1, p0, Lcom/android/settings_ext/HeadsetSettings;->mg:Landroid/preference/CheckBoxPreference;
 
     invoke-virtual {v0, v1}, Landroid/preference/PreferenceCategory;->removePreference(Landroid/preference/Preference;)Z
 
     .line 87
-    invoke-virtual {p0}, Lcom/android/settings/HeadsetSettings;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
+    invoke-virtual {p0}, Lcom/android/settings_ext/HeadsetSettings;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
 
     move-result-object v0
 
     .line 88
-    iget-object v1, p0, Lcom/android/settings/HeadsetSettings;->me:Landroid/preference/PreferenceCategory;
+    iget-object v1, p0, Lcom/android/settings_ext/HeadsetSettings;->me:Landroid/preference/PreferenceCategory;
 
     invoke-virtual {v0, v1}, Landroid/preference/PreferenceScreen;->removePreference(Landroid/preference/Preference;)Z
 
@@ -926,9 +926,9 @@
 
     .line 96
     :cond_3
-    iget-object v0, p0, Lcom/android/settings/HeadsetSettings;->md:Landroid/preference/PreferenceCategory;
+    iget-object v0, p0, Lcom/android/settings_ext/HeadsetSettings;->md:Landroid/preference/PreferenceCategory;
 
-    iget-object v1, p0, Lcom/android/settings/HeadsetSettings;->mj:Landroid/preference/Preference;
+    iget-object v1, p0, Lcom/android/settings_ext/HeadsetSettings;->mj:Landroid/preference/Preference;
 
     invoke-virtual {v0, v1}, Landroid/preference/PreferenceCategory;->removePreference(Landroid/preference/Preference;)Z
 
@@ -940,24 +940,24 @@
 
     .prologue
     .line 136
-    invoke-direct {p0}, Lcom/android/settings/HeadsetSettings;->dM()Z
+    invoke-direct {p0}, Lcom/android/settings_ext/HeadsetSettings;->dM()Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
     .line 137
-    iget-object v0, p0, Lcom/android/settings/HeadsetSettings;->mm:Lcom/android/settings/eM;
+    iget-object v0, p0, Lcom/android/settings_ext/HeadsetSettings;->mm:Lcom/android/settings_ext/eM;
 
-    invoke-virtual {p0}, Lcom/android/settings/HeadsetSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/HeadsetSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v1
 
-    invoke-virtual {v0, v1}, Lcom/android/settings/eM;->unBindDsService(Landroid/content/Context;)V
+    invoke-virtual {v0, v1}, Lcom/android/settings_ext/eM;->unBindDsService(Landroid/content/Context;)V
 
     .line 139
     :cond_0
-    invoke-super {p0}, Lcom/android/settings/SettingsPreferenceFragment;->onDestroy()V
+    invoke-super {p0}, Lcom/android/settings_ext/SettingsPreferenceFragment;->onDestroy()V
 
     .line 140
     return-void
@@ -968,7 +968,7 @@
 
     .prologue
     .line 127
-    invoke-virtual {p0}, Lcom/android/settings/HeadsetSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/HeadsetSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
@@ -979,22 +979,22 @@
     if-eqz v0, :cond_0
 
     .line 128
-    invoke-virtual {p0}, Lcom/android/settings/HeadsetSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/HeadsetSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/android/settings/HeadsetSettings;->mo:Landroid/content/BroadcastReceiver;
+    iget-object v1, p0, Lcom/android/settings_ext/HeadsetSettings;->mo:Landroid/content/BroadcastReceiver;
 
     invoke-virtual {v0, v1}, Landroid/app/Activity;->unregisterReceiver(Landroid/content/BroadcastReceiver;)V
 
     .line 129
-    iget-object v0, p0, Lcom/android/settings/HeadsetSettings;->mk:Lcom/miui/player/a/a/a;
+    iget-object v0, p0, Lcom/android/settings_ext/HeadsetSettings;->mk:Lcom/miui/player/a/a/a;
 
     invoke-virtual {v0}, Lcom/miui/player/a/a/a;->release()V
 
     .line 131
     :cond_0
-    invoke-super {p0}, Lcom/android/settings/SettingsPreferenceFragment;->onPause()V
+    invoke-super {p0}, Lcom/android/settings_ext/SettingsPreferenceFragment;->onPause()V
 
     .line 132
     return-void
@@ -1007,17 +1007,17 @@
     const/4 v8, 0x3
 
     .line 202
-    invoke-virtual {p0}, Lcom/android/settings/HeadsetSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/HeadsetSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v1
 
     .line 203
-    iget-object v0, p0, Lcom/android/settings/HeadsetSettings;->mg:Landroid/preference/CheckBoxPreference;
+    iget-object v0, p0, Lcom/android/settings_ext/HeadsetSettings;->mg:Landroid/preference/CheckBoxPreference;
 
     if-ne p1, v0, :cond_1
 
     .line 204
-    iget-object v0, p0, Lcom/android/settings/HeadsetSettings;->mk:Lcom/miui/player/a/a/a;
+    iget-object v0, p0, Lcom/android/settings_ext/HeadsetSettings;->mk:Lcom/miui/player/a/a/a;
 
     invoke-virtual {v0}, Lcom/miui/player/a/a/a;->yD()Z
 
@@ -1026,9 +1026,9 @@
     if-eqz v0, :cond_0
 
     .line 209
-    iget-object v0, p0, Lcom/android/settings/HeadsetSettings;->mk:Lcom/miui/player/a/a/a;
+    iget-object v0, p0, Lcom/android/settings_ext/HeadsetSettings;->mk:Lcom/miui/player/a/a/a;
 
-    iget-object v2, p0, Lcom/android/settings/HeadsetSettings;->mg:Landroid/preference/CheckBoxPreference;
+    iget-object v2, p0, Lcom/android/settings_ext/HeadsetSettings;->mg:Landroid/preference/CheckBoxPreference;
 
     invoke-virtual {v2}, Landroid/preference/CheckBoxPreference;->isChecked()Z
 
@@ -1037,10 +1037,10 @@
     invoke-virtual {v0, v1, v2}, Lcom/miui/player/a/a/a;->x(Landroid/content/Context;Z)V
 
     .line 210
-    invoke-direct {p0}, Lcom/android/settings/HeadsetSettings;->dP()V
+    invoke-direct {p0}, Lcom/android/settings_ext/HeadsetSettings;->dP()V
 
     .line 211
-    invoke-direct {p0}, Lcom/android/settings/HeadsetSettings;->dR()V
+    invoke-direct {p0}, Lcom/android/settings_ext/HeadsetSettings;->dR()V
 
     .line 242
     :cond_0
@@ -1051,12 +1051,12 @@
 
     .line 213
     :cond_1
-    iget-object v0, p0, Lcom/android/settings/HeadsetSettings;->mf:Landroid/preference/CheckBoxPreference;
+    iget-object v0, p0, Lcom/android/settings_ext/HeadsetSettings;->mf:Landroid/preference/CheckBoxPreference;
 
     if-ne p1, v0, :cond_0
 
     .line 214
-    iget-object v0, p0, Lcom/android/settings/HeadsetSettings;->mf:Landroid/preference/CheckBoxPreference;
+    iget-object v0, p0, Lcom/android/settings_ext/HeadsetSettings;->mf:Landroid/preference/CheckBoxPreference;
 
     invoke-virtual {v0}, Landroid/preference/CheckBoxPreference;->isChecked()Z
 
@@ -1084,7 +1084,7 @@
     .line 216
     const-string v0, "audio"
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/HeadsetSettings;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
+    invoke-virtual {p0, v0}, Lcom/android/settings_ext/HeadsetSettings;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object v0
 
@@ -1234,13 +1234,13 @@
     invoke-virtual {v1, v0}, Landroid/content/Context;->sendBroadcast(Landroid/content/Intent;)V
 
     .line 236
-    invoke-direct {p0}, Lcom/android/settings/HeadsetSettings;->dP()V
+    invoke-direct {p0}, Lcom/android/settings_ext/HeadsetSettings;->dP()V
 
     .line 237
-    invoke-direct {p0}, Lcom/android/settings/HeadsetSettings;->dR()V
+    invoke-direct {p0}, Lcom/android/settings_ext/HeadsetSettings;->dR()V
 
     .line 238
-    invoke-direct {p0}, Lcom/android/settings/HeadsetSettings;->dO()V
+    invoke-direct {p0}, Lcom/android/settings_ext/HeadsetSettings;->dO()V
 
     .line 239
     const-string v0, "HeadsetSettings"
@@ -1288,14 +1288,14 @@
     if-eqz v0, :cond_2
 
     .line 168
-    invoke-direct {p0}, Lcom/android/settings/HeadsetSettings;->isWiredHeadsetOn()Z
+    invoke-direct {p0}, Lcom/android/settings_ext/HeadsetSettings;->isWiredHeadsetOn()Z
 
     move-result v0
 
     if-nez v0, :cond_0
 
     .line 169
-    invoke-virtual {p0}, Lcom/android/settings/HeadsetSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/HeadsetSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
@@ -1334,7 +1334,7 @@
 
     move-object v1, p0
 
-    invoke-virtual/range {v0 .. v5}, Lcom/android/settings/HeadsetSettings;->a(Landroid/app/Fragment;Ljava/lang/String;ILandroid/os/Bundle;I)Z
+    invoke-virtual/range {v0 .. v5}, Lcom/android/settings_ext/HeadsetSettings;->a(Landroid/app/Fragment;Ljava/lang/String;ILandroid/os/Bundle;I)Z
 
     goto :goto_0
 
@@ -1342,22 +1342,22 @@
     :cond_1
     new-instance v0, Landroid/content/Intent;
 
-    invoke-virtual {p0}, Lcom/android/settings/HeadsetSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/HeadsetSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v1
 
-    const-class v2, Lcom/android/settings/HeadsetCalibrateActivity;
+    const-class v2, Lcom/android/settings_ext/HeadsetCalibrateActivity;
 
     invoke-direct {v0, v1, v2}, Landroid/content/Intent;-><init>(Landroid/content/Context;Ljava/lang/Class;)V
 
     .line 175
-    invoke-virtual {p0, v0}, Lcom/android/settings/HeadsetSettings;->startActivity(Landroid/content/Intent;)V
+    invoke-virtual {p0, v0}, Lcom/android/settings_ext/HeadsetSettings;->startActivity(Landroid/content/Intent;)V
 
     goto :goto_0
 
     .line 180
     :cond_2
-    invoke-super {p0, p1, p2}, Lcom/android/settings/SettingsPreferenceFragment;->onPreferenceTreeClick(Landroid/preference/PreferenceScreen;Landroid/preference/Preference;)Z
+    invoke-super {p0, p1, p2}, Lcom/android/settings_ext/SettingsPreferenceFragment;->onPreferenceTreeClick(Landroid/preference/PreferenceScreen;Landroid/preference/Preference;)Z
 
     move-result v0
 
@@ -1369,10 +1369,10 @@
 
     .prologue
     .line 107
-    invoke-super {p0}, Lcom/android/settings/SettingsPreferenceFragment;->onResume()V
+    invoke-super {p0}, Lcom/android/settings_ext/SettingsPreferenceFragment;->onResume()V
 
     .line 108
-    invoke-virtual {p0}, Lcom/android/settings/HeadsetSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/HeadsetSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
@@ -1383,7 +1383,7 @@
     if-eqz v0, :cond_0
 
     .line 109
-    iget-object v0, p0, Lcom/android/settings/HeadsetSettings;->mk:Lcom/miui/player/a/a/a;
+    iget-object v0, p0, Lcom/android/settings_ext/HeadsetSettings;->mk:Lcom/miui/player/a/a/a;
 
     invoke-virtual {v0}, Lcom/miui/player/a/a/a;->initialize()V
 
@@ -1398,16 +1398,16 @@
     invoke-virtual {v0, v1}, Landroid/content/IntentFilter;->addAction(Ljava/lang/String;)V
 
     .line 112
-    invoke-virtual {p0}, Lcom/android/settings/HeadsetSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/HeadsetSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v1
 
-    iget-object v2, p0, Lcom/android/settings/HeadsetSettings;->mo:Landroid/content/BroadcastReceiver;
+    iget-object v2, p0, Lcom/android/settings_ext/HeadsetSettings;->mo:Landroid/content/BroadcastReceiver;
 
     invoke-virtual {v1, v2, v0}, Landroid/app/Activity;->registerReceiver(Landroid/content/BroadcastReceiver;Landroid/content/IntentFilter;)Landroid/content/Intent;
 
     .line 113
-    invoke-direct {p0}, Lcom/android/settings/HeadsetSettings;->dP()V
+    invoke-direct {p0}, Lcom/android/settings_ext/HeadsetSettings;->dP()V
 
     .line 115
     :cond_0
@@ -1418,21 +1418,21 @@
     if-eqz v0, :cond_1
 
     .line 116
-    invoke-direct {p0}, Lcom/android/settings/HeadsetSettings;->dO()V
+    invoke-direct {p0}, Lcom/android/settings_ext/HeadsetSettings;->dO()V
 
     .line 118
     :cond_1
-    invoke-direct {p0}, Lcom/android/settings/HeadsetSettings;->dR()V
+    invoke-direct {p0}, Lcom/android/settings_ext/HeadsetSettings;->dR()V
 
     .line 120
-    invoke-direct {p0}, Lcom/android/settings/HeadsetSettings;->dM()Z
+    invoke-direct {p0}, Lcom/android/settings_ext/HeadsetSettings;->dM()Z
 
     move-result v0
 
     if-eqz v0, :cond_2
 
     .line 121
-    invoke-direct {p0}, Lcom/android/settings/HeadsetSettings;->dT()V
+    invoke-direct {p0}, Lcom/android/settings_ext/HeadsetSettings;->dT()V
 
     .line 123
     :cond_2

@@ -1,19 +1,19 @@
-.class Lcom/android/settings/bluetooth/BluetoothSettings$1;
+.class Lcom/android/settings_ext/bluetooth/BluetoothSettings$1;
 .super Landroid/content/BroadcastReceiver;
 .source "BluetoothSettings.java"
 
 
 # instance fields
-.field final synthetic Nt:Lcom/android/settings/bluetooth/BluetoothSettings;
+.field final synthetic Nt:Lcom/android/settings_ext/bluetooth/BluetoothSettings;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/bluetooth/BluetoothSettings;)V
+.method constructor <init>(Lcom/android/settings_ext/bluetooth/BluetoothSettings;)V
     .locals 0
 
     .prologue
     .line 119
-    iput-object p1, p0, Lcom/android/settings/bluetooth/BluetoothSettings$1;->Nt:Lcom/android/settings/bluetooth/BluetoothSettings;
+    iput-object p1, p0, Lcom/android/settings_ext/bluetooth/BluetoothSettings$1;->Nt:Lcom/android/settings_ext/bluetooth/BluetoothSettings;
 
     invoke-direct {p0}, Landroid/content/BroadcastReceiver;-><init>()V
 
@@ -56,11 +56,11 @@
     if-ne v1, v0, :cond_1
 
     .line 133
-    iget-object v0, p0, Lcom/android/settings/bluetooth/BluetoothSettings$1;->Nt:Lcom/android/settings/bluetooth/BluetoothSettings;
+    iget-object v0, p0, Lcom/android/settings_ext/bluetooth/BluetoothSettings$1;->Nt:Lcom/android/settings_ext/bluetooth/BluetoothSettings;
 
     const/4 v1, 0x1
 
-    invoke-static {v0, v1}, Lcom/android/settings/bluetooth/BluetoothSettings;->a(Lcom/android/settings/bluetooth/BluetoothSettings;Z)Z
+    invoke-static {v0, v1}, Lcom/android/settings_ext/bluetooth/BluetoothSettings;->a(Lcom/android/settings_ext/bluetooth/BluetoothSettings;Z)Z
 
     .line 135
     :cond_1

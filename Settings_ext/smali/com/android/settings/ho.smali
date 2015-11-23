@@ -1,5 +1,5 @@
-.class final Lcom/android/settings/ho;
-.super Lcom/android/settings/search/a;
+.class final Lcom/android/settings_ext/ho;
+.super Lcom/android/settings_ext/search/a;
 .source "WallpaperTypeSettings.java"
 
 
@@ -9,7 +9,7 @@
 
     .prologue
     .line 68
-    invoke-direct {p0}, Lcom/android/settings/search/a;-><init>()V
+    invoke-direct {p0}, Lcom/android/settings_ext/search/a;-><init>()V
 
     return-void
 .end method
@@ -76,16 +76,16 @@
 
     .line 83
     :cond_0
-    new-instance v5, Lcom/android/settings/search/n;
+    new-instance v5, Lcom/android/settings_ext/search/n;
 
-    invoke-direct {v5, p1}, Lcom/android/settings/search/n;-><init>(Landroid/content/Context;)V
+    invoke-direct {v5, p1}, Lcom/android/settings_ext/search/n;-><init>(Landroid/content/Context;)V
 
     .line 84
     invoke-interface {v1}, Ljava/lang/CharSequence;->toString()Ljava/lang/String;
 
     move-result-object v1
 
-    iput-object v1, v5, Lcom/android/settings/search/n;->title:Ljava/lang/String;
+    iput-object v1, v5, Lcom/android/settings_ext/search/n;->title:Ljava/lang/String;
 
     .line 85
     invoke-virtual {p1}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
@@ -98,26 +98,26 @@
 
     move-result-object v1
 
-    iput-object v1, v5, Lcom/android/settings/search/n;->aiY:Ljava/lang/String;
+    iput-object v1, v5, Lcom/android/settings_ext/search/n;->aiY:Ljava/lang/String;
 
     .line 87
     const-string v1, "android.intent.action.SET_WALLPAPER"
 
-    iput-object v1, v5, Lcom/android/settings/search/n;->intentAction:Ljava/lang/String;
+    iput-object v1, v5, Lcom/android/settings_ext/search/n;->intentAction:Ljava/lang/String;
 
     .line 88
     iget-object v1, v0, Landroid/content/pm/ResolveInfo;->activityInfo:Landroid/content/pm/ActivityInfo;
 
     iget-object v1, v1, Landroid/content/pm/ActivityInfo;->packageName:Ljava/lang/String;
 
-    iput-object v1, v5, Lcom/android/settings/search/n;->intentTargetPackage:Ljava/lang/String;
+    iput-object v1, v5, Lcom/android/settings_ext/search/n;->intentTargetPackage:Ljava/lang/String;
 
     .line 89
     iget-object v0, v0, Landroid/content/pm/ResolveInfo;->activityInfo:Landroid/content/pm/ActivityInfo;
 
     iget-object v0, v0, Landroid/content/pm/ActivityInfo;->name:Ljava/lang/String;
 
-    iput-object v0, v5, Lcom/android/settings/search/n;->intentTargetClass:Ljava/lang/String;
+    iput-object v0, v5, Lcom/android/settings_ext/search/n;->intentTargetClass:Ljava/lang/String;
 
     .line 90
     invoke-interface {v2, v5}, Ljava/util/List;->add(Ljava/lang/Object;)Z

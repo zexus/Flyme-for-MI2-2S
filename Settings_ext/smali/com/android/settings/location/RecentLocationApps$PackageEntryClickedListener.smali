@@ -1,4 +1,4 @@
-.class Lcom/android/settings/location/RecentLocationApps$PackageEntryClickedListener;
+.class Lcom/android/settings_ext/location/RecentLocationApps$PackageEntryClickedListener;
 .super Ljava/lang/Object;
 .source "RecentLocationApps.java"
 
@@ -7,23 +7,23 @@
 
 
 # instance fields
-.field final synthetic ada:Lcom/android/settings/location/RecentLocationApps;
+.field final synthetic ada:Lcom/android/settings_ext/location/RecentLocationApps;
 
 .field private mPackage:Ljava/lang/String;
 
 
 # direct methods
-.method public constructor <init>(Lcom/android/settings/location/RecentLocationApps;Ljava/lang/String;)V
+.method public constructor <init>(Lcom/android/settings_ext/location/RecentLocationApps;Ljava/lang/String;)V
     .locals 0
 
     .prologue
     .line 73
-    iput-object p1, p0, Lcom/android/settings/location/RecentLocationApps$PackageEntryClickedListener;->ada:Lcom/android/settings/location/RecentLocationApps;
+    iput-object p1, p0, Lcom/android/settings_ext/location/RecentLocationApps$PackageEntryClickedListener;->ada:Lcom/android/settings_ext/location/RecentLocationApps;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 74
-    iput-object p2, p0, Lcom/android/settings/location/RecentLocationApps$PackageEntryClickedListener;->mPackage:Ljava/lang/String;
+    iput-object p2, p0, Lcom/android/settings_ext/location/RecentLocationApps$PackageEntryClickedListener;->mPackage:Ljava/lang/String;
 
     .line 75
     return-void
@@ -45,18 +45,18 @@
     .line 81
     const-string v0, "package"
 
-    iget-object v1, p0, Lcom/android/settings/location/RecentLocationApps$PackageEntryClickedListener;->mPackage:Ljava/lang/String;
+    iget-object v1, p0, Lcom/android/settings_ext/location/RecentLocationApps$PackageEntryClickedListener;->mPackage:Ljava/lang/String;
 
     invoke-virtual {v2, v0, v1}, Landroid/os/Bundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 87
-    iget-object v0, p0, Lcom/android/settings/location/RecentLocationApps$PackageEntryClickedListener;->ada:Lcom/android/settings/location/RecentLocationApps;
+    iget-object v0, p0, Lcom/android/settings_ext/location/RecentLocationApps$PackageEntryClickedListener;->ada:Lcom/android/settings_ext/location/RecentLocationApps;
 
-    invoke-static {v0}, Lcom/android/settings/location/RecentLocationApps;->a(Lcom/android/settings/location/RecentLocationApps;)Landroid/app/Activity;
+    invoke-static {v0}, Lcom/android/settings_ext/location/RecentLocationApps;->a(Lcom/android/settings_ext/location/RecentLocationApps;)Landroid/app/Activity;
 
     move-result-object v0
 
-    const-class v1, Lcom/android/settings/applications/InstalledAppDetailsFragment;
+    const-class v1, Lcom/android/settings_ext/applications/InstalledAppDetailsFragment;
 
     invoke-virtual {v1}, Ljava/lang/Class;->getName()Ljava/lang/String;
 
@@ -68,7 +68,7 @@
 
     move-object v5, v4
 
-    invoke-static/range {v0 .. v6}, Lcom/android/settings/eK;->a(Landroid/app/Activity;Ljava/lang/String;Landroid/os/Bundle;ILjava/lang/CharSequence;Landroid/app/Fragment;I)V
+    invoke-static/range {v0 .. v6}, Lcom/android/settings_ext/eK;->a(Landroid/app/Activity;Ljava/lang/String;Landroid/os/Bundle;ILjava/lang/CharSequence;Landroid/app/Fragment;I)V
 
     .line 90
     const/4 v0, 0x1

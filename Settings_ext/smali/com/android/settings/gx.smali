@@ -1,4 +1,4 @@
-.class synthetic Lcom/android/settings/gx;
+.class synthetic Lcom/android/settings_ext/gx;
 .super Ljava/lang/Object;
 .source "SettingsApplication.java"
 
@@ -13,7 +13,7 @@
 
     .prologue
     .line 213
-    invoke-static {}, Lcom/android/settings/ShortcutHelper$Shortcut;->values()[Lcom/android/settings/ShortcutHelper$Shortcut;
+    invoke-static {}, Lcom/android/settings_ext/ShortcutHelper$Shortcut;->values()[Lcom/android/settings_ext/ShortcutHelper$Shortcut;
 
     move-result-object v0
 
@@ -21,14 +21,14 @@
 
     new-array v0, v0, [I
 
-    sput-object v0, Lcom/android/settings/gx;->xB:[I
+    sput-object v0, Lcom/android/settings_ext/gx;->xB:[I
 
     :try_start_0
-    sget-object v0, Lcom/android/settings/gx;->xB:[I
+    sget-object v0, Lcom/android/settings_ext/gx;->xB:[I
 
-    sget-object v1, Lcom/android/settings/ShortcutHelper$Shortcut;->xC:Lcom/android/settings/ShortcutHelper$Shortcut;
+    sget-object v1, Lcom/android/settings_ext/ShortcutHelper$Shortcut;->xC:Lcom/android/settings_ext/ShortcutHelper$Shortcut;
 
-    invoke-virtual {v1}, Lcom/android/settings/ShortcutHelper$Shortcut;->ordinal()I
+    invoke-virtual {v1}, Lcom/android/settings_ext/ShortcutHelper$Shortcut;->ordinal()I
 
     move-result v1
 
@@ -40,11 +40,11 @@
 
     :goto_0
     :try_start_1
-    sget-object v0, Lcom/android/settings/gx;->xB:[I
+    sget-object v0, Lcom/android/settings_ext/gx;->xB:[I
 
-    sget-object v1, Lcom/android/settings/ShortcutHelper$Shortcut;->xG:Lcom/android/settings/ShortcutHelper$Shortcut;
+    sget-object v1, Lcom/android/settings_ext/ShortcutHelper$Shortcut;->xG:Lcom/android/settings_ext/ShortcutHelper$Shortcut;
 
-    invoke-virtual {v1}, Lcom/android/settings/ShortcutHelper$Shortcut;->ordinal()I
+    invoke-virtual {v1}, Lcom/android/settings_ext/ShortcutHelper$Shortcut;->ordinal()I
 
     move-result v1
 
@@ -56,11 +56,11 @@
 
     :goto_1
     :try_start_2
-    sget-object v0, Lcom/android/settings/gx;->xB:[I
+    sget-object v0, Lcom/android/settings_ext/gx;->xB:[I
 
-    sget-object v1, Lcom/android/settings/ShortcutHelper$Shortcut;->xH:Lcom/android/settings/ShortcutHelper$Shortcut;
+    sget-object v1, Lcom/android/settings_ext/ShortcutHelper$Shortcut;->xH:Lcom/android/settings_ext/ShortcutHelper$Shortcut;
 
-    invoke-virtual {v1}, Lcom/android/settings/ShortcutHelper$Shortcut;->ordinal()I
+    invoke-virtual {v1}, Lcom/android/settings_ext/ShortcutHelper$Shortcut;->ordinal()I
 
     move-result v1
 
@@ -72,11 +72,11 @@
 
     :goto_2
     :try_start_3
-    sget-object v0, Lcom/android/settings/gx;->xB:[I
+    sget-object v0, Lcom/android/settings_ext/gx;->xB:[I
 
-    sget-object v1, Lcom/android/settings/ShortcutHelper$Shortcut;->xD:Lcom/android/settings/ShortcutHelper$Shortcut;
+    sget-object v1, Lcom/android/settings_ext/ShortcutHelper$Shortcut;->xD:Lcom/android/settings_ext/ShortcutHelper$Shortcut;
 
-    invoke-virtual {v1}, Lcom/android/settings/ShortcutHelper$Shortcut;->ordinal()I
+    invoke-virtual {v1}, Lcom/android/settings_ext/ShortcutHelper$Shortcut;->ordinal()I
 
     move-result v1
 
@@ -88,11 +88,11 @@
 
     :goto_3
     :try_start_4
-    sget-object v0, Lcom/android/settings/gx;->xB:[I
+    sget-object v0, Lcom/android/settings_ext/gx;->xB:[I
 
-    sget-object v1, Lcom/android/settings/ShortcutHelper$Shortcut;->xE:Lcom/android/settings/ShortcutHelper$Shortcut;
+    sget-object v1, Lcom/android/settings_ext/ShortcutHelper$Shortcut;->xE:Lcom/android/settings_ext/ShortcutHelper$Shortcut;
 
-    invoke-virtual {v1}, Lcom/android/settings/ShortcutHelper$Shortcut;->ordinal()I
+    invoke-virtual {v1}, Lcom/android/settings_ext/ShortcutHelper$Shortcut;->ordinal()I
 
     move-result v1
 
@@ -104,11 +104,11 @@
 
     :goto_4
     :try_start_5
-    sget-object v0, Lcom/android/settings/gx;->xB:[I
+    sget-object v0, Lcom/android/settings_ext/gx;->xB:[I
 
-    sget-object v1, Lcom/android/settings/ShortcutHelper$Shortcut;->xF:Lcom/android/settings/ShortcutHelper$Shortcut;
+    sget-object v1, Lcom/android/settings_ext/ShortcutHelper$Shortcut;->xF:Lcom/android/settings_ext/ShortcutHelper$Shortcut;
 
-    invoke-virtual {v1}, Lcom/android/settings/ShortcutHelper$Shortcut;->ordinal()I
+    invoke-virtual {v1}, Lcom/android/settings_ext/ShortcutHelper$Shortcut;->ordinal()I
 
     move-result v1
 

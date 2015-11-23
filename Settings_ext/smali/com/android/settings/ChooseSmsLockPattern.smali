@@ -1,5 +1,5 @@
-.class public Lcom/android/settings/ChooseSmsLockPattern;
-.super Lcom/android/settings/MiuiChooseLockPattern;
+.class public Lcom/android/settings_ext/ChooseSmsLockPattern;
+.super Lcom/android/settings_ext/MiuiChooseLockPattern;
 .source "ChooseSmsLockPattern.java"
 
 
@@ -9,7 +9,7 @@
 
     .prologue
     .line 16
-    invoke-direct {p0}, Lcom/android/settings/MiuiChooseLockPattern;-><init>()V
+    invoke-direct {p0}, Lcom/android/settings_ext/MiuiChooseLockPattern;-><init>()V
 
     .line 25
     return-void
@@ -24,7 +24,7 @@
     .line 20
     new-instance v0, Landroid/content/Intent;
 
-    invoke-super {p0}, Lcom/android/settings/MiuiChooseLockPattern;->getIntent()Landroid/content/Intent;
+    invoke-super {p0}, Lcom/android/settings_ext/MiuiChooseLockPattern;->getIntent()Landroid/content/Intent;
 
     move-result-object v1
 
@@ -33,7 +33,7 @@
     .line 21
     const-string v1, ":settings:show_fragment"
 
-    const-class v2, Lcom/android/settings/ChooseSmsLockPattern$ChooseSmsFragment;
+    const-class v2, Lcom/android/settings_ext/ChooseSmsLockPattern$ChooseSmsFragment;
 
     invoke-virtual {v2}, Ljava/lang/Class;->getName()Ljava/lang/String;
 

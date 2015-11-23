@@ -1,4 +1,4 @@
-.class Lcom/android/settings/aC;
+.class Lcom/android/settings_ext/aC;
 .super Ljava/lang/Object;
 .source "CredentialStorage.java"
 
@@ -10,16 +10,16 @@
 # instance fields
 .field private eJ:Z
 
-.field final synthetic eK:Lcom/android/settings/CredentialStorage;
+.field final synthetic eK:Lcom/android/settings_ext/CredentialStorage;
 
 
 # direct methods
-.method private constructor <init>(Lcom/android/settings/CredentialStorage;)V
+.method private constructor <init>(Lcom/android/settings_ext/CredentialStorage;)V
     .locals 2
 
     .prologue
     .line 371
-    iput-object p1, p0, Lcom/android/settings/aC;->eK:Lcom/android/settings/CredentialStorage;
+    iput-object p1, p0, Lcom/android/settings_ext/aC;->eK:Lcom/android/settings_ext/CredentialStorage;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -66,12 +66,12 @@
     return-void
 .end method
 
-.method synthetic constructor <init>(Lcom/android/settings/CredentialStorage;Lcom/android/settings/aB;)V
+.method synthetic constructor <init>(Lcom/android/settings_ext/CredentialStorage;Lcom/android/settings_ext/aB;)V
     .locals 0
 
     .prologue
     .line 366
-    invoke-direct {p0, p1}, Lcom/android/settings/aC;-><init>(Lcom/android/settings/CredentialStorage;)V
+    invoke-direct {p0, p1}, Lcom/android/settings_ext/aC;-><init>(Lcom/android/settings_ext/CredentialStorage;)V
 
     return-void
 .end method
@@ -90,7 +90,7 @@
     const/4 v0, 0x1
 
     :goto_0
-    iput-boolean v0, p0, Lcom/android/settings/aC;->eJ:Z
+    iput-boolean v0, p0, Lcom/android/settings_ext/aC;->eJ:Z
 
     .line 384
     return-void
@@ -107,14 +107,14 @@
 
     .prologue
     .line 387
-    iget-boolean v0, p0, Lcom/android/settings/aC;->eJ:Z
+    iget-boolean v0, p0, Lcom/android/settings_ext/aC;->eJ:Z
 
     if-eqz v0, :cond_0
 
     .line 388
     const/4 v0, 0x0
 
-    iput-boolean v0, p0, Lcom/android/settings/aC;->eJ:Z
+    iput-boolean v0, p0, Lcom/android/settings_ext/aC;->eJ:Z
 
     .line 389
     new-instance v0, Landroid/content/Intent;
@@ -131,9 +131,9 @@
     invoke-virtual {v0, v1, v2}, Landroid/content/Intent;->putExtra(Ljava/lang/String;I)Landroid/content/Intent;
 
     .line 392
-    iget-object v1, p0, Lcom/android/settings/aC;->eK:Lcom/android/settings/CredentialStorage;
+    iget-object v1, p0, Lcom/android/settings_ext/aC;->eK:Lcom/android/settings_ext/CredentialStorage;
 
-    invoke-virtual {v1, v0}, Lcom/android/settings/CredentialStorage;->startActivity(Landroid/content/Intent;)V
+    invoke-virtual {v1, v0}, Lcom/android/settings_ext/CredentialStorage;->startActivity(Landroid/content/Intent;)V
 
     .line 396
     :goto_0
@@ -141,9 +141,9 @@
 
     .line 395
     :cond_0
-    iget-object v0, p0, Lcom/android/settings/aC;->eK:Lcom/android/settings/CredentialStorage;
+    iget-object v0, p0, Lcom/android/settings_ext/aC;->eK:Lcom/android/settings_ext/CredentialStorage;
 
-    invoke-virtual {v0}, Lcom/android/settings/CredentialStorage;->finish()V
+    invoke-virtual {v0}, Lcom/android/settings_ext/CredentialStorage;->finish()V
 
     goto :goto_0
 .end method

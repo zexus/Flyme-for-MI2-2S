@@ -1,4 +1,4 @@
-.class public interface abstract Lcom/android/settings/ht;
+.class public interface abstract Lcom/android/settings_ext/ht;
 .super Ljava/lang/Object;
 .source "ZonePicker.java"
 

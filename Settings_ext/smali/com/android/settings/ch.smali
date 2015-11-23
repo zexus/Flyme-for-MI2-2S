@@ -1,4 +1,4 @@
-.class Lcom/android/settings/ch;
+.class Lcom/android/settings_ext/ch;
 .super Ljava/lang/Object;
 .source "DreamSettings.java"
 
@@ -9,18 +9,18 @@
 # instance fields
 .field final synthetic kv:Landroid/view/View;
 
-.field final synthetic kw:Lcom/android/settings/ce;
+.field final synthetic kw:Lcom/android/settings_ext/ce;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/ce;Landroid/view/View;)V
+.method constructor <init>(Lcom/android/settings_ext/ce;Landroid/view/View;)V
     .locals 0
 
     .prologue
     .line 335
-    iput-object p1, p0, Lcom/android/settings/ch;->kw:Lcom/android/settings/ce;
+    iput-object p1, p0, Lcom/android/settings_ext/ch;->kw:Lcom/android/settings_ext/ce;
 
-    iput-object p2, p0, Lcom/android/settings/ch;->kv:Landroid/view/View;
+    iput-object p2, p0, Lcom/android/settings_ext/ch;->kv:Landroid/view/View;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -39,17 +39,17 @@
     invoke-virtual {p1, v0}, Landroid/view/View;->setPressed(Z)V
 
     .line 339
-    iget-object v1, p0, Lcom/android/settings/ch;->kw:Lcom/android/settings/ce;
+    iget-object v1, p0, Lcom/android/settings_ext/ch;->kw:Lcom/android/settings_ext/ce;
 
-    iget-object v0, p0, Lcom/android/settings/ch;->kv:Landroid/view/View;
+    iget-object v0, p0, Lcom/android/settings_ext/ch;->kv:Landroid/view/View;
 
     invoke-virtual {v0}, Landroid/view/View;->getTag()Ljava/lang/Object;
 
     move-result-object v0
 
-    check-cast v0, Lcom/android/settings/bY;
+    check-cast v0, Lcom/android/settings_ext/bY;
 
-    invoke-static {v1, v0}, Lcom/android/settings/ce;->a(Lcom/android/settings/ce;Lcom/android/settings/bY;)V
+    invoke-static {v1, v0}, Lcom/android/settings_ext/ce;->a(Lcom/android/settings_ext/ce;Lcom/android/settings_ext/bY;)V
 
     .line 340
     return-void

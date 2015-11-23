@@ -1,4 +1,4 @@
-.class Lcom/android/settings/bM;
+.class Lcom/android/settings_ext/bM;
 .super Ljava/lang/Object;
 .source "DeviceAdminSettings.java"
 

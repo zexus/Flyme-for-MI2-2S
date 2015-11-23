@@ -1,4 +1,4 @@
-.class public final Lcom/android/settings/search/m;
+.class public final Lcom/android/settings_ext/search/m;
 .super Ljava/lang/Object;
 .source "Ranking.java"
 
@@ -29,26 +29,26 @@
     .line 82
     const/16 v0, 0x800
 
-    sput v0, Lcom/android/settings/search/m;->aiU:I
+    sput v0, Lcom/android/settings_ext/search/m;->aiU:I
 
     .line 84
     new-instance v0, Ljava/util/HashMap;
 
     invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
 
-    sput-object v0, Lcom/android/settings/search/m;->aiV:Ljava/util/HashMap;
+    sput-object v0, Lcom/android/settings_ext/search/m;->aiV:Ljava/util/HashMap;
 
     .line 85
     new-instance v0, Ljava/util/HashMap;
 
     invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
 
-    sput-object v0, Lcom/android/settings/search/m;->aiW:Ljava/util/HashMap;
+    sput-object v0, Lcom/android/settings_ext/search/m;->aiW:Ljava/util/HashMap;
 
     .line 89
-    sget-object v0, Lcom/android/settings/search/m;->aiV:Ljava/util/HashMap;
+    sget-object v0, Lcom/android/settings_ext/search/m;->aiV:Ljava/util/HashMap;
 
-    const-class v1, Lcom/android/settings/wifi/WifiSettings;
+    const-class v1, Lcom/android/settings_ext/wifi/WifiSettings;
 
     invoke-virtual {v1}, Ljava/lang/Class;->getName()Ljava/lang/String;
 
@@ -61,9 +61,9 @@
     invoke-virtual {v0, v1, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 90
-    sget-object v0, Lcom/android/settings/search/m;->aiV:Ljava/util/HashMap;
+    sget-object v0, Lcom/android/settings_ext/search/m;->aiV:Ljava/util/HashMap;
 
-    const-class v1, Lcom/android/settings/wifi/AdvancedWifiSettings;
+    const-class v1, Lcom/android/settings_ext/wifi/AdvancedWifiSettings;
 
     invoke-virtual {v1}, Ljava/lang/Class;->getName()Ljava/lang/String;
 
@@ -76,9 +76,9 @@
     invoke-virtual {v0, v1, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 91
-    sget-object v0, Lcom/android/settings/search/m;->aiV:Ljava/util/HashMap;
+    sget-object v0, Lcom/android/settings_ext/search/m;->aiV:Ljava/util/HashMap;
 
-    const-class v1, Lcom/android/settings/wifi/SavedAccessPointsWifiSettings;
+    const-class v1, Lcom/android/settings_ext/wifi/SavedAccessPointsWifiSettings;
 
     invoke-virtual {v1}, Ljava/lang/Class;->getName()Ljava/lang/String;
 
@@ -91,9 +91,9 @@
     invoke-virtual {v0, v1, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 94
-    sget-object v0, Lcom/android/settings/search/m;->aiV:Ljava/util/HashMap;
+    sget-object v0, Lcom/android/settings_ext/search/m;->aiV:Ljava/util/HashMap;
 
-    const-class v1, Lcom/android/settings/bluetooth/BluetoothSettings;
+    const-class v1, Lcom/android/settings_ext/bluetooth/BluetoothSettings;
 
     invoke-virtual {v1}, Ljava/lang/Class;->getName()Ljava/lang/String;
 
@@ -108,9 +108,9 @@
     invoke-virtual {v0, v1, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 97
-    sget-object v0, Lcom/android/settings/search/m;->aiV:Ljava/util/HashMap;
+    sget-object v0, Lcom/android/settings_ext/search/m;->aiV:Ljava/util/HashMap;
 
-    const-class v1, Lcom/android/settings/DataUsageSummary;
+    const-class v1, Lcom/android/settings_ext/DataUsageSummary;
 
     invoke-virtual {v1}, Ljava/lang/Class;->getName()Ljava/lang/String;
 
@@ -123,9 +123,9 @@
     invoke-virtual {v0, v1, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 98
-    sget-object v0, Lcom/android/settings/search/m;->aiV:Ljava/util/HashMap;
+    sget-object v0, Lcom/android/settings_ext/search/m;->aiV:Ljava/util/HashMap;
 
-    const-class v1, Lcom/android/settings/b/c;
+    const-class v1, Lcom/android/settings_ext/b/c;
 
     invoke-virtual {v1}, Ljava/lang/Class;->getName()Ljava/lang/String;
 
@@ -138,9 +138,9 @@
     invoke-virtual {v0, v1, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 101
-    sget-object v0, Lcom/android/settings/search/m;->aiV:Ljava/util/HashMap;
+    sget-object v0, Lcom/android/settings_ext/search/m;->aiV:Ljava/util/HashMap;
 
-    const-class v1, Lcom/android/settings/WirelessSettings;
+    const-class v1, Lcom/android/settings_ext/WirelessSettings;
 
     invoke-virtual {v1}, Ljava/lang/Class;->getName()Ljava/lang/String;
 
@@ -155,9 +155,9 @@
     invoke-virtual {v0, v1, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 104
-    sget-object v0, Lcom/android/settings/search/m;->aiV:Ljava/util/HashMap;
+    sget-object v0, Lcom/android/settings_ext/search/m;->aiV:Ljava/util/HashMap;
 
-    const-class v1, Lcom/android/settings/HomeSettings;
+    const-class v1, Lcom/android/settings_ext/HomeSettings;
 
     invoke-virtual {v1}, Ljava/lang/Class;->getName()Ljava/lang/String;
 
@@ -172,9 +172,9 @@
     invoke-virtual {v0, v1, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 107
-    sget-object v0, Lcom/android/settings/search/m;->aiV:Ljava/util/HashMap;
+    sget-object v0, Lcom/android/settings_ext/search/m;->aiV:Ljava/util/HashMap;
 
-    const-class v1, Lcom/android/settings/DisplaySettings;
+    const-class v1, Lcom/android/settings_ext/DisplaySettings;
 
     invoke-virtual {v1}, Ljava/lang/Class;->getName()Ljava/lang/String;
 
@@ -189,9 +189,9 @@
     invoke-virtual {v0, v1, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 110
-    sget-object v0, Lcom/android/settings/search/m;->aiV:Ljava/util/HashMap;
+    sget-object v0, Lcom/android/settings_ext/search/m;->aiV:Ljava/util/HashMap;
 
-    const-class v1, Lcom/android/settings/WallpaperTypeSettings;
+    const-class v1, Lcom/android/settings_ext/WallpaperTypeSettings;
 
     invoke-virtual {v1}, Ljava/lang/Class;->getName()Ljava/lang/String;
 
@@ -206,9 +206,9 @@
     invoke-virtual {v0, v1, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 113
-    sget-object v0, Lcom/android/settings/search/m;->aiV:Ljava/util/HashMap;
+    sget-object v0, Lcom/android/settings_ext/search/m;->aiV:Ljava/util/HashMap;
 
-    const-class v1, Lcom/android/settings/notification/NotificationSettings;
+    const-class v1, Lcom/android/settings_ext/notification/NotificationSettings;
 
     invoke-virtual {v1}, Ljava/lang/Class;->getName()Ljava/lang/String;
 
@@ -221,9 +221,9 @@
     invoke-virtual {v0, v1, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 114
-    sget-object v0, Lcom/android/settings/search/m;->aiV:Ljava/util/HashMap;
+    sget-object v0, Lcom/android/settings_ext/search/m;->aiV:Ljava/util/HashMap;
 
-    const-class v1, Lcom/android/settings/notification/OtherSoundSettings;
+    const-class v1, Lcom/android/settings_ext/notification/OtherSoundSettings;
 
     invoke-virtual {v1}, Ljava/lang/Class;->getName()Ljava/lang/String;
 
@@ -236,9 +236,9 @@
     invoke-virtual {v0, v1, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 116
-    sget-object v0, Lcom/android/settings/search/m;->aiV:Ljava/util/HashMap;
+    sget-object v0, Lcom/android/settings_ext/search/m;->aiV:Ljava/util/HashMap;
 
-    const-class v1, Lcom/android/settings/notification/MiuiZenModeSettings;
+    const-class v1, Lcom/android/settings_ext/notification/MiuiZenModeSettings;
 
     invoke-virtual {v1}, Ljava/lang/Class;->getName()Ljava/lang/String;
 
@@ -251,9 +251,9 @@
     invoke-virtual {v0, v1, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 119
-    sget-object v0, Lcom/android/settings/search/m;->aiV:Ljava/util/HashMap;
+    sget-object v0, Lcom/android/settings_ext/search/m;->aiV:Ljava/util/HashMap;
 
-    const-class v1, Lcom/android/settings/deviceinfo/Memory;
+    const-class v1, Lcom/android/settings_ext/deviceinfo/Memory;
 
     invoke-virtual {v1}, Ljava/lang/Class;->getName()Ljava/lang/String;
 
@@ -268,9 +268,9 @@
     invoke-virtual {v0, v1, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 122
-    sget-object v0, Lcom/android/settings/search/m;->aiV:Ljava/util/HashMap;
+    sget-object v0, Lcom/android/settings_ext/search/m;->aiV:Ljava/util/HashMap;
 
-    const-class v1, Lcom/android/settings/fuelgauge/PowerUsageSummary;
+    const-class v1, Lcom/android/settings_ext/fuelgauge/PowerUsageSummary;
 
     invoke-virtual {v1}, Ljava/lang/Class;->getName()Ljava/lang/String;
 
@@ -283,9 +283,9 @@
     invoke-virtual {v0, v1, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 123
-    sget-object v0, Lcom/android/settings/search/m;->aiV:Ljava/util/HashMap;
+    sget-object v0, Lcom/android/settings_ext/search/m;->aiV:Ljava/util/HashMap;
 
-    const-class v1, Lcom/android/settings/fuelgauge/BatterySaverSettings;
+    const-class v1, Lcom/android/settings_ext/fuelgauge/BatterySaverSettings;
 
     invoke-virtual {v1}, Ljava/lang/Class;->getName()Ljava/lang/String;
 
@@ -298,9 +298,9 @@
     invoke-virtual {v0, v1, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 126
-    sget-object v0, Lcom/android/settings/search/m;->aiV:Ljava/util/HashMap;
+    sget-object v0, Lcom/android/settings_ext/search/m;->aiV:Ljava/util/HashMap;
 
-    const-class v1, Lcom/android/settings/users/UserSettings;
+    const-class v1, Lcom/android/settings_ext/users/UserSettings;
 
     invoke-virtual {v1}, Ljava/lang/Class;->getName()Ljava/lang/String;
 
@@ -315,9 +315,9 @@
     invoke-virtual {v0, v1, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 129
-    sget-object v0, Lcom/android/settings/search/m;->aiV:Ljava/util/HashMap;
+    sget-object v0, Lcom/android/settings_ext/search/m;->aiV:Ljava/util/HashMap;
 
-    const-class v1, Lcom/android/settings/location/LocationSettings;
+    const-class v1, Lcom/android/settings_ext/location/LocationSettings;
 
     invoke-virtual {v1}, Ljava/lang/Class;->getName()Ljava/lang/String;
 
@@ -332,9 +332,9 @@
     invoke-virtual {v0, v1, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 132
-    sget-object v0, Lcom/android/settings/search/m;->aiV:Ljava/util/HashMap;
+    sget-object v0, Lcom/android/settings_ext/search/m;->aiV:Ljava/util/HashMap;
 
-    const-class v1, Lcom/android/settings/SecuritySettings;
+    const-class v1, Lcom/android/settings_ext/SecuritySettings;
 
     invoke-virtual {v1}, Ljava/lang/Class;->getName()Ljava/lang/String;
 
@@ -347,9 +347,9 @@
     invoke-virtual {v0, v1, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 133
-    sget-object v0, Lcom/android/settings/search/m;->aiV:Ljava/util/HashMap;
+    sget-object v0, Lcom/android/settings_ext/search/m;->aiV:Ljava/util/HashMap;
 
-    const-class v1, Lcom/android/settings/ChooseLockGeneric$ChooseLockGenericFragment;
+    const-class v1, Lcom/android/settings_ext/ChooseLockGeneric$ChooseLockGenericFragment;
 
     invoke-virtual {v1}, Ljava/lang/Class;->getName()Ljava/lang/String;
 
@@ -362,9 +362,9 @@
     invoke-virtual {v0, v1, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 134
-    sget-object v0, Lcom/android/settings/search/m;->aiV:Ljava/util/HashMap;
+    sget-object v0, Lcom/android/settings_ext/search/m;->aiV:Ljava/util/HashMap;
 
-    const-class v1, Lcom/android/settings/ScreenPinningSettings;
+    const-class v1, Lcom/android/settings_ext/ScreenPinningSettings;
 
     invoke-virtual {v1}, Ljava/lang/Class;->getName()Ljava/lang/String;
 
@@ -377,9 +377,9 @@
     invoke-virtual {v0, v1, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 137
-    sget-object v0, Lcom/android/settings/search/m;->aiV:Ljava/util/HashMap;
+    sget-object v0, Lcom/android/settings_ext/search/m;->aiV:Ljava/util/HashMap;
 
-    const-class v1, Lcom/android/settings/inputmethod/InputMethodAndLanguageSettings;
+    const-class v1, Lcom/android/settings_ext/inputmethod/InputMethodAndLanguageSettings;
 
     invoke-virtual {v1}, Ljava/lang/Class;->getName()Ljava/lang/String;
 
@@ -394,9 +394,9 @@
     invoke-virtual {v0, v1, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 138
-    sget-object v0, Lcom/android/settings/search/m;->aiV:Ljava/util/HashMap;
+    sget-object v0, Lcom/android/settings_ext/search/m;->aiV:Ljava/util/HashMap;
 
-    const-class v1, Lcom/android/settings/voice/VoiceInputSettings;
+    const-class v1, Lcom/android/settings_ext/voice/VoiceInputSettings;
 
     invoke-virtual {v1}, Ljava/lang/Class;->getName()Ljava/lang/String;
 
@@ -411,9 +411,9 @@
     invoke-virtual {v0, v1, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 141
-    sget-object v0, Lcom/android/settings/search/m;->aiV:Ljava/util/HashMap;
+    sget-object v0, Lcom/android/settings_ext/search/m;->aiV:Ljava/util/HashMap;
 
-    const-class v1, Lcom/android/settings/PrivacySettings;
+    const-class v1, Lcom/android/settings_ext/PrivacySettings;
 
     invoke-virtual {v1}, Ljava/lang/Class;->getName()Ljava/lang/String;
 
@@ -428,9 +428,9 @@
     invoke-virtual {v0, v1, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 144
-    sget-object v0, Lcom/android/settings/search/m;->aiV:Ljava/util/HashMap;
+    sget-object v0, Lcom/android/settings_ext/search/m;->aiV:Ljava/util/HashMap;
 
-    const-class v1, Lcom/android/settings/DateTimeSettings;
+    const-class v1, Lcom/android/settings_ext/DateTimeSettings;
 
     invoke-virtual {v1}, Ljava/lang/Class;->getName()Ljava/lang/String;
 
@@ -445,9 +445,9 @@
     invoke-virtual {v0, v1, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 147
-    sget-object v0, Lcom/android/settings/search/m;->aiV:Ljava/util/HashMap;
+    sget-object v0, Lcom/android/settings_ext/search/m;->aiV:Ljava/util/HashMap;
 
-    const-class v1, Lcom/android/settings/accessibility/AccessibilitySettings;
+    const-class v1, Lcom/android/settings_ext/accessibility/AccessibilitySettings;
 
     invoke-virtual {v1}, Ljava/lang/Class;->getName()Ljava/lang/String;
 
@@ -462,9 +462,9 @@
     invoke-virtual {v0, v1, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 150
-    sget-object v0, Lcom/android/settings/search/m;->aiV:Ljava/util/HashMap;
+    sget-object v0, Lcom/android/settings_ext/search/m;->aiV:Ljava/util/HashMap;
 
-    const-class v1, Lcom/android/settings/print/PrintSettingsFragment;
+    const-class v1, Lcom/android/settings_ext/print/PrintSettingsFragment;
 
     invoke-virtual {v1}, Ljava/lang/Class;->getName()Ljava/lang/String;
 
@@ -479,9 +479,9 @@
     invoke-virtual {v0, v1, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 153
-    sget-object v0, Lcom/android/settings/search/m;->aiV:Ljava/util/HashMap;
+    sget-object v0, Lcom/android/settings_ext/search/m;->aiV:Ljava/util/HashMap;
 
-    const-class v1, Lcom/android/settings/DevelopmentSettings;
+    const-class v1, Lcom/android/settings_ext/DevelopmentSettings;
 
     invoke-virtual {v1}, Ljava/lang/Class;->getName()Ljava/lang/String;
 
@@ -496,9 +496,9 @@
     invoke-virtual {v0, v1, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 156
-    sget-object v0, Lcom/android/settings/search/m;->aiV:Ljava/util/HashMap;
+    sget-object v0, Lcom/android/settings_ext/search/m;->aiV:Ljava/util/HashMap;
 
-    const-class v1, Lcom/android/settings/DeviceInfoSettings;
+    const-class v1, Lcom/android/settings_ext/DeviceInfoSettings;
 
     invoke-virtual {v1}, Ljava/lang/Class;->getName()Ljava/lang/String;
 
@@ -513,7 +513,7 @@
     invoke-virtual {v0, v1, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 158
-    sget-object v0, Lcom/android/settings/search/m;->aiW:Ljava/util/HashMap;
+    sget-object v0, Lcom/android/settings_ext/search/m;->aiW:Ljava/util/HashMap;
 
     const-string v1, "com.android.settings"
 
@@ -534,7 +534,7 @@
 
     .prologue
     .line 162
-    sget-object v0, Lcom/android/settings/search/m;->aiV:Ljava/util/HashMap;
+    sget-object v0, Lcom/android/settings_ext/search/m;->aiV:Ljava/util/HashMap;
 
     invoke-virtual {v0, p0}, Ljava/util/HashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -563,13 +563,13 @@
 
     .prologue
     .line 167
-    sget-object v1, Lcom/android/settings/search/m;->aiW:Ljava/util/HashMap;
+    sget-object v1, Lcom/android/settings_ext/search/m;->aiW:Ljava/util/HashMap;
 
     monitor-enter v1
 
     .line 168
     :try_start_0
-    sget-object v0, Lcom/android/settings/search/m;->aiW:Ljava/util/HashMap;
+    sget-object v0, Lcom/android/settings_ext/search/m;->aiW:Ljava/util/HashMap;
 
     invoke-virtual {v0, p0}, Ljava/util/HashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -593,16 +593,16 @@
 
     .line 172
     :cond_0
-    sget v0, Lcom/android/settings/search/m;->aiU:I
+    sget v0, Lcom/android/settings_ext/search/m;->aiU:I
 
     add-int/lit8 v0, v0, 0x1
 
-    sput v0, Lcom/android/settings/search/m;->aiU:I
+    sput v0, Lcom/android/settings_ext/search/m;->aiU:I
 
     .line 173
-    sget-object v0, Lcom/android/settings/search/m;->aiW:Ljava/util/HashMap;
+    sget-object v0, Lcom/android/settings_ext/search/m;->aiW:Ljava/util/HashMap;
 
-    sget v2, Lcom/android/settings/search/m;->aiU:I
+    sget v2, Lcom/android/settings_ext/search/m;->aiU:I
 
     invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -611,7 +611,7 @@
     invoke-virtual {v0, p0, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 174
-    sget v0, Lcom/android/settings/search/m;->aiU:I
+    sget v0, Lcom/android/settings_ext/search/m;->aiU:I
 
     monitor-exit v1
 

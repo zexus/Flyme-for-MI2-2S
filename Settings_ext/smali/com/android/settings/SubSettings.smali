@@ -1,5 +1,5 @@
-.class public Lcom/android/settings/SubSettings;
-.super Lcom/android/settings/gh;
+.class public Lcom/android/settings_ext/SubSettings;
+.super Lcom/android/settings_ext/gh;
 .source "SubSettings.java"
 
 
@@ -9,7 +9,7 @@
 
     .prologue
     .line 25
-    invoke-direct {p0}, Lcom/android/settings/gh;-><init>()V
+    invoke-direct {p0}, Lcom/android/settings_ext/gh;-><init>()V
 
     return-void
 .end method
@@ -54,7 +54,7 @@
 
     .prologue
     .line 29
-    invoke-virtual {p0}, Lcom/android/settings/SubSettings;->finish()V
+    invoke-virtual {p0}, Lcom/android/settings_ext/SubSettings;->finish()V
 
     .line 30
     const/4 v0, 0x1

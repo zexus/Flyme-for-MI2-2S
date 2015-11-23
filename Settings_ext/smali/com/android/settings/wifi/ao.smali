@@ -1,4 +1,4 @@
-.class public Lcom/android/settings/wifi/ao;
+.class public Lcom/android/settings_ext/wifi/ao;
 .super Ljava/lang/Object;
 .source "WifiSettings.java"
 
@@ -20,7 +20,7 @@
 
     invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
 
-    iput-object v0, p0, Lcom/android/settings/wifi/ao;->avZ:Ljava/util/HashMap;
+    iput-object v0, p0, Lcom/android/settings_ext/wifi/ao;->avZ:Ljava/util/HashMap;
 
     return-void
 .end method
@@ -32,7 +32,7 @@
 
     .prologue
     .line 209
-    iget-object v0, p0, Lcom/android/settings/wifi/ao;->avZ:Ljava/util/HashMap;
+    iget-object v0, p0, Lcom/android/settings_ext/wifi/ao;->avZ:Ljava/util/HashMap;
 
     invoke-virtual {v0, p1}, Ljava/util/HashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -59,7 +59,7 @@
 
     .prologue
     .line 214
-    iget-object v0, p0, Lcom/android/settings/wifi/ao;->avZ:Ljava/util/HashMap;
+    iget-object v0, p0, Lcom/android/settings_ext/wifi/ao;->avZ:Ljava/util/HashMap;
 
     invoke-virtual {v0, p1}, Ljava/util/HashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -78,7 +78,7 @@
     invoke-direct {v0, v1}, Ljava/util/ArrayList;-><init>(I)V
 
     .line 217
-    iget-object v1, p0, Lcom/android/settings/wifi/ao;->avZ:Ljava/util/HashMap;
+    iget-object v1, p0, Lcom/android/settings_ext/wifi/ao;->avZ:Ljava/util/HashMap;
 
     invoke-virtual {v1, p1, v0}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 

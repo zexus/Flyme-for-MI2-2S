@@ -1,4 +1,4 @@
-.class public Lcom/android/settings/wifi/openwifi/o;
+.class public Lcom/android/settings_ext/wifi/openwifi/o;
 .super Ljava/lang/Object;
 .source "Utils.java"
 
@@ -75,7 +75,7 @@
     invoke-virtual {v0, v1}, Landroid/content/Intent;->setData(Landroid/net/Uri;)Landroid/content/Intent;
 
     .line 17
-    invoke-static {p0, v0}, Lcom/android/settings/wifi/openwifi/o;->g(Landroid/content/Context;Landroid/content/Intent;)Z
+    invoke-static {p0, v0}, Lcom/android/settings_ext/wifi/openwifi/o;->g(Landroid/content/Context;Landroid/content/Intent;)Z
 
     goto :goto_0
 .end method

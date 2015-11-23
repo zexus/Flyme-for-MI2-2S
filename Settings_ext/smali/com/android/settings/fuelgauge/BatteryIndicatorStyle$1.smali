@@ -1,4 +1,4 @@
-.class Lcom/android/settings/fuelgauge/BatteryIndicatorStyle$1;
+.class Lcom/android/settings_ext/fuelgauge/BatteryIndicatorStyle$1;
 .super Ljava/lang/Object;
 .source "BatteryIndicatorStyle.java"
 
@@ -7,16 +7,16 @@
 
 
 # instance fields
-.field final synthetic aak:Lcom/android/settings/fuelgauge/BatteryIndicatorStyle;
+.field final synthetic aak:Lcom/android/settings_ext/fuelgauge/BatteryIndicatorStyle;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/fuelgauge/BatteryIndicatorStyle;)V
+.method constructor <init>(Lcom/android/settings_ext/fuelgauge/BatteryIndicatorStyle;)V
     .locals 0
 
     .prologue
     .line 39
-    iput-object p1, p0, Lcom/android/settings/fuelgauge/BatteryIndicatorStyle$1;->aak:Lcom/android/settings/fuelgauge/BatteryIndicatorStyle;
+    iput-object p1, p0, Lcom/android/settings_ext/fuelgauge/BatteryIndicatorStyle$1;->aak:Lcom/android/settings_ext/fuelgauge/BatteryIndicatorStyle;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -30,9 +30,9 @@
 
     .prologue
     .line 41
-    iget-object v0, p0, Lcom/android/settings/fuelgauge/BatteryIndicatorStyle$1;->aak:Lcom/android/settings/fuelgauge/BatteryIndicatorStyle;
+    iget-object v0, p0, Lcom/android/settings_ext/fuelgauge/BatteryIndicatorStyle$1;->aak:Lcom/android/settings_ext/fuelgauge/BatteryIndicatorStyle;
 
-    invoke-static {v0}, Lcom/android/settings/fuelgauge/BatteryIndicatorStyle;->a(Lcom/android/settings/fuelgauge/BatteryIndicatorStyle;)[Ljava/lang/CharSequence;
+    invoke-static {v0}, Lcom/android/settings_ext/fuelgauge/BatteryIndicatorStyle;->a(Lcom/android/settings_ext/fuelgauge/BatteryIndicatorStyle;)[Ljava/lang/CharSequence;
 
     move-result-object v0
 
@@ -43,9 +43,9 @@
     if-ltz p2, :cond_0
 
     .line 42
-    iget-object v0, p0, Lcom/android/settings/fuelgauge/BatteryIndicatorStyle$1;->aak:Lcom/android/settings/fuelgauge/BatteryIndicatorStyle;
+    iget-object v0, p0, Lcom/android/settings_ext/fuelgauge/BatteryIndicatorStyle$1;->aak:Lcom/android/settings_ext/fuelgauge/BatteryIndicatorStyle;
 
-    invoke-static {v0}, Lcom/android/settings/fuelgauge/BatteryIndicatorStyle;->a(Lcom/android/settings/fuelgauge/BatteryIndicatorStyle;)[Ljava/lang/CharSequence;
+    invoke-static {v0}, Lcom/android/settings_ext/fuelgauge/BatteryIndicatorStyle;->a(Lcom/android/settings_ext/fuelgauge/BatteryIndicatorStyle;)[Ljava/lang/CharSequence;
 
     move-result-object v0
 
@@ -60,9 +60,9 @@
     move-result v0
 
     .line 43
-    iget-object v1, p0, Lcom/android/settings/fuelgauge/BatteryIndicatorStyle$1;->aak:Lcom/android/settings/fuelgauge/BatteryIndicatorStyle;
+    iget-object v1, p0, Lcom/android/settings_ext/fuelgauge/BatteryIndicatorStyle$1;->aak:Lcom/android/settings_ext/fuelgauge/BatteryIndicatorStyle;
 
-    invoke-static {v1}, Lcom/android/settings/fuelgauge/BatteryIndicatorStyle;->b(Lcom/android/settings/fuelgauge/BatteryIndicatorStyle;)Landroid/content/ContentResolver;
+    invoke-static {v1}, Lcom/android/settings_ext/fuelgauge/BatteryIndicatorStyle;->b(Lcom/android/settings_ext/fuelgauge/BatteryIndicatorStyle;)Landroid/content/ContentResolver;
 
     move-result-object v1
 
@@ -75,9 +75,9 @@
     invoke-interface {p1}, Landroid/content/DialogInterface;->dismiss()V
 
     .line 47
-    iget-object v0, p0, Lcom/android/settings/fuelgauge/BatteryIndicatorStyle$1;->aak:Lcom/android/settings/fuelgauge/BatteryIndicatorStyle;
+    iget-object v0, p0, Lcom/android/settings_ext/fuelgauge/BatteryIndicatorStyle$1;->aak:Lcom/android/settings_ext/fuelgauge/BatteryIndicatorStyle;
 
-    invoke-virtual {v0}, Lcom/android/settings/fuelgauge/BatteryIndicatorStyle;->finish()V
+    invoke-virtual {v0}, Lcom/android/settings_ext/fuelgauge/BatteryIndicatorStyle;->finish()V
 
     .line 48
     return-void

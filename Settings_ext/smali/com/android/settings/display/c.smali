@@ -1,4 +1,4 @@
-.class final Lcom/android/settings/display/c;
+.class final Lcom/android/settings_ext/display/c;
 .super Ljava/lang/Object;
 .source "BrightnessFragment.java"
 
@@ -19,12 +19,12 @@
 
 
 # virtual methods
-.method public bp(I)[Lcom/android/settings/display/BrightnessFragment$SavedState;
+.method public bp(I)[Lcom/android/settings_ext/display/BrightnessFragment$SavedState;
     .locals 1
 
     .prologue
     .line 323
-    new-array v0, p1, [Lcom/android/settings/display/BrightnessFragment$SavedState;
+    new-array v0, p1, [Lcom/android/settings_ext/display/BrightnessFragment$SavedState;
 
     return-object v0
 .end method
@@ -34,21 +34,21 @@
 
     .prologue
     .line 316
-    invoke-virtual {p0, p1}, Lcom/android/settings/display/c;->l(Landroid/os/Parcel;)Lcom/android/settings/display/BrightnessFragment$SavedState;
+    invoke-virtual {p0, p1}, Lcom/android/settings_ext/display/c;->l(Landroid/os/Parcel;)Lcom/android/settings_ext/display/BrightnessFragment$SavedState;
 
     move-result-object v0
 
     return-object v0
 .end method
 
-.method public l(Landroid/os/Parcel;)Lcom/android/settings/display/BrightnessFragment$SavedState;
+.method public l(Landroid/os/Parcel;)Lcom/android/settings_ext/display/BrightnessFragment$SavedState;
     .locals 1
 
     .prologue
     .line 319
-    new-instance v0, Lcom/android/settings/display/BrightnessFragment$SavedState;
+    new-instance v0, Lcom/android/settings_ext/display/BrightnessFragment$SavedState;
 
-    invoke-direct {v0, p1}, Lcom/android/settings/display/BrightnessFragment$SavedState;-><init>(Landroid/os/Parcel;)V
+    invoke-direct {v0, p1}, Lcom/android/settings_ext/display/BrightnessFragment$SavedState;-><init>(Landroid/os/Parcel;)V
 
     return-object v0
 .end method
@@ -58,7 +58,7 @@
 
     .prologue
     .line 316
-    invoke-virtual {p0, p1}, Lcom/android/settings/display/c;->bp(I)[Lcom/android/settings/display/BrightnessFragment$SavedState;
+    invoke-virtual {p0, p1}, Lcom/android/settings_ext/display/c;->bp(I)[Lcom/android/settings_ext/display/BrightnessFragment$SavedState;
 
     move-result-object v0
 

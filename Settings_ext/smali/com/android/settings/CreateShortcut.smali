@@ -1,4 +1,4 @@
-.class public Lcom/android/settings/CreateShortcut;
+.class public Lcom/android/settings_ext/CreateShortcut;
 .super Landroid/app/LauncherActivity;
 .source "CreateShortcut.java"
 
@@ -58,7 +58,7 @@
 
     .prologue
     .line 43
-    invoke-virtual {p0, p3}, Lcom/android/settings/CreateShortcut;->intentForPosition(I)Landroid/content/Intent;
+    invoke-virtual {p0, p3}, Lcom/android/settings_ext/CreateShortcut;->intentForPosition(I)Landroid/content/Intent;
 
     move-result-object v1
 
@@ -73,11 +73,11 @@
     invoke-direct {v2}, Landroid/content/Intent;-><init>()V
 
     .line 49
-    invoke-virtual {p0}, Lcom/android/settings/CreateShortcut;->getApplicationInfo()Landroid/content/pm/ApplicationInfo;
+    invoke-virtual {p0}, Lcom/android/settings_ext/CreateShortcut;->getApplicationInfo()Landroid/content/pm/ApplicationInfo;
 
     move-result-object v0
 
-    invoke-virtual {p0}, Lcom/android/settings/CreateShortcut;->getPackageManager()Landroid/content/pm/PackageManager;
+    invoke-virtual {p0}, Lcom/android/settings_ext/CreateShortcut;->getPackageManager()Landroid/content/pm/PackageManager;
 
     move-result-object v3
 
@@ -104,7 +104,7 @@
     .line 53
     const-string v0, "android.intent.extra.shortcut.NAME"
 
-    invoke-virtual {p0, p3}, Lcom/android/settings/CreateShortcut;->itemForPosition(I)Landroid/app/LauncherActivity$ListItem;
+    invoke-virtual {p0, p3}, Lcom/android/settings_ext/CreateShortcut;->itemForPosition(I)Landroid/app/LauncherActivity$ListItem;
 
     move-result-object v1
 
@@ -115,10 +115,10 @@
     .line 54
     const/4 v0, -0x1
 
-    invoke-virtual {p0, v0, v2}, Lcom/android/settings/CreateShortcut;->setResult(ILandroid/content/Intent;)V
+    invoke-virtual {p0, v0, v2}, Lcom/android/settings_ext/CreateShortcut;->setResult(ILandroid/content/Intent;)V
 
     .line 55
-    invoke-virtual {p0}, Lcom/android/settings/CreateShortcut;->finish()V
+    invoke-virtual {p0}, Lcom/android/settings_ext/CreateShortcut;->finish()V
 
     .line 56
     return-void
@@ -167,7 +167,7 @@
 
     iget-object v0, v0, Landroid/content/pm/ActivityInfo;->name:Ljava/lang/String;
 
-    const-class v3, Lcom/android/settings/Settings$TetherSettingsActivity;
+    const-class v3, Lcom/android/settings_ext/Settings$TetherSettingsActivity;
 
     invoke-virtual {v3}, Ljava/lang/Class;->getSimpleName()Ljava/lang/String;
 
@@ -180,7 +180,7 @@
     if-eqz v0, :cond_1
 
     .line 73
-    invoke-static {p0}, Lcom/android/settings/TetherSettings;->L(Landroid/content/Context;)Z
+    invoke-static {p0}, Lcom/android/settings_ext/TetherSettings;->L(Landroid/content/Context;)Z
 
     move-result v0
 

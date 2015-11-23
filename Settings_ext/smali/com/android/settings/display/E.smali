@@ -1,4 +1,4 @@
-.class public Lcom/android/settings/display/E;
+.class public Lcom/android/settings_ext/display/E;
 .super Lmiui/preference/RadioButtonPreference;
 .source "RadioButtonPreference.java"
 
@@ -11,7 +11,7 @@
     .line 26
     const/4 v0, 0x0
 
-    invoke-direct {p0, p1, v0}, Lcom/android/settings/display/E;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
+    invoke-direct {p0, p1, v0}, Lcom/android/settings_ext/display/E;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
     .line 27
     return-void
@@ -25,7 +25,7 @@
     invoke-direct {p0, p1, p2}, Lmiui/preference/RadioButtonPreference;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
     .line 22
-    invoke-direct {p0}, Lcom/android/settings/display/E;->init()V
+    invoke-direct {p0}, Lcom/android/settings_ext/display/E;->init()V
 
     .line 23
     return-void
@@ -38,12 +38,12 @@
     .line 30
     const v0, 0x7f0400be
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/display/E;->setLayoutResource(I)V
+    invoke-virtual {p0, v0}, Lcom/android/settings_ext/display/E;->setLayoutResource(I)V
 
     .line 31
     const/4 v0, 0x0
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/display/E;->setWidgetLayoutResource(I)V
+    invoke-virtual {p0, v0}, Lcom/android/settings_ext/display/E;->setWidgetLayoutResource(I)V
 
     .line 32
     return-void
@@ -117,7 +117,7 @@
 
     .line 51
     :goto_0
-    invoke-virtual {p0}, Lcom/android/settings/display/E;->getContext()Landroid/content/Context;
+    invoke-virtual {p0}, Lcom/android/settings_ext/display/E;->getContext()Landroid/content/Context;
 
     move-result-object v1
 

@@ -1,4 +1,4 @@
-.class public Lcom/android/settings/wifi/openwifi/n;
+.class public Lcom/android/settings_ext/wifi/openwifi/n;
 .super Ljava/lang/Object;
 .source "ShopManager.java"
 
@@ -16,7 +16,7 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 32
-    iput-object p1, p0, Lcom/android/settings/wifi/openwifi/n;->mContext:Landroid/content/Context;
+    iput-object p1, p0, Lcom/android/settings_ext/wifi/openwifi/n;->mContext:Landroid/content/Context;
 
     .line 33
     return-void
@@ -27,7 +27,7 @@
 
     .prologue
     .line 71
-    invoke-direct {p0, p1}, Lcom/android/settings/wifi/openwifi/n;->b(Lorg/apache/http/client/methods/HttpUriRequest;)Lorg/apache/http/HttpEntity;
+    invoke-direct {p0, p1}, Lcom/android/settings_ext/wifi/openwifi/n;->b(Lorg/apache/http/client/methods/HttpUriRequest;)Lorg/apache/http/HttpEntity;
 
     move-result-object v1
 
@@ -287,12 +287,12 @@
     invoke-direct {v1, v0}, Lorg/apache/http/client/methods/HttpGet;-><init>(Ljava/net/URI;)V
 
     .line 64
-    invoke-direct {p0, v1}, Lcom/android/settings/wifi/openwifi/n;->a(Lorg/apache/http/client/methods/HttpUriRequest;)Ljava/lang/String;
+    invoke-direct {p0, v1}, Lcom/android/settings_ext/wifi/openwifi/n;->a(Lorg/apache/http/client/methods/HttpUriRequest;)Ljava/lang/String;
 
     move-result-object v0
 
     .line 65
-    invoke-direct {p0, v0}, Lcom/android/settings/wifi/openwifi/n;->bX(Ljava/lang/String;)Ljava/lang/String;
+    invoke-direct {p0, v0}, Lcom/android/settings_ext/wifi/openwifi/n;->bX(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 
@@ -305,7 +305,7 @@
 
     .prologue
     .line 36
-    iget-object v0, p0, Lcom/android/settings/wifi/openwifi/n;->mContext:Landroid/content/Context;
+    iget-object v0, p0, Lcom/android/settings_ext/wifi/openwifi/n;->mContext:Landroid/content/Context;
 
     const-string v1, "wifi"
 
@@ -339,7 +339,7 @@
 
     move-result-object v2
 
-    invoke-static {v2}, Lcom/android/settings/wifi/d;->removeDoubleQuotes(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v2}, Lcom/android/settings_ext/wifi/d;->removeDoubleQuotes(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v2
 
@@ -356,7 +356,7 @@
 
     move-result-object v0
 
-    invoke-direct {p0, v0}, Lcom/android/settings/wifi/openwifi/n;->bV(Ljava/lang/String;)Ljava/lang/String;
+    invoke-direct {p0, v0}, Lcom/android/settings_ext/wifi/openwifi/n;->bV(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 
@@ -364,7 +364,7 @@
 
     const/4 v0, 0x1
 
-    invoke-direct {p0, v1}, Lcom/android/settings/wifi/openwifi/n;->bV(Ljava/lang/String;)Ljava/lang/String;
+    invoke-direct {p0, v1}, Lcom/android/settings_ext/wifi/openwifi/n;->bV(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v1
 
@@ -372,7 +372,7 @@
 
     const/4 v0, 0x2
 
-    invoke-direct {p0, v2}, Lcom/android/settings/wifi/openwifi/n;->bV(Ljava/lang/String;)Ljava/lang/String;
+    invoke-direct {p0, v2}, Lcom/android/settings_ext/wifi/openwifi/n;->bV(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v1
 
@@ -382,14 +382,14 @@
 
     move-result-object v0
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/wifi/openwifi/n;->bW(Ljava/lang/String;)Ljava/lang/String;
+    invoke-virtual {p0, v0}, Lcom/android/settings_ext/wifi/openwifi/n;->bW(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 
     .line 47
-    iget-object v1, p0, Lcom/android/settings/wifi/openwifi/n;->mContext:Landroid/content/Context;
+    iget-object v1, p0, Lcom/android/settings_ext/wifi/openwifi/n;->mContext:Landroid/content/Context;
 
-    invoke-static {v1, v0}, Lcom/android/settings/wifi/openwifi/o;->z(Landroid/content/Context;Ljava/lang/String;)V
+    invoke-static {v1, v0}, Lcom/android/settings_ext/wifi/openwifi/o;->z(Landroid/content/Context;Ljava/lang/String;)V
     :try_end_0
     .catch Ljava/io/IOException; {:try_start_0 .. :try_end_0} :catch_0
 

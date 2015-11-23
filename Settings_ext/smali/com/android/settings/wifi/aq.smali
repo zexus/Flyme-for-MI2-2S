@@ -1,5 +1,5 @@
-.class public Lcom/android/settings/wifi/aq;
-.super Lcom/android/settings/wifi/WifiSettings;
+.class public Lcom/android/settings_ext/wifi/aq;
+.super Lcom/android/settings_ext/wifi/WifiSettings;
 .source "WifiSettingsForSetupWizard.java"
 
 
@@ -19,12 +19,12 @@
 
     .prologue
     .line 44
-    invoke-direct {p0}, Lcom/android/settings/wifi/WifiSettings;-><init>()V
+    invoke-direct {p0}, Lcom/android/settings_ext/wifi/WifiSettings;-><init>()V
 
     .line 54
     const/4 v0, 0x0
 
-    iput-boolean v0, p0, Lcom/android/settings/wifi/aq;->awe:Z
+    iput-boolean v0, p0, Lcom/android/settings_ext/wifi/aq;->awe:Z
 
     return-void
 .end method
@@ -83,26 +83,26 @@
 
     move-result-object v2
 
-    iput-object v2, p0, Lcom/android/settings/wifi/aq;->awc:Landroid/view/View;
+    iput-object v2, p0, Lcom/android/settings_ext/wifi/aq;->awc:Landroid/view/View;
 
     .line 72
-    iget-object v2, p0, Lcom/android/settings/wifi/aq;->awc:Landroid/view/View;
+    iget-object v2, p0, Lcom/android/settings_ext/wifi/aq;->awc:Landroid/view/View;
 
     const/4 v3, 0x1
 
     invoke-virtual {v0, v2, v5, v3}, Landroid/widget/ListView;->addFooterView(Landroid/view/View;Ljava/lang/Object;Z)V
 
     .line 73
-    iget-object v0, p0, Lcom/android/settings/wifi/aq;->awc:Landroid/view/View;
+    iget-object v0, p0, Lcom/android/settings_ext/wifi/aq;->awc:Landroid/view/View;
 
-    new-instance v2, Lcom/android/settings/wifi/ar;
+    new-instance v2, Lcom/android/settings_ext/wifi/ar;
 
-    invoke-direct {v2, p0}, Lcom/android/settings/wifi/ar;-><init>(Lcom/android/settings/wifi/aq;)V
+    invoke-direct {v2, p0}, Lcom/android/settings_ext/wifi/ar;-><init>(Lcom/android/settings_ext/wifi/aq;)V
 
     invoke-virtual {v0, v2}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     .line 82
-    invoke-virtual {p0}, Lcom/android/settings/wifi/aq;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/wifi/aq;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
@@ -144,14 +144,14 @@
     const/4 v4, 0x0
 
     .line 127
-    iget-object v0, p0, Lcom/android/settings/wifi/aq;->hD:Landroid/net/wifi/WifiManager;
+    iget-object v0, p0, Lcom/android/settings_ext/wifi/aq;->hD:Landroid/net/wifi/WifiManager;
 
     invoke-virtual {v0}, Landroid/net/wifi/WifiManager;->isWifiEnabled()Z
 
     move-result v0
 
     .line 128
-    invoke-virtual {p0}, Lcom/android/settings/wifi/aq;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/wifi/aq;->getActivity()Landroid/app/Activity;
 
     move-result-object v1
 
@@ -217,17 +217,17 @@
 
     .prologue
     .line 149
-    invoke-virtual {p0}, Lcom/android/settings/wifi/aq;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/wifi/aq;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
-    check-cast v0, Lcom/android/settings/wifi/WifiSetupActivity;
+    check-cast v0, Lcom/android/settings_ext/wifi/WifiSetupActivity;
 
     .line 150
-    invoke-virtual {v0}, Lcom/android/settings/wifi/WifiSetupActivity;->vH()V
+    invoke-virtual {v0}, Lcom/android/settings_ext/wifi/WifiSetupActivity;->vH()V
 
     .line 151
-    invoke-super {p0, p1}, Lcom/android/settings/wifi/WifiSettings;->dg(I)V
+    invoke-super {p0, p1}, Lcom/android/settings_ext/wifi/WifiSettings;->dg(I)V
 
     .line 152
     return-void
@@ -238,17 +238,17 @@
 
     .prologue
     .line 142
-    invoke-virtual {p0}, Lcom/android/settings/wifi/aq;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/wifi/aq;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
-    check-cast v0, Lcom/android/settings/wifi/WifiSetupActivity;
+    check-cast v0, Lcom/android/settings_ext/wifi/WifiSetupActivity;
 
     .line 143
-    invoke-virtual {v0}, Lcom/android/settings/wifi/WifiSetupActivity;->vH()V
+    invoke-virtual {v0}, Lcom/android/settings_ext/wifi/WifiSetupActivity;->vH()V
 
     .line 144
-    invoke-super {p0, p1}, Lcom/android/settings/wifi/WifiSettings;->j(Landroid/net/wifi/WifiConfiguration;)V
+    invoke-super {p0, p1}, Lcom/android/settings_ext/wifi/WifiSettings;->j(Landroid/net/wifi/WifiConfiguration;)V
 
     .line 145
     return-void
@@ -259,10 +259,10 @@
 
     .prologue
     .line 92
-    invoke-super {p0, p1}, Lcom/android/settings/wifi/WifiSettings;->onActivityCreated(Landroid/os/Bundle;)V
+    invoke-super {p0, p1}, Lcom/android/settings_ext/wifi/WifiSettings;->onActivityCreated(Landroid/os/Bundle;)V
 
     .line 94
-    invoke-virtual {p0}, Lcom/android/settings/wifi/aq;->getView()Landroid/view/View;
+    invoke-virtual {p0}, Lcom/android/settings_ext/wifi/aq;->getView()Landroid/view/View;
 
     move-result-object v0
 
@@ -271,14 +271,14 @@
     invoke-virtual {v0, v1}, Landroid/view/View;->setSystemUiVisibility(I)V
 
     .line 100
-    invoke-virtual {p0}, Lcom/android/settings/wifi/aq;->hasNextButton()Z
+    invoke-virtual {p0}, Lcom/android/settings_ext/wifi/aq;->hasNextButton()Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
     .line 101
-    invoke-virtual {p0}, Lcom/android/settings/wifi/aq;->getNextButton()Landroid/widget/Button;
+    invoke-virtual {p0}, Lcom/android/settings_ext/wifi/aq;->getNextButton()Landroid/widget/Button;
 
     move-result-object v0
 
@@ -288,7 +288,7 @@
 
     .line 104
     :cond_0
-    invoke-virtual {p0}, Lcom/android/settings/wifi/aq;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
+    invoke-virtual {p0}, Lcom/android/settings_ext/wifi/aq;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
 
     move-result-object v0
 
@@ -296,14 +296,14 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/wifi/aq;->mAdapter:Landroid/widget/ListAdapter;
+    iput-object v0, p0, Lcom/android/settings_ext/wifi/aq;->mAdapter:Landroid/widget/ListAdapter;
 
     .line 105
-    iget-object v0, p0, Lcom/android/settings/wifi/aq;->mAdapter:Landroid/widget/ListAdapter;
+    iget-object v0, p0, Lcom/android/settings_ext/wifi/aq;->mAdapter:Landroid/widget/ListAdapter;
 
-    new-instance v1, Lcom/android/settings/wifi/as;
+    new-instance v1, Lcom/android/settings_ext/wifi/as;
 
-    invoke-direct {v1, p0}, Lcom/android/settings/wifi/as;-><init>(Lcom/android/settings/wifi/aq;)V
+    invoke-direct {v1, p0}, Lcom/android/settings_ext/wifi/as;-><init>(Lcom/android/settings_ext/wifi/aq;)V
 
     invoke-interface {v0, v1}, Landroid/widget/ListAdapter;->registerDataSetObserver(Landroid/database/DataSetObserver;)V
 
@@ -330,16 +330,16 @@
     .line 156
     new-instance v0, Landroid/widget/TextView;
 
-    invoke-virtual {p0}, Lcom/android/settings/wifi/aq;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/wifi/aq;->getActivity()Landroid/app/Activity;
 
     move-result-object v1
 
     invoke-direct {v0, v1}, Landroid/widget/TextView;-><init>(Landroid/content/Context;)V
 
-    iput-object v0, p0, Lcom/android/settings/wifi/aq;->awd:Landroid/widget/TextView;
+    iput-object v0, p0, Lcom/android/settings_ext/wifi/aq;->awd:Landroid/widget/TextView;
 
     .line 157
-    iget-object v0, p0, Lcom/android/settings/wifi/aq;->awd:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/android/settings_ext/wifi/aq;->awd:Landroid/widget/TextView;
 
     new-instance v1, Landroid/widget/AbsListView$LayoutParams;
 
@@ -348,21 +348,21 @@
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setLayoutParams(Landroid/view/ViewGroup$LayoutParams;)V
 
     .line 159
-    iget-object v0, p0, Lcom/android/settings/wifi/aq;->awd:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/android/settings_ext/wifi/aq;->awd:Landroid/widget/TextView;
 
     const/16 v1, 0x11
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setGravity(I)V
 
     .line 160
-    iget-object v0, p0, Lcom/android/settings/wifi/aq;->awd:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/android/settings_ext/wifi/aq;->awd:Landroid/widget/TextView;
 
     const v1, 0x7f020165
 
     invoke-virtual {v0, v2, v1, v2, v2}, Landroid/widget/TextView;->setCompoundDrawablesWithIntrinsicBounds(IIII)V
 
     .line 162
-    iget-object v0, p0, Lcom/android/settings/wifi/aq;->awd:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/android/settings_ext/wifi/aq;->awd:Landroid/widget/TextView;
 
     return-object v0
 .end method
@@ -374,19 +374,19 @@
     const/4 v4, 0x0
 
     .line 166
-    iget-object v0, p0, Lcom/android/settings/wifi/aq;->mAdapter:Landroid/widget/ListAdapter;
+    iget-object v0, p0, Lcom/android/settings_ext/wifi/aq;->mAdapter:Landroid/widget/ListAdapter;
 
     invoke-interface {v0}, Landroid/widget/ListAdapter;->isEmpty()Z
 
     move-result v0
 
     .line 167
-    iget-boolean v1, p0, Lcom/android/settings/wifi/aq;->awe:Z
+    iget-boolean v1, p0, Lcom/android/settings_ext/wifi/aq;->awe:Z
 
     if-eq v0, v1, :cond_0
 
     .line 168
-    invoke-virtual {p0}, Lcom/android/settings/wifi/aq;->getListView()Landroid/widget/ListView;
+    invoke-virtual {p0}, Lcom/android/settings_ext/wifi/aq;->getListView()Landroid/widget/ListView;
 
     move-result-object v1
 
@@ -394,12 +394,12 @@
     if-eqz v0, :cond_1
 
     .line 170
-    iget-object v2, p0, Lcom/android/settings/wifi/aq;->awc:Landroid/view/View;
+    iget-object v2, p0, Lcom/android/settings_ext/wifi/aq;->awc:Landroid/view/View;
 
     invoke-virtual {v1, v2}, Landroid/widget/ListView;->removeFooterView(Landroid/view/View;)Z
 
     .line 171
-    iget-object v2, p0, Lcom/android/settings/wifi/aq;->awd:Landroid/widget/TextView;
+    iget-object v2, p0, Lcom/android/settings_ext/wifi/aq;->awd:Landroid/widget/TextView;
 
     const/4 v3, 0x0
 
@@ -407,7 +407,7 @@
 
     .line 176
     :goto_0
-    iput-boolean v0, p0, Lcom/android/settings/wifi/aq;->awe:Z
+    iput-boolean v0, p0, Lcom/android/settings_ext/wifi/aq;->awe:Z
 
     .line 178
     :cond_0
@@ -415,12 +415,12 @@
 
     .line 173
     :cond_1
-    iget-object v2, p0, Lcom/android/settings/wifi/aq;->awd:Landroid/widget/TextView;
+    iget-object v2, p0, Lcom/android/settings_ext/wifi/aq;->awd:Landroid/widget/TextView;
 
     invoke-virtual {v1, v2}, Landroid/widget/ListView;->removeFooterView(Landroid/view/View;)Z
 
     .line 174
-    iget-object v2, p0, Lcom/android/settings/wifi/aq;->awc:Landroid/view/View;
+    iget-object v2, p0, Lcom/android/settings_ext/wifi/aq;->awc:Landroid/view/View;
 
     const/4 v3, 0x1
 

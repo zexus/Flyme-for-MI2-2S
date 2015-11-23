@@ -1,10 +1,10 @@
-.class public Lcom/android/settings/eK;
+.class public Lcom/android/settings_ext/eK;
 .super Ljava/lang/Object;
 .source "MiuiUtils.java"
 
 
 # static fields
-.field private static sB:Lcom/android/settings/eK;
+.field private static sB:Lcom/android/settings_ext/eK;
 
 
 # direct methods
@@ -142,7 +142,7 @@
     .line 283
     const-string v1, "/sys/devices/platform/comip-gpio-keys/keys_wakeup"
 
-    invoke-static {v1, v0}, Lcom/android/settings/eK;->i(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v1, v0}, Lcom/android/settings_ext/eK;->i(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 290
     :cond_0
@@ -232,12 +232,12 @@
     .line 287
     const-string v1, "/sys/bus/platform/drivers/mtk-kpd/kpd_as_wake"
 
-    invoke-static {v1, v0}, Lcom/android/settings/eK;->i(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v1, v0}, Lcom/android/settings_ext/eK;->i(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 288
     const-string v1, "/sys/devices/platform/mtk-kpd/driver/kpd_as_wake"
 
-    invoke-static {v1, v0}, Lcom/android/settings/eK;->i(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v1, v0}, Lcom/android/settings_ext/eK;->i(Ljava/lang/String;Ljava/lang/String;)V
 
     goto :goto_1
 .end method
@@ -249,14 +249,14 @@
     const/4 v1, -0x1
 
     .line 268
-    instance-of v0, p0, Lcom/android/settings/MiuiSettings;
+    instance-of v0, p0, Lcom/android/settings_ext/MiuiSettings;
 
     if-eqz v0, :cond_0
 
     .line 269
-    check-cast p0, Lcom/android/settings/MiuiSettings;
+    check-cast p0, Lcom/android/settings_ext/MiuiSettings;
 
-    invoke-virtual {p0, p1, v1, p3}, Lcom/android/settings/MiuiSettings;->finishPreferencePanel(Landroid/app/Fragment;ILandroid/content/Intent;)V
+    invoke-virtual {p0, p1, v1, p3}, Lcom/android/settings_ext/MiuiSettings;->finishPreferencePanel(Landroid/app/Fragment;ILandroid/content/Intent;)V
 
     .line 275
     :goto_0
@@ -264,9 +264,9 @@
 
     .line 272
     :cond_0
-    check-cast p0, Lcom/android/settings/gh;
+    check-cast p0, Lcom/android/settings_ext/gh;
 
-    invoke-virtual {p0, p1, v1, p3}, Lcom/android/settings/gh;->finishPreferencePanel(Landroid/app/Fragment;ILandroid/content/Intent;)V
+    invoke-virtual {p0, p1, v1, p3}, Lcom/android/settings_ext/gh;->finishPreferencePanel(Landroid/app/Fragment;ILandroid/content/Intent;)V
 
     goto :goto_0
 .end method
@@ -276,14 +276,14 @@
 
     .prologue
     .line 258
-    instance-of v0, p0, Lcom/android/settings/MiuiSettings;
+    instance-of v0, p0, Lcom/android/settings_ext/MiuiSettings;
 
     if-eqz v0, :cond_0
 
     move-object v0, p0
 
     .line 259
-    check-cast v0, Lcom/android/settings/MiuiSettings;
+    check-cast v0, Lcom/android/settings_ext/MiuiSettings;
 
     invoke-virtual {p2}, Landroid/preference/Preference;->getFragment()Ljava/lang/String;
 
@@ -305,7 +305,7 @@
 
     const/4 v6, 0x0
 
-    invoke-virtual/range {v0 .. v6}, Lcom/android/settings/MiuiSettings;->startPreferencePanel(Ljava/lang/String;Landroid/os/Bundle;ILjava/lang/CharSequence;Landroid/app/Fragment;I)V
+    invoke-virtual/range {v0 .. v6}, Lcom/android/settings_ext/MiuiSettings;->startPreferencePanel(Ljava/lang/String;Landroid/os/Bundle;ILjava/lang/CharSequence;Landroid/app/Fragment;I)V
 
     .line 264
     :goto_0
@@ -313,9 +313,9 @@
 
     .line 262
     :cond_0
-    check-cast p0, Lcom/android/settings/gh;
+    check-cast p0, Lcom/android/settings_ext/gh;
 
-    invoke-virtual {p0, p1, p2}, Lcom/android/settings/gh;->onPreferenceStartFragment(Landroid/preference/PreferenceFragment;Landroid/preference/Preference;)Z
+    invoke-virtual {p0, p1, p2}, Lcom/android/settings_ext/gh;->onPreferenceStartFragment(Landroid/preference/PreferenceFragment;Landroid/preference/Preference;)Z
 
     goto :goto_0
 .end method
@@ -359,7 +359,7 @@
 
     if-eqz v1, :cond_2
 
-    instance-of v1, p0, Lcom/android/settings/MiuiSettings;
+    instance-of v1, p0, Lcom/android/settings_ext/MiuiSettings;
 
     if-eqz v1, :cond_2
 
@@ -385,14 +385,14 @@
 
     .prologue
     .line 243
-    instance-of v0, p0, Lcom/android/settings/MiuiSettings;
+    instance-of v0, p0, Lcom/android/settings_ext/MiuiSettings;
 
     if-eqz v0, :cond_0
 
     move-object v0, p0
 
     .line 244
-    check-cast v0, Lcom/android/settings/MiuiSettings;
+    check-cast v0, Lcom/android/settings_ext/MiuiSettings;
 
     move-object v1, p1
 
@@ -406,7 +406,7 @@
 
     move v6, p6
 
-    invoke-virtual/range {v0 .. v6}, Lcom/android/settings/MiuiSettings;->startPreferencePanel(Ljava/lang/String;Landroid/os/Bundle;ILjava/lang/CharSequence;Landroid/app/Fragment;I)V
+    invoke-virtual/range {v0 .. v6}, Lcom/android/settings_ext/MiuiSettings;->startPreferencePanel(Ljava/lang/String;Landroid/os/Bundle;ILjava/lang/CharSequence;Landroid/app/Fragment;I)V
 
     .line 255
     :goto_0
@@ -416,7 +416,7 @@
     move-object v0, p0
 
     .line 250
-    check-cast v0, Lcom/android/settings/gh;
+    check-cast v0, Lcom/android/settings_ext/gh;
 
     move-object v1, p1
 
@@ -430,7 +430,7 @@
 
     move v6, p6
 
-    invoke-virtual/range {v0 .. v6}, Lcom/android/settings/gh;->startPreferencePanel(Ljava/lang/String;Landroid/os/Bundle;ILjava/lang/CharSequence;Landroid/app/Fragment;I)V
+    invoke-virtual/range {v0 .. v6}, Lcom/android/settings_ext/gh;->startPreferencePanel(Ljava/lang/String;Landroid/os/Bundle;ILjava/lang/CharSequence;Landroid/app/Fragment;I)V
 
     goto :goto_0
 .end method
@@ -445,14 +445,14 @@
     move-result-object v0
 
     .line 315
-    instance-of v1, v0, Lcom/android/settings/MiuiSettings;
+    instance-of v1, v0, Lcom/android/settings_ext/MiuiSettings;
 
     if-eqz v1, :cond_0
 
     .line 316
-    check-cast v0, Lcom/android/settings/MiuiSettings;
+    check-cast v0, Lcom/android/settings_ext/MiuiSettings;
 
-    invoke-virtual {v0}, Lcom/android/settings/MiuiSettings;->fv()V
+    invoke-virtual {v0}, Lcom/android/settings_ext/MiuiSettings;->fv()V
 
     .line 318
     :cond_0
@@ -494,28 +494,28 @@
     invoke-virtual {v0, v2, v3}, Landroid/view/inputmethod/InputMethodManager;->hideSoftInputFromWindow(Landroid/os/IBinder;I)Z
 
     .line 325
-    instance-of v0, v1, Lcom/android/settings/MiuiSettings;
+    instance-of v0, v1, Lcom/android/settings_ext/MiuiSettings;
 
     if-eqz v0, :cond_0
 
     move-object v0, v1
 
     .line 326
-    check-cast v0, Lcom/android/settings/MiuiSettings;
+    check-cast v0, Lcom/android/settings_ext/MiuiSettings;
 
-    invoke-virtual {v0}, Lcom/android/settings/MiuiSettings;->fw()V
+    invoke-virtual {v0}, Lcom/android/settings_ext/MiuiSettings;->fw()V
 
     .line 329
     :cond_0
     return-void
 .end method
 
-.method public static fB()Lcom/android/settings/eK;
+.method public static fB()Lcom/android/settings_ext/eK;
     .locals 1
 
     .prologue
     .line 61
-    sget-object v0, Lcom/android/settings/eK;->sB:Lcom/android/settings/eK;
+    sget-object v0, Lcom/android/settings_ext/eK;->sB:Lcom/android/settings_ext/eK;
 
     if-nez v0, :cond_0
 
@@ -531,16 +531,16 @@
 
     move-result-object v0
 
-    check-cast v0, Lcom/android/settings/eK;
+    check-cast v0, Lcom/android/settings_ext/eK;
 
-    sput-object v0, Lcom/android/settings/eK;->sB:Lcom/android/settings/eK;
+    sput-object v0, Lcom/android/settings_ext/eK;->sB:Lcom/android/settings_ext/eK;
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 
     .line 69
     :cond_0
     :goto_0
-    sget-object v0, Lcom/android/settings/eK;->sB:Lcom/android/settings/eK;
+    sget-object v0, Lcom/android/settings_ext/eK;->sB:Lcom/android/settings_ext/eK;
 
     return-object v0
 
@@ -549,11 +549,11 @@
     move-exception v0
 
     .line 66
-    new-instance v0, Lcom/android/settings/eK;
+    new-instance v0, Lcom/android/settings_ext/eK;
 
-    invoke-direct {v0}, Lcom/android/settings/eK;-><init>()V
+    invoke-direct {v0}, Lcom/android/settings_ext/eK;-><init>()V
 
-    sput-object v0, Lcom/android/settings/eK;->sB:Lcom/android/settings/eK;
+    sput-object v0, Lcom/android/settings_ext/eK;->sB:Lcom/android/settings_ext/eK;
 
     goto :goto_0
 .end method
@@ -924,7 +924,7 @@
 
     iget-object v1, p2, Landroid/net/wifi/ScanResult;->SSID:Ljava/lang/String;
 
-    invoke-static {v1}, Lcom/android/settings/wifi/d;->bH(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v1}, Lcom/android/settings_ext/wifi/d;->bH(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v1
 
@@ -934,11 +934,11 @@
 
     if-eqz v0, :cond_0
 
-    invoke-static {p1}, Lcom/android/settings/wifi/AccessPoint;->a(Landroid/net/wifi/WifiConfiguration;)I
+    invoke-static {p1}, Lcom/android/settings_ext/wifi/AccessPoint;->a(Landroid/net/wifi/WifiConfiguration;)I
 
     move-result v0
 
-    invoke-static {p2}, Lcom/android/settings/wifi/AccessPoint;->a(Landroid/net/wifi/ScanResult;)I
+    invoke-static {p2}, Lcom/android/settings_ext/wifi/AccessPoint;->a(Landroid/net/wifi/ScanResult;)I
 
     move-result v1
 
@@ -1041,7 +1041,7 @@
     check-cast v2, Landroid/net/wifi/ScanResult;
 
     .line 107
-    invoke-virtual {p0, v1, v2}, Lcom/android/settings/eK;->a(Landroid/net/wifi/WifiConfiguration;Landroid/net/wifi/ScanResult;)Z
+    invoke-virtual {p0, v1, v2}, Lcom/android/settings_ext/eK;->a(Landroid/net/wifi/WifiConfiguration;Landroid/net/wifi/ScanResult;)Z
 
     move-result v2
 
@@ -1148,7 +1148,7 @@
 
     .prologue
     .line 154
-    invoke-virtual {p0}, Lcom/android/settings/eK;->isMultiSimSupported()Z
+    invoke-virtual {p0}, Lcom/android/settings_ext/eK;->isMultiSimSupported()Z
 
     move-result v0
 

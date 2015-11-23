@@ -1,4 +1,4 @@
-.class public Lcom/android/settings/dashboard/g;
+.class public Lcom/android/settings_ext/dashboard/g;
 .super Landroid/app/DialogFragment;
 .source "NoHomeDialogFragment.java"
 
@@ -19,9 +19,9 @@
 
     .prologue
     .line 28
-    new-instance v0, Lcom/android/settings/dashboard/g;
+    new-instance v0, Lcom/android/settings_ext/dashboard/g;
 
-    invoke-direct {v0}, Lcom/android/settings/dashboard/g;-><init>()V
+    invoke-direct {v0}, Lcom/android/settings_ext/dashboard/g;-><init>()V
 
     .line 29
     invoke-virtual {p0}, Landroid/app/Activity;->getFragmentManager()Landroid/app/FragmentManager;
@@ -30,7 +30,7 @@
 
     const/4 v2, 0x0
 
-    invoke-virtual {v0, v1, v2}, Lcom/android/settings/dashboard/g;->show(Landroid/app/FragmentManager;Ljava/lang/String;)V
+    invoke-virtual {v0, v1, v2}, Lcom/android/settings_ext/dashboard/g;->show(Landroid/app/FragmentManager;Ljava/lang/String;)V
 
     .line 30
     return-void
@@ -45,7 +45,7 @@
     .line 34
     new-instance v0, Landroid/app/AlertDialog$Builder;
 
-    invoke-virtual {p0}, Lcom/android/settings/dashboard/g;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/dashboard/g;->getActivity()Landroid/app/Activity;
 
     move-result-object v1
 

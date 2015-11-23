@@ -1,4 +1,4 @@
-.class Lcom/android/settings/dolby/DolbyAdvanceSettings$1;
+.class Lcom/android/settings_ext/dolby/DolbyAdvanceSettings$1;
 .super Ljava/lang/Object;
 .source "DolbyAdvanceSettings.java"
 
@@ -7,16 +7,16 @@
 
 
 # instance fields
-.field final synthetic XH:Lcom/android/settings/dolby/DolbyAdvanceSettings;
+.field final synthetic XH:Lcom/android/settings_ext/dolby/DolbyAdvanceSettings;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/dolby/DolbyAdvanceSettings;)V
+.method constructor <init>(Lcom/android/settings_ext/dolby/DolbyAdvanceSettings;)V
     .locals 0
 
     .prologue
     .line 186
-    iput-object p1, p0, Lcom/android/settings/dolby/DolbyAdvanceSettings$1;->XH:Lcom/android/settings/dolby/DolbyAdvanceSettings;
+    iput-object p1, p0, Lcom/android/settings_ext/dolby/DolbyAdvanceSettings$1;->XH:Lcom/android/settings_ext/dolby/DolbyAdvanceSettings;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -30,16 +30,16 @@
 
     .prologue
     .line 190
-    iget-object v0, p0, Lcom/android/settings/dolby/DolbyAdvanceSettings$1;->XH:Lcom/android/settings/dolby/DolbyAdvanceSettings;
+    iget-object v0, p0, Lcom/android/settings_ext/dolby/DolbyAdvanceSettings$1;->XH:Lcom/android/settings_ext/dolby/DolbyAdvanceSettings;
 
     const/4 v1, 0x1
 
-    invoke-static {v0, v1}, Lcom/android/settings/dolby/DolbyAdvanceSettings;->a(Lcom/android/settings/dolby/DolbyAdvanceSettings;Z)Z
+    invoke-static {v0, v1}, Lcom/android/settings_ext/dolby/DolbyAdvanceSettings;->a(Lcom/android/settings_ext/dolby/DolbyAdvanceSettings;Z)Z
 
     .line 191
-    iget-object v0, p0, Lcom/android/settings/dolby/DolbyAdvanceSettings$1;->XH:Lcom/android/settings/dolby/DolbyAdvanceSettings;
+    iget-object v0, p0, Lcom/android/settings_ext/dolby/DolbyAdvanceSettings$1;->XH:Lcom/android/settings_ext/dolby/DolbyAdvanceSettings;
 
-    invoke-static {v0}, Lcom/android/settings/dolby/DolbyAdvanceSettings;->a(Lcom/android/settings/dolby/DolbyAdvanceSettings;)V
+    invoke-static {v0}, Lcom/android/settings_ext/dolby/DolbyAdvanceSettings;->a(Lcom/android/settings_ext/dolby/DolbyAdvanceSettings;)V
 
     .line 192
     return-void
@@ -50,11 +50,11 @@
 
     .prologue
     .line 196
-    iget-object v0, p0, Lcom/android/settings/dolby/DolbyAdvanceSettings$1;->XH:Lcom/android/settings/dolby/DolbyAdvanceSettings;
+    iget-object v0, p0, Lcom/android/settings_ext/dolby/DolbyAdvanceSettings$1;->XH:Lcom/android/settings_ext/dolby/DolbyAdvanceSettings;
 
     const/4 v1, 0x0
 
-    invoke-static {v0, v1}, Lcom/android/settings/dolby/DolbyAdvanceSettings;->a(Lcom/android/settings/dolby/DolbyAdvanceSettings;Z)Z
+    invoke-static {v0, v1}, Lcom/android/settings_ext/dolby/DolbyAdvanceSettings;->a(Lcom/android/settings_ext/dolby/DolbyAdvanceSettings;Z)Z
 
     .line 197
     return-void
@@ -97,9 +97,9 @@
 
     .prologue
     .line 209
-    iget-object v0, p0, Lcom/android/settings/dolby/DolbyAdvanceSettings$1;->XH:Lcom/android/settings/dolby/DolbyAdvanceSettings;
+    iget-object v0, p0, Lcom/android/settings_ext/dolby/DolbyAdvanceSettings$1;->XH:Lcom/android/settings_ext/dolby/DolbyAdvanceSettings;
 
-    invoke-static {v0}, Lcom/android/settings/dolby/DolbyAdvanceSettings;->a(Lcom/android/settings/dolby/DolbyAdvanceSettings;)V
+    invoke-static {v0}, Lcom/android/settings_ext/dolby/DolbyAdvanceSettings;->a(Lcom/android/settings_ext/dolby/DolbyAdvanceSettings;)V
 
     .line 210
     return-void

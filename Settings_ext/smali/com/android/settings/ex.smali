@@ -1,4 +1,4 @@
-.class Lcom/android/settings/ex;
+.class Lcom/android/settings_ext/ex;
 .super Ljava/lang/Object;
 .source "MiuiSecurityTrustedCredentials.java"
 
@@ -7,20 +7,20 @@
 
 
 # instance fields
-.field final synthetic rI:Lcom/android/settings/ev;
+.field final synthetic rI:Lcom/android/settings_ext/ev;
 
-.field final synthetic rJ:Lcom/android/settings/MiuiSecurityTrustedCredentials$TrustedCredentialFragment;
+.field final synthetic rJ:Lcom/android/settings_ext/MiuiSecurityTrustedCredentials$TrustedCredentialFragment;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/MiuiSecurityTrustedCredentials$TrustedCredentialFragment;Lcom/android/settings/ev;)V
+.method constructor <init>(Lcom/android/settings_ext/MiuiSecurityTrustedCredentials$TrustedCredentialFragment;Lcom/android/settings_ext/ev;)V
     .locals 0
 
     .prologue
     .line 424
-    iput-object p1, p0, Lcom/android/settings/ex;->rJ:Lcom/android/settings/MiuiSecurityTrustedCredentials$TrustedCredentialFragment;
+    iput-object p1, p0, Lcom/android/settings_ext/ex;->rJ:Lcom/android/settings_ext/MiuiSecurityTrustedCredentials$TrustedCredentialFragment;
 
-    iput-object p2, p0, Lcom/android/settings/ex;->rI:Lcom/android/settings/ev;
+    iput-object p2, p0, Lcom/android/settings_ext/ex;->rI:Lcom/android/settings_ext/ev;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -34,9 +34,9 @@
 
     .prologue
     .line 427
-    iget-object v0, p0, Lcom/android/settings/ex;->rI:Lcom/android/settings/ev;
+    iget-object v0, p0, Lcom/android/settings_ext/ex;->rI:Lcom/android/settings_ext/ev;
 
-    invoke-virtual {v0}, Lcom/android/settings/ev;->getCount()I
+    invoke-virtual {v0}, Lcom/android/settings_ext/ev;->getCount()I
 
     move-result v0
 
@@ -48,15 +48,15 @@
 
     .line 430
     :cond_0
-    iget-object v0, p0, Lcom/android/settings/ex;->rJ:Lcom/android/settings/MiuiSecurityTrustedCredentials$TrustedCredentialFragment;
+    iget-object v0, p0, Lcom/android/settings_ext/ex;->rJ:Lcom/android/settings_ext/MiuiSecurityTrustedCredentials$TrustedCredentialFragment;
 
-    iget-object v1, p0, Lcom/android/settings/ex;->rI:Lcom/android/settings/ev;
+    iget-object v1, p0, Lcom/android/settings_ext/ex;->rI:Lcom/android/settings_ext/ev;
 
-    invoke-virtual {v1, p3}, Lcom/android/settings/ev;->O(I)Lcom/android/settings/eu;
+    invoke-virtual {v1, p3}, Lcom/android/settings_ext/ev;->O(I)Lcom/android/settings_ext/eu;
 
     move-result-object v1
 
-    invoke-static {v0, v1}, Lcom/android/settings/MiuiSecurityTrustedCredentials$TrustedCredentialFragment;->a(Lcom/android/settings/MiuiSecurityTrustedCredentials$TrustedCredentialFragment;Lcom/android/settings/eu;)V
+    invoke-static {v0, v1}, Lcom/android/settings_ext/MiuiSecurityTrustedCredentials$TrustedCredentialFragment;->a(Lcom/android/settings_ext/MiuiSecurityTrustedCredentials$TrustedCredentialFragment;Lcom/android/settings_ext/eu;)V
 
     goto :goto_0
 .end method

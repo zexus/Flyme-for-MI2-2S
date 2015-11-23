@@ -1,4 +1,4 @@
-.class public Lcom/android/settings/deviceinfo/LockDeviceUtils;
+.class public Lcom/android/settings_ext/deviceinfo/LockDeviceUtils;
 .super Ljava/lang/Object;
 .source "LockDeviceUtils.java"
 

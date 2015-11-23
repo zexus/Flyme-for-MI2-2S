@@ -1,4 +1,4 @@
-.class public Lcom/android/settings/BaseListFragment;
+.class public Lcom/android/settings_ext/BaseListFragment;
 .super Lmiui/app/ListFragment;
 .source "BaseListFragment.java"
 
@@ -19,7 +19,7 @@
 
     .prologue
     .line 42
-    invoke-virtual {p0}, Lcom/android/settings/BaseListFragment;->getArguments()Landroid/os/Bundle;
+    invoke-virtual {p0}, Lcom/android/settings_ext/BaseListFragment;->getArguments()Landroid/os/Bundle;
 
     move-result-object v0
 
@@ -34,7 +34,7 @@
     move-result v0
 
     .line 45
-    invoke-virtual {p0}, Lcom/android/settings/BaseListFragment;->getActionBar()Lmiui/app/ActionBar;
+    invoke-virtual {p0}, Lcom/android/settings_ext/BaseListFragment;->getActionBar()Lmiui/app/ActionBar;
 
     move-result-object v1
 
@@ -70,7 +70,7 @@
 
     .prologue
     .line 107
-    invoke-virtual {p0}, Lcom/android/settings/BaseListFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/BaseListFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
@@ -79,7 +79,7 @@
     if-eqz v0, :cond_0
 
     .line 108
-    invoke-virtual {p0}, Lcom/android/settings/BaseListFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/BaseListFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
@@ -158,7 +158,7 @@
 
     .prologue
     .line 91
-    invoke-virtual {p0}, Lcom/android/settings/BaseListFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/BaseListFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
@@ -171,16 +171,16 @@
 
     .line 95
     :cond_1
-    invoke-virtual {p0}, Lcom/android/settings/BaseListFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/BaseListFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
-    instance-of v0, v0, Lcom/android/settings/MiuiSettings;
+    instance-of v0, v0, Lcom/android/settings_ext/MiuiSettings;
 
     if-eqz v0, :cond_2
 
     .line 96
-    invoke-virtual {p0}, Lcom/android/settings/BaseListFragment;->getFragmentManager()Landroid/app/FragmentManager;
+    invoke-virtual {p0}, Lcom/android/settings_ext/BaseListFragment;->getFragmentManager()Landroid/app/FragmentManager;
 
     move-result-object v0
 
@@ -194,7 +194,7 @@
 
     .line 101
     :cond_2
-    invoke-virtual {p0}, Lcom/android/settings/BaseListFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/BaseListFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
@@ -213,7 +213,7 @@
     .line 38
     sget v0, Lmiui/R$style;->Theme_Light_Settings:I
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/BaseListFragment;->setThemeRes(I)V
+    invoke-virtual {p0, v0}, Lcom/android/settings_ext/BaseListFragment;->setThemeRes(I)V
 
     .line 39
     return-void
@@ -224,11 +224,11 @@
 
     .prologue
     .line 76
-    invoke-virtual {p0}, Lcom/android/settings/BaseListFragment;->getMenuInflater()Landroid/view/MenuInflater;
+    invoke-virtual {p0}, Lcom/android/settings_ext/BaseListFragment;->getMenuInflater()Landroid/view/MenuInflater;
 
     move-result-object v0
 
-    invoke-virtual {p0, p1, v0}, Lcom/android/settings/BaseListFragment;->onCreateOptionsMenu(Landroid/view/Menu;Landroid/view/MenuInflater;)V
+    invoke-virtual {p0, p1, v0}, Lcom/android/settings_ext/BaseListFragment;->onCreateOptionsMenu(Landroid/view/Menu;Landroid/view/MenuInflater;)V
 
     .line 77
     const/4 v0, 0x1
@@ -244,15 +244,15 @@
     if-eqz p2, :cond_0
 
     .line 57
-    invoke-virtual {p0}, Lcom/android/settings/BaseListFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/BaseListFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
-    invoke-static {v0, p2}, Lcom/android/settings/eK;->a(Landroid/app/Activity;Landroid/view/View;)V
+    invoke-static {v0, p2}, Lcom/android/settings_ext/eK;->a(Landroid/app/Activity;Landroid/view/View;)V
 
     .line 60
     :cond_0
-    invoke-virtual {p0, p1, p2, p3}, Lcom/android/settings/BaseListFragment;->a(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;
+    invoke-virtual {p0, p1, p2, p3}, Lcom/android/settings_ext/BaseListFragment;->a(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;
 
     move-result-object v0
 
@@ -280,7 +280,7 @@
 
     .line 84
     :pswitch_0
-    invoke-virtual {p0}, Lcom/android/settings/BaseListFragment;->finish()V
+    invoke-virtual {p0}, Lcom/android/settings_ext/BaseListFragment;->finish()V
 
     .line 85
     const/4 v0, 0x1
@@ -304,7 +304,7 @@
     invoke-super {p0}, Lmiui/app/ListFragment;->onStart()V
 
     .line 71
-    invoke-direct {p0}, Lcom/android/settings/BaseListFragment;->Y()V
+    invoke-direct {p0}, Lcom/android/settings_ext/BaseListFragment;->Y()V
 
     .line 72
     return-void

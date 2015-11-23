@@ -1,5 +1,5 @@
-.class Lcom/android/settings/fq;
-.super Lcom/android/settings/search/a;
+.class Lcom/android/settings_ext/fq;
+.super Lcom/android/settings_ext/search/a;
 .source "PrivacySettings.java"
 
 
@@ -13,7 +13,7 @@
 
     .prologue
     .line 306
-    invoke-direct {p0}, Lcom/android/settings/search/a;-><init>()V
+    invoke-direct {p0}, Lcom/android/settings_ext/search/a;-><init>()V
 
     .line 308
     invoke-static {}, Landroid/os/UserHandle;->myUserId()I
@@ -25,7 +25,7 @@
     const/4 v0, 0x1
 
     :goto_0
-    iput-boolean v0, p0, Lcom/android/settings/fq;->uf:Z
+    iput-boolean v0, p0, Lcom/android/settings_ext/fq;->uf:Z
 
     .line 309
     return-void
@@ -49,7 +49,7 @@
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
     .line 318
-    iget-boolean v1, p0, Lcom/android/settings/fq;->uf:Z
+    iget-boolean v1, p0, Lcom/android/settings_ext/fq;->uf:Z
 
     if-nez v1, :cond_0
 

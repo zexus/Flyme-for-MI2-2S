@@ -1,19 +1,19 @@
-.class Lcom/android/settings/fA;
+.class Lcom/android/settings_ext/fA;
 .super Landroid/telephony/PhoneStateListener;
 .source "RadioInfo.java"
 
 
 # instance fields
-.field final synthetic vV:Lcom/android/settings/RadioInfo;
+.field final synthetic vV:Lcom/android/settings_ext/RadioInfo;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/RadioInfo;)V
+.method constructor <init>(Lcom/android/settings_ext/RadioInfo;)V
     .locals 0
 
     .prologue
     .line 161
-    iput-object p1, p0, Lcom/android/settings/fA;->vV:Lcom/android/settings/RadioInfo;
+    iput-object p1, p0, Lcom/android/settings_ext/fA;->vV:Lcom/android/settings_ext/RadioInfo;
 
     invoke-direct {p0}, Landroid/telephony/PhoneStateListener;-><init>()V
 
@@ -27,14 +27,14 @@
 
     .prologue
     .line 194
-    iget-object v0, p0, Lcom/android/settings/fA;->vV:Lcom/android/settings/RadioInfo;
+    iget-object v0, p0, Lcom/android/settings_ext/fA;->vV:Lcom/android/settings_ext/RadioInfo;
 
-    invoke-static {v0, p1}, Lcom/android/settings/RadioInfo;->b(Lcom/android/settings/RadioInfo;Z)Z
+    invoke-static {v0, p1}, Lcom/android/settings_ext/RadioInfo;->b(Lcom/android/settings_ext/RadioInfo;Z)Z
 
     .line 195
-    iget-object v0, p0, Lcom/android/settings/fA;->vV:Lcom/android/settings/RadioInfo;
+    iget-object v0, p0, Lcom/android/settings_ext/fA;->vV:Lcom/android/settings_ext/RadioInfo;
 
-    invoke-static {v0}, Lcom/android/settings/RadioInfo;->h(Lcom/android/settings/RadioInfo;)V
+    invoke-static {v0}, Lcom/android/settings_ext/RadioInfo;->h(Lcom/android/settings_ext/RadioInfo;)V
 
     .line 196
     return-void
@@ -45,7 +45,7 @@
 
     .prologue
     .line 200
-    iget-object v0, p0, Lcom/android/settings/fA;->vV:Lcom/android/settings/RadioInfo;
+    iget-object v0, p0, Lcom/android/settings_ext/fA;->vV:Lcom/android/settings_ext/RadioInfo;
 
     new-instance v1, Ljava/lang/StringBuilder;
 
@@ -65,12 +65,12 @@
 
     move-result-object v1
 
-    invoke-static {v0, v1}, Lcom/android/settings/RadioInfo;->a(Lcom/android/settings/RadioInfo;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/android/settings_ext/RadioInfo;->a(Lcom/android/settings_ext/RadioInfo;Ljava/lang/String;)V
 
     .line 201
-    iget-object v0, p0, Lcom/android/settings/fA;->vV:Lcom/android/settings/RadioInfo;
+    iget-object v0, p0, Lcom/android/settings_ext/fA;->vV:Lcom/android/settings_ext/RadioInfo;
 
-    invoke-static {v0, p1}, Lcom/android/settings/RadioInfo;->a(Lcom/android/settings/RadioInfo;Ljava/util/List;)V
+    invoke-static {v0, p1}, Lcom/android/settings_ext/RadioInfo;->a(Lcom/android/settings_ext/RadioInfo;Ljava/util/List;)V
 
     .line 202
     return-void
@@ -81,9 +81,9 @@
 
     .prologue
     .line 183
-    iget-object v0, p0, Lcom/android/settings/fA;->vV:Lcom/android/settings/RadioInfo;
+    iget-object v0, p0, Lcom/android/settings_ext/fA;->vV:Lcom/android/settings_ext/RadioInfo;
 
-    invoke-static {v0, p1}, Lcom/android/settings/RadioInfo;->a(Lcom/android/settings/RadioInfo;Landroid/telephony/CellLocation;)V
+    invoke-static {v0, p1}, Lcom/android/settings_ext/RadioInfo;->a(Lcom/android/settings_ext/RadioInfo;Landroid/telephony/CellLocation;)V
 
     .line 184
     return-void
@@ -94,9 +94,9 @@
 
     .prologue
     .line 178
-    iget-object v0, p0, Lcom/android/settings/fA;->vV:Lcom/android/settings/RadioInfo;
+    iget-object v0, p0, Lcom/android/settings_ext/fA;->vV:Lcom/android/settings_ext/RadioInfo;
 
-    invoke-static {v0}, Lcom/android/settings/RadioInfo;->f(Lcom/android/settings/RadioInfo;)V
+    invoke-static {v0}, Lcom/android/settings_ext/RadioInfo;->f(Lcom/android/settings_ext/RadioInfo;)V
 
     .line 179
     return-void
@@ -107,7 +107,7 @@
 
     .prologue
     .line 206
-    iget-object v0, p0, Lcom/android/settings/fA;->vV:Lcom/android/settings/RadioInfo;
+    iget-object v0, p0, Lcom/android/settings_ext/fA;->vV:Lcom/android/settings_ext/RadioInfo;
 
     new-instance v1, Ljava/lang/StringBuilder;
 
@@ -127,12 +127,12 @@
 
     move-result-object v1
 
-    invoke-static {v0, v1}, Lcom/android/settings/RadioInfo;->a(Lcom/android/settings/RadioInfo;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/android/settings_ext/RadioInfo;->a(Lcom/android/settings_ext/RadioInfo;Ljava/lang/String;)V
 
     .line 207
-    iget-object v0, p0, Lcom/android/settings/fA;->vV:Lcom/android/settings/RadioInfo;
+    iget-object v0, p0, Lcom/android/settings_ext/fA;->vV:Lcom/android/settings_ext/RadioInfo;
 
-    invoke-static {v0, p1}, Lcom/android/settings/RadioInfo;->a(Lcom/android/settings/RadioInfo;Landroid/telephony/DataConnectionRealTimeInfo;)V
+    invoke-static {v0, p1}, Lcom/android/settings_ext/RadioInfo;->a(Lcom/android/settings_ext/RadioInfo;Landroid/telephony/DataConnectionRealTimeInfo;)V
 
     .line 208
     return-void
@@ -143,24 +143,24 @@
 
     .prologue
     .line 170
-    iget-object v0, p0, Lcom/android/settings/fA;->vV:Lcom/android/settings/RadioInfo;
+    iget-object v0, p0, Lcom/android/settings_ext/fA;->vV:Lcom/android/settings_ext/RadioInfo;
 
-    invoke-static {v0}, Lcom/android/settings/RadioInfo;->b(Lcom/android/settings/RadioInfo;)V
+    invoke-static {v0}, Lcom/android/settings_ext/RadioInfo;->b(Lcom/android/settings_ext/RadioInfo;)V
 
     .line 171
-    iget-object v0, p0, Lcom/android/settings/fA;->vV:Lcom/android/settings/RadioInfo;
+    iget-object v0, p0, Lcom/android/settings_ext/fA;->vV:Lcom/android/settings_ext/RadioInfo;
 
-    invoke-static {v0}, Lcom/android/settings/RadioInfo;->c(Lcom/android/settings/RadioInfo;)V
+    invoke-static {v0}, Lcom/android/settings_ext/RadioInfo;->c(Lcom/android/settings_ext/RadioInfo;)V
 
     .line 172
-    iget-object v0, p0, Lcom/android/settings/fA;->vV:Lcom/android/settings/RadioInfo;
+    iget-object v0, p0, Lcom/android/settings_ext/fA;->vV:Lcom/android/settings_ext/RadioInfo;
 
-    invoke-static {v0}, Lcom/android/settings/RadioInfo;->d(Lcom/android/settings/RadioInfo;)V
+    invoke-static {v0}, Lcom/android/settings_ext/RadioInfo;->d(Lcom/android/settings_ext/RadioInfo;)V
 
     .line 173
-    iget-object v0, p0, Lcom/android/settings/fA;->vV:Lcom/android/settings/RadioInfo;
+    iget-object v0, p0, Lcom/android/settings_ext/fA;->vV:Lcom/android/settings_ext/RadioInfo;
 
-    invoke-static {v0}, Lcom/android/settings/RadioInfo;->e(Lcom/android/settings/RadioInfo;)V
+    invoke-static {v0}, Lcom/android/settings_ext/RadioInfo;->e(Lcom/android/settings_ext/RadioInfo;)V
 
     .line 174
     return-void
@@ -171,14 +171,14 @@
 
     .prologue
     .line 188
-    iget-object v0, p0, Lcom/android/settings/fA;->vV:Lcom/android/settings/RadioInfo;
+    iget-object v0, p0, Lcom/android/settings_ext/fA;->vV:Lcom/android/settings_ext/RadioInfo;
 
-    invoke-static {v0, p1}, Lcom/android/settings/RadioInfo;->a(Lcom/android/settings/RadioInfo;Z)Z
+    invoke-static {v0, p1}, Lcom/android/settings_ext/RadioInfo;->a(Lcom/android/settings_ext/RadioInfo;Z)Z
 
     .line 189
-    iget-object v0, p0, Lcom/android/settings/fA;->vV:Lcom/android/settings/RadioInfo;
+    iget-object v0, p0, Lcom/android/settings_ext/fA;->vV:Lcom/android/settings_ext/RadioInfo;
 
-    invoke-static {v0}, Lcom/android/settings/RadioInfo;->g(Lcom/android/settings/RadioInfo;)V
+    invoke-static {v0}, Lcom/android/settings_ext/RadioInfo;->g(Lcom/android/settings_ext/RadioInfo;)V
 
     .line 190
     return-void
@@ -189,14 +189,14 @@
 
     .prologue
     .line 164
-    iget-object v0, p0, Lcom/android/settings/fA;->vV:Lcom/android/settings/RadioInfo;
+    iget-object v0, p0, Lcom/android/settings_ext/fA;->vV:Lcom/android/settings_ext/RadioInfo;
 
-    invoke-static {v0, p1}, Lcom/android/settings/RadioInfo;->a(Lcom/android/settings/RadioInfo;Landroid/telephony/SignalStrength;)Landroid/telephony/SignalStrength;
+    invoke-static {v0, p1}, Lcom/android/settings_ext/RadioInfo;->a(Lcom/android/settings_ext/RadioInfo;Landroid/telephony/SignalStrength;)Landroid/telephony/SignalStrength;
 
     .line 165
-    iget-object v0, p0, Lcom/android/settings/fA;->vV:Lcom/android/settings/RadioInfo;
+    iget-object v0, p0, Lcom/android/settings_ext/fA;->vV:Lcom/android/settings_ext/RadioInfo;
 
-    invoke-static {v0}, Lcom/android/settings/RadioInfo;->a(Lcom/android/settings/RadioInfo;)V
+    invoke-static {v0}, Lcom/android/settings_ext/RadioInfo;->a(Lcom/android/settings_ext/RadioInfo;)V
 
     .line 166
     return-void

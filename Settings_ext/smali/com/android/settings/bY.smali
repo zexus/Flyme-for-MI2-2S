@@ -1,4 +1,4 @@
-.class public Lcom/android/settings/bY;
+.class public Lcom/android/settings_ext/bY;
 .super Ljava/lang/Object;
 .source "DreamBackend.java"
 
@@ -35,7 +35,7 @@
     .line 64
     new-instance v0, Ljava/lang/StringBuilder;
 
-    const-class v1, Lcom/android/settings/bY;
+    const-class v1, Lcom/android/settings_ext/bY;
 
     invoke-virtual {v1}, Ljava/lang/Class;->getSimpleName()Ljava/lang/String;
 
@@ -50,12 +50,12 @@
 
     move-result-object v1
 
-    iget-object v2, p0, Lcom/android/settings/bY;->kk:Ljava/lang/CharSequence;
+    iget-object v2, p0, Lcom/android/settings_ext/bY;->kk:Ljava/lang/CharSequence;
 
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/CharSequence;)Ljava/lang/StringBuilder;
 
     .line 66
-    iget-boolean v1, p0, Lcom/android/settings/bY;->kl:Z
+    iget-boolean v1, p0, Lcom/android/settings_ext/bY;->kl:Z
 
     if-eqz v1, :cond_0
 
@@ -72,12 +72,12 @@
 
     move-result-object v1
 
-    iget-object v2, p0, Lcom/android/settings/bY;->componentName:Landroid/content/ComponentName;
+    iget-object v2, p0, Lcom/android/settings_ext/bY;->componentName:Landroid/content/ComponentName;
 
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
     .line 69
-    iget-object v1, p0, Lcom/android/settings/bY;->km:Landroid/content/ComponentName;
+    iget-object v1, p0, Lcom/android/settings_ext/bY;->km:Landroid/content/ComponentName;
 
     if-eqz v1, :cond_1
 
@@ -88,7 +88,7 @@
 
     move-result-object v1
 
-    iget-object v2, p0, Lcom/android/settings/bY;->km:Landroid/content/ComponentName;
+    iget-object v2, p0, Lcom/android/settings_ext/bY;->km:Landroid/content/ComponentName;
 
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 

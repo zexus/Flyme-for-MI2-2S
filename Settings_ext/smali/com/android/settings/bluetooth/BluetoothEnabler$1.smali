@@ -1,10 +1,10 @@
-.class Lcom/android/settings/bluetooth/BluetoothEnabler$1;
+.class Lcom/android/settings_ext/bluetooth/BluetoothEnabler$1;
 .super Landroid/os/Handler;
 .source "BluetoothEnabler.java"
 
 
 # instance fields
-.field final synthetic MJ:Lcom/android/settings/bluetooth/BluetoothEnabler;
+.field final synthetic MJ:Lcom/android/settings_ext/bluetooth/BluetoothEnabler;
 
 
 # virtual methods
@@ -34,17 +34,17 @@
     move-result v0
 
     .line 58
-    iget-object v1, p0, Lcom/android/settings/bluetooth/BluetoothEnabler$1;->MJ:Lcom/android/settings/bluetooth/BluetoothEnabler;
+    iget-object v1, p0, Lcom/android/settings_ext/bluetooth/BluetoothEnabler$1;->MJ:Lcom/android/settings_ext/bluetooth/BluetoothEnabler;
 
-    invoke-static {v1}, Lcom/android/settings/bluetooth/BluetoothEnabler;->a(Lcom/android/settings/bluetooth/BluetoothEnabler;)Landroid/content/Context;
-
-    move-result-object v1
-
-    invoke-static {v1}, Lcom/android/settings/search/e;->bn(Landroid/content/Context;)Lcom/android/settings/search/e;
+    invoke-static {v1}, Lcom/android/settings_ext/bluetooth/BluetoothEnabler;->a(Lcom/android/settings_ext/bluetooth/BluetoothEnabler;)Landroid/content/Context;
 
     move-result-object v1
 
-    const-class v2, Lcom/android/settings/bluetooth/BluetoothSettings;
+    invoke-static {v1}, Lcom/android/settings_ext/search/e;->bn(Landroid/content/Context;)Lcom/android/settings_ext/search/e;
+
+    move-result-object v1
+
+    const-class v2, Lcom/android/settings_ext/bluetooth/BluetoothSettings;
 
     invoke-virtual {v2}, Ljava/lang/Class;->getName()Ljava/lang/String;
 
@@ -52,7 +52,7 @@
 
     const/4 v3, 0x1
 
-    invoke-virtual {v1, v2, v3, v0}, Lcom/android/settings/search/e;->b(Ljava/lang/String;ZZ)V
+    invoke-virtual {v1, v2, v3, v0}, Lcom/android/settings_ext/search/e;->b(Ljava/lang/String;ZZ)V
 
     goto :goto_0
 

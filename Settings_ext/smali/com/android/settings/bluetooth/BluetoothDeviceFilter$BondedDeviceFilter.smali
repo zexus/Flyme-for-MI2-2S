@@ -1,9 +1,9 @@
-.class final Lcom/android/settings/bluetooth/BluetoothDeviceFilter$BondedDeviceFilter;
+.class final Lcom/android/settings_ext/bluetooth/BluetoothDeviceFilter$BondedDeviceFilter;
 .super Ljava/lang/Object;
 .source "BluetoothDeviceFilter.java"
 
 # interfaces
-.implements Lcom/android/settings/bluetooth/BluetoothDeviceFilter$Filter;
+.implements Lcom/android/settings_ext/bluetooth/BluetoothDeviceFilter$Filter;
 
 
 # direct methods
@@ -17,12 +17,12 @@
     return-void
 .end method
 
-.method synthetic constructor <init>(Lcom/android/settings/bluetooth/BluetoothDeviceFilter$1;)V
+.method synthetic constructor <init>(Lcom/android/settings_ext/bluetooth/BluetoothDeviceFilter$1;)V
     .locals 0
 
     .prologue
     .line 87
-    invoke-direct {p0}, Lcom/android/settings/bluetooth/BluetoothDeviceFilter$BondedDeviceFilter;-><init>()V
+    invoke-direct {p0}, Lcom/android/settings_ext/bluetooth/BluetoothDeviceFilter$BondedDeviceFilter;-><init>()V
 
     return-void
 .end method
