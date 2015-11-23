@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:miui="http://schemas.android.com/apk/res/com.android.settings">
+    <PreferenceCategory android:title="@string/music_dolby_mode_music" android:key="music_advance">
+        <CheckBoxPreference android:title="@string/music_dolby_volume_leveler" android:key="music_volume_leveler" android:defaultValue="false" />
+        <CheckBoxPreference android:title="@string/music_dolby_dialogue_enhancer" android:key="music_dialogue_enhancer" android:defaultValue="false" />
+        <CheckBoxPreference android:title="@string/music_dolby_surround_virtualizer" android:key="music_surround_virtualizer" android:defaultValue="false" />
+        <Preference android:title="@string/music_equalizer" android:key="dolby_equalizer" android:fragment="com.android.settings.dolby.DolbyEqualizerAlert" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/music_dolby_mode_movie" android:key="movie_advance">
+        <CheckBoxPreference android:title="@string/music_dolby_volume_leveler" android:key="movie_volume_leveler" android:defaultValue="false" />
+        <CheckBoxPreference android:title="@string/music_dolby_dialogue_enhancer" android:key="movie_dialogue_enhancer" android:defaultValue="false" />
+        <CheckBoxPreference android:title="@string/music_dolby_surround_virtualizer" android:key="movie_surround_virtualizer" android:defaultValue="false" />
+    </PreferenceCategory>
+</PreferenceScreen>

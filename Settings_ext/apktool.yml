@@ -1,0 +1,30 @@
+version: 2.0.3-8fee34-SNAPSHOT
+apkFileName: Settings.apk
+isFrameworkApk: false
+usesFramework:
+  ids:
+  - 1
+  - 16
+  - 17
+sdkInfo:
+  minSdkVersion: '21'
+  targetSdkVersion: '21'
+packageInfo:
+  forced-package-id: '127'
+versionInfo:
+  versionCode: '21'
+  versionName: 5.0.2-5.11.5
+sharedLibrary: false
+unknownFiles:
+  miui_push_version: '8'
+  com/xiaomi/smack/package.html: '8'
+  com/xiaomi/smack/debugger/package.html: '8'
+  com/xiaomi/smack/filter/package.html: '8'
+  com/xiaomi/smack/packet/package.html: '8'
+  com/xiaomi/smack/provider/package.html: '8'
+  com/xiaomi/smack/util/package.html: '8'
+  org/htmlparser/beans/BeanyBaby.form: '8'
+  org/htmlparser/beans/images/Chain16.gif: '8'
+  org/htmlparser/beans/images/Chain32.gif: '8'
+  org/htmlparser/beans/images/Knot16.gif: '8'
+  org/htmlparser/beans/images/Knot32.gif: '8'

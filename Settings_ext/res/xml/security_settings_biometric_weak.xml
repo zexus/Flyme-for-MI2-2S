@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceScreen android:title="@string/biometric_weak_improve_matching_title" android:key="biometric_weak_improve_matching" />
+    <CheckBoxPreference android:title="@string/biometric_weak_liveliness_title" android:key="biometric_weak_liveliness" android:summary="@string/biometric_weak_liveliness_summary" />
+    <CheckBoxPreference android:title="@string/lockpattern_settings_enable_visible_pattern_title" android:key="visiblepattern" />
+</PreferenceScreen>

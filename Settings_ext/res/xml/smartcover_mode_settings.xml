@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <CheckBoxPreference android:persistent="false" android:title="@string/smartcover_sensitive_title" android:key="smartcover_mode_enable" />
+    <PreferenceCategory android:title="@string/handy_mode_size" />
+</PreferenceScreen>
