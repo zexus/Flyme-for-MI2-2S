@@ -104,10 +104,10 @@
         </activity>
         <activity-alias android:label="@string/settings_label_launcher" android:launchMode="singleTask" android:name="MainSettings" android:targetActivity="MiuiSettings" android:taskAffinity="com.android.settings_ext">
             <intent-filter>
+                <action android:name="com.android.settings.ADDITIONAL_APPLICATION_SETTING"/>
                 <action android:name="android.intent.action.MAIN"/>
                 <action android:name="android.settings.WIRELESS_SETTINGS"/>
                 <category android:name="android.intent.category.DEFAULT"/>
-                <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity-alias>
         <receiver android:name="ManagedProfileSetup">
