@@ -6,6 +6,7 @@ usesFramework:
   - 1
   - 16
   - 17
+  - 18
 sdkInfo:
   minSdkVersion: '21'
   targetSdkVersion: '21'
