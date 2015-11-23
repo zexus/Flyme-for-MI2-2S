@@ -185,6 +185,12 @@
 
     move-result-object v0
 
+    if-nez v0, :cond_SiFooYeee
+
+    return-void
+
+    :cond_SiFooYeee
+
     check-cast v0, Landroid/preference/PreferenceCategory;
 
     .line 67
@@ -256,6 +262,11 @@
     .line 84
     iget-object v0, p0, Lcom/android/settings_ext/MiuiDisplaySettings;->pz:Lmiui/preference/ValuePreference;
 
+    if-nez v0, :cond_SiFooYee
+
+    return-void
+
+    :cond_SiFooYee
     invoke-virtual {v0, v5}, Lmiui/preference/ValuePreference;->setShowRightArrow(Z)V
 
     .line 86
@@ -755,6 +766,12 @@
     .line 150
     :goto_0
     iget-object v1, p0, Lcom/android/settings_ext/MiuiDisplaySettings;->pz:Lmiui/preference/ValuePreference;
+
+    if-nez v1, :cond_SiFooYee
+
+    return-void
+
+    :cond_SiFooYee
 
     if-eqz v0, :cond_1
 

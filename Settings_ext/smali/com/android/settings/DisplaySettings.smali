@@ -957,6 +957,11 @@
     move-result v0
 
     .line 375
+    if-nez p1, :cond_SiFooYee
+
+    return-void
+
+    :cond_SiFooYee
     invoke-virtual {p1, v0}, Landroid/preference/ListPreference;->setValueIndex(I)V
 
     .line 378
@@ -1215,6 +1220,11 @@
     :cond_2
     iget-object v6, p0, Lcom/android/settings_ext/DisplaySettings;->jW:Landroid/preference/ListPreference;
 
+    if-nez v6, :cond_SiFooYee
+
+    return-void
+
+    :cond_SiFooYee
     invoke-static {v0, v1}, Ljava/lang/String;->valueOf(J)Ljava/lang/String;
 
     move-result-object v7

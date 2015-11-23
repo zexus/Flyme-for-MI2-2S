@@ -187,7 +187,7 @@
     .line 71
     iget-object v0, p0, Lcom/android/settings_ext/fuelgauge/BatterySettings;->aau:Landroid/preference/ListPreference;
 
-    invoke-virtual {v0, p0}, Landroid/preference/ListPreference;->setOnPreferenceChangeListener(Landroid/preference/Preference$OnPreferenceChangeListener;)V
+    #invoke-virtual {v0, p0}, Landroid/preference/ListPreference;->setOnPreferenceChangeListener(Landroid/preference/Preference$OnPreferenceChangeListener;)V
 
     .line 73
     const-string v0, "performance_category"
@@ -263,7 +263,7 @@
 
     iget-object v1, p0, Lcom/android/settings_ext/fuelgauge/BatterySettings;->aay:Landroid/preference/Preference;
 
-    invoke-virtual {v0, v1}, Landroid/preference/PreferenceScreen;->removePreference(Landroid/preference/Preference;)Z
+    #invoke-virtual {v0, v1}, Landroid/preference/PreferenceScreen;->removePreference(Landroid/preference/Preference;)Z
 
     .line 83
     iput-object v3, p0, Lcom/android/settings_ext/fuelgauge/BatterySettings;->aay:Landroid/preference/Preference;
@@ -298,7 +298,7 @@
 
     iget-object v1, p0, Lcom/android/settings_ext/fuelgauge/BatterySettings;->aaz:Landroid/preference/PreferenceScreen;
 
-    invoke-virtual {v0, v1}, Landroid/preference/PreferenceScreen;->removePreference(Landroid/preference/Preference;)Z
+    #invoke-virtual {v0, v1}, Landroid/preference/PreferenceScreen;->removePreference(Landroid/preference/Preference;)Z
 
     .line 90
     iput-object v3, p0, Lcom/android/settings_ext/fuelgauge/BatterySettings;->aaz:Landroid/preference/PreferenceScreen;
@@ -383,7 +383,7 @@
 
     iget-object v1, p0, Lcom/android/settings_ext/fuelgauge/BatterySettings;->aau:Landroid/preference/ListPreference;
 
-    invoke-virtual {v0, v1}, Landroid/preference/PreferenceScreen;->removePreference(Landroid/preference/Preference;)Z
+    #invoke-virtual {v0, v1}, Landroid/preference/PreferenceScreen;->removePreference(Landroid/preference/Preference;)Z
 
     .line 117
     iput-object v3, p0, Lcom/android/settings_ext/fuelgauge/BatterySettings;->aau:Landroid/preference/ListPreference;

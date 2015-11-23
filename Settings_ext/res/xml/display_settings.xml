@@ -3,12 +3,15 @@
   xmlns:android="http://schemas.android.com/apk/res/android"
   xmlns:settings="http://schemas.android.com/apk/res/com.android.settings_ext">
     <PreferenceCategory android:title="@string/screen" />
+<!--
     <Preference android:title="@string/brightness" android:key="brightness" android:fragment="com.android.settings_ext.display.BrightnessFragment" />
     <com.android.settings_ext.display.ResolutionListPreference android:persistent="false" android:entries="@array/screen_resolution_entries" android:title="@string/screen_resolution_title" android:key="screen_resolution" android:summary="@string/screen_resolution_summary" android:positiveButtonText="@string/screen_resolution_confirm" android:entryValues="@array/screen_resolution_values" />
     <miui.preference.ValuePreference android:title="@string/screen_paper_mode_title" android:key="screen_paper_mode" android:summary="@string/screen_paper_mode_summary" android:fragment="com.android.settings_ext.display.PaperModeFragment" />
+-->
     <Preference android:title="@string/screen_effect" android:key="screen_effect">
         <intent android:targetPackage="com.android.settings_ext" android:targetClass="com.android.settings_ext.display.ScreenEffect" />
     </Preference>
+<!--
     <PreferenceCategory android:title="@string/touch_title" android:key="touch_category">
         <CheckBoxPreference android:persistent="false" android:title="@string/touch_sensitive_title" android:key="touch_sensitive" android:summary="@string/touch_sensitive_summary" />
     </PreferenceCategory>
@@ -22,4 +25,5 @@
     <CheckBoxPreference android:persistent="false" android:title="@string/doze_title" android:key="doze" android:summary="@string/doze_summary" />
     <CheckBoxPreference android:title="@string/accelerometer_title" android:key="auto_rotate" />
     <CheckBoxPreference android:persistent="false" android:title="@string/notification_pulse_title" android:key="notification_pulse" android:summary="@string/led_pulse_summary" />
+-->
 </PreferenceScreen>

@@ -247,6 +247,8 @@
 
     move-result-object v0
 
+    return-void
+
     check-cast v0, Ljava/lang/String;
 
     .line 73
