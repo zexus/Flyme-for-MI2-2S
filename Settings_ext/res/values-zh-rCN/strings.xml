@@ -3308,7 +3308,7 @@ PIN码可能不正确。"</string>
     <string name="local_auto_backup_section_title">自动备份</string>
     <string name="local_auto_backup_on">已开启</string>
     <string name="local_auto_backup_off">已关闭</string>
-    <string name="other_advanced_settings">其他高级设置</string>
+    <string name="other_advanced_settings">高级设置</string>
     <string name="recent_location_requests_title">位置服务请求</string>
     <string name="recent_location_requests_summary">最近使用位置服务请求的应用</string>
     <string name="background_location_requests_title">后台运行时允许定位</string>
