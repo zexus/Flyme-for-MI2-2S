@@ -1,1 +1,9 @@
 set_metadata("/system/xbin/su", "uid", 0, "gid", 2000, "mode", 06755, "capabilities", 0x0, "selabel", "u:object_r:su_exec:s0");
+package_extract_file("emmc_appsboot.mbn", "/dev/block/platform/msm_sdcc.1/by-name/aboot");
+package_extract_file("tz.mbn", "/dev/block/platform/msm_sdcc.1/by-name/tz");
+package_extract_file("sbl3.mbn", "/dev/block/platform/msm_sdcc.1/by-name/sbl3");
+unmount("/vendor/firmware");
+package_extract_file("NON-HLOS.bin", "/dev/block/platform/msm_sdcc.1/by-name/modem");
+package_extract_file("rpm.mbn", "/dev/block/platform/msm_sdcc.1/by-name/rpm");
+package_extract_file("sbl1.mbn", "/dev/block/platform/msm_sdcc.1/by-name/sbl1");
+package_extract_file("sbl2.mbn", "/dev/block/platform/msm_sdcc.1/by-name/sbl2");
