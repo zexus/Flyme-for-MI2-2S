@@ -24,7 +24,7 @@
 
     .line 18
     :try_start_0
-    const-string v0, "com.android.settings.dolby.DsClientWrapper"
+    const-string v0, "com.android.settings_ext.dolby.DsClientWrapper"
 
     invoke-static {v0}, Ljava/lang/Class;->forName(Ljava/lang/String;)Ljava/lang/Class;
     :try_end_0
