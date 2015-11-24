@@ -1506,7 +1506,7 @@
     .line 223
     sget-object v1, Lcom/android/server/HandyMode;->sContext:Landroid/content/Context;
 
-    invoke-virtual {v1, v0}, Landroid/content/Context;->startActivity(Landroid/content/Intent;)V
+    #invoke-virtual {v1, v0}, Landroid/content/Context;->startActivity(Landroid/content/Intent;)V
 
     .line 224
     return-void
