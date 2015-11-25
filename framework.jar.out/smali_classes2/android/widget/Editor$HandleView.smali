@@ -40,6 +40,8 @@
 
 .field protected mHorizontalScale:F
 
+.field protected mHorizontalGravity:I
+
 .field protected mHotspotX:I
 
 .field private mIdealVerticalOffset:F
@@ -51,6 +53,8 @@
 .field private mLastParentX:I
 
 .field private mLastParentY:I
+
+.field private mMinSize:I
 
 .field private mNumberPreviousOffsets:I
 
@@ -413,6 +417,88 @@
     .line 3485
     :cond_1
     return-void
+.end method
+
+.method private getHorizontalOffset()I
+    .locals 4
+
+    .prologue
+    .line 3423
+    invoke-direct {p0}, Landroid/widget/Editor$HandleView;->getPreferredWidth()I
+
+    move-result v2
+
+    .line 3424
+    .local v2, "width":I
+    iget-object v3, p0, Landroid/widget/Editor$HandleView;->mDrawable:Landroid/graphics/drawable/Drawable;
+
+    invoke-virtual {v3}, Landroid/graphics/drawable/Drawable;->getIntrinsicWidth()I
+
+    move-result v0
+
+    .line 3426
+    .local v0, "drawWidth":I
+    iget v3, p0, Landroid/widget/Editor$HandleView;->mHorizontalGravity:I
+
+    packed-switch v3, :pswitch_data_0
+
+    .line 3432
+    :pswitch_0
+    sub-int v3, v2, v0
+
+    div-int/lit8 v1, v3, 0x2
+
+    .line 3438
+    .local v1, "left":I
+    :goto_0
+    return v1
+
+    .line 3428
+    .end local v1    # "left":I
+    :pswitch_1
+    const/4 v1, 0x0
+
+    .line 3429
+    .restart local v1    # "left":I
+    goto :goto_0
+
+    .line 3435
+    .end local v1    # "left":I
+    :pswitch_2
+    sub-int v1, v2, v0
+
+    .restart local v1    # "left":I
+    goto :goto_0
+
+    .line 3426
+    nop
+
+    :pswitch_data_0
+    .packed-switch 0x3
+        :pswitch_1
+        :pswitch_0
+        :pswitch_2
+    .end packed-switch
+.end method
+
+.method private getPreferredWidth()I
+    .locals 2
+
+    .prologue
+    .line 3269
+    iget-object v0, p0, Landroid/widget/Editor$HandleView;->mDrawable:Landroid/graphics/drawable/Drawable;
+
+    invoke-virtual {v0}, Landroid/graphics/drawable/Drawable;->getIntrinsicWidth()I
+
+    move-result v0
+
+    iget v1, p0, Landroid/widget/Editor$HandleView;->mMinSize:I
+
+    invoke-static {v0, v1}, Ljava/lang/Math;->max(II)I
+
+    move-result v0
+
+    return v0
 .end method
 
 .method private isVisible()Z
