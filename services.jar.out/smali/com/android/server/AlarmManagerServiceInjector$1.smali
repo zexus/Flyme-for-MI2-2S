@@ -32,7 +32,7 @@
     invoke-direct {p0}, Ljava/util/ArrayList;-><init>()V
 
     .line 26
-    const-string v0, "com.android.deskclock"
+    const-string v0, "com.android.alarmclock"
 
     invoke-virtual {p0, v0}, Lcom/android/server/AlarmManagerServiceInjector$1;->add(Ljava/lang/Object;)Z
 
