@@ -1,0 +1,16 @@
+version: 2.0.3-8fee34-SNAPSHOT
+apkFileName: MiuiCamera.apk
+isFrameworkApk: false
+usesFramework:
+  ids:
+  - 1
+  - 16
+sdkInfo:
+  minSdkVersion: '16'
+  targetSdkVersion: '19'
+packageInfo:
+  forced-package-id: '127'
+versionInfo:
+  versionCode: '1'
+  versionName: '1'
+sharedLibrary: false

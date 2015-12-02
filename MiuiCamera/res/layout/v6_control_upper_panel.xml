@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.android.camera.ui.V6BottomControlUpperPanel android:id="@id/v6_control_upper_panel" android:layout_width="fill_parent" android:layout_height="@dimen/v6_top_control_height" android:layout_marginBottom="@dimen/v6_bottom_control_below_height" android:layout_alignParentBottom="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/v6_camera_top_control_panel" />
+    <include layout="@layout/v6_video_top_control_panel" />
+    <View android:id="@id/top_control_bottom_line" android:layout_alignParentBottom="true" style="@style/PopupSeperator" />
+</com.android.camera.ui.V6BottomControlUpperPanel>

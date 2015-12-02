@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<transition
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/v6_ic_flash_button_auto" />
+    <item android:drawable="@drawable/v6_ic_flash_button_need_flash" />
+</transition>

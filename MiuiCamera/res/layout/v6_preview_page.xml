@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.android.camera.ui.V6PreviewPage android:id="@id/v6_preview_page" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/v6_preview_panel" />
+    <FrameLayout android:id="@id/v6_setting_popup_parent_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/v6_bottom_control_height" android:layout_alignParentBottom="true">
+        <FrameLayout android:id="@id/v6_setting_popup_parent" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </FrameLayout>
+    <ImageView android:id="@id/asd_indicator_image" android:visibility="gone" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/asd_indicator_margin_top" android:layout_marginBottom="@dimen/asd_indicator_margin_bottom" android:layout_above="@id/v6_setting_popup_parent_layout" android:layout_centerHorizontal="true" />
+    <include layout="@layout/v6_camera_mode_exit" />
+    <include layout="@layout/qrcode_viewfinder_layout" />
+    <include layout="@layout/v6_camera_preview_control" />
+    <FrameLayout android:id="@id/v6_setting_frontground" android:background="@color/blur_background_mask" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</com.android.camera.ui.V6PreviewPage>

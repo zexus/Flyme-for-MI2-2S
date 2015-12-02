@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.android.camera.ui.V6EffectSettingPage android:id="@id/v6_effect_setting_page" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_alignParentRight="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:gravity="left" android:id="@id/v6_effect_setting_page_internal" android:paddingBottom="@dimen/v6_bottom_view_height" android:descendantFocusability="afterDescendants" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <RelativeLayout android:id="@id/v6_setting_top" style="@style/V6LayoutTopStyle">
+            <TextView android:textAppearance="@style/V6SettingTopTextAppearance" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/effect_setting_top_text" android:layout_centerInParent="true" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/v6_setting_parent" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerInParent="true">
+            <com.android.camera.ui.V6GridView android:gravity="center" android:id="@id/setting_gridview" android:scrollbars="none" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/effect_display_grid_left_right_margin" android:layout_marginRight="@dimen/effect_display_grid_left_right_margin" android:cacheColorHint="#00000000" android:horizontalSpacing="@dimen/effect_display_grid_spacing" android:verticalSpacing="@dimen/effect_display_grid_spacing" android:layout_centerHorizontal="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+    </RelativeLayout>
+</com.android.camera.ui.V6EffectSettingPage>
