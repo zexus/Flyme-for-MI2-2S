@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/compass_screen_portrait" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:paddingTop="25.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/text_direction_size" android:textColor="@android:color/white" android:layout_gravity="center_horizontal" android:id="@id/layout_direction_portrait" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <ImageView android:layout_gravity="center|left" android:id="@id/direction_left" android:background="@drawable/direction_left" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" />
+        <ImageView android:layout_gravity="center|right" android:id="@id/direction_right" android:background="@drawable/direction_right" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15.0dip" />
+    </FrameLayout>
+    <LinearLayout android:layout_gravity="bottom|center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginBottom="59.0dip">
+        <TextView android:textSize="57.0sp" android:textColor="@android:color/white" android:id="@id/txt_direction_portrait" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <ImageView android:background="@drawable/ic_degree" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </LinearLayout>
+</FrameLayout>

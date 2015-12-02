@@ -1,0 +1,172 @@
+Signature-Version: 1.0
+Created-By: 1.0 (Android SignApk)
+SHA1-Digest-Manifest: 9Xvq8Az49wQzBCd+dP3Cquip6DM=
+
+Name: res/layout/gradienter_screen.xml
+SHA1-Digest: t/8QvZzFmGZ2eAU1i2X+hElUirU=
+
+Name: res/anim/calibration_compass_out.xml
+SHA1-Digest: VHwNhHuZmoMHlQva1H2poC00EK8=
+
+Name: res/drawable-xhdpi-v4/ic_degree.png
+SHA1-Digest: JMS1P8paFgGM78qZukfKO5Gmlt8=
+
+Name: res/layout/compass_screen.xml
+SHA1-Digest: DMNDHLosD88yAbEn2uXI17rtBZk=
+
+Name: res/drawable-xhdpi-v4/tutorial_bg.9.png
+SHA1-Digest: C9VzY1i3nLda0aJIHvhyCP9bo0c=
+
+Name: res/drawable-xhdpi-v4/tutorial_1.png
+SHA1-Digest: S6jLzXF2vbkju5R716rBUWEII5g=
+
+Name: res/drawable-xhdpi-v4/gradienter_pointer_portrait1.png
+SHA1-Digest: OIxh289oI9gtfLHQFQ3L5xQlLP4=
+
+Name: res/drawable/shape_screen_background.xml
+SHA1-Digest: jc3Mpo3s9uu0dYgRUXAzPYzqWZM=
+
+Name: res/layout/compass_activity.xml
+SHA1-Digest: 73aIXdCDAbRTRs60iiJxlnsI6ZU=
+
+Name: res/drawable-xhdpi-v4/shape_rotate_view_bg.xml
+SHA1-Digest: tSaEVdXY5+6GQFQO+2jZzNQ3vgY=
+
+Name: res/drawable-xhdpi-v4/seek_point_selector_h.png
+SHA1-Digest: E8gkhZVGEcOQ3/zObieceZU01LY=
+
+Name: res/drawable-xhdpi-v4/rotate_view_bg.png
+SHA1-Digest: r1tZwd/uiSQDXS8dL5mu7Z0ZHQo=
+
+Name: res/layout/compass_layout_lying.xml
+SHA1-Digest: mVAjDSZe9ZEwGg7jzcZ1oDsjmWE=
+
+Name: assets/fontnumber_light.ttf
+SHA1-Digest: q5M8FLAM5Elq7zisS8NX8WVjnRw=
+
+Name: res/drawable-xhdpi-v4/gradienter_pointer_portrait2.png
+SHA1-Digest: iIoFgAzmNm18iSiAEx2tznD6Gmo=
+
+Name: res/anim/calibration_compass_in.xml
+SHA1-Digest: xEXcL9ldS5DzKFgHs+KXFllShjM=
+
+Name: res/drawable-xhdpi-v4/gradienter_pointer_lying1.png
+SHA1-Digest: uGpLzoqjisCgv36NuRl90i39RB0=
+
+Name: res/drawable-xhdpi-v4/app_icon.png
+SHA1-Digest: 5xHuyG0lNlHsSxwyuNj+t9EkGLQ=
+
+Name: res/drawable/seek_point_selector.xml
+SHA1-Digest: Y9EIXSgt/08G8gznUfYD+nwXgSo=
+
+Name: res/drawable-xhdpi-v4/tutorial_6.png
+SHA1-Digest: cR2lg1nmod7/nz+cgRRhWC4N44Y=
+
+Name: res/drawable-xhdpi-v4/gradienter_circle_portrait2.png
+SHA1-Digest: mWnKxISnwe81SJfziwRFcPi8koo=
+
+Name: res/layout/gradienter_layout_lying.xml
+SHA1-Digest: KfLTAws43bPlD4UoyKO31pJ0kVs=
+
+Name: res/drawable-xhdpi-v4/seek_point_selector_n.png
+SHA1-Digest: pol+6fDuVGy52iSIoUOqdyqesHo=
+
+Name: res/drawable-xhdpi-v4/tutorial_4.png
+SHA1-Digest: ZOPX3cK7MB/Sc5p5AfqCZpLpFQo=
+
+Name: res/drawable-xhdpi-v4/direction_arrow.png
+SHA1-Digest: Mc14lahI8uG1brijsfIzx1Dx/0I=
+
+Name: res/layout/mobiledata_alert_dialog.xml
+SHA1-Digest: Pt5+7+ROmBx0cOp+k1qaFC1qtso=
+
+Name: res/drawable-xhdpi-v4/tutorial_3.png
+SHA1-Digest: uss44FlOr/qUk3Irx3flF6syUgc=
+
+Name: resources.arsc
+SHA1-Digest: 4drCH/y4NyrO/zK/ht8uyNAmwDM=
+
+Name: res/drawable-xhdpi-v4/window_bg.jpg
+SHA1-Digest: grAtPdQfuUHSLZPzY5CJ4XxCc5s=
+
+Name: res/drawable-xhdpi-v4/divider_line.9.png
+SHA1-Digest: M5f2w+92+Lzf07RPZos4ap6WsgM=
+
+Name: AndroidManifest.xml
+SHA1-Digest: wruJLshctuh9KHLJ4u9/IWPVdRw=
+
+Name: res/drawable-xhdpi-v4/tutorial_5.png
+SHA1-Digest: rzAxev7copN1wgYZQ4XUqu30OUg=
+
+Name: res/drawable-xhdpi-v4/gradienter_circle_portrait1.png
+SHA1-Digest: ktU0i6bmShy2EM7d+YMFdWEP+eE=
+
+Name: res/drawable-xhdpi-v4/direction_right.png
+SHA1-Digest: ydmdo1sIZn3rvKFLKSOq8FOmPOI=
+
+Name: res/drawable/shape_camera_foreground.xml
+SHA1-Digest: uWWnJPfFVenjWiofM0HfkbF4cxI=
+
+Name: res/drawable-xhdpi-v4/gradienter_circle_lying1.png
+SHA1-Digest: +tDvD5J7YWBmCxnwLBIgVXCvaGY=
+
+Name: res/anim/camera_mask_in.xml
+SHA1-Digest: iogkJX/fEKcBKQzPgwY78H2lNdw=
+
+Name: res/drawable-xhdpi-v4/gradienter_circle_lying2.png
+SHA1-Digest: kyCkwlcJKvcvRzG/Lc2GuvjrK48=
+
+Name: res/drawable-xhdpi-v4/ic_degree_d.png
+SHA1-Digest: CxzbzxqWUQRgVF1CXhTyt6yYnbg=
+
+Name: res/layout/gradienter_layout_portrait.xml
+SHA1-Digest: 0QUIqiooTKryuzxWUPpdT+FQh4w=
+
+Name: res/anim/camera_mask_out.xml
+SHA1-Digest: 1+kYSE/bsjE4rJR4CHkd7fXQhLw=
+
+Name: res/drawable-xhdpi-v4/tutorial_7.png
+SHA1-Digest: xP6k8MOslkp8DnS37kSGSZZ6Dhs=
+
+Name: res/anim/calibration_tutorial_in.xml
+SHA1-Digest: kakmOEpTH5XfSPE/ktCDfYBJaNs=
+
+Name: res/drawable-xhdpi-v4/icon_altitude_tip.png
+SHA1-Digest: Lp5uJziktKZT6c0RPa6mc2jIhv8=
+
+Name: res/drawable-xhdpi-v4/direction_left.png
+SHA1-Digest: GOO1t5J+7RrqnQri3CsSdRiKkp0=
+
+Name: classes.dex
+SHA1-Digest: 5nuDUWMeH0Hyb36LqxqwF0PorQI=
+
+Name: res/drawable-xhdpi-v4/icon_altitude_refresh.png
+SHA1-Digest: mzn8cPCfBzpUzRLZQk/T4psNeN0=
+
+Name: res/drawable-xhdpi-v4/compass_pointer.png
+SHA1-Digest: qtgTBW9S+ugMn8rbrN4cC73p4Nc=
+
+Name: res/drawable-xhdpi-v4/compass_v.png
+SHA1-Digest: zx/mJ5O571ptOlHqlONM4IzwImI=
+
+Name: res/drawable/tutorial_animation.xml
+SHA1-Digest: wemeyu7SsOPn9YbIDDpimr2ZMrU=
+
+Name: res/drawable-xhdpi-v4/gradienter_pointer_lying2.png
+SHA1-Digest: M6CLdtpFHxaiNTaqEIt2sWxUKR4=
+
+Name: res/anim/calibration_tutorial_out.xml
+SHA1-Digest: k6mEbwLQ7GFN7OdzdrV2AjCRfT0=
+
+Name: res/drawable-xhdpi-v4/tutorial_2.png
+SHA1-Digest: XVO0JKasyEmcVevTzichqlfjvpQ=
+
+Name: res/drawable-xhdpi-v4/compass_pointer_mask.png
+SHA1-Digest: YLWvAfYs15XY7uDQw5xZdHOeOV0=
+
+Name: res/layout/compass_layout_portrait.xml
+SHA1-Digest: SnavWGiNhCe5DQYNQVT4KY2qjZc=
+
+Name: assets/DroidSans.ttf
+SHA1-Digest: 0rqg3KTAlHJMqfcq+ZgVzX6hCBU=
+

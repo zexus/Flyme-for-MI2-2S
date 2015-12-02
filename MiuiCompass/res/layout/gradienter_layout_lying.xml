@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/gradienter_layout_lying" android:background="@drawable/shape_screen_background" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginTop="@dimen/margin_top_gradienter_layout_angle">
+        <TextView android:textSize="57.0sp" android:textColor="@android:color/white" android:id="@id/layout_angle_lying" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <ImageView android:background="@drawable/ic_degree" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <com.miui.compass.GradienterView android:layout_gravity="center" android:id="@id/gradienter_view_lying" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+</FrameLayout>
