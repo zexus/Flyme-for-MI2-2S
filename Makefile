@@ -56,8 +56,7 @@ vendor_modify_images := boot
 #-----------------------------------------------------------------------------
 vendor_saved_apps := Bluetooth KeyChain HTMLViewer UserDictionaryProvider BackupRestoreConfirmation \
                      FusedLocation PrintSpooler SharedStorageBackup  ExternalStorageProvider InputDevices \
-                     ProxyHandler Shell DefaultContainerService TimeService miui com.qualcomm.location \
-                     InterfacePermissions
+                     ProxyHandler Shell DefaultContainerService TimeService miui com.qualcomm.location
 
 ##############################################################################
 # The value decides which vendor apk you want to modify.
@@ -66,7 +65,7 @@ vendor_saved_apps := Bluetooth KeyChain HTMLViewer UserDictionaryProvider Backup
 # You need ro decode FMRadio.apk to the project directory(use apktool d FMRadio.apk) first,
 # and then you can make it by:   make FMRadio
 #-----------------------------------------------------------------------------
-vendor_modify_apps := miuisystem MiuiCamera MiuiCompass
+vendor_modify_apps := miuisystem MiuiCamera
 
 ##############################################################################
 # The value decides which vendor jar you want to modify.

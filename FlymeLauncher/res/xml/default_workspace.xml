@@ -20,6 +20,7 @@
         <favorite launcher:className="com.meizu.flyme.ui.UseRaidersActivity" launcher:packageName="com.meizu.flyme.usetips" />
         <favorite launcher:className="com.meizu.feedback.activity.MainActivity" launcher:packageName="com.meizu.feedback" />
         <favorite launcher:className="com.android.camera.Camera" launcher:packageName="com.android.camera" />
+        <favorite launcher:className="com.miui.compass.CompassActivity" launcher:packageName="com.miui.compass" />
     </folder>
     <appwidget launcher:className="com.meizu.flyme.weather.WeatherWidgetProvider" launcher:packageName="com.meizu.flyme.weather" launcher:screen="1" launcher:x="0" launcher:y="0" launcher:spanX="4" launcher:spanY="1" />
     <favorite launcher:className="com.meizu.flyme.calendar.AllInOneActivity" launcher:packageName="com.android.calendar" launcher:screen="1" launcher:x="0" launcher:y="1" />
