@@ -1,0 +1,35 @@
+package fmradio;
+
+option optimize_for = LITE_RUNTIME;
+option java_package = "com.miui.fmradio.backup";
+option java_outer_classname = "FMRadioProtos";
+
+message StationEntry {
+  optional string guid = 1;
+  optional string luid = 2;
+
+  optional string label = 3;
+  optional int32 frequency = 4;
+  optional int32 type = 5;
+
+}
+
+enum ActionType {
+    UNDEFINE = 0;
+    NEW = 1;
+    UPDATE = 2;
+    DELETE = 3;
+}
+
+enum ConflictType {
+    UNKNOWN = 0;
+    RESERVE = 1;
+    DISCARD = 2;
+    MERGED = 3;
+}
+
+message FMRadio {
+  repeated StationEntry stationEntry = 1;
+
+}
+

@@ -1,0 +1,270 @@
+Manifest-Version: 1.0
+Created-By: 1.7.0_65 (Oracle Corporation)
+
+Name: res/layout/station_list_activity.xml
+SHA1-Digest: xsoEEAfN3bDJUl0MG3HiTbeHmms=
+
+Name: res/drawable-xhdpi-v4/btn_power_large_n.png
+SHA1-Digest: A3Ido3KyiHGDJYENfKMnfSM7sPI=
+
+Name: res/drawable-xhdpi-v4/btn_seek_next_d.png
+SHA1-Digest: wHKXJIDzHYOIj1SW0jJYKWbTKxA=
+
+Name: res/drawable/action_bar_back_dark.xml
+SHA1-Digest: qsrIZ9Ze/MRGXpMZpJLj+5AveXo=
+
+Name: res/layout/fm_on_status.xml
+SHA1-Digest: QmxcKeDoqU1SFtwxq+EzH/pi25E=
+
+Name: res/anim/controls_in3.xml
+SHA1-Digest: gDspDtO7MXVTKl3fldIvIys0SSA=
+
+Name: res/drawable/btn_seek_next.xml
+SHA1-Digest: GL4OH1YPx8258sYVDUahity0P7Q=
+
+Name: res/anim/power_in.xml
+SHA1-Digest: BqYmrN5DwKvH2YufHaSXymQ8Rps=
+
+Name: res/drawable-xhdpi-v4/bottom_background.9.png
+SHA1-Digest: H+Csxbl+gQUiKE4nsBBUcfAFxB8=
+
+Name: assets/protobuf/fmradio.proto
+SHA1-Digest: kmcIK0PfOQ0GEfkCh3BrnH6+NyQ=
+
+Name: res/anim/label_name_out.xml
+SHA1-Digest: Z9VJK3Pb72Syg5zsVx3YYPZ7R0Y=
+
+Name: res/drawable-xhdpi-v4/fm.png
+SHA1-Digest: EIIuxQPHvTn9ncWobcxZb8KsDpA=
+
+Name: assets/protobuf/syncroot.proto
+SHA1-Digest: SgD84hsSCsFMxnKAuCKavv0ywd4=
+
+Name: res/drawable-xhdpi-v4/btn_seek_previous_p.png
+SHA1-Digest: bQNAAEyPMVzRuzwFZxtFp+b0ygg=
+
+Name: res/drawable-xhdpi-v4/fm_number_1.png
+SHA1-Digest: xc1vG/UkYH5B9Jj11fGgcuWwRBA=
+
+Name: res/drawable-xhdpi-v4/fm_number_7.png
+SHA1-Digest: b033jxpkEwNPnnTxorguTkAsgM0=
+
+Name: res/drawable-xhdpi-v4/btn_power_p.png
+SHA1-Digest: IsUiZkwqzn+vF+TsyAK2aZ+Nz4s=
+
+Name: res/drawable/btn_fm_search.xml
+SHA1-Digest: P1sVWGP1Wkm+MfRVy+z1YFil6p4=
+
+Name: res/drawable-xhdpi-v4/frequency_picker_scale.png
+SHA1-Digest: V3bBhpEYtrVJMARU32qUr1lu/DA=
+
+Name: res/drawable-xhdpi-v4/btn_fm_search_n.png
+SHA1-Digest: u6NULAK93T4R/iDSbAlcKYtAivY=
+
+Name: res/drawable/btn_seek_previous.xml
+SHA1-Digest: 7z8ruvPWtSAfq0ohqDaOZ105W5w=
+
+Name: res/drawable/btn_power.xml
+SHA1-Digest: rsDWc7Rz0SCvjHYE8m4svE8I+fw=
+
+Name: res/drawable-xhdpi-v4/cover_page.png
+SHA1-Digest: fWT/1dDSAIfyiEVA2qF/n/luz6c=
+
+Name: assets/fontnumber.ttf
+SHA1-Digest: xqGu7uFihxTglX3FOR3bTn4XgTo=
+
+Name: res/drawable/btn_scan.xml
+SHA1-Digest: veg7uzwZIpoYPT1pz/IOnfmO4fU=
+
+Name: res/drawable-xhdpi-v4/screen_background.9.png
+SHA1-Digest: 4j+qGl/5TgFSoPDg4CjN45ln8KI=
+
+Name: res/anim/label_name_in.xml
+SHA1-Digest: LZ08oyein3X7kiyeWdRiLSAKaaI=
+
+Name: res/anim/states_out.xml
+SHA1-Digest: xTuvuAmFVTA7ohCP6VZi87ZceJs=
+
+Name: res/layout/station_list.xml
+SHA1-Digest: nBTZ9M81A5qiJklrsE5pKgciCpU=
+
+Name: res/drawable-xhdpi-v4/btn_list_n.png
+SHA1-Digest: akmFGD7iQXHviVasROTYRn/5JD0=
+
+Name: res/drawable-xhdpi-v4/ic_list_empty.png
+SHA1-Digest: fZ1/WePgfgvcGauzeRxrvd+NAMI=
+
+Name: res/menu/fm_list_context_menu.xml
+SHA1-Digest: Dczpui9cy0sPZNlVYUp34Ap1SEo=
+
+Name: res/anim/flt_off_out.xml
+SHA1-Digest: 3lqJbtE0ZXxyN/JmmsQucbBFXOI=
+
+Name: res/drawable/btn_list.xml
+SHA1-Digest: 4L+/3AypVSqh67Pepd7hWjf30Yc=
+
+Name: res/drawable-xhdpi-v4/bottom_foreground.png
+SHA1-Digest: BeS+WxMflCzDiArebvz/Dd6jA2A=
+
+Name: res/drawable-xhdpi-v4/btn_scan_p.png
+SHA1-Digest: LZ3oMwmAPhVd0eY6bWqEMGN6pRw=
+
+Name: res/drawable-xhdpi-v4/mhz.png
+SHA1-Digest: h/uNp1M5VOvIleKs2sZrc8tE434=
+
+Name: res/drawable-xhdpi-v4/fm_number_6.png
+SHA1-Digest: oHg7XLeRO0Gn/CT0+sv3OLOkxR4=
+
+Name: res/layout/pad_fm_radio_bottom.xml
+SHA1-Digest: S4wSHKecnHuA2/Pv8kqz56nCBHc=
+
+Name: res/layout/fmradio.xml
+SHA1-Digest: iYhFU+Clv/I3jwp92MY6yaf6QQE=
+
+Name: res/anim/picker_in.xml
+SHA1-Digest: y4va2J51s8afPMF5fzX3+YUEj/s=
+
+Name: res/anim/power_out.xml
+SHA1-Digest: W9F4LRNJa4fD6fGiJxHaRD/xHTY=
+
+Name: res/layout/station_add_dialog.xml
+SHA1-Digest: FovPRAUYQ/frUw5scRsrzf8TxIs=
+
+Name: res/drawable-xhdpi-v4/screen_background_off.9.png
+SHA1-Digest: kyep4Z61MQo0bBOt25+sGUlAAcQ=
+
+Name: res/anim/picker_out.xml
+SHA1-Digest: QYK1/+uZWViesFjmTk44JC+Lwc4=
+
+Name: res/menu/fm_menu.xml
+SHA1-Digest: wg6fSfxIpGV/uHWOhpBc39CRKag=
+
+Name: res/drawable-xhdpi-v4/frequency_picker_mask.9.png
+SHA1-Digest: N49+dy/jypgeZj2Gd7l/KoTawF8=
+
+Name: res/drawable-xhdpi-v4/fm_number_3.png
+SHA1-Digest: xGaB2V7Ja9zKzdv30Yb7YD2iDFY=
+
+Name: res/layout/station_edit_dialog.xml
+SHA1-Digest: 1KaM/abLv1gAn2yR34ZGDmxNmAw=
+
+Name: res/drawable-xhdpi-v4/fm_number_4.png
+SHA1-Digest: AwBlqqbwYHUZRaN5VznKrXKhJ8c=
+
+Name: res/anim/flt_off_in.xml
+SHA1-Digest: JmmXLB0D7LT95ep+CRzzv9pcWY8=
+
+Name: res/drawable-xhdpi-v4/fm_number_2.png
+SHA1-Digest: NfmJoQ3UMmaJ/O5rKWz31G0Dd9k=
+
+Name: resources.arsc
+SHA1-Digest: qPSn6SDzdpe4fLWes62HQr95YLk=
+
+Name: res/anim/controls_in2.xml
+SHA1-Digest: VVGvqmpsh6y6myDeUMwBj1e/jw8=
+
+Name: res/anim/states_in.xml
+SHA1-Digest: 5rmrnN39mAIPWdPo9pBWSvjcWT0=
+
+Name: res/drawable-xhdpi-v4/btn_seek_previous_n.png
+SHA1-Digest: VJ/2+VzDW2O3IhPSv0WRgHhtl4I=
+
+Name: res/drawable-xhdpi-v4/action_bar_back_pressed_dark.png
+SHA1-Digest: 7rK6V1K6wBYdmxY9D5TcRJwc1Fw=
+
+Name: res/drawable/btn_power_large.xml
+SHA1-Digest: rwPWogCx7BYDHSaccUjGMT0t7t4=
+
+Name: res/layout/station_list_item.xml
+SHA1-Digest: 31w5oC3iZfmMwYl+EWrkU2AGpRg=
+
+Name: res/anim/label_off_in.xml
+SHA1-Digest: SJMfTEw3Wb3HF9C1nCFBCVkLOzs=
+
+Name: AndroidManifest.xml
+SHA1-Digest: k3CvhtfB3YnpBjlHmj/HWTkWx24=
+
+Name: res/anim/controls_out.xml
+SHA1-Digest: uqp+f1D8+V7O25RhZsm1Wdg28fw=
+
+Name: res/drawable-xhdpi-v4/frequency_picker_pointer.png
+SHA1-Digest: C1cDPRtv7XypZSlPpiqv5C0gJo8=
+
+Name: res/drawable-xhdpi-v4/appicon.png
+SHA1-Digest: v1AlOZBXD8jTBhnRapR9+U5Ey7k=
+
+Name: res/drawable-xhdpi-v4/fm_number_9.png
+SHA1-Digest: hn99OZtsXlfLa+LQWRaDng21+x4=
+
+Name: res/drawable-xhdpi-v4/btn_fm_search_p.png
+SHA1-Digest: F7YnKNw0A/vrrKkFBwKHzu96rOY=
+
+Name: res/drawable-xhdpi-v4/fm_number_0.png
+SHA1-Digest: C70kcqC7y74RquN1v4fn6o22x3E=
+
+Name: res/drawable-xhdpi-v4/fm_number_8.png
+SHA1-Digest: 9VpwQNpCK2EcHvBwA35AhfiFaxE=
+
+Name: res/drawable-xhdpi-v4/fm_number_point.png
+SHA1-Digest: k9ycOW95GiQP/3ZzdGTu5cxDXQ4=
+
+Name: res/drawable-xhdpi-v4/fm_number_empty.png
+SHA1-Digest: yzxchMozmXx+vk91ISGzXnGlhYE=
+
+Name: res/drawable-xhdpi-v4/btn_seek_next_n.png
+SHA1-Digest: FPuIKpnmwfwba+mSg84eELDm0IY=
+
+Name: res/menu/fm_list_menu.xml
+SHA1-Digest: /0GJWEiK62xg9p6tYydNHdxRoL0=
+
+Name: res/drawable-xhdpi-v4/btn_seek_previous_d.png
+SHA1-Digest: WTtEZRdxrEXCCG4RUftFqtmYE+E=
+
+Name: res/layout/phone_fm_radio_bottom.xml
+SHA1-Digest: q6oTxvwcJO7ENBtsyuYq9lzsiTg=
+
+Name: res/drawable-xhdpi-v4/ic_media_play.png
+SHA1-Digest: cKuFlj2BCBxhAYkIsVUafaGhUd0=
+
+Name: classes.dex
+SHA1-Digest: l4R3Fdxssc31eLTwmv2VlKwWuw8=
+
+Name: res/drawable-xhdpi-v4/btn_scan_n.png
+SHA1-Digest: janQzT+MyhdiFYkErJxALVzVUug=
+
+Name: res/drawable-xhdpi-v4/fm_statusbar_icon.png
+SHA1-Digest: bKhReWmB0KSW5je4rL6mpK33Rds=
+
+Name: res/drawable-xhdpi-v4/btn_power_n.png
+SHA1-Digest: grEV6MxVFjviS+Ayl6bSTmYU3Q0=
+
+Name: res/drawable-xhdpi-v4/action_bar_back_normal_dark.png
+SHA1-Digest: 73EntuZN/xlkC6Yt/oOJ/YcgefI=
+
+Name: res/drawable-xhdpi-v4/btn_seek_next_p.png
+SHA1-Digest: PqDRHmrKouYvnpON7MYSLS9Jnjg=
+
+Name: res/drawable-xhdpi-v4/btn_power_large_p.png
+SHA1-Digest: IdbrRVdI5vTAvZ4MNO1XTyj8854=
+
+Name: res/layout/frequency_picker.xml
+SHA1-Digest: Hl0j9IRuXGICbcWyRhFMuQsC/tc=
+
+Name: res/anim/label_off_out.xml
+SHA1-Digest: YBXkIXdRVLOLkTP4bBtpk1kQwXE=
+
+Name: res/anim/frequency_zoom_in.xml
+SHA1-Digest: sXHdZPWNXM4HBeRUbnOPjtMSFBU=
+
+Name: res/anim/frequency_zoom_out.xml
+SHA1-Digest: JSQRl1q6D7WYF7I0+mSDqZu4Eo4=
+
+Name: res/anim/controls_in1.xml
+SHA1-Digest: 3HkoXQiKht2rNYbx/OO6BZ2etR4=
+
+Name: res/drawable-xhdpi-v4/fm_number_5.png
+SHA1-Digest: aGVy30XRxn31nCFXdFJgGYmTHOk=
+
+Name: res/drawable-xhdpi-v4/btn_list_p.png
+SHA1-Digest: vFvsA30+HwBxISf0RnPz1iXwZxQ=
+
