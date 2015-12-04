@@ -2362,7 +2362,7 @@
     invoke-virtual {v0, v1, p1}, Landroid/view/MenuInflater;->inflate(ILandroid/view/Menu;)V
 
     .line 338
-    const/4 v0, 0x1
+    const/4 v0, 0x0
 
     return v0
 .end method
