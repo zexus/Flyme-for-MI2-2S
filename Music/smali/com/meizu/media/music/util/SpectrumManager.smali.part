@@ -1,0 +1,6 @@
+.method public setupVisualizer(I)V
+    .locals 2
+
+    .prologue
+    return-void
+.end method
