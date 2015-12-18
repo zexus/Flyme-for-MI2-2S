@@ -230,7 +230,7 @@
 
     move-result v2
 
-    if-ne v2, v3, :cond_2
+    if-ne v2, v3, :cond_0
 
     move v2, v3
 
@@ -305,34 +305,18 @@
     .local v0, "isLowIdenty":Ljava/lang/String;
     iget-object v2, p0, Lcom/meizu/settings/battery/BatteryManagementMain;->mLowDPISwitchPreference:Lcom/meizu/common/preference/SwitchPreference;
 
-    invoke-static {v1}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
+    const-string v5, "ro.sys.ft_whole_anim"
 
-    move-result v5
-
-    if-eqz v5, :cond_0
-
-    invoke-static {v0}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
+    invoke-static {v5, v3}, Landroid/os/SystemProperties;->getBoolean(Ljava/lang/String;Z)Z
 
     move-result v5
 
     if-nez v5, :cond_1
 
-    :cond_0
-    move v4, v3
+    :goto_1
+    invoke-virtual {v2, v3}, Lcom/meizu/common/preference/SwitchPreference;->setChecked(Z)V
 
-    :cond_1
-    invoke-virtual {v2, v4}, Lcom/meizu/common/preference/SwitchPreference;->setChecked(Z)V
-
-    .line 70
-    invoke-virtual {p0}, Lcom/meizu/settings/battery/BatteryManagementMain;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
-
-    move-result-object v2
-
-    iget-object v3, p0, Lcom/meizu/settings/battery/BatteryManagementMain;->mLowDPISwitchPreference:Lcom/meizu/common/preference/SwitchPreference;
-
-    invoke-virtual {v2, v3}, Landroid/preference/PreferenceScreen;->removePreference(Landroid/preference/Preference;)Z
-
-    .line 72
+    .line 68
     invoke-virtual {p0}, Lcom/meizu/settings/battery/BatteryManagementMain;->getActivity()Landroid/app/Activity;
 
     move-result-object v2
@@ -343,14 +327,22 @@
 
     iput-object v2, p0, Lcom/meizu/settings/battery/BatteryManagementMain;->mUsageStatsProxy:Lcom/meizu/settings/datareport/UsageStatsProxy;
 
-    .line 73
+    .line 69
     return-void
 
     .end local v0    # "isLowIdenty":Ljava/lang/String;
     .end local v1    # "isLowSize":Ljava/lang/String;
-    :cond_2
+    :cond_0
     move v2, v4
 
     .line 58
     goto :goto_0
+
+    .restart local v0    # "isLowIdenty":Ljava/lang/String;
+    .restart local v1    # "isLowSize":Ljava/lang/String;
+    :cond_1
+    move v3, v4
+
+    .line 67
+    goto :goto_1
 .end method
