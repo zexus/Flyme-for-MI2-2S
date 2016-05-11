@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<com.android.camera.ui.ManualISOPopup style="@style/SettingPopupWindow"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <LinearLayout android:orientation="vertical" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content">
-        <include android:id="@id/manual_exposure_iso" layout="@layout/manual_text_seek_bar" />
-    </LinearLayout>
-</com.android.camera.ui.ManualISOPopup>

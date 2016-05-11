@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<com.android.camera.ui.ManualSeekBar android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <LinearLayout android:orientation="vertical" android:id="@id/seek_bar_layout" android:paddingLeft="@dimen/v6_seek_bar_padding" android:paddingRight="@dimen/v6_seek_bar_padding" android:layout_width="fill_parent" android:layout_height="@dimen/settings_screen_popup_height">
-        <com.android.camera.ui.V6SeekBar android:id="@id/seek_bar" android:layout_width="wrap_content" android:layout_height="0.0dip" android:layout_weight="2.0" />
-    </LinearLayout>
-</com.android.camera.ui.ManualSeekBar>

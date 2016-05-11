@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<PreferenceScreen android:key="key_vip_call_setting_root"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <PreferenceCategory android:title="@string/dndm_vip_list_custom_group" android:key="key_vip_list_custom_category" />
-</PreferenceScreen>

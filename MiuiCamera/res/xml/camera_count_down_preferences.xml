@@ -1,3 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<IconListPreference camera:title="@string/pref_camera_delay_capture_title" camera:key="pref_delay_capture_key" camera:defaultValue="@string/pref_front_camera_delay_capture_default" camera:entryValues="@array/pref_front_camera_delay_capture_entryvalues" camera:entries="@array/pref_front_camera_delay_capture_entries" camera:hasPopup="true"
-  xmlns:camera="http://schemas.android.com/apk/res/com.android.camera" />
