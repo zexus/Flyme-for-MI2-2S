@@ -1,1 +1,1 @@
-# Flyme4 for MI2/2S
+# Flyme5 for MI2/2S
