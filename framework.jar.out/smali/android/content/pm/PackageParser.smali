@@ -4595,7 +4595,7 @@
 
     iput v3, v2, Landroid/content/pm/ActivityInfo;->uiOptions:I
 
-    move-object/from16 v0, v18
+    move-object/from16 v0, v23
 
     invoke-static {v14, v0}, Landroid/content/pm/PackageParser$FlymeInjector;->parseAccessArgsFromResource(Landroid/content/pm/PackageParser$Activity;Landroid/content/res/TypedArray;)V
 
@@ -5929,6 +5929,11 @@
     const/4 v14, 0x0
 
     goto/16 :goto_1
+
+    :cond_flyme_0
+    invoke-static/range {v14 .. v14}, Landroid/content/pm/PackageParser$FlymeInjector;->parseAccessMetaFromResource(Landroid/content/pm/PackageParser$Activity;)V
+
+    goto/16 :goto_flyme_0
 
     :cond_2c
     const-string v2, "PackageParser"
