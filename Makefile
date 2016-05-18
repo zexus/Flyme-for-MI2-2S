@@ -40,14 +40,14 @@ vendor_modify_images := boot
 # The default value is app or pri-app which not need to configure.
 # You can configure the directory name which relative to the vendor/system directory.
 #-----------------------------------------------------------------------------
-#vendor_remove_dirs := vendor/operator/app
+vendor_remove_dirs := usr/srec vendor/pittpatt
 
 ##############################################################################
 # The value decides the file which you want to remove in the vendor directory for the ota package.
 # The default value is nothing.
 # You can configure the file name which relative to the vendor/system directory.
 #-----------------------------------------------------------------------------
-#vendor_remove_files := bin/zchgd
+vendor_remove_files := lib/libchrome.2214.89.so
 
 ##############################################################################
 # The value decides the vendor apk which you want to save in the vendor directory for the ota package.
@@ -56,7 +56,7 @@ vendor_modify_images := boot
 #-----------------------------------------------------------------------------
 vendor_saved_apps := Bluetooth KeyChain HTMLViewer UserDictionaryProvider BackupRestoreConfirmation \
                      FusedLocation PrintSpooler SharedStorageBackup  ExternalStorageProvider InputDevices \
-                     ProxyHandler Shell DefaultContainerService
+                     ProxyHandler Shell DefaultContainerService WAPPushManager Stk CaptivePortalLogin
 
 ##############################################################################
 # The value decides which vendor apk you want to modify.
@@ -96,7 +96,7 @@ board_saved_files := lib/libwebviewchromium.so
 # The default value is nothing.
 # You can configure the board system apk name in the value.
 #-----------------------------------------------------------------------------
-#board_remove_apps := LogReport
+board_remove_apps := LogReport NfcNci
 
 ##############################################################################
 # The value decides which apk you want to modify, when the apk is based on the board system apk.
@@ -149,8 +149,8 @@ override_property += \
 # The default value is nothing.
 # You can add the property name in the value from the build.prop.
 #-----------------------------------------------------------------------------
-# remove_property += \
-#     dev.defaultwallpaper
+remove_property += \
+    ro.build.selinux
 
 ##############################################################################
 # Defines whether uses assertions in /META-INF/com/google/android/updater-script of the OTA package.
