@@ -1,14 +1,14 @@
-.class public Lcom/android/settings/LocalePicker;
+.class public Lcom/android/settings_ext/LocalePicker;
 .super Lcom/android/internal/app/LocalePicker;
 .source "LocalePicker.java"
 
 # interfaces
 .implements Lcom/android/internal/app/LocalePicker$LocaleSelectionListener;
-.implements Lcom/android/settings/DialogCreatable;
+.implements Lcom/android/settings_ext/DialogCreatable;
 
 
 # instance fields
-.field private mDialogFragment:Lcom/android/settings/SettingsPreferenceFragment$SettingsDialogFragment;
+.field private mDialogFragment:Lcom/android/settings_ext/SettingsPreferenceFragment$SettingsDialogFragment;
 
 .field private mTargetLocale:Ljava/util/Locale;
 
@@ -22,19 +22,19 @@
     invoke-direct {p0}, Lcom/android/internal/app/LocalePicker;-><init>()V
 
     .line 47
-    invoke-virtual {p0, p0}, Lcom/android/settings/LocalePicker;->setLocaleSelectionListener(Lcom/android/internal/app/LocalePicker$LocaleSelectionListener;)V
+    invoke-virtual {p0, p0}, Lcom/android/settings_ext/LocalePicker;->setLocaleSelectionListener(Lcom/android/internal/app/LocalePicker$LocaleSelectionListener;)V
 
     .line 48
     return-void
 .end method
 
-.method static synthetic access$000(Lcom/android/settings/LocalePicker;)Ljava/util/Locale;
+.method static synthetic access$000(Lcom/android/settings_ext/LocalePicker;)Ljava/util/Locale;
     .locals 1
-    .param p0, "x0"    # Lcom/android/settings/LocalePicker;
+    .param p0, "x0"    # Lcom/android/settings_ext/LocalePicker;
 
     .prologue
     .line 33
-    iget-object v0, p0, Lcom/android/settings/LocalePicker;->mTargetLocale:Ljava/util/Locale;
+    iget-object v0, p0, Lcom/android/settings_ext/LocalePicker;->mTargetLocale:Ljava/util/Locale;
 
     return-object v0
 .end method
@@ -71,7 +71,7 @@
 
     invoke-direct {v0, v1}, Ljava/util/Locale;-><init>(Ljava/lang/String;)V
 
-    iput-object v0, p0, Lcom/android/settings/LocalePicker;->mTargetLocale:Ljava/util/Locale;
+    iput-object v0, p0, Lcom/android/settings_ext/LocalePicker;->mTargetLocale:Ljava/util/Locale;
 
     .line 56
     :cond_0
@@ -84,17 +84,17 @@
 
     .prologue
     .line 96
-    invoke-virtual {p0}, Lcom/android/settings/LocalePicker;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/LocalePicker;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
     const v1, 0x7f0908c3
 
-    new-instance v2, Lcom/android/settings/LocalePicker$1;
+    new-instance v2, Lcom/android/settings_ext/LocalePicker$1;
 
-    invoke-direct {v2, p0, p1}, Lcom/android/settings/LocalePicker$1;-><init>(Lcom/android/settings/LocalePicker;I)V
+    invoke-direct {v2, p0, p1}, Lcom/android/settings_ext/LocalePicker$1;-><init>(Lcom/android/settings_ext/LocalePicker;I)V
 
-    invoke-static {v0, v1, v2}, Lcom/android/settings/Utils;->buildGlobalChangeWarningDialog(Landroid/content/Context;ILjava/lang/Runnable;)Landroid/app/Dialog;
+    invoke-static {v0, v1, v2}, Lcom/android/settings_ext/Utils;->buildGlobalChangeWarningDialog(Landroid/content/Context;ILjava/lang/Runnable;)Landroid/app/Dialog;
 
     move-result-object v0
 
@@ -127,7 +127,7 @@
     .local v0, "list":Landroid/widget/ListView;
     const/4 v2, 0x0
 
-    invoke-static {p2, v1, v0, v2}, Lcom/android/settings/Utils;->forcePrepareCustomPreferencesList(Landroid/view/ViewGroup;Landroid/view/View;Landroid/widget/ListView;Z)V
+    invoke-static {p2, v1, v0, v2}, Lcom/android/settings_ext/Utils;->forcePrepareCustomPreferencesList(Landroid/view/ViewGroup;Landroid/view/View;Landroid/widget/ListView;Z)V
 
     .line 64
     return-object v1
@@ -139,23 +139,23 @@
 
     .prologue
     .line 69
-    invoke-virtual {p0}, Lcom/android/settings/LocalePicker;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/LocalePicker;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
-    invoke-static {v0}, Lcom/android/settings/Utils;->hasMultipleUsers(Landroid/content/Context;)Z
+    invoke-static {v0}, Lcom/android/settings_ext/Utils;->hasMultipleUsers(Landroid/content/Context;)Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
     .line 70
-    iput-object p1, p0, Lcom/android/settings/LocalePicker;->mTargetLocale:Ljava/util/Locale;
+    iput-object p1, p0, Lcom/android/settings_ext/LocalePicker;->mTargetLocale:Ljava/util/Locale;
 
     .line 71
     const/4 v0, 0x1
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/LocalePicker;->showDialog(I)V
+    invoke-virtual {p0, v0}, Lcom/android/settings_ext/LocalePicker;->showDialog(I)V
 
     .line 76
     :goto_0
@@ -163,14 +163,14 @@
 
     .line 73
     :cond_0
-    invoke-virtual {p0}, Lcom/android/settings/LocalePicker;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/LocalePicker;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
     invoke-virtual {v0}, Landroid/app/Activity;->onBackPressed()V
 
     .line 74
-    invoke-static {p1}, Lcom/android/settings/LocalePicker;->updateLocale(Ljava/util/Locale;)V
+    invoke-static {p1}, Lcom/android/settings_ext/LocalePicker;->updateLocale(Ljava/util/Locale;)V
 
     goto :goto_0
 .end method
@@ -184,14 +184,14 @@
     invoke-super {p0, p1}, Lcom/android/internal/app/LocalePicker;->onSaveInstanceState(Landroid/os/Bundle;)V
 
     .line 82
-    iget-object v0, p0, Lcom/android/settings/LocalePicker;->mTargetLocale:Ljava/util/Locale;
+    iget-object v0, p0, Lcom/android/settings_ext/LocalePicker;->mTargetLocale:Ljava/util/Locale;
 
     if-eqz v0, :cond_0
 
     .line 83
     const-string v0, "locale"
 
-    iget-object v1, p0, Lcom/android/settings/LocalePicker;->mTargetLocale:Ljava/util/Locale;
+    iget-object v1, p0, Lcom/android/settings_ext/LocalePicker;->mTargetLocale:Ljava/util/Locale;
 
     invoke-virtual {v1}, Ljava/util/Locale;->toString()Ljava/lang/String;
 
@@ -210,28 +210,28 @@
 
     .prologue
     .line 112
-    iget-object v0, p0, Lcom/android/settings/LocalePicker;->mDialogFragment:Lcom/android/settings/SettingsPreferenceFragment$SettingsDialogFragment;
+    iget-object v0, p0, Lcom/android/settings_ext/LocalePicker;->mDialogFragment:Lcom/android/settings_ext/SettingsPreferenceFragment$SettingsDialogFragment;
 
     if-eqz v0, :cond_0
 
-    iget-object v0, p0, Lcom/android/settings/LocalePicker;->mDialogFragment:Lcom/android/settings/SettingsPreferenceFragment$SettingsDialogFragment;
+    iget-object v0, p0, Lcom/android/settings_ext/LocalePicker;->mDialogFragment:Lcom/android/settings_ext/SettingsPreferenceFragment$SettingsDialogFragment;
 
-    invoke-virtual {v0}, Lcom/android/settings/SettingsPreferenceFragment$SettingsDialogFragment;->getDialogId()I
+    invoke-virtual {v0}, Lcom/android/settings_ext/SettingsPreferenceFragment$SettingsDialogFragment;->getDialogId()I
 
     move-result v0
 
     if-ne v0, p1, :cond_0
 
     .line 113
-    iget-object v0, p0, Lcom/android/settings/LocalePicker;->mDialogFragment:Lcom/android/settings/SettingsPreferenceFragment$SettingsDialogFragment;
+    iget-object v0, p0, Lcom/android/settings_ext/LocalePicker;->mDialogFragment:Lcom/android/settings_ext/SettingsPreferenceFragment$SettingsDialogFragment;
 
-    invoke-virtual {v0}, Lcom/android/settings/SettingsPreferenceFragment$SettingsDialogFragment;->dismiss()V
+    invoke-virtual {v0}, Lcom/android/settings_ext/SettingsPreferenceFragment$SettingsDialogFragment;->dismiss()V
 
     .line 115
     :cond_0
     const/4 v0, 0x0
 
-    iput-object v0, p0, Lcom/android/settings/LocalePicker;->mDialogFragment:Lcom/android/settings/SettingsPreferenceFragment$SettingsDialogFragment;
+    iput-object v0, p0, Lcom/android/settings_ext/LocalePicker;->mDialogFragment:Lcom/android/settings_ext/SettingsPreferenceFragment$SettingsDialogFragment;
 
     .line 116
     return-void
@@ -243,7 +243,7 @@
 
     .prologue
     .line 88
-    iget-object v0, p0, Lcom/android/settings/LocalePicker;->mDialogFragment:Lcom/android/settings/SettingsPreferenceFragment$SettingsDialogFragment;
+    iget-object v0, p0, Lcom/android/settings_ext/LocalePicker;->mDialogFragment:Lcom/android/settings_ext/SettingsPreferenceFragment$SettingsDialogFragment;
 
     if-eqz v0, :cond_0
 
@@ -256,16 +256,16 @@
 
     .line 91
     :cond_0
-    new-instance v0, Lcom/android/settings/SettingsPreferenceFragment$SettingsDialogFragment;
+    new-instance v0, Lcom/android/settings_ext/SettingsPreferenceFragment$SettingsDialogFragment;
 
-    invoke-direct {v0, p0, p1}, Lcom/android/settings/SettingsPreferenceFragment$SettingsDialogFragment;-><init>(Lcom/android/settings/DialogCreatable;I)V
+    invoke-direct {v0, p0, p1}, Lcom/android/settings_ext/SettingsPreferenceFragment$SettingsDialogFragment;-><init>(Lcom/android/settings_ext/DialogCreatable;I)V
 
-    iput-object v0, p0, Lcom/android/settings/LocalePicker;->mDialogFragment:Lcom/android/settings/SettingsPreferenceFragment$SettingsDialogFragment;
+    iput-object v0, p0, Lcom/android/settings_ext/LocalePicker;->mDialogFragment:Lcom/android/settings_ext/SettingsPreferenceFragment$SettingsDialogFragment;
 
     .line 92
-    iget-object v0, p0, Lcom/android/settings/LocalePicker;->mDialogFragment:Lcom/android/settings/SettingsPreferenceFragment$SettingsDialogFragment;
+    iget-object v0, p0, Lcom/android/settings_ext/LocalePicker;->mDialogFragment:Lcom/android/settings_ext/SettingsPreferenceFragment$SettingsDialogFragment;
 
-    invoke-virtual {p0}, Lcom/android/settings/LocalePicker;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/LocalePicker;->getActivity()Landroid/app/Activity;
 
     move-result-object v1
 
@@ -277,7 +277,7 @@
 
     move-result-object v2
 
-    invoke-virtual {v0, v1, v2}, Lcom/android/settings/SettingsPreferenceFragment$SettingsDialogFragment;->show(Landroid/app/FragmentManager;Ljava/lang/String;)V
+    invoke-virtual {v0, v1, v2}, Lcom/android/settings_ext/SettingsPreferenceFragment$SettingsDialogFragment;->show(Landroid/app/FragmentManager;Ljava/lang/String;)V
 
     .line 93
     return-void

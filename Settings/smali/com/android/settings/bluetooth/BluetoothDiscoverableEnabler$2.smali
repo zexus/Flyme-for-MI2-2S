@@ -1,4 +1,4 @@
-.class Lcom/android/settings/bluetooth/BluetoothDiscoverableEnabler$2;
+.class Lcom/android/settings_ext/bluetooth/BluetoothDiscoverableEnabler$2;
 .super Ljava/lang/Object;
 .source "BluetoothDiscoverableEnabler.java"
 
@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/android/settings/bluetooth/BluetoothDiscoverableEnabler;
+    value = Lcom/android/settings_ext/bluetooth/BluetoothDiscoverableEnabler;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -18,7 +18,7 @@
 
 
 # instance fields
-.field final synthetic this$0:Lcom/android/settings/bluetooth/BluetoothDiscoverableEnabler;
+.field final synthetic this$0:Lcom/android/settings_ext/bluetooth/BluetoothDiscoverableEnabler;
 
 
 # virtual methods
@@ -27,10 +27,10 @@
 
     .prologue
     .line 91
-    iget-object v0, p0, Lcom/android/settings/bluetooth/BluetoothDiscoverableEnabler$2;->this$0:Lcom/android/settings/bluetooth/BluetoothDiscoverableEnabler;
+    iget-object v0, p0, Lcom/android/settings_ext/bluetooth/BluetoothDiscoverableEnabler$2;->this$0:Lcom/android/settings_ext/bluetooth/BluetoothDiscoverableEnabler;
 
-    # invokes: Lcom/android/settings/bluetooth/BluetoothDiscoverableEnabler;->updateCountdownSummary()V
-    invoke-static {v0}, Lcom/android/settings/bluetooth/BluetoothDiscoverableEnabler;->access$000(Lcom/android/settings/bluetooth/BluetoothDiscoverableEnabler;)V
+    # invokes: Lcom/android/settings_ext/bluetooth/BluetoothDiscoverableEnabler;->updateCountdownSummary()V
+    invoke-static {v0}, Lcom/android/settings_ext/bluetooth/BluetoothDiscoverableEnabler;->access$000(Lcom/android/settings_ext/bluetooth/BluetoothDiscoverableEnabler;)V
 
     .line 92
     return-void

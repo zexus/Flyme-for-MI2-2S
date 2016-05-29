@@ -1,4 +1,4 @@
-.class Lcom/android/settings/applications/RunningServiceDetails$1;
+.class Lcom/android/settings_ext/applications/RunningServiceDetails$1;
 .super Ljava/lang/Object;
 .source "RunningServiceDetails.java"
 
@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/android/settings/applications/RunningServiceDetails;->finish()V
+    value = Lcom/android/settings_ext/applications/RunningServiceDetails;->finish()V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -18,16 +18,16 @@
 
 
 # instance fields
-.field final synthetic this$0:Lcom/android/settings/applications/RunningServiceDetails;
+.field final synthetic this$0:Lcom/android/settings_ext/applications/RunningServiceDetails;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/applications/RunningServiceDetails;)V
+.method constructor <init>(Lcom/android/settings_ext/applications/RunningServiceDetails;)V
     .locals 0
 
     .prologue
     .line 484
-    iput-object p1, p0, Lcom/android/settings/applications/RunningServiceDetails$1;->this$0:Lcom/android/settings/applications/RunningServiceDetails;
+    iput-object p1, p0, Lcom/android/settings_ext/applications/RunningServiceDetails$1;->this$0:Lcom/android/settings_ext/applications/RunningServiceDetails;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -41,9 +41,9 @@
 
     .prologue
     .line 487
-    iget-object v1, p0, Lcom/android/settings/applications/RunningServiceDetails$1;->this$0:Lcom/android/settings/applications/RunningServiceDetails;
+    iget-object v1, p0, Lcom/android/settings_ext/applications/RunningServiceDetails$1;->this$0:Lcom/android/settings_ext/applications/RunningServiceDetails;
 
-    invoke-virtual {v1}, Lcom/android/settings/applications/RunningServiceDetails;->getActivity()Landroid/app/Activity;
+    invoke-virtual {v1}, Lcom/android/settings_ext/applications/RunningServiceDetails;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 

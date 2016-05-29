@@ -1,11 +1,11 @@
-.class Lcom/android/settings/BatteryInfo$1;
+.class Lcom/android/settings_ext/BatteryInfo$1;
 .super Landroid/os/Handler;
 .source "BatteryInfo.java"
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/android/settings/BatteryInfo;
+    value = Lcom/android/settings_ext/BatteryInfo;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -15,16 +15,16 @@
 
 
 # instance fields
-.field final synthetic this$0:Lcom/android/settings/BatteryInfo;
+.field final synthetic this$0:Lcom/android/settings_ext/BatteryInfo;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/BatteryInfo;)V
+.method constructor <init>(Lcom/android/settings_ext/BatteryInfo;)V
     .locals 0
 
     .prologue
     .line 52
-    iput-object p1, p0, Lcom/android/settings/BatteryInfo$1;->this$0:Lcom/android/settings/BatteryInfo;
+    iput-object p1, p0, Lcom/android/settings_ext/BatteryInfo$1;->this$0:Lcom/android/settings_ext/BatteryInfo;
 
     invoke-direct {p0}, Landroid/os/Handler;-><init>()V
 
@@ -49,17 +49,17 @@
 
     .line 57
     :pswitch_0
-    iget-object v0, p0, Lcom/android/settings/BatteryInfo$1;->this$0:Lcom/android/settings/BatteryInfo;
+    iget-object v0, p0, Lcom/android/settings_ext/BatteryInfo$1;->this$0:Lcom/android/settings_ext/BatteryInfo;
 
-    # invokes: Lcom/android/settings/BatteryInfo;->updateBatteryStats()V
-    invoke-static {v0}, Lcom/android/settings/BatteryInfo;->access$000(Lcom/android/settings/BatteryInfo;)V
+    # invokes: Lcom/android/settings_ext/BatteryInfo;->updateBatteryStats()V
+    invoke-static {v0}, Lcom/android/settings_ext/BatteryInfo;->access$000(Lcom/android/settings_ext/BatteryInfo;)V
 
     .line 58
     const/4 v0, 0x1
 
     const-wide/16 v2, 0x3e8
 
-    invoke-virtual {p0, v0, v2, v3}, Lcom/android/settings/BatteryInfo$1;->sendEmptyMessageDelayed(IJ)Z
+    invoke-virtual {p0, v0, v2, v3}, Lcom/android/settings_ext/BatteryInfo$1;->sendEmptyMessageDelayed(IJ)Z
 
     goto :goto_0
 

@@ -1,11 +1,11 @@
-.class public Lcom/android/settings/applications/AppOpsCategory$PackageIntentReceiver;
+.class public Lcom/android/settings_ext/applications/AppOpsCategory$PackageIntentReceiver;
 .super Landroid/content/BroadcastReceiver;
 .source "AppOpsCategory.java"
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/android/settings/applications/AppOpsCategory;
+    value = Lcom/android/settings_ext/applications/AppOpsCategory;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -15,20 +15,20 @@
 
 
 # instance fields
-.field final mLoader:Lcom/android/settings/applications/AppOpsCategory$AppListLoader;
+.field final mLoader:Lcom/android/settings_ext/applications/AppOpsCategory$AppListLoader;
 
 
 # direct methods
-.method public constructor <init>(Lcom/android/settings/applications/AppOpsCategory$AppListLoader;)V
+.method public constructor <init>(Lcom/android/settings_ext/applications/AppOpsCategory$AppListLoader;)V
     .locals 3
-    .param p1, "loader"    # Lcom/android/settings/applications/AppOpsCategory$AppListLoader;
+    .param p1, "loader"    # Lcom/android/settings_ext/applications/AppOpsCategory$AppListLoader;
 
     .prologue
     .line 93
     invoke-direct {p0}, Landroid/content/BroadcastReceiver;-><init>()V
 
     .line 94
-    iput-object p1, p0, Lcom/android/settings/applications/AppOpsCategory$PackageIntentReceiver;->mLoader:Lcom/android/settings/applications/AppOpsCategory$AppListLoader;
+    iput-object p1, p0, Lcom/android/settings_ext/applications/AppOpsCategory$PackageIntentReceiver;->mLoader:Lcom/android/settings_ext/applications/AppOpsCategory$AppListLoader;
 
     .line 95
     new-instance v0, Landroid/content/IntentFilter;
@@ -54,9 +54,9 @@
     invoke-virtual {v0, v2}, Landroid/content/IntentFilter;->addDataScheme(Ljava/lang/String;)V
 
     .line 99
-    iget-object v2, p0, Lcom/android/settings/applications/AppOpsCategory$PackageIntentReceiver;->mLoader:Lcom/android/settings/applications/AppOpsCategory$AppListLoader;
+    iget-object v2, p0, Lcom/android/settings_ext/applications/AppOpsCategory$PackageIntentReceiver;->mLoader:Lcom/android/settings_ext/applications/AppOpsCategory$AppListLoader;
 
-    invoke-virtual {v2}, Lcom/android/settings/applications/AppOpsCategory$AppListLoader;->getContext()Landroid/content/Context;
+    invoke-virtual {v2}, Lcom/android/settings_ext/applications/AppOpsCategory$AppListLoader;->getContext()Landroid/content/Context;
 
     move-result-object v2
 
@@ -79,9 +79,9 @@
     invoke-virtual {v1, v2}, Landroid/content/IntentFilter;->addAction(Ljava/lang/String;)V
 
     .line 104
-    iget-object v2, p0, Lcom/android/settings/applications/AppOpsCategory$PackageIntentReceiver;->mLoader:Lcom/android/settings/applications/AppOpsCategory$AppListLoader;
+    iget-object v2, p0, Lcom/android/settings_ext/applications/AppOpsCategory$PackageIntentReceiver;->mLoader:Lcom/android/settings_ext/applications/AppOpsCategory$AppListLoader;
 
-    invoke-virtual {v2}, Lcom/android/settings/applications/AppOpsCategory$AppListLoader;->getContext()Landroid/content/Context;
+    invoke-virtual {v2}, Lcom/android/settings_ext/applications/AppOpsCategory$AppListLoader;->getContext()Landroid/content/Context;
 
     move-result-object v2
 
@@ -100,9 +100,9 @@
 
     .prologue
     .line 109
-    iget-object v0, p0, Lcom/android/settings/applications/AppOpsCategory$PackageIntentReceiver;->mLoader:Lcom/android/settings/applications/AppOpsCategory$AppListLoader;
+    iget-object v0, p0, Lcom/android/settings_ext/applications/AppOpsCategory$PackageIntentReceiver;->mLoader:Lcom/android/settings_ext/applications/AppOpsCategory$AppListLoader;
 
-    invoke-virtual {v0}, Lcom/android/settings/applications/AppOpsCategory$AppListLoader;->onContentChanged()V
+    invoke-virtual {v0}, Lcom/android/settings_ext/applications/AppOpsCategory$AppListLoader;->onContentChanged()V
 
     .line 110
     return-void

@@ -1,11 +1,11 @@
-.class public interface abstract Lcom/android/settings/location/RadioButtonPreference$OnClickListener;
+.class public interface abstract Lcom/android/settings_ext/location/RadioButtonPreference$OnClickListener;
 .super Ljava/lang/Object;
 .source "RadioButtonPreference.java"
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/android/settings/location/RadioButtonPreference;
+    value = Lcom/android/settings_ext/location/RadioButtonPreference;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -15,5 +15,5 @@
 
 
 # virtual methods
-.method public abstract onRadioButtonClicked(Lcom/android/settings/location/RadioButtonPreference;)V
+.method public abstract onRadioButtonClicked(Lcom/android/settings_ext/location/RadioButtonPreference;)V
 .end method

@@ -1,11 +1,11 @@
-.class public Lcom/android/settings/ConfirmLockPattern$InternalActivity;
-.super Lcom/android/settings/ConfirmLockPattern;
+.class public Lcom/android/settings_ext/ConfirmLockPattern$InternalActivity;
+.super Lcom/android/settings_ext/ConfirmLockPattern;
 .source "ConfirmLockPattern.java"
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/android/settings/ConfirmLockPattern;
+    value = Lcom/android/settings_ext/ConfirmLockPattern;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -20,7 +20,7 @@
 
     .prologue
     .line 46
-    invoke-direct {p0}, Lcom/android/settings/ConfirmLockPattern;-><init>()V
+    invoke-direct {p0}, Lcom/android/settings_ext/ConfirmLockPattern;-><init>()V
 
     return-void
 .end method

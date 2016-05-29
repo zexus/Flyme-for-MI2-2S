@@ -1,11 +1,11 @@
-.class public Lcom/android/settings/TrustAgentUtils$TrustAgentComponentInfo;
+.class public Lcom/android/settings_ext/TrustAgentUtils$TrustAgentComponentInfo;
 .super Ljava/lang/Object;
 .source "TrustAgentUtils.java"
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/android/settings/TrustAgentUtils;
+    value = Lcom/android/settings_ext/TrustAgentUtils;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;

@@ -1,4 +1,4 @@
-.class Lcom/android/settings/voice/VoiceInputPreference$6;
+.class Lcom/android/settings_ext/voice/VoiceInputPreference$6;
 .super Ljava/lang/Object;
 .source "VoiceInputPreference.java"
 
@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/android/settings/voice/VoiceInputPreference;->onRadioButtonClicked(Landroid/widget/CompoundButton;Z)V
+    value = Lcom/android/settings_ext/voice/VoiceInputPreference;->onRadioButtonClicked(Landroid/widget/CompoundButton;Z)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -18,20 +18,20 @@
 
 
 # instance fields
-.field final synthetic this$0:Lcom/android/settings/voice/VoiceInputPreference;
+.field final synthetic this$0:Lcom/android/settings_ext/voice/VoiceInputPreference;
 
 .field final synthetic val$buttonView:Landroid/widget/CompoundButton;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/voice/VoiceInputPreference;Landroid/widget/CompoundButton;)V
+.method constructor <init>(Lcom/android/settings_ext/voice/VoiceInputPreference;Landroid/widget/CompoundButton;)V
     .locals 0
 
     .prologue
     .line 196
-    iput-object p1, p0, Lcom/android/settings/voice/VoiceInputPreference$6;->this$0:Lcom/android/settings/voice/VoiceInputPreference;
+    iput-object p1, p0, Lcom/android/settings_ext/voice/VoiceInputPreference$6;->this$0:Lcom/android/settings_ext/voice/VoiceInputPreference;
 
-    iput-object p2, p0, Lcom/android/settings/voice/VoiceInputPreference$6;->val$buttonView:Landroid/widget/CompoundButton;
+    iput-object p2, p0, Lcom/android/settings_ext/voice/VoiceInputPreference$6;->val$buttonView:Landroid/widget/CompoundButton;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -47,7 +47,7 @@
 
     .prologue
     .line 200
-    iget-object v0, p0, Lcom/android/settings/voice/VoiceInputPreference$6;->val$buttonView:Landroid/widget/CompoundButton;
+    iget-object v0, p0, Lcom/android/settings_ext/voice/VoiceInputPreference$6;->val$buttonView:Landroid/widget/CompoundButton;
 
     const/4 v1, 0x0
 

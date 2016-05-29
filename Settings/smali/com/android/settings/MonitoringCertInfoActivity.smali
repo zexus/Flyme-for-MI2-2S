@@ -1,4 +1,4 @@
-.class public Lcom/android/settings/MonitoringCertInfoActivity;
+.class public Lcom/android/settings_ext/MonitoringCertInfoActivity;
 .super Landroid/app/Activity;
 .source "MonitoringCertInfoActivity.java"
 
@@ -21,7 +21,7 @@
     .line 38
     const/4 v0, 0x0
 
-    iput-boolean v0, p0, Lcom/android/settings/MonitoringCertInfoActivity;->hasDeviceOwner:Z
+    iput-boolean v0, p0, Lcom/android/settings_ext/MonitoringCertInfoActivity;->hasDeviceOwner:Z
 
     return-void
 .end method
@@ -35,12 +35,12 @@
 
     .prologue
     .line 84
-    iget-boolean v1, p0, Lcom/android/settings/MonitoringCertInfoActivity;->hasDeviceOwner:Z
+    iget-boolean v1, p0, Lcom/android/settings_ext/MonitoringCertInfoActivity;->hasDeviceOwner:Z
 
     if-eqz v1, :cond_0
 
     .line 85
-    invoke-virtual {p0}, Lcom/android/settings/MonitoringCertInfoActivity;->finish()V
+    invoke-virtual {p0}, Lcom/android/settings_ext/MonitoringCertInfoActivity;->finish()V
 
     .line 93
     :goto_0
@@ -61,10 +61,10 @@
     invoke-virtual {v0, v1}, Landroid/content/Intent;->setFlags(I)Landroid/content/Intent;
 
     .line 90
-    invoke-virtual {p0, v0}, Lcom/android/settings/MonitoringCertInfoActivity;->startActivity(Landroid/content/Intent;)V
+    invoke-virtual {p0, v0}, Lcom/android/settings_ext/MonitoringCertInfoActivity;->startActivity(Landroid/content/Intent;)V
 
     .line 91
-    invoke-virtual {p0}, Lcom/android/settings/MonitoringCertInfoActivity;->finish()V
+    invoke-virtual {p0}, Lcom/android/settings_ext/MonitoringCertInfoActivity;->finish()V
 
     goto :goto_0
 .end method
@@ -84,7 +84,7 @@
     .line 44
     const-string v5, "device_policy"
 
-    invoke-virtual {p0, v5}, Lcom/android/settings/MonitoringCertInfoActivity;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
+    invoke-virtual {p0, v5}, Lcom/android/settings_ext/MonitoringCertInfoActivity;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object v3
 
@@ -115,15 +115,15 @@
     move v5, v6
 
     :goto_0
-    iput-boolean v5, p0, Lcom/android/settings/MonitoringCertInfoActivity;->hasDeviceOwner:Z
+    iput-boolean v5, p0, Lcom/android/settings_ext/MonitoringCertInfoActivity;->hasDeviceOwner:Z
 
     .line 52
-    iget-boolean v5, p0, Lcom/android/settings/MonitoringCertInfoActivity;->hasDeviceOwner:Z
+    iget-boolean v5, p0, Lcom/android/settings_ext/MonitoringCertInfoActivity;->hasDeviceOwner:Z
 
     if-eqz v5, :cond_1
 
     .line 54
-    invoke-virtual {p0}, Lcom/android/settings/MonitoringCertInfoActivity;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {p0}, Lcom/android/settings_ext/MonitoringCertInfoActivity;->getResources()Landroid/content/res/Resources;
 
     move-result-object v5
 
@@ -181,9 +181,9 @@
 
     .line 73
     :goto_2
-    new-instance v5, Lcom/android/settings/MonitoringCertInfoActivity$1;
+    new-instance v5, Lcom/android/settings_ext/MonitoringCertInfoActivity$1;
 
-    invoke-direct {v5, p0}, Lcom/android/settings/MonitoringCertInfoActivity$1;-><init>(Lcom/android/settings/MonitoringCertInfoActivity;)V
+    invoke-direct {v5, p0}, Lcom/android/settings_ext/MonitoringCertInfoActivity$1;-><init>(Lcom/android/settings_ext/MonitoringCertInfoActivity;)V
 
     invoke-virtual {v2, v5}, Landroid/app/Dialog;->setOnCancelListener(Landroid/content/DialogInterface$OnCancelListener;)V
 

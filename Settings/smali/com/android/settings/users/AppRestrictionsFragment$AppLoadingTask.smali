@@ -1,11 +1,11 @@
-.class Lcom/android/settings/users/AppRestrictionsFragment$AppLoadingTask;
+.class Lcom/android/settings_ext/users/AppRestrictionsFragment$AppLoadingTask;
 .super Landroid/os/AsyncTask;
 .source "AppRestrictionsFragment.java"
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/android/settings/users/AppRestrictionsFragment;
+    value = Lcom/android/settings_ext/users/AppRestrictionsFragment;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -26,30 +26,30 @@
 
 
 # instance fields
-.field final synthetic this$0:Lcom/android/settings/users/AppRestrictionsFragment;
+.field final synthetic this$0:Lcom/android/settings_ext/users/AppRestrictionsFragment;
 
 
 # direct methods
-.method private constructor <init>(Lcom/android/settings/users/AppRestrictionsFragment;)V
+.method private constructor <init>(Lcom/android/settings_ext/users/AppRestrictionsFragment;)V
     .locals 0
 
     .prologue
     .line 508
-    iput-object p1, p0, Lcom/android/settings/users/AppRestrictionsFragment$AppLoadingTask;->this$0:Lcom/android/settings/users/AppRestrictionsFragment;
+    iput-object p1, p0, Lcom/android/settings_ext/users/AppRestrictionsFragment$AppLoadingTask;->this$0:Lcom/android/settings_ext/users/AppRestrictionsFragment;
 
     invoke-direct {p0}, Landroid/os/AsyncTask;-><init>()V
 
     return-void
 .end method
 
-.method synthetic constructor <init>(Lcom/android/settings/users/AppRestrictionsFragment;Lcom/android/settings/users/AppRestrictionsFragment$1;)V
+.method synthetic constructor <init>(Lcom/android/settings_ext/users/AppRestrictionsFragment;Lcom/android/settings_ext/users/AppRestrictionsFragment$1;)V
     .locals 0
-    .param p1, "x0"    # Lcom/android/settings/users/AppRestrictionsFragment;
-    .param p2, "x1"    # Lcom/android/settings/users/AppRestrictionsFragment$1;
+    .param p1, "x0"    # Lcom/android/settings_ext/users/AppRestrictionsFragment;
+    .param p2, "x1"    # Lcom/android/settings_ext/users/AppRestrictionsFragment$1;
 
     .prologue
     .line 508
-    invoke-direct {p0, p1}, Lcom/android/settings/users/AppRestrictionsFragment$AppLoadingTask;-><init>(Lcom/android/settings/users/AppRestrictionsFragment;)V
+    invoke-direct {p0, p1}, Lcom/android/settings_ext/users/AppRestrictionsFragment$AppLoadingTask;-><init>(Lcom/android/settings_ext/users/AppRestrictionsFragment;)V
 
     return-void
 .end method
@@ -65,7 +65,7 @@
     check-cast p1, [Ljava/lang/Void;
 
     .end local p1    # "x0":[Ljava/lang/Object;
-    invoke-virtual {p0, p1}, Lcom/android/settings/users/AppRestrictionsFragment$AppLoadingTask;->doInBackground([Ljava/lang/Void;)Ljava/lang/Void;
+    invoke-virtual {p0, p1}, Lcom/android/settings_ext/users/AppRestrictionsFragment$AppLoadingTask;->doInBackground([Ljava/lang/Void;)Ljava/lang/Void;
 
     move-result-object v0
 
@@ -78,10 +78,10 @@
 
     .prologue
     .line 512
-    iget-object v0, p0, Lcom/android/settings/users/AppRestrictionsFragment$AppLoadingTask;->this$0:Lcom/android/settings/users/AppRestrictionsFragment;
+    iget-object v0, p0, Lcom/android/settings_ext/users/AppRestrictionsFragment$AppLoadingTask;->this$0:Lcom/android/settings_ext/users/AppRestrictionsFragment;
 
-    # invokes: Lcom/android/settings/users/AppRestrictionsFragment;->fetchAndMergeApps()V
-    invoke-static {v0}, Lcom/android/settings/users/AppRestrictionsFragment;->access$500(Lcom/android/settings/users/AppRestrictionsFragment;)V
+    # invokes: Lcom/android/settings_ext/users/AppRestrictionsFragment;->fetchAndMergeApps()V
+    invoke-static {v0}, Lcom/android/settings_ext/users/AppRestrictionsFragment;->access$500(Lcom/android/settings_ext/users/AppRestrictionsFragment;)V
 
     .line 513
     const/4 v0, 0x0
@@ -98,7 +98,7 @@
     check-cast p1, Ljava/lang/Void;
 
     .end local p1    # "x0":Ljava/lang/Object;
-    invoke-virtual {p0, p1}, Lcom/android/settings/users/AppRestrictionsFragment$AppLoadingTask;->onPostExecute(Ljava/lang/Void;)V
+    invoke-virtual {p0, p1}, Lcom/android/settings_ext/users/AppRestrictionsFragment$AppLoadingTask;->onPostExecute(Ljava/lang/Void;)V
 
     return-void
 .end method
@@ -109,10 +109,10 @@
 
     .prologue
     .line 518
-    iget-object v0, p0, Lcom/android/settings/users/AppRestrictionsFragment$AppLoadingTask;->this$0:Lcom/android/settings/users/AppRestrictionsFragment;
+    iget-object v0, p0, Lcom/android/settings_ext/users/AppRestrictionsFragment$AppLoadingTask;->this$0:Lcom/android/settings_ext/users/AppRestrictionsFragment;
 
-    # invokes: Lcom/android/settings/users/AppRestrictionsFragment;->populateApps()V
-    invoke-static {v0}, Lcom/android/settings/users/AppRestrictionsFragment;->access$600(Lcom/android/settings/users/AppRestrictionsFragment;)V
+    # invokes: Lcom/android/settings_ext/users/AppRestrictionsFragment;->populateApps()V
+    invoke-static {v0}, Lcom/android/settings_ext/users/AppRestrictionsFragment;->access$600(Lcom/android/settings_ext/users/AppRestrictionsFragment;)V
 
     .line 519
     return-void

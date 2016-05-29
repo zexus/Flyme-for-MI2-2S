@@ -1,11 +1,11 @@
-.class final Lcom/android/settings/widget/SettingsAppWidgetProvider$BluetoothStateTracker;
-.super Lcom/android/settings/widget/SettingsAppWidgetProvider$StateTracker;
+.class final Lcom/android/settings_ext/widget/SettingsAppWidgetProvider$BluetoothStateTracker;
+.super Lcom/android/settings_ext/widget/SettingsAppWidgetProvider$StateTracker;
 .source "SettingsAppWidgetProvider.java"
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/android/settings/widget/SettingsAppWidgetProvider;
+    value = Lcom/android/settings_ext/widget/SettingsAppWidgetProvider;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -22,18 +22,18 @@
     .line 438
     const/4 v0, 0x0
 
-    invoke-direct {p0, v0}, Lcom/android/settings/widget/SettingsAppWidgetProvider$StateTracker;-><init>(Lcom/android/settings/widget/SettingsAppWidgetProvider$1;)V
+    invoke-direct {p0, v0}, Lcom/android/settings_ext/widget/SettingsAppWidgetProvider$StateTracker;-><init>(Lcom/android/settings_ext/widget/SettingsAppWidgetProvider$1;)V
 
     return-void
 .end method
 
-.method synthetic constructor <init>(Lcom/android/settings/widget/SettingsAppWidgetProvider$1;)V
+.method synthetic constructor <init>(Lcom/android/settings_ext/widget/SettingsAppWidgetProvider$1;)V
     .locals 0
-    .param p1, "x0"    # Lcom/android/settings/widget/SettingsAppWidgetProvider$1;
+    .param p1, "x0"    # Lcom/android/settings_ext/widget/SettingsAppWidgetProvider$1;
 
     .prologue
     .line 438
-    invoke-direct {p0}, Lcom/android/settings/widget/SettingsAppWidgetProvider$BluetoothStateTracker;-><init>()V
+    invoke-direct {p0}, Lcom/android/settings_ext/widget/SettingsAppWidgetProvider$BluetoothStateTracker;-><init>()V
 
     return-void
 .end method
@@ -96,53 +96,53 @@
 
     .prologue
     .line 450
-    # getter for: Lcom/android/settings/widget/SettingsAppWidgetProvider;->sLocalBluetoothAdapter:Lcom/android/settings/bluetooth/LocalBluetoothAdapter;
-    invoke-static {}, Lcom/android/settings/widget/SettingsAppWidgetProvider;->access$800()Lcom/android/settings/bluetooth/LocalBluetoothAdapter;
+    # getter for: Lcom/android/settings_ext/widget/SettingsAppWidgetProvider;->sLocalBluetoothAdapter:Lcom/android/settings_ext/bluetooth/LocalBluetoothAdapter;
+    invoke-static {}, Lcom/android/settings_ext/widget/SettingsAppWidgetProvider;->access$800()Lcom/android/settings_ext/bluetooth/LocalBluetoothAdapter;
 
     move-result-object v1
 
     if-nez v1, :cond_1
 
     .line 451
-    invoke-static {p1}, Lcom/android/settings/bluetooth/LocalBluetoothManager;->getInstance(Landroid/content/Context;)Lcom/android/settings/bluetooth/LocalBluetoothManager;
+    invoke-static {p1}, Lcom/android/settings_ext/bluetooth/LocalBluetoothManager;->getInstance(Landroid/content/Context;)Lcom/android/settings_ext/bluetooth/LocalBluetoothManager;
 
     move-result-object v0
 
     .line 452
-    .local v0, "manager":Lcom/android/settings/bluetooth/LocalBluetoothManager;
+    .local v0, "manager":Lcom/android/settings_ext/bluetooth/LocalBluetoothManager;
     if-nez v0, :cond_0
 
     .line 453
     const/4 v1, 0x4
 
     .line 457
-    .end local v0    # "manager":Lcom/android/settings/bluetooth/LocalBluetoothManager;
+    .end local v0    # "manager":Lcom/android/settings_ext/bluetooth/LocalBluetoothManager;
     :goto_0
     return v1
 
     .line 455
-    .restart local v0    # "manager":Lcom/android/settings/bluetooth/LocalBluetoothManager;
+    .restart local v0    # "manager":Lcom/android/settings_ext/bluetooth/LocalBluetoothManager;
     :cond_0
-    invoke-virtual {v0}, Lcom/android/settings/bluetooth/LocalBluetoothManager;->getBluetoothAdapter()Lcom/android/settings/bluetooth/LocalBluetoothAdapter;
+    invoke-virtual {v0}, Lcom/android/settings_ext/bluetooth/LocalBluetoothManager;->getBluetoothAdapter()Lcom/android/settings_ext/bluetooth/LocalBluetoothAdapter;
 
     move-result-object v1
 
-    # setter for: Lcom/android/settings/widget/SettingsAppWidgetProvider;->sLocalBluetoothAdapter:Lcom/android/settings/bluetooth/LocalBluetoothAdapter;
-    invoke-static {v1}, Lcom/android/settings/widget/SettingsAppWidgetProvider;->access$802(Lcom/android/settings/bluetooth/LocalBluetoothAdapter;)Lcom/android/settings/bluetooth/LocalBluetoothAdapter;
+    # setter for: Lcom/android/settings_ext/widget/SettingsAppWidgetProvider;->sLocalBluetoothAdapter:Lcom/android/settings_ext/bluetooth/LocalBluetoothAdapter;
+    invoke-static {v1}, Lcom/android/settings_ext/widget/SettingsAppWidgetProvider;->access$802(Lcom/android/settings_ext/bluetooth/LocalBluetoothAdapter;)Lcom/android/settings_ext/bluetooth/LocalBluetoothAdapter;
 
     .line 457
-    .end local v0    # "manager":Lcom/android/settings/bluetooth/LocalBluetoothManager;
+    .end local v0    # "manager":Lcom/android/settings_ext/bluetooth/LocalBluetoothManager;
     :cond_1
-    # getter for: Lcom/android/settings/widget/SettingsAppWidgetProvider;->sLocalBluetoothAdapter:Lcom/android/settings/bluetooth/LocalBluetoothAdapter;
-    invoke-static {}, Lcom/android/settings/widget/SettingsAppWidgetProvider;->access$800()Lcom/android/settings/bluetooth/LocalBluetoothAdapter;
+    # getter for: Lcom/android/settings_ext/widget/SettingsAppWidgetProvider;->sLocalBluetoothAdapter:Lcom/android/settings_ext/bluetooth/LocalBluetoothAdapter;
+    invoke-static {}, Lcom/android/settings_ext/widget/SettingsAppWidgetProvider;->access$800()Lcom/android/settings_ext/bluetooth/LocalBluetoothAdapter;
 
     move-result-object v1
 
-    invoke-virtual {v1}, Lcom/android/settings/bluetooth/LocalBluetoothAdapter;->getBluetoothState()I
+    invoke-virtual {v1}, Lcom/android/settings_ext/bluetooth/LocalBluetoothAdapter;->getBluetoothState()I
 
     move-result v1
 
-    invoke-static {v1}, Lcom/android/settings/widget/SettingsAppWidgetProvider$BluetoothStateTracker;->bluetoothStateToFiveState(I)I
+    invoke-static {v1}, Lcom/android/settings_ext/widget/SettingsAppWidgetProvider$BluetoothStateTracker;->bluetoothStateToFiveState(I)I
 
     move-result v1
 
@@ -243,11 +243,11 @@
 
     .line 485
     .local v0, "bluetoothState":I
-    invoke-static {v0}, Lcom/android/settings/widget/SettingsAppWidgetProvider$BluetoothStateTracker;->bluetoothStateToFiveState(I)I
+    invoke-static {v0}, Lcom/android/settings_ext/widget/SettingsAppWidgetProvider$BluetoothStateTracker;->bluetoothStateToFiveState(I)I
 
     move-result v1
 
-    invoke-virtual {p0, p1, v1}, Lcom/android/settings/widget/SettingsAppWidgetProvider$BluetoothStateTracker;->setCurrentState(Landroid/content/Context;I)V
+    invoke-virtual {p0, p1, v1}, Lcom/android/settings_ext/widget/SettingsAppWidgetProvider$BluetoothStateTracker;->setCurrentState(Landroid/content/Context;I)V
 
     goto :goto_0
 .end method
@@ -259,8 +259,8 @@
 
     .prologue
     .line 462
-    # getter for: Lcom/android/settings/widget/SettingsAppWidgetProvider;->sLocalBluetoothAdapter:Lcom/android/settings/bluetooth/LocalBluetoothAdapter;
-    invoke-static {}, Lcom/android/settings/widget/SettingsAppWidgetProvider;->access$800()Lcom/android/settings/bluetooth/LocalBluetoothAdapter;
+    # getter for: Lcom/android/settings_ext/widget/SettingsAppWidgetProvider;->sLocalBluetoothAdapter:Lcom/android/settings_ext/bluetooth/LocalBluetoothAdapter;
+    invoke-static {}, Lcom/android/settings_ext/widget/SettingsAppWidgetProvider;->access$800()Lcom/android/settings_ext/bluetooth/LocalBluetoothAdapter;
 
     move-result-object v0
 
@@ -279,15 +279,15 @@
 
     .line 470
     :cond_0
-    new-instance v0, Lcom/android/settings/widget/SettingsAppWidgetProvider$BluetoothStateTracker$1;
+    new-instance v0, Lcom/android/settings_ext/widget/SettingsAppWidgetProvider$BluetoothStateTracker$1;
 
-    invoke-direct {v0, p0, p2}, Lcom/android/settings/widget/SettingsAppWidgetProvider$BluetoothStateTracker$1;-><init>(Lcom/android/settings/widget/SettingsAppWidgetProvider$BluetoothStateTracker;Z)V
+    invoke-direct {v0, p0, p2}, Lcom/android/settings_ext/widget/SettingsAppWidgetProvider$BluetoothStateTracker$1;-><init>(Lcom/android/settings_ext/widget/SettingsAppWidgetProvider$BluetoothStateTracker;Z)V
 
     const/4 v1, 0x0
 
     new-array v1, v1, [Ljava/lang/Void;
 
-    invoke-virtual {v0, v1}, Lcom/android/settings/widget/SettingsAppWidgetProvider$BluetoothStateTracker$1;->execute([Ljava/lang/Object;)Landroid/os/AsyncTask;
+    invoke-virtual {v0, v1}, Lcom/android/settings_ext/widget/SettingsAppWidgetProvider$BluetoothStateTracker$1;->execute([Ljava/lang/Object;)Landroid/os/AsyncTask;
 
     goto :goto_0
 .end method

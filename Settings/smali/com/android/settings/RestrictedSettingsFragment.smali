@@ -1,5 +1,5 @@
-.class public Lcom/android/settings/RestrictedSettingsFragment;
-.super Lcom/android/settings/SettingsPreferenceFragment;
+.class public Lcom/android/settings_ext/RestrictedSettingsFragment;
+.super Lcom/android/settings_ext/SettingsPreferenceFragment;
 .source "RestrictedSettingsFragment.java"
 
 
@@ -24,53 +24,53 @@
 
     .prologue
     .line 76
-    invoke-direct {p0}, Lcom/android/settings/SettingsPreferenceFragment;-><init>()V
+    invoke-direct {p0}, Lcom/android/settings_ext/SettingsPreferenceFragment;-><init>()V
 
     .line 60
-    new-instance v0, Lcom/android/settings/RestrictedSettingsFragment$1;
+    new-instance v0, Lcom/android/settings_ext/RestrictedSettingsFragment$1;
 
-    invoke-direct {v0, p0}, Lcom/android/settings/RestrictedSettingsFragment$1;-><init>(Lcom/android/settings/RestrictedSettingsFragment;)V
+    invoke-direct {v0, p0}, Lcom/android/settings_ext/RestrictedSettingsFragment$1;-><init>(Lcom/android/settings_ext/RestrictedSettingsFragment;)V
 
-    iput-object v0, p0, Lcom/android/settings/RestrictedSettingsFragment;->mScreenOffReceiver:Landroid/content/BroadcastReceiver;
+    iput-object v0, p0, Lcom/android/settings_ext/RestrictedSettingsFragment;->mScreenOffReceiver:Landroid/content/BroadcastReceiver;
 
     .line 77
-    iput-object p1, p0, Lcom/android/settings/RestrictedSettingsFragment;->mRestrictionKey:Ljava/lang/String;
+    iput-object p1, p0, Lcom/android/settings_ext/RestrictedSettingsFragment;->mRestrictionKey:Ljava/lang/String;
 
     .line 78
     return-void
 .end method
 
-.method static synthetic access$000(Lcom/android/settings/RestrictedSettingsFragment;)Z
+.method static synthetic access$000(Lcom/android/settings_ext/RestrictedSettingsFragment;)Z
     .locals 1
-    .param p0, "x0"    # Lcom/android/settings/RestrictedSettingsFragment;
+    .param p0, "x0"    # Lcom/android/settings_ext/RestrictedSettingsFragment;
 
     .prologue
     .line 40
-    iget-boolean v0, p0, Lcom/android/settings/RestrictedSettingsFragment;->mChallengeRequested:Z
+    iget-boolean v0, p0, Lcom/android/settings_ext/RestrictedSettingsFragment;->mChallengeRequested:Z
 
     return v0
 .end method
 
-.method static synthetic access$002(Lcom/android/settings/RestrictedSettingsFragment;Z)Z
+.method static synthetic access$002(Lcom/android/settings_ext/RestrictedSettingsFragment;Z)Z
     .locals 0
-    .param p0, "x0"    # Lcom/android/settings/RestrictedSettingsFragment;
+    .param p0, "x0"    # Lcom/android/settings_ext/RestrictedSettingsFragment;
     .param p1, "x1"    # Z
 
     .prologue
     .line 40
-    iput-boolean p1, p0, Lcom/android/settings/RestrictedSettingsFragment;->mChallengeRequested:Z
+    iput-boolean p1, p0, Lcom/android/settings_ext/RestrictedSettingsFragment;->mChallengeRequested:Z
 
     return p1
 .end method
 
-.method static synthetic access$102(Lcom/android/settings/RestrictedSettingsFragment;Z)Z
+.method static synthetic access$102(Lcom/android/settings_ext/RestrictedSettingsFragment;Z)Z
     .locals 0
-    .param p0, "x0"    # Lcom/android/settings/RestrictedSettingsFragment;
+    .param p0, "x0"    # Lcom/android/settings_ext/RestrictedSettingsFragment;
     .param p1, "x1"    # Z
 
     .prologue
     .line 40
-    iput-boolean p1, p0, Lcom/android/settings/RestrictedSettingsFragment;->mChallengeSucceeded:Z
+    iput-boolean p1, p0, Lcom/android/settings_ext/RestrictedSettingsFragment;->mChallengeSucceeded:Z
 
     return p1
 .end method
@@ -80,15 +80,15 @@
 
     .prologue
     .line 138
-    iget-boolean v2, p0, Lcom/android/settings/RestrictedSettingsFragment;->mChallengeSucceeded:Z
+    iget-boolean v2, p0, Lcom/android/settings_ext/RestrictedSettingsFragment;->mChallengeSucceeded:Z
 
     if-nez v2, :cond_0
 
-    iget-boolean v2, p0, Lcom/android/settings/RestrictedSettingsFragment;->mChallengeRequested:Z
+    iget-boolean v2, p0, Lcom/android/settings_ext/RestrictedSettingsFragment;->mChallengeRequested:Z
 
     if-nez v2, :cond_0
 
-    iget-object v2, p0, Lcom/android/settings/RestrictedSettingsFragment;->mRestrictionsManager:Landroid/content/RestrictionsManager;
+    iget-object v2, p0, Lcom/android/settings_ext/RestrictedSettingsFragment;->mRestrictionsManager:Landroid/content/RestrictionsManager;
 
     invoke-virtual {v2}, Landroid/content/RestrictionsManager;->hasRestrictionsProvider()Z
 
@@ -97,7 +97,7 @@
     if-eqz v2, :cond_0
 
     .line 140
-    iget-object v2, p0, Lcom/android/settings/RestrictedSettingsFragment;->mRestrictionsManager:Landroid/content/RestrictionsManager;
+    iget-object v2, p0, Lcom/android/settings_ext/RestrictedSettingsFragment;->mRestrictionsManager:Landroid/content/RestrictionsManager;
 
     invoke-virtual {v2}, Landroid/content/RestrictionsManager;->createLocalApprovalIntent()Landroid/content/Intent;
 
@@ -110,12 +110,12 @@
     .line 142
     const/4 v2, 0x1
 
-    iput-boolean v2, p0, Lcom/android/settings/RestrictedSettingsFragment;->mChallengeRequested:Z
+    iput-boolean v2, p0, Lcom/android/settings_ext/RestrictedSettingsFragment;->mChallengeRequested:Z
 
     .line 143
     const/4 v2, 0x0
 
-    iput-boolean v2, p0, Lcom/android/settings/RestrictedSettingsFragment;->mChallengeSucceeded:Z
+    iput-boolean v2, p0, Lcom/android/settings_ext/RestrictedSettingsFragment;->mChallengeSucceeded:Z
 
     .line 144
     new-instance v1, Landroid/os/PersistableBundle;
@@ -126,7 +126,7 @@
     .local v1, "request":Landroid/os/PersistableBundle;
     const-string v2, "android.request.mesg"
 
-    invoke-virtual {p0}, Lcom/android/settings/RestrictedSettingsFragment;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {p0}, Lcom/android/settings_ext/RestrictedSettingsFragment;->getResources()Landroid/content/res/Resources;
 
     move-result-object v3
 
@@ -146,7 +146,7 @@
     .line 148
     const/16 v2, 0x3015
 
-    invoke-virtual {p0, v0, v2}, Lcom/android/settings/RestrictedSettingsFragment;->startActivityForResult(Landroid/content/Intent;I)V
+    invoke-virtual {p0, v0, v2}, Lcom/android/settings_ext/RestrictedSettingsFragment;->startActivityForResult(Landroid/content/Intent;I)V
 
     .line 151
     .end local v0    # "intent":Landroid/content/Intent;
@@ -162,16 +162,16 @@
 
     .prologue
     .line 166
-    iget-boolean v0, p0, Lcom/android/settings/RestrictedSettingsFragment;->mChallengeRequested:Z
+    iget-boolean v0, p0, Lcom/android/settings_ext/RestrictedSettingsFragment;->mChallengeRequested:Z
 
     if-eqz v0, :cond_0
 
-    iget-boolean v0, p0, Lcom/android/settings/RestrictedSettingsFragment;->mChallengeSucceeded:Z
+    iget-boolean v0, p0, Lcom/android/settings_ext/RestrictedSettingsFragment;->mChallengeSucceeded:Z
 
     if-nez v0, :cond_1
 
     :cond_0
-    iget-boolean v0, p0, Lcom/android/settings/RestrictedSettingsFragment;->mChallengeRequested:Z
+    iget-boolean v0, p0, Lcom/android/settings_ext/RestrictedSettingsFragment;->mChallengeRequested:Z
 
     if-nez v0, :cond_2
 
@@ -194,13 +194,13 @@
     const/4 v0, 0x0
 
     .line 158
-    iget-object v1, p0, Lcom/android/settings/RestrictedSettingsFragment;->mRestrictionKey:Ljava/lang/String;
+    iget-object v1, p0, Lcom/android/settings_ext/RestrictedSettingsFragment;->mRestrictionKey:Ljava/lang/String;
 
     if-eqz v1, :cond_0
 
     const-string v1, "restrict_if_overridable"
 
-    iget-object v2, p0, Lcom/android/settings/RestrictedSettingsFragment;->mRestrictionKey:Ljava/lang/String;
+    iget-object v2, p0, Lcom/android/settings_ext/RestrictedSettingsFragment;->mRestrictionKey:Ljava/lang/String;
 
     invoke-virtual {v1, v2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
@@ -214,9 +214,9 @@
     return v0
 
     :cond_1
-    iget-object v1, p0, Lcom/android/settings/RestrictedSettingsFragment;->mUserManager:Landroid/os/UserManager;
+    iget-object v1, p0, Lcom/android/settings_ext/RestrictedSettingsFragment;->mUserManager:Landroid/os/UserManager;
 
-    iget-object v2, p0, Lcom/android/settings/RestrictedSettingsFragment;->mRestrictionKey:Ljava/lang/String;
+    iget-object v2, p0, Lcom/android/settings_ext/RestrictedSettingsFragment;->mRestrictionKey:Ljava/lang/String;
 
     invoke-virtual {v1, v2}, Landroid/os/UserManager;->hasUserRestriction(Ljava/lang/String;)Z
 
@@ -224,7 +224,7 @@
 
     if-eqz v1, :cond_0
 
-    iget-object v1, p0, Lcom/android/settings/RestrictedSettingsFragment;->mRestrictionsManager:Landroid/content/RestrictionsManager;
+    iget-object v1, p0, Lcom/android/settings_ext/RestrictedSettingsFragment;->mRestrictionsManager:Landroid/content/RestrictionsManager;
 
     invoke-virtual {v1}, Landroid/content/RestrictionsManager;->hasRestrictionsProvider()Z
 
@@ -242,13 +242,13 @@
 
     .prologue
     .line 185
-    invoke-virtual {p0}, Lcom/android/settings/RestrictedSettingsFragment;->isRestrictedAndNotProviderProtected()Z
+    invoke-virtual {p0}, Lcom/android/settings_ext/RestrictedSettingsFragment;->isRestrictedAndNotProviderProtected()Z
 
     move-result v0
 
     if-nez v0, :cond_0
 
-    invoke-virtual {p0}, Lcom/android/settings/RestrictedSettingsFragment;->hasChallengeSucceeded()Z
+    invoke-virtual {p0}, Lcom/android/settings_ext/RestrictedSettingsFragment;->hasChallengeSucceeded()Z
 
     move-result v0
 
@@ -288,10 +288,10 @@
     .line 126
     const/4 v0, 0x1
 
-    iput-boolean v0, p0, Lcom/android/settings/RestrictedSettingsFragment;->mChallengeSucceeded:Z
+    iput-boolean v0, p0, Lcom/android/settings_ext/RestrictedSettingsFragment;->mChallengeSucceeded:Z
 
     .line 127
-    iput-boolean v1, p0, Lcom/android/settings/RestrictedSettingsFragment;->mChallengeRequested:Z
+    iput-boolean v1, p0, Lcom/android/settings_ext/RestrictedSettingsFragment;->mChallengeRequested:Z
 
     .line 135
     :goto_0
@@ -299,13 +299,13 @@
 
     .line 129
     :cond_0
-    iput-boolean v1, p0, Lcom/android/settings/RestrictedSettingsFragment;->mChallengeSucceeded:Z
+    iput-boolean v1, p0, Lcom/android/settings_ext/RestrictedSettingsFragment;->mChallengeSucceeded:Z
 
     goto :goto_0
 
     .line 134
     :cond_1
-    invoke-super {p0, p1, p2, p3}, Lcom/android/settings/SettingsPreferenceFragment;->onActivityResult(IILandroid/content/Intent;)V
+    invoke-super {p0, p1, p2, p3}, Lcom/android/settings_ext/SettingsPreferenceFragment;->onActivityResult(IILandroid/content/Intent;)V
 
     goto :goto_0
 .end method
@@ -318,29 +318,29 @@
     const/4 v2, 0x0
 
     .line 82
-    invoke-super {p0, p1}, Lcom/android/settings/SettingsPreferenceFragment;->onCreate(Landroid/os/Bundle;)V
+    invoke-super {p0, p1}, Lcom/android/settings_ext/SettingsPreferenceFragment;->onCreate(Landroid/os/Bundle;)V
 
     .line 84
     const-string v1, "restrictions"
 
-    invoke-virtual {p0, v1}, Lcom/android/settings/RestrictedSettingsFragment;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
+    invoke-virtual {p0, v1}, Lcom/android/settings_ext/RestrictedSettingsFragment;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object v1
 
     check-cast v1, Landroid/content/RestrictionsManager;
 
-    iput-object v1, p0, Lcom/android/settings/RestrictedSettingsFragment;->mRestrictionsManager:Landroid/content/RestrictionsManager;
+    iput-object v1, p0, Lcom/android/settings_ext/RestrictedSettingsFragment;->mRestrictionsManager:Landroid/content/RestrictionsManager;
 
     .line 85
     const-string v1, "user"
 
-    invoke-virtual {p0, v1}, Lcom/android/settings/RestrictedSettingsFragment;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
+    invoke-virtual {p0, v1}, Lcom/android/settings_ext/RestrictedSettingsFragment;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object v1
 
     check-cast v1, Landroid/os/UserManager;
 
-    iput-object v1, p0, Lcom/android/settings/RestrictedSettingsFragment;->mUserManager:Landroid/os/UserManager;
+    iput-object v1, p0, Lcom/android/settings_ext/RestrictedSettingsFragment;->mUserManager:Landroid/os/UserManager;
 
     .line 87
     if-eqz p1, :cond_0
@@ -352,7 +352,7 @@
 
     move-result v1
 
-    iput-boolean v1, p0, Lcom/android/settings/RestrictedSettingsFragment;->mChallengeSucceeded:Z
+    iput-boolean v1, p0, Lcom/android/settings_ext/RestrictedSettingsFragment;->mChallengeSucceeded:Z
 
     .line 89
     const-string v1, "chrq"
@@ -361,7 +361,7 @@
 
     move-result v1
 
-    iput-boolean v1, p0, Lcom/android/settings/RestrictedSettingsFragment;->mChallengeRequested:Z
+    iput-boolean v1, p0, Lcom/android/settings_ext/RestrictedSettingsFragment;->mChallengeRequested:Z
 
     .line 92
     :cond_0
@@ -378,11 +378,11 @@
     invoke-virtual {v0, v1}, Landroid/content/IntentFilter;->addAction(Ljava/lang/String;)V
 
     .line 94
-    invoke-virtual {p0}, Lcom/android/settings/RestrictedSettingsFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/RestrictedSettingsFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v1
 
-    iget-object v2, p0, Lcom/android/settings/RestrictedSettingsFragment;->mScreenOffReceiver:Landroid/content/BroadcastReceiver;
+    iget-object v2, p0, Lcom/android/settings_ext/RestrictedSettingsFragment;->mScreenOffReceiver:Landroid/content/BroadcastReceiver;
 
     invoke-virtual {v1, v2, v0}, Landroid/app/Activity;->registerReceiver(Landroid/content/BroadcastReceiver;Landroid/content/IntentFilter;)Landroid/content/Intent;
 
@@ -395,16 +395,16 @@
 
     .prologue
     .line 118
-    invoke-virtual {p0}, Lcom/android/settings/RestrictedSettingsFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/RestrictedSettingsFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/android/settings/RestrictedSettingsFragment;->mScreenOffReceiver:Landroid/content/BroadcastReceiver;
+    iget-object v1, p0, Lcom/android/settings_ext/RestrictedSettingsFragment;->mScreenOffReceiver:Landroid/content/BroadcastReceiver;
 
     invoke-virtual {v0, v1}, Landroid/app/Activity;->unregisterReceiver(Landroid/content/BroadcastReceiver;)V
 
     .line 119
-    invoke-super {p0}, Lcom/android/settings/SettingsPreferenceFragment;->onDestroy()V
+    invoke-super {p0}, Lcom/android/settings_ext/SettingsPreferenceFragment;->onDestroy()V
 
     .line 120
     return-void
@@ -415,19 +415,19 @@
 
     .prologue
     .line 109
-    invoke-super {p0}, Lcom/android/settings/SettingsPreferenceFragment;->onResume()V
+    invoke-super {p0}, Lcom/android/settings_ext/SettingsPreferenceFragment;->onResume()V
 
     .line 111
-    iget-object v0, p0, Lcom/android/settings/RestrictedSettingsFragment;->mRestrictionKey:Ljava/lang/String;
+    iget-object v0, p0, Lcom/android/settings_ext/RestrictedSettingsFragment;->mRestrictionKey:Ljava/lang/String;
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/RestrictedSettingsFragment;->shouldBeProviderProtected(Ljava/lang/String;)Z
+    invoke-virtual {p0, v0}, Lcom/android/settings_ext/RestrictedSettingsFragment;->shouldBeProviderProtected(Ljava/lang/String;)Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
     .line 112
-    invoke-direct {p0}, Lcom/android/settings/RestrictedSettingsFragment;->ensurePin()V
+    invoke-direct {p0}, Lcom/android/settings_ext/RestrictedSettingsFragment;->ensurePin()V
 
     .line 114
     :cond_0
@@ -440,10 +440,10 @@
 
     .prologue
     .line 99
-    invoke-super {p0, p1}, Lcom/android/settings/SettingsPreferenceFragment;->onSaveInstanceState(Landroid/os/Bundle;)V
+    invoke-super {p0, p1}, Lcom/android/settings_ext/SettingsPreferenceFragment;->onSaveInstanceState(Landroid/os/Bundle;)V
 
     .line 101
-    invoke-virtual {p0}, Lcom/android/settings/RestrictedSettingsFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/RestrictedSettingsFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
@@ -456,14 +456,14 @@
     .line 102
     const-string v0, "chrq"
 
-    iget-boolean v1, p0, Lcom/android/settings/RestrictedSettingsFragment;->mChallengeRequested:Z
+    iget-boolean v1, p0, Lcom/android/settings_ext/RestrictedSettingsFragment;->mChallengeRequested:Z
 
     invoke-virtual {p1, v0, v1}, Landroid/os/Bundle;->putBoolean(Ljava/lang/String;Z)V
 
     .line 103
     const-string v0, "chsc"
 
-    iget-boolean v1, p0, Lcom/android/settings/RestrictedSettingsFragment;->mChallengeSucceeded:Z
+    iget-boolean v1, p0, Lcom/android/settings_ext/RestrictedSettingsFragment;->mChallengeSucceeded:Z
 
     invoke-virtual {p1, v0, v1}, Landroid/os/Bundle;->putBoolean(Ljava/lang/String;Z)V
 
@@ -498,9 +498,9 @@
 
     if-nez v3, :cond_1
 
-    iget-object v3, p0, Lcom/android/settings/RestrictedSettingsFragment;->mUserManager:Landroid/os/UserManager;
+    iget-object v3, p0, Lcom/android/settings_ext/RestrictedSettingsFragment;->mUserManager:Landroid/os/UserManager;
 
-    iget-object v4, p0, Lcom/android/settings/RestrictedSettingsFragment;->mRestrictionKey:Ljava/lang/String;
+    iget-object v4, p0, Lcom/android/settings_ext/RestrictedSettingsFragment;->mRestrictionKey:Ljava/lang/String;
 
     invoke-virtual {v3, v4}, Landroid/os/UserManager;->hasUserRestriction(Ljava/lang/String;)Z
 
@@ -516,7 +516,7 @@
     :goto_1
     if-eqz v0, :cond_3
 
-    iget-object v3, p0, Lcom/android/settings/RestrictedSettingsFragment;->mRestrictionsManager:Landroid/content/RestrictionsManager;
+    iget-object v3, p0, Lcom/android/settings_ext/RestrictedSettingsFragment;->mRestrictionsManager:Landroid/content/RestrictionsManager;
 
     invoke-virtual {v3}, Landroid/content/RestrictionsManager;->hasRestrictionsProvider()Z
 

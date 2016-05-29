@@ -1,4 +1,4 @@
-.class public final Lcom/android/settings/voice/VoiceInputPreference;
+.class public final Lcom/android/settings_ext/voice/VoiceInputPreference;
 .super Landroid/preference/Preference;
 .source "VoiceInputPreference.java"
 
@@ -6,7 +6,7 @@
 # annotations
 .annotation system Ldalvik/annotation/MemberClasses;
     value = {
-        Lcom/android/settings/voice/VoiceInputPreference$RadioButtonGroupState;
+        Lcom/android/settings_ext/voice/VoiceInputPreference$RadioButtonGroupState;
     }
 .end annotation
 
@@ -28,84 +28,84 @@
 
 .field private mSettingsIcon:Landroid/view/View;
 
-.field private final mSharedState:Lcom/android/settings/voice/VoiceInputPreference$RadioButtonGroupState;
+.field private final mSharedState:Lcom/android/settings_ext/voice/VoiceInputPreference$RadioButtonGroupState;
 
 
 # direct methods
-.method public constructor <init>(Landroid/content/Context;Lcom/android/settings/voice/VoiceInputHelper$BaseInfo;Ljava/lang/CharSequence;Ljava/lang/CharSequence;Lcom/android/settings/voice/VoiceInputPreference$RadioButtonGroupState;)V
+.method public constructor <init>(Landroid/content/Context;Lcom/android/settings_ext/voice/VoiceInputHelper$BaseInfo;Ljava/lang/CharSequence;Ljava/lang/CharSequence;Lcom/android/settings_ext/voice/VoiceInputPreference$RadioButtonGroupState;)V
     .locals 1
     .param p1, "context"    # Landroid/content/Context;
-    .param p2, "info"    # Lcom/android/settings/voice/VoiceInputHelper$BaseInfo;
+    .param p2, "info"    # Lcom/android/settings_ext/voice/VoiceInputHelper$BaseInfo;
     .param p3, "summary"    # Ljava/lang/CharSequence;
     .param p4, "alertText"    # Ljava/lang/CharSequence;
-    .param p5, "state"    # Lcom/android/settings/voice/VoiceInputPreference$RadioButtonGroupState;
+    .param p5, "state"    # Lcom/android/settings_ext/voice/VoiceInputPreference$RadioButtonGroupState;
 
     .prologue
     .line 72
     invoke-direct {p0, p1}, Landroid/preference/Preference;-><init>(Landroid/content/Context;)V
 
     .line 62
-    new-instance v0, Lcom/android/settings/voice/VoiceInputPreference$1;
+    new-instance v0, Lcom/android/settings_ext/voice/VoiceInputPreference$1;
 
-    invoke-direct {v0, p0}, Lcom/android/settings/voice/VoiceInputPreference$1;-><init>(Lcom/android/settings/voice/VoiceInputPreference;)V
+    invoke-direct {v0, p0}, Lcom/android/settings_ext/voice/VoiceInputPreference$1;-><init>(Lcom/android/settings_ext/voice/VoiceInputPreference;)V
 
-    iput-object v0, p0, Lcom/android/settings/voice/VoiceInputPreference;->mRadioChangeListener:Landroid/widget/CompoundButton$OnCheckedChangeListener;
+    iput-object v0, p0, Lcom/android/settings_ext/voice/VoiceInputPreference;->mRadioChangeListener:Landroid/widget/CompoundButton$OnCheckedChangeListener;
 
     .line 73
     const v0, 0x7f04008b
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/voice/VoiceInputPreference;->setLayoutResource(I)V
+    invoke-virtual {p0, v0}, Lcom/android/settings_ext/voice/VoiceInputPreference;->setLayoutResource(I)V
 
     .line 75
-    iput-object p5, p0, Lcom/android/settings/voice/VoiceInputPreference;->mSharedState:Lcom/android/settings/voice/VoiceInputPreference$RadioButtonGroupState;
+    iput-object p5, p0, Lcom/android/settings_ext/voice/VoiceInputPreference;->mSharedState:Lcom/android/settings_ext/voice/VoiceInputPreference$RadioButtonGroupState;
 
     .line 76
-    iget-object v0, p2, Lcom/android/settings/voice/VoiceInputHelper$BaseInfo;->label:Ljava/lang/CharSequence;
+    iget-object v0, p2, Lcom/android/settings_ext/voice/VoiceInputHelper$BaseInfo;->label:Ljava/lang/CharSequence;
 
-    iput-object v0, p0, Lcom/android/settings/voice/VoiceInputPreference;->mLabel:Ljava/lang/CharSequence;
+    iput-object v0, p0, Lcom/android/settings_ext/voice/VoiceInputPreference;->mLabel:Ljava/lang/CharSequence;
 
     .line 77
-    iget-object v0, p2, Lcom/android/settings/voice/VoiceInputHelper$BaseInfo;->appLabel:Ljava/lang/CharSequence;
+    iget-object v0, p2, Lcom/android/settings_ext/voice/VoiceInputHelper$BaseInfo;->appLabel:Ljava/lang/CharSequence;
 
-    iput-object v0, p0, Lcom/android/settings/voice/VoiceInputPreference;->mAppLabel:Ljava/lang/CharSequence;
+    iput-object v0, p0, Lcom/android/settings_ext/voice/VoiceInputPreference;->mAppLabel:Ljava/lang/CharSequence;
 
     .line 78
-    iput-object p4, p0, Lcom/android/settings/voice/VoiceInputPreference;->mAlertText:Ljava/lang/CharSequence;
+    iput-object p4, p0, Lcom/android/settings_ext/voice/VoiceInputPreference;->mAlertText:Ljava/lang/CharSequence;
 
     .line 79
-    iget-object v0, p2, Lcom/android/settings/voice/VoiceInputHelper$BaseInfo;->settings:Landroid/content/ComponentName;
+    iget-object v0, p2, Lcom/android/settings_ext/voice/VoiceInputHelper$BaseInfo;->settings:Landroid/content/ComponentName;
 
-    iput-object v0, p0, Lcom/android/settings/voice/VoiceInputPreference;->mSettingsComponent:Landroid/content/ComponentName;
+    iput-object v0, p0, Lcom/android/settings_ext/voice/VoiceInputPreference;->mSettingsComponent:Landroid/content/ComponentName;
 
     .line 80
     const/4 v0, 0x0
 
-    iput-boolean v0, p0, Lcom/android/settings/voice/VoiceInputPreference;->mPreventRadioButtonCallbacks:Z
+    iput-boolean v0, p0, Lcom/android/settings_ext/voice/VoiceInputPreference;->mPreventRadioButtonCallbacks:Z
 
     .line 82
-    iget-object v0, p2, Lcom/android/settings/voice/VoiceInputHelper$BaseInfo;->key:Ljava/lang/String;
+    iget-object v0, p2, Lcom/android/settings_ext/voice/VoiceInputHelper$BaseInfo;->key:Ljava/lang/String;
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/voice/VoiceInputPreference;->setKey(Ljava/lang/String;)V
+    invoke-virtual {p0, v0}, Lcom/android/settings_ext/voice/VoiceInputPreference;->setKey(Ljava/lang/String;)V
 
     .line 83
-    iget-object v0, p2, Lcom/android/settings/voice/VoiceInputHelper$BaseInfo;->label:Ljava/lang/CharSequence;
+    iget-object v0, p2, Lcom/android/settings_ext/voice/VoiceInputHelper$BaseInfo;->label:Ljava/lang/CharSequence;
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/voice/VoiceInputPreference;->setTitle(Ljava/lang/CharSequence;)V
+    invoke-virtual {p0, v0}, Lcom/android/settings_ext/voice/VoiceInputPreference;->setTitle(Ljava/lang/CharSequence;)V
 
     .line 84
-    invoke-virtual {p0, p3}, Lcom/android/settings/voice/VoiceInputPreference;->setSummary(Ljava/lang/CharSequence;)V
+    invoke-virtual {p0, p3}, Lcom/android/settings_ext/voice/VoiceInputPreference;->setSummary(Ljava/lang/CharSequence;)V
 
     .line 85
     return-void
 .end method
 
-.method static synthetic access$000(Lcom/android/settings/voice/VoiceInputPreference;)Landroid/content/ComponentName;
+.method static synthetic access$000(Lcom/android/settings_ext/voice/VoiceInputPreference;)Landroid/content/ComponentName;
     .locals 1
-    .param p0, "x0"    # Lcom/android/settings/voice/VoiceInputPreference;
+    .param p0, "x0"    # Lcom/android/settings_ext/voice/VoiceInputPreference;
 
     .prologue
     .line 36
-    iget-object v0, p0, Lcom/android/settings/voice/VoiceInputPreference;->mSettingsComponent:Landroid/content/ComponentName;
+    iget-object v0, p0, Lcom/android/settings_ext/voice/VoiceInputPreference;->mSettingsComponent:Landroid/content/ComponentName;
 
     return-object v0
 .end method
@@ -131,7 +131,7 @@
 
     move-result-object v4
 
-    invoke-virtual {p0}, Lcom/android/settings/voice/VoiceInputPreference;->getKey()Ljava/lang/String;
+    invoke-virtual {p0}, Lcom/android/settings_ext/voice/VoiceInputPreference;->getKey()Ljava/lang/String;
 
     move-result-object v5
 
@@ -148,7 +148,7 @@
     .line 142
     new-instance v0, Landroid/app/AlertDialog$Builder;
 
-    invoke-virtual {p0}, Lcom/android/settings/voice/VoiceInputPreference;->getContext()Landroid/content/Context;
+    invoke-virtual {p0}, Lcom/android/settings_ext/voice/VoiceInputPreference;->getContext()Landroid/content/Context;
 
     move-result-object v3
 
@@ -156,7 +156,7 @@
 
     .line 143
     .local v0, "builder":Landroid/app/AlertDialog$Builder;
-    invoke-virtual {p0}, Lcom/android/settings/voice/VoiceInputPreference;->getContext()Landroid/content/Context;
+    invoke-virtual {p0}, Lcom/android/settings_ext/voice/VoiceInputPreference;->getContext()Landroid/content/Context;
 
     move-result-object v3
 
@@ -170,7 +170,7 @@
 
     iget-object v3, v3, Landroid/content/res/Configuration;->locale:Ljava/util/Locale;
 
-    iget-object v4, p0, Lcom/android/settings/voice/VoiceInputPreference;->mAlertText:Ljava/lang/CharSequence;
+    iget-object v4, p0, Lcom/android/settings_ext/voice/VoiceInputPreference;->mAlertText:Ljava/lang/CharSequence;
 
     invoke-interface {v4}, Ljava/lang/CharSequence;->toString()Ljava/lang/String;
 
@@ -180,7 +180,7 @@
 
     const/4 v6, 0x0
 
-    iget-object v7, p0, Lcom/android/settings/voice/VoiceInputPreference;->mAppLabel:Ljava/lang/CharSequence;
+    iget-object v7, p0, Lcom/android/settings_ext/voice/VoiceInputPreference;->mAppLabel:Ljava/lang/CharSequence;
 
     aput-object v7, v5, v6
 
@@ -216,9 +216,9 @@
 
     move-result-object v3
 
-    new-instance v4, Lcom/android/settings/voice/VoiceInputPreference$4;
+    new-instance v4, Lcom/android/settings_ext/voice/VoiceInputPreference$4;
 
-    invoke-direct {v4, p0, p2}, Lcom/android/settings/voice/VoiceInputPreference$4;-><init>(Lcom/android/settings/voice/VoiceInputPreference;Landroid/content/DialogInterface$OnClickListener;)V
+    invoke-direct {v4, p0, p2}, Lcom/android/settings_ext/voice/VoiceInputPreference$4;-><init>(Lcom/android/settings_ext/voice/VoiceInputPreference;Landroid/content/DialogInterface$OnClickListener;)V
 
     invoke-virtual {v3, v4}, Landroid/app/AlertDialog$Builder;->setOnCancelListener(Landroid/content/DialogInterface$OnCancelListener;)Landroid/app/AlertDialog$Builder;
 
@@ -240,7 +240,7 @@
 
     .prologue
     .line 134
-    iget-object v0, p0, Lcom/android/settings/voice/VoiceInputPreference;->mAlertText:Ljava/lang/CharSequence;
+    iget-object v0, p0, Lcom/android/settings_ext/voice/VoiceInputPreference;->mAlertText:Ljava/lang/CharSequence;
 
     if-eqz v0, :cond_0
 
@@ -262,7 +262,7 @@
 
     .prologue
     .line 161
-    iget-object v0, p0, Lcom/android/settings/voice/VoiceInputPreference;->mRadioButton:Landroid/widget/RadioButton;
+    iget-object v0, p0, Lcom/android/settings_ext/voice/VoiceInputPreference;->mRadioButton:Landroid/widget/RadioButton;
 
     invoke-virtual {v0}, Landroid/widget/RadioButton;->performClick()Z
 
@@ -277,7 +277,7 @@
 
     .prologue
     .line 89
-    iget-object v4, p0, Lcom/android/settings/voice/VoiceInputPreference;->mSharedState:Lcom/android/settings/voice/VoiceInputPreference$RadioButtonGroupState;
+    iget-object v4, p0, Lcom/android/settings_ext/voice/VoiceInputPreference;->mSharedState:Lcom/android/settings_ext/voice/VoiceInputPreference$RadioButtonGroupState;
 
     if-nez v4, :cond_0
 
@@ -308,18 +308,18 @@
 
     .line 96
     .local v1, "rb":Landroid/widget/RadioButton;
-    iget-object v4, p0, Lcom/android/settings/voice/VoiceInputPreference;->mRadioChangeListener:Landroid/widget/CompoundButton$OnCheckedChangeListener;
+    iget-object v4, p0, Lcom/android/settings_ext/voice/VoiceInputPreference;->mRadioChangeListener:Landroid/widget/CompoundButton$OnCheckedChangeListener;
 
     invoke-virtual {v1, v4}, Landroid/widget/RadioButton;->setOnCheckedChangeListener(Landroid/widget/CompoundButton$OnCheckedChangeListener;)V
 
     .line 98
-    invoke-virtual {p0}, Lcom/android/settings/voice/VoiceInputPreference;->getKey()Ljava/lang/String;
+    invoke-virtual {p0}, Lcom/android/settings_ext/voice/VoiceInputPreference;->getKey()Ljava/lang/String;
 
     move-result-object v4
 
-    iget-object v5, p0, Lcom/android/settings/voice/VoiceInputPreference;->mSharedState:Lcom/android/settings/voice/VoiceInputPreference$RadioButtonGroupState;
+    iget-object v5, p0, Lcom/android/settings_ext/voice/VoiceInputPreference;->mSharedState:Lcom/android/settings_ext/voice/VoiceInputPreference$RadioButtonGroupState;
 
-    invoke-interface {v5}, Lcom/android/settings/voice/VoiceInputPreference$RadioButtonGroupState;->getCurrentKey()Ljava/lang/String;
+    invoke-interface {v5}, Lcom/android/settings_ext/voice/VoiceInputPreference$RadioButtonGroupState;->getCurrentKey()Ljava/lang/String;
 
     move-result-object v5
 
@@ -332,15 +332,15 @@
     if-eqz v0, :cond_1
 
     .line 100
-    iget-object v4, p0, Lcom/android/settings/voice/VoiceInputPreference;->mSharedState:Lcom/android/settings/voice/VoiceInputPreference$RadioButtonGroupState;
+    iget-object v4, p0, Lcom/android/settings_ext/voice/VoiceInputPreference;->mSharedState:Lcom/android/settings_ext/voice/VoiceInputPreference$RadioButtonGroupState;
 
-    invoke-interface {v4, v1}, Lcom/android/settings/voice/VoiceInputPreference$RadioButtonGroupState;->setCurrentChecked(Landroid/widget/Checkable;)V
+    invoke-interface {v4, v1}, Lcom/android/settings_ext/voice/VoiceInputPreference$RadioButtonGroupState;->setCurrentChecked(Landroid/widget/Checkable;)V
 
     .line 103
     :cond_1
     const/4 v4, 0x1
 
-    iput-boolean v4, p0, Lcom/android/settings/voice/VoiceInputPreference;->mPreventRadioButtonCallbacks:Z
+    iput-boolean v4, p0, Lcom/android/settings_ext/voice/VoiceInputPreference;->mPreventRadioButtonCallbacks:Z
 
     .line 104
     invoke-virtual {v1, v0}, Landroid/widget/RadioButton;->setChecked(Z)V
@@ -348,10 +348,10 @@
     .line 105
     const/4 v4, 0x0
 
-    iput-boolean v4, p0, Lcom/android/settings/voice/VoiceInputPreference;->mPreventRadioButtonCallbacks:Z
+    iput-boolean v4, p0, Lcom/android/settings_ext/voice/VoiceInputPreference;->mPreventRadioButtonCallbacks:Z
 
     .line 107
-    iput-object v1, p0, Lcom/android/settings/voice/VoiceInputPreference;->mRadioButton:Landroid/widget/RadioButton;
+    iput-object v1, p0, Lcom/android/settings_ext/voice/VoiceInputPreference;->mRadioButton:Landroid/widget/RadioButton;
 
     .line 109
     const v4, 0x7f0f0132
@@ -362,9 +362,9 @@
 
     .line 110
     .local v2, "textLayout":Landroid/view/View;
-    new-instance v4, Lcom/android/settings/voice/VoiceInputPreference$2;
+    new-instance v4, Lcom/android/settings_ext/voice/VoiceInputPreference$2;
 
-    invoke-direct {v4, p0, v1}, Lcom/android/settings/voice/VoiceInputPreference$2;-><init>(Lcom/android/settings/voice/VoiceInputPreference;Landroid/widget/RadioButton;)V
+    invoke-direct {v4, p0, v1}, Lcom/android/settings_ext/voice/VoiceInputPreference$2;-><init>(Lcom/android/settings_ext/voice/VoiceInputPreference;Landroid/widget/RadioButton;)V
 
     invoke-virtual {v2, v4}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
@@ -375,19 +375,19 @@
 
     move-result-object v4
 
-    iput-object v4, p0, Lcom/android/settings/voice/VoiceInputPreference;->mSettingsIcon:Landroid/view/View;
+    iput-object v4, p0, Lcom/android/settings_ext/voice/VoiceInputPreference;->mSettingsIcon:Landroid/view/View;
 
     .line 120
-    iget-object v4, p0, Lcom/android/settings/voice/VoiceInputPreference;->mSettingsIcon:Landroid/view/View;
+    iget-object v4, p0, Lcom/android/settings_ext/voice/VoiceInputPreference;->mSettingsIcon:Landroid/view/View;
 
-    new-instance v5, Lcom/android/settings/voice/VoiceInputPreference$3;
+    new-instance v5, Lcom/android/settings_ext/voice/VoiceInputPreference$3;
 
-    invoke-direct {v5, p0}, Lcom/android/settings/voice/VoiceInputPreference$3;-><init>(Lcom/android/settings/voice/VoiceInputPreference;)V
+    invoke-direct {v5, p0}, Lcom/android/settings_ext/voice/VoiceInputPreference$3;-><init>(Lcom/android/settings_ext/voice/VoiceInputPreference;)V
 
     invoke-virtual {v4, v5}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     .line 128
-    invoke-virtual {p0, v0}, Lcom/android/settings/voice/VoiceInputPreference;->updateCheckedState(Z)V
+    invoke-virtual {p0, v0}, Lcom/android/settings_ext/voice/VoiceInputPreference;->updateCheckedState(Z)V
 
     .line 130
     return-object v3
@@ -401,18 +401,18 @@
     const/4 v2, 0x1
 
     .line 214
-    iget-object v0, p0, Lcom/android/settings/voice/VoiceInputPreference;->mSharedState:Lcom/android/settings/voice/VoiceInputPreference$RadioButtonGroupState;
+    iget-object v0, p0, Lcom/android/settings_ext/voice/VoiceInputPreference;->mSharedState:Lcom/android/settings_ext/voice/VoiceInputPreference$RadioButtonGroupState;
 
-    invoke-interface {v0}, Lcom/android/settings/voice/VoiceInputPreference$RadioButtonGroupState;->getCurrentChecked()Landroid/widget/Checkable;
+    invoke-interface {v0}, Lcom/android/settings_ext/voice/VoiceInputPreference$RadioButtonGroupState;->getCurrentChecked()Landroid/widget/Checkable;
 
     move-result-object v0
 
     if-eqz v0, :cond_0
 
     .line 215
-    iget-object v0, p0, Lcom/android/settings/voice/VoiceInputPreference;->mSharedState:Lcom/android/settings/voice/VoiceInputPreference$RadioButtonGroupState;
+    iget-object v0, p0, Lcom/android/settings_ext/voice/VoiceInputPreference;->mSharedState:Lcom/android/settings_ext/voice/VoiceInputPreference$RadioButtonGroupState;
 
-    invoke-interface {v0}, Lcom/android/settings/voice/VoiceInputPreference$RadioButtonGroupState;->getCurrentChecked()Landroid/widget/Checkable;
+    invoke-interface {v0}, Lcom/android/settings_ext/voice/VoiceInputPreference$RadioButtonGroupState;->getCurrentChecked()Landroid/widget/Checkable;
 
     move-result-object v0
 
@@ -422,30 +422,30 @@
 
     .line 217
     :cond_0
-    iget-object v0, p0, Lcom/android/settings/voice/VoiceInputPreference;->mSharedState:Lcom/android/settings/voice/VoiceInputPreference$RadioButtonGroupState;
+    iget-object v0, p0, Lcom/android/settings_ext/voice/VoiceInputPreference;->mSharedState:Lcom/android/settings_ext/voice/VoiceInputPreference$RadioButtonGroupState;
 
-    invoke-interface {v0, p1}, Lcom/android/settings/voice/VoiceInputPreference$RadioButtonGroupState;->setCurrentChecked(Landroid/widget/Checkable;)V
+    invoke-interface {v0, p1}, Lcom/android/settings_ext/voice/VoiceInputPreference$RadioButtonGroupState;->setCurrentChecked(Landroid/widget/Checkable;)V
 
     .line 218
-    iget-object v0, p0, Lcom/android/settings/voice/VoiceInputPreference;->mSharedState:Lcom/android/settings/voice/VoiceInputPreference$RadioButtonGroupState;
+    iget-object v0, p0, Lcom/android/settings_ext/voice/VoiceInputPreference;->mSharedState:Lcom/android/settings_ext/voice/VoiceInputPreference$RadioButtonGroupState;
 
-    invoke-virtual {p0}, Lcom/android/settings/voice/VoiceInputPreference;->getKey()Ljava/lang/String;
+    invoke-virtual {p0}, Lcom/android/settings_ext/voice/VoiceInputPreference;->getKey()Ljava/lang/String;
 
     move-result-object v1
 
-    invoke-interface {v0, v1}, Lcom/android/settings/voice/VoiceInputPreference$RadioButtonGroupState;->setCurrentKey(Ljava/lang/String;)V
+    invoke-interface {v0, v1}, Lcom/android/settings_ext/voice/VoiceInputPreference$RadioButtonGroupState;->setCurrentKey(Ljava/lang/String;)V
 
     .line 219
-    invoke-virtual {p0, v2}, Lcom/android/settings/voice/VoiceInputPreference;->updateCheckedState(Z)V
+    invoke-virtual {p0, v2}, Lcom/android/settings_ext/voice/VoiceInputPreference;->updateCheckedState(Z)V
 
     .line 220
-    iget-object v0, p0, Lcom/android/settings/voice/VoiceInputPreference;->mSharedState:Lcom/android/settings/voice/VoiceInputPreference$RadioButtonGroupState;
+    iget-object v0, p0, Lcom/android/settings_ext/voice/VoiceInputPreference;->mSharedState:Lcom/android/settings_ext/voice/VoiceInputPreference$RadioButtonGroupState;
 
-    invoke-interface {v0}, Lcom/android/settings/voice/VoiceInputPreference$RadioButtonGroupState;->getCurrentKey()Ljava/lang/String;
+    invoke-interface {v0}, Lcom/android/settings_ext/voice/VoiceInputPreference$RadioButtonGroupState;->getCurrentKey()Ljava/lang/String;
 
     move-result-object v0
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/voice/VoiceInputPreference;->callChangeListener(Ljava/lang/Object;)Z
+    invoke-virtual {p0, v0}, Lcom/android/settings_ext/voice/VoiceInputPreference;->callChangeListener(Ljava/lang/Object;)Z
 
     .line 221
     invoke-interface {p1, v2}, Landroid/widget/Checkable;->setChecked(Z)V
@@ -461,7 +461,7 @@
 
     .prologue
     .line 180
-    iget-boolean v0, p0, Lcom/android/settings/voice/VoiceInputPreference;->mPreventRadioButtonCallbacks:Z
+    iget-boolean v0, p0, Lcom/android/settings_ext/voice/VoiceInputPreference;->mPreventRadioButtonCallbacks:Z
 
     if-eqz v0, :cond_0
 
@@ -471,16 +471,16 @@
 
     .line 183
     :cond_0
-    iget-object v0, p0, Lcom/android/settings/voice/VoiceInputPreference;->mSharedState:Lcom/android/settings/voice/VoiceInputPreference$RadioButtonGroupState;
+    iget-object v0, p0, Lcom/android/settings_ext/voice/VoiceInputPreference;->mSharedState:Lcom/android/settings_ext/voice/VoiceInputPreference$RadioButtonGroupState;
 
-    invoke-interface {v0}, Lcom/android/settings/voice/VoiceInputPreference$RadioButtonGroupState;->getCurrentChecked()Landroid/widget/Checkable;
+    invoke-interface {v0}, Lcom/android/settings_ext/voice/VoiceInputPreference$RadioButtonGroupState;->getCurrentChecked()Landroid/widget/Checkable;
 
     move-result-object v0
 
     if-ne v0, p1, :cond_1
 
     .line 184
-    invoke-virtual {p0, p2}, Lcom/android/settings/voice/VoiceInputPreference;->updateCheckedState(Z)V
+    invoke-virtual {p0, p2}, Lcom/android/settings_ext/voice/VoiceInputPreference;->updateCheckedState(Z)V
 
     goto :goto_0
 
@@ -489,34 +489,34 @@
     if-eqz p2, :cond_3
 
     .line 190
-    invoke-direct {p0}, Lcom/android/settings/voice/VoiceInputPreference;->shouldDisplayAlert()Z
+    invoke-direct {p0}, Lcom/android/settings_ext/voice/VoiceInputPreference;->shouldDisplayAlert()Z
 
     move-result v0
 
     if-eqz v0, :cond_2
 
     .line 191
-    new-instance v0, Lcom/android/settings/voice/VoiceInputPreference$5;
+    new-instance v0, Lcom/android/settings_ext/voice/VoiceInputPreference$5;
 
-    invoke-direct {v0, p0, p1}, Lcom/android/settings/voice/VoiceInputPreference$5;-><init>(Lcom/android/settings/voice/VoiceInputPreference;Landroid/widget/CompoundButton;)V
+    invoke-direct {v0, p0, p1}, Lcom/android/settings_ext/voice/VoiceInputPreference$5;-><init>(Lcom/android/settings_ext/voice/VoiceInputPreference;Landroid/widget/CompoundButton;)V
 
-    new-instance v1, Lcom/android/settings/voice/VoiceInputPreference$6;
+    new-instance v1, Lcom/android/settings_ext/voice/VoiceInputPreference$6;
 
-    invoke-direct {v1, p0, p1}, Lcom/android/settings/voice/VoiceInputPreference$6;-><init>(Lcom/android/settings/voice/VoiceInputPreference;Landroid/widget/CompoundButton;)V
+    invoke-direct {v1, p0, p1}, Lcom/android/settings_ext/voice/VoiceInputPreference$6;-><init>(Lcom/android/settings_ext/voice/VoiceInputPreference;Landroid/widget/CompoundButton;)V
 
-    invoke-direct {p0, v0, v1}, Lcom/android/settings/voice/VoiceInputPreference;->displayAlert(Landroid/content/DialogInterface$OnClickListener;Landroid/content/DialogInterface$OnClickListener;)V
+    invoke-direct {p0, v0, v1}, Lcom/android/settings_ext/voice/VoiceInputPreference;->displayAlert(Landroid/content/DialogInterface$OnClickListener;Landroid/content/DialogInterface$OnClickListener;)V
 
     goto :goto_0
 
     .line 206
     :cond_2
-    invoke-virtual {p0, p1}, Lcom/android/settings/voice/VoiceInputPreference;->makeCurrentChecked(Landroid/widget/Checkable;)V
+    invoke-virtual {p0, p1}, Lcom/android/settings_ext/voice/VoiceInputPreference;->makeCurrentChecked(Landroid/widget/Checkable;)V
 
     goto :goto_0
 
     .line 209
     :cond_3
-    invoke-virtual {p0, p2}, Lcom/android/settings/voice/VoiceInputPreference;->updateCheckedState(Z)V
+    invoke-virtual {p0, p2}, Lcom/android/settings_ext/voice/VoiceInputPreference;->updateCheckedState(Z)V
 
     goto :goto_0
 .end method
@@ -529,12 +529,12 @@
     const/4 v1, 0x0
 
     .line 165
-    iget-object v0, p0, Lcom/android/settings/voice/VoiceInputPreference;->mSettingsComponent:Landroid/content/ComponentName;
+    iget-object v0, p0, Lcom/android/settings_ext/voice/VoiceInputPreference;->mSettingsComponent:Landroid/content/ComponentName;
 
     if-eqz v0, :cond_1
 
     .line 166
-    iget-object v0, p0, Lcom/android/settings/voice/VoiceInputPreference;->mSettingsIcon:Landroid/view/View;
+    iget-object v0, p0, Lcom/android/settings_ext/voice/VoiceInputPreference;->mSettingsIcon:Landroid/view/View;
 
     invoke-virtual {v0, v1}, Landroid/view/View;->setVisibility(I)V
 
@@ -542,14 +542,14 @@
     if-eqz p1, :cond_0
 
     .line 168
-    iget-object v0, p0, Lcom/android/settings/voice/VoiceInputPreference;->mSettingsIcon:Landroid/view/View;
+    iget-object v0, p0, Lcom/android/settings_ext/voice/VoiceInputPreference;->mSettingsIcon:Landroid/view/View;
 
     const/4 v1, 0x1
 
     invoke-virtual {v0, v1}, Landroid/view/View;->setEnabled(Z)V
 
     .line 169
-    iget-object v0, p0, Lcom/android/settings/voice/VoiceInputPreference;->mSettingsIcon:Landroid/view/View;
+    iget-object v0, p0, Lcom/android/settings_ext/voice/VoiceInputPreference;->mSettingsIcon:Landroid/view/View;
 
     const/high16 v1, 0x3f800000    # 1.0f
 
@@ -561,12 +561,12 @@
 
     .line 171
     :cond_0
-    iget-object v0, p0, Lcom/android/settings/voice/VoiceInputPreference;->mSettingsIcon:Landroid/view/View;
+    iget-object v0, p0, Lcom/android/settings_ext/voice/VoiceInputPreference;->mSettingsIcon:Landroid/view/View;
 
     invoke-virtual {v0, v1}, Landroid/view/View;->setEnabled(Z)V
 
     .line 172
-    iget-object v0, p0, Lcom/android/settings/voice/VoiceInputPreference;->mSettingsIcon:Landroid/view/View;
+    iget-object v0, p0, Lcom/android/settings_ext/voice/VoiceInputPreference;->mSettingsIcon:Landroid/view/View;
 
     const v1, 0x3ecccccd    # 0.4f
 
@@ -576,7 +576,7 @@
 
     .line 175
     :cond_1
-    iget-object v0, p0, Lcom/android/settings/voice/VoiceInputPreference;->mSettingsIcon:Landroid/view/View;
+    iget-object v0, p0, Lcom/android/settings_ext/voice/VoiceInputPreference;->mSettingsIcon:Landroid/view/View;
 
     const/16 v1, 0x8
 

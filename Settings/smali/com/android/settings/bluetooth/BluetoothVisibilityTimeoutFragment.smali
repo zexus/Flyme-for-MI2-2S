@@ -1,4 +1,4 @@
-.class public final Lcom/android/settings/bluetooth/BluetoothVisibilityTimeoutFragment;
+.class public final Lcom/android/settings_ext/bluetooth/BluetoothVisibilityTimeoutFragment;
 .super Landroid/app/DialogFragment;
 .source "BluetoothVisibilityTimeoutFragment.java"
 
@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field private final mDiscoverableEnabler:Lcom/android/settings/bluetooth/BluetoothDiscoverableEnabler;
+.field private final mDiscoverableEnabler:Lcom/android/settings_ext/bluetooth/BluetoothDiscoverableEnabler;
 
 
 # direct methods
@@ -19,24 +19,24 @@
     invoke-direct {p0}, Landroid/app/DialogFragment;-><init>()V
 
     .line 52
-    invoke-virtual {p0}, Lcom/android/settings/bluetooth/BluetoothVisibilityTimeoutFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/bluetooth/BluetoothVisibilityTimeoutFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v1
 
-    invoke-static {v1}, Lcom/android/settings/bluetooth/LocalBluetoothManager;->getInstance(Landroid/content/Context;)Lcom/android/settings/bluetooth/LocalBluetoothManager;
+    invoke-static {v1}, Lcom/android/settings_ext/bluetooth/LocalBluetoothManager;->getInstance(Landroid/content/Context;)Lcom/android/settings_ext/bluetooth/LocalBluetoothManager;
 
     move-result-object v0
 
     .line 53
-    .local v0, "manager":Lcom/android/settings/bluetooth/LocalBluetoothManager;
+    .local v0, "manager":Lcom/android/settings_ext/bluetooth/LocalBluetoothManager;
     if-eqz v0, :cond_0
 
     .line 54
-    invoke-virtual {v0}, Lcom/android/settings/bluetooth/LocalBluetoothManager;->getDiscoverableEnabler()Lcom/android/settings/bluetooth/BluetoothDiscoverableEnabler;
+    invoke-virtual {v0}, Lcom/android/settings_ext/bluetooth/LocalBluetoothManager;->getDiscoverableEnabler()Lcom/android/settings_ext/bluetooth/BluetoothDiscoverableEnabler;
 
     move-result-object v1
 
-    iput-object v1, p0, Lcom/android/settings/bluetooth/BluetoothVisibilityTimeoutFragment;->mDiscoverableEnabler:Lcom/android/settings/bluetooth/BluetoothDiscoverableEnabler;
+    iput-object v1, p0, Lcom/android/settings_ext/bluetooth/BluetoothVisibilityTimeoutFragment;->mDiscoverableEnabler:Lcom/android/settings_ext/bluetooth/BluetoothDiscoverableEnabler;
 
     .line 59
     :goto_0
@@ -53,7 +53,7 @@
     .line 57
     const/4 v1, 0x0
 
-    iput-object v1, p0, Lcom/android/settings/bluetooth/BluetoothVisibilityTimeoutFragment;->mDiscoverableEnabler:Lcom/android/settings/bluetooth/BluetoothDiscoverableEnabler;
+    iput-object v1, p0, Lcom/android/settings_ext/bluetooth/BluetoothVisibilityTimeoutFragment;->mDiscoverableEnabler:Lcom/android/settings_ext/bluetooth/BluetoothDiscoverableEnabler;
 
     goto :goto_0
 .end method
@@ -67,12 +67,12 @@
 
     .prologue
     .line 72
-    iget-object v0, p0, Lcom/android/settings/bluetooth/BluetoothVisibilityTimeoutFragment;->mDiscoverableEnabler:Lcom/android/settings/bluetooth/BluetoothDiscoverableEnabler;
+    iget-object v0, p0, Lcom/android/settings_ext/bluetooth/BluetoothVisibilityTimeoutFragment;->mDiscoverableEnabler:Lcom/android/settings_ext/bluetooth/BluetoothDiscoverableEnabler;
 
-    invoke-virtual {v0, p2}, Lcom/android/settings/bluetooth/BluetoothDiscoverableEnabler;->setDiscoverableTimeout(I)V
+    invoke-virtual {v0, p2}, Lcom/android/settings_ext/bluetooth/BluetoothDiscoverableEnabler;->setDiscoverableTimeout(I)V
 
     .line 73
-    invoke-virtual {p0}, Lcom/android/settings/bluetooth/BluetoothVisibilityTimeoutFragment;->dismiss()V
+    invoke-virtual {p0}, Lcom/android/settings_ext/bluetooth/BluetoothVisibilityTimeoutFragment;->dismiss()V
 
     .line 74
     return-void
@@ -86,7 +86,7 @@
     .line 63
     new-instance v0, Landroid/app/AlertDialog$Builder;
 
-    invoke-virtual {p0}, Lcom/android/settings/bluetooth/BluetoothVisibilityTimeoutFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/bluetooth/BluetoothVisibilityTimeoutFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v1
 
@@ -100,9 +100,9 @@
 
     const v1, 0x7f0b0017
 
-    iget-object v2, p0, Lcom/android/settings/bluetooth/BluetoothVisibilityTimeoutFragment;->mDiscoverableEnabler:Lcom/android/settings/bluetooth/BluetoothDiscoverableEnabler;
+    iget-object v2, p0, Lcom/android/settings_ext/bluetooth/BluetoothVisibilityTimeoutFragment;->mDiscoverableEnabler:Lcom/android/settings_ext/bluetooth/BluetoothDiscoverableEnabler;
 
-    invoke-virtual {v2}, Lcom/android/settings/bluetooth/BluetoothDiscoverableEnabler;->getDiscoverableTimeoutIndex()I
+    invoke-virtual {v2}, Lcom/android/settings_ext/bluetooth/BluetoothDiscoverableEnabler;->getDiscoverableTimeoutIndex()I
 
     move-result v2
 

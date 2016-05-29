@@ -1,11 +1,11 @@
-.class final Lcom/android/settings/print/PrintSettingsFragment$PrintJobsLoader;
+.class final Lcom/android/settings_ext/print/PrintSettingsFragment$PrintJobsLoader;
 .super Landroid/content/AsyncTaskLoader;
 .source "PrintSettingsFragment.java"
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/android/settings/print/PrintSettingsFragment;
+    value = Lcom/android/settings_ext/print/PrintSettingsFragment;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -56,7 +56,7 @@
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
-    iput-object v0, p0, Lcom/android/settings/print/PrintSettingsFragment$PrintJobsLoader;->mPrintJobs:Ljava/util/List;
+    iput-object v0, p0, Lcom/android/settings_ext/print/PrintSettingsFragment$PrintJobsLoader;->mPrintJobs:Ljava/util/List;
 
     .line 466
     const-string v0, "print"
@@ -75,19 +75,19 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/print/PrintSettingsFragment$PrintJobsLoader;->mPrintManager:Landroid/print/PrintManager;
+    iput-object v0, p0, Lcom/android/settings_ext/print/PrintSettingsFragment$PrintJobsLoader;->mPrintManager:Landroid/print/PrintManager;
 
     .line 469
     return-void
 .end method
 
-.method static synthetic access$500(Lcom/android/settings/print/PrintSettingsFragment$PrintJobsLoader;)V
+.method static synthetic access$500(Lcom/android/settings_ext/print/PrintSettingsFragment$PrintJobsLoader;)V
     .locals 0
-    .param p0, "x0"    # Lcom/android/settings/print/PrintSettingsFragment$PrintJobsLoader;
+    .param p0, "x0"    # Lcom/android/settings_ext/print/PrintSettingsFragment$PrintJobsLoader;
 
     .prologue
     .line 452
-    invoke-virtual {p0}, Lcom/android/settings/print/PrintSettingsFragment$PrintJobsLoader;->onForceLoad()V
+    invoke-virtual {p0}, Lcom/android/settings_ext/print/PrintSettingsFragment$PrintJobsLoader;->onForceLoad()V
 
     return-void
 .end method
@@ -141,7 +141,7 @@
     check-cast p1, Ljava/util/List;
 
     .end local p1    # "x0":Ljava/lang/Object;
-    invoke-virtual {p0, p1}, Lcom/android/settings/print/PrintSettingsFragment$PrintJobsLoader;->deliverResult(Ljava/util/List;)V
+    invoke-virtual {p0, p1}, Lcom/android/settings_ext/print/PrintSettingsFragment$PrintJobsLoader;->deliverResult(Ljava/util/List;)V
 
     return-void
 .end method
@@ -161,7 +161,7 @@
     .prologue
     .line 473
     .local p1, "printJobs":Ljava/util/List;, "Ljava/util/List<Landroid/print/PrintJobInfo;>;"
-    invoke-virtual {p0}, Lcom/android/settings/print/PrintSettingsFragment$PrintJobsLoader;->isStarted()Z
+    invoke-virtual {p0}, Lcom/android/settings_ext/print/PrintSettingsFragment$PrintJobsLoader;->isStarted()Z
 
     move-result v0
 
@@ -180,7 +180,7 @@
 
     .prologue
     .line 452
-    invoke-virtual {p0}, Lcom/android/settings/print/PrintSettingsFragment$PrintJobsLoader;->loadInBackground()Ljava/util/List;
+    invoke-virtual {p0}, Lcom/android/settings_ext/print/PrintSettingsFragment$PrintJobsLoader;->loadInBackground()Ljava/util/List;
 
     move-result-object v0
 
@@ -205,7 +205,7 @@
 
     .line 533
     .local v3, "printJobInfos":Ljava/util/List;, "Ljava/util/List<Landroid/print/PrintJobInfo;>;"
-    iget-object v5, p0, Lcom/android/settings/print/PrintSettingsFragment$PrintJobsLoader;->mPrintManager:Landroid/print/PrintManager;
+    iget-object v5, p0, Lcom/android/settings_ext/print/PrintSettingsFragment$PrintJobsLoader;->mPrintManager:Landroid/print/PrintManager;
 
     invoke-virtual {v5}, Landroid/print/PrintManager;->getPrintJobs()Ljava/util/List;
 
@@ -238,7 +238,7 @@
 
     .line 537
     .local v1, "printJob":Landroid/print/PrintJobInfo;
-    invoke-static {v1}, Lcom/android/settings/print/PrintSettingsFragment$PrintJobsLoader;->shouldShowToUser(Landroid/print/PrintJobInfo;)Z
+    invoke-static {v1}, Lcom/android/settings_ext/print/PrintSettingsFragment$PrintJobsLoader;->shouldShowToUser(Landroid/print/PrintJobInfo;)Z
 
     move-result v5
 
@@ -275,29 +275,29 @@
 
     .prologue
     .line 519
-    invoke-virtual {p0}, Lcom/android/settings/print/PrintSettingsFragment$PrintJobsLoader;->onStopLoading()V
+    invoke-virtual {p0}, Lcom/android/settings_ext/print/PrintSettingsFragment$PrintJobsLoader;->onStopLoading()V
 
     .line 521
-    iget-object v0, p0, Lcom/android/settings/print/PrintSettingsFragment$PrintJobsLoader;->mPrintJobs:Ljava/util/List;
+    iget-object v0, p0, Lcom/android/settings_ext/print/PrintSettingsFragment$PrintJobsLoader;->mPrintJobs:Ljava/util/List;
 
     invoke-interface {v0}, Ljava/util/List;->clear()V
 
     .line 523
-    iget-object v0, p0, Lcom/android/settings/print/PrintSettingsFragment$PrintJobsLoader;->mPrintJobStateChangeListener:Landroid/print/PrintManager$PrintJobStateChangeListener;
+    iget-object v0, p0, Lcom/android/settings_ext/print/PrintSettingsFragment$PrintJobsLoader;->mPrintJobStateChangeListener:Landroid/print/PrintManager$PrintJobStateChangeListener;
 
     if-eqz v0, :cond_0
 
     .line 524
-    iget-object v0, p0, Lcom/android/settings/print/PrintSettingsFragment$PrintJobsLoader;->mPrintManager:Landroid/print/PrintManager;
+    iget-object v0, p0, Lcom/android/settings_ext/print/PrintSettingsFragment$PrintJobsLoader;->mPrintManager:Landroid/print/PrintManager;
 
-    iget-object v1, p0, Lcom/android/settings/print/PrintSettingsFragment$PrintJobsLoader;->mPrintJobStateChangeListener:Landroid/print/PrintManager$PrintJobStateChangeListener;
+    iget-object v1, p0, Lcom/android/settings_ext/print/PrintSettingsFragment$PrintJobsLoader;->mPrintJobStateChangeListener:Landroid/print/PrintManager$PrintJobStateChangeListener;
 
     invoke-virtual {v0, v1}, Landroid/print/PrintManager;->removePrintJobStateChangeListener(Landroid/print/PrintManager$PrintJobStateChangeListener;)V
 
     .line 526
     const/4 v0, 0x0
 
-    iput-object v0, p0, Lcom/android/settings/print/PrintSettingsFragment$PrintJobsLoader;->mPrintJobStateChangeListener:Landroid/print/PrintManager$PrintJobStateChangeListener;
+    iput-object v0, p0, Lcom/android/settings_ext/print/PrintSettingsFragment$PrintJobsLoader;->mPrintJobStateChangeListener:Landroid/print/PrintManager$PrintJobStateChangeListener;
 
     .line 528
     :cond_0
@@ -309,7 +309,7 @@
 
     .prologue
     .line 484
-    iget-object v0, p0, Lcom/android/settings/print/PrintSettingsFragment$PrintJobsLoader;->mPrintJobs:Ljava/util/List;
+    iget-object v0, p0, Lcom/android/settings_ext/print/PrintSettingsFragment$PrintJobsLoader;->mPrintJobs:Ljava/util/List;
 
     invoke-interface {v0}, Ljava/util/List;->isEmpty()Z
 
@@ -320,35 +320,35 @@
     .line 485
     new-instance v0, Ljava/util/ArrayList;
 
-    iget-object v1, p0, Lcom/android/settings/print/PrintSettingsFragment$PrintJobsLoader;->mPrintJobs:Ljava/util/List;
+    iget-object v1, p0, Lcom/android/settings_ext/print/PrintSettingsFragment$PrintJobsLoader;->mPrintJobs:Ljava/util/List;
 
     invoke-direct {v0, v1}, Ljava/util/ArrayList;-><init>(Ljava/util/Collection;)V
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/print/PrintSettingsFragment$PrintJobsLoader;->deliverResult(Ljava/util/List;)V
+    invoke-virtual {p0, v0}, Lcom/android/settings_ext/print/PrintSettingsFragment$PrintJobsLoader;->deliverResult(Ljava/util/List;)V
 
     .line 488
     :cond_0
-    iget-object v0, p0, Lcom/android/settings/print/PrintSettingsFragment$PrintJobsLoader;->mPrintJobStateChangeListener:Landroid/print/PrintManager$PrintJobStateChangeListener;
+    iget-object v0, p0, Lcom/android/settings_ext/print/PrintSettingsFragment$PrintJobsLoader;->mPrintJobStateChangeListener:Landroid/print/PrintManager$PrintJobStateChangeListener;
 
     if-nez v0, :cond_1
 
     .line 489
-    new-instance v0, Lcom/android/settings/print/PrintSettingsFragment$PrintJobsLoader$1;
+    new-instance v0, Lcom/android/settings_ext/print/PrintSettingsFragment$PrintJobsLoader$1;
 
-    invoke-direct {v0, p0}, Lcom/android/settings/print/PrintSettingsFragment$PrintJobsLoader$1;-><init>(Lcom/android/settings/print/PrintSettingsFragment$PrintJobsLoader;)V
+    invoke-direct {v0, p0}, Lcom/android/settings_ext/print/PrintSettingsFragment$PrintJobsLoader$1;-><init>(Lcom/android/settings_ext/print/PrintSettingsFragment$PrintJobsLoader;)V
 
-    iput-object v0, p0, Lcom/android/settings/print/PrintSettingsFragment$PrintJobsLoader;->mPrintJobStateChangeListener:Landroid/print/PrintManager$PrintJobStateChangeListener;
+    iput-object v0, p0, Lcom/android/settings_ext/print/PrintSettingsFragment$PrintJobsLoader;->mPrintJobStateChangeListener:Landroid/print/PrintManager$PrintJobStateChangeListener;
 
     .line 495
-    iget-object v0, p0, Lcom/android/settings/print/PrintSettingsFragment$PrintJobsLoader;->mPrintManager:Landroid/print/PrintManager;
+    iget-object v0, p0, Lcom/android/settings_ext/print/PrintSettingsFragment$PrintJobsLoader;->mPrintManager:Landroid/print/PrintManager;
 
-    iget-object v1, p0, Lcom/android/settings/print/PrintSettingsFragment$PrintJobsLoader;->mPrintJobStateChangeListener:Landroid/print/PrintManager$PrintJobStateChangeListener;
+    iget-object v1, p0, Lcom/android/settings_ext/print/PrintSettingsFragment$PrintJobsLoader;->mPrintJobStateChangeListener:Landroid/print/PrintManager$PrintJobStateChangeListener;
 
     invoke-virtual {v0, v1}, Landroid/print/PrintManager;->addPrintJobStateChangeListener(Landroid/print/PrintManager$PrintJobStateChangeListener;)V
 
     .line 499
     :cond_1
-    iget-object v0, p0, Lcom/android/settings/print/PrintSettingsFragment$PrintJobsLoader;->mPrintJobs:Ljava/util/List;
+    iget-object v0, p0, Lcom/android/settings_ext/print/PrintSettingsFragment$PrintJobsLoader;->mPrintJobs:Ljava/util/List;
 
     invoke-interface {v0}, Ljava/util/List;->isEmpty()Z
 
@@ -357,7 +357,7 @@
     if-eqz v0, :cond_2
 
     .line 500
-    invoke-virtual {p0}, Lcom/android/settings/print/PrintSettingsFragment$PrintJobsLoader;->onForceLoad()V
+    invoke-virtual {p0}, Lcom/android/settings_ext/print/PrintSettingsFragment$PrintJobsLoader;->onForceLoad()V
 
     .line 502
     :cond_2
@@ -369,7 +369,7 @@
 
     .prologue
     .line 510
-    invoke-virtual {p0}, Lcom/android/settings/print/PrintSettingsFragment$PrintJobsLoader;->onCancelLoad()Z
+    invoke-virtual {p0}, Lcom/android/settings_ext/print/PrintSettingsFragment$PrintJobsLoader;->onCancelLoad()Z
 
     .line 511
     return-void

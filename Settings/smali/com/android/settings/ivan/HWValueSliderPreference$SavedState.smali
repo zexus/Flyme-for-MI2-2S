@@ -1,11 +1,11 @@
-.class Lcom/android/settings/ivan/HWValueSliderPreference$SavedState;
+.class Lcom/android/settings_ext/ivan/HWValueSliderPreference$SavedState;
 .super Landroid/preference/Preference$BaseSavedState;
 .source "HWValueSliderPreference.java"
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/android/settings/ivan/HWValueSliderPreference;
+    value = Lcom/android/settings_ext/ivan/HWValueSliderPreference;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -20,7 +20,7 @@
         value = {
             "Landroid/os/Parcelable$Creator",
             "<",
-            "Lcom/android/settings/ivan/HWValueSliderPreference$SavedState;",
+            "Lcom/android/settings_ext/ivan/HWValueSliderPreference$SavedState;",
             ">;"
         }
     .end annotation
@@ -39,11 +39,11 @@
 
     .prologue
     .line 255
-    new-instance v0, Lcom/android/settings/ivan/HWValueSliderPreference$SavedState$1;
+    new-instance v0, Lcom/android/settings_ext/ivan/HWValueSliderPreference$SavedState$1;
 
-    invoke-direct {v0}, Lcom/android/settings/ivan/HWValueSliderPreference$SavedState$1;-><init>()V
+    invoke-direct {v0}, Lcom/android/settings_ext/ivan/HWValueSliderPreference$SavedState$1;-><init>()V
 
-    sput-object v0, Lcom/android/settings/ivan/HWValueSliderPreference$SavedState;->CREATOR:Landroid/os/Parcelable$Creator;
+    sput-object v0, Lcom/android/settings_ext/ivan/HWValueSliderPreference$SavedState;->CREATOR:Landroid/os/Parcelable$Creator;
 
     return-void
 .end method
@@ -61,14 +61,14 @@
 
     move-result v0
 
-    iput v0, p0, Lcom/android/settings/ivan/HWValueSliderPreference$SavedState;->value:I
+    iput v0, p0, Lcom/android/settings_ext/ivan/HWValueSliderPreference$SavedState;->value:I
 
     .line 245
     invoke-virtual {p1}, Landroid/os/Parcel;->readInt()I
 
     move-result v0
 
-    iput v0, p0, Lcom/android/settings/ivan/HWValueSliderPreference$SavedState;->originalValue:I
+    iput v0, p0, Lcom/android/settings_ext/ivan/HWValueSliderPreference$SavedState;->originalValue:I
 
     .line 246
     return-void
@@ -98,12 +98,12 @@
     invoke-super {p0, p1, p2}, Landroid/preference/Preference$BaseSavedState;->writeToParcel(Landroid/os/Parcel;I)V
 
     .line 251
-    iget v0, p0, Lcom/android/settings/ivan/HWValueSliderPreference$SavedState;->value:I
+    iget v0, p0, Lcom/android/settings_ext/ivan/HWValueSliderPreference$SavedState;->value:I
 
     invoke-virtual {p1, v0}, Landroid/os/Parcel;->writeInt(I)V
 
     .line 252
-    iget v0, p0, Lcom/android/settings/ivan/HWValueSliderPreference$SavedState;->originalValue:I
+    iget v0, p0, Lcom/android/settings_ext/ivan/HWValueSliderPreference$SavedState;->originalValue:I
 
     invoke-virtual {p1, v0}, Landroid/os/Parcel;->writeInt(I)V
 

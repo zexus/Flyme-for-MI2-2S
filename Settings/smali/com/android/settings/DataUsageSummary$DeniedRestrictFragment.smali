@@ -1,11 +1,11 @@
-.class public Lcom/android/settings/DataUsageSummary$DeniedRestrictFragment;
+.class public Lcom/android/settings_ext/DataUsageSummary$DeniedRestrictFragment;
 .super Landroid/app/DialogFragment;
 .source "DataUsageSummary.java"
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/android/settings/DataUsageSummary;
+    value = Lcom/android/settings_ext/DataUsageSummary;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -33,7 +33,7 @@
 
     .prologue
     .line 2169
-    invoke-virtual {p0}, Lcom/android/settings/DataUsageSummary$DeniedRestrictFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/DataUsageSummary$DeniedRestrictFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v1
 

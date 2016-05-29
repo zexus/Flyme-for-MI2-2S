@@ -1,11 +1,11 @@
-.class Lcom/android/settings/net/DataUsageMeteredSettings$MeteredPreference;
+.class Lcom/android/settings_ext/net/DataUsageMeteredSettings$MeteredPreference;
 .super Landroid/preference/SwitchPreference;
 .source "DataUsageMeteredSettings.java"
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/android/settings/net/DataUsageMeteredSettings;
+    value = Lcom/android/settings_ext/net/DataUsageMeteredSettings;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -19,11 +19,11 @@
 
 .field private final mTemplate:Landroid/net/NetworkTemplate;
 
-.field final synthetic this$0:Lcom/android/settings/net/DataUsageMeteredSettings;
+.field final synthetic this$0:Lcom/android/settings_ext/net/DataUsageMeteredSettings;
 
 
 # direct methods
-.method public constructor <init>(Lcom/android/settings/net/DataUsageMeteredSettings;Landroid/content/Context;Landroid/net/NetworkTemplate;)V
+.method public constructor <init>(Lcom/android/settings_ext/net/DataUsageMeteredSettings;Landroid/content/Context;Landroid/net/NetworkTemplate;)V
     .locals 8
     .param p2, "context"    # Landroid/content/Context;
     .param p3, "template"    # Landroid/net/NetworkTemplate;
@@ -34,27 +34,27 @@
     const/4 v6, 0x0
 
     .line 122
-    iput-object p1, p0, Lcom/android/settings/net/DataUsageMeteredSettings$MeteredPreference;->this$0:Lcom/android/settings/net/DataUsageMeteredSettings;
+    iput-object p1, p0, Lcom/android/settings_ext/net/DataUsageMeteredSettings$MeteredPreference;->this$0:Lcom/android/settings_ext/net/DataUsageMeteredSettings;
 
     .line 123
     invoke-direct {p0, p2}, Landroid/preference/SwitchPreference;-><init>(Landroid/content/Context;)V
 
     .line 124
-    iput-object p3, p0, Lcom/android/settings/net/DataUsageMeteredSettings$MeteredPreference;->mTemplate:Landroid/net/NetworkTemplate;
+    iput-object p3, p0, Lcom/android/settings_ext/net/DataUsageMeteredSettings$MeteredPreference;->mTemplate:Landroid/net/NetworkTemplate;
 
     .line 126
-    invoke-virtual {p0, v6}, Lcom/android/settings/net/DataUsageMeteredSettings$MeteredPreference;->setPersistent(Z)V
+    invoke-virtual {p0, v6}, Lcom/android/settings_ext/net/DataUsageMeteredSettings$MeteredPreference;->setPersistent(Z)V
 
     .line 128
-    iput-boolean v7, p0, Lcom/android/settings/net/DataUsageMeteredSettings$MeteredPreference;->mBinding:Z
+    iput-boolean v7, p0, Lcom/android/settings_ext/net/DataUsageMeteredSettings$MeteredPreference;->mBinding:Z
 
     .line 129
-    # getter for: Lcom/android/settings/net/DataUsageMeteredSettings;->mPolicyEditor:Lcom/android/settings/net/NetworkPolicyEditor;
-    invoke-static {p1}, Lcom/android/settings/net/DataUsageMeteredSettings;->access$000(Lcom/android/settings/net/DataUsageMeteredSettings;)Lcom/android/settings/net/NetworkPolicyEditor;
+    # getter for: Lcom/android/settings_ext/net/DataUsageMeteredSettings;->mPolicyEditor:Lcom/android/settings_ext/net/NetworkPolicyEditor;
+    invoke-static {p1}, Lcom/android/settings_ext/net/DataUsageMeteredSettings;->access$000(Lcom/android/settings_ext/net/DataUsageMeteredSettings;)Lcom/android/settings_ext/net/NetworkPolicyEditor;
 
     move-result-object v1
 
-    invoke-virtual {v1, p3}, Lcom/android/settings/net/NetworkPolicyEditor;->getPolicyMaybeUnquoted(Landroid/net/NetworkTemplate;)Landroid/net/NetworkPolicy;
+    invoke-virtual {v1, p3}, Lcom/android/settings_ext/net/NetworkPolicyEditor;->getPolicyMaybeUnquoted(Landroid/net/NetworkTemplate;)Landroid/net/NetworkPolicy;
 
     move-result-object v0
 
@@ -72,14 +72,14 @@
     if-eqz v1, :cond_0
 
     .line 132
-    invoke-virtual {p0, v7}, Lcom/android/settings/net/DataUsageMeteredSettings$MeteredPreference;->setChecked(Z)V
+    invoke-virtual {p0, v7}, Lcom/android/settings_ext/net/DataUsageMeteredSettings$MeteredPreference;->setChecked(Z)V
 
     .line 133
-    invoke-virtual {p0, v6}, Lcom/android/settings/net/DataUsageMeteredSettings$MeteredPreference;->setEnabled(Z)V
+    invoke-virtual {p0, v6}, Lcom/android/settings_ext/net/DataUsageMeteredSettings$MeteredPreference;->setEnabled(Z)V
 
     .line 140
     :goto_0
-    iput-boolean v6, p0, Lcom/android/settings/net/DataUsageMeteredSettings$MeteredPreference;->mBinding:Z
+    iput-boolean v6, p0, Lcom/android/settings_ext/net/DataUsageMeteredSettings$MeteredPreference;->mBinding:Z
 
     .line 141
     return-void
@@ -88,13 +88,13 @@
     :cond_0
     iget-boolean v1, v0, Landroid/net/NetworkPolicy;->metered:Z
 
-    invoke-virtual {p0, v1}, Lcom/android/settings/net/DataUsageMeteredSettings$MeteredPreference;->setChecked(Z)V
+    invoke-virtual {p0, v1}, Lcom/android/settings_ext/net/DataUsageMeteredSettings$MeteredPreference;->setChecked(Z)V
 
     goto :goto_0
 
     .line 138
     :cond_1
-    invoke-virtual {p0, v6}, Lcom/android/settings/net/DataUsageMeteredSettings$MeteredPreference;->setChecked(Z)V
+    invoke-virtual {p0, v6}, Lcom/android/settings_ext/net/DataUsageMeteredSettings$MeteredPreference;->setChecked(Z)V
 
     goto :goto_0
 .end method
@@ -109,25 +109,25 @@
     invoke-super {p0}, Landroid/preference/SwitchPreference;->notifyChanged()V
 
     .line 146
-    iget-boolean v0, p0, Lcom/android/settings/net/DataUsageMeteredSettings$MeteredPreference;->mBinding:Z
+    iget-boolean v0, p0, Lcom/android/settings_ext/net/DataUsageMeteredSettings$MeteredPreference;->mBinding:Z
 
     if-nez v0, :cond_0
 
     .line 147
-    iget-object v0, p0, Lcom/android/settings/net/DataUsageMeteredSettings$MeteredPreference;->this$0:Lcom/android/settings/net/DataUsageMeteredSettings;
+    iget-object v0, p0, Lcom/android/settings_ext/net/DataUsageMeteredSettings$MeteredPreference;->this$0:Lcom/android/settings_ext/net/DataUsageMeteredSettings;
 
-    # getter for: Lcom/android/settings/net/DataUsageMeteredSettings;->mPolicyEditor:Lcom/android/settings/net/NetworkPolicyEditor;
-    invoke-static {v0}, Lcom/android/settings/net/DataUsageMeteredSettings;->access$000(Lcom/android/settings/net/DataUsageMeteredSettings;)Lcom/android/settings/net/NetworkPolicyEditor;
+    # getter for: Lcom/android/settings_ext/net/DataUsageMeteredSettings;->mPolicyEditor:Lcom/android/settings_ext/net/NetworkPolicyEditor;
+    invoke-static {v0}, Lcom/android/settings_ext/net/DataUsageMeteredSettings;->access$000(Lcom/android/settings_ext/net/DataUsageMeteredSettings;)Lcom/android/settings_ext/net/NetworkPolicyEditor;
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/android/settings/net/DataUsageMeteredSettings$MeteredPreference;->mTemplate:Landroid/net/NetworkTemplate;
+    iget-object v1, p0, Lcom/android/settings_ext/net/DataUsageMeteredSettings$MeteredPreference;->mTemplate:Landroid/net/NetworkTemplate;
 
-    invoke-virtual {p0}, Lcom/android/settings/net/DataUsageMeteredSettings$MeteredPreference;->isChecked()Z
+    invoke-virtual {p0}, Lcom/android/settings_ext/net/DataUsageMeteredSettings$MeteredPreference;->isChecked()Z
 
     move-result v2
 
-    invoke-virtual {v0, v1, v2}, Lcom/android/settings/net/NetworkPolicyEditor;->setPolicyMetered(Landroid/net/NetworkTemplate;Z)V
+    invoke-virtual {v0, v1, v2}, Lcom/android/settings_ext/net/NetworkPolicyEditor;->setPolicyMetered(Landroid/net/NetworkTemplate;Z)V
 
     .line 149
     :cond_0

@@ -1,4 +1,4 @@
-.class Lcom/android/settings/ChooseLockPattern$ChooseLockPatternFragment$2;
+.class Lcom/android/settings_ext/ChooseLockPattern$ChooseLockPatternFragment$2;
 .super Ljava/lang/Object;
 .source "ChooseLockPattern.java"
 
@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/android/settings/ChooseLockPattern$ChooseLockPatternFragment;
+    value = Lcom/android/settings_ext/ChooseLockPattern$ChooseLockPatternFragment;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -18,16 +18,16 @@
 
 
 # instance fields
-.field final synthetic this$0:Lcom/android/settings/ChooseLockPattern$ChooseLockPatternFragment;
+.field final synthetic this$0:Lcom/android/settings_ext/ChooseLockPattern$ChooseLockPatternFragment;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/ChooseLockPattern$ChooseLockPatternFragment;)V
+.method constructor <init>(Lcom/android/settings_ext/ChooseLockPattern$ChooseLockPatternFragment;)V
     .locals 0
 
     .prologue
     .line 319
-    iput-object p1, p0, Lcom/android/settings/ChooseLockPattern$ChooseLockPatternFragment$2;->this$0:Lcom/android/settings/ChooseLockPattern$ChooseLockPatternFragment;
+    iput-object p1, p0, Lcom/android/settings_ext/ChooseLockPattern$ChooseLockPatternFragment$2;->this$0:Lcom/android/settings_ext/ChooseLockPattern$ChooseLockPatternFragment;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -41,9 +41,9 @@
 
     .prologue
     .line 321
-    iget-object v0, p0, Lcom/android/settings/ChooseLockPattern$ChooseLockPatternFragment$2;->this$0:Lcom/android/settings/ChooseLockPattern$ChooseLockPatternFragment;
+    iget-object v0, p0, Lcom/android/settings_ext/ChooseLockPattern$ChooseLockPatternFragment$2;->this$0:Lcom/android/settings_ext/ChooseLockPattern$ChooseLockPatternFragment;
 
-    iget-object v0, v0, Lcom/android/settings/ChooseLockPattern$ChooseLockPatternFragment;->mLockPatternView:Lcom/android/internal/widget/LockPatternView;
+    iget-object v0, v0, Lcom/android/settings_ext/ChooseLockPattern$ChooseLockPatternFragment;->mLockPatternView:Lcom/android/internal/widget/LockPatternView;
 
     invoke-virtual {v0}, Lcom/android/internal/widget/LockPatternView;->clearPattern()V
 

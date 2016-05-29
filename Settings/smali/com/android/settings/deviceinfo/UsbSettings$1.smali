@@ -1,11 +1,11 @@
-.class Lcom/android/settings/deviceinfo/UsbSettings$1;
+.class Lcom/android/settings_ext/deviceinfo/UsbSettings$1;
 .super Landroid/content/BroadcastReceiver;
 .source "UsbSettings.java"
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/android/settings/deviceinfo/UsbSettings;
+    value = Lcom/android/settings_ext/deviceinfo/UsbSettings;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -15,16 +15,16 @@
 
 
 # instance fields
-.field final synthetic this$0:Lcom/android/settings/deviceinfo/UsbSettings;
+.field final synthetic this$0:Lcom/android/settings_ext/deviceinfo/UsbSettings;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/deviceinfo/UsbSettings;)V
+.method constructor <init>(Lcom/android/settings_ext/deviceinfo/UsbSettings;)V
     .locals 0
 
     .prologue
     .line 71
-    iput-object p1, p0, Lcom/android/settings/deviceinfo/UsbSettings$1;->this$0:Lcom/android/settings/deviceinfo/UsbSettings;
+    iput-object p1, p0, Lcom/android/settings_ext/deviceinfo/UsbSettings$1;->this$0:Lcom/android/settings_ext/deviceinfo/UsbSettings;
 
     invoke-direct {p0}, Landroid/content/BroadcastReceiver;-><init>()V
 
@@ -57,7 +57,7 @@
     if-eqz v2, :cond_0
 
     .line 75
-    iget-object v2, p0, Lcom/android/settings/deviceinfo/UsbSettings$1;->this$0:Lcom/android/settings/deviceinfo/UsbSettings;
+    iget-object v2, p0, Lcom/android/settings_ext/deviceinfo/UsbSettings$1;->this$0:Lcom/android/settings_ext/deviceinfo/UsbSettings;
 
     const-string v3, "accessory"
 
@@ -65,8 +65,8 @@
 
     move-result v3
 
-    # setter for: Lcom/android/settings/deviceinfo/UsbSettings;->mUsbAccessoryMode:Z
-    invoke-static {v2, v3}, Lcom/android/settings/deviceinfo/UsbSettings;->access$002(Lcom/android/settings/deviceinfo/UsbSettings;Z)Z
+    # setter for: Lcom/android/settings_ext/deviceinfo/UsbSettings;->mUsbAccessoryMode:Z
+    invoke-static {v2, v3}, Lcom/android/settings_ext/deviceinfo/UsbSettings;->access$002(Lcom/android/settings_ext/deviceinfo/UsbSettings;Z)Z
 
     .line 76
     const-string v2, "UsbSettings"
@@ -81,10 +81,10 @@
 
     move-result-object v3
 
-    iget-object v4, p0, Lcom/android/settings/deviceinfo/UsbSettings$1;->this$0:Lcom/android/settings/deviceinfo/UsbSettings;
+    iget-object v4, p0, Lcom/android/settings_ext/deviceinfo/UsbSettings$1;->this$0:Lcom/android/settings_ext/deviceinfo/UsbSettings;
 
-    # getter for: Lcom/android/settings/deviceinfo/UsbSettings;->mUsbAccessoryMode:Z
-    invoke-static {v4}, Lcom/android/settings/deviceinfo/UsbSettings;->access$000(Lcom/android/settings/deviceinfo/UsbSettings;)Z
+    # getter for: Lcom/android/settings_ext/deviceinfo/UsbSettings;->mUsbAccessoryMode:Z
+    invoke-static {v4}, Lcom/android/settings_ext/deviceinfo/UsbSettings;->access$000(Lcom/android/settings_ext/deviceinfo/UsbSettings;)Z
 
     move-result v4
 
@@ -114,9 +114,9 @@
     if-nez v1, :cond_1
 
     .line 79
-    iget-object v2, p0, Lcom/android/settings/deviceinfo/UsbSettings$1;->this$0:Lcom/android/settings/deviceinfo/UsbSettings;
+    iget-object v2, p0, Lcom/android/settings_ext/deviceinfo/UsbSettings$1;->this$0:Lcom/android/settings_ext/deviceinfo/UsbSettings;
 
-    invoke-virtual {v2}, Lcom/android/settings/deviceinfo/UsbSettings;->finish()V
+    invoke-virtual {v2}, Lcom/android/settings_ext/deviceinfo/UsbSettings;->finish()V
 
     .line 87
     .end local v1    # "connected":Z
@@ -127,16 +127,16 @@
     .line 83
     .restart local v1    # "connected":Z
     :cond_1
-    iget-object v2, p0, Lcom/android/settings/deviceinfo/UsbSettings$1;->this$0:Lcom/android/settings/deviceinfo/UsbSettings;
+    iget-object v2, p0, Lcom/android/settings_ext/deviceinfo/UsbSettings$1;->this$0:Lcom/android/settings_ext/deviceinfo/UsbSettings;
 
-    # setter for: Lcom/android/settings/deviceinfo/UsbSettings;->operateInprogress:Z
-    invoke-static {v2, v5}, Lcom/android/settings/deviceinfo/UsbSettings;->access$102(Lcom/android/settings/deviceinfo/UsbSettings;Z)Z
+    # setter for: Lcom/android/settings_ext/deviceinfo/UsbSettings;->operateInprogress:Z
+    invoke-static {v2, v5}, Lcom/android/settings_ext/deviceinfo/UsbSettings;->access$102(Lcom/android/settings_ext/deviceinfo/UsbSettings;Z)Z
 
     .line 84
-    iget-object v2, p0, Lcom/android/settings/deviceinfo/UsbSettings$1;->this$0:Lcom/android/settings/deviceinfo/UsbSettings;
+    iget-object v2, p0, Lcom/android/settings_ext/deviceinfo/UsbSettings$1;->this$0:Lcom/android/settings_ext/deviceinfo/UsbSettings;
 
-    # invokes: Lcom/android/settings/deviceinfo/UsbSettings;->updateUsbFunctionState()V
-    invoke-static {v2}, Lcom/android/settings/deviceinfo/UsbSettings;->access$200(Lcom/android/settings/deviceinfo/UsbSettings;)V
+    # invokes: Lcom/android/settings_ext/deviceinfo/UsbSettings;->updateUsbFunctionState()V
+    invoke-static {v2}, Lcom/android/settings_ext/deviceinfo/UsbSettings;->access$200(Lcom/android/settings_ext/deviceinfo/UsbSettings;)V
 
     goto :goto_0
 .end method

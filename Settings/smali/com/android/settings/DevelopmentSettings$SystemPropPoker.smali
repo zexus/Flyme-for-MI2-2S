@@ -1,11 +1,11 @@
-.class Lcom/android/settings/DevelopmentSettings$SystemPropPoker;
+.class Lcom/android/settings_ext/DevelopmentSettings$SystemPropPoker;
 .super Landroid/os/AsyncTask;
 .source "DevelopmentSettings.java"
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/android/settings/DevelopmentSettings;
+    value = Lcom/android/settings_ext/DevelopmentSettings;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -47,7 +47,7 @@
     check-cast p1, [Ljava/lang/Void;
 
     .end local p1    # "x0":[Ljava/lang/Object;
-    invoke-virtual {p0, p1}, Lcom/android/settings/DevelopmentSettings$SystemPropPoker;->doInBackground([Ljava/lang/Void;)Ljava/lang/Void;
+    invoke-virtual {p0, p1}, Lcom/android/settings_ext/DevelopmentSettings$SystemPropPoker;->doInBackground([Ljava/lang/Void;)Ljava/lang/Void;
 
     move-result-object v0
 

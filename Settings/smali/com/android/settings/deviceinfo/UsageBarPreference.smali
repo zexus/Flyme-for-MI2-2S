@@ -1,17 +1,17 @@
-.class public Lcom/android/settings/deviceinfo/UsageBarPreference;
+.class public Lcom/android/settings_ext/deviceinfo/UsageBarPreference;
 .super Landroid/preference/Preference;
 .source "UsageBarPreference.java"
 
 
 # instance fields
-.field private mChart:Lcom/android/settings/deviceinfo/PercentageBarChart;
+.field private mChart:Lcom/android/settings_ext/deviceinfo/PercentageBarChart;
 
 .field private final mEntries:Ljava/util/List;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/List",
             "<",
-            "Lcom/android/settings/deviceinfo/PercentageBarChart$Entry;",
+            "Lcom/android/settings_ext/deviceinfo/PercentageBarChart$Entry;",
             ">;"
         }
     .end annotation
@@ -27,7 +27,7 @@
     .line 39
     const/4 v0, 0x0
 
-    invoke-direct {p0, p1, v0}, Lcom/android/settings/deviceinfo/UsageBarPreference;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
+    invoke-direct {p0, p1, v0}, Lcom/android/settings_ext/deviceinfo/UsageBarPreference;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
     .line 40
     return-void
@@ -42,7 +42,7 @@
     .line 43
     const/4 v0, 0x0
 
-    invoke-direct {p0, p1, p2, v0}, Lcom/android/settings/deviceinfo/UsageBarPreference;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
+    invoke-direct {p0, p1, p2, v0}, Lcom/android/settings_ext/deviceinfo/UsageBarPreference;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
 
     .line 44
     return-void
@@ -58,7 +58,7 @@
     .line 47
     const/4 v0, 0x0
 
-    invoke-direct {p0, p1, p2, p3, v0}, Lcom/android/settings/deviceinfo/UsageBarPreference;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;II)V
+    invoke-direct {p0, p1, p2, p3, v0}, Lcom/android/settings_ext/deviceinfo/UsageBarPreference;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;II)V
 
     .line 48
     return-void
@@ -78,19 +78,19 @@
     .line 34
     const/4 v0, 0x0
 
-    iput-object v0, p0, Lcom/android/settings/deviceinfo/UsageBarPreference;->mChart:Lcom/android/settings/deviceinfo/PercentageBarChart;
+    iput-object v0, p0, Lcom/android/settings_ext/deviceinfo/UsageBarPreference;->mChart:Lcom/android/settings_ext/deviceinfo/PercentageBarChart;
 
     .line 36
     invoke-static {}, Lcom/google/android/collect/Lists;->newArrayList()Ljava/util/ArrayList;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/deviceinfo/UsageBarPreference;->mEntries:Ljava/util/List;
+    iput-object v0, p0, Lcom/android/settings_ext/deviceinfo/UsageBarPreference;->mEntries:Ljava/util/List;
 
     .line 53
     const v0, 0x7f040084
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/deviceinfo/UsageBarPreference;->setLayoutResource(I)V
+    invoke-virtual {p0, v0}, Lcom/android/settings_ext/deviceinfo/UsageBarPreference;->setLayoutResource(I)V
 
     .line 54
     return-void
@@ -106,16 +106,16 @@
 
     .prologue
     .line 57
-    iget-object v0, p0, Lcom/android/settings/deviceinfo/UsageBarPreference;->mEntries:Ljava/util/List;
+    iget-object v0, p0, Lcom/android/settings_ext/deviceinfo/UsageBarPreference;->mEntries:Ljava/util/List;
 
-    invoke-static {p1, p2, p3}, Lcom/android/settings/deviceinfo/PercentageBarChart;->createEntry(IFI)Lcom/android/settings/deviceinfo/PercentageBarChart$Entry;
+    invoke-static {p1, p2, p3}, Lcom/android/settings_ext/deviceinfo/PercentageBarChart;->createEntry(IFI)Lcom/android/settings_ext/deviceinfo/PercentageBarChart$Entry;
 
     move-result-object v1
 
     invoke-interface {v0, v1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
     .line 58
-    iget-object v0, p0, Lcom/android/settings/deviceinfo/UsageBarPreference;->mEntries:Ljava/util/List;
+    iget-object v0, p0, Lcom/android/settings_ext/deviceinfo/UsageBarPreference;->mEntries:Ljava/util/List;
 
     invoke-static {v0}, Ljava/util/Collections;->sort(Ljava/util/List;)V
 
@@ -128,7 +128,7 @@
 
     .prologue
     .line 76
-    iget-object v0, p0, Lcom/android/settings/deviceinfo/UsageBarPreference;->mEntries:Ljava/util/List;
+    iget-object v0, p0, Lcom/android/settings_ext/deviceinfo/UsageBarPreference;->mEntries:Ljava/util/List;
 
     invoke-interface {v0}, Ljava/util/List;->clear()V
 
@@ -141,14 +141,14 @@
 
     .prologue
     .line 70
-    iget-object v0, p0, Lcom/android/settings/deviceinfo/UsageBarPreference;->mChart:Lcom/android/settings/deviceinfo/PercentageBarChart;
+    iget-object v0, p0, Lcom/android/settings_ext/deviceinfo/UsageBarPreference;->mChart:Lcom/android/settings_ext/deviceinfo/PercentageBarChart;
 
     if-eqz v0, :cond_0
 
     .line 71
-    iget-object v0, p0, Lcom/android/settings/deviceinfo/UsageBarPreference;->mChart:Lcom/android/settings/deviceinfo/PercentageBarChart;
+    iget-object v0, p0, Lcom/android/settings_ext/deviceinfo/UsageBarPreference;->mChart:Lcom/android/settings_ext/deviceinfo/PercentageBarChart;
 
-    invoke-virtual {v0}, Lcom/android/settings/deviceinfo/PercentageBarChart;->invalidate()V
+    invoke-virtual {v0}, Lcom/android/settings_ext/deviceinfo/PercentageBarChart;->invalidate()V
 
     .line 73
     :cond_0
@@ -170,16 +170,16 @@
 
     move-result-object v0
 
-    check-cast v0, Lcom/android/settings/deviceinfo/PercentageBarChart;
+    check-cast v0, Lcom/android/settings_ext/deviceinfo/PercentageBarChart;
 
-    iput-object v0, p0, Lcom/android/settings/deviceinfo/UsageBarPreference;->mChart:Lcom/android/settings/deviceinfo/PercentageBarChart;
+    iput-object v0, p0, Lcom/android/settings_ext/deviceinfo/UsageBarPreference;->mChart:Lcom/android/settings_ext/deviceinfo/PercentageBarChart;
 
     .line 66
-    iget-object v0, p0, Lcom/android/settings/deviceinfo/UsageBarPreference;->mChart:Lcom/android/settings/deviceinfo/PercentageBarChart;
+    iget-object v0, p0, Lcom/android/settings_ext/deviceinfo/UsageBarPreference;->mChart:Lcom/android/settings_ext/deviceinfo/PercentageBarChart;
 
-    iget-object v1, p0, Lcom/android/settings/deviceinfo/UsageBarPreference;->mEntries:Ljava/util/List;
+    iget-object v1, p0, Lcom/android/settings_ext/deviceinfo/UsageBarPreference;->mEntries:Ljava/util/List;
 
-    invoke-virtual {v0, v1}, Lcom/android/settings/deviceinfo/PercentageBarChart;->setEntries(Ljava/util/Collection;)V
+    invoke-virtual {v0, v1}, Lcom/android/settings_ext/deviceinfo/PercentageBarChart;->setEntries(Ljava/util/Collection;)V
 
     .line 67
     return-void

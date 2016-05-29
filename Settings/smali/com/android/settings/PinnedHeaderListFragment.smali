@@ -1,4 +1,4 @@
-.class public Lcom/android/settings/PinnedHeaderListFragment;
+.class public Lcom/android/settings_ext/PinnedHeaderListFragment;
 .super Landroid/app/ListFragment;
 .source "PinnedHeaderListFragment.java"
 
@@ -23,7 +23,7 @@
 
     .prologue
     .line 38
-    invoke-virtual {p0}, Lcom/android/settings/PinnedHeaderListFragment;->getListView()Landroid/widget/ListView;
+    invoke-virtual {p0}, Lcom/android/settings_ext/PinnedHeaderListFragment;->getListView()Landroid/widget/ListView;
 
     move-result-object v0
 

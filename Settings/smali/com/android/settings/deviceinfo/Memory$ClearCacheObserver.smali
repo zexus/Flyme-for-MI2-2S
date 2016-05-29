@@ -1,11 +1,11 @@
-.class Lcom/android/settings/deviceinfo/Memory$ClearCacheObserver;
+.class Lcom/android/settings_ext/deviceinfo/Memory$ClearCacheObserver;
 .super Landroid/content/pm/IPackageDataObserver$Stub;
 .source "Memory.java"
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/android/settings/deviceinfo/Memory;
+    value = Lcom/android/settings_ext/deviceinfo/Memory;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -17,13 +17,13 @@
 # instance fields
 .field private mRemaining:I
 
-.field private final mTarget:Lcom/android/settings/deviceinfo/Memory;
+.field private final mTarget:Lcom/android/settings_ext/deviceinfo/Memory;
 
 
 # direct methods
-.method public constructor <init>(Lcom/android/settings/deviceinfo/Memory;I)V
+.method public constructor <init>(Lcom/android/settings_ext/deviceinfo/Memory;I)V
     .locals 0
-    .param p1, "target"    # Lcom/android/settings/deviceinfo/Memory;
+    .param p1, "target"    # Lcom/android/settings_ext/deviceinfo/Memory;
     .param p2, "remaining"    # I
 
     .prologue
@@ -31,10 +31,10 @@
     invoke-direct {p0}, Landroid/content/pm/IPackageDataObserver$Stub;-><init>()V
 
     .line 436
-    iput-object p1, p0, Lcom/android/settings/deviceinfo/Memory$ClearCacheObserver;->mTarget:Lcom/android/settings/deviceinfo/Memory;
+    iput-object p1, p0, Lcom/android/settings_ext/deviceinfo/Memory$ClearCacheObserver;->mTarget:Lcom/android/settings_ext/deviceinfo/Memory;
 
     .line 437
-    iput p2, p0, Lcom/android/settings/deviceinfo/Memory$ClearCacheObserver;->mRemaining:I
+    iput p2, p0, Lcom/android/settings_ext/deviceinfo/Memory$ClearCacheObserver;->mRemaining:I
 
     .line 438
     return-void
@@ -53,19 +53,19 @@
 
     .line 443
     :try_start_0
-    iget v0, p0, Lcom/android/settings/deviceinfo/Memory$ClearCacheObserver;->mRemaining:I
+    iget v0, p0, Lcom/android/settings_ext/deviceinfo/Memory$ClearCacheObserver;->mRemaining:I
 
     add-int/lit8 v0, v0, -0x1
 
-    iput v0, p0, Lcom/android/settings/deviceinfo/Memory$ClearCacheObserver;->mRemaining:I
+    iput v0, p0, Lcom/android/settings_ext/deviceinfo/Memory$ClearCacheObserver;->mRemaining:I
 
     if-nez v0, :cond_0
 
     .line 444
-    iget-object v0, p0, Lcom/android/settings/deviceinfo/Memory$ClearCacheObserver;->mTarget:Lcom/android/settings/deviceinfo/Memory;
+    iget-object v0, p0, Lcom/android/settings_ext/deviceinfo/Memory$ClearCacheObserver;->mTarget:Lcom/android/settings_ext/deviceinfo/Memory;
 
-    # invokes: Lcom/android/settings/deviceinfo/Memory;->onCacheCleared()V
-    invoke-static {v0}, Lcom/android/settings/deviceinfo/Memory;->access$300(Lcom/android/settings/deviceinfo/Memory;)V
+    # invokes: Lcom/android/settings_ext/deviceinfo/Memory;->onCacheCleared()V
+    invoke-static {v0}, Lcom/android/settings_ext/deviceinfo/Memory;->access$300(Lcom/android/settings_ext/deviceinfo/Memory;)V
 
     .line 446
     :cond_0

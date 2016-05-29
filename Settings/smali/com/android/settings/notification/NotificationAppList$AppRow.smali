@@ -1,11 +1,11 @@
-.class public Lcom/android/settings/notification/NotificationAppList$AppRow;
-.super Lcom/android/settings/notification/NotificationAppList$Row;
+.class public Lcom/android/settings_ext/notification/NotificationAppList$AppRow;
+.super Lcom/android/settings_ext/notification/NotificationAppList$Row;
 .source "NotificationAppList.java"
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/android/settings/notification/NotificationAppList;
+    value = Lcom/android/settings_ext/notification/NotificationAppList;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -42,7 +42,7 @@
     .line 355
     const/4 v0, 0x0
 
-    invoke-direct {p0, v0}, Lcom/android/settings/notification/NotificationAppList$Row;-><init>(Lcom/android/settings/notification/NotificationAppList$1;)V
+    invoke-direct {p0, v0}, Lcom/android/settings_ext/notification/NotificationAppList$Row;-><init>(Lcom/android/settings_ext/notification/NotificationAppList$1;)V
 
     return-void
 .end method

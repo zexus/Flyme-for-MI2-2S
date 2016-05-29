@@ -1,4 +1,4 @@
-.class public Lcom/android/settings/widget/ChartView;
+.class public Lcom/android/settings_ext/widget/ChartView;
 .super Landroid/widget/FrameLayout;
 .source "ChartView.java"
 
@@ -6,7 +6,7 @@
 # instance fields
 .field private mContent:Landroid/graphics/Rect;
 
-.field mHoriz:Lcom/android/settings/widget/ChartAxis;
+.field mHoriz:Lcom/android/settings_ext/widget/ChartAxis;
 
 .field private mOptimalWidth:I
     .annotation runtime Landroid/view/ViewDebug$ExportedProperty;
@@ -15,7 +15,7 @@
 
 .field private mOptimalWidthWeight:F
 
-.field mVert:Lcom/android/settings/widget/ChartAxis;
+.field mVert:Lcom/android/settings_ext/widget/ChartAxis;
 
 
 # direct methods
@@ -29,7 +29,7 @@
 
     const/4 v1, 0x0
 
-    invoke-direct {p0, p1, v0, v1}, Lcom/android/settings/widget/ChartView;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
+    invoke-direct {p0, p1, v0, v1}, Lcom/android/settings_ext/widget/ChartView;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
 
     .line 53
     return-void
@@ -44,7 +44,7 @@
     .line 56
     const/4 v0, 0x0
 
-    invoke-direct {p0, p1, p2, v0}, Lcom/android/settings/widget/ChartView;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
+    invoke-direct {p0, p1, p2, v0}, Lcom/android/settings_ext/widget/ChartView;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
 
     .line 57
     return-void
@@ -67,20 +67,20 @@
     invoke-direct {p0, p1, p2, p3}, Landroid/widget/FrameLayout;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
 
     .line 45
-    iput v2, p0, Lcom/android/settings/widget/ChartView;->mOptimalWidth:I
+    iput v2, p0, Lcom/android/settings_ext/widget/ChartView;->mOptimalWidth:I
 
     .line 47
-    iput v4, p0, Lcom/android/settings/widget/ChartView;->mOptimalWidthWeight:F
+    iput v4, p0, Lcom/android/settings_ext/widget/ChartView;->mOptimalWidthWeight:F
 
     .line 49
     new-instance v1, Landroid/graphics/Rect;
 
     invoke-direct {v1}, Landroid/graphics/Rect;-><init>()V
 
-    iput-object v1, p0, Lcom/android/settings/widget/ChartView;->mContent:Landroid/graphics/Rect;
+    iput-object v1, p0, Lcom/android/settings_ext/widget/ChartView;->mContent:Landroid/graphics/Rect;
 
     .line 62
-    sget-object v1, Lcom/android/settings/R$styleable;->ChartView:[I
+    sget-object v1, Lcom/android/settings_ext/R$styleable;->ChartView:[I
 
     invoke-virtual {p1, p2, v1, p3, v3}, Landroid/content/Context;->obtainStyledAttributes(Landroid/util/AttributeSet;[III)Landroid/content/res/TypedArray;
 
@@ -98,16 +98,16 @@
 
     move-result v2
 
-    invoke-virtual {p0, v1, v2}, Lcom/android/settings/widget/ChartView;->setOptimalWidth(IF)V
+    invoke-virtual {p0, v1, v2}, Lcom/android/settings_ext/widget/ChartView;->setOptimalWidth(IF)V
 
     .line 66
     invoke-virtual {v0}, Landroid/content/res/TypedArray;->recycle()V
 
     .line 68
-    invoke-virtual {p0, v3}, Lcom/android/settings/widget/ChartView;->setClipToPadding(Z)V
+    invoke-virtual {p0, v3}, Lcom/android/settings_ext/widget/ChartView;->setClipToPadding(Z)V
 
     .line 69
-    invoke-virtual {p0, v3}, Lcom/android/settings/widget/ChartView;->setClipChildren(Z)V
+    invoke-virtual {p0, v3}, Lcom/android/settings_ext/widget/ChartView;->setClipChildren(Z)V
 
     .line 70
     return-void
@@ -115,10 +115,10 @@
 
 
 # virtual methods
-.method init(Lcom/android/settings/widget/ChartAxis;Lcom/android/settings/widget/ChartAxis;)V
+.method init(Lcom/android/settings_ext/widget/ChartAxis;Lcom/android/settings_ext/widget/ChartAxis;)V
     .locals 1
-    .param p1, "horiz"    # Lcom/android/settings/widget/ChartAxis;
-    .param p2, "vert"    # Lcom/android/settings/widget/ChartAxis;
+    .param p1, "horiz"    # Lcom/android/settings_ext/widget/ChartAxis;
+    .param p2, "vert"    # Lcom/android/settings_ext/widget/ChartAxis;
 
     .prologue
     .line 73
@@ -128,9 +128,9 @@
 
     move-result-object v0
 
-    check-cast v0, Lcom/android/settings/widget/ChartAxis;
+    check-cast v0, Lcom/android/settings_ext/widget/ChartAxis;
 
-    iput-object v0, p0, Lcom/android/settings/widget/ChartView;->mHoriz:Lcom/android/settings/widget/ChartAxis;
+    iput-object v0, p0, Lcom/android/settings_ext/widget/ChartView;->mHoriz:Lcom/android/settings_ext/widget/ChartAxis;
 
     .line 74
     const-string v0, "missing vert"
@@ -139,23 +139,23 @@
 
     move-result-object v0
 
-    check-cast v0, Lcom/android/settings/widget/ChartAxis;
+    check-cast v0, Lcom/android/settings_ext/widget/ChartAxis;
 
-    iput-object v0, p0, Lcom/android/settings/widget/ChartView;->mVert:Lcom/android/settings/widget/ChartAxis;
+    iput-object v0, p0, Lcom/android/settings_ext/widget/ChartView;->mVert:Lcom/android/settings_ext/widget/ChartAxis;
 
     .line 75
     return-void
 .end method
 
-.method protected layoutSweep(Lcom/android/settings/widget/ChartSweepView;)V
+.method protected layoutSweep(Lcom/android/settings_ext/widget/ChartSweepView;)V
     .locals 6
-    .param p1, "sweep"    # Lcom/android/settings/widget/ChartSweepView;
+    .param p1, "sweep"    # Lcom/android/settings_ext/widget/ChartSweepView;
 
     .prologue
     .line 135
     new-instance v1, Landroid/graphics/Rect;
 
-    iget-object v2, p0, Lcom/android/settings/widget/ChartView;->mContent:Landroid/graphics/Rect;
+    iget-object v2, p0, Lcom/android/settings_ext/widget/ChartView;->mContent:Landroid/graphics/Rect;
 
     invoke-direct {v1, v2}, Landroid/graphics/Rect;-><init>(Landroid/graphics/Rect;)V
 
@@ -167,7 +167,7 @@
 
     .line 138
     .local v0, "childRect":Landroid/graphics/Rect;
-    invoke-virtual {p0, p1, v1, v0}, Lcom/android/settings/widget/ChartView;->layoutSweep(Lcom/android/settings/widget/ChartSweepView;Landroid/graphics/Rect;Landroid/graphics/Rect;)V
+    invoke-virtual {p0, p1, v1, v0}, Lcom/android/settings_ext/widget/ChartView;->layoutSweep(Lcom/android/settings_ext/widget/ChartSweepView;Landroid/graphics/Rect;Landroid/graphics/Rect;)V
 
     .line 139
     iget v2, v0, Landroid/graphics/Rect;->left:I
@@ -178,15 +178,15 @@
 
     iget v5, v0, Landroid/graphics/Rect;->bottom:I
 
-    invoke-virtual {p1, v2, v3, v4, v5}, Lcom/android/settings/widget/ChartSweepView;->layout(IIII)V
+    invoke-virtual {p1, v2, v3, v4, v5}, Lcom/android/settings_ext/widget/ChartSweepView;->layout(IIII)V
 
     .line 140
     return-void
 .end method
 
-.method protected layoutSweep(Lcom/android/settings/widget/ChartSweepView;Landroid/graphics/Rect;Landroid/graphics/Rect;)V
+.method protected layoutSweep(Lcom/android/settings_ext/widget/ChartSweepView;Landroid/graphics/Rect;Landroid/graphics/Rect;)V
     .locals 5
-    .param p1, "sweep"    # Lcom/android/settings/widget/ChartSweepView;
+    .param p1, "sweep"    # Lcom/android/settings_ext/widget/ChartSweepView;
     .param p2, "parentRect"    # Landroid/graphics/Rect;
     .param p3, "childRect"    # Landroid/graphics/Rect;
 
@@ -194,13 +194,13 @@
     const v4, 0x800033
 
     .line 143
-    invoke-virtual {p1}, Lcom/android/settings/widget/ChartSweepView;->getMargins()Landroid/graphics/Rect;
+    invoke-virtual {p1}, Lcom/android/settings_ext/widget/ChartSweepView;->getMargins()Landroid/graphics/Rect;
 
     move-result-object v0
 
     .line 146
     .local v0, "sweepMargins":Landroid/graphics/Rect;
-    invoke-virtual {p1}, Lcom/android/settings/widget/ChartSweepView;->getFollowAxis()I
+    invoke-virtual {p1}, Lcom/android/settings_ext/widget/ChartSweepView;->getFollowAxis()I
 
     move-result v1
 
@@ -213,7 +213,7 @@
 
     iget v2, v0, Landroid/graphics/Rect;->top:I
 
-    invoke-virtual {p1}, Lcom/android/settings/widget/ChartSweepView;->getPoint()F
+    invoke-virtual {p1}, Lcom/android/settings_ext/widget/ChartSweepView;->getPoint()F
 
     move-result v3
 
@@ -253,7 +253,7 @@
 
     move-result v1
 
-    invoke-virtual {p1}, Lcom/android/settings/widget/ChartSweepView;->getMeasuredHeight()I
+    invoke-virtual {p1}, Lcom/android/settings_ext/widget/ChartSweepView;->getMeasuredHeight()I
 
     move-result v2
 
@@ -269,7 +269,7 @@
 
     iget v2, v0, Landroid/graphics/Rect;->left:I
 
-    invoke-virtual {p1}, Lcom/android/settings/widget/ChartSweepView;->getPoint()F
+    invoke-virtual {p1}, Lcom/android/settings_ext/widget/ChartSweepView;->getPoint()F
 
     move-result v3
 
@@ -305,7 +305,7 @@
     iput v1, p2, Landroid/graphics/Rect;->bottom:I
 
     .line 159
-    invoke-virtual {p1}, Lcom/android/settings/widget/ChartSweepView;->getMeasuredWidth()I
+    invoke-virtual {p1}, Lcom/android/settings_ext/widget/ChartSweepView;->getMeasuredWidth()I
 
     move-result v1
 
@@ -328,19 +328,19 @@
 
     .prologue
     .line 97
-    iget-object v7, p0, Lcom/android/settings/widget/ChartView;->mContent:Landroid/graphics/Rect;
+    iget-object v7, p0, Lcom/android/settings_ext/widget/ChartView;->mContent:Landroid/graphics/Rect;
 
-    invoke-virtual {p0}, Lcom/android/settings/widget/ChartView;->getPaddingLeft()I
+    invoke-virtual {p0}, Lcom/android/settings_ext/widget/ChartView;->getPaddingLeft()I
 
     move-result v8
 
-    invoke-virtual {p0}, Lcom/android/settings/widget/ChartView;->getPaddingTop()I
+    invoke-virtual {p0}, Lcom/android/settings_ext/widget/ChartView;->getPaddingTop()I
 
     move-result v9
 
     sub-int v10, p4, p2
 
-    invoke-virtual {p0}, Lcom/android/settings/widget/ChartView;->getPaddingRight()I
+    invoke-virtual {p0}, Lcom/android/settings_ext/widget/ChartView;->getPaddingRight()I
 
     move-result v11
 
@@ -348,7 +348,7 @@
 
     sub-int v11, p5, p3
 
-    invoke-virtual {p0}, Lcom/android/settings/widget/ChartView;->getPaddingBottom()I
+    invoke-virtual {p0}, Lcom/android/settings_ext/widget/ChartView;->getPaddingBottom()I
 
     move-result v12
 
@@ -357,7 +357,7 @@
     invoke-virtual {v7, v8, v9, v10, v11}, Landroid/graphics/Rect;->set(IIII)V
 
     .line 99
-    iget-object v7, p0, Lcom/android/settings/widget/ChartView;->mContent:Landroid/graphics/Rect;
+    iget-object v7, p0, Lcom/android/settings_ext/widget/ChartView;->mContent:Landroid/graphics/Rect;
 
     invoke-virtual {v7}, Landroid/graphics/Rect;->width()I
 
@@ -365,7 +365,7 @@
 
     .line 100
     .local v6, "width":I
-    iget-object v7, p0, Lcom/android/settings/widget/ChartView;->mContent:Landroid/graphics/Rect;
+    iget-object v7, p0, Lcom/android/settings_ext/widget/ChartView;->mContent:Landroid/graphics/Rect;
 
     invoke-virtual {v7}, Landroid/graphics/Rect;->height()I
 
@@ -373,18 +373,18 @@
 
     .line 103
     .local v2, "height":I
-    iget-object v7, p0, Lcom/android/settings/widget/ChartView;->mHoriz:Lcom/android/settings/widget/ChartAxis;
+    iget-object v7, p0, Lcom/android/settings_ext/widget/ChartView;->mHoriz:Lcom/android/settings_ext/widget/ChartAxis;
 
     int-to-float v8, v6
 
-    invoke-interface {v7, v8}, Lcom/android/settings/widget/ChartAxis;->setSize(F)Z
+    invoke-interface {v7, v8}, Lcom/android/settings_ext/widget/ChartAxis;->setSize(F)Z
 
     .line 104
-    iget-object v7, p0, Lcom/android/settings/widget/ChartView;->mVert:Lcom/android/settings/widget/ChartAxis;
+    iget-object v7, p0, Lcom/android/settings_ext/widget/ChartView;->mVert:Lcom/android/settings_ext/widget/ChartAxis;
 
     int-to-float v8, v2
 
-    invoke-interface {v7, v8}, Lcom/android/settings/widget/ChartAxis;->setSize(F)Z
+    invoke-interface {v7, v8}, Lcom/android/settings_ext/widget/ChartAxis;->setSize(F)Z
 
     .line 106
     new-instance v5, Landroid/graphics/Rect;
@@ -403,14 +403,14 @@
 
     .local v3, "i":I
     :goto_0
-    invoke-virtual {p0}, Lcom/android/settings/widget/ChartView;->getChildCount()I
+    invoke-virtual {p0}, Lcom/android/settings_ext/widget/ChartView;->getChildCount()I
 
     move-result v7
 
     if-ge v3, v7, :cond_3
 
     .line 110
-    invoke-virtual {p0, v3}, Lcom/android/settings/widget/ChartView;->getChildAt(I)Landroid/view/View;
+    invoke-virtual {p0, v3}, Lcom/android/settings_ext/widget/ChartView;->getChildAt(I)Landroid/view/View;
 
     move-result-object v0
 
@@ -424,12 +424,12 @@
 
     .line 113
     .local v4, "params":Landroid/widget/FrameLayout$LayoutParams;
-    iget-object v7, p0, Lcom/android/settings/widget/ChartView;->mContent:Landroid/graphics/Rect;
+    iget-object v7, p0, Lcom/android/settings_ext/widget/ChartView;->mContent:Landroid/graphics/Rect;
 
     invoke-virtual {v5, v7}, Landroid/graphics/Rect;->set(Landroid/graphics/Rect;)V
 
     .line 115
-    instance-of v7, v0, Lcom/android/settings/widget/ChartNetworkSeriesView;
+    instance-of v7, v0, Lcom/android/settings_ext/widget/ChartNetworkSeriesView;
 
     if-eqz v7, :cond_1
 
@@ -458,7 +458,7 @@
 
     .line 121
     :cond_1
-    instance-of v7, v0, Lcom/android/settings/widget/ChartGridView;
+    instance-of v7, v0, Lcom/android/settings_ext/widget/ChartGridView;
 
     if-eqz v7, :cond_2
 
@@ -488,16 +488,16 @@
 
     .line 127
     :cond_2
-    instance-of v7, v0, Lcom/android/settings/widget/ChartSweepView;
+    instance-of v7, v0, Lcom/android/settings_ext/widget/ChartSweepView;
 
     if-eqz v7, :cond_0
 
     move-object v7, v0
 
     .line 128
-    check-cast v7, Lcom/android/settings/widget/ChartSweepView;
+    check-cast v7, Lcom/android/settings_ext/widget/ChartSweepView;
 
-    invoke-virtual {p0, v7, v5, v1}, Lcom/android/settings/widget/ChartView;->layoutSweep(Lcom/android/settings/widget/ChartSweepView;Landroid/graphics/Rect;Landroid/graphics/Rect;)V
+    invoke-virtual {p0, v7, v5, v1}, Lcom/android/settings_ext/widget/ChartView;->layoutSweep(Lcom/android/settings_ext/widget/ChartSweepView;Landroid/graphics/Rect;Landroid/graphics/Rect;)V
 
     .line 129
     iget v7, v1, Landroid/graphics/Rect;->left:I
@@ -529,30 +529,30 @@
     invoke-super {p0, p1, p2}, Landroid/widget/FrameLayout;->onMeasure(II)V
 
     .line 87
-    invoke-virtual {p0}, Lcom/android/settings/widget/ChartView;->getMeasuredWidth()I
+    invoke-virtual {p0}, Lcom/android/settings_ext/widget/ChartView;->getMeasuredWidth()I
 
     move-result v2
 
-    iget v3, p0, Lcom/android/settings/widget/ChartView;->mOptimalWidth:I
+    iget v3, p0, Lcom/android/settings_ext/widget/ChartView;->mOptimalWidth:I
 
     sub-int v0, v2, v3
 
     .line 88
     .local v0, "slack":I
-    iget v2, p0, Lcom/android/settings/widget/ChartView;->mOptimalWidth:I
+    iget v2, p0, Lcom/android/settings_ext/widget/ChartView;->mOptimalWidth:I
 
     if-lez v2, :cond_0
 
     if-lez v0, :cond_0
 
     .line 89
-    iget v2, p0, Lcom/android/settings/widget/ChartView;->mOptimalWidth:I
+    iget v2, p0, Lcom/android/settings_ext/widget/ChartView;->mOptimalWidth:I
 
     int-to-float v2, v2
 
     int-to-float v3, v0
 
-    iget v4, p0, Lcom/android/settings/widget/ChartView;->mOptimalWidthWeight:F
+    iget v4, p0, Lcom/android/settings_ext/widget/ChartView;->mOptimalWidthWeight:F
 
     mul-float/2addr v3, v4
 
@@ -584,13 +584,13 @@
 
     .prologue
     .line 78
-    iput p1, p0, Lcom/android/settings/widget/ChartView;->mOptimalWidth:I
+    iput p1, p0, Lcom/android/settings_ext/widget/ChartView;->mOptimalWidth:I
 
     .line 79
-    iput p2, p0, Lcom/android/settings/widget/ChartView;->mOptimalWidthWeight:F
+    iput p2, p0, Lcom/android/settings_ext/widget/ChartView;->mOptimalWidthWeight:F
 
     .line 80
-    invoke-virtual {p0}, Lcom/android/settings/widget/ChartView;->requestLayout()V
+    invoke-virtual {p0}, Lcom/android/settings_ext/widget/ChartView;->requestLayout()V
 
     .line 81
     return-void

@@ -1,13 +1,13 @@
-.class public Lcom/android/settings/ChooseLockGeneric;
-.super Lcom/android/settings/SettingsActivity;
+.class public Lcom/android/settings_ext/ChooseLockGeneric;
+.super Lcom/android/settings_ext/SettingsActivity;
 .source "ChooseLockGeneric.java"
 
 
 # annotations
 .annotation system Ldalvik/annotation/MemberClasses;
     value = {
-        Lcom/android/settings/ChooseLockGeneric$ChooseLockGenericFragment;,
-        Lcom/android/settings/ChooseLockGeneric$InternalActivity;
+        Lcom/android/settings_ext/ChooseLockGeneric$ChooseLockGenericFragment;,
+        Lcom/android/settings_ext/ChooseLockGeneric$InternalActivity;
     }
 .end annotation
 
@@ -18,7 +18,7 @@
 
     .prologue
     .line 51
-    invoke-direct {p0}, Lcom/android/settings/SettingsActivity;-><init>()V
+    invoke-direct {p0}, Lcom/android/settings_ext/SettingsActivity;-><init>()V
 
     .line 74
     return-void
@@ -40,7 +40,7 @@
 
     .prologue
     .line 68
-    const-class v0, Lcom/android/settings/ChooseLockGeneric$ChooseLockGenericFragment;
+    const-class v0, Lcom/android/settings_ext/ChooseLockGeneric$ChooseLockGenericFragment;
 
     return-object v0
 .end method
@@ -52,7 +52,7 @@
     .line 56
     new-instance v0, Landroid/content/Intent;
 
-    invoke-super {p0}, Lcom/android/settings/SettingsActivity;->getIntent()Landroid/content/Intent;
+    invoke-super {p0}, Lcom/android/settings_ext/SettingsActivity;->getIntent()Landroid/content/Intent;
 
     move-result-object v1
 
@@ -62,7 +62,7 @@
     .local v0, "modIntent":Landroid/content/Intent;
     const-string v1, ":settings:show_fragment"
 
-    invoke-virtual {p0}, Lcom/android/settings/ChooseLockGeneric;->getFragmentClass()Ljava/lang/Class;
+    invoke-virtual {p0}, Lcom/android/settings_ext/ChooseLockGeneric;->getFragmentClass()Ljava/lang/Class;
 
     move-result-object v2
 
@@ -82,7 +82,7 @@
 
     .prologue
     .line 63
-    const-class v0, Lcom/android/settings/ChooseLockGeneric$ChooseLockGenericFragment;
+    const-class v0, Lcom/android/settings_ext/ChooseLockGeneric$ChooseLockGenericFragment;
 
     invoke-virtual {v0}, Ljava/lang/Class;->getName()Ljava/lang/String;
 

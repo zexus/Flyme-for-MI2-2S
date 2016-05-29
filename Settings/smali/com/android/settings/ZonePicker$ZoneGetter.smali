@@ -1,11 +1,11 @@
-.class Lcom/android/settings/ZonePicker$ZoneGetter;
+.class Lcom/android/settings_ext/ZonePicker$ZoneGetter;
 .super Ljava/lang/Object;
 .source "ZonePicker.java"
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/android/settings/ZonePicker;
+    value = Lcom/android/settings_ext/ZonePicker;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -58,14 +58,14 @@
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
-    iput-object v0, p0, Lcom/android/settings/ZonePicker$ZoneGetter;->mZones:Ljava/util/List;
+    iput-object v0, p0, Lcom/android/settings_ext/ZonePicker$ZoneGetter;->mZones:Ljava/util/List;
 
     .line 230
     new-instance v0, Ljava/util/HashSet;
 
     invoke-direct {v0}, Ljava/util/HashSet;-><init>()V
 
-    iput-object v0, p0, Lcom/android/settings/ZonePicker$ZoneGetter;->mLocalZones:Ljava/util/HashSet;
+    iput-object v0, p0, Lcom/android/settings_ext/ZonePicker$ZoneGetter;->mLocalZones:Ljava/util/HashSet;
 
     .line 231
     invoke-static {}, Ljava/util/Calendar;->getInstance()Ljava/util/Calendar;
@@ -76,7 +76,7 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/ZonePicker$ZoneGetter;->mNow:Ljava/util/Date;
+    iput-object v0, p0, Lcom/android/settings_ext/ZonePicker$ZoneGetter;->mNow:Ljava/util/Date;
 
     .line 232
     new-instance v0, Ljava/text/SimpleDateFormat;
@@ -85,19 +85,19 @@
 
     invoke-direct {v0, v1}, Ljava/text/SimpleDateFormat;-><init>(Ljava/lang/String;)V
 
-    iput-object v0, p0, Lcom/android/settings/ZonePicker$ZoneGetter;->mZoneNameFormatter:Ljava/text/SimpleDateFormat;
+    iput-object v0, p0, Lcom/android/settings_ext/ZonePicker$ZoneGetter;->mZoneNameFormatter:Ljava/text/SimpleDateFormat;
 
     return-void
 .end method
 
-.method static synthetic access$000(Lcom/android/settings/ZonePicker$ZoneGetter;Landroid/content/Context;)Ljava/util/List;
+.method static synthetic access$000(Lcom/android/settings_ext/ZonePicker$ZoneGetter;Landroid/content/Context;)Ljava/util/List;
     .locals 1
-    .param p0, "x0"    # Lcom/android/settings/ZonePicker$ZoneGetter;
+    .param p0, "x0"    # Lcom/android/settings_ext/ZonePicker$ZoneGetter;
     .param p1, "x1"    # Landroid/content/Context;
 
     .prologue
     .line 227
-    invoke-direct {p0, p1}, Lcom/android/settings/ZonePicker$ZoneGetter;->getZones(Landroid/content/Context;)Ljava/util/List;
+    invoke-direct {p0, p1}, Lcom/android/settings_ext/ZonePicker$ZoneGetter;->getZones(Landroid/content/Context;)Ljava/util/List;
 
     move-result-object v0
 
@@ -116,7 +116,7 @@
 
     .line 277
     .local v3, "tz":Ljava/util/TimeZone;
-    iget-object v4, p0, Lcom/android/settings/ZonePicker$ZoneGetter;->mLocalZones:Ljava/util/HashSet;
+    iget-object v4, p0, Lcom/android/settings_ext/ZonePicker$ZoneGetter;->mLocalZones:Ljava/util/HashSet;
 
     invoke-virtual {v4, p1}, Ljava/util/HashSet;->contains(Ljava/lang/Object;)Z
 
@@ -125,14 +125,14 @@
     if-eqz v4, :cond_0
 
     .line 279
-    iget-object v4, p0, Lcom/android/settings/ZonePicker$ZoneGetter;->mZoneNameFormatter:Ljava/text/SimpleDateFormat;
+    iget-object v4, p0, Lcom/android/settings_ext/ZonePicker$ZoneGetter;->mZoneNameFormatter:Ljava/text/SimpleDateFormat;
 
     invoke-virtual {v4, v3}, Ljava/text/SimpleDateFormat;->setTimeZone(Ljava/util/TimeZone;)V
 
     .line 280
-    iget-object v4, p0, Lcom/android/settings/ZonePicker$ZoneGetter;->mZoneNameFormatter:Ljava/text/SimpleDateFormat;
+    iget-object v4, p0, Lcom/android/settings_ext/ZonePicker$ZoneGetter;->mZoneNameFormatter:Ljava/text/SimpleDateFormat;
 
-    iget-object v5, p0, Lcom/android/settings/ZonePicker$ZoneGetter;->mNow:Ljava/util/Date;
+    iget-object v5, p0, Lcom/android/settings_ext/ZonePicker$ZoneGetter;->mNow:Ljava/util/Date;
 
     invoke-virtual {v4, v5}, Ljava/text/SimpleDateFormat;->format(Ljava/util/Date;)Ljava/lang/String;
 
@@ -161,7 +161,7 @@
 
     const/4 v5, 0x0
 
-    invoke-static {v3, v5}, Lcom/android/settings/DateTimeSettings;->getTimeZoneText(Ljava/util/TimeZone;Z)Ljava/lang/String;
+    invoke-static {v3, v5}, Lcom/android/settings_ext/DateTimeSettings;->getTimeZoneText(Ljava/util/TimeZone;Z)Ljava/lang/String;
 
     move-result-object v5
 
@@ -170,7 +170,7 @@
     .line 291
     const-string v4, "offset"
 
-    iget-object v5, p0, Lcom/android/settings/ZonePicker$ZoneGetter;->mNow:Ljava/util/Date;
+    iget-object v5, p0, Lcom/android/settings_ext/ZonePicker$ZoneGetter;->mNow:Ljava/util/Date;
 
     invoke-virtual {v5}, Ljava/util/Date;->getTime()J
 
@@ -187,7 +187,7 @@
     invoke-virtual {v2, v4, v5}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 293
-    iget-object v4, p0, Lcom/android/settings/ZonePicker$ZoneGetter;->mZones:Ljava/util/List;
+    iget-object v4, p0, Lcom/android/settings_ext/ZonePicker$ZoneGetter;->mZones:Ljava/util/List;
 
     invoke-interface {v4, v2}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
@@ -262,7 +262,7 @@
 
     .line 236
     .local v4, "olsonId":Ljava/lang/String;
-    iget-object v7, p0, Lcom/android/settings/ZonePicker$ZoneGetter;->mLocalZones:Ljava/util/HashSet;
+    iget-object v7, p0, Lcom/android/settings_ext/ZonePicker$ZoneGetter;->mLocalZones:Ljava/util/HashSet;
 
     invoke-virtual {v7, v4}, Ljava/util/HashSet;->add(Ljava/lang/Object;)Z
 
@@ -323,7 +323,7 @@
     if-ne v7, v8, :cond_2
 
     .line 247
-    iget-object v7, p0, Lcom/android/settings/ZonePicker$ZoneGetter;->mZones:Ljava/util/List;
+    iget-object v7, p0, Lcom/android/settings_ext/ZonePicker$ZoneGetter;->mZones:Ljava/util/List;
 
     .line 266
     .end local v6    # "xrp":Landroid/content/res/XmlResourceParser;
@@ -356,7 +356,7 @@
     .line 266
     .end local v5    # "xppe":Lorg/xmlpull/v1/XmlPullParserException;
     :goto_4
-    iget-object v7, p0, Lcom/android/settings/ZonePicker$ZoneGetter;->mZones:Ljava/util/List;
+    iget-object v7, p0, Lcom/android/settings_ext/ZonePicker$ZoneGetter;->mZones:Ljava/util/List;
 
     goto :goto_3
 
@@ -385,7 +385,7 @@
 
     .line 253
     .restart local v4    # "olsonId":Ljava/lang/String;
-    invoke-direct {p0, v4}, Lcom/android/settings/ZonePicker$ZoneGetter;->addTimeZone(Ljava/lang/String;)V
+    invoke-direct {p0, v4}, Lcom/android/settings_ext/ZonePicker$ZoneGetter;->addTimeZone(Ljava/lang/String;)V
 
     .line 255
     .end local v4    # "olsonId":Ljava/lang/String;

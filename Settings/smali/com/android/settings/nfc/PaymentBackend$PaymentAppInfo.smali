@@ -1,11 +1,11 @@
-.class public Lcom/android/settings/nfc/PaymentBackend$PaymentAppInfo;
+.class public Lcom/android/settings_ext/nfc/PaymentBackend$PaymentAppInfo;
 .super Ljava/lang/Object;
 .source "PaymentBackend.java"
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/android/settings/nfc/PaymentBackend;
+    value = Lcom/android/settings_ext/nfc/PaymentBackend;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;

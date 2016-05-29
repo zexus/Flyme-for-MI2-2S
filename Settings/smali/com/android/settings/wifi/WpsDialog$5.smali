@@ -1,11 +1,11 @@
-.class synthetic Lcom/android/settings/wifi/WpsDialog$5;
+.class synthetic Lcom/android/settings_ext/wifi/WpsDialog$5;
 .super Ljava/lang/Object;
 .source "WpsDialog.java"
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/android/settings/wifi/WpsDialog;
+    value = Lcom/android/settings_ext/wifi/WpsDialog;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -24,7 +24,7 @@
 
     .prologue
     .line 238
-    invoke-static {}, Lcom/android/settings/wifi/WpsDialog$DialogState;->values()[Lcom/android/settings/wifi/WpsDialog$DialogState;
+    invoke-static {}, Lcom/android/settings_ext/wifi/WpsDialog$DialogState;->values()[Lcom/android/settings_ext/wifi/WpsDialog$DialogState;
 
     move-result-object v0
 
@@ -32,14 +32,14 @@
 
     new-array v0, v0, [I
 
-    sput-object v0, Lcom/android/settings/wifi/WpsDialog$5;->$SwitchMap$com$android$settings$wifi$WpsDialog$DialogState:[I
+    sput-object v0, Lcom/android/settings_ext/wifi/WpsDialog$5;->$SwitchMap$com$android$settings$wifi$WpsDialog$DialogState:[I
 
     :try_start_0
-    sget-object v0, Lcom/android/settings/wifi/WpsDialog$5;->$SwitchMap$com$android$settings$wifi$WpsDialog$DialogState:[I
+    sget-object v0, Lcom/android/settings_ext/wifi/WpsDialog$5;->$SwitchMap$com$android$settings$wifi$WpsDialog$DialogState:[I
 
-    sget-object v1, Lcom/android/settings/wifi/WpsDialog$DialogState;->WPS_COMPLETE:Lcom/android/settings/wifi/WpsDialog$DialogState;
+    sget-object v1, Lcom/android/settings_ext/wifi/WpsDialog$DialogState;->WPS_COMPLETE:Lcom/android/settings_ext/wifi/WpsDialog$DialogState;
 
-    invoke-virtual {v1}, Lcom/android/settings/wifi/WpsDialog$DialogState;->ordinal()I
+    invoke-virtual {v1}, Lcom/android/settings_ext/wifi/WpsDialog$DialogState;->ordinal()I
 
     move-result v1
 
@@ -51,11 +51,11 @@
 
     :goto_0
     :try_start_1
-    sget-object v0, Lcom/android/settings/wifi/WpsDialog$5;->$SwitchMap$com$android$settings$wifi$WpsDialog$DialogState:[I
+    sget-object v0, Lcom/android/settings_ext/wifi/WpsDialog$5;->$SwitchMap$com$android$settings$wifi$WpsDialog$DialogState:[I
 
-    sget-object v1, Lcom/android/settings/wifi/WpsDialog$DialogState;->CONNECTED:Lcom/android/settings/wifi/WpsDialog$DialogState;
+    sget-object v1, Lcom/android/settings_ext/wifi/WpsDialog$DialogState;->CONNECTED:Lcom/android/settings_ext/wifi/WpsDialog$DialogState;
 
-    invoke-virtual {v1}, Lcom/android/settings/wifi/WpsDialog$DialogState;->ordinal()I
+    invoke-virtual {v1}, Lcom/android/settings_ext/wifi/WpsDialog$DialogState;->ordinal()I
 
     move-result v1
 
@@ -67,11 +67,11 @@
 
     :goto_1
     :try_start_2
-    sget-object v0, Lcom/android/settings/wifi/WpsDialog$5;->$SwitchMap$com$android$settings$wifi$WpsDialog$DialogState:[I
+    sget-object v0, Lcom/android/settings_ext/wifi/WpsDialog$5;->$SwitchMap$com$android$settings$wifi$WpsDialog$DialogState:[I
 
-    sget-object v1, Lcom/android/settings/wifi/WpsDialog$DialogState;->WPS_FAILED:Lcom/android/settings/wifi/WpsDialog$DialogState;
+    sget-object v1, Lcom/android/settings_ext/wifi/WpsDialog$DialogState;->WPS_FAILED:Lcom/android/settings_ext/wifi/WpsDialog$DialogState;
 
-    invoke-virtual {v1}, Lcom/android/settings/wifi/WpsDialog$DialogState;->ordinal()I
+    invoke-virtual {v1}, Lcom/android/settings_ext/wifi/WpsDialog$DialogState;->ordinal()I
 
     move-result v1
 

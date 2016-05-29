@@ -1,4 +1,4 @@
-.class Lcom/android/settings/UserDictionarySettings$MyAdapter;
+.class Lcom/android/settings_ext/UserDictionarySettings$MyAdapter;
 .super Landroid/widget/SimpleCursorAdapter;
 .source "UserDictionarySettings.java"
 
@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/android/settings/UserDictionarySettings;
+    value = Lcom/android/settings_ext/UserDictionarySettings;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -24,25 +24,25 @@
 
 
 # direct methods
-.method public constructor <init>(Landroid/content/Context;ILandroid/database/Cursor;[Ljava/lang/String;[ILcom/android/settings/UserDictionarySettings;)V
+.method public constructor <init>(Landroid/content/Context;ILandroid/database/Cursor;[Ljava/lang/String;[ILcom/android/settings_ext/UserDictionarySettings;)V
     .locals 3
     .param p1, "context"    # Landroid/content/Context;
     .param p2, "layout"    # I
     .param p3, "c"    # Landroid/database/Cursor;
     .param p4, "from"    # [Ljava/lang/String;
     .param p5, "to"    # [I
-    .param p6, "settings"    # Lcom/android/settings/UserDictionarySettings;
+    .param p6, "settings"    # Lcom/android/settings_ext/UserDictionarySettings;
 
     .prologue
     .line 260
     invoke-direct/range {p0 .. p5}, Landroid/widget/SimpleCursorAdapter;-><init>(Landroid/content/Context;ILandroid/database/Cursor;[Ljava/lang/String;[I)V
 
     .line 238
-    new-instance v2, Lcom/android/settings/UserDictionarySettings$MyAdapter$1;
+    new-instance v2, Lcom/android/settings_ext/UserDictionarySettings$MyAdapter$1;
 
-    invoke-direct {v2, p0}, Lcom/android/settings/UserDictionarySettings$MyAdapter$1;-><init>(Lcom/android/settings/UserDictionarySettings$MyAdapter;)V
+    invoke-direct {v2, p0}, Lcom/android/settings_ext/UserDictionarySettings$MyAdapter$1;-><init>(Lcom/android/settings_ext/UserDictionarySettings$MyAdapter;)V
 
-    iput-object v2, p0, Lcom/android/settings/UserDictionarySettings$MyAdapter;->mViewBinder:Landroid/widget/SimpleCursorAdapter$ViewBinder;
+    iput-object v2, p0, Lcom/android/settings_ext/UserDictionarySettings$MyAdapter;->mViewBinder:Landroid/widget/SimpleCursorAdapter$ViewBinder;
 
     .line 262
     if-eqz p3, :cond_0
@@ -68,15 +68,15 @@
 
     invoke-direct {v2, p3, v1, v0}, Landroid/widget/AlphabetIndexer;-><init>(Landroid/database/Cursor;ILjava/lang/CharSequence;)V
 
-    iput-object v2, p0, Lcom/android/settings/UserDictionarySettings$MyAdapter;->mIndexer:Landroid/widget/AlphabetIndexer;
+    iput-object v2, p0, Lcom/android/settings_ext/UserDictionarySettings$MyAdapter;->mIndexer:Landroid/widget/AlphabetIndexer;
 
     .line 268
     .end local v0    # "alphabet":Ljava/lang/String;
     .end local v1    # "wordColIndex":I
     :cond_0
-    iget-object v2, p0, Lcom/android/settings/UserDictionarySettings$MyAdapter;->mViewBinder:Landroid/widget/SimpleCursorAdapter$ViewBinder;
+    iget-object v2, p0, Lcom/android/settings_ext/UserDictionarySettings$MyAdapter;->mViewBinder:Landroid/widget/SimpleCursorAdapter$ViewBinder;
 
-    invoke-virtual {p0, v2}, Lcom/android/settings/UserDictionarySettings$MyAdapter;->setViewBinder(Landroid/widget/SimpleCursorAdapter$ViewBinder;)V
+    invoke-virtual {p0, v2}, Lcom/android/settings_ext/UserDictionarySettings$MyAdapter;->setViewBinder(Landroid/widget/SimpleCursorAdapter$ViewBinder;)V
 
     .line 269
     return-void
@@ -90,7 +90,7 @@
 
     .prologue
     .line 273
-    iget-object v0, p0, Lcom/android/settings/UserDictionarySettings$MyAdapter;->mIndexer:Landroid/widget/AlphabetIndexer;
+    iget-object v0, p0, Lcom/android/settings_ext/UserDictionarySettings$MyAdapter;->mIndexer:Landroid/widget/AlphabetIndexer;
 
     if-nez v0, :cond_0
 
@@ -100,7 +100,7 @@
     return v0
 
     :cond_0
-    iget-object v0, p0, Lcom/android/settings/UserDictionarySettings$MyAdapter;->mIndexer:Landroid/widget/AlphabetIndexer;
+    iget-object v0, p0, Lcom/android/settings_ext/UserDictionarySettings$MyAdapter;->mIndexer:Landroid/widget/AlphabetIndexer;
 
     invoke-virtual {v0, p1}, Landroid/widget/AlphabetIndexer;->getPositionForSection(I)I
 
@@ -115,7 +115,7 @@
 
     .prologue
     .line 278
-    iget-object v0, p0, Lcom/android/settings/UserDictionarySettings$MyAdapter;->mIndexer:Landroid/widget/AlphabetIndexer;
+    iget-object v0, p0, Lcom/android/settings_ext/UserDictionarySettings$MyAdapter;->mIndexer:Landroid/widget/AlphabetIndexer;
 
     if-nez v0, :cond_0
 
@@ -125,7 +125,7 @@
     return v0
 
     :cond_0
-    iget-object v0, p0, Lcom/android/settings/UserDictionarySettings$MyAdapter;->mIndexer:Landroid/widget/AlphabetIndexer;
+    iget-object v0, p0, Lcom/android/settings_ext/UserDictionarySettings$MyAdapter;->mIndexer:Landroid/widget/AlphabetIndexer;
 
     invoke-virtual {v0, p1}, Landroid/widget/AlphabetIndexer;->getSectionForPosition(I)I
 
@@ -139,7 +139,7 @@
 
     .prologue
     .line 283
-    iget-object v0, p0, Lcom/android/settings/UserDictionarySettings$MyAdapter;->mIndexer:Landroid/widget/AlphabetIndexer;
+    iget-object v0, p0, Lcom/android/settings_ext/UserDictionarySettings$MyAdapter;->mIndexer:Landroid/widget/AlphabetIndexer;
 
     if-nez v0, :cond_0
 
@@ -149,7 +149,7 @@
     return-object v0
 
     :cond_0
-    iget-object v0, p0, Lcom/android/settings/UserDictionarySettings$MyAdapter;->mIndexer:Landroid/widget/AlphabetIndexer;
+    iget-object v0, p0, Lcom/android/settings_ext/UserDictionarySettings$MyAdapter;->mIndexer:Landroid/widget/AlphabetIndexer;
 
     invoke-virtual {v0}, Landroid/widget/AlphabetIndexer;->getSections()[Ljava/lang/Object;
 

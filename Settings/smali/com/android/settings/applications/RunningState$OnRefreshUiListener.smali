@@ -1,11 +1,11 @@
-.class interface abstract Lcom/android/settings/applications/RunningState$OnRefreshUiListener;
+.class interface abstract Lcom/android/settings_ext/applications/RunningState$OnRefreshUiListener;
 .super Ljava/lang/Object;
 .source "RunningState.java"
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/android/settings/applications/RunningState;
+    value = Lcom/android/settings_ext/applications/RunningState;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;

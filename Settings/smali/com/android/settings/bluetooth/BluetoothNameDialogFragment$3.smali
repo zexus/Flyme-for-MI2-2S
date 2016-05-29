@@ -1,4 +1,4 @@
-.class Lcom/android/settings/bluetooth/BluetoothNameDialogFragment$3;
+.class Lcom/android/settings_ext/bluetooth/BluetoothNameDialogFragment$3;
 .super Ljava/lang/Object;
 .source "BluetoothNameDialogFragment.java"
 
@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/android/settings/bluetooth/BluetoothNameDialogFragment;->createDialogView(Ljava/lang/String;)Landroid/view/View;
+    value = Lcom/android/settings_ext/bluetooth/BluetoothNameDialogFragment;->createDialogView(Ljava/lang/String;)Landroid/view/View;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -18,16 +18,16 @@
 
 
 # instance fields
-.field final synthetic this$0:Lcom/android/settings/bluetooth/BluetoothNameDialogFragment;
+.field final synthetic this$0:Lcom/android/settings_ext/bluetooth/BluetoothNameDialogFragment;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/bluetooth/BluetoothNameDialogFragment;)V
+.method constructor <init>(Lcom/android/settings_ext/bluetooth/BluetoothNameDialogFragment;)V
     .locals 0
 
     .prologue
     .line 139
-    iput-object p1, p0, Lcom/android/settings/bluetooth/BluetoothNameDialogFragment$3;->this$0:Lcom/android/settings/bluetooth/BluetoothNameDialogFragment;
+    iput-object p1, p0, Lcom/android/settings_ext/bluetooth/BluetoothNameDialogFragment$3;->this$0:Lcom/android/settings_ext/bluetooth/BluetoothNameDialogFragment;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -49,7 +49,7 @@
     if-ne p2, v0, :cond_0
 
     .line 143
-    iget-object v0, p0, Lcom/android/settings/bluetooth/BluetoothNameDialogFragment$3;->this$0:Lcom/android/settings/bluetooth/BluetoothNameDialogFragment;
+    iget-object v0, p0, Lcom/android/settings_ext/bluetooth/BluetoothNameDialogFragment$3;->this$0:Lcom/android/settings_ext/bluetooth/BluetoothNameDialogFragment;
 
     invoke-virtual {p1}, Landroid/widget/TextView;->getText()Ljava/lang/CharSequence;
 
@@ -59,14 +59,14 @@
 
     move-result-object v1
 
-    # invokes: Lcom/android/settings/bluetooth/BluetoothNameDialogFragment;->setDeviceName(Ljava/lang/String;)V
-    invoke-static {v0, v1}, Lcom/android/settings/bluetooth/BluetoothNameDialogFragment;->access$000(Lcom/android/settings/bluetooth/BluetoothNameDialogFragment;Ljava/lang/String;)V
+    # invokes: Lcom/android/settings_ext/bluetooth/BluetoothNameDialogFragment;->setDeviceName(Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/android/settings_ext/bluetooth/BluetoothNameDialogFragment;->access$000(Lcom/android/settings_ext/bluetooth/BluetoothNameDialogFragment;Ljava/lang/String;)V
 
     .line 144
-    iget-object v0, p0, Lcom/android/settings/bluetooth/BluetoothNameDialogFragment$3;->this$0:Lcom/android/settings/bluetooth/BluetoothNameDialogFragment;
+    iget-object v0, p0, Lcom/android/settings_ext/bluetooth/BluetoothNameDialogFragment$3;->this$0:Lcom/android/settings_ext/bluetooth/BluetoothNameDialogFragment;
 
-    # getter for: Lcom/android/settings/bluetooth/BluetoothNameDialogFragment;->mAlertDialog:Landroid/app/AlertDialog;
-    invoke-static {v0}, Lcom/android/settings/bluetooth/BluetoothNameDialogFragment;->access$100(Lcom/android/settings/bluetooth/BluetoothNameDialogFragment;)Landroid/app/AlertDialog;
+    # getter for: Lcom/android/settings_ext/bluetooth/BluetoothNameDialogFragment;->mAlertDialog:Landroid/app/AlertDialog;
+    invoke-static {v0}, Lcom/android/settings_ext/bluetooth/BluetoothNameDialogFragment;->access$100(Lcom/android/settings_ext/bluetooth/BluetoothNameDialogFragment;)Landroid/app/AlertDialog;
 
     move-result-object v0
 

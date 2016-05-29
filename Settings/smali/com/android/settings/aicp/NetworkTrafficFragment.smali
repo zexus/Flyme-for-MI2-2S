@@ -1,5 +1,5 @@
-.class public Lcom/android/settings/aicp/NetworkTrafficFragment;
-.super Lcom/android/settings/SettingsPreferenceFragment;
+.class public Lcom/android/settings_ext/aicp/NetworkTrafficFragment;
+.super Lcom/android/settings_ext/SettingsPreferenceFragment;
 .source "NetworkTrafficFragment.java"
 
 # interfaces
@@ -21,7 +21,7 @@
 
 .field private mNetTrafficAutohide:Landroid/preference/SwitchPreference;
 
-.field private mNetTrafficAutohideThreshold:Lcom/android/settings/widget/SeekBarPreferenceCham;
+.field private mNetTrafficAutohideThreshold:Lcom/android/settings_ext/widget/SeekBarPreferenceCham;
 
 .field private mNetTrafficColor:Lnet/margaritov/preference/colorpicker/ColorPickerPreference;
 
@@ -42,7 +42,7 @@
 
     .prologue
     .line 35
-    invoke-direct {p0}, Lcom/android/settings/SettingsPreferenceFragment;-><init>()V
+    invoke-direct {p0}, Lcom/android/settings_ext/SettingsPreferenceFragment;-><init>()V
 
     return-void
 .end method
@@ -54,7 +54,7 @@
     const/4 v4, -0x1
 
     .line 174
-    invoke-virtual {p0}, Lcom/android/settings/aicp/NetworkTrafficFragment;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/settings_ext/aicp/NetworkTrafficFragment;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v1
 
@@ -63,7 +63,7 @@
     invoke-static {v1, v2, v4}, Landroid/provider/Settings$System;->putInt(Landroid/content/ContentResolver;Ljava/lang/String;I)Z
 
     .line 177
-    iget-object v1, p0, Lcom/android/settings/aicp/NetworkTrafficFragment;->mNetTrafficColor:Lnet/margaritov/preference/colorpicker/ColorPickerPreference;
+    iget-object v1, p0, Lcom/android/settings_ext/aicp/NetworkTrafficFragment;->mNetTrafficColor:Lnet/margaritov/preference/colorpicker/ColorPickerPreference;
 
     invoke-virtual {v1, v4}, Lnet/margaritov/preference/colorpicker/ColorPickerPreference;->setNewPreviewColor(I)V
 
@@ -88,7 +88,7 @@
 
     .line 179
     .local v0, "hexColor":Ljava/lang/String;
-    iget-object v1, p0, Lcom/android/settings/aicp/NetworkTrafficFragment;->mNetTrafficColor:Lnet/margaritov/preference/colorpicker/ColorPickerPreference;
+    iget-object v1, p0, Lcom/android/settings_ext/aicp/NetworkTrafficFragment;->mNetTrafficColor:Lnet/margaritov/preference/colorpicker/ColorPickerPreference;
 
     invoke-virtual {v1, v0}, Lnet/margaritov/preference/colorpicker/ColorPickerPreference;->setSummary(Ljava/lang/CharSequence;)V
 
@@ -96,13 +96,13 @@
     return-void
 .end method
 
-.method static synthetic access$000(Lcom/android/settings/aicp/NetworkTrafficFragment;)V
+.method static synthetic access$000(Lcom/android/settings_ext/aicp/NetworkTrafficFragment;)V
     .locals 0
-    .param p0, "x0"    # Lcom/android/settings/aicp/NetworkTrafficFragment;
+    .param p0, "x0"    # Lcom/android/settings_ext/aicp/NetworkTrafficFragment;
 
     .prologue
     .line 35
-    invoke-direct {p0}, Lcom/android/settings/aicp/NetworkTrafficFragment;->NetworkTrafficColorReset()V
+    invoke-direct {p0}, Lcom/android/settings_ext/aicp/NetworkTrafficFragment;->NetworkTrafficColorReset()V
 
     return-void
 .end method
@@ -134,7 +134,7 @@
 
     .prologue
     .line 241
-    invoke-virtual {p0}, Lcom/android/settings/aicp/NetworkTrafficFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/aicp/NetworkTrafficFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v1
 
@@ -150,7 +150,7 @@
 
     move-result v1
 
-    iput v1, p0, Lcom/android/settings/aicp/NetworkTrafficFragment;->MASK_METER:I
+    iput v1, p0, Lcom/android/settings_ext/aicp/NetworkTrafficFragment;->MASK_METER:I
 
     .line 243
     const v1, 0x7f0d0009
@@ -159,7 +159,7 @@
 
     move-result v1
 
-    iput v1, p0, Lcom/android/settings/aicp/NetworkTrafficFragment;->MASK_TEXT:I
+    iput v1, p0, Lcom/android/settings_ext/aicp/NetworkTrafficFragment;->MASK_TEXT:I
 
     .line 244
     const v1, 0x7f0d000a
@@ -168,7 +168,7 @@
 
     move-result v1
 
-    iput v1, p0, Lcom/android/settings/aicp/NetworkTrafficFragment;->MASK_UP:I
+    iput v1, p0, Lcom/android/settings_ext/aicp/NetworkTrafficFragment;->MASK_UP:I
 
     .line 245
     const v1, 0x7f0d000b
@@ -177,7 +177,7 @@
 
     move-result v1
 
-    iput v1, p0, Lcom/android/settings/aicp/NetworkTrafficFragment;->MASK_DOWN:I
+    iput v1, p0, Lcom/android/settings_ext/aicp/NetworkTrafficFragment;->MASK_DOWN:I
 
     .line 246
     const v1, 0x7f0d000c
@@ -186,7 +186,7 @@
 
     move-result v1
 
-    iput v1, p0, Lcom/android/settings/aicp/NetworkTrafficFragment;->MASK_UNIT:I
+    iput v1, p0, Lcom/android/settings_ext/aicp/NetworkTrafficFragment;->MASK_UNIT:I
 
     .line 247
     const v1, 0x7f0d000d
@@ -195,7 +195,7 @@
 
     move-result v1
 
-    iput v1, p0, Lcom/android/settings/aicp/NetworkTrafficFragment;->MASK_PERIOD:I
+    iput v1, p0, Lcom/android/settings_ext/aicp/NetworkTrafficFragment;->MASK_PERIOD:I
 
     .line 248
     return-void
@@ -208,7 +208,7 @@
     .line 161
     new-instance v0, Landroid/app/AlertDialog$Builder;
 
-    invoke-virtual {p0}, Lcom/android/settings/aicp/NetworkTrafficFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/aicp/NetworkTrafficFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v1
 
@@ -228,9 +228,9 @@
     .line 164
     const v1, 0x7f090a29
 
-    new-instance v2, Lcom/android/settings/aicp/NetworkTrafficFragment$1;
+    new-instance v2, Lcom/android/settings_ext/aicp/NetworkTrafficFragment$1;
 
-    invoke-direct {v2, p0}, Lcom/android/settings/aicp/NetworkTrafficFragment$1;-><init>(Lcom/android/settings/aicp/NetworkTrafficFragment;)V
+    invoke-direct {v2, p0}, Lcom/android/settings_ext/aicp/NetworkTrafficFragment$1;-><init>(Lcom/android/settings_ext/aicp/NetworkTrafficFragment;)V
 
     invoke-virtual {v0, v1, v2}, Landroid/app/AlertDialog$Builder;->setPositiveButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
@@ -290,34 +290,34 @@
     if-gtz p1, :cond_0
 
     .line 254
-    iget-object v0, p0, Lcom/android/settings/aicp/NetworkTrafficFragment;->mNetTrafficMonitor:Landroid/preference/ListPreference;
+    iget-object v0, p0, Lcom/android/settings_ext/aicp/NetworkTrafficFragment;->mNetTrafficMonitor:Landroid/preference/ListPreference;
 
     invoke-virtual {v0, v2}, Landroid/preference/ListPreference;->setEnabled(Z)V
 
     .line 255
-    iget-object v0, p0, Lcom/android/settings/aicp/NetworkTrafficFragment;->mNetTrafficColor:Lnet/margaritov/preference/colorpicker/ColorPickerPreference;
+    iget-object v0, p0, Lcom/android/settings_ext/aicp/NetworkTrafficFragment;->mNetTrafficColor:Lnet/margaritov/preference/colorpicker/ColorPickerPreference;
 
     invoke-virtual {v0, v2}, Lnet/margaritov/preference/colorpicker/ColorPickerPreference;->setEnabled(Z)V
 
     .line 256
-    iget-object v0, p0, Lcom/android/settings/aicp/NetworkTrafficFragment;->mNetTrafficPeriod:Landroid/preference/ListPreference;
+    iget-object v0, p0, Lcom/android/settings_ext/aicp/NetworkTrafficFragment;->mNetTrafficPeriod:Landroid/preference/ListPreference;
 
     invoke-virtual {v0, v2}, Landroid/preference/ListPreference;->setEnabled(Z)V
 
     .line 257
-    iget-object v0, p0, Lcom/android/settings/aicp/NetworkTrafficFragment;->mNetTrafficUnit:Landroid/preference/ListPreference;
+    iget-object v0, p0, Lcom/android/settings_ext/aicp/NetworkTrafficFragment;->mNetTrafficUnit:Landroid/preference/ListPreference;
 
     invoke-virtual {v0, v2}, Landroid/preference/ListPreference;->setEnabled(Z)V
 
     .line 258
-    iget-object v0, p0, Lcom/android/settings/aicp/NetworkTrafficFragment;->mNetTrafficAutohide:Landroid/preference/SwitchPreference;
+    iget-object v0, p0, Lcom/android/settings_ext/aicp/NetworkTrafficFragment;->mNetTrafficAutohide:Landroid/preference/SwitchPreference;
 
     invoke-virtual {v0, v2}, Landroid/preference/SwitchPreference;->setEnabled(Z)V
 
     .line 259
-    iget-object v0, p0, Lcom/android/settings/aicp/NetworkTrafficFragment;->mNetTrafficAutohideThreshold:Lcom/android/settings/widget/SeekBarPreferenceCham;
+    iget-object v0, p0, Lcom/android/settings_ext/aicp/NetworkTrafficFragment;->mNetTrafficAutohideThreshold:Lcom/android/settings_ext/widget/SeekBarPreferenceCham;
 
-    invoke-virtual {v0, v2}, Lcom/android/settings/widget/SeekBarPreferenceCham;->setEnabled(Z)V
+    invoke-virtual {v0, v2}, Lcom/android/settings_ext/widget/SeekBarPreferenceCham;->setEnabled(Z)V
 
     .line 284
     :goto_0
@@ -325,12 +325,12 @@
 
     .line 262
     :cond_0
-    iget-object v0, p0, Lcom/android/settings/aicp/NetworkTrafficFragment;->mNetTrafficMonitor:Landroid/preference/ListPreference;
+    iget-object v0, p0, Lcom/android/settings_ext/aicp/NetworkTrafficFragment;->mNetTrafficMonitor:Landroid/preference/ListPreference;
 
     invoke-virtual {v0, v1}, Landroid/preference/ListPreference;->setEnabled(Z)V
 
     .line 263
-    iget-object v0, p0, Lcom/android/settings/aicp/NetworkTrafficFragment;->mNetTrafficPeriod:Landroid/preference/ListPreference;
+    iget-object v0, p0, Lcom/android/settings_ext/aicp/NetworkTrafficFragment;->mNetTrafficPeriod:Landroid/preference/ListPreference;
 
     invoke-virtual {v0, v1}, Landroid/preference/ListPreference;->setEnabled(Z)V
 
@@ -338,24 +338,24 @@
     if-ne p1, v1, :cond_1
 
     .line 267
-    iget-object v0, p0, Lcom/android/settings/aicp/NetworkTrafficFragment;->mNetTrafficColor:Lnet/margaritov/preference/colorpicker/ColorPickerPreference;
+    iget-object v0, p0, Lcom/android/settings_ext/aicp/NetworkTrafficFragment;->mNetTrafficColor:Lnet/margaritov/preference/colorpicker/ColorPickerPreference;
 
     invoke-virtual {v0, v2}, Lnet/margaritov/preference/colorpicker/ColorPickerPreference;->setEnabled(Z)V
 
     .line 268
-    iget-object v0, p0, Lcom/android/settings/aicp/NetworkTrafficFragment;->mNetTrafficUnit:Landroid/preference/ListPreference;
+    iget-object v0, p0, Lcom/android/settings_ext/aicp/NetworkTrafficFragment;->mNetTrafficUnit:Landroid/preference/ListPreference;
 
     invoke-virtual {v0, v2}, Landroid/preference/ListPreference;->setEnabled(Z)V
 
     .line 269
-    iget-object v0, p0, Lcom/android/settings/aicp/NetworkTrafficFragment;->mNetTrafficAutohide:Landroid/preference/SwitchPreference;
+    iget-object v0, p0, Lcom/android/settings_ext/aicp/NetworkTrafficFragment;->mNetTrafficAutohide:Landroid/preference/SwitchPreference;
 
     invoke-virtual {v0, v2}, Landroid/preference/SwitchPreference;->setEnabled(Z)V
 
     .line 270
-    iget-object v0, p0, Lcom/android/settings/aicp/NetworkTrafficFragment;->mNetTrafficAutohideThreshold:Lcom/android/settings/widget/SeekBarPreferenceCham;
+    iget-object v0, p0, Lcom/android/settings_ext/aicp/NetworkTrafficFragment;->mNetTrafficAutohideThreshold:Lcom/android/settings_ext/widget/SeekBarPreferenceCham;
 
-    invoke-virtual {v0, v2}, Lcom/android/settings/widget/SeekBarPreferenceCham;->setEnabled(Z)V
+    invoke-virtual {v0, v2}, Lcom/android/settings_ext/widget/SeekBarPreferenceCham;->setEnabled(Z)V
 
     goto :goto_0
 
@@ -366,47 +366,47 @@
     if-ne p1, v0, :cond_2
 
     .line 272
-    iget-object v0, p0, Lcom/android/settings/aicp/NetworkTrafficFragment;->mNetTrafficColor:Lnet/margaritov/preference/colorpicker/ColorPickerPreference;
+    iget-object v0, p0, Lcom/android/settings_ext/aicp/NetworkTrafficFragment;->mNetTrafficColor:Lnet/margaritov/preference/colorpicker/ColorPickerPreference;
 
     invoke-virtual {v0, v1}, Lnet/margaritov/preference/colorpicker/ColorPickerPreference;->setEnabled(Z)V
 
     .line 273
-    iget-object v0, p0, Lcom/android/settings/aicp/NetworkTrafficFragment;->mNetTrafficUnit:Landroid/preference/ListPreference;
+    iget-object v0, p0, Lcom/android/settings_ext/aicp/NetworkTrafficFragment;->mNetTrafficUnit:Landroid/preference/ListPreference;
 
     invoke-virtual {v0, v1}, Landroid/preference/ListPreference;->setEnabled(Z)V
 
     .line 274
-    iget-object v0, p0, Lcom/android/settings/aicp/NetworkTrafficFragment;->mNetTrafficAutohide:Landroid/preference/SwitchPreference;
+    iget-object v0, p0, Lcom/android/settings_ext/aicp/NetworkTrafficFragment;->mNetTrafficAutohide:Landroid/preference/SwitchPreference;
 
     invoke-virtual {v0, v1}, Landroid/preference/SwitchPreference;->setEnabled(Z)V
 
     .line 275
-    iget-object v0, p0, Lcom/android/settings/aicp/NetworkTrafficFragment;->mNetTrafficAutohideThreshold:Lcom/android/settings/widget/SeekBarPreferenceCham;
+    iget-object v0, p0, Lcom/android/settings_ext/aicp/NetworkTrafficFragment;->mNetTrafficAutohideThreshold:Lcom/android/settings_ext/widget/SeekBarPreferenceCham;
 
-    invoke-virtual {v0, v1}, Lcom/android/settings/widget/SeekBarPreferenceCham;->setEnabled(Z)V
+    invoke-virtual {v0, v1}, Lcom/android/settings_ext/widget/SeekBarPreferenceCham;->setEnabled(Z)V
 
     goto :goto_0
 
     .line 278
     :cond_2
-    iget-object v0, p0, Lcom/android/settings/aicp/NetworkTrafficFragment;->mNetTrafficColor:Lnet/margaritov/preference/colorpicker/ColorPickerPreference;
+    iget-object v0, p0, Lcom/android/settings_ext/aicp/NetworkTrafficFragment;->mNetTrafficColor:Lnet/margaritov/preference/colorpicker/ColorPickerPreference;
 
     invoke-virtual {v0, v1}, Lnet/margaritov/preference/colorpicker/ColorPickerPreference;->setEnabled(Z)V
 
     .line 279
-    iget-object v0, p0, Lcom/android/settings/aicp/NetworkTrafficFragment;->mNetTrafficUnit:Landroid/preference/ListPreference;
+    iget-object v0, p0, Lcom/android/settings_ext/aicp/NetworkTrafficFragment;->mNetTrafficUnit:Landroid/preference/ListPreference;
 
     invoke-virtual {v0, v1}, Landroid/preference/ListPreference;->setEnabled(Z)V
 
     .line 280
-    iget-object v0, p0, Lcom/android/settings/aicp/NetworkTrafficFragment;->mNetTrafficAutohide:Landroid/preference/SwitchPreference;
+    iget-object v0, p0, Lcom/android/settings_ext/aicp/NetworkTrafficFragment;->mNetTrafficAutohide:Landroid/preference/SwitchPreference;
 
     invoke-virtual {v0, v1}, Landroid/preference/SwitchPreference;->setEnabled(Z)V
 
     .line 281
-    iget-object v0, p0, Lcom/android/settings/aicp/NetworkTrafficFragment;->mNetTrafficAutohideThreshold:Lcom/android/settings/widget/SeekBarPreferenceCham;
+    iget-object v0, p0, Lcom/android/settings_ext/aicp/NetworkTrafficFragment;->mNetTrafficAutohideThreshold:Lcom/android/settings_ext/widget/SeekBarPreferenceCham;
 
-    invoke-virtual {v0, v1}, Lcom/android/settings/widget/SeekBarPreferenceCham;->setEnabled(Z)V
+    invoke-virtual {v0, v1}, Lcom/android/settings_ext/widget/SeekBarPreferenceCham;->setEnabled(Z)V
 
     goto :goto_0
 .end method
@@ -425,38 +425,38 @@
     const/4 v8, 0x1
 
     .line 68
-    invoke-super {p0, p1}, Lcom/android/settings/SettingsPreferenceFragment;->onCreate(Landroid/os/Bundle;)V
+    invoke-super {p0, p1}, Lcom/android/settings_ext/SettingsPreferenceFragment;->onCreate(Landroid/os/Bundle;)V
 
     .line 70
     const v7, 0x7f060005
 
-    invoke-virtual {p0, v7}, Lcom/android/settings/aicp/NetworkTrafficFragment;->addPreferencesFromResource(I)V
+    invoke-virtual {p0, v7}, Lcom/android/settings_ext/aicp/NetworkTrafficFragment;->addPreferencesFromResource(I)V
 
     .line 72
-    invoke-direct {p0}, Lcom/android/settings/aicp/NetworkTrafficFragment;->loadResources()V
+    invoke-direct {p0}, Lcom/android/settings_ext/aicp/NetworkTrafficFragment;->loadResources()V
 
     .line 75
     const/4 v0, 0x0
 
     .line 76
     .local v0, "defaultState":I
-    iget v7, p0, Lcom/android/settings/aicp/NetworkTrafficFragment;->MASK_METER:I
+    iget v7, p0, Lcom/android/settings_ext/aicp/NetworkTrafficFragment;->MASK_METER:I
 
-    invoke-direct {p0, v0, v7, v8}, Lcom/android/settings/aicp/NetworkTrafficFragment;->setBit(IIZ)I
+    invoke-direct {p0, v0, v7, v8}, Lcom/android/settings_ext/aicp/NetworkTrafficFragment;->setBit(IIZ)I
 
     move-result v0
 
     .line 77
-    iget v7, p0, Lcom/android/settings/aicp/NetworkTrafficFragment;->MASK_DOWN:I
+    iget v7, p0, Lcom/android/settings_ext/aicp/NetworkTrafficFragment;->MASK_DOWN:I
 
-    invoke-direct {p0, v0, v7, v8}, Lcom/android/settings/aicp/NetworkTrafficFragment;->setBit(IIZ)I
+    invoke-direct {p0, v0, v7, v8}, Lcom/android/settings_ext/aicp/NetworkTrafficFragment;->setBit(IIZ)I
 
     move-result v0
 
     .line 78
-    iget v7, p0, Lcom/android/settings/aicp/NetworkTrafficFragment;->MASK_PERIOD:I
+    iget v7, p0, Lcom/android/settings_ext/aicp/NetworkTrafficFragment;->MASK_PERIOD:I
 
-    invoke-direct {p0, v0, v7, v9}, Lcom/android/settings/aicp/NetworkTrafficFragment;->setBit(IIZ)I
+    invoke-direct {p0, v0, v7, v9}, Lcom/android/settings_ext/aicp/NetworkTrafficFragment;->setBit(IIZ)I
 
     move-result v7
 
@@ -465,13 +465,13 @@
     add-int v0, v7, v10
 
     .line 80
-    invoke-virtual {p0}, Lcom/android/settings/aicp/NetworkTrafficFragment;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
+    invoke-virtual {p0}, Lcom/android/settings_ext/aicp/NetworkTrafficFragment;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
 
     move-result-object v5
 
     .line 81
     .local v5, "prefSet":Landroid/preference/PreferenceScreen;
-    invoke-virtual {p0}, Lcom/android/settings/aicp/NetworkTrafficFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/aicp/NetworkTrafficFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v7
 
@@ -489,7 +489,7 @@
 
     check-cast v7, Landroid/preference/ListPreference;
 
-    iput-object v7, p0, Lcom/android/settings/aicp/NetworkTrafficFragment;->mNetTrafficDisplay:Landroid/preference/ListPreference;
+    iput-object v7, p0, Lcom/android/settings_ext/aicp/NetworkTrafficFragment;->mNetTrafficDisplay:Landroid/preference/ListPreference;
 
     .line 84
     const-string v7, "network_traffic_monitor"
@@ -500,7 +500,7 @@
 
     check-cast v7, Landroid/preference/ListPreference;
 
-    iput-object v7, p0, Lcom/android/settings/aicp/NetworkTrafficFragment;->mNetTrafficMonitor:Landroid/preference/ListPreference;
+    iput-object v7, p0, Lcom/android/settings_ext/aicp/NetworkTrafficFragment;->mNetTrafficMonitor:Landroid/preference/ListPreference;
 
     .line 85
     const-string v7, "network_traffic_period"
@@ -511,7 +511,7 @@
 
     check-cast v7, Landroid/preference/ListPreference;
 
-    iput-object v7, p0, Lcom/android/settings/aicp/NetworkTrafficFragment;->mNetTrafficPeriod:Landroid/preference/ListPreference;
+    iput-object v7, p0, Lcom/android/settings_ext/aicp/NetworkTrafficFragment;->mNetTrafficPeriod:Landroid/preference/ListPreference;
 
     .line 86
     const-string v7, "network_traffic_unit"
@@ -522,7 +522,7 @@
 
     check-cast v7, Landroid/preference/ListPreference;
 
-    iput-object v7, p0, Lcom/android/settings/aicp/NetworkTrafficFragment;->mNetTrafficUnit:Landroid/preference/ListPreference;
+    iput-object v7, p0, Lcom/android/settings_ext/aicp/NetworkTrafficFragment;->mNetTrafficUnit:Landroid/preference/ListPreference;
 
     .line 88
     const-string v7, "network_traffic_color"
@@ -533,15 +533,15 @@
 
     check-cast v7, Lnet/margaritov/preference/colorpicker/ColorPickerPreference;
 
-    iput-object v7, p0, Lcom/android/settings/aicp/NetworkTrafficFragment;->mNetTrafficColor:Lnet/margaritov/preference/colorpicker/ColorPickerPreference;
+    iput-object v7, p0, Lcom/android/settings_ext/aicp/NetworkTrafficFragment;->mNetTrafficColor:Lnet/margaritov/preference/colorpicker/ColorPickerPreference;
 
     .line 90
-    iget-object v7, p0, Lcom/android/settings/aicp/NetworkTrafficFragment;->mNetTrafficColor:Lnet/margaritov/preference/colorpicker/ColorPickerPreference;
+    iget-object v7, p0, Lcom/android/settings_ext/aicp/NetworkTrafficFragment;->mNetTrafficColor:Lnet/margaritov/preference/colorpicker/ColorPickerPreference;
 
     invoke-virtual {v7, p0}, Lnet/margaritov/preference/colorpicker/ColorPickerPreference;->setOnPreferenceChangeListener(Landroid/preference/Preference$OnPreferenceChangeListener;)V
 
     .line 91
-    invoke-virtual {p0}, Lcom/android/settings/aicp/NetworkTrafficFragment;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/settings_ext/aicp/NetworkTrafficFragment;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v7
 
@@ -573,12 +573,12 @@
 
     .line 94
     .local v1, "hexColor":Ljava/lang/String;
-    iget-object v7, p0, Lcom/android/settings/aicp/NetworkTrafficFragment;->mNetTrafficColor:Lnet/margaritov/preference/colorpicker/ColorPickerPreference;
+    iget-object v7, p0, Lcom/android/settings_ext/aicp/NetworkTrafficFragment;->mNetTrafficColor:Lnet/margaritov/preference/colorpicker/ColorPickerPreference;
 
     invoke-virtual {v7, v1}, Lnet/margaritov/preference/colorpicker/ColorPickerPreference;->setSummary(Ljava/lang/CharSequence;)V
 
     .line 95
-    iget-object v7, p0, Lcom/android/settings/aicp/NetworkTrafficFragment;->mNetTrafficColor:Lnet/margaritov/preference/colorpicker/ColorPickerPreference;
+    iget-object v7, p0, Lcom/android/settings_ext/aicp/NetworkTrafficFragment;->mNetTrafficColor:Lnet/margaritov/preference/colorpicker/ColorPickerPreference;
 
     invoke-virtual {v7, v2}, Lnet/margaritov/preference/colorpicker/ColorPickerPreference;->setNewPreviewColor(I)V
 
@@ -591,12 +591,12 @@
 
     check-cast v7, Landroid/preference/SwitchPreference;
 
-    iput-object v7, p0, Lcom/android/settings/aicp/NetworkTrafficFragment;->mNetTrafficAutohide:Landroid/preference/SwitchPreference;
+    iput-object v7, p0, Lcom/android/settings_ext/aicp/NetworkTrafficFragment;->mNetTrafficAutohide:Landroid/preference/SwitchPreference;
 
     .line 99
-    iget-object v10, p0, Lcom/android/settings/aicp/NetworkTrafficFragment;->mNetTrafficAutohide:Landroid/preference/SwitchPreference;
+    iget-object v10, p0, Lcom/android/settings_ext/aicp/NetworkTrafficFragment;->mNetTrafficAutohide:Landroid/preference/SwitchPreference;
 
-    invoke-virtual {p0}, Lcom/android/settings/aicp/NetworkTrafficFragment;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/settings_ext/aicp/NetworkTrafficFragment;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v7
 
@@ -614,7 +614,7 @@
     invoke-virtual {v10, v7}, Landroid/preference/SwitchPreference;->setChecked(Z)V
 
     .line 101
-    iget-object v7, p0, Lcom/android/settings/aicp/NetworkTrafficFragment;->mNetTrafficAutohide:Landroid/preference/SwitchPreference;
+    iget-object v7, p0, Lcom/android/settings_ext/aicp/NetworkTrafficFragment;->mNetTrafficAutohide:Landroid/preference/SwitchPreference;
 
     invoke-virtual {v7, p0}, Landroid/preference/SwitchPreference;->setOnPreferenceChangeListener(Landroid/preference/Preference$OnPreferenceChangeListener;)V
 
@@ -625,12 +625,12 @@
 
     move-result-object v7
 
-    check-cast v7, Lcom/android/settings/widget/SeekBarPreferenceCham;
+    check-cast v7, Lcom/android/settings_ext/widget/SeekBarPreferenceCham;
 
-    iput-object v7, p0, Lcom/android/settings/aicp/NetworkTrafficFragment;->mNetTrafficAutohideThreshold:Lcom/android/settings/widget/SeekBarPreferenceCham;
+    iput-object v7, p0, Lcom/android/settings_ext/aicp/NetworkTrafficFragment;->mNetTrafficAutohideThreshold:Lcom/android/settings_ext/widget/SeekBarPreferenceCham;
 
     .line 105
-    invoke-virtual {p0}, Lcom/android/settings/aicp/NetworkTrafficFragment;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/settings_ext/aicp/NetworkTrafficFragment;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v7
 
@@ -644,14 +644,14 @@
 
     .line 107
     .local v4, "netTrafficAutohideThreshold":I
-    iget-object v7, p0, Lcom/android/settings/aicp/NetworkTrafficFragment;->mNetTrafficAutohideThreshold:Lcom/android/settings/widget/SeekBarPreferenceCham;
+    iget-object v7, p0, Lcom/android/settings_ext/aicp/NetworkTrafficFragment;->mNetTrafficAutohideThreshold:Lcom/android/settings_ext/widget/SeekBarPreferenceCham;
 
-    invoke-virtual {v7, v4}, Lcom/android/settings/widget/SeekBarPreferenceCham;->setValue(I)V
+    invoke-virtual {v7, v4}, Lcom/android/settings_ext/widget/SeekBarPreferenceCham;->setValue(I)V
 
     .line 108
-    iget-object v7, p0, Lcom/android/settings/aicp/NetworkTrafficFragment;->mNetTrafficAutohideThreshold:Lcom/android/settings/widget/SeekBarPreferenceCham;
+    iget-object v7, p0, Lcom/android/settings_ext/aicp/NetworkTrafficFragment;->mNetTrafficAutohideThreshold:Lcom/android/settings_ext/widget/SeekBarPreferenceCham;
 
-    invoke-virtual {v7, p0}, Lcom/android/settings/widget/SeekBarPreferenceCham;->setOnPreferenceChangeListener(Landroid/preference/Preference$OnPreferenceChangeListener;)V
+    invoke-virtual {v7, p0}, Lcom/android/settings_ext/widget/SeekBarPreferenceCham;->setOnPreferenceChangeListener(Landroid/preference/Preference$OnPreferenceChangeListener;)V
 
     .line 111
     invoke-static {}, Landroid/net/TrafficStats;->getTotalTxBytes()J
@@ -671,7 +671,7 @@
     if-eqz v7, :cond_1
 
     .line 113
-    invoke-virtual {p0}, Lcom/android/settings/aicp/NetworkTrafficFragment;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/settings_ext/aicp/NetworkTrafficFragment;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v7
 
@@ -681,14 +681,14 @@
 
     move-result v7
 
-    iput v7, p0, Lcom/android/settings/aicp/NetworkTrafficFragment;->mNetTrafficVal:I
+    iput v7, p0, Lcom/android/settings_ext/aicp/NetworkTrafficFragment;->mNetTrafficVal:I
 
     .line 115
-    iget v7, p0, Lcom/android/settings/aicp/NetworkTrafficFragment;->mNetTrafficVal:I
+    iget v7, p0, Lcom/android/settings_ext/aicp/NetworkTrafficFragment;->mNetTrafficVal:I
 
-    iget v10, p0, Lcom/android/settings/aicp/NetworkTrafficFragment;->MASK_METER:I
+    iget v10, p0, Lcom/android/settings_ext/aicp/NetworkTrafficFragment;->MASK_METER:I
 
-    iget v11, p0, Lcom/android/settings/aicp/NetworkTrafficFragment;->MASK_TEXT:I
+    iget v11, p0, Lcom/android/settings_ext/aicp/NetworkTrafficFragment;->MASK_TEXT:I
 
     add-int/2addr v10, v11
 
@@ -696,7 +696,7 @@
 
     .line 116
     .local v3, "intIndex":I
-    iget-object v7, p0, Lcom/android/settings/aicp/NetworkTrafficFragment;->mNetTrafficDisplay:Landroid/preference/ListPreference;
+    iget-object v7, p0, Lcom/android/settings_ext/aicp/NetworkTrafficFragment;->mNetTrafficDisplay:Landroid/preference/ListPreference;
 
     invoke-static {v3}, Ljava/lang/String;->valueOf(I)Ljava/lang/String;
 
@@ -707,10 +707,10 @@
     move-result v3
 
     .line 117
-    invoke-direct {p0, v3}, Lcom/android/settings/aicp/NetworkTrafficFragment;->updateNetworkTrafficState(I)V
+    invoke-direct {p0, v3}, Lcom/android/settings_ext/aicp/NetworkTrafficFragment;->updateNetworkTrafficState(I)V
 
     .line 119
-    iget-object v7, p0, Lcom/android/settings/aicp/NetworkTrafficFragment;->mNetTrafficDisplay:Landroid/preference/ListPreference;
+    iget-object v7, p0, Lcom/android/settings_ext/aicp/NetworkTrafficFragment;->mNetTrafficDisplay:Landroid/preference/ListPreference;
 
     if-ltz v3, :cond_3
 
@@ -719,9 +719,9 @@
     invoke-virtual {v7, v3}, Landroid/preference/ListPreference;->setValueIndex(I)V
 
     .line 120
-    iget-object v7, p0, Lcom/android/settings/aicp/NetworkTrafficFragment;->mNetTrafficDisplay:Landroid/preference/ListPreference;
+    iget-object v7, p0, Lcom/android/settings_ext/aicp/NetworkTrafficFragment;->mNetTrafficDisplay:Landroid/preference/ListPreference;
 
-    iget-object v10, p0, Lcom/android/settings/aicp/NetworkTrafficFragment;->mNetTrafficDisplay:Landroid/preference/ListPreference;
+    iget-object v10, p0, Lcom/android/settings_ext/aicp/NetworkTrafficFragment;->mNetTrafficDisplay:Landroid/preference/ListPreference;
 
     invoke-virtual {v10}, Landroid/preference/ListPreference;->getEntry()Ljava/lang/CharSequence;
 
@@ -730,16 +730,16 @@
     invoke-virtual {v7, v10}, Landroid/preference/ListPreference;->setSummary(Ljava/lang/CharSequence;)V
 
     .line 121
-    iget-object v7, p0, Lcom/android/settings/aicp/NetworkTrafficFragment;->mNetTrafficDisplay:Landroid/preference/ListPreference;
+    iget-object v7, p0, Lcom/android/settings_ext/aicp/NetworkTrafficFragment;->mNetTrafficDisplay:Landroid/preference/ListPreference;
 
     invoke-virtual {v7, p0}, Landroid/preference/ListPreference;->setOnPreferenceChangeListener(Landroid/preference/Preference$OnPreferenceChangeListener;)V
 
     .line 123
-    iget v7, p0, Lcom/android/settings/aicp/NetworkTrafficFragment;->mNetTrafficVal:I
+    iget v7, p0, Lcom/android/settings_ext/aicp/NetworkTrafficFragment;->mNetTrafficVal:I
 
-    iget v10, p0, Lcom/android/settings/aicp/NetworkTrafficFragment;->MASK_UP:I
+    iget v10, p0, Lcom/android/settings_ext/aicp/NetworkTrafficFragment;->MASK_UP:I
 
-    iget v11, p0, Lcom/android/settings/aicp/NetworkTrafficFragment;->MASK_DOWN:I
+    iget v11, p0, Lcom/android/settings_ext/aicp/NetworkTrafficFragment;->MASK_DOWN:I
 
     add-int/2addr v10, v11
 
@@ -747,7 +747,7 @@
 
     .line 124
     .restart local v3    # "intIndex":I
-    iget-object v7, p0, Lcom/android/settings/aicp/NetworkTrafficFragment;->mNetTrafficMonitor:Landroid/preference/ListPreference;
+    iget-object v7, p0, Lcom/android/settings_ext/aicp/NetworkTrafficFragment;->mNetTrafficMonitor:Landroid/preference/ListPreference;
 
     invoke-static {v3}, Ljava/lang/String;->valueOf(I)Ljava/lang/String;
 
@@ -758,7 +758,7 @@
     move-result v3
 
     .line 125
-    iget-object v7, p0, Lcom/android/settings/aicp/NetworkTrafficFragment;->mNetTrafficMonitor:Landroid/preference/ListPreference;
+    iget-object v7, p0, Lcom/android/settings_ext/aicp/NetworkTrafficFragment;->mNetTrafficMonitor:Landroid/preference/ListPreference;
 
     if-ltz v3, :cond_4
 
@@ -767,9 +767,9 @@
     invoke-virtual {v7, v3}, Landroid/preference/ListPreference;->setValueIndex(I)V
 
     .line 126
-    iget-object v7, p0, Lcom/android/settings/aicp/NetworkTrafficFragment;->mNetTrafficMonitor:Landroid/preference/ListPreference;
+    iget-object v7, p0, Lcom/android/settings_ext/aicp/NetworkTrafficFragment;->mNetTrafficMonitor:Landroid/preference/ListPreference;
 
-    iget-object v10, p0, Lcom/android/settings/aicp/NetworkTrafficFragment;->mNetTrafficMonitor:Landroid/preference/ListPreference;
+    iget-object v10, p0, Lcom/android/settings_ext/aicp/NetworkTrafficFragment;->mNetTrafficMonitor:Landroid/preference/ListPreference;
 
     invoke-virtual {v10}, Landroid/preference/ListPreference;->getEntry()Ljava/lang/CharSequence;
 
@@ -778,14 +778,14 @@
     invoke-virtual {v7, v10}, Landroid/preference/ListPreference;->setSummary(Ljava/lang/CharSequence;)V
 
     .line 127
-    iget-object v7, p0, Lcom/android/settings/aicp/NetworkTrafficFragment;->mNetTrafficMonitor:Landroid/preference/ListPreference;
+    iget-object v7, p0, Lcom/android/settings_ext/aicp/NetworkTrafficFragment;->mNetTrafficMonitor:Landroid/preference/ListPreference;
 
     invoke-virtual {v7, p0}, Landroid/preference/ListPreference;->setOnPreferenceChangeListener(Landroid/preference/Preference$OnPreferenceChangeListener;)V
 
     .line 129
-    iget v7, p0, Lcom/android/settings/aicp/NetworkTrafficFragment;->mNetTrafficVal:I
+    iget v7, p0, Lcom/android/settings_ext/aicp/NetworkTrafficFragment;->mNetTrafficVal:I
 
-    iget v10, p0, Lcom/android/settings/aicp/NetworkTrafficFragment;->MASK_PERIOD:I
+    iget v10, p0, Lcom/android/settings_ext/aicp/NetworkTrafficFragment;->MASK_PERIOD:I
 
     and-int/2addr v7, v10
 
@@ -793,7 +793,7 @@
 
     .line 130
     .restart local v3    # "intIndex":I
-    iget-object v7, p0, Lcom/android/settings/aicp/NetworkTrafficFragment;->mNetTrafficPeriod:Landroid/preference/ListPreference;
+    iget-object v7, p0, Lcom/android/settings_ext/aicp/NetworkTrafficFragment;->mNetTrafficPeriod:Landroid/preference/ListPreference;
 
     invoke-static {v3}, Ljava/lang/String;->valueOf(I)Ljava/lang/String;
 
@@ -804,7 +804,7 @@
     move-result v3
 
     .line 131
-    iget-object v7, p0, Lcom/android/settings/aicp/NetworkTrafficFragment;->mNetTrafficPeriod:Landroid/preference/ListPreference;
+    iget-object v7, p0, Lcom/android/settings_ext/aicp/NetworkTrafficFragment;->mNetTrafficPeriod:Landroid/preference/ListPreference;
 
     if-ltz v3, :cond_5
 
@@ -813,9 +813,9 @@
     invoke-virtual {v7, v3}, Landroid/preference/ListPreference;->setValueIndex(I)V
 
     .line 132
-    iget-object v7, p0, Lcom/android/settings/aicp/NetworkTrafficFragment;->mNetTrafficPeriod:Landroid/preference/ListPreference;
+    iget-object v7, p0, Lcom/android/settings_ext/aicp/NetworkTrafficFragment;->mNetTrafficPeriod:Landroid/preference/ListPreference;
 
-    iget-object v10, p0, Lcom/android/settings/aicp/NetworkTrafficFragment;->mNetTrafficPeriod:Landroid/preference/ListPreference;
+    iget-object v10, p0, Lcom/android/settings_ext/aicp/NetworkTrafficFragment;->mNetTrafficPeriod:Landroid/preference/ListPreference;
 
     invoke-virtual {v10}, Landroid/preference/ListPreference;->getEntry()Ljava/lang/CharSequence;
 
@@ -824,18 +824,18 @@
     invoke-virtual {v7, v10}, Landroid/preference/ListPreference;->setSummary(Ljava/lang/CharSequence;)V
 
     .line 133
-    iget-object v7, p0, Lcom/android/settings/aicp/NetworkTrafficFragment;->mNetTrafficPeriod:Landroid/preference/ListPreference;
+    iget-object v7, p0, Lcom/android/settings_ext/aicp/NetworkTrafficFragment;->mNetTrafficPeriod:Landroid/preference/ListPreference;
 
     invoke-virtual {v7, p0}, Landroid/preference/ListPreference;->setOnPreferenceChangeListener(Landroid/preference/Preference$OnPreferenceChangeListener;)V
 
     .line 135
-    iget-object v7, p0, Lcom/android/settings/aicp/NetworkTrafficFragment;->mNetTrafficUnit:Landroid/preference/ListPreference;
+    iget-object v7, p0, Lcom/android/settings_ext/aicp/NetworkTrafficFragment;->mNetTrafficUnit:Landroid/preference/ListPreference;
 
-    iget v10, p0, Lcom/android/settings/aicp/NetworkTrafficFragment;->mNetTrafficVal:I
+    iget v10, p0, Lcom/android/settings_ext/aicp/NetworkTrafficFragment;->mNetTrafficVal:I
 
-    iget v11, p0, Lcom/android/settings/aicp/NetworkTrafficFragment;->MASK_UNIT:I
+    iget v11, p0, Lcom/android/settings_ext/aicp/NetworkTrafficFragment;->MASK_UNIT:I
 
-    invoke-direct {p0, v10, v11}, Lcom/android/settings/aicp/NetworkTrafficFragment;->getBit(II)Z
+    invoke-direct {p0, v10, v11}, Lcom/android/settings_ext/aicp/NetworkTrafficFragment;->getBit(II)Z
 
     move-result v10
 
@@ -847,9 +847,9 @@
     invoke-virtual {v7, v9}, Landroid/preference/ListPreference;->setValueIndex(I)V
 
     .line 136
-    iget-object v7, p0, Lcom/android/settings/aicp/NetworkTrafficFragment;->mNetTrafficUnit:Landroid/preference/ListPreference;
+    iget-object v7, p0, Lcom/android/settings_ext/aicp/NetworkTrafficFragment;->mNetTrafficUnit:Landroid/preference/ListPreference;
 
-    iget-object v9, p0, Lcom/android/settings/aicp/NetworkTrafficFragment;->mNetTrafficUnit:Landroid/preference/ListPreference;
+    iget-object v9, p0, Lcom/android/settings_ext/aicp/NetworkTrafficFragment;->mNetTrafficUnit:Landroid/preference/ListPreference;
 
     invoke-virtual {v9}, Landroid/preference/ListPreference;->getEntry()Ljava/lang/CharSequence;
 
@@ -858,13 +858,13 @@
     invoke-virtual {v7, v9}, Landroid/preference/ListPreference;->setSummary(Ljava/lang/CharSequence;)V
 
     .line 137
-    iget-object v7, p0, Lcom/android/settings/aicp/NetworkTrafficFragment;->mNetTrafficUnit:Landroid/preference/ListPreference;
+    iget-object v7, p0, Lcom/android/settings_ext/aicp/NetworkTrafficFragment;->mNetTrafficUnit:Landroid/preference/ListPreference;
 
     invoke-virtual {v7, p0}, Landroid/preference/ListPreference;->setOnPreferenceChangeListener(Landroid/preference/Preference$OnPreferenceChangeListener;)V
 
     .line 139
     :cond_1
-    invoke-virtual {p0, v8}, Lcom/android/settings/aicp/NetworkTrafficFragment;->setHasOptionsMenu(Z)V
+    invoke-virtual {p0, v8}, Lcom/android/settings_ext/aicp/NetworkTrafficFragment;->setHasOptionsMenu(Z)V
 
     .line 140
     return-void
@@ -941,7 +941,7 @@
     packed-switch v0, :pswitch_data_0
 
     .line 156
-    invoke-super {p0, p1}, Lcom/android/settings/SettingsPreferenceFragment;->onContextItemSelected(Landroid/view/MenuItem;)Z
+    invoke-super {p0, p1}, Lcom/android/settings_ext/SettingsPreferenceFragment;->onContextItemSelected(Landroid/view/MenuItem;)Z
 
     move-result v0
 
@@ -950,7 +950,7 @@
 
     .line 153
     :pswitch_0
-    invoke-direct {p0}, Lcom/android/settings/aicp/NetworkTrafficFragment;->resetToDefault()V
+    invoke-direct {p0}, Lcom/android/settings_ext/aicp/NetworkTrafficFragment;->resetToDefault()V
 
     .line 154
     const/4 v0, 0x1
@@ -977,7 +977,7 @@
     const/4 v7, 0x1
 
     .line 184
-    iget-object v6, p0, Lcom/android/settings/aicp/NetworkTrafficFragment;->mNetTrafficDisplay:Landroid/preference/ListPreference;
+    iget-object v6, p0, Lcom/android/settings_ext/aicp/NetworkTrafficFragment;->mNetTrafficDisplay:Landroid/preference/ListPreference;
 
     if-ne p1, v6, :cond_0
 
@@ -996,41 +996,41 @@
 
     .line 186
     .local v3, "intState":I
-    iget v6, p0, Lcom/android/settings/aicp/NetworkTrafficFragment;->mNetTrafficVal:I
+    iget v6, p0, Lcom/android/settings_ext/aicp/NetworkTrafficFragment;->mNetTrafficVal:I
 
-    iget v8, p0, Lcom/android/settings/aicp/NetworkTrafficFragment;->MASK_METER:I
+    iget v8, p0, Lcom/android/settings_ext/aicp/NetworkTrafficFragment;->MASK_METER:I
 
-    iget v9, p0, Lcom/android/settings/aicp/NetworkTrafficFragment;->MASK_METER:I
+    iget v9, p0, Lcom/android/settings_ext/aicp/NetworkTrafficFragment;->MASK_METER:I
 
-    invoke-direct {p0, v3, v9}, Lcom/android/settings/aicp/NetworkTrafficFragment;->getBit(II)Z
+    invoke-direct {p0, v3, v9}, Lcom/android/settings_ext/aicp/NetworkTrafficFragment;->getBit(II)Z
 
     move-result v9
 
-    invoke-direct {p0, v6, v8, v9}, Lcom/android/settings/aicp/NetworkTrafficFragment;->setBit(IIZ)I
+    invoke-direct {p0, v6, v8, v9}, Lcom/android/settings_ext/aicp/NetworkTrafficFragment;->setBit(IIZ)I
 
     move-result v6
 
-    iput v6, p0, Lcom/android/settings/aicp/NetworkTrafficFragment;->mNetTrafficVal:I
+    iput v6, p0, Lcom/android/settings_ext/aicp/NetworkTrafficFragment;->mNetTrafficVal:I
 
     .line 187
-    iget v6, p0, Lcom/android/settings/aicp/NetworkTrafficFragment;->mNetTrafficVal:I
+    iget v6, p0, Lcom/android/settings_ext/aicp/NetworkTrafficFragment;->mNetTrafficVal:I
 
-    iget v8, p0, Lcom/android/settings/aicp/NetworkTrafficFragment;->MASK_TEXT:I
+    iget v8, p0, Lcom/android/settings_ext/aicp/NetworkTrafficFragment;->MASK_TEXT:I
 
-    iget v9, p0, Lcom/android/settings/aicp/NetworkTrafficFragment;->MASK_TEXT:I
+    iget v9, p0, Lcom/android/settings_ext/aicp/NetworkTrafficFragment;->MASK_TEXT:I
 
-    invoke-direct {p0, v3, v9}, Lcom/android/settings/aicp/NetworkTrafficFragment;->getBit(II)Z
+    invoke-direct {p0, v3, v9}, Lcom/android/settings_ext/aicp/NetworkTrafficFragment;->getBit(II)Z
 
     move-result v9
 
-    invoke-direct {p0, v6, v8, v9}, Lcom/android/settings/aicp/NetworkTrafficFragment;->setBit(IIZ)I
+    invoke-direct {p0, v6, v8, v9}, Lcom/android/settings_ext/aicp/NetworkTrafficFragment;->setBit(IIZ)I
 
     move-result v6
 
-    iput v6, p0, Lcom/android/settings/aicp/NetworkTrafficFragment;->mNetTrafficVal:I
+    iput v6, p0, Lcom/android/settings_ext/aicp/NetworkTrafficFragment;->mNetTrafficVal:I
 
     .line 188
-    invoke-virtual {p0}, Lcom/android/settings/aicp/NetworkTrafficFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/aicp/NetworkTrafficFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v6
 
@@ -1040,12 +1040,12 @@
 
     const-string v8, "network_traffic_vector_state"
 
-    iget v9, p0, Lcom/android/settings/aicp/NetworkTrafficFragment;->mNetTrafficVal:I
+    iget v9, p0, Lcom/android/settings_ext/aicp/NetworkTrafficFragment;->mNetTrafficVal:I
 
     invoke-static {v6, v8, v9}, Landroid/provider/Settings$System;->putInt(Landroid/content/ContentResolver;Ljava/lang/String;I)Z
 
     .line 190
-    iget-object v6, p0, Lcom/android/settings/aicp/NetworkTrafficFragment;->mNetTrafficDisplay:Landroid/preference/ListPreference;
+    iget-object v6, p0, Lcom/android/settings_ext/aicp/NetworkTrafficFragment;->mNetTrafficDisplay:Landroid/preference/ListPreference;
 
     check-cast p2, Ljava/lang/String;
 
@@ -1056,9 +1056,9 @@
 
     .line 191
     .local v1, "index":I
-    iget-object v6, p0, Lcom/android/settings/aicp/NetworkTrafficFragment;->mNetTrafficDisplay:Landroid/preference/ListPreference;
+    iget-object v6, p0, Lcom/android/settings_ext/aicp/NetworkTrafficFragment;->mNetTrafficDisplay:Landroid/preference/ListPreference;
 
-    iget-object v8, p0, Lcom/android/settings/aicp/NetworkTrafficFragment;->mNetTrafficDisplay:Landroid/preference/ListPreference;
+    iget-object v8, p0, Lcom/android/settings_ext/aicp/NetworkTrafficFragment;->mNetTrafficDisplay:Landroid/preference/ListPreference;
 
     invoke-virtual {v8}, Landroid/preference/ListPreference;->getEntries()[Ljava/lang/CharSequence;
 
@@ -1069,7 +1069,7 @@
     invoke-virtual {v6, v8}, Landroid/preference/ListPreference;->setSummary(Ljava/lang/CharSequence;)V
 
     .line 192
-    invoke-direct {p0, v1}, Lcom/android/settings/aicp/NetworkTrafficFragment;->updateNetworkTrafficState(I)V
+    invoke-direct {p0, v1}, Lcom/android/settings_ext/aicp/NetworkTrafficFragment;->updateNetworkTrafficState(I)V
 
     .line 237
     .end local v1    # "index":I
@@ -1080,7 +1080,7 @@
     .line 194
     .restart local p2    # "newValue":Ljava/lang/Object;
     :cond_0
-    iget-object v6, p0, Lcom/android/settings/aicp/NetworkTrafficFragment;->mNetTrafficColor:Lnet/margaritov/preference/colorpicker/ColorPickerPreference;
+    iget-object v6, p0, Lcom/android/settings_ext/aicp/NetworkTrafficFragment;->mNetTrafficColor:Lnet/margaritov/preference/colorpicker/ColorPickerPreference;
 
     if-ne p1, v6, :cond_1
 
@@ -1112,7 +1112,7 @@
 
     .line 199
     .local v2, "intHex":I
-    invoke-virtual {p0}, Lcom/android/settings/aicp/NetworkTrafficFragment;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/settings_ext/aicp/NetworkTrafficFragment;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v6
 
@@ -1126,7 +1126,7 @@
     .end local v0    # "hex":Ljava/lang/String;
     .end local v2    # "intHex":I
     :cond_1
-    iget-object v6, p0, Lcom/android/settings/aicp/NetworkTrafficFragment;->mNetTrafficMonitor:Landroid/preference/ListPreference;
+    iget-object v6, p0, Lcom/android/settings_ext/aicp/NetworkTrafficFragment;->mNetTrafficMonitor:Landroid/preference/ListPreference;
 
     if-ne p1, v6, :cond_2
 
@@ -1145,41 +1145,41 @@
 
     .line 204
     .restart local v3    # "intState":I
-    iget v6, p0, Lcom/android/settings/aicp/NetworkTrafficFragment;->mNetTrafficVal:I
+    iget v6, p0, Lcom/android/settings_ext/aicp/NetworkTrafficFragment;->mNetTrafficVal:I
 
-    iget v8, p0, Lcom/android/settings/aicp/NetworkTrafficFragment;->MASK_UP:I
+    iget v8, p0, Lcom/android/settings_ext/aicp/NetworkTrafficFragment;->MASK_UP:I
 
-    iget v9, p0, Lcom/android/settings/aicp/NetworkTrafficFragment;->MASK_UP:I
+    iget v9, p0, Lcom/android/settings_ext/aicp/NetworkTrafficFragment;->MASK_UP:I
 
-    invoke-direct {p0, v3, v9}, Lcom/android/settings/aicp/NetworkTrafficFragment;->getBit(II)Z
+    invoke-direct {p0, v3, v9}, Lcom/android/settings_ext/aicp/NetworkTrafficFragment;->getBit(II)Z
 
     move-result v9
 
-    invoke-direct {p0, v6, v8, v9}, Lcom/android/settings/aicp/NetworkTrafficFragment;->setBit(IIZ)I
+    invoke-direct {p0, v6, v8, v9}, Lcom/android/settings_ext/aicp/NetworkTrafficFragment;->setBit(IIZ)I
 
     move-result v6
 
-    iput v6, p0, Lcom/android/settings/aicp/NetworkTrafficFragment;->mNetTrafficVal:I
+    iput v6, p0, Lcom/android/settings_ext/aicp/NetworkTrafficFragment;->mNetTrafficVal:I
 
     .line 205
-    iget v6, p0, Lcom/android/settings/aicp/NetworkTrafficFragment;->mNetTrafficVal:I
+    iget v6, p0, Lcom/android/settings_ext/aicp/NetworkTrafficFragment;->mNetTrafficVal:I
 
-    iget v8, p0, Lcom/android/settings/aicp/NetworkTrafficFragment;->MASK_DOWN:I
+    iget v8, p0, Lcom/android/settings_ext/aicp/NetworkTrafficFragment;->MASK_DOWN:I
 
-    iget v9, p0, Lcom/android/settings/aicp/NetworkTrafficFragment;->MASK_DOWN:I
+    iget v9, p0, Lcom/android/settings_ext/aicp/NetworkTrafficFragment;->MASK_DOWN:I
 
-    invoke-direct {p0, v3, v9}, Lcom/android/settings/aicp/NetworkTrafficFragment;->getBit(II)Z
+    invoke-direct {p0, v3, v9}, Lcom/android/settings_ext/aicp/NetworkTrafficFragment;->getBit(II)Z
 
     move-result v9
 
-    invoke-direct {p0, v6, v8, v9}, Lcom/android/settings/aicp/NetworkTrafficFragment;->setBit(IIZ)I
+    invoke-direct {p0, v6, v8, v9}, Lcom/android/settings_ext/aicp/NetworkTrafficFragment;->setBit(IIZ)I
 
     move-result v6
 
-    iput v6, p0, Lcom/android/settings/aicp/NetworkTrafficFragment;->mNetTrafficVal:I
+    iput v6, p0, Lcom/android/settings_ext/aicp/NetworkTrafficFragment;->mNetTrafficVal:I
 
     .line 206
-    invoke-virtual {p0}, Lcom/android/settings/aicp/NetworkTrafficFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/aicp/NetworkTrafficFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v6
 
@@ -1189,12 +1189,12 @@
 
     const-string v8, "network_traffic_vector_state"
 
-    iget v9, p0, Lcom/android/settings/aicp/NetworkTrafficFragment;->mNetTrafficVal:I
+    iget v9, p0, Lcom/android/settings_ext/aicp/NetworkTrafficFragment;->mNetTrafficVal:I
 
     invoke-static {v6, v8, v9}, Landroid/provider/Settings$System;->putInt(Landroid/content/ContentResolver;Ljava/lang/String;I)Z
 
     .line 208
-    iget-object v6, p0, Lcom/android/settings/aicp/NetworkTrafficFragment;->mNetTrafficMonitor:Landroid/preference/ListPreference;
+    iget-object v6, p0, Lcom/android/settings_ext/aicp/NetworkTrafficFragment;->mNetTrafficMonitor:Landroid/preference/ListPreference;
 
     check-cast p2, Ljava/lang/String;
 
@@ -1205,9 +1205,9 @@
 
     .line 209
     .restart local v1    # "index":I
-    iget-object v6, p0, Lcom/android/settings/aicp/NetworkTrafficFragment;->mNetTrafficMonitor:Landroid/preference/ListPreference;
+    iget-object v6, p0, Lcom/android/settings_ext/aicp/NetworkTrafficFragment;->mNetTrafficMonitor:Landroid/preference/ListPreference;
 
-    iget-object v8, p0, Lcom/android/settings/aicp/NetworkTrafficFragment;->mNetTrafficMonitor:Landroid/preference/ListPreference;
+    iget-object v8, p0, Lcom/android/settings_ext/aicp/NetworkTrafficFragment;->mNetTrafficMonitor:Landroid/preference/ListPreference;
 
     invoke-virtual {v8}, Landroid/preference/ListPreference;->getEntries()[Ljava/lang/CharSequence;
 
@@ -1224,7 +1224,7 @@
     .end local v3    # "intState":I
     .restart local p2    # "newValue":Ljava/lang/Object;
     :cond_2
-    iget-object v6, p0, Lcom/android/settings/aicp/NetworkTrafficFragment;->mNetTrafficPeriod:Landroid/preference/ListPreference;
+    iget-object v6, p0, Lcom/android/settings_ext/aicp/NetworkTrafficFragment;->mNetTrafficPeriod:Landroid/preference/ListPreference;
 
     if-ne p1, v6, :cond_3
 
@@ -1243,11 +1243,11 @@
 
     .line 213
     .restart local v3    # "intState":I
-    iget v6, p0, Lcom/android/settings/aicp/NetworkTrafficFragment;->mNetTrafficVal:I
+    iget v6, p0, Lcom/android/settings_ext/aicp/NetworkTrafficFragment;->mNetTrafficVal:I
 
-    iget v9, p0, Lcom/android/settings/aicp/NetworkTrafficFragment;->MASK_PERIOD:I
+    iget v9, p0, Lcom/android/settings_ext/aicp/NetworkTrafficFragment;->MASK_PERIOD:I
 
-    invoke-direct {p0, v6, v9, v8}, Lcom/android/settings/aicp/NetworkTrafficFragment;->setBit(IIZ)I
+    invoke-direct {p0, v6, v9, v8}, Lcom/android/settings_ext/aicp/NetworkTrafficFragment;->setBit(IIZ)I
 
     move-result v6
 
@@ -1255,10 +1255,10 @@
 
     add-int/2addr v6, v8
 
-    iput v6, p0, Lcom/android/settings/aicp/NetworkTrafficFragment;->mNetTrafficVal:I
+    iput v6, p0, Lcom/android/settings_ext/aicp/NetworkTrafficFragment;->mNetTrafficVal:I
 
     .line 214
-    invoke-virtual {p0}, Lcom/android/settings/aicp/NetworkTrafficFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/aicp/NetworkTrafficFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v6
 
@@ -1268,12 +1268,12 @@
 
     const-string v8, "network_traffic_vector_state"
 
-    iget v9, p0, Lcom/android/settings/aicp/NetworkTrafficFragment;->mNetTrafficVal:I
+    iget v9, p0, Lcom/android/settings_ext/aicp/NetworkTrafficFragment;->mNetTrafficVal:I
 
     invoke-static {v6, v8, v9}, Landroid/provider/Settings$System;->putInt(Landroid/content/ContentResolver;Ljava/lang/String;I)Z
 
     .line 216
-    iget-object v6, p0, Lcom/android/settings/aicp/NetworkTrafficFragment;->mNetTrafficPeriod:Landroid/preference/ListPreference;
+    iget-object v6, p0, Lcom/android/settings_ext/aicp/NetworkTrafficFragment;->mNetTrafficPeriod:Landroid/preference/ListPreference;
 
     check-cast p2, Ljava/lang/String;
 
@@ -1284,9 +1284,9 @@
 
     .line 217
     .restart local v1    # "index":I
-    iget-object v6, p0, Lcom/android/settings/aicp/NetworkTrafficFragment;->mNetTrafficPeriod:Landroid/preference/ListPreference;
+    iget-object v6, p0, Lcom/android/settings_ext/aicp/NetworkTrafficFragment;->mNetTrafficPeriod:Landroid/preference/ListPreference;
 
-    iget-object v8, p0, Lcom/android/settings/aicp/NetworkTrafficFragment;->mNetTrafficPeriod:Landroid/preference/ListPreference;
+    iget-object v8, p0, Lcom/android/settings_ext/aicp/NetworkTrafficFragment;->mNetTrafficPeriod:Landroid/preference/ListPreference;
 
     invoke-virtual {v8}, Landroid/preference/ListPreference;->getEntries()[Ljava/lang/CharSequence;
 
@@ -1303,14 +1303,14 @@
     .end local v3    # "intState":I
     .restart local p2    # "newValue":Ljava/lang/Object;
     :cond_3
-    iget-object v6, p0, Lcom/android/settings/aicp/NetworkTrafficFragment;->mNetTrafficUnit:Landroid/preference/ListPreference;
+    iget-object v6, p0, Lcom/android/settings_ext/aicp/NetworkTrafficFragment;->mNetTrafficUnit:Landroid/preference/ListPreference;
 
     if-ne p1, v6, :cond_4
 
     .line 220
-    iget v8, p0, Lcom/android/settings/aicp/NetworkTrafficFragment;->mNetTrafficVal:I
+    iget v8, p0, Lcom/android/settings_ext/aicp/NetworkTrafficFragment;->mNetTrafficVal:I
 
-    iget v9, p0, Lcom/android/settings/aicp/NetworkTrafficFragment;->MASK_UNIT:I
+    iget v9, p0, Lcom/android/settings_ext/aicp/NetworkTrafficFragment;->MASK_UNIT:I
 
     move-object v6, p2
 
@@ -1322,14 +1322,14 @@
 
     move-result v6
 
-    invoke-direct {p0, v8, v9, v6}, Lcom/android/settings/aicp/NetworkTrafficFragment;->setBit(IIZ)I
+    invoke-direct {p0, v8, v9, v6}, Lcom/android/settings_ext/aicp/NetworkTrafficFragment;->setBit(IIZ)I
 
     move-result v6
 
-    iput v6, p0, Lcom/android/settings/aicp/NetworkTrafficFragment;->mNetTrafficVal:I
+    iput v6, p0, Lcom/android/settings_ext/aicp/NetworkTrafficFragment;->mNetTrafficVal:I
 
     .line 221
-    invoke-virtual {p0}, Lcom/android/settings/aicp/NetworkTrafficFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/aicp/NetworkTrafficFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v6
 
@@ -1339,12 +1339,12 @@
 
     const-string v8, "network_traffic_vector_state"
 
-    iget v9, p0, Lcom/android/settings/aicp/NetworkTrafficFragment;->mNetTrafficVal:I
+    iget v9, p0, Lcom/android/settings_ext/aicp/NetworkTrafficFragment;->mNetTrafficVal:I
 
     invoke-static {v6, v8, v9}, Landroid/provider/Settings$System;->putInt(Landroid/content/ContentResolver;Ljava/lang/String;I)Z
 
     .line 223
-    iget-object v6, p0, Lcom/android/settings/aicp/NetworkTrafficFragment;->mNetTrafficUnit:Landroid/preference/ListPreference;
+    iget-object v6, p0, Lcom/android/settings_ext/aicp/NetworkTrafficFragment;->mNetTrafficUnit:Landroid/preference/ListPreference;
 
     check-cast p2, Ljava/lang/String;
 
@@ -1355,9 +1355,9 @@
 
     .line 224
     .restart local v1    # "index":I
-    iget-object v6, p0, Lcom/android/settings/aicp/NetworkTrafficFragment;->mNetTrafficUnit:Landroid/preference/ListPreference;
+    iget-object v6, p0, Lcom/android/settings_ext/aicp/NetworkTrafficFragment;->mNetTrafficUnit:Landroid/preference/ListPreference;
 
-    iget-object v8, p0, Lcom/android/settings/aicp/NetworkTrafficFragment;->mNetTrafficUnit:Landroid/preference/ListPreference;
+    iget-object v8, p0, Lcom/android/settings_ext/aicp/NetworkTrafficFragment;->mNetTrafficUnit:Landroid/preference/ListPreference;
 
     invoke-virtual {v8}, Landroid/preference/ListPreference;->getEntries()[Ljava/lang/CharSequence;
 
@@ -1373,7 +1373,7 @@
     .end local v1    # "index":I
     .restart local p2    # "newValue":Ljava/lang/Object;
     :cond_4
-    iget-object v6, p0, Lcom/android/settings/aicp/NetworkTrafficFragment;->mNetTrafficAutohide:Landroid/preference/SwitchPreference;
+    iget-object v6, p0, Lcom/android/settings_ext/aicp/NetworkTrafficFragment;->mNetTrafficAutohide:Landroid/preference/SwitchPreference;
 
     if-ne p1, v6, :cond_6
 
@@ -1387,7 +1387,7 @@
 
     .line 228
     .local v5, "value":Z
-    invoke-virtual {p0}, Lcom/android/settings/aicp/NetworkTrafficFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/aicp/NetworkTrafficFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v6
 
@@ -1415,7 +1415,7 @@
     .end local v5    # "value":Z
     .restart local p2    # "newValue":Ljava/lang/Object;
     :cond_6
-    iget-object v6, p0, Lcom/android/settings/aicp/NetworkTrafficFragment;->mNetTrafficAutohideThreshold:Lcom/android/settings/widget/SeekBarPreferenceCham;
+    iget-object v6, p0, Lcom/android/settings_ext/aicp/NetworkTrafficFragment;->mNetTrafficAutohideThreshold:Lcom/android/settings_ext/widget/SeekBarPreferenceCham;
 
     if-ne p1, v6, :cond_7
 
@@ -1429,7 +1429,7 @@
 
     .line 233
     .local v4, "threshold":I
-    invoke-virtual {p0}, Lcom/android/settings/aicp/NetworkTrafficFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/aicp/NetworkTrafficFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v6
 

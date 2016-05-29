@@ -1,11 +1,11 @@
-.class public interface abstract Lcom/android/settings/accessibility/ListDialogPreference$OnValueChangedListener;
+.class public interface abstract Lcom/android/settings_ext/accessibility/ListDialogPreference$OnValueChangedListener;
 .super Ljava/lang/Object;
 .source "ListDialogPreference.java"
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/android/settings/accessibility/ListDialogPreference;
+    value = Lcom/android/settings_ext/accessibility/ListDialogPreference;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -15,5 +15,5 @@
 
 
 # virtual methods
-.method public abstract onValueChanged(Lcom/android/settings/accessibility/ListDialogPreference;I)V
+.method public abstract onValueChanged(Lcom/android/settings_ext/accessibility/ListDialogPreference;I)V
 .end method

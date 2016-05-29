@@ -1,11 +1,11 @@
-.class Lcom/android/settings/bluetooth/BluetoothPairingDialog$1;
+.class Lcom/android/settings_ext/bluetooth/BluetoothPairingDialog$1;
 .super Landroid/content/BroadcastReceiver;
 .source "BluetoothPairingDialog.java"
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/android/settings/bluetooth/BluetoothPairingDialog;
+    value = Lcom/android/settings_ext/bluetooth/BluetoothPairingDialog;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -15,16 +15,16 @@
 
 
 # instance fields
-.field final synthetic this$0:Lcom/android/settings/bluetooth/BluetoothPairingDialog;
+.field final synthetic this$0:Lcom/android/settings_ext/bluetooth/BluetoothPairingDialog;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/bluetooth/BluetoothPairingDialog;)V
+.method constructor <init>(Lcom/android/settings_ext/bluetooth/BluetoothPairingDialog;)V
     .locals 0
 
     .prologue
     .line 75
-    iput-object p1, p0, Lcom/android/settings/bluetooth/BluetoothPairingDialog$1;->this$0:Lcom/android/settings/bluetooth/BluetoothPairingDialog;
+    iput-object p1, p0, Lcom/android/settings_ext/bluetooth/BluetoothPairingDialog$1;->this$0:Lcom/android/settings_ext/bluetooth/BluetoothPairingDialog;
 
     invoke-direct {p0}, Landroid/content/BroadcastReceiver;-><init>()V
 
@@ -69,10 +69,10 @@
 
     if-ne v1, v3, :cond_0
 
-    iget-object v3, p0, Lcom/android/settings/bluetooth/BluetoothPairingDialog$1;->this$0:Lcom/android/settings/bluetooth/BluetoothPairingDialog;
+    iget-object v3, p0, Lcom/android/settings_ext/bluetooth/BluetoothPairingDialog$1;->this$0:Lcom/android/settings_ext/bluetooth/BluetoothPairingDialog;
 
-    # getter for: Lcom/android/settings/bluetooth/BluetoothPairingDialog;->mIsSecurityHigh:Z
-    invoke-static {v3}, Lcom/android/settings/bluetooth/BluetoothPairingDialog;->access$000(Lcom/android/settings/bluetooth/BluetoothPairingDialog;)Z
+    # getter for: Lcom/android/settings_ext/bluetooth/BluetoothPairingDialog;->mIsSecurityHigh:Z
+    invoke-static {v3}, Lcom/android/settings_ext/bluetooth/BluetoothPairingDialog;->access$000(Lcom/android/settings_ext/bluetooth/BluetoothPairingDialog;)Z
 
     move-result v3
 
@@ -85,9 +85,9 @@
 
     .line 84
     :cond_1
-    iget-object v3, p0, Lcom/android/settings/bluetooth/BluetoothPairingDialog$1;->this$0:Lcom/android/settings/bluetooth/BluetoothPairingDialog;
+    iget-object v3, p0, Lcom/android/settings_ext/bluetooth/BluetoothPairingDialog$1;->this$0:Lcom/android/settings_ext/bluetooth/BluetoothPairingDialog;
 
-    invoke-virtual {v3}, Lcom/android/settings/bluetooth/BluetoothPairingDialog;->dismiss()V
+    invoke-virtual {v3}, Lcom/android/settings_ext/bluetooth/BluetoothPairingDialog;->dismiss()V
 
     .line 92
     .end local v1    # "bondState":I
@@ -118,10 +118,10 @@
     .local v2, "device":Landroid/bluetooth/BluetoothDevice;
     if-eqz v2, :cond_4
 
-    iget-object v3, p0, Lcom/android/settings/bluetooth/BluetoothPairingDialog$1;->this$0:Lcom/android/settings/bluetooth/BluetoothPairingDialog;
+    iget-object v3, p0, Lcom/android/settings_ext/bluetooth/BluetoothPairingDialog$1;->this$0:Lcom/android/settings_ext/bluetooth/BluetoothPairingDialog;
 
-    # getter for: Lcom/android/settings/bluetooth/BluetoothPairingDialog;->mDevice:Landroid/bluetooth/BluetoothDevice;
-    invoke-static {v3}, Lcom/android/settings/bluetooth/BluetoothPairingDialog;->access$100(Lcom/android/settings/bluetooth/BluetoothPairingDialog;)Landroid/bluetooth/BluetoothDevice;
+    # getter for: Lcom/android/settings_ext/bluetooth/BluetoothPairingDialog;->mDevice:Landroid/bluetooth/BluetoothDevice;
+    invoke-static {v3}, Lcom/android/settings_ext/bluetooth/BluetoothPairingDialog;->access$100(Lcom/android/settings_ext/bluetooth/BluetoothPairingDialog;)Landroid/bluetooth/BluetoothDevice;
 
     move-result-object v3
 
@@ -133,9 +133,9 @@
 
     .line 89
     :cond_4
-    iget-object v3, p0, Lcom/android/settings/bluetooth/BluetoothPairingDialog$1;->this$0:Lcom/android/settings/bluetooth/BluetoothPairingDialog;
+    iget-object v3, p0, Lcom/android/settings_ext/bluetooth/BluetoothPairingDialog$1;->this$0:Lcom/android/settings_ext/bluetooth/BluetoothPairingDialog;
 
-    invoke-virtual {v3}, Lcom/android/settings/bluetooth/BluetoothPairingDialog;->dismiss()V
+    invoke-virtual {v3}, Lcom/android/settings_ext/bluetooth/BluetoothPairingDialog;->dismiss()V
 
     goto :goto_0
 .end method

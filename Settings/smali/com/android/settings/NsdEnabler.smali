@@ -1,4 +1,4 @@
-.class public Lcom/android/settings/NsdEnabler;
+.class public Lcom/android/settings_ext/NsdEnabler;
 .super Ljava/lang/Object;
 .source "NsdEnabler.java"
 
@@ -37,12 +37,12 @@
 
     .line 68
     .local v0, "desiredState":Z
-    iget-object v1, p0, Lcom/android/settings/NsdEnabler;->mSwitchPreference:Landroid/preference/SwitchPreference;
+    iget-object v1, p0, Lcom/android/settings_ext/NsdEnabler;->mSwitchPreference:Landroid/preference/SwitchPreference;
 
     invoke-virtual {v1, v2}, Landroid/preference/SwitchPreference;->setEnabled(Z)V
 
     .line 69
-    iget-object v1, p0, Lcom/android/settings/NsdEnabler;->mNsdManager:Landroid/net/nsd/NsdManager;
+    iget-object v1, p0, Lcom/android/settings_ext/NsdEnabler;->mNsdManager:Landroid/net/nsd/NsdManager;
 
     invoke-virtual {v1, v0}, Landroid/net/nsd/NsdManager;->setEnabled(Z)V
 
@@ -55,14 +55,14 @@
 
     .prologue
     .line 61
-    iget-object v0, p0, Lcom/android/settings/NsdEnabler;->mContext:Landroid/content/Context;
+    iget-object v0, p0, Lcom/android/settings_ext/NsdEnabler;->mContext:Landroid/content/Context;
 
-    iget-object v1, p0, Lcom/android/settings/NsdEnabler;->mReceiver:Landroid/content/BroadcastReceiver;
+    iget-object v1, p0, Lcom/android/settings_ext/NsdEnabler;->mReceiver:Landroid/content/BroadcastReceiver;
 
     invoke-virtual {v0, v1}, Landroid/content/Context;->unregisterReceiver(Landroid/content/BroadcastReceiver;)V
 
     .line 62
-    iget-object v0, p0, Lcom/android/settings/NsdEnabler;->mSwitchPreference:Landroid/preference/SwitchPreference;
+    iget-object v0, p0, Lcom/android/settings_ext/NsdEnabler;->mSwitchPreference:Landroid/preference/SwitchPreference;
 
     const/4 v1, 0x0
 
@@ -77,16 +77,16 @@
 
     .prologue
     .line 56
-    iget-object v0, p0, Lcom/android/settings/NsdEnabler;->mContext:Landroid/content/Context;
+    iget-object v0, p0, Lcom/android/settings_ext/NsdEnabler;->mContext:Landroid/content/Context;
 
-    iget-object v1, p0, Lcom/android/settings/NsdEnabler;->mReceiver:Landroid/content/BroadcastReceiver;
+    iget-object v1, p0, Lcom/android/settings_ext/NsdEnabler;->mReceiver:Landroid/content/BroadcastReceiver;
 
-    iget-object v2, p0, Lcom/android/settings/NsdEnabler;->mIntentFilter:Landroid/content/IntentFilter;
+    iget-object v2, p0, Lcom/android/settings_ext/NsdEnabler;->mIntentFilter:Landroid/content/IntentFilter;
 
     invoke-virtual {v0, v1, v2}, Landroid/content/Context;->registerReceiver(Landroid/content/BroadcastReceiver;Landroid/content/IntentFilter;)Landroid/content/Intent;
 
     .line 57
-    iget-object v0, p0, Lcom/android/settings/NsdEnabler;->mSwitchPreference:Landroid/preference/SwitchPreference;
+    iget-object v0, p0, Lcom/android/settings_ext/NsdEnabler;->mSwitchPreference:Landroid/preference/SwitchPreference;
 
     invoke-virtual {v0, p0}, Landroid/preference/SwitchPreference;->setOnPreferenceChangeListener(Landroid/preference/Preference$OnPreferenceChangeListener;)V
 

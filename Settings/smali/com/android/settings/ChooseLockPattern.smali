@@ -1,13 +1,13 @@
-.class public Lcom/android/settings/ChooseLockPattern;
-.super Lcom/android/settings/SettingsActivity;
+.class public Lcom/android/settings_ext/ChooseLockPattern;
+.super Lcom/android/settings_ext/SettingsActivity;
 .source "ChooseLockPattern.java"
 
 
 # annotations
 .annotation system Ldalvik/annotation/MemberClasses;
     value = {
-        Lcom/android/settings/ChooseLockPattern$1;,
-        Lcom/android/settings/ChooseLockPattern$ChooseLockPatternFragment;
+        Lcom/android/settings_ext/ChooseLockPattern$1;,
+        Lcom/android/settings_ext/ChooseLockPattern$ChooseLockPatternFragment;
     }
 .end annotation
 
@@ -18,7 +18,7 @@
 
     .prologue
     .line 53
-    invoke-direct {p0}, Lcom/android/settings/SettingsActivity;-><init>()V
+    invoke-direct {p0}, Lcom/android/settings_ext/SettingsActivity;-><init>()V
 
     .line 107
     return-void
@@ -35,7 +35,7 @@
     .line 74
     new-instance v0, Landroid/content/Intent;
 
-    const-class v1, Lcom/android/settings/ChooseLockPattern;
+    const-class v1, Lcom/android/settings_ext/ChooseLockPattern;
 
     invoke-direct {v0, p0, v1}, Landroid/content/Intent;-><init>(Landroid/content/Context;Ljava/lang/Class;)V
 
@@ -82,7 +82,7 @@
 
     .prologue
     .line 89
-    const-class v0, Lcom/android/settings/ChooseLockPattern$ChooseLockPatternFragment;
+    const-class v0, Lcom/android/settings_ext/ChooseLockPattern$ChooseLockPatternFragment;
 
     return-object v0
 .end method
@@ -94,7 +94,7 @@
     .line 67
     new-instance v0, Landroid/content/Intent;
 
-    invoke-super {p0}, Lcom/android/settings/SettingsActivity;->getIntent()Landroid/content/Intent;
+    invoke-super {p0}, Lcom/android/settings_ext/SettingsActivity;->getIntent()Landroid/content/Intent;
 
     move-result-object v1
 
@@ -104,7 +104,7 @@
     .local v0, "modIntent":Landroid/content/Intent;
     const-string v1, ":settings:show_fragment"
 
-    invoke-virtual {p0}, Lcom/android/settings/ChooseLockPattern;->getFragmentClass()Ljava/lang/Class;
+    invoke-virtual {p0}, Lcom/android/settings_ext/ChooseLockPattern;->getFragmentClass()Ljava/lang/Class;
 
     move-result-object v2
 
@@ -124,7 +124,7 @@
 
     .prologue
     .line 84
-    const-class v0, Lcom/android/settings/ChooseLockPattern$ChooseLockPatternFragment;
+    const-class v0, Lcom/android/settings_ext/ChooseLockPattern$ChooseLockPatternFragment;
 
     invoke-virtual {v0}, Ljava/lang/Class;->getName()Ljava/lang/String;
 
@@ -154,18 +154,18 @@
 
     .prologue
     .line 95
-    invoke-super {p0, p1}, Lcom/android/settings/SettingsActivity;->onCreate(Landroid/os/Bundle;)V
+    invoke-super {p0, p1}, Lcom/android/settings_ext/SettingsActivity;->onCreate(Landroid/os/Bundle;)V
 
     .line 96
     const v1, 0x7f09047a
 
-    invoke-virtual {p0, v1}, Lcom/android/settings/ChooseLockPattern;->getText(I)Ljava/lang/CharSequence;
+    invoke-virtual {p0, v1}, Lcom/android/settings_ext/ChooseLockPattern;->getText(I)Ljava/lang/CharSequence;
 
     move-result-object v0
 
     .line 97
     .local v0, "msg":Ljava/lang/CharSequence;
-    invoke-virtual {p0, v0}, Lcom/android/settings/ChooseLockPattern;->setTitle(Ljava/lang/CharSequence;)V
+    invoke-virtual {p0, v0}, Lcom/android/settings_ext/ChooseLockPattern;->setTitle(Ljava/lang/CharSequence;)V
 
     .line 98
     return-void
@@ -178,7 +178,7 @@
 
     .prologue
     .line 104
-    invoke-super {p0, p1, p2}, Lcom/android/settings/SettingsActivity;->onKeyDown(ILandroid/view/KeyEvent;)Z
+    invoke-super {p0, p1, p2}, Lcom/android/settings_ext/SettingsActivity;->onKeyDown(ILandroid/view/KeyEvent;)Z
 
     move-result v0
 

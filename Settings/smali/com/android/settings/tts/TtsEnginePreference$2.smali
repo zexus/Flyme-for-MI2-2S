@@ -1,4 +1,4 @@
-.class Lcom/android/settings/tts/TtsEnginePreference$2;
+.class Lcom/android/settings_ext/tts/TtsEnginePreference$2;
 .super Ljava/lang/Object;
 .source "TtsEnginePreference.java"
 
@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/android/settings/tts/TtsEnginePreference;->getView(Landroid/view/View;Landroid/view/ViewGroup;)Landroid/view/View;
+    value = Lcom/android/settings_ext/tts/TtsEnginePreference;->getView(Landroid/view/View;Landroid/view/ViewGroup;)Landroid/view/View;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -18,20 +18,20 @@
 
 
 # instance fields
-.field final synthetic this$0:Lcom/android/settings/tts/TtsEnginePreference;
+.field final synthetic this$0:Lcom/android/settings_ext/tts/TtsEnginePreference;
 
 .field final synthetic val$rb:Landroid/widget/RadioButton;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/tts/TtsEnginePreference;Landroid/widget/RadioButton;)V
+.method constructor <init>(Lcom/android/settings_ext/tts/TtsEnginePreference;Landroid/widget/RadioButton;)V
     .locals 0
 
     .prologue
     .line 134
-    iput-object p1, p0, Lcom/android/settings/tts/TtsEnginePreference$2;->this$0:Lcom/android/settings/tts/TtsEnginePreference;
+    iput-object p1, p0, Lcom/android/settings_ext/tts/TtsEnginePreference$2;->this$0:Lcom/android/settings_ext/tts/TtsEnginePreference;
 
-    iput-object p2, p0, Lcom/android/settings/tts/TtsEnginePreference$2;->val$rb:Landroid/widget/RadioButton;
+    iput-object p2, p0, Lcom/android/settings_ext/tts/TtsEnginePreference$2;->val$rb:Landroid/widget/RadioButton;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -46,11 +46,11 @@
 
     .prologue
     .line 137
-    iget-object v1, p0, Lcom/android/settings/tts/TtsEnginePreference$2;->this$0:Lcom/android/settings/tts/TtsEnginePreference;
+    iget-object v1, p0, Lcom/android/settings_ext/tts/TtsEnginePreference$2;->this$0:Lcom/android/settings_ext/tts/TtsEnginePreference;
 
-    iget-object v2, p0, Lcom/android/settings/tts/TtsEnginePreference$2;->val$rb:Landroid/widget/RadioButton;
+    iget-object v2, p0, Lcom/android/settings_ext/tts/TtsEnginePreference$2;->val$rb:Landroid/widget/RadioButton;
 
-    iget-object v0, p0, Lcom/android/settings/tts/TtsEnginePreference$2;->val$rb:Landroid/widget/RadioButton;
+    iget-object v0, p0, Lcom/android/settings_ext/tts/TtsEnginePreference$2;->val$rb:Landroid/widget/RadioButton;
 
     invoke-virtual {v0}, Landroid/widget/RadioButton;->isChecked()Z
 
@@ -61,8 +61,8 @@
     const/4 v0, 0x1
 
     :goto_0
-    # invokes: Lcom/android/settings/tts/TtsEnginePreference;->onRadioButtonClicked(Landroid/widget/CompoundButton;Z)V
-    invoke-static {v1, v2, v0}, Lcom/android/settings/tts/TtsEnginePreference;->access$000(Lcom/android/settings/tts/TtsEnginePreference;Landroid/widget/CompoundButton;Z)V
+    # invokes: Lcom/android/settings_ext/tts/TtsEnginePreference;->onRadioButtonClicked(Landroid/widget/CompoundButton;Z)V
+    invoke-static {v1, v2, v0}, Lcom/android/settings_ext/tts/TtsEnginePreference;->access$000(Lcom/android/settings_ext/tts/TtsEnginePreference;Landroid/widget/CompoundButton;Z)V
 
     .line 138
     return-void

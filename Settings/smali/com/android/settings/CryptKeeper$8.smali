@@ -1,4 +1,4 @@
-.class Lcom/android/settings/CryptKeeper$8;
+.class Lcom/android/settings_ext/CryptKeeper$8;
 .super Ljava/lang/Object;
 .source "CryptKeeper.java"
 
@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/android/settings/CryptKeeper;->passwordEntryInit()V
+    value = Lcom/android/settings_ext/CryptKeeper;->passwordEntryInit()V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -18,20 +18,20 @@
 
 
 # instance fields
-.field final synthetic this$0:Lcom/android/settings/CryptKeeper;
+.field final synthetic this$0:Lcom/android/settings_ext/CryptKeeper;
 
 .field final synthetic val$imm:Landroid/view/inputmethod/InputMethodManager;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/CryptKeeper;Landroid/view/inputmethod/InputMethodManager;)V
+.method constructor <init>(Lcom/android/settings_ext/CryptKeeper;Landroid/view/inputmethod/InputMethodManager;)V
     .locals 0
 
     .prologue
     .line 795
-    iput-object p1, p0, Lcom/android/settings/CryptKeeper$8;->this$0:Lcom/android/settings/CryptKeeper;
+    iput-object p1, p0, Lcom/android/settings_ext/CryptKeeper$8;->this$0:Lcom/android/settings_ext/CryptKeeper;
 
-    iput-object p2, p0, Lcom/android/settings/CryptKeeper$8;->val$imm:Landroid/view/inputmethod/InputMethodManager;
+    iput-object p2, p0, Lcom/android/settings_ext/CryptKeeper$8;->val$imm:Landroid/view/inputmethod/InputMethodManager;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -45,7 +45,7 @@
 
     .prologue
     .line 797
-    iget-object v0, p0, Lcom/android/settings/CryptKeeper$8;->val$imm:Landroid/view/inputmethod/InputMethodManager;
+    iget-object v0, p0, Lcom/android/settings_ext/CryptKeeper$8;->val$imm:Landroid/view/inputmethod/InputMethodManager;
 
     const/4 v1, 0x0
 

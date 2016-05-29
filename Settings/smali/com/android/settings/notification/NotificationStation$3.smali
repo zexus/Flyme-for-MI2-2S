@@ -1,4 +1,4 @@
-.class Lcom/android/settings/notification/NotificationStation$3;
+.class Lcom/android/settings_ext/notification/NotificationStation$3;
 .super Ljava/lang/Object;
 .source "NotificationStation.java"
 
@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/android/settings/notification/NotificationStation;
+    value = Lcom/android/settings_ext/notification/NotificationStation;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -21,23 +21,23 @@
         "Ljava/lang/Object;",
         "Ljava/util/Comparator",
         "<",
-        "Lcom/android/settings/notification/NotificationStation$HistoricalNotificationInfo;",
+        "Lcom/android/settings_ext/notification/NotificationStation$HistoricalNotificationInfo;",
         ">;"
     }
 .end annotation
 
 
 # instance fields
-.field final synthetic this$0:Lcom/android/settings/notification/NotificationStation;
+.field final synthetic this$0:Lcom/android/settings_ext/notification/NotificationStation;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/notification/NotificationStation;)V
+.method constructor <init>(Lcom/android/settings_ext/notification/NotificationStation;)V
     .locals 0
 
     .prologue
     .line 105
-    iput-object p1, p0, Lcom/android/settings/notification/NotificationStation$3;->this$0:Lcom/android/settings/notification/NotificationStation;
+    iput-object p1, p0, Lcom/android/settings_ext/notification/NotificationStation$3;->this$0:Lcom/android/settings_ext/notification/NotificationStation;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -46,16 +46,16 @@
 
 
 # virtual methods
-.method public compare(Lcom/android/settings/notification/NotificationStation$HistoricalNotificationInfo;Lcom/android/settings/notification/NotificationStation$HistoricalNotificationInfo;)I
+.method public compare(Lcom/android/settings_ext/notification/NotificationStation$HistoricalNotificationInfo;Lcom/android/settings_ext/notification/NotificationStation$HistoricalNotificationInfo;)I
     .locals 4
-    .param p1, "lhs"    # Lcom/android/settings/notification/NotificationStation$HistoricalNotificationInfo;
-    .param p2, "rhs"    # Lcom/android/settings/notification/NotificationStation$HistoricalNotificationInfo;
+    .param p1, "lhs"    # Lcom/android/settings_ext/notification/NotificationStation$HistoricalNotificationInfo;
+    .param p2, "rhs"    # Lcom/android/settings_ext/notification/NotificationStation$HistoricalNotificationInfo;
 
     .prologue
     .line 109
-    iget-wide v0, p2, Lcom/android/settings/notification/NotificationStation$HistoricalNotificationInfo;->timestamp:J
+    iget-wide v0, p2, Lcom/android/settings_ext/notification/NotificationStation$HistoricalNotificationInfo;->timestamp:J
 
-    iget-wide v2, p1, Lcom/android/settings/notification/NotificationStation$HistoricalNotificationInfo;->timestamp:J
+    iget-wide v2, p1, Lcom/android/settings_ext/notification/NotificationStation$HistoricalNotificationInfo;->timestamp:J
 
     sub-long/2addr v0, v2
 
@@ -71,13 +71,13 @@
 
     .prologue
     .line 105
-    check-cast p1, Lcom/android/settings/notification/NotificationStation$HistoricalNotificationInfo;
+    check-cast p1, Lcom/android/settings_ext/notification/NotificationStation$HistoricalNotificationInfo;
 
     .end local p1    # "x0":Ljava/lang/Object;
-    check-cast p2, Lcom/android/settings/notification/NotificationStation$HistoricalNotificationInfo;
+    check-cast p2, Lcom/android/settings_ext/notification/NotificationStation$HistoricalNotificationInfo;
 
     .end local p2    # "x1":Ljava/lang/Object;
-    invoke-virtual {p0, p1, p2}, Lcom/android/settings/notification/NotificationStation$3;->compare(Lcom/android/settings/notification/NotificationStation$HistoricalNotificationInfo;Lcom/android/settings/notification/NotificationStation$HistoricalNotificationInfo;)I
+    invoke-virtual {p0, p1, p2}, Lcom/android/settings_ext/notification/NotificationStation$3;->compare(Lcom/android/settings_ext/notification/NotificationStation$HistoricalNotificationInfo;Lcom/android/settings_ext/notification/NotificationStation$HistoricalNotificationInfo;)I
 
     move-result v0
 

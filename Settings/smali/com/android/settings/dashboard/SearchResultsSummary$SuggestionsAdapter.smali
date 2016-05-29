@@ -1,11 +1,11 @@
-.class Lcom/android/settings/dashboard/SearchResultsSummary$SuggestionsAdapter;
+.class Lcom/android/settings_ext/dashboard/SearchResultsSummary$SuggestionsAdapter;
 .super Landroid/widget/BaseAdapter;
 .source "SearchResultsSummary.java"
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/android/settings/dashboard/SearchResultsSummary;
+    value = Lcom/android/settings_ext/dashboard/SearchResultsSummary;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -36,13 +36,13 @@
     invoke-direct {p0}, Landroid/widget/BaseAdapter;-><init>()V
 
     .line 409
-    iput-boolean v2, p0, Lcom/android/settings/dashboard/SearchResultsSummary$SuggestionsAdapter;->mDataValid:Z
+    iput-boolean v2, p0, Lcom/android/settings_ext/dashboard/SearchResultsSummary$SuggestionsAdapter;->mDataValid:Z
 
     .line 412
-    iput-object p1, p0, Lcom/android/settings/dashboard/SearchResultsSummary$SuggestionsAdapter;->mContext:Landroid/content/Context;
+    iput-object p1, p0, Lcom/android/settings_ext/dashboard/SearchResultsSummary$SuggestionsAdapter;->mContext:Landroid/content/Context;
 
     .line 413
-    iget-object v0, p0, Lcom/android/settings/dashboard/SearchResultsSummary$SuggestionsAdapter;->mContext:Landroid/content/Context;
+    iget-object v0, p0, Lcom/android/settings_ext/dashboard/SearchResultsSummary$SuggestionsAdapter;->mContext:Landroid/content/Context;
 
     const-string v1, "layout_inflater"
 
@@ -52,22 +52,22 @@
 
     check-cast v0, Landroid/view/LayoutInflater;
 
-    iput-object v0, p0, Lcom/android/settings/dashboard/SearchResultsSummary$SuggestionsAdapter;->mInflater:Landroid/view/LayoutInflater;
+    iput-object v0, p0, Lcom/android/settings_ext/dashboard/SearchResultsSummary$SuggestionsAdapter;->mInflater:Landroid/view/LayoutInflater;
 
     .line 414
-    iput-boolean v2, p0, Lcom/android/settings/dashboard/SearchResultsSummary$SuggestionsAdapter;->mDataValid:Z
+    iput-boolean v2, p0, Lcom/android/settings_ext/dashboard/SearchResultsSummary$SuggestionsAdapter;->mDataValid:Z
 
     .line 415
     return-void
 .end method
 
-.method static synthetic access$800(Lcom/android/settings/dashboard/SearchResultsSummary$SuggestionsAdapter;)Landroid/database/Cursor;
+.method static synthetic access$800(Lcom/android/settings_ext/dashboard/SearchResultsSummary$SuggestionsAdapter;)Landroid/database/Cursor;
     .locals 1
-    .param p0, "x0"    # Lcom/android/settings/dashboard/SearchResultsSummary$SuggestionsAdapter;
+    .param p0, "x0"    # Lcom/android/settings_ext/dashboard/SearchResultsSummary$SuggestionsAdapter;
 
     .prologue
     .line 401
-    iget-object v0, p0, Lcom/android/settings/dashboard/SearchResultsSummary$SuggestionsAdapter;->mCursor:Landroid/database/Cursor;
+    iget-object v0, p0, Lcom/android/settings_ext/dashboard/SearchResultsSummary$SuggestionsAdapter;->mCursor:Landroid/database/Cursor;
 
     return-object v0
 .end method
@@ -79,15 +79,15 @@
 
     .prologue
     .line 435
-    iget-boolean v0, p0, Lcom/android/settings/dashboard/SearchResultsSummary$SuggestionsAdapter;->mDataValid:Z
+    iget-boolean v0, p0, Lcom/android/settings_ext/dashboard/SearchResultsSummary$SuggestionsAdapter;->mDataValid:Z
 
     if-eqz v0, :cond_0
 
-    iget-object v0, p0, Lcom/android/settings/dashboard/SearchResultsSummary$SuggestionsAdapter;->mCursor:Landroid/database/Cursor;
+    iget-object v0, p0, Lcom/android/settings_ext/dashboard/SearchResultsSummary$SuggestionsAdapter;->mCursor:Landroid/database/Cursor;
 
     if-eqz v0, :cond_0
 
-    iget-object v0, p0, Lcom/android/settings/dashboard/SearchResultsSummary$SuggestionsAdapter;->mCursor:Landroid/database/Cursor;
+    iget-object v0, p0, Lcom/android/settings_ext/dashboard/SearchResultsSummary$SuggestionsAdapter;->mCursor:Landroid/database/Cursor;
 
     invoke-interface {v0}, Landroid/database/Cursor;->isClosed()Z
 
@@ -103,7 +103,7 @@
     return v0
 
     :cond_1
-    iget-object v0, p0, Lcom/android/settings/dashboard/SearchResultsSummary$SuggestionsAdapter;->mCursor:Landroid/database/Cursor;
+    iget-object v0, p0, Lcom/android/settings_ext/dashboard/SearchResultsSummary$SuggestionsAdapter;->mCursor:Landroid/database/Cursor;
 
     invoke-interface {v0}, Landroid/database/Cursor;->getCount()I
 
@@ -118,11 +118,11 @@
 
     .prologue
     .line 441
-    iget-boolean v1, p0, Lcom/android/settings/dashboard/SearchResultsSummary$SuggestionsAdapter;->mDataValid:Z
+    iget-boolean v1, p0, Lcom/android/settings_ext/dashboard/SearchResultsSummary$SuggestionsAdapter;->mDataValid:Z
 
     if-eqz v1, :cond_0
 
-    iget-object v1, p0, Lcom/android/settings/dashboard/SearchResultsSummary$SuggestionsAdapter;->mCursor:Landroid/database/Cursor;
+    iget-object v1, p0, Lcom/android/settings_ext/dashboard/SearchResultsSummary$SuggestionsAdapter;->mCursor:Landroid/database/Cursor;
 
     invoke-interface {v1, p1}, Landroid/database/Cursor;->moveToPosition(I)Z
 
@@ -131,7 +131,7 @@
     if-eqz v1, :cond_0
 
     .line 442
-    iget-object v1, p0, Lcom/android/settings/dashboard/SearchResultsSummary$SuggestionsAdapter;->mCursor:Landroid/database/Cursor;
+    iget-object v1, p0, Lcom/android/settings_ext/dashboard/SearchResultsSummary$SuggestionsAdapter;->mCursor:Landroid/database/Cursor;
 
     const/4 v2, 0x0
 
@@ -141,9 +141,9 @@
 
     .line 444
     .local v0, "query":Ljava/lang/String;
-    new-instance v1, Lcom/android/settings/dashboard/SearchResultsSummary$SuggestionItem;
+    new-instance v1, Lcom/android/settings_ext/dashboard/SearchResultsSummary$SuggestionItem;
 
-    invoke-direct {v1, v0}, Lcom/android/settings/dashboard/SearchResultsSummary$SuggestionItem;-><init>(Ljava/lang/String;)V
+    invoke-direct {v1, v0}, Lcom/android/settings_ext/dashboard/SearchResultsSummary$SuggestionItem;-><init>(Ljava/lang/String;)V
 
     .line 446
     .end local v0    # "query":Ljava/lang/String;
@@ -175,7 +175,7 @@
 
     .prologue
     .line 456
-    iget-boolean v3, p0, Lcom/android/settings/dashboard/SearchResultsSummary$SuggestionsAdapter;->mDataValid:Z
+    iget-boolean v3, p0, Lcom/android/settings_ext/dashboard/SearchResultsSummary$SuggestionsAdapter;->mDataValid:Z
 
     if-nez v3, :cond_0
 
@@ -192,7 +192,7 @@
 
     .line 460
     :cond_0
-    iget-object v3, p0, Lcom/android/settings/dashboard/SearchResultsSummary$SuggestionsAdapter;->mCursor:Landroid/database/Cursor;
+    iget-object v3, p0, Lcom/android/settings_ext/dashboard/SearchResultsSummary$SuggestionsAdapter;->mCursor:Landroid/database/Cursor;
 
     invoke-interface {v3, p1}, Landroid/database/Cursor;->moveToPosition(I)Z
 
@@ -230,7 +230,7 @@
     if-nez p2, :cond_2
 
     .line 467
-    iget-object v3, p0, Lcom/android/settings/dashboard/SearchResultsSummary$SuggestionsAdapter;->mInflater:Landroid/view/LayoutInflater;
+    iget-object v3, p0, Lcom/android/settings_ext/dashboard/SearchResultsSummary$SuggestionsAdapter;->mInflater:Landroid/view/LayoutInflater;
 
     const v4, 0x7f0400a9
 
@@ -253,15 +253,15 @@
 
     .line 474
     .local v1, "query":Landroid/widget/TextView;
-    invoke-virtual {p0, p1}, Lcom/android/settings/dashboard/SearchResultsSummary$SuggestionsAdapter;->getItem(I)Ljava/lang/Object;
+    invoke-virtual {p0, p1}, Lcom/android/settings_ext/dashboard/SearchResultsSummary$SuggestionsAdapter;->getItem(I)Ljava/lang/Object;
 
     move-result-object v0
 
-    check-cast v0, Lcom/android/settings/dashboard/SearchResultsSummary$SuggestionItem;
+    check-cast v0, Lcom/android/settings_ext/dashboard/SearchResultsSummary$SuggestionItem;
 
     .line 475
-    .local v0, "item":Lcom/android/settings/dashboard/SearchResultsSummary$SuggestionItem;
-    iget-object v3, v0, Lcom/android/settings/dashboard/SearchResultsSummary$SuggestionItem;->query:Ljava/lang/String;
+    .local v0, "item":Lcom/android/settings_ext/dashboard/SearchResultsSummary$SuggestionItem;
+    iget-object v3, v0, Lcom/android/settings_ext/dashboard/SearchResultsSummary$SuggestionItem;->query:Ljava/lang/String;
 
     invoke-virtual {v1, v3}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
@@ -269,7 +269,7 @@
     return-object v2
 
     .line 469
-    .end local v0    # "item":Lcom/android/settings/dashboard/SearchResultsSummary$SuggestionItem;
+    .end local v0    # "item":Lcom/android/settings_ext/dashboard/SearchResultsSummary$SuggestionItem;
     .end local v1    # "query":Landroid/widget/TextView;
     .end local v2    # "view":Landroid/view/View;
     :cond_2
@@ -285,7 +285,7 @@
 
     .prologue
     .line 418
-    iget-object v1, p0, Lcom/android/settings/dashboard/SearchResultsSummary$SuggestionsAdapter;->mCursor:Landroid/database/Cursor;
+    iget-object v1, p0, Lcom/android/settings_ext/dashboard/SearchResultsSummary$SuggestionsAdapter;->mCursor:Landroid/database/Cursor;
 
     if-ne p1, v1, :cond_0
 
@@ -298,11 +298,11 @@
 
     .line 421
     :cond_0
-    iget-object v0, p0, Lcom/android/settings/dashboard/SearchResultsSummary$SuggestionsAdapter;->mCursor:Landroid/database/Cursor;
+    iget-object v0, p0, Lcom/android/settings_ext/dashboard/SearchResultsSummary$SuggestionsAdapter;->mCursor:Landroid/database/Cursor;
 
     .line 422
     .local v0, "oldCursor":Landroid/database/Cursor;
-    iput-object p1, p0, Lcom/android/settings/dashboard/SearchResultsSummary$SuggestionsAdapter;->mCursor:Landroid/database/Cursor;
+    iput-object p1, p0, Lcom/android/settings_ext/dashboard/SearchResultsSummary$SuggestionsAdapter;->mCursor:Landroid/database/Cursor;
 
     .line 423
     if-eqz p1, :cond_1
@@ -310,10 +310,10 @@
     .line 424
     const/4 v1, 0x1
 
-    iput-boolean v1, p0, Lcom/android/settings/dashboard/SearchResultsSummary$SuggestionsAdapter;->mDataValid:Z
+    iput-boolean v1, p0, Lcom/android/settings_ext/dashboard/SearchResultsSummary$SuggestionsAdapter;->mDataValid:Z
 
     .line 425
-    invoke-virtual {p0}, Lcom/android/settings/dashboard/SearchResultsSummary$SuggestionsAdapter;->notifyDataSetChanged()V
+    invoke-virtual {p0}, Lcom/android/settings_ext/dashboard/SearchResultsSummary$SuggestionsAdapter;->notifyDataSetChanged()V
 
     goto :goto_0
 
@@ -321,10 +321,10 @@
     :cond_1
     const/4 v1, 0x0
 
-    iput-boolean v1, p0, Lcom/android/settings/dashboard/SearchResultsSummary$SuggestionsAdapter;->mDataValid:Z
+    iput-boolean v1, p0, Lcom/android/settings_ext/dashboard/SearchResultsSummary$SuggestionsAdapter;->mDataValid:Z
 
     .line 428
-    invoke-virtual {p0}, Lcom/android/settings/dashboard/SearchResultsSummary$SuggestionsAdapter;->notifyDataSetInvalidated()V
+    invoke-virtual {p0}, Lcom/android/settings_ext/dashboard/SearchResultsSummary$SuggestionsAdapter;->notifyDataSetInvalidated()V
 
     goto :goto_0
 .end method

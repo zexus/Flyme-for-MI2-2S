@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PreferenceScreen
   xmlns:android="http://schemas.android.com/apk/res/android"
-  xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
+  xmlns:settings="http://schemas.android.com/apk/res/com.android.settings_ext">
     <ListPreference android:persistent="false" android:entries="@array/screen_color_title" android:title="@string/screen_color_temperature_adjust" android:key="screen_color" android:dialogTitle="@string/screen_color_temperature_adjust" android:entryValues="@array/screen_color_value" />
     <ListPreference android:persistent="false" android:entries="@array/screen_saturation_title" android:title="@string/screen_saturation_adjust" android:key="screen_saturation" android:dialogTitle="@string/screen_saturation_adjust" android:entryValues="@array/screen_saturation_value" />
 </PreferenceScreen>

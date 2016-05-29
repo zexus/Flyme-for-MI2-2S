@@ -1,11 +1,11 @@
-.class Lcom/android/settings/PointerSpeedPreference$SavedState;
+.class Lcom/android/settings_ext/PointerSpeedPreference$SavedState;
 .super Landroid/preference/Preference$BaseSavedState;
 .source "PointerSpeedPreference.java"
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/android/settings/PointerSpeedPreference;
+    value = Lcom/android/settings_ext/PointerSpeedPreference;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -20,7 +20,7 @@
         value = {
             "Landroid/os/Parcelable$Creator",
             "<",
-            "Lcom/android/settings/PointerSpeedPreference$SavedState;",
+            "Lcom/android/settings_ext/PointerSpeedPreference$SavedState;",
             ">;"
         }
     .end annotation
@@ -39,11 +39,11 @@
 
     .prologue
     .line 171
-    new-instance v0, Lcom/android/settings/PointerSpeedPreference$SavedState$1;
+    new-instance v0, Lcom/android/settings_ext/PointerSpeedPreference$SavedState$1;
 
-    invoke-direct {v0}, Lcom/android/settings/PointerSpeedPreference$SavedState$1;-><init>()V
+    invoke-direct {v0}, Lcom/android/settings_ext/PointerSpeedPreference$SavedState$1;-><init>()V
 
-    sput-object v0, Lcom/android/settings/PointerSpeedPreference$SavedState;->CREATOR:Landroid/os/Parcelable$Creator;
+    sput-object v0, Lcom/android/settings_ext/PointerSpeedPreference$SavedState;->CREATOR:Landroid/os/Parcelable$Creator;
 
     return-void
 .end method
@@ -61,14 +61,14 @@
 
     move-result v0
 
-    iput v0, p0, Lcom/android/settings/PointerSpeedPreference$SavedState;->progress:I
+    iput v0, p0, Lcom/android/settings_ext/PointerSpeedPreference$SavedState;->progress:I
 
     .line 157
     invoke-virtual {p1}, Landroid/os/Parcel;->readInt()I
 
     move-result v0
 
-    iput v0, p0, Lcom/android/settings/PointerSpeedPreference$SavedState;->oldSpeed:I
+    iput v0, p0, Lcom/android/settings_ext/PointerSpeedPreference$SavedState;->oldSpeed:I
 
     .line 158
     return-void
@@ -98,12 +98,12 @@
     invoke-super {p0, p1, p2}, Landroid/preference/Preference$BaseSavedState;->writeToParcel(Landroid/os/Parcel;I)V
 
     .line 163
-    iget v0, p0, Lcom/android/settings/PointerSpeedPreference$SavedState;->progress:I
+    iget v0, p0, Lcom/android/settings_ext/PointerSpeedPreference$SavedState;->progress:I
 
     invoke-virtual {p1, v0}, Landroid/os/Parcel;->writeInt(I)V
 
     .line 164
-    iget v0, p0, Lcom/android/settings/PointerSpeedPreference$SavedState;->oldSpeed:I
+    iget v0, p0, Lcom/android/settings_ext/PointerSpeedPreference$SavedState;->oldSpeed:I
 
     invoke-virtual {p1, v0}, Landroid/os/Parcel;->writeInt(I)V
 

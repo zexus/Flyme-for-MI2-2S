@@ -1,11 +1,11 @@
-.class Lcom/android/settings/fuelgauge/BatteryHistoryChart$TextAttrs;
+.class Lcom/android/settings_ext/fuelgauge/BatteryHistoryChart$TextAttrs;
 .super Ljava/lang/Object;
 .source "BatteryHistoryChart.java"
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/android/settings/fuelgauge/BatteryHistoryChart;
+    value = Lcom/android/settings_ext/fuelgauge/BatteryHistoryChart;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -37,18 +37,18 @@
     .line 229
     const/4 v0, 0x0
 
-    iput-object v0, p0, Lcom/android/settings/fuelgauge/BatteryHistoryChart$TextAttrs;->textColor:Landroid/content/res/ColorStateList;
+    iput-object v0, p0, Lcom/android/settings_ext/fuelgauge/BatteryHistoryChart$TextAttrs;->textColor:Landroid/content/res/ColorStateList;
 
     .line 230
     const/16 v0, 0xf
 
-    iput v0, p0, Lcom/android/settings/fuelgauge/BatteryHistoryChart$TextAttrs;->textSize:I
+    iput v0, p0, Lcom/android/settings_ext/fuelgauge/BatteryHistoryChart$TextAttrs;->textSize:I
 
     .line 231
-    iput v1, p0, Lcom/android/settings/fuelgauge/BatteryHistoryChart$TextAttrs;->typefaceIndex:I
+    iput v1, p0, Lcom/android/settings_ext/fuelgauge/BatteryHistoryChart$TextAttrs;->typefaceIndex:I
 
     .line 232
-    iput v1, p0, Lcom/android/settings/fuelgauge/BatteryHistoryChart$TextAttrs;->styleIndex:I
+    iput v1, p0, Lcom/android/settings_ext/fuelgauge/BatteryHistoryChart$TextAttrs;->styleIndex:I
 
     return-void
 .end method
@@ -88,7 +88,7 @@
     invoke-virtual {p2, v1}, Landroid/text/TextPaint;->setCompatibilityScaling(F)V
 
     .line 274
-    iget-object v1, p0, Lcom/android/settings/fuelgauge/BatteryHistoryChart$TextAttrs;->textColor:Landroid/content/res/ColorStateList;
+    iget-object v1, p0, Lcom/android/settings_ext/fuelgauge/BatteryHistoryChart$TextAttrs;->textColor:Landroid/content/res/ColorStateList;
 
     invoke-virtual {v1}, Landroid/content/res/ColorStateList;->getDefaultColor()I
 
@@ -97,7 +97,7 @@
     invoke-virtual {p2, v1}, Landroid/text/TextPaint;->setColor(I)V
 
     .line 275
-    iget v1, p0, Lcom/android/settings/fuelgauge/BatteryHistoryChart$TextAttrs;->textSize:I
+    iget v1, p0, Lcom/android/settings_ext/fuelgauge/BatteryHistoryChart$TextAttrs;->textSize:I
 
     int-to-float v1, v1
 
@@ -108,15 +108,15 @@
 
     .line 278
     .local v0, "tf":Landroid/graphics/Typeface;
-    iget v1, p0, Lcom/android/settings/fuelgauge/BatteryHistoryChart$TextAttrs;->typefaceIndex:I
+    iget v1, p0, Lcom/android/settings_ext/fuelgauge/BatteryHistoryChart$TextAttrs;->typefaceIndex:I
 
     packed-switch v1, :pswitch_data_0
 
     .line 292
     :goto_0
-    iget v1, p0, Lcom/android/settings/fuelgauge/BatteryHistoryChart$TextAttrs;->styleIndex:I
+    iget v1, p0, Lcom/android/settings_ext/fuelgauge/BatteryHistoryChart$TextAttrs;->styleIndex:I
 
-    invoke-virtual {p0, p2, v0, v1}, Lcom/android/settings/fuelgauge/BatteryHistoryChart$TextAttrs;->setTypeface(Landroid/text/TextPaint;Landroid/graphics/Typeface;I)V
+    invoke-virtual {p0, p2, v0, v1}, Lcom/android/settings_ext/fuelgauge/BatteryHistoryChart$TextAttrs;->setTypeface(Landroid/text/TextPaint;Landroid/graphics/Typeface;I)V
 
     .line 293
     return-void
@@ -219,19 +219,19 @@
 
     move-result-object v5
 
-    iput-object v5, p0, Lcom/android/settings/fuelgauge/BatteryHistoryChart$TextAttrs;->textColor:Landroid/content/res/ColorStateList;
+    iput-object v5, p0, Lcom/android/settings_ext/fuelgauge/BatteryHistoryChart$TextAttrs;->textColor:Landroid/content/res/ColorStateList;
 
     goto :goto_1
 
     .line 252
     :pswitch_1
-    iget v5, p0, Lcom/android/settings/fuelgauge/BatteryHistoryChart$TextAttrs;->textSize:I
+    iget v5, p0, Lcom/android/settings_ext/fuelgauge/BatteryHistoryChart$TextAttrs;->textSize:I
 
     invoke-virtual {v1, v2, v5}, Landroid/content/res/TypedArray;->getDimensionPixelSize(II)I
 
     move-result v5
 
-    iput v5, p0, Lcom/android/settings/fuelgauge/BatteryHistoryChart$TextAttrs;->textSize:I
+    iput v5, p0, Lcom/android/settings_ext/fuelgauge/BatteryHistoryChart$TextAttrs;->textSize:I
 
     goto :goto_1
 
@@ -241,7 +241,7 @@
 
     move-result v5
 
-    iput v5, p0, Lcom/android/settings/fuelgauge/BatteryHistoryChart$TextAttrs;->typefaceIndex:I
+    iput v5, p0, Lcom/android/settings_ext/fuelgauge/BatteryHistoryChart$TextAttrs;->typefaceIndex:I
 
     goto :goto_1
 
@@ -251,7 +251,7 @@
 
     move-result v5
 
-    iput v5, p0, Lcom/android/settings/fuelgauge/BatteryHistoryChart$TextAttrs;->styleIndex:I
+    iput v5, p0, Lcom/android/settings_ext/fuelgauge/BatteryHistoryChart$TextAttrs;->styleIndex:I
 
     goto :goto_1
 

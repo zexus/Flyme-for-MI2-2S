@@ -1,4 +1,4 @@
-.class Lcom/android/settings/notification/NotificationAppList$NotificationAppAdapter$1;
+.class Lcom/android/settings_ext/notification/NotificationAppList$NotificationAppAdapter$1;
 .super Ljava/lang/Object;
 .source "NotificationAppList.java"
 
@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/android/settings/notification/NotificationAppList$NotificationAppAdapter;->bindView(Landroid/view/View;Lcom/android/settings/notification/NotificationAppList$Row;Z)V
+    value = Lcom/android/settings_ext/notification/NotificationAppList$NotificationAppAdapter;->bindView(Landroid/view/View;Lcom/android/settings_ext/notification/NotificationAppList$Row;Z)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -18,20 +18,20 @@
 
 
 # instance fields
-.field final synthetic this$1:Lcom/android/settings/notification/NotificationAppList$NotificationAppAdapter;
+.field final synthetic this$1:Lcom/android/settings_ext/notification/NotificationAppList$NotificationAppAdapter;
 
-.field final synthetic val$row:Lcom/android/settings/notification/NotificationAppList$AppRow;
+.field final synthetic val$row:Lcom/android/settings_ext/notification/NotificationAppList$AppRow;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/notification/NotificationAppList$NotificationAppAdapter;Lcom/android/settings/notification/NotificationAppList$AppRow;)V
+.method constructor <init>(Lcom/android/settings_ext/notification/NotificationAppList$NotificationAppAdapter;Lcom/android/settings_ext/notification/NotificationAppList$AppRow;)V
     .locals 0
 
     .prologue
     .line 292
-    iput-object p1, p0, Lcom/android/settings/notification/NotificationAppList$NotificationAppAdapter$1;->this$1:Lcom/android/settings/notification/NotificationAppList$NotificationAppAdapter;
+    iput-object p1, p0, Lcom/android/settings_ext/notification/NotificationAppList$NotificationAppAdapter$1;->this$1:Lcom/android/settings_ext/notification/NotificationAppList$NotificationAppAdapter;
 
-    iput-object p2, p0, Lcom/android/settings/notification/NotificationAppList$NotificationAppAdapter$1;->val$row:Lcom/android/settings/notification/NotificationAppList$AppRow;
+    iput-object p2, p0, Lcom/android/settings_ext/notification/NotificationAppList$NotificationAppAdapter$1;->val$row:Lcom/android/settings_ext/notification/NotificationAppList$AppRow;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -46,12 +46,12 @@
 
     .prologue
     .line 295
-    iget-object v0, p0, Lcom/android/settings/notification/NotificationAppList$NotificationAppAdapter$1;->this$1:Lcom/android/settings/notification/NotificationAppList$NotificationAppAdapter;
+    iget-object v0, p0, Lcom/android/settings_ext/notification/NotificationAppList$NotificationAppAdapter$1;->this$1:Lcom/android/settings_ext/notification/NotificationAppList$NotificationAppAdapter;
 
-    iget-object v0, v0, Lcom/android/settings/notification/NotificationAppList$NotificationAppAdapter;->this$0:Lcom/android/settings/notification/NotificationAppList;
+    iget-object v0, v0, Lcom/android/settings_ext/notification/NotificationAppList$NotificationAppAdapter;->this$0:Lcom/android/settings_ext/notification/NotificationAppList;
 
-    # getter for: Lcom/android/settings/notification/NotificationAppList;->mContext:Landroid/content/Context;
-    invoke-static {v0}, Lcom/android/settings/notification/NotificationAppList;->access$200(Lcom/android/settings/notification/NotificationAppList;)Landroid/content/Context;
+    # getter for: Lcom/android/settings_ext/notification/NotificationAppList;->mContext:Landroid/content/Context;
+    invoke-static {v0}, Lcom/android/settings_ext/notification/NotificationAppList;->access$200(Lcom/android/settings_ext/notification/NotificationAppList;)Landroid/content/Context;
 
     move-result-object v1
 
@@ -69,9 +69,9 @@
 
     const-string v2, "app_package"
 
-    iget-object v3, p0, Lcom/android/settings/notification/NotificationAppList$NotificationAppAdapter$1;->val$row:Lcom/android/settings/notification/NotificationAppList$AppRow;
+    iget-object v3, p0, Lcom/android/settings_ext/notification/NotificationAppList$NotificationAppAdapter$1;->val$row:Lcom/android/settings_ext/notification/NotificationAppList$AppRow;
 
-    iget-object v3, v3, Lcom/android/settings/notification/NotificationAppList$AppRow;->pkg:Ljava/lang/String;
+    iget-object v3, v3, Lcom/android/settings_ext/notification/NotificationAppList$AppRow;->pkg:Ljava/lang/String;
 
     invoke-virtual {v0, v2, v3}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
 
@@ -79,9 +79,9 @@
 
     const-string v2, "app_uid"
 
-    iget-object v3, p0, Lcom/android/settings/notification/NotificationAppList$NotificationAppAdapter$1;->val$row:Lcom/android/settings/notification/NotificationAppList$AppRow;
+    iget-object v3, p0, Lcom/android/settings_ext/notification/NotificationAppList$NotificationAppAdapter$1;->val$row:Lcom/android/settings_ext/notification/NotificationAppList$AppRow;
 
-    iget v3, v3, Lcom/android/settings/notification/NotificationAppList$AppRow;->uid:I
+    iget v3, v3, Lcom/android/settings_ext/notification/NotificationAppList$AppRow;->uid:I
 
     invoke-virtual {v0, v2, v3}, Landroid/content/Intent;->putExtra(Ljava/lang/String;I)Landroid/content/Intent;
 
@@ -89,9 +89,9 @@
 
     const-string v3, "has_settings_intent"
 
-    iget-object v0, p0, Lcom/android/settings/notification/NotificationAppList$NotificationAppAdapter$1;->val$row:Lcom/android/settings/notification/NotificationAppList$AppRow;
+    iget-object v0, p0, Lcom/android/settings_ext/notification/NotificationAppList$NotificationAppAdapter$1;->val$row:Lcom/android/settings_ext/notification/NotificationAppList$AppRow;
 
-    iget-object v0, v0, Lcom/android/settings/notification/NotificationAppList$AppRow;->settingsIntent:Landroid/content/Intent;
+    iget-object v0, v0, Lcom/android/settings_ext/notification/NotificationAppList$AppRow;->settingsIntent:Landroid/content/Intent;
 
     if-eqz v0, :cond_0
 
@@ -104,9 +104,9 @@
 
     const-string v2, "settings_intent"
 
-    iget-object v3, p0, Lcom/android/settings/notification/NotificationAppList$NotificationAppAdapter$1;->val$row:Lcom/android/settings/notification/NotificationAppList$AppRow;
+    iget-object v3, p0, Lcom/android/settings_ext/notification/NotificationAppList$NotificationAppAdapter$1;->val$row:Lcom/android/settings_ext/notification/NotificationAppList$AppRow;
 
-    iget-object v3, v3, Lcom/android/settings/notification/NotificationAppList$AppRow;->settingsIntent:Landroid/content/Intent;
+    iget-object v3, v3, Lcom/android/settings_ext/notification/NotificationAppList$AppRow;->settingsIntent:Landroid/content/Intent;
 
     invoke-virtual {v0, v2, v3}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Landroid/os/Parcelable;)Landroid/content/Intent;
 

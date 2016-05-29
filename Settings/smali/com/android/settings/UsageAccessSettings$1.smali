@@ -1,11 +1,11 @@
-.class Lcom/android/settings/UsageAccessSettings$1;
+.class Lcom/android/settings_ext/UsageAccessSettings$1;
 .super Lcom/android/internal/content/PackageMonitor;
 .source "UsageAccessSettings.java"
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/android/settings/UsageAccessSettings;
+    value = Lcom/android/settings_ext/UsageAccessSettings;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -15,16 +15,16 @@
 
 
 # instance fields
-.field final synthetic this$0:Lcom/android/settings/UsageAccessSettings;
+.field final synthetic this$0:Lcom/android/settings_ext/UsageAccessSettings;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/UsageAccessSettings;)V
+.method constructor <init>(Lcom/android/settings_ext/UsageAccessSettings;)V
     .locals 0
 
     .prologue
     .line 349
-    iput-object p1, p0, Lcom/android/settings/UsageAccessSettings$1;->this$0:Lcom/android/settings/UsageAccessSettings;
+    iput-object p1, p0, Lcom/android/settings_ext/UsageAccessSettings$1;->this$0:Lcom/android/settings_ext/UsageAccessSettings;
 
     invoke-direct {p0}, Lcom/android/internal/content/PackageMonitor;-><init>()V
 
@@ -40,10 +40,10 @@
 
     .prologue
     .line 352
-    iget-object v0, p0, Lcom/android/settings/UsageAccessSettings$1;->this$0:Lcom/android/settings/UsageAccessSettings;
+    iget-object v0, p0, Lcom/android/settings_ext/UsageAccessSettings$1;->this$0:Lcom/android/settings_ext/UsageAccessSettings;
 
-    # invokes: Lcom/android/settings/UsageAccessSettings;->updateInterestedApps()V
-    invoke-static {v0}, Lcom/android/settings/UsageAccessSettings;->access$300(Lcom/android/settings/UsageAccessSettings;)V
+    # invokes: Lcom/android/settings_ext/UsageAccessSettings;->updateInterestedApps()V
+    invoke-static {v0}, Lcom/android/settings_ext/UsageAccessSettings;->access$300(Lcom/android/settings_ext/UsageAccessSettings;)V
 
     .line 353
     return-void
@@ -56,10 +56,10 @@
 
     .prologue
     .line 357
-    iget-object v0, p0, Lcom/android/settings/UsageAccessSettings$1;->this$0:Lcom/android/settings/UsageAccessSettings;
+    iget-object v0, p0, Lcom/android/settings_ext/UsageAccessSettings$1;->this$0:Lcom/android/settings_ext/UsageAccessSettings;
 
-    # invokes: Lcom/android/settings/UsageAccessSettings;->updateInterestedApps()V
-    invoke-static {v0}, Lcom/android/settings/UsageAccessSettings;->access$300(Lcom/android/settings/UsageAccessSettings;)V
+    # invokes: Lcom/android/settings_ext/UsageAccessSettings;->updateInterestedApps()V
+    invoke-static {v0}, Lcom/android/settings_ext/UsageAccessSettings;->access$300(Lcom/android/settings_ext/UsageAccessSettings;)V
 
     .line 358
     return-void

@@ -1,4 +1,4 @@
-.class Lcom/android/settings/DataUsageSummary$5;
+.class Lcom/android/settings_ext/DataUsageSummary$5;
 .super Ljava/lang/Object;
 .source "DataUsageSummary.java"
 
@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/android/settings/DataUsageSummary;->updateAppDetail()V
+    value = Lcom/android/settings_ext/DataUsageSummary;->updateAppDetail()V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -18,20 +18,20 @@
 
 
 # instance fields
-.field final synthetic this$0:Lcom/android/settings/DataUsageSummary;
+.field final synthetic this$0:Lcom/android/settings_ext/DataUsageSummary;
 
 .field final synthetic val$uid:I
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/DataUsageSummary;I)V
+.method constructor <init>(Lcom/android/settings_ext/DataUsageSummary;I)V
     .locals 0
 
     .prologue
     .line 894
-    iput-object p1, p0, Lcom/android/settings/DataUsageSummary$5;->this$0:Lcom/android/settings/DataUsageSummary;
+    iput-object p1, p0, Lcom/android/settings_ext/DataUsageSummary$5;->this$0:Lcom/android/settings_ext/DataUsageSummary;
 
-    iput p2, p0, Lcom/android/settings/DataUsageSummary$5;->val$uid:I
+    iput p2, p0, Lcom/android/settings_ext/DataUsageSummary$5;->val$uid:I
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -46,9 +46,9 @@
 
     .prologue
     .line 897
-    iget-object v0, p0, Lcom/android/settings/DataUsageSummary$5;->this$0:Lcom/android/settings/DataUsageSummary;
+    iget-object v0, p0, Lcom/android/settings_ext/DataUsageSummary$5;->this$0:Lcom/android/settings_ext/DataUsageSummary;
 
-    invoke-virtual {v0}, Lcom/android/settings/DataUsageSummary;->isAdded()Z
+    invoke-virtual {v0}, Lcom/android/settings_ext/DataUsageSummary;->isAdded()Z
 
     move-result v0
 
@@ -60,22 +60,22 @@
 
     .line 902
     :cond_0
-    iget-object v0, p0, Lcom/android/settings/DataUsageSummary$5;->this$0:Lcom/android/settings/DataUsageSummary;
+    iget-object v0, p0, Lcom/android/settings_ext/DataUsageSummary$5;->this$0:Lcom/android/settings_ext/DataUsageSummary;
 
-    invoke-virtual {v0}, Lcom/android/settings/DataUsageSummary;->getActivity()Landroid/app/Activity;
+    invoke-virtual {v0}, Lcom/android/settings_ext/DataUsageSummary;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/android/settings/DataUsageSummary$5;->this$0:Lcom/android/settings/DataUsageSummary;
+    iget-object v1, p0, Lcom/android/settings_ext/DataUsageSummary$5;->this$0:Lcom/android/settings_ext/DataUsageSummary;
 
-    # getter for: Lcom/android/settings/DataUsageSummary;->mAppSettingsIntent:Landroid/content/Intent;
-    invoke-static {v1}, Lcom/android/settings/DataUsageSummary;->access$300(Lcom/android/settings/DataUsageSummary;)Landroid/content/Intent;
+    # getter for: Lcom/android/settings_ext/DataUsageSummary;->mAppSettingsIntent:Landroid/content/Intent;
+    invoke-static {v1}, Lcom/android/settings_ext/DataUsageSummary;->access$300(Lcom/android/settings_ext/DataUsageSummary;)Landroid/content/Intent;
 
     move-result-object v1
 
     new-instance v2, Landroid/os/UserHandle;
 
-    iget v3, p0, Lcom/android/settings/DataUsageSummary$5;->val$uid:I
+    iget v3, p0, Lcom/android/settings_ext/DataUsageSummary$5;->val$uid:I
 
     invoke-static {v3}, Landroid/os/UserHandle;->getUserId(I)I
 

@@ -1,11 +1,11 @@
-.class final Lcom/android/settings/notification/ZenModeSettings$1;
-.super Lcom/android/settings/notification/ZenModeSettings$SettingPrefWithCallback;
+.class final Lcom/android/settings_ext/notification/ZenModeSettings$1;
+.super Lcom/android/settings_ext/notification/ZenModeSettings$SettingPrefWithCallback;
 .source "ZenModeSettings.java"
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/android/settings/notification/ZenModeSettings;
+    value = Lcom/android/settings_ext/notification/ZenModeSettings;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -25,7 +25,7 @@
 
     .prologue
     .line 90
-    invoke-direct/range {p0 .. p5}, Lcom/android/settings/notification/ZenModeSettings$SettingPrefWithCallback;-><init>(ILjava/lang/String;Ljava/lang/String;I[I)V
+    invoke-direct/range {p0 .. p5}, Lcom/android/settings_ext/notification/ZenModeSettings$SettingPrefWithCallback;-><init>(ILjava/lang/String;Ljava/lang/String;I[I)V
 
     return-void
 .end method

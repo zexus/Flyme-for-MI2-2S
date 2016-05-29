@@ -1,11 +1,11 @@
-.class Lcom/android/settings/sim/SimSettings$2;
+.class Lcom/android/settings_ext/sim/SimSettings$2;
 .super Landroid/telephony/PhoneStateListener;
 .source "SimSettings.java"
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/android/settings/sim/SimSettings;->getPhoneStateListener(II)Landroid/telephony/PhoneStateListener;
+    value = Lcom/android/settings_ext/sim/SimSettings;->getPhoneStateListener(II)Landroid/telephony/PhoneStateListener;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -15,21 +15,21 @@
 
 
 # instance fields
-.field final synthetic this$0:Lcom/android/settings/sim/SimSettings;
+.field final synthetic this$0:Lcom/android/settings_ext/sim/SimSettings;
 
 .field final synthetic val$i:I
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/sim/SimSettings;II)V
+.method constructor <init>(Lcom/android/settings_ext/sim/SimSettings;II)V
     .locals 0
     .param p2, "x0"    # I
 
     .prologue
     .line 251
-    iput-object p1, p0, Lcom/android/settings/sim/SimSettings$2;->this$0:Lcom/android/settings/sim/SimSettings;
+    iput-object p1, p0, Lcom/android/settings_ext/sim/SimSettings$2;->this$0:Lcom/android/settings_ext/sim/SimSettings;
 
-    iput p3, p0, Lcom/android/settings/sim/SimSettings$2;->val$i:I
+    iput p3, p0, Lcom/android/settings_ext/sim/SimSettings$2;->val$i:I
 
     invoke-direct {p0, p2}, Landroid/telephony/PhoneStateListener;-><init>(I)V
 
@@ -68,22 +68,22 @@
     invoke-static {v0, v1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
     .line 255
-    iget-object v0, p0, Lcom/android/settings/sim/SimSettings$2;->this$0:Lcom/android/settings/sim/SimSettings;
+    iget-object v0, p0, Lcom/android/settings_ext/sim/SimSettings$2;->this$0:Lcom/android/settings_ext/sim/SimSettings;
 
-    # getter for: Lcom/android/settings/sim/SimSettings;->mCallState:[I
-    invoke-static {v0}, Lcom/android/settings/sim/SimSettings;->access$900(Lcom/android/settings/sim/SimSettings;)[I
+    # getter for: Lcom/android/settings_ext/sim/SimSettings;->mCallState:[I
+    invoke-static {v0}, Lcom/android/settings_ext/sim/SimSettings;->access$900(Lcom/android/settings_ext/sim/SimSettings;)[I
 
     move-result-object v0
 
-    iget v1, p0, Lcom/android/settings/sim/SimSettings$2;->val$i:I
+    iget v1, p0, Lcom/android/settings_ext/sim/SimSettings$2;->val$i:I
 
     aput p1, v0, v1
 
     .line 256
-    iget-object v0, p0, Lcom/android/settings/sim/SimSettings$2;->this$0:Lcom/android/settings/sim/SimSettings;
+    iget-object v0, p0, Lcom/android/settings_ext/sim/SimSettings$2;->this$0:Lcom/android/settings_ext/sim/SimSettings;
 
-    # invokes: Lcom/android/settings/sim/SimSettings;->updateCellularDataPreference()V
-    invoke-static {v0}, Lcom/android/settings/sim/SimSettings;->access$1000(Lcom/android/settings/sim/SimSettings;)V
+    # invokes: Lcom/android/settings_ext/sim/SimSettings;->updateCellularDataPreference()V
+    invoke-static {v0}, Lcom/android/settings_ext/sim/SimSettings;->access$1000(Lcom/android/settings_ext/sim/SimSettings;)V
 
     .line 257
     return-void

@@ -1,4 +1,4 @@
-.class Lcom/android/settings/users/RestrictedProfileSettings$1;
+.class Lcom/android/settings_ext/users/RestrictedProfileSettings$1;
 .super Ljava/lang/Object;
 .source "RestrictedProfileSettings.java"
 
@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/android/settings/users/RestrictedProfileSettings;->onCreateDialog(I)Landroid/app/Dialog;
+    value = Lcom/android/settings_ext/users/RestrictedProfileSettings;->onCreateDialog(I)Landroid/app/Dialog;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -18,16 +18,16 @@
 
 
 # instance fields
-.field final synthetic this$0:Lcom/android/settings/users/RestrictedProfileSettings;
+.field final synthetic this$0:Lcom/android/settings_ext/users/RestrictedProfileSettings;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/users/RestrictedProfileSettings;)V
+.method constructor <init>(Lcom/android/settings_ext/users/RestrictedProfileSettings;)V
     .locals 0
 
     .prologue
     .line 133
-    iput-object p1, p0, Lcom/android/settings/users/RestrictedProfileSettings$1;->this$0:Lcom/android/settings/users/RestrictedProfileSettings;
+    iput-object p1, p0, Lcom/android/settings_ext/users/RestrictedProfileSettings$1;->this$0:Lcom/android/settings_ext/users/RestrictedProfileSettings;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -43,10 +43,10 @@
 
     .prologue
     .line 135
-    iget-object v0, p0, Lcom/android/settings/users/RestrictedProfileSettings$1;->this$0:Lcom/android/settings/users/RestrictedProfileSettings;
+    iget-object v0, p0, Lcom/android/settings_ext/users/RestrictedProfileSettings$1;->this$0:Lcom/android/settings_ext/users/RestrictedProfileSettings;
 
-    # invokes: Lcom/android/settings/users/RestrictedProfileSettings;->removeUser()V
-    invoke-static {v0}, Lcom/android/settings/users/RestrictedProfileSettings;->access$000(Lcom/android/settings/users/RestrictedProfileSettings;)V
+    # invokes: Lcom/android/settings_ext/users/RestrictedProfileSettings;->removeUser()V
+    invoke-static {v0}, Lcom/android/settings_ext/users/RestrictedProfileSettings;->access$000(Lcom/android/settings_ext/users/RestrictedProfileSettings;)V
 
     .line 136
     return-void

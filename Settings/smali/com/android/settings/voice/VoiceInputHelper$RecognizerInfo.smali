@@ -1,11 +1,11 @@
-.class public Lcom/android/settings/voice/VoiceInputHelper$RecognizerInfo;
-.super Lcom/android/settings/voice/VoiceInputHelper$BaseInfo;
+.class public Lcom/android/settings_ext/voice/VoiceInputHelper$RecognizerInfo;
+.super Lcom/android/settings_ext/voice/VoiceInputHelper$BaseInfo;
 .source "VoiceInputHelper.java"
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/android/settings/voice/VoiceInputHelper;
+    value = Lcom/android/settings_ext/voice/VoiceInputHelper;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -23,7 +23,7 @@
 
     .prologue
     .line 88
-    invoke-direct {p0, p1, p2, p3}, Lcom/android/settings/voice/VoiceInputHelper$BaseInfo;-><init>(Landroid/content/pm/PackageManager;Landroid/content/pm/ServiceInfo;Ljava/lang/String;)V
+    invoke-direct {p0, p1, p2, p3}, Lcom/android/settings_ext/voice/VoiceInputHelper$BaseInfo;-><init>(Landroid/content/pm/PackageManager;Landroid/content/pm/ServiceInfo;Ljava/lang/String;)V
 
     .line 89
     return-void

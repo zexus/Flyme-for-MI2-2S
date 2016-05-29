@@ -1,11 +1,11 @@
-.class public interface abstract Lcom/android/settings/widget/SwitchBar$OnSwitchChangeListener;
+.class public interface abstract Lcom/android/settings_ext/widget/SwitchBar$OnSwitchChangeListener;
 .super Ljava/lang/Object;
 .source "SwitchBar.java"
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/android/settings/widget/SwitchBar;
+    value = Lcom/android/settings_ext/widget/SwitchBar;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;

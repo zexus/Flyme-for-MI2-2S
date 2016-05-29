@@ -1,11 +1,11 @@
-.class public interface abstract Lcom/android/settings/notification/VolumeSeekBarPreference$Callback;
+.class public interface abstract Lcom/android/settings_ext/notification/VolumeSeekBarPreference$Callback;
 .super Ljava/lang/Object;
 .source "VolumeSeekBarPreference.java"
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/android/settings/notification/VolumeSeekBarPreference;
+    value = Lcom/android/settings_ext/notification/VolumeSeekBarPreference;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;

@@ -1,4 +1,4 @@
-.class Lcom/android/settings/wfd/WifiDisplaySettings$1$1;
+.class Lcom/android/settings_ext/wfd/WifiDisplaySettings$1$1;
 .super Ljava/lang/Object;
 .source "WifiDisplaySettings.java"
 
@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/android/settings/wfd/WifiDisplaySettings$1;->getView(Landroid/view/View;Landroid/view/ViewGroup;)Landroid/view/View;
+    value = Lcom/android/settings_ext/wfd/WifiDisplaySettings$1;->getView(Landroid/view/View;Landroid/view/ViewGroup;)Landroid/view/View;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -18,16 +18,16 @@
 
 
 # instance fields
-.field final synthetic this$1:Lcom/android/settings/wfd/WifiDisplaySettings$1;
+.field final synthetic this$1:Lcom/android/settings_ext/wfd/WifiDisplaySettings$1;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/wfd/WifiDisplaySettings$1;)V
+.method constructor <init>(Lcom/android/settings_ext/wfd/WifiDisplaySettings$1;)V
     .locals 0
 
     .prologue
     .line 340
-    iput-object p1, p0, Lcom/android/settings/wfd/WifiDisplaySettings$1$1;->this$1:Lcom/android/settings/wfd/WifiDisplaySettings$1;
+    iput-object p1, p0, Lcom/android/settings_ext/wfd/WifiDisplaySettings$1$1;->this$1:Lcom/android/settings_ext/wfd/WifiDisplaySettings$1;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -42,12 +42,12 @@
 
     .prologue
     .line 343
-    iget-object v0, p0, Lcom/android/settings/wfd/WifiDisplaySettings$1$1;->this$1:Lcom/android/settings/wfd/WifiDisplaySettings$1;
+    iget-object v0, p0, Lcom/android/settings_ext/wfd/WifiDisplaySettings$1$1;->this$1:Lcom/android/settings_ext/wfd/WifiDisplaySettings$1;
 
-    iget-object v0, v0, Lcom/android/settings/wfd/WifiDisplaySettings$1;->this$0:Lcom/android/settings/wfd/WifiDisplaySettings;
+    iget-object v0, v0, Lcom/android/settings_ext/wfd/WifiDisplaySettings$1;->this$0:Lcom/android/settings_ext/wfd/WifiDisplaySettings;
 
-    # getter for: Lcom/android/settings/wfd/WifiDisplaySettings;->mDisplayManager:Landroid/hardware/display/DisplayManager;
-    invoke-static {v0}, Lcom/android/settings/wfd/WifiDisplaySettings;->access$000(Lcom/android/settings/wfd/WifiDisplaySettings;)Landroid/hardware/display/DisplayManager;
+    # getter for: Lcom/android/settings_ext/wfd/WifiDisplaySettings;->mDisplayManager:Landroid/hardware/display/DisplayManager;
+    invoke-static {v0}, Lcom/android/settings_ext/wfd/WifiDisplaySettings;->access$000(Lcom/android/settings_ext/wfd/WifiDisplaySettings;)Landroid/hardware/display/DisplayManager;
 
     move-result-object v0
 

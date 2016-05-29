@@ -1,11 +1,11 @@
-.class final Lcom/android/settings/fuelgauge/BatterySaverSettings$SettingsObserver;
+.class final Lcom/android/settings_ext/fuelgauge/BatterySaverSettings$SettingsObserver;
 .super Landroid/database/ContentObserver;
 .source "BatterySaverSettings.java"
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/android/settings/fuelgauge/BatterySaverSettings;
+    value = Lcom/android/settings_ext/fuelgauge/BatterySaverSettings;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -17,17 +17,17 @@
 # instance fields
 .field private final LOW_POWER_MODE_TRIGGER_LEVEL_URI:Landroid/net/Uri;
 
-.field final synthetic this$0:Lcom/android/settings/fuelgauge/BatterySaverSettings;
+.field final synthetic this$0:Lcom/android/settings_ext/fuelgauge/BatterySaverSettings;
 
 
 # direct methods
-.method public constructor <init>(Lcom/android/settings/fuelgauge/BatterySaverSettings;Landroid/os/Handler;)V
+.method public constructor <init>(Lcom/android/settings_ext/fuelgauge/BatterySaverSettings;Landroid/os/Handler;)V
     .locals 1
     .param p2, "handler"    # Landroid/os/Handler;
 
     .prologue
     .line 202
-    iput-object p1, p0, Lcom/android/settings/fuelgauge/BatterySaverSettings$SettingsObserver;->this$0:Lcom/android/settings/fuelgauge/BatterySaverSettings;
+    iput-object p1, p0, Lcom/android/settings_ext/fuelgauge/BatterySaverSettings$SettingsObserver;->this$0:Lcom/android/settings_ext/fuelgauge/BatterySaverSettings;
 
     .line 203
     invoke-direct {p0, p2}, Landroid/database/ContentObserver;-><init>(Landroid/os/Handler;)V
@@ -39,7 +39,7 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/fuelgauge/BatterySaverSettings$SettingsObserver;->LOW_POWER_MODE_TRIGGER_LEVEL_URI:Landroid/net/Uri;
+    iput-object v0, p0, Lcom/android/settings_ext/fuelgauge/BatterySaverSettings$SettingsObserver;->LOW_POWER_MODE_TRIGGER_LEVEL_URI:Landroid/net/Uri;
 
     .line 204
     return-void
@@ -54,7 +54,7 @@
 
     .prologue
     .line 208
-    iget-object v0, p0, Lcom/android/settings/fuelgauge/BatterySaverSettings$SettingsObserver;->LOW_POWER_MODE_TRIGGER_LEVEL_URI:Landroid/net/Uri;
+    iget-object v0, p0, Lcom/android/settings_ext/fuelgauge/BatterySaverSettings$SettingsObserver;->LOW_POWER_MODE_TRIGGER_LEVEL_URI:Landroid/net/Uri;
 
     invoke-virtual {v0, p2}, Landroid/net/Uri;->equals(Ljava/lang/Object;)Z
 
@@ -63,21 +63,21 @@
     if-eqz v0, :cond_0
 
     .line 209
-    iget-object v0, p0, Lcom/android/settings/fuelgauge/BatterySaverSettings$SettingsObserver;->this$0:Lcom/android/settings/fuelgauge/BatterySaverSettings;
+    iget-object v0, p0, Lcom/android/settings_ext/fuelgauge/BatterySaverSettings$SettingsObserver;->this$0:Lcom/android/settings_ext/fuelgauge/BatterySaverSettings;
 
-    # getter for: Lcom/android/settings/fuelgauge/BatterySaverSettings;->mTriggerPref:Lcom/android/settings/notification/SettingPref;
-    invoke-static {v0}, Lcom/android/settings/fuelgauge/BatterySaverSettings;->access$700(Lcom/android/settings/fuelgauge/BatterySaverSettings;)Lcom/android/settings/notification/SettingPref;
+    # getter for: Lcom/android/settings_ext/fuelgauge/BatterySaverSettings;->mTriggerPref:Lcom/android/settings_ext/notification/SettingPref;
+    invoke-static {v0}, Lcom/android/settings_ext/fuelgauge/BatterySaverSettings;->access$700(Lcom/android/settings_ext/fuelgauge/BatterySaverSettings;)Lcom/android/settings_ext/notification/SettingPref;
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/android/settings/fuelgauge/BatterySaverSettings$SettingsObserver;->this$0:Lcom/android/settings/fuelgauge/BatterySaverSettings;
+    iget-object v1, p0, Lcom/android/settings_ext/fuelgauge/BatterySaverSettings$SettingsObserver;->this$0:Lcom/android/settings_ext/fuelgauge/BatterySaverSettings;
 
-    # getter for: Lcom/android/settings/fuelgauge/BatterySaverSettings;->mContext:Landroid/content/Context;
-    invoke-static {v1}, Lcom/android/settings/fuelgauge/BatterySaverSettings;->access$600(Lcom/android/settings/fuelgauge/BatterySaverSettings;)Landroid/content/Context;
+    # getter for: Lcom/android/settings_ext/fuelgauge/BatterySaverSettings;->mContext:Landroid/content/Context;
+    invoke-static {v1}, Lcom/android/settings_ext/fuelgauge/BatterySaverSettings;->access$600(Lcom/android/settings_ext/fuelgauge/BatterySaverSettings;)Landroid/content/Context;
 
     move-result-object v1
 
-    invoke-virtual {v0, v1}, Lcom/android/settings/notification/SettingPref;->update(Landroid/content/Context;)V
+    invoke-virtual {v0, v1}, Lcom/android/settings_ext/notification/SettingPref;->update(Landroid/content/Context;)V
 
     .line 211
     :cond_0
@@ -90,10 +90,10 @@
 
     .prologue
     .line 214
-    iget-object v1, p0, Lcom/android/settings/fuelgauge/BatterySaverSettings$SettingsObserver;->this$0:Lcom/android/settings/fuelgauge/BatterySaverSettings;
+    iget-object v1, p0, Lcom/android/settings_ext/fuelgauge/BatterySaverSettings$SettingsObserver;->this$0:Lcom/android/settings_ext/fuelgauge/BatterySaverSettings;
 
-    # invokes: Lcom/android/settings/fuelgauge/BatterySaverSettings;->getContentResolver()Landroid/content/ContentResolver;
-    invoke-static {v1}, Lcom/android/settings/fuelgauge/BatterySaverSettings;->access$800(Lcom/android/settings/fuelgauge/BatterySaverSettings;)Landroid/content/ContentResolver;
+    # invokes: Lcom/android/settings_ext/fuelgauge/BatterySaverSettings;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-static {v1}, Lcom/android/settings_ext/fuelgauge/BatterySaverSettings;->access$800(Lcom/android/settings_ext/fuelgauge/BatterySaverSettings;)Landroid/content/ContentResolver;
 
     move-result-object v0
 
@@ -102,7 +102,7 @@
     if-eqz p1, :cond_0
 
     .line 216
-    iget-object v1, p0, Lcom/android/settings/fuelgauge/BatterySaverSettings$SettingsObserver;->LOW_POWER_MODE_TRIGGER_LEVEL_URI:Landroid/net/Uri;
+    iget-object v1, p0, Lcom/android/settings_ext/fuelgauge/BatterySaverSettings$SettingsObserver;->LOW_POWER_MODE_TRIGGER_LEVEL_URI:Landroid/net/Uri;
 
     const/4 v2, 0x0
 

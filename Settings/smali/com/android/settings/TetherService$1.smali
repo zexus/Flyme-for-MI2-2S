@@ -1,4 +1,4 @@
-.class Lcom/android/settings/TetherService$1;
+.class Lcom/android/settings_ext/TetherService$1;
 .super Ljava/lang/Object;
 .source "TetherService.java"
 
@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/android/settings/TetherService;->disableBtTethering()V
+    value = Lcom/android/settings_ext/TetherService;->disableBtTethering()V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -18,20 +18,20 @@
 
 
 # instance fields
-.field final synthetic this$0:Lcom/android/settings/TetherService;
+.field final synthetic this$0:Lcom/android/settings_ext/TetherService;
 
 .field final synthetic val$adapter:Landroid/bluetooth/BluetoothAdapter;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/TetherService;Landroid/bluetooth/BluetoothAdapter;)V
+.method constructor <init>(Lcom/android/settings_ext/TetherService;Landroid/bluetooth/BluetoothAdapter;)V
     .locals 0
 
     .prologue
     .line 194
-    iput-object p1, p0, Lcom/android/settings/TetherService$1;->this$0:Lcom/android/settings/TetherService;
+    iput-object p1, p0, Lcom/android/settings_ext/TetherService$1;->this$0:Lcom/android/settings_ext/TetherService;
 
-    iput-object p2, p0, Lcom/android/settings/TetherService$1;->val$adapter:Landroid/bluetooth/BluetoothAdapter;
+    iput-object p2, p0, Lcom/android/settings_ext/TetherService$1;->val$adapter:Landroid/bluetooth/BluetoothAdapter;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -56,7 +56,7 @@
     invoke-virtual {v0, v1}, Landroid/bluetooth/BluetoothPan;->setBluetoothTethering(Z)V
 
     .line 201
-    iget-object v0, p0, Lcom/android/settings/TetherService$1;->val$adapter:Landroid/bluetooth/BluetoothAdapter;
+    iget-object v0, p0, Lcom/android/settings_ext/TetherService$1;->val$adapter:Landroid/bluetooth/BluetoothAdapter;
 
     const/4 v1, 0x5
 

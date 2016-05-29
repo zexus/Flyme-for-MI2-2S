@@ -1,4 +1,4 @@
-.class public Lcom/android/settings/deviceinfo/MSimSubscriptionStatus;
+.class public Lcom/android/settings_ext/deviceinfo/MSimSubscriptionStatus;
 .super Landroid/preference/PreferenceActivity;
 .source "MSimSubscriptionStatus.java"
 
@@ -129,7 +129,7 @@
 
     aput-object v2, v0, v1
 
-    sput-object v0, Lcom/android/settings/deviceinfo/MSimSubscriptionStatus;->PHONE_RELATED_ENTRIES:[Ljava/lang/String;
+    sput-object v0, Lcom/android/settings_ext/deviceinfo/MSimSubscriptionStatus;->PHONE_RELATED_ENTRIES:[Ljava/lang/String;
 
     return-void
 .end method
@@ -144,76 +144,76 @@
     .line 114
     const/4 v0, 0x0
 
-    iput-object v0, p0, Lcom/android/settings/deviceinfo/MSimSubscriptionStatus;->mPhone:Lcom/android/internal/telephony/Phone;
+    iput-object v0, p0, Lcom/android/settings_ext/deviceinfo/MSimSubscriptionStatus;->mPhone:Lcom/android/internal/telephony/Phone;
 
     .line 119
     const/4 v0, 0x0
 
-    iput v0, p0, Lcom/android/settings/deviceinfo/MSimSubscriptionStatus;->mDataState:I
+    iput v0, p0, Lcom/android/settings_ext/deviceinfo/MSimSubscriptionStatus;->mDataState:I
 
     .line 124
-    new-instance v0, Lcom/android/settings/deviceinfo/MSimSubscriptionStatus$1;
+    new-instance v0, Lcom/android/settings_ext/deviceinfo/MSimSubscriptionStatus$1;
 
-    invoke-direct {v0, p0}, Lcom/android/settings/deviceinfo/MSimSubscriptionStatus$1;-><init>(Lcom/android/settings/deviceinfo/MSimSubscriptionStatus;)V
+    invoke-direct {v0, p0}, Lcom/android/settings_ext/deviceinfo/MSimSubscriptionStatus$1;-><init>(Lcom/android/settings_ext/deviceinfo/MSimSubscriptionStatus;)V
 
-    iput-object v0, p0, Lcom/android/settings/deviceinfo/MSimSubscriptionStatus;->mAreaInfoReceiver:Landroid/content/BroadcastReceiver;
+    iput-object v0, p0, Lcom/android/settings_ext/deviceinfo/MSimSubscriptionStatus;->mAreaInfoReceiver:Landroid/content/BroadcastReceiver;
 
     return-void
 .end method
 
-.method static synthetic access$000(Lcom/android/settings/deviceinfo/MSimSubscriptionStatus;Ljava/lang/String;)V
+.method static synthetic access$000(Lcom/android/settings_ext/deviceinfo/MSimSubscriptionStatus;Ljava/lang/String;)V
     .locals 0
-    .param p0, "x0"    # Lcom/android/settings/deviceinfo/MSimSubscriptionStatus;
+    .param p0, "x0"    # Lcom/android/settings_ext/deviceinfo/MSimSubscriptionStatus;
     .param p1, "x1"    # Ljava/lang/String;
 
     .prologue
     .line 65
-    invoke-direct {p0, p1}, Lcom/android/settings/deviceinfo/MSimSubscriptionStatus;->updateAreaInfo(Ljava/lang/String;)V
+    invoke-direct {p0, p1}, Lcom/android/settings_ext/deviceinfo/MSimSubscriptionStatus;->updateAreaInfo(Ljava/lang/String;)V
 
     return-void
 .end method
 
-.method static synthetic access$100(Lcom/android/settings/deviceinfo/MSimSubscriptionStatus;)V
+.method static synthetic access$100(Lcom/android/settings_ext/deviceinfo/MSimSubscriptionStatus;)V
     .locals 0
-    .param p0, "x0"    # Lcom/android/settings/deviceinfo/MSimSubscriptionStatus;
+    .param p0, "x0"    # Lcom/android/settings_ext/deviceinfo/MSimSubscriptionStatus;
 
     .prologue
     .line 65
-    invoke-direct {p0}, Lcom/android/settings/deviceinfo/MSimSubscriptionStatus;->updateServiceState()V
+    invoke-direct {p0}, Lcom/android/settings_ext/deviceinfo/MSimSubscriptionStatus;->updateServiceState()V
 
     return-void
 .end method
 
-.method static synthetic access$202(Lcom/android/settings/deviceinfo/MSimSubscriptionStatus;I)I
+.method static synthetic access$202(Lcom/android/settings_ext/deviceinfo/MSimSubscriptionStatus;I)I
     .locals 0
-    .param p0, "x0"    # Lcom/android/settings/deviceinfo/MSimSubscriptionStatus;
+    .param p0, "x0"    # Lcom/android/settings_ext/deviceinfo/MSimSubscriptionStatus;
     .param p1, "x1"    # I
 
     .prologue
     .line 65
-    iput p1, p0, Lcom/android/settings/deviceinfo/MSimSubscriptionStatus;->mDataState:I
+    iput p1, p0, Lcom/android/settings_ext/deviceinfo/MSimSubscriptionStatus;->mDataState:I
 
     return p1
 .end method
 
-.method static synthetic access$300(Lcom/android/settings/deviceinfo/MSimSubscriptionStatus;)V
+.method static synthetic access$300(Lcom/android/settings_ext/deviceinfo/MSimSubscriptionStatus;)V
     .locals 0
-    .param p0, "x0"    # Lcom/android/settings/deviceinfo/MSimSubscriptionStatus;
+    .param p0, "x0"    # Lcom/android/settings_ext/deviceinfo/MSimSubscriptionStatus;
 
     .prologue
     .line 65
-    invoke-direct {p0}, Lcom/android/settings/deviceinfo/MSimSubscriptionStatus;->updateDataState()V
+    invoke-direct {p0}, Lcom/android/settings_ext/deviceinfo/MSimSubscriptionStatus;->updateDataState()V
 
     return-void
 .end method
 
-.method static synthetic access$400(Lcom/android/settings/deviceinfo/MSimSubscriptionStatus;)V
+.method static synthetic access$400(Lcom/android/settings_ext/deviceinfo/MSimSubscriptionStatus;)V
     .locals 0
-    .param p0, "x0"    # Lcom/android/settings/deviceinfo/MSimSubscriptionStatus;
+    .param p0, "x0"    # Lcom/android/settings_ext/deviceinfo/MSimSubscriptionStatus;
 
     .prologue
     .line 65
-    invoke-direct {p0}, Lcom/android/settings/deviceinfo/MSimSubscriptionStatus;->updateNetworkType()V
+    invoke-direct {p0}, Lcom/android/settings_ext/deviceinfo/MSimSubscriptionStatus;->updateNetworkType()V
 
     return-void
 .end method
@@ -224,9 +224,9 @@
 
     .prologue
     .line 283
-    new-instance v0, Lcom/android/settings/deviceinfo/MSimSubscriptionStatus$2;
+    new-instance v0, Lcom/android/settings_ext/deviceinfo/MSimSubscriptionStatus$2;
 
-    invoke-direct {v0, p0, p1}, Lcom/android/settings/deviceinfo/MSimSubscriptionStatus$2;-><init>(Lcom/android/settings/deviceinfo/MSimSubscriptionStatus;I)V
+    invoke-direct {v0, p0, p1}, Lcom/android/settings_ext/deviceinfo/MSimSubscriptionStatus$2;-><init>(Lcom/android/settings_ext/deviceinfo/MSimSubscriptionStatus;I)V
 
     .line 301
     .local v0, "phoneStateListener":Landroid/telephony/PhoneStateListener;
@@ -239,7 +239,7 @@
 
     .prologue
     .line 276
-    invoke-virtual {p0, p1}, Lcom/android/settings/deviceinfo/MSimSubscriptionStatus;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, p1}, Lcom/android/settings_ext/deviceinfo/MSimSubscriptionStatus;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v0
 
@@ -248,7 +248,7 @@
     if-eqz v0, :cond_0
 
     .line 278
-    invoke-virtual {p0}, Lcom/android/settings/deviceinfo/MSimSubscriptionStatus;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
+    invoke-virtual {p0}, Lcom/android/settings_ext/deviceinfo/MSimSubscriptionStatus;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
 
     move-result-object v1
 
@@ -267,7 +267,7 @@
     const/16 v3, 0xe
 
     .line 230
-    invoke-virtual {p0}, Lcom/android/settings/deviceinfo/MSimSubscriptionStatus;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {p0}, Lcom/android/settings_ext/deviceinfo/MSimSubscriptionStatus;->getResources()Landroid/content/res/Resources;
 
     move-result-object v1
 
@@ -300,7 +300,7 @@
     :cond_0
     const-string v1, "imei"
 
-    invoke-direct {p0, v1, p1}, Lcom/android/settings/deviceinfo/MSimSubscriptionStatus;->setSummaryText(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-direct {p0, v1, p1}, Lcom/android/settings_ext/deviceinfo/MSimSubscriptionStatus;->setSummaryText(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 237
     return-void
@@ -320,18 +320,18 @@
     if-eqz v0, :cond_0
 
     .line 319
-    sget-object p2, Lcom/android/settings/deviceinfo/MSimSubscriptionStatus;->sUnknown:Ljava/lang/String;
+    sget-object p2, Lcom/android/settings_ext/deviceinfo/MSimSubscriptionStatus;->sUnknown:Ljava/lang/String;
 
     .line 322
     :cond_0
-    invoke-virtual {p0, p1}, Lcom/android/settings/deviceinfo/MSimSubscriptionStatus;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, p1}, Lcom/android/settings_ext/deviceinfo/MSimSubscriptionStatus;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v0
 
     if-eqz v0, :cond_1
 
     .line 323
-    invoke-virtual {p0, p1}, Lcom/android/settings/deviceinfo/MSimSubscriptionStatus;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, p1}, Lcom/android/settings_ext/deviceinfo/MSimSubscriptionStatus;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v0
 
@@ -353,7 +353,7 @@
     .line 390
     const-string v0, "latest_area_info"
 
-    invoke-direct {p0, v0, p1}, Lcom/android/settings/deviceinfo/MSimSubscriptionStatus;->setSummaryText(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-direct {p0, v0, p1}, Lcom/android/settings_ext/deviceinfo/MSimSubscriptionStatus;->setSummaryText(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 392
     :cond_0
@@ -365,7 +365,7 @@
 
     .prologue
     .line 338
-    iget-object v1, p0, Lcom/android/settings/deviceinfo/MSimSubscriptionStatus;->mRes:Landroid/content/res/Resources;
+    iget-object v1, p0, Lcom/android/settings_ext/deviceinfo/MSimSubscriptionStatus;->mRes:Landroid/content/res/Resources;
 
     const v2, 0x7f090031
 
@@ -375,7 +375,7 @@
 
     .line 340
     .local v0, "display":Ljava/lang/String;
-    iget v1, p0, Lcom/android/settings/deviceinfo/MSimSubscriptionStatus;->mDataState:I
+    iget v1, p0, Lcom/android/settings_ext/deviceinfo/MSimSubscriptionStatus;->mDataState:I
 
     packed-switch v1, :pswitch_data_0
 
@@ -383,14 +383,14 @@
     :goto_0
     const-string v1, "data_state"
 
-    invoke-direct {p0, v1, v0}, Lcom/android/settings/deviceinfo/MSimSubscriptionStatus;->setSummaryText(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-direct {p0, v1, v0}, Lcom/android/settings_ext/deviceinfo/MSimSubscriptionStatus;->setSummaryText(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 356
     return-void
 
     .line 342
     :pswitch_0
-    iget-object v1, p0, Lcom/android/settings/deviceinfo/MSimSubscriptionStatus;->mRes:Landroid/content/res/Resources;
+    iget-object v1, p0, Lcom/android/settings_ext/deviceinfo/MSimSubscriptionStatus;->mRes:Landroid/content/res/Resources;
 
     const v2, 0x7f09002f
 
@@ -403,7 +403,7 @@
 
     .line 345
     :pswitch_1
-    iget-object v1, p0, Lcom/android/settings/deviceinfo/MSimSubscriptionStatus;->mRes:Landroid/content/res/Resources;
+    iget-object v1, p0, Lcom/android/settings_ext/deviceinfo/MSimSubscriptionStatus;->mRes:Landroid/content/res/Resources;
 
     const v2, 0x7f090030
 
@@ -416,7 +416,7 @@
 
     .line 348
     :pswitch_2
-    iget-object v1, p0, Lcom/android/settings/deviceinfo/MSimSubscriptionStatus;->mRes:Landroid/content/res/Resources;
+    iget-object v1, p0, Lcom/android/settings_ext/deviceinfo/MSimSubscriptionStatus;->mRes:Landroid/content/res/Resources;
 
     const v2, 0x7f09002e
 
@@ -429,7 +429,7 @@
 
     .line 351
     :pswitch_3
-    iget-object v1, p0, Lcom/android/settings/deviceinfo/MSimSubscriptionStatus;->mRes:Landroid/content/res/Resources;
+    iget-object v1, p0, Lcom/android/settings_ext/deviceinfo/MSimSubscriptionStatus;->mRes:Landroid/content/res/Resources;
 
     const v2, 0x7f09002d
 
@@ -458,9 +458,9 @@
 
     .line 330
     .local v1, "networktype":Ljava/lang/String;
-    iget-object v2, p0, Lcom/android/settings/deviceinfo/MSimSubscriptionStatus;->mTelephonyManager:Landroid/telephony/TelephonyManager;
+    iget-object v2, p0, Lcom/android/settings_ext/deviceinfo/MSimSubscriptionStatus;->mTelephonyManager:Landroid/telephony/TelephonyManager;
 
-    iget-object v3, p0, Lcom/android/settings/deviceinfo/MSimSubscriptionStatus;->mPhone:Lcom/android/internal/telephony/Phone;
+    iget-object v3, p0, Lcom/android/settings_ext/deviceinfo/MSimSubscriptionStatus;->mPhone:Lcom/android/internal/telephony/Phone;
 
     invoke-interface {v3}, Lcom/android/internal/telephony/Phone;->getSubId()I
 
@@ -475,7 +475,7 @@
     if-eqz v0, :cond_0
 
     .line 332
-    iget-object v2, p0, Lcom/android/settings/deviceinfo/MSimSubscriptionStatus;->mTelephonyManager:Landroid/telephony/TelephonyManager;
+    iget-object v2, p0, Lcom/android/settings_ext/deviceinfo/MSimSubscriptionStatus;->mTelephonyManager:Landroid/telephony/TelephonyManager;
 
     invoke-static {v0}, Landroid/telephony/TelephonyManager;->getNetworkTypeName(I)Ljava/lang/String;
 
@@ -485,7 +485,7 @@
     :cond_0
     const-string v2, "network_type"
 
-    invoke-direct {p0, v2, v1}, Lcom/android/settings/deviceinfo/MSimSubscriptionStatus;->setSummaryText(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-direct {p0, v2, v1}, Lcom/android/settings_ext/deviceinfo/MSimSubscriptionStatus;->setSummaryText(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 335
     return-void
@@ -496,7 +496,7 @@
 
     .prologue
     .line 359
-    iget-object v2, p0, Lcom/android/settings/deviceinfo/MSimSubscriptionStatus;->mRes:Landroid/content/res/Resources;
+    iget-object v2, p0, Lcom/android/settings_ext/deviceinfo/MSimSubscriptionStatus;->mRes:Landroid/content/res/Resources;
 
     const v3, 0x7f090031
 
@@ -506,12 +506,12 @@
 
     .line 361
     .local v0, "display":Ljava/lang/String;
-    iget-object v2, p0, Lcom/android/settings/deviceinfo/MSimSubscriptionStatus;->mServiceState:Landroid/telephony/ServiceState;
+    iget-object v2, p0, Lcom/android/settings_ext/deviceinfo/MSimSubscriptionStatus;->mServiceState:Landroid/telephony/ServiceState;
 
     if-eqz v2, :cond_0
 
     .line 362
-    iget-object v2, p0, Lcom/android/settings/deviceinfo/MSimSubscriptionStatus;->mServiceState:Landroid/telephony/ServiceState;
+    iget-object v2, p0, Lcom/android/settings_ext/deviceinfo/MSimSubscriptionStatus;->mServiceState:Landroid/telephony/ServiceState;
 
     invoke-virtual {v2}, Landroid/telephony/ServiceState;->getState()I
 
@@ -525,10 +525,10 @@
     :goto_0
     const-string v2, "service_state"
 
-    invoke-direct {p0, v2, v0}, Lcom/android/settings/deviceinfo/MSimSubscriptionStatus;->setSummaryText(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-direct {p0, v2, v0}, Lcom/android/settings_ext/deviceinfo/MSimSubscriptionStatus;->setSummaryText(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 379
-    iget-object v2, p0, Lcom/android/settings/deviceinfo/MSimSubscriptionStatus;->mServiceState:Landroid/telephony/ServiceState;
+    iget-object v2, p0, Lcom/android/settings_ext/deviceinfo/MSimSubscriptionStatus;->mServiceState:Landroid/telephony/ServiceState;
 
     invoke-virtual {v2}, Landroid/telephony/ServiceState;->getRoaming()Z
 
@@ -539,7 +539,7 @@
     .line 380
     const-string v2, "roaming_state"
 
-    iget-object v3, p0, Lcom/android/settings/deviceinfo/MSimSubscriptionStatus;->mRes:Landroid/content/res/Resources;
+    iget-object v3, p0, Lcom/android/settings_ext/deviceinfo/MSimSubscriptionStatus;->mRes:Landroid/content/res/Resources;
 
     const v4, 0x7f090028
 
@@ -547,19 +547,19 @@
 
     move-result-object v3
 
-    invoke-direct {p0, v2, v3}, Lcom/android/settings/deviceinfo/MSimSubscriptionStatus;->setSummaryText(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-direct {p0, v2, v3}, Lcom/android/settings_ext/deviceinfo/MSimSubscriptionStatus;->setSummaryText(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 384
     :goto_1
     const-string v2, "operator_name"
 
-    iget-object v3, p0, Lcom/android/settings/deviceinfo/MSimSubscriptionStatus;->mServiceState:Landroid/telephony/ServiceState;
+    iget-object v3, p0, Lcom/android/settings_ext/deviceinfo/MSimSubscriptionStatus;->mServiceState:Landroid/telephony/ServiceState;
 
     invoke-virtual {v3}, Landroid/telephony/ServiceState;->getOperatorAlphaLong()Ljava/lang/String;
 
     move-result-object v3
 
-    invoke-direct {p0, v2, v3}, Lcom/android/settings/deviceinfo/MSimSubscriptionStatus;->setSummaryText(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-direct {p0, v2, v3}, Lcom/android/settings_ext/deviceinfo/MSimSubscriptionStatus;->setSummaryText(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 386
     .end local v1    # "state":I
@@ -569,7 +569,7 @@
     .line 366
     .restart local v1    # "state":I
     :pswitch_0
-    iget-object v2, p0, Lcom/android/settings/deviceinfo/MSimSubscriptionStatus;->mRes:Landroid/content/res/Resources;
+    iget-object v2, p0, Lcom/android/settings_ext/deviceinfo/MSimSubscriptionStatus;->mRes:Landroid/content/res/Resources;
 
     const v3, 0x7f090024
 
@@ -582,7 +582,7 @@
 
     .line 370
     :pswitch_1
-    iget-object v2, p0, Lcom/android/settings/deviceinfo/MSimSubscriptionStatus;->mRes:Landroid/content/res/Resources;
+    iget-object v2, p0, Lcom/android/settings_ext/deviceinfo/MSimSubscriptionStatus;->mRes:Landroid/content/res/Resources;
 
     const v3, 0x7f090025
 
@@ -595,7 +595,7 @@
 
     .line 373
     :pswitch_2
-    iget-object v2, p0, Lcom/android/settings/deviceinfo/MSimSubscriptionStatus;->mRes:Landroid/content/res/Resources;
+    iget-object v2, p0, Lcom/android/settings_ext/deviceinfo/MSimSubscriptionStatus;->mRes:Landroid/content/res/Resources;
 
     const v3, 0x7f090027
 
@@ -609,7 +609,7 @@
     :cond_1
     const-string v2, "roaming_state"
 
-    iget-object v3, p0, Lcom/android/settings/deviceinfo/MSimSubscriptionStatus;->mRes:Landroid/content/res/Resources;
+    iget-object v3, p0, Lcom/android/settings_ext/deviceinfo/MSimSubscriptionStatus;->mRes:Landroid/content/res/Resources;
 
     const v4, 0x7f090029
 
@@ -617,7 +617,7 @@
 
     move-result-object v3
 
-    invoke-direct {p0, v2, v3}, Lcom/android/settings/deviceinfo/MSimSubscriptionStatus;->setSummaryText(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-direct {p0, v2, v3}, Lcom/android/settings_ext/deviceinfo/MSimSubscriptionStatus;->setSummaryText(Ljava/lang/String;Ljava/lang/String;)V
 
     goto :goto_1
 
@@ -644,21 +644,21 @@
     .line 147
     const-string v8, "phone"
 
-    invoke-virtual {p0, v8}, Lcom/android/settings/deviceinfo/MSimSubscriptionStatus;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
+    invoke-virtual {p0, v8}, Lcom/android/settings_ext/deviceinfo/MSimSubscriptionStatus;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object v8
 
     check-cast v8, Landroid/telephony/TelephonyManager;
 
-    iput-object v8, p0, Lcom/android/settings/deviceinfo/MSimSubscriptionStatus;->mTelephonyManager:Landroid/telephony/TelephonyManager;
+    iput-object v8, p0, Lcom/android/settings_ext/deviceinfo/MSimSubscriptionStatus;->mTelephonyManager:Landroid/telephony/TelephonyManager;
 
     .line 149
     const v8, 0x7f06001b
 
-    invoke-virtual {p0, v8}, Lcom/android/settings/deviceinfo/MSimSubscriptionStatus;->addPreferencesFromResource(I)V
+    invoke-virtual {p0, v8}, Lcom/android/settings_ext/deviceinfo/MSimSubscriptionStatus;->addPreferencesFromResource(I)V
 
     .line 152
-    invoke-virtual {p0}, Lcom/android/settings/deviceinfo/MSimSubscriptionStatus;->getIntent()Landroid/content/Intent;
+    invoke-virtual {p0}, Lcom/android/settings_ext/deviceinfo/MSimSubscriptionStatus;->getIntent()Landroid/content/Intent;
 
     move-result-object v8
 
@@ -682,7 +682,7 @@
 
     move-result-object v8
 
-    iput-object v8, p0, Lcom/android/settings/deviceinfo/MSimSubscriptionStatus;->mPhone:Lcom/android/internal/telephony/Phone;
+    iput-object v8, p0, Lcom/android/settings_ext/deviceinfo/MSimSubscriptionStatus;->mPhone:Lcom/android/internal/telephony/Phone;
 
     .line 155
     const-string v8, "Status"
@@ -708,41 +708,41 @@
     invoke-static {v8, v9}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
     .line 157
-    iget-object v8, p0, Lcom/android/settings/deviceinfo/MSimSubscriptionStatus;->mPhone:Lcom/android/internal/telephony/Phone;
+    iget-object v8, p0, Lcom/android/settings_ext/deviceinfo/MSimSubscriptionStatus;->mPhone:Lcom/android/internal/telephony/Phone;
 
     invoke-interface {v8}, Lcom/android/internal/telephony/Phone;->getSubId()I
 
     move-result v8
 
-    invoke-direct {p0, v8}, Lcom/android/settings/deviceinfo/MSimSubscriptionStatus;->getPhoneStateListener(I)Landroid/telephony/PhoneStateListener;
+    invoke-direct {p0, v8}, Lcom/android/settings_ext/deviceinfo/MSimSubscriptionStatus;->getPhoneStateListener(I)Landroid/telephony/PhoneStateListener;
 
     move-result-object v8
 
-    iput-object v8, p0, Lcom/android/settings/deviceinfo/MSimSubscriptionStatus;->mPhoneStateListener:Landroid/telephony/PhoneStateListener;
+    iput-object v8, p0, Lcom/android/settings_ext/deviceinfo/MSimSubscriptionStatus;->mPhoneStateListener:Landroid/telephony/PhoneStateListener;
 
     .line 158
-    iget-object v8, p0, Lcom/android/settings/deviceinfo/MSimSubscriptionStatus;->mTelephonyManager:Landroid/telephony/TelephonyManager;
+    iget-object v8, p0, Lcom/android/settings_ext/deviceinfo/MSimSubscriptionStatus;->mTelephonyManager:Landroid/telephony/TelephonyManager;
 
-    iget-object v9, p0, Lcom/android/settings/deviceinfo/MSimSubscriptionStatus;->mPhoneStateListener:Landroid/telephony/PhoneStateListener;
+    iget-object v9, p0, Lcom/android/settings_ext/deviceinfo/MSimSubscriptionStatus;->mPhoneStateListener:Landroid/telephony/PhoneStateListener;
 
     const/16 v10, 0x141
 
     invoke-virtual {v8, v9, v10}, Landroid/telephony/TelephonyManager;->listen(Landroid/telephony/PhoneStateListener;I)V
 
     .line 162
-    invoke-virtual {p0}, Lcom/android/settings/deviceinfo/MSimSubscriptionStatus;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {p0}, Lcom/android/settings_ext/deviceinfo/MSimSubscriptionStatus;->getResources()Landroid/content/res/Resources;
 
     move-result-object v8
 
-    iput-object v8, p0, Lcom/android/settings/deviceinfo/MSimSubscriptionStatus;->mRes:Landroid/content/res/Resources;
+    iput-object v8, p0, Lcom/android/settings_ext/deviceinfo/MSimSubscriptionStatus;->mRes:Landroid/content/res/Resources;
 
     .line 163
-    sget-object v8, Lcom/android/settings/deviceinfo/MSimSubscriptionStatus;->sUnknown:Ljava/lang/String;
+    sget-object v8, Lcom/android/settings_ext/deviceinfo/MSimSubscriptionStatus;->sUnknown:Ljava/lang/String;
 
     if-nez v8, :cond_0
 
     .line 164
-    iget-object v8, p0, Lcom/android/settings/deviceinfo/MSimSubscriptionStatus;->mRes:Landroid/content/res/Resources;
+    iget-object v8, p0, Lcom/android/settings_ext/deviceinfo/MSimSubscriptionStatus;->mRes:Landroid/content/res/Resources;
 
     const v9, 0x7f09000d
 
@@ -750,31 +750,31 @@
 
     move-result-object v8
 
-    sput-object v8, Lcom/android/settings/deviceinfo/MSimSubscriptionStatus;->sUnknown:Ljava/lang/String;
+    sput-object v8, Lcom/android/settings_ext/deviceinfo/MSimSubscriptionStatus;->sUnknown:Ljava/lang/String;
 
     .line 167
     :cond_0
     const-string v8, "signal_strength"
 
-    invoke-virtual {p0, v8}, Lcom/android/settings/deviceinfo/MSimSubscriptionStatus;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v8}, Lcom/android/settings_ext/deviceinfo/MSimSubscriptionStatus;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v8
 
-    iput-object v8, p0, Lcom/android/settings/deviceinfo/MSimSubscriptionStatus;->mSigStrength:Landroid/preference/Preference;
+    iput-object v8, p0, Lcom/android/settings_ext/deviceinfo/MSimSubscriptionStatus;->mSigStrength:Landroid/preference/Preference;
 
     .line 169
-    invoke-virtual {p0}, Lcom/android/settings/deviceinfo/MSimSubscriptionStatus;->getApplicationContext()Landroid/content/Context;
+    invoke-virtual {p0}, Lcom/android/settings_ext/deviceinfo/MSimSubscriptionStatus;->getApplicationContext()Landroid/content/Context;
 
     move-result-object v8
 
-    invoke-static {v8}, Lcom/android/settings/Utils;->isWifiOnly(Landroid/content/Context;)Z
+    invoke-static {v8}, Lcom/android/settings_ext/Utils;->isWifiOnly(Landroid/content/Context;)Z
 
     move-result v8
 
     if-eqz v8, :cond_1
 
     .line 170
-    sget-object v0, Lcom/android/settings/deviceinfo/MSimSubscriptionStatus;->PHONE_RELATED_ENTRIES:[Ljava/lang/String;
+    sget-object v0, Lcom/android/settings_ext/deviceinfo/MSimSubscriptionStatus;->PHONE_RELATED_ENTRIES:[Ljava/lang/String;
 
     .local v0, "arr$":[Ljava/lang/String;
     array-length v5, v0
@@ -790,7 +790,7 @@
 
     .line 171
     .local v4, "key":Ljava/lang/String;
-    invoke-direct {p0, v4}, Lcom/android/settings/deviceinfo/MSimSubscriptionStatus;->removePreferenceFromScreen(Ljava/lang/String;)V
+    invoke-direct {p0, v4}, Lcom/android/settings_ext/deviceinfo/MSimSubscriptionStatus;->removePreferenceFromScreen(Ljava/lang/String;)V
 
     .line 170
     add-int/lit8 v2, v2, 0x1
@@ -813,7 +813,7 @@
 
     if-nez v8, :cond_2
 
-    iget-object v8, p0, Lcom/android/settings/deviceinfo/MSimSubscriptionStatus;->mPhone:Lcom/android/internal/telephony/Phone;
+    iget-object v8, p0, Lcom/android/settings_ext/deviceinfo/MSimSubscriptionStatus;->mPhone:Lcom/android/internal/telephony/Phone;
 
     invoke-interface {v8}, Lcom/android/internal/telephony/Phone;->getPhoneName()Ljava/lang/String;
 
@@ -831,17 +831,17 @@
     :cond_2
     const-string v8, "prl_version"
 
-    iget-object v9, p0, Lcom/android/settings/deviceinfo/MSimSubscriptionStatus;->mPhone:Lcom/android/internal/telephony/Phone;
+    iget-object v9, p0, Lcom/android/settings_ext/deviceinfo/MSimSubscriptionStatus;->mPhone:Lcom/android/internal/telephony/Phone;
 
     invoke-interface {v9}, Lcom/android/internal/telephony/Phone;->getCdmaPrlVersion()Ljava/lang/String;
 
     move-result-object v9
 
-    invoke-direct {p0, v8, v9}, Lcom/android/settings/deviceinfo/MSimSubscriptionStatus;->setSummaryText(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-direct {p0, v8, v9}, Lcom/android/settings_ext/deviceinfo/MSimSubscriptionStatus;->setSummaryText(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 185
     :goto_1
-    iget-object v8, p0, Lcom/android/settings/deviceinfo/MSimSubscriptionStatus;->mPhone:Lcom/android/internal/telephony/Phone;
+    iget-object v8, p0, Lcom/android/settings_ext/deviceinfo/MSimSubscriptionStatus;->mPhone:Lcom/android/internal/telephony/Phone;
 
     invoke-interface {v8}, Lcom/android/internal/telephony/Phone;->getPhoneName()Ljava/lang/String;
 
@@ -858,38 +858,38 @@
     .line 186
     const-string v8, "esn_number"
 
-    iget-object v9, p0, Lcom/android/settings/deviceinfo/MSimSubscriptionStatus;->mPhone:Lcom/android/internal/telephony/Phone;
+    iget-object v9, p0, Lcom/android/settings_ext/deviceinfo/MSimSubscriptionStatus;->mPhone:Lcom/android/internal/telephony/Phone;
 
     invoke-interface {v9}, Lcom/android/internal/telephony/Phone;->getEsn()Ljava/lang/String;
 
     move-result-object v9
 
-    invoke-direct {p0, v8, v9}, Lcom/android/settings/deviceinfo/MSimSubscriptionStatus;->setSummaryText(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-direct {p0, v8, v9}, Lcom/android/settings_ext/deviceinfo/MSimSubscriptionStatus;->setSummaryText(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 187
     const-string v8, "meid_number"
 
-    iget-object v9, p0, Lcom/android/settings/deviceinfo/MSimSubscriptionStatus;->mPhone:Lcom/android/internal/telephony/Phone;
+    iget-object v9, p0, Lcom/android/settings_ext/deviceinfo/MSimSubscriptionStatus;->mPhone:Lcom/android/internal/telephony/Phone;
 
     invoke-interface {v9}, Lcom/android/internal/telephony/Phone;->getMeid()Ljava/lang/String;
 
     move-result-object v9
 
-    invoke-direct {p0, v8, v9}, Lcom/android/settings/deviceinfo/MSimSubscriptionStatus;->setSummaryText(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-direct {p0, v8, v9}, Lcom/android/settings_ext/deviceinfo/MSimSubscriptionStatus;->setSummaryText(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 188
     const-string v8, "min_number"
 
-    iget-object v9, p0, Lcom/android/settings/deviceinfo/MSimSubscriptionStatus;->mPhone:Lcom/android/internal/telephony/Phone;
+    iget-object v9, p0, Lcom/android/settings_ext/deviceinfo/MSimSubscriptionStatus;->mPhone:Lcom/android/internal/telephony/Phone;
 
     invoke-interface {v9}, Lcom/android/internal/telephony/Phone;->getCdmaMin()Ljava/lang/String;
 
     move-result-object v9
 
-    invoke-direct {p0, v8, v9}, Lcom/android/settings/deviceinfo/MSimSubscriptionStatus;->setSummaryText(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-direct {p0, v8, v9}, Lcom/android/settings_ext/deviceinfo/MSimSubscriptionStatus;->setSummaryText(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 189
-    invoke-virtual {p0}, Lcom/android/settings/deviceinfo/MSimSubscriptionStatus;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {p0}, Lcom/android/settings_ext/deviceinfo/MSimSubscriptionStatus;->getResources()Landroid/content/res/Resources;
 
     move-result-object v8
 
@@ -904,7 +904,7 @@
     .line 190
     const-string v8, "min_number"
 
-    invoke-virtual {p0, v8}, Lcom/android/settings/deviceinfo/MSimSubscriptionStatus;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v8}, Lcom/android/settings_ext/deviceinfo/MSimSubscriptionStatus;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v8
 
@@ -916,10 +916,10 @@
     :cond_3
     const-string v8, "imei_sv"
 
-    invoke-direct {p0, v8}, Lcom/android/settings/deviceinfo/MSimSubscriptionStatus;->removePreferenceFromScreen(Ljava/lang/String;)V
+    invoke-direct {p0, v8}, Lcom/android/settings_ext/deviceinfo/MSimSubscriptionStatus;->removePreferenceFromScreen(Ljava/lang/String;)V
 
     .line 195
-    iget-object v8, p0, Lcom/android/settings/deviceinfo/MSimSubscriptionStatus;->mPhone:Lcom/android/internal/telephony/Phone;
+    iget-object v8, p0, Lcom/android/settings_ext/deviceinfo/MSimSubscriptionStatus;->mPhone:Lcom/android/internal/telephony/Phone;
 
     invoke-interface {v8}, Lcom/android/internal/telephony/Phone;->getLteOnCdmaMode()I
 
@@ -932,16 +932,16 @@
     .line 197
     const-string v8, "icc_id"
 
-    iget-object v9, p0, Lcom/android/settings/deviceinfo/MSimSubscriptionStatus;->mPhone:Lcom/android/internal/telephony/Phone;
+    iget-object v9, p0, Lcom/android/settings_ext/deviceinfo/MSimSubscriptionStatus;->mPhone:Lcom/android/internal/telephony/Phone;
 
     invoke-interface {v9}, Lcom/android/internal/telephony/Phone;->getIccSerialNumber()Ljava/lang/String;
 
     move-result-object v9
 
-    invoke-direct {p0, v8, v9}, Lcom/android/settings/deviceinfo/MSimSubscriptionStatus;->setSummaryText(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-direct {p0, v8, v9}, Lcom/android/settings_ext/deviceinfo/MSimSubscriptionStatus;->setSummaryText(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 198
-    iget-object v8, p0, Lcom/android/settings/deviceinfo/MSimSubscriptionStatus;->mPhone:Lcom/android/internal/telephony/Phone;
+    iget-object v8, p0, Lcom/android/settings_ext/deviceinfo/MSimSubscriptionStatus;->mPhone:Lcom/android/internal/telephony/Phone;
 
     invoke-interface {v8}, Lcom/android/internal/telephony/Phone;->getImei()Ljava/lang/String;
 
@@ -949,12 +949,12 @@
 
     .line 199
     .local v3, "imeiStr":Ljava/lang/String;
-    invoke-direct {p0, v3}, Lcom/android/settings/deviceinfo/MSimSubscriptionStatus;->setIMEISummaryText(Ljava/lang/String;)V
+    invoke-direct {p0, v3}, Lcom/android/settings_ext/deviceinfo/MSimSubscriptionStatus;->setIMEISummaryText(Ljava/lang/String;)V
 
     .line 219
     .end local v3    # "imeiStr":Ljava/lang/String;
     :goto_2
-    iget-object v8, p0, Lcom/android/settings/deviceinfo/MSimSubscriptionStatus;->mPhone:Lcom/android/internal/telephony/Phone;
+    iget-object v8, p0, Lcom/android/settings_ext/deviceinfo/MSimSubscriptionStatus;->mPhone:Lcom/android/internal/telephony/Phone;
 
     invoke-interface {v8}, Lcom/android/internal/telephony/Phone;->getLine1Number()Ljava/lang/String;
 
@@ -981,7 +981,7 @@
     :cond_4
     const-string v8, "number"
 
-    invoke-direct {p0, v8, v1}, Lcom/android/settings/deviceinfo/MSimSubscriptionStatus;->setSummaryText(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-direct {p0, v8, v1}, Lcom/android/settings_ext/deviceinfo/MSimSubscriptionStatus;->setSummaryText(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 227
     .end local v1    # "formattedNumber":Ljava/lang/String;
@@ -993,7 +993,7 @@
     :cond_6
     const-string v8, "prl_version"
 
-    invoke-direct {p0, v8}, Lcom/android/settings/deviceinfo/MSimSubscriptionStatus;->removePreferenceFromScreen(Ljava/lang/String;)V
+    invoke-direct {p0, v8}, Lcom/android/settings_ext/deviceinfo/MSimSubscriptionStatus;->removePreferenceFromScreen(Ljava/lang/String;)V
 
     goto/16 :goto_1
 
@@ -1001,18 +1001,18 @@
     :cond_7
     const-string v8, "imei"
 
-    invoke-direct {p0, v8}, Lcom/android/settings/deviceinfo/MSimSubscriptionStatus;->removePreferenceFromScreen(Ljava/lang/String;)V
+    invoke-direct {p0, v8}, Lcom/android/settings_ext/deviceinfo/MSimSubscriptionStatus;->removePreferenceFromScreen(Ljava/lang/String;)V
 
     .line 204
     const-string v8, "icc_id"
 
-    invoke-direct {p0, v8}, Lcom/android/settings/deviceinfo/MSimSubscriptionStatus;->removePreferenceFromScreen(Ljava/lang/String;)V
+    invoke-direct {p0, v8}, Lcom/android/settings_ext/deviceinfo/MSimSubscriptionStatus;->removePreferenceFromScreen(Ljava/lang/String;)V
 
     goto :goto_2
 
     .line 207
     :cond_8
-    iget-object v8, p0, Lcom/android/settings/deviceinfo/MSimSubscriptionStatus;->mPhone:Lcom/android/internal/telephony/Phone;
+    iget-object v8, p0, Lcom/android/settings_ext/deviceinfo/MSimSubscriptionStatus;->mPhone:Lcom/android/internal/telephony/Phone;
 
     invoke-interface {v8}, Lcom/android/internal/telephony/Phone;->getDeviceId()Ljava/lang/String;
 
@@ -1020,38 +1020,38 @@
 
     .line 208
     .restart local v3    # "imeiStr":Ljava/lang/String;
-    invoke-direct {p0, v3}, Lcom/android/settings/deviceinfo/MSimSubscriptionStatus;->setIMEISummaryText(Ljava/lang/String;)V
+    invoke-direct {p0, v3}, Lcom/android/settings_ext/deviceinfo/MSimSubscriptionStatus;->setIMEISummaryText(Ljava/lang/String;)V
 
     .line 209
     const-string v8, "imei_sv"
 
-    iget-object v9, p0, Lcom/android/settings/deviceinfo/MSimSubscriptionStatus;->mPhone:Lcom/android/internal/telephony/Phone;
+    iget-object v9, p0, Lcom/android/settings_ext/deviceinfo/MSimSubscriptionStatus;->mPhone:Lcom/android/internal/telephony/Phone;
 
     invoke-interface {v9}, Lcom/android/internal/telephony/Phone;->getDeviceSvn()Ljava/lang/String;
 
     move-result-object v9
 
-    invoke-direct {p0, v8, v9}, Lcom/android/settings/deviceinfo/MSimSubscriptionStatus;->setSummaryText(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-direct {p0, v8, v9}, Lcom/android/settings_ext/deviceinfo/MSimSubscriptionStatus;->setSummaryText(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 213
     const-string v8, "esn_number"
 
-    invoke-direct {p0, v8}, Lcom/android/settings/deviceinfo/MSimSubscriptionStatus;->removePreferenceFromScreen(Ljava/lang/String;)V
+    invoke-direct {p0, v8}, Lcom/android/settings_ext/deviceinfo/MSimSubscriptionStatus;->removePreferenceFromScreen(Ljava/lang/String;)V
 
     .line 214
     const-string v8, "meid_number"
 
-    invoke-direct {p0, v8}, Lcom/android/settings/deviceinfo/MSimSubscriptionStatus;->removePreferenceFromScreen(Ljava/lang/String;)V
+    invoke-direct {p0, v8}, Lcom/android/settings_ext/deviceinfo/MSimSubscriptionStatus;->removePreferenceFromScreen(Ljava/lang/String;)V
 
     .line 215
     const-string v8, "min_number"
 
-    invoke-direct {p0, v8}, Lcom/android/settings/deviceinfo/MSimSubscriptionStatus;->removePreferenceFromScreen(Ljava/lang/String;)V
+    invoke-direct {p0, v8}, Lcom/android/settings_ext/deviceinfo/MSimSubscriptionStatus;->removePreferenceFromScreen(Ljava/lang/String;)V
 
     .line 216
     const-string v8, "icc_id"
 
-    invoke-direct {p0, v8}, Lcom/android/settings/deviceinfo/MSimSubscriptionStatus;->removePreferenceFromScreen(Ljava/lang/String;)V
+    invoke-direct {p0, v8}, Lcom/android/settings_ext/deviceinfo/MSimSubscriptionStatus;->removePreferenceFromScreen(Ljava/lang/String;)V
 
     goto :goto_2
 .end method
@@ -1064,29 +1064,29 @@
     invoke-super {p0}, Landroid/preference/PreferenceActivity;->onPause()V
 
     .line 265
-    invoke-virtual {p0}, Lcom/android/settings/deviceinfo/MSimSubscriptionStatus;->getApplicationContext()Landroid/content/Context;
+    invoke-virtual {p0}, Lcom/android/settings_ext/deviceinfo/MSimSubscriptionStatus;->getApplicationContext()Landroid/content/Context;
 
     move-result-object v0
 
-    invoke-static {v0}, Lcom/android/settings/Utils;->isWifiOnly(Landroid/content/Context;)Z
+    invoke-static {v0}, Lcom/android/settings_ext/Utils;->isWifiOnly(Landroid/content/Context;)Z
 
     move-result v0
 
     if-nez v0, :cond_0
 
     .line 266
-    iget-object v0, p0, Lcom/android/settings/deviceinfo/MSimSubscriptionStatus;->mTelephonyManager:Landroid/telephony/TelephonyManager;
+    iget-object v0, p0, Lcom/android/settings_ext/deviceinfo/MSimSubscriptionStatus;->mTelephonyManager:Landroid/telephony/TelephonyManager;
 
-    iget-object v1, p0, Lcom/android/settings/deviceinfo/MSimSubscriptionStatus;->mPhoneStateListener:Landroid/telephony/PhoneStateListener;
+    iget-object v1, p0, Lcom/android/settings_ext/deviceinfo/MSimSubscriptionStatus;->mPhoneStateListener:Landroid/telephony/PhoneStateListener;
 
     const/4 v2, 0x0
 
     invoke-virtual {v0, v1, v2}, Landroid/telephony/TelephonyManager;->listen(Landroid/telephony/PhoneStateListener;I)V
 
     .line 267
-    iget-object v0, p0, Lcom/android/settings/deviceinfo/MSimSubscriptionStatus;->mAreaInfoReceiver:Landroid/content/BroadcastReceiver;
+    iget-object v0, p0, Lcom/android/settings_ext/deviceinfo/MSimSubscriptionStatus;->mAreaInfoReceiver:Landroid/content/BroadcastReceiver;
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/deviceinfo/MSimSubscriptionStatus;->unregisterReceiver(Landroid/content/BroadcastReceiver;)V
+    invoke-virtual {p0, v0}, Lcom/android/settings_ext/deviceinfo/MSimSubscriptionStatus;->unregisterReceiver(Landroid/content/BroadcastReceiver;)V
 
     .line 269
     :cond_0
@@ -1101,36 +1101,36 @@
     invoke-super {p0}, Landroid/preference/PreferenceActivity;->onResume()V
 
     .line 243
-    invoke-virtual {p0}, Lcom/android/settings/deviceinfo/MSimSubscriptionStatus;->getApplicationContext()Landroid/content/Context;
+    invoke-virtual {p0}, Lcom/android/settings_ext/deviceinfo/MSimSubscriptionStatus;->getApplicationContext()Landroid/content/Context;
 
     move-result-object v1
 
-    invoke-static {v1}, Lcom/android/settings/Utils;->isWifiOnly(Landroid/content/Context;)Z
+    invoke-static {v1}, Lcom/android/settings_ext/Utils;->isWifiOnly(Landroid/content/Context;)Z
 
     move-result v1
 
     if-nez v1, :cond_0
 
     .line 244
-    iget-object v1, p0, Lcom/android/settings/deviceinfo/MSimSubscriptionStatus;->mTelephonyManager:Landroid/telephony/TelephonyManager;
+    iget-object v1, p0, Lcom/android/settings_ext/deviceinfo/MSimSubscriptionStatus;->mTelephonyManager:Landroid/telephony/TelephonyManager;
 
-    iget-object v2, p0, Lcom/android/settings/deviceinfo/MSimSubscriptionStatus;->mPhoneStateListener:Landroid/telephony/PhoneStateListener;
+    iget-object v2, p0, Lcom/android/settings_ext/deviceinfo/MSimSubscriptionStatus;->mPhoneStateListener:Landroid/telephony/PhoneStateListener;
 
     const/16 v3, 0x141
 
     invoke-virtual {v1, v2, v3}, Landroid/telephony/TelephonyManager;->listen(Landroid/telephony/PhoneStateListener;I)V
 
     .line 247
-    invoke-virtual {p0}, Lcom/android/settings/deviceinfo/MSimSubscriptionStatus;->updateSignalStrength()V
+    invoke-virtual {p0}, Lcom/android/settings_ext/deviceinfo/MSimSubscriptionStatus;->updateSignalStrength()V
 
     .line 248
-    invoke-direct {p0}, Lcom/android/settings/deviceinfo/MSimSubscriptionStatus;->updateServiceState()V
+    invoke-direct {p0}, Lcom/android/settings_ext/deviceinfo/MSimSubscriptionStatus;->updateServiceState()V
 
     .line 249
-    invoke-direct {p0}, Lcom/android/settings/deviceinfo/MSimSubscriptionStatus;->updateDataState()V
+    invoke-direct {p0}, Lcom/android/settings_ext/deviceinfo/MSimSubscriptionStatus;->updateDataState()V
 
     .line 250
-    iget-object v1, p0, Lcom/android/settings/deviceinfo/MSimSubscriptionStatus;->mAreaInfoReceiver:Landroid/content/BroadcastReceiver;
+    iget-object v1, p0, Lcom/android/settings_ext/deviceinfo/MSimSubscriptionStatus;->mAreaInfoReceiver:Landroid/content/BroadcastReceiver;
 
     new-instance v2, Landroid/content/IntentFilter;
 
@@ -1142,7 +1142,7 @@
 
     const/4 v4, 0x0
 
-    invoke-virtual {p0, v1, v2, v3, v4}, Lcom/android/settings/deviceinfo/MSimSubscriptionStatus;->registerReceiver(Landroid/content/BroadcastReceiver;Landroid/content/IntentFilter;Ljava/lang/String;Landroid/os/Handler;)Landroid/content/Intent;
+    invoke-virtual {p0, v1, v2, v3, v4}, Lcom/android/settings_ext/deviceinfo/MSimSubscriptionStatus;->registerReceiver(Landroid/content/BroadcastReceiver;Landroid/content/IntentFilter;Ljava/lang/String;Landroid/os/Handler;)Landroid/content/Intent;
 
     .line 253
     new-instance v0, Landroid/content/Intent;
@@ -1155,7 +1155,7 @@
     .local v0, "getLatestIntent":Landroid/content/Intent;
     const-string v1, "phone"
 
-    iget-object v2, p0, Lcom/android/settings/deviceinfo/MSimSubscriptionStatus;->mPhone:Lcom/android/internal/telephony/Phone;
+    iget-object v2, p0, Lcom/android/settings_ext/deviceinfo/MSimSubscriptionStatus;->mPhone:Lcom/android/internal/telephony/Phone;
 
     invoke-interface {v2}, Lcom/android/internal/telephony/Phone;->getPhoneId()I
 
@@ -1168,7 +1168,7 @@
 
     const-string v2, "android.permission.RECEIVE_EMERGENCY_BROADCAST"
 
-    invoke-virtual {p0, v0, v1, v2}, Lcom/android/settings/deviceinfo/MSimSubscriptionStatus;->sendBroadcastAsUser(Landroid/content/Intent;Landroid/os/UserHandle;Ljava/lang/String;)V
+    invoke-virtual {p0, v0, v1, v2}, Lcom/android/settings_ext/deviceinfo/MSimSubscriptionStatus;->sendBroadcastAsUser(Landroid/content/Intent;Landroid/os/UserHandle;Ljava/lang/String;)V
 
     .line 259
     .end local v0    # "getLatestIntent":Landroid/content/Intent;
@@ -1183,12 +1183,12 @@
     const/4 v6, -0x1
 
     .line 395
-    iget-object v4, p0, Lcom/android/settings/deviceinfo/MSimSubscriptionStatus;->mSignalStrength:Landroid/telephony/SignalStrength;
+    iget-object v4, p0, Lcom/android/settings_ext/deviceinfo/MSimSubscriptionStatus;->mSignalStrength:Landroid/telephony/SignalStrength;
 
     if-eqz v4, :cond_4
 
     .line 396
-    iget-object v4, p0, Lcom/android/settings/deviceinfo/MSimSubscriptionStatus;->mServiceState:Landroid/telephony/ServiceState;
+    iget-object v4, p0, Lcom/android/settings_ext/deviceinfo/MSimSubscriptionStatus;->mServiceState:Landroid/telephony/ServiceState;
 
     invoke-virtual {v4}, Landroid/telephony/ServiceState;->getState()I
 
@@ -1196,7 +1196,7 @@
 
     .line 397
     .local v3, "state":I
-    invoke-virtual {p0}, Lcom/android/settings/deviceinfo/MSimSubscriptionStatus;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {p0}, Lcom/android/settings_ext/deviceinfo/MSimSubscriptionStatus;->getResources()Landroid/content/res/Resources;
 
     move-result-object v0
 
@@ -1212,7 +1212,7 @@
 
     .line 401
     :cond_0
-    iget-object v4, p0, Lcom/android/settings/deviceinfo/MSimSubscriptionStatus;->mSigStrength:Landroid/preference/Preference;
+    iget-object v4, p0, Lcom/android/settings_ext/deviceinfo/MSimSubscriptionStatus;->mSigStrength:Landroid/preference/Preference;
 
     const-string v5, "0"
 
@@ -1220,7 +1220,7 @@
 
     .line 404
     :cond_1
-    iget-object v4, p0, Lcom/android/settings/deviceinfo/MSimSubscriptionStatus;->mSignalStrength:Landroid/telephony/SignalStrength;
+    iget-object v4, p0, Lcom/android/settings_ext/deviceinfo/MSimSubscriptionStatus;->mSignalStrength:Landroid/telephony/SignalStrength;
 
     invoke-virtual {v4}, Landroid/telephony/SignalStrength;->getDbm()I
 
@@ -1234,7 +1234,7 @@
 
     .line 407
     :cond_2
-    iget-object v4, p0, Lcom/android/settings/deviceinfo/MSimSubscriptionStatus;->mSignalStrength:Landroid/telephony/SignalStrength;
+    iget-object v4, p0, Lcom/android/settings_ext/deviceinfo/MSimSubscriptionStatus;->mSignalStrength:Landroid/telephony/SignalStrength;
 
     invoke-virtual {v4}, Landroid/telephony/SignalStrength;->getGsmSignalStrength()I
 
@@ -1248,7 +1248,7 @@
 
     .line 410
     :cond_3
-    iget-object v4, p0, Lcom/android/settings/deviceinfo/MSimSubscriptionStatus;->mSigStrength:Landroid/preference/Preference;
+    iget-object v4, p0, Lcom/android/settings_ext/deviceinfo/MSimSubscriptionStatus;->mSigStrength:Landroid/preference/Preference;
 
     new-instance v5, Ljava/lang/StringBuilder;
 

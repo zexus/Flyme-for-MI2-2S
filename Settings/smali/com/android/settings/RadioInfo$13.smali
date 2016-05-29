@@ -1,4 +1,4 @@
-.class Lcom/android/settings/RadioInfo$13;
+.class Lcom/android/settings_ext/RadioInfo$13;
 .super Ljava/lang/Object;
 .source "RadioInfo.java"
 
@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/android/settings/RadioInfo;
+    value = Lcom/android/settings_ext/RadioInfo;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -18,16 +18,16 @@
 
 
 # instance fields
-.field final synthetic this$0:Lcom/android/settings/RadioInfo;
+.field final synthetic this$0:Lcom/android/settings_ext/RadioInfo;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/RadioInfo;)V
+.method constructor <init>(Lcom/android/settings_ext/RadioInfo;)V
     .locals 0
 
     .prologue
     .line 935
-    iput-object p1, p0, Lcom/android/settings/RadioInfo$13;->this$0:Lcom/android/settings/RadioInfo;
+    iput-object p1, p0, Lcom/android/settings_ext/RadioInfo$13;->this$0:Lcom/android/settings_ext/RadioInfo;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -42,17 +42,17 @@
 
     .prologue
     .line 938
-    iget-object v0, p0, Lcom/android/settings/RadioInfo$13;->this$0:Lcom/android/settings/RadioInfo;
+    iget-object v0, p0, Lcom/android/settings_ext/RadioInfo$13;->this$0:Lcom/android/settings_ext/RadioInfo;
 
-    # getter for: Lcom/android/settings/RadioInfo;->phone:Lcom/android/internal/telephony/Phone;
-    invoke-static {v0}, Lcom/android/settings/RadioInfo;->access$1900(Lcom/android/settings/RadioInfo;)Lcom/android/internal/telephony/Phone;
+    # getter for: Lcom/android/settings_ext/RadioInfo;->phone:Lcom/android/internal/telephony/Phone;
+    invoke-static {v0}, Lcom/android/settings_ext/RadioInfo;->access$1900(Lcom/android/settings_ext/RadioInfo;)Lcom/android/internal/telephony/Phone;
 
     move-result-object v1
 
-    iget-object v0, p0, Lcom/android/settings/RadioInfo$13;->this$0:Lcom/android/settings/RadioInfo;
+    iget-object v0, p0, Lcom/android/settings_ext/RadioInfo$13;->this$0:Lcom/android/settings_ext/RadioInfo;
 
-    # invokes: Lcom/android/settings/RadioInfo;->isRadioOn()Z
-    invoke-static {v0}, Lcom/android/settings/RadioInfo;->access$3400(Lcom/android/settings/RadioInfo;)Z
+    # invokes: Lcom/android/settings_ext/RadioInfo;->isRadioOn()Z
+    invoke-static {v0}, Lcom/android/settings_ext/RadioInfo;->access$3400(Lcom/android/settings_ext/RadioInfo;)Z
 
     move-result v0
 

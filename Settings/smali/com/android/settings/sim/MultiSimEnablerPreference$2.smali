@@ -1,4 +1,4 @@
-.class Lcom/android/settings/sim/MultiSimEnablerPreference$2;
+.class Lcom/android/settings_ext/sim/MultiSimEnablerPreference$2;
 .super Ljava/lang/Object;
 .source "MultiSimEnablerPreference.java"
 
@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/android/settings/sim/MultiSimEnablerPreference;
+    value = Lcom/android/settings_ext/sim/MultiSimEnablerPreference;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -18,16 +18,16 @@
 
 
 # instance fields
-.field final synthetic this$0:Lcom/android/settings/sim/MultiSimEnablerPreference;
+.field final synthetic this$0:Lcom/android/settings_ext/sim/MultiSimEnablerPreference;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/sim/MultiSimEnablerPreference;)V
+.method constructor <init>(Lcom/android/settings_ext/sim/MultiSimEnablerPreference;)V
     .locals 0
 
     .prologue
     .line 414
-    iput-object p1, p0, Lcom/android/settings/sim/MultiSimEnablerPreference$2;->this$0:Lcom/android/settings/sim/MultiSimEnablerPreference;
+    iput-object p1, p0, Lcom/android/settings_ext/sim/MultiSimEnablerPreference$2;->this$0:Lcom/android/settings_ext/sim/MultiSimEnablerPreference;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -42,9 +42,9 @@
 
     .prologue
     .line 416
-    iget-object v0, p0, Lcom/android/settings/sim/MultiSimEnablerPreference$2;->this$0:Lcom/android/settings/sim/MultiSimEnablerPreference;
+    iget-object v0, p0, Lcom/android/settings_ext/sim/MultiSimEnablerPreference$2;->this$0:Lcom/android/settings_ext/sim/MultiSimEnablerPreference;
 
-    invoke-virtual {v0}, Lcom/android/settings/sim/MultiSimEnablerPreference;->update()V
+    invoke-virtual {v0}, Lcom/android/settings_ext/sim/MultiSimEnablerPreference;->update()V
 
     .line 417
     return-void

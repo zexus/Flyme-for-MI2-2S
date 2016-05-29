@@ -1,11 +1,11 @@
-.class public interface abstract Lcom/android/settings/widget/ChartDataUsageView$DataUsageChartListener;
+.class public interface abstract Lcom/android/settings_ext/widget/ChartDataUsageView$DataUsageChartListener;
 .super Ljava/lang/Object;
 .source "ChartDataUsageView.java"
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/android/settings/widget/ChartDataUsageView;
+    value = Lcom/android/settings_ext/widget/ChartDataUsageView;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;

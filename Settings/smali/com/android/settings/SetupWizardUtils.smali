@@ -1,4 +1,4 @@
-.class public Lcom/android/settings/SetupWizardUtils;
+.class public Lcom/android/settings_ext/SetupWizardUtils;
 .super Ljava/lang/Object;
 .source "SetupWizardUtils.java"
 
@@ -217,7 +217,7 @@
 
     .prologue
     .line 105
-    invoke-static {p0}, Lcom/android/settings/SetupWizardUtils;->getHeader(Landroid/app/Activity;)Landroid/widget/TextView;
+    invoke-static {p0}, Lcom/android/settings_ext/SetupWizardUtils;->getHeader(Landroid/app/Activity;)Landroid/widget/TextView;
 
     move-result-object v0
 
@@ -234,7 +234,7 @@
 
     .prologue
     .line 109
-    invoke-static {p0}, Lcom/android/settings/SetupWizardUtils;->getHeader(Landroid/app/Activity;)Landroid/widget/TextView;
+    invoke-static {p0}, Lcom/android/settings_ext/SetupWizardUtils;->getHeader(Landroid/app/Activity;)Landroid/widget/TextView;
 
     move-result-object v0
 
@@ -259,10 +259,10 @@
 
     move-result-object v2
 
-    check-cast v2, Lcom/android/settings/widget/SetupWizardIllustration;
+    check-cast v2, Lcom/android/settings_ext/widget/SetupWizardIllustration;
 
     .line 121
-    .local v2, "illustration":Lcom/android/settings/widget/SetupWizardIllustration;
+    .local v2, "illustration":Lcom/android/settings_ext/widget/SetupWizardIllustration;
     if-eqz v2, :cond_1
 
     .line 122
@@ -327,7 +327,7 @@
     invoke-virtual {v3, v7, v4}, Landroid/graphics/drawable/LayerDrawable;->setDrawableByLayerId(ILandroid/graphics/drawable/Drawable;)Z
 
     .line 133
-    invoke-virtual {v2, v3}, Lcom/android/settings/widget/SetupWizardIllustration;->setForeground(Landroid/graphics/drawable/Drawable;)V
+    invoke-virtual {v2, v3}, Lcom/android/settings_ext/widget/SetupWizardIllustration;->setForeground(Landroid/graphics/drawable/Drawable;)V
 
     .line 136
     .end local v0    # "drawable":Landroid/graphics/drawable/Drawable;

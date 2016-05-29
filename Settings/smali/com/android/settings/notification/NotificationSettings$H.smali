@@ -1,11 +1,11 @@
-.class final Lcom/android/settings/notification/NotificationSettings$H;
+.class final Lcom/android/settings_ext/notification/NotificationSettings$H;
 .super Landroid/os/Handler;
 .source "NotificationSettings.java"
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/android/settings/notification/NotificationSettings;
+    value = Lcom/android/settings_ext/notification/NotificationSettings;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -15,16 +15,16 @@
 
 
 # instance fields
-.field final synthetic this$0:Lcom/android/settings/notification/NotificationSettings;
+.field final synthetic this$0:Lcom/android/settings_ext/notification/NotificationSettings;
 
 
 # direct methods
-.method private constructor <init>(Lcom/android/settings/notification/NotificationSettings;)V
+.method private constructor <init>(Lcom/android/settings_ext/notification/NotificationSettings;)V
     .locals 1
 
     .prologue
     .line 547
-    iput-object p1, p0, Lcom/android/settings/notification/NotificationSettings$H;->this$0:Lcom/android/settings/notification/NotificationSettings;
+    iput-object p1, p0, Lcom/android/settings_ext/notification/NotificationSettings$H;->this$0:Lcom/android/settings_ext/notification/NotificationSettings;
 
     .line 548
     invoke-static {}, Landroid/os/Looper;->getMainLooper()Landroid/os/Looper;
@@ -37,14 +37,14 @@
     return-void
 .end method
 
-.method synthetic constructor <init>(Lcom/android/settings/notification/NotificationSettings;Lcom/android/settings/notification/NotificationSettings$1;)V
+.method synthetic constructor <init>(Lcom/android/settings_ext/notification/NotificationSettings;Lcom/android/settings_ext/notification/NotificationSettings$1;)V
     .locals 0
-    .param p1, "x0"    # Lcom/android/settings/notification/NotificationSettings;
-    .param p2, "x1"    # Lcom/android/settings/notification/NotificationSettings$1;
+    .param p1, "x0"    # Lcom/android/settings_ext/notification/NotificationSettings;
+    .param p2, "x1"    # Lcom/android/settings_ext/notification/NotificationSettings$1;
 
     .prologue
     .line 540
-    invoke-direct {p0, p1}, Lcom/android/settings/notification/NotificationSettings$H;-><init>(Lcom/android/settings/notification/NotificationSettings;)V
+    invoke-direct {p0, p1}, Lcom/android/settings_ext/notification/NotificationSettings$H;-><init>(Lcom/android/settings_ext/notification/NotificationSettings;)V
 
     return-void
 .end method
@@ -67,10 +67,10 @@
 
     .line 555
     :pswitch_0
-    iget-object v0, p0, Lcom/android/settings/notification/NotificationSettings$H;->this$0:Lcom/android/settings/notification/NotificationSettings;
+    iget-object v0, p0, Lcom/android/settings_ext/notification/NotificationSettings$H;->this$0:Lcom/android/settings_ext/notification/NotificationSettings;
 
-    # getter for: Lcom/android/settings/notification/NotificationSettings;->mPhoneRingtonePreference:Landroid/preference/Preference;
-    invoke-static {v0}, Lcom/android/settings/notification/NotificationSettings;->access$400(Lcom/android/settings/notification/NotificationSettings;)Landroid/preference/Preference;
+    # getter for: Lcom/android/settings_ext/notification/NotificationSettings;->mPhoneRingtonePreference:Landroid/preference/Preference;
+    invoke-static {v0}, Lcom/android/settings_ext/notification/NotificationSettings;->access$400(Lcom/android/settings_ext/notification/NotificationSettings;)Landroid/preference/Preference;
 
     move-result-object v1
 
@@ -84,10 +84,10 @@
 
     .line 558
     :pswitch_1
-    iget-object v0, p0, Lcom/android/settings/notification/NotificationSettings$H;->this$0:Lcom/android/settings/notification/NotificationSettings;
+    iget-object v0, p0, Lcom/android/settings_ext/notification/NotificationSettings$H;->this$0:Lcom/android/settings_ext/notification/NotificationSettings;
 
-    # getter for: Lcom/android/settings/notification/NotificationSettings;->mNotificationRingtonePreference:Landroid/preference/Preference;
-    invoke-static {v0}, Lcom/android/settings/notification/NotificationSettings;->access$700(Lcom/android/settings/notification/NotificationSettings;)Landroid/preference/Preference;
+    # getter for: Lcom/android/settings_ext/notification/NotificationSettings;->mNotificationRingtonePreference:Landroid/preference/Preference;
+    invoke-static {v0}, Lcom/android/settings_ext/notification/NotificationSettings;->access$700(Lcom/android/settings_ext/notification/NotificationSettings;)Landroid/preference/Preference;
 
     move-result-object v1
 
@@ -101,32 +101,32 @@
 
     .line 561
     :pswitch_2
-    iget-object v0, p0, Lcom/android/settings/notification/NotificationSettings$H;->this$0:Lcom/android/settings/notification/NotificationSettings;
+    iget-object v0, p0, Lcom/android/settings_ext/notification/NotificationSettings$H;->this$0:Lcom/android/settings_ext/notification/NotificationSettings;
 
-    # getter for: Lcom/android/settings/notification/NotificationSettings;->mVolumeCallback:Lcom/android/settings/notification/NotificationSettings$VolumePreferenceCallback;
-    invoke-static {v0}, Lcom/android/settings/notification/NotificationSettings;->access$1700(Lcom/android/settings/notification/NotificationSettings;)Lcom/android/settings/notification/NotificationSettings$VolumePreferenceCallback;
+    # getter for: Lcom/android/settings_ext/notification/NotificationSettings;->mVolumeCallback:Lcom/android/settings_ext/notification/NotificationSettings$VolumePreferenceCallback;
+    invoke-static {v0}, Lcom/android/settings_ext/notification/NotificationSettings;->access$1700(Lcom/android/settings_ext/notification/NotificationSettings;)Lcom/android/settings_ext/notification/NotificationSettings$VolumePreferenceCallback;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/android/settings/notification/NotificationSettings$VolumePreferenceCallback;->stopSample()V
+    invoke-virtual {v0}, Lcom/android/settings_ext/notification/NotificationSettings$VolumePreferenceCallback;->stopSample()V
 
     goto :goto_0
 
     .line 564
     :pswitch_3
-    iget-object v0, p0, Lcom/android/settings/notification/NotificationSettings$H;->this$0:Lcom/android/settings/notification/NotificationSettings;
+    iget-object v0, p0, Lcom/android/settings_ext/notification/NotificationSettings$H;->this$0:Lcom/android/settings_ext/notification/NotificationSettings;
 
-    # invokes: Lcom/android/settings/notification/NotificationSettings;->updateEffectsSuppressor()V
-    invoke-static {v0}, Lcom/android/settings/notification/NotificationSettings;->access$1800(Lcom/android/settings/notification/NotificationSettings;)V
+    # invokes: Lcom/android/settings_ext/notification/NotificationSettings;->updateEffectsSuppressor()V
+    invoke-static {v0}, Lcom/android/settings_ext/notification/NotificationSettings;->access$1800(Lcom/android/settings_ext/notification/NotificationSettings;)V
 
     goto :goto_0
 
     .line 567
     :pswitch_4
-    iget-object v0, p0, Lcom/android/settings/notification/NotificationSettings$H;->this$0:Lcom/android/settings/notification/NotificationSettings;
+    iget-object v0, p0, Lcom/android/settings_ext/notification/NotificationSettings$H;->this$0:Lcom/android/settings_ext/notification/NotificationSettings;
 
-    # invokes: Lcom/android/settings/notification/NotificationSettings;->updateRingerMode()V
-    invoke-static {v0}, Lcom/android/settings/notification/NotificationSettings;->access$1900(Lcom/android/settings/notification/NotificationSettings;)V
+    # invokes: Lcom/android/settings_ext/notification/NotificationSettings;->updateRingerMode()V
+    invoke-static {v0}, Lcom/android/settings_ext/notification/NotificationSettings;->access$1900(Lcom/android/settings_ext/notification/NotificationSettings;)V
 
     goto :goto_0
 

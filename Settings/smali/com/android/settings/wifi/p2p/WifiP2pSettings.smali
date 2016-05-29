@@ -1,5 +1,5 @@
-.class public Lcom/android/settings/wifi/p2p/WifiP2pSettings;
-.super Lcom/android/settings/SettingsPreferenceFragment;
+.class public Lcom/android/settings_ext/wifi/p2p/WifiP2pSettings;
+.super Lcom/android/settings_ext/SettingsPreferenceFragment;
 .source "WifiP2pSettings.java"
 
 # interfaces
@@ -36,11 +36,11 @@
 
 .field private mSavedDeviceName:Ljava/lang/String;
 
-.field private mSelectedGroup:Lcom/android/settings/wifi/p2p/WifiP2pPersistentGroup;
+.field private mSelectedGroup:Lcom/android/settings_ext/wifi/p2p/WifiP2pPersistentGroup;
 
 .field private mSelectedGroupName:Ljava/lang/String;
 
-.field private mSelectedWifiPeer:Lcom/android/settings/wifi/p2p/WifiP2pPeer;
+.field private mSelectedWifiPeer:Lcom/android/settings_ext/wifi/p2p/WifiP2pPeer;
 
 .field private mThisDevice:Landroid/net/wifi/p2p/WifiP2pDevice;
 
@@ -59,205 +59,205 @@
 
     .prologue
     .line 155
-    invoke-direct {p0}, Lcom/android/settings/SettingsPreferenceFragment;-><init>()V
+    invoke-direct {p0}, Lcom/android/settings_ext/SettingsPreferenceFragment;-><init>()V
 
     .line 71
     new-instance v0, Landroid/content/IntentFilter;
 
     invoke-direct {v0}, Landroid/content/IntentFilter;-><init>()V
 
-    iput-object v0, p0, Lcom/android/settings/wifi/p2p/WifiP2pSettings;->mIntentFilter:Landroid/content/IntentFilter;
+    iput-object v0, p0, Lcom/android/settings_ext/wifi/p2p/WifiP2pSettings;->mIntentFilter:Landroid/content/IntentFilter;
 
     .line 86
     const/4 v0, 0x0
 
-    iput-boolean v0, p0, Lcom/android/settings/wifi/p2p/WifiP2pSettings;->mLastGroupFormed:Z
+    iput-boolean v0, p0, Lcom/android/settings_ext/wifi/p2p/WifiP2pSettings;->mLastGroupFormed:Z
 
     .line 102
     new-instance v0, Landroid/net/wifi/p2p/WifiP2pDeviceList;
 
     invoke-direct {v0}, Landroid/net/wifi/p2p/WifiP2pDeviceList;-><init>()V
 
-    iput-object v0, p0, Lcom/android/settings/wifi/p2p/WifiP2pSettings;->mPeers:Landroid/net/wifi/p2p/WifiP2pDeviceList;
+    iput-object v0, p0, Lcom/android/settings_ext/wifi/p2p/WifiP2pSettings;->mPeers:Landroid/net/wifi/p2p/WifiP2pDeviceList;
 
     .line 106
-    new-instance v0, Lcom/android/settings/wifi/p2p/WifiP2pSettings$1;
+    new-instance v0, Lcom/android/settings_ext/wifi/p2p/WifiP2pSettings$1;
 
-    invoke-direct {v0, p0}, Lcom/android/settings/wifi/p2p/WifiP2pSettings$1;-><init>(Lcom/android/settings/wifi/p2p/WifiP2pSettings;)V
+    invoke-direct {v0, p0}, Lcom/android/settings_ext/wifi/p2p/WifiP2pSettings$1;-><init>(Lcom/android/settings_ext/wifi/p2p/WifiP2pSettings;)V
 
-    iput-object v0, p0, Lcom/android/settings/wifi/p2p/WifiP2pSettings;->mReceiver:Landroid/content/BroadcastReceiver;
+    iput-object v0, p0, Lcom/android/settings_ext/wifi/p2p/WifiP2pSettings;->mReceiver:Landroid/content/BroadcastReceiver;
 
     .line 157
     return-void
 .end method
 
-.method static synthetic access$002(Lcom/android/settings/wifi/p2p/WifiP2pSettings;Z)Z
+.method static synthetic access$002(Lcom/android/settings_ext/wifi/p2p/WifiP2pSettings;Z)Z
     .locals 0
-    .param p0, "x0"    # Lcom/android/settings/wifi/p2p/WifiP2pSettings;
+    .param p0, "x0"    # Lcom/android/settings_ext/wifi/p2p/WifiP2pSettings;
     .param p1, "x1"    # Z
 
     .prologue
     .line 63
-    iput-boolean p1, p0, Lcom/android/settings/wifi/p2p/WifiP2pSettings;->mWifiP2pEnabled:Z
+    iput-boolean p1, p0, Lcom/android/settings_ext/wifi/p2p/WifiP2pSettings;->mWifiP2pEnabled:Z
 
     return p1
 .end method
 
-.method static synthetic access$100(Lcom/android/settings/wifi/p2p/WifiP2pSettings;)V
+.method static synthetic access$100(Lcom/android/settings_ext/wifi/p2p/WifiP2pSettings;)V
     .locals 0
-    .param p0, "x0"    # Lcom/android/settings/wifi/p2p/WifiP2pSettings;
+    .param p0, "x0"    # Lcom/android/settings_ext/wifi/p2p/WifiP2pSettings;
 
     .prologue
     .line 63
-    invoke-direct {p0}, Lcom/android/settings/wifi/p2p/WifiP2pSettings;->handleP2pStateChanged()V
+    invoke-direct {p0}, Lcom/android/settings_ext/wifi/p2p/WifiP2pSettings;->handleP2pStateChanged()V
 
     return-void
 .end method
 
-.method static synthetic access$1000(Lcom/android/settings/wifi/p2p/WifiP2pSettings;)Landroid/net/wifi/p2p/WifiP2pManager$Channel;
+.method static synthetic access$1000(Lcom/android/settings_ext/wifi/p2p/WifiP2pSettings;)Landroid/net/wifi/p2p/WifiP2pManager$Channel;
     .locals 1
-    .param p0, "x0"    # Lcom/android/settings/wifi/p2p/WifiP2pSettings;
+    .param p0, "x0"    # Lcom/android/settings_ext/wifi/p2p/WifiP2pSettings;
 
     .prologue
     .line 63
-    iget-object v0, p0, Lcom/android/settings/wifi/p2p/WifiP2pSettings;->mChannel:Landroid/net/wifi/p2p/WifiP2pManager$Channel;
+    iget-object v0, p0, Lcom/android/settings_ext/wifi/p2p/WifiP2pSettings;->mChannel:Landroid/net/wifi/p2p/WifiP2pManager$Channel;
 
     return-object v0
 .end method
 
-.method static synthetic access$1100(Lcom/android/settings/wifi/p2p/WifiP2pSettings;)Landroid/widget/EditText;
+.method static synthetic access$1100(Lcom/android/settings_ext/wifi/p2p/WifiP2pSettings;)Landroid/widget/EditText;
     .locals 1
-    .param p0, "x0"    # Lcom/android/settings/wifi/p2p/WifiP2pSettings;
+    .param p0, "x0"    # Lcom/android/settings_ext/wifi/p2p/WifiP2pSettings;
 
     .prologue
     .line 63
-    iget-object v0, p0, Lcom/android/settings/wifi/p2p/WifiP2pSettings;->mDeviceNameText:Landroid/widget/EditText;
+    iget-object v0, p0, Lcom/android/settings_ext/wifi/p2p/WifiP2pSettings;->mDeviceNameText:Landroid/widget/EditText;
 
     return-object v0
 .end method
 
-.method static synthetic access$1200(Lcom/android/settings/wifi/p2p/WifiP2pSettings;)Lcom/android/settings/wifi/p2p/WifiP2pPersistentGroup;
+.method static synthetic access$1200(Lcom/android/settings_ext/wifi/p2p/WifiP2pSettings;)Lcom/android/settings_ext/wifi/p2p/WifiP2pPersistentGroup;
     .locals 1
-    .param p0, "x0"    # Lcom/android/settings/wifi/p2p/WifiP2pSettings;
+    .param p0, "x0"    # Lcom/android/settings_ext/wifi/p2p/WifiP2pSettings;
 
     .prologue
     .line 63
-    iget-object v0, p0, Lcom/android/settings/wifi/p2p/WifiP2pSettings;->mSelectedGroup:Lcom/android/settings/wifi/p2p/WifiP2pPersistentGroup;
+    iget-object v0, p0, Lcom/android/settings_ext/wifi/p2p/WifiP2pSettings;->mSelectedGroup:Lcom/android/settings_ext/wifi/p2p/WifiP2pPersistentGroup;
 
     return-object v0
 .end method
 
-.method static synthetic access$1202(Lcom/android/settings/wifi/p2p/WifiP2pSettings;Lcom/android/settings/wifi/p2p/WifiP2pPersistentGroup;)Lcom/android/settings/wifi/p2p/WifiP2pPersistentGroup;
+.method static synthetic access$1202(Lcom/android/settings_ext/wifi/p2p/WifiP2pSettings;Lcom/android/settings_ext/wifi/p2p/WifiP2pPersistentGroup;)Lcom/android/settings_ext/wifi/p2p/WifiP2pPersistentGroup;
     .locals 0
-    .param p0, "x0"    # Lcom/android/settings/wifi/p2p/WifiP2pSettings;
-    .param p1, "x1"    # Lcom/android/settings/wifi/p2p/WifiP2pPersistentGroup;
+    .param p0, "x0"    # Lcom/android/settings_ext/wifi/p2p/WifiP2pSettings;
+    .param p1, "x1"    # Lcom/android/settings_ext/wifi/p2p/WifiP2pPersistentGroup;
 
     .prologue
     .line 63
-    iput-object p1, p0, Lcom/android/settings/wifi/p2p/WifiP2pSettings;->mSelectedGroup:Lcom/android/settings/wifi/p2p/WifiP2pPersistentGroup;
+    iput-object p1, p0, Lcom/android/settings_ext/wifi/p2p/WifiP2pSettings;->mSelectedGroup:Lcom/android/settings_ext/wifi/p2p/WifiP2pPersistentGroup;
 
     return-object p1
 .end method
 
-.method static synthetic access$202(Lcom/android/settings/wifi/p2p/WifiP2pSettings;Landroid/net/wifi/p2p/WifiP2pDeviceList;)Landroid/net/wifi/p2p/WifiP2pDeviceList;
+.method static synthetic access$202(Lcom/android/settings_ext/wifi/p2p/WifiP2pSettings;Landroid/net/wifi/p2p/WifiP2pDeviceList;)Landroid/net/wifi/p2p/WifiP2pDeviceList;
     .locals 0
-    .param p0, "x0"    # Lcom/android/settings/wifi/p2p/WifiP2pSettings;
+    .param p0, "x0"    # Lcom/android/settings_ext/wifi/p2p/WifiP2pSettings;
     .param p1, "x1"    # Landroid/net/wifi/p2p/WifiP2pDeviceList;
 
     .prologue
     .line 63
-    iput-object p1, p0, Lcom/android/settings/wifi/p2p/WifiP2pSettings;->mPeers:Landroid/net/wifi/p2p/WifiP2pDeviceList;
+    iput-object p1, p0, Lcom/android/settings_ext/wifi/p2p/WifiP2pSettings;->mPeers:Landroid/net/wifi/p2p/WifiP2pDeviceList;
 
     return-object p1
 .end method
 
-.method static synthetic access$300(Lcom/android/settings/wifi/p2p/WifiP2pSettings;)V
+.method static synthetic access$300(Lcom/android/settings_ext/wifi/p2p/WifiP2pSettings;)V
     .locals 0
-    .param p0, "x0"    # Lcom/android/settings/wifi/p2p/WifiP2pSettings;
+    .param p0, "x0"    # Lcom/android/settings_ext/wifi/p2p/WifiP2pSettings;
 
     .prologue
     .line 63
-    invoke-direct {p0}, Lcom/android/settings/wifi/p2p/WifiP2pSettings;->handlePeersChanged()V
+    invoke-direct {p0}, Lcom/android/settings_ext/wifi/p2p/WifiP2pSettings;->handlePeersChanged()V
 
     return-void
 .end method
 
-.method static synthetic access$400(Lcom/android/settings/wifi/p2p/WifiP2pSettings;)Landroid/net/wifi/p2p/WifiP2pManager;
+.method static synthetic access$400(Lcom/android/settings_ext/wifi/p2p/WifiP2pSettings;)Landroid/net/wifi/p2p/WifiP2pManager;
     .locals 1
-    .param p0, "x0"    # Lcom/android/settings/wifi/p2p/WifiP2pSettings;
+    .param p0, "x0"    # Lcom/android/settings_ext/wifi/p2p/WifiP2pSettings;
 
     .prologue
     .line 63
-    iget-object v0, p0, Lcom/android/settings/wifi/p2p/WifiP2pSettings;->mWifiP2pManager:Landroid/net/wifi/p2p/WifiP2pManager;
+    iget-object v0, p0, Lcom/android/settings_ext/wifi/p2p/WifiP2pSettings;->mWifiP2pManager:Landroid/net/wifi/p2p/WifiP2pManager;
 
     return-object v0
 .end method
 
-.method static synthetic access$500(Lcom/android/settings/wifi/p2p/WifiP2pSettings;)Z
+.method static synthetic access$500(Lcom/android/settings_ext/wifi/p2p/WifiP2pSettings;)Z
     .locals 1
-    .param p0, "x0"    # Lcom/android/settings/wifi/p2p/WifiP2pSettings;
+    .param p0, "x0"    # Lcom/android/settings_ext/wifi/p2p/WifiP2pSettings;
 
     .prologue
     .line 63
-    iget-boolean v0, p0, Lcom/android/settings/wifi/p2p/WifiP2pSettings;->mLastGroupFormed:Z
+    iget-boolean v0, p0, Lcom/android/settings_ext/wifi/p2p/WifiP2pSettings;->mLastGroupFormed:Z
 
     return v0
 .end method
 
-.method static synthetic access$502(Lcom/android/settings/wifi/p2p/WifiP2pSettings;Z)Z
+.method static synthetic access$502(Lcom/android/settings_ext/wifi/p2p/WifiP2pSettings;Z)Z
     .locals 0
-    .param p0, "x0"    # Lcom/android/settings/wifi/p2p/WifiP2pSettings;
+    .param p0, "x0"    # Lcom/android/settings_ext/wifi/p2p/WifiP2pSettings;
     .param p1, "x1"    # Z
 
     .prologue
     .line 63
-    iput-boolean p1, p0, Lcom/android/settings/wifi/p2p/WifiP2pSettings;->mLastGroupFormed:Z
+    iput-boolean p1, p0, Lcom/android/settings_ext/wifi/p2p/WifiP2pSettings;->mLastGroupFormed:Z
 
     return p1
 .end method
 
-.method static synthetic access$600(Lcom/android/settings/wifi/p2p/WifiP2pSettings;)V
+.method static synthetic access$600(Lcom/android/settings_ext/wifi/p2p/WifiP2pSettings;)V
     .locals 0
-    .param p0, "x0"    # Lcom/android/settings/wifi/p2p/WifiP2pSettings;
+    .param p0, "x0"    # Lcom/android/settings_ext/wifi/p2p/WifiP2pSettings;
 
     .prologue
     .line 63
-    invoke-direct {p0}, Lcom/android/settings/wifi/p2p/WifiP2pSettings;->startSearch()V
+    invoke-direct {p0}, Lcom/android/settings_ext/wifi/p2p/WifiP2pSettings;->startSearch()V
 
     return-void
 .end method
 
-.method static synthetic access$702(Lcom/android/settings/wifi/p2p/WifiP2pSettings;Landroid/net/wifi/p2p/WifiP2pDevice;)Landroid/net/wifi/p2p/WifiP2pDevice;
+.method static synthetic access$702(Lcom/android/settings_ext/wifi/p2p/WifiP2pSettings;Landroid/net/wifi/p2p/WifiP2pDevice;)Landroid/net/wifi/p2p/WifiP2pDevice;
     .locals 0
-    .param p0, "x0"    # Lcom/android/settings/wifi/p2p/WifiP2pSettings;
+    .param p0, "x0"    # Lcom/android/settings_ext/wifi/p2p/WifiP2pSettings;
     .param p1, "x1"    # Landroid/net/wifi/p2p/WifiP2pDevice;
 
     .prologue
     .line 63
-    iput-object p1, p0, Lcom/android/settings/wifi/p2p/WifiP2pSettings;->mThisDevice:Landroid/net/wifi/p2p/WifiP2pDevice;
+    iput-object p1, p0, Lcom/android/settings_ext/wifi/p2p/WifiP2pSettings;->mThisDevice:Landroid/net/wifi/p2p/WifiP2pDevice;
 
     return-object p1
 .end method
 
-.method static synthetic access$800(Lcom/android/settings/wifi/p2p/WifiP2pSettings;)V
+.method static synthetic access$800(Lcom/android/settings_ext/wifi/p2p/WifiP2pSettings;)V
     .locals 0
-    .param p0, "x0"    # Lcom/android/settings/wifi/p2p/WifiP2pSettings;
+    .param p0, "x0"    # Lcom/android/settings_ext/wifi/p2p/WifiP2pSettings;
 
     .prologue
     .line 63
-    invoke-direct {p0}, Lcom/android/settings/wifi/p2p/WifiP2pSettings;->updateDevicePref()V
+    invoke-direct {p0}, Lcom/android/settings_ext/wifi/p2p/WifiP2pSettings;->updateDevicePref()V
 
     return-void
 .end method
 
-.method static synthetic access$900(Lcom/android/settings/wifi/p2p/WifiP2pSettings;Z)V
+.method static synthetic access$900(Lcom/android/settings_ext/wifi/p2p/WifiP2pSettings;Z)V
     .locals 0
-    .param p0, "x0"    # Lcom/android/settings/wifi/p2p/WifiP2pSettings;
+    .param p0, "x0"    # Lcom/android/settings_ext/wifi/p2p/WifiP2pSettings;
     .param p1, "x1"    # Z
 
     .prologue
     .line 63
-    invoke-direct {p0, p1}, Lcom/android/settings/wifi/p2p/WifiP2pSettings;->updateSearchMenu(Z)V
+    invoke-direct {p0, p1}, Lcom/android/settings_ext/wifi/p2p/WifiP2pSettings;->updateSearchMenu(Z)V
 
     return-void
 .end method
@@ -269,26 +269,26 @@
     .line 572
     const/4 v0, 0x0
 
-    invoke-direct {p0, v0}, Lcom/android/settings/wifi/p2p/WifiP2pSettings;->updateSearchMenu(Z)V
+    invoke-direct {p0, v0}, Lcom/android/settings_ext/wifi/p2p/WifiP2pSettings;->updateSearchMenu(Z)V
 
     .line 573
-    iget-object v0, p0, Lcom/android/settings/wifi/p2p/WifiP2pSettings;->mThisDevicePref:Landroid/preference/Preference;
+    iget-object v0, p0, Lcom/android/settings_ext/wifi/p2p/WifiP2pSettings;->mThisDevicePref:Landroid/preference/Preference;
 
-    iget-boolean v1, p0, Lcom/android/settings/wifi/p2p/WifiP2pSettings;->mWifiP2pEnabled:Z
+    iget-boolean v1, p0, Lcom/android/settings_ext/wifi/p2p/WifiP2pSettings;->mWifiP2pEnabled:Z
 
     invoke-virtual {v0, v1}, Landroid/preference/Preference;->setEnabled(Z)V
 
     .line 574
-    iget-object v0, p0, Lcom/android/settings/wifi/p2p/WifiP2pSettings;->mPeersGroup:Landroid/preference/PreferenceGroup;
+    iget-object v0, p0, Lcom/android/settings_ext/wifi/p2p/WifiP2pSettings;->mPeersGroup:Landroid/preference/PreferenceGroup;
 
-    iget-boolean v1, p0, Lcom/android/settings/wifi/p2p/WifiP2pSettings;->mWifiP2pEnabled:Z
+    iget-boolean v1, p0, Lcom/android/settings_ext/wifi/p2p/WifiP2pSettings;->mWifiP2pEnabled:Z
 
     invoke-virtual {v0, v1}, Landroid/preference/PreferenceGroup;->setEnabled(Z)V
 
     .line 575
-    iget-object v0, p0, Lcom/android/settings/wifi/p2p/WifiP2pSettings;->mPersistentGroup:Landroid/preference/PreferenceGroup;
+    iget-object v0, p0, Lcom/android/settings_ext/wifi/p2p/WifiP2pSettings;->mPersistentGroup:Landroid/preference/PreferenceGroup;
 
-    iget-boolean v1, p0, Lcom/android/settings/wifi/p2p/WifiP2pSettings;->mWifiP2pEnabled:Z
+    iget-boolean v1, p0, Lcom/android/settings_ext/wifi/p2p/WifiP2pSettings;->mWifiP2pEnabled:Z
 
     invoke-virtual {v0, v1}, Landroid/preference/PreferenceGroup;->setEnabled(Z)V
 
@@ -301,17 +301,17 @@
 
     .prologue
     .line 496
-    iget-object v2, p0, Lcom/android/settings/wifi/p2p/WifiP2pSettings;->mPeersGroup:Landroid/preference/PreferenceGroup;
+    iget-object v2, p0, Lcom/android/settings_ext/wifi/p2p/WifiP2pSettings;->mPeersGroup:Landroid/preference/PreferenceGroup;
 
     invoke-virtual {v2}, Landroid/preference/PreferenceGroup;->removeAll()V
 
     .line 498
     const/4 v2, 0x0
 
-    iput v2, p0, Lcom/android/settings/wifi/p2p/WifiP2pSettings;->mConnectedDevices:I
+    iput v2, p0, Lcom/android/settings_ext/wifi/p2p/WifiP2pSettings;->mConnectedDevices:I
 
     .line 500
-    iget-object v2, p0, Lcom/android/settings/wifi/p2p/WifiP2pSettings;->mPeers:Landroid/net/wifi/p2p/WifiP2pDeviceList;
+    iget-object v2, p0, Lcom/android/settings_ext/wifi/p2p/WifiP2pSettings;->mPeers:Landroid/net/wifi/p2p/WifiP2pDeviceList;
 
     invoke-virtual {v2}, Landroid/net/wifi/p2p/WifiP2pDeviceList;->getDeviceList()Ljava/util/Collection;
 
@@ -338,15 +338,15 @@
 
     .line 502
     .local v1, "peer":Landroid/net/wifi/p2p/WifiP2pDevice;
-    iget-object v2, p0, Lcom/android/settings/wifi/p2p/WifiP2pSettings;->mPeersGroup:Landroid/preference/PreferenceGroup;
+    iget-object v2, p0, Lcom/android/settings_ext/wifi/p2p/WifiP2pSettings;->mPeersGroup:Landroid/preference/PreferenceGroup;
 
-    new-instance v3, Lcom/android/settings/wifi/p2p/WifiP2pPeer;
+    new-instance v3, Lcom/android/settings_ext/wifi/p2p/WifiP2pPeer;
 
-    invoke-virtual {p0}, Lcom/android/settings/wifi/p2p/WifiP2pSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/wifi/p2p/WifiP2pSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v4
 
-    invoke-direct {v3, v4, v1}, Lcom/android/settings/wifi/p2p/WifiP2pPeer;-><init>(Landroid/content/Context;Landroid/net/wifi/p2p/WifiP2pDevice;)V
+    invoke-direct {v3, v4, v1}, Lcom/android/settings_ext/wifi/p2p/WifiP2pPeer;-><init>(Landroid/content/Context;Landroid/net/wifi/p2p/WifiP2pDevice;)V
 
     invoke-virtual {v2, v3}, Landroid/preference/PreferenceGroup;->addPreference(Landroid/preference/Preference;)Z
 
@@ -355,11 +355,11 @@
 
     if-nez v2, :cond_0
 
-    iget v2, p0, Lcom/android/settings/wifi/p2p/WifiP2pSettings;->mConnectedDevices:I
+    iget v2, p0, Lcom/android/settings_ext/wifi/p2p/WifiP2pSettings;->mConnectedDevices:I
 
     add-int/lit8 v2, v2, 0x1
 
-    iput v2, p0, Lcom/android/settings/wifi/p2p/WifiP2pSettings;->mConnectedDevices:I
+    iput v2, p0, Lcom/android/settings_ext/wifi/p2p/WifiP2pSettings;->mConnectedDevices:I
 
     goto :goto_0
 
@@ -374,22 +374,22 @@
 
     .prologue
     .line 585
-    iget-object v0, p0, Lcom/android/settings/wifi/p2p/WifiP2pSettings;->mWifiP2pManager:Landroid/net/wifi/p2p/WifiP2pManager;
+    iget-object v0, p0, Lcom/android/settings_ext/wifi/p2p/WifiP2pSettings;->mWifiP2pManager:Landroid/net/wifi/p2p/WifiP2pManager;
 
     if-eqz v0, :cond_0
 
-    iget-boolean v0, p0, Lcom/android/settings/wifi/p2p/WifiP2pSettings;->mWifiP2pSearching:Z
+    iget-boolean v0, p0, Lcom/android/settings_ext/wifi/p2p/WifiP2pSettings;->mWifiP2pSearching:Z
 
     if-nez v0, :cond_0
 
     .line 586
-    iget-object v0, p0, Lcom/android/settings/wifi/p2p/WifiP2pSettings;->mWifiP2pManager:Landroid/net/wifi/p2p/WifiP2pManager;
+    iget-object v0, p0, Lcom/android/settings_ext/wifi/p2p/WifiP2pSettings;->mWifiP2pManager:Landroid/net/wifi/p2p/WifiP2pManager;
 
-    iget-object v1, p0, Lcom/android/settings/wifi/p2p/WifiP2pSettings;->mChannel:Landroid/net/wifi/p2p/WifiP2pManager$Channel;
+    iget-object v1, p0, Lcom/android/settings_ext/wifi/p2p/WifiP2pSettings;->mChannel:Landroid/net/wifi/p2p/WifiP2pManager$Channel;
 
-    new-instance v2, Lcom/android/settings/wifi/p2p/WifiP2pSettings$7;
+    new-instance v2, Lcom/android/settings_ext/wifi/p2p/WifiP2pSettings$7;
 
-    invoke-direct {v2, p0}, Lcom/android/settings/wifi/p2p/WifiP2pSettings$7;-><init>(Lcom/android/settings/wifi/p2p/WifiP2pSettings;)V
+    invoke-direct {v2, p0}, Lcom/android/settings_ext/wifi/p2p/WifiP2pSettings$7;-><init>(Lcom/android/settings_ext/wifi/p2p/WifiP2pSettings;)V
 
     invoke-virtual {v0, v1, v2}, Landroid/net/wifi/p2p/WifiP2pManager;->discoverPeers(Landroid/net/wifi/p2p/WifiP2pManager$Channel;Landroid/net/wifi/p2p/WifiP2pManager$ActionListener;)V
 
@@ -403,12 +403,12 @@
 
     .prologue
     .line 597
-    iget-object v0, p0, Lcom/android/settings/wifi/p2p/WifiP2pSettings;->mThisDevice:Landroid/net/wifi/p2p/WifiP2pDevice;
+    iget-object v0, p0, Lcom/android/settings_ext/wifi/p2p/WifiP2pSettings;->mThisDevice:Landroid/net/wifi/p2p/WifiP2pDevice;
 
     if-eqz v0, :cond_0
 
     .line 598
-    iget-object v0, p0, Lcom/android/settings/wifi/p2p/WifiP2pSettings;->mThisDevice:Landroid/net/wifi/p2p/WifiP2pDevice;
+    iget-object v0, p0, Lcom/android/settings_ext/wifi/p2p/WifiP2pSettings;->mThisDevice:Landroid/net/wifi/p2p/WifiP2pDevice;
 
     iget-object v0, v0, Landroid/net/wifi/p2p/WifiP2pDevice;->deviceName:Ljava/lang/String;
 
@@ -419,9 +419,9 @@
     if-eqz v0, :cond_1
 
     .line 599
-    iget-object v0, p0, Lcom/android/settings/wifi/p2p/WifiP2pSettings;->mThisDevicePref:Landroid/preference/Preference;
+    iget-object v0, p0, Lcom/android/settings_ext/wifi/p2p/WifiP2pSettings;->mThisDevicePref:Landroid/preference/Preference;
 
-    iget-object v1, p0, Lcom/android/settings/wifi/p2p/WifiP2pSettings;->mThisDevice:Landroid/net/wifi/p2p/WifiP2pDevice;
+    iget-object v1, p0, Lcom/android/settings_ext/wifi/p2p/WifiP2pSettings;->mThisDevice:Landroid/net/wifi/p2p/WifiP2pDevice;
 
     iget-object v1, v1, Landroid/net/wifi/p2p/WifiP2pDevice;->deviceAddress:Ljava/lang/String;
 
@@ -434,9 +434,9 @@
 
     .line 601
     :cond_1
-    iget-object v0, p0, Lcom/android/settings/wifi/p2p/WifiP2pSettings;->mThisDevicePref:Landroid/preference/Preference;
+    iget-object v0, p0, Lcom/android/settings_ext/wifi/p2p/WifiP2pSettings;->mThisDevicePref:Landroid/preference/Preference;
 
-    iget-object v1, p0, Lcom/android/settings/wifi/p2p/WifiP2pSettings;->mThisDevice:Landroid/net/wifi/p2p/WifiP2pDevice;
+    iget-object v1, p0, Lcom/android/settings_ext/wifi/p2p/WifiP2pSettings;->mThisDevice:Landroid/net/wifi/p2p/WifiP2pDevice;
 
     iget-object v1, v1, Landroid/net/wifi/p2p/WifiP2pDevice;->deviceName:Ljava/lang/String;
 
@@ -451,10 +451,10 @@
 
     .prologue
     .line 579
-    iput-boolean p1, p0, Lcom/android/settings/wifi/p2p/WifiP2pSettings;->mWifiP2pSearching:Z
+    iput-boolean p1, p0, Lcom/android/settings_ext/wifi/p2p/WifiP2pSettings;->mWifiP2pSearching:Z
 
     .line 580
-    invoke-virtual {p0}, Lcom/android/settings/wifi/p2p/WifiP2pSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/wifi/p2p/WifiP2pSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
@@ -637,52 +637,52 @@
     .line 161
     const v3, 0x7f060052
 
-    invoke-virtual {p0, v3}, Lcom/android/settings/wifi/p2p/WifiP2pSettings;->addPreferencesFromResource(I)V
+    invoke-virtual {p0, v3}, Lcom/android/settings_ext/wifi/p2p/WifiP2pSettings;->addPreferencesFromResource(I)V
 
     .line 163
-    iget-object v3, p0, Lcom/android/settings/wifi/p2p/WifiP2pSettings;->mIntentFilter:Landroid/content/IntentFilter;
+    iget-object v3, p0, Lcom/android/settings_ext/wifi/p2p/WifiP2pSettings;->mIntentFilter:Landroid/content/IntentFilter;
 
     const-string v4, "android.net.wifi.p2p.STATE_CHANGED"
 
     invoke-virtual {v3, v4}, Landroid/content/IntentFilter;->addAction(Ljava/lang/String;)V
 
     .line 164
-    iget-object v3, p0, Lcom/android/settings/wifi/p2p/WifiP2pSettings;->mIntentFilter:Landroid/content/IntentFilter;
+    iget-object v3, p0, Lcom/android/settings_ext/wifi/p2p/WifiP2pSettings;->mIntentFilter:Landroid/content/IntentFilter;
 
     const-string v4, "android.net.wifi.p2p.PEERS_CHANGED"
 
     invoke-virtual {v3, v4}, Landroid/content/IntentFilter;->addAction(Ljava/lang/String;)V
 
     .line 165
-    iget-object v3, p0, Lcom/android/settings/wifi/p2p/WifiP2pSettings;->mIntentFilter:Landroid/content/IntentFilter;
+    iget-object v3, p0, Lcom/android/settings_ext/wifi/p2p/WifiP2pSettings;->mIntentFilter:Landroid/content/IntentFilter;
 
     const-string v4, "android.net.wifi.p2p.CONNECTION_STATE_CHANGE"
 
     invoke-virtual {v3, v4}, Landroid/content/IntentFilter;->addAction(Ljava/lang/String;)V
 
     .line 166
-    iget-object v3, p0, Lcom/android/settings/wifi/p2p/WifiP2pSettings;->mIntentFilter:Landroid/content/IntentFilter;
+    iget-object v3, p0, Lcom/android/settings_ext/wifi/p2p/WifiP2pSettings;->mIntentFilter:Landroid/content/IntentFilter;
 
     const-string v4, "android.net.wifi.p2p.THIS_DEVICE_CHANGED"
 
     invoke-virtual {v3, v4}, Landroid/content/IntentFilter;->addAction(Ljava/lang/String;)V
 
     .line 167
-    iget-object v3, p0, Lcom/android/settings/wifi/p2p/WifiP2pSettings;->mIntentFilter:Landroid/content/IntentFilter;
+    iget-object v3, p0, Lcom/android/settings_ext/wifi/p2p/WifiP2pSettings;->mIntentFilter:Landroid/content/IntentFilter;
 
     const-string v4, "android.net.wifi.p2p.DISCOVERY_STATE_CHANGE"
 
     invoke-virtual {v3, v4}, Landroid/content/IntentFilter;->addAction(Ljava/lang/String;)V
 
     .line 168
-    iget-object v3, p0, Lcom/android/settings/wifi/p2p/WifiP2pSettings;->mIntentFilter:Landroid/content/IntentFilter;
+    iget-object v3, p0, Lcom/android/settings_ext/wifi/p2p/WifiP2pSettings;->mIntentFilter:Landroid/content/IntentFilter;
 
     const-string v4, "android.net.wifi.p2p.PERSISTENT_GROUPS_CHANGED"
 
     invoke-virtual {v3, v4}, Landroid/content/IntentFilter;->addAction(Ljava/lang/String;)V
 
     .line 170
-    invoke-virtual {p0}, Lcom/android/settings/wifi/p2p/WifiP2pSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/wifi/p2p/WifiP2pSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
@@ -690,23 +690,23 @@
     .local v0, "activity":Landroid/app/Activity;
     const-string v3, "wifip2p"
 
-    invoke-virtual {p0, v3}, Lcom/android/settings/wifi/p2p/WifiP2pSettings;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
+    invoke-virtual {p0, v3}, Lcom/android/settings_ext/wifi/p2p/WifiP2pSettings;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object v3
 
     check-cast v3, Landroid/net/wifi/p2p/WifiP2pManager;
 
-    iput-object v3, p0, Lcom/android/settings/wifi/p2p/WifiP2pSettings;->mWifiP2pManager:Landroid/net/wifi/p2p/WifiP2pManager;
+    iput-object v3, p0, Lcom/android/settings_ext/wifi/p2p/WifiP2pSettings;->mWifiP2pManager:Landroid/net/wifi/p2p/WifiP2pManager;
 
     .line 172
-    iget-object v3, p0, Lcom/android/settings/wifi/p2p/WifiP2pSettings;->mWifiP2pManager:Landroid/net/wifi/p2p/WifiP2pManager;
+    iget-object v3, p0, Lcom/android/settings_ext/wifi/p2p/WifiP2pSettings;->mWifiP2pManager:Landroid/net/wifi/p2p/WifiP2pManager;
 
     if-eqz v3, :cond_4
 
     .line 173
-    iget-object v3, p0, Lcom/android/settings/wifi/p2p/WifiP2pSettings;->mWifiP2pManager:Landroid/net/wifi/p2p/WifiP2pManager;
+    iget-object v3, p0, Lcom/android/settings_ext/wifi/p2p/WifiP2pSettings;->mWifiP2pManager:Landroid/net/wifi/p2p/WifiP2pManager;
 
-    invoke-virtual {p0}, Lcom/android/settings/wifi/p2p/WifiP2pSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/wifi/p2p/WifiP2pSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v4
 
@@ -718,10 +718,10 @@
 
     move-result-object v3
 
-    iput-object v3, p0, Lcom/android/settings/wifi/p2p/WifiP2pSettings;->mChannel:Landroid/net/wifi/p2p/WifiP2pManager$Channel;
+    iput-object v3, p0, Lcom/android/settings_ext/wifi/p2p/WifiP2pSettings;->mChannel:Landroid/net/wifi/p2p/WifiP2pManager$Channel;
 
     .line 174
-    iget-object v3, p0, Lcom/android/settings/wifi/p2p/WifiP2pSettings;->mChannel:Landroid/net/wifi/p2p/WifiP2pManager$Channel;
+    iget-object v3, p0, Lcom/android/settings_ext/wifi/p2p/WifiP2pSettings;->mChannel:Landroid/net/wifi/p2p/WifiP2pManager$Channel;
 
     if-nez v3, :cond_0
 
@@ -733,7 +733,7 @@
     invoke-static {v3, v4}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
 
     .line 177
-    iput-object v7, p0, Lcom/android/settings/wifi/p2p/WifiP2pSettings;->mWifiP2pManager:Landroid/net/wifi/p2p/WifiP2pManager;
+    iput-object v7, p0, Lcom/android/settings_ext/wifi/p2p/WifiP2pSettings;->mWifiP2pManager:Landroid/net/wifi/p2p/WifiP2pManager;
 
     .line 183
     :cond_0
@@ -759,15 +759,15 @@
 
     .line 185
     .local v1, "device":Landroid/net/wifi/p2p/WifiP2pDevice;
-    new-instance v3, Lcom/android/settings/wifi/p2p/WifiP2pPeer;
+    new-instance v3, Lcom/android/settings_ext/wifi/p2p/WifiP2pPeer;
 
-    invoke-virtual {p0}, Lcom/android/settings/wifi/p2p/WifiP2pSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/wifi/p2p/WifiP2pSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v4
 
-    invoke-direct {v3, v4, v1}, Lcom/android/settings/wifi/p2p/WifiP2pPeer;-><init>(Landroid/content/Context;Landroid/net/wifi/p2p/WifiP2pDevice;)V
+    invoke-direct {v3, v4, v1}, Lcom/android/settings_ext/wifi/p2p/WifiP2pPeer;-><init>(Landroid/content/Context;Landroid/net/wifi/p2p/WifiP2pDevice;)V
 
-    iput-object v3, p0, Lcom/android/settings/wifi/p2p/WifiP2pSettings;->mSelectedWifiPeer:Lcom/android/settings/wifi/p2p/WifiP2pPeer;
+    iput-object v3, p0, Lcom/android/settings_ext/wifi/p2p/WifiP2pSettings;->mSelectedWifiPeer:Lcom/android/settings_ext/wifi/p2p/WifiP2pPeer;
 
     .line 187
     .end local v1    # "device":Landroid/net/wifi/p2p/WifiP2pDevice;
@@ -789,7 +789,7 @@
 
     move-result-object v3
 
-    iput-object v3, p0, Lcom/android/settings/wifi/p2p/WifiP2pSettings;->mSavedDeviceName:Ljava/lang/String;
+    iput-object v3, p0, Lcom/android/settings_ext/wifi/p2p/WifiP2pSettings;->mSavedDeviceName:Ljava/lang/String;
 
     .line 190
     :cond_2
@@ -810,42 +810,42 @@
 
     move-result-object v3
 
-    iput-object v3, p0, Lcom/android/settings/wifi/p2p/WifiP2pSettings;->mSelectedGroupName:Ljava/lang/String;
+    iput-object v3, p0, Lcom/android/settings_ext/wifi/p2p/WifiP2pSettings;->mSelectedGroupName:Ljava/lang/String;
 
     .line 194
     :cond_3
-    new-instance v3, Lcom/android/settings/wifi/p2p/WifiP2pSettings$2;
+    new-instance v3, Lcom/android/settings_ext/wifi/p2p/WifiP2pSettings$2;
 
-    invoke-direct {v3, p0}, Lcom/android/settings/wifi/p2p/WifiP2pSettings$2;-><init>(Lcom/android/settings/wifi/p2p/WifiP2pSettings;)V
+    invoke-direct {v3, p0}, Lcom/android/settings_ext/wifi/p2p/WifiP2pSettings$2;-><init>(Lcom/android/settings_ext/wifi/p2p/WifiP2pSettings;)V
 
-    iput-object v3, p0, Lcom/android/settings/wifi/p2p/WifiP2pSettings;->mRenameListener:Landroid/content/DialogInterface$OnClickListener;
+    iput-object v3, p0, Lcom/android/settings_ext/wifi/p2p/WifiP2pSettings;->mRenameListener:Landroid/content/DialogInterface$OnClickListener;
 
     .line 217
-    new-instance v3, Lcom/android/settings/wifi/p2p/WifiP2pSettings$3;
+    new-instance v3, Lcom/android/settings_ext/wifi/p2p/WifiP2pSettings$3;
 
-    invoke-direct {v3, p0}, Lcom/android/settings/wifi/p2p/WifiP2pSettings$3;-><init>(Lcom/android/settings/wifi/p2p/WifiP2pSettings;)V
+    invoke-direct {v3, p0}, Lcom/android/settings_ext/wifi/p2p/WifiP2pSettings$3;-><init>(Lcom/android/settings_ext/wifi/p2p/WifiP2pSettings;)V
 
-    iput-object v3, p0, Lcom/android/settings/wifi/p2p/WifiP2pSettings;->mDisconnectListener:Landroid/content/DialogInterface$OnClickListener;
+    iput-object v3, p0, Lcom/android/settings_ext/wifi/p2p/WifiP2pSettings;->mDisconnectListener:Landroid/content/DialogInterface$OnClickListener;
 
     .line 236
-    new-instance v3, Lcom/android/settings/wifi/p2p/WifiP2pSettings$4;
+    new-instance v3, Lcom/android/settings_ext/wifi/p2p/WifiP2pSettings$4;
 
-    invoke-direct {v3, p0}, Lcom/android/settings/wifi/p2p/WifiP2pSettings$4;-><init>(Lcom/android/settings/wifi/p2p/WifiP2pSettings;)V
+    invoke-direct {v3, p0}, Lcom/android/settings_ext/wifi/p2p/WifiP2pSettings$4;-><init>(Lcom/android/settings_ext/wifi/p2p/WifiP2pSettings;)V
 
-    iput-object v3, p0, Lcom/android/settings/wifi/p2p/WifiP2pSettings;->mCancelConnectListener:Landroid/content/DialogInterface$OnClickListener;
+    iput-object v3, p0, Lcom/android/settings_ext/wifi/p2p/WifiP2pSettings;->mCancelConnectListener:Landroid/content/DialogInterface$OnClickListener;
 
     .line 256
-    new-instance v3, Lcom/android/settings/wifi/p2p/WifiP2pSettings$5;
+    new-instance v3, Lcom/android/settings_ext/wifi/p2p/WifiP2pSettings$5;
 
-    invoke-direct {v3, p0}, Lcom/android/settings/wifi/p2p/WifiP2pSettings$5;-><init>(Lcom/android/settings/wifi/p2p/WifiP2pSettings;)V
+    invoke-direct {v3, p0}, Lcom/android/settings_ext/wifi/p2p/WifiP2pSettings$5;-><init>(Lcom/android/settings_ext/wifi/p2p/WifiP2pSettings;)V
 
-    iput-object v3, p0, Lcom/android/settings/wifi/p2p/WifiP2pSettings;->mDeleteGroupListener:Landroid/content/DialogInterface$OnClickListener;
+    iput-object v3, p0, Lcom/android/settings_ext/wifi/p2p/WifiP2pSettings;->mDeleteGroupListener:Landroid/content/DialogInterface$OnClickListener;
 
     .line 287
-    invoke-virtual {p0, v6}, Lcom/android/settings/wifi/p2p/WifiP2pSettings;->setHasOptionsMenu(Z)V
+    invoke-virtual {p0, v6}, Lcom/android/settings_ext/wifi/p2p/WifiP2pSettings;->setHasOptionsMenu(Z)V
 
     .line 289
-    invoke-virtual {p0}, Lcom/android/settings/wifi/p2p/WifiP2pSettings;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
+    invoke-virtual {p0}, Lcom/android/settings_ext/wifi/p2p/WifiP2pSettings;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
 
     move-result-object v2
 
@@ -859,77 +859,77 @@
     .line 293
     new-instance v3, Landroid/preference/Preference;
 
-    invoke-virtual {p0}, Lcom/android/settings/wifi/p2p/WifiP2pSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/wifi/p2p/WifiP2pSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v4
 
     invoke-direct {v3, v4}, Landroid/preference/Preference;-><init>(Landroid/content/Context;)V
 
-    iput-object v3, p0, Lcom/android/settings/wifi/p2p/WifiP2pSettings;->mThisDevicePref:Landroid/preference/Preference;
+    iput-object v3, p0, Lcom/android/settings_ext/wifi/p2p/WifiP2pSettings;->mThisDevicePref:Landroid/preference/Preference;
 
     .line 294
-    iget-object v3, p0, Lcom/android/settings/wifi/p2p/WifiP2pSettings;->mThisDevicePref:Landroid/preference/Preference;
+    iget-object v3, p0, Lcom/android/settings_ext/wifi/p2p/WifiP2pSettings;->mThisDevicePref:Landroid/preference/Preference;
 
     invoke-virtual {v3, v5}, Landroid/preference/Preference;->setPersistent(Z)V
 
     .line 295
-    iget-object v3, p0, Lcom/android/settings/wifi/p2p/WifiP2pSettings;->mThisDevicePref:Landroid/preference/Preference;
+    iget-object v3, p0, Lcom/android/settings_ext/wifi/p2p/WifiP2pSettings;->mThisDevicePref:Landroid/preference/Preference;
 
     invoke-virtual {v3, v5}, Landroid/preference/Preference;->setSelectable(Z)V
 
     .line 296
-    iget-object v3, p0, Lcom/android/settings/wifi/p2p/WifiP2pSettings;->mThisDevicePref:Landroid/preference/Preference;
+    iget-object v3, p0, Lcom/android/settings_ext/wifi/p2p/WifiP2pSettings;->mThisDevicePref:Landroid/preference/Preference;
 
     invoke-virtual {v2, v3}, Landroid/preference/PreferenceScreen;->addPreference(Landroid/preference/Preference;)Z
 
     .line 298
     new-instance v3, Landroid/preference/PreferenceCategory;
 
-    invoke-virtual {p0}, Lcom/android/settings/wifi/p2p/WifiP2pSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/wifi/p2p/WifiP2pSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v4
 
     invoke-direct {v3, v4}, Landroid/preference/PreferenceCategory;-><init>(Landroid/content/Context;)V
 
-    iput-object v3, p0, Lcom/android/settings/wifi/p2p/WifiP2pSettings;->mPeersGroup:Landroid/preference/PreferenceGroup;
+    iput-object v3, p0, Lcom/android/settings_ext/wifi/p2p/WifiP2pSettings;->mPeersGroup:Landroid/preference/PreferenceGroup;
 
     .line 299
-    iget-object v3, p0, Lcom/android/settings/wifi/p2p/WifiP2pSettings;->mPeersGroup:Landroid/preference/PreferenceGroup;
+    iget-object v3, p0, Lcom/android/settings_ext/wifi/p2p/WifiP2pSettings;->mPeersGroup:Landroid/preference/PreferenceGroup;
 
     const v4, 0x7f0902bf
 
     invoke-virtual {v3, v4}, Landroid/preference/PreferenceGroup;->setTitle(I)V
 
     .line 300
-    iget-object v3, p0, Lcom/android/settings/wifi/p2p/WifiP2pSettings;->mPeersGroup:Landroid/preference/PreferenceGroup;
+    iget-object v3, p0, Lcom/android/settings_ext/wifi/p2p/WifiP2pSettings;->mPeersGroup:Landroid/preference/PreferenceGroup;
 
     invoke-virtual {v2, v3}, Landroid/preference/PreferenceScreen;->addPreference(Landroid/preference/Preference;)Z
 
     .line 302
     new-instance v3, Landroid/preference/PreferenceCategory;
 
-    invoke-virtual {p0}, Lcom/android/settings/wifi/p2p/WifiP2pSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/wifi/p2p/WifiP2pSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v4
 
     invoke-direct {v3, v4}, Landroid/preference/PreferenceCategory;-><init>(Landroid/content/Context;)V
 
-    iput-object v3, p0, Lcom/android/settings/wifi/p2p/WifiP2pSettings;->mPersistentGroup:Landroid/preference/PreferenceGroup;
+    iput-object v3, p0, Lcom/android/settings_ext/wifi/p2p/WifiP2pSettings;->mPersistentGroup:Landroid/preference/PreferenceGroup;
 
     .line 303
-    iget-object v3, p0, Lcom/android/settings/wifi/p2p/WifiP2pSettings;->mPersistentGroup:Landroid/preference/PreferenceGroup;
+    iget-object v3, p0, Lcom/android/settings_ext/wifi/p2p/WifiP2pSettings;->mPersistentGroup:Landroid/preference/PreferenceGroup;
 
     const v4, 0x7f0902c0
 
     invoke-virtual {v3, v4}, Landroid/preference/PreferenceGroup;->setTitle(I)V
 
     .line 304
-    iget-object v3, p0, Lcom/android/settings/wifi/p2p/WifiP2pSettings;->mPersistentGroup:Landroid/preference/PreferenceGroup;
+    iget-object v3, p0, Lcom/android/settings_ext/wifi/p2p/WifiP2pSettings;->mPersistentGroup:Landroid/preference/PreferenceGroup;
 
     invoke-virtual {v2, v3}, Landroid/preference/PreferenceScreen;->addPreference(Landroid/preference/Preference;)Z
 
     .line 306
-    invoke-super {p0, p1}, Lcom/android/settings/SettingsPreferenceFragment;->onActivityCreated(Landroid/os/Bundle;)V
+    invoke-super {p0, p1}, Lcom/android/settings_ext/SettingsPreferenceFragment;->onActivityCreated(Landroid/os/Bundle;)V
 
     .line 307
     return-void
@@ -965,9 +965,9 @@
     if-ne p1, v8, :cond_3
 
     .line 421
-    iget-object v4, p0, Lcom/android/settings/wifi/p2p/WifiP2pSettings;->mSelectedWifiPeer:Lcom/android/settings/wifi/p2p/WifiP2pPeer;
+    iget-object v4, p0, Lcom/android/settings_ext/wifi/p2p/WifiP2pSettings;->mSelectedWifiPeer:Lcom/android/settings_ext/wifi/p2p/WifiP2pPeer;
 
-    iget-object v4, v4, Lcom/android/settings/wifi/p2p/WifiP2pPeer;->device:Landroid/net/wifi/p2p/WifiP2pDevice;
+    iget-object v4, v4, Lcom/android/settings_ext/wifi/p2p/WifiP2pPeer;->device:Landroid/net/wifi/p2p/WifiP2pDevice;
 
     iget-object v4, v4, Landroid/net/wifi/p2p/WifiP2pDevice;->deviceName:Ljava/lang/String;
 
@@ -977,21 +977,21 @@
 
     if-eqz v4, :cond_1
 
-    iget-object v4, p0, Lcom/android/settings/wifi/p2p/WifiP2pSettings;->mSelectedWifiPeer:Lcom/android/settings/wifi/p2p/WifiP2pPeer;
+    iget-object v4, p0, Lcom/android/settings_ext/wifi/p2p/WifiP2pSettings;->mSelectedWifiPeer:Lcom/android/settings_ext/wifi/p2p/WifiP2pPeer;
 
-    iget-object v4, v4, Lcom/android/settings/wifi/p2p/WifiP2pPeer;->device:Landroid/net/wifi/p2p/WifiP2pDevice;
+    iget-object v4, v4, Lcom/android/settings_ext/wifi/p2p/WifiP2pPeer;->device:Landroid/net/wifi/p2p/WifiP2pDevice;
 
     iget-object v0, v4, Landroid/net/wifi/p2p/WifiP2pDevice;->deviceAddress:Ljava/lang/String;
 
     .line 425
     .local v0, "deviceName":Ljava/lang/String;
     :goto_0
-    iget v4, p0, Lcom/android/settings/wifi/p2p/WifiP2pSettings;->mConnectedDevices:I
+    iget v4, p0, Lcom/android/settings_ext/wifi/p2p/WifiP2pSettings;->mConnectedDevices:I
 
     if-le v4, v8, :cond_2
 
     .line 426
-    invoke-virtual {p0}, Lcom/android/settings/wifi/p2p/WifiP2pSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/wifi/p2p/WifiP2pSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v4
 
@@ -1003,7 +1003,7 @@
 
     aput-object v0, v6, v9
 
-    iget v7, p0, Lcom/android/settings/wifi/p2p/WifiP2pSettings;->mConnectedDevices:I
+    iget v7, p0, Lcom/android/settings_ext/wifi/p2p/WifiP2pSettings;->mConnectedDevices:I
 
     add-int/lit8 v7, v7, -0x1
 
@@ -1022,7 +1022,7 @@
     :goto_1
     new-instance v4, Landroid/app/AlertDialog$Builder;
 
-    invoke-virtual {p0}, Lcom/android/settings/wifi/p2p/WifiP2pSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/wifi/p2p/WifiP2pSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v5
 
@@ -1038,7 +1038,7 @@
 
     move-result-object v4
 
-    invoke-virtual {p0}, Lcom/android/settings/wifi/p2p/WifiP2pSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/wifi/p2p/WifiP2pSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v5
 
@@ -1046,13 +1046,13 @@
 
     move-result-object v5
 
-    iget-object v6, p0, Lcom/android/settings/wifi/p2p/WifiP2pSettings;->mDisconnectListener:Landroid/content/DialogInterface$OnClickListener;
+    iget-object v6, p0, Lcom/android/settings_ext/wifi/p2p/WifiP2pSettings;->mDisconnectListener:Landroid/content/DialogInterface$OnClickListener;
 
     invoke-virtual {v4, v5, v6}, Landroid/app/AlertDialog$Builder;->setPositiveButton(Ljava/lang/CharSequence;Landroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
     move-result-object v4
 
-    invoke-virtual {p0}, Lcom/android/settings/wifi/p2p/WifiP2pSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/wifi/p2p/WifiP2pSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v5
 
@@ -1077,9 +1077,9 @@
 
     .line 421
     :cond_1
-    iget-object v4, p0, Lcom/android/settings/wifi/p2p/WifiP2pSettings;->mSelectedWifiPeer:Lcom/android/settings/wifi/p2p/WifiP2pPeer;
+    iget-object v4, p0, Lcom/android/settings_ext/wifi/p2p/WifiP2pSettings;->mSelectedWifiPeer:Lcom/android/settings_ext/wifi/p2p/WifiP2pPeer;
 
-    iget-object v4, v4, Lcom/android/settings/wifi/p2p/WifiP2pPeer;->device:Landroid/net/wifi/p2p/WifiP2pDevice;
+    iget-object v4, v4, Lcom/android/settings_ext/wifi/p2p/WifiP2pPeer;->device:Landroid/net/wifi/p2p/WifiP2pDevice;
 
     iget-object v0, v4, Landroid/net/wifi/p2p/WifiP2pDevice;->deviceName:Ljava/lang/String;
 
@@ -1088,7 +1088,7 @@
     .line 429
     .restart local v0    # "deviceName":Ljava/lang/String;
     :cond_2
-    invoke-virtual {p0}, Lcom/android/settings/wifi/p2p/WifiP2pSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/wifi/p2p/WifiP2pSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v4
 
@@ -1118,9 +1118,9 @@
 
     .line 440
     .local v3, "stringId":I
-    iget-object v4, p0, Lcom/android/settings/wifi/p2p/WifiP2pSettings;->mSelectedWifiPeer:Lcom/android/settings/wifi/p2p/WifiP2pPeer;
+    iget-object v4, p0, Lcom/android/settings_ext/wifi/p2p/WifiP2pSettings;->mSelectedWifiPeer:Lcom/android/settings_ext/wifi/p2p/WifiP2pPeer;
 
-    iget-object v4, v4, Lcom/android/settings/wifi/p2p/WifiP2pPeer;->device:Landroid/net/wifi/p2p/WifiP2pDevice;
+    iget-object v4, v4, Lcom/android/settings_ext/wifi/p2p/WifiP2pPeer;->device:Landroid/net/wifi/p2p/WifiP2pDevice;
 
     iget-object v4, v4, Landroid/net/wifi/p2p/WifiP2pDevice;->deviceName:Ljava/lang/String;
 
@@ -1130,9 +1130,9 @@
 
     if-eqz v4, :cond_4
 
-    iget-object v4, p0, Lcom/android/settings/wifi/p2p/WifiP2pSettings;->mSelectedWifiPeer:Lcom/android/settings/wifi/p2p/WifiP2pPeer;
+    iget-object v4, p0, Lcom/android/settings_ext/wifi/p2p/WifiP2pSettings;->mSelectedWifiPeer:Lcom/android/settings_ext/wifi/p2p/WifiP2pPeer;
 
-    iget-object v4, v4, Lcom/android/settings/wifi/p2p/WifiP2pPeer;->device:Landroid/net/wifi/p2p/WifiP2pDevice;
+    iget-object v4, v4, Lcom/android/settings_ext/wifi/p2p/WifiP2pPeer;->device:Landroid/net/wifi/p2p/WifiP2pDevice;
 
     iget-object v0, v4, Landroid/net/wifi/p2p/WifiP2pDevice;->deviceAddress:Ljava/lang/String;
 
@@ -1141,7 +1141,7 @@
     :goto_3
     new-instance v4, Landroid/app/AlertDialog$Builder;
 
-    invoke-virtual {p0}, Lcom/android/settings/wifi/p2p/WifiP2pSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/wifi/p2p/WifiP2pSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v5
 
@@ -1153,7 +1153,7 @@
 
     move-result-object v4
 
-    invoke-virtual {p0}, Lcom/android/settings/wifi/p2p/WifiP2pSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/wifi/p2p/WifiP2pSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v5
 
@@ -1169,7 +1169,7 @@
 
     move-result-object v4
 
-    invoke-virtual {p0}, Lcom/android/settings/wifi/p2p/WifiP2pSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/wifi/p2p/WifiP2pSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v5
 
@@ -1177,13 +1177,13 @@
 
     move-result-object v5
 
-    iget-object v6, p0, Lcom/android/settings/wifi/p2p/WifiP2pSettings;->mCancelConnectListener:Landroid/content/DialogInterface$OnClickListener;
+    iget-object v6, p0, Lcom/android/settings_ext/wifi/p2p/WifiP2pSettings;->mCancelConnectListener:Landroid/content/DialogInterface$OnClickListener;
 
     invoke-virtual {v4, v5, v6}, Landroid/app/AlertDialog$Builder;->setPositiveButton(Ljava/lang/CharSequence;Landroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
     move-result-object v4
 
-    invoke-virtual {p0}, Lcom/android/settings/wifi/p2p/WifiP2pSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/wifi/p2p/WifiP2pSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v5
 
@@ -1207,9 +1207,9 @@
     .end local v0    # "deviceName":Ljava/lang/String;
     .end local v1    # "dialog":Landroid/app/AlertDialog;
     :cond_4
-    iget-object v4, p0, Lcom/android/settings/wifi/p2p/WifiP2pSettings;->mSelectedWifiPeer:Lcom/android/settings/wifi/p2p/WifiP2pPeer;
+    iget-object v4, p0, Lcom/android/settings_ext/wifi/p2p/WifiP2pSettings;->mSelectedWifiPeer:Lcom/android/settings_ext/wifi/p2p/WifiP2pPeer;
 
-    iget-object v4, v4, Lcom/android/settings/wifi/p2p/WifiP2pPeer;->device:Landroid/net/wifi/p2p/WifiP2pDevice;
+    iget-object v4, v4, Lcom/android/settings_ext/wifi/p2p/WifiP2pPeer;->device:Landroid/net/wifi/p2p/WifiP2pDevice;
 
     iget-object v0, v4, Landroid/net/wifi/p2p/WifiP2pDevice;->deviceName:Ljava/lang/String;
 
@@ -1225,16 +1225,16 @@
     .line 452
     new-instance v4, Landroid/widget/EditText;
 
-    invoke-virtual {p0}, Lcom/android/settings/wifi/p2p/WifiP2pSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/wifi/p2p/WifiP2pSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v5
 
     invoke-direct {v4, v5}, Landroid/widget/EditText;-><init>(Landroid/content/Context;)V
 
-    iput-object v4, p0, Lcom/android/settings/wifi/p2p/WifiP2pSettings;->mDeviceNameText:Landroid/widget/EditText;
+    iput-object v4, p0, Lcom/android/settings_ext/wifi/p2p/WifiP2pSettings;->mDeviceNameText:Landroid/widget/EditText;
 
     .line 453
-    iget-object v4, p0, Lcom/android/settings/wifi/p2p/WifiP2pSettings;->mDeviceNameText:Landroid/widget/EditText;
+    iget-object v4, p0, Lcom/android/settings_ext/wifi/p2p/WifiP2pSettings;->mDeviceNameText:Landroid/widget/EditText;
 
     new-array v5, v8, [Landroid/text/InputFilter;
 
@@ -1249,21 +1249,21 @@
     invoke-virtual {v4, v5}, Landroid/widget/EditText;->setFilters([Landroid/text/InputFilter;)V
 
     .line 454
-    iget-object v4, p0, Lcom/android/settings/wifi/p2p/WifiP2pSettings;->mSavedDeviceName:Ljava/lang/String;
+    iget-object v4, p0, Lcom/android/settings_ext/wifi/p2p/WifiP2pSettings;->mSavedDeviceName:Ljava/lang/String;
 
     if-eqz v4, :cond_7
 
     .line 455
-    iget-object v4, p0, Lcom/android/settings/wifi/p2p/WifiP2pSettings;->mDeviceNameText:Landroid/widget/EditText;
+    iget-object v4, p0, Lcom/android/settings_ext/wifi/p2p/WifiP2pSettings;->mDeviceNameText:Landroid/widget/EditText;
 
-    iget-object v5, p0, Lcom/android/settings/wifi/p2p/WifiP2pSettings;->mSavedDeviceName:Ljava/lang/String;
+    iget-object v5, p0, Lcom/android/settings_ext/wifi/p2p/WifiP2pSettings;->mSavedDeviceName:Ljava/lang/String;
 
     invoke-virtual {v4, v5}, Landroid/widget/EditText;->setText(Ljava/lang/CharSequence;)V
 
     .line 456
-    iget-object v4, p0, Lcom/android/settings/wifi/p2p/WifiP2pSettings;->mDeviceNameText:Landroid/widget/EditText;
+    iget-object v4, p0, Lcom/android/settings_ext/wifi/p2p/WifiP2pSettings;->mDeviceNameText:Landroid/widget/EditText;
 
-    iget-object v5, p0, Lcom/android/settings/wifi/p2p/WifiP2pSettings;->mSavedDeviceName:Ljava/lang/String;
+    iget-object v5, p0, Lcom/android/settings_ext/wifi/p2p/WifiP2pSettings;->mSavedDeviceName:Ljava/lang/String;
 
     invoke-virtual {v5}, Ljava/lang/String;->length()I
 
@@ -1274,12 +1274,12 @@
     .line 461
     :cond_6
     :goto_4
-    iput-object v1, p0, Lcom/android/settings/wifi/p2p/WifiP2pSettings;->mSavedDeviceName:Ljava/lang/String;
+    iput-object v1, p0, Lcom/android/settings_ext/wifi/p2p/WifiP2pSettings;->mSavedDeviceName:Ljava/lang/String;
 
     .line 462
     new-instance v4, Landroid/app/AlertDialog$Builder;
 
-    invoke-virtual {p0}, Lcom/android/settings/wifi/p2p/WifiP2pSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/wifi/p2p/WifiP2pSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v5
 
@@ -1291,13 +1291,13 @@
 
     move-result-object v4
 
-    iget-object v5, p0, Lcom/android/settings/wifi/p2p/WifiP2pSettings;->mDeviceNameText:Landroid/widget/EditText;
+    iget-object v5, p0, Lcom/android/settings_ext/wifi/p2p/WifiP2pSettings;->mDeviceNameText:Landroid/widget/EditText;
 
     invoke-virtual {v4, v5}, Landroid/app/AlertDialog$Builder;->setView(Landroid/view/View;)Landroid/app/AlertDialog$Builder;
 
     move-result-object v4
 
-    invoke-virtual {p0}, Lcom/android/settings/wifi/p2p/WifiP2pSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/wifi/p2p/WifiP2pSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v5
 
@@ -1305,13 +1305,13 @@
 
     move-result-object v5
 
-    iget-object v6, p0, Lcom/android/settings/wifi/p2p/WifiP2pSettings;->mRenameListener:Landroid/content/DialogInterface$OnClickListener;
+    iget-object v6, p0, Lcom/android/settings_ext/wifi/p2p/WifiP2pSettings;->mRenameListener:Landroid/content/DialogInterface$OnClickListener;
 
     invoke-virtual {v4, v5, v6}, Landroid/app/AlertDialog$Builder;->setPositiveButton(Ljava/lang/CharSequence;Landroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
     move-result-object v4
 
-    invoke-virtual {p0}, Lcom/android/settings/wifi/p2p/WifiP2pSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/wifi/p2p/WifiP2pSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v5
 
@@ -1334,11 +1334,11 @@
     .line 457
     .end local v1    # "dialog":Landroid/app/AlertDialog;
     :cond_7
-    iget-object v4, p0, Lcom/android/settings/wifi/p2p/WifiP2pSettings;->mThisDevice:Landroid/net/wifi/p2p/WifiP2pDevice;
+    iget-object v4, p0, Lcom/android/settings_ext/wifi/p2p/WifiP2pSettings;->mThisDevice:Landroid/net/wifi/p2p/WifiP2pDevice;
 
     if-eqz v4, :cond_6
 
-    iget-object v4, p0, Lcom/android/settings/wifi/p2p/WifiP2pSettings;->mThisDevice:Landroid/net/wifi/p2p/WifiP2pDevice;
+    iget-object v4, p0, Lcom/android/settings_ext/wifi/p2p/WifiP2pSettings;->mThisDevice:Landroid/net/wifi/p2p/WifiP2pDevice;
 
     iget-object v4, v4, Landroid/net/wifi/p2p/WifiP2pDevice;->deviceName:Ljava/lang/String;
 
@@ -1349,18 +1349,18 @@
     if-nez v4, :cond_6
 
     .line 458
-    iget-object v4, p0, Lcom/android/settings/wifi/p2p/WifiP2pSettings;->mDeviceNameText:Landroid/widget/EditText;
+    iget-object v4, p0, Lcom/android/settings_ext/wifi/p2p/WifiP2pSettings;->mDeviceNameText:Landroid/widget/EditText;
 
-    iget-object v5, p0, Lcom/android/settings/wifi/p2p/WifiP2pSettings;->mThisDevice:Landroid/net/wifi/p2p/WifiP2pDevice;
+    iget-object v5, p0, Lcom/android/settings_ext/wifi/p2p/WifiP2pSettings;->mThisDevice:Landroid/net/wifi/p2p/WifiP2pDevice;
 
     iget-object v5, v5, Landroid/net/wifi/p2p/WifiP2pDevice;->deviceName:Ljava/lang/String;
 
     invoke-virtual {v4, v5}, Landroid/widget/EditText;->setText(Ljava/lang/CharSequence;)V
 
     .line 459
-    iget-object v4, p0, Lcom/android/settings/wifi/p2p/WifiP2pSettings;->mDeviceNameText:Landroid/widget/EditText;
+    iget-object v4, p0, Lcom/android/settings_ext/wifi/p2p/WifiP2pSettings;->mDeviceNameText:Landroid/widget/EditText;
 
-    iget-object v5, p0, Lcom/android/settings/wifi/p2p/WifiP2pSettings;->mThisDevice:Landroid/net/wifi/p2p/WifiP2pDevice;
+    iget-object v5, p0, Lcom/android/settings_ext/wifi/p2p/WifiP2pSettings;->mThisDevice:Landroid/net/wifi/p2p/WifiP2pDevice;
 
     iget-object v5, v5, Landroid/net/wifi/p2p/WifiP2pDevice;->deviceName:Ljava/lang/String;
 
@@ -1385,13 +1385,13 @@
     .restart local v3    # "stringId":I
     new-instance v4, Landroid/app/AlertDialog$Builder;
 
-    invoke-virtual {p0}, Lcom/android/settings/wifi/p2p/WifiP2pSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/wifi/p2p/WifiP2pSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v5
 
     invoke-direct {v4, v5}, Landroid/app/AlertDialog$Builder;-><init>(Landroid/content/Context;)V
 
-    invoke-virtual {p0}, Lcom/android/settings/wifi/p2p/WifiP2pSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/wifi/p2p/WifiP2pSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v5
 
@@ -1403,7 +1403,7 @@
 
     move-result-object v4
 
-    invoke-virtual {p0}, Lcom/android/settings/wifi/p2p/WifiP2pSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/wifi/p2p/WifiP2pSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v5
 
@@ -1411,13 +1411,13 @@
 
     move-result-object v5
 
-    iget-object v6, p0, Lcom/android/settings/wifi/p2p/WifiP2pSettings;->mDeleteGroupListener:Landroid/content/DialogInterface$OnClickListener;
+    iget-object v6, p0, Lcom/android/settings_ext/wifi/p2p/WifiP2pSettings;->mDeleteGroupListener:Landroid/content/DialogInterface$OnClickListener;
 
     invoke-virtual {v4, v5, v6}, Landroid/app/AlertDialog$Builder;->setPositiveButton(Ljava/lang/CharSequence;Landroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
     move-result-object v4
 
-    invoke-virtual {p0}, Lcom/android/settings/wifi/p2p/WifiP2pSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/wifi/p2p/WifiP2pSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v5
 
@@ -1425,7 +1425,7 @@
 
     move-result-object v5
 
-    iget-object v6, p0, Lcom/android/settings/wifi/p2p/WifiP2pSettings;->mDeleteGroupListener:Landroid/content/DialogInterface$OnClickListener;
+    iget-object v6, p0, Lcom/android/settings_ext/wifi/p2p/WifiP2pSettings;->mDeleteGroupListener:Landroid/content/DialogInterface$OnClickListener;
 
     invoke-virtual {v4, v5, v6}, Landroid/app/AlertDialog$Builder;->setNegativeButton(Ljava/lang/CharSequence;Landroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
@@ -1451,7 +1451,7 @@
     const/4 v3, 0x0
 
     .line 329
-    iget-boolean v1, p0, Lcom/android/settings/wifi/p2p/WifiP2pSettings;->mWifiP2pSearching:Z
+    iget-boolean v1, p0, Lcom/android/settings_ext/wifi/p2p/WifiP2pSettings;->mWifiP2pSearching:Z
 
     if-eqz v1, :cond_0
 
@@ -1464,7 +1464,7 @@
 
     move-result-object v1
 
-    iget-boolean v2, p0, Lcom/android/settings/wifi/p2p/WifiP2pSettings;->mWifiP2pEnabled:Z
+    iget-boolean v2, p0, Lcom/android/settings_ext/wifi/p2p/WifiP2pSettings;->mWifiP2pEnabled:Z
 
     invoke-interface {v1, v2}, Landroid/view/MenuItem;->setEnabled(Z)Landroid/view/MenuItem;
 
@@ -1481,7 +1481,7 @@
 
     move-result-object v1
 
-    iget-boolean v2, p0, Lcom/android/settings/wifi/p2p/WifiP2pSettings;->mWifiP2pEnabled:Z
+    iget-boolean v2, p0, Lcom/android/settings_ext/wifi/p2p/WifiP2pSettings;->mWifiP2pEnabled:Z
 
     invoke-interface {v1, v2}, Landroid/view/MenuItem;->setEnabled(Z)Landroid/view/MenuItem;
 
@@ -1490,7 +1490,7 @@
     invoke-interface {v1, v4}, Landroid/view/MenuItem;->setShowAsAction(I)V
 
     .line 337
-    invoke-super {p0, p1, p2}, Lcom/android/settings/SettingsPreferenceFragment;->onCreateOptionsMenu(Landroid/view/Menu;Landroid/view/MenuInflater;)V
+    invoke-super {p0, p1, p2}, Lcom/android/settings_ext/SettingsPreferenceFragment;->onCreateOptionsMenu(Landroid/view/Menu;Landroid/view/MenuInflater;)V
 
     .line 338
     return-void
@@ -1518,7 +1518,7 @@
     packed-switch v1, :pswitch_data_0
 
     .line 369
-    invoke-super {p0, p1}, Lcom/android/settings/SettingsPreferenceFragment;->onOptionsItemSelected(Landroid/view/MenuItem;)Z
+    invoke-super {p0, p1}, Lcom/android/settings_ext/SettingsPreferenceFragment;->onOptionsItemSelected(Landroid/view/MenuItem;)Z
 
     move-result v0
 
@@ -1527,7 +1527,7 @@
 
     .line 363
     :pswitch_0
-    invoke-direct {p0}, Lcom/android/settings/wifi/p2p/WifiP2pSettings;->startSearch()V
+    invoke-direct {p0}, Lcom/android/settings_ext/wifi/p2p/WifiP2pSettings;->startSearch()V
 
     goto :goto_0
 
@@ -1535,7 +1535,7 @@
     :pswitch_1
     const/4 v1, 0x3
 
-    invoke-virtual {p0, v1}, Lcom/android/settings/wifi/p2p/WifiP2pSettings;->showDialog(I)V
+    invoke-virtual {p0, v1}, Lcom/android/settings_ext/wifi/p2p/WifiP2pSettings;->showDialog(I)V
 
     goto :goto_0
 
@@ -1552,17 +1552,17 @@
 
     .prologue
     .line 320
-    invoke-super {p0}, Lcom/android/settings/SettingsPreferenceFragment;->onPause()V
+    invoke-super {p0}, Lcom/android/settings_ext/SettingsPreferenceFragment;->onPause()V
 
     .line 321
-    iget-object v0, p0, Lcom/android/settings/wifi/p2p/WifiP2pSettings;->mWifiP2pManager:Landroid/net/wifi/p2p/WifiP2pManager;
+    iget-object v0, p0, Lcom/android/settings_ext/wifi/p2p/WifiP2pSettings;->mWifiP2pManager:Landroid/net/wifi/p2p/WifiP2pManager;
 
     if-eqz v0, :cond_0
 
     .line 322
-    iget-object v0, p0, Lcom/android/settings/wifi/p2p/WifiP2pSettings;->mWifiP2pManager:Landroid/net/wifi/p2p/WifiP2pManager;
+    iget-object v0, p0, Lcom/android/settings_ext/wifi/p2p/WifiP2pSettings;->mWifiP2pManager:Landroid/net/wifi/p2p/WifiP2pManager;
 
-    iget-object v1, p0, Lcom/android/settings/wifi/p2p/WifiP2pSettings;->mChannel:Landroid/net/wifi/p2p/WifiP2pManager$Channel;
+    iget-object v1, p0, Lcom/android/settings_ext/wifi/p2p/WifiP2pSettings;->mChannel:Landroid/net/wifi/p2p/WifiP2pManager$Channel;
 
     const/4 v2, 0x0
 
@@ -1570,11 +1570,11 @@
 
     .line 324
     :cond_0
-    invoke-virtual {p0}, Lcom/android/settings/wifi/p2p/WifiP2pSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/wifi/p2p/WifiP2pSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/android/settings/wifi/p2p/WifiP2pSettings;->mReceiver:Landroid/content/BroadcastReceiver;
+    iget-object v1, p0, Lcom/android/settings_ext/wifi/p2p/WifiP2pSettings;->mReceiver:Landroid/content/BroadcastReceiver;
 
     invoke-virtual {v0, v1}, Landroid/app/Activity;->unregisterReceiver(Landroid/content/BroadcastReceiver;)V
 
@@ -1588,10 +1588,10 @@
 
     .prologue
     .line 567
-    iput-object p1, p0, Lcom/android/settings/wifi/p2p/WifiP2pSettings;->mPeers:Landroid/net/wifi/p2p/WifiP2pDeviceList;
+    iput-object p1, p0, Lcom/android/settings_ext/wifi/p2p/WifiP2pSettings;->mPeers:Landroid/net/wifi/p2p/WifiP2pDeviceList;
 
     .line 568
-    invoke-direct {p0}, Lcom/android/settings/wifi/p2p/WifiP2pSettings;->handlePeersChanged()V
+    invoke-direct {p0}, Lcom/android/settings_ext/wifi/p2p/WifiP2pSettings;->handlePeersChanged()V
 
     .line 569
     return-void
@@ -1607,7 +1607,7 @@
 
     .line 536
     .local v0, "cs":Ljava/lang/CharSequence;
-    iget-object v6, p0, Lcom/android/settings/wifi/p2p/WifiP2pSettings;->mPersistentGroup:Landroid/preference/PreferenceGroup;
+    iget-object v6, p0, Lcom/android/settings_ext/wifi/p2p/WifiP2pSettings;->mPersistentGroup:Landroid/preference/PreferenceGroup;
 
     invoke-virtual {v6}, Landroid/preference/PreferenceGroup;->removeAll()V
 
@@ -1650,7 +1650,7 @@
     if-eqz v6, :cond_1
 
     .line 541
-    invoke-direct {p0, v3}, Lcom/android/settings/wifi/p2p/WifiP2pSettings;->utfToString(Ljava/lang/String;)Ljava/lang/String;
+    invoke-direct {p0, v3}, Lcom/android/settings_ext/wifi/p2p/WifiP2pSettings;->utfToString(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v4
 
@@ -1664,26 +1664,26 @@
     .line 547
     .end local v4    # "string":Ljava/lang/String;
     :cond_1
-    new-instance v5, Lcom/android/settings/wifi/p2p/WifiP2pPersistentGroup;
+    new-instance v5, Lcom/android/settings_ext/wifi/p2p/WifiP2pPersistentGroup;
 
-    invoke-virtual {p0}, Lcom/android/settings/wifi/p2p/WifiP2pSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/wifi/p2p/WifiP2pSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v6
 
-    invoke-direct {v5, v6, v1}, Lcom/android/settings/wifi/p2p/WifiP2pPersistentGroup;-><init>(Landroid/content/Context;Landroid/net/wifi/p2p/WifiP2pGroup;)V
+    invoke-direct {v5, v6, v1}, Lcom/android/settings_ext/wifi/p2p/WifiP2pPersistentGroup;-><init>(Landroid/content/Context;Landroid/net/wifi/p2p/WifiP2pGroup;)V
 
     .line 548
-    .local v5, "wppg":Lcom/android/settings/wifi/p2p/WifiP2pPersistentGroup;
-    iget-object v6, p0, Lcom/android/settings/wifi/p2p/WifiP2pSettings;->mPersistentGroup:Landroid/preference/PreferenceGroup;
+    .local v5, "wppg":Lcom/android/settings_ext/wifi/p2p/WifiP2pPersistentGroup;
+    iget-object v6, p0, Lcom/android/settings_ext/wifi/p2p/WifiP2pSettings;->mPersistentGroup:Landroid/preference/PreferenceGroup;
 
     invoke-virtual {v6, v5}, Landroid/preference/PreferenceGroup;->addPreference(Landroid/preference/Preference;)Z
 
     .line 549
-    invoke-virtual {v5}, Lcom/android/settings/wifi/p2p/WifiP2pPersistentGroup;->getGroupName()Ljava/lang/String;
+    invoke-virtual {v5}, Lcom/android/settings_ext/wifi/p2p/WifiP2pPersistentGroup;->getGroupName()Ljava/lang/String;
 
     move-result-object v6
 
-    iget-object v7, p0, Lcom/android/settings/wifi/p2p/WifiP2pSettings;->mSelectedGroupName:Ljava/lang/String;
+    iget-object v7, p0, Lcom/android/settings_ext/wifi/p2p/WifiP2pSettings;->mSelectedGroupName:Ljava/lang/String;
 
     invoke-virtual {v6, v7}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
@@ -1692,21 +1692,21 @@
     if-eqz v6, :cond_0
 
     .line 551
-    iput-object v5, p0, Lcom/android/settings/wifi/p2p/WifiP2pSettings;->mSelectedGroup:Lcom/android/settings/wifi/p2p/WifiP2pPersistentGroup;
+    iput-object v5, p0, Lcom/android/settings_ext/wifi/p2p/WifiP2pSettings;->mSelectedGroup:Lcom/android/settings_ext/wifi/p2p/WifiP2pPersistentGroup;
 
     .line 552
     const/4 v6, 0x0
 
-    iput-object v6, p0, Lcom/android/settings/wifi/p2p/WifiP2pSettings;->mSelectedGroupName:Ljava/lang/String;
+    iput-object v6, p0, Lcom/android/settings_ext/wifi/p2p/WifiP2pSettings;->mSelectedGroupName:Ljava/lang/String;
 
     goto :goto_0
 
     .line 555
     .end local v1    # "group":Landroid/net/wifi/p2p/WifiP2pGroup;
     .end local v3    # "networkName":Ljava/lang/String;
-    .end local v5    # "wppg":Lcom/android/settings/wifi/p2p/WifiP2pPersistentGroup;
+    .end local v5    # "wppg":Lcom/android/settings_ext/wifi/p2p/WifiP2pPersistentGroup;
     :cond_2
-    iget-object v6, p0, Lcom/android/settings/wifi/p2p/WifiP2pSettings;->mSelectedGroupName:Ljava/lang/String;
+    iget-object v6, p0, Lcom/android/settings_ext/wifi/p2p/WifiP2pSettings;->mSelectedGroupName:Ljava/lang/String;
 
     if-eqz v6, :cond_3
 
@@ -1723,7 +1723,7 @@
 
     move-result-object v7
 
-    iget-object v8, p0, Lcom/android/settings/wifi/p2p/WifiP2pSettings;->mSelectedGroupName:Ljava/lang/String;
+    iget-object v8, p0, Lcom/android/settings_ext/wifi/p2p/WifiP2pSettings;->mSelectedGroupName:Ljava/lang/String;
 
     invoke-virtual {v7, v8}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -1759,33 +1759,33 @@
     const/4 v3, 0x1
 
     .line 374
-    instance-of v2, p2, Lcom/android/settings/wifi/p2p/WifiP2pPeer;
+    instance-of v2, p2, Lcom/android/settings_ext/wifi/p2p/WifiP2pPeer;
 
     if-eqz v2, :cond_6
 
     move-object v2, p2
 
     .line 375
-    check-cast v2, Lcom/android/settings/wifi/p2p/WifiP2pPeer;
+    check-cast v2, Lcom/android/settings_ext/wifi/p2p/WifiP2pPeer;
 
-    iput-object v2, p0, Lcom/android/settings/wifi/p2p/WifiP2pSettings;->mSelectedWifiPeer:Lcom/android/settings/wifi/p2p/WifiP2pPeer;
+    iput-object v2, p0, Lcom/android/settings_ext/wifi/p2p/WifiP2pSettings;->mSelectedWifiPeer:Lcom/android/settings_ext/wifi/p2p/WifiP2pPeer;
 
     .line 376
-    iget-object v2, p0, Lcom/android/settings/wifi/p2p/WifiP2pSettings;->mSelectedWifiPeer:Lcom/android/settings/wifi/p2p/WifiP2pPeer;
+    iget-object v2, p0, Lcom/android/settings_ext/wifi/p2p/WifiP2pSettings;->mSelectedWifiPeer:Lcom/android/settings_ext/wifi/p2p/WifiP2pPeer;
 
-    iget-object v2, v2, Lcom/android/settings/wifi/p2p/WifiP2pPeer;->device:Landroid/net/wifi/p2p/WifiP2pDevice;
+    iget-object v2, v2, Lcom/android/settings_ext/wifi/p2p/WifiP2pPeer;->device:Landroid/net/wifi/p2p/WifiP2pDevice;
 
     iget v2, v2, Landroid/net/wifi/p2p/WifiP2pDevice;->status:I
 
     if-nez v2, :cond_1
 
     .line 377
-    invoke-virtual {p0, v3}, Lcom/android/settings/wifi/p2p/WifiP2pSettings;->showDialog(I)V
+    invoke-virtual {p0, v3}, Lcom/android/settings_ext/wifi/p2p/WifiP2pSettings;->showDialog(I)V
 
     .line 415
     :cond_0
     :goto_0
-    invoke-super {p0, p1, p2}, Lcom/android/settings/SettingsPreferenceFragment;->onPreferenceTreeClick(Landroid/preference/PreferenceScreen;Landroid/preference/Preference;)Z
+    invoke-super {p0, p1, p2}, Lcom/android/settings_ext/SettingsPreferenceFragment;->onPreferenceTreeClick(Landroid/preference/PreferenceScreen;Landroid/preference/Preference;)Z
 
     move-result v2
 
@@ -1793,16 +1793,16 @@
 
     .line 378
     :cond_1
-    iget-object v2, p0, Lcom/android/settings/wifi/p2p/WifiP2pSettings;->mSelectedWifiPeer:Lcom/android/settings/wifi/p2p/WifiP2pPeer;
+    iget-object v2, p0, Lcom/android/settings_ext/wifi/p2p/WifiP2pSettings;->mSelectedWifiPeer:Lcom/android/settings_ext/wifi/p2p/WifiP2pPeer;
 
-    iget-object v2, v2, Lcom/android/settings/wifi/p2p/WifiP2pPeer;->device:Landroid/net/wifi/p2p/WifiP2pDevice;
+    iget-object v2, v2, Lcom/android/settings_ext/wifi/p2p/WifiP2pPeer;->device:Landroid/net/wifi/p2p/WifiP2pDevice;
 
     iget v2, v2, Landroid/net/wifi/p2p/WifiP2pDevice;->status:I
 
     if-ne v2, v3, :cond_2
 
     .line 379
-    invoke-virtual {p0, v5}, Lcom/android/settings/wifi/p2p/WifiP2pSettings;->showDialog(I)V
+    invoke-virtual {p0, v5}, Lcom/android/settings_ext/wifi/p2p/WifiP2pSettings;->showDialog(I)V
 
     goto :goto_0
 
@@ -1814,9 +1814,9 @@
 
     .line 382
     .local v0, "config":Landroid/net/wifi/p2p/WifiP2pConfig;
-    iget-object v2, p0, Lcom/android/settings/wifi/p2p/WifiP2pSettings;->mSelectedWifiPeer:Lcom/android/settings/wifi/p2p/WifiP2pPeer;
+    iget-object v2, p0, Lcom/android/settings_ext/wifi/p2p/WifiP2pSettings;->mSelectedWifiPeer:Lcom/android/settings_ext/wifi/p2p/WifiP2pPeer;
 
-    iget-object v2, v2, Lcom/android/settings/wifi/p2p/WifiP2pPeer;->device:Landroid/net/wifi/p2p/WifiP2pDevice;
+    iget-object v2, v2, Lcom/android/settings_ext/wifi/p2p/WifiP2pPeer;->device:Landroid/net/wifi/p2p/WifiP2pDevice;
 
     iget-object v2, v2, Landroid/net/wifi/p2p/WifiP2pDevice;->deviceAddress:Ljava/lang/String;
 
@@ -1840,13 +1840,13 @@
 
     .line 398
     :goto_1
-    iget-object v2, p0, Lcom/android/settings/wifi/p2p/WifiP2pSettings;->mWifiP2pManager:Landroid/net/wifi/p2p/WifiP2pManager;
+    iget-object v2, p0, Lcom/android/settings_ext/wifi/p2p/WifiP2pSettings;->mWifiP2pManager:Landroid/net/wifi/p2p/WifiP2pManager;
 
-    iget-object v3, p0, Lcom/android/settings/wifi/p2p/WifiP2pSettings;->mChannel:Landroid/net/wifi/p2p/WifiP2pManager$Channel;
+    iget-object v3, p0, Lcom/android/settings_ext/wifi/p2p/WifiP2pSettings;->mChannel:Landroid/net/wifi/p2p/WifiP2pManager$Channel;
 
-    new-instance v4, Lcom/android/settings/wifi/p2p/WifiP2pSettings$6;
+    new-instance v4, Lcom/android/settings_ext/wifi/p2p/WifiP2pSettings$6;
 
-    invoke-direct {v4, p0}, Lcom/android/settings/wifi/p2p/WifiP2pSettings$6;-><init>(Lcom/android/settings/wifi/p2p/WifiP2pSettings;)V
+    invoke-direct {v4, p0}, Lcom/android/settings_ext/wifi/p2p/WifiP2pSettings$6;-><init>(Lcom/android/settings_ext/wifi/p2p/WifiP2pSettings;)V
 
     invoke-virtual {v2, v3, v0, v4}, Landroid/net/wifi/p2p/WifiP2pManager;->connect(Landroid/net/wifi/p2p/WifiP2pManager$Channel;Landroid/net/wifi/p2p/WifiP2pConfig;Landroid/net/wifi/p2p/WifiP2pManager$ActionListener;)V
 
@@ -1854,9 +1854,9 @@
 
     .line 389
     :cond_3
-    iget-object v2, p0, Lcom/android/settings/wifi/p2p/WifiP2pSettings;->mSelectedWifiPeer:Lcom/android/settings/wifi/p2p/WifiP2pPeer;
+    iget-object v2, p0, Lcom/android/settings_ext/wifi/p2p/WifiP2pSettings;->mSelectedWifiPeer:Lcom/android/settings_ext/wifi/p2p/WifiP2pPeer;
 
-    iget-object v2, v2, Lcom/android/settings/wifi/p2p/WifiP2pPeer;->device:Landroid/net/wifi/p2p/WifiP2pDevice;
+    iget-object v2, v2, Lcom/android/settings_ext/wifi/p2p/WifiP2pPeer;->device:Landroid/net/wifi/p2p/WifiP2pDevice;
 
     invoke-virtual {v2}, Landroid/net/wifi/p2p/WifiP2pDevice;->wpsPbcSupported()Z
 
@@ -1875,9 +1875,9 @@
 
     .line 391
     :cond_4
-    iget-object v2, p0, Lcom/android/settings/wifi/p2p/WifiP2pSettings;->mSelectedWifiPeer:Lcom/android/settings/wifi/p2p/WifiP2pPeer;
+    iget-object v2, p0, Lcom/android/settings_ext/wifi/p2p/WifiP2pSettings;->mSelectedWifiPeer:Lcom/android/settings_ext/wifi/p2p/WifiP2pPeer;
 
-    iget-object v2, v2, Lcom/android/settings/wifi/p2p/WifiP2pPeer;->device:Landroid/net/wifi/p2p/WifiP2pDevice;
+    iget-object v2, v2, Lcom/android/settings_ext/wifi/p2p/WifiP2pPeer;->device:Landroid/net/wifi/p2p/WifiP2pDevice;
 
     invoke-virtual {v2}, Landroid/net/wifi/p2p/WifiP2pDevice;->wpsKeypadSupported()Z
 
@@ -1904,21 +1904,21 @@
     .end local v0    # "config":Landroid/net/wifi/p2p/WifiP2pConfig;
     .end local v1    # "forceWps":I
     :cond_6
-    instance-of v2, p2, Lcom/android/settings/wifi/p2p/WifiP2pPersistentGroup;
+    instance-of v2, p2, Lcom/android/settings_ext/wifi/p2p/WifiP2pPersistentGroup;
 
     if-eqz v2, :cond_0
 
     move-object v2, p2
 
     .line 412
-    check-cast v2, Lcom/android/settings/wifi/p2p/WifiP2pPersistentGroup;
+    check-cast v2, Lcom/android/settings_ext/wifi/p2p/WifiP2pPersistentGroup;
 
-    iput-object v2, p0, Lcom/android/settings/wifi/p2p/WifiP2pSettings;->mSelectedGroup:Lcom/android/settings/wifi/p2p/WifiP2pPersistentGroup;
+    iput-object v2, p0, Lcom/android/settings_ext/wifi/p2p/WifiP2pSettings;->mSelectedGroup:Lcom/android/settings_ext/wifi/p2p/WifiP2pPersistentGroup;
 
     .line 413
     const/4 v2, 0x4
 
-    invoke-virtual {p0, v2}, Lcom/android/settings/wifi/p2p/WifiP2pSettings;->showDialog(I)V
+    invoke-virtual {p0, v2}, Lcom/android/settings_ext/wifi/p2p/WifiP2pSettings;->showDialog(I)V
 
     goto :goto_0
 .end method
@@ -1947,7 +1947,7 @@
 
     .line 344
     .local v0, "renameMenu":Landroid/view/MenuItem;
-    iget-boolean v2, p0, Lcom/android/settings/wifi/p2p/WifiP2pSettings;->mWifiP2pEnabled:Z
+    iget-boolean v2, p0, Lcom/android/settings_ext/wifi/p2p/WifiP2pSettings;->mWifiP2pEnabled:Z
 
     if-eqz v2, :cond_0
 
@@ -1959,7 +1959,7 @@
 
     .line 352
     :goto_0
-    iget-boolean v2, p0, Lcom/android/settings/wifi/p2p/WifiP2pSettings;->mWifiP2pSearching:Z
+    iget-boolean v2, p0, Lcom/android/settings_ext/wifi/p2p/WifiP2pSettings;->mWifiP2pSearching:Z
 
     if-eqz v2, :cond_1
 
@@ -1995,28 +1995,28 @@
 
     .prologue
     .line 311
-    invoke-super {p0}, Lcom/android/settings/SettingsPreferenceFragment;->onResume()V
+    invoke-super {p0}, Lcom/android/settings_ext/SettingsPreferenceFragment;->onResume()V
 
     .line 312
-    invoke-virtual {p0}, Lcom/android/settings/wifi/p2p/WifiP2pSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/wifi/p2p/WifiP2pSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/android/settings/wifi/p2p/WifiP2pSettings;->mReceiver:Landroid/content/BroadcastReceiver;
+    iget-object v1, p0, Lcom/android/settings_ext/wifi/p2p/WifiP2pSettings;->mReceiver:Landroid/content/BroadcastReceiver;
 
-    iget-object v2, p0, Lcom/android/settings/wifi/p2p/WifiP2pSettings;->mIntentFilter:Landroid/content/IntentFilter;
+    iget-object v2, p0, Lcom/android/settings_ext/wifi/p2p/WifiP2pSettings;->mIntentFilter:Landroid/content/IntentFilter;
 
     invoke-virtual {v0, v1, v2}, Landroid/app/Activity;->registerReceiver(Landroid/content/BroadcastReceiver;Landroid/content/IntentFilter;)Landroid/content/Intent;
 
     .line 313
-    iget-object v0, p0, Lcom/android/settings/wifi/p2p/WifiP2pSettings;->mWifiP2pManager:Landroid/net/wifi/p2p/WifiP2pManager;
+    iget-object v0, p0, Lcom/android/settings_ext/wifi/p2p/WifiP2pSettings;->mWifiP2pManager:Landroid/net/wifi/p2p/WifiP2pManager;
 
     if-eqz v0, :cond_0
 
     .line 314
-    iget-object v0, p0, Lcom/android/settings/wifi/p2p/WifiP2pSettings;->mWifiP2pManager:Landroid/net/wifi/p2p/WifiP2pManager;
+    iget-object v0, p0, Lcom/android/settings_ext/wifi/p2p/WifiP2pSettings;->mWifiP2pManager:Landroid/net/wifi/p2p/WifiP2pManager;
 
-    iget-object v1, p0, Lcom/android/settings/wifi/p2p/WifiP2pSettings;->mChannel:Landroid/net/wifi/p2p/WifiP2pManager$Channel;
+    iget-object v1, p0, Lcom/android/settings_ext/wifi/p2p/WifiP2pSettings;->mChannel:Landroid/net/wifi/p2p/WifiP2pManager$Channel;
 
     invoke-virtual {v0, v1, p0}, Landroid/net/wifi/p2p/WifiP2pManager;->requestPeers(Landroid/net/wifi/p2p/WifiP2pManager$Channel;Landroid/net/wifi/p2p/WifiP2pManager$PeerListListener;)V
 
@@ -2031,29 +2031,29 @@
 
     .prologue
     .line 484
-    iget-object v0, p0, Lcom/android/settings/wifi/p2p/WifiP2pSettings;->mSelectedWifiPeer:Lcom/android/settings/wifi/p2p/WifiP2pPeer;
+    iget-object v0, p0, Lcom/android/settings_ext/wifi/p2p/WifiP2pSettings;->mSelectedWifiPeer:Lcom/android/settings_ext/wifi/p2p/WifiP2pPeer;
 
     if-eqz v0, :cond_0
 
     .line 485
     const-string v0, "PEER_STATE"
 
-    iget-object v1, p0, Lcom/android/settings/wifi/p2p/WifiP2pSettings;->mSelectedWifiPeer:Lcom/android/settings/wifi/p2p/WifiP2pPeer;
+    iget-object v1, p0, Lcom/android/settings_ext/wifi/p2p/WifiP2pSettings;->mSelectedWifiPeer:Lcom/android/settings_ext/wifi/p2p/WifiP2pPeer;
 
-    iget-object v1, v1, Lcom/android/settings/wifi/p2p/WifiP2pPeer;->device:Landroid/net/wifi/p2p/WifiP2pDevice;
+    iget-object v1, v1, Lcom/android/settings_ext/wifi/p2p/WifiP2pPeer;->device:Landroid/net/wifi/p2p/WifiP2pDevice;
 
     invoke-virtual {p1, v0, v1}, Landroid/os/Bundle;->putParcelable(Ljava/lang/String;Landroid/os/Parcelable;)V
 
     .line 487
     :cond_0
-    iget-object v0, p0, Lcom/android/settings/wifi/p2p/WifiP2pSettings;->mDeviceNameText:Landroid/widget/EditText;
+    iget-object v0, p0, Lcom/android/settings_ext/wifi/p2p/WifiP2pSettings;->mDeviceNameText:Landroid/widget/EditText;
 
     if-eqz v0, :cond_1
 
     .line 488
     const-string v0, "DEV_NAME"
 
-    iget-object v1, p0, Lcom/android/settings/wifi/p2p/WifiP2pSettings;->mDeviceNameText:Landroid/widget/EditText;
+    iget-object v1, p0, Lcom/android/settings_ext/wifi/p2p/WifiP2pSettings;->mDeviceNameText:Landroid/widget/EditText;
 
     invoke-virtual {v1}, Landroid/widget/EditText;->getText()Landroid/text/Editable;
 
@@ -2067,16 +2067,16 @@
 
     .line 490
     :cond_1
-    iget-object v0, p0, Lcom/android/settings/wifi/p2p/WifiP2pSettings;->mSelectedGroup:Lcom/android/settings/wifi/p2p/WifiP2pPersistentGroup;
+    iget-object v0, p0, Lcom/android/settings_ext/wifi/p2p/WifiP2pSettings;->mSelectedGroup:Lcom/android/settings_ext/wifi/p2p/WifiP2pPersistentGroup;
 
     if-eqz v0, :cond_2
 
     .line 491
     const-string v0, "GROUP_NAME"
 
-    iget-object v1, p0, Lcom/android/settings/wifi/p2p/WifiP2pSettings;->mSelectedGroup:Lcom/android/settings/wifi/p2p/WifiP2pPersistentGroup;
+    iget-object v1, p0, Lcom/android/settings_ext/wifi/p2p/WifiP2pSettings;->mSelectedGroup:Lcom/android/settings_ext/wifi/p2p/WifiP2pPersistentGroup;
 
-    invoke-virtual {v1}, Lcom/android/settings/wifi/p2p/WifiP2pPersistentGroup;->getGroupName()Ljava/lang/String;
+    invoke-virtual {v1}, Lcom/android/settings_ext/wifi/p2p/WifiP2pPersistentGroup;->getGroupName()Ljava/lang/String;
 
     move-result-object v1
 

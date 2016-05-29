@@ -1,11 +1,11 @@
-.class Lcom/android/settings/notification/ManagedServiceSettings$2;
+.class Lcom/android/settings_ext/notification/ManagedServiceSettings$2;
 .super Landroid/content/BroadcastReceiver;
 .source "ManagedServiceSettings.java"
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/android/settings/notification/ManagedServiceSettings;
+    value = Lcom/android/settings_ext/notification/ManagedServiceSettings;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -15,16 +15,16 @@
 
 
 # instance fields
-.field final synthetic this$0:Lcom/android/settings/notification/ManagedServiceSettings;
+.field final synthetic this$0:Lcom/android/settings_ext/notification/ManagedServiceSettings;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/notification/ManagedServiceSettings;)V
+.method constructor <init>(Lcom/android/settings_ext/notification/ManagedServiceSettings;)V
     .locals 0
 
     .prologue
     .line 78
-    iput-object p1, p0, Lcom/android/settings/notification/ManagedServiceSettings$2;->this$0:Lcom/android/settings/notification/ManagedServiceSettings;
+    iput-object p1, p0, Lcom/android/settings_ext/notification/ManagedServiceSettings$2;->this$0:Lcom/android/settings_ext/notification/ManagedServiceSettings;
 
     invoke-direct {p0}, Landroid/content/BroadcastReceiver;-><init>()V
 
@@ -40,10 +40,10 @@
 
     .prologue
     .line 81
-    iget-object v0, p0, Lcom/android/settings/notification/ManagedServiceSettings$2;->this$0:Lcom/android/settings/notification/ManagedServiceSettings;
+    iget-object v0, p0, Lcom/android/settings_ext/notification/ManagedServiceSettings$2;->this$0:Lcom/android/settings_ext/notification/ManagedServiceSettings;
 
-    # invokes: Lcom/android/settings/notification/ManagedServiceSettings;->updateList()V
-    invoke-static {v0}, Lcom/android/settings/notification/ManagedServiceSettings;->access$000(Lcom/android/settings/notification/ManagedServiceSettings;)V
+    # invokes: Lcom/android/settings_ext/notification/ManagedServiceSettings;->updateList()V
+    invoke-static {v0}, Lcom/android/settings_ext/notification/ManagedServiceSettings;->access$000(Lcom/android/settings_ext/notification/ManagedServiceSettings;)V
 
     .line 82
     return-void

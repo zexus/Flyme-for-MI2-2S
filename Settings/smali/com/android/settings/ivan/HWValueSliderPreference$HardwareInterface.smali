@@ -1,11 +1,11 @@
-.class public interface abstract Lcom/android/settings/ivan/HWValueSliderPreference$HardwareInterface;
+.class public interface abstract Lcom/android/settings_ext/ivan/HWValueSliderPreference$HardwareInterface;
 .super Ljava/lang/Object;
 .source "HWValueSliderPreference.java"
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/android/settings/ivan/HWValueSliderPreference;
+    value = Lcom/android/settings_ext/ivan/HWValueSliderPreference;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;

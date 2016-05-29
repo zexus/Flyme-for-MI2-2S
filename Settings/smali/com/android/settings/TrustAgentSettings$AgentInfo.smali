@@ -1,11 +1,11 @@
-.class public final Lcom/android/settings/TrustAgentSettings$AgentInfo;
+.class public final Lcom/android/settings_ext/TrustAgentSettings$AgentInfo;
 .super Ljava/lang/Object;
 .source "TrustAgentSettings.java"
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/android/settings/TrustAgentSettings;
+    value = Lcom/android/settings_ext/TrustAgentSettings;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -43,17 +43,17 @@
 
     .prologue
     .line 52
-    instance-of v0, p1, Lcom/android/settings/TrustAgentSettings$AgentInfo;
+    instance-of v0, p1, Lcom/android/settings_ext/TrustAgentSettings$AgentInfo;
 
     if-eqz v0, :cond_0
 
     .line 53
-    iget-object v0, p0, Lcom/android/settings/TrustAgentSettings$AgentInfo;->component:Landroid/content/ComponentName;
+    iget-object v0, p0, Lcom/android/settings_ext/TrustAgentSettings$AgentInfo;->component:Landroid/content/ComponentName;
 
-    check-cast p1, Lcom/android/settings/TrustAgentSettings$AgentInfo;
+    check-cast p1, Lcom/android/settings_ext/TrustAgentSettings$AgentInfo;
 
     .end local p1    # "other":Ljava/lang/Object;
-    iget-object v1, p1, Lcom/android/settings/TrustAgentSettings$AgentInfo;->component:Landroid/content/ComponentName;
+    iget-object v1, p1, Lcom/android/settings_ext/TrustAgentSettings$AgentInfo;->component:Landroid/content/ComponentName;
 
     invoke-virtual {v0, v1}, Landroid/content/ComponentName;->equals(Ljava/lang/Object;)Z
 

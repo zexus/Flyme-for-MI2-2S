@@ -1,11 +1,11 @@
-.class Lcom/android/settings/RadioInfo$4;
+.class Lcom/android/settings_ext/RadioInfo$4;
 .super Ljava/lang/Thread;
 .source "RadioInfo.java"
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/android/settings/RadioInfo;->updatePingState()V
+    value = Lcom/android/settings_ext/RadioInfo;->updatePingState()V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -15,7 +15,7 @@
 
 
 # instance fields
-.field final synthetic this$0:Lcom/android/settings/RadioInfo;
+.field final synthetic this$0:Lcom/android/settings_ext/RadioInfo;
 
 .field final synthetic val$handler:Landroid/os/Handler;
 
@@ -23,16 +23,16 @@
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/RadioInfo;Landroid/os/Handler;Ljava/lang/Runnable;)V
+.method constructor <init>(Lcom/android/settings_ext/RadioInfo;Landroid/os/Handler;Ljava/lang/Runnable;)V
     .locals 0
 
     .prologue
     .line 785
-    iput-object p1, p0, Lcom/android/settings/RadioInfo$4;->this$0:Lcom/android/settings/RadioInfo;
+    iput-object p1, p0, Lcom/android/settings_ext/RadioInfo$4;->this$0:Lcom/android/settings_ext/RadioInfo;
 
-    iput-object p2, p0, Lcom/android/settings/RadioInfo$4;->val$handler:Landroid/os/Handler;
+    iput-object p2, p0, Lcom/android/settings_ext/RadioInfo$4;->val$handler:Landroid/os/Handler;
 
-    iput-object p3, p0, Lcom/android/settings/RadioInfo$4;->val$updatePingResults:Ljava/lang/Runnable;
+    iput-object p3, p0, Lcom/android/settings_ext/RadioInfo$4;->val$updatePingResults:Ljava/lang/Runnable;
 
     invoke-direct {p0}, Ljava/lang/Thread;-><init>()V
 
@@ -46,15 +46,15 @@
 
     .prologue
     .line 788
-    iget-object v0, p0, Lcom/android/settings/RadioInfo$4;->this$0:Lcom/android/settings/RadioInfo;
+    iget-object v0, p0, Lcom/android/settings_ext/RadioInfo$4;->this$0:Lcom/android/settings_ext/RadioInfo;
 
-    # invokes: Lcom/android/settings/RadioInfo;->pingIpAddr()V
-    invoke-static {v0}, Lcom/android/settings/RadioInfo;->access$3000(Lcom/android/settings/RadioInfo;)V
+    # invokes: Lcom/android/settings_ext/RadioInfo;->pingIpAddr()V
+    invoke-static {v0}, Lcom/android/settings_ext/RadioInfo;->access$3000(Lcom/android/settings_ext/RadioInfo;)V
 
     .line 789
-    iget-object v0, p0, Lcom/android/settings/RadioInfo$4;->val$handler:Landroid/os/Handler;
+    iget-object v0, p0, Lcom/android/settings_ext/RadioInfo$4;->val$handler:Landroid/os/Handler;
 
-    iget-object v1, p0, Lcom/android/settings/RadioInfo$4;->val$updatePingResults:Ljava/lang/Runnable;
+    iget-object v1, p0, Lcom/android/settings_ext/RadioInfo$4;->val$updatePingResults:Ljava/lang/Runnable;
 
     invoke-virtual {v0, v1}, Landroid/os/Handler;->post(Ljava/lang/Runnable;)Z
 

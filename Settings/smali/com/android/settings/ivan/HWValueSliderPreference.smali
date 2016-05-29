@@ -1,4 +1,4 @@
-.class public abstract Lcom/android/settings/ivan/HWValueSliderPreference;
+.class public abstract Lcom/android/settings_ext/ivan/HWValueSliderPreference;
 .super Landroid/preference/DialogPreference;
 .source "HWValueSliderPreference.java"
 
@@ -9,14 +9,14 @@
 # annotations
 .annotation system Ldalvik/annotation/MemberClasses;
     value = {
-        Lcom/android/settings/ivan/HWValueSliderPreference$SavedState;,
-        Lcom/android/settings/ivan/HWValueSliderPreference$HardwareInterface;
+        Lcom/android/settings_ext/ivan/HWValueSliderPreference$SavedState;,
+        Lcom/android/settings_ext/ivan/HWValueSliderPreference$HardwareInterface;
     }
 .end annotation
 
 
 # instance fields
-.field private mHw:Lcom/android/settings/ivan/HWValueSliderPreference$HardwareInterface;
+.field private mHw:Lcom/android/settings_ext/ivan/HWValueSliderPreference$HardwareInterface;
 
 .field private mMin:I
 
@@ -36,11 +36,11 @@
 
 
 # direct methods
-.method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;Lcom/android/settings/ivan/HWValueSliderPreference$HardwareInterface;)V
+.method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;Lcom/android/settings_ext/ivan/HWValueSliderPreference$HardwareInterface;)V
     .locals 1
     .param p1, "context"    # Landroid/content/Context;
     .param p2, "attrs"    # Landroid/util/AttributeSet;
-    .param p3, "hw"    # Lcom/android/settings/ivan/HWValueSliderPreference$HardwareInterface;
+    .param p3, "hw"    # Lcom/android/settings_ext/ivan/HWValueSliderPreference$HardwareInterface;
 
     .prologue
     .line 67
@@ -50,49 +50,49 @@
     if-eqz p3, :cond_0
 
     .line 70
-    iput-object p3, p0, Lcom/android/settings/ivan/HWValueSliderPreference;->mHw:Lcom/android/settings/ivan/HWValueSliderPreference$HardwareInterface;
+    iput-object p3, p0, Lcom/android/settings_ext/ivan/HWValueSliderPreference;->mHw:Lcom/android/settings_ext/ivan/HWValueSliderPreference$HardwareInterface;
 
     .line 71
-    invoke-interface {p3}, Lcom/android/settings/ivan/HWValueSliderPreference$HardwareInterface;->getMinValue()I
+    invoke-interface {p3}, Lcom/android/settings_ext/ivan/HWValueSliderPreference$HardwareInterface;->getMinValue()I
 
     move-result v0
 
-    iput v0, p0, Lcom/android/settings/ivan/HWValueSliderPreference;->mMin:I
+    iput v0, p0, Lcom/android/settings_ext/ivan/HWValueSliderPreference;->mMin:I
 
     .line 73
     :cond_0
     return-void
 .end method
 
-.method static synthetic access$000(Lcom/android/settings/ivan/HWValueSliderPreference;)Lcom/android/settings/ivan/HWValueSliderPreference$HardwareInterface;
+.method static synthetic access$000(Lcom/android/settings_ext/ivan/HWValueSliderPreference;)Lcom/android/settings_ext/ivan/HWValueSliderPreference$HardwareInterface;
     .locals 1
-    .param p0, "x0"    # Lcom/android/settings/ivan/HWValueSliderPreference;
+    .param p0, "x0"    # Lcom/android/settings_ext/ivan/HWValueSliderPreference;
 
     .prologue
     .line 42
-    iget-object v0, p0, Lcom/android/settings/ivan/HWValueSliderPreference;->mHw:Lcom/android/settings/ivan/HWValueSliderPreference$HardwareInterface;
+    iget-object v0, p0, Lcom/android/settings_ext/ivan/HWValueSliderPreference;->mHw:Lcom/android/settings_ext/ivan/HWValueSliderPreference$HardwareInterface;
 
     return-object v0
 .end method
 
-.method static synthetic access$100(Lcom/android/settings/ivan/HWValueSliderPreference;)I
+.method static synthetic access$100(Lcom/android/settings_ext/ivan/HWValueSliderPreference;)I
     .locals 1
-    .param p0, "x0"    # Lcom/android/settings/ivan/HWValueSliderPreference;
+    .param p0, "x0"    # Lcom/android/settings_ext/ivan/HWValueSliderPreference;
 
     .prologue
     .line 42
-    iget v0, p0, Lcom/android/settings/ivan/HWValueSliderPreference;->mMin:I
+    iget v0, p0, Lcom/android/settings_ext/ivan/HWValueSliderPreference;->mMin:I
 
     return v0
 .end method
 
-.method static synthetic access$200(Lcom/android/settings/ivan/HWValueSliderPreference;)Landroid/widget/SeekBar;
+.method static synthetic access$200(Lcom/android/settings_ext/ivan/HWValueSliderPreference;)Landroid/widget/SeekBar;
     .locals 1
-    .param p0, "x0"    # Lcom/android/settings/ivan/HWValueSliderPreference;
+    .param p0, "x0"    # Lcom/android/settings_ext/ivan/HWValueSliderPreference;
 
     .prologue
     .line 42
-    iget-object v0, p0, Lcom/android/settings/ivan/HWValueSliderPreference;->mSeekBar:Landroid/widget/SeekBar;
+    iget-object v0, p0, Lcom/android/settings_ext/ivan/HWValueSliderPreference;->mSeekBar:Landroid/widget/SeekBar;
 
     return-object v0
 .end method
@@ -105,9 +105,9 @@
     const-wide/high16 v10, 0x4059000000000000L    # 100.0
 
     .line 221
-    iget-object v6, p0, Lcom/android/settings/ivan/HWValueSliderPreference;->mHw:Lcom/android/settings/ivan/HWValueSliderPreference$HardwareInterface;
+    iget-object v6, p0, Lcom/android/settings_ext/ivan/HWValueSliderPreference;->mHw:Lcom/android/settings_ext/ivan/HWValueSliderPreference$HardwareInterface;
 
-    invoke-interface {v6}, Lcom/android/settings/ivan/HWValueSliderPreference$HardwareInterface;->getMaxValue()I
+    invoke-interface {v6}, Lcom/android/settings_ext/ivan/HWValueSliderPreference$HardwareInterface;->getMaxValue()I
 
     move-result v6
 
@@ -115,9 +115,9 @@
 
     .line 222
     .local v0, "maxValue":D
-    iget-object v6, p0, Lcom/android/settings/ivan/HWValueSliderPreference;->mHw:Lcom/android/settings/ivan/HWValueSliderPreference$HardwareInterface;
+    iget-object v6, p0, Lcom/android/settings_ext/ivan/HWValueSliderPreference;->mHw:Lcom/android/settings_ext/ivan/HWValueSliderPreference$HardwareInterface;
 
-    invoke-interface {v6}, Lcom/android/settings/ivan/HWValueSliderPreference$HardwareInterface;->getMinValue()I
+    invoke-interface {v6}, Lcom/android/settings_ext/ivan/HWValueSliderPreference$HardwareInterface;->getMinValue()I
 
     move-result v6
 
@@ -184,7 +184,7 @@
 
     check-cast v6, Landroid/widget/SeekBar;
 
-    iput-object v6, p0, Lcom/android/settings/ivan/HWValueSliderPreference;->mSeekBar:Landroid/widget/SeekBar;
+    iput-object v6, p0, Lcom/android/settings_ext/ivan/HWValueSliderPreference;->mSeekBar:Landroid/widget/SeekBar;
 
     .line 90
     const v6, 0x7f0f0100
@@ -195,7 +195,7 @@
 
     check-cast v6, Landroid/widget/TextView;
 
-    iput-object v6, p0, Lcom/android/settings/ivan/HWValueSliderPreference;->mValue:Landroid/widget/TextView;
+    iput-object v6, p0, Lcom/android/settings_ext/ivan/HWValueSliderPreference;->mValue:Landroid/widget/TextView;
 
     .line 91
     const v6, 0x7f0f01d3
@@ -206,12 +206,12 @@
 
     check-cast v6, Landroid/widget/TextView;
 
-    iput-object v6, p0, Lcom/android/settings/ivan/HWValueSliderPreference;->mWarning:Landroid/widget/TextView;
+    iput-object v6, p0, Lcom/android/settings_ext/ivan/HWValueSliderPreference;->mWarning:Landroid/widget/TextView;
 
     .line 93
-    iget-object v6, p0, Lcom/android/settings/ivan/HWValueSliderPreference;->mHw:Lcom/android/settings/ivan/HWValueSliderPreference$HardwareInterface;
+    iget-object v6, p0, Lcom/android/settings_ext/ivan/HWValueSliderPreference;->mHw:Lcom/android/settings_ext/ivan/HWValueSliderPreference$HardwareInterface;
 
-    invoke-interface {v6}, Lcom/android/settings/ivan/HWValueSliderPreference$HardwareInterface;->getWarningThreshold()I
+    invoke-interface {v6}, Lcom/android/settings_ext/ivan/HWValueSliderPreference$HardwareInterface;->getWarningThreshold()I
 
     move-result v5
 
@@ -220,7 +220,7 @@
     if-lez v5, :cond_2
 
     .line 95
-    invoke-virtual {p0}, Lcom/android/settings/ivan/HWValueSliderPreference;->getContext()Landroid/content/Context;
+    invoke-virtual {p0}, Lcom/android/settings_ext/ivan/HWValueSliderPreference;->getContext()Landroid/content/Context;
 
     move-result-object v6
 
@@ -236,7 +236,7 @@
 
     const/4 v9, 0x0
 
-    invoke-direct {p0, v5}, Lcom/android/settings/ivan/HWValueSliderPreference;->hwValueToPercent(I)I
+    invoke-direct {p0, v5}, Lcom/android/settings_ext/ivan/HWValueSliderPreference;->hwValueToPercent(I)I
 
     move-result v10
 
@@ -252,7 +252,7 @@
 
     .line 97
     .local v1, "message":Ljava/lang/String;
-    iget-object v6, p0, Lcom/android/settings/ivan/HWValueSliderPreference;->mWarning:Landroid/widget/TextView;
+    iget-object v6, p0, Lcom/android/settings_ext/ivan/HWValueSliderPreference;->mWarning:Landroid/widget/TextView;
 
     invoke-virtual {v6, v1}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
@@ -260,7 +260,7 @@
     .end local v1    # "message":Ljava/lang/String;
     :cond_0
     :goto_0
-    iget-object v6, p0, Lcom/android/settings/ivan/HWValueSliderPreference;->mSeekBar:Landroid/widget/SeekBar;
+    iget-object v6, p0, Lcom/android/settings_ext/ivan/HWValueSliderPreference;->mSeekBar:Landroid/widget/SeekBar;
 
     invoke-virtual {v6}, Landroid/widget/SeekBar;->getProgressDrawable()Landroid/graphics/drawable/Drawable;
 
@@ -285,25 +285,25 @@
 
     move-result-object v6
 
-    iput-object v6, p0, Lcom/android/settings/ivan/HWValueSliderPreference;->mProgressDrawable:Landroid/graphics/drawable/Drawable;
+    iput-object v6, p0, Lcom/android/settings_ext/ivan/HWValueSliderPreference;->mProgressDrawable:Landroid/graphics/drawable/Drawable;
 
     .line 107
     .end local v0    # "ld":Landroid/graphics/drawable/LayerDrawable;
     :cond_1
-    iget-object v6, p0, Lcom/android/settings/ivan/HWValueSliderPreference;->mSeekBar:Landroid/widget/SeekBar;
+    iget-object v6, p0, Lcom/android/settings_ext/ivan/HWValueSliderPreference;->mSeekBar:Landroid/widget/SeekBar;
 
     invoke-virtual {v6}, Landroid/widget/SeekBar;->getThumb()Landroid/graphics/drawable/Drawable;
 
     move-result-object v6
 
-    iput-object v6, p0, Lcom/android/settings/ivan/HWValueSliderPreference;->mProgressThumb:Landroid/graphics/drawable/Drawable;
+    iput-object v6, p0, Lcom/android/settings_ext/ivan/HWValueSliderPreference;->mProgressThumb:Landroid/graphics/drawable/Drawable;
 
     .line 108
     new-instance v6, Landroid/graphics/LightingColorFilter;
 
     const/high16 v7, -0x1000000
 
-    invoke-virtual {p0}, Lcom/android/settings/ivan/HWValueSliderPreference;->getContext()Landroid/content/Context;
+    invoke-virtual {p0}, Lcom/android/settings_ext/ivan/HWValueSliderPreference;->getContext()Landroid/content/Context;
 
     move-result-object v8
 
@@ -319,19 +319,19 @@
 
     invoke-direct {v6, v7, v8}, Landroid/graphics/LightingColorFilter;-><init>(II)V
 
-    iput-object v6, p0, Lcom/android/settings/ivan/HWValueSliderPreference;->mRedFilter:Landroid/graphics/LightingColorFilter;
+    iput-object v6, p0, Lcom/android/settings_ext/ivan/HWValueSliderPreference;->mRedFilter:Landroid/graphics/LightingColorFilter;
 
     .line 112
-    iget-object v6, p0, Lcom/android/settings/ivan/HWValueSliderPreference;->mHw:Lcom/android/settings/ivan/HWValueSliderPreference$HardwareInterface;
+    iget-object v6, p0, Lcom/android/settings_ext/ivan/HWValueSliderPreference;->mHw:Lcom/android/settings_ext/ivan/HWValueSliderPreference$HardwareInterface;
 
-    invoke-interface {v6}, Lcom/android/settings/ivan/HWValueSliderPreference$HardwareInterface;->getCurrentValue()I
+    invoke-interface {v6}, Lcom/android/settings_ext/ivan/HWValueSliderPreference$HardwareInterface;->getCurrentValue()I
 
     move-result v6
 
-    iput v6, p0, Lcom/android/settings/ivan/HWValueSliderPreference;->mOriginalValue:I
+    iput v6, p0, Lcom/android/settings_ext/ivan/HWValueSliderPreference;->mOriginalValue:I
 
     .line 115
-    invoke-virtual {p0}, Lcom/android/settings/ivan/HWValueSliderPreference;->getContext()Landroid/content/Context;
+    invoke-virtual {p0}, Lcom/android/settings_ext/ivan/HWValueSliderPreference;->getContext()Landroid/content/Context;
 
     move-result-object v6
 
@@ -341,15 +341,15 @@
 
     .line 116
     .local v3, "settings":Landroid/content/SharedPreferences;
-    iget-object v6, p0, Lcom/android/settings/ivan/HWValueSliderPreference;->mHw:Lcom/android/settings/ivan/HWValueSliderPreference$HardwareInterface;
+    iget-object v6, p0, Lcom/android/settings_ext/ivan/HWValueSliderPreference;->mHw:Lcom/android/settings_ext/ivan/HWValueSliderPreference$HardwareInterface;
 
-    invoke-interface {v6}, Lcom/android/settings/ivan/HWValueSliderPreference$HardwareInterface;->getPreferenceName()Ljava/lang/String;
+    invoke-interface {v6}, Lcom/android/settings_ext/ivan/HWValueSliderPreference$HardwareInterface;->getPreferenceName()Ljava/lang/String;
 
     move-result-object v6
 
-    iget-object v7, p0, Lcom/android/settings/ivan/HWValueSliderPreference;->mHw:Lcom/android/settings/ivan/HWValueSliderPreference$HardwareInterface;
+    iget-object v7, p0, Lcom/android/settings_ext/ivan/HWValueSliderPreference;->mHw:Lcom/android/settings_ext/ivan/HWValueSliderPreference$HardwareInterface;
 
-    invoke-interface {v7}, Lcom/android/settings/ivan/HWValueSliderPreference$HardwareInterface;->getDefaultValue()I
+    invoke-interface {v7}, Lcom/android/settings_ext/ivan/HWValueSliderPreference$HardwareInterface;->getDefaultValue()I
 
     move-result v7
 
@@ -359,29 +359,29 @@
 
     .line 118
     .local v4, "value":I
-    iget-object v6, p0, Lcom/android/settings/ivan/HWValueSliderPreference;->mSeekBar:Landroid/widget/SeekBar;
+    iget-object v6, p0, Lcom/android/settings_ext/ivan/HWValueSliderPreference;->mSeekBar:Landroid/widget/SeekBar;
 
     invoke-virtual {v6, p0}, Landroid/widget/SeekBar;->setOnSeekBarChangeListener(Landroid/widget/SeekBar$OnSeekBarChangeListener;)V
 
     .line 119
-    iget-object v6, p0, Lcom/android/settings/ivan/HWValueSliderPreference;->mSeekBar:Landroid/widget/SeekBar;
+    iget-object v6, p0, Lcom/android/settings_ext/ivan/HWValueSliderPreference;->mSeekBar:Landroid/widget/SeekBar;
 
-    iget-object v7, p0, Lcom/android/settings/ivan/HWValueSliderPreference;->mHw:Lcom/android/settings/ivan/HWValueSliderPreference$HardwareInterface;
+    iget-object v7, p0, Lcom/android/settings_ext/ivan/HWValueSliderPreference;->mHw:Lcom/android/settings_ext/ivan/HWValueSliderPreference$HardwareInterface;
 
-    invoke-interface {v7}, Lcom/android/settings/ivan/HWValueSliderPreference$HardwareInterface;->getMaxValue()I
+    invoke-interface {v7}, Lcom/android/settings_ext/ivan/HWValueSliderPreference$HardwareInterface;->getMaxValue()I
 
     move-result v7
 
-    iget v8, p0, Lcom/android/settings/ivan/HWValueSliderPreference;->mMin:I
+    iget v8, p0, Lcom/android/settings_ext/ivan/HWValueSliderPreference;->mMin:I
 
     sub-int/2addr v7, v8
 
     invoke-virtual {v6, v7}, Landroid/widget/SeekBar;->setMax(I)V
 
     .line 120
-    iget-object v6, p0, Lcom/android/settings/ivan/HWValueSliderPreference;->mSeekBar:Landroid/widget/SeekBar;
+    iget-object v6, p0, Lcom/android/settings_ext/ivan/HWValueSliderPreference;->mSeekBar:Landroid/widget/SeekBar;
 
-    iget v7, p0, Lcom/android/settings/ivan/HWValueSliderPreference;->mMin:I
+    iget v7, p0, Lcom/android/settings_ext/ivan/HWValueSliderPreference;->mMin:I
 
     sub-int v7, v4, v7
 
@@ -395,12 +395,12 @@
     .end local v3    # "settings":Landroid/content/SharedPreferences;
     .end local v4    # "value":I
     :cond_2
-    iget-object v6, p0, Lcom/android/settings/ivan/HWValueSliderPreference;->mWarning:Landroid/widget/TextView;
+    iget-object v6, p0, Lcom/android/settings_ext/ivan/HWValueSliderPreference;->mWarning:Landroid/widget/TextView;
 
     if-eqz v6, :cond_0
 
     .line 99
-    iget-object v6, p0, Lcom/android/settings/ivan/HWValueSliderPreference;->mWarning:Landroid/widget/TextView;
+    iget-object v6, p0, Lcom/android/settings_ext/ivan/HWValueSliderPreference;->mWarning:Landroid/widget/TextView;
 
     const/16 v7, 0x8
 
@@ -421,7 +421,7 @@
     if-eqz p1, :cond_1
 
     .line 145
-    invoke-virtual {p0}, Lcom/android/settings/ivan/HWValueSliderPreference;->getContext()Landroid/content/Context;
+    invoke-virtual {p0}, Lcom/android/settings_ext/ivan/HWValueSliderPreference;->getContext()Landroid/content/Context;
 
     move-result-object v1
 
@@ -435,19 +435,19 @@
 
     .line 147
     .local v0, "editor":Landroid/content/SharedPreferences$Editor;
-    iget-object v1, p0, Lcom/android/settings/ivan/HWValueSliderPreference;->mHw:Lcom/android/settings/ivan/HWValueSliderPreference$HardwareInterface;
+    iget-object v1, p0, Lcom/android/settings_ext/ivan/HWValueSliderPreference;->mHw:Lcom/android/settings_ext/ivan/HWValueSliderPreference$HardwareInterface;
 
-    invoke-interface {v1}, Lcom/android/settings/ivan/HWValueSliderPreference$HardwareInterface;->getPreferenceName()Ljava/lang/String;
+    invoke-interface {v1}, Lcom/android/settings_ext/ivan/HWValueSliderPreference$HardwareInterface;->getPreferenceName()Ljava/lang/String;
 
     move-result-object v1
 
-    iget-object v2, p0, Lcom/android/settings/ivan/HWValueSliderPreference;->mSeekBar:Landroid/widget/SeekBar;
+    iget-object v2, p0, Lcom/android/settings_ext/ivan/HWValueSliderPreference;->mSeekBar:Landroid/widget/SeekBar;
 
     invoke-virtual {v2}, Landroid/widget/SeekBar;->getProgress()I
 
     move-result v2
 
-    iget v3, p0, Lcom/android/settings/ivan/HWValueSliderPreference;->mMin:I
+    iget v3, p0, Lcom/android/settings_ext/ivan/HWValueSliderPreference;->mMin:I
 
     add-int/2addr v2, v3
 
@@ -464,18 +464,18 @@
 
     .line 149
     :cond_1
-    iget v1, p0, Lcom/android/settings/ivan/HWValueSliderPreference;->mOriginalValue:I
+    iget v1, p0, Lcom/android/settings_ext/ivan/HWValueSliderPreference;->mOriginalValue:I
 
-    iget v2, p0, Lcom/android/settings/ivan/HWValueSliderPreference;->mMin:I
+    iget v2, p0, Lcom/android/settings_ext/ivan/HWValueSliderPreference;->mMin:I
 
     if-lt v1, v2, :cond_0
 
     .line 150
-    iget-object v1, p0, Lcom/android/settings/ivan/HWValueSliderPreference;->mHw:Lcom/android/settings/ivan/HWValueSliderPreference$HardwareInterface;
+    iget-object v1, p0, Lcom/android/settings_ext/ivan/HWValueSliderPreference;->mHw:Lcom/android/settings_ext/ivan/HWValueSliderPreference$HardwareInterface;
 
-    iget v2, p0, Lcom/android/settings/ivan/HWValueSliderPreference;->mOriginalValue:I
+    iget v2, p0, Lcom/android/settings_ext/ivan/HWValueSliderPreference;->mOriginalValue:I
 
-    invoke-interface {v1, v2}, Lcom/android/settings/ivan/HWValueSliderPreference$HardwareInterface;->setValue(I)Z
+    invoke-interface {v1, v2}, Lcom/android/settings_ext/ivan/HWValueSliderPreference$HardwareInterface;->setValue(I)Z
 
     goto :goto_0
 .end method
@@ -488,9 +488,9 @@
     .line 77
     const v0, 0x7f0909f8
 
-    new-instance v1, Lcom/android/settings/ivan/HWValueSliderPreference$1;
+    new-instance v1, Lcom/android/settings_ext/ivan/HWValueSliderPreference$1;
 
-    invoke-direct {v1, p0}, Lcom/android/settings/ivan/HWValueSliderPreference$1;-><init>(Lcom/android/settings/ivan/HWValueSliderPreference;)V
+    invoke-direct {v1, p0}, Lcom/android/settings_ext/ivan/HWValueSliderPreference$1;-><init>(Lcom/android/settings_ext/ivan/HWValueSliderPreference;)V
 
     invoke-virtual {p1, v0, v1}, Landroid/app/AlertDialog$Builder;->setNeutralButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
@@ -512,9 +512,9 @@
     const/4 v3, 0x0
 
     .line 196
-    iget-object v4, p0, Lcom/android/settings/ivan/HWValueSliderPreference;->mHw:Lcom/android/settings/ivan/HWValueSliderPreference$HardwareInterface;
+    iget-object v4, p0, Lcom/android/settings_ext/ivan/HWValueSliderPreference;->mHw:Lcom/android/settings_ext/ivan/HWValueSliderPreference$HardwareInterface;
 
-    invoke-interface {v4}, Lcom/android/settings/ivan/HWValueSliderPreference$HardwareInterface;->getWarningThreshold()I
+    invoke-interface {v4}, Lcom/android/settings_ext/ivan/HWValueSliderPreference$HardwareInterface;->getWarningThreshold()I
 
     move-result v1
 
@@ -522,7 +522,7 @@
     .local v1, "warningThreshold":I
     if-lez v1, :cond_3
 
-    iget v4, p0, Lcom/android/settings/ivan/HWValueSliderPreference;->mMin:I
+    iget v4, p0, Lcom/android/settings_ext/ivan/HWValueSliderPreference;->mMin:I
 
     sub-int v4, v1, v4
 
@@ -533,58 +533,58 @@
     .line 199
     .local v0, "shouldWarn":Z
     :goto_0
-    iget-object v4, p0, Lcom/android/settings/ivan/HWValueSliderPreference;->mProgressDrawable:Landroid/graphics/drawable/Drawable;
+    iget-object v4, p0, Lcom/android/settings_ext/ivan/HWValueSliderPreference;->mProgressDrawable:Landroid/graphics/drawable/Drawable;
 
     if-eqz v4, :cond_0
 
     .line 200
-    iget-object v6, p0, Lcom/android/settings/ivan/HWValueSliderPreference;->mProgressDrawable:Landroid/graphics/drawable/Drawable;
+    iget-object v6, p0, Lcom/android/settings_ext/ivan/HWValueSliderPreference;->mProgressDrawable:Landroid/graphics/drawable/Drawable;
 
     if-eqz v0, :cond_4
 
-    iget-object v4, p0, Lcom/android/settings/ivan/HWValueSliderPreference;->mRedFilter:Landroid/graphics/LightingColorFilter;
+    iget-object v4, p0, Lcom/android/settings_ext/ivan/HWValueSliderPreference;->mRedFilter:Landroid/graphics/LightingColorFilter;
 
     :goto_1
     invoke-virtual {v6, v4}, Landroid/graphics/drawable/Drawable;->setColorFilter(Landroid/graphics/ColorFilter;)V
 
     .line 202
     :cond_0
-    iget-object v4, p0, Lcom/android/settings/ivan/HWValueSliderPreference;->mProgressThumb:Landroid/graphics/drawable/Drawable;
+    iget-object v4, p0, Lcom/android/settings_ext/ivan/HWValueSliderPreference;->mProgressThumb:Landroid/graphics/drawable/Drawable;
 
     if-eqz v4, :cond_2
 
     .line 203
-    iget-object v4, p0, Lcom/android/settings/ivan/HWValueSliderPreference;->mProgressThumb:Landroid/graphics/drawable/Drawable;
+    iget-object v4, p0, Lcom/android/settings_ext/ivan/HWValueSliderPreference;->mProgressThumb:Landroid/graphics/drawable/Drawable;
 
     if-eqz v0, :cond_1
 
-    iget-object v5, p0, Lcom/android/settings/ivan/HWValueSliderPreference;->mRedFilter:Landroid/graphics/LightingColorFilter;
+    iget-object v5, p0, Lcom/android/settings_ext/ivan/HWValueSliderPreference;->mRedFilter:Landroid/graphics/LightingColorFilter;
 
     :cond_1
     invoke-virtual {v4, v5}, Landroid/graphics/drawable/Drawable;->setColorFilter(Landroid/graphics/ColorFilter;)V
 
     .line 206
     :cond_2
-    iget-object v4, p0, Lcom/android/settings/ivan/HWValueSliderPreference;->mHw:Lcom/android/settings/ivan/HWValueSliderPreference$HardwareInterface;
+    iget-object v4, p0, Lcom/android/settings_ext/ivan/HWValueSliderPreference;->mHw:Lcom/android/settings_ext/ivan/HWValueSliderPreference$HardwareInterface;
 
-    iget v5, p0, Lcom/android/settings/ivan/HWValueSliderPreference;->mMin:I
+    iget v5, p0, Lcom/android/settings_ext/ivan/HWValueSliderPreference;->mMin:I
 
     add-int/2addr v5, p2
 
-    invoke-interface {v4, v5}, Lcom/android/settings/ivan/HWValueSliderPreference$HardwareInterface;->setValue(I)Z
+    invoke-interface {v4, v5}, Lcom/android/settings_ext/ivan/HWValueSliderPreference$HardwareInterface;->setValue(I)Z
 
     .line 207
-    iget-object v4, p0, Lcom/android/settings/ivan/HWValueSliderPreference;->mValue:Landroid/widget/TextView;
+    iget-object v4, p0, Lcom/android/settings_ext/ivan/HWValueSliderPreference;->mValue:Landroid/widget/TextView;
 
     const-string v5, "%d%%"
 
     new-array v2, v2, [Ljava/lang/Object;
 
-    iget v6, p0, Lcom/android/settings/ivan/HWValueSliderPreference;->mMin:I
+    iget v6, p0, Lcom/android/settings_ext/ivan/HWValueSliderPreference;->mMin:I
 
     add-int/2addr v6, p2
 
-    invoke-direct {p0, v6}, Lcom/android/settings/ivan/HWValueSliderPreference;->hwValueToPercent(I)I
+    invoke-direct {p0, v6}, Lcom/android/settings_ext/ivan/HWValueSliderPreference;->hwValueToPercent(I)I
 
     move-result v6
 
@@ -630,7 +630,7 @@
 
     move-result-object v1
 
-    const-class v2, Lcom/android/settings/ivan/HWValueSliderPreference$SavedState;
+    const-class v2, Lcom/android/settings_ext/ivan/HWValueSliderPreference$SavedState;
 
     invoke-virtual {v1, v2}, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
 
@@ -650,25 +650,25 @@
     move-object v0, p1
 
     .line 181
-    check-cast v0, Lcom/android/settings/ivan/HWValueSliderPreference$SavedState;
+    check-cast v0, Lcom/android/settings_ext/ivan/HWValueSliderPreference$SavedState;
 
     .line 182
-    .local v0, "myState":Lcom/android/settings/ivan/HWValueSliderPreference$SavedState;
-    invoke-virtual {v0}, Lcom/android/settings/ivan/HWValueSliderPreference$SavedState;->getSuperState()Landroid/os/Parcelable;
+    .local v0, "myState":Lcom/android/settings_ext/ivan/HWValueSliderPreference$SavedState;
+    invoke-virtual {v0}, Lcom/android/settings_ext/ivan/HWValueSliderPreference$SavedState;->getSuperState()Landroid/os/Parcelable;
 
     move-result-object v1
 
     invoke-super {p0, v1}, Landroid/preference/DialogPreference;->onRestoreInstanceState(Landroid/os/Parcelable;)V
 
     .line 183
-    iget v1, v0, Lcom/android/settings/ivan/HWValueSliderPreference$SavedState;->originalValue:I
+    iget v1, v0, Lcom/android/settings_ext/ivan/HWValueSliderPreference$SavedState;->originalValue:I
 
-    iput v1, p0, Lcom/android/settings/ivan/HWValueSliderPreference;->mOriginalValue:I
+    iput v1, p0, Lcom/android/settings_ext/ivan/HWValueSliderPreference;->mOriginalValue:I
 
     .line 184
-    iget-object v1, p0, Lcom/android/settings/ivan/HWValueSliderPreference;->mSeekBar:Landroid/widget/SeekBar;
+    iget-object v1, p0, Lcom/android/settings_ext/ivan/HWValueSliderPreference;->mSeekBar:Landroid/widget/SeekBar;
 
-    iget v2, v0, Lcom/android/settings/ivan/HWValueSliderPreference$SavedState;->value:I
+    iget v2, v0, Lcom/android/settings_ext/ivan/HWValueSliderPreference$SavedState;->value:I
 
     invoke-virtual {v1, v2}, Landroid/widget/SeekBar;->setProgress(I)V
 
@@ -686,13 +686,13 @@
 
     .line 157
     .local v1, "superState":Landroid/os/Parcelable;
-    invoke-virtual {p0}, Lcom/android/settings/ivan/HWValueSliderPreference;->getDialog()Landroid/app/Dialog;
+    invoke-virtual {p0}, Lcom/android/settings_ext/ivan/HWValueSliderPreference;->getDialog()Landroid/app/Dialog;
 
     move-result-object v2
 
     if-eqz v2, :cond_0
 
-    invoke-virtual {p0}, Lcom/android/settings/ivan/HWValueSliderPreference;->getDialog()Landroid/app/Dialog;
+    invoke-virtual {p0}, Lcom/android/settings_ext/ivan/HWValueSliderPreference;->getDialog()Landroid/app/Dialog;
 
     move-result-object v2
 
@@ -711,36 +711,36 @@
 
     .line 162
     :cond_1
-    new-instance v0, Lcom/android/settings/ivan/HWValueSliderPreference$SavedState;
+    new-instance v0, Lcom/android/settings_ext/ivan/HWValueSliderPreference$SavedState;
 
-    invoke-direct {v0, v1}, Lcom/android/settings/ivan/HWValueSliderPreference$SavedState;-><init>(Landroid/os/Parcelable;)V
+    invoke-direct {v0, v1}, Lcom/android/settings_ext/ivan/HWValueSliderPreference$SavedState;-><init>(Landroid/os/Parcelable;)V
 
     .line 163
-    .local v0, "myState":Lcom/android/settings/ivan/HWValueSliderPreference$SavedState;
-    iget-object v2, p0, Lcom/android/settings/ivan/HWValueSliderPreference;->mSeekBar:Landroid/widget/SeekBar;
+    .local v0, "myState":Lcom/android/settings_ext/ivan/HWValueSliderPreference$SavedState;
+    iget-object v2, p0, Lcom/android/settings_ext/ivan/HWValueSliderPreference;->mSeekBar:Landroid/widget/SeekBar;
 
     invoke-virtual {v2}, Landroid/widget/SeekBar;->getProgress()I
 
     move-result v2
 
-    iput v2, v0, Lcom/android/settings/ivan/HWValueSliderPreference$SavedState;->value:I
+    iput v2, v0, Lcom/android/settings_ext/ivan/HWValueSliderPreference$SavedState;->value:I
 
     .line 164
-    iget v2, p0, Lcom/android/settings/ivan/HWValueSliderPreference;->mOriginalValue:I
+    iget v2, p0, Lcom/android/settings_ext/ivan/HWValueSliderPreference;->mOriginalValue:I
 
-    iput v2, v0, Lcom/android/settings/ivan/HWValueSliderPreference$SavedState;->originalValue:I
+    iput v2, v0, Lcom/android/settings_ext/ivan/HWValueSliderPreference$SavedState;->originalValue:I
 
     .line 167
-    iget-object v2, p0, Lcom/android/settings/ivan/HWValueSliderPreference;->mHw:Lcom/android/settings/ivan/HWValueSliderPreference$HardwareInterface;
+    iget-object v2, p0, Lcom/android/settings_ext/ivan/HWValueSliderPreference;->mHw:Lcom/android/settings_ext/ivan/HWValueSliderPreference$HardwareInterface;
 
-    iget v3, p0, Lcom/android/settings/ivan/HWValueSliderPreference;->mOriginalValue:I
+    iget v3, p0, Lcom/android/settings_ext/ivan/HWValueSliderPreference;->mOriginalValue:I
 
-    invoke-interface {v2, v3}, Lcom/android/settings/ivan/HWValueSliderPreference$HardwareInterface;->setValue(I)Z
+    invoke-interface {v2, v3}, Lcom/android/settings_ext/ivan/HWValueSliderPreference$HardwareInterface;->setValue(I)Z
 
     .line 168
     const/high16 v2, -0x80000000
 
-    iput v2, p0, Lcom/android/settings/ivan/HWValueSliderPreference;->mOriginalValue:I
+    iput v2, p0, Lcom/android/settings_ext/ivan/HWValueSliderPreference;->mOriginalValue:I
 
     goto :goto_0
 .end method
@@ -772,7 +772,7 @@
     invoke-super {p0, p1}, Landroid/preference/DialogPreference;->showDialog(Landroid/os/Bundle;)V
 
     .line 129
-    invoke-virtual {p0}, Lcom/android/settings/ivan/HWValueSliderPreference;->getDialog()Landroid/app/Dialog;
+    invoke-virtual {p0}, Lcom/android/settings_ext/ivan/HWValueSliderPreference;->getDialog()Landroid/app/Dialog;
 
     move-result-object v0
 
@@ -788,9 +788,9 @@
 
     .line 131
     .local v1, "defaultsButton":Landroid/widget/Button;
-    new-instance v2, Lcom/android/settings/ivan/HWValueSliderPreference$2;
+    new-instance v2, Lcom/android/settings_ext/ivan/HWValueSliderPreference$2;
 
-    invoke-direct {v2, p0}, Lcom/android/settings/ivan/HWValueSliderPreference$2;-><init>(Lcom/android/settings/ivan/HWValueSliderPreference;)V
+    invoke-direct {v2, p0}, Lcom/android/settings_ext/ivan/HWValueSliderPreference$2;-><init>(Lcom/android/settings_ext/ivan/HWValueSliderPreference;)V
 
     invoke-virtual {v1, v2}, Landroid/widget/Button;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 

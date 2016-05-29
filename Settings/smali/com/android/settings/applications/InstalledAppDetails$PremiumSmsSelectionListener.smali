@@ -1,4 +1,4 @@
-.class Lcom/android/settings/applications/InstalledAppDetails$PremiumSmsSelectionListener;
+.class Lcom/android/settings_ext/applications/InstalledAppDetails$PremiumSmsSelectionListener;
 .super Ljava/lang/Object;
 .source "InstalledAppDetails.java"
 
@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/android/settings/applications/InstalledAppDetails;
+    value = Lcom/android/settings_ext/applications/InstalledAppDetails;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -34,10 +34,10 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 924
-    iput-object p1, p0, Lcom/android/settings/applications/InstalledAppDetails$PremiumSmsSelectionListener;->mPackageName:Ljava/lang/String;
+    iput-object p1, p0, Lcom/android/settings_ext/applications/InstalledAppDetails$PremiumSmsSelectionListener;->mPackageName:Ljava/lang/String;
 
     .line 925
-    iput-object p2, p0, Lcom/android/settings/applications/InstalledAppDetails$PremiumSmsSelectionListener;->mSmsManager:Lcom/android/internal/telephony/ISms;
+    iput-object p2, p0, Lcom/android/settings_ext/applications/InstalledAppDetails$PremiumSmsSelectionListener;->mSmsManager:Lcom/android/internal/telephony/ISms;
 
     .line 926
     return-void
@@ -51,12 +51,12 @@
     .prologue
     .line 946
     :try_start_0
-    iget-object v0, p0, Lcom/android/settings/applications/InstalledAppDetails$PremiumSmsSelectionListener;->mSmsManager:Lcom/android/internal/telephony/ISms;
+    iget-object v0, p0, Lcom/android/settings_ext/applications/InstalledAppDetails$PremiumSmsSelectionListener;->mSmsManager:Lcom/android/internal/telephony/ISms;
 
     if-eqz v0, :cond_0
 
     .line 947
-    iget-object v0, p0, Lcom/android/settings/applications/InstalledAppDetails$PremiumSmsSelectionListener;->mSmsManager:Lcom/android/internal/telephony/ISms;
+    iget-object v0, p0, Lcom/android/settings_ext/applications/InstalledAppDetails$PremiumSmsSelectionListener;->mSmsManager:Lcom/android/internal/telephony/ISms;
 
     invoke-interface {v0, p1, p2}, Lcom/android/internal/telephony/ISms;->setPremiumSmsPermission(Ljava/lang/String;I)V
     :try_end_0
@@ -124,11 +124,11 @@
     invoke-static {v0, v1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
     .line 933
-    iget-object v0, p0, Lcom/android/settings/applications/InstalledAppDetails$PremiumSmsSelectionListener;->mPackageName:Ljava/lang/String;
+    iget-object v0, p0, Lcom/android/settings_ext/applications/InstalledAppDetails$PremiumSmsSelectionListener;->mPackageName:Ljava/lang/String;
 
     add-int/lit8 v1, p3, 0x1
 
-    invoke-direct {p0, v0, v1}, Lcom/android/settings/applications/InstalledAppDetails$PremiumSmsSelectionListener;->setPremiumSmsPermission(Ljava/lang/String;I)V
+    invoke-direct {p0, v0, v1}, Lcom/android/settings_ext/applications/InstalledAppDetails$PremiumSmsSelectionListener;->setPremiumSmsPermission(Ljava/lang/String;I)V
 
     .line 937
     :goto_0

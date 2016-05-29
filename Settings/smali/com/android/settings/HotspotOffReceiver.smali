@@ -1,4 +1,4 @@
-.class public Lcom/android/settings/HotspotOffReceiver;
+.class public Lcom/android/settings_ext/HotspotOffReceiver;
 .super Landroid/content/BroadcastReceiver;
 .source "HotspotOffReceiver.java"
 
@@ -57,7 +57,7 @@
     .line 21
     const/4 v1, 0x0
 
-    invoke-static {p1, v1}, Lcom/android/settings/TetherService;->cancelRecheckAlarmIfNecessary(Landroid/content/Context;I)V
+    invoke-static {p1, v1}, Lcom/android/settings_ext/TetherService;->cancelRecheckAlarmIfNecessary(Landroid/content/Context;I)V
 
     .line 24
     .end local v0    # "wifiManager":Landroid/net/wifi/WifiManager;

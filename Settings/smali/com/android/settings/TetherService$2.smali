@@ -1,11 +1,11 @@
-.class Lcom/android/settings/TetherService$2;
+.class Lcom/android/settings_ext/TetherService$2;
 .super Landroid/content/BroadcastReceiver;
 .source "TetherService.java"
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/android/settings/TetherService;
+    value = Lcom/android/settings_ext/TetherService;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -15,16 +15,16 @@
 
 
 # instance fields
-.field final synthetic this$0:Lcom/android/settings/TetherService;
+.field final synthetic this$0:Lcom/android/settings_ext/TetherService;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/TetherService;)V
+.method constructor <init>(Lcom/android/settings_ext/TetherService;)V
     .locals 0
 
     .prologue
     .line 269
-    iput-object p1, p0, Lcom/android/settings/TetherService$2;->this$0:Lcom/android/settings/TetherService;
+    iput-object p1, p0, Lcom/android/settings_ext/TetherService$2;->this$0:Lcom/android/settings_ext/TetherService;
 
     invoke-direct {p0}, Landroid/content/BroadcastReceiver;-><init>()V
 
@@ -42,8 +42,8 @@
     const/4 v5, 0x0
 
     .line 272
-    # getter for: Lcom/android/settings/TetherService;->DEBUG:Z
-    invoke-static {}, Lcom/android/settings/TetherService;->access$000()Z
+    # getter for: Lcom/android/settings_ext/TetherService;->DEBUG:Z
+    invoke-static {}, Lcom/android/settings_ext/TetherService;->access$000()Z
 
     move-result v2
 
@@ -96,23 +96,23 @@
     if-eqz v2, :cond_2
 
     .line 276
-    iget-object v2, p0, Lcom/android/settings/TetherService$2;->this$0:Lcom/android/settings/TetherService;
+    iget-object v2, p0, Lcom/android/settings_ext/TetherService$2;->this$0:Lcom/android/settings_ext/TetherService;
 
-    # setter for: Lcom/android/settings/TetherService;->mInProvisionCheck:Z
-    invoke-static {v2, v5}, Lcom/android/settings/TetherService;->access$102(Lcom/android/settings/TetherService;Z)Z
+    # setter for: Lcom/android/settings_ext/TetherService;->mInProvisionCheck:Z
+    invoke-static {v2, v5}, Lcom/android/settings_ext/TetherService;->access$102(Lcom/android/settings_ext/TetherService;Z)Z
 
     .line 277
-    iget-object v2, p0, Lcom/android/settings/TetherService$2;->this$0:Lcom/android/settings/TetherService;
+    iget-object v2, p0, Lcom/android/settings_ext/TetherService$2;->this$0:Lcom/android/settings_ext/TetherService;
 
-    # getter for: Lcom/android/settings/TetherService;->mCurrentTethers:Ljava/util/ArrayList;
-    invoke-static {v2}, Lcom/android/settings/TetherService;->access$300(Lcom/android/settings/TetherService;)Ljava/util/ArrayList;
+    # getter for: Lcom/android/settings_ext/TetherService;->mCurrentTethers:Ljava/util/ArrayList;
+    invoke-static {v2}, Lcom/android/settings_ext/TetherService;->access$300(Lcom/android/settings_ext/TetherService;)Ljava/util/ArrayList;
 
     move-result-object v2
 
-    iget-object v3, p0, Lcom/android/settings/TetherService$2;->this$0:Lcom/android/settings/TetherService;
+    iget-object v3, p0, Lcom/android/settings_ext/TetherService$2;->this$0:Lcom/android/settings_ext/TetherService;
 
-    # getter for: Lcom/android/settings/TetherService;->mCurrentTypeIndex:I
-    invoke-static {v3}, Lcom/android/settings/TetherService;->access$200(Lcom/android/settings/TetherService;)I
+    # getter for: Lcom/android/settings_ext/TetherService;->mCurrentTypeIndex:I
+    invoke-static {v3}, Lcom/android/settings_ext/TetherService;->access$200(Lcom/android/settings_ext/TetherService;)I
 
     move-result v3
 
@@ -141,41 +141,41 @@
     .line 279
     if-nez v0, :cond_1
 
-    iget-object v2, p0, Lcom/android/settings/TetherService$2;->this$0:Lcom/android/settings/TetherService;
+    iget-object v2, p0, Lcom/android/settings_ext/TetherService$2;->this$0:Lcom/android/settings_ext/TetherService;
 
-    # getter for: Lcom/android/settings/TetherService;->mEnableWifiAfterCheck:Z
-    invoke-static {v2}, Lcom/android/settings/TetherService;->access$400(Lcom/android/settings/TetherService;)Z
+    # getter for: Lcom/android/settings_ext/TetherService;->mEnableWifiAfterCheck:Z
+    invoke-static {v2}, Lcom/android/settings_ext/TetherService;->access$400(Lcom/android/settings_ext/TetherService;)Z
 
     move-result v2
 
     if-eqz v2, :cond_1
 
     .line 280
-    iget-object v2, p0, Lcom/android/settings/TetherService$2;->this$0:Lcom/android/settings/TetherService;
+    iget-object v2, p0, Lcom/android/settings_ext/TetherService$2;->this$0:Lcom/android/settings_ext/TetherService;
 
-    # invokes: Lcom/android/settings/TetherService;->enableWifiTetheringIfNeeded()V
-    invoke-static {v2}, Lcom/android/settings/TetherService;->access$500(Lcom/android/settings/TetherService;)V
+    # invokes: Lcom/android/settings_ext/TetherService;->enableWifiTetheringIfNeeded()V
+    invoke-static {v2}, Lcom/android/settings_ext/TetherService;->access$500(Lcom/android/settings_ext/TetherService;)V
 
     .line 281
-    iget-object v2, p0, Lcom/android/settings/TetherService$2;->this$0:Lcom/android/settings/TetherService;
+    iget-object v2, p0, Lcom/android/settings_ext/TetherService$2;->this$0:Lcom/android/settings_ext/TetherService;
 
-    # setter for: Lcom/android/settings/TetherService;->mEnableWifiAfterCheck:Z
-    invoke-static {v2, v5}, Lcom/android/settings/TetherService;->access$402(Lcom/android/settings/TetherService;Z)Z
+    # setter for: Lcom/android/settings_ext/TetherService;->mEnableWifiAfterCheck:Z
+    invoke-static {v2, v5}, Lcom/android/settings_ext/TetherService;->access$402(Lcom/android/settings_ext/TetherService;Z)Z
 
     .line 296
     :cond_1
     :goto_0
-    iget-object v2, p0, Lcom/android/settings/TetherService$2;->this$0:Lcom/android/settings/TetherService;
+    iget-object v2, p0, Lcom/android/settings_ext/TetherService$2;->this$0:Lcom/android/settings_ext/TetherService;
 
-    # ++operator for: Lcom/android/settings/TetherService;->mCurrentTypeIndex:I
-    invoke-static {v2}, Lcom/android/settings/TetherService;->access$204(Lcom/android/settings/TetherService;)I
+    # ++operator for: Lcom/android/settings_ext/TetherService;->mCurrentTypeIndex:I
+    invoke-static {v2}, Lcom/android/settings_ext/TetherService;->access$204(Lcom/android/settings_ext/TetherService;)I
 
     move-result v2
 
-    iget-object v3, p0, Lcom/android/settings/TetherService$2;->this$0:Lcom/android/settings/TetherService;
+    iget-object v3, p0, Lcom/android/settings_ext/TetherService$2;->this$0:Lcom/android/settings_ext/TetherService;
 
-    # getter for: Lcom/android/settings/TetherService;->mCurrentTethers:Ljava/util/ArrayList;
-    invoke-static {v3}, Lcom/android/settings/TetherService;->access$300(Lcom/android/settings/TetherService;)Ljava/util/ArrayList;
+    # getter for: Lcom/android/settings_ext/TetherService;->mCurrentTethers:Ljava/util/ArrayList;
+    invoke-static {v3}, Lcom/android/settings_ext/TetherService;->access$300(Lcom/android/settings_ext/TetherService;)Ljava/util/ArrayList;
 
     move-result-object v3
 
@@ -186,9 +186,9 @@
     if-ne v2, v3, :cond_4
 
     .line 298
-    iget-object v2, p0, Lcom/android/settings/TetherService$2;->this$0:Lcom/android/settings/TetherService;
+    iget-object v2, p0, Lcom/android/settings_ext/TetherService$2;->this$0:Lcom/android/settings_ext/TetherService;
 
-    invoke-virtual {v2}, Lcom/android/settings/TetherService;->stopSelf()V
+    invoke-virtual {v2}, Lcom/android/settings_ext/TetherService;->stopSelf()V
 
     .line 304
     .end local v0    # "checkType":I
@@ -205,44 +205,44 @@
 
     .line 286
     :pswitch_0
-    iget-object v2, p0, Lcom/android/settings/TetherService$2;->this$0:Lcom/android/settings/TetherService;
+    iget-object v2, p0, Lcom/android/settings_ext/TetherService$2;->this$0:Lcom/android/settings_ext/TetherService;
 
-    # invokes: Lcom/android/settings/TetherService;->disableWifiTethering()V
-    invoke-static {v2}, Lcom/android/settings/TetherService;->access$600(Lcom/android/settings/TetherService;)V
+    # invokes: Lcom/android/settings_ext/TetherService;->disableWifiTethering()V
+    invoke-static {v2}, Lcom/android/settings_ext/TetherService;->access$600(Lcom/android/settings_ext/TetherService;)V
 
     goto :goto_0
 
     .line 289
     :pswitch_1
-    iget-object v2, p0, Lcom/android/settings/TetherService$2;->this$0:Lcom/android/settings/TetherService;
+    iget-object v2, p0, Lcom/android/settings_ext/TetherService$2;->this$0:Lcom/android/settings_ext/TetherService;
 
-    # invokes: Lcom/android/settings/TetherService;->disableBtTethering()V
-    invoke-static {v2}, Lcom/android/settings/TetherService;->access$700(Lcom/android/settings/TetherService;)V
+    # invokes: Lcom/android/settings_ext/TetherService;->disableBtTethering()V
+    invoke-static {v2}, Lcom/android/settings_ext/TetherService;->access$700(Lcom/android/settings_ext/TetherService;)V
 
     goto :goto_0
 
     .line 292
     :pswitch_2
-    iget-object v2, p0, Lcom/android/settings/TetherService$2;->this$0:Lcom/android/settings/TetherService;
+    iget-object v2, p0, Lcom/android/settings_ext/TetherService$2;->this$0:Lcom/android/settings_ext/TetherService;
 
-    # invokes: Lcom/android/settings/TetherService;->disableUsbTethering()V
-    invoke-static {v2}, Lcom/android/settings/TetherService;->access$800(Lcom/android/settings/TetherService;)V
+    # invokes: Lcom/android/settings_ext/TetherService;->disableUsbTethering()V
+    invoke-static {v2}, Lcom/android/settings_ext/TetherService;->access$800(Lcom/android/settings_ext/TetherService;)V
 
     goto :goto_0
 
     .line 301
     :cond_4
-    iget-object v2, p0, Lcom/android/settings/TetherService$2;->this$0:Lcom/android/settings/TetherService;
+    iget-object v2, p0, Lcom/android/settings_ext/TetherService$2;->this$0:Lcom/android/settings_ext/TetherService;
 
-    iget-object v3, p0, Lcom/android/settings/TetherService$2;->this$0:Lcom/android/settings/TetherService;
+    iget-object v3, p0, Lcom/android/settings_ext/TetherService$2;->this$0:Lcom/android/settings_ext/TetherService;
 
-    # getter for: Lcom/android/settings/TetherService;->mCurrentTypeIndex:I
-    invoke-static {v3}, Lcom/android/settings/TetherService;->access$200(Lcom/android/settings/TetherService;)I
+    # getter for: Lcom/android/settings_ext/TetherService;->mCurrentTypeIndex:I
+    invoke-static {v3}, Lcom/android/settings_ext/TetherService;->access$200(Lcom/android/settings_ext/TetherService;)I
 
     move-result v3
 
-    # invokes: Lcom/android/settings/TetherService;->startProvisioning(I)V
-    invoke-static {v2, v3}, Lcom/android/settings/TetherService;->access$900(Lcom/android/settings/TetherService;I)V
+    # invokes: Lcom/android/settings_ext/TetherService;->startProvisioning(I)V
+    invoke-static {v2, v3}, Lcom/android/settings_ext/TetherService;->access$900(Lcom/android/settings_ext/TetherService;I)V
 
     goto :goto_1
 

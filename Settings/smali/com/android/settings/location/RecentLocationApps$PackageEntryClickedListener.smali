@@ -1,4 +1,4 @@
-.class Lcom/android/settings/location/RecentLocationApps$PackageEntryClickedListener;
+.class Lcom/android/settings_ext/location/RecentLocationApps$PackageEntryClickedListener;
 .super Ljava/lang/Object;
 .source "RecentLocationApps.java"
 
@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/android/settings/location/RecentLocationApps;
+    value = Lcom/android/settings_ext/location/RecentLocationApps;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -22,26 +22,26 @@
 
 .field private mUserHandle:Landroid/os/UserHandle;
 
-.field final synthetic this$0:Lcom/android/settings/location/RecentLocationApps;
+.field final synthetic this$0:Lcom/android/settings_ext/location/RecentLocationApps;
 
 
 # direct methods
-.method public constructor <init>(Lcom/android/settings/location/RecentLocationApps;Ljava/lang/String;Landroid/os/UserHandle;)V
+.method public constructor <init>(Lcom/android/settings_ext/location/RecentLocationApps;Ljava/lang/String;Landroid/os/UserHandle;)V
     .locals 0
     .param p2, "packageName"    # Ljava/lang/String;
     .param p3, "userHandle"    # Landroid/os/UserHandle;
 
     .prologue
     .line 66
-    iput-object p1, p0, Lcom/android/settings/location/RecentLocationApps$PackageEntryClickedListener;->this$0:Lcom/android/settings/location/RecentLocationApps;
+    iput-object p1, p0, Lcom/android/settings_ext/location/RecentLocationApps$PackageEntryClickedListener;->this$0:Lcom/android/settings_ext/location/RecentLocationApps;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 67
-    iput-object p2, p0, Lcom/android/settings/location/RecentLocationApps$PackageEntryClickedListener;->mPackage:Ljava/lang/String;
+    iput-object p2, p0, Lcom/android/settings_ext/location/RecentLocationApps$PackageEntryClickedListener;->mPackage:Ljava/lang/String;
 
     .line 68
-    iput-object p3, p0, Lcom/android/settings/location/RecentLocationApps$PackageEntryClickedListener;->mUserHandle:Landroid/os/UserHandle;
+    iput-object p3, p0, Lcom/android/settings_ext/location/RecentLocationApps$PackageEntryClickedListener;->mUserHandle:Landroid/os/UserHandle;
 
     .line 69
     return-void
@@ -63,19 +63,19 @@
     .local v2, "args":Landroid/os/Bundle;
     const-string v0, "package"
 
-    iget-object v1, p0, Lcom/android/settings/location/RecentLocationApps$PackageEntryClickedListener;->mPackage:Ljava/lang/String;
+    iget-object v1, p0, Lcom/android/settings_ext/location/RecentLocationApps$PackageEntryClickedListener;->mPackage:Ljava/lang/String;
 
     invoke-virtual {v2, v0, v1}, Landroid/os/Bundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 76
-    iget-object v0, p0, Lcom/android/settings/location/RecentLocationApps$PackageEntryClickedListener;->this$0:Lcom/android/settings/location/RecentLocationApps;
+    iget-object v0, p0, Lcom/android/settings_ext/location/RecentLocationApps$PackageEntryClickedListener;->this$0:Lcom/android/settings_ext/location/RecentLocationApps;
 
-    # getter for: Lcom/android/settings/location/RecentLocationApps;->mActivity:Lcom/android/settings/SettingsActivity;
-    invoke-static {v0}, Lcom/android/settings/location/RecentLocationApps;->access$000(Lcom/android/settings/location/RecentLocationApps;)Lcom/android/settings/SettingsActivity;
+    # getter for: Lcom/android/settings_ext/location/RecentLocationApps;->mActivity:Lcom/android/settings_ext/SettingsActivity;
+    invoke-static {v0}, Lcom/android/settings_ext/location/RecentLocationApps;->access$000(Lcom/android/settings_ext/location/RecentLocationApps;)Lcom/android/settings_ext/SettingsActivity;
 
     move-result-object v0
 
-    const-class v1, Lcom/android/settings/applications/InstalledAppDetails;
+    const-class v1, Lcom/android/settings_ext/applications/InstalledAppDetails;
 
     invoke-virtual {v1}, Ljava/lang/Class;->getName()Ljava/lang/String;
 
@@ -85,9 +85,9 @@
 
     const/4 v4, 0x0
 
-    iget-object v5, p0, Lcom/android/settings/location/RecentLocationApps$PackageEntryClickedListener;->mUserHandle:Landroid/os/UserHandle;
+    iget-object v5, p0, Lcom/android/settings_ext/location/RecentLocationApps$PackageEntryClickedListener;->mUserHandle:Landroid/os/UserHandle;
 
-    invoke-virtual/range {v0 .. v5}, Lcom/android/settings/SettingsActivity;->startPreferencePanelAsUser(Ljava/lang/String;Landroid/os/Bundle;ILjava/lang/CharSequence;Landroid/os/UserHandle;)V
+    invoke-virtual/range {v0 .. v5}, Lcom/android/settings_ext/SettingsActivity;->startPreferencePanelAsUser(Ljava/lang/String;Landroid/os/Bundle;ILjava/lang/CharSequence;Landroid/os/UserHandle;)V
 
     .line 78
     const/4 v0, 0x1

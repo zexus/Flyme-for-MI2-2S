@@ -1,4 +1,4 @@
-.class public Lcom/android/settings/accounts/ProviderPreference;
+.class public Lcom/android/settings_ext/accounts/ProviderPreference;
 .super Landroid/preference/Preference;
 .source "ProviderPreference.java"
 
@@ -20,18 +20,18 @@
     invoke-direct {p0, p1}, Landroid/preference/Preference;-><init>(Landroid/content/Context;)V
 
     .line 37
-    iput-object p2, p0, Lcom/android/settings/accounts/ProviderPreference;->mAccountType:Ljava/lang/String;
+    iput-object p2, p0, Lcom/android/settings_ext/accounts/ProviderPreference;->mAccountType:Ljava/lang/String;
 
     .line 38
-    invoke-virtual {p0, p3}, Lcom/android/settings/accounts/ProviderPreference;->setIcon(Landroid/graphics/drawable/Drawable;)V
+    invoke-virtual {p0, p3}, Lcom/android/settings_ext/accounts/ProviderPreference;->setIcon(Landroid/graphics/drawable/Drawable;)V
 
     .line 39
     const/4 v0, 0x0
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/accounts/ProviderPreference;->setPersistent(Z)V
+    invoke-virtual {p0, v0}, Lcom/android/settings_ext/accounts/ProviderPreference;->setPersistent(Z)V
 
     .line 40
-    invoke-virtual {p0, p4}, Lcom/android/settings/accounts/ProviderPreference;->setTitle(Ljava/lang/CharSequence;)V
+    invoke-virtual {p0, p4}, Lcom/android/settings_ext/accounts/ProviderPreference;->setTitle(Ljava/lang/CharSequence;)V
 
     .line 41
     return-void
@@ -44,7 +44,7 @@
 
     .prologue
     .line 44
-    iget-object v0, p0, Lcom/android/settings/accounts/ProviderPreference;->mAccountType:Ljava/lang/String;
+    iget-object v0, p0, Lcom/android/settings_ext/accounts/ProviderPreference;->mAccountType:Ljava/lang/String;
 
     return-object v0
 .end method

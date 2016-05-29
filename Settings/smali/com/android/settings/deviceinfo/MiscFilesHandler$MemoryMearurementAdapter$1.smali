@@ -1,4 +1,4 @@
-.class Lcom/android/settings/deviceinfo/MiscFilesHandler$MemoryMearurementAdapter$1;
+.class Lcom/android/settings_ext/deviceinfo/MiscFilesHandler$MemoryMearurementAdapter$1;
 .super Ljava/lang/Object;
 .source "MiscFilesHandler.java"
 
@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/android/settings/deviceinfo/MiscFilesHandler$MemoryMearurementAdapter;->getView(ILandroid/view/View;Landroid/view/ViewGroup;)Landroid/view/View;
+    value = Lcom/android/settings_ext/deviceinfo/MiscFilesHandler$MemoryMearurementAdapter;->getView(ILandroid/view/View;Landroid/view/ViewGroup;)Landroid/view/View;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -18,7 +18,7 @@
 
 
 # instance fields
-.field final synthetic this$1:Lcom/android/settings/deviceinfo/MiscFilesHandler$MemoryMearurementAdapter;
+.field final synthetic this$1:Lcom/android/settings_ext/deviceinfo/MiscFilesHandler$MemoryMearurementAdapter;
 
 .field final synthetic val$listPosition:I
 
@@ -26,16 +26,16 @@
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/deviceinfo/MiscFilesHandler$MemoryMearurementAdapter;Landroid/widget/ListView;I)V
+.method constructor <init>(Lcom/android/settings_ext/deviceinfo/MiscFilesHandler$MemoryMearurementAdapter;Landroid/widget/ListView;I)V
     .locals 0
 
     .prologue
     .line 257
-    iput-object p1, p0, Lcom/android/settings/deviceinfo/MiscFilesHandler$MemoryMearurementAdapter$1;->this$1:Lcom/android/settings/deviceinfo/MiscFilesHandler$MemoryMearurementAdapter;
+    iput-object p1, p0, Lcom/android/settings_ext/deviceinfo/MiscFilesHandler$MemoryMearurementAdapter$1;->this$1:Lcom/android/settings_ext/deviceinfo/MiscFilesHandler$MemoryMearurementAdapter;
 
-    iput-object p2, p0, Lcom/android/settings/deviceinfo/MiscFilesHandler$MemoryMearurementAdapter$1;->val$listView:Landroid/widget/ListView;
+    iput-object p2, p0, Lcom/android/settings_ext/deviceinfo/MiscFilesHandler$MemoryMearurementAdapter$1;->val$listView:Landroid/widget/ListView;
 
-    iput p3, p0, Lcom/android/settings/deviceinfo/MiscFilesHandler$MemoryMearurementAdapter$1;->val$listPosition:I
+    iput p3, p0, Lcom/android/settings_ext/deviceinfo/MiscFilesHandler$MemoryMearurementAdapter$1;->val$listPosition:I
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -51,9 +51,9 @@
 
     .prologue
     .line 261
-    iget-object v0, p0, Lcom/android/settings/deviceinfo/MiscFilesHandler$MemoryMearurementAdapter$1;->val$listView:Landroid/widget/ListView;
+    iget-object v0, p0, Lcom/android/settings_ext/deviceinfo/MiscFilesHandler$MemoryMearurementAdapter$1;->val$listView:Landroid/widget/ListView;
 
-    iget v1, p0, Lcom/android/settings/deviceinfo/MiscFilesHandler$MemoryMearurementAdapter$1;->val$listPosition:I
+    iget v1, p0, Lcom/android/settings_ext/deviceinfo/MiscFilesHandler$MemoryMearurementAdapter$1;->val$listPosition:I
 
     invoke-virtual {v0, v1, p2}, Landroid/widget/ListView;->setItemChecked(IZ)V
 

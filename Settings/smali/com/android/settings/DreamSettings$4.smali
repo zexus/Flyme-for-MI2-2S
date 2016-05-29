@@ -1,4 +1,4 @@
-.class Lcom/android/settings/DreamSettings$4;
+.class Lcom/android/settings_ext/DreamSettings$4;
 .super Ljava/lang/Object;
 .source "DreamSettings.java"
 
@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/android/settings/DreamSettings;->createWhenToDreamDialog()Landroid/app/Dialog;
+    value = Lcom/android/settings_ext/DreamSettings;->createWhenToDreamDialog()Landroid/app/Dialog;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -18,16 +18,16 @@
 
 
 # instance fields
-.field final synthetic this$0:Lcom/android/settings/DreamSettings;
+.field final synthetic this$0:Lcom/android/settings_ext/DreamSettings;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/DreamSettings;)V
+.method constructor <init>(Lcom/android/settings_ext/DreamSettings;)V
     .locals 0
 
     .prologue
     .line 202
-    iput-object p1, p0, Lcom/android/settings/DreamSettings$4;->this$0:Lcom/android/settings/DreamSettings;
+    iput-object p1, p0, Lcom/android/settings_ext/DreamSettings$4;->this$0:Lcom/android/settings_ext/DreamSettings;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -49,10 +49,10 @@
     const/4 v2, 0x1
 
     .line 204
-    iget-object v0, p0, Lcom/android/settings/DreamSettings$4;->this$0:Lcom/android/settings/DreamSettings;
+    iget-object v0, p0, Lcom/android/settings_ext/DreamSettings$4;->this$0:Lcom/android/settings_ext/DreamSettings;
 
-    # getter for: Lcom/android/settings/DreamSettings;->mBackend:Lcom/android/settings/DreamBackend;
-    invoke-static {v0}, Lcom/android/settings/DreamSettings;->access$100(Lcom/android/settings/DreamSettings;)Lcom/android/settings/DreamBackend;
+    # getter for: Lcom/android/settings_ext/DreamSettings;->mBackend:Lcom/android/settings_ext/DreamBackend;
+    invoke-static {v0}, Lcom/android/settings_ext/DreamSettings;->access$100(Lcom/android/settings_ext/DreamSettings;)Lcom/android/settings_ext/DreamBackend;
 
     move-result-object v3
 
@@ -64,13 +64,13 @@
     move v0, v2
 
     :goto_0
-    invoke-virtual {v3, v0}, Lcom/android/settings/DreamBackend;->setActivatedOnDock(Z)V
+    invoke-virtual {v3, v0}, Lcom/android/settings_ext/DreamBackend;->setActivatedOnDock(Z)V
 
     .line 205
-    iget-object v0, p0, Lcom/android/settings/DreamSettings$4;->this$0:Lcom/android/settings/DreamSettings;
+    iget-object v0, p0, Lcom/android/settings_ext/DreamSettings$4;->this$0:Lcom/android/settings_ext/DreamSettings;
 
-    # getter for: Lcom/android/settings/DreamSettings;->mBackend:Lcom/android/settings/DreamBackend;
-    invoke-static {v0}, Lcom/android/settings/DreamSettings;->access$100(Lcom/android/settings/DreamSettings;)Lcom/android/settings/DreamBackend;
+    # getter for: Lcom/android/settings_ext/DreamSettings;->mBackend:Lcom/android/settings_ext/DreamBackend;
+    invoke-static {v0}, Lcom/android/settings_ext/DreamSettings;->access$100(Lcom/android/settings_ext/DreamSettings;)Lcom/android/settings_ext/DreamBackend;
 
     move-result-object v0
 
@@ -82,7 +82,7 @@
     move v1, v2
 
     :cond_2
-    invoke-virtual {v0, v1}, Lcom/android/settings/DreamBackend;->setActivatedOnSleep(Z)V
+    invoke-virtual {v0, v1}, Lcom/android/settings_ext/DreamBackend;->setActivatedOnSleep(Z)V
 
     .line 206
     invoke-interface {p1}, Landroid/content/DialogInterface;->dismiss()V

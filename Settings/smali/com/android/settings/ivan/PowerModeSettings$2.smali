@@ -1,4 +1,4 @@
-.class Lcom/android/settings/ivan/PowerModeSettings$2;
+.class Lcom/android/settings_ext/ivan/PowerModeSettings$2;
 .super Ljava/lang/Object;
 .source "PowerModeSettings.java"
 
@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/android/settings/ivan/PowerModeSettings;->createPowerModeDialog()V
+    value = Lcom/android/settings_ext/ivan/PowerModeSettings;->createPowerModeDialog()V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -18,16 +18,16 @@
 
 
 # instance fields
-.field final synthetic this$0:Lcom/android/settings/ivan/PowerModeSettings;
+.field final synthetic this$0:Lcom/android/settings_ext/ivan/PowerModeSettings;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/ivan/PowerModeSettings;)V
+.method constructor <init>(Lcom/android/settings_ext/ivan/PowerModeSettings;)V
     .locals 0
 
     .prologue
     .line 57
-    iput-object p1, p0, Lcom/android/settings/ivan/PowerModeSettings$2;->this$0:Lcom/android/settings/ivan/PowerModeSettings;
+    iput-object p1, p0, Lcom/android/settings_ext/ivan/PowerModeSettings$2;->this$0:Lcom/android/settings_ext/ivan/PowerModeSettings;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -42,9 +42,9 @@
 
     .prologue
     .line 60
-    iget-object v0, p0, Lcom/android/settings/ivan/PowerModeSettings$2;->this$0:Lcom/android/settings/ivan/PowerModeSettings;
+    iget-object v0, p0, Lcom/android/settings_ext/ivan/PowerModeSettings$2;->this$0:Lcom/android/settings_ext/ivan/PowerModeSettings;
 
-    invoke-virtual {v0}, Lcom/android/settings/ivan/PowerModeSettings;->finish()V
+    invoke-virtual {v0}, Lcom/android/settings_ext/ivan/PowerModeSettings;->finish()V
 
     .line 61
     return-void

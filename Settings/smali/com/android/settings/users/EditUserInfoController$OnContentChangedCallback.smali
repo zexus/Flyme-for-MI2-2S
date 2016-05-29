@@ -1,11 +1,11 @@
-.class public interface abstract Lcom/android/settings/users/EditUserInfoController$OnContentChangedCallback;
+.class public interface abstract Lcom/android/settings_ext/users/EditUserInfoController$OnContentChangedCallback;
 .super Ljava/lang/Object;
 .source "EditUserInfoController.java"
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/android/settings/users/EditUserInfoController;
+    value = Lcom/android/settings_ext/users/EditUserInfoController;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;

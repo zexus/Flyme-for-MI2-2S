@@ -1,4 +1,4 @@
-.class Lcom/android/settings/inputmethod/SpellCheckersSettings$3;
+.class Lcom/android/settings_ext/inputmethod/SpellCheckersSettings$3;
 .super Ljava/lang/Object;
 .source "SpellCheckersSettings.java"
 
@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/android/settings/inputmethod/SpellCheckersSettings;->showSecurityWarnDialog(Lcom/android/settings/inputmethod/SpellCheckerPreference;)V
+    value = Lcom/android/settings_ext/inputmethod/SpellCheckersSettings;->showSecurityWarnDialog(Lcom/android/settings_ext/inputmethod/SpellCheckerPreference;)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -18,16 +18,16 @@
 
 
 # instance fields
-.field final synthetic this$0:Lcom/android/settings/inputmethod/SpellCheckersSettings;
+.field final synthetic this$0:Lcom/android/settings_ext/inputmethod/SpellCheckersSettings;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/inputmethod/SpellCheckersSettings;)V
+.method constructor <init>(Lcom/android/settings_ext/inputmethod/SpellCheckersSettings;)V
     .locals 0
 
     .prologue
     .line 220
-    iput-object p1, p0, Lcom/android/settings/inputmethod/SpellCheckersSettings$3;->this$0:Lcom/android/settings/inputmethod/SpellCheckersSettings;
+    iput-object p1, p0, Lcom/android/settings_ext/inputmethod/SpellCheckersSettings$3;->this$0:Lcom/android/settings_ext/inputmethod/SpellCheckersSettings;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 

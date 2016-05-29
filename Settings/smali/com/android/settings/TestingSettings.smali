@@ -1,4 +1,4 @@
-.class public Lcom/android/settings/TestingSettings;
+.class public Lcom/android/settings_ext/TestingSettings;
 .super Landroid/preference/PreferenceActivity;
 .source "TestingSettings.java"
 
@@ -27,7 +27,7 @@
     .line 28
     const v0, 0x7f06003f
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/TestingSettings;->addPreferencesFromResource(I)V
+    invoke-virtual {p0, v0}, Lcom/android/settings_ext/TestingSettings;->addPreferencesFromResource(I)V
 
     .line 29
     return-void

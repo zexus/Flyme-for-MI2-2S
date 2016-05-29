@@ -1,4 +1,4 @@
-.class Lcom/android/settings/DataUsageSummary$3;
+.class Lcom/android/settings_ext/DataUsageSummary$3;
 .super Ljava/lang/Object;
 .source "DataUsageSummary.java"
 
@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/android/settings/DataUsageSummary;
+    value = Lcom/android/settings_ext/DataUsageSummary;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -18,16 +18,16 @@
 
 
 # instance fields
-.field final synthetic this$0:Lcom/android/settings/DataUsageSummary;
+.field final synthetic this$0:Lcom/android/settings_ext/DataUsageSummary;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/DataUsageSummary;)V
+.method constructor <init>(Lcom/android/settings_ext/DataUsageSummary;)V
     .locals 0
 
     .prologue
     .line 702
-    iput-object p1, p0, Lcom/android/settings/DataUsageSummary$3;->this$0:Lcom/android/settings/DataUsageSummary;
+    iput-object p1, p0, Lcom/android/settings_ext/DataUsageSummary$3;->this$0:Lcom/android/settings_ext/DataUsageSummary;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -44,10 +44,10 @@
     .line 705
     new-instance v0, Landroid/view/View;
 
-    iget-object v1, p0, Lcom/android/settings/DataUsageSummary$3;->this$0:Lcom/android/settings/DataUsageSummary;
+    iget-object v1, p0, Lcom/android/settings_ext/DataUsageSummary$3;->this$0:Lcom/android/settings_ext/DataUsageSummary;
 
-    # getter for: Lcom/android/settings/DataUsageSummary;->mTabHost:Landroid/widget/TabHost;
-    invoke-static {v1}, Lcom/android/settings/DataUsageSummary;->access$200(Lcom/android/settings/DataUsageSummary;)Landroid/widget/TabHost;
+    # getter for: Lcom/android/settings_ext/DataUsageSummary;->mTabHost:Landroid/widget/TabHost;
+    invoke-static {v1}, Lcom/android/settings_ext/DataUsageSummary;->access$200(Lcom/android/settings_ext/DataUsageSummary;)Landroid/widget/TabHost;
 
     move-result-object v1
 

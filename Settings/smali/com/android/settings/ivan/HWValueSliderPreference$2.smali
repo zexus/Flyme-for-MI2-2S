@@ -1,4 +1,4 @@
-.class Lcom/android/settings/ivan/HWValueSliderPreference$2;
+.class Lcom/android/settings_ext/ivan/HWValueSliderPreference$2;
 .super Ljava/lang/Object;
 .source "HWValueSliderPreference.java"
 
@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/android/settings/ivan/HWValueSliderPreference;->showDialog(Landroid/os/Bundle;)V
+    value = Lcom/android/settings_ext/ivan/HWValueSliderPreference;->showDialog(Landroid/os/Bundle;)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -18,16 +18,16 @@
 
 
 # instance fields
-.field final synthetic this$0:Lcom/android/settings/ivan/HWValueSliderPreference;
+.field final synthetic this$0:Lcom/android/settings_ext/ivan/HWValueSliderPreference;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/ivan/HWValueSliderPreference;)V
+.method constructor <init>(Lcom/android/settings_ext/ivan/HWValueSliderPreference;)V
     .locals 0
 
     .prologue
     .line 131
-    iput-object p1, p0, Lcom/android/settings/ivan/HWValueSliderPreference$2;->this$0:Lcom/android/settings/ivan/HWValueSliderPreference;
+    iput-object p1, p0, Lcom/android/settings_ext/ivan/HWValueSliderPreference$2;->this$0:Lcom/android/settings_ext/ivan/HWValueSliderPreference;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -42,28 +42,28 @@
 
     .prologue
     .line 134
-    iget-object v0, p0, Lcom/android/settings/ivan/HWValueSliderPreference$2;->this$0:Lcom/android/settings/ivan/HWValueSliderPreference;
+    iget-object v0, p0, Lcom/android/settings_ext/ivan/HWValueSliderPreference$2;->this$0:Lcom/android/settings_ext/ivan/HWValueSliderPreference;
 
-    # getter for: Lcom/android/settings/ivan/HWValueSliderPreference;->mSeekBar:Landroid/widget/SeekBar;
-    invoke-static {v0}, Lcom/android/settings/ivan/HWValueSliderPreference;->access$200(Lcom/android/settings/ivan/HWValueSliderPreference;)Landroid/widget/SeekBar;
+    # getter for: Lcom/android/settings_ext/ivan/HWValueSliderPreference;->mSeekBar:Landroid/widget/SeekBar;
+    invoke-static {v0}, Lcom/android/settings_ext/ivan/HWValueSliderPreference;->access$200(Lcom/android/settings_ext/ivan/HWValueSliderPreference;)Landroid/widget/SeekBar;
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/android/settings/ivan/HWValueSliderPreference$2;->this$0:Lcom/android/settings/ivan/HWValueSliderPreference;
+    iget-object v1, p0, Lcom/android/settings_ext/ivan/HWValueSliderPreference$2;->this$0:Lcom/android/settings_ext/ivan/HWValueSliderPreference;
 
-    # getter for: Lcom/android/settings/ivan/HWValueSliderPreference;->mHw:Lcom/android/settings/ivan/HWValueSliderPreference$HardwareInterface;
-    invoke-static {v1}, Lcom/android/settings/ivan/HWValueSliderPreference;->access$000(Lcom/android/settings/ivan/HWValueSliderPreference;)Lcom/android/settings/ivan/HWValueSliderPreference$HardwareInterface;
+    # getter for: Lcom/android/settings_ext/ivan/HWValueSliderPreference;->mHw:Lcom/android/settings_ext/ivan/HWValueSliderPreference$HardwareInterface;
+    invoke-static {v1}, Lcom/android/settings_ext/ivan/HWValueSliderPreference;->access$000(Lcom/android/settings_ext/ivan/HWValueSliderPreference;)Lcom/android/settings_ext/ivan/HWValueSliderPreference$HardwareInterface;
 
     move-result-object v1
 
-    invoke-interface {v1}, Lcom/android/settings/ivan/HWValueSliderPreference$HardwareInterface;->getDefaultValue()I
+    invoke-interface {v1}, Lcom/android/settings_ext/ivan/HWValueSliderPreference$HardwareInterface;->getDefaultValue()I
 
     move-result v1
 
-    iget-object v2, p0, Lcom/android/settings/ivan/HWValueSliderPreference$2;->this$0:Lcom/android/settings/ivan/HWValueSliderPreference;
+    iget-object v2, p0, Lcom/android/settings_ext/ivan/HWValueSliderPreference$2;->this$0:Lcom/android/settings_ext/ivan/HWValueSliderPreference;
 
-    # getter for: Lcom/android/settings/ivan/HWValueSliderPreference;->mMin:I
-    invoke-static {v2}, Lcom/android/settings/ivan/HWValueSliderPreference;->access$100(Lcom/android/settings/ivan/HWValueSliderPreference;)I
+    # getter for: Lcom/android/settings_ext/ivan/HWValueSliderPreference;->mMin:I
+    invoke-static {v2}, Lcom/android/settings_ext/ivan/HWValueSliderPreference;->access$100(Lcom/android/settings_ext/ivan/HWValueSliderPreference;)I
 
     move-result v2
 

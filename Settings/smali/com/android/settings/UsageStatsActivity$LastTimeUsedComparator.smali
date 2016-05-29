@@ -1,4 +1,4 @@
-.class public Lcom/android/settings/UsageStatsActivity$LastTimeUsedComparator;
+.class public Lcom/android/settings_ext/UsageStatsActivity$LastTimeUsedComparator;
 .super Ljava/lang/Object;
 .source "UsageStatsActivity.java"
 
@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/android/settings/UsageStatsActivity;
+    value = Lcom/android/settings_ext/UsageStatsActivity;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -75,7 +75,7 @@
     check-cast p2, Landroid/app/usage/UsageStats;
 
     .end local p2    # "x1":Ljava/lang/Object;
-    invoke-virtual {p0, p1, p2}, Lcom/android/settings/UsageStatsActivity$LastTimeUsedComparator;->compare(Landroid/app/usage/UsageStats;Landroid/app/usage/UsageStats;)I
+    invoke-virtual {p0, p1, p2}, Lcom/android/settings_ext/UsageStatsActivity$LastTimeUsedComparator;->compare(Landroid/app/usage/UsageStats;Landroid/app/usage/UsageStats;)I
 
     move-result v0
 

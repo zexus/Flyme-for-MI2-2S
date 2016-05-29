@@ -1,11 +1,11 @@
-.class Lcom/android/settings/PointerSpeedPreference$1;
+.class Lcom/android/settings_ext/PointerSpeedPreference$1;
 .super Landroid/database/ContentObserver;
 .source "PointerSpeedPreference.java"
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/android/settings/PointerSpeedPreference;
+    value = Lcom/android/settings_ext/PointerSpeedPreference;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -15,17 +15,17 @@
 
 
 # instance fields
-.field final synthetic this$0:Lcom/android/settings/PointerSpeedPreference;
+.field final synthetic this$0:Lcom/android/settings_ext/PointerSpeedPreference;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/PointerSpeedPreference;Landroid/os/Handler;)V
+.method constructor <init>(Lcom/android/settings_ext/PointerSpeedPreference;Landroid/os/Handler;)V
     .locals 0
     .param p2, "x0"    # Landroid/os/Handler;
 
     .prologue
     .line 43
-    iput-object p1, p0, Lcom/android/settings/PointerSpeedPreference$1;->this$0:Lcom/android/settings/PointerSpeedPreference;
+    iput-object p1, p0, Lcom/android/settings_ext/PointerSpeedPreference$1;->this$0:Lcom/android/settings_ext/PointerSpeedPreference;
 
     invoke-direct {p0, p2}, Landroid/database/ContentObserver;-><init>(Landroid/os/Handler;)V
 
@@ -40,10 +40,10 @@
 
     .prologue
     .line 46
-    iget-object v0, p0, Lcom/android/settings/PointerSpeedPreference$1;->this$0:Lcom/android/settings/PointerSpeedPreference;
+    iget-object v0, p0, Lcom/android/settings_ext/PointerSpeedPreference$1;->this$0:Lcom/android/settings_ext/PointerSpeedPreference;
 
-    # invokes: Lcom/android/settings/PointerSpeedPreference;->onSpeedChanged()V
-    invoke-static {v0}, Lcom/android/settings/PointerSpeedPreference;->access$000(Lcom/android/settings/PointerSpeedPreference;)V
+    # invokes: Lcom/android/settings_ext/PointerSpeedPreference;->onSpeedChanged()V
+    invoke-static {v0}, Lcom/android/settings_ext/PointerSpeedPreference;->access$000(Lcom/android/settings_ext/PointerSpeedPreference;)V
 
     .line 47
     return-void

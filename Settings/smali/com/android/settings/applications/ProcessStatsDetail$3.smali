@@ -1,11 +1,11 @@
-.class Lcom/android/settings/applications/ProcessStatsDetail$3;
+.class Lcom/android/settings_ext/applications/ProcessStatsDetail$3;
 .super Landroid/content/BroadcastReceiver;
 .source "ProcessStatsDetail.java"
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/android/settings/applications/ProcessStatsDetail;
+    value = Lcom/android/settings_ext/applications/ProcessStatsDetail;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -15,16 +15,16 @@
 
 
 # instance fields
-.field final synthetic this$0:Lcom/android/settings/applications/ProcessStatsDetail;
+.field final synthetic this$0:Lcom/android/settings_ext/applications/ProcessStatsDetail;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/applications/ProcessStatsDetail;)V
+.method constructor <init>(Lcom/android/settings_ext/applications/ProcessStatsDetail;)V
     .locals 0
 
     .prologue
     .line 278
-    iput-object p1, p0, Lcom/android/settings/applications/ProcessStatsDetail$3;->this$0:Lcom/android/settings/applications/ProcessStatsDetail;
+    iput-object p1, p0, Lcom/android/settings_ext/applications/ProcessStatsDetail$3;->this$0:Lcom/android/settings_ext/applications/ProcessStatsDetail;
 
     invoke-direct {p0}, Landroid/content/BroadcastReceiver;-><init>()V
 
@@ -40,14 +40,14 @@
 
     .prologue
     .line 281
-    iget-object v0, p0, Lcom/android/settings/applications/ProcessStatsDetail$3;->this$0:Lcom/android/settings/applications/ProcessStatsDetail;
+    iget-object v0, p0, Lcom/android/settings_ext/applications/ProcessStatsDetail$3;->this$0:Lcom/android/settings_ext/applications/ProcessStatsDetail;
 
-    # getter for: Lcom/android/settings/applications/ProcessStatsDetail;->mForceStopButton:Landroid/widget/Button;
-    invoke-static {v0}, Lcom/android/settings/applications/ProcessStatsDetail;->access$000(Lcom/android/settings/applications/ProcessStatsDetail;)Landroid/widget/Button;
+    # getter for: Lcom/android/settings_ext/applications/ProcessStatsDetail;->mForceStopButton:Landroid/widget/Button;
+    invoke-static {v0}, Lcom/android/settings_ext/applications/ProcessStatsDetail;->access$000(Lcom/android/settings_ext/applications/ProcessStatsDetail;)Landroid/widget/Button;
 
     move-result-object v1
 
-    invoke-virtual {p0}, Lcom/android/settings/applications/ProcessStatsDetail$3;->getResultCode()I
+    invoke-virtual {p0}, Lcom/android/settings_ext/applications/ProcessStatsDetail$3;->getResultCode()I
 
     move-result v0
 

@@ -1,4 +1,4 @@
-.class final Lcom/android/settings/DataUsageSummary$AppItem$1;
+.class final Lcom/android/settings_ext/DataUsageSummary$AppItem$1;
 .super Ljava/lang/Object;
 .source "DataUsageSummary.java"
 
@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/android/settings/DataUsageSummary$AppItem;
+    value = Lcom/android/settings_ext/DataUsageSummary$AppItem;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -21,7 +21,7 @@
         "Ljava/lang/Object;",
         "Landroid/os/Parcelable$Creator",
         "<",
-        "Lcom/android/settings/DataUsageSummary$AppItem;",
+        "Lcom/android/settings_ext/DataUsageSummary$AppItem;",
         ">;"
     }
 .end annotation
@@ -40,15 +40,15 @@
 
 
 # virtual methods
-.method public createFromParcel(Landroid/os/Parcel;)Lcom/android/settings/DataUsageSummary$AppItem;
+.method public createFromParcel(Landroid/os/Parcel;)Lcom/android/settings_ext/DataUsageSummary$AppItem;
     .locals 1
     .param p1, "in"    # Landroid/os/Parcel;
 
     .prologue
     .line 1554
-    new-instance v0, Lcom/android/settings/DataUsageSummary$AppItem;
+    new-instance v0, Lcom/android/settings_ext/DataUsageSummary$AppItem;
 
-    invoke-direct {v0, p1}, Lcom/android/settings/DataUsageSummary$AppItem;-><init>(Landroid/os/Parcel;)V
+    invoke-direct {v0, p1}, Lcom/android/settings_ext/DataUsageSummary$AppItem;-><init>(Landroid/os/Parcel;)V
 
     return-object v0
 .end method
@@ -59,20 +59,20 @@
 
     .prologue
     .line 1551
-    invoke-virtual {p0, p1}, Lcom/android/settings/DataUsageSummary$AppItem$1;->createFromParcel(Landroid/os/Parcel;)Lcom/android/settings/DataUsageSummary$AppItem;
+    invoke-virtual {p0, p1}, Lcom/android/settings_ext/DataUsageSummary$AppItem$1;->createFromParcel(Landroid/os/Parcel;)Lcom/android/settings_ext/DataUsageSummary$AppItem;
 
     move-result-object v0
 
     return-object v0
 .end method
 
-.method public newArray(I)[Lcom/android/settings/DataUsageSummary$AppItem;
+.method public newArray(I)[Lcom/android/settings_ext/DataUsageSummary$AppItem;
     .locals 1
     .param p1, "size"    # I
 
     .prologue
     .line 1559
-    new-array v0, p1, [Lcom/android/settings/DataUsageSummary$AppItem;
+    new-array v0, p1, [Lcom/android/settings_ext/DataUsageSummary$AppItem;
 
     return-object v0
 .end method
@@ -83,7 +83,7 @@
 
     .prologue
     .line 1551
-    invoke-virtual {p0, p1}, Lcom/android/settings/DataUsageSummary$AppItem$1;->newArray(I)[Lcom/android/settings/DataUsageSummary$AppItem;
+    invoke-virtual {p0, p1}, Lcom/android/settings_ext/DataUsageSummary$AppItem$1;->newArray(I)[Lcom/android/settings_ext/DataUsageSummary$AppItem;
 
     move-result-object v0
 

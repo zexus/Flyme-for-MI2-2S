@@ -1,11 +1,11 @@
-.class final Lcom/android/settings/DisplaySettings$3;
-.super Lcom/android/settings/search/BaseSearchIndexProvider;
+.class final Lcom/android/settings_ext/DisplaySettings$3;
+.super Lcom/android/settings_ext/search/BaseSearchIndexProvider;
 .source "DisplaySettings.java"
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/android/settings/DisplaySettings;
+    value = Lcom/android/settings_ext/DisplaySettings;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -20,7 +20,7 @@
 
     .prologue
     .line 401
-    invoke-direct {p0}, Lcom/android/settings/search/BaseSearchIndexProvider;-><init>()V
+    invoke-direct {p0}, Lcom/android/settings_ext/search/BaseSearchIndexProvider;-><init>()V
 
     return-void
 .end method
@@ -73,8 +73,8 @@
 
     move-result-object v1
 
-    # invokes: Lcom/android/settings/DisplaySettings;->isAutomaticBrightnessAvailable(Landroid/content/res/Resources;)Z
-    invoke-static {v1}, Lcom/android/settings/DisplaySettings;->access$100(Landroid/content/res/Resources;)Z
+    # invokes: Lcom/android/settings_ext/DisplaySettings;->isAutomaticBrightnessAvailable(Landroid/content/res/Resources;)Z
+    invoke-static {v1}, Lcom/android/settings_ext/DisplaySettings;->access$100(Landroid/content/res/Resources;)Z
 
     move-result v1
 
@@ -87,8 +87,8 @@
 
     .line 425
     :cond_1
-    # invokes: Lcom/android/settings/DisplaySettings;->isLiftToWakeAvailable(Landroid/content/Context;)Z
-    invoke-static {p1}, Lcom/android/settings/DisplaySettings;->access$200(Landroid/content/Context;)Z
+    # invokes: Lcom/android/settings_ext/DisplaySettings;->isLiftToWakeAvailable(Landroid/content/Context;)Z
+    invoke-static {p1}, Lcom/android/settings_ext/DisplaySettings;->access$200(Landroid/content/Context;)Z
 
     move-result v1
 
@@ -101,8 +101,8 @@
 
     .line 428
     :cond_2
-    # invokes: Lcom/android/settings/DisplaySettings;->isDozeAvailable(Landroid/content/Context;)Z
-    invoke-static {p1}, Lcom/android/settings/DisplaySettings;->access$300(Landroid/content/Context;)Z
+    # invokes: Lcom/android/settings_ext/DisplaySettings;->isDozeAvailable(Landroid/content/Context;)Z
+    invoke-static {p1}, Lcom/android/settings_ext/DisplaySettings;->access$300(Landroid/content/Context;)Z
 
     move-result v1
 

@@ -1,11 +1,11 @@
-.class Lcom/android/settings/widget/SettingsAppWidgetProvider$SettingsObserver;
+.class Lcom/android/settings_ext/widget/SettingsAppWidgetProvider$SettingsObserver;
 .super Landroid/database/ContentObserver;
 .source "SettingsAppWidgetProvider.java"
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/android/settings/widget/SettingsAppWidgetProvider;
+    value = Lcom/android/settings_ext/widget/SettingsAppWidgetProvider;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -29,7 +29,7 @@
     invoke-direct {p0, p1}, Landroid/database/ContentObserver;-><init>(Landroid/os/Handler;)V
 
     .line 937
-    iput-object p2, p0, Lcom/android/settings/widget/SettingsAppWidgetProvider$SettingsObserver;->mContext:Landroid/content/Context;
+    iput-object p2, p0, Lcom/android/settings_ext/widget/SettingsAppWidgetProvider$SettingsObserver;->mContext:Landroid/content/Context;
 
     .line 938
     return-void
@@ -43,9 +43,9 @@
 
     .prologue
     .line 955
-    iget-object v0, p0, Lcom/android/settings/widget/SettingsAppWidgetProvider$SettingsObserver;->mContext:Landroid/content/Context;
+    iget-object v0, p0, Lcom/android/settings_ext/widget/SettingsAppWidgetProvider$SettingsObserver;->mContext:Landroid/content/Context;
 
-    invoke-static {v0}, Lcom/android/settings/widget/SettingsAppWidgetProvider;->updateWidget(Landroid/content/Context;)V
+    invoke-static {v0}, Lcom/android/settings_ext/widget/SettingsAppWidgetProvider;->updateWidget(Landroid/content/Context;)V
 
     .line 956
     return-void
@@ -58,7 +58,7 @@
     const/4 v2, 0x0
 
     .line 941
-    iget-object v1, p0, Lcom/android/settings/widget/SettingsAppWidgetProvider$SettingsObserver;->mContext:Landroid/content/Context;
+    iget-object v1, p0, Lcom/android/settings_ext/widget/SettingsAppWidgetProvider$SettingsObserver;->mContext:Landroid/content/Context;
 
     invoke-virtual {v1}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
 
@@ -92,7 +92,7 @@
 
     .prologue
     .line 950
-    iget-object v0, p0, Lcom/android/settings/widget/SettingsAppWidgetProvider$SettingsObserver;->mContext:Landroid/content/Context;
+    iget-object v0, p0, Lcom/android/settings_ext/widget/SettingsAppWidgetProvider$SettingsObserver;->mContext:Landroid/content/Context;
 
     invoke-virtual {v0}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
 

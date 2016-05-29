@@ -1,11 +1,11 @@
-.class Lcom/android/settings/DateTimeSettings$1;
+.class Lcom/android/settings_ext/DateTimeSettings$1;
 .super Landroid/content/BroadcastReceiver;
 .source "DateTimeSettings.java"
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/android/settings/DateTimeSettings;
+    value = Lcom/android/settings_ext/DateTimeSettings;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -15,16 +15,16 @@
 
 
 # instance fields
-.field final synthetic this$0:Lcom/android/settings/DateTimeSettings;
+.field final synthetic this$0:Lcom/android/settings_ext/DateTimeSettings;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/DateTimeSettings;)V
+.method constructor <init>(Lcom/android/settings_ext/DateTimeSettings;)V
     .locals 0
 
     .prologue
     .line 375
-    iput-object p1, p0, Lcom/android/settings/DateTimeSettings$1;->this$0:Lcom/android/settings/DateTimeSettings;
+    iput-object p1, p0, Lcom/android/settings_ext/DateTimeSettings$1;->this$0:Lcom/android/settings_ext/DateTimeSettings;
 
     invoke-direct {p0}, Landroid/content/BroadcastReceiver;-><init>()V
 
@@ -40,9 +40,9 @@
 
     .prologue
     .line 378
-    iget-object v1, p0, Lcom/android/settings/DateTimeSettings$1;->this$0:Lcom/android/settings/DateTimeSettings;
+    iget-object v1, p0, Lcom/android/settings_ext/DateTimeSettings$1;->this$0:Lcom/android/settings_ext/DateTimeSettings;
 
-    invoke-virtual {v1}, Lcom/android/settings/DateTimeSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {v1}, Lcom/android/settings_ext/DateTimeSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
@@ -51,9 +51,9 @@
     if-eqz v0, :cond_0
 
     .line 380
-    iget-object v1, p0, Lcom/android/settings/DateTimeSettings$1;->this$0:Lcom/android/settings/DateTimeSettings;
+    iget-object v1, p0, Lcom/android/settings_ext/DateTimeSettings$1;->this$0:Lcom/android/settings_ext/DateTimeSettings;
 
-    invoke-virtual {v1, v0}, Lcom/android/settings/DateTimeSettings;->updateTimeAndDateDisplay(Landroid/content/Context;)V
+    invoke-virtual {v1, v0}, Lcom/android/settings_ext/DateTimeSettings;->updateTimeAndDateDisplay(Landroid/content/Context;)V
 
     .line 382
     :cond_0

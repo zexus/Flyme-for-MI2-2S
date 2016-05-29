@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PreferenceScreen android:title="@string/development_settings_title"
   xmlns:android="http://schemas.android.com/apk/res/android">
-    <com.android.settings.BugreportPreference android:title="@android:string/bugreport_title" android:key="bugreport" android:dialogTitle="@android:string/bugreport_title" />
+    <com.android.settings_ext.BugreportPreference android:title="@android:string/bugreport_title" android:key="bugreport" android:dialogTitle="@android:string/bugreport_title" />
     <PreferenceScreen android:persistent="false" android:title="@string/local_backup_password_title" android:key="local_backup_password" android:summary="@string/local_backup_password_summary_none">
-        <intent android:targetPackage="com.android.settings" android:action="android.settings.privacy.SET_FULL_BACKUP_PASSWORD" android:targetClass="com.android.settings.SetFullBackupPassword" />
+        <intent android:targetPackage="com.android.settings_ext" android:action="android.settings.privacy.SET_FULL_BACKUP_PASSWORD" android:targetClass="com.android.settings_ext.SetFullBackupPassword" />
     </PreferenceScreen>
     <SwitchPreference android:title="@string/keep_screen_on" android:key="keep_screen_on" android:summary="@string/keep_screen_on_summary" />
     <ListPreference android:entries="@array/hdcp_checking_titles" android:title="@string/hdcp_checking_title" android:key="hdcp_checking" android:dialogTitle="@string/hdcp_checking_dialog_title" android:entryValues="@array/hdcp_checking_values" />
     <SwitchPreference android:title="@string/bt_hci_snoop_log" android:key="bt_hci_snoop_log" android:summary="@string/bt_hci_snoop_log_summary" />
     <SwitchPreference android:title="@string/oem_unlock_enable" android:key="oem_unlock_enable" android:summary="@string/oem_unlock_enable_summary" />
-    <PreferenceScreen android:title="@string/process_stats_summary_title" android:key="proc_stats" android:summary="@string/process_stats_summary" android:fragment="com.android.settings.applications.ProcessStatsUi" />
+    <PreferenceScreen android:title="@string/process_stats_summary_title" android:key="proc_stats" android:summary="@string/process_stats_summary" android:fragment="com.android.settings_ext.applications.ProcessStatsUi" />
     <Preference android:title="@string/power_mode" android:key="power_mode_settings">
-        <intent android:targetPackage="com.android.settings" android:targetClass="com.android.settings.ivan.PowerModeSettings" />
+        <intent android:targetPackage="com.android.settings_ext" android:targetClass="com.android.settings_ext.ivan.PowerModeSettings" />
     </Preference>
     <PreferenceCategory android:title="@string/debug_debugging_category" android:key="debug_debugging_category">
         <SwitchPreference android:title="@string/enable_adb" android:key="enable_adb" android:summary="@string/enable_adb_summary" />

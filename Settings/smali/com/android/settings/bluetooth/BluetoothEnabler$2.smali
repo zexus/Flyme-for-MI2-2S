@@ -1,11 +1,11 @@
-.class Lcom/android/settings/bluetooth/BluetoothEnabler$2;
+.class Lcom/android/settings_ext/bluetooth/BluetoothEnabler$2;
 .super Landroid/content/BroadcastReceiver;
 .source "BluetoothEnabler.java"
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/android/settings/bluetooth/BluetoothEnabler;
+    value = Lcom/android/settings_ext/bluetooth/BluetoothEnabler;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -15,16 +15,16 @@
 
 
 # instance fields
-.field final synthetic this$0:Lcom/android/settings/bluetooth/BluetoothEnabler;
+.field final synthetic this$0:Lcom/android/settings_ext/bluetooth/BluetoothEnabler;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/bluetooth/BluetoothEnabler;)V
+.method constructor <init>(Lcom/android/settings_ext/bluetooth/BluetoothEnabler;)V
     .locals 0
 
     .prologue
     .line 65
-    iput-object p1, p0, Lcom/android/settings/bluetooth/BluetoothEnabler$2;->this$0:Lcom/android/settings/bluetooth/BluetoothEnabler;
+    iput-object p1, p0, Lcom/android/settings_ext/bluetooth/BluetoothEnabler$2;->this$0:Lcom/android/settings_ext/bluetooth/BluetoothEnabler;
 
     invoke-direct {p0}, Landroid/content/BroadcastReceiver;-><init>()V
 
@@ -50,9 +50,9 @@
 
     .line 71
     .local v0, "state":I
-    iget-object v1, p0, Lcom/android/settings/bluetooth/BluetoothEnabler$2;->this$0:Lcom/android/settings/bluetooth/BluetoothEnabler;
+    iget-object v1, p0, Lcom/android/settings_ext/bluetooth/BluetoothEnabler$2;->this$0:Lcom/android/settings_ext/bluetooth/BluetoothEnabler;
 
-    invoke-virtual {v1, v0}, Lcom/android/settings/bluetooth/BluetoothEnabler;->handleStateChanged(I)V
+    invoke-virtual {v1, v0}, Lcom/android/settings_ext/bluetooth/BluetoothEnabler;->handleStateChanged(I)V
 
     .line 72
     return-void

@@ -1,12 +1,12 @@
-.class public Lcom/android/settings/EncryptionInterstitial;
-.super Lcom/android/settings/SettingsActivity;
+.class public Lcom/android/settings_ext/EncryptionInterstitial;
+.super Lcom/android/settings_ext/SettingsActivity;
 .source "EncryptionInterstitial.java"
 
 
 # annotations
 .annotation system Ldalvik/annotation/MemberClasses;
     value = {
-        Lcom/android/settings/EncryptionInterstitial$EncryptionInterstitialFragment;
+        Lcom/android/settings_ext/EncryptionInterstitial$EncryptionInterstitialFragment;
     }
 .end annotation
 
@@ -17,7 +17,7 @@
 
     .prologue
     .line 42
-    invoke-direct {p0}, Lcom/android/settings/SettingsActivity;-><init>()V
+    invoke-direct {p0}, Lcom/android/settings_ext/SettingsActivity;-><init>()V
 
     .line 71
     return-void
@@ -33,7 +33,7 @@
     .line 61
     new-instance v0, Landroid/content/Intent;
 
-    const-class v1, Lcom/android/settings/EncryptionInterstitial;
+    const-class v1, Lcom/android/settings_ext/EncryptionInterstitial;
 
     invoke-direct {v0, p0, v1}, Landroid/content/Intent;-><init>(Landroid/content/Context;Ljava/lang/Class;)V
 
@@ -99,7 +99,7 @@
     .line 49
     new-instance v0, Landroid/content/Intent;
 
-    invoke-super {p0}, Lcom/android/settings/SettingsActivity;->getIntent()Landroid/content/Intent;
+    invoke-super {p0}, Lcom/android/settings_ext/SettingsActivity;->getIntent()Landroid/content/Intent;
 
     move-result-object v1
 
@@ -109,7 +109,7 @@
     .local v0, "modIntent":Landroid/content/Intent;
     const-string v1, ":settings:show_fragment"
 
-    const-class v2, Lcom/android/settings/EncryptionInterstitial$EncryptionInterstitialFragment;
+    const-class v2, Lcom/android/settings_ext/EncryptionInterstitial$EncryptionInterstitialFragment;
 
     invoke-virtual {v2}, Ljava/lang/Class;->getName()Ljava/lang/String;
 
@@ -127,7 +127,7 @@
 
     .prologue
     .line 56
-    const-class v0, Lcom/android/settings/EncryptionInterstitial$EncryptionInterstitialFragment;
+    const-class v0, Lcom/android/settings_ext/EncryptionInterstitial$EncryptionInterstitialFragment;
 
     invoke-virtual {v0}, Ljava/lang/Class;->getName()Ljava/lang/String;
 

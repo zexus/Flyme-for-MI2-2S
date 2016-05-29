@@ -1,11 +1,11 @@
-.class Lcom/android/settings/sim/SimBootReceiver$1;
+.class Lcom/android/settings_ext/sim/SimBootReceiver$1;
 .super Landroid/telephony/SubscriptionManager$OnSubscriptionsChangedListener;
 .source "SimBootReceiver.java"
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/android/settings/sim/SimBootReceiver;
+    value = Lcom/android/settings_ext/sim/SimBootReceiver;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -15,16 +15,16 @@
 
 
 # instance fields
-.field final synthetic this$0:Lcom/android/settings/sim/SimBootReceiver;
+.field final synthetic this$0:Lcom/android/settings_ext/sim/SimBootReceiver;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/sim/SimBootReceiver;)V
+.method constructor <init>(Lcom/android/settings_ext/sim/SimBootReceiver;)V
     .locals 0
 
     .prologue
     .line 148
-    iput-object p1, p0, Lcom/android/settings/sim/SimBootReceiver$1;->this$0:Lcom/android/settings/sim/SimBootReceiver;
+    iput-object p1, p0, Lcom/android/settings_ext/sim/SimBootReceiver$1;->this$0:Lcom/android/settings_ext/sim/SimBootReceiver;
 
     invoke-direct {p0}, Landroid/telephony/SubscriptionManager$OnSubscriptionsChangedListener;-><init>()V
 
@@ -38,10 +38,10 @@
 
     .prologue
     .line 151
-    iget-object v0, p0, Lcom/android/settings/sim/SimBootReceiver$1;->this$0:Lcom/android/settings/sim/SimBootReceiver;
+    iget-object v0, p0, Lcom/android/settings_ext/sim/SimBootReceiver$1;->this$0:Lcom/android/settings_ext/sim/SimBootReceiver;
 
-    # invokes: Lcom/android/settings/sim/SimBootReceiver;->detectChangeAndNotify()V
-    invoke-static {v0}, Lcom/android/settings/sim/SimBootReceiver;->access$000(Lcom/android/settings/sim/SimBootReceiver;)V
+    # invokes: Lcom/android/settings_ext/sim/SimBootReceiver;->detectChangeAndNotify()V
+    invoke-static {v0}, Lcom/android/settings_ext/sim/SimBootReceiver;->access$000(Lcom/android/settings_ext/sim/SimBootReceiver;)V
 
     .line 152
     return-void

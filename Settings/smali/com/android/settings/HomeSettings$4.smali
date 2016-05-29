@@ -1,11 +1,11 @@
-.class final Lcom/android/settings/HomeSettings$4;
-.super Lcom/android/settings/search/BaseSearchIndexProvider;
+.class final Lcom/android/settings_ext/HomeSettings$4;
+.super Lcom/android/settings_ext/search/BaseSearchIndexProvider;
 .source "HomeSettings.java"
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/android/settings/HomeSettings;
+    value = Lcom/android/settings_ext/HomeSettings;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -20,7 +20,7 @@
 
     .prologue
     .line 383
-    invoke-direct {p0}, Lcom/android/settings/search/BaseSearchIndexProvider;-><init>()V
+    invoke-direct {p0}, Lcom/android/settings_ext/search/BaseSearchIndexProvider;-><init>()V
 
     return-void
 .end method
@@ -38,7 +38,7 @@
             "Z)",
             "Ljava/util/List",
             "<",
-            "Lcom/android/settings/search/SearchIndexableRaw;",
+            "Lcom/android/settings_ext/search/SearchIndexableRaw;",
             ">;"
         }
     .end annotation
@@ -50,7 +50,7 @@
     invoke-direct {v11}, Ljava/util/ArrayList;-><init>()V
 
     .line 388
-    .local v11, "result":Ljava/util/List;, "Ljava/util/List<Lcom/android/settings/search/SearchIndexableRaw;>;"
+    .local v11, "result":Ljava/util/List;, "Ljava/util/List<Lcom/android/settings_ext/search/SearchIndexableRaw;>;"
     invoke-virtual/range {p1 .. p1}, Landroid/content/Context;->getPackageManager()Landroid/content/pm/PackageManager;
 
     move-result-object v8
@@ -106,21 +106,21 @@
 
     .line 402
     .local v9, "res":Landroid/content/res/Resources;
-    new-instance v2, Lcom/android/settings/search/SearchIndexableRaw;
+    new-instance v2, Lcom/android/settings_ext/search/SearchIndexableRaw;
 
     move-object/from16 v0, p1
 
-    invoke-direct {v2, v0}, Lcom/android/settings/search/SearchIndexableRaw;-><init>(Landroid/content/Context;)V
+    invoke-direct {v2, v0}, Lcom/android/settings_ext/search/SearchIndexableRaw;-><init>(Landroid/content/Context;)V
 
     .line 403
-    .local v2, "data":Lcom/android/settings/search/SearchIndexableRaw;
+    .local v2, "data":Lcom/android/settings_ext/search/SearchIndexableRaw;
     const v13, 0x7f0902f1
 
     invoke-virtual {v9, v13}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
     move-result-object v13
 
-    iput-object v13, v2, Lcom/android/settings/search/SearchIndexableRaw;->title:Ljava/lang/String;
+    iput-object v13, v2, Lcom/android/settings_ext/search/SearchIndexableRaw;->title:Ljava/lang/String;
 
     .line 404
     const v13, 0x7f0902f1
@@ -129,7 +129,7 @@
 
     move-result-object v13
 
-    iput-object v13, v2, Lcom/android/settings/search/SearchIndexableRaw;->screenTitle:Ljava/lang/String;
+    iput-object v13, v2, Lcom/android/settings_ext/search/SearchIndexableRaw;->screenTitle:Ljava/lang/String;
 
     .line 405
     const v13, 0x7f09093f
@@ -138,7 +138,7 @@
 
     move-result-object v13
 
-    iput-object v13, v2, Lcom/android/settings/search/SearchIndexableRaw;->keywords:Ljava/lang/String;
+    iput-object v13, v2, Lcom/android/settings_ext/search/SearchIndexableRaw;->keywords:Ljava/lang/String;
 
     .line 406
     invoke-interface {v11, v2}, Ljava/util/List;->add(Ljava/lang/Object;)Z
@@ -225,20 +225,20 @@
     .end local v4    # "e":Ljava/lang/Exception;
     .restart local v7    # "name":Ljava/lang/CharSequence;
     :cond_1
-    new-instance v2, Lcom/android/settings/search/SearchIndexableRaw;
+    new-instance v2, Lcom/android/settings_ext/search/SearchIndexableRaw;
 
-    .end local v2    # "data":Lcom/android/settings/search/SearchIndexableRaw;
+    .end local v2    # "data":Lcom/android/settings_ext/search/SearchIndexableRaw;
     move-object/from16 v0, p1
 
-    invoke-direct {v2, v0}, Lcom/android/settings/search/SearchIndexableRaw;-><init>(Landroid/content/Context;)V
+    invoke-direct {v2, v0}, Lcom/android/settings_ext/search/SearchIndexableRaw;-><init>(Landroid/content/Context;)V
 
     .line 424
-    .restart local v2    # "data":Lcom/android/settings/search/SearchIndexableRaw;
+    .restart local v2    # "data":Lcom/android/settings_ext/search/SearchIndexableRaw;
     invoke-interface {v7}, Ljava/lang/CharSequence;->toString()Ljava/lang/String;
 
     move-result-object v13
 
-    iput-object v13, v2, Lcom/android/settings/search/SearchIndexableRaw;->title:Ljava/lang/String;
+    iput-object v13, v2, Lcom/android/settings_ext/search/SearchIndexableRaw;->title:Ljava/lang/String;
 
     .line 425
     const v13, 0x7f0902f1
@@ -247,7 +247,7 @@
 
     move-result-object v13
 
-    iput-object v13, v2, Lcom/android/settings/search/SearchIndexableRaw;->screenTitle:Ljava/lang/String;
+    iput-object v13, v2, Lcom/android/settings_ext/search/SearchIndexableRaw;->screenTitle:Ljava/lang/String;
 
     .line 426
     invoke-interface {v11, v2}, Ljava/util/List;->add(Ljava/lang/Object;)Z
@@ -256,7 +256,7 @@
 
     .line 430
     .end local v1    # "activityInfo":Landroid/content/pm/ActivityInfo;
-    .end local v2    # "data":Lcom/android/settings/search/SearchIndexableRaw;
+    .end local v2    # "data":Lcom/android/settings_ext/search/SearchIndexableRaw;
     .end local v6    # "i":I
     .end local v7    # "name":Ljava/lang/CharSequence;
     .end local v9    # "res":Landroid/content/res/Resources;

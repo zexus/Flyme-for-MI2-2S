@@ -1,4 +1,4 @@
-.class Lcom/android/settings/LocalePicker$1;
+.class Lcom/android/settings_ext/LocalePicker$1;
 .super Ljava/lang/Object;
 .source "LocalePicker.java"
 
@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/android/settings/LocalePicker;->onCreateDialog(I)Landroid/app/Dialog;
+    value = Lcom/android/settings_ext/LocalePicker;->onCreateDialog(I)Landroid/app/Dialog;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -18,20 +18,20 @@
 
 
 # instance fields
-.field final synthetic this$0:Lcom/android/settings/LocalePicker;
+.field final synthetic this$0:Lcom/android/settings_ext/LocalePicker;
 
 .field final synthetic val$dialogId:I
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/LocalePicker;I)V
+.method constructor <init>(Lcom/android/settings_ext/LocalePicker;I)V
     .locals 0
 
     .prologue
     .line 98
-    iput-object p1, p0, Lcom/android/settings/LocalePicker$1;->this$0:Lcom/android/settings/LocalePicker;
+    iput-object p1, p0, Lcom/android/settings_ext/LocalePicker$1;->this$0:Lcom/android/settings_ext/LocalePicker;
 
-    iput p2, p0, Lcom/android/settings/LocalePicker$1;->val$dialogId:I
+    iput p2, p0, Lcom/android/settings_ext/LocalePicker$1;->val$dialogId:I
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -45,30 +45,30 @@
 
     .prologue
     .line 100
-    iget-object v0, p0, Lcom/android/settings/LocalePicker$1;->this$0:Lcom/android/settings/LocalePicker;
+    iget-object v0, p0, Lcom/android/settings_ext/LocalePicker$1;->this$0:Lcom/android/settings_ext/LocalePicker;
 
-    iget v1, p0, Lcom/android/settings/LocalePicker$1;->val$dialogId:I
+    iget v1, p0, Lcom/android/settings_ext/LocalePicker$1;->val$dialogId:I
 
-    invoke-virtual {v0, v1}, Lcom/android/settings/LocalePicker;->removeDialog(I)V
+    invoke-virtual {v0, v1}, Lcom/android/settings_ext/LocalePicker;->removeDialog(I)V
 
     .line 101
-    iget-object v0, p0, Lcom/android/settings/LocalePicker$1;->this$0:Lcom/android/settings/LocalePicker;
+    iget-object v0, p0, Lcom/android/settings_ext/LocalePicker$1;->this$0:Lcom/android/settings_ext/LocalePicker;
 
-    invoke-virtual {v0}, Lcom/android/settings/LocalePicker;->getActivity()Landroid/app/Activity;
+    invoke-virtual {v0}, Lcom/android/settings_ext/LocalePicker;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
     invoke-virtual {v0}, Landroid/app/Activity;->onBackPressed()V
 
     .line 102
-    iget-object v0, p0, Lcom/android/settings/LocalePicker$1;->this$0:Lcom/android/settings/LocalePicker;
+    iget-object v0, p0, Lcom/android/settings_ext/LocalePicker$1;->this$0:Lcom/android/settings_ext/LocalePicker;
 
-    # getter for: Lcom/android/settings/LocalePicker;->mTargetLocale:Ljava/util/Locale;
-    invoke-static {v0}, Lcom/android/settings/LocalePicker;->access$000(Lcom/android/settings/LocalePicker;)Ljava/util/Locale;
+    # getter for: Lcom/android/settings_ext/LocalePicker;->mTargetLocale:Ljava/util/Locale;
+    invoke-static {v0}, Lcom/android/settings_ext/LocalePicker;->access$000(Lcom/android/settings_ext/LocalePicker;)Ljava/util/Locale;
 
     move-result-object v0
 
-    invoke-static {v0}, Lcom/android/settings/LocalePicker;->updateLocale(Ljava/util/Locale;)V
+    invoke-static {v0}, Lcom/android/settings_ext/LocalePicker;->updateLocale(Ljava/util/Locale;)V
 
     .line 103
     return-void

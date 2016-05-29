@@ -1,4 +1,4 @@
-.class final Lcom/android/settings/AppPicker$1;
+.class final Lcom/android/settings_ext/AppPicker$1;
 .super Ljava/lang/Object;
 .source "AppPicker.java"
 
@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/android/settings/AppPicker;
+    value = Lcom/android/settings_ext/AppPicker;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -21,7 +21,7 @@
         "Ljava/lang/Object;",
         "Ljava/util/Comparator",
         "<",
-        "Lcom/android/settings/AppPicker$MyApplicationInfo;",
+        "Lcom/android/settings_ext/AppPicker$MyApplicationInfo;",
         ">;"
     }
 .end annotation
@@ -44,25 +44,25 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/AppPicker$1;->collator:Ljava/text/Collator;
+    iput-object v0, p0, Lcom/android/settings_ext/AppPicker$1;->collator:Ljava/text/Collator;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final compare(Lcom/android/settings/AppPicker$MyApplicationInfo;Lcom/android/settings/AppPicker$MyApplicationInfo;)I
+.method public final compare(Lcom/android/settings_ext/AppPicker$MyApplicationInfo;Lcom/android/settings_ext/AppPicker$MyApplicationInfo;)I
     .locals 3
-    .param p1, "a"    # Lcom/android/settings/AppPicker$MyApplicationInfo;
-    .param p2, "b"    # Lcom/android/settings/AppPicker$MyApplicationInfo;
+    .param p1, "a"    # Lcom/android/settings_ext/AppPicker$MyApplicationInfo;
+    .param p2, "b"    # Lcom/android/settings_ext/AppPicker$MyApplicationInfo;
 
     .prologue
     .line 139
-    iget-object v0, p0, Lcom/android/settings/AppPicker$1;->collator:Ljava/text/Collator;
+    iget-object v0, p0, Lcom/android/settings_ext/AppPicker$1;->collator:Ljava/text/Collator;
 
-    iget-object v1, p1, Lcom/android/settings/AppPicker$MyApplicationInfo;->label:Ljava/lang/CharSequence;
+    iget-object v1, p1, Lcom/android/settings_ext/AppPicker$MyApplicationInfo;->label:Ljava/lang/CharSequence;
 
-    iget-object v2, p2, Lcom/android/settings/AppPicker$MyApplicationInfo;->label:Ljava/lang/CharSequence;
+    iget-object v2, p2, Lcom/android/settings_ext/AppPicker$MyApplicationInfo;->label:Ljava/lang/CharSequence;
 
     invoke-virtual {v0, v1, v2}, Ljava/text/Collator;->compare(Ljava/lang/Object;Ljava/lang/Object;)I
 
@@ -78,13 +78,13 @@
 
     .prologue
     .line 136
-    check-cast p1, Lcom/android/settings/AppPicker$MyApplicationInfo;
+    check-cast p1, Lcom/android/settings_ext/AppPicker$MyApplicationInfo;
 
     .end local p1    # "x0":Ljava/lang/Object;
-    check-cast p2, Lcom/android/settings/AppPicker$MyApplicationInfo;
+    check-cast p2, Lcom/android/settings_ext/AppPicker$MyApplicationInfo;
 
     .end local p2    # "x1":Ljava/lang/Object;
-    invoke-virtual {p0, p1, p2}, Lcom/android/settings/AppPicker$1;->compare(Lcom/android/settings/AppPicker$MyApplicationInfo;Lcom/android/settings/AppPicker$MyApplicationInfo;)I
+    invoke-virtual {p0, p1, p2}, Lcom/android/settings_ext/AppPicker$1;->compare(Lcom/android/settings_ext/AppPicker$MyApplicationInfo;Lcom/android/settings_ext/AppPicker$MyApplicationInfo;)I
 
     move-result v0
 

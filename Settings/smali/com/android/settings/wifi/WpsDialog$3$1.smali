@@ -1,4 +1,4 @@
-.class Lcom/android/settings/wifi/WpsDialog$3$1;
+.class Lcom/android/settings_ext/wifi/WpsDialog$3$1;
 .super Ljava/lang/Object;
 .source "WpsDialog.java"
 
@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/android/settings/wifi/WpsDialog$3;->run()V
+    value = Lcom/android/settings_ext/wifi/WpsDialog$3;->run()V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -18,16 +18,16 @@
 
 
 # instance fields
-.field final synthetic this$1:Lcom/android/settings/wifi/WpsDialog$3;
+.field final synthetic this$1:Lcom/android/settings_ext/wifi/WpsDialog$3;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/wifi/WpsDialog$3;)V
+.method constructor <init>(Lcom/android/settings_ext/wifi/WpsDialog$3;)V
     .locals 0
 
     .prologue
     .line 194
-    iput-object p1, p0, Lcom/android/settings/wifi/WpsDialog$3$1;->this$1:Lcom/android/settings/wifi/WpsDialog$3;
+    iput-object p1, p0, Lcom/android/settings_ext/wifi/WpsDialog$3$1;->this$1:Lcom/android/settings_ext/wifi/WpsDialog$3;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -41,12 +41,12 @@
 
     .prologue
     .line 198
-    iget-object v0, p0, Lcom/android/settings/wifi/WpsDialog$3$1;->this$1:Lcom/android/settings/wifi/WpsDialog$3;
+    iget-object v0, p0, Lcom/android/settings_ext/wifi/WpsDialog$3$1;->this$1:Lcom/android/settings_ext/wifi/WpsDialog$3;
 
-    iget-object v0, v0, Lcom/android/settings/wifi/WpsDialog$3;->this$0:Lcom/android/settings/wifi/WpsDialog;
+    iget-object v0, v0, Lcom/android/settings_ext/wifi/WpsDialog$3;->this$0:Lcom/android/settings_ext/wifi/WpsDialog;
 
-    # getter for: Lcom/android/settings/wifi/WpsDialog;->mTimeoutBar:Landroid/widget/ProgressBar;
-    invoke-static {v0}, Lcom/android/settings/wifi/WpsDialog;->access$300(Lcom/android/settings/wifi/WpsDialog;)Landroid/widget/ProgressBar;
+    # getter for: Lcom/android/settings_ext/wifi/WpsDialog;->mTimeoutBar:Landroid/widget/ProgressBar;
+    invoke-static {v0}, Lcom/android/settings_ext/wifi/WpsDialog;->access$300(Lcom/android/settings_ext/wifi/WpsDialog;)Landroid/widget/ProgressBar;
 
     move-result-object v0
 

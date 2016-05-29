@@ -1,4 +1,4 @@
-.class public Lcom/android/settings/TetherService;
+.class public Lcom/android/settings_ext/TetherService;
 .super Landroid/app/Service;
 .source "TetherService.java"
 
@@ -42,7 +42,7 @@
 
     move-result v0
 
-    sput-boolean v0, Lcom/android/settings/TetherService;->DEBUG:Z
+    sput-boolean v0, Lcom/android/settings_ext/TetherService;->DEBUG:Z
 
     return-void
 .end method
@@ -55,11 +55,11 @@
     invoke-direct {p0}, Landroid/app/Service;-><init>()V
 
     .line 269
-    new-instance v0, Lcom/android/settings/TetherService$2;
+    new-instance v0, Lcom/android/settings_ext/TetherService$2;
 
-    invoke-direct {v0, p0}, Lcom/android/settings/TetherService$2;-><init>(Lcom/android/settings/TetherService;)V
+    invoke-direct {v0, p0}, Lcom/android/settings_ext/TetherService$2;-><init>(Lcom/android/settings_ext/TetherService;)V
 
-    iput-object v0, p0, Lcom/android/settings/TetherService;->mReceiver:Landroid/content/BroadcastReceiver;
+    iput-object v0, p0, Lcom/android/settings_ext/TetherService;->mReceiver:Landroid/content/BroadcastReceiver;
 
     return-void
 .end method
@@ -69,135 +69,135 @@
 
     .prologue
     .line 43
-    sget-boolean v0, Lcom/android/settings/TetherService;->DEBUG:Z
+    sget-boolean v0, Lcom/android/settings_ext/TetherService;->DEBUG:Z
 
     return v0
 .end method
 
-.method static synthetic access$102(Lcom/android/settings/TetherService;Z)Z
+.method static synthetic access$102(Lcom/android/settings_ext/TetherService;Z)Z
     .locals 0
-    .param p0, "x0"    # Lcom/android/settings/TetherService;
+    .param p0, "x0"    # Lcom/android/settings_ext/TetherService;
     .param p1, "x1"    # Z
 
     .prologue
     .line 43
-    iput-boolean p1, p0, Lcom/android/settings/TetherService;->mInProvisionCheck:Z
+    iput-boolean p1, p0, Lcom/android/settings_ext/TetherService;->mInProvisionCheck:Z
 
     return p1
 .end method
 
-.method static synthetic access$200(Lcom/android/settings/TetherService;)I
+.method static synthetic access$200(Lcom/android/settings_ext/TetherService;)I
     .locals 1
-    .param p0, "x0"    # Lcom/android/settings/TetherService;
+    .param p0, "x0"    # Lcom/android/settings_ext/TetherService;
 
     .prologue
     .line 43
-    iget v0, p0, Lcom/android/settings/TetherService;->mCurrentTypeIndex:I
+    iget v0, p0, Lcom/android/settings_ext/TetherService;->mCurrentTypeIndex:I
 
     return v0
 .end method
 
-.method static synthetic access$204(Lcom/android/settings/TetherService;)I
+.method static synthetic access$204(Lcom/android/settings_ext/TetherService;)I
     .locals 1
-    .param p0, "x0"    # Lcom/android/settings/TetherService;
+    .param p0, "x0"    # Lcom/android/settings_ext/TetherService;
 
     .prologue
     .line 43
-    iget v0, p0, Lcom/android/settings/TetherService;->mCurrentTypeIndex:I
+    iget v0, p0, Lcom/android/settings_ext/TetherService;->mCurrentTypeIndex:I
 
     add-int/lit8 v0, v0, 0x1
 
-    iput v0, p0, Lcom/android/settings/TetherService;->mCurrentTypeIndex:I
+    iput v0, p0, Lcom/android/settings_ext/TetherService;->mCurrentTypeIndex:I
 
     return v0
 .end method
 
-.method static synthetic access$300(Lcom/android/settings/TetherService;)Ljava/util/ArrayList;
+.method static synthetic access$300(Lcom/android/settings_ext/TetherService;)Ljava/util/ArrayList;
     .locals 1
-    .param p0, "x0"    # Lcom/android/settings/TetherService;
+    .param p0, "x0"    # Lcom/android/settings_ext/TetherService;
 
     .prologue
     .line 43
-    iget-object v0, p0, Lcom/android/settings/TetherService;->mCurrentTethers:Ljava/util/ArrayList;
+    iget-object v0, p0, Lcom/android/settings_ext/TetherService;->mCurrentTethers:Ljava/util/ArrayList;
 
     return-object v0
 .end method
 
-.method static synthetic access$400(Lcom/android/settings/TetherService;)Z
+.method static synthetic access$400(Lcom/android/settings_ext/TetherService;)Z
     .locals 1
-    .param p0, "x0"    # Lcom/android/settings/TetherService;
+    .param p0, "x0"    # Lcom/android/settings_ext/TetherService;
 
     .prologue
     .line 43
-    iget-boolean v0, p0, Lcom/android/settings/TetherService;->mEnableWifiAfterCheck:Z
+    iget-boolean v0, p0, Lcom/android/settings_ext/TetherService;->mEnableWifiAfterCheck:Z
 
     return v0
 .end method
 
-.method static synthetic access$402(Lcom/android/settings/TetherService;Z)Z
+.method static synthetic access$402(Lcom/android/settings_ext/TetherService;Z)Z
     .locals 0
-    .param p0, "x0"    # Lcom/android/settings/TetherService;
+    .param p0, "x0"    # Lcom/android/settings_ext/TetherService;
     .param p1, "x1"    # Z
 
     .prologue
     .line 43
-    iput-boolean p1, p0, Lcom/android/settings/TetherService;->mEnableWifiAfterCheck:Z
+    iput-boolean p1, p0, Lcom/android/settings_ext/TetherService;->mEnableWifiAfterCheck:Z
 
     return p1
 .end method
 
-.method static synthetic access$500(Lcom/android/settings/TetherService;)V
+.method static synthetic access$500(Lcom/android/settings_ext/TetherService;)V
     .locals 0
-    .param p0, "x0"    # Lcom/android/settings/TetherService;
+    .param p0, "x0"    # Lcom/android/settings_ext/TetherService;
 
     .prologue
     .line 43
-    invoke-direct {p0}, Lcom/android/settings/TetherService;->enableWifiTetheringIfNeeded()V
+    invoke-direct {p0}, Lcom/android/settings_ext/TetherService;->enableWifiTetheringIfNeeded()V
 
     return-void
 .end method
 
-.method static synthetic access$600(Lcom/android/settings/TetherService;)V
+.method static synthetic access$600(Lcom/android/settings_ext/TetherService;)V
     .locals 0
-    .param p0, "x0"    # Lcom/android/settings/TetherService;
+    .param p0, "x0"    # Lcom/android/settings_ext/TetherService;
 
     .prologue
     .line 43
-    invoke-direct {p0}, Lcom/android/settings/TetherService;->disableWifiTethering()V
+    invoke-direct {p0}, Lcom/android/settings_ext/TetherService;->disableWifiTethering()V
 
     return-void
 .end method
 
-.method static synthetic access$700(Lcom/android/settings/TetherService;)V
+.method static synthetic access$700(Lcom/android/settings_ext/TetherService;)V
     .locals 0
-    .param p0, "x0"    # Lcom/android/settings/TetherService;
+    .param p0, "x0"    # Lcom/android/settings_ext/TetherService;
 
     .prologue
     .line 43
-    invoke-direct {p0}, Lcom/android/settings/TetherService;->disableBtTethering()V
+    invoke-direct {p0}, Lcom/android/settings_ext/TetherService;->disableBtTethering()V
 
     return-void
 .end method
 
-.method static synthetic access$800(Lcom/android/settings/TetherService;)V
+.method static synthetic access$800(Lcom/android/settings_ext/TetherService;)V
     .locals 0
-    .param p0, "x0"    # Lcom/android/settings/TetherService;
+    .param p0, "x0"    # Lcom/android/settings_ext/TetherService;
 
     .prologue
     .line 43
-    invoke-direct {p0}, Lcom/android/settings/TetherService;->disableUsbTethering()V
+    invoke-direct {p0}, Lcom/android/settings_ext/TetherService;->disableUsbTethering()V
 
     return-void
 .end method
 
-.method static synthetic access$900(Lcom/android/settings/TetherService;I)V
+.method static synthetic access$900(Lcom/android/settings_ext/TetherService;I)V
     .locals 0
-    .param p0, "x0"    # Lcom/android/settings/TetherService;
+    .param p0, "x0"    # Lcom/android/settings_ext/TetherService;
     .param p1, "x1"    # I
 
     .prologue
     .line 43
-    invoke-direct {p0, p1}, Lcom/android/settings/TetherService;->startProvisioning(I)V
+    invoke-direct {p0, p1}, Lcom/android/settings_ext/TetherService;->startProvisioning(I)V
 
     return-void
 .end method
@@ -209,7 +209,7 @@
     const/4 v4, 0x0
 
     .line 258
-    iget-object v3, p0, Lcom/android/settings/TetherService;->mCurrentTethers:Ljava/util/ArrayList;
+    iget-object v3, p0, Lcom/android/settings_ext/TetherService;->mCurrentTethers:Ljava/util/ArrayList;
 
     invoke-virtual {v3}, Ljava/util/ArrayList;->size()I
 
@@ -218,7 +218,7 @@
     if-eqz v3, :cond_1
 
     .line 259
-    sget-boolean v3, Lcom/android/settings/TetherService;->DEBUG:Z
+    sget-boolean v3, Lcom/android/settings_ext/TetherService;->DEBUG:Z
 
     if-eqz v3, :cond_0
 
@@ -237,7 +237,7 @@
     :cond_1
     new-instance v1, Landroid/content/Intent;
 
-    const-class v3, Lcom/android/settings/TetherService;
+    const-class v3, Lcom/android/settings_ext/TetherService;
 
     invoke-direct {v1, p0, v3}, Landroid/content/Intent;-><init>(Landroid/content/Context;Ljava/lang/Class;)V
 
@@ -251,7 +251,7 @@
     .local v2, "pendingIntent":Landroid/app/PendingIntent;
     const-string v3, "alarm"
 
-    invoke-virtual {p0, v3}, Lcom/android/settings/TetherService;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
+    invoke-virtual {p0, v3}, Lcom/android/settings_ext/TetherService;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object v0
 
@@ -262,7 +262,7 @@
     invoke-virtual {v0, v2}, Landroid/app/AlarmManager;->cancel(Landroid/app/PendingIntent;)V
 
     .line 266
-    sget-boolean v3, Lcom/android/settings/TetherService;->DEBUG:Z
+    sget-boolean v3, Lcom/android/settings_ext/TetherService;->DEBUG:Z
 
     if-eqz v3, :cond_0
 
@@ -284,7 +284,7 @@
     .line 252
     new-instance v0, Landroid/content/Intent;
 
-    const-class v1, Lcom/android/settings/TetherService;
+    const-class v1, Lcom/android/settings_ext/TetherService;
 
     invoke-direct {v0, p0, v1}, Landroid/content/Intent;-><init>(Landroid/content/Context;Ljava/lang/Class;)V
 
@@ -315,9 +315,9 @@
     if-eqz v0, :cond_0
 
     .line 194
-    new-instance v1, Lcom/android/settings/TetherService$1;
+    new-instance v1, Lcom/android/settings_ext/TetherService$1;
 
-    invoke-direct {v1, p0, v0}, Lcom/android/settings/TetherService$1;-><init>(Lcom/android/settings/TetherService;Landroid/bluetooth/BluetoothAdapter;)V
+    invoke-direct {v1, p0, v0}, Lcom/android/settings_ext/TetherService$1;-><init>(Lcom/android/settings_ext/TetherService;Landroid/bluetooth/BluetoothAdapter;)V
 
     const/4 v2, 0x5
 
@@ -335,7 +335,7 @@
     .line 186
     const-string v1, "connectivity"
 
-    invoke-virtual {p0, v1}, Lcom/android/settings/TetherService;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
+    invoke-virtual {p0, v1}, Lcom/android/settings_ext/TetherService;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object v0
 
@@ -356,17 +356,17 @@
 
     .prologue
     .line 181
-    new-instance v0, Lcom/android/settings/wifi/WifiApEnabler;
+    new-instance v0, Lcom/android/settings_ext/wifi/WifiApEnabler;
 
     const/4 v1, 0x0
 
-    invoke-direct {v0, p0, v1}, Lcom/android/settings/wifi/WifiApEnabler;-><init>(Landroid/content/Context;Landroid/preference/SwitchPreference;)V
+    invoke-direct {v0, p0, v1}, Lcom/android/settings_ext/wifi/WifiApEnabler;-><init>(Landroid/content/Context;Landroid/preference/SwitchPreference;)V
 
     .line 182
-    .local v0, "enabler":Lcom/android/settings/wifi/WifiApEnabler;
+    .local v0, "enabler":Lcom/android/settings_ext/wifi/WifiApEnabler;
     const/4 v1, 0x0
 
-    invoke-virtual {v0, v1}, Lcom/android/settings/wifi/WifiApEnabler;->setSoftapEnabled(Z)V
+    invoke-virtual {v0, v1}, Lcom/android/settings_ext/wifi/WifiApEnabler;->setSoftapEnabled(Z)V
 
     .line 183
     return-void
@@ -377,22 +377,22 @@
 
     .prologue
     .line 175
-    invoke-static {p0}, Lcom/android/settings/TetherService;->isHotspotEnabled(Landroid/content/Context;)Z
+    invoke-static {p0}, Lcom/android/settings_ext/TetherService;->isHotspotEnabled(Landroid/content/Context;)Z
 
     move-result v0
 
     if-nez v0, :cond_0
 
     .line 176
-    new-instance v0, Lcom/android/settings/wifi/WifiApEnabler;
+    new-instance v0, Lcom/android/settings_ext/wifi/WifiApEnabler;
 
     const/4 v1, 0x0
 
-    invoke-direct {v0, p0, v1}, Lcom/android/settings/wifi/WifiApEnabler;-><init>(Landroid/content/Context;Landroid/preference/SwitchPreference;)V
+    invoke-direct {v0, p0, v1}, Lcom/android/settings_ext/wifi/WifiApEnabler;-><init>(Landroid/content/Context;Landroid/preference/SwitchPreference;)V
 
     const/4 v1, 0x1
 
-    invoke-virtual {v0, v1}, Lcom/android/settings/wifi/WifiApEnabler;->setSoftapEnabled(Z)V
+    invoke-virtual {v0, v1}, Lcom/android/settings_ext/wifi/WifiApEnabler;->setSoftapEnabled(Z)V
 
     .line 178
     :cond_0
@@ -443,7 +443,7 @@
     .line 232
     new-instance v7, Landroid/content/Intent;
 
-    const-class v1, Lcom/android/settings/TetherService;
+    const-class v1, Lcom/android/settings_ext/TetherService;
 
     invoke-direct {v7, p0, v1}, Landroid/content/Intent;-><init>(Landroid/content/Context;Ljava/lang/Class;)V
 
@@ -464,7 +464,7 @@
     .local v6, "pendingIntent":Landroid/app/PendingIntent;
     const-string v1, "alarm"
 
-    invoke-virtual {p0, v1}, Lcom/android/settings/TetherService;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
+    invoke-virtual {p0, v1}, Lcom/android/settings_ext/TetherService;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object v0
 
@@ -472,7 +472,7 @@
 
     .line 237
     .local v0, "alarmManager":Landroid/app/AlarmManager;
-    invoke-virtual {p0}, Lcom/android/settings/TetherService;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {p0}, Lcom/android/settings_ext/TetherService;->getResources()Landroid/content/res/Resources;
 
     move-result-object v1
 
@@ -500,7 +500,7 @@
 
     .line 241
     .local v2, "firstTime":J
-    sget-boolean v1, Lcom/android/settings/TetherService;->DEBUG:Z
+    sget-boolean v1, Lcom/android/settings_ext/TetherService;->DEBUG:Z
 
     if-eqz v1, :cond_0
 
@@ -545,7 +545,7 @@
     .line 225
     new-instance v0, Landroid/content/Intent;
 
-    const-class v1, Lcom/android/settings/TetherService;
+    const-class v1, Lcom/android/settings_ext/TetherService;
 
     invoke-direct {v0, p0, v1}, Landroid/content/Intent;-><init>(Landroid/content/Context;Ljava/lang/Class;)V
 
@@ -575,7 +575,7 @@
 
     .prologue
     .line 208
-    invoke-virtual {p0}, Lcom/android/settings/TetherService;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {p0}, Lcom/android/settings_ext/TetherService;->getResources()Landroid/content/res/Resources;
 
     move-result-object v2
 
@@ -587,7 +587,7 @@
 
     .line 210
     .local v1, "provisionAction":Ljava/lang/String;
-    sget-boolean v2, Lcom/android/settings/TetherService;->DEBUG:Z
+    sget-boolean v2, Lcom/android/settings_ext/TetherService;->DEBUG:Z
 
     if-eqz v2, :cond_0
 
@@ -613,7 +613,7 @@
 
     move-result-object v3
 
-    iget-object v4, p0, Lcom/android/settings/TetherService;->mCurrentTethers:Ljava/util/ArrayList;
+    iget-object v4, p0, Lcom/android/settings_ext/TetherService;->mCurrentTethers:Ljava/util/ArrayList;
 
     invoke-virtual {v4, p1}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
 
@@ -639,7 +639,7 @@
     .local v0, "intent":Landroid/content/Intent;
     const-string v3, "TETHER_TYPE"
 
-    iget-object v2, p0, Lcom/android/settings/TetherService;->mCurrentTethers:Ljava/util/ArrayList;
+    iget-object v2, p0, Lcom/android/settings_ext/TetherService;->mCurrentTethers:Ljava/util/ArrayList;
 
     invoke-virtual {v2, p1}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
 
@@ -655,12 +655,12 @@
     invoke-virtual {v0, v2}, Landroid/content/Intent;->setFlags(I)Landroid/content/Intent;
 
     .line 215
-    invoke-virtual {p0, v0}, Lcom/android/settings/TetherService;->sendBroadcast(Landroid/content/Intent;)V
+    invoke-virtual {p0, v0}, Lcom/android/settings_ext/TetherService;->sendBroadcast(Landroid/content/Intent;)V
 
     .line 216
     const/4 v2, 0x1
 
-    iput-boolean v2, p0, Lcom/android/settings/TetherService;->mInProvisionCheck:Z
+    iput-boolean v2, p0, Lcom/android/settings_ext/TetherService;->mInProvisionCheck:Z
 
     .line 217
     return-void
@@ -823,7 +823,7 @@
     invoke-super {p0}, Landroid/app/Service;->onCreate()V
 
     .line 79
-    sget-boolean v2, Lcom/android/settings/TetherService;->DEBUG:Z
+    sget-boolean v2, Lcom/android/settings_ext/TetherService;->DEBUG:Z
 
     if-eqz v2, :cond_0
 
@@ -835,7 +835,7 @@
 
     .line 80
     :cond_0
-    invoke-virtual {p0}, Lcom/android/settings/TetherService;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {p0}, Lcom/android/settings_ext/TetherService;->getResources()Landroid/content/res/Resources;
 
     move-result-object v2
 
@@ -847,7 +847,7 @@
 
     .line 82
     .local v1, "provisionResponse":Ljava/lang/String;
-    iget-object v2, p0, Lcom/android/settings/TetherService;->mReceiver:Landroid/content/BroadcastReceiver;
+    iget-object v2, p0, Lcom/android/settings_ext/TetherService;->mReceiver:Landroid/content/BroadcastReceiver;
 
     new-instance v3, Landroid/content/IntentFilter;
 
@@ -857,12 +857,12 @@
 
     const/4 v5, 0x0
 
-    invoke-virtual {p0, v2, v3, v4, v5}, Lcom/android/settings/TetherService;->registerReceiver(Landroid/content/BroadcastReceiver;Landroid/content/IntentFilter;Ljava/lang/String;Landroid/os/Handler;)Landroid/content/Intent;
+    invoke-virtual {p0, v2, v3, v4, v5}, Lcom/android/settings_ext/TetherService;->registerReceiver(Landroid/content/BroadcastReceiver;Landroid/content/IntentFilter;Ljava/lang/String;Landroid/os/Handler;)Landroid/content/Intent;
 
     .line 84
     const-string v2, "tetherPrefs"
 
-    invoke-virtual {p0, v2, v6}, Lcom/android/settings/TetherService;->getSharedPreferences(Ljava/lang/String;I)Landroid/content/SharedPreferences;
+    invoke-virtual {p0, v2, v6}, Lcom/android/settings_ext/TetherService;->getSharedPreferences(Ljava/lang/String;I)Landroid/content/SharedPreferences;
 
     move-result-object v0
 
@@ -876,14 +876,14 @@
 
     move-result-object v2
 
-    invoke-direct {p0, v2}, Lcom/android/settings/TetherService;->stringToTethers(Ljava/lang/String;)Ljava/util/ArrayList;
+    invoke-direct {p0, v2}, Lcom/android/settings_ext/TetherService;->stringToTethers(Ljava/lang/String;)Ljava/util/ArrayList;
 
     move-result-object v2
 
-    iput-object v2, p0, Lcom/android/settings/TetherService;->mCurrentTethers:Ljava/util/ArrayList;
+    iput-object v2, p0, Lcom/android/settings_ext/TetherService;->mCurrentTethers:Ljava/util/ArrayList;
 
     .line 86
-    iput v6, p0, Lcom/android/settings/TetherService;->mCurrentTypeIndex:I
+    iput v6, p0, Lcom/android/settings_ext/TetherService;->mCurrentTypeIndex:I
 
     .line 87
     return-void
@@ -894,7 +894,7 @@
 
     .prologue
     .line 138
-    iget-boolean v1, p0, Lcom/android/settings/TetherService;->mInProvisionCheck:Z
+    iget-boolean v1, p0, Lcom/android/settings_ext/TetherService;->mInProvisionCheck:Z
 
     if-eqz v1, :cond_0
 
@@ -911,9 +911,9 @@
 
     move-result-object v2
 
-    iget-object v3, p0, Lcom/android/settings/TetherService;->mCurrentTethers:Ljava/util/ArrayList;
+    iget-object v3, p0, Lcom/android/settings_ext/TetherService;->mCurrentTethers:Ljava/util/ArrayList;
 
-    iget v4, p0, Lcom/android/settings/TetherService;->mCurrentTypeIndex:I
+    iget v4, p0, Lcom/android/settings_ext/TetherService;->mCurrentTypeIndex:I
 
     invoke-virtual {v3, v4}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
 
@@ -935,7 +935,7 @@
 
     const/4 v2, 0x0
 
-    invoke-virtual {p0, v1, v2}, Lcom/android/settings/TetherService;->getSharedPreferences(Ljava/lang/String;I)Landroid/content/SharedPreferences;
+    invoke-virtual {p0, v1, v2}, Lcom/android/settings_ext/TetherService;->getSharedPreferences(Ljava/lang/String;I)Landroid/content/SharedPreferences;
 
     move-result-object v0
 
@@ -947,9 +947,9 @@
 
     const-string v2, "currentTethers"
 
-    iget-object v3, p0, Lcom/android/settings/TetherService;->mCurrentTethers:Ljava/util/ArrayList;
+    iget-object v3, p0, Lcom/android/settings_ext/TetherService;->mCurrentTethers:Ljava/util/ArrayList;
 
-    invoke-direct {p0, v3}, Lcom/android/settings/TetherService;->tethersToString(Ljava/util/ArrayList;)Ljava/lang/String;
+    invoke-direct {p0, v3}, Lcom/android/settings_ext/TetherService;->tethersToString(Ljava/util/ArrayList;)Ljava/lang/String;
 
     move-result-object v3
 
@@ -960,7 +960,7 @@
     invoke-interface {v1}, Landroid/content/SharedPreferences$Editor;->commit()Z
 
     .line 145
-    sget-boolean v1, Lcom/android/settings/TetherService;->DEBUG:Z
+    sget-boolean v1, Lcom/android/settings_ext/TetherService;->DEBUG:Z
 
     if-eqz v1, :cond_1
 
@@ -972,9 +972,9 @@
 
     .line 146
     :cond_1
-    iget-object v1, p0, Lcom/android/settings/TetherService;->mReceiver:Landroid/content/BroadcastReceiver;
+    iget-object v1, p0, Lcom/android/settings_ext/TetherService;->mReceiver:Landroid/content/BroadcastReceiver;
 
-    invoke-virtual {p0, v1}, Lcom/android/settings/TetherService;->unregisterReceiver(Landroid/content/BroadcastReceiver;)V
+    invoke-virtual {p0, v1}, Lcom/android/settings_ext/TetherService;->unregisterReceiver(Landroid/content/BroadcastReceiver;)V
 
     .line 147
     invoke-super {p0}, Landroid/app/Service;->onDestroy()V
@@ -1014,7 +1014,7 @@
 
     .line 93
     .local v1, "type":I
-    iget-object v3, p0, Lcom/android/settings/TetherService;->mCurrentTethers:Ljava/util/ArrayList;
+    iget-object v3, p0, Lcom/android/settings_ext/TetherService;->mCurrentTethers:Ljava/util/ArrayList;
 
     invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -1027,7 +1027,7 @@
     if-nez v3, :cond_1
 
     .line 94
-    sget-boolean v3, Lcom/android/settings/TetherService;->DEBUG:Z
+    sget-boolean v3, Lcom/android/settings_ext/TetherService;->DEBUG:Z
 
     if-eqz v3, :cond_0
 
@@ -1055,7 +1055,7 @@
 
     .line 95
     :cond_0
-    iget-object v3, p0, Lcom/android/settings/TetherService;->mCurrentTethers:Ljava/util/ArrayList;
+    iget-object v3, p0, Lcom/android/settings_ext/TetherService;->mCurrentTethers:Ljava/util/ArrayList;
 
     invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -1083,7 +1083,7 @@
 
     .line 100
     .restart local v1    # "type":I
-    sget-boolean v3, Lcom/android/settings/TetherService;->DEBUG:Z
+    sget-boolean v3, Lcom/android/settings_ext/TetherService;->DEBUG:Z
 
     if-eqz v3, :cond_2
 
@@ -1111,7 +1111,7 @@
 
     .line 101
     :cond_2
-    iget-object v3, p0, Lcom/android/settings/TetherService;->mCurrentTethers:Ljava/util/ArrayList;
+    iget-object v3, p0, Lcom/android/settings_ext/TetherService;->mCurrentTethers:Ljava/util/ArrayList;
 
     invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -1126,29 +1126,29 @@
     if-ltz v0, :cond_3
 
     .line 103
-    iget-object v3, p0, Lcom/android/settings/TetherService;->mCurrentTethers:Ljava/util/ArrayList;
+    iget-object v3, p0, Lcom/android/settings_ext/TetherService;->mCurrentTethers:Ljava/util/ArrayList;
 
     invoke-virtual {v3, v0}, Ljava/util/ArrayList;->remove(I)Ljava/lang/Object;
 
     .line 106
-    iget v3, p0, Lcom/android/settings/TetherService;->mCurrentTypeIndex:I
+    iget v3, p0, Lcom/android/settings_ext/TetherService;->mCurrentTypeIndex:I
 
     if-gt v0, v3, :cond_3
 
-    iget v3, p0, Lcom/android/settings/TetherService;->mCurrentTypeIndex:I
+    iget v3, p0, Lcom/android/settings_ext/TetherService;->mCurrentTypeIndex:I
 
     if-lez v3, :cond_3
 
     .line 107
-    iget v3, p0, Lcom/android/settings/TetherService;->mCurrentTypeIndex:I
+    iget v3, p0, Lcom/android/settings_ext/TetherService;->mCurrentTypeIndex:I
 
     add-int/lit8 v3, v3, -0x1
 
-    iput v3, p0, Lcom/android/settings/TetherService;->mCurrentTypeIndex:I
+    iput v3, p0, Lcom/android/settings_ext/TetherService;->mCurrentTypeIndex:I
 
     .line 110
     :cond_3
-    invoke-direct {p0}, Lcom/android/settings/TetherService;->cancelAlarmIfNecessary()V
+    invoke-direct {p0}, Lcom/android/settings_ext/TetherService;->cancelAlarmIfNecessary()V
 
     .line 115
     .end local v0    # "index":I
@@ -1162,7 +1162,7 @@
 
     if-eqz v3, :cond_5
 
-    iget-object v3, p0, Lcom/android/settings/TetherService;->mCurrentTethers:Ljava/util/ArrayList;
+    iget-object v3, p0, Lcom/android/settings_ext/TetherService;->mCurrentTethers:Ljava/util/ArrayList;
 
     invoke-virtual {v3}, Ljava/util/ArrayList;->size()I
 
@@ -1171,7 +1171,7 @@
     if-ne v3, v2, :cond_5
 
     .line 117
-    invoke-direct {p0}, Lcom/android/settings/TetherService;->scheduleAlarm()V
+    invoke-direct {p0}, Lcom/android/settings_ext/TetherService;->scheduleAlarm()V
 
     .line 120
     :cond_5
@@ -1184,7 +1184,7 @@
     if-eqz v3, :cond_6
 
     .line 121
-    iput-boolean v2, p0, Lcom/android/settings/TetherService;->mEnableWifiAfterCheck:Z
+    iput-boolean v2, p0, Lcom/android/settings_ext/TetherService;->mEnableWifiAfterCheck:Z
 
     .line 124
     :cond_6
@@ -1197,9 +1197,9 @@
     if-eqz v3, :cond_8
 
     .line 125
-    iget v3, p0, Lcom/android/settings/TetherService;->mCurrentTypeIndex:I
+    iget v3, p0, Lcom/android/settings_ext/TetherService;->mCurrentTypeIndex:I
 
-    invoke-direct {p0, v3}, Lcom/android/settings/TetherService;->startProvisioning(I)V
+    invoke-direct {p0, v3}, Lcom/android/settings_ext/TetherService;->startProvisioning(I)V
 
     .line 133
     :cond_7
@@ -1208,12 +1208,12 @@
 
     .line 126
     :cond_8
-    iget-boolean v3, p0, Lcom/android/settings/TetherService;->mInProvisionCheck:Z
+    iget-boolean v3, p0, Lcom/android/settings_ext/TetherService;->mInProvisionCheck:Z
 
     if-nez v3, :cond_7
 
     .line 128
-    invoke-virtual {p0}, Lcom/android/settings/TetherService;->stopSelf()V
+    invoke-virtual {p0}, Lcom/android/settings_ext/TetherService;->stopSelf()V
 
     .line 129
     const/4 v2, 0x2

@@ -1,18 +1,18 @@
-.class public Lcom/android/settings/AppWidgetPickActivity;
-.super Lcom/android/settings/ActivityPicker;
+.class public Lcom/android/settings_ext/AppWidgetPickActivity;
+.super Lcom/android/settings_ext/ActivityPicker;
 .source "AppWidgetPickActivity.java"
 
 # interfaces
-.implements Lcom/android/settings/AppWidgetLoader$ItemConstructor;
+.implements Lcom/android/settings_ext/AppWidgetLoader$ItemConstructor;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lcom/android/settings/ActivityPicker;",
-        "Lcom/android/settings/AppWidgetLoader$ItemConstructor",
+        "Lcom/android/settings_ext/ActivityPicker;",
+        "Lcom/android/settings_ext/AppWidgetLoader$ItemConstructor",
         "<",
-        "Lcom/android/settings/ActivityPicker$PickAdapter$Item;",
+        "Lcom/android/settings_ext/ActivityPicker$PickAdapter$Item;",
         ">;"
     }
 .end annotation
@@ -21,12 +21,12 @@
 # instance fields
 .field private mAppWidgetId:I
 
-.field private mAppWidgetLoader:Lcom/android/settings/AppWidgetLoader;
+.field private mAppWidgetLoader:Lcom/android/settings_ext/AppWidgetLoader;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Lcom/android/settings/AppWidgetLoader",
+            "Lcom/android/settings_ext/AppWidgetLoader",
             "<",
-            "Lcom/android/settings/ActivityPicker$PickAdapter$Item;",
+            "Lcom/android/settings_ext/ActivityPicker$PickAdapter$Item;",
             ">;"
         }
     .end annotation
@@ -39,7 +39,7 @@
         value = {
             "Ljava/util/List",
             "<",
-            "Lcom/android/settings/ActivityPicker$PickAdapter$Item;",
+            "Lcom/android/settings_ext/ActivityPicker$PickAdapter$Item;",
             ">;"
         }
     .end annotation
@@ -54,14 +54,14 @@
 
     .prologue
     .line 46
-    invoke-direct {p0}, Lcom/android/settings/ActivityPicker;-><init>()V
+    invoke-direct {p0}, Lcom/android/settings_ext/ActivityPicker;-><init>()V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public createItem(Landroid/content/Context;Landroid/appwidget/AppWidgetProviderInfo;Landroid/os/Bundle;)Lcom/android/settings/ActivityPicker$PickAdapter$Item;
+.method public createItem(Landroid/content/Context;Landroid/appwidget/AppWidgetProviderInfo;Landroid/os/Bundle;)Lcom/android/settings_ext/ActivityPicker$PickAdapter$Item;
     .locals 11
     .param p1, "context"    # Landroid/content/Context;
     .param p2, "info"    # Landroid/appwidget/AppWidgetProviderInfo;
@@ -115,7 +115,7 @@
 
     .line 121
     .local v3, "iconDensity":I
-    iget-object v8, p0, Lcom/android/settings/AppWidgetPickActivity;->mPackageManager:Landroid/content/pm/PackageManager;
+    iget-object v8, p0, Lcom/android/settings_ext/AppWidgetPickActivity;->mPackageManager:Landroid/content/pm/PackageManager;
 
     iget-object v9, p2, Landroid/appwidget/AppWidgetProviderInfo;->provider:Landroid/content/ComponentName;
 
@@ -188,19 +188,19 @@
 
     .line 134
     :cond_0
-    new-instance v4, Lcom/android/settings/ActivityPicker$PickAdapter$Item;
+    new-instance v4, Lcom/android/settings_ext/ActivityPicker$PickAdapter$Item;
 
-    invoke-direct {v4, p1, v5, v2}, Lcom/android/settings/ActivityPicker$PickAdapter$Item;-><init>(Landroid/content/Context;Ljava/lang/CharSequence;Landroid/graphics/drawable/Drawable;)V
+    invoke-direct {v4, p1, v5, v2}, Lcom/android/settings_ext/ActivityPicker$PickAdapter$Item;-><init>(Landroid/content/Context;Ljava/lang/CharSequence;Landroid/graphics/drawable/Drawable;)V
 
     .line 135
-    .local v4, "item":Lcom/android/settings/ActivityPicker$PickAdapter$Item;
+    .local v4, "item":Lcom/android/settings_ext/ActivityPicker$PickAdapter$Item;
     iget-object v8, p2, Landroid/appwidget/AppWidgetProviderInfo;->provider:Landroid/content/ComponentName;
 
     invoke-virtual {v8}, Landroid/content/ComponentName;->getPackageName()Ljava/lang/String;
 
     move-result-object v8
 
-    iput-object v8, v4, Lcom/android/settings/ActivityPicker$PickAdapter$Item;->packageName:Ljava/lang/String;
+    iput-object v8, v4, Lcom/android/settings_ext/ActivityPicker$PickAdapter$Item;->packageName:Ljava/lang/String;
 
     .line 136
     iget-object v8, p2, Landroid/appwidget/AppWidgetProviderInfo;->provider:Landroid/content/ComponentName;
@@ -209,16 +209,16 @@
 
     move-result-object v8
 
-    iput-object v8, v4, Lcom/android/settings/ActivityPicker$PickAdapter$Item;->className:Ljava/lang/String;
+    iput-object v8, v4, Lcom/android/settings_ext/ActivityPicker$PickAdapter$Item;->className:Ljava/lang/String;
 
     .line 137
-    iput-object p3, v4, Lcom/android/settings/ActivityPicker$PickAdapter$Item;->extras:Landroid/os/Bundle;
+    iput-object p3, v4, Lcom/android/settings_ext/ActivityPicker$PickAdapter$Item;->extras:Landroid/os/Bundle;
 
     .line 138
     return-object v4
 
     .line 107
-    .end local v4    # "item":Lcom/android/settings/ActivityPicker$PickAdapter$Item;
+    .end local v4    # "item":Lcom/android/settings_ext/ActivityPicker$PickAdapter$Item;
     .restart local v0    # "density":I
     .restart local v7    # "res":Landroid/content/res/Resources;
     :sswitch_0
@@ -315,7 +315,7 @@
 
     .prologue
     .line 46
-    invoke-virtual {p0, p1, p2, p3}, Lcom/android/settings/AppWidgetPickActivity;->createItem(Landroid/content/Context;Landroid/appwidget/AppWidgetProviderInfo;Landroid/os/Bundle;)Lcom/android/settings/ActivityPicker$PickAdapter$Item;
+    invoke-virtual {p0, p1, p2, p3}, Lcom/android/settings_ext/AppWidgetPickActivity;->createItem(Landroid/content/Context;Landroid/appwidget/AppWidgetProviderInfo;Landroid/os/Bundle;)Lcom/android/settings_ext/ActivityPicker$PickAdapter$Item;
 
     move-result-object v0
 
@@ -329,27 +329,27 @@
             "()",
             "Ljava/util/List",
             "<",
-            "Lcom/android/settings/ActivityPicker$PickAdapter$Item;",
+            "Lcom/android/settings_ext/ActivityPicker$PickAdapter$Item;",
             ">;"
         }
     .end annotation
 
     .prologue
     .line 91
-    iget-object v0, p0, Lcom/android/settings/AppWidgetPickActivity;->mAppWidgetLoader:Lcom/android/settings/AppWidgetLoader;
+    iget-object v0, p0, Lcom/android/settings_ext/AppWidgetPickActivity;->mAppWidgetLoader:Lcom/android/settings_ext/AppWidgetLoader;
 
-    invoke-virtual {p0}, Lcom/android/settings/AppWidgetPickActivity;->getIntent()Landroid/content/Intent;
+    invoke-virtual {p0}, Lcom/android/settings_ext/AppWidgetPickActivity;->getIntent()Landroid/content/Intent;
 
     move-result-object v1
 
-    invoke-virtual {v0, v1}, Lcom/android/settings/AppWidgetLoader;->getItems(Landroid/content/Intent;)Ljava/util/List;
+    invoke-virtual {v0, v1}, Lcom/android/settings_ext/AppWidgetLoader;->getItems(Landroid/content/Intent;)Ljava/util/List;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/AppWidgetPickActivity;->mItems:Ljava/util/List;
+    iput-object v0, p0, Lcom/android/settings_ext/AppWidgetPickActivity;->mItems:Ljava/util/List;
 
     .line 92
-    iget-object v0, p0, Lcom/android/settings/AppWidgetPickActivity;->mItems:Ljava/util/List;
+    iget-object v0, p0, Lcom/android/settings_ext/AppWidgetPickActivity;->mItems:Ljava/util/List;
 
     return-object v0
 .end method
@@ -361,34 +361,34 @@
 
     .prologue
     .line 146
-    invoke-virtual {p0, p2}, Lcom/android/settings/AppWidgetPickActivity;->getIntentForPosition(I)Landroid/content/Intent;
+    invoke-virtual {p0, p2}, Lcom/android/settings_ext/AppWidgetPickActivity;->getIntentForPosition(I)Landroid/content/Intent;
 
     move-result-object v1
 
     .line 147
     .local v1, "intent":Landroid/content/Intent;
-    iget-object v5, p0, Lcom/android/settings/AppWidgetPickActivity;->mItems:Ljava/util/List;
+    iget-object v5, p0, Lcom/android/settings_ext/AppWidgetPickActivity;->mItems:Ljava/util/List;
 
     invoke-interface {v5, p2}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
     move-result-object v2
 
-    check-cast v2, Lcom/android/settings/ActivityPicker$PickAdapter$Item;
+    check-cast v2, Lcom/android/settings_ext/ActivityPicker$PickAdapter$Item;
 
     .line 150
-    .local v2, "item":Lcom/android/settings/ActivityPicker$PickAdapter$Item;
-    iget-object v5, v2, Lcom/android/settings/ActivityPicker$PickAdapter$Item;->extras:Landroid/os/Bundle;
+    .local v2, "item":Lcom/android/settings_ext/ActivityPicker$PickAdapter$Item;
+    iget-object v5, v2, Lcom/android/settings_ext/ActivityPicker$PickAdapter$Item;->extras:Landroid/os/Bundle;
 
     if-eqz v5, :cond_0
 
     .line 153
     const/4 v5, -0x1
 
-    invoke-virtual {p0, v5, v1}, Lcom/android/settings/AppWidgetPickActivity;->setResultData(ILandroid/content/Intent;)V
+    invoke-virtual {p0, v5, v1}, Lcom/android/settings_ext/AppWidgetPickActivity;->setResultData(ILandroid/content/Intent;)V
 
     .line 174
     :goto_0
-    invoke-virtual {p0}, Lcom/android/settings/AppWidgetPickActivity;->finish()V
+    invoke-virtual {p0}, Lcom/android/settings_ext/AppWidgetPickActivity;->finish()V
 
     .line 175
     return-void
@@ -419,9 +419,9 @@
 
     .line 161
     :cond_1
-    iget-object v5, p0, Lcom/android/settings/AppWidgetPickActivity;->mAppWidgetManager:Landroid/appwidget/AppWidgetManager;
+    iget-object v5, p0, Lcom/android/settings_ext/AppWidgetPickActivity;->mAppWidgetManager:Landroid/appwidget/AppWidgetManager;
 
-    iget v6, p0, Lcom/android/settings/AppWidgetPickActivity;->mAppWidgetId:I
+    iget v6, p0, Lcom/android/settings_ext/AppWidgetPickActivity;->mAppWidgetId:I
 
     invoke-virtual {v1}, Landroid/content/Intent;->getComponent()Landroid/content/ComponentName;
 
@@ -439,7 +439,7 @@
     :goto_1
     const/4 v5, 0x0
 
-    invoke-virtual {p0, v4, v5}, Lcom/android/settings/AppWidgetPickActivity;->setResultData(ILandroid/content/Intent;)V
+    invoke-virtual {p0, v4, v5}, Lcom/android/settings_ext/AppWidgetPickActivity;->setResultData(ILandroid/content/Intent;)V
 
     goto :goto_0
 
@@ -464,38 +464,38 @@
     const/4 v3, 0x0
 
     .line 64
-    invoke-virtual {p0}, Lcom/android/settings/AppWidgetPickActivity;->getPackageManager()Landroid/content/pm/PackageManager;
+    invoke-virtual {p0}, Lcom/android/settings_ext/AppWidgetPickActivity;->getPackageManager()Landroid/content/pm/PackageManager;
 
     move-result-object v1
 
-    iput-object v1, p0, Lcom/android/settings/AppWidgetPickActivity;->mPackageManager:Landroid/content/pm/PackageManager;
+    iput-object v1, p0, Lcom/android/settings_ext/AppWidgetPickActivity;->mPackageManager:Landroid/content/pm/PackageManager;
 
     .line 65
     invoke-static {p0}, Landroid/appwidget/AppWidgetManager;->getInstance(Landroid/content/Context;)Landroid/appwidget/AppWidgetManager;
 
     move-result-object v1
 
-    iput-object v1, p0, Lcom/android/settings/AppWidgetPickActivity;->mAppWidgetManager:Landroid/appwidget/AppWidgetManager;
+    iput-object v1, p0, Lcom/android/settings_ext/AppWidgetPickActivity;->mAppWidgetManager:Landroid/appwidget/AppWidgetManager;
 
     .line 66
-    new-instance v1, Lcom/android/settings/AppWidgetLoader;
+    new-instance v1, Lcom/android/settings_ext/AppWidgetLoader;
 
-    iget-object v2, p0, Lcom/android/settings/AppWidgetPickActivity;->mAppWidgetManager:Landroid/appwidget/AppWidgetManager;
+    iget-object v2, p0, Lcom/android/settings_ext/AppWidgetPickActivity;->mAppWidgetManager:Landroid/appwidget/AppWidgetManager;
 
-    invoke-direct {v1, p0, v2, p0}, Lcom/android/settings/AppWidgetLoader;-><init>(Landroid/content/Context;Landroid/appwidget/AppWidgetManager;Lcom/android/settings/AppWidgetLoader$ItemConstructor;)V
+    invoke-direct {v1, p0, v2, p0}, Lcom/android/settings_ext/AppWidgetLoader;-><init>(Landroid/content/Context;Landroid/appwidget/AppWidgetManager;Lcom/android/settings_ext/AppWidgetLoader$ItemConstructor;)V
 
-    iput-object v1, p0, Lcom/android/settings/AppWidgetPickActivity;->mAppWidgetLoader:Lcom/android/settings/AppWidgetLoader;
+    iput-object v1, p0, Lcom/android/settings_ext/AppWidgetPickActivity;->mAppWidgetLoader:Lcom/android/settings_ext/AppWidgetLoader;
 
     .line 69
-    invoke-super {p0, p1}, Lcom/android/settings/ActivityPicker;->onCreate(Landroid/os/Bundle;)V
+    invoke-super {p0, p1}, Lcom/android/settings_ext/ActivityPicker;->onCreate(Landroid/os/Bundle;)V
 
     .line 72
     const/4 v1, 0x0
 
-    invoke-virtual {p0, v3, v1}, Lcom/android/settings/AppWidgetPickActivity;->setResultData(ILandroid/content/Intent;)V
+    invoke-virtual {p0, v3, v1}, Lcom/android/settings_ext/AppWidgetPickActivity;->setResultData(ILandroid/content/Intent;)V
 
     .line 75
-    invoke-virtual {p0}, Lcom/android/settings/AppWidgetPickActivity;->getIntent()Landroid/content/Intent;
+    invoke-virtual {p0}, Lcom/android/settings_ext/AppWidgetPickActivity;->getIntent()Landroid/content/Intent;
 
     move-result-object v0
 
@@ -516,7 +516,7 @@
 
     move-result v1
 
-    iput v1, p0, Lcom/android/settings/AppWidgetPickActivity;->mAppWidgetId:I
+    iput v1, p0, Lcom/android/settings_ext/AppWidgetPickActivity;->mAppWidgetId:I
 
     .line 82
     :goto_0
@@ -524,7 +524,7 @@
 
     .line 80
     :cond_0
-    invoke-virtual {p0}, Lcom/android/settings/AppWidgetPickActivity;->finish()V
+    invoke-virtual {p0}, Lcom/android/settings_ext/AppWidgetPickActivity;->finish()V
 
     goto :goto_0
 .end method
@@ -545,12 +545,12 @@
     :goto_0
     const-string v1, "appWidgetId"
 
-    iget v2, p0, Lcom/android/settings/AppWidgetPickActivity;->mAppWidgetId:I
+    iget v2, p0, Lcom/android/settings_ext/AppWidgetPickActivity;->mAppWidgetId:I
 
     invoke-virtual {v0, v1, v2}, Landroid/content/Intent;->putExtra(Ljava/lang/String;I)Landroid/content/Intent;
 
     .line 186
-    invoke-virtual {p0, p1, v0}, Lcom/android/settings/AppWidgetPickActivity;->setResult(ILandroid/content/Intent;)V
+    invoke-virtual {p0, p1, v0}, Lcom/android/settings_ext/AppWidgetPickActivity;->setResult(ILandroid/content/Intent;)V
 
     .line 187
     return-void

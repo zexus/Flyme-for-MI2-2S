@@ -1,11 +1,11 @@
-.class Lcom/android/settings/DreamSettings$PackageReceiver;
+.class Lcom/android/settings_ext/DreamSettings$PackageReceiver;
 .super Landroid/content/BroadcastReceiver;
 .source "DreamSettings.java"
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/android/settings/DreamSettings;
+    value = Lcom/android/settings_ext/DreamSettings;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -15,30 +15,30 @@
 
 
 # instance fields
-.field final synthetic this$0:Lcom/android/settings/DreamSettings;
+.field final synthetic this$0:Lcom/android/settings_ext/DreamSettings;
 
 
 # direct methods
-.method private constructor <init>(Lcom/android/settings/DreamSettings;)V
+.method private constructor <init>(Lcom/android/settings_ext/DreamSettings;)V
     .locals 0
 
     .prologue
     .line 364
-    iput-object p1, p0, Lcom/android/settings/DreamSettings$PackageReceiver;->this$0:Lcom/android/settings/DreamSettings;
+    iput-object p1, p0, Lcom/android/settings_ext/DreamSettings$PackageReceiver;->this$0:Lcom/android/settings_ext/DreamSettings;
 
     invoke-direct {p0}, Landroid/content/BroadcastReceiver;-><init>()V
 
     return-void
 .end method
 
-.method synthetic constructor <init>(Lcom/android/settings/DreamSettings;Lcom/android/settings/DreamSettings$1;)V
+.method synthetic constructor <init>(Lcom/android/settings_ext/DreamSettings;Lcom/android/settings_ext/DreamSettings$1;)V
     .locals 0
-    .param p1, "x0"    # Lcom/android/settings/DreamSettings;
-    .param p2, "x1"    # Lcom/android/settings/DreamSettings$1;
+    .param p1, "x0"    # Lcom/android/settings_ext/DreamSettings;
+    .param p2, "x1"    # Lcom/android/settings_ext/DreamSettings$1;
 
     .prologue
     .line 364
-    invoke-direct {p0, p1}, Lcom/android/settings/DreamSettings$PackageReceiver;-><init>(Lcom/android/settings/DreamSettings;)V
+    invoke-direct {p0, p1}, Lcom/android/settings_ext/DreamSettings$PackageReceiver;-><init>(Lcom/android/settings_ext/DreamSettings;)V
 
     return-void
 .end method
@@ -58,14 +58,14 @@
 
     new-array v1, v1, [Ljava/lang/Object;
 
-    # invokes: Lcom/android/settings/DreamSettings;->logd(Ljava/lang/String;[Ljava/lang/Object;)V
-    invoke-static {v0, v1}, Lcom/android/settings/DreamSettings;->access$200(Ljava/lang/String;[Ljava/lang/Object;)V
+    # invokes: Lcom/android/settings_ext/DreamSettings;->logd(Ljava/lang/String;[Ljava/lang/Object;)V
+    invoke-static {v0, v1}, Lcom/android/settings_ext/DreamSettings;->access$200(Ljava/lang/String;[Ljava/lang/Object;)V
 
     .line 368
-    iget-object v0, p0, Lcom/android/settings/DreamSettings$PackageReceiver;->this$0:Lcom/android/settings/DreamSettings;
+    iget-object v0, p0, Lcom/android/settings_ext/DreamSettings$PackageReceiver;->this$0:Lcom/android/settings_ext/DreamSettings;
 
-    # invokes: Lcom/android/settings/DreamSettings;->refreshFromBackend()V
-    invoke-static {v0}, Lcom/android/settings/DreamSettings;->access$400(Lcom/android/settings/DreamSettings;)V
+    # invokes: Lcom/android/settings_ext/DreamSettings;->refreshFromBackend()V
+    invoke-static {v0}, Lcom/android/settings_ext/DreamSettings;->access$400(Lcom/android/settings_ext/DreamSettings;)V
 
     .line 369
     return-void

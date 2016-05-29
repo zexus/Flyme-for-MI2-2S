@@ -1,4 +1,4 @@
-.class final Lcom/android/settings/applications/ProcessStatsDetail$1;
+.class final Lcom/android/settings_ext/applications/ProcessStatsDetail$1;
 .super Ljava/lang/Object;
 .source "ProcessStatsDetail.java"
 
@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/android/settings/applications/ProcessStatsDetail;
+    value = Lcom/android/settings_ext/applications/ProcessStatsDetail;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -21,7 +21,7 @@
         "Ljava/lang/Object;",
         "Ljava/util/Comparator",
         "<",
-        "Lcom/android/settings/applications/ProcStatsEntry$Service;",
+        "Lcom/android/settings_ext/applications/ProcStatsEntry$Service;",
         ">;"
     }
 .end annotation
@@ -40,16 +40,16 @@
 
 
 # virtual methods
-.method public compare(Lcom/android/settings/applications/ProcStatsEntry$Service;Lcom/android/settings/applications/ProcStatsEntry$Service;)I
+.method public compare(Lcom/android/settings_ext/applications/ProcStatsEntry$Service;Lcom/android/settings_ext/applications/ProcStatsEntry$Service;)I
     .locals 4
-    .param p1, "lhs"    # Lcom/android/settings/applications/ProcStatsEntry$Service;
-    .param p2, "rhs"    # Lcom/android/settings/applications/ProcStatsEntry$Service;
+    .param p1, "lhs"    # Lcom/android/settings_ext/applications/ProcStatsEntry$Service;
+    .param p2, "rhs"    # Lcom/android/settings_ext/applications/ProcStatsEntry$Service;
 
     .prologue
     .line 209
-    iget-wide v0, p1, Lcom/android/settings/applications/ProcStatsEntry$Service;->mDuration:J
+    iget-wide v0, p1, Lcom/android/settings_ext/applications/ProcStatsEntry$Service;->mDuration:J
 
-    iget-wide v2, p2, Lcom/android/settings/applications/ProcStatsEntry$Service;->mDuration:J
+    iget-wide v2, p2, Lcom/android/settings_ext/applications/ProcStatsEntry$Service;->mDuration:J
 
     cmp-long v0, v0, v2
 
@@ -64,9 +64,9 @@
 
     .line 211
     :cond_0
-    iget-wide v0, p1, Lcom/android/settings/applications/ProcStatsEntry$Service;->mDuration:J
+    iget-wide v0, p1, Lcom/android/settings_ext/applications/ProcStatsEntry$Service;->mDuration:J
 
-    iget-wide v2, p2, Lcom/android/settings/applications/ProcStatsEntry$Service;->mDuration:J
+    iget-wide v2, p2, Lcom/android/settings_ext/applications/ProcStatsEntry$Service;->mDuration:J
 
     cmp-long v0, v0, v2
 
@@ -91,13 +91,13 @@
 
     .prologue
     .line 206
-    check-cast p1, Lcom/android/settings/applications/ProcStatsEntry$Service;
+    check-cast p1, Lcom/android/settings_ext/applications/ProcStatsEntry$Service;
 
     .end local p1    # "x0":Ljava/lang/Object;
-    check-cast p2, Lcom/android/settings/applications/ProcStatsEntry$Service;
+    check-cast p2, Lcom/android/settings_ext/applications/ProcStatsEntry$Service;
 
     .end local p2    # "x1":Ljava/lang/Object;
-    invoke-virtual {p0, p1, p2}, Lcom/android/settings/applications/ProcessStatsDetail$1;->compare(Lcom/android/settings/applications/ProcStatsEntry$Service;Lcom/android/settings/applications/ProcStatsEntry$Service;)I
+    invoke-virtual {p0, p1, p2}, Lcom/android/settings_ext/applications/ProcessStatsDetail$1;->compare(Lcom/android/settings_ext/applications/ProcStatsEntry$Service;Lcom/android/settings_ext/applications/ProcStatsEntry$Service;)I
 
     move-result v0
 

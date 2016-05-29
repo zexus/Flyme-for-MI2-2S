@@ -1,11 +1,11 @@
-.class abstract Lcom/android/settings/print/PrintSettingsFragment$SettingsContentObserver;
+.class abstract Lcom/android/settings_ext/print/PrintSettingsFragment$SettingsContentObserver;
 .super Landroid/database/ContentObserver;
 .source "PrintSettingsFragment.java"
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/android/settings/print/PrintSettingsFragment;
+    value = Lcom/android/settings_ext/print/PrintSettingsFragment;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;

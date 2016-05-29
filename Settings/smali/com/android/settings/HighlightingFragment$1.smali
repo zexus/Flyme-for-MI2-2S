@@ -1,4 +1,4 @@
-.class Lcom/android/settings/HighlightingFragment$1;
+.class Lcom/android/settings_ext/HighlightingFragment$1;
 .super Ljava/lang/Object;
 .source "HighlightingFragment.java"
 
@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/android/settings/HighlightingFragment;->highlightView(Ljava/lang/String;)V
+    value = Lcom/android/settings_ext/HighlightingFragment;->highlightView(Ljava/lang/String;)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -18,7 +18,7 @@
 
 
 # instance fields
-.field final synthetic this$0:Lcom/android/settings/HighlightingFragment;
+.field final synthetic this$0:Lcom/android/settings_ext/HighlightingFragment;
 
 .field final synthetic val$highlight:Landroid/graphics/drawable/Drawable;
 
@@ -26,16 +26,16 @@
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/HighlightingFragment;Landroid/view/View;Landroid/graphics/drawable/Drawable;)V
+.method constructor <init>(Lcom/android/settings_ext/HighlightingFragment;Landroid/view/View;Landroid/graphics/drawable/Drawable;)V
     .locals 0
 
     .prologue
     .line 85
-    iput-object p1, p0, Lcom/android/settings/HighlightingFragment$1;->this$0:Lcom/android/settings/HighlightingFragment;
+    iput-object p1, p0, Lcom/android/settings_ext/HighlightingFragment$1;->this$0:Lcom/android/settings_ext/HighlightingFragment;
 
-    iput-object p2, p0, Lcom/android/settings/HighlightingFragment$1;->val$view:Landroid/view/View;
+    iput-object p2, p0, Lcom/android/settings_ext/HighlightingFragment$1;->val$view:Landroid/view/View;
 
-    iput-object p3, p0, Lcom/android/settings/HighlightingFragment$1;->val$highlight:Landroid/graphics/drawable/Drawable;
+    iput-object p3, p0, Lcom/android/settings_ext/HighlightingFragment$1;->val$highlight:Landroid/graphics/drawable/Drawable;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -49,7 +49,7 @@
 
     .prologue
     .line 88
-    iget-object v2, p0, Lcom/android/settings/HighlightingFragment$1;->val$view:Landroid/view/View;
+    iget-object v2, p0, Lcom/android/settings_ext/HighlightingFragment$1;->val$view:Landroid/view/View;
 
     invoke-virtual {v2}, Landroid/view/View;->getWidth()I
 
@@ -59,7 +59,7 @@
 
     .line 89
     .local v0, "centerX":I
-    iget-object v2, p0, Lcom/android/settings/HighlightingFragment$1;->val$view:Landroid/view/View;
+    iget-object v2, p0, Lcom/android/settings_ext/HighlightingFragment$1;->val$view:Landroid/view/View;
 
     invoke-virtual {v2}, Landroid/view/View;->getHeight()I
 
@@ -69,7 +69,7 @@
 
     .line 90
     .local v1, "centerY":I
-    iget-object v2, p0, Lcom/android/settings/HighlightingFragment$1;->val$highlight:Landroid/graphics/drawable/Drawable;
+    iget-object v2, p0, Lcom/android/settings_ext/HighlightingFragment$1;->val$highlight:Landroid/graphics/drawable/Drawable;
 
     int-to-float v3, v0
 
@@ -78,14 +78,14 @@
     invoke-virtual {v2, v3, v4}, Landroid/graphics/drawable/Drawable;->setHotspot(FF)V
 
     .line 91
-    iget-object v2, p0, Lcom/android/settings/HighlightingFragment$1;->val$view:Landroid/view/View;
+    iget-object v2, p0, Lcom/android/settings_ext/HighlightingFragment$1;->val$view:Landroid/view/View;
 
     const/4 v3, 0x1
 
     invoke-virtual {v2, v3}, Landroid/view/View;->setPressed(Z)V
 
     .line 92
-    iget-object v2, p0, Lcom/android/settings/HighlightingFragment$1;->val$view:Landroid/view/View;
+    iget-object v2, p0, Lcom/android/settings_ext/HighlightingFragment$1;->val$view:Landroid/view/View;
 
     const/4 v3, 0x0
 

@@ -1,19 +1,19 @@
-.class public Lcom/android/settings/DevelopmentSettings;
-.super Lcom/android/settings/SettingsPreferenceFragment;
+.class public Lcom/android/settings_ext/DevelopmentSettings;
+.super Lcom/android/settings_ext/SettingsPreferenceFragment;
 .source "DevelopmentSettings.java"
 
 # interfaces
 .implements Landroid/content/DialogInterface$OnClickListener;
 .implements Landroid/content/DialogInterface$OnDismissListener;
 .implements Landroid/preference/Preference$OnPreferenceChangeListener;
-.implements Lcom/android/settings/search/Indexable;
-.implements Lcom/android/settings/widget/SwitchBar$OnSwitchChangeListener;
+.implements Lcom/android/settings_ext/search/Indexable;
+.implements Lcom/android/settings_ext/widget/SwitchBar$OnSwitchChangeListener;
 
 
 # annotations
 .annotation system Ldalvik/annotation/MemberClasses;
     value = {
-        Lcom/android/settings/DevelopmentSettings$SystemPropPoker;
+        Lcom/android/settings_ext/DevelopmentSettings$SystemPropPoker;
     }
 .end annotation
 
@@ -21,7 +21,7 @@
 # static fields
 .field private static DEFAULT_LOG_RING_BUFFER_SIZE_IN_BYTES:Ljava/lang/String;
 
-.field public static final SEARCH_INDEX_DATA_PROVIDER:Lcom/android/settings/search/Indexable$SearchIndexProvider;
+.field public static final SEARCH_INDEX_DATA_PROVIDER:Lcom/android/settings_ext/search/Indexable$SearchIndexProvider;
 
 
 # instance fields
@@ -148,7 +148,7 @@
 
 .field private mStrictMode:Landroid/preference/SwitchPreference;
 
-.field private mSwitchBar:Lcom/android/settings/widget/SwitchBar;
+.field private mSwitchBar:Lcom/android/settings_ext/widget/SwitchBar;
 
 .field private mTrackFrameTime:Landroid/preference/ListPreference;
 
@@ -191,14 +191,14 @@
     .line 170
     const-string v0, "262144"
 
-    sput-object v0, Lcom/android/settings/DevelopmentSettings;->DEFAULT_LOG_RING_BUFFER_SIZE_IN_BYTES:Ljava/lang/String;
+    sput-object v0, Lcom/android/settings_ext/DevelopmentSettings;->DEFAULT_LOG_RING_BUFFER_SIZE_IN_BYTES:Ljava/lang/String;
 
     .line 1643
-    new-instance v0, Lcom/android/settings/DevelopmentSettings$2;
+    new-instance v0, Lcom/android/settings_ext/DevelopmentSettings$2;
 
-    invoke-direct {v0}, Lcom/android/settings/DevelopmentSettings$2;-><init>()V
+    invoke-direct {v0}, Lcom/android/settings_ext/DevelopmentSettings$2;-><init>()V
 
-    sput-object v0, Lcom/android/settings/DevelopmentSettings;->SEARCH_INDEX_DATA_PROVIDER:Lcom/android/settings/search/Indexable$SearchIndexProvider;
+    sput-object v0, Lcom/android/settings_ext/DevelopmentSettings;->SEARCH_INDEX_DATA_PROVIDER:Lcom/android/settings_ext/search/Indexable$SearchIndexProvider;
 
     return-void
 .end method
@@ -208,40 +208,40 @@
 
     .prologue
     .line 80
-    invoke-direct {p0}, Lcom/android/settings/SettingsPreferenceFragment;-><init>()V
+    invoke-direct {p0}, Lcom/android/settings_ext/SettingsPreferenceFragment;-><init>()V
 
     .line 238
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
-    iput-object v0, p0, Lcom/android/settings/DevelopmentSettings;->mAllPrefs:Ljava/util/ArrayList;
+    iput-object v0, p0, Lcom/android/settings_ext/DevelopmentSettings;->mAllPrefs:Ljava/util/ArrayList;
 
     .line 240
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
-    iput-object v0, p0, Lcom/android/settings/DevelopmentSettings;->mResetSwitchPrefs:Ljava/util/ArrayList;
+    iput-object v0, p0, Lcom/android/settings_ext/DevelopmentSettings;->mResetSwitchPrefs:Ljava/util/ArrayList;
 
     .line 243
     new-instance v0, Ljava/util/HashSet;
 
     invoke-direct {v0}, Ljava/util/HashSet;-><init>()V
 
-    iput-object v0, p0, Lcom/android/settings/DevelopmentSettings;->mDisabledPrefs:Ljava/util/HashSet;
+    iput-object v0, p0, Lcom/android/settings_ext/DevelopmentSettings;->mDisabledPrefs:Ljava/util/HashSet;
 
     .line 1605
     return-void
 .end method
 
-.method static synthetic access$000(Lcom/android/settings/DevelopmentSettings;)V
+.method static synthetic access$000(Lcom/android/settings_ext/DevelopmentSettings;)V
     .locals 0
-    .param p0, "x0"    # Lcom/android/settings/DevelopmentSettings;
+    .param p0, "x0"    # Lcom/android/settings_ext/DevelopmentSettings;
 
     .prologue
     .line 80
-    invoke-direct {p0}, Lcom/android/settings/DevelopmentSettings;->updateAllOptions()V
+    invoke-direct {p0}, Lcom/android/settings_ext/DevelopmentSettings;->updateAllOptions()V
 
     return-void
 .end method
@@ -251,7 +251,7 @@
 
     .prologue
     .line 80
-    invoke-static {}, Lcom/android/settings/DevelopmentSettings;->showEnableOemUnlockPreference()Z
+    invoke-static {}, Lcom/android/settings_ext/DevelopmentSettings;->showEnableOemUnlockPreference()Z
 
     move-result v0
 
@@ -264,7 +264,7 @@
 
     .prologue
     .line 378
-    invoke-virtual {p0, p1}, Lcom/android/settings/DevelopmentSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, p1}, Lcom/android/settings_ext/DevelopmentSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v0
 
@@ -272,7 +272,7 @@
 
     .line 379
     .local v0, "pref":Landroid/preference/ListPreference;
-    iget-object v1, p0, Lcom/android/settings/DevelopmentSettings;->mAllPrefs:Ljava/util/ArrayList;
+    iget-object v1, p0, Lcom/android/settings_ext/DevelopmentSettings;->mAllPrefs:Ljava/util/ArrayList;
 
     invoke-virtual {v1, v0}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
@@ -288,15 +288,15 @@
 
     .prologue
     .line 1293
-    new-instance v0, Lcom/android/settings/DevelopmentSettings$1;
+    new-instance v0, Lcom/android/settings_ext/DevelopmentSettings$1;
 
-    invoke-direct {v0, p0}, Lcom/android/settings/DevelopmentSettings$1;-><init>(Lcom/android/settings/DevelopmentSettings;)V
+    invoke-direct {v0, p0}, Lcom/android/settings_ext/DevelopmentSettings$1;-><init>(Lcom/android/settings_ext/DevelopmentSettings;)V
 
     .line 1301
     .local v0, "onConfirmListener":Landroid/content/DialogInterface$OnClickListener;
     new-instance v1, Landroid/app/AlertDialog$Builder;
 
-    invoke-virtual {p0}, Lcom/android/settings/DevelopmentSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/DevelopmentSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v2
 
@@ -399,7 +399,7 @@
     invoke-virtual {p1, v0}, Landroid/preference/Preference;->setEnabled(Z)V
 
     .line 387
-    iget-object v0, p0, Lcom/android/settings/DevelopmentSettings;->mDisabledPrefs:Ljava/util/HashSet;
+    iget-object v0, p0, Lcom/android/settings_ext/DevelopmentSettings;->mDisabledPrefs:Ljava/util/HashSet;
 
     invoke-virtual {v0, p1}, Ljava/util/HashSet;->add(Ljava/lang/Object;)Z
 
@@ -415,45 +415,45 @@
     const/4 v1, 0x0
 
     .line 1526
-    iget-object v0, p0, Lcom/android/settings/DevelopmentSettings;->mAdbDialog:Landroid/app/Dialog;
+    iget-object v0, p0, Lcom/android/settings_ext/DevelopmentSettings;->mAdbDialog:Landroid/app/Dialog;
 
     if-eqz v0, :cond_0
 
     .line 1527
-    iget-object v0, p0, Lcom/android/settings/DevelopmentSettings;->mAdbDialog:Landroid/app/Dialog;
+    iget-object v0, p0, Lcom/android/settings_ext/DevelopmentSettings;->mAdbDialog:Landroid/app/Dialog;
 
     invoke-virtual {v0}, Landroid/app/Dialog;->dismiss()V
 
     .line 1528
-    iput-object v1, p0, Lcom/android/settings/DevelopmentSettings;->mAdbDialog:Landroid/app/Dialog;
+    iput-object v1, p0, Lcom/android/settings_ext/DevelopmentSettings;->mAdbDialog:Landroid/app/Dialog;
 
     .line 1530
     :cond_0
-    iget-object v0, p0, Lcom/android/settings/DevelopmentSettings;->mAdbKeysDialog:Landroid/app/Dialog;
+    iget-object v0, p0, Lcom/android/settings_ext/DevelopmentSettings;->mAdbKeysDialog:Landroid/app/Dialog;
 
     if-eqz v0, :cond_1
 
     .line 1531
-    iget-object v0, p0, Lcom/android/settings/DevelopmentSettings;->mAdbKeysDialog:Landroid/app/Dialog;
+    iget-object v0, p0, Lcom/android/settings_ext/DevelopmentSettings;->mAdbKeysDialog:Landroid/app/Dialog;
 
     invoke-virtual {v0}, Landroid/app/Dialog;->dismiss()V
 
     .line 1532
-    iput-object v1, p0, Lcom/android/settings/DevelopmentSettings;->mAdbKeysDialog:Landroid/app/Dialog;
+    iput-object v1, p0, Lcom/android/settings_ext/DevelopmentSettings;->mAdbKeysDialog:Landroid/app/Dialog;
 
     .line 1534
     :cond_1
-    iget-object v0, p0, Lcom/android/settings/DevelopmentSettings;->mEnableDialog:Landroid/app/Dialog;
+    iget-object v0, p0, Lcom/android/settings_ext/DevelopmentSettings;->mEnableDialog:Landroid/app/Dialog;
 
     if-eqz v0, :cond_2
 
     .line 1535
-    iget-object v0, p0, Lcom/android/settings/DevelopmentSettings;->mEnableDialog:Landroid/app/Dialog;
+    iget-object v0, p0, Lcom/android/settings_ext/DevelopmentSettings;->mEnableDialog:Landroid/app/Dialog;
 
     invoke-virtual {v0}, Landroid/app/Dialog;->dismiss()V
 
     .line 1536
-    iput-object v1, p0, Lcom/android/settings/DevelopmentSettings;->mEnableDialog:Landroid/app/Dialog;
+    iput-object v1, p0, Lcom/android/settings_ext/DevelopmentSettings;->mEnableDialog:Landroid/app/Dialog;
 
     .line 1538
     :cond_2
@@ -469,7 +469,7 @@
     const/4 v4, 0x0
 
     .line 678
-    invoke-virtual {p0}, Lcom/android/settings/DevelopmentSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/DevelopmentSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v6
 
@@ -503,7 +503,7 @@
     if-eqz v6, :cond_0
 
     .line 685
-    invoke-virtual {p0}, Lcom/android/settings/DevelopmentSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/DevelopmentSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v6
 
@@ -553,7 +553,7 @@
 
     .prologue
     .line 392
-    invoke-virtual {p0, p1}, Lcom/android/settings/DevelopmentSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, p1}, Lcom/android/settings_ext/DevelopmentSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v0
 
@@ -596,7 +596,7 @@
 
     const-string v1, "charging"
 
-    iget-object v2, p0, Lcom/android/settings/DevelopmentSettings;->mUsbManager:Landroid/hardware/usb/UsbManager;
+    iget-object v2, p0, Lcom/android/settings_ext/DevelopmentSettings;->mUsbManager:Landroid/hardware/usb/UsbManager;
 
     invoke-virtual {v2}, Landroid/hardware/usb/UsbManager;->getDefaultFunction()Ljava/lang/String;
 
@@ -609,7 +609,7 @@
     if-eqz v1, :cond_1
 
     .line 398
-    invoke-virtual {p0}, Lcom/android/settings/DevelopmentSettings;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {p0}, Lcom/android/settings_ext/DevelopmentSettings;->getResources()Landroid/content/res/Resources;
 
     move-result-object v1
 
@@ -622,16 +622,16 @@
     invoke-virtual {v0, v1}, Landroid/preference/SwitchPreference;->setSummary(Ljava/lang/CharSequence;)V
 
     .line 399
-    invoke-direct {p0, v0}, Lcom/android/settings/DevelopmentSettings;->disableForUser(Landroid/preference/Preference;)V
+    invoke-direct {p0, v0}, Lcom/android/settings_ext/DevelopmentSettings;->disableForUser(Landroid/preference/Preference;)V
 
     .line 401
     :cond_1
-    iget-object v1, p0, Lcom/android/settings/DevelopmentSettings;->mAllPrefs:Ljava/util/ArrayList;
+    iget-object v1, p0, Lcom/android/settings_ext/DevelopmentSettings;->mAllPrefs:Ljava/util/ArrayList;
 
     invoke-virtual {v1, v0}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
     .line 402
-    iget-object v1, p0, Lcom/android/settings/DevelopmentSettings;->mResetSwitchPrefs:Ljava/util/ArrayList;
+    iget-object v1, p0, Lcom/android/settings_ext/DevelopmentSettings;->mResetSwitchPrefs:Ljava/util/ArrayList;
 
     invoke-virtual {v1, v0}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
@@ -685,14 +685,14 @@
 
     .prologue
     .line 430
-    invoke-virtual {p0}, Lcom/android/settings/DevelopmentSettings;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
+    invoke-virtual {p0}, Lcom/android/settings_ext/DevelopmentSettings;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
 
     move-result-object v0
 
     invoke-virtual {v0, p1}, Landroid/preference/PreferenceScreen;->removePreference(Landroid/preference/Preference;)Z
 
     .line 431
-    iget-object v0, p0, Lcom/android/settings/DevelopmentSettings;->mAllPrefs:Ljava/util/ArrayList;
+    iget-object v0, p0, Lcom/android/settings_ext/DevelopmentSettings;->mAllPrefs:Ljava/util/ArrayList;
 
     invoke-virtual {v0, p1}, Ljava/util/ArrayList;->remove(Ljava/lang/Object;)Z
 
@@ -717,7 +717,7 @@
     if-eqz v0, :cond_0
 
     .line 423
-    invoke-direct {p0, p1}, Lcom/android/settings/DevelopmentSettings;->removePreference(Landroid/preference/Preference;)V
+    invoke-direct {p0, p1}, Lcom/android/settings_ext/DevelopmentSettings;->removePreference(Landroid/preference/Preference;)V
 
     .line 424
     const/4 v0, 0x1
@@ -743,14 +743,14 @@
     const/4 v4, 0x0
 
     .line 562
-    iput-boolean v3, p0, Lcom/android/settings/DevelopmentSettings;->mDontPokeProperties:Z
+    iput-boolean v3, p0, Lcom/android/settings_ext/DevelopmentSettings;->mDontPokeProperties:Z
 
     .line 563
     const/4 v1, 0x0
 
     .local v1, "i":I
     :goto_0
-    iget-object v2, p0, Lcom/android/settings/DevelopmentSettings;->mResetSwitchPrefs:Ljava/util/ArrayList;
+    iget-object v2, p0, Lcom/android/settings_ext/DevelopmentSettings;->mResetSwitchPrefs:Ljava/util/ArrayList;
 
     invoke-virtual {v2}, Ljava/util/ArrayList;->size()I
 
@@ -759,7 +759,7 @@
     if-ge v1, v2, :cond_1
 
     .line 564
-    iget-object v2, p0, Lcom/android/settings/DevelopmentSettings;->mResetSwitchPrefs:Ljava/util/ArrayList;
+    iget-object v2, p0, Lcom/android/settings_ext/DevelopmentSettings;->mResetSwitchPrefs:Ljava/util/ArrayList;
 
     invoke-virtual {v2, v1}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
 
@@ -779,7 +779,7 @@
     invoke-virtual {v0, v5}, Landroid/preference/SwitchPreference;->setChecked(Z)V
 
     .line 567
-    invoke-virtual {p0, v4, v0}, Lcom/android/settings/DevelopmentSettings;->onPreferenceTreeClick(Landroid/preference/PreferenceScreen;Landroid/preference/Preference;)Z
+    invoke-virtual {p0, v4, v0}, Lcom/android/settings_ext/DevelopmentSettings;->onPreferenceTreeClick(Landroid/preference/PreferenceScreen;Landroid/preference/Preference;)Z
 
     .line 563
     :cond_0
@@ -790,30 +790,30 @@
     .line 570
     .end local v0    # "cb":Landroid/preference/SwitchPreference;
     :cond_1
-    invoke-static {}, Lcom/android/settings/DevelopmentSettings;->resetDebuggerOptions()V
+    invoke-static {}, Lcom/android/settings_ext/DevelopmentSettings;->resetDebuggerOptions()V
 
     .line 571
-    invoke-direct {p0, v4}, Lcom/android/settings/DevelopmentSettings;->writeLogdSizeOption(Ljava/lang/Object;)V
+    invoke-direct {p0, v4}, Lcom/android/settings_ext/DevelopmentSettings;->writeLogdSizeOption(Ljava/lang/Object;)V
 
     .line 572
-    iget-object v2, p0, Lcom/android/settings/DevelopmentSettings;->mWindowAnimationScale:Landroid/preference/ListPreference;
+    iget-object v2, p0, Lcom/android/settings_ext/DevelopmentSettings;->mWindowAnimationScale:Landroid/preference/ListPreference;
 
-    invoke-direct {p0, v5, v2, v4}, Lcom/android/settings/DevelopmentSettings;->writeAnimationScaleOption(ILandroid/preference/ListPreference;Ljava/lang/Object;)V
+    invoke-direct {p0, v5, v2, v4}, Lcom/android/settings_ext/DevelopmentSettings;->writeAnimationScaleOption(ILandroid/preference/ListPreference;Ljava/lang/Object;)V
 
     .line 573
-    iget-object v2, p0, Lcom/android/settings/DevelopmentSettings;->mTransitionAnimationScale:Landroid/preference/ListPreference;
+    iget-object v2, p0, Lcom/android/settings_ext/DevelopmentSettings;->mTransitionAnimationScale:Landroid/preference/ListPreference;
 
-    invoke-direct {p0, v3, v2, v4}, Lcom/android/settings/DevelopmentSettings;->writeAnimationScaleOption(ILandroid/preference/ListPreference;Ljava/lang/Object;)V
+    invoke-direct {p0, v3, v2, v4}, Lcom/android/settings_ext/DevelopmentSettings;->writeAnimationScaleOption(ILandroid/preference/ListPreference;Ljava/lang/Object;)V
 
     .line 574
     const/4 v2, 0x2
 
-    iget-object v3, p0, Lcom/android/settings/DevelopmentSettings;->mAnimatorDurationScale:Landroid/preference/ListPreference;
+    iget-object v3, p0, Lcom/android/settings_ext/DevelopmentSettings;->mAnimatorDurationScale:Landroid/preference/ListPreference;
 
-    invoke-direct {p0, v2, v3, v4}, Lcom/android/settings/DevelopmentSettings;->writeAnimationScaleOption(ILandroid/preference/ListPreference;Ljava/lang/Object;)V
+    invoke-direct {p0, v2, v3, v4}, Lcom/android/settings_ext/DevelopmentSettings;->writeAnimationScaleOption(ILandroid/preference/ListPreference;Ljava/lang/Object;)V
 
     .line 576
-    invoke-direct {p0}, Lcom/android/settings/DevelopmentSettings;->usingDevelopmentColorSpace()Z
+    invoke-direct {p0}, Lcom/android/settings_ext/DevelopmentSettings;->usingDevelopmentColorSpace()Z
 
     move-result v2
 
@@ -826,26 +826,26 @@
 
     move-result-object v2
 
-    invoke-direct {p0, v2}, Lcom/android/settings/DevelopmentSettings;->writeSimulateColorSpace(Ljava/lang/Object;)V
+    invoke-direct {p0, v2}, Lcom/android/settings_ext/DevelopmentSettings;->writeSimulateColorSpace(Ljava/lang/Object;)V
 
     .line 579
     :cond_2
-    invoke-direct {p0, v4}, Lcom/android/settings/DevelopmentSettings;->writeOverlayDisplayDevicesOptions(Ljava/lang/Object;)V
+    invoke-direct {p0, v4}, Lcom/android/settings_ext/DevelopmentSettings;->writeOverlayDisplayDevicesOptions(Ljava/lang/Object;)V
 
     .line 580
-    invoke-direct {p0, v4}, Lcom/android/settings/DevelopmentSettings;->writeAppProcessLimitOptions(Ljava/lang/Object;)V
+    invoke-direct {p0, v4}, Lcom/android/settings_ext/DevelopmentSettings;->writeAppProcessLimitOptions(Ljava/lang/Object;)V
 
     .line 581
-    iput-boolean v5, p0, Lcom/android/settings/DevelopmentSettings;->mHaveDebugSettings:Z
+    iput-boolean v5, p0, Lcom/android/settings_ext/DevelopmentSettings;->mHaveDebugSettings:Z
 
     .line 582
-    invoke-direct {p0}, Lcom/android/settings/DevelopmentSettings;->updateAllOptions()V
+    invoke-direct {p0}, Lcom/android/settings_ext/DevelopmentSettings;->updateAllOptions()V
 
     .line 583
-    iput-boolean v5, p0, Lcom/android/settings/DevelopmentSettings;->mDontPokeProperties:Z
+    iput-boolean v5, p0, Lcom/android/settings_ext/DevelopmentSettings;->mDontPokeProperties:Z
 
     .line 584
-    invoke-virtual {p0}, Lcom/android/settings/DevelopmentSettings;->pokeSystemProperties()V
+    invoke-virtual {p0}, Lcom/android/settings_ext/DevelopmentSettings;->pokeSystemProperties()V
 
     .line 585
     return-void
@@ -892,7 +892,7 @@
 
     .local v0, "i":I
     :goto_0
-    iget-object v2, p0, Lcom/android/settings/DevelopmentSettings;->mAllPrefs:Ljava/util/ArrayList;
+    iget-object v2, p0, Lcom/android/settings_ext/DevelopmentSettings;->mAllPrefs:Ljava/util/ArrayList;
 
     invoke-virtual {v2}, Ljava/util/ArrayList;->size()I
 
@@ -901,7 +901,7 @@
     if-ge v0, v2, :cond_1
 
     .line 436
-    iget-object v2, p0, Lcom/android/settings/DevelopmentSettings;->mAllPrefs:Ljava/util/ArrayList;
+    iget-object v2, p0, Lcom/android/settings_ext/DevelopmentSettings;->mAllPrefs:Ljava/util/ArrayList;
 
     invoke-virtual {v2, v0}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
 
@@ -913,7 +913,7 @@
     .local v1, "pref":Landroid/preference/Preference;
     if-eqz p1, :cond_0
 
-    iget-object v2, p0, Lcom/android/settings/DevelopmentSettings;->mDisabledPrefs:Ljava/util/HashSet;
+    iget-object v2, p0, Lcom/android/settings_ext/DevelopmentSettings;->mDisabledPrefs:Ljava/util/HashSet;
 
     invoke-virtual {v2, v1}, Ljava/util/HashSet;->contains(Ljava/lang/Object;)Z
 
@@ -940,7 +940,7 @@
     .line 439
     .end local v1    # "pref":Landroid/preference/Preference;
     :cond_1
-    invoke-direct {p0}, Lcom/android/settings/DevelopmentSettings;->updateAllOptions()V
+    invoke-direct {p0}, Lcom/android/settings_ext/DevelopmentSettings;->updateAllOptions()V
 
     .line 440
     return-void
@@ -983,13 +983,13 @@
 
     .prologue
     .line 1475
-    new-instance v0, Lcom/android/settings/ChooseLockSettingsHelper;
+    new-instance v0, Lcom/android/settings_ext/ChooseLockSettingsHelper;
 
-    invoke-virtual {p0}, Lcom/android/settings/DevelopmentSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/DevelopmentSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v1
 
-    invoke-direct {v0, v1, p0}, Lcom/android/settings/ChooseLockSettingsHelper;-><init>(Landroid/app/Activity;Landroid/app/Fragment;)V
+    invoke-direct {v0, v1, p0}, Lcom/android/settings_ext/ChooseLockSettingsHelper;-><init>(Landroid/app/Activity;Landroid/app/Fragment;)V
 
     const v1, 0x7f0905a1
 
@@ -1003,7 +1003,7 @@
 
     move-result-object v2
 
-    invoke-virtual {v0, p2, v1, v2}, Lcom/android/settings/ChooseLockSettingsHelper;->launchConfirmationActivity(ILjava/lang/CharSequence;Ljava/lang/CharSequence;)Z
+    invoke-virtual {v0, p2, v1, v2}, Lcom/android/settings_ext/ChooseLockSettingsHelper;->launchConfirmationActivity(ILjava/lang/CharSequence;Ljava/lang/CharSequence;)Z
 
     move-result v0
 
@@ -1017,7 +1017,7 @@
     const/4 v0, 0x1
 
     .line 698
-    invoke-virtual {p0}, Lcom/android/settings/DevelopmentSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/DevelopmentSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v1
 
@@ -1051,7 +1051,7 @@
     const/4 v4, 0x0
 
     .line 503
-    invoke-virtual {p0}, Lcom/android/settings/DevelopmentSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/DevelopmentSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
@@ -1063,10 +1063,10 @@
 
     .line 505
     .local v1, "cr":Landroid/content/ContentResolver;
-    iput-boolean v4, p0, Lcom/android/settings/DevelopmentSettings;->mHaveDebugSettings:Z
+    iput-boolean v4, p0, Lcom/android/settings_ext/DevelopmentSettings;->mHaveDebugSettings:Z
 
     .line 506
-    iget-object v5, p0, Lcom/android/settings/DevelopmentSettings;->mEnableAdb:Landroid/preference/SwitchPreference;
+    iget-object v5, p0, Lcom/android/settings_ext/DevelopmentSettings;->mEnableAdb:Landroid/preference/SwitchPreference;
 
     const-string v2, "adb_enabled"
 
@@ -1079,15 +1079,15 @@
     move v2, v3
 
     :goto_0
-    invoke-virtual {p0, v5, v2}, Lcom/android/settings/DevelopmentSettings;->updateSwitchPreference(Landroid/preference/SwitchPreference;Z)V
+    invoke-virtual {p0, v5, v2}, Lcom/android/settings_ext/DevelopmentSettings;->updateSwitchPreference(Landroid/preference/SwitchPreference;Z)V
 
     .line 508
-    iget-object v2, p0, Lcom/android/settings/DevelopmentSettings;->mEnableTerminal:Landroid/preference/SwitchPreference;
+    iget-object v2, p0, Lcom/android/settings_ext/DevelopmentSettings;->mEnableTerminal:Landroid/preference/SwitchPreference;
 
     if-eqz v2, :cond_0
 
     .line 509
-    iget-object v5, p0, Lcom/android/settings/DevelopmentSettings;->mEnableTerminal:Landroid/preference/SwitchPreference;
+    iget-object v5, p0, Lcom/android/settings_ext/DevelopmentSettings;->mEnableTerminal:Landroid/preference/SwitchPreference;
 
     invoke-virtual {v0}, Landroid/content/Context;->getPackageManager()Landroid/content/pm/PackageManager;
 
@@ -1104,11 +1104,11 @@
     move v2, v3
 
     :goto_1
-    invoke-virtual {p0, v5, v2}, Lcom/android/settings/DevelopmentSettings;->updateSwitchPreference(Landroid/preference/SwitchPreference;Z)V
+    invoke-virtual {p0, v5, v2}, Lcom/android/settings_ext/DevelopmentSettings;->updateSwitchPreference(Landroid/preference/SwitchPreference;Z)V
 
     .line 513
     :cond_0
-    iget-object v5, p0, Lcom/android/settings/DevelopmentSettings;->mBugreportInPower:Landroid/preference/SwitchPreference;
+    iget-object v5, p0, Lcom/android/settings_ext/DevelopmentSettings;->mBugreportInPower:Landroid/preference/SwitchPreference;
 
     const-string v2, "bugreport_in_power_menu"
 
@@ -1121,10 +1121,10 @@
     move v2, v3
 
     :goto_2
-    invoke-virtual {p0, v5, v2}, Lcom/android/settings/DevelopmentSettings;->updateSwitchPreference(Landroid/preference/SwitchPreference;Z)V
+    invoke-virtual {p0, v5, v2}, Lcom/android/settings_ext/DevelopmentSettings;->updateSwitchPreference(Landroid/preference/SwitchPreference;Z)V
 
     .line 515
-    iget-object v5, p0, Lcom/android/settings/DevelopmentSettings;->mKeepScreenOn:Landroid/preference/SwitchPreference;
+    iget-object v5, p0, Lcom/android/settings_ext/DevelopmentSettings;->mKeepScreenOn:Landroid/preference/SwitchPreference;
 
     const-string v2, "stay_on_while_plugged_in"
 
@@ -1137,10 +1137,10 @@
     move v2, v3
 
     :goto_3
-    invoke-virtual {p0, v5, v2}, Lcom/android/settings/DevelopmentSettings;->updateSwitchPreference(Landroid/preference/SwitchPreference;Z)V
+    invoke-virtual {p0, v5, v2}, Lcom/android/settings_ext/DevelopmentSettings;->updateSwitchPreference(Landroid/preference/SwitchPreference;Z)V
 
     .line 517
-    iget-object v5, p0, Lcom/android/settings/DevelopmentSettings;->mBtHciSnoopLog:Landroid/preference/SwitchPreference;
+    iget-object v5, p0, Lcom/android/settings_ext/DevelopmentSettings;->mBtHciSnoopLog:Landroid/preference/SwitchPreference;
 
     const-string v2, "bluetooth_hci_log"
 
@@ -1153,29 +1153,29 @@
     move v2, v3
 
     :goto_4
-    invoke-virtual {p0, v5, v2}, Lcom/android/settings/DevelopmentSettings;->updateSwitchPreference(Landroid/preference/SwitchPreference;Z)V
+    invoke-virtual {p0, v5, v2}, Lcom/android/settings_ext/DevelopmentSettings;->updateSwitchPreference(Landroid/preference/SwitchPreference;Z)V
 
     .line 519
-    iget-object v2, p0, Lcom/android/settings/DevelopmentSettings;->mEnableOemUnlock:Landroid/preference/SwitchPreference;
+    iget-object v2, p0, Lcom/android/settings_ext/DevelopmentSettings;->mEnableOemUnlock:Landroid/preference/SwitchPreference;
 
     if-eqz v2, :cond_1
 
     .line 520
-    iget-object v2, p0, Lcom/android/settings/DevelopmentSettings;->mEnableOemUnlock:Landroid/preference/SwitchPreference;
+    iget-object v2, p0, Lcom/android/settings_ext/DevelopmentSettings;->mEnableOemUnlock:Landroid/preference/SwitchPreference;
 
-    invoke-virtual {p0}, Lcom/android/settings/DevelopmentSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/DevelopmentSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v5
 
-    invoke-static {v5}, Lcom/android/settings/Utils;->isOemUnlockEnabled(Landroid/content/Context;)Z
+    invoke-static {v5}, Lcom/android/settings_ext/Utils;->isOemUnlockEnabled(Landroid/content/Context;)Z
 
     move-result v5
 
-    invoke-virtual {p0, v2, v5}, Lcom/android/settings/DevelopmentSettings;->updateSwitchPreference(Landroid/preference/SwitchPreference;Z)V
+    invoke-virtual {p0, v2, v5}, Lcom/android/settings_ext/DevelopmentSettings;->updateSwitchPreference(Landroid/preference/SwitchPreference;Z)V
 
     .line 522
     :cond_1
-    iget-object v5, p0, Lcom/android/settings/DevelopmentSettings;->mAllowMockLocation:Landroid/preference/SwitchPreference;
+    iget-object v5, p0, Lcom/android/settings_ext/DevelopmentSettings;->mAllowMockLocation:Landroid/preference/SwitchPreference;
 
     const-string v2, "mock_location"
 
@@ -1188,10 +1188,10 @@
     move v2, v3
 
     :goto_5
-    invoke-virtual {p0, v5, v2}, Lcom/android/settings/DevelopmentSettings;->updateSwitchPreference(Landroid/preference/SwitchPreference;Z)V
+    invoke-virtual {p0, v5, v2}, Lcom/android/settings_ext/DevelopmentSettings;->updateSwitchPreference(Landroid/preference/SwitchPreference;Z)V
 
     .line 524
-    iget-object v2, p0, Lcom/android/settings/DevelopmentSettings;->mDebugViewAttributes:Landroid/preference/SwitchPreference;
+    iget-object v2, p0, Lcom/android/settings_ext/DevelopmentSettings;->mDebugViewAttributes:Landroid/preference/SwitchPreference;
 
     const-string v5, "debug_view_attributes"
 
@@ -1202,106 +1202,106 @@
     if-eqz v5, :cond_8
 
     :goto_6
-    invoke-virtual {p0, v2, v3}, Lcom/android/settings/DevelopmentSettings;->updateSwitchPreference(Landroid/preference/SwitchPreference;Z)V
+    invoke-virtual {p0, v2, v3}, Lcom/android/settings_ext/DevelopmentSettings;->updateSwitchPreference(Landroid/preference/SwitchPreference;Z)V
 
     .line 526
-    invoke-direct {p0}, Lcom/android/settings/DevelopmentSettings;->updateHdcpValues()V
+    invoke-direct {p0}, Lcom/android/settings_ext/DevelopmentSettings;->updateHdcpValues()V
 
     .line 527
-    invoke-direct {p0}, Lcom/android/settings/DevelopmentSettings;->updatePasswordSummary()V
+    invoke-direct {p0}, Lcom/android/settings_ext/DevelopmentSettings;->updatePasswordSummary()V
 
     .line 528
-    invoke-direct {p0}, Lcom/android/settings/DevelopmentSettings;->updateDebuggerOptions()V
+    invoke-direct {p0}, Lcom/android/settings_ext/DevelopmentSettings;->updateDebuggerOptions()V
 
     .line 529
-    invoke-direct {p0}, Lcom/android/settings/DevelopmentSettings;->updateStrictModeVisualOptions()V
+    invoke-direct {p0}, Lcom/android/settings_ext/DevelopmentSettings;->updateStrictModeVisualOptions()V
 
     .line 530
-    invoke-direct {p0}, Lcom/android/settings/DevelopmentSettings;->updatePointerLocationOptions()V
+    invoke-direct {p0}, Lcom/android/settings_ext/DevelopmentSettings;->updatePointerLocationOptions()V
 
     .line 531
-    invoke-direct {p0}, Lcom/android/settings/DevelopmentSettings;->updateShowTouchesOptions()V
+    invoke-direct {p0}, Lcom/android/settings_ext/DevelopmentSettings;->updateShowTouchesOptions()V
 
     .line 532
-    invoke-direct {p0}, Lcom/android/settings/DevelopmentSettings;->updateFlingerOptions()V
+    invoke-direct {p0}, Lcom/android/settings_ext/DevelopmentSettings;->updateFlingerOptions()V
 
     .line 533
-    invoke-direct {p0}, Lcom/android/settings/DevelopmentSettings;->updateCpuUsageOptions()V
+    invoke-direct {p0}, Lcom/android/settings_ext/DevelopmentSettings;->updateCpuUsageOptions()V
 
     .line 534
-    invoke-direct {p0}, Lcom/android/settings/DevelopmentSettings;->updateHardwareUiOptions()V
+    invoke-direct {p0}, Lcom/android/settings_ext/DevelopmentSettings;->updateHardwareUiOptions()V
 
     .line 535
-    invoke-direct {p0}, Lcom/android/settings/DevelopmentSettings;->updateMsaaOptions()V
+    invoke-direct {p0}, Lcom/android/settings_ext/DevelopmentSettings;->updateMsaaOptions()V
 
     .line 536
-    invoke-direct {p0}, Lcom/android/settings/DevelopmentSettings;->updateTrackFrameTimeOptions()V
+    invoke-direct {p0}, Lcom/android/settings_ext/DevelopmentSettings;->updateTrackFrameTimeOptions()V
 
     .line 537
-    invoke-direct {p0}, Lcom/android/settings/DevelopmentSettings;->updateShowNonRectClipOptions()V
+    invoke-direct {p0}, Lcom/android/settings_ext/DevelopmentSettings;->updateShowNonRectClipOptions()V
 
     .line 538
-    invoke-direct {p0}, Lcom/android/settings/DevelopmentSettings;->updateShowHwScreenUpdatesOptions()V
+    invoke-direct {p0}, Lcom/android/settings_ext/DevelopmentSettings;->updateShowHwScreenUpdatesOptions()V
 
     .line 539
-    invoke-direct {p0}, Lcom/android/settings/DevelopmentSettings;->updateShowHwLayersUpdatesOptions()V
+    invoke-direct {p0}, Lcom/android/settings_ext/DevelopmentSettings;->updateShowHwLayersUpdatesOptions()V
 
     .line 540
-    invoke-direct {p0}, Lcom/android/settings/DevelopmentSettings;->updateDebugHwOverdrawOptions()V
+    invoke-direct {p0}, Lcom/android/settings_ext/DevelopmentSettings;->updateDebugHwOverdrawOptions()V
 
     .line 541
-    invoke-direct {p0}, Lcom/android/settings/DevelopmentSettings;->updateDebugLayoutOptions()V
+    invoke-direct {p0}, Lcom/android/settings_ext/DevelopmentSettings;->updateDebugLayoutOptions()V
 
     .line 542
-    invoke-direct {p0}, Lcom/android/settings/DevelopmentSettings;->updateAnimationScaleOptions()V
+    invoke-direct {p0}, Lcom/android/settings_ext/DevelopmentSettings;->updateAnimationScaleOptions()V
 
     .line 543
-    invoke-direct {p0}, Lcom/android/settings/DevelopmentSettings;->updateOverlayDisplayDevicesOptions()V
+    invoke-direct {p0}, Lcom/android/settings_ext/DevelopmentSettings;->updateOverlayDisplayDevicesOptions()V
 
     .line 544
-    invoke-direct {p0}, Lcom/android/settings/DevelopmentSettings;->updateOpenGLTracesOptions()V
+    invoke-direct {p0}, Lcom/android/settings_ext/DevelopmentSettings;->updateOpenGLTracesOptions()V
 
     .line 545
-    invoke-direct {p0}, Lcom/android/settings/DevelopmentSettings;->updateImmediatelyDestroyActivitiesOptions()V
+    invoke-direct {p0}, Lcom/android/settings_ext/DevelopmentSettings;->updateImmediatelyDestroyActivitiesOptions()V
 
     .line 546
-    invoke-direct {p0}, Lcom/android/settings/DevelopmentSettings;->updateAppProcessLimitOptions()V
+    invoke-direct {p0}, Lcom/android/settings_ext/DevelopmentSettings;->updateAppProcessLimitOptions()V
 
     .line 547
-    invoke-direct {p0}, Lcom/android/settings/DevelopmentSettings;->updateShowAllANRsOptions()V
+    invoke-direct {p0}, Lcom/android/settings_ext/DevelopmentSettings;->updateShowAllANRsOptions()V
 
     .line 548
-    invoke-direct {p0}, Lcom/android/settings/DevelopmentSettings;->updateVerifyAppsOverUsbOptions()V
+    invoke-direct {p0}, Lcom/android/settings_ext/DevelopmentSettings;->updateVerifyAppsOverUsbOptions()V
 
     .line 549
-    invoke-direct {p0}, Lcom/android/settings/DevelopmentSettings;->updateBugreportOptions()V
+    invoke-direct {p0}, Lcom/android/settings_ext/DevelopmentSettings;->updateBugreportOptions()V
 
     .line 550
-    invoke-direct {p0}, Lcom/android/settings/DevelopmentSettings;->updateForceRtlOptions()V
+    invoke-direct {p0}, Lcom/android/settings_ext/DevelopmentSettings;->updateForceRtlOptions()V
 
     .line 551
-    invoke-direct {p0}, Lcom/android/settings/DevelopmentSettings;->updateLogdSizeValues()V
+    invoke-direct {p0}, Lcom/android/settings_ext/DevelopmentSettings;->updateLogdSizeValues()V
 
     .line 552
-    invoke-direct {p0}, Lcom/android/settings/DevelopmentSettings;->updateWifiDisplayCertificationOptions()V
+    invoke-direct {p0}, Lcom/android/settings_ext/DevelopmentSettings;->updateWifiDisplayCertificationOptions()V
 
     .line 553
-    invoke-direct {p0}, Lcom/android/settings/DevelopmentSettings;->updateWifiVerboseLoggingOptions()V
+    invoke-direct {p0}, Lcom/android/settings_ext/DevelopmentSettings;->updateWifiVerboseLoggingOptions()V
 
     .line 554
-    invoke-direct {p0}, Lcom/android/settings/DevelopmentSettings;->updateWifiAggressiveHandoverOptions()V
+    invoke-direct {p0}, Lcom/android/settings_ext/DevelopmentSettings;->updateWifiAggressiveHandoverOptions()V
 
     .line 555
-    invoke-direct {p0}, Lcom/android/settings/DevelopmentSettings;->updateWifiAllowScansWithTrafficOptions()V
+    invoke-direct {p0}, Lcom/android/settings_ext/DevelopmentSettings;->updateWifiAllowScansWithTrafficOptions()V
 
     .line 556
-    invoke-direct {p0}, Lcom/android/settings/DevelopmentSettings;->updateSimulateColorSpace()V
+    invoke-direct {p0}, Lcom/android/settings_ext/DevelopmentSettings;->updateSimulateColorSpace()V
 
     .line 557
-    invoke-direct {p0}, Lcom/android/settings/DevelopmentSettings;->updateUseNuplayerOptions()V
+    invoke-direct {p0}, Lcom/android/settings_ext/DevelopmentSettings;->updateUseNuplayerOptions()V
 
     .line 558
-    invoke-direct {p0}, Lcom/android/settings/DevelopmentSettings;->updateUSBAudioOptions()V
+    invoke-direct {p0}, Lcom/android/settings_ext/DevelopmentSettings;->updateUSBAudioOptions()V
 
     .line 559
     return-void
@@ -1356,23 +1356,23 @@
     .line 1188
     const/4 v0, 0x0
 
-    iget-object v1, p0, Lcom/android/settings/DevelopmentSettings;->mWindowAnimationScale:Landroid/preference/ListPreference;
+    iget-object v1, p0, Lcom/android/settings_ext/DevelopmentSettings;->mWindowAnimationScale:Landroid/preference/ListPreference;
 
-    invoke-direct {p0, v0, v1}, Lcom/android/settings/DevelopmentSettings;->updateAnimationScaleValue(ILandroid/preference/ListPreference;)V
+    invoke-direct {p0, v0, v1}, Lcom/android/settings_ext/DevelopmentSettings;->updateAnimationScaleValue(ILandroid/preference/ListPreference;)V
 
     .line 1189
     const/4 v0, 0x1
 
-    iget-object v1, p0, Lcom/android/settings/DevelopmentSettings;->mTransitionAnimationScale:Landroid/preference/ListPreference;
+    iget-object v1, p0, Lcom/android/settings_ext/DevelopmentSettings;->mTransitionAnimationScale:Landroid/preference/ListPreference;
 
-    invoke-direct {p0, v0, v1}, Lcom/android/settings/DevelopmentSettings;->updateAnimationScaleValue(ILandroid/preference/ListPreference;)V
+    invoke-direct {p0, v0, v1}, Lcom/android/settings_ext/DevelopmentSettings;->updateAnimationScaleValue(ILandroid/preference/ListPreference;)V
 
     .line 1190
     const/4 v0, 0x2
 
-    iget-object v1, p0, Lcom/android/settings/DevelopmentSettings;->mAnimatorDurationScale:Landroid/preference/ListPreference;
+    iget-object v1, p0, Lcom/android/settings_ext/DevelopmentSettings;->mAnimatorDurationScale:Landroid/preference/ListPreference;
 
-    invoke-direct {p0, v0, v1}, Lcom/android/settings/DevelopmentSettings;->updateAnimationScaleValue(ILandroid/preference/ListPreference;)V
+    invoke-direct {p0, v0, v1}, Lcom/android/settings_ext/DevelopmentSettings;->updateAnimationScaleValue(ILandroid/preference/ListPreference;)V
 
     .line 1191
     return-void
@@ -1386,7 +1386,7 @@
     .prologue
     .line 1168
     :try_start_0
-    iget-object v4, p0, Lcom/android/settings/DevelopmentSettings;->mWindowManager:Landroid/view/IWindowManager;
+    iget-object v4, p0, Lcom/android/settings_ext/DevelopmentSettings;->mWindowManager:Landroid/view/IWindowManager;
 
     invoke-interface {v4, p1}, Landroid/view/IWindowManager;->getAnimationScale(I)F
 
@@ -1403,7 +1403,7 @@
     .line 1170
     const/4 v4, 0x1
 
-    iput-boolean v4, p0, Lcom/android/settings/DevelopmentSettings;->mHaveDebugSettings:Z
+    iput-boolean v4, p0, Lcom/android/settings_ext/DevelopmentSettings;->mHaveDebugSettings:Z
 
     .line 1172
     :cond_0
@@ -1518,7 +1518,7 @@
 
     .line 1254
     .local v1, "limit":I
-    iget-object v4, p0, Lcom/android/settings/DevelopmentSettings;->mAppProcessLimit:Landroid/preference/ListPreference;
+    iget-object v4, p0, Lcom/android/settings_ext/DevelopmentSettings;->mAppProcessLimit:Landroid/preference/ListPreference;
 
     invoke-virtual {v4}, Landroid/preference/ListPreference;->getEntryValues()[Ljava/lang/CharSequence;
 
@@ -1555,18 +1555,18 @@
     .line 1259
     const/4 v4, 0x1
 
-    iput-boolean v4, p0, Lcom/android/settings/DevelopmentSettings;->mHaveDebugSettings:Z
+    iput-boolean v4, p0, Lcom/android/settings_ext/DevelopmentSettings;->mHaveDebugSettings:Z
 
     .line 1261
     :cond_0
-    iget-object v4, p0, Lcom/android/settings/DevelopmentSettings;->mAppProcessLimit:Landroid/preference/ListPreference;
+    iget-object v4, p0, Lcom/android/settings_ext/DevelopmentSettings;->mAppProcessLimit:Landroid/preference/ListPreference;
 
     invoke-virtual {v4, v0}, Landroid/preference/ListPreference;->setValueIndex(I)V
 
     .line 1262
-    iget-object v4, p0, Lcom/android/settings/DevelopmentSettings;->mAppProcessLimit:Landroid/preference/ListPreference;
+    iget-object v4, p0, Lcom/android/settings_ext/DevelopmentSettings;->mAppProcessLimit:Landroid/preference/ListPreference;
 
-    iget-object v5, p0, Lcom/android/settings/DevelopmentSettings;->mAppProcessLimit:Landroid/preference/ListPreference;
+    iget-object v5, p0, Lcom/android/settings_ext/DevelopmentSettings;->mAppProcessLimit:Landroid/preference/ListPreference;
 
     invoke-virtual {v5}, Landroid/preference/ListPreference;->getEntries()[Ljava/lang/CharSequence;
 
@@ -1597,16 +1597,16 @@
     .line 1266
     .end local v2    # "val":I
     :cond_2
-    iget-object v4, p0, Lcom/android/settings/DevelopmentSettings;->mAppProcessLimit:Landroid/preference/ListPreference;
+    iget-object v4, p0, Lcom/android/settings_ext/DevelopmentSettings;->mAppProcessLimit:Landroid/preference/ListPreference;
 
     const/4 v5, 0x0
 
     invoke-virtual {v4, v5}, Landroid/preference/ListPreference;->setValueIndex(I)V
 
     .line 1267
-    iget-object v4, p0, Lcom/android/settings/DevelopmentSettings;->mAppProcessLimit:Landroid/preference/ListPreference;
+    iget-object v4, p0, Lcom/android/settings_ext/DevelopmentSettings;->mAppProcessLimit:Landroid/preference/ListPreference;
 
-    iget-object v5, p0, Lcom/android/settings/DevelopmentSettings;->mAppProcessLimit:Landroid/preference/ListPreference;
+    iget-object v5, p0, Lcom/android/settings_ext/DevelopmentSettings;->mAppProcessLimit:Landroid/preference/ListPreference;
 
     invoke-virtual {v5}, Landroid/preference/ListPreference;->getEntries()[Ljava/lang/CharSequence;
 
@@ -1652,7 +1652,7 @@
     if-eqz v4, :cond_2
 
     .line 708
-    invoke-virtual {p0}, Lcom/android/settings/DevelopmentSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/DevelopmentSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v4
 
@@ -1678,12 +1678,12 @@
     if-eqz v0, :cond_1
 
     .line 712
-    iget-object v3, p0, Lcom/android/settings/DevelopmentSettings;->mBugreport:Landroid/preference/Preference;
+    iget-object v3, p0, Lcom/android/settings_ext/DevelopmentSettings;->mBugreport:Landroid/preference/Preference;
 
     invoke-virtual {v3, v2}, Landroid/preference/Preference;->setEnabled(Z)V
 
     .line 713
-    iget-object v3, p0, Lcom/android/settings/DevelopmentSettings;->mBugreportInPower:Landroid/preference/SwitchPreference;
+    iget-object v3, p0, Lcom/android/settings_ext/DevelopmentSettings;->mBugreportInPower:Landroid/preference/SwitchPreference;
 
     invoke-virtual {v3, v2}, Landroid/preference/SwitchPreference;->setEnabled(Z)V
 
@@ -1703,17 +1703,17 @@
     .line 715
     .restart local v0    # "adbEnabled":Z
     :cond_1
-    iget-object v2, p0, Lcom/android/settings/DevelopmentSettings;->mBugreport:Landroid/preference/Preference;
+    iget-object v2, p0, Lcom/android/settings_ext/DevelopmentSettings;->mBugreport:Landroid/preference/Preference;
 
     invoke-virtual {v2, v3}, Landroid/preference/Preference;->setEnabled(Z)V
 
     .line 716
-    iget-object v2, p0, Lcom/android/settings/DevelopmentSettings;->mBugreportInPower:Landroid/preference/SwitchPreference;
+    iget-object v2, p0, Lcom/android/settings_ext/DevelopmentSettings;->mBugreportInPower:Landroid/preference/SwitchPreference;
 
     invoke-virtual {v2, v3}, Landroid/preference/SwitchPreference;->setEnabled(Z)V
 
     .line 717
-    iget-object v2, p0, Lcom/android/settings/DevelopmentSettings;->mBugreportInPower:Landroid/preference/SwitchPreference;
+    iget-object v2, p0, Lcom/android/settings_ext/DevelopmentSettings;->mBugreportInPower:Landroid/preference/SwitchPreference;
 
     invoke-virtual {v2, v3}, Landroid/preference/SwitchPreference;->setChecked(Z)V
 
@@ -1728,7 +1728,7 @@
     .end local v0    # "adbEnabled":Z
     .end local v1    # "resolver":Landroid/content/ContentResolver;
     :cond_2
-    iget-object v3, p0, Lcom/android/settings/DevelopmentSettings;->mBugreportInPower:Landroid/preference/SwitchPreference;
+    iget-object v3, p0, Lcom/android/settings_ext/DevelopmentSettings;->mBugreportInPower:Landroid/preference/SwitchPreference;
 
     invoke-virtual {v3, v2}, Landroid/preference/SwitchPreference;->setEnabled(Z)V
 
@@ -1742,9 +1742,9 @@
     const/4 v0, 0x0
 
     .line 1136
-    iget-object v1, p0, Lcom/android/settings/DevelopmentSettings;->mShowCpuUsage:Landroid/preference/SwitchPreference;
+    iget-object v1, p0, Lcom/android/settings_ext/DevelopmentSettings;->mShowCpuUsage:Landroid/preference/SwitchPreference;
 
-    invoke-virtual {p0}, Lcom/android/settings/DevelopmentSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/DevelopmentSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v2
 
@@ -1763,7 +1763,7 @@
     const/4 v0, 0x1
 
     :cond_0
-    invoke-virtual {p0, v1, v0}, Lcom/android/settings/DevelopmentSettings;->updateSwitchPreference(Landroid/preference/SwitchPreference;Z)V
+    invoke-virtual {p0, v1, v0}, Lcom/android/settings_ext/DevelopmentSettings;->updateSwitchPreference(Landroid/preference/SwitchPreference;Z)V
 
     .line 1138
     return-void
@@ -1791,7 +1791,7 @@
 
     .line 927
     :cond_0
-    iget-object v3, p0, Lcom/android/settings/DevelopmentSettings;->mDebugHwOverdraw:Landroid/preference/ListPreference;
+    iget-object v3, p0, Lcom/android/settings_ext/DevelopmentSettings;->mDebugHwOverdraw:Landroid/preference/ListPreference;
 
     invoke-virtual {v3}, Landroid/preference/ListPreference;->getEntryValues()[Ljava/lang/CharSequence;
 
@@ -1817,14 +1817,14 @@
     if-eqz v3, :cond_1
 
     .line 930
-    iget-object v3, p0, Lcom/android/settings/DevelopmentSettings;->mDebugHwOverdraw:Landroid/preference/ListPreference;
+    iget-object v3, p0, Lcom/android/settings_ext/DevelopmentSettings;->mDebugHwOverdraw:Landroid/preference/ListPreference;
 
     invoke-virtual {v3, v0}, Landroid/preference/ListPreference;->setValueIndex(I)V
 
     .line 931
-    iget-object v3, p0, Lcom/android/settings/DevelopmentSettings;->mDebugHwOverdraw:Landroid/preference/ListPreference;
+    iget-object v3, p0, Lcom/android/settings_ext/DevelopmentSettings;->mDebugHwOverdraw:Landroid/preference/ListPreference;
 
-    iget-object v4, p0, Lcom/android/settings/DevelopmentSettings;->mDebugHwOverdraw:Landroid/preference/ListPreference;
+    iget-object v4, p0, Lcom/android/settings_ext/DevelopmentSettings;->mDebugHwOverdraw:Landroid/preference/ListPreference;
 
     invoke-virtual {v4}, Landroid/preference/ListPreference;->getEntries()[Ljava/lang/CharSequence;
 
@@ -1846,14 +1846,14 @@
 
     .line 935
     :cond_2
-    iget-object v3, p0, Lcom/android/settings/DevelopmentSettings;->mDebugHwOverdraw:Landroid/preference/ListPreference;
+    iget-object v3, p0, Lcom/android/settings_ext/DevelopmentSettings;->mDebugHwOverdraw:Landroid/preference/ListPreference;
 
     invoke-virtual {v3, v5}, Landroid/preference/ListPreference;->setValueIndex(I)V
 
     .line 936
-    iget-object v3, p0, Lcom/android/settings/DevelopmentSettings;->mDebugHwOverdraw:Landroid/preference/ListPreference;
+    iget-object v3, p0, Lcom/android/settings_ext/DevelopmentSettings;->mDebugHwOverdraw:Landroid/preference/ListPreference;
 
-    iget-object v4, p0, Lcom/android/settings/DevelopmentSettings;->mDebugHwOverdraw:Landroid/preference/ListPreference;
+    iget-object v4, p0, Lcom/android/settings_ext/DevelopmentSettings;->mDebugHwOverdraw:Landroid/preference/ListPreference;
 
     invoke-virtual {v4}, Landroid/preference/ListPreference;->getEntries()[Ljava/lang/CharSequence;
 
@@ -1871,7 +1871,7 @@
 
     .prologue
     .line 947
-    iget-object v0, p0, Lcom/android/settings/DevelopmentSettings;->mDebugLayout:Landroid/preference/SwitchPreference;
+    iget-object v0, p0, Lcom/android/settings_ext/DevelopmentSettings;->mDebugLayout:Landroid/preference/SwitchPreference;
 
     const-string v1, "debug.layout"
 
@@ -1881,7 +1881,7 @@
 
     move-result v1
 
-    invoke-virtual {p0, v0, v1}, Lcom/android/settings/DevelopmentSettings;->updateSwitchPreference(Landroid/preference/SwitchPreference;Z)V
+    invoke-virtual {p0, v0, v1}, Lcom/android/settings_ext/DevelopmentSettings;->updateSwitchPreference(Landroid/preference/SwitchPreference;Z)V
 
     .line 949
     return-void
@@ -1896,7 +1896,7 @@
     const/4 v6, 0x0
 
     .line 643
-    invoke-virtual {p0}, Lcom/android/settings/DevelopmentSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/DevelopmentSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v4
 
@@ -1910,12 +1910,12 @@
 
     move-result-object v4
 
-    iput-object v4, p0, Lcom/android/settings/DevelopmentSettings;->mDebugApp:Ljava/lang/String;
+    iput-object v4, p0, Lcom/android/settings_ext/DevelopmentSettings;->mDebugApp:Ljava/lang/String;
 
     .line 645
-    iget-object v7, p0, Lcom/android/settings/DevelopmentSettings;->mWaitForDebugger:Landroid/preference/SwitchPreference;
+    iget-object v7, p0, Lcom/android/settings_ext/DevelopmentSettings;->mWaitForDebugger:Landroid/preference/SwitchPreference;
 
-    invoke-virtual {p0}, Lcom/android/settings/DevelopmentSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/DevelopmentSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v4
 
@@ -1934,14 +1934,14 @@
     move v4, v5
 
     :goto_0
-    invoke-virtual {p0, v7, v4}, Lcom/android/settings/DevelopmentSettings;->updateSwitchPreference(Landroid/preference/SwitchPreference;Z)V
+    invoke-virtual {p0, v7, v4}, Lcom/android/settings_ext/DevelopmentSettings;->updateSwitchPreference(Landroid/preference/SwitchPreference;Z)V
 
     .line 647
-    iget-object v4, p0, Lcom/android/settings/DevelopmentSettings;->mDebugApp:Ljava/lang/String;
+    iget-object v4, p0, Lcom/android/settings_ext/DevelopmentSettings;->mDebugApp:Ljava/lang/String;
 
     if-eqz v4, :cond_2
 
-    iget-object v4, p0, Lcom/android/settings/DevelopmentSettings;->mDebugApp:Ljava/lang/String;
+    iget-object v4, p0, Lcom/android/settings_ext/DevelopmentSettings;->mDebugApp:Ljava/lang/String;
 
     invoke-virtual {v4}, Ljava/lang/String;->length()I
 
@@ -1951,7 +1951,7 @@
 
     .line 650
     :try_start_0
-    invoke-virtual {p0}, Lcom/android/settings/DevelopmentSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/DevelopmentSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v4
 
@@ -1959,7 +1959,7 @@
 
     move-result-object v4
 
-    iget-object v7, p0, Lcom/android/settings/DevelopmentSettings;->mDebugApp:Ljava/lang/String;
+    iget-object v7, p0, Lcom/android/settings_ext/DevelopmentSettings;->mDebugApp:Ljava/lang/String;
 
     const/16 v8, 0x200
 
@@ -1969,7 +1969,7 @@
 
     .line 652
     .local v0, "ai":Landroid/content/pm/ApplicationInfo;
-    invoke-virtual {p0}, Lcom/android/settings/DevelopmentSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/DevelopmentSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v4
 
@@ -1996,9 +1996,9 @@
     .end local v2    # "lab":Ljava/lang/CharSequence;
     .local v3, "label":Ljava/lang/String;
     :goto_1
-    iget-object v4, p0, Lcom/android/settings/DevelopmentSettings;->mDebugAppPref:Landroid/preference/Preference;
+    iget-object v4, p0, Lcom/android/settings_ext/DevelopmentSettings;->mDebugAppPref:Landroid/preference/Preference;
 
-    invoke-virtual {p0}, Lcom/android/settings/DevelopmentSettings;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {p0}, Lcom/android/settings_ext/DevelopmentSettings;->getResources()Landroid/content/res/Resources;
 
     move-result-object v7
 
@@ -2015,12 +2015,12 @@
     invoke-virtual {v4, v6}, Landroid/preference/Preference;->setSummary(Ljava/lang/CharSequence;)V
 
     .line 658
-    iget-object v4, p0, Lcom/android/settings/DevelopmentSettings;->mWaitForDebugger:Landroid/preference/SwitchPreference;
+    iget-object v4, p0, Lcom/android/settings_ext/DevelopmentSettings;->mWaitForDebugger:Landroid/preference/SwitchPreference;
 
     invoke-virtual {v4, v5}, Landroid/preference/SwitchPreference;->setEnabled(Z)V
 
     .line 659
-    iput-boolean v5, p0, Lcom/android/settings/DevelopmentSettings;->mHaveDebugSettings:Z
+    iput-boolean v5, p0, Lcom/android/settings_ext/DevelopmentSettings;->mHaveDebugSettings:Z
 
     .line 664
     .end local v3    # "label":Ljava/lang/String;
@@ -2038,7 +2038,7 @@
     .restart local v2    # "lab":Ljava/lang/CharSequence;
     :cond_1
     :try_start_1
-    iget-object v3, p0, Lcom/android/settings/DevelopmentSettings;->mDebugApp:Ljava/lang/String;
+    iget-object v3, p0, Lcom/android/settings_ext/DevelopmentSettings;->mDebugApp:Ljava/lang/String;
     :try_end_1
     .catch Landroid/content/pm/PackageManager$NameNotFoundException; {:try_start_1 .. :try_end_1} :catch_0
 
@@ -2052,7 +2052,7 @@
 
     .line 655
     .local v1, "e":Landroid/content/pm/PackageManager$NameNotFoundException;
-    iget-object v3, p0, Lcom/android/settings/DevelopmentSettings;->mDebugApp:Ljava/lang/String;
+    iget-object v3, p0, Lcom/android/settings_ext/DevelopmentSettings;->mDebugApp:Ljava/lang/String;
 
     .restart local v3    # "label":Ljava/lang/String;
     goto :goto_1
@@ -2061,9 +2061,9 @@
     .end local v1    # "e":Landroid/content/pm/PackageManager$NameNotFoundException;
     .end local v3    # "label":Ljava/lang/String;
     :cond_2
-    iget-object v4, p0, Lcom/android/settings/DevelopmentSettings;->mDebugAppPref:Landroid/preference/Preference;
+    iget-object v4, p0, Lcom/android/settings_ext/DevelopmentSettings;->mDebugAppPref:Landroid/preference/Preference;
 
-    invoke-virtual {p0}, Lcom/android/settings/DevelopmentSettings;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {p0}, Lcom/android/settings_ext/DevelopmentSettings;->getResources()Landroid/content/res/Resources;
 
     move-result-object v5
 
@@ -2076,7 +2076,7 @@
     invoke-virtual {v4, v5}, Landroid/preference/Preference;->setSummary(Ljava/lang/CharSequence;)V
 
     .line 662
-    iget-object v4, p0, Lcom/android/settings/DevelopmentSettings;->mWaitForDebugger:Landroid/preference/SwitchPreference;
+    iget-object v4, p0, Lcom/android/settings_ext/DevelopmentSettings;->mWaitForDebugger:Landroid/preference/SwitchPreference;
 
     invoke-virtual {v4, v6}, Landroid/preference/SwitchPreference;->setEnabled(Z)V
 
@@ -2146,14 +2146,14 @@
 
     .line 784
     .local v7, "showUpdates":I
-    iget-object v11, p0, Lcom/android/settings/DevelopmentSettings;->mShowScreenUpdates:Landroid/preference/SwitchPreference;
+    iget-object v11, p0, Lcom/android/settings_ext/DevelopmentSettings;->mShowScreenUpdates:Landroid/preference/SwitchPreference;
 
     if-eqz v7, :cond_1
 
     move v10, v8
 
     :goto_0
-    invoke-virtual {p0, v11, v10}, Lcom/android/settings/DevelopmentSettings;->updateSwitchPreference(Landroid/preference/SwitchPreference;Z)V
+    invoke-virtual {p0, v11, v10}, Lcom/android/settings_ext/DevelopmentSettings;->updateSwitchPreference(Landroid/preference/SwitchPreference;Z)V
 
     .line 786
     invoke-virtual {v4}, Landroid/os/Parcel;->readInt()I
@@ -2168,12 +2168,12 @@
 
     .line 788
     .local v1, "disableOverlays":I
-    iget-object v10, p0, Lcom/android/settings/DevelopmentSettings;->mDisableOverlays:Landroid/preference/SwitchPreference;
+    iget-object v10, p0, Lcom/android/settings_ext/DevelopmentSettings;->mDisableOverlays:Landroid/preference/SwitchPreference;
 
     if-eqz v1, :cond_2
 
     :goto_1
-    invoke-virtual {p0, v10, v8}, Lcom/android/settings/DevelopmentSettings;->updateSwitchPreference(Landroid/preference/SwitchPreference;Z)V
+    invoke-virtual {p0, v10, v8}, Lcom/android/settings_ext/DevelopmentSettings;->updateSwitchPreference(Landroid/preference/SwitchPreference;Z)V
 
     .line 789
     invoke-virtual {v4}, Landroid/os/Parcel;->recycle()V
@@ -2238,9 +2238,9 @@
     const/4 v0, 0x0
 
     .line 1035
-    iget-object v1, p0, Lcom/android/settings/DevelopmentSettings;->mForceRtlLayout:Landroid/preference/SwitchPreference;
+    iget-object v1, p0, Lcom/android/settings_ext/DevelopmentSettings;->mForceRtlLayout:Landroid/preference/SwitchPreference;
 
-    invoke-virtual {p0}, Lcom/android/settings/DevelopmentSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/DevelopmentSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v2
 
@@ -2259,7 +2259,7 @@
     const/4 v0, 0x1
 
     :cond_0
-    invoke-virtual {p0, v1, v0}, Lcom/android/settings/DevelopmentSettings;->updateSwitchPreference(Landroid/preference/SwitchPreference;Z)V
+    invoke-virtual {p0, v1, v0}, Lcom/android/settings_ext/DevelopmentSettings;->updateSwitchPreference(Landroid/preference/SwitchPreference;Z)V
 
     .line 1037
     return-void
@@ -2270,7 +2270,7 @@
 
     .prologue
     .line 831
-    iget-object v0, p0, Lcom/android/settings/DevelopmentSettings;->mForceHardwareUi:Landroid/preference/SwitchPreference;
+    iget-object v0, p0, Lcom/android/settings_ext/DevelopmentSettings;->mForceHardwareUi:Landroid/preference/SwitchPreference;
 
     const-string v1, "persist.sys.ui.hw"
 
@@ -2280,7 +2280,7 @@
 
     move-result v1
 
-    invoke-virtual {p0, v0, v1}, Lcom/android/settings/DevelopmentSettings;->updateSwitchPreference(Landroid/preference/SwitchPreference;Z)V
+    invoke-virtual {p0, v0, v1}, Lcom/android/settings_ext/DevelopmentSettings;->updateSwitchPreference(Landroid/preference/SwitchPreference;Z)V
 
     .line 832
     return-void
@@ -2293,7 +2293,7 @@
     .line 588
     const-string v6, "hdcp_checking"
 
-    invoke-virtual {p0, v6}, Lcom/android/settings/DevelopmentSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v6}, Lcom/android/settings_ext/DevelopmentSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v1
 
@@ -2312,7 +2312,7 @@
 
     .line 591
     .local v0, "currentValue":Ljava/lang/String;
-    invoke-virtual {p0}, Lcom/android/settings/DevelopmentSettings;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {p0}, Lcom/android/settings_ext/DevelopmentSettings;->getResources()Landroid/content/res/Resources;
 
     move-result-object v6
 
@@ -2324,7 +2324,7 @@
 
     .line 592
     .local v5, "values":[Ljava/lang/String;
-    invoke-virtual {p0}, Lcom/android/settings/DevelopmentSettings;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {p0}, Lcom/android/settings_ext/DevelopmentSettings;->getResources()Landroid/content/res/Resources;
 
     move-result-object v6
 
@@ -2402,9 +2402,9 @@
     const/4 v0, 0x0
 
     .line 1162
-    iget-object v1, p0, Lcom/android/settings/DevelopmentSettings;->mImmediatelyDestroyActivities:Landroid/preference/SwitchPreference;
+    iget-object v1, p0, Lcom/android/settings_ext/DevelopmentSettings;->mImmediatelyDestroyActivities:Landroid/preference/SwitchPreference;
 
-    invoke-virtual {p0}, Lcom/android/settings/DevelopmentSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/DevelopmentSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v2
 
@@ -2423,7 +2423,7 @@
     const/4 v0, 0x1
 
     :cond_0
-    invoke-virtual {p0, v1, v0}, Lcom/android/settings/DevelopmentSettings;->updateSwitchPreference(Landroid/preference/SwitchPreference;Z)V
+    invoke-virtual {p0, v1, v0}, Lcom/android/settings_ext/DevelopmentSettings;->updateSwitchPreference(Landroid/preference/SwitchPreference;Z)V
 
     .line 1164
     return-void
@@ -2436,7 +2436,7 @@
     const v8, 0x7f0b0042
 
     .line 1087
-    iget-object v6, p0, Lcom/android/settings/DevelopmentSettings;->mLogdSize:Landroid/preference/ListPreference;
+    iget-object v6, p0, Lcom/android/settings_ext/DevelopmentSettings;->mLogdSize:Landroid/preference/ListPreference;
 
     if-eqz v6, :cond_4
 
@@ -2466,7 +2466,7 @@
 
     .line 1095
     :cond_0
-    invoke-virtual {p0}, Lcom/android/settings/DevelopmentSettings;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {p0}, Lcom/android/settings_ext/DevelopmentSettings;->getResources()Landroid/content/res/Resources;
 
     move-result-object v6
 
@@ -2478,7 +2478,7 @@
 
     .line 1096
     .local v5, "values":[Ljava/lang/String;
-    invoke-virtual {p0}, Lcom/android/settings/DevelopmentSettings;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {p0}, Lcom/android/settings_ext/DevelopmentSettings;->getResources()Landroid/content/res/Resources;
 
     move-result-object v6
 
@@ -2505,12 +2505,12 @@
     if-eqz v6, :cond_1
 
     .line 1098
-    iget-object v6, p0, Lcom/android/settings/DevelopmentSettings;->mLogdSize:Landroid/preference/ListPreference;
+    iget-object v6, p0, Lcom/android/settings_ext/DevelopmentSettings;->mLogdSize:Landroid/preference/ListPreference;
 
     invoke-virtual {v6, v8}, Landroid/preference/ListPreference;->setEntries(I)V
 
     .line 1099
-    invoke-virtual {p0}, Lcom/android/settings/DevelopmentSettings;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {p0}, Lcom/android/settings_ext/DevelopmentSettings;->getResources()Landroid/content/res/Resources;
 
     move-result-object v6
 
@@ -2520,7 +2520,7 @@
 
     .line 1101
     :cond_1
-    invoke-virtual {p0}, Lcom/android/settings/DevelopmentSettings;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {p0}, Lcom/android/settings_ext/DevelopmentSettings;->getResources()Landroid/content/res/Resources;
 
     move-result-object v6
 
@@ -2567,21 +2567,21 @@
 
     .line 1110
     :cond_3
-    iget-object v6, p0, Lcom/android/settings/DevelopmentSettings;->mLogdSize:Landroid/preference/ListPreference;
+    iget-object v6, p0, Lcom/android/settings_ext/DevelopmentSettings;->mLogdSize:Landroid/preference/ListPreference;
 
     aget-object v7, v5, v2
 
     invoke-virtual {v6, v7}, Landroid/preference/ListPreference;->setValue(Ljava/lang/String;)V
 
     .line 1111
-    iget-object v6, p0, Lcom/android/settings/DevelopmentSettings;->mLogdSize:Landroid/preference/ListPreference;
+    iget-object v6, p0, Lcom/android/settings_ext/DevelopmentSettings;->mLogdSize:Landroid/preference/ListPreference;
 
     aget-object v7, v3, v2
 
     invoke-virtual {v6, v7}, Landroid/preference/ListPreference;->setSummary(Ljava/lang/CharSequence;)V
 
     .line 1112
-    iget-object v6, p0, Lcom/android/settings/DevelopmentSettings;->mLogdSize:Landroid/preference/ListPreference;
+    iget-object v6, p0, Lcom/android/settings_ext/DevelopmentSettings;->mLogdSize:Landroid/preference/ListPreference;
 
     invoke-virtual {v6, p0}, Landroid/preference/ListPreference;->setOnPreferenceChangeListener(Landroid/preference/Preference$OnPreferenceChangeListener;)V
 
@@ -2613,7 +2613,7 @@
 
     .prologue
     .line 840
-    iget-object v0, p0, Lcom/android/settings/DevelopmentSettings;->mForceMsaa:Landroid/preference/SwitchPreference;
+    iget-object v0, p0, Lcom/android/settings_ext/DevelopmentSettings;->mForceMsaa:Landroid/preference/SwitchPreference;
 
     const-string v1, "debug.egl.force_msaa"
 
@@ -2623,7 +2623,7 @@
 
     move-result v1
 
-    invoke-virtual {p0, v0, v1}, Lcom/android/settings/DevelopmentSettings;->updateSwitchPreference(Landroid/preference/SwitchPreference;Z)V
+    invoke-virtual {p0, v0, v1}, Lcom/android/settings_ext/DevelopmentSettings;->updateSwitchPreference(Landroid/preference/SwitchPreference;Z)V
 
     .line 841
     return-void
@@ -2651,7 +2651,7 @@
 
     .line 1233
     :cond_0
-    iget-object v3, p0, Lcom/android/settings/DevelopmentSettings;->mOpenGLTraces:Landroid/preference/ListPreference;
+    iget-object v3, p0, Lcom/android/settings_ext/DevelopmentSettings;->mOpenGLTraces:Landroid/preference/ListPreference;
 
     invoke-virtual {v3}, Landroid/preference/ListPreference;->getEntryValues()[Ljava/lang/CharSequence;
 
@@ -2677,14 +2677,14 @@
     if-eqz v3, :cond_1
 
     .line 1236
-    iget-object v3, p0, Lcom/android/settings/DevelopmentSettings;->mOpenGLTraces:Landroid/preference/ListPreference;
+    iget-object v3, p0, Lcom/android/settings_ext/DevelopmentSettings;->mOpenGLTraces:Landroid/preference/ListPreference;
 
     invoke-virtual {v3, v0}, Landroid/preference/ListPreference;->setValueIndex(I)V
 
     .line 1237
-    iget-object v3, p0, Lcom/android/settings/DevelopmentSettings;->mOpenGLTraces:Landroid/preference/ListPreference;
+    iget-object v3, p0, Lcom/android/settings_ext/DevelopmentSettings;->mOpenGLTraces:Landroid/preference/ListPreference;
 
-    iget-object v4, p0, Lcom/android/settings/DevelopmentSettings;->mOpenGLTraces:Landroid/preference/ListPreference;
+    iget-object v4, p0, Lcom/android/settings_ext/DevelopmentSettings;->mOpenGLTraces:Landroid/preference/ListPreference;
 
     invoke-virtual {v4}, Landroid/preference/ListPreference;->getEntries()[Ljava/lang/CharSequence;
 
@@ -2706,14 +2706,14 @@
 
     .line 1241
     :cond_2
-    iget-object v3, p0, Lcom/android/settings/DevelopmentSettings;->mOpenGLTraces:Landroid/preference/ListPreference;
+    iget-object v3, p0, Lcom/android/settings_ext/DevelopmentSettings;->mOpenGLTraces:Landroid/preference/ListPreference;
 
     invoke-virtual {v3, v5}, Landroid/preference/ListPreference;->setValueIndex(I)V
 
     .line 1242
-    iget-object v3, p0, Lcom/android/settings/DevelopmentSettings;->mOpenGLTraces:Landroid/preference/ListPreference;
+    iget-object v3, p0, Lcom/android/settings_ext/DevelopmentSettings;->mOpenGLTraces:Landroid/preference/ListPreference;
 
-    iget-object v4, p0, Lcom/android/settings/DevelopmentSettings;->mOpenGLTraces:Landroid/preference/ListPreference;
+    iget-object v4, p0, Lcom/android/settings_ext/DevelopmentSettings;->mOpenGLTraces:Landroid/preference/ListPreference;
 
     invoke-virtual {v4}, Landroid/preference/ListPreference;->getEntries()[Ljava/lang/CharSequence;
 
@@ -2733,7 +2733,7 @@
     const/4 v5, 0x0
 
     .line 1203
-    invoke-virtual {p0}, Lcom/android/settings/DevelopmentSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/DevelopmentSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v3
 
@@ -2756,7 +2756,7 @@
 
     .line 1209
     :cond_0
-    iget-object v3, p0, Lcom/android/settings/DevelopmentSettings;->mOverlayDisplayDevices:Landroid/preference/ListPreference;
+    iget-object v3, p0, Lcom/android/settings_ext/DevelopmentSettings;->mOverlayDisplayDevices:Landroid/preference/ListPreference;
 
     invoke-virtual {v3}, Landroid/preference/ListPreference;->getEntryValues()[Ljava/lang/CharSequence;
 
@@ -2782,14 +2782,14 @@
     if-eqz v3, :cond_1
 
     .line 1212
-    iget-object v3, p0, Lcom/android/settings/DevelopmentSettings;->mOverlayDisplayDevices:Landroid/preference/ListPreference;
+    iget-object v3, p0, Lcom/android/settings_ext/DevelopmentSettings;->mOverlayDisplayDevices:Landroid/preference/ListPreference;
 
     invoke-virtual {v3, v0}, Landroid/preference/ListPreference;->setValueIndex(I)V
 
     .line 1213
-    iget-object v3, p0, Lcom/android/settings/DevelopmentSettings;->mOverlayDisplayDevices:Landroid/preference/ListPreference;
+    iget-object v3, p0, Lcom/android/settings_ext/DevelopmentSettings;->mOverlayDisplayDevices:Landroid/preference/ListPreference;
 
-    iget-object v4, p0, Lcom/android/settings/DevelopmentSettings;->mOverlayDisplayDevices:Landroid/preference/ListPreference;
+    iget-object v4, p0, Lcom/android/settings_ext/DevelopmentSettings;->mOverlayDisplayDevices:Landroid/preference/ListPreference;
 
     invoke-virtual {v4}, Landroid/preference/ListPreference;->getEntries()[Ljava/lang/CharSequence;
 
@@ -2811,14 +2811,14 @@
 
     .line 1217
     :cond_2
-    iget-object v3, p0, Lcom/android/settings/DevelopmentSettings;->mOverlayDisplayDevices:Landroid/preference/ListPreference;
+    iget-object v3, p0, Lcom/android/settings_ext/DevelopmentSettings;->mOverlayDisplayDevices:Landroid/preference/ListPreference;
 
     invoke-virtual {v3, v5}, Landroid/preference/ListPreference;->setValueIndex(I)V
 
     .line 1218
-    iget-object v3, p0, Lcom/android/settings/DevelopmentSettings;->mOverlayDisplayDevices:Landroid/preference/ListPreference;
+    iget-object v3, p0, Lcom/android/settings_ext/DevelopmentSettings;->mOverlayDisplayDevices:Landroid/preference/ListPreference;
 
-    iget-object v4, p0, Lcom/android/settings/DevelopmentSettings;->mOverlayDisplayDevices:Landroid/preference/ListPreference;
+    iget-object v4, p0, Lcom/android/settings_ext/DevelopmentSettings;->mOverlayDisplayDevices:Landroid/preference/ListPreference;
 
     invoke-virtual {v4}, Landroid/preference/ListPreference;->getEntries()[Ljava/lang/CharSequence;
 
@@ -2837,7 +2837,7 @@
     .prologue
     .line 608
     :try_start_0
-    iget-object v0, p0, Lcom/android/settings/DevelopmentSettings;->mBackupManager:Landroid/app/backup/IBackupManager;
+    iget-object v0, p0, Lcom/android/settings_ext/DevelopmentSettings;->mBackupManager:Landroid/app/backup/IBackupManager;
 
     invoke-interface {v0}, Landroid/app/backup/IBackupManager;->hasBackupPassword()Z
 
@@ -2846,7 +2846,7 @@
     if-eqz v0, :cond_0
 
     .line 609
-    iget-object v0, p0, Lcom/android/settings/DevelopmentSettings;->mPassword:Landroid/preference/PreferenceScreen;
+    iget-object v0, p0, Lcom/android/settings_ext/DevelopmentSettings;->mPassword:Landroid/preference/PreferenceScreen;
 
     const v1, 0x7f090736
 
@@ -2858,7 +2858,7 @@
 
     .line 611
     :cond_0
-    iget-object v0, p0, Lcom/android/settings/DevelopmentSettings;->mPassword:Landroid/preference/PreferenceScreen;
+    iget-object v0, p0, Lcom/android/settings_ext/DevelopmentSettings;->mPassword:Landroid/preference/PreferenceScreen;
 
     const v1, 0x7f090735
 
@@ -2882,9 +2882,9 @@
     const/4 v0, 0x0
 
     .line 756
-    iget-object v1, p0, Lcom/android/settings/DevelopmentSettings;->mPointerLocation:Landroid/preference/SwitchPreference;
+    iget-object v1, p0, Lcom/android/settings_ext/DevelopmentSettings;->mPointerLocation:Landroid/preference/SwitchPreference;
 
-    invoke-virtual {p0}, Lcom/android/settings/DevelopmentSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/DevelopmentSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v2
 
@@ -2903,7 +2903,7 @@
     const/4 v0, 0x1
 
     :cond_0
-    invoke-virtual {p0, v1, v0}, Lcom/android/settings/DevelopmentSettings;->updateSwitchPreference(Landroid/preference/SwitchPreference;Z)V
+    invoke-virtual {p0, v1, v0}, Lcom/android/settings_ext/DevelopmentSettings;->updateSwitchPreference(Landroid/preference/SwitchPreference;Z)V
 
     .line 758
     return-void
@@ -2916,9 +2916,9 @@
     const/4 v0, 0x0
 
     .line 1288
-    iget-object v1, p0, Lcom/android/settings/DevelopmentSettings;->mShowAllANRs:Landroid/preference/SwitchPreference;
+    iget-object v1, p0, Lcom/android/settings_ext/DevelopmentSettings;->mShowAllANRs:Landroid/preference/SwitchPreference;
 
-    invoke-virtual {p0}, Lcom/android/settings/DevelopmentSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/DevelopmentSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v2
 
@@ -2937,7 +2937,7 @@
     const/4 v0, 0x1
 
     :cond_0
-    invoke-virtual {p0, v1, v0}, Lcom/android/settings/DevelopmentSettings;->updateSwitchPreference(Landroid/preference/SwitchPreference;Z)V
+    invoke-virtual {p0, v1, v0}, Lcom/android/settings_ext/DevelopmentSettings;->updateSwitchPreference(Landroid/preference/SwitchPreference;Z)V
 
     .line 1290
     return-void
@@ -2948,7 +2948,7 @@
 
     .prologue
     .line 911
-    iget-object v0, p0, Lcom/android/settings/DevelopmentSettings;->mShowHwLayersUpdates:Landroid/preference/SwitchPreference;
+    iget-object v0, p0, Lcom/android/settings_ext/DevelopmentSettings;->mShowHwLayersUpdates:Landroid/preference/SwitchPreference;
 
     const-string v1, "debug.hwui.show_layers_updates"
 
@@ -2958,7 +2958,7 @@
 
     move-result v1
 
-    invoke-virtual {p0, v0, v1}, Lcom/android/settings/DevelopmentSettings;->updateSwitchPreference(Landroid/preference/SwitchPreference;Z)V
+    invoke-virtual {p0, v0, v1}, Lcom/android/settings_ext/DevelopmentSettings;->updateSwitchPreference(Landroid/preference/SwitchPreference;Z)V
 
     .line 913
     return-void
@@ -2969,7 +2969,7 @@
 
     .prologue
     .line 900
-    iget-object v0, p0, Lcom/android/settings/DevelopmentSettings;->mShowHwScreenUpdates:Landroid/preference/SwitchPreference;
+    iget-object v0, p0, Lcom/android/settings_ext/DevelopmentSettings;->mShowHwScreenUpdates:Landroid/preference/SwitchPreference;
 
     const-string v1, "debug.hwui.show_dirty_regions"
 
@@ -2979,7 +2979,7 @@
 
     move-result v1
 
-    invoke-virtual {p0, v0, v1}, Lcom/android/settings/DevelopmentSettings;->updateSwitchPreference(Landroid/preference/SwitchPreference;Z)V
+    invoke-virtual {p0, v0, v1}, Lcom/android/settings_ext/DevelopmentSettings;->updateSwitchPreference(Landroid/preference/SwitchPreference;Z)V
 
     .line 902
     return-void
@@ -3007,7 +3007,7 @@
 
     .line 880
     :cond_0
-    iget-object v3, p0, Lcom/android/settings/DevelopmentSettings;->mShowNonRectClip:Landroid/preference/ListPreference;
+    iget-object v3, p0, Lcom/android/settings_ext/DevelopmentSettings;->mShowNonRectClip:Landroid/preference/ListPreference;
 
     invoke-virtual {v3}, Landroid/preference/ListPreference;->getEntryValues()[Ljava/lang/CharSequence;
 
@@ -3033,14 +3033,14 @@
     if-eqz v3, :cond_1
 
     .line 883
-    iget-object v3, p0, Lcom/android/settings/DevelopmentSettings;->mShowNonRectClip:Landroid/preference/ListPreference;
+    iget-object v3, p0, Lcom/android/settings_ext/DevelopmentSettings;->mShowNonRectClip:Landroid/preference/ListPreference;
 
     invoke-virtual {v3, v0}, Landroid/preference/ListPreference;->setValueIndex(I)V
 
     .line 884
-    iget-object v3, p0, Lcom/android/settings/DevelopmentSettings;->mShowNonRectClip:Landroid/preference/ListPreference;
+    iget-object v3, p0, Lcom/android/settings_ext/DevelopmentSettings;->mShowNonRectClip:Landroid/preference/ListPreference;
 
-    iget-object v4, p0, Lcom/android/settings/DevelopmentSettings;->mShowNonRectClip:Landroid/preference/ListPreference;
+    iget-object v4, p0, Lcom/android/settings_ext/DevelopmentSettings;->mShowNonRectClip:Landroid/preference/ListPreference;
 
     invoke-virtual {v4}, Landroid/preference/ListPreference;->getEntries()[Ljava/lang/CharSequence;
 
@@ -3062,14 +3062,14 @@
 
     .line 888
     :cond_2
-    iget-object v3, p0, Lcom/android/settings/DevelopmentSettings;->mShowNonRectClip:Landroid/preference/ListPreference;
+    iget-object v3, p0, Lcom/android/settings_ext/DevelopmentSettings;->mShowNonRectClip:Landroid/preference/ListPreference;
 
     invoke-virtual {v3, v5}, Landroid/preference/ListPreference;->setValueIndex(I)V
 
     .line 889
-    iget-object v3, p0, Lcom/android/settings/DevelopmentSettings;->mShowNonRectClip:Landroid/preference/ListPreference;
+    iget-object v3, p0, Lcom/android/settings_ext/DevelopmentSettings;->mShowNonRectClip:Landroid/preference/ListPreference;
 
-    iget-object v4, p0, Lcom/android/settings/DevelopmentSettings;->mShowNonRectClip:Landroid/preference/ListPreference;
+    iget-object v4, p0, Lcom/android/settings_ext/DevelopmentSettings;->mShowNonRectClip:Landroid/preference/ListPreference;
 
     invoke-virtual {v4}, Landroid/preference/ListPreference;->getEntries()[Ljava/lang/CharSequence;
 
@@ -3089,9 +3089,9 @@
     const/4 v0, 0x0
 
     .line 766
-    iget-object v1, p0, Lcom/android/settings/DevelopmentSettings;->mShowTouches:Landroid/preference/SwitchPreference;
+    iget-object v1, p0, Lcom/android/settings_ext/DevelopmentSettings;->mShowTouches:Landroid/preference/SwitchPreference;
 
-    invoke-virtual {p0}, Lcom/android/settings/DevelopmentSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/DevelopmentSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v2
 
@@ -3110,7 +3110,7 @@
     const/4 v0, 0x1
 
     :cond_0
-    invoke-virtual {p0, v1, v0}, Lcom/android/settings/DevelopmentSettings;->updateSwitchPreference(Landroid/preference/SwitchPreference;Z)V
+    invoke-virtual {p0, v1, v0}, Lcom/android/settings_ext/DevelopmentSettings;->updateSwitchPreference(Landroid/preference/SwitchPreference;Z)V
 
     .line 768
     return-void
@@ -3127,7 +3127,7 @@
     const/4 v5, 0x0
 
     .line 958
-    invoke-virtual {p0}, Lcom/android/settings/DevelopmentSettings;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/settings_ext/DevelopmentSettings;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v0
 
@@ -3161,12 +3161,12 @@
 
     .line 965
     .local v3, "mode":Ljava/lang/String;
-    iget-object v6, p0, Lcom/android/settings/DevelopmentSettings;->mSimulateColorSpace:Landroid/preference/ListPreference;
+    iget-object v6, p0, Lcom/android/settings_ext/DevelopmentSettings;->mSimulateColorSpace:Landroid/preference/ListPreference;
 
     invoke-virtual {v6, v3}, Landroid/preference/ListPreference;->setValue(Ljava/lang/String;)V
 
     .line 966
-    iget-object v6, p0, Lcom/android/settings/DevelopmentSettings;->mSimulateColorSpace:Landroid/preference/ListPreference;
+    iget-object v6, p0, Lcom/android/settings_ext/DevelopmentSettings;->mSimulateColorSpace:Landroid/preference/ListPreference;
 
     invoke-virtual {v6, v3}, Landroid/preference/ListPreference;->findIndexOfValue(Ljava/lang/String;)I
 
@@ -3177,7 +3177,7 @@
     if-gez v2, :cond_1
 
     .line 969
-    iget-object v6, p0, Lcom/android/settings/DevelopmentSettings;->mSimulateColorSpace:Landroid/preference/ListPreference;
+    iget-object v6, p0, Lcom/android/settings_ext/DevelopmentSettings;->mSimulateColorSpace:Landroid/preference/ListPreference;
 
     const v7, 0x7f0905eb
 
@@ -3185,13 +3185,13 @@
 
     const v8, 0x7f0905e7
 
-    invoke-virtual {p0, v8}, Lcom/android/settings/DevelopmentSettings;->getString(I)Ljava/lang/String;
+    invoke-virtual {p0, v8}, Lcom/android/settings_ext/DevelopmentSettings;->getString(I)Ljava/lang/String;
 
     move-result-object v8
 
     aput-object v8, v4, v5
 
-    invoke-virtual {p0, v7, v4}, Lcom/android/settings/DevelopmentSettings;->getString(I[Ljava/lang/Object;)Ljava/lang/String;
+    invoke-virtual {p0, v7, v4}, Lcom/android/settings_ext/DevelopmentSettings;->getString(I[Ljava/lang/Object;)Ljava/lang/String;
 
     move-result-object v4
 
@@ -3215,7 +3215,7 @@
     .restart local v2    # "index":I
     .restart local v3    # "mode":Ljava/lang/String;
     :cond_1
-    iget-object v4, p0, Lcom/android/settings/DevelopmentSettings;->mSimulateColorSpace:Landroid/preference/ListPreference;
+    iget-object v4, p0, Lcom/android/settings_ext/DevelopmentSettings;->mSimulateColorSpace:Landroid/preference/ListPreference;
 
     const-string v5, "%s"
 
@@ -3227,7 +3227,7 @@
     .end local v2    # "index":I
     .end local v3    # "mode":Ljava/lang/String;
     :cond_2
-    iget-object v4, p0, Lcom/android/settings/DevelopmentSettings;->mSimulateColorSpace:Landroid/preference/ListPreference;
+    iget-object v4, p0, Lcom/android/settings_ext/DevelopmentSettings;->mSimulateColorSpace:Landroid/preference/ListPreference;
 
     invoke-static {v7}, Ljava/lang/Integer;->toString(I)Ljava/lang/String;
 
@@ -3245,16 +3245,16 @@
     const/4 v0, 0x1
 
     .line 747
-    iget-object v1, p0, Lcom/android/settings/DevelopmentSettings;->mStrictMode:Landroid/preference/SwitchPreference;
+    iget-object v1, p0, Lcom/android/settings_ext/DevelopmentSettings;->mStrictMode:Landroid/preference/SwitchPreference;
 
-    invoke-static {}, Lcom/android/settings/DevelopmentSettings;->currentStrictModeActiveIndex()I
+    invoke-static {}, Lcom/android/settings_ext/DevelopmentSettings;->currentStrictModeActiveIndex()I
 
     move-result v2
 
     if-ne v2, v0, :cond_0
 
     :goto_0
-    invoke-virtual {p0, v1, v0}, Lcom/android/settings/DevelopmentSettings;->updateSwitchPreference(Landroid/preference/SwitchPreference;Z)V
+    invoke-virtual {p0, v1, v0}, Lcom/android/settings_ext/DevelopmentSettings;->updateSwitchPreference(Landroid/preference/SwitchPreference;Z)V
 
     .line 748
     return-void
@@ -3288,7 +3288,7 @@
 
     .line 854
     :cond_0
-    iget-object v3, p0, Lcom/android/settings/DevelopmentSettings;->mTrackFrameTime:Landroid/preference/ListPreference;
+    iget-object v3, p0, Lcom/android/settings_ext/DevelopmentSettings;->mTrackFrameTime:Landroid/preference/ListPreference;
 
     invoke-virtual {v3}, Landroid/preference/ListPreference;->getEntryValues()[Ljava/lang/CharSequence;
 
@@ -3314,14 +3314,14 @@
     if-eqz v3, :cond_1
 
     .line 857
-    iget-object v3, p0, Lcom/android/settings/DevelopmentSettings;->mTrackFrameTime:Landroid/preference/ListPreference;
+    iget-object v3, p0, Lcom/android/settings_ext/DevelopmentSettings;->mTrackFrameTime:Landroid/preference/ListPreference;
 
     invoke-virtual {v3, v0}, Landroid/preference/ListPreference;->setValueIndex(I)V
 
     .line 858
-    iget-object v3, p0, Lcom/android/settings/DevelopmentSettings;->mTrackFrameTime:Landroid/preference/ListPreference;
+    iget-object v3, p0, Lcom/android/settings_ext/DevelopmentSettings;->mTrackFrameTime:Landroid/preference/ListPreference;
 
-    iget-object v4, p0, Lcom/android/settings/DevelopmentSettings;->mTrackFrameTime:Landroid/preference/ListPreference;
+    iget-object v4, p0, Lcom/android/settings_ext/DevelopmentSettings;->mTrackFrameTime:Landroid/preference/ListPreference;
 
     invoke-virtual {v4}, Landroid/preference/ListPreference;->getEntries()[Ljava/lang/CharSequence;
 
@@ -3343,14 +3343,14 @@
 
     .line 862
     :cond_2
-    iget-object v3, p0, Lcom/android/settings/DevelopmentSettings;->mTrackFrameTime:Landroid/preference/ListPreference;
+    iget-object v3, p0, Lcom/android/settings_ext/DevelopmentSettings;->mTrackFrameTime:Landroid/preference/ListPreference;
 
     invoke-virtual {v3, v5}, Landroid/preference/ListPreference;->setValueIndex(I)V
 
     .line 863
-    iget-object v3, p0, Lcom/android/settings/DevelopmentSettings;->mTrackFrameTime:Landroid/preference/ListPreference;
+    iget-object v3, p0, Lcom/android/settings_ext/DevelopmentSettings;->mTrackFrameTime:Landroid/preference/ListPreference;
 
-    iget-object v4, p0, Lcom/android/settings/DevelopmentSettings;->mTrackFrameTime:Landroid/preference/ListPreference;
+    iget-object v4, p0, Lcom/android/settings_ext/DevelopmentSettings;->mTrackFrameTime:Landroid/preference/ListPreference;
 
     invoke-virtual {v4}, Landroid/preference/ListPreference;->getEntries()[Ljava/lang/CharSequence;
 
@@ -3370,9 +3370,9 @@
     const/4 v0, 0x0
 
     .line 1024
-    iget-object v1, p0, Lcom/android/settings/DevelopmentSettings;->mUSBAudio:Landroid/preference/SwitchPreference;
+    iget-object v1, p0, Lcom/android/settings_ext/DevelopmentSettings;->mUSBAudio:Landroid/preference/SwitchPreference;
 
-    invoke-virtual {p0}, Lcom/android/settings/DevelopmentSettings;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/settings_ext/DevelopmentSettings;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v2
 
@@ -3387,7 +3387,7 @@
     const/4 v0, 0x1
 
     :cond_0
-    invoke-virtual {p0, v1, v0}, Lcom/android/settings/DevelopmentSettings;->updateSwitchPreference(Landroid/preference/SwitchPreference;Z)V
+    invoke-virtual {p0, v1, v0}, Lcom/android/settings_ext/DevelopmentSettings;->updateSwitchPreference(Landroid/preference/SwitchPreference;Z)V
 
     .line 1026
     return-void
@@ -3398,7 +3398,7 @@
 
     .prologue
     .line 1013
-    iget-object v0, p0, Lcom/android/settings/DevelopmentSettings;->mUseAwesomePlayer:Landroid/preference/SwitchPreference;
+    iget-object v0, p0, Lcom/android/settings_ext/DevelopmentSettings;->mUseAwesomePlayer:Landroid/preference/SwitchPreference;
 
     const-string v1, "persist.sys.media.use-awesome"
 
@@ -3408,7 +3408,7 @@
 
     move-result v1
 
-    invoke-virtual {p0, v0, v1}, Lcom/android/settings/DevelopmentSettings;->updateSwitchPreference(Landroid/preference/SwitchPreference;Z)V
+    invoke-virtual {p0, v0, v1}, Lcom/android/settings_ext/DevelopmentSettings;->updateSwitchPreference(Landroid/preference/SwitchPreference;Z)V
 
     .line 1015
     return-void
@@ -3421,9 +3421,9 @@
     const/4 v0, 0x1
 
     .line 667
-    iget-object v1, p0, Lcom/android/settings/DevelopmentSettings;->mVerifyAppsOverUsb:Landroid/preference/SwitchPreference;
+    iget-object v1, p0, Lcom/android/settings_ext/DevelopmentSettings;->mVerifyAppsOverUsb:Landroid/preference/SwitchPreference;
 
-    invoke-virtual {p0}, Lcom/android/settings/DevelopmentSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/DevelopmentSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v2
 
@@ -3440,12 +3440,12 @@
     if-eqz v2, :cond_0
 
     :goto_0
-    invoke-virtual {p0, v1, v0}, Lcom/android/settings/DevelopmentSettings;->updateSwitchPreference(Landroid/preference/SwitchPreference;Z)V
+    invoke-virtual {p0, v1, v0}, Lcom/android/settings_ext/DevelopmentSettings;->updateSwitchPreference(Landroid/preference/SwitchPreference;Z)V
 
     .line 669
-    iget-object v0, p0, Lcom/android/settings/DevelopmentSettings;->mVerifyAppsOverUsb:Landroid/preference/SwitchPreference;
+    iget-object v0, p0, Lcom/android/settings_ext/DevelopmentSettings;->mVerifyAppsOverUsb:Landroid/preference/SwitchPreference;
 
-    invoke-direct {p0}, Lcom/android/settings/DevelopmentSettings;->enableVerifierSetting()Z
+    invoke-direct {p0}, Lcom/android/settings_ext/DevelopmentSettings;->enableVerifierSetting()Z
 
     move-result v1
 
@@ -3466,7 +3466,7 @@
 
     .prologue
     .line 1069
-    iget-object v1, p0, Lcom/android/settings/DevelopmentSettings;->mWifiManager:Landroid/net/wifi/WifiManager;
+    iget-object v1, p0, Lcom/android/settings_ext/DevelopmentSettings;->mWifiManager:Landroid/net/wifi/WifiManager;
 
     invoke-virtual {v1}, Landroid/net/wifi/WifiManager;->getAggressiveHandover()I
 
@@ -3479,9 +3479,9 @@
     .line 1070
     .local v0, "enabled":Z
     :goto_0
-    iget-object v1, p0, Lcom/android/settings/DevelopmentSettings;->mWifiAggressiveHandover:Landroid/preference/SwitchPreference;
+    iget-object v1, p0, Lcom/android/settings_ext/DevelopmentSettings;->mWifiAggressiveHandover:Landroid/preference/SwitchPreference;
 
-    invoke-virtual {p0, v1, v0}, Lcom/android/settings/DevelopmentSettings;->updateSwitchPreference(Landroid/preference/SwitchPreference;Z)V
+    invoke-virtual {p0, v1, v0}, Lcom/android/settings_ext/DevelopmentSettings;->updateSwitchPreference(Landroid/preference/SwitchPreference;Z)V
 
     .line 1071
     return-void
@@ -3499,7 +3499,7 @@
 
     .prologue
     .line 1078
-    iget-object v1, p0, Lcom/android/settings/DevelopmentSettings;->mWifiManager:Landroid/net/wifi/WifiManager;
+    iget-object v1, p0, Lcom/android/settings_ext/DevelopmentSettings;->mWifiManager:Landroid/net/wifi/WifiManager;
 
     invoke-virtual {v1}, Landroid/net/wifi/WifiManager;->getAllowScansWithTraffic()I
 
@@ -3512,9 +3512,9 @@
     .line 1079
     .local v0, "enabled":Z
     :goto_0
-    iget-object v1, p0, Lcom/android/settings/DevelopmentSettings;->mWifiAllowScansWithTraffic:Landroid/preference/SwitchPreference;
+    iget-object v1, p0, Lcom/android/settings_ext/DevelopmentSettings;->mWifiAllowScansWithTraffic:Landroid/preference/SwitchPreference;
 
-    invoke-virtual {p0, v1, v0}, Lcom/android/settings/DevelopmentSettings;->updateSwitchPreference(Landroid/preference/SwitchPreference;Z)V
+    invoke-virtual {p0, v1, v0}, Lcom/android/settings_ext/DevelopmentSettings;->updateSwitchPreference(Landroid/preference/SwitchPreference;Z)V
 
     .line 1080
     return-void
@@ -3534,9 +3534,9 @@
     const/4 v0, 0x0
 
     .line 1048
-    iget-object v1, p0, Lcom/android/settings/DevelopmentSettings;->mWifiDisplayCertification:Landroid/preference/SwitchPreference;
+    iget-object v1, p0, Lcom/android/settings_ext/DevelopmentSettings;->mWifiDisplayCertification:Landroid/preference/SwitchPreference;
 
-    invoke-virtual {p0}, Lcom/android/settings/DevelopmentSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/DevelopmentSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v2
 
@@ -3555,7 +3555,7 @@
     const/4 v0, 0x1
 
     :cond_0
-    invoke-virtual {p0, v1, v0}, Lcom/android/settings/DevelopmentSettings;->updateSwitchPreference(Landroid/preference/SwitchPreference;Z)V
+    invoke-virtual {p0, v1, v0}, Lcom/android/settings_ext/DevelopmentSettings;->updateSwitchPreference(Landroid/preference/SwitchPreference;Z)V
 
     .line 1051
     return-void
@@ -3566,7 +3566,7 @@
 
     .prologue
     .line 1060
-    iget-object v1, p0, Lcom/android/settings/DevelopmentSettings;->mWifiManager:Landroid/net/wifi/WifiManager;
+    iget-object v1, p0, Lcom/android/settings_ext/DevelopmentSettings;->mWifiManager:Landroid/net/wifi/WifiManager;
 
     invoke-virtual {v1}, Landroid/net/wifi/WifiManager;->getVerboseLoggingLevel()I
 
@@ -3579,9 +3579,9 @@
     .line 1061
     .local v0, "enabled":Z
     :goto_0
-    iget-object v1, p0, Lcom/android/settings/DevelopmentSettings;->mWifiVerboseLogging:Landroid/preference/SwitchPreference;
+    iget-object v1, p0, Lcom/android/settings_ext/DevelopmentSettings;->mWifiVerboseLogging:Landroid/preference/SwitchPreference;
 
-    invoke-virtual {p0, v1, v0}, Lcom/android/settings/DevelopmentSettings;->updateSwitchPreference(Landroid/preference/SwitchPreference;Z)V
+    invoke-virtual {p0, v1, v0}, Lcom/android/settings_ext/DevelopmentSettings;->updateSwitchPreference(Landroid/preference/SwitchPreference;Z)V
 
     .line 1062
     return-void
@@ -3603,7 +3603,7 @@
     const/4 v5, 0x0
 
     .line 985
-    invoke-virtual {p0}, Lcom/android/settings/DevelopmentSettings;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/settings_ext/DevelopmentSettings;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v0
 
@@ -3639,7 +3639,7 @@
 
     .line 992
     .local v3, "mode":Ljava/lang/String;
-    iget-object v6, p0, Lcom/android/settings/DevelopmentSettings;->mSimulateColorSpace:Landroid/preference/ListPreference;
+    iget-object v6, p0, Lcom/android/settings_ext/DevelopmentSettings;->mSimulateColorSpace:Landroid/preference/ListPreference;
 
     invoke-virtual {v6, v3}, Landroid/preference/ListPreference;->findIndexOfValue(Ljava/lang/String;)I
 
@@ -3692,12 +3692,12 @@
     .line 1196
     .local v0, "scale":F
     :goto_0
-    iget-object v1, p0, Lcom/android/settings/DevelopmentSettings;->mWindowManager:Landroid/view/IWindowManager;
+    iget-object v1, p0, Lcom/android/settings_ext/DevelopmentSettings;->mWindowManager:Landroid/view/IWindowManager;
 
     invoke-interface {v1, p1, v0}, Landroid/view/IWindowManager;->setAnimationScale(IF)V
 
     .line 1197
-    invoke-direct {p0, p1, p2}, Lcom/android/settings/DevelopmentSettings;->updateAnimationScaleValue(ILandroid/preference/ListPreference;)V
+    invoke-direct {p0, p1, p2}, Lcom/android/settings_ext/DevelopmentSettings;->updateAnimationScaleValue(ILandroid/preference/ListPreference;)V
     :try_end_0
     .catch Landroid/os/RemoteException; {:try_start_0 .. :try_end_0} :catch_0
 
@@ -3746,7 +3746,7 @@
     invoke-interface {v1, v0}, Landroid/app/IActivityManager;->setProcessLimit(I)V
 
     .line 1276
-    invoke-direct {p0}, Lcom/android/settings/DevelopmentSettings;->updateAppProcessLimitOptions()V
+    invoke-direct {p0}, Lcom/android/settings_ext/DevelopmentSettings;->updateAppProcessLimitOptions()V
     :try_end_0
     .catch Landroid/os/RemoteException; {:try_start_0 .. :try_end_0} :catch_0
 
@@ -3779,7 +3779,7 @@
 
     .line 620
     .local v0, "adapter":Landroid/bluetooth/BluetoothAdapter;
-    iget-object v1, p0, Lcom/android/settings/DevelopmentSettings;->mBtHciSnoopLog:Landroid/preference/SwitchPreference;
+    iget-object v1, p0, Lcom/android/settings_ext/DevelopmentSettings;->mBtHciSnoopLog:Landroid/preference/SwitchPreference;
 
     invoke-virtual {v1}, Landroid/preference/SwitchPreference;->isChecked()Z
 
@@ -3788,7 +3788,7 @@
     invoke-virtual {v0, v1}, Landroid/bluetooth/BluetoothAdapter;->configHciSnoopLog(Z)Z
 
     .line 621
-    invoke-virtual {p0}, Lcom/android/settings/DevelopmentSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/DevelopmentSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v1
 
@@ -3798,7 +3798,7 @@
 
     const-string v3, "bluetooth_hci_log"
 
-    iget-object v1, p0, Lcom/android/settings/DevelopmentSettings;->mBtHciSnoopLog:Landroid/preference/SwitchPreference;
+    iget-object v1, p0, Lcom/android/settings_ext/DevelopmentSettings;->mBtHciSnoopLog:Landroid/preference/SwitchPreference;
 
     invoke-virtual {v1}, Landroid/preference/SwitchPreference;->isChecked()Z
 
@@ -3826,7 +3826,7 @@
 
     .prologue
     .line 1141
-    iget-object v2, p0, Lcom/android/settings/DevelopmentSettings;->mShowCpuUsage:Landroid/preference/SwitchPreference;
+    iget-object v2, p0, Lcom/android/settings_ext/DevelopmentSettings;->mShowCpuUsage:Landroid/preference/SwitchPreference;
 
     invoke-virtual {v2}, Landroid/preference/SwitchPreference;->isChecked()Z
 
@@ -3834,7 +3834,7 @@
 
     .line 1142
     .local v1, "value":Z
-    invoke-virtual {p0}, Lcom/android/settings/DevelopmentSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/DevelopmentSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v2
 
@@ -3869,7 +3869,7 @@
     if-eqz v1, :cond_1
 
     .line 1147
-    invoke-virtual {p0}, Lcom/android/settings/DevelopmentSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/DevelopmentSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v2
 
@@ -3889,7 +3889,7 @@
     .line 1149
     .restart local v0    # "service":Landroid/content/Intent;
     :cond_1
-    invoke-virtual {p0}, Lcom/android/settings/DevelopmentSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/DevelopmentSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v2
 
@@ -3914,10 +3914,10 @@
     invoke-static {v1, v0}, Landroid/os/SystemProperties;->set(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 942
-    invoke-virtual {p0}, Lcom/android/settings/DevelopmentSettings;->pokeSystemProperties()V
+    invoke-virtual {p0}, Lcom/android/settings_ext/DevelopmentSettings;->pokeSystemProperties()V
 
     .line 943
-    invoke-direct {p0}, Lcom/android/settings/DevelopmentSettings;->updateDebugHwOverdrawOptions()V
+    invoke-direct {p0}, Lcom/android/settings_ext/DevelopmentSettings;->updateDebugHwOverdrawOptions()V
 
     .line 944
     return-void
@@ -3938,7 +3938,7 @@
     .line 952
     const-string v1, "debug.layout"
 
-    iget-object v0, p0, Lcom/android/settings/DevelopmentSettings;->mDebugLayout:Landroid/preference/SwitchPreference;
+    iget-object v0, p0, Lcom/android/settings_ext/DevelopmentSettings;->mDebugLayout:Landroid/preference/SwitchPreference;
 
     invoke-virtual {v0}, Landroid/preference/SwitchPreference;->isChecked()Z
 
@@ -3952,7 +3952,7 @@
     invoke-static {v1, v0}, Landroid/os/SystemProperties;->set(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 954
-    invoke-virtual {p0}, Lcom/android/settings/DevelopmentSettings;->pokeSystemProperties()V
+    invoke-virtual {p0}, Lcom/android/settings_ext/DevelopmentSettings;->pokeSystemProperties()V
 
     .line 955
     return-void
@@ -3974,9 +3974,9 @@
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/android/settings/DevelopmentSettings;->mDebugApp:Ljava/lang/String;
+    iget-object v1, p0, Lcom/android/settings_ext/DevelopmentSettings;->mDebugApp:Ljava/lang/String;
 
-    iget-object v2, p0, Lcom/android/settings/DevelopmentSettings;->mWaitForDebugger:Landroid/preference/SwitchPreference;
+    iget-object v2, p0, Lcom/android/settings_ext/DevelopmentSettings;->mWaitForDebugger:Landroid/preference/SwitchPreference;
 
     invoke-virtual {v2}, Landroid/preference/SwitchPreference;->isChecked()Z
 
@@ -4029,7 +4029,7 @@
     invoke-virtual {v0, v3}, Landroid/os/Parcel;->writeInterfaceToken(Ljava/lang/String;)V
 
     .line 819
-    iget-object v3, p0, Lcom/android/settings/DevelopmentSettings;->mDisableOverlays:Landroid/preference/SwitchPreference;
+    iget-object v3, p0, Lcom/android/settings_ext/DevelopmentSettings;->mDisableOverlays:Landroid/preference/SwitchPreference;
 
     invoke-virtual {v3}, Landroid/preference/SwitchPreference;->isChecked()Z
 
@@ -4057,7 +4057,7 @@
     invoke-virtual {v0}, Landroid/os/Parcel;->recycle()V
 
     .line 824
-    invoke-direct {p0}, Lcom/android/settings/DevelopmentSettings;->updateFlingerOptions()V
+    invoke-direct {p0}, Lcom/android/settings_ext/DevelopmentSettings;->updateFlingerOptions()V
     :try_end_0
     .catch Landroid/os/RemoteException; {:try_start_0 .. :try_end_0} :catch_0
 
@@ -4081,7 +4081,7 @@
 
     .prologue
     .line 1040
-    iget-object v1, p0, Lcom/android/settings/DevelopmentSettings;->mForceRtlLayout:Landroid/preference/SwitchPreference;
+    iget-object v1, p0, Lcom/android/settings_ext/DevelopmentSettings;->mForceRtlLayout:Landroid/preference/SwitchPreference;
 
     invoke-virtual {v1}, Landroid/preference/SwitchPreference;->isChecked()Z
 
@@ -4089,7 +4089,7 @@
 
     .line 1041
     .local v0, "value":Z
-    invoke-virtual {p0}, Lcom/android/settings/DevelopmentSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/DevelopmentSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v1
 
@@ -4117,7 +4117,7 @@
     invoke-static {v2, v1}, Landroid/os/SystemProperties;->set(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 1044
-    invoke-virtual {p0}, Lcom/android/settings/DevelopmentSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/DevelopmentSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v1
 
@@ -4131,7 +4131,7 @@
 
     iget-object v1, v1, Landroid/content/res/Configuration;->locale:Ljava/util/Locale;
 
-    invoke-static {v1}, Lcom/android/settings/LocalePicker;->updateLocale(Ljava/util/Locale;)V
+    invoke-static {v1}, Lcom/android/settings_ext/LocalePicker;->updateLocale(Ljava/util/Locale;)V
 
     .line 1045
     return-void
@@ -4156,7 +4156,7 @@
     .line 835
     const-string v1, "persist.sys.ui.hw"
 
-    iget-object v0, p0, Lcom/android/settings/DevelopmentSettings;->mForceHardwareUi:Landroid/preference/SwitchPreference;
+    iget-object v0, p0, Lcom/android/settings_ext/DevelopmentSettings;->mForceHardwareUi:Landroid/preference/SwitchPreference;
 
     invoke-virtual {v0}, Landroid/preference/SwitchPreference;->isChecked()Z
 
@@ -4170,7 +4170,7 @@
     invoke-static {v1, v0}, Landroid/os/SystemProperties;->set(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 836
-    invoke-virtual {p0}, Lcom/android/settings/DevelopmentSettings;->pokeSystemProperties()V
+    invoke-virtual {p0}, Lcom/android/settings_ext/DevelopmentSettings;->pokeSystemProperties()V
 
     .line 837
     return-void
@@ -4192,7 +4192,7 @@
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/android/settings/DevelopmentSettings;->mImmediatelyDestroyActivities:Landroid/preference/SwitchPreference;
+    iget-object v1, p0, Lcom/android/settings_ext/DevelopmentSettings;->mImmediatelyDestroyActivities:Landroid/preference/SwitchPreference;
 
     invoke-virtual {v1}, Landroid/preference/SwitchPreference;->isChecked()Z
 
@@ -4230,7 +4230,7 @@
     if-eqz v0, :cond_0
 
     .line 1119
-    sput-object v0, Lcom/android/settings/DevelopmentSettings;->DEFAULT_LOG_RING_BUFFER_SIZE_IN_BYTES:Ljava/lang/String;
+    sput-object v0, Lcom/android/settings_ext/DevelopmentSettings;->DEFAULT_LOG_RING_BUFFER_SIZE_IN_BYTES:Ljava/lang/String;
 
     .line 1121
     :cond_0
@@ -4248,7 +4248,7 @@
     invoke-static {v4, v3}, Landroid/os/SystemProperties;->set(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 1124
-    invoke-virtual {p0}, Lcom/android/settings/DevelopmentSettings;->pokeSystemProperties()V
+    invoke-virtual {p0}, Lcom/android/settings_ext/DevelopmentSettings;->pokeSystemProperties()V
 
     .line 1126
     :try_start_0
@@ -4310,7 +4310,7 @@
     .line 1132
     .end local v2    # "p":Ljava/lang/Process;
     :goto_1
-    invoke-direct {p0}, Lcom/android/settings/DevelopmentSettings;->updateLogdSizeValues()V
+    invoke-direct {p0}, Lcom/android/settings_ext/DevelopmentSettings;->updateLogdSizeValues()V
 
     .line 1133
     return-void
@@ -4318,7 +4318,7 @@
     .line 1121
     .end local v3    # "size":Ljava/lang/String;
     :cond_1
-    sget-object v3, Lcom/android/settings/DevelopmentSettings;->DEFAULT_LOG_RING_BUFFER_SIZE_IN_BYTES:Ljava/lang/String;
+    sget-object v3, Lcom/android/settings_ext/DevelopmentSettings;->DEFAULT_LOG_RING_BUFFER_SIZE_IN_BYTES:Ljava/lang/String;
 
     goto :goto_0
 
@@ -4345,7 +4345,7 @@
     .line 844
     const-string v1, "debug.egl.force_msaa"
 
-    iget-object v0, p0, Lcom/android/settings/DevelopmentSettings;->mForceMsaa:Landroid/preference/SwitchPreference;
+    iget-object v0, p0, Lcom/android/settings_ext/DevelopmentSettings;->mForceMsaa:Landroid/preference/SwitchPreference;
 
     invoke-virtual {v0}, Landroid/preference/SwitchPreference;->isChecked()Z
 
@@ -4359,7 +4359,7 @@
     invoke-static {v1, v0}, Landroid/os/SystemProperties;->set(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 845
-    invoke-virtual {p0}, Lcom/android/settings/DevelopmentSettings;->pokeSystemProperties()V
+    invoke-virtual {p0}, Lcom/android/settings_ext/DevelopmentSettings;->pokeSystemProperties()V
 
     .line 846
     return-void
@@ -4387,10 +4387,10 @@
     invoke-static {v1, v0}, Landroid/os/SystemProperties;->set(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 1247
-    invoke-virtual {p0}, Lcom/android/settings/DevelopmentSettings;->pokeSystemProperties()V
+    invoke-virtual {p0}, Lcom/android/settings_ext/DevelopmentSettings;->pokeSystemProperties()V
 
     .line 1248
-    invoke-direct {p0}, Lcom/android/settings/DevelopmentSettings;->updateOpenGLTracesOptions()V
+    invoke-direct {p0}, Lcom/android/settings_ext/DevelopmentSettings;->updateOpenGLTracesOptions()V
 
     .line 1249
     return-void
@@ -4410,7 +4410,7 @@
 
     .prologue
     .line 1222
-    invoke-virtual {p0}, Lcom/android/settings/DevelopmentSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/DevelopmentSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
@@ -4426,7 +4426,7 @@
     invoke-static {v0, v1, p1}, Landroid/provider/Settings$Global;->putString(Landroid/content/ContentResolver;Ljava/lang/String;Ljava/lang/String;)Z
 
     .line 1224
-    invoke-direct {p0}, Lcom/android/settings/DevelopmentSettings;->updateOverlayDisplayDevicesOptions()V
+    invoke-direct {p0}, Lcom/android/settings_ext/DevelopmentSettings;->updateOverlayDisplayDevicesOptions()V
 
     .line 1225
     return-void
@@ -4437,7 +4437,7 @@
 
     .prologue
     .line 751
-    invoke-virtual {p0}, Lcom/android/settings/DevelopmentSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/DevelopmentSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
@@ -4447,7 +4447,7 @@
 
     const-string v2, "pointer_location"
 
-    iget-object v0, p0, Lcom/android/settings/DevelopmentSettings;->mPointerLocation:Landroid/preference/SwitchPreference;
+    iget-object v0, p0, Lcom/android/settings_ext/DevelopmentSettings;->mPointerLocation:Landroid/preference/SwitchPreference;
 
     invoke-virtual {v0}, Landroid/preference/SwitchPreference;->isChecked()Z
 
@@ -4475,7 +4475,7 @@
 
     .prologue
     .line 1282
-    invoke-virtual {p0}, Lcom/android/settings/DevelopmentSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/DevelopmentSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
@@ -4485,7 +4485,7 @@
 
     const-string v2, "anr_show_background"
 
-    iget-object v0, p0, Lcom/android/settings/DevelopmentSettings;->mShowAllANRs:Landroid/preference/SwitchPreference;
+    iget-object v0, p0, Lcom/android/settings_ext/DevelopmentSettings;->mShowAllANRs:Landroid/preference/SwitchPreference;
 
     invoke-virtual {v0}, Landroid/preference/SwitchPreference;->isChecked()Z
 
@@ -4515,7 +4515,7 @@
     .line 916
     const-string v1, "debug.hwui.show_layers_updates"
 
-    iget-object v0, p0, Lcom/android/settings/DevelopmentSettings;->mShowHwLayersUpdates:Landroid/preference/SwitchPreference;
+    iget-object v0, p0, Lcom/android/settings_ext/DevelopmentSettings;->mShowHwLayersUpdates:Landroid/preference/SwitchPreference;
 
     invoke-virtual {v0}, Landroid/preference/SwitchPreference;->isChecked()Z
 
@@ -4529,7 +4529,7 @@
     invoke-static {v1, v0}, Landroid/os/SystemProperties;->set(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 918
-    invoke-virtual {p0}, Lcom/android/settings/DevelopmentSettings;->pokeSystemProperties()V
+    invoke-virtual {p0}, Lcom/android/settings_ext/DevelopmentSettings;->pokeSystemProperties()V
 
     .line 919
     return-void
@@ -4548,7 +4548,7 @@
     .line 905
     const-string v1, "debug.hwui.show_dirty_regions"
 
-    iget-object v0, p0, Lcom/android/settings/DevelopmentSettings;->mShowHwScreenUpdates:Landroid/preference/SwitchPreference;
+    iget-object v0, p0, Lcom/android/settings_ext/DevelopmentSettings;->mShowHwScreenUpdates:Landroid/preference/SwitchPreference;
 
     invoke-virtual {v0}, Landroid/preference/SwitchPreference;->isChecked()Z
 
@@ -4562,7 +4562,7 @@
     invoke-static {v1, v0}, Landroid/os/SystemProperties;->set(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 907
-    invoke-virtual {p0}, Lcom/android/settings/DevelopmentSettings;->pokeSystemProperties()V
+    invoke-virtual {p0}, Lcom/android/settings_ext/DevelopmentSettings;->pokeSystemProperties()V
 
     .line 908
     return-void
@@ -4590,10 +4590,10 @@
     invoke-static {v1, v0}, Landroid/os/SystemProperties;->set(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 895
-    invoke-virtual {p0}, Lcom/android/settings/DevelopmentSettings;->pokeSystemProperties()V
+    invoke-virtual {p0}, Lcom/android/settings_ext/DevelopmentSettings;->pokeSystemProperties()V
 
     .line 896
-    invoke-direct {p0}, Lcom/android/settings/DevelopmentSettings;->updateShowNonRectClipOptions()V
+    invoke-direct {p0}, Lcom/android/settings_ext/DevelopmentSettings;->updateShowNonRectClipOptions()V
 
     .line 897
     return-void
@@ -4612,7 +4612,7 @@
 
     .prologue
     .line 761
-    invoke-virtual {p0}, Lcom/android/settings/DevelopmentSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/DevelopmentSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
@@ -4622,7 +4622,7 @@
 
     const-string v2, "show_touches"
 
-    iget-object v0, p0, Lcom/android/settings/DevelopmentSettings;->mShowTouches:Landroid/preference/SwitchPreference;
+    iget-object v0, p0, Lcom/android/settings_ext/DevelopmentSettings;->mShowTouches:Landroid/preference/SwitchPreference;
 
     invoke-virtual {v0}, Landroid/preference/SwitchPreference;->isChecked()Z
 
@@ -4675,7 +4675,7 @@
     invoke-virtual {v0, v3}, Landroid/os/Parcel;->writeInterfaceToken(Ljava/lang/String;)V
 
     .line 802
-    iget-object v3, p0, Lcom/android/settings/DevelopmentSettings;->mShowScreenUpdates:Landroid/preference/SwitchPreference;
+    iget-object v3, p0, Lcom/android/settings_ext/DevelopmentSettings;->mShowScreenUpdates:Landroid/preference/SwitchPreference;
 
     invoke-virtual {v3}, Landroid/preference/SwitchPreference;->isChecked()Z
 
@@ -4703,7 +4703,7 @@
     invoke-virtual {v0}, Landroid/os/Parcel;->recycle()V
 
     .line 807
-    invoke-direct {p0}, Lcom/android/settings/DevelopmentSettings;->updateFlingerOptions()V
+    invoke-direct {p0}, Lcom/android/settings_ext/DevelopmentSettings;->updateFlingerOptions()V
     :try_end_0
     .catch Landroid/os/RemoteException; {:try_start_0 .. :try_end_0} :catch_0
 
@@ -4728,7 +4728,7 @@
 
     .prologue
     .line 1002
-    invoke-virtual {p0}, Lcom/android/settings/DevelopmentSettings;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/settings_ext/DevelopmentSettings;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v0
 
@@ -4779,9 +4779,9 @@
     .prologue
     .line 740
     :try_start_0
-    iget-object v1, p0, Lcom/android/settings/DevelopmentSettings;->mWindowManager:Landroid/view/IWindowManager;
+    iget-object v1, p0, Lcom/android/settings_ext/DevelopmentSettings;->mWindowManager:Landroid/view/IWindowManager;
 
-    iget-object v0, p0, Lcom/android/settings/DevelopmentSettings;->mStrictMode:Landroid/preference/SwitchPreference;
+    iget-object v0, p0, Lcom/android/settings_ext/DevelopmentSettings;->mStrictMode:Landroid/preference/SwitchPreference;
 
     invoke-virtual {v0}, Landroid/preference/SwitchPreference;->isChecked()Z
 
@@ -4829,10 +4829,10 @@
     invoke-static {v1, v0}, Landroid/os/SystemProperties;->set(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 869
-    invoke-virtual {p0}, Lcom/android/settings/DevelopmentSettings;->pokeSystemProperties()V
+    invoke-virtual {p0}, Lcom/android/settings_ext/DevelopmentSettings;->pokeSystemProperties()V
 
     .line 870
-    invoke-direct {p0}, Lcom/android/settings/DevelopmentSettings;->updateTrackFrameTimeOptions()V
+    invoke-direct {p0}, Lcom/android/settings_ext/DevelopmentSettings;->updateTrackFrameTimeOptions()V
 
     .line 871
     return-void
@@ -4851,13 +4851,13 @@
 
     .prologue
     .line 1029
-    invoke-virtual {p0}, Lcom/android/settings/DevelopmentSettings;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/settings_ext/DevelopmentSettings;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v1
 
     const-string v2, "usb_audio_automatic_routing_disabled"
 
-    iget-object v0, p0, Lcom/android/settings/DevelopmentSettings;->mUSBAudio:Landroid/preference/SwitchPreference;
+    iget-object v0, p0, Lcom/android/settings_ext/DevelopmentSettings;->mUSBAudio:Landroid/preference/SwitchPreference;
 
     invoke-virtual {v0}, Landroid/preference/SwitchPreference;->isChecked()Z
 
@@ -4887,7 +4887,7 @@
     .line 1018
     const-string v1, "persist.sys.media.use-awesome"
 
-    iget-object v0, p0, Lcom/android/settings/DevelopmentSettings;->mUseAwesomePlayer:Landroid/preference/SwitchPreference;
+    iget-object v0, p0, Lcom/android/settings_ext/DevelopmentSettings;->mUseAwesomePlayer:Landroid/preference/SwitchPreference;
 
     invoke-virtual {v0}, Landroid/preference/SwitchPreference;->isChecked()Z
 
@@ -4901,7 +4901,7 @@
     invoke-static {v1, v0}, Landroid/os/SystemProperties;->set(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 1020
-    invoke-virtual {p0}, Lcom/android/settings/DevelopmentSettings;->pokeSystemProperties()V
+    invoke-virtual {p0}, Lcom/android/settings_ext/DevelopmentSettings;->pokeSystemProperties()V
 
     .line 1021
     return-void
@@ -4918,7 +4918,7 @@
 
     .prologue
     .line 673
-    invoke-virtual {p0}, Lcom/android/settings/DevelopmentSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/DevelopmentSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
@@ -4928,7 +4928,7 @@
 
     const-string v2, "verifier_verify_adb_installs"
 
-    iget-object v0, p0, Lcom/android/settings/DevelopmentSettings;->mVerifyAppsOverUsb:Landroid/preference/SwitchPreference;
+    iget-object v0, p0, Lcom/android/settings_ext/DevelopmentSettings;->mVerifyAppsOverUsb:Landroid/preference/SwitchPreference;
 
     invoke-virtual {v0}, Landroid/preference/SwitchPreference;->isChecked()Z
 
@@ -4956,9 +4956,9 @@
 
     .prologue
     .line 1074
-    iget-object v1, p0, Lcom/android/settings/DevelopmentSettings;->mWifiManager:Landroid/net/wifi/WifiManager;
+    iget-object v1, p0, Lcom/android/settings_ext/DevelopmentSettings;->mWifiManager:Landroid/net/wifi/WifiManager;
 
-    iget-object v0, p0, Lcom/android/settings/DevelopmentSettings;->mWifiAggressiveHandover:Landroid/preference/SwitchPreference;
+    iget-object v0, p0, Lcom/android/settings_ext/DevelopmentSettings;->mWifiAggressiveHandover:Landroid/preference/SwitchPreference;
 
     invoke-virtual {v0}, Landroid/preference/SwitchPreference;->isChecked()Z
 
@@ -4986,9 +4986,9 @@
 
     .prologue
     .line 1083
-    iget-object v1, p0, Lcom/android/settings/DevelopmentSettings;->mWifiManager:Landroid/net/wifi/WifiManager;
+    iget-object v1, p0, Lcom/android/settings_ext/DevelopmentSettings;->mWifiManager:Landroid/net/wifi/WifiManager;
 
-    iget-object v0, p0, Lcom/android/settings/DevelopmentSettings;->mWifiAllowScansWithTraffic:Landroid/preference/SwitchPreference;
+    iget-object v0, p0, Lcom/android/settings_ext/DevelopmentSettings;->mWifiAllowScansWithTraffic:Landroid/preference/SwitchPreference;
 
     invoke-virtual {v0}, Landroid/preference/SwitchPreference;->isChecked()Z
 
@@ -5016,7 +5016,7 @@
 
     .prologue
     .line 1054
-    invoke-virtual {p0}, Lcom/android/settings/DevelopmentSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/DevelopmentSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
@@ -5026,7 +5026,7 @@
 
     const-string v2, "wifi_display_certification_on"
 
-    iget-object v0, p0, Lcom/android/settings/DevelopmentSettings;->mWifiDisplayCertification:Landroid/preference/SwitchPreference;
+    iget-object v0, p0, Lcom/android/settings_ext/DevelopmentSettings;->mWifiDisplayCertification:Landroid/preference/SwitchPreference;
 
     invoke-virtual {v0}, Landroid/preference/SwitchPreference;->isChecked()Z
 
@@ -5054,9 +5054,9 @@
 
     .prologue
     .line 1065
-    iget-object v1, p0, Lcom/android/settings/DevelopmentSettings;->mWifiManager:Landroid/net/wifi/WifiManager;
+    iget-object v1, p0, Lcom/android/settings_ext/DevelopmentSettings;->mWifiManager:Landroid/net/wifi/WifiManager;
 
-    iget-object v0, p0, Lcom/android/settings/DevelopmentSettings;->mWifiVerboseLogging:Landroid/preference/SwitchPreference;
+    iget-object v0, p0, Lcom/android/settings_ext/DevelopmentSettings;->mWifiVerboseLogging:Landroid/preference/SwitchPreference;
 
     invoke-virtual {v0}, Landroid/preference/SwitchPreference;->isChecked()Z
 
@@ -5087,34 +5087,34 @@
 
     .prologue
     .line 408
-    invoke-super {p0, p1}, Lcom/android/settings/SettingsPreferenceFragment;->onActivityCreated(Landroid/os/Bundle;)V
+    invoke-super {p0, p1}, Lcom/android/settings_ext/SettingsPreferenceFragment;->onActivityCreated(Landroid/os/Bundle;)V
 
     .line 410
-    invoke-virtual {p0}, Lcom/android/settings/DevelopmentSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/DevelopmentSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
-    check-cast v0, Lcom/android/settings/SettingsActivity;
+    check-cast v0, Lcom/android/settings_ext/SettingsActivity;
 
     .line 412
-    .local v0, "activity":Lcom/android/settings/SettingsActivity;
-    invoke-virtual {v0}, Lcom/android/settings/SettingsActivity;->getSwitchBar()Lcom/android/settings/widget/SwitchBar;
+    .local v0, "activity":Lcom/android/settings_ext/SettingsActivity;
+    invoke-virtual {v0}, Lcom/android/settings_ext/SettingsActivity;->getSwitchBar()Lcom/android/settings_ext/widget/SwitchBar;
 
     move-result-object v1
 
-    iput-object v1, p0, Lcom/android/settings/DevelopmentSettings;->mSwitchBar:Lcom/android/settings/widget/SwitchBar;
+    iput-object v1, p0, Lcom/android/settings_ext/DevelopmentSettings;->mSwitchBar:Lcom/android/settings_ext/widget/SwitchBar;
 
     .line 413
-    iget-boolean v1, p0, Lcom/android/settings/DevelopmentSettings;->mUnavailable:Z
+    iget-boolean v1, p0, Lcom/android/settings_ext/DevelopmentSettings;->mUnavailable:Z
 
     if-eqz v1, :cond_0
 
     .line 414
-    iget-object v1, p0, Lcom/android/settings/DevelopmentSettings;->mSwitchBar:Lcom/android/settings/widget/SwitchBar;
+    iget-object v1, p0, Lcom/android/settings_ext/DevelopmentSettings;->mSwitchBar:Lcom/android/settings_ext/widget/SwitchBar;
 
     const/4 v2, 0x0
 
-    invoke-virtual {v1, v2}, Lcom/android/settings/widget/SwitchBar;->setEnabled(Z)V
+    invoke-virtual {v1, v2}, Lcom/android/settings_ext/widget/SwitchBar;->setEnabled(Z)V
 
     .line 419
     :goto_0
@@ -5122,9 +5122,9 @@
 
     .line 418
     :cond_0
-    iget-object v1, p0, Lcom/android/settings/DevelopmentSettings;->mSwitchBar:Lcom/android/settings/widget/SwitchBar;
+    iget-object v1, p0, Lcom/android/settings_ext/DevelopmentSettings;->mSwitchBar:Lcom/android/settings_ext/widget/SwitchBar;
 
-    invoke-virtual {v1, p0}, Lcom/android/settings/widget/SwitchBar;->addOnSwitchChangeListener(Lcom/android/settings/widget/SwitchBar$OnSwitchChangeListener;)V
+    invoke-virtual {v1, p0}, Lcom/android/settings_ext/widget/SwitchBar;->addOnSwitchChangeListener(Lcom/android/settings_ext/widget/SwitchBar$OnSwitchChangeListener;)V
 
     goto :goto_0
 .end method
@@ -5151,13 +5151,13 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/DevelopmentSettings;->mDebugApp:Ljava/lang/String;
+    iput-object v0, p0, Lcom/android/settings_ext/DevelopmentSettings;->mDebugApp:Ljava/lang/String;
 
     .line 1342
-    invoke-direct {p0}, Lcom/android/settings/DevelopmentSettings;->writeDebuggerOptions()V
+    invoke-direct {p0}, Lcom/android/settings_ext/DevelopmentSettings;->writeDebuggerOptions()V
 
     .line 1343
-    invoke-direct {p0}, Lcom/android/settings/DevelopmentSettings;->updateDebuggerOptions()V
+    invoke-direct {p0}, Lcom/android/settings_ext/DevelopmentSettings;->updateDebuggerOptions()V
 
     .line 1356
     :cond_0
@@ -5172,7 +5172,7 @@
     if-ne p2, v1, :cond_0
 
     .line 1347
-    iget-object v0, p0, Lcom/android/settings/DevelopmentSettings;->mEnableOemUnlock:Landroid/preference/SwitchPreference;
+    iget-object v0, p0, Lcom/android/settings_ext/DevelopmentSettings;->mEnableOemUnlock:Landroid/preference/SwitchPreference;
 
     invoke-virtual {v0}, Landroid/preference/SwitchPreference;->isChecked()Z
 
@@ -5181,25 +5181,25 @@
     if-eqz v0, :cond_2
 
     .line 1348
-    invoke-direct {p0}, Lcom/android/settings/DevelopmentSettings;->confirmEnableOemUnlock()V
+    invoke-direct {p0}, Lcom/android/settings_ext/DevelopmentSettings;->confirmEnableOemUnlock()V
 
     goto :goto_0
 
     .line 1350
     :cond_2
-    invoke-virtual {p0}, Lcom/android/settings/DevelopmentSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/DevelopmentSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
     const/4 v1, 0x0
 
-    invoke-static {v0, v1}, Lcom/android/settings/Utils;->setOemUnlockEnabled(Landroid/content/Context;Z)V
+    invoke-static {v0, v1}, Lcom/android/settings_ext/Utils;->setOemUnlockEnabled(Landroid/content/Context;Z)V
 
     goto :goto_0
 
     .line 1354
     :cond_3
-    invoke-super {p0, p1, p2, p3}, Lcom/android/settings/SettingsPreferenceFragment;->onActivityResult(IILandroid/content/Intent;)V
+    invoke-super {p0, p1, p2, p3}, Lcom/android/settings_ext/SettingsPreferenceFragment;->onActivityResult(IILandroid/content/Intent;)V
 
     goto :goto_0
 .end method
@@ -5217,7 +5217,7 @@
     const/4 v5, 0x1
 
     .line 1541
-    iget-object v3, p0, Lcom/android/settings/DevelopmentSettings;->mAdbDialog:Landroid/app/Dialog;
+    iget-object v3, p0, Lcom/android/settings_ext/DevelopmentSettings;->mAdbDialog:Landroid/app/Dialog;
 
     if-ne p1, v3, :cond_2
 
@@ -5225,10 +5225,10 @@
     if-ne p2, v4, :cond_1
 
     .line 1543
-    iput-boolean v5, p0, Lcom/android/settings/DevelopmentSettings;->mDialogClicked:Z
+    iput-boolean v5, p0, Lcom/android/settings_ext/DevelopmentSettings;->mDialogClicked:Z
 
     .line 1544
-    invoke-virtual {p0}, Lcom/android/settings/DevelopmentSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/DevelopmentSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v3
 
@@ -5241,15 +5241,15 @@
     invoke-static {v3, v4, v5}, Landroid/provider/Settings$Global;->putInt(Landroid/content/ContentResolver;Ljava/lang/String;I)Z
 
     .line 1546
-    iget-object v3, p0, Lcom/android/settings/DevelopmentSettings;->mVerifyAppsOverUsb:Landroid/preference/SwitchPreference;
+    iget-object v3, p0, Lcom/android/settings_ext/DevelopmentSettings;->mVerifyAppsOverUsb:Landroid/preference/SwitchPreference;
 
     invoke-virtual {v3, v5}, Landroid/preference/SwitchPreference;->setEnabled(Z)V
 
     .line 1547
-    invoke-direct {p0}, Lcom/android/settings/DevelopmentSettings;->updateVerifyAppsOverUsbOptions()V
+    invoke-direct {p0}, Lcom/android/settings_ext/DevelopmentSettings;->updateVerifyAppsOverUsbOptions()V
 
     .line 1548
-    invoke-direct {p0}, Lcom/android/settings/DevelopmentSettings;->updateBugreportOptions()V
+    invoke-direct {p0}, Lcom/android/settings_ext/DevelopmentSettings;->updateBugreportOptions()V
 
     .line 1575
     :cond_0
@@ -5258,7 +5258,7 @@
 
     .line 1551
     :cond_1
-    iget-object v3, p0, Lcom/android/settings/DevelopmentSettings;->mEnableAdb:Landroid/preference/SwitchPreference;
+    iget-object v3, p0, Lcom/android/settings_ext/DevelopmentSettings;->mEnableAdb:Landroid/preference/SwitchPreference;
 
     invoke-virtual {v3, v6}, Landroid/preference/SwitchPreference;->setChecked(Z)V
 
@@ -5266,7 +5266,7 @@
 
     .line 1553
     :cond_2
-    iget-object v3, p0, Lcom/android/settings/DevelopmentSettings;->mAdbKeysDialog:Landroid/app/Dialog;
+    iget-object v3, p0, Lcom/android/settings_ext/DevelopmentSettings;->mAdbKeysDialog:Landroid/app/Dialog;
 
     if-ne p1, v3, :cond_3
 
@@ -5314,7 +5314,7 @@
     .line 1563
     .end local v1    # "e":Landroid/os/RemoteException;
     :cond_3
-    iget-object v3, p0, Lcom/android/settings/DevelopmentSettings;->mEnableDialog:Landroid/app/Dialog;
+    iget-object v3, p0, Lcom/android/settings_ext/DevelopmentSettings;->mEnableDialog:Landroid/app/Dialog;
 
     if-ne p1, v3, :cond_0
 
@@ -5322,10 +5322,10 @@
     if-ne p2, v4, :cond_4
 
     .line 1565
-    iput-boolean v5, p0, Lcom/android/settings/DevelopmentSettings;->mDialogClicked:Z
+    iput-boolean v5, p0, Lcom/android/settings_ext/DevelopmentSettings;->mDialogClicked:Z
 
     .line 1566
-    invoke-virtual {p0}, Lcom/android/settings/DevelopmentSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/DevelopmentSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v3
 
@@ -5338,20 +5338,20 @@
     invoke-static {v3, v4, v5}, Landroid/provider/Settings$Global;->putInt(Landroid/content/ContentResolver;Ljava/lang/String;I)Z
 
     .line 1568
-    iput-boolean v5, p0, Lcom/android/settings/DevelopmentSettings;->mLastEnabledState:Z
+    iput-boolean v5, p0, Lcom/android/settings_ext/DevelopmentSettings;->mLastEnabledState:Z
 
     .line 1569
-    iget-boolean v3, p0, Lcom/android/settings/DevelopmentSettings;->mLastEnabledState:Z
+    iget-boolean v3, p0, Lcom/android/settings_ext/DevelopmentSettings;->mLastEnabledState:Z
 
-    invoke-direct {p0, v3}, Lcom/android/settings/DevelopmentSettings;->setPrefsEnabledState(Z)V
+    invoke-direct {p0, v3}, Lcom/android/settings_ext/DevelopmentSettings;->setPrefsEnabledState(Z)V
 
     goto :goto_0
 
     .line 1572
     :cond_4
-    iget-object v3, p0, Lcom/android/settings/DevelopmentSettings;->mSwitchBar:Lcom/android/settings/widget/SwitchBar;
+    iget-object v3, p0, Lcom/android/settings_ext/DevelopmentSettings;->mSwitchBar:Lcom/android/settings_ext/widget/SwitchBar;
 
-    invoke-virtual {v3, v6}, Lcom/android/settings/widget/SwitchBar;->setChecked(Z)V
+    invoke-virtual {v3, v6}, Lcom/android/settings_ext/widget/SwitchBar;->setChecked(Z)V
 
     goto :goto_0
 .end method
@@ -5366,7 +5366,7 @@
     const/4 v4, 0x0
 
     .line 254
-    invoke-super {p0, p1}, Lcom/android/settings/SettingsPreferenceFragment;->onCreate(Landroid/os/Bundle;)V
+    invoke-super {p0, p1}, Lcom/android/settings_ext/SettingsPreferenceFragment;->onCreate(Landroid/os/Bundle;)V
 
     .line 256
     const-string v2, "window"
@@ -5379,7 +5379,7 @@
 
     move-result-object v2
 
-    iput-object v2, p0, Lcom/android/settings/DevelopmentSettings;->mWindowManager:Landroid/view/IWindowManager;
+    iput-object v2, p0, Lcom/android/settings_ext/DevelopmentSettings;->mWindowManager:Landroid/view/IWindowManager;
 
     .line 257
     const-string v2, "backup"
@@ -5392,10 +5392,10 @@
 
     move-result-object v2
 
-    iput-object v2, p0, Lcom/android/settings/DevelopmentSettings;->mBackupManager:Landroid/app/backup/IBackupManager;
+    iput-object v2, p0, Lcom/android/settings_ext/DevelopmentSettings;->mBackupManager:Landroid/app/backup/IBackupManager;
 
     .line 259
-    invoke-virtual {p0}, Lcom/android/settings/DevelopmentSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/DevelopmentSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v2
 
@@ -5407,32 +5407,32 @@
 
     check-cast v2, Landroid/app/admin/DevicePolicyManager;
 
-    iput-object v2, p0, Lcom/android/settings/DevelopmentSettings;->mDpm:Landroid/app/admin/DevicePolicyManager;
+    iput-object v2, p0, Lcom/android/settings_ext/DevelopmentSettings;->mDpm:Landroid/app/admin/DevicePolicyManager;
 
     .line 260
     const-string v2, "user"
 
-    invoke-virtual {p0, v2}, Lcom/android/settings/DevelopmentSettings;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
+    invoke-virtual {p0, v2}, Lcom/android/settings_ext/DevelopmentSettings;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object v2
 
     check-cast v2, Landroid/os/UserManager;
 
-    iput-object v2, p0, Lcom/android/settings/DevelopmentSettings;->mUm:Landroid/os/UserManager;
+    iput-object v2, p0, Lcom/android/settings_ext/DevelopmentSettings;->mUm:Landroid/os/UserManager;
 
     .line 262
     const-string v2, "wifi"
 
-    invoke-virtual {p0, v2}, Lcom/android/settings/DevelopmentSettings;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
+    invoke-virtual {p0, v2}, Lcom/android/settings_ext/DevelopmentSettings;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object v2
 
     check-cast v2, Landroid/net/wifi/WifiManager;
 
-    iput-object v2, p0, Lcom/android/settings/DevelopmentSettings;->mWifiManager:Landroid/net/wifi/WifiManager;
+    iput-object v2, p0, Lcom/android/settings_ext/DevelopmentSettings;->mWifiManager:Landroid/net/wifi/WifiManager;
 
     .line 264
-    invoke-virtual {p0}, Lcom/android/settings/DevelopmentSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/DevelopmentSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v2
 
@@ -5444,7 +5444,7 @@
 
     check-cast v2, Landroid/hardware/usb/UsbManager;
 
-    iput-object v2, p0, Lcom/android/settings/DevelopmentSettings;->mUsbManager:Landroid/hardware/usb/UsbManager;
+    iput-object v2, p0, Lcom/android/settings_ext/DevelopmentSettings;->mUsbManager:Landroid/hardware/usb/UsbManager;
 
     .line 266
     invoke-static {}, Landroid/os/Process;->myUserHandle()Landroid/os/UserHandle;
@@ -5457,7 +5457,7 @@
 
     if-nez v2, :cond_0
 
-    iget-object v2, p0, Lcom/android/settings/DevelopmentSettings;->mUm:Landroid/os/UserManager;
+    iget-object v2, p0, Lcom/android/settings_ext/DevelopmentSettings;->mUm:Landroid/os/UserManager;
 
     const-string v3, "no_debugging_features"
 
@@ -5471,18 +5471,18 @@
     :cond_0
     const/4 v2, 0x1
 
-    iput-boolean v2, p0, Lcom/android/settings/DevelopmentSettings;->mUnavailable:Z
+    iput-boolean v2, p0, Lcom/android/settings_ext/DevelopmentSettings;->mUnavailable:Z
 
     .line 269
     new-instance v2, Landroid/preference/PreferenceScreen;
 
-    invoke-virtual {p0}, Lcom/android/settings/DevelopmentSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/DevelopmentSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v3
 
     invoke-direct {v2, v3, v4}, Landroid/preference/PreferenceScreen;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
-    invoke-virtual {p0, v2}, Lcom/android/settings/DevelopmentSettings;->setPreferenceScreen(Landroid/preference/PreferenceScreen;)V
+    invoke-virtual {p0, v2}, Lcom/android/settings_ext/DevelopmentSettings;->setPreferenceScreen(Landroid/preference/PreferenceScreen;)V
 
     .line 375
     :goto_0
@@ -5492,12 +5492,12 @@
     :cond_1
     const v2, 0x7f060014
 
-    invoke-virtual {p0, v2}, Lcom/android/settings/DevelopmentSettings;->addPreferencesFromResource(I)V
+    invoke-virtual {p0, v2}, Lcom/android/settings_ext/DevelopmentSettings;->addPreferencesFromResource(I)V
 
     .line 275
     const-string v2, "debug_debugging_category"
 
-    invoke-virtual {p0, v2}, Lcom/android/settings/DevelopmentSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v2}, Lcom/android/settings_ext/DevelopmentSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v0
 
@@ -5507,20 +5507,20 @@
     .local v0, "debugDebuggingCategory":Landroid/preference/PreferenceGroup;
     const-string v2, "enable_adb"
 
-    invoke-direct {p0, v2}, Lcom/android/settings/DevelopmentSettings;->findAndInitSwitchPref(Ljava/lang/String;)Landroid/preference/SwitchPreference;
+    invoke-direct {p0, v2}, Lcom/android/settings_ext/DevelopmentSettings;->findAndInitSwitchPref(Ljava/lang/String;)Landroid/preference/SwitchPreference;
 
     move-result-object v2
 
-    iput-object v2, p0, Lcom/android/settings/DevelopmentSettings;->mEnableAdb:Landroid/preference/SwitchPreference;
+    iput-object v2, p0, Lcom/android/settings_ext/DevelopmentSettings;->mEnableAdb:Landroid/preference/SwitchPreference;
 
     .line 279
     const-string v2, "clear_adb_keys"
 
-    invoke-virtual {p0, v2}, Lcom/android/settings/DevelopmentSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v2}, Lcom/android/settings_ext/DevelopmentSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v2
 
-    iput-object v2, p0, Lcom/android/settings/DevelopmentSettings;->mClearAdbKeys:Landroid/preference/Preference;
+    iput-object v2, p0, Lcom/android/settings_ext/DevelopmentSettings;->mClearAdbKeys:Landroid/preference/Preference;
 
     .line 280
     const-string v2, "ro.adb.secure"
@@ -5535,143 +5535,143 @@
     if-eqz v0, :cond_2
 
     .line 282
-    iget-object v2, p0, Lcom/android/settings/DevelopmentSettings;->mClearAdbKeys:Landroid/preference/Preference;
+    iget-object v2, p0, Lcom/android/settings_ext/DevelopmentSettings;->mClearAdbKeys:Landroid/preference/Preference;
 
     invoke-virtual {v0, v2}, Landroid/preference/PreferenceGroup;->removePreference(Landroid/preference/Preference;)Z
 
     .line 285
     :cond_2
-    iget-object v2, p0, Lcom/android/settings/DevelopmentSettings;->mAllPrefs:Ljava/util/ArrayList;
+    iget-object v2, p0, Lcom/android/settings_ext/DevelopmentSettings;->mAllPrefs:Ljava/util/ArrayList;
 
-    iget-object v3, p0, Lcom/android/settings/DevelopmentSettings;->mClearAdbKeys:Landroid/preference/Preference;
+    iget-object v3, p0, Lcom/android/settings_ext/DevelopmentSettings;->mClearAdbKeys:Landroid/preference/Preference;
 
     invoke-virtual {v2, v3}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
     .line 286
     const-string v2, "enable_terminal"
 
-    invoke-direct {p0, v2}, Lcom/android/settings/DevelopmentSettings;->findAndInitSwitchPref(Ljava/lang/String;)Landroid/preference/SwitchPreference;
+    invoke-direct {p0, v2}, Lcom/android/settings_ext/DevelopmentSettings;->findAndInitSwitchPref(Ljava/lang/String;)Landroid/preference/SwitchPreference;
 
     move-result-object v2
 
-    iput-object v2, p0, Lcom/android/settings/DevelopmentSettings;->mEnableTerminal:Landroid/preference/SwitchPreference;
+    iput-object v2, p0, Lcom/android/settings_ext/DevelopmentSettings;->mEnableTerminal:Landroid/preference/SwitchPreference;
 
     .line 287
-    invoke-virtual {p0}, Lcom/android/settings/DevelopmentSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/DevelopmentSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v2
 
     const-string v3, "com.android.terminal"
 
-    invoke-static {v2, v3}, Lcom/android/settings/DevelopmentSettings;->isPackageInstalled(Landroid/content/Context;Ljava/lang/String;)Z
+    invoke-static {v2, v3}, Lcom/android/settings_ext/DevelopmentSettings;->isPackageInstalled(Landroid/content/Context;Ljava/lang/String;)Z
 
     move-result v2
 
     if-nez v2, :cond_3
 
     .line 288
-    iget-object v2, p0, Lcom/android/settings/DevelopmentSettings;->mEnableTerminal:Landroid/preference/SwitchPreference;
+    iget-object v2, p0, Lcom/android/settings_ext/DevelopmentSettings;->mEnableTerminal:Landroid/preference/SwitchPreference;
 
     invoke-virtual {v0, v2}, Landroid/preference/PreferenceGroup;->removePreference(Landroid/preference/Preference;)Z
 
     .line 289
-    iput-object v4, p0, Lcom/android/settings/DevelopmentSettings;->mEnableTerminal:Landroid/preference/SwitchPreference;
+    iput-object v4, p0, Lcom/android/settings_ext/DevelopmentSettings;->mEnableTerminal:Landroid/preference/SwitchPreference;
 
     .line 292
     :cond_3
     const-string v2, "bugreport"
 
-    invoke-virtual {p0, v2}, Lcom/android/settings/DevelopmentSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v2}, Lcom/android/settings_ext/DevelopmentSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v2
 
-    iput-object v2, p0, Lcom/android/settings/DevelopmentSettings;->mBugreport:Landroid/preference/Preference;
+    iput-object v2, p0, Lcom/android/settings_ext/DevelopmentSettings;->mBugreport:Landroid/preference/Preference;
 
     .line 293
     const-string v2, "bugreport_in_power"
 
-    invoke-direct {p0, v2}, Lcom/android/settings/DevelopmentSettings;->findAndInitSwitchPref(Ljava/lang/String;)Landroid/preference/SwitchPreference;
+    invoke-direct {p0, v2}, Lcom/android/settings_ext/DevelopmentSettings;->findAndInitSwitchPref(Ljava/lang/String;)Landroid/preference/SwitchPreference;
 
     move-result-object v2
 
-    iput-object v2, p0, Lcom/android/settings/DevelopmentSettings;->mBugreportInPower:Landroid/preference/SwitchPreference;
+    iput-object v2, p0, Lcom/android/settings_ext/DevelopmentSettings;->mBugreportInPower:Landroid/preference/SwitchPreference;
 
     .line 294
     const-string v2, "keep_screen_on"
 
-    invoke-direct {p0, v2}, Lcom/android/settings/DevelopmentSettings;->findAndInitSwitchPref(Ljava/lang/String;)Landroid/preference/SwitchPreference;
+    invoke-direct {p0, v2}, Lcom/android/settings_ext/DevelopmentSettings;->findAndInitSwitchPref(Ljava/lang/String;)Landroid/preference/SwitchPreference;
 
     move-result-object v2
 
-    iput-object v2, p0, Lcom/android/settings/DevelopmentSettings;->mKeepScreenOn:Landroid/preference/SwitchPreference;
+    iput-object v2, p0, Lcom/android/settings_ext/DevelopmentSettings;->mKeepScreenOn:Landroid/preference/SwitchPreference;
 
     .line 295
     const-string v2, "bt_hci_snoop_log"
 
-    invoke-direct {p0, v2}, Lcom/android/settings/DevelopmentSettings;->findAndInitSwitchPref(Ljava/lang/String;)Landroid/preference/SwitchPreference;
+    invoke-direct {p0, v2}, Lcom/android/settings_ext/DevelopmentSettings;->findAndInitSwitchPref(Ljava/lang/String;)Landroid/preference/SwitchPreference;
 
     move-result-object v2
 
-    iput-object v2, p0, Lcom/android/settings/DevelopmentSettings;->mBtHciSnoopLog:Landroid/preference/SwitchPreference;
+    iput-object v2, p0, Lcom/android/settings_ext/DevelopmentSettings;->mBtHciSnoopLog:Landroid/preference/SwitchPreference;
 
     .line 296
     const-string v2, "oem_unlock_enable"
 
-    invoke-direct {p0, v2}, Lcom/android/settings/DevelopmentSettings;->findAndInitSwitchPref(Ljava/lang/String;)Landroid/preference/SwitchPreference;
+    invoke-direct {p0, v2}, Lcom/android/settings_ext/DevelopmentSettings;->findAndInitSwitchPref(Ljava/lang/String;)Landroid/preference/SwitchPreference;
 
     move-result-object v2
 
-    iput-object v2, p0, Lcom/android/settings/DevelopmentSettings;->mEnableOemUnlock:Landroid/preference/SwitchPreference;
+    iput-object v2, p0, Lcom/android/settings_ext/DevelopmentSettings;->mEnableOemUnlock:Landroid/preference/SwitchPreference;
 
     .line 297
-    invoke-static {}, Lcom/android/settings/DevelopmentSettings;->showEnableOemUnlockPreference()Z
+    invoke-static {}, Lcom/android/settings_ext/DevelopmentSettings;->showEnableOemUnlockPreference()Z
 
     move-result v2
 
     if-nez v2, :cond_4
 
     .line 298
-    iget-object v2, p0, Lcom/android/settings/DevelopmentSettings;->mEnableOemUnlock:Landroid/preference/SwitchPreference;
+    iget-object v2, p0, Lcom/android/settings_ext/DevelopmentSettings;->mEnableOemUnlock:Landroid/preference/SwitchPreference;
 
-    invoke-direct {p0, v2}, Lcom/android/settings/DevelopmentSettings;->removePreference(Landroid/preference/Preference;)V
+    invoke-direct {p0, v2}, Lcom/android/settings_ext/DevelopmentSettings;->removePreference(Landroid/preference/Preference;)V
 
     .line 299
-    iput-object v4, p0, Lcom/android/settings/DevelopmentSettings;->mEnableOemUnlock:Landroid/preference/SwitchPreference;
+    iput-object v4, p0, Lcom/android/settings_ext/DevelopmentSettings;->mEnableOemUnlock:Landroid/preference/SwitchPreference;
 
     .line 301
     :cond_4
     const-string v2, "allow_mock_location"
 
-    invoke-direct {p0, v2}, Lcom/android/settings/DevelopmentSettings;->findAndInitSwitchPref(Ljava/lang/String;)Landroid/preference/SwitchPreference;
+    invoke-direct {p0, v2}, Lcom/android/settings_ext/DevelopmentSettings;->findAndInitSwitchPref(Ljava/lang/String;)Landroid/preference/SwitchPreference;
 
     move-result-object v2
 
-    iput-object v2, p0, Lcom/android/settings/DevelopmentSettings;->mAllowMockLocation:Landroid/preference/SwitchPreference;
+    iput-object v2, p0, Lcom/android/settings_ext/DevelopmentSettings;->mAllowMockLocation:Landroid/preference/SwitchPreference;
 
     .line 302
     const-string v2, "debug_view_attributes"
 
-    invoke-direct {p0, v2}, Lcom/android/settings/DevelopmentSettings;->findAndInitSwitchPref(Ljava/lang/String;)Landroid/preference/SwitchPreference;
+    invoke-direct {p0, v2}, Lcom/android/settings_ext/DevelopmentSettings;->findAndInitSwitchPref(Ljava/lang/String;)Landroid/preference/SwitchPreference;
 
     move-result-object v2
 
-    iput-object v2, p0, Lcom/android/settings/DevelopmentSettings;->mDebugViewAttributes:Landroid/preference/SwitchPreference;
+    iput-object v2, p0, Lcom/android/settings_ext/DevelopmentSettings;->mDebugViewAttributes:Landroid/preference/SwitchPreference;
 
     .line 303
     const-string v2, "local_backup_password"
 
-    invoke-virtual {p0, v2}, Lcom/android/settings/DevelopmentSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v2}, Lcom/android/settings_ext/DevelopmentSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v2
 
     check-cast v2, Landroid/preference/PreferenceScreen;
 
-    iput-object v2, p0, Lcom/android/settings/DevelopmentSettings;->mPassword:Landroid/preference/PreferenceScreen;
+    iput-object v2, p0, Lcom/android/settings_ext/DevelopmentSettings;->mPassword:Landroid/preference/PreferenceScreen;
 
     .line 304
-    iget-object v2, p0, Lcom/android/settings/DevelopmentSettings;->mAllPrefs:Ljava/util/ArrayList;
+    iget-object v2, p0, Lcom/android/settings_ext/DevelopmentSettings;->mAllPrefs:Ljava/util/ArrayList;
 
-    iget-object v3, p0, Lcom/android/settings/DevelopmentSettings;->mPassword:Landroid/preference/PreferenceScreen;
+    iget-object v3, p0, Lcom/android/settings_ext/DevelopmentSettings;->mPassword:Landroid/preference/PreferenceScreen;
 
     invoke-virtual {v2, v3}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
@@ -5689,62 +5689,62 @@
     if-nez v2, :cond_5
 
     .line 308
-    iget-object v2, p0, Lcom/android/settings/DevelopmentSettings;->mEnableAdb:Landroid/preference/SwitchPreference;
+    iget-object v2, p0, Lcom/android/settings_ext/DevelopmentSettings;->mEnableAdb:Landroid/preference/SwitchPreference;
 
-    invoke-direct {p0, v2}, Lcom/android/settings/DevelopmentSettings;->disableForUser(Landroid/preference/Preference;)V
+    invoke-direct {p0, v2}, Lcom/android/settings_ext/DevelopmentSettings;->disableForUser(Landroid/preference/Preference;)V
 
     .line 309
-    iget-object v2, p0, Lcom/android/settings/DevelopmentSettings;->mClearAdbKeys:Landroid/preference/Preference;
+    iget-object v2, p0, Lcom/android/settings_ext/DevelopmentSettings;->mClearAdbKeys:Landroid/preference/Preference;
 
-    invoke-direct {p0, v2}, Lcom/android/settings/DevelopmentSettings;->disableForUser(Landroid/preference/Preference;)V
+    invoke-direct {p0, v2}, Lcom/android/settings_ext/DevelopmentSettings;->disableForUser(Landroid/preference/Preference;)V
 
     .line 310
-    iget-object v2, p0, Lcom/android/settings/DevelopmentSettings;->mEnableTerminal:Landroid/preference/SwitchPreference;
+    iget-object v2, p0, Lcom/android/settings_ext/DevelopmentSettings;->mEnableTerminal:Landroid/preference/SwitchPreference;
 
-    invoke-direct {p0, v2}, Lcom/android/settings/DevelopmentSettings;->disableForUser(Landroid/preference/Preference;)V
+    invoke-direct {p0, v2}, Lcom/android/settings_ext/DevelopmentSettings;->disableForUser(Landroid/preference/Preference;)V
 
     .line 311
-    iget-object v2, p0, Lcom/android/settings/DevelopmentSettings;->mPassword:Landroid/preference/PreferenceScreen;
+    iget-object v2, p0, Lcom/android/settings_ext/DevelopmentSettings;->mPassword:Landroid/preference/PreferenceScreen;
 
-    invoke-direct {p0, v2}, Lcom/android/settings/DevelopmentSettings;->disableForUser(Landroid/preference/Preference;)V
+    invoke-direct {p0, v2}, Lcom/android/settings_ext/DevelopmentSettings;->disableForUser(Landroid/preference/Preference;)V
 
     .line 314
     :cond_5
     const-string v2, "debug_app"
 
-    invoke-virtual {p0, v2}, Lcom/android/settings/DevelopmentSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v2}, Lcom/android/settings_ext/DevelopmentSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v2
 
-    iput-object v2, p0, Lcom/android/settings/DevelopmentSettings;->mDebugAppPref:Landroid/preference/Preference;
+    iput-object v2, p0, Lcom/android/settings_ext/DevelopmentSettings;->mDebugAppPref:Landroid/preference/Preference;
 
     .line 315
-    iget-object v2, p0, Lcom/android/settings/DevelopmentSettings;->mAllPrefs:Ljava/util/ArrayList;
+    iget-object v2, p0, Lcom/android/settings_ext/DevelopmentSettings;->mAllPrefs:Ljava/util/ArrayList;
 
-    iget-object v3, p0, Lcom/android/settings/DevelopmentSettings;->mDebugAppPref:Landroid/preference/Preference;
+    iget-object v3, p0, Lcom/android/settings_ext/DevelopmentSettings;->mDebugAppPref:Landroid/preference/Preference;
 
     invoke-virtual {v2, v3}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
     .line 316
     const-string v2, "wait_for_debugger"
 
-    invoke-direct {p0, v2}, Lcom/android/settings/DevelopmentSettings;->findAndInitSwitchPref(Ljava/lang/String;)Landroid/preference/SwitchPreference;
+    invoke-direct {p0, v2}, Lcom/android/settings_ext/DevelopmentSettings;->findAndInitSwitchPref(Ljava/lang/String;)Landroid/preference/SwitchPreference;
 
     move-result-object v2
 
-    iput-object v2, p0, Lcom/android/settings/DevelopmentSettings;->mWaitForDebugger:Landroid/preference/SwitchPreference;
+    iput-object v2, p0, Lcom/android/settings_ext/DevelopmentSettings;->mWaitForDebugger:Landroid/preference/SwitchPreference;
 
     .line 317
     const-string v2, "verify_apps_over_usb"
 
-    invoke-direct {p0, v2}, Lcom/android/settings/DevelopmentSettings;->findAndInitSwitchPref(Ljava/lang/String;)Landroid/preference/SwitchPreference;
+    invoke-direct {p0, v2}, Lcom/android/settings_ext/DevelopmentSettings;->findAndInitSwitchPref(Ljava/lang/String;)Landroid/preference/SwitchPreference;
 
     move-result-object v2
 
-    iput-object v2, p0, Lcom/android/settings/DevelopmentSettings;->mVerifyAppsOverUsb:Landroid/preference/SwitchPreference;
+    iput-object v2, p0, Lcom/android/settings_ext/DevelopmentSettings;->mVerifyAppsOverUsb:Landroid/preference/SwitchPreference;
 
     .line 318
-    invoke-direct {p0}, Lcom/android/settings/DevelopmentSettings;->showVerifierSetting()Z
+    invoke-direct {p0}, Lcom/android/settings_ext/DevelopmentSettings;->showVerifierSetting()Z
 
     move-result v2
 
@@ -5754,7 +5754,7 @@
     if-eqz v0, :cond_8
 
     .line 320
-    iget-object v2, p0, Lcom/android/settings/DevelopmentSettings;->mVerifyAppsOverUsb:Landroid/preference/SwitchPreference;
+    iget-object v2, p0, Lcom/android/settings_ext/DevelopmentSettings;->mVerifyAppsOverUsb:Landroid/preference/SwitchPreference;
 
     invoke-virtual {v0, v2}, Landroid/preference/PreferenceGroup;->removePreference(Landroid/preference/Preference;)Z
 
@@ -5763,318 +5763,318 @@
     :goto_1
     const-string v2, "strict_mode"
 
-    invoke-direct {p0, v2}, Lcom/android/settings/DevelopmentSettings;->findAndInitSwitchPref(Ljava/lang/String;)Landroid/preference/SwitchPreference;
+    invoke-direct {p0, v2}, Lcom/android/settings_ext/DevelopmentSettings;->findAndInitSwitchPref(Ljava/lang/String;)Landroid/preference/SwitchPreference;
 
     move-result-object v2
 
-    iput-object v2, p0, Lcom/android/settings/DevelopmentSettings;->mStrictMode:Landroid/preference/SwitchPreference;
+    iput-object v2, p0, Lcom/android/settings_ext/DevelopmentSettings;->mStrictMode:Landroid/preference/SwitchPreference;
 
     .line 326
     const-string v2, "pointer_location"
 
-    invoke-direct {p0, v2}, Lcom/android/settings/DevelopmentSettings;->findAndInitSwitchPref(Ljava/lang/String;)Landroid/preference/SwitchPreference;
+    invoke-direct {p0, v2}, Lcom/android/settings_ext/DevelopmentSettings;->findAndInitSwitchPref(Ljava/lang/String;)Landroid/preference/SwitchPreference;
 
     move-result-object v2
 
-    iput-object v2, p0, Lcom/android/settings/DevelopmentSettings;->mPointerLocation:Landroid/preference/SwitchPreference;
+    iput-object v2, p0, Lcom/android/settings_ext/DevelopmentSettings;->mPointerLocation:Landroid/preference/SwitchPreference;
 
     .line 327
     const-string v2, "show_touches"
 
-    invoke-direct {p0, v2}, Lcom/android/settings/DevelopmentSettings;->findAndInitSwitchPref(Ljava/lang/String;)Landroid/preference/SwitchPreference;
+    invoke-direct {p0, v2}, Lcom/android/settings_ext/DevelopmentSettings;->findAndInitSwitchPref(Ljava/lang/String;)Landroid/preference/SwitchPreference;
 
     move-result-object v2
 
-    iput-object v2, p0, Lcom/android/settings/DevelopmentSettings;->mShowTouches:Landroid/preference/SwitchPreference;
+    iput-object v2, p0, Lcom/android/settings_ext/DevelopmentSettings;->mShowTouches:Landroid/preference/SwitchPreference;
 
     .line 328
     const-string v2, "show_screen_updates"
 
-    invoke-direct {p0, v2}, Lcom/android/settings/DevelopmentSettings;->findAndInitSwitchPref(Ljava/lang/String;)Landroid/preference/SwitchPreference;
+    invoke-direct {p0, v2}, Lcom/android/settings_ext/DevelopmentSettings;->findAndInitSwitchPref(Ljava/lang/String;)Landroid/preference/SwitchPreference;
 
     move-result-object v2
 
-    iput-object v2, p0, Lcom/android/settings/DevelopmentSettings;->mShowScreenUpdates:Landroid/preference/SwitchPreference;
+    iput-object v2, p0, Lcom/android/settings_ext/DevelopmentSettings;->mShowScreenUpdates:Landroid/preference/SwitchPreference;
 
     .line 329
     const-string v2, "disable_overlays"
 
-    invoke-direct {p0, v2}, Lcom/android/settings/DevelopmentSettings;->findAndInitSwitchPref(Ljava/lang/String;)Landroid/preference/SwitchPreference;
+    invoke-direct {p0, v2}, Lcom/android/settings_ext/DevelopmentSettings;->findAndInitSwitchPref(Ljava/lang/String;)Landroid/preference/SwitchPreference;
 
     move-result-object v2
 
-    iput-object v2, p0, Lcom/android/settings/DevelopmentSettings;->mDisableOverlays:Landroid/preference/SwitchPreference;
+    iput-object v2, p0, Lcom/android/settings_ext/DevelopmentSettings;->mDisableOverlays:Landroid/preference/SwitchPreference;
 
     .line 330
     const-string v2, "show_cpu_usage"
 
-    invoke-direct {p0, v2}, Lcom/android/settings/DevelopmentSettings;->findAndInitSwitchPref(Ljava/lang/String;)Landroid/preference/SwitchPreference;
+    invoke-direct {p0, v2}, Lcom/android/settings_ext/DevelopmentSettings;->findAndInitSwitchPref(Ljava/lang/String;)Landroid/preference/SwitchPreference;
 
     move-result-object v2
 
-    iput-object v2, p0, Lcom/android/settings/DevelopmentSettings;->mShowCpuUsage:Landroid/preference/SwitchPreference;
+    iput-object v2, p0, Lcom/android/settings_ext/DevelopmentSettings;->mShowCpuUsage:Landroid/preference/SwitchPreference;
 
     .line 331
     const-string v2, "force_hw_ui"
 
-    invoke-direct {p0, v2}, Lcom/android/settings/DevelopmentSettings;->findAndInitSwitchPref(Ljava/lang/String;)Landroid/preference/SwitchPreference;
+    invoke-direct {p0, v2}, Lcom/android/settings_ext/DevelopmentSettings;->findAndInitSwitchPref(Ljava/lang/String;)Landroid/preference/SwitchPreference;
 
     move-result-object v2
 
-    iput-object v2, p0, Lcom/android/settings/DevelopmentSettings;->mForceHardwareUi:Landroid/preference/SwitchPreference;
+    iput-object v2, p0, Lcom/android/settings_ext/DevelopmentSettings;->mForceHardwareUi:Landroid/preference/SwitchPreference;
 
     .line 332
     const-string v2, "force_msaa"
 
-    invoke-direct {p0, v2}, Lcom/android/settings/DevelopmentSettings;->findAndInitSwitchPref(Ljava/lang/String;)Landroid/preference/SwitchPreference;
+    invoke-direct {p0, v2}, Lcom/android/settings_ext/DevelopmentSettings;->findAndInitSwitchPref(Ljava/lang/String;)Landroid/preference/SwitchPreference;
 
     move-result-object v2
 
-    iput-object v2, p0, Lcom/android/settings/DevelopmentSettings;->mForceMsaa:Landroid/preference/SwitchPreference;
+    iput-object v2, p0, Lcom/android/settings_ext/DevelopmentSettings;->mForceMsaa:Landroid/preference/SwitchPreference;
 
     .line 333
     const-string v2, "track_frame_time"
 
-    invoke-direct {p0, v2}, Lcom/android/settings/DevelopmentSettings;->addListPreference(Ljava/lang/String;)Landroid/preference/ListPreference;
+    invoke-direct {p0, v2}, Lcom/android/settings_ext/DevelopmentSettings;->addListPreference(Ljava/lang/String;)Landroid/preference/ListPreference;
 
     move-result-object v2
 
-    iput-object v2, p0, Lcom/android/settings/DevelopmentSettings;->mTrackFrameTime:Landroid/preference/ListPreference;
+    iput-object v2, p0, Lcom/android/settings_ext/DevelopmentSettings;->mTrackFrameTime:Landroid/preference/ListPreference;
 
     .line 334
     const-string v2, "show_non_rect_clip"
 
-    invoke-direct {p0, v2}, Lcom/android/settings/DevelopmentSettings;->addListPreference(Ljava/lang/String;)Landroid/preference/ListPreference;
+    invoke-direct {p0, v2}, Lcom/android/settings_ext/DevelopmentSettings;->addListPreference(Ljava/lang/String;)Landroid/preference/ListPreference;
 
     move-result-object v2
 
-    iput-object v2, p0, Lcom/android/settings/DevelopmentSettings;->mShowNonRectClip:Landroid/preference/ListPreference;
+    iput-object v2, p0, Lcom/android/settings_ext/DevelopmentSettings;->mShowNonRectClip:Landroid/preference/ListPreference;
 
     .line 335
     const-string v2, "show_hw_screen_udpates"
 
-    invoke-direct {p0, v2}, Lcom/android/settings/DevelopmentSettings;->findAndInitSwitchPref(Ljava/lang/String;)Landroid/preference/SwitchPreference;
+    invoke-direct {p0, v2}, Lcom/android/settings_ext/DevelopmentSettings;->findAndInitSwitchPref(Ljava/lang/String;)Landroid/preference/SwitchPreference;
 
     move-result-object v2
 
-    iput-object v2, p0, Lcom/android/settings/DevelopmentSettings;->mShowHwScreenUpdates:Landroid/preference/SwitchPreference;
+    iput-object v2, p0, Lcom/android/settings_ext/DevelopmentSettings;->mShowHwScreenUpdates:Landroid/preference/SwitchPreference;
 
     .line 336
     const-string v2, "show_hw_layers_udpates"
 
-    invoke-direct {p0, v2}, Lcom/android/settings/DevelopmentSettings;->findAndInitSwitchPref(Ljava/lang/String;)Landroid/preference/SwitchPreference;
+    invoke-direct {p0, v2}, Lcom/android/settings_ext/DevelopmentSettings;->findAndInitSwitchPref(Ljava/lang/String;)Landroid/preference/SwitchPreference;
 
     move-result-object v2
 
-    iput-object v2, p0, Lcom/android/settings/DevelopmentSettings;->mShowHwLayersUpdates:Landroid/preference/SwitchPreference;
+    iput-object v2, p0, Lcom/android/settings_ext/DevelopmentSettings;->mShowHwLayersUpdates:Landroid/preference/SwitchPreference;
 
     .line 337
     const-string v2, "debug_layout"
 
-    invoke-direct {p0, v2}, Lcom/android/settings/DevelopmentSettings;->findAndInitSwitchPref(Ljava/lang/String;)Landroid/preference/SwitchPreference;
+    invoke-direct {p0, v2}, Lcom/android/settings_ext/DevelopmentSettings;->findAndInitSwitchPref(Ljava/lang/String;)Landroid/preference/SwitchPreference;
 
     move-result-object v2
 
-    iput-object v2, p0, Lcom/android/settings/DevelopmentSettings;->mDebugLayout:Landroid/preference/SwitchPreference;
+    iput-object v2, p0, Lcom/android/settings_ext/DevelopmentSettings;->mDebugLayout:Landroid/preference/SwitchPreference;
 
     .line 338
     const-string v2, "force_rtl_layout_all_locales"
 
-    invoke-direct {p0, v2}, Lcom/android/settings/DevelopmentSettings;->findAndInitSwitchPref(Ljava/lang/String;)Landroid/preference/SwitchPreference;
+    invoke-direct {p0, v2}, Lcom/android/settings_ext/DevelopmentSettings;->findAndInitSwitchPref(Ljava/lang/String;)Landroid/preference/SwitchPreference;
 
     move-result-object v2
 
-    iput-object v2, p0, Lcom/android/settings/DevelopmentSettings;->mForceRtlLayout:Landroid/preference/SwitchPreference;
+    iput-object v2, p0, Lcom/android/settings_ext/DevelopmentSettings;->mForceRtlLayout:Landroid/preference/SwitchPreference;
 
     .line 339
     const-string v2, "debug_hw_overdraw"
 
-    invoke-direct {p0, v2}, Lcom/android/settings/DevelopmentSettings;->addListPreference(Ljava/lang/String;)Landroid/preference/ListPreference;
+    invoke-direct {p0, v2}, Lcom/android/settings_ext/DevelopmentSettings;->addListPreference(Ljava/lang/String;)Landroid/preference/ListPreference;
 
     move-result-object v2
 
-    iput-object v2, p0, Lcom/android/settings/DevelopmentSettings;->mDebugHwOverdraw:Landroid/preference/ListPreference;
+    iput-object v2, p0, Lcom/android/settings_ext/DevelopmentSettings;->mDebugHwOverdraw:Landroid/preference/ListPreference;
 
     .line 340
     const-string v2, "wifi_display_certification"
 
-    invoke-direct {p0, v2}, Lcom/android/settings/DevelopmentSettings;->findAndInitSwitchPref(Ljava/lang/String;)Landroid/preference/SwitchPreference;
+    invoke-direct {p0, v2}, Lcom/android/settings_ext/DevelopmentSettings;->findAndInitSwitchPref(Ljava/lang/String;)Landroid/preference/SwitchPreference;
 
     move-result-object v2
 
-    iput-object v2, p0, Lcom/android/settings/DevelopmentSettings;->mWifiDisplayCertification:Landroid/preference/SwitchPreference;
+    iput-object v2, p0, Lcom/android/settings_ext/DevelopmentSettings;->mWifiDisplayCertification:Landroid/preference/SwitchPreference;
 
     .line 341
     const-string v2, "wifi_verbose_logging"
 
-    invoke-direct {p0, v2}, Lcom/android/settings/DevelopmentSettings;->findAndInitSwitchPref(Ljava/lang/String;)Landroid/preference/SwitchPreference;
+    invoke-direct {p0, v2}, Lcom/android/settings_ext/DevelopmentSettings;->findAndInitSwitchPref(Ljava/lang/String;)Landroid/preference/SwitchPreference;
 
     move-result-object v2
 
-    iput-object v2, p0, Lcom/android/settings/DevelopmentSettings;->mWifiVerboseLogging:Landroid/preference/SwitchPreference;
+    iput-object v2, p0, Lcom/android/settings_ext/DevelopmentSettings;->mWifiVerboseLogging:Landroid/preference/SwitchPreference;
 
     .line 342
     const-string v2, "wifi_aggressive_handover"
 
-    invoke-direct {p0, v2}, Lcom/android/settings/DevelopmentSettings;->findAndInitSwitchPref(Ljava/lang/String;)Landroid/preference/SwitchPreference;
+    invoke-direct {p0, v2}, Lcom/android/settings_ext/DevelopmentSettings;->findAndInitSwitchPref(Ljava/lang/String;)Landroid/preference/SwitchPreference;
 
     move-result-object v2
 
-    iput-object v2, p0, Lcom/android/settings/DevelopmentSettings;->mWifiAggressiveHandover:Landroid/preference/SwitchPreference;
+    iput-object v2, p0, Lcom/android/settings_ext/DevelopmentSettings;->mWifiAggressiveHandover:Landroid/preference/SwitchPreference;
 
     .line 343
     const-string v2, "wifi_allow_scan_with_traffic"
 
-    invoke-direct {p0, v2}, Lcom/android/settings/DevelopmentSettings;->findAndInitSwitchPref(Ljava/lang/String;)Landroid/preference/SwitchPreference;
+    invoke-direct {p0, v2}, Lcom/android/settings_ext/DevelopmentSettings;->findAndInitSwitchPref(Ljava/lang/String;)Landroid/preference/SwitchPreference;
 
     move-result-object v2
 
-    iput-object v2, p0, Lcom/android/settings/DevelopmentSettings;->mWifiAllowScansWithTraffic:Landroid/preference/SwitchPreference;
+    iput-object v2, p0, Lcom/android/settings_ext/DevelopmentSettings;->mWifiAllowScansWithTraffic:Landroid/preference/SwitchPreference;
 
     .line 344
     const-string v2, "select_logd_size"
 
-    invoke-direct {p0, v2}, Lcom/android/settings/DevelopmentSettings;->addListPreference(Ljava/lang/String;)Landroid/preference/ListPreference;
+    invoke-direct {p0, v2}, Lcom/android/settings_ext/DevelopmentSettings;->addListPreference(Ljava/lang/String;)Landroid/preference/ListPreference;
 
     move-result-object v2
 
-    iput-object v2, p0, Lcom/android/settings/DevelopmentSettings;->mLogdSize:Landroid/preference/ListPreference;
+    iput-object v2, p0, Lcom/android/settings_ext/DevelopmentSettings;->mLogdSize:Landroid/preference/ListPreference;
 
     .line 346
     const-string v2, "window_animation_scale"
 
-    invoke-direct {p0, v2}, Lcom/android/settings/DevelopmentSettings;->addListPreference(Ljava/lang/String;)Landroid/preference/ListPreference;
+    invoke-direct {p0, v2}, Lcom/android/settings_ext/DevelopmentSettings;->addListPreference(Ljava/lang/String;)Landroid/preference/ListPreference;
 
     move-result-object v2
 
-    iput-object v2, p0, Lcom/android/settings/DevelopmentSettings;->mWindowAnimationScale:Landroid/preference/ListPreference;
+    iput-object v2, p0, Lcom/android/settings_ext/DevelopmentSettings;->mWindowAnimationScale:Landroid/preference/ListPreference;
 
     .line 347
     const-string v2, "transition_animation_scale"
 
-    invoke-direct {p0, v2}, Lcom/android/settings/DevelopmentSettings;->addListPreference(Ljava/lang/String;)Landroid/preference/ListPreference;
+    invoke-direct {p0, v2}, Lcom/android/settings_ext/DevelopmentSettings;->addListPreference(Ljava/lang/String;)Landroid/preference/ListPreference;
 
     move-result-object v2
 
-    iput-object v2, p0, Lcom/android/settings/DevelopmentSettings;->mTransitionAnimationScale:Landroid/preference/ListPreference;
+    iput-object v2, p0, Lcom/android/settings_ext/DevelopmentSettings;->mTransitionAnimationScale:Landroid/preference/ListPreference;
 
     .line 348
     const-string v2, "animator_duration_scale"
 
-    invoke-direct {p0, v2}, Lcom/android/settings/DevelopmentSettings;->addListPreference(Ljava/lang/String;)Landroid/preference/ListPreference;
+    invoke-direct {p0, v2}, Lcom/android/settings_ext/DevelopmentSettings;->addListPreference(Ljava/lang/String;)Landroid/preference/ListPreference;
 
     move-result-object v2
 
-    iput-object v2, p0, Lcom/android/settings/DevelopmentSettings;->mAnimatorDurationScale:Landroid/preference/ListPreference;
+    iput-object v2, p0, Lcom/android/settings_ext/DevelopmentSettings;->mAnimatorDurationScale:Landroid/preference/ListPreference;
 
     .line 349
     const-string v2, "overlay_display_devices"
 
-    invoke-direct {p0, v2}, Lcom/android/settings/DevelopmentSettings;->addListPreference(Ljava/lang/String;)Landroid/preference/ListPreference;
+    invoke-direct {p0, v2}, Lcom/android/settings_ext/DevelopmentSettings;->addListPreference(Ljava/lang/String;)Landroid/preference/ListPreference;
 
     move-result-object v2
 
-    iput-object v2, p0, Lcom/android/settings/DevelopmentSettings;->mOverlayDisplayDevices:Landroid/preference/ListPreference;
+    iput-object v2, p0, Lcom/android/settings_ext/DevelopmentSettings;->mOverlayDisplayDevices:Landroid/preference/ListPreference;
 
     .line 350
     const-string v2, "enable_opengl_traces"
 
-    invoke-direct {p0, v2}, Lcom/android/settings/DevelopmentSettings;->addListPreference(Ljava/lang/String;)Landroid/preference/ListPreference;
+    invoke-direct {p0, v2}, Lcom/android/settings_ext/DevelopmentSettings;->addListPreference(Ljava/lang/String;)Landroid/preference/ListPreference;
 
     move-result-object v2
 
-    iput-object v2, p0, Lcom/android/settings/DevelopmentSettings;->mOpenGLTraces:Landroid/preference/ListPreference;
+    iput-object v2, p0, Lcom/android/settings_ext/DevelopmentSettings;->mOpenGLTraces:Landroid/preference/ListPreference;
 
     .line 351
     const-string v2, "simulate_color_space"
 
-    invoke-direct {p0, v2}, Lcom/android/settings/DevelopmentSettings;->addListPreference(Ljava/lang/String;)Landroid/preference/ListPreference;
+    invoke-direct {p0, v2}, Lcom/android/settings_ext/DevelopmentSettings;->addListPreference(Ljava/lang/String;)Landroid/preference/ListPreference;
 
     move-result-object v2
 
-    iput-object v2, p0, Lcom/android/settings/DevelopmentSettings;->mSimulateColorSpace:Landroid/preference/ListPreference;
+    iput-object v2, p0, Lcom/android/settings_ext/DevelopmentSettings;->mSimulateColorSpace:Landroid/preference/ListPreference;
 
     .line 352
     const-string v2, "use_awesomeplayer"
 
-    invoke-direct {p0, v2}, Lcom/android/settings/DevelopmentSettings;->findAndInitSwitchPref(Ljava/lang/String;)Landroid/preference/SwitchPreference;
+    invoke-direct {p0, v2}, Lcom/android/settings_ext/DevelopmentSettings;->findAndInitSwitchPref(Ljava/lang/String;)Landroid/preference/SwitchPreference;
 
     move-result-object v2
 
-    iput-object v2, p0, Lcom/android/settings/DevelopmentSettings;->mUseAwesomePlayer:Landroid/preference/SwitchPreference;
+    iput-object v2, p0, Lcom/android/settings_ext/DevelopmentSettings;->mUseAwesomePlayer:Landroid/preference/SwitchPreference;
 
     .line 353
     const-string v2, "usb_audio"
 
-    invoke-direct {p0, v2}, Lcom/android/settings/DevelopmentSettings;->findAndInitSwitchPref(Ljava/lang/String;)Landroid/preference/SwitchPreference;
+    invoke-direct {p0, v2}, Lcom/android/settings_ext/DevelopmentSettings;->findAndInitSwitchPref(Ljava/lang/String;)Landroid/preference/SwitchPreference;
 
     move-result-object v2
 
-    iput-object v2, p0, Lcom/android/settings/DevelopmentSettings;->mUSBAudio:Landroid/preference/SwitchPreference;
+    iput-object v2, p0, Lcom/android/settings_ext/DevelopmentSettings;->mUSBAudio:Landroid/preference/SwitchPreference;
 
     .line 355
     const-string v2, "immediately_destroy_activities"
 
-    invoke-virtual {p0, v2}, Lcom/android/settings/DevelopmentSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v2}, Lcom/android/settings_ext/DevelopmentSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v2
 
     check-cast v2, Landroid/preference/SwitchPreference;
 
-    iput-object v2, p0, Lcom/android/settings/DevelopmentSettings;->mImmediatelyDestroyActivities:Landroid/preference/SwitchPreference;
+    iput-object v2, p0, Lcom/android/settings_ext/DevelopmentSettings;->mImmediatelyDestroyActivities:Landroid/preference/SwitchPreference;
 
     .line 357
-    iget-object v2, p0, Lcom/android/settings/DevelopmentSettings;->mAllPrefs:Ljava/util/ArrayList;
+    iget-object v2, p0, Lcom/android/settings_ext/DevelopmentSettings;->mAllPrefs:Ljava/util/ArrayList;
 
-    iget-object v3, p0, Lcom/android/settings/DevelopmentSettings;->mImmediatelyDestroyActivities:Landroid/preference/SwitchPreference;
+    iget-object v3, p0, Lcom/android/settings_ext/DevelopmentSettings;->mImmediatelyDestroyActivities:Landroid/preference/SwitchPreference;
 
     invoke-virtual {v2, v3}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
     .line 358
-    iget-object v2, p0, Lcom/android/settings/DevelopmentSettings;->mResetSwitchPrefs:Ljava/util/ArrayList;
+    iget-object v2, p0, Lcom/android/settings_ext/DevelopmentSettings;->mResetSwitchPrefs:Ljava/util/ArrayList;
 
-    iget-object v3, p0, Lcom/android/settings/DevelopmentSettings;->mImmediatelyDestroyActivities:Landroid/preference/SwitchPreference;
+    iget-object v3, p0, Lcom/android/settings_ext/DevelopmentSettings;->mImmediatelyDestroyActivities:Landroid/preference/SwitchPreference;
 
     invoke-virtual {v2, v3}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
     .line 360
     const-string v2, "app_process_limit"
 
-    invoke-direct {p0, v2}, Lcom/android/settings/DevelopmentSettings;->addListPreference(Ljava/lang/String;)Landroid/preference/ListPreference;
+    invoke-direct {p0, v2}, Lcom/android/settings_ext/DevelopmentSettings;->addListPreference(Ljava/lang/String;)Landroid/preference/ListPreference;
 
     move-result-object v2
 
-    iput-object v2, p0, Lcom/android/settings/DevelopmentSettings;->mAppProcessLimit:Landroid/preference/ListPreference;
+    iput-object v2, p0, Lcom/android/settings_ext/DevelopmentSettings;->mAppProcessLimit:Landroid/preference/ListPreference;
 
     .line 362
     const-string v2, "show_all_anrs"
 
-    invoke-virtual {p0, v2}, Lcom/android/settings/DevelopmentSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v2}, Lcom/android/settings_ext/DevelopmentSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v2
 
     check-cast v2, Landroid/preference/SwitchPreference;
 
-    iput-object v2, p0, Lcom/android/settings/DevelopmentSettings;->mShowAllANRs:Landroid/preference/SwitchPreference;
+    iput-object v2, p0, Lcom/android/settings_ext/DevelopmentSettings;->mShowAllANRs:Landroid/preference/SwitchPreference;
 
     .line 364
-    iget-object v2, p0, Lcom/android/settings/DevelopmentSettings;->mAllPrefs:Ljava/util/ArrayList;
+    iget-object v2, p0, Lcom/android/settings_ext/DevelopmentSettings;->mAllPrefs:Ljava/util/ArrayList;
 
-    iget-object v3, p0, Lcom/android/settings/DevelopmentSettings;->mShowAllANRs:Landroid/preference/SwitchPreference;
+    iget-object v3, p0, Lcom/android/settings_ext/DevelopmentSettings;->mShowAllANRs:Landroid/preference/SwitchPreference;
 
     invoke-virtual {v2, v3}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
     .line 365
-    iget-object v2, p0, Lcom/android/settings/DevelopmentSettings;->mResetSwitchPrefs:Ljava/util/ArrayList;
+    iget-object v2, p0, Lcom/android/settings_ext/DevelopmentSettings;->mResetSwitchPrefs:Ljava/util/ArrayList;
 
-    iget-object v3, p0, Lcom/android/settings/DevelopmentSettings;->mShowAllANRs:Landroid/preference/SwitchPreference;
+    iget-object v3, p0, Lcom/android/settings_ext/DevelopmentSettings;->mShowAllANRs:Landroid/preference/SwitchPreference;
 
     invoke-virtual {v2, v3}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
     .line 367
     const-string v2, "hdcp_checking"
 
-    invoke-virtual {p0, v2}, Lcom/android/settings/DevelopmentSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v2}, Lcom/android/settings_ext/DevelopmentSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v1
 
@@ -6083,29 +6083,29 @@
     if-eqz v1, :cond_7
 
     .line 369
-    iget-object v2, p0, Lcom/android/settings/DevelopmentSettings;->mAllPrefs:Ljava/util/ArrayList;
+    iget-object v2, p0, Lcom/android/settings_ext/DevelopmentSettings;->mAllPrefs:Ljava/util/ArrayList;
 
     invoke-virtual {v2, v1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
     .line 370
-    invoke-direct {p0, v1}, Lcom/android/settings/DevelopmentSettings;->removePreferenceForProduction(Landroid/preference/Preference;)Z
+    invoke-direct {p0, v1}, Lcom/android/settings_ext/DevelopmentSettings;->removePreferenceForProduction(Landroid/preference/Preference;)Z
 
     .line 373
     :cond_7
     const-string v2, "proc_stats"
 
-    invoke-virtual {p0, v2}, Lcom/android/settings/DevelopmentSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v2}, Lcom/android/settings_ext/DevelopmentSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v2
 
     check-cast v2, Landroid/preference/PreferenceScreen;
 
-    iput-object v2, p0, Lcom/android/settings/DevelopmentSettings;->mProcessStats:Landroid/preference/PreferenceScreen;
+    iput-object v2, p0, Lcom/android/settings_ext/DevelopmentSettings;->mProcessStats:Landroid/preference/PreferenceScreen;
 
     .line 374
-    iget-object v2, p0, Lcom/android/settings/DevelopmentSettings;->mAllPrefs:Ljava/util/ArrayList;
+    iget-object v2, p0, Lcom/android/settings_ext/DevelopmentSettings;->mAllPrefs:Ljava/util/ArrayList;
 
-    iget-object v3, p0, Lcom/android/settings/DevelopmentSettings;->mProcessStats:Landroid/preference/PreferenceScreen;
+    iget-object v3, p0, Lcom/android/settings_ext/DevelopmentSettings;->mProcessStats:Landroid/preference/PreferenceScreen;
 
     invoke-virtual {v2, v3}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
@@ -6114,7 +6114,7 @@
     .line 322
     .end local v1    # "hdcpChecking":Landroid/preference/Preference;
     :cond_8
-    iget-object v2, p0, Lcom/android/settings/DevelopmentSettings;->mVerifyAppsOverUsb:Landroid/preference/SwitchPreference;
+    iget-object v2, p0, Lcom/android/settings_ext/DevelopmentSettings;->mVerifyAppsOverUsb:Landroid/preference/SwitchPreference;
 
     invoke-virtual {v2, v5}, Landroid/preference/SwitchPreference;->setEnabled(Z)V
 
@@ -6126,10 +6126,10 @@
 
     .prologue
     .line 1594
-    invoke-direct {p0}, Lcom/android/settings/DevelopmentSettings;->dismissDialogs()V
+    invoke-direct {p0}, Lcom/android/settings_ext/DevelopmentSettings;->dismissDialogs()V
 
     .line 1595
-    invoke-super {p0}, Lcom/android/settings/SettingsPreferenceFragment;->onDestroy()V
+    invoke-super {p0}, Lcom/android/settings_ext/SettingsPreferenceFragment;->onDestroy()V
 
     .line 1596
     return-void
@@ -6140,10 +6140,10 @@
 
     .prologue
     .line 488
-    invoke-super {p0}, Lcom/android/settings/SettingsPreferenceFragment;->onDestroyView()V
+    invoke-super {p0}, Lcom/android/settings_ext/SettingsPreferenceFragment;->onDestroyView()V
 
     .line 490
-    iget-boolean v0, p0, Lcom/android/settings/DevelopmentSettings;->mUnavailable:Z
+    iget-boolean v0, p0, Lcom/android/settings_ext/DevelopmentSettings;->mUnavailable:Z
 
     if-eqz v0, :cond_0
 
@@ -6153,14 +6153,14 @@
 
     .line 493
     :cond_0
-    iget-object v0, p0, Lcom/android/settings/DevelopmentSettings;->mSwitchBar:Lcom/android/settings/widget/SwitchBar;
+    iget-object v0, p0, Lcom/android/settings_ext/DevelopmentSettings;->mSwitchBar:Lcom/android/settings_ext/widget/SwitchBar;
 
-    invoke-virtual {v0, p0}, Lcom/android/settings/widget/SwitchBar;->removeOnSwitchChangeListener(Lcom/android/settings/widget/SwitchBar$OnSwitchChangeListener;)V
+    invoke-virtual {v0, p0}, Lcom/android/settings_ext/widget/SwitchBar;->removeOnSwitchChangeListener(Lcom/android/settings_ext/widget/SwitchBar$OnSwitchChangeListener;)V
 
     .line 494
-    iget-object v0, p0, Lcom/android/settings/DevelopmentSettings;->mSwitchBar:Lcom/android/settings/widget/SwitchBar;
+    iget-object v0, p0, Lcom/android/settings_ext/DevelopmentSettings;->mSwitchBar:Lcom/android/settings_ext/widget/SwitchBar;
 
-    invoke-virtual {v0}, Lcom/android/settings/widget/SwitchBar;->hide()V
+    invoke-virtual {v0}, Lcom/android/settings_ext/widget/SwitchBar;->hide()V
 
     goto :goto_0
 .end method
@@ -6175,23 +6175,23 @@
     const/4 v1, 0x0
 
     .line 1579
-    iget-object v0, p0, Lcom/android/settings/DevelopmentSettings;->mAdbDialog:Landroid/app/Dialog;
+    iget-object v0, p0, Lcom/android/settings_ext/DevelopmentSettings;->mAdbDialog:Landroid/app/Dialog;
 
     if-ne p1, v0, :cond_2
 
     .line 1580
-    iget-boolean v0, p0, Lcom/android/settings/DevelopmentSettings;->mDialogClicked:Z
+    iget-boolean v0, p0, Lcom/android/settings_ext/DevelopmentSettings;->mDialogClicked:Z
 
     if-nez v0, :cond_0
 
     .line 1581
-    iget-object v0, p0, Lcom/android/settings/DevelopmentSettings;->mEnableAdb:Landroid/preference/SwitchPreference;
+    iget-object v0, p0, Lcom/android/settings_ext/DevelopmentSettings;->mEnableAdb:Landroid/preference/SwitchPreference;
 
     invoke-virtual {v0, v1}, Landroid/preference/SwitchPreference;->setChecked(Z)V
 
     .line 1583
     :cond_0
-    iput-object v2, p0, Lcom/android/settings/DevelopmentSettings;->mAdbDialog:Landroid/app/Dialog;
+    iput-object v2, p0, Lcom/android/settings_ext/DevelopmentSettings;->mAdbDialog:Landroid/app/Dialog;
 
     .line 1590
     :cond_1
@@ -6200,23 +6200,23 @@
 
     .line 1584
     :cond_2
-    iget-object v0, p0, Lcom/android/settings/DevelopmentSettings;->mEnableDialog:Landroid/app/Dialog;
+    iget-object v0, p0, Lcom/android/settings_ext/DevelopmentSettings;->mEnableDialog:Landroid/app/Dialog;
 
     if-ne p1, v0, :cond_1
 
     .line 1585
-    iget-boolean v0, p0, Lcom/android/settings/DevelopmentSettings;->mDialogClicked:Z
+    iget-boolean v0, p0, Lcom/android/settings_ext/DevelopmentSettings;->mDialogClicked:Z
 
     if-nez v0, :cond_3
 
     .line 1586
-    iget-object v0, p0, Lcom/android/settings/DevelopmentSettings;->mSwitchBar:Lcom/android/settings/widget/SwitchBar;
+    iget-object v0, p0, Lcom/android/settings_ext/DevelopmentSettings;->mSwitchBar:Lcom/android/settings_ext/widget/SwitchBar;
 
-    invoke-virtual {v0, v1}, Lcom/android/settings/widget/SwitchBar;->setChecked(Z)V
+    invoke-virtual {v0, v1}, Lcom/android/settings_ext/widget/SwitchBar;->setChecked(Z)V
 
     .line 1588
     :cond_3
-    iput-object v2, p0, Lcom/android/settings/DevelopmentSettings;->mEnableDialog:Landroid/app/Dialog;
+    iput-object v2, p0, Lcom/android/settings_ext/DevelopmentSettings;->mEnableDialog:Landroid/app/Dialog;
 
     goto :goto_0
 .end method
@@ -6254,10 +6254,10 @@
     invoke-static {v1, v2}, Landroid/os/SystemProperties;->set(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 1485
-    invoke-direct {p0}, Lcom/android/settings/DevelopmentSettings;->updateHdcpValues()V
+    invoke-direct {p0}, Lcom/android/settings_ext/DevelopmentSettings;->updateHdcpValues()V
 
     .line 1486
-    invoke-virtual {p0}, Lcom/android/settings/DevelopmentSettings;->pokeSystemProperties()V
+    invoke-virtual {p0}, Lcom/android/settings_ext/DevelopmentSettings;->pokeSystemProperties()V
 
     .line 1522
     :goto_0
@@ -6265,130 +6265,130 @@
 
     .line 1488
     :cond_0
-    iget-object v2, p0, Lcom/android/settings/DevelopmentSettings;->mLogdSize:Landroid/preference/ListPreference;
+    iget-object v2, p0, Lcom/android/settings_ext/DevelopmentSettings;->mLogdSize:Landroid/preference/ListPreference;
 
     if-ne p1, v2, :cond_1
 
     .line 1489
-    invoke-direct {p0, p2}, Lcom/android/settings/DevelopmentSettings;->writeLogdSizeOption(Ljava/lang/Object;)V
+    invoke-direct {p0, p2}, Lcom/android/settings_ext/DevelopmentSettings;->writeLogdSizeOption(Ljava/lang/Object;)V
 
     goto :goto_0
 
     .line 1491
     :cond_1
-    iget-object v2, p0, Lcom/android/settings/DevelopmentSettings;->mWindowAnimationScale:Landroid/preference/ListPreference;
+    iget-object v2, p0, Lcom/android/settings_ext/DevelopmentSettings;->mWindowAnimationScale:Landroid/preference/ListPreference;
 
     if-ne p1, v2, :cond_2
 
     .line 1492
-    iget-object v2, p0, Lcom/android/settings/DevelopmentSettings;->mWindowAnimationScale:Landroid/preference/ListPreference;
+    iget-object v2, p0, Lcom/android/settings_ext/DevelopmentSettings;->mWindowAnimationScale:Landroid/preference/ListPreference;
 
-    invoke-direct {p0, v1, v2, p2}, Lcom/android/settings/DevelopmentSettings;->writeAnimationScaleOption(ILandroid/preference/ListPreference;Ljava/lang/Object;)V
+    invoke-direct {p0, v1, v2, p2}, Lcom/android/settings_ext/DevelopmentSettings;->writeAnimationScaleOption(ILandroid/preference/ListPreference;Ljava/lang/Object;)V
 
     goto :goto_0
 
     .line 1494
     :cond_2
-    iget-object v2, p0, Lcom/android/settings/DevelopmentSettings;->mTransitionAnimationScale:Landroid/preference/ListPreference;
+    iget-object v2, p0, Lcom/android/settings_ext/DevelopmentSettings;->mTransitionAnimationScale:Landroid/preference/ListPreference;
 
     if-ne p1, v2, :cond_3
 
     .line 1495
-    iget-object v1, p0, Lcom/android/settings/DevelopmentSettings;->mTransitionAnimationScale:Landroid/preference/ListPreference;
+    iget-object v1, p0, Lcom/android/settings_ext/DevelopmentSettings;->mTransitionAnimationScale:Landroid/preference/ListPreference;
 
-    invoke-direct {p0, v0, v1, p2}, Lcom/android/settings/DevelopmentSettings;->writeAnimationScaleOption(ILandroid/preference/ListPreference;Ljava/lang/Object;)V
+    invoke-direct {p0, v0, v1, p2}, Lcom/android/settings_ext/DevelopmentSettings;->writeAnimationScaleOption(ILandroid/preference/ListPreference;Ljava/lang/Object;)V
 
     goto :goto_0
 
     .line 1497
     :cond_3
-    iget-object v2, p0, Lcom/android/settings/DevelopmentSettings;->mAnimatorDurationScale:Landroid/preference/ListPreference;
+    iget-object v2, p0, Lcom/android/settings_ext/DevelopmentSettings;->mAnimatorDurationScale:Landroid/preference/ListPreference;
 
     if-ne p1, v2, :cond_4
 
     .line 1498
     const/4 v1, 0x2
 
-    iget-object v2, p0, Lcom/android/settings/DevelopmentSettings;->mAnimatorDurationScale:Landroid/preference/ListPreference;
+    iget-object v2, p0, Lcom/android/settings_ext/DevelopmentSettings;->mAnimatorDurationScale:Landroid/preference/ListPreference;
 
-    invoke-direct {p0, v1, v2, p2}, Lcom/android/settings/DevelopmentSettings;->writeAnimationScaleOption(ILandroid/preference/ListPreference;Ljava/lang/Object;)V
+    invoke-direct {p0, v1, v2, p2}, Lcom/android/settings_ext/DevelopmentSettings;->writeAnimationScaleOption(ILandroid/preference/ListPreference;Ljava/lang/Object;)V
 
     goto :goto_0
 
     .line 1500
     :cond_4
-    iget-object v2, p0, Lcom/android/settings/DevelopmentSettings;->mOverlayDisplayDevices:Landroid/preference/ListPreference;
+    iget-object v2, p0, Lcom/android/settings_ext/DevelopmentSettings;->mOverlayDisplayDevices:Landroid/preference/ListPreference;
 
     if-ne p1, v2, :cond_5
 
     .line 1501
-    invoke-direct {p0, p2}, Lcom/android/settings/DevelopmentSettings;->writeOverlayDisplayDevicesOptions(Ljava/lang/Object;)V
+    invoke-direct {p0, p2}, Lcom/android/settings_ext/DevelopmentSettings;->writeOverlayDisplayDevicesOptions(Ljava/lang/Object;)V
 
     goto :goto_0
 
     .line 1503
     :cond_5
-    iget-object v2, p0, Lcom/android/settings/DevelopmentSettings;->mOpenGLTraces:Landroid/preference/ListPreference;
+    iget-object v2, p0, Lcom/android/settings_ext/DevelopmentSettings;->mOpenGLTraces:Landroid/preference/ListPreference;
 
     if-ne p1, v2, :cond_6
 
     .line 1504
-    invoke-direct {p0, p2}, Lcom/android/settings/DevelopmentSettings;->writeOpenGLTracesOptions(Ljava/lang/Object;)V
+    invoke-direct {p0, p2}, Lcom/android/settings_ext/DevelopmentSettings;->writeOpenGLTracesOptions(Ljava/lang/Object;)V
 
     goto :goto_0
 
     .line 1506
     :cond_6
-    iget-object v2, p0, Lcom/android/settings/DevelopmentSettings;->mTrackFrameTime:Landroid/preference/ListPreference;
+    iget-object v2, p0, Lcom/android/settings_ext/DevelopmentSettings;->mTrackFrameTime:Landroid/preference/ListPreference;
 
     if-ne p1, v2, :cond_7
 
     .line 1507
-    invoke-direct {p0, p2}, Lcom/android/settings/DevelopmentSettings;->writeTrackFrameTimeOptions(Ljava/lang/Object;)V
+    invoke-direct {p0, p2}, Lcom/android/settings_ext/DevelopmentSettings;->writeTrackFrameTimeOptions(Ljava/lang/Object;)V
 
     goto :goto_0
 
     .line 1509
     :cond_7
-    iget-object v2, p0, Lcom/android/settings/DevelopmentSettings;->mDebugHwOverdraw:Landroid/preference/ListPreference;
+    iget-object v2, p0, Lcom/android/settings_ext/DevelopmentSettings;->mDebugHwOverdraw:Landroid/preference/ListPreference;
 
     if-ne p1, v2, :cond_8
 
     .line 1510
-    invoke-direct {p0, p2}, Lcom/android/settings/DevelopmentSettings;->writeDebugHwOverdrawOptions(Ljava/lang/Object;)V
+    invoke-direct {p0, p2}, Lcom/android/settings_ext/DevelopmentSettings;->writeDebugHwOverdrawOptions(Ljava/lang/Object;)V
 
     goto :goto_0
 
     .line 1512
     :cond_8
-    iget-object v2, p0, Lcom/android/settings/DevelopmentSettings;->mShowNonRectClip:Landroid/preference/ListPreference;
+    iget-object v2, p0, Lcom/android/settings_ext/DevelopmentSettings;->mShowNonRectClip:Landroid/preference/ListPreference;
 
     if-ne p1, v2, :cond_9
 
     .line 1513
-    invoke-direct {p0, p2}, Lcom/android/settings/DevelopmentSettings;->writeShowNonRectClipOptions(Ljava/lang/Object;)V
+    invoke-direct {p0, p2}, Lcom/android/settings_ext/DevelopmentSettings;->writeShowNonRectClipOptions(Ljava/lang/Object;)V
 
     goto :goto_0
 
     .line 1515
     :cond_9
-    iget-object v2, p0, Lcom/android/settings/DevelopmentSettings;->mAppProcessLimit:Landroid/preference/ListPreference;
+    iget-object v2, p0, Lcom/android/settings_ext/DevelopmentSettings;->mAppProcessLimit:Landroid/preference/ListPreference;
 
     if-ne p1, v2, :cond_a
 
     .line 1516
-    invoke-direct {p0, p2}, Lcom/android/settings/DevelopmentSettings;->writeAppProcessLimitOptions(Ljava/lang/Object;)V
+    invoke-direct {p0, p2}, Lcom/android/settings_ext/DevelopmentSettings;->writeAppProcessLimitOptions(Ljava/lang/Object;)V
 
     goto :goto_0
 
     .line 1518
     :cond_a
-    iget-object v2, p0, Lcom/android/settings/DevelopmentSettings;->mSimulateColorSpace:Landroid/preference/ListPreference;
+    iget-object v2, p0, Lcom/android/settings_ext/DevelopmentSettings;->mSimulateColorSpace:Landroid/preference/ListPreference;
 
     if-ne p1, v2, :cond_b
 
     .line 1519
-    invoke-direct {p0, p2}, Lcom/android/settings/DevelopmentSettings;->writeSimulateColorSpace(Ljava/lang/Object;)V
+    invoke-direct {p0, p2}, Lcom/android/settings_ext/DevelopmentSettings;->writeSimulateColorSpace(Ljava/lang/Object;)V
 
     goto :goto_0
 
@@ -6410,7 +6410,7 @@
     const/4 v2, 0x0
 
     .line 1360
-    invoke-static {}, Lcom/android/settings/Utils;->isMonkeyRunning()Z
+    invoke-static {}, Lcom/android/settings_ext/Utils;->isMonkeyRunning()Z
 
     move-result v3
 
@@ -6423,12 +6423,12 @@
 
     .line 1364
     :cond_1
-    iget-object v3, p0, Lcom/android/settings/DevelopmentSettings;->mEnableAdb:Landroid/preference/SwitchPreference;
+    iget-object v3, p0, Lcom/android/settings_ext/DevelopmentSettings;->mEnableAdb:Landroid/preference/SwitchPreference;
 
     if-ne p2, v3, :cond_4
 
     .line 1365
-    iget-object v1, p0, Lcom/android/settings/DevelopmentSettings;->mEnableAdb:Landroid/preference/SwitchPreference;
+    iget-object v1, p0, Lcom/android/settings_ext/DevelopmentSettings;->mEnableAdb:Landroid/preference/SwitchPreference;
 
     invoke-virtual {v1}, Landroid/preference/SwitchPreference;->isChecked()Z
 
@@ -6437,26 +6437,26 @@
     if-eqz v1, :cond_3
 
     .line 1366
-    iput-boolean v2, p0, Lcom/android/settings/DevelopmentSettings;->mDialogClicked:Z
+    iput-boolean v2, p0, Lcom/android/settings_ext/DevelopmentSettings;->mDialogClicked:Z
 
     .line 1367
-    iget-object v1, p0, Lcom/android/settings/DevelopmentSettings;->mAdbDialog:Landroid/app/Dialog;
+    iget-object v1, p0, Lcom/android/settings_ext/DevelopmentSettings;->mAdbDialog:Landroid/app/Dialog;
 
     if-eqz v1, :cond_2
 
-    invoke-direct {p0}, Lcom/android/settings/DevelopmentSettings;->dismissDialogs()V
+    invoke-direct {p0}, Lcom/android/settings_ext/DevelopmentSettings;->dismissDialogs()V
 
     .line 1368
     :cond_2
     new-instance v1, Landroid/app/AlertDialog$Builder;
 
-    invoke-virtual {p0}, Lcom/android/settings/DevelopmentSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/DevelopmentSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v3
 
     invoke-direct {v1, v3}, Landroid/app/AlertDialog$Builder;-><init>(Landroid/content/Context;)V
 
-    invoke-virtual {p0}, Lcom/android/settings/DevelopmentSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/DevelopmentSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v3
 
@@ -6496,10 +6496,10 @@
 
     move-result-object v1
 
-    iput-object v1, p0, Lcom/android/settings/DevelopmentSettings;->mAdbDialog:Landroid/app/Dialog;
+    iput-object v1, p0, Lcom/android/settings_ext/DevelopmentSettings;->mAdbDialog:Landroid/app/Dialog;
 
     .line 1374
-    iget-object v1, p0, Lcom/android/settings/DevelopmentSettings;->mAdbDialog:Landroid/app/Dialog;
+    iget-object v1, p0, Lcom/android/settings_ext/DevelopmentSettings;->mAdbDialog:Landroid/app/Dialog;
 
     invoke-virtual {v1, p0}, Landroid/app/Dialog;->setOnDismissListener(Landroid/content/DialogInterface$OnDismissListener;)V
 
@@ -6507,7 +6507,7 @@
 
     .line 1376
     :cond_3
-    invoke-virtual {p0}, Lcom/android/settings/DevelopmentSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/DevelopmentSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v1
 
@@ -6520,38 +6520,38 @@
     invoke-static {v1, v3, v2}, Landroid/provider/Settings$Global;->putInt(Landroid/content/ContentResolver;Ljava/lang/String;I)Z
 
     .line 1378
-    iget-object v1, p0, Lcom/android/settings/DevelopmentSettings;->mVerifyAppsOverUsb:Landroid/preference/SwitchPreference;
+    iget-object v1, p0, Lcom/android/settings_ext/DevelopmentSettings;->mVerifyAppsOverUsb:Landroid/preference/SwitchPreference;
 
     invoke-virtual {v1, v2}, Landroid/preference/SwitchPreference;->setEnabled(Z)V
 
     .line 1379
-    iget-object v1, p0, Lcom/android/settings/DevelopmentSettings;->mVerifyAppsOverUsb:Landroid/preference/SwitchPreference;
+    iget-object v1, p0, Lcom/android/settings_ext/DevelopmentSettings;->mVerifyAppsOverUsb:Landroid/preference/SwitchPreference;
 
     invoke-virtual {v1, v2}, Landroid/preference/SwitchPreference;->setChecked(Z)V
 
     .line 1380
-    invoke-direct {p0}, Lcom/android/settings/DevelopmentSettings;->updateBugreportOptions()V
+    invoke-direct {p0}, Lcom/android/settings_ext/DevelopmentSettings;->updateBugreportOptions()V
 
     goto :goto_0
 
     .line 1382
     :cond_4
-    iget-object v3, p0, Lcom/android/settings/DevelopmentSettings;->mClearAdbKeys:Landroid/preference/Preference;
+    iget-object v3, p0, Lcom/android/settings_ext/DevelopmentSettings;->mClearAdbKeys:Landroid/preference/Preference;
 
     if-ne p2, v3, :cond_6
 
     .line 1383
-    iget-object v1, p0, Lcom/android/settings/DevelopmentSettings;->mAdbKeysDialog:Landroid/app/Dialog;
+    iget-object v1, p0, Lcom/android/settings_ext/DevelopmentSettings;->mAdbKeysDialog:Landroid/app/Dialog;
 
     if-eqz v1, :cond_5
 
-    invoke-direct {p0}, Lcom/android/settings/DevelopmentSettings;->dismissDialogs()V
+    invoke-direct {p0}, Lcom/android/settings_ext/DevelopmentSettings;->dismissDialogs()V
 
     .line 1384
     :cond_5
     new-instance v1, Landroid/app/AlertDialog$Builder;
 
-    invoke-virtual {p0}, Lcom/android/settings/DevelopmentSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/DevelopmentSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v3
 
@@ -6581,18 +6581,18 @@
 
     move-result-object v1
 
-    iput-object v1, p0, Lcom/android/settings/DevelopmentSettings;->mAdbKeysDialog:Landroid/app/Dialog;
+    iput-object v1, p0, Lcom/android/settings_ext/DevelopmentSettings;->mAdbKeysDialog:Landroid/app/Dialog;
 
     goto/16 :goto_0
 
     .line 1389
     :cond_6
-    iget-object v3, p0, Lcom/android/settings/DevelopmentSettings;->mEnableTerminal:Landroid/preference/SwitchPreference;
+    iget-object v3, p0, Lcom/android/settings_ext/DevelopmentSettings;->mEnableTerminal:Landroid/preference/SwitchPreference;
 
     if-ne p2, v3, :cond_8
 
     .line 1390
-    invoke-virtual {p0}, Lcom/android/settings/DevelopmentSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/DevelopmentSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v3
 
@@ -6604,7 +6604,7 @@
     .local v0, "pm":Landroid/content/pm/PackageManager;
     const-string v3, "com.android.terminal"
 
-    iget-object v4, p0, Lcom/android/settings/DevelopmentSettings;->mEnableTerminal:Landroid/preference/SwitchPreference;
+    iget-object v4, p0, Lcom/android/settings_ext/DevelopmentSettings;->mEnableTerminal:Landroid/preference/SwitchPreference;
 
     invoke-virtual {v4}, Landroid/preference/SwitchPreference;->isChecked()Z
 
@@ -6625,12 +6625,12 @@
     .line 1394
     .end local v0    # "pm":Landroid/content/pm/PackageManager;
     :cond_8
-    iget-object v3, p0, Lcom/android/settings/DevelopmentSettings;->mBugreportInPower:Landroid/preference/SwitchPreference;
+    iget-object v3, p0, Lcom/android/settings_ext/DevelopmentSettings;->mBugreportInPower:Landroid/preference/SwitchPreference;
 
     if-ne p2, v3, :cond_a
 
     .line 1395
-    invoke-virtual {p0}, Lcom/android/settings/DevelopmentSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/DevelopmentSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v3
 
@@ -6640,7 +6640,7 @@
 
     const-string v4, "bugreport_in_power_menu"
 
-    iget-object v5, p0, Lcom/android/settings/DevelopmentSettings;->mBugreportInPower:Landroid/preference/SwitchPreference;
+    iget-object v5, p0, Lcom/android/settings_ext/DevelopmentSettings;->mBugreportInPower:Landroid/preference/SwitchPreference;
 
     invoke-virtual {v5}, Landroid/preference/SwitchPreference;->isChecked()Z
 
@@ -6660,12 +6660,12 @@
 
     .line 1398
     :cond_a
-    iget-object v3, p0, Lcom/android/settings/DevelopmentSettings;->mKeepScreenOn:Landroid/preference/SwitchPreference;
+    iget-object v3, p0, Lcom/android/settings_ext/DevelopmentSettings;->mKeepScreenOn:Landroid/preference/SwitchPreference;
 
     if-ne p2, v3, :cond_c
 
     .line 1399
-    invoke-virtual {p0}, Lcom/android/settings/DevelopmentSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/DevelopmentSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v1
 
@@ -6675,7 +6675,7 @@
 
     const-string v4, "stay_on_while_plugged_in"
 
-    iget-object v1, p0, Lcom/android/settings/DevelopmentSettings;->mKeepScreenOn:Landroid/preference/SwitchPreference;
+    iget-object v1, p0, Lcom/android/settings_ext/DevelopmentSettings;->mKeepScreenOn:Landroid/preference/SwitchPreference;
 
     invoke-virtual {v1}, Landroid/preference/SwitchPreference;->isChecked()Z
 
@@ -6697,34 +6697,34 @@
 
     .line 1403
     :cond_c
-    iget-object v3, p0, Lcom/android/settings/DevelopmentSettings;->mBtHciSnoopLog:Landroid/preference/SwitchPreference;
+    iget-object v3, p0, Lcom/android/settings_ext/DevelopmentSettings;->mBtHciSnoopLog:Landroid/preference/SwitchPreference;
 
     if-ne p2, v3, :cond_d
 
     .line 1404
-    invoke-direct {p0}, Lcom/android/settings/DevelopmentSettings;->writeBtHciSnoopLogOptions()V
+    invoke-direct {p0}, Lcom/android/settings_ext/DevelopmentSettings;->writeBtHciSnoopLogOptions()V
 
     goto/16 :goto_0
 
     .line 1405
     :cond_d
-    iget-object v3, p0, Lcom/android/settings/DevelopmentSettings;->mEnableOemUnlock:Landroid/preference/SwitchPreference;
+    iget-object v3, p0, Lcom/android/settings_ext/DevelopmentSettings;->mEnableOemUnlock:Landroid/preference/SwitchPreference;
 
     if-ne p2, v3, :cond_f
 
     .line 1406
-    invoke-virtual {p0}, Lcom/android/settings/DevelopmentSettings;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {p0}, Lcom/android/settings_ext/DevelopmentSettings;->getResources()Landroid/content/res/Resources;
 
     move-result-object v1
 
-    invoke-direct {p0, v1, v2}, Lcom/android/settings/DevelopmentSettings;->showKeyguardConfirmation(Landroid/content/res/Resources;I)Z
+    invoke-direct {p0, v1, v2}, Lcom/android/settings_ext/DevelopmentSettings;->showKeyguardConfirmation(Landroid/content/res/Resources;I)Z
 
     move-result v1
 
     if-nez v1, :cond_0
 
     .line 1407
-    iget-object v1, p0, Lcom/android/settings/DevelopmentSettings;->mEnableOemUnlock:Landroid/preference/SwitchPreference;
+    iget-object v1, p0, Lcom/android/settings_ext/DevelopmentSettings;->mEnableOemUnlock:Landroid/preference/SwitchPreference;
 
     invoke-virtual {v1}, Landroid/preference/SwitchPreference;->isChecked()Z
 
@@ -6733,28 +6733,28 @@
     if-eqz v1, :cond_e
 
     .line 1408
-    invoke-direct {p0}, Lcom/android/settings/DevelopmentSettings;->confirmEnableOemUnlock()V
+    invoke-direct {p0}, Lcom/android/settings_ext/DevelopmentSettings;->confirmEnableOemUnlock()V
 
     goto/16 :goto_0
 
     .line 1410
     :cond_e
-    invoke-virtual {p0}, Lcom/android/settings/DevelopmentSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/DevelopmentSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v1
 
-    invoke-static {v1, v2}, Lcom/android/settings/Utils;->setOemUnlockEnabled(Landroid/content/Context;Z)V
+    invoke-static {v1, v2}, Lcom/android/settings_ext/Utils;->setOemUnlockEnabled(Landroid/content/Context;Z)V
 
     goto/16 :goto_0
 
     .line 1413
     :cond_f
-    iget-object v3, p0, Lcom/android/settings/DevelopmentSettings;->mAllowMockLocation:Landroid/preference/SwitchPreference;
+    iget-object v3, p0, Lcom/android/settings_ext/DevelopmentSettings;->mAllowMockLocation:Landroid/preference/SwitchPreference;
 
     if-ne p2, v3, :cond_11
 
     .line 1414
-    invoke-virtual {p0}, Lcom/android/settings/DevelopmentSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/DevelopmentSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v3
 
@@ -6764,7 +6764,7 @@
 
     const-string v4, "mock_location"
 
-    iget-object v5, p0, Lcom/android/settings/DevelopmentSettings;->mAllowMockLocation:Landroid/preference/SwitchPreference;
+    iget-object v5, p0, Lcom/android/settings_ext/DevelopmentSettings;->mAllowMockLocation:Landroid/preference/SwitchPreference;
 
     invoke-virtual {v5}, Landroid/preference/SwitchPreference;->isChecked()Z
 
@@ -6784,12 +6784,12 @@
 
     .line 1417
     :cond_11
-    iget-object v3, p0, Lcom/android/settings/DevelopmentSettings;->mDebugViewAttributes:Landroid/preference/SwitchPreference;
+    iget-object v3, p0, Lcom/android/settings_ext/DevelopmentSettings;->mDebugViewAttributes:Landroid/preference/SwitchPreference;
 
     if-ne p2, v3, :cond_13
 
     .line 1418
-    invoke-virtual {p0}, Lcom/android/settings/DevelopmentSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/DevelopmentSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v3
 
@@ -6799,7 +6799,7 @@
 
     const-string v4, "debug_view_attributes"
 
-    iget-object v5, p0, Lcom/android/settings/DevelopmentSettings;->mDebugViewAttributes:Landroid/preference/SwitchPreference;
+    iget-object v5, p0, Lcom/android/settings_ext/DevelopmentSettings;->mDebugViewAttributes:Landroid/preference/SwitchPreference;
 
     invoke-virtual {v5}, Landroid/preference/SwitchPreference;->isChecked()Z
 
@@ -6819,272 +6819,272 @@
 
     .line 1421
     :cond_13
-    iget-object v1, p0, Lcom/android/settings/DevelopmentSettings;->mDebugAppPref:Landroid/preference/Preference;
+    iget-object v1, p0, Lcom/android/settings_ext/DevelopmentSettings;->mDebugAppPref:Landroid/preference/Preference;
 
     if-ne p2, v1, :cond_14
 
     .line 1422
     new-instance v1, Landroid/content/Intent;
 
-    invoke-virtual {p0}, Lcom/android/settings/DevelopmentSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/DevelopmentSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v3
 
-    const-class v4, Lcom/android/settings/AppPicker;
+    const-class v4, Lcom/android/settings_ext/AppPicker;
 
     invoke-direct {v1, v3, v4}, Landroid/content/Intent;-><init>(Landroid/content/Context;Ljava/lang/Class;)V
 
     const/16 v3, 0x3e8
 
-    invoke-virtual {p0, v1, v3}, Lcom/android/settings/DevelopmentSettings;->startActivityForResult(Landroid/content/Intent;I)V
+    invoke-virtual {p0, v1, v3}, Lcom/android/settings_ext/DevelopmentSettings;->startActivityForResult(Landroid/content/Intent;I)V
 
     goto/16 :goto_0
 
     .line 1423
     :cond_14
-    iget-object v1, p0, Lcom/android/settings/DevelopmentSettings;->mWaitForDebugger:Landroid/preference/SwitchPreference;
+    iget-object v1, p0, Lcom/android/settings_ext/DevelopmentSettings;->mWaitForDebugger:Landroid/preference/SwitchPreference;
 
     if-ne p2, v1, :cond_15
 
     .line 1424
-    invoke-direct {p0}, Lcom/android/settings/DevelopmentSettings;->writeDebuggerOptions()V
+    invoke-direct {p0}, Lcom/android/settings_ext/DevelopmentSettings;->writeDebuggerOptions()V
 
     goto/16 :goto_0
 
     .line 1425
     :cond_15
-    iget-object v1, p0, Lcom/android/settings/DevelopmentSettings;->mVerifyAppsOverUsb:Landroid/preference/SwitchPreference;
+    iget-object v1, p0, Lcom/android/settings_ext/DevelopmentSettings;->mVerifyAppsOverUsb:Landroid/preference/SwitchPreference;
 
     if-ne p2, v1, :cond_16
 
     .line 1426
-    invoke-direct {p0}, Lcom/android/settings/DevelopmentSettings;->writeVerifyAppsOverUsbOptions()V
+    invoke-direct {p0}, Lcom/android/settings_ext/DevelopmentSettings;->writeVerifyAppsOverUsbOptions()V
 
     goto/16 :goto_0
 
     .line 1427
     :cond_16
-    iget-object v1, p0, Lcom/android/settings/DevelopmentSettings;->mStrictMode:Landroid/preference/SwitchPreference;
+    iget-object v1, p0, Lcom/android/settings_ext/DevelopmentSettings;->mStrictMode:Landroid/preference/SwitchPreference;
 
     if-ne p2, v1, :cond_17
 
     .line 1428
-    invoke-direct {p0}, Lcom/android/settings/DevelopmentSettings;->writeStrictModeVisualOptions()V
+    invoke-direct {p0}, Lcom/android/settings_ext/DevelopmentSettings;->writeStrictModeVisualOptions()V
 
     goto/16 :goto_0
 
     .line 1429
     :cond_17
-    iget-object v1, p0, Lcom/android/settings/DevelopmentSettings;->mPointerLocation:Landroid/preference/SwitchPreference;
+    iget-object v1, p0, Lcom/android/settings_ext/DevelopmentSettings;->mPointerLocation:Landroid/preference/SwitchPreference;
 
     if-ne p2, v1, :cond_18
 
     .line 1430
-    invoke-direct {p0}, Lcom/android/settings/DevelopmentSettings;->writePointerLocationOptions()V
+    invoke-direct {p0}, Lcom/android/settings_ext/DevelopmentSettings;->writePointerLocationOptions()V
 
     goto/16 :goto_0
 
     .line 1431
     :cond_18
-    iget-object v1, p0, Lcom/android/settings/DevelopmentSettings;->mShowTouches:Landroid/preference/SwitchPreference;
+    iget-object v1, p0, Lcom/android/settings_ext/DevelopmentSettings;->mShowTouches:Landroid/preference/SwitchPreference;
 
     if-ne p2, v1, :cond_19
 
     .line 1432
-    invoke-direct {p0}, Lcom/android/settings/DevelopmentSettings;->writeShowTouchesOptions()V
+    invoke-direct {p0}, Lcom/android/settings_ext/DevelopmentSettings;->writeShowTouchesOptions()V
 
     goto/16 :goto_0
 
     .line 1433
     :cond_19
-    iget-object v1, p0, Lcom/android/settings/DevelopmentSettings;->mShowScreenUpdates:Landroid/preference/SwitchPreference;
+    iget-object v1, p0, Lcom/android/settings_ext/DevelopmentSettings;->mShowScreenUpdates:Landroid/preference/SwitchPreference;
 
     if-ne p2, v1, :cond_1a
 
     .line 1434
-    invoke-direct {p0}, Lcom/android/settings/DevelopmentSettings;->writeShowUpdatesOption()V
+    invoke-direct {p0}, Lcom/android/settings_ext/DevelopmentSettings;->writeShowUpdatesOption()V
 
     goto/16 :goto_0
 
     .line 1435
     :cond_1a
-    iget-object v1, p0, Lcom/android/settings/DevelopmentSettings;->mDisableOverlays:Landroid/preference/SwitchPreference;
+    iget-object v1, p0, Lcom/android/settings_ext/DevelopmentSettings;->mDisableOverlays:Landroid/preference/SwitchPreference;
 
     if-ne p2, v1, :cond_1b
 
     .line 1436
-    invoke-direct {p0}, Lcom/android/settings/DevelopmentSettings;->writeDisableOverlaysOption()V
+    invoke-direct {p0}, Lcom/android/settings_ext/DevelopmentSettings;->writeDisableOverlaysOption()V
 
     goto/16 :goto_0
 
     .line 1437
     :cond_1b
-    iget-object v1, p0, Lcom/android/settings/DevelopmentSettings;->mShowCpuUsage:Landroid/preference/SwitchPreference;
+    iget-object v1, p0, Lcom/android/settings_ext/DevelopmentSettings;->mShowCpuUsage:Landroid/preference/SwitchPreference;
 
     if-ne p2, v1, :cond_1c
 
     .line 1438
-    invoke-direct {p0}, Lcom/android/settings/DevelopmentSettings;->writeCpuUsageOptions()V
+    invoke-direct {p0}, Lcom/android/settings_ext/DevelopmentSettings;->writeCpuUsageOptions()V
 
     goto/16 :goto_0
 
     .line 1439
     :cond_1c
-    iget-object v1, p0, Lcom/android/settings/DevelopmentSettings;->mImmediatelyDestroyActivities:Landroid/preference/SwitchPreference;
+    iget-object v1, p0, Lcom/android/settings_ext/DevelopmentSettings;->mImmediatelyDestroyActivities:Landroid/preference/SwitchPreference;
 
     if-ne p2, v1, :cond_1d
 
     .line 1440
-    invoke-direct {p0}, Lcom/android/settings/DevelopmentSettings;->writeImmediatelyDestroyActivitiesOptions()V
+    invoke-direct {p0}, Lcom/android/settings_ext/DevelopmentSettings;->writeImmediatelyDestroyActivitiesOptions()V
 
     goto/16 :goto_0
 
     .line 1441
     :cond_1d
-    iget-object v1, p0, Lcom/android/settings/DevelopmentSettings;->mShowAllANRs:Landroid/preference/SwitchPreference;
+    iget-object v1, p0, Lcom/android/settings_ext/DevelopmentSettings;->mShowAllANRs:Landroid/preference/SwitchPreference;
 
     if-ne p2, v1, :cond_1e
 
     .line 1442
-    invoke-direct {p0}, Lcom/android/settings/DevelopmentSettings;->writeShowAllANRsOptions()V
+    invoke-direct {p0}, Lcom/android/settings_ext/DevelopmentSettings;->writeShowAllANRsOptions()V
 
     goto/16 :goto_0
 
     .line 1443
     :cond_1e
-    iget-object v1, p0, Lcom/android/settings/DevelopmentSettings;->mForceHardwareUi:Landroid/preference/SwitchPreference;
+    iget-object v1, p0, Lcom/android/settings_ext/DevelopmentSettings;->mForceHardwareUi:Landroid/preference/SwitchPreference;
 
     if-ne p2, v1, :cond_1f
 
     .line 1444
-    invoke-direct {p0}, Lcom/android/settings/DevelopmentSettings;->writeHardwareUiOptions()V
+    invoke-direct {p0}, Lcom/android/settings_ext/DevelopmentSettings;->writeHardwareUiOptions()V
 
     goto/16 :goto_0
 
     .line 1445
     :cond_1f
-    iget-object v1, p0, Lcom/android/settings/DevelopmentSettings;->mForceMsaa:Landroid/preference/SwitchPreference;
+    iget-object v1, p0, Lcom/android/settings_ext/DevelopmentSettings;->mForceMsaa:Landroid/preference/SwitchPreference;
 
     if-ne p2, v1, :cond_20
 
     .line 1446
-    invoke-direct {p0}, Lcom/android/settings/DevelopmentSettings;->writeMsaaOptions()V
+    invoke-direct {p0}, Lcom/android/settings_ext/DevelopmentSettings;->writeMsaaOptions()V
 
     goto/16 :goto_0
 
     .line 1447
     :cond_20
-    iget-object v1, p0, Lcom/android/settings/DevelopmentSettings;->mShowHwScreenUpdates:Landroid/preference/SwitchPreference;
+    iget-object v1, p0, Lcom/android/settings_ext/DevelopmentSettings;->mShowHwScreenUpdates:Landroid/preference/SwitchPreference;
 
     if-ne p2, v1, :cond_21
 
     .line 1448
-    invoke-direct {p0}, Lcom/android/settings/DevelopmentSettings;->writeShowHwScreenUpdatesOptions()V
+    invoke-direct {p0}, Lcom/android/settings_ext/DevelopmentSettings;->writeShowHwScreenUpdatesOptions()V
 
     goto/16 :goto_0
 
     .line 1449
     :cond_21
-    iget-object v1, p0, Lcom/android/settings/DevelopmentSettings;->mShowHwLayersUpdates:Landroid/preference/SwitchPreference;
+    iget-object v1, p0, Lcom/android/settings_ext/DevelopmentSettings;->mShowHwLayersUpdates:Landroid/preference/SwitchPreference;
 
     if-ne p2, v1, :cond_22
 
     .line 1450
-    invoke-direct {p0}, Lcom/android/settings/DevelopmentSettings;->writeShowHwLayersUpdatesOptions()V
+    invoke-direct {p0}, Lcom/android/settings_ext/DevelopmentSettings;->writeShowHwLayersUpdatesOptions()V
 
     goto/16 :goto_0
 
     .line 1451
     :cond_22
-    iget-object v1, p0, Lcom/android/settings/DevelopmentSettings;->mDebugLayout:Landroid/preference/SwitchPreference;
+    iget-object v1, p0, Lcom/android/settings_ext/DevelopmentSettings;->mDebugLayout:Landroid/preference/SwitchPreference;
 
     if-ne p2, v1, :cond_23
 
     .line 1452
-    invoke-direct {p0}, Lcom/android/settings/DevelopmentSettings;->writeDebugLayoutOptions()V
+    invoke-direct {p0}, Lcom/android/settings_ext/DevelopmentSettings;->writeDebugLayoutOptions()V
 
     goto/16 :goto_0
 
     .line 1453
     :cond_23
-    iget-object v1, p0, Lcom/android/settings/DevelopmentSettings;->mForceRtlLayout:Landroid/preference/SwitchPreference;
+    iget-object v1, p0, Lcom/android/settings_ext/DevelopmentSettings;->mForceRtlLayout:Landroid/preference/SwitchPreference;
 
     if-ne p2, v1, :cond_24
 
     .line 1454
-    invoke-direct {p0}, Lcom/android/settings/DevelopmentSettings;->writeForceRtlOptions()V
+    invoke-direct {p0}, Lcom/android/settings_ext/DevelopmentSettings;->writeForceRtlOptions()V
 
     goto/16 :goto_0
 
     .line 1455
     :cond_24
-    iget-object v1, p0, Lcom/android/settings/DevelopmentSettings;->mWifiDisplayCertification:Landroid/preference/SwitchPreference;
+    iget-object v1, p0, Lcom/android/settings_ext/DevelopmentSettings;->mWifiDisplayCertification:Landroid/preference/SwitchPreference;
 
     if-ne p2, v1, :cond_25
 
     .line 1456
-    invoke-direct {p0}, Lcom/android/settings/DevelopmentSettings;->writeWifiDisplayCertificationOptions()V
+    invoke-direct {p0}, Lcom/android/settings_ext/DevelopmentSettings;->writeWifiDisplayCertificationOptions()V
 
     goto/16 :goto_0
 
     .line 1457
     :cond_25
-    iget-object v1, p0, Lcom/android/settings/DevelopmentSettings;->mWifiVerboseLogging:Landroid/preference/SwitchPreference;
+    iget-object v1, p0, Lcom/android/settings_ext/DevelopmentSettings;->mWifiVerboseLogging:Landroid/preference/SwitchPreference;
 
     if-ne p2, v1, :cond_26
 
     .line 1458
-    invoke-direct {p0}, Lcom/android/settings/DevelopmentSettings;->writeWifiVerboseLoggingOptions()V
+    invoke-direct {p0}, Lcom/android/settings_ext/DevelopmentSettings;->writeWifiVerboseLoggingOptions()V
 
     goto/16 :goto_0
 
     .line 1459
     :cond_26
-    iget-object v1, p0, Lcom/android/settings/DevelopmentSettings;->mWifiAggressiveHandover:Landroid/preference/SwitchPreference;
+    iget-object v1, p0, Lcom/android/settings_ext/DevelopmentSettings;->mWifiAggressiveHandover:Landroid/preference/SwitchPreference;
 
     if-ne p2, v1, :cond_27
 
     .line 1460
-    invoke-direct {p0}, Lcom/android/settings/DevelopmentSettings;->writeWifiAggressiveHandoverOptions()V
+    invoke-direct {p0}, Lcom/android/settings_ext/DevelopmentSettings;->writeWifiAggressiveHandoverOptions()V
 
     goto/16 :goto_0
 
     .line 1461
     :cond_27
-    iget-object v1, p0, Lcom/android/settings/DevelopmentSettings;->mWifiAllowScansWithTraffic:Landroid/preference/SwitchPreference;
+    iget-object v1, p0, Lcom/android/settings_ext/DevelopmentSettings;->mWifiAllowScansWithTraffic:Landroid/preference/SwitchPreference;
 
     if-ne p2, v1, :cond_28
 
     .line 1462
-    invoke-direct {p0}, Lcom/android/settings/DevelopmentSettings;->writeWifiAllowScansWithTrafficOptions()V
+    invoke-direct {p0}, Lcom/android/settings_ext/DevelopmentSettings;->writeWifiAllowScansWithTrafficOptions()V
 
     goto/16 :goto_0
 
     .line 1463
     :cond_28
-    iget-object v1, p0, Lcom/android/settings/DevelopmentSettings;->mUseAwesomePlayer:Landroid/preference/SwitchPreference;
+    iget-object v1, p0, Lcom/android/settings_ext/DevelopmentSettings;->mUseAwesomePlayer:Landroid/preference/SwitchPreference;
 
     if-ne p2, v1, :cond_29
 
     .line 1464
-    invoke-direct {p0}, Lcom/android/settings/DevelopmentSettings;->writeUseAwesomePlayerOptions()V
+    invoke-direct {p0}, Lcom/android/settings_ext/DevelopmentSettings;->writeUseAwesomePlayerOptions()V
 
     goto/16 :goto_0
 
     .line 1465
     :cond_29
-    iget-object v1, p0, Lcom/android/settings/DevelopmentSettings;->mUSBAudio:Landroid/preference/SwitchPreference;
+    iget-object v1, p0, Lcom/android/settings_ext/DevelopmentSettings;->mUSBAudio:Landroid/preference/SwitchPreference;
 
     if-ne p2, v1, :cond_2a
 
     .line 1466
-    invoke-direct {p0}, Lcom/android/settings/DevelopmentSettings;->writeUSBAudioOptions()V
+    invoke-direct {p0}, Lcom/android/settings_ext/DevelopmentSettings;->writeUSBAudioOptions()V
 
     goto/16 :goto_0
 
     .line 1468
     :cond_2a
-    invoke-super {p0, p1, p2}, Lcom/android/settings/SettingsPreferenceFragment;->onPreferenceTreeClick(Landroid/preference/PreferenceScreen;Landroid/preference/Preference;)Z
+    invoke-super {p0, p1, p2}, Lcom/android/settings_ext/SettingsPreferenceFragment;->onPreferenceTreeClick(Landroid/preference/PreferenceScreen;Landroid/preference/Preference;)Z
 
     move-result v2
 
@@ -7100,15 +7100,15 @@
     const/4 v3, 0x1
 
     .line 444
-    invoke-super {p0}, Lcom/android/settings/SettingsPreferenceFragment;->onResume()V
+    invoke-super {p0}, Lcom/android/settings_ext/SettingsPreferenceFragment;->onResume()V
 
     .line 446
-    iget-boolean v4, p0, Lcom/android/settings/DevelopmentSettings;->mUnavailable:Z
+    iget-boolean v4, p0, Lcom/android/settings_ext/DevelopmentSettings;->mUnavailable:Z
 
     if-eqz v4, :cond_1
 
     .line 448
-    invoke-virtual {p0}, Lcom/android/settings/DevelopmentSettings;->getView()Landroid/view/View;
+    invoke-virtual {p0}, Lcom/android/settings_ext/DevelopmentSettings;->getView()Landroid/view/View;
 
     move-result-object v2
 
@@ -7122,7 +7122,7 @@
 
     .line 449
     .local v1, "emptyView":Landroid/widget/TextView;
-    invoke-virtual {p0}, Lcom/android/settings/DevelopmentSettings;->getListView()Landroid/widget/ListView;
+    invoke-virtual {p0}, Lcom/android/settings_ext/DevelopmentSettings;->getListView()Landroid/widget/ListView;
 
     move-result-object v2
 
@@ -7144,7 +7144,7 @@
 
     .line 456
     :cond_1
-    iget-object v4, p0, Lcom/android/settings/DevelopmentSettings;->mDpm:Landroid/app/admin/DevicePolicyManager;
+    iget-object v4, p0, Lcom/android/settings_ext/DevelopmentSettings;->mDpm:Landroid/app/admin/DevicePolicyManager;
 
     const/4 v5, 0x0
 
@@ -7159,15 +7159,15 @@
     if-lez v4, :cond_4
 
     .line 461
-    iget-object v4, p0, Lcom/android/settings/DevelopmentSettings;->mDisabledPrefs:Ljava/util/HashSet;
+    iget-object v4, p0, Lcom/android/settings_ext/DevelopmentSettings;->mDisabledPrefs:Ljava/util/HashSet;
 
-    iget-object v5, p0, Lcom/android/settings/DevelopmentSettings;->mKeepScreenOn:Landroid/preference/SwitchPreference;
+    iget-object v5, p0, Lcom/android/settings_ext/DevelopmentSettings;->mKeepScreenOn:Landroid/preference/SwitchPreference;
 
     invoke-virtual {v4, v5}, Ljava/util/HashSet;->add(Ljava/lang/Object;)Z
 
     .line 466
     :goto_1
-    invoke-virtual {p0}, Lcom/android/settings/DevelopmentSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/DevelopmentSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v4
 
@@ -7188,31 +7188,31 @@
     move v2, v3
 
     :cond_2
-    iput-boolean v2, p0, Lcom/android/settings/DevelopmentSettings;->mLastEnabledState:Z
+    iput-boolean v2, p0, Lcom/android/settings_ext/DevelopmentSettings;->mLastEnabledState:Z
 
     .line 469
-    iget-object v2, p0, Lcom/android/settings/DevelopmentSettings;->mSwitchBar:Lcom/android/settings/widget/SwitchBar;
+    iget-object v2, p0, Lcom/android/settings_ext/DevelopmentSettings;->mSwitchBar:Lcom/android/settings_ext/widget/SwitchBar;
 
-    iget-boolean v4, p0, Lcom/android/settings/DevelopmentSettings;->mLastEnabledState:Z
+    iget-boolean v4, p0, Lcom/android/settings_ext/DevelopmentSettings;->mLastEnabledState:Z
 
-    invoke-virtual {v2, v4}, Lcom/android/settings/widget/SwitchBar;->setChecked(Z)V
+    invoke-virtual {v2, v4}, Lcom/android/settings_ext/widget/SwitchBar;->setChecked(Z)V
 
     .line 470
-    iget-boolean v2, p0, Lcom/android/settings/DevelopmentSettings;->mLastEnabledState:Z
+    iget-boolean v2, p0, Lcom/android/settings_ext/DevelopmentSettings;->mLastEnabledState:Z
 
-    invoke-direct {p0, v2}, Lcom/android/settings/DevelopmentSettings;->setPrefsEnabledState(Z)V
+    invoke-direct {p0, v2}, Lcom/android/settings_ext/DevelopmentSettings;->setPrefsEnabledState(Z)V
 
     .line 472
-    iget-boolean v2, p0, Lcom/android/settings/DevelopmentSettings;->mHaveDebugSettings:Z
+    iget-boolean v2, p0, Lcom/android/settings_ext/DevelopmentSettings;->mHaveDebugSettings:Z
 
     if-eqz v2, :cond_3
 
-    iget-boolean v2, p0, Lcom/android/settings/DevelopmentSettings;->mLastEnabledState:Z
+    iget-boolean v2, p0, Lcom/android/settings_ext/DevelopmentSettings;->mLastEnabledState:Z
 
     if-nez v2, :cond_3
 
     .line 477
-    invoke-virtual {p0}, Lcom/android/settings/DevelopmentSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/DevelopmentSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v2
 
@@ -7225,34 +7225,34 @@
     invoke-static {v2, v4, v3}, Landroid/provider/Settings$Global;->putInt(Landroid/content/ContentResolver;Ljava/lang/String;I)Z
 
     .line 479
-    iput-boolean v3, p0, Lcom/android/settings/DevelopmentSettings;->mLastEnabledState:Z
+    iput-boolean v3, p0, Lcom/android/settings_ext/DevelopmentSettings;->mLastEnabledState:Z
 
     .line 480
-    iget-object v2, p0, Lcom/android/settings/DevelopmentSettings;->mSwitchBar:Lcom/android/settings/widget/SwitchBar;
+    iget-object v2, p0, Lcom/android/settings_ext/DevelopmentSettings;->mSwitchBar:Lcom/android/settings_ext/widget/SwitchBar;
 
-    iget-boolean v3, p0, Lcom/android/settings/DevelopmentSettings;->mLastEnabledState:Z
+    iget-boolean v3, p0, Lcom/android/settings_ext/DevelopmentSettings;->mLastEnabledState:Z
 
-    invoke-virtual {v2, v3}, Lcom/android/settings/widget/SwitchBar;->setChecked(Z)V
+    invoke-virtual {v2, v3}, Lcom/android/settings_ext/widget/SwitchBar;->setChecked(Z)V
 
     .line 481
-    iget-boolean v2, p0, Lcom/android/settings/DevelopmentSettings;->mLastEnabledState:Z
+    iget-boolean v2, p0, Lcom/android/settings_ext/DevelopmentSettings;->mLastEnabledState:Z
 
-    invoke-direct {p0, v2}, Lcom/android/settings/DevelopmentSettings;->setPrefsEnabledState(Z)V
+    invoke-direct {p0, v2}, Lcom/android/settings_ext/DevelopmentSettings;->setPrefsEnabledState(Z)V
 
     .line 483
     :cond_3
-    iget-object v2, p0, Lcom/android/settings/DevelopmentSettings;->mSwitchBar:Lcom/android/settings/widget/SwitchBar;
+    iget-object v2, p0, Lcom/android/settings_ext/DevelopmentSettings;->mSwitchBar:Lcom/android/settings_ext/widget/SwitchBar;
 
-    invoke-virtual {v2}, Lcom/android/settings/widget/SwitchBar;->show()V
+    invoke-virtual {v2}, Lcom/android/settings_ext/widget/SwitchBar;->show()V
 
     goto :goto_0
 
     .line 463
     .end local v0    # "cr":Landroid/content/ContentResolver;
     :cond_4
-    iget-object v4, p0, Lcom/android/settings/DevelopmentSettings;->mDisabledPrefs:Ljava/util/HashSet;
+    iget-object v4, p0, Lcom/android/settings_ext/DevelopmentSettings;->mDisabledPrefs:Ljava/util/HashSet;
 
-    iget-object v5, p0, Lcom/android/settings/DevelopmentSettings;->mKeepScreenOn:Landroid/preference/SwitchPreference;
+    iget-object v5, p0, Lcom/android/settings_ext/DevelopmentSettings;->mKeepScreenOn:Landroid/preference/SwitchPreference;
 
     invoke-virtual {v4, v5}, Ljava/util/HashSet;->remove(Ljava/lang/Object;)Z
 
@@ -7268,9 +7268,9 @@
     const/4 v2, 0x0
 
     .line 1312
-    iget-object v0, p0, Lcom/android/settings/DevelopmentSettings;->mSwitchBar:Lcom/android/settings/widget/SwitchBar;
+    iget-object v0, p0, Lcom/android/settings_ext/DevelopmentSettings;->mSwitchBar:Lcom/android/settings_ext/widget/SwitchBar;
 
-    invoke-virtual {v0}, Lcom/android/settings/widget/SwitchBar;->getSwitch()Lcom/android/settings/widget/ToggleSwitch;
+    invoke-virtual {v0}, Lcom/android/settings_ext/widget/SwitchBar;->getSwitch()Lcom/android/settings_ext/widget/ToggleSwitch;
 
     move-result-object v0
 
@@ -7283,7 +7283,7 @@
 
     .line 1315
     :cond_1
-    iget-boolean v0, p0, Lcom/android/settings/DevelopmentSettings;->mLastEnabledState:Z
+    iget-boolean v0, p0, Lcom/android/settings_ext/DevelopmentSettings;->mLastEnabledState:Z
 
     if-eq p2, v0, :cond_0
 
@@ -7291,26 +7291,26 @@
     if-eqz p2, :cond_3
 
     .line 1317
-    iput-boolean v2, p0, Lcom/android/settings/DevelopmentSettings;->mDialogClicked:Z
+    iput-boolean v2, p0, Lcom/android/settings_ext/DevelopmentSettings;->mDialogClicked:Z
 
     .line 1318
-    iget-object v0, p0, Lcom/android/settings/DevelopmentSettings;->mEnableDialog:Landroid/app/Dialog;
+    iget-object v0, p0, Lcom/android/settings_ext/DevelopmentSettings;->mEnableDialog:Landroid/app/Dialog;
 
     if-eqz v0, :cond_2
 
-    invoke-direct {p0}, Lcom/android/settings/DevelopmentSettings;->dismissDialogs()V
+    invoke-direct {p0}, Lcom/android/settings_ext/DevelopmentSettings;->dismissDialogs()V
 
     .line 1319
     :cond_2
     new-instance v0, Landroid/app/AlertDialog$Builder;
 
-    invoke-virtual {p0}, Lcom/android/settings/DevelopmentSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/DevelopmentSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v1
 
     invoke-direct {v0, v1}, Landroid/app/AlertDialog$Builder;-><init>(Landroid/content/Context;)V
 
-    invoke-virtual {p0}, Lcom/android/settings/DevelopmentSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/DevelopmentSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v1
 
@@ -7350,10 +7350,10 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/DevelopmentSettings;->mEnableDialog:Landroid/app/Dialog;
+    iput-object v0, p0, Lcom/android/settings_ext/DevelopmentSettings;->mEnableDialog:Landroid/app/Dialog;
 
     .line 1326
-    iget-object v0, p0, Lcom/android/settings/DevelopmentSettings;->mEnableDialog:Landroid/app/Dialog;
+    iget-object v0, p0, Lcom/android/settings_ext/DevelopmentSettings;->mEnableDialog:Landroid/app/Dialog;
 
     invoke-virtual {v0, p0}, Landroid/app/Dialog;->setOnDismissListener(Landroid/content/DialogInterface$OnDismissListener;)V
 
@@ -7361,10 +7361,10 @@
 
     .line 1328
     :cond_3
-    invoke-direct {p0}, Lcom/android/settings/DevelopmentSettings;->resetDangerousOptions()V
+    invoke-direct {p0}, Lcom/android/settings_ext/DevelopmentSettings;->resetDangerousOptions()V
 
     .line 1329
-    invoke-virtual {p0}, Lcom/android/settings/DevelopmentSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/DevelopmentSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
@@ -7377,12 +7377,12 @@
     invoke-static {v0, v1, v2}, Landroid/provider/Settings$Global;->putInt(Landroid/content/ContentResolver;Ljava/lang/String;I)Z
 
     .line 1331
-    iput-boolean p2, p0, Lcom/android/settings/DevelopmentSettings;->mLastEnabledState:Z
+    iput-boolean p2, p0, Lcom/android/settings_ext/DevelopmentSettings;->mLastEnabledState:Z
 
     .line 1332
-    iget-boolean v0, p0, Lcom/android/settings/DevelopmentSettings;->mLastEnabledState:Z
+    iget-boolean v0, p0, Lcom/android/settings_ext/DevelopmentSettings;->mLastEnabledState:Z
 
-    invoke-direct {p0, v0}, Lcom/android/settings/DevelopmentSettings;->setPrefsEnabledState(Z)V
+    invoke-direct {p0, v0}, Lcom/android/settings_ext/DevelopmentSettings;->setPrefsEnabledState(Z)V
 
     goto :goto_0
 .end method
@@ -7392,20 +7392,20 @@
 
     .prologue
     .line 1599
-    iget-boolean v0, p0, Lcom/android/settings/DevelopmentSettings;->mDontPokeProperties:Z
+    iget-boolean v0, p0, Lcom/android/settings_ext/DevelopmentSettings;->mDontPokeProperties:Z
 
     if-nez v0, :cond_0
 
     .line 1601
-    new-instance v0, Lcom/android/settings/DevelopmentSettings$SystemPropPoker;
+    new-instance v0, Lcom/android/settings_ext/DevelopmentSettings$SystemPropPoker;
 
-    invoke-direct {v0}, Lcom/android/settings/DevelopmentSettings$SystemPropPoker;-><init>()V
+    invoke-direct {v0}, Lcom/android/settings_ext/DevelopmentSettings$SystemPropPoker;-><init>()V
 
     const/4 v1, 0x0
 
     new-array v1, v1, [Ljava/lang/Void;
 
-    invoke-virtual {v0, v1}, Lcom/android/settings/DevelopmentSettings$SystemPropPoker;->execute([Ljava/lang/Object;)Landroid/os/AsyncTask;
+    invoke-virtual {v0, v1}, Lcom/android/settings_ext/DevelopmentSettings$SystemPropPoker;->execute([Ljava/lang/Object;)Landroid/os/AsyncTask;
 
     .line 1603
     :cond_0
@@ -7422,11 +7422,11 @@
     invoke-virtual {p1, p2}, Landroid/preference/SwitchPreference;->setChecked(Z)V
 
     .line 499
-    iget-boolean v0, p0, Lcom/android/settings/DevelopmentSettings;->mHaveDebugSettings:Z
+    iget-boolean v0, p0, Lcom/android/settings_ext/DevelopmentSettings;->mHaveDebugSettings:Z
 
     or-int/2addr v0, p2
 
-    iput-boolean v0, p0, Lcom/android/settings/DevelopmentSettings;->mHaveDebugSettings:Z
+    iput-boolean v0, p0, Lcom/android/settings_ext/DevelopmentSettings;->mHaveDebugSettings:Z
 
     .line 500
     return-void

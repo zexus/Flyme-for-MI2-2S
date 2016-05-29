@@ -1,11 +1,11 @@
-.class final Lcom/android/settings/notification/ZenModeSettings$15;
-.super Lcom/android/settings/search/BaseSearchIndexProvider;
+.class final Lcom/android/settings_ext/notification/ZenModeSettings$15;
+.super Lcom/android/settings_ext/search/BaseSearchIndexProvider;
 .source "ZenModeSettings.java"
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/android/settings/notification/ZenModeSettings;
+    value = Lcom/android/settings_ext/notification/ZenModeSettings;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -20,7 +20,7 @@
 
     .prologue
     .line 571
-    invoke-direct {p0}, Lcom/android/settings/search/BaseSearchIndexProvider;-><init>()V
+    invoke-direct {p0}, Lcom/android/settings_ext/search/BaseSearchIndexProvider;-><init>()V
 
     return-void
 .end method
@@ -50,8 +50,8 @@
 
     .line 592
     .local v0, "rt":Ljava/util/ArrayList;, "Ljava/util/ArrayList<Ljava/lang/String;>;"
-    # invokes: Lcom/android/settings/notification/ZenModeSettings;->isDowntimeSupported(Landroid/content/Context;)Z
-    invoke-static {p1}, Lcom/android/settings/notification/ZenModeSettings;->access$900(Landroid/content/Context;)Z
+    # invokes: Lcom/android/settings_ext/notification/ZenModeSettings;->isDowntimeSupported(Landroid/content/Context;)Z
+    invoke-static {p1}, Lcom/android/settings_ext/notification/ZenModeSettings;->access$900(Landroid/content/Context;)Z
 
     move-result v1
 
@@ -98,15 +98,15 @@
             "Z)",
             "Ljava/util/List",
             "<",
-            "Lcom/android/settings/search/SearchIndexableRaw;",
+            "Lcom/android/settings_ext/search/SearchIndexableRaw;",
             ">;"
         }
     .end annotation
 
     .prologue
     .line 575
-    # invokes: Lcom/android/settings/notification/ZenModeSettings;->allKeyTitles(Landroid/content/Context;)Landroid/util/SparseArray;
-    invoke-static {p1}, Lcom/android/settings/notification/ZenModeSettings;->access$800(Landroid/content/Context;)Landroid/util/SparseArray;
+    # invokes: Lcom/android/settings_ext/notification/ZenModeSettings;->allKeyTitles(Landroid/content/Context;)Landroid/util/SparseArray;
+    invoke-static {p1}, Lcom/android/settings_ext/notification/ZenModeSettings;->access$800(Landroid/content/Context;)Landroid/util/SparseArray;
 
     move-result-object v3
 
@@ -123,7 +123,7 @@
     invoke-direct {v5, v0}, Ljava/util/ArrayList;-><init>(I)V
 
     .line 578
-    .local v5, "result":Ljava/util/List;, "Ljava/util/List<Lcom/android/settings/search/SearchIndexableRaw;>;"
+    .local v5, "result":Ljava/util/List;, "Ljava/util/List<Lcom/android/settings_ext/search/SearchIndexableRaw;>;"
     invoke-virtual {p1}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
 
     move-result-object v4
@@ -137,19 +137,19 @@
     if-ge v2, v0, :cond_0
 
     .line 580
-    new-instance v1, Lcom/android/settings/search/SearchIndexableRaw;
+    new-instance v1, Lcom/android/settings_ext/search/SearchIndexableRaw;
 
-    invoke-direct {v1, p1}, Lcom/android/settings/search/SearchIndexableRaw;-><init>(Landroid/content/Context;)V
+    invoke-direct {v1, p1}, Lcom/android/settings_ext/search/SearchIndexableRaw;-><init>(Landroid/content/Context;)V
 
     .line 581
-    .local v1, "data":Lcom/android/settings/search/SearchIndexableRaw;
+    .local v1, "data":Lcom/android/settings_ext/search/SearchIndexableRaw;
     invoke-virtual {v3, v2}, Landroid/util/SparseArray;->valueAt(I)Ljava/lang/Object;
 
     move-result-object v6
 
     check-cast v6, Ljava/lang/String;
 
-    iput-object v6, v1, Lcom/android/settings/search/SearchIndexableRaw;->key:Ljava/lang/String;
+    iput-object v6, v1, Lcom/android/settings_ext/search/SearchIndexableRaw;->key:Ljava/lang/String;
 
     .line 582
     invoke-virtual {v3, v2}, Landroid/util/SparseArray;->keyAt(I)I
@@ -160,7 +160,7 @@
 
     move-result-object v6
 
-    iput-object v6, v1, Lcom/android/settings/search/SearchIndexableRaw;->title:Ljava/lang/String;
+    iput-object v6, v1, Lcom/android/settings_ext/search/SearchIndexableRaw;->title:Ljava/lang/String;
 
     .line 583
     const v6, 0x7f090964
@@ -169,7 +169,7 @@
 
     move-result-object v6
 
-    iput-object v6, v1, Lcom/android/settings/search/SearchIndexableRaw;->screenTitle:Ljava/lang/String;
+    iput-object v6, v1, Lcom/android/settings_ext/search/SearchIndexableRaw;->screenTitle:Ljava/lang/String;
 
     .line 584
     invoke-interface {v5, v1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
@@ -180,7 +180,7 @@
     goto :goto_0
 
     .line 586
-    .end local v1    # "data":Lcom/android/settings/search/SearchIndexableRaw;
+    .end local v1    # "data":Lcom/android/settings_ext/search/SearchIndexableRaw;
     :cond_0
     return-object v5
 .end method

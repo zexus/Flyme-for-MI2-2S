@@ -1,4 +1,4 @@
-.class Lcom/android/settings/MasterClear$1;
+.class Lcom/android/settings_ext/MasterClear$1;
 .super Ljava/lang/Object;
 .source "MasterClear.java"
 
@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/android/settings/MasterClear;
+    value = Lcom/android/settings_ext/MasterClear;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -18,16 +18,16 @@
 
 
 # instance fields
-.field final synthetic this$0:Lcom/android/settings/MasterClear;
+.field final synthetic this$0:Lcom/android/settings_ext/MasterClear;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/MasterClear;)V
+.method constructor <init>(Lcom/android/settings_ext/MasterClear;)V
     .locals 0
 
     .prologue
     .line 115
-    iput-object p1, p0, Lcom/android/settings/MasterClear$1;->this$0:Lcom/android/settings/MasterClear;
+    iput-object p1, p0, Lcom/android/settings_ext/MasterClear$1;->this$0:Lcom/android/settings_ext/MasterClear;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -42,22 +42,22 @@
 
     .prologue
     .line 118
-    iget-object v0, p0, Lcom/android/settings/MasterClear$1;->this$0:Lcom/android/settings/MasterClear;
+    iget-object v0, p0, Lcom/android/settings_ext/MasterClear$1;->this$0:Lcom/android/settings_ext/MasterClear;
 
     const/16 v1, 0x37
 
-    # invokes: Lcom/android/settings/MasterClear;->runKeyguardConfirmation(I)Z
-    invoke-static {v0, v1}, Lcom/android/settings/MasterClear;->access$000(Lcom/android/settings/MasterClear;I)Z
+    # invokes: Lcom/android/settings_ext/MasterClear;->runKeyguardConfirmation(I)Z
+    invoke-static {v0, v1}, Lcom/android/settings_ext/MasterClear;->access$000(Lcom/android/settings_ext/MasterClear;I)Z
 
     move-result v0
 
     if-nez v0, :cond_0
 
     .line 119
-    iget-object v0, p0, Lcom/android/settings/MasterClear$1;->this$0:Lcom/android/settings/MasterClear;
+    iget-object v0, p0, Lcom/android/settings_ext/MasterClear$1;->this$0:Lcom/android/settings_ext/MasterClear;
 
-    # invokes: Lcom/android/settings/MasterClear;->showFinalConfirmation()V
-    invoke-static {v0}, Lcom/android/settings/MasterClear;->access$100(Lcom/android/settings/MasterClear;)V
+    # invokes: Lcom/android/settings_ext/MasterClear;->showFinalConfirmation()V
+    invoke-static {v0}, Lcom/android/settings_ext/MasterClear;->access$100(Lcom/android/settings_ext/MasterClear;)V
 
     .line 121
     :cond_0

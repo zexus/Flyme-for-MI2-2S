@@ -1,11 +1,11 @@
-.class Lcom/android/settings/TrustedCredentialsSettings$AliasOperation;
+.class Lcom/android/settings_ext/TrustedCredentialsSettings$AliasOperation;
 .super Landroid/os/AsyncTask;
 .source "TrustedCredentialsSettings.java"
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/android/settings/TrustedCredentialsSettings;
+    value = Lcom/android/settings_ext/TrustedCredentialsSettings;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -26,42 +26,42 @@
 
 
 # instance fields
-.field private final mCertHolder:Lcom/android/settings/TrustedCredentialsSettings$CertHolder;
+.field private final mCertHolder:Lcom/android/settings_ext/TrustedCredentialsSettings$CertHolder;
 
-.field final synthetic this$0:Lcom/android/settings/TrustedCredentialsSettings;
+.field final synthetic this$0:Lcom/android/settings_ext/TrustedCredentialsSettings;
 
 
 # direct methods
-.method private constructor <init>(Lcom/android/settings/TrustedCredentialsSettings;Lcom/android/settings/TrustedCredentialsSettings$CertHolder;)V
+.method private constructor <init>(Lcom/android/settings_ext/TrustedCredentialsSettings;Lcom/android/settings_ext/TrustedCredentialsSettings$CertHolder;)V
     .locals 0
-    .param p2, "certHolder"    # Lcom/android/settings/TrustedCredentialsSettings$CertHolder;
+    .param p2, "certHolder"    # Lcom/android/settings_ext/TrustedCredentialsSettings$CertHolder;
 
     .prologue
     .line 753
-    iput-object p1, p0, Lcom/android/settings/TrustedCredentialsSettings$AliasOperation;->this$0:Lcom/android/settings/TrustedCredentialsSettings;
+    iput-object p1, p0, Lcom/android/settings_ext/TrustedCredentialsSettings$AliasOperation;->this$0:Lcom/android/settings_ext/TrustedCredentialsSettings;
 
     invoke-direct {p0}, Landroid/os/AsyncTask;-><init>()V
 
     .line 754
-    iput-object p2, p0, Lcom/android/settings/TrustedCredentialsSettings$AliasOperation;->mCertHolder:Lcom/android/settings/TrustedCredentialsSettings$CertHolder;
+    iput-object p2, p0, Lcom/android/settings_ext/TrustedCredentialsSettings$AliasOperation;->mCertHolder:Lcom/android/settings_ext/TrustedCredentialsSettings$CertHolder;
 
     .line 755
-    # setter for: Lcom/android/settings/TrustedCredentialsSettings;->mAliasOperation:Lcom/android/settings/TrustedCredentialsSettings$AliasOperation;
-    invoke-static {p1, p0}, Lcom/android/settings/TrustedCredentialsSettings;->access$3502(Lcom/android/settings/TrustedCredentialsSettings;Lcom/android/settings/TrustedCredentialsSettings$AliasOperation;)Lcom/android/settings/TrustedCredentialsSettings$AliasOperation;
+    # setter for: Lcom/android/settings_ext/TrustedCredentialsSettings;->mAliasOperation:Lcom/android/settings_ext/TrustedCredentialsSettings$AliasOperation;
+    invoke-static {p1, p0}, Lcom/android/settings_ext/TrustedCredentialsSettings;->access$3502(Lcom/android/settings_ext/TrustedCredentialsSettings;Lcom/android/settings_ext/TrustedCredentialsSettings$AliasOperation;)Lcom/android/settings_ext/TrustedCredentialsSettings$AliasOperation;
 
     .line 756
     return-void
 .end method
 
-.method synthetic constructor <init>(Lcom/android/settings/TrustedCredentialsSettings;Lcom/android/settings/TrustedCredentialsSettings$CertHolder;Lcom/android/settings/TrustedCredentialsSettings$1;)V
+.method synthetic constructor <init>(Lcom/android/settings_ext/TrustedCredentialsSettings;Lcom/android/settings_ext/TrustedCredentialsSettings$CertHolder;Lcom/android/settings_ext/TrustedCredentialsSettings$1;)V
     .locals 0
-    .param p1, "x0"    # Lcom/android/settings/TrustedCredentialsSettings;
-    .param p2, "x1"    # Lcom/android/settings/TrustedCredentialsSettings$CertHolder;
-    .param p3, "x2"    # Lcom/android/settings/TrustedCredentialsSettings$1;
+    .param p1, "x0"    # Lcom/android/settings_ext/TrustedCredentialsSettings;
+    .param p2, "x1"    # Lcom/android/settings_ext/TrustedCredentialsSettings$CertHolder;
+    .param p3, "x2"    # Lcom/android/settings_ext/TrustedCredentialsSettings$1;
 
     .prologue
     .line 750
-    invoke-direct {p0, p1, p2}, Lcom/android/settings/TrustedCredentialsSettings$AliasOperation;-><init>(Lcom/android/settings/TrustedCredentialsSettings;Lcom/android/settings/TrustedCredentialsSettings$CertHolder;)V
+    invoke-direct {p0, p1, p2}, Lcom/android/settings_ext/TrustedCredentialsSettings$AliasOperation;-><init>(Lcom/android/settings_ext/TrustedCredentialsSettings;Lcom/android/settings_ext/TrustedCredentialsSettings$CertHolder;)V
 
     return-void
 .end method
@@ -75,16 +75,16 @@
     .prologue
     .line 761
     :try_start_0
-    iget-object v4, p0, Lcom/android/settings/TrustedCredentialsSettings$AliasOperation;->this$0:Lcom/android/settings/TrustedCredentialsSettings;
+    iget-object v4, p0, Lcom/android/settings_ext/TrustedCredentialsSettings$AliasOperation;->this$0:Lcom/android/settings_ext/TrustedCredentialsSettings;
 
-    # getter for: Lcom/android/settings/TrustedCredentialsSettings;->mKeyChainConnectionByProfileId:Landroid/util/SparseArray;
-    invoke-static {v4}, Lcom/android/settings/TrustedCredentialsSettings;->access$2000(Lcom/android/settings/TrustedCredentialsSettings;)Landroid/util/SparseArray;
+    # getter for: Lcom/android/settings_ext/TrustedCredentialsSettings;->mKeyChainConnectionByProfileId:Landroid/util/SparseArray;
+    invoke-static {v4}, Lcom/android/settings_ext/TrustedCredentialsSettings;->access$2000(Lcom/android/settings_ext/TrustedCredentialsSettings;)Landroid/util/SparseArray;
 
     move-result-object v4
 
-    iget-object v5, p0, Lcom/android/settings/TrustedCredentialsSettings$AliasOperation;->mCertHolder:Lcom/android/settings/TrustedCredentialsSettings$CertHolder;
+    iget-object v5, p0, Lcom/android/settings_ext/TrustedCredentialsSettings$AliasOperation;->mCertHolder:Lcom/android/settings_ext/TrustedCredentialsSettings$CertHolder;
 
-    iget v5, v5, Lcom/android/settings/TrustedCredentialsSettings$CertHolder;->mProfileId:I
+    iget v5, v5, Lcom/android/settings_ext/TrustedCredentialsSettings$CertHolder;->mProfileId:I
 
     invoke-virtual {v4, v5}, Landroid/util/SparseArray;->get(I)Ljava/lang/Object;
 
@@ -100,20 +100,20 @@
 
     .line 764
     .local v3, "service":Landroid/security/IKeyChainService;
-    iget-object v4, p0, Lcom/android/settings/TrustedCredentialsSettings$AliasOperation;->mCertHolder:Lcom/android/settings/TrustedCredentialsSettings$CertHolder;
+    iget-object v4, p0, Lcom/android/settings_ext/TrustedCredentialsSettings$AliasOperation;->mCertHolder:Lcom/android/settings_ext/TrustedCredentialsSettings$CertHolder;
 
-    # getter for: Lcom/android/settings/TrustedCredentialsSettings$CertHolder;->mDeleted:Z
-    invoke-static {v4}, Lcom/android/settings/TrustedCredentialsSettings$CertHolder;->access$000(Lcom/android/settings/TrustedCredentialsSettings$CertHolder;)Z
+    # getter for: Lcom/android/settings_ext/TrustedCredentialsSettings$CertHolder;->mDeleted:Z
+    invoke-static {v4}, Lcom/android/settings_ext/TrustedCredentialsSettings$CertHolder;->access$000(Lcom/android/settings_ext/TrustedCredentialsSettings$CertHolder;)Z
 
     move-result v4
 
     if-eqz v4, :cond_0
 
     .line 765
-    iget-object v4, p0, Lcom/android/settings/TrustedCredentialsSettings$AliasOperation;->mCertHolder:Lcom/android/settings/TrustedCredentialsSettings$CertHolder;
+    iget-object v4, p0, Lcom/android/settings_ext/TrustedCredentialsSettings$AliasOperation;->mCertHolder:Lcom/android/settings_ext/TrustedCredentialsSettings$CertHolder;
 
-    # getter for: Lcom/android/settings/TrustedCredentialsSettings$CertHolder;->mX509Cert:Ljava/security/cert/X509Certificate;
-    invoke-static {v4}, Lcom/android/settings/TrustedCredentialsSettings$CertHolder;->access$3600(Lcom/android/settings/TrustedCredentialsSettings$CertHolder;)Ljava/security/cert/X509Certificate;
+    # getter for: Lcom/android/settings_ext/TrustedCredentialsSettings$CertHolder;->mX509Cert:Ljava/security/cert/X509Certificate;
+    invoke-static {v4}, Lcom/android/settings_ext/TrustedCredentialsSettings$CertHolder;->access$3600(Lcom/android/settings_ext/TrustedCredentialsSettings$CertHolder;)Ljava/security/cert/X509Certificate;
 
     move-result-object v4
 
@@ -143,10 +143,10 @@
     .restart local v2    # "keyChainConnection":Landroid/security/KeyChain$KeyChainConnection;
     .restart local v3    # "service":Landroid/security/IKeyChainService;
     :cond_0
-    iget-object v4, p0, Lcom/android/settings/TrustedCredentialsSettings$AliasOperation;->mCertHolder:Lcom/android/settings/TrustedCredentialsSettings$CertHolder;
+    iget-object v4, p0, Lcom/android/settings_ext/TrustedCredentialsSettings$AliasOperation;->mCertHolder:Lcom/android/settings_ext/TrustedCredentialsSettings$CertHolder;
 
-    # getter for: Lcom/android/settings/TrustedCredentialsSettings$CertHolder;->mAlias:Ljava/lang/String;
-    invoke-static {v4}, Lcom/android/settings/TrustedCredentialsSettings$CertHolder;->access$3400(Lcom/android/settings/TrustedCredentialsSettings$CertHolder;)Ljava/lang/String;
+    # getter for: Lcom/android/settings_ext/TrustedCredentialsSettings$CertHolder;->mAlias:Ljava/lang/String;
+    invoke-static {v4}, Lcom/android/settings_ext/TrustedCredentialsSettings$CertHolder;->access$3400(Lcom/android/settings_ext/TrustedCredentialsSettings$CertHolder;)Ljava/lang/String;
 
     move-result-object v4
 
@@ -186,10 +186,10 @@
 
     move-result-object v5
 
-    iget-object v6, p0, Lcom/android/settings/TrustedCredentialsSettings$AliasOperation;->mCertHolder:Lcom/android/settings/TrustedCredentialsSettings$CertHolder;
+    iget-object v6, p0, Lcom/android/settings_ext/TrustedCredentialsSettings$AliasOperation;->mCertHolder:Lcom/android/settings_ext/TrustedCredentialsSettings$CertHolder;
 
-    # getter for: Lcom/android/settings/TrustedCredentialsSettings$CertHolder;->mAlias:Ljava/lang/String;
-    invoke-static {v6}, Lcom/android/settings/TrustedCredentialsSettings$CertHolder;->access$3400(Lcom/android/settings/TrustedCredentialsSettings$CertHolder;)Ljava/lang/String;
+    # getter for: Lcom/android/settings_ext/TrustedCredentialsSettings$CertHolder;->mAlias:Ljava/lang/String;
+    invoke-static {v6}, Lcom/android/settings_ext/TrustedCredentialsSettings$CertHolder;->access$3400(Lcom/android/settings_ext/TrustedCredentialsSettings$CertHolder;)Ljava/lang/String;
 
     move-result-object v6
 
@@ -239,7 +239,7 @@
     check-cast p1, [Ljava/lang/Void;
 
     .end local p1    # "x0":[Ljava/lang/Object;
-    invoke-virtual {p0, p1}, Lcom/android/settings/TrustedCredentialsSettings$AliasOperation;->doInBackground([Ljava/lang/Void;)Ljava/lang/Boolean;
+    invoke-virtual {p0, p1}, Lcom/android/settings_ext/TrustedCredentialsSettings$AliasOperation;->doInBackground([Ljava/lang/Void;)Ljava/lang/Boolean;
 
     move-result-object v0
 
@@ -252,10 +252,10 @@
 
     .prologue
     .line 781
-    iget-object v0, p0, Lcom/android/settings/TrustedCredentialsSettings$AliasOperation;->mCertHolder:Lcom/android/settings/TrustedCredentialsSettings$CertHolder;
+    iget-object v0, p0, Lcom/android/settings_ext/TrustedCredentialsSettings$AliasOperation;->mCertHolder:Lcom/android/settings_ext/TrustedCredentialsSettings$CertHolder;
 
-    # getter for: Lcom/android/settings/TrustedCredentialsSettings$CertHolder;->mTab:Lcom/android/settings/TrustedCredentialsSettings$Tab;
-    invoke-static {v0}, Lcom/android/settings/TrustedCredentialsSettings$CertHolder;->access$100(Lcom/android/settings/TrustedCredentialsSettings$CertHolder;)Lcom/android/settings/TrustedCredentialsSettings$Tab;
+    # getter for: Lcom/android/settings_ext/TrustedCredentialsSettings$CertHolder;->mTab:Lcom/android/settings_ext/TrustedCredentialsSettings$Tab;
+    invoke-static {v0}, Lcom/android/settings_ext/TrustedCredentialsSettings$CertHolder;->access$100(Lcom/android/settings_ext/TrustedCredentialsSettings$CertHolder;)Lcom/android/settings_ext/TrustedCredentialsSettings$Tab;
 
     move-result-object v0
 
@@ -263,18 +263,18 @@
 
     move-result v1
 
-    iget-object v2, p0, Lcom/android/settings/TrustedCredentialsSettings$AliasOperation;->mCertHolder:Lcom/android/settings/TrustedCredentialsSettings$CertHolder;
+    iget-object v2, p0, Lcom/android/settings_ext/TrustedCredentialsSettings$AliasOperation;->mCertHolder:Lcom/android/settings_ext/TrustedCredentialsSettings$CertHolder;
 
-    # invokes: Lcom/android/settings/TrustedCredentialsSettings$Tab;->postOperationUpdate(ZLcom/android/settings/TrustedCredentialsSettings$CertHolder;)V
-    invoke-static {v0, v1, v2}, Lcom/android/settings/TrustedCredentialsSettings$Tab;->access$3700(Lcom/android/settings/TrustedCredentialsSettings$Tab;ZLcom/android/settings/TrustedCredentialsSettings$CertHolder;)V
+    # invokes: Lcom/android/settings_ext/TrustedCredentialsSettings$Tab;->postOperationUpdate(ZLcom/android/settings_ext/TrustedCredentialsSettings$CertHolder;)V
+    invoke-static {v0, v1, v2}, Lcom/android/settings_ext/TrustedCredentialsSettings$Tab;->access$3700(Lcom/android/settings_ext/TrustedCredentialsSettings$Tab;ZLcom/android/settings_ext/TrustedCredentialsSettings$CertHolder;)V
 
     .line 782
-    iget-object v0, p0, Lcom/android/settings/TrustedCredentialsSettings$AliasOperation;->this$0:Lcom/android/settings/TrustedCredentialsSettings;
+    iget-object v0, p0, Lcom/android/settings_ext/TrustedCredentialsSettings$AliasOperation;->this$0:Lcom/android/settings_ext/TrustedCredentialsSettings;
 
     const/4 v1, 0x0
 
-    # setter for: Lcom/android/settings/TrustedCredentialsSettings;->mAliasOperation:Lcom/android/settings/TrustedCredentialsSettings$AliasOperation;
-    invoke-static {v0, v1}, Lcom/android/settings/TrustedCredentialsSettings;->access$3502(Lcom/android/settings/TrustedCredentialsSettings;Lcom/android/settings/TrustedCredentialsSettings$AliasOperation;)Lcom/android/settings/TrustedCredentialsSettings$AliasOperation;
+    # setter for: Lcom/android/settings_ext/TrustedCredentialsSettings;->mAliasOperation:Lcom/android/settings_ext/TrustedCredentialsSettings$AliasOperation;
+    invoke-static {v0, v1}, Lcom/android/settings_ext/TrustedCredentialsSettings;->access$3502(Lcom/android/settings_ext/TrustedCredentialsSettings;Lcom/android/settings_ext/TrustedCredentialsSettings$AliasOperation;)Lcom/android/settings_ext/TrustedCredentialsSettings$AliasOperation;
 
     .line 783
     return-void
@@ -289,7 +289,7 @@
     check-cast p1, Ljava/lang/Boolean;
 
     .end local p1    # "x0":Ljava/lang/Object;
-    invoke-virtual {p0, p1}, Lcom/android/settings/TrustedCredentialsSettings$AliasOperation;->onPostExecute(Ljava/lang/Boolean;)V
+    invoke-virtual {p0, p1}, Lcom/android/settings_ext/TrustedCredentialsSettings$AliasOperation;->onPostExecute(Ljava/lang/Boolean;)V
 
     return-void
 .end method

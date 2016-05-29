@@ -1,11 +1,11 @@
-.class public interface abstract Lcom/android/settings/ZonePicker$ZoneSelectionListener;
+.class public interface abstract Lcom/android/settings_ext/ZonePicker$ZoneSelectionListener;
 .super Ljava/lang/Object;
 .source "ZonePicker.java"
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/android/settings/ZonePicker;
+    value = Lcom/android/settings_ext/ZonePicker;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;

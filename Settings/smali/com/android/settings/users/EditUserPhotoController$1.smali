@@ -1,4 +1,4 @@
-.class Lcom/android/settings/users/EditUserPhotoController$1;
+.class Lcom/android/settings_ext/users/EditUserPhotoController$1;
 .super Ljava/lang/Object;
 .source "EditUserPhotoController.java"
 
@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/android/settings/users/EditUserPhotoController;-><init>(Landroid/app/Fragment;Landroid/widget/ImageView;Landroid/graphics/Bitmap;Landroid/graphics/drawable/Drawable;Z)V
+    value = Lcom/android/settings_ext/users/EditUserPhotoController;-><init>(Landroid/app/Fragment;Landroid/widget/ImageView;Landroid/graphics/Bitmap;Landroid/graphics/drawable/Drawable;Z)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -18,16 +18,16 @@
 
 
 # instance fields
-.field final synthetic this$0:Lcom/android/settings/users/EditUserPhotoController;
+.field final synthetic this$0:Lcom/android/settings_ext/users/EditUserPhotoController;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/users/EditUserPhotoController;)V
+.method constructor <init>(Lcom/android/settings_ext/users/EditUserPhotoController;)V
     .locals 0
 
     .prologue
     .line 92
-    iput-object p1, p0, Lcom/android/settings/users/EditUserPhotoController$1;->this$0:Lcom/android/settings/users/EditUserPhotoController;
+    iput-object p1, p0, Lcom/android/settings_ext/users/EditUserPhotoController$1;->this$0:Lcom/android/settings_ext/users/EditUserPhotoController;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -42,10 +42,10 @@
 
     .prologue
     .line 95
-    iget-object v0, p0, Lcom/android/settings/users/EditUserPhotoController$1;->this$0:Lcom/android/settings/users/EditUserPhotoController;
+    iget-object v0, p0, Lcom/android/settings_ext/users/EditUserPhotoController$1;->this$0:Lcom/android/settings_ext/users/EditUserPhotoController;
 
-    # invokes: Lcom/android/settings/users/EditUserPhotoController;->showUpdatePhotoPopup()V
-    invoke-static {v0}, Lcom/android/settings/users/EditUserPhotoController;->access$000(Lcom/android/settings/users/EditUserPhotoController;)V
+    # invokes: Lcom/android/settings_ext/users/EditUserPhotoController;->showUpdatePhotoPopup()V
+    invoke-static {v0}, Lcom/android/settings_ext/users/EditUserPhotoController;->access$000(Lcom/android/settings_ext/users/EditUserPhotoController;)V
 
     .line 96
     return-void

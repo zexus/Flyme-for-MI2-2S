@@ -1,11 +1,11 @@
-.class Lcom/android/settings/RestrictedSettingsFragment$1;
+.class Lcom/android/settings_ext/RestrictedSettingsFragment$1;
 .super Landroid/content/BroadcastReceiver;
 .source "RestrictedSettingsFragment.java"
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/android/settings/RestrictedSettingsFragment;
+    value = Lcom/android/settings_ext/RestrictedSettingsFragment;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -15,16 +15,16 @@
 
 
 # instance fields
-.field final synthetic this$0:Lcom/android/settings/RestrictedSettingsFragment;
+.field final synthetic this$0:Lcom/android/settings_ext/RestrictedSettingsFragment;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/RestrictedSettingsFragment;)V
+.method constructor <init>(Lcom/android/settings_ext/RestrictedSettingsFragment;)V
     .locals 0
 
     .prologue
     .line 60
-    iput-object p1, p0, Lcom/android/settings/RestrictedSettingsFragment$1;->this$0:Lcom/android/settings/RestrictedSettingsFragment;
+    iput-object p1, p0, Lcom/android/settings_ext/RestrictedSettingsFragment$1;->this$0:Lcom/android/settings_ext/RestrictedSettingsFragment;
 
     invoke-direct {p0}, Landroid/content/BroadcastReceiver;-><init>()V
 
@@ -42,26 +42,26 @@
     const/4 v1, 0x0
 
     .line 63
-    iget-object v0, p0, Lcom/android/settings/RestrictedSettingsFragment$1;->this$0:Lcom/android/settings/RestrictedSettingsFragment;
+    iget-object v0, p0, Lcom/android/settings_ext/RestrictedSettingsFragment$1;->this$0:Lcom/android/settings_ext/RestrictedSettingsFragment;
 
-    # getter for: Lcom/android/settings/RestrictedSettingsFragment;->mChallengeRequested:Z
-    invoke-static {v0}, Lcom/android/settings/RestrictedSettingsFragment;->access$000(Lcom/android/settings/RestrictedSettingsFragment;)Z
+    # getter for: Lcom/android/settings_ext/RestrictedSettingsFragment;->mChallengeRequested:Z
+    invoke-static {v0}, Lcom/android/settings_ext/RestrictedSettingsFragment;->access$000(Lcom/android/settings_ext/RestrictedSettingsFragment;)Z
 
     move-result v0
 
     if-nez v0, :cond_0
 
     .line 64
-    iget-object v0, p0, Lcom/android/settings/RestrictedSettingsFragment$1;->this$0:Lcom/android/settings/RestrictedSettingsFragment;
+    iget-object v0, p0, Lcom/android/settings_ext/RestrictedSettingsFragment$1;->this$0:Lcom/android/settings_ext/RestrictedSettingsFragment;
 
-    # setter for: Lcom/android/settings/RestrictedSettingsFragment;->mChallengeSucceeded:Z
-    invoke-static {v0, v1}, Lcom/android/settings/RestrictedSettingsFragment;->access$102(Lcom/android/settings/RestrictedSettingsFragment;Z)Z
+    # setter for: Lcom/android/settings_ext/RestrictedSettingsFragment;->mChallengeSucceeded:Z
+    invoke-static {v0, v1}, Lcom/android/settings_ext/RestrictedSettingsFragment;->access$102(Lcom/android/settings_ext/RestrictedSettingsFragment;Z)Z
 
     .line 65
-    iget-object v0, p0, Lcom/android/settings/RestrictedSettingsFragment$1;->this$0:Lcom/android/settings/RestrictedSettingsFragment;
+    iget-object v0, p0, Lcom/android/settings_ext/RestrictedSettingsFragment$1;->this$0:Lcom/android/settings_ext/RestrictedSettingsFragment;
 
-    # setter for: Lcom/android/settings/RestrictedSettingsFragment;->mChallengeRequested:Z
-    invoke-static {v0, v1}, Lcom/android/settings/RestrictedSettingsFragment;->access$002(Lcom/android/settings/RestrictedSettingsFragment;Z)Z
+    # setter for: Lcom/android/settings_ext/RestrictedSettingsFragment;->mChallengeRequested:Z
+    invoke-static {v0, v1}, Lcom/android/settings_ext/RestrictedSettingsFragment;->access$002(Lcom/android/settings_ext/RestrictedSettingsFragment;Z)Z
 
     .line 67
     :cond_0

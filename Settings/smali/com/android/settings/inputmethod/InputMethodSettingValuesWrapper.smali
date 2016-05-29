@@ -1,4 +1,4 @@
-.class Lcom/android/settings/inputmethod/InputMethodSettingValuesWrapper;
+.class Lcom/android/settings_ext/inputmethod/InputMethodSettingValuesWrapper;
 .super Ljava/lang/Object;
 .source "InputMethodSettingValuesWrapper.java"
 
@@ -6,7 +6,7 @@
 # static fields
 .field private static final TAG:Ljava/lang/String;
 
-.field private static volatile sInstance:Lcom/android/settings/inputmethod/InputMethodSettingValuesWrapper;
+.field private static volatile sInstance:Lcom/android/settings_ext/inputmethod/InputMethodSettingValuesWrapper;
 
 
 # instance fields
@@ -55,13 +55,13 @@
 
     .prologue
     .line 44
-    const-class v0, Lcom/android/settings/inputmethod/InputMethodSettingValuesWrapper;
+    const-class v0, Lcom/android/settings_ext/inputmethod/InputMethodSettingValuesWrapper;
 
     invoke-virtual {v0}, Ljava/lang/Class;->getSimpleName()Ljava/lang/String;
 
     move-result-object v0
 
-    sput-object v0, Lcom/android/settings/inputmethod/InputMethodSettingValuesWrapper;->TAG:Ljava/lang/String;
+    sput-object v0, Lcom/android/settings_ext/inputmethod/InputMethodSettingValuesWrapper;->TAG:Ljava/lang/String;
 
     return-void
 .end method
@@ -79,21 +79,21 @@
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
-    iput-object v0, p0, Lcom/android/settings/inputmethod/InputMethodSettingValuesWrapper;->mMethodList:Ljava/util/ArrayList;
+    iput-object v0, p0, Lcom/android/settings_ext/inputmethod/InputMethodSettingValuesWrapper;->mMethodList:Ljava/util/ArrayList;
 
     .line 48
     new-instance v0, Ljava/util/HashMap;
 
     invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
 
-    iput-object v0, p0, Lcom/android/settings/inputmethod/InputMethodSettingValuesWrapper;->mMethodMap:Ljava/util/HashMap;
+    iput-object v0, p0, Lcom/android/settings_ext/inputmethod/InputMethodSettingValuesWrapper;->mMethodMap:Ljava/util/HashMap;
 
     .line 51
     new-instance v0, Ljava/util/HashSet;
 
     invoke-direct {v0}, Ljava/util/HashSet;-><init>()V
 
-    iput-object v0, p0, Lcom/android/settings/inputmethod/InputMethodSettingValuesWrapper;->mAsciiCapableEnabledImis:Ljava/util/HashSet;
+    iput-object v0, p0, Lcom/android/settings_ext/inputmethod/InputMethodSettingValuesWrapper;->mAsciiCapableEnabledImis:Ljava/util/HashSet;
 
     .line 75
     new-instance v0, Lcom/android/internal/inputmethod/InputMethodUtils$InputMethodSettings;
@@ -106,17 +106,17 @@
 
     move-result-object v2
 
-    iget-object v3, p0, Lcom/android/settings/inputmethod/InputMethodSettingValuesWrapper;->mMethodMap:Ljava/util/HashMap;
+    iget-object v3, p0, Lcom/android/settings_ext/inputmethod/InputMethodSettingValuesWrapper;->mMethodMap:Ljava/util/HashMap;
 
-    iget-object v4, p0, Lcom/android/settings/inputmethod/InputMethodSettingValuesWrapper;->mMethodList:Ljava/util/ArrayList;
+    iget-object v4, p0, Lcom/android/settings_ext/inputmethod/InputMethodSettingValuesWrapper;->mMethodList:Ljava/util/ArrayList;
 
-    invoke-static {}, Lcom/android/settings/inputmethod/InputMethodSettingValuesWrapper;->getDefaultCurrentUserId()I
+    invoke-static {}, Lcom/android/settings_ext/inputmethod/InputMethodSettingValuesWrapper;->getDefaultCurrentUserId()I
 
     move-result v5
 
     invoke-direct/range {v0 .. v5}, Lcom/android/internal/inputmethod/InputMethodUtils$InputMethodSettings;-><init>(Landroid/content/res/Resources;Landroid/content/ContentResolver;Ljava/util/HashMap;Ljava/util/ArrayList;I)V
 
-    iput-object v0, p0, Lcom/android/settings/inputmethod/InputMethodSettingValuesWrapper;->mSettings:Lcom/android/internal/inputmethod/InputMethodUtils$InputMethodSettings;
+    iput-object v0, p0, Lcom/android/settings_ext/inputmethod/InputMethodSettingValuesWrapper;->mSettings:Lcom/android/internal/inputmethod/InputMethodUtils$InputMethodSettings;
 
     .line 77
     const-string v0, "input_method"
@@ -127,10 +127,10 @@
 
     check-cast v0, Landroid/view/inputmethod/InputMethodManager;
 
-    iput-object v0, p0, Lcom/android/settings/inputmethod/InputMethodSettingValuesWrapper;->mImm:Landroid/view/inputmethod/InputMethodManager;
+    iput-object v0, p0, Lcom/android/settings_ext/inputmethod/InputMethodSettingValuesWrapper;->mImm:Landroid/view/inputmethod/InputMethodManager;
 
     .line 78
-    invoke-virtual {p0}, Lcom/android/settings/inputmethod/InputMethodSettingValuesWrapper;->refreshAllInputMethodAndSubtypes()V
+    invoke-virtual {p0}, Lcom/android/settings_ext/inputmethod/InputMethodSettingValuesWrapper;->refreshAllInputMethodAndSubtypes()V
 
     .line 79
     return-void
@@ -166,7 +166,7 @@
 
     .line 68
     .restart local v0    # "e":Landroid/os/RemoteException;
-    sget-object v1, Lcom/android/settings/inputmethod/InputMethodSettingValuesWrapper;->TAG:Ljava/lang/String;
+    sget-object v1, Lcom/android/settings_ext/inputmethod/InputMethodSettingValuesWrapper;->TAG:Ljava/lang/String;
 
     const-string v2, "Couldn\'t get current user ID; guessing it\'s 0"
 
@@ -188,13 +188,13 @@
 
     .line 158
     .local v0, "count":I
-    iget-object v5, p0, Lcom/android/settings/inputmethod/InputMethodSettingValuesWrapper;->mMethodMap:Ljava/util/HashMap;
+    iget-object v5, p0, Lcom/android/settings_ext/inputmethod/InputMethodSettingValuesWrapper;->mMethodMap:Ljava/util/HashMap;
 
     monitor-enter v5
 
     .line 159
     :try_start_0
-    iget-object v4, p0, Lcom/android/settings/inputmethod/InputMethodSettingValuesWrapper;->mSettings:Lcom/android/internal/inputmethod/InputMethodUtils$InputMethodSettings;
+    iget-object v4, p0, Lcom/android/settings_ext/inputmethod/InputMethodSettingValuesWrapper;->mSettings:Lcom/android/internal/inputmethod/InputMethodUtils$InputMethodSettings;
 
     invoke-virtual {v4}, Lcom/android/internal/inputmethod/InputMethodUtils$InputMethodSettings;->getEnabledInputMethodListLocked()Ljava/util/List;
 
@@ -228,7 +228,7 @@
 
     .line 162
     .local v3, "imi":Landroid/view/inputmethod/InputMethodInfo;
-    invoke-virtual {p0, v3, p1}, Lcom/android/settings/inputmethod/InputMethodSettingValuesWrapper;->isValidSystemNonAuxAsciiCapableIme(Landroid/view/inputmethod/InputMethodInfo;Landroid/content/Context;)Z
+    invoke-virtual {p0, v3, p1}, Lcom/android/settings_ext/inputmethod/InputMethodSettingValuesWrapper;->isValidSystemNonAuxAsciiCapableIme(Landroid/view/inputmethod/InputMethodInfo;Landroid/content/Context;)Z
 
     move-result v4
 
@@ -260,7 +260,7 @@
     if-nez v0, :cond_2
 
     .line 167
-    sget-object v4, Lcom/android/settings/inputmethod/InputMethodSettingValuesWrapper;->TAG:Ljava/lang/String;
+    sget-object v4, Lcom/android/settings_ext/inputmethod/InputMethodSettingValuesWrapper;->TAG:Ljava/lang/String;
 
     const-string v5, "No \"enabledValidSystemNonAuxAsciiCapableIme\"s found."
 
@@ -271,33 +271,33 @@
     return v0
 .end method
 
-.method static getInstance(Landroid/content/Context;)Lcom/android/settings/inputmethod/InputMethodSettingValuesWrapper;
+.method static getInstance(Landroid/content/Context;)Lcom/android/settings_ext/inputmethod/InputMethodSettingValuesWrapper;
     .locals 2
     .param p0, "context"    # Landroid/content/Context;
 
     .prologue
     .line 54
-    sget-object v0, Lcom/android/settings/inputmethod/InputMethodSettingValuesWrapper;->sInstance:Lcom/android/settings/inputmethod/InputMethodSettingValuesWrapper;
+    sget-object v0, Lcom/android/settings_ext/inputmethod/InputMethodSettingValuesWrapper;->sInstance:Lcom/android/settings_ext/inputmethod/InputMethodSettingValuesWrapper;
 
     if-nez v0, :cond_1
 
     .line 55
-    sget-object v1, Lcom/android/settings/inputmethod/InputMethodSettingValuesWrapper;->TAG:Ljava/lang/String;
+    sget-object v1, Lcom/android/settings_ext/inputmethod/InputMethodSettingValuesWrapper;->TAG:Ljava/lang/String;
 
     monitor-enter v1
 
     .line 56
     :try_start_0
-    sget-object v0, Lcom/android/settings/inputmethod/InputMethodSettingValuesWrapper;->sInstance:Lcom/android/settings/inputmethod/InputMethodSettingValuesWrapper;
+    sget-object v0, Lcom/android/settings_ext/inputmethod/InputMethodSettingValuesWrapper;->sInstance:Lcom/android/settings_ext/inputmethod/InputMethodSettingValuesWrapper;
 
     if-nez v0, :cond_0
 
     .line 57
-    new-instance v0, Lcom/android/settings/inputmethod/InputMethodSettingValuesWrapper;
+    new-instance v0, Lcom/android/settings_ext/inputmethod/InputMethodSettingValuesWrapper;
 
-    invoke-direct {v0, p0}, Lcom/android/settings/inputmethod/InputMethodSettingValuesWrapper;-><init>(Landroid/content/Context;)V
+    invoke-direct {v0, p0}, Lcom/android/settings_ext/inputmethod/InputMethodSettingValuesWrapper;-><init>(Landroid/content/Context;)V
 
-    sput-object v0, Lcom/android/settings/inputmethod/InputMethodSettingValuesWrapper;->sInstance:Lcom/android/settings/inputmethod/InputMethodSettingValuesWrapper;
+    sput-object v0, Lcom/android/settings_ext/inputmethod/InputMethodSettingValuesWrapper;->sInstance:Lcom/android/settings_ext/inputmethod/InputMethodSettingValuesWrapper;
 
     .line 59
     :cond_0
@@ -307,7 +307,7 @@
 
     .line 61
     :cond_1
-    sget-object v0, Lcom/android/settings/inputmethod/InputMethodSettingValuesWrapper;->sInstance:Lcom/android/settings/inputmethod/InputMethodSettingValuesWrapper;
+    sget-object v0, Lcom/android/settings_ext/inputmethod/InputMethodSettingValuesWrapper;->sInstance:Lcom/android/settings_ext/inputmethod/InputMethodSettingValuesWrapper;
 
     return-object v0
 
@@ -328,18 +328,18 @@
 
     .prologue
     .line 96
-    iget-object v7, p0, Lcom/android/settings/inputmethod/InputMethodSettingValuesWrapper;->mMethodMap:Ljava/util/HashMap;
+    iget-object v7, p0, Lcom/android/settings_ext/inputmethod/InputMethodSettingValuesWrapper;->mMethodMap:Ljava/util/HashMap;
 
     monitor-enter v7
 
     .line 97
     :try_start_0
-    iget-object v6, p0, Lcom/android/settings/inputmethod/InputMethodSettingValuesWrapper;->mAsciiCapableEnabledImis:Ljava/util/HashSet;
+    iget-object v6, p0, Lcom/android/settings_ext/inputmethod/InputMethodSettingValuesWrapper;->mAsciiCapableEnabledImis:Ljava/util/HashSet;
 
     invoke-virtual {v6}, Ljava/util/HashSet;->clear()V
 
     .line 98
-    iget-object v6, p0, Lcom/android/settings/inputmethod/InputMethodSettingValuesWrapper;->mSettings:Lcom/android/internal/inputmethod/InputMethodUtils$InputMethodSettings;
+    iget-object v6, p0, Lcom/android/settings_ext/inputmethod/InputMethodSettingValuesWrapper;->mSettings:Lcom/android/internal/inputmethod/InputMethodUtils$InputMethodSettings;
 
     invoke-virtual {v6}, Lcom/android/internal/inputmethod/InputMethodUtils$InputMethodSettings;->getEnabledInputMethodListLocked()Ljava/util/List;
 
@@ -406,7 +406,7 @@
     if-eqz v6, :cond_1
 
     .line 105
-    iget-object v6, p0, Lcom/android/settings/inputmethod/InputMethodSettingValuesWrapper;->mAsciiCapableEnabledImis:Ljava/util/HashSet;
+    iget-object v6, p0, Lcom/android/settings_ext/inputmethod/InputMethodSettingValuesWrapper;->mAsciiCapableEnabledImis:Ljava/util/HashSet;
 
     invoke-virtual {v6, v3}, Ljava/util/HashSet;->add(Ljava/lang/Object;)Z
 
@@ -463,15 +463,15 @@
 
     .prologue
     .line 120
-    iget-object v3, p0, Lcom/android/settings/inputmethod/InputMethodSettingValuesWrapper;->mMethodMap:Ljava/util/HashMap;
+    iget-object v3, p0, Lcom/android/settings_ext/inputmethod/InputMethodSettingValuesWrapper;->mMethodMap:Ljava/util/HashMap;
 
     monitor-enter v3
 
     .line 121
     :try_start_0
-    iget-object v2, p0, Lcom/android/settings/inputmethod/InputMethodSettingValuesWrapper;->mMethodMap:Ljava/util/HashMap;
+    iget-object v2, p0, Lcom/android/settings_ext/inputmethod/InputMethodSettingValuesWrapper;->mMethodMap:Ljava/util/HashMap;
 
-    iget-object v4, p0, Lcom/android/settings/inputmethod/InputMethodSettingValuesWrapper;->mSettings:Lcom/android/internal/inputmethod/InputMethodUtils$InputMethodSettings;
+    iget-object v4, p0, Lcom/android/settings_ext/inputmethod/InputMethodSettingValuesWrapper;->mSettings:Lcom/android/internal/inputmethod/InputMethodUtils$InputMethodSettings;
 
     invoke-virtual {v4}, Lcom/android/internal/inputmethod/InputMethodUtils$InputMethodSettings;->getSelectedInputMethod()Ljava/lang/String;
 
@@ -488,7 +488,7 @@
     if-nez v0, :cond_0
 
     .line 123
-    sget-object v2, Lcom/android/settings/inputmethod/InputMethodSettingValuesWrapper;->TAG:Ljava/lang/String;
+    sget-object v2, Lcom/android/settings_ext/inputmethod/InputMethodSettingValuesWrapper;->TAG:Ljava/lang/String;
 
     new-instance v4, Ljava/lang/StringBuilder;
 
@@ -500,7 +500,7 @@
 
     move-result-object v4
 
-    iget-object v5, p0, Lcom/android/settings/inputmethod/InputMethodSettingValuesWrapper;->mSettings:Lcom/android/internal/inputmethod/InputMethodUtils$InputMethodSettings;
+    iget-object v5, p0, Lcom/android/settings_ext/inputmethod/InputMethodSettingValuesWrapper;->mSettings:Lcom/android/internal/inputmethod/InputMethodUtils$InputMethodSettings;
 
     invoke-virtual {v5}, Lcom/android/internal/inputmethod/InputMethodUtils$InputMethodSettings;->getSelectedInputMethod()Ljava/lang/String;
 
@@ -527,7 +527,7 @@
 
     .line 126
     :cond_0
-    iget-object v2, p0, Lcom/android/settings/inputmethod/InputMethodSettingValuesWrapper;->mImm:Landroid/view/inputmethod/InputMethodManager;
+    iget-object v2, p0, Lcom/android/settings_ext/inputmethod/InputMethodSettingValuesWrapper;->mImm:Landroid/view/inputmethod/InputMethodManager;
 
     invoke-virtual {v2}, Landroid/view/inputmethod/InputMethodManager;->getCurrentInputMethodSubtype()Landroid/view/inputmethod/InputMethodSubtype;
 
@@ -570,13 +570,13 @@
 
     .prologue
     .line 114
-    iget-object v1, p0, Lcom/android/settings/inputmethod/InputMethodSettingValuesWrapper;->mMethodMap:Ljava/util/HashMap;
+    iget-object v1, p0, Lcom/android/settings_ext/inputmethod/InputMethodSettingValuesWrapper;->mMethodMap:Ljava/util/HashMap;
 
     monitor-enter v1
 
     .line 115
     :try_start_0
-    iget-object v0, p0, Lcom/android/settings/inputmethod/InputMethodSettingValuesWrapper;->mMethodList:Ljava/util/ArrayList;
+    iget-object v0, p0, Lcom/android/settings_ext/inputmethod/InputMethodSettingValuesWrapper;->mMethodList:Ljava/util/ArrayList;
 
     monitor-exit v1
 
@@ -604,19 +604,19 @@
     const/4 v2, 0x1
 
     .line 132
-    invoke-virtual {p0, p1}, Lcom/android/settings/inputmethod/InputMethodSettingValuesWrapper;->isEnabledImi(Landroid/view/inputmethod/InputMethodInfo;)Z
+    invoke-virtual {p0, p1}, Lcom/android/settings_ext/inputmethod/InputMethodSettingValuesWrapper;->isEnabledImi(Landroid/view/inputmethod/InputMethodInfo;)Z
 
     move-result v1
 
     .line 133
     .local v1, "isEnabled":Z
-    iget-object v4, p0, Lcom/android/settings/inputmethod/InputMethodSettingValuesWrapper;->mMethodMap:Ljava/util/HashMap;
+    iget-object v4, p0, Lcom/android/settings_ext/inputmethod/InputMethodSettingValuesWrapper;->mMethodMap:Ljava/util/HashMap;
 
     monitor-enter v4
 
     .line 134
     :try_start_0
-    iget-object v5, p0, Lcom/android/settings/inputmethod/InputMethodSettingValuesWrapper;->mSettings:Lcom/android/internal/inputmethod/InputMethodUtils$InputMethodSettings;
+    iget-object v5, p0, Lcom/android/settings_ext/inputmethod/InputMethodSettingValuesWrapper;->mSettings:Lcom/android/internal/inputmethod/InputMethodUtils$InputMethodSettings;
 
     invoke-virtual {v5}, Lcom/android/internal/inputmethod/InputMethodUtils$InputMethodSettings;->getEnabledInputMethodListLocked()Ljava/util/List;
 
@@ -644,7 +644,7 @@
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
     .line 139
-    invoke-direct {p0, p2}, Lcom/android/settings/inputmethod/InputMethodSettingValuesWrapper;->getEnabledValidSystemNonAuxAsciiCapableImeCount(Landroid/content/Context;)I
+    invoke-direct {p0, p2}, Lcom/android/settings_ext/inputmethod/InputMethodSettingValuesWrapper;->getEnabledValidSystemNonAuxAsciiCapableImeCount(Landroid/content/Context;)I
 
     move-result v0
 
@@ -696,7 +696,7 @@
 
     .line 152
     :cond_3
-    invoke-virtual {p0, p1, p2}, Lcom/android/settings/inputmethod/InputMethodSettingValuesWrapper;->isValidSystemNonAuxAsciiCapableIme(Landroid/view/inputmethod/InputMethodInfo;Landroid/content/Context;)Z
+    invoke-virtual {p0, p1, p2}, Lcom/android/settings_ext/inputmethod/InputMethodSettingValuesWrapper;->isValidSystemNonAuxAsciiCapableIme(Landroid/view/inputmethod/InputMethodInfo;Landroid/content/Context;)Z
 
     move-result v2
 
@@ -709,13 +709,13 @@
 
     .prologue
     .line 174
-    iget-object v4, p0, Lcom/android/settings/inputmethod/InputMethodSettingValuesWrapper;->mMethodMap:Ljava/util/HashMap;
+    iget-object v4, p0, Lcom/android/settings_ext/inputmethod/InputMethodSettingValuesWrapper;->mMethodMap:Ljava/util/HashMap;
 
     monitor-enter v4
 
     .line 175
     :try_start_0
-    iget-object v3, p0, Lcom/android/settings/inputmethod/InputMethodSettingValuesWrapper;->mSettings:Lcom/android/internal/inputmethod/InputMethodUtils$InputMethodSettings;
+    iget-object v3, p0, Lcom/android/settings_ext/inputmethod/InputMethodSettingValuesWrapper;->mSettings:Lcom/android/internal/inputmethod/InputMethodUtils$InputMethodSettings;
 
     invoke-virtual {v3}, Lcom/android/internal/inputmethod/InputMethodUtils$InputMethodSettings;->getEnabledInputMethodListLocked()Ljava/util/List;
 
@@ -824,7 +824,7 @@
     if-nez v1, :cond_0
 
     .line 192
-    iget-object v0, p0, Lcom/android/settings/inputmethod/InputMethodSettingValuesWrapper;->mAsciiCapableEnabledImis:Ljava/util/HashSet;
+    iget-object v0, p0, Lcom/android/settings_ext/inputmethod/InputMethodSettingValuesWrapper;->mAsciiCapableEnabledImis:Ljava/util/HashSet;
 
     invoke-virtual {v0}, Ljava/util/HashSet;->isEmpty()Z
 
@@ -833,7 +833,7 @@
     if-eqz v0, :cond_2
 
     .line 193
-    sget-object v0, Lcom/android/settings/inputmethod/InputMethodSettingValuesWrapper;->TAG:Ljava/lang/String;
+    sget-object v0, Lcom/android/settings_ext/inputmethod/InputMethodSettingValuesWrapper;->TAG:Ljava/lang/String;
 
     const-string v1, "ascii capable subtype enabled imi not found. Fall back to English Keyboard subtype."
 
@@ -856,7 +856,7 @@
 
     .line 198
     :cond_2
-    iget-object v0, p0, Lcom/android/settings/inputmethod/InputMethodSettingValuesWrapper;->mAsciiCapableEnabledImis:Ljava/util/HashSet;
+    iget-object v0, p0, Lcom/android/settings_ext/inputmethod/InputMethodSettingValuesWrapper;->mAsciiCapableEnabledImis:Ljava/util/HashSet;
 
     invoke-virtual {v0, p1}, Ljava/util/HashSet;->contains(Ljava/lang/Object;)Z
 
@@ -870,23 +870,23 @@
 
     .prologue
     .line 82
-    iget-object v4, p0, Lcom/android/settings/inputmethod/InputMethodSettingValuesWrapper;->mMethodMap:Ljava/util/HashMap;
+    iget-object v4, p0, Lcom/android/settings_ext/inputmethod/InputMethodSettingValuesWrapper;->mMethodMap:Ljava/util/HashMap;
 
     monitor-enter v4
 
     .line 83
     :try_start_0
-    iget-object v3, p0, Lcom/android/settings/inputmethod/InputMethodSettingValuesWrapper;->mMethodList:Ljava/util/ArrayList;
+    iget-object v3, p0, Lcom/android/settings_ext/inputmethod/InputMethodSettingValuesWrapper;->mMethodList:Ljava/util/ArrayList;
 
     invoke-virtual {v3}, Ljava/util/ArrayList;->clear()V
 
     .line 84
-    iget-object v3, p0, Lcom/android/settings/inputmethod/InputMethodSettingValuesWrapper;->mMethodMap:Ljava/util/HashMap;
+    iget-object v3, p0, Lcom/android/settings_ext/inputmethod/InputMethodSettingValuesWrapper;->mMethodMap:Ljava/util/HashMap;
 
     invoke-virtual {v3}, Ljava/util/HashMap;->clear()V
 
     .line 85
-    iget-object v3, p0, Lcom/android/settings/inputmethod/InputMethodSettingValuesWrapper;->mImm:Landroid/view/inputmethod/InputMethodManager;
+    iget-object v3, p0, Lcom/android/settings_ext/inputmethod/InputMethodSettingValuesWrapper;->mImm:Landroid/view/inputmethod/InputMethodManager;
 
     invoke-virtual {v3}, Landroid/view/inputmethod/InputMethodManager;->getInputMethodList()Ljava/util/List;
 
@@ -894,7 +894,7 @@
 
     .line 86
     .local v2, "imms":Ljava/util/List;, "Ljava/util/List<Landroid/view/inputmethod/InputMethodInfo;>;"
-    iget-object v3, p0, Lcom/android/settings/inputmethod/InputMethodSettingValuesWrapper;->mMethodList:Ljava/util/ArrayList;
+    iget-object v3, p0, Lcom/android/settings_ext/inputmethod/InputMethodSettingValuesWrapper;->mMethodList:Ljava/util/ArrayList;
 
     invoke-virtual {v3, v2}, Ljava/util/ArrayList;->addAll(Ljava/util/Collection;)Z
 
@@ -919,7 +919,7 @@
 
     .line 88
     .local v1, "imi":Landroid/view/inputmethod/InputMethodInfo;
-    iget-object v3, p0, Lcom/android/settings/inputmethod/InputMethodSettingValuesWrapper;->mMethodMap:Ljava/util/HashMap;
+    iget-object v3, p0, Lcom/android/settings_ext/inputmethod/InputMethodSettingValuesWrapper;->mMethodMap:Ljava/util/HashMap;
 
     invoke-virtual {v1}, Landroid/view/inputmethod/InputMethodInfo;->getId()Ljava/lang/String;
 
@@ -947,7 +947,7 @@
     .restart local v2    # "imms":Ljava/util/List;, "Ljava/util/List<Landroid/view/inputmethod/InputMethodInfo;>;"
     :cond_0
     :try_start_1
-    invoke-direct {p0}, Lcom/android/settings/inputmethod/InputMethodSettingValuesWrapper;->updateAsciiCapableEnabledImis()V
+    invoke-direct {p0}, Lcom/android/settings_ext/inputmethod/InputMethodSettingValuesWrapper;->updateAsciiCapableEnabledImis()V
 
     .line 91
     monitor-exit v4

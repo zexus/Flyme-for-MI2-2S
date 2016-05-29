@@ -1,4 +1,4 @@
-.class Lcom/android/settings/sim/MultiSimEnablerPreference$1;
+.class Lcom/android/settings_ext/sim/MultiSimEnablerPreference$1;
 .super Ljava/lang/Object;
 .source "MultiSimEnablerPreference.java"
 
@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/android/settings/sim/MultiSimEnablerPreference;
+    value = Lcom/android/settings_ext/sim/MultiSimEnablerPreference;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -18,16 +18,16 @@
 
 
 # instance fields
-.field final synthetic this$0:Lcom/android/settings/sim/MultiSimEnablerPreference;
+.field final synthetic this$0:Lcom/android/settings_ext/sim/MultiSimEnablerPreference;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/sim/MultiSimEnablerPreference;)V
+.method constructor <init>(Lcom/android/settings_ext/sim/MultiSimEnablerPreference;)V
     .locals 0
 
     .prologue
     .line 398
-    iput-object p1, p0, Lcom/android/settings/sim/MultiSimEnablerPreference$1;->this$0:Lcom/android/settings/sim/MultiSimEnablerPreference;
+    iput-object p1, p0, Lcom/android/settings_ext/sim/MultiSimEnablerPreference$1;->this$0:Lcom/android/settings_ext/sim/MultiSimEnablerPreference;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -50,10 +50,10 @@
     if-ne p2, v0, :cond_1
 
     .line 401
-    iget-object v0, p0, Lcom/android/settings/sim/MultiSimEnablerPreference$1;->this$0:Lcom/android/settings/sim/MultiSimEnablerPreference;
+    iget-object v0, p0, Lcom/android/settings_ext/sim/MultiSimEnablerPreference$1;->this$0:Lcom/android/settings_ext/sim/MultiSimEnablerPreference;
 
-    # invokes: Lcom/android/settings/sim/MultiSimEnablerPreference;->sendSubConfigurationRequest()V
-    invoke-static {v0}, Lcom/android/settings/sim/MultiSimEnablerPreference;->access$000(Lcom/android/settings/sim/MultiSimEnablerPreference;)V
+    # invokes: Lcom/android/settings_ext/sim/MultiSimEnablerPreference;->sendSubConfigurationRequest()V
+    invoke-static {v0}, Lcom/android/settings_ext/sim/MultiSimEnablerPreference;->access$000(Lcom/android/settings_ext/sim/MultiSimEnablerPreference;)V
 
     .line 410
     :cond_0
@@ -67,23 +67,23 @@
     if-ne p2, v0, :cond_2
 
     .line 403
-    iget-object v0, p0, Lcom/android/settings/sim/MultiSimEnablerPreference$1;->this$0:Lcom/android/settings/sim/MultiSimEnablerPreference;
+    iget-object v0, p0, Lcom/android/settings_ext/sim/MultiSimEnablerPreference$1;->this$0:Lcom/android/settings_ext/sim/MultiSimEnablerPreference;
 
-    # invokes: Lcom/android/settings/sim/MultiSimEnablerPreference;->setChecked(Z)V
-    invoke-static {v0, v3}, Lcom/android/settings/sim/MultiSimEnablerPreference;->access$100(Lcom/android/settings/sim/MultiSimEnablerPreference;Z)V
+    # invokes: Lcom/android/settings_ext/sim/MultiSimEnablerPreference;->setChecked(Z)V
+    invoke-static {v0, v3}, Lcom/android/settings_ext/sim/MultiSimEnablerPreference;->access$100(Lcom/android/settings_ext/sim/MultiSimEnablerPreference;Z)V
 
     .line 404
-    iget-object v0, p0, Lcom/android/settings/sim/MultiSimEnablerPreference$1;->this$0:Lcom/android/settings/sim/MultiSimEnablerPreference;
+    iget-object v0, p0, Lcom/android/settings_ext/sim/MultiSimEnablerPreference$1;->this$0:Lcom/android/settings_ext/sim/MultiSimEnablerPreference;
 
-    # getter for: Lcom/android/settings/sim/MultiSimEnablerPreference;->mSubSummary:Landroid/widget/TextView;
-    invoke-static {v0}, Lcom/android/settings/sim/MultiSimEnablerPreference;->access$300(Lcom/android/settings/sim/MultiSimEnablerPreference;)Landroid/widget/TextView;
+    # getter for: Lcom/android/settings_ext/sim/MultiSimEnablerPreference;->mSubSummary:Landroid/widget/TextView;
+    invoke-static {v0}, Lcom/android/settings_ext/sim/MultiSimEnablerPreference;->access$300(Lcom/android/settings_ext/sim/MultiSimEnablerPreference;)Landroid/widget/TextView;
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/android/settings/sim/MultiSimEnablerPreference$1;->this$0:Lcom/android/settings/sim/MultiSimEnablerPreference;
+    iget-object v1, p0, Lcom/android/settings_ext/sim/MultiSimEnablerPreference$1;->this$0:Lcom/android/settings_ext/sim/MultiSimEnablerPreference;
 
-    # getter for: Lcom/android/settings/sim/MultiSimEnablerPreference;->mContext:Landroid/content/Context;
-    invoke-static {v1}, Lcom/android/settings/sim/MultiSimEnablerPreference;->access$200(Lcom/android/settings/sim/MultiSimEnablerPreference;)Landroid/content/Context;
+    # getter for: Lcom/android/settings_ext/sim/MultiSimEnablerPreference;->mContext:Landroid/content/Context;
+    invoke-static {v1}, Lcom/android/settings_ext/sim/MultiSimEnablerPreference;->access$200(Lcom/android/settings_ext/sim/MultiSimEnablerPreference;)Landroid/content/Context;
 
     move-result-object v1
 
@@ -93,10 +93,10 @@
 
     const/4 v4, 0x0
 
-    iget-object v5, p0, Lcom/android/settings/sim/MultiSimEnablerPreference$1;->this$0:Lcom/android/settings/sim/MultiSimEnablerPreference;
+    iget-object v5, p0, Lcom/android/settings_ext/sim/MultiSimEnablerPreference$1;->this$0:Lcom/android/settings_ext/sim/MultiSimEnablerPreference;
 
-    # getter for: Lcom/android/settings/sim/MultiSimEnablerPreference;->mContext:Landroid/content/Context;
-    invoke-static {v5}, Lcom/android/settings/sim/MultiSimEnablerPreference;->access$200(Lcom/android/settings/sim/MultiSimEnablerPreference;)Landroid/content/Context;
+    # getter for: Lcom/android/settings_ext/sim/MultiSimEnablerPreference;->mContext:Landroid/content/Context;
+    invoke-static {v5}, Lcom/android/settings_ext/sim/MultiSimEnablerPreference;->access$200(Lcom/android/settings_ext/sim/MultiSimEnablerPreference;)Landroid/content/Context;
 
     move-result-object v5
 
@@ -123,9 +123,9 @@
     if-ne p2, v0, :cond_0
 
     .line 408
-    iget-object v0, p0, Lcom/android/settings/sim/MultiSimEnablerPreference$1;->this$0:Lcom/android/settings/sim/MultiSimEnablerPreference;
+    iget-object v0, p0, Lcom/android/settings_ext/sim/MultiSimEnablerPreference$1;->this$0:Lcom/android/settings_ext/sim/MultiSimEnablerPreference;
 
-    invoke-virtual {v0}, Lcom/android/settings/sim/MultiSimEnablerPreference;->update()V
+    invoke-virtual {v0}, Lcom/android/settings_ext/sim/MultiSimEnablerPreference;->update()V
 
     goto :goto_0
 .end method

@@ -1,4 +1,4 @@
-.class Lcom/android/settings/inputmethod/InputMethodAndSubtypeEnabler$1;
+.class Lcom/android/settings_ext/inputmethod/InputMethodAndSubtypeEnabler$1;
 .super Ljava/lang/Object;
 .source "InputMethodAndSubtypeEnabler.java"
 
@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/android/settings/inputmethod/InputMethodAndSubtypeEnabler;->addInputMethodSubtypePreferences(Landroid/view/inputmethod/InputMethodInfo;Landroid/preference/PreferenceScreen;)V
+    value = Lcom/android/settings_ext/inputmethod/InputMethodAndSubtypeEnabler;->addInputMethodSubtypePreferences(Landroid/view/inputmethod/InputMethodInfo;Landroid/preference/PreferenceScreen;)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -28,16 +28,16 @@
 
 
 # instance fields
-.field final synthetic this$0:Lcom/android/settings/inputmethod/InputMethodAndSubtypeEnabler;
+.field final synthetic this$0:Lcom/android/settings_ext/inputmethod/InputMethodAndSubtypeEnabler;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/inputmethod/InputMethodAndSubtypeEnabler;)V
+.method constructor <init>(Lcom/android/settings_ext/inputmethod/InputMethodAndSubtypeEnabler;)V
     .locals 0
 
     .prologue
     .line 194
-    iput-object p1, p0, Lcom/android/settings/inputmethod/InputMethodAndSubtypeEnabler$1;->this$0:Lcom/android/settings/inputmethod/InputMethodAndSubtypeEnabler;
+    iput-object p1, p0, Lcom/android/settings_ext/inputmethod/InputMethodAndSubtypeEnabler$1;->this$0:Lcom/android/settings_ext/inputmethod/InputMethodAndSubtypeEnabler;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -53,22 +53,22 @@
 
     .prologue
     .line 197
-    instance-of v0, p1, Lcom/android/settings/inputmethod/InputMethodSubtypePreference;
+    instance-of v0, p1, Lcom/android/settings_ext/inputmethod/InputMethodSubtypePreference;
 
     if-eqz v0, :cond_0
 
     .line 198
-    check-cast p1, Lcom/android/settings/inputmethod/InputMethodSubtypePreference;
+    check-cast p1, Lcom/android/settings_ext/inputmethod/InputMethodSubtypePreference;
 
     .end local p1    # "lhs":Landroid/preference/Preference;
-    iget-object v0, p0, Lcom/android/settings/inputmethod/InputMethodAndSubtypeEnabler$1;->this$0:Lcom/android/settings/inputmethod/InputMethodAndSubtypeEnabler;
+    iget-object v0, p0, Lcom/android/settings_ext/inputmethod/InputMethodAndSubtypeEnabler$1;->this$0:Lcom/android/settings_ext/inputmethod/InputMethodAndSubtypeEnabler;
 
-    # getter for: Lcom/android/settings/inputmethod/InputMethodAndSubtypeEnabler;->mCollator:Ljava/text/Collator;
-    invoke-static {v0}, Lcom/android/settings/inputmethod/InputMethodAndSubtypeEnabler;->access$000(Lcom/android/settings/inputmethod/InputMethodAndSubtypeEnabler;)Ljava/text/Collator;
+    # getter for: Lcom/android/settings_ext/inputmethod/InputMethodAndSubtypeEnabler;->mCollator:Ljava/text/Collator;
+    invoke-static {v0}, Lcom/android/settings_ext/inputmethod/InputMethodAndSubtypeEnabler;->access$000(Lcom/android/settings_ext/inputmethod/InputMethodAndSubtypeEnabler;)Ljava/text/Collator;
 
     move-result-object v0
 
-    invoke-virtual {p1, p2, v0}, Lcom/android/settings/inputmethod/InputMethodSubtypePreference;->compareTo(Landroid/preference/Preference;Ljava/text/Collator;)I
+    invoke-virtual {p1, p2, v0}, Lcom/android/settings_ext/inputmethod/InputMethodSubtypePreference;->compareTo(Landroid/preference/Preference;Ljava/text/Collator;)I
 
     move-result v0
 
@@ -98,7 +98,7 @@
     check-cast p2, Landroid/preference/Preference;
 
     .end local p2    # "x1":Ljava/lang/Object;
-    invoke-virtual {p0, p1, p2}, Lcom/android/settings/inputmethod/InputMethodAndSubtypeEnabler$1;->compare(Landroid/preference/Preference;Landroid/preference/Preference;)I
+    invoke-virtual {p0, p1, p2}, Lcom/android/settings_ext/inputmethod/InputMethodAndSubtypeEnabler$1;->compare(Landroid/preference/Preference;Landroid/preference/Preference;)I
 
     move-result v0
 

@@ -5,7 +5,7 @@
         <intent android:targetPackage="@string/additional_system_update" android:action="android.intent.action.MAIN" android:targetClass="@string/additional_system_update_menu" />
     </PreferenceScreen>
     <PreferenceScreen android:title="@string/device_status" android:key="status_info" android:summary="@string/device_status_summary">
-        <intent android:targetPackage="com.android.settings" android:action="android.intent.action.MAIN" android:targetClass="com.android.settings.deviceinfo.Status" />
+        <intent android:targetPackage="com.android.settings_ext" android:action="android.intent.action.MAIN" android:targetClass="com.android.settings_ext.deviceinfo.Status" />
     </PreferenceScreen>
     <PreferenceScreen android:title="@string/legal_information" android:key="container">
         <PreferenceScreen android:title="@string/copyright_title" android:key="copyright">

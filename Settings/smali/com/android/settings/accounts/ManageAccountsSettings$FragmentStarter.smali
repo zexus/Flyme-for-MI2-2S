@@ -1,4 +1,4 @@
-.class Lcom/android/settings/accounts/ManageAccountsSettings$FragmentStarter;
+.class Lcom/android/settings_ext/accounts/ManageAccountsSettings$FragmentStarter;
 .super Ljava/lang/Object;
 .source "ManageAccountsSettings.java"
 
@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/android/settings/accounts/ManageAccountsSettings;
+    value = Lcom/android/settings_ext/accounts/ManageAccountsSettings;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -22,26 +22,26 @@
 
 .field private final mTitleRes:I
 
-.field final synthetic this$0:Lcom/android/settings/accounts/ManageAccountsSettings;
+.field final synthetic this$0:Lcom/android/settings_ext/accounts/ManageAccountsSettings;
 
 
 # direct methods
-.method public constructor <init>(Lcom/android/settings/accounts/ManageAccountsSettings;Ljava/lang/String;I)V
+.method public constructor <init>(Lcom/android/settings_ext/accounts/ManageAccountsSettings;Ljava/lang/String;I)V
     .locals 0
     .param p2, "className"    # Ljava/lang/String;
     .param p3, "title"    # I
 
     .prologue
     .line 414
-    iput-object p1, p0, Lcom/android/settings/accounts/ManageAccountsSettings$FragmentStarter;->this$0:Lcom/android/settings/accounts/ManageAccountsSettings;
+    iput-object p1, p0, Lcom/android/settings_ext/accounts/ManageAccountsSettings$FragmentStarter;->this$0:Lcom/android/settings_ext/accounts/ManageAccountsSettings;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 415
-    iput-object p2, p0, Lcom/android/settings/accounts/ManageAccountsSettings$FragmentStarter;->mClass:Ljava/lang/String;
+    iput-object p2, p0, Lcom/android/settings_ext/accounts/ManageAccountsSettings$FragmentStarter;->mClass:Ljava/lang/String;
 
     .line 416
-    iput p3, p0, Lcom/android/settings/accounts/ManageAccountsSettings$FragmentStarter;->mTitleRes:I
+    iput p3, p0, Lcom/android/settings_ext/accounts/ManageAccountsSettings$FragmentStarter;->mTitleRes:I
 
     .line 417
     return-void
@@ -57,17 +57,17 @@
     const/4 v2, 0x0
 
     .line 421
-    iget-object v0, p0, Lcom/android/settings/accounts/ManageAccountsSettings$FragmentStarter;->this$0:Lcom/android/settings/accounts/ManageAccountsSettings;
+    iget-object v0, p0, Lcom/android/settings_ext/accounts/ManageAccountsSettings$FragmentStarter;->this$0:Lcom/android/settings_ext/accounts/ManageAccountsSettings;
 
-    invoke-virtual {v0}, Lcom/android/settings/accounts/ManageAccountsSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {v0}, Lcom/android/settings_ext/accounts/ManageAccountsSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
-    check-cast v0, Lcom/android/settings/SettingsActivity;
+    check-cast v0, Lcom/android/settings_ext/SettingsActivity;
 
-    iget-object v1, p0, Lcom/android/settings/accounts/ManageAccountsSettings$FragmentStarter;->mClass:Ljava/lang/String;
+    iget-object v1, p0, Lcom/android/settings_ext/accounts/ManageAccountsSettings$FragmentStarter;->mClass:Ljava/lang/String;
 
-    iget v3, p0, Lcom/android/settings/accounts/ManageAccountsSettings$FragmentStarter;->mTitleRes:I
+    iget v3, p0, Lcom/android/settings_ext/accounts/ManageAccountsSettings$FragmentStarter;->mTitleRes:I
 
     const/4 v6, 0x0
 
@@ -75,12 +75,12 @@
 
     move-object v5, v2
 
-    invoke-virtual/range {v0 .. v6}, Lcom/android/settings/SettingsActivity;->startPreferencePanel(Ljava/lang/String;Landroid/os/Bundle;ILjava/lang/CharSequence;Landroid/app/Fragment;I)V
+    invoke-virtual/range {v0 .. v6}, Lcom/android/settings_ext/SettingsActivity;->startPreferencePanel(Ljava/lang/String;Landroid/os/Bundle;ILjava/lang/CharSequence;Landroid/app/Fragment;I)V
 
     .line 425
-    iget-object v0, p0, Lcom/android/settings/accounts/ManageAccountsSettings$FragmentStarter;->mClass:Ljava/lang/String;
+    iget-object v0, p0, Lcom/android/settings_ext/accounts/ManageAccountsSettings$FragmentStarter;->mClass:Ljava/lang/String;
 
-    const-class v1, Lcom/android/settings/location/LocationSettings;
+    const-class v1, Lcom/android/settings_ext/location/LocationSettings;
 
     invoke-virtual {v1}, Ljava/lang/Class;->getName()Ljava/lang/String;
 
@@ -101,9 +101,9 @@
 
     .line 427
     .local v7, "intent":Landroid/content/Intent;
-    iget-object v0, p0, Lcom/android/settings/accounts/ManageAccountsSettings$FragmentStarter;->this$0:Lcom/android/settings/accounts/ManageAccountsSettings;
+    iget-object v0, p0, Lcom/android/settings_ext/accounts/ManageAccountsSettings$FragmentStarter;->this$0:Lcom/android/settings_ext/accounts/ManageAccountsSettings;
 
-    invoke-virtual {v0}, Lcom/android/settings/accounts/ManageAccountsSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {v0}, Lcom/android/settings_ext/accounts/ManageAccountsSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 

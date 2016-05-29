@@ -1,4 +1,4 @@
-.class Lcom/android/settings/HomeSettings$1;
+.class Lcom/android/settings_ext/HomeSettings$1;
 .super Ljava/lang/Object;
 .source "HomeSettings.java"
 
@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/android/settings/HomeSettings;
+    value = Lcom/android/settings_ext/HomeSettings;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -18,16 +18,16 @@
 
 
 # instance fields
-.field final synthetic this$0:Lcom/android/settings/HomeSettings;
+.field final synthetic this$0:Lcom/android/settings_ext/HomeSettings;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/HomeSettings;)V
+.method constructor <init>(Lcom/android/settings_ext/HomeSettings;)V
     .locals 0
 
     .prologue
     .line 97
-    iput-object p1, p0, Lcom/android/settings/HomeSettings$1;->this$0:Lcom/android/settings/HomeSettings;
+    iput-object p1, p0, Lcom/android/settings_ext/HomeSettings$1;->this$0:Lcom/android/settings_ext/HomeSettings;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -54,10 +54,10 @@
 
     .line 101
     .local v0, "index":I
-    iget-object v2, p0, Lcom/android/settings/HomeSettings$1;->this$0:Lcom/android/settings/HomeSettings;
+    iget-object v2, p0, Lcom/android/settings_ext/HomeSettings$1;->this$0:Lcom/android/settings_ext/HomeSettings;
 
-    # getter for: Lcom/android/settings/HomeSettings;->mPrefs:Ljava/util/ArrayList;
-    invoke-static {v2}, Lcom/android/settings/HomeSettings;->access$200(Lcom/android/settings/HomeSettings;)Ljava/util/ArrayList;
+    # getter for: Lcom/android/settings_ext/HomeSettings;->mPrefs:Ljava/util/ArrayList;
+    invoke-static {v2}, Lcom/android/settings_ext/HomeSettings;->access$200(Lcom/android/settings_ext/HomeSettings;)Ljava/util/ArrayList;
 
     move-result-object v2
 
@@ -65,18 +65,18 @@
 
     move-result-object v1
 
-    check-cast v1, Lcom/android/settings/HomeSettings$HomeAppPreference;
+    check-cast v1, Lcom/android/settings_ext/HomeSettings$HomeAppPreference;
 
     .line 102
-    .local v1, "pref":Lcom/android/settings/HomeSettings$HomeAppPreference;
-    iget-boolean v2, v1, Lcom/android/settings/HomeSettings$HomeAppPreference;->isChecked:Z
+    .local v1, "pref":Lcom/android/settings_ext/HomeSettings$HomeAppPreference;
+    iget-boolean v2, v1, Lcom/android/settings_ext/HomeSettings$HomeAppPreference;->isChecked:Z
 
     if-nez v2, :cond_0
 
     .line 103
-    iget-object v2, p0, Lcom/android/settings/HomeSettings$1;->this$0:Lcom/android/settings/HomeSettings;
+    iget-object v2, p0, Lcom/android/settings_ext/HomeSettings$1;->this$0:Lcom/android/settings_ext/HomeSettings;
 
-    invoke-virtual {v2, v1}, Lcom/android/settings/HomeSettings;->makeCurrentHome(Lcom/android/settings/HomeSettings$HomeAppPreference;)V
+    invoke-virtual {v2, v1}, Lcom/android/settings_ext/HomeSettings;->makeCurrentHome(Lcom/android/settings_ext/HomeSettings$HomeAppPreference;)V
 
     .line 105
     :cond_0

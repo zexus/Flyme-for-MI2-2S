@@ -1,9 +1,9 @@
-.class public Lcom/android/settings/wifi/WifiPickerActivity;
-.super Lcom/android/settings/SettingsActivity;
+.class public Lcom/android/settings_ext/wifi/WifiPickerActivity;
+.super Lcom/android/settings_ext/SettingsActivity;
 .source "WifiPickerActivity.java"
 
 # interfaces
-.implements Lcom/android/settings/ButtonBarHandler;
+.implements Lcom/android/settings_ext/ButtonBarHandler;
 
 
 # direct methods
@@ -12,7 +12,7 @@
 
     .prologue
     .line 28
-    invoke-direct {p0}, Lcom/android/settings/SettingsActivity;-><init>()V
+    invoke-direct {p0}, Lcom/android/settings_ext/SettingsActivity;-><init>()V
 
     return-void
 .end method
@@ -26,7 +26,7 @@
     .line 32
     new-instance v0, Landroid/content/Intent;
 
-    invoke-super {p0}, Lcom/android/settings/SettingsActivity;->getIntent()Landroid/content/Intent;
+    invoke-super {p0}, Lcom/android/settings_ext/SettingsActivity;->getIntent()Landroid/content/Intent;
 
     move-result-object v1
 
@@ -45,7 +45,7 @@
     .line 34
     const-string v1, ":settings:show_fragment"
 
-    invoke-virtual {p0}, Lcom/android/settings/wifi/WifiPickerActivity;->getWifiSettingsClass()Ljava/lang/Class;
+    invoke-virtual {p0}, Lcom/android/settings_ext/wifi/WifiPickerActivity;->getWifiSettingsClass()Ljava/lang/Class;
 
     move-result-object v2
 
@@ -81,7 +81,7 @@
 
     .prologue
     .line 50
-    const-class v0, Lcom/android/settings/wifi/WifiSettings;
+    const-class v0, Lcom/android/settings_ext/wifi/WifiSettings;
 
     return-object v0
 .end method
@@ -92,7 +92,7 @@
 
     .prologue
     .line 42
-    const-class v0, Lcom/android/settings/wifi/WifiSettings;
+    const-class v0, Lcom/android/settings_ext/wifi/WifiSettings;
 
     invoke-virtual {v0}, Ljava/lang/Class;->getName()Ljava/lang/String;
 
@@ -104,7 +104,7 @@
 
     if-nez v0, :cond_0
 
-    const-class v0, Lcom/android/settings/wifi/p2p/WifiP2pSettings;
+    const-class v0, Lcom/android/settings_ext/wifi/p2p/WifiP2pSettings;
 
     invoke-virtual {v0}, Ljava/lang/Class;->getName()Ljava/lang/String;
 
@@ -116,7 +116,7 @@
 
     if-nez v0, :cond_0
 
-    const-class v0, Lcom/android/settings/wifi/SavedAccessPointsWifiSettings;
+    const-class v0, Lcom/android/settings_ext/wifi/SavedAccessPointsWifiSettings;
 
     invoke-virtual {v0}, Ljava/lang/Class;->getName()Ljava/lang/String;
 
@@ -128,7 +128,7 @@
 
     if-nez v0, :cond_0
 
-    const-class v0, Lcom/android/settings/wifi/AdvancedWifiSettings;
+    const-class v0, Lcom/android/settings_ext/wifi/AdvancedWifiSettings;
 
     invoke-virtual {v0}, Ljava/lang/Class;->getName()Ljava/lang/String;
 

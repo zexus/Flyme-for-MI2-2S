@@ -1,4 +1,4 @@
-.class Lcom/android/settings/users/UserSettings$9;
+.class Lcom/android/settings_ext/users/UserSettings$9;
 .super Ljava/lang/Object;
 .source "UserSettings.java"
 
@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/android/settings/users/UserSettings;->onCreateDialog(I)Landroid/app/Dialog;
+    value = Lcom/android/settings_ext/users/UserSettings;->onCreateDialog(I)Landroid/app/Dialog;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -18,16 +18,16 @@
 
 
 # instance fields
-.field final synthetic this$0:Lcom/android/settings/users/UserSettings;
+.field final synthetic this$0:Lcom/android/settings_ext/users/UserSettings;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/users/UserSettings;)V
+.method constructor <init>(Lcom/android/settings_ext/users/UserSettings;)V
     .locals 0
 
     .prologue
     .line 598
-    iput-object p1, p0, Lcom/android/settings/users/UserSettings$9;->this$0:Lcom/android/settings/users/UserSettings;
+    iput-object p1, p0, Lcom/android/settings_ext/users/UserSettings$9;->this$0:Lcom/android/settings_ext/users/UserSettings;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -43,10 +43,10 @@
 
     .prologue
     .line 601
-    iget-object v0, p0, Lcom/android/settings/users/UserSettings$9;->this$0:Lcom/android/settings/users/UserSettings;
+    iget-object v0, p0, Lcom/android/settings_ext/users/UserSettings$9;->this$0:Lcom/android/settings_ext/users/UserSettings;
 
-    # invokes: Lcom/android/settings/users/UserSettings;->launchChooseLockscreen()V
-    invoke-static {v0}, Lcom/android/settings/users/UserSettings;->access$1400(Lcom/android/settings/users/UserSettings;)V
+    # invokes: Lcom/android/settings_ext/users/UserSettings;->launchChooseLockscreen()V
+    invoke-static {v0}, Lcom/android/settings_ext/users/UserSettings;->access$1400(Lcom/android/settings_ext/users/UserSettings;)V
 
     .line 602
     return-void

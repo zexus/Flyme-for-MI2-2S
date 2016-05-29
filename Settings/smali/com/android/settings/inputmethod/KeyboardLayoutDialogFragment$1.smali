@@ -1,4 +1,4 @@
-.class Lcom/android/settings/inputmethod/KeyboardLayoutDialogFragment$1;
+.class Lcom/android/settings_ext/inputmethod/KeyboardLayoutDialogFragment$1;
 .super Ljava/lang/Object;
 .source "KeyboardLayoutDialogFragment.java"
 
@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/android/settings/inputmethod/KeyboardLayoutDialogFragment;->onCreateDialog(Landroid/os/Bundle;)Landroid/app/Dialog;
+    value = Lcom/android/settings_ext/inputmethod/KeyboardLayoutDialogFragment;->onCreateDialog(Landroid/os/Bundle;)Landroid/app/Dialog;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -18,16 +18,16 @@
 
 
 # instance fields
-.field final synthetic this$0:Lcom/android/settings/inputmethod/KeyboardLayoutDialogFragment;
+.field final synthetic this$0:Lcom/android/settings_ext/inputmethod/KeyboardLayoutDialogFragment;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/inputmethod/KeyboardLayoutDialogFragment;)V
+.method constructor <init>(Lcom/android/settings_ext/inputmethod/KeyboardLayoutDialogFragment;)V
     .locals 0
 
     .prologue
     .line 104
-    iput-object p1, p0, Lcom/android/settings/inputmethod/KeyboardLayoutDialogFragment$1;->this$0:Lcom/android/settings/inputmethod/KeyboardLayoutDialogFragment;
+    iput-object p1, p0, Lcom/android/settings_ext/inputmethod/KeyboardLayoutDialogFragment$1;->this$0:Lcom/android/settings_ext/inputmethod/KeyboardLayoutDialogFragment;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -43,10 +43,10 @@
 
     .prologue
     .line 107
-    iget-object v0, p0, Lcom/android/settings/inputmethod/KeyboardLayoutDialogFragment$1;->this$0:Lcom/android/settings/inputmethod/KeyboardLayoutDialogFragment;
+    iget-object v0, p0, Lcom/android/settings_ext/inputmethod/KeyboardLayoutDialogFragment$1;->this$0:Lcom/android/settings_ext/inputmethod/KeyboardLayoutDialogFragment;
 
-    # invokes: Lcom/android/settings/inputmethod/KeyboardLayoutDialogFragment;->onKeyboardLayoutClicked(I)V
-    invoke-static {v0, p2}, Lcom/android/settings/inputmethod/KeyboardLayoutDialogFragment;->access$000(Lcom/android/settings/inputmethod/KeyboardLayoutDialogFragment;I)V
+    # invokes: Lcom/android/settings_ext/inputmethod/KeyboardLayoutDialogFragment;->onKeyboardLayoutClicked(I)V
+    invoke-static {v0, p2}, Lcom/android/settings_ext/inputmethod/KeyboardLayoutDialogFragment;->access$000(Lcom/android/settings_ext/inputmethod/KeyboardLayoutDialogFragment;I)V
 
     .line 108
     return-void

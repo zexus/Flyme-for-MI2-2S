@@ -1,4 +1,4 @@
-.class public final Lcom/android/settings/ChooseLockSettingsHelper;
+.class public final Lcom/android/settings_ext/ChooseLockSettingsHelper;
 .super Ljava/lang/Object;
 .source "ChooseLockSettingsHelper.java"
 
@@ -21,14 +21,14 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 36
-    iput-object p1, p0, Lcom/android/settings/ChooseLockSettingsHelper;->mActivity:Landroid/app/Activity;
+    iput-object p1, p0, Lcom/android/settings_ext/ChooseLockSettingsHelper;->mActivity:Landroid/app/Activity;
 
     .line 37
     new-instance v0, Lcom/android/internal/widget/LockPatternUtils;
 
     invoke-direct {v0, p1}, Lcom/android/internal/widget/LockPatternUtils;-><init>(Landroid/content/Context;)V
 
-    iput-object v0, p0, Lcom/android/settings/ChooseLockSettingsHelper;->mLockPatternUtils:Lcom/android/internal/widget/LockPatternUtils;
+    iput-object v0, p0, Lcom/android/settings_ext/ChooseLockSettingsHelper;->mLockPatternUtils:Lcom/android/internal/widget/LockPatternUtils;
 
     .line 38
     return-void
@@ -41,10 +41,10 @@
 
     .prologue
     .line 41
-    invoke-direct {p0, p1}, Lcom/android/settings/ChooseLockSettingsHelper;-><init>(Landroid/app/Activity;)V
+    invoke-direct {p0, p1}, Lcom/android/settings_ext/ChooseLockSettingsHelper;-><init>(Landroid/app/Activity;)V
 
     .line 42
-    iput-object p2, p0, Lcom/android/settings/ChooseLockSettingsHelper;->mFragment:Landroid/app/Fragment;
+    iput-object p2, p0, Lcom/android/settings_ext/ChooseLockSettingsHelper;->mFragment:Landroid/app/Fragment;
 
     .line 43
     return-void
@@ -58,7 +58,7 @@
 
     .prologue
     .line 126
-    iget-object v1, p0, Lcom/android/settings/ChooseLockSettingsHelper;->mLockPatternUtils:Lcom/android/internal/widget/LockPatternUtils;
+    iget-object v1, p0, Lcom/android/settings_ext/ChooseLockSettingsHelper;->mLockPatternUtils:Lcom/android/internal/widget/LockPatternUtils;
 
     invoke-virtual {v1}, Lcom/android/internal/widget/LockPatternUtils;->isLockPasswordEnabled()Z
 
@@ -89,7 +89,7 @@
 
     if-eqz p3, :cond_1
 
-    const-class v1, Lcom/android/settings/ConfirmLockPassword$InternalActivity;
+    const-class v1, Lcom/android/settings_ext/ConfirmLockPassword$InternalActivity;
 
     invoke-virtual {v1}, Ljava/lang/Class;->getName()Ljava/lang/String;
 
@@ -99,12 +99,12 @@
     invoke-virtual {v0, v2, v1}, Landroid/content/Intent;->setClassName(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
 
     .line 134
-    iget-object v1, p0, Lcom/android/settings/ChooseLockSettingsHelper;->mFragment:Landroid/app/Fragment;
+    iget-object v1, p0, Lcom/android/settings_ext/ChooseLockSettingsHelper;->mFragment:Landroid/app/Fragment;
 
     if-eqz v1, :cond_2
 
     .line 135
-    iget-object v1, p0, Lcom/android/settings/ChooseLockSettingsHelper;->mFragment:Landroid/app/Fragment;
+    iget-object v1, p0, Lcom/android/settings_ext/ChooseLockSettingsHelper;->mFragment:Landroid/app/Fragment;
 
     invoke-virtual {v1, v0, p1}, Landroid/app/Fragment;->startActivityForResult(Landroid/content/Intent;I)V
 
@@ -116,7 +116,7 @@
 
     .line 130
     :cond_1
-    const-class v1, Lcom/android/settings/ConfirmLockPassword;
+    const-class v1, Lcom/android/settings_ext/ConfirmLockPassword;
 
     invoke-virtual {v1}, Ljava/lang/Class;->getName()Ljava/lang/String;
 
@@ -126,7 +126,7 @@
 
     .line 137
     :cond_2
-    iget-object v1, p0, Lcom/android/settings/ChooseLockSettingsHelper;->mActivity:Landroid/app/Activity;
+    iget-object v1, p0, Lcom/android/settings_ext/ChooseLockSettingsHelper;->mActivity:Landroid/app/Activity;
 
     invoke-virtual {v1, v0, p1}, Landroid/app/Activity;->startActivityForResult(Landroid/content/Intent;I)V
 
@@ -142,7 +142,7 @@
 
     .prologue
     .line 98
-    iget-object v1, p0, Lcom/android/settings/ChooseLockSettingsHelper;->mLockPatternUtils:Lcom/android/internal/widget/LockPatternUtils;
+    iget-object v1, p0, Lcom/android/settings_ext/ChooseLockSettingsHelper;->mLockPatternUtils:Lcom/android/internal/widget/LockPatternUtils;
 
     invoke-virtual {v1}, Lcom/android/internal/widget/LockPatternUtils;->isLockPatternEnabled()Z
 
@@ -150,7 +150,7 @@
 
     if-eqz v1, :cond_0
 
-    iget-object v1, p0, Lcom/android/settings/ChooseLockSettingsHelper;->mLockPatternUtils:Lcom/android/internal/widget/LockPatternUtils;
+    iget-object v1, p0, Lcom/android/settings_ext/ChooseLockSettingsHelper;->mLockPatternUtils:Lcom/android/internal/widget/LockPatternUtils;
 
     invoke-virtual {v1}, Lcom/android/internal/widget/LockPatternUtils;->savedPatternExists()Z
 
@@ -188,7 +188,7 @@
 
     if-eqz p4, :cond_2
 
-    const-class v1, Lcom/android/settings/ConfirmLockPattern$InternalActivity;
+    const-class v1, Lcom/android/settings_ext/ConfirmLockPattern$InternalActivity;
 
     invoke-virtual {v1}, Ljava/lang/Class;->getName()Ljava/lang/String;
 
@@ -198,12 +198,12 @@
     invoke-virtual {v0, v2, v1}, Landroid/content/Intent;->setClassName(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
 
     .line 109
-    iget-object v1, p0, Lcom/android/settings/ChooseLockSettingsHelper;->mFragment:Landroid/app/Fragment;
+    iget-object v1, p0, Lcom/android/settings_ext/ChooseLockSettingsHelper;->mFragment:Landroid/app/Fragment;
 
     if-eqz v1, :cond_3
 
     .line 110
-    iget-object v1, p0, Lcom/android/settings/ChooseLockSettingsHelper;->mFragment:Landroid/app/Fragment;
+    iget-object v1, p0, Lcom/android/settings_ext/ChooseLockSettingsHelper;->mFragment:Landroid/app/Fragment;
 
     invoke-virtual {v1, v0, p1}, Landroid/app/Fragment;->startActivityForResult(Landroid/content/Intent;I)V
 
@@ -215,7 +215,7 @@
 
     .line 105
     :cond_2
-    const-class v1, Lcom/android/settings/ConfirmLockPattern;
+    const-class v1, Lcom/android/settings_ext/ConfirmLockPattern;
 
     invoke-virtual {v1}, Ljava/lang/Class;->getName()Ljava/lang/String;
 
@@ -225,7 +225,7 @@
 
     .line 112
     :cond_3
-    iget-object v1, p0, Lcom/android/settings/ChooseLockSettingsHelper;->mActivity:Landroid/app/Activity;
+    iget-object v1, p0, Lcom/android/settings_ext/ChooseLockSettingsHelper;->mActivity:Landroid/app/Activity;
 
     invoke-virtual {v1, v0, p1}, Landroid/app/Activity;->startActivityForResult(Landroid/content/Intent;I)V
 
@@ -244,7 +244,7 @@
     .line 57
     const/4 v0, 0x0
 
-    invoke-virtual {p0, p1, p2, p3, v0}, Lcom/android/settings/ChooseLockSettingsHelper;->launchConfirmationActivity(ILjava/lang/CharSequence;Ljava/lang/CharSequence;Z)Z
+    invoke-virtual {p0, p1, p2, p3, v0}, Lcom/android/settings_ext/ChooseLockSettingsHelper;->launchConfirmationActivity(ILjava/lang/CharSequence;Ljava/lang/CharSequence;Z)Z
 
     move-result v0
 
@@ -264,7 +264,7 @@
 
     .line 72
     .local v0, "launched":Z
-    iget-object v1, p0, Lcom/android/settings/ChooseLockSettingsHelper;->mLockPatternUtils:Lcom/android/internal/widget/LockPatternUtils;
+    iget-object v1, p0, Lcom/android/settings_ext/ChooseLockSettingsHelper;->mLockPatternUtils:Lcom/android/internal/widget/LockPatternUtils;
 
     invoke-virtual {v1}, Lcom/android/internal/widget/LockPatternUtils;->getKeyguardStoredPasswordQuality()I
 
@@ -278,7 +278,7 @@
 
     .line 74
     :sswitch_0
-    invoke-direct {p0, p1, p2, p3, p4}, Lcom/android/settings/ChooseLockSettingsHelper;->confirmPattern(ILjava/lang/CharSequence;Ljava/lang/CharSequence;Z)Z
+    invoke-direct {p0, p1, p2, p3, p4}, Lcom/android/settings_ext/ChooseLockSettingsHelper;->confirmPattern(ILjava/lang/CharSequence;Ljava/lang/CharSequence;Z)Z
 
     move-result v0
 
@@ -287,7 +287,7 @@
 
     .line 82
     :sswitch_1
-    invoke-direct {p0, p1, p2, p4}, Lcom/android/settings/ChooseLockSettingsHelper;->confirmPassword(ILjava/lang/CharSequence;Z)Z
+    invoke-direct {p0, p1, p2, p4}, Lcom/android/settings_ext/ChooseLockSettingsHelper;->confirmPassword(ILjava/lang/CharSequence;Z)Z
 
     move-result v0
 
@@ -312,7 +312,7 @@
 
     .prologue
     .line 46
-    iget-object v0, p0, Lcom/android/settings/ChooseLockSettingsHelper;->mLockPatternUtils:Lcom/android/internal/widget/LockPatternUtils;
+    iget-object v0, p0, Lcom/android/settings_ext/ChooseLockSettingsHelper;->mLockPatternUtils:Lcom/android/internal/widget/LockPatternUtils;
 
     return-object v0
 .end method

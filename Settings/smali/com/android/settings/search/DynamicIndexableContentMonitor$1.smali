@@ -1,11 +1,11 @@
-.class Lcom/android/settings/search/DynamicIndexableContentMonitor$1;
+.class Lcom/android/settings_ext/search/DynamicIndexableContentMonitor$1;
 .super Landroid/os/Handler;
 .source "DynamicIndexableContentMonitor.java"
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/android/settings/search/DynamicIndexableContentMonitor;
+    value = Lcom/android/settings_ext/search/DynamicIndexableContentMonitor;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -15,16 +15,16 @@
 
 
 # instance fields
-.field final synthetic this$0:Lcom/android/settings/search/DynamicIndexableContentMonitor;
+.field final synthetic this$0:Lcom/android/settings_ext/search/DynamicIndexableContentMonitor;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/search/DynamicIndexableContentMonitor;)V
+.method constructor <init>(Lcom/android/settings_ext/search/DynamicIndexableContentMonitor;)V
     .locals 0
 
     .prologue
     .line 60
-    iput-object p1, p0, Lcom/android/settings/search/DynamicIndexableContentMonitor$1;->this$0:Lcom/android/settings/search/DynamicIndexableContentMonitor;
+    iput-object p1, p0, Lcom/android/settings_ext/search/DynamicIndexableContentMonitor$1;->this$0:Lcom/android/settings_ext/search/DynamicIndexableContentMonitor;
 
     invoke-direct {p0}, Landroid/os/Handler;-><init>()V
 
@@ -55,10 +55,10 @@
 
     .line 66
     .local v0, "packageName":Ljava/lang/String;
-    iget-object v1, p0, Lcom/android/settings/search/DynamicIndexableContentMonitor$1;->this$0:Lcom/android/settings/search/DynamicIndexableContentMonitor;
+    iget-object v1, p0, Lcom/android/settings_ext/search/DynamicIndexableContentMonitor$1;->this$0:Lcom/android/settings_ext/search/DynamicIndexableContentMonitor;
 
-    # invokes: Lcom/android/settings/search/DynamicIndexableContentMonitor;->handlePackageAvailable(Ljava/lang/String;)V
-    invoke-static {v1, v0}, Lcom/android/settings/search/DynamicIndexableContentMonitor;->access$000(Lcom/android/settings/search/DynamicIndexableContentMonitor;Ljava/lang/String;)V
+    # invokes: Lcom/android/settings_ext/search/DynamicIndexableContentMonitor;->handlePackageAvailable(Ljava/lang/String;)V
+    invoke-static {v1, v0}, Lcom/android/settings_ext/search/DynamicIndexableContentMonitor;->access$000(Lcom/android/settings_ext/search/DynamicIndexableContentMonitor;Ljava/lang/String;)V
 
     goto :goto_0
 
@@ -71,10 +71,10 @@
 
     .line 71
     .restart local v0    # "packageName":Ljava/lang/String;
-    iget-object v1, p0, Lcom/android/settings/search/DynamicIndexableContentMonitor$1;->this$0:Lcom/android/settings/search/DynamicIndexableContentMonitor;
+    iget-object v1, p0, Lcom/android/settings_ext/search/DynamicIndexableContentMonitor$1;->this$0:Lcom/android/settings_ext/search/DynamicIndexableContentMonitor;
 
-    # invokes: Lcom/android/settings/search/DynamicIndexableContentMonitor;->handlePackageUnavailable(Ljava/lang/String;)V
-    invoke-static {v1, v0}, Lcom/android/settings/search/DynamicIndexableContentMonitor;->access$100(Lcom/android/settings/search/DynamicIndexableContentMonitor;Ljava/lang/String;)V
+    # invokes: Lcom/android/settings_ext/search/DynamicIndexableContentMonitor;->handlePackageUnavailable(Ljava/lang/String;)V
+    invoke-static {v1, v0}, Lcom/android/settings_ext/search/DynamicIndexableContentMonitor;->access$100(Lcom/android/settings_ext/search/DynamicIndexableContentMonitor;Ljava/lang/String;)V
 
     goto :goto_0
 

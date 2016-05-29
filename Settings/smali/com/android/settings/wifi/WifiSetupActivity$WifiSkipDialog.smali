@@ -1,11 +1,11 @@
-.class public Lcom/android/settings/wifi/WifiSetupActivity$WifiSkipDialog;
+.class public Lcom/android/settings_ext/wifi/WifiSetupActivity$WifiSkipDialog;
 .super Landroid/app/DialogFragment;
 .source "WifiSetupActivity.java"
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/android/settings/wifi/WifiSetupActivity;
+    value = Lcom/android/settings_ext/wifi/WifiSetupActivity;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -26,7 +26,7 @@
     return-void
 .end method
 
-.method public static newInstance(I)Lcom/android/settings/wifi/WifiSetupActivity$WifiSkipDialog;
+.method public static newInstance(I)Lcom/android/settings_ext/wifi/WifiSetupActivity$WifiSkipDialog;
     .locals 3
     .param p0, "messageRes"    # I
 
@@ -43,13 +43,13 @@
     invoke-virtual {v0, v2, p0}, Landroid/os/Bundle;->putInt(Ljava/lang/String;I)V
 
     .line 254
-    new-instance v1, Lcom/android/settings/wifi/WifiSetupActivity$WifiSkipDialog;
+    new-instance v1, Lcom/android/settings_ext/wifi/WifiSetupActivity$WifiSkipDialog;
 
-    invoke-direct {v1}, Lcom/android/settings/wifi/WifiSetupActivity$WifiSkipDialog;-><init>()V
+    invoke-direct {v1}, Lcom/android/settings_ext/wifi/WifiSetupActivity$WifiSkipDialog;-><init>()V
 
     .line 255
-    .local v1, "dialog":Lcom/android/settings/wifi/WifiSetupActivity$WifiSkipDialog;
-    invoke-virtual {v1, v0}, Lcom/android/settings/wifi/WifiSetupActivity$WifiSkipDialog;->setArguments(Landroid/os/Bundle;)V
+    .local v1, "dialog":Lcom/android/settings_ext/wifi/WifiSetupActivity$WifiSkipDialog;
+    invoke-virtual {v1, v0}, Lcom/android/settings_ext/wifi/WifiSetupActivity$WifiSkipDialog;->setArguments(Landroid/os/Bundle;)V
 
     .line 256
     return-object v1
@@ -63,7 +63,7 @@
 
     .prologue
     .line 265
-    invoke-virtual {p0}, Lcom/android/settings/wifi/WifiSetupActivity$WifiSkipDialog;->getArguments()Landroid/os/Bundle;
+    invoke-virtual {p0}, Lcom/android/settings_ext/wifi/WifiSetupActivity$WifiSkipDialog;->getArguments()Landroid/os/Bundle;
 
     move-result-object v1
 
@@ -77,7 +77,7 @@
     .local v0, "messageRes":I
     new-instance v1, Landroid/app/AlertDialog$Builder;
 
-    invoke-virtual {p0}, Lcom/android/settings/wifi/WifiSetupActivity$WifiSkipDialog;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/wifi/WifiSetupActivity$WifiSkipDialog;->getActivity()Landroid/app/Activity;
 
     move-result-object v2
 
@@ -95,9 +95,9 @@
 
     const v2, 0x7f09029d
 
-    new-instance v3, Lcom/android/settings/wifi/WifiSetupActivity$WifiSkipDialog$2;
+    new-instance v3, Lcom/android/settings_ext/wifi/WifiSetupActivity$WifiSkipDialog$2;
 
-    invoke-direct {v3, p0}, Lcom/android/settings/wifi/WifiSetupActivity$WifiSkipDialog$2;-><init>(Lcom/android/settings/wifi/WifiSetupActivity$WifiSkipDialog;)V
+    invoke-direct {v3, p0}, Lcom/android/settings_ext/wifi/WifiSetupActivity$WifiSkipDialog$2;-><init>(Lcom/android/settings_ext/wifi/WifiSetupActivity$WifiSkipDialog;)V
 
     invoke-virtual {v1, v2, v3}, Landroid/app/AlertDialog$Builder;->setPositiveButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
@@ -105,9 +105,9 @@
 
     const v2, 0x7f09029e
 
-    new-instance v3, Lcom/android/settings/wifi/WifiSetupActivity$WifiSkipDialog$1;
+    new-instance v3, Lcom/android/settings_ext/wifi/WifiSetupActivity$WifiSkipDialog$1;
 
-    invoke-direct {v3, p0}, Lcom/android/settings/wifi/WifiSetupActivity$WifiSkipDialog$1;-><init>(Lcom/android/settings/wifi/WifiSetupActivity$WifiSkipDialog;)V
+    invoke-direct {v3, p0}, Lcom/android/settings_ext/wifi/WifiSetupActivity$WifiSkipDialog$1;-><init>(Lcom/android/settings_ext/wifi/WifiSetupActivity$WifiSkipDialog;)V
 
     invoke-virtual {v1, v2, v3}, Landroid/app/AlertDialog$Builder;->setNegativeButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 

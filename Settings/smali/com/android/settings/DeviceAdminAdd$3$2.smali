@@ -1,4 +1,4 @@
-.class Lcom/android/settings/DeviceAdminAdd$3$2;
+.class Lcom/android/settings_ext/DeviceAdminAdd$3$2;
 .super Ljava/lang/Object;
 .source "DeviceAdminAdd.java"
 
@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/android/settings/DeviceAdminAdd$3;->onClick(Landroid/view/View;)V
+    value = Lcom/android/settings_ext/DeviceAdminAdd$3;->onClick(Landroid/view/View;)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -18,16 +18,16 @@
 
 
 # instance fields
-.field final synthetic this$1:Lcom/android/settings/DeviceAdminAdd$3;
+.field final synthetic this$1:Lcom/android/settings_ext/DeviceAdminAdd$3;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/DeviceAdminAdd$3;)V
+.method constructor <init>(Lcom/android/settings_ext/DeviceAdminAdd$3;)V
     .locals 0
 
     .prologue
     .line 294
-    iput-object p1, p0, Lcom/android/settings/DeviceAdminAdd$3$2;->this$1:Lcom/android/settings/DeviceAdminAdd$3;
+    iput-object p1, p0, Lcom/android/settings_ext/DeviceAdminAdd$3$2;->this$1:Lcom/android/settings_ext/DeviceAdminAdd$3;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -41,13 +41,13 @@
 
     .prologue
     .line 296
-    iget-object v0, p0, Lcom/android/settings/DeviceAdminAdd$3$2;->this$1:Lcom/android/settings/DeviceAdminAdd$3;
+    iget-object v0, p0, Lcom/android/settings_ext/DeviceAdminAdd$3$2;->this$1:Lcom/android/settings_ext/DeviceAdminAdd$3;
 
-    iget-object v0, v0, Lcom/android/settings/DeviceAdminAdd$3;->this$0:Lcom/android/settings/DeviceAdminAdd;
+    iget-object v0, v0, Lcom/android/settings_ext/DeviceAdminAdd$3;->this$0:Lcom/android/settings_ext/DeviceAdminAdd;
 
     const/4 v1, 0x0
 
-    invoke-virtual {v0, v1}, Lcom/android/settings/DeviceAdminAdd;->continueRemoveAction(Ljava/lang/CharSequence;)V
+    invoke-virtual {v0, v1}, Lcom/android/settings_ext/DeviceAdminAdd;->continueRemoveAction(Ljava/lang/CharSequence;)V
 
     .line 297
     return-void

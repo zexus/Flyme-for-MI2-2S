@@ -1,11 +1,11 @@
-.class Lcom/android/settings/deviceinfo/SimStatus$1;
+.class Lcom/android/settings_ext/deviceinfo/SimStatus$1;
 .super Landroid/content/BroadcastReceiver;
 .source "SimStatus.java"
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/android/settings/deviceinfo/SimStatus;
+    value = Lcom/android/settings_ext/deviceinfo/SimStatus;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -15,16 +15,16 @@
 
 
 # instance fields
-.field final synthetic this$0:Lcom/android/settings/deviceinfo/SimStatus;
+.field final synthetic this$0:Lcom/android/settings_ext/deviceinfo/SimStatus;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/deviceinfo/SimStatus;)V
+.method constructor <init>(Lcom/android/settings_ext/deviceinfo/SimStatus;)V
     .locals 0
 
     .prologue
     .line 115
-    iput-object p1, p0, Lcom/android/settings/deviceinfo/SimStatus$1;->this$0:Lcom/android/settings/deviceinfo/SimStatus;
+    iput-object p1, p0, Lcom/android/settings_ext/deviceinfo/SimStatus$1;->this$0:Lcom/android/settings_ext/deviceinfo/SimStatus;
 
     invoke-direct {p0}, Landroid/content/BroadcastReceiver;-><init>()V
 
@@ -92,10 +92,10 @@
 
     if-ne v4, v5, :cond_0
 
-    iget-object v4, p0, Lcom/android/settings/deviceinfo/SimStatus$1;->this$0:Lcom/android/settings/deviceinfo/SimStatus;
+    iget-object v4, p0, Lcom/android/settings_ext/deviceinfo/SimStatus$1;->this$0:Lcom/android/settings_ext/deviceinfo/SimStatus;
 
-    # getter for: Lcom/android/settings/deviceinfo/SimStatus;->mSir:Landroid/telephony/SubscriptionInfo;
-    invoke-static {v4}, Lcom/android/settings/deviceinfo/SimStatus;->access$000(Lcom/android/settings/deviceinfo/SimStatus;)Landroid/telephony/SubscriptionInfo;
+    # getter for: Lcom/android/settings_ext/deviceinfo/SimStatus;->mSir:Landroid/telephony/SubscriptionInfo;
+    invoke-static {v4}, Lcom/android/settings_ext/deviceinfo/SimStatus;->access$000(Lcom/android/settings_ext/deviceinfo/SimStatus;)Landroid/telephony/SubscriptionInfo;
 
     move-result-object v4
 
@@ -116,10 +116,10 @@
 
     .line 129
     .local v3, "latestAreaInfo":Ljava/lang/String;
-    iget-object v4, p0, Lcom/android/settings/deviceinfo/SimStatus$1;->this$0:Lcom/android/settings/deviceinfo/SimStatus;
+    iget-object v4, p0, Lcom/android/settings_ext/deviceinfo/SimStatus$1;->this$0:Lcom/android/settings_ext/deviceinfo/SimStatus;
 
-    # invokes: Lcom/android/settings/deviceinfo/SimStatus;->updateAreaInfo(Ljava/lang/String;)V
-    invoke-static {v4, v3}, Lcom/android/settings/deviceinfo/SimStatus;->access$100(Lcom/android/settings/deviceinfo/SimStatus;Ljava/lang/String;)V
+    # invokes: Lcom/android/settings_ext/deviceinfo/SimStatus;->updateAreaInfo(Ljava/lang/String;)V
+    invoke-static {v4, v3}, Lcom/android/settings_ext/deviceinfo/SimStatus;->access$100(Lcom/android/settings_ext/deviceinfo/SimStatus;Ljava/lang/String;)V
 
     goto :goto_0
 .end method

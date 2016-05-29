@@ -1,11 +1,11 @@
-.class public Lcom/android/settings/applications/AppOpsCategory$AppListAdapter;
+.class public Lcom/android/settings_ext/applications/AppOpsCategory$AppListAdapter;
 .super Landroid/widget/BaseAdapter;
 .source "AppOpsCategory.java"
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/android/settings/applications/AppOpsCategory;
+    value = Lcom/android/settings_ext/applications/AppOpsCategory;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -22,7 +22,7 @@
         value = {
             "Ljava/util/List",
             "<",
-            "Lcom/android/settings/applications/AppOpsState$AppOpEntry;",
+            "Lcom/android/settings_ext/applications/AppOpsState$AppOpEntry;",
             ">;"
         }
     .end annotation
@@ -30,14 +30,14 @@
 
 .field private final mResources:Landroid/content/res/Resources;
 
-.field private final mState:Lcom/android/settings/applications/AppOpsState;
+.field private final mState:Lcom/android/settings_ext/applications/AppOpsState;
 
 
 # direct methods
-.method public constructor <init>(Landroid/content/Context;Lcom/android/settings/applications/AppOpsState;)V
+.method public constructor <init>(Landroid/content/Context;Lcom/android/settings_ext/applications/AppOpsState;)V
     .locals 1
     .param p1, "context"    # Landroid/content/Context;
-    .param p2, "state"    # Lcom/android/settings/applications/AppOpsState;
+    .param p2, "state"    # Lcom/android/settings_ext/applications/AppOpsState;
 
     .prologue
     .line 253
@@ -48,7 +48,7 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/applications/AppOpsCategory$AppListAdapter;->mResources:Landroid/content/res/Resources;
+    iput-object v0, p0, Lcom/android/settings_ext/applications/AppOpsCategory$AppListAdapter;->mResources:Landroid/content/res/Resources;
 
     .line 255
     const-string v0, "layout_inflater"
@@ -59,10 +59,10 @@
 
     check-cast v0, Landroid/view/LayoutInflater;
 
-    iput-object v0, p0, Lcom/android/settings/applications/AppOpsCategory$AppListAdapter;->mInflater:Landroid/view/LayoutInflater;
+    iput-object v0, p0, Lcom/android/settings_ext/applications/AppOpsCategory$AppListAdapter;->mInflater:Landroid/view/LayoutInflater;
 
     .line 256
-    iput-object p2, p0, Lcom/android/settings/applications/AppOpsCategory$AppListAdapter;->mState:Lcom/android/settings/applications/AppOpsState;
+    iput-object p2, p0, Lcom/android/settings_ext/applications/AppOpsCategory$AppListAdapter;->mState:Lcom/android/settings_ext/applications/AppOpsState;
 
     .line 257
     return-void
@@ -75,11 +75,11 @@
 
     .prologue
     .line 266
-    iget-object v0, p0, Lcom/android/settings/applications/AppOpsCategory$AppListAdapter;->mList:Ljava/util/List;
+    iget-object v0, p0, Lcom/android/settings_ext/applications/AppOpsCategory$AppListAdapter;->mList:Ljava/util/List;
 
     if-eqz v0, :cond_0
 
-    iget-object v0, p0, Lcom/android/settings/applications/AppOpsCategory$AppListAdapter;->mList:Ljava/util/List;
+    iget-object v0, p0, Lcom/android/settings_ext/applications/AppOpsCategory$AppListAdapter;->mList:Ljava/util/List;
 
     invoke-interface {v0}, Ljava/util/List;->size()I
 
@@ -94,19 +94,19 @@
     goto :goto_0
 .end method
 
-.method public getItem(I)Lcom/android/settings/applications/AppOpsState$AppOpEntry;
+.method public getItem(I)Lcom/android/settings_ext/applications/AppOpsState$AppOpEntry;
     .locals 1
     .param p1, "position"    # I
 
     .prologue
     .line 271
-    iget-object v0, p0, Lcom/android/settings/applications/AppOpsCategory$AppListAdapter;->mList:Ljava/util/List;
+    iget-object v0, p0, Lcom/android/settings_ext/applications/AppOpsCategory$AppListAdapter;->mList:Ljava/util/List;
 
     invoke-interface {v0, p1}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
     move-result-object v0
 
-    check-cast v0, Lcom/android/settings/applications/AppOpsState$AppOpEntry;
+    check-cast v0, Lcom/android/settings_ext/applications/AppOpsState$AppOpEntry;
 
     return-object v0
 .end method
@@ -117,7 +117,7 @@
 
     .prologue
     .line 246
-    invoke-virtual {p0, p1}, Lcom/android/settings/applications/AppOpsCategory$AppListAdapter;->getItem(I)Lcom/android/settings/applications/AppOpsState$AppOpEntry;
+    invoke-virtual {p0, p1}, Lcom/android/settings_ext/applications/AppOpsCategory$AppListAdapter;->getItem(I)Lcom/android/settings_ext/applications/AppOpsState$AppOpEntry;
 
     move-result-object v0
 
@@ -148,7 +148,7 @@
     if-nez p2, :cond_0
 
     .line 286
-    iget-object v2, p0, Lcom/android/settings/applications/AppOpsCategory$AppListAdapter;->mInflater:Landroid/view/LayoutInflater;
+    iget-object v2, p0, Lcom/android/settings_ext/applications/AppOpsCategory$AppListAdapter;->mInflater:Landroid/view/LayoutInflater;
 
     const v3, 0x7f040009
 
@@ -159,12 +159,12 @@
     .line 291
     .local v1, "view":Landroid/view/View;
     :goto_0
-    invoke-virtual {p0, p1}, Lcom/android/settings/applications/AppOpsCategory$AppListAdapter;->getItem(I)Lcom/android/settings/applications/AppOpsState$AppOpEntry;
+    invoke-virtual {p0, p1}, Lcom/android/settings_ext/applications/AppOpsCategory$AppListAdapter;->getItem(I)Lcom/android/settings_ext/applications/AppOpsState$AppOpEntry;
 
     move-result-object v0
 
     .line 292
-    .local v0, "item":Lcom/android/settings/applications/AppOpsState$AppOpEntry;
+    .local v0, "item":Lcom/android/settings_ext/applications/AppOpsState$AppOpEntry;
     const v2, 0x7f0f000c
 
     invoke-virtual {v1, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
@@ -173,11 +173,11 @@
 
     check-cast v2, Landroid/widget/ImageView;
 
-    invoke-virtual {v0}, Lcom/android/settings/applications/AppOpsState$AppOpEntry;->getAppEntry()Lcom/android/settings/applications/AppOpsState$AppEntry;
+    invoke-virtual {v0}, Lcom/android/settings_ext/applications/AppOpsState$AppOpEntry;->getAppEntry()Lcom/android/settings_ext/applications/AppOpsState$AppEntry;
 
     move-result-object v3
 
-    invoke-virtual {v3}, Lcom/android/settings/applications/AppOpsState$AppEntry;->getIcon()Landroid/graphics/drawable/Drawable;
+    invoke-virtual {v3}, Lcom/android/settings_ext/applications/AppOpsState$AppEntry;->getIcon()Landroid/graphics/drawable/Drawable;
 
     move-result-object v3
 
@@ -192,11 +192,11 @@
 
     check-cast v2, Landroid/widget/TextView;
 
-    invoke-virtual {v0}, Lcom/android/settings/applications/AppOpsState$AppOpEntry;->getAppEntry()Lcom/android/settings/applications/AppOpsState$AppEntry;
+    invoke-virtual {v0}, Lcom/android/settings_ext/applications/AppOpsState$AppOpEntry;->getAppEntry()Lcom/android/settings_ext/applications/AppOpsState$AppEntry;
 
     move-result-object v3
 
-    invoke-virtual {v3}, Lcom/android/settings/applications/AppOpsState$AppEntry;->getLabel()Ljava/lang/String;
+    invoke-virtual {v3}, Lcom/android/settings_ext/applications/AppOpsState$AppEntry;->getLabel()Ljava/lang/String;
 
     move-result-object v3
 
@@ -211,9 +211,9 @@
 
     check-cast v2, Landroid/widget/TextView;
 
-    iget-object v3, p0, Lcom/android/settings/applications/AppOpsCategory$AppListAdapter;->mState:Lcom/android/settings/applications/AppOpsState;
+    iget-object v3, p0, Lcom/android/settings_ext/applications/AppOpsCategory$AppListAdapter;->mState:Lcom/android/settings_ext/applications/AppOpsState;
 
-    invoke-virtual {v0, v3}, Lcom/android/settings/applications/AppOpsState$AppOpEntry;->getSummaryText(Lcom/android/settings/applications/AppOpsState;)Ljava/lang/CharSequence;
+    invoke-virtual {v0, v3}, Lcom/android/settings_ext/applications/AppOpsState$AppOpEntry;->getSummaryText(Lcom/android/settings_ext/applications/AppOpsState;)Ljava/lang/CharSequence;
 
     move-result-object v3
 
@@ -228,9 +228,9 @@
 
     check-cast v2, Landroid/widget/TextView;
 
-    iget-object v3, p0, Lcom/android/settings/applications/AppOpsCategory$AppListAdapter;->mResources:Landroid/content/res/Resources;
+    iget-object v3, p0, Lcom/android/settings_ext/applications/AppOpsCategory$AppListAdapter;->mResources:Landroid/content/res/Resources;
 
-    invoke-virtual {v0, v3, v4}, Lcom/android/settings/applications/AppOpsState$AppOpEntry;->getTimeText(Landroid/content/res/Resources;Z)Ljava/lang/CharSequence;
+    invoke-virtual {v0, v3, v4}, Lcom/android/settings_ext/applications/AppOpsState$AppOpEntry;->getTimeText(Landroid/content/res/Resources;Z)Ljava/lang/CharSequence;
 
     move-result-object v3
 
@@ -240,7 +240,7 @@
     return-object v1
 
     .line 288
-    .end local v0    # "item":Lcom/android/settings/applications/AppOpsState$AppOpEntry;
+    .end local v0    # "item":Lcom/android/settings_ext/applications/AppOpsState$AppOpEntry;
     .end local v1    # "view":Landroid/view/View;
     :cond_0
     move-object v1, p2
@@ -256,18 +256,18 @@
             "(",
             "Ljava/util/List",
             "<",
-            "Lcom/android/settings/applications/AppOpsState$AppOpEntry;",
+            "Lcom/android/settings_ext/applications/AppOpsState$AppOpEntry;",
             ">;)V"
         }
     .end annotation
 
     .prologue
     .line 260
-    .local p1, "data":Ljava/util/List;, "Ljava/util/List<Lcom/android/settings/applications/AppOpsState$AppOpEntry;>;"
-    iput-object p1, p0, Lcom/android/settings/applications/AppOpsCategory$AppListAdapter;->mList:Ljava/util/List;
+    .local p1, "data":Ljava/util/List;, "Ljava/util/List<Lcom/android/settings_ext/applications/AppOpsState$AppOpEntry;>;"
+    iput-object p1, p0, Lcom/android/settings_ext/applications/AppOpsCategory$AppListAdapter;->mList:Ljava/util/List;
 
     .line 261
-    invoke-virtual {p0}, Lcom/android/settings/applications/AppOpsCategory$AppListAdapter;->notifyDataSetChanged()V
+    invoke-virtual {p0}, Lcom/android/settings_ext/applications/AppOpsCategory$AppListAdapter;->notifyDataSetChanged()V
 
     .line 262
     return-void

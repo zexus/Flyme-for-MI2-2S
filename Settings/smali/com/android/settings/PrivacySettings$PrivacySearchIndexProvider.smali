@@ -1,11 +1,11 @@
-.class Lcom/android/settings/PrivacySettings$PrivacySearchIndexProvider;
-.super Lcom/android/settings/search/BaseSearchIndexProvider;
+.class Lcom/android/settings_ext/PrivacySettings$PrivacySearchIndexProvider;
+.super Lcom/android/settings_ext/search/BaseSearchIndexProvider;
 .source "PrivacySettings.java"
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/android/settings/PrivacySettings;
+    value = Lcom/android/settings_ext/PrivacySettings;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -24,7 +24,7 @@
 
     .prologue
     .line 284
-    invoke-direct {p0}, Lcom/android/settings/search/BaseSearchIndexProvider;-><init>()V
+    invoke-direct {p0}, Lcom/android/settings_ext/search/BaseSearchIndexProvider;-><init>()V
 
     .line 286
     invoke-static {}, Landroid/os/UserHandle;->myUserId()I
@@ -36,7 +36,7 @@
     const/4 v0, 0x1
 
     :goto_0
-    iput-boolean v0, p0, Lcom/android/settings/PrivacySettings$PrivacySearchIndexProvider;->mIsPrimary:Z
+    iput-boolean v0, p0, Lcom/android/settings_ext/PrivacySettings$PrivacySearchIndexProvider;->mIsPrimary:Z
 
     .line 287
     return-void
@@ -67,8 +67,8 @@
 
     .prologue
     .line 309
-    # invokes: Lcom/android/settings/PrivacySettings;->getNonVisibleKeys(Landroid/content/Context;)Ljava/util/ArrayList;
-    invoke-static {p1}, Lcom/android/settings/PrivacySettings;->access$500(Landroid/content/Context;)Ljava/util/ArrayList;
+    # invokes: Lcom/android/settings_ext/PrivacySettings;->getNonVisibleKeys(Landroid/content/Context;)Ljava/util/ArrayList;
+    invoke-static {p1}, Lcom/android/settings_ext/PrivacySettings;->access$500(Landroid/content/Context;)Ljava/util/ArrayList;
 
     move-result-object v0
 
@@ -99,7 +99,7 @@
 
     .line 296
     .local v0, "result":Ljava/util/List;, "Ljava/util/List<Landroid/provider/SearchIndexableResource;>;"
-    iget-boolean v2, p0, Lcom/android/settings/PrivacySettings$PrivacySearchIndexProvider;->mIsPrimary:Z
+    iget-boolean v2, p0, Lcom/android/settings_ext/PrivacySettings$PrivacySearchIndexProvider;->mIsPrimary:Z
 
     if-nez v2, :cond_0
 

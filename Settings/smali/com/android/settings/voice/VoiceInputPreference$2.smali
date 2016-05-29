@@ -1,4 +1,4 @@
-.class Lcom/android/settings/voice/VoiceInputPreference$2;
+.class Lcom/android/settings_ext/voice/VoiceInputPreference$2;
 .super Ljava/lang/Object;
 .source "VoiceInputPreference.java"
 
@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/android/settings/voice/VoiceInputPreference;->getView(Landroid/view/View;Landroid/view/ViewGroup;)Landroid/view/View;
+    value = Lcom/android/settings_ext/voice/VoiceInputPreference;->getView(Landroid/view/View;Landroid/view/ViewGroup;)Landroid/view/View;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -18,20 +18,20 @@
 
 
 # instance fields
-.field final synthetic this$0:Lcom/android/settings/voice/VoiceInputPreference;
+.field final synthetic this$0:Lcom/android/settings_ext/voice/VoiceInputPreference;
 
 .field final synthetic val$rb:Landroid/widget/RadioButton;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/voice/VoiceInputPreference;Landroid/widget/RadioButton;)V
+.method constructor <init>(Lcom/android/settings_ext/voice/VoiceInputPreference;Landroid/widget/RadioButton;)V
     .locals 0
 
     .prologue
     .line 110
-    iput-object p1, p0, Lcom/android/settings/voice/VoiceInputPreference$2;->this$0:Lcom/android/settings/voice/VoiceInputPreference;
+    iput-object p1, p0, Lcom/android/settings_ext/voice/VoiceInputPreference$2;->this$0:Lcom/android/settings_ext/voice/VoiceInputPreference;
 
-    iput-object p2, p0, Lcom/android/settings/voice/VoiceInputPreference$2;->val$rb:Landroid/widget/RadioButton;
+    iput-object p2, p0, Lcom/android/settings_ext/voice/VoiceInputPreference$2;->val$rb:Landroid/widget/RadioButton;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -46,7 +46,7 @@
 
     .prologue
     .line 113
-    iget-object v0, p0, Lcom/android/settings/voice/VoiceInputPreference$2;->val$rb:Landroid/widget/RadioButton;
+    iget-object v0, p0, Lcom/android/settings_ext/voice/VoiceInputPreference$2;->val$rb:Landroid/widget/RadioButton;
 
     invoke-virtual {v0}, Landroid/widget/RadioButton;->isChecked()Z
 
@@ -55,13 +55,13 @@
     if-nez v0, :cond_0
 
     .line 114
-    iget-object v0, p0, Lcom/android/settings/voice/VoiceInputPreference$2;->this$0:Lcom/android/settings/voice/VoiceInputPreference;
+    iget-object v0, p0, Lcom/android/settings_ext/voice/VoiceInputPreference$2;->this$0:Lcom/android/settings_ext/voice/VoiceInputPreference;
 
-    iget-object v1, p0, Lcom/android/settings/voice/VoiceInputPreference$2;->val$rb:Landroid/widget/RadioButton;
+    iget-object v1, p0, Lcom/android/settings_ext/voice/VoiceInputPreference$2;->val$rb:Landroid/widget/RadioButton;
 
     const/4 v2, 0x1
 
-    invoke-virtual {v0, v1, v2}, Lcom/android/settings/voice/VoiceInputPreference;->onRadioButtonClicked(Landroid/widget/CompoundButton;Z)V
+    invoke-virtual {v0, v1, v2}, Lcom/android/settings_ext/voice/VoiceInputPreference;->onRadioButtonClicked(Landroid/widget/CompoundButton;Z)V
 
     .line 116
     :cond_0

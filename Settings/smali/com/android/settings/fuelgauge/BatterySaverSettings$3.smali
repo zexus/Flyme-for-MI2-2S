@@ -1,4 +1,4 @@
-.class Lcom/android/settings/fuelgauge/BatterySaverSettings$3;
+.class Lcom/android/settings_ext/fuelgauge/BatterySaverSettings$3;
 .super Ljava/lang/Object;
 .source "BatterySaverSettings.java"
 
@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/android/settings/fuelgauge/BatterySaverSettings;
+    value = Lcom/android/settings_ext/fuelgauge/BatterySaverSettings;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -18,16 +18,16 @@
 
 
 # instance fields
-.field final synthetic this$0:Lcom/android/settings/fuelgauge/BatterySaverSettings;
+.field final synthetic this$0:Lcom/android/settings_ext/fuelgauge/BatterySaverSettings;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/fuelgauge/BatterySaverSettings;)V
+.method constructor <init>(Lcom/android/settings_ext/fuelgauge/BatterySaverSettings;)V
     .locals 0
 
     .prologue
     .line 165
-    iput-object p1, p0, Lcom/android/settings/fuelgauge/BatterySaverSettings$3;->this$0:Lcom/android/settings/fuelgauge/BatterySaverSettings;
+    iput-object p1, p0, Lcom/android/settings_ext/fuelgauge/BatterySaverSettings$3;->this$0:Lcom/android/settings_ext/fuelgauge/BatterySaverSettings;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -41,9 +41,9 @@
 
     .prologue
     .line 168
-    new-instance v0, Lcom/android/settings/fuelgauge/BatterySaverSettings$3$1;
+    new-instance v0, Lcom/android/settings_ext/fuelgauge/BatterySaverSettings$3$1;
 
-    invoke-direct {v0, p0}, Lcom/android/settings/fuelgauge/BatterySaverSettings$3$1;-><init>(Lcom/android/settings/fuelgauge/BatterySaverSettings$3;)V
+    invoke-direct {v0, p0}, Lcom/android/settings_ext/fuelgauge/BatterySaverSettings$3$1;-><init>(Lcom/android/settings_ext/fuelgauge/BatterySaverSettings$3;)V
 
     invoke-static {v0}, Landroid/os/AsyncTask;->execute(Ljava/lang/Runnable;)V
 

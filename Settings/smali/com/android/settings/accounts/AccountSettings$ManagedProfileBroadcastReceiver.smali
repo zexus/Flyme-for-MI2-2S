@@ -1,11 +1,11 @@
-.class Lcom/android/settings/accounts/AccountSettings$ManagedProfileBroadcastReceiver;
+.class Lcom/android/settings_ext/accounts/AccountSettings$ManagedProfileBroadcastReceiver;
 .super Landroid/content/BroadcastReceiver;
 .source "AccountSettings.java"
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/android/settings/accounts/AccountSettings;
+    value = Lcom/android/settings_ext/accounts/AccountSettings;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -17,30 +17,30 @@
 # instance fields
 .field private listeningToManagedProfileEvents:Z
 
-.field final synthetic this$0:Lcom/android/settings/accounts/AccountSettings;
+.field final synthetic this$0:Lcom/android/settings_ext/accounts/AccountSettings;
 
 
 # direct methods
-.method private constructor <init>(Lcom/android/settings/accounts/AccountSettings;)V
+.method private constructor <init>(Lcom/android/settings_ext/accounts/AccountSettings;)V
     .locals 0
 
     .prologue
     .line 494
-    iput-object p1, p0, Lcom/android/settings/accounts/AccountSettings$ManagedProfileBroadcastReceiver;->this$0:Lcom/android/settings/accounts/AccountSettings;
+    iput-object p1, p0, Lcom/android/settings_ext/accounts/AccountSettings$ManagedProfileBroadcastReceiver;->this$0:Lcom/android/settings_ext/accounts/AccountSettings;
 
     invoke-direct {p0}, Landroid/content/BroadcastReceiver;-><init>()V
 
     return-void
 .end method
 
-.method synthetic constructor <init>(Lcom/android/settings/accounts/AccountSettings;Lcom/android/settings/accounts/AccountSettings$1;)V
+.method synthetic constructor <init>(Lcom/android/settings_ext/accounts/AccountSettings;Lcom/android/settings_ext/accounts/AccountSettings$1;)V
     .locals 0
-    .param p1, "x0"    # Lcom/android/settings/accounts/AccountSettings;
-    .param p2, "x1"    # Lcom/android/settings/accounts/AccountSettings$1;
+    .param p1, "x0"    # Lcom/android/settings_ext/accounts/AccountSettings;
+    .param p2, "x1"    # Lcom/android/settings_ext/accounts/AccountSettings$1;
 
     .prologue
     .line 494
-    invoke-direct {p0, p1}, Lcom/android/settings/accounts/AccountSettings$ManagedProfileBroadcastReceiver;-><init>(Lcom/android/settings/accounts/AccountSettings;)V
+    invoke-direct {p0, p1}, Lcom/android/settings_ext/accounts/AccountSettings$ManagedProfileBroadcastReceiver;-><init>(Lcom/android/settings_ext/accounts/AccountSettings;)V
 
     return-void
 .end method
@@ -107,32 +107,32 @@
     invoke-static {v0, v1}, Landroid/util/Log;->v(Ljava/lang/String;Ljava/lang/String;)I
 
     .line 503
-    iget-object v0, p0, Lcom/android/settings/accounts/AccountSettings$ManagedProfileBroadcastReceiver;->this$0:Lcom/android/settings/accounts/AccountSettings;
+    iget-object v0, p0, Lcom/android/settings_ext/accounts/AccountSettings$ManagedProfileBroadcastReceiver;->this$0:Lcom/android/settings_ext/accounts/AccountSettings;
 
-    # invokes: Lcom/android/settings/accounts/AccountSettings;->stopListeningToAccountUpdates()V
-    invoke-static {v0}, Lcom/android/settings/accounts/AccountSettings;->access$400(Lcom/android/settings/accounts/AccountSettings;)V
+    # invokes: Lcom/android/settings_ext/accounts/AccountSettings;->stopListeningToAccountUpdates()V
+    invoke-static {v0}, Lcom/android/settings_ext/accounts/AccountSettings;->access$400(Lcom/android/settings_ext/accounts/AccountSettings;)V
 
     .line 504
-    iget-object v0, p0, Lcom/android/settings/accounts/AccountSettings$ManagedProfileBroadcastReceiver;->this$0:Lcom/android/settings/accounts/AccountSettings;
+    iget-object v0, p0, Lcom/android/settings_ext/accounts/AccountSettings$ManagedProfileBroadcastReceiver;->this$0:Lcom/android/settings_ext/accounts/AccountSettings;
 
-    # invokes: Lcom/android/settings/accounts/AccountSettings;->cleanUpPreferences()V
-    invoke-static {v0}, Lcom/android/settings/accounts/AccountSettings;->access$500(Lcom/android/settings/accounts/AccountSettings;)V
+    # invokes: Lcom/android/settings_ext/accounts/AccountSettings;->cleanUpPreferences()V
+    invoke-static {v0}, Lcom/android/settings_ext/accounts/AccountSettings;->access$500(Lcom/android/settings_ext/accounts/AccountSettings;)V
 
     .line 506
-    iget-object v0, p0, Lcom/android/settings/accounts/AccountSettings$ManagedProfileBroadcastReceiver;->this$0:Lcom/android/settings/accounts/AccountSettings;
+    iget-object v0, p0, Lcom/android/settings_ext/accounts/AccountSettings$ManagedProfileBroadcastReceiver;->this$0:Lcom/android/settings_ext/accounts/AccountSettings;
 
-    invoke-virtual {v0}, Lcom/android/settings/accounts/AccountSettings;->updateUi()V
+    invoke-virtual {v0}, Lcom/android/settings_ext/accounts/AccountSettings;->updateUi()V
 
     .line 507
-    iget-object v0, p0, Lcom/android/settings/accounts/AccountSettings$ManagedProfileBroadcastReceiver;->this$0:Lcom/android/settings/accounts/AccountSettings;
+    iget-object v0, p0, Lcom/android/settings_ext/accounts/AccountSettings$ManagedProfileBroadcastReceiver;->this$0:Lcom/android/settings_ext/accounts/AccountSettings;
 
-    # invokes: Lcom/android/settings/accounts/AccountSettings;->listenToAccountUpdates()V
-    invoke-static {v0}, Lcom/android/settings/accounts/AccountSettings;->access$600(Lcom/android/settings/accounts/AccountSettings;)V
+    # invokes: Lcom/android/settings_ext/accounts/AccountSettings;->listenToAccountUpdates()V
+    invoke-static {v0}, Lcom/android/settings_ext/accounts/AccountSettings;->access$600(Lcom/android/settings_ext/accounts/AccountSettings;)V
 
     .line 510
-    iget-object v0, p0, Lcom/android/settings/accounts/AccountSettings$ManagedProfileBroadcastReceiver;->this$0:Lcom/android/settings/accounts/AccountSettings;
+    iget-object v0, p0, Lcom/android/settings_ext/accounts/AccountSettings$ManagedProfileBroadcastReceiver;->this$0:Lcom/android/settings_ext/accounts/AccountSettings;
 
-    invoke-virtual {v0}, Lcom/android/settings/accounts/AccountSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {v0}, Lcom/android/settings_ext/accounts/AccountSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
@@ -179,7 +179,7 @@
 
     .prologue
     .line 517
-    iget-boolean v1, p0, Lcom/android/settings/accounts/AccountSettings$ManagedProfileBroadcastReceiver;->listeningToManagedProfileEvents:Z
+    iget-boolean v1, p0, Lcom/android/settings_ext/accounts/AccountSettings$ManagedProfileBroadcastReceiver;->listeningToManagedProfileEvents:Z
 
     if-nez v1, :cond_0
 
@@ -205,7 +205,7 @@
     .line 522
     const/4 v1, 0x1
 
-    iput-boolean v1, p0, Lcom/android/settings/accounts/AccountSettings$ManagedProfileBroadcastReceiver;->listeningToManagedProfileEvents:Z
+    iput-boolean v1, p0, Lcom/android/settings_ext/accounts/AccountSettings$ManagedProfileBroadcastReceiver;->listeningToManagedProfileEvents:Z
 
     .line 524
     .end local v0    # "intentFilter":Landroid/content/IntentFilter;
@@ -219,7 +219,7 @@
 
     .prologue
     .line 527
-    iget-boolean v0, p0, Lcom/android/settings/accounts/AccountSettings$ManagedProfileBroadcastReceiver;->listeningToManagedProfileEvents:Z
+    iget-boolean v0, p0, Lcom/android/settings_ext/accounts/AccountSettings$ManagedProfileBroadcastReceiver;->listeningToManagedProfileEvents:Z
 
     if-eqz v0, :cond_0
 
@@ -229,7 +229,7 @@
     .line 529
     const/4 v0, 0x0
 
-    iput-boolean v0, p0, Lcom/android/settings/accounts/AccountSettings$ManagedProfileBroadcastReceiver;->listeningToManagedProfileEvents:Z
+    iput-boolean v0, p0, Lcom/android/settings_ext/accounts/AccountSettings$ManagedProfileBroadcastReceiver;->listeningToManagedProfileEvents:Z
 
     .line 531
     :cond_0

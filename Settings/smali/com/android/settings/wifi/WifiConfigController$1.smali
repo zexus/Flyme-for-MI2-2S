@@ -1,4 +1,4 @@
-.class Lcom/android/settings/wifi/WifiConfigController$1;
+.class Lcom/android/settings_ext/wifi/WifiConfigController$1;
 .super Ljava/lang/Object;
 .source "WifiConfigController.java"
 
@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/android/settings/wifi/WifiConfigController;->afterTextChanged(Landroid/text/Editable;)V
+    value = Lcom/android/settings_ext/wifi/WifiConfigController;->afterTextChanged(Landroid/text/Editable;)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -18,16 +18,16 @@
 
 
 # instance fields
-.field final synthetic this$0:Lcom/android/settings/wifi/WifiConfigController;
+.field final synthetic this$0:Lcom/android/settings_ext/wifi/WifiConfigController;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/wifi/WifiConfigController;)V
+.method constructor <init>(Lcom/android/settings_ext/wifi/WifiConfigController;)V
     .locals 0
 
     .prologue
     .line 1077
-    iput-object p1, p0, Lcom/android/settings/wifi/WifiConfigController$1;->this$0:Lcom/android/settings/wifi/WifiConfigController;
+    iput-object p1, p0, Lcom/android/settings_ext/wifi/WifiConfigController$1;->this$0:Lcom/android/settings_ext/wifi/WifiConfigController;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -41,9 +41,9 @@
 
     .prologue
     .line 1079
-    iget-object v0, p0, Lcom/android/settings/wifi/WifiConfigController$1;->this$0:Lcom/android/settings/wifi/WifiConfigController;
+    iget-object v0, p0, Lcom/android/settings_ext/wifi/WifiConfigController$1;->this$0:Lcom/android/settings_ext/wifi/WifiConfigController;
 
-    invoke-virtual {v0}, Lcom/android/settings/wifi/WifiConfigController;->enableSubmitIfAppropriate()V
+    invoke-virtual {v0}, Lcom/android/settings_ext/wifi/WifiConfigController;->enableSubmitIfAppropriate()V
 
     .line 1080
     return-void

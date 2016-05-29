@@ -1,11 +1,11 @@
-.class Lcom/android/settings/ApnSettings$RestoreApnUiHandler;
+.class Lcom/android/settings_ext/ApnSettings$RestoreApnUiHandler;
 .super Landroid/os/Handler;
 .source "ApnSettings.java"
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/android/settings/ApnSettings;
+    value = Lcom/android/settings_ext/ApnSettings;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -15,30 +15,30 @@
 
 
 # instance fields
-.field final synthetic this$0:Lcom/android/settings/ApnSettings;
+.field final synthetic this$0:Lcom/android/settings_ext/ApnSettings;
 
 
 # direct methods
-.method private constructor <init>(Lcom/android/settings/ApnSettings;)V
+.method private constructor <init>(Lcom/android/settings_ext/ApnSettings;)V
     .locals 0
 
     .prologue
     .line 366
-    iput-object p1, p0, Lcom/android/settings/ApnSettings$RestoreApnUiHandler;->this$0:Lcom/android/settings/ApnSettings;
+    iput-object p1, p0, Lcom/android/settings_ext/ApnSettings$RestoreApnUiHandler;->this$0:Lcom/android/settings_ext/ApnSettings;
 
     invoke-direct {p0}, Landroid/os/Handler;-><init>()V
 
     return-void
 .end method
 
-.method synthetic constructor <init>(Lcom/android/settings/ApnSettings;Lcom/android/settings/ApnSettings$1;)V
+.method synthetic constructor <init>(Lcom/android/settings_ext/ApnSettings;Lcom/android/settings_ext/ApnSettings$1;)V
     .locals 0
-    .param p1, "x0"    # Lcom/android/settings/ApnSettings;
-    .param p2, "x1"    # Lcom/android/settings/ApnSettings$1;
+    .param p1, "x0"    # Lcom/android/settings_ext/ApnSettings;
+    .param p2, "x1"    # Lcom/android/settings_ext/ApnSettings$1;
 
     .prologue
     .line 366
-    invoke-direct {p0, p1}, Lcom/android/settings/ApnSettings$RestoreApnUiHandler;-><init>(Lcom/android/settings/ApnSettings;)V
+    invoke-direct {p0, p1}, Lcom/android/settings_ext/ApnSettings$RestoreApnUiHandler;-><init>(Lcom/android/settings_ext/ApnSettings;)V
 
     return-void
 .end method
@@ -65,9 +65,9 @@
 
     .line 371
     :pswitch_0
-    iget-object v1, p0, Lcom/android/settings/ApnSettings$RestoreApnUiHandler;->this$0:Lcom/android/settings/ApnSettings;
+    iget-object v1, p0, Lcom/android/settings_ext/ApnSettings$RestoreApnUiHandler;->this$0:Lcom/android/settings_ext/ApnSettings;
 
-    invoke-virtual {v1}, Lcom/android/settings/ApnSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {v1}, Lcom/android/settings_ext/ApnSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
@@ -76,42 +76,42 @@
     if-nez v0, :cond_0
 
     .line 373
-    # setter for: Lcom/android/settings/ApnSettings;->mRestoreDefaultApnMode:Z
-    invoke-static {v2}, Lcom/android/settings/ApnSettings;->access$102(Z)Z
+    # setter for: Lcom/android/settings_ext/ApnSettings;->mRestoreDefaultApnMode:Z
+    invoke-static {v2}, Lcom/android/settings_ext/ApnSettings;->access$102(Z)Z
 
     goto :goto_0
 
     .line 376
     :cond_0
-    iget-object v1, p0, Lcom/android/settings/ApnSettings$RestoreApnUiHandler;->this$0:Lcom/android/settings/ApnSettings;
+    iget-object v1, p0, Lcom/android/settings_ext/ApnSettings$RestoreApnUiHandler;->this$0:Lcom/android/settings_ext/ApnSettings;
 
-    # invokes: Lcom/android/settings/ApnSettings;->fillList()V
-    invoke-static {v1}, Lcom/android/settings/ApnSettings;->access$200(Lcom/android/settings/ApnSettings;)V
+    # invokes: Lcom/android/settings_ext/ApnSettings;->fillList()V
+    invoke-static {v1}, Lcom/android/settings_ext/ApnSettings;->access$200(Lcom/android/settings_ext/ApnSettings;)V
 
     .line 377
-    iget-object v1, p0, Lcom/android/settings/ApnSettings$RestoreApnUiHandler;->this$0:Lcom/android/settings/ApnSettings;
+    iget-object v1, p0, Lcom/android/settings_ext/ApnSettings$RestoreApnUiHandler;->this$0:Lcom/android/settings_ext/ApnSettings;
 
-    invoke-virtual {v1}, Lcom/android/settings/ApnSettings;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
+    invoke-virtual {v1}, Lcom/android/settings_ext/ApnSettings;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
 
     move-result-object v1
 
     invoke-virtual {v1, v3}, Landroid/preference/PreferenceScreen;->setEnabled(Z)V
 
     .line 378
-    # setter for: Lcom/android/settings/ApnSettings;->mRestoreDefaultApnMode:Z
-    invoke-static {v2}, Lcom/android/settings/ApnSettings;->access$102(Z)Z
+    # setter for: Lcom/android/settings_ext/ApnSettings;->mRestoreDefaultApnMode:Z
+    invoke-static {v2}, Lcom/android/settings_ext/ApnSettings;->access$102(Z)Z
 
     .line 379
-    iget-object v1, p0, Lcom/android/settings/ApnSettings$RestoreApnUiHandler;->this$0:Lcom/android/settings/ApnSettings;
+    iget-object v1, p0, Lcom/android/settings_ext/ApnSettings$RestoreApnUiHandler;->this$0:Lcom/android/settings_ext/ApnSettings;
 
     const/16 v2, 0x3e9
 
-    invoke-virtual {v1, v2}, Lcom/android/settings/ApnSettings;->removeDialog(I)V
+    invoke-virtual {v1, v2}, Lcom/android/settings_ext/ApnSettings;->removeDialog(I)V
 
     .line 380
-    iget-object v1, p0, Lcom/android/settings/ApnSettings$RestoreApnUiHandler;->this$0:Lcom/android/settings/ApnSettings;
+    iget-object v1, p0, Lcom/android/settings_ext/ApnSettings$RestoreApnUiHandler;->this$0:Lcom/android/settings_ext/ApnSettings;
 
-    invoke-virtual {v1}, Lcom/android/settings/ApnSettings;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {v1}, Lcom/android/settings_ext/ApnSettings;->getResources()Landroid/content/res/Resources;
 
     move-result-object v1
 

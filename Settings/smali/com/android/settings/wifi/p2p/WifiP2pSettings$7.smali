@@ -1,4 +1,4 @@
-.class Lcom/android/settings/wifi/p2p/WifiP2pSettings$7;
+.class Lcom/android/settings_ext/wifi/p2p/WifiP2pSettings$7;
 .super Ljava/lang/Object;
 .source "WifiP2pSettings.java"
 
@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/android/settings/wifi/p2p/WifiP2pSettings;->startSearch()V
+    value = Lcom/android/settings_ext/wifi/p2p/WifiP2pSettings;->startSearch()V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -18,16 +18,16 @@
 
 
 # instance fields
-.field final synthetic this$0:Lcom/android/settings/wifi/p2p/WifiP2pSettings;
+.field final synthetic this$0:Lcom/android/settings_ext/wifi/p2p/WifiP2pSettings;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/wifi/p2p/WifiP2pSettings;)V
+.method constructor <init>(Lcom/android/settings_ext/wifi/p2p/WifiP2pSettings;)V
     .locals 0
 
     .prologue
     .line 586
-    iput-object p1, p0, Lcom/android/settings/wifi/p2p/WifiP2pSettings$7;->this$0:Lcom/android/settings/wifi/p2p/WifiP2pSettings;
+    iput-object p1, p0, Lcom/android/settings_ext/wifi/p2p/WifiP2pSettings$7;->this$0:Lcom/android/settings_ext/wifi/p2p/WifiP2pSettings;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 

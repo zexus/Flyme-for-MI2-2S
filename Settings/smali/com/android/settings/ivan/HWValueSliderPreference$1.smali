@@ -1,4 +1,4 @@
-.class Lcom/android/settings/ivan/HWValueSliderPreference$1;
+.class Lcom/android/settings_ext/ivan/HWValueSliderPreference$1;
 .super Ljava/lang/Object;
 .source "HWValueSliderPreference.java"
 
@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/android/settings/ivan/HWValueSliderPreference;->onPrepareDialogBuilder(Landroid/app/AlertDialog$Builder;)V
+    value = Lcom/android/settings_ext/ivan/HWValueSliderPreference;->onPrepareDialogBuilder(Landroid/app/AlertDialog$Builder;)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -18,16 +18,16 @@
 
 
 # instance fields
-.field final synthetic this$0:Lcom/android/settings/ivan/HWValueSliderPreference;
+.field final synthetic this$0:Lcom/android/settings_ext/ivan/HWValueSliderPreference;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/ivan/HWValueSliderPreference;)V
+.method constructor <init>(Lcom/android/settings_ext/ivan/HWValueSliderPreference;)V
     .locals 0
 
     .prologue
     .line 78
-    iput-object p1, p0, Lcom/android/settings/ivan/HWValueSliderPreference$1;->this$0:Lcom/android/settings/ivan/HWValueSliderPreference;
+    iput-object p1, p0, Lcom/android/settings_ext/ivan/HWValueSliderPreference$1;->this$0:Lcom/android/settings_ext/ivan/HWValueSliderPreference;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 

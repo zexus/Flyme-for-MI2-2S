@@ -1,4 +1,4 @@
-.class public Lcom/android/settings/RegulatoryInfoDisplayActivity;
+.class public Lcom/android/settings_ext/RegulatoryInfoDisplayActivity;
 .super Landroid/app/Activity;
 .source "RegulatoryInfoDisplayActivity.java"
 
@@ -21,7 +21,7 @@
     .line 44
     const-string v0, "regulatory_info"
 
-    iput-object v0, p0, Lcom/android/settings/RegulatoryInfoDisplayActivity;->REGULATORY_INFO_RESOURCE:Ljava/lang/String;
+    iput-object v0, p0, Lcom/android/settings_ext/RegulatoryInfoDisplayActivity;->REGULATORY_INFO_RESOURCE:Ljava/lang/String;
 
     return-void
 .end method
@@ -31,7 +31,7 @@
 
     .prologue
     .line 98
-    invoke-virtual {p0}, Lcom/android/settings/RegulatoryInfoDisplayActivity;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {p0}, Lcom/android/settings_ext/RegulatoryInfoDisplayActivity;->getResources()Landroid/content/res/Resources;
 
     move-result-object v4
 
@@ -39,7 +39,7 @@
 
     const-string v6, "drawable"
 
-    invoke-virtual {p0}, Lcom/android/settings/RegulatoryInfoDisplayActivity;->getPackageName()Ljava/lang/String;
+    invoke-virtual {p0}, Lcom/android/settings_ext/RegulatoryInfoDisplayActivity;->getPackageName()Ljava/lang/String;
 
     move-result-object v7
 
@@ -90,13 +90,13 @@
 
     .line 105
     .local v1, "regulatory_info_res":Ljava/lang/String;
-    invoke-virtual {p0}, Lcom/android/settings/RegulatoryInfoDisplayActivity;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {p0}, Lcom/android/settings_ext/RegulatoryInfoDisplayActivity;->getResources()Landroid/content/res/Resources;
 
     move-result-object v4
 
     const-string v5, "drawable"
 
-    invoke-virtual {p0}, Lcom/android/settings/RegulatoryInfoDisplayActivity;->getPackageName()Ljava/lang/String;
+    invoke-virtual {p0}, Lcom/android/settings_ext/RegulatoryInfoDisplayActivity;->getPackageName()Ljava/lang/String;
 
     move-result-object v6
 
@@ -131,7 +131,7 @@
     invoke-super {p0, p1}, Landroid/app/Activity;->onCreate(Landroid/os/Bundle;)V
 
     .line 52
-    invoke-virtual {p0}, Lcom/android/settings/RegulatoryInfoDisplayActivity;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {p0}, Lcom/android/settings_ext/RegulatoryInfoDisplayActivity;->getResources()Landroid/content/res/Resources;
 
     move-result-object v9
 
@@ -146,7 +146,7 @@
     if-nez v11, :cond_0
 
     .line 55
-    invoke-virtual {p0}, Lcom/android/settings/RegulatoryInfoDisplayActivity;->finish()V
+    invoke-virtual {p0}, Lcom/android/settings_ext/RegulatoryInfoDisplayActivity;->finish()V
 
     .line 58
     :cond_0
@@ -170,7 +170,7 @@
 
     .line 63
     .local v6, "regulatoryInfoDrawableExists":Z
-    invoke-direct {p0}, Lcom/android/settings/RegulatoryInfoDisplayActivity;->getResourceId()I
+    invoke-direct {p0}, Lcom/android/settings_ext/RegulatoryInfoDisplayActivity;->getResourceId()I
 
     move-result v8
 
@@ -180,7 +180,7 @@
 
     .line 66
     :try_start_0
-    invoke-virtual {p0, v8}, Lcom/android/settings/RegulatoryInfoDisplayActivity;->getDrawable(I)Landroid/graphics/drawable/Drawable;
+    invoke-virtual {p0, v8}, Lcom/android/settings_ext/RegulatoryInfoDisplayActivity;->getDrawable(I)Landroid/graphics/drawable/Drawable;
 
     move-result-object v1
 
@@ -217,7 +217,7 @@
     if-eqz v6, :cond_3
 
     .line 79
-    invoke-virtual {p0}, Lcom/android/settings/RegulatoryInfoDisplayActivity;->getLayoutInflater()Landroid/view/LayoutInflater;
+    invoke-virtual {p0}, Lcom/android/settings_ext/RegulatoryInfoDisplayActivity;->getLayoutInflater()Landroid/view/LayoutInflater;
 
     move-result-object v11
 
@@ -314,7 +314,7 @@
     .end local v2    # "dialog":Landroid/app/AlertDialog;
     .end local v5    # "messageText":Landroid/widget/TextView;
     :cond_4
-    invoke-virtual {p0}, Lcom/android/settings/RegulatoryInfoDisplayActivity;->finish()V
+    invoke-virtual {p0}, Lcom/android/settings_ext/RegulatoryInfoDisplayActivity;->finish()V
 
     goto :goto_1
 .end method
@@ -325,7 +325,7 @@
 
     .prologue
     .line 116
-    invoke-virtual {p0}, Lcom/android/settings/RegulatoryInfoDisplayActivity;->finish()V
+    invoke-virtual {p0}, Lcom/android/settings_ext/RegulatoryInfoDisplayActivity;->finish()V
 
     .line 117
     return-void

@@ -1,11 +1,11 @@
-.class synthetic Lcom/android/settings/bluetooth/DunServerProfile$1;
+.class synthetic Lcom/android/settings_ext/bluetooth/DunServerProfile$1;
 .super Ljava/lang/Object;
 .source "DunServerProfile.java"
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/android/settings/bluetooth/DunServerProfile;
+    value = Lcom/android/settings_ext/bluetooth/DunServerProfile;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;

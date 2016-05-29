@@ -1,11 +1,11 @@
-.class interface abstract Lcom/android/settings/TrustedCredentialsSettings$TrustedCertificateAdapterCommons;
+.class interface abstract Lcom/android/settings_ext/TrustedCredentialsSettings$TrustedCertificateAdapterCommons;
 .super Ljava/lang/Object;
 .source "TrustedCredentialsSettings.java"
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/android/settings/TrustedCredentialsSettings;
+    value = Lcom/android/settings_ext/TrustedCredentialsSettings;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -15,7 +15,7 @@
 
 
 # virtual methods
-.method public abstract getListViewId(Lcom/android/settings/TrustedCredentialsSettings$Tab;)I
+.method public abstract getListViewId(Lcom/android/settings_ext/TrustedCredentialsSettings$Tab;)I
 .end method
 
 .method public abstract load()V
@@ -24,5 +24,5 @@
 .method public abstract notifyDataSetChanged()V
 .end method
 
-.method public abstract remove(Lcom/android/settings/TrustedCredentialsSettings$CertHolder;)V
+.method public abstract remove(Lcom/android/settings_ext/TrustedCredentialsSettings$CertHolder;)V
 .end method

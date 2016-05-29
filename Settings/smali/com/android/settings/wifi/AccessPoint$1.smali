@@ -1,11 +1,11 @@
-.class synthetic Lcom/android/settings/wifi/AccessPoint$1;
+.class synthetic Lcom/android/settings_ext/wifi/AccessPoint$1;
 .super Ljava/lang/Object;
 .source "AccessPoint.java"
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/android/settings/wifi/AccessPoint;
+    value = Lcom/android/settings_ext/wifi/AccessPoint;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -24,7 +24,7 @@
 
     .prologue
     .line 154
-    invoke-static {}, Lcom/android/settings/wifi/AccessPoint$PskType;->values()[Lcom/android/settings/wifi/AccessPoint$PskType;
+    invoke-static {}, Lcom/android/settings_ext/wifi/AccessPoint$PskType;->values()[Lcom/android/settings_ext/wifi/AccessPoint$PskType;
 
     move-result-object v0
 
@@ -32,14 +32,14 @@
 
     new-array v0, v0, [I
 
-    sput-object v0, Lcom/android/settings/wifi/AccessPoint$1;->$SwitchMap$com$android$settings$wifi$AccessPoint$PskType:[I
+    sput-object v0, Lcom/android/settings_ext/wifi/AccessPoint$1;->$SwitchMap$com$android$settings$wifi$AccessPoint$PskType:[I
 
     :try_start_0
-    sget-object v0, Lcom/android/settings/wifi/AccessPoint$1;->$SwitchMap$com$android$settings$wifi$AccessPoint$PskType:[I
+    sget-object v0, Lcom/android/settings_ext/wifi/AccessPoint$1;->$SwitchMap$com$android$settings$wifi$AccessPoint$PskType:[I
 
-    sget-object v1, Lcom/android/settings/wifi/AccessPoint$PskType;->WPA:Lcom/android/settings/wifi/AccessPoint$PskType;
+    sget-object v1, Lcom/android/settings_ext/wifi/AccessPoint$PskType;->WPA:Lcom/android/settings_ext/wifi/AccessPoint$PskType;
 
-    invoke-virtual {v1}, Lcom/android/settings/wifi/AccessPoint$PskType;->ordinal()I
+    invoke-virtual {v1}, Lcom/android/settings_ext/wifi/AccessPoint$PskType;->ordinal()I
 
     move-result v1
 
@@ -51,11 +51,11 @@
 
     :goto_0
     :try_start_1
-    sget-object v0, Lcom/android/settings/wifi/AccessPoint$1;->$SwitchMap$com$android$settings$wifi$AccessPoint$PskType:[I
+    sget-object v0, Lcom/android/settings_ext/wifi/AccessPoint$1;->$SwitchMap$com$android$settings$wifi$AccessPoint$PskType:[I
 
-    sget-object v1, Lcom/android/settings/wifi/AccessPoint$PskType;->WPA2:Lcom/android/settings/wifi/AccessPoint$PskType;
+    sget-object v1, Lcom/android/settings_ext/wifi/AccessPoint$PskType;->WPA2:Lcom/android/settings_ext/wifi/AccessPoint$PskType;
 
-    invoke-virtual {v1}, Lcom/android/settings/wifi/AccessPoint$PskType;->ordinal()I
+    invoke-virtual {v1}, Lcom/android/settings_ext/wifi/AccessPoint$PskType;->ordinal()I
 
     move-result v1
 
@@ -67,11 +67,11 @@
 
     :goto_1
     :try_start_2
-    sget-object v0, Lcom/android/settings/wifi/AccessPoint$1;->$SwitchMap$com$android$settings$wifi$AccessPoint$PskType:[I
+    sget-object v0, Lcom/android/settings_ext/wifi/AccessPoint$1;->$SwitchMap$com$android$settings$wifi$AccessPoint$PskType:[I
 
-    sget-object v1, Lcom/android/settings/wifi/AccessPoint$PskType;->WPA_WPA2:Lcom/android/settings/wifi/AccessPoint$PskType;
+    sget-object v1, Lcom/android/settings_ext/wifi/AccessPoint$PskType;->WPA_WPA2:Lcom/android/settings_ext/wifi/AccessPoint$PskType;
 
-    invoke-virtual {v1}, Lcom/android/settings/wifi/AccessPoint$PskType;->ordinal()I
+    invoke-virtual {v1}, Lcom/android/settings_ext/wifi/AccessPoint$PskType;->ordinal()I
 
     move-result v1
 
@@ -83,11 +83,11 @@
 
     :goto_2
     :try_start_3
-    sget-object v0, Lcom/android/settings/wifi/AccessPoint$1;->$SwitchMap$com$android$settings$wifi$AccessPoint$PskType:[I
+    sget-object v0, Lcom/android/settings_ext/wifi/AccessPoint$1;->$SwitchMap$com$android$settings$wifi$AccessPoint$PskType:[I
 
-    sget-object v1, Lcom/android/settings/wifi/AccessPoint$PskType;->UNKNOWN:Lcom/android/settings/wifi/AccessPoint$PskType;
+    sget-object v1, Lcom/android/settings_ext/wifi/AccessPoint$PskType;->UNKNOWN:Lcom/android/settings_ext/wifi/AccessPoint$PskType;
 
-    invoke-virtual {v1}, Lcom/android/settings/wifi/AccessPoint$PskType;->ordinal()I
+    invoke-virtual {v1}, Lcom/android/settings_ext/wifi/AccessPoint$PskType;->ordinal()I
 
     move-result v1
 

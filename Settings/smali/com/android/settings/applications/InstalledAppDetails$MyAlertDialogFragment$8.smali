@@ -1,4 +1,4 @@
-.class Lcom/android/settings/applications/InstalledAppDetails$MyAlertDialogFragment$8;
+.class Lcom/android/settings_ext/applications/InstalledAppDetails$MyAlertDialogFragment$8;
 .super Ljava/lang/Object;
 .source "InstalledAppDetails.java"
 
@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/android/settings/applications/InstalledAppDetails$MyAlertDialogFragment;->onCreateDialog(Landroid/os/Bundle;)Landroid/app/Dialog;
+    value = Lcom/android/settings_ext/applications/InstalledAppDetails$MyAlertDialogFragment;->onCreateDialog(Landroid/os/Bundle;)Landroid/app/Dialog;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -18,16 +18,16 @@
 
 
 # instance fields
-.field final synthetic this$0:Lcom/android/settings/applications/InstalledAppDetails$MyAlertDialogFragment;
+.field final synthetic this$0:Lcom/android/settings_ext/applications/InstalledAppDetails$MyAlertDialogFragment;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/applications/InstalledAppDetails$MyAlertDialogFragment;)V
+.method constructor <init>(Lcom/android/settings_ext/applications/InstalledAppDetails$MyAlertDialogFragment;)V
     .locals 0
 
     .prologue
     .line 1226
-    iput-object p1, p0, Lcom/android/settings/applications/InstalledAppDetails$MyAlertDialogFragment$8;->this$0:Lcom/android/settings/applications/InstalledAppDetails$MyAlertDialogFragment;
+    iput-object p1, p0, Lcom/android/settings_ext/applications/InstalledAppDetails$MyAlertDialogFragment$8;->this$0:Lcom/android/settings_ext/applications/InstalledAppDetails$MyAlertDialogFragment;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -43,16 +43,16 @@
 
     .prologue
     .line 1229
-    iget-object v0, p0, Lcom/android/settings/applications/InstalledAppDetails$MyAlertDialogFragment$8;->this$0:Lcom/android/settings/applications/InstalledAppDetails$MyAlertDialogFragment;
+    iget-object v0, p0, Lcom/android/settings_ext/applications/InstalledAppDetails$MyAlertDialogFragment$8;->this$0:Lcom/android/settings_ext/applications/InstalledAppDetails$MyAlertDialogFragment;
 
-    invoke-virtual {v0}, Lcom/android/settings/applications/InstalledAppDetails$MyAlertDialogFragment;->getOwner()Lcom/android/settings/applications/InstalledAppDetails;
+    invoke-virtual {v0}, Lcom/android/settings_ext/applications/InstalledAppDetails$MyAlertDialogFragment;->getOwner()Lcom/android/settings_ext/applications/InstalledAppDetails;
 
     move-result-object v0
 
     const/4 v1, 0x0
 
-    # invokes: Lcom/android/settings/applications/InstalledAppDetails;->setNotificationsEnabled(Z)V
-    invoke-static {v0, v1}, Lcom/android/settings/applications/InstalledAppDetails;->access$1200(Lcom/android/settings/applications/InstalledAppDetails;Z)V
+    # invokes: Lcom/android/settings_ext/applications/InstalledAppDetails;->setNotificationsEnabled(Z)V
+    invoke-static {v0, v1}, Lcom/android/settings_ext/applications/InstalledAppDetails;->access$1200(Lcom/android/settings_ext/applications/InstalledAppDetails;Z)V
 
     .line 1230
     return-void

@@ -1,4 +1,4 @@
-.class public Lcom/android/settings/inputmethod/UserDictionaryAddWordFragment;
+.class public Lcom/android/settings_ext/inputmethod/UserDictionaryAddWordFragment;
 .super Landroid/app/Fragment;
 .source "UserDictionaryAddWordFragment.java"
 
@@ -8,7 +8,7 @@
 
 
 # instance fields
-.field private mContents:Lcom/android/settings/inputmethod/UserDictionaryAddWordContents;
+.field private mContents:Lcom/android/settings_ext/inputmethod/UserDictionaryAddWordContents;
 
 .field private mIsDeleting:Z
 
@@ -26,7 +26,7 @@
     .line 51
     const/4 v0, 0x0
 
-    iput-boolean v0, p0, Lcom/android/settings/inputmethod/UserDictionaryAddWordFragment;->mIsDeleting:Z
+    iput-boolean v0, p0, Lcom/android/settings_ext/inputmethod/UserDictionaryAddWordFragment;->mIsDeleting:Z
 
     return-void
 .end method
@@ -36,21 +36,21 @@
 
     .prologue
     .line 119
-    iget-object v2, p0, Lcom/android/settings/inputmethod/UserDictionaryAddWordFragment;->mContents:Lcom/android/settings/inputmethod/UserDictionaryAddWordContents;
+    iget-object v2, p0, Lcom/android/settings_ext/inputmethod/UserDictionaryAddWordFragment;->mContents:Lcom/android/settings_ext/inputmethod/UserDictionaryAddWordContents;
 
-    invoke-virtual {p0}, Lcom/android/settings/inputmethod/UserDictionaryAddWordFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/inputmethod/UserDictionaryAddWordFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v3
 
-    invoke-virtual {v2, v3}, Lcom/android/settings/inputmethod/UserDictionaryAddWordContents;->getLocalesList(Landroid/app/Activity;)Ljava/util/ArrayList;
+    invoke-virtual {v2, v3}, Lcom/android/settings_ext/inputmethod/UserDictionaryAddWordContents;->getLocalesList(Landroid/app/Activity;)Ljava/util/ArrayList;
 
     move-result-object v1
 
     .line 121
-    .local v1, "localesList":Ljava/util/ArrayList;, "Ljava/util/ArrayList<Lcom/android/settings/inputmethod/UserDictionaryAddWordContents$LocaleRenderer;>;"
+    .local v1, "localesList":Ljava/util/ArrayList;, "Ljava/util/ArrayList<Lcom/android/settings_ext/inputmethod/UserDictionaryAddWordContents$LocaleRenderer;>;"
     new-instance v0, Landroid/widget/ArrayAdapter;
 
-    invoke-virtual {p0}, Lcom/android/settings/inputmethod/UserDictionaryAddWordFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/inputmethod/UserDictionaryAddWordFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v2
 
@@ -59,7 +59,7 @@
     invoke-direct {v0, v2, v3, v1}, Landroid/widget/ArrayAdapter;-><init>(Landroid/content/Context;ILjava/util/List;)V
 
     .line 123
-    .local v0, "adapter":Landroid/widget/ArrayAdapter;, "Landroid/widget/ArrayAdapter<Lcom/android/settings/inputmethod/UserDictionaryAddWordContents$LocaleRenderer;>;"
+    .local v0, "adapter":Landroid/widget/ArrayAdapter;, "Landroid/widget/ArrayAdapter<Lcom/android/settings_ext/inputmethod/UserDictionaryAddWordContents$LocaleRenderer;>;"
     const v2, 0x1090009
 
     invoke-virtual {v0, v2}, Landroid/widget/ArrayAdapter;->setDropDownViewResource(I)V
@@ -81,10 +81,10 @@
     invoke-super {p0, p1}, Landroid/app/Fragment;->onActivityCreated(Landroid/os/Bundle;)V
 
     .line 56
-    invoke-virtual {p0, v2}, Lcom/android/settings/inputmethod/UserDictionaryAddWordFragment;->setHasOptionsMenu(Z)V
+    invoke-virtual {p0, v2}, Lcom/android/settings_ext/inputmethod/UserDictionaryAddWordFragment;->setHasOptionsMenu(Z)V
 
     .line 57
-    invoke-virtual {p0}, Lcom/android/settings/inputmethod/UserDictionaryAddWordFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/inputmethod/UserDictionaryAddWordFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
@@ -97,7 +97,7 @@
     invoke-virtual {v0, v1}, Landroid/app/ActionBar;->setTitle(I)V
 
     .line 59
-    invoke-virtual {p0, v2}, Lcom/android/settings/inputmethod/UserDictionaryAddWordFragment;->setRetainInstance(Z)V
+    invoke-virtual {p0, v2}, Lcom/android/settings_ext/inputmethod/UserDictionaryAddWordFragment;->setRetainInstance(Z)V
 
     .line 60
     return-void
@@ -152,34 +152,34 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/inputmethod/UserDictionaryAddWordFragment;->mRootView:Landroid/view/View;
+    iput-object v0, p0, Lcom/android/settings_ext/inputmethod/UserDictionaryAddWordFragment;->mRootView:Landroid/view/View;
 
     .line 66
     const/4 v0, 0x0
 
-    iput-boolean v0, p0, Lcom/android/settings/inputmethod/UserDictionaryAddWordFragment;->mIsDeleting:Z
+    iput-boolean v0, p0, Lcom/android/settings_ext/inputmethod/UserDictionaryAddWordFragment;->mIsDeleting:Z
 
     .line 69
-    iget-object v0, p0, Lcom/android/settings/inputmethod/UserDictionaryAddWordFragment;->mContents:Lcom/android/settings/inputmethod/UserDictionaryAddWordContents;
+    iget-object v0, p0, Lcom/android/settings_ext/inputmethod/UserDictionaryAddWordFragment;->mContents:Lcom/android/settings_ext/inputmethod/UserDictionaryAddWordContents;
 
     if-nez v0, :cond_0
 
     .line 70
-    new-instance v0, Lcom/android/settings/inputmethod/UserDictionaryAddWordContents;
+    new-instance v0, Lcom/android/settings_ext/inputmethod/UserDictionaryAddWordContents;
 
-    iget-object v1, p0, Lcom/android/settings/inputmethod/UserDictionaryAddWordFragment;->mRootView:Landroid/view/View;
+    iget-object v1, p0, Lcom/android/settings_ext/inputmethod/UserDictionaryAddWordFragment;->mRootView:Landroid/view/View;
 
-    invoke-virtual {p0}, Lcom/android/settings/inputmethod/UserDictionaryAddWordFragment;->getArguments()Landroid/os/Bundle;
+    invoke-virtual {p0}, Lcom/android/settings_ext/inputmethod/UserDictionaryAddWordFragment;->getArguments()Landroid/os/Bundle;
 
     move-result-object v2
 
-    invoke-direct {v0, v1, v2}, Lcom/android/settings/inputmethod/UserDictionaryAddWordContents;-><init>(Landroid/view/View;Landroid/os/Bundle;)V
+    invoke-direct {v0, v1, v2}, Lcom/android/settings_ext/inputmethod/UserDictionaryAddWordContents;-><init>(Landroid/view/View;Landroid/os/Bundle;)V
 
-    iput-object v0, p0, Lcom/android/settings/inputmethod/UserDictionaryAddWordFragment;->mContents:Lcom/android/settings/inputmethod/UserDictionaryAddWordContents;
+    iput-object v0, p0, Lcom/android/settings_ext/inputmethod/UserDictionaryAddWordFragment;->mContents:Lcom/android/settings_ext/inputmethod/UserDictionaryAddWordContents;
 
     .line 80
     :goto_0
-    invoke-virtual {p0}, Lcom/android/settings/inputmethod/UserDictionaryAddWordFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/inputmethod/UserDictionaryAddWordFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
@@ -187,38 +187,38 @@
 
     move-result-object v0
 
-    invoke-virtual {p0}, Lcom/android/settings/inputmethod/UserDictionaryAddWordFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/inputmethod/UserDictionaryAddWordFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v1
 
-    iget-object v2, p0, Lcom/android/settings/inputmethod/UserDictionaryAddWordFragment;->mContents:Lcom/android/settings/inputmethod/UserDictionaryAddWordContents;
+    iget-object v2, p0, Lcom/android/settings_ext/inputmethod/UserDictionaryAddWordFragment;->mContents:Lcom/android/settings_ext/inputmethod/UserDictionaryAddWordContents;
 
-    invoke-virtual {v2}, Lcom/android/settings/inputmethod/UserDictionaryAddWordContents;->getCurrentUserDictionaryLocale()Ljava/lang/String;
+    invoke-virtual {v2}, Lcom/android/settings_ext/inputmethod/UserDictionaryAddWordContents;->getCurrentUserDictionaryLocale()Ljava/lang/String;
 
     move-result-object v2
 
-    invoke-static {v1, v2}, Lcom/android/settings/inputmethod/UserDictionarySettingsUtils;->getLocaleDisplayName(Landroid/content/Context;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v1, v2}, Lcom/android/settings_ext/inputmethod/UserDictionarySettingsUtils;->getLocaleDisplayName(Landroid/content/Context;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v1
 
     invoke-virtual {v0, v1}, Landroid/app/ActionBar;->setSubtitle(Ljava/lang/CharSequence;)V
 
     .line 82
-    iget-object v0, p0, Lcom/android/settings/inputmethod/UserDictionaryAddWordFragment;->mRootView:Landroid/view/View;
+    iget-object v0, p0, Lcom/android/settings_ext/inputmethod/UserDictionaryAddWordFragment;->mRootView:Landroid/view/View;
 
     return-object v0
 
     .line 77
     :cond_0
-    new-instance v0, Lcom/android/settings/inputmethod/UserDictionaryAddWordContents;
+    new-instance v0, Lcom/android/settings_ext/inputmethod/UserDictionaryAddWordContents;
 
-    iget-object v1, p0, Lcom/android/settings/inputmethod/UserDictionaryAddWordFragment;->mRootView:Landroid/view/View;
+    iget-object v1, p0, Lcom/android/settings_ext/inputmethod/UserDictionaryAddWordFragment;->mRootView:Landroid/view/View;
 
-    iget-object v2, p0, Lcom/android/settings/inputmethod/UserDictionaryAddWordFragment;->mContents:Lcom/android/settings/inputmethod/UserDictionaryAddWordContents;
+    iget-object v2, p0, Lcom/android/settings_ext/inputmethod/UserDictionaryAddWordFragment;->mContents:Lcom/android/settings_ext/inputmethod/UserDictionaryAddWordContents;
 
-    invoke-direct {v0, v1, v2}, Lcom/android/settings/inputmethod/UserDictionaryAddWordContents;-><init>(Landroid/view/View;Lcom/android/settings/inputmethod/UserDictionaryAddWordContents;)V
+    invoke-direct {v0, v1, v2}, Lcom/android/settings_ext/inputmethod/UserDictionaryAddWordContents;-><init>(Landroid/view/View;Lcom/android/settings_ext/inputmethod/UserDictionaryAddWordContents;)V
 
-    iput-object v0, p0, Lcom/android/settings/inputmethod/UserDictionaryAddWordFragment;->mContents:Lcom/android/settings/inputmethod/UserDictionaryAddWordContents;
+    iput-object v0, p0, Lcom/android/settings_ext/inputmethod/UserDictionaryAddWordFragment;->mContents:Lcom/android/settings_ext/inputmethod/UserDictionaryAddWordContents;
 
     goto :goto_0
 .end method
@@ -245,47 +245,47 @@
 
     move-result-object v0
 
-    check-cast v0, Lcom/android/settings/inputmethod/UserDictionaryAddWordContents$LocaleRenderer;
+    check-cast v0, Lcom/android/settings_ext/inputmethod/UserDictionaryAddWordContents$LocaleRenderer;
 
     .line 139
-    .local v0, "locale":Lcom/android/settings/inputmethod/UserDictionaryAddWordContents$LocaleRenderer;
-    invoke-virtual {v0}, Lcom/android/settings/inputmethod/UserDictionaryAddWordContents$LocaleRenderer;->isMoreLanguages()Z
+    .local v0, "locale":Lcom/android/settings_ext/inputmethod/UserDictionaryAddWordContents$LocaleRenderer;
+    invoke-virtual {v0}, Lcom/android/settings_ext/inputmethod/UserDictionaryAddWordContents$LocaleRenderer;->isMoreLanguages()Z
 
     move-result v2
 
     if-eqz v2, :cond_0
 
     .line 140
-    invoke-virtual {p0}, Lcom/android/settings/inputmethod/UserDictionaryAddWordFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/inputmethod/UserDictionaryAddWordFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v1
 
-    check-cast v1, Lcom/android/settings/SettingsActivity;
+    check-cast v1, Lcom/android/settings_ext/SettingsActivity;
 
     .line 141
-    .local v1, "sa":Lcom/android/settings/SettingsActivity;
-    new-instance v2, Lcom/android/settings/inputmethod/UserDictionaryLocalePicker;
+    .local v1, "sa":Lcom/android/settings_ext/SettingsActivity;
+    new-instance v2, Lcom/android/settings_ext/inputmethod/UserDictionaryLocalePicker;
 
-    invoke-direct {v2, p0}, Lcom/android/settings/inputmethod/UserDictionaryLocalePicker;-><init>(Lcom/android/settings/inputmethod/UserDictionaryAddWordFragment;)V
+    invoke-direct {v2, p0}, Lcom/android/settings_ext/inputmethod/UserDictionaryLocalePicker;-><init>(Lcom/android/settings_ext/inputmethod/UserDictionaryAddWordFragment;)V
 
     const/4 v3, 0x1
 
-    invoke-virtual {v1, v2, v3}, Lcom/android/settings/SettingsActivity;->startPreferenceFragment(Landroid/app/Fragment;Z)V
+    invoke-virtual {v1, v2, v3}, Lcom/android/settings_ext/SettingsActivity;->startPreferenceFragment(Landroid/app/Fragment;Z)V
 
     .line 145
-    .end local v1    # "sa":Lcom/android/settings/SettingsActivity;
+    .end local v1    # "sa":Lcom/android/settings_ext/SettingsActivity;
     :goto_0
     return-void
 
     .line 143
     :cond_0
-    iget-object v2, p0, Lcom/android/settings/inputmethod/UserDictionaryAddWordFragment;->mContents:Lcom/android/settings/inputmethod/UserDictionaryAddWordContents;
+    iget-object v2, p0, Lcom/android/settings_ext/inputmethod/UserDictionaryAddWordFragment;->mContents:Lcom/android/settings_ext/inputmethod/UserDictionaryAddWordContents;
 
-    invoke-virtual {v0}, Lcom/android/settings/inputmethod/UserDictionaryAddWordContents$LocaleRenderer;->getLocaleString()Ljava/lang/String;
+    invoke-virtual {v0}, Lcom/android/settings_ext/inputmethod/UserDictionaryAddWordContents$LocaleRenderer;->getLocaleString()Ljava/lang/String;
 
     move-result-object v3
 
-    invoke-virtual {v2, v3}, Lcom/android/settings/inputmethod/UserDictionaryAddWordContents;->updateLocale(Ljava/lang/String;)V
+    invoke-virtual {v2, v3}, Lcom/android/settings_ext/inputmethod/UserDictionaryAddWordContents;->updateLocale(Ljava/lang/String;)V
 
     goto :goto_0
 .end method
@@ -296,16 +296,16 @@
 
     .prologue
     .line 157
-    iget-object v0, p0, Lcom/android/settings/inputmethod/UserDictionaryAddWordFragment;->mContents:Lcom/android/settings/inputmethod/UserDictionaryAddWordContents;
+    iget-object v0, p0, Lcom/android/settings_ext/inputmethod/UserDictionaryAddWordFragment;->mContents:Lcom/android/settings_ext/inputmethod/UserDictionaryAddWordContents;
 
     invoke-virtual {p1}, Ljava/util/Locale;->toString()Ljava/lang/String;
 
     move-result-object v1
 
-    invoke-virtual {v0, v1}, Lcom/android/settings/inputmethod/UserDictionaryAddWordContents;->updateLocale(Ljava/lang/String;)V
+    invoke-virtual {v0, v1}, Lcom/android/settings_ext/inputmethod/UserDictionaryAddWordContents;->updateLocale(Ljava/lang/String;)V
 
     .line 158
-    invoke-virtual {p0}, Lcom/android/settings/inputmethod/UserDictionaryAddWordFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/inputmethod/UserDictionaryAddWordFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
@@ -328,13 +328,13 @@
     .prologue
     .line 150
     .local p1, "parent":Landroid/widget/AdapterView;, "Landroid/widget/AdapterView<*>;"
-    invoke-virtual {p0}, Lcom/android/settings/inputmethod/UserDictionaryAddWordFragment;->getArguments()Landroid/os/Bundle;
+    invoke-virtual {p0}, Lcom/android/settings_ext/inputmethod/UserDictionaryAddWordFragment;->getArguments()Landroid/os/Bundle;
 
     move-result-object v0
 
     .line 151
     .local v0, "args":Landroid/os/Bundle;
-    iget-object v1, p0, Lcom/android/settings/inputmethod/UserDictionaryAddWordFragment;->mContents:Lcom/android/settings/inputmethod/UserDictionaryAddWordContents;
+    iget-object v1, p0, Lcom/android/settings_ext/inputmethod/UserDictionaryAddWordFragment;->mContents:Lcom/android/settings_ext/inputmethod/UserDictionaryAddWordContents;
 
     const-string v2, "locale"
 
@@ -342,7 +342,7 @@
 
     move-result-object v2
 
-    invoke-virtual {v1, v2}, Lcom/android/settings/inputmethod/UserDictionaryAddWordContents;->updateLocale(Ljava/lang/String;)V
+    invoke-virtual {v1, v2}, Lcom/android/settings_ext/inputmethod/UserDictionaryAddWordContents;->updateLocale(Ljava/lang/String;)V
 
     .line 152
     return-void
@@ -363,19 +363,19 @@
     if-ne v1, v0, :cond_0
 
     .line 103
-    iget-object v1, p0, Lcom/android/settings/inputmethod/UserDictionaryAddWordFragment;->mContents:Lcom/android/settings/inputmethod/UserDictionaryAddWordContents;
+    iget-object v1, p0, Lcom/android/settings_ext/inputmethod/UserDictionaryAddWordFragment;->mContents:Lcom/android/settings_ext/inputmethod/UserDictionaryAddWordContents;
 
-    invoke-virtual {p0}, Lcom/android/settings/inputmethod/UserDictionaryAddWordFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/inputmethod/UserDictionaryAddWordFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v2
 
-    invoke-virtual {v1, v2}, Lcom/android/settings/inputmethod/UserDictionaryAddWordContents;->delete(Landroid/content/Context;)V
+    invoke-virtual {v1, v2}, Lcom/android/settings_ext/inputmethod/UserDictionaryAddWordContents;->delete(Landroid/content/Context;)V
 
     .line 104
-    iput-boolean v0, p0, Lcom/android/settings/inputmethod/UserDictionaryAddWordFragment;->mIsDeleting:Z
+    iput-boolean v0, p0, Lcom/android/settings_ext/inputmethod/UserDictionaryAddWordFragment;->mIsDeleting:Z
 
     .line 105
-    invoke-virtual {p0}, Lcom/android/settings/inputmethod/UserDictionaryAddWordFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/inputmethod/UserDictionaryAddWordFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v1
 
@@ -399,20 +399,20 @@
     invoke-super {p0}, Landroid/app/Fragment;->onPause()V
 
     .line 130
-    iget-boolean v0, p0, Lcom/android/settings/inputmethod/UserDictionaryAddWordFragment;->mIsDeleting:Z
+    iget-boolean v0, p0, Lcom/android/settings_ext/inputmethod/UserDictionaryAddWordFragment;->mIsDeleting:Z
 
     if-nez v0, :cond_0
 
     .line 131
-    iget-object v0, p0, Lcom/android/settings/inputmethod/UserDictionaryAddWordFragment;->mContents:Lcom/android/settings/inputmethod/UserDictionaryAddWordContents;
+    iget-object v0, p0, Lcom/android/settings_ext/inputmethod/UserDictionaryAddWordFragment;->mContents:Lcom/android/settings_ext/inputmethod/UserDictionaryAddWordContents;
 
-    invoke-virtual {p0}, Lcom/android/settings/inputmethod/UserDictionaryAddWordFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/inputmethod/UserDictionaryAddWordFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v1
 
     const/4 v2, 0x0
 
-    invoke-virtual {v0, v1, v2}, Lcom/android/settings/inputmethod/UserDictionaryAddWordContents;->apply(Landroid/content/Context;Landroid/os/Bundle;)I
+    invoke-virtual {v0, v1, v2}, Lcom/android/settings_ext/inputmethod/UserDictionaryAddWordContents;->apply(Landroid/content/Context;Landroid/os/Bundle;)I
 
     .line 133
     :cond_0
@@ -427,7 +427,7 @@
     invoke-super {p0}, Landroid/app/Fragment;->onResume()V
 
     .line 115
-    invoke-direct {p0}, Lcom/android/settings/inputmethod/UserDictionaryAddWordFragment;->updateSpinner()V
+    invoke-direct {p0}, Lcom/android/settings_ext/inputmethod/UserDictionaryAddWordFragment;->updateSpinner()V
 
     .line 116
     return-void

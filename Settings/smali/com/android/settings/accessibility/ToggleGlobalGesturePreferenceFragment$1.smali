@@ -1,14 +1,14 @@
-.class Lcom/android/settings/accessibility/ToggleGlobalGesturePreferenceFragment$1;
+.class Lcom/android/settings_ext/accessibility/ToggleGlobalGesturePreferenceFragment$1;
 .super Ljava/lang/Object;
 .source "ToggleGlobalGesturePreferenceFragment.java"
 
 # interfaces
-.implements Lcom/android/settings/widget/ToggleSwitch$OnBeforeCheckedChangeListener;
+.implements Lcom/android/settings_ext/widget/ToggleSwitch$OnBeforeCheckedChangeListener;
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/android/settings/accessibility/ToggleGlobalGesturePreferenceFragment;->onInstallSwitchBarToggleSwitch()V
+    value = Lcom/android/settings_ext/accessibility/ToggleGlobalGesturePreferenceFragment;->onInstallSwitchBarToggleSwitch()V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -18,16 +18,16 @@
 
 
 # instance fields
-.field final synthetic this$0:Lcom/android/settings/accessibility/ToggleGlobalGesturePreferenceFragment;
+.field final synthetic this$0:Lcom/android/settings_ext/accessibility/ToggleGlobalGesturePreferenceFragment;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/accessibility/ToggleGlobalGesturePreferenceFragment;)V
+.method constructor <init>(Lcom/android/settings_ext/accessibility/ToggleGlobalGesturePreferenceFragment;)V
     .locals 0
 
     .prologue
     .line 35
-    iput-object p1, p0, Lcom/android/settings/accessibility/ToggleGlobalGesturePreferenceFragment$1;->this$0:Lcom/android/settings/accessibility/ToggleGlobalGesturePreferenceFragment;
+    iput-object p1, p0, Lcom/android/settings_ext/accessibility/ToggleGlobalGesturePreferenceFragment$1;->this$0:Lcom/android/settings_ext/accessibility/ToggleGlobalGesturePreferenceFragment;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -36,23 +36,23 @@
 
 
 # virtual methods
-.method public onBeforeCheckedChanged(Lcom/android/settings/widget/ToggleSwitch;Z)Z
+.method public onBeforeCheckedChanged(Lcom/android/settings_ext/widget/ToggleSwitch;Z)Z
     .locals 2
-    .param p1, "toggleSwitch"    # Lcom/android/settings/widget/ToggleSwitch;
+    .param p1, "toggleSwitch"    # Lcom/android/settings_ext/widget/ToggleSwitch;
     .param p2, "checked"    # Z
 
     .prologue
     .line 38
-    iget-object v0, p0, Lcom/android/settings/accessibility/ToggleGlobalGesturePreferenceFragment$1;->this$0:Lcom/android/settings/accessibility/ToggleGlobalGesturePreferenceFragment;
+    iget-object v0, p0, Lcom/android/settings_ext/accessibility/ToggleGlobalGesturePreferenceFragment$1;->this$0:Lcom/android/settings_ext/accessibility/ToggleGlobalGesturePreferenceFragment;
 
-    iget-object v0, v0, Lcom/android/settings/accessibility/ToggleGlobalGesturePreferenceFragment;->mSwitchBar:Lcom/android/settings/widget/SwitchBar;
+    iget-object v0, v0, Lcom/android/settings_ext/accessibility/ToggleGlobalGesturePreferenceFragment;->mSwitchBar:Lcom/android/settings_ext/widget/SwitchBar;
 
-    invoke-virtual {v0, p2}, Lcom/android/settings/widget/SwitchBar;->setCheckedInternal(Z)V
+    invoke-virtual {v0, p2}, Lcom/android/settings_ext/widget/SwitchBar;->setCheckedInternal(Z)V
 
     .line 39
-    iget-object v0, p0, Lcom/android/settings/accessibility/ToggleGlobalGesturePreferenceFragment$1;->this$0:Lcom/android/settings/accessibility/ToggleGlobalGesturePreferenceFragment;
+    iget-object v0, p0, Lcom/android/settings_ext/accessibility/ToggleGlobalGesturePreferenceFragment$1;->this$0:Lcom/android/settings_ext/accessibility/ToggleGlobalGesturePreferenceFragment;
 
-    invoke-virtual {v0}, Lcom/android/settings/accessibility/ToggleGlobalGesturePreferenceFragment;->getArguments()Landroid/os/Bundle;
+    invoke-virtual {v0}, Lcom/android/settings_ext/accessibility/ToggleGlobalGesturePreferenceFragment;->getArguments()Landroid/os/Bundle;
 
     move-result-object v0
 
@@ -61,13 +61,13 @@
     invoke-virtual {v0, v1, p2}, Landroid/os/Bundle;->putBoolean(Ljava/lang/String;Z)V
 
     .line 40
-    iget-object v0, p0, Lcom/android/settings/accessibility/ToggleGlobalGesturePreferenceFragment$1;->this$0:Lcom/android/settings/accessibility/ToggleGlobalGesturePreferenceFragment;
+    iget-object v0, p0, Lcom/android/settings_ext/accessibility/ToggleGlobalGesturePreferenceFragment$1;->this$0:Lcom/android/settings_ext/accessibility/ToggleGlobalGesturePreferenceFragment;
 
-    iget-object v1, p0, Lcom/android/settings/accessibility/ToggleGlobalGesturePreferenceFragment$1;->this$0:Lcom/android/settings/accessibility/ToggleGlobalGesturePreferenceFragment;
+    iget-object v1, p0, Lcom/android/settings_ext/accessibility/ToggleGlobalGesturePreferenceFragment$1;->this$0:Lcom/android/settings_ext/accessibility/ToggleGlobalGesturePreferenceFragment;
 
-    iget-object v1, v1, Lcom/android/settings/accessibility/ToggleGlobalGesturePreferenceFragment;->mPreferenceKey:Ljava/lang/String;
+    iget-object v1, v1, Lcom/android/settings_ext/accessibility/ToggleGlobalGesturePreferenceFragment;->mPreferenceKey:Ljava/lang/String;
 
-    invoke-virtual {v0, v1, p2}, Lcom/android/settings/accessibility/ToggleGlobalGesturePreferenceFragment;->onPreferenceToggled(Ljava/lang/String;Z)V
+    invoke-virtual {v0, v1, p2}, Lcom/android/settings_ext/accessibility/ToggleGlobalGesturePreferenceFragment;->onPreferenceToggled(Ljava/lang/String;Z)V
 
     .line 41
     const/4 v0, 0x0

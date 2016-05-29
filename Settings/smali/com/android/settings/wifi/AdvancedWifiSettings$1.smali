@@ -1,11 +1,11 @@
-.class Lcom/android/settings/wifi/AdvancedWifiSettings$1;
+.class Lcom/android/settings_ext/wifi/AdvancedWifiSettings$1;
 .super Landroid/content/BroadcastReceiver;
 .source "AdvancedWifiSettings.java"
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/android/settings/wifi/AdvancedWifiSettings;
+    value = Lcom/android/settings_ext/wifi/AdvancedWifiSettings;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -15,16 +15,16 @@
 
 
 # instance fields
-.field final synthetic this$0:Lcom/android/settings/wifi/AdvancedWifiSettings;
+.field final synthetic this$0:Lcom/android/settings_ext/wifi/AdvancedWifiSettings;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/wifi/AdvancedWifiSettings;)V
+.method constructor <init>(Lcom/android/settings_ext/wifi/AdvancedWifiSettings;)V
     .locals 0
 
     .prologue
     .line 76
-    iput-object p1, p0, Lcom/android/settings/wifi/AdvancedWifiSettings$1;->this$0:Lcom/android/settings/wifi/AdvancedWifiSettings;
+    iput-object p1, p0, Lcom/android/settings_ext/wifi/AdvancedWifiSettings$1;->this$0:Lcom/android/settings_ext/wifi/AdvancedWifiSettings;
 
     invoke-direct {p0}, Landroid/content/BroadcastReceiver;-><init>()V
 
@@ -64,10 +64,10 @@
 
     .line 82
     :cond_0
-    iget-object v1, p0, Lcom/android/settings/wifi/AdvancedWifiSettings$1;->this$0:Lcom/android/settings/wifi/AdvancedWifiSettings;
+    iget-object v1, p0, Lcom/android/settings_ext/wifi/AdvancedWifiSettings$1;->this$0:Lcom/android/settings_ext/wifi/AdvancedWifiSettings;
 
-    # invokes: Lcom/android/settings/wifi/AdvancedWifiSettings;->refreshWifiInfo()V
-    invoke-static {v1}, Lcom/android/settings/wifi/AdvancedWifiSettings;->access$000(Lcom/android/settings/wifi/AdvancedWifiSettings;)V
+    # invokes: Lcom/android/settings_ext/wifi/AdvancedWifiSettings;->refreshWifiInfo()V
+    invoke-static {v1}, Lcom/android/settings_ext/wifi/AdvancedWifiSettings;->access$000(Lcom/android/settings_ext/wifi/AdvancedWifiSettings;)V
 
     .line 84
     :cond_1

@@ -1,4 +1,4 @@
-.class public Lcom/android/settings/CreateShortcut;
+.class public Lcom/android/settings_ext/CreateShortcut;
 .super Landroid/app/LauncherActivity;
 .source "CreateShortcut.java"
 
@@ -63,7 +63,7 @@
 
     .prologue
     .line 41
-    invoke-virtual {p0, p3}, Lcom/android/settings/CreateShortcut;->intentForPosition(I)Landroid/content/Intent;
+    invoke-virtual {p0, p3}, Lcom/android/settings_ext/CreateShortcut;->intentForPosition(I)Landroid/content/Intent;
 
     move-result-object v1
 
@@ -98,7 +98,7 @@
     .line 47
     const-string v2, "android.intent.extra.shortcut.NAME"
 
-    invoke-virtual {p0, p3}, Lcom/android/settings/CreateShortcut;->itemForPosition(I)Landroid/app/LauncherActivity$ListItem;
+    invoke-virtual {p0, p3}, Lcom/android/settings_ext/CreateShortcut;->itemForPosition(I)Landroid/app/LauncherActivity$ListItem;
 
     move-result-object v3
 
@@ -109,10 +109,10 @@
     .line 48
     const/4 v2, -0x1
 
-    invoke-virtual {p0, v2, v0}, Lcom/android/settings/CreateShortcut;->setResult(ILandroid/content/Intent;)V
+    invoke-virtual {p0, v2, v0}, Lcom/android/settings_ext/CreateShortcut;->setResult(ILandroid/content/Intent;)V
 
     .line 49
-    invoke-virtual {p0}, Lcom/android/settings/CreateShortcut;->finish()V
+    invoke-virtual {p0}, Lcom/android/settings_ext/CreateShortcut;->finish()V
 
     .line 50
     return-void
@@ -176,7 +176,7 @@
 
     iget-object v3, v3, Landroid/content/pm/ActivityInfo;->name:Ljava/lang/String;
 
-    const-class v4, Lcom/android/settings/Settings$TetherSettingsActivity;
+    const-class v4, Lcom/android/settings_ext/Settings$TetherSettingsActivity;
 
     invoke-virtual {v4}, Ljava/lang/Class;->getSimpleName()Ljava/lang/String;
 
@@ -189,7 +189,7 @@
     if-eqz v3, :cond_2
 
     .line 67
-    invoke-static {p0}, Lcom/android/settings/TetherSettings;->showInShortcuts(Landroid/content/Context;)Z
+    invoke-static {p0}, Lcom/android/settings_ext/TetherSettings;->showInShortcuts(Landroid/content/Context;)Z
 
     move-result v3
 

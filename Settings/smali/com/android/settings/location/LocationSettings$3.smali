@@ -1,11 +1,11 @@
-.class Lcom/android/settings/location/LocationSettings$3;
+.class Lcom/android/settings_ext/location/LocationSettings$3;
 .super Landroid/content/BroadcastReceiver;
 .source "LocationSettings.java"
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/android/settings/location/LocationSettings;->addLocationServices(Landroid/content/Context;Landroid/preference/PreferenceScreen;Z)V
+    value = Lcom/android/settings_ext/location/LocationSettings;->addLocationServices(Landroid/content/Context;Landroid/preference/PreferenceScreen;Z)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -15,16 +15,16 @@
 
 
 # instance fields
-.field final synthetic this$0:Lcom/android/settings/location/LocationSettings;
+.field final synthetic this$0:Lcom/android/settings_ext/location/LocationSettings;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/location/LocationSettings;)V
+.method constructor <init>(Lcom/android/settings_ext/location/LocationSettings;)V
     .locals 0
 
     .prologue
     .line 233
-    iput-object p1, p0, Lcom/android/settings/location/LocationSettings$3;->this$0:Lcom/android/settings/location/LocationSettings;
+    iput-object p1, p0, Lcom/android/settings_ext/location/LocationSettings$3;->this$0:Lcom/android/settings_ext/location/LocationSettings;
 
     invoke-direct {p0}, Landroid/content/BroadcastReceiver;-><init>()V
 
@@ -75,14 +75,14 @@
 
     .line 239
     :cond_0
-    iget-object v0, p0, Lcom/android/settings/location/LocationSettings$3;->this$0:Lcom/android/settings/location/LocationSettings;
+    iget-object v0, p0, Lcom/android/settings_ext/location/LocationSettings$3;->this$0:Lcom/android/settings_ext/location/LocationSettings;
 
-    # getter for: Lcom/android/settings/location/LocationSettings;->injector:Lcom/android/settings/location/SettingsInjector;
-    invoke-static {v0}, Lcom/android/settings/location/LocationSettings;->access$000(Lcom/android/settings/location/LocationSettings;)Lcom/android/settings/location/SettingsInjector;
+    # getter for: Lcom/android/settings_ext/location/LocationSettings;->injector:Lcom/android/settings_ext/location/SettingsInjector;
+    invoke-static {v0}, Lcom/android/settings_ext/location/LocationSettings;->access$000(Lcom/android/settings_ext/location/LocationSettings;)Lcom/android/settings_ext/location/SettingsInjector;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/android/settings/location/SettingsInjector;->reloadStatusMessages()V
+    invoke-virtual {v0}, Lcom/android/settings_ext/location/SettingsInjector;->reloadStatusMessages()V
 
     .line 240
     return-void

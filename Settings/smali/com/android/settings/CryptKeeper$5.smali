@@ -1,4 +1,4 @@
-.class Lcom/android/settings/CryptKeeper$5;
+.class Lcom/android/settings_ext/CryptKeeper$5;
 .super Ljava/lang/Object;
 .source "CryptKeeper.java"
 
@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/android/settings/CryptKeeper;->showFactoryReset(Z)V
+    value = Lcom/android/settings_ext/CryptKeeper;->showFactoryReset(Z)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -18,20 +18,20 @@
 
 
 # instance fields
-.field final synthetic this$0:Lcom/android/settings/CryptKeeper;
+.field final synthetic this$0:Lcom/android/settings_ext/CryptKeeper;
 
 .field final synthetic val$corrupt:Z
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/CryptKeeper;Z)V
+.method constructor <init>(Lcom/android/settings_ext/CryptKeeper;Z)V
     .locals 0
 
     .prologue
     .line 603
-    iput-object p1, p0, Lcom/android/settings/CryptKeeper$5;->this$0:Lcom/android/settings/CryptKeeper;
+    iput-object p1, p0, Lcom/android/settings_ext/CryptKeeper$5;->this$0:Lcom/android/settings_ext/CryptKeeper;
 
-    iput-boolean p2, p0, Lcom/android/settings/CryptKeeper$5;->val$corrupt:Z
+    iput-boolean p2, p0, Lcom/android/settings_ext/CryptKeeper$5;->val$corrupt:Z
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -71,7 +71,7 @@
 
     move-result-object v2
 
-    iget-boolean v3, p0, Lcom/android/settings/CryptKeeper$5;->val$corrupt:Z
+    iget-boolean v3, p0, Lcom/android/settings_ext/CryptKeeper$5;->val$corrupt:Z
 
     invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
 
@@ -84,9 +84,9 @@
     invoke-virtual {v0, v1, v2}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
 
     .line 611
-    iget-object v1, p0, Lcom/android/settings/CryptKeeper$5;->this$0:Lcom/android/settings/CryptKeeper;
+    iget-object v1, p0, Lcom/android/settings_ext/CryptKeeper$5;->this$0:Lcom/android/settings_ext/CryptKeeper;
 
-    invoke-virtual {v1, v0}, Lcom/android/settings/CryptKeeper;->sendBroadcast(Landroid/content/Intent;)V
+    invoke-virtual {v1, v0}, Lcom/android/settings_ext/CryptKeeper;->sendBroadcast(Landroid/content/Intent;)V
 
     .line 612
     return-void

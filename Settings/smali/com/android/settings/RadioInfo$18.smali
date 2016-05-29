@@ -1,4 +1,4 @@
-.class Lcom/android/settings/RadioInfo$18;
+.class Lcom/android/settings_ext/RadioInfo$18;
 .super Ljava/lang/Object;
 .source "RadioInfo.java"
 
@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/android/settings/RadioInfo;
+    value = Lcom/android/settings_ext/RadioInfo;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -18,16 +18,16 @@
 
 
 # instance fields
-.field final synthetic this$0:Lcom/android/settings/RadioInfo;
+.field final synthetic this$0:Lcom/android/settings_ext/RadioInfo;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/RadioInfo;)V
+.method constructor <init>(Lcom/android/settings_ext/RadioInfo;)V
     .locals 0
 
     .prologue
     .line 1045
-    iput-object p1, p0, Lcom/android/settings/RadioInfo$18;->this$0:Lcom/android/settings/RadioInfo;
+    iput-object p1, p0, Lcom/android/settings_ext/RadioInfo$18;->this$0:Lcom/android/settings_ext/RadioInfo;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -51,9 +51,9 @@
     .line 1049
     .local v1, "intent":Landroid/content/Intent;
     :try_start_0
-    iget-object v2, p0, Lcom/android/settings/RadioInfo$18;->this$0:Lcom/android/settings/RadioInfo;
+    iget-object v2, p0, Lcom/android/settings_ext/RadioInfo$18;->this$0:Lcom/android/settings_ext/RadioInfo;
 
-    invoke-virtual {v2, v1}, Lcom/android/settings/RadioInfo;->startActivity(Landroid/content/Intent;)V
+    invoke-virtual {v2, v1}, Lcom/android/settings_ext/RadioInfo;->startActivity(Landroid/content/Intent;)V
     :try_end_0
     .catch Landroid/content/ActivityNotFoundException; {:try_start_0 .. :try_end_0} :catch_0
 
@@ -67,7 +67,7 @@
 
     .line 1051
     .local v0, "ex":Landroid/content/ActivityNotFoundException;
-    iget-object v2, p0, Lcom/android/settings/RadioInfo$18;->this$0:Lcom/android/settings/RadioInfo;
+    iget-object v2, p0, Lcom/android/settings_ext/RadioInfo$18;->this$0:Lcom/android/settings_ext/RadioInfo;
 
     new-instance v3, Ljava/lang/StringBuilder;
 
@@ -87,8 +87,8 @@
 
     move-result-object v3
 
-    # invokes: Lcom/android/settings/RadioInfo;->log(Ljava/lang/String;)V
-    invoke-static {v2, v3}, Lcom/android/settings/RadioInfo;->access$1000(Lcom/android/settings/RadioInfo;Ljava/lang/String;)V
+    # invokes: Lcom/android/settings_ext/RadioInfo;->log(Ljava/lang/String;)V
+    invoke-static {v2, v3}, Lcom/android/settings_ext/RadioInfo;->access$1000(Lcom/android/settings_ext/RadioInfo;Ljava/lang/String;)V
 
     goto :goto_0
 .end method

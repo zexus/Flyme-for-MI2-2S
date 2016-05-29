@@ -1,5 +1,5 @@
-.class public Lcom/android/settings/SetupChooseLockPassword;
-.super Lcom/android/settings/ChooseLockPassword;
+.class public Lcom/android/settings_ext/SetupChooseLockPassword;
+.super Lcom/android/settings_ext/ChooseLockPassword;
 .source "SetupChooseLockPassword.java"
 
 # interfaces
@@ -9,13 +9,13 @@
 # annotations
 .annotation system Ldalvik/annotation/MemberClasses;
     value = {
-        Lcom/android/settings/SetupChooseLockPassword$SetupChooseLockPasswordFragment;
+        Lcom/android/settings_ext/SetupChooseLockPassword$SetupChooseLockPasswordFragment;
     }
 .end annotation
 
 
 # instance fields
-.field private mFragment:Lcom/android/settings/SetupChooseLockPassword$SetupChooseLockPasswordFragment;
+.field private mFragment:Lcom/android/settings_ext/SetupChooseLockPassword$SetupChooseLockPasswordFragment;
 
 .field private mNavigationBar:Lcom/android/setupwizard/navigationbar/SetupWizardNavBar;
 
@@ -26,19 +26,19 @@
 
     .prologue
     .line 38
-    invoke-direct {p0}, Lcom/android/settings/ChooseLockPassword;-><init>()V
+    invoke-direct {p0}, Lcom/android/settings_ext/ChooseLockPassword;-><init>()V
 
     .line 96
     return-void
 .end method
 
-.method static synthetic access$000(Lcom/android/settings/SetupChooseLockPassword;)Lcom/android/setupwizard/navigationbar/SetupWizardNavBar;
+.method static synthetic access$000(Lcom/android/settings_ext/SetupChooseLockPassword;)Lcom/android/setupwizard/navigationbar/SetupWizardNavBar;
     .locals 1
-    .param p0, "x0"    # Lcom/android/settings/SetupChooseLockPassword;
+    .param p0, "x0"    # Lcom/android/settings_ext/SetupChooseLockPassword;
 
     .prologue
     .line 38
-    iget-object v0, p0, Lcom/android/settings/SetupChooseLockPassword;->mNavigationBar:Lcom/android/setupwizard/navigationbar/SetupWizardNavBar;
+    iget-object v0, p0, Lcom/android/settings_ext/SetupChooseLockPassword;->mNavigationBar:Lcom/android/setupwizard/navigationbar/SetupWizardNavBar;
 
     return-object v0
 .end method
@@ -55,13 +55,13 @@
 
     .prologue
     .line 44
-    invoke-static/range {p0 .. p6}, Lcom/android/settings/ChooseLockPassword;->createIntent(Landroid/content/Context;IZIIZZ)Landroid/content/Intent;
+    invoke-static/range {p0 .. p6}, Lcom/android/settings_ext/ChooseLockPassword;->createIntent(Landroid/content/Context;IZIIZZ)Landroid/content/Intent;
 
     move-result-object v0
 
     .line 46
     .local v0, "intent":Landroid/content/Intent;
-    const-class v1, Lcom/android/settings/SetupChooseLockPassword;
+    const-class v1, Lcom/android/settings_ext/SetupChooseLockPassword;
 
     invoke-virtual {v0, p0, v1}, Landroid/content/Intent;->setClass(Landroid/content/Context;Ljava/lang/Class;)Landroid/content/Intent;
 
@@ -92,7 +92,7 @@
 
     .prologue
     .line 61
-    const-class v0, Lcom/android/settings/SetupChooseLockPassword$SetupChooseLockPasswordFragment;
+    const-class v0, Lcom/android/settings_ext/SetupChooseLockPassword$SetupChooseLockPasswordFragment;
 
     return-object v0
 .end method
@@ -103,7 +103,7 @@
 
     .prologue
     .line 56
-    const-class v0, Lcom/android/settings/SetupChooseLockPassword$SetupChooseLockPasswordFragment;
+    const-class v0, Lcom/android/settings_ext/SetupChooseLockPassword$SetupChooseLockPasswordFragment;
 
     invoke-virtual {v0}, Ljava/lang/Class;->getName()Ljava/lang/String;
 
@@ -124,16 +124,16 @@
 
     .prologue
     .line 66
-    invoke-virtual {p0}, Lcom/android/settings/SetupChooseLockPassword;->getIntent()Landroid/content/Intent;
+    invoke-virtual {p0}, Lcom/android/settings_ext/SetupChooseLockPassword;->getIntent()Landroid/content/Intent;
 
     move-result-object v0
 
-    invoke-static {v0, p2}, Lcom/android/settings/SetupWizardUtils;->getTheme(Landroid/content/Intent;I)I
+    invoke-static {v0, p2}, Lcom/android/settings_ext/SetupWizardUtils;->getTheme(Landroid/content/Intent;I)I
 
     move-result p2
 
     .line 67
-    invoke-super {p0, p1, p2, p3}, Lcom/android/settings/ChooseLockPassword;->onApplyThemeResource(Landroid/content/res/Resources$Theme;IZ)V
+    invoke-super {p0, p1, p2, p3}, Lcom/android/settings_ext/ChooseLockPassword;->onApplyThemeResource(Landroid/content/res/Resources$Theme;IZ)V
 
     .line 68
     return-void
@@ -145,18 +145,18 @@
 
     .prologue
     .line 90
-    invoke-super {p0, p1}, Lcom/android/settings/ChooseLockPassword;->onAttachFragment(Landroid/app/Fragment;)V
+    invoke-super {p0, p1}, Lcom/android/settings_ext/ChooseLockPassword;->onAttachFragment(Landroid/app/Fragment;)V
 
     .line 91
-    instance-of v0, p1, Lcom/android/settings/SetupChooseLockPassword$SetupChooseLockPasswordFragment;
+    instance-of v0, p1, Lcom/android/settings_ext/SetupChooseLockPassword$SetupChooseLockPasswordFragment;
 
     if-eqz v0, :cond_0
 
     .line 92
-    check-cast p1, Lcom/android/settings/SetupChooseLockPassword$SetupChooseLockPasswordFragment;
+    check-cast p1, Lcom/android/settings_ext/SetupChooseLockPassword$SetupChooseLockPasswordFragment;
 
     .end local p1    # "fragment":Landroid/app/Fragment;
-    iput-object p1, p0, Lcom/android/settings/SetupChooseLockPassword;->mFragment:Lcom/android/settings/SetupChooseLockPassword$SetupChooseLockPasswordFragment;
+    iput-object p1, p0, Lcom/android/settings_ext/SetupChooseLockPassword;->mFragment:Lcom/android/settings_ext/SetupChooseLockPassword$SetupChooseLockPasswordFragment;
 
     .line 94
     :cond_0
@@ -168,7 +168,7 @@
 
     .prologue
     .line 78
-    invoke-virtual {p0}, Lcom/android/settings/SetupChooseLockPassword;->onBackPressed()V
+    invoke-virtual {p0}, Lcom/android/settings_ext/SetupChooseLockPassword;->onBackPressed()V
 
     .line 79
     return-void
@@ -179,14 +179,14 @@
 
     .prologue
     .line 83
-    iget-object v0, p0, Lcom/android/settings/SetupChooseLockPassword;->mFragment:Lcom/android/settings/SetupChooseLockPassword$SetupChooseLockPasswordFragment;
+    iget-object v0, p0, Lcom/android/settings_ext/SetupChooseLockPassword;->mFragment:Lcom/android/settings_ext/SetupChooseLockPassword$SetupChooseLockPasswordFragment;
 
     if-eqz v0, :cond_0
 
     .line 84
-    iget-object v0, p0, Lcom/android/settings/SetupChooseLockPassword;->mFragment:Lcom/android/settings/SetupChooseLockPassword$SetupChooseLockPasswordFragment;
+    iget-object v0, p0, Lcom/android/settings_ext/SetupChooseLockPassword;->mFragment:Lcom/android/settings_ext/SetupChooseLockPassword$SetupChooseLockPasswordFragment;
 
-    invoke-virtual {v0}, Lcom/android/settings/SetupChooseLockPassword$SetupChooseLockPasswordFragment;->handleNext()V
+    invoke-virtual {v0}, Lcom/android/settings_ext/SetupChooseLockPassword$SetupChooseLockPasswordFragment;->handleNext()V
 
     .line 86
     :cond_0
@@ -199,10 +199,10 @@
 
     .prologue
     .line 72
-    iput-object p1, p0, Lcom/android/settings/SetupChooseLockPassword;->mNavigationBar:Lcom/android/setupwizard/navigationbar/SetupWizardNavBar;
+    iput-object p1, p0, Lcom/android/settings_ext/SetupChooseLockPassword;->mNavigationBar:Lcom/android/setupwizard/navigationbar/SetupWizardNavBar;
 
     .line 73
-    invoke-static {p0, p1}, Lcom/android/settings/SetupWizardUtils;->setImmersiveMode(Landroid/app/Activity;Lcom/android/setupwizard/navigationbar/SetupWizardNavBar;)V
+    invoke-static {p0, p1}, Lcom/android/settings_ext/SetupWizardUtils;->setImmersiveMode(Landroid/app/Activity;Lcom/android/setupwizard/navigationbar/SetupWizardNavBar;)V
 
     .line 74
     return-void

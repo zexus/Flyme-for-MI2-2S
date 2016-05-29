@@ -1,11 +1,11 @@
-.class Lcom/android/settings/deviceinfo/Status$2;
+.class Lcom/android/settings_ext/deviceinfo/Status$2;
 .super Landroid/telephony/PhoneStateListener;
 .source "Status.java"
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/android/settings/deviceinfo/Status;
+    value = Lcom/android/settings_ext/deviceinfo/Status;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -15,16 +15,16 @@
 
 
 # instance fields
-.field final synthetic this$0:Lcom/android/settings/deviceinfo/Status;
+.field final synthetic this$0:Lcom/android/settings_ext/deviceinfo/Status;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/deviceinfo/Status;)V
+.method constructor <init>(Lcom/android/settings_ext/deviceinfo/Status;)V
     .locals 0
 
     .prologue
     .line 216
-    iput-object p1, p0, Lcom/android/settings/deviceinfo/Status$2;->this$0:Lcom/android/settings/deviceinfo/Status;
+    iput-object p1, p0, Lcom/android/settings_ext/deviceinfo/Status$2;->this$0:Lcom/android/settings_ext/deviceinfo/Status;
 
     invoke-direct {p0}, Landroid/telephony/PhoneStateListener;-><init>()V
 
@@ -39,16 +39,16 @@
 
     .prologue
     .line 219
-    iget-object v0, p0, Lcom/android/settings/deviceinfo/Status$2;->this$0:Lcom/android/settings/deviceinfo/Status;
+    iget-object v0, p0, Lcom/android/settings_ext/deviceinfo/Status$2;->this$0:Lcom/android/settings_ext/deviceinfo/Status;
 
-    # invokes: Lcom/android/settings/deviceinfo/Status;->updateDataState()V
-    invoke-static {v0}, Lcom/android/settings/deviceinfo/Status;->access$400(Lcom/android/settings/deviceinfo/Status;)V
+    # invokes: Lcom/android/settings_ext/deviceinfo/Status;->updateDataState()V
+    invoke-static {v0}, Lcom/android/settings_ext/deviceinfo/Status;->access$400(Lcom/android/settings_ext/deviceinfo/Status;)V
 
     .line 220
-    iget-object v0, p0, Lcom/android/settings/deviceinfo/Status$2;->this$0:Lcom/android/settings/deviceinfo/Status;
+    iget-object v0, p0, Lcom/android/settings_ext/deviceinfo/Status$2;->this$0:Lcom/android/settings_ext/deviceinfo/Status;
 
-    # invokes: Lcom/android/settings/deviceinfo/Status;->updateNetworkType()V
-    invoke-static {v0}, Lcom/android/settings/deviceinfo/Status;->access$500(Lcom/android/settings/deviceinfo/Status;)V
+    # invokes: Lcom/android/settings_ext/deviceinfo/Status;->updateNetworkType()V
+    invoke-static {v0}, Lcom/android/settings_ext/deviceinfo/Status;->access$500(Lcom/android/settings_ext/deviceinfo/Status;)V
 
     .line 221
     return-void

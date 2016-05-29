@@ -1,4 +1,4 @@
-.class Lcom/android/settings/wifi/p2p/WifiP2pSettings$2$1;
+.class Lcom/android/settings_ext/wifi/p2p/WifiP2pSettings$2$1;
 .super Ljava/lang/Object;
 .source "WifiP2pSettings.java"
 
@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/android/settings/wifi/p2p/WifiP2pSettings$2;->onClick(Landroid/content/DialogInterface;I)V
+    value = Lcom/android/settings_ext/wifi/p2p/WifiP2pSettings$2;->onClick(Landroid/content/DialogInterface;I)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -18,16 +18,16 @@
 
 
 # instance fields
-.field final synthetic this$1:Lcom/android/settings/wifi/p2p/WifiP2pSettings$2;
+.field final synthetic this$1:Lcom/android/settings_ext/wifi/p2p/WifiP2pSettings$2;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/wifi/p2p/WifiP2pSettings$2;)V
+.method constructor <init>(Lcom/android/settings_ext/wifi/p2p/WifiP2pSettings$2;)V
     .locals 0
 
     .prologue
     .line 201
-    iput-object p1, p0, Lcom/android/settings/wifi/p2p/WifiP2pSettings$2$1;->this$1:Lcom/android/settings/wifi/p2p/WifiP2pSettings$2;
+    iput-object p1, p0, Lcom/android/settings_ext/wifi/p2p/WifiP2pSettings$2$1;->this$1:Lcom/android/settings_ext/wifi/p2p/WifiP2pSettings$2;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -42,11 +42,11 @@
 
     .prologue
     .line 206
-    iget-object v0, p0, Lcom/android/settings/wifi/p2p/WifiP2pSettings$2$1;->this$1:Lcom/android/settings/wifi/p2p/WifiP2pSettings$2;
+    iget-object v0, p0, Lcom/android/settings_ext/wifi/p2p/WifiP2pSettings$2$1;->this$1:Lcom/android/settings_ext/wifi/p2p/WifiP2pSettings$2;
 
-    iget-object v0, v0, Lcom/android/settings/wifi/p2p/WifiP2pSettings$2;->this$0:Lcom/android/settings/wifi/p2p/WifiP2pSettings;
+    iget-object v0, v0, Lcom/android/settings_ext/wifi/p2p/WifiP2pSettings$2;->this$0:Lcom/android/settings_ext/wifi/p2p/WifiP2pSettings;
 
-    invoke-virtual {v0}, Lcom/android/settings/wifi/p2p/WifiP2pSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {v0}, Lcom/android/settings_ext/wifi/p2p/WifiP2pSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 

@@ -1,11 +1,11 @@
-.class public interface abstract Lcom/android/settings/widget/ChartSweepView$OnSweepListener;
+.class public interface abstract Lcom/android/settings_ext/widget/ChartSweepView$OnSweepListener;
 .super Ljava/lang/Object;
 .source "ChartSweepView.java"
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/android/settings/widget/ChartSweepView;
+    value = Lcom/android/settings_ext/widget/ChartSweepView;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -15,8 +15,8 @@
 
 
 # virtual methods
-.method public abstract onSweep(Lcom/android/settings/widget/ChartSweepView;Z)V
+.method public abstract onSweep(Lcom/android/settings_ext/widget/ChartSweepView;Z)V
 .end method
 
-.method public abstract requestEdit(Lcom/android/settings/widget/ChartSweepView;)V
+.method public abstract requestEdit(Lcom/android/settings_ext/widget/ChartSweepView;)V
 .end method

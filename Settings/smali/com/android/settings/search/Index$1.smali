@@ -1,11 +1,11 @@
-.class synthetic Lcom/android/settings/search/Index$1;
+.class synthetic Lcom/android/settings_ext/search/Index$1;
 .super Ljava/lang/Object;
 .source "Index.java"
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/android/settings/search/Index;
+    value = Lcom/android/settings_ext/search/Index;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;

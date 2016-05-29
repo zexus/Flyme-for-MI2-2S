@@ -1,11 +1,11 @@
-.class final Lcom/android/settings/voice/VoiceInputSettings$1;
-.super Lcom/android/settings/search/BaseSearchIndexProvider;
+.class final Lcom/android/settings_ext/voice/VoiceInputSettings$1;
+.super Lcom/android/settings_ext/search/BaseSearchIndexProvider;
 .source "VoiceInputSettings.java"
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/android/settings/voice/VoiceInputSettings;
+    value = Lcom/android/settings_ext/voice/VoiceInputSettings;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -20,12 +20,12 @@
 
     .prologue
     .line 181
-    invoke-direct {p0}, Lcom/android/settings/search/BaseSearchIndexProvider;-><init>()V
+    invoke-direct {p0}, Lcom/android/settings_ext/search/BaseSearchIndexProvider;-><init>()V
 
     return-void
 .end method
 
-.method private getSearchIndexableRaw(Landroid/content/Context;Landroid/content/pm/ResolveInfo;Ljava/lang/String;)Lcom/android/settings/search/SearchIndexableRaw;
+.method private getSearchIndexableRaw(Landroid/content/Context;Landroid/content/pm/ResolveInfo;Ljava/lang/String;)Lcom/android/settings_ext/search/SearchIndexableRaw;
     .locals 5
     .param p1, "context"    # Landroid/content/Context;
     .param p2, "info"    # Landroid/content/pm/ResolveInfo;
@@ -47,17 +47,17 @@
 
     .line 234
     .local v0, "componentName":Landroid/content/ComponentName;
-    new-instance v1, Lcom/android/settings/search/SearchIndexableRaw;
+    new-instance v1, Lcom/android/settings_ext/search/SearchIndexableRaw;
 
-    invoke-direct {v1, p1}, Lcom/android/settings/search/SearchIndexableRaw;-><init>(Landroid/content/Context;)V
+    invoke-direct {v1, p1}, Lcom/android/settings_ext/search/SearchIndexableRaw;-><init>(Landroid/content/Context;)V
 
     .line 235
-    .local v1, "indexable":Lcom/android/settings/search/SearchIndexableRaw;
+    .local v1, "indexable":Lcom/android/settings_ext/search/SearchIndexableRaw;
     invoke-virtual {v0}, Landroid/content/ComponentName;->flattenToString()Ljava/lang/String;
 
     move-result-object v3
 
-    iput-object v3, v1, Lcom/android/settings/search/SearchIndexableRaw;->key:Ljava/lang/String;
+    iput-object v3, v1, Lcom/android/settings_ext/search/SearchIndexableRaw;->key:Ljava/lang/String;
 
     .line 236
     invoke-virtual {p1}, Landroid/content/Context;->getPackageManager()Landroid/content/pm/PackageManager;
@@ -72,10 +72,10 @@
 
     move-result-object v3
 
-    iput-object v3, v1, Lcom/android/settings/search/SearchIndexableRaw;->title:Ljava/lang/String;
+    iput-object v3, v1, Lcom/android/settings_ext/search/SearchIndexableRaw;->title:Ljava/lang/String;
 
     .line 237
-    iput-object p3, v1, Lcom/android/settings/search/SearchIndexableRaw;->screenTitle:Ljava/lang/String;
+    iput-object p3, v1, Lcom/android/settings_ext/search/SearchIndexableRaw;->screenTitle:Ljava/lang/String;
 
     .line 239
     return-object v1
@@ -94,7 +94,7 @@
             "Z)",
             "Ljava/util/List",
             "<",
-            "Lcom/android/settings/search/SearchIndexableRaw;",
+            "Lcom/android/settings_ext/search/SearchIndexableRaw;",
             ">;"
         }
     .end annotation
@@ -106,7 +106,7 @@
     invoke-direct {v4}, Ljava/util/ArrayList;-><init>()V
 
     .line 189
-    .local v4, "indexables":Ljava/util/List;, "Ljava/util/List<Lcom/android/settings/search/SearchIndexableRaw;>;"
+    .local v4, "indexables":Ljava/util/List;, "Ljava/util/List<Lcom/android/settings_ext/search/SearchIndexableRaw;>;"
     const v10, 0x7f0906c2
 
     invoke-virtual {p1, v10}, Landroid/content/Context;->getString(I)Ljava/lang/String;
@@ -115,15 +115,15 @@
 
     .line 191
     .local v7, "screenTitle":Ljava/lang/String;
-    new-instance v3, Lcom/android/settings/search/SearchIndexableRaw;
+    new-instance v3, Lcom/android/settings_ext/search/SearchIndexableRaw;
 
-    invoke-direct {v3, p1}, Lcom/android/settings/search/SearchIndexableRaw;-><init>(Landroid/content/Context;)V
+    invoke-direct {v3, p1}, Lcom/android/settings_ext/search/SearchIndexableRaw;-><init>(Landroid/content/Context;)V
 
     .line 192
-    .local v3, "indexable":Lcom/android/settings/search/SearchIndexableRaw;
+    .local v3, "indexable":Lcom/android/settings_ext/search/SearchIndexableRaw;
     const-string v10, "voice_service_preference_section_title"
 
-    iput-object v10, v3, Lcom/android/settings/search/SearchIndexableRaw;->key:Ljava/lang/String;
+    iput-object v10, v3, Lcom/android/settings_ext/search/SearchIndexableRaw;->key:Ljava/lang/String;
 
     .line 193
     const v10, 0x7f0906c3
@@ -132,10 +132,10 @@
 
     move-result-object v10
 
-    iput-object v10, v3, Lcom/android/settings/search/SearchIndexableRaw;->title:Ljava/lang/String;
+    iput-object v10, v3, Lcom/android/settings_ext/search/SearchIndexableRaw;->title:Ljava/lang/String;
 
     .line 194
-    iput-object v7, v3, Lcom/android/settings/search/SearchIndexableRaw;->screenTitle:Ljava/lang/String;
+    iput-object v7, v3, Lcom/android/settings_ext/search/SearchIndexableRaw;->screenTitle:Ljava/lang/String;
 
     .line 195
     invoke-interface {v4, v3}, Ljava/util/List;->add(Ljava/lang/Object;)Z
@@ -206,7 +206,7 @@
 
     .line 210
     :cond_0
-    invoke-direct {p0, p1, v5, v7}, Lcom/android/settings/voice/VoiceInputSettings$1;->getSearchIndexableRaw(Landroid/content/Context;Landroid/content/pm/ResolveInfo;Ljava/lang/String;)Lcom/android/settings/search/SearchIndexableRaw;
+    invoke-direct {p0, p1, v5, v7}, Lcom/android/settings_ext/voice/VoiceInputSettings$1;->getSearchIndexableRaw(Landroid/content/Context;Landroid/content/pm/ResolveInfo;Ljava/lang/String;)Lcom/android/settings_ext/search/SearchIndexableRaw;
 
     move-result-object v10
 
@@ -256,7 +256,7 @@
 
     .line 221
     .restart local v5    # "info":Landroid/content/pm/ResolveInfo;
-    invoke-direct {p0, p1, v5, v7}, Lcom/android/settings/voice/VoiceInputSettings$1;->getSearchIndexableRaw(Landroid/content/Context;Landroid/content/pm/ResolveInfo;Ljava/lang/String;)Lcom/android/settings/search/SearchIndexableRaw;
+    invoke-direct {p0, p1, v5, v7}, Lcom/android/settings_ext/voice/VoiceInputSettings$1;->getSearchIndexableRaw(Landroid/content/Context;Landroid/content/pm/ResolveInfo;Ljava/lang/String;)Lcom/android/settings_ext/search/SearchIndexableRaw;
 
     move-result-object v10
 

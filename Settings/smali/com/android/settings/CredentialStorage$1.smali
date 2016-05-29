@@ -1,11 +1,11 @@
-.class synthetic Lcom/android/settings/CredentialStorage$1;
+.class synthetic Lcom/android/settings_ext/CredentialStorage$1;
 .super Ljava/lang/Object;
 .source "CredentialStorage.java"
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/android/settings/CredentialStorage;
+    value = Lcom/android/settings_ext/CredentialStorage;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -32,10 +32,10 @@
 
     new-array v0, v0, [I
 
-    sput-object v0, Lcom/android/settings/CredentialStorage$1;->$SwitchMap$android$security$KeyStore$State:[I
+    sput-object v0, Lcom/android/settings_ext/CredentialStorage$1;->$SwitchMap$android$security$KeyStore$State:[I
 
     :try_start_0
-    sget-object v0, Lcom/android/settings/CredentialStorage$1;->$SwitchMap$android$security$KeyStore$State:[I
+    sget-object v0, Lcom/android/settings_ext/CredentialStorage$1;->$SwitchMap$android$security$KeyStore$State:[I
 
     sget-object v1, Landroid/security/KeyStore$State;->UNINITIALIZED:Landroid/security/KeyStore$State;
 
@@ -51,7 +51,7 @@
 
     :goto_0
     :try_start_1
-    sget-object v0, Lcom/android/settings/CredentialStorage$1;->$SwitchMap$android$security$KeyStore$State:[I
+    sget-object v0, Lcom/android/settings_ext/CredentialStorage$1;->$SwitchMap$android$security$KeyStore$State:[I
 
     sget-object v1, Landroid/security/KeyStore$State;->LOCKED:Landroid/security/KeyStore$State;
 
@@ -67,7 +67,7 @@
 
     :goto_1
     :try_start_2
-    sget-object v0, Lcom/android/settings/CredentialStorage$1;->$SwitchMap$android$security$KeyStore$State:[I
+    sget-object v0, Lcom/android/settings_ext/CredentialStorage$1;->$SwitchMap$android$security$KeyStore$State:[I
 
     sget-object v1, Landroid/security/KeyStore$State;->UNLOCKED:Landroid/security/KeyStore$State;
 

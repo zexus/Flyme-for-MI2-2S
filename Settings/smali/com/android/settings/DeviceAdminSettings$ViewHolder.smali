@@ -1,11 +1,11 @@
-.class Lcom/android/settings/DeviceAdminSettings$ViewHolder;
+.class Lcom/android/settings_ext/DeviceAdminSettings$ViewHolder;
 .super Ljava/lang/Object;
 .source "DeviceAdminSettings.java"
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/android/settings/DeviceAdminSettings;
+    value = Lcom/android/settings_ext/DeviceAdminSettings;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;

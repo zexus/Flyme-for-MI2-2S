@@ -1,4 +1,4 @@
-.class Lcom/android/settings/voice/VoiceInputPreference$1;
+.class Lcom/android/settings_ext/voice/VoiceInputPreference$1;
 .super Ljava/lang/Object;
 .source "VoiceInputPreference.java"
 
@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/android/settings/voice/VoiceInputPreference;
+    value = Lcom/android/settings_ext/voice/VoiceInputPreference;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -18,16 +18,16 @@
 
 
 # instance fields
-.field final synthetic this$0:Lcom/android/settings/voice/VoiceInputPreference;
+.field final synthetic this$0:Lcom/android/settings_ext/voice/VoiceInputPreference;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/voice/VoiceInputPreference;)V
+.method constructor <init>(Lcom/android/settings_ext/voice/VoiceInputPreference;)V
     .locals 0
 
     .prologue
     .line 63
-    iput-object p1, p0, Lcom/android/settings/voice/VoiceInputPreference$1;->this$0:Lcom/android/settings/voice/VoiceInputPreference;
+    iput-object p1, p0, Lcom/android/settings_ext/voice/VoiceInputPreference$1;->this$0:Lcom/android/settings_ext/voice/VoiceInputPreference;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -43,9 +43,9 @@
 
     .prologue
     .line 66
-    iget-object v0, p0, Lcom/android/settings/voice/VoiceInputPreference$1;->this$0:Lcom/android/settings/voice/VoiceInputPreference;
+    iget-object v0, p0, Lcom/android/settings_ext/voice/VoiceInputPreference$1;->this$0:Lcom/android/settings_ext/voice/VoiceInputPreference;
 
-    invoke-virtual {v0, p1, p2}, Lcom/android/settings/voice/VoiceInputPreference;->onRadioButtonClicked(Landroid/widget/CompoundButton;Z)V
+    invoke-virtual {v0, p1, p2}, Lcom/android/settings_ext/voice/VoiceInputPreference;->onRadioButtonClicked(Landroid/widget/CompoundButton;Z)V
 
     .line 67
     return-void

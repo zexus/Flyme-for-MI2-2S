@@ -1,4 +1,4 @@
-.class Lcom/android/settings/accounts/AccountSyncSettings$1$1;
+.class Lcom/android/settings_ext/accounts/AccountSyncSettings$1$1;
 .super Ljava/lang/Object;
 .source "AccountSyncSettings.java"
 
@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/android/settings/accounts/AccountSyncSettings$1;->onClick(Landroid/content/DialogInterface;I)V
+    value = Lcom/android/settings_ext/accounts/AccountSyncSettings$1;->onClick(Landroid/content/DialogInterface;I)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -28,16 +28,16 @@
 
 
 # instance fields
-.field final synthetic this$1:Lcom/android/settings/accounts/AccountSyncSettings$1;
+.field final synthetic this$1:Lcom/android/settings_ext/accounts/AccountSyncSettings$1;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/accounts/AccountSyncSettings$1;)V
+.method constructor <init>(Lcom/android/settings_ext/accounts/AccountSyncSettings$1;)V
     .locals 0
 
     .prologue
     .line 97
-    iput-object p1, p0, Lcom/android/settings/accounts/AccountSyncSettings$1$1;->this$1:Lcom/android/settings/accounts/AccountSyncSettings$1;
+    iput-object p1, p0, Lcom/android/settings_ext/accounts/AccountSyncSettings$1$1;->this$1:Lcom/android/settings_ext/accounts/AccountSyncSettings$1;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -61,11 +61,11 @@
     .prologue
     .line 101
     .local p1, "future":Landroid/accounts/AccountManagerFuture;, "Landroid/accounts/AccountManagerFuture<Landroid/os/Bundle;>;"
-    iget-object v1, p0, Lcom/android/settings/accounts/AccountSyncSettings$1$1;->this$1:Lcom/android/settings/accounts/AccountSyncSettings$1;
+    iget-object v1, p0, Lcom/android/settings_ext/accounts/AccountSyncSettings$1$1;->this$1:Lcom/android/settings_ext/accounts/AccountSyncSettings$1;
 
-    iget-object v1, v1, Lcom/android/settings/accounts/AccountSyncSettings$1;->this$0:Lcom/android/settings/accounts/AccountSyncSettings;
+    iget-object v1, v1, Lcom/android/settings_ext/accounts/AccountSyncSettings$1;->this$0:Lcom/android/settings_ext/accounts/AccountSyncSettings;
 
-    invoke-virtual {v1}, Lcom/android/settings/accounts/AccountSyncSettings;->isResumed()Z
+    invoke-virtual {v1}, Lcom/android/settings_ext/accounts/AccountSyncSettings;->isResumed()Z
 
     move-result v1
 
@@ -108,21 +108,21 @@
     :goto_1
     if-eqz v0, :cond_2
 
-    iget-object v1, p0, Lcom/android/settings/accounts/AccountSyncSettings$1$1;->this$1:Lcom/android/settings/accounts/AccountSyncSettings$1;
+    iget-object v1, p0, Lcom/android/settings_ext/accounts/AccountSyncSettings$1$1;->this$1:Lcom/android/settings_ext/accounts/AccountSyncSettings$1;
 
-    iget-object v1, v1, Lcom/android/settings/accounts/AccountSyncSettings$1;->this$0:Lcom/android/settings/accounts/AccountSyncSettings;
+    iget-object v1, v1, Lcom/android/settings_ext/accounts/AccountSyncSettings$1;->this$0:Lcom/android/settings_ext/accounts/AccountSyncSettings;
 
-    invoke-virtual {v1}, Lcom/android/settings/accounts/AccountSyncSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {v1}, Lcom/android/settings_ext/accounts/AccountSyncSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v1
 
     if-eqz v1, :cond_2
 
-    iget-object v1, p0, Lcom/android/settings/accounts/AccountSyncSettings$1$1;->this$1:Lcom/android/settings/accounts/AccountSyncSettings$1;
+    iget-object v1, p0, Lcom/android/settings_ext/accounts/AccountSyncSettings$1$1;->this$1:Lcom/android/settings_ext/accounts/AccountSyncSettings$1;
 
-    iget-object v1, v1, Lcom/android/settings/accounts/AccountSyncSettings$1;->this$0:Lcom/android/settings/accounts/AccountSyncSettings;
+    iget-object v1, v1, Lcom/android/settings_ext/accounts/AccountSyncSettings$1;->this$0:Lcom/android/settings_ext/accounts/AccountSyncSettings;
 
-    invoke-virtual {v1}, Lcom/android/settings/accounts/AccountSyncSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {v1}, Lcom/android/settings_ext/accounts/AccountSyncSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v1
 
@@ -133,24 +133,24 @@
     if-nez v1, :cond_2
 
     .line 119
-    iget-object v1, p0, Lcom/android/settings/accounts/AccountSyncSettings$1$1;->this$1:Lcom/android/settings/accounts/AccountSyncSettings$1;
+    iget-object v1, p0, Lcom/android/settings_ext/accounts/AccountSyncSettings$1$1;->this$1:Lcom/android/settings_ext/accounts/AccountSyncSettings$1;
 
-    iget-object v1, v1, Lcom/android/settings/accounts/AccountSyncSettings$1;->this$0:Lcom/android/settings/accounts/AccountSyncSettings;
+    iget-object v1, v1, Lcom/android/settings_ext/accounts/AccountSyncSettings$1;->this$0:Lcom/android/settings_ext/accounts/AccountSyncSettings;
 
     const/16 v2, 0x65
 
-    # invokes: Lcom/android/settings/accounts/AccountSyncSettings;->showDialog(I)V
-    invoke-static {v1, v2}, Lcom/android/settings/accounts/AccountSyncSettings;->access$100(Lcom/android/settings/accounts/AccountSyncSettings;I)V
+    # invokes: Lcom/android/settings_ext/accounts/AccountSyncSettings;->showDialog(I)V
+    invoke-static {v1, v2}, Lcom/android/settings_ext/accounts/AccountSyncSettings;->access$100(Lcom/android/settings_ext/accounts/AccountSyncSettings;I)V
 
     goto :goto_0
 
     .line 121
     :cond_2
-    iget-object v1, p0, Lcom/android/settings/accounts/AccountSyncSettings$1$1;->this$1:Lcom/android/settings/accounts/AccountSyncSettings$1;
+    iget-object v1, p0, Lcom/android/settings_ext/accounts/AccountSyncSettings$1$1;->this$1:Lcom/android/settings_ext/accounts/AccountSyncSettings$1;
 
-    iget-object v1, v1, Lcom/android/settings/accounts/AccountSyncSettings$1;->this$0:Lcom/android/settings/accounts/AccountSyncSettings;
+    iget-object v1, v1, Lcom/android/settings_ext/accounts/AccountSyncSettings$1;->this$0:Lcom/android/settings_ext/accounts/AccountSyncSettings;
 
-    invoke-virtual {v1}, Lcom/android/settings/accounts/AccountSyncSettings;->finish()V
+    invoke-virtual {v1}, Lcom/android/settings_ext/accounts/AccountSyncSettings;->finish()V
 
     goto :goto_0
 

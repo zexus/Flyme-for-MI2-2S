@@ -1,4 +1,4 @@
-.class public Lcom/android/settings/accessibility/LocalePreference;
+.class public Lcom/android/settings_ext/accessibility/LocalePreference;
 .super Landroid/preference/ListPreference;
 .source "LocalePreference.java"
 
@@ -13,7 +13,7 @@
     invoke-direct {p0, p1}, Landroid/preference/ListPreference;-><init>(Landroid/content/Context;)V
 
     .line 44
-    invoke-virtual {p0, p1}, Lcom/android/settings/accessibility/LocalePreference;->init(Landroid/content/Context;)V
+    invoke-virtual {p0, p1}, Lcom/android/settings_ext/accessibility/LocalePreference;->init(Landroid/content/Context;)V
 
     .line 45
     return-void
@@ -29,7 +29,7 @@
     invoke-direct {p0, p1, p2}, Landroid/preference/ListPreference;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
     .line 39
-    invoke-virtual {p0, p1}, Lcom/android/settings/accessibility/LocalePreference;->init(Landroid/content/Context;)V
+    invoke-virtual {p0, p1}, Lcom/android/settings_ext/accessibility/LocalePreference;->init(Landroid/content/Context;)V
 
     .line 40
     return-void
@@ -131,10 +131,10 @@
     .line 63
     .end local v4    # "info":Lcom/android/internal/app/LocalePicker$LocaleInfo;
     :cond_0
-    invoke-virtual {p0, v0}, Lcom/android/settings/accessibility/LocalePreference;->setEntries([Ljava/lang/CharSequence;)V
+    invoke-virtual {p0, v0}, Lcom/android/settings_ext/accessibility/LocalePreference;->setEntries([Ljava/lang/CharSequence;)V
 
     .line 64
-    invoke-virtual {p0, v1}, Lcom/android/settings/accessibility/LocalePreference;->setEntryValues([Ljava/lang/CharSequence;)V
+    invoke-virtual {p0, v1}, Lcom/android/settings_ext/accessibility/LocalePreference;->setEntryValues([Ljava/lang/CharSequence;)V
 
     .line 65
     return-void

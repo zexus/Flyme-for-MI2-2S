@@ -1,4 +1,4 @@
-.class final Lcom/android/settings/applications/ProcStatsEntry$Service$1;
+.class final Lcom/android/settings_ext/applications/ProcStatsEntry$Service$1;
 .super Ljava/lang/Object;
 .source "ProcStatsEntry.java"
 
@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/android/settings/applications/ProcStatsEntry$Service;
+    value = Lcom/android/settings_ext/applications/ProcStatsEntry$Service;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -21,7 +21,7 @@
         "Ljava/lang/Object;",
         "Landroid/os/Parcelable$Creator",
         "<",
-        "Lcom/android/settings/applications/ProcStatsEntry$Service;",
+        "Lcom/android/settings_ext/applications/ProcStatsEntry$Service;",
         ">;"
     }
 .end annotation
@@ -40,15 +40,15 @@
 
 
 # virtual methods
-.method public createFromParcel(Landroid/os/Parcel;)Lcom/android/settings/applications/ProcStatsEntry$Service;
+.method public createFromParcel(Landroid/os/Parcel;)Lcom/android/settings_ext/applications/ProcStatsEntry$Service;
     .locals 1
     .param p1, "in"    # Landroid/os/Parcel;
 
     .prologue
     .line 350
-    new-instance v0, Lcom/android/settings/applications/ProcStatsEntry$Service;
+    new-instance v0, Lcom/android/settings_ext/applications/ProcStatsEntry$Service;
 
-    invoke-direct {v0, p1}, Lcom/android/settings/applications/ProcStatsEntry$Service;-><init>(Landroid/os/Parcel;)V
+    invoke-direct {v0, p1}, Lcom/android/settings_ext/applications/ProcStatsEntry$Service;-><init>(Landroid/os/Parcel;)V
 
     return-object v0
 .end method
@@ -59,20 +59,20 @@
 
     .prologue
     .line 348
-    invoke-virtual {p0, p1}, Lcom/android/settings/applications/ProcStatsEntry$Service$1;->createFromParcel(Landroid/os/Parcel;)Lcom/android/settings/applications/ProcStatsEntry$Service;
+    invoke-virtual {p0, p1}, Lcom/android/settings_ext/applications/ProcStatsEntry$Service$1;->createFromParcel(Landroid/os/Parcel;)Lcom/android/settings_ext/applications/ProcStatsEntry$Service;
 
     move-result-object v0
 
     return-object v0
 .end method
 
-.method public newArray(I)[Lcom/android/settings/applications/ProcStatsEntry$Service;
+.method public newArray(I)[Lcom/android/settings_ext/applications/ProcStatsEntry$Service;
     .locals 1
     .param p1, "size"    # I
 
     .prologue
     .line 354
-    new-array v0, p1, [Lcom/android/settings/applications/ProcStatsEntry$Service;
+    new-array v0, p1, [Lcom/android/settings_ext/applications/ProcStatsEntry$Service;
 
     return-object v0
 .end method
@@ -83,7 +83,7 @@
 
     .prologue
     .line 348
-    invoke-virtual {p0, p1}, Lcom/android/settings/applications/ProcStatsEntry$Service$1;->newArray(I)[Lcom/android/settings/applications/ProcStatsEntry$Service;
+    invoke-virtual {p0, p1}, Lcom/android/settings_ext/applications/ProcStatsEntry$Service$1;->newArray(I)[Lcom/android/settings_ext/applications/ProcStatsEntry$Service;
 
     move-result-object v0
 

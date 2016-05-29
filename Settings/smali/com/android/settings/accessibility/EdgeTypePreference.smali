@@ -1,5 +1,5 @@
-.class public Lcom/android/settings/accessibility/EdgeTypePreference;
-.super Lcom/android/settings/accessibility/ListDialogPreference;
+.class public Lcom/android/settings_ext/accessibility/EdgeTypePreference;
+.super Lcom/android/settings_ext/accessibility/ListDialogPreference;
 .source "EdgeTypePreference.java"
 
 
@@ -11,7 +11,7 @@
 
     .prologue
     .line 40
-    invoke-direct {p0, p1, p2}, Lcom/android/settings/accessibility/ListDialogPreference;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
+    invoke-direct {p0, p1, p2}, Lcom/android/settings_ext/accessibility/ListDialogPreference;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
     .line 42
     invoke-virtual {p1}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
@@ -26,7 +26,7 @@
 
     move-result-object v1
 
-    invoke-virtual {p0, v1}, Lcom/android/settings/accessibility/EdgeTypePreference;->setValues([I)V
+    invoke-virtual {p0, v1}, Lcom/android/settings_ext/accessibility/EdgeTypePreference;->setValues([I)V
 
     .line 44
     const v1, 0x7f0b0039
@@ -35,17 +35,17 @@
 
     move-result-object v1
 
-    invoke-virtual {p0, v1}, Lcom/android/settings/accessibility/EdgeTypePreference;->setTitles([Ljava/lang/CharSequence;)V
+    invoke-virtual {p0, v1}, Lcom/android/settings_ext/accessibility/EdgeTypePreference;->setTitles([Ljava/lang/CharSequence;)V
 
     .line 45
     const v1, 0x7f04004e
 
-    invoke-virtual {p0, v1}, Lcom/android/settings/accessibility/EdgeTypePreference;->setDialogLayoutResource(I)V
+    invoke-virtual {p0, v1}, Lcom/android/settings_ext/accessibility/EdgeTypePreference;->setDialogLayoutResource(I)V
 
     .line 46
     const v1, 0x7f040092
 
-    invoke-virtual {p0, v1}, Lcom/android/settings/accessibility/EdgeTypePreference;->setListItemLayoutResource(I)V
+    invoke-virtual {p0, v1}, Lcom/android/settings_ext/accessibility/EdgeTypePreference;->setListItemLayoutResource(I)V
 
     .line 47
     return-void
@@ -80,7 +80,7 @@
     invoke-virtual {v1, v5}, Lcom/android/internal/widget/SubtitleView;->setBackgroundColor(I)V
 
     .line 61
-    invoke-virtual {p0}, Lcom/android/settings/accessibility/EdgeTypePreference;->getContext()Landroid/content/Context;
+    invoke-virtual {p0}, Lcom/android/settings_ext/accessibility/EdgeTypePreference;->getContext()Landroid/content/Context;
 
     move-result-object v5
 
@@ -103,7 +103,7 @@
     invoke-virtual {v1, v5}, Lcom/android/internal/widget/SubtitleView;->setTextSize(F)V
 
     .line 64
-    invoke-virtual {p0, p2}, Lcom/android/settings/accessibility/EdgeTypePreference;->getValueAt(I)I
+    invoke-virtual {p0, p2}, Lcom/android/settings_ext/accessibility/EdgeTypePreference;->getValueAt(I)I
 
     move-result v4
 
@@ -117,7 +117,7 @@
     invoke-virtual {v1, v5}, Lcom/android/internal/widget/SubtitleView;->setEdgeColor(I)V
 
     .line 68
-    invoke-virtual {p0, p2}, Lcom/android/settings/accessibility/EdgeTypePreference;->getTitleAt(I)Ljava/lang/CharSequence;
+    invoke-virtual {p0, p2}, Lcom/android/settings_ext/accessibility/EdgeTypePreference;->getTitleAt(I)Ljava/lang/CharSequence;
 
     move-result-object v3
 
@@ -149,13 +149,13 @@
 
     .prologue
     .line 51
-    invoke-virtual {p0}, Lcom/android/settings/accessibility/EdgeTypePreference;->getValue()I
+    invoke-virtual {p0}, Lcom/android/settings_ext/accessibility/EdgeTypePreference;->getValue()I
 
     move-result v0
 
     if-eqz v0, :cond_0
 
-    invoke-super {p0}, Lcom/android/settings/accessibility/ListDialogPreference;->shouldDisableDependents()Z
+    invoke-super {p0}, Lcom/android/settings_ext/accessibility/ListDialogPreference;->shouldDisableDependents()Z
 
     move-result v0
 

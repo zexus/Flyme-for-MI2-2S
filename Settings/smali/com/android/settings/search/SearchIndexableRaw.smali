@@ -1,4 +1,4 @@
-.class public Lcom/android/settings/search/SearchIndexableRaw;
+.class public Lcom/android/settings_ext/search/SearchIndexableRaw;
 .super Landroid/provider/SearchIndexableData;
 .source "SearchIndexableRaw.java"
 

@@ -1,4 +1,4 @@
-.class Lcom/android/settings/ProxySelector$3;
+.class Lcom/android/settings_ext/ProxySelector$3;
 .super Ljava/lang/Object;
 .source "ProxySelector.java"
 
@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/android/settings/ProxySelector;
+    value = Lcom/android/settings_ext/ProxySelector;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -18,16 +18,16 @@
 
 
 # instance fields
-.field final synthetic this$0:Lcom/android/settings/ProxySelector;
+.field final synthetic this$0:Lcom/android/settings_ext/ProxySelector;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/ProxySelector;)V
+.method constructor <init>(Lcom/android/settings_ext/ProxySelector;)V
     .locals 0
 
     .prologue
     .line 262
-    iput-object p1, p0, Lcom/android/settings/ProxySelector$3;->this$0:Lcom/android/settings/ProxySelector;
+    iput-object p1, p0, Lcom/android/settings_ext/ProxySelector$3;->this$0:Lcom/android/settings_ext/ProxySelector;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -42,9 +42,9 @@
 
     .prologue
     .line 265
-    iget-object v0, p0, Lcom/android/settings/ProxySelector$3;->this$0:Lcom/android/settings/ProxySelector;
+    iget-object v0, p0, Lcom/android/settings_ext/ProxySelector$3;->this$0:Lcom/android/settings_ext/ProxySelector;
 
-    invoke-virtual {v0}, Lcom/android/settings/ProxySelector;->populateFields()V
+    invoke-virtual {v0}, Lcom/android/settings_ext/ProxySelector;->populateFields()V
 
     .line 266
     return-void

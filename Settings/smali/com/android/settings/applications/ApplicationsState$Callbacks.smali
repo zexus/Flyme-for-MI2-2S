@@ -1,11 +1,11 @@
-.class public interface abstract Lcom/android/settings/applications/ApplicationsState$Callbacks;
+.class public interface abstract Lcom/android/settings_ext/applications/ApplicationsState$Callbacks;
 .super Ljava/lang/Object;
 .source "ApplicationsState.java"
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/android/settings/applications/ApplicationsState;
+    value = Lcom/android/settings_ext/applications/ApplicationsState;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -33,7 +33,7 @@
             "(",
             "Ljava/util/ArrayList",
             "<",
-            "Lcom/android/settings/applications/ApplicationsState$AppEntry;",
+            "Lcom/android/settings_ext/applications/ApplicationsState$AppEntry;",
             ">;)V"
         }
     .end annotation

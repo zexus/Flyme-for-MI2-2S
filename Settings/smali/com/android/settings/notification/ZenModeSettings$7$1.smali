@@ -1,4 +1,4 @@
-.class Lcom/android/settings/notification/ZenModeSettings$7$1;
+.class Lcom/android/settings_ext/notification/ZenModeSettings$7$1;
 .super Ljava/lang/Object;
 .source "ZenModeSettings.java"
 
@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/android/settings/notification/ZenModeSettings$7;->onPreferenceClick(Landroid/preference/Preference;)Z
+    value = Lcom/android/settings_ext/notification/ZenModeSettings$7;->onPreferenceClick(Landroid/preference/Preference;)Z
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -18,16 +18,16 @@
 
 
 # instance fields
-.field final synthetic this$1:Lcom/android/settings/notification/ZenModeSettings$7;
+.field final synthetic this$1:Lcom/android/settings_ext/notification/ZenModeSettings$7;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/notification/ZenModeSettings$7;)V
+.method constructor <init>(Lcom/android/settings_ext/notification/ZenModeSettings$7;)V
     .locals 0
 
     .prologue
     .line 253
-    iput-object p1, p0, Lcom/android/settings/notification/ZenModeSettings$7$1;->this$1:Lcom/android/settings/notification/ZenModeSettings$7;
+    iput-object p1, p0, Lcom/android/settings_ext/notification/ZenModeSettings$7$1;->this$1:Lcom/android/settings_ext/notification/ZenModeSettings$7;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -42,12 +42,12 @@
 
     .prologue
     .line 256
-    iget-object v0, p0, Lcom/android/settings/notification/ZenModeSettings$7$1;->this$1:Lcom/android/settings/notification/ZenModeSettings$7;
+    iget-object v0, p0, Lcom/android/settings_ext/notification/ZenModeSettings$7$1;->this$1:Lcom/android/settings_ext/notification/ZenModeSettings$7;
 
-    iget-object v0, v0, Lcom/android/settings/notification/ZenModeSettings$7;->this$0:Lcom/android/settings/notification/ZenModeSettings;
+    iget-object v0, v0, Lcom/android/settings_ext/notification/ZenModeSettings$7;->this$0:Lcom/android/settings_ext/notification/ZenModeSettings;
 
-    # invokes: Lcom/android/settings/notification/ZenModeSettings;->updateDays()V
-    invoke-static {v0}, Lcom/android/settings/notification/ZenModeSettings;->access$400(Lcom/android/settings/notification/ZenModeSettings;)V
+    # invokes: Lcom/android/settings_ext/notification/ZenModeSettings;->updateDays()V
+    invoke-static {v0}, Lcom/android/settings_ext/notification/ZenModeSettings;->access$400(Lcom/android/settings_ext/notification/ZenModeSettings;)V
 
     .line 257
     return-void

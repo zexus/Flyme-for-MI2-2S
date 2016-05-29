@@ -1,11 +1,11 @@
-.class public Lcom/android/settings/AppListPreference$AppArrayAdapter;
+.class public Lcom/android/settings_ext/AppListPreference$AppArrayAdapter;
 .super Landroid/widget/ArrayAdapter;
 .source "AppListPreference.java"
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/android/settings/AppListPreference;
+    value = Lcom/android/settings_ext/AppListPreference;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -28,11 +28,11 @@
 
 .field private mSelectedIndex:I
 
-.field final synthetic this$0:Lcom/android/settings/AppListPreference;
+.field final synthetic this$0:Lcom/android/settings_ext/AppListPreference;
 
 
 # direct methods
-.method public constructor <init>(Lcom/android/settings/AppListPreference;Landroid/content/Context;I[Ljava/lang/CharSequence;[Landroid/graphics/drawable/Drawable;I)V
+.method public constructor <init>(Lcom/android/settings_ext/AppListPreference;Landroid/content/Context;I[Ljava/lang/CharSequence;[Landroid/graphics/drawable/Drawable;I)V
     .locals 1
     .param p2, "context"    # Landroid/content/Context;
     .param p3, "textViewResourceId"    # I
@@ -42,7 +42,7 @@
 
     .prologue
     .line 49
-    iput-object p1, p0, Lcom/android/settings/AppListPreference$AppArrayAdapter;->this$0:Lcom/android/settings/AppListPreference;
+    iput-object p1, p0, Lcom/android/settings_ext/AppListPreference$AppArrayAdapter;->this$0:Lcom/android/settings_ext/AppListPreference;
 
     .line 50
     invoke-direct {p0, p2, p3, p4}, Landroid/widget/ArrayAdapter;-><init>(Landroid/content/Context;I[Ljava/lang/Object;)V
@@ -50,18 +50,18 @@
     .line 45
     const/4 v0, 0x0
 
-    iput-object v0, p0, Lcom/android/settings/AppListPreference$AppArrayAdapter;->mImageDrawables:[Landroid/graphics/drawable/Drawable;
+    iput-object v0, p0, Lcom/android/settings_ext/AppListPreference$AppArrayAdapter;->mImageDrawables:[Landroid/graphics/drawable/Drawable;
 
     .line 46
     const/4 v0, 0x0
 
-    iput v0, p0, Lcom/android/settings/AppListPreference$AppArrayAdapter;->mSelectedIndex:I
+    iput v0, p0, Lcom/android/settings_ext/AppListPreference$AppArrayAdapter;->mSelectedIndex:I
 
     .line 51
-    iput p6, p0, Lcom/android/settings/AppListPreference$AppArrayAdapter;->mSelectedIndex:I
+    iput p6, p0, Lcom/android/settings_ext/AppListPreference$AppArrayAdapter;->mSelectedIndex:I
 
     .line 52
-    iput-object p5, p0, Lcom/android/settings/AppListPreference$AppArrayAdapter;->mImageDrawables:[Landroid/graphics/drawable/Drawable;
+    iput-object p5, p0, Lcom/android/settings_ext/AppListPreference$AppArrayAdapter;->mImageDrawables:[Landroid/graphics/drawable/Drawable;
 
     .line 53
     return-void
@@ -77,7 +77,7 @@
 
     .prologue
     .line 57
-    invoke-virtual {p0}, Lcom/android/settings/AppListPreference$AppArrayAdapter;->getContext()Landroid/content/Context;
+    invoke-virtual {p0}, Lcom/android/settings_ext/AppListPreference$AppArrayAdapter;->getContext()Landroid/content/Context;
 
     move-result-object v4
 
@@ -109,7 +109,7 @@
 
     .line 60
     .local v0, "checkedTextView":Landroid/widget/CheckedTextView;
-    invoke-virtual {p0, p1}, Lcom/android/settings/AppListPreference$AppArrayAdapter;->getItem(I)Ljava/lang/Object;
+    invoke-virtual {p0, p1}, Lcom/android/settings_ext/AppListPreference$AppArrayAdapter;->getItem(I)Ljava/lang/Object;
 
     move-result-object v4
 
@@ -118,7 +118,7 @@
     invoke-virtual {v0, v4}, Landroid/widget/CheckedTextView;->setText(Ljava/lang/CharSequence;)V
 
     .line 61
-    iget v4, p0, Lcom/android/settings/AppListPreference$AppArrayAdapter;->mSelectedIndex:I
+    iget v4, p0, Lcom/android/settings_ext/AppListPreference$AppArrayAdapter;->mSelectedIndex:I
 
     if-ne p1, v4, :cond_0
 
@@ -139,7 +139,7 @@
 
     .line 65
     .local v1, "imageView":Landroid/widget/ImageView;
-    iget-object v4, p0, Lcom/android/settings/AppListPreference$AppArrayAdapter;->mImageDrawables:[Landroid/graphics/drawable/Drawable;
+    iget-object v4, p0, Lcom/android/settings_ext/AppListPreference$AppArrayAdapter;->mImageDrawables:[Landroid/graphics/drawable/Drawable;
 
     aget-object v4, v4, p1
 

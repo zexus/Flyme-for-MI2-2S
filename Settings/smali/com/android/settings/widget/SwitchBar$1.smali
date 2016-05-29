@@ -1,14 +1,14 @@
-.class Lcom/android/settings/widget/SwitchBar$1;
+.class Lcom/android/settings_ext/widget/SwitchBar$1;
 .super Ljava/lang/Object;
 .source "SwitchBar.java"
 
 # interfaces
-.implements Lcom/android/settings/widget/SwitchBar$OnSwitchChangeListener;
+.implements Lcom/android/settings_ext/widget/SwitchBar$OnSwitchChangeListener;
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/android/settings/widget/SwitchBar;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;II)V
+    value = Lcom/android/settings_ext/widget/SwitchBar;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;II)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -18,16 +18,16 @@
 
 
 # instance fields
-.field final synthetic this$0:Lcom/android/settings/widget/SwitchBar;
+.field final synthetic this$0:Lcom/android/settings_ext/widget/SwitchBar;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/widget/SwitchBar;)V
+.method constructor <init>(Lcom/android/settings_ext/widget/SwitchBar;)V
     .locals 0
 
     .prologue
     .line 93
-    iput-object p1, p0, Lcom/android/settings/widget/SwitchBar$1;->this$0:Lcom/android/settings/widget/SwitchBar;
+    iput-object p1, p0, Lcom/android/settings_ext/widget/SwitchBar$1;->this$0:Lcom/android/settings_ext/widget/SwitchBar;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -43,9 +43,9 @@
 
     .prologue
     .line 96
-    iget-object v0, p0, Lcom/android/settings/widget/SwitchBar$1;->this$0:Lcom/android/settings/widget/SwitchBar;
+    iget-object v0, p0, Lcom/android/settings_ext/widget/SwitchBar$1;->this$0:Lcom/android/settings_ext/widget/SwitchBar;
 
-    invoke-virtual {v0, p2}, Lcom/android/settings/widget/SwitchBar;->setTextViewLabel(Z)V
+    invoke-virtual {v0, p2}, Lcom/android/settings_ext/widget/SwitchBar;->setTextViewLabel(Z)V
 
     .line 97
     return-void

@@ -1,4 +1,4 @@
-.class public Lcom/android/settings/AccountPreference;
+.class public Lcom/android/settings_ext/AccountPreference;
 .super Landroid/preference/Preference;
 .source "AccountPreference.java"
 
@@ -54,49 +54,49 @@
     invoke-direct {p0, p1}, Landroid/preference/Preference;-><init>(Landroid/content/Context;)V
 
     .line 48
-    iput-object p2, p0, Lcom/android/settings/AccountPreference;->mAccount:Landroid/accounts/Account;
+    iput-object p2, p0, Lcom/android/settings_ext/AccountPreference;->mAccount:Landroid/accounts/Account;
 
     .line 49
-    iput-object p4, p0, Lcom/android/settings/AccountPreference;->mAuthorities:Ljava/util/ArrayList;
+    iput-object p4, p0, Lcom/android/settings_ext/AccountPreference;->mAuthorities:Ljava/util/ArrayList;
 
     .line 50
-    iput-boolean p5, p0, Lcom/android/settings/AccountPreference;->mShowTypeIcon:Z
+    iput-boolean p5, p0, Lcom/android/settings_ext/AccountPreference;->mShowTypeIcon:Z
 
     .line 51
     if-eqz p5, :cond_0
 
     .line 52
-    invoke-virtual {p0, p3}, Lcom/android/settings/AccountPreference;->setIcon(Landroid/graphics/drawable/Drawable;)V
+    invoke-virtual {p0, p3}, Lcom/android/settings_ext/AccountPreference;->setIcon(Landroid/graphics/drawable/Drawable;)V
 
     .line 56
     :goto_0
-    iget-object v0, p0, Lcom/android/settings/AccountPreference;->mAccount:Landroid/accounts/Account;
+    iget-object v0, p0, Lcom/android/settings_ext/AccountPreference;->mAccount:Landroid/accounts/Account;
 
     iget-object v0, v0, Landroid/accounts/Account;->name:Ljava/lang/String;
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/AccountPreference;->setTitle(Ljava/lang/CharSequence;)V
+    invoke-virtual {p0, v0}, Lcom/android/settings_ext/AccountPreference;->setTitle(Ljava/lang/CharSequence;)V
 
     .line 57
     const-string v0, ""
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/AccountPreference;->setSummary(Ljava/lang/CharSequence;)V
+    invoke-virtual {p0, v0}, Lcom/android/settings_ext/AccountPreference;->setSummary(Ljava/lang/CharSequence;)V
 
     .line 58
-    invoke-virtual {p0, v1}, Lcom/android/settings/AccountPreference;->setPersistent(Z)V
+    invoke-virtual {p0, v1}, Lcom/android/settings_ext/AccountPreference;->setPersistent(Z)V
 
     .line 59
-    invoke-virtual {p0, v2, v1}, Lcom/android/settings/AccountPreference;->setSyncStatus(IZ)V
+    invoke-virtual {p0, v2, v1}, Lcom/android/settings_ext/AccountPreference;->setSyncStatus(IZ)V
 
     .line 60
     return-void
 
     .line 54
     :cond_0
-    invoke-direct {p0, v2}, Lcom/android/settings/AccountPreference;->getSyncStatusIcon(I)I
+    invoke-direct {p0, v2}, Lcom/android/settings_ext/AccountPreference;->getSyncStatusIcon(I)I
 
     move-result v0
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/AccountPreference;->setIcon(I)V
+    invoke-virtual {p0, v0}, Lcom/android/settings_ext/AccountPreference;->setIcon(I)V
 
     goto :goto_0
 .end method
@@ -135,7 +135,7 @@
     invoke-static {v0, v1}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
 
     .line 147
-    invoke-virtual {p0}, Lcom/android/settings/AccountPreference;->getContext()Landroid/content/Context;
+    invoke-virtual {p0}, Lcom/android/settings_ext/AccountPreference;->getContext()Landroid/content/Context;
 
     move-result-object v0
 
@@ -148,7 +148,7 @@
 
     .line 138
     :pswitch_0
-    invoke-virtual {p0}, Lcom/android/settings/AccountPreference;->getContext()Landroid/content/Context;
+    invoke-virtual {p0}, Lcom/android/settings_ext/AccountPreference;->getContext()Landroid/content/Context;
 
     move-result-object v0
 
@@ -162,7 +162,7 @@
 
     .line 140
     :pswitch_1
-    invoke-virtual {p0}, Lcom/android/settings/AccountPreference;->getContext()Landroid/content/Context;
+    invoke-virtual {p0}, Lcom/android/settings_ext/AccountPreference;->getContext()Landroid/content/Context;
 
     move-result-object v0
 
@@ -176,7 +176,7 @@
 
     .line 142
     :pswitch_2
-    invoke-virtual {p0}, Lcom/android/settings/AccountPreference;->getContext()Landroid/content/Context;
+    invoke-virtual {p0}, Lcom/android/settings_ext/AccountPreference;->getContext()Landroid/content/Context;
 
     move-result-object v0
 
@@ -188,7 +188,7 @@
 
     .line 144
     :pswitch_3
-    invoke-virtual {p0}, Lcom/android/settings/AccountPreference;->getContext()Landroid/content/Context;
+    invoke-virtual {p0}, Lcom/android/settings_ext/AccountPreference;->getContext()Landroid/content/Context;
 
     move-result-object v0
 
@@ -391,7 +391,7 @@
 
     .prologue
     .line 63
-    iget-object v0, p0, Lcom/android/settings/AccountPreference;->mAccount:Landroid/accounts/Account;
+    iget-object v0, p0, Lcom/android/settings_ext/AccountPreference;->mAccount:Landroid/accounts/Account;
 
     return-object v0
 .end method
@@ -410,7 +410,7 @@
 
     .prologue
     .line 67
-    iget-object v0, p0, Lcom/android/settings/AccountPreference;->mAuthorities:Ljava/util/ArrayList;
+    iget-object v0, p0, Lcom/android/settings_ext/AccountPreference;->mAuthorities:Ljava/util/ArrayList;
 
     return-object v0
 .end method
@@ -424,7 +424,7 @@
     invoke-super {p0, p1}, Landroid/preference/Preference;->onBindView(Landroid/view/View;)V
 
     .line 73
-    iget-boolean v0, p0, Lcom/android/settings/AccountPreference;->mShowTypeIcon:Z
+    iget-boolean v0, p0, Lcom/android/settings_ext/AccountPreference;->mShowTypeIcon:Z
 
     if-nez v0, :cond_0
 
@@ -437,25 +437,25 @@
 
     check-cast v0, Landroid/widget/ImageView;
 
-    iput-object v0, p0, Lcom/android/settings/AccountPreference;->mSyncStatusIcon:Landroid/widget/ImageView;
+    iput-object v0, p0, Lcom/android/settings_ext/AccountPreference;->mSyncStatusIcon:Landroid/widget/ImageView;
 
     .line 75
-    iget-object v0, p0, Lcom/android/settings/AccountPreference;->mSyncStatusIcon:Landroid/widget/ImageView;
+    iget-object v0, p0, Lcom/android/settings_ext/AccountPreference;->mSyncStatusIcon:Landroid/widget/ImageView;
 
-    iget v1, p0, Lcom/android/settings/AccountPreference;->mStatus:I
+    iget v1, p0, Lcom/android/settings_ext/AccountPreference;->mStatus:I
 
-    invoke-direct {p0, v1}, Lcom/android/settings/AccountPreference;->getSyncStatusIcon(I)I
+    invoke-direct {p0, v1}, Lcom/android/settings_ext/AccountPreference;->getSyncStatusIcon(I)I
 
     move-result v1
 
     invoke-virtual {v0, v1}, Landroid/widget/ImageView;->setImageResource(I)V
 
     .line 76
-    iget-object v0, p0, Lcom/android/settings/AccountPreference;->mSyncStatusIcon:Landroid/widget/ImageView;
+    iget-object v0, p0, Lcom/android/settings_ext/AccountPreference;->mSyncStatusIcon:Landroid/widget/ImageView;
 
-    iget v1, p0, Lcom/android/settings/AccountPreference;->mStatus:I
+    iget v1, p0, Lcom/android/settings_ext/AccountPreference;->mStatus:I
 
-    invoke-direct {p0, v1}, Lcom/android/settings/AccountPreference;->getSyncContentDescription(I)Ljava/lang/String;
+    invoke-direct {p0, v1}, Lcom/android/settings_ext/AccountPreference;->getSyncContentDescription(I)Ljava/lang/String;
 
     move-result-object v1
 
@@ -473,32 +473,32 @@
 
     .prologue
     .line 81
-    iput p1, p0, Lcom/android/settings/AccountPreference;->mStatus:I
+    iput p1, p0, Lcom/android/settings_ext/AccountPreference;->mStatus:I
 
     .line 82
-    iget-boolean v0, p0, Lcom/android/settings/AccountPreference;->mShowTypeIcon:Z
+    iget-boolean v0, p0, Lcom/android/settings_ext/AccountPreference;->mShowTypeIcon:Z
 
     if-nez v0, :cond_0
 
-    iget-object v0, p0, Lcom/android/settings/AccountPreference;->mSyncStatusIcon:Landroid/widget/ImageView;
+    iget-object v0, p0, Lcom/android/settings_ext/AccountPreference;->mSyncStatusIcon:Landroid/widget/ImageView;
 
     if-eqz v0, :cond_0
 
     .line 83
-    iget-object v0, p0, Lcom/android/settings/AccountPreference;->mSyncStatusIcon:Landroid/widget/ImageView;
+    iget-object v0, p0, Lcom/android/settings_ext/AccountPreference;->mSyncStatusIcon:Landroid/widget/ImageView;
 
-    invoke-direct {p0, p1}, Lcom/android/settings/AccountPreference;->getSyncStatusIcon(I)I
+    invoke-direct {p0, p1}, Lcom/android/settings_ext/AccountPreference;->getSyncStatusIcon(I)I
 
     move-result v1
 
     invoke-virtual {v0, v1}, Landroid/widget/ImageView;->setImageResource(I)V
 
     .line 84
-    iget-object v0, p0, Lcom/android/settings/AccountPreference;->mSyncStatusIcon:Landroid/widget/ImageView;
+    iget-object v0, p0, Lcom/android/settings_ext/AccountPreference;->mSyncStatusIcon:Landroid/widget/ImageView;
 
-    iget v1, p0, Lcom/android/settings/AccountPreference;->mStatus:I
+    iget v1, p0, Lcom/android/settings_ext/AccountPreference;->mStatus:I
 
-    invoke-direct {p0, v1}, Lcom/android/settings/AccountPreference;->getSyncContentDescription(I)Ljava/lang/String;
+    invoke-direct {p0, v1}, Lcom/android/settings_ext/AccountPreference;->getSyncContentDescription(I)Ljava/lang/String;
 
     move-result-object v1
 
@@ -509,11 +509,11 @@
     if-eqz p2, :cond_1
 
     .line 87
-    invoke-direct {p0, p1}, Lcom/android/settings/AccountPreference;->getSyncStatusMessage(I)I
+    invoke-direct {p0, p1}, Lcom/android/settings_ext/AccountPreference;->getSyncStatusMessage(I)I
 
     move-result v0
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/AccountPreference;->setSummary(I)V
+    invoke-virtual {p0, v0}, Lcom/android/settings_ext/AccountPreference;->setSummary(I)V
 
     .line 89
     :cond_1

@@ -1,14 +1,14 @@
-.class Lcom/android/settings/notification/SettingPref$2;
+.class Lcom/android/settings_ext/notification/SettingPref$2;
 .super Ljava/lang/Object;
 .source "SettingPref.java"
 
 # interfaces
-.implements Lcom/android/settings/notification/DropDownPreference$Callback;
+.implements Lcom/android/settings_ext/notification/DropDownPreference$Callback;
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/android/settings/notification/SettingPref;->init(Lcom/android/settings/SettingsPreferenceFragment;)Landroid/preference/Preference;
+    value = Lcom/android/settings_ext/notification/SettingPref;->init(Lcom/android/settings_ext/SettingsPreferenceFragment;)Landroid/preference/Preference;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -18,20 +18,20 @@
 
 
 # instance fields
-.field final synthetic this$0:Lcom/android/settings/notification/SettingPref;
+.field final synthetic this$0:Lcom/android/settings_ext/notification/SettingPref;
 
 .field final synthetic val$context:Landroid/content/Context;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/notification/SettingPref;Landroid/content/Context;)V
+.method constructor <init>(Lcom/android/settings_ext/notification/SettingPref;Landroid/content/Context;)V
     .locals 0
 
     .prologue
     .line 90
-    iput-object p1, p0, Lcom/android/settings/notification/SettingPref$2;->this$0:Lcom/android/settings/notification/SettingPref;
+    iput-object p1, p0, Lcom/android/settings_ext/notification/SettingPref$2;->this$0:Lcom/android/settings_ext/notification/SettingPref;
 
-    iput-object p2, p0, Lcom/android/settings/notification/SettingPref$2;->val$context:Landroid/content/Context;
+    iput-object p2, p0, Lcom/android/settings_ext/notification/SettingPref$2;->val$context:Landroid/content/Context;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -47,9 +47,9 @@
 
     .prologue
     .line 93
-    iget-object v0, p0, Lcom/android/settings/notification/SettingPref$2;->this$0:Lcom/android/settings/notification/SettingPref;
+    iget-object v0, p0, Lcom/android/settings_ext/notification/SettingPref$2;->this$0:Lcom/android/settings_ext/notification/SettingPref;
 
-    iget-object v1, p0, Lcom/android/settings/notification/SettingPref$2;->val$context:Landroid/content/Context;
+    iget-object v1, p0, Lcom/android/settings_ext/notification/SettingPref$2;->val$context:Landroid/content/Context;
 
     check-cast p2, Ljava/lang/Integer;
 
@@ -58,7 +58,7 @@
 
     move-result v2
 
-    invoke-virtual {v0, v1, v2}, Lcom/android/settings/notification/SettingPref;->setSetting(Landroid/content/Context;I)Z
+    invoke-virtual {v0, v1, v2}, Lcom/android/settings_ext/notification/SettingPref;->setSetting(Landroid/content/Context;I)Z
 
     move-result v0
 

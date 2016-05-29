@@ -1,11 +1,11 @@
-.class Lcom/android/settings/applications/ApplicationsState$PackageIntentReceiver;
+.class Lcom/android/settings_ext/applications/ApplicationsState$PackageIntentReceiver;
 .super Landroid/content/BroadcastReceiver;
 .source "ApplicationsState.java"
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/android/settings/applications/ApplicationsState;
+    value = Lcom/android/settings_ext/applications/ApplicationsState;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -15,30 +15,30 @@
 
 
 # instance fields
-.field final synthetic this$0:Lcom/android/settings/applications/ApplicationsState;
+.field final synthetic this$0:Lcom/android/settings_ext/applications/ApplicationsState;
 
 
 # direct methods
-.method private constructor <init>(Lcom/android/settings/applications/ApplicationsState;)V
+.method private constructor <init>(Lcom/android/settings_ext/applications/ApplicationsState;)V
     .locals 0
 
     .prologue
     .line 292
-    iput-object p1, p0, Lcom/android/settings/applications/ApplicationsState$PackageIntentReceiver;->this$0:Lcom/android/settings/applications/ApplicationsState;
+    iput-object p1, p0, Lcom/android/settings_ext/applications/ApplicationsState$PackageIntentReceiver;->this$0:Lcom/android/settings_ext/applications/ApplicationsState;
 
     invoke-direct {p0}, Landroid/content/BroadcastReceiver;-><init>()V
 
     return-void
 .end method
 
-.method synthetic constructor <init>(Lcom/android/settings/applications/ApplicationsState;Lcom/android/settings/applications/ApplicationsState$1;)V
+.method synthetic constructor <init>(Lcom/android/settings_ext/applications/ApplicationsState;Lcom/android/settings_ext/applications/ApplicationsState$1;)V
     .locals 0
-    .param p1, "x0"    # Lcom/android/settings/applications/ApplicationsState;
-    .param p2, "x1"    # Lcom/android/settings/applications/ApplicationsState$1;
+    .param p1, "x0"    # Lcom/android/settings_ext/applications/ApplicationsState;
+    .param p2, "x1"    # Lcom/android/settings_ext/applications/ApplicationsState$1;
 
     .prologue
     .line 292
-    invoke-direct {p0, p1}, Lcom/android/settings/applications/ApplicationsState$PackageIntentReceiver;-><init>(Lcom/android/settings/applications/ApplicationsState;)V
+    invoke-direct {p0, p1}, Lcom/android/settings_ext/applications/ApplicationsState$PackageIntentReceiver;-><init>(Lcom/android/settings_ext/applications/ApplicationsState;)V
 
     return-void
 .end method
@@ -79,9 +79,9 @@
 
     .line 314
     .local v7, "pkgName":Ljava/lang/String;
-    iget-object v8, p0, Lcom/android/settings/applications/ApplicationsState$PackageIntentReceiver;->this$0:Lcom/android/settings/applications/ApplicationsState;
+    iget-object v8, p0, Lcom/android/settings_ext/applications/ApplicationsState$PackageIntentReceiver;->this$0:Lcom/android/settings_ext/applications/ApplicationsState;
 
-    invoke-virtual {v8, v7}, Lcom/android/settings/applications/ApplicationsState;->addPackage(Ljava/lang/String;)V
+    invoke-virtual {v8, v7}, Lcom/android/settings_ext/applications/ApplicationsState;->addPackage(Ljava/lang/String;)V
 
     .line 343
     .end local v3    # "data":Landroid/net/Uri;
@@ -113,9 +113,9 @@
 
     .line 318
     .restart local v7    # "pkgName":Ljava/lang/String;
-    iget-object v8, p0, Lcom/android/settings/applications/ApplicationsState$PackageIntentReceiver;->this$0:Lcom/android/settings/applications/ApplicationsState;
+    iget-object v8, p0, Lcom/android/settings_ext/applications/ApplicationsState$PackageIntentReceiver;->this$0:Lcom/android/settings_ext/applications/ApplicationsState;
 
-    invoke-virtual {v8, v7}, Lcom/android/settings/applications/ApplicationsState;->removePackage(Ljava/lang/String;)V
+    invoke-virtual {v8, v7}, Lcom/android/settings_ext/applications/ApplicationsState;->removePackage(Ljava/lang/String;)V
 
     goto :goto_0
 
@@ -144,9 +144,9 @@
 
     .line 322
     .restart local v7    # "pkgName":Ljava/lang/String;
-    iget-object v8, p0, Lcom/android/settings/applications/ApplicationsState$PackageIntentReceiver;->this$0:Lcom/android/settings/applications/ApplicationsState;
+    iget-object v8, p0, Lcom/android/settings_ext/applications/ApplicationsState$PackageIntentReceiver;->this$0:Lcom/android/settings_ext/applications/ApplicationsState;
 
-    invoke-virtual {v8, v7}, Lcom/android/settings/applications/ApplicationsState;->invalidatePackage(Ljava/lang/String;)V
+    invoke-virtual {v8, v7}, Lcom/android/settings_ext/applications/ApplicationsState;->invalidatePackage(Ljava/lang/String;)V
 
     goto :goto_0
 
@@ -214,9 +214,9 @@
 
     .line 339
     .restart local v7    # "pkgName":Ljava/lang/String;
-    iget-object v8, p0, Lcom/android/settings/applications/ApplicationsState$PackageIntentReceiver;->this$0:Lcom/android/settings/applications/ApplicationsState;
+    iget-object v8, p0, Lcom/android/settings_ext/applications/ApplicationsState$PackageIntentReceiver;->this$0:Lcom/android/settings_ext/applications/ApplicationsState;
 
-    invoke-virtual {v8, v7}, Lcom/android/settings/applications/ApplicationsState;->invalidatePackage(Ljava/lang/String;)V
+    invoke-virtual {v8, v7}, Lcom/android/settings_ext/applications/ApplicationsState;->invalidatePackage(Ljava/lang/String;)V
 
     .line 338
     add-int/lit8 v4, v4, 0x1
@@ -252,9 +252,9 @@
     invoke-virtual {v0, v2}, Landroid/content/IntentFilter;->addDataScheme(Ljava/lang/String;)V
 
     .line 298
-    iget-object v2, p0, Lcom/android/settings/applications/ApplicationsState$PackageIntentReceiver;->this$0:Lcom/android/settings/applications/ApplicationsState;
+    iget-object v2, p0, Lcom/android/settings_ext/applications/ApplicationsState$PackageIntentReceiver;->this$0:Lcom/android/settings_ext/applications/ApplicationsState;
 
-    iget-object v2, v2, Lcom/android/settings/applications/ApplicationsState;->mContext:Landroid/content/Context;
+    iget-object v2, v2, Lcom/android/settings_ext/applications/ApplicationsState;->mContext:Landroid/content/Context;
 
     invoke-virtual {v2, p0, v0}, Landroid/content/Context;->registerReceiver(Landroid/content/BroadcastReceiver;Landroid/content/IntentFilter;)Landroid/content/Intent;
 
@@ -275,9 +275,9 @@
     invoke-virtual {v1, v2}, Landroid/content/IntentFilter;->addAction(Ljava/lang/String;)V
 
     .line 303
-    iget-object v2, p0, Lcom/android/settings/applications/ApplicationsState$PackageIntentReceiver;->this$0:Lcom/android/settings/applications/ApplicationsState;
+    iget-object v2, p0, Lcom/android/settings_ext/applications/ApplicationsState$PackageIntentReceiver;->this$0:Lcom/android/settings_ext/applications/ApplicationsState;
 
-    iget-object v2, v2, Lcom/android/settings/applications/ApplicationsState;->mContext:Landroid/content/Context;
+    iget-object v2, v2, Lcom/android/settings_ext/applications/ApplicationsState;->mContext:Landroid/content/Context;
 
     invoke-virtual {v2, p0, v1}, Landroid/content/Context;->registerReceiver(Landroid/content/BroadcastReceiver;Landroid/content/IntentFilter;)Landroid/content/Intent;
 
@@ -290,9 +290,9 @@
 
     .prologue
     .line 306
-    iget-object v0, p0, Lcom/android/settings/applications/ApplicationsState$PackageIntentReceiver;->this$0:Lcom/android/settings/applications/ApplicationsState;
+    iget-object v0, p0, Lcom/android/settings_ext/applications/ApplicationsState$PackageIntentReceiver;->this$0:Lcom/android/settings_ext/applications/ApplicationsState;
 
-    iget-object v0, v0, Lcom/android/settings/applications/ApplicationsState;->mContext:Landroid/content/Context;
+    iget-object v0, v0, Lcom/android/settings_ext/applications/ApplicationsState;->mContext:Landroid/content/Context;
 
     invoke-virtual {v0, p0}, Landroid/content/Context;->unregisterReceiver(Landroid/content/BroadcastReceiver;)V
 

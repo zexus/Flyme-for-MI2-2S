@@ -1,4 +1,4 @@
-.class Lcom/android/settings/notification/ManagedServiceSettings$ScaryWarningDialogFragment$1;
+.class Lcom/android/settings_ext/notification/ManagedServiceSettings$ScaryWarningDialogFragment$1;
 .super Ljava/lang/Object;
 .source "ManagedServiceSettings.java"
 
@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/android/settings/notification/ManagedServiceSettings$ScaryWarningDialogFragment;->onCreateDialog(Landroid/os/Bundle;)Landroid/app/Dialog;
+    value = Lcom/android/settings_ext/notification/ManagedServiceSettings$ScaryWarningDialogFragment;->onCreateDialog(Landroid/os/Bundle;)Landroid/app/Dialog;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -18,16 +18,16 @@
 
 
 # instance fields
-.field final synthetic this$1:Lcom/android/settings/notification/ManagedServiceSettings$ScaryWarningDialogFragment;
+.field final synthetic this$1:Lcom/android/settings_ext/notification/ManagedServiceSettings$ScaryWarningDialogFragment;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/notification/ManagedServiceSettings$ScaryWarningDialogFragment;)V
+.method constructor <init>(Lcom/android/settings_ext/notification/ManagedServiceSettings$ScaryWarningDialogFragment;)V
     .locals 0
 
     .prologue
     .line 118
-    iput-object p1, p0, Lcom/android/settings/notification/ManagedServiceSettings$ScaryWarningDialogFragment$1;->this$1:Lcom/android/settings/notification/ManagedServiceSettings$ScaryWarningDialogFragment;
+    iput-object p1, p0, Lcom/android/settings_ext/notification/ManagedServiceSettings$ScaryWarningDialogFragment$1;->this$1:Lcom/android/settings_ext/notification/ManagedServiceSettings$ScaryWarningDialogFragment;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 

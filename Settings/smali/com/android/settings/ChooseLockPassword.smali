@@ -1,12 +1,12 @@
-.class public Lcom/android/settings/ChooseLockPassword;
-.super Lcom/android/settings/SettingsActivity;
+.class public Lcom/android/settings_ext/ChooseLockPassword;
+.super Lcom/android/settings_ext/SettingsActivity;
 .source "ChooseLockPassword.java"
 
 
 # annotations
 .annotation system Ldalvik/annotation/MemberClasses;
     value = {
-        Lcom/android/settings/ChooseLockPassword$ChooseLockPasswordFragment;
+        Lcom/android/settings_ext/ChooseLockPassword$ChooseLockPasswordFragment;
     }
 .end annotation
 
@@ -17,7 +17,7 @@
 
     .prologue
     .line 49
-    invoke-direct {p0}, Lcom/android/settings/SettingsActivity;-><init>()V
+    invoke-direct {p0}, Lcom/android/settings_ext/SettingsActivity;-><init>()V
 
     .line 100
     return-void
@@ -39,7 +39,7 @@
 
     invoke-direct {v1}, Landroid/content/Intent;-><init>()V
 
-    const-class v2, Lcom/android/settings/ChooseLockPassword;
+    const-class v2, Lcom/android/settings_ext/ChooseLockPassword;
 
     invoke-virtual {v1, p0, v2}, Landroid/content/Intent;->setClass(Landroid/content/Context;Ljava/lang/Class;)Landroid/content/Intent;
 
@@ -96,7 +96,7 @@
 
     .prologue
     .line 86
-    const-class v0, Lcom/android/settings/ChooseLockPassword$ChooseLockPasswordFragment;
+    const-class v0, Lcom/android/settings_ext/ChooseLockPassword$ChooseLockPasswordFragment;
 
     return-object v0
 .end method
@@ -108,7 +108,7 @@
     .line 61
     new-instance v0, Landroid/content/Intent;
 
-    invoke-super {p0}, Lcom/android/settings/SettingsActivity;->getIntent()Landroid/content/Intent;
+    invoke-super {p0}, Lcom/android/settings_ext/SettingsActivity;->getIntent()Landroid/content/Intent;
 
     move-result-object v1
 
@@ -118,7 +118,7 @@
     .local v0, "modIntent":Landroid/content/Intent;
     const-string v1, ":settings:show_fragment"
 
-    invoke-virtual {p0}, Lcom/android/settings/ChooseLockPassword;->getFragmentClass()Ljava/lang/Class;
+    invoke-virtual {p0}, Lcom/android/settings_ext/ChooseLockPassword;->getFragmentClass()Ljava/lang/Class;
 
     move-result-object v2
 
@@ -138,7 +138,7 @@
 
     .prologue
     .line 81
-    const-class v0, Lcom/android/settings/ChooseLockPassword$ChooseLockPasswordFragment;
+    const-class v0, Lcom/android/settings_ext/ChooseLockPassword$ChooseLockPasswordFragment;
 
     invoke-virtual {v0}, Ljava/lang/Class;->getName()Ljava/lang/String;
 
@@ -168,18 +168,18 @@
 
     .prologue
     .line 95
-    invoke-super {p0, p1}, Lcom/android/settings/SettingsActivity;->onCreate(Landroid/os/Bundle;)V
+    invoke-super {p0, p1}, Lcom/android/settings_ext/SettingsActivity;->onCreate(Landroid/os/Bundle;)V
 
     .line 96
     const v1, 0x7f090479
 
-    invoke-virtual {p0, v1}, Lcom/android/settings/ChooseLockPassword;->getText(I)Ljava/lang/CharSequence;
+    invoke-virtual {p0, v1}, Lcom/android/settings_ext/ChooseLockPassword;->getText(I)Ljava/lang/CharSequence;
 
     move-result-object v0
 
     .line 97
     .local v0, "msg":Ljava/lang/CharSequence;
-    invoke-virtual {p0, v0}, Lcom/android/settings/ChooseLockPassword;->setTitle(Ljava/lang/CharSequence;)V
+    invoke-virtual {p0, v0}, Lcom/android/settings_ext/ChooseLockPassword;->setTitle(Ljava/lang/CharSequence;)V
 
     .line 98
     return-void

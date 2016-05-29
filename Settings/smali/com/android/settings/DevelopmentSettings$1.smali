@@ -1,4 +1,4 @@
-.class Lcom/android/settings/DevelopmentSettings$1;
+.class Lcom/android/settings_ext/DevelopmentSettings$1;
 .super Ljava/lang/Object;
 .source "DevelopmentSettings.java"
 
@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/android/settings/DevelopmentSettings;->confirmEnableOemUnlock()V
+    value = Lcom/android/settings_ext/DevelopmentSettings;->confirmEnableOemUnlock()V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -18,16 +18,16 @@
 
 
 # instance fields
-.field final synthetic this$0:Lcom/android/settings/DevelopmentSettings;
+.field final synthetic this$0:Lcom/android/settings_ext/DevelopmentSettings;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/DevelopmentSettings;)V
+.method constructor <init>(Lcom/android/settings_ext/DevelopmentSettings;)V
     .locals 0
 
     .prologue
     .line 1293
-    iput-object p1, p0, Lcom/android/settings/DevelopmentSettings$1;->this$0:Lcom/android/settings/DevelopmentSettings;
+    iput-object p1, p0, Lcom/android/settings_ext/DevelopmentSettings$1;->this$0:Lcom/android/settings_ext/DevelopmentSettings;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -43,21 +43,21 @@
 
     .prologue
     .line 1296
-    iget-object v0, p0, Lcom/android/settings/DevelopmentSettings$1;->this$0:Lcom/android/settings/DevelopmentSettings;
+    iget-object v0, p0, Lcom/android/settings_ext/DevelopmentSettings$1;->this$0:Lcom/android/settings_ext/DevelopmentSettings;
 
-    invoke-virtual {v0}, Lcom/android/settings/DevelopmentSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {v0}, Lcom/android/settings_ext/DevelopmentSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
     const/4 v1, 0x1
 
-    invoke-static {v0, v1}, Lcom/android/settings/Utils;->setOemUnlockEnabled(Landroid/content/Context;Z)V
+    invoke-static {v0, v1}, Lcom/android/settings_ext/Utils;->setOemUnlockEnabled(Landroid/content/Context;Z)V
 
     .line 1297
-    iget-object v0, p0, Lcom/android/settings/DevelopmentSettings$1;->this$0:Lcom/android/settings/DevelopmentSettings;
+    iget-object v0, p0, Lcom/android/settings_ext/DevelopmentSettings$1;->this$0:Lcom/android/settings_ext/DevelopmentSettings;
 
-    # invokes: Lcom/android/settings/DevelopmentSettings;->updateAllOptions()V
-    invoke-static {v0}, Lcom/android/settings/DevelopmentSettings;->access$000(Lcom/android/settings/DevelopmentSettings;)V
+    # invokes: Lcom/android/settings_ext/DevelopmentSettings;->updateAllOptions()V
+    invoke-static {v0}, Lcom/android/settings_ext/DevelopmentSettings;->access$000(Lcom/android/settings_ext/DevelopmentSettings;)V
 
     .line 1298
     return-void

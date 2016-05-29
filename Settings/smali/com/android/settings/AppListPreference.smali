@@ -1,4 +1,4 @@
-.class public Lcom/android/settings/AppListPreference;
+.class public Lcom/android/settings_ext/AppListPreference;
 .super Landroid/preference/ListPreference;
 .source "AppListPreference.java"
 
@@ -6,7 +6,7 @@
 # annotations
 .annotation system Ldalvik/annotation/MemberClasses;
     value = {
-        Lcom/android/settings/AppListPreference$AppArrayAdapter;
+        Lcom/android/settings_ext/AppListPreference$AppArrayAdapter;
     }
 .end annotation
 
@@ -52,33 +52,33 @@
 
     .prologue
     .line 120
-    invoke-virtual {p0}, Lcom/android/settings/AppListPreference;->getValue()Ljava/lang/String;
+    invoke-virtual {p0}, Lcom/android/settings_ext/AppListPreference;->getValue()Ljava/lang/String;
 
     move-result-object v1
 
-    invoke-virtual {p0, v1}, Lcom/android/settings/AppListPreference;->findIndexOfValue(Ljava/lang/String;)I
+    invoke-virtual {p0, v1}, Lcom/android/settings_ext/AppListPreference;->findIndexOfValue(Ljava/lang/String;)I
 
     move-result v6
 
     .line 121
     .local v6, "selectedIndex":I
-    new-instance v0, Lcom/android/settings/AppListPreference$AppArrayAdapter;
+    new-instance v0, Lcom/android/settings_ext/AppListPreference$AppArrayAdapter;
 
-    invoke-virtual {p0}, Lcom/android/settings/AppListPreference;->getContext()Landroid/content/Context;
+    invoke-virtual {p0}, Lcom/android/settings_ext/AppListPreference;->getContext()Landroid/content/Context;
 
     move-result-object v2
 
     const v3, 0x7f04000c
 
-    invoke-virtual {p0}, Lcom/android/settings/AppListPreference;->getEntries()[Ljava/lang/CharSequence;
+    invoke-virtual {p0}, Lcom/android/settings_ext/AppListPreference;->getEntries()[Ljava/lang/CharSequence;
 
     move-result-object v4
 
-    iget-object v5, p0, Lcom/android/settings/AppListPreference;->mEntryDrawables:[Landroid/graphics/drawable/Drawable;
+    iget-object v5, p0, Lcom/android/settings_ext/AppListPreference;->mEntryDrawables:[Landroid/graphics/drawable/Drawable;
 
     move-object v1, p0
 
-    invoke-direct/range {v0 .. v6}, Lcom/android/settings/AppListPreference$AppArrayAdapter;-><init>(Lcom/android/settings/AppListPreference;Landroid/content/Context;I[Ljava/lang/CharSequence;[Landroid/graphics/drawable/Drawable;I)V
+    invoke-direct/range {v0 .. v6}, Lcom/android/settings_ext/AppListPreference$AppArrayAdapter;-><init>(Lcom/android/settings_ext/AppListPreference;Landroid/content/Context;I[Ljava/lang/CharSequence;[Landroid/graphics/drawable/Drawable;I)V
 
     .line 123
     .local v0, "adapter":Landroid/widget/ListAdapter;
@@ -102,7 +102,7 @@
 
     .line 82
     .local v4, "foundPackages":I
-    invoke-virtual {p0}, Lcom/android/settings/AppListPreference;->getContext()Landroid/content/Context;
+    invoke-virtual {p0}, Lcom/android/settings_ext/AppListPreference;->getContext()Landroid/content/Context;
 
     move-result-object v11
 
@@ -157,7 +157,7 @@
     .local v2, "applicationNames":[Ljava/lang/CharSequence;
     new-array v11, v4, [Landroid/graphics/drawable/Drawable;
 
-    iput-object v11, p0, Lcom/android/settings/AppListPreference;->mEntryDrawables:[Landroid/graphics/drawable/Drawable;
+    iput-object v11, p0, Lcom/android/settings_ext/AppListPreference;->mEntryDrawables:[Landroid/graphics/drawable/Drawable;
 
     .line 96
     const/4 v7, 0x0
@@ -194,7 +194,7 @@
     aput-object v11, v2, v7
 
     .line 101
-    iget-object v11, p0, Lcom/android/settings/AppListPreference;->mEntryDrawables:[Landroid/graphics/drawable/Drawable;
+    iget-object v11, p0, Lcom/android/settings_ext/AppListPreference;->mEntryDrawables:[Landroid/graphics/drawable/Drawable;
 
     invoke-virtual {v0, v9}, Landroid/content/pm/ApplicationInfo;->loadIcon(Landroid/content/pm/PackageManager;)Landroid/graphics/drawable/Drawable;
 
@@ -229,10 +229,10 @@
     .line 109
     .end local v0    # "appInfo":Landroid/content/pm/ApplicationInfo;
     :cond_3
-    invoke-virtual {p0, v2}, Lcom/android/settings/AppListPreference;->setEntries([Ljava/lang/CharSequence;)V
+    invoke-virtual {p0, v2}, Lcom/android/settings_ext/AppListPreference;->setEntries([Ljava/lang/CharSequence;)V
 
     .line 110
-    invoke-virtual {p0, p1}, Lcom/android/settings/AppListPreference;->setEntryValues([Ljava/lang/CharSequence;)V
+    invoke-virtual {p0, p1}, Lcom/android/settings_ext/AppListPreference;->setEntryValues([Ljava/lang/CharSequence;)V
 
     .line 111
     const/4 v11, -0x1
@@ -240,7 +240,7 @@
     if-eq v10, v11, :cond_4
 
     .line 112
-    invoke-virtual {p0, v10}, Lcom/android/settings/AppListPreference;->setValueIndex(I)V
+    invoke-virtual {p0, v10}, Lcom/android/settings_ext/AppListPreference;->setValueIndex(I)V
 
     .line 116
     :goto_3
@@ -250,7 +250,7 @@
     :cond_4
     const/4 v11, 0x0
 
-    invoke-virtual {p0, v11}, Lcom/android/settings/AppListPreference;->setValue(Ljava/lang/String;)V
+    invoke-virtual {p0, v11}, Lcom/android/settings_ext/AppListPreference;->setValue(Ljava/lang/String;)V
 
     goto :goto_3
 

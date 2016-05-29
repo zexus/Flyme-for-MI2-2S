@@ -1,11 +1,11 @@
-.class Lcom/android/settings/nfc/PaymentSettings$2;
+.class Lcom/android/settings_ext/nfc/PaymentSettings$2;
 .super Landroid/os/Handler;
 .source "PaymentSettings.java"
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/android/settings/nfc/PaymentSettings;
+    value = Lcom/android/settings_ext/nfc/PaymentSettings;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -15,16 +15,16 @@
 
 
 # instance fields
-.field final synthetic this$0:Lcom/android/settings/nfc/PaymentSettings;
+.field final synthetic this$0:Lcom/android/settings_ext/nfc/PaymentSettings;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/nfc/PaymentSettings;)V
+.method constructor <init>(Lcom/android/settings_ext/nfc/PaymentSettings;)V
     .locals 0
 
     .prologue
     .line 175
-    iput-object p1, p0, Lcom/android/settings/nfc/PaymentSettings$2;->this$0:Lcom/android/settings/nfc/PaymentSettings;
+    iput-object p1, p0, Lcom/android/settings_ext/nfc/PaymentSettings$2;->this$0:Lcom/android/settings_ext/nfc/PaymentSettings;
 
     invoke-direct {p0}, Landroid/os/Handler;-><init>()V
 
@@ -39,9 +39,9 @@
 
     .prologue
     .line 178
-    iget-object v0, p0, Lcom/android/settings/nfc/PaymentSettings$2;->this$0:Lcom/android/settings/nfc/PaymentSettings;
+    iget-object v0, p0, Lcom/android/settings_ext/nfc/PaymentSettings$2;->this$0:Lcom/android/settings_ext/nfc/PaymentSettings;
 
-    invoke-virtual {v0}, Lcom/android/settings/nfc/PaymentSettings;->refresh()V
+    invoke-virtual {v0}, Lcom/android/settings_ext/nfc/PaymentSettings;->refresh()V
 
     .line 179
     return-void

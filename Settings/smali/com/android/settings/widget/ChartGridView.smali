@@ -1,4 +1,4 @@
-.class public Lcom/android/settings/widget/ChartGridView;
+.class public Lcom/android/settings_ext/widget/ChartGridView;
 .super Landroid/view/View;
 .source "ChartGridView.java"
 
@@ -6,7 +6,7 @@
 # instance fields
 .field private mBorder:Landroid/graphics/drawable/Drawable;
 
-.field private mHoriz:Lcom/android/settings/widget/ChartAxis;
+.field private mHoriz:Lcom/android/settings_ext/widget/ChartAxis;
 
 .field private mLabelColor:I
 
@@ -22,7 +22,7 @@
 
 .field private mSecondary:Landroid/graphics/drawable/Drawable;
 
-.field private mVert:Lcom/android/settings/widget/ChartAxis;
+.field private mVert:Lcom/android/settings_ext/widget/ChartAxis;
 
 
 # direct methods
@@ -36,7 +36,7 @@
 
     const/4 v1, 0x0
 
-    invoke-direct {p0, p1, v0, v1}, Lcom/android/settings/widget/ChartGridView;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
+    invoke-direct {p0, p1, v0, v1}, Lcom/android/settings_ext/widget/ChartGridView;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
 
     .line 63
     return-void
@@ -51,7 +51,7 @@
     .line 66
     const/4 v0, 0x0
 
-    invoke-direct {p0, p1, p2, v0}, Lcom/android/settings/widget/ChartGridView;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
+    invoke-direct {p0, p1, p2, v0}, Lcom/android/settings_ext/widget/ChartGridView;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
 
     .line 67
     return-void
@@ -70,10 +70,10 @@
     invoke-direct {p0, p1, p2, p3}, Landroid/view/View;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
 
     .line 72
-    invoke-virtual {p0, v5}, Lcom/android/settings/widget/ChartGridView;->setWillNotDraw(Z)V
+    invoke-virtual {p0, v5}, Lcom/android/settings_ext/widget/ChartGridView;->setWillNotDraw(Z)V
 
     .line 74
-    sget-object v4, Lcom/android/settings/R$styleable;->ChartGridView:[I
+    sget-object v4, Lcom/android/settings_ext/R$styleable;->ChartGridView:[I
 
     invoke-virtual {p1, p2, v4, p3, v5}, Landroid/content/Context;->obtainStyledAttributes(Landroid/util/AttributeSet;[III)Landroid/content/res/TypedArray;
 
@@ -87,7 +87,7 @@
 
     move-result-object v4
 
-    iput-object v4, p0, Lcom/android/settings/widget/ChartGridView;->mPrimary:Landroid/graphics/drawable/Drawable;
+    iput-object v4, p0, Lcom/android/settings_ext/widget/ChartGridView;->mPrimary:Landroid/graphics/drawable/Drawable;
 
     .line 78
     const/4 v4, 0x3
@@ -96,7 +96,7 @@
 
     move-result-object v4
 
-    iput-object v4, p0, Lcom/android/settings/widget/ChartGridView;->mSecondary:Landroid/graphics/drawable/Drawable;
+    iput-object v4, p0, Lcom/android/settings_ext/widget/ChartGridView;->mSecondary:Landroid/graphics/drawable/Drawable;
 
     .line 79
     const/4 v4, 0x4
@@ -105,7 +105,7 @@
 
     move-result-object v4
 
-    iput-object v4, p0, Lcom/android/settings/widget/ChartGridView;->mBorder:Landroid/graphics/drawable/Drawable;
+    iput-object v4, p0, Lcom/android/settings_ext/widget/ChartGridView;->mBorder:Landroid/graphics/drawable/Drawable;
 
     .line 81
     const/4 v4, -0x1
@@ -128,7 +128,7 @@
 
     move-result v4
 
-    iput v4, p0, Lcom/android/settings/widget/ChartGridView;->mLabelSize:I
+    iput v4, p0, Lcom/android/settings_ext/widget/ChartGridView;->mLabelSize:I
 
     .line 86
     invoke-virtual {v2}, Landroid/content/res/TypedArray;->recycle()V
@@ -146,7 +146,7 @@
 
     move-result v4
 
-    iput v4, p0, Lcom/android/settings/widget/ChartGridView;->mLabelColor:I
+    iput v4, p0, Lcom/android/settings_ext/widget/ChartGridView;->mLabelColor:I
 
     .line 92
     invoke-virtual {v0}, Landroid/content/res/TypedArray;->recycle()V
@@ -163,7 +163,7 @@
     const/4 v7, 0x1
 
     .line 170
-    invoke-virtual {p0}, Lcom/android/settings/widget/ChartGridView;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {p0}, Lcom/android/settings_ext/widget/ChartGridView;->getResources()Landroid/content/res/Resources;
 
     move-result-object v8
 
@@ -193,12 +193,12 @@
     invoke-virtual {v2, v0}, Landroid/text/TextPaint;->setCompatibilityScaling(F)V
 
     .line 174
-    iget v0, p0, Lcom/android/settings/widget/ChartGridView;->mLabelColor:I
+    iget v0, p0, Lcom/android/settings_ext/widget/ChartGridView;->mLabelColor:I
 
     invoke-virtual {v2, v0}, Landroid/text/TextPaint;->setColor(I)V
 
     .line 175
-    iget v0, p0, Lcom/android/settings/widget/ChartGridView;->mLabelSize:I
+    iget v0, p0, Lcom/android/settings_ext/widget/ChartGridView;->mLabelSize:I
 
     int-to-float v0, v0
 
@@ -234,10 +234,10 @@
 
 
 # virtual methods
-.method init(Lcom/android/settings/widget/ChartAxis;Lcom/android/settings/widget/ChartAxis;)V
+.method init(Lcom/android/settings_ext/widget/ChartAxis;Lcom/android/settings_ext/widget/ChartAxis;)V
     .locals 1
-    .param p1, "horiz"    # Lcom/android/settings/widget/ChartAxis;
-    .param p2, "vert"    # Lcom/android/settings/widget/ChartAxis;
+    .param p1, "horiz"    # Lcom/android/settings_ext/widget/ChartAxis;
+    .param p2, "vert"    # Lcom/android/settings_ext/widget/ChartAxis;
 
     .prologue
     .line 96
@@ -247,9 +247,9 @@
 
     move-result-object v0
 
-    check-cast v0, Lcom/android/settings/widget/ChartAxis;
+    check-cast v0, Lcom/android/settings_ext/widget/ChartAxis;
 
-    iput-object v0, p0, Lcom/android/settings/widget/ChartGridView;->mHoriz:Lcom/android/settings/widget/ChartAxis;
+    iput-object v0, p0, Lcom/android/settings_ext/widget/ChartGridView;->mHoriz:Lcom/android/settings_ext/widget/ChartAxis;
 
     .line 97
     const-string v0, "missing vert"
@@ -258,9 +258,9 @@
 
     move-result-object v0
 
-    check-cast v0, Lcom/android/settings/widget/ChartAxis;
+    check-cast v0, Lcom/android/settings_ext/widget/ChartAxis;
 
-    iput-object v0, p0, Lcom/android/settings/widget/ChartGridView;->mVert:Lcom/android/settings/widget/ChartAxis;
+    iput-object v0, p0, Lcom/android/settings_ext/widget/ChartGridView;->mVert:Lcom/android/settings_ext/widget/ChartAxis;
 
     .line 98
     return-void
@@ -272,17 +272,17 @@
 
     .prologue
     .line 111
-    invoke-virtual/range {p0 .. p0}, Lcom/android/settings/widget/ChartGridView;->getWidth()I
+    invoke-virtual/range {p0 .. p0}, Lcom/android/settings_ext/widget/ChartGridView;->getWidth()I
 
     move-result v22
 
     .line 112
     .local v22, "width":I
-    invoke-virtual/range {p0 .. p0}, Lcom/android/settings/widget/ChartGridView;->getHeight()I
+    invoke-virtual/range {p0 .. p0}, Lcom/android/settings_ext/widget/ChartGridView;->getHeight()I
 
     move-result v25
 
-    invoke-virtual/range {p0 .. p0}, Lcom/android/settings/widget/ChartGridView;->getPaddingBottom()I
+    invoke-virtual/range {p0 .. p0}, Lcom/android/settings_ext/widget/ChartGridView;->getPaddingBottom()I
 
     move-result v26
 
@@ -292,7 +292,7 @@
     .local v7, "height":I
     move-object/from16 v0, p0
 
-    iget-object v0, v0, Lcom/android/settings/widget/ChartGridView;->mSecondary:Landroid/graphics/drawable/Drawable;
+    iget-object v0, v0, Lcom/android/settings_ext/widget/ChartGridView;->mSecondary:Landroid/graphics/drawable/Drawable;
 
     move-object/from16 v18, v0
 
@@ -309,11 +309,11 @@
     .local v19, "secondaryHeight":I
     move-object/from16 v0, p0
 
-    iget-object v0, v0, Lcom/android/settings/widget/ChartGridView;->mVert:Lcom/android/settings/widget/ChartAxis;
+    iget-object v0, v0, Lcom/android/settings_ext/widget/ChartGridView;->mVert:Lcom/android/settings_ext/widget/ChartAxis;
 
     move-object/from16 v25, v0
 
-    invoke-interface/range {v25 .. v25}, Lcom/android/settings/widget/ChartAxis;->getTickPoints()[F
+    invoke-interface/range {v25 .. v25}, Lcom/android/settings_ext/widget/ChartAxis;->getTickPoints()[F
 
     move-result-object v21
 
@@ -398,7 +398,7 @@
     :cond_0
     move-object/from16 v0, p0
 
-    iget-object v13, v0, Lcom/android/settings/widget/ChartGridView;->mPrimary:Landroid/graphics/drawable/Drawable;
+    iget-object v13, v0, Lcom/android/settings_ext/widget/ChartGridView;->mPrimary:Landroid/graphics/drawable/Drawable;
 
     .line 127
     .local v13, "primary":Landroid/graphics/drawable/Drawable;
@@ -419,11 +419,11 @@
     .local v14, "primaryHeight":I
     move-object/from16 v0, p0
 
-    iget-object v0, v0, Lcom/android/settings/widget/ChartGridView;->mHoriz:Lcom/android/settings/widget/ChartAxis;
+    iget-object v0, v0, Lcom/android/settings_ext/widget/ChartGridView;->mHoriz:Lcom/android/settings_ext/widget/ChartAxis;
 
     move-object/from16 v25, v0
 
-    invoke-interface/range {v25 .. v25}, Lcom/android/settings/widget/ChartAxis;->getTickPoints()[F
+    invoke-interface/range {v25 .. v25}, Lcom/android/settings_ext/widget/ChartAxis;->getTickPoints()[F
 
     move-result-object v8
 
@@ -507,7 +507,7 @@
     :cond_1
     move-object/from16 v0, p0
 
-    iget-object v0, v0, Lcom/android/settings/widget/ChartGridView;->mBorder:Landroid/graphics/drawable/Drawable;
+    iget-object v0, v0, Lcom/android/settings_ext/widget/ChartGridView;->mBorder:Landroid/graphics/drawable/Drawable;
 
     move-object/from16 v25, v0
 
@@ -528,7 +528,7 @@
     .line 140
     move-object/from16 v0, p0
 
-    iget-object v0, v0, Lcom/android/settings/widget/ChartGridView;->mBorder:Landroid/graphics/drawable/Drawable;
+    iget-object v0, v0, Lcom/android/settings_ext/widget/ChartGridView;->mBorder:Landroid/graphics/drawable/Drawable;
 
     move-object/from16 v25, v0
 
@@ -541,7 +541,7 @@
     .line 142
     move-object/from16 v0, p0
 
-    iget-object v0, v0, Lcom/android/settings/widget/ChartGridView;->mLabelStart:Landroid/text/Layout;
+    iget-object v0, v0, Lcom/android/settings_ext/widget/ChartGridView;->mLabelStart:Landroid/text/Layout;
 
     move-object/from16 v25, v0
 
@@ -549,7 +549,7 @@
 
     move-object/from16 v0, p0
 
-    iget-object v0, v0, Lcom/android/settings/widget/ChartGridView;->mLabelStart:Landroid/text/Layout;
+    iget-object v0, v0, Lcom/android/settings_ext/widget/ChartGridView;->mLabelStart:Landroid/text/Layout;
 
     move-object/from16 v25, v0
 
@@ -564,7 +564,7 @@
     :goto_2
     move-object/from16 v0, p0
 
-    iget-object v0, v0, Lcom/android/settings/widget/ChartGridView;->mLabelStart:Landroid/text/Layout;
+    iget-object v0, v0, Lcom/android/settings_ext/widget/ChartGridView;->mLabelStart:Landroid/text/Layout;
 
     move-object/from16 v20, v0
 
@@ -616,7 +616,7 @@
     :cond_2
     move-object/from16 v0, p0
 
-    iget-object v11, v0, Lcom/android/settings/widget/ChartGridView;->mLabelMid:Landroid/text/Layout;
+    iget-object v11, v0, Lcom/android/settings_ext/widget/ChartGridView;->mLabelMid:Landroid/text/Layout;
 
     .line 153
     .local v11, "mid":Landroid/text/Layout;
@@ -676,7 +676,7 @@
     :cond_3
     move-object/from16 v0, p0
 
-    iget-object v6, v0, Lcom/android/settings/widget/ChartGridView;->mLabelEnd:Landroid/text/Layout;
+    iget-object v6, v0, Lcom/android/settings_ext/widget/ChartGridView;->mLabelEnd:Landroid/text/Layout;
 
     .line 161
     .local v6, "end":Landroid/text/Layout;
@@ -752,7 +752,7 @@
 
     .prologue
     .line 101
-    invoke-virtual {p0}, Lcom/android/settings/widget/ChartGridView;->getContext()Landroid/content/Context;
+    invoke-virtual {p0}, Lcom/android/settings_ext/widget/ChartGridView;->getContext()Landroid/content/Context;
 
     move-result-object v0
 
@@ -766,40 +766,40 @@
 
     .line 103
     .local v2, "mid":J
-    invoke-static {v0, p1, p2, p1, p2}, Lcom/android/settings/DataUsageSummary;->formatDateRange(Landroid/content/Context;JJ)Ljava/lang/String;
+    invoke-static {v0, p1, p2, p1, p2}, Lcom/android/settings_ext/DataUsageSummary;->formatDateRange(Landroid/content/Context;JJ)Ljava/lang/String;
 
     move-result-object v1
 
-    invoke-direct {p0, v1}, Lcom/android/settings/widget/ChartGridView;->makeLabel(Ljava/lang/CharSequence;)Landroid/text/Layout;
+    invoke-direct {p0, v1}, Lcom/android/settings_ext/widget/ChartGridView;->makeLabel(Ljava/lang/CharSequence;)Landroid/text/Layout;
 
     move-result-object v1
 
-    iput-object v1, p0, Lcom/android/settings/widget/ChartGridView;->mLabelStart:Landroid/text/Layout;
+    iput-object v1, p0, Lcom/android/settings_ext/widget/ChartGridView;->mLabelStart:Landroid/text/Layout;
 
     .line 104
-    invoke-static {v0, v2, v3, v2, v3}, Lcom/android/settings/DataUsageSummary;->formatDateRange(Landroid/content/Context;JJ)Ljava/lang/String;
+    invoke-static {v0, v2, v3, v2, v3}, Lcom/android/settings_ext/DataUsageSummary;->formatDateRange(Landroid/content/Context;JJ)Ljava/lang/String;
 
     move-result-object v1
 
-    invoke-direct {p0, v1}, Lcom/android/settings/widget/ChartGridView;->makeLabel(Ljava/lang/CharSequence;)Landroid/text/Layout;
+    invoke-direct {p0, v1}, Lcom/android/settings_ext/widget/ChartGridView;->makeLabel(Ljava/lang/CharSequence;)Landroid/text/Layout;
 
     move-result-object v1
 
-    iput-object v1, p0, Lcom/android/settings/widget/ChartGridView;->mLabelMid:Landroid/text/Layout;
+    iput-object v1, p0, Lcom/android/settings_ext/widget/ChartGridView;->mLabelMid:Landroid/text/Layout;
 
     .line 105
-    invoke-static {v0, p3, p4, p3, p4}, Lcom/android/settings/DataUsageSummary;->formatDateRange(Landroid/content/Context;JJ)Ljava/lang/String;
+    invoke-static {v0, p3, p4, p3, p4}, Lcom/android/settings_ext/DataUsageSummary;->formatDateRange(Landroid/content/Context;JJ)Ljava/lang/String;
 
     move-result-object v1
 
-    invoke-direct {p0, v1}, Lcom/android/settings/widget/ChartGridView;->makeLabel(Ljava/lang/CharSequence;)Landroid/text/Layout;
+    invoke-direct {p0, v1}, Lcom/android/settings_ext/widget/ChartGridView;->makeLabel(Ljava/lang/CharSequence;)Landroid/text/Layout;
 
     move-result-object v1
 
-    iput-object v1, p0, Lcom/android/settings/widget/ChartGridView;->mLabelEnd:Landroid/text/Layout;
+    iput-object v1, p0, Lcom/android/settings_ext/widget/ChartGridView;->mLabelEnd:Landroid/text/Layout;
 
     .line 106
-    invoke-virtual {p0}, Lcom/android/settings/widget/ChartGridView;->invalidate()V
+    invoke-virtual {p0}, Lcom/android/settings_ext/widget/ChartGridView;->invalidate()V
 
     .line 107
     return-void

@@ -1,4 +1,4 @@
-.class final Lcom/android/settings/PointerSpeedPreference$SavedState$1;
+.class final Lcom/android/settings_ext/PointerSpeedPreference$SavedState$1;
 .super Ljava/lang/Object;
 .source "PointerSpeedPreference.java"
 
@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/android/settings/PointerSpeedPreference$SavedState;
+    value = Lcom/android/settings_ext/PointerSpeedPreference$SavedState;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -21,7 +21,7 @@
         "Ljava/lang/Object;",
         "Landroid/os/Parcelable$Creator",
         "<",
-        "Lcom/android/settings/PointerSpeedPreference$SavedState;",
+        "Lcom/android/settings_ext/PointerSpeedPreference$SavedState;",
         ">;"
     }
 .end annotation
@@ -40,15 +40,15 @@
 
 
 # virtual methods
-.method public createFromParcel(Landroid/os/Parcel;)Lcom/android/settings/PointerSpeedPreference$SavedState;
+.method public createFromParcel(Landroid/os/Parcel;)Lcom/android/settings_ext/PointerSpeedPreference$SavedState;
     .locals 1
     .param p1, "in"    # Landroid/os/Parcel;
 
     .prologue
     .line 175
-    new-instance v0, Lcom/android/settings/PointerSpeedPreference$SavedState;
+    new-instance v0, Lcom/android/settings_ext/PointerSpeedPreference$SavedState;
 
-    invoke-direct {v0, p1}, Lcom/android/settings/PointerSpeedPreference$SavedState;-><init>(Landroid/os/Parcel;)V
+    invoke-direct {v0, p1}, Lcom/android/settings_ext/PointerSpeedPreference$SavedState;-><init>(Landroid/os/Parcel;)V
 
     return-object v0
 .end method
@@ -59,20 +59,20 @@
 
     .prologue
     .line 172
-    invoke-virtual {p0, p1}, Lcom/android/settings/PointerSpeedPreference$SavedState$1;->createFromParcel(Landroid/os/Parcel;)Lcom/android/settings/PointerSpeedPreference$SavedState;
+    invoke-virtual {p0, p1}, Lcom/android/settings_ext/PointerSpeedPreference$SavedState$1;->createFromParcel(Landroid/os/Parcel;)Lcom/android/settings_ext/PointerSpeedPreference$SavedState;
 
     move-result-object v0
 
     return-object v0
 .end method
 
-.method public newArray(I)[Lcom/android/settings/PointerSpeedPreference$SavedState;
+.method public newArray(I)[Lcom/android/settings_ext/PointerSpeedPreference$SavedState;
     .locals 1
     .param p1, "size"    # I
 
     .prologue
     .line 179
-    new-array v0, p1, [Lcom/android/settings/PointerSpeedPreference$SavedState;
+    new-array v0, p1, [Lcom/android/settings_ext/PointerSpeedPreference$SavedState;
 
     return-object v0
 .end method
@@ -83,7 +83,7 @@
 
     .prologue
     .line 172
-    invoke-virtual {p0, p1}, Lcom/android/settings/PointerSpeedPreference$SavedState$1;->newArray(I)[Lcom/android/settings/PointerSpeedPreference$SavedState;
+    invoke-virtual {p0, p1}, Lcom/android/settings_ext/PointerSpeedPreference$SavedState$1;->newArray(I)[Lcom/android/settings_ext/PointerSpeedPreference$SavedState;
 
     move-result-object v0
 

@@ -1,11 +1,11 @@
-.class public interface abstract Lcom/android/settings/accounts/AuthenticatorHelper$OnAccountsUpdateListener;
+.class public interface abstract Lcom/android/settings_ext/accounts/AuthenticatorHelper$OnAccountsUpdateListener;
 .super Ljava/lang/Object;
 .source "AuthenticatorHelper.java"
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/android/settings/accounts/AuthenticatorHelper;
+    value = Lcom/android/settings_ext/accounts/AuthenticatorHelper;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;

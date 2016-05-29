@@ -1,4 +1,4 @@
-.class Lcom/android/settings/ivan/PowerModeSettings$1;
+.class Lcom/android/settings_ext/ivan/PowerModeSettings$1;
 .super Ljava/lang/Object;
 .source "PowerModeSettings.java"
 
@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/android/settings/ivan/PowerModeSettings;->createPowerModeDialog()V
+    value = Lcom/android/settings_ext/ivan/PowerModeSettings;->createPowerModeDialog()V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -18,16 +18,16 @@
 
 
 # instance fields
-.field final synthetic this$0:Lcom/android/settings/ivan/PowerModeSettings;
+.field final synthetic this$0:Lcom/android/settings_ext/ivan/PowerModeSettings;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/ivan/PowerModeSettings;)V
+.method constructor <init>(Lcom/android/settings_ext/ivan/PowerModeSettings;)V
     .locals 0
 
     .prologue
     .line 44
-    iput-object p1, p0, Lcom/android/settings/ivan/PowerModeSettings$1;->this$0:Lcom/android/settings/ivan/PowerModeSettings;
+    iput-object p1, p0, Lcom/android/settings_ext/ivan/PowerModeSettings$1;->this$0:Lcom/android/settings_ext/ivan/PowerModeSettings;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -43,10 +43,10 @@
 
     .prologue
     .line 46
-    iget-object v1, p0, Lcom/android/settings/ivan/PowerModeSettings$1;->this$0:Lcom/android/settings/ivan/PowerModeSettings;
+    iget-object v1, p0, Lcom/android/settings_ext/ivan/PowerModeSettings$1;->this$0:Lcom/android/settings_ext/ivan/PowerModeSettings;
 
-    # getter for: Lcom/android/settings/ivan/PowerModeSettings;->mEntryValues:[Ljava/lang/CharSequence;
-    invoke-static {v1}, Lcom/android/settings/ivan/PowerModeSettings;->access$000(Lcom/android/settings/ivan/PowerModeSettings;)[Ljava/lang/CharSequence;
+    # getter for: Lcom/android/settings_ext/ivan/PowerModeSettings;->mEntryValues:[Ljava/lang/CharSequence;
+    invoke-static {v1}, Lcom/android/settings_ext/ivan/PowerModeSettings;->access$000(Lcom/android/settings_ext/ivan/PowerModeSettings;)[Ljava/lang/CharSequence;
 
     move-result-object v1
 
@@ -57,10 +57,10 @@
     if-ltz p2, :cond_0
 
     .line 47
-    iget-object v1, p0, Lcom/android/settings/ivan/PowerModeSettings$1;->this$0:Lcom/android/settings/ivan/PowerModeSettings;
+    iget-object v1, p0, Lcom/android/settings_ext/ivan/PowerModeSettings$1;->this$0:Lcom/android/settings_ext/ivan/PowerModeSettings;
 
-    # getter for: Lcom/android/settings/ivan/PowerModeSettings;->mEntryValues:[Ljava/lang/CharSequence;
-    invoke-static {v1}, Lcom/android/settings/ivan/PowerModeSettings;->access$000(Lcom/android/settings/ivan/PowerModeSettings;)[Ljava/lang/CharSequence;
+    # getter for: Lcom/android/settings_ext/ivan/PowerModeSettings;->mEntryValues:[Ljava/lang/CharSequence;
+    invoke-static {v1}, Lcom/android/settings_ext/ivan/PowerModeSettings;->access$000(Lcom/android/settings_ext/ivan/PowerModeSettings;)[Ljava/lang/CharSequence;
 
     move-result-object v1
 
@@ -82,9 +82,9 @@
     invoke-interface {p1}, Landroid/content/DialogInterface;->dismiss()V
 
     .line 51
-    iget-object v1, p0, Lcom/android/settings/ivan/PowerModeSettings$1;->this$0:Lcom/android/settings/ivan/PowerModeSettings;
+    iget-object v1, p0, Lcom/android/settings_ext/ivan/PowerModeSettings$1;->this$0:Lcom/android/settings_ext/ivan/PowerModeSettings;
 
-    invoke-virtual {v1}, Lcom/android/settings/ivan/PowerModeSettings;->finish()V
+    invoke-virtual {v1}, Lcom/android/settings_ext/ivan/PowerModeSettings;->finish()V
 
     .line 52
     return-void

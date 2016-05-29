@@ -1,4 +1,4 @@
-.class Lcom/android/settings/deviceinfo/Status$5;
+.class Lcom/android/settings_ext/deviceinfo/Status$5;
 .super Ljava/lang/Object;
 .source "Status.java"
 
@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/android/settings/deviceinfo/Status;->onCreate(Landroid/os/Bundle;)V
+    value = Lcom/android/settings_ext/deviceinfo/Status;->onCreate(Landroid/os/Bundle;)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -18,16 +18,16 @@
 
 
 # instance fields
-.field final synthetic this$0:Lcom/android/settings/deviceinfo/Status;
+.field final synthetic this$0:Lcom/android/settings_ext/deviceinfo/Status;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/deviceinfo/Status;)V
+.method constructor <init>(Lcom/android/settings_ext/deviceinfo/Status;)V
     .locals 0
 
     .prologue
     .line 387
-    iput-object p1, p0, Lcom/android/settings/deviceinfo/Status$5;->this$0:Lcom/android/settings/deviceinfo/Status;
+    iput-object p1, p0, Lcom/android/settings_ext/deviceinfo/Status$5;->this$0:Lcom/android/settings_ext/deviceinfo/Status;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -70,11 +70,11 @@
 
     .line 394
     .local v2, "pref":Landroid/preference/Preference;
-    iget-object v3, p0, Lcom/android/settings/deviceinfo/Status$5;->this$0:Lcom/android/settings/deviceinfo/Status;
+    iget-object v3, p0, Lcom/android/settings_ext/deviceinfo/Status$5;->this$0:Lcom/android/settings_ext/deviceinfo/Status;
 
     const-string v4, "clipboard"
 
-    invoke-virtual {v3, v4}, Lcom/android/settings/deviceinfo/Status;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
+    invoke-virtual {v3, v4}, Lcom/android/settings_ext/deviceinfo/Status;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object v0
 
@@ -89,7 +89,7 @@
     invoke-virtual {v0, v3}, Landroid/content/ClipboardManager;->setText(Ljava/lang/CharSequence;)V
 
     .line 397
-    iget-object v3, p0, Lcom/android/settings/deviceinfo/Status$5;->this$0:Lcom/android/settings/deviceinfo/Status;
+    iget-object v3, p0, Lcom/android/settings_ext/deviceinfo/Status$5;->this$0:Lcom/android/settings_ext/deviceinfo/Status;
 
     const v4, 0x1040450
 

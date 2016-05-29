@@ -1,11 +1,11 @@
-.class Lcom/android/settings/applications/ManageApplications$1;
+.class Lcom/android/settings_ext/applications/ManageApplications$1;
 .super Landroid/os/AsyncTask;
 .source "ManageApplications.java"
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/android/settings/applications/ManageApplications;->onClick(Landroid/content/DialogInterface;I)V
+    value = Lcom/android/settings_ext/applications/ManageApplications;->onClick(Landroid/content/DialogInterface;I)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -26,7 +26,7 @@
 
 
 # instance fields
-.field final synthetic this$0:Lcom/android/settings/applications/ManageApplications;
+.field final synthetic this$0:Lcom/android/settings_ext/applications/ManageApplications;
 
 .field final synthetic val$aom:Landroid/app/AppOpsManager;
 
@@ -42,24 +42,24 @@
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/applications/ManageApplications;Landroid/content/pm/PackageManager;Landroid/app/INotificationManager;Landroid/content/pm/IPackageManager;Landroid/app/AppOpsManager;Landroid/net/NetworkPolicyManager;Landroid/os/Handler;)V
+.method constructor <init>(Lcom/android/settings_ext/applications/ManageApplications;Landroid/content/pm/PackageManager;Landroid/app/INotificationManager;Landroid/content/pm/IPackageManager;Landroid/app/AppOpsManager;Landroid/net/NetworkPolicyManager;Landroid/os/Handler;)V
     .locals 0
 
     .prologue
     .line 1184
-    iput-object p1, p0, Lcom/android/settings/applications/ManageApplications$1;->this$0:Lcom/android/settings/applications/ManageApplications;
+    iput-object p1, p0, Lcom/android/settings_ext/applications/ManageApplications$1;->this$0:Lcom/android/settings_ext/applications/ManageApplications;
 
-    iput-object p2, p0, Lcom/android/settings/applications/ManageApplications$1;->val$pm:Landroid/content/pm/PackageManager;
+    iput-object p2, p0, Lcom/android/settings_ext/applications/ManageApplications$1;->val$pm:Landroid/content/pm/PackageManager;
 
-    iput-object p3, p0, Lcom/android/settings/applications/ManageApplications$1;->val$nm:Landroid/app/INotificationManager;
+    iput-object p3, p0, Lcom/android/settings_ext/applications/ManageApplications$1;->val$nm:Landroid/app/INotificationManager;
 
-    iput-object p4, p0, Lcom/android/settings/applications/ManageApplications$1;->val$mIPm:Landroid/content/pm/IPackageManager;
+    iput-object p4, p0, Lcom/android/settings_ext/applications/ManageApplications$1;->val$mIPm:Landroid/content/pm/IPackageManager;
 
-    iput-object p5, p0, Lcom/android/settings/applications/ManageApplications$1;->val$aom:Landroid/app/AppOpsManager;
+    iput-object p5, p0, Lcom/android/settings_ext/applications/ManageApplications$1;->val$aom:Landroid/app/AppOpsManager;
 
-    iput-object p6, p0, Lcom/android/settings/applications/ManageApplications$1;->val$npm:Landroid/net/NetworkPolicyManager;
+    iput-object p6, p0, Lcom/android/settings_ext/applications/ManageApplications$1;->val$npm:Landroid/net/NetworkPolicyManager;
 
-    iput-object p7, p0, Lcom/android/settings/applications/ManageApplications$1;->val$handler:Landroid/os/Handler;
+    iput-object p7, p0, Lcom/android/settings_ext/applications/ManageApplications$1;->val$handler:Landroid/os/Handler;
 
     invoke-direct {p0}, Landroid/os/AsyncTask;-><init>()V
 
@@ -77,7 +77,7 @@
     check-cast p1, [Ljava/lang/Void;
 
     .end local p1    # "x0":[Ljava/lang/Object;
-    invoke-virtual {p0, p1}, Lcom/android/settings/applications/ManageApplications$1;->doInBackground([Ljava/lang/Void;)Ljava/lang/Void;
+    invoke-virtual {p0, p1}, Lcom/android/settings_ext/applications/ManageApplications$1;->doInBackground([Ljava/lang/Void;)Ljava/lang/Void;
 
     move-result-object v0
 
@@ -90,7 +90,7 @@
 
     .prologue
     .line 1186
-    iget-object v9, p0, Lcom/android/settings/applications/ManageApplications$1;->val$pm:Landroid/content/pm/PackageManager;
+    iget-object v9, p0, Lcom/android/settings_ext/applications/ManageApplications$1;->val$pm:Landroid/content/pm/PackageManager;
 
     const/16 v10, 0x200
 
@@ -120,7 +120,7 @@
     .line 1192
     .local v0, "app":Landroid/content/pm/ApplicationInfo;
     :try_start_0
-    iget-object v9, p0, Lcom/android/settings/applications/ManageApplications$1;->val$nm:Landroid/app/INotificationManager;
+    iget-object v9, p0, Lcom/android/settings_ext/applications/ManageApplications$1;->val$nm:Landroid/app/INotificationManager;
 
     iget-object v10, v0, Landroid/content/pm/ApplicationInfo;->packageName:Ljava/lang/String;
 
@@ -139,7 +139,7 @@
     if-nez v9, :cond_0
 
     .line 1197
-    iget-object v9, p0, Lcom/android/settings/applications/ManageApplications$1;->val$pm:Landroid/content/pm/PackageManager;
+    iget-object v9, p0, Lcom/android/settings_ext/applications/ManageApplications$1;->val$pm:Landroid/content/pm/PackageManager;
 
     iget-object v10, v0, Landroid/content/pm/ApplicationInfo;->packageName:Ljava/lang/String;
 
@@ -152,7 +152,7 @@
     if-ne v9, v10, :cond_0
 
     .line 1199
-    iget-object v9, p0, Lcom/android/settings/applications/ManageApplications$1;->val$pm:Landroid/content/pm/PackageManager;
+    iget-object v9, p0, Lcom/android/settings_ext/applications/ManageApplications$1;->val$pm:Landroid/content/pm/PackageManager;
 
     iget-object v10, v0, Landroid/content/pm/ApplicationInfo;->packageName:Ljava/lang/String;
 
@@ -172,7 +172,7 @@
     .end local v0    # "app":Landroid/content/pm/ApplicationInfo;
     :cond_1
     :try_start_1
-    iget-object v9, p0, Lcom/android/settings/applications/ManageApplications$1;->val$mIPm:Landroid/content/pm/IPackageManager;
+    iget-object v9, p0, Lcom/android/settings_ext/applications/ManageApplications$1;->val$mIPm:Landroid/content/pm/IPackageManager;
 
     invoke-static {}, Landroid/os/UserHandle;->myUserId()I
 
@@ -184,12 +184,12 @@
 
     .line 1209
     :goto_2
-    iget-object v9, p0, Lcom/android/settings/applications/ManageApplications$1;->val$aom:Landroid/app/AppOpsManager;
+    iget-object v9, p0, Lcom/android/settings_ext/applications/ManageApplications$1;->val$aom:Landroid/app/AppOpsManager;
 
     invoke-virtual {v9}, Landroid/app/AppOpsManager;->resetAllModes()V
 
     .line 1210
-    iget-object v9, p0, Lcom/android/settings/applications/ManageApplications$1;->val$npm:Landroid/net/NetworkPolicyManager;
+    iget-object v9, p0, Lcom/android/settings_ext/applications/ManageApplications$1;->val$npm:Landroid/net/NetworkPolicyManager;
 
     const/4 v10, 0x1
 
@@ -228,7 +228,7 @@
     if-ne v9, v3, :cond_2
 
     .line 1217
-    iget-object v9, p0, Lcom/android/settings/applications/ManageApplications$1;->val$npm:Landroid/net/NetworkPolicyManager;
+    iget-object v9, p0, Lcom/android/settings_ext/applications/ManageApplications$1;->val$npm:Landroid/net/NetworkPolicyManager;
 
     const/4 v10, 0x0
 
@@ -243,11 +243,11 @@
     .line 1220
     .end local v8    # "uid":I
     :cond_3
-    iget-object v9, p0, Lcom/android/settings/applications/ManageApplications$1;->val$handler:Landroid/os/Handler;
+    iget-object v9, p0, Lcom/android/settings_ext/applications/ManageApplications$1;->val$handler:Landroid/os/Handler;
 
-    new-instance v10, Lcom/android/settings/applications/ManageApplications$1$1;
+    new-instance v10, Lcom/android/settings_ext/applications/ManageApplications$1$1;
 
-    invoke-direct {v10, p0}, Lcom/android/settings/applications/ManageApplications$1$1;-><init>(Lcom/android/settings/applications/ManageApplications$1;)V
+    invoke-direct {v10, p0}, Lcom/android/settings_ext/applications/ManageApplications$1$1;-><init>(Lcom/android/settings_ext/applications/ManageApplications$1;)V
 
     invoke-virtual {v9, v10}, Landroid/os/Handler;->post(Ljava/lang/Runnable;)Z
 

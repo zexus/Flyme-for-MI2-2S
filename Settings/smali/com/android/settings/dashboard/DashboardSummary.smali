@@ -1,4 +1,4 @@
-.class public Lcom/android/settings/dashboard/DashboardSummary;
+.class public Lcom/android/settings_ext/dashboard/DashboardSummary;
 .super Landroid/app/Fragment;
 .source "DashboardSummary.java"
 
@@ -6,7 +6,7 @@
 # annotations
 .annotation system Ldalvik/annotation/MemberClasses;
     value = {
-        Lcom/android/settings/dashboard/DashboardSummary$HomePackageReceiver;
+        Lcom/android/settings_ext/dashboard/DashboardSummary$HomePackageReceiver;
     }
 .end annotation
 
@@ -16,7 +16,7 @@
 
 .field private mHandler:Landroid/os/Handler;
 
-.field private mHomePackageReceiver:Lcom/android/settings/dashboard/DashboardSummary$HomePackageReceiver;
+.field private mHomePackageReceiver:Lcom/android/settings_ext/dashboard/DashboardSummary$HomePackageReceiver;
 
 .field private mLayoutInflater:Landroid/view/LayoutInflater;
 
@@ -30,32 +30,32 @@
     invoke-direct {p0}, Landroid/app/Fragment;-><init>()V
 
     .line 47
-    new-instance v0, Lcom/android/settings/dashboard/DashboardSummary$1;
+    new-instance v0, Lcom/android/settings_ext/dashboard/DashboardSummary$1;
 
-    invoke-direct {v0, p0}, Lcom/android/settings/dashboard/DashboardSummary$1;-><init>(Lcom/android/settings/dashboard/DashboardSummary;)V
+    invoke-direct {v0, p0}, Lcom/android/settings_ext/dashboard/DashboardSummary$1;-><init>(Lcom/android/settings_ext/dashboard/DashboardSummary;)V
 
-    iput-object v0, p0, Lcom/android/settings/dashboard/DashboardSummary;->mHandler:Landroid/os/Handler;
+    iput-object v0, p0, Lcom/android/settings_ext/dashboard/DashboardSummary;->mHandler:Landroid/os/Handler;
 
     .line 65
-    new-instance v0, Lcom/android/settings/dashboard/DashboardSummary$HomePackageReceiver;
+    new-instance v0, Lcom/android/settings_ext/dashboard/DashboardSummary$HomePackageReceiver;
 
     const/4 v1, 0x0
 
-    invoke-direct {v0, p0, v1}, Lcom/android/settings/dashboard/DashboardSummary$HomePackageReceiver;-><init>(Lcom/android/settings/dashboard/DashboardSummary;Lcom/android/settings/dashboard/DashboardSummary$1;)V
+    invoke-direct {v0, p0, v1}, Lcom/android/settings_ext/dashboard/DashboardSummary$HomePackageReceiver;-><init>(Lcom/android/settings_ext/dashboard/DashboardSummary;Lcom/android/settings_ext/dashboard/DashboardSummary$1;)V
 
-    iput-object v0, p0, Lcom/android/settings/dashboard/DashboardSummary;->mHomePackageReceiver:Lcom/android/settings/dashboard/DashboardSummary$HomePackageReceiver;
+    iput-object v0, p0, Lcom/android/settings_ext/dashboard/DashboardSummary;->mHomePackageReceiver:Lcom/android/settings_ext/dashboard/DashboardSummary$HomePackageReceiver;
 
     return-void
 .end method
 
-.method static synthetic access$000(Lcom/android/settings/dashboard/DashboardSummary;Landroid/content/Context;)V
+.method static synthetic access$000(Lcom/android/settings_ext/dashboard/DashboardSummary;Landroid/content/Context;)V
     .locals 0
-    .param p0, "x0"    # Lcom/android/settings/dashboard/DashboardSummary;
+    .param p0, "x0"    # Lcom/android/settings_ext/dashboard/DashboardSummary;
     .param p1, "x1"    # Landroid/content/Context;
 
     .prologue
     .line 40
-    invoke-direct {p0, p1}, Lcom/android/settings/dashboard/DashboardSummary;->rebuildUI(Landroid/content/Context;)V
+    invoke-direct {p0, p1}, Lcom/android/settings_ext/dashboard/DashboardSummary;->rebuildUI(Landroid/content/Context;)V
 
     return-void
 .end method
@@ -66,7 +66,7 @@
 
     .prologue
     .line 101
-    invoke-virtual/range {p0 .. p0}, Lcom/android/settings/dashboard/DashboardSummary;->isAdded()Z
+    invoke-virtual/range {p0 .. p0}, Lcom/android/settings_ext/dashboard/DashboardSummary;->isAdded()Z
 
     move-result v2
 
@@ -91,7 +91,7 @@
 
     .line 107
     .local v20, "start":J
-    invoke-virtual/range {p0 .. p0}, Lcom/android/settings/dashboard/DashboardSummary;->getResources()Landroid/content/res/Resources;
+    invoke-virtual/range {p0 .. p0}, Lcom/android/settings_ext/dashboard/DashboardSummary;->getResources()Landroid/content/res/Resources;
 
     move-result-object v4
 
@@ -99,23 +99,23 @@
     .local v4, "res":Landroid/content/res/Resources;
     move-object/from16 v0, p0
 
-    iget-object v2, v0, Lcom/android/settings/dashboard/DashboardSummary;->mDashboard:Landroid/view/ViewGroup;
+    iget-object v2, v0, Lcom/android/settings_ext/dashboard/DashboardSummary;->mDashboard:Landroid/view/ViewGroup;
 
     invoke-virtual {v2}, Landroid/view/ViewGroup;->removeAllViews()V
 
     move-object/from16 v2, p1
 
     .line 111
-    check-cast v2, Lcom/android/settings/SettingsActivity;
+    check-cast v2, Lcom/android/settings_ext/SettingsActivity;
 
     const/4 v3, 0x1
 
-    invoke-virtual {v2, v3}, Lcom/android/settings/SettingsActivity;->getDashboardCategories(Z)Ljava/util/List;
+    invoke-virtual {v2, v3}, Lcom/android/settings_ext/SettingsActivity;->getDashboardCategories(Z)Ljava/util/List;
 
     move-result-object v9
 
     .line 114
-    .local v9, "categories":Ljava/util/List;, "Ljava/util/List<Lcom/android/settings/dashboard/DashboardCategory;>;"
+    .local v9, "categories":Ljava/util/List;, "Ljava/util/List<Lcom/android/settings_ext/dashboard/DashboardCategory;>;"
     invoke-interface {v9}, Ljava/util/List;->size()I
 
     move-result v14
@@ -137,19 +137,19 @@
 
     move-result-object v10
 
-    check-cast v10, Lcom/android/settings/dashboard/DashboardCategory;
+    check-cast v10, Lcom/android/settings_ext/dashboard/DashboardCategory;
 
     .line 119
-    .local v10, "category":Lcom/android/settings/dashboard/DashboardCategory;
+    .local v10, "category":Lcom/android/settings_ext/dashboard/DashboardCategory;
     move-object/from16 v0, p0
 
-    iget-object v2, v0, Lcom/android/settings/dashboard/DashboardSummary;->mLayoutInflater:Landroid/view/LayoutInflater;
+    iget-object v2, v0, Lcom/android/settings_ext/dashboard/DashboardSummary;->mLayoutInflater:Landroid/view/LayoutInflater;
 
     const v3, 0x7f040031
 
     move-object/from16 v0, p0
 
-    iget-object v6, v0, Lcom/android/settings/dashboard/DashboardSummary;->mDashboard:Landroid/view/ViewGroup;
+    iget-object v6, v0, Lcom/android/settings_ext/dashboard/DashboardSummary;->mDashboard:Landroid/view/ViewGroup;
 
     const/4 v7, 0x0
 
@@ -169,7 +169,7 @@
 
     .line 123
     .local v12, "categoryLabel":Landroid/widget/TextView;
-    invoke-virtual {v10, v4}, Lcom/android/settings/dashboard/DashboardCategory;->getTitle(Landroid/content/res/Resources;)Ljava/lang/CharSequence;
+    invoke-virtual {v10, v4}, Lcom/android/settings_ext/dashboard/DashboardCategory;->getTitle(Landroid/content/res/Resources;)Ljava/lang/CharSequence;
 
     move-result-object v2
 
@@ -186,7 +186,7 @@
 
     .line 128
     .local v11, "categoryContent":Landroid/view/ViewGroup;
-    invoke-virtual {v10}, Lcom/android/settings/dashboard/DashboardCategory;->getTilesCount()I
+    invoke-virtual {v10}, Lcom/android/settings_ext/dashboard/DashboardCategory;->getTilesCount()I
 
     move-result v22
 
@@ -201,31 +201,31 @@
     if-ge v15, v0, :cond_1
 
     .line 130
-    invoke-virtual {v10, v15}, Lcom/android/settings/dashboard/DashboardCategory;->getTile(I)Lcom/android/settings/dashboard/DashboardTile;
+    invoke-virtual {v10, v15}, Lcom/android/settings_ext/dashboard/DashboardCategory;->getTile(I)Lcom/android/settings_ext/dashboard/DashboardTile;
 
     move-result-object v5
 
     .line 132
-    .local v5, "tile":Lcom/android/settings/dashboard/DashboardTile;
-    new-instance v19, Lcom/android/settings/dashboard/DashboardTileView;
+    .local v5, "tile":Lcom/android/settings_ext/dashboard/DashboardTile;
+    new-instance v19, Lcom/android/settings_ext/dashboard/DashboardTileView;
 
     move-object/from16 v0, v19
 
     move-object/from16 v1, p1
 
-    invoke-direct {v0, v1}, Lcom/android/settings/dashboard/DashboardTileView;-><init>(Landroid/content/Context;)V
+    invoke-direct {v0, v1}, Lcom/android/settings_ext/dashboard/DashboardTileView;-><init>(Landroid/content/Context;)V
 
     .line 133
-    .local v19, "tileView":Lcom/android/settings/dashboard/DashboardTileView;
-    invoke-virtual/range {v19 .. v19}, Lcom/android/settings/dashboard/DashboardTileView;->getImageView()Landroid/widget/ImageView;
+    .local v19, "tileView":Lcom/android/settings_ext/dashboard/DashboardTileView;
+    invoke-virtual/range {v19 .. v19}, Lcom/android/settings_ext/dashboard/DashboardTileView;->getImageView()Landroid/widget/ImageView;
 
     move-result-object v6
 
-    invoke-virtual/range {v19 .. v19}, Lcom/android/settings/dashboard/DashboardTileView;->getTitleTextView()Landroid/widget/TextView;
+    invoke-virtual/range {v19 .. v19}, Lcom/android/settings_ext/dashboard/DashboardTileView;->getTitleTextView()Landroid/widget/TextView;
 
     move-result-object v7
 
-    invoke-virtual/range {v19 .. v19}, Lcom/android/settings/dashboard/DashboardTileView;->getStatusTextView()Landroid/widget/TextView;
+    invoke-virtual/range {v19 .. v19}, Lcom/android/settings_ext/dashboard/DashboardTileView;->getStatusTextView()Landroid/widget/TextView;
 
     move-result-object v8
 
@@ -233,12 +233,12 @@
 
     move-object/from16 v3, p1
 
-    invoke-direct/range {v2 .. v8}, Lcom/android/settings/dashboard/DashboardSummary;->updateTileView(Landroid/content/Context;Landroid/content/res/Resources;Lcom/android/settings/dashboard/DashboardTile;Landroid/widget/ImageView;Landroid/widget/TextView;Landroid/widget/TextView;)V
+    invoke-direct/range {v2 .. v8}, Lcom/android/settings_ext/dashboard/DashboardSummary;->updateTileView(Landroid/content/Context;Landroid/content/res/Resources;Lcom/android/settings_ext/dashboard/DashboardTile;Landroid/widget/ImageView;Landroid/widget/TextView;Landroid/widget/TextView;)V
 
     .line 136
     move-object/from16 v0, v19
 
-    invoke-virtual {v0, v5}, Lcom/android/settings/dashboard/DashboardTileView;->setTile(Lcom/android/settings/dashboard/DashboardTile;)V
+    invoke-virtual {v0, v5}, Lcom/android/settings_ext/dashboard/DashboardTileView;->setTile(Lcom/android/settings_ext/dashboard/DashboardTile;)V
 
     .line 138
     move-object/from16 v0, v19
@@ -251,12 +251,12 @@
     goto :goto_2
 
     .line 142
-    .end local v5    # "tile":Lcom/android/settings/dashboard/DashboardTile;
-    .end local v19    # "tileView":Lcom/android/settings/dashboard/DashboardTileView;
+    .end local v5    # "tile":Lcom/android/settings_ext/dashboard/DashboardTile;
+    .end local v19    # "tileView":Lcom/android/settings_ext/dashboard/DashboardTileView;
     :cond_1
     move-object/from16 v0, p0
 
-    iget-object v2, v0, Lcom/android/settings/dashboard/DashboardSummary;->mDashboard:Landroid/view/ViewGroup;
+    iget-object v2, v0, Lcom/android/settings_ext/dashboard/DashboardSummary;->mDashboard:Landroid/view/ViewGroup;
 
     invoke-virtual {v2, v13}, Landroid/view/ViewGroup;->addView(Landroid/view/View;)V
 
@@ -266,7 +266,7 @@
     goto :goto_1
 
     .line 144
-    .end local v10    # "category":Lcom/android/settings/dashboard/DashboardCategory;
+    .end local v10    # "category":Lcom/android/settings_ext/dashboard/DashboardCategory;
     .end local v11    # "categoryContent":Landroid/view/ViewGroup;
     .end local v12    # "categoryLabel":Landroid/widget/TextView;
     .end local v13    # "categoryView":Landroid/view/View;
@@ -321,7 +321,7 @@
     const/4 v1, 0x1
 
     .line 170
-    iget-object v0, p0, Lcom/android/settings/dashboard/DashboardSummary;->mHandler:Landroid/os/Handler;
+    iget-object v0, p0, Lcom/android/settings_ext/dashboard/DashboardSummary;->mHandler:Landroid/os/Handler;
 
     invoke-virtual {v0, v1}, Landroid/os/Handler;->hasMessages(I)Z
 
@@ -330,7 +330,7 @@
     if-nez v0, :cond_0
 
     .line 171
-    iget-object v0, p0, Lcom/android/settings/dashboard/DashboardSummary;->mHandler:Landroid/os/Handler;
+    iget-object v0, p0, Lcom/android/settings_ext/dashboard/DashboardSummary;->mHandler:Landroid/os/Handler;
 
     invoke-virtual {v0, v1}, Landroid/os/Handler;->sendEmptyMessage(I)Z
 
@@ -339,11 +339,11 @@
     return-void
 .end method
 
-.method private updateTileView(Landroid/content/Context;Landroid/content/res/Resources;Lcom/android/settings/dashboard/DashboardTile;Landroid/widget/ImageView;Landroid/widget/TextView;Landroid/widget/TextView;)V
+.method private updateTileView(Landroid/content/Context;Landroid/content/res/Resources;Lcom/android/settings_ext/dashboard/DashboardTile;Landroid/widget/ImageView;Landroid/widget/TextView;Landroid/widget/TextView;)V
     .locals 3
     .param p1, "context"    # Landroid/content/Context;
     .param p2, "res"    # Landroid/content/res/Resources;
-    .param p3, "tile"    # Lcom/android/settings/dashboard/DashboardTile;
+    .param p3, "tile"    # Lcom/android/settings_ext/dashboard/DashboardTile;
     .param p4, "tileIcon"    # Landroid/widget/ImageView;
     .param p5, "tileTextView"    # Landroid/widget/TextView;
     .param p6, "statusTextView"    # Landroid/widget/TextView;
@@ -352,25 +352,25 @@
     const/4 v2, 0x0
 
     .line 151
-    iget v1, p3, Lcom/android/settings/dashboard/DashboardTile;->iconRes:I
+    iget v1, p3, Lcom/android/settings_ext/dashboard/DashboardTile;->iconRes:I
 
     if-lez v1, :cond_0
 
     .line 152
-    iget v1, p3, Lcom/android/settings/dashboard/DashboardTile;->iconRes:I
+    iget v1, p3, Lcom/android/settings_ext/dashboard/DashboardTile;->iconRes:I
 
     invoke-virtual {p4, v1}, Landroid/widget/ImageView;->setImageResource(I)V
 
     .line 158
     :goto_0
-    invoke-virtual {p3, p2}, Lcom/android/settings/dashboard/DashboardTile;->getTitle(Landroid/content/res/Resources;)Ljava/lang/CharSequence;
+    invoke-virtual {p3, p2}, Lcom/android/settings_ext/dashboard/DashboardTile;->getTitle(Landroid/content/res/Resources;)Ljava/lang/CharSequence;
 
     move-result-object v1
 
     invoke-virtual {p5, v1}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
     .line 160
-    invoke-virtual {p3, p2}, Lcom/android/settings/dashboard/DashboardTile;->getSummary(Landroid/content/res/Resources;)Ljava/lang/CharSequence;
+    invoke-virtual {p3, p2}, Lcom/android/settings_ext/dashboard/DashboardTile;->getSummary(Landroid/content/res/Resources;)Ljava/lang/CharSequence;
 
     move-result-object v0
 
@@ -424,7 +424,7 @@
 
     .prologue
     .line 92
-    iput-object p1, p0, Lcom/android/settings/dashboard/DashboardSummary;->mLayoutInflater:Landroid/view/LayoutInflater;
+    iput-object p1, p0, Lcom/android/settings_ext/dashboard/DashboardSummary;->mLayoutInflater:Landroid/view/LayoutInflater;
 
     .line 94
     const v1, 0x7f040030
@@ -445,7 +445,7 @@
 
     check-cast v1, Landroid/view/ViewGroup;
 
-    iput-object v1, p0, Lcom/android/settings/dashboard/DashboardSummary;->mDashboard:Landroid/view/ViewGroup;
+    iput-object v1, p0, Lcom/android/settings_ext/dashboard/DashboardSummary;->mDashboard:Landroid/view/ViewGroup;
 
     .line 97
     return-object v0
@@ -459,11 +459,11 @@
     invoke-super {p0}, Landroid/app/Fragment;->onPause()V
 
     .line 85
-    invoke-virtual {p0}, Lcom/android/settings/dashboard/DashboardSummary;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/dashboard/DashboardSummary;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/android/settings/dashboard/DashboardSummary;->mHomePackageReceiver:Lcom/android/settings/dashboard/DashboardSummary$HomePackageReceiver;
+    iget-object v1, p0, Lcom/android/settings_ext/dashboard/DashboardSummary;->mHomePackageReceiver:Lcom/android/settings_ext/dashboard/DashboardSummary$HomePackageReceiver;
 
     invoke-virtual {v0, v1}, Landroid/app/Activity;->unregisterReceiver(Landroid/content/BroadcastReceiver;)V
 
@@ -479,7 +479,7 @@
     invoke-super {p0}, Landroid/app/Fragment;->onResume()V
 
     .line 71
-    invoke-direct {p0}, Lcom/android/settings/dashboard/DashboardSummary;->sendRebuildUI()V
+    invoke-direct {p0}, Lcom/android/settings_ext/dashboard/DashboardSummary;->sendRebuildUI()V
 
     .line 73
     new-instance v0, Landroid/content/IntentFilter;
@@ -510,11 +510,11 @@
     invoke-virtual {v0, v1}, Landroid/content/IntentFilter;->addDataScheme(Ljava/lang/String;)V
 
     .line 78
-    invoke-virtual {p0}, Lcom/android/settings/dashboard/DashboardSummary;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/dashboard/DashboardSummary;->getActivity()Landroid/app/Activity;
 
     move-result-object v1
 
-    iget-object v2, p0, Lcom/android/settings/dashboard/DashboardSummary;->mHomePackageReceiver:Lcom/android/settings/dashboard/DashboardSummary$HomePackageReceiver;
+    iget-object v2, p0, Lcom/android/settings_ext/dashboard/DashboardSummary;->mHomePackageReceiver:Lcom/android/settings_ext/dashboard/DashboardSummary$HomePackageReceiver;
 
     invoke-virtual {v1, v2, v0}, Landroid/app/Activity;->registerReceiver(Landroid/content/BroadcastReceiver;Landroid/content/IntentFilter;)Landroid/content/Intent;
 

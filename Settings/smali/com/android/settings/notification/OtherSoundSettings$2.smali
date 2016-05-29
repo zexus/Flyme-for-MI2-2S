@@ -1,11 +1,11 @@
-.class final Lcom/android/settings/notification/OtherSoundSettings$2;
-.super Lcom/android/settings/notification/SettingPref;
+.class final Lcom/android/settings_ext/notification/OtherSoundSettings$2;
+.super Lcom/android/settings_ext/notification/SettingPref;
 .source "OtherSoundSettings.java"
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/android/settings/notification/OtherSoundSettings;
+    value = Lcom/android/settings_ext/notification/OtherSoundSettings;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -25,7 +25,7 @@
 
     .prologue
     .line 80
-    invoke-direct/range {p0 .. p5}, Lcom/android/settings/notification/SettingPref;-><init>(ILjava/lang/String;Ljava/lang/String;I[I)V
+    invoke-direct/range {p0 .. p5}, Lcom/android/settings_ext/notification/SettingPref;-><init>(ILjava/lang/String;Ljava/lang/String;I[I)V
 
     return-void
 .end method
@@ -38,8 +38,8 @@
 
     .prologue
     .line 83
-    # invokes: Lcom/android/settings/notification/OtherSoundSettings;->hasDockSettings(Landroid/content/Context;)Z
-    invoke-static {p1}, Lcom/android/settings/notification/OtherSoundSettings;->access$000(Landroid/content/Context;)Z
+    # invokes: Lcom/android/settings_ext/notification/OtherSoundSettings;->hasDockSettings(Landroid/content/Context;)Z
+    invoke-static {p1}, Lcom/android/settings_ext/notification/OtherSoundSettings;->access$000(Landroid/content/Context;)Z
 
     move-result v0
 

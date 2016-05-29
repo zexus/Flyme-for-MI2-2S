@@ -1,4 +1,4 @@
-.class Lcom/android/settings/RadioInfo$CellInfoListRateHandler;
+.class Lcom/android/settings_ext/RadioInfo$CellInfoListRateHandler;
 .super Ljava/lang/Object;
 .source "RadioInfo.java"
 
@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/android/settings/RadioInfo;
+    value = Lcom/android/settings_ext/RadioInfo;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -22,16 +22,16 @@
 
 .field rates:[I
 
-.field final synthetic this$0:Lcom/android/settings/RadioInfo;
+.field final synthetic this$0:Lcom/android/settings_ext/RadioInfo;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/RadioInfo;)V
+.method constructor <init>(Lcom/android/settings_ext/RadioInfo;)V
     .locals 1
 
     .prologue
     .line 942
-    iput-object p1, p0, Lcom/android/settings/RadioInfo$CellInfoListRateHandler;->this$0:Lcom/android/settings/RadioInfo;
+    iput-object p1, p0, Lcom/android/settings_ext/RadioInfo$CellInfoListRateHandler;->this$0:Lcom/android/settings_ext/RadioInfo;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -42,12 +42,12 @@
 
     fill-array-data v0, :array_0
 
-    iput-object v0, p0, Lcom/android/settings/RadioInfo$CellInfoListRateHandler;->rates:[I
+    iput-object v0, p0, Lcom/android/settings_ext/RadioInfo$CellInfoListRateHandler;->rates:[I
 
     .line 944
     const/4 v0, 0x0
 
-    iput v0, p0, Lcom/android/settings/RadioInfo$CellInfoListRateHandler;->index:I
+    iput v0, p0, Lcom/android/settings_ext/RadioInfo$CellInfoListRateHandler;->index:I
 
     return-void
 
@@ -69,9 +69,9 @@
 
     .prologue
     .line 947
-    iget-object v0, p0, Lcom/android/settings/RadioInfo$CellInfoListRateHandler;->rates:[I
+    iget-object v0, p0, Lcom/android/settings_ext/RadioInfo$CellInfoListRateHandler;->rates:[I
 
-    iget v1, p0, Lcom/android/settings/RadioInfo$CellInfoListRateHandler;->index:I
+    iget v1, p0, Lcom/android/settings_ext/RadioInfo$CellInfoListRateHandler;->index:I
 
     aget v0, v0, v1
 
@@ -84,16 +84,16 @@
 
     .prologue
     .line 952
-    iget v0, p0, Lcom/android/settings/RadioInfo$CellInfoListRateHandler;->index:I
+    iget v0, p0, Lcom/android/settings_ext/RadioInfo$CellInfoListRateHandler;->index:I
 
     add-int/lit8 v0, v0, 0x1
 
-    iput v0, p0, Lcom/android/settings/RadioInfo$CellInfoListRateHandler;->index:I
+    iput v0, p0, Lcom/android/settings_ext/RadioInfo$CellInfoListRateHandler;->index:I
 
     .line 953
-    iget v0, p0, Lcom/android/settings/RadioInfo$CellInfoListRateHandler;->index:I
+    iget v0, p0, Lcom/android/settings_ext/RadioInfo$CellInfoListRateHandler;->index:I
 
-    iget-object v1, p0, Lcom/android/settings/RadioInfo$CellInfoListRateHandler;->rates:[I
+    iget-object v1, p0, Lcom/android/settings_ext/RadioInfo$CellInfoListRateHandler;->rates:[I
 
     array-length v1, v1
 
@@ -102,30 +102,30 @@
     .line 954
     const/4 v0, 0x0
 
-    iput v0, p0, Lcom/android/settings/RadioInfo$CellInfoListRateHandler;->index:I
+    iput v0, p0, Lcom/android/settings_ext/RadioInfo$CellInfoListRateHandler;->index:I
 
     .line 956
     :cond_0
-    iget-object v0, p0, Lcom/android/settings/RadioInfo$CellInfoListRateHandler;->this$0:Lcom/android/settings/RadioInfo;
+    iget-object v0, p0, Lcom/android/settings_ext/RadioInfo$CellInfoListRateHandler;->this$0:Lcom/android/settings_ext/RadioInfo;
 
-    # getter for: Lcom/android/settings/RadioInfo;->phone:Lcom/android/internal/telephony/Phone;
-    invoke-static {v0}, Lcom/android/settings/RadioInfo;->access$1900(Lcom/android/settings/RadioInfo;)Lcom/android/internal/telephony/Phone;
+    # getter for: Lcom/android/settings_ext/RadioInfo;->phone:Lcom/android/internal/telephony/Phone;
+    invoke-static {v0}, Lcom/android/settings_ext/RadioInfo;->access$1900(Lcom/android/settings_ext/RadioInfo;)Lcom/android/internal/telephony/Phone;
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/android/settings/RadioInfo$CellInfoListRateHandler;->rates:[I
+    iget-object v1, p0, Lcom/android/settings_ext/RadioInfo$CellInfoListRateHandler;->rates:[I
 
-    iget v2, p0, Lcom/android/settings/RadioInfo$CellInfoListRateHandler;->index:I
+    iget v2, p0, Lcom/android/settings_ext/RadioInfo$CellInfoListRateHandler;->index:I
 
     aget v1, v1, v2
 
     invoke-interface {v0, v1}, Lcom/android/internal/telephony/Phone;->setCellInfoListRate(I)V
 
     .line 957
-    iget-object v0, p0, Lcom/android/settings/RadioInfo$CellInfoListRateHandler;->this$0:Lcom/android/settings/RadioInfo;
+    iget-object v0, p0, Lcom/android/settings_ext/RadioInfo$CellInfoListRateHandler;->this$0:Lcom/android/settings_ext/RadioInfo;
 
-    # invokes: Lcom/android/settings/RadioInfo;->updateCellInfoListRate()V
-    invoke-static {v0}, Lcom/android/settings/RadioInfo;->access$3500(Lcom/android/settings/RadioInfo;)V
+    # invokes: Lcom/android/settings_ext/RadioInfo;->updateCellInfoListRate()V
+    invoke-static {v0}, Lcom/android/settings_ext/RadioInfo;->access$3500(Lcom/android/settings_ext/RadioInfo;)V
 
     .line 958
     return-void

@@ -1,11 +1,11 @@
-.class public interface abstract Lcom/android/settings/AppWidgetLoader$ItemConstructor;
+.class public interface abstract Lcom/android/settings_ext/AppWidgetLoader$ItemConstructor;
 .super Ljava/lang/Object;
 .source "AppWidgetLoader.java"
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/android/settings/AppWidgetLoader;
+    value = Lcom/android/settings_ext/AppWidgetLoader;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;

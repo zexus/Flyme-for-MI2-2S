@@ -1,4 +1,4 @@
-.class final Lcom/android/settings/bluetooth/A2dpProfile$A2dpServiceListener;
+.class final Lcom/android/settings_ext/bluetooth/A2dpProfile$A2dpServiceListener;
 .super Ljava/lang/Object;
 .source "A2dpProfile.java"
 
@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/android/settings/bluetooth/A2dpProfile;
+    value = Lcom/android/settings_ext/bluetooth/A2dpProfile;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -18,30 +18,30 @@
 
 
 # instance fields
-.field final synthetic this$0:Lcom/android/settings/bluetooth/A2dpProfile;
+.field final synthetic this$0:Lcom/android/settings_ext/bluetooth/A2dpProfile;
 
 
 # direct methods
-.method private constructor <init>(Lcom/android/settings/bluetooth/A2dpProfile;)V
+.method private constructor <init>(Lcom/android/settings_ext/bluetooth/A2dpProfile;)V
     .locals 0
 
     .prologue
     .line 56
-    iput-object p1, p0, Lcom/android/settings/bluetooth/A2dpProfile$A2dpServiceListener;->this$0:Lcom/android/settings/bluetooth/A2dpProfile;
+    iput-object p1, p0, Lcom/android/settings_ext/bluetooth/A2dpProfile$A2dpServiceListener;->this$0:Lcom/android/settings_ext/bluetooth/A2dpProfile;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
 .end method
 
-.method synthetic constructor <init>(Lcom/android/settings/bluetooth/A2dpProfile;Lcom/android/settings/bluetooth/A2dpProfile$1;)V
+.method synthetic constructor <init>(Lcom/android/settings_ext/bluetooth/A2dpProfile;Lcom/android/settings_ext/bluetooth/A2dpProfile$1;)V
     .locals 0
-    .param p1, "x0"    # Lcom/android/settings/bluetooth/A2dpProfile;
-    .param p2, "x1"    # Lcom/android/settings/bluetooth/A2dpProfile$1;
+    .param p1, "x0"    # Lcom/android/settings_ext/bluetooth/A2dpProfile;
+    .param p2, "x1"    # Lcom/android/settings_ext/bluetooth/A2dpProfile$1;
 
     .prologue
     .line 56
-    invoke-direct {p0, p1}, Lcom/android/settings/bluetooth/A2dpProfile$A2dpServiceListener;-><init>(Lcom/android/settings/bluetooth/A2dpProfile;)V
+    invoke-direct {p0, p1}, Lcom/android/settings_ext/bluetooth/A2dpProfile$A2dpServiceListener;-><init>(Lcom/android/settings_ext/bluetooth/A2dpProfile;)V
 
     return-void
 .end method
@@ -55,8 +55,8 @@
 
     .prologue
     .line 60
-    # getter for: Lcom/android/settings/bluetooth/A2dpProfile;->V:Z
-    invoke-static {}, Lcom/android/settings/bluetooth/A2dpProfile;->access$000()Z
+    # getter for: Lcom/android/settings_ext/bluetooth/A2dpProfile;->V:Z
+    invoke-static {}, Lcom/android/settings_ext/bluetooth/A2dpProfile;->access$000()Z
 
     move-result v3
 
@@ -70,19 +70,19 @@
 
     .line 61
     :cond_0
-    iget-object v3, p0, Lcom/android/settings/bluetooth/A2dpProfile$A2dpServiceListener;->this$0:Lcom/android/settings/bluetooth/A2dpProfile;
+    iget-object v3, p0, Lcom/android/settings_ext/bluetooth/A2dpProfile$A2dpServiceListener;->this$0:Lcom/android/settings_ext/bluetooth/A2dpProfile;
 
     check-cast p2, Landroid/bluetooth/BluetoothA2dp;
 
     .end local p2    # "proxy":Landroid/bluetooth/BluetoothProfile;
-    # setter for: Lcom/android/settings/bluetooth/A2dpProfile;->mService:Landroid/bluetooth/BluetoothA2dp;
-    invoke-static {v3, p2}, Lcom/android/settings/bluetooth/A2dpProfile;->access$102(Lcom/android/settings/bluetooth/A2dpProfile;Landroid/bluetooth/BluetoothA2dp;)Landroid/bluetooth/BluetoothA2dp;
+    # setter for: Lcom/android/settings_ext/bluetooth/A2dpProfile;->mService:Landroid/bluetooth/BluetoothA2dp;
+    invoke-static {v3, p2}, Lcom/android/settings_ext/bluetooth/A2dpProfile;->access$102(Lcom/android/settings_ext/bluetooth/A2dpProfile;Landroid/bluetooth/BluetoothA2dp;)Landroid/bluetooth/BluetoothA2dp;
 
     .line 63
-    iget-object v3, p0, Lcom/android/settings/bluetooth/A2dpProfile$A2dpServiceListener;->this$0:Lcom/android/settings/bluetooth/A2dpProfile;
+    iget-object v3, p0, Lcom/android/settings_ext/bluetooth/A2dpProfile$A2dpServiceListener;->this$0:Lcom/android/settings_ext/bluetooth/A2dpProfile;
 
-    # getter for: Lcom/android/settings/bluetooth/A2dpProfile;->mService:Landroid/bluetooth/BluetoothA2dp;
-    invoke-static {v3}, Lcom/android/settings/bluetooth/A2dpProfile;->access$100(Lcom/android/settings/bluetooth/A2dpProfile;)Landroid/bluetooth/BluetoothA2dp;
+    # getter for: Lcom/android/settings_ext/bluetooth/A2dpProfile;->mService:Landroid/bluetooth/BluetoothA2dp;
+    invoke-static {v3}, Lcom/android/settings_ext/bluetooth/A2dpProfile;->access$100(Lcom/android/settings_ext/bluetooth/A2dpProfile;)Landroid/bluetooth/BluetoothA2dp;
 
     move-result-object v3
 
@@ -110,19 +110,19 @@
 
     .line 66
     .local v2, "nextDevice":Landroid/bluetooth/BluetoothDevice;
-    iget-object v3, p0, Lcom/android/settings/bluetooth/A2dpProfile$A2dpServiceListener;->this$0:Lcom/android/settings/bluetooth/A2dpProfile;
+    iget-object v3, p0, Lcom/android/settings_ext/bluetooth/A2dpProfile$A2dpServiceListener;->this$0:Lcom/android/settings_ext/bluetooth/A2dpProfile;
 
-    # getter for: Lcom/android/settings/bluetooth/A2dpProfile;->mDeviceManager:Lcom/android/settings/bluetooth/CachedBluetoothDeviceManager;
-    invoke-static {v3}, Lcom/android/settings/bluetooth/A2dpProfile;->access$200(Lcom/android/settings/bluetooth/A2dpProfile;)Lcom/android/settings/bluetooth/CachedBluetoothDeviceManager;
+    # getter for: Lcom/android/settings_ext/bluetooth/A2dpProfile;->mDeviceManager:Lcom/android/settings_ext/bluetooth/CachedBluetoothDeviceManager;
+    invoke-static {v3}, Lcom/android/settings_ext/bluetooth/A2dpProfile;->access$200(Lcom/android/settings_ext/bluetooth/A2dpProfile;)Lcom/android/settings_ext/bluetooth/CachedBluetoothDeviceManager;
 
     move-result-object v3
 
-    invoke-virtual {v3, v2}, Lcom/android/settings/bluetooth/CachedBluetoothDeviceManager;->findDevice(Landroid/bluetooth/BluetoothDevice;)Lcom/android/settings/bluetooth/CachedBluetoothDevice;
+    invoke-virtual {v3, v2}, Lcom/android/settings_ext/bluetooth/CachedBluetoothDeviceManager;->findDevice(Landroid/bluetooth/BluetoothDevice;)Lcom/android/settings_ext/bluetooth/CachedBluetoothDevice;
 
     move-result-object v0
 
     .line 68
-    .local v0, "device":Lcom/android/settings/bluetooth/CachedBluetoothDevice;
+    .local v0, "device":Lcom/android/settings_ext/bluetooth/CachedBluetoothDevice;
     if-nez v0, :cond_1
 
     .line 69
@@ -149,54 +149,54 @@
     invoke-static {v3, v4}, Landroid/util/Log;->w(Ljava/lang/String;Ljava/lang/String;)I
 
     .line 70
-    iget-object v3, p0, Lcom/android/settings/bluetooth/A2dpProfile$A2dpServiceListener;->this$0:Lcom/android/settings/bluetooth/A2dpProfile;
+    iget-object v3, p0, Lcom/android/settings_ext/bluetooth/A2dpProfile$A2dpServiceListener;->this$0:Lcom/android/settings_ext/bluetooth/A2dpProfile;
 
-    # getter for: Lcom/android/settings/bluetooth/A2dpProfile;->mDeviceManager:Lcom/android/settings/bluetooth/CachedBluetoothDeviceManager;
-    invoke-static {v3}, Lcom/android/settings/bluetooth/A2dpProfile;->access$200(Lcom/android/settings/bluetooth/A2dpProfile;)Lcom/android/settings/bluetooth/CachedBluetoothDeviceManager;
+    # getter for: Lcom/android/settings_ext/bluetooth/A2dpProfile;->mDeviceManager:Lcom/android/settings_ext/bluetooth/CachedBluetoothDeviceManager;
+    invoke-static {v3}, Lcom/android/settings_ext/bluetooth/A2dpProfile;->access$200(Lcom/android/settings_ext/bluetooth/A2dpProfile;)Lcom/android/settings_ext/bluetooth/CachedBluetoothDeviceManager;
 
     move-result-object v3
 
-    iget-object v4, p0, Lcom/android/settings/bluetooth/A2dpProfile$A2dpServiceListener;->this$0:Lcom/android/settings/bluetooth/A2dpProfile;
+    iget-object v4, p0, Lcom/android/settings_ext/bluetooth/A2dpProfile$A2dpServiceListener;->this$0:Lcom/android/settings_ext/bluetooth/A2dpProfile;
 
-    # getter for: Lcom/android/settings/bluetooth/A2dpProfile;->mLocalAdapter:Lcom/android/settings/bluetooth/LocalBluetoothAdapter;
-    invoke-static {v4}, Lcom/android/settings/bluetooth/A2dpProfile;->access$300(Lcom/android/settings/bluetooth/A2dpProfile;)Lcom/android/settings/bluetooth/LocalBluetoothAdapter;
+    # getter for: Lcom/android/settings_ext/bluetooth/A2dpProfile;->mLocalAdapter:Lcom/android/settings_ext/bluetooth/LocalBluetoothAdapter;
+    invoke-static {v4}, Lcom/android/settings_ext/bluetooth/A2dpProfile;->access$300(Lcom/android/settings_ext/bluetooth/A2dpProfile;)Lcom/android/settings_ext/bluetooth/LocalBluetoothAdapter;
 
     move-result-object v4
 
-    iget-object v5, p0, Lcom/android/settings/bluetooth/A2dpProfile$A2dpServiceListener;->this$0:Lcom/android/settings/bluetooth/A2dpProfile;
+    iget-object v5, p0, Lcom/android/settings_ext/bluetooth/A2dpProfile$A2dpServiceListener;->this$0:Lcom/android/settings_ext/bluetooth/A2dpProfile;
 
-    # getter for: Lcom/android/settings/bluetooth/A2dpProfile;->mProfileManager:Lcom/android/settings/bluetooth/LocalBluetoothProfileManager;
-    invoke-static {v5}, Lcom/android/settings/bluetooth/A2dpProfile;->access$400(Lcom/android/settings/bluetooth/A2dpProfile;)Lcom/android/settings/bluetooth/LocalBluetoothProfileManager;
+    # getter for: Lcom/android/settings_ext/bluetooth/A2dpProfile;->mProfileManager:Lcom/android/settings_ext/bluetooth/LocalBluetoothProfileManager;
+    invoke-static {v5}, Lcom/android/settings_ext/bluetooth/A2dpProfile;->access$400(Lcom/android/settings_ext/bluetooth/A2dpProfile;)Lcom/android/settings_ext/bluetooth/LocalBluetoothProfileManager;
 
     move-result-object v5
 
-    invoke-virtual {v3, v4, v5, v2}, Lcom/android/settings/bluetooth/CachedBluetoothDeviceManager;->addDevice(Lcom/android/settings/bluetooth/LocalBluetoothAdapter;Lcom/android/settings/bluetooth/LocalBluetoothProfileManager;Landroid/bluetooth/BluetoothDevice;)Lcom/android/settings/bluetooth/CachedBluetoothDevice;
+    invoke-virtual {v3, v4, v5, v2}, Lcom/android/settings_ext/bluetooth/CachedBluetoothDeviceManager;->addDevice(Lcom/android/settings_ext/bluetooth/LocalBluetoothAdapter;Lcom/android/settings_ext/bluetooth/LocalBluetoothProfileManager;Landroid/bluetooth/BluetoothDevice;)Lcom/android/settings_ext/bluetooth/CachedBluetoothDevice;
 
     move-result-object v0
 
     .line 72
     :cond_1
-    iget-object v3, p0, Lcom/android/settings/bluetooth/A2dpProfile$A2dpServiceListener;->this$0:Lcom/android/settings/bluetooth/A2dpProfile;
+    iget-object v3, p0, Lcom/android/settings_ext/bluetooth/A2dpProfile$A2dpServiceListener;->this$0:Lcom/android/settings_ext/bluetooth/A2dpProfile;
 
     const/4 v4, 0x2
 
-    invoke-virtual {v0, v3, v4}, Lcom/android/settings/bluetooth/CachedBluetoothDevice;->onProfileStateChanged(Lcom/android/settings/bluetooth/LocalBluetoothProfile;I)V
+    invoke-virtual {v0, v3, v4}, Lcom/android/settings_ext/bluetooth/CachedBluetoothDevice;->onProfileStateChanged(Lcom/android/settings_ext/bluetooth/LocalBluetoothProfile;I)V
 
     .line 73
-    invoke-virtual {v0}, Lcom/android/settings/bluetooth/CachedBluetoothDevice;->refresh()V
+    invoke-virtual {v0}, Lcom/android/settings_ext/bluetooth/CachedBluetoothDevice;->refresh()V
 
     goto :goto_0
 
     .line 75
-    .end local v0    # "device":Lcom/android/settings/bluetooth/CachedBluetoothDevice;
+    .end local v0    # "device":Lcom/android/settings_ext/bluetooth/CachedBluetoothDevice;
     .end local v2    # "nextDevice":Landroid/bluetooth/BluetoothDevice;
     :cond_2
-    iget-object v3, p0, Lcom/android/settings/bluetooth/A2dpProfile$A2dpServiceListener;->this$0:Lcom/android/settings/bluetooth/A2dpProfile;
+    iget-object v3, p0, Lcom/android/settings_ext/bluetooth/A2dpProfile$A2dpServiceListener;->this$0:Lcom/android/settings_ext/bluetooth/A2dpProfile;
 
     const/4 v4, 0x1
 
-    # setter for: Lcom/android/settings/bluetooth/A2dpProfile;->mIsProfileReady:Z
-    invoke-static {v3, v4}, Lcom/android/settings/bluetooth/A2dpProfile;->access$502(Lcom/android/settings/bluetooth/A2dpProfile;Z)Z
+    # setter for: Lcom/android/settings_ext/bluetooth/A2dpProfile;->mIsProfileReady:Z
+    invoke-static {v3, v4}, Lcom/android/settings_ext/bluetooth/A2dpProfile;->access$502(Lcom/android/settings_ext/bluetooth/A2dpProfile;Z)Z
 
     .line 76
     return-void
@@ -208,8 +208,8 @@
 
     .prologue
     .line 79
-    # getter for: Lcom/android/settings/bluetooth/A2dpProfile;->V:Z
-    invoke-static {}, Lcom/android/settings/bluetooth/A2dpProfile;->access$000()Z
+    # getter for: Lcom/android/settings_ext/bluetooth/A2dpProfile;->V:Z
+    invoke-static {}, Lcom/android/settings_ext/bluetooth/A2dpProfile;->access$000()Z
 
     move-result v0
 
@@ -223,12 +223,12 @@
 
     .line 80
     :cond_0
-    iget-object v0, p0, Lcom/android/settings/bluetooth/A2dpProfile$A2dpServiceListener;->this$0:Lcom/android/settings/bluetooth/A2dpProfile;
+    iget-object v0, p0, Lcom/android/settings_ext/bluetooth/A2dpProfile$A2dpServiceListener;->this$0:Lcom/android/settings_ext/bluetooth/A2dpProfile;
 
     const/4 v1, 0x0
 
-    # setter for: Lcom/android/settings/bluetooth/A2dpProfile;->mIsProfileReady:Z
-    invoke-static {v0, v1}, Lcom/android/settings/bluetooth/A2dpProfile;->access$502(Lcom/android/settings/bluetooth/A2dpProfile;Z)Z
+    # setter for: Lcom/android/settings_ext/bluetooth/A2dpProfile;->mIsProfileReady:Z
+    invoke-static {v0, v1}, Lcom/android/settings_ext/bluetooth/A2dpProfile;->access$502(Lcom/android/settings_ext/bluetooth/A2dpProfile;Z)Z
 
     .line 81
     return-void

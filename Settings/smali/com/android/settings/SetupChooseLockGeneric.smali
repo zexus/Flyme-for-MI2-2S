@@ -1,5 +1,5 @@
-.class public Lcom/android/settings/SetupChooseLockGeneric;
-.super Lcom/android/settings/ChooseLockGeneric;
+.class public Lcom/android/settings_ext/SetupChooseLockGeneric;
+.super Lcom/android/settings_ext/ChooseLockGeneric;
 .source "SetupChooseLockGeneric.java"
 
 # interfaces
@@ -9,7 +9,7 @@
 # annotations
 .annotation system Ldalvik/annotation/MemberClasses;
     value = {
-        Lcom/android/settings/SetupChooseLockGeneric$SetupChooseLockGenericFragment;
+        Lcom/android/settings_ext/SetupChooseLockGeneric$SetupChooseLockGenericFragment;
     }
 .end annotation
 
@@ -20,7 +20,7 @@
 
     .prologue
     .line 40
-    invoke-direct {p0}, Lcom/android/settings/ChooseLockGeneric;-><init>()V
+    invoke-direct {p0}, Lcom/android/settings_ext/ChooseLockGeneric;-><init>()V
 
     .line 74
     return-void
@@ -42,7 +42,7 @@
 
     .prologue
     .line 50
-    const-class v0, Lcom/android/settings/SetupChooseLockGeneric$SetupChooseLockGenericFragment;
+    const-class v0, Lcom/android/settings_ext/SetupChooseLockGeneric$SetupChooseLockGenericFragment;
 
     return-object v0
 .end method
@@ -53,7 +53,7 @@
 
     .prologue
     .line 45
-    const-class v0, Lcom/android/settings/SetupChooseLockGeneric$SetupChooseLockGenericFragment;
+    const-class v0, Lcom/android/settings_ext/SetupChooseLockGeneric$SetupChooseLockGenericFragment;
 
     invoke-virtual {v0}, Ljava/lang/Class;->getName()Ljava/lang/String;
 
@@ -74,16 +74,16 @@
 
     .prologue
     .line 55
-    invoke-virtual {p0}, Lcom/android/settings/SetupChooseLockGeneric;->getIntent()Landroid/content/Intent;
+    invoke-virtual {p0}, Lcom/android/settings_ext/SetupChooseLockGeneric;->getIntent()Landroid/content/Intent;
 
     move-result-object v0
 
-    invoke-static {v0, p2}, Lcom/android/settings/SetupWizardUtils;->getTheme(Landroid/content/Intent;I)I
+    invoke-static {v0, p2}, Lcom/android/settings_ext/SetupWizardUtils;->getTheme(Landroid/content/Intent;I)I
 
     move-result p2
 
     .line 56
-    invoke-super {p0, p1, p2, p3}, Lcom/android/settings/ChooseLockGeneric;->onApplyThemeResource(Landroid/content/res/Resources$Theme;IZ)V
+    invoke-super {p0, p1, p2, p3}, Lcom/android/settings_ext/ChooseLockGeneric;->onApplyThemeResource(Landroid/content/res/Resources$Theme;IZ)V
 
     .line 57
     return-void
@@ -94,7 +94,7 @@
 
     .prologue
     .line 67
-    invoke-virtual {p0}, Lcom/android/settings/SetupChooseLockGeneric;->onBackPressed()V
+    invoke-virtual {p0}, Lcom/android/settings_ext/SetupChooseLockGeneric;->onBackPressed()V
 
     .line 68
     return-void
@@ -114,7 +114,7 @@
 
     .prologue
     .line 61
-    invoke-static {p0, p1}, Lcom/android/settings/SetupWizardUtils;->setImmersiveMode(Landroid/app/Activity;Lcom/android/setupwizard/navigationbar/SetupWizardNavBar;)V
+    invoke-static {p0, p1}, Lcom/android/settings_ext/SetupWizardUtils;->setImmersiveMode(Landroid/app/Activity;Lcom/android/setupwizard/navigationbar/SetupWizardNavBar;)V
 
     .line 62
     invoke-virtual {p1}, Lcom/android/setupwizard/navigationbar/SetupWizardNavBar;->getNextButton()Landroid/widget/Button;

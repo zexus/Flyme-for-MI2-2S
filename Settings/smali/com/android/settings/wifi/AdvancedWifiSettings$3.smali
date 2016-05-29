@@ -1,4 +1,4 @@
-.class Lcom/android/settings/wifi/AdvancedWifiSettings$3;
+.class Lcom/android/settings_ext/wifi/AdvancedWifiSettings$3;
 .super Ljava/lang/Object;
 .source "AdvancedWifiSettings.java"
 
@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/android/settings/wifi/AdvancedWifiSettings;->initPreferences()V
+    value = Lcom/android/settings_ext/wifi/AdvancedWifiSettings;->initPreferences()V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -18,16 +18,16 @@
 
 
 # instance fields
-.field final synthetic this$0:Lcom/android/settings/wifi/AdvancedWifiSettings;
+.field final synthetic this$0:Lcom/android/settings_ext/wifi/AdvancedWifiSettings;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/wifi/AdvancedWifiSettings;)V
+.method constructor <init>(Lcom/android/settings_ext/wifi/AdvancedWifiSettings;)V
     .locals 0
 
     .prologue
     .line 175
-    iput-object p1, p0, Lcom/android/settings/wifi/AdvancedWifiSettings$3;->this$0:Lcom/android/settings/wifi/AdvancedWifiSettings;
+    iput-object p1, p0, Lcom/android/settings_ext/wifi/AdvancedWifiSettings$3;->this$0:Lcom/android/settings_ext/wifi/AdvancedWifiSettings;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -42,12 +42,12 @@
 
     .prologue
     .line 177
-    iget-object v0, p0, Lcom/android/settings/wifi/AdvancedWifiSettings$3;->this$0:Lcom/android/settings/wifi/AdvancedWifiSettings;
+    iget-object v0, p0, Lcom/android/settings_ext/wifi/AdvancedWifiSettings$3;->this$0:Lcom/android/settings_ext/wifi/AdvancedWifiSettings;
 
     const/4 v1, 0x2
 
-    # invokes: Lcom/android/settings/wifi/AdvancedWifiSettings;->showDialog(I)V
-    invoke-static {v0, v1}, Lcom/android/settings/wifi/AdvancedWifiSettings;->access$200(Lcom/android/settings/wifi/AdvancedWifiSettings;I)V
+    # invokes: Lcom/android/settings_ext/wifi/AdvancedWifiSettings;->showDialog(I)V
+    invoke-static {v0, v1}, Lcom/android/settings_ext/wifi/AdvancedWifiSettings;->access$200(Lcom/android/settings_ext/wifi/AdvancedWifiSettings;I)V
 
     .line 178
     const/4 v0, 0x1

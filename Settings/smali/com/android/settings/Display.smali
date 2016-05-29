@@ -1,4 +1,4 @@
-.class public Lcom/android/settings/Display;
+.class public Lcom/android/settings_ext/Display;
 .super Landroid/app/Activity;
 .source "Display.java"
 
@@ -29,40 +29,40 @@
     invoke-direct {p0}, Landroid/app/Activity;-><init>()V
 
     .line 114
-    new-instance v0, Lcom/android/settings/Display$1;
+    new-instance v0, Lcom/android/settings_ext/Display$1;
 
-    invoke-direct {v0, p0}, Lcom/android/settings/Display$1;-><init>(Lcom/android/settings/Display;)V
+    invoke-direct {v0, p0}, Lcom/android/settings_ext/Display$1;-><init>(Lcom/android/settings_ext/Display;)V
 
-    iput-object v0, p0, Lcom/android/settings/Display;->mFontSizeChanged:Landroid/widget/AdapterView$OnItemSelectedListener;
+    iput-object v0, p0, Lcom/android/settings_ext/Display;->mFontSizeChanged:Landroid/widget/AdapterView$OnItemSelectedListener;
 
     .line 137
     new-instance v0, Landroid/content/res/Configuration;
 
     invoke-direct {v0}, Landroid/content/res/Configuration;-><init>()V
 
-    iput-object v0, p0, Lcom/android/settings/Display;->mCurConfig:Landroid/content/res/Configuration;
+    iput-object v0, p0, Lcom/android/settings_ext/Display;->mCurConfig:Landroid/content/res/Configuration;
 
     return-void
 .end method
 
-.method static synthetic access$000(Lcom/android/settings/Display;)Landroid/content/res/Configuration;
+.method static synthetic access$000(Lcom/android/settings_ext/Display;)Landroid/content/res/Configuration;
     .locals 1
-    .param p0, "x0"    # Lcom/android/settings/Display;
+    .param p0, "x0"    # Lcom/android/settings_ext/Display;
 
     .prologue
     .line 35
-    iget-object v0, p0, Lcom/android/settings/Display;->mCurConfig:Landroid/content/res/Configuration;
+    iget-object v0, p0, Lcom/android/settings_ext/Display;->mCurConfig:Landroid/content/res/Configuration;
 
     return-object v0
 .end method
 
-.method static synthetic access$100(Lcom/android/settings/Display;)V
+.method static synthetic access$100(Lcom/android/settings_ext/Display;)V
     .locals 0
-    .param p0, "x0"    # Lcom/android/settings/Display;
+    .param p0, "x0"    # Lcom/android/settings_ext/Display;
 
     .prologue
     .line 35
-    invoke-direct {p0}, Lcom/android/settings/Display;->updateFontScale()V
+    invoke-direct {p0}, Lcom/android/settings_ext/Display;->updateFontScale()V
 
     return-void
 .end method
@@ -72,13 +72,13 @@
 
     .prologue
     .line 99
-    iget-object v1, p0, Lcom/android/settings/Display;->mDisplayMetrics:Landroid/util/DisplayMetrics;
+    iget-object v1, p0, Lcom/android/settings_ext/Display;->mDisplayMetrics:Landroid/util/DisplayMetrics;
 
-    iget-object v2, p0, Lcom/android/settings/Display;->mDisplayMetrics:Landroid/util/DisplayMetrics;
+    iget-object v2, p0, Lcom/android/settings_ext/Display;->mDisplayMetrics:Landroid/util/DisplayMetrics;
 
     iget v2, v2, Landroid/util/DisplayMetrics;->density:F
 
-    iget-object v3, p0, Lcom/android/settings/Display;->mCurConfig:Landroid/content/res/Configuration;
+    iget-object v3, p0, Lcom/android/settings_ext/Display;->mCurConfig:Landroid/content/res/Configuration;
 
     iget v3, v3, Landroid/content/res/Configuration;->fontScale:F
 
@@ -87,9 +87,9 @@
     iput v2, v1, Landroid/util/DisplayMetrics;->scaledDensity:F
 
     .line 102
-    iget-object v1, p0, Lcom/android/settings/Display;->mTextSizeTyped:Landroid/util/TypedValue;
+    iget-object v1, p0, Lcom/android/settings_ext/Display;->mTextSizeTyped:Landroid/util/TypedValue;
 
-    iget-object v2, p0, Lcom/android/settings/Display;->mDisplayMetrics:Landroid/util/DisplayMetrics;
+    iget-object v2, p0, Lcom/android/settings_ext/Display;->mDisplayMetrics:Landroid/util/DisplayMetrics;
 
     invoke-virtual {v1, v2}, Landroid/util/TypedValue;->getDimension(Landroid/util/DisplayMetrics;)F
 
@@ -97,7 +97,7 @@
 
     .line 103
     .local v0, "size":F
-    iget-object v1, p0, Lcom/android/settings/Display;->mPreview:Landroid/widget/TextView;
+    iget-object v1, p0, Lcom/android/settings_ext/Display;->mPreview:Landroid/widget/TextView;
 
     const/4 v2, 0x0
 
@@ -120,7 +120,7 @@
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/android/settings/Display;->mCurConfig:Landroid/content/res/Configuration;
+    iget-object v1, p0, Lcom/android/settings_ext/Display;->mCurConfig:Landroid/content/res/Configuration;
 
     invoke-interface {v0, v1}, Landroid/app/IActivityManager;->updatePersistentConfiguration(Landroid/content/res/Configuration;)V
     :try_end_0
@@ -128,7 +128,7 @@
 
     .line 111
     :goto_0
-    invoke-virtual {p0}, Lcom/android/settings/Display;->finish()V
+    invoke-virtual {p0}, Lcom/android/settings_ext/Display;->finish()V
 
     .line 112
     return-void
@@ -153,23 +153,23 @@
     .line 40
     const v6, 0x7f040045
 
-    invoke-virtual {p0, v6}, Lcom/android/settings/Display;->setContentView(I)V
+    invoke-virtual {p0, v6}, Lcom/android/settings_ext/Display;->setContentView(I)V
 
     .line 42
     const v6, 0x7f0f00a1
 
-    invoke-virtual {p0, v6}, Lcom/android/settings/Display;->findViewById(I)Landroid/view/View;
+    invoke-virtual {p0, v6}, Lcom/android/settings_ext/Display;->findViewById(I)Landroid/view/View;
 
     move-result-object v6
 
     check-cast v6, Landroid/widget/Spinner;
 
-    iput-object v6, p0, Lcom/android/settings/Display;->mFontSize:Landroid/widget/Spinner;
+    iput-object v6, p0, Lcom/android/settings_ext/Display;->mFontSize:Landroid/widget/Spinner;
 
     .line 43
-    iget-object v6, p0, Lcom/android/settings/Display;->mFontSize:Landroid/widget/Spinner;
+    iget-object v6, p0, Lcom/android/settings_ext/Display;->mFontSize:Landroid/widget/Spinner;
 
-    iget-object v7, p0, Lcom/android/settings/Display;->mFontSizeChanged:Landroid/widget/AdapterView$OnItemSelectedListener;
+    iget-object v7, p0, Lcom/android/settings_ext/Display;->mFontSizeChanged:Landroid/widget/AdapterView$OnItemSelectedListener;
 
     invoke-virtual {v6, v7}, Landroid/widget/Spinner;->setOnItemSelectedListener(Landroid/widget/AdapterView$OnItemSelectedListener;)V
 
@@ -180,7 +180,7 @@
 
     .line 45
     .local v4, "states":[Ljava/lang/String;
-    invoke-virtual {p0}, Lcom/android/settings/Display;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {p0}, Lcom/android/settings_ext/Display;->getResources()Landroid/content/res/Resources;
 
     move-result-object v2
 
@@ -230,23 +230,23 @@
     invoke-virtual {v0, v6}, Landroid/widget/ArrayAdapter;->setDropDownViewResource(I)V
 
     .line 53
-    iget-object v6, p0, Lcom/android/settings/Display;->mFontSize:Landroid/widget/Spinner;
+    iget-object v6, p0, Lcom/android/settings_ext/Display;->mFontSize:Landroid/widget/Spinner;
 
     invoke-virtual {v6, v0}, Landroid/widget/Spinner;->setAdapter(Landroid/widget/SpinnerAdapter;)V
 
     .line 55
     const v6, 0x7f0f00a2
 
-    invoke-virtual {p0, v6}, Lcom/android/settings/Display;->findViewById(I)Landroid/view/View;
+    invoke-virtual {p0, v6}, Lcom/android/settings_ext/Display;->findViewById(I)Landroid/view/View;
 
     move-result-object v6
 
     check-cast v6, Landroid/widget/TextView;
 
-    iput-object v6, p0, Lcom/android/settings/Display;->mPreview:Landroid/widget/TextView;
+    iput-object v6, p0, Lcom/android/settings_ext/Display;->mPreview:Landroid/widget/TextView;
 
     .line 56
-    iget-object v6, p0, Lcom/android/settings/Display;->mPreview:Landroid/widget/TextView;
+    iget-object v6, p0, Lcom/android/settings_ext/Display;->mPreview:Landroid/widget/TextView;
 
     const v7, 0x7f09003d
 
@@ -259,7 +259,7 @@
     .line 58
     const v6, 0x7f0f00a3
 
-    invoke-virtual {p0, v6}, Lcom/android/settings/Display;->findViewById(I)Landroid/view/View;
+    invoke-virtual {p0, v6}, Lcom/android/settings_ext/Display;->findViewById(I)Landroid/view/View;
 
     move-result-object v3
 
@@ -283,23 +283,23 @@
 
     invoke-direct {v6}, Landroid/util/TypedValue;-><init>()V
 
-    iput-object v6, p0, Lcom/android/settings/Display;->mTextSizeTyped:Landroid/util/TypedValue;
+    iput-object v6, p0, Lcom/android/settings_ext/Display;->mTextSizeTyped:Landroid/util/TypedValue;
 
     .line 63
     sget-object v6, Landroid/R$styleable;->TextView:[I
 
-    invoke-virtual {p0, v6}, Lcom/android/settings/Display;->obtainStyledAttributes([I)Landroid/content/res/TypedArray;
+    invoke-virtual {p0, v6}, Lcom/android/settings_ext/Display;->obtainStyledAttributes([I)Landroid/content/res/TypedArray;
 
     move-result-object v5
 
     .line 65
     .local v5, "styledAttributes":Landroid/content/res/TypedArray;
-    iget-object v6, p0, Lcom/android/settings/Display;->mTextSizeTyped:Landroid/util/TypedValue;
+    iget-object v6, p0, Lcom/android/settings_ext/Display;->mTextSizeTyped:Landroid/util/TypedValue;
 
     invoke-virtual {v5, v8, v6}, Landroid/content/res/TypedArray;->getValue(ILandroid/util/TypedValue;)Z
 
     .line 68
-    invoke-virtual {p0}, Lcom/android/settings/Display;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {p0}, Lcom/android/settings_ext/Display;->getResources()Landroid/content/res/Resources;
 
     move-result-object v6
 
@@ -313,45 +313,45 @@
 
     invoke-direct {v6}, Landroid/util/DisplayMetrics;-><init>()V
 
-    iput-object v6, p0, Lcom/android/settings/Display;->mDisplayMetrics:Landroid/util/DisplayMetrics;
+    iput-object v6, p0, Lcom/android/settings_ext/Display;->mDisplayMetrics:Landroid/util/DisplayMetrics;
 
     .line 70
-    iget-object v6, p0, Lcom/android/settings/Display;->mDisplayMetrics:Landroid/util/DisplayMetrics;
+    iget-object v6, p0, Lcom/android/settings_ext/Display;->mDisplayMetrics:Landroid/util/DisplayMetrics;
 
     iget v7, v1, Landroid/util/DisplayMetrics;->density:F
 
     iput v7, v6, Landroid/util/DisplayMetrics;->density:F
 
     .line 71
-    iget-object v6, p0, Lcom/android/settings/Display;->mDisplayMetrics:Landroid/util/DisplayMetrics;
+    iget-object v6, p0, Lcom/android/settings_ext/Display;->mDisplayMetrics:Landroid/util/DisplayMetrics;
 
     iget v7, v1, Landroid/util/DisplayMetrics;->heightPixels:I
 
     iput v7, v6, Landroid/util/DisplayMetrics;->heightPixels:I
 
     .line 72
-    iget-object v6, p0, Lcom/android/settings/Display;->mDisplayMetrics:Landroid/util/DisplayMetrics;
+    iget-object v6, p0, Lcom/android/settings_ext/Display;->mDisplayMetrics:Landroid/util/DisplayMetrics;
 
     iget v7, v1, Landroid/util/DisplayMetrics;->scaledDensity:F
 
     iput v7, v6, Landroid/util/DisplayMetrics;->scaledDensity:F
 
     .line 73
-    iget-object v6, p0, Lcom/android/settings/Display;->mDisplayMetrics:Landroid/util/DisplayMetrics;
+    iget-object v6, p0, Lcom/android/settings_ext/Display;->mDisplayMetrics:Landroid/util/DisplayMetrics;
 
     iget v7, v1, Landroid/util/DisplayMetrics;->widthPixels:I
 
     iput v7, v6, Landroid/util/DisplayMetrics;->widthPixels:I
 
     .line 74
-    iget-object v6, p0, Lcom/android/settings/Display;->mDisplayMetrics:Landroid/util/DisplayMetrics;
+    iget-object v6, p0, Lcom/android/settings_ext/Display;->mDisplayMetrics:Landroid/util/DisplayMetrics;
 
     iget v7, v1, Landroid/util/DisplayMetrics;->xdpi:F
 
     iput v7, v6, Landroid/util/DisplayMetrics;->xdpi:F
 
     .line 75
-    iget-object v6, p0, Lcom/android/settings/Display;->mDisplayMetrics:Landroid/util/DisplayMetrics;
+    iget-object v6, p0, Lcom/android/settings_ext/Display;->mDisplayMetrics:Landroid/util/DisplayMetrics;
 
     iget v7, v1, Landroid/util/DisplayMetrics;->ydpi:F
 
@@ -375,7 +375,7 @@
 
     .line 84
     :try_start_0
-    iget-object v0, p0, Lcom/android/settings/Display;->mCurConfig:Landroid/content/res/Configuration;
+    iget-object v0, p0, Lcom/android/settings_ext/Display;->mCurConfig:Landroid/content/res/Configuration;
 
     invoke-static {}, Landroid/app/ActivityManagerNative;->getDefault()Landroid/app/IActivityManager;
 
@@ -391,7 +391,7 @@
 
     .line 88
     :goto_0
-    iget-object v0, p0, Lcom/android/settings/Display;->mCurConfig:Landroid/content/res/Configuration;
+    iget-object v0, p0, Lcom/android/settings_ext/Display;->mCurConfig:Landroid/content/res/Configuration;
 
     iget v0, v0, Landroid/content/res/Configuration;->fontScale:F
 
@@ -400,7 +400,7 @@
     if-gez v0, :cond_0
 
     .line 89
-    iget-object v0, p0, Lcom/android/settings/Display;->mFontSize:Landroid/widget/Spinner;
+    iget-object v0, p0, Lcom/android/settings_ext/Display;->mFontSize:Landroid/widget/Spinner;
 
     const/4 v1, 0x0
 
@@ -408,14 +408,14 @@
 
     .line 95
     :goto_1
-    invoke-direct {p0}, Lcom/android/settings/Display;->updateFontScale()V
+    invoke-direct {p0}, Lcom/android/settings_ext/Display;->updateFontScale()V
 
     .line 96
     return-void
 
     .line 90
     :cond_0
-    iget-object v0, p0, Lcom/android/settings/Display;->mCurConfig:Landroid/content/res/Configuration;
+    iget-object v0, p0, Lcom/android/settings_ext/Display;->mCurConfig:Landroid/content/res/Configuration;
 
     iget v0, v0, Landroid/content/res/Configuration;->fontScale:F
 
@@ -424,7 +424,7 @@
     if-lez v0, :cond_1
 
     .line 91
-    iget-object v0, p0, Lcom/android/settings/Display;->mFontSize:Landroid/widget/Spinner;
+    iget-object v0, p0, Lcom/android/settings_ext/Display;->mFontSize:Landroid/widget/Spinner;
 
     const/4 v1, 0x2
 
@@ -434,7 +434,7 @@
 
     .line 93
     :cond_1
-    iget-object v0, p0, Lcom/android/settings/Display;->mFontSize:Landroid/widget/Spinner;
+    iget-object v0, p0, Lcom/android/settings_ext/Display;->mFontSize:Landroid/widget/Spinner;
 
     const/4 v1, 0x1
 

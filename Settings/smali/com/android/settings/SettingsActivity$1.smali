@@ -1,11 +1,11 @@
-.class Lcom/android/settings/SettingsActivity$1;
+.class Lcom/android/settings_ext/SettingsActivity$1;
 .super Landroid/content/BroadcastReceiver;
 .source "SettingsActivity.java"
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/android/settings/SettingsActivity;
+    value = Lcom/android/settings_ext/SettingsActivity;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -15,16 +15,16 @@
 
 
 # instance fields
-.field final synthetic this$0:Lcom/android/settings/SettingsActivity;
+.field final synthetic this$0:Lcom/android/settings_ext/SettingsActivity;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/SettingsActivity;)V
+.method constructor <init>(Lcom/android/settings_ext/SettingsActivity;)V
     .locals 0
 
     .prologue
     .line 317
-    iput-object p1, p0, Lcom/android/settings/SettingsActivity$1;->this$0:Lcom/android/settings/SettingsActivity;
+    iput-object p1, p0, Lcom/android/settings_ext/SettingsActivity$1;->this$0:Lcom/android/settings_ext/SettingsActivity;
 
     invoke-direct {p0}, Landroid/content/BroadcastReceiver;-><init>()V
 
@@ -55,34 +55,34 @@
     if-eqz v2, :cond_0
 
     .line 322
-    invoke-static {p2}, Lcom/android/settings/Utils;->isBatteryPresent(Landroid/content/Intent;)Z
+    invoke-static {p2}, Lcom/android/settings_ext/Utils;->isBatteryPresent(Landroid/content/Intent;)Z
 
     move-result v1
 
     .line 324
     .local v1, "batteryPresent":Z
-    iget-object v2, p0, Lcom/android/settings/SettingsActivity$1;->this$0:Lcom/android/settings/SettingsActivity;
+    iget-object v2, p0, Lcom/android/settings_ext/SettingsActivity$1;->this$0:Lcom/android/settings_ext/SettingsActivity;
 
-    # getter for: Lcom/android/settings/SettingsActivity;->mBatteryPresent:Z
-    invoke-static {v2}, Lcom/android/settings/SettingsActivity;->access$000(Lcom/android/settings/SettingsActivity;)Z
+    # getter for: Lcom/android/settings_ext/SettingsActivity;->mBatteryPresent:Z
+    invoke-static {v2}, Lcom/android/settings_ext/SettingsActivity;->access$000(Lcom/android/settings_ext/SettingsActivity;)Z
 
     move-result v2
 
     if-eq v2, v1, :cond_0
 
     .line 325
-    iget-object v2, p0, Lcom/android/settings/SettingsActivity$1;->this$0:Lcom/android/settings/SettingsActivity;
+    iget-object v2, p0, Lcom/android/settings_ext/SettingsActivity$1;->this$0:Lcom/android/settings_ext/SettingsActivity;
 
-    # setter for: Lcom/android/settings/SettingsActivity;->mBatteryPresent:Z
-    invoke-static {v2, v1}, Lcom/android/settings/SettingsActivity;->access$002(Lcom/android/settings/SettingsActivity;Z)Z
+    # setter for: Lcom/android/settings_ext/SettingsActivity;->mBatteryPresent:Z
+    invoke-static {v2, v1}, Lcom/android/settings_ext/SettingsActivity;->access$002(Lcom/android/settings_ext/SettingsActivity;Z)Z
 
     .line 326
-    iget-object v2, p0, Lcom/android/settings/SettingsActivity$1;->this$0:Lcom/android/settings/SettingsActivity;
+    iget-object v2, p0, Lcom/android/settings_ext/SettingsActivity$1;->this$0:Lcom/android/settings_ext/SettingsActivity;
 
     const/4 v3, 0x1
 
-    # invokes: Lcom/android/settings/SettingsActivity;->invalidateCategories(Z)V
-    invoke-static {v2, v3}, Lcom/android/settings/SettingsActivity;->access$100(Lcom/android/settings/SettingsActivity;Z)V
+    # invokes: Lcom/android/settings_ext/SettingsActivity;->invalidateCategories(Z)V
+    invoke-static {v2, v3}, Lcom/android/settings_ext/SettingsActivity;->access$100(Lcom/android/settings_ext/SettingsActivity;Z)V
 
     .line 329
     .end local v1    # "batteryPresent":Z

@@ -1,4 +1,4 @@
-.class Lcom/android/settings/accounts/AccountSettings$2;
+.class Lcom/android/settings_ext/accounts/AccountSettings$2;
 .super Ljava/lang/Object;
 .source "AccountSettings.java"
 
@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/android/settings/accounts/AccountSettings;->getAccountTypePreferences(Lcom/android/settings/accounts/AuthenticatorHelper;Landroid/os/UserHandle;)Ljava/util/ArrayList;
+    value = Lcom/android/settings_ext/accounts/AccountSettings;->getAccountTypePreferences(Lcom/android/settings_ext/accounts/AuthenticatorHelper;Landroid/os/UserHandle;)Ljava/util/ArrayList;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -21,23 +21,23 @@
         "Ljava/lang/Object;",
         "Ljava/util/Comparator",
         "<",
-        "Lcom/android/settings/accounts/AccountSettings$AccountPreference;",
+        "Lcom/android/settings_ext/accounts/AccountSettings$AccountPreference;",
         ">;"
     }
 .end annotation
 
 
 # instance fields
-.field final synthetic this$0:Lcom/android/settings/accounts/AccountSettings;
+.field final synthetic this$0:Lcom/android/settings_ext/accounts/AccountSettings;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/accounts/AccountSettings;)V
+.method constructor <init>(Lcom/android/settings_ext/accounts/AccountSettings;)V
     .locals 0
 
     .prologue
     .line 405
-    iput-object p1, p0, Lcom/android/settings/accounts/AccountSettings$2;->this$0:Lcom/android/settings/accounts/AccountSettings;
+    iput-object p1, p0, Lcom/android/settings_ext/accounts/AccountSettings$2;->this$0:Lcom/android/settings_ext/accounts/AccountSettings;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -46,15 +46,15 @@
 
 
 # virtual methods
-.method public compare(Lcom/android/settings/accounts/AccountSettings$AccountPreference;Lcom/android/settings/accounts/AccountSettings$AccountPreference;)I
+.method public compare(Lcom/android/settings_ext/accounts/AccountSettings$AccountPreference;Lcom/android/settings_ext/accounts/AccountSettings$AccountPreference;)I
     .locals 2
-    .param p1, "t1"    # Lcom/android/settings/accounts/AccountSettings$AccountPreference;
-    .param p2, "t2"    # Lcom/android/settings/accounts/AccountSettings$AccountPreference;
+    .param p1, "t1"    # Lcom/android/settings_ext/accounts/AccountSettings$AccountPreference;
+    .param p2, "t2"    # Lcom/android/settings_ext/accounts/AccountSettings$AccountPreference;
 
     .prologue
     .line 408
-    # getter for: Lcom/android/settings/accounts/AccountSettings$AccountPreference;->mTitle:Ljava/lang/CharSequence;
-    invoke-static {p1}, Lcom/android/settings/accounts/AccountSettings$AccountPreference;->access$300(Lcom/android/settings/accounts/AccountSettings$AccountPreference;)Ljava/lang/CharSequence;
+    # getter for: Lcom/android/settings_ext/accounts/AccountSettings$AccountPreference;->mTitle:Ljava/lang/CharSequence;
+    invoke-static {p1}, Lcom/android/settings_ext/accounts/AccountSettings$AccountPreference;->access$300(Lcom/android/settings_ext/accounts/AccountSettings$AccountPreference;)Ljava/lang/CharSequence;
 
     move-result-object v0
 
@@ -62,8 +62,8 @@
 
     move-result-object v0
 
-    # getter for: Lcom/android/settings/accounts/AccountSettings$AccountPreference;->mTitle:Ljava/lang/CharSequence;
-    invoke-static {p2}, Lcom/android/settings/accounts/AccountSettings$AccountPreference;->access$300(Lcom/android/settings/accounts/AccountSettings$AccountPreference;)Ljava/lang/CharSequence;
+    # getter for: Lcom/android/settings_ext/accounts/AccountSettings$AccountPreference;->mTitle:Ljava/lang/CharSequence;
+    invoke-static {p2}, Lcom/android/settings_ext/accounts/AccountSettings$AccountPreference;->access$300(Lcom/android/settings_ext/accounts/AccountSettings$AccountPreference;)Ljava/lang/CharSequence;
 
     move-result-object v1
 
@@ -85,13 +85,13 @@
 
     .prologue
     .line 405
-    check-cast p1, Lcom/android/settings/accounts/AccountSettings$AccountPreference;
+    check-cast p1, Lcom/android/settings_ext/accounts/AccountSettings$AccountPreference;
 
     .end local p1    # "x0":Ljava/lang/Object;
-    check-cast p2, Lcom/android/settings/accounts/AccountSettings$AccountPreference;
+    check-cast p2, Lcom/android/settings_ext/accounts/AccountSettings$AccountPreference;
 
     .end local p2    # "x1":Ljava/lang/Object;
-    invoke-virtual {p0, p1, p2}, Lcom/android/settings/accounts/AccountSettings$2;->compare(Lcom/android/settings/accounts/AccountSettings$AccountPreference;Lcom/android/settings/accounts/AccountSettings$AccountPreference;)I
+    invoke-virtual {p0, p1, p2}, Lcom/android/settings_ext/accounts/AccountSettings$2;->compare(Lcom/android/settings_ext/accounts/AccountSettings$AccountPreference;Lcom/android/settings_ext/accounts/AccountSettings$AccountPreference;)I
 
     move-result v0
 

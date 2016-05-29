@@ -1,11 +1,11 @@
-.class Lcom/android/settings/wifi/WifiEnabler$2;
+.class Lcom/android/settings_ext/wifi/WifiEnabler$2;
 .super Landroid/os/Handler;
 .source "WifiEnabler.java"
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/android/settings/wifi/WifiEnabler;
+    value = Lcom/android/settings_ext/wifi/WifiEnabler;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -15,16 +15,16 @@
 
 
 # instance fields
-.field final synthetic this$0:Lcom/android/settings/wifi/WifiEnabler;
+.field final synthetic this$0:Lcom/android/settings_ext/wifi/WifiEnabler;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/wifi/WifiEnabler;)V
+.method constructor <init>(Lcom/android/settings_ext/wifi/WifiEnabler;)V
     .locals 0
 
     .prologue
     .line 73
-    iput-object p1, p0, Lcom/android/settings/wifi/WifiEnabler$2;->this$0:Lcom/android/settings/wifi/WifiEnabler;
+    iput-object p1, p0, Lcom/android/settings_ext/wifi/WifiEnabler$2;->this$0:Lcom/android/settings_ext/wifi/WifiEnabler;
 
     invoke-direct {p0}, Landroid/os/Handler;-><init>()V
 
@@ -61,18 +61,18 @@
 
     .line 79
     .local v0, "isWiFiOn":Z
-    iget-object v1, p0, Lcom/android/settings/wifi/WifiEnabler$2;->this$0:Lcom/android/settings/wifi/WifiEnabler;
+    iget-object v1, p0, Lcom/android/settings_ext/wifi/WifiEnabler$2;->this$0:Lcom/android/settings_ext/wifi/WifiEnabler;
 
-    # getter for: Lcom/android/settings/wifi/WifiEnabler;->mContext:Landroid/content/Context;
-    invoke-static {v1}, Lcom/android/settings/wifi/WifiEnabler;->access$300(Lcom/android/settings/wifi/WifiEnabler;)Landroid/content/Context;
-
-    move-result-object v1
-
-    invoke-static {v1}, Lcom/android/settings/search/Index;->getInstance(Landroid/content/Context;)Lcom/android/settings/search/Index;
+    # getter for: Lcom/android/settings_ext/wifi/WifiEnabler;->mContext:Landroid/content/Context;
+    invoke-static {v1}, Lcom/android/settings_ext/wifi/WifiEnabler;->access$300(Lcom/android/settings_ext/wifi/WifiEnabler;)Landroid/content/Context;
 
     move-result-object v1
 
-    const-class v2, Lcom/android/settings/wifi/WifiSettings;
+    invoke-static {v1}, Lcom/android/settings_ext/search/Index;->getInstance(Landroid/content/Context;)Lcom/android/settings_ext/search/Index;
+
+    move-result-object v1
+
+    const-class v2, Lcom/android/settings_ext/wifi/WifiSettings;
 
     invoke-virtual {v2}, Ljava/lang/Class;->getName()Ljava/lang/String;
 
@@ -80,7 +80,7 @@
 
     const/4 v3, 0x1
 
-    invoke-virtual {v1, v2, v3, v0}, Lcom/android/settings/search/Index;->updateFromClassNameResource(Ljava/lang/String;ZZ)V
+    invoke-virtual {v1, v2, v3, v0}, Lcom/android/settings_ext/search/Index;->updateFromClassNameResource(Ljava/lang/String;ZZ)V
 
     goto :goto_0
 

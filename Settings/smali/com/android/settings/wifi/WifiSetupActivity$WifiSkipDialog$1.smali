@@ -1,4 +1,4 @@
-.class Lcom/android/settings/wifi/WifiSetupActivity$WifiSkipDialog$1;
+.class Lcom/android/settings_ext/wifi/WifiSetupActivity$WifiSkipDialog$1;
 .super Ljava/lang/Object;
 .source "WifiSetupActivity.java"
 
@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/android/settings/wifi/WifiSetupActivity$WifiSkipDialog;->onCreateDialog(Landroid/os/Bundle;)Landroid/app/Dialog;
+    value = Lcom/android/settings_ext/wifi/WifiSetupActivity$WifiSkipDialog;->onCreateDialog(Landroid/os/Bundle;)Landroid/app/Dialog;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -18,16 +18,16 @@
 
 
 # instance fields
-.field final synthetic this$0:Lcom/android/settings/wifi/WifiSetupActivity$WifiSkipDialog;
+.field final synthetic this$0:Lcom/android/settings_ext/wifi/WifiSetupActivity$WifiSkipDialog;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/wifi/WifiSetupActivity$WifiSkipDialog;)V
+.method constructor <init>(Lcom/android/settings_ext/wifi/WifiSetupActivity$WifiSkipDialog;)V
     .locals 0
 
     .prologue
     .line 278
-    iput-object p1, p0, Lcom/android/settings/wifi/WifiSetupActivity$WifiSkipDialog$1;->this$0:Lcom/android/settings/wifi/WifiSetupActivity$WifiSkipDialog;
+    iput-object p1, p0, Lcom/android/settings_ext/wifi/WifiSetupActivity$WifiSkipDialog$1;->this$0:Lcom/android/settings_ext/wifi/WifiSetupActivity$WifiSkipDialog;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 

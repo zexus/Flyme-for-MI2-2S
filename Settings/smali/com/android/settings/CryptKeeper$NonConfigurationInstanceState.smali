@@ -1,11 +1,11 @@
-.class Lcom/android/settings/CryptKeeper$NonConfigurationInstanceState;
+.class Lcom/android/settings_ext/CryptKeeper$NonConfigurationInstanceState;
 .super Ljava/lang/Object;
 .source "CryptKeeper.java"
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/android/settings/CryptKeeper;
+    value = Lcom/android/settings_ext/CryptKeeper;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -28,7 +28,7 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 165
-    iput-object p1, p0, Lcom/android/settings/CryptKeeper$NonConfigurationInstanceState;->wakelock:Landroid/os/PowerManager$WakeLock;
+    iput-object p1, p0, Lcom/android/settings_ext/CryptKeeper$NonConfigurationInstanceState;->wakelock:Landroid/os/PowerManager$WakeLock;
 
     .line 166
     return-void

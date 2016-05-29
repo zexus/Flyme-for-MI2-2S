@@ -1,15 +1,15 @@
-.class public Lcom/android/settings/location/LocationMode;
-.super Lcom/android/settings/location/LocationSettingsBase;
+.class public Lcom/android/settings_ext/location/LocationMode;
+.super Lcom/android/settings_ext/location/LocationSettingsBase;
 .source "LocationMode.java"
 
 # interfaces
-.implements Lcom/android/settings/location/RadioButtonPreference$OnClickListener;
+.implements Lcom/android/settings_ext/location/RadioButtonPreference$OnClickListener;
 
 
 # annotations
 .annotation system Ldalvik/annotation/MemberClasses;
     value = {
-        Lcom/android/settings/location/LocationMode$XTServiceConnection;
+        Lcom/android/settings_ext/location/LocationMode$XTServiceConnection;
     }
 .end annotation
 
@@ -17,7 +17,7 @@
 # instance fields
 .field private izatConnResult:Z
 
-.field private mBatterySaving:Lcom/android/settings/location/RadioButtonPreference;
+.field private mBatterySaving:Lcom/android/settings_ext/location/RadioButtonPreference;
 
 .field private mCallback:Lcom/android/location/XT/IXTSrvCb;
 
@@ -25,13 +25,13 @@
 
 .field private mHandler:Landroid/os/Handler;
 
-.field private mHighAccuracy:Lcom/android/settings/location/RadioButtonPreference;
+.field private mHighAccuracy:Lcom/android/settings_ext/location/RadioButtonPreference;
 
-.field private mIZat:Lcom/android/settings/location/WrappingIZatSwitchPreference;
+.field private mIZat:Lcom/android/settings_ext/location/WrappingIZatSwitchPreference;
 
-.field private mSensorsOnly:Lcom/android/settings/location/RadioButtonPreference;
+.field private mSensorsOnly:Lcom/android/settings_ext/location/RadioButtonPreference;
 
-.field private mServiceConn:Lcom/android/settings/location/LocationMode$XTServiceConnection;
+.field private mServiceConn:Lcom/android/settings_ext/location/LocationMode$XTServiceConnection;
 
 .field private mXTService:Lcom/android/location/XT/IXTSrv;
 
@@ -44,107 +44,107 @@
     const/4 v0, 0x0
 
     .line 61
-    invoke-direct {p0}, Lcom/android/settings/location/LocationSettingsBase;-><init>()V
+    invoke-direct {p0}, Lcom/android/settings_ext/location/LocationSettingsBase;-><init>()V
 
     .line 80
-    iput-object v0, p0, Lcom/android/settings/location/LocationMode;->mXTService:Lcom/android/location/XT/IXTSrv;
+    iput-object v0, p0, Lcom/android/settings_ext/location/LocationMode;->mXTService:Lcom/android/location/XT/IXTSrv;
 
     .line 81
-    iput-object v0, p0, Lcom/android/settings/location/LocationMode;->mServiceConn:Lcom/android/settings/location/LocationMode$XTServiceConnection;
+    iput-object v0, p0, Lcom/android/settings_ext/location/LocationMode;->mServiceConn:Lcom/android/settings_ext/location/LocationMode$XTServiceConnection;
 
     .line 83
     const/4 v0, 0x0
 
-    iput-boolean v0, p0, Lcom/android/settings/location/LocationMode;->izatConnResult:Z
+    iput-boolean v0, p0, Lcom/android/settings_ext/location/LocationMode;->izatConnResult:Z
 
     .line 86
-    new-instance v0, Lcom/android/settings/location/LocationMode$1;
+    new-instance v0, Lcom/android/settings_ext/location/LocationMode$1;
 
-    invoke-direct {v0, p0}, Lcom/android/settings/location/LocationMode$1;-><init>(Lcom/android/settings/location/LocationMode;)V
+    invoke-direct {v0, p0}, Lcom/android/settings_ext/location/LocationMode$1;-><init>(Lcom/android/settings_ext/location/LocationMode;)V
 
-    iput-object v0, p0, Lcom/android/settings/location/LocationMode;->mHandler:Landroid/os/Handler;
+    iput-object v0, p0, Lcom/android/settings_ext/location/LocationMode;->mHandler:Landroid/os/Handler;
 
     .line 102
-    new-instance v0, Lcom/android/settings/location/LocationMode$2;
+    new-instance v0, Lcom/android/settings_ext/location/LocationMode$2;
 
-    invoke-direct {v0, p0}, Lcom/android/settings/location/LocationMode$2;-><init>(Lcom/android/settings/location/LocationMode;)V
+    invoke-direct {v0, p0}, Lcom/android/settings_ext/location/LocationMode$2;-><init>(Lcom/android/settings_ext/location/LocationMode;)V
 
-    iput-object v0, p0, Lcom/android/settings/location/LocationMode;->mCallback:Lcom/android/location/XT/IXTSrvCb;
+    iput-object v0, p0, Lcom/android/settings_ext/location/LocationMode;->mCallback:Lcom/android/location/XT/IXTSrvCb;
 
     .line 148
-    new-instance v0, Lcom/android/settings/location/LocationMode$3;
+    new-instance v0, Lcom/android/settings_ext/location/LocationMode$3;
 
-    invoke-direct {v0, p0}, Lcom/android/settings/location/LocationMode$3;-><init>(Lcom/android/settings/location/LocationMode;)V
+    invoke-direct {v0, p0}, Lcom/android/settings_ext/location/LocationMode$3;-><init>(Lcom/android/settings_ext/location/LocationMode;)V
 
-    iput-object v0, p0, Lcom/android/settings/location/LocationMode;->mDeathRecipient:Landroid/os/IBinder$DeathRecipient;
+    iput-object v0, p0, Lcom/android/settings_ext/location/LocationMode;->mDeathRecipient:Landroid/os/IBinder$DeathRecipient;
 
     .line 158
     return-void
 .end method
 
-.method static synthetic access$000(Lcom/android/settings/location/LocationMode;)Lcom/android/settings/location/WrappingIZatSwitchPreference;
+.method static synthetic access$000(Lcom/android/settings_ext/location/LocationMode;)Lcom/android/settings_ext/location/WrappingIZatSwitchPreference;
     .locals 1
-    .param p0, "x0"    # Lcom/android/settings/location/LocationMode;
+    .param p0, "x0"    # Lcom/android/settings_ext/location/LocationMode;
 
     .prologue
     .line 61
-    iget-object v0, p0, Lcom/android/settings/location/LocationMode;->mIZat:Lcom/android/settings/location/WrappingIZatSwitchPreference;
+    iget-object v0, p0, Lcom/android/settings_ext/location/LocationMode;->mIZat:Lcom/android/settings_ext/location/WrappingIZatSwitchPreference;
 
     return-object v0
 .end method
 
-.method static synthetic access$100(Lcom/android/settings/location/LocationMode;)Landroid/os/Handler;
+.method static synthetic access$100(Lcom/android/settings_ext/location/LocationMode;)Landroid/os/Handler;
     .locals 1
-    .param p0, "x0"    # Lcom/android/settings/location/LocationMode;
+    .param p0, "x0"    # Lcom/android/settings_ext/location/LocationMode;
 
     .prologue
     .line 61
-    iget-object v0, p0, Lcom/android/settings/location/LocationMode;->mHandler:Landroid/os/Handler;
+    iget-object v0, p0, Lcom/android/settings_ext/location/LocationMode;->mHandler:Landroid/os/Handler;
 
     return-object v0
 .end method
 
-.method static synthetic access$300(Lcom/android/settings/location/LocationMode;)V
+.method static synthetic access$300(Lcom/android/settings_ext/location/LocationMode;)V
     .locals 0
-    .param p0, "x0"    # Lcom/android/settings/location/LocationMode;
+    .param p0, "x0"    # Lcom/android/settings_ext/location/LocationMode;
 
     .prologue
     .line 61
-    invoke-direct {p0}, Lcom/android/settings/location/LocationMode;->initUserPrefService()V
+    invoke-direct {p0}, Lcom/android/settings_ext/location/LocationMode;->initUserPrefService()V
 
     return-void
 .end method
 
-.method static synthetic access$400(Lcom/android/settings/location/LocationMode;)Lcom/android/location/XT/IXTSrv;
+.method static synthetic access$400(Lcom/android/settings_ext/location/LocationMode;)Lcom/android/location/XT/IXTSrv;
     .locals 1
-    .param p0, "x0"    # Lcom/android/settings/location/LocationMode;
+    .param p0, "x0"    # Lcom/android/settings_ext/location/LocationMode;
 
     .prologue
     .line 61
-    iget-object v0, p0, Lcom/android/settings/location/LocationMode;->mXTService:Lcom/android/location/XT/IXTSrv;
+    iget-object v0, p0, Lcom/android/settings_ext/location/LocationMode;->mXTService:Lcom/android/location/XT/IXTSrv;
 
     return-object v0
 .end method
 
-.method static synthetic access$402(Lcom/android/settings/location/LocationMode;Lcom/android/location/XT/IXTSrv;)Lcom/android/location/XT/IXTSrv;
+.method static synthetic access$402(Lcom/android/settings_ext/location/LocationMode;Lcom/android/location/XT/IXTSrv;)Lcom/android/location/XT/IXTSrv;
     .locals 0
-    .param p0, "x0"    # Lcom/android/settings/location/LocationMode;
+    .param p0, "x0"    # Lcom/android/settings_ext/location/LocationMode;
     .param p1, "x1"    # Lcom/android/location/XT/IXTSrv;
 
     .prologue
     .line 61
-    iput-object p1, p0, Lcom/android/settings/location/LocationMode;->mXTService:Lcom/android/location/XT/IXTSrv;
+    iput-object p1, p0, Lcom/android/settings_ext/location/LocationMode;->mXTService:Lcom/android/location/XT/IXTSrv;
 
     return-object p1
 .end method
 
-.method static synthetic access$500(Lcom/android/settings/location/LocationMode;)Lcom/android/location/XT/IXTSrvCb;
+.method static synthetic access$500(Lcom/android/settings_ext/location/LocationMode;)Lcom/android/location/XT/IXTSrvCb;
     .locals 1
-    .param p0, "x0"    # Lcom/android/settings/location/LocationMode;
+    .param p0, "x0"    # Lcom/android/settings_ext/location/LocationMode;
 
     .prologue
     .line 61
-    iget-object v0, p0, Lcom/android/settings/location/LocationMode;->mCallback:Lcom/android/location/XT/IXTSrvCb;
+    iget-object v0, p0, Lcom/android/settings_ext/location/LocationMode;->mCallback:Lcom/android/location/XT/IXTSrvCb;
 
     return-object v0
 .end method
@@ -154,7 +154,7 @@
 
     .prologue
     .line 115
-    invoke-virtual {p0}, Lcom/android/settings/location/LocationMode;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {p0}, Lcom/android/settings_ext/location/LocationMode;->getResources()Landroid/content/res/Resources;
 
     move-result-object v10
 
@@ -172,7 +172,7 @@
 
     .line 119
     .local v2, "gsExists":Z
-    invoke-virtual {p0}, Lcom/android/settings/location/LocationMode;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/location/LocationMode;->getActivity()Landroid/app/Activity;
 
     move-result-object v11
 
@@ -264,7 +264,7 @@
 
     .prologue
     .line 221
-    invoke-virtual {p0}, Lcom/android/settings/location/LocationMode;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
+    invoke-virtual {p0}, Lcom/android/settings_ext/location/LocationMode;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
 
     move-result-object v4
 
@@ -279,10 +279,10 @@
     :cond_0
     const v5, 0x7f060022
 
-    invoke-virtual {p0, v5}, Lcom/android/settings/location/LocationMode;->addPreferencesFromResource(I)V
+    invoke-virtual {p0, v5}, Lcom/android/settings_ext/location/LocationMode;->addPreferencesFromResource(I)V
 
     .line 226
-    invoke-virtual {p0}, Lcom/android/settings/location/LocationMode;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
+    invoke-virtual {p0}, Lcom/android/settings_ext/location/LocationMode;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
 
     move-result-object v4
 
@@ -293,9 +293,9 @@
 
     move-result-object v5
 
-    check-cast v5, Lcom/android/settings/location/RadioButtonPreference;
+    check-cast v5, Lcom/android/settings_ext/location/RadioButtonPreference;
 
-    iput-object v5, p0, Lcom/android/settings/location/LocationMode;->mHighAccuracy:Lcom/android/settings/location/RadioButtonPreference;
+    iput-object v5, p0, Lcom/android/settings_ext/location/LocationMode;->mHighAccuracy:Lcom/android/settings_ext/location/RadioButtonPreference;
 
     .line 229
     const-string v5, "battery_saving"
@@ -304,9 +304,9 @@
 
     move-result-object v5
 
-    check-cast v5, Lcom/android/settings/location/RadioButtonPreference;
+    check-cast v5, Lcom/android/settings_ext/location/RadioButtonPreference;
 
-    iput-object v5, p0, Lcom/android/settings/location/LocationMode;->mBatterySaving:Lcom/android/settings/location/RadioButtonPreference;
+    iput-object v5, p0, Lcom/android/settings_ext/location/LocationMode;->mBatterySaving:Lcom/android/settings_ext/location/RadioButtonPreference;
 
     .line 230
     const-string v5, "sensors_only"
@@ -315,24 +315,24 @@
 
     move-result-object v5
 
-    check-cast v5, Lcom/android/settings/location/RadioButtonPreference;
+    check-cast v5, Lcom/android/settings_ext/location/RadioButtonPreference;
 
-    iput-object v5, p0, Lcom/android/settings/location/LocationMode;->mSensorsOnly:Lcom/android/settings/location/RadioButtonPreference;
+    iput-object v5, p0, Lcom/android/settings_ext/location/LocationMode;->mSensorsOnly:Lcom/android/settings_ext/location/RadioButtonPreference;
 
     .line 231
-    iget-object v5, p0, Lcom/android/settings/location/LocationMode;->mHighAccuracy:Lcom/android/settings/location/RadioButtonPreference;
+    iget-object v5, p0, Lcom/android/settings_ext/location/LocationMode;->mHighAccuracy:Lcom/android/settings_ext/location/RadioButtonPreference;
 
-    invoke-virtual {v5, p0}, Lcom/android/settings/location/RadioButtonPreference;->setOnClickListener(Lcom/android/settings/location/RadioButtonPreference$OnClickListener;)V
+    invoke-virtual {v5, p0}, Lcom/android/settings_ext/location/RadioButtonPreference;->setOnClickListener(Lcom/android/settings_ext/location/RadioButtonPreference$OnClickListener;)V
 
     .line 232
-    iget-object v5, p0, Lcom/android/settings/location/LocationMode;->mBatterySaving:Lcom/android/settings/location/RadioButtonPreference;
+    iget-object v5, p0, Lcom/android/settings_ext/location/LocationMode;->mBatterySaving:Lcom/android/settings_ext/location/RadioButtonPreference;
 
-    invoke-virtual {v5, p0}, Lcom/android/settings/location/RadioButtonPreference;->setOnClickListener(Lcom/android/settings/location/RadioButtonPreference$OnClickListener;)V
+    invoke-virtual {v5, p0}, Lcom/android/settings_ext/location/RadioButtonPreference;->setOnClickListener(Lcom/android/settings_ext/location/RadioButtonPreference$OnClickListener;)V
 
     .line 233
-    iget-object v5, p0, Lcom/android/settings/location/LocationMode;->mSensorsOnly:Lcom/android/settings/location/RadioButtonPreference;
+    iget-object v5, p0, Lcom/android/settings_ext/location/LocationMode;->mSensorsOnly:Lcom/android/settings_ext/location/RadioButtonPreference;
 
-    invoke-virtual {v5, p0}, Lcom/android/settings/location/RadioButtonPreference;->setOnClickListener(Lcom/android/settings/location/RadioButtonPreference$OnClickListener;)V
+    invoke-virtual {v5, p0}, Lcom/android/settings_ext/location/RadioButtonPreference;->setOnClickListener(Lcom/android/settings_ext/location/RadioButtonPreference$OnClickListener;)V
 
     .line 235
     const-string v5, "enhanced_location"
@@ -351,16 +351,16 @@
 
     move-result-object v5
 
-    check-cast v5, Lcom/android/settings/location/WrappingIZatSwitchPreference;
+    check-cast v5, Lcom/android/settings_ext/location/WrappingIZatSwitchPreference;
 
-    iput-object v5, p0, Lcom/android/settings/location/LocationMode;->mIZat:Lcom/android/settings/location/WrappingIZatSwitchPreference;
+    iput-object v5, p0, Lcom/android/settings_ext/location/LocationMode;->mIZat:Lcom/android/settings_ext/location/WrappingIZatSwitchPreference;
 
     .line 238
-    iget-boolean v5, p0, Lcom/android/settings/location/LocationMode;->izatConnResult:Z
+    iget-boolean v5, p0, Lcom/android/settings_ext/location/LocationMode;->izatConnResult:Z
 
     if-eqz v5, :cond_1
 
-    invoke-direct {p0}, Lcom/android/settings/location/LocationMode;->checkGsPresence()Z
+    invoke-direct {p0}, Lcom/android/settings_ext/location/LocationMode;->checkGsPresence()Z
 
     move-result v5
 
@@ -373,22 +373,22 @@
     .line 253
     :cond_2
     :goto_0
-    iget-object v5, p0, Lcom/android/settings/location/LocationMode;->mIZat:Lcom/android/settings/location/WrappingIZatSwitchPreference;
+    iget-object v5, p0, Lcom/android/settings_ext/location/LocationMode;->mIZat:Lcom/android/settings_ext/location/WrappingIZatSwitchPreference;
 
     if-eqz v5, :cond_3
 
     .line 254
-    iget-object v5, p0, Lcom/android/settings/location/LocationMode;->mIZat:Lcom/android/settings/location/WrappingIZatSwitchPreference;
+    iget-object v5, p0, Lcom/android/settings_ext/location/LocationMode;->mIZat:Lcom/android/settings_ext/location/WrappingIZatSwitchPreference;
 
-    new-instance v6, Lcom/android/settings/location/LocationMode$4;
+    new-instance v6, Lcom/android/settings_ext/location/LocationMode$4;
 
-    invoke-direct {v6, p0}, Lcom/android/settings/location/LocationMode$4;-><init>(Lcom/android/settings/location/LocationMode;)V
+    invoke-direct {v6, p0}, Lcom/android/settings_ext/location/LocationMode$4;-><init>(Lcom/android/settings_ext/location/LocationMode;)V
 
-    invoke-virtual {v5, v6}, Lcom/android/settings/location/WrappingIZatSwitchPreference;->setOnPreferenceChangeListener(Landroid/preference/Preference$OnPreferenceChangeListener;)V
+    invoke-virtual {v5, v6}, Lcom/android/settings_ext/location/WrappingIZatSwitchPreference;->setOnPreferenceChangeListener(Landroid/preference/Preference$OnPreferenceChangeListener;)V
 
     .line 280
     :cond_3
-    invoke-virtual {p0}, Lcom/android/settings/location/LocationMode;->refreshLocationMode()V
+    invoke-virtual {p0}, Lcom/android/settings_ext/location/LocationMode;->refreshLocationMode()V
 
     .line 281
     return-object v4
@@ -396,12 +396,12 @@
     .line 242
     :cond_4
     :try_start_0
-    iget-object v5, p0, Lcom/android/settings/location/LocationMode;->mXTService:Lcom/android/location/XT/IXTSrv;
+    iget-object v5, p0, Lcom/android/settings_ext/location/LocationMode;->mXTService:Lcom/android/location/XT/IXTSrv;
 
     if-eqz v5, :cond_2
 
     .line 243
-    iget-object v5, p0, Lcom/android/settings/location/LocationMode;->mXTService:Lcom/android/location/XT/IXTSrv;
+    iget-object v5, p0, Lcom/android/settings_ext/location/LocationMode;->mXTService:Lcom/android/location/XT/IXTSrv;
 
     const/4 v6, 0x0
 
@@ -411,7 +411,7 @@
 
     .line 244
     .local v2, "izatMenuTitle":Ljava/lang/String;
-    iget-object v5, p0, Lcom/android/settings/location/LocationMode;->mXTService:Lcom/android/location/XT/IXTSrv;
+    iget-object v5, p0, Lcom/android/settings_ext/location/LocationMode;->mXTService:Lcom/android/location/XT/IXTSrv;
 
     const/4 v6, 0x1
 
@@ -421,29 +421,29 @@
 
     .line 245
     .local v3, "izatSubtitle":Ljava/lang/String;
-    iget-object v5, p0, Lcom/android/settings/location/LocationMode;->mIZat:Lcom/android/settings/location/WrappingIZatSwitchPreference;
+    iget-object v5, p0, Lcom/android/settings_ext/location/LocationMode;->mIZat:Lcom/android/settings_ext/location/WrappingIZatSwitchPreference;
 
-    invoke-virtual {v5, v2}, Lcom/android/settings/location/WrappingIZatSwitchPreference;->setTitle(Ljava/lang/CharSequence;)V
+    invoke-virtual {v5, v2}, Lcom/android/settings_ext/location/WrappingIZatSwitchPreference;->setTitle(Ljava/lang/CharSequence;)V
 
     .line 246
-    iget-object v5, p0, Lcom/android/settings/location/LocationMode;->mIZat:Lcom/android/settings/location/WrappingIZatSwitchPreference;
+    iget-object v5, p0, Lcom/android/settings_ext/location/LocationMode;->mIZat:Lcom/android/settings_ext/location/WrappingIZatSwitchPreference;
 
     invoke-static {v3}, Landroid/text/Html;->fromHtml(Ljava/lang/String;)Landroid/text/Spanned;
 
     move-result-object v6
 
-    invoke-virtual {v5, v6}, Lcom/android/settings/location/WrappingIZatSwitchPreference;->setSummary(Ljava/lang/CharSequence;)V
+    invoke-virtual {v5, v6}, Lcom/android/settings_ext/location/WrappingIZatSwitchPreference;->setSummary(Ljava/lang/CharSequence;)V
 
     .line 247
-    iget-object v5, p0, Lcom/android/settings/location/LocationMode;->mIZat:Lcom/android/settings/location/WrappingIZatSwitchPreference;
+    iget-object v5, p0, Lcom/android/settings_ext/location/LocationMode;->mIZat:Lcom/android/settings_ext/location/WrappingIZatSwitchPreference;
 
-    iget-object v6, p0, Lcom/android/settings/location/LocationMode;->mXTService:Lcom/android/location/XT/IXTSrv;
+    iget-object v6, p0, Lcom/android/settings_ext/location/LocationMode;->mXTService:Lcom/android/location/XT/IXTSrv;
 
     invoke-interface {v6}, Lcom/android/location/XT/IXTSrv;->getStatus()Z
 
     move-result v6
 
-    invoke-virtual {v5, v6}, Lcom/android/settings/location/WrappingIZatSwitchPreference;->setChecked(Z)V
+    invoke-virtual {v5, v6}, Lcom/android/settings_ext/location/WrappingIZatSwitchPreference;->setChecked(Z)V
     :try_end_0
     .catch Landroid/os/RemoteException; {:try_start_0 .. :try_end_0} :catch_0
 
@@ -471,18 +471,18 @@
 
     .prologue
     .line 140
-    iget-object v1, p0, Lcom/android/settings/location/LocationMode;->mServiceConn:Lcom/android/settings/location/LocationMode$XTServiceConnection;
+    iget-object v1, p0, Lcom/android/settings_ext/location/LocationMode;->mServiceConn:Lcom/android/settings_ext/location/LocationMode$XTServiceConnection;
 
     if-nez v1, :cond_0
 
     .line 141
-    new-instance v1, Lcom/android/settings/location/LocationMode$XTServiceConnection;
+    new-instance v1, Lcom/android/settings_ext/location/LocationMode$XTServiceConnection;
 
     const/4 v2, 0x0
 
-    invoke-direct {v1, p0, v2}, Lcom/android/settings/location/LocationMode$XTServiceConnection;-><init>(Lcom/android/settings/location/LocationMode;Lcom/android/settings/location/LocationMode$1;)V
+    invoke-direct {v1, p0, v2}, Lcom/android/settings_ext/location/LocationMode$XTServiceConnection;-><init>(Lcom/android/settings_ext/location/LocationMode;Lcom/android/settings_ext/location/LocationMode$1;)V
 
-    iput-object v1, p0, Lcom/android/settings/location/LocationMode;->mServiceConn:Lcom/android/settings/location/LocationMode$XTServiceConnection;
+    iput-object v1, p0, Lcom/android/settings_ext/location/LocationMode;->mServiceConn:Lcom/android/settings_ext/location/LocationMode$XTServiceConnection;
 
     .line 143
     :cond_0
@@ -503,11 +503,11 @@
     invoke-virtual {v0, v1}, Landroid/content/Intent;->setPackage(Ljava/lang/String;)Landroid/content/Intent;
 
     .line 145
-    invoke-virtual {p0}, Lcom/android/settings/location/LocationMode;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/location/LocationMode;->getActivity()Landroid/app/Activity;
 
     move-result-object v1
 
-    iget-object v2, p0, Lcom/android/settings/location/LocationMode;->mServiceConn:Lcom/android/settings/location/LocationMode$XTServiceConnection;
+    iget-object v2, p0, Lcom/android/settings_ext/location/LocationMode;->mServiceConn:Lcom/android/settings_ext/location/LocationMode$XTServiceConnection;
 
     const/4 v3, 0x1
 
@@ -515,15 +515,15 @@
 
     move-result v1
 
-    iput-boolean v1, p0, Lcom/android/settings/location/LocationMode;->izatConnResult:Z
+    iput-boolean v1, p0, Lcom/android/settings_ext/location/LocationMode;->izatConnResult:Z
 
     .line 146
     return-void
 .end method
 
-.method private updateRadioButtons(Lcom/android/settings/location/RadioButtonPreference;)V
+.method private updateRadioButtons(Lcom/android/settings_ext/location/RadioButtonPreference;)V
     .locals 3
-    .param p1, "activated"    # Lcom/android/settings/location/RadioButtonPreference;
+    .param p1, "activated"    # Lcom/android/settings_ext/location/RadioButtonPreference;
 
     .prologue
     const/4 v2, 0x1
@@ -534,19 +534,19 @@
     if-nez p1, :cond_1
 
     .line 286
-    iget-object v0, p0, Lcom/android/settings/location/LocationMode;->mHighAccuracy:Lcom/android/settings/location/RadioButtonPreference;
+    iget-object v0, p0, Lcom/android/settings_ext/location/LocationMode;->mHighAccuracy:Lcom/android/settings_ext/location/RadioButtonPreference;
 
-    invoke-virtual {v0, v1}, Lcom/android/settings/location/RadioButtonPreference;->setChecked(Z)V
+    invoke-virtual {v0, v1}, Lcom/android/settings_ext/location/RadioButtonPreference;->setChecked(Z)V
 
     .line 287
-    iget-object v0, p0, Lcom/android/settings/location/LocationMode;->mBatterySaving:Lcom/android/settings/location/RadioButtonPreference;
+    iget-object v0, p0, Lcom/android/settings_ext/location/LocationMode;->mBatterySaving:Lcom/android/settings_ext/location/RadioButtonPreference;
 
-    invoke-virtual {v0, v1}, Lcom/android/settings/location/RadioButtonPreference;->setChecked(Z)V
+    invoke-virtual {v0, v1}, Lcom/android/settings_ext/location/RadioButtonPreference;->setChecked(Z)V
 
     .line 288
-    iget-object v0, p0, Lcom/android/settings/location/LocationMode;->mSensorsOnly:Lcom/android/settings/location/RadioButtonPreference;
+    iget-object v0, p0, Lcom/android/settings_ext/location/LocationMode;->mSensorsOnly:Lcom/android/settings_ext/location/RadioButtonPreference;
 
-    invoke-virtual {v0, v1}, Lcom/android/settings/location/RadioButtonPreference;->setChecked(Z)V
+    invoke-virtual {v0, v1}, Lcom/android/settings_ext/location/RadioButtonPreference;->setChecked(Z)V
 
     .line 302
     :cond_0
@@ -555,70 +555,70 @@
 
     .line 289
     :cond_1
-    iget-object v0, p0, Lcom/android/settings/location/LocationMode;->mHighAccuracy:Lcom/android/settings/location/RadioButtonPreference;
+    iget-object v0, p0, Lcom/android/settings_ext/location/LocationMode;->mHighAccuracy:Lcom/android/settings_ext/location/RadioButtonPreference;
 
     if-ne p1, v0, :cond_2
 
     .line 290
-    iget-object v0, p0, Lcom/android/settings/location/LocationMode;->mHighAccuracy:Lcom/android/settings/location/RadioButtonPreference;
+    iget-object v0, p0, Lcom/android/settings_ext/location/LocationMode;->mHighAccuracy:Lcom/android/settings_ext/location/RadioButtonPreference;
 
-    invoke-virtual {v0, v2}, Lcom/android/settings/location/RadioButtonPreference;->setChecked(Z)V
+    invoke-virtual {v0, v2}, Lcom/android/settings_ext/location/RadioButtonPreference;->setChecked(Z)V
 
     .line 291
-    iget-object v0, p0, Lcom/android/settings/location/LocationMode;->mBatterySaving:Lcom/android/settings/location/RadioButtonPreference;
+    iget-object v0, p0, Lcom/android/settings_ext/location/LocationMode;->mBatterySaving:Lcom/android/settings_ext/location/RadioButtonPreference;
 
-    invoke-virtual {v0, v1}, Lcom/android/settings/location/RadioButtonPreference;->setChecked(Z)V
+    invoke-virtual {v0, v1}, Lcom/android/settings_ext/location/RadioButtonPreference;->setChecked(Z)V
 
     .line 292
-    iget-object v0, p0, Lcom/android/settings/location/LocationMode;->mSensorsOnly:Lcom/android/settings/location/RadioButtonPreference;
+    iget-object v0, p0, Lcom/android/settings_ext/location/LocationMode;->mSensorsOnly:Lcom/android/settings_ext/location/RadioButtonPreference;
 
-    invoke-virtual {v0, v1}, Lcom/android/settings/location/RadioButtonPreference;->setChecked(Z)V
+    invoke-virtual {v0, v1}, Lcom/android/settings_ext/location/RadioButtonPreference;->setChecked(Z)V
 
     goto :goto_0
 
     .line 293
     :cond_2
-    iget-object v0, p0, Lcom/android/settings/location/LocationMode;->mBatterySaving:Lcom/android/settings/location/RadioButtonPreference;
+    iget-object v0, p0, Lcom/android/settings_ext/location/LocationMode;->mBatterySaving:Lcom/android/settings_ext/location/RadioButtonPreference;
 
     if-ne p1, v0, :cond_3
 
     .line 294
-    iget-object v0, p0, Lcom/android/settings/location/LocationMode;->mHighAccuracy:Lcom/android/settings/location/RadioButtonPreference;
+    iget-object v0, p0, Lcom/android/settings_ext/location/LocationMode;->mHighAccuracy:Lcom/android/settings_ext/location/RadioButtonPreference;
 
-    invoke-virtual {v0, v1}, Lcom/android/settings/location/RadioButtonPreference;->setChecked(Z)V
+    invoke-virtual {v0, v1}, Lcom/android/settings_ext/location/RadioButtonPreference;->setChecked(Z)V
 
     .line 295
-    iget-object v0, p0, Lcom/android/settings/location/LocationMode;->mBatterySaving:Lcom/android/settings/location/RadioButtonPreference;
+    iget-object v0, p0, Lcom/android/settings_ext/location/LocationMode;->mBatterySaving:Lcom/android/settings_ext/location/RadioButtonPreference;
 
-    invoke-virtual {v0, v2}, Lcom/android/settings/location/RadioButtonPreference;->setChecked(Z)V
+    invoke-virtual {v0, v2}, Lcom/android/settings_ext/location/RadioButtonPreference;->setChecked(Z)V
 
     .line 296
-    iget-object v0, p0, Lcom/android/settings/location/LocationMode;->mSensorsOnly:Lcom/android/settings/location/RadioButtonPreference;
+    iget-object v0, p0, Lcom/android/settings_ext/location/LocationMode;->mSensorsOnly:Lcom/android/settings_ext/location/RadioButtonPreference;
 
-    invoke-virtual {v0, v1}, Lcom/android/settings/location/RadioButtonPreference;->setChecked(Z)V
+    invoke-virtual {v0, v1}, Lcom/android/settings_ext/location/RadioButtonPreference;->setChecked(Z)V
 
     goto :goto_0
 
     .line 297
     :cond_3
-    iget-object v0, p0, Lcom/android/settings/location/LocationMode;->mSensorsOnly:Lcom/android/settings/location/RadioButtonPreference;
+    iget-object v0, p0, Lcom/android/settings_ext/location/LocationMode;->mSensorsOnly:Lcom/android/settings_ext/location/RadioButtonPreference;
 
     if-ne p1, v0, :cond_0
 
     .line 298
-    iget-object v0, p0, Lcom/android/settings/location/LocationMode;->mHighAccuracy:Lcom/android/settings/location/RadioButtonPreference;
+    iget-object v0, p0, Lcom/android/settings_ext/location/LocationMode;->mHighAccuracy:Lcom/android/settings_ext/location/RadioButtonPreference;
 
-    invoke-virtual {v0, v1}, Lcom/android/settings/location/RadioButtonPreference;->setChecked(Z)V
+    invoke-virtual {v0, v1}, Lcom/android/settings_ext/location/RadioButtonPreference;->setChecked(Z)V
 
     .line 299
-    iget-object v0, p0, Lcom/android/settings/location/LocationMode;->mBatterySaving:Lcom/android/settings/location/RadioButtonPreference;
+    iget-object v0, p0, Lcom/android/settings_ext/location/LocationMode;->mBatterySaving:Lcom/android/settings_ext/location/RadioButtonPreference;
 
-    invoke-virtual {v0, v1}, Lcom/android/settings/location/RadioButtonPreference;->setChecked(Z)V
+    invoke-virtual {v0, v1}, Lcom/android/settings_ext/location/RadioButtonPreference;->setChecked(Z)V
 
     .line 300
-    iget-object v0, p0, Lcom/android/settings/location/LocationMode;->mSensorsOnly:Lcom/android/settings/location/RadioButtonPreference;
+    iget-object v0, p0, Lcom/android/settings_ext/location/LocationMode;->mSensorsOnly:Lcom/android/settings_ext/location/RadioButtonPreference;
 
-    invoke-virtual {v0, v2}, Lcom/android/settings/location/RadioButtonPreference;->setChecked(Z)V
+    invoke-virtual {v0, v2}, Lcom/android/settings_ext/location/RadioButtonPreference;->setChecked(Z)V
 
     goto :goto_0
 .end method
@@ -655,19 +655,19 @@
     .line 337
     .local v0, "enabled":Z
     :goto_1
-    iget-object v1, p0, Lcom/android/settings/location/LocationMode;->mHighAccuracy:Lcom/android/settings/location/RadioButtonPreference;
+    iget-object v1, p0, Lcom/android/settings_ext/location/LocationMode;->mHighAccuracy:Lcom/android/settings_ext/location/RadioButtonPreference;
 
-    invoke-virtual {v1, v0}, Lcom/android/settings/location/RadioButtonPreference;->setEnabled(Z)V
+    invoke-virtual {v1, v0}, Lcom/android/settings_ext/location/RadioButtonPreference;->setEnabled(Z)V
 
     .line 338
-    iget-object v1, p0, Lcom/android/settings/location/LocationMode;->mBatterySaving:Lcom/android/settings/location/RadioButtonPreference;
+    iget-object v1, p0, Lcom/android/settings_ext/location/LocationMode;->mBatterySaving:Lcom/android/settings_ext/location/RadioButtonPreference;
 
-    invoke-virtual {v1, v0}, Lcom/android/settings/location/RadioButtonPreference;->setEnabled(Z)V
+    invoke-virtual {v1, v0}, Lcom/android/settings_ext/location/RadioButtonPreference;->setEnabled(Z)V
 
     .line 339
-    iget-object v1, p0, Lcom/android/settings/location/LocationMode;->mSensorsOnly:Lcom/android/settings/location/RadioButtonPreference;
+    iget-object v1, p0, Lcom/android/settings_ext/location/LocationMode;->mSensorsOnly:Lcom/android/settings_ext/location/RadioButtonPreference;
 
-    invoke-virtual {v1, v0}, Lcom/android/settings/location/RadioButtonPreference;->setEnabled(Z)V
+    invoke-virtual {v1, v0}, Lcom/android/settings_ext/location/RadioButtonPreference;->setEnabled(Z)V
 
     .line 340
     return-void
@@ -677,31 +677,31 @@
     :pswitch_0
     const/4 v1, 0x0
 
-    invoke-direct {p0, v1}, Lcom/android/settings/location/LocationMode;->updateRadioButtons(Lcom/android/settings/location/RadioButtonPreference;)V
+    invoke-direct {p0, v1}, Lcom/android/settings_ext/location/LocationMode;->updateRadioButtons(Lcom/android/settings_ext/location/RadioButtonPreference;)V
 
     goto :goto_0
 
     .line 324
     :pswitch_1
-    iget-object v1, p0, Lcom/android/settings/location/LocationMode;->mSensorsOnly:Lcom/android/settings/location/RadioButtonPreference;
+    iget-object v1, p0, Lcom/android/settings_ext/location/LocationMode;->mSensorsOnly:Lcom/android/settings_ext/location/RadioButtonPreference;
 
-    invoke-direct {p0, v1}, Lcom/android/settings/location/LocationMode;->updateRadioButtons(Lcom/android/settings/location/RadioButtonPreference;)V
+    invoke-direct {p0, v1}, Lcom/android/settings_ext/location/LocationMode;->updateRadioButtons(Lcom/android/settings_ext/location/RadioButtonPreference;)V
 
     goto :goto_0
 
     .line 327
     :pswitch_2
-    iget-object v1, p0, Lcom/android/settings/location/LocationMode;->mBatterySaving:Lcom/android/settings/location/RadioButtonPreference;
+    iget-object v1, p0, Lcom/android/settings_ext/location/LocationMode;->mBatterySaving:Lcom/android/settings_ext/location/RadioButtonPreference;
 
-    invoke-direct {p0, v1}, Lcom/android/settings/location/LocationMode;->updateRadioButtons(Lcom/android/settings/location/RadioButtonPreference;)V
+    invoke-direct {p0, v1}, Lcom/android/settings_ext/location/LocationMode;->updateRadioButtons(Lcom/android/settings_ext/location/RadioButtonPreference;)V
 
     goto :goto_0
 
     .line 330
     :pswitch_3
-    iget-object v1, p0, Lcom/android/settings/location/LocationMode;->mHighAccuracy:Lcom/android/settings/location/RadioButtonPreference;
+    iget-object v1, p0, Lcom/android/settings_ext/location/LocationMode;->mHighAccuracy:Lcom/android/settings_ext/location/RadioButtonPreference;
 
-    invoke-direct {p0, v1}, Lcom/android/settings/location/LocationMode;->updateRadioButtons(Lcom/android/settings/location/RadioButtonPreference;)V
+    invoke-direct {p0, v1}, Lcom/android/settings_ext/location/LocationMode;->updateRadioButtons(Lcom/android/settings_ext/location/RadioButtonPreference;)V
 
     goto :goto_0
 
@@ -728,15 +728,15 @@
 
     .prologue
     .line 217
-    invoke-super {p0}, Lcom/android/settings/location/LocationSettingsBase;->onPause()V
+    invoke-super {p0}, Lcom/android/settings_ext/location/LocationSettingsBase;->onPause()V
 
     .line 218
     return-void
 .end method
 
-.method public onRadioButtonClicked(Lcom/android/settings/location/RadioButtonPreference;)V
+.method public onRadioButtonClicked(Lcom/android/settings_ext/location/RadioButtonPreference;)V
     .locals 2
-    .param p1, "emiter"    # Lcom/android/settings/location/RadioButtonPreference;
+    .param p1, "emiter"    # Lcom/android/settings_ext/location/RadioButtonPreference;
 
     .prologue
     .line 306
@@ -744,7 +744,7 @@
 
     .line 307
     .local v0, "mode":I
-    iget-object v1, p0, Lcom/android/settings/location/LocationMode;->mHighAccuracy:Lcom/android/settings/location/RadioButtonPreference;
+    iget-object v1, p0, Lcom/android/settings_ext/location/LocationMode;->mHighAccuracy:Lcom/android/settings_ext/location/RadioButtonPreference;
 
     if-ne p1, v1, :cond_1
 
@@ -754,14 +754,14 @@
     .line 314
     :cond_0
     :goto_0
-    invoke-virtual {p0, v0}, Lcom/android/settings/location/LocationMode;->setLocationMode(I)V
+    invoke-virtual {p0, v0}, Lcom/android/settings_ext/location/LocationMode;->setLocationMode(I)V
 
     .line 315
     return-void
 
     .line 309
     :cond_1
-    iget-object v1, p0, Lcom/android/settings/location/LocationMode;->mBatterySaving:Lcom/android/settings/location/RadioButtonPreference;
+    iget-object v1, p0, Lcom/android/settings_ext/location/LocationMode;->mBatterySaving:Lcom/android/settings_ext/location/RadioButtonPreference;
 
     if-ne p1, v1, :cond_2
 
@@ -772,7 +772,7 @@
 
     .line 311
     :cond_2
-    iget-object v1, p0, Lcom/android/settings/location/LocationMode;->mSensorsOnly:Lcom/android/settings/location/RadioButtonPreference;
+    iget-object v1, p0, Lcom/android/settings_ext/location/LocationMode;->mSensorsOnly:Lcom/android/settings_ext/location/RadioButtonPreference;
 
     if-ne p1, v1, :cond_0
 
@@ -787,10 +787,10 @@
 
     .prologue
     .line 211
-    invoke-super {p0}, Lcom/android/settings/location/LocationSettingsBase;->onResume()V
+    invoke-super {p0}, Lcom/android/settings_ext/location/LocationSettingsBase;->onResume()V
 
     .line 212
-    invoke-direct {p0}, Lcom/android/settings/location/LocationMode;->createPreferenceHierarchy()Landroid/preference/PreferenceScreen;
+    invoke-direct {p0}, Lcom/android/settings_ext/location/LocationMode;->createPreferenceHierarchy()Landroid/preference/PreferenceScreen;
 
     .line 213
     return-void
@@ -801,10 +801,10 @@
 
     .prologue
     .line 199
-    invoke-super {p0}, Lcom/android/settings/location/LocationSettingsBase;->onStart()V
+    invoke-super {p0}, Lcom/android/settings_ext/location/LocationSettingsBase;->onStart()V
 
     .line 200
-    invoke-direct {p0}, Lcom/android/settings/location/LocationMode;->initUserPrefService()V
+    invoke-direct {p0}, Lcom/android/settings_ext/location/LocationMode;->initUserPrefService()V
 
     .line 201
     return-void
@@ -815,14 +815,14 @@
 
     .prologue
     .line 205
-    invoke-super {p0}, Lcom/android/settings/location/LocationSettingsBase;->onStop()V
+    invoke-super {p0}, Lcom/android/settings_ext/location/LocationSettingsBase;->onStop()V
 
     .line 206
-    invoke-virtual {p0}, Lcom/android/settings/location/LocationMode;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/location/LocationMode;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/android/settings/location/LocationMode;->mServiceConn:Lcom/android/settings/location/LocationMode$XTServiceConnection;
+    iget-object v1, p0, Lcom/android/settings_ext/location/LocationMode;->mServiceConn:Lcom/android/settings_ext/location/LocationMode$XTServiceConnection;
 
     invoke-virtual {v0, v1}, Landroid/app/Activity;->unbindService(Landroid/content/ServiceConnection;)V
 

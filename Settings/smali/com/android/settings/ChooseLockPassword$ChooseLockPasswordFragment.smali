@@ -1,4 +1,4 @@
-.class public Lcom/android/settings/ChooseLockPassword$ChooseLockPasswordFragment;
+.class public Lcom/android/settings_ext/ChooseLockPassword$ChooseLockPasswordFragment;
 .super Landroid/app/Fragment;
 .source "ChooseLockPassword.java"
 
@@ -10,7 +10,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/android/settings/ChooseLockPassword;
+    value = Lcom/android/settings_ext/ChooseLockPassword;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -20,7 +20,7 @@
 
 .annotation system Ldalvik/annotation/MemberClasses;
     value = {
-        Lcom/android/settings/ChooseLockPassword$ChooseLockPasswordFragment$Stage;
+        Lcom/android/settings_ext/ChooseLockPassword$ChooseLockPasswordFragment$Stage;
     }
 .end annotation
 
@@ -28,7 +28,7 @@
 # instance fields
 .field private mCancelButton:Landroid/widget/Button;
 
-.field private mChooseLockSettingsHelper:Lcom/android/settings/ChooseLockSettingsHelper;
+.field private mChooseLockSettingsHelper:Lcom/android/settings_ext/ChooseLockSettingsHelper;
 
 .field private mDone:Z
 
@@ -68,7 +68,7 @@
 
 .field private mRequestedQuality:I
 
-.field private mUiStage:Lcom/android/settings/ChooseLockPassword$ChooseLockPasswordFragment$Stage;
+.field private mUiStage:Lcom/android/settings_ext/ChooseLockPassword$ChooseLockPasswordFragment$Stage;
 
 
 # direct methods
@@ -84,72 +84,72 @@
     .line 105
     const/4 v0, 0x4
 
-    iput v0, p0, Lcom/android/settings/ChooseLockPassword$ChooseLockPasswordFragment;->mPasswordMinLength:I
+    iput v0, p0, Lcom/android/settings_ext/ChooseLockPassword$ChooseLockPasswordFragment;->mPasswordMinLength:I
 
     .line 106
     const/16 v0, 0x10
 
-    iput v0, p0, Lcom/android/settings/ChooseLockPassword$ChooseLockPasswordFragment;->mPasswordMaxLength:I
+    iput v0, p0, Lcom/android/settings_ext/ChooseLockPassword$ChooseLockPasswordFragment;->mPasswordMaxLength:I
 
     .line 107
-    iput v1, p0, Lcom/android/settings/ChooseLockPassword$ChooseLockPasswordFragment;->mPasswordMinLetters:I
+    iput v1, p0, Lcom/android/settings_ext/ChooseLockPassword$ChooseLockPasswordFragment;->mPasswordMinLetters:I
 
     .line 108
-    iput v1, p0, Lcom/android/settings/ChooseLockPassword$ChooseLockPasswordFragment;->mPasswordMinUpperCase:I
+    iput v1, p0, Lcom/android/settings_ext/ChooseLockPassword$ChooseLockPasswordFragment;->mPasswordMinUpperCase:I
 
     .line 109
-    iput v1, p0, Lcom/android/settings/ChooseLockPassword$ChooseLockPasswordFragment;->mPasswordMinLowerCase:I
+    iput v1, p0, Lcom/android/settings_ext/ChooseLockPassword$ChooseLockPasswordFragment;->mPasswordMinLowerCase:I
 
     .line 110
-    iput v1, p0, Lcom/android/settings/ChooseLockPassword$ChooseLockPasswordFragment;->mPasswordMinSymbols:I
+    iput v1, p0, Lcom/android/settings_ext/ChooseLockPassword$ChooseLockPasswordFragment;->mPasswordMinSymbols:I
 
     .line 111
-    iput v1, p0, Lcom/android/settings/ChooseLockPassword$ChooseLockPasswordFragment;->mPasswordMinNumeric:I
+    iput v1, p0, Lcom/android/settings_ext/ChooseLockPassword$ChooseLockPasswordFragment;->mPasswordMinNumeric:I
 
     .line 112
-    iput v1, p0, Lcom/android/settings/ChooseLockPassword$ChooseLockPasswordFragment;->mPasswordMinNonLetter:I
+    iput v1, p0, Lcom/android/settings_ext/ChooseLockPassword$ChooseLockPasswordFragment;->mPasswordMinNonLetter:I
 
     .line 114
     const/high16 v0, 0x20000
 
-    iput v0, p0, Lcom/android/settings/ChooseLockPassword$ChooseLockPasswordFragment;->mRequestedQuality:I
+    iput v0, p0, Lcom/android/settings_ext/ChooseLockPassword$ChooseLockPasswordFragment;->mRequestedQuality:I
 
     .line 116
-    sget-object v0, Lcom/android/settings/ChooseLockPassword$ChooseLockPasswordFragment$Stage;->Introduction:Lcom/android/settings/ChooseLockPassword$ChooseLockPasswordFragment$Stage;
+    sget-object v0, Lcom/android/settings_ext/ChooseLockPassword$ChooseLockPasswordFragment$Stage;->Introduction:Lcom/android/settings_ext/ChooseLockPassword$ChooseLockPasswordFragment$Stage;
 
-    iput-object v0, p0, Lcom/android/settings/ChooseLockPassword$ChooseLockPasswordFragment;->mUiStage:Lcom/android/settings/ChooseLockPassword$ChooseLockPasswordFragment$Stage;
+    iput-object v0, p0, Lcom/android/settings_ext/ChooseLockPassword$ChooseLockPasswordFragment;->mUiStage:Lcom/android/settings_ext/ChooseLockPassword$ChooseLockPasswordFragment$Stage;
 
     .line 117
-    iput-boolean v1, p0, Lcom/android/settings/ChooseLockPassword$ChooseLockPasswordFragment;->mDone:Z
+    iput-boolean v1, p0, Lcom/android/settings_ext/ChooseLockPassword$ChooseLockPasswordFragment;->mDone:Z
 
     .line 130
-    new-instance v0, Lcom/android/settings/ChooseLockPassword$ChooseLockPasswordFragment$1;
+    new-instance v0, Lcom/android/settings_ext/ChooseLockPassword$ChooseLockPasswordFragment$1;
 
-    invoke-direct {v0, p0}, Lcom/android/settings/ChooseLockPassword$ChooseLockPasswordFragment$1;-><init>(Lcom/android/settings/ChooseLockPassword$ChooseLockPasswordFragment;)V
+    invoke-direct {v0, p0}, Lcom/android/settings_ext/ChooseLockPassword$ChooseLockPasswordFragment$1;-><init>(Lcom/android/settings_ext/ChooseLockPassword$ChooseLockPasswordFragment;)V
 
-    iput-object v0, p0, Lcom/android/settings/ChooseLockPassword$ChooseLockPasswordFragment;->mHandler:Landroid/os/Handler;
+    iput-object v0, p0, Lcom/android/settings_ext/ChooseLockPassword$ChooseLockPasswordFragment;->mHandler:Landroid/os/Handler;
 
     .line 170
     return-void
 .end method
 
-.method private showError(Ljava/lang/String;Lcom/android/settings/ChooseLockPassword$ChooseLockPasswordFragment$Stage;)V
+.method private showError(Ljava/lang/String;Lcom/android/settings_ext/ChooseLockPassword$ChooseLockPasswordFragment$Stage;)V
     .locals 4
     .param p1, "msg"    # Ljava/lang/String;
-    .param p2, "next"    # Lcom/android/settings/ChooseLockPassword$ChooseLockPasswordFragment$Stage;
+    .param p2, "next"    # Lcom/android/settings_ext/ChooseLockPassword$ChooseLockPasswordFragment$Stage;
 
     .prologue
     const/4 v3, 0x1
 
     .line 482
-    iget-object v1, p0, Lcom/android/settings/ChooseLockPassword$ChooseLockPasswordFragment;->mHeaderText:Landroid/widget/TextView;
+    iget-object v1, p0, Lcom/android/settings_ext/ChooseLockPassword$ChooseLockPasswordFragment;->mHeaderText:Landroid/widget/TextView;
 
     invoke-virtual {v1, p1}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
     .line 483
-    iget-object v1, p0, Lcom/android/settings/ChooseLockPassword$ChooseLockPasswordFragment;->mHeaderText:Landroid/widget/TextView;
+    iget-object v1, p0, Lcom/android/settings_ext/ChooseLockPassword$ChooseLockPasswordFragment;->mHeaderText:Landroid/widget/TextView;
 
-    iget-object v2, p0, Lcom/android/settings/ChooseLockPassword$ChooseLockPasswordFragment;->mHeaderText:Landroid/widget/TextView;
+    iget-object v2, p0, Lcom/android/settings_ext/ChooseLockPassword$ChooseLockPasswordFragment;->mHeaderText:Landroid/widget/TextView;
 
     invoke-virtual {v2}, Landroid/widget/TextView;->getText()Ljava/lang/CharSequence;
 
@@ -158,7 +158,7 @@
     invoke-virtual {v1, v2}, Landroid/widget/TextView;->announceForAccessibility(Ljava/lang/CharSequence;)V
 
     .line 484
-    iget-object v1, p0, Lcom/android/settings/ChooseLockPassword$ChooseLockPasswordFragment;->mHandler:Landroid/os/Handler;
+    iget-object v1, p0, Lcom/android/settings_ext/ChooseLockPassword$ChooseLockPasswordFragment;->mHandler:Landroid/os/Handler;
 
     invoke-virtual {v1, v3, p2}, Landroid/os/Handler;->obtainMessage(ILjava/lang/Object;)Landroid/os/Message;
 
@@ -166,12 +166,12 @@
 
     .line 485
     .local v0, "mesg":Landroid/os/Message;
-    iget-object v1, p0, Lcom/android/settings/ChooseLockPassword$ChooseLockPasswordFragment;->mHandler:Landroid/os/Handler;
+    iget-object v1, p0, Lcom/android/settings_ext/ChooseLockPassword$ChooseLockPasswordFragment;->mHandler:Landroid/os/Handler;
 
     invoke-virtual {v1, v3}, Landroid/os/Handler;->removeMessages(I)V
 
     .line 486
-    iget-object v1, p0, Lcom/android/settings/ChooseLockPassword$ChooseLockPasswordFragment;->mHandler:Landroid/os/Handler;
+    iget-object v1, p0, Lcom/android/settings_ext/ChooseLockPassword$ChooseLockPasswordFragment;->mHandler:Landroid/os/Handler;
 
     const-wide/16 v2, 0xbb8
 
@@ -190,7 +190,7 @@
     const/4 v6, 0x0
 
     .line 504
-    iget-object v4, p0, Lcom/android/settings/ChooseLockPassword$ChooseLockPasswordFragment;->mPasswordEntry:Landroid/widget/TextView;
+    iget-object v4, p0, Lcom/android/settings_ext/ChooseLockPassword$ChooseLockPasswordFragment;->mPasswordEntry:Landroid/widget/TextView;
 
     invoke-virtual {v4}, Landroid/widget/TextView;->getText()Ljava/lang/CharSequence;
 
@@ -208,21 +208,21 @@
 
     .line 506
     .local v1, "length":I
-    iget-object v4, p0, Lcom/android/settings/ChooseLockPassword$ChooseLockPasswordFragment;->mUiStage:Lcom/android/settings/ChooseLockPassword$ChooseLockPasswordFragment$Stage;
+    iget-object v4, p0, Lcom/android/settings_ext/ChooseLockPassword$ChooseLockPasswordFragment;->mUiStage:Lcom/android/settings_ext/ChooseLockPassword$ChooseLockPasswordFragment$Stage;
 
-    sget-object v7, Lcom/android/settings/ChooseLockPassword$ChooseLockPasswordFragment$Stage;->Introduction:Lcom/android/settings/ChooseLockPassword$ChooseLockPasswordFragment$Stage;
+    sget-object v7, Lcom/android/settings_ext/ChooseLockPassword$ChooseLockPasswordFragment$Stage;->Introduction:Lcom/android/settings_ext/ChooseLockPassword$ChooseLockPasswordFragment$Stage;
 
     if-ne v4, v7, :cond_3
 
     if-lez v1, :cond_3
 
     .line 507
-    iget v4, p0, Lcom/android/settings/ChooseLockPassword$ChooseLockPasswordFragment;->mPasswordMinLength:I
+    iget v4, p0, Lcom/android/settings_ext/ChooseLockPassword$ChooseLockPasswordFragment;->mPasswordMinLength:I
 
     if-ge v1, v4, :cond_1
 
     .line 508
-    iget-boolean v4, p0, Lcom/android/settings/ChooseLockPassword$ChooseLockPasswordFragment;->mIsAlphaMode:Z
+    iget-boolean v4, p0, Lcom/android/settings_ext/ChooseLockPassword$ChooseLockPasswordFragment;->mIsAlphaMode:Z
 
     if-eqz v4, :cond_0
 
@@ -231,7 +231,7 @@
     :goto_0
     new-array v5, v5, [Ljava/lang/Object;
 
-    iget v7, p0, Lcom/android/settings/ChooseLockPassword$ChooseLockPasswordFragment;->mPasswordMinLength:I
+    iget v7, p0, Lcom/android/settings_ext/ChooseLockPassword$ChooseLockPasswordFragment;->mPasswordMinLength:I
 
     invoke-static {v7}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -239,27 +239,27 @@
 
     aput-object v7, v5, v6
 
-    invoke-virtual {p0, v4, v5}, Lcom/android/settings/ChooseLockPassword$ChooseLockPasswordFragment;->getString(I[Ljava/lang/Object;)Ljava/lang/String;
+    invoke-virtual {p0, v4, v5}, Lcom/android/settings_ext/ChooseLockPassword$ChooseLockPasswordFragment;->getString(I[Ljava/lang/Object;)Ljava/lang/String;
 
     move-result-object v2
 
     .line 510
     .local v2, "msg":Ljava/lang/String;
-    iget-object v4, p0, Lcom/android/settings/ChooseLockPassword$ChooseLockPasswordFragment;->mHeaderText:Landroid/widget/TextView;
+    iget-object v4, p0, Lcom/android/settings_ext/ChooseLockPassword$ChooseLockPasswordFragment;->mHeaderText:Landroid/widget/TextView;
 
     invoke-virtual {v4, v2}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
     .line 511
-    invoke-virtual {p0, v6}, Lcom/android/settings/ChooseLockPassword$ChooseLockPasswordFragment;->setNextEnabled(Z)V
+    invoke-virtual {p0, v6}, Lcom/android/settings_ext/ChooseLockPassword$ChooseLockPasswordFragment;->setNextEnabled(Z)V
 
     .line 526
     .end local v2    # "msg":Ljava/lang/String;
     :goto_1
-    iget-object v4, p0, Lcom/android/settings/ChooseLockPassword$ChooseLockPasswordFragment;->mUiStage:Lcom/android/settings/ChooseLockPassword$ChooseLockPasswordFragment$Stage;
+    iget-object v4, p0, Lcom/android/settings_ext/ChooseLockPassword$ChooseLockPasswordFragment;->mUiStage:Lcom/android/settings_ext/ChooseLockPassword$ChooseLockPasswordFragment$Stage;
 
-    iget v4, v4, Lcom/android/settings/ChooseLockPassword$ChooseLockPasswordFragment$Stage;->buttonText:I
+    iget v4, v4, Lcom/android/settings_ext/ChooseLockPassword$ChooseLockPasswordFragment$Stage;->buttonText:I
 
-    invoke-virtual {p0, v4}, Lcom/android/settings/ChooseLockPassword$ChooseLockPasswordFragment;->setNextText(I)V
+    invoke-virtual {p0, v4}, Lcom/android/settings_ext/ChooseLockPassword$ChooseLockPasswordFragment;->setNextText(I)V
 
     .line 527
     return-void
@@ -272,7 +272,7 @@
 
     .line 513
     :cond_1
-    invoke-direct {p0, v3}, Lcom/android/settings/ChooseLockPassword$ChooseLockPasswordFragment;->validatePassword(Ljava/lang/String;)Ljava/lang/String;
+    invoke-direct {p0, v3}, Lcom/android/settings_ext/ChooseLockPassword$ChooseLockPasswordFragment;->validatePassword(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 
@@ -281,40 +281,40 @@
     if-eqz v0, :cond_2
 
     .line 515
-    iget-object v4, p0, Lcom/android/settings/ChooseLockPassword$ChooseLockPasswordFragment;->mHeaderText:Landroid/widget/TextView;
+    iget-object v4, p0, Lcom/android/settings_ext/ChooseLockPassword$ChooseLockPasswordFragment;->mHeaderText:Landroid/widget/TextView;
 
     invoke-virtual {v4, v0}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
     .line 516
-    invoke-virtual {p0, v6}, Lcom/android/settings/ChooseLockPassword$ChooseLockPasswordFragment;->setNextEnabled(Z)V
+    invoke-virtual {p0, v6}, Lcom/android/settings_ext/ChooseLockPassword$ChooseLockPasswordFragment;->setNextEnabled(Z)V
 
     goto :goto_1
 
     .line 518
     :cond_2
-    iget-object v4, p0, Lcom/android/settings/ChooseLockPassword$ChooseLockPasswordFragment;->mHeaderText:Landroid/widget/TextView;
+    iget-object v4, p0, Lcom/android/settings_ext/ChooseLockPassword$ChooseLockPasswordFragment;->mHeaderText:Landroid/widget/TextView;
 
     const v6, 0x7f090183
 
     invoke-virtual {v4, v6}, Landroid/widget/TextView;->setText(I)V
 
     .line 519
-    invoke-virtual {p0, v5}, Lcom/android/settings/ChooseLockPassword$ChooseLockPasswordFragment;->setNextEnabled(Z)V
+    invoke-virtual {p0, v5}, Lcom/android/settings_ext/ChooseLockPassword$ChooseLockPasswordFragment;->setNextEnabled(Z)V
 
     goto :goto_1
 
     .line 523
     .end local v0    # "error":Ljava/lang/String;
     :cond_3
-    iget-object v7, p0, Lcom/android/settings/ChooseLockPassword$ChooseLockPasswordFragment;->mHeaderText:Landroid/widget/TextView;
+    iget-object v7, p0, Lcom/android/settings_ext/ChooseLockPassword$ChooseLockPasswordFragment;->mHeaderText:Landroid/widget/TextView;
 
-    iget-boolean v4, p0, Lcom/android/settings/ChooseLockPassword$ChooseLockPasswordFragment;->mIsAlphaMode:Z
+    iget-boolean v4, p0, Lcom/android/settings_ext/ChooseLockPassword$ChooseLockPasswordFragment;->mIsAlphaMode:Z
 
     if-eqz v4, :cond_4
 
-    iget-object v4, p0, Lcom/android/settings/ChooseLockPassword$ChooseLockPasswordFragment;->mUiStage:Lcom/android/settings/ChooseLockPassword$ChooseLockPasswordFragment$Stage;
+    iget-object v4, p0, Lcom/android/settings_ext/ChooseLockPassword$ChooseLockPasswordFragment;->mUiStage:Lcom/android/settings_ext/ChooseLockPassword$ChooseLockPasswordFragment$Stage;
 
-    iget v4, v4, Lcom/android/settings/ChooseLockPassword$ChooseLockPasswordFragment$Stage;->alphaHint:I
+    iget v4, v4, Lcom/android/settings_ext/ChooseLockPassword$ChooseLockPasswordFragment$Stage;->alphaHint:I
 
     :goto_2
     invoke-virtual {v7, v4}, Landroid/widget/TextView;->setText(I)V
@@ -325,15 +325,15 @@
     move v4, v5
 
     :goto_3
-    invoke-virtual {p0, v4}, Lcom/android/settings/ChooseLockPassword$ChooseLockPasswordFragment;->setNextEnabled(Z)V
+    invoke-virtual {p0, v4}, Lcom/android/settings_ext/ChooseLockPassword$ChooseLockPasswordFragment;->setNextEnabled(Z)V
 
     goto :goto_1
 
     .line 523
     :cond_4
-    iget-object v4, p0, Lcom/android/settings/ChooseLockPassword$ChooseLockPasswordFragment;->mUiStage:Lcom/android/settings/ChooseLockPassword$ChooseLockPasswordFragment$Stage;
+    iget-object v4, p0, Lcom/android/settings_ext/ChooseLockPassword$ChooseLockPasswordFragment;->mUiStage:Lcom/android/settings_ext/ChooseLockPassword$ChooseLockPasswordFragment$Stage;
 
-    iget v4, v4, Lcom/android/settings/ChooseLockPassword$ChooseLockPasswordFragment$Stage;->numericHint:I
+    iget v4, v4, Lcom/android/settings_ext/ChooseLockPassword$ChooseLockPasswordFragment$Stage;->numericHint:I
 
     goto :goto_2
 
@@ -356,14 +356,14 @@
 
     move-object/from16 v0, p0
 
-    iget v13, v0, Lcom/android/settings/ChooseLockPassword$ChooseLockPasswordFragment;->mPasswordMinLength:I
+    iget v13, v0, Lcom/android/settings_ext/ChooseLockPassword$ChooseLockPasswordFragment;->mPasswordMinLength:I
 
     if-ge v12, v13, :cond_1
 
     .line 323
     move-object/from16 v0, p0
 
-    iget-boolean v12, v0, Lcom/android/settings/ChooseLockPassword$ChooseLockPasswordFragment;->mIsAlphaMode:Z
+    iget-boolean v12, v0, Lcom/android/settings_ext/ChooseLockPassword$ChooseLockPasswordFragment;->mIsAlphaMode:Z
 
     if-eqz v12, :cond_0
 
@@ -378,7 +378,7 @@
 
     move-object/from16 v0, p0
 
-    iget v15, v0, Lcom/android/settings/ChooseLockPassword$ChooseLockPasswordFragment;->mPasswordMinLength:I
+    iget v15, v0, Lcom/android/settings_ext/ChooseLockPassword$ChooseLockPasswordFragment;->mPasswordMinLength:I
 
     invoke-static {v15}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -388,7 +388,7 @@
 
     move-object/from16 v0, p0
 
-    invoke-virtual {v0, v12, v13}, Lcom/android/settings/ChooseLockPassword$ChooseLockPasswordFragment;->getString(I[Ljava/lang/Object;)Ljava/lang/String;
+    invoke-virtual {v0, v12, v13}, Lcom/android/settings_ext/ChooseLockPassword$ChooseLockPasswordFragment;->getString(I[Ljava/lang/Object;)Ljava/lang/String;
 
     move-result-object v12
 
@@ -410,14 +410,14 @@
 
     move-object/from16 v0, p0
 
-    iget v13, v0, Lcom/android/settings/ChooseLockPassword$ChooseLockPasswordFragment;->mPasswordMaxLength:I
+    iget v13, v0, Lcom/android/settings_ext/ChooseLockPassword$ChooseLockPasswordFragment;->mPasswordMaxLength:I
 
     if-le v12, v13, :cond_3
 
     .line 328
     move-object/from16 v0, p0
 
-    iget-boolean v12, v0, Lcom/android/settings/ChooseLockPassword$ChooseLockPasswordFragment;->mIsAlphaMode:Z
+    iget-boolean v12, v0, Lcom/android/settings_ext/ChooseLockPassword$ChooseLockPasswordFragment;->mIsAlphaMode:Z
 
     if-eqz v12, :cond_2
 
@@ -432,7 +432,7 @@
 
     move-object/from16 v0, p0
 
-    iget v15, v0, Lcom/android/settings/ChooseLockPassword$ChooseLockPasswordFragment;->mPasswordMaxLength:I
+    iget v15, v0, Lcom/android/settings_ext/ChooseLockPassword$ChooseLockPasswordFragment;->mPasswordMaxLength:I
 
     add-int/lit8 v15, v15, 0x1
 
@@ -444,7 +444,7 @@
 
     move-object/from16 v0, p0
 
-    invoke-virtual {v0, v12, v13}, Lcom/android/settings/ChooseLockPassword$ChooseLockPasswordFragment;->getString(I[Ljava/lang/Object;)Ljava/lang/String;
+    invoke-virtual {v0, v12, v13}, Lcom/android/settings_ext/ChooseLockPassword$ChooseLockPasswordFragment;->getString(I[Ljava/lang/Object;)Ljava/lang/String;
 
     move-result-object v12
 
@@ -514,7 +514,7 @@
 
     move-object/from16 v0, p0
 
-    invoke-virtual {v0, v12}, Lcom/android/settings/ChooseLockPassword$ChooseLockPasswordFragment;->getString(I)Ljava/lang/String;
+    invoke-virtual {v0, v12}, Lcom/android/settings_ext/ChooseLockPassword$ChooseLockPasswordFragment;->getString(I)Ljava/lang/String;
 
     move-result-object v12
 
@@ -594,7 +594,7 @@
 
     move-object/from16 v0, p0
 
-    iget v13, v0, Lcom/android/settings/ChooseLockPassword$ChooseLockPasswordFragment;->mRequestedQuality:I
+    iget v13, v0, Lcom/android/settings_ext/ChooseLockPassword$ChooseLockPasswordFragment;->mRequestedQuality:I
 
     if-eq v12, v13, :cond_a
 
@@ -602,7 +602,7 @@
 
     move-object/from16 v0, p0
 
-    iget v13, v0, Lcom/android/settings/ChooseLockPassword$ChooseLockPasswordFragment;->mRequestedQuality:I
+    iget v13, v0, Lcom/android/settings_ext/ChooseLockPassword$ChooseLockPasswordFragment;->mRequestedQuality:I
 
     if-ne v12, v13, :cond_d
 
@@ -618,7 +618,7 @@
 
     move-object/from16 v0, p0
 
-    invoke-virtual {v0, v12}, Lcom/android/settings/ChooseLockPassword$ChooseLockPasswordFragment;->getString(I)Ljava/lang/String;
+    invoke-virtual {v0, v12}, Lcom/android/settings_ext/ChooseLockPassword$ChooseLockPasswordFragment;->getString(I)Ljava/lang/String;
 
     move-result-object v12
 
@@ -636,7 +636,7 @@
 
     move-object/from16 v0, p0
 
-    iget v13, v0, Lcom/android/settings/ChooseLockPassword$ChooseLockPasswordFragment;->mRequestedQuality:I
+    iget v13, v0, Lcom/android/settings_ext/ChooseLockPassword$ChooseLockPasswordFragment;->mRequestedQuality:I
 
     if-ne v12, v13, :cond_18
 
@@ -649,7 +649,7 @@
 
     move-object/from16 v0, p0
 
-    invoke-virtual {v0, v12}, Lcom/android/settings/ChooseLockPassword$ChooseLockPasswordFragment;->getString(I)Ljava/lang/String;
+    invoke-virtual {v0, v12}, Lcom/android/settings_ext/ChooseLockPassword$ChooseLockPasswordFragment;->getString(I)Ljava/lang/String;
 
     move-result-object v12
 
@@ -662,19 +662,19 @@
 
     move-object/from16 v0, p0
 
-    iget v13, v0, Lcom/android/settings/ChooseLockPassword$ChooseLockPasswordFragment;->mRequestedQuality:I
+    iget v13, v0, Lcom/android/settings_ext/ChooseLockPassword$ChooseLockPasswordFragment;->mRequestedQuality:I
 
     if-ne v12, v13, :cond_13
 
     .line 372
     move-object/from16 v0, p0
 
-    iget v12, v0, Lcom/android/settings/ChooseLockPassword$ChooseLockPasswordFragment;->mPasswordMinLetters:I
+    iget v12, v0, Lcom/android/settings_ext/ChooseLockPassword$ChooseLockPasswordFragment;->mPasswordMinLetters:I
 
     if-ge v5, v12, :cond_e
 
     .line 373
-    invoke-virtual/range {p0 .. p0}, Lcom/android/settings/ChooseLockPassword$ChooseLockPasswordFragment;->getResources()Landroid/content/res/Resources;
+    invoke-virtual/range {p0 .. p0}, Lcom/android/settings_ext/ChooseLockPassword$ChooseLockPasswordFragment;->getResources()Landroid/content/res/Resources;
 
     move-result-object v12
 
@@ -682,7 +682,7 @@
 
     move-object/from16 v0, p0
 
-    iget v14, v0, Lcom/android/settings/ChooseLockPassword$ChooseLockPasswordFragment;->mPasswordMinLetters:I
+    iget v14, v0, Lcom/android/settings_ext/ChooseLockPassword$ChooseLockPasswordFragment;->mPasswordMinLetters:I
 
     invoke-virtual {v12, v13, v14}, Landroid/content/res/Resources;->getQuantityString(II)Ljava/lang/String;
 
@@ -696,7 +696,7 @@
 
     move-object/from16 v0, p0
 
-    iget v15, v0, Lcom/android/settings/ChooseLockPassword$ChooseLockPasswordFragment;->mPasswordMinLetters:I
+    iget v15, v0, Lcom/android/settings_ext/ChooseLockPassword$ChooseLockPasswordFragment;->mPasswordMinLetters:I
 
     invoke-static {v15}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -714,12 +714,12 @@
     :cond_e
     move-object/from16 v0, p0
 
-    iget v12, v0, Lcom/android/settings/ChooseLockPassword$ChooseLockPasswordFragment;->mPasswordMinNumeric:I
+    iget v12, v0, Lcom/android/settings_ext/ChooseLockPassword$ChooseLockPasswordFragment;->mPasswordMinNumeric:I
 
     if-ge v8, v12, :cond_f
 
     .line 377
-    invoke-virtual/range {p0 .. p0}, Lcom/android/settings/ChooseLockPassword$ChooseLockPasswordFragment;->getResources()Landroid/content/res/Resources;
+    invoke-virtual/range {p0 .. p0}, Lcom/android/settings_ext/ChooseLockPassword$ChooseLockPasswordFragment;->getResources()Landroid/content/res/Resources;
 
     move-result-object v12
 
@@ -727,7 +727,7 @@
 
     move-object/from16 v0, p0
 
-    iget v14, v0, Lcom/android/settings/ChooseLockPassword$ChooseLockPasswordFragment;->mPasswordMinNumeric:I
+    iget v14, v0, Lcom/android/settings_ext/ChooseLockPassword$ChooseLockPasswordFragment;->mPasswordMinNumeric:I
 
     invoke-virtual {v12, v13, v14}, Landroid/content/res/Resources;->getQuantityString(II)Ljava/lang/String;
 
@@ -741,7 +741,7 @@
 
     move-object/from16 v0, p0
 
-    iget v15, v0, Lcom/android/settings/ChooseLockPassword$ChooseLockPasswordFragment;->mPasswordMinNumeric:I
+    iget v15, v0, Lcom/android/settings_ext/ChooseLockPassword$ChooseLockPasswordFragment;->mPasswordMinNumeric:I
 
     invoke-static {v15}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -759,12 +759,12 @@
     :cond_f
     move-object/from16 v0, p0
 
-    iget v12, v0, Lcom/android/settings/ChooseLockPassword$ChooseLockPasswordFragment;->mPasswordMinLowerCase:I
+    iget v12, v0, Lcom/android/settings_ext/ChooseLockPassword$ChooseLockPasswordFragment;->mPasswordMinLowerCase:I
 
     if-ge v6, v12, :cond_10
 
     .line 381
-    invoke-virtual/range {p0 .. p0}, Lcom/android/settings/ChooseLockPassword$ChooseLockPasswordFragment;->getResources()Landroid/content/res/Resources;
+    invoke-virtual/range {p0 .. p0}, Lcom/android/settings_ext/ChooseLockPassword$ChooseLockPasswordFragment;->getResources()Landroid/content/res/Resources;
 
     move-result-object v12
 
@@ -772,7 +772,7 @@
 
     move-object/from16 v0, p0
 
-    iget v14, v0, Lcom/android/settings/ChooseLockPassword$ChooseLockPasswordFragment;->mPasswordMinLowerCase:I
+    iget v14, v0, Lcom/android/settings_ext/ChooseLockPassword$ChooseLockPasswordFragment;->mPasswordMinLowerCase:I
 
     invoke-virtual {v12, v13, v14}, Landroid/content/res/Resources;->getQuantityString(II)Ljava/lang/String;
 
@@ -786,7 +786,7 @@
 
     move-object/from16 v0, p0
 
-    iget v15, v0, Lcom/android/settings/ChooseLockPassword$ChooseLockPasswordFragment;->mPasswordMinLowerCase:I
+    iget v15, v0, Lcom/android/settings_ext/ChooseLockPassword$ChooseLockPasswordFragment;->mPasswordMinLowerCase:I
 
     invoke-static {v15}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -804,12 +804,12 @@
     :cond_10
     move-object/from16 v0, p0
 
-    iget v12, v0, Lcom/android/settings/ChooseLockPassword$ChooseLockPasswordFragment;->mPasswordMinUpperCase:I
+    iget v12, v0, Lcom/android/settings_ext/ChooseLockPassword$ChooseLockPasswordFragment;->mPasswordMinUpperCase:I
 
     if-ge v11, v12, :cond_11
 
     .line 385
-    invoke-virtual/range {p0 .. p0}, Lcom/android/settings/ChooseLockPassword$ChooseLockPasswordFragment;->getResources()Landroid/content/res/Resources;
+    invoke-virtual/range {p0 .. p0}, Lcom/android/settings_ext/ChooseLockPassword$ChooseLockPasswordFragment;->getResources()Landroid/content/res/Resources;
 
     move-result-object v12
 
@@ -817,7 +817,7 @@
 
     move-object/from16 v0, p0
 
-    iget v14, v0, Lcom/android/settings/ChooseLockPassword$ChooseLockPasswordFragment;->mPasswordMinUpperCase:I
+    iget v14, v0, Lcom/android/settings_ext/ChooseLockPassword$ChooseLockPasswordFragment;->mPasswordMinUpperCase:I
 
     invoke-virtual {v12, v13, v14}, Landroid/content/res/Resources;->getQuantityString(II)Ljava/lang/String;
 
@@ -831,7 +831,7 @@
 
     move-object/from16 v0, p0
 
-    iget v15, v0, Lcom/android/settings/ChooseLockPassword$ChooseLockPasswordFragment;->mPasswordMinUpperCase:I
+    iget v15, v0, Lcom/android/settings_ext/ChooseLockPassword$ChooseLockPasswordFragment;->mPasswordMinUpperCase:I
 
     invoke-static {v15}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -849,12 +849,12 @@
     :cond_11
     move-object/from16 v0, p0
 
-    iget v12, v0, Lcom/android/settings/ChooseLockPassword$ChooseLockPasswordFragment;->mPasswordMinSymbols:I
+    iget v12, v0, Lcom/android/settings_ext/ChooseLockPassword$ChooseLockPasswordFragment;->mPasswordMinSymbols:I
 
     if-ge v10, v12, :cond_12
 
     .line 389
-    invoke-virtual/range {p0 .. p0}, Lcom/android/settings/ChooseLockPassword$ChooseLockPasswordFragment;->getResources()Landroid/content/res/Resources;
+    invoke-virtual/range {p0 .. p0}, Lcom/android/settings_ext/ChooseLockPassword$ChooseLockPasswordFragment;->getResources()Landroid/content/res/Resources;
 
     move-result-object v12
 
@@ -862,7 +862,7 @@
 
     move-object/from16 v0, p0
 
-    iget v14, v0, Lcom/android/settings/ChooseLockPassword$ChooseLockPasswordFragment;->mPasswordMinSymbols:I
+    iget v14, v0, Lcom/android/settings_ext/ChooseLockPassword$ChooseLockPasswordFragment;->mPasswordMinSymbols:I
 
     invoke-virtual {v12, v13, v14}, Landroid/content/res/Resources;->getQuantityString(II)Ljava/lang/String;
 
@@ -876,7 +876,7 @@
 
     move-object/from16 v0, p0
 
-    iget v15, v0, Lcom/android/settings/ChooseLockPassword$ChooseLockPasswordFragment;->mPasswordMinSymbols:I
+    iget v15, v0, Lcom/android/settings_ext/ChooseLockPassword$ChooseLockPasswordFragment;->mPasswordMinSymbols:I
 
     invoke-static {v15}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -894,12 +894,12 @@
     :cond_12
     move-object/from16 v0, p0
 
-    iget v12, v0, Lcom/android/settings/ChooseLockPassword$ChooseLockPasswordFragment;->mPasswordMinNonLetter:I
+    iget v12, v0, Lcom/android/settings_ext/ChooseLockPassword$ChooseLockPasswordFragment;->mPasswordMinNonLetter:I
 
     if-ge v7, v12, :cond_18
 
     .line 393
-    invoke-virtual/range {p0 .. p0}, Lcom/android/settings/ChooseLockPassword$ChooseLockPasswordFragment;->getResources()Landroid/content/res/Resources;
+    invoke-virtual/range {p0 .. p0}, Lcom/android/settings_ext/ChooseLockPassword$ChooseLockPasswordFragment;->getResources()Landroid/content/res/Resources;
 
     move-result-object v12
 
@@ -907,7 +907,7 @@
 
     move-object/from16 v0, p0
 
-    iget v14, v0, Lcom/android/settings/ChooseLockPassword$ChooseLockPasswordFragment;->mPasswordMinNonLetter:I
+    iget v14, v0, Lcom/android/settings_ext/ChooseLockPassword$ChooseLockPasswordFragment;->mPasswordMinNonLetter:I
 
     invoke-virtual {v12, v13, v14}, Landroid/content/res/Resources;->getQuantityString(II)Ljava/lang/String;
 
@@ -921,7 +921,7 @@
 
     move-object/from16 v0, p0
 
-    iget v15, v0, Lcom/android/settings/ChooseLockPassword$ChooseLockPasswordFragment;->mPasswordMinNonLetter:I
+    iget v15, v0, Lcom/android/settings_ext/ChooseLockPassword$ChooseLockPasswordFragment;->mPasswordMinNonLetter:I
 
     invoke-static {v15}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -941,7 +941,7 @@
 
     move-object/from16 v0, p0
 
-    iget v13, v0, Lcom/android/settings/ChooseLockPassword$ChooseLockPasswordFragment;->mRequestedQuality:I
+    iget v13, v0, Lcom/android/settings_ext/ChooseLockPassword$ChooseLockPasswordFragment;->mRequestedQuality:I
 
     if-ne v12, v13, :cond_15
 
@@ -954,7 +954,7 @@
 
     move-object/from16 v0, p0
 
-    iget v13, v0, Lcom/android/settings/ChooseLockPassword$ChooseLockPasswordFragment;->mRequestedQuality:I
+    iget v13, v0, Lcom/android/settings_ext/ChooseLockPassword$ChooseLockPasswordFragment;->mRequestedQuality:I
 
     if-ne v12, v13, :cond_16
 
@@ -975,7 +975,7 @@
 
     move-object/from16 v0, p0
 
-    invoke-virtual {v0, v12}, Lcom/android/settings/ChooseLockPassword$ChooseLockPasswordFragment;->getString(I)Ljava/lang/String;
+    invoke-virtual {v0, v12}, Lcom/android/settings_ext/ChooseLockPassword$ChooseLockPasswordFragment;->getString(I)Ljava/lang/String;
 
     move-result-object v12
 
@@ -1008,7 +1008,7 @@
 
     move-object/from16 v0, p0
 
-    invoke-virtual {v0, v12}, Lcom/android/settings/ChooseLockPassword$ChooseLockPasswordFragment;->getString(I)Ljava/lang/String;
+    invoke-virtual {v0, v12}, Lcom/android/settings_ext/ChooseLockPassword$ChooseLockPasswordFragment;->getString(I)Ljava/lang/String;
 
     move-result-object v12
 
@@ -1020,7 +1020,7 @@
     :cond_18
     move-object/from16 v0, p0
 
-    iget-object v12, v0, Lcom/android/settings/ChooseLockPassword$ChooseLockPasswordFragment;->mLockPatternUtils:Lcom/android/internal/widget/LockPatternUtils;
+    iget-object v12, v0, Lcom/android/settings_ext/ChooseLockPassword$ChooseLockPasswordFragment;->mLockPatternUtils:Lcom/android/internal/widget/LockPatternUtils;
 
     move-object/from16 v0, p1
 
@@ -1033,7 +1033,7 @@
     .line 410
     move-object/from16 v0, p0
 
-    iget-boolean v12, v0, Lcom/android/settings/ChooseLockPassword$ChooseLockPasswordFragment;->mIsAlphaMode:Z
+    iget-boolean v12, v0, Lcom/android/settings_ext/ChooseLockPassword$ChooseLockPasswordFragment;->mIsAlphaMode:Z
 
     if-eqz v12, :cond_19
 
@@ -1042,7 +1042,7 @@
     :goto_7
     move-object/from16 v0, p0
 
-    invoke-virtual {v0, v12}, Lcom/android/settings/ChooseLockPassword$ChooseLockPasswordFragment;->getString(I)Ljava/lang/String;
+    invoke-virtual {v0, v12}, Lcom/android/settings_ext/ChooseLockPassword$ChooseLockPasswordFragment;->getString(I)Ljava/lang/String;
 
     move-result-object v12
 
@@ -1068,20 +1068,20 @@
 
     .prologue
     .line 531
-    iget-object v0, p0, Lcom/android/settings/ChooseLockPassword$ChooseLockPasswordFragment;->mUiStage:Lcom/android/settings/ChooseLockPassword$ChooseLockPasswordFragment$Stage;
+    iget-object v0, p0, Lcom/android/settings_ext/ChooseLockPassword$ChooseLockPasswordFragment;->mUiStage:Lcom/android/settings_ext/ChooseLockPassword$ChooseLockPasswordFragment$Stage;
 
-    sget-object v1, Lcom/android/settings/ChooseLockPassword$ChooseLockPasswordFragment$Stage;->ConfirmWrong:Lcom/android/settings/ChooseLockPassword$ChooseLockPasswordFragment$Stage;
+    sget-object v1, Lcom/android/settings_ext/ChooseLockPassword$ChooseLockPasswordFragment$Stage;->ConfirmWrong:Lcom/android/settings_ext/ChooseLockPassword$ChooseLockPasswordFragment$Stage;
 
     if-ne v0, v1, :cond_0
 
     .line 532
-    sget-object v0, Lcom/android/settings/ChooseLockPassword$ChooseLockPasswordFragment$Stage;->NeedToConfirm:Lcom/android/settings/ChooseLockPassword$ChooseLockPasswordFragment$Stage;
+    sget-object v0, Lcom/android/settings_ext/ChooseLockPassword$ChooseLockPasswordFragment$Stage;->NeedToConfirm:Lcom/android/settings_ext/ChooseLockPassword$ChooseLockPasswordFragment$Stage;
 
-    iput-object v0, p0, Lcom/android/settings/ChooseLockPassword$ChooseLockPasswordFragment;->mUiStage:Lcom/android/settings/ChooseLockPassword$ChooseLockPasswordFragment$Stage;
+    iput-object v0, p0, Lcom/android/settings_ext/ChooseLockPassword$ChooseLockPasswordFragment;->mUiStage:Lcom/android/settings_ext/ChooseLockPassword$ChooseLockPasswordFragment$Stage;
 
     .line 534
     :cond_0
-    invoke-direct {p0}, Lcom/android/settings/ChooseLockPassword$ChooseLockPasswordFragment;->updateUi()V
+    invoke-direct {p0}, Lcom/android/settings_ext/ChooseLockPassword$ChooseLockPasswordFragment;->updateUi()V
 
     .line 535
     return-void
@@ -1105,7 +1105,7 @@
 
     .prologue
     .line 301
-    invoke-static {p1}, Lcom/android/settings/notification/RedactionInterstitial;->createStartIntent(Landroid/content/Context;)Landroid/content/Intent;
+    invoke-static {p1}, Lcom/android/settings_ext/notification/RedactionInterstitial;->createStartIntent(Landroid/content/Context;)Landroid/content/Intent;
 
     move-result-object v0
 
@@ -1121,7 +1121,7 @@
     const/4 v8, 0x1
 
     .line 418
-    iget-boolean v6, p0, Lcom/android/settings/ChooseLockPassword$ChooseLockPasswordFragment;->mDone:Z
+    iget-boolean v6, p0, Lcom/android/settings_ext/ChooseLockPassword$ChooseLockPasswordFragment;->mDone:Z
 
     if-eqz v6, :cond_1
 
@@ -1132,7 +1132,7 @@
 
     .line 420
     :cond_1
-    iget-object v6, p0, Lcom/android/settings/ChooseLockPassword$ChooseLockPasswordFragment;->mPasswordEntry:Landroid/widget/TextView;
+    iget-object v6, p0, Lcom/android/settings_ext/ChooseLockPassword$ChooseLockPasswordFragment;->mPasswordEntry:Landroid/widget/TextView;
 
     invoke-virtual {v6}, Landroid/widget/TextView;->getText()Ljava/lang/CharSequence;
 
@@ -1155,14 +1155,14 @@
 
     .line 425
     .local v0, "errorMsg":Ljava/lang/String;
-    iget-object v6, p0, Lcom/android/settings/ChooseLockPassword$ChooseLockPasswordFragment;->mUiStage:Lcom/android/settings/ChooseLockPassword$ChooseLockPasswordFragment$Stage;
+    iget-object v6, p0, Lcom/android/settings_ext/ChooseLockPassword$ChooseLockPasswordFragment;->mUiStage:Lcom/android/settings_ext/ChooseLockPassword$ChooseLockPasswordFragment$Stage;
 
-    sget-object v7, Lcom/android/settings/ChooseLockPassword$ChooseLockPasswordFragment$Stage;->Introduction:Lcom/android/settings/ChooseLockPassword$ChooseLockPasswordFragment$Stage;
+    sget-object v7, Lcom/android/settings_ext/ChooseLockPassword$ChooseLockPasswordFragment$Stage;->Introduction:Lcom/android/settings_ext/ChooseLockPassword$ChooseLockPasswordFragment$Stage;
 
     if-ne v6, v7, :cond_3
 
     .line 426
-    invoke-direct {p0, v2}, Lcom/android/settings/ChooseLockPassword$ChooseLockPasswordFragment;->validatePassword(Ljava/lang/String;)Ljava/lang/String;
+    invoke-direct {p0, v2}, Lcom/android/settings_ext/ChooseLockPassword$ChooseLockPasswordFragment;->validatePassword(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 
@@ -1170,19 +1170,19 @@
     if-nez v0, :cond_2
 
     .line 428
-    iput-object v2, p0, Lcom/android/settings/ChooseLockPassword$ChooseLockPasswordFragment;->mFirstPin:Ljava/lang/String;
+    iput-object v2, p0, Lcom/android/settings_ext/ChooseLockPassword$ChooseLockPasswordFragment;->mFirstPin:Ljava/lang/String;
 
     .line 429
-    iget-object v6, p0, Lcom/android/settings/ChooseLockPassword$ChooseLockPasswordFragment;->mPasswordEntry:Landroid/widget/TextView;
+    iget-object v6, p0, Lcom/android/settings_ext/ChooseLockPassword$ChooseLockPasswordFragment;->mPasswordEntry:Landroid/widget/TextView;
 
     const-string v7, ""
 
     invoke-virtual {v6, v7}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
     .line 430
-    sget-object v6, Lcom/android/settings/ChooseLockPassword$ChooseLockPasswordFragment$Stage;->NeedToConfirm:Lcom/android/settings/ChooseLockPassword$ChooseLockPasswordFragment$Stage;
+    sget-object v6, Lcom/android/settings_ext/ChooseLockPassword$ChooseLockPasswordFragment$Stage;->NeedToConfirm:Lcom/android/settings_ext/ChooseLockPassword$ChooseLockPasswordFragment$Stage;
 
-    invoke-virtual {p0, v6}, Lcom/android/settings/ChooseLockPassword$ChooseLockPasswordFragment;->updateStage(Lcom/android/settings/ChooseLockPassword$ChooseLockPasswordFragment$Stage;)V
+    invoke-virtual {p0, v6}, Lcom/android/settings_ext/ChooseLockPassword$ChooseLockPasswordFragment;->updateStage(Lcom/android/settings_ext/ChooseLockPassword$ChooseLockPasswordFragment$Stage;)V
 
     .line 456
     :cond_2
@@ -1190,22 +1190,22 @@
     if-eqz v0, :cond_0
 
     .line 457
-    iget-object v6, p0, Lcom/android/settings/ChooseLockPassword$ChooseLockPasswordFragment;->mUiStage:Lcom/android/settings/ChooseLockPassword$ChooseLockPasswordFragment$Stage;
+    iget-object v6, p0, Lcom/android/settings_ext/ChooseLockPassword$ChooseLockPasswordFragment;->mUiStage:Lcom/android/settings_ext/ChooseLockPassword$ChooseLockPasswordFragment$Stage;
 
-    invoke-direct {p0, v0, v6}, Lcom/android/settings/ChooseLockPassword$ChooseLockPasswordFragment;->showError(Ljava/lang/String;Lcom/android/settings/ChooseLockPassword$ChooseLockPasswordFragment$Stage;)V
+    invoke-direct {p0, v0, v6}, Lcom/android/settings_ext/ChooseLockPassword$ChooseLockPasswordFragment;->showError(Ljava/lang/String;Lcom/android/settings_ext/ChooseLockPassword$ChooseLockPasswordFragment$Stage;)V
 
     goto :goto_0
 
     .line 432
     :cond_3
-    iget-object v6, p0, Lcom/android/settings/ChooseLockPassword$ChooseLockPasswordFragment;->mUiStage:Lcom/android/settings/ChooseLockPassword$ChooseLockPasswordFragment$Stage;
+    iget-object v6, p0, Lcom/android/settings_ext/ChooseLockPassword$ChooseLockPasswordFragment;->mUiStage:Lcom/android/settings_ext/ChooseLockPassword$ChooseLockPasswordFragment$Stage;
 
-    sget-object v7, Lcom/android/settings/ChooseLockPassword$ChooseLockPasswordFragment$Stage;->NeedToConfirm:Lcom/android/settings/ChooseLockPassword$ChooseLockPasswordFragment$Stage;
+    sget-object v7, Lcom/android/settings_ext/ChooseLockPassword$ChooseLockPasswordFragment$Stage;->NeedToConfirm:Lcom/android/settings_ext/ChooseLockPassword$ChooseLockPasswordFragment$Stage;
 
     if-ne v6, v7, :cond_2
 
     .line 433
-    iget-object v6, p0, Lcom/android/settings/ChooseLockPassword$ChooseLockPasswordFragment;->mFirstPin:Ljava/lang/String;
+    iget-object v6, p0, Lcom/android/settings_ext/ChooseLockPassword$ChooseLockPasswordFragment;->mFirstPin:Ljava/lang/String;
 
     invoke-virtual {v6, v2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
@@ -1214,7 +1214,7 @@
     if-eqz v6, :cond_4
 
     .line 434
-    invoke-virtual {p0}, Lcom/android/settings/ChooseLockPassword$ChooseLockPasswordFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/ChooseLockPassword$ChooseLockPasswordFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v6
 
@@ -1230,7 +1230,7 @@
 
     .line 436
     .local v1, "isFallback":Z
-    iget-object v6, p0, Lcom/android/settings/ChooseLockPassword$ChooseLockPasswordFragment;->mLockPatternUtils:Lcom/android/internal/widget/LockPatternUtils;
+    iget-object v6, p0, Lcom/android/settings_ext/ChooseLockPassword$ChooseLockPasswordFragment;->mLockPatternUtils:Lcom/android/internal/widget/LockPatternUtils;
 
     invoke-virtual {v6}, Lcom/android/internal/widget/LockPatternUtils;->isSecure()Z
 
@@ -1238,12 +1238,12 @@
 
     .line 437
     .local v5, "wasSecureBefore":Z
-    iget-object v6, p0, Lcom/android/settings/ChooseLockPassword$ChooseLockPasswordFragment;->mLockPatternUtils:Lcom/android/internal/widget/LockPatternUtils;
+    iget-object v6, p0, Lcom/android/settings_ext/ChooseLockPassword$ChooseLockPasswordFragment;->mLockPatternUtils:Lcom/android/internal/widget/LockPatternUtils;
 
     invoke-virtual {v6, v1}, Lcom/android/internal/widget/LockPatternUtils;->clearLock(Z)V
 
     .line 438
-    invoke-virtual {p0}, Lcom/android/settings/ChooseLockPassword$ChooseLockPasswordFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/ChooseLockPassword$ChooseLockPasswordFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v6
 
@@ -1259,47 +1259,47 @@
 
     .line 440
     .local v3, "required":Z
-    iget-object v6, p0, Lcom/android/settings/ChooseLockPassword$ChooseLockPasswordFragment;->mLockPatternUtils:Lcom/android/internal/widget/LockPatternUtils;
+    iget-object v6, p0, Lcom/android/settings_ext/ChooseLockPassword$ChooseLockPasswordFragment;->mLockPatternUtils:Lcom/android/internal/widget/LockPatternUtils;
 
     invoke-virtual {v6, v3}, Lcom/android/internal/widget/LockPatternUtils;->setCredentialRequiredToDecrypt(Z)V
 
     .line 441
-    iget-object v6, p0, Lcom/android/settings/ChooseLockPassword$ChooseLockPasswordFragment;->mLockPatternUtils:Lcom/android/internal/widget/LockPatternUtils;
+    iget-object v6, p0, Lcom/android/settings_ext/ChooseLockPassword$ChooseLockPasswordFragment;->mLockPatternUtils:Lcom/android/internal/widget/LockPatternUtils;
 
-    iget v7, p0, Lcom/android/settings/ChooseLockPassword$ChooseLockPasswordFragment;->mRequestedQuality:I
+    iget v7, p0, Lcom/android/settings_ext/ChooseLockPassword$ChooseLockPasswordFragment;->mRequestedQuality:I
 
     invoke-virtual {v6, v2, v7, v1}, Lcom/android/internal/widget/LockPatternUtils;->saveLockPassword(Ljava/lang/String;IZ)V
 
     .line 442
-    invoke-virtual {p0}, Lcom/android/settings/ChooseLockPassword$ChooseLockPasswordFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/ChooseLockPassword$ChooseLockPasswordFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v6
 
     invoke-virtual {v6, v8}, Landroid/app/Activity;->setResult(I)V
 
     .line 443
-    invoke-virtual {p0}, Lcom/android/settings/ChooseLockPassword$ChooseLockPasswordFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/ChooseLockPassword$ChooseLockPasswordFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v6
 
     invoke-virtual {v6}, Landroid/app/Activity;->finish()V
 
     .line 444
-    iput-boolean v8, p0, Lcom/android/settings/ChooseLockPassword$ChooseLockPasswordFragment;->mDone:Z
+    iput-boolean v8, p0, Lcom/android/settings_ext/ChooseLockPassword$ChooseLockPasswordFragment;->mDone:Z
 
     .line 445
     if-nez v5, :cond_2
 
     .line 446
-    invoke-virtual {p0}, Lcom/android/settings/ChooseLockPassword$ChooseLockPasswordFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/ChooseLockPassword$ChooseLockPasswordFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v6
 
-    invoke-virtual {p0, v6}, Lcom/android/settings/ChooseLockPassword$ChooseLockPasswordFragment;->getRedactionInterstitialIntent(Landroid/content/Context;)Landroid/content/Intent;
+    invoke-virtual {p0, v6}, Lcom/android/settings_ext/ChooseLockPassword$ChooseLockPasswordFragment;->getRedactionInterstitialIntent(Landroid/content/Context;)Landroid/content/Intent;
 
     move-result-object v6
 
-    invoke-virtual {p0, v6}, Lcom/android/settings/ChooseLockPassword$ChooseLockPasswordFragment;->startActivity(Landroid/content/Intent;)V
+    invoke-virtual {p0, v6}, Lcom/android/settings_ext/ChooseLockPassword$ChooseLockPasswordFragment;->startActivity(Landroid/content/Intent;)V
 
     goto :goto_1
 
@@ -1308,7 +1308,7 @@
     .end local v3    # "required":Z
     .end local v5    # "wasSecureBefore":Z
     :cond_4
-    iget-object v6, p0, Lcom/android/settings/ChooseLockPassword$ChooseLockPasswordFragment;->mPasswordEntry:Landroid/widget/TextView;
+    iget-object v6, p0, Lcom/android/settings_ext/ChooseLockPassword$ChooseLockPasswordFragment;->mPasswordEntry:Landroid/widget/TextView;
 
     invoke-virtual {v6}, Landroid/widget/TextView;->getText()Ljava/lang/CharSequence;
 
@@ -1331,9 +1331,9 @@
 
     .line 453
     :cond_5
-    sget-object v6, Lcom/android/settings/ChooseLockPassword$ChooseLockPasswordFragment$Stage;->ConfirmWrong:Lcom/android/settings/ChooseLockPassword$ChooseLockPasswordFragment$Stage;
+    sget-object v6, Lcom/android/settings_ext/ChooseLockPassword$ChooseLockPasswordFragment$Stage;->ConfirmWrong:Lcom/android/settings_ext/ChooseLockPassword$ChooseLockPasswordFragment$Stage;
 
-    invoke-virtual {p0, v6}, Lcom/android/settings/ChooseLockPassword$ChooseLockPasswordFragment;->updateStage(Lcom/android/settings/ChooseLockPassword$ChooseLockPasswordFragment$Stage;)V
+    invoke-virtual {p0, v6}, Lcom/android/settings_ext/ChooseLockPassword$ChooseLockPasswordFragment;->updateStage(Lcom/android/settings_ext/ChooseLockPassword$ChooseLockPasswordFragment$Stage;)V
 
     goto :goto_1
 .end method
@@ -1363,7 +1363,7 @@
     if-eq p2, v0, :cond_0
 
     .line 293
-    invoke-virtual {p0}, Lcom/android/settings/ChooseLockPassword$ChooseLockPasswordFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/ChooseLockPassword$ChooseLockPasswordFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
@@ -1372,7 +1372,7 @@
     invoke-virtual {v0, v1}, Landroid/app/Activity;->setResult(I)V
 
     .line 294
-    invoke-virtual {p0}, Lcom/android/settings/ChooseLockPassword$ChooseLockPasswordFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/ChooseLockPassword$ChooseLockPasswordFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
@@ -1405,13 +1405,13 @@
 
     .line 472
     :pswitch_0
-    invoke-virtual {p0}, Lcom/android/settings/ChooseLockPassword$ChooseLockPasswordFragment;->handleNext()V
+    invoke-virtual {p0}, Lcom/android/settings_ext/ChooseLockPassword$ChooseLockPasswordFragment;->handleNext()V
 
     goto :goto_0
 
     .line 476
     :pswitch_1
-    invoke-virtual {p0}, Lcom/android/settings/ChooseLockPassword$ChooseLockPasswordFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/ChooseLockPassword$ChooseLockPasswordFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
@@ -1438,16 +1438,16 @@
     .line 175
     new-instance v1, Lcom/android/internal/widget/LockPatternUtils;
 
-    invoke-virtual {p0}, Lcom/android/settings/ChooseLockPassword$ChooseLockPasswordFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/ChooseLockPassword$ChooseLockPasswordFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v2
 
     invoke-direct {v1, v2}, Lcom/android/internal/widget/LockPatternUtils;-><init>(Landroid/content/Context;)V
 
-    iput-object v1, p0, Lcom/android/settings/ChooseLockPassword$ChooseLockPasswordFragment;->mLockPatternUtils:Lcom/android/internal/widget/LockPatternUtils;
+    iput-object v1, p0, Lcom/android/settings_ext/ChooseLockPassword$ChooseLockPasswordFragment;->mLockPatternUtils:Lcom/android/internal/widget/LockPatternUtils;
 
     .line 176
-    invoke-virtual {p0}, Lcom/android/settings/ChooseLockPassword$ChooseLockPasswordFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/ChooseLockPassword$ChooseLockPasswordFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v1
 
@@ -1457,11 +1457,11 @@
 
     .line 177
     .local v0, "intent":Landroid/content/Intent;
-    invoke-virtual {p0}, Lcom/android/settings/ChooseLockPassword$ChooseLockPasswordFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/ChooseLockPassword$ChooseLockPasswordFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v1
 
-    instance-of v1, v1, Lcom/android/settings/ChooseLockPassword;
+    instance-of v1, v1, Lcom/android/settings_ext/ChooseLockPassword;
 
     if-nez v1, :cond_0
 
@@ -1478,13 +1478,13 @@
     :cond_0
     const-string v1, "lockscreen.password_type"
 
-    iget v2, p0, Lcom/android/settings/ChooseLockPassword$ChooseLockPasswordFragment;->mRequestedQuality:I
+    iget v2, p0, Lcom/android/settings_ext/ChooseLockPassword$ChooseLockPasswordFragment;->mRequestedQuality:I
 
     invoke-virtual {v0, v1, v2}, Landroid/content/Intent;->getIntExtra(Ljava/lang/String;I)I
 
     move-result v1
 
-    iget-object v2, p0, Lcom/android/settings/ChooseLockPassword$ChooseLockPasswordFragment;->mLockPatternUtils:Lcom/android/internal/widget/LockPatternUtils;
+    iget-object v2, p0, Lcom/android/settings_ext/ChooseLockPassword$ChooseLockPasswordFragment;->mLockPatternUtils:Lcom/android/internal/widget/LockPatternUtils;
 
     invoke-virtual {v2}, Lcom/android/internal/widget/LockPatternUtils;->getRequestedPasswordQuality()I
 
@@ -1494,18 +1494,18 @@
 
     move-result v1
 
-    iput v1, p0, Lcom/android/settings/ChooseLockPassword$ChooseLockPasswordFragment;->mRequestedQuality:I
+    iput v1, p0, Lcom/android/settings_ext/ChooseLockPassword$ChooseLockPasswordFragment;->mRequestedQuality:I
 
     .line 182
     const-string v1, "lockscreen.password_min"
 
-    iget v2, p0, Lcom/android/settings/ChooseLockPassword$ChooseLockPasswordFragment;->mPasswordMinLength:I
+    iget v2, p0, Lcom/android/settings_ext/ChooseLockPassword$ChooseLockPasswordFragment;->mPasswordMinLength:I
 
     invoke-virtual {v0, v1, v2}, Landroid/content/Intent;->getIntExtra(Ljava/lang/String;I)I
 
     move-result v1
 
-    iget-object v2, p0, Lcom/android/settings/ChooseLockPassword$ChooseLockPasswordFragment;->mLockPatternUtils:Lcom/android/internal/widget/LockPatternUtils;
+    iget-object v2, p0, Lcom/android/settings_ext/ChooseLockPassword$ChooseLockPasswordFragment;->mLockPatternUtils:Lcom/android/internal/widget/LockPatternUtils;
 
     invoke-virtual {v2}, Lcom/android/internal/widget/LockPatternUtils;->getRequestedMinimumPasswordLength()I
 
@@ -1515,29 +1515,29 @@
 
     move-result v1
 
-    iput v1, p0, Lcom/android/settings/ChooseLockPassword$ChooseLockPasswordFragment;->mPasswordMinLength:I
+    iput v1, p0, Lcom/android/settings_ext/ChooseLockPassword$ChooseLockPasswordFragment;->mPasswordMinLength:I
 
     .line 185
     const-string v1, "lockscreen.password_max"
 
-    iget v2, p0, Lcom/android/settings/ChooseLockPassword$ChooseLockPasswordFragment;->mPasswordMaxLength:I
+    iget v2, p0, Lcom/android/settings_ext/ChooseLockPassword$ChooseLockPasswordFragment;->mPasswordMaxLength:I
 
     invoke-virtual {v0, v1, v2}, Landroid/content/Intent;->getIntExtra(Ljava/lang/String;I)I
 
     move-result v1
 
-    iput v1, p0, Lcom/android/settings/ChooseLockPassword$ChooseLockPasswordFragment;->mPasswordMaxLength:I
+    iput v1, p0, Lcom/android/settings_ext/ChooseLockPassword$ChooseLockPasswordFragment;->mPasswordMaxLength:I
 
     .line 186
     const-string v1, "lockscreen.password_min_letters"
 
-    iget v2, p0, Lcom/android/settings/ChooseLockPassword$ChooseLockPasswordFragment;->mPasswordMinLetters:I
+    iget v2, p0, Lcom/android/settings_ext/ChooseLockPassword$ChooseLockPasswordFragment;->mPasswordMinLetters:I
 
     invoke-virtual {v0, v1, v2}, Landroid/content/Intent;->getIntExtra(Ljava/lang/String;I)I
 
     move-result v1
 
-    iget-object v2, p0, Lcom/android/settings/ChooseLockPassword$ChooseLockPasswordFragment;->mLockPatternUtils:Lcom/android/internal/widget/LockPatternUtils;
+    iget-object v2, p0, Lcom/android/settings_ext/ChooseLockPassword$ChooseLockPasswordFragment;->mLockPatternUtils:Lcom/android/internal/widget/LockPatternUtils;
 
     invoke-virtual {v2}, Lcom/android/internal/widget/LockPatternUtils;->getRequestedPasswordMinimumLetters()I
 
@@ -1547,18 +1547,18 @@
 
     move-result v1
 
-    iput v1, p0, Lcom/android/settings/ChooseLockPassword$ChooseLockPasswordFragment;->mPasswordMinLetters:I
+    iput v1, p0, Lcom/android/settings_ext/ChooseLockPassword$ChooseLockPasswordFragment;->mPasswordMinLetters:I
 
     .line 188
     const-string v1, "lockscreen.password_min_uppercase"
 
-    iget v2, p0, Lcom/android/settings/ChooseLockPassword$ChooseLockPasswordFragment;->mPasswordMinUpperCase:I
+    iget v2, p0, Lcom/android/settings_ext/ChooseLockPassword$ChooseLockPasswordFragment;->mPasswordMinUpperCase:I
 
     invoke-virtual {v0, v1, v2}, Landroid/content/Intent;->getIntExtra(Ljava/lang/String;I)I
 
     move-result v1
 
-    iget-object v2, p0, Lcom/android/settings/ChooseLockPassword$ChooseLockPasswordFragment;->mLockPatternUtils:Lcom/android/internal/widget/LockPatternUtils;
+    iget-object v2, p0, Lcom/android/settings_ext/ChooseLockPassword$ChooseLockPasswordFragment;->mLockPatternUtils:Lcom/android/internal/widget/LockPatternUtils;
 
     invoke-virtual {v2}, Lcom/android/internal/widget/LockPatternUtils;->getRequestedPasswordMinimumUpperCase()I
 
@@ -1568,18 +1568,18 @@
 
     move-result v1
 
-    iput v1, p0, Lcom/android/settings/ChooseLockPassword$ChooseLockPasswordFragment;->mPasswordMinUpperCase:I
+    iput v1, p0, Lcom/android/settings_ext/ChooseLockPassword$ChooseLockPasswordFragment;->mPasswordMinUpperCase:I
 
     .line 190
     const-string v1, "lockscreen.password_min_lowercase"
 
-    iget v2, p0, Lcom/android/settings/ChooseLockPassword$ChooseLockPasswordFragment;->mPasswordMinLowerCase:I
+    iget v2, p0, Lcom/android/settings_ext/ChooseLockPassword$ChooseLockPasswordFragment;->mPasswordMinLowerCase:I
 
     invoke-virtual {v0, v1, v2}, Landroid/content/Intent;->getIntExtra(Ljava/lang/String;I)I
 
     move-result v1
 
-    iget-object v2, p0, Lcom/android/settings/ChooseLockPassword$ChooseLockPasswordFragment;->mLockPatternUtils:Lcom/android/internal/widget/LockPatternUtils;
+    iget-object v2, p0, Lcom/android/settings_ext/ChooseLockPassword$ChooseLockPasswordFragment;->mLockPatternUtils:Lcom/android/internal/widget/LockPatternUtils;
 
     invoke-virtual {v2}, Lcom/android/internal/widget/LockPatternUtils;->getRequestedPasswordMinimumLowerCase()I
 
@@ -1589,18 +1589,18 @@
 
     move-result v1
 
-    iput v1, p0, Lcom/android/settings/ChooseLockPassword$ChooseLockPasswordFragment;->mPasswordMinLowerCase:I
+    iput v1, p0, Lcom/android/settings_ext/ChooseLockPassword$ChooseLockPasswordFragment;->mPasswordMinLowerCase:I
 
     .line 192
     const-string v1, "lockscreen.password_min_numeric"
 
-    iget v2, p0, Lcom/android/settings/ChooseLockPassword$ChooseLockPasswordFragment;->mPasswordMinNumeric:I
+    iget v2, p0, Lcom/android/settings_ext/ChooseLockPassword$ChooseLockPasswordFragment;->mPasswordMinNumeric:I
 
     invoke-virtual {v0, v1, v2}, Landroid/content/Intent;->getIntExtra(Ljava/lang/String;I)I
 
     move-result v1
 
-    iget-object v2, p0, Lcom/android/settings/ChooseLockPassword$ChooseLockPasswordFragment;->mLockPatternUtils:Lcom/android/internal/widget/LockPatternUtils;
+    iget-object v2, p0, Lcom/android/settings_ext/ChooseLockPassword$ChooseLockPasswordFragment;->mLockPatternUtils:Lcom/android/internal/widget/LockPatternUtils;
 
     invoke-virtual {v2}, Lcom/android/internal/widget/LockPatternUtils;->getRequestedPasswordMinimumNumeric()I
 
@@ -1610,18 +1610,18 @@
 
     move-result v1
 
-    iput v1, p0, Lcom/android/settings/ChooseLockPassword$ChooseLockPasswordFragment;->mPasswordMinNumeric:I
+    iput v1, p0, Lcom/android/settings_ext/ChooseLockPassword$ChooseLockPasswordFragment;->mPasswordMinNumeric:I
 
     .line 194
     const-string v1, "lockscreen.password_min_symbols"
 
-    iget v2, p0, Lcom/android/settings/ChooseLockPassword$ChooseLockPasswordFragment;->mPasswordMinSymbols:I
+    iget v2, p0, Lcom/android/settings_ext/ChooseLockPassword$ChooseLockPasswordFragment;->mPasswordMinSymbols:I
 
     invoke-virtual {v0, v1, v2}, Landroid/content/Intent;->getIntExtra(Ljava/lang/String;I)I
 
     move-result v1
 
-    iget-object v2, p0, Lcom/android/settings/ChooseLockPassword$ChooseLockPasswordFragment;->mLockPatternUtils:Lcom/android/internal/widget/LockPatternUtils;
+    iget-object v2, p0, Lcom/android/settings_ext/ChooseLockPassword$ChooseLockPasswordFragment;->mLockPatternUtils:Lcom/android/internal/widget/LockPatternUtils;
 
     invoke-virtual {v2}, Lcom/android/internal/widget/LockPatternUtils;->getRequestedPasswordMinimumSymbols()I
 
@@ -1631,18 +1631,18 @@
 
     move-result v1
 
-    iput v1, p0, Lcom/android/settings/ChooseLockPassword$ChooseLockPasswordFragment;->mPasswordMinSymbols:I
+    iput v1, p0, Lcom/android/settings_ext/ChooseLockPassword$ChooseLockPasswordFragment;->mPasswordMinSymbols:I
 
     .line 196
     const-string v1, "lockscreen.password_min_nonletter"
 
-    iget v2, p0, Lcom/android/settings/ChooseLockPassword$ChooseLockPasswordFragment;->mPasswordMinNonLetter:I
+    iget v2, p0, Lcom/android/settings_ext/ChooseLockPassword$ChooseLockPasswordFragment;->mPasswordMinNonLetter:I
 
     invoke-virtual {v0, v1, v2}, Landroid/content/Intent;->getIntExtra(Ljava/lang/String;I)I
 
     move-result v1
 
-    iget-object v2, p0, Lcom/android/settings/ChooseLockPassword$ChooseLockPasswordFragment;->mLockPatternUtils:Lcom/android/internal/widget/LockPatternUtils;
+    iget-object v2, p0, Lcom/android/settings_ext/ChooseLockPassword$ChooseLockPasswordFragment;->mLockPatternUtils:Lcom/android/internal/widget/LockPatternUtils;
 
     invoke-virtual {v2}, Lcom/android/internal/widget/LockPatternUtils;->getRequestedPasswordMinimumNonLetter()I
 
@@ -1652,18 +1652,18 @@
 
     move-result v1
 
-    iput v1, p0, Lcom/android/settings/ChooseLockPassword$ChooseLockPasswordFragment;->mPasswordMinNonLetter:I
+    iput v1, p0, Lcom/android/settings_ext/ChooseLockPassword$ChooseLockPasswordFragment;->mPasswordMinNonLetter:I
 
     .line 199
-    new-instance v1, Lcom/android/settings/ChooseLockSettingsHelper;
+    new-instance v1, Lcom/android/settings_ext/ChooseLockSettingsHelper;
 
-    invoke-virtual {p0}, Lcom/android/settings/ChooseLockPassword$ChooseLockPasswordFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/ChooseLockPassword$ChooseLockPasswordFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v2
 
-    invoke-direct {v1, v2}, Lcom/android/settings/ChooseLockSettingsHelper;-><init>(Landroid/app/Activity;)V
+    invoke-direct {v1, v2}, Lcom/android/settings_ext/ChooseLockSettingsHelper;-><init>(Landroid/app/Activity;)V
 
-    iput-object v1, p0, Lcom/android/settings/ChooseLockPassword$ChooseLockPasswordFragment;->mChooseLockSettingsHelper:Lcom/android/settings/ChooseLockSettingsHelper;
+    iput-object v1, p0, Lcom/android/settings_ext/ChooseLockPassword$ChooseLockPasswordFragment;->mChooseLockSettingsHelper:Lcom/android/settings_ext/ChooseLockSettingsHelper;
 
     .line 200
     return-void
@@ -1708,7 +1708,7 @@
 
     .line 494
     :cond_0
-    invoke-virtual {p0}, Lcom/android/settings/ChooseLockPassword$ChooseLockPasswordFragment;->handleNext()V
+    invoke-virtual {p0}, Lcom/android/settings_ext/ChooseLockPassword$ChooseLockPasswordFragment;->handleNext()V
 
     .line 495
     const/4 v0, 0x1
@@ -1728,7 +1728,7 @@
 
     .prologue
     .line 274
-    iget-object v0, p0, Lcom/android/settings/ChooseLockPassword$ChooseLockPasswordFragment;->mHandler:Landroid/os/Handler;
+    iget-object v0, p0, Lcom/android/settings_ext/ChooseLockPassword$ChooseLockPasswordFragment;->mHandler:Landroid/os/Handler;
 
     const/4 v1, 0x1
 
@@ -1749,12 +1749,12 @@
     invoke-super {p0}, Landroid/app/Fragment;->onResume()V
 
     .line 268
-    iget-object v0, p0, Lcom/android/settings/ChooseLockPassword$ChooseLockPasswordFragment;->mUiStage:Lcom/android/settings/ChooseLockPassword$ChooseLockPasswordFragment$Stage;
+    iget-object v0, p0, Lcom/android/settings_ext/ChooseLockPassword$ChooseLockPasswordFragment;->mUiStage:Lcom/android/settings_ext/ChooseLockPassword$ChooseLockPasswordFragment$Stage;
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/ChooseLockPassword$ChooseLockPasswordFragment;->updateStage(Lcom/android/settings/ChooseLockPassword$ChooseLockPasswordFragment$Stage;)V
+    invoke-virtual {p0, v0}, Lcom/android/settings_ext/ChooseLockPassword$ChooseLockPasswordFragment;->updateStage(Lcom/android/settings_ext/ChooseLockPassword$ChooseLockPasswordFragment$Stage;)V
 
     .line 269
-    iget-object v0, p0, Lcom/android/settings/ChooseLockPassword$ChooseLockPasswordFragment;->mKeyboardView:Landroid/inputmethodservice/KeyboardView;
+    iget-object v0, p0, Lcom/android/settings_ext/ChooseLockPassword$ChooseLockPasswordFragment;->mKeyboardView:Landroid/inputmethodservice/KeyboardView;
 
     invoke-virtual {v0}, Landroid/inputmethodservice/KeyboardView;->requestFocus()Z
 
@@ -1773,9 +1773,9 @@
     .line 282
     const-string v0, "ui_stage"
 
-    iget-object v1, p0, Lcom/android/settings/ChooseLockPassword$ChooseLockPasswordFragment;->mUiStage:Lcom/android/settings/ChooseLockPassword$ChooseLockPasswordFragment$Stage;
+    iget-object v1, p0, Lcom/android/settings_ext/ChooseLockPassword$ChooseLockPasswordFragment;->mUiStage:Lcom/android/settings_ext/ChooseLockPassword$ChooseLockPasswordFragment$Stage;
 
-    invoke-virtual {v1}, Lcom/android/settings/ChooseLockPassword$ChooseLockPasswordFragment$Stage;->name()Ljava/lang/String;
+    invoke-virtual {v1}, Lcom/android/settings_ext/ChooseLockPassword$ChooseLockPasswordFragment$Stage;->name()Ljava/lang/String;
 
     move-result-object v1
 
@@ -1784,7 +1784,7 @@
     .line 283
     const-string v0, "first_pin"
 
-    iget-object v1, p0, Lcom/android/settings/ChooseLockPassword$ChooseLockPasswordFragment;->mFirstPin:Ljava/lang/String;
+    iget-object v1, p0, Lcom/android/settings_ext/ChooseLockPassword$ChooseLockPasswordFragment;->mFirstPin:Ljava/lang/String;
 
     invoke-virtual {p1, v0, v1}, Landroid/os/Bundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
 
@@ -1822,10 +1822,10 @@
 
     check-cast v8, Landroid/widget/Button;
 
-    iput-object v8, p0, Lcom/android/settings/ChooseLockPassword$ChooseLockPasswordFragment;->mCancelButton:Landroid/widget/Button;
+    iput-object v8, p0, Lcom/android/settings_ext/ChooseLockPassword$ChooseLockPasswordFragment;->mCancelButton:Landroid/widget/Button;
 
     .line 213
-    iget-object v8, p0, Lcom/android/settings/ChooseLockPassword$ChooseLockPasswordFragment;->mCancelButton:Landroid/widget/Button;
+    iget-object v8, p0, Lcom/android/settings_ext/ChooseLockPassword$ChooseLockPasswordFragment;->mCancelButton:Landroid/widget/Button;
 
     invoke-virtual {v8, p0}, Landroid/widget/Button;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
@@ -1838,29 +1838,29 @@
 
     check-cast v8, Landroid/widget/Button;
 
-    iput-object v8, p0, Lcom/android/settings/ChooseLockPassword$ChooseLockPasswordFragment;->mNextButton:Landroid/widget/Button;
+    iput-object v8, p0, Lcom/android/settings_ext/ChooseLockPassword$ChooseLockPasswordFragment;->mNextButton:Landroid/widget/Button;
 
     .line 215
-    iget-object v8, p0, Lcom/android/settings/ChooseLockPassword$ChooseLockPasswordFragment;->mNextButton:Landroid/widget/Button;
+    iget-object v8, p0, Lcom/android/settings_ext/ChooseLockPassword$ChooseLockPasswordFragment;->mNextButton:Landroid/widget/Button;
 
     invoke-virtual {v8, p0}, Landroid/widget/Button;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     .line 217
     const/high16 v8, 0x40000
 
-    iget v9, p0, Lcom/android/settings/ChooseLockPassword$ChooseLockPasswordFragment;->mRequestedQuality:I
+    iget v9, p0, Lcom/android/settings_ext/ChooseLockPassword$ChooseLockPasswordFragment;->mRequestedQuality:I
 
     if-eq v8, v9, :cond_0
 
     const/high16 v8, 0x50000
 
-    iget v9, p0, Lcom/android/settings/ChooseLockPassword$ChooseLockPasswordFragment;->mRequestedQuality:I
+    iget v9, p0, Lcom/android/settings_ext/ChooseLockPassword$ChooseLockPasswordFragment;->mRequestedQuality:I
 
     if-eq v8, v9, :cond_0
 
     const/high16 v8, 0x60000
 
-    iget v9, p0, Lcom/android/settings/ChooseLockPassword$ChooseLockPasswordFragment;->mRequestedQuality:I
+    iget v9, p0, Lcom/android/settings_ext/ChooseLockPassword$ChooseLockPasswordFragment;->mRequestedQuality:I
 
     if-ne v8, v9, :cond_3
 
@@ -1868,7 +1868,7 @@
     const/4 v8, 0x1
 
     :goto_0
-    iput-boolean v8, p0, Lcom/android/settings/ChooseLockPassword$ChooseLockPasswordFragment;->mIsAlphaMode:Z
+    iput-boolean v8, p0, Lcom/android/settings_ext/ChooseLockPassword$ChooseLockPasswordFragment;->mIsAlphaMode:Z
 
     .line 220
     const v8, 0x7f0f003f
@@ -1879,7 +1879,7 @@
 
     check-cast v8, Lcom/android/internal/widget/PasswordEntryKeyboardView;
 
-    iput-object v8, p0, Lcom/android/settings/ChooseLockPassword$ChooseLockPasswordFragment;->mKeyboardView:Landroid/inputmethodservice/KeyboardView;
+    iput-object v8, p0, Lcom/android/settings_ext/ChooseLockPassword$ChooseLockPasswordFragment;->mKeyboardView:Landroid/inputmethodservice/KeyboardView;
 
     .line 221
     const v8, 0x7f0f003c
@@ -1890,20 +1890,20 @@
 
     check-cast v8, Landroid/widget/TextView;
 
-    iput-object v8, p0, Lcom/android/settings/ChooseLockPassword$ChooseLockPasswordFragment;->mPasswordEntry:Landroid/widget/TextView;
+    iput-object v8, p0, Lcom/android/settings_ext/ChooseLockPassword$ChooseLockPasswordFragment;->mPasswordEntry:Landroid/widget/TextView;
 
     .line 222
-    iget-object v8, p0, Lcom/android/settings/ChooseLockPassword$ChooseLockPasswordFragment;->mPasswordEntry:Landroid/widget/TextView;
+    iget-object v8, p0, Lcom/android/settings_ext/ChooseLockPassword$ChooseLockPasswordFragment;->mPasswordEntry:Landroid/widget/TextView;
 
     invoke-virtual {v8, p0}, Landroid/widget/TextView;->setOnEditorActionListener(Landroid/widget/TextView$OnEditorActionListener;)V
 
     .line 223
-    iget-object v8, p0, Lcom/android/settings/ChooseLockPassword$ChooseLockPasswordFragment;->mPasswordEntry:Landroid/widget/TextView;
+    iget-object v8, p0, Lcom/android/settings_ext/ChooseLockPassword$ChooseLockPasswordFragment;->mPasswordEntry:Landroid/widget/TextView;
 
     invoke-virtual {v8, p0}, Landroid/widget/TextView;->addTextChangedListener(Landroid/text/TextWatcher;)V
 
     .line 225
-    invoke-virtual {p0}, Lcom/android/settings/ChooseLockPassword$ChooseLockPasswordFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/ChooseLockPassword$ChooseLockPasswordFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
@@ -1911,18 +1911,18 @@
     .local v0, "activity":Landroid/app/Activity;
     new-instance v8, Lcom/android/internal/widget/PasswordEntryKeyboardHelper;
 
-    iget-object v9, p0, Lcom/android/settings/ChooseLockPassword$ChooseLockPasswordFragment;->mKeyboardView:Landroid/inputmethodservice/KeyboardView;
+    iget-object v9, p0, Lcom/android/settings_ext/ChooseLockPassword$ChooseLockPasswordFragment;->mKeyboardView:Landroid/inputmethodservice/KeyboardView;
 
-    iget-object v10, p0, Lcom/android/settings/ChooseLockPassword$ChooseLockPasswordFragment;->mPasswordEntry:Landroid/widget/TextView;
+    iget-object v10, p0, Lcom/android/settings_ext/ChooseLockPassword$ChooseLockPasswordFragment;->mPasswordEntry:Landroid/widget/TextView;
 
     invoke-direct {v8, v0, v9, v10}, Lcom/android/internal/widget/PasswordEntryKeyboardHelper;-><init>(Landroid/content/Context;Landroid/inputmethodservice/KeyboardView;Landroid/view/View;)V
 
-    iput-object v8, p0, Lcom/android/settings/ChooseLockPassword$ChooseLockPasswordFragment;->mKeyboardHelper:Lcom/android/internal/widget/PasswordEntryKeyboardHelper;
+    iput-object v8, p0, Lcom/android/settings_ext/ChooseLockPassword$ChooseLockPasswordFragment;->mKeyboardHelper:Lcom/android/internal/widget/PasswordEntryKeyboardHelper;
 
     .line 228
-    iget-object v9, p0, Lcom/android/settings/ChooseLockPassword$ChooseLockPasswordFragment;->mKeyboardHelper:Lcom/android/internal/widget/PasswordEntryKeyboardHelper;
+    iget-object v9, p0, Lcom/android/settings_ext/ChooseLockPassword$ChooseLockPasswordFragment;->mKeyboardHelper:Lcom/android/internal/widget/PasswordEntryKeyboardHelper;
 
-    iget-boolean v8, p0, Lcom/android/settings/ChooseLockPassword$ChooseLockPasswordFragment;->mIsAlphaMode:Z
+    iget-boolean v8, p0, Lcom/android/settings_ext/ChooseLockPassword$ChooseLockPasswordFragment;->mIsAlphaMode:Z
 
     if-eqz v8, :cond_4
 
@@ -1940,15 +1940,15 @@
 
     check-cast v8, Landroid/widget/TextView;
 
-    iput-object v8, p0, Lcom/android/settings/ChooseLockPassword$ChooseLockPasswordFragment;->mHeaderText:Landroid/widget/TextView;
+    iput-object v8, p0, Lcom/android/settings_ext/ChooseLockPassword$ChooseLockPasswordFragment;->mHeaderText:Landroid/widget/TextView;
 
     .line 233
-    iget-object v8, p0, Lcom/android/settings/ChooseLockPassword$ChooseLockPasswordFragment;->mKeyboardView:Landroid/inputmethodservice/KeyboardView;
+    iget-object v8, p0, Lcom/android/settings_ext/ChooseLockPassword$ChooseLockPasswordFragment;->mKeyboardView:Landroid/inputmethodservice/KeyboardView;
 
     invoke-virtual {v8}, Landroid/inputmethodservice/KeyboardView;->requestFocus()Z
 
     .line 235
-    iget-object v8, p0, Lcom/android/settings/ChooseLockPassword$ChooseLockPasswordFragment;->mPasswordEntry:Landroid/widget/TextView;
+    iget-object v8, p0, Lcom/android/settings_ext/ChooseLockPassword$ChooseLockPasswordFragment;->mPasswordEntry:Landroid/widget/TextView;
 
     invoke-virtual {v8}, Landroid/widget/TextView;->getInputType()I
 
@@ -1956,9 +1956,9 @@
 
     .line 236
     .local v2, "currentType":I
-    iget-object v8, p0, Lcom/android/settings/ChooseLockPassword$ChooseLockPasswordFragment;->mPasswordEntry:Landroid/widget/TextView;
+    iget-object v8, p0, Lcom/android/settings_ext/ChooseLockPassword$ChooseLockPasswordFragment;->mPasswordEntry:Landroid/widget/TextView;
 
-    iget-boolean v9, p0, Lcom/android/settings/ChooseLockPassword$ChooseLockPasswordFragment;->mIsAlphaMode:Z
+    iget-boolean v9, p0, Lcom/android/settings_ext/ChooseLockPassword$ChooseLockPasswordFragment;->mIsAlphaMode:Z
 
     if-eqz v9, :cond_5
 
@@ -1967,7 +1967,7 @@
     invoke-virtual {v8, v2}, Landroid/widget/TextView;->setInputType(I)V
 
     .line 239
-    invoke-virtual {p0}, Lcom/android/settings/ChooseLockPassword$ChooseLockPasswordFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/ChooseLockPassword$ChooseLockPasswordFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v8
 
@@ -1990,15 +1990,15 @@
     if-nez p2, :cond_6
 
     .line 242
-    sget-object v8, Lcom/android/settings/ChooseLockPassword$ChooseLockPasswordFragment$Stage;->Introduction:Lcom/android/settings/ChooseLockPassword$ChooseLockPasswordFragment$Stage;
+    sget-object v8, Lcom/android/settings_ext/ChooseLockPassword$ChooseLockPasswordFragment$Stage;->Introduction:Lcom/android/settings_ext/ChooseLockPassword$ChooseLockPasswordFragment$Stage;
 
-    invoke-virtual {p0, v8}, Lcom/android/settings/ChooseLockPassword$ChooseLockPasswordFragment;->updateStage(Lcom/android/settings/ChooseLockPassword$ChooseLockPasswordFragment$Stage;)V
+    invoke-virtual {p0, v8}, Lcom/android/settings_ext/ChooseLockPassword$ChooseLockPasswordFragment;->updateStage(Lcom/android/settings_ext/ChooseLockPassword$ChooseLockPasswordFragment$Stage;)V
 
     .line 243
     if-eqz v1, :cond_1
 
     .line 244
-    iget-object v8, p0, Lcom/android/settings/ChooseLockPassword$ChooseLockPasswordFragment;->mChooseLockSettingsHelper:Lcom/android/settings/ChooseLockSettingsHelper;
+    iget-object v8, p0, Lcom/android/settings_ext/ChooseLockPassword$ChooseLockPasswordFragment;->mChooseLockSettingsHelper:Lcom/android/settings_ext/ChooseLockSettingsHelper;
 
     const/16 v9, 0x3a
 
@@ -2006,28 +2006,28 @@
 
     const/4 v11, 0x0
 
-    invoke-virtual {v8, v9, v10, v11}, Lcom/android/settings/ChooseLockSettingsHelper;->launchConfirmationActivity(ILjava/lang/CharSequence;Ljava/lang/CharSequence;)Z
+    invoke-virtual {v8, v9, v10, v11}, Lcom/android/settings_ext/ChooseLockSettingsHelper;->launchConfirmationActivity(ILjava/lang/CharSequence;Ljava/lang/CharSequence;)Z
 
     .line 255
     :cond_1
     :goto_3
     const/4 v8, 0x0
 
-    iput-boolean v8, p0, Lcom/android/settings/ChooseLockPassword$ChooseLockPasswordFragment;->mDone:Z
+    iput-boolean v8, p0, Lcom/android/settings_ext/ChooseLockPassword$ChooseLockPasswordFragment;->mDone:Z
 
     .line 256
-    instance-of v8, v0, Lcom/android/settings/SettingsActivity;
+    instance-of v8, v0, Lcom/android/settings_ext/SettingsActivity;
 
     if-eqz v8, :cond_2
 
     move-object v5, v0
 
     .line 257
-    check-cast v5, Lcom/android/settings/SettingsActivity;
+    check-cast v5, Lcom/android/settings_ext/SettingsActivity;
 
     .line 258
-    .local v5, "sa":Lcom/android/settings/SettingsActivity;
-    iget-boolean v8, p0, Lcom/android/settings/ChooseLockPassword$ChooseLockPasswordFragment;->mIsAlphaMode:Z
+    .local v5, "sa":Lcom/android/settings_ext/SettingsActivity;
+    iget-boolean v8, p0, Lcom/android/settings_ext/ChooseLockPassword$ChooseLockPasswordFragment;->mIsAlphaMode:Z
 
     if-eqz v8, :cond_7
 
@@ -2036,17 +2036,17 @@
     .line 260
     .local v3, "id":I
     :goto_4
-    invoke-virtual {p0, v3}, Lcom/android/settings/ChooseLockPassword$ChooseLockPasswordFragment;->getText(I)Ljava/lang/CharSequence;
+    invoke-virtual {p0, v3}, Lcom/android/settings_ext/ChooseLockPassword$ChooseLockPasswordFragment;->getText(I)Ljava/lang/CharSequence;
 
     move-result-object v7
 
     .line 261
     .local v7, "title":Ljava/lang/CharSequence;
-    invoke-virtual {v5, v7}, Lcom/android/settings/SettingsActivity;->setTitle(Ljava/lang/CharSequence;)V
+    invoke-virtual {v5, v7}, Lcom/android/settings_ext/SettingsActivity;->setTitle(Ljava/lang/CharSequence;)V
 
     .line 263
     .end local v3    # "id":I
-    .end local v5    # "sa":Lcom/android/settings/SettingsActivity;
+    .end local v5    # "sa":Lcom/android/settings_ext/SettingsActivity;
     .end local v7    # "title":Ljava/lang/CharSequence;
     :cond_2
     return-void
@@ -2085,7 +2085,7 @@
 
     move-result-object v8
 
-    iput-object v8, p0, Lcom/android/settings/ChooseLockPassword$ChooseLockPasswordFragment;->mFirstPin:Ljava/lang/String;
+    iput-object v8, p0, Lcom/android/settings_ext/ChooseLockPassword$ChooseLockPasswordFragment;->mFirstPin:Ljava/lang/String;
 
     .line 249
     const-string v8, "ui_stage"
@@ -2099,22 +2099,22 @@
     if-eqz v6, :cond_1
 
     .line 251
-    invoke-static {v6}, Lcom/android/settings/ChooseLockPassword$ChooseLockPasswordFragment$Stage;->valueOf(Ljava/lang/String;)Lcom/android/settings/ChooseLockPassword$ChooseLockPasswordFragment$Stage;
+    invoke-static {v6}, Lcom/android/settings_ext/ChooseLockPassword$ChooseLockPasswordFragment$Stage;->valueOf(Ljava/lang/String;)Lcom/android/settings_ext/ChooseLockPassword$ChooseLockPasswordFragment$Stage;
 
     move-result-object v8
 
-    iput-object v8, p0, Lcom/android/settings/ChooseLockPassword$ChooseLockPasswordFragment;->mUiStage:Lcom/android/settings/ChooseLockPassword$ChooseLockPasswordFragment$Stage;
+    iput-object v8, p0, Lcom/android/settings_ext/ChooseLockPassword$ChooseLockPasswordFragment;->mUiStage:Lcom/android/settings_ext/ChooseLockPassword$ChooseLockPasswordFragment$Stage;
 
     .line 252
-    iget-object v8, p0, Lcom/android/settings/ChooseLockPassword$ChooseLockPasswordFragment;->mUiStage:Lcom/android/settings/ChooseLockPassword$ChooseLockPasswordFragment$Stage;
+    iget-object v8, p0, Lcom/android/settings_ext/ChooseLockPassword$ChooseLockPasswordFragment;->mUiStage:Lcom/android/settings_ext/ChooseLockPassword$ChooseLockPasswordFragment$Stage;
 
-    invoke-virtual {p0, v8}, Lcom/android/settings/ChooseLockPassword$ChooseLockPasswordFragment;->updateStage(Lcom/android/settings/ChooseLockPassword$ChooseLockPasswordFragment$Stage;)V
+    invoke-virtual {p0, v8}, Lcom/android/settings_ext/ChooseLockPassword$ChooseLockPasswordFragment;->updateStage(Lcom/android/settings_ext/ChooseLockPassword$ChooseLockPasswordFragment$Stage;)V
 
     goto :goto_3
 
     .line 258
     .end local v6    # "state":Ljava/lang/String;
-    .restart local v5    # "sa":Lcom/android/settings/SettingsActivity;
+    .restart local v5    # "sa":Lcom/android/settings_ext/SettingsActivity;
     :cond_7
     const v3, 0x7f09047b
 
@@ -2127,7 +2127,7 @@
 
     .prologue
     .line 462
-    iget-object v0, p0, Lcom/android/settings/ChooseLockPassword$ChooseLockPasswordFragment;->mNextButton:Landroid/widget/Button;
+    iget-object v0, p0, Lcom/android/settings_ext/ChooseLockPassword$ChooseLockPasswordFragment;->mNextButton:Landroid/widget/Button;
 
     invoke-virtual {v0, p1}, Landroid/widget/Button;->setEnabled(Z)V
 
@@ -2141,7 +2141,7 @@
 
     .prologue
     .line 466
-    iget-object v0, p0, Lcom/android/settings/ChooseLockPassword$ChooseLockPasswordFragment;->mNextButton:Landroid/widget/Button;
+    iget-object v0, p0, Lcom/android/settings_ext/ChooseLockPassword$ChooseLockPasswordFragment;->mNextButton:Landroid/widget/Button;
 
     invoke-virtual {v0, p1}, Landroid/widget/Button;->setText(I)V
 
@@ -2149,28 +2149,28 @@
     return-void
 .end method
 
-.method protected updateStage(Lcom/android/settings/ChooseLockPassword$ChooseLockPasswordFragment$Stage;)V
+.method protected updateStage(Lcom/android/settings_ext/ChooseLockPassword$ChooseLockPasswordFragment$Stage;)V
     .locals 3
-    .param p1, "stage"    # Lcom/android/settings/ChooseLockPassword$ChooseLockPasswordFragment$Stage;
+    .param p1, "stage"    # Lcom/android/settings_ext/ChooseLockPassword$ChooseLockPasswordFragment$Stage;
 
     .prologue
     .line 305
-    iget-object v0, p0, Lcom/android/settings/ChooseLockPassword$ChooseLockPasswordFragment;->mUiStage:Lcom/android/settings/ChooseLockPassword$ChooseLockPasswordFragment$Stage;
+    iget-object v0, p0, Lcom/android/settings_ext/ChooseLockPassword$ChooseLockPasswordFragment;->mUiStage:Lcom/android/settings_ext/ChooseLockPassword$ChooseLockPasswordFragment$Stage;
 
     .line 306
-    .local v0, "previousStage":Lcom/android/settings/ChooseLockPassword$ChooseLockPasswordFragment$Stage;
-    iput-object p1, p0, Lcom/android/settings/ChooseLockPassword$ChooseLockPasswordFragment;->mUiStage:Lcom/android/settings/ChooseLockPassword$ChooseLockPasswordFragment$Stage;
+    .local v0, "previousStage":Lcom/android/settings_ext/ChooseLockPassword$ChooseLockPasswordFragment$Stage;
+    iput-object p1, p0, Lcom/android/settings_ext/ChooseLockPassword$ChooseLockPasswordFragment;->mUiStage:Lcom/android/settings_ext/ChooseLockPassword$ChooseLockPasswordFragment$Stage;
 
     .line 307
-    invoke-direct {p0}, Lcom/android/settings/ChooseLockPassword$ChooseLockPasswordFragment;->updateUi()V
+    invoke-direct {p0}, Lcom/android/settings_ext/ChooseLockPassword$ChooseLockPasswordFragment;->updateUi()V
 
     .line 311
     if-eq v0, p1, :cond_0
 
     .line 312
-    iget-object v1, p0, Lcom/android/settings/ChooseLockPassword$ChooseLockPasswordFragment;->mHeaderText:Landroid/widget/TextView;
+    iget-object v1, p0, Lcom/android/settings_ext/ChooseLockPassword$ChooseLockPasswordFragment;->mHeaderText:Landroid/widget/TextView;
 
-    iget-object v2, p0, Lcom/android/settings/ChooseLockPassword$ChooseLockPasswordFragment;->mHeaderText:Landroid/widget/TextView;
+    iget-object v2, p0, Lcom/android/settings_ext/ChooseLockPassword$ChooseLockPasswordFragment;->mHeaderText:Landroid/widget/TextView;
 
     invoke-virtual {v2}, Landroid/widget/TextView;->getText()Ljava/lang/CharSequence;
 

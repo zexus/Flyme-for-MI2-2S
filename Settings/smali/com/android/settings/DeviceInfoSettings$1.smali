@@ -1,11 +1,11 @@
-.class final Lcom/android/settings/DeviceInfoSettings$1;
-.super Lcom/android/settings/search/BaseSearchIndexProvider;
+.class final Lcom/android/settings_ext/DeviceInfoSettings$1;
+.super Lcom/android/settings_ext/search/BaseSearchIndexProvider;
 .source "DeviceInfoSettings.java"
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/android/settings/DeviceInfoSettings;
+    value = Lcom/android/settings_ext/DeviceInfoSettings;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -20,7 +20,7 @@
 
     .prologue
     .line 417
-    invoke-direct {p0}, Lcom/android/settings/search/BaseSearchIndexProvider;-><init>()V
+    invoke-direct {p0}, Lcom/android/settings_ext/search/BaseSearchIndexProvider;-><init>()V
 
     return-void
 .end method
@@ -145,7 +145,7 @@
     .local v0, "keys":Ljava/util/List;, "Ljava/util/List<Ljava/lang/String;>;"
     const-string v1, "ro.build.selinux"
 
-    invoke-direct {p0, v1}, Lcom/android/settings/DeviceInfoSettings$1;->isPropertyMissing(Ljava/lang/String;)Z
+    invoke-direct {p0, v1}, Lcom/android/settings_ext/DeviceInfoSettings$1;->isPropertyMissing(Ljava/lang/String;)Z
 
     move-result v1
 
@@ -160,7 +160,7 @@
     :cond_0
     const-string v1, "ro.url.safetylegal"
 
-    invoke-direct {p0, v1}, Lcom/android/settings/DeviceInfoSettings$1;->isPropertyMissing(Ljava/lang/String;)Z
+    invoke-direct {p0, v1}, Lcom/android/settings_ext/DeviceInfoSettings$1;->isPropertyMissing(Ljava/lang/String;)Z
 
     move-result v1
 
@@ -175,7 +175,7 @@
     :cond_1
     const-string v1, "ro.ril.fccid"
 
-    invoke-direct {p0, v1}, Lcom/android/settings/DeviceInfoSettings$1;->isPropertyMissing(Ljava/lang/String;)Z
+    invoke-direct {p0, v1}, Lcom/android/settings_ext/DeviceInfoSettings$1;->isPropertyMissing(Ljava/lang/String;)Z
 
     move-result v1
 
@@ -188,7 +188,7 @@
 
     .line 440
     :cond_2
-    invoke-static {p1}, Lcom/android/settings/Utils;->isWifiOnly(Landroid/content/Context;)Z
+    invoke-static {p1}, Lcom/android/settings_ext/Utils;->isWifiOnly(Landroid/content/Context;)Z
 
     move-result v1
 
@@ -201,8 +201,8 @@
 
     .line 444
     :cond_3
-    # invokes: Lcom/android/settings/DeviceInfoSettings;->getFeedbackReporterPackage(Landroid/content/Context;)Ljava/lang/String;
-    invoke-static {p1}, Lcom/android/settings/DeviceInfoSettings;->access$000(Landroid/content/Context;)Ljava/lang/String;
+    # invokes: Lcom/android/settings_ext/DeviceInfoSettings;->getFeedbackReporterPackage(Landroid/content/Context;)Ljava/lang/String;
+    invoke-static {p1}, Lcom/android/settings_ext/DeviceInfoSettings;->access$000(Landroid/content/Context;)Ljava/lang/String;
 
     move-result-object v1
 
@@ -221,7 +221,7 @@
     :cond_4
     const-string v1, "android.settings.TERMS"
 
-    invoke-direct {p0, p1, v1}, Lcom/android/settings/DeviceInfoSettings$1;->checkIntentAction(Landroid/content/Context;Ljava/lang/String;)Z
+    invoke-direct {p0, p1, v1}, Lcom/android/settings_ext/DeviceInfoSettings$1;->checkIntentAction(Landroid/content/Context;Ljava/lang/String;)Z
 
     move-result v1
 
@@ -236,7 +236,7 @@
     :cond_5
     const-string v1, "android.settings.LICENSE"
 
-    invoke-direct {p0, p1, v1}, Lcom/android/settings/DeviceInfoSettings$1;->checkIntentAction(Landroid/content/Context;Ljava/lang/String;)Z
+    invoke-direct {p0, p1, v1}, Lcom/android/settings_ext/DeviceInfoSettings$1;->checkIntentAction(Landroid/content/Context;Ljava/lang/String;)Z
 
     move-result v1
 
@@ -251,7 +251,7 @@
     :cond_6
     const-string v1, "android.settings.COPYRIGHT"
 
-    invoke-direct {p0, p1, v1}, Lcom/android/settings/DeviceInfoSettings$1;->checkIntentAction(Landroid/content/Context;Ljava/lang/String;)Z
+    invoke-direct {p0, p1, v1}, Lcom/android/settings_ext/DeviceInfoSettings$1;->checkIntentAction(Landroid/content/Context;Ljava/lang/String;)Z
 
     move-result v1
 
@@ -266,7 +266,7 @@
     :cond_7
     const-string v1, "android.settings.WEBVIEW_LICENSE"
 
-    invoke-direct {p0, p1, v1}, Lcom/android/settings/DeviceInfoSettings$1;->checkIntentAction(Landroid/content/Context;Ljava/lang/String;)Z
+    invoke-direct {p0, p1, v1}, Lcom/android/settings_ext/DeviceInfoSettings$1;->checkIntentAction(Landroid/content/Context;Ljava/lang/String;)Z
 
     move-result v1
 

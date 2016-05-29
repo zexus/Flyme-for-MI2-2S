@@ -1,11 +1,11 @@
-.class synthetic Lcom/android/settings/ConfirmLockPattern$1;
+.class synthetic Lcom/android/settings_ext/ConfirmLockPattern$1;
 .super Ljava/lang/Object;
 .source "ConfirmLockPattern.java"
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/android/settings/ConfirmLockPattern;
+    value = Lcom/android/settings_ext/ConfirmLockPattern;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -24,7 +24,7 @@
 
     .prologue
     .line 191
-    invoke-static {}, Lcom/android/settings/ConfirmLockPattern$Stage;->values()[Lcom/android/settings/ConfirmLockPattern$Stage;
+    invoke-static {}, Lcom/android/settings_ext/ConfirmLockPattern$Stage;->values()[Lcom/android/settings_ext/ConfirmLockPattern$Stage;
 
     move-result-object v0
 
@@ -32,14 +32,14 @@
 
     new-array v0, v0, [I
 
-    sput-object v0, Lcom/android/settings/ConfirmLockPattern$1;->$SwitchMap$com$android$settings$ConfirmLockPattern$Stage:[I
+    sput-object v0, Lcom/android/settings_ext/ConfirmLockPattern$1;->$SwitchMap$com$android$settings$ConfirmLockPattern$Stage:[I
 
     :try_start_0
-    sget-object v0, Lcom/android/settings/ConfirmLockPattern$1;->$SwitchMap$com$android$settings$ConfirmLockPattern$Stage:[I
+    sget-object v0, Lcom/android/settings_ext/ConfirmLockPattern$1;->$SwitchMap$com$android$settings$ConfirmLockPattern$Stage:[I
 
-    sget-object v1, Lcom/android/settings/ConfirmLockPattern$Stage;->NeedToUnlock:Lcom/android/settings/ConfirmLockPattern$Stage;
+    sget-object v1, Lcom/android/settings_ext/ConfirmLockPattern$Stage;->NeedToUnlock:Lcom/android/settings_ext/ConfirmLockPattern$Stage;
 
-    invoke-virtual {v1}, Lcom/android/settings/ConfirmLockPattern$Stage;->ordinal()I
+    invoke-virtual {v1}, Lcom/android/settings_ext/ConfirmLockPattern$Stage;->ordinal()I
 
     move-result v1
 
@@ -51,11 +51,11 @@
 
     :goto_0
     :try_start_1
-    sget-object v0, Lcom/android/settings/ConfirmLockPattern$1;->$SwitchMap$com$android$settings$ConfirmLockPattern$Stage:[I
+    sget-object v0, Lcom/android/settings_ext/ConfirmLockPattern$1;->$SwitchMap$com$android$settings$ConfirmLockPattern$Stage:[I
 
-    sget-object v1, Lcom/android/settings/ConfirmLockPattern$Stage;->NeedToUnlockWrong:Lcom/android/settings/ConfirmLockPattern$Stage;
+    sget-object v1, Lcom/android/settings_ext/ConfirmLockPattern$Stage;->NeedToUnlockWrong:Lcom/android/settings_ext/ConfirmLockPattern$Stage;
 
-    invoke-virtual {v1}, Lcom/android/settings/ConfirmLockPattern$Stage;->ordinal()I
+    invoke-virtual {v1}, Lcom/android/settings_ext/ConfirmLockPattern$Stage;->ordinal()I
 
     move-result v1
 
@@ -67,11 +67,11 @@
 
     :goto_1
     :try_start_2
-    sget-object v0, Lcom/android/settings/ConfirmLockPattern$1;->$SwitchMap$com$android$settings$ConfirmLockPattern$Stage:[I
+    sget-object v0, Lcom/android/settings_ext/ConfirmLockPattern$1;->$SwitchMap$com$android$settings$ConfirmLockPattern$Stage:[I
 
-    sget-object v1, Lcom/android/settings/ConfirmLockPattern$Stage;->LockedOut:Lcom/android/settings/ConfirmLockPattern$Stage;
+    sget-object v1, Lcom/android/settings_ext/ConfirmLockPattern$Stage;->LockedOut:Lcom/android/settings_ext/ConfirmLockPattern$Stage;
 
-    invoke-virtual {v1}, Lcom/android/settings/ConfirmLockPattern$Stage;->ordinal()I
+    invoke-virtual {v1}, Lcom/android/settings_ext/ConfirmLockPattern$Stage;->ordinal()I
 
     move-result v1
 

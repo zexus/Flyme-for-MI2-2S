@@ -1,11 +1,11 @@
-.class Lcom/android/settings/DeviceAdminSettings$1;
+.class Lcom/android/settings_ext/DeviceAdminSettings$1;
 .super Landroid/content/BroadcastReceiver;
 .source "DeviceAdminSettings.java"
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/android/settings/DeviceAdminSettings;
+    value = Lcom/android/settings_ext/DeviceAdminSettings;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -15,16 +15,16 @@
 
 
 # instance fields
-.field final synthetic this$0:Lcom/android/settings/DeviceAdminSettings;
+.field final synthetic this$0:Lcom/android/settings_ext/DeviceAdminSettings;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/DeviceAdminSettings;)V
+.method constructor <init>(Lcom/android/settings_ext/DeviceAdminSettings;)V
     .locals 0
 
     .prologue
     .line 73
-    iput-object p1, p0, Lcom/android/settings/DeviceAdminSettings$1;->this$0:Lcom/android/settings/DeviceAdminSettings;
+    iput-object p1, p0, Lcom/android/settings_ext/DeviceAdminSettings$1;->this$0:Lcom/android/settings_ext/DeviceAdminSettings;
 
     invoke-direct {p0}, Landroid/content/BroadcastReceiver;-><init>()V
 
@@ -53,9 +53,9 @@
     if-eqz v0, :cond_0
 
     .line 80
-    iget-object v0, p0, Lcom/android/settings/DeviceAdminSettings$1;->this$0:Lcom/android/settings/DeviceAdminSettings;
+    iget-object v0, p0, Lcom/android/settings_ext/DeviceAdminSettings$1;->this$0:Lcom/android/settings_ext/DeviceAdminSettings;
 
-    invoke-virtual {v0}, Lcom/android/settings/DeviceAdminSettings;->updateList()V
+    invoke-virtual {v0}, Lcom/android/settings_ext/DeviceAdminSettings;->updateList()V
 
     .line 82
     :cond_0

@@ -1,14 +1,14 @@
-.class Lcom/android/settings/accessibility/ToggleAccessibilityServicePreferenceFragment$2;
+.class Lcom/android/settings_ext/accessibility/ToggleAccessibilityServicePreferenceFragment$2;
 .super Ljava/lang/Object;
 .source "ToggleAccessibilityServicePreferenceFragment.java"
 
 # interfaces
-.implements Lcom/android/settings/widget/ToggleSwitch$OnBeforeCheckedChangeListener;
+.implements Lcom/android/settings_ext/widget/ToggleSwitch$OnBeforeCheckedChangeListener;
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/android/settings/accessibility/ToggleAccessibilityServicePreferenceFragment;->onInstallSwitchBarToggleSwitch()V
+    value = Lcom/android/settings_ext/accessibility/ToggleAccessibilityServicePreferenceFragment;->onInstallSwitchBarToggleSwitch()V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -18,16 +18,16 @@
 
 
 # instance fields
-.field final synthetic this$0:Lcom/android/settings/accessibility/ToggleAccessibilityServicePreferenceFragment;
+.field final synthetic this$0:Lcom/android/settings_ext/accessibility/ToggleAccessibilityServicePreferenceFragment;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/accessibility/ToggleAccessibilityServicePreferenceFragment;)V
+.method constructor <init>(Lcom/android/settings_ext/accessibility/ToggleAccessibilityServicePreferenceFragment;)V
     .locals 0
 
     .prologue
     .line 361
-    iput-object p1, p0, Lcom/android/settings/accessibility/ToggleAccessibilityServicePreferenceFragment$2;->this$0:Lcom/android/settings/accessibility/ToggleAccessibilityServicePreferenceFragment;
+    iput-object p1, p0, Lcom/android/settings_ext/accessibility/ToggleAccessibilityServicePreferenceFragment$2;->this$0:Lcom/android/settings_ext/accessibility/ToggleAccessibilityServicePreferenceFragment;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -36,9 +36,9 @@
 
 
 # virtual methods
-.method public onBeforeCheckedChanged(Lcom/android/settings/widget/ToggleSwitch;Z)Z
+.method public onBeforeCheckedChanged(Lcom/android/settings_ext/widget/ToggleSwitch;Z)Z
     .locals 4
-    .param p1, "toggleSwitch"    # Lcom/android/settings/widget/ToggleSwitch;
+    .param p1, "toggleSwitch"    # Lcom/android/settings_ext/widget/ToggleSwitch;
     .param p2, "checked"    # Z
 
     .prologue
@@ -50,16 +50,16 @@
     if-eqz p2, :cond_0
 
     .line 365
-    iget-object v0, p0, Lcom/android/settings/accessibility/ToggleAccessibilityServicePreferenceFragment$2;->this$0:Lcom/android/settings/accessibility/ToggleAccessibilityServicePreferenceFragment;
+    iget-object v0, p0, Lcom/android/settings_ext/accessibility/ToggleAccessibilityServicePreferenceFragment$2;->this$0:Lcom/android/settings_ext/accessibility/ToggleAccessibilityServicePreferenceFragment;
 
-    iget-object v0, v0, Lcom/android/settings/accessibility/ToggleAccessibilityServicePreferenceFragment;->mSwitchBar:Lcom/android/settings/widget/SwitchBar;
+    iget-object v0, v0, Lcom/android/settings_ext/accessibility/ToggleAccessibilityServicePreferenceFragment;->mSwitchBar:Lcom/android/settings_ext/widget/SwitchBar;
 
-    invoke-virtual {v0, v3}, Lcom/android/settings/widget/SwitchBar;->setCheckedInternal(Z)V
+    invoke-virtual {v0, v3}, Lcom/android/settings_ext/widget/SwitchBar;->setCheckedInternal(Z)V
 
     .line 366
-    iget-object v0, p0, Lcom/android/settings/accessibility/ToggleAccessibilityServicePreferenceFragment$2;->this$0:Lcom/android/settings/accessibility/ToggleAccessibilityServicePreferenceFragment;
+    iget-object v0, p0, Lcom/android/settings_ext/accessibility/ToggleAccessibilityServicePreferenceFragment$2;->this$0:Lcom/android/settings_ext/accessibility/ToggleAccessibilityServicePreferenceFragment;
 
-    invoke-virtual {v0}, Lcom/android/settings/accessibility/ToggleAccessibilityServicePreferenceFragment;->getArguments()Landroid/os/Bundle;
+    invoke-virtual {v0}, Lcom/android/settings_ext/accessibility/ToggleAccessibilityServicePreferenceFragment;->getArguments()Landroid/os/Bundle;
 
     move-result-object v0
 
@@ -68,10 +68,10 @@
     invoke-virtual {v0, v1, v3}, Landroid/os/Bundle;->putBoolean(Ljava/lang/String;Z)V
 
     .line 367
-    iget-object v0, p0, Lcom/android/settings/accessibility/ToggleAccessibilityServicePreferenceFragment$2;->this$0:Lcom/android/settings/accessibility/ToggleAccessibilityServicePreferenceFragment;
+    iget-object v0, p0, Lcom/android/settings_ext/accessibility/ToggleAccessibilityServicePreferenceFragment$2;->this$0:Lcom/android/settings_ext/accessibility/ToggleAccessibilityServicePreferenceFragment;
 
-    # invokes: Lcom/android/settings/accessibility/ToggleAccessibilityServicePreferenceFragment;->showDialog(I)V
-    invoke-static {v0, v2}, Lcom/android/settings/accessibility/ToggleAccessibilityServicePreferenceFragment;->access$100(Lcom/android/settings/accessibility/ToggleAccessibilityServicePreferenceFragment;I)V
+    # invokes: Lcom/android/settings_ext/accessibility/ToggleAccessibilityServicePreferenceFragment;->showDialog(I)V
+    invoke-static {v0, v2}, Lcom/android/settings_ext/accessibility/ToggleAccessibilityServicePreferenceFragment;->access$100(Lcom/android/settings_ext/accessibility/ToggleAccessibilityServicePreferenceFragment;I)V
 
     .line 373
     :goto_0
@@ -79,16 +79,16 @@
 
     .line 369
     :cond_0
-    iget-object v0, p0, Lcom/android/settings/accessibility/ToggleAccessibilityServicePreferenceFragment$2;->this$0:Lcom/android/settings/accessibility/ToggleAccessibilityServicePreferenceFragment;
+    iget-object v0, p0, Lcom/android/settings_ext/accessibility/ToggleAccessibilityServicePreferenceFragment$2;->this$0:Lcom/android/settings_ext/accessibility/ToggleAccessibilityServicePreferenceFragment;
 
-    iget-object v0, v0, Lcom/android/settings/accessibility/ToggleAccessibilityServicePreferenceFragment;->mSwitchBar:Lcom/android/settings/widget/SwitchBar;
+    iget-object v0, v0, Lcom/android/settings_ext/accessibility/ToggleAccessibilityServicePreferenceFragment;->mSwitchBar:Lcom/android/settings_ext/widget/SwitchBar;
 
-    invoke-virtual {v0, v2}, Lcom/android/settings/widget/SwitchBar;->setCheckedInternal(Z)V
+    invoke-virtual {v0, v2}, Lcom/android/settings_ext/widget/SwitchBar;->setCheckedInternal(Z)V
 
     .line 370
-    iget-object v0, p0, Lcom/android/settings/accessibility/ToggleAccessibilityServicePreferenceFragment$2;->this$0:Lcom/android/settings/accessibility/ToggleAccessibilityServicePreferenceFragment;
+    iget-object v0, p0, Lcom/android/settings_ext/accessibility/ToggleAccessibilityServicePreferenceFragment$2;->this$0:Lcom/android/settings_ext/accessibility/ToggleAccessibilityServicePreferenceFragment;
 
-    invoke-virtual {v0}, Lcom/android/settings/accessibility/ToggleAccessibilityServicePreferenceFragment;->getArguments()Landroid/os/Bundle;
+    invoke-virtual {v0}, Lcom/android/settings_ext/accessibility/ToggleAccessibilityServicePreferenceFragment;->getArguments()Landroid/os/Bundle;
 
     move-result-object v0
 
@@ -97,12 +97,12 @@
     invoke-virtual {v0, v1, v2}, Landroid/os/Bundle;->putBoolean(Ljava/lang/String;Z)V
 
     .line 371
-    iget-object v0, p0, Lcom/android/settings/accessibility/ToggleAccessibilityServicePreferenceFragment$2;->this$0:Lcom/android/settings/accessibility/ToggleAccessibilityServicePreferenceFragment;
+    iget-object v0, p0, Lcom/android/settings_ext/accessibility/ToggleAccessibilityServicePreferenceFragment$2;->this$0:Lcom/android/settings_ext/accessibility/ToggleAccessibilityServicePreferenceFragment;
 
     const/4 v1, 0x2
 
-    # invokes: Lcom/android/settings/accessibility/ToggleAccessibilityServicePreferenceFragment;->showDialog(I)V
-    invoke-static {v0, v1}, Lcom/android/settings/accessibility/ToggleAccessibilityServicePreferenceFragment;->access$200(Lcom/android/settings/accessibility/ToggleAccessibilityServicePreferenceFragment;I)V
+    # invokes: Lcom/android/settings_ext/accessibility/ToggleAccessibilityServicePreferenceFragment;->showDialog(I)V
+    invoke-static {v0, v1}, Lcom/android/settings_ext/accessibility/ToggleAccessibilityServicePreferenceFragment;->access$200(Lcom/android/settings_ext/accessibility/ToggleAccessibilityServicePreferenceFragment;I)V
 
     goto :goto_0
 .end method

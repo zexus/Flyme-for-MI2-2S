@@ -1,4 +1,4 @@
-.class Lcom/android/settings/print/PrintServiceSettingsFragment$4;
+.class Lcom/android/settings_ext/print/PrintServiceSettingsFragment$4;
 .super Ljava/lang/Object;
 .source "PrintServiceSettingsFragment.java"
 
@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/android/settings/print/PrintServiceSettingsFragment;->onCreateOptionsMenu(Landroid/view/Menu;Landroid/view/MenuInflater;)V
+    value = Lcom/android/settings_ext/print/PrintServiceSettingsFragment;->onCreateOptionsMenu(Landroid/view/Menu;Landroid/view/MenuInflater;)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -18,16 +18,16 @@
 
 
 # instance fields
-.field final synthetic this$0:Lcom/android/settings/print/PrintServiceSettingsFragment;
+.field final synthetic this$0:Lcom/android/settings_ext/print/PrintServiceSettingsFragment;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/print/PrintServiceSettingsFragment;)V
+.method constructor <init>(Lcom/android/settings_ext/print/PrintServiceSettingsFragment;)V
     .locals 0
 
     .prologue
     .line 417
-    iput-object p1, p0, Lcom/android/settings/print/PrintServiceSettingsFragment$4;->this$0:Lcom/android/settings/print/PrintServiceSettingsFragment;
+    iput-object p1, p0, Lcom/android/settings_ext/print/PrintServiceSettingsFragment$4;->this$0:Lcom/android/settings_ext/print/PrintServiceSettingsFragment;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -42,9 +42,9 @@
 
     .prologue
     .line 425
-    iget-object v0, p0, Lcom/android/settings/print/PrintServiceSettingsFragment$4;->this$0:Lcom/android/settings/print/PrintServiceSettingsFragment;
+    iget-object v0, p0, Lcom/android/settings_ext/print/PrintServiceSettingsFragment$4;->this$0:Lcom/android/settings_ext/print/PrintServiceSettingsFragment;
 
-    invoke-virtual {v0}, Lcom/android/settings/print/PrintServiceSettingsFragment;->getListView()Landroid/widget/ListView;
+    invoke-virtual {v0}, Lcom/android/settings_ext/print/PrintServiceSettingsFragment;->getListView()Landroid/widget/ListView;
 
     move-result-object v0
 

@@ -1,5 +1,5 @@
-.class public Lcom/android/settings/ButtonSettings;
-.super Lcom/android/settings/SettingsPreferenceFragment;
+.class public Lcom/android/settings_ext/ButtonSettings;
+.super Lcom/android/settings_ext/SettingsPreferenceFragment;
 .source "ButtonSettings.java"
 
 # interfaces
@@ -24,7 +24,7 @@
 
     .prologue
     .line 45
-    invoke-direct {p0}, Lcom/android/settings/SettingsPreferenceFragment;-><init>()V
+    invoke-direct {p0}, Lcom/android/settings_ext/SettingsPreferenceFragment;-><init>()V
 
     return-void
 .end method
@@ -58,7 +58,7 @@
     invoke-virtual {p1, v2}, Landroid/preference/ListPreference;->setSummary(Ljava/lang/CharSequence;)V
 
     .line 180
-    invoke-virtual {p0}, Lcom/android/settings/ButtonSettings;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/settings_ext/ButtonSettings;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v2
 
@@ -83,7 +83,7 @@
 
     .prologue
     .line 168
-    invoke-virtual {p0}, Lcom/android/settings/ButtonSettings;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
+    invoke-virtual {p0}, Lcom/android/settings_ext/ButtonSettings;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
 
     move-result-object v1
 
@@ -123,7 +123,7 @@
 
     .prologue
     .line 97
-    invoke-super/range {p0 .. p1}, Lcom/android/settings/SettingsPreferenceFragment;->onCreate(Landroid/os/Bundle;)V
+    invoke-super/range {p0 .. p1}, Lcom/android/settings_ext/SettingsPreferenceFragment;->onCreate(Landroid/os/Bundle;)V
 
     .line 99
     const v19, 0x7f06000f
@@ -132,16 +132,16 @@
 
     move/from16 v1, v19
 
-    invoke-virtual {v0, v1}, Lcom/android/settings/ButtonSettings;->addPreferencesFromResource(I)V
+    invoke-virtual {v0, v1}, Lcom/android/settings_ext/ButtonSettings;->addPreferencesFromResource(I)V
 
     .line 101
-    invoke-virtual/range {p0 .. p0}, Lcom/android/settings/ButtonSettings;->getResources()Landroid/content/res/Resources;
+    invoke-virtual/range {p0 .. p0}, Lcom/android/settings_ext/ButtonSettings;->getResources()Landroid/content/res/Resources;
 
     move-result-object v17
 
     .line 102
     .local v17, "res":Landroid/content/res/Resources;
-    invoke-virtual/range {p0 .. p0}, Lcom/android/settings/ButtonSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual/range {p0 .. p0}, Lcom/android/settings_ext/ButtonSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v19
 
@@ -151,13 +151,13 @@
 
     .line 103
     .local v18, "resolver":Landroid/content/ContentResolver;
-    invoke-virtual/range {p0 .. p0}, Lcom/android/settings/ButtonSettings;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
+    invoke-virtual/range {p0 .. p0}, Lcom/android/settings_ext/ButtonSettings;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
 
     move-result-object v15
 
     .line 105
     .local v15, "prefScreen":Landroid/preference/PreferenceScreen;
-    invoke-virtual/range {p0 .. p0}, Lcom/android/settings/ButtonSettings;->getResources()Landroid/content/res/Resources;
+    invoke-virtual/range {p0 .. p0}, Lcom/android/settings_ext/ButtonSettings;->getResources()Landroid/content/res/Resources;
 
     move-result-object v19
 
@@ -240,7 +240,7 @@
 
     move-object/from16 v1, p0
 
-    iput-object v0, v1, Lcom/android/settings/ButtonSettings;->mHandler:Landroid/os/Handler;
+    iput-object v0, v1, Lcom/android/settings_ext/ButtonSettings;->mHandler:Landroid/os/Handler;
 
     .line 121
     if-eqz v9, :cond_7
@@ -316,7 +316,7 @@
 
     move-object/from16 v1, v19
 
-    invoke-direct {v0, v1, v13}, Lcom/android/settings/ButtonSettings;->initActionList(Ljava/lang/String;I)Landroid/preference/ListPreference;
+    invoke-direct {v0, v1, v13}, Lcom/android/settings_ext/ButtonSettings;->initActionList(Ljava/lang/String;I)Landroid/preference/ListPreference;
 
     move-result-object v19
 
@@ -324,7 +324,7 @@
 
     move-object/from16 v1, p0
 
-    iput-object v0, v1, Lcom/android/settings/ButtonSettings;->mHomeLongPressAction:Landroid/preference/ListPreference;
+    iput-object v0, v1, Lcom/android/settings_ext/ButtonSettings;->mHomeLongPressAction:Landroid/preference/ListPreference;
 
     .line 141
     const-string v19, "key_home_double_tap_action"
@@ -345,7 +345,7 @@
 
     move-object/from16 v1, v19
 
-    invoke-direct {v0, v1, v6}, Lcom/android/settings/ButtonSettings;->initActionList(Ljava/lang/String;I)Landroid/preference/ListPreference;
+    invoke-direct {v0, v1, v6}, Lcom/android/settings_ext/ButtonSettings;->initActionList(Ljava/lang/String;I)Landroid/preference/ListPreference;
 
     move-result-object v19
 
@@ -353,7 +353,7 @@
 
     move-object/from16 v1, p0
 
-    iput-object v0, v1, Lcom/android/settings/ButtonSettings;->mHomeDoubleTapAction:Landroid/preference/ListPreference;
+    iput-object v0, v1, Lcom/android/settings_ext/ButtonSettings;->mHomeDoubleTapAction:Landroid/preference/ListPreference;
 
     .line 146
     const/4 v7, 0x1
@@ -385,7 +385,7 @@
 
     move/from16 v2, v16
 
-    invoke-direct {v0, v1, v2}, Lcom/android/settings/ButtonSettings;->initActionList(Ljava/lang/String;I)Landroid/preference/ListPreference;
+    invoke-direct {v0, v1, v2}, Lcom/android/settings_ext/ButtonSettings;->initActionList(Ljava/lang/String;I)Landroid/preference/ListPreference;
 
     move-result-object v19
 
@@ -393,7 +393,7 @@
 
     move-object/from16 v1, p0
 
-    iput-object v0, v1, Lcom/android/settings/ButtonSettings;->mMenuPressAction:Landroid/preference/ListPreference;
+    iput-object v0, v1, Lcom/android/settings_ext/ButtonSettings;->mMenuPressAction:Landroid/preference/ListPreference;
 
     .line 156
     const-string v20, "key_menu_long_press_action"
@@ -421,7 +421,7 @@
 
     move-object/from16 v1, v19
 
-    invoke-direct {v0, v1, v13}, Lcom/android/settings/ButtonSettings;->initActionList(Ljava/lang/String;I)Landroid/preference/ListPreference;
+    invoke-direct {v0, v1, v13}, Lcom/android/settings_ext/ButtonSettings;->initActionList(Ljava/lang/String;I)Landroid/preference/ListPreference;
 
     move-result-object v19
 
@@ -429,7 +429,7 @@
 
     move-object/from16 v1, p0
 
-    iput-object v0, v1, Lcom/android/settings/ButtonSettings;->mMenuLongPressAction:Landroid/preference/ListPreference;
+    iput-object v0, v1, Lcom/android/settings_ext/ButtonSettings;->mMenuLongPressAction:Landroid/preference/ListPreference;
 
     .line 161
     const/4 v7, 0x1
@@ -500,16 +500,16 @@
     const/4 v0, 0x1
 
     .line 185
-    iget-object v1, p0, Lcom/android/settings/ButtonSettings;->mHomeLongPressAction:Landroid/preference/ListPreference;
+    iget-object v1, p0, Lcom/android/settings_ext/ButtonSettings;->mHomeLongPressAction:Landroid/preference/ListPreference;
 
     if-ne p1, v1, :cond_0
 
     .line 186
-    iget-object v1, p0, Lcom/android/settings/ButtonSettings;->mHomeLongPressAction:Landroid/preference/ListPreference;
+    iget-object v1, p0, Lcom/android/settings_ext/ButtonSettings;->mHomeLongPressAction:Landroid/preference/ListPreference;
 
     const-string v2, "key_home_long_press_action"
 
-    invoke-direct {p0, v1, p2, v2}, Lcom/android/settings/ButtonSettings;->handleActionListChange(Landroid/preference/ListPreference;Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-direct {p0, v1, p2, v2}, Lcom/android/settings_ext/ButtonSettings;->handleActionListChange(Landroid/preference/ListPreference;Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 202
     :goto_0
@@ -517,46 +517,46 @@
 
     .line 189
     :cond_0
-    iget-object v1, p0, Lcom/android/settings/ButtonSettings;->mHomeDoubleTapAction:Landroid/preference/ListPreference;
+    iget-object v1, p0, Lcom/android/settings_ext/ButtonSettings;->mHomeDoubleTapAction:Landroid/preference/ListPreference;
 
     if-ne p1, v1, :cond_1
 
     .line 190
-    iget-object v1, p0, Lcom/android/settings/ButtonSettings;->mHomeDoubleTapAction:Landroid/preference/ListPreference;
+    iget-object v1, p0, Lcom/android/settings_ext/ButtonSettings;->mHomeDoubleTapAction:Landroid/preference/ListPreference;
 
     const-string v2, "key_home_double_tap_action"
 
-    invoke-direct {p0, v1, p2, v2}, Lcom/android/settings/ButtonSettings;->handleActionListChange(Landroid/preference/ListPreference;Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-direct {p0, v1, p2, v2}, Lcom/android/settings_ext/ButtonSettings;->handleActionListChange(Landroid/preference/ListPreference;Ljava/lang/Object;Ljava/lang/String;)V
 
     goto :goto_0
 
     .line 193
     :cond_1
-    iget-object v1, p0, Lcom/android/settings/ButtonSettings;->mMenuPressAction:Landroid/preference/ListPreference;
+    iget-object v1, p0, Lcom/android/settings_ext/ButtonSettings;->mMenuPressAction:Landroid/preference/ListPreference;
 
     if-ne p1, v1, :cond_2
 
     .line 194
-    iget-object v1, p0, Lcom/android/settings/ButtonSettings;->mMenuPressAction:Landroid/preference/ListPreference;
+    iget-object v1, p0, Lcom/android/settings_ext/ButtonSettings;->mMenuPressAction:Landroid/preference/ListPreference;
 
     const-string v2, "key_menu_action"
 
-    invoke-direct {p0, v1, p2, v2}, Lcom/android/settings/ButtonSettings;->handleActionListChange(Landroid/preference/ListPreference;Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-direct {p0, v1, p2, v2}, Lcom/android/settings_ext/ButtonSettings;->handleActionListChange(Landroid/preference/ListPreference;Ljava/lang/Object;Ljava/lang/String;)V
 
     goto :goto_0
 
     .line 197
     :cond_2
-    iget-object v1, p0, Lcom/android/settings/ButtonSettings;->mMenuLongPressAction:Landroid/preference/ListPreference;
+    iget-object v1, p0, Lcom/android/settings_ext/ButtonSettings;->mMenuLongPressAction:Landroid/preference/ListPreference;
 
     if-ne p1, v1, :cond_3
 
     .line 198
-    iget-object v1, p0, Lcom/android/settings/ButtonSettings;->mMenuLongPressAction:Landroid/preference/ListPreference;
+    iget-object v1, p0, Lcom/android/settings_ext/ButtonSettings;->mMenuLongPressAction:Landroid/preference/ListPreference;
 
     const-string v2, "key_menu_long_press_action"
 
-    invoke-direct {p0, v1, p2, v2}, Lcom/android/settings/ButtonSettings;->handleActionListChange(Landroid/preference/ListPreference;Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-direct {p0, v1, p2, v2}, Lcom/android/settings_ext/ButtonSettings;->handleActionListChange(Landroid/preference/ListPreference;Ljava/lang/Object;Ljava/lang/String;)V
 
     goto :goto_0
 

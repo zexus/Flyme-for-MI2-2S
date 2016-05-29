@@ -1,11 +1,11 @@
-.class Lcom/android/settings/DeviceAdminAdd$3$1;
+.class Lcom/android/settings_ext/DeviceAdminAdd$3$1;
 .super Landroid/os/RemoteCallback;
 .source "DeviceAdminAdd.java"
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/android/settings/DeviceAdminAdd$3;->onClick(Landroid/view/View;)V
+    value = Lcom/android/settings_ext/DeviceAdminAdd$3;->onClick(Landroid/view/View;)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -15,17 +15,17 @@
 
 
 # instance fields
-.field final synthetic this$1:Lcom/android/settings/DeviceAdminAdd$3;
+.field final synthetic this$1:Lcom/android/settings_ext/DeviceAdminAdd$3;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/DeviceAdminAdd$3;Landroid/os/Handler;)V
+.method constructor <init>(Lcom/android/settings_ext/DeviceAdminAdd$3;Landroid/os/Handler;)V
     .locals 0
     .param p2, "x0"    # Landroid/os/Handler;
 
     .prologue
     .line 283
-    iput-object p1, p0, Lcom/android/settings/DeviceAdminAdd$3$1;->this$1:Lcom/android/settings/DeviceAdminAdd$3;
+    iput-object p1, p0, Lcom/android/settings_ext/DeviceAdminAdd$3$1;->this$1:Lcom/android/settings_ext/DeviceAdminAdd$3;
 
     invoke-direct {p0, p2}, Landroid/os/RemoteCallback;-><init>(Landroid/os/Handler;)V
 
@@ -51,11 +51,11 @@
     .line 290
     .local v0, "msg":Ljava/lang/CharSequence;
     :goto_0
-    iget-object v1, p0, Lcom/android/settings/DeviceAdminAdd$3$1;->this$1:Lcom/android/settings/DeviceAdminAdd$3;
+    iget-object v1, p0, Lcom/android/settings_ext/DeviceAdminAdd$3$1;->this$1:Lcom/android/settings_ext/DeviceAdminAdd$3;
 
-    iget-object v1, v1, Lcom/android/settings/DeviceAdminAdd$3;->this$0:Lcom/android/settings/DeviceAdminAdd;
+    iget-object v1, v1, Lcom/android/settings_ext/DeviceAdminAdd$3;->this$0:Lcom/android/settings_ext/DeviceAdminAdd;
 
-    invoke-virtual {v1, v0}, Lcom/android/settings/DeviceAdminAdd;->continueRemoveAction(Ljava/lang/CharSequence;)V
+    invoke-virtual {v1, v0}, Lcom/android/settings_ext/DeviceAdminAdd;->continueRemoveAction(Ljava/lang/CharSequence;)V
 
     .line 291
     return-void

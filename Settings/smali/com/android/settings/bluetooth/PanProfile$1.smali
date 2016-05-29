@@ -1,11 +1,11 @@
-.class synthetic Lcom/android/settings/bluetooth/PanProfile$1;
+.class synthetic Lcom/android/settings_ext/bluetooth/PanProfile$1;
 .super Ljava/lang/Object;
 .source "PanProfile.java"
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/android/settings/bluetooth/PanProfile;
+    value = Lcom/android/settings_ext/bluetooth/PanProfile;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;

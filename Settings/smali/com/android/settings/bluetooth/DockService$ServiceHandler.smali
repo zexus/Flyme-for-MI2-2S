@@ -1,11 +1,11 @@
-.class final Lcom/android/settings/bluetooth/DockService$ServiceHandler;
+.class final Lcom/android/settings_ext/bluetooth/DockService$ServiceHandler;
 .super Landroid/os/Handler;
 .source "DockService.java"
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/android/settings/bluetooth/DockService;
+    value = Lcom/android/settings_ext/bluetooth/DockService;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -15,17 +15,17 @@
 
 
 # instance fields
-.field final synthetic this$0:Lcom/android/settings/bluetooth/DockService;
+.field final synthetic this$0:Lcom/android/settings_ext/bluetooth/DockService;
 
 
 # direct methods
-.method private constructor <init>(Lcom/android/settings/bluetooth/DockService;Landroid/os/Looper;)V
+.method private constructor <init>(Lcom/android/settings_ext/bluetooth/DockService;Landroid/os/Looper;)V
     .locals 0
     .param p2, "looper"    # Landroid/os/Looper;
 
     .prologue
     .line 246
-    iput-object p1, p0, Lcom/android/settings/bluetooth/DockService$ServiceHandler;->this$0:Lcom/android/settings/bluetooth/DockService;
+    iput-object p1, p0, Lcom/android/settings_ext/bluetooth/DockService$ServiceHandler;->this$0:Lcom/android/settings_ext/bluetooth/DockService;
 
     .line 247
     invoke-direct {p0, p2}, Landroid/os/Handler;-><init>(Landroid/os/Looper;)V
@@ -34,15 +34,15 @@
     return-void
 .end method
 
-.method synthetic constructor <init>(Lcom/android/settings/bluetooth/DockService;Landroid/os/Looper;Lcom/android/settings/bluetooth/DockService$1;)V
+.method synthetic constructor <init>(Lcom/android/settings_ext/bluetooth/DockService;Landroid/os/Looper;Lcom/android/settings_ext/bluetooth/DockService$1;)V
     .locals 0
-    .param p1, "x0"    # Lcom/android/settings/bluetooth/DockService;
+    .param p1, "x0"    # Lcom/android/settings_ext/bluetooth/DockService;
     .param p2, "x1"    # Landroid/os/Looper;
-    .param p3, "x2"    # Lcom/android/settings/bluetooth/DockService$1;
+    .param p3, "x2"    # Lcom/android/settings_ext/bluetooth/DockService$1;
 
     .prologue
     .line 245
-    invoke-direct {p0, p1, p2}, Lcom/android/settings/bluetooth/DockService$ServiceHandler;-><init>(Lcom/android/settings/bluetooth/DockService;Landroid/os/Looper;)V
+    invoke-direct {p0, p1, p2}, Lcom/android/settings_ext/bluetooth/DockService$ServiceHandler;-><init>(Lcom/android/settings_ext/bluetooth/DockService;Landroid/os/Looper;)V
 
     return-void
 .end method
@@ -55,10 +55,10 @@
 
     .prologue
     .line 252
-    iget-object v0, p0, Lcom/android/settings/bluetooth/DockService$ServiceHandler;->this$0:Lcom/android/settings/bluetooth/DockService;
+    iget-object v0, p0, Lcom/android/settings_ext/bluetooth/DockService$ServiceHandler;->this$0:Lcom/android/settings_ext/bluetooth/DockService;
 
-    # invokes: Lcom/android/settings/bluetooth/DockService;->processMessage(Landroid/os/Message;)V
-    invoke-static {v0, p1}, Lcom/android/settings/bluetooth/DockService;->access$100(Lcom/android/settings/bluetooth/DockService;Landroid/os/Message;)V
+    # invokes: Lcom/android/settings_ext/bluetooth/DockService;->processMessage(Landroid/os/Message;)V
+    invoke-static {v0, p1}, Lcom/android/settings_ext/bluetooth/DockService;->access$100(Lcom/android/settings_ext/bluetooth/DockService;Landroid/os/Message;)V
 
     .line 253
     return-void

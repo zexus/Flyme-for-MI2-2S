@@ -1,9 +1,9 @@
-.class public Lcom/android/settings/search/BaseSearchIndexProvider;
+.class public Lcom/android/settings_ext/search/BaseSearchIndexProvider;
 .super Ljava/lang/Object;
 .source "BaseSearchIndexProvider.java"
 
 # interfaces
-.implements Lcom/android/settings/search/Indexable$SearchIndexProvider;
+.implements Lcom/android/settings_ext/search/Indexable$SearchIndexProvider;
 
 
 # static fields
@@ -29,7 +29,7 @@
 
     move-result-object v0
 
-    sput-object v0, Lcom/android/settings/search/BaseSearchIndexProvider;->EMPTY_LIST:Ljava/util/List;
+    sput-object v0, Lcom/android/settings_ext/search/BaseSearchIndexProvider;->EMPTY_LIST:Ljava/util/List;
 
     return-void
 .end method
@@ -64,7 +64,7 @@
 
     .prologue
     .line 47
-    sget-object v0, Lcom/android/settings/search/BaseSearchIndexProvider;->EMPTY_LIST:Ljava/util/List;
+    sget-object v0, Lcom/android/settings_ext/search/BaseSearchIndexProvider;->EMPTY_LIST:Ljava/util/List;
 
     return-object v0
 .end method
@@ -80,7 +80,7 @@
             "Z)",
             "Ljava/util/List",
             "<",
-            "Lcom/android/settings/search/SearchIndexableRaw;",
+            "Lcom/android/settings_ext/search/SearchIndexableRaw;",
             ">;"
         }
     .end annotation

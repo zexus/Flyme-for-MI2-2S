@@ -1,11 +1,11 @@
-.class Lcom/android/settings/sim/SimDialogActivity$SelectAccountListAdapter;
+.class Lcom/android/settings_ext/sim/SimDialogActivity$SelectAccountListAdapter;
 .super Landroid/widget/ArrayAdapter;
 .source "SimDialogActivity.java"
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/android/settings/sim/SimDialogActivity;
+    value = Lcom/android/settings_ext/sim/SimDialogActivity;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -15,7 +15,7 @@
 
 .annotation system Ldalvik/annotation/MemberClasses;
     value = {
-        Lcom/android/settings/sim/SimDialogActivity$SelectAccountListAdapter$ViewHolder;
+        Lcom/android/settings_ext/sim/SimDialogActivity$SelectAccountListAdapter$ViewHolder;
     }
 .end annotation
 
@@ -49,11 +49,11 @@
     .end annotation
 .end field
 
-.field final synthetic this$0:Lcom/android/settings/sim/SimDialogActivity;
+.field final synthetic this$0:Lcom/android/settings_ext/sim/SimDialogActivity;
 
 
 # direct methods
-.method public constructor <init>(Lcom/android/settings/sim/SimDialogActivity;Ljava/util/List;Landroid/content/Context;I[Ljava/lang/String;I)V
+.method public constructor <init>(Lcom/android/settings_ext/sim/SimDialogActivity;Ljava/util/List;Landroid/content/Context;I[Ljava/lang/String;I)V
     .locals 1
     .param p3, "context"    # Landroid/content/Context;
     .param p4, "resource"    # I
@@ -76,7 +76,7 @@
     .prologue
     .line 292
     .local p2, "subInfoList":Ljava/util/List;, "Ljava/util/List<Landroid/telephony/SubscriptionInfo;>;"
-    iput-object p1, p0, Lcom/android/settings/sim/SimDialogActivity$SelectAccountListAdapter;->this$0:Lcom/android/settings/sim/SimDialogActivity;
+    iput-object p1, p0, Lcom/android/settings_ext/sim/SimDialogActivity$SelectAccountListAdapter;->this$0:Lcom/android/settings_ext/sim/SimDialogActivity;
 
     .line 293
     invoke-direct {p0, p3, p4, p5}, Landroid/widget/ArrayAdapter;-><init>(Landroid/content/Context;I[Ljava/lang/Object;)V
@@ -84,19 +84,19 @@
     .line 288
     const v0, 0x3f0a3d71    # 0.54f
 
-    iput v0, p0, Lcom/android/settings/sim/SimDialogActivity$SelectAccountListAdapter;->OPACITY:F
+    iput v0, p0, Lcom/android/settings_ext/sim/SimDialogActivity$SelectAccountListAdapter;->OPACITY:F
 
     .line 294
-    iput-object p3, p0, Lcom/android/settings/sim/SimDialogActivity$SelectAccountListAdapter;->mContext:Landroid/content/Context;
+    iput-object p3, p0, Lcom/android/settings_ext/sim/SimDialogActivity$SelectAccountListAdapter;->mContext:Landroid/content/Context;
 
     .line 295
-    iput p4, p0, Lcom/android/settings/sim/SimDialogActivity$SelectAccountListAdapter;->mResId:I
+    iput p4, p0, Lcom/android/settings_ext/sim/SimDialogActivity$SelectAccountListAdapter;->mResId:I
 
     .line 296
-    iput p6, p0, Lcom/android/settings/sim/SimDialogActivity$SelectAccountListAdapter;->mDialogId:I
+    iput p6, p0, Lcom/android/settings_ext/sim/SimDialogActivity$SelectAccountListAdapter;->mDialogId:I
 
     .line 297
-    iput-object p2, p0, Lcom/android/settings/sim/SimDialogActivity$SelectAccountListAdapter;->mSubInfoList:Ljava/util/List;
+    iput-object p2, p0, Lcom/android/settings_ext/sim/SimDialogActivity$SelectAccountListAdapter;->mSubInfoList:Ljava/util/List;
 
     .line 298
     return-void
@@ -114,7 +114,7 @@
     const/4 v6, 0x0
 
     .line 302
-    iget-object v4, p0, Lcom/android/settings/sim/SimDialogActivity$SelectAccountListAdapter;->mContext:Landroid/content/Context;
+    iget-object v4, p0, Lcom/android/settings_ext/sim/SimDialogActivity$SelectAccountListAdapter;->mContext:Landroid/content/Context;
 
     const-string v5, "layout_inflater"
 
@@ -129,7 +129,7 @@
     if-nez p2, :cond_0
 
     .line 309
-    iget v4, p0, Lcom/android/settings/sim/SimDialogActivity$SelectAccountListAdapter;->mResId:I
+    iget v4, p0, Lcom/android/settings_ext/sim/SimDialogActivity$SelectAccountListAdapter;->mResId:I
 
     invoke-virtual {v1, v4, v6}, Landroid/view/LayoutInflater;->inflate(ILandroid/view/ViewGroup;)Landroid/view/View;
 
@@ -137,12 +137,12 @@
 
     .line 310
     .local v2, "rowView":Landroid/view/View;
-    new-instance v0, Lcom/android/settings/sim/SimDialogActivity$SelectAccountListAdapter$ViewHolder;
+    new-instance v0, Lcom/android/settings_ext/sim/SimDialogActivity$SelectAccountListAdapter$ViewHolder;
 
-    invoke-direct {v0, p0, v6}, Lcom/android/settings/sim/SimDialogActivity$SelectAccountListAdapter$ViewHolder;-><init>(Lcom/android/settings/sim/SimDialogActivity$SelectAccountListAdapter;Lcom/android/settings/sim/SimDialogActivity$1;)V
+    invoke-direct {v0, p0, v6}, Lcom/android/settings_ext/sim/SimDialogActivity$SelectAccountListAdapter$ViewHolder;-><init>(Lcom/android/settings_ext/sim/SimDialogActivity$SelectAccountListAdapter;Lcom/android/settings_ext/sim/SimDialogActivity$1;)V
 
     .line 311
-    .local v0, "holder":Lcom/android/settings/sim/SimDialogActivity$SelectAccountListAdapter$ViewHolder;
+    .local v0, "holder":Lcom/android/settings_ext/sim/SimDialogActivity$SelectAccountListAdapter$ViewHolder;
     const v4, 0x7f0f0036
 
     invoke-virtual {v2, v4}, Landroid/view/View;->findViewById(I)Landroid/view/View;
@@ -151,7 +151,7 @@
 
     check-cast v4, Landroid/widget/TextView;
 
-    iput-object v4, v0, Lcom/android/settings/sim/SimDialogActivity$SelectAccountListAdapter$ViewHolder;->title:Landroid/widget/TextView;
+    iput-object v4, v0, Lcom/android/settings_ext/sim/SimDialogActivity$SelectAccountListAdapter$ViewHolder;->title:Landroid/widget/TextView;
 
     .line 312
     const v4, 0x7f0f0047
@@ -162,7 +162,7 @@
 
     check-cast v4, Landroid/widget/TextView;
 
-    iput-object v4, v0, Lcom/android/settings/sim/SimDialogActivity$SelectAccountListAdapter$ViewHolder;->summary:Landroid/widget/TextView;
+    iput-object v4, v0, Lcom/android/settings_ext/sim/SimDialogActivity$SelectAccountListAdapter$ViewHolder;->summary:Landroid/widget/TextView;
 
     .line 313
     const v4, 0x7f0f0035
@@ -173,14 +173,14 @@
 
     check-cast v4, Landroid/widget/ImageView;
 
-    iput-object v4, v0, Lcom/android/settings/sim/SimDialogActivity$SelectAccountListAdapter$ViewHolder;->icon:Landroid/widget/ImageView;
+    iput-object v4, v0, Lcom/android/settings_ext/sim/SimDialogActivity$SelectAccountListAdapter$ViewHolder;->icon:Landroid/widget/ImageView;
 
     .line 314
     invoke-virtual {v2, v0}, Landroid/view/View;->setTag(Ljava/lang/Object;)V
 
     .line 320
     :goto_0
-    iget-object v4, p0, Lcom/android/settings/sim/SimDialogActivity$SelectAccountListAdapter;->mSubInfoList:Ljava/util/List;
+    iget-object v4, p0, Lcom/android/settings_ext/sim/SimDialogActivity$SelectAccountListAdapter;->mSubInfoList:Ljava/util/List;
 
     invoke-interface {v4, p1}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
@@ -193,9 +193,9 @@
     if-nez v3, :cond_1
 
     .line 322
-    iget-object v5, v0, Lcom/android/settings/sim/SimDialogActivity$SelectAccountListAdapter$ViewHolder;->title:Landroid/widget/TextView;
+    iget-object v5, v0, Lcom/android/settings_ext/sim/SimDialogActivity$SelectAccountListAdapter$ViewHolder;->title:Landroid/widget/TextView;
 
-    invoke-virtual {p0, p1}, Lcom/android/settings/sim/SimDialogActivity$SelectAccountListAdapter;->getItem(I)Ljava/lang/Object;
+    invoke-virtual {p0, p1}, Lcom/android/settings_ext/sim/SimDialogActivity$SelectAccountListAdapter;->getItem(I)Ljava/lang/Object;
 
     move-result-object v4
 
@@ -204,18 +204,18 @@
     invoke-virtual {v5, v4}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
     .line 323
-    iget-object v4, v0, Lcom/android/settings/sim/SimDialogActivity$SelectAccountListAdapter$ViewHolder;->summary:Landroid/widget/TextView;
+    iget-object v4, v0, Lcom/android/settings_ext/sim/SimDialogActivity$SelectAccountListAdapter$ViewHolder;->summary:Landroid/widget/TextView;
 
     const-string v5, ""
 
     invoke-virtual {v4, v5}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
     .line 324
-    iget-object v4, v0, Lcom/android/settings/sim/SimDialogActivity$SelectAccountListAdapter$ViewHolder;->icon:Landroid/widget/ImageView;
+    iget-object v4, v0, Lcom/android/settings_ext/sim/SimDialogActivity$SelectAccountListAdapter$ViewHolder;->icon:Landroid/widget/ImageView;
 
-    iget-object v5, p0, Lcom/android/settings/sim/SimDialogActivity$SelectAccountListAdapter;->this$0:Lcom/android/settings/sim/SimDialogActivity;
+    iget-object v5, p0, Lcom/android/settings_ext/sim/SimDialogActivity$SelectAccountListAdapter;->this$0:Lcom/android/settings_ext/sim/SimDialogActivity;
 
-    invoke-virtual {v5}, Lcom/android/settings/sim/SimDialogActivity;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {v5}, Lcom/android/settings_ext/sim/SimDialogActivity;->getResources()Landroid/content/res/Resources;
 
     move-result-object v5
 
@@ -228,7 +228,7 @@
     invoke-virtual {v4, v5}, Landroid/widget/ImageView;->setImageDrawable(Landroid/graphics/drawable/Drawable;)V
 
     .line 326
-    iget-object v4, v0, Lcom/android/settings/sim/SimDialogActivity$SelectAccountListAdapter$ViewHolder;->icon:Landroid/widget/ImageView;
+    iget-object v4, v0, Lcom/android/settings_ext/sim/SimDialogActivity$SelectAccountListAdapter$ViewHolder;->icon:Landroid/widget/ImageView;
 
     const v5, 0x3f0a3d71    # 0.54f
 
@@ -239,7 +239,7 @@
     return-object v2
 
     .line 316
-    .end local v0    # "holder":Lcom/android/settings/sim/SimDialogActivity$SelectAccountListAdapter$ViewHolder;
+    .end local v0    # "holder":Lcom/android/settings_ext/sim/SimDialogActivity$SelectAccountListAdapter$ViewHolder;
     .end local v2    # "rowView":Landroid/view/View;
     .end local v3    # "sir":Landroid/telephony/SubscriptionInfo;
     :cond_0
@@ -251,15 +251,15 @@
 
     move-result-object v0
 
-    check-cast v0, Lcom/android/settings/sim/SimDialogActivity$SelectAccountListAdapter$ViewHolder;
+    check-cast v0, Lcom/android/settings_ext/sim/SimDialogActivity$SelectAccountListAdapter$ViewHolder;
 
-    .restart local v0    # "holder":Lcom/android/settings/sim/SimDialogActivity$SelectAccountListAdapter$ViewHolder;
+    .restart local v0    # "holder":Lcom/android/settings_ext/sim/SimDialogActivity$SelectAccountListAdapter$ViewHolder;
     goto :goto_0
 
     .line 328
     .restart local v3    # "sir":Landroid/telephony/SubscriptionInfo;
     :cond_1
-    iget-object v4, v0, Lcom/android/settings/sim/SimDialogActivity$SelectAccountListAdapter$ViewHolder;->title:Landroid/widget/TextView;
+    iget-object v4, v0, Lcom/android/settings_ext/sim/SimDialogActivity$SelectAccountListAdapter$ViewHolder;->title:Landroid/widget/TextView;
 
     invoke-virtual {v3}, Landroid/telephony/SubscriptionInfo;->getDisplayName()Ljava/lang/CharSequence;
 
@@ -268,7 +268,7 @@
     invoke-virtual {v4, v5}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
     .line 329
-    iget-object v4, v0, Lcom/android/settings/sim/SimDialogActivity$SelectAccountListAdapter$ViewHolder;->summary:Landroid/widget/TextView;
+    iget-object v4, v0, Lcom/android/settings_ext/sim/SimDialogActivity$SelectAccountListAdapter$ViewHolder;->summary:Landroid/widget/TextView;
 
     invoke-virtual {v3}, Landroid/telephony/SubscriptionInfo;->getNumber()Ljava/lang/String;
 
@@ -277,9 +277,9 @@
     invoke-virtual {v4, v5}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
     .line 330
-    iget-object v4, v0, Lcom/android/settings/sim/SimDialogActivity$SelectAccountListAdapter$ViewHolder;->icon:Landroid/widget/ImageView;
+    iget-object v4, v0, Lcom/android/settings_ext/sim/SimDialogActivity$SelectAccountListAdapter$ViewHolder;->icon:Landroid/widget/ImageView;
 
-    iget-object v5, p0, Lcom/android/settings/sim/SimDialogActivity$SelectAccountListAdapter;->mContext:Landroid/content/Context;
+    iget-object v5, p0, Lcom/android/settings_ext/sim/SimDialogActivity$SelectAccountListAdapter;->mContext:Landroid/content/Context;
 
     invoke-virtual {v3, v5}, Landroid/telephony/SubscriptionInfo;->createIconBitmap(Landroid/content/Context;)Landroid/graphics/Bitmap;
 

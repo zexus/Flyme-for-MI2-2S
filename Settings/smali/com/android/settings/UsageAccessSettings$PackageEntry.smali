@@ -1,11 +1,11 @@
-.class Lcom/android/settings/UsageAccessSettings$PackageEntry;
+.class Lcom/android/settings_ext/UsageAccessSettings$PackageEntry;
 .super Ljava/lang/Object;
 .source "UsageAccessSettings.java"
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/android/settings/UsageAccessSettings;
+    value = Lcom/android/settings_ext/UsageAccessSettings;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -36,12 +36,12 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 61
-    iput-object p1, p0, Lcom/android/settings/UsageAccessSettings$PackageEntry;->packageName:Ljava/lang/String;
+    iput-object p1, p0, Lcom/android/settings_ext/UsageAccessSettings$PackageEntry;->packageName:Ljava/lang/String;
 
     .line 62
     const/4 v0, 0x3
 
-    iput v0, p0, Lcom/android/settings/UsageAccessSettings$PackageEntry;->appOpMode:I
+    iput v0, p0, Lcom/android/settings_ext/UsageAccessSettings$PackageEntry;->appOpMode:I
 
     .line 63
     return-void

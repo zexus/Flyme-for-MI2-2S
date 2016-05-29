@@ -1,11 +1,11 @@
-.class Lcom/android/settings/DataUsageSummary$2;
+.class Lcom/android/settings_ext/DataUsageSummary$2;
 .super Landroid/os/AsyncTask;
 .source "DataUsageSummary.java"
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/android/settings/DataUsageSummary;->onResume()V
+    value = Lcom/android/settings_ext/DataUsageSummary;->onResume()V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -26,16 +26,16 @@
 
 
 # instance fields
-.field final synthetic this$0:Lcom/android/settings/DataUsageSummary;
+.field final synthetic this$0:Lcom/android/settings_ext/DataUsageSummary;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/DataUsageSummary;)V
+.method constructor <init>(Lcom/android/settings_ext/DataUsageSummary;)V
     .locals 0
 
     .prologue
     .line 456
-    iput-object p1, p0, Lcom/android/settings/DataUsageSummary$2;->this$0:Lcom/android/settings/DataUsageSummary;
+    iput-object p1, p0, Lcom/android/settings_ext/DataUsageSummary$2;->this$0:Lcom/android/settings_ext/DataUsageSummary;
 
     invoke-direct {p0}, Landroid/os/AsyncTask;-><init>()V
 
@@ -53,7 +53,7 @@
     check-cast p1, [Ljava/lang/Void;
 
     .end local p1    # "x0":[Ljava/lang/Object;
-    invoke-virtual {p0, p1}, Lcom/android/settings/DataUsageSummary$2;->doInBackground([Ljava/lang/Void;)Ljava/lang/Void;
+    invoke-virtual {p0, p1}, Lcom/android/settings_ext/DataUsageSummary$2;->doInBackground([Ljava/lang/Void;)Ljava/lang/Void;
 
     move-result-object v0
 
@@ -72,10 +72,10 @@
     invoke-static {v0, v1}, Ljava/lang/Thread;->sleep(J)V
 
     .line 462
-    iget-object v0, p0, Lcom/android/settings/DataUsageSummary$2;->this$0:Lcom/android/settings/DataUsageSummary;
+    iget-object v0, p0, Lcom/android/settings_ext/DataUsageSummary$2;->this$0:Lcom/android/settings_ext/DataUsageSummary;
 
-    # getter for: Lcom/android/settings/DataUsageSummary;->mStatsService:Landroid/net/INetworkStatsService;
-    invoke-static {v0}, Lcom/android/settings/DataUsageSummary;->access$000(Lcom/android/settings/DataUsageSummary;)Landroid/net/INetworkStatsService;
+    # getter for: Lcom/android/settings_ext/DataUsageSummary;->mStatsService:Landroid/net/INetworkStatsService;
+    invoke-static {v0}, Lcom/android/settings_ext/DataUsageSummary;->access$000(Lcom/android/settings_ext/DataUsageSummary;)Landroid/net/INetworkStatsService;
 
     move-result-object v0
 
@@ -112,7 +112,7 @@
     check-cast p1, Ljava/lang/Void;
 
     .end local p1    # "x0":Ljava/lang/Object;
-    invoke-virtual {p0, p1}, Lcom/android/settings/DataUsageSummary$2;->onPostExecute(Ljava/lang/Void;)V
+    invoke-virtual {p0, p1}, Lcom/android/settings_ext/DataUsageSummary$2;->onPostExecute(Ljava/lang/Void;)V
 
     return-void
 .end method
@@ -123,19 +123,19 @@
 
     .prologue
     .line 471
-    iget-object v0, p0, Lcom/android/settings/DataUsageSummary$2;->this$0:Lcom/android/settings/DataUsageSummary;
+    iget-object v0, p0, Lcom/android/settings_ext/DataUsageSummary$2;->this$0:Lcom/android/settings_ext/DataUsageSummary;
 
-    invoke-virtual {v0}, Lcom/android/settings/DataUsageSummary;->isAdded()Z
+    invoke-virtual {v0}, Lcom/android/settings_ext/DataUsageSummary;->isAdded()Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
     .line 472
-    iget-object v0, p0, Lcom/android/settings/DataUsageSummary$2;->this$0:Lcom/android/settings/DataUsageSummary;
+    iget-object v0, p0, Lcom/android/settings_ext/DataUsageSummary$2;->this$0:Lcom/android/settings_ext/DataUsageSummary;
 
-    # invokes: Lcom/android/settings/DataUsageSummary;->updateBody()V
-    invoke-static {v0}, Lcom/android/settings/DataUsageSummary;->access$100(Lcom/android/settings/DataUsageSummary;)V
+    # invokes: Lcom/android/settings_ext/DataUsageSummary;->updateBody()V
+    invoke-static {v0}, Lcom/android/settings_ext/DataUsageSummary;->access$100(Lcom/android/settings_ext/DataUsageSummary;)V
 
     .line 474
     :cond_0

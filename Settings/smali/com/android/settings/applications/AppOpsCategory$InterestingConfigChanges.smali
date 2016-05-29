@@ -1,11 +1,11 @@
-.class public Lcom/android/settings/applications/AppOpsCategory$InterestingConfigChanges;
+.class public Lcom/android/settings_ext/applications/AppOpsCategory$InterestingConfigChanges;
 .super Ljava/lang/Object;
 .source "AppOpsCategory.java"
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/android/settings/applications/AppOpsCategory;
+    value = Lcom/android/settings_ext/applications/AppOpsCategory;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -33,7 +33,7 @@
 
     invoke-direct {v0}, Landroid/content/res/Configuration;-><init>()V
 
-    iput-object v0, p0, Lcom/android/settings/applications/AppOpsCategory$InterestingConfigChanges;->mLastConfiguration:Landroid/content/res/Configuration;
+    iput-object v0, p0, Lcom/android/settings_ext/applications/AppOpsCategory$InterestingConfigChanges;->mLastConfiguration:Landroid/content/res/Configuration;
 
     return-void
 .end method
@@ -50,7 +50,7 @@
     const/4 v2, 0x0
 
     .line 75
-    iget-object v4, p0, Lcom/android/settings/applications/AppOpsCategory$InterestingConfigChanges;->mLastConfiguration:Landroid/content/res/Configuration;
+    iget-object v4, p0, Lcom/android/settings_ext/applications/AppOpsCategory$InterestingConfigChanges;->mLastConfiguration:Landroid/content/res/Configuration;
 
     invoke-virtual {p1}, Landroid/content/res/Resources;->getConfiguration()Landroid/content/res/Configuration;
 
@@ -62,7 +62,7 @@
 
     .line 76
     .local v0, "configChanges":I
-    iget v4, p0, Lcom/android/settings/applications/AppOpsCategory$InterestingConfigChanges;->mLastDensity:I
+    iget v4, p0, Lcom/android/settings_ext/applications/AppOpsCategory$InterestingConfigChanges;->mLastDensity:I
 
     invoke-virtual {p1}, Landroid/content/res/Resources;->getDisplayMetrics()Landroid/util/DisplayMetrics;
 
@@ -91,7 +91,7 @@
 
     iget v2, v2, Landroid/util/DisplayMetrics;->densityDpi:I
 
-    iput v2, p0, Lcom/android/settings/applications/AppOpsCategory$InterestingConfigChanges;->mLastDensity:I
+    iput v2, p0, Lcom/android/settings_ext/applications/AppOpsCategory$InterestingConfigChanges;->mLastDensity:I
 
     move v2, v3
 

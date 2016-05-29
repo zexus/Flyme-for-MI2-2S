@@ -1,11 +1,11 @@
-.class public Lcom/android/settings/SettingsPreferenceFragment$SettingsDialogFragment;
+.class public Lcom/android/settings_ext/SettingsPreferenceFragment$SettingsDialogFragment;
 .super Landroid/app/DialogFragment;
 .source "SettingsPreferenceFragment.java"
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/android/settings/SettingsPreferenceFragment;
+    value = Lcom/android/settings_ext/SettingsPreferenceFragment;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -36,9 +36,9 @@
     return-void
 .end method
 
-.method public constructor <init>(Lcom/android/settings/DialogCreatable;I)V
+.method public constructor <init>(Lcom/android/settings_ext/DialogCreatable;I)V
     .locals 3
-    .param p1, "fragment"    # Lcom/android/settings/DialogCreatable;
+    .param p1, "fragment"    # Lcom/android/settings_ext/DialogCreatable;
     .param p2, "dialogId"    # I
 
     .prologue
@@ -46,7 +46,7 @@
     invoke-direct {p0}, Landroid/app/DialogFragment;-><init>()V
 
     .line 399
-    iput p2, p0, Lcom/android/settings/SettingsPreferenceFragment$SettingsDialogFragment;->mDialogId:I
+    iput p2, p0, Lcom/android/settings_ext/SettingsPreferenceFragment$SettingsDialogFragment;->mDialogId:I
 
     .line 400
     instance-of v0, p1, Landroid/app/Fragment;
@@ -88,21 +88,21 @@
     :cond_0
     check-cast p1, Landroid/app/Fragment;
 
-    .end local p1    # "fragment":Lcom/android/settings/DialogCreatable;
-    iput-object p1, p0, Lcom/android/settings/SettingsPreferenceFragment$SettingsDialogFragment;->mParentFragment:Landroid/app/Fragment;
+    .end local p1    # "fragment":Lcom/android/settings_ext/DialogCreatable;
+    iput-object p1, p0, Lcom/android/settings_ext/SettingsPreferenceFragment$SettingsDialogFragment;->mParentFragment:Landroid/app/Fragment;
 
     .line 405
     return-void
 .end method
 
-.method static synthetic access$102(Lcom/android/settings/SettingsPreferenceFragment$SettingsDialogFragment;Landroid/content/DialogInterface$OnDismissListener;)Landroid/content/DialogInterface$OnDismissListener;
+.method static synthetic access$102(Lcom/android/settings_ext/SettingsPreferenceFragment$SettingsDialogFragment;Landroid/content/DialogInterface$OnDismissListener;)Landroid/content/DialogInterface$OnDismissListener;
     .locals 0
-    .param p0, "x0"    # Lcom/android/settings/SettingsPreferenceFragment$SettingsDialogFragment;
+    .param p0, "x0"    # Lcom/android/settings_ext/SettingsPreferenceFragment$SettingsDialogFragment;
     .param p1, "x1"    # Landroid/content/DialogInterface$OnDismissListener;
 
     .prologue
     .line 383
-    iput-object p1, p0, Lcom/android/settings/SettingsPreferenceFragment$SettingsDialogFragment;->mOnDismissListener:Landroid/content/DialogInterface$OnDismissListener;
+    iput-object p1, p0, Lcom/android/settings_ext/SettingsPreferenceFragment$SettingsDialogFragment;->mOnDismissListener:Landroid/content/DialogInterface$OnDismissListener;
 
     return-object p1
 .end method
@@ -114,7 +114,7 @@
 
     .prologue
     .line 468
-    iget v0, p0, Lcom/android/settings/SettingsPreferenceFragment$SettingsDialogFragment;->mDialogId:I
+    iget v0, p0, Lcom/android/settings_ext/SettingsPreferenceFragment$SettingsDialogFragment;->mDialogId:I
 
     return v0
 .end method
@@ -128,12 +128,12 @@
     invoke-super {p0, p1}, Landroid/app/DialogFragment;->onCancel(Landroid/content/DialogInterface;)V
 
     .line 454
-    iget-object v0, p0, Lcom/android/settings/SettingsPreferenceFragment$SettingsDialogFragment;->mOnCancelListener:Landroid/content/DialogInterface$OnCancelListener;
+    iget-object v0, p0, Lcom/android/settings_ext/SettingsPreferenceFragment$SettingsDialogFragment;->mOnCancelListener:Landroid/content/DialogInterface$OnCancelListener;
 
     if-eqz v0, :cond_0
 
     .line 455
-    iget-object v0, p0, Lcom/android/settings/SettingsPreferenceFragment$SettingsDialogFragment;->mOnCancelListener:Landroid/content/DialogInterface$OnCancelListener;
+    iget-object v0, p0, Lcom/android/settings_ext/SettingsPreferenceFragment$SettingsDialogFragment;->mOnCancelListener:Landroid/content/DialogInterface$OnCancelListener;
 
     invoke-interface {v0, p1}, Landroid/content/DialogInterface$OnCancelListener;->onCancel(Landroid/content/DialogInterface;)V
 
@@ -159,14 +159,14 @@
 
     move-result v1
 
-    iput v1, p0, Lcom/android/settings/SettingsPreferenceFragment$SettingsDialogFragment;->mDialogId:I
+    iput v1, p0, Lcom/android/settings_ext/SettingsPreferenceFragment$SettingsDialogFragment;->mDialogId:I
 
     .line 429
-    invoke-virtual {p0}, Lcom/android/settings/SettingsPreferenceFragment$SettingsDialogFragment;->getParentFragment()Landroid/app/Fragment;
+    invoke-virtual {p0}, Lcom/android/settings_ext/SettingsPreferenceFragment$SettingsDialogFragment;->getParentFragment()Landroid/app/Fragment;
 
     move-result-object v1
 
-    iput-object v1, p0, Lcom/android/settings/SettingsPreferenceFragment$SettingsDialogFragment;->mParentFragment:Landroid/app/Fragment;
+    iput-object v1, p0, Lcom/android/settings_ext/SettingsPreferenceFragment$SettingsDialogFragment;->mParentFragment:Landroid/app/Fragment;
 
     .line 430
     const-string v1, "key_parent_fragment_id"
@@ -179,12 +179,12 @@
 
     .line 431
     .local v0, "mParentFragmentId":I
-    iget-object v1, p0, Lcom/android/settings/SettingsPreferenceFragment$SettingsDialogFragment;->mParentFragment:Landroid/app/Fragment;
+    iget-object v1, p0, Lcom/android/settings_ext/SettingsPreferenceFragment$SettingsDialogFragment;->mParentFragment:Landroid/app/Fragment;
 
     if-nez v1, :cond_0
 
     .line 432
-    invoke-virtual {p0}, Lcom/android/settings/SettingsPreferenceFragment$SettingsDialogFragment;->getFragmentManager()Landroid/app/FragmentManager;
+    invoke-virtual {p0}, Lcom/android/settings_ext/SettingsPreferenceFragment$SettingsDialogFragment;->getFragmentManager()Landroid/app/FragmentManager;
 
     move-result-object v1
 
@@ -192,13 +192,13 @@
 
     move-result-object v1
 
-    iput-object v1, p0, Lcom/android/settings/SettingsPreferenceFragment$SettingsDialogFragment;->mParentFragment:Landroid/app/Fragment;
+    iput-object v1, p0, Lcom/android/settings_ext/SettingsPreferenceFragment$SettingsDialogFragment;->mParentFragment:Landroid/app/Fragment;
 
     .line 434
     :cond_0
-    iget-object v1, p0, Lcom/android/settings/SettingsPreferenceFragment$SettingsDialogFragment;->mParentFragment:Landroid/app/Fragment;
+    iget-object v1, p0, Lcom/android/settings_ext/SettingsPreferenceFragment$SettingsDialogFragment;->mParentFragment:Landroid/app/Fragment;
 
-    instance-of v1, v1, Lcom/android/settings/DialogCreatable;
+    instance-of v1, v1, Lcom/android/settings_ext/DialogCreatable;
 
     if-nez v1, :cond_2
 
@@ -209,11 +209,11 @@
 
     invoke-direct {v3}, Ljava/lang/StringBuilder;-><init>()V
 
-    iget-object v1, p0, Lcom/android/settings/SettingsPreferenceFragment$SettingsDialogFragment;->mParentFragment:Landroid/app/Fragment;
+    iget-object v1, p0, Lcom/android/settings_ext/SettingsPreferenceFragment$SettingsDialogFragment;->mParentFragment:Landroid/app/Fragment;
 
     if-eqz v1, :cond_1
 
-    iget-object v1, p0, Lcom/android/settings/SettingsPreferenceFragment$SettingsDialogFragment;->mParentFragment:Landroid/app/Fragment;
+    iget-object v1, p0, Lcom/android/settings_ext/SettingsPreferenceFragment$SettingsDialogFragment;->mParentFragment:Landroid/app/Fragment;
 
     invoke-virtual {v1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
@@ -234,7 +234,7 @@
 
     move-result-object v1
 
-    const-class v3, Lcom/android/settings/DialogCreatable;
+    const-class v3, Lcom/android/settings_ext/DialogCreatable;
 
     invoke-virtual {v3}, Ljava/lang/Class;->getName()Ljava/lang/String;
 
@@ -261,30 +261,30 @@
 
     .line 443
     :cond_2
-    iget-object v1, p0, Lcom/android/settings/SettingsPreferenceFragment$SettingsDialogFragment;->mParentFragment:Landroid/app/Fragment;
+    iget-object v1, p0, Lcom/android/settings_ext/SettingsPreferenceFragment$SettingsDialogFragment;->mParentFragment:Landroid/app/Fragment;
 
-    instance-of v1, v1, Lcom/android/settings/SettingsPreferenceFragment;
+    instance-of v1, v1, Lcom/android/settings_ext/SettingsPreferenceFragment;
 
     if-eqz v1, :cond_3
 
     .line 445
-    iget-object v1, p0, Lcom/android/settings/SettingsPreferenceFragment$SettingsDialogFragment;->mParentFragment:Landroid/app/Fragment;
+    iget-object v1, p0, Lcom/android/settings_ext/SettingsPreferenceFragment$SettingsDialogFragment;->mParentFragment:Landroid/app/Fragment;
 
-    check-cast v1, Lcom/android/settings/SettingsPreferenceFragment;
+    check-cast v1, Lcom/android/settings_ext/SettingsPreferenceFragment;
 
-    # setter for: Lcom/android/settings/SettingsPreferenceFragment;->mDialogFragment:Lcom/android/settings/SettingsPreferenceFragment$SettingsDialogFragment;
-    invoke-static {v1, p0}, Lcom/android/settings/SettingsPreferenceFragment;->access$202(Lcom/android/settings/SettingsPreferenceFragment;Lcom/android/settings/SettingsPreferenceFragment$SettingsDialogFragment;)Lcom/android/settings/SettingsPreferenceFragment$SettingsDialogFragment;
+    # setter for: Lcom/android/settings_ext/SettingsPreferenceFragment;->mDialogFragment:Lcom/android/settings_ext/SettingsPreferenceFragment$SettingsDialogFragment;
+    invoke-static {v1, p0}, Lcom/android/settings_ext/SettingsPreferenceFragment;->access$202(Lcom/android/settings_ext/SettingsPreferenceFragment;Lcom/android/settings_ext/SettingsPreferenceFragment$SettingsDialogFragment;)Lcom/android/settings_ext/SettingsPreferenceFragment$SettingsDialogFragment;
 
     .line 448
     .end local v0    # "mParentFragmentId":I
     :cond_3
-    iget-object v1, p0, Lcom/android/settings/SettingsPreferenceFragment$SettingsDialogFragment;->mParentFragment:Landroid/app/Fragment;
+    iget-object v1, p0, Lcom/android/settings_ext/SettingsPreferenceFragment$SettingsDialogFragment;->mParentFragment:Landroid/app/Fragment;
 
-    check-cast v1, Lcom/android/settings/DialogCreatable;
+    check-cast v1, Lcom/android/settings_ext/DialogCreatable;
 
-    iget v2, p0, Lcom/android/settings/SettingsPreferenceFragment$SettingsDialogFragment;->mDialogId:I
+    iget v2, p0, Lcom/android/settings_ext/SettingsPreferenceFragment$SettingsDialogFragment;->mDialogId:I
 
-    invoke-interface {v1, v2}, Lcom/android/settings/DialogCreatable;->onCreateDialog(I)Landroid/app/Dialog;
+    invoke-interface {v1, v2}, Lcom/android/settings_ext/DialogCreatable;->onCreateDialog(I)Landroid/app/Dialog;
 
     move-result-object v1
 
@@ -299,33 +299,33 @@
     invoke-super {p0}, Landroid/app/DialogFragment;->onDetach()V
 
     .line 476
-    iget-object v0, p0, Lcom/android/settings/SettingsPreferenceFragment$SettingsDialogFragment;->mParentFragment:Landroid/app/Fragment;
+    iget-object v0, p0, Lcom/android/settings_ext/SettingsPreferenceFragment$SettingsDialogFragment;->mParentFragment:Landroid/app/Fragment;
 
-    instance-of v0, v0, Lcom/android/settings/SettingsPreferenceFragment;
+    instance-of v0, v0, Lcom/android/settings_ext/SettingsPreferenceFragment;
 
     if-eqz v0, :cond_0
 
     .line 478
-    iget-object v0, p0, Lcom/android/settings/SettingsPreferenceFragment$SettingsDialogFragment;->mParentFragment:Landroid/app/Fragment;
+    iget-object v0, p0, Lcom/android/settings_ext/SettingsPreferenceFragment$SettingsDialogFragment;->mParentFragment:Landroid/app/Fragment;
 
-    check-cast v0, Lcom/android/settings/SettingsPreferenceFragment;
+    check-cast v0, Lcom/android/settings_ext/SettingsPreferenceFragment;
 
-    # getter for: Lcom/android/settings/SettingsPreferenceFragment;->mDialogFragment:Lcom/android/settings/SettingsPreferenceFragment$SettingsDialogFragment;
-    invoke-static {v0}, Lcom/android/settings/SettingsPreferenceFragment;->access$200(Lcom/android/settings/SettingsPreferenceFragment;)Lcom/android/settings/SettingsPreferenceFragment$SettingsDialogFragment;
+    # getter for: Lcom/android/settings_ext/SettingsPreferenceFragment;->mDialogFragment:Lcom/android/settings_ext/SettingsPreferenceFragment$SettingsDialogFragment;
+    invoke-static {v0}, Lcom/android/settings_ext/SettingsPreferenceFragment;->access$200(Lcom/android/settings_ext/SettingsPreferenceFragment;)Lcom/android/settings_ext/SettingsPreferenceFragment$SettingsDialogFragment;
 
     move-result-object v0
 
     if-ne v0, p0, :cond_0
 
     .line 479
-    iget-object v0, p0, Lcom/android/settings/SettingsPreferenceFragment$SettingsDialogFragment;->mParentFragment:Landroid/app/Fragment;
+    iget-object v0, p0, Lcom/android/settings_ext/SettingsPreferenceFragment$SettingsDialogFragment;->mParentFragment:Landroid/app/Fragment;
 
-    check-cast v0, Lcom/android/settings/SettingsPreferenceFragment;
+    check-cast v0, Lcom/android/settings_ext/SettingsPreferenceFragment;
 
     const/4 v1, 0x0
 
-    # setter for: Lcom/android/settings/SettingsPreferenceFragment;->mDialogFragment:Lcom/android/settings/SettingsPreferenceFragment$SettingsDialogFragment;
-    invoke-static {v0, v1}, Lcom/android/settings/SettingsPreferenceFragment;->access$202(Lcom/android/settings/SettingsPreferenceFragment;Lcom/android/settings/SettingsPreferenceFragment$SettingsDialogFragment;)Lcom/android/settings/SettingsPreferenceFragment$SettingsDialogFragment;
+    # setter for: Lcom/android/settings_ext/SettingsPreferenceFragment;->mDialogFragment:Lcom/android/settings_ext/SettingsPreferenceFragment$SettingsDialogFragment;
+    invoke-static {v0, v1}, Lcom/android/settings_ext/SettingsPreferenceFragment;->access$202(Lcom/android/settings_ext/SettingsPreferenceFragment;Lcom/android/settings_ext/SettingsPreferenceFragment$SettingsDialogFragment;)Lcom/android/settings_ext/SettingsPreferenceFragment$SettingsDialogFragment;
 
     .line 482
     :cond_0
@@ -341,12 +341,12 @@
     invoke-super {p0, p1}, Landroid/app/DialogFragment;->onDismiss(Landroid/content/DialogInterface;)V
 
     .line 462
-    iget-object v0, p0, Lcom/android/settings/SettingsPreferenceFragment$SettingsDialogFragment;->mOnDismissListener:Landroid/content/DialogInterface$OnDismissListener;
+    iget-object v0, p0, Lcom/android/settings_ext/SettingsPreferenceFragment$SettingsDialogFragment;->mOnDismissListener:Landroid/content/DialogInterface$OnDismissListener;
 
     if-eqz v0, :cond_0
 
     .line 463
-    iget-object v0, p0, Lcom/android/settings/SettingsPreferenceFragment$SettingsDialogFragment;->mOnDismissListener:Landroid/content/DialogInterface$OnDismissListener;
+    iget-object v0, p0, Lcom/android/settings_ext/SettingsPreferenceFragment$SettingsDialogFragment;->mOnDismissListener:Landroid/content/DialogInterface$OnDismissListener;
 
     invoke-interface {v0, p1}, Landroid/content/DialogInterface$OnDismissListener;->onDismiss(Landroid/content/DialogInterface;)V
 
@@ -364,21 +364,21 @@
     invoke-super {p0, p1}, Landroid/app/DialogFragment;->onSaveInstanceState(Landroid/os/Bundle;)V
 
     .line 410
-    iget-object v0, p0, Lcom/android/settings/SettingsPreferenceFragment$SettingsDialogFragment;->mParentFragment:Landroid/app/Fragment;
+    iget-object v0, p0, Lcom/android/settings_ext/SettingsPreferenceFragment$SettingsDialogFragment;->mParentFragment:Landroid/app/Fragment;
 
     if-eqz v0, :cond_0
 
     .line 411
     const-string v0, "key_dialog_id"
 
-    iget v1, p0, Lcom/android/settings/SettingsPreferenceFragment$SettingsDialogFragment;->mDialogId:I
+    iget v1, p0, Lcom/android/settings_ext/SettingsPreferenceFragment$SettingsDialogFragment;->mDialogId:I
 
     invoke-virtual {p1, v0, v1}, Landroid/os/Bundle;->putInt(Ljava/lang/String;I)V
 
     .line 412
     const-string v0, "key_parent_fragment_id"
 
-    iget-object v1, p0, Lcom/android/settings/SettingsPreferenceFragment$SettingsDialogFragment;->mParentFragment:Landroid/app/Fragment;
+    iget-object v1, p0, Lcom/android/settings_ext/SettingsPreferenceFragment$SettingsDialogFragment;->mParentFragment:Landroid/app/Fragment;
 
     invoke-virtual {v1}, Landroid/app/Fragment;->getId()I
 
@@ -399,22 +399,22 @@
     invoke-super {p0}, Landroid/app/DialogFragment;->onStart()V
 
     .line 420
-    iget-object v0, p0, Lcom/android/settings/SettingsPreferenceFragment$SettingsDialogFragment;->mParentFragment:Landroid/app/Fragment;
+    iget-object v0, p0, Lcom/android/settings_ext/SettingsPreferenceFragment$SettingsDialogFragment;->mParentFragment:Landroid/app/Fragment;
 
     if-eqz v0, :cond_0
 
-    iget-object v0, p0, Lcom/android/settings/SettingsPreferenceFragment$SettingsDialogFragment;->mParentFragment:Landroid/app/Fragment;
+    iget-object v0, p0, Lcom/android/settings_ext/SettingsPreferenceFragment$SettingsDialogFragment;->mParentFragment:Landroid/app/Fragment;
 
-    instance-of v0, v0, Lcom/android/settings/SettingsPreferenceFragment;
+    instance-of v0, v0, Lcom/android/settings_ext/SettingsPreferenceFragment;
 
     if-eqz v0, :cond_0
 
     .line 421
-    iget-object v0, p0, Lcom/android/settings/SettingsPreferenceFragment$SettingsDialogFragment;->mParentFragment:Landroid/app/Fragment;
+    iget-object v0, p0, Lcom/android/settings_ext/SettingsPreferenceFragment$SettingsDialogFragment;->mParentFragment:Landroid/app/Fragment;
 
-    check-cast v0, Lcom/android/settings/SettingsPreferenceFragment;
+    check-cast v0, Lcom/android/settings_ext/SettingsPreferenceFragment;
 
-    invoke-virtual {v0}, Lcom/android/settings/SettingsPreferenceFragment;->onDialogShowing()V
+    invoke-virtual {v0}, Lcom/android/settings_ext/SettingsPreferenceFragment;->onDialogShowing()V
 
     .line 423
     :cond_0

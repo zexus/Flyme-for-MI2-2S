@@ -1,4 +1,4 @@
-.class public Lcom/android/settings/nfc/PaymentBackend;
+.class public Lcom/android/settings_ext/nfc/PaymentBackend;
 .super Ljava/lang/Object;
 .source "PaymentBackend.java"
 
@@ -6,7 +6,7 @@
 # annotations
 .annotation system Ldalvik/annotation/MemberClasses;
     value = {
-        Lcom/android/settings/nfc/PaymentBackend$PaymentAppInfo;
+        Lcom/android/settings_ext/nfc/PaymentBackend$PaymentAppInfo;
     }
 .end annotation
 
@@ -29,23 +29,23 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 47
-    iput-object p1, p0, Lcom/android/settings/nfc/PaymentBackend;->mContext:Landroid/content/Context;
+    iput-object p1, p0, Lcom/android/settings_ext/nfc/PaymentBackend;->mContext:Landroid/content/Context;
 
     .line 49
     invoke-static {p1}, Landroid/nfc/NfcAdapter;->getDefaultAdapter(Landroid/content/Context;)Landroid/nfc/NfcAdapter;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/nfc/PaymentBackend;->mAdapter:Landroid/nfc/NfcAdapter;
+    iput-object v0, p0, Lcom/android/settings_ext/nfc/PaymentBackend;->mAdapter:Landroid/nfc/NfcAdapter;
 
     .line 50
-    iget-object v0, p0, Lcom/android/settings/nfc/PaymentBackend;->mAdapter:Landroid/nfc/NfcAdapter;
+    iget-object v0, p0, Lcom/android/settings_ext/nfc/PaymentBackend;->mAdapter:Landroid/nfc/NfcAdapter;
 
     invoke-static {v0}, Landroid/nfc/cardemulation/CardEmulation;->getInstance(Landroid/nfc/NfcAdapter;)Landroid/nfc/cardemulation/CardEmulation;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/nfc/PaymentBackend;->mCardEmuManager:Landroid/nfc/cardemulation/CardEmulation;
+    iput-object v0, p0, Lcom/android/settings_ext/nfc/PaymentBackend;->mCardEmuManager:Landroid/nfc/cardemulation/CardEmulation;
 
     .line 51
     return-void
@@ -58,7 +58,7 @@
 
     .prologue
     .line 93
-    iget-object v1, p0, Lcom/android/settings/nfc/PaymentBackend;->mContext:Landroid/content/Context;
+    iget-object v1, p0, Lcom/android/settings_ext/nfc/PaymentBackend;->mContext:Landroid/content/Context;
 
     invoke-virtual {v1}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
 
@@ -96,14 +96,14 @@
             "()",
             "Ljava/util/List",
             "<",
-            "Lcom/android/settings/nfc/PaymentBackend$PaymentAppInfo;",
+            "Lcom/android/settings_ext/nfc/PaymentBackend$PaymentAppInfo;",
             ">;"
         }
     .end annotation
 
     .prologue
     .line 54
-    iget-object v7, p0, Lcom/android/settings/nfc/PaymentBackend;->mContext:Landroid/content/Context;
+    iget-object v7, p0, Lcom/android/settings_ext/nfc/PaymentBackend;->mContext:Landroid/content/Context;
 
     invoke-virtual {v7}, Landroid/content/Context;->getPackageManager()Landroid/content/pm/PackageManager;
 
@@ -111,7 +111,7 @@
 
     .line 55
     .local v4, "pm":Landroid/content/pm/PackageManager;
-    iget-object v7, p0, Lcom/android/settings/nfc/PaymentBackend;->mCardEmuManager:Landroid/nfc/cardemulation/CardEmulation;
+    iget-object v7, p0, Lcom/android/settings_ext/nfc/PaymentBackend;->mCardEmuManager:Landroid/nfc/cardemulation/CardEmulation;
 
     const-string v8, "payment"
 
@@ -126,7 +126,7 @@
     invoke-direct {v1}, Ljava/util/ArrayList;-><init>()V
 
     .line 59
-    .local v1, "appInfos":Ljava/util/List;, "Ljava/util/List<Lcom/android/settings/nfc/PaymentBackend$PaymentAppInfo;>;"
+    .local v1, "appInfos":Ljava/util/List;, "Ljava/util/List<Lcom/android/settings_ext/nfc/PaymentBackend$PaymentAppInfo;>;"
     if-nez v6, :cond_1
 
     .line 75
@@ -135,7 +135,7 @@
 
     .line 61
     :cond_1
-    invoke-virtual {p0}, Lcom/android/settings/nfc/PaymentBackend;->getDefaultPaymentApp()Landroid/content/ComponentName;
+    invoke-virtual {p0}, Lcom/android/settings_ext/nfc/PaymentBackend;->getDefaultPaymentApp()Landroid/content/ComponentName;
 
     move-result-object v2
 
@@ -161,27 +161,27 @@
 
     .line 64
     .local v5, "service":Landroid/nfc/cardemulation/ApduServiceInfo;
-    new-instance v0, Lcom/android/settings/nfc/PaymentBackend$PaymentAppInfo;
+    new-instance v0, Lcom/android/settings_ext/nfc/PaymentBackend$PaymentAppInfo;
 
-    invoke-direct {v0}, Lcom/android/settings/nfc/PaymentBackend$PaymentAppInfo;-><init>()V
+    invoke-direct {v0}, Lcom/android/settings_ext/nfc/PaymentBackend$PaymentAppInfo;-><init>()V
 
     .line 65
-    .local v0, "appInfo":Lcom/android/settings/nfc/PaymentBackend$PaymentAppInfo;
+    .local v0, "appInfo":Lcom/android/settings_ext/nfc/PaymentBackend$PaymentAppInfo;
     invoke-virtual {v5, v4}, Landroid/nfc/cardemulation/ApduServiceInfo;->loadBanner(Landroid/content/pm/PackageManager;)Landroid/graphics/drawable/Drawable;
 
     move-result-object v7
 
-    iput-object v7, v0, Lcom/android/settings/nfc/PaymentBackend$PaymentAppInfo;->banner:Landroid/graphics/drawable/Drawable;
+    iput-object v7, v0, Lcom/android/settings_ext/nfc/PaymentBackend$PaymentAppInfo;->banner:Landroid/graphics/drawable/Drawable;
 
     .line 66
     invoke-virtual {v5}, Landroid/nfc/cardemulation/ApduServiceInfo;->getDescription()Ljava/lang/String;
 
     move-result-object v7
 
-    iput-object v7, v0, Lcom/android/settings/nfc/PaymentBackend$PaymentAppInfo;->caption:Ljava/lang/CharSequence;
+    iput-object v7, v0, Lcom/android/settings_ext/nfc/PaymentBackend$PaymentAppInfo;->caption:Ljava/lang/CharSequence;
 
     .line 67
-    iget-object v7, v0, Lcom/android/settings/nfc/PaymentBackend$PaymentAppInfo;->caption:Ljava/lang/CharSequence;
+    iget-object v7, v0, Lcom/android/settings_ext/nfc/PaymentBackend$PaymentAppInfo;->caption:Ljava/lang/CharSequence;
 
     if-nez v7, :cond_2
 
@@ -190,7 +190,7 @@
 
     move-result-object v7
 
-    iput-object v7, v0, Lcom/android/settings/nfc/PaymentBackend$PaymentAppInfo;->caption:Ljava/lang/CharSequence;
+    iput-object v7, v0, Lcom/android/settings_ext/nfc/PaymentBackend$PaymentAppInfo;->caption:Ljava/lang/CharSequence;
 
     .line 70
     :cond_2
@@ -202,14 +202,14 @@
 
     move-result v7
 
-    iput-boolean v7, v0, Lcom/android/settings/nfc/PaymentBackend$PaymentAppInfo;->isDefault:Z
+    iput-boolean v7, v0, Lcom/android/settings_ext/nfc/PaymentBackend$PaymentAppInfo;->isDefault:Z
 
     .line 71
     invoke-virtual {v5}, Landroid/nfc/cardemulation/ApduServiceInfo;->getComponent()Landroid/content/ComponentName;
 
     move-result-object v7
 
-    iput-object v7, v0, Lcom/android/settings/nfc/PaymentBackend$PaymentAppInfo;->componentName:Landroid/content/ComponentName;
+    iput-object v7, v0, Lcom/android/settings_ext/nfc/PaymentBackend$PaymentAppInfo;->componentName:Landroid/content/ComponentName;
 
     .line 72
     invoke-interface {v1, v0}, Ljava/util/List;->add(Ljava/lang/Object;)Z
@@ -225,7 +225,7 @@
 
     .line 80
     :try_start_0
-    iget-object v2, p0, Lcom/android/settings/nfc/PaymentBackend;->mContext:Landroid/content/Context;
+    iget-object v2, p0, Lcom/android/settings_ext/nfc/PaymentBackend;->mContext:Landroid/content/Context;
 
     invoke-virtual {v2}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
 
@@ -263,7 +263,7 @@
 
     .prologue
     .line 103
-    iget-object v0, p0, Lcom/android/settings/nfc/PaymentBackend;->mContext:Landroid/content/Context;
+    iget-object v0, p0, Lcom/android/settings_ext/nfc/PaymentBackend;->mContext:Landroid/content/Context;
 
     invoke-virtual {v0}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
 
@@ -296,7 +296,7 @@
 
     .prologue
     .line 88
-    iget-object v0, p0, Lcom/android/settings/nfc/PaymentBackend;->mContext:Landroid/content/Context;
+    iget-object v0, p0, Lcom/android/settings_ext/nfc/PaymentBackend;->mContext:Landroid/content/Context;
 
     invoke-virtual {v0}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
 

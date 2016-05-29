@@ -1,11 +1,11 @@
-.class Lcom/android/settings/deviceinfo/MSimSubscriptionStatus$1;
+.class Lcom/android/settings_ext/deviceinfo/MSimSubscriptionStatus$1;
 .super Landroid/content/BroadcastReceiver;
 .source "MSimSubscriptionStatus.java"
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/android/settings/deviceinfo/MSimSubscriptionStatus;
+    value = Lcom/android/settings_ext/deviceinfo/MSimSubscriptionStatus;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -15,16 +15,16 @@
 
 
 # instance fields
-.field final synthetic this$0:Lcom/android/settings/deviceinfo/MSimSubscriptionStatus;
+.field final synthetic this$0:Lcom/android/settings_ext/deviceinfo/MSimSubscriptionStatus;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/deviceinfo/MSimSubscriptionStatus;)V
+.method constructor <init>(Lcom/android/settings_ext/deviceinfo/MSimSubscriptionStatus;)V
     .locals 0
 
     .prologue
     .line 124
-    iput-object p1, p0, Lcom/android/settings/deviceinfo/MSimSubscriptionStatus$1;->this$0:Lcom/android/settings/deviceinfo/MSimSubscriptionStatus;
+    iput-object p1, p0, Lcom/android/settings_ext/deviceinfo/MSimSubscriptionStatus$1;->this$0:Lcom/android/settings_ext/deviceinfo/MSimSubscriptionStatus;
 
     invoke-direct {p0}, Landroid/content/BroadcastReceiver;-><init>()V
 
@@ -99,10 +99,10 @@
 
     .line 136
     .local v3, "latestAreaInfo":Ljava/lang/String;
-    iget-object v4, p0, Lcom/android/settings/deviceinfo/MSimSubscriptionStatus$1;->this$0:Lcom/android/settings/deviceinfo/MSimSubscriptionStatus;
+    iget-object v4, p0, Lcom/android/settings_ext/deviceinfo/MSimSubscriptionStatus$1;->this$0:Lcom/android/settings_ext/deviceinfo/MSimSubscriptionStatus;
 
-    # invokes: Lcom/android/settings/deviceinfo/MSimSubscriptionStatus;->updateAreaInfo(Ljava/lang/String;)V
-    invoke-static {v4, v3}, Lcom/android/settings/deviceinfo/MSimSubscriptionStatus;->access$000(Lcom/android/settings/deviceinfo/MSimSubscriptionStatus;Ljava/lang/String;)V
+    # invokes: Lcom/android/settings_ext/deviceinfo/MSimSubscriptionStatus;->updateAreaInfo(Ljava/lang/String;)V
+    invoke-static {v4, v3}, Lcom/android/settings_ext/deviceinfo/MSimSubscriptionStatus;->access$000(Lcom/android/settings_ext/deviceinfo/MSimSubscriptionStatus;Ljava/lang/String;)V
 
     goto :goto_0
 .end method

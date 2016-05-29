@@ -1,4 +1,4 @@
-.class Lcom/android/settings/AppWidgetLoader$1;
+.class Lcom/android/settings_ext/AppWidgetLoader$1;
 .super Ljava/lang/Object;
 .source "AppWidgetLoader.java"
 
@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/android/settings/AppWidgetLoader;->getItems(Landroid/content/Intent;)Ljava/util/List;
+    value = Lcom/android/settings_ext/AppWidgetLoader;->getItems(Landroid/content/Intent;)Ljava/util/List;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -28,17 +28,17 @@
 # instance fields
 .field mCollator:Ljava/text/Collator;
 
-.field final synthetic this$0:Lcom/android/settings/AppWidgetLoader;
+.field final synthetic this$0:Lcom/android/settings_ext/AppWidgetLoader;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/AppWidgetLoader;)V
+.method constructor <init>(Lcom/android/settings_ext/AppWidgetLoader;)V
     .locals 1
 
     .prologue
     .line 160
-    .local p0, "this":Lcom/android/settings/AppWidgetLoader$1;, "Lcom/android/settings/AppWidgetLoader.1;"
-    iput-object p1, p0, Lcom/android/settings/AppWidgetLoader$1;->this$0:Lcom/android/settings/AppWidgetLoader;
+    .local p0, "this":Lcom/android/settings_ext/AppWidgetLoader$1;, "Lcom/android/settings_ext/AppWidgetLoader.1;"
+    iput-object p1, p0, Lcom/android/settings_ext/AppWidgetLoader$1;->this$0:Lcom/android/settings_ext/AppWidgetLoader;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -47,14 +47,14 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/AppWidgetLoader$1;->mCollator:Ljava/text/Collator;
+    iput-object v0, p0, Lcom/android/settings_ext/AppWidgetLoader$1;->mCollator:Ljava/text/Collator;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public compare(Lcom/android/settings/AppWidgetLoader$LabelledItem;Lcom/android/settings/AppWidgetLoader$LabelledItem;)I
+.method public compare(Lcom/android/settings_ext/AppWidgetLoader$LabelledItem;Lcom/android/settings_ext/AppWidgetLoader$LabelledItem;)I
     .locals 3
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -64,16 +64,16 @@
 
     .prologue
     .line 164
-    .local p0, "this":Lcom/android/settings/AppWidgetLoader$1;, "Lcom/android/settings/AppWidgetLoader.1;"
-    .local p1, "lhs":Lcom/android/settings/AppWidgetLoader$LabelledItem;, "TItem;"
-    .local p2, "rhs":Lcom/android/settings/AppWidgetLoader$LabelledItem;, "TItem;"
-    iget-object v0, p0, Lcom/android/settings/AppWidgetLoader$1;->mCollator:Ljava/text/Collator;
+    .local p0, "this":Lcom/android/settings_ext/AppWidgetLoader$1;, "Lcom/android/settings_ext/AppWidgetLoader.1;"
+    .local p1, "lhs":Lcom/android/settings_ext/AppWidgetLoader$LabelledItem;, "TItem;"
+    .local p2, "rhs":Lcom/android/settings_ext/AppWidgetLoader$LabelledItem;, "TItem;"
+    iget-object v0, p0, Lcom/android/settings_ext/AppWidgetLoader$1;->mCollator:Ljava/text/Collator;
 
-    invoke-interface {p1}, Lcom/android/settings/AppWidgetLoader$LabelledItem;->getLabel()Ljava/lang/CharSequence;
+    invoke-interface {p1}, Lcom/android/settings_ext/AppWidgetLoader$LabelledItem;->getLabel()Ljava/lang/CharSequence;
 
     move-result-object v1
 
-    invoke-interface {p2}, Lcom/android/settings/AppWidgetLoader$LabelledItem;->getLabel()Ljava/lang/CharSequence;
+    invoke-interface {p2}, Lcom/android/settings_ext/AppWidgetLoader$LabelledItem;->getLabel()Ljava/lang/CharSequence;
 
     move-result-object v2
 
@@ -91,14 +91,14 @@
 
     .prologue
     .line 160
-    .local p0, "this":Lcom/android/settings/AppWidgetLoader$1;, "Lcom/android/settings/AppWidgetLoader.1;"
-    check-cast p1, Lcom/android/settings/AppWidgetLoader$LabelledItem;
+    .local p0, "this":Lcom/android/settings_ext/AppWidgetLoader$1;, "Lcom/android/settings_ext/AppWidgetLoader.1;"
+    check-cast p1, Lcom/android/settings_ext/AppWidgetLoader$LabelledItem;
 
     .end local p1    # "x0":Ljava/lang/Object;
-    check-cast p2, Lcom/android/settings/AppWidgetLoader$LabelledItem;
+    check-cast p2, Lcom/android/settings_ext/AppWidgetLoader$LabelledItem;
 
     .end local p2    # "x1":Ljava/lang/Object;
-    invoke-virtual {p0, p1, p2}, Lcom/android/settings/AppWidgetLoader$1;->compare(Lcom/android/settings/AppWidgetLoader$LabelledItem;Lcom/android/settings/AppWidgetLoader$LabelledItem;)I
+    invoke-virtual {p0, p1, p2}, Lcom/android/settings_ext/AppWidgetLoader$1;->compare(Lcom/android/settings_ext/AppWidgetLoader$LabelledItem;Lcom/android/settings_ext/AppWidgetLoader$LabelledItem;)I
 
     move-result v0
 

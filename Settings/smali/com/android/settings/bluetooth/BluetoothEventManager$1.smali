@@ -1,11 +1,11 @@
-.class Lcom/android/settings/bluetooth/BluetoothEventManager$1;
+.class Lcom/android/settings_ext/bluetooth/BluetoothEventManager$1;
 .super Landroid/content/BroadcastReceiver;
 .source "BluetoothEventManager.java"
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/android/settings/bluetooth/BluetoothEventManager;
+    value = Lcom/android/settings_ext/bluetooth/BluetoothEventManager;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -15,16 +15,16 @@
 
 
 # instance fields
-.field final synthetic this$0:Lcom/android/settings/bluetooth/BluetoothEventManager;
+.field final synthetic this$0:Lcom/android/settings_ext/bluetooth/BluetoothEventManager;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/bluetooth/BluetoothEventManager;)V
+.method constructor <init>(Lcom/android/settings_ext/bluetooth/BluetoothEventManager;)V
     .locals 0
 
     .prologue
     .line 141
-    iput-object p1, p0, Lcom/android/settings/bluetooth/BluetoothEventManager$1;->this$0:Lcom/android/settings/bluetooth/BluetoothEventManager;
+    iput-object p1, p0, Lcom/android/settings_ext/bluetooth/BluetoothEventManager$1;->this$0:Lcom/android/settings_ext/bluetooth/BluetoothEventManager;
 
     invoke-direct {p0}, Landroid/content/BroadcastReceiver;-><init>()V
 
@@ -56,10 +56,10 @@
 
     .line 148
     .local v1, "device":Landroid/bluetooth/BluetoothDevice;
-    iget-object v3, p0, Lcom/android/settings/bluetooth/BluetoothEventManager$1;->this$0:Lcom/android/settings/bluetooth/BluetoothEventManager;
+    iget-object v3, p0, Lcom/android/settings_ext/bluetooth/BluetoothEventManager$1;->this$0:Lcom/android/settings_ext/bluetooth/BluetoothEventManager;
 
-    # getter for: Lcom/android/settings/bluetooth/BluetoothEventManager;->mHandlerMap:Ljava/util/Map;
-    invoke-static {v3}, Lcom/android/settings/bluetooth/BluetoothEventManager;->access$900(Lcom/android/settings/bluetooth/BluetoothEventManager;)Ljava/util/Map;
+    # getter for: Lcom/android/settings_ext/bluetooth/BluetoothEventManager;->mHandlerMap:Ljava/util/Map;
+    invoke-static {v3}, Lcom/android/settings_ext/bluetooth/BluetoothEventManager;->access$900(Lcom/android/settings_ext/bluetooth/BluetoothEventManager;)Ljava/util/Map;
 
     move-result-object v3
 
@@ -67,14 +67,14 @@
 
     move-result-object v2
 
-    check-cast v2, Lcom/android/settings/bluetooth/BluetoothEventManager$Handler;
+    check-cast v2, Lcom/android/settings_ext/bluetooth/BluetoothEventManager$Handler;
 
     .line 149
-    .local v2, "handler":Lcom/android/settings/bluetooth/BluetoothEventManager$Handler;
+    .local v2, "handler":Lcom/android/settings_ext/bluetooth/BluetoothEventManager$Handler;
     if-eqz v2, :cond_0
 
     .line 150
-    invoke-interface {v2, p1, p2, v1}, Lcom/android/settings/bluetooth/BluetoothEventManager$Handler;->onReceive(Landroid/content/Context;Landroid/content/Intent;Landroid/bluetooth/BluetoothDevice;)V
+    invoke-interface {v2, p1, p2, v1}, Lcom/android/settings_ext/bluetooth/BluetoothEventManager$Handler;->onReceive(Landroid/content/Context;Landroid/content/Intent;Landroid/bluetooth/BluetoothDevice;)V
 
     .line 152
     :cond_0

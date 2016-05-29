@@ -1,4 +1,4 @@
-.class Lcom/android/settings/inputmethod/InputMethodAndLanguageSettings$2;
+.class Lcom/android/settings_ext/inputmethod/InputMethodAndLanguageSettings$2;
 .super Ljava/lang/Object;
 .source "InputMethodAndLanguageSettings.java"
 
@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/android/settings/inputmethod/InputMethodAndLanguageSettings;->updateInputMethodPreferenceViews()V
+    value = Lcom/android/settings_ext/inputmethod/InputMethodAndLanguageSettings;->updateInputMethodPreferenceViews()V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -21,27 +21,27 @@
         "Ljava/lang/Object;",
         "Ljava/util/Comparator",
         "<",
-        "Lcom/android/settings/inputmethod/InputMethodPreference;",
+        "Lcom/android/settings_ext/inputmethod/InputMethodPreference;",
         ">;"
     }
 .end annotation
 
 
 # instance fields
-.field final synthetic this$0:Lcom/android/settings/inputmethod/InputMethodAndLanguageSettings;
+.field final synthetic this$0:Lcom/android/settings_ext/inputmethod/InputMethodAndLanguageSettings;
 
 .field final synthetic val$collator:Ljava/text/Collator;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/inputmethod/InputMethodAndLanguageSettings;Ljava/text/Collator;)V
+.method constructor <init>(Lcom/android/settings_ext/inputmethod/InputMethodAndLanguageSettings;Ljava/text/Collator;)V
     .locals 0
 
     .prologue
     .line 401
-    iput-object p1, p0, Lcom/android/settings/inputmethod/InputMethodAndLanguageSettings$2;->this$0:Lcom/android/settings/inputmethod/InputMethodAndLanguageSettings;
+    iput-object p1, p0, Lcom/android/settings_ext/inputmethod/InputMethodAndLanguageSettings$2;->this$0:Lcom/android/settings_ext/inputmethod/InputMethodAndLanguageSettings;
 
-    iput-object p2, p0, Lcom/android/settings/inputmethod/InputMethodAndLanguageSettings$2;->val$collator:Ljava/text/Collator;
+    iput-object p2, p0, Lcom/android/settings_ext/inputmethod/InputMethodAndLanguageSettings$2;->val$collator:Ljava/text/Collator;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -50,16 +50,16 @@
 
 
 # virtual methods
-.method public compare(Lcom/android/settings/inputmethod/InputMethodPreference;Lcom/android/settings/inputmethod/InputMethodPreference;)I
+.method public compare(Lcom/android/settings_ext/inputmethod/InputMethodPreference;Lcom/android/settings_ext/inputmethod/InputMethodPreference;)I
     .locals 1
-    .param p1, "lhs"    # Lcom/android/settings/inputmethod/InputMethodPreference;
-    .param p2, "rhs"    # Lcom/android/settings/inputmethod/InputMethodPreference;
+    .param p1, "lhs"    # Lcom/android/settings_ext/inputmethod/InputMethodPreference;
+    .param p2, "rhs"    # Lcom/android/settings_ext/inputmethod/InputMethodPreference;
 
     .prologue
     .line 404
-    iget-object v0, p0, Lcom/android/settings/inputmethod/InputMethodAndLanguageSettings$2;->val$collator:Ljava/text/Collator;
+    iget-object v0, p0, Lcom/android/settings_ext/inputmethod/InputMethodAndLanguageSettings$2;->val$collator:Ljava/text/Collator;
 
-    invoke-virtual {p1, p2, v0}, Lcom/android/settings/inputmethod/InputMethodPreference;->compareTo(Lcom/android/settings/inputmethod/InputMethodPreference;Ljava/text/Collator;)I
+    invoke-virtual {p1, p2, v0}, Lcom/android/settings_ext/inputmethod/InputMethodPreference;->compareTo(Lcom/android/settings_ext/inputmethod/InputMethodPreference;Ljava/text/Collator;)I
 
     move-result v0
 
@@ -73,13 +73,13 @@
 
     .prologue
     .line 401
-    check-cast p1, Lcom/android/settings/inputmethod/InputMethodPreference;
+    check-cast p1, Lcom/android/settings_ext/inputmethod/InputMethodPreference;
 
     .end local p1    # "x0":Ljava/lang/Object;
-    check-cast p2, Lcom/android/settings/inputmethod/InputMethodPreference;
+    check-cast p2, Lcom/android/settings_ext/inputmethod/InputMethodPreference;
 
     .end local p2    # "x1":Ljava/lang/Object;
-    invoke-virtual {p0, p1, p2}, Lcom/android/settings/inputmethod/InputMethodAndLanguageSettings$2;->compare(Lcom/android/settings/inputmethod/InputMethodPreference;Lcom/android/settings/inputmethod/InputMethodPreference;)I
+    invoke-virtual {p0, p1, p2}, Lcom/android/settings_ext/inputmethod/InputMethodAndLanguageSettings$2;->compare(Lcom/android/settings_ext/inputmethod/InputMethodPreference;Lcom/android/settings_ext/inputmethod/InputMethodPreference;)I
 
     move-result v0
 

@@ -1,4 +1,4 @@
-.class Lcom/android/settings/dashboard/SearchResultsSummary$1;
+.class Lcom/android/settings_ext/dashboard/SearchResultsSummary$1;
 .super Ljava/lang/Object;
 .source "SearchResultsSummary.java"
 
@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/android/settings/dashboard/SearchResultsSummary;->onCreateView(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;
+    value = Lcom/android/settings_ext/dashboard/SearchResultsSummary;->onCreateView(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -18,16 +18,16 @@
 
 
 # instance fields
-.field final synthetic this$0:Lcom/android/settings/dashboard/SearchResultsSummary;
+.field final synthetic this$0:Lcom/android/settings_ext/dashboard/SearchResultsSummary;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/dashboard/SearchResultsSummary;)V
+.method constructor <init>(Lcom/android/settings_ext/dashboard/SearchResultsSummary;)V
     .locals 0
 
     .prologue
     .line 166
-    iput-object p1, p0, Lcom/android/settings/dashboard/SearchResultsSummary$1;->this$0:Lcom/android/settings/dashboard/SearchResultsSummary;
+    iput-object p1, p0, Lcom/android/settings_ext/dashboard/SearchResultsSummary$1;->this$0:Lcom/android/settings_ext/dashboard/SearchResultsSummary;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -65,15 +65,15 @@
 
     .line 178
     :cond_0
-    iget-object v4, p0, Lcom/android/settings/dashboard/SearchResultsSummary$1;->this$0:Lcom/android/settings/dashboard/SearchResultsSummary;
+    iget-object v4, p0, Lcom/android/settings_ext/dashboard/SearchResultsSummary$1;->this$0:Lcom/android/settings_ext/dashboard/SearchResultsSummary;
 
-    # getter for: Lcom/android/settings/dashboard/SearchResultsSummary;->mResultsAdapter:Lcom/android/settings/dashboard/SearchResultsSummary$SearchResultsAdapter;
-    invoke-static {v4}, Lcom/android/settings/dashboard/SearchResultsSummary;->access$400(Lcom/android/settings/dashboard/SearchResultsSummary;)Lcom/android/settings/dashboard/SearchResultsSummary$SearchResultsAdapter;
+    # getter for: Lcom/android/settings_ext/dashboard/SearchResultsSummary;->mResultsAdapter:Lcom/android/settings_ext/dashboard/SearchResultsSummary$SearchResultsAdapter;
+    invoke-static {v4}, Lcom/android/settings_ext/dashboard/SearchResultsSummary;->access$400(Lcom/android/settings_ext/dashboard/SearchResultsSummary;)Lcom/android/settings_ext/dashboard/SearchResultsSummary$SearchResultsAdapter;
 
     move-result-object v4
 
-    # getter for: Lcom/android/settings/dashboard/SearchResultsSummary$SearchResultsAdapter;->mCursor:Landroid/database/Cursor;
-    invoke-static {v4}, Lcom/android/settings/dashboard/SearchResultsSummary$SearchResultsAdapter;->access$500(Lcom/android/settings/dashboard/SearchResultsSummary$SearchResultsAdapter;)Landroid/database/Cursor;
+    # getter for: Lcom/android/settings_ext/dashboard/SearchResultsSummary$SearchResultsAdapter;->mCursor:Landroid/database/Cursor;
+    invoke-static {v4}, Lcom/android/settings_ext/dashboard/SearchResultsSummary$SearchResultsAdapter;->access$500(Lcom/android/settings_ext/dashboard/SearchResultsSummary$SearchResultsAdapter;)Landroid/database/Cursor;
 
     move-result-object v10
 
@@ -116,17 +116,17 @@
 
     .line 186
     .local v12, "key":Ljava/lang/String;
-    iget-object v4, p0, Lcom/android/settings/dashboard/SearchResultsSummary$1;->this$0:Lcom/android/settings/dashboard/SearchResultsSummary;
+    iget-object v4, p0, Lcom/android/settings_ext/dashboard/SearchResultsSummary$1;->this$0:Lcom/android/settings_ext/dashboard/SearchResultsSummary;
 
-    invoke-virtual {v4}, Lcom/android/settings/dashboard/SearchResultsSummary;->getActivity()Landroid/app/Activity;
+    invoke-virtual {v4}, Lcom/android/settings_ext/dashboard/SearchResultsSummary;->getActivity()Landroid/app/Activity;
 
     move-result-object v1
 
-    check-cast v1, Lcom/android/settings/SettingsActivity;
+    check-cast v1, Lcom/android/settings_ext/SettingsActivity;
 
     .line 187
-    .local v1, "sa":Lcom/android/settings/SettingsActivity;
-    invoke-virtual {v1}, Lcom/android/settings/SettingsActivity;->needToRevertToInitialFragment()V
+    .local v1, "sa":Lcom/android/settings_ext/SettingsActivity;
+    invoke-virtual {v1}, Lcom/android/settings_ext/SettingsActivity;->needToRevertToInitialFragment()V
 
     .line 189
     invoke-static {v8}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
@@ -153,15 +153,15 @@
 
     const/4 v6, -0x1
 
-    invoke-static/range {v1 .. v7}, Lcom/android/settings/Utils;->startWithFragment(Landroid/content/Context;Ljava/lang/String;Landroid/os/Bundle;Landroid/app/Fragment;IILjava/lang/CharSequence;)V
+    invoke-static/range {v1 .. v7}, Lcom/android/settings_ext/Utils;->startWithFragment(Landroid/content/Context;Ljava/lang/String;Landroid/os/Bundle;Landroid/app/Fragment;IILjava/lang/CharSequence;)V
 
     .line 211
     .end local v3    # "args":Landroid/os/Bundle;
     :goto_1
-    iget-object v4, p0, Lcom/android/settings/dashboard/SearchResultsSummary$1;->this$0:Lcom/android/settings/dashboard/SearchResultsSummary;
+    iget-object v4, p0, Lcom/android/settings_ext/dashboard/SearchResultsSummary$1;->this$0:Lcom/android/settings_ext/dashboard/SearchResultsSummary;
 
-    # invokes: Lcom/android/settings/dashboard/SearchResultsSummary;->saveQueryToDatabase()V
-    invoke-static {v4}, Lcom/android/settings/dashboard/SearchResultsSummary;->access$600(Lcom/android/settings/dashboard/SearchResultsSummary;)V
+    # invokes: Lcom/android/settings_ext/dashboard/SearchResultsSummary;->saveQueryToDatabase()V
+    invoke-static {v4}, Lcom/android/settings_ext/dashboard/SearchResultsSummary;->access$600(Lcom/android/settings_ext/dashboard/SearchResultsSummary;)V
 
     goto :goto_0
 
@@ -218,7 +218,7 @@
     invoke-virtual {v11, v4, v12}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
 
     .line 208
-    invoke-virtual {v1, v11}, Lcom/android/settings/SettingsActivity;->startActivity(Landroid/content/Intent;)V
+    invoke-virtual {v1, v11}, Lcom/android/settings_ext/SettingsActivity;->startActivity(Landroid/content/Intent;)V
 
     goto :goto_1
 .end method

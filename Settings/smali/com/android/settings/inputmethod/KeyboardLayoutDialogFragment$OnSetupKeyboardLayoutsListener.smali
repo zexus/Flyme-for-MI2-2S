@@ -1,11 +1,11 @@
-.class public interface abstract Lcom/android/settings/inputmethod/KeyboardLayoutDialogFragment$OnSetupKeyboardLayoutsListener;
+.class public interface abstract Lcom/android/settings_ext/inputmethod/KeyboardLayoutDialogFragment$OnSetupKeyboardLayoutsListener;
 .super Ljava/lang/Object;
 .source "KeyboardLayoutDialogFragment.java"
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/android/settings/inputmethod/KeyboardLayoutDialogFragment;
+    value = Lcom/android/settings_ext/inputmethod/KeyboardLayoutDialogFragment;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;

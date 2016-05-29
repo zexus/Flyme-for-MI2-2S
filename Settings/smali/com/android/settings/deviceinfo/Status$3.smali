@@ -1,11 +1,11 @@
-.class Lcom/android/settings/deviceinfo/Status$3;
+.class Lcom/android/settings_ext/deviceinfo/Status$3;
 .super Landroid/content/BroadcastReceiver;
 .source "Status.java"
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/android/settings/deviceinfo/Status;
+    value = Lcom/android/settings_ext/deviceinfo/Status;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -15,16 +15,16 @@
 
 
 # instance fields
-.field final synthetic this$0:Lcom/android/settings/deviceinfo/Status;
+.field final synthetic this$0:Lcom/android/settings_ext/deviceinfo/Status;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/deviceinfo/Status;)V
+.method constructor <init>(Lcom/android/settings_ext/deviceinfo/Status;)V
     .locals 0
 
     .prologue
     .line 224
-    iput-object p1, p0, Lcom/android/settings/deviceinfo/Status$3;->this$0:Lcom/android/settings/deviceinfo/Status;
+    iput-object p1, p0, Lcom/android/settings_ext/deviceinfo/Status$3;->this$0:Lcom/android/settings_ext/deviceinfo/Status;
 
     invoke-direct {p0}, Landroid/content/BroadcastReceiver;-><init>()V
 
@@ -99,10 +99,10 @@
 
     .line 236
     .local v3, "latestAreaInfo":Ljava/lang/String;
-    iget-object v4, p0, Lcom/android/settings/deviceinfo/Status$3;->this$0:Lcom/android/settings/deviceinfo/Status;
+    iget-object v4, p0, Lcom/android/settings_ext/deviceinfo/Status$3;->this$0:Lcom/android/settings_ext/deviceinfo/Status;
 
-    # invokes: Lcom/android/settings/deviceinfo/Status;->updateAreaInfo(Ljava/lang/String;)V
-    invoke-static {v4, v3}, Lcom/android/settings/deviceinfo/Status;->access$600(Lcom/android/settings/deviceinfo/Status;Ljava/lang/String;)V
+    # invokes: Lcom/android/settings_ext/deviceinfo/Status;->updateAreaInfo(Ljava/lang/String;)V
+    invoke-static {v4, v3}, Lcom/android/settings_ext/deviceinfo/Status;->access$600(Lcom/android/settings_ext/deviceinfo/Status;Ljava/lang/String;)V
 
     goto :goto_0
 .end method

@@ -1,4 +1,4 @@
-.class public Lcom/android/settings/widget/ToggleSwitch;
+.class public Lcom/android/settings_ext/widget/ToggleSwitch;
 .super Landroid/widget/Switch;
 .source "ToggleSwitch.java"
 
@@ -6,13 +6,13 @@
 # annotations
 .annotation system Ldalvik/annotation/MemberClasses;
     value = {
-        Lcom/android/settings/widget/ToggleSwitch$OnBeforeCheckedChangeListener;
+        Lcom/android/settings_ext/widget/ToggleSwitch$OnBeforeCheckedChangeListener;
     }
 .end annotation
 
 
 # instance fields
-.field private mOnBeforeListener:Lcom/android/settings/widget/ToggleSwitch$OnBeforeCheckedChangeListener;
+.field private mOnBeforeListener:Lcom/android/settings_ext/widget/ToggleSwitch$OnBeforeCheckedChangeListener;
 
 
 # direct methods
@@ -78,13 +78,13 @@
 
     .prologue
     .line 53
-    iget-object v0, p0, Lcom/android/settings/widget/ToggleSwitch;->mOnBeforeListener:Lcom/android/settings/widget/ToggleSwitch$OnBeforeCheckedChangeListener;
+    iget-object v0, p0, Lcom/android/settings_ext/widget/ToggleSwitch;->mOnBeforeListener:Lcom/android/settings_ext/widget/ToggleSwitch$OnBeforeCheckedChangeListener;
 
     if-eqz v0, :cond_0
 
-    iget-object v0, p0, Lcom/android/settings/widget/ToggleSwitch;->mOnBeforeListener:Lcom/android/settings/widget/ToggleSwitch$OnBeforeCheckedChangeListener;
+    iget-object v0, p0, Lcom/android/settings_ext/widget/ToggleSwitch;->mOnBeforeListener:Lcom/android/settings_ext/widget/ToggleSwitch$OnBeforeCheckedChangeListener;
 
-    invoke-interface {v0, p0, p1}, Lcom/android/settings/widget/ToggleSwitch$OnBeforeCheckedChangeListener;->onBeforeCheckedChanged(Lcom/android/settings/widget/ToggleSwitch;Z)Z
+    invoke-interface {v0, p0, p1}, Lcom/android/settings_ext/widget/ToggleSwitch$OnBeforeCheckedChangeListener;->onBeforeCheckedChanged(Lcom/android/settings_ext/widget/ToggleSwitch;Z)Z
 
     move-result v0
 
@@ -113,13 +113,13 @@
     return-void
 .end method
 
-.method public setOnBeforeCheckedChangeListener(Lcom/android/settings/widget/ToggleSwitch$OnBeforeCheckedChangeListener;)V
+.method public setOnBeforeCheckedChangeListener(Lcom/android/settings_ext/widget/ToggleSwitch$OnBeforeCheckedChangeListener;)V
     .locals 0
-    .param p1, "listener"    # Lcom/android/settings/widget/ToggleSwitch$OnBeforeCheckedChangeListener;
+    .param p1, "listener"    # Lcom/android/settings_ext/widget/ToggleSwitch$OnBeforeCheckedChangeListener;
 
     .prologue
     .line 48
-    iput-object p1, p0, Lcom/android/settings/widget/ToggleSwitch;->mOnBeforeListener:Lcom/android/settings/widget/ToggleSwitch$OnBeforeCheckedChangeListener;
+    iput-object p1, p0, Lcom/android/settings_ext/widget/ToggleSwitch;->mOnBeforeListener:Lcom/android/settings_ext/widget/ToggleSwitch$OnBeforeCheckedChangeListener;
 
     .line 49
     return-void

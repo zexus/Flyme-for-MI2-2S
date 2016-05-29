@@ -1,11 +1,11 @@
-.class Lcom/android/settings/applications/RunningProcessesView$TimeTicker;
+.class Lcom/android/settings_ext/applications/RunningProcessesView$TimeTicker;
 .super Landroid/widget/TextView;
 .source "RunningProcessesView.java"
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/android/settings/applications/RunningProcessesView;
+    value = Lcom/android/settings_ext/applications/RunningProcessesView;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;

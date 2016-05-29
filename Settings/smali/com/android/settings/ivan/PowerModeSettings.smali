@@ -1,4 +1,4 @@
-.class public Lcom/android/settings/ivan/PowerModeSettings;
+.class public Lcom/android/settings_ext/ivan/PowerModeSettings;
 .super Landroid/app/Activity;
 .source "PowerModeSettings.java"
 
@@ -41,7 +41,7 @@
 
     aput-object v2, v0, v1
 
-    sput-object v0, Lcom/android/settings/ivan/PowerModeSettings;->POWER_MODE_VALUES:[Ljava/lang/String;
+    sput-object v0, Lcom/android/settings_ext/ivan/PowerModeSettings;->POWER_MODE_VALUES:[Ljava/lang/String;
 
     return-void
 .end method
@@ -56,13 +56,13 @@
     return-void
 .end method
 
-.method static synthetic access$000(Lcom/android/settings/ivan/PowerModeSettings;)[Ljava/lang/CharSequence;
+.method static synthetic access$000(Lcom/android/settings_ext/ivan/PowerModeSettings;)[Ljava/lang/CharSequence;
     .locals 1
-    .param p0, "x0"    # Lcom/android/settings/ivan/PowerModeSettings;
+    .param p0, "x0"    # Lcom/android/settings_ext/ivan/PowerModeSettings;
 
     .prologue
     .line 15
-    iget-object v0, p0, Lcom/android/settings/ivan/PowerModeSettings;->mEntryValues:[Ljava/lang/CharSequence;
+    iget-object v0, p0, Lcom/android/settings_ext/ivan/PowerModeSettings;->mEntryValues:[Ljava/lang/CharSequence;
 
     return-object v0
 .end method
@@ -93,17 +93,17 @@
 
     .line 42
     .local v3, "powerMode":Ljava/lang/String;
-    invoke-virtual {p0, v3}, Lcom/android/settings/ivan/PowerModeSettings;->findIndexOfValue(Ljava/lang/String;)I
+    invoke-virtual {p0, v3}, Lcom/android/settings_ext/ivan/PowerModeSettings;->findIndexOfValue(Ljava/lang/String;)I
 
     move-result v1
 
     .line 43
     .local v1, "clickedIndex":I
-    iget-object v4, p0, Lcom/android/settings/ivan/PowerModeSettings;->mEntries:[Ljava/lang/CharSequence;
+    iget-object v4, p0, Lcom/android/settings_ext/ivan/PowerModeSettings;->mEntries:[Ljava/lang/CharSequence;
 
-    new-instance v5, Lcom/android/settings/ivan/PowerModeSettings$1;
+    new-instance v5, Lcom/android/settings_ext/ivan/PowerModeSettings$1;
 
-    invoke-direct {v5, p0}, Lcom/android/settings/ivan/PowerModeSettings$1;-><init>(Lcom/android/settings/ivan/PowerModeSettings;)V
+    invoke-direct {v5, p0}, Lcom/android/settings_ext/ivan/PowerModeSettings$1;-><init>(Lcom/android/settings_ext/ivan/PowerModeSettings;)V
 
     invoke-virtual {v0, v4, v1, v5}, Landroid/app/AlertDialog$Builder;->setSingleChoiceItems([Ljava/lang/CharSequence;ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
@@ -121,9 +121,9 @@
 
     .line 57
     .local v2, "dialog":Landroid/app/Dialog;
-    new-instance v4, Lcom/android/settings/ivan/PowerModeSettings$2;
+    new-instance v4, Lcom/android/settings_ext/ivan/PowerModeSettings$2;
 
-    invoke-direct {v4, p0}, Lcom/android/settings/ivan/PowerModeSettings$2;-><init>(Lcom/android/settings/ivan/PowerModeSettings;)V
+    invoke-direct {v4, p0}, Lcom/android/settings_ext/ivan/PowerModeSettings$2;-><init>(Lcom/android/settings_ext/ivan/PowerModeSettings;)V
 
     invoke-virtual {v2, v4}, Landroid/app/Dialog;->setOnDismissListener(Landroid/content/DialogInterface$OnDismissListener;)V
 
@@ -141,12 +141,12 @@
     .line 66
     if-eqz p1, :cond_1
 
-    iget-object v1, p0, Lcom/android/settings/ivan/PowerModeSettings;->mEntryValues:[Ljava/lang/CharSequence;
+    iget-object v1, p0, Lcom/android/settings_ext/ivan/PowerModeSettings;->mEntryValues:[Ljava/lang/CharSequence;
 
     if-eqz v1, :cond_1
 
     .line 67
-    iget-object v1, p0, Lcom/android/settings/ivan/PowerModeSettings;->mEntryValues:[Ljava/lang/CharSequence;
+    iget-object v1, p0, Lcom/android/settings_ext/ivan/PowerModeSettings;->mEntryValues:[Ljava/lang/CharSequence;
 
     array-length v1, v1
 
@@ -157,7 +157,7 @@
     if-ltz v0, :cond_1
 
     .line 68
-    iget-object v1, p0, Lcom/android/settings/ivan/PowerModeSettings;->mEntryValues:[Ljava/lang/CharSequence;
+    iget-object v1, p0, Lcom/android/settings_ext/ivan/PowerModeSettings;->mEntryValues:[Ljava/lang/CharSequence;
 
     aget-object v1, v1, v0
 
@@ -198,10 +198,10 @@
     .line 30
     const/4 v0, 0x1
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/ivan/PowerModeSettings;->requestWindowFeature(I)Z
+    invoke-virtual {p0, v0}, Lcom/android/settings_ext/ivan/PowerModeSettings;->requestWindowFeature(I)Z
 
     .line 31
-    invoke-virtual {p0}, Lcom/android/settings/ivan/PowerModeSettings;->getWindow()Landroid/view/Window;
+    invoke-virtual {p0}, Lcom/android/settings_ext/ivan/PowerModeSettings;->getWindow()Landroid/view/Window;
 
     move-result-object v0
 
@@ -210,7 +210,7 @@
     invoke-virtual {v0, v1}, Landroid/view/Window;->setBackgroundDrawableResource(I)V
 
     .line 32
-    invoke-virtual {p0}, Lcom/android/settings/ivan/PowerModeSettings;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {p0}, Lcom/android/settings_ext/ivan/PowerModeSettings;->getResources()Landroid/content/res/Resources;
 
     move-result-object v0
 
@@ -220,15 +220,15 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/ivan/PowerModeSettings;->mEntries:[Ljava/lang/CharSequence;
+    iput-object v0, p0, Lcom/android/settings_ext/ivan/PowerModeSettings;->mEntries:[Ljava/lang/CharSequence;
 
     .line 33
-    sget-object v0, Lcom/android/settings/ivan/PowerModeSettings;->POWER_MODE_VALUES:[Ljava/lang/String;
+    sget-object v0, Lcom/android/settings_ext/ivan/PowerModeSettings;->POWER_MODE_VALUES:[Ljava/lang/String;
 
-    iput-object v0, p0, Lcom/android/settings/ivan/PowerModeSettings;->mEntryValues:[Ljava/lang/CharSequence;
+    iput-object v0, p0, Lcom/android/settings_ext/ivan/PowerModeSettings;->mEntryValues:[Ljava/lang/CharSequence;
 
     .line 34
-    invoke-direct {p0}, Lcom/android/settings/ivan/PowerModeSettings;->createPowerModeDialog()V
+    invoke-direct {p0}, Lcom/android/settings_ext/ivan/PowerModeSettings;->createPowerModeDialog()V
 
     .line 35
     return-void

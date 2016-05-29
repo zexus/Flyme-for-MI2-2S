@@ -1,4 +1,4 @@
-.class public Lcom/android/settings/net/ChartData;
+.class public Lcom/android/settings_ext/net/ChartData;
 .super Ljava/lang/Object;
 .source "ChartData.java"
 

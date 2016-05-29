@@ -1,4 +1,4 @@
-.class final Lcom/android/settings/widget/SwitchBar$SavedState$1;
+.class final Lcom/android/settings_ext/widget/SwitchBar$SavedState$1;
 .super Ljava/lang/Object;
 .source "SwitchBar.java"
 
@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/android/settings/widget/SwitchBar$SavedState;
+    value = Lcom/android/settings_ext/widget/SwitchBar$SavedState;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -21,7 +21,7 @@
         "Ljava/lang/Object;",
         "Landroid/os/Parcelable$Creator",
         "<",
-        "Lcom/android/settings/widget/SwitchBar$SavedState;",
+        "Lcom/android/settings_ext/widget/SwitchBar$SavedState;",
         ">;"
     }
 .end annotation
@@ -40,17 +40,17 @@
 
 
 # virtual methods
-.method public createFromParcel(Landroid/os/Parcel;)Lcom/android/settings/widget/SwitchBar$SavedState;
+.method public createFromParcel(Landroid/os/Parcel;)Lcom/android/settings_ext/widget/SwitchBar$SavedState;
     .locals 2
     .param p1, "in"    # Landroid/os/Parcel;
 
     .prologue
     .line 219
-    new-instance v0, Lcom/android/settings/widget/SwitchBar$SavedState;
+    new-instance v0, Lcom/android/settings_ext/widget/SwitchBar$SavedState;
 
     const/4 v1, 0x0
 
-    invoke-direct {v0, p1, v1}, Lcom/android/settings/widget/SwitchBar$SavedState;-><init>(Landroid/os/Parcel;Lcom/android/settings/widget/SwitchBar$1;)V
+    invoke-direct {v0, p1, v1}, Lcom/android/settings_ext/widget/SwitchBar$SavedState;-><init>(Landroid/os/Parcel;Lcom/android/settings_ext/widget/SwitchBar$1;)V
 
     return-object v0
 .end method
@@ -61,20 +61,20 @@
 
     .prologue
     .line 217
-    invoke-virtual {p0, p1}, Lcom/android/settings/widget/SwitchBar$SavedState$1;->createFromParcel(Landroid/os/Parcel;)Lcom/android/settings/widget/SwitchBar$SavedState;
+    invoke-virtual {p0, p1}, Lcom/android/settings_ext/widget/SwitchBar$SavedState$1;->createFromParcel(Landroid/os/Parcel;)Lcom/android/settings_ext/widget/SwitchBar$SavedState;
 
     move-result-object v0
 
     return-object v0
 .end method
 
-.method public newArray(I)[Lcom/android/settings/widget/SwitchBar$SavedState;
+.method public newArray(I)[Lcom/android/settings_ext/widget/SwitchBar$SavedState;
     .locals 1
     .param p1, "size"    # I
 
     .prologue
     .line 223
-    new-array v0, p1, [Lcom/android/settings/widget/SwitchBar$SavedState;
+    new-array v0, p1, [Lcom/android/settings_ext/widget/SwitchBar$SavedState;
 
     return-object v0
 .end method
@@ -85,7 +85,7 @@
 
     .prologue
     .line 217
-    invoke-virtual {p0, p1}, Lcom/android/settings/widget/SwitchBar$SavedState$1;->newArray(I)[Lcom/android/settings/widget/SwitchBar$SavedState;
+    invoke-virtual {p0, p1}, Lcom/android/settings_ext/widget/SwitchBar$SavedState$1;->newArray(I)[Lcom/android/settings_ext/widget/SwitchBar$SavedState;
 
     move-result-object v0
 

@@ -1,11 +1,11 @@
-.class Lcom/android/settings/applications/RunningState$UserState;
+.class Lcom/android/settings_ext/applications/RunningState$UserState;
 .super Ljava/lang/Object;
 .source "RunningState.java"
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/android/settings/applications/RunningState;
+    value = Lcom/android/settings_ext/applications/RunningState;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;

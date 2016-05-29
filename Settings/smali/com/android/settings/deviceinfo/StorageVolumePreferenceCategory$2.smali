@@ -1,14 +1,14 @@
-.class Lcom/android/settings/deviceinfo/StorageVolumePreferenceCategory$2;
+.class Lcom/android/settings_ext/deviceinfo/StorageVolumePreferenceCategory$2;
 .super Ljava/lang/Object;
 .source "StorageVolumePreferenceCategory.java"
 
 # interfaces
-.implements Lcom/android/settings/deviceinfo/StorageMeasurement$MeasurementReceiver;
+.implements Lcom/android/settings_ext/deviceinfo/StorageMeasurement$MeasurementReceiver;
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/android/settings/deviceinfo/StorageVolumePreferenceCategory;
+    value = Lcom/android/settings_ext/deviceinfo/StorageVolumePreferenceCategory;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -18,16 +18,16 @@
 
 
 # instance fields
-.field final synthetic this$0:Lcom/android/settings/deviceinfo/StorageVolumePreferenceCategory;
+.field final synthetic this$0:Lcom/android/settings_ext/deviceinfo/StorageVolumePreferenceCategory;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/deviceinfo/StorageVolumePreferenceCategory;)V
+.method constructor <init>(Lcom/android/settings_ext/deviceinfo/StorageVolumePreferenceCategory;)V
     .locals 0
 
     .prologue
     .line 502
-    iput-object p1, p0, Lcom/android/settings/deviceinfo/StorageVolumePreferenceCategory$2;->this$0:Lcom/android/settings/deviceinfo/StorageVolumePreferenceCategory;
+    iput-object p1, p0, Lcom/android/settings_ext/deviceinfo/StorageVolumePreferenceCategory$2;->this$0:Lcom/android/settings_ext/deviceinfo/StorageVolumePreferenceCategory;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -36,9 +36,9 @@
 
 
 # virtual methods
-.method public updateApproximate(Lcom/android/settings/deviceinfo/StorageMeasurement;JJ)V
+.method public updateApproximate(Lcom/android/settings_ext/deviceinfo/StorageMeasurement;JJ)V
     .locals 4
-    .param p1, "meas"    # Lcom/android/settings/deviceinfo/StorageMeasurement;
+    .param p1, "meas"    # Lcom/android/settings_ext/deviceinfo/StorageMeasurement;
     .param p2, "totalSize"    # J
     .param p4, "availSize"    # J
 
@@ -46,10 +46,10 @@
     const/4 v3, 0x1
 
     .line 505
-    iget-object v0, p0, Lcom/android/settings/deviceinfo/StorageVolumePreferenceCategory$2;->this$0:Lcom/android/settings/deviceinfo/StorageVolumePreferenceCategory;
+    iget-object v0, p0, Lcom/android/settings_ext/deviceinfo/StorageVolumePreferenceCategory$2;->this$0:Lcom/android/settings_ext/deviceinfo/StorageVolumePreferenceCategory;
 
-    # getter for: Lcom/android/settings/deviceinfo/StorageVolumePreferenceCategory;->mUpdateHandler:Landroid/os/Handler;
-    invoke-static {v0}, Lcom/android/settings/deviceinfo/StorageVolumePreferenceCategory;->access$000(Lcom/android/settings/deviceinfo/StorageVolumePreferenceCategory;)Landroid/os/Handler;
+    # getter for: Lcom/android/settings_ext/deviceinfo/StorageVolumePreferenceCategory;->mUpdateHandler:Landroid/os/Handler;
+    invoke-static {v0}, Lcom/android/settings_ext/deviceinfo/StorageVolumePreferenceCategory;->access$000(Lcom/android/settings_ext/deviceinfo/StorageVolumePreferenceCategory;)Landroid/os/Handler;
 
     move-result-object v0
 
@@ -73,17 +73,17 @@
     return-void
 .end method
 
-.method public updateDetails(Lcom/android/settings/deviceinfo/StorageMeasurement;Lcom/android/settings/deviceinfo/StorageMeasurement$MeasurementDetails;)V
+.method public updateDetails(Lcom/android/settings_ext/deviceinfo/StorageMeasurement;Lcom/android/settings_ext/deviceinfo/StorageMeasurement$MeasurementDetails;)V
     .locals 2
-    .param p1, "meas"    # Lcom/android/settings/deviceinfo/StorageMeasurement;
-    .param p2, "details"    # Lcom/android/settings/deviceinfo/StorageMeasurement$MeasurementDetails;
+    .param p1, "meas"    # Lcom/android/settings_ext/deviceinfo/StorageMeasurement;
+    .param p2, "details"    # Lcom/android/settings_ext/deviceinfo/StorageMeasurement$MeasurementDetails;
 
     .prologue
     .line 511
-    iget-object v0, p0, Lcom/android/settings/deviceinfo/StorageVolumePreferenceCategory$2;->this$0:Lcom/android/settings/deviceinfo/StorageVolumePreferenceCategory;
+    iget-object v0, p0, Lcom/android/settings_ext/deviceinfo/StorageVolumePreferenceCategory$2;->this$0:Lcom/android/settings_ext/deviceinfo/StorageVolumePreferenceCategory;
 
-    # getter for: Lcom/android/settings/deviceinfo/StorageVolumePreferenceCategory;->mUpdateHandler:Landroid/os/Handler;
-    invoke-static {v0}, Lcom/android/settings/deviceinfo/StorageVolumePreferenceCategory;->access$000(Lcom/android/settings/deviceinfo/StorageVolumePreferenceCategory;)Landroid/os/Handler;
+    # getter for: Lcom/android/settings_ext/deviceinfo/StorageVolumePreferenceCategory;->mUpdateHandler:Landroid/os/Handler;
+    invoke-static {v0}, Lcom/android/settings_ext/deviceinfo/StorageVolumePreferenceCategory;->access$000(Lcom/android/settings_ext/deviceinfo/StorageVolumePreferenceCategory;)Landroid/os/Handler;
 
     move-result-object v0
 

@@ -1,4 +1,4 @@
-.class Lcom/android/settings/OwnerInfoSettings$1;
+.class Lcom/android/settings_ext/OwnerInfoSettings$1;
 .super Ljava/lang/Object;
 .source "OwnerInfoSettings.java"
 
@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/android/settings/OwnerInfoSettings;->initView()V
+    value = Lcom/android/settings_ext/OwnerInfoSettings;->initView()V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -18,16 +18,16 @@
 
 
 # instance fields
-.field final synthetic this$0:Lcom/android/settings/OwnerInfoSettings;
+.field final synthetic this$0:Lcom/android/settings_ext/OwnerInfoSettings;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/OwnerInfoSettings;)V
+.method constructor <init>(Lcom/android/settings_ext/OwnerInfoSettings;)V
     .locals 0
 
     .prologue
     .line 87
-    iput-object p1, p0, Lcom/android/settings/OwnerInfoSettings$1;->this$0:Lcom/android/settings/OwnerInfoSettings;
+    iput-object p1, p0, Lcom/android/settings_ext/OwnerInfoSettings$1;->this$0:Lcom/android/settings_ext/OwnerInfoSettings;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -43,20 +43,20 @@
 
     .prologue
     .line 89
-    iget-object v0, p0, Lcom/android/settings/OwnerInfoSettings$1;->this$0:Lcom/android/settings/OwnerInfoSettings;
+    iget-object v0, p0, Lcom/android/settings_ext/OwnerInfoSettings$1;->this$0:Lcom/android/settings_ext/OwnerInfoSettings;
 
-    # getter for: Lcom/android/settings/OwnerInfoSettings;->mLockPatternUtils:Lcom/android/internal/widget/LockPatternUtils;
-    invoke-static {v0}, Lcom/android/settings/OwnerInfoSettings;->access$000(Lcom/android/settings/OwnerInfoSettings;)Lcom/android/internal/widget/LockPatternUtils;
+    # getter for: Lcom/android/settings_ext/OwnerInfoSettings;->mLockPatternUtils:Lcom/android/internal/widget/LockPatternUtils;
+    invoke-static {v0}, Lcom/android/settings_ext/OwnerInfoSettings;->access$000(Lcom/android/settings_ext/OwnerInfoSettings;)Lcom/android/internal/widget/LockPatternUtils;
 
     move-result-object v0
 
     invoke-virtual {v0, p2}, Lcom/android/internal/widget/LockPatternUtils;->setOwnerInfoEnabled(Z)V
 
     .line 90
-    iget-object v0, p0, Lcom/android/settings/OwnerInfoSettings$1;->this$0:Lcom/android/settings/OwnerInfoSettings;
+    iget-object v0, p0, Lcom/android/settings_ext/OwnerInfoSettings$1;->this$0:Lcom/android/settings_ext/OwnerInfoSettings;
 
-    # getter for: Lcom/android/settings/OwnerInfoSettings;->mOwnerInfo:Landroid/widget/EditText;
-    invoke-static {v0}, Lcom/android/settings/OwnerInfoSettings;->access$100(Lcom/android/settings/OwnerInfoSettings;)Landroid/widget/EditText;
+    # getter for: Lcom/android/settings_ext/OwnerInfoSettings;->mOwnerInfo:Landroid/widget/EditText;
+    invoke-static {v0}, Lcom/android/settings_ext/OwnerInfoSettings;->access$100(Lcom/android/settings_ext/OwnerInfoSettings;)Landroid/widget/EditText;
 
     move-result-object v0
 

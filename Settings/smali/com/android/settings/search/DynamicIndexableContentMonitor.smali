@@ -1,4 +1,4 @@
-.class public final Lcom/android/settings/search/DynamicIndexableContentMonitor;
+.class public final Lcom/android/settings_ext/search/DynamicIndexableContentMonitor;
 .super Lcom/android/internal/content/PackageMonitor;
 .source "DynamicIndexableContentMonitor.java"
 
@@ -9,7 +9,7 @@
 # annotations
 .annotation system Ldalvik/annotation/MemberClasses;
     value = {
-        Lcom/android/settings/search/DynamicIndexableContentMonitor$UserDictionaryContentObserver;
+        Lcom/android/settings_ext/search/DynamicIndexableContentMonitor$UserDictionaryContentObserver;
     }
 .end annotation
 
@@ -72,73 +72,73 @@
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
-    iput-object v0, p0, Lcom/android/settings/search/DynamicIndexableContentMonitor;->mAccessibilityServices:Ljava/util/List;
+    iput-object v0, p0, Lcom/android/settings_ext/search/DynamicIndexableContentMonitor;->mAccessibilityServices:Ljava/util/List;
 
     .line 57
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
-    iput-object v0, p0, Lcom/android/settings/search/DynamicIndexableContentMonitor;->mPrintServices:Ljava/util/List;
+    iput-object v0, p0, Lcom/android/settings_ext/search/DynamicIndexableContentMonitor;->mPrintServices:Ljava/util/List;
 
     .line 58
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
-    iput-object v0, p0, Lcom/android/settings/search/DynamicIndexableContentMonitor;->mImeServices:Ljava/util/List;
+    iput-object v0, p0, Lcom/android/settings_ext/search/DynamicIndexableContentMonitor;->mImeServices:Ljava/util/List;
 
     .line 60
-    new-instance v0, Lcom/android/settings/search/DynamicIndexableContentMonitor$1;
+    new-instance v0, Lcom/android/settings_ext/search/DynamicIndexableContentMonitor$1;
 
-    invoke-direct {v0, p0}, Lcom/android/settings/search/DynamicIndexableContentMonitor$1;-><init>(Lcom/android/settings/search/DynamicIndexableContentMonitor;)V
+    invoke-direct {v0, p0}, Lcom/android/settings_ext/search/DynamicIndexableContentMonitor$1;-><init>(Lcom/android/settings_ext/search/DynamicIndexableContentMonitor;)V
 
-    iput-object v0, p0, Lcom/android/settings/search/DynamicIndexableContentMonitor;->mHandler:Landroid/os/Handler;
+    iput-object v0, p0, Lcom/android/settings_ext/search/DynamicIndexableContentMonitor;->mHandler:Landroid/os/Handler;
 
     .line 77
-    new-instance v0, Lcom/android/settings/search/DynamicIndexableContentMonitor$UserDictionaryContentObserver;
+    new-instance v0, Lcom/android/settings_ext/search/DynamicIndexableContentMonitor$UserDictionaryContentObserver;
 
-    iget-object v1, p0, Lcom/android/settings/search/DynamicIndexableContentMonitor;->mHandler:Landroid/os/Handler;
+    iget-object v1, p0, Lcom/android/settings_ext/search/DynamicIndexableContentMonitor;->mHandler:Landroid/os/Handler;
 
-    invoke-direct {v0, p0, v1}, Lcom/android/settings/search/DynamicIndexableContentMonitor$UserDictionaryContentObserver;-><init>(Lcom/android/settings/search/DynamicIndexableContentMonitor;Landroid/os/Handler;)V
+    invoke-direct {v0, p0, v1}, Lcom/android/settings_ext/search/DynamicIndexableContentMonitor$UserDictionaryContentObserver;-><init>(Lcom/android/settings_ext/search/DynamicIndexableContentMonitor;Landroid/os/Handler;)V
 
-    iput-object v0, p0, Lcom/android/settings/search/DynamicIndexableContentMonitor;->mUserDictionaryContentObserver:Landroid/database/ContentObserver;
+    iput-object v0, p0, Lcom/android/settings_ext/search/DynamicIndexableContentMonitor;->mUserDictionaryContentObserver:Landroid/database/ContentObserver;
 
     .line 293
     return-void
 .end method
 
-.method static synthetic access$000(Lcom/android/settings/search/DynamicIndexableContentMonitor;Ljava/lang/String;)V
+.method static synthetic access$000(Lcom/android/settings_ext/search/DynamicIndexableContentMonitor;Ljava/lang/String;)V
     .locals 0
-    .param p0, "x0"    # Lcom/android/settings/search/DynamicIndexableContentMonitor;
+    .param p0, "x0"    # Lcom/android/settings_ext/search/DynamicIndexableContentMonitor;
     .param p1, "x1"    # Ljava/lang/String;
 
     .prologue
     .line 48
-    invoke-direct {p0, p1}, Lcom/android/settings/search/DynamicIndexableContentMonitor;->handlePackageAvailable(Ljava/lang/String;)V
+    invoke-direct {p0, p1}, Lcom/android/settings_ext/search/DynamicIndexableContentMonitor;->handlePackageAvailable(Ljava/lang/String;)V
 
     return-void
 .end method
 
-.method static synthetic access$100(Lcom/android/settings/search/DynamicIndexableContentMonitor;Ljava/lang/String;)V
+.method static synthetic access$100(Lcom/android/settings_ext/search/DynamicIndexableContentMonitor;Ljava/lang/String;)V
     .locals 0
-    .param p0, "x0"    # Lcom/android/settings/search/DynamicIndexableContentMonitor;
+    .param p0, "x0"    # Lcom/android/settings_ext/search/DynamicIndexableContentMonitor;
     .param p1, "x1"    # Ljava/lang/String;
 
     .prologue
     .line 48
-    invoke-direct {p0, p1}, Lcom/android/settings/search/DynamicIndexableContentMonitor;->handlePackageUnavailable(Ljava/lang/String;)V
+    invoke-direct {p0, p1}, Lcom/android/settings_ext/search/DynamicIndexableContentMonitor;->handlePackageUnavailable(Ljava/lang/String;)V
 
     return-void
 .end method
 
-.method static synthetic access$200(Lcom/android/settings/search/DynamicIndexableContentMonitor;)Landroid/content/Context;
+.method static synthetic access$200(Lcom/android/settings_ext/search/DynamicIndexableContentMonitor;)Landroid/content/Context;
     .locals 1
-    .param p0, "x0"    # Lcom/android/settings/search/DynamicIndexableContentMonitor;
+    .param p0, "x0"    # Lcom/android/settings_ext/search/DynamicIndexableContentMonitor;
 
     .prologue
     .line 48
-    iget-object v0, p0, Lcom/android/settings/search/DynamicIndexableContentMonitor;->mContext:Landroid/content/Context;
+    iget-object v0, p0, Lcom/android/settings_ext/search/DynamicIndexableContentMonitor;->mContext:Landroid/content/Context;
 
     return-object v0
 .end method
@@ -213,7 +213,7 @@
     const/4 v3, 0x0
 
     .line 234
-    iget-object v1, p0, Lcom/android/settings/search/DynamicIndexableContentMonitor;->mAccessibilityServices:Ljava/util/List;
+    iget-object v1, p0, Lcom/android/settings_ext/search/DynamicIndexableContentMonitor;->mAccessibilityServices:Ljava/util/List;
 
     invoke-interface {v1, p1}, Ljava/util/List;->contains(Ljava/lang/Object;)Z
 
@@ -222,13 +222,13 @@
     if-nez v1, :cond_0
 
     .line 235
-    invoke-static {p1}, Lcom/android/settings/search/DynamicIndexableContentMonitor;->getAccessibilityServiceIntent(Ljava/lang/String;)Landroid/content/Intent;
+    invoke-static {p1}, Lcom/android/settings_ext/search/DynamicIndexableContentMonitor;->getAccessibilityServiceIntent(Ljava/lang/String;)Landroid/content/Intent;
 
     move-result-object v0
 
     .line 236
     .local v0, "intent":Landroid/content/Intent;
-    iget-object v1, p0, Lcom/android/settings/search/DynamicIndexableContentMonitor;->mContext:Landroid/content/Context;
+    iget-object v1, p0, Lcom/android/settings_ext/search/DynamicIndexableContentMonitor;->mContext:Landroid/content/Context;
 
     invoke-virtual {v1}, Landroid/content/Context;->getPackageManager()Landroid/content/pm/PackageManager;
 
@@ -245,34 +245,34 @@
     if-nez v1, :cond_0
 
     .line 237
-    iget-object v1, p0, Lcom/android/settings/search/DynamicIndexableContentMonitor;->mAccessibilityServices:Ljava/util/List;
+    iget-object v1, p0, Lcom/android/settings_ext/search/DynamicIndexableContentMonitor;->mAccessibilityServices:Ljava/util/List;
 
     invoke-interface {v1, p1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
     .line 238
-    iget-object v1, p0, Lcom/android/settings/search/DynamicIndexableContentMonitor;->mContext:Landroid/content/Context;
+    iget-object v1, p0, Lcom/android/settings_ext/search/DynamicIndexableContentMonitor;->mContext:Landroid/content/Context;
 
-    invoke-static {v1}, Lcom/android/settings/search/Index;->getInstance(Landroid/content/Context;)Lcom/android/settings/search/Index;
+    invoke-static {v1}, Lcom/android/settings_ext/search/Index;->getInstance(Landroid/content/Context;)Lcom/android/settings_ext/search/Index;
 
     move-result-object v1
 
-    const-class v2, Lcom/android/settings/accessibility/AccessibilitySettings;
+    const-class v2, Lcom/android/settings_ext/accessibility/AccessibilitySettings;
 
     invoke-virtual {v2}, Ljava/lang/Class;->getName()Ljava/lang/String;
 
     move-result-object v2
 
-    invoke-virtual {v1, v2, v3, v4}, Lcom/android/settings/search/Index;->updateFromClassNameResource(Ljava/lang/String;ZZ)V
+    invoke-virtual {v1, v2, v3, v4}, Lcom/android/settings_ext/search/Index;->updateFromClassNameResource(Ljava/lang/String;ZZ)V
 
     .line 243
     .end local v0    # "intent":Landroid/content/Intent;
     :cond_0
-    iget-boolean v1, p0, Lcom/android/settings/search/DynamicIndexableContentMonitor;->mHasFeaturePrinting:Z
+    iget-boolean v1, p0, Lcom/android/settings_ext/search/DynamicIndexableContentMonitor;->mHasFeaturePrinting:Z
 
     if-eqz v1, :cond_1
 
     .line 244
-    iget-object v1, p0, Lcom/android/settings/search/DynamicIndexableContentMonitor;->mPrintServices:Ljava/util/List;
+    iget-object v1, p0, Lcom/android/settings_ext/search/DynamicIndexableContentMonitor;->mPrintServices:Ljava/util/List;
 
     invoke-interface {v1, p1}, Ljava/util/List;->contains(Ljava/lang/Object;)Z
 
@@ -281,13 +281,13 @@
     if-nez v1, :cond_1
 
     .line 245
-    invoke-static {p1}, Lcom/android/settings/search/DynamicIndexableContentMonitor;->getPrintServiceIntent(Ljava/lang/String;)Landroid/content/Intent;
+    invoke-static {p1}, Lcom/android/settings_ext/search/DynamicIndexableContentMonitor;->getPrintServiceIntent(Ljava/lang/String;)Landroid/content/Intent;
 
     move-result-object v0
 
     .line 246
     .restart local v0    # "intent":Landroid/content/Intent;
-    iget-object v1, p0, Lcom/android/settings/search/DynamicIndexableContentMonitor;->mContext:Landroid/content/Context;
+    iget-object v1, p0, Lcom/android/settings_ext/search/DynamicIndexableContentMonitor;->mContext:Landroid/content/Context;
 
     invoke-virtual {v1}, Landroid/content/Context;->getPackageManager()Landroid/content/pm/PackageManager;
 
@@ -304,34 +304,34 @@
     if-nez v1, :cond_1
 
     .line 247
-    iget-object v1, p0, Lcom/android/settings/search/DynamicIndexableContentMonitor;->mPrintServices:Ljava/util/List;
+    iget-object v1, p0, Lcom/android/settings_ext/search/DynamicIndexableContentMonitor;->mPrintServices:Ljava/util/List;
 
     invoke-interface {v1, p1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
     .line 248
-    iget-object v1, p0, Lcom/android/settings/search/DynamicIndexableContentMonitor;->mContext:Landroid/content/Context;
+    iget-object v1, p0, Lcom/android/settings_ext/search/DynamicIndexableContentMonitor;->mContext:Landroid/content/Context;
 
-    invoke-static {v1}, Lcom/android/settings/search/Index;->getInstance(Landroid/content/Context;)Lcom/android/settings/search/Index;
+    invoke-static {v1}, Lcom/android/settings_ext/search/Index;->getInstance(Landroid/content/Context;)Lcom/android/settings_ext/search/Index;
 
     move-result-object v1
 
-    const-class v2, Lcom/android/settings/print/PrintSettingsFragment;
+    const-class v2, Lcom/android/settings_ext/print/PrintSettingsFragment;
 
     invoke-virtual {v2}, Ljava/lang/Class;->getName()Ljava/lang/String;
 
     move-result-object v2
 
-    invoke-virtual {v1, v2, v3, v4}, Lcom/android/settings/search/Index;->updateFromClassNameResource(Ljava/lang/String;ZZ)V
+    invoke-virtual {v1, v2, v3, v4}, Lcom/android/settings_ext/search/Index;->updateFromClassNameResource(Ljava/lang/String;ZZ)V
 
     .line 254
     .end local v0    # "intent":Landroid/content/Intent;
     :cond_1
-    iget-boolean v1, p0, Lcom/android/settings/search/DynamicIndexableContentMonitor;->mHasFeatureIme:Z
+    iget-boolean v1, p0, Lcom/android/settings_ext/search/DynamicIndexableContentMonitor;->mHasFeatureIme:Z
 
     if-eqz v1, :cond_2
 
     .line 255
-    iget-object v1, p0, Lcom/android/settings/search/DynamicIndexableContentMonitor;->mImeServices:Ljava/util/List;
+    iget-object v1, p0, Lcom/android/settings_ext/search/DynamicIndexableContentMonitor;->mImeServices:Ljava/util/List;
 
     invoke-interface {v1, p1}, Ljava/util/List;->contains(Ljava/lang/Object;)Z
 
@@ -340,13 +340,13 @@
     if-nez v1, :cond_2
 
     .line 256
-    invoke-static {p1}, Lcom/android/settings/search/DynamicIndexableContentMonitor;->getIMEServiceIntent(Ljava/lang/String;)Landroid/content/Intent;
+    invoke-static {p1}, Lcom/android/settings_ext/search/DynamicIndexableContentMonitor;->getIMEServiceIntent(Ljava/lang/String;)Landroid/content/Intent;
 
     move-result-object v0
 
     .line 257
     .restart local v0    # "intent":Landroid/content/Intent;
-    iget-object v1, p0, Lcom/android/settings/search/DynamicIndexableContentMonitor;->mContext:Landroid/content/Context;
+    iget-object v1, p0, Lcom/android/settings_ext/search/DynamicIndexableContentMonitor;->mContext:Landroid/content/Context;
 
     invoke-virtual {v1}, Landroid/content/Context;->getPackageManager()Landroid/content/pm/PackageManager;
 
@@ -363,24 +363,24 @@
     if-nez v1, :cond_2
 
     .line 258
-    iget-object v1, p0, Lcom/android/settings/search/DynamicIndexableContentMonitor;->mImeServices:Ljava/util/List;
+    iget-object v1, p0, Lcom/android/settings_ext/search/DynamicIndexableContentMonitor;->mImeServices:Ljava/util/List;
 
     invoke-interface {v1, p1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
     .line 259
-    iget-object v1, p0, Lcom/android/settings/search/DynamicIndexableContentMonitor;->mContext:Landroid/content/Context;
+    iget-object v1, p0, Lcom/android/settings_ext/search/DynamicIndexableContentMonitor;->mContext:Landroid/content/Context;
 
-    invoke-static {v1}, Lcom/android/settings/search/Index;->getInstance(Landroid/content/Context;)Lcom/android/settings/search/Index;
+    invoke-static {v1}, Lcom/android/settings_ext/search/Index;->getInstance(Landroid/content/Context;)Lcom/android/settings_ext/search/Index;
 
     move-result-object v1
 
-    const-class v2, Lcom/android/settings/inputmethod/InputMethodAndLanguageSettings;
+    const-class v2, Lcom/android/settings_ext/inputmethod/InputMethodAndLanguageSettings;
 
     invoke-virtual {v2}, Ljava/lang/Class;->getName()Ljava/lang/String;
 
     move-result-object v2
 
-    invoke-virtual {v1, v2, v3, v4}, Lcom/android/settings/search/Index;->updateFromClassNameResource(Ljava/lang/String;ZZ)V
+    invoke-virtual {v1, v2, v3, v4}, Lcom/android/settings_ext/search/Index;->updateFromClassNameResource(Ljava/lang/String;ZZ)V
 
     .line 264
     .end local v0    # "intent":Landroid/content/Intent;
@@ -396,7 +396,7 @@
     const/4 v5, 0x1
 
     .line 267
-    iget-object v3, p0, Lcom/android/settings/search/DynamicIndexableContentMonitor;->mAccessibilityServices:Ljava/util/List;
+    iget-object v3, p0, Lcom/android/settings_ext/search/DynamicIndexableContentMonitor;->mAccessibilityServices:Ljava/util/List;
 
     invoke-interface {v3, p1}, Ljava/util/List;->indexOf(Ljava/lang/Object;)I
 
@@ -407,33 +407,33 @@
     if-ltz v0, :cond_0
 
     .line 269
-    iget-object v3, p0, Lcom/android/settings/search/DynamicIndexableContentMonitor;->mAccessibilityServices:Ljava/util/List;
+    iget-object v3, p0, Lcom/android/settings_ext/search/DynamicIndexableContentMonitor;->mAccessibilityServices:Ljava/util/List;
 
     invoke-interface {v3, v0}, Ljava/util/List;->remove(I)Ljava/lang/Object;
 
     .line 270
-    iget-object v3, p0, Lcom/android/settings/search/DynamicIndexableContentMonitor;->mContext:Landroid/content/Context;
+    iget-object v3, p0, Lcom/android/settings_ext/search/DynamicIndexableContentMonitor;->mContext:Landroid/content/Context;
 
-    invoke-static {v3}, Lcom/android/settings/search/Index;->getInstance(Landroid/content/Context;)Lcom/android/settings/search/Index;
+    invoke-static {v3}, Lcom/android/settings_ext/search/Index;->getInstance(Landroid/content/Context;)Lcom/android/settings_ext/search/Index;
 
     move-result-object v3
 
-    const-class v4, Lcom/android/settings/accessibility/AccessibilitySettings;
+    const-class v4, Lcom/android/settings_ext/accessibility/AccessibilitySettings;
 
     invoke-virtual {v4}, Ljava/lang/Class;->getName()Ljava/lang/String;
 
     move-result-object v4
 
-    invoke-virtual {v3, v4, v5, v5}, Lcom/android/settings/search/Index;->updateFromClassNameResource(Ljava/lang/String;ZZ)V
+    invoke-virtual {v3, v4, v5, v5}, Lcom/android/settings_ext/search/Index;->updateFromClassNameResource(Ljava/lang/String;ZZ)V
 
     .line 274
     :cond_0
-    iget-boolean v3, p0, Lcom/android/settings/search/DynamicIndexableContentMonitor;->mHasFeaturePrinting:Z
+    iget-boolean v3, p0, Lcom/android/settings_ext/search/DynamicIndexableContentMonitor;->mHasFeaturePrinting:Z
 
     if-eqz v3, :cond_1
 
     .line 275
-    iget-object v3, p0, Lcom/android/settings/search/DynamicIndexableContentMonitor;->mPrintServices:Ljava/util/List;
+    iget-object v3, p0, Lcom/android/settings_ext/search/DynamicIndexableContentMonitor;->mPrintServices:Ljava/util/List;
 
     invoke-interface {v3, p1}, Ljava/util/List;->indexOf(Ljava/lang/Object;)I
 
@@ -444,34 +444,34 @@
     if-ltz v2, :cond_1
 
     .line 277
-    iget-object v3, p0, Lcom/android/settings/search/DynamicIndexableContentMonitor;->mPrintServices:Ljava/util/List;
+    iget-object v3, p0, Lcom/android/settings_ext/search/DynamicIndexableContentMonitor;->mPrintServices:Ljava/util/List;
 
     invoke-interface {v3, v2}, Ljava/util/List;->remove(I)Ljava/lang/Object;
 
     .line 278
-    iget-object v3, p0, Lcom/android/settings/search/DynamicIndexableContentMonitor;->mContext:Landroid/content/Context;
+    iget-object v3, p0, Lcom/android/settings_ext/search/DynamicIndexableContentMonitor;->mContext:Landroid/content/Context;
 
-    invoke-static {v3}, Lcom/android/settings/search/Index;->getInstance(Landroid/content/Context;)Lcom/android/settings/search/Index;
+    invoke-static {v3}, Lcom/android/settings_ext/search/Index;->getInstance(Landroid/content/Context;)Lcom/android/settings_ext/search/Index;
 
     move-result-object v3
 
-    const-class v4, Lcom/android/settings/print/PrintSettingsFragment;
+    const-class v4, Lcom/android/settings_ext/print/PrintSettingsFragment;
 
     invoke-virtual {v4}, Ljava/lang/Class;->getName()Ljava/lang/String;
 
     move-result-object v4
 
-    invoke-virtual {v3, v4, v5, v5}, Lcom/android/settings/search/Index;->updateFromClassNameResource(Ljava/lang/String;ZZ)V
+    invoke-virtual {v3, v4, v5, v5}, Lcom/android/settings_ext/search/Index;->updateFromClassNameResource(Ljava/lang/String;ZZ)V
 
     .line 283
     .end local v2    # "printIndex":I
     :cond_1
-    iget-boolean v3, p0, Lcom/android/settings/search/DynamicIndexableContentMonitor;->mHasFeatureIme:Z
+    iget-boolean v3, p0, Lcom/android/settings_ext/search/DynamicIndexableContentMonitor;->mHasFeatureIme:Z
 
     if-eqz v3, :cond_2
 
     .line 284
-    iget-object v3, p0, Lcom/android/settings/search/DynamicIndexableContentMonitor;->mImeServices:Ljava/util/List;
+    iget-object v3, p0, Lcom/android/settings_ext/search/DynamicIndexableContentMonitor;->mImeServices:Ljava/util/List;
 
     invoke-interface {v3, p1}, Ljava/util/List;->indexOf(Ljava/lang/Object;)I
 
@@ -482,24 +482,24 @@
     if-ltz v1, :cond_2
 
     .line 286
-    iget-object v3, p0, Lcom/android/settings/search/DynamicIndexableContentMonitor;->mImeServices:Ljava/util/List;
+    iget-object v3, p0, Lcom/android/settings_ext/search/DynamicIndexableContentMonitor;->mImeServices:Ljava/util/List;
 
     invoke-interface {v3, v1}, Ljava/util/List;->remove(I)Ljava/lang/Object;
 
     .line 287
-    iget-object v3, p0, Lcom/android/settings/search/DynamicIndexableContentMonitor;->mContext:Landroid/content/Context;
+    iget-object v3, p0, Lcom/android/settings_ext/search/DynamicIndexableContentMonitor;->mContext:Landroid/content/Context;
 
-    invoke-static {v3}, Lcom/android/settings/search/Index;->getInstance(Landroid/content/Context;)Lcom/android/settings/search/Index;
+    invoke-static {v3}, Lcom/android/settings_ext/search/Index;->getInstance(Landroid/content/Context;)Lcom/android/settings_ext/search/Index;
 
     move-result-object v3
 
-    const-class v4, Lcom/android/settings/inputmethod/InputMethodAndLanguageSettings;
+    const-class v4, Lcom/android/settings_ext/inputmethod/InputMethodAndLanguageSettings;
 
     invoke-virtual {v4}, Ljava/lang/Class;->getName()Ljava/lang/String;
 
     move-result-object v4
 
-    invoke-virtual {v3, v4, v5, v5}, Lcom/android/settings/search/Index;->updateFromClassNameResource(Ljava/lang/String;ZZ)V
+    invoke-virtual {v3, v4, v5, v5}, Lcom/android/settings_ext/search/Index;->updateFromClassNameResource(Ljava/lang/String;ZZ)V
 
     .line 291
     .end local v1    # "imeIndex":I
@@ -514,7 +514,7 @@
 
     .prologue
     .line 229
-    iget-object v1, p0, Lcom/android/settings/search/DynamicIndexableContentMonitor;->mHandler:Landroid/os/Handler;
+    iget-object v1, p0, Lcom/android/settings_ext/search/DynamicIndexableContentMonitor;->mHandler:Landroid/os/Handler;
 
     invoke-virtual {v1, p1, p2}, Landroid/os/Handler;->obtainMessage(ILjava/lang/Object;)Landroid/os/Message;
 
@@ -522,7 +522,7 @@
 
     .line 230
     .local v0, "message":Landroid/os/Message;
-    iget-object v1, p0, Lcom/android/settings/search/DynamicIndexableContentMonitor;->mHandler:Landroid/os/Handler;
+    iget-object v1, p0, Lcom/android/settings_ext/search/DynamicIndexableContentMonitor;->mHandler:Landroid/os/Handler;
 
     const-wide/16 v2, 0x7d0
 
@@ -540,13 +540,13 @@
 
     .prologue
     .line 213
-    iget-object v0, p0, Lcom/android/settings/search/DynamicIndexableContentMonitor;->mContext:Landroid/content/Context;
+    iget-object v0, p0, Lcom/android/settings_ext/search/DynamicIndexableContentMonitor;->mContext:Landroid/content/Context;
 
-    invoke-static {v0}, Lcom/android/settings/search/Index;->getInstance(Landroid/content/Context;)Lcom/android/settings/search/Index;
+    invoke-static {v0}, Lcom/android/settings_ext/search/Index;->getInstance(Landroid/content/Context;)Lcom/android/settings_ext/search/Index;
 
     move-result-object v0
 
-    const-class v1, Lcom/android/settings/inputmethod/InputMethodAndLanguageSettings;
+    const-class v1, Lcom/android/settings_ext/inputmethod/InputMethodAndLanguageSettings;
 
     invoke-virtual {v1}, Ljava/lang/Class;->getName()Ljava/lang/String;
 
@@ -556,7 +556,7 @@
 
     const/4 v3, 0x1
 
-    invoke-virtual {v0, v1, v2, v3}, Lcom/android/settings/search/Index;->updateFromClassNameResource(Ljava/lang/String;ZZ)V
+    invoke-virtual {v0, v1, v2, v3}, Lcom/android/settings_ext/search/Index;->updateFromClassNameResource(Ljava/lang/String;ZZ)V
 
     .line 215
     return-void
@@ -570,19 +570,19 @@
     const/4 v2, 0x1
 
     .line 224
-    iget-object v0, p0, Lcom/android/settings/search/DynamicIndexableContentMonitor;->mContext:Landroid/content/Context;
+    iget-object v0, p0, Lcom/android/settings_ext/search/DynamicIndexableContentMonitor;->mContext:Landroid/content/Context;
 
-    invoke-static {v0}, Lcom/android/settings/search/Index;->getInstance(Landroid/content/Context;)Lcom/android/settings/search/Index;
+    invoke-static {v0}, Lcom/android/settings_ext/search/Index;->getInstance(Landroid/content/Context;)Lcom/android/settings_ext/search/Index;
 
     move-result-object v0
 
-    const-class v1, Lcom/android/settings/inputmethod/InputMethodAndLanguageSettings;
+    const-class v1, Lcom/android/settings_ext/inputmethod/InputMethodAndLanguageSettings;
 
     invoke-virtual {v1}, Ljava/lang/Class;->getName()Ljava/lang/String;
 
     move-result-object v1
 
-    invoke-virtual {v0, v1, v2, v2}, Lcom/android/settings/search/Index;->updateFromClassNameResource(Ljava/lang/String;ZZ)V
+    invoke-virtual {v0, v1, v2, v2}, Lcom/android/settings_ext/search/Index;->updateFromClassNameResource(Ljava/lang/String;ZZ)V
 
     .line 226
     return-void
@@ -594,7 +594,7 @@
 
     .prologue
     .line 219
-    invoke-virtual {p0, p1}, Lcom/android/settings/search/DynamicIndexableContentMonitor;->onInputDeviceChanged(I)V
+    invoke-virtual {p0, p1}, Lcom/android/settings_ext/search/DynamicIndexableContentMonitor;->onInputDeviceChanged(I)V
 
     .line 220
     return-void
@@ -609,7 +609,7 @@
     .line 188
     const/4 v0, 0x1
 
-    invoke-direct {p0, v0, p1}, Lcom/android/settings/search/DynamicIndexableContentMonitor;->postMessage(ILjava/lang/String;)V
+    invoke-direct {p0, v0, p1}, Lcom/android/settings_ext/search/DynamicIndexableContentMonitor;->postMessage(ILjava/lang/String;)V
 
     .line 189
     return-void
@@ -624,7 +624,7 @@
     .line 194
     const/4 v0, 0x2
 
-    invoke-direct {p0, v0, p1}, Lcom/android/settings/search/DynamicIndexableContentMonitor;->postMessage(ILjava/lang/String;)V
+    invoke-direct {p0, v0, p1}, Lcom/android/settings_ext/search/DynamicIndexableContentMonitor;->postMessage(ILjava/lang/String;)V
 
     .line 195
     return-void
@@ -641,7 +641,7 @@
     invoke-super {p0, p1}, Lcom/android/internal/content/PackageMonitor;->onPackageModified(Ljava/lang/String;)V
 
     .line 201
-    iget-object v1, p0, Lcom/android/settings/search/DynamicIndexableContentMonitor;->mContext:Landroid/content/Context;
+    iget-object v1, p0, Lcom/android/settings_ext/search/DynamicIndexableContentMonitor;->mContext:Landroid/content/Context;
 
     invoke-virtual {v1}, Landroid/content/Context;->getPackageManager()Landroid/content/pm/PackageManager;
 
@@ -659,7 +659,7 @@
 
     .line 205
     :cond_0
-    invoke-direct {p0, v2, p1}, Lcom/android/settings/search/DynamicIndexableContentMonitor;->postMessage(ILjava/lang/String;)V
+    invoke-direct {p0, v2, p1}, Lcom/android/settings_ext/search/DynamicIndexableContentMonitor;->postMessage(ILjava/lang/String;)V
 
     .line 209
     :goto_0
@@ -669,7 +669,7 @@
     :cond_1
     const/4 v1, 0x2
 
-    invoke-direct {p0, v1, p1}, Lcom/android/settings/search/DynamicIndexableContentMonitor;->postMessage(ILjava/lang/String;)V
+    invoke-direct {p0, v1, p1}, Lcom/android/settings_ext/search/DynamicIndexableContentMonitor;->postMessage(ILjava/lang/String;)V
 
     goto :goto_0
 .end method
@@ -684,12 +684,12 @@
 
     move-object/from16 v1, p0
 
-    iput-object v0, v1, Lcom/android/settings/search/DynamicIndexableContentMonitor;->mContext:Landroid/content/Context;
+    iput-object v0, v1, Lcom/android/settings_ext/search/DynamicIndexableContentMonitor;->mContext:Landroid/content/Context;
 
     .line 105
     move-object/from16 v0, p0
 
-    iget-object v0, v0, Lcom/android/settings/search/DynamicIndexableContentMonitor;->mContext:Landroid/content/Context;
+    iget-object v0, v0, Lcom/android/settings_ext/search/DynamicIndexableContentMonitor;->mContext:Landroid/content/Context;
 
     move-object/from16 v21, v0
 
@@ -707,12 +707,12 @@
 
     move-object/from16 v1, p0
 
-    iput-boolean v0, v1, Lcom/android/settings/search/DynamicIndexableContentMonitor;->mHasFeaturePrinting:Z
+    iput-boolean v0, v1, Lcom/android/settings_ext/search/DynamicIndexableContentMonitor;->mHasFeaturePrinting:Z
 
     .line 107
     move-object/from16 v0, p0
 
-    iget-object v0, v0, Lcom/android/settings/search/DynamicIndexableContentMonitor;->mContext:Landroid/content/Context;
+    iget-object v0, v0, Lcom/android/settings_ext/search/DynamicIndexableContentMonitor;->mContext:Landroid/content/Context;
 
     move-object/from16 v21, v0
 
@@ -730,12 +730,12 @@
 
     move-object/from16 v1, p0
 
-    iput-boolean v0, v1, Lcom/android/settings/search/DynamicIndexableContentMonitor;->mHasFeatureIme:Z
+    iput-boolean v0, v1, Lcom/android/settings_ext/search/DynamicIndexableContentMonitor;->mHasFeatureIme:Z
 
     .line 111
     move-object/from16 v0, p0
 
-    iget-object v0, v0, Lcom/android/settings/search/DynamicIndexableContentMonitor;->mContext:Landroid/content/Context;
+    iget-object v0, v0, Lcom/android/settings_ext/search/DynamicIndexableContentMonitor;->mContext:Landroid/content/Context;
 
     move-object/from16 v21, v0
 
@@ -803,7 +803,7 @@
     :cond_1
     move-object/from16 v0, p0
 
-    iget-object v0, v0, Lcom/android/settings/search/DynamicIndexableContentMonitor;->mAccessibilityServices:Ljava/util/List;
+    iget-object v0, v0, Lcom/android/settings_ext/search/DynamicIndexableContentMonitor;->mAccessibilityServices:Ljava/util/List;
 
     move-object/from16 v21, v0
 
@@ -829,7 +829,7 @@
     :cond_2
     move-object/from16 v0, p0
 
-    iget-boolean v0, v0, Lcom/android/settings/search/DynamicIndexableContentMonitor;->mHasFeaturePrinting:Z
+    iget-boolean v0, v0, Lcom/android/settings_ext/search/DynamicIndexableContentMonitor;->mHasFeaturePrinting:Z
 
     move/from16 v21, v0
 
@@ -838,7 +838,7 @@
     .line 127
     move-object/from16 v0, p0
 
-    iget-object v0, v0, Lcom/android/settings/search/DynamicIndexableContentMonitor;->mContext:Landroid/content/Context;
+    iget-object v0, v0, Lcom/android/settings_ext/search/DynamicIndexableContentMonitor;->mContext:Landroid/content/Context;
 
     move-object/from16 v21, v0
 
@@ -909,7 +909,7 @@
     :cond_4
     move-object/from16 v0, p0
 
-    iget-object v0, v0, Lcom/android/settings/search/DynamicIndexableContentMonitor;->mPrintServices:Ljava/util/List;
+    iget-object v0, v0, Lcom/android/settings_ext/search/DynamicIndexableContentMonitor;->mPrintServices:Ljava/util/List;
 
     move-object/from16 v21, v0
 
@@ -938,7 +938,7 @@
     :cond_5
     move-object/from16 v0, p0
 
-    iget-boolean v0, v0, Lcom/android/settings/search/DynamicIndexableContentMonitor;->mHasFeatureIme:Z
+    iget-boolean v0, v0, Lcom/android/settings_ext/search/DynamicIndexableContentMonitor;->mHasFeatureIme:Z
 
     move/from16 v21, v0
 
@@ -947,7 +947,7 @@
     .line 143
     move-object/from16 v0, p0
 
-    iget-object v0, v0, Lcom/android/settings/search/DynamicIndexableContentMonitor;->mContext:Landroid/content/Context;
+    iget-object v0, v0, Lcom/android/settings_ext/search/DynamicIndexableContentMonitor;->mContext:Landroid/content/Context;
 
     move-object/from16 v21, v0
 
@@ -1005,7 +1005,7 @@
     :cond_6
     move-object/from16 v0, p0
 
-    iget-object v0, v0, Lcom/android/settings/search/DynamicIndexableContentMonitor;->mImeServices:Ljava/util/List;
+    iget-object v0, v0, Lcom/android/settings_ext/search/DynamicIndexableContentMonitor;->mImeServices:Ljava/util/List;
 
     move-object/from16 v21, v0
 
@@ -1025,7 +1025,7 @@
     :cond_7
     move-object/from16 v0, p0
 
-    iget-object v0, v0, Lcom/android/settings/search/DynamicIndexableContentMonitor;->mContext:Landroid/content/Context;
+    iget-object v0, v0, Lcom/android/settings_ext/search/DynamicIndexableContentMonitor;->mContext:Landroid/content/Context;
 
     move-object/from16 v21, v0
 
@@ -1039,7 +1039,7 @@
 
     move-object/from16 v0, p0
 
-    iget-object v0, v0, Lcom/android/settings/search/DynamicIndexableContentMonitor;->mUserDictionaryContentObserver:Landroid/database/ContentObserver;
+    iget-object v0, v0, Lcom/android/settings_ext/search/DynamicIndexableContentMonitor;->mUserDictionaryContentObserver:Landroid/database/ContentObserver;
 
     move-object/from16 v24, v0
 
@@ -1066,7 +1066,7 @@
     .local v11, "inputManager":Landroid/hardware/input/InputManager;
     move-object/from16 v0, p0
 
-    iget-object v0, v0, Lcom/android/settings/search/DynamicIndexableContentMonitor;->mHandler:Landroid/os/Handler;
+    iget-object v0, v0, Lcom/android/settings_ext/search/DynamicIndexableContentMonitor;->mHandler:Landroid/os/Handler;
 
     move-object/from16 v21, v0
 
@@ -1095,7 +1095,7 @@
 
     move/from16 v4, v23
 
-    invoke-virtual {v0, v1, v2, v3, v4}, Lcom/android/settings/search/DynamicIndexableContentMonitor;->register(Landroid/content/Context;Landroid/os/Looper;Landroid/os/UserHandle;Z)V
+    invoke-virtual {v0, v1, v2, v3, v4}, Lcom/android/settings_ext/search/DynamicIndexableContentMonitor;->register(Landroid/content/Context;Landroid/os/Looper;Landroid/os/UserHandle;Z)V
 
     .line 166
     return-void
@@ -1109,7 +1109,7 @@
     invoke-super {p0}, Lcom/android/internal/content/PackageMonitor;->unregister()V
 
     .line 171
-    iget-object v1, p0, Lcom/android/settings/search/DynamicIndexableContentMonitor;->mContext:Landroid/content/Context;
+    iget-object v1, p0, Lcom/android/settings_ext/search/DynamicIndexableContentMonitor;->mContext:Landroid/content/Context;
 
     const-string v2, "input"
 
@@ -1124,34 +1124,34 @@
     invoke-virtual {v0, p0}, Landroid/hardware/input/InputManager;->unregisterInputDeviceListener(Landroid/hardware/input/InputManager$InputDeviceListener;)V
 
     .line 175
-    iget-boolean v1, p0, Lcom/android/settings/search/DynamicIndexableContentMonitor;->mHasFeatureIme:Z
+    iget-boolean v1, p0, Lcom/android/settings_ext/search/DynamicIndexableContentMonitor;->mHasFeatureIme:Z
 
     if-eqz v1, :cond_0
 
     .line 176
-    iget-object v1, p0, Lcom/android/settings/search/DynamicIndexableContentMonitor;->mContext:Landroid/content/Context;
+    iget-object v1, p0, Lcom/android/settings_ext/search/DynamicIndexableContentMonitor;->mContext:Landroid/content/Context;
 
     invoke-virtual {v1}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v1
 
-    iget-object v2, p0, Lcom/android/settings/search/DynamicIndexableContentMonitor;->mUserDictionaryContentObserver:Landroid/database/ContentObserver;
+    iget-object v2, p0, Lcom/android/settings_ext/search/DynamicIndexableContentMonitor;->mUserDictionaryContentObserver:Landroid/database/ContentObserver;
 
     invoke-virtual {v1, v2}, Landroid/content/ContentResolver;->unregisterContentObserver(Landroid/database/ContentObserver;)V
 
     .line 180
     :cond_0
-    iget-object v1, p0, Lcom/android/settings/search/DynamicIndexableContentMonitor;->mAccessibilityServices:Ljava/util/List;
+    iget-object v1, p0, Lcom/android/settings_ext/search/DynamicIndexableContentMonitor;->mAccessibilityServices:Ljava/util/List;
 
     invoke-interface {v1}, Ljava/util/List;->clear()V
 
     .line 181
-    iget-object v1, p0, Lcom/android/settings/search/DynamicIndexableContentMonitor;->mPrintServices:Ljava/util/List;
+    iget-object v1, p0, Lcom/android/settings_ext/search/DynamicIndexableContentMonitor;->mPrintServices:Ljava/util/List;
 
     invoke-interface {v1}, Ljava/util/List;->clear()V
 
     .line 182
-    iget-object v1, p0, Lcom/android/settings/search/DynamicIndexableContentMonitor;->mImeServices:Ljava/util/List;
+    iget-object v1, p0, Lcom/android/settings_ext/search/DynamicIndexableContentMonitor;->mImeServices:Ljava/util/List;
 
     invoke-interface {v1}, Ljava/util/List;->clear()V
 

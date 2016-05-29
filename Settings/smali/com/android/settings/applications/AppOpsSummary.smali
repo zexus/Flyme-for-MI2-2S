@@ -1,4 +1,4 @@
-.class public Lcom/android/settings/applications/AppOpsSummary;
+.class public Lcom/android/settings_ext/applications/AppOpsSummary;
 .super Landroid/app/Fragment;
 .source "AppOpsSummary.java"
 
@@ -6,13 +6,13 @@
 # annotations
 .annotation system Ldalvik/annotation/MemberClasses;
     value = {
-        Lcom/android/settings/applications/AppOpsSummary$MyPagerAdapter;
+        Lcom/android/settings_ext/applications/AppOpsSummary$MyPagerAdapter;
     }
 .end annotation
 
 
 # static fields
-.field static sPageTemplates:[Lcom/android/settings/applications/AppOpsState$OpsTemplate;
+.field static sPageTemplates:[Lcom/android/settings_ext/applications/AppOpsState$OpsTemplate;
 
 
 # instance fields
@@ -37,45 +37,45 @@
     .line 41
     const/4 v0, 0x6
 
-    new-array v0, v0, [Lcom/android/settings/applications/AppOpsState$OpsTemplate;
+    new-array v0, v0, [Lcom/android/settings_ext/applications/AppOpsState$OpsTemplate;
 
     const/4 v1, 0x0
 
-    sget-object v2, Lcom/android/settings/applications/AppOpsState;->LOCATION_TEMPLATE:Lcom/android/settings/applications/AppOpsState$OpsTemplate;
+    sget-object v2, Lcom/android/settings_ext/applications/AppOpsState;->LOCATION_TEMPLATE:Lcom/android/settings_ext/applications/AppOpsState$OpsTemplate;
 
     aput-object v2, v0, v1
 
     const/4 v1, 0x1
 
-    sget-object v2, Lcom/android/settings/applications/AppOpsState;->PERSONAL_TEMPLATE:Lcom/android/settings/applications/AppOpsState$OpsTemplate;
+    sget-object v2, Lcom/android/settings_ext/applications/AppOpsState;->PERSONAL_TEMPLATE:Lcom/android/settings_ext/applications/AppOpsState$OpsTemplate;
 
     aput-object v2, v0, v1
 
     const/4 v1, 0x2
 
-    sget-object v2, Lcom/android/settings/applications/AppOpsState;->MESSAGING_TEMPLATE:Lcom/android/settings/applications/AppOpsState$OpsTemplate;
+    sget-object v2, Lcom/android/settings_ext/applications/AppOpsState;->MESSAGING_TEMPLATE:Lcom/android/settings_ext/applications/AppOpsState$OpsTemplate;
 
     aput-object v2, v0, v1
 
     const/4 v1, 0x3
 
-    sget-object v2, Lcom/android/settings/applications/AppOpsState;->MEDIA_TEMPLATE:Lcom/android/settings/applications/AppOpsState$OpsTemplate;
+    sget-object v2, Lcom/android/settings_ext/applications/AppOpsState;->MEDIA_TEMPLATE:Lcom/android/settings_ext/applications/AppOpsState$OpsTemplate;
 
     aput-object v2, v0, v1
 
     const/4 v1, 0x4
 
-    sget-object v2, Lcom/android/settings/applications/AppOpsState;->DEVICE_TEMPLATE:Lcom/android/settings/applications/AppOpsState$OpsTemplate;
+    sget-object v2, Lcom/android/settings_ext/applications/AppOpsState;->DEVICE_TEMPLATE:Lcom/android/settings_ext/applications/AppOpsState$OpsTemplate;
 
     aput-object v2, v0, v1
 
     const/4 v1, 0x5
 
-    sget-object v2, Lcom/android/settings/applications/AppOpsState;->BOOTUP_TEMPLATE:Lcom/android/settings/applications/AppOpsState$OpsTemplate;
+    sget-object v2, Lcom/android/settings_ext/applications/AppOpsState;->BOOTUP_TEMPLATE:Lcom/android/settings_ext/applications/AppOpsState$OpsTemplate;
 
     aput-object v2, v0, v1
 
-    sput-object v0, Lcom/android/settings/applications/AppOpsSummary;->sPageTemplates:[Lcom/android/settings/applications/AppOpsState$OpsTemplate;
+    sput-object v0, Lcom/android/settings_ext/applications/AppOpsSummary;->sPageTemplates:[Lcom/android/settings_ext/applications/AppOpsState$OpsTemplate;
 
     return-void
 .end method
@@ -101,10 +101,10 @@
 
     .prologue
     .line 93
-    iput-object p1, p0, Lcom/android/settings/applications/AppOpsSummary;->mInflater:Landroid/view/LayoutInflater;
+    iput-object p1, p0, Lcom/android/settings_ext/applications/AppOpsSummary;->mInflater:Landroid/view/LayoutInflater;
 
     .line 95
-    iget-object v3, p0, Lcom/android/settings/applications/AppOpsSummary;->mInflater:Landroid/view/LayoutInflater;
+    iget-object v3, p0, Lcom/android/settings_ext/applications/AppOpsSummary;->mInflater:Landroid/view/LayoutInflater;
 
     const v4, 0x7f04000a
 
@@ -116,13 +116,13 @@
 
     .line 97
     .local v1, "rootView":Landroid/view/View;
-    iput-object p2, p0, Lcom/android/settings/applications/AppOpsSummary;->mContentContainer:Landroid/view/ViewGroup;
+    iput-object p2, p0, Lcom/android/settings_ext/applications/AppOpsSummary;->mContentContainer:Landroid/view/ViewGroup;
 
     .line 98
-    iput-object v1, p0, Lcom/android/settings/applications/AppOpsSummary;->mRootView:Landroid/view/View;
+    iput-object v1, p0, Lcom/android/settings_ext/applications/AppOpsSummary;->mRootView:Landroid/view/View;
 
     .line 100
-    invoke-virtual {p0}, Lcom/android/settings/applications/AppOpsSummary;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {p0}, Lcom/android/settings_ext/applications/AppOpsSummary;->getResources()Landroid/content/res/Resources;
 
     move-result-object v3
 
@@ -132,7 +132,7 @@
 
     move-result-object v3
 
-    iput-object v3, p0, Lcom/android/settings/applications/AppOpsSummary;->mPageNames:[Ljava/lang/CharSequence;
+    iput-object v3, p0, Lcom/android/settings_ext/applications/AppOpsSummary;->mPageNames:[Ljava/lang/CharSequence;
 
     .line 102
     const v3, 0x7f0f0018
@@ -143,25 +143,25 @@
 
     check-cast v3, Landroid/support/v4/view/ViewPager;
 
-    iput-object v3, p0, Lcom/android/settings/applications/AppOpsSummary;->mViewPager:Landroid/support/v4/view/ViewPager;
+    iput-object v3, p0, Lcom/android/settings_ext/applications/AppOpsSummary;->mViewPager:Landroid/support/v4/view/ViewPager;
 
     .line 103
-    new-instance v0, Lcom/android/settings/applications/AppOpsSummary$MyPagerAdapter;
+    new-instance v0, Lcom/android/settings_ext/applications/AppOpsSummary$MyPagerAdapter;
 
-    invoke-virtual {p0}, Lcom/android/settings/applications/AppOpsSummary;->getChildFragmentManager()Landroid/app/FragmentManager;
+    invoke-virtual {p0}, Lcom/android/settings_ext/applications/AppOpsSummary;->getChildFragmentManager()Landroid/app/FragmentManager;
 
     move-result-object v3
 
-    invoke-direct {v0, p0, v3}, Lcom/android/settings/applications/AppOpsSummary$MyPagerAdapter;-><init>(Lcom/android/settings/applications/AppOpsSummary;Landroid/app/FragmentManager;)V
+    invoke-direct {v0, p0, v3}, Lcom/android/settings_ext/applications/AppOpsSummary$MyPagerAdapter;-><init>(Lcom/android/settings_ext/applications/AppOpsSummary;Landroid/app/FragmentManager;)V
 
     .line 104
-    .local v0, "adapter":Lcom/android/settings/applications/AppOpsSummary$MyPagerAdapter;
-    iget-object v3, p0, Lcom/android/settings/applications/AppOpsSummary;->mViewPager:Landroid/support/v4/view/ViewPager;
+    .local v0, "adapter":Lcom/android/settings_ext/applications/AppOpsSummary$MyPagerAdapter;
+    iget-object v3, p0, Lcom/android/settings_ext/applications/AppOpsSummary;->mViewPager:Landroid/support/v4/view/ViewPager;
 
     invoke-virtual {v3, v0}, Landroid/support/v4/view/ViewPager;->setAdapter(Landroid/support/v4/view/PagerAdapter;)V
 
     .line 105
-    iget-object v3, p0, Lcom/android/settings/applications/AppOpsSummary;->mViewPager:Landroid/support/v4/view/ViewPager;
+    iget-object v3, p0, Lcom/android/settings_ext/applications/AppOpsSummary;->mViewPager:Landroid/support/v4/view/ViewPager;
 
     invoke-virtual {v3, v0}, Landroid/support/v4/view/ViewPager;->setOnPageChangeListener(Landroid/support/v4/view/ViewPager$OnPageChangeListener;)V
 

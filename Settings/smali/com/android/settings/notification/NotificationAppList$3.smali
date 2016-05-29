@@ -1,4 +1,4 @@
-.class Lcom/android/settings/notification/NotificationAppList$3;
+.class Lcom/android/settings_ext/notification/NotificationAppList$3;
 .super Ljava/lang/Object;
 .source "NotificationAppList.java"
 
@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/android/settings/notification/NotificationAppList;
+    value = Lcom/android/settings_ext/notification/NotificationAppList;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -18,16 +18,16 @@
 
 
 # instance fields
-.field final synthetic this$0:Lcom/android/settings/notification/NotificationAppList;
+.field final synthetic this$0:Lcom/android/settings_ext/notification/NotificationAppList;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/notification/NotificationAppList;)V
+.method constructor <init>(Lcom/android/settings_ext/notification/NotificationAppList;)V
     .locals 0
 
     .prologue
     .line 526
-    iput-object p1, p0, Lcom/android/settings/notification/NotificationAppList$3;->this$0:Lcom/android/settings/notification/NotificationAppList;
+    iput-object p1, p0, Lcom/android/settings_ext/notification/NotificationAppList$3;->this$0:Lcom/android/settings_ext/notification/NotificationAppList;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -41,10 +41,10 @@
 
     .prologue
     .line 529
-    iget-object v0, p0, Lcom/android/settings/notification/NotificationAppList$3;->this$0:Lcom/android/settings/notification/NotificationAppList;
+    iget-object v0, p0, Lcom/android/settings_ext/notification/NotificationAppList$3;->this$0:Lcom/android/settings_ext/notification/NotificationAppList;
 
-    # invokes: Lcom/android/settings/notification/NotificationAppList;->refreshDisplayedItems()V
-    invoke-static {v0}, Lcom/android/settings/notification/NotificationAppList;->access$1500(Lcom/android/settings/notification/NotificationAppList;)V
+    # invokes: Lcom/android/settings_ext/notification/NotificationAppList;->refreshDisplayedItems()V
+    invoke-static {v0}, Lcom/android/settings_ext/notification/NotificationAppList;->access$1500(Lcom/android/settings_ext/notification/NotificationAppList;)V
 
     .line 530
     return-void

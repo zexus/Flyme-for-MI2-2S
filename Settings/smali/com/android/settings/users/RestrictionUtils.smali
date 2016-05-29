@@ -1,4 +1,4 @@
-.class public Lcom/android/settings/users/RestrictionUtils;
+.class public Lcom/android/settings_ext/users/RestrictionUtils;
 .super Ljava/lang/Object;
 .source "RestrictionUtils.java"
 
@@ -27,7 +27,7 @@
 
     aput-object v1, v0, v2
 
-    sput-object v0, Lcom/android/settings/users/RestrictionUtils;->sRestrictionKeys:[Ljava/lang/String;
+    sput-object v0, Lcom/android/settings_ext/users/RestrictionUtils;->sRestrictionKeys:[Ljava/lang/String;
 
     .line 40
     new-array v0, v3, [I
@@ -36,7 +36,7 @@
 
     aput v1, v0, v2
 
-    sput-object v0, Lcom/android/settings/users/RestrictionUtils;->sRestrictionTitles:[I
+    sput-object v0, Lcom/android/settings_ext/users/RestrictionUtils;->sRestrictionTitles:[I
 
     .line 47
     new-array v0, v3, [I
@@ -45,7 +45,7 @@
 
     aput v1, v0, v2
 
-    sput-object v0, Lcom/android/settings/users/RestrictionUtils;->sRestrictionDescriptions:[I
+    sput-object v0, Lcom/android/settings_ext/users/RestrictionUtils;->sRestrictionDescriptions:[I
 
     return-void
 .end method
@@ -111,7 +111,7 @@
 
     .local v2, "i":I
     :goto_0
-    sget-object v6, Lcom/android/settings/users/RestrictionUtils;->sRestrictionKeys:[Ljava/lang/String;
+    sget-object v6, Lcom/android/settings_ext/users/RestrictionUtils;->sRestrictionKeys:[Ljava/lang/String;
 
     array-length v6, v6
 
@@ -120,11 +120,11 @@
     .line 66
     new-instance v1, Landroid/content/RestrictionEntry;
 
-    sget-object v6, Lcom/android/settings/users/RestrictionUtils;->sRestrictionKeys:[Ljava/lang/String;
+    sget-object v6, Lcom/android/settings_ext/users/RestrictionUtils;->sRestrictionKeys:[Ljava/lang/String;
 
     aget-object v9, v6, v2
 
-    sget-object v6, Lcom/android/settings/users/RestrictionUtils;->sRestrictionKeys:[Ljava/lang/String;
+    sget-object v6, Lcom/android/settings_ext/users/RestrictionUtils;->sRestrictionKeys:[Ljava/lang/String;
 
     aget-object v6, v6, v2
 
@@ -141,7 +141,7 @@
 
     .line 69
     .local v1, "entry":Landroid/content/RestrictionEntry;
-    sget-object v6, Lcom/android/settings/users/RestrictionUtils;->sRestrictionTitles:[I
+    sget-object v6, Lcom/android/settings_ext/users/RestrictionUtils;->sRestrictionTitles:[I
 
     aget v6, v6, v2
 
@@ -152,7 +152,7 @@
     invoke-virtual {v1, v6}, Landroid/content/RestrictionEntry;->setTitle(Ljava/lang/String;)V
 
     .line 70
-    sget-object v6, Lcom/android/settings/users/RestrictionUtils;->sRestrictionDescriptions:[I
+    sget-object v6, Lcom/android/settings_ext/users/RestrictionUtils;->sRestrictionDescriptions:[I
 
     aget v6, v6, v2
 

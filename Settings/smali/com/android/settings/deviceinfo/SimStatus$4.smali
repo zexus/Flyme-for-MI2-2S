@@ -1,4 +1,4 @@
-.class Lcom/android/settings/deviceinfo/SimStatus$4;
+.class Lcom/android/settings_ext/deviceinfo/SimStatus$4;
 .super Ljava/lang/Object;
 .source "SimStatus.java"
 
@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/android/settings/deviceinfo/SimStatus;
+    value = Lcom/android/settings_ext/deviceinfo/SimStatus;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -18,16 +18,16 @@
 
 
 # instance fields
-.field final synthetic this$0:Lcom/android/settings/deviceinfo/SimStatus;
+.field final synthetic this$0:Lcom/android/settings_ext/deviceinfo/SimStatus;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/deviceinfo/SimStatus;)V
+.method constructor <init>(Lcom/android/settings_ext/deviceinfo/SimStatus;)V
     .locals 0
 
     .prologue
     .line 412
-    iput-object p1, p0, Lcom/android/settings/deviceinfo/SimStatus$4;->this$0:Lcom/android/settings/deviceinfo/SimStatus;
+    iput-object p1, p0, Lcom/android/settings_ext/deviceinfo/SimStatus$4;->this$0:Lcom/android/settings_ext/deviceinfo/SimStatus;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -44,10 +44,10 @@
     .line 415
     new-instance v0, Landroid/view/View;
 
-    iget-object v1, p0, Lcom/android/settings/deviceinfo/SimStatus$4;->this$0:Lcom/android/settings/deviceinfo/SimStatus;
+    iget-object v1, p0, Lcom/android/settings_ext/deviceinfo/SimStatus$4;->this$0:Lcom/android/settings_ext/deviceinfo/SimStatus;
 
-    # getter for: Lcom/android/settings/deviceinfo/SimStatus;->mTabHost:Landroid/widget/TabHost;
-    invoke-static {v1}, Lcom/android/settings/deviceinfo/SimStatus;->access$1000(Lcom/android/settings/deviceinfo/SimStatus;)Landroid/widget/TabHost;
+    # getter for: Lcom/android/settings_ext/deviceinfo/SimStatus;->mTabHost:Landroid/widget/TabHost;
+    invoke-static {v1}, Lcom/android/settings_ext/deviceinfo/SimStatus;->access$1000(Lcom/android/settings_ext/deviceinfo/SimStatus;)Landroid/widget/TabHost;
 
     move-result-object v1
 

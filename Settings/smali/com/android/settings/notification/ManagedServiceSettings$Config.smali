@@ -1,11 +1,11 @@
-.class public Lcom/android/settings/notification/ManagedServiceSettings$Config;
+.class public Lcom/android/settings_ext/notification/ManagedServiceSettings$Config;
 .super Ljava/lang/Object;
 .source "ManagedServiceSettings.java"
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/android/settings/notification/ManagedServiceSettings;
+    value = Lcom/android/settings_ext/notification/ManagedServiceSettings;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;

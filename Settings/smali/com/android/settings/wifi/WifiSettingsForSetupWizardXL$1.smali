@@ -1,4 +1,4 @@
-.class Lcom/android/settings/wifi/WifiSettingsForSetupWizardXL$1;
+.class Lcom/android/settings_ext/wifi/WifiSettingsForSetupWizardXL$1;
 .super Ljava/lang/Object;
 .source "WifiSettingsForSetupWizardXL.java"
 
@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/android/settings/wifi/WifiSettingsForSetupWizardXL;->onBackButtonPressed()V
+    value = Lcom/android/settings_ext/wifi/WifiSettingsForSetupWizardXL;->onBackButtonPressed()V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -18,16 +18,16 @@
 
 
 # instance fields
-.field final synthetic this$0:Lcom/android/settings/wifi/WifiSettingsForSetupWizardXL;
+.field final synthetic this$0:Lcom/android/settings_ext/wifi/WifiSettingsForSetupWizardXL;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/wifi/WifiSettingsForSetupWizardXL;)V
+.method constructor <init>(Lcom/android/settings_ext/wifi/WifiSettingsForSetupWizardXL;)V
     .locals 0
 
     .prologue
     .line 596
-    iput-object p1, p0, Lcom/android/settings/wifi/WifiSettingsForSetupWizardXL$1;->this$0:Lcom/android/settings/wifi/WifiSettingsForSetupWizardXL;
+    iput-object p1, p0, Lcom/android/settings_ext/wifi/WifiSettingsForSetupWizardXL$1;->this$0:Lcom/android/settings_ext/wifi/WifiSettingsForSetupWizardXL;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 

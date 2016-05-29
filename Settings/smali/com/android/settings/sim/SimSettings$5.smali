@@ -1,11 +1,11 @@
-.class Lcom/android/settings/sim/SimSettings$5;
+.class Lcom/android/settings_ext/sim/SimSettings$5;
 .super Landroid/os/Handler;
 .source "SimSettings.java"
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/android/settings/sim/SimSettings;
+    value = Lcom/android/settings_ext/sim/SimSettings;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -15,16 +15,16 @@
 
 
 # instance fields
-.field final synthetic this$0:Lcom/android/settings/sim/SimSettings;
+.field final synthetic this$0:Lcom/android/settings_ext/sim/SimSettings;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/sim/SimSettings;)V
+.method constructor <init>(Lcom/android/settings_ext/sim/SimSettings;)V
     .locals 0
 
     .prologue
     .line 654
-    iput-object p1, p0, Lcom/android/settings/sim/SimSettings$5;->this$0:Lcom/android/settings/sim/SimSettings;
+    iput-object p1, p0, Lcom/android/settings_ext/sim/SimSettings$5;->this$0:Lcom/android/settings_ext/sim/SimSettings;
 
     invoke-direct {p0}, Landroid/os/Handler;-><init>()V
 
@@ -39,7 +39,7 @@
 
     .prologue
     .line 657
-    iget-object v0, p0, Lcom/android/settings/sim/SimSettings$5;->this$0:Lcom/android/settings/sim/SimSettings;
+    iget-object v0, p0, Lcom/android/settings_ext/sim/SimSettings$5;->this$0:Lcom/android/settings_ext/sim/SimSettings;
 
     new-instance v1, Ljava/lang/StringBuilder;
 
@@ -61,8 +61,8 @@
 
     move-result-object v1
 
-    # invokes: Lcom/android/settings/sim/SimSettings;->logd(Ljava/lang/String;)V
-    invoke-static {v0, v1}, Lcom/android/settings/sim/SimSettings;->access$1300(Lcom/android/settings/sim/SimSettings;Ljava/lang/String;)V
+    # invokes: Lcom/android/settings_ext/sim/SimSettings;->logd(Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/android/settings_ext/sim/SimSettings;->access$1300(Lcom/android/settings_ext/sim/SimSettings;Ljava/lang/String;)V
 
     .line 658
     iget v0, p1, Landroid/os/Message;->what:I
@@ -75,10 +75,10 @@
 
     .line 660
     :pswitch_0
-    iget-object v0, p0, Lcom/android/settings/sim/SimSettings$5;->this$0:Lcom/android/settings/sim/SimSettings;
+    iget-object v0, p0, Lcom/android/settings_ext/sim/SimSettings$5;->this$0:Lcom/android/settings_ext/sim/SimSettings;
 
-    # invokes: Lcom/android/settings/sim/SimSettings;->updateAllOptions()V
-    invoke-static {v0}, Lcom/android/settings/sim/SimSettings;->access$800(Lcom/android/settings/sim/SimSettings;)V
+    # invokes: Lcom/android/settings_ext/sim/SimSettings;->updateAllOptions()V
+    invoke-static {v0}, Lcom/android/settings_ext/sim/SimSettings;->access$800(Lcom/android/settings_ext/sim/SimSettings;)V
 
     goto :goto_0
 

@@ -1,4 +1,4 @@
-.class public Lcom/android/settings/sim/SimBootReceiver;
+.class public Lcom/android/settings_ext/sim/SimBootReceiver;
 .super Landroid/content/BroadcastReceiver;
 .source "SimBootReceiver.java"
 
@@ -22,22 +22,22 @@
     invoke-direct {p0}, Landroid/content/BroadcastReceiver;-><init>()V
 
     .line 147
-    new-instance v0, Lcom/android/settings/sim/SimBootReceiver$1;
+    new-instance v0, Lcom/android/settings_ext/sim/SimBootReceiver$1;
 
-    invoke-direct {v0, p0}, Lcom/android/settings/sim/SimBootReceiver$1;-><init>(Lcom/android/settings/sim/SimBootReceiver;)V
+    invoke-direct {v0, p0}, Lcom/android/settings_ext/sim/SimBootReceiver$1;-><init>(Lcom/android/settings_ext/sim/SimBootReceiver;)V
 
-    iput-object v0, p0, Lcom/android/settings/sim/SimBootReceiver;->mSubscriptionListener:Landroid/telephony/SubscriptionManager$OnSubscriptionsChangedListener;
+    iput-object v0, p0, Lcom/android/settings_ext/sim/SimBootReceiver;->mSubscriptionListener:Landroid/telephony/SubscriptionManager$OnSubscriptionsChangedListener;
 
     return-void
 .end method
 
-.method static synthetic access$000(Lcom/android/settings/sim/SimBootReceiver;)V
+.method static synthetic access$000(Lcom/android/settings_ext/sim/SimBootReceiver;)V
     .locals 0
-    .param p0, "x0"    # Lcom/android/settings/sim/SimBootReceiver;
+    .param p0, "x0"    # Lcom/android/settings_ext/sim/SimBootReceiver;
 
     .prologue
     .line 39
-    invoke-direct {p0}, Lcom/android/settings/sim/SimBootReceiver;->detectChangeAndNotify()V
+    invoke-direct {p0}, Lcom/android/settings_ext/sim/SimBootReceiver;->detectChangeAndNotify()V
 
     return-void
 .end method
@@ -126,7 +126,7 @@
     .local v0, "builder":Landroid/support/v4/app/NotificationCompat$Builder;
     new-instance v3, Landroid/content/Intent;
 
-    const-class v5, Lcom/android/settings/Settings$SimSettingsActivity;
+    const-class v5, Lcom/android/settings_ext/Settings$SimSettingsActivity;
 
     invoke-direct {v3, p1, v5}, Landroid/content/Intent;-><init>(Landroid/content/Context;Ljava/lang/Class;)V
 
@@ -180,7 +180,7 @@
     const/4 v10, 0x0
 
     .line 56
-    iget-object v11, p0, Lcom/android/settings/sim/SimBootReceiver;->mTelephonyManager:Landroid/telephony/TelephonyManager;
+    iget-object v11, p0, Lcom/android/settings_ext/sim/SimBootReceiver;->mTelephonyManager:Landroid/telephony/TelephonyManager;
 
     invoke-virtual {v11}, Landroid/telephony/TelephonyManager;->getSimCount()I
 
@@ -188,7 +188,7 @@
 
     .line 57
     .local v6, "numSlots":I
-    iget-object v11, p0, Lcom/android/settings/sim/SimBootReceiver;->mContext:Landroid/content/Context;
+    iget-object v11, p0, Lcom/android/settings_ext/sim/SimBootReceiver;->mContext:Landroid/content/Context;
 
     invoke-virtual {v11}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
 
@@ -246,12 +246,12 @@
     .restart local v4    # "notificationSent":Z
     .restart local v5    # "numSIMsDetected":I
     :cond_2
-    iget-object v11, p0, Lcom/android/settings/sim/SimBootReceiver;->mContext:Landroid/content/Context;
+    iget-object v11, p0, Lcom/android/settings_ext/sim/SimBootReceiver;->mContext:Landroid/content/Context;
 
-    invoke-static {v11}, Lcom/android/settings/sim/SimBootReceiver;->cancelNotification(Landroid/content/Context;)V
+    invoke-static {v11}, Lcom/android/settings_ext/sim/SimBootReceiver;->cancelNotification(Landroid/content/Context;)V
 
     .line 72
-    iget-object v11, p0, Lcom/android/settings/sim/SimBootReceiver;->mSubscriptionManager:Landroid/telephony/SubscriptionManager;
+    iget-object v11, p0, Lcom/android/settings_ext/sim/SimBootReceiver;->mSubscriptionManager:Landroid/telephony/SubscriptionManager;
 
     invoke-virtual {v11}, Landroid/telephony/SubscriptionManager;->clearDefaultsForInactiveSubIds()V
 
@@ -282,7 +282,7 @@
 
     .line 88
     :cond_3
-    iget-object v11, p0, Lcom/android/settings/sim/SimBootReceiver;->mSubscriptionManager:Landroid/telephony/SubscriptionManager;
+    iget-object v11, p0, Lcom/android/settings_ext/sim/SimBootReceiver;->mSubscriptionManager:Landroid/telephony/SubscriptionManager;
 
     invoke-virtual {v11}, Landroid/telephony/SubscriptionManager;->getActiveSubscriptionInfoList()Ljava/util/List;
 
@@ -299,9 +299,9 @@
     if-lt v11, v9, :cond_0
 
     .line 93
-    iget-object v11, p0, Lcom/android/settings/sim/SimBootReceiver;->mContext:Landroid/content/Context;
+    iget-object v11, p0, Lcom/android/settings_ext/sim/SimBootReceiver;->mContext:Landroid/content/Context;
 
-    invoke-direct {p0, v11}, Lcom/android/settings/sim/SimBootReceiver;->createNotification(Landroid/content/Context;)V
+    invoke-direct {p0, v11}, Lcom/android/settings_ext/sim/SimBootReceiver;->createNotification(Landroid/content/Context;)V
 
     .line 95
     invoke-interface {v7}, Ljava/util/List;->size()I
@@ -313,9 +313,9 @@
     .line 97
     new-instance v1, Landroid/content/Intent;
 
-    iget-object v9, p0, Lcom/android/settings/sim/SimBootReceiver;->mContext:Landroid/content/Context;
+    iget-object v9, p0, Lcom/android/settings_ext/sim/SimBootReceiver;->mContext:Landroid/content/Context;
 
-    const-class v11, Lcom/android/settings/sim/SimDialogActivity;
+    const-class v11, Lcom/android/settings_ext/sim/SimDialogActivity;
 
     invoke-direct {v1, v9, v11}, Landroid/content/Intent;-><init>(Landroid/content/Context;Ljava/lang/Class;)V
 
@@ -324,14 +324,14 @@
     invoke-virtual {v1, v13}, Landroid/content/Intent;->addFlags(I)Landroid/content/Intent;
 
     .line 99
-    sget-object v9, Lcom/android/settings/sim/SimDialogActivity;->DIALOG_TYPE_KEY:Ljava/lang/String;
+    sget-object v9, Lcom/android/settings_ext/sim/SimDialogActivity;->DIALOG_TYPE_KEY:Ljava/lang/String;
 
     const/4 v11, 0x3
 
     invoke-virtual {v1, v9, v11}, Landroid/content/Intent;->putExtra(Ljava/lang/String;I)Landroid/content/Intent;
 
     .line 100
-    sget-object v11, Lcom/android/settings/sim/SimDialogActivity;->PREFERRED_SIM:Ljava/lang/String;
+    sget-object v11, Lcom/android/settings_ext/sim/SimDialogActivity;->PREFERRED_SIM:Ljava/lang/String;
 
     invoke-interface {v7, v10}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
@@ -346,7 +346,7 @@
     invoke-virtual {v1, v11, v9}, Landroid/content/Intent;->putExtra(Ljava/lang/String;I)Landroid/content/Intent;
 
     .line 101
-    iget-object v9, p0, Lcom/android/settings/sim/SimBootReceiver;->mContext:Landroid/content/Context;
+    iget-object v9, p0, Lcom/android/settings_ext/sim/SimBootReceiver;->mContext:Landroid/content/Context;
 
     invoke-virtual {v9, v1}, Landroid/content/Context;->startActivity(Landroid/content/Intent;)V
 
@@ -360,9 +360,9 @@
     .line 106
     new-instance v1, Landroid/content/Intent;
 
-    iget-object v9, p0, Lcom/android/settings/sim/SimBootReceiver;->mContext:Landroid/content/Context;
+    iget-object v9, p0, Lcom/android/settings_ext/sim/SimBootReceiver;->mContext:Landroid/content/Context;
 
-    const-class v11, Lcom/android/settings/sim/SimDialogActivity;
+    const-class v11, Lcom/android/settings_ext/sim/SimDialogActivity;
 
     invoke-direct {v1, v9, v11}, Landroid/content/Intent;-><init>(Landroid/content/Context;Ljava/lang/Class;)V
 
@@ -371,12 +371,12 @@
     invoke-virtual {v1, v13}, Landroid/content/Intent;->addFlags(I)Landroid/content/Intent;
 
     .line 108
-    sget-object v9, Lcom/android/settings/sim/SimDialogActivity;->DIALOG_TYPE_KEY:Ljava/lang/String;
+    sget-object v9, Lcom/android/settings_ext/sim/SimDialogActivity;->DIALOG_TYPE_KEY:Ljava/lang/String;
 
     invoke-virtual {v1, v9, v10}, Landroid/content/Intent;->putExtra(Ljava/lang/String;I)Landroid/content/Intent;
 
     .line 109
-    iget-object v9, p0, Lcom/android/settings/sim/SimBootReceiver;->mContext:Landroid/content/Context;
+    iget-object v9, p0, Lcom/android/settings_ext/sim/SimBootReceiver;->mContext:Landroid/content/Context;
 
     invoke-virtual {v9, v1}, Landroid/content/Context;->startActivity(Landroid/content/Intent;)V
 
@@ -400,24 +400,24 @@
 
     check-cast v0, Landroid/telephony/TelephonyManager;
 
-    iput-object v0, p0, Lcom/android/settings/sim/SimBootReceiver;->mTelephonyManager:Landroid/telephony/TelephonyManager;
+    iput-object v0, p0, Lcom/android/settings_ext/sim/SimBootReceiver;->mTelephonyManager:Landroid/telephony/TelephonyManager;
 
     .line 50
-    iput-object p1, p0, Lcom/android/settings/sim/SimBootReceiver;->mContext:Landroid/content/Context;
+    iput-object p1, p0, Lcom/android/settings_ext/sim/SimBootReceiver;->mContext:Landroid/content/Context;
 
     .line 51
-    iget-object v0, p0, Lcom/android/settings/sim/SimBootReceiver;->mContext:Landroid/content/Context;
+    iget-object v0, p0, Lcom/android/settings_ext/sim/SimBootReceiver;->mContext:Landroid/content/Context;
 
     invoke-static {v0}, Landroid/telephony/SubscriptionManager;->from(Landroid/content/Context;)Landroid/telephony/SubscriptionManager;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/sim/SimBootReceiver;->mSubscriptionManager:Landroid/telephony/SubscriptionManager;
+    iput-object v0, p0, Lcom/android/settings_ext/sim/SimBootReceiver;->mSubscriptionManager:Landroid/telephony/SubscriptionManager;
 
     .line 52
-    iget-object v0, p0, Lcom/android/settings/sim/SimBootReceiver;->mSubscriptionManager:Landroid/telephony/SubscriptionManager;
+    iget-object v0, p0, Lcom/android/settings_ext/sim/SimBootReceiver;->mSubscriptionManager:Landroid/telephony/SubscriptionManager;
 
-    iget-object v1, p0, Lcom/android/settings/sim/SimBootReceiver;->mSubscriptionListener:Landroid/telephony/SubscriptionManager$OnSubscriptionsChangedListener;
+    iget-object v1, p0, Lcom/android/settings_ext/sim/SimBootReceiver;->mSubscriptionListener:Landroid/telephony/SubscriptionManager$OnSubscriptionsChangedListener;
 
     invoke-virtual {v0, v1}, Landroid/telephony/SubscriptionManager;->addOnSubscriptionsChangedListener(Landroid/telephony/SubscriptionManager$OnSubscriptionsChangedListener;)V
 

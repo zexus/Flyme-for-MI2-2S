@@ -1,4 +1,4 @@
-.class Lcom/android/settings/ApplicationSettings$1;
+.class Lcom/android/settings_ext/ApplicationSettings$1;
 .super Ljava/lang/Object;
 .source "ApplicationSettings.java"
 
@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/android/settings/ApplicationSettings;->onCreate(Landroid/os/Bundle;)V
+    value = Lcom/android/settings_ext/ApplicationSettings;->onCreate(Landroid/os/Bundle;)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -18,16 +18,16 @@
 
 
 # instance fields
-.field final synthetic this$0:Lcom/android/settings/ApplicationSettings;
+.field final synthetic this$0:Lcom/android/settings_ext/ApplicationSettings;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/ApplicationSettings;)V
+.method constructor <init>(Lcom/android/settings_ext/ApplicationSettings;)V
     .locals 0
 
     .prologue
     .line 69
-    iput-object p1, p0, Lcom/android/settings/ApplicationSettings$1;->this$0:Lcom/android/settings/ApplicationSettings;
+    iput-object p1, p0, Lcom/android/settings_ext/ApplicationSettings$1;->this$0:Lcom/android/settings_ext/ApplicationSettings;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -49,9 +49,9 @@
 
     .line 72
     .local v0, "value":Ljava/lang/String;
-    iget-object v1, p0, Lcom/android/settings/ApplicationSettings$1;->this$0:Lcom/android/settings/ApplicationSettings;
+    iget-object v1, p0, Lcom/android/settings_ext/ApplicationSettings$1;->this$0:Lcom/android/settings_ext/ApplicationSettings;
 
-    invoke-virtual {v1, v0}, Lcom/android/settings/ApplicationSettings;->handleUpdateAppInstallLocation(Ljava/lang/String;)V
+    invoke-virtual {v1, v0}, Lcom/android/settings_ext/ApplicationSettings;->handleUpdateAppInstallLocation(Ljava/lang/String;)V
 
     .line 73
     const/4 v1, 0x0

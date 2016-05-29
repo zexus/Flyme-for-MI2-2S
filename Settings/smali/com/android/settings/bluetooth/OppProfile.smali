@@ -1,9 +1,9 @@
-.class final Lcom/android/settings/bluetooth/OppProfile;
+.class final Lcom/android/settings_ext/bluetooth/OppProfile;
 .super Ljava/lang/Object;
 .source "OppProfile.java"
 
 # interfaces
-.implements Lcom/android/settings/bluetooth/LocalBluetoothProfile;
+.implements Lcom/android/settings_ext/bluetooth/LocalBluetoothProfile;
 
 
 # direct methods

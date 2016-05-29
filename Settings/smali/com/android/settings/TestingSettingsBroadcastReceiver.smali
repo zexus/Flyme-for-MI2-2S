@@ -1,4 +1,4 @@
-.class public Lcom/android/settings/TestingSettingsBroadcastReceiver;
+.class public Lcom/android/settings_ext/TestingSettingsBroadcastReceiver;
 .super Landroid/content/BroadcastReceiver;
 .source "TestingSettingsBroadcastReceiver.java"
 
@@ -45,7 +45,7 @@
 
     .line 22
     .local v0, "i":Landroid/content/Intent;
-    const-class v1, Lcom/android/settings/TestingSettings;
+    const-class v1, Lcom/android/settings_ext/TestingSettings;
 
     invoke-virtual {v0, p1, v1}, Landroid/content/Intent;->setClass(Landroid/content/Context;Ljava/lang/Class;)Landroid/content/Intent;
 

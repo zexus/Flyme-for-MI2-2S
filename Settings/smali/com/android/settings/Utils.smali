@@ -1,4 +1,4 @@
-.class public final Lcom/android/settings/Utils;
+.class public final Lcom/android/settings_ext/Utils;
 .super Ljava/lang/Object;
 .source "Utils.java"
 
@@ -21,7 +21,7 @@
 
     fill-array-data v0, :array_0
 
-    sput-object v0, Lcom/android/settings/Utils;->BADNESS_COLORS:[I
+    sput-object v0, Lcom/android/settings_ext/Utils;->BADNESS_COLORS:[I
 
     return-void
 
@@ -63,9 +63,9 @@
     .line 562
     const v1, 0x104000a
 
-    new-instance v2, Lcom/android/settings/Utils$1;
+    new-instance v2, Lcom/android/settings_ext/Utils$1;
 
-    invoke-direct {v2, p2}, Lcom/android/settings/Utils$1;-><init>(Ljava/lang/Runnable;)V
+    invoke-direct {v2, p2}, Lcom/android/settings_ext/Utils$1;-><init>(Ljava/lang/Runnable;)V
 
     invoke-virtual {v0, v1, v2}, Landroid/app/AlertDialog$Builder;->setPositiveButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
@@ -378,7 +378,7 @@
     goto :goto_0
 .end method
 
-.method public static createUserSpinnerAdapter(Landroid/os/UserManager;Landroid/content/Context;)Lcom/android/settings/UserSpinnerAdapter;
+.method public static createUserSpinnerAdapter(Landroid/os/UserManager;Landroid/content/Context;)Lcom/android/settings_ext/UserSpinnerAdapter;
     .locals 7
     .param p0, "userManager"    # Landroid/os/UserManager;
     .param p1, "context"    # Landroid/content/Context;
@@ -435,7 +435,7 @@
     invoke-direct {v3, v5}, Ljava/util/ArrayList;-><init>(I)V
 
     .line 751
-    .local v3, "userDetails":Ljava/util/ArrayList;, "Ljava/util/ArrayList<Lcom/android/settings/UserSpinnerAdapter$UserDetails;>;"
+    .local v3, "userDetails":Ljava/util/ArrayList;, "Ljava/util/ArrayList<Lcom/android/settings_ext/UserSpinnerAdapter$UserDetails;>;"
     invoke-interface {v4}, Ljava/util/List;->size()I
 
     move-result v0
@@ -449,7 +449,7 @@
     if-ge v1, v0, :cond_1
 
     .line 753
-    new-instance v6, Lcom/android/settings/UserSpinnerAdapter$UserDetails;
+    new-instance v6, Lcom/android/settings_ext/UserSpinnerAdapter$UserDetails;
 
     invoke-interface {v4, v1}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
@@ -457,7 +457,7 @@
 
     check-cast v5, Landroid/os/UserHandle;
 
-    invoke-direct {v6, v5, p0, p1}, Lcom/android/settings/UserSpinnerAdapter$UserDetails;-><init>(Landroid/os/UserHandle;Landroid/os/UserManager;Landroid/content/Context;)V
+    invoke-direct {v6, v5, p0, p1}, Lcom/android/settings_ext/UserSpinnerAdapter$UserDetails;-><init>(Landroid/os/UserHandle;Landroid/os/UserManager;Landroid/content/Context;)V
 
     invoke-virtual {v3, v6}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
@@ -468,9 +468,9 @@
 
     .line 755
     :cond_1
-    new-instance v5, Lcom/android/settings/UserSpinnerAdapter;
+    new-instance v5, Lcom/android/settings_ext/UserSpinnerAdapter;
 
-    invoke-direct {v5, p1, v3}, Lcom/android/settings/UserSpinnerAdapter;-><init>(Landroid/content/Context;Ljava/util/ArrayList;)V
+    invoke-direct {v5, p1, v3}, Lcom/android/settings_ext/UserSpinnerAdapter;-><init>(Landroid/content/Context;Ljava/util/ArrayList;)V
 
     goto :goto_0
 .end method
@@ -717,7 +717,7 @@
     invoke-virtual {p2, v0}, Landroid/widget/ListView;->setClipToPadding(Z)V
 
     .line 391
-    invoke-static {p0, p1, p2, p3}, Lcom/android/settings/Utils;->prepareCustomPreferencesList(Landroid/view/ViewGroup;Landroid/view/View;Landroid/view/View;Z)V
+    invoke-static {p0, p1, p2, p3}, Lcom/android/settings_ext/Utils;->prepareCustomPreferencesList(Landroid/view/ViewGroup;Landroid/view/View;Landroid/view/View;Z)V
 
     .line 392
     return-void
@@ -1164,7 +1164,7 @@
 
     div-double/2addr v0, v2
 
-    invoke-static {v0, v1}, Lcom/android/settings/Utils;->formatPercentage(D)Ljava/lang/String;
+    invoke-static {v0, v1}, Lcom/android/settings_ext/Utils;->formatPercentage(D)Ljava/lang/String;
 
     move-result-object v0
 
@@ -1184,7 +1184,7 @@
 
     div-double/2addr v0, v2
 
-    invoke-static {v0, v1}, Lcom/android/settings/Utils;->formatPercentage(D)Ljava/lang/String;
+    invoke-static {v0, v1}, Lcom/android/settings_ext/Utils;->formatPercentage(D)Ljava/lang/String;
 
     move-result-object v0
 
@@ -1230,11 +1230,11 @@
 
     .prologue
     .line 346
-    invoke-static {p0}, Lcom/android/settings/Utils;->getBatteryLevel(Landroid/content/Intent;)I
+    invoke-static {p0}, Lcom/android/settings_ext/Utils;->getBatteryLevel(Landroid/content/Intent;)I
 
     move-result v0
 
-    invoke-static {v0}, Lcom/android/settings/Utils;->formatPercentage(I)Ljava/lang/String;
+    invoke-static {v0}, Lcom/android/settings_ext/Utils;->formatPercentage(I)Ljava/lang/String;
 
     move-result-object v0
 
@@ -1401,7 +1401,7 @@
 
     .line 289
     .local v0, "prop":Landroid/net/LinkProperties;
-    invoke-static {v0}, Lcom/android/settings/Utils;->formatIpAddresses(Landroid/net/LinkProperties;)Ljava/lang/String;
+    invoke-static {v0}, Lcom/android/settings_ext/Utils;->formatIpAddresses(Landroid/net/LinkProperties;)Ljava/lang/String;
 
     move-result-object v1
 
@@ -1789,7 +1789,7 @@
     if-eqz p1, :cond_0
 
     .line 484
-    invoke-static {p0}, Lcom/android/settings/Utils;->getProfileDisplayName(Landroid/content/Context;)Ljava/lang/String;
+    invoke-static {p0}, Lcom/android/settings_ext/Utils;->getProfileDisplayName(Landroid/content/Context;)Ljava/lang/String;
 
     move-result-object v0
 
@@ -1798,7 +1798,7 @@
     return-object v0
 
     :cond_0
-    invoke-static {p0}, Lcom/android/settings/Utils;->getShorterNameIfPossible(Landroid/content/Context;)Ljava/lang/String;
+    invoke-static {p0}, Lcom/android/settings_ext/Utils;->getShorterNameIfPossible(Landroid/content/Context;)Ljava/lang/String;
 
     move-result-object v0
 
@@ -1952,7 +1952,7 @@
     if-nez v8, :cond_0
 
     .line 780
-    invoke-static {p1, v7}, Lcom/android/settings/Utils;->isProfileOf(Landroid/os/UserManager;Landroid/os/UserHandle;)Z
+    invoke-static {p1, v7}, Lcom/android/settings_ext/Utils;->isProfileOf(Landroid/os/UserManager;Landroid/os/UserHandle;)Z
 
     move-result v8
 
@@ -1996,7 +1996,7 @@
     .line 788
     if-eqz v6, :cond_2
 
-    invoke-static {p1, v4}, Lcom/android/settings/Utils;->isProfileOf(Landroid/os/UserManager;Landroid/os/UserHandle;)Z
+    invoke-static {p1, v4}, Lcom/android/settings_ext/Utils;->isProfileOf(Landroid/os/UserManager;Landroid/os/UserHandle;)Z
 
     move-result v8
 
@@ -2043,7 +2043,7 @@
     .line 796
     if-eqz v6, :cond_4
 
-    invoke-static {p1, v1}, Lcom/android/settings/Utils;->isProfileOf(Landroid/os/UserManager;Landroid/os/UserHandle;)Z
+    invoke-static {p1, v1}, Lcom/android/settings_ext/Utils;->isProfileOf(Landroid/os/UserManager;Landroid/os/UserHandle;)Z
     :try_end_0
     .catch Landroid/os/RemoteException; {:try_start_0 .. :try_end_0} :catch_0
 
@@ -2087,7 +2087,7 @@
 
     .prologue
     .line 491
-    invoke-static {p0}, Lcom/android/settings/Utils;->getLocalProfileGivenName(Landroid/content/Context;)Ljava/lang/String;
+    invoke-static {p0}, Lcom/android/settings_ext/Utils;->getLocalProfileGivenName(Landroid/content/Context;)Ljava/lang/String;
 
     move-result-object v0
 
@@ -2105,7 +2105,7 @@
 
     .restart local v0    # "given":Ljava/lang/String;
     :cond_0
-    invoke-static {p0}, Lcom/android/settings/Utils;->getProfileDisplayName(Landroid/content/Context;)Ljava/lang/String;
+    invoke-static {p0}, Lcom/android/settings_ext/Utils;->getProfileDisplayName(Landroid/content/Context;)Ljava/lang/String;
 
     move-result-object v0
 
@@ -2129,7 +2129,7 @@
 
     .line 983
     .local v0, "sys":Landroid/content/pm/PackageInfo;
-    invoke-static {v0}, Lcom/android/settings/Utils;->getFirstSignature(Landroid/content/pm/PackageInfo;)Landroid/content/pm/Signature;
+    invoke-static {v0}, Lcom/android/settings_ext/Utils;->getFirstSignature(Landroid/content/pm/PackageInfo;)Landroid/content/pm/Signature;
     :try_end_0
     .catch Landroid/content/pm/PackageManager$NameNotFoundException; {:try_start_0 .. :try_end_0} :catch_0
 
@@ -2328,7 +2328,7 @@
 
     .line 920
     .local v0, "b":Landroid/graphics/Bitmap;
-    invoke-static {p0, v0}, Lcom/android/settings/drawable/CircleFramedDrawable;->getInstance(Landroid/content/Context;Landroid/graphics/Bitmap;)Lcom/android/settings/drawable/CircleFramedDrawable;
+    invoke-static {p0, v0}, Lcom/android/settings_ext/drawable/CircleFramedDrawable;->getInstance(Landroid/content/Context;Landroid/graphics/Bitmap;)Lcom/android/settings_ext/drawable/CircleFramedDrawable;
 
     move-result-object v2
 
@@ -2355,7 +2355,7 @@
     if-eqz v1, :cond_1
 
     .line 925
-    invoke-static {p0, v1}, Lcom/android/settings/drawable/CircleFramedDrawable;->getInstance(Landroid/content/Context;Landroid/graphics/Bitmap;)Lcom/android/settings/drawable/CircleFramedDrawable;
+    invoke-static {p0, v1}, Lcom/android/settings_ext/drawable/CircleFramedDrawable;->getInstance(Landroid/content/Context;Landroid/graphics/Bitmap;)Lcom/android/settings_ext/drawable/CircleFramedDrawable;
 
     move-result-object v2
 
@@ -2488,7 +2488,7 @@
 
     .line 278
     .local v1, "prop":Landroid/net/LinkProperties;
-    invoke-static {v1}, Lcom/android/settings/Utils;->formatIpAddresses(Landroid/net/LinkProperties;)Ljava/lang/String;
+    invoke-static {v1}, Lcom/android/settings_ext/Utils;->formatIpAddresses(Landroid/net/LinkProperties;)Ljava/lang/String;
 
     move-result-object v2
 
@@ -2663,34 +2663,34 @@
     const/4 v1, 0x0
 
     .line 965
-    sget-object v2, Lcom/android/settings/Utils;->sSystemSignature:[Landroid/content/pm/Signature;
+    sget-object v2, Lcom/android/settings_ext/Utils;->sSystemSignature:[Landroid/content/pm/Signature;
 
     if-nez v2, :cond_0
 
     .line 966
     new-array v2, v0, [Landroid/content/pm/Signature;
 
-    invoke-static {p0}, Lcom/android/settings/Utils;->getSystemSignature(Landroid/content/pm/PackageManager;)Landroid/content/pm/Signature;
+    invoke-static {p0}, Lcom/android/settings_ext/Utils;->getSystemSignature(Landroid/content/pm/PackageManager;)Landroid/content/pm/Signature;
 
     move-result-object v3
 
     aput-object v3, v2, v1
 
-    sput-object v2, Lcom/android/settings/Utils;->sSystemSignature:[Landroid/content/pm/Signature;
+    sput-object v2, Lcom/android/settings_ext/Utils;->sSystemSignature:[Landroid/content/pm/Signature;
 
     .line 968
     :cond_0
-    sget-object v2, Lcom/android/settings/Utils;->sSystemSignature:[Landroid/content/pm/Signature;
+    sget-object v2, Lcom/android/settings_ext/Utils;->sSystemSignature:[Landroid/content/pm/Signature;
 
     aget-object v2, v2, v1
 
     if-eqz v2, :cond_1
 
-    sget-object v2, Lcom/android/settings/Utils;->sSystemSignature:[Landroid/content/pm/Signature;
+    sget-object v2, Lcom/android/settings_ext/Utils;->sSystemSignature:[Landroid/content/pm/Signature;
 
     aget-object v2, v2, v1
 
-    invoke-static {p1}, Lcom/android/settings/Utils;->getFirstSignature(Landroid/content/pm/PackageInfo;)Landroid/content/pm/Signature;
+    invoke-static {p1}, Lcom/android/settings_ext/Utils;->getFirstSignature(Landroid/content/pm/PackageInfo;)Landroid/content/pm/Signature;
 
     move-result-object v3
 
@@ -2794,7 +2794,7 @@
 
     .line 687
     .local v0, "intent":Landroid/content/Intent;
-    const-class v1, Lcom/android/settings/bluetooth/BluetoothSettings;
+    const-class v1, Lcom/android/settings_ext/bluetooth/BluetoothSettings;
 
     invoke-virtual {v1}, Ljava/lang/Class;->getName()Ljava/lang/String;
 
@@ -2807,7 +2807,7 @@
     if-eqz v1, :cond_0
 
     .line 688
-    const-class v1, Lcom/android/settings/SubSettings$BluetoothSubSettings;
+    const-class v1, Lcom/android/settings_ext/SubSettings$BluetoothSubSettings;
 
     invoke-virtual {v0, p0, v1}, Landroid/content/Intent;->setClass(Landroid/content/Context;Ljava/lang/Class;)Landroid/content/Intent;
 
@@ -2854,7 +2854,7 @@
 
     .line 691
     :cond_0
-    const-class v1, Lcom/android/settings/SubSettings;
+    const-class v1, Lcom/android/settings_ext/SubSettings;
 
     invoke-virtual {v0, p0, v1}, Landroid/content/Intent;->setClass(Landroid/content/Context;Ljava/lang/Class;)Landroid/content/Intent;
 
@@ -3054,7 +3054,7 @@
 
     move-object v7, p6
 
-    invoke-static/range {v0 .. v8}, Lcom/android/settings/Utils;->startWithFragment(Landroid/content/Context;Ljava/lang/String;Landroid/os/Bundle;Landroid/app/Fragment;ILjava/lang/String;ILjava/lang/CharSequence;Z)V
+    invoke-static/range {v0 .. v8}, Lcom/android/settings_ext/Utils;->startWithFragment(Landroid/content/Context;Ljava/lang/String;Landroid/os/Bundle;Landroid/app/Fragment;ILjava/lang/String;ILjava/lang/CharSequence;Z)V
 
     .line 598
     return-void
@@ -3087,7 +3087,7 @@
 
     move v6, p7
 
-    invoke-static/range {v0 .. v6}, Lcom/android/settings/Utils;->onBuildStartFragmentIntent(Landroid/content/Context;Ljava/lang/String;Landroid/os/Bundle;Ljava/lang/String;ILjava/lang/CharSequence;Z)Landroid/content/Intent;
+    invoke-static/range {v0 .. v6}, Lcom/android/settings_ext/Utils;->onBuildStartFragmentIntent(Landroid/content/Context;Ljava/lang/String;Landroid/os/Bundle;Ljava/lang/String;ILjava/lang/CharSequence;Z)Landroid/content/Intent;
 
     move-result-object v7
 
@@ -3140,7 +3140,7 @@
 
     move-object/from16 v7, p7
 
-    invoke-static/range {v0 .. v8}, Lcom/android/settings/Utils;->startWithFragment(Landroid/content/Context;Ljava/lang/String;Landroid/os/Bundle;Landroid/app/Fragment;ILjava/lang/String;ILjava/lang/CharSequence;Z)V
+    invoke-static/range {v0 .. v8}, Lcom/android/settings_ext/Utils;->startWithFragment(Landroid/content/Context;Ljava/lang/String;Landroid/os/Bundle;Landroid/app/Fragment;ILjava/lang/String;ILjava/lang/CharSequence;Z)V
 
     .line 621
     return-void
@@ -3174,7 +3174,7 @@
 
     move/from16 v6, p8
 
-    invoke-static/range {v0 .. v6}, Lcom/android/settings/Utils;->onBuildStartFragmentIntent(Landroid/content/Context;Ljava/lang/String;Landroid/os/Bundle;Ljava/lang/String;ILjava/lang/CharSequence;Z)Landroid/content/Intent;
+    invoke-static/range {v0 .. v6}, Lcom/android/settings_ext/Utils;->onBuildStartFragmentIntent(Landroid/content/Context;Ljava/lang/String;Landroid/os/Bundle;Ljava/lang/String;ILjava/lang/CharSequence;Z)Landroid/content/Intent;
 
     move-result-object v7
 
@@ -3222,7 +3222,7 @@
 
     move v6, p5
 
-    invoke-static/range {v0 .. v6}, Lcom/android/settings/Utils;->onBuildStartFragmentIntent(Landroid/content/Context;Ljava/lang/String;Landroid/os/Bundle;Ljava/lang/String;ILjava/lang/CharSequence;Z)Landroid/content/Intent;
+    invoke-static/range {v0 .. v6}, Lcom/android/settings_ext/Utils;->onBuildStartFragmentIntent(Landroid/content/Context;Ljava/lang/String;Landroid/os/Bundle;Ljava/lang/String;ILjava/lang/CharSequence;Z)Landroid/content/Intent;
 
     move-result-object v7
 
@@ -3376,14 +3376,14 @@
     goto :goto_0
 .end method
 
-.method public static updateTileToSpecificActivityFromMetaDataOrRemove(Landroid/content/Context;Lcom/android/settings/dashboard/DashboardTile;)Z
+.method public static updateTileToSpecificActivityFromMetaDataOrRemove(Landroid/content/Context;Lcom/android/settings_ext/dashboard/DashboardTile;)Z
     .locals 14
     .param p0, "context"    # Landroid/content/Context;
-    .param p1, "tile"    # Lcom/android/settings/dashboard/DashboardTile;
+    .param p1, "tile"    # Lcom/android/settings_ext/dashboard/DashboardTile;
 
     .prologue
     .line 192
-    iget-object v2, p1, Lcom/android/settings/dashboard/DashboardTile;->intent:Landroid/content/Intent;
+    iget-object v2, p1, Lcom/android/settings_ext/dashboard/DashboardTile;->intent:Landroid/content/Intent;
 
     .line 193
     .local v2, "intent":Landroid/content/Intent;
@@ -3529,10 +3529,10 @@
 
     .line 233
     :cond_1
-    iput-object v10, p1, Lcom/android/settings/dashboard/DashboardTile;->title:Ljava/lang/CharSequence;
+    iput-object v10, p1, Lcom/android/settings_ext/dashboard/DashboardTile;->title:Ljava/lang/CharSequence;
 
     .line 234
-    iput-object v9, p1, Lcom/android/settings/dashboard/DashboardTile;->summary:Ljava/lang/CharSequence;
+    iput-object v9, p1, Lcom/android/settings_ext/dashboard/DashboardTile;->summary:Ljava/lang/CharSequence;
 
     .line 236
     new-instance v11, Landroid/content/Intent;
@@ -3551,7 +3551,7 @@
 
     move-result-object v11
 
-    iput-object v11, p1, Lcom/android/settings/dashboard/DashboardTile;->intent:Landroid/content/Intent;
+    iput-object v11, p1, Lcom/android/settings_ext/dashboard/DashboardTile;->intent:Landroid/content/Intent;
 
     .line 239
     const/4 v11, 0x1

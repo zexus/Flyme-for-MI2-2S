@@ -1,4 +1,4 @@
-.class Lcom/android/settings/users/AppRestrictionsFragment$AppLabelComparator;
+.class Lcom/android/settings_ext/users/AppRestrictionsFragment$AppLabelComparator;
 .super Ljava/lang/Object;
 .source "AppRestrictionsFragment.java"
 
@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/android/settings/users/AppRestrictionsFragment;
+    value = Lcom/android/settings_ext/users/AppRestrictionsFragment;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -21,51 +21,51 @@
         "Ljava/lang/Object;",
         "Ljava/util/Comparator",
         "<",
-        "Lcom/android/settings/users/AppRestrictionsFragment$SelectableAppInfo;",
+        "Lcom/android/settings_ext/users/AppRestrictionsFragment$SelectableAppInfo;",
         ">;"
     }
 .end annotation
 
 
 # instance fields
-.field final synthetic this$0:Lcom/android/settings/users/AppRestrictionsFragment;
+.field final synthetic this$0:Lcom/android/settings_ext/users/AppRestrictionsFragment;
 
 
 # direct methods
-.method private constructor <init>(Lcom/android/settings/users/AppRestrictionsFragment;)V
+.method private constructor <init>(Lcom/android/settings_ext/users/AppRestrictionsFragment;)V
     .locals 0
 
     .prologue
     .line 736
-    iput-object p1, p0, Lcom/android/settings/users/AppRestrictionsFragment$AppLabelComparator;->this$0:Lcom/android/settings/users/AppRestrictionsFragment;
+    iput-object p1, p0, Lcom/android/settings_ext/users/AppRestrictionsFragment$AppLabelComparator;->this$0:Lcom/android/settings_ext/users/AppRestrictionsFragment;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
 .end method
 
-.method synthetic constructor <init>(Lcom/android/settings/users/AppRestrictionsFragment;Lcom/android/settings/users/AppRestrictionsFragment$1;)V
+.method synthetic constructor <init>(Lcom/android/settings_ext/users/AppRestrictionsFragment;Lcom/android/settings_ext/users/AppRestrictionsFragment$1;)V
     .locals 0
-    .param p1, "x0"    # Lcom/android/settings/users/AppRestrictionsFragment;
-    .param p2, "x1"    # Lcom/android/settings/users/AppRestrictionsFragment$1;
+    .param p1, "x0"    # Lcom/android/settings_ext/users/AppRestrictionsFragment;
+    .param p2, "x1"    # Lcom/android/settings_ext/users/AppRestrictionsFragment$1;
 
     .prologue
     .line 736
-    invoke-direct {p0, p1}, Lcom/android/settings/users/AppRestrictionsFragment$AppLabelComparator;-><init>(Lcom/android/settings/users/AppRestrictionsFragment;)V
+    invoke-direct {p0, p1}, Lcom/android/settings_ext/users/AppRestrictionsFragment$AppLabelComparator;-><init>(Lcom/android/settings_ext/users/AppRestrictionsFragment;)V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public compare(Lcom/android/settings/users/AppRestrictionsFragment$SelectableAppInfo;Lcom/android/settings/users/AppRestrictionsFragment$SelectableAppInfo;)I
+.method public compare(Lcom/android/settings_ext/users/AppRestrictionsFragment$SelectableAppInfo;Lcom/android/settings_ext/users/AppRestrictionsFragment$SelectableAppInfo;)I
     .locals 4
-    .param p1, "lhs"    # Lcom/android/settings/users/AppRestrictionsFragment$SelectableAppInfo;
-    .param p2, "rhs"    # Lcom/android/settings/users/AppRestrictionsFragment$SelectableAppInfo;
+    .param p1, "lhs"    # Lcom/android/settings_ext/users/AppRestrictionsFragment$SelectableAppInfo;
+    .param p2, "rhs"    # Lcom/android/settings_ext/users/AppRestrictionsFragment$SelectableAppInfo;
 
     .prologue
     .line 740
-    iget-object v2, p1, Lcom/android/settings/users/AppRestrictionsFragment$SelectableAppInfo;->activityName:Ljava/lang/CharSequence;
+    iget-object v2, p1, Lcom/android/settings_ext/users/AppRestrictionsFragment$SelectableAppInfo;->activityName:Ljava/lang/CharSequence;
 
     invoke-interface {v2}, Ljava/lang/CharSequence;->toString()Ljava/lang/String;
 
@@ -73,7 +73,7 @@
 
     .line 741
     .local v0, "lhsLabel":Ljava/lang/String;
-    iget-object v2, p2, Lcom/android/settings/users/AppRestrictionsFragment$SelectableAppInfo;->activityName:Ljava/lang/CharSequence;
+    iget-object v2, p2, Lcom/android/settings_ext/users/AppRestrictionsFragment$SelectableAppInfo;->activityName:Ljava/lang/CharSequence;
 
     invoke-interface {v2}, Ljava/lang/CharSequence;->toString()Ljava/lang/String;
 
@@ -103,13 +103,13 @@
 
     .prologue
     .line 736
-    check-cast p1, Lcom/android/settings/users/AppRestrictionsFragment$SelectableAppInfo;
+    check-cast p1, Lcom/android/settings_ext/users/AppRestrictionsFragment$SelectableAppInfo;
 
     .end local p1    # "x0":Ljava/lang/Object;
-    check-cast p2, Lcom/android/settings/users/AppRestrictionsFragment$SelectableAppInfo;
+    check-cast p2, Lcom/android/settings_ext/users/AppRestrictionsFragment$SelectableAppInfo;
 
     .end local p2    # "x1":Ljava/lang/Object;
-    invoke-virtual {p0, p1, p2}, Lcom/android/settings/users/AppRestrictionsFragment$AppLabelComparator;->compare(Lcom/android/settings/users/AppRestrictionsFragment$SelectableAppInfo;Lcom/android/settings/users/AppRestrictionsFragment$SelectableAppInfo;)I
+    invoke-virtual {p0, p1, p2}, Lcom/android/settings_ext/users/AppRestrictionsFragment$AppLabelComparator;->compare(Lcom/android/settings_ext/users/AppRestrictionsFragment$SelectableAppInfo;Lcom/android/settings_ext/users/AppRestrictionsFragment$SelectableAppInfo;)I
 
     move-result v0
 

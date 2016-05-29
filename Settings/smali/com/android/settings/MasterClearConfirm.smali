@@ -1,4 +1,4 @@
-.class public Lcom/android/settings/MasterClearConfirm;
+.class public Lcom/android/settings_ext/MasterClearConfirm;
 .super Landroid/app/Fragment;
 .source "MasterClearConfirm.java"
 
@@ -20,22 +20,22 @@
     invoke-direct {p0}, Landroid/app/Fragment;-><init>()V
 
     .line 55
-    new-instance v0, Lcom/android/settings/MasterClearConfirm$1;
+    new-instance v0, Lcom/android/settings_ext/MasterClearConfirm$1;
 
-    invoke-direct {v0, p0}, Lcom/android/settings/MasterClearConfirm$1;-><init>(Lcom/android/settings/MasterClearConfirm;)V
+    invoke-direct {v0, p0}, Lcom/android/settings_ext/MasterClearConfirm$1;-><init>(Lcom/android/settings_ext/MasterClearConfirm;)V
 
-    iput-object v0, p0, Lcom/android/settings/MasterClearConfirm;->mFinalClickListener:Landroid/view/View$OnClickListener;
+    iput-object v0, p0, Lcom/android/settings_ext/MasterClearConfirm;->mFinalClickListener:Landroid/view/View$OnClickListener;
 
     return-void
 .end method
 
-.method static synthetic access$000(Lcom/android/settings/MasterClearConfirm;)V
+.method static synthetic access$000(Lcom/android/settings_ext/MasterClearConfirm;)V
     .locals 0
-    .param p0, "x0"    # Lcom/android/settings/MasterClearConfirm;
+    .param p0, "x0"    # Lcom/android/settings_ext/MasterClearConfirm;
 
     .prologue
     .line 45
-    invoke-direct {p0}, Lcom/android/settings/MasterClearConfirm;->doMasterClear()V
+    invoke-direct {p0}, Lcom/android/settings_ext/MasterClearConfirm;->doMasterClear()V
 
     return-void
 .end method
@@ -45,7 +45,7 @@
 
     .prologue
     .line 106
-    iget-boolean v1, p0, Lcom/android/settings/MasterClearConfirm;->mEraseSdCard:Z
+    iget-boolean v1, p0, Lcom/android/settings_ext/MasterClearConfirm;->mEraseSdCard:Z
 
     if-eqz v1, :cond_0
 
@@ -70,7 +70,7 @@
     invoke-virtual {v0, v1}, Landroid/content/Intent;->setComponent(Landroid/content/ComponentName;)Landroid/content/Intent;
 
     .line 110
-    invoke-virtual {p0}, Lcom/android/settings/MasterClearConfirm;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/MasterClearConfirm;->getActivity()Landroid/app/Activity;
 
     move-result-object v1
 
@@ -103,7 +103,7 @@
     invoke-virtual {v0, v1, v2}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
 
     .line 115
-    invoke-virtual {p0}, Lcom/android/settings/MasterClearConfirm;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/MasterClearConfirm;->getActivity()Landroid/app/Activity;
 
     move-result-object v1
 
@@ -117,7 +117,7 @@
 
     .prologue
     .line 124
-    iget-object v0, p0, Lcom/android/settings/MasterClearConfirm;->mContentView:Landroid/view/View;
+    iget-object v0, p0, Lcom/android/settings_ext/MasterClearConfirm;->mContentView:Landroid/view/View;
 
     const v1, 0x7f0f00ea
 
@@ -125,7 +125,7 @@
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/android/settings/MasterClearConfirm;->mFinalClickListener:Landroid/view/View$OnClickListener;
+    iget-object v1, p0, Lcom/android/settings_ext/MasterClearConfirm;->mFinalClickListener:Landroid/view/View$OnClickListener;
 
     invoke-virtual {v0, v1}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
@@ -144,7 +144,7 @@
     invoke-super {p0, p1}, Landroid/app/Fragment;->onCreate(Landroid/os/Bundle;)V
 
     .line 144
-    invoke-virtual {p0}, Lcom/android/settings/MasterClearConfirm;->getArguments()Landroid/os/Bundle;
+    invoke-virtual {p0}, Lcom/android/settings_ext/MasterClearConfirm;->getArguments()Landroid/os/Bundle;
 
     move-result-object v0
 
@@ -163,7 +163,7 @@
     const/4 v1, 0x1
 
     :goto_0
-    iput-boolean v1, p0, Lcom/android/settings/MasterClearConfirm;->mEraseSdCard:Z
+    iput-boolean v1, p0, Lcom/android/settings_ext/MasterClearConfirm;->mEraseSdCard:Z
 
     .line 146
     return-void
@@ -185,7 +185,7 @@
     const/4 v2, 0x0
 
     .line 131
-    invoke-virtual {p0}, Lcom/android/settings/MasterClearConfirm;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/MasterClearConfirm;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
@@ -220,13 +220,13 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/MasterClearConfirm;->mContentView:Landroid/view/View;
+    iput-object v0, p0, Lcom/android/settings_ext/MasterClearConfirm;->mContentView:Landroid/view/View;
 
     .line 136
-    invoke-direct {p0}, Lcom/android/settings/MasterClearConfirm;->establishFinalConfirmationState()V
+    invoke-direct {p0}, Lcom/android/settings_ext/MasterClearConfirm;->establishFinalConfirmationState()V
 
     .line 137
-    iget-object v0, p0, Lcom/android/settings/MasterClearConfirm;->mContentView:Landroid/view/View;
+    iget-object v0, p0, Lcom/android/settings_ext/MasterClearConfirm;->mContentView:Landroid/view/View;
 
     goto :goto_0
 .end method

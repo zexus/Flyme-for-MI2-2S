@@ -1,11 +1,11 @@
-.class synthetic Lcom/android/settings/TrustedCredentialsSettings$6;
+.class synthetic Lcom/android/settings_ext/TrustedCredentialsSettings$6;
 .super Ljava/lang/Object;
 .source "TrustedCredentialsSettings.java"
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/android/settings/TrustedCredentialsSettings;
+    value = Lcom/android/settings_ext/TrustedCredentialsSettings;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -24,7 +24,7 @@
 
     .prologue
     .line 108
-    invoke-static {}, Lcom/android/settings/TrustedCredentialsSettings$Tab;->values()[Lcom/android/settings/TrustedCredentialsSettings$Tab;
+    invoke-static {}, Lcom/android/settings_ext/TrustedCredentialsSettings$Tab;->values()[Lcom/android/settings_ext/TrustedCredentialsSettings$Tab;
 
     move-result-object v0
 
@@ -32,14 +32,14 @@
 
     new-array v0, v0, [I
 
-    sput-object v0, Lcom/android/settings/TrustedCredentialsSettings$6;->$SwitchMap$com$android$settings$TrustedCredentialsSettings$Tab:[I
+    sput-object v0, Lcom/android/settings_ext/TrustedCredentialsSettings$6;->$SwitchMap$com$android$settings$TrustedCredentialsSettings$Tab:[I
 
     :try_start_0
-    sget-object v0, Lcom/android/settings/TrustedCredentialsSettings$6;->$SwitchMap$com$android$settings$TrustedCredentialsSettings$Tab:[I
+    sget-object v0, Lcom/android/settings_ext/TrustedCredentialsSettings$6;->$SwitchMap$com$android$settings$TrustedCredentialsSettings$Tab:[I
 
-    sget-object v1, Lcom/android/settings/TrustedCredentialsSettings$Tab;->SYSTEM:Lcom/android/settings/TrustedCredentialsSettings$Tab;
+    sget-object v1, Lcom/android/settings_ext/TrustedCredentialsSettings$Tab;->SYSTEM:Lcom/android/settings_ext/TrustedCredentialsSettings$Tab;
 
-    invoke-virtual {v1}, Lcom/android/settings/TrustedCredentialsSettings$Tab;->ordinal()I
+    invoke-virtual {v1}, Lcom/android/settings_ext/TrustedCredentialsSettings$Tab;->ordinal()I
 
     move-result v1
 
@@ -51,11 +51,11 @@
 
     :goto_0
     :try_start_1
-    sget-object v0, Lcom/android/settings/TrustedCredentialsSettings$6;->$SwitchMap$com$android$settings$TrustedCredentialsSettings$Tab:[I
+    sget-object v0, Lcom/android/settings_ext/TrustedCredentialsSettings$6;->$SwitchMap$com$android$settings$TrustedCredentialsSettings$Tab:[I
 
-    sget-object v1, Lcom/android/settings/TrustedCredentialsSettings$Tab;->USER:Lcom/android/settings/TrustedCredentialsSettings$Tab;
+    sget-object v1, Lcom/android/settings_ext/TrustedCredentialsSettings$Tab;->USER:Lcom/android/settings_ext/TrustedCredentialsSettings$Tab;
 
-    invoke-virtual {v1}, Lcom/android/settings/TrustedCredentialsSettings$Tab;->ordinal()I
+    invoke-virtual {v1}, Lcom/android/settings_ext/TrustedCredentialsSettings$Tab;->ordinal()I
 
     move-result v1
 

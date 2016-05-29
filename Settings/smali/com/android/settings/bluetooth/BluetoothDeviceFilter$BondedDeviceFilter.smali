@@ -1,14 +1,14 @@
-.class final Lcom/android/settings/bluetooth/BluetoothDeviceFilter$BondedDeviceFilter;
+.class final Lcom/android/settings_ext/bluetooth/BluetoothDeviceFilter$BondedDeviceFilter;
 .super Ljava/lang/Object;
 .source "BluetoothDeviceFilter.java"
 
 # interfaces
-.implements Lcom/android/settings/bluetooth/BluetoothDeviceFilter$Filter;
+.implements Lcom/android/settings_ext/bluetooth/BluetoothDeviceFilter$Filter;
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/android/settings/bluetooth/BluetoothDeviceFilter;
+    value = Lcom/android/settings_ext/bluetooth/BluetoothDeviceFilter;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -28,13 +28,13 @@
     return-void
 .end method
 
-.method synthetic constructor <init>(Lcom/android/settings/bluetooth/BluetoothDeviceFilter$1;)V
+.method synthetic constructor <init>(Lcom/android/settings_ext/bluetooth/BluetoothDeviceFilter$1;)V
     .locals 0
-    .param p1, "x0"    # Lcom/android/settings/bluetooth/BluetoothDeviceFilter$1;
+    .param p1, "x0"    # Lcom/android/settings_ext/bluetooth/BluetoothDeviceFilter$1;
 
     .prologue
     .line 85
-    invoke-direct {p0}, Lcom/android/settings/bluetooth/BluetoothDeviceFilter$BondedDeviceFilter;-><init>()V
+    invoke-direct {p0}, Lcom/android/settings_ext/bluetooth/BluetoothDeviceFilter$BondedDeviceFilter;-><init>()V
 
     return-void
 .end method

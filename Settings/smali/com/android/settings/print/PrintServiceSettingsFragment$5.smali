@@ -1,4 +1,4 @@
-.class Lcom/android/settings/print/PrintServiceSettingsFragment$5;
+.class Lcom/android/settings_ext/print/PrintServiceSettingsFragment$5;
 .super Ljava/lang/Object;
 .source "PrintServiceSettingsFragment.java"
 
@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/android/settings/print/PrintServiceSettingsFragment;->onCreateOptionsMenu(Landroid/view/Menu;Landroid/view/MenuInflater;)V
+    value = Lcom/android/settings_ext/print/PrintServiceSettingsFragment;->onCreateOptionsMenu(Landroid/view/Menu;Landroid/view/MenuInflater;)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -18,16 +18,16 @@
 
 
 # instance fields
-.field final synthetic this$0:Lcom/android/settings/print/PrintServiceSettingsFragment;
+.field final synthetic this$0:Lcom/android/settings_ext/print/PrintServiceSettingsFragment;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/print/PrintServiceSettingsFragment;)V
+.method constructor <init>(Lcom/android/settings_ext/print/PrintServiceSettingsFragment;)V
     .locals 0
 
     .prologue
     .line 429
-    iput-object p1, p0, Lcom/android/settings/print/PrintServiceSettingsFragment$5;->this$0:Lcom/android/settings/print/PrintServiceSettingsFragment;
+    iput-object p1, p0, Lcom/android/settings_ext/print/PrintServiceSettingsFragment$5;->this$0:Lcom/android/settings_ext/print/PrintServiceSettingsFragment;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -42,9 +42,9 @@
 
     .prologue
     .line 432
-    iget-object v0, p0, Lcom/android/settings/print/PrintServiceSettingsFragment$5;->this$0:Lcom/android/settings/print/PrintServiceSettingsFragment;
+    iget-object v0, p0, Lcom/android/settings_ext/print/PrintServiceSettingsFragment$5;->this$0:Lcom/android/settings_ext/print/PrintServiceSettingsFragment;
 
-    invoke-virtual {v0}, Lcom/android/settings/print/PrintServiceSettingsFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {v0}, Lcom/android/settings_ext/print/PrintServiceSettingsFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
@@ -59,11 +59,11 @@
     if-eqz v0, :cond_0
 
     .line 433
-    iget-object v0, p0, Lcom/android/settings/print/PrintServiceSettingsFragment$5;->this$0:Lcom/android/settings/print/PrintServiceSettingsFragment;
+    iget-object v0, p0, Lcom/android/settings_ext/print/PrintServiceSettingsFragment$5;->this$0:Lcom/android/settings_ext/print/PrintServiceSettingsFragment;
 
     const v1, 0x7f09063a
 
-    invoke-virtual {v0, v1}, Lcom/android/settings/print/PrintServiceSettingsFragment;->getString(I)Ljava/lang/String;
+    invoke-virtual {v0, v1}, Lcom/android/settings_ext/print/PrintServiceSettingsFragment;->getString(I)Ljava/lang/String;
 
     move-result-object v0
 
@@ -80,9 +80,9 @@
 
     .prologue
     .line 439
-    iget-object v1, p0, Lcom/android/settings/print/PrintServiceSettingsFragment$5;->this$0:Lcom/android/settings/print/PrintServiceSettingsFragment;
+    iget-object v1, p0, Lcom/android/settings_ext/print/PrintServiceSettingsFragment$5;->this$0:Lcom/android/settings_ext/print/PrintServiceSettingsFragment;
 
-    invoke-virtual {v1}, Lcom/android/settings/print/PrintServiceSettingsFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {v1}, Lcom/android/settings_ext/print/PrintServiceSettingsFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
@@ -107,11 +107,11 @@
     if-eqz v1, :cond_0
 
     .line 442
-    iget-object v1, p0, Lcom/android/settings/print/PrintServiceSettingsFragment$5;->this$0:Lcom/android/settings/print/PrintServiceSettingsFragment;
+    iget-object v1, p0, Lcom/android/settings_ext/print/PrintServiceSettingsFragment$5;->this$0:Lcom/android/settings_ext/print/PrintServiceSettingsFragment;
 
     const v2, 0x7f09063b
 
-    invoke-virtual {v1, v2}, Lcom/android/settings/print/PrintServiceSettingsFragment;->getString(I)Ljava/lang/String;
+    invoke-virtual {v1, v2}, Lcom/android/settings_ext/print/PrintServiceSettingsFragment;->getString(I)Ljava/lang/String;
 
     move-result-object v1
 

@@ -1,11 +1,11 @@
-.class Lcom/android/settings/location/LocationMode$1;
+.class Lcom/android/settings_ext/location/LocationMode$1;
 .super Landroid/os/Handler;
 .source "LocationMode.java"
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/android/settings/location/LocationMode;
+    value = Lcom/android/settings_ext/location/LocationMode;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -15,16 +15,16 @@
 
 
 # instance fields
-.field final synthetic this$0:Lcom/android/settings/location/LocationMode;
+.field final synthetic this$0:Lcom/android/settings_ext/location/LocationMode;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/location/LocationMode;)V
+.method constructor <init>(Lcom/android/settings_ext/location/LocationMode;)V
     .locals 0
 
     .prologue
     .line 86
-    iput-object p1, p0, Lcom/android/settings/location/LocationMode$1;->this$0:Lcom/android/settings/location/LocationMode;
+    iput-object p1, p0, Lcom/android/settings_ext/location/LocationMode$1;->this$0:Lcom/android/settings_ext/location/LocationMode;
 
     invoke-direct {p0}, Landroid/os/Handler;-><init>()V
 
@@ -60,16 +60,16 @@
     if-nez v0, :cond_1
 
     .line 91
-    iget-object v0, p0, Lcom/android/settings/location/LocationMode$1;->this$0:Lcom/android/settings/location/LocationMode;
+    iget-object v0, p0, Lcom/android/settings_ext/location/LocationMode$1;->this$0:Lcom/android/settings_ext/location/LocationMode;
 
-    # getter for: Lcom/android/settings/location/LocationMode;->mIZat:Lcom/android/settings/location/WrappingIZatSwitchPreference;
-    invoke-static {v0}, Lcom/android/settings/location/LocationMode;->access$000(Lcom/android/settings/location/LocationMode;)Lcom/android/settings/location/WrappingIZatSwitchPreference;
+    # getter for: Lcom/android/settings_ext/location/LocationMode;->mIZat:Lcom/android/settings_ext/location/WrappingIZatSwitchPreference;
+    invoke-static {v0}, Lcom/android/settings_ext/location/LocationMode;->access$000(Lcom/android/settings_ext/location/LocationMode;)Lcom/android/settings_ext/location/WrappingIZatSwitchPreference;
 
     move-result-object v0
 
     const/4 v1, 0x0
 
-    invoke-virtual {v0, v1}, Lcom/android/settings/location/WrappingIZatSwitchPreference;->setChecked(Z)V
+    invoke-virtual {v0, v1}, Lcom/android/settings_ext/location/WrappingIZatSwitchPreference;->setChecked(Z)V
 
     goto :goto_0
 
@@ -80,14 +80,14 @@
     if-ne v1, v0, :cond_0
 
     .line 93
-    iget-object v0, p0, Lcom/android/settings/location/LocationMode$1;->this$0:Lcom/android/settings/location/LocationMode;
+    iget-object v0, p0, Lcom/android/settings_ext/location/LocationMode$1;->this$0:Lcom/android/settings_ext/location/LocationMode;
 
-    # getter for: Lcom/android/settings/location/LocationMode;->mIZat:Lcom/android/settings/location/WrappingIZatSwitchPreference;
-    invoke-static {v0}, Lcom/android/settings/location/LocationMode;->access$000(Lcom/android/settings/location/LocationMode;)Lcom/android/settings/location/WrappingIZatSwitchPreference;
+    # getter for: Lcom/android/settings_ext/location/LocationMode;->mIZat:Lcom/android/settings_ext/location/WrappingIZatSwitchPreference;
+    invoke-static {v0}, Lcom/android/settings_ext/location/LocationMode;->access$000(Lcom/android/settings_ext/location/LocationMode;)Lcom/android/settings_ext/location/WrappingIZatSwitchPreference;
 
     move-result-object v0
 
-    invoke-virtual {v0, v1}, Lcom/android/settings/location/WrappingIZatSwitchPreference;->setChecked(Z)V
+    invoke-virtual {v0, v1}, Lcom/android/settings_ext/location/WrappingIZatSwitchPreference;->setChecked(Z)V
 
     goto :goto_0
 

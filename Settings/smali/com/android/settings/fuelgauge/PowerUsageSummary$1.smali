@@ -1,11 +1,11 @@
-.class Lcom/android/settings/fuelgauge/PowerUsageSummary$1;
+.class Lcom/android/settings_ext/fuelgauge/PowerUsageSummary$1;
 .super Landroid/content/BroadcastReceiver;
 .source "PowerUsageSummary.java"
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/android/settings/fuelgauge/PowerUsageSummary;
+    value = Lcom/android/settings_ext/fuelgauge/PowerUsageSummary;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -15,16 +15,16 @@
 
 
 # instance fields
-.field final synthetic this$0:Lcom/android/settings/fuelgauge/PowerUsageSummary;
+.field final synthetic this$0:Lcom/android/settings_ext/fuelgauge/PowerUsageSummary;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/fuelgauge/PowerUsageSummary;)V
+.method constructor <init>(Lcom/android/settings_ext/fuelgauge/PowerUsageSummary;)V
     .locals 0
 
     .prologue
     .line 85
-    iput-object p1, p0, Lcom/android/settings/fuelgauge/PowerUsageSummary$1;->this$0:Lcom/android/settings/fuelgauge/PowerUsageSummary;
+    iput-object p1, p0, Lcom/android/settings_ext/fuelgauge/PowerUsageSummary$1;->this$0:Lcom/android/settings_ext/fuelgauge/PowerUsageSummary;
 
     invoke-direct {p0}, Landroid/content/BroadcastReceiver;-><init>()V
 
@@ -56,19 +56,19 @@
 
     if-eqz v1, :cond_0
 
-    iget-object v1, p0, Lcom/android/settings/fuelgauge/PowerUsageSummary$1;->this$0:Lcom/android/settings/fuelgauge/PowerUsageSummary;
+    iget-object v1, p0, Lcom/android/settings_ext/fuelgauge/PowerUsageSummary$1;->this$0:Lcom/android/settings_ext/fuelgauge/PowerUsageSummary;
 
-    # invokes: Lcom/android/settings/fuelgauge/PowerUsageSummary;->updateBatteryStatus(Landroid/content/Intent;)Z
-    invoke-static {v1, p2}, Lcom/android/settings/fuelgauge/PowerUsageSummary;->access$000(Lcom/android/settings/fuelgauge/PowerUsageSummary;Landroid/content/Intent;)Z
+    # invokes: Lcom/android/settings_ext/fuelgauge/PowerUsageSummary;->updateBatteryStatus(Landroid/content/Intent;)Z
+    invoke-static {v1, p2}, Lcom/android/settings_ext/fuelgauge/PowerUsageSummary;->access$000(Lcom/android/settings_ext/fuelgauge/PowerUsageSummary;Landroid/content/Intent;)Z
 
     move-result v1
 
     if-eqz v1, :cond_0
 
     .line 92
-    iget-object v1, p0, Lcom/android/settings/fuelgauge/PowerUsageSummary$1;->this$0:Lcom/android/settings/fuelgauge/PowerUsageSummary;
+    iget-object v1, p0, Lcom/android/settings_ext/fuelgauge/PowerUsageSummary$1;->this$0:Lcom/android/settings_ext/fuelgauge/PowerUsageSummary;
 
-    iget-object v1, v1, Lcom/android/settings/fuelgauge/PowerUsageSummary;->mHandler:Landroid/os/Handler;
+    iget-object v1, v1, Lcom/android/settings_ext/fuelgauge/PowerUsageSummary;->mHandler:Landroid/os/Handler;
 
     invoke-virtual {v1, v4}, Landroid/os/Handler;->hasMessages(I)Z
 
@@ -77,9 +77,9 @@
     if-nez v1, :cond_0
 
     .line 93
-    iget-object v1, p0, Lcom/android/settings/fuelgauge/PowerUsageSummary$1;->this$0:Lcom/android/settings/fuelgauge/PowerUsageSummary;
+    iget-object v1, p0, Lcom/android/settings_ext/fuelgauge/PowerUsageSummary$1;->this$0:Lcom/android/settings_ext/fuelgauge/PowerUsageSummary;
 
-    iget-object v1, v1, Lcom/android/settings/fuelgauge/PowerUsageSummary;->mHandler:Landroid/os/Handler;
+    iget-object v1, v1, Lcom/android/settings_ext/fuelgauge/PowerUsageSummary;->mHandler:Landroid/os/Handler;
 
     const-wide/16 v2, 0x1f4
 

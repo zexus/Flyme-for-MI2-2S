@@ -1,11 +1,11 @@
-.class Lcom/android/settings/dashboard/DashboardSummary$1;
+.class Lcom/android/settings_ext/dashboard/DashboardSummary$1;
 .super Landroid/os/Handler;
 .source "DashboardSummary.java"
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/android/settings/dashboard/DashboardSummary;
+    value = Lcom/android/settings_ext/dashboard/DashboardSummary;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -15,16 +15,16 @@
 
 
 # instance fields
-.field final synthetic this$0:Lcom/android/settings/dashboard/DashboardSummary;
+.field final synthetic this$0:Lcom/android/settings_ext/dashboard/DashboardSummary;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/dashboard/DashboardSummary;)V
+.method constructor <init>(Lcom/android/settings_ext/dashboard/DashboardSummary;)V
     .locals 0
 
     .prologue
     .line 47
-    iput-object p1, p0, Lcom/android/settings/dashboard/DashboardSummary$1;->this$0:Lcom/android/settings/dashboard/DashboardSummary;
+    iput-object p1, p0, Lcom/android/settings_ext/dashboard/DashboardSummary$1;->this$0:Lcom/android/settings_ext/dashboard/DashboardSummary;
 
     invoke-direct {p0}, Landroid/os/Handler;-><init>()V
 
@@ -49,18 +49,18 @@
 
     .line 52
     :pswitch_0
-    iget-object v1, p0, Lcom/android/settings/dashboard/DashboardSummary$1;->this$0:Lcom/android/settings/dashboard/DashboardSummary;
+    iget-object v1, p0, Lcom/android/settings_ext/dashboard/DashboardSummary$1;->this$0:Lcom/android/settings_ext/dashboard/DashboardSummary;
 
-    invoke-virtual {v1}, Lcom/android/settings/dashboard/DashboardSummary;->getActivity()Landroid/app/Activity;
+    invoke-virtual {v1}, Lcom/android/settings_ext/dashboard/DashboardSummary;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
     .line 53
     .local v0, "context":Landroid/content/Context;
-    iget-object v1, p0, Lcom/android/settings/dashboard/DashboardSummary$1;->this$0:Lcom/android/settings/dashboard/DashboardSummary;
+    iget-object v1, p0, Lcom/android/settings_ext/dashboard/DashboardSummary$1;->this$0:Lcom/android/settings_ext/dashboard/DashboardSummary;
 
-    # invokes: Lcom/android/settings/dashboard/DashboardSummary;->rebuildUI(Landroid/content/Context;)V
-    invoke-static {v1, v0}, Lcom/android/settings/dashboard/DashboardSummary;->access$000(Lcom/android/settings/dashboard/DashboardSummary;Landroid/content/Context;)V
+    # invokes: Lcom/android/settings_ext/dashboard/DashboardSummary;->rebuildUI(Landroid/content/Context;)V
+    invoke-static {v1, v0}, Lcom/android/settings_ext/dashboard/DashboardSummary;->access$000(Lcom/android/settings_ext/dashboard/DashboardSummary;Landroid/content/Context;)V
 
     goto :goto_0
 

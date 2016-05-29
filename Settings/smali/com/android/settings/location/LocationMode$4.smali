@@ -1,4 +1,4 @@
-.class Lcom/android/settings/location/LocationMode$4;
+.class Lcom/android/settings_ext/location/LocationMode$4;
 .super Ljava/lang/Object;
 .source "LocationMode.java"
 
@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/android/settings/location/LocationMode;->createPreferenceHierarchy()Landroid/preference/PreferenceScreen;
+    value = Lcom/android/settings_ext/location/LocationMode;->createPreferenceHierarchy()Landroid/preference/PreferenceScreen;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -18,16 +18,16 @@
 
 
 # instance fields
-.field final synthetic this$0:Lcom/android/settings/location/LocationMode;
+.field final synthetic this$0:Lcom/android/settings_ext/location/LocationMode;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/location/LocationMode;)V
+.method constructor <init>(Lcom/android/settings_ext/location/LocationMode;)V
     .locals 0
 
     .prologue
     .line 255
-    iput-object p1, p0, Lcom/android/settings/location/LocationMode$4;->this$0:Lcom/android/settings/location/LocationMode;
+    iput-object p1, p0, Lcom/android/settings_ext/location/LocationMode$4;->this$0:Lcom/android/settings_ext/location/LocationMode;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -56,20 +56,20 @@
 
     .line 260
     :try_start_0
-    iget-object v2, p0, Lcom/android/settings/location/LocationMode$4;->this$0:Lcom/android/settings/location/LocationMode;
+    iget-object v2, p0, Lcom/android/settings_ext/location/LocationMode$4;->this$0:Lcom/android/settings_ext/location/LocationMode;
 
-    # getter for: Lcom/android/settings/location/LocationMode;->mXTService:Lcom/android/location/XT/IXTSrv;
-    invoke-static {v2}, Lcom/android/settings/location/LocationMode;->access$400(Lcom/android/settings/location/LocationMode;)Lcom/android/location/XT/IXTSrv;
+    # getter for: Lcom/android/settings_ext/location/LocationMode;->mXTService:Lcom/android/location/XT/IXTSrv;
+    invoke-static {v2}, Lcom/android/settings_ext/location/LocationMode;->access$400(Lcom/android/settings_ext/location/LocationMode;)Lcom/android/location/XT/IXTSrv;
 
     move-result-object v2
 
     if-eqz v2, :cond_0
 
     .line 261
-    iget-object v2, p0, Lcom/android/settings/location/LocationMode$4;->this$0:Lcom/android/settings/location/LocationMode;
+    iget-object v2, p0, Lcom/android/settings_ext/location/LocationMode$4;->this$0:Lcom/android/settings_ext/location/LocationMode;
 
-    # getter for: Lcom/android/settings/location/LocationMode;->mXTService:Lcom/android/location/XT/IXTSrv;
-    invoke-static {v2}, Lcom/android/settings/location/LocationMode;->access$400(Lcom/android/settings/location/LocationMode;)Lcom/android/location/XT/IXTSrv;
+    # getter for: Lcom/android/settings_ext/location/LocationMode;->mXTService:Lcom/android/location/XT/IXTSrv;
+    invoke-static {v2}, Lcom/android/settings_ext/location/LocationMode;->access$400(Lcom/android/settings_ext/location/LocationMode;)Lcom/android/location/XT/IXTSrv;
 
     move-result-object v2
 
@@ -98,20 +98,20 @@
     .end local v1    # "e":Landroid/os/RemoteException;
     :cond_1
     :try_start_1
-    iget-object v2, p0, Lcom/android/settings/location/LocationMode$4;->this$0:Lcom/android/settings/location/LocationMode;
+    iget-object v2, p0, Lcom/android/settings_ext/location/LocationMode$4;->this$0:Lcom/android/settings_ext/location/LocationMode;
 
-    # getter for: Lcom/android/settings/location/LocationMode;->mXTService:Lcom/android/location/XT/IXTSrv;
-    invoke-static {v2}, Lcom/android/settings/location/LocationMode;->access$400(Lcom/android/settings/location/LocationMode;)Lcom/android/location/XT/IXTSrv;
+    # getter for: Lcom/android/settings_ext/location/LocationMode;->mXTService:Lcom/android/location/XT/IXTSrv;
+    invoke-static {v2}, Lcom/android/settings_ext/location/LocationMode;->access$400(Lcom/android/settings_ext/location/LocationMode;)Lcom/android/location/XT/IXTSrv;
 
     move-result-object v2
 
     if-eqz v2, :cond_0
 
     .line 269
-    iget-object v2, p0, Lcom/android/settings/location/LocationMode$4;->this$0:Lcom/android/settings/location/LocationMode;
+    iget-object v2, p0, Lcom/android/settings_ext/location/LocationMode$4;->this$0:Lcom/android/settings_ext/location/LocationMode;
 
-    # getter for: Lcom/android/settings/location/LocationMode;->mXTService:Lcom/android/location/XT/IXTSrv;
-    invoke-static {v2}, Lcom/android/settings/location/LocationMode;->access$400(Lcom/android/settings/location/LocationMode;)Lcom/android/location/XT/IXTSrv;
+    # getter for: Lcom/android/settings_ext/location/LocationMode;->mXTService:Lcom/android/location/XT/IXTSrv;
+    invoke-static {v2}, Lcom/android/settings_ext/location/LocationMode;->access$400(Lcom/android/settings_ext/location/LocationMode;)Lcom/android/location/XT/IXTSrv;
 
     move-result-object v2
 

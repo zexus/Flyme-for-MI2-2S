@@ -1,4 +1,4 @@
-.class Lcom/android/settings/DreamSettings$3;
+.class Lcom/android/settings_ext/DreamSettings$3;
 .super Ljava/lang/Object;
 .source "DreamSettings.java"
 
@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/android/settings/DreamSettings;->createMenuItem(Landroid/view/Menu;IIZLjava/lang/Runnable;)Landroid/view/MenuItem;
+    value = Lcom/android/settings_ext/DreamSettings;->createMenuItem(Landroid/view/Menu;IIZLjava/lang/Runnable;)Landroid/view/MenuItem;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -18,20 +18,20 @@
 
 
 # instance fields
-.field final synthetic this$0:Lcom/android/settings/DreamSettings;
+.field final synthetic this$0:Lcom/android/settings_ext/DreamSettings;
 
 .field final synthetic val$onClick:Ljava/lang/Runnable;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/DreamSettings;Ljava/lang/Runnable;)V
+.method constructor <init>(Lcom/android/settings_ext/DreamSettings;Ljava/lang/Runnable;)V
     .locals 0
 
     .prologue
     .line 170
-    iput-object p1, p0, Lcom/android/settings/DreamSettings$3;->this$0:Lcom/android/settings/DreamSettings;
+    iput-object p1, p0, Lcom/android/settings_ext/DreamSettings$3;->this$0:Lcom/android/settings_ext/DreamSettings;
 
-    iput-object p2, p0, Lcom/android/settings/DreamSettings$3;->val$onClick:Ljava/lang/Runnable;
+    iput-object p2, p0, Lcom/android/settings_ext/DreamSettings$3;->val$onClick:Ljava/lang/Runnable;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -46,7 +46,7 @@
 
     .prologue
     .line 173
-    iget-object v0, p0, Lcom/android/settings/DreamSettings$3;->val$onClick:Ljava/lang/Runnable;
+    iget-object v0, p0, Lcom/android/settings_ext/DreamSettings$3;->val$onClick:Ljava/lang/Runnable;
 
     invoke-interface {v0}, Ljava/lang/Runnable;->run()V
 

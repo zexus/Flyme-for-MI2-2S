@@ -1,11 +1,11 @@
-.class Lcom/android/settings/wfd/WifiDisplaySettings$15;
+.class Lcom/android/settings_ext/wfd/WifiDisplaySettings$15;
 .super Landroid/database/ContentObserver;
 .source "WifiDisplaySettings.java"
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/android/settings/wfd/WifiDisplaySettings;
+    value = Lcom/android/settings_ext/wfd/WifiDisplaySettings;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -15,17 +15,17 @@
 
 
 # instance fields
-.field final synthetic this$0:Lcom/android/settings/wfd/WifiDisplaySettings;
+.field final synthetic this$0:Lcom/android/settings_ext/wfd/WifiDisplaySettings;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/wfd/WifiDisplaySettings;Landroid/os/Handler;)V
+.method constructor <init>(Lcom/android/settings_ext/wfd/WifiDisplaySettings;Landroid/os/Handler;)V
     .locals 0
     .param p2, "x0"    # Landroid/os/Handler;
 
     .prologue
     .line 611
-    iput-object p1, p0, Lcom/android/settings/wfd/WifiDisplaySettings$15;->this$0:Lcom/android/settings/wfd/WifiDisplaySettings;
+    iput-object p1, p0, Lcom/android/settings_ext/wfd/WifiDisplaySettings$15;->this$0:Lcom/android/settings_ext/wfd/WifiDisplaySettings;
 
     invoke-direct {p0, p2}, Landroid/database/ContentObserver;-><init>(Landroid/os/Handler;)V
 
@@ -41,12 +41,12 @@
 
     .prologue
     .line 614
-    iget-object v0, p0, Lcom/android/settings/wfd/WifiDisplaySettings$15;->this$0:Lcom/android/settings/wfd/WifiDisplaySettings;
+    iget-object v0, p0, Lcom/android/settings_ext/wfd/WifiDisplaySettings$15;->this$0:Lcom/android/settings_ext/wfd/WifiDisplaySettings;
 
     const/4 v1, 0x1
 
-    # invokes: Lcom/android/settings/wfd/WifiDisplaySettings;->scheduleUpdate(I)V
-    invoke-static {v0, v1}, Lcom/android/settings/wfd/WifiDisplaySettings;->access$1200(Lcom/android/settings/wfd/WifiDisplaySettings;I)V
+    # invokes: Lcom/android/settings_ext/wfd/WifiDisplaySettings;->scheduleUpdate(I)V
+    invoke-static {v0, v1}, Lcom/android/settings_ext/wfd/WifiDisplaySettings;->access$1200(Lcom/android/settings_ext/wfd/WifiDisplaySettings;I)V
 
     .line 615
     return-void

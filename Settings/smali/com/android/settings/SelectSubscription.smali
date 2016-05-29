@@ -1,4 +1,4 @@
-.class public Lcom/android/settings/SelectSubscription;
+.class public Lcom/android/settings_ext/SelectSubscription;
 .super Landroid/app/TabActivity;
 .source "SelectSubscription.java"
 
@@ -40,7 +40,7 @@
 
     aput-object v2, v0, v1
 
-    iput-object v0, p0, Lcom/android/settings/SelectSubscription;->tabLabel:[Ljava/lang/String;
+    iput-object v0, p0, Lcom/android/settings_ext/SelectSubscription;->tabLabel:[Ljava/lang/String;
 
     return-void
 .end method
@@ -72,21 +72,21 @@
     .line 68
     const-string v8, "Creating activity"
 
-    invoke-static {v8}, Lcom/android/settings/SelectSubscription;->log(Ljava/lang/String;)V
+    invoke-static {v8}, Lcom/android/settings_ext/SelectSubscription;->log(Ljava/lang/String;)V
 
     .line 70
     const v8, 0x7f0400ac
 
-    invoke-virtual {p0, v8}, Lcom/android/settings/SelectSubscription;->setContentView(I)V
+    invoke-virtual {p0, v8}, Lcom/android/settings_ext/SelectSubscription;->setContentView(I)V
 
     .line 72
-    invoke-virtual {p0}, Lcom/android/settings/SelectSubscription;->getTabHost()Landroid/widget/TabHost;
+    invoke-virtual {p0}, Lcom/android/settings_ext/SelectSubscription;->getTabHost()Landroid/widget/TabHost;
 
     move-result-object v6
 
     .line 74
     .local v6, "tabHost":Landroid/widget/TabHost;
-    invoke-virtual {p0}, Lcom/android/settings/SelectSubscription;->getIntent()Landroid/content/Intent;
+    invoke-virtual {p0}, Lcom/android/settings_ext/SelectSubscription;->getIntent()Landroid/content/Intent;
 
     move-result-object v2
 
@@ -176,7 +176,7 @@
 
     move-result-object v8
 
-    invoke-static {v8}, Lcom/android/settings/SelectSubscription;->log(Ljava/lang/String;)V
+    invoke-static {v8}, Lcom/android/settings_ext/SelectSubscription;->log(Ljava/lang/String;)V
 
     .line 90
     new-instance v8, Ljava/lang/StringBuilder;
@@ -199,10 +199,10 @@
 
     move-result-object v8
 
-    iput-object v8, p0, Lcom/android/settings/SelectSubscription;->subscriptionPref:Landroid/widget/TabHost$TabSpec;
+    iput-object v8, p0, Lcom/android/settings_ext/SelectSubscription;->subscriptionPref:Landroid/widget/TabHost$TabSpec;
 
     .line 91
-    iget-object v8, p0, Lcom/android/settings/SelectSubscription;->subscriptionPref:Landroid/widget/TabHost$TabSpec;
+    iget-object v8, p0, Lcom/android/settings_ext/SelectSubscription;->subscriptionPref:Landroid/widget/TabHost$TabSpec;
 
     invoke-virtual {v8, v0}, Landroid/widget/TabHost$TabSpec;->setIndicator(Ljava/lang/CharSequence;)Landroid/widget/TabHost$TabSpec;
 
@@ -227,12 +227,12 @@
     invoke-static {v2, v1}, Landroid/telephony/SubscriptionManager;->putPhoneIdAndSubIdExtra(Landroid/content/Intent;I)V
 
     .line 97
-    iget-object v8, p0, Lcom/android/settings/SelectSubscription;->subscriptionPref:Landroid/widget/TabHost$TabSpec;
+    iget-object v8, p0, Lcom/android/settings_ext/SelectSubscription;->subscriptionPref:Landroid/widget/TabHost$TabSpec;
 
     invoke-virtual {v8, v2}, Landroid/widget/TabHost$TabSpec;->setContent(Landroid/content/Intent;)Landroid/widget/TabHost$TabSpec;
 
     .line 98
-    iget-object v8, p0, Lcom/android/settings/SelectSubscription;->subscriptionPref:Landroid/widget/TabHost$TabSpec;
+    iget-object v8, p0, Lcom/android/settings_ext/SelectSubscription;->subscriptionPref:Landroid/widget/TabHost$TabSpec;
 
     invoke-virtual {v6, v8}, Landroid/widget/TabHost;->addTab(Landroid/widget/TabHost$TabSpec;)V
 
@@ -244,7 +244,7 @@
     .line 83
     .end local v0    # "displayName":Ljava/lang/String;
     :cond_0
-    iget-object v8, p0, Lcom/android/settings/SelectSubscription;->tabLabel:[Ljava/lang/String;
+    iget-object v8, p0, Lcom/android/settings_ext/SelectSubscription;->tabLabel:[Ljava/lang/String;
 
     aget-object v0, v8, v1
 

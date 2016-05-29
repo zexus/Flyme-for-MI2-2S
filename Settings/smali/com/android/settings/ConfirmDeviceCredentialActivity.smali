@@ -1,4 +1,4 @@
-.class public Lcom/android/settings/ConfirmDeviceCredentialActivity;
+.class public Lcom/android/settings_ext/ConfirmDeviceCredentialActivity;
 .super Landroid/app/Activity;
 .source "ConfirmDeviceCredentialActivity.java"
 
@@ -13,13 +13,13 @@
 
     .prologue
     .line 31
-    const-class v0, Lcom/android/settings/ConfirmDeviceCredentialActivity;
+    const-class v0, Lcom/android/settings_ext/ConfirmDeviceCredentialActivity;
 
     invoke-virtual {v0}, Ljava/lang/Class;->getSimpleName()Ljava/lang/String;
 
     move-result-object v0
 
-    sput-object v0, Lcom/android/settings/ConfirmDeviceCredentialActivity;->TAG:Ljava/lang/String;
+    sput-object v0, Lcom/android/settings_ext/ConfirmDeviceCredentialActivity;->TAG:Ljava/lang/String;
 
     return-void
 .end method
@@ -49,7 +49,7 @@
     .local v0, "intent":Landroid/content/Intent;
     const-string v1, "com.android.settings"
 
-    const-class v2, Lcom/android/settings/ConfirmDeviceCredentialActivity;
+    const-class v2, Lcom/android/settings_ext/ConfirmDeviceCredentialActivity;
 
     invoke-virtual {v2}, Ljava/lang/Class;->getName()Ljava/lang/String;
 
@@ -92,7 +92,7 @@
     .line 61
     .local v0, "credentialsConfirmed":Z
     :goto_0
-    sget-object v3, Lcom/android/settings/ConfirmDeviceCredentialActivity;->TAG:Ljava/lang/String;
+    sget-object v3, Lcom/android/settings_ext/ConfirmDeviceCredentialActivity;->TAG:Ljava/lang/String;
 
     new-instance v4, Ljava/lang/StringBuilder;
 
@@ -120,10 +120,10 @@
     move v1, v2
 
     :cond_0
-    invoke-virtual {p0, v1}, Lcom/android/settings/ConfirmDeviceCredentialActivity;->setResult(I)V
+    invoke-virtual {p0, v1}, Lcom/android/settings_ext/ConfirmDeviceCredentialActivity;->setResult(I)V
 
     .line 63
-    invoke-virtual {p0}, Lcom/android/settings/ConfirmDeviceCredentialActivity;->finish()V
+    invoke-virtual {p0}, Lcom/android/settings_ext/ConfirmDeviceCredentialActivity;->finish()V
 
     .line 64
     return-void
@@ -145,7 +145,7 @@
     invoke-super {p0, p1}, Landroid/app/Activity;->onCreate(Landroid/os/Bundle;)V
 
     .line 46
-    invoke-virtual {p0}, Lcom/android/settings/ConfirmDeviceCredentialActivity;->getIntent()Landroid/content/Intent;
+    invoke-virtual {p0}, Lcom/android/settings_ext/ConfirmDeviceCredentialActivity;->getIntent()Landroid/content/Intent;
 
     move-result-object v2
 
@@ -167,22 +167,22 @@
 
     .line 50
     .local v0, "details":Ljava/lang/String;
-    new-instance v1, Lcom/android/settings/ChooseLockSettingsHelper;
+    new-instance v1, Lcom/android/settings_ext/ChooseLockSettingsHelper;
 
-    invoke-direct {v1, p0}, Lcom/android/settings/ChooseLockSettingsHelper;-><init>(Landroid/app/Activity;)V
+    invoke-direct {v1, p0}, Lcom/android/settings_ext/ChooseLockSettingsHelper;-><init>(Landroid/app/Activity;)V
 
     .line 51
-    .local v1, "helper":Lcom/android/settings/ChooseLockSettingsHelper;
+    .local v1, "helper":Lcom/android/settings_ext/ChooseLockSettingsHelper;
     const/4 v4, 0x0
 
-    invoke-virtual {v1, v4, v3, v0}, Lcom/android/settings/ChooseLockSettingsHelper;->launchConfirmationActivity(ILjava/lang/CharSequence;Ljava/lang/CharSequence;)Z
+    invoke-virtual {v1, v4, v3, v0}, Lcom/android/settings_ext/ChooseLockSettingsHelper;->launchConfirmationActivity(ILjava/lang/CharSequence;Ljava/lang/CharSequence;)Z
 
     move-result v4
 
     if-nez v4, :cond_0
 
     .line 52
-    sget-object v4, Lcom/android/settings/ConfirmDeviceCredentialActivity;->TAG:Ljava/lang/String;
+    sget-object v4, Lcom/android/settings_ext/ConfirmDeviceCredentialActivity;->TAG:Ljava/lang/String;
 
     const-string v5, "No pattern, password or PIN set."
 
@@ -191,10 +191,10 @@
     .line 53
     const/4 v4, -0x1
 
-    invoke-virtual {p0, v4}, Lcom/android/settings/ConfirmDeviceCredentialActivity;->setResult(I)V
+    invoke-virtual {p0, v4}, Lcom/android/settings_ext/ConfirmDeviceCredentialActivity;->setResult(I)V
 
     .line 54
-    invoke-virtual {p0}, Lcom/android/settings/ConfirmDeviceCredentialActivity;->finish()V
+    invoke-virtual {p0}, Lcom/android/settings_ext/ConfirmDeviceCredentialActivity;->finish()V
 
     .line 56
     :cond_0

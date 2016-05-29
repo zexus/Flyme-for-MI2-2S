@@ -1,11 +1,11 @@
-.class public interface abstract Lcom/android/settings/deviceinfo/StorageMeasurement$MeasurementReceiver;
+.class public interface abstract Lcom/android/settings_ext/deviceinfo/StorageMeasurement$MeasurementReceiver;
 .super Ljava/lang/Object;
 .source "StorageMeasurement.java"
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/android/settings/deviceinfo/StorageMeasurement;
+    value = Lcom/android/settings_ext/deviceinfo/StorageMeasurement;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -15,8 +15,8 @@
 
 
 # virtual methods
-.method public abstract updateApproximate(Lcom/android/settings/deviceinfo/StorageMeasurement;JJ)V
+.method public abstract updateApproximate(Lcom/android/settings_ext/deviceinfo/StorageMeasurement;JJ)V
 .end method
 
-.method public abstract updateDetails(Lcom/android/settings/deviceinfo/StorageMeasurement;Lcom/android/settings/deviceinfo/StorageMeasurement$MeasurementDetails;)V
+.method public abstract updateDetails(Lcom/android/settings_ext/deviceinfo/StorageMeasurement;Lcom/android/settings_ext/deviceinfo/StorageMeasurement$MeasurementDetails;)V
 .end method

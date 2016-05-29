@@ -1,11 +1,11 @@
-.class synthetic Lcom/android/settings/widget/SettingsAppWidgetProvider$1;
+.class synthetic Lcom/android/settings_ext/widget/SettingsAppWidgetProvider$1;
 .super Ljava/lang/Object;
 .source "SettingsAppWidgetProvider.java"
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/android/settings/widget/SettingsAppWidgetProvider;
+    value = Lcom/android/settings_ext/widget/SettingsAppWidgetProvider;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;

@@ -1,4 +1,4 @@
-.class public Lcom/android/settings/wifi/WifiSettingsForSetupWizardXL;
+.class public Lcom/android/settings_ext/wifi/WifiSettingsForSetupWizardXL;
 .super Landroid/app/Activity;
 .source "WifiSettingsForSetupWizardXL.java"
 
@@ -57,11 +57,11 @@
 
 .field private mTopPadding:Landroid/view/View;
 
-.field private mWifiConfig:Lcom/android/settings/wifi/WifiConfigUiForSetupWizardXL;
+.field private mWifiConfig:Lcom/android/settings_ext/wifi/WifiConfigUiForSetupWizardXL;
 
 .field private mWifiManager:Landroid/net/wifi/WifiManager;
 
-.field private mWifiSettings:Lcom/android/settings/wifi/WifiSettings;
+.field private mWifiSettings:Lcom/android/settings_ext/wifi/WifiSettings;
 
 .field private mWifiSettingsFragmentLayout:Landroid/view/View;
 
@@ -78,10 +78,10 @@
 
     invoke-direct {v0, v1}, Ljava/util/EnumMap;-><init>(Ljava/lang/Class;)V
 
-    sput-object v0, Lcom/android/settings/wifi/WifiSettingsForSetupWizardXL;->sNetworkStateMap:Ljava/util/EnumMap;
+    sput-object v0, Lcom/android/settings_ext/wifi/WifiSettingsForSetupWizardXL;->sNetworkStateMap:Ljava/util/EnumMap;
 
     .line 62
-    sget-object v0, Lcom/android/settings/wifi/WifiSettingsForSetupWizardXL;->sNetworkStateMap:Ljava/util/EnumMap;
+    sget-object v0, Lcom/android/settings_ext/wifi/WifiSettingsForSetupWizardXL;->sNetworkStateMap:Ljava/util/EnumMap;
 
     sget-object v1, Landroid/net/NetworkInfo$DetailedState;->IDLE:Landroid/net/NetworkInfo$DetailedState;
 
@@ -90,7 +90,7 @@
     invoke-virtual {v0, v1, v2}, Ljava/util/EnumMap;->put(Ljava/lang/Enum;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 63
-    sget-object v0, Lcom/android/settings/wifi/WifiSettingsForSetupWizardXL;->sNetworkStateMap:Ljava/util/EnumMap;
+    sget-object v0, Lcom/android/settings_ext/wifi/WifiSettingsForSetupWizardXL;->sNetworkStateMap:Ljava/util/EnumMap;
 
     sget-object v1, Landroid/net/NetworkInfo$DetailedState;->SCANNING:Landroid/net/NetworkInfo$DetailedState;
 
@@ -99,7 +99,7 @@
     invoke-virtual {v0, v1, v2}, Ljava/util/EnumMap;->put(Ljava/lang/Enum;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 64
-    sget-object v0, Lcom/android/settings/wifi/WifiSettingsForSetupWizardXL;->sNetworkStateMap:Ljava/util/EnumMap;
+    sget-object v0, Lcom/android/settings_ext/wifi/WifiSettingsForSetupWizardXL;->sNetworkStateMap:Ljava/util/EnumMap;
 
     sget-object v1, Landroid/net/NetworkInfo$DetailedState;->CONNECTING:Landroid/net/NetworkInfo$DetailedState;
 
@@ -108,7 +108,7 @@
     invoke-virtual {v0, v1, v2}, Ljava/util/EnumMap;->put(Ljava/lang/Enum;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 65
-    sget-object v0, Lcom/android/settings/wifi/WifiSettingsForSetupWizardXL;->sNetworkStateMap:Ljava/util/EnumMap;
+    sget-object v0, Lcom/android/settings_ext/wifi/WifiSettingsForSetupWizardXL;->sNetworkStateMap:Ljava/util/EnumMap;
 
     sget-object v1, Landroid/net/NetworkInfo$DetailedState;->AUTHENTICATING:Landroid/net/NetworkInfo$DetailedState;
 
@@ -117,7 +117,7 @@
     invoke-virtual {v0, v1, v2}, Ljava/util/EnumMap;->put(Ljava/lang/Enum;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 66
-    sget-object v0, Lcom/android/settings/wifi/WifiSettingsForSetupWizardXL;->sNetworkStateMap:Ljava/util/EnumMap;
+    sget-object v0, Lcom/android/settings_ext/wifi/WifiSettingsForSetupWizardXL;->sNetworkStateMap:Ljava/util/EnumMap;
 
     sget-object v1, Landroid/net/NetworkInfo$DetailedState;->OBTAINING_IPADDR:Landroid/net/NetworkInfo$DetailedState;
 
@@ -126,7 +126,7 @@
     invoke-virtual {v0, v1, v2}, Ljava/util/EnumMap;->put(Ljava/lang/Enum;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 67
-    sget-object v0, Lcom/android/settings/wifi/WifiSettingsForSetupWizardXL;->sNetworkStateMap:Ljava/util/EnumMap;
+    sget-object v0, Lcom/android/settings_ext/wifi/WifiSettingsForSetupWizardXL;->sNetworkStateMap:Ljava/util/EnumMap;
 
     sget-object v1, Landroid/net/NetworkInfo$DetailedState;->CONNECTED:Landroid/net/NetworkInfo$DetailedState;
 
@@ -135,7 +135,7 @@
     invoke-virtual {v0, v1, v2}, Ljava/util/EnumMap;->put(Ljava/lang/Enum;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 68
-    sget-object v0, Lcom/android/settings/wifi/WifiSettingsForSetupWizardXL;->sNetworkStateMap:Ljava/util/EnumMap;
+    sget-object v0, Lcom/android/settings_ext/wifi/WifiSettingsForSetupWizardXL;->sNetworkStateMap:Ljava/util/EnumMap;
 
     sget-object v1, Landroid/net/NetworkInfo$DetailedState;->SUSPENDED:Landroid/net/NetworkInfo$DetailedState;
 
@@ -144,7 +144,7 @@
     invoke-virtual {v0, v1, v2}, Ljava/util/EnumMap;->put(Ljava/lang/Enum;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 69
-    sget-object v0, Lcom/android/settings/wifi/WifiSettingsForSetupWizardXL;->sNetworkStateMap:Ljava/util/EnumMap;
+    sget-object v0, Lcom/android/settings_ext/wifi/WifiSettingsForSetupWizardXL;->sNetworkStateMap:Ljava/util/EnumMap;
 
     sget-object v1, Landroid/net/NetworkInfo$DetailedState;->DISCONNECTING:Landroid/net/NetworkInfo$DetailedState;
 
@@ -153,7 +153,7 @@
     invoke-virtual {v0, v1, v2}, Ljava/util/EnumMap;->put(Ljava/lang/Enum;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 70
-    sget-object v0, Lcom/android/settings/wifi/WifiSettingsForSetupWizardXL;->sNetworkStateMap:Ljava/util/EnumMap;
+    sget-object v0, Lcom/android/settings_ext/wifi/WifiSettingsForSetupWizardXL;->sNetworkStateMap:Ljava/util/EnumMap;
 
     sget-object v1, Landroid/net/NetworkInfo$DetailedState;->DISCONNECTED:Landroid/net/NetworkInfo$DetailedState;
 
@@ -162,7 +162,7 @@
     invoke-virtual {v0, v1, v2}, Ljava/util/EnumMap;->put(Ljava/lang/Enum;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 71
-    sget-object v0, Lcom/android/settings/wifi/WifiSettingsForSetupWizardXL;->sNetworkStateMap:Ljava/util/EnumMap;
+    sget-object v0, Lcom/android/settings_ext/wifi/WifiSettingsForSetupWizardXL;->sNetworkStateMap:Ljava/util/EnumMap;
 
     sget-object v1, Landroid/net/NetworkInfo$DetailedState;->FAILED:Landroid/net/NetworkInfo$DetailedState;
 
@@ -184,17 +184,17 @@
     .line 88
     const-string v0, ""
 
-    iput-object v0, p0, Lcom/android/settings/wifi/WifiSettingsForSetupWizardXL;->mNetworkName:Ljava/lang/CharSequence;
+    iput-object v0, p0, Lcom/android/settings_ext/wifi/WifiSettingsForSetupWizardXL;->mNetworkName:Ljava/lang/CharSequence;
 
     .line 123
     const/4 v0, 0x0
 
-    iput v0, p0, Lcom/android/settings/wifi/WifiSettingsForSetupWizardXL;->mScreenState:I
+    iput v0, p0, Lcom/android/settings_ext/wifi/WifiSettingsForSetupWizardXL;->mScreenState:I
 
     .line 135
     sget-object v0, Landroid/net/NetworkInfo$DetailedState;->DISCONNECTED:Landroid/net/NetworkInfo$DetailedState;
 
-    iput-object v0, p0, Lcom/android/settings/wifi/WifiSettingsForSetupWizardXL;->mPreviousNetworkState:Landroid/net/NetworkInfo$DetailedState;
+    iput-object v0, p0, Lcom/android/settings_ext/wifi/WifiSettingsForSetupWizardXL;->mPreviousNetworkState:Landroid/net/NetworkInfo$DetailedState;
 
     return-void
 .end method
@@ -211,7 +211,7 @@
     invoke-static {v1, v2}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
 
     .line 244
-    invoke-virtual {p0}, Lcom/android/settings/wifi/WifiSettingsForSetupWizardXL;->getCurrentFocus()Landroid/view/View;
+    invoke-virtual {p0}, Lcom/android/settings_ext/wifi/WifiSettingsForSetupWizardXL;->getCurrentFocus()Landroid/view/View;
 
     move-result-object v0
 
@@ -220,7 +220,7 @@
     if-eqz v0, :cond_0
 
     .line 246
-    iget-object v1, p0, Lcom/android/settings/wifi/WifiSettingsForSetupWizardXL;->mInputMethodManager:Landroid/view/inputmethod/InputMethodManager;
+    iget-object v1, p0, Lcom/android/settings_ext/wifi/WifiSettingsForSetupWizardXL;->mInputMethodManager:Landroid/view/inputmethod/InputMethodManager;
 
     invoke-virtual {v0}, Landroid/view/View;->getWindowToken()Landroid/os/IBinder;
 
@@ -242,7 +242,7 @@
     const/4 v4, 0x0
 
     .line 160
-    invoke-virtual {p0}, Lcom/android/settings/wifi/WifiSettingsForSetupWizardXL;->getIntent()Landroid/content/Intent;
+    invoke-virtual {p0}, Lcom/android/settings_ext/wifi/WifiSettingsForSetupWizardXL;->getIntent()Landroid/content/Intent;
 
     move-result-object v0
 
@@ -259,7 +259,7 @@
     .line 163
     const v2, 0x7f0f007a
 
-    invoke-virtual {p0, v2}, Lcom/android/settings/wifi/WifiSettingsForSetupWizardXL;->findViewById(I)Landroid/view/View;
+    invoke-virtual {p0, v2}, Lcom/android/settings_ext/wifi/WifiSettingsForSetupWizardXL;->findViewById(I)Landroid/view/View;
 
     move-result-object v1
 
@@ -283,7 +283,7 @@
     .line 167
     const/4 v2, 0x6
 
-    invoke-virtual {p0, v2}, Lcom/android/settings/wifi/WifiSettingsForSetupWizardXL;->setRequestedOrientation(I)V
+    invoke-virtual {p0, v2}, Lcom/android/settings_ext/wifi/WifiSettingsForSetupWizardXL;->setRequestedOrientation(I)V
 
     .line 169
     :cond_1
@@ -298,33 +298,33 @@
     .line 170
     const/4 v2, 0x7
 
-    invoke-virtual {p0, v2}, Lcom/android/settings/wifi/WifiSettingsForSetupWizardXL;->setRequestedOrientation(I)V
+    invoke-virtual {p0, v2}, Lcom/android/settings_ext/wifi/WifiSettingsForSetupWizardXL;->setRequestedOrientation(I)V
 
     .line 173
     :cond_2
     const v2, 0x7f0f0231
 
-    invoke-virtual {p0, v2}, Lcom/android/settings/wifi/WifiSettingsForSetupWizardXL;->findViewById(I)Landroid/view/View;
+    invoke-virtual {p0, v2}, Lcom/android/settings_ext/wifi/WifiSettingsForSetupWizardXL;->findViewById(I)Landroid/view/View;
 
     move-result-object v2
 
     check-cast v2, Landroid/widget/TextView;
 
-    iput-object v2, p0, Lcom/android/settings/wifi/WifiSettingsForSetupWizardXL;->mTitleView:Landroid/widget/TextView;
+    iput-object v2, p0, Lcom/android/settings_ext/wifi/WifiSettingsForSetupWizardXL;->mTitleView:Landroid/widget/TextView;
 
     .line 174
     const v2, 0x7f0f0232
 
-    invoke-virtual {p0, v2}, Lcom/android/settings/wifi/WifiSettingsForSetupWizardXL;->findViewById(I)Landroid/view/View;
+    invoke-virtual {p0, v2}, Lcom/android/settings_ext/wifi/WifiSettingsForSetupWizardXL;->findViewById(I)Landroid/view/View;
 
     move-result-object v2
 
     check-cast v2, Landroid/widget/ProgressBar;
 
-    iput-object v2, p0, Lcom/android/settings/wifi/WifiSettingsForSetupWizardXL;->mProgressBar:Landroid/widget/ProgressBar;
+    iput-object v2, p0, Lcom/android/settings_ext/wifi/WifiSettingsForSetupWizardXL;->mProgressBar:Landroid/widget/ProgressBar;
 
     .line 175
-    iget-object v2, p0, Lcom/android/settings/wifi/WifiSettingsForSetupWizardXL;->mProgressBar:Landroid/widget/ProgressBar;
+    iget-object v2, p0, Lcom/android/settings_ext/wifi/WifiSettingsForSetupWizardXL;->mProgressBar:Landroid/widget/ProgressBar;
 
     const/4 v3, 0x2
 
@@ -333,35 +333,35 @@
     .line 176
     const v2, 0x7f0f0233
 
-    invoke-virtual {p0, v2}, Lcom/android/settings/wifi/WifiSettingsForSetupWizardXL;->findViewById(I)Landroid/view/View;
+    invoke-virtual {p0, v2}, Lcom/android/settings_ext/wifi/WifiSettingsForSetupWizardXL;->findViewById(I)Landroid/view/View;
 
     move-result-object v2
 
-    iput-object v2, p0, Lcom/android/settings/wifi/WifiSettingsForSetupWizardXL;->mTopDividerNoProgress:Landroid/view/View;
+    iput-object v2, p0, Lcom/android/settings_ext/wifi/WifiSettingsForSetupWizardXL;->mTopDividerNoProgress:Landroid/view/View;
 
     .line 177
     const v2, 0x7f0f023d
 
-    invoke-virtual {p0, v2}, Lcom/android/settings/wifi/WifiSettingsForSetupWizardXL;->findViewById(I)Landroid/view/View;
+    invoke-virtual {p0, v2}, Lcom/android/settings_ext/wifi/WifiSettingsForSetupWizardXL;->findViewById(I)Landroid/view/View;
 
     move-result-object v2
 
-    iput-object v2, p0, Lcom/android/settings/wifi/WifiSettingsForSetupWizardXL;->mBottomPadding:Landroid/view/View;
+    iput-object v2, p0, Lcom/android/settings_ext/wifi/WifiSettingsForSetupWizardXL;->mBottomPadding:Landroid/view/View;
 
     .line 179
-    iget-object v2, p0, Lcom/android/settings/wifi/WifiSettingsForSetupWizardXL;->mProgressBar:Landroid/widget/ProgressBar;
+    iget-object v2, p0, Lcom/android/settings_ext/wifi/WifiSettingsForSetupWizardXL;->mProgressBar:Landroid/widget/ProgressBar;
 
     invoke-virtual {v2, v4}, Landroid/widget/ProgressBar;->setVisibility(I)V
 
     .line 180
-    iget-object v2, p0, Lcom/android/settings/wifi/WifiSettingsForSetupWizardXL;->mProgressBar:Landroid/widget/ProgressBar;
+    iget-object v2, p0, Lcom/android/settings_ext/wifi/WifiSettingsForSetupWizardXL;->mProgressBar:Landroid/widget/ProgressBar;
 
     const/4 v3, 0x1
 
     invoke-virtual {v2, v3}, Landroid/widget/ProgressBar;->setIndeterminate(Z)V
 
     .line 181
-    iget-object v2, p0, Lcom/android/settings/wifi/WifiSettingsForSetupWizardXL;->mTopDividerNoProgress:Landroid/view/View;
+    iget-object v2, p0, Lcom/android/settings_ext/wifi/WifiSettingsForSetupWizardXL;->mTopDividerNoProgress:Landroid/view/View;
 
     const/16 v3, 0x8
 
@@ -370,129 +370,129 @@
     .line 183
     const v2, 0x7f0f023f
 
-    invoke-virtual {p0, v2}, Lcom/android/settings/wifi/WifiSettingsForSetupWizardXL;->findViewById(I)Landroid/view/View;
+    invoke-virtual {p0, v2}, Lcom/android/settings_ext/wifi/WifiSettingsForSetupWizardXL;->findViewById(I)Landroid/view/View;
 
     move-result-object v2
 
     check-cast v2, Landroid/widget/Button;
 
-    iput-object v2, p0, Lcom/android/settings/wifi/WifiSettingsForSetupWizardXL;->mAddNetworkButton:Landroid/widget/Button;
+    iput-object v2, p0, Lcom/android/settings_ext/wifi/WifiSettingsForSetupWizardXL;->mAddNetworkButton:Landroid/widget/Button;
 
     .line 184
-    iget-object v2, p0, Lcom/android/settings/wifi/WifiSettingsForSetupWizardXL;->mAddNetworkButton:Landroid/widget/Button;
+    iget-object v2, p0, Lcom/android/settings_ext/wifi/WifiSettingsForSetupWizardXL;->mAddNetworkButton:Landroid/widget/Button;
 
     invoke-virtual {v2, p0}, Landroid/widget/Button;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     .line 185
     const v2, 0x7f0f0243
 
-    invoke-virtual {p0, v2}, Lcom/android/settings/wifi/WifiSettingsForSetupWizardXL;->findViewById(I)Landroid/view/View;
+    invoke-virtual {p0, v2}, Lcom/android/settings_ext/wifi/WifiSettingsForSetupWizardXL;->findViewById(I)Landroid/view/View;
 
     move-result-object v2
 
     check-cast v2, Landroid/widget/Button;
 
-    iput-object v2, p0, Lcom/android/settings/wifi/WifiSettingsForSetupWizardXL;->mRefreshButton:Landroid/widget/Button;
+    iput-object v2, p0, Lcom/android/settings_ext/wifi/WifiSettingsForSetupWizardXL;->mRefreshButton:Landroid/widget/Button;
 
     .line 186
-    iget-object v2, p0, Lcom/android/settings/wifi/WifiSettingsForSetupWizardXL;->mRefreshButton:Landroid/widget/Button;
+    iget-object v2, p0, Lcom/android/settings_ext/wifi/WifiSettingsForSetupWizardXL;->mRefreshButton:Landroid/widget/Button;
 
     invoke-virtual {v2, p0}, Landroid/widget/Button;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     .line 187
     const v2, 0x7f0f0242
 
-    invoke-virtual {p0, v2}, Lcom/android/settings/wifi/WifiSettingsForSetupWizardXL;->findViewById(I)Landroid/view/View;
+    invoke-virtual {p0, v2}, Lcom/android/settings_ext/wifi/WifiSettingsForSetupWizardXL;->findViewById(I)Landroid/view/View;
 
     move-result-object v2
 
     check-cast v2, Landroid/widget/Button;
 
-    iput-object v2, p0, Lcom/android/settings/wifi/WifiSettingsForSetupWizardXL;->mSkipOrNextButton:Landroid/widget/Button;
+    iput-object v2, p0, Lcom/android/settings_ext/wifi/WifiSettingsForSetupWizardXL;->mSkipOrNextButton:Landroid/widget/Button;
 
     .line 188
-    iget-object v2, p0, Lcom/android/settings/wifi/WifiSettingsForSetupWizardXL;->mSkipOrNextButton:Landroid/widget/Button;
+    iget-object v2, p0, Lcom/android/settings_ext/wifi/WifiSettingsForSetupWizardXL;->mSkipOrNextButton:Landroid/widget/Button;
 
     invoke-virtual {v2, p0}, Landroid/widget/Button;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     .line 189
     const v2, 0x7f0f0241
 
-    invoke-virtual {p0, v2}, Lcom/android/settings/wifi/WifiSettingsForSetupWizardXL;->findViewById(I)Landroid/view/View;
+    invoke-virtual {p0, v2}, Lcom/android/settings_ext/wifi/WifiSettingsForSetupWizardXL;->findViewById(I)Landroid/view/View;
 
     move-result-object v2
 
     check-cast v2, Landroid/widget/Button;
 
-    iput-object v2, p0, Lcom/android/settings/wifi/WifiSettingsForSetupWizardXL;->mConnectButton:Landroid/widget/Button;
+    iput-object v2, p0, Lcom/android/settings_ext/wifi/WifiSettingsForSetupWizardXL;->mConnectButton:Landroid/widget/Button;
 
     .line 190
-    iget-object v2, p0, Lcom/android/settings/wifi/WifiSettingsForSetupWizardXL;->mConnectButton:Landroid/widget/Button;
+    iget-object v2, p0, Lcom/android/settings_ext/wifi/WifiSettingsForSetupWizardXL;->mConnectButton:Landroid/widget/Button;
 
     invoke-virtual {v2, p0}, Landroid/widget/Button;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     .line 191
     const v2, 0x7f0f0240
 
-    invoke-virtual {p0, v2}, Lcom/android/settings/wifi/WifiSettingsForSetupWizardXL;->findViewById(I)Landroid/view/View;
+    invoke-virtual {p0, v2}, Lcom/android/settings_ext/wifi/WifiSettingsForSetupWizardXL;->findViewById(I)Landroid/view/View;
 
     move-result-object v2
 
     check-cast v2, Landroid/widget/Button;
 
-    iput-object v2, p0, Lcom/android/settings/wifi/WifiSettingsForSetupWizardXL;->mBackButton:Landroid/widget/Button;
+    iput-object v2, p0, Lcom/android/settings_ext/wifi/WifiSettingsForSetupWizardXL;->mBackButton:Landroid/widget/Button;
 
     .line 192
-    iget-object v2, p0, Lcom/android/settings/wifi/WifiSettingsForSetupWizardXL;->mBackButton:Landroid/widget/Button;
+    iget-object v2, p0, Lcom/android/settings_ext/wifi/WifiSettingsForSetupWizardXL;->mBackButton:Landroid/widget/Button;
 
     invoke-virtual {v2, p0}, Landroid/widget/Button;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     .line 194
     const v2, 0x7f0f0230
 
-    invoke-virtual {p0, v2}, Lcom/android/settings/wifi/WifiSettingsForSetupWizardXL;->findViewById(I)Landroid/view/View;
+    invoke-virtual {p0, v2}, Lcom/android/settings_ext/wifi/WifiSettingsForSetupWizardXL;->findViewById(I)Landroid/view/View;
 
     move-result-object v2
 
-    iput-object v2, p0, Lcom/android/settings/wifi/WifiSettingsForSetupWizardXL;->mTopPadding:Landroid/view/View;
+    iput-object v2, p0, Lcom/android/settings_ext/wifi/WifiSettingsForSetupWizardXL;->mTopPadding:Landroid/view/View;
 
     .line 195
     const v2, 0x7f0f0236
 
-    invoke-virtual {p0, v2}, Lcom/android/settings/wifi/WifiSettingsForSetupWizardXL;->findViewById(I)Landroid/view/View;
+    invoke-virtual {p0, v2}, Lcom/android/settings_ext/wifi/WifiSettingsForSetupWizardXL;->findViewById(I)Landroid/view/View;
 
     move-result-object v2
 
-    iput-object v2, p0, Lcom/android/settings/wifi/WifiSettingsForSetupWizardXL;->mContentPadding:Landroid/view/View;
+    iput-object v2, p0, Lcom/android/settings_ext/wifi/WifiSettingsForSetupWizardXL;->mContentPadding:Landroid/view/View;
 
     .line 197
     const v2, 0x7f0f0237
 
-    invoke-virtual {p0, v2}, Lcom/android/settings/wifi/WifiSettingsForSetupWizardXL;->findViewById(I)Landroid/view/View;
+    invoke-virtual {p0, v2}, Lcom/android/settings_ext/wifi/WifiSettingsForSetupWizardXL;->findViewById(I)Landroid/view/View;
 
     move-result-object v2
 
-    iput-object v2, p0, Lcom/android/settings/wifi/WifiSettingsForSetupWizardXL;->mWifiSettingsFragmentLayout:Landroid/view/View;
+    iput-object v2, p0, Lcom/android/settings_ext/wifi/WifiSettingsForSetupWizardXL;->mWifiSettingsFragmentLayout:Landroid/view/View;
 
     .line 198
     const v2, 0x7f0f023a
 
-    invoke-virtual {p0, v2}, Lcom/android/settings/wifi/WifiSettingsForSetupWizardXL;->findViewById(I)Landroid/view/View;
+    invoke-virtual {p0, v2}, Lcom/android/settings_ext/wifi/WifiSettingsForSetupWizardXL;->findViewById(I)Landroid/view/View;
 
     move-result-object v2
 
-    iput-object v2, p0, Lcom/android/settings/wifi/WifiSettingsForSetupWizardXL;->mConnectingStatusLayout:Landroid/view/View;
+    iput-object v2, p0, Lcom/android/settings_ext/wifi/WifiSettingsForSetupWizardXL;->mConnectingStatusLayout:Landroid/view/View;
 
     .line 199
     const v2, 0x7f0f023b
 
-    invoke-virtual {p0, v2}, Lcom/android/settings/wifi/WifiSettingsForSetupWizardXL;->findViewById(I)Landroid/view/View;
+    invoke-virtual {p0, v2}, Lcom/android/settings_ext/wifi/WifiSettingsForSetupWizardXL;->findViewById(I)Landroid/view/View;
 
     move-result-object v2
 
     check-cast v2, Landroid/widget/TextView;
 
-    iput-object v2, p0, Lcom/android/settings/wifi/WifiSettingsForSetupWizardXL;->mConnectingStatusView:Landroid/widget/TextView;
+    iput-object v2, p0, Lcom/android/settings_ext/wifi/WifiSettingsForSetupWizardXL;->mConnectingStatusView:Landroid/widget/TextView;
 
     .line 200
     return-void
@@ -503,9 +503,9 @@
 
     .prologue
     .line 411
-    iget-object v0, p0, Lcom/android/settings/wifi/WifiSettingsForSetupWizardXL;->mWifiSettings:Lcom/android/settings/wifi/WifiSettings;
+    iget-object v0, p0, Lcom/android/settings_ext/wifi/WifiSettingsForSetupWizardXL;->mWifiSettings:Lcom/android/settings_ext/wifi/WifiSettings;
 
-    invoke-virtual {v0}, Lcom/android/settings/wifi/WifiSettings;->onAddNetworkPressed()V
+    invoke-virtual {v0}, Lcom/android/settings_ext/wifi/WifiSettings;->onAddNetworkPressed()V
 
     .line 412
     return-void
@@ -524,11 +524,11 @@
     const/4 v8, 0x0
 
     .line 573
-    iget v4, p0, Lcom/android/settings/wifi/WifiSettingsForSetupWizardXL;->mScreenState:I
+    iget v4, p0, Lcom/android/settings_ext/wifi/WifiSettingsForSetupWizardXL;->mScreenState:I
 
     if-eq v4, v11, :cond_0
 
-    iget v4, p0, Lcom/android/settings/wifi/WifiSettingsForSetupWizardXL;->mScreenState:I
+    iget v4, p0, Lcom/android/settings_ext/wifi/WifiSettingsForSetupWizardXL;->mScreenState:I
 
     const/4 v5, 0x3
 
@@ -543,24 +543,24 @@
     invoke-static {v4, v5}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
     .line 575
-    iput v8, p0, Lcom/android/settings/wifi/WifiSettingsForSetupWizardXL;->mScreenState:I
+    iput v8, p0, Lcom/android/settings_ext/wifi/WifiSettingsForSetupWizardXL;->mScreenState:I
 
     .line 579
-    invoke-direct {p0}, Lcom/android/settings/wifi/WifiSettingsForSetupWizardXL;->restoreFirstVisibilityState()V
+    invoke-direct {p0}, Lcom/android/settings_ext/wifi/WifiSettingsForSetupWizardXL;->restoreFirstVisibilityState()V
 
     .line 581
-    iget-object v4, p0, Lcom/android/settings/wifi/WifiSettingsForSetupWizardXL;->mSkipOrNextButton:Landroid/widget/Button;
+    iget-object v4, p0, Lcom/android/settings_ext/wifi/WifiSettingsForSetupWizardXL;->mSkipOrNextButton:Landroid/widget/Button;
 
     invoke-virtual {v4, v9}, Landroid/widget/Button;->setEnabled(Z)V
 
     .line 582
-    invoke-virtual {p0, v8}, Lcom/android/settings/wifi/WifiSettingsForSetupWizardXL;->changeNextButtonState(Z)V
+    invoke-virtual {p0, v8}, Lcom/android/settings_ext/wifi/WifiSettingsForSetupWizardXL;->changeNextButtonState(Z)V
 
     .line 586
-    invoke-direct {p0}, Lcom/android/settings/wifi/WifiSettingsForSetupWizardXL;->showScanningState()V
+    invoke-direct {p0}, Lcom/android/settings_ext/wifi/WifiSettingsForSetupWizardXL;->showScanningState()V
 
     .line 590
-    iget-object v4, p0, Lcom/android/settings/wifi/WifiSettingsForSetupWizardXL;->mWifiManager:Landroid/net/wifi/WifiManager;
+    iget-object v4, p0, Lcom/android/settings_ext/wifi/WifiSettingsForSetupWizardXL;->mWifiManager:Landroid/net/wifi/WifiManager;
 
     invoke-virtual {v4}, Landroid/net/wifi/WifiManager;->getConfiguredNetworks()Ljava/util/List;
 
@@ -613,13 +613,13 @@
     invoke-static {v4, v5}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
     .line 596
-    iget-object v4, p0, Lcom/android/settings/wifi/WifiSettingsForSetupWizardXL;->mWifiManager:Landroid/net/wifi/WifiManager;
+    iget-object v4, p0, Lcom/android/settings_ext/wifi/WifiSettingsForSetupWizardXL;->mWifiManager:Landroid/net/wifi/WifiManager;
 
     iget v5, v0, Landroid/net/wifi/WifiConfiguration;->networkId:I
 
-    new-instance v6, Lcom/android/settings/wifi/WifiSettingsForSetupWizardXL$1;
+    new-instance v6, Lcom/android/settings_ext/wifi/WifiSettingsForSetupWizardXL$1;
 
-    invoke-direct {v6, p0}, Lcom/android/settings/wifi/WifiSettingsForSetupWizardXL$1;-><init>(Lcom/android/settings/wifi/WifiSettingsForSetupWizardXL;)V
+    invoke-direct {v6, p0}, Lcom/android/settings_ext/wifi/WifiSettingsForSetupWizardXL$1;-><init>(Lcom/android/settings_ext/wifi/WifiSettingsForSetupWizardXL;)V
 
     invoke-virtual {v4, v5, v6}, Landroid/net/wifi/WifiManager;->forget(ILandroid/net/wifi/WifiManager$ActionListener;)V
 
@@ -628,28 +628,28 @@
     .line 605
     .end local v0    # "config":Landroid/net/wifi/WifiConfiguration;
     :cond_1
-    iget-object v4, p0, Lcom/android/settings/wifi/WifiSettingsForSetupWizardXL;->mWifiSettingsFragmentLayout:Landroid/view/View;
+    iget-object v4, p0, Lcom/android/settings_ext/wifi/WifiSettingsForSetupWizardXL;->mWifiSettingsFragmentLayout:Landroid/view/View;
 
     invoke-virtual {v4, v10}, Landroid/view/View;->setVisibility(I)V
 
     .line 606
-    invoke-direct {p0, v9}, Lcom/android/settings/wifi/WifiSettingsForSetupWizardXL;->refreshAccessPoints(Z)V
+    invoke-direct {p0, v9}, Lcom/android/settings_ext/wifi/WifiSettingsForSetupWizardXL;->refreshAccessPoints(Z)V
 
     .line 621
     .end local v1    # "configs":Ljava/util/List;, "Ljava/util/List<Landroid/net/wifi/WifiConfiguration;>;"
     .end local v2    # "i$":Ljava/util/Iterator;
     :goto_1
-    invoke-virtual {p0, v8}, Lcom/android/settings/wifi/WifiSettingsForSetupWizardXL;->setPaddingVisibility(I)V
+    invoke-virtual {p0, v8}, Lcom/android/settings_ext/wifi/WifiSettingsForSetupWizardXL;->setPaddingVisibility(I)V
 
     .line 622
-    iget-object v4, p0, Lcom/android/settings/wifi/WifiSettingsForSetupWizardXL;->mConnectingStatusLayout:Landroid/view/View;
+    iget-object v4, p0, Lcom/android/settings_ext/wifi/WifiSettingsForSetupWizardXL;->mConnectingStatusLayout:Landroid/view/View;
 
     invoke-virtual {v4, v10}, Landroid/view/View;->setVisibility(I)V
 
     .line 623
     const v4, 0x7f0f0239
 
-    invoke-virtual {p0, v4}, Lcom/android/settings/wifi/WifiSettingsForSetupWizardXL;->findViewById(I)Landroid/view/View;
+    invoke-virtual {p0, v4}, Lcom/android/settings_ext/wifi/WifiSettingsForSetupWizardXL;->findViewById(I)Landroid/view/View;
 
     move-result-object v3
 
@@ -665,7 +665,7 @@
     .line 626
     const/4 v4, 0x0
 
-    iput-object v4, p0, Lcom/android/settings/wifi/WifiSettingsForSetupWizardXL;->mWifiConfig:Lcom/android/settings/wifi/WifiConfigUiForSetupWizardXL;
+    iput-object v4, p0, Lcom/android/settings_ext/wifi/WifiSettingsForSetupWizardXL;->mWifiConfig:Lcom/android/settings_ext/wifi/WifiConfigUiForSetupWizardXL;
 
     .line 627
     return-void
@@ -673,41 +673,41 @@
     .line 608
     .end local v3    # "parent":Landroid/view/ViewGroup;
     :cond_2
-    iput v8, p0, Lcom/android/settings/wifi/WifiSettingsForSetupWizardXL;->mScreenState:I
+    iput v8, p0, Lcom/android/settings_ext/wifi/WifiSettingsForSetupWizardXL;->mScreenState:I
 
     .line 609
-    iget-object v4, p0, Lcom/android/settings/wifi/WifiSettingsForSetupWizardXL;->mWifiSettings:Lcom/android/settings/wifi/WifiSettings;
+    iget-object v4, p0, Lcom/android/settings_ext/wifi/WifiSettingsForSetupWizardXL;->mWifiSettings:Lcom/android/settings_ext/wifi/WifiSettings;
 
-    invoke-virtual {v4}, Lcom/android/settings/wifi/WifiSettings;->resumeWifiScan()V
+    invoke-virtual {v4}, Lcom/android/settings_ext/wifi/WifiSettings;->resumeWifiScan()V
 
     .line 611
-    invoke-direct {p0}, Lcom/android/settings/wifi/WifiSettingsForSetupWizardXL;->restoreFirstVisibilityState()V
+    invoke-direct {p0}, Lcom/android/settings_ext/wifi/WifiSettingsForSetupWizardXL;->restoreFirstVisibilityState()V
 
     .line 613
-    iget-object v4, p0, Lcom/android/settings/wifi/WifiSettingsForSetupWizardXL;->mAddNetworkButton:Landroid/widget/Button;
+    iget-object v4, p0, Lcom/android/settings_ext/wifi/WifiSettingsForSetupWizardXL;->mAddNetworkButton:Landroid/widget/Button;
 
     invoke-virtual {v4, v9}, Landroid/widget/Button;->setEnabled(Z)V
 
     .line 614
-    iget-object v4, p0, Lcom/android/settings/wifi/WifiSettingsForSetupWizardXL;->mRefreshButton:Landroid/widget/Button;
+    iget-object v4, p0, Lcom/android/settings_ext/wifi/WifiSettingsForSetupWizardXL;->mRefreshButton:Landroid/widget/Button;
 
     invoke-virtual {v4, v9}, Landroid/widget/Button;->setEnabled(Z)V
 
     .line 615
-    iget-object v4, p0, Lcom/android/settings/wifi/WifiSettingsForSetupWizardXL;->mSkipOrNextButton:Landroid/widget/Button;
+    iget-object v4, p0, Lcom/android/settings_ext/wifi/WifiSettingsForSetupWizardXL;->mSkipOrNextButton:Landroid/widget/Button;
 
     invoke-virtual {v4, v9}, Landroid/widget/Button;->setEnabled(Z)V
 
     .line 616
-    invoke-direct {p0}, Lcom/android/settings/wifi/WifiSettingsForSetupWizardXL;->showDisconnectedProgressBar()V
+    invoke-direct {p0}, Lcom/android/settings_ext/wifi/WifiSettingsForSetupWizardXL;->showDisconnectedProgressBar()V
 
     .line 617
-    iget-object v4, p0, Lcom/android/settings/wifi/WifiSettingsForSetupWizardXL;->mWifiSettingsFragmentLayout:Landroid/view/View;
+    iget-object v4, p0, Lcom/android/settings_ext/wifi/WifiSettingsForSetupWizardXL;->mWifiSettingsFragmentLayout:Landroid/view/View;
 
     invoke-virtual {v4, v8}, Landroid/view/View;->setVisibility(I)V
 
     .line 618
-    iget-object v4, p0, Lcom/android/settings/wifi/WifiSettingsForSetupWizardXL;->mBottomPadding:Landroid/view/View;
+    iget-object v4, p0, Lcom/android/settings_ext/wifi/WifiSettingsForSetupWizardXL;->mBottomPadding:Landroid/view/View;
 
     invoke-virtual {v4, v10}, Landroid/view/View;->setVisibility(I)V
 
@@ -719,14 +719,14 @@
 
     .prologue
     .line 530
-    iget-object v0, p0, Lcom/android/settings/wifi/WifiSettingsForSetupWizardXL;->mConnectButton:Landroid/widget/Button;
+    iget-object v0, p0, Lcom/android/settings_ext/wifi/WifiSettingsForSetupWizardXL;->mConnectButton:Landroid/widget/Button;
 
     const/16 v1, 0x8
 
     invoke-virtual {v0, v1}, Landroid/widget/Button;->setVisibility(I)V
 
     .line 531
-    iget-object v0, p0, Lcom/android/settings/wifi/WifiSettingsForSetupWizardXL;->mBackButton:Landroid/widget/Button;
+    iget-object v0, p0, Lcom/android/settings_ext/wifi/WifiSettingsForSetupWizardXL;->mBackButton:Landroid/widget/Button;
 
     const v1, 0x7f09075b
 
@@ -742,21 +742,21 @@
 
     .prologue
     .line 666
-    invoke-direct {p0}, Lcom/android/settings/wifi/WifiSettingsForSetupWizardXL;->showScanningState()V
+    invoke-direct {p0}, Lcom/android/settings_ext/wifi/WifiSettingsForSetupWizardXL;->showScanningState()V
 
     .line 668
     if-eqz p1, :cond_0
 
     .line 669
-    iget-object v0, p0, Lcom/android/settings/wifi/WifiSettingsForSetupWizardXL;->mWifiManager:Landroid/net/wifi/WifiManager;
+    iget-object v0, p0, Lcom/android/settings_ext/wifi/WifiSettingsForSetupWizardXL;->mWifiManager:Landroid/net/wifi/WifiManager;
 
     invoke-virtual {v0}, Landroid/net/wifi/WifiManager;->disconnect()Z
 
     .line 672
     :cond_0
-    iget-object v0, p0, Lcom/android/settings/wifi/WifiSettingsForSetupWizardXL;->mWifiSettings:Lcom/android/settings/wifi/WifiSettings;
+    iget-object v0, p0, Lcom/android/settings_ext/wifi/WifiSettingsForSetupWizardXL;->mWifiSettings:Lcom/android/settings_ext/wifi/WifiSettings;
 
-    invoke-virtual {v0}, Lcom/android/settings/wifi/WifiSettings;->refreshAccessPoints()V
+    invoke-virtual {v0}, Lcom/android/settings_ext/wifi/WifiSettings;->refreshAccessPoints()V
 
     .line 673
     return-void
@@ -771,35 +771,35 @@
     const/4 v1, 0x0
 
     .line 203
-    invoke-direct {p0}, Lcom/android/settings/wifi/WifiSettingsForSetupWizardXL;->showDefaultTitle()V
+    invoke-direct {p0}, Lcom/android/settings_ext/wifi/WifiSettingsForSetupWizardXL;->showDefaultTitle()V
 
     .line 204
-    iget-object v0, p0, Lcom/android/settings/wifi/WifiSettingsForSetupWizardXL;->mAddNetworkButton:Landroid/widget/Button;
+    iget-object v0, p0, Lcom/android/settings_ext/wifi/WifiSettingsForSetupWizardXL;->mAddNetworkButton:Landroid/widget/Button;
 
     invoke-virtual {v0, v1}, Landroid/widget/Button;->setVisibility(I)V
 
     .line 205
-    iget-object v0, p0, Lcom/android/settings/wifi/WifiSettingsForSetupWizardXL;->mRefreshButton:Landroid/widget/Button;
+    iget-object v0, p0, Lcom/android/settings_ext/wifi/WifiSettingsForSetupWizardXL;->mRefreshButton:Landroid/widget/Button;
 
     invoke-virtual {v0, v1}, Landroid/widget/Button;->setVisibility(I)V
 
     .line 206
-    iget-object v0, p0, Lcom/android/settings/wifi/WifiSettingsForSetupWizardXL;->mSkipOrNextButton:Landroid/widget/Button;
+    iget-object v0, p0, Lcom/android/settings_ext/wifi/WifiSettingsForSetupWizardXL;->mSkipOrNextButton:Landroid/widget/Button;
 
     invoke-virtual {v0, v1}, Landroid/widget/Button;->setVisibility(I)V
 
     .line 207
-    iget-object v0, p0, Lcom/android/settings/wifi/WifiSettingsForSetupWizardXL;->mConnectButton:Landroid/widget/Button;
+    iget-object v0, p0, Lcom/android/settings_ext/wifi/WifiSettingsForSetupWizardXL;->mConnectButton:Landroid/widget/Button;
 
     invoke-virtual {v0, v2}, Landroid/widget/Button;->setVisibility(I)V
 
     .line 208
-    iget-object v0, p0, Lcom/android/settings/wifi/WifiSettingsForSetupWizardXL;->mBackButton:Landroid/widget/Button;
+    iget-object v0, p0, Lcom/android/settings_ext/wifi/WifiSettingsForSetupWizardXL;->mBackButton:Landroid/widget/Button;
 
     invoke-virtual {v0, v2}, Landroid/widget/Button;->setVisibility(I)V
 
     .line 209
-    invoke-virtual {p0, v1}, Lcom/android/settings/wifi/WifiSettingsForSetupWizardXL;->setPaddingVisibility(I)V
+    invoke-virtual {p0, v1}, Lcom/android/settings_ext/wifi/WifiSettingsForSetupWizardXL;->setPaddingVisibility(I)V
 
     .line 210
     return-void
@@ -810,17 +810,17 @@
 
     .prologue
     .line 745
-    invoke-direct {p0}, Lcom/android/settings/wifi/WifiSettingsForSetupWizardXL;->showTopDividerWithProgressBar()V
+    invoke-direct {p0}, Lcom/android/settings_ext/wifi/WifiSettingsForSetupWizardXL;->showTopDividerWithProgressBar()V
 
     .line 746
-    iget-object v0, p0, Lcom/android/settings/wifi/WifiSettingsForSetupWizardXL;->mProgressBar:Landroid/widget/ProgressBar;
+    iget-object v0, p0, Lcom/android/settings_ext/wifi/WifiSettingsForSetupWizardXL;->mProgressBar:Landroid/widget/ProgressBar;
 
     const/4 v1, 0x0
 
     invoke-virtual {v0, v1}, Landroid/widget/ProgressBar;->setIndeterminate(Z)V
 
     .line 747
-    iget-object v0, p0, Lcom/android/settings/wifi/WifiSettingsForSetupWizardXL;->mProgressBar:Landroid/widget/ProgressBar;
+    iget-object v0, p0, Lcom/android/settings_ext/wifi/WifiSettingsForSetupWizardXL;->mProgressBar:Landroid/widget/ProgressBar;
 
     const/4 v1, 0x1
 
@@ -839,30 +839,30 @@
     .line 307
     const/4 v0, 0x2
 
-    iput v0, p0, Lcom/android/settings/wifi/WifiSettingsForSetupWizardXL;->mScreenState:I
+    iput v0, p0, Lcom/android/settings_ext/wifi/WifiSettingsForSetupWizardXL;->mScreenState:I
 
     .line 309
-    iget-object v0, p0, Lcom/android/settings/wifi/WifiSettingsForSetupWizardXL;->mBackButton:Landroid/widget/Button;
+    iget-object v0, p0, Lcom/android/settings_ext/wifi/WifiSettingsForSetupWizardXL;->mBackButton:Landroid/widget/Button;
 
     invoke-virtual {v0, v1}, Landroid/widget/Button;->setVisibility(I)V
 
     .line 311
-    iget-object v0, p0, Lcom/android/settings/wifi/WifiSettingsForSetupWizardXL;->mTitleView:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/android/settings_ext/wifi/WifiSettingsForSetupWizardXL;->mTitleView:Landroid/widget/TextView;
 
     invoke-virtual {v0}, Landroid/widget/TextView;->getText()Ljava/lang/CharSequence;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/wifi/WifiSettingsForSetupWizardXL;->mEditingTitle:Ljava/lang/CharSequence;
+    iput-object v0, p0, Lcom/android/settings_ext/wifi/WifiSettingsForSetupWizardXL;->mEditingTitle:Ljava/lang/CharSequence;
 
     .line 312
-    invoke-direct {p0}, Lcom/android/settings/wifi/WifiSettingsForSetupWizardXL;->showConnectingTitle()V
+    invoke-direct {p0}, Lcom/android/settings_ext/wifi/WifiSettingsForSetupWizardXL;->showConnectingTitle()V
 
     .line 313
-    invoke-direct {p0}, Lcom/android/settings/wifi/WifiSettingsForSetupWizardXL;->showConnectingProgressBar()V
+    invoke-direct {p0}, Lcom/android/settings_ext/wifi/WifiSettingsForSetupWizardXL;->showConnectingProgressBar()V
 
     .line 315
-    invoke-virtual {p0, v1}, Lcom/android/settings/wifi/WifiSettingsForSetupWizardXL;->setPaddingVisibility(I)V
+    invoke-virtual {p0, v1}, Lcom/android/settings_ext/wifi/WifiSettingsForSetupWizardXL;->setPaddingVisibility(I)V
 
     .line 316
     return-void
@@ -873,7 +873,7 @@
 
     .prologue
     .line 366
-    iget-object v0, p0, Lcom/android/settings/wifi/WifiSettingsForSetupWizardXL;->mNetworkName:Ljava/lang/CharSequence;
+    iget-object v0, p0, Lcom/android/settings_ext/wifi/WifiSettingsForSetupWizardXL;->mNetworkName:Ljava/lang/CharSequence;
 
     invoke-static {v0}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
@@ -881,50 +881,50 @@
 
     if-eqz v0, :cond_0
 
-    iget-object v0, p0, Lcom/android/settings/wifi/WifiSettingsForSetupWizardXL;->mWifiConfig:Lcom/android/settings/wifi/WifiConfigUiForSetupWizardXL;
+    iget-object v0, p0, Lcom/android/settings_ext/wifi/WifiSettingsForSetupWizardXL;->mWifiConfig:Lcom/android/settings_ext/wifi/WifiConfigUiForSetupWizardXL;
 
     if-eqz v0, :cond_0
 
     .line 367
-    iget-object v0, p0, Lcom/android/settings/wifi/WifiSettingsForSetupWizardXL;->mWifiConfig:Lcom/android/settings/wifi/WifiConfigUiForSetupWizardXL;
+    iget-object v0, p0, Lcom/android/settings_ext/wifi/WifiSettingsForSetupWizardXL;->mWifiConfig:Lcom/android/settings_ext/wifi/WifiConfigUiForSetupWizardXL;
 
-    invoke-virtual {v0}, Lcom/android/settings/wifi/WifiConfigUiForSetupWizardXL;->getController()Lcom/android/settings/wifi/WifiConfigController;
+    invoke-virtual {v0}, Lcom/android/settings_ext/wifi/WifiConfigUiForSetupWizardXL;->getController()Lcom/android/settings_ext/wifi/WifiConfigController;
 
     move-result-object v0
 
     if-eqz v0, :cond_1
 
-    iget-object v0, p0, Lcom/android/settings/wifi/WifiSettingsForSetupWizardXL;->mWifiConfig:Lcom/android/settings/wifi/WifiConfigUiForSetupWizardXL;
+    iget-object v0, p0, Lcom/android/settings_ext/wifi/WifiSettingsForSetupWizardXL;->mWifiConfig:Lcom/android/settings_ext/wifi/WifiConfigUiForSetupWizardXL;
 
-    invoke-virtual {v0}, Lcom/android/settings/wifi/WifiConfigUiForSetupWizardXL;->getController()Lcom/android/settings/wifi/WifiConfigController;
+    invoke-virtual {v0}, Lcom/android/settings_ext/wifi/WifiConfigUiForSetupWizardXL;->getController()Lcom/android/settings_ext/wifi/WifiConfigController;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/android/settings/wifi/WifiConfigController;->getConfig()Landroid/net/wifi/WifiConfiguration;
+    invoke-virtual {v0}, Lcom/android/settings_ext/wifi/WifiConfigController;->getConfig()Landroid/net/wifi/WifiConfiguration;
 
     move-result-object v0
 
     if-eqz v0, :cond_1
 
     .line 369
-    iget-object v0, p0, Lcom/android/settings/wifi/WifiSettingsForSetupWizardXL;->mWifiConfig:Lcom/android/settings/wifi/WifiConfigUiForSetupWizardXL;
+    iget-object v0, p0, Lcom/android/settings_ext/wifi/WifiSettingsForSetupWizardXL;->mWifiConfig:Lcom/android/settings_ext/wifi/WifiConfigUiForSetupWizardXL;
 
-    invoke-virtual {v0}, Lcom/android/settings/wifi/WifiConfigUiForSetupWizardXL;->getController()Lcom/android/settings/wifi/WifiConfigController;
+    invoke-virtual {v0}, Lcom/android/settings_ext/wifi/WifiConfigUiForSetupWizardXL;->getController()Lcom/android/settings_ext/wifi/WifiConfigController;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/android/settings/wifi/WifiConfigController;->getConfig()Landroid/net/wifi/WifiConfiguration;
+    invoke-virtual {v0}, Lcom/android/settings_ext/wifi/WifiConfigController;->getConfig()Landroid/net/wifi/WifiConfiguration;
 
     move-result-object v0
 
     iget-object v0, v0, Landroid/net/wifi/WifiConfiguration;->SSID:Ljava/lang/String;
 
-    iput-object v0, p0, Lcom/android/settings/wifi/WifiSettingsForSetupWizardXL;->mNetworkName:Ljava/lang/CharSequence;
+    iput-object v0, p0, Lcom/android/settings_ext/wifi/WifiSettingsForSetupWizardXL;->mNetworkName:Ljava/lang/CharSequence;
 
     .line 375
     :cond_0
     :goto_0
-    iget-object v0, p0, Lcom/android/settings/wifi/WifiSettingsForSetupWizardXL;->mTitleView:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/android/settings_ext/wifi/WifiSettingsForSetupWizardXL;->mTitleView:Landroid/widget/TextView;
 
     const v1, 0x7f090753
 
@@ -934,11 +934,11 @@
 
     const/4 v3, 0x0
 
-    iget-object v4, p0, Lcom/android/settings/wifi/WifiSettingsForSetupWizardXL;->mNetworkName:Ljava/lang/CharSequence;
+    iget-object v4, p0, Lcom/android/settings_ext/wifi/WifiSettingsForSetupWizardXL;->mNetworkName:Ljava/lang/CharSequence;
 
     aput-object v4, v2, v3
 
-    invoke-virtual {p0, v1, v2}, Lcom/android/settings/wifi/WifiSettingsForSetupWizardXL;->getString(I[Ljava/lang/Object;)Ljava/lang/String;
+    invoke-virtual {p0, v1, v2}, Lcom/android/settings_ext/wifi/WifiSettingsForSetupWizardXL;->getString(I[Ljava/lang/Object;)Ljava/lang/String;
 
     move-result-object v1
 
@@ -963,11 +963,11 @@
 
     .prologue
     .line 344
-    iget-object v0, p0, Lcom/android/settings/wifi/WifiSettingsForSetupWizardXL;->mTitleView:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/android/settings_ext/wifi/WifiSettingsForSetupWizardXL;->mTitleView:Landroid/widget/TextView;
 
     const v1, 0x7f090751
 
-    invoke-virtual {p0, v1}, Lcom/android/settings/wifi/WifiSettingsForSetupWizardXL;->getString(I)Ljava/lang/String;
+    invoke-virtual {p0, v1}, Lcom/android/settings_ext/wifi/WifiSettingsForSetupWizardXL;->getString(I)Ljava/lang/String;
 
     move-result-object v1
 
@@ -986,22 +986,22 @@
     const/4 v1, 0x0
 
     .line 721
-    iget v0, p0, Lcom/android/settings/wifi/WifiSettingsForSetupWizardXL;->mScreenState:I
+    iget v0, p0, Lcom/android/settings_ext/wifi/WifiSettingsForSetupWizardXL;->mScreenState:I
 
     if-nez v0, :cond_0
 
     .line 722
-    iget-object v0, p0, Lcom/android/settings/wifi/WifiSettingsForSetupWizardXL;->mProgressBar:Landroid/widget/ProgressBar;
+    iget-object v0, p0, Lcom/android/settings_ext/wifi/WifiSettingsForSetupWizardXL;->mProgressBar:Landroid/widget/ProgressBar;
 
     invoke-virtual {v0, v2}, Landroid/widget/ProgressBar;->setVisibility(I)V
 
     .line 723
-    iget-object v0, p0, Lcom/android/settings/wifi/WifiSettingsForSetupWizardXL;->mProgressBar:Landroid/widget/ProgressBar;
+    iget-object v0, p0, Lcom/android/settings_ext/wifi/WifiSettingsForSetupWizardXL;->mProgressBar:Landroid/widget/ProgressBar;
 
     invoke-virtual {v0, v1}, Landroid/widget/ProgressBar;->setIndeterminate(Z)V
 
     .line 724
-    iget-object v0, p0, Lcom/android/settings/wifi/WifiSettingsForSetupWizardXL;->mTopDividerNoProgress:Landroid/view/View;
+    iget-object v0, p0, Lcom/android/settings_ext/wifi/WifiSettingsForSetupWizardXL;->mTopDividerNoProgress:Landroid/view/View;
 
     invoke-virtual {v0, v1}, Landroid/view/View;->setVisibility(I)V
 
@@ -1011,22 +1011,22 @@
 
     .line 726
     :cond_0
-    iget-object v0, p0, Lcom/android/settings/wifi/WifiSettingsForSetupWizardXL;->mProgressBar:Landroid/widget/ProgressBar;
+    iget-object v0, p0, Lcom/android/settings_ext/wifi/WifiSettingsForSetupWizardXL;->mProgressBar:Landroid/widget/ProgressBar;
 
     invoke-virtual {v0, v1}, Landroid/widget/ProgressBar;->setVisibility(I)V
 
     .line 727
-    iget-object v0, p0, Lcom/android/settings/wifi/WifiSettingsForSetupWizardXL;->mProgressBar:Landroid/widget/ProgressBar;
+    iget-object v0, p0, Lcom/android/settings_ext/wifi/WifiSettingsForSetupWizardXL;->mProgressBar:Landroid/widget/ProgressBar;
 
     invoke-virtual {v0, v1}, Landroid/widget/ProgressBar;->setIndeterminate(Z)V
 
     .line 728
-    iget-object v0, p0, Lcom/android/settings/wifi/WifiSettingsForSetupWizardXL;->mProgressBar:Landroid/widget/ProgressBar;
+    iget-object v0, p0, Lcom/android/settings_ext/wifi/WifiSettingsForSetupWizardXL;->mProgressBar:Landroid/widget/ProgressBar;
 
     invoke-virtual {v0, v1}, Landroid/widget/ProgressBar;->setProgress(I)V
 
     .line 729
-    iget-object v0, p0, Lcom/android/settings/wifi/WifiSettingsForSetupWizardXL;->mTopDividerNoProgress:Landroid/view/View;
+    iget-object v0, p0, Lcom/android/settings_ext/wifi/WifiSettingsForSetupWizardXL;->mTopDividerNoProgress:Landroid/view/View;
 
     invoke-virtual {v0, v2}, Landroid/view/View;->setVisibility(I)V
 
@@ -1038,10 +1038,10 @@
 
     .prologue
     .line 737
-    invoke-direct {p0}, Lcom/android/settings/wifi/WifiSettingsForSetupWizardXL;->showTopDividerWithProgressBar()V
+    invoke-direct {p0}, Lcom/android/settings_ext/wifi/WifiSettingsForSetupWizardXL;->showTopDividerWithProgressBar()V
 
     .line 738
-    iget-object v0, p0, Lcom/android/settings/wifi/WifiSettingsForSetupWizardXL;->mProgressBar:Landroid/widget/ProgressBar;
+    iget-object v0, p0, Lcom/android/settings_ext/wifi/WifiSettingsForSetupWizardXL;->mProgressBar:Landroid/widget/ProgressBar;
 
     const/4 v1, 0x1
 
@@ -1058,17 +1058,17 @@
     .line 405
     const/4 v0, 0x0
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/wifi/WifiSettingsForSetupWizardXL;->setPaddingVisibility(I)V
+    invoke-virtual {p0, v0}, Lcom/android/settings_ext/wifi/WifiSettingsForSetupWizardXL;->setPaddingVisibility(I)V
 
     .line 406
-    iget-object v0, p0, Lcom/android/settings/wifi/WifiSettingsForSetupWizardXL;->mWifiSettingsFragmentLayout:Landroid/view/View;
+    iget-object v0, p0, Lcom/android/settings_ext/wifi/WifiSettingsForSetupWizardXL;->mWifiSettingsFragmentLayout:Landroid/view/View;
 
     const/16 v1, 0x8
 
     invoke-virtual {v0, v1}, Landroid/view/View;->setVisibility(I)V
 
     .line 407
-    invoke-direct {p0}, Lcom/android/settings/wifi/WifiSettingsForSetupWizardXL;->showScanningProgressBar()V
+    invoke-direct {p0}, Lcom/android/settings_ext/wifi/WifiSettingsForSetupWizardXL;->showScanningProgressBar()V
 
     .line 408
     return-void
@@ -1081,19 +1081,19 @@
     const/16 v2, 0x8
 
     .line 399
-    iget-object v0, p0, Lcom/android/settings/wifi/WifiSettingsForSetupWizardXL;->mProgressBar:Landroid/widget/ProgressBar;
+    iget-object v0, p0, Lcom/android/settings_ext/wifi/WifiSettingsForSetupWizardXL;->mProgressBar:Landroid/widget/ProgressBar;
 
     const/4 v1, 0x0
 
     invoke-virtual {v0, v1}, Landroid/widget/ProgressBar;->setVisibility(I)V
 
     .line 400
-    iget-object v0, p0, Lcom/android/settings/wifi/WifiSettingsForSetupWizardXL;->mTopDividerNoProgress:Landroid/view/View;
+    iget-object v0, p0, Lcom/android/settings_ext/wifi/WifiSettingsForSetupWizardXL;->mTopDividerNoProgress:Landroid/view/View;
 
     invoke-virtual {v0, v2}, Landroid/view/View;->setVisibility(I)V
 
     .line 401
-    iget-object v0, p0, Lcom/android/settings/wifi/WifiSettingsForSetupWizardXL;->mBottomPadding:Landroid/view/View;
+    iget-object v0, p0, Lcom/android/settings_ext/wifi/WifiSettingsForSetupWizardXL;->mBottomPadding:Landroid/view/View;
 
     invoke-virtual {v0, v2}, Landroid/view/View;->setVisibility(I)V
 
@@ -1112,7 +1112,7 @@
     if-eqz p1, :cond_0
 
     .line 634
-    iget-object v0, p0, Lcom/android/settings/wifi/WifiSettingsForSetupWizardXL;->mSkipOrNextButton:Landroid/widget/Button;
+    iget-object v0, p0, Lcom/android/settings_ext/wifi/WifiSettingsForSetupWizardXL;->mSkipOrNextButton:Landroid/widget/Button;
 
     const v1, 0x7f09075a
 
@@ -1124,7 +1124,7 @@
 
     .line 636
     :cond_0
-    iget-object v0, p0, Lcom/android/settings/wifi/WifiSettingsForSetupWizardXL;->mSkipOrNextButton:Landroid/widget/Button;
+    iget-object v0, p0, Lcom/android/settings_ext/wifi/WifiSettingsForSetupWizardXL;->mSkipOrNextButton:Landroid/widget/Button;
 
     const v1, 0x7f090759
 
@@ -1187,10 +1187,10 @@
     if-ne p2, v2, :cond_1
 
     .line 489
-    invoke-virtual {p0, v0}, Lcom/android/settings/wifi/WifiSettingsForSetupWizardXL;->setPaddingVisibility(I)V
+    invoke-virtual {p0, v0}, Lcom/android/settings_ext/wifi/WifiSettingsForSetupWizardXL;->setPaddingVisibility(I)V
 
     .line 490
-    invoke-direct {p0}, Lcom/android/settings/wifi/WifiSettingsForSetupWizardXL;->hideSoftwareKeyboard()V
+    invoke-direct {p0}, Lcom/android/settings_ext/wifi/WifiSettingsForSetupWizardXL;->hideSoftwareKeyboard()V
 
     .line 495
     const v1, 0x7f0f0202
@@ -1241,7 +1241,7 @@
     invoke-virtual {v1, v3}, Landroid/view/View;->setVisibility(I)V
 
     .line 504
-    invoke-direct {p0}, Lcom/android/settings/wifi/WifiSettingsForSetupWizardXL;->onEapNetworkSelected()V
+    invoke-direct {p0}, Lcom/android/settings_ext/wifi/WifiSettingsForSetupWizardXL;->onEapNetworkSelected()V
 
     .line 526
     :goto_1
@@ -1259,15 +1259,15 @@
 
     .line 510
     :cond_1
-    iget-object v2, p0, Lcom/android/settings/wifi/WifiSettingsForSetupWizardXL;->mConnectButton:Landroid/widget/Button;
+    iget-object v2, p0, Lcom/android/settings_ext/wifi/WifiSettingsForSetupWizardXL;->mConnectButton:Landroid/widget/Button;
 
     invoke-virtual {v2, v0}, Landroid/widget/Button;->setVisibility(I)V
 
     .line 511
-    invoke-virtual {p0, v3}, Lcom/android/settings/wifi/WifiSettingsForSetupWizardXL;->setPaddingVisibility(I)V
+    invoke-virtual {p0, v3}, Lcom/android/settings_ext/wifi/WifiSettingsForSetupWizardXL;->setPaddingVisibility(I)V
 
     .line 516
-    iget-object v0, p0, Lcom/android/settings/wifi/WifiSettingsForSetupWizardXL;->mWifiConfig:Lcom/android/settings/wifi/WifiConfigUiForSetupWizardXL;
+    iget-object v0, p0, Lcom/android/settings_ext/wifi/WifiSettingsForSetupWizardXL;->mWifiConfig:Lcom/android/settings_ext/wifi/WifiConfigUiForSetupWizardXL;
 
     if-eqz v0, :cond_3
 
@@ -1280,11 +1280,11 @@
 
     .line 519
     :cond_2
-    iget-object v0, p0, Lcom/android/settings/wifi/WifiSettingsForSetupWizardXL;->mWifiConfig:Lcom/android/settings/wifi/WifiConfigUiForSetupWizardXL;
+    iget-object v0, p0, Lcom/android/settings_ext/wifi/WifiSettingsForSetupWizardXL;->mWifiConfig:Lcom/android/settings_ext/wifi/WifiConfigUiForSetupWizardXL;
 
     const v2, 0x7f0f01e8
 
-    invoke-virtual {v0, v2}, Lcom/android/settings/wifi/WifiConfigUiForSetupWizardXL;->requestFocusAndShowKeyboard(I)V
+    invoke-virtual {v0, v2}, Lcom/android/settings_ext/wifi/WifiConfigUiForSetupWizardXL;->requestFocusAndShowKeyboard(I)V
 
     :cond_3
     :goto_2
@@ -1295,11 +1295,11 @@
 
     .line 521
     :cond_4
-    iget-object v0, p0, Lcom/android/settings/wifi/WifiSettingsForSetupWizardXL;->mWifiConfig:Lcom/android/settings/wifi/WifiConfigUiForSetupWizardXL;
+    iget-object v0, p0, Lcom/android/settings_ext/wifi/WifiSettingsForSetupWizardXL;->mWifiConfig:Lcom/android/settings_ext/wifi/WifiConfigUiForSetupWizardXL;
 
     const v2, 0x7f0f01fb
 
-    invoke-virtual {v0, v2}, Lcom/android/settings/wifi/WifiConfigUiForSetupWizardXL;->requestFocusAndShowKeyboard(I)V
+    invoke-virtual {v0, v2}, Lcom/android/settings_ext/wifi/WifiConfigUiForSetupWizardXL;->requestFocusAndShowKeyboard(I)V
 
     goto :goto_2
 .end method
@@ -1312,10 +1312,10 @@
     const/4 v2, 0x1
 
     .line 214
-    invoke-direct {p0}, Lcom/android/settings/wifi/WifiSettingsForSetupWizardXL;->hideSoftwareKeyboard()V
+    invoke-direct {p0}, Lcom/android/settings_ext/wifi/WifiSettingsForSetupWizardXL;->hideSoftwareKeyboard()V
 
     .line 215
-    iget-object v0, p0, Lcom/android/settings/wifi/WifiSettingsForSetupWizardXL;->mAddNetworkButton:Landroid/widget/Button;
+    iget-object v0, p0, Lcom/android/settings_ext/wifi/WifiSettingsForSetupWizardXL;->mAddNetworkButton:Landroid/widget/Button;
 
     if-ne p1, v0, :cond_1
 
@@ -1327,7 +1327,7 @@
     invoke-static {v0, v1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
     .line 217
-    invoke-direct {p0}, Lcom/android/settings/wifi/WifiSettingsForSetupWizardXL;->onAddNetworkButtonPressed()V
+    invoke-direct {p0}, Lcom/android/settings_ext/wifi/WifiSettingsForSetupWizardXL;->onAddNetworkButtonPressed()V
 
     .line 240
     .end local p1    # "view":Landroid/view/View;
@@ -1338,7 +1338,7 @@
     .line 218
     .restart local p1    # "view":Landroid/view/View;
     :cond_1
-    iget-object v0, p0, Lcom/android/settings/wifi/WifiSettingsForSetupWizardXL;->mRefreshButton:Landroid/widget/Button;
+    iget-object v0, p0, Lcom/android/settings_ext/wifi/WifiSettingsForSetupWizardXL;->mRefreshButton:Landroid/widget/Button;
 
     if-ne p1, v0, :cond_2
 
@@ -1350,13 +1350,13 @@
     invoke-static {v0, v1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
     .line 220
-    invoke-direct {p0, v2}, Lcom/android/settings/wifi/WifiSettingsForSetupWizardXL;->refreshAccessPoints(Z)V
+    invoke-direct {p0, v2}, Lcom/android/settings_ext/wifi/WifiSettingsForSetupWizardXL;->refreshAccessPoints(Z)V
 
     goto :goto_0
 
     .line 221
     :cond_2
-    iget-object v0, p0, Lcom/android/settings/wifi/WifiSettingsForSetupWizardXL;->mSkipOrNextButton:Landroid/widget/Button;
+    iget-object v0, p0, Lcom/android/settings_ext/wifi/WifiSettingsForSetupWizardXL;->mSkipOrNextButton:Landroid/widget/Button;
 
     if-ne p1, v0, :cond_4
 
@@ -1370,7 +1370,7 @@
     .line 223
     const v0, 0x7f090759
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/wifi/WifiSettingsForSetupWizardXL;->getString(I)Ljava/lang/String;
+    invoke-virtual {p0, v0}, Lcom/android/settings_ext/wifi/WifiSettingsForSetupWizardXL;->getString(I)Ljava/lang/String;
 
     move-result-object v0
 
@@ -1388,18 +1388,18 @@
     if-eqz v0, :cond_3
 
     .line 226
-    iget-object v0, p0, Lcom/android/settings/wifi/WifiSettingsForSetupWizardXL;->mWifiManager:Landroid/net/wifi/WifiManager;
+    iget-object v0, p0, Lcom/android/settings_ext/wifi/WifiSettingsForSetupWizardXL;->mWifiManager:Landroid/net/wifi/WifiManager;
 
     const/4 v1, 0x0
 
     invoke-virtual {v0, v1}, Landroid/net/wifi/WifiManager;->setWifiEnabled(Z)Z
 
     .line 228
-    invoke-virtual {p0, v2}, Lcom/android/settings/wifi/WifiSettingsForSetupWizardXL;->setResult(I)V
+    invoke-virtual {p0, v2}, Lcom/android/settings_ext/wifi/WifiSettingsForSetupWizardXL;->setResult(I)V
 
     .line 232
     :goto_1
-    invoke-virtual {p0}, Lcom/android/settings/wifi/WifiSettingsForSetupWizardXL;->finish()V
+    invoke-virtual {p0}, Lcom/android/settings_ext/wifi/WifiSettingsForSetupWizardXL;->finish()V
 
     goto :goto_0
 
@@ -1407,14 +1407,14 @@
     :cond_3
     const/4 v0, -0x1
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/wifi/WifiSettingsForSetupWizardXL;->setResult(I)V
+    invoke-virtual {p0, v0}, Lcom/android/settings_ext/wifi/WifiSettingsForSetupWizardXL;->setResult(I)V
 
     goto :goto_1
 
     .line 233
     .restart local p1    # "view":Landroid/view/View;
     :cond_4
-    iget-object v0, p0, Lcom/android/settings/wifi/WifiSettingsForSetupWizardXL;->mConnectButton:Landroid/widget/Button;
+    iget-object v0, p0, Lcom/android/settings_ext/wifi/WifiSettingsForSetupWizardXL;->mConnectButton:Landroid/widget/Button;
 
     if-ne p1, v0, :cond_5
 
@@ -1426,13 +1426,13 @@
     invoke-static {v0, v1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
     .line 235
-    invoke-virtual {p0}, Lcom/android/settings/wifi/WifiSettingsForSetupWizardXL;->onConnectButtonPressed()V
+    invoke-virtual {p0}, Lcom/android/settings_ext/wifi/WifiSettingsForSetupWizardXL;->onConnectButtonPressed()V
 
     goto :goto_0
 
     .line 236
     :cond_5
-    iget-object v0, p0, Lcom/android/settings/wifi/WifiSettingsForSetupWizardXL;->mBackButton:Landroid/widget/Button;
+    iget-object v0, p0, Lcom/android/settings_ext/wifi/WifiSettingsForSetupWizardXL;->mBackButton:Landroid/widget/Button;
 
     if-ne p1, v0, :cond_0
 
@@ -1444,7 +1444,7 @@
     invoke-static {v0, v1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
     .line 238
-    invoke-direct {p0}, Lcom/android/settings/wifi/WifiSettingsForSetupWizardXL;->onBackButtonPressed()V
+    invoke-direct {p0}, Lcom/android/settings_ext/wifi/WifiSettingsForSetupWizardXL;->onBackButtonPressed()V
 
     goto :goto_0
 .end method
@@ -1460,29 +1460,29 @@
     .line 543
     const/4 v1, 0x2
 
-    iput v1, p0, Lcom/android/settings/wifi/WifiSettingsForSetupWizardXL;->mScreenState:I
+    iput v1, p0, Lcom/android/settings_ext/wifi/WifiSettingsForSetupWizardXL;->mScreenState:I
 
     .line 545
-    iget-object v1, p0, Lcom/android/settings/wifi/WifiSettingsForSetupWizardXL;->mWifiSettings:Lcom/android/settings/wifi/WifiSettings;
+    iget-object v1, p0, Lcom/android/settings_ext/wifi/WifiSettingsForSetupWizardXL;->mWifiSettings:Lcom/android/settings_ext/wifi/WifiSettings;
 
-    iget-object v2, p0, Lcom/android/settings/wifi/WifiSettingsForSetupWizardXL;->mWifiConfig:Lcom/android/settings/wifi/WifiConfigUiForSetupWizardXL;
+    iget-object v2, p0, Lcom/android/settings_ext/wifi/WifiSettingsForSetupWizardXL;->mWifiConfig:Lcom/android/settings_ext/wifi/WifiConfigUiForSetupWizardXL;
 
-    invoke-virtual {v2}, Lcom/android/settings/wifi/WifiConfigUiForSetupWizardXL;->getController()Lcom/android/settings/wifi/WifiConfigController;
+    invoke-virtual {v2}, Lcom/android/settings_ext/wifi/WifiConfigUiForSetupWizardXL;->getController()Lcom/android/settings_ext/wifi/WifiConfigController;
 
     move-result-object v2
 
-    invoke-virtual {v1, v2}, Lcom/android/settings/wifi/WifiSettings;->submit(Lcom/android/settings/wifi/WifiConfigController;)V
+    invoke-virtual {v1, v2}, Lcom/android/settings_ext/wifi/WifiSettings;->submit(Lcom/android/settings_ext/wifi/WifiConfigController;)V
 
     .line 553
-    invoke-direct {p0}, Lcom/android/settings/wifi/WifiSettingsForSetupWizardXL;->showConnectingState()V
+    invoke-direct {p0}, Lcom/android/settings_ext/wifi/WifiSettingsForSetupWizardXL;->showConnectingState()V
 
     .line 556
-    iget-object v1, p0, Lcom/android/settings/wifi/WifiSettingsForSetupWizardXL;->mBackButton:Landroid/widget/Button;
+    iget-object v1, p0, Lcom/android/settings_ext/wifi/WifiSettingsForSetupWizardXL;->mBackButton:Landroid/widget/Button;
 
     invoke-virtual {v1, v3}, Landroid/widget/Button;->setVisibility(I)V
 
     .line 557
-    iget-object v1, p0, Lcom/android/settings/wifi/WifiSettingsForSetupWizardXL;->mBackButton:Landroid/widget/Button;
+    iget-object v1, p0, Lcom/android/settings_ext/wifi/WifiSettingsForSetupWizardXL;->mBackButton:Landroid/widget/Button;
 
     const v2, 0x7f09075b
 
@@ -1491,7 +1491,7 @@
     .line 559
     const v1, 0x7f0f0239
 
-    invoke-virtual {p0, v1}, Lcom/android/settings/wifi/WifiSettingsForSetupWizardXL;->findViewById(I)Landroid/view/View;
+    invoke-virtual {p0, v1}, Lcom/android/settings_ext/wifi/WifiSettingsForSetupWizardXL;->findViewById(I)Landroid/view/View;
 
     move-result-object v0
 
@@ -1502,39 +1502,39 @@
     invoke-virtual {v0, v4}, Landroid/view/ViewGroup;->setVisibility(I)V
 
     .line 561
-    iget-object v1, p0, Lcom/android/settings/wifi/WifiSettingsForSetupWizardXL;->mConnectingStatusLayout:Landroid/view/View;
+    iget-object v1, p0, Lcom/android/settings_ext/wifi/WifiSettingsForSetupWizardXL;->mConnectingStatusLayout:Landroid/view/View;
 
     invoke-virtual {v1, v3}, Landroid/view/View;->setVisibility(I)V
 
     .line 562
-    iget-object v1, p0, Lcom/android/settings/wifi/WifiSettingsForSetupWizardXL;->mConnectingStatusView:Landroid/widget/TextView;
+    iget-object v1, p0, Lcom/android/settings_ext/wifi/WifiSettingsForSetupWizardXL;->mConnectingStatusView:Landroid/widget/TextView;
 
     const v2, 0x7f09076b
 
     invoke-virtual {v1, v2}, Landroid/widget/TextView;->setText(I)V
 
     .line 564
-    iget-object v1, p0, Lcom/android/settings/wifi/WifiSettingsForSetupWizardXL;->mSkipOrNextButton:Landroid/widget/Button;
+    iget-object v1, p0, Lcom/android/settings_ext/wifi/WifiSettingsForSetupWizardXL;->mSkipOrNextButton:Landroid/widget/Button;
 
     invoke-virtual {v1, v3}, Landroid/widget/Button;->setVisibility(I)V
 
     .line 565
-    iget-object v1, p0, Lcom/android/settings/wifi/WifiSettingsForSetupWizardXL;->mSkipOrNextButton:Landroid/widget/Button;
+    iget-object v1, p0, Lcom/android/settings_ext/wifi/WifiSettingsForSetupWizardXL;->mSkipOrNextButton:Landroid/widget/Button;
 
     invoke-virtual {v1, v3}, Landroid/widget/Button;->setEnabled(Z)V
 
     .line 566
-    iget-object v1, p0, Lcom/android/settings/wifi/WifiSettingsForSetupWizardXL;->mConnectButton:Landroid/widget/Button;
+    iget-object v1, p0, Lcom/android/settings_ext/wifi/WifiSettingsForSetupWizardXL;->mConnectButton:Landroid/widget/Button;
 
     invoke-virtual {v1, v4}, Landroid/widget/Button;->setVisibility(I)V
 
     .line 567
-    iget-object v1, p0, Lcom/android/settings/wifi/WifiSettingsForSetupWizardXL;->mAddNetworkButton:Landroid/widget/Button;
+    iget-object v1, p0, Lcom/android/settings_ext/wifi/WifiSettingsForSetupWizardXL;->mAddNetworkButton:Landroid/widget/Button;
 
     invoke-virtual {v1, v4}, Landroid/widget/Button;->setVisibility(I)V
 
     .line 568
-    iget-object v1, p0, Lcom/android/settings/wifi/WifiSettingsForSetupWizardXL;->mRefreshButton:Landroid/widget/Button;
+    iget-object v1, p0, Lcom/android/settings_ext/wifi/WifiSettingsForSetupWizardXL;->mRefreshButton:Landroid/widget/Button;
 
     invoke-virtual {v1, v4}, Landroid/widget/Button;->setVisibility(I)V
 
@@ -1553,31 +1553,31 @@
     invoke-super {p0, p1}, Landroid/app/Activity;->onCreate(Landroid/os/Bundle;)V
 
     .line 140
-    invoke-virtual {p0, v1}, Lcom/android/settings/wifi/WifiSettingsForSetupWizardXL;->requestWindowFeature(I)Z
+    invoke-virtual {p0, v1}, Lcom/android/settings_ext/wifi/WifiSettingsForSetupWizardXL;->requestWindowFeature(I)Z
 
     .line 141
     const v0, 0x7f0400e0
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/wifi/WifiSettingsForSetupWizardXL;->setContentView(I)V
+    invoke-virtual {p0, v0}, Lcom/android/settings_ext/wifi/WifiSettingsForSetupWizardXL;->setContentView(I)V
 
     .line 143
     const-string v0, "wifi"
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/wifi/WifiSettingsForSetupWizardXL;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
+    invoke-virtual {p0, v0}, Lcom/android/settings_ext/wifi/WifiSettingsForSetupWizardXL;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object v0
 
     check-cast v0, Landroid/net/wifi/WifiManager;
 
-    iput-object v0, p0, Lcom/android/settings/wifi/WifiSettingsForSetupWizardXL;->mWifiManager:Landroid/net/wifi/WifiManager;
+    iput-object v0, p0, Lcom/android/settings_ext/wifi/WifiSettingsForSetupWizardXL;->mWifiManager:Landroid/net/wifi/WifiManager;
 
     .line 146
-    iget-object v0, p0, Lcom/android/settings/wifi/WifiSettingsForSetupWizardXL;->mWifiManager:Landroid/net/wifi/WifiManager;
+    iget-object v0, p0, Lcom/android/settings_ext/wifi/WifiSettingsForSetupWizardXL;->mWifiManager:Landroid/net/wifi/WifiManager;
 
     invoke-virtual {v0, v1}, Landroid/net/wifi/WifiManager;->setWifiEnabled(Z)Z
 
     .line 148
-    invoke-virtual {p0}, Lcom/android/settings/wifi/WifiSettingsForSetupWizardXL;->getFragmentManager()Landroid/app/FragmentManager;
+    invoke-virtual {p0}, Lcom/android/settings_ext/wifi/WifiSettingsForSetupWizardXL;->getFragmentManager()Landroid/app/FragmentManager;
 
     move-result-object v0
 
@@ -1587,26 +1587,26 @@
 
     move-result-object v0
 
-    check-cast v0, Lcom/android/settings/wifi/WifiSettings;
+    check-cast v0, Lcom/android/settings_ext/wifi/WifiSettings;
 
-    iput-object v0, p0, Lcom/android/settings/wifi/WifiSettingsForSetupWizardXL;->mWifiSettings:Lcom/android/settings/wifi/WifiSettings;
+    iput-object v0, p0, Lcom/android/settings_ext/wifi/WifiSettingsForSetupWizardXL;->mWifiSettings:Lcom/android/settings_ext/wifi/WifiSettings;
 
     .line 150
     const-string v0, "input_method"
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/wifi/WifiSettingsForSetupWizardXL;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
+    invoke-virtual {p0, v0}, Lcom/android/settings_ext/wifi/WifiSettingsForSetupWizardXL;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object v0
 
     check-cast v0, Landroid/view/inputmethod/InputMethodManager;
 
-    iput-object v0, p0, Lcom/android/settings/wifi/WifiSettingsForSetupWizardXL;->mInputMethodManager:Landroid/view/inputmethod/InputMethodManager;
+    iput-object v0, p0, Lcom/android/settings_ext/wifi/WifiSettingsForSetupWizardXL;->mInputMethodManager:Landroid/view/inputmethod/InputMethodManager;
 
     .line 152
-    invoke-direct {p0}, Lcom/android/settings/wifi/WifiSettingsForSetupWizardXL;->initViews()V
+    invoke-direct {p0}, Lcom/android/settings_ext/wifi/WifiSettingsForSetupWizardXL;->initViews()V
 
     .line 156
-    invoke-direct {p0}, Lcom/android/settings/wifi/WifiSettingsForSetupWizardXL;->showScanningState()V
+    invoke-direct {p0}, Lcom/android/settings_ext/wifi/WifiSettingsForSetupWizardXL;->showScanningState()V
 
     .line 157
     return-void
@@ -1618,12 +1618,12 @@
 
     .prologue
     .line 714
-    iget-object v0, p0, Lcom/android/settings/wifi/WifiSettingsForSetupWizardXL;->mTopPadding:Landroid/view/View;
+    iget-object v0, p0, Lcom/android/settings_ext/wifi/WifiSettingsForSetupWizardXL;->mTopPadding:Landroid/view/View;
 
     invoke-virtual {v0, p1}, Landroid/view/View;->setVisibility(I)V
 
     .line 715
-    iget-object v0, p0, Lcom/android/settings/wifi/WifiSettingsForSetupWizardXL;->mContentPadding:Landroid/view/View;
+    iget-object v0, p0, Lcom/android/settings_ext/wifi/WifiSettingsForSetupWizardXL;->mContentPadding:Landroid/view/View;
 
     invoke-virtual {v0, p1}, Landroid/view/View;->setVisibility(I)V
 

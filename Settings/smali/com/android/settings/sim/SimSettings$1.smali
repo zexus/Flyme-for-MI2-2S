@@ -1,11 +1,11 @@
-.class Lcom/android/settings/sim/SimSettings$1;
+.class Lcom/android/settings_ext/sim/SimSettings$1;
 .super Landroid/content/BroadcastReceiver;
 .source "SimSettings.java"
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/android/settings/sim/SimSettings;
+    value = Lcom/android/settings_ext/sim/SimSettings;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -15,16 +15,16 @@
 
 
 # instance fields
-.field final synthetic this$0:Lcom/android/settings/sim/SimSettings;
+.field final synthetic this$0:Lcom/android/settings_ext/sim/SimSettings;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/sim/SimSettings;)V
+.method constructor <init>(Lcom/android/settings_ext/sim/SimSettings;)V
     .locals 0
 
     .prologue
     .line 165
-    iput-object p1, p0, Lcom/android/settings/sim/SimSettings$1;->this$0:Lcom/android/settings/sim/SimSettings;
+    iput-object p1, p0, Lcom/android/settings_ext/sim/SimSettings$1;->this$0:Lcom/android/settings_ext/sim/SimSettings;
 
     invoke-direct {p0}, Landroid/content/BroadcastReceiver;-><init>()V
 
@@ -82,16 +82,16 @@
     if-eqz v5, :cond_1
 
     .line 171
-    iget-object v5, p0, Lcom/android/settings/sim/SimSettings$1;->this$0:Lcom/android/settings/sim/SimSettings;
+    iget-object v5, p0, Lcom/android/settings_ext/sim/SimSettings$1;->this$0:Lcom/android/settings_ext/sim/SimSettings;
 
-    # invokes: Lcom/android/settings/sim/SimSettings;->updateCellularDataValues()V
-    invoke-static {v5}, Lcom/android/settings/sim/SimSettings;->access$000(Lcom/android/settings/sim/SimSettings;)V
+    # invokes: Lcom/android/settings_ext/sim/SimSettings;->updateCellularDataValues()V
+    invoke-static {v5}, Lcom/android/settings_ext/sim/SimSettings;->access$000(Lcom/android/settings_ext/sim/SimSettings;)V
 
     .line 172
-    iget-object v5, p0, Lcom/android/settings/sim/SimSettings$1;->this$0:Lcom/android/settings/sim/SimSettings;
+    iget-object v5, p0, Lcom/android/settings_ext/sim/SimSettings$1;->this$0:Lcom/android/settings_ext/sim/SimSettings;
 
-    # getter for: Lcom/android/settings/sim/SimSettings;->mSubscriptionManager:Landroid/telephony/SubscriptionManager;
-    invoke-static {v5}, Lcom/android/settings/sim/SimSettings;->access$100(Lcom/android/settings/sim/SimSettings;)Landroid/telephony/SubscriptionManager;
+    # getter for: Lcom/android/settings_ext/sim/SimSettings;->mSubscriptionManager:Landroid/telephony/SubscriptionManager;
+    invoke-static {v5}, Lcom/android/settings_ext/sim/SimSettings;->access$100(Lcom/android/settings_ext/sim/SimSettings;)Landroid/telephony/SubscriptionManager;
 
     invoke-static {}, Landroid/telephony/SubscriptionManager;->getDefaultDataSubId()I
 
@@ -101,10 +101,10 @@
     .local v2, "preferredDataSubscription":I
     int-to-long v6, v2
 
-    iget-object v5, p0, Lcom/android/settings/sim/SimSettings$1;->this$0:Lcom/android/settings/sim/SimSettings;
+    iget-object v5, p0, Lcom/android/settings_ext/sim/SimSettings$1;->this$0:Lcom/android/settings_ext/sim/SimSettings;
 
-    # getter for: Lcom/android/settings/sim/SimSettings;->mPreferredDataSubscription:J
-    invoke-static {v5}, Lcom/android/settings/sim/SimSettings;->access$200(Lcom/android/settings/sim/SimSettings;)J
+    # getter for: Lcom/android/settings_ext/sim/SimSettings;->mPreferredDataSubscription:J
+    invoke-static {v5}, Lcom/android/settings_ext/sim/SimSettings;->access$200(Lcom/android/settings_ext/sim/SimSettings;)J
 
     move-result-wide v8
 
@@ -113,17 +113,17 @@
     if-eqz v5, :cond_0
 
     .line 174
-    iget-object v5, p0, Lcom/android/settings/sim/SimSettings$1;->this$0:Lcom/android/settings/sim/SimSettings;
+    iget-object v5, p0, Lcom/android/settings_ext/sim/SimSettings$1;->this$0:Lcom/android/settings_ext/sim/SimSettings;
 
     int-to-long v6, v2
 
-    # setter for: Lcom/android/settings/sim/SimSettings;->mPreferredDataSubscription:J
-    invoke-static {v5, v6, v7}, Lcom/android/settings/sim/SimSettings;->access$202(Lcom/android/settings/sim/SimSettings;J)J
+    # setter for: Lcom/android/settings_ext/sim/SimSettings;->mPreferredDataSubscription:J
+    invoke-static {v5, v6, v7}, Lcom/android/settings_ext/sim/SimSettings;->access$202(Lcom/android/settings_ext/sim/SimSettings;J)J
 
     .line 175
-    iget-object v5, p0, Lcom/android/settings/sim/SimSettings$1;->this$0:Lcom/android/settings/sim/SimSettings;
+    iget-object v5, p0, Lcom/android/settings_ext/sim/SimSettings$1;->this$0:Lcom/android/settings_ext/sim/SimSettings;
 
-    invoke-virtual {v5}, Lcom/android/settings/sim/SimSettings;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {v5}, Lcom/android/settings_ext/sim/SimSettings;->getResources()Landroid/content/res/Resources;
 
     move-result-object v5
 
@@ -131,10 +131,10 @@
 
     new-array v7, v11, [Ljava/lang/Object;
 
-    iget-object v8, p0, Lcom/android/settings/sim/SimSettings$1;->this$0:Lcom/android/settings/sim/SimSettings;
+    iget-object v8, p0, Lcom/android/settings_ext/sim/SimSettings$1;->this$0:Lcom/android/settings_ext/sim/SimSettings;
 
-    # getter for: Lcom/android/settings/sim/SimSettings;->mSubscriptionManager:Landroid/telephony/SubscriptionManager;
-    invoke-static {v8}, Lcom/android/settings/sim/SimSettings;->access$100(Lcom/android/settings/sim/SimSettings;)Landroid/telephony/SubscriptionManager;
+    # getter for: Lcom/android/settings_ext/sim/SimSettings;->mSubscriptionManager:Landroid/telephony/SubscriptionManager;
+    invoke-static {v8}, Lcom/android/settings_ext/sim/SimSettings;->access$100(Lcom/android/settings_ext/sim/SimSettings;)Landroid/telephony/SubscriptionManager;
 
     invoke-static {v2}, Landroid/telephony/SubscriptionManager;->getSlotId(I)I
 
@@ -154,9 +154,9 @@
 
     .line 177
     .local v4, "status":Ljava/lang/String;
-    iget-object v5, p0, Lcom/android/settings/sim/SimSettings$1;->this$0:Lcom/android/settings/sim/SimSettings;
+    iget-object v5, p0, Lcom/android/settings_ext/sim/SimSettings$1;->this$0:Lcom/android/settings_ext/sim/SimSettings;
 
-    invoke-virtual {v5}, Lcom/android/settings/sim/SimSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {v5}, Lcom/android/settings_ext/sim/SimSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v5
 
@@ -193,28 +193,28 @@
 
     .line 181
     :cond_2
-    iget-object v5, p0, Lcom/android/settings/sim/SimSettings$1;->this$0:Lcom/android/settings/sim/SimSettings;
+    iget-object v5, p0, Lcom/android/settings_ext/sim/SimSettings$1;->this$0:Lcom/android/settings_ext/sim/SimSettings;
 
-    # getter for: Lcom/android/settings/sim/SimSettings;->mAvailableSubInfos:Ljava/util/List;
-    invoke-static {v5}, Lcom/android/settings/sim/SimSettings;->access$300(Lcom/android/settings/sim/SimSettings;)Ljava/util/List;
+    # getter for: Lcom/android/settings_ext/sim/SimSettings;->mAvailableSubInfos:Ljava/util/List;
+    invoke-static {v5}, Lcom/android/settings_ext/sim/SimSettings;->access$300(Lcom/android/settings_ext/sim/SimSettings;)Ljava/util/List;
 
     move-result-object v5
 
     invoke-interface {v5}, Ljava/util/List;->clear()V
 
     .line 182
-    iget-object v5, p0, Lcom/android/settings/sim/SimSettings$1;->this$0:Lcom/android/settings/sim/SimSettings;
+    iget-object v5, p0, Lcom/android/settings_ext/sim/SimSettings$1;->this$0:Lcom/android/settings_ext/sim/SimSettings;
 
-    # setter for: Lcom/android/settings/sim/SimSettings;->mNumSims:I
-    invoke-static {v5, v10}, Lcom/android/settings/sim/SimSettings;->access$402(Lcom/android/settings/sim/SimSettings;I)I
+    # setter for: Lcom/android/settings_ext/sim/SimSettings;->mNumSims:I
+    invoke-static {v5, v10}, Lcom/android/settings_ext/sim/SimSettings;->access$402(Lcom/android/settings_ext/sim/SimSettings;I)I
 
     .line 183
-    iget-object v5, p0, Lcom/android/settings/sim/SimSettings$1;->this$0:Lcom/android/settings/sim/SimSettings;
+    iget-object v5, p0, Lcom/android/settings_ext/sim/SimSettings$1;->this$0:Lcom/android/settings_ext/sim/SimSettings;
 
-    iget-object v6, p0, Lcom/android/settings/sim/SimSettings$1;->this$0:Lcom/android/settings/sim/SimSettings;
+    iget-object v6, p0, Lcom/android/settings_ext/sim/SimSettings$1;->this$0:Lcom/android/settings_ext/sim/SimSettings;
 
-    # getter for: Lcom/android/settings/sim/SimSettings;->mSubscriptionManager:Landroid/telephony/SubscriptionManager;
-    invoke-static {v6}, Lcom/android/settings/sim/SimSettings;->access$100(Lcom/android/settings/sim/SimSettings;)Landroid/telephony/SubscriptionManager;
+    # getter for: Lcom/android/settings_ext/sim/SimSettings;->mSubscriptionManager:Landroid/telephony/SubscriptionManager;
+    invoke-static {v6}, Lcom/android/settings_ext/sim/SimSettings;->access$100(Lcom/android/settings_ext/sim/SimSettings;)Landroid/telephony/SubscriptionManager;
 
     move-result-object v6
 
@@ -222,26 +222,26 @@
 
     move-result-object v6
 
-    # setter for: Lcom/android/settings/sim/SimSettings;->mSubInfoList:Ljava/util/List;
-    invoke-static {v5, v6}, Lcom/android/settings/sim/SimSettings;->access$502(Lcom/android/settings/sim/SimSettings;Ljava/util/List;)Ljava/util/List;
+    # setter for: Lcom/android/settings_ext/sim/SimSettings;->mSubInfoList:Ljava/util/List;
+    invoke-static {v5, v6}, Lcom/android/settings_ext/sim/SimSettings;->access$502(Lcom/android/settings_ext/sim/SimSettings;Ljava/util/List;)Ljava/util/List;
 
     .line 184
     const/4 v1, 0x0
 
     .local v1, "i":I
     :goto_1
-    # getter for: Lcom/android/settings/sim/SimSettings;->mNumSlots:I
-    invoke-static {}, Lcom/android/settings/sim/SimSettings;->access$600()I
+    # getter for: Lcom/android/settings_ext/sim/SimSettings;->mNumSlots:I
+    invoke-static {}, Lcom/android/settings_ext/sim/SimSettings;->access$600()I
 
     move-result v5
 
     if-ge v1, v5, :cond_4
 
     .line 185
-    iget-object v5, p0, Lcom/android/settings/sim/SimSettings$1;->this$0:Lcom/android/settings/sim/SimSettings;
+    iget-object v5, p0, Lcom/android/settings_ext/sim/SimSettings$1;->this$0:Lcom/android/settings_ext/sim/SimSettings;
 
-    # invokes: Lcom/android/settings/sim/SimSettings;->findRecordBySlotId(I)Landroid/telephony/SubscriptionInfo;
-    invoke-static {v5, v1}, Lcom/android/settings/sim/SimSettings;->access$700(Lcom/android/settings/sim/SimSettings;I)Landroid/telephony/SubscriptionInfo;
+    # invokes: Lcom/android/settings_ext/sim/SimSettings;->findRecordBySlotId(I)Landroid/telephony/SubscriptionInfo;
+    invoke-static {v5, v1}, Lcom/android/settings_ext/sim/SimSettings;->access$700(Lcom/android/settings_ext/sim/SimSettings;I)Landroid/telephony/SubscriptionInfo;
 
     move-result-object v3
 
@@ -251,24 +251,24 @@
 
     iget v5, v3, Landroid/telephony/SubscriptionInfo;->mStatus:I
 
-    iget-object v6, p0, Lcom/android/settings/sim/SimSettings$1;->this$0:Lcom/android/settings/sim/SimSettings;
+    iget-object v6, p0, Lcom/android/settings_ext/sim/SimSettings$1;->this$0:Lcom/android/settings_ext/sim/SimSettings;
 
-    # getter for: Lcom/android/settings/sim/SimSettings;->mSubscriptionManager:Landroid/telephony/SubscriptionManager;
-    invoke-static {v6}, Lcom/android/settings/sim/SimSettings;->access$100(Lcom/android/settings/sim/SimSettings;)Landroid/telephony/SubscriptionManager;
+    # getter for: Lcom/android/settings_ext/sim/SimSettings;->mSubscriptionManager:Landroid/telephony/SubscriptionManager;
+    invoke-static {v6}, Lcom/android/settings_ext/sim/SimSettings;->access$100(Lcom/android/settings_ext/sim/SimSettings;)Landroid/telephony/SubscriptionManager;
 
     if-ne v5, v11, :cond_3
 
     .line 188
-    iget-object v5, p0, Lcom/android/settings/sim/SimSettings$1;->this$0:Lcom/android/settings/sim/SimSettings;
+    iget-object v5, p0, Lcom/android/settings_ext/sim/SimSettings$1;->this$0:Lcom/android/settings_ext/sim/SimSettings;
 
-    # operator++ for: Lcom/android/settings/sim/SimSettings;->mNumSims:I
-    invoke-static {v5}, Lcom/android/settings/sim/SimSettings;->access$408(Lcom/android/settings/sim/SimSettings;)I
+    # operator++ for: Lcom/android/settings_ext/sim/SimSettings;->mNumSims:I
+    invoke-static {v5}, Lcom/android/settings_ext/sim/SimSettings;->access$408(Lcom/android/settings_ext/sim/SimSettings;)I
 
     .line 189
-    iget-object v5, p0, Lcom/android/settings/sim/SimSettings$1;->this$0:Lcom/android/settings/sim/SimSettings;
+    iget-object v5, p0, Lcom/android/settings_ext/sim/SimSettings$1;->this$0:Lcom/android/settings_ext/sim/SimSettings;
 
-    # getter for: Lcom/android/settings/sim/SimSettings;->mAvailableSubInfos:Ljava/util/List;
-    invoke-static {v5}, Lcom/android/settings/sim/SimSettings;->access$300(Lcom/android/settings/sim/SimSettings;)Ljava/util/List;
+    # getter for: Lcom/android/settings_ext/sim/SimSettings;->mAvailableSubInfos:Ljava/util/List;
+    invoke-static {v5}, Lcom/android/settings_ext/sim/SimSettings;->access$300(Lcom/android/settings_ext/sim/SimSettings;)Ljava/util/List;
 
     move-result-object v5
 
@@ -283,10 +283,10 @@
     .line 193
     .end local v3    # "sir":Landroid/telephony/SubscriptionInfo;
     :cond_4
-    iget-object v5, p0, Lcom/android/settings/sim/SimSettings$1;->this$0:Lcom/android/settings/sim/SimSettings;
+    iget-object v5, p0, Lcom/android/settings_ext/sim/SimSettings$1;->this$0:Lcom/android/settings_ext/sim/SimSettings;
 
-    # invokes: Lcom/android/settings/sim/SimSettings;->updateAllOptions()V
-    invoke-static {v5}, Lcom/android/settings/sim/SimSettings;->access$800(Lcom/android/settings/sim/SimSettings;)V
+    # invokes: Lcom/android/settings_ext/sim/SimSettings;->updateAllOptions()V
+    invoke-static {v5}, Lcom/android/settings_ext/sim/SimSettings;->access$800(Lcom/android/settings_ext/sim/SimSettings;)V
 
     goto :goto_0
 .end method

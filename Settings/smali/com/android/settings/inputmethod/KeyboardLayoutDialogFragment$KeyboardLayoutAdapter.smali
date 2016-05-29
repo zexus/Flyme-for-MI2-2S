@@ -1,11 +1,11 @@
-.class final Lcom/android/settings/inputmethod/KeyboardLayoutDialogFragment$KeyboardLayoutAdapter;
+.class final Lcom/android/settings_ext/inputmethod/KeyboardLayoutDialogFragment$KeyboardLayoutAdapter;
 .super Landroid/widget/ArrayAdapter;
 .source "KeyboardLayoutDialogFragment.java"
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/android/settings/inputmethod/KeyboardLayoutDialogFragment;
+    value = Lcom/android/settings_ext/inputmethod/KeyboardLayoutDialogFragment;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -43,7 +43,7 @@
     .line 217
     const/4 v0, -0x1
 
-    iput v0, p0, Lcom/android/settings/inputmethod/KeyboardLayoutDialogFragment$KeyboardLayoutAdapter;->mCheckedItem:I
+    iput v0, p0, Lcom/android/settings_ext/inputmethod/KeyboardLayoutDialogFragment$KeyboardLayoutAdapter;->mCheckedItem:I
 
     .line 221
     const-string v0, "layout_inflater"
@@ -54,7 +54,7 @@
 
     check-cast v0, Landroid/view/LayoutInflater;
 
-    iput-object v0, p0, Lcom/android/settings/inputmethod/KeyboardLayoutDialogFragment$KeyboardLayoutAdapter;->mInflater:Landroid/view/LayoutInflater;
+    iput-object v0, p0, Lcom/android/settings_ext/inputmethod/KeyboardLayoutDialogFragment$KeyboardLayoutAdapter;->mInflater:Landroid/view/LayoutInflater;
 
     .line 222
     return-void
@@ -77,7 +77,7 @@
     .local v1, "view":Landroid/view/View;
     if-eqz v1, :cond_0
 
-    invoke-static {v1}, Lcom/android/settings/inputmethod/KeyboardLayoutDialogFragment$KeyboardLayoutAdapter;->isTwoLine(Landroid/view/View;)Z
+    invoke-static {v1}, Lcom/android/settings_ext/inputmethod/KeyboardLayoutDialogFragment$KeyboardLayoutAdapter;->isTwoLine(Landroid/view/View;)Z
 
     move-result v2
 
@@ -85,7 +85,7 @@
 
     .line 252
     :cond_0
-    iget-object v2, p0, Lcom/android/settings/inputmethod/KeyboardLayoutDialogFragment$KeyboardLayoutAdapter;->mInflater:Landroid/view/LayoutInflater;
+    iget-object v2, p0, Lcom/android/settings_ext/inputmethod/KeyboardLayoutDialogFragment$KeyboardLayoutAdapter;->mInflater:Landroid/view/LayoutInflater;
 
     const v3, 0x109000f
 
@@ -94,7 +94,7 @@
     move-result-object v1
 
     .line 255
-    invoke-static {v1, v4}, Lcom/android/settings/inputmethod/KeyboardLayoutDialogFragment$KeyboardLayoutAdapter;->setTwoLine(Landroid/view/View;Z)V
+    invoke-static {v1, v4}, Lcom/android/settings_ext/inputmethod/KeyboardLayoutDialogFragment$KeyboardLayoutAdapter;->setTwoLine(Landroid/view/View;Z)V
 
     .line 257
     :cond_1
@@ -133,7 +133,7 @@
     .local v3, "view":Landroid/view/View;
     if-eqz v3, :cond_0
 
-    invoke-static {v3}, Lcom/android/settings/inputmethod/KeyboardLayoutDialogFragment$KeyboardLayoutAdapter;->isTwoLine(Landroid/view/View;)Z
+    invoke-static {v3}, Lcom/android/settings_ext/inputmethod/KeyboardLayoutDialogFragment$KeyboardLayoutAdapter;->isTwoLine(Landroid/view/View;)Z
 
     move-result v4
 
@@ -141,7 +141,7 @@
 
     .line 267
     :cond_0
-    iget-object v4, p0, Lcom/android/settings/inputmethod/KeyboardLayoutDialogFragment$KeyboardLayoutAdapter;->mInflater:Landroid/view/LayoutInflater;
+    iget-object v4, p0, Lcom/android/settings_ext/inputmethod/KeyboardLayoutDialogFragment$KeyboardLayoutAdapter;->mInflater:Landroid/view/LayoutInflater;
 
     const v5, 0x10900ce
 
@@ -154,7 +154,7 @@
     .line 270
     const/4 v4, 0x1
 
-    invoke-static {v3, v4}, Lcom/android/settings/inputmethod/KeyboardLayoutDialogFragment$KeyboardLayoutAdapter;->setTwoLine(Landroid/view/View;Z)V
+    invoke-static {v3, v4}, Lcom/android/settings_ext/inputmethod/KeyboardLayoutDialogFragment$KeyboardLayoutAdapter;->setTwoLine(Landroid/view/View;Z)V
 
     .line 272
     :cond_1
@@ -252,7 +252,7 @@
 
     .prologue
     .line 230
-    invoke-virtual {p0, p1}, Lcom/android/settings/inputmethod/KeyboardLayoutDialogFragment$KeyboardLayoutAdapter;->getItem(I)Ljava/lang/Object;
+    invoke-virtual {p0, p1}, Lcom/android/settings_ext/inputmethod/KeyboardLayoutDialogFragment$KeyboardLayoutAdapter;->getItem(I)Ljava/lang/Object;
 
     move-result-object v6
 
@@ -276,7 +276,7 @@
     .line 240
     .local v4, "collection":Ljava/lang/String;
     :goto_0
-    iget v0, p0, Lcom/android/settings/inputmethod/KeyboardLayoutDialogFragment$KeyboardLayoutAdapter;->mCheckedItem:I
+    iget v0, p0, Lcom/android/settings_ext/inputmethod/KeyboardLayoutDialogFragment$KeyboardLayoutAdapter;->mCheckedItem:I
 
     if-ne p1, v0, :cond_1
 
@@ -292,7 +292,7 @@
     if-eqz v0, :cond_2
 
     .line 242
-    invoke-direct {p0, p2, p3, v3, v5}, Lcom/android/settings/inputmethod/KeyboardLayoutDialogFragment$KeyboardLayoutAdapter;->inflateOneLine(Landroid/view/View;Landroid/view/ViewGroup;Ljava/lang/String;Z)Landroid/view/View;
+    invoke-direct {p0, p2, p3, v3, v5}, Lcom/android/settings_ext/inputmethod/KeyboardLayoutDialogFragment$KeyboardLayoutAdapter;->inflateOneLine(Landroid/view/View;Landroid/view/ViewGroup;Ljava/lang/String;Z)Landroid/view/View;
 
     move-result-object v0
 
@@ -305,7 +305,7 @@
     .end local v4    # "collection":Ljava/lang/String;
     .end local v5    # "checked":Z
     :cond_0
-    invoke-virtual {p0}, Lcom/android/settings/inputmethod/KeyboardLayoutDialogFragment$KeyboardLayoutAdapter;->getContext()Landroid/content/Context;
+    invoke-virtual {p0}, Lcom/android/settings_ext/inputmethod/KeyboardLayoutDialogFragment$KeyboardLayoutAdapter;->getContext()Landroid/content/Context;
 
     move-result-object v0
 
@@ -337,7 +337,7 @@
     move-object v2, p3
 
     .line 244
-    invoke-direct/range {v0 .. v5}, Lcom/android/settings/inputmethod/KeyboardLayoutDialogFragment$KeyboardLayoutAdapter;->inflateTwoLine(Landroid/view/View;Landroid/view/ViewGroup;Ljava/lang/String;Ljava/lang/String;Z)Landroid/view/View;
+    invoke-direct/range {v0 .. v5}, Lcom/android/settings_ext/inputmethod/KeyboardLayoutDialogFragment$KeyboardLayoutAdapter;->inflateTwoLine(Landroid/view/View;Landroid/view/ViewGroup;Ljava/lang/String;Ljava/lang/String;Z)Landroid/view/View;
 
     move-result-object v0
 
@@ -350,7 +350,7 @@
 
     .prologue
     .line 225
-    iput p1, p0, Lcom/android/settings/inputmethod/KeyboardLayoutDialogFragment$KeyboardLayoutAdapter;->mCheckedItem:I
+    iput p1, p0, Lcom/android/settings_ext/inputmethod/KeyboardLayoutDialogFragment$KeyboardLayoutAdapter;->mCheckedItem:I
 
     .line 226
     return-void

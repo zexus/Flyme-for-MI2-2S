@@ -1,4 +1,4 @@
-.class public Lcom/android/settings/fuelgauge/WallOfTextPreference;
+.class public Lcom/android/settings_ext/fuelgauge/WallOfTextPreference;
 .super Landroid/preference/Preference;
 .source "WallOfTextPreference.java"
 

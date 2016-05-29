@@ -1,4 +1,4 @@
-.class Lcom/android/settings/fuelgauge/BatterySaverSettings$2;
+.class Lcom/android/settings_ext/fuelgauge/BatterySaverSettings$2;
 .super Ljava/lang/Object;
 .source "BatterySaverSettings.java"
 
@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/android/settings/fuelgauge/BatterySaverSettings;
+    value = Lcom/android/settings_ext/fuelgauge/BatterySaverSettings;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -18,16 +18,16 @@
 
 
 # instance fields
-.field final synthetic this$0:Lcom/android/settings/fuelgauge/BatterySaverSettings;
+.field final synthetic this$0:Lcom/android/settings_ext/fuelgauge/BatterySaverSettings;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/fuelgauge/BatterySaverSettings;)V
+.method constructor <init>(Lcom/android/settings_ext/fuelgauge/BatterySaverSettings;)V
     .locals 0
 
     .prologue
     .line 158
-    iput-object p1, p0, Lcom/android/settings/fuelgauge/BatterySaverSettings$2;->this$0:Lcom/android/settings/fuelgauge/BatterySaverSettings;
+    iput-object p1, p0, Lcom/android/settings_ext/fuelgauge/BatterySaverSettings$2;->this$0:Lcom/android/settings_ext/fuelgauge/BatterySaverSettings;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -41,10 +41,10 @@
 
     .prologue
     .line 161
-    iget-object v0, p0, Lcom/android/settings/fuelgauge/BatterySaverSettings$2;->this$0:Lcom/android/settings/fuelgauge/BatterySaverSettings;
+    iget-object v0, p0, Lcom/android/settings_ext/fuelgauge/BatterySaverSettings$2;->this$0:Lcom/android/settings_ext/fuelgauge/BatterySaverSettings;
 
-    # invokes: Lcom/android/settings/fuelgauge/BatterySaverSettings;->updateSwitch()V
-    invoke-static {v0}, Lcom/android/settings/fuelgauge/BatterySaverSettings;->access$100(Lcom/android/settings/fuelgauge/BatterySaverSettings;)V
+    # invokes: Lcom/android/settings_ext/fuelgauge/BatterySaverSettings;->updateSwitch()V
+    invoke-static {v0}, Lcom/android/settings_ext/fuelgauge/BatterySaverSettings;->access$100(Lcom/android/settings_ext/fuelgauge/BatterySaverSettings;)V
 
     .line 162
     return-void

@@ -1,11 +1,11 @@
-.class Lcom/android/settings/RadioInfo$2;
+.class Lcom/android/settings_ext/RadioInfo$2;
 .super Landroid/os/Handler;
 .source "RadioInfo.java"
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/android/settings/RadioInfo;
+    value = Lcom/android/settings_ext/RadioInfo;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -15,16 +15,16 @@
 
 
 # instance fields
-.field final synthetic this$0:Lcom/android/settings/RadioInfo;
+.field final synthetic this$0:Lcom/android/settings_ext/RadioInfo;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/RadioInfo;)V
+.method constructor <init>(Lcom/android/settings_ext/RadioInfo;)V
     .locals 0
 
     .prologue
     .line 183
-    iput-object p1, p0, Lcom/android/settings/RadioInfo$2;->this$0:Lcom/android/settings/RadioInfo;
+    iput-object p1, p0, Lcom/android/settings_ext/RadioInfo$2;->this$0:Lcom/android/settings_ext/RadioInfo;
 
     invoke-direct {p0}, Landroid/os/Handler;-><init>()V
 
@@ -52,34 +52,34 @@
 
     .line 188
     :sswitch_0
-    iget-object v2, p0, Lcom/android/settings/RadioInfo$2;->this$0:Lcom/android/settings/RadioInfo;
+    iget-object v2, p0, Lcom/android/settings_ext/RadioInfo$2;->this$0:Lcom/android/settings_ext/RadioInfo;
 
-    # invokes: Lcom/android/settings/RadioInfo;->updatePhoneState()V
-    invoke-static {v2}, Lcom/android/settings/RadioInfo;->access$1300(Lcom/android/settings/RadioInfo;)V
+    # invokes: Lcom/android/settings_ext/RadioInfo;->updatePhoneState()V
+    invoke-static {v2}, Lcom/android/settings_ext/RadioInfo;->access$1300(Lcom/android/settings_ext/RadioInfo;)V
 
     goto :goto_0
 
     .line 192
     :sswitch_1
-    iget-object v2, p0, Lcom/android/settings/RadioInfo$2;->this$0:Lcom/android/settings/RadioInfo;
+    iget-object v2, p0, Lcom/android/settings_ext/RadioInfo$2;->this$0:Lcom/android/settings_ext/RadioInfo;
 
-    # invokes: Lcom/android/settings/RadioInfo;->updateSignalStrength()V
-    invoke-static {v2}, Lcom/android/settings/RadioInfo;->access$1400(Lcom/android/settings/RadioInfo;)V
+    # invokes: Lcom/android/settings_ext/RadioInfo;->updateSignalStrength()V
+    invoke-static {v2}, Lcom/android/settings_ext/RadioInfo;->access$1400(Lcom/android/settings_ext/RadioInfo;)V
 
     goto :goto_0
 
     .line 196
     :sswitch_2
-    iget-object v2, p0, Lcom/android/settings/RadioInfo$2;->this$0:Lcom/android/settings/RadioInfo;
+    iget-object v2, p0, Lcom/android/settings_ext/RadioInfo$2;->this$0:Lcom/android/settings_ext/RadioInfo;
 
-    # invokes: Lcom/android/settings/RadioInfo;->updateServiceState()V
-    invoke-static {v2}, Lcom/android/settings/RadioInfo;->access$1500(Lcom/android/settings/RadioInfo;)V
+    # invokes: Lcom/android/settings_ext/RadioInfo;->updateServiceState()V
+    invoke-static {v2}, Lcom/android/settings_ext/RadioInfo;->access$1500(Lcom/android/settings_ext/RadioInfo;)V
 
     .line 197
-    iget-object v2, p0, Lcom/android/settings/RadioInfo$2;->this$0:Lcom/android/settings/RadioInfo;
+    iget-object v2, p0, Lcom/android/settings_ext/RadioInfo$2;->this$0:Lcom/android/settings_ext/RadioInfo;
 
-    # invokes: Lcom/android/settings/RadioInfo;->updatePowerState()V
-    invoke-static {v2}, Lcom/android/settings/RadioInfo;->access$1600(Lcom/android/settings/RadioInfo;)V
+    # invokes: Lcom/android/settings_ext/RadioInfo;->updatePowerState()V
+    invoke-static {v2}, Lcom/android/settings_ext/RadioInfo;->access$1600(Lcom/android/settings_ext/RadioInfo;)V
 
     goto :goto_0
 
@@ -108,10 +108,10 @@
 
     .line 204
     .local v1, "type":I
-    iget-object v2, p0, Lcom/android/settings/RadioInfo$2;->this$0:Lcom/android/settings/RadioInfo;
+    iget-object v2, p0, Lcom/android/settings_ext/RadioInfo$2;->this$0:Lcom/android/settings_ext/RadioInfo;
 
-    # getter for: Lcom/android/settings/RadioInfo;->mPreferredNetworkLabels:[Ljava/lang/String;
-    invoke-static {v2}, Lcom/android/settings/RadioInfo;->access$1700(Lcom/android/settings/RadioInfo;)[Ljava/lang/String;
+    # getter for: Lcom/android/settings_ext/RadioInfo;->mPreferredNetworkLabels:[Ljava/lang/String;
+    invoke-static {v2}, Lcom/android/settings_ext/RadioInfo;->access$1700(Lcom/android/settings_ext/RadioInfo;)[Ljava/lang/String;
 
     move-result-object v2
 
@@ -120,7 +120,7 @@
     if-lt v1, v2, :cond_1
 
     .line 205
-    iget-object v2, p0, Lcom/android/settings/RadioInfo$2;->this$0:Lcom/android/settings/RadioInfo;
+    iget-object v2, p0, Lcom/android/settings_ext/RadioInfo$2;->this$0:Lcom/android/settings_ext/RadioInfo;
 
     new-instance v3, Ljava/lang/StringBuilder;
 
@@ -140,14 +140,14 @@
 
     move-result-object v3
 
-    # invokes: Lcom/android/settings/RadioInfo;->log(Ljava/lang/String;)V
-    invoke-static {v2, v3}, Lcom/android/settings/RadioInfo;->access$1000(Lcom/android/settings/RadioInfo;Ljava/lang/String;)V
+    # invokes: Lcom/android/settings_ext/RadioInfo;->log(Ljava/lang/String;)V
+    invoke-static {v2, v3}, Lcom/android/settings_ext/RadioInfo;->access$1000(Lcom/android/settings_ext/RadioInfo;Ljava/lang/String;)V
 
     .line 207
-    iget-object v2, p0, Lcom/android/settings/RadioInfo$2;->this$0:Lcom/android/settings/RadioInfo;
+    iget-object v2, p0, Lcom/android/settings_ext/RadioInfo$2;->this$0:Lcom/android/settings_ext/RadioInfo;
 
-    # getter for: Lcom/android/settings/RadioInfo;->mPreferredNetworkLabels:[Ljava/lang/String;
-    invoke-static {v2}, Lcom/android/settings/RadioInfo;->access$1700(Lcom/android/settings/RadioInfo;)[Ljava/lang/String;
+    # getter for: Lcom/android/settings_ext/RadioInfo;->mPreferredNetworkLabels:[Ljava/lang/String;
+    invoke-static {v2}, Lcom/android/settings_ext/RadioInfo;->access$1700(Lcom/android/settings_ext/RadioInfo;)[Ljava/lang/String;
 
     move-result-object v2
 
@@ -157,10 +157,10 @@
 
     .line 209
     :cond_1
-    iget-object v2, p0, Lcom/android/settings/RadioInfo$2;->this$0:Lcom/android/settings/RadioInfo;
+    iget-object v2, p0, Lcom/android/settings_ext/RadioInfo$2;->this$0:Lcom/android/settings_ext/RadioInfo;
 
-    # getter for: Lcom/android/settings/RadioInfo;->preferredNetworkType:Landroid/widget/Spinner;
-    invoke-static {v2}, Lcom/android/settings/RadioInfo;->access$1800(Lcom/android/settings/RadioInfo;)Landroid/widget/Spinner;
+    # getter for: Lcom/android/settings_ext/RadioInfo;->preferredNetworkType:Landroid/widget/Spinner;
+    invoke-static {v2}, Lcom/android/settings_ext/RadioInfo;->access$1800(Lcom/android/settings_ext/RadioInfo;)Landroid/widget/Spinner;
 
     move-result-object v2
 
@@ -171,17 +171,17 @@
     .line 211
     .end local v1    # "type":I
     :cond_2
-    iget-object v2, p0, Lcom/android/settings/RadioInfo$2;->this$0:Lcom/android/settings/RadioInfo;
+    iget-object v2, p0, Lcom/android/settings_ext/RadioInfo$2;->this$0:Lcom/android/settings_ext/RadioInfo;
 
-    # getter for: Lcom/android/settings/RadioInfo;->preferredNetworkType:Landroid/widget/Spinner;
-    invoke-static {v2}, Lcom/android/settings/RadioInfo;->access$1800(Lcom/android/settings/RadioInfo;)Landroid/widget/Spinner;
+    # getter for: Lcom/android/settings_ext/RadioInfo;->preferredNetworkType:Landroid/widget/Spinner;
+    invoke-static {v2}, Lcom/android/settings_ext/RadioInfo;->access$1800(Lcom/android/settings_ext/RadioInfo;)Landroid/widget/Spinner;
 
     move-result-object v2
 
-    iget-object v3, p0, Lcom/android/settings/RadioInfo$2;->this$0:Lcom/android/settings/RadioInfo;
+    iget-object v3, p0, Lcom/android/settings_ext/RadioInfo$2;->this$0:Lcom/android/settings_ext/RadioInfo;
 
-    # getter for: Lcom/android/settings/RadioInfo;->mPreferredNetworkLabels:[Ljava/lang/String;
-    invoke-static {v3}, Lcom/android/settings/RadioInfo;->access$1700(Lcom/android/settings/RadioInfo;)[Ljava/lang/String;
+    # getter for: Lcom/android/settings_ext/RadioInfo;->mPreferredNetworkLabels:[Ljava/lang/String;
+    invoke-static {v3}, Lcom/android/settings_ext/RadioInfo;->access$1700(Lcom/android/settings_ext/RadioInfo;)[Ljava/lang/String;
 
     move-result-object v3
 
@@ -207,16 +207,16 @@
     if-eqz v2, :cond_0
 
     .line 217
-    iget-object v2, p0, Lcom/android/settings/RadioInfo$2;->this$0:Lcom/android/settings/RadioInfo;
+    iget-object v2, p0, Lcom/android/settings_ext/RadioInfo$2;->this$0:Lcom/android/settings_ext/RadioInfo;
 
-    # getter for: Lcom/android/settings/RadioInfo;->phone:Lcom/android/internal/telephony/Phone;
-    invoke-static {v2}, Lcom/android/settings/RadioInfo;->access$1900(Lcom/android/settings/RadioInfo;)Lcom/android/internal/telephony/Phone;
+    # getter for: Lcom/android/settings_ext/RadioInfo;->phone:Lcom/android/internal/telephony/Phone;
+    invoke-static {v2}, Lcom/android/settings_ext/RadioInfo;->access$1900(Lcom/android/settings_ext/RadioInfo;)Lcom/android/internal/telephony/Phone;
 
     move-result-object v2
 
     const/16 v3, 0x3e8
 
-    invoke-virtual {p0, v3}, Lcom/android/settings/RadioInfo$2;->obtainMessage(I)Landroid/os/Message;
+    invoke-virtual {p0, v3}, Lcom/android/settings_ext/RadioInfo$2;->obtainMessage(I)Landroid/os/Message;
 
     move-result-object v3
 
@@ -238,23 +238,23 @@
     if-nez v2, :cond_3
 
     .line 224
-    iget-object v3, p0, Lcom/android/settings/RadioInfo$2;->this$0:Lcom/android/settings/RadioInfo;
+    iget-object v3, p0, Lcom/android/settings_ext/RadioInfo$2;->this$0:Lcom/android/settings_ext/RadioInfo;
 
     iget-object v2, v0, Landroid/os/AsyncResult;->result:Ljava/lang/Object;
 
     check-cast v2, Ljava/util/ArrayList;
 
-    # invokes: Lcom/android/settings/RadioInfo;->updateNeighboringCids(Ljava/util/ArrayList;)V
-    invoke-static {v3, v2}, Lcom/android/settings/RadioInfo;->access$2000(Lcom/android/settings/RadioInfo;Ljava/util/ArrayList;)V
+    # invokes: Lcom/android/settings_ext/RadioInfo;->updateNeighboringCids(Ljava/util/ArrayList;)V
+    invoke-static {v3, v2}, Lcom/android/settings_ext/RadioInfo;->access$2000(Lcom/android/settings_ext/RadioInfo;Ljava/util/ArrayList;)V
 
     goto/16 :goto_0
 
     .line 226
     :cond_3
-    iget-object v2, p0, Lcom/android/settings/RadioInfo$2;->this$0:Lcom/android/settings/RadioInfo;
+    iget-object v2, p0, Lcom/android/settings_ext/RadioInfo$2;->this$0:Lcom/android/settings_ext/RadioInfo;
 
-    # getter for: Lcom/android/settings/RadioInfo;->mNeighboringCids:Landroid/widget/TextView;
-    invoke-static {v2}, Lcom/android/settings/RadioInfo;->access$2100(Lcom/android/settings/RadioInfo;)Landroid/widget/TextView;
+    # getter for: Lcom/android/settings_ext/RadioInfo;->mNeighboringCids:Landroid/widget/TextView;
+    invoke-static {v2}, Lcom/android/settings_ext/RadioInfo;->access$2100(Lcom/android/settings_ext/RadioInfo;)Landroid/widget/TextView;
 
     move-result-object v2
 
@@ -278,10 +278,10 @@
     if-eqz v2, :cond_4
 
     .line 232
-    iget-object v2, p0, Lcom/android/settings/RadioInfo$2;->this$0:Lcom/android/settings/RadioInfo;
+    iget-object v2, p0, Lcom/android/settings_ext/RadioInfo$2;->this$0:Lcom/android/settings_ext/RadioInfo;
 
-    # getter for: Lcom/android/settings/RadioInfo;->smsc:Landroid/widget/EditText;
-    invoke-static {v2}, Lcom/android/settings/RadioInfo;->access$2200(Lcom/android/settings/RadioInfo;)Landroid/widget/EditText;
+    # getter for: Lcom/android/settings_ext/RadioInfo;->smsc:Landroid/widget/EditText;
+    invoke-static {v2}, Lcom/android/settings_ext/RadioInfo;->access$2200(Lcom/android/settings_ext/RadioInfo;)Landroid/widget/EditText;
 
     move-result-object v2
 
@@ -293,10 +293,10 @@
 
     .line 234
     :cond_4
-    iget-object v2, p0, Lcom/android/settings/RadioInfo$2;->this$0:Lcom/android/settings/RadioInfo;
+    iget-object v2, p0, Lcom/android/settings_ext/RadioInfo$2;->this$0:Lcom/android/settings_ext/RadioInfo;
 
-    # getter for: Lcom/android/settings/RadioInfo;->smsc:Landroid/widget/EditText;
-    invoke-static {v2}, Lcom/android/settings/RadioInfo;->access$2200(Lcom/android/settings/RadioInfo;)Landroid/widget/EditText;
+    # getter for: Lcom/android/settings_ext/RadioInfo;->smsc:Landroid/widget/EditText;
+    invoke-static {v2}, Lcom/android/settings_ext/RadioInfo;->access$2200(Lcom/android/settings_ext/RadioInfo;)Landroid/widget/EditText;
 
     move-result-object v3
 
@@ -311,10 +311,10 @@
     .line 238
     .end local v0    # "ar":Landroid/os/AsyncResult;
     :sswitch_7
-    iget-object v2, p0, Lcom/android/settings/RadioInfo$2;->this$0:Lcom/android/settings/RadioInfo;
+    iget-object v2, p0, Lcom/android/settings_ext/RadioInfo$2;->this$0:Lcom/android/settings_ext/RadioInfo;
 
-    # getter for: Lcom/android/settings/RadioInfo;->updateSmscButton:Landroid/widget/Button;
-    invoke-static {v2}, Lcom/android/settings/RadioInfo;->access$2300(Lcom/android/settings/RadioInfo;)Landroid/widget/Button;
+    # getter for: Lcom/android/settings_ext/RadioInfo;->updateSmscButton:Landroid/widget/Button;
+    invoke-static {v2}, Lcom/android/settings_ext/RadioInfo;->access$2300(Lcom/android/settings_ext/RadioInfo;)Landroid/widget/Button;
 
     move-result-object v2
 
@@ -332,10 +332,10 @@
     if-eqz v2, :cond_0
 
     .line 241
-    iget-object v2, p0, Lcom/android/settings/RadioInfo$2;->this$0:Lcom/android/settings/RadioInfo;
+    iget-object v2, p0, Lcom/android/settings_ext/RadioInfo$2;->this$0:Lcom/android/settings_ext/RadioInfo;
 
-    # getter for: Lcom/android/settings/RadioInfo;->smsc:Landroid/widget/EditText;
-    invoke-static {v2}, Lcom/android/settings/RadioInfo;->access$2200(Lcom/android/settings/RadioInfo;)Landroid/widget/EditText;
+    # getter for: Lcom/android/settings_ext/RadioInfo;->smsc:Landroid/widget/EditText;
+    invoke-static {v2}, Lcom/android/settings_ext/RadioInfo;->access$2200(Lcom/android/settings_ext/RadioInfo;)Landroid/widget/EditText;
 
     move-result-object v2
 

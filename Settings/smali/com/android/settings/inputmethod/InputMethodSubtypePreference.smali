@@ -1,5 +1,5 @@
-.class Lcom/android/settings/inputmethod/InputMethodSubtypePreference;
-.super Lcom/android/settings/inputmethod/SwitchWithNoTextPreference;
+.class Lcom/android/settings_ext/inputmethod/InputMethodSubtypePreference;
+.super Lcom/android/settings_ext/inputmethod/SwitchWithNoTextPreference;
 .source "InputMethodSubtypePreference.java"
 
 
@@ -20,10 +20,10 @@
     const/4 v3, 0x0
 
     .line 41
-    invoke-direct {p0, p1}, Lcom/android/settings/inputmethod/SwitchWithNoTextPreference;-><init>(Landroid/content/Context;)V
+    invoke-direct {p0, p1}, Lcom/android/settings_ext/inputmethod/SwitchWithNoTextPreference;-><init>(Landroid/content/Context;)V
 
     .line 42
-    invoke-virtual {p0, v3}, Lcom/android/settings/inputmethod/InputMethodSubtypePreference;->setPersistent(Z)V
+    invoke-virtual {p0, v3}, Lcom/android/settings_ext/inputmethod/InputMethodSubtypePreference;->setPersistent(Z)V
 
     .line 43
     new-instance v4, Ljava/lang/StringBuilder;
@@ -50,7 +50,7 @@
 
     move-result-object v4
 
-    invoke-virtual {p0, v4}, Lcom/android/settings/inputmethod/InputMethodSubtypePreference;->setKey(Ljava/lang/String;)V
+    invoke-virtual {p0, v4}, Lcom/android/settings_ext/inputmethod/InputMethodSubtypePreference;->setKey(Ljava/lang/String;)V
 
     .line 44
     invoke-virtual {p3}, Landroid/view/inputmethod/InputMethodInfo;->getPackageName()Ljava/lang/String;
@@ -69,7 +69,7 @@
 
     .line 46
     .local v0, "subtypeLabel":Ljava/lang/CharSequence;
-    invoke-virtual {p0, v0}, Lcom/android/settings/inputmethod/InputMethodSubtypePreference;->setTitle(Ljava/lang/CharSequence;)V
+    invoke-virtual {p0, v0}, Lcom/android/settings_ext/inputmethod/InputMethodSubtypePreference;->setTitle(Ljava/lang/CharSequence;)V
 
     .line 47
     invoke-virtual {p2}, Landroid/view/inputmethod/InputMethodSubtype;->getLocale()Ljava/lang/String;
@@ -85,10 +85,10 @@
     if-eqz v4, :cond_0
 
     .line 49
-    iput-boolean v3, p0, Lcom/android/settings/inputmethod/InputMethodSubtypePreference;->mIsSystemLocale:Z
+    iput-boolean v3, p0, Lcom/android/settings_ext/inputmethod/InputMethodSubtypePreference;->mIsSystemLocale:Z
 
     .line 50
-    iput-boolean v3, p0, Lcom/android/settings/inputmethod/InputMethodSubtypePreference;->mIsSystemLanguage:Z
+    iput-boolean v3, p0, Lcom/android/settings_ext/inputmethod/InputMethodSubtypePreference;->mIsSystemLanguage:Z
 
     .line 58
     :goto_0
@@ -116,10 +116,10 @@
 
     move-result v4
 
-    iput-boolean v4, p0, Lcom/android/settings/inputmethod/InputMethodSubtypePreference;->mIsSystemLocale:Z
+    iput-boolean v4, p0, Lcom/android/settings_ext/inputmethod/InputMethodSubtypePreference;->mIsSystemLocale:Z
 
     .line 54
-    iget-boolean v4, p0, Lcom/android/settings/inputmethod/InputMethodSubtypePreference;->mIsSystemLocale:Z
+    iget-boolean v4, p0, Lcom/android/settings_ext/inputmethod/InputMethodSubtypePreference;->mIsSystemLocale:Z
 
     if-nez v4, :cond_1
 
@@ -141,7 +141,7 @@
     const/4 v3, 0x1
 
     :cond_2
-    iput-boolean v3, p0, Lcom/android/settings/inputmethod/InputMethodSubtypePreference;->mIsSystemLanguage:Z
+    iput-boolean v3, p0, Lcom/android/settings_ext/inputmethod/InputMethodSubtypePreference;->mIsSystemLanguage:Z
 
     goto :goto_0
 .end method
@@ -170,18 +170,18 @@
 
     .line 64
     :cond_1
-    instance-of v6, p1, Lcom/android/settings/inputmethod/InputMethodSubtypePreference;
+    instance-of v6, p1, Lcom/android/settings_ext/inputmethod/InputMethodSubtypePreference;
 
     if-eqz v6, :cond_8
 
     move-object v0, p1
 
     .line 65
-    check-cast v0, Lcom/android/settings/inputmethod/InputMethodSubtypePreference;
+    check-cast v0, Lcom/android/settings_ext/inputmethod/InputMethodSubtypePreference;
 
     .line 66
-    .local v0, "pref":Lcom/android/settings/inputmethod/InputMethodSubtypePreference;
-    invoke-virtual {p0}, Lcom/android/settings/inputmethod/InputMethodSubtypePreference;->getTitle()Ljava/lang/CharSequence;
+    .local v0, "pref":Lcom/android/settings_ext/inputmethod/InputMethodSubtypePreference;
+    invoke-virtual {p0}, Lcom/android/settings_ext/inputmethod/InputMethodSubtypePreference;->getTitle()Ljava/lang/CharSequence;
 
     move-result-object v1
 
@@ -200,7 +200,7 @@
     if-nez v6, :cond_0
 
     .line 71
-    iget-boolean v3, p0, Lcom/android/settings/inputmethod/InputMethodSubtypePreference;->mIsSystemLocale:Z
+    iget-boolean v3, p0, Lcom/android/settings_ext/inputmethod/InputMethodSubtypePreference;->mIsSystemLocale:Z
 
     if-eqz v3, :cond_2
 
@@ -211,7 +211,7 @@
 
     .line 74
     :cond_2
-    iget-boolean v3, v0, Lcom/android/settings/inputmethod/InputMethodSubtypePreference;->mIsSystemLocale:Z
+    iget-boolean v3, v0, Lcom/android/settings_ext/inputmethod/InputMethodSubtypePreference;->mIsSystemLocale:Z
 
     if-eqz v3, :cond_3
 
@@ -222,7 +222,7 @@
 
     .line 77
     :cond_3
-    iget-boolean v3, p0, Lcom/android/settings/inputmethod/InputMethodSubtypePreference;->mIsSystemLanguage:Z
+    iget-boolean v3, p0, Lcom/android/settings_ext/inputmethod/InputMethodSubtypePreference;->mIsSystemLanguage:Z
 
     if-eqz v3, :cond_4
 
@@ -233,7 +233,7 @@
 
     .line 80
     :cond_4
-    iget-boolean v3, v0, Lcom/android/settings/inputmethod/InputMethodSubtypePreference;->mIsSystemLanguage:Z
+    iget-boolean v3, v0, Lcom/android/settings_ext/inputmethod/InputMethodSubtypePreference;->mIsSystemLanguage:Z
 
     if-eqz v3, :cond_5
 
@@ -285,11 +285,11 @@
     goto :goto_0
 
     .line 91
-    .end local v0    # "pref":Lcom/android/settings/inputmethod/InputMethodSubtypePreference;
+    .end local v0    # "pref":Lcom/android/settings_ext/inputmethod/InputMethodSubtypePreference;
     .end local v1    # "t0":Ljava/lang/CharSequence;
     .end local v2    # "t1":Ljava/lang/CharSequence;
     :cond_8
-    invoke-super {p0, p1}, Lcom/android/settings/inputmethod/SwitchWithNoTextPreference;->compareTo(Landroid/preference/Preference;)I
+    invoke-super {p0, p1}, Lcom/android/settings_ext/inputmethod/SwitchWithNoTextPreference;->compareTo(Landroid/preference/Preference;)I
 
     move-result v3
 

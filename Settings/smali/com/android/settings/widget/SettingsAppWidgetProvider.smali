@@ -1,4 +1,4 @@
-.class public Lcom/android/settings/widget/SettingsAppWidgetProvider;
+.class public Lcom/android/settings_ext/widget/SettingsAppWidgetProvider;
 .super Landroid/appwidget/AppWidgetProvider;
 .source "SettingsAppWidgetProvider.java"
 
@@ -6,13 +6,13 @@
 # annotations
 .annotation system Ldalvik/annotation/MemberClasses;
     value = {
-        Lcom/android/settings/widget/SettingsAppWidgetProvider$1;,
-        Lcom/android/settings/widget/SettingsAppWidgetProvider$SettingsObserver;,
-        Lcom/android/settings/widget/SettingsAppWidgetProvider$SyncStateTracker;,
-        Lcom/android/settings/widget/SettingsAppWidgetProvider$LocationStateTracker;,
-        Lcom/android/settings/widget/SettingsAppWidgetProvider$BluetoothStateTracker;,
-        Lcom/android/settings/widget/SettingsAppWidgetProvider$WifiStateTracker;,
-        Lcom/android/settings/widget/SettingsAppWidgetProvider$StateTracker;
+        Lcom/android/settings_ext/widget/SettingsAppWidgetProvider$1;,
+        Lcom/android/settings_ext/widget/SettingsAppWidgetProvider$SettingsObserver;,
+        Lcom/android/settings_ext/widget/SettingsAppWidgetProvider$SyncStateTracker;,
+        Lcom/android/settings_ext/widget/SettingsAppWidgetProvider$LocationStateTracker;,
+        Lcom/android/settings_ext/widget/SettingsAppWidgetProvider$BluetoothStateTracker;,
+        Lcom/android/settings_ext/widget/SettingsAppWidgetProvider$WifiStateTracker;,
+        Lcom/android/settings_ext/widget/SettingsAppWidgetProvider$StateTracker;
     }
 .end annotation
 
@@ -26,17 +26,17 @@
 
 .field static final THIS_APPWIDGET:Landroid/content/ComponentName;
 
-.field private static final sBluetoothState:Lcom/android/settings/widget/SettingsAppWidgetProvider$StateTracker;
+.field private static final sBluetoothState:Lcom/android/settings_ext/widget/SettingsAppWidgetProvider$StateTracker;
 
-.field private static sLocalBluetoothAdapter:Lcom/android/settings/bluetooth/LocalBluetoothAdapter;
+.field private static sLocalBluetoothAdapter:Lcom/android/settings_ext/bluetooth/LocalBluetoothAdapter;
 
-.field private static final sLocationState:Lcom/android/settings/widget/SettingsAppWidgetProvider$StateTracker;
+.field private static final sLocationState:Lcom/android/settings_ext/widget/SettingsAppWidgetProvider$StateTracker;
 
-.field private static sSettingsObserver:Lcom/android/settings/widget/SettingsAppWidgetProvider$SettingsObserver;
+.field private static sSettingsObserver:Lcom/android/settings_ext/widget/SettingsAppWidgetProvider$SettingsObserver;
 
-.field private static final sSyncState:Lcom/android/settings/widget/SettingsAppWidgetProvider$StateTracker;
+.field private static final sSyncState:Lcom/android/settings_ext/widget/SettingsAppWidgetProvider$StateTracker;
 
-.field private static final sWifiState:Lcom/android/settings/widget/SettingsAppWidgetProvider$StateTracker;
+.field private static final sWifiState:Lcom/android/settings_ext/widget/SettingsAppWidgetProvider$StateTracker;
 
 
 # direct methods
@@ -57,59 +57,59 @@
 
     invoke-direct {v0, v1, v2}, Landroid/content/ComponentName;-><init>(Ljava/lang/String;Ljava/lang/String;)V
 
-    sput-object v0, Lcom/android/settings/widget/SettingsAppWidgetProvider;->THIS_APPWIDGET:Landroid/content/ComponentName;
+    sput-object v0, Lcom/android/settings_ext/widget/SettingsAppWidgetProvider;->THIS_APPWIDGET:Landroid/content/ComponentName;
 
     .line 57
-    sput-object v3, Lcom/android/settings/widget/SettingsAppWidgetProvider;->sLocalBluetoothAdapter:Lcom/android/settings/bluetooth/LocalBluetoothAdapter;
+    sput-object v3, Lcom/android/settings_ext/widget/SettingsAppWidgetProvider;->sLocalBluetoothAdapter:Lcom/android/settings_ext/bluetooth/LocalBluetoothAdapter;
 
     .line 80
     new-array v0, v4, [I
 
     fill-array-data v0, :array_0
 
-    sput-object v0, Lcom/android/settings/widget/SettingsAppWidgetProvider;->IND_DRAWABLE_OFF:[I
+    sput-object v0, Lcom/android/settings_ext/widget/SettingsAppWidgetProvider;->IND_DRAWABLE_OFF:[I
 
     .line 86
     new-array v0, v4, [I
 
     fill-array-data v0, :array_1
 
-    sput-object v0, Lcom/android/settings/widget/SettingsAppWidgetProvider;->IND_DRAWABLE_MID:[I
+    sput-object v0, Lcom/android/settings_ext/widget/SettingsAppWidgetProvider;->IND_DRAWABLE_MID:[I
 
     .line 92
     new-array v0, v4, [I
 
     fill-array-data v0, :array_2
 
-    sput-object v0, Lcom/android/settings/widget/SettingsAppWidgetProvider;->IND_DRAWABLE_ON:[I
+    sput-object v0, Lcom/android/settings_ext/widget/SettingsAppWidgetProvider;->IND_DRAWABLE_ON:[I
 
     .line 103
-    new-instance v0, Lcom/android/settings/widget/SettingsAppWidgetProvider$WifiStateTracker;
+    new-instance v0, Lcom/android/settings_ext/widget/SettingsAppWidgetProvider$WifiStateTracker;
 
-    invoke-direct {v0, v3}, Lcom/android/settings/widget/SettingsAppWidgetProvider$WifiStateTracker;-><init>(Lcom/android/settings/widget/SettingsAppWidgetProvider$1;)V
+    invoke-direct {v0, v3}, Lcom/android/settings_ext/widget/SettingsAppWidgetProvider$WifiStateTracker;-><init>(Lcom/android/settings_ext/widget/SettingsAppWidgetProvider$1;)V
 
-    sput-object v0, Lcom/android/settings/widget/SettingsAppWidgetProvider;->sWifiState:Lcom/android/settings/widget/SettingsAppWidgetProvider$StateTracker;
+    sput-object v0, Lcom/android/settings_ext/widget/SettingsAppWidgetProvider;->sWifiState:Lcom/android/settings_ext/widget/SettingsAppWidgetProvider$StateTracker;
 
     .line 104
-    new-instance v0, Lcom/android/settings/widget/SettingsAppWidgetProvider$BluetoothStateTracker;
+    new-instance v0, Lcom/android/settings_ext/widget/SettingsAppWidgetProvider$BluetoothStateTracker;
 
-    invoke-direct {v0, v3}, Lcom/android/settings/widget/SettingsAppWidgetProvider$BluetoothStateTracker;-><init>(Lcom/android/settings/widget/SettingsAppWidgetProvider$1;)V
+    invoke-direct {v0, v3}, Lcom/android/settings_ext/widget/SettingsAppWidgetProvider$BluetoothStateTracker;-><init>(Lcom/android/settings_ext/widget/SettingsAppWidgetProvider$1;)V
 
-    sput-object v0, Lcom/android/settings/widget/SettingsAppWidgetProvider;->sBluetoothState:Lcom/android/settings/widget/SettingsAppWidgetProvider$StateTracker;
+    sput-object v0, Lcom/android/settings_ext/widget/SettingsAppWidgetProvider;->sBluetoothState:Lcom/android/settings_ext/widget/SettingsAppWidgetProvider$StateTracker;
 
     .line 105
-    new-instance v0, Lcom/android/settings/widget/SettingsAppWidgetProvider$LocationStateTracker;
+    new-instance v0, Lcom/android/settings_ext/widget/SettingsAppWidgetProvider$LocationStateTracker;
 
-    invoke-direct {v0, v3}, Lcom/android/settings/widget/SettingsAppWidgetProvider$LocationStateTracker;-><init>(Lcom/android/settings/widget/SettingsAppWidgetProvider$1;)V
+    invoke-direct {v0, v3}, Lcom/android/settings_ext/widget/SettingsAppWidgetProvider$LocationStateTracker;-><init>(Lcom/android/settings_ext/widget/SettingsAppWidgetProvider$1;)V
 
-    sput-object v0, Lcom/android/settings/widget/SettingsAppWidgetProvider;->sLocationState:Lcom/android/settings/widget/SettingsAppWidgetProvider$StateTracker;
+    sput-object v0, Lcom/android/settings_ext/widget/SettingsAppWidgetProvider;->sLocationState:Lcom/android/settings_ext/widget/SettingsAppWidgetProvider$StateTracker;
 
     .line 106
-    new-instance v0, Lcom/android/settings/widget/SettingsAppWidgetProvider$SyncStateTracker;
+    new-instance v0, Lcom/android/settings_ext/widget/SettingsAppWidgetProvider$SyncStateTracker;
 
-    invoke-direct {v0, v3}, Lcom/android/settings/widget/SettingsAppWidgetProvider$SyncStateTracker;-><init>(Lcom/android/settings/widget/SettingsAppWidgetProvider$1;)V
+    invoke-direct {v0, v3}, Lcom/android/settings_ext/widget/SettingsAppWidgetProvider$SyncStateTracker;-><init>(Lcom/android/settings_ext/widget/SettingsAppWidgetProvider$1;)V
 
-    sput-object v0, Lcom/android/settings/widget/SettingsAppWidgetProvider;->sSyncState:Lcom/android/settings/widget/SettingsAppWidgetProvider$StateTracker;
+    sput-object v0, Lcom/android/settings_ext/widget/SettingsAppWidgetProvider;->sSyncState:Lcom/android/settings_ext/widget/SettingsAppWidgetProvider$StateTracker;
 
     return-void
 
@@ -156,7 +156,7 @@
 
     .prologue
     .line 50
-    sget-object v0, Lcom/android/settings/widget/SettingsAppWidgetProvider;->IND_DRAWABLE_OFF:[I
+    sget-object v0, Lcom/android/settings_ext/widget/SettingsAppWidgetProvider;->IND_DRAWABLE_OFF:[I
 
     return-object v0
 .end method
@@ -166,7 +166,7 @@
 
     .prologue
     .line 50
-    sget-object v0, Lcom/android/settings/widget/SettingsAppWidgetProvider;->IND_DRAWABLE_ON:[I
+    sget-object v0, Lcom/android/settings_ext/widget/SettingsAppWidgetProvider;->IND_DRAWABLE_ON:[I
 
     return-object v0
 .end method
@@ -176,28 +176,28 @@
 
     .prologue
     .line 50
-    sget-object v0, Lcom/android/settings/widget/SettingsAppWidgetProvider;->IND_DRAWABLE_MID:[I
+    sget-object v0, Lcom/android/settings_ext/widget/SettingsAppWidgetProvider;->IND_DRAWABLE_MID:[I
 
     return-object v0
 .end method
 
-.method static synthetic access$800()Lcom/android/settings/bluetooth/LocalBluetoothAdapter;
+.method static synthetic access$800()Lcom/android/settings_ext/bluetooth/LocalBluetoothAdapter;
     .locals 1
 
     .prologue
     .line 50
-    sget-object v0, Lcom/android/settings/widget/SettingsAppWidgetProvider;->sLocalBluetoothAdapter:Lcom/android/settings/bluetooth/LocalBluetoothAdapter;
+    sget-object v0, Lcom/android/settings_ext/widget/SettingsAppWidgetProvider;->sLocalBluetoothAdapter:Lcom/android/settings_ext/bluetooth/LocalBluetoothAdapter;
 
     return-object v0
 .end method
 
-.method static synthetic access$802(Lcom/android/settings/bluetooth/LocalBluetoothAdapter;)Lcom/android/settings/bluetooth/LocalBluetoothAdapter;
+.method static synthetic access$802(Lcom/android/settings_ext/bluetooth/LocalBluetoothAdapter;)Lcom/android/settings_ext/bluetooth/LocalBluetoothAdapter;
     .locals 0
-    .param p0, "x0"    # Lcom/android/settings/bluetooth/LocalBluetoothAdapter;
+    .param p0, "x0"    # Lcom/android/settings_ext/bluetooth/LocalBluetoothAdapter;
 
     .prologue
     .line 50
-    sput-object p0, Lcom/android/settings/widget/SettingsAppWidgetProvider;->sLocalBluetoothAdapter:Lcom/android/settings/bluetooth/LocalBluetoothAdapter;
+    sput-object p0, Lcom/android/settings_ext/widget/SettingsAppWidgetProvider;->sLocalBluetoothAdapter:Lcom/android/settings_ext/bluetooth/LocalBluetoothAdapter;
 
     return-object p0
 .end method
@@ -224,7 +224,7 @@
 
     const/4 v2, 0x0
 
-    invoke-static {p0, v2}, Lcom/android/settings/widget/SettingsAppWidgetProvider;->getLaunchPendingIntent(Landroid/content/Context;I)Landroid/app/PendingIntent;
+    invoke-static {p0, v2}, Lcom/android/settings_ext/widget/SettingsAppWidgetProvider;->getLaunchPendingIntent(Landroid/content/Context;I)Landroid/app/PendingIntent;
 
     move-result-object v2
 
@@ -235,7 +235,7 @@
 
     const/4 v2, 0x1
 
-    invoke-static {p0, v2}, Lcom/android/settings/widget/SettingsAppWidgetProvider;->getLaunchPendingIntent(Landroid/content/Context;I)Landroid/app/PendingIntent;
+    invoke-static {p0, v2}, Lcom/android/settings_ext/widget/SettingsAppWidgetProvider;->getLaunchPendingIntent(Landroid/content/Context;I)Landroid/app/PendingIntent;
 
     move-result-object v2
 
@@ -246,7 +246,7 @@
 
     const/4 v2, 0x2
 
-    invoke-static {p0, v2}, Lcom/android/settings/widget/SettingsAppWidgetProvider;->getLaunchPendingIntent(Landroid/content/Context;I)Landroid/app/PendingIntent;
+    invoke-static {p0, v2}, Lcom/android/settings_ext/widget/SettingsAppWidgetProvider;->getLaunchPendingIntent(Landroid/content/Context;I)Landroid/app/PendingIntent;
 
     move-result-object v2
 
@@ -257,7 +257,7 @@
 
     const/4 v2, 0x3
 
-    invoke-static {p0, v2}, Lcom/android/settings/widget/SettingsAppWidgetProvider;->getLaunchPendingIntent(Landroid/content/Context;I)Landroid/app/PendingIntent;
+    invoke-static {p0, v2}, Lcom/android/settings_ext/widget/SettingsAppWidgetProvider;->getLaunchPendingIntent(Landroid/content/Context;I)Landroid/app/PendingIntent;
 
     move-result-object v2
 
@@ -268,14 +268,14 @@
 
     const/4 v2, 0x4
 
-    invoke-static {p0, v2}, Lcom/android/settings/widget/SettingsAppWidgetProvider;->getLaunchPendingIntent(Landroid/content/Context;I)Landroid/app/PendingIntent;
+    invoke-static {p0, v2}, Lcom/android/settings_ext/widget/SettingsAppWidgetProvider;->getLaunchPendingIntent(Landroid/content/Context;I)Landroid/app/PendingIntent;
 
     move-result-object v2
 
     invoke-virtual {v0, v1, v2}, Landroid/widget/RemoteViews;->setOnClickPendingIntent(ILandroid/app/PendingIntent;)V
 
     .line 703
-    invoke-static {v0, p0}, Lcom/android/settings/widget/SettingsAppWidgetProvider;->updateButtons(Landroid/widget/RemoteViews;Landroid/content/Context;)V
+    invoke-static {v0, p0}, Lcom/android/settings_ext/widget/SettingsAppWidgetProvider;->updateButtons(Landroid/widget/RemoteViews;Landroid/content/Context;)V
 
     .line 704
     return-object v0
@@ -287,12 +287,12 @@
 
     .prologue
     .line 652
-    sget-object v0, Lcom/android/settings/widget/SettingsAppWidgetProvider;->sSettingsObserver:Lcom/android/settings/widget/SettingsAppWidgetProvider$SettingsObserver;
+    sget-object v0, Lcom/android/settings_ext/widget/SettingsAppWidgetProvider;->sSettingsObserver:Lcom/android/settings_ext/widget/SettingsAppWidgetProvider$SettingsObserver;
 
     if-nez v0, :cond_0
 
     .line 653
-    new-instance v0, Lcom/android/settings/widget/SettingsAppWidgetProvider$SettingsObserver;
+    new-instance v0, Lcom/android/settings_ext/widget/SettingsAppWidgetProvider$SettingsObserver;
 
     new-instance v1, Landroid/os/Handler;
 
@@ -302,14 +302,14 @@
 
     move-result-object v2
 
-    invoke-direct {v0, v1, v2}, Lcom/android/settings/widget/SettingsAppWidgetProvider$SettingsObserver;-><init>(Landroid/os/Handler;Landroid/content/Context;)V
+    invoke-direct {v0, v1, v2}, Lcom/android/settings_ext/widget/SettingsAppWidgetProvider$SettingsObserver;-><init>(Landroid/os/Handler;Landroid/content/Context;)V
 
-    sput-object v0, Lcom/android/settings/widget/SettingsAppWidgetProvider;->sSettingsObserver:Lcom/android/settings/widget/SettingsAppWidgetProvider$SettingsObserver;
+    sput-object v0, Lcom/android/settings_ext/widget/SettingsAppWidgetProvider;->sSettingsObserver:Lcom/android/settings_ext/widget/SettingsAppWidgetProvider$SettingsObserver;
 
     .line 655
-    sget-object v0, Lcom/android/settings/widget/SettingsAppWidgetProvider;->sSettingsObserver:Lcom/android/settings/widget/SettingsAppWidgetProvider$SettingsObserver;
+    sget-object v0, Lcom/android/settings_ext/widget/SettingsAppWidgetProvider;->sSettingsObserver:Lcom/android/settings_ext/widget/SettingsAppWidgetProvider$SettingsObserver;
 
-    invoke-virtual {v0}, Lcom/android/settings/widget/SettingsAppWidgetProvider$SettingsObserver;->startObserving()V
+    invoke-virtual {v0}, Lcom/android/settings_ext/widget/SettingsAppWidgetProvider$SettingsObserver;->startObserving()V
 
     .line 657
     :cond_0
@@ -438,7 +438,7 @@
 
     .line 787
     .local v0, "launchIntent":Landroid/content/Intent;
-    const-class v2, Lcom/android/settings/widget/SettingsAppWidgetProvider;
+    const-class v2, Lcom/android/settings_ext/widget/SettingsAppWidgetProvider;
 
     invoke-virtual {v0, p0, v2}, Landroid/content/Intent;->setClass(Landroid/content/Context;Ljava/lang/Class;)Landroid/content/Intent;
 
@@ -749,27 +749,27 @@
     const/4 v6, 0x0
 
     .line 727
-    sget-object v4, Lcom/android/settings/widget/SettingsAppWidgetProvider;->sWifiState:Lcom/android/settings/widget/SettingsAppWidgetProvider$StateTracker;
+    sget-object v4, Lcom/android/settings_ext/widget/SettingsAppWidgetProvider;->sWifiState:Lcom/android/settings_ext/widget/SettingsAppWidgetProvider$StateTracker;
 
-    invoke-virtual {v4, p1, p0}, Lcom/android/settings/widget/SettingsAppWidgetProvider$StateTracker;->setImageViewResources(Landroid/content/Context;Landroid/widget/RemoteViews;)V
+    invoke-virtual {v4, p1, p0}, Lcom/android/settings_ext/widget/SettingsAppWidgetProvider$StateTracker;->setImageViewResources(Landroid/content/Context;Landroid/widget/RemoteViews;)V
 
     .line 728
-    sget-object v4, Lcom/android/settings/widget/SettingsAppWidgetProvider;->sBluetoothState:Lcom/android/settings/widget/SettingsAppWidgetProvider$StateTracker;
+    sget-object v4, Lcom/android/settings_ext/widget/SettingsAppWidgetProvider;->sBluetoothState:Lcom/android/settings_ext/widget/SettingsAppWidgetProvider$StateTracker;
 
-    invoke-virtual {v4, p1, p0}, Lcom/android/settings/widget/SettingsAppWidgetProvider$StateTracker;->setImageViewResources(Landroid/content/Context;Landroid/widget/RemoteViews;)V
+    invoke-virtual {v4, p1, p0}, Lcom/android/settings_ext/widget/SettingsAppWidgetProvider$StateTracker;->setImageViewResources(Landroid/content/Context;Landroid/widget/RemoteViews;)V
 
     .line 729
-    sget-object v4, Lcom/android/settings/widget/SettingsAppWidgetProvider;->sLocationState:Lcom/android/settings/widget/SettingsAppWidgetProvider$StateTracker;
+    sget-object v4, Lcom/android/settings_ext/widget/SettingsAppWidgetProvider;->sLocationState:Lcom/android/settings_ext/widget/SettingsAppWidgetProvider$StateTracker;
 
-    invoke-virtual {v4, p1, p0}, Lcom/android/settings/widget/SettingsAppWidgetProvider$StateTracker;->setImageViewResources(Landroid/content/Context;Landroid/widget/RemoteViews;)V
+    invoke-virtual {v4, p1, p0}, Lcom/android/settings_ext/widget/SettingsAppWidgetProvider$StateTracker;->setImageViewResources(Landroid/content/Context;Landroid/widget/RemoteViews;)V
 
     .line 730
-    sget-object v4, Lcom/android/settings/widget/SettingsAppWidgetProvider;->sSyncState:Lcom/android/settings/widget/SettingsAppWidgetProvider$StateTracker;
+    sget-object v4, Lcom/android/settings_ext/widget/SettingsAppWidgetProvider;->sSyncState:Lcom/android/settings_ext/widget/SettingsAppWidgetProvider$StateTracker;
 
-    invoke-virtual {v4, p1, p0}, Lcom/android/settings/widget/SettingsAppWidgetProvider$StateTracker;->setImageViewResources(Landroid/content/Context;Landroid/widget/RemoteViews;)V
+    invoke-virtual {v4, p1, p0}, Lcom/android/settings_ext/widget/SettingsAppWidgetProvider$StateTracker;->setImageViewResources(Landroid/content/Context;Landroid/widget/RemoteViews;)V
 
     .line 732
-    invoke-static {p1}, Lcom/android/settings/widget/SettingsAppWidgetProvider;->getBrightnessMode(Landroid/content/Context;)Z
+    invoke-static {p1}, Lcom/android/settings_ext/widget/SettingsAppWidgetProvider;->getBrightnessMode(Landroid/content/Context;)Z
 
     move-result v4
 
@@ -810,7 +810,7 @@
 
     .line 741
     :cond_0
-    invoke-static {p1}, Lcom/android/settings/widget/SettingsAppWidgetProvider;->getBrightness(Landroid/content/Context;)I
+    invoke-static {p1}, Lcom/android/settings_ext/widget/SettingsAppWidgetProvider;->getBrightness(Landroid/content/Context;)I
 
     move-result v0
 
@@ -961,7 +961,7 @@
 
     .prologue
     .line 713
-    invoke-static {p0}, Lcom/android/settings/widget/SettingsAppWidgetProvider;->buildUpdate(Landroid/content/Context;)Landroid/widget/RemoteViews;
+    invoke-static {p0}, Lcom/android/settings_ext/widget/SettingsAppWidgetProvider;->buildUpdate(Landroid/content/Context;)Landroid/widget/RemoteViews;
 
     move-result-object v1
 
@@ -973,12 +973,12 @@
 
     .line 716
     .local v0, "gm":Landroid/appwidget/AppWidgetManager;
-    sget-object v2, Lcom/android/settings/widget/SettingsAppWidgetProvider;->THIS_APPWIDGET:Landroid/content/ComponentName;
+    sget-object v2, Lcom/android/settings_ext/widget/SettingsAppWidgetProvider;->THIS_APPWIDGET:Landroid/content/ComponentName;
 
     invoke-virtual {v0, v2, v1}, Landroid/appwidget/AppWidgetManager;->updateAppWidget(Landroid/content/ComponentName;Landroid/widget/RemoteViews;)V
 
     .line 717
-    invoke-static {p0}, Lcom/android/settings/widget/SettingsAppWidgetProvider;->checkObserver(Landroid/content/Context;)V
+    invoke-static {p0}, Lcom/android/settings_ext/widget/SettingsAppWidgetProvider;->checkObserver(Landroid/content/Context;)V
 
     .line 718
     return-void
@@ -992,19 +992,19 @@
 
     .prologue
     .line 677
-    sget-object v0, Lcom/android/settings/widget/SettingsAppWidgetProvider;->sSettingsObserver:Lcom/android/settings/widget/SettingsAppWidgetProvider$SettingsObserver;
+    sget-object v0, Lcom/android/settings_ext/widget/SettingsAppWidgetProvider;->sSettingsObserver:Lcom/android/settings_ext/widget/SettingsAppWidgetProvider$SettingsObserver;
 
     if-eqz v0, :cond_0
 
     .line 678
-    sget-object v0, Lcom/android/settings/widget/SettingsAppWidgetProvider;->sSettingsObserver:Lcom/android/settings/widget/SettingsAppWidgetProvider$SettingsObserver;
+    sget-object v0, Lcom/android/settings_ext/widget/SettingsAppWidgetProvider;->sSettingsObserver:Lcom/android/settings_ext/widget/SettingsAppWidgetProvider$SettingsObserver;
 
-    invoke-virtual {v0}, Lcom/android/settings/widget/SettingsAppWidgetProvider$SettingsObserver;->stopObserving()V
+    invoke-virtual {v0}, Lcom/android/settings_ext/widget/SettingsAppWidgetProvider$SettingsObserver;->stopObserving()V
 
     .line 679
     const/4 v0, 0x0
 
-    sput-object v0, Lcom/android/settings/widget/SettingsAppWidgetProvider;->sSettingsObserver:Lcom/android/settings/widget/SettingsAppWidgetProvider$SettingsObserver;
+    sput-object v0, Lcom/android/settings_ext/widget/SettingsAppWidgetProvider;->sSettingsObserver:Lcom/android/settings_ext/widget/SettingsAppWidgetProvider$SettingsObserver;
 
     .line 681
     :cond_0
@@ -1017,7 +1017,7 @@
 
     .prologue
     .line 672
-    invoke-static {p1}, Lcom/android/settings/widget/SettingsAppWidgetProvider;->checkObserver(Landroid/content/Context;)V
+    invoke-static {p1}, Lcom/android/settings_ext/widget/SettingsAppWidgetProvider;->checkObserver(Landroid/content/Context;)V
 
     .line 673
     return-void
@@ -1048,14 +1048,14 @@
     if-eqz v3, :cond_2
 
     .line 806
-    sget-object v3, Lcom/android/settings/widget/SettingsAppWidgetProvider;->sWifiState:Lcom/android/settings/widget/SettingsAppWidgetProvider$StateTracker;
+    sget-object v3, Lcom/android/settings_ext/widget/SettingsAppWidgetProvider;->sWifiState:Lcom/android/settings_ext/widget/SettingsAppWidgetProvider$StateTracker;
 
-    invoke-virtual {v3, p1, p2}, Lcom/android/settings/widget/SettingsAppWidgetProvider$StateTracker;->onActualStateChange(Landroid/content/Context;Landroid/content/Intent;)V
+    invoke-virtual {v3, p1, p2}, Lcom/android/settings_ext/widget/SettingsAppWidgetProvider$StateTracker;->onActualStateChange(Landroid/content/Context;Landroid/content/Intent;)V
 
     .line 835
     :cond_0
     :goto_0
-    invoke-static {p1}, Lcom/android/settings/widget/SettingsAppWidgetProvider;->updateWidget(Landroid/content/Context;)V
+    invoke-static {p1}, Lcom/android/settings_ext/widget/SettingsAppWidgetProvider;->updateWidget(Landroid/content/Context;)V
 
     .line 836
     :cond_1
@@ -1072,9 +1072,9 @@
     if-eqz v3, :cond_3
 
     .line 808
-    sget-object v3, Lcom/android/settings/widget/SettingsAppWidgetProvider;->sBluetoothState:Lcom/android/settings/widget/SettingsAppWidgetProvider$StateTracker;
+    sget-object v3, Lcom/android/settings_ext/widget/SettingsAppWidgetProvider;->sBluetoothState:Lcom/android/settings_ext/widget/SettingsAppWidgetProvider$StateTracker;
 
-    invoke-virtual {v3, p1, p2}, Lcom/android/settings/widget/SettingsAppWidgetProvider$StateTracker;->onActualStateChange(Landroid/content/Context;Landroid/content/Intent;)V
+    invoke-virtual {v3, p1, p2}, Lcom/android/settings_ext/widget/SettingsAppWidgetProvider$StateTracker;->onActualStateChange(Landroid/content/Context;Landroid/content/Intent;)V
 
     goto :goto_0
 
@@ -1089,9 +1089,9 @@
     if-eqz v3, :cond_4
 
     .line 810
-    sget-object v3, Lcom/android/settings/widget/SettingsAppWidgetProvider;->sLocationState:Lcom/android/settings/widget/SettingsAppWidgetProvider$StateTracker;
+    sget-object v3, Lcom/android/settings_ext/widget/SettingsAppWidgetProvider;->sLocationState:Lcom/android/settings_ext/widget/SettingsAppWidgetProvider$StateTracker;
 
-    invoke-virtual {v3, p1, p2}, Lcom/android/settings/widget/SettingsAppWidgetProvider$StateTracker;->onActualStateChange(Landroid/content/Context;Landroid/content/Intent;)V
+    invoke-virtual {v3, p1, p2}, Lcom/android/settings_ext/widget/SettingsAppWidgetProvider$StateTracker;->onActualStateChange(Landroid/content/Context;Landroid/content/Intent;)V
 
     goto :goto_0
 
@@ -1106,9 +1106,9 @@
     if-eqz v3, :cond_5
 
     .line 812
-    sget-object v3, Lcom/android/settings/widget/SettingsAppWidgetProvider;->sSyncState:Lcom/android/settings/widget/SettingsAppWidgetProvider$StateTracker;
+    sget-object v3, Lcom/android/settings_ext/widget/SettingsAppWidgetProvider;->sSyncState:Lcom/android/settings_ext/widget/SettingsAppWidgetProvider$StateTracker;
 
-    invoke-virtual {v3, p1, p2}, Lcom/android/settings/widget/SettingsAppWidgetProvider$StateTracker;->onActualStateChange(Landroid/content/Context;Landroid/content/Intent;)V
+    invoke-virtual {v3, p1, p2}, Lcom/android/settings_ext/widget/SettingsAppWidgetProvider$StateTracker;->onActualStateChange(Landroid/content/Context;Landroid/content/Intent;)V
 
     goto :goto_0
 
@@ -1142,9 +1142,9 @@
     if-nez v1, :cond_6
 
     .line 817
-    sget-object v3, Lcom/android/settings/widget/SettingsAppWidgetProvider;->sWifiState:Lcom/android/settings/widget/SettingsAppWidgetProvider$StateTracker;
+    sget-object v3, Lcom/android/settings_ext/widget/SettingsAppWidgetProvider;->sWifiState:Lcom/android/settings_ext/widget/SettingsAppWidgetProvider$StateTracker;
 
-    invoke-virtual {v3, p1}, Lcom/android/settings/widget/SettingsAppWidgetProvider$StateTracker;->toggleState(Landroid/content/Context;)V
+    invoke-virtual {v3, p1}, Lcom/android/settings_ext/widget/SettingsAppWidgetProvider$StateTracker;->toggleState(Landroid/content/Context;)V
 
     goto :goto_0
 
@@ -1155,7 +1155,7 @@
     if-ne v1, v3, :cond_7
 
     .line 819
-    invoke-direct {p0, p1}, Lcom/android/settings/widget/SettingsAppWidgetProvider;->toggleBrightness(Landroid/content/Context;)V
+    invoke-direct {p0, p1}, Lcom/android/settings_ext/widget/SettingsAppWidgetProvider;->toggleBrightness(Landroid/content/Context;)V
 
     goto :goto_0
 
@@ -1166,9 +1166,9 @@
     if-ne v1, v3, :cond_8
 
     .line 821
-    sget-object v3, Lcom/android/settings/widget/SettingsAppWidgetProvider;->sSyncState:Lcom/android/settings/widget/SettingsAppWidgetProvider$StateTracker;
+    sget-object v3, Lcom/android/settings_ext/widget/SettingsAppWidgetProvider;->sSyncState:Lcom/android/settings_ext/widget/SettingsAppWidgetProvider$StateTracker;
 
-    invoke-virtual {v3, p1}, Lcom/android/settings/widget/SettingsAppWidgetProvider$StateTracker;->toggleState(Landroid/content/Context;)V
+    invoke-virtual {v3, p1}, Lcom/android/settings_ext/widget/SettingsAppWidgetProvider$StateTracker;->toggleState(Landroid/content/Context;)V
 
     goto :goto_0
 
@@ -1179,9 +1179,9 @@
     if-ne v1, v3, :cond_9
 
     .line 823
-    sget-object v3, Lcom/android/settings/widget/SettingsAppWidgetProvider;->sLocationState:Lcom/android/settings/widget/SettingsAppWidgetProvider$StateTracker;
+    sget-object v3, Lcom/android/settings_ext/widget/SettingsAppWidgetProvider;->sLocationState:Lcom/android/settings_ext/widget/SettingsAppWidgetProvider$StateTracker;
 
-    invoke-virtual {v3, p1}, Lcom/android/settings/widget/SettingsAppWidgetProvider$StateTracker;->toggleState(Landroid/content/Context;)V
+    invoke-virtual {v3, p1}, Lcom/android/settings_ext/widget/SettingsAppWidgetProvider$StateTracker;->toggleState(Landroid/content/Context;)V
 
     goto :goto_0
 
@@ -1192,9 +1192,9 @@
     if-ne v1, v3, :cond_0
 
     .line 825
-    sget-object v3, Lcom/android/settings/widget/SettingsAppWidgetProvider;->sBluetoothState:Lcom/android/settings/widget/SettingsAppWidgetProvider$StateTracker;
+    sget-object v3, Lcom/android/settings_ext/widget/SettingsAppWidgetProvider;->sBluetoothState:Lcom/android/settings_ext/widget/SettingsAppWidgetProvider$StateTracker;
 
-    invoke-virtual {v3, p1}, Lcom/android/settings/widget/SettingsAppWidgetProvider$StateTracker;->toggleState(Landroid/content/Context;)V
+    invoke-virtual {v3, p1}, Lcom/android/settings_ext/widget/SettingsAppWidgetProvider$StateTracker;->toggleState(Landroid/content/Context;)V
 
     goto :goto_0
 .end method
@@ -1207,7 +1207,7 @@
 
     .prologue
     .line 663
-    invoke-static {p1}, Lcom/android/settings/widget/SettingsAppWidgetProvider;->buildUpdate(Landroid/content/Context;)Landroid/widget/RemoteViews;
+    invoke-static {p1}, Lcom/android/settings_ext/widget/SettingsAppWidgetProvider;->buildUpdate(Landroid/content/Context;)Landroid/widget/RemoteViews;
 
     move-result-object v1
 

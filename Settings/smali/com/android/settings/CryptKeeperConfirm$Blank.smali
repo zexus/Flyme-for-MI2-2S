@@ -1,11 +1,11 @@
-.class public Lcom/android/settings/CryptKeeperConfirm$Blank;
+.class public Lcom/android/settings_ext/CryptKeeperConfirm$Blank;
 .super Landroid/app/Activity;
 .source "CryptKeeperConfirm.java"
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/android/settings/CryptKeeperConfirm;
+    value = Lcom/android/settings_ext/CryptKeeperConfirm;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -31,7 +31,7 @@
 
     invoke-direct {v0}, Landroid/os/Handler;-><init>()V
 
-    iput-object v0, p0, Lcom/android/settings/CryptKeeperConfirm$Blank;->mHandler:Landroid/os/Handler;
+    iput-object v0, p0, Lcom/android/settings_ext/CryptKeeperConfirm$Blank;->mHandler:Landroid/os/Handler;
 
     return-void
 .end method
@@ -49,23 +49,23 @@
     .line 51
     const v1, 0x7f040022
 
-    invoke-virtual {p0, v1}, Lcom/android/settings/CryptKeeperConfirm$Blank;->setContentView(I)V
+    invoke-virtual {p0, v1}, Lcom/android/settings_ext/CryptKeeperConfirm$Blank;->setContentView(I)V
 
     .line 53
-    invoke-static {}, Lcom/android/settings/Utils;->isMonkeyRunning()Z
+    invoke-static {}, Lcom/android/settings_ext/Utils;->isMonkeyRunning()Z
 
     move-result v1
 
     if-eqz v1, :cond_0
 
     .line 54
-    invoke-virtual {p0}, Lcom/android/settings/CryptKeeperConfirm$Blank;->finish()V
+    invoke-virtual {p0}, Lcom/android/settings_ext/CryptKeeperConfirm$Blank;->finish()V
 
     .line 57
     :cond_0
     const-string v1, "statusbar"
 
-    invoke-virtual {p0, v1}, Lcom/android/settings/CryptKeeperConfirm$Blank;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
+    invoke-virtual {p0, v1}, Lcom/android/settings_ext/CryptKeeperConfirm$Blank;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object v0
 
@@ -78,11 +78,11 @@
     invoke-virtual {v0, v1}, Landroid/app/StatusBarManager;->disable(I)V
 
     .line 70
-    iget-object v1, p0, Lcom/android/settings/CryptKeeperConfirm$Blank;->mHandler:Landroid/os/Handler;
+    iget-object v1, p0, Lcom/android/settings_ext/CryptKeeperConfirm$Blank;->mHandler:Landroid/os/Handler;
 
-    new-instance v2, Lcom/android/settings/CryptKeeperConfirm$Blank$1;
+    new-instance v2, Lcom/android/settings_ext/CryptKeeperConfirm$Blank$1;
 
-    invoke-direct {v2, p0}, Lcom/android/settings/CryptKeeperConfirm$Blank$1;-><init>(Lcom/android/settings/CryptKeeperConfirm$Blank;)V
+    invoke-direct {v2, p0}, Lcom/android/settings_ext/CryptKeeperConfirm$Blank$1;-><init>(Lcom/android/settings_ext/CryptKeeperConfirm$Blank;)V
 
     const-wide/16 v4, 0x2bc
 

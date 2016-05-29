@@ -1,4 +1,4 @@
-.class Lcom/android/settings/bluetooth/BluetoothSettings$2;
+.class Lcom/android/settings_ext/bluetooth/BluetoothSettings$2;
 .super Ljava/lang/Object;
 .source "BluetoothSettings.java"
 
@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/android/settings/bluetooth/BluetoothSettings;
+    value = Lcom/android/settings_ext/bluetooth/BluetoothSettings;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -18,16 +18,16 @@
 
 
 # instance fields
-.field final synthetic this$0:Lcom/android/settings/bluetooth/BluetoothSettings;
+.field final synthetic this$0:Lcom/android/settings_ext/bluetooth/BluetoothSettings;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/bluetooth/BluetoothSettings;)V
+.method constructor <init>(Lcom/android/settings_ext/bluetooth/BluetoothSettings;)V
     .locals 0
 
     .prologue
     .line 399
-    iput-object p1, p0, Lcom/android/settings/bluetooth/BluetoothSettings$2;->this$0:Lcom/android/settings/bluetooth/BluetoothSettings;
+    iput-object p1, p0, Lcom/android/settings_ext/bluetooth/BluetoothSettings$2;->this$0:Lcom/android/settings_ext/bluetooth/BluetoothSettings;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -46,7 +46,7 @@
 
     move-result-object v13
 
-    instance-of v13, v13, Lcom/android/settings/bluetooth/CachedBluetoothDevice;
+    instance-of v13, v13, Lcom/android/settings_ext/bluetooth/CachedBluetoothDevice;
 
     if-nez v13, :cond_0
 
@@ -85,15 +85,15 @@
 
     move-result-object v3
 
-    check-cast v3, Lcom/android/settings/bluetooth/CachedBluetoothDevice;
+    check-cast v3, Lcom/android/settings_ext/bluetooth/CachedBluetoothDevice;
 
     .line 408
-    .local v3, "device":Lcom/android/settings/bluetooth/CachedBluetoothDevice;
+    .local v3, "device":Lcom/android/settings_ext/bluetooth/CachedBluetoothDevice;
     move-object/from16 v0, p0
 
-    iget-object v13, v0, Lcom/android/settings/bluetooth/BluetoothSettings$2;->this$0:Lcom/android/settings/bluetooth/BluetoothSettings;
+    iget-object v13, v0, Lcom/android/settings_ext/bluetooth/BluetoothSettings$2;->this$0:Lcom/android/settings_ext/bluetooth/BluetoothSettings;
 
-    invoke-virtual {v13}, Lcom/android/settings/bluetooth/BluetoothSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {v13}, Lcom/android/settings_ext/bluetooth/BluetoothSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v1
 
@@ -109,20 +109,20 @@
 
     move-result-object v11
 
-    check-cast v11, Lcom/android/settings/bluetooth/DeviceProfilesSettings;
+    check-cast v11, Lcom/android/settings_ext/bluetooth/DeviceProfilesSettings;
 
     .line 412
-    .local v11, "profileFragment":Lcom/android/settings/bluetooth/DeviceProfilesSettings;
-    # getter for: Lcom/android/settings/bluetooth/BluetoothSettings;->mSettingsDialogView:Landroid/view/View;
-    invoke-static {}, Lcom/android/settings/bluetooth/BluetoothSettings;->access$100()Landroid/view/View;
+    .local v11, "profileFragment":Lcom/android/settings_ext/bluetooth/DeviceProfilesSettings;
+    # getter for: Lcom/android/settings_ext/bluetooth/BluetoothSettings;->mSettingsDialogView:Landroid/view/View;
+    invoke-static {}, Lcom/android/settings_ext/bluetooth/BluetoothSettings;->access$100()Landroid/view/View;
 
     move-result-object v13
 
     if-eqz v13, :cond_1
 
     .line 413
-    # getter for: Lcom/android/settings/bluetooth/BluetoothSettings;->mSettingsDialogView:Landroid/view/View;
-    invoke-static {}, Lcom/android/settings/bluetooth/BluetoothSettings;->access$100()Landroid/view/View;
+    # getter for: Lcom/android/settings_ext/bluetooth/BluetoothSettings;->mSettingsDialogView:Landroid/view/View;
+    invoke-static {}, Lcom/android/settings_ext/bluetooth/BluetoothSettings;->access$100()Landroid/view/View;
 
     move-result-object v13
 
@@ -137,8 +137,8 @@
     if-eqz v10, :cond_1
 
     .line 415
-    # getter for: Lcom/android/settings/bluetooth/BluetoothSettings;->mSettingsDialogView:Landroid/view/View;
-    invoke-static {}, Lcom/android/settings/bluetooth/BluetoothSettings;->access$100()Landroid/view/View;
+    # getter for: Lcom/android/settings_ext/bluetooth/BluetoothSettings;->mSettingsDialogView:Landroid/view/View;
+    invoke-static {}, Lcom/android/settings_ext/bluetooth/BluetoothSettings;->access$100()Landroid/view/View;
 
     move-result-object v13
 
@@ -152,9 +152,9 @@
     .line 420
     move-object/from16 v0, p0
 
-    iget-object v13, v0, Lcom/android/settings/bluetooth/BluetoothSettings$2;->this$0:Lcom/android/settings/bluetooth/BluetoothSettings;
+    iget-object v13, v0, Lcom/android/settings_ext/bluetooth/BluetoothSettings$2;->this$0:Lcom/android/settings_ext/bluetooth/BluetoothSettings;
 
-    invoke-virtual {v13}, Lcom/android/settings/bluetooth/BluetoothSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {v13}, Lcom/android/settings_ext/bluetooth/BluetoothSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v13
 
@@ -172,8 +172,8 @@
 
     move-result-object v13
 
-    # setter for: Lcom/android/settings/bluetooth/BluetoothSettings;->mSettingsDialogView:Landroid/view/View;
-    invoke-static {v13}, Lcom/android/settings/bluetooth/BluetoothSettings;->access$102(Landroid/view/View;)Landroid/view/View;
+    # setter for: Lcom/android/settings_ext/bluetooth/BluetoothSettings;->mSettingsDialogView:Landroid/view/View;
+    invoke-static {v13}, Lcom/android/settings_ext/bluetooth/BluetoothSettings;->access$102(Landroid/view/View;)Landroid/view/View;
 
     .line 422
     invoke-virtual {v1}, Landroid/app/Activity;->getFragmentManager()Landroid/app/FragmentManager;
@@ -186,11 +186,11 @@
 
     move-result-object v11
 
-    .end local v11    # "profileFragment":Lcom/android/settings/bluetooth/DeviceProfilesSettings;
-    check-cast v11, Lcom/android/settings/bluetooth/DeviceProfilesSettings;
+    .end local v11    # "profileFragment":Lcom/android/settings_ext/bluetooth/DeviceProfilesSettings;
+    check-cast v11, Lcom/android/settings_ext/bluetooth/DeviceProfilesSettings;
 
     .line 427
-    .restart local v11    # "profileFragment":Lcom/android/settings/bluetooth/DeviceProfilesSettings;
+    .restart local v11    # "profileFragment":Lcom/android/settings_ext/bluetooth/DeviceProfilesSettings;
     const v13, 0x7f040015
 
     const/4 v14, 0x0
@@ -201,7 +201,7 @@
 
     .line 428
     .local v8, "header":Landroid/view/View;
-    invoke-virtual {v11}, Lcom/android/settings/bluetooth/DeviceProfilesSettings;->getListView()Landroid/widget/ListView;
+    invoke-virtual {v11}, Lcom/android/settings_ext/bluetooth/DeviceProfilesSettings;->getListView()Landroid/widget/ListView;
 
     move-result-object v13
 
@@ -211,8 +211,8 @@
     .end local v8    # "header":Landroid/view/View;
     .end local v9    # "inflater":Landroid/view/LayoutInflater;
     :cond_2
-    # getter for: Lcom/android/settings/bluetooth/BluetoothSettings;->mSettingsDialogView:Landroid/view/View;
-    invoke-static {}, Lcom/android/settings/bluetooth/BluetoothSettings;->access$100()Landroid/view/View;
+    # getter for: Lcom/android/settings_ext/bluetooth/BluetoothSettings;->mSettingsDialogView:Landroid/view/View;
+    invoke-static {}, Lcom/android/settings_ext/bluetooth/BluetoothSettings;->access$100()Landroid/view/View;
 
     move-result-object v6
 
@@ -224,7 +224,7 @@
 
     .line 433
     .local v12, "settingsDialog":Landroid/app/AlertDialog$Builder;
-    invoke-virtual {v11, v3}, Lcom/android/settings/bluetooth/DeviceProfilesSettings;->setDevice(Lcom/android/settings/bluetooth/CachedBluetoothDevice;)V
+    invoke-virtual {v11, v3}, Lcom/android/settings_ext/bluetooth/DeviceProfilesSettings;->setDevice(Lcom/android/settings_ext/bluetooth/CachedBluetoothDevice;)V
 
     .line 434
     const v13, 0x7f0f002a
@@ -237,7 +237,7 @@
 
     .line 435
     .local v4, "deviceName":Landroid/widget/EditText;
-    invoke-virtual {v3}, Lcom/android/settings/bluetooth/CachedBluetoothDevice;->getName()Ljava/lang/String;
+    invoke-virtual {v3}, Lcom/android/settings_ext/bluetooth/CachedBluetoothDevice;->getName()Ljava/lang/String;
 
     move-result-object v13
 
@@ -249,7 +249,7 @@
     move-object v7, v11
 
     .line 438
-    .local v7, "dpsFragment":Lcom/android/settings/bluetooth/DeviceProfilesSettings;
+    .local v7, "dpsFragment":Lcom/android/settings_ext/bluetooth/DeviceProfilesSettings;
     invoke-virtual/range {p1 .. p1}, Landroid/view/View;->getContext()Landroid/content/Context;
 
     move-result-object v2
@@ -266,31 +266,31 @@
     .line 441
     const v13, 0x7f090100
 
-    new-instance v14, Lcom/android/settings/bluetooth/BluetoothSettings$2$1;
+    new-instance v14, Lcom/android/settings_ext/bluetooth/BluetoothSettings$2$1;
 
     move-object/from16 v0, p0
 
-    invoke-direct {v14, v0, v6, v3}, Lcom/android/settings/bluetooth/BluetoothSettings$2$1;-><init>(Lcom/android/settings/bluetooth/BluetoothSettings$2;Landroid/view/View;Lcom/android/settings/bluetooth/CachedBluetoothDevice;)V
+    invoke-direct {v14, v0, v6, v3}, Lcom/android/settings_ext/bluetooth/BluetoothSettings$2$1;-><init>(Lcom/android/settings_ext/bluetooth/BluetoothSettings$2;Landroid/view/View;Lcom/android/settings_ext/bluetooth/CachedBluetoothDevice;)V
 
     invoke-virtual {v12, v13, v14}, Landroid/app/AlertDialog$Builder;->setPositiveButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
     .line 450
     const v13, 0x7f090103
 
-    new-instance v14, Lcom/android/settings/bluetooth/BluetoothSettings$2$2;
+    new-instance v14, Lcom/android/settings_ext/bluetooth/BluetoothSettings$2$2;
 
     move-object/from16 v0, p0
 
-    invoke-direct {v14, v0, v3, v1, v2}, Lcom/android/settings/bluetooth/BluetoothSettings$2$2;-><init>(Lcom/android/settings/bluetooth/BluetoothSettings$2;Lcom/android/settings/bluetooth/CachedBluetoothDevice;Landroid/app/Activity;Landroid/content/Context;)V
+    invoke-direct {v14, v0, v3, v1, v2}, Lcom/android/settings_ext/bluetooth/BluetoothSettings$2$2;-><init>(Lcom/android/settings_ext/bluetooth/BluetoothSettings$2;Lcom/android/settings_ext/bluetooth/CachedBluetoothDevice;Landroid/app/Activity;Landroid/content/Context;)V
 
     invoke-virtual {v12, v13, v14}, Landroid/app/AlertDialog$Builder;->setNegativeButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
     .line 463
-    new-instance v13, Lcom/android/settings/bluetooth/BluetoothSettings$2$3;
+    new-instance v13, Lcom/android/settings_ext/bluetooth/BluetoothSettings$2$3;
 
     move-object/from16 v0, p0
 
-    invoke-direct {v13, v0, v1, v7}, Lcom/android/settings/bluetooth/BluetoothSettings$2$3;-><init>(Lcom/android/settings/bluetooth/BluetoothSettings$2;Landroid/app/Activity;Lcom/android/settings/bluetooth/DeviceProfilesSettings;)V
+    invoke-direct {v13, v0, v1, v7}, Lcom/android/settings_ext/bluetooth/BluetoothSettings$2$3;-><init>(Lcom/android/settings_ext/bluetooth/BluetoothSettings$2;Landroid/app/Activity;Lcom/android/settings_ext/bluetooth/DeviceProfilesSettings;)V
 
     invoke-virtual {v12, v13}, Landroid/app/AlertDialog$Builder;->setOnDismissListener(Landroid/content/DialogInterface$OnDismissListener;)Landroid/app/AlertDialog$Builder;
 
@@ -307,11 +307,11 @@
     invoke-virtual {v5}, Landroid/app/AlertDialog;->show()V
 
     .line 475
-    new-instance v13, Lcom/android/settings/bluetooth/BluetoothSettings$2$4;
+    new-instance v13, Lcom/android/settings_ext/bluetooth/BluetoothSettings$2$4;
 
     move-object/from16 v0, p0
 
-    invoke-direct {v13, v0, v5}, Lcom/android/settings/bluetooth/BluetoothSettings$2$4;-><init>(Lcom/android/settings/bluetooth/BluetoothSettings$2;Landroid/app/AlertDialog;)V
+    invoke-direct {v13, v0, v5}, Lcom/android/settings_ext/bluetooth/BluetoothSettings$2$4;-><init>(Lcom/android/settings_ext/bluetooth/BluetoothSettings$2;Landroid/app/AlertDialog;)V
 
     invoke-virtual {v4, v13}, Landroid/widget/EditText;->addTextChangedListener(Landroid/text/TextWatcher;)V
 

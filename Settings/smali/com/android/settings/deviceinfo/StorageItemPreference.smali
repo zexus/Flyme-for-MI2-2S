@@ -1,4 +1,4 @@
-.class public Lcom/android/settings/deviceinfo/StorageItemPreference;
+.class public Lcom/android/settings_ext/deviceinfo/StorageItemPreference;
 .super Landroid/preference/Preference;
 .source "StorageItemPreference.java"
 
@@ -24,7 +24,7 @@
 
     const/16 v1, -0x2710
 
-    invoke-direct {p0, p1, v0, p3, v1}, Lcom/android/settings/deviceinfo/StorageItemPreference;-><init>(Landroid/content/Context;Ljava/lang/CharSequence;II)V
+    invoke-direct {p0, p1, v0, p3, v1}, Lcom/android/settings_ext/deviceinfo/StorageItemPreference;-><init>(Landroid/content/Context;Ljava/lang/CharSequence;II)V
 
     .line 35
     return-void
@@ -53,7 +53,7 @@
 
     move-result v3
 
-    iput v3, p0, Lcom/android/settings/deviceinfo/StorageItemPreference;->color:I
+    iput v3, p0, Lcom/android/settings_ext/deviceinfo/StorageItemPreference;->color:I
 
     .line 44
     invoke-virtual {p1}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
@@ -78,28 +78,28 @@
 
     .line 47
     .local v0, "height":I
-    iget v3, p0, Lcom/android/settings/deviceinfo/StorageItemPreference;->color:I
+    iget v3, p0, Lcom/android/settings_ext/deviceinfo/StorageItemPreference;->color:I
 
-    invoke-static {v2, v0, v3}, Lcom/android/settings/deviceinfo/StorageItemPreference;->createRectShape(III)Landroid/graphics/drawable/ShapeDrawable;
+    invoke-static {v2, v0, v3}, Lcom/android/settings_ext/deviceinfo/StorageItemPreference;->createRectShape(III)Landroid/graphics/drawable/ShapeDrawable;
 
     move-result-object v3
 
-    invoke-virtual {p0, v3}, Lcom/android/settings/deviceinfo/StorageItemPreference;->setIcon(Landroid/graphics/drawable/Drawable;)V
+    invoke-virtual {p0, v3}, Lcom/android/settings_ext/deviceinfo/StorageItemPreference;->setIcon(Landroid/graphics/drawable/Drawable;)V
 
     .line 52
     .end local v0    # "height":I
     .end local v1    # "res":Landroid/content/res/Resources;
     .end local v2    # "width":I
     :goto_0
-    invoke-virtual {p0, p2}, Lcom/android/settings/deviceinfo/StorageItemPreference;->setTitle(Ljava/lang/CharSequence;)V
+    invoke-virtual {p0, p2}, Lcom/android/settings_ext/deviceinfo/StorageItemPreference;->setTitle(Ljava/lang/CharSequence;)V
 
     .line 53
     const v3, 0x7f090394
 
-    invoke-virtual {p0, v3}, Lcom/android/settings/deviceinfo/StorageItemPreference;->setSummary(I)V
+    invoke-virtual {p0, v3}, Lcom/android/settings_ext/deviceinfo/StorageItemPreference;->setSummary(I)V
 
     .line 55
-    iput p4, p0, Lcom/android/settings/deviceinfo/StorageItemPreference;->userHandle:I
+    iput p4, p0, Lcom/android/settings_ext/deviceinfo/StorageItemPreference;->userHandle:I
 
     .line 56
     return-void
@@ -108,7 +108,7 @@
     :cond_0
     const v3, -0xff01
 
-    iput v3, p0, Lcom/android/settings/deviceinfo/StorageItemPreference;->color:I
+    iput v3, p0, Lcom/android/settings_ext/deviceinfo/StorageItemPreference;->color:I
 
     goto :goto_0
 .end method

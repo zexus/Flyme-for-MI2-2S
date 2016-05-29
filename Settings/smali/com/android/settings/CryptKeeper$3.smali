@@ -1,11 +1,11 @@
-.class Lcom/android/settings/CryptKeeper$3;
+.class Lcom/android/settings_ext/CryptKeeper$3;
 .super Landroid/os/Handler;
 .source "CryptKeeper.java"
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/android/settings/CryptKeeper;
+    value = Lcom/android/settings_ext/CryptKeeper;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -15,16 +15,16 @@
 
 
 # instance fields
-.field final synthetic this$0:Lcom/android/settings/CryptKeeper;
+.field final synthetic this$0:Lcom/android/settings_ext/CryptKeeper;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/CryptKeeper;)V
+.method constructor <init>(Lcom/android/settings_ext/CryptKeeper;)V
     .locals 0
 
     .prologue
     .line 321
-    iput-object p1, p0, Lcom/android/settings/CryptKeeper$3;->this$0:Lcom/android/settings/CryptKeeper;
+    iput-object p1, p0, Lcom/android/settings_ext/CryptKeeper$3;->this$0:Lcom/android/settings_ext/CryptKeeper;
 
     invoke-direct {p0}, Landroid/os/Handler;-><init>()V
 
@@ -49,19 +49,19 @@
 
     .line 326
     :pswitch_0
-    iget-object v0, p0, Lcom/android/settings/CryptKeeper$3;->this$0:Lcom/android/settings/CryptKeeper;
+    iget-object v0, p0, Lcom/android/settings_ext/CryptKeeper$3;->this$0:Lcom/android/settings_ext/CryptKeeper;
 
-    # invokes: Lcom/android/settings/CryptKeeper;->updateProgress()V
-    invoke-static {v0}, Lcom/android/settings/CryptKeeper;->access$1000(Lcom/android/settings/CryptKeeper;)V
+    # invokes: Lcom/android/settings_ext/CryptKeeper;->updateProgress()V
+    invoke-static {v0}, Lcom/android/settings_ext/CryptKeeper;->access$1000(Lcom/android/settings_ext/CryptKeeper;)V
 
     goto :goto_0
 
     .line 330
     :pswitch_1
-    iget-object v0, p0, Lcom/android/settings/CryptKeeper$3;->this$0:Lcom/android/settings/CryptKeeper;
+    iget-object v0, p0, Lcom/android/settings_ext/CryptKeeper$3;->this$0:Lcom/android/settings_ext/CryptKeeper;
 
-    # invokes: Lcom/android/settings/CryptKeeper;->notifyUser()V
-    invoke-static {v0}, Lcom/android/settings/CryptKeeper;->access$1100(Lcom/android/settings/CryptKeeper;)V
+    # invokes: Lcom/android/settings_ext/CryptKeeper;->notifyUser()V
+    invoke-static {v0}, Lcom/android/settings_ext/CryptKeeper;->access$1100(Lcom/android/settings_ext/CryptKeeper;)V
 
     goto :goto_0
 

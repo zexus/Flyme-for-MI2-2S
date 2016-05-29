@@ -1,4 +1,4 @@
-.class public Lcom/android/settings/quicklaunch/ShortcutPreference;
+.class public Lcom/android/settings_ext/quicklaunch/ShortcutPreference;
 .super Landroid/preference/Preference;
 .source "ShortcutPreference.java"
 
@@ -52,7 +52,7 @@
 
     invoke-direct {v0}, Ljava/lang/Object;-><init>()V
 
-    sput-object v0, Lcom/android/settings/quicklaunch/ShortcutPreference;->sStaticVarsLock:Ljava/lang/Object;
+    sput-object v0, Lcom/android/settings_ext/quicklaunch/ShortcutPreference;->sStaticVarsLock:Ljava/lang/Object;
 
     return-void
 .end method
@@ -67,13 +67,13 @@
     invoke-direct {p0, p1}, Landroid/preference/Preference;-><init>(Landroid/content/Context;)V
 
     .line 52
-    sget-object v2, Lcom/android/settings/quicklaunch/ShortcutPreference;->sStaticVarsLock:Ljava/lang/Object;
+    sget-object v2, Lcom/android/settings_ext/quicklaunch/ShortcutPreference;->sStaticVarsLock:Ljava/lang/Object;
 
     monitor-enter v2
 
     .line 55
     :try_start_0
-    sget-object v1, Lcom/android/settings/quicklaunch/ShortcutPreference;->STRING_ASSIGN_APPLICATION:Ljava/lang/String;
+    sget-object v1, Lcom/android/settings_ext/quicklaunch/ShortcutPreference;->STRING_ASSIGN_APPLICATION:Ljava/lang/String;
 
     if-nez v1, :cond_0
 
@@ -84,7 +84,7 @@
 
     move-result-object v1
 
-    sput-object v1, Lcom/android/settings/quicklaunch/ShortcutPreference;->STRING_ASSIGN_APPLICATION:Ljava/lang/String;
+    sput-object v1, Lcom/android/settings_ext/quicklaunch/ShortcutPreference;->STRING_ASSIGN_APPLICATION:Ljava/lang/String;
 
     .line 57
     const v1, 0x7f090576
@@ -93,7 +93,7 @@
 
     move-result-object v1
 
-    sput-object v1, Lcom/android/settings/quicklaunch/ShortcutPreference;->STRING_NO_SHORTCUT:Ljava/lang/String;
+    sput-object v1, Lcom/android/settings_ext/quicklaunch/ShortcutPreference;->STRING_NO_SHORTCUT:Ljava/lang/String;
 
     .line 59
     new-instance v0, Landroid/util/TypedValue;
@@ -123,7 +123,7 @@
 
     float-to-int v1, v1
 
-    sput v1, Lcom/android/settings/quicklaunch/ShortcutPreference;->sDimAlpha:I
+    sput v1, Lcom/android/settings_ext/quicklaunch/ShortcutPreference;->sDimAlpha:I
 
     .line 63
     .end local v0    # "outValue":Landroid/util/TypedValue;
@@ -133,12 +133,12 @@
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
     .line 65
-    iput-char p2, p0, Lcom/android/settings/quicklaunch/ShortcutPreference;->mShortcut:C
+    iput-char p2, p0, Lcom/android/settings_ext/quicklaunch/ShortcutPreference;->mShortcut:C
 
     .line 67
     const v1, 0x7f04008f
 
-    invoke-virtual {p0, v1}, Lcom/android/settings/quicklaunch/ShortcutPreference;->setWidgetLayoutResource(I)V
+    invoke-virtual {p0, v1}, Lcom/android/settings_ext/quicklaunch/ShortcutPreference;->setWidgetLayoutResource(I)V
 
     .line 68
     return-void
@@ -163,7 +163,7 @@
 
     .prologue
     .line 142
-    instance-of v1, p1, Lcom/android/settings/quicklaunch/ShortcutPreference;
+    instance-of v1, p1, Lcom/android/settings_ext/quicklaunch/ShortcutPreference;
 
     if-nez v1, :cond_0
 
@@ -179,14 +179,14 @@
     .line 145
     .restart local p1    # "another":Landroid/preference/Preference;
     :cond_0
-    check-cast p1, Lcom/android/settings/quicklaunch/ShortcutPreference;
+    check-cast p1, Lcom/android/settings_ext/quicklaunch/ShortcutPreference;
 
     .end local p1    # "another":Landroid/preference/Preference;
-    iget-char v0, p1, Lcom/android/settings/quicklaunch/ShortcutPreference;->mShortcut:C
+    iget-char v0, p1, Lcom/android/settings_ext/quicklaunch/ShortcutPreference;->mShortcut:C
 
     .line 146
     .local v0, "other":C
-    iget-char v1, p0, Lcom/android/settings/quicklaunch/ShortcutPreference;->mShortcut:C
+    iget-char v1, p0, Lcom/android/settings_ext/quicklaunch/ShortcutPreference;->mShortcut:C
 
     invoke-static {v1}, Ljava/lang/Character;->isDigit(C)Z
 
@@ -212,7 +212,7 @@
 
     if-eqz v1, :cond_2
 
-    iget-char v1, p0, Lcom/android/settings/quicklaunch/ShortcutPreference;->mShortcut:C
+    iget-char v1, p0, Lcom/android/settings_ext/quicklaunch/ShortcutPreference;->mShortcut:C
 
     invoke-static {v1}, Ljava/lang/Character;->isLetter(C)Z
 
@@ -226,7 +226,7 @@
 
     .line 148
     :cond_2
-    iget-char v1, p0, Lcom/android/settings/quicklaunch/ShortcutPreference;->mShortcut:C
+    iget-char v1, p0, Lcom/android/settings_ext/quicklaunch/ShortcutPreference;->mShortcut:C
 
     sub-int/2addr v1, v0
 
@@ -242,7 +242,7 @@
     check-cast p1, Landroid/preference/Preference;
 
     .end local p1    # "x0":Ljava/lang/Object;
-    invoke-virtual {p0, p1}, Lcom/android/settings/quicklaunch/ShortcutPreference;->compareTo(Landroid/preference/Preference;)I
+    invoke-virtual {p0, p1}, Lcom/android/settings_ext/quicklaunch/ShortcutPreference;->compareTo(Landroid/preference/Preference;)I
 
     move-result v0
 
@@ -254,7 +254,7 @@
 
     .prologue
     .line 71
-    iget-char v0, p0, Lcom/android/settings/quicklaunch/ShortcutPreference;->mShortcut:C
+    iget-char v0, p0, Lcom/android/settings_ext/quicklaunch/ShortcutPreference;->mShortcut:C
 
     return v0
 .end method
@@ -264,7 +264,7 @@
 
     .prologue
     .line 99
-    iget-boolean v0, p0, Lcom/android/settings/quicklaunch/ShortcutPreference;->mHasBookmark:Z
+    iget-boolean v0, p0, Lcom/android/settings_ext/quicklaunch/ShortcutPreference;->mHasBookmark:Z
 
     if-eqz v0, :cond_0
 
@@ -276,7 +276,7 @@
     return-object v0
 
     :cond_0
-    sget-object v0, Lcom/android/settings/quicklaunch/ShortcutPreference;->STRING_NO_SHORTCUT:Ljava/lang/String;
+    sget-object v0, Lcom/android/settings_ext/quicklaunch/ShortcutPreference;->STRING_NO_SHORTCUT:Ljava/lang/String;
 
     goto :goto_0
 .end method
@@ -286,7 +286,7 @@
 
     .prologue
     .line 94
-    iget-boolean v0, p0, Lcom/android/settings/quicklaunch/ShortcutPreference;->mHasBookmark:Z
+    iget-boolean v0, p0, Lcom/android/settings_ext/quicklaunch/ShortcutPreference;->mHasBookmark:Z
 
     if-eqz v0, :cond_0
 
@@ -298,7 +298,7 @@
     return-object v0
 
     :cond_0
-    sget-object v0, Lcom/android/settings/quicklaunch/ShortcutPreference;->STRING_ASSIGN_APPLICATION:Ljava/lang/String;
+    sget-object v0, Lcom/android/settings_ext/quicklaunch/ShortcutPreference;->STRING_ASSIGN_APPLICATION:Ljava/lang/String;
 
     goto :goto_0
 .end method
@@ -308,7 +308,7 @@
 
     .prologue
     .line 82
-    iget-boolean v0, p0, Lcom/android/settings/quicklaunch/ShortcutPreference;->mHasBookmark:Z
+    iget-boolean v0, p0, Lcom/android/settings_ext/quicklaunch/ShortcutPreference;->mHasBookmark:Z
 
     return v0
 .end method
@@ -335,7 +335,7 @@
     if-eqz v1, :cond_0
 
     .line 108
-    iget-char v4, p0, Lcom/android/settings/quicklaunch/ShortcutPreference;->mShortcut:C
+    iget-char v4, p0, Lcom/android/settings_ext/quicklaunch/ShortcutPreference;->mShortcut:C
 
     invoke-static {v4}, Ljava/lang/String;->valueOf(C)Ljava/lang/String;
 
@@ -355,13 +355,13 @@
 
     .line 113
     .local v3, "titleView":Landroid/widget/TextView;
-    sget-object v5, Lcom/android/settings/quicklaunch/ShortcutPreference;->sStaticVarsLock:Ljava/lang/Object;
+    sget-object v5, Lcom/android/settings_ext/quicklaunch/ShortcutPreference;->sStaticVarsLock:Ljava/lang/Object;
 
     monitor-enter v5
 
     .line 114
     :try_start_0
-    sget-object v4, Lcom/android/settings/quicklaunch/ShortcutPreference;->sRegularTitleColor:Landroid/content/res/ColorStateList;
+    sget-object v4, Lcom/android/settings_ext/quicklaunch/ShortcutPreference;->sRegularTitleColor:Landroid/content/res/ColorStateList;
 
     if-nez v4, :cond_1
 
@@ -370,18 +370,18 @@
 
     move-result-object v4
 
-    sput-object v4, Lcom/android/settings/quicklaunch/ShortcutPreference;->sRegularTitleColor:Landroid/content/res/ColorStateList;
+    sput-object v4, Lcom/android/settings_ext/quicklaunch/ShortcutPreference;->sRegularTitleColor:Landroid/content/res/ColorStateList;
 
     .line 116
-    sget-object v4, Lcom/android/settings/quicklaunch/ShortcutPreference;->sRegularTitleColor:Landroid/content/res/ColorStateList;
+    sget-object v4, Lcom/android/settings_ext/quicklaunch/ShortcutPreference;->sRegularTitleColor:Landroid/content/res/ColorStateList;
 
-    sget v6, Lcom/android/settings/quicklaunch/ShortcutPreference;->sDimAlpha:I
+    sget v6, Lcom/android/settings_ext/quicklaunch/ShortcutPreference;->sDimAlpha:I
 
     invoke-virtual {v4, v6}, Landroid/content/res/ColorStateList;->withAlpha(I)Landroid/content/res/ColorStateList;
 
     move-result-object v4
 
-    sput-object v4, Lcom/android/settings/quicklaunch/ShortcutPreference;->sDimTitleColor:Landroid/content/res/ColorStateList;
+    sput-object v4, Lcom/android/settings_ext/quicklaunch/ShortcutPreference;->sDimTitleColor:Landroid/content/res/ColorStateList;
 
     .line 118
     :cond_1
@@ -390,11 +390,11 @@
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
     .line 120
-    iget-boolean v4, p0, Lcom/android/settings/quicklaunch/ShortcutPreference;->mHasBookmark:Z
+    iget-boolean v4, p0, Lcom/android/settings_ext/quicklaunch/ShortcutPreference;->mHasBookmark:Z
 
     if-eqz v4, :cond_5
 
-    sget-object v0, Lcom/android/settings/quicklaunch/ShortcutPreference;->sRegularTitleColor:Landroid/content/res/ColorStateList;
+    sget-object v0, Lcom/android/settings_ext/quicklaunch/ShortcutPreference;->sRegularTitleColor:Landroid/content/res/ColorStateList;
 
     .line 121
     .local v0, "color":Landroid/content/res/ColorStateList;
@@ -416,13 +416,13 @@
 
     .line 127
     .local v2, "summaryView":Landroid/widget/TextView;
-    sget-object v5, Lcom/android/settings/quicklaunch/ShortcutPreference;->sStaticVarsLock:Ljava/lang/Object;
+    sget-object v5, Lcom/android/settings_ext/quicklaunch/ShortcutPreference;->sStaticVarsLock:Ljava/lang/Object;
 
     monitor-enter v5
 
     .line 128
     :try_start_1
-    sget-object v4, Lcom/android/settings/quicklaunch/ShortcutPreference;->sRegularSummaryColor:Landroid/content/res/ColorStateList;
+    sget-object v4, Lcom/android/settings_ext/quicklaunch/ShortcutPreference;->sRegularSummaryColor:Landroid/content/res/ColorStateList;
 
     if-nez v4, :cond_3
 
@@ -431,18 +431,18 @@
 
     move-result-object v4
 
-    sput-object v4, Lcom/android/settings/quicklaunch/ShortcutPreference;->sRegularSummaryColor:Landroid/content/res/ColorStateList;
+    sput-object v4, Lcom/android/settings_ext/quicklaunch/ShortcutPreference;->sRegularSummaryColor:Landroid/content/res/ColorStateList;
 
     .line 130
-    sget-object v4, Lcom/android/settings/quicklaunch/ShortcutPreference;->sRegularSummaryColor:Landroid/content/res/ColorStateList;
+    sget-object v4, Lcom/android/settings_ext/quicklaunch/ShortcutPreference;->sRegularSummaryColor:Landroid/content/res/ColorStateList;
 
-    sget v6, Lcom/android/settings/quicklaunch/ShortcutPreference;->sDimAlpha:I
+    sget v6, Lcom/android/settings_ext/quicklaunch/ShortcutPreference;->sDimAlpha:I
 
     invoke-virtual {v4, v6}, Landroid/content/res/ColorStateList;->withAlpha(I)Landroid/content/res/ColorStateList;
 
     move-result-object v4
 
-    sput-object v4, Lcom/android/settings/quicklaunch/ShortcutPreference;->sDimSummaryColor:Landroid/content/res/ColorStateList;
+    sput-object v4, Lcom/android/settings_ext/quicklaunch/ShortcutPreference;->sDimSummaryColor:Landroid/content/res/ColorStateList;
 
     .line 132
     :cond_3
@@ -451,11 +451,11 @@
     .catchall {:try_start_1 .. :try_end_1} :catchall_1
 
     .line 134
-    iget-boolean v4, p0, Lcom/android/settings/quicklaunch/ShortcutPreference;->mHasBookmark:Z
+    iget-boolean v4, p0, Lcom/android/settings_ext/quicklaunch/ShortcutPreference;->mHasBookmark:Z
 
     if-eqz v4, :cond_6
 
-    sget-object v0, Lcom/android/settings/quicklaunch/ShortcutPreference;->sRegularSummaryColor:Landroid/content/res/ColorStateList;
+    sget-object v0, Lcom/android/settings_ext/quicklaunch/ShortcutPreference;->sRegularSummaryColor:Landroid/content/res/ColorStateList;
 
     .line 135
     :goto_1
@@ -483,7 +483,7 @@
 
     .line 120
     :cond_5
-    sget-object v0, Lcom/android/settings/quicklaunch/ShortcutPreference;->sDimTitleColor:Landroid/content/res/ColorStateList;
+    sget-object v0, Lcom/android/settings_ext/quicklaunch/ShortcutPreference;->sDimTitleColor:Landroid/content/res/ColorStateList;
 
     goto :goto_0
 
@@ -502,7 +502,7 @@
 
     .line 134
     :cond_6
-    sget-object v0, Lcom/android/settings/quicklaunch/ShortcutPreference;->sDimSummaryColor:Landroid/content/res/ColorStateList;
+    sget-object v0, Lcom/android/settings_ext/quicklaunch/ShortcutPreference;->sDimSummaryColor:Landroid/content/res/ColorStateList;
 
     goto :goto_1
 .end method
@@ -513,15 +513,15 @@
 
     .prologue
     .line 86
-    iget-boolean v0, p0, Lcom/android/settings/quicklaunch/ShortcutPreference;->mHasBookmark:Z
+    iget-boolean v0, p0, Lcom/android/settings_ext/quicklaunch/ShortcutPreference;->mHasBookmark:Z
 
     if-eq p1, v0, :cond_0
 
     .line 87
-    iput-boolean p1, p0, Lcom/android/settings/quicklaunch/ShortcutPreference;->mHasBookmark:Z
+    iput-boolean p1, p0, Lcom/android/settings_ext/quicklaunch/ShortcutPreference;->mHasBookmark:Z
 
     .line 88
-    invoke-virtual {p0}, Lcom/android/settings/quicklaunch/ShortcutPreference;->notifyChanged()V
+    invoke-virtual {p0}, Lcom/android/settings_ext/quicklaunch/ShortcutPreference;->notifyChanged()V
 
     .line 90
     :cond_0

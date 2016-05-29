@@ -1,4 +1,4 @@
-.class Lcom/android/settings/print/PrintJobSettingsFragment$1;
+.class Lcom/android/settings_ext/print/PrintJobSettingsFragment$1;
 .super Ljava/lang/Object;
 .source "PrintJobSettingsFragment.java"
 
@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/android/settings/print/PrintJobSettingsFragment;
+    value = Lcom/android/settings_ext/print/PrintJobSettingsFragment;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -18,16 +18,16 @@
 
 
 # instance fields
-.field final synthetic this$0:Lcom/android/settings/print/PrintJobSettingsFragment;
+.field final synthetic this$0:Lcom/android/settings_ext/print/PrintJobSettingsFragment;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/print/PrintJobSettingsFragment;)V
+.method constructor <init>(Lcom/android/settings_ext/print/PrintJobSettingsFragment;)V
     .locals 0
 
     .prologue
     .line 56
-    iput-object p1, p0, Lcom/android/settings/print/PrintJobSettingsFragment$1;->this$0:Lcom/android/settings/print/PrintJobSettingsFragment;
+    iput-object p1, p0, Lcom/android/settings_ext/print/PrintJobSettingsFragment$1;->this$0:Lcom/android/settings_ext/print/PrintJobSettingsFragment;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -42,10 +42,10 @@
 
     .prologue
     .line 59
-    iget-object v0, p0, Lcom/android/settings/print/PrintJobSettingsFragment$1;->this$0:Lcom/android/settings/print/PrintJobSettingsFragment;
+    iget-object v0, p0, Lcom/android/settings_ext/print/PrintJobSettingsFragment$1;->this$0:Lcom/android/settings_ext/print/PrintJobSettingsFragment;
 
-    # invokes: Lcom/android/settings/print/PrintJobSettingsFragment;->updateUi()V
-    invoke-static {v0}, Lcom/android/settings/print/PrintJobSettingsFragment;->access$000(Lcom/android/settings/print/PrintJobSettingsFragment;)V
+    # invokes: Lcom/android/settings_ext/print/PrintJobSettingsFragment;->updateUi()V
+    invoke-static {v0}, Lcom/android/settings_ext/print/PrintJobSettingsFragment;->access$000(Lcom/android/settings_ext/print/PrintJobSettingsFragment;)V
 
     .line 60
     return-void

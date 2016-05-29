@@ -1,11 +1,11 @@
-.class Lcom/android/settings/location/LocationMode$2;
+.class Lcom/android/settings_ext/location/LocationMode$2;
 .super Lcom/android/location/XT/IXTSrvCb$Stub;
 .source "LocationMode.java"
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/android/settings/location/LocationMode;
+    value = Lcom/android/settings_ext/location/LocationMode;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -15,16 +15,16 @@
 
 
 # instance fields
-.field final synthetic this$0:Lcom/android/settings/location/LocationMode;
+.field final synthetic this$0:Lcom/android/settings_ext/location/LocationMode;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/location/LocationMode;)V
+.method constructor <init>(Lcom/android/settings_ext/location/LocationMode;)V
     .locals 0
 
     .prologue
     .line 102
-    iput-object p1, p0, Lcom/android/settings/location/LocationMode$2;->this$0:Lcom/android/settings/location/LocationMode;
+    iput-object p1, p0, Lcom/android/settings_ext/location/LocationMode$2;->this$0:Lcom/android/settings_ext/location/LocationMode;
 
     invoke-direct {p0}, Lcom/android/location/XT/IXTSrvCb$Stub;-><init>()V
 
@@ -46,17 +46,17 @@
     if-nez p1, :cond_0
 
     .line 106
-    iget-object v0, p0, Lcom/android/settings/location/LocationMode$2;->this$0:Lcom/android/settings/location/LocationMode;
+    iget-object v0, p0, Lcom/android/settings_ext/location/LocationMode$2;->this$0:Lcom/android/settings_ext/location/LocationMode;
 
-    # getter for: Lcom/android/settings/location/LocationMode;->mHandler:Landroid/os/Handler;
-    invoke-static {v0}, Lcom/android/settings/location/LocationMode;->access$100(Lcom/android/settings/location/LocationMode;)Landroid/os/Handler;
+    # getter for: Lcom/android/settings_ext/location/LocationMode;->mHandler:Landroid/os/Handler;
+    invoke-static {v0}, Lcom/android/settings_ext/location/LocationMode;->access$100(Lcom/android/settings_ext/location/LocationMode;)Landroid/os/Handler;
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/android/settings/location/LocationMode$2;->this$0:Lcom/android/settings/location/LocationMode;
+    iget-object v1, p0, Lcom/android/settings_ext/location/LocationMode$2;->this$0:Lcom/android/settings_ext/location/LocationMode;
 
-    # getter for: Lcom/android/settings/location/LocationMode;->mHandler:Landroid/os/Handler;
-    invoke-static {v1}, Lcom/android/settings/location/LocationMode;->access$100(Lcom/android/settings/location/LocationMode;)Landroid/os/Handler;
+    # getter for: Lcom/android/settings_ext/location/LocationMode;->mHandler:Landroid/os/Handler;
+    invoke-static {v1}, Lcom/android/settings_ext/location/LocationMode;->access$100(Lcom/android/settings_ext/location/LocationMode;)Landroid/os/Handler;
 
     move-result-object v1
 
@@ -72,17 +72,17 @@
 
     .line 109
     :cond_0
-    iget-object v0, p0, Lcom/android/settings/location/LocationMode$2;->this$0:Lcom/android/settings/location/LocationMode;
+    iget-object v0, p0, Lcom/android/settings_ext/location/LocationMode$2;->this$0:Lcom/android/settings_ext/location/LocationMode;
 
-    # getter for: Lcom/android/settings/location/LocationMode;->mHandler:Landroid/os/Handler;
-    invoke-static {v0}, Lcom/android/settings/location/LocationMode;->access$100(Lcom/android/settings/location/LocationMode;)Landroid/os/Handler;
+    # getter for: Lcom/android/settings_ext/location/LocationMode;->mHandler:Landroid/os/Handler;
+    invoke-static {v0}, Lcom/android/settings_ext/location/LocationMode;->access$100(Lcom/android/settings_ext/location/LocationMode;)Landroid/os/Handler;
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/android/settings/location/LocationMode$2;->this$0:Lcom/android/settings/location/LocationMode;
+    iget-object v1, p0, Lcom/android/settings_ext/location/LocationMode$2;->this$0:Lcom/android/settings_ext/location/LocationMode;
 
-    # getter for: Lcom/android/settings/location/LocationMode;->mHandler:Landroid/os/Handler;
-    invoke-static {v1}, Lcom/android/settings/location/LocationMode;->access$100(Lcom/android/settings/location/LocationMode;)Landroid/os/Handler;
+    # getter for: Lcom/android/settings_ext/location/LocationMode;->mHandler:Landroid/os/Handler;
+    invoke-static {v1}, Lcom/android/settings_ext/location/LocationMode;->access$100(Lcom/android/settings_ext/location/LocationMode;)Landroid/os/Handler;
 
     move-result-object v1
 

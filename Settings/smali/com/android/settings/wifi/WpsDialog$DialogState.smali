@@ -1,11 +1,11 @@
-.class final enum Lcom/android/settings/wifi/WpsDialog$DialogState;
+.class final enum Lcom/android/settings_ext/wifi/WpsDialog$DialogState;
 .super Ljava/lang/Enum;
 .source "WpsDialog.java"
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/android/settings/wifi/WpsDialog;
+    value = Lcom/android/settings_ext/wifi/WpsDialog;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -17,24 +17,24 @@
     value = {
         "Ljava/lang/Enum",
         "<",
-        "Lcom/android/settings/wifi/WpsDialog$DialogState;",
+        "Lcom/android/settings_ext/wifi/WpsDialog$DialogState;",
         ">;"
     }
 .end annotation
 
 
 # static fields
-.field private static final synthetic $VALUES:[Lcom/android/settings/wifi/WpsDialog$DialogState;
+.field private static final synthetic $VALUES:[Lcom/android/settings_ext/wifi/WpsDialog$DialogState;
 
-.field public static final enum CONNECTED:Lcom/android/settings/wifi/WpsDialog$DialogState;
+.field public static final enum CONNECTED:Lcom/android/settings_ext/wifi/WpsDialog$DialogState;
 
-.field public static final enum WPS_COMPLETE:Lcom/android/settings/wifi/WpsDialog$DialogState;
+.field public static final enum WPS_COMPLETE:Lcom/android/settings_ext/wifi/WpsDialog$DialogState;
 
-.field public static final enum WPS_FAILED:Lcom/android/settings/wifi/WpsDialog$DialogState;
+.field public static final enum WPS_FAILED:Lcom/android/settings_ext/wifi/WpsDialog$DialogState;
 
-.field public static final enum WPS_INIT:Lcom/android/settings/wifi/WpsDialog$DialogState;
+.field public static final enum WPS_INIT:Lcom/android/settings_ext/wifi/WpsDialog$DialogState;
 
-.field public static final enum WPS_START:Lcom/android/settings/wifi/WpsDialog$DialogState;
+.field public static final enum WPS_START:Lcom/android/settings_ext/wifi/WpsDialog$DialogState;
 
 
 # direct methods
@@ -53,76 +53,76 @@
     const/4 v2, 0x0
 
     .line 71
-    new-instance v0, Lcom/android/settings/wifi/WpsDialog$DialogState;
+    new-instance v0, Lcom/android/settings_ext/wifi/WpsDialog$DialogState;
 
     const-string v1, "WPS_INIT"
 
-    invoke-direct {v0, v1, v2}, Lcom/android/settings/wifi/WpsDialog$DialogState;-><init>(Ljava/lang/String;I)V
+    invoke-direct {v0, v1, v2}, Lcom/android/settings_ext/wifi/WpsDialog$DialogState;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Lcom/android/settings/wifi/WpsDialog$DialogState;->WPS_INIT:Lcom/android/settings/wifi/WpsDialog$DialogState;
+    sput-object v0, Lcom/android/settings_ext/wifi/WpsDialog$DialogState;->WPS_INIT:Lcom/android/settings_ext/wifi/WpsDialog$DialogState;
 
     .line 72
-    new-instance v0, Lcom/android/settings/wifi/WpsDialog$DialogState;
+    new-instance v0, Lcom/android/settings_ext/wifi/WpsDialog$DialogState;
 
     const-string v1, "WPS_START"
 
-    invoke-direct {v0, v1, v3}, Lcom/android/settings/wifi/WpsDialog$DialogState;-><init>(Ljava/lang/String;I)V
+    invoke-direct {v0, v1, v3}, Lcom/android/settings_ext/wifi/WpsDialog$DialogState;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Lcom/android/settings/wifi/WpsDialog$DialogState;->WPS_START:Lcom/android/settings/wifi/WpsDialog$DialogState;
+    sput-object v0, Lcom/android/settings_ext/wifi/WpsDialog$DialogState;->WPS_START:Lcom/android/settings_ext/wifi/WpsDialog$DialogState;
 
     .line 73
-    new-instance v0, Lcom/android/settings/wifi/WpsDialog$DialogState;
+    new-instance v0, Lcom/android/settings_ext/wifi/WpsDialog$DialogState;
 
     const-string v1, "WPS_COMPLETE"
 
-    invoke-direct {v0, v1, v4}, Lcom/android/settings/wifi/WpsDialog$DialogState;-><init>(Ljava/lang/String;I)V
+    invoke-direct {v0, v1, v4}, Lcom/android/settings_ext/wifi/WpsDialog$DialogState;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Lcom/android/settings/wifi/WpsDialog$DialogState;->WPS_COMPLETE:Lcom/android/settings/wifi/WpsDialog$DialogState;
+    sput-object v0, Lcom/android/settings_ext/wifi/WpsDialog$DialogState;->WPS_COMPLETE:Lcom/android/settings_ext/wifi/WpsDialog$DialogState;
 
     .line 74
-    new-instance v0, Lcom/android/settings/wifi/WpsDialog$DialogState;
+    new-instance v0, Lcom/android/settings_ext/wifi/WpsDialog$DialogState;
 
     const-string v1, "CONNECTED"
 
-    invoke-direct {v0, v1, v5}, Lcom/android/settings/wifi/WpsDialog$DialogState;-><init>(Ljava/lang/String;I)V
+    invoke-direct {v0, v1, v5}, Lcom/android/settings_ext/wifi/WpsDialog$DialogState;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Lcom/android/settings/wifi/WpsDialog$DialogState;->CONNECTED:Lcom/android/settings/wifi/WpsDialog$DialogState;
+    sput-object v0, Lcom/android/settings_ext/wifi/WpsDialog$DialogState;->CONNECTED:Lcom/android/settings_ext/wifi/WpsDialog$DialogState;
 
     .line 75
-    new-instance v0, Lcom/android/settings/wifi/WpsDialog$DialogState;
+    new-instance v0, Lcom/android/settings_ext/wifi/WpsDialog$DialogState;
 
     const-string v1, "WPS_FAILED"
 
-    invoke-direct {v0, v1, v6}, Lcom/android/settings/wifi/WpsDialog$DialogState;-><init>(Ljava/lang/String;I)V
+    invoke-direct {v0, v1, v6}, Lcom/android/settings_ext/wifi/WpsDialog$DialogState;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Lcom/android/settings/wifi/WpsDialog$DialogState;->WPS_FAILED:Lcom/android/settings/wifi/WpsDialog$DialogState;
+    sput-object v0, Lcom/android/settings_ext/wifi/WpsDialog$DialogState;->WPS_FAILED:Lcom/android/settings_ext/wifi/WpsDialog$DialogState;
 
     .line 70
     const/4 v0, 0x5
 
-    new-array v0, v0, [Lcom/android/settings/wifi/WpsDialog$DialogState;
+    new-array v0, v0, [Lcom/android/settings_ext/wifi/WpsDialog$DialogState;
 
-    sget-object v1, Lcom/android/settings/wifi/WpsDialog$DialogState;->WPS_INIT:Lcom/android/settings/wifi/WpsDialog$DialogState;
+    sget-object v1, Lcom/android/settings_ext/wifi/WpsDialog$DialogState;->WPS_INIT:Lcom/android/settings_ext/wifi/WpsDialog$DialogState;
 
     aput-object v1, v0, v2
 
-    sget-object v1, Lcom/android/settings/wifi/WpsDialog$DialogState;->WPS_START:Lcom/android/settings/wifi/WpsDialog$DialogState;
+    sget-object v1, Lcom/android/settings_ext/wifi/WpsDialog$DialogState;->WPS_START:Lcom/android/settings_ext/wifi/WpsDialog$DialogState;
 
     aput-object v1, v0, v3
 
-    sget-object v1, Lcom/android/settings/wifi/WpsDialog$DialogState;->WPS_COMPLETE:Lcom/android/settings/wifi/WpsDialog$DialogState;
+    sget-object v1, Lcom/android/settings_ext/wifi/WpsDialog$DialogState;->WPS_COMPLETE:Lcom/android/settings_ext/wifi/WpsDialog$DialogState;
 
     aput-object v1, v0, v4
 
-    sget-object v1, Lcom/android/settings/wifi/WpsDialog$DialogState;->CONNECTED:Lcom/android/settings/wifi/WpsDialog$DialogState;
+    sget-object v1, Lcom/android/settings_ext/wifi/WpsDialog$DialogState;->CONNECTED:Lcom/android/settings_ext/wifi/WpsDialog$DialogState;
 
     aput-object v1, v0, v5
 
-    sget-object v1, Lcom/android/settings/wifi/WpsDialog$DialogState;->WPS_FAILED:Lcom/android/settings/wifi/WpsDialog$DialogState;
+    sget-object v1, Lcom/android/settings_ext/wifi/WpsDialog$DialogState;->WPS_FAILED:Lcom/android/settings_ext/wifi/WpsDialog$DialogState;
 
     aput-object v1, v0, v6
 
-    sput-object v0, Lcom/android/settings/wifi/WpsDialog$DialogState;->$VALUES:[Lcom/android/settings/wifi/WpsDialog$DialogState;
+    sput-object v0, Lcom/android/settings_ext/wifi/WpsDialog$DialogState;->$VALUES:[Lcom/android/settings_ext/wifi/WpsDialog$DialogState;
 
     return-void
 .end method
@@ -142,35 +142,35 @@
     return-void
 .end method
 
-.method public static valueOf(Ljava/lang/String;)Lcom/android/settings/wifi/WpsDialog$DialogState;
+.method public static valueOf(Ljava/lang/String;)Lcom/android/settings_ext/wifi/WpsDialog$DialogState;
     .locals 1
     .param p0, "name"    # Ljava/lang/String;
 
     .prologue
     .line 70
-    const-class v0, Lcom/android/settings/wifi/WpsDialog$DialogState;
+    const-class v0, Lcom/android/settings_ext/wifi/WpsDialog$DialogState;
 
     invoke-static {v0, p0}, Ljava/lang/Enum;->valueOf(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
 
     move-result-object v0
 
-    check-cast v0, Lcom/android/settings/wifi/WpsDialog$DialogState;
+    check-cast v0, Lcom/android/settings_ext/wifi/WpsDialog$DialogState;
 
     return-object v0
 .end method
 
-.method public static values()[Lcom/android/settings/wifi/WpsDialog$DialogState;
+.method public static values()[Lcom/android/settings_ext/wifi/WpsDialog$DialogState;
     .locals 1
 
     .prologue
     .line 70
-    sget-object v0, Lcom/android/settings/wifi/WpsDialog$DialogState;->$VALUES:[Lcom/android/settings/wifi/WpsDialog$DialogState;
+    sget-object v0, Lcom/android/settings_ext/wifi/WpsDialog$DialogState;->$VALUES:[Lcom/android/settings_ext/wifi/WpsDialog$DialogState;
 
-    invoke-virtual {v0}, [Lcom/android/settings/wifi/WpsDialog$DialogState;->clone()Ljava/lang/Object;
+    invoke-virtual {v0}, [Lcom/android/settings_ext/wifi/WpsDialog$DialogState;->clone()Ljava/lang/Object;
 
     move-result-object v0
 
-    check-cast v0, [Lcom/android/settings/wifi/WpsDialog$DialogState;
+    check-cast v0, [Lcom/android/settings_ext/wifi/WpsDialog$DialogState;
 
     return-object v0
 .end method

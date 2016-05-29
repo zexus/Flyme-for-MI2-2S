@@ -1,11 +1,11 @@
-.class Lcom/android/settings/tts/TextToSpeechSettings$3;
+.class Lcom/android/settings_ext/tts/TextToSpeechSettings$3;
 .super Landroid/speech/tts/UtteranceProgressListener;
 .source "TextToSpeechSettings.java"
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/android/settings/tts/TextToSpeechSettings;->setTtsUtteranceProgressListener()V
+    value = Lcom/android/settings_ext/tts/TextToSpeechSettings;->setTtsUtteranceProgressListener()V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -15,16 +15,16 @@
 
 
 # instance fields
-.field final synthetic this$0:Lcom/android/settings/tts/TextToSpeechSettings;
+.field final synthetic this$0:Lcom/android/settings_ext/tts/TextToSpeechSettings;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/tts/TextToSpeechSettings;)V
+.method constructor <init>(Lcom/android/settings_ext/tts/TextToSpeechSettings;)V
     .locals 0
 
     .prologue
     .line 192
-    iput-object p1, p0, Lcom/android/settings/tts/TextToSpeechSettings$3;->this$0:Lcom/android/settings/tts/TextToSpeechSettings;
+    iput-object p1, p0, Lcom/android/settings_ext/tts/TextToSpeechSettings$3;->this$0:Lcom/android/settings_ext/tts/TextToSpeechSettings;
 
     invoke-direct {p0}, Landroid/speech/tts/UtteranceProgressListener;-><init>()V
 

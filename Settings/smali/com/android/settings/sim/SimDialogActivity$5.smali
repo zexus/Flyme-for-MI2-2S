@@ -1,4 +1,4 @@
-.class Lcom/android/settings/sim/SimDialogActivity$5;
+.class Lcom/android/settings_ext/sim/SimDialogActivity$5;
 .super Ljava/lang/Object;
 .source "SimDialogActivity.java"
 
@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/android/settings/sim/SimDialogActivity;->createDialog(Landroid/content/Context;I)Landroid/app/Dialog;
+    value = Lcom/android/settings_ext/sim/SimDialogActivity;->createDialog(Landroid/content/Context;I)Landroid/app/Dialog;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -18,16 +18,16 @@
 
 
 # instance fields
-.field final synthetic this$0:Lcom/android/settings/sim/SimDialogActivity;
+.field final synthetic this$0:Lcom/android/settings_ext/sim/SimDialogActivity;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/sim/SimDialogActivity;)V
+.method constructor <init>(Lcom/android/settings_ext/sim/SimDialogActivity;)V
     .locals 0
 
     .prologue
     .line 273
-    iput-object p1, p0, Lcom/android/settings/sim/SimDialogActivity$5;->this$0:Lcom/android/settings/sim/SimDialogActivity;
+    iput-object p1, p0, Lcom/android/settings_ext/sim/SimDialogActivity$5;->this$0:Lcom/android/settings_ext/sim/SimDialogActivity;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -42,9 +42,9 @@
 
     .prologue
     .line 276
-    iget-object v0, p0, Lcom/android/settings/sim/SimDialogActivity$5;->this$0:Lcom/android/settings/sim/SimDialogActivity;
+    iget-object v0, p0, Lcom/android/settings_ext/sim/SimDialogActivity$5;->this$0:Lcom/android/settings_ext/sim/SimDialogActivity;
 
-    invoke-virtual {v0}, Lcom/android/settings/sim/SimDialogActivity;->finish()V
+    invoke-virtual {v0}, Lcom/android/settings_ext/sim/SimDialogActivity;->finish()V
 
     .line 277
     return-void

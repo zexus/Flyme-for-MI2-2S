@@ -1,4 +1,4 @@
-.class Lcom/android/settings/MasterClearConfirm$1;
+.class Lcom/android/settings_ext/MasterClearConfirm$1;
 .super Ljava/lang/Object;
 .source "MasterClearConfirm.java"
 
@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/android/settings/MasterClearConfirm;
+    value = Lcom/android/settings_ext/MasterClearConfirm;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -18,16 +18,16 @@
 
 
 # instance fields
-.field final synthetic this$0:Lcom/android/settings/MasterClearConfirm;
+.field final synthetic this$0:Lcom/android/settings_ext/MasterClearConfirm;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/MasterClearConfirm;)V
+.method constructor <init>(Lcom/android/settings_ext/MasterClearConfirm;)V
     .locals 0
 
     .prologue
     .line 55
-    iput-object p1, p0, Lcom/android/settings/MasterClearConfirm$1;->this$0:Lcom/android/settings/MasterClearConfirm;
+    iput-object p1, p0, Lcom/android/settings_ext/MasterClearConfirm$1;->this$0:Lcom/android/settings_ext/MasterClearConfirm;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -41,9 +41,9 @@
     .line 94
     new-instance v0, Landroid/app/ProgressDialog;
 
-    iget-object v1, p0, Lcom/android/settings/MasterClearConfirm$1;->this$0:Lcom/android/settings/MasterClearConfirm;
+    iget-object v1, p0, Lcom/android/settings_ext/MasterClearConfirm$1;->this$0:Lcom/android/settings_ext/MasterClearConfirm;
 
-    invoke-virtual {v1}, Lcom/android/settings/MasterClearConfirm;->getActivity()Landroid/app/Activity;
+    invoke-virtual {v1}, Lcom/android/settings_ext/MasterClearConfirm;->getActivity()Landroid/app/Activity;
 
     move-result-object v1
 
@@ -61,9 +61,9 @@
     invoke-virtual {v0, v1}, Landroid/app/ProgressDialog;->setCancelable(Z)V
 
     .line 97
-    iget-object v1, p0, Lcom/android/settings/MasterClearConfirm$1;->this$0:Lcom/android/settings/MasterClearConfirm;
+    iget-object v1, p0, Lcom/android/settings_ext/MasterClearConfirm$1;->this$0:Lcom/android/settings_ext/MasterClearConfirm;
 
-    invoke-virtual {v1}, Lcom/android/settings/MasterClearConfirm;->getActivity()Landroid/app/Activity;
+    invoke-virtual {v1}, Lcom/android/settings_ext/MasterClearConfirm;->getActivity()Landroid/app/Activity;
 
     move-result-object v1
 
@@ -76,9 +76,9 @@
     invoke-virtual {v0, v1}, Landroid/app/ProgressDialog;->setTitle(Ljava/lang/CharSequence;)V
 
     .line 99
-    iget-object v1, p0, Lcom/android/settings/MasterClearConfirm$1;->this$0:Lcom/android/settings/MasterClearConfirm;
+    iget-object v1, p0, Lcom/android/settings_ext/MasterClearConfirm$1;->this$0:Lcom/android/settings_ext/MasterClearConfirm;
 
-    invoke-virtual {v1}, Lcom/android/settings/MasterClearConfirm;->getActivity()Landroid/app/Activity;
+    invoke-virtual {v1}, Lcom/android/settings_ext/MasterClearConfirm;->getActivity()Landroid/app/Activity;
 
     move-result-object v1
 
@@ -102,7 +102,7 @@
 
     .prologue
     .line 58
-    invoke-static {}, Lcom/android/settings/Utils;->isMonkeyRunning()Z
+    invoke-static {}, Lcom/android/settings_ext/Utils;->isMonkeyRunning()Z
 
     move-result v3
 
@@ -114,9 +114,9 @@
 
     .line 62
     :cond_0
-    iget-object v3, p0, Lcom/android/settings/MasterClearConfirm$1;->this$0:Lcom/android/settings/MasterClearConfirm;
+    iget-object v3, p0, Lcom/android/settings_ext/MasterClearConfirm$1;->this$0:Lcom/android/settings_ext/MasterClearConfirm;
 
-    invoke-virtual {v3}, Lcom/android/settings/MasterClearConfirm;->getActivity()Landroid/app/Activity;
+    invoke-virtual {v3}, Lcom/android/settings_ext/MasterClearConfirm;->getActivity()Landroid/app/Activity;
 
     move-result-object v3
 
@@ -139,7 +139,7 @@
     if-nez v3, :cond_1
 
     .line 67
-    invoke-direct {p0}, Lcom/android/settings/MasterClearConfirm$1;->getProgressDialog()Landroid/app/ProgressDialog;
+    invoke-direct {p0}, Lcom/android/settings_ext/MasterClearConfirm$1;->getProgressDialog()Landroid/app/ProgressDialog;
 
     move-result-object v2
 
@@ -148,9 +148,9 @@
     invoke-virtual {v2}, Landroid/app/ProgressDialog;->show()V
 
     .line 72
-    iget-object v3, p0, Lcom/android/settings/MasterClearConfirm$1;->this$0:Lcom/android/settings/MasterClearConfirm;
+    iget-object v3, p0, Lcom/android/settings_ext/MasterClearConfirm$1;->this$0:Lcom/android/settings_ext/MasterClearConfirm;
 
-    invoke-virtual {v3}, Lcom/android/settings/MasterClearConfirm;->getActivity()Landroid/app/Activity;
+    invoke-virtual {v3}, Lcom/android/settings_ext/MasterClearConfirm;->getActivity()Landroid/app/Activity;
 
     move-result-object v3
 
@@ -160,9 +160,9 @@
 
     .line 73
     .local v0, "oldOrientation":I
-    iget-object v3, p0, Lcom/android/settings/MasterClearConfirm$1;->this$0:Lcom/android/settings/MasterClearConfirm;
+    iget-object v3, p0, Lcom/android/settings_ext/MasterClearConfirm$1;->this$0:Lcom/android/settings_ext/MasterClearConfirm;
 
-    invoke-virtual {v3}, Lcom/android/settings/MasterClearConfirm;->getActivity()Landroid/app/Activity;
+    invoke-virtual {v3}, Lcom/android/settings_ext/MasterClearConfirm;->getActivity()Landroid/app/Activity;
 
     move-result-object v3
 
@@ -171,15 +171,15 @@
     invoke-virtual {v3, v4}, Landroid/app/Activity;->setRequestedOrientation(I)V
 
     .line 74
-    new-instance v3, Lcom/android/settings/MasterClearConfirm$1$1;
+    new-instance v3, Lcom/android/settings_ext/MasterClearConfirm$1$1;
 
-    invoke-direct {v3, p0, v1, v2, v0}, Lcom/android/settings/MasterClearConfirm$1$1;-><init>(Lcom/android/settings/MasterClearConfirm$1;Landroid/service/persistentdata/PersistentDataBlockManager;Landroid/app/ProgressDialog;I)V
+    invoke-direct {v3, p0, v1, v2, v0}, Lcom/android/settings_ext/MasterClearConfirm$1$1;-><init>(Lcom/android/settings_ext/MasterClearConfirm$1;Landroid/service/persistentdata/PersistentDataBlockManager;Landroid/app/ProgressDialog;I)V
 
     const/4 v4, 0x0
 
     new-array v4, v4, [Ljava/lang/Void;
 
-    invoke-virtual {v3, v4}, Lcom/android/settings/MasterClearConfirm$1$1;->execute([Ljava/lang/Object;)Landroid/os/AsyncTask;
+    invoke-virtual {v3, v4}, Lcom/android/settings_ext/MasterClearConfirm$1$1;->execute([Ljava/lang/Object;)Landroid/os/AsyncTask;
 
     goto :goto_0
 
@@ -187,10 +187,10 @@
     .end local v0    # "oldOrientation":I
     .end local v2    # "progressDialog":Landroid/app/ProgressDialog;
     :cond_1
-    iget-object v3, p0, Lcom/android/settings/MasterClearConfirm$1;->this$0:Lcom/android/settings/MasterClearConfirm;
+    iget-object v3, p0, Lcom/android/settings_ext/MasterClearConfirm$1;->this$0:Lcom/android/settings_ext/MasterClearConfirm;
 
-    # invokes: Lcom/android/settings/MasterClearConfirm;->doMasterClear()V
-    invoke-static {v3}, Lcom/android/settings/MasterClearConfirm;->access$000(Lcom/android/settings/MasterClearConfirm;)V
+    # invokes: Lcom/android/settings_ext/MasterClearConfirm;->doMasterClear()V
+    invoke-static {v3}, Lcom/android/settings_ext/MasterClearConfirm;->access$000(Lcom/android/settings_ext/MasterClearConfirm;)V
 
     goto :goto_0
 .end method

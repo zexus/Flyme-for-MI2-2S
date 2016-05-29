@@ -1,4 +1,4 @@
-.class public Lcom/android/settings/TrustAgentUtils;
+.class public Lcom/android/settings_ext/TrustAgentUtils;
 .super Ljava/lang/Object;
 .source "TrustAgentUtils.java"
 
@@ -6,7 +6,7 @@
 # annotations
 .annotation system Ldalvik/annotation/MemberClasses;
     value = {
-        Lcom/android/settings/TrustAgentUtils$TrustAgentComponentInfo;
+        Lcom/android/settings_ext/TrustAgentUtils$TrustAgentComponentInfo;
     }
 .end annotation
 
@@ -122,7 +122,7 @@
     goto :goto_0
 .end method
 
-.method public static getSettingsComponent(Landroid/content/pm/PackageManager;Landroid/content/pm/ResolveInfo;)Lcom/android/settings/TrustAgentUtils$TrustAgentComponentInfo;
+.method public static getSettingsComponent(Landroid/content/pm/PackageManager;Landroid/content/pm/ResolveInfo;)Lcom/android/settings_ext/TrustAgentUtils$TrustAgentComponentInfo;
     .locals 13
     .param p0, "pm"    # Landroid/content/pm/PackageManager;
     .param p1, "resolveInfo"    # Landroid/content/pm/ResolveInfo;
@@ -156,12 +156,12 @@
 
     .line 72
     .local v2, "cn":Ljava/lang/String;
-    new-instance v8, Lcom/android/settings/TrustAgentUtils$TrustAgentComponentInfo;
+    new-instance v8, Lcom/android/settings_ext/TrustAgentUtils$TrustAgentComponentInfo;
 
-    invoke-direct {v8}, Lcom/android/settings/TrustAgentUtils$TrustAgentComponentInfo;-><init>()V
+    invoke-direct {v8}, Lcom/android/settings_ext/TrustAgentUtils$TrustAgentComponentInfo;-><init>()V
 
     .line 73
-    .local v8, "trustAgentComponentInfo":Lcom/android/settings/TrustAgentUtils$TrustAgentComponentInfo;
+    .local v8, "trustAgentComponentInfo":Lcom/android/settings_ext/TrustAgentUtils$TrustAgentComponentInfo;
     const/4 v5, 0x0
 
     .line 74
@@ -198,7 +198,7 @@
     const/4 v8, 0x0
 
     .line 107
-    .end local v8    # "trustAgentComponentInfo":Lcom/android/settings/TrustAgentUtils$TrustAgentComponentInfo;
+    .end local v8    # "trustAgentComponentInfo":Lcom/android/settings_ext/TrustAgentUtils$TrustAgentComponentInfo;
     if-eqz v5, :cond_1
 
     invoke-interface {v5}, Landroid/content/res/XmlResourceParser;->close()V
@@ -206,7 +206,7 @@
     goto :goto_0
 
     .line 81
-    .restart local v8    # "trustAgentComponentInfo":Lcom/android/settings/TrustAgentUtils$TrustAgentComponentInfo;
+    .restart local v8    # "trustAgentComponentInfo":Lcom/android/settings_ext/TrustAgentUtils$TrustAgentComponentInfo;
     :cond_3
     :try_start_1
     iget-object v10, p1, Landroid/content/pm/ResolveInfo;->serviceInfo:Landroid/content/pm/ServiceInfo;
@@ -271,7 +271,7 @@
     const/4 v8, 0x0
 
     .line 107
-    .end local v8    # "trustAgentComponentInfo":Lcom/android/settings/TrustAgentUtils$TrustAgentComponentInfo;
+    .end local v8    # "trustAgentComponentInfo":Lcom/android/settings_ext/TrustAgentUtils$TrustAgentComponentInfo;
     if-eqz v5, :cond_1
 
     invoke-interface {v5}, Landroid/content/res/XmlResourceParser;->close()V
@@ -279,7 +279,7 @@
     goto :goto_0
 
     .line 92
-    .restart local v8    # "trustAgentComponentInfo":Lcom/android/settings/TrustAgentUtils$TrustAgentComponentInfo;
+    .restart local v8    # "trustAgentComponentInfo":Lcom/android/settings_ext/TrustAgentUtils$TrustAgentComponentInfo;
     :cond_6
     :try_start_2
     sget-object v10, Lcom/android/internal/R$styleable;->TrustAgent:[I
@@ -296,7 +296,7 @@
 
     move-result-object v10
 
-    iput-object v10, v8, Lcom/android/settings/TrustAgentUtils$TrustAgentComponentInfo;->summary:Ljava/lang/String;
+    iput-object v10, v8, Lcom/android/settings_ext/TrustAgentUtils$TrustAgentComponentInfo;->summary:Ljava/lang/String;
 
     .line 96
     const/4 v10, 0x0
@@ -305,7 +305,7 @@
 
     move-result-object v10
 
-    iput-object v10, v8, Lcom/android/settings/TrustAgentUtils$TrustAgentComponentInfo;->title:Ljava/lang/String;
+    iput-object v10, v8, Lcom/android/settings_ext/TrustAgentUtils$TrustAgentComponentInfo;->title:Ljava/lang/String;
 
     .line 98
     const/4 v10, 0x2
@@ -473,7 +473,7 @@
     const/4 v10, 0x0
 
     :goto_2
-    iput-object v10, v8, Lcom/android/settings/TrustAgentUtils$TrustAgentComponentInfo;->componentName:Landroid/content/ComponentName;
+    iput-object v10, v8, Lcom/android/settings_ext/TrustAgentUtils$TrustAgentComponentInfo;->componentName:Landroid/content/ComponentName;
 
     goto/16 :goto_0
 

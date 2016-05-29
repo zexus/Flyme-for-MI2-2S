@@ -1,11 +1,11 @@
-.class final Lcom/android/settings/accessibility/AccessibilitySettings$5;
-.super Lcom/android/settings/search/BaseSearchIndexProvider;
+.class final Lcom/android/settings_ext/accessibility/AccessibilitySettings$5;
+.super Lcom/android/settings_ext/search/BaseSearchIndexProvider;
 .source "AccessibilitySettings.java"
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/android/settings/accessibility/AccessibilitySettings;
+    value = Lcom/android/settings_ext/accessibility/AccessibilitySettings;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -20,7 +20,7 @@
 
     .prologue
     .line 625
-    invoke-direct {p0}, Lcom/android/settings/search/BaseSearchIndexProvider;-><init>()V
+    invoke-direct {p0}, Lcom/android/settings_ext/search/BaseSearchIndexProvider;-><init>()V
 
     return-void
 .end method
@@ -38,7 +38,7 @@
             "Z)",
             "Ljava/util/List",
             "<",
-            "Lcom/android/settings/search/SearchIndexableRaw;",
+            "Lcom/android/settings_ext/search/SearchIndexableRaw;",
             ">;"
         }
     .end annotation
@@ -50,7 +50,7 @@
     invoke-direct {v4}, Ljava/util/ArrayList;-><init>()V
 
     .line 630
-    .local v4, "indexables":Ljava/util/List;, "Ljava/util/List<Lcom/android/settings/search/SearchIndexableRaw;>;"
+    .local v4, "indexables":Ljava/util/List;, "Ljava/util/List<Lcom/android/settings_ext/search/SearchIndexableRaw;>;"
     invoke-virtual {p1}, Landroid/content/Context;->getPackageManager()Landroid/content/pm/PackageManager;
 
     move-result-object v5
@@ -141,17 +141,17 @@
 
     .line 651
     .local v1, "componentName":Landroid/content/ComponentName;
-    new-instance v3, Lcom/android/settings/search/SearchIndexableRaw;
+    new-instance v3, Lcom/android/settings_ext/search/SearchIndexableRaw;
 
-    invoke-direct {v3, p1}, Lcom/android/settings/search/SearchIndexableRaw;-><init>(Landroid/content/Context;)V
+    invoke-direct {v3, p1}, Lcom/android/settings_ext/search/SearchIndexableRaw;-><init>(Landroid/content/Context;)V
 
     .line 652
-    .local v3, "indexable":Lcom/android/settings/search/SearchIndexableRaw;
+    .local v3, "indexable":Lcom/android/settings_ext/search/SearchIndexableRaw;
     invoke-virtual {v1}, Landroid/content/ComponentName;->flattenToString()Ljava/lang/String;
 
     move-result-object v11
 
-    iput-object v11, v3, Lcom/android/settings/search/SearchIndexableRaw;->key:Ljava/lang/String;
+    iput-object v11, v3, Lcom/android/settings_ext/search/SearchIndexableRaw;->key:Ljava/lang/String;
 
     .line 653
     invoke-virtual {v7}, Landroid/accessibilityservice/AccessibilityServiceInfo;->getResolveInfo()Landroid/content/pm/ResolveInfo;
@@ -166,7 +166,7 @@
 
     move-result-object v11
 
-    iput-object v11, v3, Lcom/android/settings/search/SearchIndexableRaw;->title:Ljava/lang/String;
+    iput-object v11, v3, Lcom/android/settings_ext/search/SearchIndexableRaw;->title:Ljava/lang/String;
 
     .line 654
     const v11, 0x7f0905f2
@@ -175,7 +175,7 @@
 
     move-result-object v11
 
-    iput-object v11, v3, Lcom/android/settings/search/SearchIndexableRaw;->summaryOn:Ljava/lang/String;
+    iput-object v11, v3, Lcom/android/settings_ext/search/SearchIndexableRaw;->summaryOn:Ljava/lang/String;
 
     .line 655
     const v11, 0x7f0905f3
@@ -184,10 +184,10 @@
 
     move-result-object v11
 
-    iput-object v11, v3, Lcom/android/settings/search/SearchIndexableRaw;->summaryOff:Ljava/lang/String;
+    iput-object v11, v3, Lcom/android/settings_ext/search/SearchIndexableRaw;->summaryOff:Ljava/lang/String;
 
     .line 656
-    iput-object v6, v3, Lcom/android/settings/search/SearchIndexableRaw;->screenTitle:Ljava/lang/String;
+    iput-object v6, v3, Lcom/android/settings_ext/search/SearchIndexableRaw;->screenTitle:Ljava/lang/String;
 
     .line 657
     invoke-interface {v4, v3}, Ljava/util/List;->add(Ljava/lang/Object;)Z
@@ -196,7 +196,7 @@
 
     .line 660
     .end local v1    # "componentName":Landroid/content/ComponentName;
-    .end local v3    # "indexable":Lcom/android/settings/search/SearchIndexableRaw;
+    .end local v3    # "indexable":Lcom/android/settings_ext/search/SearchIndexableRaw;
     .end local v7    # "service":Landroid/accessibilityservice/AccessibilityServiceInfo;
     .end local v9    # "serviceInfo":Landroid/content/pm/ServiceInfo;
     :cond_2

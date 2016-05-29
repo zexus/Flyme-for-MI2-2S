@@ -1,11 +1,11 @@
-.class Lcom/android/settings/users/UserSettings$11;
+.class Lcom/android/settings_ext/users/UserSettings$11;
 .super Ljava/lang/Thread;
 .source "UserSettings.java"
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/android/settings/users/UserSettings;->removeUserNow()V
+    value = Lcom/android/settings_ext/users/UserSettings;->removeUserNow()V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -15,16 +15,16 @@
 
 
 # instance fields
-.field final synthetic this$0:Lcom/android/settings/users/UserSettings;
+.field final synthetic this$0:Lcom/android/settings_ext/users/UserSettings;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/users/UserSettings;)V
+.method constructor <init>(Lcom/android/settings_ext/users/UserSettings;)V
     .locals 0
 
     .prologue
     .line 642
-    iput-object p1, p0, Lcom/android/settings/users/UserSettings$11;->this$0:Lcom/android/settings/users/UserSettings;
+    iput-object p1, p0, Lcom/android/settings_ext/users/UserSettings$11;->this$0:Lcom/android/settings_ext/users/UserSettings;
 
     invoke-direct {p0}, Ljava/lang/Thread;-><init>()V
 
@@ -38,10 +38,10 @@
 
     .prologue
     .line 644
-    iget-object v0, p0, Lcom/android/settings/users/UserSettings$11;->this$0:Lcom/android/settings/users/UserSettings;
+    iget-object v0, p0, Lcom/android/settings_ext/users/UserSettings$11;->this$0:Lcom/android/settings_ext/users/UserSettings;
 
-    # getter for: Lcom/android/settings/users/UserSettings;->mUserLock:Ljava/lang/Object;
-    invoke-static {v0}, Lcom/android/settings/users/UserSettings;->access$1600(Lcom/android/settings/users/UserSettings;)Ljava/lang/Object;
+    # getter for: Lcom/android/settings_ext/users/UserSettings;->mUserLock:Ljava/lang/Object;
+    invoke-static {v0}, Lcom/android/settings_ext/users/UserSettings;->access$1600(Lcom/android/settings_ext/users/UserSettings;)Ljava/lang/Object;
 
     move-result-object v1
 
@@ -49,27 +49,27 @@
 
     .line 645
     :try_start_0
-    iget-object v0, p0, Lcom/android/settings/users/UserSettings$11;->this$0:Lcom/android/settings/users/UserSettings;
+    iget-object v0, p0, Lcom/android/settings_ext/users/UserSettings$11;->this$0:Lcom/android/settings_ext/users/UserSettings;
 
-    # getter for: Lcom/android/settings/users/UserSettings;->mUserManager:Landroid/os/UserManager;
-    invoke-static {v0}, Lcom/android/settings/users/UserSettings;->access$700(Lcom/android/settings/users/UserSettings;)Landroid/os/UserManager;
+    # getter for: Lcom/android/settings_ext/users/UserSettings;->mUserManager:Landroid/os/UserManager;
+    invoke-static {v0}, Lcom/android/settings_ext/users/UserSettings;->access$700(Lcom/android/settings_ext/users/UserSettings;)Landroid/os/UserManager;
 
     move-result-object v0
 
-    iget-object v2, p0, Lcom/android/settings/users/UserSettings$11;->this$0:Lcom/android/settings/users/UserSettings;
+    iget-object v2, p0, Lcom/android/settings_ext/users/UserSettings$11;->this$0:Lcom/android/settings_ext/users/UserSettings;
 
-    # getter for: Lcom/android/settings/users/UserSettings;->mRemovingUserId:I
-    invoke-static {v2}, Lcom/android/settings/users/UserSettings;->access$300(Lcom/android/settings/users/UserSettings;)I
+    # getter for: Lcom/android/settings_ext/users/UserSettings;->mRemovingUserId:I
+    invoke-static {v2}, Lcom/android/settings_ext/users/UserSettings;->access$300(Lcom/android/settings_ext/users/UserSettings;)I
 
     move-result v2
 
     invoke-virtual {v0, v2}, Landroid/os/UserManager;->removeUser(I)Z
 
     .line 646
-    iget-object v0, p0, Lcom/android/settings/users/UserSettings$11;->this$0:Lcom/android/settings/users/UserSettings;
+    iget-object v0, p0, Lcom/android/settings_ext/users/UserSettings$11;->this$0:Lcom/android/settings_ext/users/UserSettings;
 
-    # getter for: Lcom/android/settings/users/UserSettings;->mHandler:Landroid/os/Handler;
-    invoke-static {v0}, Lcom/android/settings/users/UserSettings;->access$500(Lcom/android/settings/users/UserSettings;)Landroid/os/Handler;
+    # getter for: Lcom/android/settings_ext/users/UserSettings;->mHandler:Landroid/os/Handler;
+    invoke-static {v0}, Lcom/android/settings_ext/users/UserSettings;->access$500(Lcom/android/settings_ext/users/UserSettings;)Landroid/os/Handler;
 
     move-result-object v0
 

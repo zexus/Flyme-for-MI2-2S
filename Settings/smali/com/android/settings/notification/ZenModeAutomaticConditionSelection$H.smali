@@ -1,11 +1,11 @@
-.class final Lcom/android/settings/notification/ZenModeAutomaticConditionSelection$H;
+.class final Lcom/android/settings_ext/notification/ZenModeAutomaticConditionSelection$H;
 .super Landroid/os/Handler;
 .source "ZenModeAutomaticConditionSelection.java"
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/android/settings/notification/ZenModeAutomaticConditionSelection;
+    value = Lcom/android/settings_ext/notification/ZenModeAutomaticConditionSelection;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -15,30 +15,30 @@
 
 
 # instance fields
-.field final synthetic this$0:Lcom/android/settings/notification/ZenModeAutomaticConditionSelection;
+.field final synthetic this$0:Lcom/android/settings_ext/notification/ZenModeAutomaticConditionSelection;
 
 
 # direct methods
-.method private constructor <init>(Lcom/android/settings/notification/ZenModeAutomaticConditionSelection;)V
+.method private constructor <init>(Lcom/android/settings_ext/notification/ZenModeAutomaticConditionSelection;)V
     .locals 0
 
     .prologue
     .line 149
-    iput-object p1, p0, Lcom/android/settings/notification/ZenModeAutomaticConditionSelection$H;->this$0:Lcom/android/settings/notification/ZenModeAutomaticConditionSelection;
+    iput-object p1, p0, Lcom/android/settings_ext/notification/ZenModeAutomaticConditionSelection$H;->this$0:Lcom/android/settings_ext/notification/ZenModeAutomaticConditionSelection;
 
     invoke-direct {p0}, Landroid/os/Handler;-><init>()V
 
     return-void
 .end method
 
-.method synthetic constructor <init>(Lcom/android/settings/notification/ZenModeAutomaticConditionSelection;Lcom/android/settings/notification/ZenModeAutomaticConditionSelection$1;)V
+.method synthetic constructor <init>(Lcom/android/settings_ext/notification/ZenModeAutomaticConditionSelection;Lcom/android/settings_ext/notification/ZenModeAutomaticConditionSelection$1;)V
     .locals 0
-    .param p1, "x0"    # Lcom/android/settings/notification/ZenModeAutomaticConditionSelection;
-    .param p2, "x1"    # Lcom/android/settings/notification/ZenModeAutomaticConditionSelection$1;
+    .param p1, "x0"    # Lcom/android/settings_ext/notification/ZenModeAutomaticConditionSelection;
+    .param p2, "x1"    # Lcom/android/settings_ext/notification/ZenModeAutomaticConditionSelection$1;
 
     .prologue
     .line 149
-    invoke-direct {p0, p1}, Lcom/android/settings/notification/ZenModeAutomaticConditionSelection$H;-><init>(Lcom/android/settings/notification/ZenModeAutomaticConditionSelection;)V
+    invoke-direct {p0, p1}, Lcom/android/settings_ext/notification/ZenModeAutomaticConditionSelection$H;-><init>(Lcom/android/settings_ext/notification/ZenModeAutomaticConditionSelection;)V
 
     return-void
 .end method
@@ -57,7 +57,7 @@
 
     if-ne v0, v1, :cond_0
 
-    iget-object v1, p0, Lcom/android/settings/notification/ZenModeAutomaticConditionSelection$H;->this$0:Lcom/android/settings/notification/ZenModeAutomaticConditionSelection;
+    iget-object v1, p0, Lcom/android/settings_ext/notification/ZenModeAutomaticConditionSelection$H;->this$0:Lcom/android/settings_ext/notification/ZenModeAutomaticConditionSelection;
 
     iget-object v0, p1, Landroid/os/Message;->obj:Ljava/lang/Object;
 
@@ -65,7 +65,7 @@
 
     check-cast v0, [Landroid/service/notification/Condition;
 
-    invoke-virtual {v1, v0}, Lcom/android/settings/notification/ZenModeAutomaticConditionSelection;->handleConditions([Landroid/service/notification/Condition;)V
+    invoke-virtual {v1, v0}, Lcom/android/settings_ext/notification/ZenModeAutomaticConditionSelection;->handleConditions([Landroid/service/notification/Condition;)V
 
     .line 155
     :cond_0

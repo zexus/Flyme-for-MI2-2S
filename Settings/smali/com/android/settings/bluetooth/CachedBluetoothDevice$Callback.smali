@@ -1,11 +1,11 @@
-.class public interface abstract Lcom/android/settings/bluetooth/CachedBluetoothDevice$Callback;
+.class public interface abstract Lcom/android/settings_ext/bluetooth/CachedBluetoothDevice$Callback;
 .super Ljava/lang/Object;
 .source "CachedBluetoothDevice.java"
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/android/settings/bluetooth/CachedBluetoothDevice;
+    value = Lcom/android/settings_ext/bluetooth/CachedBluetoothDevice;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;

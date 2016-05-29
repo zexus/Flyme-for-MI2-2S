@@ -1,4 +1,4 @@
-.class Lcom/android/settings/MonitoringCertInfoActivity$1;
+.class Lcom/android/settings_ext/MonitoringCertInfoActivity$1;
 .super Ljava/lang/Object;
 .source "MonitoringCertInfoActivity.java"
 
@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/android/settings/MonitoringCertInfoActivity;->onCreate(Landroid/os/Bundle;)V
+    value = Lcom/android/settings_ext/MonitoringCertInfoActivity;->onCreate(Landroid/os/Bundle;)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -18,16 +18,16 @@
 
 
 # instance fields
-.field final synthetic this$0:Lcom/android/settings/MonitoringCertInfoActivity;
+.field final synthetic this$0:Lcom/android/settings_ext/MonitoringCertInfoActivity;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/MonitoringCertInfoActivity;)V
+.method constructor <init>(Lcom/android/settings_ext/MonitoringCertInfoActivity;)V
     .locals 0
 
     .prologue
     .line 73
-    iput-object p1, p0, Lcom/android/settings/MonitoringCertInfoActivity$1;->this$0:Lcom/android/settings/MonitoringCertInfoActivity;
+    iput-object p1, p0, Lcom/android/settings_ext/MonitoringCertInfoActivity$1;->this$0:Lcom/android/settings_ext/MonitoringCertInfoActivity;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -42,9 +42,9 @@
 
     .prologue
     .line 75
-    iget-object v0, p0, Lcom/android/settings/MonitoringCertInfoActivity$1;->this$0:Lcom/android/settings/MonitoringCertInfoActivity;
+    iget-object v0, p0, Lcom/android/settings_ext/MonitoringCertInfoActivity$1;->this$0:Lcom/android/settings_ext/MonitoringCertInfoActivity;
 
-    invoke-virtual {v0}, Lcom/android/settings/MonitoringCertInfoActivity;->finish()V
+    invoke-virtual {v0}, Lcom/android/settings_ext/MonitoringCertInfoActivity;->finish()V
 
     .line 76
     return-void

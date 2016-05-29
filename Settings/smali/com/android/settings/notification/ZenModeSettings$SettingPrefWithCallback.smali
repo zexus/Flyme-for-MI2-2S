@@ -1,11 +1,11 @@
-.class Lcom/android/settings/notification/ZenModeSettings$SettingPrefWithCallback;
-.super Lcom/android/settings/notification/SettingPref;
+.class Lcom/android/settings_ext/notification/ZenModeSettings$SettingPrefWithCallback;
+.super Lcom/android/settings_ext/notification/SettingPref;
 .source "ZenModeSettings.java"
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/android/settings/notification/ZenModeSettings;
+    value = Lcom/android/settings_ext/notification/ZenModeSettings;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -15,13 +15,13 @@
 
 .annotation system Ldalvik/annotation/MemberClasses;
     value = {
-        Lcom/android/settings/notification/ZenModeSettings$SettingPrefWithCallback$Callback;
+        Lcom/android/settings_ext/notification/ZenModeSettings$SettingPrefWithCallback$Callback;
     }
 .end annotation
 
 
 # instance fields
-.field private mCallback:Lcom/android/settings/notification/ZenModeSettings$SettingPrefWithCallback$Callback;
+.field private mCallback:Lcom/android/settings_ext/notification/ZenModeSettings$SettingPrefWithCallback$Callback;
 
 .field private mValue:I
 
@@ -37,7 +37,7 @@
 
     .prologue
     .line 610
-    invoke-direct/range {p0 .. p5}, Lcom/android/settings/notification/SettingPref;-><init>(ILjava/lang/String;Ljava/lang/String;I[I)V
+    invoke-direct/range {p0 .. p5}, Lcom/android/settings_ext/notification/SettingPref;-><init>(ILjava/lang/String;Ljava/lang/String;I[I)V
 
     .line 611
     return-void
@@ -51,56 +51,56 @@
 
     .prologue
     .line 649
-    iget v0, p0, Lcom/android/settings/notification/ZenModeSettings$SettingPrefWithCallback;->mType:I
+    iget v0, p0, Lcom/android/settings_ext/notification/ZenModeSettings$SettingPrefWithCallback;->mType:I
 
     invoke-virtual {p1}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v1
 
-    iget-object v2, p0, Lcom/android/settings/notification/ZenModeSettings$SettingPrefWithCallback;->mSetting:Ljava/lang/String;
+    iget-object v2, p0, Lcom/android/settings_ext/notification/ZenModeSettings$SettingPrefWithCallback;->mSetting:Ljava/lang/String;
 
-    iget v3, p0, Lcom/android/settings/notification/ZenModeSettings$SettingPrefWithCallback;->mDefault:I
+    iget v3, p0, Lcom/android/settings_ext/notification/ZenModeSettings$SettingPrefWithCallback;->mDefault:I
 
-    invoke-static {v0, v1, v2, v3}, Lcom/android/settings/notification/ZenModeSettings$SettingPrefWithCallback;->getInt(ILandroid/content/ContentResolver;Ljava/lang/String;I)I
+    invoke-static {v0, v1, v2, v3}, Lcom/android/settings_ext/notification/ZenModeSettings$SettingPrefWithCallback;->getInt(ILandroid/content/ContentResolver;Ljava/lang/String;I)I
 
     move-result v0
 
     return v0
 .end method
 
-.method public init(Lcom/android/settings/SettingsPreferenceFragment;)Landroid/preference/Preference;
+.method public init(Lcom/android/settings_ext/SettingsPreferenceFragment;)Landroid/preference/Preference;
     .locals 2
-    .param p1, "settings"    # Lcom/android/settings/SettingsPreferenceFragment;
+    .param p1, "settings"    # Lcom/android/settings_ext/SettingsPreferenceFragment;
 
     .prologue
     .line 636
-    invoke-super {p0, p1}, Lcom/android/settings/notification/SettingPref;->init(Lcom/android/settings/SettingsPreferenceFragment;)Landroid/preference/Preference;
+    invoke-super {p0, p1}, Lcom/android/settings_ext/notification/SettingPref;->init(Lcom/android/settings_ext/SettingsPreferenceFragment;)Landroid/preference/Preference;
 
     move-result-object v0
 
     .line 637
     .local v0, "ret":Landroid/preference/Preference;
-    invoke-virtual {p1}, Lcom/android/settings/SettingsPreferenceFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p1}, Lcom/android/settings_ext/SettingsPreferenceFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v1
 
-    invoke-virtual {p0, v1}, Lcom/android/settings/notification/ZenModeSettings$SettingPrefWithCallback;->getValue(Landroid/content/Context;)I
+    invoke-virtual {p0, v1}, Lcom/android/settings_ext/notification/ZenModeSettings$SettingPrefWithCallback;->getValue(Landroid/content/Context;)I
 
     move-result v1
 
-    iput v1, p0, Lcom/android/settings/notification/ZenModeSettings$SettingPrefWithCallback;->mValue:I
+    iput v1, p0, Lcom/android/settings_ext/notification/ZenModeSettings$SettingPrefWithCallback;->mValue:I
 
     .line 639
     return-object v0
 .end method
 
-.method public setCallback(Lcom/android/settings/notification/ZenModeSettings$SettingPrefWithCallback$Callback;)V
+.method public setCallback(Lcom/android/settings_ext/notification/ZenModeSettings$SettingPrefWithCallback$Callback;)V
     .locals 0
-    .param p1, "callback"    # Lcom/android/settings/notification/ZenModeSettings$SettingPrefWithCallback$Callback;
+    .param p1, "callback"    # Lcom/android/settings_ext/notification/ZenModeSettings$SettingPrefWithCallback$Callback;
 
     .prologue
     .line 614
-    iput-object p1, p0, Lcom/android/settings/notification/ZenModeSettings$SettingPrefWithCallback;->mCallback:Lcom/android/settings/notification/ZenModeSettings$SettingPrefWithCallback$Callback;
+    iput-object p1, p0, Lcom/android/settings_ext/notification/ZenModeSettings$SettingPrefWithCallback;->mCallback:Lcom/android/settings_ext/notification/ZenModeSettings$SettingPrefWithCallback$Callback;
 
     .line 615
     return-void
@@ -113,7 +113,7 @@
 
     .prologue
     .line 626
-    iget v0, p0, Lcom/android/settings/notification/ZenModeSettings$SettingPrefWithCallback;->mValue:I
+    iget v0, p0, Lcom/android/settings_ext/notification/ZenModeSettings$SettingPrefWithCallback;->mValue:I
 
     if-ne p2, v0, :cond_0
 
@@ -125,21 +125,21 @@
 
     .line 627
     :cond_0
-    iput p2, p0, Lcom/android/settings/notification/ZenModeSettings$SettingPrefWithCallback;->mValue:I
+    iput p2, p0, Lcom/android/settings_ext/notification/ZenModeSettings$SettingPrefWithCallback;->mValue:I
 
     .line 628
-    iget-object v0, p0, Lcom/android/settings/notification/ZenModeSettings$SettingPrefWithCallback;->mCallback:Lcom/android/settings/notification/ZenModeSettings$SettingPrefWithCallback$Callback;
+    iget-object v0, p0, Lcom/android/settings_ext/notification/ZenModeSettings$SettingPrefWithCallback;->mCallback:Lcom/android/settings_ext/notification/ZenModeSettings$SettingPrefWithCallback$Callback;
 
     if-eqz v0, :cond_1
 
     .line 629
-    iget-object v0, p0, Lcom/android/settings/notification/ZenModeSettings$SettingPrefWithCallback;->mCallback:Lcom/android/settings/notification/ZenModeSettings$SettingPrefWithCallback$Callback;
+    iget-object v0, p0, Lcom/android/settings_ext/notification/ZenModeSettings$SettingPrefWithCallback;->mCallback:Lcom/android/settings_ext/notification/ZenModeSettings$SettingPrefWithCallback$Callback;
 
-    invoke-interface {v0, p2}, Lcom/android/settings/notification/ZenModeSettings$SettingPrefWithCallback$Callback;->onSettingSelected(I)V
+    invoke-interface {v0, p2}, Lcom/android/settings_ext/notification/ZenModeSettings$SettingPrefWithCallback$Callback;->onSettingSelected(I)V
 
     .line 631
     :cond_1
-    invoke-super {p0, p1, p2}, Lcom/android/settings/notification/SettingPref;->setSetting(Landroid/content/Context;I)Z
+    invoke-super {p0, p1, p2}, Lcom/android/settings_ext/notification/SettingPref;->setSetting(Landroid/content/Context;I)Z
 
     move-result v0
 
@@ -153,18 +153,18 @@
 
     .prologue
     .line 644
-    iput p2, p0, Lcom/android/settings/notification/ZenModeSettings$SettingPrefWithCallback;->mValue:I
+    iput p2, p0, Lcom/android/settings_ext/notification/ZenModeSettings$SettingPrefWithCallback;->mValue:I
 
     .line 645
-    iget v0, p0, Lcom/android/settings/notification/ZenModeSettings$SettingPrefWithCallback;->mType:I
+    iget v0, p0, Lcom/android/settings_ext/notification/ZenModeSettings$SettingPrefWithCallback;->mType:I
 
     invoke-virtual {p1}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v1
 
-    iget-object v2, p0, Lcom/android/settings/notification/ZenModeSettings$SettingPrefWithCallback;->mSetting:Ljava/lang/String;
+    iget-object v2, p0, Lcom/android/settings_ext/notification/ZenModeSettings$SettingPrefWithCallback;->mSetting:Ljava/lang/String;
 
-    invoke-static {v0, v1, v2, p2}, Lcom/android/settings/notification/ZenModeSettings$SettingPrefWithCallback;->putInt(ILandroid/content/ContentResolver;Ljava/lang/String;I)Z
+    invoke-static {v0, v1, v2, p2}, Lcom/android/settings_ext/notification/ZenModeSettings$SettingPrefWithCallback;->putInt(ILandroid/content/ContentResolver;Ljava/lang/String;I)Z
 
     move-result v0
 
@@ -177,14 +177,14 @@
 
     .prologue
     .line 620
-    invoke-virtual {p0, p1}, Lcom/android/settings/notification/ZenModeSettings$SettingPrefWithCallback;->getValue(Landroid/content/Context;)I
+    invoke-virtual {p0, p1}, Lcom/android/settings_ext/notification/ZenModeSettings$SettingPrefWithCallback;->getValue(Landroid/content/Context;)I
 
     move-result v0
 
-    iput v0, p0, Lcom/android/settings/notification/ZenModeSettings$SettingPrefWithCallback;->mValue:I
+    iput v0, p0, Lcom/android/settings_ext/notification/ZenModeSettings$SettingPrefWithCallback;->mValue:I
 
     .line 621
-    invoke-super {p0, p1}, Lcom/android/settings/notification/SettingPref;->update(Landroid/content/Context;)V
+    invoke-super {p0, p1}, Lcom/android/settings_ext/notification/SettingPref;->update(Landroid/content/Context;)V
 
     .line 622
     return-void

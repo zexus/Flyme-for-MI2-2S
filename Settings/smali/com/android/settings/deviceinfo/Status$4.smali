@@ -1,11 +1,11 @@
-.class Lcom/android/settings/deviceinfo/Status$4;
+.class Lcom/android/settings_ext/deviceinfo/Status$4;
 .super Landroid/content/BroadcastReceiver;
 .source "Status.java"
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/android/settings/deviceinfo/Status;
+    value = Lcom/android/settings_ext/deviceinfo/Status;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -15,16 +15,16 @@
 
 
 # instance fields
-.field final synthetic this$0:Lcom/android/settings/deviceinfo/Status;
+.field final synthetic this$0:Lcom/android/settings_ext/deviceinfo/Status;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/deviceinfo/Status;)V
+.method constructor <init>(Lcom/android/settings_ext/deviceinfo/Status;)V
     .locals 0
 
     .prologue
     .line 243
-    iput-object p1, p0, Lcom/android/settings/deviceinfo/Status$4;->this$0:Lcom/android/settings/deviceinfo/Status;
+    iput-object p1, p0, Lcom/android/settings_ext/deviceinfo/Status$4;->this$0:Lcom/android/settings_ext/deviceinfo/Status;
 
     invoke-direct {p0}, Landroid/content/BroadcastReceiver;-><init>()V
 
@@ -46,8 +46,8 @@
 
     .line 247
     .local v0, "action":Ljava/lang/String;
-    # getter for: Lcom/android/settings/deviceinfo/Status;->CONNECTIVITY_INTENTS:[Ljava/lang/String;
-    invoke-static {}, Lcom/android/settings/deviceinfo/Status;->access$700()[Ljava/lang/String;
+    # getter for: Lcom/android/settings_ext/deviceinfo/Status;->CONNECTIVITY_INTENTS:[Ljava/lang/String;
+    invoke-static {}, Lcom/android/settings_ext/deviceinfo/Status;->access$700()[Ljava/lang/String;
 
     move-result-object v1
 
@@ -58,10 +58,10 @@
     if-eqz v1, :cond_0
 
     .line 248
-    iget-object v1, p0, Lcom/android/settings/deviceinfo/Status$4;->this$0:Lcom/android/settings/deviceinfo/Status;
+    iget-object v1, p0, Lcom/android/settings_ext/deviceinfo/Status$4;->this$0:Lcom/android/settings_ext/deviceinfo/Status;
 
-    # getter for: Lcom/android/settings/deviceinfo/Status;->mHandler:Landroid/os/Handler;
-    invoke-static {v1}, Lcom/android/settings/deviceinfo/Status;->access$800(Lcom/android/settings/deviceinfo/Status;)Landroid/os/Handler;
+    # getter for: Lcom/android/settings_ext/deviceinfo/Status;->mHandler:Landroid/os/Handler;
+    invoke-static {v1}, Lcom/android/settings_ext/deviceinfo/Status;->access$800(Lcom/android/settings_ext/deviceinfo/Status;)Landroid/os/Handler;
 
     move-result-object v1
 

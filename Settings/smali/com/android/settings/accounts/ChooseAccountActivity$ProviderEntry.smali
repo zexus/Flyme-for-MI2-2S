@@ -1,4 +1,4 @@
-.class Lcom/android/settings/accounts/ChooseAccountActivity$ProviderEntry;
+.class Lcom/android/settings_ext/accounts/ChooseAccountActivity$ProviderEntry;
 .super Ljava/lang/Object;
 .source "ChooseAccountActivity.java"
 
@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/android/settings/accounts/ChooseAccountActivity;
+    value = Lcom/android/settings_ext/accounts/ChooseAccountActivity;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -21,7 +21,7 @@
         "Ljava/lang/Object;",
         "Ljava/lang/Comparable",
         "<",
-        "Lcom/android/settings/accounts/ChooseAccountActivity$ProviderEntry;",
+        "Lcom/android/settings_ext/accounts/ChooseAccountActivity$ProviderEntry;",
         ">;"
     }
 .end annotation
@@ -44,46 +44,46 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 76
-    iput-object p1, p0, Lcom/android/settings/accounts/ChooseAccountActivity$ProviderEntry;->name:Ljava/lang/CharSequence;
+    iput-object p1, p0, Lcom/android/settings_ext/accounts/ChooseAccountActivity$ProviderEntry;->name:Ljava/lang/CharSequence;
 
     .line 77
-    iput-object p2, p0, Lcom/android/settings/accounts/ChooseAccountActivity$ProviderEntry;->type:Ljava/lang/String;
+    iput-object p2, p0, Lcom/android/settings_ext/accounts/ChooseAccountActivity$ProviderEntry;->type:Ljava/lang/String;
 
     .line 78
     return-void
 .end method
 
-.method static synthetic access$000(Lcom/android/settings/accounts/ChooseAccountActivity$ProviderEntry;)Ljava/lang/String;
+.method static synthetic access$000(Lcom/android/settings_ext/accounts/ChooseAccountActivity$ProviderEntry;)Ljava/lang/String;
     .locals 1
-    .param p0, "x0"    # Lcom/android/settings/accounts/ChooseAccountActivity$ProviderEntry;
+    .param p0, "x0"    # Lcom/android/settings_ext/accounts/ChooseAccountActivity$ProviderEntry;
 
     .prologue
     .line 72
-    iget-object v0, p0, Lcom/android/settings/accounts/ChooseAccountActivity$ProviderEntry;->type:Ljava/lang/String;
+    iget-object v0, p0, Lcom/android/settings_ext/accounts/ChooseAccountActivity$ProviderEntry;->type:Ljava/lang/String;
 
     return-object v0
 .end method
 
-.method static synthetic access$100(Lcom/android/settings/accounts/ChooseAccountActivity$ProviderEntry;)Ljava/lang/CharSequence;
+.method static synthetic access$100(Lcom/android/settings_ext/accounts/ChooseAccountActivity$ProviderEntry;)Ljava/lang/CharSequence;
     .locals 1
-    .param p0, "x0"    # Lcom/android/settings/accounts/ChooseAccountActivity$ProviderEntry;
+    .param p0, "x0"    # Lcom/android/settings_ext/accounts/ChooseAccountActivity$ProviderEntry;
 
     .prologue
     .line 72
-    iget-object v0, p0, Lcom/android/settings/accounts/ChooseAccountActivity$ProviderEntry;->name:Ljava/lang/CharSequence;
+    iget-object v0, p0, Lcom/android/settings_ext/accounts/ChooseAccountActivity$ProviderEntry;->name:Ljava/lang/CharSequence;
 
     return-object v0
 .end method
 
 
 # virtual methods
-.method public compareTo(Lcom/android/settings/accounts/ChooseAccountActivity$ProviderEntry;)I
+.method public compareTo(Lcom/android/settings_ext/accounts/ChooseAccountActivity$ProviderEntry;)I
     .locals 2
-    .param p1, "another"    # Lcom/android/settings/accounts/ChooseAccountActivity$ProviderEntry;
+    .param p1, "another"    # Lcom/android/settings_ext/accounts/ChooseAccountActivity$ProviderEntry;
 
     .prologue
     .line 81
-    iget-object v0, p0, Lcom/android/settings/accounts/ChooseAccountActivity$ProviderEntry;->name:Ljava/lang/CharSequence;
+    iget-object v0, p0, Lcom/android/settings_ext/accounts/ChooseAccountActivity$ProviderEntry;->name:Ljava/lang/CharSequence;
 
     if-nez v0, :cond_0
 
@@ -96,7 +96,7 @@
 
     .line 84
     :cond_0
-    iget-object v0, p1, Lcom/android/settings/accounts/ChooseAccountActivity$ProviderEntry;->name:Ljava/lang/CharSequence;
+    iget-object v0, p1, Lcom/android/settings_ext/accounts/ChooseAccountActivity$ProviderEntry;->name:Ljava/lang/CharSequence;
 
     if-nez v0, :cond_1
 
@@ -107,9 +107,9 @@
 
     .line 87
     :cond_1
-    iget-object v0, p0, Lcom/android/settings/accounts/ChooseAccountActivity$ProviderEntry;->name:Ljava/lang/CharSequence;
+    iget-object v0, p0, Lcom/android/settings_ext/accounts/ChooseAccountActivity$ProviderEntry;->name:Ljava/lang/CharSequence;
 
-    iget-object v1, p1, Lcom/android/settings/accounts/ChooseAccountActivity$ProviderEntry;->name:Ljava/lang/CharSequence;
+    iget-object v1, p1, Lcom/android/settings_ext/accounts/ChooseAccountActivity$ProviderEntry;->name:Ljava/lang/CharSequence;
 
     invoke-static {v0, v1}, Lcom/android/internal/util/CharSequences;->compareToIgnoreCase(Ljava/lang/CharSequence;Ljava/lang/CharSequence;)I
 
@@ -124,10 +124,10 @@
 
     .prologue
     .line 72
-    check-cast p1, Lcom/android/settings/accounts/ChooseAccountActivity$ProviderEntry;
+    check-cast p1, Lcom/android/settings_ext/accounts/ChooseAccountActivity$ProviderEntry;
 
     .end local p1    # "x0":Ljava/lang/Object;
-    invoke-virtual {p0, p1}, Lcom/android/settings/accounts/ChooseAccountActivity$ProviderEntry;->compareTo(Lcom/android/settings/accounts/ChooseAccountActivity$ProviderEntry;)I
+    invoke-virtual {p0, p1}, Lcom/android/settings_ext/accounts/ChooseAccountActivity$ProviderEntry;->compareTo(Lcom/android/settings_ext/accounts/ChooseAccountActivity$ProviderEntry;)I
 
     move-result v0
 

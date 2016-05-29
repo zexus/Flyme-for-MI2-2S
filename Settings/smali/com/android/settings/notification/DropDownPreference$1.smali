@@ -1,4 +1,4 @@
-.class Lcom/android/settings/notification/DropDownPreference$1;
+.class Lcom/android/settings_ext/notification/DropDownPreference$1;
 .super Ljava/lang/Object;
 .source "DropDownPreference.java"
 
@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/android/settings/notification/DropDownPreference;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
+    value = Lcom/android/settings_ext/notification/DropDownPreference;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -18,16 +18,16 @@
 
 
 # instance fields
-.field final synthetic this$0:Lcom/android/settings/notification/DropDownPreference;
+.field final synthetic this$0:Lcom/android/settings_ext/notification/DropDownPreference;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/notification/DropDownPreference;)V
+.method constructor <init>(Lcom/android/settings_ext/notification/DropDownPreference;)V
     .locals 0
 
     .prologue
     .line 53
-    iput-object p1, p0, Lcom/android/settings/notification/DropDownPreference$1;->this$0:Lcom/android/settings/notification/DropDownPreference;
+    iput-object p1, p0, Lcom/android/settings_ext/notification/DropDownPreference$1;->this$0:Lcom/android/settings_ext/notification/DropDownPreference;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -54,9 +54,9 @@
     .prologue
     .line 56
     .local p1, "parent":Landroid/widget/AdapterView;, "Landroid/widget/AdapterView<*>;"
-    iget-object v0, p0, Lcom/android/settings/notification/DropDownPreference$1;->this$0:Lcom/android/settings/notification/DropDownPreference;
+    iget-object v0, p0, Lcom/android/settings_ext/notification/DropDownPreference$1;->this$0:Lcom/android/settings_ext/notification/DropDownPreference;
 
-    invoke-virtual {v0, p3}, Lcom/android/settings/notification/DropDownPreference;->setSelectedItem(I)V
+    invoke-virtual {v0, p3}, Lcom/android/settings_ext/notification/DropDownPreference;->setSelectedItem(I)V
 
     .line 57
     return-void

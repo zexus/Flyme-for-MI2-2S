@@ -1,11 +1,11 @@
-.class Lcom/android/settings/notification/NotificationStation$HistoricalNotificationInfo;
+.class Lcom/android/settings_ext/notification/NotificationStation$HistoricalNotificationInfo;
 .super Ljava/lang/Object;
 .source "NotificationStation.java"
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/android/settings/notification/NotificationStation;
+    value = Lcom/android/settings_ext/notification/NotificationStation;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -45,13 +45,13 @@
     return-void
 .end method
 
-.method synthetic constructor <init>(Lcom/android/settings/notification/NotificationStation$1;)V
+.method synthetic constructor <init>(Lcom/android/settings_ext/notification/NotificationStation$1;)V
     .locals 0
-    .param p1, "x0"    # Lcom/android/settings/notification/NotificationStation$1;
+    .param p1, "x0"    # Lcom/android/settings_ext/notification/NotificationStation$1;
 
     .prologue
     .line 62
-    invoke-direct {p0}, Lcom/android/settings/notification/NotificationStation$HistoricalNotificationInfo;-><init>()V
+    invoke-direct {p0}, Lcom/android/settings_ext/notification/NotificationStation$HistoricalNotificationInfo;-><init>()V
 
     return-void
 .end method

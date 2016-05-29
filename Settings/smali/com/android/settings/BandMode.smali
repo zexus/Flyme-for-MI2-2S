@@ -1,4 +1,4 @@
-.class public Lcom/android/settings/BandMode;
+.class public Lcom/android/settings_ext/BandMode;
 .super Landroid/app/Activity;
 .source "BandMode.java"
 
@@ -6,7 +6,7 @@
 # annotations
 .annotation system Ldalvik/annotation/MemberClasses;
     value = {
-        Lcom/android/settings/BandMode$BandListItem;
+        Lcom/android/settings_ext/BandMode$BandListItem;
     }
 .end annotation
 
@@ -28,7 +28,7 @@
 
 .field private mProgressPanel:Landroid/content/DialogInterface;
 
-.field private mTargetBand:Lcom/android/settings/BandMode$BandListItem;
+.field private mTargetBand:Lcom/android/settings_ext/BandMode$BandListItem;
 
 
 # direct methods
@@ -77,7 +77,7 @@
 
     aput-object v2, v0, v1
 
-    sput-object v0, Lcom/android/settings/BandMode;->BAND_NAMES:[Ljava/lang/String;
+    sput-object v0, Lcom/android/settings_ext/BandMode;->BAND_NAMES:[Ljava/lang/String;
 
     return-void
 .end method
@@ -92,69 +92,69 @@
     invoke-direct {p0}, Landroid/app/Activity;-><init>()V
 
     .line 51
-    iput-object v0, p0, Lcom/android/settings/BandMode;->mTargetBand:Lcom/android/settings/BandMode$BandListItem;
+    iput-object v0, p0, Lcom/android/settings_ext/BandMode;->mTargetBand:Lcom/android/settings_ext/BandMode$BandListItem;
 
     .line 54
-    iput-object v0, p0, Lcom/android/settings/BandMode;->mPhone:Lcom/android/internal/telephony/Phone;
+    iput-object v0, p0, Lcom/android/settings_ext/BandMode;->mPhone:Lcom/android/internal/telephony/Phone;
 
     .line 79
-    new-instance v0, Lcom/android/settings/BandMode$1;
+    new-instance v0, Lcom/android/settings_ext/BandMode$1;
 
-    invoke-direct {v0, p0}, Lcom/android/settings/BandMode$1;-><init>(Lcom/android/settings/BandMode;)V
+    invoke-direct {v0, p0}, Lcom/android/settings_ext/BandMode$1;-><init>(Lcom/android/settings_ext/BandMode;)V
 
-    iput-object v0, p0, Lcom/android/settings/BandMode;->mBandSelectionHandler:Landroid/widget/AdapterView$OnItemClickListener;
+    iput-object v0, p0, Lcom/android/settings_ext/BandMode;->mBandSelectionHandler:Landroid/widget/AdapterView$OnItemClickListener;
 
     .line 192
-    new-instance v0, Lcom/android/settings/BandMode$2;
+    new-instance v0, Lcom/android/settings_ext/BandMode$2;
 
-    invoke-direct {v0, p0}, Lcom/android/settings/BandMode$2;-><init>(Lcom/android/settings/BandMode;)V
+    invoke-direct {v0, p0}, Lcom/android/settings_ext/BandMode$2;-><init>(Lcom/android/settings_ext/BandMode;)V
 
-    iput-object v0, p0, Lcom/android/settings/BandMode;->mHandler:Landroid/os/Handler;
+    iput-object v0, p0, Lcom/android/settings_ext/BandMode;->mHandler:Landroid/os/Handler;
 
     return-void
 .end method
 
-.method static synthetic access$000(Lcom/android/settings/BandMode;)Lcom/android/settings/BandMode$BandListItem;
+.method static synthetic access$000(Lcom/android/settings_ext/BandMode;)Lcom/android/settings_ext/BandMode$BandListItem;
     .locals 1
-    .param p0, "x0"    # Lcom/android/settings/BandMode;
+    .param p0, "x0"    # Lcom/android/settings_ext/BandMode;
 
     .prologue
     .line 33
-    iget-object v0, p0, Lcom/android/settings/BandMode;->mTargetBand:Lcom/android/settings/BandMode$BandListItem;
+    iget-object v0, p0, Lcom/android/settings_ext/BandMode;->mTargetBand:Lcom/android/settings_ext/BandMode$BandListItem;
 
     return-object v0
 .end method
 
-.method static synthetic access$002(Lcom/android/settings/BandMode;Lcom/android/settings/BandMode$BandListItem;)Lcom/android/settings/BandMode$BandListItem;
+.method static synthetic access$002(Lcom/android/settings_ext/BandMode;Lcom/android/settings_ext/BandMode$BandListItem;)Lcom/android/settings_ext/BandMode$BandListItem;
     .locals 0
-    .param p0, "x0"    # Lcom/android/settings/BandMode;
-    .param p1, "x1"    # Lcom/android/settings/BandMode$BandListItem;
+    .param p0, "x0"    # Lcom/android/settings_ext/BandMode;
+    .param p1, "x1"    # Lcom/android/settings_ext/BandMode$BandListItem;
 
     .prologue
     .line 33
-    iput-object p1, p0, Lcom/android/settings/BandMode;->mTargetBand:Lcom/android/settings/BandMode$BandListItem;
+    iput-object p1, p0, Lcom/android/settings_ext/BandMode;->mTargetBand:Lcom/android/settings_ext/BandMode$BandListItem;
 
     return-object p1
 .end method
 
-.method static synthetic access$100(Lcom/android/settings/BandMode;)Landroid/os/Handler;
+.method static synthetic access$100(Lcom/android/settings_ext/BandMode;)Landroid/os/Handler;
     .locals 1
-    .param p0, "x0"    # Lcom/android/settings/BandMode;
+    .param p0, "x0"    # Lcom/android/settings_ext/BandMode;
 
     .prologue
     .line 33
-    iget-object v0, p0, Lcom/android/settings/BandMode;->mHandler:Landroid/os/Handler;
+    iget-object v0, p0, Lcom/android/settings_ext/BandMode;->mHandler:Landroid/os/Handler;
 
     return-object v0
 .end method
 
-.method static synthetic access$200(Lcom/android/settings/BandMode;)Lcom/android/internal/telephony/Phone;
+.method static synthetic access$200(Lcom/android/settings_ext/BandMode;)Lcom/android/internal/telephony/Phone;
     .locals 1
-    .param p0, "x0"    # Lcom/android/settings/BandMode;
+    .param p0, "x0"    # Lcom/android/settings_ext/BandMode;
 
     .prologue
     .line 33
-    iget-object v0, p0, Lcom/android/settings/BandMode;->mPhone:Lcom/android/internal/telephony/Phone;
+    iget-object v0, p0, Lcom/android/settings_ext/BandMode;->mPhone:Lcom/android/internal/telephony/Phone;
 
     return-object v0
 .end method
@@ -164,31 +164,31 @@
 
     .prologue
     .line 33
-    sget-object v0, Lcom/android/settings/BandMode;->BAND_NAMES:[Ljava/lang/String;
+    sget-object v0, Lcom/android/settings_ext/BandMode;->BAND_NAMES:[Ljava/lang/String;
 
     return-object v0
 .end method
 
-.method static synthetic access$400(Lcom/android/settings/BandMode;Landroid/os/AsyncResult;)V
+.method static synthetic access$400(Lcom/android/settings_ext/BandMode;Landroid/os/AsyncResult;)V
     .locals 0
-    .param p0, "x0"    # Lcom/android/settings/BandMode;
+    .param p0, "x0"    # Lcom/android/settings_ext/BandMode;
     .param p1, "x1"    # Landroid/os/AsyncResult;
 
     .prologue
     .line 33
-    invoke-direct {p0, p1}, Lcom/android/settings/BandMode;->bandListLoaded(Landroid/os/AsyncResult;)V
+    invoke-direct {p0, p1}, Lcom/android/settings_ext/BandMode;->bandListLoaded(Landroid/os/AsyncResult;)V
 
     return-void
 .end method
 
-.method static synthetic access$500(Lcom/android/settings/BandMode;Ljava/lang/Throwable;)V
+.method static synthetic access$500(Lcom/android/settings_ext/BandMode;Ljava/lang/Throwable;)V
     .locals 0
-    .param p0, "x0"    # Lcom/android/settings/BandMode;
+    .param p0, "x0"    # Lcom/android/settings_ext/BandMode;
     .param p1, "x1"    # Ljava/lang/Throwable;
 
     .prologue
     .line 33
-    invoke-direct {p0, p1}, Lcom/android/settings/BandMode;->displayBandSelectionResult(Ljava/lang/Throwable;)V
+    invoke-direct {p0, p1}, Lcom/android/settings_ext/BandMode;->displayBandSelectionResult(Ljava/lang/Throwable;)V
 
     return-void
 .end method
@@ -199,17 +199,17 @@
 
     .prologue
     .line 134
-    iget-object v5, p0, Lcom/android/settings/BandMode;->mProgressPanel:Landroid/content/DialogInterface;
+    iget-object v5, p0, Lcom/android/settings_ext/BandMode;->mProgressPanel:Landroid/content/DialogInterface;
 
     if-eqz v5, :cond_0
 
-    iget-object v5, p0, Lcom/android/settings/BandMode;->mProgressPanel:Landroid/content/DialogInterface;
+    iget-object v5, p0, Lcom/android/settings_ext/BandMode;->mProgressPanel:Landroid/content/DialogInterface;
 
     invoke-interface {v5}, Landroid/content/DialogInterface;->dismiss()V
 
     .line 136
     :cond_0
-    invoke-direct {p0}, Lcom/android/settings/BandMode;->clearList()V
+    invoke-direct {p0}, Lcom/android/settings_ext/BandMode;->clearList()V
 
     .line 138
     const/4 v0, 0x0
@@ -247,15 +247,15 @@
     if-ge v2, v4, :cond_1
 
     .line 147
-    new-instance v3, Lcom/android/settings/BandMode$BandListItem;
+    new-instance v3, Lcom/android/settings_ext/BandMode$BandListItem;
 
     aget v5, v1, v2
 
-    invoke-direct {v3, v5}, Lcom/android/settings/BandMode$BandListItem;-><init>(I)V
+    invoke-direct {v3, v5}, Lcom/android/settings_ext/BandMode$BandListItem;-><init>(I)V
 
     .line 148
-    .local v3, "item":Lcom/android/settings/BandMode$BandListItem;
-    iget-object v5, p0, Lcom/android/settings/BandMode;->mBandListAdapter:Landroid/widget/ArrayAdapter;
+    .local v3, "item":Lcom/android/settings_ext/BandMode$BandListItem;
+    iget-object v5, p0, Lcom/android/settings_ext/BandMode;->mBandListAdapter:Landroid/widget/ArrayAdapter;
 
     invoke-virtual {v5, v3}, Landroid/widget/ArrayAdapter;->add(Ljava/lang/Object;)V
 
@@ -265,7 +265,7 @@
     goto :goto_0
 
     .line 151
-    .end local v3    # "item":Lcom/android/settings/BandMode$BandListItem;
+    .end local v3    # "item":Lcom/android/settings_ext/BandMode$BandListItem;
     :cond_1
     const/4 v0, 0x1
 
@@ -286,13 +286,13 @@
     if-ge v2, v5, :cond_3
 
     .line 158
-    new-instance v3, Lcom/android/settings/BandMode$BandListItem;
+    new-instance v3, Lcom/android/settings_ext/BandMode$BandListItem;
 
-    invoke-direct {v3, v2}, Lcom/android/settings/BandMode$BandListItem;-><init>(I)V
+    invoke-direct {v3, v2}, Lcom/android/settings_ext/BandMode$BandListItem;-><init>(I)V
 
     .line 159
-    .restart local v3    # "item":Lcom/android/settings/BandMode$BandListItem;
-    iget-object v5, p0, Lcom/android/settings/BandMode;->mBandListAdapter:Landroid/widget/ArrayAdapter;
+    .restart local v3    # "item":Lcom/android/settings_ext/BandMode$BandListItem;
+    iget-object v5, p0, Lcom/android/settings_ext/BandMode;->mBandListAdapter:Landroid/widget/ArrayAdapter;
 
     invoke-virtual {v5, v3}, Landroid/widget/ArrayAdapter;->add(Ljava/lang/Object;)V
 
@@ -303,9 +303,9 @@
 
     .line 163
     .end local v2    # "i":I
-    .end local v3    # "item":Lcom/android/settings/BandMode$BandListItem;
+    .end local v3    # "item":Lcom/android/settings_ext/BandMode$BandListItem;
     :cond_3
-    iget-object v5, p0, Lcom/android/settings/BandMode;->mBandList:Landroid/widget/ListView;
+    iget-object v5, p0, Lcom/android/settings_ext/BandMode;->mBandList:Landroid/widget/ListView;
 
     invoke-virtual {v5}, Landroid/widget/ListView;->requestFocus()Z
 
@@ -319,7 +319,7 @@
     .prologue
     .line 182
     :goto_0
-    iget-object v0, p0, Lcom/android/settings/BandMode;->mBandListAdapter:Landroid/widget/ArrayAdapter;
+    iget-object v0, p0, Lcom/android/settings_ext/BandMode;->mBandListAdapter:Landroid/widget/ArrayAdapter;
 
     invoke-virtual {v0}, Landroid/widget/ArrayAdapter;->getCount()I
 
@@ -328,9 +328,9 @@
     if-lez v0, :cond_0
 
     .line 183
-    iget-object v0, p0, Lcom/android/settings/BandMode;->mBandListAdapter:Landroid/widget/ArrayAdapter;
+    iget-object v0, p0, Lcom/android/settings_ext/BandMode;->mBandListAdapter:Landroid/widget/ArrayAdapter;
 
-    iget-object v1, p0, Lcom/android/settings/BandMode;->mBandListAdapter:Landroid/widget/ArrayAdapter;
+    iget-object v1, p0, Lcom/android/settings_ext/BandMode;->mBandListAdapter:Landroid/widget/ArrayAdapter;
 
     const/4 v2, 0x0
 
@@ -359,7 +359,7 @@
 
     const v2, 0x7f0900e4
 
-    invoke-virtual {p0, v2}, Lcom/android/settings/BandMode;->getString(I)Ljava/lang/String;
+    invoke-virtual {p0, v2}, Lcom/android/settings_ext/BandMode;->getString(I)Ljava/lang/String;
 
     move-result-object v2
 
@@ -373,9 +373,9 @@
 
     move-result-object v1
 
-    iget-object v2, p0, Lcom/android/settings/BandMode;->mTargetBand:Lcom/android/settings/BandMode$BandListItem;
+    iget-object v2, p0, Lcom/android/settings_ext/BandMode;->mTargetBand:Lcom/android/settings_ext/BandMode$BandListItem;
 
-    invoke-virtual {v2}, Lcom/android/settings/BandMode$BandListItem;->toString()Ljava/lang/String;
+    invoke-virtual {v2}, Lcom/android/settings_ext/BandMode$BandListItem;->toString()Ljava/lang/String;
 
     move-result-object v2
 
@@ -408,7 +408,7 @@
 
     const v2, 0x7f0900e5
 
-    invoke-virtual {p0, v2}, Lcom/android/settings/BandMode;->getString(I)Ljava/lang/String;
+    invoke-virtual {p0, v2}, Lcom/android/settings_ext/BandMode;->getString(I)Ljava/lang/String;
 
     move-result-object v2
 
@@ -442,7 +442,7 @@
 
     move-result-object v1
 
-    iput-object v1, p0, Lcom/android/settings/BandMode;->mProgressPanel:Landroid/content/DialogInterface;
+    iput-object v1, p0, Lcom/android/settings_ext/BandMode;->mProgressPanel:Landroid/content/DialogInterface;
 
     .line 179
     return-void
@@ -459,7 +459,7 @@
 
     const v2, 0x7f0900e6
 
-    invoke-virtual {p0, v2}, Lcom/android/settings/BandMode;->getString(I)Ljava/lang/String;
+    invoke-virtual {p0, v2}, Lcom/android/settings_ext/BandMode;->getString(I)Ljava/lang/String;
 
     move-result-object v2
 
@@ -481,7 +481,7 @@
     .line 116
     const v2, 0x7f0900e3
 
-    invoke-virtual {p0, v2}, Lcom/android/settings/BandMode;->getString(I)Ljava/lang/String;
+    invoke-virtual {p0, v2}, Lcom/android/settings_ext/BandMode;->getString(I)Ljava/lang/String;
 
     move-result-object v1
 
@@ -499,10 +499,10 @@
 
     move-result-object v2
 
-    iput-object v2, p0, Lcom/android/settings/BandMode;->mProgressPanel:Landroid/content/DialogInterface;
+    iput-object v2, p0, Lcom/android/settings_ext/BandMode;->mProgressPanel:Landroid/content/DialogInterface;
 
     .line 126
-    iget-object v2, p0, Lcom/android/settings/BandMode;->mHandler:Landroid/os/Handler;
+    iget-object v2, p0, Lcom/android/settings_ext/BandMode;->mHandler:Landroid/os/Handler;
 
     const/16 v3, 0x64
 
@@ -512,7 +512,7 @@
 
     .line 127
     .local v0, "msg":Landroid/os/Message;
-    iget-object v2, p0, Lcom/android/settings/BandMode;->mPhone:Lcom/android/internal/telephony/Phone;
+    iget-object v2, p0, Lcom/android/settings_ext/BandMode;->mPhone:Lcom/android/internal/telephony/Phone;
 
     invoke-interface {v2, v0}, Lcom/android/internal/telephony/Phone;->queryAvailableBandMode(Landroid/os/Message;)V
 
@@ -533,24 +533,24 @@
     .line 60
     const/4 v0, 0x5
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/BandMode;->requestWindowFeature(I)Z
+    invoke-virtual {p0, v0}, Lcom/android/settings_ext/BandMode;->requestWindowFeature(I)Z
 
     .line 62
     const v0, 0x7f04000f
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/BandMode;->setContentView(I)V
+    invoke-virtual {p0, v0}, Lcom/android/settings_ext/BandMode;->setContentView(I)V
 
     .line 64
     const v0, 0x7f0900e2
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/BandMode;->getString(I)Ljava/lang/String;
+    invoke-virtual {p0, v0}, Lcom/android/settings_ext/BandMode;->getString(I)Ljava/lang/String;
 
     move-result-object v0
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/BandMode;->setTitle(Ljava/lang/CharSequence;)V
+    invoke-virtual {p0, v0}, Lcom/android/settings_ext/BandMode;->setTitle(Ljava/lang/CharSequence;)V
 
     .line 65
-    invoke-virtual {p0}, Lcom/android/settings/BandMode;->getWindow()Landroid/view/Window;
+    invoke-virtual {p0}, Lcom/android/settings_ext/BandMode;->getWindow()Landroid/view/Window;
 
     move-result-object v0
 
@@ -565,18 +565,18 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/BandMode;->mPhone:Lcom/android/internal/telephony/Phone;
+    iput-object v0, p0, Lcom/android/settings_ext/BandMode;->mPhone:Lcom/android/internal/telephony/Phone;
 
     .line 70
     const v0, 0x7f0f001c
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/BandMode;->findViewById(I)Landroid/view/View;
+    invoke-virtual {p0, v0}, Lcom/android/settings_ext/BandMode;->findViewById(I)Landroid/view/View;
 
     move-result-object v0
 
     check-cast v0, Landroid/widget/ListView;
 
-    iput-object v0, p0, Lcom/android/settings/BandMode;->mBandList:Landroid/widget/ListView;
+    iput-object v0, p0, Lcom/android/settings_ext/BandMode;->mBandList:Landroid/widget/ListView;
 
     .line 71
     new-instance v0, Landroid/widget/ArrayAdapter;
@@ -585,24 +585,24 @@
 
     invoke-direct {v0, p0, v1}, Landroid/widget/ArrayAdapter;-><init>(Landroid/content/Context;I)V
 
-    iput-object v0, p0, Lcom/android/settings/BandMode;->mBandListAdapter:Landroid/widget/ArrayAdapter;
+    iput-object v0, p0, Lcom/android/settings_ext/BandMode;->mBandListAdapter:Landroid/widget/ArrayAdapter;
 
     .line 73
-    iget-object v0, p0, Lcom/android/settings/BandMode;->mBandList:Landroid/widget/ListView;
+    iget-object v0, p0, Lcom/android/settings_ext/BandMode;->mBandList:Landroid/widget/ListView;
 
-    iget-object v1, p0, Lcom/android/settings/BandMode;->mBandListAdapter:Landroid/widget/ArrayAdapter;
+    iget-object v1, p0, Lcom/android/settings_ext/BandMode;->mBandListAdapter:Landroid/widget/ArrayAdapter;
 
     invoke-virtual {v0, v1}, Landroid/widget/ListView;->setAdapter(Landroid/widget/ListAdapter;)V
 
     .line 74
-    iget-object v0, p0, Lcom/android/settings/BandMode;->mBandList:Landroid/widget/ListView;
+    iget-object v0, p0, Lcom/android/settings_ext/BandMode;->mBandList:Landroid/widget/ListView;
 
-    iget-object v1, p0, Lcom/android/settings/BandMode;->mBandSelectionHandler:Landroid/widget/AdapterView$OnItemClickListener;
+    iget-object v1, p0, Lcom/android/settings_ext/BandMode;->mBandSelectionHandler:Landroid/widget/AdapterView$OnItemClickListener;
 
     invoke-virtual {v0, v1}, Landroid/widget/ListView;->setOnItemClickListener(Landroid/widget/AdapterView$OnItemClickListener;)V
 
     .line 76
-    invoke-direct {p0}, Lcom/android/settings/BandMode;->loadBandList()V
+    invoke-direct {p0}, Lcom/android/settings_ext/BandMode;->loadBandList()V
 
     .line 77
     return-void

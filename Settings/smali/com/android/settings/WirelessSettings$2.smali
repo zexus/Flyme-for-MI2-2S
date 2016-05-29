@@ -1,11 +1,11 @@
-.class final Lcom/android/settings/WirelessSettings$2;
-.super Lcom/android/settings/search/BaseSearchIndexProvider;
+.class final Lcom/android/settings_ext/WirelessSettings$2;
+.super Lcom/android/settings_ext/search/BaseSearchIndexProvider;
 .source "WirelessSettings.java"
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/android/settings/WirelessSettings;
+    value = Lcom/android/settings_ext/WirelessSettings;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -20,7 +20,7 @@
 
     .prologue
     .line 496
-    invoke-direct {p0}, Lcom/android/settings/search/BaseSearchIndexProvider;-><init>()V
+    invoke-direct {p0}, Lcom/android/settings_ext/search/BaseSearchIndexProvider;-><init>()V
 
     return-void
 .end method
@@ -174,7 +174,7 @@
     :cond_3
     if-nez v7, :cond_4
 
-    invoke-static/range {p1 .. p1}, Lcom/android/settings/Utils;->isWifiOnly(Landroid/content/Context;)Z
+    invoke-static/range {p1 .. p1}, Lcom/android/settings_ext/Utils;->isWifiOnly(Landroid/content/Context;)Z
 
     move-result v15
 

@@ -1,11 +1,11 @@
-.class public final Lcom/android/settings/inputmethod/KeyboardLayoutDialogFragment$Keyboards;
+.class public final Lcom/android/settings_ext/inputmethod/KeyboardLayoutDialogFragment$Keyboards;
 .super Ljava/lang/Object;
 .source "KeyboardLayoutDialogFragment.java"
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/android/settings/inputmethod/KeyboardLayoutDialogFragment;
+    value = Lcom/android/settings_ext/inputmethod/KeyboardLayoutDialogFragment;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -42,12 +42,12 @@
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
-    iput-object v0, p0, Lcom/android/settings/inputmethod/KeyboardLayoutDialogFragment$Keyboards;->keyboardLayouts:Ljava/util/ArrayList;
+    iput-object v0, p0, Lcom/android/settings_ext/inputmethod/KeyboardLayoutDialogFragment$Keyboards;->keyboardLayouts:Ljava/util/ArrayList;
 
     .line 348
     const/4 v0, -0x1
 
-    iput v0, p0, Lcom/android/settings/inputmethod/KeyboardLayoutDialogFragment$Keyboards;->current:I
+    iput v0, p0, Lcom/android/settings_ext/inputmethod/KeyboardLayoutDialogFragment$Keyboards;->current:I
 
     return-void
 .end method

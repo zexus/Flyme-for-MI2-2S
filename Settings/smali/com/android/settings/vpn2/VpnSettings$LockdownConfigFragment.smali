@@ -1,11 +1,11 @@
-.class public Lcom/android/settings/vpn2/VpnSettings$LockdownConfigFragment;
+.class public Lcom/android/settings_ext/vpn2/VpnSettings$LockdownConfigFragment;
 .super Landroid/app/DialogFragment;
 .source "VpnSettings.java"
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/android/settings/vpn2/VpnSettings;
+    value = Lcom/android/settings_ext/vpn2/VpnSettings;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -15,7 +15,7 @@
 
 .annotation system Ldalvik/annotation/MemberClasses;
     value = {
-        Lcom/android/settings/vpn2/VpnSettings$LockdownConfigFragment$TitleAdapter;
+        Lcom/android/settings_ext/vpn2/VpnSettings$LockdownConfigFragment$TitleAdapter;
     }
 .end annotation
 
@@ -58,24 +58,24 @@
     return-void
 .end method
 
-.method static synthetic access$100(Lcom/android/settings/vpn2/VpnSettings$LockdownConfigFragment;)I
+.method static synthetic access$100(Lcom/android/settings_ext/vpn2/VpnSettings$LockdownConfigFragment;)I
     .locals 1
-    .param p0, "x0"    # Lcom/android/settings/vpn2/VpnSettings$LockdownConfigFragment;
+    .param p0, "x0"    # Lcom/android/settings_ext/vpn2/VpnSettings$LockdownConfigFragment;
 
     .prologue
     .line 488
-    iget v0, p0, Lcom/android/settings/vpn2/VpnSettings$LockdownConfigFragment;->mCurrentIndex:I
+    iget v0, p0, Lcom/android/settings_ext/vpn2/VpnSettings$LockdownConfigFragment;->mCurrentIndex:I
 
     return v0
 .end method
 
-.method static synthetic access$200(Lcom/android/settings/vpn2/VpnSettings$LockdownConfigFragment;)Ljava/util/List;
+.method static synthetic access$200(Lcom/android/settings_ext/vpn2/VpnSettings$LockdownConfigFragment;)Ljava/util/List;
     .locals 1
-    .param p0, "x0"    # Lcom/android/settings/vpn2/VpnSettings$LockdownConfigFragment;
+    .param p0, "x0"    # Lcom/android/settings_ext/vpn2/VpnSettings$LockdownConfigFragment;
 
     .prologue
     .line 488
-    iget-object v0, p0, Lcom/android/settings/vpn2/VpnSettings$LockdownConfigFragment;->mProfiles:Ljava/util/List;
+    iget-object v0, p0, Lcom/android/settings_ext/vpn2/VpnSettings$LockdownConfigFragment;->mProfiles:Ljava/util/List;
 
     return-object v0
 .end method
@@ -121,7 +121,7 @@
     .line 513
     const-string v3, "LOCKDOWN_VPN"
 
-    invoke-static {p1, v3}, Lcom/android/settings/vpn2/VpnSettings$LockdownConfigFragment;->getStringOrNull(Landroid/security/KeyStore;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {p1, v3}, Lcom/android/settings_ext/vpn2/VpnSettings$LockdownConfigFragment;->getStringOrNull(Landroid/security/KeyStore;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v1
 
@@ -133,22 +133,22 @@
 
     aput v5, v3, v5
 
-    # invokes: Lcom/android/settings/vpn2/VpnSettings;->loadVpnProfiles(Landroid/security/KeyStore;[I)Ljava/util/List;
-    invoke-static {p1, v3}, Lcom/android/settings/vpn2/VpnSettings;->access$000(Landroid/security/KeyStore;[I)Ljava/util/List;
+    # invokes: Lcom/android/settings_ext/vpn2/VpnSettings;->loadVpnProfiles(Landroid/security/KeyStore;[I)Ljava/util/List;
+    invoke-static {p1, v3}, Lcom/android/settings_ext/vpn2/VpnSettings;->access$000(Landroid/security/KeyStore;[I)Ljava/util/List;
 
     move-result-object v3
 
-    iput-object v3, p0, Lcom/android/settings/vpn2/VpnSettings$LockdownConfigFragment;->mProfiles:Ljava/util/List;
+    iput-object v3, p0, Lcom/android/settings_ext/vpn2/VpnSettings$LockdownConfigFragment;->mProfiles:Ljava/util/List;
 
     .line 516
     invoke-static {}, Lcom/google/android/collect/Lists;->newArrayList()Ljava/util/ArrayList;
 
     move-result-object v3
 
-    iput-object v3, p0, Lcom/android/settings/vpn2/VpnSettings$LockdownConfigFragment;->mTitles:Ljava/util/List;
+    iput-object v3, p0, Lcom/android/settings_ext/vpn2/VpnSettings$LockdownConfigFragment;->mTitles:Ljava/util/List;
 
     .line 517
-    iget-object v3, p0, Lcom/android/settings/vpn2/VpnSettings$LockdownConfigFragment;->mTitles:Ljava/util/List;
+    iget-object v3, p0, Lcom/android/settings_ext/vpn2/VpnSettings$LockdownConfigFragment;->mTitles:Ljava/util/List;
 
     const v4, 0x7f090856
 
@@ -159,10 +159,10 @@
     invoke-interface {v3, v4}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
     .line 518
-    iput v5, p0, Lcom/android/settings/vpn2/VpnSettings$LockdownConfigFragment;->mCurrentIndex:I
+    iput v5, p0, Lcom/android/settings_ext/vpn2/VpnSettings$LockdownConfigFragment;->mCurrentIndex:I
 
     .line 520
-    iget-object v3, p0, Lcom/android/settings/vpn2/VpnSettings$LockdownConfigFragment;->mProfiles:Ljava/util/List;
+    iget-object v3, p0, Lcom/android/settings_ext/vpn2/VpnSettings$LockdownConfigFragment;->mProfiles:Ljava/util/List;
 
     invoke-interface {v3}, Ljava/util/List;->iterator()Ljava/util/Iterator;
 
@@ -193,17 +193,17 @@
     if-eqz v3, :cond_0
 
     .line 522
-    iget-object v3, p0, Lcom/android/settings/vpn2/VpnSettings$LockdownConfigFragment;->mTitles:Ljava/util/List;
+    iget-object v3, p0, Lcom/android/settings_ext/vpn2/VpnSettings$LockdownConfigFragment;->mTitles:Ljava/util/List;
 
     invoke-interface {v3}, Ljava/util/List;->size()I
 
     move-result v3
 
-    iput v3, p0, Lcom/android/settings/vpn2/VpnSettings$LockdownConfigFragment;->mCurrentIndex:I
+    iput v3, p0, Lcom/android/settings_ext/vpn2/VpnSettings$LockdownConfigFragment;->mCurrentIndex:I
 
     .line 524
     :cond_0
-    iget-object v3, p0, Lcom/android/settings/vpn2/VpnSettings$LockdownConfigFragment;->mTitles:Ljava/util/List;
+    iget-object v3, p0, Lcom/android/settings_ext/vpn2/VpnSettings$LockdownConfigFragment;->mTitles:Ljava/util/List;
 
     iget-object v4, v2, Lcom/android/internal/net/VpnProfile;->name:Ljava/lang/String;
 
@@ -217,13 +217,13 @@
     return-void
 .end method
 
-.method public static show(Lcom/android/settings/vpn2/VpnSettings;)V
+.method public static show(Lcom/android/settings_ext/vpn2/VpnSettings;)V
     .locals 3
-    .param p0, "parent"    # Lcom/android/settings/vpn2/VpnSettings;
+    .param p0, "parent"    # Lcom/android/settings_ext/vpn2/VpnSettings;
 
     .prologue
     .line 501
-    invoke-virtual {p0}, Lcom/android/settings/vpn2/VpnSettings;->isAdded()Z
+    invoke-virtual {p0}, Lcom/android/settings_ext/vpn2/VpnSettings;->isAdded()Z
 
     move-result v1
 
@@ -235,19 +235,19 @@
 
     .line 503
     :cond_0
-    new-instance v0, Lcom/android/settings/vpn2/VpnSettings$LockdownConfigFragment;
+    new-instance v0, Lcom/android/settings_ext/vpn2/VpnSettings$LockdownConfigFragment;
 
-    invoke-direct {v0}, Lcom/android/settings/vpn2/VpnSettings$LockdownConfigFragment;-><init>()V
+    invoke-direct {v0}, Lcom/android/settings_ext/vpn2/VpnSettings$LockdownConfigFragment;-><init>()V
 
     .line 504
-    .local v0, "dialog":Lcom/android/settings/vpn2/VpnSettings$LockdownConfigFragment;
-    invoke-virtual {p0}, Lcom/android/settings/vpn2/VpnSettings;->getFragmentManager()Landroid/app/FragmentManager;
+    .local v0, "dialog":Lcom/android/settings_ext/vpn2/VpnSettings$LockdownConfigFragment;
+    invoke-virtual {p0}, Lcom/android/settings_ext/vpn2/VpnSettings;->getFragmentManager()Landroid/app/FragmentManager;
 
     move-result-object v1
 
     const-string v2, "lockdown"
 
-    invoke-virtual {v0, v1, v2}, Lcom/android/settings/vpn2/VpnSettings$LockdownConfigFragment;->show(Landroid/app/FragmentManager;Ljava/lang/String;)V
+    invoke-virtual {v0, v1, v2}, Lcom/android/settings_ext/vpn2/VpnSettings$LockdownConfigFragment;->show(Landroid/app/FragmentManager;Ljava/lang/String;)V
 
     goto :goto_0
 .end method
@@ -262,7 +262,7 @@
     const/4 v9, 0x1
 
     .line 530
-    invoke-virtual {p0}, Lcom/android/settings/vpn2/VpnSettings$LockdownConfigFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/vpn2/VpnSettings$LockdownConfigFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v1
 
@@ -278,7 +278,7 @@
 
     move-result-object v6
 
-    invoke-direct {p0, v3, v6}, Lcom/android/settings/vpn2/VpnSettings$LockdownConfigFragment;->initProfiles(Landroid/security/KeyStore;Landroid/content/res/Resources;)V
+    invoke-direct {p0, v3, v6}, Lcom/android/settings_ext/vpn2/VpnSettings$LockdownConfigFragment;->initProfiles(Landroid/security/KeyStore;Landroid/content/res/Resources;)V
 
     .line 535
     new-instance v0, Landroid/app/AlertDialog$Builder;
@@ -327,16 +327,16 @@
     invoke-virtual {v4, v9}, Landroid/widget/ListView;->setChoiceMode(I)V
 
     .line 543
-    new-instance v6, Lcom/android/settings/vpn2/VpnSettings$LockdownConfigFragment$TitleAdapter;
+    new-instance v6, Lcom/android/settings_ext/vpn2/VpnSettings$LockdownConfigFragment$TitleAdapter;
 
-    iget-object v7, p0, Lcom/android/settings/vpn2/VpnSettings$LockdownConfigFragment;->mTitles:Ljava/util/List;
+    iget-object v7, p0, Lcom/android/settings_ext/vpn2/VpnSettings$LockdownConfigFragment;->mTitles:Ljava/util/List;
 
-    invoke-direct {v6, v1, v7}, Lcom/android/settings/vpn2/VpnSettings$LockdownConfigFragment$TitleAdapter;-><init>(Landroid/content/Context;Ljava/util/List;)V
+    invoke-direct {v6, v1, v7}, Lcom/android/settings_ext/vpn2/VpnSettings$LockdownConfigFragment$TitleAdapter;-><init>(Landroid/content/Context;Ljava/util/List;)V
 
     invoke-virtual {v4, v6}, Landroid/widget/ListView;->setAdapter(Landroid/widget/ListAdapter;)V
 
     .line 544
-    iget v6, p0, Lcom/android/settings/vpn2/VpnSettings$LockdownConfigFragment;->mCurrentIndex:I
+    iget v6, p0, Lcom/android/settings_ext/vpn2/VpnSettings$LockdownConfigFragment;->mCurrentIndex:I
 
     invoke-virtual {v4, v6, v9}, Landroid/widget/ListView;->setItemChecked(IZ)V
 
@@ -346,9 +346,9 @@
     .line 547
     const v6, 0x104000a
 
-    new-instance v7, Lcom/android/settings/vpn2/VpnSettings$LockdownConfigFragment$1;
+    new-instance v7, Lcom/android/settings_ext/vpn2/VpnSettings$LockdownConfigFragment$1;
 
-    invoke-direct {v7, p0, v4, v3, v1}, Lcom/android/settings/vpn2/VpnSettings$LockdownConfigFragment$1;-><init>(Lcom/android/settings/vpn2/VpnSettings$LockdownConfigFragment;Landroid/widget/ListView;Landroid/security/KeyStore;Landroid/content/Context;)V
+    invoke-direct {v7, p0, v4, v3, v1}, Lcom/android/settings_ext/vpn2/VpnSettings$LockdownConfigFragment$1;-><init>(Lcom/android/settings_ext/vpn2/VpnSettings$LockdownConfigFragment;Landroid/widget/ListView;Landroid/security/KeyStore;Landroid/content/Context;)V
 
     invoke-virtual {v0, v6, v7}, Landroid/app/AlertDialog$Builder;->setPositiveButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 

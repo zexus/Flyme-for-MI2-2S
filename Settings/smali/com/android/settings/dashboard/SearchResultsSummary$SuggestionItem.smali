@@ -1,11 +1,11 @@
-.class Lcom/android/settings/dashboard/SearchResultsSummary$SuggestionItem;
+.class Lcom/android/settings_ext/dashboard/SearchResultsSummary$SuggestionItem;
 .super Ljava/lang/Object;
 .source "SearchResultsSummary.java"
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/android/settings/dashboard/SearchResultsSummary;
+    value = Lcom/android/settings_ext/dashboard/SearchResultsSummary;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -28,7 +28,7 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 397
-    iput-object p1, p0, Lcom/android/settings/dashboard/SearchResultsSummary$SuggestionItem;->query:Ljava/lang/String;
+    iput-object p1, p0, Lcom/android/settings_ext/dashboard/SearchResultsSummary$SuggestionItem;->query:Ljava/lang/String;
 
     .line 398
     return-void

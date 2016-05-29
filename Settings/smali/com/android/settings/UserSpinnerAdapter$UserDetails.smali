@@ -1,11 +1,11 @@
-.class public Lcom/android/settings/UserSpinnerAdapter$UserDetails;
+.class public Lcom/android/settings_ext/UserSpinnerAdapter$UserDetails;
 .super Ljava/lang/Object;
 .source "UserSpinnerAdapter.java"
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/android/settings/UserSpinnerAdapter;
+    value = Lcom/android/settings_ext/UserSpinnerAdapter;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -34,10 +34,10 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 50
-    iput-object p1, p0, Lcom/android/settings/UserSpinnerAdapter$UserDetails;->mUserHandle:Landroid/os/UserHandle;
+    iput-object p1, p0, Lcom/android/settings_ext/UserSpinnerAdapter$UserDetails;->mUserHandle:Landroid/os/UserHandle;
 
     .line 51
-    iget-object v2, p0, Lcom/android/settings/UserSpinnerAdapter$UserDetails;->mUserHandle:Landroid/os/UserHandle;
+    iget-object v2, p0, Lcom/android/settings_ext/UserSpinnerAdapter$UserDetails;->mUserHandle:Landroid/os/UserHandle;
 
     invoke-virtual {v2}, Landroid/os/UserHandle;->getIdentifier()I
 
@@ -62,7 +62,7 @@
 
     move-result-object v2
 
-    iput-object v2, p0, Lcom/android/settings/UserSpinnerAdapter$UserDetails;->name:Ljava/lang/String;
+    iput-object v2, p0, Lcom/android/settings_ext/UserSpinnerAdapter$UserDetails;->name:Ljava/lang/String;
 
     .line 54
     const v2, 0x108034d
@@ -71,7 +71,7 @@
 
     move-result-object v2
 
-    iput-object v2, p0, Lcom/android/settings/UserSpinnerAdapter$UserDetails;->icon:Landroid/graphics/drawable/Drawable;
+    iput-object v2, p0, Lcom/android/settings_ext/UserSpinnerAdapter$UserDetails;->icon:Landroid/graphics/drawable/Drawable;
 
     .line 65
     :goto_0
@@ -81,7 +81,7 @@
     :cond_0
     iget-object v2, v1, Landroid/content/pm/UserInfo;->name:Ljava/lang/String;
 
-    iput-object v2, p0, Lcom/android/settings/UserSpinnerAdapter$UserDetails;->name:Ljava/lang/String;
+    iput-object v2, p0, Lcom/android/settings_ext/UserSpinnerAdapter$UserDetails;->name:Ljava/lang/String;
 
     .line 58
     iget v0, v1, Landroid/content/pm/UserInfo;->id:I
@@ -107,7 +107,7 @@
 
     invoke-direct {v2, v3, v4}, Landroid/graphics/drawable/BitmapDrawable;-><init>(Landroid/content/res/Resources;Landroid/graphics/Bitmap;)V
 
-    iput-object v2, p0, Lcom/android/settings/UserSpinnerAdapter$UserDetails;->icon:Landroid/graphics/drawable/Drawable;
+    iput-object v2, p0, Lcom/android/settings_ext/UserSpinnerAdapter$UserDetails;->icon:Landroid/graphics/drawable/Drawable;
 
     goto :goto_0
 
@@ -119,40 +119,40 @@
 
     move-result-object v2
 
-    iput-object v2, p0, Lcom/android/settings/UserSpinnerAdapter$UserDetails;->icon:Landroid/graphics/drawable/Drawable;
+    iput-object v2, p0, Lcom/android/settings_ext/UserSpinnerAdapter$UserDetails;->icon:Landroid/graphics/drawable/Drawable;
 
     goto :goto_0
 .end method
 
-.method static synthetic access$000(Lcom/android/settings/UserSpinnerAdapter$UserDetails;)Landroid/os/UserHandle;
+.method static synthetic access$000(Lcom/android/settings_ext/UserSpinnerAdapter$UserDetails;)Landroid/os/UserHandle;
     .locals 1
-    .param p0, "x0"    # Lcom/android/settings/UserSpinnerAdapter$UserDetails;
+    .param p0, "x0"    # Lcom/android/settings_ext/UserSpinnerAdapter$UserDetails;
 
     .prologue
     .line 44
-    iget-object v0, p0, Lcom/android/settings/UserSpinnerAdapter$UserDetails;->mUserHandle:Landroid/os/UserHandle;
+    iget-object v0, p0, Lcom/android/settings_ext/UserSpinnerAdapter$UserDetails;->mUserHandle:Landroid/os/UserHandle;
 
     return-object v0
 .end method
 
-.method static synthetic access$100(Lcom/android/settings/UserSpinnerAdapter$UserDetails;)Landroid/graphics/drawable/Drawable;
+.method static synthetic access$100(Lcom/android/settings_ext/UserSpinnerAdapter$UserDetails;)Landroid/graphics/drawable/Drawable;
     .locals 1
-    .param p0, "x0"    # Lcom/android/settings/UserSpinnerAdapter$UserDetails;
+    .param p0, "x0"    # Lcom/android/settings_ext/UserSpinnerAdapter$UserDetails;
 
     .prologue
     .line 44
-    iget-object v0, p0, Lcom/android/settings/UserSpinnerAdapter$UserDetails;->icon:Landroid/graphics/drawable/Drawable;
+    iget-object v0, p0, Lcom/android/settings_ext/UserSpinnerAdapter$UserDetails;->icon:Landroid/graphics/drawable/Drawable;
 
     return-object v0
 .end method
 
-.method static synthetic access$200(Lcom/android/settings/UserSpinnerAdapter$UserDetails;)Ljava/lang/String;
+.method static synthetic access$200(Lcom/android/settings_ext/UserSpinnerAdapter$UserDetails;)Ljava/lang/String;
     .locals 1
-    .param p0, "x0"    # Lcom/android/settings/UserSpinnerAdapter$UserDetails;
+    .param p0, "x0"    # Lcom/android/settings_ext/UserSpinnerAdapter$UserDetails;
 
     .prologue
     .line 44
-    iget-object v0, p0, Lcom/android/settings/UserSpinnerAdapter$UserDetails;->name:Ljava/lang/String;
+    iget-object v0, p0, Lcom/android/settings_ext/UserSpinnerAdapter$UserDetails;->name:Ljava/lang/String;
 
     return-object v0
 .end method

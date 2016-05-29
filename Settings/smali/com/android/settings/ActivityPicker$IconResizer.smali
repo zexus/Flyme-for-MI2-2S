@@ -1,11 +1,11 @@
-.class Lcom/android/settings/ActivityPicker$IconResizer;
+.class Lcom/android/settings_ext/ActivityPicker$IconResizer;
 .super Ljava/lang/Object;
 .source "ActivityPicker.java"
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/android/settings/ActivityPicker;
+    value = Lcom/android/settings_ext/ActivityPicker;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -42,17 +42,17 @@
 
     invoke-direct {v0}, Landroid/graphics/Rect;-><init>()V
 
-    iput-object v0, p0, Lcom/android/settings/ActivityPicker$IconResizer;->mOldBounds:Landroid/graphics/Rect;
+    iput-object v0, p0, Lcom/android/settings_ext/ActivityPicker$IconResizer;->mOldBounds:Landroid/graphics/Rect;
 
     .line 330
     new-instance v0, Landroid/graphics/Canvas;
 
     invoke-direct {v0}, Landroid/graphics/Canvas;-><init>()V
 
-    iput-object v0, p0, Lcom/android/settings/ActivityPicker$IconResizer;->mCanvas:Landroid/graphics/Canvas;
+    iput-object v0, p0, Lcom/android/settings_ext/ActivityPicker$IconResizer;->mCanvas:Landroid/graphics/Canvas;
 
     .line 333
-    iget-object v0, p0, Lcom/android/settings/ActivityPicker$IconResizer;->mCanvas:Landroid/graphics/Canvas;
+    iget-object v0, p0, Lcom/android/settings_ext/ActivityPicker$IconResizer;->mCanvas:Landroid/graphics/Canvas;
 
     new-instance v1, Landroid/graphics/PaintFlagsDrawFilter;
 
@@ -65,13 +65,13 @@
     invoke-virtual {v0, v1}, Landroid/graphics/Canvas;->setDrawFilter(Landroid/graphics/DrawFilter;)V
 
     .line 336
-    iput-object p3, p0, Lcom/android/settings/ActivityPicker$IconResizer;->mMetrics:Landroid/util/DisplayMetrics;
+    iput-object p3, p0, Lcom/android/settings_ext/ActivityPicker$IconResizer;->mMetrics:Landroid/util/DisplayMetrics;
 
     .line 337
-    iput p1, p0, Lcom/android/settings/ActivityPicker$IconResizer;->mIconWidth:I
+    iput p1, p0, Lcom/android/settings_ext/ActivityPicker$IconResizer;->mIconWidth:I
 
     .line 338
-    iput p2, p0, Lcom/android/settings/ActivityPicker$IconResizer;->mIconHeight:I
+    iput p2, p0, Lcom/android/settings_ext/ActivityPicker$IconResizer;->mIconHeight:I
 
     .line 339
     return-void
@@ -87,7 +87,7 @@
     .line 354
     move-object/from16 v0, p0
 
-    iget v0, v0, Lcom/android/settings/ActivityPicker$IconResizer;->mIconWidth:I
+    iget v0, v0, Lcom/android/settings_ext/ActivityPicker$IconResizer;->mIconWidth:I
 
     move/from16 v17, v0
 
@@ -95,20 +95,20 @@
     .local v17, "width":I
     move-object/from16 v0, p0
 
-    iget v9, v0, Lcom/android/settings/ActivityPicker$IconResizer;->mIconHeight:I
+    iget v9, v0, Lcom/android/settings_ext/ActivityPicker$IconResizer;->mIconHeight:I
 
     .line 357
     .local v9, "height":I
     if-nez p1, :cond_0
 
     .line 358
-    new-instance v20, Lcom/android/settings/ActivityPicker$EmptyDrawable;
+    new-instance v20, Lcom/android/settings_ext/ActivityPicker$EmptyDrawable;
 
     move-object/from16 v0, v20
 
     move/from16 v1, v17
 
-    invoke-direct {v0, v1, v9}, Lcom/android/settings/ActivityPicker$EmptyDrawable;-><init>(II)V
+    invoke-direct {v0, v1, v9}, Lcom/android/settings_ext/ActivityPicker$EmptyDrawable;-><init>(II)V
 
     .line 429
     :goto_0
@@ -219,13 +219,13 @@
     :goto_3
     move-object/from16 v0, p0
 
-    iget v0, v0, Lcom/android/settings/ActivityPicker$IconResizer;->mIconWidth:I
+    iget v0, v0, Lcom/android/settings_ext/ActivityPicker$IconResizer;->mIconWidth:I
 
     move/from16 v20, v0
 
     move-object/from16 v0, p0
 
-    iget v0, v0, Lcom/android/settings/ActivityPicker$IconResizer;->mIconHeight:I
+    iget v0, v0, Lcom/android/settings_ext/ActivityPicker$IconResizer;->mIconHeight:I
 
     move/from16 v21, v0
 
@@ -241,7 +241,7 @@
     .local v16, "thumb":Landroid/graphics/Bitmap;
     move-object/from16 v0, p0
 
-    iget-object v8, v0, Lcom/android/settings/ActivityPicker$IconResizer;->mCanvas:Landroid/graphics/Canvas;
+    iget-object v8, v0, Lcom/android/settings_ext/ActivityPicker$IconResizer;->mCanvas:Landroid/graphics/Canvas;
 
     .line 391
     .local v8, "canvas":Landroid/graphics/Canvas;
@@ -252,7 +252,7 @@
     .line 397
     move-object/from16 v0, p0
 
-    iget-object v0, v0, Lcom/android/settings/ActivityPicker$IconResizer;->mOldBounds:Landroid/graphics/Rect;
+    iget-object v0, v0, Lcom/android/settings_ext/ActivityPicker$IconResizer;->mOldBounds:Landroid/graphics/Rect;
 
     move-object/from16 v20, v0
 
@@ -265,7 +265,7 @@
     .line 398
     move-object/from16 v0, p0
 
-    iget v0, v0, Lcom/android/settings/ActivityPicker$IconResizer;->mIconWidth:I
+    iget v0, v0, Lcom/android/settings_ext/ActivityPicker$IconResizer;->mIconWidth:I
 
     move/from16 v20, v0
 
@@ -277,7 +277,7 @@
     .local v18, "x":I
     move-object/from16 v0, p0
 
-    iget v0, v0, Lcom/android/settings/ActivityPicker$IconResizer;->mIconHeight:I
+    iget v0, v0, Lcom/android/settings_ext/ActivityPicker$IconResizer;->mIconHeight:I
 
     move/from16 v20, v0
 
@@ -311,7 +311,7 @@
     .line 402
     move-object/from16 v0, p0
 
-    iget-object v0, v0, Lcom/android/settings/ActivityPicker$IconResizer;->mOldBounds:Landroid/graphics/Rect;
+    iget-object v0, v0, Lcom/android/settings_ext/ActivityPicker$IconResizer;->mOldBounds:Landroid/graphics/Rect;
 
     move-object/from16 v20, v0
 
@@ -342,7 +342,7 @@
 
     move-object/from16 v0, p0
 
-    iget-object v0, v0, Lcom/android/settings/ActivityPicker$IconResizer;->mMetrics:Landroid/util/DisplayMetrics;
+    iget-object v0, v0, Lcom/android/settings_ext/ActivityPicker$IconResizer;->mMetrics:Landroid/util/DisplayMetrics;
 
     move-object/from16 v21, v0
 
@@ -411,7 +411,7 @@
     .line 371
     move-object/from16 v0, p0
 
-    iget-object v0, v0, Lcom/android/settings/ActivityPicker$IconResizer;->mMetrics:Landroid/util/DisplayMetrics;
+    iget-object v0, v0, Lcom/android/settings_ext/ActivityPicker$IconResizer;->mMetrics:Landroid/util/DisplayMetrics;
 
     move-object/from16 v20, v0
 
@@ -432,14 +432,14 @@
     .line 426
     .local v15, "t":Ljava/lang/Throwable;
     :goto_5
-    new-instance p1, Lcom/android/settings/ActivityPicker$EmptyDrawable;
+    new-instance p1, Lcom/android/settings_ext/ActivityPicker$EmptyDrawable;
 
     .end local p1    # "icon":Landroid/graphics/drawable/Drawable;
     move-object/from16 v0, p1
 
     move/from16 v1, v17
 
-    invoke-direct {v0, v1, v9}, Lcom/android/settings/ActivityPicker$EmptyDrawable;-><init>(II)V
+    invoke-direct {v0, v1, v9}, Lcom/android/settings_ext/ActivityPicker$EmptyDrawable;-><init>(II)V
 
     .restart local p1    # "icon":Landroid/graphics/drawable/Drawable;
     goto :goto_4
@@ -490,13 +490,13 @@
     .restart local v7    # "c":Landroid/graphics/Bitmap$Config;
     move-object/from16 v0, p0
 
-    iget v0, v0, Lcom/android/settings/ActivityPicker$IconResizer;->mIconWidth:I
+    iget v0, v0, Lcom/android/settings_ext/ActivityPicker$IconResizer;->mIconWidth:I
 
     move/from16 v20, v0
 
     move-object/from16 v0, p0
 
-    iget v0, v0, Lcom/android/settings/ActivityPicker$IconResizer;->mIconHeight:I
+    iget v0, v0, Lcom/android/settings_ext/ActivityPicker$IconResizer;->mIconHeight:I
 
     move/from16 v21, v0
 
@@ -512,7 +512,7 @@
     .restart local v16    # "thumb":Landroid/graphics/Bitmap;
     move-object/from16 v0, p0
 
-    iget-object v8, v0, Lcom/android/settings/ActivityPicker$IconResizer;->mCanvas:Landroid/graphics/Canvas;
+    iget-object v8, v0, Lcom/android/settings_ext/ActivityPicker$IconResizer;->mCanvas:Landroid/graphics/Canvas;
 
     .line 411
     .restart local v8    # "canvas":Landroid/graphics/Canvas;
@@ -523,7 +523,7 @@
     .line 412
     move-object/from16 v0, p0
 
-    iget-object v0, v0, Lcom/android/settings/ActivityPicker$IconResizer;->mOldBounds:Landroid/graphics/Rect;
+    iget-object v0, v0, Lcom/android/settings_ext/ActivityPicker$IconResizer;->mOldBounds:Landroid/graphics/Rect;
 
     move-object/from16 v20, v0
 
@@ -570,7 +570,7 @@
     .line 417
     move-object/from16 v0, p0
 
-    iget-object v0, v0, Lcom/android/settings/ActivityPicker$IconResizer;->mOldBounds:Landroid/graphics/Rect;
+    iget-object v0, v0, Lcom/android/settings_ext/ActivityPicker$IconResizer;->mOldBounds:Landroid/graphics/Rect;
 
     move-object/from16 v20, v0
 
@@ -601,7 +601,7 @@
 
     move-object/from16 v0, p0
 
-    iget-object v0, v0, Lcom/android/settings/ActivityPicker$IconResizer;->mMetrics:Landroid/util/DisplayMetrics;
+    iget-object v0, v0, Lcom/android/settings_ext/ActivityPicker$IconResizer;->mMetrics:Landroid/util/DisplayMetrics;
 
     move-object/from16 v21, v0
 

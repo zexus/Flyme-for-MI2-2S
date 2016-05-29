@@ -1,11 +1,11 @@
-.class Lcom/android/settings/UsageStatsActivity$AppViewHolder;
+.class Lcom/android/settings_ext/UsageStatsActivity$AppViewHolder;
 .super Ljava/lang/Object;
 .source "UsageStatsActivity.java"
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/android/settings/UsageStatsActivity;
+    value = Lcom/android/settings_ext/UsageStatsActivity;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;

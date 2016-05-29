@@ -1,11 +1,11 @@
-.class interface abstract Lcom/android/settings/inputmethod/SpellCheckerPreference$OnRadioButtonPreferenceListener;
+.class interface abstract Lcom/android/settings_ext/inputmethod/SpellCheckerPreference$OnRadioButtonPreferenceListener;
 .super Ljava/lang/Object;
 .source "SpellCheckerPreference.java"
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/android/settings/inputmethod/SpellCheckerPreference;
+    value = Lcom/android/settings_ext/inputmethod/SpellCheckerPreference;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -15,5 +15,5 @@
 
 
 # virtual methods
-.method public abstract onRadioButtonClicked(Lcom/android/settings/inputmethod/SpellCheckerPreference;)V
+.method public abstract onRadioButtonClicked(Lcom/android/settings_ext/inputmethod/SpellCheckerPreference;)V
 .end method

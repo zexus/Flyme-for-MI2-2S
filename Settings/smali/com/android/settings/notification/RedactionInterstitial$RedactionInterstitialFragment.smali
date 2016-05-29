@@ -1,5 +1,5 @@
-.class public Lcom/android/settings/notification/RedactionInterstitial$RedactionInterstitialFragment;
-.super Lcom/android/settings/SettingsPreferenceFragment;
+.class public Lcom/android/settings_ext/notification/RedactionInterstitial$RedactionInterstitialFragment;
+.super Lcom/android/settings_ext/SettingsPreferenceFragment;
 .source "RedactionInterstitial.java"
 
 # interfaces
@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/android/settings/notification/RedactionInterstitial;
+    value = Lcom/android/settings_ext/notification/RedactionInterstitial;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -31,7 +31,7 @@
 
     .prologue
     .line 54
-    invoke-direct {p0}, Lcom/android/settings/SettingsPreferenceFragment;-><init>()V
+    invoke-direct {p0}, Lcom/android/settings_ext/SettingsPreferenceFragment;-><init>()V
 
     return-void
 .end method
@@ -45,7 +45,7 @@
     const/4 v3, 0x0
 
     .line 82
-    invoke-virtual {p0}, Lcom/android/settings/notification/RedactionInterstitial$RedactionInterstitialFragment;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/settings_ext/notification/RedactionInterstitial$RedactionInterstitialFragment;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v4
 
@@ -62,7 +62,7 @@
     .line 84
     .local v0, "enabled":Z
     :goto_0
-    invoke-virtual {p0}, Lcom/android/settings/notification/RedactionInterstitial$RedactionInterstitialFragment;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/settings_ext/notification/RedactionInterstitial$RedactionInterstitialFragment;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v4
 
@@ -79,7 +79,7 @@
     .line 86
     .local v1, "show":Z
     :goto_1
-    iget-object v5, p0, Lcom/android/settings/notification/RedactionInterstitial$RedactionInterstitialFragment;->mShowAllButton:Landroid/widget/RadioButton;
+    iget-object v5, p0, Lcom/android/settings_ext/notification/RedactionInterstitial$RedactionInterstitialFragment;->mShowAllButton:Landroid/widget/RadioButton;
 
     if-eqz v0, :cond_2
 
@@ -91,7 +91,7 @@
     invoke-virtual {v5, v4}, Landroid/widget/RadioButton;->setChecked(Z)V
 
     .line 87
-    iget-object v5, p0, Lcom/android/settings/notification/RedactionInterstitial$RedactionInterstitialFragment;->mRedactSensitiveButton:Landroid/widget/RadioButton;
+    iget-object v5, p0, Lcom/android/settings_ext/notification/RedactionInterstitial$RedactionInterstitialFragment;->mRedactSensitiveButton:Landroid/widget/RadioButton;
 
     if-eqz v0, :cond_3
 
@@ -103,7 +103,7 @@
     invoke-virtual {v5, v4}, Landroid/widget/RadioButton;->setChecked(Z)V
 
     .line 88
-    iget-object v4, p0, Lcom/android/settings/notification/RedactionInterstitial$RedactionInterstitialFragment;->mHideAllButton:Landroid/widget/RadioButton;
+    iget-object v4, p0, Lcom/android/settings_ext/notification/RedactionInterstitial$RedactionInterstitialFragment;->mHideAllButton:Landroid/widget/RadioButton;
 
     if-nez v0, :cond_4
 
@@ -160,7 +160,7 @@
     const/4 v3, 0x0
 
     .line 93
-    iget-object v4, p0, Lcom/android/settings/notification/RedactionInterstitial$RedactionInterstitialFragment;->mShowAllButton:Landroid/widget/RadioButton;
+    iget-object v4, p0, Lcom/android/settings_ext/notification/RedactionInterstitial$RedactionInterstitialFragment;->mShowAllButton:Landroid/widget/RadioButton;
 
     if-ne p1, v4, :cond_0
 
@@ -169,7 +169,7 @@
     .line 94
     .local v1, "show":Z
     :goto_0
-    iget-object v4, p0, Lcom/android/settings/notification/RedactionInterstitial$RedactionInterstitialFragment;->mHideAllButton:Landroid/widget/RadioButton;
+    iget-object v4, p0, Lcom/android/settings_ext/notification/RedactionInterstitial$RedactionInterstitialFragment;->mHideAllButton:Landroid/widget/RadioButton;
 
     if-eq p1, v4, :cond_1
 
@@ -178,7 +178,7 @@
     .line 96
     .local v0, "enabled":Z
     :goto_1
-    invoke-virtual {p0}, Lcom/android/settings/notification/RedactionInterstitial$RedactionInterstitialFragment;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/settings_ext/notification/RedactionInterstitial$RedactionInterstitialFragment;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v5
 
@@ -192,7 +192,7 @@
     invoke-static {v5, v6, v4}, Landroid/provider/Settings$Secure;->putInt(Landroid/content/ContentResolver;Ljava/lang/String;I)Z
 
     .line 98
-    invoke-virtual {p0}, Lcom/android/settings/notification/RedactionInterstitial$RedactionInterstitialFragment;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/settings_ext/notification/RedactionInterstitial$RedactionInterstitialFragment;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v4
 
@@ -261,7 +261,7 @@
 
     check-cast v1, Landroid/widget/RadioButton;
 
-    iput-object v1, p0, Lcom/android/settings/notification/RedactionInterstitial$RedactionInterstitialFragment;->mShowAllButton:Landroid/widget/RadioButton;
+    iput-object v1, p0, Lcom/android/settings_ext/notification/RedactionInterstitial$RedactionInterstitialFragment;->mShowAllButton:Landroid/widget/RadioButton;
 
     .line 66
     const v1, 0x7f0f016d
@@ -272,7 +272,7 @@
 
     check-cast v1, Landroid/widget/RadioButton;
 
-    iput-object v1, p0, Lcom/android/settings/notification/RedactionInterstitial$RedactionInterstitialFragment;->mRedactSensitiveButton:Landroid/widget/RadioButton;
+    iput-object v1, p0, Lcom/android/settings_ext/notification/RedactionInterstitial$RedactionInterstitialFragment;->mRedactSensitiveButton:Landroid/widget/RadioButton;
 
     .line 67
     const v1, 0x7f0f016f
@@ -283,20 +283,20 @@
 
     check-cast v1, Landroid/widget/RadioButton;
 
-    iput-object v1, p0, Lcom/android/settings/notification/RedactionInterstitial$RedactionInterstitialFragment;->mHideAllButton:Landroid/widget/RadioButton;
+    iput-object v1, p0, Lcom/android/settings_ext/notification/RedactionInterstitial$RedactionInterstitialFragment;->mHideAllButton:Landroid/widget/RadioButton;
 
     .line 69
-    iget-object v1, p0, Lcom/android/settings/notification/RedactionInterstitial$RedactionInterstitialFragment;->mShowAllButton:Landroid/widget/RadioButton;
+    iget-object v1, p0, Lcom/android/settings_ext/notification/RedactionInterstitial$RedactionInterstitialFragment;->mShowAllButton:Landroid/widget/RadioButton;
 
     invoke-virtual {v1, p0}, Landroid/widget/RadioButton;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     .line 70
-    iget-object v1, p0, Lcom/android/settings/notification/RedactionInterstitial$RedactionInterstitialFragment;->mRedactSensitiveButton:Landroid/widget/RadioButton;
+    iget-object v1, p0, Lcom/android/settings_ext/notification/RedactionInterstitial$RedactionInterstitialFragment;->mRedactSensitiveButton:Landroid/widget/RadioButton;
 
     invoke-virtual {v1, p0}, Landroid/widget/RadioButton;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     .line 71
-    iget-object v1, p0, Lcom/android/settings/notification/RedactionInterstitial$RedactionInterstitialFragment;->mHideAllButton:Landroid/widget/RadioButton;
+    iget-object v1, p0, Lcom/android/settings_ext/notification/RedactionInterstitial$RedactionInterstitialFragment;->mHideAllButton:Landroid/widget/RadioButton;
 
     invoke-virtual {v1, p0}, Landroid/widget/RadioButton;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
@@ -309,10 +309,10 @@
 
     .prologue
     .line 77
-    invoke-super {p0}, Lcom/android/settings/SettingsPreferenceFragment;->onResume()V
+    invoke-super {p0}, Lcom/android/settings_ext/SettingsPreferenceFragment;->onResume()V
 
     .line 78
-    invoke-direct {p0}, Lcom/android/settings/notification/RedactionInterstitial$RedactionInterstitialFragment;->loadFromSettings()V
+    invoke-direct {p0}, Lcom/android/settings_ext/notification/RedactionInterstitial$RedactionInterstitialFragment;->loadFromSettings()V
 
     .line 79
     return-void

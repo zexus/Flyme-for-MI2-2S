@@ -1,4 +1,4 @@
-.class Lcom/android/settings/location/LocationSettings$1;
+.class Lcom/android/settings_ext/location/LocationSettings$1;
 .super Ljava/lang/Object;
 .source "LocationSettings.java"
 
@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/android/settings/location/LocationSettings;->addPreferencesSorted(Ljava/util/List;Landroid/preference/PreferenceGroup;)V
+    value = Lcom/android/settings_ext/location/LocationSettings;->addPreferencesSorted(Ljava/util/List;Landroid/preference/PreferenceGroup;)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -28,16 +28,16 @@
 
 
 # instance fields
-.field final synthetic this$0:Lcom/android/settings/location/LocationSettings;
+.field final synthetic this$0:Lcom/android/settings_ext/location/LocationSettings;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/location/LocationSettings;)V
+.method constructor <init>(Lcom/android/settings_ext/location/LocationSettings;)V
     .locals 0
 
     .prologue
     .line 131
-    iput-object p1, p0, Lcom/android/settings/location/LocationSettings$1;->this$0:Lcom/android/settings/location/LocationSettings;
+    iput-object p1, p0, Lcom/android/settings_ext/location/LocationSettings$1;->this$0:Lcom/android/settings_ext/location/LocationSettings;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -89,7 +89,7 @@
     check-cast p2, Landroid/preference/Preference;
 
     .end local p2    # "x1":Ljava/lang/Object;
-    invoke-virtual {p0, p1, p2}, Lcom/android/settings/location/LocationSettings$1;->compare(Landroid/preference/Preference;Landroid/preference/Preference;)I
+    invoke-virtual {p0, p1, p2}, Lcom/android/settings_ext/location/LocationSettings$1;->compare(Landroid/preference/Preference;Landroid/preference/Preference;)I
 
     move-result v0
 

@@ -1,11 +1,11 @@
-.class public interface abstract Lcom/android/settings/tts/TtsEnginePreference$RadioButtonGroupState;
+.class public interface abstract Lcom/android/settings_ext/tts/TtsEnginePreference$RadioButtonGroupState;
 .super Ljava/lang/Object;
 .source "TtsEnginePreference.java"
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/android/settings/tts/TtsEnginePreference;
+    value = Lcom/android/settings_ext/tts/TtsEnginePreference;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;

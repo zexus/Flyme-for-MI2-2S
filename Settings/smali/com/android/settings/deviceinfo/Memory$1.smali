@@ -1,11 +1,11 @@
-.class Lcom/android/settings/deviceinfo/Memory$1;
+.class Lcom/android/settings_ext/deviceinfo/Memory$1;
 .super Landroid/os/storage/StorageEventListener;
 .source "Memory.java"
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/android/settings/deviceinfo/Memory;
+    value = Lcom/android/settings_ext/deviceinfo/Memory;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -15,16 +15,16 @@
 
 
 # instance fields
-.field final synthetic this$0:Lcom/android/settings/deviceinfo/Memory;
+.field final synthetic this$0:Lcom/android/settings_ext/deviceinfo/Memory;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/deviceinfo/Memory;)V
+.method constructor <init>(Lcom/android/settings_ext/deviceinfo/Memory;)V
     .locals 0
 
     .prologue
     .line 167
-    iput-object p1, p0, Lcom/android/settings/deviceinfo/Memory$1;->this$0:Lcom/android/settings/deviceinfo/Memory;
+    iput-object p1, p0, Lcom/android/settings_ext/deviceinfo/Memory$1;->this$0:Lcom/android/settings_ext/deviceinfo/Memory;
 
     invoke-direct {p0}, Landroid/os/storage/StorageEventListener;-><init>()V
 
@@ -84,10 +84,10 @@
     invoke-static {v3, v4}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
 
     .line 172
-    iget-object v3, p0, Lcom/android/settings/deviceinfo/Memory$1;->this$0:Lcom/android/settings/deviceinfo/Memory;
+    iget-object v3, p0, Lcom/android/settings_ext/deviceinfo/Memory$1;->this$0:Lcom/android/settings_ext/deviceinfo/Memory;
 
-    # getter for: Lcom/android/settings/deviceinfo/Memory;->mCategories:Ljava/util/ArrayList;
-    invoke-static {v3}, Lcom/android/settings/deviceinfo/Memory;->access$000(Lcom/android/settings/deviceinfo/Memory;)Ljava/util/ArrayList;
+    # getter for: Lcom/android/settings_ext/deviceinfo/Memory;->mCategories:Ljava/util/ArrayList;
+    invoke-static {v3}, Lcom/android/settings_ext/deviceinfo/Memory;->access$000(Lcom/android/settings_ext/deviceinfo/Memory;)Ljava/util/ArrayList;
 
     move-result-object v3
 
@@ -107,11 +107,11 @@
 
     move-result-object v0
 
-    check-cast v0, Lcom/android/settings/deviceinfo/StorageVolumePreferenceCategory;
+    check-cast v0, Lcom/android/settings_ext/deviceinfo/StorageVolumePreferenceCategory;
 
     .line 173
-    .local v0, "category":Lcom/android/settings/deviceinfo/StorageVolumePreferenceCategory;
-    invoke-virtual {v0}, Lcom/android/settings/deviceinfo/StorageVolumePreferenceCategory;->getStorageVolume()Landroid/os/storage/StorageVolume;
+    .local v0, "category":Lcom/android/settings_ext/deviceinfo/StorageVolumePreferenceCategory;
+    invoke-virtual {v0}, Lcom/android/settings_ext/deviceinfo/StorageVolumePreferenceCategory;->getStorageVolume()Landroid/os/storage/StorageVolume;
 
     move-result-object v2
 
@@ -130,10 +130,10 @@
     if-eqz v3, :cond_0
 
     .line 175
-    invoke-virtual {v0}, Lcom/android/settings/deviceinfo/StorageVolumePreferenceCategory;->onStorageStateChanged()V
+    invoke-virtual {v0}, Lcom/android/settings_ext/deviceinfo/StorageVolumePreferenceCategory;->onStorageStateChanged()V
 
     .line 179
-    .end local v0    # "category":Lcom/android/settings/deviceinfo/StorageVolumePreferenceCategory;
+    .end local v0    # "category":Lcom/android/settings_ext/deviceinfo/StorageVolumePreferenceCategory;
     .end local v2    # "volume":Landroid/os/storage/StorageVolume;
     :cond_1
     return-void

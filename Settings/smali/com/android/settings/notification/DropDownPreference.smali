@@ -1,4 +1,4 @@
-.class public Lcom/android/settings/notification/DropDownPreference;
+.class public Lcom/android/settings_ext/notification/DropDownPreference;
 .super Landroid/preference/Preference;
 .source "DropDownPreference.java"
 
@@ -6,7 +6,7 @@
 # annotations
 .annotation system Ldalvik/annotation/MemberClasses;
     value = {
-        Lcom/android/settings/notification/DropDownPreference$Callback;
+        Lcom/android/settings_ext/notification/DropDownPreference$Callback;
     }
 .end annotation
 
@@ -23,7 +23,7 @@
     .end annotation
 .end field
 
-.field private mCallback:Lcom/android/settings/notification/DropDownPreference$Callback;
+.field private mCallback:Lcom/android/settings_ext/notification/DropDownPreference$Callback;
 
 .field private final mContext:Landroid/content/Context;
 
@@ -50,7 +50,7 @@
     .line 40
     const/4 v0, 0x0
 
-    invoke-direct {p0, p1, v0}, Lcom/android/settings/notification/DropDownPreference;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
+    invoke-direct {p0, p1, v0}, Lcom/android/settings_ext/notification/DropDownPreference;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
     .line 41
     return-void
@@ -70,77 +70,77 @@
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
-    iput-object v0, p0, Lcom/android/settings/notification/DropDownPreference;->mValues:Ljava/util/ArrayList;
+    iput-object v0, p0, Lcom/android/settings_ext/notification/DropDownPreference;->mValues:Ljava/util/ArrayList;
 
     .line 45
-    iput-object p1, p0, Lcom/android/settings/notification/DropDownPreference;->mContext:Landroid/content/Context;
+    iput-object p1, p0, Lcom/android/settings_ext/notification/DropDownPreference;->mContext:Landroid/content/Context;
 
     .line 46
     new-instance v0, Landroid/widget/ArrayAdapter;
 
-    iget-object v1, p0, Lcom/android/settings/notification/DropDownPreference;->mContext:Landroid/content/Context;
+    iget-object v1, p0, Lcom/android/settings_ext/notification/DropDownPreference;->mContext:Landroid/content/Context;
 
     const v2, 0x1090009
 
     invoke-direct {v0, v1, v2}, Landroid/widget/ArrayAdapter;-><init>(Landroid/content/Context;I)V
 
-    iput-object v0, p0, Lcom/android/settings/notification/DropDownPreference;->mAdapter:Landroid/widget/ArrayAdapter;
+    iput-object v0, p0, Lcom/android/settings_ext/notification/DropDownPreference;->mAdapter:Landroid/widget/ArrayAdapter;
 
     .line 49
     new-instance v0, Landroid/widget/Spinner;
 
-    iget-object v1, p0, Lcom/android/settings/notification/DropDownPreference;->mContext:Landroid/content/Context;
+    iget-object v1, p0, Lcom/android/settings_ext/notification/DropDownPreference;->mContext:Landroid/content/Context;
 
     invoke-direct {v0, v1}, Landroid/widget/Spinner;-><init>(Landroid/content/Context;)V
 
-    iput-object v0, p0, Lcom/android/settings/notification/DropDownPreference;->mSpinner:Landroid/widget/Spinner;
+    iput-object v0, p0, Lcom/android/settings_ext/notification/DropDownPreference;->mSpinner:Landroid/widget/Spinner;
 
     .line 51
-    iget-object v0, p0, Lcom/android/settings/notification/DropDownPreference;->mSpinner:Landroid/widget/Spinner;
+    iget-object v0, p0, Lcom/android/settings_ext/notification/DropDownPreference;->mSpinner:Landroid/widget/Spinner;
 
     const/4 v1, 0x4
 
     invoke-virtual {v0, v1}, Landroid/widget/Spinner;->setVisibility(I)V
 
     .line 52
-    iget-object v0, p0, Lcom/android/settings/notification/DropDownPreference;->mSpinner:Landroid/widget/Spinner;
+    iget-object v0, p0, Lcom/android/settings_ext/notification/DropDownPreference;->mSpinner:Landroid/widget/Spinner;
 
-    iget-object v1, p0, Lcom/android/settings/notification/DropDownPreference;->mAdapter:Landroid/widget/ArrayAdapter;
+    iget-object v1, p0, Lcom/android/settings_ext/notification/DropDownPreference;->mAdapter:Landroid/widget/ArrayAdapter;
 
     invoke-virtual {v0, v1}, Landroid/widget/Spinner;->setAdapter(Landroid/widget/SpinnerAdapter;)V
 
     .line 53
-    iget-object v0, p0, Lcom/android/settings/notification/DropDownPreference;->mSpinner:Landroid/widget/Spinner;
+    iget-object v0, p0, Lcom/android/settings_ext/notification/DropDownPreference;->mSpinner:Landroid/widget/Spinner;
 
-    new-instance v1, Lcom/android/settings/notification/DropDownPreference$1;
+    new-instance v1, Lcom/android/settings_ext/notification/DropDownPreference$1;
 
-    invoke-direct {v1, p0}, Lcom/android/settings/notification/DropDownPreference$1;-><init>(Lcom/android/settings/notification/DropDownPreference;)V
+    invoke-direct {v1, p0}, Lcom/android/settings_ext/notification/DropDownPreference$1;-><init>(Lcom/android/settings_ext/notification/DropDownPreference;)V
 
     invoke-virtual {v0, v1}, Landroid/widget/Spinner;->setOnItemSelectedListener(Landroid/widget/AdapterView$OnItemSelectedListener;)V
 
     .line 64
     const/4 v0, 0x0
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/notification/DropDownPreference;->setPersistent(Z)V
+    invoke-virtual {p0, v0}, Lcom/android/settings_ext/notification/DropDownPreference;->setPersistent(Z)V
 
     .line 65
-    new-instance v0, Lcom/android/settings/notification/DropDownPreference$2;
+    new-instance v0, Lcom/android/settings_ext/notification/DropDownPreference$2;
 
-    invoke-direct {v0, p0}, Lcom/android/settings/notification/DropDownPreference$2;-><init>(Lcom/android/settings/notification/DropDownPreference;)V
+    invoke-direct {v0, p0}, Lcom/android/settings_ext/notification/DropDownPreference$2;-><init>(Lcom/android/settings_ext/notification/DropDownPreference;)V
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/notification/DropDownPreference;->setOnPreferenceClickListener(Landroid/preference/Preference$OnPreferenceClickListener;)V
+    invoke-virtual {p0, v0}, Lcom/android/settings_ext/notification/DropDownPreference;->setOnPreferenceClickListener(Landroid/preference/Preference$OnPreferenceClickListener;)V
 
     .line 72
     return-void
 .end method
 
-.method static synthetic access$000(Lcom/android/settings/notification/DropDownPreference;)Landroid/widget/Spinner;
+.method static synthetic access$000(Lcom/android/settings_ext/notification/DropDownPreference;)Landroid/widget/Spinner;
     .locals 1
-    .param p0, "x0"    # Lcom/android/settings/notification/DropDownPreference;
+    .param p0, "x0"    # Lcom/android/settings_ext/notification/DropDownPreference;
 
     .prologue
     .line 31
-    iget-object v0, p0, Lcom/android/settings/notification/DropDownPreference;->mSpinner:Landroid/widget/Spinner;
+    iget-object v0, p0, Lcom/android/settings_ext/notification/DropDownPreference;->mSpinner:Landroid/widget/Spinner;
 
     return-object v0
 .end method
@@ -154,7 +154,7 @@
 
     .prologue
     .line 113
-    iget-object v0, p0, Lcom/android/settings/notification/DropDownPreference;->mContext:Landroid/content/Context;
+    iget-object v0, p0, Lcom/android/settings_ext/notification/DropDownPreference;->mContext:Landroid/content/Context;
 
     invoke-virtual {v0}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
 
@@ -164,7 +164,7 @@
 
     move-result-object v0
 
-    invoke-virtual {p0, v0, p2}, Lcom/android/settings/notification/DropDownPreference;->addItem(Ljava/lang/String;Ljava/lang/Object;)V
+    invoke-virtual {p0, v0, p2}, Lcom/android/settings_ext/notification/DropDownPreference;->addItem(Ljava/lang/String;Ljava/lang/Object;)V
 
     .line 114
     return-void
@@ -177,12 +177,12 @@
 
     .prologue
     .line 117
-    iget-object v0, p0, Lcom/android/settings/notification/DropDownPreference;->mAdapter:Landroid/widget/ArrayAdapter;
+    iget-object v0, p0, Lcom/android/settings_ext/notification/DropDownPreference;->mAdapter:Landroid/widget/ArrayAdapter;
 
     invoke-virtual {v0, p1}, Landroid/widget/ArrayAdapter;->add(Ljava/lang/Object;)V
 
     .line 118
-    iget-object v0, p0, Lcom/android/settings/notification/DropDownPreference;->mValues:Ljava/util/ArrayList;
+    iget-object v0, p0, Lcom/android/settings_ext/notification/DropDownPreference;->mValues:Ljava/util/ArrayList;
 
     invoke-virtual {v0, p2}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
@@ -195,12 +195,12 @@
 
     .prologue
     .line 122
-    iget-object v0, p0, Lcom/android/settings/notification/DropDownPreference;->mAdapter:Landroid/widget/ArrayAdapter;
+    iget-object v0, p0, Lcom/android/settings_ext/notification/DropDownPreference;->mAdapter:Landroid/widget/ArrayAdapter;
 
     invoke-virtual {v0}, Landroid/widget/ArrayAdapter;->clear()V
 
     .line 123
-    iget-object v0, p0, Lcom/android/settings/notification/DropDownPreference;->mValues:Ljava/util/ArrayList;
+    iget-object v0, p0, Lcom/android/settings_ext/notification/DropDownPreference;->mValues:Ljava/util/ArrayList;
 
     invoke-virtual {v0}, Ljava/util/ArrayList;->clear()V
 
@@ -219,7 +219,7 @@
     invoke-super {p0, p1}, Landroid/preference/Preference;->onBindView(Landroid/view/View;)V
 
     .line 129
-    iget-object v2, p0, Lcom/android/settings/notification/DropDownPreference;->mSpinner:Landroid/widget/Spinner;
+    iget-object v2, p0, Lcom/android/settings_ext/notification/DropDownPreference;->mSpinner:Landroid/widget/Spinner;
 
     invoke-virtual {v2}, Landroid/widget/Spinner;->getParent()Landroid/view/ViewParent;
 
@@ -237,7 +237,7 @@
 
     .line 130
     :cond_0
-    iget-object v2, p0, Lcom/android/settings/notification/DropDownPreference;->mSpinner:Landroid/widget/Spinner;
+    iget-object v2, p0, Lcom/android/settings_ext/notification/DropDownPreference;->mSpinner:Landroid/widget/Spinner;
 
     invoke-virtual {v2}, Landroid/widget/Spinner;->getParent()Landroid/view/ViewParent;
 
@@ -246,7 +246,7 @@
     if-eqz v2, :cond_1
 
     .line 131
-    iget-object v2, p0, Lcom/android/settings/notification/DropDownPreference;->mSpinner:Landroid/widget/Spinner;
+    iget-object v2, p0, Lcom/android/settings_ext/notification/DropDownPreference;->mSpinner:Landroid/widget/Spinner;
 
     invoke-virtual {v2}, Landroid/widget/Spinner;->getParent()Landroid/view/ViewParent;
 
@@ -254,7 +254,7 @@
 
     check-cast v2, Landroid/view/ViewGroup;
 
-    iget-object v3, p0, Lcom/android/settings/notification/DropDownPreference;->mSpinner:Landroid/widget/Spinner;
+    iget-object v3, p0, Lcom/android/settings_ext/notification/DropDownPreference;->mSpinner:Landroid/widget/Spinner;
 
     invoke-virtual {v2, v3}, Landroid/view/ViewGroup;->removeView(Landroid/view/View;)V
 
@@ -266,12 +266,12 @@
 
     .line 134
     .local v1, "vg":Landroid/view/ViewGroup;
-    iget-object v2, p0, Lcom/android/settings/notification/DropDownPreference;->mSpinner:Landroid/widget/Spinner;
+    iget-object v2, p0, Lcom/android/settings_ext/notification/DropDownPreference;->mSpinner:Landroid/widget/Spinner;
 
     invoke-virtual {v1, v2, v4}, Landroid/view/ViewGroup;->addView(Landroid/view/View;I)V
 
     .line 135
-    iget-object v2, p0, Lcom/android/settings/notification/DropDownPreference;->mSpinner:Landroid/widget/Spinner;
+    iget-object v2, p0, Lcom/android/settings_ext/notification/DropDownPreference;->mSpinner:Landroid/widget/Spinner;
 
     invoke-virtual {v2}, Landroid/widget/Spinner;->getLayoutParams()Landroid/view/ViewGroup$LayoutParams;
 
@@ -282,20 +282,20 @@
     iput v4, v0, Landroid/view/ViewGroup$LayoutParams;->width:I
 
     .line 137
-    iget-object v2, p0, Lcom/android/settings/notification/DropDownPreference;->mSpinner:Landroid/widget/Spinner;
+    iget-object v2, p0, Lcom/android/settings_ext/notification/DropDownPreference;->mSpinner:Landroid/widget/Spinner;
 
     invoke-virtual {v2, v0}, Landroid/widget/Spinner;->setLayoutParams(Landroid/view/ViewGroup$LayoutParams;)V
 
     goto :goto_0
 .end method
 
-.method public setCallback(Lcom/android/settings/notification/DropDownPreference$Callback;)V
+.method public setCallback(Lcom/android/settings_ext/notification/DropDownPreference$Callback;)V
     .locals 0
-    .param p1, "callback"    # Lcom/android/settings/notification/DropDownPreference$Callback;
+    .param p1, "callback"    # Lcom/android/settings_ext/notification/DropDownPreference$Callback;
 
     .prologue
     .line 79
-    iput-object p1, p0, Lcom/android/settings/notification/DropDownPreference;->mCallback:Lcom/android/settings/notification/DropDownPreference$Callback;
+    iput-object p1, p0, Lcom/android/settings_ext/notification/DropDownPreference;->mCallback:Lcom/android/settings_ext/notification/DropDownPreference$Callback;
 
     .line 80
     return-void
@@ -309,7 +309,7 @@
     .line 83
     const/4 v0, 0x1
 
-    invoke-virtual {p0, p1, v0}, Lcom/android/settings/notification/DropDownPreference;->setSelectedItem(IZ)V
+    invoke-virtual {p0, p1, v0}, Lcom/android/settings_ext/notification/DropDownPreference;->setSelectedItem(IZ)V
 
     .line 84
     return-void
@@ -322,7 +322,7 @@
 
     .prologue
     .line 87
-    iget-object v2, p0, Lcom/android/settings/notification/DropDownPreference;->mValues:Ljava/util/ArrayList;
+    iget-object v2, p0, Lcom/android/settings_ext/notification/DropDownPreference;->mValues:Ljava/util/ArrayList;
 
     invoke-virtual {v2, p1}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
 
@@ -332,13 +332,13 @@
     .local v1, "value":Ljava/lang/Object;
     if-eqz p2, :cond_0
 
-    iget-object v2, p0, Lcom/android/settings/notification/DropDownPreference;->mCallback:Lcom/android/settings/notification/DropDownPreference$Callback;
+    iget-object v2, p0, Lcom/android/settings_ext/notification/DropDownPreference;->mCallback:Lcom/android/settings_ext/notification/DropDownPreference$Callback;
 
     if-eqz v2, :cond_0
 
-    iget-object v2, p0, Lcom/android/settings/notification/DropDownPreference;->mCallback:Lcom/android/settings/notification/DropDownPreference$Callback;
+    iget-object v2, p0, Lcom/android/settings_ext/notification/DropDownPreference;->mCallback:Lcom/android/settings_ext/notification/DropDownPreference$Callback;
 
-    invoke-interface {v2, p1, v1}, Lcom/android/settings/notification/DropDownPreference$Callback;->onItemSelected(ILjava/lang/Object;)Z
+    invoke-interface {v2, p1, v1}, Lcom/android/settings_ext/notification/DropDownPreference$Callback;->onItemSelected(ILjava/lang/Object;)Z
 
     move-result v2
 
@@ -350,12 +350,12 @@
 
     .line 91
     :cond_0
-    iget-object v2, p0, Lcom/android/settings/notification/DropDownPreference;->mSpinner:Landroid/widget/Spinner;
+    iget-object v2, p0, Lcom/android/settings_ext/notification/DropDownPreference;->mSpinner:Landroid/widget/Spinner;
 
     invoke-virtual {v2, p1}, Landroid/widget/Spinner;->setSelection(I)V
 
     .line 92
-    iget-object v2, p0, Lcom/android/settings/notification/DropDownPreference;->mAdapter:Landroid/widget/ArrayAdapter;
+    iget-object v2, p0, Lcom/android/settings_ext/notification/DropDownPreference;->mAdapter:Landroid/widget/ArrayAdapter;
 
     invoke-virtual {v2, p1}, Landroid/widget/ArrayAdapter;->getItem(I)Ljava/lang/Object;
 
@@ -363,7 +363,7 @@
 
     check-cast v2, Ljava/lang/CharSequence;
 
-    invoke-virtual {p0, v2}, Lcom/android/settings/notification/DropDownPreference;->setSummary(Ljava/lang/CharSequence;)V
+    invoke-virtual {p0, v2}, Lcom/android/settings_ext/notification/DropDownPreference;->setSummary(Ljava/lang/CharSequence;)V
 
     .line 93
     if-nez v1, :cond_1
@@ -373,7 +373,7 @@
     .line 94
     .local v0, "disableDependents":Z
     :goto_1
-    invoke-virtual {p0, v0}, Lcom/android/settings/notification/DropDownPreference;->notifyDependencyChange(Z)V
+    invoke-virtual {p0, v0}, Lcom/android/settings_ext/notification/DropDownPreference;->notifyDependencyChange(Z)V
 
     goto :goto_0
 
@@ -391,7 +391,7 @@
 
     .prologue
     .line 106
-    iget-object v1, p0, Lcom/android/settings/notification/DropDownPreference;->mValues:Ljava/util/ArrayList;
+    iget-object v1, p0, Lcom/android/settings_ext/notification/DropDownPreference;->mValues:Ljava/util/ArrayList;
 
     invoke-virtual {v1, p1}, Ljava/util/ArrayList;->indexOf(Ljava/lang/Object;)I
 
@@ -404,7 +404,7 @@
     if-le v0, v1, :cond_0
 
     .line 108
-    invoke-virtual {p0, v0}, Lcom/android/settings/notification/DropDownPreference;->setSelectedItem(I)V
+    invoke-virtual {p0, v0}, Lcom/android/settings_ext/notification/DropDownPreference;->setSelectedItem(I)V
 
     .line 110
     :cond_0
@@ -418,7 +418,7 @@
 
     .prologue
     .line 98
-    iget-object v1, p0, Lcom/android/settings/notification/DropDownPreference;->mValues:Ljava/util/ArrayList;
+    iget-object v1, p0, Lcom/android/settings_ext/notification/DropDownPreference;->mValues:Ljava/util/ArrayList;
 
     invoke-virtual {v1, p1}, Ljava/util/ArrayList;->indexOf(Ljava/lang/Object;)I
 
@@ -431,7 +431,7 @@
     if-le v0, v1, :cond_0
 
     .line 100
-    invoke-virtual {p0, v0, p2}, Lcom/android/settings/notification/DropDownPreference;->setSelectedItem(IZ)V
+    invoke-virtual {p0, v0, p2}, Lcom/android/settings_ext/notification/DropDownPreference;->setSelectedItem(IZ)V
 
     .line 102
     :cond_0

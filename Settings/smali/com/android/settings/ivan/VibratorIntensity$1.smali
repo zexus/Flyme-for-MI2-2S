@@ -1,14 +1,14 @@
-.class final Lcom/android/settings/ivan/VibratorIntensity$1;
+.class final Lcom/android/settings_ext/ivan/VibratorIntensity$1;
 .super Ljava/lang/Object;
 .source "VibratorIntensity.java"
 
 # interfaces
-.implements Lcom/android/settings/ivan/HWValueSliderPreference$HardwareInterface;
+.implements Lcom/android/settings_ext/ivan/HWValueSliderPreference$HardwareInterface;
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/android/settings/ivan/VibratorIntensity;
+    value = Lcom/android/settings_ext/ivan/VibratorIntensity;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -35,7 +35,7 @@
 
     .prologue
     .line 39
-    invoke-static {}, Lcom/android/settings/ivan/VibratorHW;->getCurIntensity()I
+    invoke-static {}, Lcom/android/settings_ext/ivan/VibratorHW;->getCurIntensity()I
 
     move-result v0
 
@@ -47,7 +47,7 @@
 
     .prologue
     .line 43
-    invoke-static {}, Lcom/android/settings/ivan/VibratorHW;->getDefaultIntensity()I
+    invoke-static {}, Lcom/android/settings_ext/ivan/VibratorHW;->getDefaultIntensity()I
 
     move-result v0
 
@@ -59,7 +59,7 @@
 
     .prologue
     .line 35
-    invoke-static {}, Lcom/android/settings/ivan/VibratorHW;->getMaxIntensity()I
+    invoke-static {}, Lcom/android/settings_ext/ivan/VibratorHW;->getMaxIntensity()I
 
     move-result v0
 
@@ -71,7 +71,7 @@
 
     .prologue
     .line 31
-    invoke-static {}, Lcom/android/settings/ivan/VibratorHW;->getMinIntensity()I
+    invoke-static {}, Lcom/android/settings_ext/ivan/VibratorHW;->getMinIntensity()I
 
     move-result v0
 
@@ -93,7 +93,7 @@
 
     .prologue
     .line 47
-    invoke-static {}, Lcom/android/settings/ivan/VibratorHW;->getWarningThreshold()I
+    invoke-static {}, Lcom/android/settings_ext/ivan/VibratorHW;->getWarningThreshold()I
 
     move-result v0
 
@@ -106,7 +106,7 @@
 
     .prologue
     .line 51
-    invoke-static {p1}, Lcom/android/settings/ivan/VibratorHW;->setIntensity(I)Z
+    invoke-static {p1}, Lcom/android/settings_ext/ivan/VibratorHW;->setIntensity(I)Z
 
     move-result v0
 

@@ -1,11 +1,11 @@
-.class public Lcom/android/settings/deviceinfo/Memory$ConfirmClearCacheFragment;
+.class public Lcom/android/settings_ext/deviceinfo/Memory$ConfirmClearCacheFragment;
 .super Landroid/app/DialogFragment;
 .source "Memory.java"
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/android/settings/deviceinfo/Memory;
+    value = Lcom/android/settings_ext/deviceinfo/Memory;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -25,13 +25,13 @@
     return-void
 .end method
 
-.method public static show(Lcom/android/settings/deviceinfo/Memory;)V
+.method public static show(Lcom/android/settings_ext/deviceinfo/Memory;)V
     .locals 3
-    .param p0, "parent"    # Lcom/android/settings/deviceinfo/Memory;
+    .param p0, "parent"    # Lcom/android/settings_ext/deviceinfo/Memory;
 
     .prologue
     .line 455
-    invoke-virtual {p0}, Lcom/android/settings/deviceinfo/Memory;->isAdded()Z
+    invoke-virtual {p0}, Lcom/android/settings_ext/deviceinfo/Memory;->isAdded()Z
 
     move-result v1
 
@@ -43,24 +43,24 @@
 
     .line 457
     :cond_0
-    new-instance v0, Lcom/android/settings/deviceinfo/Memory$ConfirmClearCacheFragment;
+    new-instance v0, Lcom/android/settings_ext/deviceinfo/Memory$ConfirmClearCacheFragment;
 
-    invoke-direct {v0}, Lcom/android/settings/deviceinfo/Memory$ConfirmClearCacheFragment;-><init>()V
+    invoke-direct {v0}, Lcom/android/settings_ext/deviceinfo/Memory$ConfirmClearCacheFragment;-><init>()V
 
     .line 458
-    .local v0, "dialog":Lcom/android/settings/deviceinfo/Memory$ConfirmClearCacheFragment;
+    .local v0, "dialog":Lcom/android/settings_ext/deviceinfo/Memory$ConfirmClearCacheFragment;
     const/4 v1, 0x0
 
-    invoke-virtual {v0, p0, v1}, Lcom/android/settings/deviceinfo/Memory$ConfirmClearCacheFragment;->setTargetFragment(Landroid/app/Fragment;I)V
+    invoke-virtual {v0, p0, v1}, Lcom/android/settings_ext/deviceinfo/Memory$ConfirmClearCacheFragment;->setTargetFragment(Landroid/app/Fragment;I)V
 
     .line 459
-    invoke-virtual {p0}, Lcom/android/settings/deviceinfo/Memory;->getFragmentManager()Landroid/app/FragmentManager;
+    invoke-virtual {p0}, Lcom/android/settings_ext/deviceinfo/Memory;->getFragmentManager()Landroid/app/FragmentManager;
 
     move-result-object v1
 
     const-string v2, "confirmClearCache"
 
-    invoke-virtual {v0, v1, v2}, Lcom/android/settings/deviceinfo/Memory$ConfirmClearCacheFragment;->show(Landroid/app/FragmentManager;Ljava/lang/String;)V
+    invoke-virtual {v0, v1, v2}, Lcom/android/settings_ext/deviceinfo/Memory$ConfirmClearCacheFragment;->show(Landroid/app/FragmentManager;Ljava/lang/String;)V
 
     goto :goto_0
 .end method
@@ -73,7 +73,7 @@
 
     .prologue
     .line 464
-    invoke-virtual {p0}, Lcom/android/settings/deviceinfo/Memory$ConfirmClearCacheFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/deviceinfo/Memory$ConfirmClearCacheFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v1
 
@@ -92,7 +92,7 @@
     .line 468
     const v2, 0x7f0903c8
 
-    invoke-virtual {p0, v2}, Lcom/android/settings/deviceinfo/Memory$ConfirmClearCacheFragment;->getString(I)Ljava/lang/String;
+    invoke-virtual {p0, v2}, Lcom/android/settings_ext/deviceinfo/Memory$ConfirmClearCacheFragment;->getString(I)Ljava/lang/String;
 
     move-result-object v2
 
@@ -101,9 +101,9 @@
     .line 470
     const v2, 0x104000a
 
-    new-instance v3, Lcom/android/settings/deviceinfo/Memory$ConfirmClearCacheFragment$1;
+    new-instance v3, Lcom/android/settings_ext/deviceinfo/Memory$ConfirmClearCacheFragment$1;
 
-    invoke-direct {v3, p0, v1}, Lcom/android/settings/deviceinfo/Memory$ConfirmClearCacheFragment$1;-><init>(Lcom/android/settings/deviceinfo/Memory$ConfirmClearCacheFragment;Landroid/content/Context;)V
+    invoke-direct {v3, p0, v1}, Lcom/android/settings_ext/deviceinfo/Memory$ConfirmClearCacheFragment$1;-><init>(Lcom/android/settings_ext/deviceinfo/Memory$ConfirmClearCacheFragment;Landroid/content/Context;)V
 
     invoke-virtual {v0, v2, v3}, Landroid/app/AlertDialog$Builder;->setPositiveButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 

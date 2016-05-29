@@ -1,4 +1,4 @@
-.class final Lcom/android/settings/applications/AppOpsState$OpsTemplate$1;
+.class final Lcom/android/settings_ext/applications/AppOpsState$OpsTemplate$1;
 .super Ljava/lang/Object;
 .source "AppOpsState.java"
 
@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/android/settings/applications/AppOpsState$OpsTemplate;
+    value = Lcom/android/settings_ext/applications/AppOpsState$OpsTemplate;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -21,7 +21,7 @@
         "Ljava/lang/Object;",
         "Landroid/os/Parcelable$Creator",
         "<",
-        "Lcom/android/settings/applications/AppOpsState$OpsTemplate;",
+        "Lcom/android/settings_ext/applications/AppOpsState$OpsTemplate;",
         ">;"
     }
 .end annotation
@@ -40,15 +40,15 @@
 
 
 # virtual methods
-.method public createFromParcel(Landroid/os/Parcel;)Lcom/android/settings/applications/AppOpsState$OpsTemplate;
+.method public createFromParcel(Landroid/os/Parcel;)Lcom/android/settings_ext/applications/AppOpsState$OpsTemplate;
     .locals 1
     .param p1, "source"    # Landroid/os/Parcel;
 
     .prologue
     .line 90
-    new-instance v0, Lcom/android/settings/applications/AppOpsState$OpsTemplate;
+    new-instance v0, Lcom/android/settings_ext/applications/AppOpsState$OpsTemplate;
 
-    invoke-direct {v0, p1}, Lcom/android/settings/applications/AppOpsState$OpsTemplate;-><init>(Landroid/os/Parcel;)V
+    invoke-direct {v0, p1}, Lcom/android/settings_ext/applications/AppOpsState$OpsTemplate;-><init>(Landroid/os/Parcel;)V
 
     return-object v0
 .end method
@@ -59,20 +59,20 @@
 
     .prologue
     .line 88
-    invoke-virtual {p0, p1}, Lcom/android/settings/applications/AppOpsState$OpsTemplate$1;->createFromParcel(Landroid/os/Parcel;)Lcom/android/settings/applications/AppOpsState$OpsTemplate;
+    invoke-virtual {p0, p1}, Lcom/android/settings_ext/applications/AppOpsState$OpsTemplate$1;->createFromParcel(Landroid/os/Parcel;)Lcom/android/settings_ext/applications/AppOpsState$OpsTemplate;
 
     move-result-object v0
 
     return-object v0
 .end method
 
-.method public newArray(I)[Lcom/android/settings/applications/AppOpsState$OpsTemplate;
+.method public newArray(I)[Lcom/android/settings_ext/applications/AppOpsState$OpsTemplate;
     .locals 1
     .param p1, "size"    # I
 
     .prologue
     .line 94
-    new-array v0, p1, [Lcom/android/settings/applications/AppOpsState$OpsTemplate;
+    new-array v0, p1, [Lcom/android/settings_ext/applications/AppOpsState$OpsTemplate;
 
     return-object v0
 .end method
@@ -83,7 +83,7 @@
 
     .prologue
     .line 88
-    invoke-virtual {p0, p1}, Lcom/android/settings/applications/AppOpsState$OpsTemplate$1;->newArray(I)[Lcom/android/settings/applications/AppOpsState$OpsTemplate;
+    invoke-virtual {p0, p1}, Lcom/android/settings_ext/applications/AppOpsState$OpsTemplate$1;->newArray(I)[Lcom/android/settings_ext/applications/AppOpsState$OpsTemplate;
 
     move-result-object v0
 

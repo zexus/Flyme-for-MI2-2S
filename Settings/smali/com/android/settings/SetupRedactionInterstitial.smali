@@ -1,5 +1,5 @@
-.class public Lcom/android/settings/SetupRedactionInterstitial;
-.super Lcom/android/settings/notification/RedactionInterstitial;
+.class public Lcom/android/settings_ext/SetupRedactionInterstitial;
+.super Lcom/android/settings_ext/notification/RedactionInterstitial;
 .source "SetupRedactionInterstitial.java"
 
 # interfaces
@@ -9,7 +9,7 @@
 # annotations
 .annotation system Ldalvik/annotation/MemberClasses;
     value = {
-        Lcom/android/settings/SetupRedactionInterstitial$SetupEncryptionInterstitialFragment;
+        Lcom/android/settings_ext/SetupRedactionInterstitial$SetupEncryptionInterstitialFragment;
     }
 .end annotation
 
@@ -20,7 +20,7 @@
 
     .prologue
     .line 37
-    invoke-direct {p0}, Lcom/android/settings/notification/RedactionInterstitial;-><init>()V
+    invoke-direct {p0}, Lcom/android/settings_ext/notification/RedactionInterstitial;-><init>()V
 
     .line 83
     return-void
@@ -32,13 +32,13 @@
 
     .prologue
     .line 41
-    invoke-static {p0}, Lcom/android/settings/notification/RedactionInterstitial;->createStartIntent(Landroid/content/Context;)Landroid/content/Intent;
+    invoke-static {p0}, Lcom/android/settings_ext/notification/RedactionInterstitial;->createStartIntent(Landroid/content/Context;)Landroid/content/Intent;
 
     move-result-object v0
 
     .line 42
     .local v0, "startIntent":Landroid/content/Intent;
-    const-class v1, Lcom/android/settings/SetupRedactionInterstitial;
+    const-class v1, Lcom/android/settings_ext/SetupRedactionInterstitial;
 
     invoke-virtual {v0, p0, v1}, Landroid/content/Intent;->setClass(Landroid/content/Context;Ljava/lang/Class;)Landroid/content/Intent;
 
@@ -70,7 +70,7 @@
     .line 50
     new-instance v0, Landroid/content/Intent;
 
-    invoke-super {p0}, Lcom/android/settings/notification/RedactionInterstitial;->getIntent()Landroid/content/Intent;
+    invoke-super {p0}, Lcom/android/settings_ext/notification/RedactionInterstitial;->getIntent()Landroid/content/Intent;
 
     move-result-object v1
 
@@ -80,7 +80,7 @@
     .local v0, "modIntent":Landroid/content/Intent;
     const-string v1, ":settings:show_fragment"
 
-    const-class v2, Lcom/android/settings/SetupRedactionInterstitial$SetupEncryptionInterstitialFragment;
+    const-class v2, Lcom/android/settings_ext/SetupRedactionInterstitial$SetupEncryptionInterstitialFragment;
 
     invoke-virtual {v2}, Ljava/lang/Class;->getName()Ljava/lang/String;
 
@@ -98,7 +98,7 @@
 
     .prologue
     .line 58
-    const-class v0, Lcom/android/settings/SetupRedactionInterstitial$SetupEncryptionInterstitialFragment;
+    const-class v0, Lcom/android/settings_ext/SetupRedactionInterstitial$SetupEncryptionInterstitialFragment;
 
     invoke-virtual {v0}, Ljava/lang/Class;->getName()Ljava/lang/String;
 
@@ -119,16 +119,16 @@
 
     .prologue
     .line 63
-    invoke-virtual {p0}, Lcom/android/settings/SetupRedactionInterstitial;->getIntent()Landroid/content/Intent;
+    invoke-virtual {p0}, Lcom/android/settings_ext/SetupRedactionInterstitial;->getIntent()Landroid/content/Intent;
 
     move-result-object v0
 
-    invoke-static {v0, p2}, Lcom/android/settings/SetupWizardUtils;->getTheme(Landroid/content/Intent;I)I
+    invoke-static {v0, p2}, Lcom/android/settings_ext/SetupWizardUtils;->getTheme(Landroid/content/Intent;I)I
 
     move-result p2
 
     .line 64
-    invoke-super {p0, p1, p2, p3}, Lcom/android/settings/notification/RedactionInterstitial;->onApplyThemeResource(Landroid/content/res/Resources$Theme;IZ)V
+    invoke-super {p0, p1, p2, p3}, Lcom/android/settings_ext/notification/RedactionInterstitial;->onApplyThemeResource(Landroid/content/res/Resources$Theme;IZ)V
 
     .line 65
     return-void
@@ -139,7 +139,7 @@
 
     .prologue
     .line 74
-    invoke-virtual {p0}, Lcom/android/settings/SetupRedactionInterstitial;->onBackPressed()V
+    invoke-virtual {p0}, Lcom/android/settings_ext/SetupRedactionInterstitial;->onBackPressed()V
 
     .line 75
     return-void
@@ -152,14 +152,14 @@
     .line 79
     const/4 v0, -0x1
 
-    invoke-virtual {p0}, Lcom/android/settings/SetupRedactionInterstitial;->getResultIntentData()Landroid/content/Intent;
+    invoke-virtual {p0}, Lcom/android/settings_ext/SetupRedactionInterstitial;->getResultIntentData()Landroid/content/Intent;
 
     move-result-object v1
 
-    invoke-virtual {p0, v0, v1}, Lcom/android/settings/SetupRedactionInterstitial;->setResult(ILandroid/content/Intent;)V
+    invoke-virtual {p0, v0, v1}, Lcom/android/settings_ext/SetupRedactionInterstitial;->setResult(ILandroid/content/Intent;)V
 
     .line 80
-    invoke-virtual {p0}, Lcom/android/settings/SetupRedactionInterstitial;->finish()V
+    invoke-virtual {p0}, Lcom/android/settings_ext/SetupRedactionInterstitial;->finish()V
 
     .line 81
     return-void
@@ -171,7 +171,7 @@
 
     .prologue
     .line 69
-    invoke-static {p0, p1}, Lcom/android/settings/SetupWizardUtils;->setImmersiveMode(Landroid/app/Activity;Lcom/android/setupwizard/navigationbar/SetupWizardNavBar;)V
+    invoke-static {p0, p1}, Lcom/android/settings_ext/SetupWizardUtils;->setImmersiveMode(Landroid/app/Activity;Lcom/android/setupwizard/navigationbar/SetupWizardNavBar;)V
 
     .line 70
     return-void

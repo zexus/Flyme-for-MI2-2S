@@ -1,11 +1,11 @@
-.class Lcom/android/settings/wifi/WifiSettingsForSetupWizard$2;
+.class Lcom/android/settings_ext/wifi/WifiSettingsForSetupWizard$2;
 .super Landroid/database/DataSetObserver;
 .source "WifiSettingsForSetupWizard.java"
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/android/settings/wifi/WifiSettingsForSetupWizard;->onActivityCreated(Landroid/os/Bundle;)V
+    value = Lcom/android/settings_ext/wifi/WifiSettingsForSetupWizard;->onActivityCreated(Landroid/os/Bundle;)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -15,16 +15,16 @@
 
 
 # instance fields
-.field final synthetic this$0:Lcom/android/settings/wifi/WifiSettingsForSetupWizard;
+.field final synthetic this$0:Lcom/android/settings_ext/wifi/WifiSettingsForSetupWizard;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/wifi/WifiSettingsForSetupWizard;)V
+.method constructor <init>(Lcom/android/settings_ext/wifi/WifiSettingsForSetupWizard;)V
     .locals 0
 
     .prologue
     .line 103
-    iput-object p1, p0, Lcom/android/settings/wifi/WifiSettingsForSetupWizard$2;->this$0:Lcom/android/settings/wifi/WifiSettingsForSetupWizard;
+    iput-object p1, p0, Lcom/android/settings_ext/wifi/WifiSettingsForSetupWizard$2;->this$0:Lcom/android/settings_ext/wifi/WifiSettingsForSetupWizard;
 
     invoke-direct {p0}, Landroid/database/DataSetObserver;-><init>()V
 
@@ -41,9 +41,9 @@
     invoke-super {p0}, Landroid/database/DataSetObserver;->onChanged()V
 
     .line 107
-    iget-object v0, p0, Lcom/android/settings/wifi/WifiSettingsForSetupWizard$2;->this$0:Lcom/android/settings/wifi/WifiSettingsForSetupWizard;
+    iget-object v0, p0, Lcom/android/settings_ext/wifi/WifiSettingsForSetupWizard$2;->this$0:Lcom/android/settings_ext/wifi/WifiSettingsForSetupWizard;
 
-    invoke-virtual {v0}, Lcom/android/settings/wifi/WifiSettingsForSetupWizard;->updateFooter()V
+    invoke-virtual {v0}, Lcom/android/settings_ext/wifi/WifiSettingsForSetupWizard;->updateFooter()V
 
     .line 108
     return-void

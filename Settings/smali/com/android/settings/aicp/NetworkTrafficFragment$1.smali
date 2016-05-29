@@ -1,4 +1,4 @@
-.class Lcom/android/settings/aicp/NetworkTrafficFragment$1;
+.class Lcom/android/settings_ext/aicp/NetworkTrafficFragment$1;
 .super Ljava/lang/Object;
 .source "NetworkTrafficFragment.java"
 
@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/android/settings/aicp/NetworkTrafficFragment;->resetToDefault()V
+    value = Lcom/android/settings_ext/aicp/NetworkTrafficFragment;->resetToDefault()V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -18,16 +18,16 @@
 
 
 # instance fields
-.field final synthetic this$0:Lcom/android/settings/aicp/NetworkTrafficFragment;
+.field final synthetic this$0:Lcom/android/settings_ext/aicp/NetworkTrafficFragment;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/aicp/NetworkTrafficFragment;)V
+.method constructor <init>(Lcom/android/settings_ext/aicp/NetworkTrafficFragment;)V
     .locals 0
 
     .prologue
     .line 164
-    iput-object p1, p0, Lcom/android/settings/aicp/NetworkTrafficFragment$1;->this$0:Lcom/android/settings/aicp/NetworkTrafficFragment;
+    iput-object p1, p0, Lcom/android/settings_ext/aicp/NetworkTrafficFragment$1;->this$0:Lcom/android/settings_ext/aicp/NetworkTrafficFragment;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -43,10 +43,10 @@
 
     .prologue
     .line 166
-    iget-object v0, p0, Lcom/android/settings/aicp/NetworkTrafficFragment$1;->this$0:Lcom/android/settings/aicp/NetworkTrafficFragment;
+    iget-object v0, p0, Lcom/android/settings_ext/aicp/NetworkTrafficFragment$1;->this$0:Lcom/android/settings_ext/aicp/NetworkTrafficFragment;
 
-    # invokes: Lcom/android/settings/aicp/NetworkTrafficFragment;->NetworkTrafficColorReset()V
-    invoke-static {v0}, Lcom/android/settings/aicp/NetworkTrafficFragment;->access$000(Lcom/android/settings/aicp/NetworkTrafficFragment;)V
+    # invokes: Lcom/android/settings_ext/aicp/NetworkTrafficFragment;->NetworkTrafficColorReset()V
+    invoke-static {v0}, Lcom/android/settings_ext/aicp/NetworkTrafficFragment;->access$000(Lcom/android/settings_ext/aicp/NetworkTrafficFragment;)V
 
     .line 167
     return-void

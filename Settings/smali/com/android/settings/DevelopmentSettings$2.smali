@@ -1,11 +1,11 @@
-.class final Lcom/android/settings/DevelopmentSettings$2;
-.super Lcom/android/settings/search/BaseSearchIndexProvider;
+.class final Lcom/android/settings_ext/DevelopmentSettings$2;
+.super Lcom/android/settings_ext/search/BaseSearchIndexProvider;
 .source "DevelopmentSettings.java"
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/android/settings/DevelopmentSettings;
+    value = Lcom/android/settings_ext/DevelopmentSettings;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -20,7 +20,7 @@
 
     .prologue
     .line 1644
-    invoke-direct {p0}, Lcom/android/settings/search/BaseSearchIndexProvider;-><init>()V
+    invoke-direct {p0}, Lcom/android/settings_ext/search/BaseSearchIndexProvider;-><init>()V
 
     return-void
 .end method
@@ -75,7 +75,7 @@
 
     .prologue
     .line 1668
-    invoke-direct {p0, p1}, Lcom/android/settings/DevelopmentSettings$2;->isShowingDeveloperOptions(Landroid/content/Context;)Z
+    invoke-direct {p0, p1}, Lcom/android/settings_ext/DevelopmentSettings$2;->isShowingDeveloperOptions(Landroid/content/Context;)Z
 
     move-result v1
 
@@ -97,8 +97,8 @@
 
     .line 1673
     .local v0, "keys":Ljava/util/List;, "Ljava/util/List<Ljava/lang/String;>;"
-    # invokes: Lcom/android/settings/DevelopmentSettings;->showEnableOemUnlockPreference()Z
-    invoke-static {}, Lcom/android/settings/DevelopmentSettings;->access$100()Z
+    # invokes: Lcom/android/settings_ext/DevelopmentSettings;->showEnableOemUnlockPreference()Z
+    invoke-static {}, Lcom/android/settings_ext/DevelopmentSettings;->access$100()Z
 
     move-result v1
 
@@ -130,7 +130,7 @@
 
     .prologue
     .line 1657
-    invoke-direct {p0, p1}, Lcom/android/settings/DevelopmentSettings$2;->isShowingDeveloperOptions(Landroid/content/Context;)Z
+    invoke-direct {p0, p1}, Lcom/android/settings_ext/DevelopmentSettings$2;->isShowingDeveloperOptions(Landroid/content/Context;)Z
 
     move-result v1
 

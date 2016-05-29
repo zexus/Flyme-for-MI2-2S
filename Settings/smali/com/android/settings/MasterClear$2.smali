@@ -1,4 +1,4 @@
-.class Lcom/android/settings/MasterClear$2;
+.class Lcom/android/settings_ext/MasterClear$2;
 .super Ljava/lang/Object;
 .source "MasterClear.java"
 
@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/android/settings/MasterClear;->establishInitialState()V
+    value = Lcom/android/settings_ext/MasterClear;->establishInitialState()V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -18,16 +18,16 @@
 
 
 # instance fields
-.field final synthetic this$0:Lcom/android/settings/MasterClear;
+.field final synthetic this$0:Lcom/android/settings_ext/MasterClear;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/MasterClear;)V
+.method constructor <init>(Lcom/android/settings_ext/MasterClear;)V
     .locals 0
 
     .prologue
     .line 164
-    iput-object p1, p0, Lcom/android/settings/MasterClear$2;->this$0:Lcom/android/settings/MasterClear;
+    iput-object p1, p0, Lcom/android/settings_ext/MasterClear$2;->this$0:Lcom/android/settings_ext/MasterClear;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -42,10 +42,10 @@
 
     .prologue
     .line 168
-    iget-object v0, p0, Lcom/android/settings/MasterClear$2;->this$0:Lcom/android/settings/MasterClear;
+    iget-object v0, p0, Lcom/android/settings_ext/MasterClear$2;->this$0:Lcom/android/settings_ext/MasterClear;
 
-    # getter for: Lcom/android/settings/MasterClear;->mExternalStorage:Landroid/widget/CheckBox;
-    invoke-static {v0}, Lcom/android/settings/MasterClear;->access$200(Lcom/android/settings/MasterClear;)Landroid/widget/CheckBox;
+    # getter for: Lcom/android/settings_ext/MasterClear;->mExternalStorage:Landroid/widget/CheckBox;
+    invoke-static {v0}, Lcom/android/settings_ext/MasterClear;->access$200(Lcom/android/settings_ext/MasterClear;)Landroid/widget/CheckBox;
 
     move-result-object v0
 

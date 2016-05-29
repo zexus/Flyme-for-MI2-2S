@@ -1,4 +1,4 @@
-.class Lcom/android/settings/accounts/AccountSettings$ConfirmAutoSyncChangeFragment$1;
+.class Lcom/android/settings_ext/accounts/AccountSettings$ConfirmAutoSyncChangeFragment$1;
 .super Ljava/lang/Object;
 .source "AccountSettings.java"
 
@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/android/settings/accounts/AccountSettings$ConfirmAutoSyncChangeFragment;->onCreateDialog(Landroid/os/Bundle;)Landroid/app/Dialog;
+    value = Lcom/android/settings_ext/accounts/AccountSettings$ConfirmAutoSyncChangeFragment;->onCreateDialog(Landroid/os/Bundle;)Landroid/app/Dialog;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -18,16 +18,16 @@
 
 
 # instance fields
-.field final synthetic this$0:Lcom/android/settings/accounts/AccountSettings$ConfirmAutoSyncChangeFragment;
+.field final synthetic this$0:Lcom/android/settings_ext/accounts/AccountSettings$ConfirmAutoSyncChangeFragment;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/accounts/AccountSettings$ConfirmAutoSyncChangeFragment;)V
+.method constructor <init>(Lcom/android/settings_ext/accounts/AccountSettings$ConfirmAutoSyncChangeFragment;)V
     .locals 0
 
     .prologue
     .line 589
-    iput-object p1, p0, Lcom/android/settings/accounts/AccountSettings$ConfirmAutoSyncChangeFragment$1;->this$0:Lcom/android/settings/accounts/AccountSettings$ConfirmAutoSyncChangeFragment;
+    iput-object p1, p0, Lcom/android/settings_ext/accounts/AccountSettings$ConfirmAutoSyncChangeFragment$1;->this$0:Lcom/android/settings_ext/accounts/AccountSettings$ConfirmAutoSyncChangeFragment;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -43,17 +43,17 @@
 
     .prologue
     .line 592
-    iget-object v0, p0, Lcom/android/settings/accounts/AccountSettings$ConfirmAutoSyncChangeFragment$1;->this$0:Lcom/android/settings/accounts/AccountSettings$ConfirmAutoSyncChangeFragment;
+    iget-object v0, p0, Lcom/android/settings_ext/accounts/AccountSettings$ConfirmAutoSyncChangeFragment$1;->this$0:Lcom/android/settings_ext/accounts/AccountSettings$ConfirmAutoSyncChangeFragment;
 
-    # getter for: Lcom/android/settings/accounts/AccountSettings$ConfirmAutoSyncChangeFragment;->mEnabling:Z
-    invoke-static {v0}, Lcom/android/settings/accounts/AccountSettings$ConfirmAutoSyncChangeFragment;->access$700(Lcom/android/settings/accounts/AccountSettings$ConfirmAutoSyncChangeFragment;)Z
+    # getter for: Lcom/android/settings_ext/accounts/AccountSettings$ConfirmAutoSyncChangeFragment;->mEnabling:Z
+    invoke-static {v0}, Lcom/android/settings_ext/accounts/AccountSettings$ConfirmAutoSyncChangeFragment;->access$700(Lcom/android/settings_ext/accounts/AccountSettings$ConfirmAutoSyncChangeFragment;)Z
 
     move-result v0
 
-    iget-object v1, p0, Lcom/android/settings/accounts/AccountSettings$ConfirmAutoSyncChangeFragment$1;->this$0:Lcom/android/settings/accounts/AccountSettings$ConfirmAutoSyncChangeFragment;
+    iget-object v1, p0, Lcom/android/settings_ext/accounts/AccountSettings$ConfirmAutoSyncChangeFragment$1;->this$0:Lcom/android/settings_ext/accounts/AccountSettings$ConfirmAutoSyncChangeFragment;
 
-    # getter for: Lcom/android/settings/accounts/AccountSettings$ConfirmAutoSyncChangeFragment;->mUserHandle:Landroid/os/UserHandle;
-    invoke-static {v1}, Lcom/android/settings/accounts/AccountSettings$ConfirmAutoSyncChangeFragment;->access$800(Lcom/android/settings/accounts/AccountSettings$ConfirmAutoSyncChangeFragment;)Landroid/os/UserHandle;
+    # getter for: Lcom/android/settings_ext/accounts/AccountSettings$ConfirmAutoSyncChangeFragment;->mUserHandle:Landroid/os/UserHandle;
+    invoke-static {v1}, Lcom/android/settings_ext/accounts/AccountSettings$ConfirmAutoSyncChangeFragment;->access$800(Lcom/android/settings_ext/accounts/AccountSettings$ConfirmAutoSyncChangeFragment;)Landroid/os/UserHandle;
 
     move-result-object v1
 

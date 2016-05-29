@@ -1,11 +1,11 @@
-.class Lcom/android/settings/notification/ManagedServiceSettings$ViewHolder;
+.class Lcom/android/settings_ext/notification/ManagedServiceSettings$ViewHolder;
 .super Ljava/lang/Object;
 .source "ManagedServiceSettings.java"
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/android/settings/notification/ManagedServiceSettings;
+    value = Lcom/android/settings_ext/notification/ManagedServiceSettings;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -35,13 +35,13 @@
     return-void
 .end method
 
-.method synthetic constructor <init>(Lcom/android/settings/notification/ManagedServiceSettings$1;)V
+.method synthetic constructor <init>(Lcom/android/settings_ext/notification/ManagedServiceSettings$1;)V
     .locals 0
-    .param p1, "x0"    # Lcom/android/settings/notification/ManagedServiceSettings$1;
+    .param p1, "x0"    # Lcom/android/settings_ext/notification/ManagedServiceSettings$1;
 
     .prologue
     .line 272
-    invoke-direct {p0}, Lcom/android/settings/notification/ManagedServiceSettings$ViewHolder;-><init>()V
+    invoke-direct {p0}, Lcom/android/settings_ext/notification/ManagedServiceSettings$ViewHolder;-><init>()V
 
     return-void
 .end method

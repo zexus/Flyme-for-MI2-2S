@@ -1,4 +1,4 @@
-.class public Lcom/android/settings/wifi/WifiScanModeActivity;
+.class public Lcom/android/settings_ext/wifi/WifiScanModeActivity;
 .super Landroid/app/Activity;
 .source "WifiScanModeActivity.java"
 
@@ -6,7 +6,7 @@
 # annotations
 .annotation system Ldalvik/annotation/MemberClasses;
     value = {
-        Lcom/android/settings/wifi/WifiScanModeActivity$AlertDialogFragment;
+        Lcom/android/settings_ext/wifi/WifiScanModeActivity$AlertDialogFragment;
     }
 .end annotation
 
@@ -29,24 +29,24 @@
     return-void
 .end method
 
-.method static synthetic access$000(Lcom/android/settings/wifi/WifiScanModeActivity;)V
+.method static synthetic access$000(Lcom/android/settings_ext/wifi/WifiScanModeActivity;)V
     .locals 0
-    .param p0, "x0"    # Lcom/android/settings/wifi/WifiScanModeActivity;
+    .param p0, "x0"    # Lcom/android/settings_ext/wifi/WifiScanModeActivity;
 
     .prologue
     .line 37
-    invoke-direct {p0}, Lcom/android/settings/wifi/WifiScanModeActivity;->doNegativeClick()V
+    invoke-direct {p0}, Lcom/android/settings_ext/wifi/WifiScanModeActivity;->doNegativeClick()V
 
     return-void
 .end method
 
-.method static synthetic access$100(Lcom/android/settings/wifi/WifiScanModeActivity;)V
+.method static synthetic access$100(Lcom/android/settings_ext/wifi/WifiScanModeActivity;)V
     .locals 0
-    .param p0, "x0"    # Lcom/android/settings/wifi/WifiScanModeActivity;
+    .param p0, "x0"    # Lcom/android/settings_ext/wifi/WifiScanModeActivity;
 
     .prologue
     .line 37
-    invoke-direct {p0}, Lcom/android/settings/wifi/WifiScanModeActivity;->doPositiveClick()V
+    invoke-direct {p0}, Lcom/android/settings_ext/wifi/WifiScanModeActivity;->doPositiveClick()V
 
     return-void
 .end method
@@ -56,23 +56,23 @@
 
     .prologue
     .line 66
-    iget-object v0, p0, Lcom/android/settings/wifi/WifiScanModeActivity;->mDialog:Landroid/app/DialogFragment;
+    iget-object v0, p0, Lcom/android/settings_ext/wifi/WifiScanModeActivity;->mDialog:Landroid/app/DialogFragment;
 
     if-nez v0, :cond_0
 
     .line 67
-    iget-object v0, p0, Lcom/android/settings/wifi/WifiScanModeActivity;->mApp:Ljava/lang/String;
+    iget-object v0, p0, Lcom/android/settings_ext/wifi/WifiScanModeActivity;->mApp:Ljava/lang/String;
 
-    invoke-static {v0}, Lcom/android/settings/wifi/WifiScanModeActivity$AlertDialogFragment;->newInstance(Ljava/lang/String;)Lcom/android/settings/wifi/WifiScanModeActivity$AlertDialogFragment;
+    invoke-static {v0}, Lcom/android/settings_ext/wifi/WifiScanModeActivity$AlertDialogFragment;->newInstance(Ljava/lang/String;)Lcom/android/settings_ext/wifi/WifiScanModeActivity$AlertDialogFragment;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/wifi/WifiScanModeActivity;->mDialog:Landroid/app/DialogFragment;
+    iput-object v0, p0, Lcom/android/settings_ext/wifi/WifiScanModeActivity;->mDialog:Landroid/app/DialogFragment;
 
     .line 68
-    iget-object v0, p0, Lcom/android/settings/wifi/WifiScanModeActivity;->mDialog:Landroid/app/DialogFragment;
+    iget-object v0, p0, Lcom/android/settings_ext/wifi/WifiScanModeActivity;->mDialog:Landroid/app/DialogFragment;
 
-    invoke-virtual {p0}, Lcom/android/settings/wifi/WifiScanModeActivity;->getFragmentManager()Landroid/app/FragmentManager;
+    invoke-virtual {p0}, Lcom/android/settings_ext/wifi/WifiScanModeActivity;->getFragmentManager()Landroid/app/FragmentManager;
 
     move-result-object v1
 
@@ -90,19 +90,19 @@
 
     .prologue
     .line 73
-    iget-object v0, p0, Lcom/android/settings/wifi/WifiScanModeActivity;->mDialog:Landroid/app/DialogFragment;
+    iget-object v0, p0, Lcom/android/settings_ext/wifi/WifiScanModeActivity;->mDialog:Landroid/app/DialogFragment;
 
     if-eqz v0, :cond_0
 
     .line 74
-    iget-object v0, p0, Lcom/android/settings/wifi/WifiScanModeActivity;->mDialog:Landroid/app/DialogFragment;
+    iget-object v0, p0, Lcom/android/settings_ext/wifi/WifiScanModeActivity;->mDialog:Landroid/app/DialogFragment;
 
     invoke-virtual {v0}, Landroid/app/DialogFragment;->dismiss()V
 
     .line 75
     const/4 v0, 0x0
 
-    iput-object v0, p0, Lcom/android/settings/wifi/WifiScanModeActivity;->mDialog:Landroid/app/DialogFragment;
+    iput-object v0, p0, Lcom/android/settings_ext/wifi/WifiScanModeActivity;->mDialog:Landroid/app/DialogFragment;
 
     .line 77
     :cond_0
@@ -116,10 +116,10 @@
     .line 87
     const/4 v0, 0x0
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/wifi/WifiScanModeActivity;->setResult(I)V
+    invoke-virtual {p0, v0}, Lcom/android/settings_ext/wifi/WifiScanModeActivity;->setResult(I)V
 
     .line 88
-    invoke-virtual {p0}, Lcom/android/settings/wifi/WifiScanModeActivity;->finish()V
+    invoke-virtual {p0}, Lcom/android/settings_ext/wifi/WifiScanModeActivity;->finish()V
 
     .line 89
     return-void
@@ -130,7 +130,7 @@
 
     .prologue
     .line 80
-    invoke-virtual {p0}, Lcom/android/settings/wifi/WifiScanModeActivity;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/settings_ext/wifi/WifiScanModeActivity;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v0
 
@@ -143,10 +143,10 @@
     .line 82
     const/4 v0, -0x1
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/wifi/WifiScanModeActivity;->setResult(I)V
+    invoke-virtual {p0, v0}, Lcom/android/settings_ext/wifi/WifiScanModeActivity;->setResult(I)V
 
     .line 83
-    invoke-virtual {p0}, Lcom/android/settings/wifi/WifiScanModeActivity;->finish()V
+    invoke-virtual {p0}, Lcom/android/settings_ext/wifi/WifiScanModeActivity;->finish()V
 
     .line 84
     return-void
@@ -163,7 +163,7 @@
     invoke-super {p0, p1}, Landroid/app/Activity;->onCreate(Landroid/os/Bundle;)V
 
     .line 44
-    invoke-virtual {p0}, Lcom/android/settings/wifi/WifiScanModeActivity;->getIntent()Landroid/content/Intent;
+    invoke-virtual {p0}, Lcom/android/settings_ext/wifi/WifiScanModeActivity;->getIntent()Landroid/content/Intent;
 
     move-result-object v1
 
@@ -187,21 +187,21 @@
     if-eqz v3, :cond_0
 
     .line 49
-    invoke-virtual {p0}, Lcom/android/settings/wifi/WifiScanModeActivity;->getCallingPackage()Ljava/lang/String;
+    invoke-virtual {p0}, Lcom/android/settings_ext/wifi/WifiScanModeActivity;->getCallingPackage()Ljava/lang/String;
 
     move-result-object v3
 
-    iput-object v3, p0, Lcom/android/settings/wifi/WifiScanModeActivity;->mApp:Ljava/lang/String;
+    iput-object v3, p0, Lcom/android/settings_ext/wifi/WifiScanModeActivity;->mApp:Ljava/lang/String;
 
     .line 51
     :try_start_0
-    invoke-virtual {p0}, Lcom/android/settings/wifi/WifiScanModeActivity;->getPackageManager()Landroid/content/pm/PackageManager;
+    invoke-virtual {p0}, Lcom/android/settings_ext/wifi/WifiScanModeActivity;->getPackageManager()Landroid/content/pm/PackageManager;
 
     move-result-object v2
 
     .line 52
     .local v2, "pm":Landroid/content/pm/PackageManager;
-    iget-object v3, p0, Lcom/android/settings/wifi/WifiScanModeActivity;->mApp:Ljava/lang/String;
+    iget-object v3, p0, Lcom/android/settings_ext/wifi/WifiScanModeActivity;->mApp:Ljava/lang/String;
 
     const/4 v4, 0x0
 
@@ -217,7 +217,7 @@
 
     check-cast v3, Ljava/lang/String;
 
-    iput-object v3, p0, Lcom/android/settings/wifi/WifiScanModeActivity;->mApp:Ljava/lang/String;
+    iput-object v3, p0, Lcom/android/settings_ext/wifi/WifiScanModeActivity;->mApp:Ljava/lang/String;
     :try_end_0
     .catch Landroid/content/pm/PackageManager$NameNotFoundException; {:try_start_0 .. :try_end_0} :catch_0
 
@@ -225,7 +225,7 @@
     .end local v0    # "ai":Landroid/content/pm/ApplicationInfo;
     .end local v2    # "pm":Landroid/content/pm/PackageManager;
     :goto_0
-    invoke-direct {p0}, Lcom/android/settings/wifi/WifiScanModeActivity;->createDialog()V
+    invoke-direct {p0}, Lcom/android/settings_ext/wifi/WifiScanModeActivity;->createDialog()V
 
     .line 63
     :goto_1
@@ -233,7 +233,7 @@
 
     .line 56
     :cond_0
-    invoke-virtual {p0}, Lcom/android/settings/wifi/WifiScanModeActivity;->finish()V
+    invoke-virtual {p0}, Lcom/android/settings_ext/wifi/WifiScanModeActivity;->finish()V
 
     goto :goto_1
 
@@ -245,7 +245,7 @@
 
     move-result-object v3
 
-    iput-object v3, p0, Lcom/android/settings/wifi/WifiScanModeActivity;->mApp:Ljava/lang/String;
+    iput-object v3, p0, Lcom/android/settings_ext/wifi/WifiScanModeActivity;->mApp:Ljava/lang/String;
 
     goto :goto_0
 
@@ -264,7 +264,7 @@
     invoke-super {p0}, Landroid/app/Activity;->onPause()V
 
     .line 100
-    invoke-direct {p0}, Lcom/android/settings/wifi/WifiScanModeActivity;->dismissDialog()V
+    invoke-direct {p0}, Lcom/android/settings_ext/wifi/WifiScanModeActivity;->dismissDialog()V
 
     .line 101
     return-void
@@ -278,7 +278,7 @@
     invoke-super {p0}, Landroid/app/Activity;->onResume()V
 
     .line 105
-    invoke-direct {p0}, Lcom/android/settings/wifi/WifiScanModeActivity;->createDialog()V
+    invoke-direct {p0}, Lcom/android/settings_ext/wifi/WifiScanModeActivity;->createDialog()V
 
     .line 106
     return-void
@@ -295,7 +295,7 @@
     .line 94
     const-string v0, "app"
 
-    iget-object v1, p0, Lcom/android/settings/wifi/WifiScanModeActivity;->mApp:Ljava/lang/String;
+    iget-object v1, p0, Lcom/android/settings_ext/wifi/WifiScanModeActivity;->mApp:Ljava/lang/String;
 
     invoke-virtual {p1, v0, v1}, Landroid/os/Bundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
 

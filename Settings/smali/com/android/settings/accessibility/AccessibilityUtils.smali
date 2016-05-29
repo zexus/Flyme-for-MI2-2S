@@ -1,4 +1,4 @@
-.class Lcom/android/settings/accessibility/AccessibilityUtils;
+.class Lcom/android/settings_ext/accessibility/AccessibilityUtils;
 .super Ljava/lang/Object;
 .source "AccessibilityUtils.java"
 
@@ -52,7 +52,7 @@
 
     .line 47
     .local v3, "enabledServices":Ljava/util/Set;, "Ljava/util/Set<Landroid/content/ComponentName;>;"
-    sget-object v0, Lcom/android/settings/accessibility/AccessibilitySettings;->sStringColonSplitter:Landroid/text/TextUtils$SimpleStringSplitter;
+    sget-object v0, Lcom/android/settings_ext/accessibility/AccessibilitySettings;->sStringColonSplitter:Landroid/text/TextUtils$SimpleStringSplitter;
 
     .line 48
     .local v0, "colonSplitter":Landroid/text/TextUtils$SimpleStringSplitter;

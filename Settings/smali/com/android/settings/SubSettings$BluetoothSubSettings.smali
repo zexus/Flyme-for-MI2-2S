@@ -1,11 +1,11 @@
-.class public Lcom/android/settings/SubSettings$BluetoothSubSettings;
-.super Lcom/android/settings/SubSettings;
+.class public Lcom/android/settings_ext/SubSettings$BluetoothSubSettings;
+.super Lcom/android/settings_ext/SubSettings;
 .source "SubSettings.java"
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/android/settings/SubSettings;
+    value = Lcom/android/settings_ext/SubSettings;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -20,7 +20,7 @@
 
     .prologue
     .line 39
-    invoke-direct {p0}, Lcom/android/settings/SubSettings;-><init>()V
+    invoke-direct {p0}, Lcom/android/settings_ext/SubSettings;-><init>()V
 
     return-void
 .end method

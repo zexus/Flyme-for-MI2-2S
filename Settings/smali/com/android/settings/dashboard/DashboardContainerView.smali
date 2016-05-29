@@ -1,4 +1,4 @@
-.class public Lcom/android/settings/dashboard/DashboardContainerView;
+.class public Lcom/android/settings_ext/dashboard/DashboardContainerView;
 .super Landroid/view/ViewGroup;
 .source "DashboardContainerView.java"
 
@@ -36,7 +36,7 @@
 
     move-result v1
 
-    iput v1, p0, Lcom/android/settings/dashboard/DashboardContainerView;->mCellGapX:F
+    iput v1, p0, Lcom/android/settings_ext/dashboard/DashboardContainerView;->mCellGapX:F
 
     .line 39
     const v1, 0x7f0e003c
@@ -45,7 +45,7 @@
 
     move-result v1
 
-    iput v1, p0, Lcom/android/settings/dashboard/DashboardContainerView;->mCellGapY:F
+    iput v1, p0, Lcom/android/settings_ext/dashboard/DashboardContainerView;->mCellGapY:F
 
     .line 40
     const v1, 0x7f0d0001
@@ -54,7 +54,7 @@
 
     move-result v1
 
-    iput v1, p0, Lcom/android/settings/dashboard/DashboardContainerView;->mNumColumns:I
+    iput v1, p0, Lcom/android/settings_ext/dashboard/DashboardContainerView;->mNumColumns:I
 
     .line 41
     return-void
@@ -72,31 +72,31 @@
 
     .prologue
     .line 88
-    invoke-virtual/range {p0 .. p0}, Lcom/android/settings/dashboard/DashboardContainerView;->getChildCount()I
+    invoke-virtual/range {p0 .. p0}, Lcom/android/settings_ext/dashboard/DashboardContainerView;->getChildCount()I
 
     move-result v2
 
     .line 89
     .local v2, "N":I
-    invoke-virtual/range {p0 .. p0}, Lcom/android/settings/dashboard/DashboardContainerView;->isLayoutRtl()Z
+    invoke-virtual/range {p0 .. p0}, Lcom/android/settings_ext/dashboard/DashboardContainerView;->isLayoutRtl()Z
 
     move-result v14
 
     .line 90
     .local v14, "isLayoutRtl":Z
-    invoke-virtual/range {p0 .. p0}, Lcom/android/settings/dashboard/DashboardContainerView;->getWidth()I
+    invoke-virtual/range {p0 .. p0}, Lcom/android/settings_ext/dashboard/DashboardContainerView;->getWidth()I
 
     move-result v17
 
     .line 92
     .local v17, "width":I
-    invoke-virtual/range {p0 .. p0}, Lcom/android/settings/dashboard/DashboardContainerView;->getPaddingStart()I
+    invoke-virtual/range {p0 .. p0}, Lcom/android/settings_ext/dashboard/DashboardContainerView;->getPaddingStart()I
 
     move-result v18
 
     .line 93
     .local v18, "x":I
-    invoke-virtual/range {p0 .. p0}, Lcom/android/settings/dashboard/DashboardContainerView;->getPaddingTop()I
+    invoke-virtual/range {p0 .. p0}, Lcom/android/settings_ext/dashboard/DashboardContainerView;->getPaddingTop()I
 
     move-result v19
 
@@ -115,21 +115,21 @@
     .line 97
     move-object/from16 v0, p0
 
-    invoke-virtual {v0, v13}, Lcom/android/settings/dashboard/DashboardContainerView;->getChildAt(I)Landroid/view/View;
+    invoke-virtual {v0, v13}, Lcom/android/settings_ext/dashboard/DashboardContainerView;->getChildAt(I)Landroid/view/View;
 
     move-result-object v3
 
-    check-cast v3, Lcom/android/settings/dashboard/DashboardTileView;
+    check-cast v3, Lcom/android/settings_ext/dashboard/DashboardTileView;
 
     .line 98
-    .local v3, "child":Lcom/android/settings/dashboard/DashboardTileView;
-    invoke-virtual {v3}, Lcom/android/settings/dashboard/DashboardTileView;->getLayoutParams()Landroid/view/ViewGroup$LayoutParams;
+    .local v3, "child":Lcom/android/settings_ext/dashboard/DashboardTileView;
+    invoke-virtual {v3}, Lcom/android/settings_ext/dashboard/DashboardTileView;->getLayoutParams()Landroid/view/ViewGroup$LayoutParams;
 
     move-result-object v15
 
     .line 99
     .local v15, "lp":Landroid/view/ViewGroup$LayoutParams;
-    invoke-virtual {v3}, Lcom/android/settings/dashboard/DashboardTileView;->getVisibility()I
+    invoke-virtual {v3}, Lcom/android/settings_ext/dashboard/DashboardTileView;->getVisibility()I
 
     move-result v20
 
@@ -151,7 +151,7 @@
     :cond_0
     move-object/from16 v0, p0
 
-    iget v0, v0, Lcom/android/settings/dashboard/DashboardContainerView;->mNumColumns:I
+    iget v0, v0, Lcom/android/settings_ext/dashboard/DashboardContainerView;->mNumColumns:I
 
     move/from16 v20, v0
 
@@ -159,7 +159,7 @@
 
     .line 104
     .local v10, "col":I
-    invoke-virtual {v3}, Lcom/android/settings/dashboard/DashboardTileView;->getColumnSpan()I
+    invoke-virtual {v3}, Lcom/android/settings_ext/dashboard/DashboardTileView;->getColumnSpan()I
 
     move-result v11
 
@@ -175,7 +175,7 @@
     .local v5, "childHeight":I
     move-object/from16 v0, p0
 
-    iget v0, v0, Lcom/android/settings/dashboard/DashboardContainerView;->mNumColumns:I
+    iget v0, v0, Lcom/android/settings_ext/dashboard/DashboardContainerView;->mNumColumns:I
 
     move/from16 v20, v0
 
@@ -185,7 +185,7 @@
     .local v16, "row":I
     move-object/from16 v0, p0
 
-    iget v0, v0, Lcom/android/settings/dashboard/DashboardContainerView;->mNumRows:I
+    iget v0, v0, Lcom/android/settings_ext/dashboard/DashboardContainerView;->mNumRows:I
 
     move/from16 v20, v0
 
@@ -202,7 +202,7 @@
 
     move/from16 v0, v20
 
-    invoke-virtual {v3, v0}, Lcom/android/settings/dashboard/DashboardTileView;->setDividerVisibility(Z)V
+    invoke-virtual {v3, v0}, Lcom/android/settings_ext/dashboard/DashboardTileView;->setDividerVisibility(Z)V
 
     .line 116
     :cond_1
@@ -210,7 +210,7 @@
 
     move-object/from16 v0, p0
 
-    iget v0, v0, Lcom/android/settings/dashboard/DashboardContainerView;->mNumColumns:I
+    iget v0, v0, Lcom/android/settings_ext/dashboard/DashboardContainerView;->mNumColumns:I
 
     move/from16 v21, v0
 
@@ -221,7 +221,7 @@
     if-le v0, v1, :cond_2
 
     .line 117
-    invoke-virtual/range {p0 .. p0}, Lcom/android/settings/dashboard/DashboardContainerView;->getPaddingStart()I
+    invoke-virtual/range {p0 .. p0}, Lcom/android/settings_ext/dashboard/DashboardContainerView;->getPaddingStart()I
 
     move-result v18
 
@@ -238,7 +238,7 @@
 
     move-object/from16 v0, p0
 
-    iget v0, v0, Lcom/android/settings/dashboard/DashboardContainerView;->mCellGapY:F
+    iget v0, v0, Lcom/android/settings_ext/dashboard/DashboardContainerView;->mCellGapY:F
 
     move/from16 v22, v0
 
@@ -278,10 +278,10 @@
 
     .line 129
     .local v4, "childBottom":I
-    invoke-virtual {v3, v6, v8, v7, v4}, Lcom/android/settings/dashboard/DashboardTileView;->layout(IIII)V
+    invoke-virtual {v3, v6, v8, v7, v4}, Lcom/android/settings_ext/dashboard/DashboardTileView;->layout(IIII)V
 
     .line 133
-    invoke-virtual {v3}, Lcom/android/settings/dashboard/DashboardTileView;->getColumnSpan()I
+    invoke-virtual {v3}, Lcom/android/settings_ext/dashboard/DashboardTileView;->getColumnSpan()I
 
     move-result v20
 
@@ -292,7 +292,7 @@
 
     move-object/from16 v0, p0
 
-    iget v0, v0, Lcom/android/settings/dashboard/DashboardContainerView;->mNumColumns:I
+    iget v0, v0, Lcom/android/settings_ext/dashboard/DashboardContainerView;->mNumColumns:I
 
     move/from16 v21, v0
 
@@ -315,7 +315,7 @@
 
     move-object/from16 v0, p0
 
-    iget v0, v0, Lcom/android/settings/dashboard/DashboardContainerView;->mCellGapX:F
+    iget v0, v0, Lcom/android/settings_ext/dashboard/DashboardContainerView;->mCellGapX:F
 
     move/from16 v22, v0
 
@@ -347,7 +347,7 @@
     .restart local v7    # "childRight":I
     .restart local v8    # "childTop":I
     :cond_4
-    invoke-virtual/range {p0 .. p0}, Lcom/android/settings/dashboard/DashboardContainerView;->getPaddingStart()I
+    invoke-virtual/range {p0 .. p0}, Lcom/android/settings_ext/dashboard/DashboardContainerView;->getPaddingStart()I
 
     move-result v18
 
@@ -364,7 +364,7 @@
 
     move-object/from16 v0, p0
 
-    iget v0, v0, Lcom/android/settings/dashboard/DashboardContainerView;->mCellGapY:F
+    iget v0, v0, Lcom/android/settings_ext/dashboard/DashboardContainerView;->mCellGapY:F
 
     move/from16 v22, v0
 
@@ -381,7 +381,7 @@
     goto/16 :goto_1
 
     .line 141
-    .end local v3    # "child":Lcom/android/settings/dashboard/DashboardTileView;
+    .end local v3    # "child":Lcom/android/settings_ext/dashboard/DashboardTileView;
     .end local v4    # "childBottom":I
     .end local v5    # "childHeight":I
     .end local v6    # "childLeft":I
@@ -409,13 +409,13 @@
 
     .line 46
     .local v14, "width":I
-    invoke-virtual/range {p0 .. p0}, Lcom/android/settings/dashboard/DashboardContainerView;->getPaddingLeft()I
+    invoke-virtual/range {p0 .. p0}, Lcom/android/settings_ext/dashboard/DashboardContainerView;->getPaddingLeft()I
 
     move-result v15
 
     sub-int v15, v14, v15
 
-    invoke-virtual/range {p0 .. p0}, Lcom/android/settings/dashboard/DashboardContainerView;->getPaddingRight()I
+    invoke-virtual/range {p0 .. p0}, Lcom/android/settings_ext/dashboard/DashboardContainerView;->getPaddingRight()I
 
     move-result v16
 
@@ -425,7 +425,7 @@
 
     move-object/from16 v0, p0
 
-    iget v0, v0, Lcom/android/settings/dashboard/DashboardContainerView;->mNumColumns:I
+    iget v0, v0, Lcom/android/settings_ext/dashboard/DashboardContainerView;->mNumColumns:I
 
     move/from16 v16, v0
 
@@ -439,7 +439,7 @@
 
     move-object/from16 v0, p0
 
-    iget v0, v0, Lcom/android/settings/dashboard/DashboardContainerView;->mCellGapX:F
+    iget v0, v0, Lcom/android/settings_ext/dashboard/DashboardContainerView;->mCellGapX:F
 
     move/from16 v17, v0
 
@@ -455,7 +455,7 @@
 
     move-object/from16 v0, p0
 
-    iget v0, v0, Lcom/android/settings/dashboard/DashboardContainerView;->mNumColumns:I
+    iget v0, v0, Lcom/android/settings_ext/dashboard/DashboardContainerView;->mNumColumns:I
 
     move/from16 v16, v0
 
@@ -481,7 +481,7 @@
 
     .line 49
     .local v5, "cellWidth":F
-    invoke-virtual/range {p0 .. p0}, Lcom/android/settings/dashboard/DashboardContainerView;->getChildCount()I
+    invoke-virtual/range {p0 .. p0}, Lcom/android/settings_ext/dashboard/DashboardContainerView;->getChildCount()I
 
     move-result v2
 
@@ -504,15 +504,15 @@
     .line 55
     move-object/from16 v0, p0
 
-    invoke-virtual {v0, v8}, Lcom/android/settings/dashboard/DashboardContainerView;->getChildAt(I)Landroid/view/View;
+    invoke-virtual {v0, v8}, Lcom/android/settings_ext/dashboard/DashboardContainerView;->getChildAt(I)Landroid/view/View;
 
     move-result-object v13
 
-    check-cast v13, Lcom/android/settings/dashboard/DashboardTileView;
+    check-cast v13, Lcom/android/settings_ext/dashboard/DashboardTileView;
 
     .line 56
-    .local v13, "v":Lcom/android/settings/dashboard/DashboardTileView;
-    invoke-virtual {v13}, Lcom/android/settings/dashboard/DashboardTileView;->getVisibility()I
+    .local v13, "v":Lcom/android/settings_ext/dashboard/DashboardTileView;
+    invoke-virtual {v13}, Lcom/android/settings_ext/dashboard/DashboardTileView;->getVisibility()I
 
     move-result v15
 
@@ -530,13 +530,13 @@
 
     .line 60
     :cond_0
-    invoke-virtual {v13}, Lcom/android/settings/dashboard/DashboardTileView;->getLayoutParams()Landroid/view/ViewGroup$LayoutParams;
+    invoke-virtual {v13}, Lcom/android/settings_ext/dashboard/DashboardTileView;->getLayoutParams()Landroid/view/ViewGroup$LayoutParams;
 
     move-result-object v9
 
     .line 61
     .local v9, "lp":Landroid/view/ViewGroup$LayoutParams;
-    invoke-virtual {v13}, Lcom/android/settings/dashboard/DashboardTileView;->getColumnSpan()I
+    invoke-virtual {v13}, Lcom/android/settings_ext/dashboard/DashboardTileView;->getColumnSpan()I
 
     move-result v6
 
@@ -556,7 +556,7 @@
 
     move-object/from16 v0, p0
 
-    iget v0, v0, Lcom/android/settings/dashboard/DashboardContainerView;->mCellGapX:F
+    iget v0, v0, Lcom/android/settings_ext/dashboard/DashboardContainerView;->mCellGapX:F
 
     move/from16 v17, v0
 
@@ -579,7 +579,7 @@
 
     move/from16 v1, v16
 
-    invoke-static {v0, v15, v1}, Lcom/android/settings/dashboard/DashboardContainerView;->getChildMeasureSpec(III)I
+    invoke-static {v0, v15, v1}, Lcom/android/settings_ext/dashboard/DashboardContainerView;->getChildMeasureSpec(III)I
 
     move-result v12
 
@@ -595,19 +595,19 @@
 
     move/from16 v1, v16
 
-    invoke-static {v0, v15, v1}, Lcom/android/settings/dashboard/DashboardContainerView;->getChildMeasureSpec(III)I
+    invoke-static {v0, v15, v1}, Lcom/android/settings_ext/dashboard/DashboardContainerView;->getChildMeasureSpec(III)I
 
     move-result v11
 
     .line 67
     .local v11, "newHeightSpec":I
-    invoke-virtual {v13, v12, v11}, Lcom/android/settings/dashboard/DashboardTileView;->measure(II)V
+    invoke-virtual {v13, v12, v11}, Lcom/android/settings_ext/dashboard/DashboardTileView;->measure(II)V
 
     .line 70
     if-gtz v4, :cond_1
 
     .line 71
-    invoke-virtual {v13}, Lcom/android/settings/dashboard/DashboardTileView;->getMeasuredHeight()I
+    invoke-virtual {v13}, Lcom/android/settings_ext/dashboard/DashboardTileView;->getMeasuredHeight()I
 
     move-result v4
 
@@ -625,13 +625,13 @@
     .end local v9    # "lp":Landroid/view/ViewGroup$LayoutParams;
     .end local v11    # "newHeightSpec":I
     .end local v12    # "newWidthSpec":I
-    .end local v13    # "v":Lcom/android/settings/dashboard/DashboardTileView;
+    .end local v13    # "v":Lcom/android/settings_ext/dashboard/DashboardTileView;
     :cond_2
     int-to-float v15, v7
 
     move-object/from16 v0, p0
 
-    iget v0, v0, Lcom/android/settings/dashboard/DashboardContainerView;->mNumColumns:I
+    iget v0, v0, Lcom/android/settings_ext/dashboard/DashboardContainerView;->mNumColumns:I
 
     move/from16 v16, v0
 
@@ -657,12 +657,12 @@
 
     move-object/from16 v0, p0
 
-    iput v15, v0, Lcom/android/settings/dashboard/DashboardContainerView;->mNumRows:I
+    iput v15, v0, Lcom/android/settings_ext/dashboard/DashboardContainerView;->mNumRows:I
 
     .line 80
     move-object/from16 v0, p0
 
-    iget v15, v0, Lcom/android/settings/dashboard/DashboardContainerView;->mNumRows:I
+    iget v15, v0, Lcom/android/settings_ext/dashboard/DashboardContainerView;->mNumRows:I
 
     mul-int/2addr v15, v4
 
@@ -670,7 +670,7 @@
 
     move-object/from16 v0, p0
 
-    iget v0, v0, Lcom/android/settings/dashboard/DashboardContainerView;->mNumRows:I
+    iget v0, v0, Lcom/android/settings_ext/dashboard/DashboardContainerView;->mNumRows:I
 
     move/from16 v16, v0
 
@@ -684,7 +684,7 @@
 
     move-object/from16 v0, p0
 
-    iget v0, v0, Lcom/android/settings/dashboard/DashboardContainerView;->mCellGapY:F
+    iget v0, v0, Lcom/android/settings_ext/dashboard/DashboardContainerView;->mCellGapY:F
 
     move/from16 v17, v0
 
@@ -694,13 +694,13 @@
 
     float-to-int v15, v15
 
-    invoke-virtual/range {p0 .. p0}, Lcom/android/settings/dashboard/DashboardContainerView;->getPaddingTop()I
+    invoke-virtual/range {p0 .. p0}, Lcom/android/settings_ext/dashboard/DashboardContainerView;->getPaddingTop()I
 
     move-result v16
 
     add-int v15, v15, v16
 
-    invoke-virtual/range {p0 .. p0}, Lcom/android/settings/dashboard/DashboardContainerView;->getPaddingBottom()I
+    invoke-virtual/range {p0 .. p0}, Lcom/android/settings_ext/dashboard/DashboardContainerView;->getPaddingBottom()I
 
     move-result v16
 
@@ -710,7 +710,7 @@
     .local v10, "newHeight":I
     move-object/from16 v0, p0
 
-    invoke-virtual {v0, v14, v10}, Lcom/android/settings/dashboard/DashboardContainerView;->setMeasuredDimension(II)V
+    invoke-virtual {v0, v14, v10}, Lcom/android/settings_ext/dashboard/DashboardContainerView;->setMeasuredDimension(II)V
 
     .line 84
     return-void

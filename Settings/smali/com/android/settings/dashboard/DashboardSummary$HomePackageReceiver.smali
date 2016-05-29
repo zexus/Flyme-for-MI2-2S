@@ -1,11 +1,11 @@
-.class Lcom/android/settings/dashboard/DashboardSummary$HomePackageReceiver;
+.class Lcom/android/settings_ext/dashboard/DashboardSummary$HomePackageReceiver;
 .super Landroid/content/BroadcastReceiver;
 .source "DashboardSummary.java"
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/android/settings/dashboard/DashboardSummary;
+    value = Lcom/android/settings_ext/dashboard/DashboardSummary;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -15,30 +15,30 @@
 
 
 # instance fields
-.field final synthetic this$0:Lcom/android/settings/dashboard/DashboardSummary;
+.field final synthetic this$0:Lcom/android/settings_ext/dashboard/DashboardSummary;
 
 
 # direct methods
-.method private constructor <init>(Lcom/android/settings/dashboard/DashboardSummary;)V
+.method private constructor <init>(Lcom/android/settings_ext/dashboard/DashboardSummary;)V
     .locals 0
 
     .prologue
     .line 59
-    iput-object p1, p0, Lcom/android/settings/dashboard/DashboardSummary$HomePackageReceiver;->this$0:Lcom/android/settings/dashboard/DashboardSummary;
+    iput-object p1, p0, Lcom/android/settings_ext/dashboard/DashboardSummary$HomePackageReceiver;->this$0:Lcom/android/settings_ext/dashboard/DashboardSummary;
 
     invoke-direct {p0}, Landroid/content/BroadcastReceiver;-><init>()V
 
     return-void
 .end method
 
-.method synthetic constructor <init>(Lcom/android/settings/dashboard/DashboardSummary;Lcom/android/settings/dashboard/DashboardSummary$1;)V
+.method synthetic constructor <init>(Lcom/android/settings_ext/dashboard/DashboardSummary;Lcom/android/settings_ext/dashboard/DashboardSummary$1;)V
     .locals 0
-    .param p1, "x0"    # Lcom/android/settings/dashboard/DashboardSummary;
-    .param p2, "x1"    # Lcom/android/settings/dashboard/DashboardSummary$1;
+    .param p1, "x0"    # Lcom/android/settings_ext/dashboard/DashboardSummary;
+    .param p2, "x1"    # Lcom/android/settings_ext/dashboard/DashboardSummary$1;
 
     .prologue
     .line 59
-    invoke-direct {p0, p1}, Lcom/android/settings/dashboard/DashboardSummary$HomePackageReceiver;-><init>(Lcom/android/settings/dashboard/DashboardSummary;)V
+    invoke-direct {p0, p1}, Lcom/android/settings_ext/dashboard/DashboardSummary$HomePackageReceiver;-><init>(Lcom/android/settings_ext/dashboard/DashboardSummary;)V
 
     return-void
 .end method
@@ -52,10 +52,10 @@
 
     .prologue
     .line 62
-    iget-object v0, p0, Lcom/android/settings/dashboard/DashboardSummary$HomePackageReceiver;->this$0:Lcom/android/settings/dashboard/DashboardSummary;
+    iget-object v0, p0, Lcom/android/settings_ext/dashboard/DashboardSummary$HomePackageReceiver;->this$0:Lcom/android/settings_ext/dashboard/DashboardSummary;
 
-    # invokes: Lcom/android/settings/dashboard/DashboardSummary;->rebuildUI(Landroid/content/Context;)V
-    invoke-static {v0, p1}, Lcom/android/settings/dashboard/DashboardSummary;->access$000(Lcom/android/settings/dashboard/DashboardSummary;Landroid/content/Context;)V
+    # invokes: Lcom/android/settings_ext/dashboard/DashboardSummary;->rebuildUI(Landroid/content/Context;)V
+    invoke-static {v0, p1}, Lcom/android/settings_ext/dashboard/DashboardSummary;->access$000(Lcom/android/settings_ext/dashboard/DashboardSummary;Landroid/content/Context;)V
 
     .line 63
     return-void

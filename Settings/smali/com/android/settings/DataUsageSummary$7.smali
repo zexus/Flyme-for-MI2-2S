@@ -1,4 +1,4 @@
-.class Lcom/android/settings/DataUsageSummary$7;
+.class Lcom/android/settings_ext/DataUsageSummary$7;
 .super Ljava/lang/Object;
 .source "DataUsageSummary.java"
 
@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/android/settings/DataUsageSummary;
+    value = Lcom/android/settings_ext/DataUsageSummary;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -18,16 +18,16 @@
 
 
 # instance fields
-.field final synthetic this$0:Lcom/android/settings/DataUsageSummary;
+.field final synthetic this$0:Lcom/android/settings_ext/DataUsageSummary;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/DataUsageSummary;)V
+.method constructor <init>(Lcom/android/settings_ext/DataUsageSummary;)V
     .locals 0
 
     .prologue
     .line 1153
-    iput-object p1, p0, Lcom/android/settings/DataUsageSummary$7;->this$0:Lcom/android/settings/DataUsageSummary;
+    iput-object p1, p0, Lcom/android/settings_ext/DataUsageSummary$7;->this$0:Lcom/android/settings_ext/DataUsageSummary;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -42,10 +42,10 @@
 
     .prologue
     .line 1156
-    iget-object v1, p0, Lcom/android/settings/DataUsageSummary$7;->this$0:Lcom/android/settings/DataUsageSummary;
+    iget-object v1, p0, Lcom/android/settings_ext/DataUsageSummary$7;->this$0:Lcom/android/settings_ext/DataUsageSummary;
 
-    # getter for: Lcom/android/settings/DataUsageSummary;->mDisableAtLimit:Landroid/widget/Switch;
-    invoke-static {v1}, Lcom/android/settings/DataUsageSummary;->access$900(Lcom/android/settings/DataUsageSummary;)Landroid/widget/Switch;
+    # getter for: Lcom/android/settings_ext/DataUsageSummary;->mDisableAtLimit:Landroid/widget/Switch;
+    invoke-static {v1}, Lcom/android/settings_ext/DataUsageSummary;->access$900(Lcom/android/settings_ext/DataUsageSummary;)Landroid/widget/Switch;
 
     move-result-object v1
 
@@ -63,9 +63,9 @@
     if-eqz v0, :cond_1
 
     .line 1160
-    iget-object v1, p0, Lcom/android/settings/DataUsageSummary$7;->this$0:Lcom/android/settings/DataUsageSummary;
+    iget-object v1, p0, Lcom/android/settings_ext/DataUsageSummary$7;->this$0:Lcom/android/settings_ext/DataUsageSummary;
 
-    invoke-static {v1}, Lcom/android/settings/DataUsageSummary$ConfirmLimitFragment;->show(Lcom/android/settings/DataUsageSummary;)V
+    invoke-static {v1}, Lcom/android/settings_ext/DataUsageSummary$ConfirmLimitFragment;->show(Lcom/android/settings_ext/DataUsageSummary;)V
 
     .line 1164
     :goto_1
@@ -81,12 +81,12 @@
     .line 1162
     .restart local v0    # "disableAtLimit":Z
     :cond_1
-    iget-object v1, p0, Lcom/android/settings/DataUsageSummary$7;->this$0:Lcom/android/settings/DataUsageSummary;
+    iget-object v1, p0, Lcom/android/settings_ext/DataUsageSummary$7;->this$0:Lcom/android/settings_ext/DataUsageSummary;
 
     const-wide/16 v2, -0x1
 
-    # invokes: Lcom/android/settings/DataUsageSummary;->setPolicyLimitBytes(J)V
-    invoke-static {v1, v2, v3}, Lcom/android/settings/DataUsageSummary;->access$1000(Lcom/android/settings/DataUsageSummary;J)V
+    # invokes: Lcom/android/settings_ext/DataUsageSummary;->setPolicyLimitBytes(J)V
+    invoke-static {v1, v2, v3}, Lcom/android/settings_ext/DataUsageSummary;->access$1000(Lcom/android/settings_ext/DataUsageSummary;J)V
 
     goto :goto_1
 .end method

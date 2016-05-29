@@ -1,4 +1,4 @@
-.class Lcom/android/settings/SettingsActivity$3;
+.class Lcom/android/settings_ext/SettingsActivity$3;
 .super Ljava/lang/Object;
 .source "SettingsActivity.java"
 
@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/android/settings/SettingsActivity;->onCreate(Landroid/os/Bundle;)V
+    value = Lcom/android/settings_ext/SettingsActivity;->onCreate(Landroid/os/Bundle;)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -18,16 +18,16 @@
 
 
 # instance fields
-.field final synthetic this$0:Lcom/android/settings/SettingsActivity;
+.field final synthetic this$0:Lcom/android/settings_ext/SettingsActivity;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/SettingsActivity;)V
+.method constructor <init>(Lcom/android/settings_ext/SettingsActivity;)V
     .locals 0
 
     .prologue
     .line 605
-    iput-object p1, p0, Lcom/android/settings/SettingsActivity$3;->this$0:Lcom/android/settings/SettingsActivity;
+    iput-object p1, p0, Lcom/android/settings_ext/SettingsActivity$3;->this$0:Lcom/android/settings_ext/SettingsActivity;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -42,22 +42,22 @@
 
     .prologue
     .line 607
-    iget-object v0, p0, Lcom/android/settings/SettingsActivity$3;->this$0:Lcom/android/settings/SettingsActivity;
+    iget-object v0, p0, Lcom/android/settings_ext/SettingsActivity$3;->this$0:Lcom/android/settings_ext/SettingsActivity;
 
     const/4 v1, 0x0
 
-    iget-object v2, p0, Lcom/android/settings/SettingsActivity$3;->this$0:Lcom/android/settings/SettingsActivity;
+    iget-object v2, p0, Lcom/android/settings_ext/SettingsActivity$3;->this$0:Lcom/android/settings_ext/SettingsActivity;
 
-    invoke-virtual {v2}, Lcom/android/settings/SettingsActivity;->getResultIntentData()Landroid/content/Intent;
+    invoke-virtual {v2}, Lcom/android/settings_ext/SettingsActivity;->getResultIntentData()Landroid/content/Intent;
 
     move-result-object v2
 
-    invoke-virtual {v0, v1, v2}, Lcom/android/settings/SettingsActivity;->setResult(ILandroid/content/Intent;)V
+    invoke-virtual {v0, v1, v2}, Lcom/android/settings_ext/SettingsActivity;->setResult(ILandroid/content/Intent;)V
 
     .line 608
-    iget-object v0, p0, Lcom/android/settings/SettingsActivity$3;->this$0:Lcom/android/settings/SettingsActivity;
+    iget-object v0, p0, Lcom/android/settings_ext/SettingsActivity$3;->this$0:Lcom/android/settings_ext/SettingsActivity;
 
-    invoke-virtual {v0}, Lcom/android/settings/SettingsActivity;->finish()V
+    invoke-virtual {v0}, Lcom/android/settings_ext/SettingsActivity;->finish()V
 
     .line 609
     return-void

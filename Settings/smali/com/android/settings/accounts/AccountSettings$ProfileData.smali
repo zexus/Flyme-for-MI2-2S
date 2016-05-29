@@ -1,11 +1,11 @@
-.class Lcom/android/settings/accounts/AccountSettings$ProfileData;
+.class Lcom/android/settings_ext/accounts/AccountSettings$ProfileData;
 .super Ljava/lang/Object;
 .source "AccountSettings.java"
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/android/settings/accounts/AccountSettings;
+    value = Lcom/android/settings_ext/accounts/AccountSettings;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -17,7 +17,7 @@
 # instance fields
 .field public addAccountPreference:Landroid/preference/Preference;
 
-.field public authenticatorHelper:Lcom/android/settings/accounts/AuthenticatorHelper;
+.field public authenticatorHelper:Lcom/android/settings_ext/accounts/AuthenticatorHelper;
 
 .field public preferenceGroup:Landroid/preference/PreferenceGroup;
 
@@ -37,13 +37,13 @@
     return-void
 .end method
 
-.method synthetic constructor <init>(Lcom/android/settings/accounts/AccountSettings$1;)V
+.method synthetic constructor <init>(Lcom/android/settings_ext/accounts/AccountSettings$1;)V
     .locals 0
-    .param p1, "x0"    # Lcom/android/settings/accounts/AccountSettings$1;
+    .param p1, "x0"    # Lcom/android/settings_ext/accounts/AccountSettings$1;
 
     .prologue
     .line 93
-    invoke-direct {p0}, Lcom/android/settings/accounts/AccountSettings$ProfileData;-><init>()V
+    invoke-direct {p0}, Lcom/android/settings_ext/accounts/AccountSettings$ProfileData;-><init>()V
 
     return-void
 .end method

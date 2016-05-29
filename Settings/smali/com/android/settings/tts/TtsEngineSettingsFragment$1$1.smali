@@ -1,4 +1,4 @@
-.class Lcom/android/settings/tts/TtsEngineSettingsFragment$1$1;
+.class Lcom/android/settings_ext/tts/TtsEngineSettingsFragment$1$1;
 .super Ljava/lang/Object;
 .source "TtsEngineSettingsFragment.java"
 
@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/android/settings/tts/TtsEngineSettingsFragment$1;->onInit(I)V
+    value = Lcom/android/settings_ext/tts/TtsEngineSettingsFragment$1;->onInit(I)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -18,16 +18,16 @@
 
 
 # instance fields
-.field final synthetic this$1:Lcom/android/settings/tts/TtsEngineSettingsFragment$1;
+.field final synthetic this$1:Lcom/android/settings_ext/tts/TtsEngineSettingsFragment$1;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/tts/TtsEngineSettingsFragment$1;)V
+.method constructor <init>(Lcom/android/settings_ext/tts/TtsEngineSettingsFragment$1;)V
     .locals 0
 
     .prologue
     .line 77
-    iput-object p1, p0, Lcom/android/settings/tts/TtsEngineSettingsFragment$1$1;->this$1:Lcom/android/settings/tts/TtsEngineSettingsFragment$1;
+    iput-object p1, p0, Lcom/android/settings_ext/tts/TtsEngineSettingsFragment$1$1;->this$1:Lcom/android/settings_ext/tts/TtsEngineSettingsFragment$1;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -41,12 +41,12 @@
 
     .prologue
     .line 80
-    iget-object v0, p0, Lcom/android/settings/tts/TtsEngineSettingsFragment$1$1;->this$1:Lcom/android/settings/tts/TtsEngineSettingsFragment$1;
+    iget-object v0, p0, Lcom/android/settings_ext/tts/TtsEngineSettingsFragment$1$1;->this$1:Lcom/android/settings_ext/tts/TtsEngineSettingsFragment$1;
 
-    iget-object v0, v0, Lcom/android/settings/tts/TtsEngineSettingsFragment$1;->this$0:Lcom/android/settings/tts/TtsEngineSettingsFragment;
+    iget-object v0, v0, Lcom/android/settings_ext/tts/TtsEngineSettingsFragment$1;->this$0:Lcom/android/settings_ext/tts/TtsEngineSettingsFragment;
 
-    # getter for: Lcom/android/settings/tts/TtsEngineSettingsFragment;->mLocalePreference:Landroid/preference/ListPreference;
-    invoke-static {v0}, Lcom/android/settings/tts/TtsEngineSettingsFragment;->access$000(Lcom/android/settings/tts/TtsEngineSettingsFragment;)Landroid/preference/ListPreference;
+    # getter for: Lcom/android/settings_ext/tts/TtsEngineSettingsFragment;->mLocalePreference:Landroid/preference/ListPreference;
+    invoke-static {v0}, Lcom/android/settings_ext/tts/TtsEngineSettingsFragment;->access$000(Lcom/android/settings_ext/tts/TtsEngineSettingsFragment;)Landroid/preference/ListPreference;
 
     move-result-object v0
 

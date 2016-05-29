@@ -1,4 +1,4 @@
-.class public final Lcom/android/settings/bluetooth/BluetoothPairingRequest;
+.class public final Lcom/android/settings_ext/bluetooth/BluetoothPairingRequest;
 .super Landroid/content/BroadcastReceiver;
 .source "BluetoothPairingRequest.java"
 
@@ -92,7 +92,7 @@
 
     .line 53
     .local v11, "pairingIntent":Landroid/content/Intent;
-    const-class v18, Lcom/android/settings/bluetooth/BluetoothPairingDialog;
+    const-class v18, Lcom/android/settings_ext/bluetooth/BluetoothPairingDialog;
 
     move-object/from16 v0, p1
 
@@ -222,7 +222,7 @@
 
     move-object/from16 v0, p1
 
-    invoke-static {v0, v7}, Lcom/android/settings/bluetooth/LocalBluetoothPreferences;->shouldShowDialogInForeground(Landroid/content/Context;Ljava/lang/String;)Z
+    invoke-static {v0, v7}, Lcom/android/settings_ext/bluetooth/LocalBluetoothPreferences;->shouldShowDialogInForeground(Landroid/content/Context;Ljava/lang/String;)Z
 
     move-result v18
 
@@ -477,7 +477,7 @@
 
     .line 107
     .restart local v11    # "pairingIntent":Landroid/content/Intent;
-    const-class v18, Lcom/android/settings/bluetooth/BluetoothPairingDialog;
+    const-class v18, Lcom/android/settings_ext/bluetooth/BluetoothPairingDialog;
 
     move-object/from16 v0, p1
 

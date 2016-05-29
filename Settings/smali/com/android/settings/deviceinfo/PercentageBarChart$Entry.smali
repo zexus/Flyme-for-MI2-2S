@@ -1,4 +1,4 @@
-.class public Lcom/android/settings/deviceinfo/PercentageBarChart$Entry;
+.class public Lcom/android/settings_ext/deviceinfo/PercentageBarChart$Entry;
 .super Ljava/lang/Object;
 .source "PercentageBarChart.java"
 
@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/android/settings/deviceinfo/PercentageBarChart;
+    value = Lcom/android/settings_ext/deviceinfo/PercentageBarChart;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -21,7 +21,7 @@
         "Ljava/lang/Object;",
         "Ljava/lang/Comparable",
         "<",
-        "Lcom/android/settings/deviceinfo/PercentageBarChart$Entry;",
+        "Lcom/android/settings_ext/deviceinfo/PercentageBarChart$Entry;",
         ">;"
     }
 .end annotation
@@ -47,13 +47,13 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 48
-    iput p1, p0, Lcom/android/settings/deviceinfo/PercentageBarChart$Entry;->order:I
+    iput p1, p0, Lcom/android/settings_ext/deviceinfo/PercentageBarChart$Entry;->order:I
 
     .line 49
-    iput p2, p0, Lcom/android/settings/deviceinfo/PercentageBarChart$Entry;->percentage:F
+    iput p2, p0, Lcom/android/settings_ext/deviceinfo/PercentageBarChart$Entry;->percentage:F
 
     .line 50
-    iput-object p3, p0, Lcom/android/settings/deviceinfo/PercentageBarChart$Entry;->paint:Landroid/graphics/Paint;
+    iput-object p3, p0, Lcom/android/settings_ext/deviceinfo/PercentageBarChart$Entry;->paint:Landroid/graphics/Paint;
 
     .line 51
     return-void
@@ -61,15 +61,15 @@
 
 
 # virtual methods
-.method public compareTo(Lcom/android/settings/deviceinfo/PercentageBarChart$Entry;)I
+.method public compareTo(Lcom/android/settings_ext/deviceinfo/PercentageBarChart$Entry;)I
     .locals 2
-    .param p1, "another"    # Lcom/android/settings/deviceinfo/PercentageBarChart$Entry;
+    .param p1, "another"    # Lcom/android/settings_ext/deviceinfo/PercentageBarChart$Entry;
 
     .prologue
     .line 55
-    iget v0, p0, Lcom/android/settings/deviceinfo/PercentageBarChart$Entry;->order:I
+    iget v0, p0, Lcom/android/settings_ext/deviceinfo/PercentageBarChart$Entry;->order:I
 
-    iget v1, p1, Lcom/android/settings/deviceinfo/PercentageBarChart$Entry;->order:I
+    iget v1, p1, Lcom/android/settings_ext/deviceinfo/PercentageBarChart$Entry;->order:I
 
     sub-int/2addr v0, v1
 
@@ -82,10 +82,10 @@
 
     .prologue
     .line 42
-    check-cast p1, Lcom/android/settings/deviceinfo/PercentageBarChart$Entry;
+    check-cast p1, Lcom/android/settings_ext/deviceinfo/PercentageBarChart$Entry;
 
     .end local p1    # "x0":Ljava/lang/Object;
-    invoke-virtual {p0, p1}, Lcom/android/settings/deviceinfo/PercentageBarChart$Entry;->compareTo(Lcom/android/settings/deviceinfo/PercentageBarChart$Entry;)I
+    invoke-virtual {p0, p1}, Lcom/android/settings_ext/deviceinfo/PercentageBarChart$Entry;->compareTo(Lcom/android/settings_ext/deviceinfo/PercentageBarChart$Entry;)I
 
     move-result v0
 

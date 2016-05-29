@@ -1,11 +1,11 @@
-.class Lcom/android/settings/wfd/WifiDisplaySettings$1;
+.class Lcom/android/settings_ext/wfd/WifiDisplaySettings$1;
 .super Landroid/preference/Preference;
 .source "WifiDisplaySettings.java"
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/android/settings/wfd/WifiDisplaySettings;->buildCertificationMenu(Landroid/preference/PreferenceScreen;)V
+    value = Lcom/android/settings_ext/wfd/WifiDisplaySettings;->buildCertificationMenu(Landroid/preference/PreferenceScreen;)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -15,17 +15,17 @@
 
 
 # instance fields
-.field final synthetic this$0:Lcom/android/settings/wfd/WifiDisplaySettings;
+.field final synthetic this$0:Lcom/android/settings_ext/wfd/WifiDisplaySettings;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/wfd/WifiDisplaySettings;Landroid/content/Context;)V
+.method constructor <init>(Lcom/android/settings_ext/wfd/WifiDisplaySettings;Landroid/content/Context;)V
     .locals 0
     .param p2, "x0"    # Landroid/content/Context;
 
     .prologue
     .line 326
-    iput-object p1, p0, Lcom/android/settings/wfd/WifiDisplaySettings$1;->this$0:Lcom/android/settings/wfd/WifiDisplaySettings;
+    iput-object p1, p0, Lcom/android/settings_ext/wfd/WifiDisplaySettings$1;->this$0:Lcom/android/settings_ext/wfd/WifiDisplaySettings;
 
     invoke-direct {p0, p2}, Landroid/preference/Preference;-><init>(Landroid/content/Context;)V
 
@@ -44,9 +44,9 @@
     if-nez p1, :cond_0
 
     .line 331
-    iget-object v3, p0, Lcom/android/settings/wfd/WifiDisplaySettings$1;->this$0:Lcom/android/settings/wfd/WifiDisplaySettings;
+    iget-object v3, p0, Lcom/android/settings_ext/wfd/WifiDisplaySettings$1;->this$0:Lcom/android/settings_ext/wfd/WifiDisplaySettings;
 
-    invoke-virtual {v3}, Lcom/android/settings/wfd/WifiDisplaySettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {v3}, Lcom/android/settings_ext/wfd/WifiDisplaySettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v3
 
@@ -87,9 +87,9 @@
     invoke-virtual {v0, v3}, Landroid/widget/Button;->setText(I)V
 
     .line 340
-    new-instance v3, Lcom/android/settings/wfd/WifiDisplaySettings$1$1;
+    new-instance v3, Lcom/android/settings_ext/wfd/WifiDisplaySettings$1$1;
 
-    invoke-direct {v3, p0}, Lcom/android/settings/wfd/WifiDisplaySettings$1$1;-><init>(Lcom/android/settings/wfd/WifiDisplaySettings$1;)V
+    invoke-direct {v3, p0}, Lcom/android/settings_ext/wfd/WifiDisplaySettings$1$1;-><init>(Lcom/android/settings_ext/wfd/WifiDisplaySettings$1;)V
 
     invoke-virtual {v0, v3}, Landroid/widget/Button;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
@@ -110,9 +110,9 @@
     invoke-virtual {v0, v3}, Landroid/widget/Button;->setText(I)V
 
     .line 349
-    new-instance v3, Lcom/android/settings/wfd/WifiDisplaySettings$1$2;
+    new-instance v3, Lcom/android/settings_ext/wfd/WifiDisplaySettings$1$2;
 
-    invoke-direct {v3, p0}, Lcom/android/settings/wfd/WifiDisplaySettings$1$2;-><init>(Lcom/android/settings/wfd/WifiDisplaySettings$1;)V
+    invoke-direct {v3, p0}, Lcom/android/settings_ext/wfd/WifiDisplaySettings$1$2;-><init>(Lcom/android/settings_ext/wfd/WifiDisplaySettings$1;)V
 
     invoke-virtual {v0, v3}, Landroid/widget/Button;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 

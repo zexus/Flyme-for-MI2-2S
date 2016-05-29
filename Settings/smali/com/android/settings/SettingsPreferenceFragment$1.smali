@@ -1,11 +1,11 @@
-.class Lcom/android/settings/SettingsPreferenceFragment$1;
+.class Lcom/android/settings_ext/SettingsPreferenceFragment$1;
 .super Landroid/database/DataSetObserver;
 .source "SettingsPreferenceFragment.java"
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/android/settings/SettingsPreferenceFragment;
+    value = Lcom/android/settings_ext/SettingsPreferenceFragment;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -15,16 +15,16 @@
 
 
 # instance fields
-.field final synthetic this$0:Lcom/android/settings/SettingsPreferenceFragment;
+.field final synthetic this$0:Lcom/android/settings_ext/SettingsPreferenceFragment;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/SettingsPreferenceFragment;)V
+.method constructor <init>(Lcom/android/settings_ext/SettingsPreferenceFragment;)V
     .locals 0
 
     .prologue
     .line 71
-    iput-object p1, p0, Lcom/android/settings/SettingsPreferenceFragment$1;->this$0:Lcom/android/settings/SettingsPreferenceFragment;
+    iput-object p1, p0, Lcom/android/settings_ext/SettingsPreferenceFragment$1;->this$0:Lcom/android/settings_ext/SettingsPreferenceFragment;
 
     invoke-direct {p0}, Landroid/database/DataSetObserver;-><init>()V
 
@@ -38,9 +38,9 @@
 
     .prologue
     .line 74
-    iget-object v0, p0, Lcom/android/settings/SettingsPreferenceFragment$1;->this$0:Lcom/android/settings/SettingsPreferenceFragment;
+    iget-object v0, p0, Lcom/android/settings_ext/SettingsPreferenceFragment$1;->this$0:Lcom/android/settings_ext/SettingsPreferenceFragment;
 
-    invoke-virtual {v0}, Lcom/android/settings/SettingsPreferenceFragment;->highlightPreferenceIfNeeded()V
+    invoke-virtual {v0}, Lcom/android/settings_ext/SettingsPreferenceFragment;->highlightPreferenceIfNeeded()V
 
     .line 75
     return-void
@@ -51,9 +51,9 @@
 
     .prologue
     .line 79
-    iget-object v0, p0, Lcom/android/settings/SettingsPreferenceFragment$1;->this$0:Lcom/android/settings/SettingsPreferenceFragment;
+    iget-object v0, p0, Lcom/android/settings_ext/SettingsPreferenceFragment$1;->this$0:Lcom/android/settings_ext/SettingsPreferenceFragment;
 
-    invoke-virtual {v0}, Lcom/android/settings/SettingsPreferenceFragment;->highlightPreferenceIfNeeded()V
+    invoke-virtual {v0}, Lcom/android/settings_ext/SettingsPreferenceFragment;->highlightPreferenceIfNeeded()V
 
     .line 80
     return-void

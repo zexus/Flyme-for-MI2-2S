@@ -1,11 +1,11 @@
-.class Lcom/android/settings/ChooseLockPassword$ChooseLockPasswordFragment$1;
+.class Lcom/android/settings_ext/ChooseLockPassword$ChooseLockPasswordFragment$1;
 .super Landroid/os/Handler;
 .source "ChooseLockPassword.java"
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/android/settings/ChooseLockPassword$ChooseLockPasswordFragment;
+    value = Lcom/android/settings_ext/ChooseLockPassword$ChooseLockPasswordFragment;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -15,16 +15,16 @@
 
 
 # instance fields
-.field final synthetic this$0:Lcom/android/settings/ChooseLockPassword$ChooseLockPasswordFragment;
+.field final synthetic this$0:Lcom/android/settings_ext/ChooseLockPassword$ChooseLockPasswordFragment;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/ChooseLockPassword$ChooseLockPasswordFragment;)V
+.method constructor <init>(Lcom/android/settings_ext/ChooseLockPassword$ChooseLockPasswordFragment;)V
     .locals 0
 
     .prologue
     .line 130
-    iput-object p1, p0, Lcom/android/settings/ChooseLockPassword$ChooseLockPasswordFragment$1;->this$0:Lcom/android/settings/ChooseLockPassword$ChooseLockPasswordFragment;
+    iput-object p1, p0, Lcom/android/settings_ext/ChooseLockPassword$ChooseLockPasswordFragment$1;->this$0:Lcom/android/settings_ext/ChooseLockPassword$ChooseLockPasswordFragment;
 
     invoke-direct {p0}, Landroid/os/Handler;-><init>()V
 
@@ -46,13 +46,13 @@
     if-ne v0, v1, :cond_0
 
     .line 134
-    iget-object v1, p0, Lcom/android/settings/ChooseLockPassword$ChooseLockPasswordFragment$1;->this$0:Lcom/android/settings/ChooseLockPassword$ChooseLockPasswordFragment;
+    iget-object v1, p0, Lcom/android/settings_ext/ChooseLockPassword$ChooseLockPasswordFragment$1;->this$0:Lcom/android/settings_ext/ChooseLockPassword$ChooseLockPasswordFragment;
 
     iget-object v0, p1, Landroid/os/Message;->obj:Ljava/lang/Object;
 
-    check-cast v0, Lcom/android/settings/ChooseLockPassword$ChooseLockPasswordFragment$Stage;
+    check-cast v0, Lcom/android/settings_ext/ChooseLockPassword$ChooseLockPasswordFragment$Stage;
 
-    invoke-virtual {v1, v0}, Lcom/android/settings/ChooseLockPassword$ChooseLockPasswordFragment;->updateStage(Lcom/android/settings/ChooseLockPassword$ChooseLockPasswordFragment$Stage;)V
+    invoke-virtual {v1, v0}, Lcom/android/settings_ext/ChooseLockPassword$ChooseLockPasswordFragment;->updateStage(Lcom/android/settings_ext/ChooseLockPassword$ChooseLockPasswordFragment$Stage;)V
 
     .line 136
     :cond_0

@@ -1,11 +1,11 @@
-.class final Lcom/android/settings/notification/NotificationSettings$SettingsObserver;
+.class final Lcom/android/settings_ext/notification/NotificationSettings$SettingsObserver;
 .super Landroid/database/ContentObserver;
 .source "NotificationSettings.java"
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/android/settings/notification/NotificationSettings;
+    value = Lcom/android/settings_ext/notification/NotificationSettings;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -23,20 +23,20 @@
 
 .field private final VIBRATE_WHEN_RINGING_URI:Landroid/net/Uri;
 
-.field final synthetic this$0:Lcom/android/settings/notification/NotificationSettings;
+.field final synthetic this$0:Lcom/android/settings_ext/notification/NotificationSettings;
 
 
 # direct methods
-.method public constructor <init>(Lcom/android/settings/notification/NotificationSettings;)V
+.method public constructor <init>(Lcom/android/settings_ext/notification/NotificationSettings;)V
     .locals 1
 
     .prologue
     .line 509
-    iput-object p1, p0, Lcom/android/settings/notification/NotificationSettings$SettingsObserver;->this$0:Lcom/android/settings/notification/NotificationSettings;
+    iput-object p1, p0, Lcom/android/settings_ext/notification/NotificationSettings$SettingsObserver;->this$0:Lcom/android/settings_ext/notification/NotificationSettings;
 
     .line 510
-    # getter for: Lcom/android/settings/notification/NotificationSettings;->mHandler:Lcom/android/settings/notification/NotificationSettings$H;
-    invoke-static {p1}, Lcom/android/settings/notification/NotificationSettings;->access$300(Lcom/android/settings/notification/NotificationSettings;)Lcom/android/settings/notification/NotificationSettings$H;
+    # getter for: Lcom/android/settings_ext/notification/NotificationSettings;->mHandler:Lcom/android/settings_ext/notification/NotificationSettings$H;
+    invoke-static {p1}, Lcom/android/settings_ext/notification/NotificationSettings;->access$300(Lcom/android/settings_ext/notification/NotificationSettings;)Lcom/android/settings_ext/notification/NotificationSettings$H;
 
     move-result-object v0
 
@@ -49,7 +49,7 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/notification/NotificationSettings$SettingsObserver;->VIBRATE_WHEN_RINGING_URI:Landroid/net/Uri;
+    iput-object v0, p0, Lcom/android/settings_ext/notification/NotificationSettings$SettingsObserver;->VIBRATE_WHEN_RINGING_URI:Landroid/net/Uri;
 
     .line 502
     const-string v0, "notification_light_pulse"
@@ -58,7 +58,7 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/notification/NotificationSettings$SettingsObserver;->NOTIFICATION_LIGHT_PULSE_URI:Landroid/net/Uri;
+    iput-object v0, p0, Lcom/android/settings_ext/notification/NotificationSettings$SettingsObserver;->NOTIFICATION_LIGHT_PULSE_URI:Landroid/net/Uri;
 
     .line 504
     const-string v0, "lock_screen_allow_private_notifications"
@@ -67,7 +67,7 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/notification/NotificationSettings$SettingsObserver;->LOCK_SCREEN_PRIVATE_URI:Landroid/net/Uri;
+    iput-object v0, p0, Lcom/android/settings_ext/notification/NotificationSettings$SettingsObserver;->LOCK_SCREEN_PRIVATE_URI:Landroid/net/Uri;
 
     .line 506
     const-string v0, "lock_screen_show_notifications"
@@ -76,7 +76,7 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/notification/NotificationSettings$SettingsObserver;->LOCK_SCREEN_SHOW_URI:Landroid/net/Uri;
+    iput-object v0, p0, Lcom/android/settings_ext/notification/NotificationSettings$SettingsObserver;->LOCK_SCREEN_SHOW_URI:Landroid/net/Uri;
 
     .line 511
     return-void
@@ -94,7 +94,7 @@
     invoke-super {p0, p1, p2}, Landroid/database/ContentObserver;->onChange(ZLandroid/net/Uri;)V
 
     .line 528
-    iget-object v0, p0, Lcom/android/settings/notification/NotificationSettings$SettingsObserver;->VIBRATE_WHEN_RINGING_URI:Landroid/net/Uri;
+    iget-object v0, p0, Lcom/android/settings_ext/notification/NotificationSettings$SettingsObserver;->VIBRATE_WHEN_RINGING_URI:Landroid/net/Uri;
 
     invoke-virtual {v0, p2}, Landroid/net/Uri;->equals(Ljava/lang/Object;)Z
 
@@ -103,14 +103,14 @@
     if-eqz v0, :cond_0
 
     .line 529
-    iget-object v0, p0, Lcom/android/settings/notification/NotificationSettings$SettingsObserver;->this$0:Lcom/android/settings/notification/NotificationSettings;
+    iget-object v0, p0, Lcom/android/settings_ext/notification/NotificationSettings$SettingsObserver;->this$0:Lcom/android/settings_ext/notification/NotificationSettings;
 
-    # invokes: Lcom/android/settings/notification/NotificationSettings;->updateVibrateWhenRinging()V
-    invoke-static {v0}, Lcom/android/settings/notification/NotificationSettings;->access$1400(Lcom/android/settings/notification/NotificationSettings;)V
+    # invokes: Lcom/android/settings_ext/notification/NotificationSettings;->updateVibrateWhenRinging()V
+    invoke-static {v0}, Lcom/android/settings_ext/notification/NotificationSettings;->access$1400(Lcom/android/settings_ext/notification/NotificationSettings;)V
 
     .line 531
     :cond_0
-    iget-object v0, p0, Lcom/android/settings/notification/NotificationSettings$SettingsObserver;->NOTIFICATION_LIGHT_PULSE_URI:Landroid/net/Uri;
+    iget-object v0, p0, Lcom/android/settings_ext/notification/NotificationSettings$SettingsObserver;->NOTIFICATION_LIGHT_PULSE_URI:Landroid/net/Uri;
 
     invoke-virtual {v0, p2}, Landroid/net/Uri;->equals(Ljava/lang/Object;)Z
 
@@ -119,14 +119,14 @@
     if-eqz v0, :cond_1
 
     .line 532
-    iget-object v0, p0, Lcom/android/settings/notification/NotificationSettings$SettingsObserver;->this$0:Lcom/android/settings/notification/NotificationSettings;
+    iget-object v0, p0, Lcom/android/settings_ext/notification/NotificationSettings$SettingsObserver;->this$0:Lcom/android/settings_ext/notification/NotificationSettings;
 
-    # invokes: Lcom/android/settings/notification/NotificationSettings;->updatePulse()V
-    invoke-static {v0}, Lcom/android/settings/notification/NotificationSettings;->access$1500(Lcom/android/settings/notification/NotificationSettings;)V
+    # invokes: Lcom/android/settings_ext/notification/NotificationSettings;->updatePulse()V
+    invoke-static {v0}, Lcom/android/settings_ext/notification/NotificationSettings;->access$1500(Lcom/android/settings_ext/notification/NotificationSettings;)V
 
     .line 534
     :cond_1
-    iget-object v0, p0, Lcom/android/settings/notification/NotificationSettings$SettingsObserver;->LOCK_SCREEN_PRIVATE_URI:Landroid/net/Uri;
+    iget-object v0, p0, Lcom/android/settings_ext/notification/NotificationSettings$SettingsObserver;->LOCK_SCREEN_PRIVATE_URI:Landroid/net/Uri;
 
     invoke-virtual {v0, p2}, Landroid/net/Uri;->equals(Ljava/lang/Object;)Z
 
@@ -134,7 +134,7 @@
 
     if-nez v0, :cond_2
 
-    iget-object v0, p0, Lcom/android/settings/notification/NotificationSettings$SettingsObserver;->LOCK_SCREEN_SHOW_URI:Landroid/net/Uri;
+    iget-object v0, p0, Lcom/android/settings_ext/notification/NotificationSettings$SettingsObserver;->LOCK_SCREEN_SHOW_URI:Landroid/net/Uri;
 
     invoke-virtual {v0, p2}, Landroid/net/Uri;->equals(Ljava/lang/Object;)Z
 
@@ -144,10 +144,10 @@
 
     .line 535
     :cond_2
-    iget-object v0, p0, Lcom/android/settings/notification/NotificationSettings$SettingsObserver;->this$0:Lcom/android/settings/notification/NotificationSettings;
+    iget-object v0, p0, Lcom/android/settings_ext/notification/NotificationSettings$SettingsObserver;->this$0:Lcom/android/settings_ext/notification/NotificationSettings;
 
-    # invokes: Lcom/android/settings/notification/NotificationSettings;->updateLockscreenNotifications()V
-    invoke-static {v0}, Lcom/android/settings/notification/NotificationSettings;->access$1600(Lcom/android/settings/notification/NotificationSettings;)V
+    # invokes: Lcom/android/settings_ext/notification/NotificationSettings;->updateLockscreenNotifications()V
+    invoke-static {v0}, Lcom/android/settings_ext/notification/NotificationSettings;->access$1600(Lcom/android/settings_ext/notification/NotificationSettings;)V
 
     .line 537
     :cond_3
@@ -162,10 +162,10 @@
     const/4 v2, 0x0
 
     .line 514
-    iget-object v1, p0, Lcom/android/settings/notification/NotificationSettings$SettingsObserver;->this$0:Lcom/android/settings/notification/NotificationSettings;
+    iget-object v1, p0, Lcom/android/settings_ext/notification/NotificationSettings$SettingsObserver;->this$0:Lcom/android/settings_ext/notification/NotificationSettings;
 
-    # invokes: Lcom/android/settings/notification/NotificationSettings;->getContentResolver()Landroid/content/ContentResolver;
-    invoke-static {v1}, Lcom/android/settings/notification/NotificationSettings;->access$1300(Lcom/android/settings/notification/NotificationSettings;)Landroid/content/ContentResolver;
+    # invokes: Lcom/android/settings_ext/notification/NotificationSettings;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-static {v1}, Lcom/android/settings_ext/notification/NotificationSettings;->access$1300(Lcom/android/settings_ext/notification/NotificationSettings;)Landroid/content/ContentResolver;
 
     move-result-object v0
 
@@ -174,22 +174,22 @@
     if-eqz p1, :cond_0
 
     .line 516
-    iget-object v1, p0, Lcom/android/settings/notification/NotificationSettings$SettingsObserver;->VIBRATE_WHEN_RINGING_URI:Landroid/net/Uri;
+    iget-object v1, p0, Lcom/android/settings_ext/notification/NotificationSettings$SettingsObserver;->VIBRATE_WHEN_RINGING_URI:Landroid/net/Uri;
 
     invoke-virtual {v0, v1, v2, p0}, Landroid/content/ContentResolver;->registerContentObserver(Landroid/net/Uri;ZLandroid/database/ContentObserver;)V
 
     .line 517
-    iget-object v1, p0, Lcom/android/settings/notification/NotificationSettings$SettingsObserver;->NOTIFICATION_LIGHT_PULSE_URI:Landroid/net/Uri;
+    iget-object v1, p0, Lcom/android/settings_ext/notification/NotificationSettings$SettingsObserver;->NOTIFICATION_LIGHT_PULSE_URI:Landroid/net/Uri;
 
     invoke-virtual {v0, v1, v2, p0}, Landroid/content/ContentResolver;->registerContentObserver(Landroid/net/Uri;ZLandroid/database/ContentObserver;)V
 
     .line 518
-    iget-object v1, p0, Lcom/android/settings/notification/NotificationSettings$SettingsObserver;->LOCK_SCREEN_PRIVATE_URI:Landroid/net/Uri;
+    iget-object v1, p0, Lcom/android/settings_ext/notification/NotificationSettings$SettingsObserver;->LOCK_SCREEN_PRIVATE_URI:Landroid/net/Uri;
 
     invoke-virtual {v0, v1, v2, p0}, Landroid/content/ContentResolver;->registerContentObserver(Landroid/net/Uri;ZLandroid/database/ContentObserver;)V
 
     .line 519
-    iget-object v1, p0, Lcom/android/settings/notification/NotificationSettings$SettingsObserver;->LOCK_SCREEN_SHOW_URI:Landroid/net/Uri;
+    iget-object v1, p0, Lcom/android/settings_ext/notification/NotificationSettings$SettingsObserver;->LOCK_SCREEN_SHOW_URI:Landroid/net/Uri;
 
     invoke-virtual {v0, v1, v2, p0}, Landroid/content/ContentResolver;->registerContentObserver(Landroid/net/Uri;ZLandroid/database/ContentObserver;)V
 

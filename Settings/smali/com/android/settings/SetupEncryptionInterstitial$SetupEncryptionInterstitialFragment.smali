@@ -1,11 +1,11 @@
-.class public Lcom/android/settings/SetupEncryptionInterstitial$SetupEncryptionInterstitialFragment;
-.super Lcom/android/settings/EncryptionInterstitial$EncryptionInterstitialFragment;
+.class public Lcom/android/settings_ext/SetupEncryptionInterstitial$SetupEncryptionInterstitialFragment;
+.super Lcom/android/settings_ext/EncryptionInterstitial$EncryptionInterstitialFragment;
 .source "SetupEncryptionInterstitial.java"
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/android/settings/SetupEncryptionInterstitial;
+    value = Lcom/android/settings_ext/SetupEncryptionInterstitial;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -20,7 +20,7 @@
 
     .prologue
     .line 85
-    invoke-direct {p0}, Lcom/android/settings/EncryptionInterstitial$EncryptionInterstitialFragment;-><init>()V
+    invoke-direct {p0}, Lcom/android/settings_ext/EncryptionInterstitial$EncryptionInterstitialFragment;-><init>()V
 
     return-void
 .end method
@@ -30,7 +30,7 @@
 
     .prologue
     .line 98
-    invoke-virtual {p0}, Lcom/android/settings/SetupEncryptionInterstitial$SetupEncryptionInterstitialFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/SetupEncryptionInterstitial$SetupEncryptionInterstitialFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v1
 
@@ -107,7 +107,7 @@
 
     .line 92
     .local v1, "setupContent":Landroid/view/ViewGroup;
-    invoke-super {p0, p1, v1, p3}, Lcom/android/settings/EncryptionInterstitial$EncryptionInterstitialFragment;->onCreateView(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;
+    invoke-super {p0, p1, v1, p3}, Lcom/android/settings_ext/EncryptionInterstitial$EncryptionInterstitialFragment;->onCreateView(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;
 
     move-result-object v0
 
@@ -126,36 +126,36 @@
 
     .prologue
     .line 112
-    invoke-super {p0, p1, p2}, Lcom/android/settings/EncryptionInterstitial$EncryptionInterstitialFragment;->onViewCreated(Landroid/view/View;Landroid/os/Bundle;)V
+    invoke-super {p0, p1, p2}, Lcom/android/settings_ext/EncryptionInterstitial$EncryptionInterstitialFragment;->onViewCreated(Landroid/view/View;Landroid/os/Bundle;)V
 
     .line 113
-    invoke-virtual {p0}, Lcom/android/settings/SetupEncryptionInterstitial$SetupEncryptionInterstitialFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/SetupEncryptionInterstitial$SetupEncryptionInterstitialFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v1
 
     const v2, 0x7f0200cf
 
-    invoke-static {v1, v2}, Lcom/android/settings/SetupWizardUtils;->setIllustration(Landroid/app/Activity;I)V
+    invoke-static {v1, v2}, Lcom/android/settings_ext/SetupWizardUtils;->setIllustration(Landroid/app/Activity;I)V
 
     .line 115
-    invoke-direct {p0}, Lcom/android/settings/SetupEncryptionInterstitial$SetupEncryptionInterstitialFragment;->getHeaderTextResource()I
+    invoke-direct {p0}, Lcom/android/settings_ext/SetupEncryptionInterstitial$SetupEncryptionInterstitialFragment;->getHeaderTextResource()I
 
     move-result v0
 
     .line 116
     .local v0, "title":I
-    invoke-virtual {p0}, Lcom/android/settings/SetupEncryptionInterstitial$SetupEncryptionInterstitialFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/SetupEncryptionInterstitial$SetupEncryptionInterstitialFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v1
 
     invoke-virtual {v1, v0}, Landroid/app/Activity;->setTitle(I)V
 
     .line 117
-    invoke-virtual {p0}, Lcom/android/settings/SetupEncryptionInterstitial$SetupEncryptionInterstitialFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/SetupEncryptionInterstitial$SetupEncryptionInterstitialFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v1
 
-    invoke-static {v1, v0}, Lcom/android/settings/SetupWizardUtils;->setHeaderText(Landroid/app/Activity;I)V
+    invoke-static {v1, v0}, Lcom/android/settings_ext/SetupWizardUtils;->setHeaderText(Landroid/app/Activity;I)V
 
     .line 118
     return-void

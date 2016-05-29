@@ -1,4 +1,4 @@
-.class final Lcom/android/settings/bluetooth/LocalBluetoothPreferences$1;
+.class final Lcom/android/settings_ext/bluetooth/LocalBluetoothPreferences$1;
 .super Ljava/lang/Object;
 .source "LocalBluetoothPreferences.java"
 
@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/android/settings/bluetooth/LocalBluetoothPreferences;->persistDiscoveringTimestamp(Landroid/content/Context;)V
+    value = Lcom/android/settings_ext/bluetooth/LocalBluetoothPreferences;->persistDiscoveringTimestamp(Landroid/content/Context;)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -27,7 +27,7 @@
 
     .prologue
     .line 137
-    iput-object p1, p0, Lcom/android/settings/bluetooth/LocalBluetoothPreferences$1;->val$context:Landroid/content/Context;
+    iput-object p1, p0, Lcom/android/settings_ext/bluetooth/LocalBluetoothPreferences$1;->val$context:Landroid/content/Context;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -41,10 +41,10 @@
 
     .prologue
     .line 139
-    iget-object v1, p0, Lcom/android/settings/bluetooth/LocalBluetoothPreferences$1;->val$context:Landroid/content/Context;
+    iget-object v1, p0, Lcom/android/settings_ext/bluetooth/LocalBluetoothPreferences$1;->val$context:Landroid/content/Context;
 
-    # invokes: Lcom/android/settings/bluetooth/LocalBluetoothPreferences;->getSharedPreferences(Landroid/content/Context;)Landroid/content/SharedPreferences;
-    invoke-static {v1}, Lcom/android/settings/bluetooth/LocalBluetoothPreferences;->access$000(Landroid/content/Context;)Landroid/content/SharedPreferences;
+    # invokes: Lcom/android/settings_ext/bluetooth/LocalBluetoothPreferences;->getSharedPreferences(Landroid/content/Context;)Landroid/content/SharedPreferences;
+    invoke-static {v1}, Lcom/android/settings_ext/bluetooth/LocalBluetoothPreferences;->access$000(Landroid/content/Context;)Landroid/content/SharedPreferences;
 
     move-result-object v1
 

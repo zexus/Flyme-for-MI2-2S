@@ -1,4 +1,4 @@
-.class Lcom/android/settings/wifi/WifiSettingsForSetupWizard$1;
+.class Lcom/android/settings_ext/wifi/WifiSettingsForSetupWizard$1;
 .super Ljava/lang/Object;
 .source "WifiSettingsForSetupWizard.java"
 
@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/android/settings/wifi/WifiSettingsForSetupWizard;->onCreateView(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;
+    value = Lcom/android/settings_ext/wifi/WifiSettingsForSetupWizard;->onCreateView(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -18,16 +18,16 @@
 
 
 # instance fields
-.field final synthetic this$0:Lcom/android/settings/wifi/WifiSettingsForSetupWizard;
+.field final synthetic this$0:Lcom/android/settings_ext/wifi/WifiSettingsForSetupWizard;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/wifi/WifiSettingsForSetupWizard;)V
+.method constructor <init>(Lcom/android/settings_ext/wifi/WifiSettingsForSetupWizard;)V
     .locals 0
 
     .prologue
     .line 71
-    iput-object p1, p0, Lcom/android/settings/wifi/WifiSettingsForSetupWizard$1;->this$0:Lcom/android/settings/wifi/WifiSettingsForSetupWizard;
+    iput-object p1, p0, Lcom/android/settings_ext/wifi/WifiSettingsForSetupWizard$1;->this$0:Lcom/android/settings_ext/wifi/WifiSettingsForSetupWizard;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -42,9 +42,9 @@
 
     .prologue
     .line 74
-    iget-object v0, p0, Lcom/android/settings/wifi/WifiSettingsForSetupWizard$1;->this$0:Lcom/android/settings/wifi/WifiSettingsForSetupWizard;
+    iget-object v0, p0, Lcom/android/settings_ext/wifi/WifiSettingsForSetupWizard$1;->this$0:Lcom/android/settings_ext/wifi/WifiSettingsForSetupWizard;
 
-    iget-object v0, v0, Lcom/android/settings/wifi/WifiSettingsForSetupWizard;->mWifiManager:Landroid/net/wifi/WifiManager;
+    iget-object v0, v0, Lcom/android/settings_ext/wifi/WifiSettingsForSetupWizard;->mWifiManager:Landroid/net/wifi/WifiManager;
 
     invoke-virtual {v0}, Landroid/net/wifi/WifiManager;->isWifiEnabled()Z
 
@@ -53,9 +53,9 @@
     if-eqz v0, :cond_0
 
     .line 75
-    iget-object v0, p0, Lcom/android/settings/wifi/WifiSettingsForSetupWizard$1;->this$0:Lcom/android/settings/wifi/WifiSettingsForSetupWizard;
+    iget-object v0, p0, Lcom/android/settings_ext/wifi/WifiSettingsForSetupWizard$1;->this$0:Lcom/android/settings_ext/wifi/WifiSettingsForSetupWizard;
 
-    invoke-virtual {v0}, Lcom/android/settings/wifi/WifiSettingsForSetupWizard;->onAddNetworkPressed()V
+    invoke-virtual {v0}, Lcom/android/settings_ext/wifi/WifiSettingsForSetupWizard;->onAddNetworkPressed()V
 
     .line 77
     :cond_0

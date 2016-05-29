@@ -1,4 +1,4 @@
-.class Lcom/android/settings/applications/AppOpsDetails$2;
+.class Lcom/android/settings_ext/applications/AppOpsDetails$2;
 .super Ljava/lang/Object;
 .source "AppOpsDetails.java"
 
@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/android/settings/applications/AppOpsDetails;->refreshUi()Z
+    value = Lcom/android/settings_ext/applications/AppOpsDetails;->refreshUi()Z
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -18,24 +18,24 @@
 
 
 # instance fields
-.field final synthetic this$0:Lcom/android/settings/applications/AppOpsDetails;
+.field final synthetic this$0:Lcom/android/settings_ext/applications/AppOpsDetails;
 
-.field final synthetic val$entry:Lcom/android/settings/applications/AppOpsState$AppOpEntry;
+.field final synthetic val$entry:Lcom/android/settings_ext/applications/AppOpsState$AppOpEntry;
 
 .field final synthetic val$switchOp:I
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/applications/AppOpsDetails;ILcom/android/settings/applications/AppOpsState$AppOpEntry;)V
+.method constructor <init>(Lcom/android/settings_ext/applications/AppOpsDetails;ILcom/android/settings_ext/applications/AppOpsState$AppOpEntry;)V
     .locals 0
 
     .prologue
     .line 206
-    iput-object p1, p0, Lcom/android/settings/applications/AppOpsDetails$2;->this$0:Lcom/android/settings/applications/AppOpsDetails;
+    iput-object p1, p0, Lcom/android/settings_ext/applications/AppOpsDetails$2;->this$0:Lcom/android/settings_ext/applications/AppOpsDetails;
 
-    iput p2, p0, Lcom/android/settings/applications/AppOpsDetails$2;->val$switchOp:I
+    iput p2, p0, Lcom/android/settings_ext/applications/AppOpsDetails$2;->val$switchOp:I
 
-    iput-object p3, p0, Lcom/android/settings/applications/AppOpsDetails$2;->val$entry:Lcom/android/settings/applications/AppOpsState$AppOpEntry;
+    iput-object p3, p0, Lcom/android/settings_ext/applications/AppOpsDetails$2;->val$entry:Lcom/android/settings_ext/applications/AppOpsState$AppOpEntry;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -51,18 +51,18 @@
 
     .prologue
     .line 209
-    iget-object v0, p0, Lcom/android/settings/applications/AppOpsDetails$2;->this$0:Lcom/android/settings/applications/AppOpsDetails;
+    iget-object v0, p0, Lcom/android/settings_ext/applications/AppOpsDetails$2;->this$0:Lcom/android/settings_ext/applications/AppOpsDetails;
 
-    # getter for: Lcom/android/settings/applications/AppOpsDetails;->mAppOps:Landroid/app/AppOpsManager;
-    invoke-static {v0}, Lcom/android/settings/applications/AppOpsDetails;->access$100(Lcom/android/settings/applications/AppOpsDetails;)Landroid/app/AppOpsManager;
+    # getter for: Lcom/android/settings_ext/applications/AppOpsDetails;->mAppOps:Landroid/app/AppOpsManager;
+    invoke-static {v0}, Lcom/android/settings_ext/applications/AppOpsDetails;->access$100(Lcom/android/settings_ext/applications/AppOpsDetails;)Landroid/app/AppOpsManager;
 
     move-result-object v1
 
-    iget v2, p0, Lcom/android/settings/applications/AppOpsDetails$2;->val$switchOp:I
+    iget v2, p0, Lcom/android/settings_ext/applications/AppOpsDetails$2;->val$switchOp:I
 
-    iget-object v0, p0, Lcom/android/settings/applications/AppOpsDetails$2;->val$entry:Lcom/android/settings/applications/AppOpsState$AppOpEntry;
+    iget-object v0, p0, Lcom/android/settings_ext/applications/AppOpsDetails$2;->val$entry:Lcom/android/settings_ext/applications/AppOpsState$AppOpEntry;
 
-    invoke-virtual {v0}, Lcom/android/settings/applications/AppOpsState$AppOpEntry;->getPackageOps()Landroid/app/AppOpsManager$PackageOps;
+    invoke-virtual {v0}, Lcom/android/settings_ext/applications/AppOpsState$AppOpEntry;->getPackageOps()Landroid/app/AppOpsManager$PackageOps;
 
     move-result-object v0
 
@@ -70,9 +70,9 @@
 
     move-result v3
 
-    iget-object v0, p0, Lcom/android/settings/applications/AppOpsDetails$2;->val$entry:Lcom/android/settings/applications/AppOpsState$AppOpEntry;
+    iget-object v0, p0, Lcom/android/settings_ext/applications/AppOpsDetails$2;->val$entry:Lcom/android/settings_ext/applications/AppOpsState$AppOpEntry;
 
-    invoke-virtual {v0}, Lcom/android/settings/applications/AppOpsState$AppOpEntry;->getPackageOps()Landroid/app/AppOpsManager$PackageOps;
+    invoke-virtual {v0}, Lcom/android/settings_ext/applications/AppOpsState$AppOpEntry;->getPackageOps()Landroid/app/AppOpsManager$PackageOps;
 
     move-result-object v0
 

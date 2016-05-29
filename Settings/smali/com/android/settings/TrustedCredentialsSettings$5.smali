@@ -1,4 +1,4 @@
-.class Lcom/android/settings/TrustedCredentialsSettings$5;
+.class Lcom/android/settings_ext/TrustedCredentialsSettings$5;
 .super Ljava/lang/Object;
 .source "TrustedCredentialsSettings.java"
 
@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/android/settings/TrustedCredentialsSettings;->showCertDialog(Lcom/android/settings/TrustedCredentialsSettings$CertHolder;)V
+    value = Lcom/android/settings_ext/TrustedCredentialsSettings;->showCertDialog(Lcom/android/settings_ext/TrustedCredentialsSettings$CertHolder;)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -18,24 +18,24 @@
 
 
 # instance fields
-.field final synthetic this$0:Lcom/android/settings/TrustedCredentialsSettings;
+.field final synthetic this$0:Lcom/android/settings_ext/TrustedCredentialsSettings;
 
 .field final synthetic val$certDialog:Landroid/app/Dialog;
 
-.field final synthetic val$certHolder:Lcom/android/settings/TrustedCredentialsSettings$CertHolder;
+.field final synthetic val$certHolder:Lcom/android/settings_ext/TrustedCredentialsSettings$CertHolder;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/TrustedCredentialsSettings;Lcom/android/settings/TrustedCredentialsSettings$CertHolder;Landroid/app/Dialog;)V
+.method constructor <init>(Lcom/android/settings_ext/TrustedCredentialsSettings;Lcom/android/settings_ext/TrustedCredentialsSettings$CertHolder;Landroid/app/Dialog;)V
     .locals 0
 
     .prologue
     .line 691
-    iput-object p1, p0, Lcom/android/settings/TrustedCredentialsSettings$5;->this$0:Lcom/android/settings/TrustedCredentialsSettings;
+    iput-object p1, p0, Lcom/android/settings_ext/TrustedCredentialsSettings$5;->this$0:Lcom/android/settings_ext/TrustedCredentialsSettings;
 
-    iput-object p2, p0, Lcom/android/settings/TrustedCredentialsSettings$5;->val$certHolder:Lcom/android/settings/TrustedCredentialsSettings$CertHolder;
+    iput-object p2, p0, Lcom/android/settings_ext/TrustedCredentialsSettings$5;->val$certHolder:Lcom/android/settings_ext/TrustedCredentialsSettings$CertHolder;
 
-    iput-object p3, p0, Lcom/android/settings/TrustedCredentialsSettings$5;->val$certDialog:Landroid/app/Dialog;
+    iput-object p3, p0, Lcom/android/settings_ext/TrustedCredentialsSettings$5;->val$certDialog:Landroid/app/Dialog;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -52,9 +52,9 @@
     .line 693
     new-instance v1, Landroid/app/AlertDialog$Builder;
 
-    iget-object v2, p0, Lcom/android/settings/TrustedCredentialsSettings$5;->this$0:Lcom/android/settings/TrustedCredentialsSettings;
+    iget-object v2, p0, Lcom/android/settings_ext/TrustedCredentialsSettings$5;->this$0:Lcom/android/settings_ext/TrustedCredentialsSettings;
 
-    invoke-virtual {v2}, Lcom/android/settings/TrustedCredentialsSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {v2}, Lcom/android/settings_ext/TrustedCredentialsSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v2
 
@@ -62,17 +62,17 @@
 
     .line 694
     .local v1, "builder":Landroid/app/AlertDialog$Builder;
-    iget-object v2, p0, Lcom/android/settings/TrustedCredentialsSettings$5;->val$certHolder:Lcom/android/settings/TrustedCredentialsSettings$CertHolder;
+    iget-object v2, p0, Lcom/android/settings_ext/TrustedCredentialsSettings$5;->val$certHolder:Lcom/android/settings_ext/TrustedCredentialsSettings$CertHolder;
 
-    # getter for: Lcom/android/settings/TrustedCredentialsSettings$CertHolder;->mTab:Lcom/android/settings/TrustedCredentialsSettings$Tab;
-    invoke-static {v2}, Lcom/android/settings/TrustedCredentialsSettings$CertHolder;->access$100(Lcom/android/settings/TrustedCredentialsSettings$CertHolder;)Lcom/android/settings/TrustedCredentialsSettings$Tab;
+    # getter for: Lcom/android/settings_ext/TrustedCredentialsSettings$CertHolder;->mTab:Lcom/android/settings_ext/TrustedCredentialsSettings$Tab;
+    invoke-static {v2}, Lcom/android/settings_ext/TrustedCredentialsSettings$CertHolder;->access$100(Lcom/android/settings_ext/TrustedCredentialsSettings$CertHolder;)Lcom/android/settings_ext/TrustedCredentialsSettings$Tab;
 
     move-result-object v2
 
-    iget-object v3, p0, Lcom/android/settings/TrustedCredentialsSettings$5;->val$certHolder:Lcom/android/settings/TrustedCredentialsSettings$CertHolder;
+    iget-object v3, p0, Lcom/android/settings_ext/TrustedCredentialsSettings$5;->val$certHolder:Lcom/android/settings_ext/TrustedCredentialsSettings$CertHolder;
 
-    # invokes: Lcom/android/settings/TrustedCredentialsSettings$Tab;->getButtonConfirmation(Lcom/android/settings/TrustedCredentialsSettings$CertHolder;)I
-    invoke-static {v2, v3}, Lcom/android/settings/TrustedCredentialsSettings$Tab;->access$3200(Lcom/android/settings/TrustedCredentialsSettings$Tab;Lcom/android/settings/TrustedCredentialsSettings$CertHolder;)I
+    # invokes: Lcom/android/settings_ext/TrustedCredentialsSettings$Tab;->getButtonConfirmation(Lcom/android/settings_ext/TrustedCredentialsSettings$CertHolder;)I
+    invoke-static {v2, v3}, Lcom/android/settings_ext/TrustedCredentialsSettings$Tab;->access$3200(Lcom/android/settings_ext/TrustedCredentialsSettings$Tab;Lcom/android/settings_ext/TrustedCredentialsSettings$CertHolder;)I
 
     move-result v2
 
@@ -81,18 +81,18 @@
     .line 695
     const v2, 0x1040013
 
-    new-instance v3, Lcom/android/settings/TrustedCredentialsSettings$5$1;
+    new-instance v3, Lcom/android/settings_ext/TrustedCredentialsSettings$5$1;
 
-    invoke-direct {v3, p0}, Lcom/android/settings/TrustedCredentialsSettings$5$1;-><init>(Lcom/android/settings/TrustedCredentialsSettings$5;)V
+    invoke-direct {v3, p0}, Lcom/android/settings_ext/TrustedCredentialsSettings$5$1;-><init>(Lcom/android/settings_ext/TrustedCredentialsSettings$5;)V
 
     invoke-virtual {v1, v2, v3}, Landroid/app/AlertDialog$Builder;->setPositiveButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
     .line 703
     const v2, 0x1040009
 
-    new-instance v3, Lcom/android/settings/TrustedCredentialsSettings$5$2;
+    new-instance v3, Lcom/android/settings_ext/TrustedCredentialsSettings$5$2;
 
-    invoke-direct {v3, p0}, Lcom/android/settings/TrustedCredentialsSettings$5$2;-><init>(Lcom/android/settings/TrustedCredentialsSettings$5;)V
+    invoke-direct {v3, p0}, Lcom/android/settings_ext/TrustedCredentialsSettings$5$2;-><init>(Lcom/android/settings_ext/TrustedCredentialsSettings$5;)V
 
     invoke-virtual {v1, v2, v3}, Landroid/app/AlertDialog$Builder;->setNegativeButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 

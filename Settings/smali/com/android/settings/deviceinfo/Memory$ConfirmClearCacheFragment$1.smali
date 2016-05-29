@@ -1,4 +1,4 @@
-.class Lcom/android/settings/deviceinfo/Memory$ConfirmClearCacheFragment$1;
+.class Lcom/android/settings_ext/deviceinfo/Memory$ConfirmClearCacheFragment$1;
 .super Ljava/lang/Object;
 .source "Memory.java"
 
@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/android/settings/deviceinfo/Memory$ConfirmClearCacheFragment;->onCreateDialog(Landroid/os/Bundle;)Landroid/app/Dialog;
+    value = Lcom/android/settings_ext/deviceinfo/Memory$ConfirmClearCacheFragment;->onCreateDialog(Landroid/os/Bundle;)Landroid/app/Dialog;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -18,20 +18,20 @@
 
 
 # instance fields
-.field final synthetic this$0:Lcom/android/settings/deviceinfo/Memory$ConfirmClearCacheFragment;
+.field final synthetic this$0:Lcom/android/settings_ext/deviceinfo/Memory$ConfirmClearCacheFragment;
 
 .field final synthetic val$context:Landroid/content/Context;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/deviceinfo/Memory$ConfirmClearCacheFragment;Landroid/content/Context;)V
+.method constructor <init>(Lcom/android/settings_ext/deviceinfo/Memory$ConfirmClearCacheFragment;Landroid/content/Context;)V
     .locals 0
 
     .prologue
     .line 470
-    iput-object p1, p0, Lcom/android/settings/deviceinfo/Memory$ConfirmClearCacheFragment$1;->this$0:Lcom/android/settings/deviceinfo/Memory$ConfirmClearCacheFragment;
+    iput-object p1, p0, Lcom/android/settings_ext/deviceinfo/Memory$ConfirmClearCacheFragment$1;->this$0:Lcom/android/settings_ext/deviceinfo/Memory$ConfirmClearCacheFragment;
 
-    iput-object p2, p0, Lcom/android/settings/deviceinfo/Memory$ConfirmClearCacheFragment$1;->val$context:Landroid/content/Context;
+    iput-object p2, p0, Lcom/android/settings_ext/deviceinfo/Memory$ConfirmClearCacheFragment$1;->val$context:Landroid/content/Context;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -47,17 +47,17 @@
 
     .prologue
     .line 473
-    iget-object v6, p0, Lcom/android/settings/deviceinfo/Memory$ConfirmClearCacheFragment$1;->this$0:Lcom/android/settings/deviceinfo/Memory$ConfirmClearCacheFragment;
+    iget-object v6, p0, Lcom/android/settings_ext/deviceinfo/Memory$ConfirmClearCacheFragment$1;->this$0:Lcom/android/settings_ext/deviceinfo/Memory$ConfirmClearCacheFragment;
 
-    invoke-virtual {v6}, Lcom/android/settings/deviceinfo/Memory$ConfirmClearCacheFragment;->getTargetFragment()Landroid/app/Fragment;
+    invoke-virtual {v6}, Lcom/android/settings_ext/deviceinfo/Memory$ConfirmClearCacheFragment;->getTargetFragment()Landroid/app/Fragment;
 
     move-result-object v5
 
-    check-cast v5, Lcom/android/settings/deviceinfo/Memory;
+    check-cast v5, Lcom/android/settings_ext/deviceinfo/Memory;
 
     .line 474
-    .local v5, "target":Lcom/android/settings/deviceinfo/Memory;
-    iget-object v6, p0, Lcom/android/settings/deviceinfo/Memory$ConfirmClearCacheFragment$1;->val$context:Landroid/content/Context;
+    .local v5, "target":Lcom/android/settings_ext/deviceinfo/Memory;
+    iget-object v6, p0, Lcom/android/settings_ext/deviceinfo/Memory$ConfirmClearCacheFragment$1;->val$context:Landroid/content/Context;
 
     invoke-virtual {v6}, Landroid/content/Context;->getPackageManager()Landroid/content/pm/PackageManager;
 
@@ -73,16 +73,16 @@
 
     .line 476
     .local v2, "infos":Ljava/util/List;, "Ljava/util/List<Landroid/content/pm/PackageInfo;>;"
-    new-instance v3, Lcom/android/settings/deviceinfo/Memory$ClearCacheObserver;
+    new-instance v3, Lcom/android/settings_ext/deviceinfo/Memory$ClearCacheObserver;
 
     invoke-interface {v2}, Ljava/util/List;->size()I
 
     move-result v6
 
-    invoke-direct {v3, v5, v6}, Lcom/android/settings/deviceinfo/Memory$ClearCacheObserver;-><init>(Lcom/android/settings/deviceinfo/Memory;I)V
+    invoke-direct {v3, v5, v6}, Lcom/android/settings_ext/deviceinfo/Memory$ClearCacheObserver;-><init>(Lcom/android/settings_ext/deviceinfo/Memory;I)V
 
     .line 478
-    .local v3, "observer":Lcom/android/settings/deviceinfo/Memory$ClearCacheObserver;
+    .local v3, "observer":Lcom/android/settings_ext/deviceinfo/Memory$ClearCacheObserver;
     invoke-interface {v2}, Ljava/util/List;->iterator()Ljava/util/Iterator;
 
     move-result-object v0

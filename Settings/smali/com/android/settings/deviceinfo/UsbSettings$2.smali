@@ -1,11 +1,11 @@
-.class Lcom/android/settings/deviceinfo/UsbSettings$2;
+.class Lcom/android/settings_ext/deviceinfo/UsbSettings$2;
 .super Landroid/os/storage/StorageEventListener;
 .source "UsbSettings.java"
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/android/settings/deviceinfo/UsbSettings;
+    value = Lcom/android/settings_ext/deviceinfo/UsbSettings;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -15,16 +15,16 @@
 
 
 # instance fields
-.field final synthetic this$0:Lcom/android/settings/deviceinfo/UsbSettings;
+.field final synthetic this$0:Lcom/android/settings_ext/deviceinfo/UsbSettings;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/deviceinfo/UsbSettings;)V
+.method constructor <init>(Lcom/android/settings_ext/deviceinfo/UsbSettings;)V
     .locals 0
 
     .prologue
     .line 145
-    iput-object p1, p0, Lcom/android/settings/deviceinfo/UsbSettings$2;->this$0:Lcom/android/settings/deviceinfo/UsbSettings;
+    iput-object p1, p0, Lcom/android/settings_ext/deviceinfo/UsbSettings$2;->this$0:Lcom/android/settings_ext/deviceinfo/UsbSettings;
 
     invoke-direct {p0}, Landroid/os/storage/StorageEventListener;-><init>()V
 
@@ -74,9 +74,9 @@
     if-eqz v1, :cond_2
 
     .line 157
-    iget-object v1, p0, Lcom/android/settings/deviceinfo/UsbSettings$2;->this$0:Lcom/android/settings/deviceinfo/UsbSettings;
+    iget-object v1, p0, Lcom/android/settings_ext/deviceinfo/UsbSettings$2;->this$0:Lcom/android/settings_ext/deviceinfo/UsbSettings;
 
-    invoke-virtual {v1}, Lcom/android/settings/deviceinfo/UsbSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {v1}, Lcom/android/settings_ext/deviceinfo/UsbSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v1
 
@@ -91,10 +91,10 @@
     .line 164
     :cond_1
     :goto_1
-    iget-object v1, p0, Lcom/android/settings/deviceinfo/UsbSettings$2;->this$0:Lcom/android/settings/deviceinfo/UsbSettings;
+    iget-object v1, p0, Lcom/android/settings_ext/deviceinfo/UsbSettings$2;->this$0:Lcom/android/settings_ext/deviceinfo/UsbSettings;
 
-    # invokes: Lcom/android/settings/deviceinfo/UsbSettings;->updateUsbFunctionState()V
-    invoke-static {v1}, Lcom/android/settings/deviceinfo/UsbSettings;->access$200(Lcom/android/settings/deviceinfo/UsbSettings;)V
+    # invokes: Lcom/android/settings_ext/deviceinfo/UsbSettings;->updateUsbFunctionState()V
+    invoke-static {v1}, Lcom/android/settings_ext/deviceinfo/UsbSettings;->access$200(Lcom/android/settings_ext/deviceinfo/UsbSettings;)V
 
     goto :goto_0
 
@@ -117,9 +117,9 @@
     if-eqz v1, :cond_1
 
     .line 161
-    iget-object v1, p0, Lcom/android/settings/deviceinfo/UsbSettings$2;->this$0:Lcom/android/settings/deviceinfo/UsbSettings;
+    iget-object v1, p0, Lcom/android/settings_ext/deviceinfo/UsbSettings$2;->this$0:Lcom/android/settings_ext/deviceinfo/UsbSettings;
 
-    invoke-virtual {v1}, Lcom/android/settings/deviceinfo/UsbSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {v1}, Lcom/android/settings_ext/deviceinfo/UsbSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v1
 

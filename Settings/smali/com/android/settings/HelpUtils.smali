@@ -1,4 +1,4 @@
-.class public Lcom/android/settings/HelpUtils;
+.class public Lcom/android/settings_ext/HelpUtils;
 .super Ljava/lang/Object;
 .source "HelpUtils.java"
 
@@ -15,18 +15,18 @@
 
     .prologue
     .line 36
-    const-class v0, Lcom/android/settings/HelpUtils;
+    const-class v0, Lcom/android/settings_ext/HelpUtils;
 
     invoke-virtual {v0}, Ljava/lang/Class;->getName()Ljava/lang/String;
 
     move-result-object v0
 
-    sput-object v0, Lcom/android/settings/HelpUtils;->TAG:Ljava/lang/String;
+    sput-object v0, Lcom/android/settings_ext/HelpUtils;->TAG:Ljava/lang/String;
 
     .line 51
     const/4 v0, 0x0
 
-    sput-object v0, Lcom/android/settings/HelpUtils;->sCachedVersionCode:Ljava/lang/String;
+    sput-object v0, Lcom/android/settings_ext/HelpUtils;->sCachedVersionCode:Ljava/lang/String;
 
     return-void
 .end method
@@ -72,7 +72,7 @@
 
     move-result-object v5
 
-    invoke-static {p0, v5}, Lcom/android/settings/HelpUtils;->uriWithAddedParameters(Landroid/content/Context;Landroid/net/Uri;)Landroid/net/Uri;
+    invoke-static {p0, v5}, Lcom/android/settings_ext/HelpUtils;->uriWithAddedParameters(Landroid/content/Context;Landroid/net/Uri;)Landroid/net/Uri;
 
     move-result-object v1
 
@@ -150,7 +150,7 @@
     invoke-virtual {v0, v3, v4}, Landroid/net/Uri$Builder;->appendQueryParameter(Ljava/lang/String;Ljava/lang/String;)Landroid/net/Uri$Builder;
 
     .line 126
-    sget-object v3, Lcom/android/settings/HelpUtils;->sCachedVersionCode:Ljava/lang/String;
+    sget-object v3, Lcom/android/settings_ext/HelpUtils;->sCachedVersionCode:Ljava/lang/String;
 
     if-nez v3, :cond_0
 
@@ -178,12 +178,12 @@
 
     move-result-object v3
 
-    sput-object v3, Lcom/android/settings/HelpUtils;->sCachedVersionCode:Ljava/lang/String;
+    sput-object v3, Lcom/android/settings_ext/HelpUtils;->sCachedVersionCode:Ljava/lang/String;
 
     .line 135
     const-string v3, "version"
 
-    sget-object v4, Lcom/android/settings/HelpUtils;->sCachedVersionCode:Ljava/lang/String;
+    sget-object v4, Lcom/android/settings_ext/HelpUtils;->sCachedVersionCode:Ljava/lang/String;
 
     invoke-virtual {v0, v3, v4}, Landroid/net/Uri$Builder;->appendQueryParameter(Ljava/lang/String;Ljava/lang/String;)Landroid/net/Uri$Builder;
     :try_end_0
@@ -204,7 +204,7 @@
 
     .line 139
     .local v1, "e":Landroid/content/pm/PackageManager$NameNotFoundException;
-    sget-object v3, Lcom/android/settings/HelpUtils;->TAG:Ljava/lang/String;
+    sget-object v3, Lcom/android/settings_ext/HelpUtils;->TAG:Ljava/lang/String;
 
     const-string v4, "Invalid package name for context"
 
@@ -217,7 +217,7 @@
     :cond_0
     const-string v3, "version"
 
-    sget-object v4, Lcom/android/settings/HelpUtils;->sCachedVersionCode:Ljava/lang/String;
+    sget-object v4, Lcom/android/settings_ext/HelpUtils;->sCachedVersionCode:Ljava/lang/String;
 
     invoke-virtual {v0, v3, v4}, Landroid/net/Uri$Builder;->appendQueryParameter(Ljava/lang/String;Ljava/lang/String;)Landroid/net/Uri$Builder;
 

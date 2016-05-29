@@ -1,4 +1,4 @@
-.class Lcom/android/settings/wfd/WifiDisplaySettings$RoutePreference;
+.class Lcom/android/settings_ext/wfd/WifiDisplaySettings$RoutePreference;
 .super Landroid/preference/Preference;
 .source "WifiDisplaySettings.java"
 
@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/android/settings/wfd/WifiDisplaySettings;
+    value = Lcom/android/settings_ext/wfd/WifiDisplaySettings;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -20,45 +20,45 @@
 # instance fields
 .field private final mRoute:Landroid/media/MediaRouter$RouteInfo;
 
-.field final synthetic this$0:Lcom/android/settings/wfd/WifiDisplaySettings;
+.field final synthetic this$0:Lcom/android/settings_ext/wfd/WifiDisplaySettings;
 
 
 # direct methods
-.method public constructor <init>(Lcom/android/settings/wfd/WifiDisplaySettings;Landroid/content/Context;Landroid/media/MediaRouter$RouteInfo;)V
+.method public constructor <init>(Lcom/android/settings_ext/wfd/WifiDisplaySettings;Landroid/content/Context;Landroid/media/MediaRouter$RouteInfo;)V
     .locals 2
     .param p2, "context"    # Landroid/content/Context;
     .param p3, "route"    # Landroid/media/MediaRouter$RouteInfo;
 
     .prologue
     .line 649
-    iput-object p1, p0, Lcom/android/settings/wfd/WifiDisplaySettings$RoutePreference;->this$0:Lcom/android/settings/wfd/WifiDisplaySettings;
+    iput-object p1, p0, Lcom/android/settings_ext/wfd/WifiDisplaySettings$RoutePreference;->this$0:Lcom/android/settings_ext/wfd/WifiDisplaySettings;
 
     .line 650
     invoke-direct {p0, p2}, Landroid/preference/Preference;-><init>(Landroid/content/Context;)V
 
     .line 652
-    iput-object p3, p0, Lcom/android/settings/wfd/WifiDisplaySettings$RoutePreference;->mRoute:Landroid/media/MediaRouter$RouteInfo;
+    iput-object p3, p0, Lcom/android/settings_ext/wfd/WifiDisplaySettings$RoutePreference;->mRoute:Landroid/media/MediaRouter$RouteInfo;
 
     .line 653
     invoke-virtual {p3}, Landroid/media/MediaRouter$RouteInfo;->getName()Ljava/lang/CharSequence;
 
     move-result-object v0
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/wfd/WifiDisplaySettings$RoutePreference;->setTitle(Ljava/lang/CharSequence;)V
+    invoke-virtual {p0, v0}, Lcom/android/settings_ext/wfd/WifiDisplaySettings$RoutePreference;->setTitle(Ljava/lang/CharSequence;)V
 
     .line 654
     invoke-virtual {p3}, Landroid/media/MediaRouter$RouteInfo;->getDescription()Ljava/lang/CharSequence;
 
     move-result-object v0
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/wfd/WifiDisplaySettings$RoutePreference;->setSummary(Ljava/lang/CharSequence;)V
+    invoke-virtual {p0, v0}, Lcom/android/settings_ext/wfd/WifiDisplaySettings$RoutePreference;->setSummary(Ljava/lang/CharSequence;)V
 
     .line 655
     invoke-virtual {p3}, Landroid/media/MediaRouter$RouteInfo;->isEnabled()Z
 
     move-result v0
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/wfd/WifiDisplaySettings$RoutePreference;->setEnabled(Z)V
+    invoke-virtual {p0, v0}, Lcom/android/settings_ext/wfd/WifiDisplaySettings$RoutePreference;->setEnabled(Z)V
 
     .line 656
     invoke-virtual {p3}, Landroid/media/MediaRouter$RouteInfo;->isSelected()Z
@@ -70,7 +70,7 @@
     .line 657
     const/4 v0, 0x2
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/wfd/WifiDisplaySettings$RoutePreference;->setOrder(I)V
+    invoke-virtual {p0, v0}, Lcom/android/settings_ext/wfd/WifiDisplaySettings$RoutePreference;->setOrder(I)V
 
     .line 658
     invoke-virtual {p3}, Landroid/media/MediaRouter$RouteInfo;->isConnecting()Z
@@ -82,11 +82,11 @@
     .line 659
     const v0, 0x7f090202
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/wfd/WifiDisplaySettings$RoutePreference;->setSummary(I)V
+    invoke-virtual {p0, v0}, Lcom/android/settings_ext/wfd/WifiDisplaySettings$RoutePreference;->setSummary(I)V
 
     .line 675
     :goto_0
-    invoke-virtual {p0, p0}, Lcom/android/settings/wfd/WifiDisplaySettings$RoutePreference;->setOnPreferenceClickListener(Landroid/preference/Preference$OnPreferenceClickListener;)V
+    invoke-virtual {p0, p0}, Lcom/android/settings_ext/wfd/WifiDisplaySettings$RoutePreference;->setOnPreferenceClickListener(Landroid/preference/Preference$OnPreferenceClickListener;)V
 
     .line 676
     return-void
@@ -95,13 +95,13 @@
     :cond_0
     const v0, 0x7f090203
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/wfd/WifiDisplaySettings$RoutePreference;->setSummary(I)V
+    invoke-virtual {p0, v0}, Lcom/android/settings_ext/wfd/WifiDisplaySettings$RoutePreference;->setSummary(I)V
 
     goto :goto_0
 
     .line 664
     :cond_1
-    invoke-virtual {p0}, Lcom/android/settings/wfd/WifiDisplaySettings$RoutePreference;->isEnabled()Z
+    invoke-virtual {p0}, Lcom/android/settings_ext/wfd/WifiDisplaySettings$RoutePreference;->isEnabled()Z
 
     move-result v0
 
@@ -110,7 +110,7 @@
     .line 665
     const/4 v0, 0x3
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/wfd/WifiDisplaySettings$RoutePreference;->setOrder(I)V
+    invoke-virtual {p0, v0}, Lcom/android/settings_ext/wfd/WifiDisplaySettings$RoutePreference;->setOrder(I)V
 
     goto :goto_0
 
@@ -118,7 +118,7 @@
     :cond_2
     const/4 v0, 0x4
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/wfd/WifiDisplaySettings$RoutePreference;->setOrder(I)V
+    invoke-virtual {p0, v0}, Lcom/android/settings_ext/wfd/WifiDisplaySettings$RoutePreference;->setOrder(I)V
 
     .line 668
     invoke-virtual {p3}, Landroid/media/MediaRouter$RouteInfo;->getStatusCode()I
@@ -132,7 +132,7 @@
     .line 669
     const v0, 0x7f090204
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/wfd/WifiDisplaySettings$RoutePreference;->setSummary(I)V
+    invoke-virtual {p0, v0}, Lcom/android/settings_ext/wfd/WifiDisplaySettings$RoutePreference;->setSummary(I)V
 
     goto :goto_0
 
@@ -140,7 +140,7 @@
     :cond_3
     const v0, 0x7f090205
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/wfd/WifiDisplaySettings$RoutePreference;->setSummary(I)V
+    invoke-virtual {p0, v0}, Lcom/android/settings_ext/wfd/WifiDisplaySettings$RoutePreference;->setSummary(I)V
 
     goto :goto_0
 .end method
@@ -153,12 +153,12 @@
 
     .prologue
     .line 680
-    iget-object v0, p0, Lcom/android/settings/wfd/WifiDisplaySettings$RoutePreference;->this$0:Lcom/android/settings/wfd/WifiDisplaySettings;
+    iget-object v0, p0, Lcom/android/settings_ext/wfd/WifiDisplaySettings$RoutePreference;->this$0:Lcom/android/settings_ext/wfd/WifiDisplaySettings;
 
-    iget-object v1, p0, Lcom/android/settings/wfd/WifiDisplaySettings$RoutePreference;->mRoute:Landroid/media/MediaRouter$RouteInfo;
+    iget-object v1, p0, Lcom/android/settings_ext/wfd/WifiDisplaySettings$RoutePreference;->mRoute:Landroid/media/MediaRouter$RouteInfo;
 
-    # invokes: Lcom/android/settings/wfd/WifiDisplaySettings;->toggleRoute(Landroid/media/MediaRouter$RouteInfo;)V
-    invoke-static {v0, v1}, Lcom/android/settings/wfd/WifiDisplaySettings;->access$1300(Lcom/android/settings/wfd/WifiDisplaySettings;Landroid/media/MediaRouter$RouteInfo;)V
+    # invokes: Lcom/android/settings_ext/wfd/WifiDisplaySettings;->toggleRoute(Landroid/media/MediaRouter$RouteInfo;)V
+    invoke-static {v0, v1}, Lcom/android/settings_ext/wfd/WifiDisplaySettings;->access$1300(Lcom/android/settings_ext/wfd/WifiDisplaySettings;Landroid/media/MediaRouter$RouteInfo;)V
 
     .line 681
     const/4 v0, 0x1

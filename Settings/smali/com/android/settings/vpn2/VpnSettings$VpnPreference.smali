@@ -1,11 +1,11 @@
-.class Lcom/android/settings/vpn2/VpnSettings$VpnPreference;
+.class Lcom/android/settings_ext/vpn2/VpnSettings$VpnPreference;
 .super Landroid/preference/Preference;
 .source "VpnSettings.java"
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/android/settings/vpn2/VpnSettings;
+    value = Lcom/android/settings_ext/vpn2/VpnSettings;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -35,19 +35,19 @@
     .line 431
     const/4 v0, -0x1
 
-    iput v0, p0, Lcom/android/settings/vpn2/VpnSettings$VpnPreference;->mState:I
+    iput v0, p0, Lcom/android/settings_ext/vpn2/VpnSettings$VpnPreference;->mState:I
 
     .line 435
-    invoke-virtual {p0, v1}, Lcom/android/settings/vpn2/VpnSettings$VpnPreference;->setPersistent(Z)V
+    invoke-virtual {p0, v1}, Lcom/android/settings_ext/vpn2/VpnSettings$VpnPreference;->setPersistent(Z)V
 
     .line 436
-    invoke-virtual {p0, v1}, Lcom/android/settings/vpn2/VpnSettings$VpnPreference;->setOrder(I)V
+    invoke-virtual {p0, v1}, Lcom/android/settings_ext/vpn2/VpnSettings$VpnPreference;->setOrder(I)V
 
     .line 438
-    iput-object p2, p0, Lcom/android/settings/vpn2/VpnSettings$VpnPreference;->mProfile:Lcom/android/internal/net/VpnProfile;
+    iput-object p2, p0, Lcom/android/settings_ext/vpn2/VpnSettings$VpnPreference;->mProfile:Lcom/android/internal/net/VpnProfile;
 
     .line 439
-    invoke-virtual {p0}, Lcom/android/settings/vpn2/VpnSettings$VpnPreference;->update()V
+    invoke-virtual {p0}, Lcom/android/settings_ext/vpn2/VpnSettings$VpnPreference;->update()V
 
     .line 440
     return-void
@@ -65,30 +65,30 @@
 
     .line 473
     .local v1, "result":I
-    instance-of v2, p1, Lcom/android/settings/vpn2/VpnSettings$VpnPreference;
+    instance-of v2, p1, Lcom/android/settings_ext/vpn2/VpnSettings$VpnPreference;
 
     if-eqz v2, :cond_0
 
     move-object v0, p1
 
     .line 474
-    check-cast v0, Lcom/android/settings/vpn2/VpnSettings$VpnPreference;
+    check-cast v0, Lcom/android/settings_ext/vpn2/VpnSettings$VpnPreference;
 
     .line 475
-    .local v0, "another":Lcom/android/settings/vpn2/VpnSettings$VpnPreference;
-    iget v2, v0, Lcom/android/settings/vpn2/VpnSettings$VpnPreference;->mState:I
+    .local v0, "another":Lcom/android/settings_ext/vpn2/VpnSettings$VpnPreference;
+    iget v2, v0, Lcom/android/settings_ext/vpn2/VpnSettings$VpnPreference;->mState:I
 
-    iget v3, p0, Lcom/android/settings/vpn2/VpnSettings$VpnPreference;->mState:I
+    iget v3, p0, Lcom/android/settings_ext/vpn2/VpnSettings$VpnPreference;->mState:I
 
     sub-int v1, v2, v3
 
     if-nez v1, :cond_0
 
-    iget-object v2, p0, Lcom/android/settings/vpn2/VpnSettings$VpnPreference;->mProfile:Lcom/android/internal/net/VpnProfile;
+    iget-object v2, p0, Lcom/android/settings_ext/vpn2/VpnSettings$VpnPreference;->mProfile:Lcom/android/internal/net/VpnProfile;
 
     iget-object v2, v2, Lcom/android/internal/net/VpnProfile;->name:Ljava/lang/String;
 
-    iget-object v3, v0, Lcom/android/settings/vpn2/VpnSettings$VpnPreference;->mProfile:Lcom/android/internal/net/VpnProfile;
+    iget-object v3, v0, Lcom/android/settings_ext/vpn2/VpnSettings$VpnPreference;->mProfile:Lcom/android/internal/net/VpnProfile;
 
     iget-object v3, v3, Lcom/android/internal/net/VpnProfile;->name:Ljava/lang/String;
 
@@ -98,11 +98,11 @@
 
     if-nez v1, :cond_0
 
-    iget-object v2, p0, Lcom/android/settings/vpn2/VpnSettings$VpnPreference;->mProfile:Lcom/android/internal/net/VpnProfile;
+    iget-object v2, p0, Lcom/android/settings_ext/vpn2/VpnSettings$VpnPreference;->mProfile:Lcom/android/internal/net/VpnProfile;
 
     iget v2, v2, Lcom/android/internal/net/VpnProfile;->type:I
 
-    iget-object v3, v0, Lcom/android/settings/vpn2/VpnSettings$VpnPreference;->mProfile:Lcom/android/internal/net/VpnProfile;
+    iget-object v3, v0, Lcom/android/settings_ext/vpn2/VpnSettings$VpnPreference;->mProfile:Lcom/android/internal/net/VpnProfile;
 
     iget v3, v3, Lcom/android/internal/net/VpnProfile;->type:I
 
@@ -111,11 +111,11 @@
     if-nez v1, :cond_0
 
     .line 478
-    iget-object v2, p0, Lcom/android/settings/vpn2/VpnSettings$VpnPreference;->mProfile:Lcom/android/internal/net/VpnProfile;
+    iget-object v2, p0, Lcom/android/settings_ext/vpn2/VpnSettings$VpnPreference;->mProfile:Lcom/android/internal/net/VpnProfile;
 
     iget-object v2, v2, Lcom/android/internal/net/VpnProfile;->key:Ljava/lang/String;
 
-    iget-object v3, v0, Lcom/android/settings/vpn2/VpnSettings$VpnPreference;->mProfile:Lcom/android/internal/net/VpnProfile;
+    iget-object v3, v0, Lcom/android/settings_ext/vpn2/VpnSettings$VpnPreference;->mProfile:Lcom/android/internal/net/VpnProfile;
 
     iget-object v3, v3, Lcom/android/internal/net/VpnProfile;->key:Ljava/lang/String;
 
@@ -124,7 +124,7 @@
     move-result v1
 
     .line 481
-    .end local v0    # "another":Lcom/android/settings/vpn2/VpnSettings$VpnPreference;
+    .end local v0    # "another":Lcom/android/settings_ext/vpn2/VpnSettings$VpnPreference;
     :cond_0
     return v1
 .end method
@@ -138,7 +138,7 @@
     check-cast p1, Landroid/preference/Preference;
 
     .end local p1    # "x0":Ljava/lang/Object;
-    invoke-virtual {p0, p1}, Lcom/android/settings/vpn2/VpnSettings$VpnPreference;->compareTo(Landroid/preference/Preference;)I
+    invoke-virtual {p0, p1}, Lcom/android/settings_ext/vpn2/VpnSettings$VpnPreference;->compareTo(Landroid/preference/Preference;)I
 
     move-result v0
 
@@ -150,7 +150,7 @@
 
     .prologue
     .line 443
-    iget-object v0, p0, Lcom/android/settings/vpn2/VpnSettings$VpnPreference;->mProfile:Lcom/android/internal/net/VpnProfile;
+    iget-object v0, p0, Lcom/android/settings_ext/vpn2/VpnSettings$VpnPreference;->mProfile:Lcom/android/internal/net/VpnProfile;
 
     return-object v0
 .end method
@@ -160,12 +160,12 @@
 
     .prologue
     .line 457
-    iget v2, p0, Lcom/android/settings/vpn2/VpnSettings$VpnPreference;->mState:I
+    iget v2, p0, Lcom/android/settings_ext/vpn2/VpnSettings$VpnPreference;->mState:I
 
     if-gez v2, :cond_0
 
     .line 458
-    invoke-virtual {p0}, Lcom/android/settings/vpn2/VpnSettings$VpnPreference;->getContext()Landroid/content/Context;
+    invoke-virtual {p0}, Lcom/android/settings_ext/vpn2/VpnSettings$VpnPreference;->getContext()Landroid/content/Context;
 
     move-result-object v2
 
@@ -181,32 +181,32 @@
 
     .line 460
     .local v1, "types":[Ljava/lang/String;
-    iget-object v2, p0, Lcom/android/settings/vpn2/VpnSettings$VpnPreference;->mProfile:Lcom/android/internal/net/VpnProfile;
+    iget-object v2, p0, Lcom/android/settings_ext/vpn2/VpnSettings$VpnPreference;->mProfile:Lcom/android/internal/net/VpnProfile;
 
     iget v2, v2, Lcom/android/internal/net/VpnProfile;->type:I
 
     aget-object v2, v1, v2
 
-    invoke-virtual {p0, v2}, Lcom/android/settings/vpn2/VpnSettings$VpnPreference;->setSummary(Ljava/lang/CharSequence;)V
+    invoke-virtual {p0, v2}, Lcom/android/settings_ext/vpn2/VpnSettings$VpnPreference;->setSummary(Ljava/lang/CharSequence;)V
 
     .line 466
     .end local v1    # "types":[Ljava/lang/String;
     :goto_0
-    iget-object v2, p0, Lcom/android/settings/vpn2/VpnSettings$VpnPreference;->mProfile:Lcom/android/internal/net/VpnProfile;
+    iget-object v2, p0, Lcom/android/settings_ext/vpn2/VpnSettings$VpnPreference;->mProfile:Lcom/android/internal/net/VpnProfile;
 
     iget-object v2, v2, Lcom/android/internal/net/VpnProfile;->name:Ljava/lang/String;
 
-    invoke-virtual {p0, v2}, Lcom/android/settings/vpn2/VpnSettings$VpnPreference;->setTitle(Ljava/lang/CharSequence;)V
+    invoke-virtual {p0, v2}, Lcom/android/settings_ext/vpn2/VpnSettings$VpnPreference;->setTitle(Ljava/lang/CharSequence;)V
 
     .line 467
-    invoke-virtual {p0}, Lcom/android/settings/vpn2/VpnSettings$VpnPreference;->notifyHierarchyChanged()V
+    invoke-virtual {p0}, Lcom/android/settings_ext/vpn2/VpnSettings$VpnPreference;->notifyHierarchyChanged()V
 
     .line 468
     return-void
 
     .line 462
     :cond_0
-    invoke-virtual {p0}, Lcom/android/settings/vpn2/VpnSettings$VpnPreference;->getContext()Landroid/content/Context;
+    invoke-virtual {p0}, Lcom/android/settings_ext/vpn2/VpnSettings$VpnPreference;->getContext()Landroid/content/Context;
 
     move-result-object v2
 
@@ -222,11 +222,11 @@
 
     .line 464
     .local v0, "states":[Ljava/lang/String;
-    iget v2, p0, Lcom/android/settings/vpn2/VpnSettings$VpnPreference;->mState:I
+    iget v2, p0, Lcom/android/settings_ext/vpn2/VpnSettings$VpnPreference;->mState:I
 
     aget-object v2, v0, v2
 
-    invoke-virtual {p0, v2}, Lcom/android/settings/vpn2/VpnSettings$VpnPreference;->setSummary(Ljava/lang/CharSequence;)V
+    invoke-virtual {p0, v2}, Lcom/android/settings_ext/vpn2/VpnSettings$VpnPreference;->setSummary(Ljava/lang/CharSequence;)V
 
     goto :goto_0
 .end method
@@ -237,10 +237,10 @@
 
     .prologue
     .line 452
-    iput p1, p0, Lcom/android/settings/vpn2/VpnSettings$VpnPreference;->mState:I
+    iput p1, p0, Lcom/android/settings_ext/vpn2/VpnSettings$VpnPreference;->mState:I
 
     .line 453
-    invoke-virtual {p0}, Lcom/android/settings/vpn2/VpnSettings$VpnPreference;->update()V
+    invoke-virtual {p0}, Lcom/android/settings_ext/vpn2/VpnSettings$VpnPreference;->update()V
 
     .line 454
     return-void
@@ -252,10 +252,10 @@
 
     .prologue
     .line 447
-    iput-object p1, p0, Lcom/android/settings/vpn2/VpnSettings$VpnPreference;->mProfile:Lcom/android/internal/net/VpnProfile;
+    iput-object p1, p0, Lcom/android/settings_ext/vpn2/VpnSettings$VpnPreference;->mProfile:Lcom/android/internal/net/VpnProfile;
 
     .line 448
-    invoke-virtual {p0}, Lcom/android/settings/vpn2/VpnSettings$VpnPreference;->update()V
+    invoke-virtual {p0}, Lcom/android/settings_ext/vpn2/VpnSettings$VpnPreference;->update()V
 
     .line 449
     return-void

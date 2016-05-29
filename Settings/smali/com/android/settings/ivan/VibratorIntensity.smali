@@ -1,10 +1,10 @@
-.class public Lcom/android/settings/ivan/VibratorIntensity;
-.super Lcom/android/settings/ivan/HWValueSliderPreference;
+.class public Lcom/android/settings_ext/ivan/VibratorIntensity;
+.super Lcom/android/settings_ext/ivan/HWValueSliderPreference;
 .source "VibratorIntensity.java"
 
 
 # static fields
-.field private static final HW_INTERFACE:Lcom/android/settings/ivan/HWValueSliderPreference$HardwareInterface;
+.field private static final HW_INTERFACE:Lcom/android/settings_ext/ivan/HWValueSliderPreference$HardwareInterface;
 
 
 # direct methods
@@ -13,11 +13,11 @@
 
     .prologue
     .line 28
-    new-instance v0, Lcom/android/settings/ivan/VibratorIntensity$1;
+    new-instance v0, Lcom/android/settings_ext/ivan/VibratorIntensity$1;
 
-    invoke-direct {v0}, Lcom/android/settings/ivan/VibratorIntensity$1;-><init>()V
+    invoke-direct {v0}, Lcom/android/settings_ext/ivan/VibratorIntensity$1;-><init>()V
 
-    sput-object v0, Lcom/android/settings/ivan/VibratorIntensity;->HW_INTERFACE:Lcom/android/settings/ivan/HWValueSliderPreference$HardwareInterface;
+    sput-object v0, Lcom/android/settings_ext/ivan/VibratorIntensity;->HW_INTERFACE:Lcom/android/settings_ext/ivan/HWValueSliderPreference$HardwareInterface;
 
     return-void
 .end method
@@ -29,21 +29,21 @@
 
     .prologue
     .line 60
-    invoke-static {}, Lcom/android/settings/ivan/VibratorIntensity;->isSupported()Z
+    invoke-static {}, Lcom/android/settings_ext/ivan/VibratorIntensity;->isSupported()Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
-    sget-object v0, Lcom/android/settings/ivan/VibratorIntensity;->HW_INTERFACE:Lcom/android/settings/ivan/HWValueSliderPreference$HardwareInterface;
+    sget-object v0, Lcom/android/settings_ext/ivan/VibratorIntensity;->HW_INTERFACE:Lcom/android/settings_ext/ivan/HWValueSliderPreference$HardwareInterface;
 
     :goto_0
-    invoke-direct {p0, p1, p2, v0}, Lcom/android/settings/ivan/HWValueSliderPreference;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;Lcom/android/settings/ivan/HWValueSliderPreference$HardwareInterface;)V
+    invoke-direct {p0, p1, p2, v0}, Lcom/android/settings_ext/ivan/HWValueSliderPreference;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;Lcom/android/settings_ext/ivan/HWValueSliderPreference$HardwareInterface;)V
 
     .line 62
     const v0, 0x7f0400d1
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/ivan/VibratorIntensity;->setDialogLayoutResource(I)V
+    invoke-virtual {p0, v0}, Lcom/android/settings_ext/ivan/VibratorIntensity;->setDialogLayoutResource(I)V
 
     .line 63
     return-void
@@ -61,7 +61,7 @@
     .prologue
     .line 73
     :try_start_0
-    invoke-static {}, Lcom/android/settings/ivan/VibratorHW;->isSupported()Z
+    invoke-static {}, Lcom/android/settings_ext/ivan/VibratorHW;->isSupported()Z
     :try_end_0
     .catch Ljava/lang/NoClassDefFoundError; {:try_start_0 .. :try_end_0} :catch_0
 
@@ -90,7 +90,7 @@
 
     .prologue
     .line 67
-    invoke-virtual {p0}, Lcom/android/settings/ivan/VibratorIntensity;->getContext()Landroid/content/Context;
+    invoke-virtual {p0}, Lcom/android/settings_ext/ivan/VibratorIntensity;->getContext()Landroid/content/Context;
 
     move-result-object v1
 

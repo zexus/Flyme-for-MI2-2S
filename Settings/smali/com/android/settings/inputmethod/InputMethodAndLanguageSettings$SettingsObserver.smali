@@ -1,11 +1,11 @@
-.class Lcom/android/settings/inputmethod/InputMethodAndLanguageSettings$SettingsObserver;
+.class Lcom/android/settings_ext/inputmethod/InputMethodAndLanguageSettings$SettingsObserver;
 .super Landroid/database/ContentObserver;
 .source "InputMethodAndLanguageSettings.java"
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/android/settings/inputmethod/InputMethodAndLanguageSettings;
+    value = Lcom/android/settings_ext/inputmethod/InputMethodAndLanguageSettings;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -17,24 +17,24 @@
 # instance fields
 .field private mContext:Landroid/content/Context;
 
-.field final synthetic this$0:Lcom/android/settings/inputmethod/InputMethodAndLanguageSettings;
+.field final synthetic this$0:Lcom/android/settings_ext/inputmethod/InputMethodAndLanguageSettings;
 
 
 # direct methods
-.method public constructor <init>(Lcom/android/settings/inputmethod/InputMethodAndLanguageSettings;Landroid/os/Handler;Landroid/content/Context;)V
+.method public constructor <init>(Lcom/android/settings_ext/inputmethod/InputMethodAndLanguageSettings;Landroid/os/Handler;Landroid/content/Context;)V
     .locals 0
     .param p2, "handler"    # Landroid/os/Handler;
     .param p3, "context"    # Landroid/content/Context;
 
     .prologue
     .line 622
-    iput-object p1, p0, Lcom/android/settings/inputmethod/InputMethodAndLanguageSettings$SettingsObserver;->this$0:Lcom/android/settings/inputmethod/InputMethodAndLanguageSettings;
+    iput-object p1, p0, Lcom/android/settings_ext/inputmethod/InputMethodAndLanguageSettings$SettingsObserver;->this$0:Lcom/android/settings_ext/inputmethod/InputMethodAndLanguageSettings;
 
     .line 623
     invoke-direct {p0, p2}, Landroid/database/ContentObserver;-><init>(Landroid/os/Handler;)V
 
     .line 624
-    iput-object p3, p0, Lcom/android/settings/inputmethod/InputMethodAndLanguageSettings$SettingsObserver;->mContext:Landroid/content/Context;
+    iput-object p3, p0, Lcom/android/settings_ext/inputmethod/InputMethodAndLanguageSettings$SettingsObserver;->mContext:Landroid/content/Context;
 
     .line 625
     return-void
@@ -48,10 +48,10 @@
 
     .prologue
     .line 628
-    iget-object v0, p0, Lcom/android/settings/inputmethod/InputMethodAndLanguageSettings$SettingsObserver;->this$0:Lcom/android/settings/inputmethod/InputMethodAndLanguageSettings;
+    iget-object v0, p0, Lcom/android/settings_ext/inputmethod/InputMethodAndLanguageSettings$SettingsObserver;->this$0:Lcom/android/settings_ext/inputmethod/InputMethodAndLanguageSettings;
 
-    # invokes: Lcom/android/settings/inputmethod/InputMethodAndLanguageSettings;->updateCurrentImeName()V
-    invoke-static {v0}, Lcom/android/settings/inputmethod/InputMethodAndLanguageSettings;->access$100(Lcom/android/settings/inputmethod/InputMethodAndLanguageSettings;)V
+    # invokes: Lcom/android/settings_ext/inputmethod/InputMethodAndLanguageSettings;->updateCurrentImeName()V
+    invoke-static {v0}, Lcom/android/settings_ext/inputmethod/InputMethodAndLanguageSettings;->access$100(Lcom/android/settings_ext/inputmethod/InputMethodAndLanguageSettings;)V
 
     .line 629
     return-void
@@ -62,7 +62,7 @@
 
     .prologue
     .line 640
-    iget-object v0, p0, Lcom/android/settings/inputmethod/InputMethodAndLanguageSettings$SettingsObserver;->mContext:Landroid/content/Context;
+    iget-object v0, p0, Lcom/android/settings_ext/inputmethod/InputMethodAndLanguageSettings$SettingsObserver;->mContext:Landroid/content/Context;
 
     invoke-virtual {v0}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
 
@@ -81,7 +81,7 @@
     const/4 v2, 0x0
 
     .line 632
-    iget-object v1, p0, Lcom/android/settings/inputmethod/InputMethodAndLanguageSettings$SettingsObserver;->mContext:Landroid/content/Context;
+    iget-object v1, p0, Lcom/android/settings_ext/inputmethod/InputMethodAndLanguageSettings$SettingsObserver;->mContext:Landroid/content/Context;
 
     invoke-virtual {v1}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
 

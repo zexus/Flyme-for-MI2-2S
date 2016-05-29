@@ -1,18 +1,18 @@
-.class public Lcom/android/settings/print/PrintServiceSettingsFragment;
-.super Lcom/android/settings/SettingsPreferenceFragment;
+.class public Lcom/android/settings_ext/print/PrintServiceSettingsFragment;
+.super Lcom/android/settings_ext/SettingsPreferenceFragment;
 .source "PrintServiceSettingsFragment.java"
 
 # interfaces
 .implements Landroid/content/DialogInterface$OnClickListener;
-.implements Lcom/android/settings/widget/SwitchBar$OnSwitchChangeListener;
+.implements Lcom/android/settings_ext/widget/SwitchBar$OnSwitchChangeListener;
 
 
 # annotations
 .annotation system Ldalvik/annotation/MemberClasses;
     value = {
-        Lcom/android/settings/print/PrintServiceSettingsFragment$PrintersLoader;,
-        Lcom/android/settings/print/PrintServiceSettingsFragment$PrintersAdapter;,
-        Lcom/android/settings/print/PrintServiceSettingsFragment$SettingsContentObserver;
+        Lcom/android/settings_ext/print/PrintServiceSettingsFragment$PrintersLoader;,
+        Lcom/android/settings_ext/print/PrintServiceSettingsFragment$PrintersAdapter;,
+        Lcom/android/settings_ext/print/PrintServiceSettingsFragment$SettingsContentObserver;
     }
 .end annotation
 
@@ -36,21 +36,21 @@
 
 .field private mPreferenceKey:Ljava/lang/String;
 
-.field private mPrintersAdapter:Lcom/android/settings/print/PrintServiceSettingsFragment$PrintersAdapter;
+.field private mPrintersAdapter:Lcom/android/settings_ext/print/PrintServiceSettingsFragment$PrintersAdapter;
 
 .field private mSearchView:Landroid/widget/SearchView;
 
 .field private mServiceEnabled:Z
 
-.field private final mSettingsContentObserver:Lcom/android/settings/print/PrintServiceSettingsFragment$SettingsContentObserver;
+.field private final mSettingsContentObserver:Lcom/android/settings_ext/print/PrintServiceSettingsFragment$SettingsContentObserver;
 
 .field private mSettingsIntent:Landroid/content/Intent;
 
 .field private mSettingsTitle:Ljava/lang/CharSequence;
 
-.field private mSwitchBar:Lcom/android/settings/widget/SwitchBar;
+.field private mSwitchBar:Lcom/android/settings_ext/widget/SwitchBar;
 
-.field private mToggleSwitch:Lcom/android/settings/widget/ToggleSwitch;
+.field private mToggleSwitch:Lcom/android/settings_ext/widget/ToggleSwitch;
 
 
 # direct methods
@@ -59,190 +59,190 @@
 
     .prologue
     .line 77
-    invoke-direct {p0}, Lcom/android/settings/SettingsPreferenceFragment;-><init>()V
+    invoke-direct {p0}, Lcom/android/settings_ext/SettingsPreferenceFragment;-><init>()V
 
     .line 84
-    new-instance v0, Lcom/android/settings/print/PrintServiceSettingsFragment$1;
+    new-instance v0, Lcom/android/settings_ext/print/PrintServiceSettingsFragment$1;
 
     new-instance v1, Landroid/os/Handler;
 
     invoke-direct {v1}, Landroid/os/Handler;-><init>()V
 
-    invoke-direct {v0, p0, v1}, Lcom/android/settings/print/PrintServiceSettingsFragment$1;-><init>(Lcom/android/settings/print/PrintServiceSettingsFragment;Landroid/os/Handler;)V
+    invoke-direct {v0, p0, v1}, Lcom/android/settings_ext/print/PrintServiceSettingsFragment$1;-><init>(Lcom/android/settings_ext/print/PrintServiceSettingsFragment;Landroid/os/Handler;)V
 
-    iput-object v0, p0, Lcom/android/settings/print/PrintServiceSettingsFragment;->mSettingsContentObserver:Lcom/android/settings/print/PrintServiceSettingsFragment$SettingsContentObserver;
+    iput-object v0, p0, Lcom/android/settings_ext/print/PrintServiceSettingsFragment;->mSettingsContentObserver:Lcom/android/settings_ext/print/PrintServiceSettingsFragment$SettingsContentObserver;
 
     .line 92
-    new-instance v0, Lcom/android/settings/print/PrintServiceSettingsFragment$2;
+    new-instance v0, Lcom/android/settings_ext/print/PrintServiceSettingsFragment$2;
 
-    invoke-direct {v0, p0}, Lcom/android/settings/print/PrintServiceSettingsFragment$2;-><init>(Lcom/android/settings/print/PrintServiceSettingsFragment;)V
+    invoke-direct {v0, p0}, Lcom/android/settings_ext/print/PrintServiceSettingsFragment$2;-><init>(Lcom/android/settings_ext/print/PrintServiceSettingsFragment;)V
 
-    iput-object v0, p0, Lcom/android/settings/print/PrintServiceSettingsFragment;->mDataObserver:Landroid/database/DataSetObserver;
+    iput-object v0, p0, Lcom/android/settings_ext/print/PrintServiceSettingsFragment;->mDataObserver:Landroid/database/DataSetObserver;
 
     .line 644
     return-void
 .end method
 
-.method static synthetic access$000(Lcom/android/settings/print/PrintServiceSettingsFragment;)V
+.method static synthetic access$000(Lcom/android/settings_ext/print/PrintServiceSettingsFragment;)V
     .locals 0
-    .param p0, "x0"    # Lcom/android/settings/print/PrintServiceSettingsFragment;
+    .param p0, "x0"    # Lcom/android/settings_ext/print/PrintServiceSettingsFragment;
 
     .prologue
     .line 77
-    invoke-direct {p0}, Lcom/android/settings/print/PrintServiceSettingsFragment;->updateUiForServiceState()V
+    invoke-direct {p0}, Lcom/android/settings_ext/print/PrintServiceSettingsFragment;->updateUiForServiceState()V
 
     return-void
 .end method
 
-.method static synthetic access$100(Lcom/android/settings/print/PrintServiceSettingsFragment;)V
+.method static synthetic access$100(Lcom/android/settings_ext/print/PrintServiceSettingsFragment;)V
     .locals 0
-    .param p0, "x0"    # Lcom/android/settings/print/PrintServiceSettingsFragment;
+    .param p0, "x0"    # Lcom/android/settings_ext/print/PrintServiceSettingsFragment;
 
     .prologue
     .line 77
-    invoke-direct {p0}, Lcom/android/settings/print/PrintServiceSettingsFragment;->updateEmptyView()V
+    invoke-direct {p0}, Lcom/android/settings_ext/print/PrintServiceSettingsFragment;->updateEmptyView()V
 
     return-void
 .end method
 
-.method static synthetic access$1400(Lcom/android/settings/print/PrintServiceSettingsFragment;)Landroid/content/pm/PackageManager;
+.method static synthetic access$1400(Lcom/android/settings_ext/print/PrintServiceSettingsFragment;)Landroid/content/pm/PackageManager;
     .locals 1
-    .param p0, "x0"    # Lcom/android/settings/print/PrintServiceSettingsFragment;
+    .param p0, "x0"    # Lcom/android/settings_ext/print/PrintServiceSettingsFragment;
 
     .prologue
     .line 77
-    invoke-virtual {p0}, Lcom/android/settings/print/PrintServiceSettingsFragment;->getPackageManager()Landroid/content/pm/PackageManager;
+    invoke-virtual {p0}, Lcom/android/settings_ext/print/PrintServiceSettingsFragment;->getPackageManager()Landroid/content/pm/PackageManager;
 
     move-result-object v0
 
     return-object v0
 .end method
 
-.method static synthetic access$1500(Lcom/android/settings/print/PrintServiceSettingsFragment;)Landroid/content/pm/PackageManager;
+.method static synthetic access$1500(Lcom/android/settings_ext/print/PrintServiceSettingsFragment;)Landroid/content/pm/PackageManager;
     .locals 1
-    .param p0, "x0"    # Lcom/android/settings/print/PrintServiceSettingsFragment;
+    .param p0, "x0"    # Lcom/android/settings_ext/print/PrintServiceSettingsFragment;
 
     .prologue
     .line 77
-    invoke-virtual {p0}, Lcom/android/settings/print/PrintServiceSettingsFragment;->getPackageManager()Landroid/content/pm/PackageManager;
+    invoke-virtual {p0}, Lcom/android/settings_ext/print/PrintServiceSettingsFragment;->getPackageManager()Landroid/content/pm/PackageManager;
 
     move-result-object v0
 
     return-object v0
 .end method
 
-.method static synthetic access$1600(Lcom/android/settings/print/PrintServiceSettingsFragment;)Landroid/content/pm/PackageManager;
+.method static synthetic access$1600(Lcom/android/settings_ext/print/PrintServiceSettingsFragment;)Landroid/content/pm/PackageManager;
     .locals 1
-    .param p0, "x0"    # Lcom/android/settings/print/PrintServiceSettingsFragment;
+    .param p0, "x0"    # Lcom/android/settings_ext/print/PrintServiceSettingsFragment;
 
     .prologue
     .line 77
-    invoke-virtual {p0}, Lcom/android/settings/print/PrintServiceSettingsFragment;->getPackageManager()Landroid/content/pm/PackageManager;
+    invoke-virtual {p0}, Lcom/android/settings_ext/print/PrintServiceSettingsFragment;->getPackageManager()Landroid/content/pm/PackageManager;
 
     move-result-object v0
 
     return-object v0
 .end method
 
-.method static synthetic access$1700(Lcom/android/settings/print/PrintServiceSettingsFragment;)Landroid/content/ComponentName;
+.method static synthetic access$1700(Lcom/android/settings_ext/print/PrintServiceSettingsFragment;)Landroid/content/ComponentName;
     .locals 1
-    .param p0, "x0"    # Lcom/android/settings/print/PrintServiceSettingsFragment;
+    .param p0, "x0"    # Lcom/android/settings_ext/print/PrintServiceSettingsFragment;
 
     .prologue
     .line 77
-    iget-object v0, p0, Lcom/android/settings/print/PrintServiceSettingsFragment;->mComponentName:Landroid/content/ComponentName;
+    iget-object v0, p0, Lcom/android/settings_ext/print/PrintServiceSettingsFragment;->mComponentName:Landroid/content/ComponentName;
 
     return-object v0
 .end method
 
-.method static synthetic access$200(Lcom/android/settings/print/PrintServiceSettingsFragment;)Lcom/android/settings/print/PrintServiceSettingsFragment$PrintersAdapter;
+.method static synthetic access$200(Lcom/android/settings_ext/print/PrintServiceSettingsFragment;)Lcom/android/settings_ext/print/PrintServiceSettingsFragment$PrintersAdapter;
     .locals 1
-    .param p0, "x0"    # Lcom/android/settings/print/PrintServiceSettingsFragment;
+    .param p0, "x0"    # Lcom/android/settings_ext/print/PrintServiceSettingsFragment;
 
     .prologue
     .line 77
-    iget-object v0, p0, Lcom/android/settings/print/PrintServiceSettingsFragment;->mPrintersAdapter:Lcom/android/settings/print/PrintServiceSettingsFragment$PrintersAdapter;
+    iget-object v0, p0, Lcom/android/settings_ext/print/PrintServiceSettingsFragment;->mPrintersAdapter:Lcom/android/settings_ext/print/PrintServiceSettingsFragment$PrintersAdapter;
 
     return-object v0
 .end method
 
-.method static synthetic access$300(Lcom/android/settings/print/PrintServiceSettingsFragment;)I
+.method static synthetic access$300(Lcom/android/settings_ext/print/PrintServiceSettingsFragment;)I
     .locals 1
-    .param p0, "x0"    # Lcom/android/settings/print/PrintServiceSettingsFragment;
+    .param p0, "x0"    # Lcom/android/settings_ext/print/PrintServiceSettingsFragment;
 
     .prologue
     .line 77
-    iget v0, p0, Lcom/android/settings/print/PrintServiceSettingsFragment;->mLastUnfilteredItemCount:I
+    iget v0, p0, Lcom/android/settings_ext/print/PrintServiceSettingsFragment;->mLastUnfilteredItemCount:I
 
     return v0
 .end method
 
-.method static synthetic access$302(Lcom/android/settings/print/PrintServiceSettingsFragment;I)I
+.method static synthetic access$302(Lcom/android/settings_ext/print/PrintServiceSettingsFragment;I)I
     .locals 0
-    .param p0, "x0"    # Lcom/android/settings/print/PrintServiceSettingsFragment;
+    .param p0, "x0"    # Lcom/android/settings_ext/print/PrintServiceSettingsFragment;
     .param p1, "x1"    # I
 
     .prologue
     .line 77
-    iput p1, p0, Lcom/android/settings/print/PrintServiceSettingsFragment;->mLastUnfilteredItemCount:I
+    iput p1, p0, Lcom/android/settings_ext/print/PrintServiceSettingsFragment;->mLastUnfilteredItemCount:I
 
     return p1
 .end method
 
-.method static synthetic access$500(Lcom/android/settings/print/PrintServiceSettingsFragment;)Ljava/lang/CharSequence;
+.method static synthetic access$500(Lcom/android/settings_ext/print/PrintServiceSettingsFragment;)Ljava/lang/CharSequence;
     .locals 1
-    .param p0, "x0"    # Lcom/android/settings/print/PrintServiceSettingsFragment;
+    .param p0, "x0"    # Lcom/android/settings_ext/print/PrintServiceSettingsFragment;
 
     .prologue
     .line 77
-    iget-object v0, p0, Lcom/android/settings/print/PrintServiceSettingsFragment;->mEnableWarningMessage:Ljava/lang/CharSequence;
+    iget-object v0, p0, Lcom/android/settings_ext/print/PrintServiceSettingsFragment;->mEnableWarningMessage:Ljava/lang/CharSequence;
 
     return-object v0
 .end method
 
-.method static synthetic access$600(Lcom/android/settings/print/PrintServiceSettingsFragment;)Lcom/android/settings/widget/SwitchBar;
+.method static synthetic access$600(Lcom/android/settings_ext/print/PrintServiceSettingsFragment;)Lcom/android/settings_ext/widget/SwitchBar;
     .locals 1
-    .param p0, "x0"    # Lcom/android/settings/print/PrintServiceSettingsFragment;
+    .param p0, "x0"    # Lcom/android/settings_ext/print/PrintServiceSettingsFragment;
 
     .prologue
     .line 77
-    iget-object v0, p0, Lcom/android/settings/print/PrintServiceSettingsFragment;->mSwitchBar:Lcom/android/settings/widget/SwitchBar;
+    iget-object v0, p0, Lcom/android/settings_ext/print/PrintServiceSettingsFragment;->mSwitchBar:Lcom/android/settings_ext/widget/SwitchBar;
 
     return-object v0
 .end method
 
-.method static synthetic access$700(Lcom/android/settings/print/PrintServiceSettingsFragment;I)V
+.method static synthetic access$700(Lcom/android/settings_ext/print/PrintServiceSettingsFragment;I)V
     .locals 0
-    .param p0, "x0"    # Lcom/android/settings/print/PrintServiceSettingsFragment;
+    .param p0, "x0"    # Lcom/android/settings_ext/print/PrintServiceSettingsFragment;
     .param p1, "x1"    # I
 
     .prologue
     .line 77
-    invoke-virtual {p0, p1}, Lcom/android/settings/print/PrintServiceSettingsFragment;->showDialog(I)V
+    invoke-virtual {p0, p1}, Lcom/android/settings_ext/print/PrintServiceSettingsFragment;->showDialog(I)V
 
     return-void
 .end method
 
-.method static synthetic access$800(Lcom/android/settings/print/PrintServiceSettingsFragment;)Ljava/lang/String;
+.method static synthetic access$800(Lcom/android/settings_ext/print/PrintServiceSettingsFragment;)Ljava/lang/String;
     .locals 1
-    .param p0, "x0"    # Lcom/android/settings/print/PrintServiceSettingsFragment;
+    .param p0, "x0"    # Lcom/android/settings_ext/print/PrintServiceSettingsFragment;
 
     .prologue
     .line 77
-    iget-object v0, p0, Lcom/android/settings/print/PrintServiceSettingsFragment;->mPreferenceKey:Ljava/lang/String;
+    iget-object v0, p0, Lcom/android/settings_ext/print/PrintServiceSettingsFragment;->mPreferenceKey:Ljava/lang/String;
 
     return-object v0
 .end method
 
-.method static synthetic access$900(Lcom/android/settings/print/PrintServiceSettingsFragment;Ljava/lang/String;Z)V
+.method static synthetic access$900(Lcom/android/settings_ext/print/PrintServiceSettingsFragment;Ljava/lang/String;Z)V
     .locals 0
-    .param p0, "x0"    # Lcom/android/settings/print/PrintServiceSettingsFragment;
+    .param p0, "x0"    # Lcom/android/settings_ext/print/PrintServiceSettingsFragment;
     .param p1, "x1"    # Ljava/lang/String;
     .param p2, "x2"    # Z
 
     .prologue
     .line 77
-    invoke-direct {p0, p1, p2}, Lcom/android/settings/print/PrintServiceSettingsFragment;->onPreferenceToggled(Ljava/lang/String;Z)V
+    invoke-direct {p0, p1, p2}, Lcom/android/settings_ext/print/PrintServiceSettingsFragment;->onPreferenceToggled(Ljava/lang/String;Z)V
 
     return-void
 .end method
@@ -252,66 +252,66 @@
 
     .prologue
     .line 292
-    new-instance v1, Lcom/android/settings/print/PrintServiceSettingsFragment$PrintersAdapter;
+    new-instance v1, Lcom/android/settings_ext/print/PrintServiceSettingsFragment$PrintersAdapter;
 
     const/4 v2, 0x0
 
-    invoke-direct {v1, p0, v2}, Lcom/android/settings/print/PrintServiceSettingsFragment$PrintersAdapter;-><init>(Lcom/android/settings/print/PrintServiceSettingsFragment;Lcom/android/settings/print/PrintServiceSettingsFragment$1;)V
+    invoke-direct {v1, p0, v2}, Lcom/android/settings_ext/print/PrintServiceSettingsFragment$PrintersAdapter;-><init>(Lcom/android/settings_ext/print/PrintServiceSettingsFragment;Lcom/android/settings_ext/print/PrintServiceSettingsFragment$1;)V
 
-    iput-object v1, p0, Lcom/android/settings/print/PrintServiceSettingsFragment;->mPrintersAdapter:Lcom/android/settings/print/PrintServiceSettingsFragment$PrintersAdapter;
+    iput-object v1, p0, Lcom/android/settings_ext/print/PrintServiceSettingsFragment;->mPrintersAdapter:Lcom/android/settings_ext/print/PrintServiceSettingsFragment$PrintersAdapter;
 
     .line 293
-    iget-object v1, p0, Lcom/android/settings/print/PrintServiceSettingsFragment;->mPrintersAdapter:Lcom/android/settings/print/PrintServiceSettingsFragment$PrintersAdapter;
+    iget-object v1, p0, Lcom/android/settings_ext/print/PrintServiceSettingsFragment;->mPrintersAdapter:Lcom/android/settings_ext/print/PrintServiceSettingsFragment$PrintersAdapter;
 
-    iget-object v2, p0, Lcom/android/settings/print/PrintServiceSettingsFragment;->mDataObserver:Landroid/database/DataSetObserver;
+    iget-object v2, p0, Lcom/android/settings_ext/print/PrintServiceSettingsFragment;->mDataObserver:Landroid/database/DataSetObserver;
 
-    invoke-virtual {v1, v2}, Lcom/android/settings/print/PrintServiceSettingsFragment$PrintersAdapter;->registerDataSetObserver(Landroid/database/DataSetObserver;)V
+    invoke-virtual {v1, v2}, Lcom/android/settings_ext/print/PrintServiceSettingsFragment$PrintersAdapter;->registerDataSetObserver(Landroid/database/DataSetObserver;)V
 
     .line 295
-    invoke-virtual {p0}, Lcom/android/settings/print/PrintServiceSettingsFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/print/PrintServiceSettingsFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
-    check-cast v0, Lcom/android/settings/SettingsActivity;
+    check-cast v0, Lcom/android/settings_ext/SettingsActivity;
 
     .line 297
-    .local v0, "activity":Lcom/android/settings/SettingsActivity;
-    invoke-virtual {v0}, Lcom/android/settings/SettingsActivity;->getSwitchBar()Lcom/android/settings/widget/SwitchBar;
+    .local v0, "activity":Lcom/android/settings_ext/SettingsActivity;
+    invoke-virtual {v0}, Lcom/android/settings_ext/SettingsActivity;->getSwitchBar()Lcom/android/settings_ext/widget/SwitchBar;
 
     move-result-object v1
 
-    iput-object v1, p0, Lcom/android/settings/print/PrintServiceSettingsFragment;->mSwitchBar:Lcom/android/settings/widget/SwitchBar;
+    iput-object v1, p0, Lcom/android/settings_ext/print/PrintServiceSettingsFragment;->mSwitchBar:Lcom/android/settings_ext/widget/SwitchBar;
 
     .line 298
-    iget-object v1, p0, Lcom/android/settings/print/PrintServiceSettingsFragment;->mSwitchBar:Lcom/android/settings/widget/SwitchBar;
+    iget-object v1, p0, Lcom/android/settings_ext/print/PrintServiceSettingsFragment;->mSwitchBar:Lcom/android/settings_ext/widget/SwitchBar;
 
-    invoke-virtual {v1, p0}, Lcom/android/settings/widget/SwitchBar;->addOnSwitchChangeListener(Lcom/android/settings/widget/SwitchBar$OnSwitchChangeListener;)V
+    invoke-virtual {v1, p0}, Lcom/android/settings_ext/widget/SwitchBar;->addOnSwitchChangeListener(Lcom/android/settings_ext/widget/SwitchBar$OnSwitchChangeListener;)V
 
     .line 299
-    iget-object v1, p0, Lcom/android/settings/print/PrintServiceSettingsFragment;->mSwitchBar:Lcom/android/settings/widget/SwitchBar;
+    iget-object v1, p0, Lcom/android/settings_ext/print/PrintServiceSettingsFragment;->mSwitchBar:Lcom/android/settings_ext/widget/SwitchBar;
 
-    invoke-virtual {v1}, Lcom/android/settings/widget/SwitchBar;->show()V
+    invoke-virtual {v1}, Lcom/android/settings_ext/widget/SwitchBar;->show()V
 
     .line 301
-    iget-object v1, p0, Lcom/android/settings/print/PrintServiceSettingsFragment;->mSwitchBar:Lcom/android/settings/widget/SwitchBar;
+    iget-object v1, p0, Lcom/android/settings_ext/print/PrintServiceSettingsFragment;->mSwitchBar:Lcom/android/settings_ext/widget/SwitchBar;
 
-    invoke-virtual {v1}, Lcom/android/settings/widget/SwitchBar;->getSwitch()Lcom/android/settings/widget/ToggleSwitch;
+    invoke-virtual {v1}, Lcom/android/settings_ext/widget/SwitchBar;->getSwitch()Lcom/android/settings_ext/widget/ToggleSwitch;
 
     move-result-object v1
 
-    iput-object v1, p0, Lcom/android/settings/print/PrintServiceSettingsFragment;->mToggleSwitch:Lcom/android/settings/widget/ToggleSwitch;
+    iput-object v1, p0, Lcom/android/settings_ext/print/PrintServiceSettingsFragment;->mToggleSwitch:Lcom/android/settings_ext/widget/ToggleSwitch;
 
     .line 302
-    iget-object v1, p0, Lcom/android/settings/print/PrintServiceSettingsFragment;->mToggleSwitch:Lcom/android/settings/widget/ToggleSwitch;
+    iget-object v1, p0, Lcom/android/settings_ext/print/PrintServiceSettingsFragment;->mToggleSwitch:Lcom/android/settings_ext/widget/ToggleSwitch;
 
-    new-instance v2, Lcom/android/settings/print/PrintServiceSettingsFragment$3;
+    new-instance v2, Lcom/android/settings_ext/print/PrintServiceSettingsFragment$3;
 
-    invoke-direct {v2, p0}, Lcom/android/settings/print/PrintServiceSettingsFragment$3;-><init>(Lcom/android/settings/print/PrintServiceSettingsFragment;)V
+    invoke-direct {v2, p0}, Lcom/android/settings_ext/print/PrintServiceSettingsFragment$3;-><init>(Lcom/android/settings_ext/print/PrintServiceSettingsFragment;)V
 
-    invoke-virtual {v1, v2}, Lcom/android/settings/widget/ToggleSwitch;->setOnBeforeCheckedChangeListener(Lcom/android/settings/widget/ToggleSwitch$OnBeforeCheckedChangeListener;)V
+    invoke-virtual {v1, v2}, Lcom/android/settings_ext/widget/ToggleSwitch;->setOnBeforeCheckedChangeListener(Lcom/android/settings_ext/widget/ToggleSwitch$OnBeforeCheckedChangeListener;)V
 
     .line 320
-    invoke-virtual {p0}, Lcom/android/settings/print/PrintServiceSettingsFragment;->getListView()Landroid/widget/ListView;
+    invoke-virtual {p0}, Lcom/android/settings_ext/print/PrintServiceSettingsFragment;->getListView()Landroid/widget/ListView;
 
     move-result-object v1
 
@@ -324,11 +324,11 @@
     invoke-virtual {v1, v2}, Landroid/widget/ListView;->setSelector(Landroid/graphics/drawable/Drawable;)V
 
     .line 321
-    invoke-virtual {p0}, Lcom/android/settings/print/PrintServiceSettingsFragment;->getListView()Landroid/widget/ListView;
+    invoke-virtual {p0}, Lcom/android/settings_ext/print/PrintServiceSettingsFragment;->getListView()Landroid/widget/ListView;
 
     move-result-object v1
 
-    iget-object v2, p0, Lcom/android/settings/print/PrintServiceSettingsFragment;->mPrintersAdapter:Lcom/android/settings/print/PrintServiceSettingsFragment$PrintersAdapter;
+    iget-object v2, p0, Lcom/android/settings_ext/print/PrintServiceSettingsFragment;->mPrintersAdapter:Lcom/android/settings_ext/print/PrintServiceSettingsFragment$PrintersAdapter;
 
     invoke-virtual {v1, v2}, Landroid/widget/ListView;->setAdapter(Landroid/widget/ListAdapter;)V
 
@@ -349,11 +349,11 @@
 
     .line 178
     .local v0, "service":Landroid/content/ComponentName;
-    invoke-virtual {p0}, Lcom/android/settings/print/PrintServiceSettingsFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/print/PrintServiceSettingsFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v2
 
-    invoke-static {v2}, Lcom/android/settings/print/PrintSettingsUtils;->readEnabledPrintServices(Landroid/content/Context;)Ljava/util/List;
+    invoke-static {v2}, Lcom/android/settings_ext/print/PrintSettingsUtils;->readEnabledPrintServices(Landroid/content/Context;)Ljava/util/List;
 
     move-result-object v1
 
@@ -366,11 +366,11 @@
 
     .line 184
     :goto_0
-    invoke-virtual {p0}, Lcom/android/settings/print/PrintServiceSettingsFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/print/PrintServiceSettingsFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v2
 
-    invoke-static {v2, v1}, Lcom/android/settings/print/PrintSettingsUtils;->writeEnabledPrintServices(Landroid/content/Context;Ljava/util/List;)V
+    invoke-static {v2, v1}, Lcom/android/settings_ext/print/PrintSettingsUtils;->writeEnabledPrintServices(Landroid/content/Context;Ljava/util/List;)V
 
     .line 185
     return-void
@@ -397,7 +397,7 @@
     const/4 v7, 0x0
 
     .line 230
-    invoke-virtual {p0}, Lcom/android/settings/print/PrintServiceSettingsFragment;->getListView()Landroid/widget/ListView;
+    invoke-virtual {p0}, Lcom/android/settings_ext/print/PrintServiceSettingsFragment;->getListView()Landroid/widget/ListView;
 
     move-result-object v3
 
@@ -417,9 +417,9 @@
 
     .line 233
     .local v1, "emptyView":Landroid/view/View;
-    iget-object v5, p0, Lcom/android/settings/print/PrintServiceSettingsFragment;->mToggleSwitch:Lcom/android/settings/widget/ToggleSwitch;
+    iget-object v5, p0, Lcom/android/settings_ext/print/PrintServiceSettingsFragment;->mToggleSwitch:Lcom/android/settings_ext/widget/ToggleSwitch;
 
-    invoke-virtual {v5}, Lcom/android/settings/widget/ToggleSwitch;->isChecked()Z
+    invoke-virtual {v5}, Lcom/android/settings_ext/widget/ToggleSwitch;->isChecked()Z
 
     move-result v5
 
@@ -447,7 +447,7 @@
     if-nez v1, :cond_1
 
     .line 239
-    invoke-virtual {p0}, Lcom/android/settings/print/PrintServiceSettingsFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/print/PrintServiceSettingsFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v5
 
@@ -470,7 +470,7 @@
 
     .line 242
     .local v2, "iconView":Landroid/widget/ImageView;
-    invoke-virtual {p0, v10}, Lcom/android/settings/print/PrintServiceSettingsFragment;->getString(I)Ljava/lang/String;
+    invoke-virtual {p0, v10}, Lcom/android/settings_ext/print/PrintServiceSettingsFragment;->getString(I)Ljava/lang/String;
 
     move-result-object v5
 
@@ -502,9 +502,9 @@
 
     .line 248
     :cond_2
-    iget-object v5, p0, Lcom/android/settings/print/PrintServiceSettingsFragment;->mPrintersAdapter:Lcom/android/settings/print/PrintServiceSettingsFragment$PrintersAdapter;
+    iget-object v5, p0, Lcom/android/settings_ext/print/PrintServiceSettingsFragment;->mPrintersAdapter:Lcom/android/settings_ext/print/PrintServiceSettingsFragment$PrintersAdapter;
 
-    invoke-virtual {v5}, Lcom/android/settings/print/PrintServiceSettingsFragment$PrintersAdapter;->getUnfilteredCount()I
+    invoke-virtual {v5}, Lcom/android/settings_ext/print/PrintServiceSettingsFragment$PrintersAdapter;->getUnfilteredCount()I
 
     move-result v5
 
@@ -532,7 +532,7 @@
     if-nez v1, :cond_1
 
     .line 255
-    invoke-virtual {p0}, Lcom/android/settings/print/PrintServiceSettingsFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/print/PrintServiceSettingsFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v5
 
@@ -556,9 +556,9 @@
 
     .line 260
     :cond_4
-    iget-object v5, p0, Lcom/android/settings/print/PrintServiceSettingsFragment;->mPrintersAdapter:Lcom/android/settings/print/PrintServiceSettingsFragment$PrintersAdapter;
+    iget-object v5, p0, Lcom/android/settings_ext/print/PrintServiceSettingsFragment;->mPrintersAdapter:Lcom/android/settings_ext/print/PrintServiceSettingsFragment$PrintersAdapter;
 
-    invoke-virtual {v5}, Lcom/android/settings/print/PrintServiceSettingsFragment$PrintersAdapter;->getCount()I
+    invoke-virtual {v5}, Lcom/android/settings_ext/print/PrintServiceSettingsFragment$PrintersAdapter;->getCount()I
 
     move-result v5
 
@@ -586,7 +586,7 @@
     if-nez v1, :cond_1
 
     .line 266
-    invoke-virtual {p0}, Lcom/android/settings/print/PrintServiceSettingsFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/print/PrintServiceSettingsFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v5
 
@@ -609,7 +609,7 @@
 
     .line 269
     .restart local v2    # "iconView":Landroid/widget/ImageView;
-    invoke-virtual {p0, v9}, Lcom/android/settings/print/PrintServiceSettingsFragment;->getString(I)Ljava/lang/String;
+    invoke-virtual {p0, v9}, Lcom/android/settings_ext/print/PrintServiceSettingsFragment;->getString(I)Ljava/lang/String;
 
     move-result-object v5
 
@@ -642,7 +642,7 @@
     const/4 v11, 0x0
 
     .line 331
-    invoke-virtual {p0}, Lcom/android/settings/print/PrintServiceSettingsFragment;->getArguments()Landroid/os/Bundle;
+    invoke-virtual {p0}, Lcom/android/settings_ext/print/PrintServiceSettingsFragment;->getArguments()Landroid/os/Bundle;
 
     move-result-object v3
 
@@ -654,7 +654,7 @@
 
     move-result-object v9
 
-    iput-object v9, p0, Lcom/android/settings/print/PrintServiceSettingsFragment;->mPreferenceKey:Ljava/lang/String;
+    iput-object v9, p0, Lcom/android/settings_ext/print/PrintServiceSettingsFragment;->mPreferenceKey:Ljava/lang/String;
 
     .line 337
     const-string v9, "EXTRA_CHECKED"
@@ -665,9 +665,9 @@
 
     .line 338
     .local v4, "enabled":Z
-    iget-object v9, p0, Lcom/android/settings/print/PrintServiceSettingsFragment;->mSwitchBar:Lcom/android/settings/widget/SwitchBar;
+    iget-object v9, p0, Lcom/android/settings_ext/print/PrintServiceSettingsFragment;->mSwitchBar:Lcom/android/settings_ext/widget/SwitchBar;
 
-    invoke-virtual {v9, v4}, Lcom/android/settings/widget/SwitchBar;->setCheckedInternal(Z)V
+    invoke-virtual {v9, v4}, Lcom/android/settings_ext/widget/SwitchBar;->setCheckedInternal(Z)V
 
     .line 341
     const-string v9, "EXTRA_SETTINGS_TITLE"
@@ -719,7 +719,7 @@
 
     .line 347
     .local v7, "settingsIntent":Landroid/content/Intent;
-    invoke-virtual {p0}, Lcom/android/settings/print/PrintServiceSettingsFragment;->getPackageManager()Landroid/content/pm/PackageManager;
+    invoke-virtual {p0}, Lcom/android/settings_ext/print/PrintServiceSettingsFragment;->getPackageManager()Landroid/content/pm/PackageManager;
 
     move-result-object v9
 
@@ -749,10 +749,10 @@
     if-eqz v9, :cond_0
 
     .line 352
-    iput-object v8, p0, Lcom/android/settings/print/PrintServiceSettingsFragment;->mSettingsTitle:Ljava/lang/CharSequence;
+    iput-object v8, p0, Lcom/android/settings_ext/print/PrintServiceSettingsFragment;->mSettingsTitle:Ljava/lang/CharSequence;
 
     .line 353
-    iput-object v7, p0, Lcom/android/settings/print/PrintServiceSettingsFragment;->mSettingsIntent:Landroid/content/Intent;
+    iput-object v7, p0, Lcom/android/settings_ext/print/PrintServiceSettingsFragment;->mSettingsIntent:Landroid/content/Intent;
 
     .line 359
     .end local v5    # "resolvedActivities":Ljava/util/List;, "Ljava/util/List<Landroid/content/pm/ResolveInfo;>;"
@@ -807,7 +807,7 @@
 
     .line 367
     .local v2, "addPritnersIntent":Landroid/content/Intent;
-    invoke-virtual {p0}, Lcom/android/settings/print/PrintServiceSettingsFragment;->getPackageManager()Landroid/content/pm/PackageManager;
+    invoke-virtual {p0}, Lcom/android/settings_ext/print/PrintServiceSettingsFragment;->getPackageManager()Landroid/content/pm/PackageManager;
 
     move-result-object v9
 
@@ -837,10 +837,10 @@
     if-eqz v9, :cond_1
 
     .line 372
-    iput-object v1, p0, Lcom/android/settings/print/PrintServiceSettingsFragment;->mAddPrintersTitle:Ljava/lang/CharSequence;
+    iput-object v1, p0, Lcom/android/settings_ext/print/PrintServiceSettingsFragment;->mAddPrintersTitle:Ljava/lang/CharSequence;
 
     .line 373
-    iput-object v2, p0, Lcom/android/settings/print/PrintServiceSettingsFragment;->mAddPrintersIntent:Landroid/content/Intent;
+    iput-object v2, p0, Lcom/android/settings_ext/print/PrintServiceSettingsFragment;->mAddPrintersIntent:Landroid/content/Intent;
 
     .line 379
     .end local v2    # "addPritnersIntent":Landroid/content/Intent;
@@ -852,7 +852,7 @@
 
     move-result-object v9
 
-    iput-object v9, p0, Lcom/android/settings/print/PrintServiceSettingsFragment;->mEnableWarningTitle:Ljava/lang/CharSequence;
+    iput-object v9, p0, Lcom/android/settings_ext/print/PrintServiceSettingsFragment;->mEnableWarningTitle:Ljava/lang/CharSequence;
 
     .line 383
     const-string v9, "EXTRA_ENABLE_WARNING_MESSAGE"
@@ -861,7 +861,7 @@
 
     move-result-object v9
 
-    iput-object v9, p0, Lcom/android/settings/print/PrintServiceSettingsFragment;->mEnableWarningMessage:Ljava/lang/CharSequence;
+    iput-object v9, p0, Lcom/android/settings_ext/print/PrintServiceSettingsFragment;->mEnableWarningMessage:Ljava/lang/CharSequence;
 
     .line 387
     const-string v9, "EXTRA_SERVICE_COMPONENT_NAME"
@@ -874,12 +874,12 @@
 
     move-result-object v9
 
-    iput-object v9, p0, Lcom/android/settings/print/PrintServiceSettingsFragment;->mComponentName:Landroid/content/ComponentName;
+    iput-object v9, p0, Lcom/android/settings_ext/print/PrintServiceSettingsFragment;->mComponentName:Landroid/content/ComponentName;
 
     .line 390
     const/4 v9, 0x1
 
-    invoke-virtual {p0, v9}, Lcom/android/settings/print/PrintServiceSettingsFragment;->setHasOptionsMenu(Z)V
+    invoke-virtual {p0, v9}, Lcom/android/settings_ext/print/PrintServiceSettingsFragment;->setHasOptionsMenu(Z)V
 
     .line 391
     return-void
@@ -890,44 +890,44 @@
 
     .prologue
     .line 279
-    invoke-virtual {p0}, Lcom/android/settings/print/PrintServiceSettingsFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/print/PrintServiceSettingsFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v1
 
-    invoke-static {v1}, Lcom/android/settings/print/PrintSettingsUtils;->readEnabledPrintServices(Landroid/content/Context;)Ljava/util/List;
+    invoke-static {v1}, Lcom/android/settings_ext/print/PrintSettingsUtils;->readEnabledPrintServices(Landroid/content/Context;)Ljava/util/List;
 
     move-result-object v0
 
     .line 280
     .local v0, "services":Ljava/util/List;, "Ljava/util/List<Landroid/content/ComponentName;>;"
-    iget-object v1, p0, Lcom/android/settings/print/PrintServiceSettingsFragment;->mComponentName:Landroid/content/ComponentName;
+    iget-object v1, p0, Lcom/android/settings_ext/print/PrintServiceSettingsFragment;->mComponentName:Landroid/content/ComponentName;
 
     invoke-interface {v0, v1}, Ljava/util/List;->contains(Ljava/lang/Object;)Z
 
     move-result v1
 
-    iput-boolean v1, p0, Lcom/android/settings/print/PrintServiceSettingsFragment;->mServiceEnabled:Z
+    iput-boolean v1, p0, Lcom/android/settings_ext/print/PrintServiceSettingsFragment;->mServiceEnabled:Z
 
     .line 281
-    iget-boolean v1, p0, Lcom/android/settings/print/PrintServiceSettingsFragment;->mServiceEnabled:Z
+    iget-boolean v1, p0, Lcom/android/settings_ext/print/PrintServiceSettingsFragment;->mServiceEnabled:Z
 
     if-eqz v1, :cond_0
 
     .line 282
-    iget-object v1, p0, Lcom/android/settings/print/PrintServiceSettingsFragment;->mSwitchBar:Lcom/android/settings/widget/SwitchBar;
+    iget-object v1, p0, Lcom/android/settings_ext/print/PrintServiceSettingsFragment;->mSwitchBar:Lcom/android/settings_ext/widget/SwitchBar;
 
     const/4 v2, 0x1
 
-    invoke-virtual {v1, v2}, Lcom/android/settings/widget/SwitchBar;->setCheckedInternal(Z)V
+    invoke-virtual {v1, v2}, Lcom/android/settings_ext/widget/SwitchBar;->setCheckedInternal(Z)V
 
     .line 283
-    iget-object v1, p0, Lcom/android/settings/print/PrintServiceSettingsFragment;->mPrintersAdapter:Lcom/android/settings/print/PrintServiceSettingsFragment$PrintersAdapter;
+    iget-object v1, p0, Lcom/android/settings_ext/print/PrintServiceSettingsFragment;->mPrintersAdapter:Lcom/android/settings_ext/print/PrintServiceSettingsFragment$PrintersAdapter;
 
-    invoke-virtual {v1}, Lcom/android/settings/print/PrintServiceSettingsFragment$PrintersAdapter;->enable()V
+    invoke-virtual {v1}, Lcom/android/settings_ext/print/PrintServiceSettingsFragment$PrintersAdapter;->enable()V
 
     .line 288
     :goto_0
-    invoke-virtual {p0}, Lcom/android/settings/print/PrintServiceSettingsFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/print/PrintServiceSettingsFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v1
 
@@ -938,16 +938,16 @@
 
     .line 285
     :cond_0
-    iget-object v1, p0, Lcom/android/settings/print/PrintServiceSettingsFragment;->mSwitchBar:Lcom/android/settings/widget/SwitchBar;
+    iget-object v1, p0, Lcom/android/settings_ext/print/PrintServiceSettingsFragment;->mSwitchBar:Lcom/android/settings_ext/widget/SwitchBar;
 
     const/4 v2, 0x0
 
-    invoke-virtual {v1, v2}, Lcom/android/settings/widget/SwitchBar;->setCheckedInternal(Z)V
+    invoke-virtual {v1, v2}, Lcom/android/settings_ext/widget/SwitchBar;->setCheckedInternal(Z)V
 
     .line 286
-    iget-object v1, p0, Lcom/android/settings/print/PrintServiceSettingsFragment;->mPrintersAdapter:Lcom/android/settings/print/PrintServiceSettingsFragment$PrintersAdapter;
+    iget-object v1, p0, Lcom/android/settings_ext/print/PrintServiceSettingsFragment;->mPrintersAdapter:Lcom/android/settings_ext/print/PrintServiceSettingsFragment$PrintersAdapter;
 
-    invoke-virtual {v1}, Lcom/android/settings/print/PrintServiceSettingsFragment$PrintersAdapter;->disable()V
+    invoke-virtual {v1}, Lcom/android/settings_ext/print/PrintServiceSettingsFragment$PrintersAdapter;->disable()V
 
     goto :goto_0
 .end method
@@ -976,12 +976,12 @@
 
     .line 214
     .local v0, "checked":Z
-    iget-object v1, p0, Lcom/android/settings/print/PrintServiceSettingsFragment;->mSwitchBar:Lcom/android/settings/widget/SwitchBar;
+    iget-object v1, p0, Lcom/android/settings_ext/print/PrintServiceSettingsFragment;->mSwitchBar:Lcom/android/settings_ext/widget/SwitchBar;
 
-    invoke-virtual {v1, v0}, Lcom/android/settings/widget/SwitchBar;->setCheckedInternal(Z)V
+    invoke-virtual {v1, v0}, Lcom/android/settings_ext/widget/SwitchBar;->setCheckedInternal(Z)V
 
     .line 215
-    invoke-virtual {p0}, Lcom/android/settings/print/PrintServiceSettingsFragment;->getArguments()Landroid/os/Bundle;
+    invoke-virtual {p0}, Lcom/android/settings_ext/print/PrintServiceSettingsFragment;->getArguments()Landroid/os/Bundle;
 
     move-result-object v1
 
@@ -990,9 +990,9 @@
     invoke-virtual {v1, v2, v0}, Landroid/os/Bundle;->putBoolean(Ljava/lang/String;Z)V
 
     .line 216
-    iget-object v1, p0, Lcom/android/settings/print/PrintServiceSettingsFragment;->mPreferenceKey:Ljava/lang/String;
+    iget-object v1, p0, Lcom/android/settings_ext/print/PrintServiceSettingsFragment;->mPreferenceKey:Ljava/lang/String;
 
-    invoke-direct {p0, v1, v0}, Lcom/android/settings/print/PrintServiceSettingsFragment;->onPreferenceToggled(Ljava/lang/String;Z)V
+    invoke-direct {p0, v1, v0}, Lcom/android/settings_ext/print/PrintServiceSettingsFragment;->onPreferenceToggled(Ljava/lang/String;Z)V
 
     .line 227
     :goto_0
@@ -1005,12 +1005,12 @@
 
     .line 220
     .restart local v0    # "checked":Z
-    iget-object v1, p0, Lcom/android/settings/print/PrintServiceSettingsFragment;->mSwitchBar:Lcom/android/settings/widget/SwitchBar;
+    iget-object v1, p0, Lcom/android/settings_ext/print/PrintServiceSettingsFragment;->mSwitchBar:Lcom/android/settings_ext/widget/SwitchBar;
 
-    invoke-virtual {v1, v0}, Lcom/android/settings/widget/SwitchBar;->setCheckedInternal(Z)V
+    invoke-virtual {v1, v0}, Lcom/android/settings_ext/widget/SwitchBar;->setCheckedInternal(Z)V
 
     .line 221
-    invoke-virtual {p0}, Lcom/android/settings/print/PrintServiceSettingsFragment;->getArguments()Landroid/os/Bundle;
+    invoke-virtual {p0}, Lcom/android/settings_ext/print/PrintServiceSettingsFragment;->getArguments()Landroid/os/Bundle;
 
     move-result-object v1
 
@@ -1019,9 +1019,9 @@
     invoke-virtual {v1, v2, v0}, Landroid/os/Bundle;->putBoolean(Ljava/lang/String;Z)V
 
     .line 222
-    iget-object v1, p0, Lcom/android/settings/print/PrintServiceSettingsFragment;->mPreferenceKey:Ljava/lang/String;
+    iget-object v1, p0, Lcom/android/settings_ext/print/PrintServiceSettingsFragment;->mPreferenceKey:Ljava/lang/String;
 
-    invoke-direct {p0, v1, v0}, Lcom/android/settings/print/PrintServiceSettingsFragment;->onPreferenceToggled(Ljava/lang/String;Z)V
+    invoke-direct {p0, v1, v0}, Lcom/android/settings_ext/print/PrintServiceSettingsFragment;->onPreferenceToggled(Ljava/lang/String;Z)V
 
     goto :goto_0
 
@@ -1060,15 +1060,15 @@
 
     .line 193
     :pswitch_0
-    iget-object v1, p0, Lcom/android/settings/print/PrintServiceSettingsFragment;->mEnableWarningTitle:Ljava/lang/CharSequence;
+    iget-object v1, p0, Lcom/android/settings_ext/print/PrintServiceSettingsFragment;->mEnableWarningTitle:Ljava/lang/CharSequence;
 
     .line 194
-    iget-object v0, p0, Lcom/android/settings/print/PrintServiceSettingsFragment;->mEnableWarningMessage:Ljava/lang/CharSequence;
+    iget-object v0, p0, Lcom/android/settings_ext/print/PrintServiceSettingsFragment;->mEnableWarningMessage:Ljava/lang/CharSequence;
 
     .line 199
     new-instance v2, Landroid/app/AlertDialog$Builder;
 
-    invoke-virtual {p0}, Lcom/android/settings/print/PrintServiceSettingsFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/print/PrintServiceSettingsFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v3
 
@@ -1128,7 +1128,7 @@
     const v4, 0x7f0f0282
 
     .line 395
-    invoke-super {p0, p1, p2}, Lcom/android/settings/SettingsPreferenceFragment;->onCreateOptionsMenu(Landroid/view/Menu;Landroid/view/MenuInflater;)V
+    invoke-super {p0, p1, p2}, Lcom/android/settings_ext/SettingsPreferenceFragment;->onCreateOptionsMenu(Landroid/view/Menu;Landroid/view/MenuInflater;)V
 
     .line 396
     const v3, 0x7f110004
@@ -1142,11 +1142,11 @@
 
     .line 399
     .local v0, "addPrinters":Landroid/view/MenuItem;
-    iget-boolean v3, p0, Lcom/android/settings/print/PrintServiceSettingsFragment;->mServiceEnabled:Z
+    iget-boolean v3, p0, Lcom/android/settings_ext/print/PrintServiceSettingsFragment;->mServiceEnabled:Z
 
     if-eqz v3, :cond_0
 
-    iget-object v3, p0, Lcom/android/settings/print/PrintServiceSettingsFragment;->mAddPrintersTitle:Ljava/lang/CharSequence;
+    iget-object v3, p0, Lcom/android/settings_ext/print/PrintServiceSettingsFragment;->mAddPrintersTitle:Ljava/lang/CharSequence;
 
     invoke-static {v3}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
@@ -1154,12 +1154,12 @@
 
     if-nez v3, :cond_0
 
-    iget-object v3, p0, Lcom/android/settings/print/PrintServiceSettingsFragment;->mAddPrintersIntent:Landroid/content/Intent;
+    iget-object v3, p0, Lcom/android/settings_ext/print/PrintServiceSettingsFragment;->mAddPrintersIntent:Landroid/content/Intent;
 
     if-eqz v3, :cond_0
 
     .line 401
-    iget-object v3, p0, Lcom/android/settings/print/PrintServiceSettingsFragment;->mAddPrintersIntent:Landroid/content/Intent;
+    iget-object v3, p0, Lcom/android/settings_ext/print/PrintServiceSettingsFragment;->mAddPrintersIntent:Landroid/content/Intent;
 
     invoke-interface {v0, v3}, Landroid/view/MenuItem;->setIntent(Landroid/content/Intent;)Landroid/view/MenuItem;
 
@@ -1171,11 +1171,11 @@
 
     .line 407
     .local v2, "settings":Landroid/view/MenuItem;
-    iget-boolean v3, p0, Lcom/android/settings/print/PrintServiceSettingsFragment;->mServiceEnabled:Z
+    iget-boolean v3, p0, Lcom/android/settings_ext/print/PrintServiceSettingsFragment;->mServiceEnabled:Z
 
     if-eqz v3, :cond_1
 
-    iget-object v3, p0, Lcom/android/settings/print/PrintServiceSettingsFragment;->mSettingsTitle:Ljava/lang/CharSequence;
+    iget-object v3, p0, Lcom/android/settings_ext/print/PrintServiceSettingsFragment;->mSettingsTitle:Ljava/lang/CharSequence;
 
     invoke-static {v3}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
@@ -1183,12 +1183,12 @@
 
     if-nez v3, :cond_1
 
-    iget-object v3, p0, Lcom/android/settings/print/PrintServiceSettingsFragment;->mSettingsIntent:Landroid/content/Intent;
+    iget-object v3, p0, Lcom/android/settings_ext/print/PrintServiceSettingsFragment;->mSettingsIntent:Landroid/content/Intent;
 
     if-eqz v3, :cond_1
 
     .line 409
-    iget-object v3, p0, Lcom/android/settings/print/PrintServiceSettingsFragment;->mSettingsIntent:Landroid/content/Intent;
+    iget-object v3, p0, Lcom/android/settings_ext/print/PrintServiceSettingsFragment;->mSettingsIntent:Landroid/content/Intent;
 
     invoke-interface {v2, v3}, Landroid/view/MenuItem;->setIntent(Landroid/content/Intent;)Landroid/view/MenuItem;
 
@@ -1200,13 +1200,13 @@
 
     .line 415
     .local v1, "searchItem":Landroid/view/MenuItem;
-    iget-boolean v3, p0, Lcom/android/settings/print/PrintServiceSettingsFragment;->mServiceEnabled:Z
+    iget-boolean v3, p0, Lcom/android/settings_ext/print/PrintServiceSettingsFragment;->mServiceEnabled:Z
 
     if-eqz v3, :cond_2
 
-    iget-object v3, p0, Lcom/android/settings/print/PrintServiceSettingsFragment;->mPrintersAdapter:Lcom/android/settings/print/PrintServiceSettingsFragment$PrintersAdapter;
+    iget-object v3, p0, Lcom/android/settings_ext/print/PrintServiceSettingsFragment;->mPrintersAdapter:Lcom/android/settings_ext/print/PrintServiceSettingsFragment$PrintersAdapter;
 
-    invoke-virtual {v3}, Lcom/android/settings/print/PrintServiceSettingsFragment$PrintersAdapter;->getUnfilteredCount()I
+    invoke-virtual {v3}, Lcom/android/settings_ext/print/PrintServiceSettingsFragment$PrintersAdapter;->getUnfilteredCount()I
 
     move-result v3
 
@@ -1219,23 +1219,23 @@
 
     check-cast v3, Landroid/widget/SearchView;
 
-    iput-object v3, p0, Lcom/android/settings/print/PrintServiceSettingsFragment;->mSearchView:Landroid/widget/SearchView;
+    iput-object v3, p0, Lcom/android/settings_ext/print/PrintServiceSettingsFragment;->mSearchView:Landroid/widget/SearchView;
 
     .line 417
-    iget-object v3, p0, Lcom/android/settings/print/PrintServiceSettingsFragment;->mSearchView:Landroid/widget/SearchView;
+    iget-object v3, p0, Lcom/android/settings_ext/print/PrintServiceSettingsFragment;->mSearchView:Landroid/widget/SearchView;
 
-    new-instance v4, Lcom/android/settings/print/PrintServiceSettingsFragment$4;
+    new-instance v4, Lcom/android/settings_ext/print/PrintServiceSettingsFragment$4;
 
-    invoke-direct {v4, p0}, Lcom/android/settings/print/PrintServiceSettingsFragment$4;-><init>(Lcom/android/settings/print/PrintServiceSettingsFragment;)V
+    invoke-direct {v4, p0}, Lcom/android/settings_ext/print/PrintServiceSettingsFragment$4;-><init>(Lcom/android/settings_ext/print/PrintServiceSettingsFragment;)V
 
     invoke-virtual {v3, v4}, Landroid/widget/SearchView;->setOnQueryTextListener(Landroid/widget/SearchView$OnQueryTextListener;)V
 
     .line 429
-    iget-object v3, p0, Lcom/android/settings/print/PrintServiceSettingsFragment;->mSearchView:Landroid/widget/SearchView;
+    iget-object v3, p0, Lcom/android/settings_ext/print/PrintServiceSettingsFragment;->mSearchView:Landroid/widget/SearchView;
 
-    new-instance v4, Lcom/android/settings/print/PrintServiceSettingsFragment$5;
+    new-instance v4, Lcom/android/settings_ext/print/PrintServiceSettingsFragment$5;
 
-    invoke-direct {v4, p0}, Lcom/android/settings/print/PrintServiceSettingsFragment$5;-><init>(Lcom/android/settings/print/PrintServiceSettingsFragment;)V
+    invoke-direct {v4, p0}, Lcom/android/settings_ext/print/PrintServiceSettingsFragment$5;-><init>(Lcom/android/settings_ext/print/PrintServiceSettingsFragment;)V
 
     invoke-virtual {v3, v4}, Landroid/widget/SearchView;->addOnAttachStateChangeListener(Landroid/view/View$OnAttachStateChangeListener;)V
 
@@ -1271,12 +1271,12 @@
 
     .prologue
     .line 168
-    iget-object v0, p0, Lcom/android/settings/print/PrintServiceSettingsFragment;->mOldActivityTitle:Ljava/lang/CharSequence;
+    iget-object v0, p0, Lcom/android/settings_ext/print/PrintServiceSettingsFragment;->mOldActivityTitle:Ljava/lang/CharSequence;
 
     if-eqz v0, :cond_0
 
     .line 169
-    invoke-virtual {p0}, Lcom/android/settings/print/PrintServiceSettingsFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/print/PrintServiceSettingsFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
@@ -1284,23 +1284,23 @@
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/android/settings/print/PrintServiceSettingsFragment;->mOldActivityTitle:Ljava/lang/CharSequence;
+    iget-object v1, p0, Lcom/android/settings_ext/print/PrintServiceSettingsFragment;->mOldActivityTitle:Ljava/lang/CharSequence;
 
     invoke-virtual {v0, v1}, Landroid/app/ActionBar;->setTitle(Ljava/lang/CharSequence;)V
 
     .line 171
     :cond_0
-    invoke-super {p0}, Lcom/android/settings/SettingsPreferenceFragment;->onDestroyView()V
+    invoke-super {p0}, Lcom/android/settings_ext/SettingsPreferenceFragment;->onDestroyView()V
 
     .line 172
-    iget-object v0, p0, Lcom/android/settings/print/PrintServiceSettingsFragment;->mSwitchBar:Lcom/android/settings/widget/SwitchBar;
+    iget-object v0, p0, Lcom/android/settings_ext/print/PrintServiceSettingsFragment;->mSwitchBar:Lcom/android/settings_ext/widget/SwitchBar;
 
-    invoke-virtual {v0, p0}, Lcom/android/settings/widget/SwitchBar;->removeOnSwitchChangeListener(Lcom/android/settings/widget/SwitchBar$OnSwitchChangeListener;)V
+    invoke-virtual {v0, p0}, Lcom/android/settings_ext/widget/SwitchBar;->removeOnSwitchChangeListener(Lcom/android/settings_ext/widget/SwitchBar$OnSwitchChangeListener;)V
 
     .line 173
-    iget-object v0, p0, Lcom/android/settings/print/PrintServiceSettingsFragment;->mSwitchBar:Lcom/android/settings/widget/SwitchBar;
+    iget-object v0, p0, Lcom/android/settings_ext/print/PrintServiceSettingsFragment;->mSwitchBar:Lcom/android/settings_ext/widget/SwitchBar;
 
-    invoke-virtual {v0}, Lcom/android/settings/widget/SwitchBar;->hide()V
+    invoke-virtual {v0}, Lcom/android/settings_ext/widget/SwitchBar;->hide()V
 
     .line 174
     return-void
@@ -1311,21 +1311,21 @@
 
     .prologue
     .line 152
-    iget-object v0, p0, Lcom/android/settings/print/PrintServiceSettingsFragment;->mSettingsContentObserver:Lcom/android/settings/print/PrintServiceSettingsFragment$SettingsContentObserver;
+    iget-object v0, p0, Lcom/android/settings_ext/print/PrintServiceSettingsFragment;->mSettingsContentObserver:Lcom/android/settings_ext/print/PrintServiceSettingsFragment$SettingsContentObserver;
 
-    invoke-virtual {p0}, Lcom/android/settings/print/PrintServiceSettingsFragment;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/settings_ext/print/PrintServiceSettingsFragment;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v1
 
-    invoke-virtual {v0, v1}, Lcom/android/settings/print/PrintServiceSettingsFragment$SettingsContentObserver;->unregister(Landroid/content/ContentResolver;)V
+    invoke-virtual {v0, v1}, Lcom/android/settings_ext/print/PrintServiceSettingsFragment$SettingsContentObserver;->unregister(Landroid/content/ContentResolver;)V
 
     .line 153
-    iget-object v0, p0, Lcom/android/settings/print/PrintServiceSettingsFragment;->mSearchView:Landroid/widget/SearchView;
+    iget-object v0, p0, Lcom/android/settings_ext/print/PrintServiceSettingsFragment;->mSearchView:Landroid/widget/SearchView;
 
     if-eqz v0, :cond_0
 
     .line 154
-    iget-object v0, p0, Lcom/android/settings/print/PrintServiceSettingsFragment;->mSearchView:Landroid/widget/SearchView;
+    iget-object v0, p0, Lcom/android/settings_ext/print/PrintServiceSettingsFragment;->mSearchView:Landroid/widget/SearchView;
 
     const/4 v1, 0x0
 
@@ -1333,7 +1333,7 @@
 
     .line 156
     :cond_0
-    invoke-super {p0}, Lcom/android/settings/SettingsPreferenceFragment;->onPause()V
+    invoke-super {p0}, Lcom/android/settings_ext/SettingsPreferenceFragment;->onPause()V
 
     .line 157
     return-void
@@ -1344,22 +1344,22 @@
 
     .prologue
     .line 144
-    invoke-super {p0}, Lcom/android/settings/SettingsPreferenceFragment;->onResume()V
+    invoke-super {p0}, Lcom/android/settings_ext/SettingsPreferenceFragment;->onResume()V
 
     .line 145
-    iget-object v0, p0, Lcom/android/settings/print/PrintServiceSettingsFragment;->mSettingsContentObserver:Lcom/android/settings/print/PrintServiceSettingsFragment$SettingsContentObserver;
+    iget-object v0, p0, Lcom/android/settings_ext/print/PrintServiceSettingsFragment;->mSettingsContentObserver:Lcom/android/settings_ext/print/PrintServiceSettingsFragment$SettingsContentObserver;
 
-    invoke-virtual {p0}, Lcom/android/settings/print/PrintServiceSettingsFragment;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/settings_ext/print/PrintServiceSettingsFragment;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v1
 
-    invoke-virtual {v0, v1}, Lcom/android/settings/print/PrintServiceSettingsFragment$SettingsContentObserver;->register(Landroid/content/ContentResolver;)V
+    invoke-virtual {v0, v1}, Lcom/android/settings_ext/print/PrintServiceSettingsFragment$SettingsContentObserver;->register(Landroid/content/ContentResolver;)V
 
     .line 146
-    invoke-direct {p0}, Lcom/android/settings/print/PrintServiceSettingsFragment;->updateEmptyView()V
+    invoke-direct {p0}, Lcom/android/settings_ext/print/PrintServiceSettingsFragment;->updateEmptyView()V
 
     .line 147
-    invoke-direct {p0}, Lcom/android/settings/print/PrintServiceSettingsFragment;->updateUiForServiceState()V
+    invoke-direct {p0}, Lcom/android/settings_ext/print/PrintServiceSettingsFragment;->updateUiForServiceState()V
 
     .line 148
     return-void
@@ -1372,7 +1372,7 @@
 
     .prologue
     .line 327
-    invoke-direct {p0}, Lcom/android/settings/print/PrintServiceSettingsFragment;->updateEmptyView()V
+    invoke-direct {p0}, Lcom/android/settings_ext/print/PrintServiceSettingsFragment;->updateEmptyView()V
 
     .line 328
     return-void
@@ -1385,13 +1385,13 @@
 
     .prologue
     .line 161
-    invoke-super {p0, p1, p2}, Lcom/android/settings/SettingsPreferenceFragment;->onViewCreated(Landroid/view/View;Landroid/os/Bundle;)V
+    invoke-super {p0, p1, p2}, Lcom/android/settings_ext/SettingsPreferenceFragment;->onViewCreated(Landroid/view/View;Landroid/os/Bundle;)V
 
     .line 162
-    invoke-direct {p0}, Lcom/android/settings/print/PrintServiceSettingsFragment;->initComponents()V
+    invoke-direct {p0}, Lcom/android/settings_ext/print/PrintServiceSettingsFragment;->initComponents()V
 
     .line 163
-    invoke-direct {p0}, Lcom/android/settings/print/PrintServiceSettingsFragment;->updateUiForArguments()V
+    invoke-direct {p0}, Lcom/android/settings_ext/print/PrintServiceSettingsFragment;->updateUiForArguments()V
 
     .line 164
     return-void

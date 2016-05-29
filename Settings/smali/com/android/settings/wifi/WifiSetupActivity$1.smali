@@ -1,11 +1,11 @@
-.class Lcom/android/settings/wifi/WifiSetupActivity$1;
+.class Lcom/android/settings_ext/wifi/WifiSetupActivity$1;
 .super Landroid/content/BroadcastReceiver;
 .source "WifiSetupActivity.java"
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/android/settings/wifi/WifiSetupActivity;
+    value = Lcom/android/settings_ext/wifi/WifiSetupActivity;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -15,16 +15,16 @@
 
 
 # instance fields
-.field final synthetic this$0:Lcom/android/settings/wifi/WifiSetupActivity;
+.field final synthetic this$0:Lcom/android/settings_ext/wifi/WifiSetupActivity;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/wifi/WifiSetupActivity;)V
+.method constructor <init>(Lcom/android/settings_ext/wifi/WifiSetupActivity;)V
     .locals 0
 
     .prologue
     .line 78
-    iput-object p1, p0, Lcom/android/settings/wifi/WifiSetupActivity$1;->this$0:Lcom/android/settings/wifi/WifiSetupActivity;
+    iput-object p1, p0, Lcom/android/settings_ext/wifi/WifiSetupActivity$1;->this$0:Lcom/android/settings_ext/wifi/WifiSetupActivity;
 
     invoke-direct {p0}, Landroid/content/BroadcastReceiver;-><init>()V
 
@@ -40,10 +40,10 @@
 
     .prologue
     .line 84
-    iget-object v0, p0, Lcom/android/settings/wifi/WifiSetupActivity$1;->this$0:Lcom/android/settings/wifi/WifiSetupActivity;
+    iget-object v0, p0, Lcom/android/settings_ext/wifi/WifiSetupActivity$1;->this$0:Lcom/android/settings_ext/wifi/WifiSetupActivity;
 
-    # invokes: Lcom/android/settings/wifi/WifiSetupActivity;->refreshConnectionState()V
-    invoke-static {v0}, Lcom/android/settings/wifi/WifiSetupActivity;->access$000(Lcom/android/settings/wifi/WifiSetupActivity;)V
+    # invokes: Lcom/android/settings_ext/wifi/WifiSetupActivity;->refreshConnectionState()V
+    invoke-static {v0}, Lcom/android/settings_ext/wifi/WifiSetupActivity;->access$000(Lcom/android/settings_ext/wifi/WifiSetupActivity;)V
 
     .line 85
     return-void

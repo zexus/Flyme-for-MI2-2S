@@ -1,11 +1,11 @@
-.class public interface abstract Lcom/android/settings/widget/ToggleSwitch$OnBeforeCheckedChangeListener;
+.class public interface abstract Lcom/android/settings_ext/widget/ToggleSwitch$OnBeforeCheckedChangeListener;
 .super Ljava/lang/Object;
 .source "ToggleSwitch.java"
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/android/settings/widget/ToggleSwitch;
+    value = Lcom/android/settings_ext/widget/ToggleSwitch;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -15,5 +15,5 @@
 
 
 # virtual methods
-.method public abstract onBeforeCheckedChanged(Lcom/android/settings/widget/ToggleSwitch;Z)Z
+.method public abstract onBeforeCheckedChanged(Lcom/android/settings_ext/widget/ToggleSwitch;Z)Z
 .end method

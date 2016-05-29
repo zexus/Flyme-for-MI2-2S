@@ -1,11 +1,11 @@
-.class public Lcom/android/settings/nfc/PaymentSettings$PaymentAppPreference;
+.class public Lcom/android/settings_ext/nfc/PaymentSettings$PaymentAppPreference;
 .super Landroid/preference/Preference;
 .source "PaymentSettings.java"
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/android/settings/nfc/PaymentSettings;
+    value = Lcom/android/settings_ext/nfc/PaymentSettings;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -15,16 +15,16 @@
 
 
 # instance fields
-.field private final appInfo:Lcom/android/settings/nfc/PaymentBackend$PaymentAppInfo;
+.field private final appInfo:Lcom/android/settings_ext/nfc/PaymentBackend$PaymentAppInfo;
 
 .field private final listener:Landroid/view/View$OnClickListener;
 
 
 # direct methods
-.method public constructor <init>(Landroid/content/Context;Lcom/android/settings/nfc/PaymentBackend$PaymentAppInfo;Landroid/view/View$OnClickListener;)V
+.method public constructor <init>(Landroid/content/Context;Lcom/android/settings_ext/nfc/PaymentBackend$PaymentAppInfo;Landroid/view/View$OnClickListener;)V
     .locals 1
     .param p1, "context"    # Landroid/content/Context;
-    .param p2, "appInfo"    # Lcom/android/settings/nfc/PaymentBackend$PaymentAppInfo;
+    .param p2, "appInfo"    # Lcom/android/settings_ext/nfc/PaymentBackend$PaymentAppInfo;
     .param p3, "listener"    # Landroid/view/View$OnClickListener;
 
     .prologue
@@ -34,13 +34,13 @@
     .line 211
     const v0, 0x7f040067
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/nfc/PaymentSettings$PaymentAppPreference;->setLayoutResource(I)V
+    invoke-virtual {p0, v0}, Lcom/android/settings_ext/nfc/PaymentSettings$PaymentAppPreference;->setLayoutResource(I)V
 
     .line 212
-    iput-object p2, p0, Lcom/android/settings/nfc/PaymentSettings$PaymentAppPreference;->appInfo:Lcom/android/settings/nfc/PaymentBackend$PaymentAppInfo;
+    iput-object p2, p0, Lcom/android/settings_ext/nfc/PaymentSettings$PaymentAppPreference;->appInfo:Lcom/android/settings_ext/nfc/PaymentBackend$PaymentAppInfo;
 
     .line 213
-    iput-object p3, p0, Lcom/android/settings/nfc/PaymentSettings$PaymentAppPreference;->listener:Landroid/view/View$OnClickListener;
+    iput-object p3, p0, Lcom/android/settings_ext/nfc/PaymentSettings$PaymentAppPreference;->listener:Landroid/view/View$OnClickListener;
 
     .line 214
     return-void
@@ -67,19 +67,19 @@
 
     .line 221
     .local v1, "radioButton":Landroid/widget/RadioButton;
-    iget-object v2, p0, Lcom/android/settings/nfc/PaymentSettings$PaymentAppPreference;->appInfo:Lcom/android/settings/nfc/PaymentBackend$PaymentAppInfo;
+    iget-object v2, p0, Lcom/android/settings_ext/nfc/PaymentSettings$PaymentAppPreference;->appInfo:Lcom/android/settings_ext/nfc/PaymentBackend$PaymentAppInfo;
 
-    iget-boolean v2, v2, Lcom/android/settings/nfc/PaymentBackend$PaymentAppInfo;->isDefault:Z
+    iget-boolean v2, v2, Lcom/android/settings_ext/nfc/PaymentBackend$PaymentAppInfo;->isDefault:Z
 
     invoke-virtual {v1, v2}, Landroid/widget/RadioButton;->setChecked(Z)V
 
     .line 222
-    iget-object v2, p0, Lcom/android/settings/nfc/PaymentSettings$PaymentAppPreference;->listener:Landroid/view/View$OnClickListener;
+    iget-object v2, p0, Lcom/android/settings_ext/nfc/PaymentSettings$PaymentAppPreference;->listener:Landroid/view/View$OnClickListener;
 
     invoke-virtual {v1, v2}, Landroid/widget/RadioButton;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     .line 223
-    iget-object v2, p0, Lcom/android/settings/nfc/PaymentSettings$PaymentAppPreference;->appInfo:Lcom/android/settings/nfc/PaymentBackend$PaymentAppInfo;
+    iget-object v2, p0, Lcom/android/settings_ext/nfc/PaymentSettings$PaymentAppPreference;->appInfo:Lcom/android/settings_ext/nfc/PaymentBackend$PaymentAppInfo;
 
     invoke-virtual {v1, v2}, Landroid/widget/RadioButton;->setTag(Ljava/lang/Object;)V
 
@@ -94,19 +94,19 @@
 
     .line 226
     .local v0, "banner":Landroid/widget/ImageView;
-    iget-object v2, p0, Lcom/android/settings/nfc/PaymentSettings$PaymentAppPreference;->appInfo:Lcom/android/settings/nfc/PaymentBackend$PaymentAppInfo;
+    iget-object v2, p0, Lcom/android/settings_ext/nfc/PaymentSettings$PaymentAppPreference;->appInfo:Lcom/android/settings_ext/nfc/PaymentBackend$PaymentAppInfo;
 
-    iget-object v2, v2, Lcom/android/settings/nfc/PaymentBackend$PaymentAppInfo;->banner:Landroid/graphics/drawable/Drawable;
+    iget-object v2, v2, Lcom/android/settings_ext/nfc/PaymentBackend$PaymentAppInfo;->banner:Landroid/graphics/drawable/Drawable;
 
     invoke-virtual {v0, v2}, Landroid/widget/ImageView;->setImageDrawable(Landroid/graphics/drawable/Drawable;)V
 
     .line 227
-    iget-object v2, p0, Lcom/android/settings/nfc/PaymentSettings$PaymentAppPreference;->listener:Landroid/view/View$OnClickListener;
+    iget-object v2, p0, Lcom/android/settings_ext/nfc/PaymentSettings$PaymentAppPreference;->listener:Landroid/view/View$OnClickListener;
 
     invoke-virtual {v0, v2}, Landroid/widget/ImageView;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     .line 228
-    iget-object v2, p0, Lcom/android/settings/nfc/PaymentSettings$PaymentAppPreference;->appInfo:Lcom/android/settings/nfc/PaymentBackend$PaymentAppInfo;
+    iget-object v2, p0, Lcom/android/settings_ext/nfc/PaymentSettings$PaymentAppPreference;->appInfo:Lcom/android/settings_ext/nfc/PaymentBackend$PaymentAppInfo;
 
     invoke-virtual {v0, v2}, Landroid/widget/ImageView;->setTag(Ljava/lang/Object;)V
 

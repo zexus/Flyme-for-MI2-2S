@@ -1,11 +1,11 @@
-.class public interface abstract Lcom/android/settings/applications/LinearColorBar$OnRegionTappedListener;
+.class public interface abstract Lcom/android/settings_ext/applications/LinearColorBar$OnRegionTappedListener;
 .super Ljava/lang/Object;
 .source "LinearColorBar.java"
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/android/settings/applications/LinearColorBar;
+    value = Lcom/android/settings_ext/applications/LinearColorBar;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;

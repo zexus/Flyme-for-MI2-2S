@@ -1,4 +1,4 @@
-.class Lcom/android/settings/users/AppRestrictionsFragment$AppRestrictionsPreference$1;
+.class Lcom/android/settings_ext/users/AppRestrictionsFragment$AppRestrictionsPreference$1;
 .super Ljava/lang/Object;
 .source "AppRestrictionsFragment.java"
 
@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/android/settings/users/AppRestrictionsFragment$AppRestrictionsPreference;->onBindView(Landroid/view/View;)V
+    value = Lcom/android/settings_ext/users/AppRestrictionsFragment$AppRestrictionsPreference;->onBindView(Landroid/view/View;)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -18,20 +18,20 @@
 
 
 # instance fields
-.field final synthetic this$0:Lcom/android/settings/users/AppRestrictionsFragment$AppRestrictionsPreference;
+.field final synthetic this$0:Lcom/android/settings_ext/users/AppRestrictionsFragment$AppRestrictionsPreference;
 
 .field final synthetic val$toggle:Landroid/widget/Switch;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/users/AppRestrictionsFragment$AppRestrictionsPreference;Landroid/widget/Switch;)V
+.method constructor <init>(Lcom/android/settings_ext/users/AppRestrictionsFragment$AppRestrictionsPreference;Landroid/widget/Switch;)V
     .locals 0
 
     .prologue
     .line 232
-    iput-object p1, p0, Lcom/android/settings/users/AppRestrictionsFragment$AppRestrictionsPreference$1;->this$0:Lcom/android/settings/users/AppRestrictionsFragment$AppRestrictionsPreference;
+    iput-object p1, p0, Lcom/android/settings_ext/users/AppRestrictionsFragment$AppRestrictionsPreference$1;->this$0:Lcom/android/settings_ext/users/AppRestrictionsFragment$AppRestrictionsPreference;
 
-    iput-object p2, p0, Lcom/android/settings/users/AppRestrictionsFragment$AppRestrictionsPreference$1;->val$toggle:Landroid/widget/Switch;
+    iput-object p2, p0, Lcom/android/settings_ext/users/AppRestrictionsFragment$AppRestrictionsPreference$1;->val$toggle:Landroid/widget/Switch;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -47,14 +47,14 @@
 
     .prologue
     .line 235
-    iget-object v0, p0, Lcom/android/settings/users/AppRestrictionsFragment$AppRestrictionsPreference$1;->this$0:Lcom/android/settings/users/AppRestrictionsFragment$AppRestrictionsPreference;
+    iget-object v0, p0, Lcom/android/settings_ext/users/AppRestrictionsFragment$AppRestrictionsPreference$1;->this$0:Lcom/android/settings_ext/users/AppRestrictionsFragment$AppRestrictionsPreference;
 
-    # getter for: Lcom/android/settings/users/AppRestrictionsFragment$AppRestrictionsPreference;->listener:Landroid/view/View$OnClickListener;
-    invoke-static {v0}, Lcom/android/settings/users/AppRestrictionsFragment$AppRestrictionsPreference;->access$300(Lcom/android/settings/users/AppRestrictionsFragment$AppRestrictionsPreference;)Landroid/view/View$OnClickListener;
+    # getter for: Lcom/android/settings_ext/users/AppRestrictionsFragment$AppRestrictionsPreference;->listener:Landroid/view/View$OnClickListener;
+    invoke-static {v0}, Lcom/android/settings_ext/users/AppRestrictionsFragment$AppRestrictionsPreference;->access$300(Lcom/android/settings_ext/users/AppRestrictionsFragment$AppRestrictionsPreference;)Landroid/view/View$OnClickListener;
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/android/settings/users/AppRestrictionsFragment$AppRestrictionsPreference$1;->val$toggle:Landroid/widget/Switch;
+    iget-object v1, p0, Lcom/android/settings_ext/users/AppRestrictionsFragment$AppRestrictionsPreference$1;->val$toggle:Landroid/widget/Switch;
 
     invoke-interface {v0, v1}, Landroid/view/View$OnClickListener;->onClick(Landroid/view/View;)V
 

@@ -1,11 +1,11 @@
-.class public Lcom/android/settings/Settings$AppOpsSummaryActivity;
-.super Lcom/android/settings/SettingsActivity;
+.class public Lcom/android/settings_ext/Settings$AppOpsSummaryActivity;
+.super Lcom/android/settings_ext/SettingsActivity;
 .source "Settings.java"
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/android/settings/Settings;
+    value = Lcom/android/settings_ext/Settings;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -20,7 +20,7 @@
 
     .prologue
     .line 50
-    invoke-direct {p0}, Lcom/android/settings/SettingsActivity;-><init>()V
+    invoke-direct {p0}, Lcom/android/settings_ext/SettingsActivity;-><init>()V
 
     return-void
 .end method
@@ -33,7 +33,7 @@
 
     .prologue
     .line 53
-    const-class v0, Lcom/android/settings/applications/AppOpsSummary;
+    const-class v0, Lcom/android/settings_ext/applications/AppOpsSummary;
 
     invoke-virtual {v0}, Ljava/lang/Class;->getName()Ljava/lang/String;
 
@@ -53,7 +53,7 @@
     return v0
 
     :cond_0
-    invoke-super {p0, p1}, Lcom/android/settings/SettingsActivity;->isValidFragment(Ljava/lang/String;)Z
+    invoke-super {p0, p1}, Lcom/android/settings_ext/SettingsActivity;->isValidFragment(Ljava/lang/String;)Z
 
     move-result v0
 

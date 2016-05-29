@@ -1,11 +1,11 @@
-.class public final Lcom/android/settings/R$styleable;
+.class public final Lcom/android/settings_ext/R$styleable;
 .super Ljava/lang/Object;
 .source "R.java"
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/android/settings/R;
+    value = Lcom/android/settings_ext/R;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -62,21 +62,21 @@
 
     fill-array-data v0, :array_0
 
-    sput-object v0, Lcom/android/settings/R$styleable;->BatteryHistoryChart:[I
+    sput-object v0, Lcom/android/settings_ext/R$styleable;->BatteryHistoryChart:[I
 
     .line 11101
     new-array v0, v6, [I
 
     fill-array-data v0, :array_1
 
-    sput-object v0, Lcom/android/settings/R$styleable;->ChartGridView:[I
+    sput-object v0, Lcom/android/settings_ext/R$styleable;->ChartGridView:[I
 
     .line 11163
     new-array v0, v5, [I
 
     fill-array-data v0, :array_2
 
-    sput-object v0, Lcom/android/settings/R$styleable;->ChartNetworkSeriesView:[I
+    sput-object v0, Lcom/android/settings_ext/R$styleable;->ChartNetworkSeriesView:[I
 
     .line 11249
     const/4 v0, 0x7
@@ -85,14 +85,14 @@
 
     fill-array-data v0, :array_3
 
-    sput-object v0, Lcom/android/settings/R$styleable;->ChartSweepView:[I
+    sput-object v0, Lcom/android/settings_ext/R$styleable;->ChartSweepView:[I
 
     .line 11365
     new-array v0, v4, [I
 
     fill-array-data v0, :array_4
 
-    sput-object v0, Lcom/android/settings/R$styleable;->ChartView:[I
+    sput-object v0, Lcom/android/settings_ext/R$styleable;->ChartView:[I
 
     .line 11412
     new-array v0, v3, [I
@@ -101,21 +101,21 @@
 
     aput v1, v0, v2
 
-    sput-object v0, Lcom/android/settings/R$styleable;->IconPreferenceScreen:[I
+    sput-object v0, Lcom/android/settings_ext/R$styleable;->IconPreferenceScreen:[I
 
     .line 11441
     new-array v0, v5, [I
 
     fill-array-data v0, :array_5
 
-    sput-object v0, Lcom/android/settings/R$styleable;->IntervalSeekBar:[I
+    sput-object v0, Lcom/android/settings_ext/R$styleable;->IntervalSeekBar:[I
 
     .line 11512
     new-array v0, v4, [I
 
     fill-array-data v0, :array_6
 
-    sput-object v0, Lcom/android/settings/R$styleable;->PercentageBarChart:[I
+    sput-object v0, Lcom/android/settings_ext/R$styleable;->PercentageBarChart:[I
 
     .line 11560
     new-array v0, v3, [I
@@ -124,14 +124,14 @@
 
     aput v1, v0, v2
 
-    sput-object v0, Lcom/android/settings/R$styleable;->Preference:[I
+    sput-object v0, Lcom/android/settings_ext/R$styleable;->Preference:[I
 
     .line 11595
     new-array v0, v6, [I
 
     fill-array-data v0, :array_7
 
-    sput-object v0, Lcom/android/settings/R$styleable;->SeekBarPreference:[I
+    sput-object v0, Lcom/android/settings_ext/R$styleable;->SeekBarPreference:[I
 
     .line 11679
     new-array v0, v3, [I
@@ -140,7 +140,7 @@
 
     aput v1, v0, v2
 
-    sput-object v0, Lcom/android/settings/R$styleable;->SetupWizardIllustration:[I
+    sput-object v0, Lcom/android/settings_ext/R$styleable;->SetupWizardIllustration:[I
 
     .line 11706
     new-array v0, v3, [I
@@ -149,7 +149,7 @@
 
     aput v1, v0, v2
 
-    sput-object v0, Lcom/android/settings/R$styleable;->WifiEncryptionState:[I
+    sput-object v0, Lcom/android/settings_ext/R$styleable;->WifiEncryptionState:[I
 
     return-void
 

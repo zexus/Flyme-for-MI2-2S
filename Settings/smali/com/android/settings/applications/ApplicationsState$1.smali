@@ -1,4 +1,4 @@
-.class final Lcom/android/settings/applications/ApplicationsState$1;
+.class final Lcom/android/settings_ext/applications/ApplicationsState$1;
 .super Ljava/lang/Object;
 .source "ApplicationsState.java"
 
@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/android/settings/applications/ApplicationsState;
+    value = Lcom/android/settings_ext/applications/ApplicationsState;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -21,7 +21,7 @@
         "Ljava/lang/Object;",
         "Ljava/util/Comparator",
         "<",
-        "Lcom/android/settings/applications/ApplicationsState$AppEntry;",
+        "Lcom/android/settings_ext/applications/ApplicationsState$AppEntry;",
         ">;"
     }
 .end annotation
@@ -44,17 +44,17 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/applications/ApplicationsState$1;->sCollator:Ljava/text/Collator;
+    iput-object v0, p0, Lcom/android/settings_ext/applications/ApplicationsState$1;->sCollator:Ljava/text/Collator;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public compare(Lcom/android/settings/applications/ApplicationsState$AppEntry;Lcom/android/settings/applications/ApplicationsState$AppEntry;)I
+.method public compare(Lcom/android/settings_ext/applications/ApplicationsState$AppEntry;Lcom/android/settings_ext/applications/ApplicationsState$AppEntry;)I
     .locals 6
-    .param p1, "object1"    # Lcom/android/settings/applications/ApplicationsState$AppEntry;
-    .param p2, "object2"    # Lcom/android/settings/applications/ApplicationsState$AppEntry;
+    .param p1, "object1"    # Lcom/android/settings_ext/applications/ApplicationsState$AppEntry;
+    .param p2, "object2"    # Lcom/android/settings_ext/applications/ApplicationsState$AppEntry;
 
     .prologue
     const/high16 v5, 0x800000
@@ -64,13 +64,13 @@
     const/4 v2, 0x1
 
     .line 167
-    iget-object v4, p1, Lcom/android/settings/applications/ApplicationsState$AppEntry;->info:Landroid/content/pm/ApplicationInfo;
+    iget-object v4, p1, Lcom/android/settings_ext/applications/ApplicationsState$AppEntry;->info:Landroid/content/pm/ApplicationInfo;
 
     iget-boolean v4, v4, Landroid/content/pm/ApplicationInfo;->enabled:Z
 
     if-eqz v4, :cond_1
 
-    iget-object v4, p1, Lcom/android/settings/applications/ApplicationsState$AppEntry;->info:Landroid/content/pm/ApplicationInfo;
+    iget-object v4, p1, Lcom/android/settings_ext/applications/ApplicationsState$AppEntry;->info:Landroid/content/pm/ApplicationInfo;
 
     iget v4, v4, Landroid/content/pm/ApplicationInfo;->flags:I
 
@@ -83,13 +83,13 @@
     .line 169
     .local v0, "normal1":Z
     :goto_0
-    iget-object v4, p2, Lcom/android/settings/applications/ApplicationsState$AppEntry;->info:Landroid/content/pm/ApplicationInfo;
+    iget-object v4, p2, Lcom/android/settings_ext/applications/ApplicationsState$AppEntry;->info:Landroid/content/pm/ApplicationInfo;
 
     iget-boolean v4, v4, Landroid/content/pm/ApplicationInfo;->enabled:Z
 
     if-eqz v4, :cond_2
 
-    iget-object v4, p2, Lcom/android/settings/applications/ApplicationsState$AppEntry;->info:Landroid/content/pm/ApplicationInfo;
+    iget-object v4, p2, Lcom/android/settings_ext/applications/ApplicationsState$AppEntry;->info:Landroid/content/pm/ApplicationInfo;
 
     iget v4, v4, Landroid/content/pm/ApplicationInfo;->flags:I
 
@@ -132,11 +132,11 @@
     .line 174
     .restart local v1    # "normal2":Z
     :cond_3
-    iget-object v2, p0, Lcom/android/settings/applications/ApplicationsState$1;->sCollator:Ljava/text/Collator;
+    iget-object v2, p0, Lcom/android/settings_ext/applications/ApplicationsState$1;->sCollator:Ljava/text/Collator;
 
-    iget-object v3, p1, Lcom/android/settings/applications/ApplicationsState$AppEntry;->label:Ljava/lang/String;
+    iget-object v3, p1, Lcom/android/settings_ext/applications/ApplicationsState$AppEntry;->label:Ljava/lang/String;
 
-    iget-object v4, p2, Lcom/android/settings/applications/ApplicationsState$AppEntry;->label:Ljava/lang/String;
+    iget-object v4, p2, Lcom/android/settings_ext/applications/ApplicationsState$AppEntry;->label:Ljava/lang/String;
 
     invoke-virtual {v2, v3, v4}, Ljava/text/Collator;->compare(Ljava/lang/String;Ljava/lang/String;)I
 
@@ -152,13 +152,13 @@
 
     .prologue
     .line 163
-    check-cast p1, Lcom/android/settings/applications/ApplicationsState$AppEntry;
+    check-cast p1, Lcom/android/settings_ext/applications/ApplicationsState$AppEntry;
 
     .end local p1    # "x0":Ljava/lang/Object;
-    check-cast p2, Lcom/android/settings/applications/ApplicationsState$AppEntry;
+    check-cast p2, Lcom/android/settings_ext/applications/ApplicationsState$AppEntry;
 
     .end local p2    # "x1":Ljava/lang/Object;
-    invoke-virtual {p0, p1, p2}, Lcom/android/settings/applications/ApplicationsState$1;->compare(Lcom/android/settings/applications/ApplicationsState$AppEntry;Lcom/android/settings/applications/ApplicationsState$AppEntry;)I
+    invoke-virtual {p0, p1, p2}, Lcom/android/settings_ext/applications/ApplicationsState$1;->compare(Lcom/android/settings_ext/applications/ApplicationsState$AppEntry;Lcom/android/settings_ext/applications/ApplicationsState$AppEntry;)I
 
     move-result v0
 

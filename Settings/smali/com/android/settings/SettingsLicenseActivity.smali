@@ -1,4 +1,4 @@
-.class public Lcom/android/settings/SettingsLicenseActivity;
+.class public Lcom/android/settings_ext/SettingsLicenseActivity;
 .super Landroid/app/Activity;
 .source "SettingsLicenseActivity.java"
 
@@ -30,7 +30,7 @@
     invoke-virtual {v0}, Landroid/widget/Toast;->show()V
 
     .line 79
-    invoke-virtual {p0}, Lcom/android/settings/SettingsLicenseActivity;->finish()V
+    invoke-virtual {p0}, Lcom/android/settings_ext/SettingsLicenseActivity;->finish()V
 
     .line 80
     return-void
@@ -71,7 +71,7 @@
     invoke-static {v4, v5}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
 
     .line 47
-    invoke-direct {p0}, Lcom/android/settings/SettingsLicenseActivity;->showErrorAndFinish()V
+    invoke-direct {p0}, Lcom/android/settings_ext/SettingsLicenseActivity;->showErrorAndFinish()V
 
     .line 74
     :goto_0
@@ -132,7 +132,7 @@
     invoke-static {v4, v5}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
 
     .line 54
-    invoke-direct {p0}, Lcom/android/settings/SettingsLicenseActivity;->showErrorAndFinish()V
+    invoke-direct {p0}, Lcom/android/settings_ext/SettingsLicenseActivity;->showErrorAndFinish()V
 
     goto :goto_0
 
@@ -159,7 +159,7 @@
 
     const v5, 0x7f090472
 
-    invoke-virtual {p0, v5}, Lcom/android/settings/SettingsLicenseActivity;->getString(I)Ljava/lang/String;
+    invoke-virtual {p0, v5}, Lcom/android/settings_ext/SettingsLicenseActivity;->getString(I)Ljava/lang/String;
 
     move-result-object v5
 
@@ -177,10 +177,10 @@
 
     .line 68
     :try_start_0
-    invoke-virtual {p0, v2}, Lcom/android/settings/SettingsLicenseActivity;->startActivity(Landroid/content/Intent;)V
+    invoke-virtual {p0, v2}, Lcom/android/settings_ext/SettingsLicenseActivity;->startActivity(Landroid/content/Intent;)V
 
     .line 69
-    invoke-virtual {p0}, Lcom/android/settings/SettingsLicenseActivity;->finish()V
+    invoke-virtual {p0}, Lcom/android/settings_ext/SettingsLicenseActivity;->finish()V
     :try_end_0
     .catch Landroid/content/ActivityNotFoundException; {:try_start_0 .. :try_end_0} :catch_0
 
@@ -199,7 +199,7 @@
     invoke-static {v4, v5, v0}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)I
 
     .line 72
-    invoke-direct {p0}, Lcom/android/settings/SettingsLicenseActivity;->showErrorAndFinish()V
+    invoke-direct {p0}, Lcom/android/settings_ext/SettingsLicenseActivity;->showErrorAndFinish()V
 
     goto :goto_0
 .end method

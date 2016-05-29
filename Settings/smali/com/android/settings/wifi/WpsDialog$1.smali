@@ -1,11 +1,11 @@
-.class Lcom/android/settings/wifi/WpsDialog$1;
+.class Lcom/android/settings_ext/wifi/WpsDialog$1;
 .super Landroid/content/BroadcastReceiver;
 .source "WpsDialog.java"
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/android/settings/wifi/WpsDialog;-><init>(Landroid/content/Context;I)V
+    value = Lcom/android/settings_ext/wifi/WpsDialog;-><init>(Landroid/content/Context;I)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -15,16 +15,16 @@
 
 
 # instance fields
-.field final synthetic this$0:Lcom/android/settings/wifi/WpsDialog;
+.field final synthetic this$0:Lcom/android/settings_ext/wifi/WpsDialog;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/wifi/WpsDialog;)V
+.method constructor <init>(Lcom/android/settings_ext/wifi/WpsDialog;)V
     .locals 0
 
     .prologue
     .line 129
-    iput-object p1, p0, Lcom/android/settings/wifi/WpsDialog$1;->this$0:Lcom/android/settings/wifi/WpsDialog;
+    iput-object p1, p0, Lcom/android/settings_ext/wifi/WpsDialog$1;->this$0:Lcom/android/settings_ext/wifi/WpsDialog;
 
     invoke-direct {p0}, Landroid/content/BroadcastReceiver;-><init>()V
 
@@ -40,10 +40,10 @@
 
     .prologue
     .line 132
-    iget-object v0, p0, Lcom/android/settings/wifi/WpsDialog$1;->this$0:Lcom/android/settings/wifi/WpsDialog;
+    iget-object v0, p0, Lcom/android/settings_ext/wifi/WpsDialog$1;->this$0:Lcom/android/settings_ext/wifi/WpsDialog;
 
-    # invokes: Lcom/android/settings/wifi/WpsDialog;->handleEvent(Landroid/content/Context;Landroid/content/Intent;)V
-    invoke-static {v0, p1, p2}, Lcom/android/settings/wifi/WpsDialog;->access$200(Lcom/android/settings/wifi/WpsDialog;Landroid/content/Context;Landroid/content/Intent;)V
+    # invokes: Lcom/android/settings_ext/wifi/WpsDialog;->handleEvent(Landroid/content/Context;Landroid/content/Intent;)V
+    invoke-static {v0, p1, p2}, Lcom/android/settings_ext/wifi/WpsDialog;->access$200(Lcom/android/settings_ext/wifi/WpsDialog;Landroid/content/Context;Landroid/content/Intent;)V
 
     .line 133
     return-void

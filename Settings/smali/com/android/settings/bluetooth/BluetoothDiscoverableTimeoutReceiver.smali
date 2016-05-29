@@ -1,4 +1,4 @@
-.class public Lcom/android/settings/bluetooth/BluetoothDiscoverableTimeoutReceiver;
+.class public Lcom/android/settings_ext/bluetooth/BluetoothDiscoverableTimeoutReceiver;
 .super Landroid/content/BroadcastReceiver;
 .source "BluetoothDiscoverableTimeoutReceiver.java"
 
@@ -35,7 +35,7 @@
 
     .line 62
     .local v1, "intent":Landroid/content/Intent;
-    const-class v3, Lcom/android/settings/bluetooth/BluetoothDiscoverableTimeoutReceiver;
+    const-class v3, Lcom/android/settings_ext/bluetooth/BluetoothDiscoverableTimeoutReceiver;
 
     invoke-virtual {v1, p0, v3}, Landroid/content/Intent;->setClass(Landroid/content/Context;Ljava/lang/Class;)Landroid/content/Intent;
 
@@ -111,7 +111,7 @@
 
     .line 41
     .local v1, "intent":Landroid/content/Intent;
-    const-class v3, Lcom/android/settings/bluetooth/BluetoothDiscoverableTimeoutReceiver;
+    const-class v3, Lcom/android/settings_ext/bluetooth/BluetoothDiscoverableTimeoutReceiver;
 
     invoke-virtual {v1, p0, v3}, Landroid/content/Intent;->setClass(Landroid/content/Context;Ljava/lang/Class;)Landroid/content/Intent;
 
@@ -166,15 +166,15 @@
 
     .prologue
     .line 76
-    invoke-static {}, Lcom/android/settings/bluetooth/LocalBluetoothAdapter;->getInstance()Lcom/android/settings/bluetooth/LocalBluetoothAdapter;
+    invoke-static {}, Lcom/android/settings_ext/bluetooth/LocalBluetoothAdapter;->getInstance()Lcom/android/settings_ext/bluetooth/LocalBluetoothAdapter;
 
     move-result-object v0
 
     .line 78
-    .local v0, "localBluetoothAdapter":Lcom/android/settings/bluetooth/LocalBluetoothAdapter;
+    .local v0, "localBluetoothAdapter":Lcom/android/settings_ext/bluetooth/LocalBluetoothAdapter;
     if-eqz v0, :cond_0
 
-    invoke-virtual {v0}, Lcom/android/settings/bluetooth/LocalBluetoothAdapter;->getState()I
+    invoke-virtual {v0}, Lcom/android/settings_ext/bluetooth/LocalBluetoothAdapter;->getState()I
 
     move-result v1
 
@@ -192,7 +192,7 @@
     .line 82
     const/16 v1, 0x15
 
-    invoke-virtual {v0, v1}, Lcom/android/settings/bluetooth/LocalBluetoothAdapter;->setScanMode(I)V
+    invoke-virtual {v0, v1}, Lcom/android/settings_ext/bluetooth/LocalBluetoothAdapter;->setScanMode(I)V
 
     .line 86
     :goto_0

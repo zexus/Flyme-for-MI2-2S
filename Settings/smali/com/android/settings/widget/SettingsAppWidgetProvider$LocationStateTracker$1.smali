@@ -1,11 +1,11 @@
-.class Lcom/android/settings/widget/SettingsAppWidgetProvider$LocationStateTracker$1;
+.class Lcom/android/settings_ext/widget/SettingsAppWidgetProvider$LocationStateTracker$1;
 .super Landroid/os/AsyncTask;
 .source "SettingsAppWidgetProvider.java"
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/android/settings/widget/SettingsAppWidgetProvider$LocationStateTracker;->requestStateChange(Landroid/content/Context;Z)V
+    value = Lcom/android/settings_ext/widget/SettingsAppWidgetProvider$LocationStateTracker;->requestStateChange(Landroid/content/Context;Z)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -26,7 +26,7 @@
 
 
 # instance fields
-.field final synthetic this$0:Lcom/android/settings/widget/SettingsAppWidgetProvider$LocationStateTracker;
+.field final synthetic this$0:Lcom/android/settings_ext/widget/SettingsAppWidgetProvider$LocationStateTracker;
 
 .field final synthetic val$context:Landroid/content/Context;
 
@@ -34,16 +34,16 @@
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/widget/SettingsAppWidgetProvider$LocationStateTracker;Landroid/content/Context;Landroid/content/ContentResolver;)V
+.method constructor <init>(Lcom/android/settings_ext/widget/SettingsAppWidgetProvider$LocationStateTracker;Landroid/content/Context;Landroid/content/ContentResolver;)V
     .locals 0
 
     .prologue
     .line 551
-    iput-object p1, p0, Lcom/android/settings/widget/SettingsAppWidgetProvider$LocationStateTracker$1;->this$0:Lcom/android/settings/widget/SettingsAppWidgetProvider$LocationStateTracker;
+    iput-object p1, p0, Lcom/android/settings_ext/widget/SettingsAppWidgetProvider$LocationStateTracker$1;->this$0:Lcom/android/settings_ext/widget/SettingsAppWidgetProvider$LocationStateTracker;
 
-    iput-object p2, p0, Lcom/android/settings/widget/SettingsAppWidgetProvider$LocationStateTracker$1;->val$context:Landroid/content/Context;
+    iput-object p2, p0, Lcom/android/settings_ext/widget/SettingsAppWidgetProvider$LocationStateTracker$1;->val$context:Landroid/content/Context;
 
-    iput-object p3, p0, Lcom/android/settings/widget/SettingsAppWidgetProvider$LocationStateTracker$1;->val$resolver:Landroid/content/ContentResolver;
+    iput-object p3, p0, Lcom/android/settings_ext/widget/SettingsAppWidgetProvider$LocationStateTracker$1;->val$resolver:Landroid/content/ContentResolver;
 
     invoke-direct {p0}, Landroid/os/AsyncTask;-><init>()V
 
@@ -62,7 +62,7 @@
     const/4 v4, 0x0
 
     .line 554
-    iget-object v5, p0, Lcom/android/settings/widget/SettingsAppWidgetProvider$LocationStateTracker$1;->val$context:Landroid/content/Context;
+    iget-object v5, p0, Lcom/android/settings_ext/widget/SettingsAppWidgetProvider$LocationStateTracker$1;->val$context:Landroid/content/Context;
 
     const-string v6, "user"
 
@@ -83,7 +83,7 @@
     if-nez v5, :cond_1
 
     .line 557
-    iget-object v5, p0, Lcom/android/settings/widget/SettingsAppWidgetProvider$LocationStateTracker$1;->val$resolver:Landroid/content/ContentResolver;
+    iget-object v5, p0, Lcom/android/settings_ext/widget/SettingsAppWidgetProvider$LocationStateTracker$1;->val$resolver:Landroid/content/ContentResolver;
 
     const-string v6, "location_mode"
 
@@ -101,7 +101,7 @@
 
     .line 574
     :goto_0
-    iget-object v5, p0, Lcom/android/settings/widget/SettingsAppWidgetProvider$LocationStateTracker$1;->val$resolver:Landroid/content/ContentResolver;
+    iget-object v5, p0, Lcom/android/settings_ext/widget/SettingsAppWidgetProvider$LocationStateTracker$1;->val$resolver:Landroid/content/ContentResolver;
 
     const-string v6, "location_mode"
 
@@ -160,11 +160,11 @@
     .end local v0    # "currentMode":I
     .end local v1    # "mode":I
     :cond_1
-    iget-object v5, p0, Lcom/android/settings/widget/SettingsAppWidgetProvider$LocationStateTracker$1;->this$0:Lcom/android/settings/widget/SettingsAppWidgetProvider$LocationStateTracker;
+    iget-object v5, p0, Lcom/android/settings_ext/widget/SettingsAppWidgetProvider$LocationStateTracker$1;->this$0:Lcom/android/settings_ext/widget/SettingsAppWidgetProvider$LocationStateTracker;
 
-    iget-object v6, p0, Lcom/android/settings/widget/SettingsAppWidgetProvider$LocationStateTracker$1;->val$context:Landroid/content/Context;
+    iget-object v6, p0, Lcom/android/settings_ext/widget/SettingsAppWidgetProvider$LocationStateTracker$1;->val$context:Landroid/content/Context;
 
-    invoke-virtual {v5, v6}, Lcom/android/settings/widget/SettingsAppWidgetProvider$LocationStateTracker;->getActualState(Landroid/content/Context;)I
+    invoke-virtual {v5, v6}, Lcom/android/settings_ext/widget/SettingsAppWidgetProvider$LocationStateTracker;->getActualState(Landroid/content/Context;)I
 
     move-result v5
 
@@ -203,7 +203,7 @@
     check-cast p1, [Ljava/lang/Void;
 
     .end local p1    # "x0":[Ljava/lang/Object;
-    invoke-virtual {p0, p1}, Lcom/android/settings/widget/SettingsAppWidgetProvider$LocationStateTracker$1;->doInBackground([Ljava/lang/Void;)Ljava/lang/Boolean;
+    invoke-virtual {p0, p1}, Lcom/android/settings_ext/widget/SettingsAppWidgetProvider$LocationStateTracker$1;->doInBackground([Ljava/lang/Void;)Ljava/lang/Boolean;
 
     move-result-object v0
 
@@ -216,9 +216,9 @@
 
     .prologue
     .line 583
-    iget-object v1, p0, Lcom/android/settings/widget/SettingsAppWidgetProvider$LocationStateTracker$1;->this$0:Lcom/android/settings/widget/SettingsAppWidgetProvider$LocationStateTracker;
+    iget-object v1, p0, Lcom/android/settings_ext/widget/SettingsAppWidgetProvider$LocationStateTracker$1;->this$0:Lcom/android/settings_ext/widget/SettingsAppWidgetProvider$LocationStateTracker;
 
-    iget-object v2, p0, Lcom/android/settings/widget/SettingsAppWidgetProvider$LocationStateTracker$1;->val$context:Landroid/content/Context;
+    iget-object v2, p0, Lcom/android/settings_ext/widget/SettingsAppWidgetProvider$LocationStateTracker$1;->val$context:Landroid/content/Context;
 
     invoke-virtual {p1}, Ljava/lang/Boolean;->booleanValue()Z
 
@@ -229,12 +229,12 @@
     const/4 v0, 0x1
 
     :goto_0
-    invoke-virtual {v1, v2, v0}, Lcom/android/settings/widget/SettingsAppWidgetProvider$LocationStateTracker;->setCurrentState(Landroid/content/Context;I)V
+    invoke-virtual {v1, v2, v0}, Lcom/android/settings_ext/widget/SettingsAppWidgetProvider$LocationStateTracker;->setCurrentState(Landroid/content/Context;I)V
 
     .line 586
-    iget-object v0, p0, Lcom/android/settings/widget/SettingsAppWidgetProvider$LocationStateTracker$1;->val$context:Landroid/content/Context;
+    iget-object v0, p0, Lcom/android/settings_ext/widget/SettingsAppWidgetProvider$LocationStateTracker$1;->val$context:Landroid/content/Context;
 
-    invoke-static {v0}, Lcom/android/settings/widget/SettingsAppWidgetProvider;->updateWidget(Landroid/content/Context;)V
+    invoke-static {v0}, Lcom/android/settings_ext/widget/SettingsAppWidgetProvider;->updateWidget(Landroid/content/Context;)V
 
     .line 587
     return-void
@@ -255,7 +255,7 @@
     check-cast p1, Ljava/lang/Boolean;
 
     .end local p1    # "x0":Ljava/lang/Object;
-    invoke-virtual {p0, p1}, Lcom/android/settings/widget/SettingsAppWidgetProvider$LocationStateTracker$1;->onPostExecute(Ljava/lang/Boolean;)V
+    invoke-virtual {p0, p1}, Lcom/android/settings_ext/widget/SettingsAppWidgetProvider$LocationStateTracker$1;->onPostExecute(Ljava/lang/Boolean;)V
 
     return-void
 .end method

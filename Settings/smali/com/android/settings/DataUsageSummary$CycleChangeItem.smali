@@ -1,11 +1,11 @@
-.class public Lcom/android/settings/DataUsageSummary$CycleChangeItem;
-.super Lcom/android/settings/DataUsageSummary$CycleItem;
+.class public Lcom/android/settings_ext/DataUsageSummary$CycleChangeItem;
+.super Lcom/android/settings_ext/DataUsageSummary$CycleItem;
 .source "DataUsageSummary.java"
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/android/settings/DataUsageSummary;
+    value = Lcom/android/settings_ext/DataUsageSummary;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -27,7 +27,7 @@
 
     move-result-object v0
 
-    invoke-direct {p0, v0}, Lcom/android/settings/DataUsageSummary$CycleItem;-><init>(Ljava/lang/CharSequence;)V
+    invoke-direct {p0, v0}, Lcom/android/settings_ext/DataUsageSummary$CycleItem;-><init>(Ljava/lang/CharSequence;)V
 
     .line 1448
     return-void

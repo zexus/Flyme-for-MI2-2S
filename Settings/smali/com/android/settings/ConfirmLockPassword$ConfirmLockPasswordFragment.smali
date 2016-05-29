@@ -1,4 +1,4 @@
-.class public Lcom/android/settings/ConfirmLockPassword$ConfirmLockPasswordFragment;
+.class public Lcom/android/settings_ext/ConfirmLockPassword$ConfirmLockPasswordFragment;
 .super Landroid/app/Fragment;
 .source "ConfirmLockPassword.java"
 
@@ -10,7 +10,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/android/settings/ConfirmLockPassword;
+    value = Lcom/android/settings_ext/ConfirmLockPassword;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -56,62 +56,62 @@
 
     invoke-direct {v0}, Landroid/os/Handler;-><init>()V
 
-    iput-object v0, p0, Lcom/android/settings/ConfirmLockPassword$ConfirmLockPasswordFragment;->mHandler:Landroid/os/Handler;
+    iput-object v0, p0, Lcom/android/settings_ext/ConfirmLockPassword$ConfirmLockPasswordFragment;->mHandler:Landroid/os/Handler;
 
     .line 259
-    new-instance v0, Lcom/android/settings/ConfirmLockPassword$ConfirmLockPasswordFragment$2;
+    new-instance v0, Lcom/android/settings_ext/ConfirmLockPassword$ConfirmLockPasswordFragment$2;
 
-    invoke-direct {v0, p0}, Lcom/android/settings/ConfirmLockPassword$ConfirmLockPasswordFragment$2;-><init>(Lcom/android/settings/ConfirmLockPassword$ConfirmLockPasswordFragment;)V
+    invoke-direct {v0, p0}, Lcom/android/settings_ext/ConfirmLockPassword$ConfirmLockPasswordFragment$2;-><init>(Lcom/android/settings_ext/ConfirmLockPassword$ConfirmLockPasswordFragment;)V
 
-    iput-object v0, p0, Lcom/android/settings/ConfirmLockPassword$ConfirmLockPasswordFragment;->mResetErrorRunnable:Ljava/lang/Runnable;
+    iput-object v0, p0, Lcom/android/settings_ext/ConfirmLockPassword$ConfirmLockPasswordFragment;->mResetErrorRunnable:Ljava/lang/Runnable;
 
     .line 96
     return-void
 .end method
 
-.method static synthetic access$000(Lcom/android/settings/ConfirmLockPassword$ConfirmLockPasswordFragment;)Landroid/widget/TextView;
+.method static synthetic access$000(Lcom/android/settings_ext/ConfirmLockPassword$ConfirmLockPasswordFragment;)Landroid/widget/TextView;
     .locals 1
-    .param p0, "x0"    # Lcom/android/settings/ConfirmLockPassword$ConfirmLockPasswordFragment;
+    .param p0, "x0"    # Lcom/android/settings_ext/ConfirmLockPassword$ConfirmLockPasswordFragment;
 
     .prologue
     .line 77
-    iget-object v0, p0, Lcom/android/settings/ConfirmLockPassword$ConfirmLockPasswordFragment;->mHeaderText:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/android/settings_ext/ConfirmLockPassword$ConfirmLockPasswordFragment;->mHeaderText:Landroid/widget/TextView;
 
     return-object v0
 .end method
 
-.method static synthetic access$100(Lcom/android/settings/ConfirmLockPassword$ConfirmLockPasswordFragment;)Landroid/widget/TextView;
+.method static synthetic access$100(Lcom/android/settings_ext/ConfirmLockPassword$ConfirmLockPasswordFragment;)Landroid/widget/TextView;
     .locals 1
-    .param p0, "x0"    # Lcom/android/settings/ConfirmLockPassword$ConfirmLockPasswordFragment;
+    .param p0, "x0"    # Lcom/android/settings_ext/ConfirmLockPassword$ConfirmLockPasswordFragment;
 
     .prologue
     .line 77
-    iget-object v0, p0, Lcom/android/settings/ConfirmLockPassword$ConfirmLockPasswordFragment;->mPasswordEntry:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/android/settings_ext/ConfirmLockPassword$ConfirmLockPasswordFragment;->mPasswordEntry:Landroid/widget/TextView;
 
     return-object v0
 .end method
 
-.method static synthetic access$200(Lcom/android/settings/ConfirmLockPassword$ConfirmLockPasswordFragment;)I
+.method static synthetic access$200(Lcom/android/settings_ext/ConfirmLockPassword$ConfirmLockPasswordFragment;)I
     .locals 1
-    .param p0, "x0"    # Lcom/android/settings/ConfirmLockPassword$ConfirmLockPasswordFragment;
+    .param p0, "x0"    # Lcom/android/settings_ext/ConfirmLockPassword$ConfirmLockPasswordFragment;
 
     .prologue
     .line 77
-    invoke-direct {p0}, Lcom/android/settings/ConfirmLockPassword$ConfirmLockPasswordFragment;->getDefaultHeader()I
+    invoke-direct {p0}, Lcom/android/settings_ext/ConfirmLockPassword$ConfirmLockPasswordFragment;->getDefaultHeader()I
 
     move-result v0
 
     return v0
 .end method
 
-.method static synthetic access$302(Lcom/android/settings/ConfirmLockPassword$ConfirmLockPasswordFragment;I)I
+.method static synthetic access$302(Lcom/android/settings_ext/ConfirmLockPassword$ConfirmLockPasswordFragment;I)I
     .locals 0
-    .param p0, "x0"    # Lcom/android/settings/ConfirmLockPassword$ConfirmLockPasswordFragment;
+    .param p0, "x0"    # Lcom/android/settings_ext/ConfirmLockPassword$ConfirmLockPasswordFragment;
     .param p1, "x1"    # I
 
     .prologue
     .line 77
-    iput p1, p0, Lcom/android/settings/ConfirmLockPassword$ConfirmLockPasswordFragment;->mNumWrongConfirmAttempts:I
+    iput p1, p0, Lcom/android/settings_ext/ConfirmLockPassword$ConfirmLockPasswordFragment;->mNumWrongConfirmAttempts:I
 
     return p1
 .end method
@@ -121,7 +121,7 @@
 
     .prologue
     .line 162
-    iget-boolean v0, p0, Lcom/android/settings/ConfirmLockPassword$ConfirmLockPasswordFragment;->mIsAlpha:Z
+    iget-boolean v0, p0, Lcom/android/settings_ext/ConfirmLockPassword$ConfirmLockPasswordFragment;->mIsAlpha:Z
 
     if-eqz v0, :cond_0
 
@@ -152,17 +152,17 @@
 
     const-wide/16 v2, 0x0
 
-    invoke-direct {p0, v0, v2, v3}, Lcom/android/settings/ConfirmLockPassword$ConfirmLockPasswordFragment;->showError(IJ)V
+    invoke-direct {p0, v0, v2, v3}, Lcom/android/settings_ext/ConfirmLockPassword$ConfirmLockPasswordFragment;->showError(IJ)V
 
     .line 220
-    iget-object v0, p0, Lcom/android/settings/ConfirmLockPassword$ConfirmLockPasswordFragment;->mPasswordEntry:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/android/settings_ext/ConfirmLockPassword$ConfirmLockPasswordFragment;->mPasswordEntry:Landroid/widget/TextView;
 
     const/4 v1, 0x0
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setEnabled(Z)V
 
     .line 221
-    new-instance v0, Lcom/android/settings/ConfirmLockPassword$ConfirmLockPasswordFragment$1;
+    new-instance v0, Lcom/android/settings_ext/ConfirmLockPassword$ConfirmLockPasswordFragment$1;
 
     sub-long v2, p1, v6
 
@@ -170,13 +170,13 @@
 
     move-object v1, p0
 
-    invoke-direct/range {v0 .. v5}, Lcom/android/settings/ConfirmLockPassword$ConfirmLockPasswordFragment$1;-><init>(Lcom/android/settings/ConfirmLockPassword$ConfirmLockPasswordFragment;JJ)V
+    invoke-direct/range {v0 .. v5}, Lcom/android/settings_ext/ConfirmLockPassword$ConfirmLockPasswordFragment$1;-><init>(Lcom/android/settings_ext/ConfirmLockPassword$ConfirmLockPasswordFragment;JJ)V
 
-    invoke-virtual {v0}, Lcom/android/settings/ConfirmLockPassword$ConfirmLockPasswordFragment$1;->start()Landroid/os/CountDownTimer;
+    invoke-virtual {v0}, Lcom/android/settings_ext/ConfirmLockPassword$ConfirmLockPasswordFragment$1;->start()Landroid/os/CountDownTimer;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/ConfirmLockPassword$ConfirmLockPasswordFragment;->mCountdownTimer:Landroid/os/CountDownTimer;
+    iput-object v0, p0, Lcom/android/settings_ext/ConfirmLockPassword$ConfirmLockPasswordFragment;->mCountdownTimer:Landroid/os/CountDownTimer;
 
     .line 240
     return-void
@@ -187,7 +187,7 @@
 
     .prologue
     .line 194
-    iget-object v4, p0, Lcom/android/settings/ConfirmLockPassword$ConfirmLockPasswordFragment;->mPasswordEntry:Landroid/widget/TextView;
+    iget-object v4, p0, Lcom/android/settings_ext/ConfirmLockPassword$ConfirmLockPasswordFragment;->mPasswordEntry:Landroid/widget/TextView;
 
     invoke-virtual {v4}, Landroid/widget/TextView;->getText()Ljava/lang/CharSequence;
 
@@ -199,7 +199,7 @@
 
     .line 195
     .local v3, "pin":Ljava/lang/String;
-    iget-object v4, p0, Lcom/android/settings/ConfirmLockPassword$ConfirmLockPasswordFragment;->mLockPatternUtils:Lcom/android/internal/widget/LockPatternUtils;
+    iget-object v4, p0, Lcom/android/settings_ext/ConfirmLockPassword$ConfirmLockPasswordFragment;->mLockPatternUtils:Lcom/android/internal/widget/LockPatternUtils;
 
     invoke-virtual {v4, v3}, Lcom/android/internal/widget/LockPatternUtils;->checkPassword(Ljava/lang/String;)Z
 
@@ -214,18 +214,18 @@
 
     .line 198
     .local v2, "intent":Landroid/content/Intent;
-    invoke-virtual {p0}, Lcom/android/settings/ConfirmLockPassword$ConfirmLockPasswordFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/ConfirmLockPassword$ConfirmLockPasswordFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v4
 
-    instance-of v4, v4, Lcom/android/settings/ConfirmLockPassword$InternalActivity;
+    instance-of v4, v4, Lcom/android/settings_ext/ConfirmLockPassword$InternalActivity;
 
     if-eqz v4, :cond_0
 
     .line 199
     const-string v5, "type"
 
-    iget-boolean v4, p0, Lcom/android/settings/ConfirmLockPassword$ConfirmLockPasswordFragment;->mIsAlpha:Z
+    iget-boolean v4, p0, Lcom/android/settings_ext/ConfirmLockPassword$ConfirmLockPasswordFragment;->mIsAlpha:Z
 
     if-eqz v4, :cond_1
 
@@ -241,7 +241,7 @@
 
     .line 205
     :cond_0
-    invoke-virtual {p0}, Lcom/android/settings/ConfirmLockPassword$ConfirmLockPasswordFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/ConfirmLockPassword$ConfirmLockPasswordFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v4
 
@@ -250,7 +250,7 @@
     invoke-virtual {v4, v5, v2}, Landroid/app/Activity;->setResult(ILandroid/content/Intent;)V
 
     .line 206
-    invoke-virtual {p0}, Lcom/android/settings/ConfirmLockPassword$ConfirmLockPasswordFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/ConfirmLockPassword$ConfirmLockPasswordFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v4
 
@@ -271,18 +271,18 @@
     .line 208
     .end local v2    # "intent":Landroid/content/Intent;
     :cond_2
-    iget v4, p0, Lcom/android/settings/ConfirmLockPassword$ConfirmLockPasswordFragment;->mNumWrongConfirmAttempts:I
+    iget v4, p0, Lcom/android/settings_ext/ConfirmLockPassword$ConfirmLockPasswordFragment;->mNumWrongConfirmAttempts:I
 
     add-int/lit8 v4, v4, 0x1
 
-    iput v4, p0, Lcom/android/settings/ConfirmLockPassword$ConfirmLockPasswordFragment;->mNumWrongConfirmAttempts:I
+    iput v4, p0, Lcom/android/settings_ext/ConfirmLockPassword$ConfirmLockPasswordFragment;->mNumWrongConfirmAttempts:I
 
     const/4 v5, 0x5
 
     if-lt v4, v5, :cond_3
 
     .line 209
-    iget-object v4, p0, Lcom/android/settings/ConfirmLockPassword$ConfirmLockPasswordFragment;->mLockPatternUtils:Lcom/android/internal/widget/LockPatternUtils;
+    iget-object v4, p0, Lcom/android/settings_ext/ConfirmLockPassword$ConfirmLockPasswordFragment;->mLockPatternUtils:Lcom/android/internal/widget/LockPatternUtils;
 
     invoke-virtual {v4}, Lcom/android/internal/widget/LockPatternUtils;->setLockoutAttemptDeadline()J
 
@@ -290,7 +290,7 @@
 
     .line 210
     .local v0, "deadline":J
-    invoke-direct {p0, v0, v1}, Lcom/android/settings/ConfirmLockPassword$ConfirmLockPasswordFragment;->handleAttemptLockout(J)V
+    invoke-direct {p0, v0, v1}, Lcom/android/settings_ext/ConfirmLockPassword$ConfirmLockPasswordFragment;->handleAttemptLockout(J)V
 
     goto :goto_1
 
@@ -299,7 +299,7 @@
     :cond_3
     const v4, 0x7f09048a
 
-    invoke-direct {p0, v4}, Lcom/android/settings/ConfirmLockPassword$ConfirmLockPasswordFragment;->showError(I)V
+    invoke-direct {p0, v4}, Lcom/android/settings_ext/ConfirmLockPassword$ConfirmLockPasswordFragment;->showError(I)V
 
     goto :goto_1
 .end method
@@ -312,7 +312,7 @@
     .line 256
     const-wide/16 v0, 0xbb8
 
-    invoke-direct {p0, p1, v0, v1}, Lcom/android/settings/ConfirmLockPassword$ConfirmLockPasswordFragment;->showError(IJ)V
+    invoke-direct {p0, p1, v0, v1}, Lcom/android/settings_ext/ConfirmLockPassword$ConfirmLockPasswordFragment;->showError(IJ)V
 
     .line 257
     return-void
@@ -325,14 +325,14 @@
 
     .prologue
     .line 266
-    iget-object v0, p0, Lcom/android/settings/ConfirmLockPassword$ConfirmLockPasswordFragment;->mHeaderText:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/android/settings_ext/ConfirmLockPassword$ConfirmLockPasswordFragment;->mHeaderText:Landroid/widget/TextView;
 
     invoke-virtual {v0, p1}, Landroid/widget/TextView;->setText(I)V
 
     .line 267
-    iget-object v0, p0, Lcom/android/settings/ConfirmLockPassword$ConfirmLockPasswordFragment;->mHeaderText:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/android/settings_ext/ConfirmLockPassword$ConfirmLockPasswordFragment;->mHeaderText:Landroid/widget/TextView;
 
-    iget-object v1, p0, Lcom/android/settings/ConfirmLockPassword$ConfirmLockPasswordFragment;->mHeaderText:Landroid/widget/TextView;
+    iget-object v1, p0, Lcom/android/settings_ext/ConfirmLockPassword$ConfirmLockPasswordFragment;->mHeaderText:Landroid/widget/TextView;
 
     invoke-virtual {v1}, Landroid/widget/TextView;->getText()Ljava/lang/CharSequence;
 
@@ -341,16 +341,16 @@
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->announceForAccessibility(Ljava/lang/CharSequence;)V
 
     .line 268
-    iget-object v0, p0, Lcom/android/settings/ConfirmLockPassword$ConfirmLockPasswordFragment;->mPasswordEntry:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/android/settings_ext/ConfirmLockPassword$ConfirmLockPasswordFragment;->mPasswordEntry:Landroid/widget/TextView;
 
     const/4 v1, 0x0
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
     .line 269
-    iget-object v0, p0, Lcom/android/settings/ConfirmLockPassword$ConfirmLockPasswordFragment;->mHandler:Landroid/os/Handler;
+    iget-object v0, p0, Lcom/android/settings_ext/ConfirmLockPassword$ConfirmLockPasswordFragment;->mHandler:Landroid/os/Handler;
 
-    iget-object v1, p0, Lcom/android/settings/ConfirmLockPassword$ConfirmLockPasswordFragment;->mResetErrorRunnable:Ljava/lang/Runnable;
+    iget-object v1, p0, Lcom/android/settings_ext/ConfirmLockPassword$ConfirmLockPasswordFragment;->mResetErrorRunnable:Ljava/lang/Runnable;
 
     invoke-virtual {v0, v1}, Landroid/os/Handler;->removeCallbacks(Ljava/lang/Runnable;)V
 
@@ -362,9 +362,9 @@
     if-eqz v0, :cond_0
 
     .line 271
-    iget-object v0, p0, Lcom/android/settings/ConfirmLockPassword$ConfirmLockPasswordFragment;->mHandler:Landroid/os/Handler;
+    iget-object v0, p0, Lcom/android/settings_ext/ConfirmLockPassword$ConfirmLockPasswordFragment;->mHandler:Landroid/os/Handler;
 
-    iget-object v1, p0, Lcom/android/settings/ConfirmLockPassword$ConfirmLockPasswordFragment;->mResetErrorRunnable:Ljava/lang/Runnable;
+    iget-object v1, p0, Lcom/android/settings_ext/ConfirmLockPassword$ConfirmLockPasswordFragment;->mResetErrorRunnable:Ljava/lang/Runnable;
 
     invoke-virtual {v0, v1, p2, p3}, Landroid/os/Handler;->postDelayed(Ljava/lang/Runnable;J)Z
 
@@ -381,9 +381,9 @@
 
     .prologue
     .line 295
-    iget-object v1, p0, Lcom/android/settings/ConfirmLockPassword$ConfirmLockPasswordFragment;->mContinueButton:Landroid/widget/Button;
+    iget-object v1, p0, Lcom/android/settings_ext/ConfirmLockPassword$ConfirmLockPasswordFragment;->mContinueButton:Landroid/widget/Button;
 
-    iget-object v0, p0, Lcom/android/settings/ConfirmLockPassword$ConfirmLockPasswordFragment;->mPasswordEntry:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/android/settings_ext/ConfirmLockPassword$ConfirmLockPasswordFragment;->mPasswordEntry:Landroid/widget/TextView;
 
     invoke-virtual {v0}, Landroid/widget/TextView;->getText()Ljava/lang/CharSequence;
 
@@ -440,13 +440,13 @@
 
     .line 245
     :pswitch_0
-    invoke-direct {p0}, Lcom/android/settings/ConfirmLockPassword$ConfirmLockPasswordFragment;->handleNext()V
+    invoke-direct {p0}, Lcom/android/settings_ext/ConfirmLockPassword$ConfirmLockPasswordFragment;->handleNext()V
 
     goto :goto_0
 
     .line 249
     :pswitch_1
-    invoke-virtual {p0}, Lcom/android/settings/ConfirmLockPassword$ConfirmLockPasswordFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/ConfirmLockPassword$ConfirmLockPasswordFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
@@ -455,7 +455,7 @@
     invoke-virtual {v0, v1}, Landroid/app/Activity;->setResult(I)V
 
     .line 250
-    invoke-virtual {p0}, Lcom/android/settings/ConfirmLockPassword$ConfirmLockPasswordFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/ConfirmLockPassword$ConfirmLockPasswordFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
@@ -482,13 +482,13 @@
     .line 101
     new-instance v0, Lcom/android/internal/widget/LockPatternUtils;
 
-    invoke-virtual {p0}, Lcom/android/settings/ConfirmLockPassword$ConfirmLockPasswordFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/ConfirmLockPassword$ConfirmLockPasswordFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v1
 
     invoke-direct {v0, v1}, Lcom/android/internal/widget/LockPatternUtils;-><init>(Landroid/content/Context;)V
 
-    iput-object v0, p0, Lcom/android/settings/ConfirmLockPassword$ConfirmLockPasswordFragment;->mLockPatternUtils:Lcom/android/internal/widget/LockPatternUtils;
+    iput-object v0, p0, Lcom/android/settings_ext/ConfirmLockPassword$ConfirmLockPasswordFragment;->mLockPatternUtils:Lcom/android/internal/widget/LockPatternUtils;
 
     .line 102
     if-eqz p1, :cond_0
@@ -502,7 +502,7 @@
 
     move-result v0
 
-    iput v0, p0, Lcom/android/settings/ConfirmLockPassword$ConfirmLockPasswordFragment;->mNumWrongConfirmAttempts:I
+    iput v0, p0, Lcom/android/settings_ext/ConfirmLockPassword$ConfirmLockPasswordFragment;->mNumWrongConfirmAttempts:I
 
     .line 106
     :cond_0
@@ -517,7 +517,7 @@
 
     .prologue
     .line 111
-    iget-object v9, p0, Lcom/android/settings/ConfirmLockPassword$ConfirmLockPasswordFragment;->mLockPatternUtils:Lcom/android/internal/widget/LockPatternUtils;
+    iget-object v9, p0, Lcom/android/settings_ext/ConfirmLockPassword$ConfirmLockPasswordFragment;->mLockPatternUtils:Lcom/android/internal/widget/LockPatternUtils;
 
     invoke-virtual {v9}, Lcom/android/internal/widget/LockPatternUtils;->getKeyguardStoredPasswordQuality()I
 
@@ -552,15 +552,15 @@
 
     check-cast v9, Landroid/widget/Button;
 
-    iput-object v9, p0, Lcom/android/settings/ConfirmLockPassword$ConfirmLockPasswordFragment;->mContinueButton:Landroid/widget/Button;
+    iput-object v9, p0, Lcom/android/settings_ext/ConfirmLockPassword$ConfirmLockPasswordFragment;->mContinueButton:Landroid/widget/Button;
 
     .line 117
-    iget-object v9, p0, Lcom/android/settings/ConfirmLockPassword$ConfirmLockPasswordFragment;->mContinueButton:Landroid/widget/Button;
+    iget-object v9, p0, Lcom/android/settings_ext/ConfirmLockPassword$ConfirmLockPasswordFragment;->mContinueButton:Landroid/widget/Button;
 
     invoke-virtual {v9, p0}, Landroid/widget/Button;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     .line 118
-    iget-object v9, p0, Lcom/android/settings/ConfirmLockPassword$ConfirmLockPasswordFragment;->mContinueButton:Landroid/widget/Button;
+    iget-object v9, p0, Lcom/android/settings_ext/ConfirmLockPassword$ConfirmLockPasswordFragment;->mContinueButton:Landroid/widget/Button;
 
     const/4 v10, 0x0
 
@@ -575,15 +575,15 @@
 
     check-cast v9, Landroid/widget/TextView;
 
-    iput-object v9, p0, Lcom/android/settings/ConfirmLockPassword$ConfirmLockPasswordFragment;->mPasswordEntry:Landroid/widget/TextView;
+    iput-object v9, p0, Lcom/android/settings_ext/ConfirmLockPassword$ConfirmLockPasswordFragment;->mPasswordEntry:Landroid/widget/TextView;
 
     .line 121
-    iget-object v9, p0, Lcom/android/settings/ConfirmLockPassword$ConfirmLockPasswordFragment;->mPasswordEntry:Landroid/widget/TextView;
+    iget-object v9, p0, Lcom/android/settings_ext/ConfirmLockPassword$ConfirmLockPasswordFragment;->mPasswordEntry:Landroid/widget/TextView;
 
     invoke-virtual {v9, p0}, Landroid/widget/TextView;->setOnEditorActionListener(Landroid/widget/TextView$OnEditorActionListener;)V
 
     .line 122
-    iget-object v9, p0, Lcom/android/settings/ConfirmLockPassword$ConfirmLockPasswordFragment;->mPasswordEntry:Landroid/widget/TextView;
+    iget-object v9, p0, Lcom/android/settings_ext/ConfirmLockPassword$ConfirmLockPasswordFragment;->mPasswordEntry:Landroid/widget/TextView;
 
     invoke-virtual {v9, p0}, Landroid/widget/TextView;->addTextChangedListener(Landroid/text/TextWatcher;)V
 
@@ -596,7 +596,7 @@
 
     check-cast v9, Lcom/android/internal/widget/PasswordEntryKeyboardView;
 
-    iput-object v9, p0, Lcom/android/settings/ConfirmLockPassword$ConfirmLockPasswordFragment;->mKeyboardView:Lcom/android/internal/widget/PasswordEntryKeyboardView;
+    iput-object v9, p0, Lcom/android/settings_ext/ConfirmLockPassword$ConfirmLockPasswordFragment;->mKeyboardView:Lcom/android/internal/widget/PasswordEntryKeyboardView;
 
     .line 125
     const v9, 0x7f0f003b
@@ -607,7 +607,7 @@
 
     check-cast v9, Landroid/widget/TextView;
 
-    iput-object v9, p0, Lcom/android/settings/ConfirmLockPassword$ConfirmLockPasswordFragment;->mHeaderText:Landroid/widget/TextView;
+    iput-object v9, p0, Lcom/android/settings_ext/ConfirmLockPassword$ConfirmLockPasswordFragment;->mHeaderText:Landroid/widget/TextView;
 
     .line 126
     const/high16 v9, 0x40000
@@ -626,10 +626,10 @@
     const/4 v9, 0x1
 
     :goto_0
-    iput-boolean v9, p0, Lcom/android/settings/ConfirmLockPassword$ConfirmLockPasswordFragment;->mIsAlpha:Z
+    iput-boolean v9, p0, Lcom/android/settings_ext/ConfirmLockPassword$ConfirmLockPasswordFragment;->mIsAlpha:Z
 
     .line 130
-    invoke-virtual {p0}, Lcom/android/settings/ConfirmLockPassword$ConfirmLockPasswordFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/ConfirmLockPassword$ConfirmLockPasswordFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v9
 
@@ -657,24 +657,24 @@
     if-eqz v9, :cond_1
 
     .line 134
-    invoke-direct {p0}, Lcom/android/settings/ConfirmLockPassword$ConfirmLockPasswordFragment;->getDefaultHeader()I
+    invoke-direct {p0}, Lcom/android/settings_ext/ConfirmLockPassword$ConfirmLockPasswordFragment;->getDefaultHeader()I
 
     move-result v9
 
-    invoke-virtual {p0, v9}, Lcom/android/settings/ConfirmLockPassword$ConfirmLockPasswordFragment;->getString(I)Ljava/lang/String;
+    invoke-virtual {p0, v9}, Lcom/android/settings_ext/ConfirmLockPassword$ConfirmLockPasswordFragment;->getString(I)Ljava/lang/String;
 
     move-result-object v2
 
     .line 136
     :cond_1
-    iget-object v9, p0, Lcom/android/settings/ConfirmLockPassword$ConfirmLockPasswordFragment;->mHeaderText:Landroid/widget/TextView;
+    iget-object v9, p0, Lcom/android/settings_ext/ConfirmLockPassword$ConfirmLockPasswordFragment;->mHeaderText:Landroid/widget/TextView;
 
     invoke-virtual {v9, v2}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
     .line 139
     .end local v2    # "headerMessage":Ljava/lang/CharSequence;
     :cond_2
-    invoke-virtual {p0}, Lcom/android/settings/ConfirmLockPassword$ConfirmLockPasswordFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/ConfirmLockPassword$ConfirmLockPasswordFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
@@ -682,18 +682,18 @@
     .local v0, "activity":Landroid/app/Activity;
     new-instance v9, Lcom/android/internal/widget/PasswordEntryKeyboardHelper;
 
-    iget-object v10, p0, Lcom/android/settings/ConfirmLockPassword$ConfirmLockPasswordFragment;->mKeyboardView:Lcom/android/internal/widget/PasswordEntryKeyboardView;
+    iget-object v10, p0, Lcom/android/settings_ext/ConfirmLockPassword$ConfirmLockPasswordFragment;->mKeyboardView:Lcom/android/internal/widget/PasswordEntryKeyboardView;
 
-    iget-object v11, p0, Lcom/android/settings/ConfirmLockPassword$ConfirmLockPasswordFragment;->mPasswordEntry:Landroid/widget/TextView;
+    iget-object v11, p0, Lcom/android/settings_ext/ConfirmLockPassword$ConfirmLockPasswordFragment;->mPasswordEntry:Landroid/widget/TextView;
 
     invoke-direct {v9, v0, v10, v11}, Lcom/android/internal/widget/PasswordEntryKeyboardHelper;-><init>(Landroid/content/Context;Landroid/inputmethodservice/KeyboardView;Landroid/view/View;)V
 
-    iput-object v9, p0, Lcom/android/settings/ConfirmLockPassword$ConfirmLockPasswordFragment;->mKeyboardHelper:Lcom/android/internal/widget/PasswordEntryKeyboardHelper;
+    iput-object v9, p0, Lcom/android/settings_ext/ConfirmLockPassword$ConfirmLockPasswordFragment;->mKeyboardHelper:Lcom/android/internal/widget/PasswordEntryKeyboardHelper;
 
     .line 142
-    iget-object v10, p0, Lcom/android/settings/ConfirmLockPassword$ConfirmLockPasswordFragment;->mKeyboardHelper:Lcom/android/internal/widget/PasswordEntryKeyboardHelper;
+    iget-object v10, p0, Lcom/android/settings_ext/ConfirmLockPassword$ConfirmLockPasswordFragment;->mKeyboardHelper:Lcom/android/internal/widget/PasswordEntryKeyboardHelper;
 
-    iget-boolean v9, p0, Lcom/android/settings/ConfirmLockPassword$ConfirmLockPasswordFragment;->mIsAlpha:Z
+    iget-boolean v9, p0, Lcom/android/settings_ext/ConfirmLockPassword$ConfirmLockPasswordFragment;->mIsAlpha:Z
 
     if-eqz v9, :cond_5
 
@@ -703,12 +703,12 @@
     invoke-virtual {v10, v9}, Lcom/android/internal/widget/PasswordEntryKeyboardHelper;->setKeyboardMode(I)V
 
     .line 145
-    iget-object v9, p0, Lcom/android/settings/ConfirmLockPassword$ConfirmLockPasswordFragment;->mKeyboardView:Lcom/android/internal/widget/PasswordEntryKeyboardView;
+    iget-object v9, p0, Lcom/android/settings_ext/ConfirmLockPassword$ConfirmLockPasswordFragment;->mKeyboardView:Lcom/android/internal/widget/PasswordEntryKeyboardView;
 
     invoke-virtual {v9}, Lcom/android/internal/widget/PasswordEntryKeyboardView;->requestFocus()Z
 
     .line 147
-    iget-object v9, p0, Lcom/android/settings/ConfirmLockPassword$ConfirmLockPasswordFragment;->mPasswordEntry:Landroid/widget/TextView;
+    iget-object v9, p0, Lcom/android/settings_ext/ConfirmLockPassword$ConfirmLockPasswordFragment;->mPasswordEntry:Landroid/widget/TextView;
 
     invoke-virtual {v9}, Landroid/widget/TextView;->getInputType()I
 
@@ -716,9 +716,9 @@
 
     .line 148
     .local v1, "currentType":I
-    iget-object v9, p0, Lcom/android/settings/ConfirmLockPassword$ConfirmLockPasswordFragment;->mPasswordEntry:Landroid/widget/TextView;
+    iget-object v9, p0, Lcom/android/settings_ext/ConfirmLockPassword$ConfirmLockPasswordFragment;->mPasswordEntry:Landroid/widget/TextView;
 
-    iget-boolean v10, p0, Lcom/android/settings/ConfirmLockPassword$ConfirmLockPasswordFragment;->mIsAlpha:Z
+    iget-boolean v10, p0, Lcom/android/settings_ext/ConfirmLockPassword$ConfirmLockPasswordFragment;->mIsAlpha:Z
 
     if-eqz v10, :cond_6
 
@@ -727,34 +727,34 @@
     invoke-virtual {v9, v1}, Landroid/widget/TextView;->setInputType(I)V
 
     .line 151
-    instance-of v9, v0, Lcom/android/settings/SettingsActivity;
+    instance-of v9, v0, Lcom/android/settings_ext/SettingsActivity;
 
     if-eqz v9, :cond_3
 
     move-object v5, v0
 
     .line 152
-    check-cast v5, Lcom/android/settings/SettingsActivity;
+    check-cast v5, Lcom/android/settings_ext/SettingsActivity;
 
     .line 153
-    .local v5, "sa":Lcom/android/settings/SettingsActivity;
-    invoke-direct {p0}, Lcom/android/settings/ConfirmLockPassword$ConfirmLockPasswordFragment;->getDefaultHeader()I
+    .local v5, "sa":Lcom/android/settings_ext/SettingsActivity;
+    invoke-direct {p0}, Lcom/android/settings_ext/ConfirmLockPassword$ConfirmLockPasswordFragment;->getDefaultHeader()I
 
     move-result v3
 
     .line 154
     .local v3, "id":I
-    invoke-virtual {p0, v3}, Lcom/android/settings/ConfirmLockPassword$ConfirmLockPasswordFragment;->getText(I)Ljava/lang/CharSequence;
+    invoke-virtual {p0, v3}, Lcom/android/settings_ext/ConfirmLockPassword$ConfirmLockPasswordFragment;->getText(I)Ljava/lang/CharSequence;
 
     move-result-object v7
 
     .line 155
     .local v7, "title":Ljava/lang/CharSequence;
-    invoke-virtual {v5, v7}, Lcom/android/settings/SettingsActivity;->setTitle(Ljava/lang/CharSequence;)V
+    invoke-virtual {v5, v7}, Lcom/android/settings_ext/SettingsActivity;->setTitle(Ljava/lang/CharSequence;)V
 
     .line 158
     .end local v3    # "id":I
-    .end local v5    # "sa":Lcom/android/settings/SettingsActivity;
+    .end local v5    # "sa":Lcom/android/settings_ext/SettingsActivity;
     .end local v7    # "title":Ljava/lang/CharSequence;
     :cond_3
     return-object v8
@@ -803,7 +803,7 @@
 
     .line 281
     :cond_0
-    invoke-direct {p0}, Lcom/android/settings/ConfirmLockPassword$ConfirmLockPasswordFragment;->handleNext()V
+    invoke-direct {p0}, Lcom/android/settings_ext/ConfirmLockPassword$ConfirmLockPasswordFragment;->handleNext()V
 
     .line 282
     const/4 v0, 0x1
@@ -826,24 +826,24 @@
     invoke-super {p0}, Landroid/app/Fragment;->onPause()V
 
     .line 169
-    iget-object v0, p0, Lcom/android/settings/ConfirmLockPassword$ConfirmLockPasswordFragment;->mKeyboardView:Lcom/android/internal/widget/PasswordEntryKeyboardView;
+    iget-object v0, p0, Lcom/android/settings_ext/ConfirmLockPassword$ConfirmLockPasswordFragment;->mKeyboardView:Lcom/android/internal/widget/PasswordEntryKeyboardView;
 
     invoke-virtual {v0}, Lcom/android/internal/widget/PasswordEntryKeyboardView;->requestFocus()Z
 
     .line 170
-    iget-object v0, p0, Lcom/android/settings/ConfirmLockPassword$ConfirmLockPasswordFragment;->mCountdownTimer:Landroid/os/CountDownTimer;
+    iget-object v0, p0, Lcom/android/settings_ext/ConfirmLockPassword$ConfirmLockPasswordFragment;->mCountdownTimer:Landroid/os/CountDownTimer;
 
     if-eqz v0, :cond_0
 
     .line 171
-    iget-object v0, p0, Lcom/android/settings/ConfirmLockPassword$ConfirmLockPasswordFragment;->mCountdownTimer:Landroid/os/CountDownTimer;
+    iget-object v0, p0, Lcom/android/settings_ext/ConfirmLockPassword$ConfirmLockPasswordFragment;->mCountdownTimer:Landroid/os/CountDownTimer;
 
     invoke-virtual {v0}, Landroid/os/CountDownTimer;->cancel()V
 
     .line 172
     const/4 v0, 0x0
 
-    iput-object v0, p0, Lcom/android/settings/ConfirmLockPassword$ConfirmLockPasswordFragment;->mCountdownTimer:Landroid/os/CountDownTimer;
+    iput-object v0, p0, Lcom/android/settings_ext/ConfirmLockPassword$ConfirmLockPasswordFragment;->mCountdownTimer:Landroid/os/CountDownTimer;
 
     .line 174
     :cond_0
@@ -858,12 +858,12 @@
     invoke-super {p0}, Landroid/app/Fragment;->onResume()V
 
     .line 180
-    iget-object v2, p0, Lcom/android/settings/ConfirmLockPassword$ConfirmLockPasswordFragment;->mKeyboardView:Lcom/android/internal/widget/PasswordEntryKeyboardView;
+    iget-object v2, p0, Lcom/android/settings_ext/ConfirmLockPassword$ConfirmLockPasswordFragment;->mKeyboardView:Lcom/android/internal/widget/PasswordEntryKeyboardView;
 
     invoke-virtual {v2}, Lcom/android/internal/widget/PasswordEntryKeyboardView;->requestFocus()Z
 
     .line 181
-    iget-object v2, p0, Lcom/android/settings/ConfirmLockPassword$ConfirmLockPasswordFragment;->mLockPatternUtils:Lcom/android/internal/widget/LockPatternUtils;
+    iget-object v2, p0, Lcom/android/settings_ext/ConfirmLockPassword$ConfirmLockPasswordFragment;->mLockPatternUtils:Lcom/android/internal/widget/LockPatternUtils;
 
     invoke-virtual {v2}, Lcom/android/internal/widget/LockPatternUtils;->getLockoutAttemptDeadline()J
 
@@ -878,7 +878,7 @@
     if-eqz v2, :cond_0
 
     .line 183
-    invoke-direct {p0, v0, v1}, Lcom/android/settings/ConfirmLockPassword$ConfirmLockPasswordFragment;->handleAttemptLockout(J)V
+    invoke-direct {p0, v0, v1}, Lcom/android/settings_ext/ConfirmLockPassword$ConfirmLockPasswordFragment;->handleAttemptLockout(J)V
 
     .line 185
     :cond_0
@@ -896,7 +896,7 @@
     .line 190
     const-string v0, "confirm_lock_password_fragment.key_num_wrong_confirm_attempts"
 
-    iget v1, p0, Lcom/android/settings/ConfirmLockPassword$ConfirmLockPasswordFragment;->mNumWrongConfirmAttempts:I
+    iget v1, p0, Lcom/android/settings_ext/ConfirmLockPassword$ConfirmLockPasswordFragment;->mNumWrongConfirmAttempts:I
 
     invoke-virtual {p1, v0, v1}, Landroid/os/Bundle;->putInt(Ljava/lang/String;I)V
 

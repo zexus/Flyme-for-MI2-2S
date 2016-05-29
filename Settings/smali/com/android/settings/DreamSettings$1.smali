@@ -1,4 +1,4 @@
-.class Lcom/android/settings/DreamSettings$1;
+.class Lcom/android/settings_ext/DreamSettings$1;
 .super Ljava/lang/Object;
 .source "DreamSettings.java"
 
@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/android/settings/DreamSettings;->onCreateOptionsMenu(Landroid/view/Menu;Landroid/view/MenuInflater;)V
+    value = Lcom/android/settings_ext/DreamSettings;->onCreateOptionsMenu(Landroid/view/Menu;Landroid/view/MenuInflater;)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -18,16 +18,16 @@
 
 
 # instance fields
-.field final synthetic this$0:Lcom/android/settings/DreamSettings;
+.field final synthetic this$0:Lcom/android/settings_ext/DreamSettings;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/DreamSettings;)V
+.method constructor <init>(Lcom/android/settings_ext/DreamSettings;)V
     .locals 0
 
     .prologue
     .line 142
-    iput-object p1, p0, Lcom/android/settings/DreamSettings$1;->this$0:Lcom/android/settings/DreamSettings;
+    iput-object p1, p0, Lcom/android/settings_ext/DreamSettings$1;->this$0:Lcom/android/settings_ext/DreamSettings;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -41,14 +41,14 @@
 
     .prologue
     .line 145
-    iget-object v0, p0, Lcom/android/settings/DreamSettings$1;->this$0:Lcom/android/settings/DreamSettings;
+    iget-object v0, p0, Lcom/android/settings_ext/DreamSettings$1;->this$0:Lcom/android/settings_ext/DreamSettings;
 
-    # getter for: Lcom/android/settings/DreamSettings;->mBackend:Lcom/android/settings/DreamBackend;
-    invoke-static {v0}, Lcom/android/settings/DreamSettings;->access$100(Lcom/android/settings/DreamSettings;)Lcom/android/settings/DreamBackend;
+    # getter for: Lcom/android/settings_ext/DreamSettings;->mBackend:Lcom/android/settings_ext/DreamBackend;
+    invoke-static {v0}, Lcom/android/settings_ext/DreamSettings;->access$100(Lcom/android/settings_ext/DreamSettings;)Lcom/android/settings_ext/DreamBackend;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/android/settings/DreamBackend;->startDreaming()V
+    invoke-virtual {v0}, Lcom/android/settings_ext/DreamBackend;->startDreaming()V
 
     .line 146
     return-void

@@ -1,4 +1,4 @@
-.class public Lcom/android/settings/AppWidgetLoader;
+.class public Lcom/android/settings_ext/AppWidgetLoader;
 .super Ljava/lang/Object;
 .source "AppWidgetLoader.java"
 
@@ -6,15 +6,15 @@
 # annotations
 .annotation system Ldalvik/annotation/MemberClasses;
     value = {
-        Lcom/android/settings/AppWidgetLoader$ItemConstructor;,
-        Lcom/android/settings/AppWidgetLoader$LabelledItem;
+        Lcom/android/settings_ext/AppWidgetLoader$ItemConstructor;,
+        Lcom/android/settings_ext/AppWidgetLoader$LabelledItem;
     }
 .end annotation
 
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "<Item::",
-        "Lcom/android/settings/AppWidgetLoader$LabelledItem;",
+        "Lcom/android/settings_ext/AppWidgetLoader$LabelledItem;",
         ">",
         "Ljava/lang/Object;"
     }
@@ -26,10 +26,10 @@
 
 .field private mContext:Landroid/content/Context;
 
-.field mItemConstructor:Lcom/android/settings/AppWidgetLoader$ItemConstructor;
+.field mItemConstructor:Lcom/android/settings_ext/AppWidgetLoader$ItemConstructor;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Lcom/android/settings/AppWidgetLoader$ItemConstructor",
+            "Lcom/android/settings_ext/AppWidgetLoader$ItemConstructor",
             "<TItem;>;"
         }
     .end annotation
@@ -37,7 +37,7 @@
 
 
 # direct methods
-.method public constructor <init>(Landroid/content/Context;Landroid/appwidget/AppWidgetManager;Lcom/android/settings/AppWidgetLoader$ItemConstructor;)V
+.method public constructor <init>(Landroid/content/Context;Landroid/appwidget/AppWidgetManager;Lcom/android/settings_ext/AppWidgetLoader$ItemConstructor;)V
     .locals 0
     .param p1, "context"    # Landroid/content/Context;
     .param p2, "appWidgetManager"    # Landroid/appwidget/AppWidgetManager;
@@ -46,25 +46,25 @@
             "(",
             "Landroid/content/Context;",
             "Landroid/appwidget/AppWidgetManager;",
-            "Lcom/android/settings/AppWidgetLoader$ItemConstructor",
+            "Lcom/android/settings_ext/AppWidgetLoader$ItemConstructor",
             "<TItem;>;)V"
         }
     .end annotation
 
     .prologue
     .line 46
-    .local p0, "this":Lcom/android/settings/AppWidgetLoader;, "Lcom/android/settings/AppWidgetLoader<TItem;>;"
-    .local p3, "itemConstructor":Lcom/android/settings/AppWidgetLoader$ItemConstructor;, "Lcom/android/settings/AppWidgetLoader$ItemConstructor<TItem;>;"
+    .local p0, "this":Lcom/android/settings_ext/AppWidgetLoader;, "Lcom/android/settings_ext/AppWidgetLoader<TItem;>;"
+    .local p3, "itemConstructor":Lcom/android/settings_ext/AppWidgetLoader$ItemConstructor;, "Lcom/android/settings_ext/AppWidgetLoader$ItemConstructor<TItem;>;"
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 47
-    iput-object p1, p0, Lcom/android/settings/AppWidgetLoader;->mContext:Landroid/content/Context;
+    iput-object p1, p0, Lcom/android/settings_ext/AppWidgetLoader;->mContext:Landroid/content/Context;
 
     .line 48
-    iput-object p2, p0, Lcom/android/settings/AppWidgetLoader;->mAppWidgetManager:Landroid/appwidget/AppWidgetManager;
+    iput-object p2, p0, Lcom/android/settings_ext/AppWidgetLoader;->mAppWidgetManager:Landroid/appwidget/AppWidgetManager;
 
     .line 49
-    iput-object p3, p0, Lcom/android/settings/AppWidgetLoader;->mItemConstructor:Lcom/android/settings/AppWidgetLoader$ItemConstructor;
+    iput-object p3, p0, Lcom/android/settings_ext/AppWidgetLoader;->mItemConstructor:Lcom/android/settings_ext/AppWidgetLoader$ItemConstructor;
 
     .line 50
     return-void
@@ -86,7 +86,7 @@
     .end annotation
 
     .prologue
-    .local p0, "this":Lcom/android/settings/AppWidgetLoader;, "Lcom/android/settings/AppWidgetLoader<TItem;>;"
+    .local p0, "this":Lcom/android/settings_ext/AppWidgetLoader;, "Lcom/android/settings_ext/AppWidgetLoader<TItem;>;"
     const/4 v5, 0x1
 
     .line 145
@@ -112,19 +112,19 @@
 
     .line 154
     .local v0, "categoryFilter":I
-    invoke-virtual {p0, v2, v0}, Lcom/android/settings/AppWidgetLoader;->putInstalledAppWidgets(Ljava/util/List;I)V
+    invoke-virtual {p0, v2, v0}, Lcom/android/settings_ext/AppWidgetLoader;->putInstalledAppWidgets(Ljava/util/List;I)V
 
     .line 157
     if-eqz v3, :cond_0
 
     .line 158
-    invoke-virtual {p0, v2, p1}, Lcom/android/settings/AppWidgetLoader;->putCustomAppWidgets(Ljava/util/List;Landroid/content/Intent;)V
+    invoke-virtual {p0, v2, p1}, Lcom/android/settings_ext/AppWidgetLoader;->putCustomAppWidgets(Ljava/util/List;Landroid/content/Intent;)V
 
     .line 160
     :cond_0
-    new-instance v4, Lcom/android/settings/AppWidgetLoader$1;
+    new-instance v4, Lcom/android/settings_ext/AppWidgetLoader$1;
 
-    invoke-direct {v4, p0}, Lcom/android/settings/AppWidgetLoader$1;-><init>(Lcom/android/settings/AppWidgetLoader;)V
+    invoke-direct {v4, p0}, Lcom/android/settings_ext/AppWidgetLoader$1;-><init>(Lcom/android/settings_ext/AppWidgetLoader;)V
 
     invoke-static {v2, v4}, Ljava/util/Collections;->sort(Ljava/util/List;Ljava/util/Comparator;)V
 
@@ -138,7 +138,7 @@
 
     .line 169
     .local v1, "customItems":Ljava/util/List;, "Ljava/util/List<TItem;>;"
-    invoke-virtual {p0, v1, p1}, Lcom/android/settings/AppWidgetLoader;->putCustomAppWidgets(Ljava/util/List;Landroid/content/Intent;)V
+    invoke-virtual {p0, v1, p1}, Lcom/android/settings_ext/AppWidgetLoader;->putCustomAppWidgets(Ljava/util/List;Landroid/content/Intent;)V
 
     .line 170
     invoke-interface {v2, v1}, Ljava/util/List;->addAll(Ljava/util/Collection;)Z
@@ -171,7 +171,7 @@
 
     .prologue
     .line 117
-    .local p0, "this":Lcom/android/settings/AppWidgetLoader;, "Lcom/android/settings/AppWidgetLoader<TItem;>;"
+    .local p0, "this":Lcom/android/settings_ext/AppWidgetLoader;, "Lcom/android/settings_ext/AppWidgetLoader<TItem;>;"
     .local p1, "appWidgets":Ljava/util/List;, "Ljava/util/List<Landroid/appwidget/AppWidgetProviderInfo;>;"
     .local p2, "customExtras":Ljava/util/List;, "Ljava/util/List<Landroid/os/Bundle;>;"
     .local p3, "items":Ljava/util/List;, "Ljava/util/List<TItem;>;"
@@ -220,9 +220,9 @@
 
     .line 127
     :cond_2
-    iget-object v5, p0, Lcom/android/settings/AppWidgetLoader;->mItemConstructor:Lcom/android/settings/AppWidgetLoader$ItemConstructor;
+    iget-object v5, p0, Lcom/android/settings_ext/AppWidgetLoader;->mItemConstructor:Lcom/android/settings_ext/AppWidgetLoader$ItemConstructor;
 
-    iget-object v6, p0, Lcom/android/settings/AppWidgetLoader;->mContext:Landroid/content/Context;
+    iget-object v6, p0, Lcom/android/settings_ext/AppWidgetLoader;->mContext:Landroid/content/Context;
 
     if-eqz p2, :cond_3
 
@@ -233,20 +233,20 @@
     check-cast v4, Landroid/os/Bundle;
 
     :goto_2
-    invoke-interface {v5, v6, v1, v4}, Lcom/android/settings/AppWidgetLoader$ItemConstructor;->createItem(Landroid/content/Context;Landroid/appwidget/AppWidgetProviderInfo;Landroid/os/Bundle;)Ljava/lang/Object;
+    invoke-interface {v5, v6, v1, v4}, Lcom/android/settings_ext/AppWidgetLoader$ItemConstructor;->createItem(Landroid/content/Context;Landroid/appwidget/AppWidgetProviderInfo;Landroid/os/Bundle;)Ljava/lang/Object;
 
     move-result-object v2
 
-    check-cast v2, Lcom/android/settings/AppWidgetLoader$LabelledItem;
+    check-cast v2, Lcom/android/settings_ext/AppWidgetLoader$LabelledItem;
 
     .line 130
-    .local v2, "item":Lcom/android/settings/AppWidgetLoader$LabelledItem;, "TItem;"
+    .local v2, "item":Lcom/android/settings_ext/AppWidgetLoader$LabelledItem;, "TItem;"
     invoke-interface {p3, v2}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
     goto :goto_1
 
     .line 127
-    .end local v2    # "item":Lcom/android/settings/AppWidgetLoader$LabelledItem;, "TItem;"
+    .end local v2    # "item":Lcom/android/settings_ext/AppWidgetLoader$LabelledItem;, "TItem;"
     :cond_3
     const/4 v4, 0x0
 
@@ -268,7 +268,7 @@
 
     .prologue
     .line 58
-    .local p0, "this":Lcom/android/settings/AppWidgetLoader;, "Lcom/android/settings/AppWidgetLoader<TItem;>;"
+    .local p0, "this":Lcom/android/settings_ext/AppWidgetLoader;, "Lcom/android/settings_ext/AppWidgetLoader<TItem;>;"
     .local p1, "items":Ljava/util/List;, "Ljava/util/List<TItem;>;"
     const/4 v1, 0x0
 
@@ -312,7 +312,7 @@
 
     move-object v3, p1
 
-    invoke-virtual/range {v0 .. v5}, Lcom/android/settings/AppWidgetLoader;->putAppWidgetItems(Ljava/util/List;Ljava/util/List;Ljava/util/List;IZ)V
+    invoke-virtual/range {v0 .. v5}, Lcom/android/settings_ext/AppWidgetLoader;->putAppWidgetItems(Ljava/util/List;Ljava/util/List;Ljava/util/List;IZ)V
 
     .line 107
     return-void
@@ -530,9 +530,9 @@
 
     .prologue
     .line 179
-    .local p0, "this":Lcom/android/settings/AppWidgetLoader;, "Lcom/android/settings/AppWidgetLoader<TItem;>;"
+    .local p0, "this":Lcom/android/settings_ext/AppWidgetLoader;, "Lcom/android/settings_ext/AppWidgetLoader<TItem;>;"
     .local p1, "items":Ljava/util/List;, "Ljava/util/List<TItem;>;"
-    iget-object v0, p0, Lcom/android/settings/AppWidgetLoader;->mAppWidgetManager:Landroid/appwidget/AppWidgetManager;
+    iget-object v0, p0, Lcom/android/settings_ext/AppWidgetLoader;->mAppWidgetManager:Landroid/appwidget/AppWidgetManager;
 
     invoke-virtual {v0, p2}, Landroid/appwidget/AppWidgetManager;->getInstalledProviders(I)Ljava/util/List;
 
@@ -550,7 +550,7 @@
 
     move v4, p2
 
-    invoke-virtual/range {v0 .. v5}, Lcom/android/settings/AppWidgetLoader;->putAppWidgetItems(Ljava/util/List;Ljava/util/List;Ljava/util/List;IZ)V
+    invoke-virtual/range {v0 .. v5}, Lcom/android/settings_ext/AppWidgetLoader;->putAppWidgetItems(Ljava/util/List;Ljava/util/List;Ljava/util/List;IZ)V
 
     .line 182
     return-void

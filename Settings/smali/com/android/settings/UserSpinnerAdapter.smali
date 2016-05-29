@@ -1,4 +1,4 @@
-.class public Lcom/android/settings/UserSpinnerAdapter;
+.class public Lcom/android/settings_ext/UserSpinnerAdapter;
 .super Ljava/lang/Object;
 .source "UserSpinnerAdapter.java"
 
@@ -9,7 +9,7 @@
 # annotations
 .annotation system Ldalvik/annotation/MemberClasses;
     value = {
-        Lcom/android/settings/UserSpinnerAdapter$UserDetails;
+        Lcom/android/settings_ext/UserSpinnerAdapter$UserDetails;
     }
 .end annotation
 
@@ -20,7 +20,7 @@
         value = {
             "Ljava/util/ArrayList",
             "<",
-            "Lcom/android/settings/UserSpinnerAdapter$UserDetails;",
+            "Lcom/android/settings_ext/UserSpinnerAdapter$UserDetails;",
             ">;"
         }
     .end annotation
@@ -39,14 +39,14 @@
             "Landroid/content/Context;",
             "Ljava/util/ArrayList",
             "<",
-            "Lcom/android/settings/UserSpinnerAdapter$UserDetails;",
+            "Lcom/android/settings_ext/UserSpinnerAdapter$UserDetails;",
             ">;)V"
         }
     .end annotation
 
     .prologue
     .line 70
-    .local p2, "users":Ljava/util/ArrayList;, "Ljava/util/ArrayList<Lcom/android/settings/UserSpinnerAdapter$UserDetails;>;"
+    .local p2, "users":Ljava/util/ArrayList;, "Ljava/util/ArrayList<Lcom/android/settings_ext/UserSpinnerAdapter$UserDetails;>;"
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 71
@@ -63,7 +63,7 @@
 
     .line 74
     :cond_0
-    iput-object p2, p0, Lcom/android/settings/UserSpinnerAdapter;->data:Ljava/util/ArrayList;
+    iput-object p2, p0, Lcom/android/settings_ext/UserSpinnerAdapter;->data:Ljava/util/ArrayList;
 
     .line 75
     const-string v0, "layout_inflater"
@@ -74,7 +74,7 @@
 
     check-cast v0, Landroid/view/LayoutInflater;
 
-    iput-object v0, p0, Lcom/android/settings/UserSpinnerAdapter;->mInflater:Landroid/view/LayoutInflater;
+    iput-object v0, p0, Lcom/android/settings_ext/UserSpinnerAdapter;->mInflater:Landroid/view/LayoutInflater;
 
     .line 76
     return-void
@@ -86,7 +86,7 @@
 
     .prologue
     .line 96
-    iget-object v0, p0, Lcom/android/settings/UserSpinnerAdapter;->mInflater:Landroid/view/LayoutInflater;
+    iget-object v0, p0, Lcom/android/settings_ext/UserSpinnerAdapter;->mInflater:Landroid/view/LayoutInflater;
 
     const v1, 0x7f0400d0
 
@@ -106,7 +106,7 @@
 
     .prologue
     .line 111
-    iget-object v0, p0, Lcom/android/settings/UserSpinnerAdapter;->data:Ljava/util/ArrayList;
+    iget-object v0, p0, Lcom/android/settings_ext/UserSpinnerAdapter;->data:Ljava/util/ArrayList;
 
     invoke-virtual {v0}, Ljava/util/ArrayList;->size()I
 
@@ -130,16 +130,16 @@
     .line 89
     .local v0, "row":Landroid/view/View;
     :goto_0
-    iget-object v2, p0, Lcom/android/settings/UserSpinnerAdapter;->data:Ljava/util/ArrayList;
+    iget-object v2, p0, Lcom/android/settings_ext/UserSpinnerAdapter;->data:Ljava/util/ArrayList;
 
     invoke-virtual {v2, p1}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
 
     move-result-object v1
 
-    check-cast v1, Lcom/android/settings/UserSpinnerAdapter$UserDetails;
+    check-cast v1, Lcom/android/settings_ext/UserSpinnerAdapter$UserDetails;
 
     .line 90
-    .local v1, "user":Lcom/android/settings/UserSpinnerAdapter$UserDetails;
+    .local v1, "user":Lcom/android/settings_ext/UserSpinnerAdapter$UserDetails;
     const v2, 0x1020006
 
     invoke-virtual {v0, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
@@ -148,8 +148,8 @@
 
     check-cast v2, Landroid/widget/ImageView;
 
-    # getter for: Lcom/android/settings/UserSpinnerAdapter$UserDetails;->icon:Landroid/graphics/drawable/Drawable;
-    invoke-static {v1}, Lcom/android/settings/UserSpinnerAdapter$UserDetails;->access$100(Lcom/android/settings/UserSpinnerAdapter$UserDetails;)Landroid/graphics/drawable/Drawable;
+    # getter for: Lcom/android/settings_ext/UserSpinnerAdapter$UserDetails;->icon:Landroid/graphics/drawable/Drawable;
+    invoke-static {v1}, Lcom/android/settings_ext/UserSpinnerAdapter$UserDetails;->access$100(Lcom/android/settings_ext/UserSpinnerAdapter$UserDetails;)Landroid/graphics/drawable/Drawable;
 
     move-result-object v3
 
@@ -164,8 +164,8 @@
 
     check-cast v2, Landroid/widget/TextView;
 
-    # getter for: Lcom/android/settings/UserSpinnerAdapter$UserDetails;->name:Ljava/lang/String;
-    invoke-static {v1}, Lcom/android/settings/UserSpinnerAdapter$UserDetails;->access$200(Lcom/android/settings/UserSpinnerAdapter$UserDetails;)Ljava/lang/String;
+    # getter for: Lcom/android/settings_ext/UserSpinnerAdapter$UserDetails;->name:Ljava/lang/String;
+    invoke-static {v1}, Lcom/android/settings_ext/UserSpinnerAdapter$UserDetails;->access$200(Lcom/android/settings_ext/UserSpinnerAdapter$UserDetails;)Ljava/lang/String;
 
     move-result-object v3
 
@@ -176,28 +176,28 @@
 
     .line 87
     .end local v0    # "row":Landroid/view/View;
-    .end local v1    # "user":Lcom/android/settings/UserSpinnerAdapter$UserDetails;
+    .end local v1    # "user":Lcom/android/settings_ext/UserSpinnerAdapter$UserDetails;
     :cond_0
-    invoke-direct {p0, p3}, Lcom/android/settings/UserSpinnerAdapter;->createUser(Landroid/view/ViewGroup;)Landroid/view/View;
+    invoke-direct {p0, p3}, Lcom/android/settings_ext/UserSpinnerAdapter;->createUser(Landroid/view/ViewGroup;)Landroid/view/View;
 
     move-result-object v0
 
     goto :goto_0
 .end method
 
-.method public getItem(I)Lcom/android/settings/UserSpinnerAdapter$UserDetails;
+.method public getItem(I)Lcom/android/settings_ext/UserSpinnerAdapter$UserDetails;
     .locals 1
     .param p1, "position"    # I
 
     .prologue
     .line 116
-    iget-object v0, p0, Lcom/android/settings/UserSpinnerAdapter;->data:Ljava/util/ArrayList;
+    iget-object v0, p0, Lcom/android/settings_ext/UserSpinnerAdapter;->data:Ljava/util/ArrayList;
 
     invoke-virtual {v0, p1}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
 
     move-result-object v0
 
-    check-cast v0, Lcom/android/settings/UserSpinnerAdapter$UserDetails;
+    check-cast v0, Lcom/android/settings_ext/UserSpinnerAdapter$UserDetails;
 
     return-object v0
 .end method
@@ -208,7 +208,7 @@
 
     .prologue
     .line 41
-    invoke-virtual {p0, p1}, Lcom/android/settings/UserSpinnerAdapter;->getItem(I)Lcom/android/settings/UserSpinnerAdapter$UserDetails;
+    invoke-virtual {p0, p1}, Lcom/android/settings_ext/UserSpinnerAdapter;->getItem(I)Lcom/android/settings_ext/UserSpinnerAdapter$UserDetails;
 
     move-result-object v0
 
@@ -221,16 +221,16 @@
 
     .prologue
     .line 121
-    iget-object v0, p0, Lcom/android/settings/UserSpinnerAdapter;->data:Ljava/util/ArrayList;
+    iget-object v0, p0, Lcom/android/settings_ext/UserSpinnerAdapter;->data:Ljava/util/ArrayList;
 
     invoke-virtual {v0, p1}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
 
     move-result-object v0
 
-    check-cast v0, Lcom/android/settings/UserSpinnerAdapter$UserDetails;
+    check-cast v0, Lcom/android/settings_ext/UserSpinnerAdapter$UserDetails;
 
-    # getter for: Lcom/android/settings/UserSpinnerAdapter$UserDetails;->mUserHandle:Landroid/os/UserHandle;
-    invoke-static {v0}, Lcom/android/settings/UserSpinnerAdapter$UserDetails;->access$000(Lcom/android/settings/UserSpinnerAdapter$UserDetails;)Landroid/os/UserHandle;
+    # getter for: Lcom/android/settings_ext/UserSpinnerAdapter$UserDetails;->mUserHandle:Landroid/os/UserHandle;
+    invoke-static {v0}, Lcom/android/settings_ext/UserSpinnerAdapter$UserDetails;->access$000(Lcom/android/settings_ext/UserSpinnerAdapter$UserDetails;)Landroid/os/UserHandle;
 
     move-result-object v0
 
@@ -262,7 +262,7 @@
     .line 79
     if-ltz p1, :cond_0
 
-    iget-object v0, p0, Lcom/android/settings/UserSpinnerAdapter;->data:Ljava/util/ArrayList;
+    iget-object v0, p0, Lcom/android/settings_ext/UserSpinnerAdapter;->data:Ljava/util/ArrayList;
 
     invoke-virtual {v0}, Ljava/util/ArrayList;->size()I
 
@@ -279,16 +279,16 @@
     return-object v0
 
     :cond_1
-    iget-object v0, p0, Lcom/android/settings/UserSpinnerAdapter;->data:Ljava/util/ArrayList;
+    iget-object v0, p0, Lcom/android/settings_ext/UserSpinnerAdapter;->data:Ljava/util/ArrayList;
 
     invoke-virtual {v0, p1}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
 
     move-result-object v0
 
-    check-cast v0, Lcom/android/settings/UserSpinnerAdapter$UserDetails;
+    check-cast v0, Lcom/android/settings_ext/UserSpinnerAdapter$UserDetails;
 
-    # getter for: Lcom/android/settings/UserSpinnerAdapter$UserDetails;->mUserHandle:Landroid/os/UserHandle;
-    invoke-static {v0}, Lcom/android/settings/UserSpinnerAdapter$UserDetails;->access$000(Lcom/android/settings/UserSpinnerAdapter$UserDetails;)Landroid/os/UserHandle;
+    # getter for: Lcom/android/settings_ext/UserSpinnerAdapter$UserDetails;->mUserHandle:Landroid/os/UserHandle;
+    invoke-static {v0}, Lcom/android/settings_ext/UserSpinnerAdapter$UserDetails;->access$000(Lcom/android/settings_ext/UserSpinnerAdapter$UserDetails;)Landroid/os/UserHandle;
 
     move-result-object v0
 
@@ -303,7 +303,7 @@
 
     .prologue
     .line 131
-    invoke-virtual {p0, p1, p2, p3}, Lcom/android/settings/UserSpinnerAdapter;->getDropDownView(ILandroid/view/View;Landroid/view/ViewGroup;)Landroid/view/View;
+    invoke-virtual {p0, p1, p2, p3}, Lcom/android/settings_ext/UserSpinnerAdapter;->getDropDownView(ILandroid/view/View;Landroid/view/ViewGroup;)Landroid/view/View;
 
     move-result-object v0
 
@@ -335,7 +335,7 @@
 
     .prologue
     .line 146
-    iget-object v0, p0, Lcom/android/settings/UserSpinnerAdapter;->data:Ljava/util/ArrayList;
+    iget-object v0, p0, Lcom/android/settings_ext/UserSpinnerAdapter;->data:Ljava/util/ArrayList;
 
     invoke-virtual {v0}, Ljava/util/ArrayList;->isEmpty()Z
 

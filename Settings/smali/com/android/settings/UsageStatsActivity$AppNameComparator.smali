@@ -1,4 +1,4 @@
-.class public Lcom/android/settings/UsageStatsActivity$AppNameComparator;
+.class public Lcom/android/settings_ext/UsageStatsActivity$AppNameComparator;
 .super Ljava/lang/Object;
 .source "UsageStatsActivity.java"
 
@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/android/settings/UsageStatsActivity;
+    value = Lcom/android/settings_ext/UsageStatsActivity;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -61,7 +61,7 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 64
-    iput-object p1, p0, Lcom/android/settings/UsageStatsActivity$AppNameComparator;->mAppLabelList:Ljava/util/Map;
+    iput-object p1, p0, Lcom/android/settings_ext/UsageStatsActivity$AppNameComparator;->mAppLabelList:Ljava/util/Map;
 
     .line 65
     return-void
@@ -76,7 +76,7 @@
 
     .prologue
     .line 69
-    iget-object v2, p0, Lcom/android/settings/UsageStatsActivity$AppNameComparator;->mAppLabelList:Ljava/util/Map;
+    iget-object v2, p0, Lcom/android/settings_ext/UsageStatsActivity$AppNameComparator;->mAppLabelList:Ljava/util/Map;
 
     invoke-virtual {p1}, Landroid/app/usage/UsageStats;->getPackageName()Ljava/lang/String;
 
@@ -90,7 +90,7 @@
 
     .line 70
     .local v0, "alabel":Ljava/lang/String;
-    iget-object v2, p0, Lcom/android/settings/UsageStatsActivity$AppNameComparator;->mAppLabelList:Ljava/util/Map;
+    iget-object v2, p0, Lcom/android/settings_ext/UsageStatsActivity$AppNameComparator;->mAppLabelList:Ljava/util/Map;
 
     invoke-virtual {p2}, Landroid/app/usage/UsageStats;->getPackageName()Ljava/lang/String;
 
@@ -124,7 +124,7 @@
     check-cast p2, Landroid/app/usage/UsageStats;
 
     .end local p2    # "x1":Ljava/lang/Object;
-    invoke-virtual {p0, p1, p2}, Lcom/android/settings/UsageStatsActivity$AppNameComparator;->compare(Landroid/app/usage/UsageStats;Landroid/app/usage/UsageStats;)I
+    invoke-virtual {p0, p1, p2}, Lcom/android/settings_ext/UsageStatsActivity$AppNameComparator;->compare(Landroid/app/usage/UsageStats;Landroid/app/usage/UsageStats;)I
 
     move-result v0
 

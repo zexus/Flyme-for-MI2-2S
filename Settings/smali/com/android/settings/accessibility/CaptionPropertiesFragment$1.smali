@@ -1,4 +1,4 @@
-.class Lcom/android/settings/accessibility/CaptionPropertiesFragment$1;
+.class Lcom/android/settings_ext/accessibility/CaptionPropertiesFragment$1;
 .super Ljava/lang/Object;
 .source "CaptionPropertiesFragment.java"
 
@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/android/settings/accessibility/CaptionPropertiesFragment;->onViewCreated(Landroid/view/View;Landroid/os/Bundle;)V
+    value = Lcom/android/settings_ext/accessibility/CaptionPropertiesFragment;->onViewCreated(Landroid/view/View;Landroid/os/Bundle;)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -18,16 +18,16 @@
 
 
 # instance fields
-.field final synthetic this$0:Lcom/android/settings/accessibility/CaptionPropertiesFragment;
+.field final synthetic this$0:Lcom/android/settings_ext/accessibility/CaptionPropertiesFragment;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/accessibility/CaptionPropertiesFragment;)V
+.method constructor <init>(Lcom/android/settings_ext/accessibility/CaptionPropertiesFragment;)V
     .locals 0
 
     .prologue
     .line 138
-    iput-object p1, p0, Lcom/android/settings/accessibility/CaptionPropertiesFragment$1;->this$0:Lcom/android/settings/accessibility/CaptionPropertiesFragment;
+    iput-object p1, p0, Lcom/android/settings_ext/accessibility/CaptionPropertiesFragment$1;->this$0:Lcom/android/settings_ext/accessibility/CaptionPropertiesFragment;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -50,10 +50,10 @@
 
     .prologue
     .line 142
-    iget-object v0, p0, Lcom/android/settings/accessibility/CaptionPropertiesFragment$1;->this$0:Lcom/android/settings/accessibility/CaptionPropertiesFragment;
+    iget-object v0, p0, Lcom/android/settings_ext/accessibility/CaptionPropertiesFragment$1;->this$0:Lcom/android/settings_ext/accessibility/CaptionPropertiesFragment;
 
-    # invokes: Lcom/android/settings/accessibility/CaptionPropertiesFragment;->refreshPreviewText()V
-    invoke-static {v0}, Lcom/android/settings/accessibility/CaptionPropertiesFragment;->access$000(Lcom/android/settings/accessibility/CaptionPropertiesFragment;)V
+    # invokes: Lcom/android/settings_ext/accessibility/CaptionPropertiesFragment;->refreshPreviewText()V
+    invoke-static {v0}, Lcom/android/settings_ext/accessibility/CaptionPropertiesFragment;->access$000(Lcom/android/settings_ext/accessibility/CaptionPropertiesFragment;)V
 
     .line 143
     return-void

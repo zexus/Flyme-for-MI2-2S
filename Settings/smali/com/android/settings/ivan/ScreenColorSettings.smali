@@ -1,4 +1,4 @@
-.class public Lcom/android/settings/ivan/ScreenColorSettings;
+.class public Lcom/android/settings_ext/ivan/ScreenColorSettings;
 .super Landroid/preference/PreferenceActivity;
 .source "ScreenColorSettings.java"
 
@@ -107,7 +107,7 @@
 
     .prologue
     .line 57
-    invoke-direct {p0, p1, p2}, Lcom/android/settings/ivan/ScreenColorSettings;->setSummary(Landroid/preference/ListPreference;I)I
+    invoke-direct {p0, p1, p2}, Lcom/android/settings_ext/ivan/ScreenColorSettings;->setSummary(Landroid/preference/ListPreference;I)I
 
     move-result v0
 
@@ -138,10 +138,10 @@
     .line 42
     const v1, 0x7f0400a3
 
-    invoke-virtual {p0, v1}, Lcom/android/settings/ivan/ScreenColorSettings;->setContentView(I)V
+    invoke-virtual {p0, v1}, Lcom/android/settings_ext/ivan/ScreenColorSettings;->setContentView(I)V
 
     .line 43
-    invoke-virtual {p0}, Lcom/android/settings/ivan/ScreenColorSettings;->getActionBar()Landroid/app/ActionBar;
+    invoke-virtual {p0}, Lcom/android/settings_ext/ivan/ScreenColorSettings;->getActionBar()Landroid/app/ActionBar;
 
     move-result-object v0
 
@@ -154,53 +154,53 @@
     .line 45
     const v1, 0x7f06002e
 
-    invoke-virtual {p0, v1}, Lcom/android/settings/ivan/ScreenColorSettings;->addPreferencesFromResource(I)V
+    invoke-virtual {p0, v1}, Lcom/android/settings_ext/ivan/ScreenColorSettings;->addPreferencesFromResource(I)V
 
     .line 46
     const v1, 0x7f0f017e
 
-    invoke-virtual {p0, v1}, Lcom/android/settings/ivan/ScreenColorSettings;->findViewById(I)Landroid/view/View;
+    invoke-virtual {p0, v1}, Lcom/android/settings_ext/ivan/ScreenColorSettings;->findViewById(I)Landroid/view/View;
 
     move-result-object v1
 
     check-cast v1, Landroid/widget/ImageView;
 
-    iput-object v1, p0, Lcom/android/settings/ivan/ScreenColorSettings;->mWallpaperImage:Landroid/widget/ImageView;
+    iput-object v1, p0, Lcom/android/settings_ext/ivan/ScreenColorSettings;->mWallpaperImage:Landroid/widget/ImageView;
 
     .line 48
     const-string v1, "screen_color"
 
-    invoke-virtual {p0, v1}, Lcom/android/settings/ivan/ScreenColorSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v1}, Lcom/android/settings_ext/ivan/ScreenColorSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v1
 
     check-cast v1, Landroid/preference/ListPreference;
 
-    iput-object v1, p0, Lcom/android/settings/ivan/ScreenColorSettings;->mScreenColor:Landroid/preference/ListPreference;
+    iput-object v1, p0, Lcom/android/settings_ext/ivan/ScreenColorSettings;->mScreenColor:Landroid/preference/ListPreference;
 
     .line 49
     const-string v1, "screen_saturation"
 
-    invoke-virtual {p0, v1}, Lcom/android/settings/ivan/ScreenColorSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v1}, Lcom/android/settings_ext/ivan/ScreenColorSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v1
 
     check-cast v1, Landroid/preference/ListPreference;
 
-    iput-object v1, p0, Lcom/android/settings/ivan/ScreenColorSettings;->mScreenSaturation:Landroid/preference/ListPreference;
+    iput-object v1, p0, Lcom/android/settings_ext/ivan/ScreenColorSettings;->mScreenSaturation:Landroid/preference/ListPreference;
 
     .line 50
-    iget-object v1, p0, Lcom/android/settings/ivan/ScreenColorSettings;->mScreenColor:Landroid/preference/ListPreference;
+    iget-object v1, p0, Lcom/android/settings_ext/ivan/ScreenColorSettings;->mScreenColor:Landroid/preference/ListPreference;
 
     invoke-virtual {v1, p0}, Landroid/preference/ListPreference;->setOnPreferenceChangeListener(Landroid/preference/Preference$OnPreferenceChangeListener;)V
 
     .line 51
-    iget-object v1, p0, Lcom/android/settings/ivan/ScreenColorSettings;->mScreenSaturation:Landroid/preference/ListPreference;
+    iget-object v1, p0, Lcom/android/settings_ext/ivan/ScreenColorSettings;->mScreenSaturation:Landroid/preference/ListPreference;
 
     invoke-virtual {v1, p0}, Landroid/preference/ListPreference;->setOnPreferenceChangeListener(Landroid/preference/Preference$OnPreferenceChangeListener;)V
 
     .line 52
-    iget-object v1, p0, Lcom/android/settings/ivan/ScreenColorSettings;->mScreenColor:Landroid/preference/ListPreference;
+    iget-object v1, p0, Lcom/android/settings_ext/ivan/ScreenColorSettings;->mScreenColor:Landroid/preference/ListPreference;
 
     const-string v2, "persist.sys.display_prefer"
 
@@ -210,10 +210,10 @@
 
     move-result v2
 
-    invoke-direct {p0, v1, v2}, Lcom/android/settings/ivan/ScreenColorSettings;->setValue(Landroid/preference/ListPreference;I)V
+    invoke-direct {p0, v1, v2}, Lcom/android/settings_ext/ivan/ScreenColorSettings;->setValue(Landroid/preference/ListPreference;I)V
 
     .line 53
-    iget-object v1, p0, Lcom/android/settings/ivan/ScreenColorSettings;->mScreenSaturation:Landroid/preference/ListPreference;
+    iget-object v1, p0, Lcom/android/settings_ext/ivan/ScreenColorSettings;->mScreenSaturation:Landroid/preference/ListPreference;
 
     const-string v2, "persist.sys.display_ce"
 
@@ -223,7 +223,7 @@
 
     move-result v2
 
-    invoke-direct {p0, v1, v2}, Lcom/android/settings/ivan/ScreenColorSettings;->setValue(Landroid/preference/ListPreference;I)V
+    invoke-direct {p0, v1, v2}, Lcom/android/settings_ext/ivan/ScreenColorSettings;->setValue(Landroid/preference/ListPreference;I)V
 
     .line 54
     return-void
@@ -260,7 +260,7 @@
     invoke-static {v2, v1}, Landroid/os/SystemProperties;->set(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 89
-    iget-object v1, p0, Lcom/android/settings/ivan/ScreenColorSettings;->mScreenColor:Landroid/preference/ListPreference;
+    iget-object v1, p0, Lcom/android/settings_ext/ivan/ScreenColorSettings;->mScreenColor:Landroid/preference/ListPreference;
 
     check-cast p2, Ljava/lang/String;
 
@@ -273,7 +273,7 @@
 
     move-result v2
 
-    invoke-direct {p0, v1, v2}, Lcom/android/settings/ivan/ScreenColorSettings;->setValue(Landroid/preference/ListPreference;I)V
+    invoke-direct {p0, v1, v2}, Lcom/android/settings_ext/ivan/ScreenColorSettings;->setValue(Landroid/preference/ListPreference;I)V
 
     .line 95
     :cond_0
@@ -303,7 +303,7 @@
     invoke-static {v2, v1}, Landroid/os/SystemProperties;->set(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 92
-    iget-object v1, p0, Lcom/android/settings/ivan/ScreenColorSettings;->mScreenSaturation:Landroid/preference/ListPreference;
+    iget-object v1, p0, Lcom/android/settings_ext/ivan/ScreenColorSettings;->mScreenSaturation:Landroid/preference/ListPreference;
 
     check-cast p2, Ljava/lang/String;
 
@@ -316,7 +316,7 @@
 
     move-result v2
 
-    invoke-direct {p0, v1, v2}, Lcom/android/settings/ivan/ScreenColorSettings;->setValue(Landroid/preference/ListPreference;I)V
+    invoke-direct {p0, v1, v2}, Lcom/android/settings_ext/ivan/ScreenColorSettings;->setValue(Landroid/preference/ListPreference;I)V
 
     goto :goto_0
 .end method
@@ -331,7 +331,7 @@
     .line 80
     const-string v1, "wallpaper"
 
-    invoke-virtual {p0, v1}, Lcom/android/settings/ivan/ScreenColorSettings;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
+    invoke-virtual {p0, v1}, Lcom/android/settings_ext/ivan/ScreenColorSettings;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object v0
 
@@ -339,7 +339,7 @@
 
     .line 81
     .local v0, "wallpaperManager":Landroid/app/WallpaperManager;
-    iget-object v1, p0, Lcom/android/settings/ivan/ScreenColorSettings;->mWallpaperImage:Landroid/widget/ImageView;
+    iget-object v1, p0, Lcom/android/settings_ext/ivan/ScreenColorSettings;->mWallpaperImage:Landroid/widget/ImageView;
 
     invoke-virtual {v0}, Landroid/app/WallpaperManager;->getDrawable()Landroid/graphics/drawable/Drawable;
 

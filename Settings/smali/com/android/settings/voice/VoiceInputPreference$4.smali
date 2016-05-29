@@ -1,4 +1,4 @@
-.class Lcom/android/settings/voice/VoiceInputPreference$4;
+.class Lcom/android/settings_ext/voice/VoiceInputPreference$4;
 .super Ljava/lang/Object;
 .source "VoiceInputPreference.java"
 
@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/android/settings/voice/VoiceInputPreference;->displayAlert(Landroid/content/DialogInterface$OnClickListener;Landroid/content/DialogInterface$OnClickListener;)V
+    value = Lcom/android/settings_ext/voice/VoiceInputPreference;->displayAlert(Landroid/content/DialogInterface$OnClickListener;Landroid/content/DialogInterface$OnClickListener;)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -18,20 +18,20 @@
 
 
 # instance fields
-.field final synthetic this$0:Lcom/android/settings/voice/VoiceInputPreference;
+.field final synthetic this$0:Lcom/android/settings_ext/voice/VoiceInputPreference;
 
 .field final synthetic val$negativeOnClickListener:Landroid/content/DialogInterface$OnClickListener;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/voice/VoiceInputPreference;Landroid/content/DialogInterface$OnClickListener;)V
+.method constructor <init>(Lcom/android/settings_ext/voice/VoiceInputPreference;Landroid/content/DialogInterface$OnClickListener;)V
     .locals 0
 
     .prologue
     .line 150
-    iput-object p1, p0, Lcom/android/settings/voice/VoiceInputPreference$4;->this$0:Lcom/android/settings/voice/VoiceInputPreference;
+    iput-object p1, p0, Lcom/android/settings_ext/voice/VoiceInputPreference$4;->this$0:Lcom/android/settings_ext/voice/VoiceInputPreference;
 
-    iput-object p2, p0, Lcom/android/settings/voice/VoiceInputPreference$4;->val$negativeOnClickListener:Landroid/content/DialogInterface$OnClickListener;
+    iput-object p2, p0, Lcom/android/settings_ext/voice/VoiceInputPreference$4;->val$negativeOnClickListener:Landroid/content/DialogInterface$OnClickListener;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -46,7 +46,7 @@
 
     .prologue
     .line 152
-    iget-object v0, p0, Lcom/android/settings/voice/VoiceInputPreference$4;->val$negativeOnClickListener:Landroid/content/DialogInterface$OnClickListener;
+    iget-object v0, p0, Lcom/android/settings_ext/voice/VoiceInputPreference$4;->val$negativeOnClickListener:Landroid/content/DialogInterface$OnClickListener;
 
     const/4 v1, -0x2
 

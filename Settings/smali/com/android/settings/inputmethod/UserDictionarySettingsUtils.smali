@@ -1,4 +1,4 @@
-.class public Lcom/android/settings/inputmethod/UserDictionarySettingsUtils;
+.class public Lcom/android/settings_ext/inputmethod/UserDictionarySettingsUtils;
 .super Ljava/lang/Object;
 .source "UserDictionarySettingsUtils.java"
 
@@ -44,7 +44,7 @@
 
     .line 37
     :cond_0
-    invoke-static {p1}, Lcom/android/settings/Utils;->createLocaleFromString(Ljava/lang/String;)Ljava/util/Locale;
+    invoke-static {p1}, Lcom/android/settings_ext/Utils;->createLocaleFromString(Ljava/lang/String;)Ljava/util/Locale;
 
     move-result-object v0
 

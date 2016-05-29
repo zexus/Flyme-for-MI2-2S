@@ -1,4 +1,4 @@
-.class final Lcom/android/settings/dashboard/DashboardTile$1;
+.class final Lcom/android/settings_ext/dashboard/DashboardTile$1;
 .super Ljava/lang/Object;
 .source "DashboardTile.java"
 
@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/android/settings/dashboard/DashboardTile;
+    value = Lcom/android/settings_ext/dashboard/DashboardTile;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -21,7 +21,7 @@
         "Ljava/lang/Object;",
         "Landroid/os/Parcelable$Creator",
         "<",
-        "Lcom/android/settings/dashboard/DashboardTile;",
+        "Lcom/android/settings_ext/dashboard/DashboardTile;",
         ">;"
     }
 .end annotation
@@ -40,15 +40,15 @@
 
 
 # virtual methods
-.method public createFromParcel(Landroid/os/Parcel;)Lcom/android/settings/dashboard/DashboardTile;
+.method public createFromParcel(Landroid/os/Parcel;)Lcom/android/settings_ext/dashboard/DashboardTile;
     .locals 1
     .param p1, "source"    # Landroid/os/Parcel;
 
     .prologue
     .line 171
-    new-instance v0, Lcom/android/settings/dashboard/DashboardTile;
+    new-instance v0, Lcom/android/settings_ext/dashboard/DashboardTile;
 
-    invoke-direct {v0, p1}, Lcom/android/settings/dashboard/DashboardTile;-><init>(Landroid/os/Parcel;)V
+    invoke-direct {v0, p1}, Lcom/android/settings_ext/dashboard/DashboardTile;-><init>(Landroid/os/Parcel;)V
 
     return-object v0
 .end method
@@ -59,20 +59,20 @@
 
     .prologue
     .line 169
-    invoke-virtual {p0, p1}, Lcom/android/settings/dashboard/DashboardTile$1;->createFromParcel(Landroid/os/Parcel;)Lcom/android/settings/dashboard/DashboardTile;
+    invoke-virtual {p0, p1}, Lcom/android/settings_ext/dashboard/DashboardTile$1;->createFromParcel(Landroid/os/Parcel;)Lcom/android/settings_ext/dashboard/DashboardTile;
 
     move-result-object v0
 
     return-object v0
 .end method
 
-.method public newArray(I)[Lcom/android/settings/dashboard/DashboardTile;
+.method public newArray(I)[Lcom/android/settings_ext/dashboard/DashboardTile;
     .locals 1
     .param p1, "size"    # I
 
     .prologue
     .line 174
-    new-array v0, p1, [Lcom/android/settings/dashboard/DashboardTile;
+    new-array v0, p1, [Lcom/android/settings_ext/dashboard/DashboardTile;
 
     return-object v0
 .end method
@@ -83,7 +83,7 @@
 
     .prologue
     .line 169
-    invoke-virtual {p0, p1}, Lcom/android/settings/dashboard/DashboardTile$1;->newArray(I)[Lcom/android/settings/dashboard/DashboardTile;
+    invoke-virtual {p0, p1}, Lcom/android/settings_ext/dashboard/DashboardTile$1;->newArray(I)[Lcom/android/settings_ext/dashboard/DashboardTile;
 
     move-result-object v0
 

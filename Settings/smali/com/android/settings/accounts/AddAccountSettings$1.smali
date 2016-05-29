@@ -1,4 +1,4 @@
-.class Lcom/android/settings/accounts/AddAccountSettings$1;
+.class Lcom/android/settings_ext/accounts/AddAccountSettings$1;
 .super Ljava/lang/Object;
 .source "AddAccountSettings.java"
 
@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/android/settings/accounts/AddAccountSettings;
+    value = Lcom/android/settings_ext/accounts/AddAccountSettings;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -28,16 +28,16 @@
 
 
 # instance fields
-.field final synthetic this$0:Lcom/android/settings/accounts/AddAccountSettings;
+.field final synthetic this$0:Lcom/android/settings_ext/accounts/AddAccountSettings;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/accounts/AddAccountSettings;)V
+.method constructor <init>(Lcom/android/settings_ext/accounts/AddAccountSettings;)V
     .locals 0
 
     .prologue
     .line 86
-    iput-object p1, p0, Lcom/android/settings/accounts/AddAccountSettings$1;->this$0:Lcom/android/settings/accounts/AddAccountSettings;
+    iput-object p1, p0, Lcom/android/settings_ext/accounts/AddAccountSettings$1;->this$0:Lcom/android/settings_ext/accounts/AddAccountSettings;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -98,10 +98,10 @@
     .local v0, "addAccountOptions":Landroid/os/Bundle;
     const-string v5, "pendingIntent"
 
-    iget-object v6, p0, Lcom/android/settings/accounts/AddAccountSettings$1;->this$0:Lcom/android/settings/accounts/AddAccountSettings;
+    iget-object v6, p0, Lcom/android/settings_ext/accounts/AddAccountSettings$1;->this$0:Lcom/android/settings_ext/accounts/AddAccountSettings;
 
-    # getter for: Lcom/android/settings/accounts/AddAccountSettings;->mPendingIntent:Landroid/app/PendingIntent;
-    invoke-static {v6}, Lcom/android/settings/accounts/AddAccountSettings;->access$000(Lcom/android/settings/accounts/AddAccountSettings;)Landroid/app/PendingIntent;
+    # getter for: Lcom/android/settings_ext/accounts/AddAccountSettings;->mPendingIntent:Landroid/app/PendingIntent;
+    invoke-static {v6}, Lcom/android/settings_ext/accounts/AddAccountSettings;->access$000(Lcom/android/settings_ext/accounts/AddAccountSettings;)Landroid/app/PendingIntent;
 
     move-result-object v6
 
@@ -110,9 +110,9 @@
     .line 98
     const-string v5, "hasMultipleUsers"
 
-    iget-object v6, p0, Lcom/android/settings/accounts/AddAccountSettings$1;->this$0:Lcom/android/settings/accounts/AddAccountSettings;
+    iget-object v6, p0, Lcom/android/settings_ext/accounts/AddAccountSettings$1;->this$0:Lcom/android/settings_ext/accounts/AddAccountSettings;
 
-    invoke-static {v6}, Lcom/android/settings/Utils;->hasMultipleUsers(Landroid/content/Context;)Z
+    invoke-static {v6}, Lcom/android/settings_ext/Utils;->hasMultipleUsers(Landroid/content/Context;)Z
 
     move-result v6
 
@@ -121,10 +121,10 @@
     .line 100
     const-string v5, "android.intent.extra.USER"
 
-    iget-object v6, p0, Lcom/android/settings/accounts/AddAccountSettings$1;->this$0:Lcom/android/settings/accounts/AddAccountSettings;
+    iget-object v6, p0, Lcom/android/settings_ext/accounts/AddAccountSettings$1;->this$0:Lcom/android/settings_ext/accounts/AddAccountSettings;
 
-    # getter for: Lcom/android/settings/accounts/AddAccountSettings;->mUserHandle:Landroid/os/UserHandle;
-    invoke-static {v6}, Lcom/android/settings/accounts/AddAccountSettings;->access$100(Lcom/android/settings/accounts/AddAccountSettings;)Landroid/os/UserHandle;
+    # getter for: Lcom/android/settings_ext/accounts/AddAccountSettings;->mUserHandle:Landroid/os/UserHandle;
+    invoke-static {v6}, Lcom/android/settings_ext/accounts/AddAccountSettings;->access$100(Lcom/android/settings_ext/accounts/AddAccountSettings;)Landroid/os/UserHandle;
 
     move-result-object v6
 
@@ -134,18 +134,18 @@
     invoke-virtual {v4, v0}, Landroid/content/Intent;->putExtras(Landroid/os/Bundle;)Landroid/content/Intent;
 
     .line 102
-    iget-object v5, p0, Lcom/android/settings/accounts/AddAccountSettings$1;->this$0:Lcom/android/settings/accounts/AddAccountSettings;
+    iget-object v5, p0, Lcom/android/settings_ext/accounts/AddAccountSettings$1;->this$0:Lcom/android/settings_ext/accounts/AddAccountSettings;
 
     const/4 v6, 0x2
 
-    iget-object v7, p0, Lcom/android/settings/accounts/AddAccountSettings$1;->this$0:Lcom/android/settings/accounts/AddAccountSettings;
+    iget-object v7, p0, Lcom/android/settings_ext/accounts/AddAccountSettings$1;->this$0:Lcom/android/settings_ext/accounts/AddAccountSettings;
 
-    # getter for: Lcom/android/settings/accounts/AddAccountSettings;->mUserHandle:Landroid/os/UserHandle;
-    invoke-static {v7}, Lcom/android/settings/accounts/AddAccountSettings;->access$100(Lcom/android/settings/accounts/AddAccountSettings;)Landroid/os/UserHandle;
+    # getter for: Lcom/android/settings_ext/accounts/AddAccountSettings;->mUserHandle:Landroid/os/UserHandle;
+    invoke-static {v7}, Lcom/android/settings_ext/accounts/AddAccountSettings;->access$100(Lcom/android/settings_ext/accounts/AddAccountSettings;)Landroid/os/UserHandle;
 
     move-result-object v7
 
-    invoke-virtual {v5, v4, v6, v7}, Lcom/android/settings/accounts/AddAccountSettings;->startActivityForResultAsUser(Landroid/content/Intent;ILandroid/os/UserHandle;)V
+    invoke-virtual {v5, v4, v6, v7}, Lcom/android/settings_ext/accounts/AddAccountSettings;->startActivityForResultAsUser(Landroid/content/Intent;ILandroid/os/UserHandle;)V
 
     .line 111
     .end local v0    # "addAccountOptions":Landroid/os/Bundle;
@@ -193,9 +193,9 @@
     if-eqz v2, :cond_2
 
     .line 120
-    iget-object v5, p0, Lcom/android/settings/accounts/AddAccountSettings$1;->this$0:Lcom/android/settings/accounts/AddAccountSettings;
+    iget-object v5, p0, Lcom/android/settings_ext/accounts/AddAccountSettings$1;->this$0:Lcom/android/settings_ext/accounts/AddAccountSettings;
 
-    invoke-virtual {v5}, Lcom/android/settings/accounts/AddAccountSettings;->finish()V
+    invoke-virtual {v5}, Lcom/android/settings_ext/accounts/AddAccountSettings;->finish()V
 
     .line 123
     .end local v1    # "bundle":Landroid/os/Bundle;
@@ -209,39 +209,39 @@
     .restart local v4    # "intent":Landroid/content/Intent;
     :cond_3
     :try_start_1
-    iget-object v5, p0, Lcom/android/settings/accounts/AddAccountSettings$1;->this$0:Lcom/android/settings/accounts/AddAccountSettings;
+    iget-object v5, p0, Lcom/android/settings_ext/accounts/AddAccountSettings$1;->this$0:Lcom/android/settings_ext/accounts/AddAccountSettings;
 
     const/4 v6, -0x1
 
-    invoke-virtual {v5, v6}, Lcom/android/settings/accounts/AddAccountSettings;->setResult(I)V
+    invoke-virtual {v5, v6}, Lcom/android/settings_ext/accounts/AddAccountSettings;->setResult(I)V
 
     .line 105
-    iget-object v5, p0, Lcom/android/settings/accounts/AddAccountSettings$1;->this$0:Lcom/android/settings/accounts/AddAccountSettings;
+    iget-object v5, p0, Lcom/android/settings_ext/accounts/AddAccountSettings$1;->this$0:Lcom/android/settings_ext/accounts/AddAccountSettings;
 
-    # getter for: Lcom/android/settings/accounts/AddAccountSettings;->mPendingIntent:Landroid/app/PendingIntent;
-    invoke-static {v5}, Lcom/android/settings/accounts/AddAccountSettings;->access$000(Lcom/android/settings/accounts/AddAccountSettings;)Landroid/app/PendingIntent;
+    # getter for: Lcom/android/settings_ext/accounts/AddAccountSettings;->mPendingIntent:Landroid/app/PendingIntent;
+    invoke-static {v5}, Lcom/android/settings_ext/accounts/AddAccountSettings;->access$000(Lcom/android/settings_ext/accounts/AddAccountSettings;)Landroid/app/PendingIntent;
 
     move-result-object v5
 
     if-eqz v5, :cond_0
 
     .line 106
-    iget-object v5, p0, Lcom/android/settings/accounts/AddAccountSettings$1;->this$0:Lcom/android/settings/accounts/AddAccountSettings;
+    iget-object v5, p0, Lcom/android/settings_ext/accounts/AddAccountSettings$1;->this$0:Lcom/android/settings_ext/accounts/AddAccountSettings;
 
-    # getter for: Lcom/android/settings/accounts/AddAccountSettings;->mPendingIntent:Landroid/app/PendingIntent;
-    invoke-static {v5}, Lcom/android/settings/accounts/AddAccountSettings;->access$000(Lcom/android/settings/accounts/AddAccountSettings;)Landroid/app/PendingIntent;
+    # getter for: Lcom/android/settings_ext/accounts/AddAccountSettings;->mPendingIntent:Landroid/app/PendingIntent;
+    invoke-static {v5}, Lcom/android/settings_ext/accounts/AddAccountSettings;->access$000(Lcom/android/settings_ext/accounts/AddAccountSettings;)Landroid/app/PendingIntent;
 
     move-result-object v5
 
     invoke-virtual {v5}, Landroid/app/PendingIntent;->cancel()V
 
     .line 107
-    iget-object v5, p0, Lcom/android/settings/accounts/AddAccountSettings$1;->this$0:Lcom/android/settings/accounts/AddAccountSettings;
+    iget-object v5, p0, Lcom/android/settings_ext/accounts/AddAccountSettings$1;->this$0:Lcom/android/settings_ext/accounts/AddAccountSettings;
 
     const/4 v6, 0x0
 
-    # setter for: Lcom/android/settings/accounts/AddAccountSettings;->mPendingIntent:Landroid/app/PendingIntent;
-    invoke-static {v5, v6}, Lcom/android/settings/accounts/AddAccountSettings;->access$002(Lcom/android/settings/accounts/AddAccountSettings;Landroid/app/PendingIntent;)Landroid/app/PendingIntent;
+    # setter for: Lcom/android/settings_ext/accounts/AddAccountSettings;->mPendingIntent:Landroid/app/PendingIntent;
+    invoke-static {v5, v6}, Lcom/android/settings_ext/accounts/AddAccountSettings;->access$002(Lcom/android/settings_ext/accounts/AddAccountSettings;Landroid/app/PendingIntent;)Landroid/app/PendingIntent;
     :try_end_1
     .catch Landroid/accounts/OperationCanceledException; {:try_start_1 .. :try_end_1} :catch_0
     .catch Ljava/io/IOException; {:try_start_1 .. :try_end_1} :catch_1
@@ -282,9 +282,9 @@
     if-eqz v2, :cond_2
 
     .line 120
-    iget-object v5, p0, Lcom/android/settings/accounts/AddAccountSettings$1;->this$0:Lcom/android/settings/accounts/AddAccountSettings;
+    iget-object v5, p0, Lcom/android/settings_ext/accounts/AddAccountSettings$1;->this$0:Lcom/android/settings_ext/accounts/AddAccountSettings;
 
-    invoke-virtual {v5}, Lcom/android/settings/accounts/AddAccountSettings;->finish()V
+    invoke-virtual {v5}, Lcom/android/settings_ext/accounts/AddAccountSettings;->finish()V
 
     goto :goto_1
 
@@ -335,9 +335,9 @@
     if-eqz v2, :cond_2
 
     .line 120
-    iget-object v5, p0, Lcom/android/settings/accounts/AddAccountSettings$1;->this$0:Lcom/android/settings/accounts/AddAccountSettings;
+    iget-object v5, p0, Lcom/android/settings_ext/accounts/AddAccountSettings$1;->this$0:Lcom/android/settings_ext/accounts/AddAccountSettings;
 
-    invoke-virtual {v5}, Lcom/android/settings/accounts/AddAccountSettings;->finish()V
+    invoke-virtual {v5}, Lcom/android/settings_ext/accounts/AddAccountSettings;->finish()V
 
     goto :goto_1
 
@@ -388,9 +388,9 @@
     if-eqz v2, :cond_2
 
     .line 120
-    iget-object v5, p0, Lcom/android/settings/accounts/AddAccountSettings$1;->this$0:Lcom/android/settings/accounts/AddAccountSettings;
+    iget-object v5, p0, Lcom/android/settings_ext/accounts/AddAccountSettings$1;->this$0:Lcom/android/settings_ext/accounts/AddAccountSettings;
 
-    invoke-virtual {v5}, Lcom/android/settings/accounts/AddAccountSettings;->finish()V
+    invoke-virtual {v5}, Lcom/android/settings_ext/accounts/AddAccountSettings;->finish()V
 
     goto/16 :goto_1
 
@@ -402,9 +402,9 @@
     if-eqz v2, :cond_7
 
     .line 120
-    iget-object v6, p0, Lcom/android/settings/accounts/AddAccountSettings$1;->this$0:Lcom/android/settings/accounts/AddAccountSettings;
+    iget-object v6, p0, Lcom/android/settings_ext/accounts/AddAccountSettings$1;->this$0:Lcom/android/settings_ext/accounts/AddAccountSettings;
 
-    invoke-virtual {v6}, Lcom/android/settings/accounts/AddAccountSettings;->finish()V
+    invoke-virtual {v6}, Lcom/android/settings_ext/accounts/AddAccountSettings;->finish()V
 
     :cond_7
     throw v5

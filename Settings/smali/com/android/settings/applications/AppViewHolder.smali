@@ -1,4 +1,4 @@
-.class public Lcom/android/settings/applications/AppViewHolder;
+.class public Lcom/android/settings_ext/applications/AppViewHolder;
 .super Ljava/lang/Object;
 .source "AppViewHolder.java"
 
@@ -14,7 +14,7 @@
 
 .field public disabled:Landroid/widget/TextView;
 
-.field public entry:Lcom/android/settings/applications/ApplicationsState$AppEntry;
+.field public entry:Lcom/android/settings_ext/applications/ApplicationsState$AppEntry;
 
 .field public rootView:Landroid/view/View;
 
@@ -30,7 +30,7 @@
     return-void
 .end method
 
-.method public static createOrRecycle(Landroid/view/LayoutInflater;Landroid/view/View;)Lcom/android/settings/applications/AppViewHolder;
+.method public static createOrRecycle(Landroid/view/LayoutInflater;Landroid/view/View;)Lcom/android/settings_ext/applications/AppViewHolder;
     .locals 3
     .param p0, "inflater"    # Landroid/view/LayoutInflater;
     .param p1, "convertView"    # Landroid/view/View;
@@ -49,13 +49,13 @@
     move-result-object p1
 
     .line 29
-    new-instance v0, Lcom/android/settings/applications/AppViewHolder;
+    new-instance v0, Lcom/android/settings_ext/applications/AppViewHolder;
 
-    invoke-direct {v0}, Lcom/android/settings/applications/AppViewHolder;-><init>()V
+    invoke-direct {v0}, Lcom/android/settings_ext/applications/AppViewHolder;-><init>()V
 
     .line 30
-    .local v0, "holder":Lcom/android/settings/applications/AppViewHolder;
-    iput-object p1, v0, Lcom/android/settings/applications/AppViewHolder;->rootView:Landroid/view/View;
+    .local v0, "holder":Lcom/android/settings_ext/applications/AppViewHolder;
+    iput-object p1, v0, Lcom/android/settings_ext/applications/AppViewHolder;->rootView:Landroid/view/View;
 
     .line 31
     const v1, 0x7f0f000d
@@ -66,7 +66,7 @@
 
     check-cast v1, Landroid/widget/TextView;
 
-    iput-object v1, v0, Lcom/android/settings/applications/AppViewHolder;->appName:Landroid/widget/TextView;
+    iput-object v1, v0, Lcom/android/settings_ext/applications/AppViewHolder;->appName:Landroid/widget/TextView;
 
     .line 32
     const v1, 0x7f0f000c
@@ -77,7 +77,7 @@
 
     check-cast v1, Landroid/widget/ImageView;
 
-    iput-object v1, v0, Lcom/android/settings/applications/AppViewHolder;->appIcon:Landroid/widget/ImageView;
+    iput-object v1, v0, Lcom/android/settings_ext/applications/AppViewHolder;->appIcon:Landroid/widget/ImageView;
 
     .line 33
     const v1, 0x7f0f00df
@@ -88,7 +88,7 @@
 
     check-cast v1, Landroid/widget/TextView;
 
-    iput-object v1, v0, Lcom/android/settings/applications/AppViewHolder;->appSize:Landroid/widget/TextView;
+    iput-object v1, v0, Lcom/android/settings_ext/applications/AppViewHolder;->appSize:Landroid/widget/TextView;
 
     .line 34
     const v1, 0x7f0f00e0
@@ -99,7 +99,7 @@
 
     check-cast v1, Landroid/widget/TextView;
 
-    iput-object v1, v0, Lcom/android/settings/applications/AppViewHolder;->disabled:Landroid/widget/TextView;
+    iput-object v1, v0, Lcom/android/settings_ext/applications/AppViewHolder;->disabled:Landroid/widget/TextView;
 
     .line 35
     const v1, 0x7f0f00de
@@ -110,13 +110,13 @@
 
     check-cast v1, Landroid/widget/CheckBox;
 
-    iput-object v1, v0, Lcom/android/settings/applications/AppViewHolder;->checkBox:Landroid/widget/CheckBox;
+    iput-object v1, v0, Lcom/android/settings_ext/applications/AppViewHolder;->checkBox:Landroid/widget/CheckBox;
 
     .line 36
     invoke-virtual {p1, v0}, Landroid/view/View;->setTag(Ljava/lang/Object;)V
 
     .line 41
-    .end local v0    # "holder":Lcom/android/settings/applications/AppViewHolder;
+    .end local v0    # "holder":Lcom/android/settings_ext/applications/AppViewHolder;
     :goto_0
     return-object v0
 
@@ -125,7 +125,7 @@
 
     move-result-object v1
 
-    check-cast v1, Lcom/android/settings/applications/AppViewHolder;
+    check-cast v1, Lcom/android/settings_ext/applications/AppViewHolder;
 
     move-object v0, v1
 
@@ -141,9 +141,9 @@
 
     .prologue
     .line 48
-    iget-object v0, p0, Lcom/android/settings/applications/AppViewHolder;->entry:Lcom/android/settings/applications/ApplicationsState$AppEntry;
+    iget-object v0, p0, Lcom/android/settings_ext/applications/AppViewHolder;->entry:Lcom/android/settings_ext/applications/ApplicationsState$AppEntry;
 
-    iget-object v0, v0, Lcom/android/settings/applications/ApplicationsState$AppEntry;->sizeStr:Ljava/lang/String;
+    iget-object v0, v0, Lcom/android/settings_ext/applications/ApplicationsState$AppEntry;->sizeStr:Ljava/lang/String;
 
     if-eqz v0, :cond_1
 
@@ -151,11 +151,11 @@
     packed-switch p2, :pswitch_data_0
 
     .line 57
-    iget-object v0, p0, Lcom/android/settings/applications/AppViewHolder;->appSize:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/android/settings_ext/applications/AppViewHolder;->appSize:Landroid/widget/TextView;
 
-    iget-object v1, p0, Lcom/android/settings/applications/AppViewHolder;->entry:Lcom/android/settings/applications/ApplicationsState$AppEntry;
+    iget-object v1, p0, Lcom/android/settings_ext/applications/AppViewHolder;->entry:Lcom/android/settings_ext/applications/ApplicationsState$AppEntry;
 
-    iget-object v1, v1, Lcom/android/settings/applications/ApplicationsState$AppEntry;->sizeStr:Ljava/lang/String;
+    iget-object v1, v1, Lcom/android/settings_ext/applications/ApplicationsState$AppEntry;->sizeStr:Ljava/lang/String;
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
@@ -166,11 +166,11 @@
 
     .line 51
     :pswitch_0
-    iget-object v0, p0, Lcom/android/settings/applications/AppViewHolder;->appSize:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/android/settings_ext/applications/AppViewHolder;->appSize:Landroid/widget/TextView;
 
-    iget-object v1, p0, Lcom/android/settings/applications/AppViewHolder;->entry:Lcom/android/settings/applications/ApplicationsState$AppEntry;
+    iget-object v1, p0, Lcom/android/settings_ext/applications/AppViewHolder;->entry:Lcom/android/settings_ext/applications/ApplicationsState$AppEntry;
 
-    iget-object v1, v1, Lcom/android/settings/applications/ApplicationsState$AppEntry;->internalSizeStr:Ljava/lang/String;
+    iget-object v1, v1, Lcom/android/settings_ext/applications/ApplicationsState$AppEntry;->internalSizeStr:Ljava/lang/String;
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
@@ -178,11 +178,11 @@
 
     .line 54
     :pswitch_1
-    iget-object v0, p0, Lcom/android/settings/applications/AppViewHolder;->appSize:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/android/settings_ext/applications/AppViewHolder;->appSize:Landroid/widget/TextView;
 
-    iget-object v1, p0, Lcom/android/settings/applications/AppViewHolder;->entry:Lcom/android/settings/applications/ApplicationsState$AppEntry;
+    iget-object v1, p0, Lcom/android/settings_ext/applications/AppViewHolder;->entry:Lcom/android/settings_ext/applications/ApplicationsState$AppEntry;
 
-    iget-object v1, v1, Lcom/android/settings/applications/ApplicationsState$AppEntry;->externalSizeStr:Ljava/lang/String;
+    iget-object v1, v1, Lcom/android/settings_ext/applications/ApplicationsState$AppEntry;->externalSizeStr:Ljava/lang/String;
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
@@ -190,9 +190,9 @@
 
     .line 60
     :cond_1
-    iget-object v0, p0, Lcom/android/settings/applications/AppViewHolder;->entry:Lcom/android/settings/applications/ApplicationsState$AppEntry;
+    iget-object v0, p0, Lcom/android/settings_ext/applications/AppViewHolder;->entry:Lcom/android/settings_ext/applications/ApplicationsState$AppEntry;
 
-    iget-wide v0, v0, Lcom/android/settings/applications/ApplicationsState$AppEntry;->size:J
+    iget-wide v0, v0, Lcom/android/settings_ext/applications/ApplicationsState$AppEntry;->size:J
 
     const-wide/16 v2, -0x2
 
@@ -201,7 +201,7 @@
     if-nez v0, :cond_0
 
     .line 61
-    iget-object v0, p0, Lcom/android/settings/applications/AppViewHolder;->appSize:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/android/settings_ext/applications/AppViewHolder;->appSize:Landroid/widget/TextView;
 
     invoke-virtual {v0, p1}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 

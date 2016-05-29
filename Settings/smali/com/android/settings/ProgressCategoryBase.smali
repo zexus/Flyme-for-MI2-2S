@@ -1,4 +1,4 @@
-.class public abstract Lcom/android/settings/ProgressCategoryBase;
+.class public abstract Lcom/android/settings_ext/ProgressCategoryBase;
 .super Landroid/preference/PreferenceCategory;
 .source "ProgressCategoryBase.java"
 
@@ -12,7 +12,7 @@
     .line 25
     const/4 v0, 0x0
 
-    invoke-direct {p0, p1, v0}, Lcom/android/settings/ProgressCategoryBase;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
+    invoke-direct {p0, p1, v0}, Lcom/android/settings_ext/ProgressCategoryBase;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
     .line 26
     return-void
@@ -27,7 +27,7 @@
     .line 29
     const/4 v0, 0x0
 
-    invoke-direct {p0, p1, p2, v0}, Lcom/android/settings/ProgressCategoryBase;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
+    invoke-direct {p0, p1, p2, v0}, Lcom/android/settings_ext/ProgressCategoryBase;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
 
     .line 30
     return-void

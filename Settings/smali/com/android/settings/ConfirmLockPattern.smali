@@ -1,15 +1,15 @@
-.class public Lcom/android/settings/ConfirmLockPattern;
-.super Lcom/android/settings/SettingsActivity;
+.class public Lcom/android/settings_ext/ConfirmLockPattern;
+.super Lcom/android/settings_ext/SettingsActivity;
 .source "ConfirmLockPattern.java"
 
 
 # annotations
 .annotation system Ldalvik/annotation/MemberClasses;
     value = {
-        Lcom/android/settings/ConfirmLockPattern$1;,
-        Lcom/android/settings/ConfirmLockPattern$ConfirmLockPatternFragment;,
-        Lcom/android/settings/ConfirmLockPattern$Stage;,
-        Lcom/android/settings/ConfirmLockPattern$InternalActivity;
+        Lcom/android/settings_ext/ConfirmLockPattern$1;,
+        Lcom/android/settings_ext/ConfirmLockPattern$ConfirmLockPatternFragment;,
+        Lcom/android/settings_ext/ConfirmLockPattern$Stage;,
+        Lcom/android/settings_ext/ConfirmLockPattern$InternalActivity;
     }
 .end annotation
 
@@ -20,7 +20,7 @@
 
     .prologue
     .line 44
-    invoke-direct {p0}, Lcom/android/settings/SettingsActivity;-><init>()V
+    invoke-direct {p0}, Lcom/android/settings_ext/SettingsActivity;-><init>()V
 
     .line 87
     return-void
@@ -35,7 +35,7 @@
     .line 76
     new-instance v0, Landroid/content/Intent;
 
-    invoke-super {p0}, Lcom/android/settings/SettingsActivity;->getIntent()Landroid/content/Intent;
+    invoke-super {p0}, Lcom/android/settings_ext/SettingsActivity;->getIntent()Landroid/content/Intent;
 
     move-result-object v1
 
@@ -45,7 +45,7 @@
     .local v0, "modIntent":Landroid/content/Intent;
     const-string v1, ":settings:show_fragment"
 
-    const-class v2, Lcom/android/settings/ConfirmLockPattern$ConfirmLockPatternFragment;
+    const-class v2, Lcom/android/settings_ext/ConfirmLockPattern$ConfirmLockPatternFragment;
 
     invoke-virtual {v2}, Ljava/lang/Class;->getName()Ljava/lang/String;
 
@@ -63,7 +63,7 @@
 
     .prologue
     .line 83
-    const-class v0, Lcom/android/settings/ConfirmLockPattern$ConfirmLockPatternFragment;
+    const-class v0, Lcom/android/settings_ext/ConfirmLockPattern$ConfirmLockPatternFragment;
 
     invoke-virtual {v0}, Ljava/lang/Class;->getName()Ljava/lang/String;
 
@@ -93,18 +93,18 @@
 
     .prologue
     .line 69
-    invoke-super {p0, p1}, Lcom/android/settings/SettingsActivity;->onCreate(Landroid/os/Bundle;)V
+    invoke-super {p0, p1}, Lcom/android/settings_ext/SettingsActivity;->onCreate(Landroid/os/Bundle;)V
 
     .line 70
     const v1, 0x7f09047d
 
-    invoke-virtual {p0, v1}, Lcom/android/settings/ConfirmLockPattern;->getText(I)Ljava/lang/CharSequence;
+    invoke-virtual {p0, v1}, Lcom/android/settings_ext/ConfirmLockPattern;->getText(I)Ljava/lang/CharSequence;
 
     move-result-object v0
 
     .line 71
     .local v0, "msg":Ljava/lang/CharSequence;
-    invoke-virtual {p0, v0}, Lcom/android/settings/ConfirmLockPattern;->setTitle(Ljava/lang/CharSequence;)V
+    invoke-virtual {p0, v0}, Lcom/android/settings_ext/ConfirmLockPattern;->setTitle(Ljava/lang/CharSequence;)V
 
     .line 72
     return-void

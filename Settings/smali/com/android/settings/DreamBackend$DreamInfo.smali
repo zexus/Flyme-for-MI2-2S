@@ -1,11 +1,11 @@
-.class public Lcom/android/settings/DreamBackend$DreamInfo;
+.class public Lcom/android/settings_ext/DreamBackend$DreamInfo;
 .super Ljava/lang/Object;
 .source "DreamBackend.java"
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/android/settings/DreamBackend;
+    value = Lcom/android/settings_ext/DreamBackend;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -46,7 +46,7 @@
     .line 64
     new-instance v0, Ljava/lang/StringBuilder;
 
-    const-class v1, Lcom/android/settings/DreamBackend$DreamInfo;
+    const-class v1, Lcom/android/settings_ext/DreamBackend$DreamInfo;
 
     invoke-virtual {v1}, Ljava/lang/Class;->getSimpleName()Ljava/lang/String;
 
@@ -62,12 +62,12 @@
 
     move-result-object v1
 
-    iget-object v2, p0, Lcom/android/settings/DreamBackend$DreamInfo;->caption:Ljava/lang/CharSequence;
+    iget-object v2, p0, Lcom/android/settings_ext/DreamBackend$DreamInfo;->caption:Ljava/lang/CharSequence;
 
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/CharSequence;)Ljava/lang/StringBuilder;
 
     .line 66
-    iget-boolean v1, p0, Lcom/android/settings/DreamBackend$DreamInfo;->isActive:Z
+    iget-boolean v1, p0, Lcom/android/settings_ext/DreamBackend$DreamInfo;->isActive:Z
 
     if-eqz v1, :cond_0
 
@@ -84,12 +84,12 @@
 
     move-result-object v1
 
-    iget-object v2, p0, Lcom/android/settings/DreamBackend$DreamInfo;->componentName:Landroid/content/ComponentName;
+    iget-object v2, p0, Lcom/android/settings_ext/DreamBackend$DreamInfo;->componentName:Landroid/content/ComponentName;
 
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
     .line 69
-    iget-object v1, p0, Lcom/android/settings/DreamBackend$DreamInfo;->settingsComponentName:Landroid/content/ComponentName;
+    iget-object v1, p0, Lcom/android/settings_ext/DreamBackend$DreamInfo;->settingsComponentName:Landroid/content/ComponentName;
 
     if-eqz v1, :cond_1
 
@@ -100,7 +100,7 @@
 
     move-result-object v1
 
-    iget-object v2, p0, Lcom/android/settings/DreamBackend$DreamInfo;->settingsComponentName:Landroid/content/ComponentName;
+    iget-object v2, p0, Lcom/android/settings_ext/DreamBackend$DreamInfo;->settingsComponentName:Landroid/content/ComponentName;
 
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 

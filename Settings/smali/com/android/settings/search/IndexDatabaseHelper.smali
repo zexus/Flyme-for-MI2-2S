@@ -1,4 +1,4 @@
-.class public Lcom/android/settings/search/IndexDatabaseHelper;
+.class public Lcom/android/settings_ext/search/IndexDatabaseHelper;
 .super Landroid/database/sqlite/SQLiteOpenHelper;
 .source "IndexDatabaseHelper.java"
 
@@ -6,7 +6,7 @@
 # static fields
 .field private static final INSERT_BUILD_VERSION:Ljava/lang/String;
 
-.field private static sSingleton:Lcom/android/settings/search/IndexDatabaseHelper;
+.field private static sSingleton:Lcom/android/settings_ext/search/IndexDatabaseHelper;
 
 
 # direct methods
@@ -41,7 +41,7 @@
 
     move-result-object v0
 
-    sput-object v0, Lcom/android/settings/search/IndexDatabaseHelper;->INSERT_BUILD_VERSION:Ljava/lang/String;
+    sput-object v0, Lcom/android/settings_ext/search/IndexDatabaseHelper;->INSERT_BUILD_VERSION:Ljava/lang/String;
 
     return-void
 .end method
@@ -85,7 +85,7 @@
     invoke-virtual {p1, v0}, Landroid/database/sqlite/SQLiteDatabase;->execSQL(Ljava/lang/String;)V
 
     .line 156
-    sget-object v0, Lcom/android/settings/search/IndexDatabaseHelper;->INSERT_BUILD_VERSION:Ljava/lang/String;
+    sget-object v0, Lcom/android/settings_ext/search/IndexDatabaseHelper;->INSERT_BUILD_VERSION:Ljava/lang/String;
 
     invoke-virtual {p1, v0}, Landroid/database/sqlite/SQLiteDatabase;->execSQL(Ljava/lang/String;)V
 
@@ -213,31 +213,31 @@
     throw v3
 .end method
 
-.method public static declared-synchronized getInstance(Landroid/content/Context;)Lcom/android/settings/search/IndexDatabaseHelper;
+.method public static declared-synchronized getInstance(Landroid/content/Context;)Lcom/android/settings_ext/search/IndexDatabaseHelper;
     .locals 2
     .param p0, "context"    # Landroid/content/Context;
 
     .prologue
     .line 137
-    const-class v1, Lcom/android/settings/search/IndexDatabaseHelper;
+    const-class v1, Lcom/android/settings_ext/search/IndexDatabaseHelper;
 
     monitor-enter v1
 
     :try_start_0
-    sget-object v0, Lcom/android/settings/search/IndexDatabaseHelper;->sSingleton:Lcom/android/settings/search/IndexDatabaseHelper;
+    sget-object v0, Lcom/android/settings_ext/search/IndexDatabaseHelper;->sSingleton:Lcom/android/settings_ext/search/IndexDatabaseHelper;
 
     if-nez v0, :cond_0
 
     .line 138
-    new-instance v0, Lcom/android/settings/search/IndexDatabaseHelper;
+    new-instance v0, Lcom/android/settings_ext/search/IndexDatabaseHelper;
 
-    invoke-direct {v0, p0}, Lcom/android/settings/search/IndexDatabaseHelper;-><init>(Landroid/content/Context;)V
+    invoke-direct {v0, p0}, Lcom/android/settings_ext/search/IndexDatabaseHelper;-><init>(Landroid/content/Context;)V
 
-    sput-object v0, Lcom/android/settings/search/IndexDatabaseHelper;->sSingleton:Lcom/android/settings/search/IndexDatabaseHelper;
+    sput-object v0, Lcom/android/settings_ext/search/IndexDatabaseHelper;->sSingleton:Lcom/android/settings_ext/search/IndexDatabaseHelper;
 
     .line 140
     :cond_0
-    sget-object v0, Lcom/android/settings/search/IndexDatabaseHelper;->sSingleton:Lcom/android/settings/search/IndexDatabaseHelper;
+    sget-object v0, Lcom/android/settings_ext/search/IndexDatabaseHelper;->sSingleton:Lcom/android/settings_ext/search/IndexDatabaseHelper;
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
@@ -260,10 +260,10 @@
 
     .prologue
     .line 194
-    invoke-direct {p0, p1}, Lcom/android/settings/search/IndexDatabaseHelper;->dropTables(Landroid/database/sqlite/SQLiteDatabase;)V
+    invoke-direct {p0, p1}, Lcom/android/settings_ext/search/IndexDatabaseHelper;->dropTables(Landroid/database/sqlite/SQLiteDatabase;)V
 
     .line 195
-    invoke-direct {p0, p1}, Lcom/android/settings/search/IndexDatabaseHelper;->bootstrapDB(Landroid/database/sqlite/SQLiteDatabase;)V
+    invoke-direct {p0, p1}, Lcom/android/settings_ext/search/IndexDatabaseHelper;->bootstrapDB(Landroid/database/sqlite/SQLiteDatabase;)V
 
     .line 196
     return-void
@@ -277,7 +277,7 @@
 
     .prologue
     .line 149
-    invoke-direct {p0, p1}, Lcom/android/settings/search/IndexDatabaseHelper;->bootstrapDB(Landroid/database/sqlite/SQLiteDatabase;)V
+    invoke-direct {p0, p1}, Lcom/android/settings_ext/search/IndexDatabaseHelper;->bootstrapDB(Landroid/database/sqlite/SQLiteDatabase;)V
 
     .line 150
     return-void
@@ -336,7 +336,7 @@
     invoke-static {v0, v1}, Landroid/util/Log;->w(Ljava/lang/String;Ljava/lang/String;)I
 
     .line 190
-    invoke-direct {p0, p1}, Lcom/android/settings/search/IndexDatabaseHelper;->reconstruct(Landroid/database/sqlite/SQLiteDatabase;)V
+    invoke-direct {p0, p1}, Lcom/android/settings_ext/search/IndexDatabaseHelper;->reconstruct(Landroid/database/sqlite/SQLiteDatabase;)V
 
     .line 191
     return-void
@@ -380,7 +380,7 @@
     .line 166
     sget-object v0, Landroid/os/Build$VERSION;->INCREMENTAL:Ljava/lang/String;
 
-    invoke-direct {p0, p1}, Lcom/android/settings/search/IndexDatabaseHelper;->getBuildVersion(Landroid/database/sqlite/SQLiteDatabase;)Ljava/lang/String;
+    invoke-direct {p0, p1}, Lcom/android/settings_ext/search/IndexDatabaseHelper;->getBuildVersion(Landroid/database/sqlite/SQLiteDatabase;)Ljava/lang/String;
 
     move-result-object v1
 
@@ -398,7 +398,7 @@
     invoke-static {v0, v1}, Landroid/util/Log;->w(Ljava/lang/String;Ljava/lang/String;)I
 
     .line 169
-    invoke-direct {p0, p1}, Lcom/android/settings/search/IndexDatabaseHelper;->reconstruct(Landroid/database/sqlite/SQLiteDatabase;)V
+    invoke-direct {p0, p1}, Lcom/android/settings_ext/search/IndexDatabaseHelper;->reconstruct(Landroid/database/sqlite/SQLiteDatabase;)V
 
     .line 173
     :goto_0
@@ -473,7 +473,7 @@
     invoke-static {v0, v1}, Landroid/util/Log;->w(Ljava/lang/String;Ljava/lang/String;)I
 
     .line 181
-    invoke-direct {p0, p1}, Lcom/android/settings/search/IndexDatabaseHelper;->reconstruct(Landroid/database/sqlite/SQLiteDatabase;)V
+    invoke-direct {p0, p1}, Lcom/android/settings_ext/search/IndexDatabaseHelper;->reconstruct(Landroid/database/sqlite/SQLiteDatabase;)V
 
     .line 183
     :cond_0

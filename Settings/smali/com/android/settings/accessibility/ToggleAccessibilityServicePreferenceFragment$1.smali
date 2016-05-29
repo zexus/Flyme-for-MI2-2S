@@ -1,11 +1,11 @@
-.class Lcom/android/settings/accessibility/ToggleAccessibilityServicePreferenceFragment$1;
-.super Lcom/android/settings/accessibility/SettingsContentObserver;
+.class Lcom/android/settings_ext/accessibility/ToggleAccessibilityServicePreferenceFragment$1;
+.super Lcom/android/settings_ext/accessibility/SettingsContentObserver;
 .source "ToggleAccessibilityServicePreferenceFragment.java"
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/android/settings/accessibility/ToggleAccessibilityServicePreferenceFragment;
+    value = Lcom/android/settings_ext/accessibility/ToggleAccessibilityServicePreferenceFragment;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -15,19 +15,19 @@
 
 
 # instance fields
-.field final synthetic this$0:Lcom/android/settings/accessibility/ToggleAccessibilityServicePreferenceFragment;
+.field final synthetic this$0:Lcom/android/settings_ext/accessibility/ToggleAccessibilityServicePreferenceFragment;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/accessibility/ToggleAccessibilityServicePreferenceFragment;Landroid/os/Handler;)V
+.method constructor <init>(Lcom/android/settings_ext/accessibility/ToggleAccessibilityServicePreferenceFragment;Landroid/os/Handler;)V
     .locals 0
     .param p2, "x0"    # Landroid/os/Handler;
 
     .prologue
     .line 63
-    iput-object p1, p0, Lcom/android/settings/accessibility/ToggleAccessibilityServicePreferenceFragment$1;->this$0:Lcom/android/settings/accessibility/ToggleAccessibilityServicePreferenceFragment;
+    iput-object p1, p0, Lcom/android/settings_ext/accessibility/ToggleAccessibilityServicePreferenceFragment$1;->this$0:Lcom/android/settings_ext/accessibility/ToggleAccessibilityServicePreferenceFragment;
 
-    invoke-direct {p0, p2}, Lcom/android/settings/accessibility/SettingsContentObserver;-><init>(Landroid/os/Handler;)V
+    invoke-direct {p0, p2}, Lcom/android/settings_ext/accessibility/SettingsContentObserver;-><init>(Landroid/os/Handler;)V
 
     return-void
 .end method
@@ -41,10 +41,10 @@
 
     .prologue
     .line 66
-    iget-object v0, p0, Lcom/android/settings/accessibility/ToggleAccessibilityServicePreferenceFragment$1;->this$0:Lcom/android/settings/accessibility/ToggleAccessibilityServicePreferenceFragment;
+    iget-object v0, p0, Lcom/android/settings_ext/accessibility/ToggleAccessibilityServicePreferenceFragment$1;->this$0:Lcom/android/settings_ext/accessibility/ToggleAccessibilityServicePreferenceFragment;
 
-    # invokes: Lcom/android/settings/accessibility/ToggleAccessibilityServicePreferenceFragment;->updateSwitchBarToggleSwitch()V
-    invoke-static {v0}, Lcom/android/settings/accessibility/ToggleAccessibilityServicePreferenceFragment;->access$000(Lcom/android/settings/accessibility/ToggleAccessibilityServicePreferenceFragment;)V
+    # invokes: Lcom/android/settings_ext/accessibility/ToggleAccessibilityServicePreferenceFragment;->updateSwitchBarToggleSwitch()V
+    invoke-static {v0}, Lcom/android/settings_ext/accessibility/ToggleAccessibilityServicePreferenceFragment;->access$000(Lcom/android/settings_ext/accessibility/ToggleAccessibilityServicePreferenceFragment;)V
 
     .line 67
     return-void

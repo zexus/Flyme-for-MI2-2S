@@ -1,4 +1,4 @@
-.class public final Lcom/android/settings/nfc/PaymentDefaultDialog;
+.class public final Lcom/android/settings_ext/nfc/PaymentDefaultDialog;
 .super Lcom/android/internal/app/AlertActivity;
 .source "PaymentDefaultDialog.java"
 
@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field private mBackend:Lcom/android/settings/nfc/PaymentBackend;
+.field private mBackend:Lcom/android/settings_ext/nfc/PaymentBackend;
 
 .field private mNewDefault:Landroid/content/ComponentName;
 
@@ -90,19 +90,19 @@
     const/4 v6, 0x0
 
     .line 83
-    .local v6, "requestedPaymentApp":Lcom/android/settings/nfc/PaymentBackend$PaymentAppInfo;
+    .local v6, "requestedPaymentApp":Lcom/android/settings_ext/nfc/PaymentBackend$PaymentAppInfo;
     const/4 v1, 0x0
 
     .line 85
-    .local v1, "defaultPaymentApp":Lcom/android/settings/nfc/PaymentBackend$PaymentAppInfo;
-    iget-object v11, p0, Lcom/android/settings/nfc/PaymentDefaultDialog;->mBackend:Lcom/android/settings/nfc/PaymentBackend;
+    .local v1, "defaultPaymentApp":Lcom/android/settings_ext/nfc/PaymentBackend$PaymentAppInfo;
+    iget-object v11, p0, Lcom/android/settings_ext/nfc/PaymentDefaultDialog;->mBackend:Lcom/android/settings_ext/nfc/PaymentBackend;
 
-    invoke-virtual {v11}, Lcom/android/settings/nfc/PaymentBackend;->getPaymentAppInfos()Ljava/util/List;
+    invoke-virtual {v11}, Lcom/android/settings_ext/nfc/PaymentBackend;->getPaymentAppInfos()Ljava/util/List;
 
     move-result-object v8
 
     .line 86
-    .local v8, "services":Ljava/util/List;, "Ljava/util/List<Lcom/android/settings/nfc/PaymentBackend$PaymentAppInfo;>;"
+    .local v8, "services":Ljava/util/List;, "Ljava/util/List<Lcom/android/settings_ext/nfc/PaymentBackend$PaymentAppInfo;>;"
     invoke-interface {v8}, Ljava/util/List;->iterator()Ljava/util/Iterator;
 
     move-result-object v3
@@ -120,11 +120,11 @@
 
     move-result-object v7
 
-    check-cast v7, Lcom/android/settings/nfc/PaymentBackend$PaymentAppInfo;
+    check-cast v7, Lcom/android/settings_ext/nfc/PaymentBackend$PaymentAppInfo;
 
     .line 87
-    .local v7, "service":Lcom/android/settings/nfc/PaymentBackend$PaymentAppInfo;
-    iget-object v11, v7, Lcom/android/settings/nfc/PaymentBackend$PaymentAppInfo;->componentName:Landroid/content/ComponentName;
+    .local v7, "service":Lcom/android/settings_ext/nfc/PaymentBackend$PaymentAppInfo;
+    iget-object v11, v7, Lcom/android/settings_ext/nfc/PaymentBackend$PaymentAppInfo;->componentName:Landroid/content/ComponentName;
 
     invoke-virtual {p1, v11}, Landroid/content/ComponentName;->equals(Ljava/lang/Object;)Z
 
@@ -137,7 +137,7 @@
 
     .line 90
     :cond_4
-    iget-boolean v11, v7, Lcom/android/settings/nfc/PaymentBackend$PaymentAppInfo;->isDefault:Z
+    iget-boolean v11, v7, Lcom/android/settings_ext/nfc/PaymentBackend$PaymentAppInfo;->isDefault:Z
 
     if-eqz v11, :cond_3
 
@@ -147,7 +147,7 @@
     goto :goto_1
 
     .line 95
-    .end local v7    # "service":Lcom/android/settings/nfc/PaymentBackend$PaymentAppInfo;
+    .end local v7    # "service":Lcom/android/settings_ext/nfc/PaymentBackend$PaymentAppInfo;
     :cond_5
     if-nez v6, :cond_6
 
@@ -184,9 +184,9 @@
 
     .line 101
     :cond_6
-    iget-object v11, p0, Lcom/android/settings/nfc/PaymentDefaultDialog;->mBackend:Lcom/android/settings/nfc/PaymentBackend;
+    iget-object v11, p0, Lcom/android/settings_ext/nfc/PaymentDefaultDialog;->mBackend:Lcom/android/settings_ext/nfc/PaymentBackend;
 
-    invoke-virtual {v11}, Lcom/android/settings/nfc/PaymentBackend;->getDefaultPaymentApp()Landroid/content/ComponentName;
+    invoke-virtual {v11}, Lcom/android/settings_ext/nfc/PaymentBackend;->getDefaultPaymentApp()Landroid/content/ComponentName;
 
     move-result-object v0
 
@@ -233,16 +233,16 @@
 
     .line 107
     :cond_7
-    iput-object p1, p0, Lcom/android/settings/nfc/PaymentDefaultDialog;->mNewDefault:Landroid/content/ComponentName;
+    iput-object p1, p0, Lcom/android/settings_ext/nfc/PaymentDefaultDialog;->mNewDefault:Landroid/content/ComponentName;
 
     .line 109
-    iget-object v5, p0, Lcom/android/settings/nfc/PaymentDefaultDialog;->mAlertParams:Lcom/android/internal/app/AlertController$AlertParams;
+    iget-object v5, p0, Lcom/android/settings_ext/nfc/PaymentDefaultDialog;->mAlertParams:Lcom/android/internal/app/AlertController$AlertParams;
 
     .line 110
     .local v5, "p":Lcom/android/internal/app/AlertController$AlertParams;
     const v11, 0x7f0908cc
 
-    invoke-virtual {p0, v11}, Lcom/android/settings/nfc/PaymentDefaultDialog;->getString(I)Ljava/lang/String;
+    invoke-virtual {p0, v11}, Lcom/android/settings_ext/nfc/PaymentDefaultDialog;->getString(I)Ljava/lang/String;
 
     move-result-object v11
 
@@ -254,7 +254,7 @@
     .line 112
     const v11, 0x7f0908cd
 
-    invoke-virtual {p0, v11}, Lcom/android/settings/nfc/PaymentDefaultDialog;->getString(I)Ljava/lang/String;
+    invoke-virtual {p0, v11}, Lcom/android/settings_ext/nfc/PaymentDefaultDialog;->getString(I)Ljava/lang/String;
 
     move-result-object v2
 
@@ -262,13 +262,13 @@
     .local v2, "formatString":Ljava/lang/String;
     new-array v11, v10, [Ljava/lang/Object;
 
-    iget-object v12, v6, Lcom/android/settings/nfc/PaymentBackend$PaymentAppInfo;->caption:Ljava/lang/CharSequence;
+    iget-object v12, v6, Lcom/android/settings_ext/nfc/PaymentBackend$PaymentAppInfo;->caption:Ljava/lang/CharSequence;
 
     invoke-interface {v12}, Ljava/lang/CharSequence;->toString()Ljava/lang/String;
 
     move-result-object v12
 
-    invoke-direct {p0, v12}, Lcom/android/settings/nfc/PaymentDefaultDialog;->sanitizePaymentAppCaption(Ljava/lang/String;)Ljava/lang/String;
+    invoke-direct {p0, v12}, Lcom/android/settings_ext/nfc/PaymentDefaultDialog;->sanitizePaymentAppCaption(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v12
 
@@ -286,7 +286,7 @@
     :goto_2
     const v9, 0x7f090008
 
-    invoke-virtual {p0, v9}, Lcom/android/settings/nfc/PaymentDefaultDialog;->getString(I)Ljava/lang/String;
+    invoke-virtual {p0, v9}, Lcom/android/settings_ext/nfc/PaymentDefaultDialog;->getString(I)Ljava/lang/String;
 
     move-result-object v9
 
@@ -295,7 +295,7 @@
     .line 124
     const v9, 0x7f090009
 
-    invoke-virtual {p0, v9}, Lcom/android/settings/nfc/PaymentDefaultDialog;->getString(I)Ljava/lang/String;
+    invoke-virtual {p0, v9}, Lcom/android/settings_ext/nfc/PaymentDefaultDialog;->getString(I)Ljava/lang/String;
 
     move-result-object v9
 
@@ -308,7 +308,7 @@
     iput-object p0, v5, Lcom/android/internal/app/AlertController$AlertParams;->mNegativeButtonListener:Landroid/content/DialogInterface$OnClickListener;
 
     .line 127
-    invoke-virtual {p0}, Lcom/android/settings/nfc/PaymentDefaultDialog;->setupAlert()V
+    invoke-virtual {p0}, Lcom/android/settings_ext/nfc/PaymentDefaultDialog;->setupAlert()V
 
     move v9, v10
 
@@ -321,7 +321,7 @@
     :cond_8
     const v11, 0x7f0908ce
 
-    invoke-virtual {p0, v11}, Lcom/android/settings/nfc/PaymentDefaultDialog;->getString(I)Ljava/lang/String;
+    invoke-virtual {p0, v11}, Lcom/android/settings_ext/nfc/PaymentDefaultDialog;->getString(I)Ljava/lang/String;
 
     move-result-object v2
 
@@ -331,25 +331,25 @@
 
     new-array v11, v11, [Ljava/lang/Object;
 
-    iget-object v12, v6, Lcom/android/settings/nfc/PaymentBackend$PaymentAppInfo;->caption:Ljava/lang/CharSequence;
+    iget-object v12, v6, Lcom/android/settings_ext/nfc/PaymentBackend$PaymentAppInfo;->caption:Ljava/lang/CharSequence;
 
     invoke-interface {v12}, Ljava/lang/CharSequence;->toString()Ljava/lang/String;
 
     move-result-object v12
 
-    invoke-direct {p0, v12}, Lcom/android/settings/nfc/PaymentDefaultDialog;->sanitizePaymentAppCaption(Ljava/lang/String;)Ljava/lang/String;
+    invoke-direct {p0, v12}, Lcom/android/settings_ext/nfc/PaymentDefaultDialog;->sanitizePaymentAppCaption(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v12
 
     aput-object v12, v11, v9
 
-    iget-object v9, v1, Lcom/android/settings/nfc/PaymentBackend$PaymentAppInfo;->caption:Ljava/lang/CharSequence;
+    iget-object v9, v1, Lcom/android/settings_ext/nfc/PaymentBackend$PaymentAppInfo;->caption:Ljava/lang/CharSequence;
 
     invoke-interface {v9}, Ljava/lang/CharSequence;->toString()Ljava/lang/String;
 
     move-result-object v9
 
-    invoke-direct {p0, v9}, Lcom/android/settings/nfc/PaymentDefaultDialog;->sanitizePaymentAppCaption(Ljava/lang/String;)Ljava/lang/String;
+    invoke-direct {p0, v9}, Lcom/android/settings_ext/nfc/PaymentDefaultDialog;->sanitizePaymentAppCaption(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v9
 
@@ -430,16 +430,16 @@
 
     .line 62
     :pswitch_0
-    iget-object v0, p0, Lcom/android/settings/nfc/PaymentDefaultDialog;->mBackend:Lcom/android/settings/nfc/PaymentBackend;
+    iget-object v0, p0, Lcom/android/settings_ext/nfc/PaymentDefaultDialog;->mBackend:Lcom/android/settings_ext/nfc/PaymentBackend;
 
-    iget-object v1, p0, Lcom/android/settings/nfc/PaymentDefaultDialog;->mNewDefault:Landroid/content/ComponentName;
+    iget-object v1, p0, Lcom/android/settings_ext/nfc/PaymentDefaultDialog;->mNewDefault:Landroid/content/ComponentName;
 
-    invoke-virtual {v0, v1}, Lcom/android/settings/nfc/PaymentBackend;->setDefaultPaymentApp(Landroid/content/ComponentName;)V
+    invoke-virtual {v0, v1}, Lcom/android/settings_ext/nfc/PaymentBackend;->setDefaultPaymentApp(Landroid/content/ComponentName;)V
 
     .line 63
     const/4 v0, -0x1
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/nfc/PaymentDefaultDialog;->setResult(I)V
+    invoke-virtual {p0, v0}, Lcom/android/settings_ext/nfc/PaymentDefaultDialog;->setResult(I)V
 
     goto :goto_0
 
@@ -459,14 +459,14 @@
     invoke-super {p0, p1}, Lcom/android/internal/app/AlertActivity;->onCreate(Landroid/os/Bundle;)V
 
     .line 45
-    new-instance v3, Lcom/android/settings/nfc/PaymentBackend;
+    new-instance v3, Lcom/android/settings_ext/nfc/PaymentBackend;
 
-    invoke-direct {v3, p0}, Lcom/android/settings/nfc/PaymentBackend;-><init>(Landroid/content/Context;)V
+    invoke-direct {v3, p0}, Lcom/android/settings_ext/nfc/PaymentBackend;-><init>(Landroid/content/Context;)V
 
-    iput-object v3, p0, Lcom/android/settings/nfc/PaymentDefaultDialog;->mBackend:Lcom/android/settings/nfc/PaymentBackend;
+    iput-object v3, p0, Lcom/android/settings_ext/nfc/PaymentDefaultDialog;->mBackend:Lcom/android/settings_ext/nfc/PaymentBackend;
 
     .line 46
-    invoke-virtual {p0}, Lcom/android/settings/nfc/PaymentDefaultDialog;->getIntent()Landroid/content/Intent;
+    invoke-virtual {p0}, Lcom/android/settings_ext/nfc/PaymentDefaultDialog;->getIntent()Landroid/content/Intent;
 
     move-result-object v2
 
@@ -492,17 +492,17 @@
     .local v0, "category":Ljava/lang/String;
     const/4 v3, 0x0
 
-    invoke-virtual {p0, v3}, Lcom/android/settings/nfc/PaymentDefaultDialog;->setResult(I)V
+    invoke-virtual {p0, v3}, Lcom/android/settings_ext/nfc/PaymentDefaultDialog;->setResult(I)V
 
     .line 52
-    invoke-direct {p0, v1, v0}, Lcom/android/settings/nfc/PaymentDefaultDialog;->buildDialog(Landroid/content/ComponentName;Ljava/lang/String;)Z
+    invoke-direct {p0, v1, v0}, Lcom/android/settings_ext/nfc/PaymentDefaultDialog;->buildDialog(Landroid/content/ComponentName;Ljava/lang/String;)Z
 
     move-result v3
 
     if-nez v3, :cond_0
 
     .line 53
-    invoke-virtual {p0}, Lcom/android/settings/nfc/PaymentDefaultDialog;->finish()V
+    invoke-virtual {p0}, Lcom/android/settings_ext/nfc/PaymentDefaultDialog;->finish()V
 
     .line 56
     :cond_0

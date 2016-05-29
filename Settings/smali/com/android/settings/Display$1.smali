@@ -1,4 +1,4 @@
-.class Lcom/android/settings/Display$1;
+.class Lcom/android/settings_ext/Display$1;
 .super Ljava/lang/Object;
 .source "Display.java"
 
@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/android/settings/Display;
+    value = Lcom/android/settings_ext/Display;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -18,16 +18,16 @@
 
 
 # instance fields
-.field final synthetic this$0:Lcom/android/settings/Display;
+.field final synthetic this$0:Lcom/android/settings_ext/Display;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/Display;)V
+.method constructor <init>(Lcom/android/settings_ext/Display;)V
     .locals 0
 
     .prologue
     .line 115
-    iput-object p1, p0, Lcom/android/settings/Display$1;->this$0:Lcom/android/settings/Display;
+    iput-object p1, p0, Lcom/android/settings_ext/Display$1;->this$0:Lcom/android/settings_ext/Display;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -48,10 +48,10 @@
     if-nez p3, :cond_0
 
     .line 119
-    iget-object v0, p0, Lcom/android/settings/Display$1;->this$0:Lcom/android/settings/Display;
+    iget-object v0, p0, Lcom/android/settings_ext/Display$1;->this$0:Lcom/android/settings_ext/Display;
 
-    # getter for: Lcom/android/settings/Display;->mCurConfig:Landroid/content/res/Configuration;
-    invoke-static {v0}, Lcom/android/settings/Display;->access$000(Lcom/android/settings/Display;)Landroid/content/res/Configuration;
+    # getter for: Lcom/android/settings_ext/Display;->mCurConfig:Landroid/content/res/Configuration;
+    invoke-static {v0}, Lcom/android/settings_ext/Display;->access$000(Lcom/android/settings_ext/Display;)Landroid/content/res/Configuration;
 
     move-result-object v0
 
@@ -61,10 +61,10 @@
 
     .line 126
     :goto_0
-    iget-object v0, p0, Lcom/android/settings/Display$1;->this$0:Lcom/android/settings/Display;
+    iget-object v0, p0, Lcom/android/settings_ext/Display$1;->this$0:Lcom/android/settings_ext/Display;
 
-    # invokes: Lcom/android/settings/Display;->updateFontScale()V
-    invoke-static {v0}, Lcom/android/settings/Display;->access$100(Lcom/android/settings/Display;)V
+    # invokes: Lcom/android/settings_ext/Display;->updateFontScale()V
+    invoke-static {v0}, Lcom/android/settings_ext/Display;->access$100(Lcom/android/settings_ext/Display;)V
 
     .line 127
     return-void
@@ -76,10 +76,10 @@
     if-ne p3, v0, :cond_1
 
     .line 121
-    iget-object v0, p0, Lcom/android/settings/Display$1;->this$0:Lcom/android/settings/Display;
+    iget-object v0, p0, Lcom/android/settings_ext/Display$1;->this$0:Lcom/android/settings_ext/Display;
 
-    # getter for: Lcom/android/settings/Display;->mCurConfig:Landroid/content/res/Configuration;
-    invoke-static {v0}, Lcom/android/settings/Display;->access$000(Lcom/android/settings/Display;)Landroid/content/res/Configuration;
+    # getter for: Lcom/android/settings_ext/Display;->mCurConfig:Landroid/content/res/Configuration;
+    invoke-static {v0}, Lcom/android/settings_ext/Display;->access$000(Lcom/android/settings_ext/Display;)Landroid/content/res/Configuration;
 
     move-result-object v0
 
@@ -91,10 +91,10 @@
 
     .line 123
     :cond_1
-    iget-object v0, p0, Lcom/android/settings/Display$1;->this$0:Lcom/android/settings/Display;
+    iget-object v0, p0, Lcom/android/settings_ext/Display$1;->this$0:Lcom/android/settings_ext/Display;
 
-    # getter for: Lcom/android/settings/Display;->mCurConfig:Landroid/content/res/Configuration;
-    invoke-static {v0}, Lcom/android/settings/Display;->access$000(Lcom/android/settings/Display;)Landroid/content/res/Configuration;
+    # getter for: Lcom/android/settings_ext/Display;->mCurConfig:Landroid/content/res/Configuration;
+    invoke-static {v0}, Lcom/android/settings_ext/Display;->access$000(Lcom/android/settings_ext/Display;)Landroid/content/res/Configuration;
 
     move-result-object v0
 

@@ -1,4 +1,4 @@
-.class public Lcom/android/settings/sim/MultiSimEnablerPreference;
+.class public Lcom/android/settings_ext/sim/MultiSimEnablerPreference;
 .super Landroid/preference/Preference;
 .source "MultiSimEnablerPreference.java"
 
@@ -58,17 +58,17 @@
     const/4 v0, 0x0
 
     .line 96
-    sput-object v0, Lcom/android/settings/sim/MultiSimEnablerPreference;->sAlertDialog:Landroid/app/AlertDialog;
+    sput-object v0, Lcom/android/settings_ext/sim/MultiSimEnablerPreference;->sAlertDialog:Landroid/app/AlertDialog;
 
     .line 97
-    sput-object v0, Lcom/android/settings/sim/MultiSimEnablerPreference;->sProgressDialog:Landroid/app/ProgressDialog;
+    sput-object v0, Lcom/android/settings_ext/sim/MultiSimEnablerPreference;->sProgressDialog:Landroid/app/ProgressDialog;
 
     .line 102
     new-instance v0, Ljava/lang/Object;
 
     invoke-direct {v0}, Ljava/lang/Object;-><init>()V
 
-    sput-object v0, Lcom/android/settings/sim/MultiSimEnablerPreference;->mSyncLock:Ljava/lang/Object;
+    sput-object v0, Lcom/android/settings_ext/sim/MultiSimEnablerPreference;->mSyncLock:Ljava/lang/Object;
 
     return-void
 .end method
@@ -86,7 +86,7 @@
 
     const v1, 0x101008f
 
-    invoke-direct {p0, p1, v0, v1}, Lcom/android/settings/sim/MultiSimEnablerPreference;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
+    invoke-direct {p0, p1, v0, v1}, Lcom/android/settings_ext/sim/MultiSimEnablerPreference;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
 
     .line 120
     new-instance v0, Ljava/lang/StringBuilder;
@@ -107,23 +107,23 @@
 
     move-result-object v0
 
-    invoke-direct {p0, v0}, Lcom/android/settings/sim/MultiSimEnablerPreference;->logd(Ljava/lang/String;)V
+    invoke-direct {p0, v0}, Lcom/android/settings_ext/sim/MultiSimEnablerPreference;->logd(Ljava/lang/String;)V
 
     .line 121
-    iput p4, p0, Lcom/android/settings/sim/MultiSimEnablerPreference;->mSlotId:I
+    iput p4, p0, Lcom/android/settings_ext/sim/MultiSimEnablerPreference;->mSlotId:I
 
     .line 122
-    iput-object p2, p0, Lcom/android/settings/sim/MultiSimEnablerPreference;->mSir:Landroid/telephony/SubscriptionInfo;
+    iput-object p2, p0, Lcom/android/settings_ext/sim/MultiSimEnablerPreference;->mSir:Landroid/telephony/SubscriptionInfo;
 
     .line 123
-    iput-object p3, p0, Lcom/android/settings/sim/MultiSimEnablerPreference;->mParentHandler:Landroid/os/Handler;
+    iput-object p3, p0, Lcom/android/settings_ext/sim/MultiSimEnablerPreference;->mParentHandler:Landroid/os/Handler;
 
     .line 124
     invoke-static {p1}, Landroid/telephony/SubscriptionManager;->from(Landroid/content/Context;)Landroid/telephony/SubscriptionManager;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/sim/MultiSimEnablerPreference;->mSubscriptionManager:Landroid/telephony/SubscriptionManager;
+    iput-object v0, p0, Lcom/android/settings_ext/sim/MultiSimEnablerPreference;->mSubscriptionManager:Landroid/telephony/SubscriptionManager;
 
     .line 125
     return-void
@@ -144,18 +144,18 @@
     .line 75
     const-string v0, "MultiSimEnablerPreference"
 
-    iput-object v0, p0, Lcom/android/settings/sim/MultiSimEnablerPreference;->TAG:Ljava/lang/String;
+    iput-object v0, p0, Lcom/android/settings_ext/sim/MultiSimEnablerPreference;->TAG:Ljava/lang/String;
 
     .line 91
-    iput-boolean v2, p0, Lcom/android/settings/sim/MultiSimEnablerPreference;->mCmdInProgress:Z
+    iput-boolean v2, p0, Lcom/android/settings_ext/sim/MultiSimEnablerPreference;->mCmdInProgress:Z
 
     .line 93
-    iput v2, p0, Lcom/android/settings/sim/MultiSimEnablerPreference;->mSwitchVisibility:I
+    iput v2, p0, Lcom/android/settings_ext/sim/MultiSimEnablerPreference;->mSwitchVisibility:I
 
     .line 95
     const/4 v0, 0x0
 
-    iput-object v0, p0, Lcom/android/settings/sim/MultiSimEnablerPreference;->mParentHandler:Landroid/os/Handler;
+    iput-object v0, p0, Lcom/android/settings_ext/sim/MultiSimEnablerPreference;->mParentHandler:Landroid/os/Handler;
 
     .line 104
     new-instance v0, Landroid/content/IntentFilter;
@@ -164,99 +164,99 @@
 
     invoke-direct {v0, v1}, Landroid/content/IntentFilter;-><init>(Ljava/lang/String;)V
 
-    iput-object v0, p0, Lcom/android/settings/sim/MultiSimEnablerPreference;->mIntentFilter:Landroid/content/IntentFilter;
+    iput-object v0, p0, Lcom/android/settings_ext/sim/MultiSimEnablerPreference;->mIntentFilter:Landroid/content/IntentFilter;
 
     .line 397
-    new-instance v0, Lcom/android/settings/sim/MultiSimEnablerPreference$1;
+    new-instance v0, Lcom/android/settings_ext/sim/MultiSimEnablerPreference$1;
 
-    invoke-direct {v0, p0}, Lcom/android/settings/sim/MultiSimEnablerPreference$1;-><init>(Lcom/android/settings/sim/MultiSimEnablerPreference;)V
+    invoke-direct {v0, p0}, Lcom/android/settings_ext/sim/MultiSimEnablerPreference$1;-><init>(Lcom/android/settings_ext/sim/MultiSimEnablerPreference;)V
 
-    iput-object v0, p0, Lcom/android/settings/sim/MultiSimEnablerPreference;->mDialogClickListener:Landroid/content/DialogInterface$OnClickListener;
+    iput-object v0, p0, Lcom/android/settings_ext/sim/MultiSimEnablerPreference;->mDialogClickListener:Landroid/content/DialogInterface$OnClickListener;
 
     .line 413
-    new-instance v0, Lcom/android/settings/sim/MultiSimEnablerPreference$2;
+    new-instance v0, Lcom/android/settings_ext/sim/MultiSimEnablerPreference$2;
 
-    invoke-direct {v0, p0}, Lcom/android/settings/sim/MultiSimEnablerPreference$2;-><init>(Lcom/android/settings/sim/MultiSimEnablerPreference;)V
+    invoke-direct {v0, p0}, Lcom/android/settings_ext/sim/MultiSimEnablerPreference$2;-><init>(Lcom/android/settings_ext/sim/MultiSimEnablerPreference;)V
 
-    iput-object v0, p0, Lcom/android/settings/sim/MultiSimEnablerPreference;->mDialogCanceListener:Landroid/content/DialogInterface$OnCancelListener;
+    iput-object v0, p0, Lcom/android/settings_ext/sim/MultiSimEnablerPreference;->mDialogCanceListener:Landroid/content/DialogInterface$OnCancelListener;
 
     .line 420
-    new-instance v0, Lcom/android/settings/sim/MultiSimEnablerPreference$3;
+    new-instance v0, Lcom/android/settings_ext/sim/MultiSimEnablerPreference$3;
 
-    invoke-direct {v0, p0}, Lcom/android/settings/sim/MultiSimEnablerPreference$3;-><init>(Lcom/android/settings/sim/MultiSimEnablerPreference;)V
+    invoke-direct {v0, p0}, Lcom/android/settings_ext/sim/MultiSimEnablerPreference$3;-><init>(Lcom/android/settings_ext/sim/MultiSimEnablerPreference;)V
 
-    iput-object v0, p0, Lcom/android/settings/sim/MultiSimEnablerPreference;->mReceiver:Landroid/content/BroadcastReceiver;
+    iput-object v0, p0, Lcom/android/settings_ext/sim/MultiSimEnablerPreference;->mReceiver:Landroid/content/BroadcastReceiver;
 
     .line 443
-    new-instance v0, Lcom/android/settings/sim/MultiSimEnablerPreference$4;
+    new-instance v0, Lcom/android/settings_ext/sim/MultiSimEnablerPreference$4;
 
-    invoke-direct {v0, p0}, Lcom/android/settings/sim/MultiSimEnablerPreference$4;-><init>(Lcom/android/settings/sim/MultiSimEnablerPreference;)V
+    invoke-direct {v0, p0}, Lcom/android/settings_ext/sim/MultiSimEnablerPreference$4;-><init>(Lcom/android/settings_ext/sim/MultiSimEnablerPreference;)V
 
-    iput-object v0, p0, Lcom/android/settings/sim/MultiSimEnablerPreference;->mHandler:Landroid/os/Handler;
+    iput-object v0, p0, Lcom/android/settings_ext/sim/MultiSimEnablerPreference;->mHandler:Landroid/os/Handler;
 
     .line 111
-    iput-object p1, p0, Lcom/android/settings/sim/MultiSimEnablerPreference;->mContext:Landroid/content/Context;
+    iput-object p1, p0, Lcom/android/settings_ext/sim/MultiSimEnablerPreference;->mContext:Landroid/content/Context;
 
     .line 112
     invoke-static {p1}, Landroid/telephony/SubscriptionManager;->from(Landroid/content/Context;)Landroid/telephony/SubscriptionManager;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/sim/MultiSimEnablerPreference;->mSubscriptionManager:Landroid/telephony/SubscriptionManager;
+    iput-object v0, p0, Lcom/android/settings_ext/sim/MultiSimEnablerPreference;->mSubscriptionManager:Landroid/telephony/SubscriptionManager;
 
     .line 113
     const v0, 0x7f04002e
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/sim/MultiSimEnablerPreference;->setWidgetLayoutResource(I)V
+    invoke-virtual {p0, v0}, Lcom/android/settings_ext/sim/MultiSimEnablerPreference;->setWidgetLayoutResource(I)V
 
     .line 114
-    invoke-virtual {p0, v2}, Lcom/android/settings/sim/MultiSimEnablerPreference;->setSwitchVisibility(I)V
+    invoke-virtual {p0, v2}, Lcom/android/settings_ext/sim/MultiSimEnablerPreference;->setSwitchVisibility(I)V
 
     .line 115
     return-void
 .end method
 
-.method static synthetic access$000(Lcom/android/settings/sim/MultiSimEnablerPreference;)V
+.method static synthetic access$000(Lcom/android/settings_ext/sim/MultiSimEnablerPreference;)V
     .locals 0
-    .param p0, "x0"    # Lcom/android/settings/sim/MultiSimEnablerPreference;
+    .param p0, "x0"    # Lcom/android/settings_ext/sim/MultiSimEnablerPreference;
 
     .prologue
     .line 72
-    invoke-direct {p0}, Lcom/android/settings/sim/MultiSimEnablerPreference;->sendSubConfigurationRequest()V
+    invoke-direct {p0}, Lcom/android/settings_ext/sim/MultiSimEnablerPreference;->sendSubConfigurationRequest()V
 
     return-void
 .end method
 
-.method static synthetic access$100(Lcom/android/settings/sim/MultiSimEnablerPreference;Z)V
+.method static synthetic access$100(Lcom/android/settings_ext/sim/MultiSimEnablerPreference;Z)V
     .locals 0
-    .param p0, "x0"    # Lcom/android/settings/sim/MultiSimEnablerPreference;
+    .param p0, "x0"    # Lcom/android/settings_ext/sim/MultiSimEnablerPreference;
     .param p1, "x1"    # Z
 
     .prologue
     .line 72
-    invoke-direct {p0, p1}, Lcom/android/settings/sim/MultiSimEnablerPreference;->setChecked(Z)V
+    invoke-direct {p0, p1}, Lcom/android/settings_ext/sim/MultiSimEnablerPreference;->setChecked(Z)V
 
     return-void
 .end method
 
-.method static synthetic access$1000(Lcom/android/settings/sim/MultiSimEnablerPreference;)Landroid/os/Handler;
+.method static synthetic access$1000(Lcom/android/settings_ext/sim/MultiSimEnablerPreference;)Landroid/os/Handler;
     .locals 1
-    .param p0, "x0"    # Lcom/android/settings/sim/MultiSimEnablerPreference;
+    .param p0, "x0"    # Lcom/android/settings_ext/sim/MultiSimEnablerPreference;
 
     .prologue
     .line 72
-    iget-object v0, p0, Lcom/android/settings/sim/MultiSimEnablerPreference;->mHandler:Landroid/os/Handler;
+    iget-object v0, p0, Lcom/android/settings_ext/sim/MultiSimEnablerPreference;->mHandler:Landroid/os/Handler;
 
     return-object v0
 .end method
 
-.method static synthetic access$1100(Lcom/android/settings/sim/MultiSimEnablerPreference;)V
+.method static synthetic access$1100(Lcom/android/settings_ext/sim/MultiSimEnablerPreference;)V
     .locals 0
-    .param p0, "x0"    # Lcom/android/settings/sim/MultiSimEnablerPreference;
+    .param p0, "x0"    # Lcom/android/settings_ext/sim/MultiSimEnablerPreference;
 
     .prologue
     .line 72
-    invoke-direct {p0}, Lcom/android/settings/sim/MultiSimEnablerPreference;->showProgressDialog()V
+    invoke-direct {p0}, Lcom/android/settings_ext/sim/MultiSimEnablerPreference;->showProgressDialog()V
 
     return-void
 .end method
@@ -266,110 +266,110 @@
 
     .prologue
     .line 72
-    sget-object v0, Lcom/android/settings/sim/MultiSimEnablerPreference;->sProgressDialog:Landroid/app/ProgressDialog;
+    sget-object v0, Lcom/android/settings_ext/sim/MultiSimEnablerPreference;->sProgressDialog:Landroid/app/ProgressDialog;
 
     return-object v0
 .end method
 
-.method static synthetic access$1300(Lcom/android/settings/sim/MultiSimEnablerPreference;Landroid/app/Dialog;)V
+.method static synthetic access$1300(Lcom/android/settings_ext/sim/MultiSimEnablerPreference;Landroid/app/Dialog;)V
     .locals 0
-    .param p0, "x0"    # Lcom/android/settings/sim/MultiSimEnablerPreference;
+    .param p0, "x0"    # Lcom/android/settings_ext/sim/MultiSimEnablerPreference;
     .param p1, "x1"    # Landroid/app/Dialog;
 
     .prologue
     .line 72
-    invoke-direct {p0, p1}, Lcom/android/settings/sim/MultiSimEnablerPreference;->dismissDialog(Landroid/app/Dialog;)V
+    invoke-direct {p0, p1}, Lcom/android/settings_ext/sim/MultiSimEnablerPreference;->dismissDialog(Landroid/app/Dialog;)V
 
     return-void
 .end method
 
-.method static synthetic access$200(Lcom/android/settings/sim/MultiSimEnablerPreference;)Landroid/content/Context;
+.method static synthetic access$200(Lcom/android/settings_ext/sim/MultiSimEnablerPreference;)Landroid/content/Context;
     .locals 1
-    .param p0, "x0"    # Lcom/android/settings/sim/MultiSimEnablerPreference;
+    .param p0, "x0"    # Lcom/android/settings_ext/sim/MultiSimEnablerPreference;
 
     .prologue
     .line 72
-    iget-object v0, p0, Lcom/android/settings/sim/MultiSimEnablerPreference;->mContext:Landroid/content/Context;
+    iget-object v0, p0, Lcom/android/settings_ext/sim/MultiSimEnablerPreference;->mContext:Landroid/content/Context;
 
     return-object v0
 .end method
 
-.method static synthetic access$300(Lcom/android/settings/sim/MultiSimEnablerPreference;)Landroid/widget/TextView;
+.method static synthetic access$300(Lcom/android/settings_ext/sim/MultiSimEnablerPreference;)Landroid/widget/TextView;
     .locals 1
-    .param p0, "x0"    # Lcom/android/settings/sim/MultiSimEnablerPreference;
+    .param p0, "x0"    # Lcom/android/settings_ext/sim/MultiSimEnablerPreference;
 
     .prologue
     .line 72
-    iget-object v0, p0, Lcom/android/settings/sim/MultiSimEnablerPreference;->mSubSummary:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/android/settings_ext/sim/MultiSimEnablerPreference;->mSubSummary:Landroid/widget/TextView;
 
     return-object v0
 .end method
 
-.method static synthetic access$400(Lcom/android/settings/sim/MultiSimEnablerPreference;Ljava/lang/String;)V
+.method static synthetic access$400(Lcom/android/settings_ext/sim/MultiSimEnablerPreference;Ljava/lang/String;)V
     .locals 0
-    .param p0, "x0"    # Lcom/android/settings/sim/MultiSimEnablerPreference;
+    .param p0, "x0"    # Lcom/android/settings_ext/sim/MultiSimEnablerPreference;
     .param p1, "x1"    # Ljava/lang/String;
 
     .prologue
     .line 72
-    invoke-direct {p0, p1}, Lcom/android/settings/sim/MultiSimEnablerPreference;->logd(Ljava/lang/String;)V
+    invoke-direct {p0, p1}, Lcom/android/settings_ext/sim/MultiSimEnablerPreference;->logd(Ljava/lang/String;)V
 
     return-void
 .end method
 
-.method static synthetic access$500(Lcom/android/settings/sim/MultiSimEnablerPreference;)Z
+.method static synthetic access$500(Lcom/android/settings_ext/sim/MultiSimEnablerPreference;)Z
     .locals 1
-    .param p0, "x0"    # Lcom/android/settings/sim/MultiSimEnablerPreference;
+    .param p0, "x0"    # Lcom/android/settings_ext/sim/MultiSimEnablerPreference;
 
     .prologue
     .line 72
-    iget-boolean v0, p0, Lcom/android/settings/sim/MultiSimEnablerPreference;->mCmdInProgress:Z
+    iget-boolean v0, p0, Lcom/android/settings_ext/sim/MultiSimEnablerPreference;->mCmdInProgress:Z
 
     return v0
 .end method
 
-.method static synthetic access$600(Lcom/android/settings/sim/MultiSimEnablerPreference;)Landroid/telephony/SubscriptionInfo;
+.method static synthetic access$600(Lcom/android/settings_ext/sim/MultiSimEnablerPreference;)Landroid/telephony/SubscriptionInfo;
     .locals 1
-    .param p0, "x0"    # Lcom/android/settings/sim/MultiSimEnablerPreference;
+    .param p0, "x0"    # Lcom/android/settings_ext/sim/MultiSimEnablerPreference;
 
     .prologue
     .line 72
-    iget-object v0, p0, Lcom/android/settings/sim/MultiSimEnablerPreference;->mSir:Landroid/telephony/SubscriptionInfo;
+    iget-object v0, p0, Lcom/android/settings_ext/sim/MultiSimEnablerPreference;->mSir:Landroid/telephony/SubscriptionInfo;
 
     return-object v0
 .end method
 
-.method static synthetic access$700(Lcom/android/settings/sim/MultiSimEnablerPreference;)Z
+.method static synthetic access$700(Lcom/android/settings_ext/sim/MultiSimEnablerPreference;)Z
     .locals 1
-    .param p0, "x0"    # Lcom/android/settings/sim/MultiSimEnablerPreference;
+    .param p0, "x0"    # Lcom/android/settings_ext/sim/MultiSimEnablerPreference;
 
     .prologue
     .line 72
-    iget-boolean v0, p0, Lcom/android/settings/sim/MultiSimEnablerPreference;->mCurrentState:Z
+    iget-boolean v0, p0, Lcom/android/settings_ext/sim/MultiSimEnablerPreference;->mCurrentState:Z
 
     return v0
 .end method
 
-.method static synthetic access$800(Lcom/android/settings/sim/MultiSimEnablerPreference;)V
+.method static synthetic access$800(Lcom/android/settings_ext/sim/MultiSimEnablerPreference;)V
     .locals 0
-    .param p0, "x0"    # Lcom/android/settings/sim/MultiSimEnablerPreference;
+    .param p0, "x0"    # Lcom/android/settings_ext/sim/MultiSimEnablerPreference;
 
     .prologue
     .line 72
-    invoke-direct {p0}, Lcom/android/settings/sim/MultiSimEnablerPreference;->processSetUiccDone()V
+    invoke-direct {p0}, Lcom/android/settings_ext/sim/MultiSimEnablerPreference;->processSetUiccDone()V
 
     return-void
 .end method
 
-.method static synthetic access$900(Lcom/android/settings/sim/MultiSimEnablerPreference;II)V
+.method static synthetic access$900(Lcom/android/settings_ext/sim/MultiSimEnablerPreference;II)V
     .locals 0
-    .param p0, "x0"    # Lcom/android/settings/sim/MultiSimEnablerPreference;
+    .param p0, "x0"    # Lcom/android/settings_ext/sim/MultiSimEnablerPreference;
     .param p1, "x1"    # I
     .param p2, "x2"    # I
 
     .prologue
     .line 72
-    invoke-direct {p0, p1, p2}, Lcom/android/settings/sim/MultiSimEnablerPreference;->showAlertDialog(II)V
+    invoke-direct {p0, p1, p2}, Lcom/android/settings_ext/sim/MultiSimEnablerPreference;->showAlertDialog(II)V
 
     return-void
 .end method
@@ -385,7 +385,7 @@
     const/4 v4, 0x2
 
     .line 270
-    invoke-direct {p0}, Lcom/android/settings/sim/MultiSimEnablerPreference;->isAirplaneModeOn()Z
+    invoke-direct {p0}, Lcom/android/settings_ext/sim/MultiSimEnablerPreference;->isAirplaneModeOn()Z
 
     move-result v2
 
@@ -394,12 +394,12 @@
     .line 272
     const-string v2, "APM is on, EXIT!"
 
-    invoke-direct {p0, v2}, Lcom/android/settings/sim/MultiSimEnablerPreference;->logd(Ljava/lang/String;)V
+    invoke-direct {p0, v2}, Lcom/android/settings_ext/sim/MultiSimEnablerPreference;->logd(Ljava/lang/String;)V
 
     .line 273
     const v2, 0x7f090870
 
-    invoke-direct {p0, v4, v2}, Lcom/android/settings/sim/MultiSimEnablerPreference;->showAlertDialog(II)V
+    invoke-direct {p0, v4, v2}, Lcom/android/settings_ext/sim/MultiSimEnablerPreference;->showAlertDialog(II)V
 
     .line 300
     :goto_0
@@ -465,12 +465,12 @@
 
     move-result-object v2
 
-    invoke-direct {p0, v2}, Lcom/android/settings/sim/MultiSimEnablerPreference;->logd(Ljava/lang/String;)V
+    invoke-direct {p0, v2}, Lcom/android/settings_ext/sim/MultiSimEnablerPreference;->logd(Ljava/lang/String;)V
 
     .line 281
     const v2, 0x7f090871
 
-    invoke-direct {p0, v4, v2}, Lcom/android/settings/sim/MultiSimEnablerPreference;->showAlertDialog(II)V
+    invoke-direct {p0, v4, v2}, Lcom/android/settings_ext/sim/MultiSimEnablerPreference;->showAlertDialog(II)V
 
     goto :goto_0
 
@@ -483,14 +483,14 @@
     .line 286
     .end local v1    # "subId":[I
     :cond_2
-    iget-boolean v2, p0, Lcom/android/settings/sim/MultiSimEnablerPreference;->mCurrentState:Z
+    iget-boolean v2, p0, Lcom/android/settings_ext/sim/MultiSimEnablerPreference;->mCurrentState:Z
 
     if-nez v2, :cond_4
 
     .line 287
-    iget-object v2, p0, Lcom/android/settings/sim/MultiSimEnablerPreference;->mContext:Landroid/content/Context;
+    iget-object v2, p0, Lcom/android/settings_ext/sim/MultiSimEnablerPreference;->mContext:Landroid/content/Context;
 
-    invoke-static {v2}, Lcom/android/settings/sim/MultiSimEnablerPreference;->getActivatedSubInfoCount(Landroid/content/Context;)I
+    invoke-static {v2}, Lcom/android/settings_ext/sim/MultiSimEnablerPreference;->getActivatedSubInfoCount(Landroid/content/Context;)I
 
     move-result v2
 
@@ -499,10 +499,10 @@
     .line 288
     const-string v2, "More than one sub is active, Deactivation possible."
 
-    invoke-direct {p0, v2}, Lcom/android/settings/sim/MultiSimEnablerPreference;->logd(Ljava/lang/String;)V
+    invoke-direct {p0, v2}, Lcom/android/settings_ext/sim/MultiSimEnablerPreference;->logd(Ljava/lang/String;)V
 
     .line 289
-    invoke-direct {p0, v6, v5}, Lcom/android/settings/sim/MultiSimEnablerPreference;->showAlertDialog(II)V
+    invoke-direct {p0, v6, v5}, Lcom/android/settings_ext/sim/MultiSimEnablerPreference;->showAlertDialog(II)V
 
     goto :goto_0
 
@@ -510,12 +510,12 @@
     :cond_3
     const-string v2, "Only one sub is active. Deactivation not possible."
 
-    invoke-direct {p0, v2}, Lcom/android/settings/sim/MultiSimEnablerPreference;->logd(Ljava/lang/String;)V
+    invoke-direct {p0, v2}, Lcom/android/settings_ext/sim/MultiSimEnablerPreference;->logd(Ljava/lang/String;)V
 
     .line 292
     const v2, 0x7f090872
 
-    invoke-direct {p0, v4, v2}, Lcom/android/settings/sim/MultiSimEnablerPreference;->showAlertDialog(II)V
+    invoke-direct {p0, v4, v2}, Lcom/android/settings_ext/sim/MultiSimEnablerPreference;->showAlertDialog(II)V
 
     goto :goto_0
 
@@ -523,10 +523,10 @@
     :cond_4
     const-string v2, "Activate the sub"
 
-    invoke-direct {p0, v2}, Lcom/android/settings/sim/MultiSimEnablerPreference;->logd(Ljava/lang/String;)V
+    invoke-direct {p0, v2}, Lcom/android/settings_ext/sim/MultiSimEnablerPreference;->logd(Ljava/lang/String;)V
 
     .line 297
-    invoke-direct {p0}, Lcom/android/settings/sim/MultiSimEnablerPreference;->sendSubConfigurationRequest()V
+    invoke-direct {p0}, Lcom/android/settings_ext/sim/MultiSimEnablerPreference;->sendSubConfigurationRequest()V
 
     goto :goto_0
 .end method
@@ -628,7 +628,7 @@
 
     move-result-object v0
 
-    iget v1, p0, Lcom/android/settings/sim/MultiSimEnablerPreference;->mSlotId:I
+    iget v1, p0, Lcom/android/settings_ext/sim/MultiSimEnablerPreference;->mSlotId:I
 
     invoke-virtual {v0, v1}, Landroid/telephony/TelephonyManager;->hasIccCard(I)Z
 
@@ -644,7 +644,7 @@
     const/4 v0, 0x0
 
     .line 137
-    iget-object v1, p0, Lcom/android/settings/sim/MultiSimEnablerPreference;->mContext:Landroid/content/Context;
+    iget-object v1, p0, Lcom/android/settings_ext/sim/MultiSimEnablerPreference;->mContext:Landroid/content/Context;
 
     invoke-virtual {v1}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
 
@@ -673,20 +673,20 @@
 
     .line 176
     .local v1, "isSubValid":Z
-    invoke-direct {p0}, Lcom/android/settings/sim/MultiSimEnablerPreference;->isAirplaneModeOn()Z
+    invoke-direct {p0}, Lcom/android/settings_ext/sim/MultiSimEnablerPreference;->isAirplaneModeOn()Z
 
     move-result v4
 
     if-nez v4, :cond_2
 
-    invoke-direct {p0}, Lcom/android/settings/sim/MultiSimEnablerPreference;->hasCard()Z
+    invoke-direct {p0}, Lcom/android/settings_ext/sim/MultiSimEnablerPreference;->hasCard()Z
 
     move-result v4
 
     if-eqz v4, :cond_2
 
     .line 177
-    iget-object v4, p0, Lcom/android/settings/sim/MultiSimEnablerPreference;->mContext:Landroid/content/Context;
+    iget-object v4, p0, Lcom/android/settings_ext/sim/MultiSimEnablerPreference;->mContext:Landroid/content/Context;
 
     invoke-static {v4}, Landroid/telephony/SubscriptionManager;->from(Landroid/content/Context;)Landroid/telephony/SubscriptionManager;
 
@@ -723,7 +723,7 @@
     .local v2, "sir":Landroid/telephony/SubscriptionInfo;
     if-eqz v2, :cond_0
 
-    iget v4, p0, Lcom/android/settings/sim/MultiSimEnablerPreference;->mSlotId:I
+    iget v4, p0, Lcom/android/settings_ext/sim/MultiSimEnablerPreference;->mSlotId:I
 
     invoke-virtual {v2}, Landroid/telephony/SubscriptionInfo;->getSimSlotIndex()I
 
@@ -732,16 +732,16 @@
     if-ne v4, v5, :cond_0
 
     .line 182
-    iput-object v2, p0, Lcom/android/settings/sim/MultiSimEnablerPreference;->mSir:Landroid/telephony/SubscriptionInfo;
+    iput-object v2, p0, Lcom/android/settings_ext/sim/MultiSimEnablerPreference;->mSir:Landroid/telephony/SubscriptionInfo;
 
     .line 186
     .end local v2    # "sir":Landroid/telephony/SubscriptionInfo;
     :cond_1
-    iget-object v4, p0, Lcom/android/settings/sim/MultiSimEnablerPreference;->mSir:Landroid/telephony/SubscriptionInfo;
+    iget-object v4, p0, Lcom/android/settings_ext/sim/MultiSimEnablerPreference;->mSir:Landroid/telephony/SubscriptionInfo;
 
     if-eqz v4, :cond_2
 
-    iget-object v4, p0, Lcom/android/settings/sim/MultiSimEnablerPreference;->mSir:Landroid/telephony/SubscriptionInfo;
+    iget-object v4, p0, Lcom/android/settings_ext/sim/MultiSimEnablerPreference;->mSir:Landroid/telephony/SubscriptionInfo;
 
     invoke-virtual {v4}, Landroid/telephony/SubscriptionInfo;->getSubscriptionId()I
 
@@ -749,7 +749,7 @@
 
     if-lez v4, :cond_2
 
-    iget-object v4, p0, Lcom/android/settings/sim/MultiSimEnablerPreference;->mSir:Landroid/telephony/SubscriptionInfo;
+    iget-object v4, p0, Lcom/android/settings_ext/sim/MultiSimEnablerPreference;->mSir:Landroid/telephony/SubscriptionInfo;
 
     invoke-virtual {v4}, Landroid/telephony/SubscriptionInfo;->getSimSlotIndex()I
 
@@ -757,7 +757,7 @@
 
     if-ltz v4, :cond_2
 
-    iget-object v4, p0, Lcom/android/settings/sim/MultiSimEnablerPreference;->mSir:Landroid/telephony/SubscriptionInfo;
+    iget-object v4, p0, Lcom/android/settings_ext/sim/MultiSimEnablerPreference;->mSir:Landroid/telephony/SubscriptionInfo;
 
     iget v4, v4, Landroid/telephony/SubscriptionInfo;->mStatus:I
 
@@ -785,7 +785,7 @@
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
 
-    iget-object v1, p0, Lcom/android/settings/sim/MultiSimEnablerPreference;->TAG:Ljava/lang/String;
+    iget-object v1, p0, Lcom/android/settings_ext/sim/MultiSimEnablerPreference;->TAG:Ljava/lang/String;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -797,7 +797,7 @@
 
     move-result-object v0
 
-    iget v1, p0, Lcom/android/settings/sim/MultiSimEnablerPreference;->mSlotId:I
+    iget v1, p0, Lcom/android/settings_ext/sim/MultiSimEnablerPreference;->mSlotId:I
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
@@ -828,24 +828,24 @@
     .line 320
     const/4 v0, 0x1
 
-    iget-object v1, p0, Lcom/android/settings/sim/MultiSimEnablerPreference;->mParentHandler:Landroid/os/Handler;
+    iget-object v1, p0, Lcom/android/settings_ext/sim/MultiSimEnablerPreference;->mParentHandler:Landroid/os/Handler;
 
-    invoke-direct {p0, v0, v1, v2}, Lcom/android/settings/sim/MultiSimEnablerPreference;->sendMessage(ILandroid/os/Handler;I)V
+    invoke-direct {p0, v0, v1, v2}, Lcom/android/settings_ext/sim/MultiSimEnablerPreference;->sendMessage(ILandroid/os/Handler;I)V
 
     .line 321
     const/4 v0, 0x2
 
-    iget-object v1, p0, Lcom/android/settings/sim/MultiSimEnablerPreference;->mHandler:Landroid/os/Handler;
+    iget-object v1, p0, Lcom/android/settings_ext/sim/MultiSimEnablerPreference;->mHandler:Landroid/os/Handler;
 
-    invoke-direct {p0, v0, v1, v2}, Lcom/android/settings/sim/MultiSimEnablerPreference;->sendMessage(ILandroid/os/Handler;I)V
+    invoke-direct {p0, v0, v1, v2}, Lcom/android/settings_ext/sim/MultiSimEnablerPreference;->sendMessage(ILandroid/os/Handler;I)V
 
     .line 322
     const/4 v0, 0x0
 
-    iput-boolean v0, p0, Lcom/android/settings/sim/MultiSimEnablerPreference;->mCmdInProgress:Z
+    iput-boolean v0, p0, Lcom/android/settings_ext/sim/MultiSimEnablerPreference;->mCmdInProgress:Z
 
     .line 323
-    invoke-direct {p0}, Lcom/android/settings/sim/MultiSimEnablerPreference;->unregisterReceiver()V
+    invoke-direct {p0}, Lcom/android/settings_ext/sim/MultiSimEnablerPreference;->unregisterReceiver()V
 
     .line 324
     return-void
@@ -878,11 +878,11 @@
 
     .prologue
     .line 303
-    iget-object v0, p0, Lcom/android/settings/sim/MultiSimEnablerPreference;->mParentHandler:Landroid/os/Handler;
+    iget-object v0, p0, Lcom/android/settings_ext/sim/MultiSimEnablerPreference;->mParentHandler:Landroid/os/Handler;
 
     if-eqz v0, :cond_0
 
-    iget-object v0, p0, Lcom/android/settings/sim/MultiSimEnablerPreference;->mSwitch:Landroid/widget/Switch;
+    iget-object v0, p0, Lcom/android/settings_ext/sim/MultiSimEnablerPreference;->mSwitch:Landroid/widget/Switch;
 
     invoke-virtual {v0}, Landroid/widget/Switch;->isEnabled()Z
 
@@ -899,25 +899,25 @@
     :cond_1
     const/4 v0, 0x1
 
-    iput-boolean v0, p0, Lcom/android/settings/sim/MultiSimEnablerPreference;->mCmdInProgress:Z
+    iput-boolean v0, p0, Lcom/android/settings_ext/sim/MultiSimEnablerPreference;->mCmdInProgress:Z
 
     .line 308
-    invoke-direct {p0}, Lcom/android/settings/sim/MultiSimEnablerPreference;->showProgressDialog()V
+    invoke-direct {p0}, Lcom/android/settings_ext/sim/MultiSimEnablerPreference;->showProgressDialog()V
 
     .line 309
-    iget-object v0, p0, Lcom/android/settings/sim/MultiSimEnablerPreference;->mSwitch:Landroid/widget/Switch;
+    iget-object v0, p0, Lcom/android/settings_ext/sim/MultiSimEnablerPreference;->mSwitch:Landroid/widget/Switch;
 
     const/4 v1, 0x0
 
     invoke-virtual {v0, v1}, Landroid/widget/Switch;->setEnabled(Z)V
 
     .line 310
-    iget-boolean v0, p0, Lcom/android/settings/sim/MultiSimEnablerPreference;->mCurrentState:Z
+    iget-boolean v0, p0, Lcom/android/settings_ext/sim/MultiSimEnablerPreference;->mCurrentState:Z
 
     if-eqz v0, :cond_2
 
     .line 311
-    iget-object v0, p0, Lcom/android/settings/sim/MultiSimEnablerPreference;->mSir:Landroid/telephony/SubscriptionInfo;
+    iget-object v0, p0, Lcom/android/settings_ext/sim/MultiSimEnablerPreference;->mSir:Landroid/telephony/SubscriptionInfo;
 
     invoke-virtual {v0}, Landroid/telephony/SubscriptionInfo;->getSubscriptionId()I
 
@@ -927,11 +927,11 @@
 
     .line 316
     :goto_1
-    iget-object v0, p0, Lcom/android/settings/sim/MultiSimEnablerPreference;->mContext:Landroid/content/Context;
+    iget-object v0, p0, Lcom/android/settings_ext/sim/MultiSimEnablerPreference;->mContext:Landroid/content/Context;
 
-    iget-object v1, p0, Lcom/android/settings/sim/MultiSimEnablerPreference;->mReceiver:Landroid/content/BroadcastReceiver;
+    iget-object v1, p0, Lcom/android/settings_ext/sim/MultiSimEnablerPreference;->mReceiver:Landroid/content/BroadcastReceiver;
 
-    iget-object v2, p0, Lcom/android/settings/sim/MultiSimEnablerPreference;->mIntentFilter:Landroid/content/IntentFilter;
+    iget-object v2, p0, Lcom/android/settings_ext/sim/MultiSimEnablerPreference;->mIntentFilter:Landroid/content/IntentFilter;
 
     invoke-virtual {v0, v1, v2}, Landroid/content/Context;->registerReceiver(Landroid/content/BroadcastReceiver;Landroid/content/IntentFilter;)Landroid/content/Intent;
 
@@ -939,7 +939,7 @@
 
     .line 313
     :cond_2
-    iget-object v0, p0, Lcom/android/settings/sim/MultiSimEnablerPreference;->mSir:Landroid/telephony/SubscriptionInfo;
+    iget-object v0, p0, Lcom/android/settings_ext/sim/MultiSimEnablerPreference;->mSir:Landroid/telephony/SubscriptionInfo;
 
     invoke-virtual {v0}, Landroid/telephony/SubscriptionInfo;->getSubscriptionId()I
 
@@ -976,7 +976,7 @@
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/android/settings/sim/MultiSimEnablerPreference;->mSir:Landroid/telephony/SubscriptionInfo;
+    iget-object v1, p0, Lcom/android/settings_ext/sim/MultiSimEnablerPreference;->mSir:Landroid/telephony/SubscriptionInfo;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
@@ -986,32 +986,32 @@
 
     move-result-object v0
 
-    invoke-direct {p0, v0}, Lcom/android/settings/sim/MultiSimEnablerPreference;->logd(Ljava/lang/String;)V
+    invoke-direct {p0, v0}, Lcom/android/settings_ext/sim/MultiSimEnablerPreference;->logd(Ljava/lang/String;)V
 
     .line 206
-    iget-object v0, p0, Lcom/android/settings/sim/MultiSimEnablerPreference;->mSwitch:Landroid/widget/Switch;
+    iget-object v0, p0, Lcom/android/settings_ext/sim/MultiSimEnablerPreference;->mSwitch:Landroid/widget/Switch;
 
     if-eqz v0, :cond_0
 
     .line 207
-    iget-object v0, p0, Lcom/android/settings/sim/MultiSimEnablerPreference;->mSwitch:Landroid/widget/Switch;
+    iget-object v0, p0, Lcom/android/settings_ext/sim/MultiSimEnablerPreference;->mSwitch:Landroid/widget/Switch;
 
     const/4 v1, 0x0
 
     invoke-virtual {v0, v1}, Landroid/widget/Switch;->setOnCheckedChangeListener(Landroid/widget/CompoundButton$OnCheckedChangeListener;)V
 
     .line 208
-    iget-object v0, p0, Lcom/android/settings/sim/MultiSimEnablerPreference;->mSwitch:Landroid/widget/Switch;
+    iget-object v0, p0, Lcom/android/settings_ext/sim/MultiSimEnablerPreference;->mSwitch:Landroid/widget/Switch;
 
     invoke-virtual {v0, p1}, Landroid/widget/Switch;->setChecked(Z)V
 
     .line 209
-    iget-object v0, p0, Lcom/android/settings/sim/MultiSimEnablerPreference;->mSwitch:Landroid/widget/Switch;
+    iget-object v0, p0, Lcom/android/settings_ext/sim/MultiSimEnablerPreference;->mSwitch:Landroid/widget/Switch;
 
     invoke-virtual {v0, p0}, Landroid/widget/Switch;->setOnCheckedChangeListener(Landroid/widget/CompoundButton$OnCheckedChangeListener;)V
 
     .line 210
-    iput-boolean p1, p0, Lcom/android/settings/sim/MultiSimEnablerPreference;->mCurrentState:Z
+    iput-boolean p1, p0, Lcom/android/settings_ext/sim/MultiSimEnablerPreference;->mCurrentState:Z
 
     .line 212
     :cond_0
@@ -1029,7 +1029,7 @@
     const v5, 0x104000a
 
     .line 327
-    iget-object v3, p0, Lcom/android/settings/sim/MultiSimEnablerPreference;->mSir:Landroid/telephony/SubscriptionInfo;
+    iget-object v3, p0, Lcom/android/settings_ext/sim/MultiSimEnablerPreference;->mSir:Landroid/telephony/SubscriptionInfo;
 
     if-nez v3, :cond_0
 
@@ -1038,19 +1038,19 @@
     .line 329
     .local v2, "title":Ljava/lang/String;
     :goto_0
-    sget-object v3, Lcom/android/settings/sim/MultiSimEnablerPreference;->sAlertDialog:Landroid/app/AlertDialog;
+    sget-object v3, Lcom/android/settings_ext/sim/MultiSimEnablerPreference;->sAlertDialog:Landroid/app/AlertDialog;
 
-    invoke-direct {p0, v3}, Lcom/android/settings/sim/MultiSimEnablerPreference;->dismissDialog(Landroid/app/Dialog;)V
+    invoke-direct {p0, v3}, Lcom/android/settings_ext/sim/MultiSimEnablerPreference;->dismissDialog(Landroid/app/Dialog;)V
 
     .line 330
-    sget-object v3, Lcom/android/settings/sim/MultiSimEnablerPreference;->sProgressDialog:Landroid/app/ProgressDialog;
+    sget-object v3, Lcom/android/settings_ext/sim/MultiSimEnablerPreference;->sProgressDialog:Landroid/app/ProgressDialog;
 
-    invoke-direct {p0, v3}, Lcom/android/settings/sim/MultiSimEnablerPreference;->dismissDialog(Landroid/app/Dialog;)V
+    invoke-direct {p0, v3}, Lcom/android/settings_ext/sim/MultiSimEnablerPreference;->dismissDialog(Landroid/app/Dialog;)V
 
     .line 331
     new-instance v3, Landroid/app/AlertDialog$Builder;
 
-    iget-object v4, p0, Lcom/android/settings/sim/MultiSimEnablerPreference;->mContext:Landroid/content/Context;
+    iget-object v4, p0, Lcom/android/settings_ext/sim/MultiSimEnablerPreference;->mContext:Landroid/content/Context;
 
     invoke-direct {v3, v4}, Landroid/app/AlertDialog$Builder;-><init>(Landroid/content/Context;)V
 
@@ -1074,15 +1074,15 @@
 
     move-result-object v3
 
-    sput-object v3, Lcom/android/settings/sim/MultiSimEnablerPreference;->sAlertDialog:Landroid/app/AlertDialog;
+    sput-object v3, Lcom/android/settings_ext/sim/MultiSimEnablerPreference;->sAlertDialog:Landroid/app/AlertDialog;
 
     .line 357
-    sget-object v3, Lcom/android/settings/sim/MultiSimEnablerPreference;->sAlertDialog:Landroid/app/AlertDialog;
+    sget-object v3, Lcom/android/settings_ext/sim/MultiSimEnablerPreference;->sAlertDialog:Landroid/app/AlertDialog;
 
     invoke-virtual {v3, v6}, Landroid/app/AlertDialog;->setCanceledOnTouchOutside(Z)V
 
     .line 358
-    sget-object v3, Lcom/android/settings/sim/MultiSimEnablerPreference;->sAlertDialog:Landroid/app/AlertDialog;
+    sget-object v3, Lcom/android/settings_ext/sim/MultiSimEnablerPreference;->sAlertDialog:Landroid/app/AlertDialog;
 
     invoke-virtual {v3}, Landroid/app/AlertDialog;->show()V
 
@@ -1093,7 +1093,7 @@
     .end local v0    # "builder":Landroid/app/AlertDialog$Builder;
     .end local v2    # "title":Ljava/lang/String;
     :cond_0
-    iget-object v3, p0, Lcom/android/settings/sim/MultiSimEnablerPreference;->mSir:Landroid/telephony/SubscriptionInfo;
+    iget-object v3, p0, Lcom/android/settings_ext/sim/MultiSimEnablerPreference;->mSir:Landroid/telephony/SubscriptionInfo;
 
     invoke-virtual {v3}, Landroid/telephony/SubscriptionInfo;->getDisplayName()Ljava/lang/CharSequence;
 
@@ -1109,7 +1109,7 @@
     .restart local v0    # "builder":Landroid/app/AlertDialog$Builder;
     .restart local v2    # "title":Ljava/lang/String;
     :pswitch_0
-    iget-object v3, p0, Lcom/android/settings/sim/MultiSimEnablerPreference;->mContext:Landroid/content/Context;
+    iget-object v3, p0, Lcom/android/settings_ext/sim/MultiSimEnablerPreference;->mContext:Landroid/content/Context;
 
     const v4, 0x7f09086f
 
@@ -1120,19 +1120,19 @@
     invoke-virtual {v0, v3}, Landroid/app/AlertDialog$Builder;->setMessage(Ljava/lang/CharSequence;)Landroid/app/AlertDialog$Builder;
 
     .line 337
-    iget-object v3, p0, Lcom/android/settings/sim/MultiSimEnablerPreference;->mDialogClickListener:Landroid/content/DialogInterface$OnClickListener;
+    iget-object v3, p0, Lcom/android/settings_ext/sim/MultiSimEnablerPreference;->mDialogClickListener:Landroid/content/DialogInterface$OnClickListener;
 
     invoke-virtual {v0, v5, v3}, Landroid/app/AlertDialog$Builder;->setPositiveButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
     .line 338
     const v3, 0x1040009
 
-    iget-object v4, p0, Lcom/android/settings/sim/MultiSimEnablerPreference;->mDialogClickListener:Landroid/content/DialogInterface$OnClickListener;
+    iget-object v4, p0, Lcom/android/settings_ext/sim/MultiSimEnablerPreference;->mDialogClickListener:Landroid/content/DialogInterface$OnClickListener;
 
     invoke-virtual {v0, v3, v4}, Landroid/app/AlertDialog$Builder;->setNegativeButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
     .line 339
-    iget-object v3, p0, Lcom/android/settings/sim/MultiSimEnablerPreference;->mDialogCanceListener:Landroid/content/DialogInterface$OnCancelListener;
+    iget-object v3, p0, Lcom/android/settings_ext/sim/MultiSimEnablerPreference;->mDialogCanceListener:Landroid/content/DialogInterface$OnCancelListener;
 
     invoke-virtual {v0, v3}, Landroid/app/AlertDialog$Builder;->setOnCancelListener(Landroid/content/DialogInterface$OnCancelListener;)Landroid/app/AlertDialog$Builder;
 
@@ -1140,7 +1140,7 @@
 
     .line 342
     :pswitch_1
-    iget-object v3, p0, Lcom/android/settings/sim/MultiSimEnablerPreference;->mContext:Landroid/content/Context;
+    iget-object v3, p0, Lcom/android/settings_ext/sim/MultiSimEnablerPreference;->mContext:Landroid/content/Context;
 
     invoke-virtual {v3, p2}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -1149,7 +1149,7 @@
     invoke-virtual {v0, v3}, Landroid/app/AlertDialog$Builder;->setMessage(Ljava/lang/CharSequence;)Landroid/app/AlertDialog$Builder;
 
     .line 343
-    iget-object v3, p0, Lcom/android/settings/sim/MultiSimEnablerPreference;->mDialogClickListener:Landroid/content/DialogInterface$OnClickListener;
+    iget-object v3, p0, Lcom/android/settings_ext/sim/MultiSimEnablerPreference;->mDialogClickListener:Landroid/content/DialogInterface$OnClickListener;
 
     invoke-virtual {v0, v5, v3}, Landroid/app/AlertDialog$Builder;->setNeutralButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
@@ -1160,11 +1160,11 @@
 
     .line 347
     :pswitch_2
-    iget-boolean v3, p0, Lcom/android/settings/sim/MultiSimEnablerPreference;->mCurrentState:Z
+    iget-boolean v3, p0, Lcom/android/settings_ext/sim/MultiSimEnablerPreference;->mCurrentState:Z
 
     if-eqz v3, :cond_1
 
-    iget-object v3, p0, Lcom/android/settings/sim/MultiSimEnablerPreference;->mContext:Landroid/content/Context;
+    iget-object v3, p0, Lcom/android/settings_ext/sim/MultiSimEnablerPreference;->mContext:Landroid/content/Context;
 
     const v4, 0x7f090875
 
@@ -1187,7 +1187,7 @@
     .line 347
     .end local v1    # "msg":Ljava/lang/String;
     :cond_1
-    iget-object v3, p0, Lcom/android/settings/sim/MultiSimEnablerPreference;->mContext:Landroid/content/Context;
+    iget-object v3, p0, Lcom/android/settings_ext/sim/MultiSimEnablerPreference;->mContext:Landroid/content/Context;
 
     const v4, 0x7f090877
 
@@ -1215,7 +1215,7 @@
     const/4 v4, 0x0
 
     .line 362
-    iget-object v2, p0, Lcom/android/settings/sim/MultiSimEnablerPreference;->mSir:Landroid/telephony/SubscriptionInfo;
+    iget-object v2, p0, Lcom/android/settings_ext/sim/MultiSimEnablerPreference;->mSir:Landroid/telephony/SubscriptionInfo;
 
     if-nez v2, :cond_0
 
@@ -1224,9 +1224,9 @@
     .line 364
     .local v1, "title":Ljava/lang/String;
     :goto_0
-    iget-object v3, p0, Lcom/android/settings/sim/MultiSimEnablerPreference;->mContext:Landroid/content/Context;
+    iget-object v3, p0, Lcom/android/settings_ext/sim/MultiSimEnablerPreference;->mContext:Landroid/content/Context;
 
-    iget-boolean v2, p0, Lcom/android/settings/sim/MultiSimEnablerPreference;->mCurrentState:Z
+    iget-boolean v2, p0, Lcom/android/settings_ext/sim/MultiSimEnablerPreference;->mCurrentState:Z
 
     if-eqz v2, :cond_1
 
@@ -1239,59 +1239,59 @@
 
     .line 366
     .local v0, "msg":Ljava/lang/String;
-    sget-object v2, Lcom/android/settings/sim/MultiSimEnablerPreference;->sProgressDialog:Landroid/app/ProgressDialog;
+    sget-object v2, Lcom/android/settings_ext/sim/MultiSimEnablerPreference;->sProgressDialog:Landroid/app/ProgressDialog;
 
-    invoke-direct {p0, v2}, Lcom/android/settings/sim/MultiSimEnablerPreference;->dismissDialog(Landroid/app/Dialog;)V
+    invoke-direct {p0, v2}, Lcom/android/settings_ext/sim/MultiSimEnablerPreference;->dismissDialog(Landroid/app/Dialog;)V
 
     .line 367
     new-instance v2, Landroid/app/ProgressDialog;
 
-    iget-object v3, p0, Lcom/android/settings/sim/MultiSimEnablerPreference;->mContext:Landroid/content/Context;
+    iget-object v3, p0, Lcom/android/settings_ext/sim/MultiSimEnablerPreference;->mContext:Landroid/content/Context;
 
     invoke-direct {v2, v3}, Landroid/app/ProgressDialog;-><init>(Landroid/content/Context;)V
 
-    sput-object v2, Lcom/android/settings/sim/MultiSimEnablerPreference;->sProgressDialog:Landroid/app/ProgressDialog;
+    sput-object v2, Lcom/android/settings_ext/sim/MultiSimEnablerPreference;->sProgressDialog:Landroid/app/ProgressDialog;
 
     .line 368
-    sget-object v2, Lcom/android/settings/sim/MultiSimEnablerPreference;->sProgressDialog:Landroid/app/ProgressDialog;
+    sget-object v2, Lcom/android/settings_ext/sim/MultiSimEnablerPreference;->sProgressDialog:Landroid/app/ProgressDialog;
 
     const/4 v3, 0x1
 
     invoke-virtual {v2, v3}, Landroid/app/ProgressDialog;->setIndeterminate(Z)V
 
     .line 369
-    sget-object v2, Lcom/android/settings/sim/MultiSimEnablerPreference;->sProgressDialog:Landroid/app/ProgressDialog;
+    sget-object v2, Lcom/android/settings_ext/sim/MultiSimEnablerPreference;->sProgressDialog:Landroid/app/ProgressDialog;
 
     invoke-virtual {v2, v1}, Landroid/app/ProgressDialog;->setTitle(Ljava/lang/CharSequence;)V
 
     .line 370
-    sget-object v2, Lcom/android/settings/sim/MultiSimEnablerPreference;->sProgressDialog:Landroid/app/ProgressDialog;
+    sget-object v2, Lcom/android/settings_ext/sim/MultiSimEnablerPreference;->sProgressDialog:Landroid/app/ProgressDialog;
 
     invoke-virtual {v2, v0}, Landroid/app/ProgressDialog;->setMessage(Ljava/lang/CharSequence;)V
 
     .line 371
-    sget-object v2, Lcom/android/settings/sim/MultiSimEnablerPreference;->sProgressDialog:Landroid/app/ProgressDialog;
+    sget-object v2, Lcom/android/settings_ext/sim/MultiSimEnablerPreference;->sProgressDialog:Landroid/app/ProgressDialog;
 
     invoke-virtual {v2, v4}, Landroid/app/ProgressDialog;->setCancelable(Z)V
 
     .line 372
-    sget-object v2, Lcom/android/settings/sim/MultiSimEnablerPreference;->sProgressDialog:Landroid/app/ProgressDialog;
+    sget-object v2, Lcom/android/settings_ext/sim/MultiSimEnablerPreference;->sProgressDialog:Landroid/app/ProgressDialog;
 
     invoke-virtual {v2, v4}, Landroid/app/ProgressDialog;->setCanceledOnTouchOutside(Z)V
 
     .line 373
-    sget-object v2, Lcom/android/settings/sim/MultiSimEnablerPreference;->sProgressDialog:Landroid/app/ProgressDialog;
+    sget-object v2, Lcom/android/settings_ext/sim/MultiSimEnablerPreference;->sProgressDialog:Landroid/app/ProgressDialog;
 
     invoke-virtual {v2}, Landroid/app/ProgressDialog;->show()V
 
     .line 375
     const/4 v2, 0x4
 
-    iget-object v3, p0, Lcom/android/settings/sim/MultiSimEnablerPreference;->mHandler:Landroid/os/Handler;
+    iget-object v3, p0, Lcom/android/settings_ext/sim/MultiSimEnablerPreference;->mHandler:Landroid/os/Handler;
 
     const/16 v4, 0x7530
 
-    invoke-direct {p0, v2, v3, v4}, Lcom/android/settings/sim/MultiSimEnablerPreference;->sendMessage(ILandroid/os/Handler;I)V
+    invoke-direct {p0, v2, v3, v4}, Lcom/android/settings_ext/sim/MultiSimEnablerPreference;->sendMessage(ILandroid/os/Handler;I)V
 
     .line 376
     return-void
@@ -1300,7 +1300,7 @@
     .end local v0    # "msg":Ljava/lang/String;
     .end local v1    # "title":Ljava/lang/String;
     :cond_0
-    iget-object v2, p0, Lcom/android/settings/sim/MultiSimEnablerPreference;->mSir:Landroid/telephony/SubscriptionInfo;
+    iget-object v2, p0, Lcom/android/settings_ext/sim/MultiSimEnablerPreference;->mSir:Landroid/telephony/SubscriptionInfo;
 
     invoke-virtual {v2}, Landroid/telephony/SubscriptionInfo;->getDisplayName()Ljava/lang/CharSequence;
 
@@ -1326,9 +1326,9 @@
     .prologue
     .line 393
     :try_start_0
-    iget-object v0, p0, Lcom/android/settings/sim/MultiSimEnablerPreference;->mContext:Landroid/content/Context;
+    iget-object v0, p0, Lcom/android/settings_ext/sim/MultiSimEnablerPreference;->mContext:Landroid/content/Context;
 
-    iget-object v1, p0, Lcom/android/settings/sim/MultiSimEnablerPreference;->mReceiver:Landroid/content/BroadcastReceiver;
+    iget-object v1, p0, Lcom/android/settings_ext/sim/MultiSimEnablerPreference;->mReceiver:Landroid/content/BroadcastReceiver;
 
     invoke-virtual {v0, v1}, Landroid/content/Context;->unregisterReceiver(Landroid/content/BroadcastReceiver;)V
     :try_end_0
@@ -1356,7 +1356,7 @@
     const/4 v3, 0x1
 
     .line 221
-    iget-object v5, p0, Lcom/android/settings/sim/MultiSimEnablerPreference;->mContext:Landroid/content/Context;
+    iget-object v5, p0, Lcom/android/settings_ext/sim/MultiSimEnablerPreference;->mContext:Landroid/content/Context;
 
     invoke-virtual {v5}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
 
@@ -1364,7 +1364,7 @@
 
     .line 223
     .local v1, "res":Landroid/content/res/Resources;
-    iget-object v5, p0, Lcom/android/settings/sim/MultiSimEnablerPreference;->mSir:Landroid/telephony/SubscriptionInfo;
+    iget-object v5, p0, Lcom/android/settings_ext/sim/MultiSimEnablerPreference;->mSir:Landroid/telephony/SubscriptionInfo;
 
     iget v5, v5, Landroid/telephony/SubscriptionInfo;->mStatus:I
 
@@ -1385,7 +1385,7 @@
 
     move-result-object v5
 
-    iget-object v6, p0, Lcom/android/settings/sim/MultiSimEnablerPreference;->mSir:Landroid/telephony/SubscriptionInfo;
+    iget-object v6, p0, Lcom/android/settings_ext/sim/MultiSimEnablerPreference;->mSir:Landroid/telephony/SubscriptionInfo;
 
     invoke-virtual {v6}, Landroid/telephony/SubscriptionInfo;->getSubscriptionId()I
 
@@ -1411,7 +1411,7 @@
 
     move-result-object v5
 
-    iget v6, p0, Lcom/android/settings/sim/MultiSimEnablerPreference;->mSlotId:I
+    iget v6, p0, Lcom/android/settings_ext/sim/MultiSimEnablerPreference;->mSlotId:I
 
     invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
@@ -1421,13 +1421,13 @@
 
     move-result-object v5
 
-    invoke-direct {p0, v5}, Lcom/android/settings/sim/MultiSimEnablerPreference;->logd(Ljava/lang/String;)V
+    invoke-direct {p0, v5}, Lcom/android/settings_ext/sim/MultiSimEnablerPreference;->logd(Ljava/lang/String;)V
 
     .line 227
     if-eqz v0, :cond_2
 
     .line 228
-    iget-object v5, p0, Lcom/android/settings/sim/MultiSimEnablerPreference;->mContext:Landroid/content/Context;
+    iget-object v5, p0, Lcom/android/settings_ext/sim/MultiSimEnablerPreference;->mContext:Landroid/content/Context;
 
     new-array v3, v3, [Ljava/lang/Object;
 
@@ -1446,18 +1446,18 @@
     .line 235
     .local v2, "summary":Ljava/lang/String;
     :goto_1
-    iget-object v3, p0, Lcom/android/settings/sim/MultiSimEnablerPreference;->mSubSummary:Landroid/widget/TextView;
+    iget-object v3, p0, Lcom/android/settings_ext/sim/MultiSimEnablerPreference;->mSubSummary:Landroid/widget/TextView;
 
     if-eqz v3, :cond_0
 
     .line 236
-    iget-object v3, p0, Lcom/android/settings/sim/MultiSimEnablerPreference;->mSubSummary:Landroid/widget/TextView;
+    iget-object v3, p0, Lcom/android/settings_ext/sim/MultiSimEnablerPreference;->mSubSummary:Landroid/widget/TextView;
 
     invoke-virtual {v3, v2}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
     .line 238
     :cond_0
-    invoke-direct {p0, v0}, Lcom/android/settings/sim/MultiSimEnablerPreference;->setChecked(Z)V
+    invoke-direct {p0, v0}, Lcom/android/settings_ext/sim/MultiSimEnablerPreference;->setChecked(Z)V
 
     .line 239
     return-void
@@ -1473,11 +1473,11 @@
     .line 231
     .restart local v0    # "isActivated":Z
     :cond_2
-    iget-object v5, p0, Lcom/android/settings/sim/MultiSimEnablerPreference;->mContext:Landroid/content/Context;
+    iget-object v5, p0, Lcom/android/settings_ext/sim/MultiSimEnablerPreference;->mContext:Landroid/content/Context;
 
     new-array v6, v3, [Ljava/lang/Object;
 
-    invoke-direct {p0}, Lcom/android/settings/sim/MultiSimEnablerPreference;->hasCard()Z
+    invoke-direct {p0}, Lcom/android/settings_ext/sim/MultiSimEnablerPreference;->hasCard()Z
 
     move-result v3
 
@@ -1511,7 +1511,7 @@
 
     .prologue
     .line 196
-    iget-object v0, p0, Lcom/android/settings/sim/MultiSimEnablerPreference;->mSubTitle:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/android/settings_ext/sim/MultiSimEnablerPreference;->mSubTitle:Landroid/widget/TextView;
 
     if-nez v0, :cond_0
 
@@ -1521,9 +1521,9 @@
 
     .line 197
     :cond_0
-    iget-object v1, p0, Lcom/android/settings/sim/MultiSimEnablerPreference;->mSubTitle:Landroid/widget/TextView;
+    iget-object v1, p0, Lcom/android/settings_ext/sim/MultiSimEnablerPreference;->mSubTitle:Landroid/widget/TextView;
 
-    iget-object v0, p0, Lcom/android/settings/sim/MultiSimEnablerPreference;->mSir:Landroid/telephony/SubscriptionInfo;
+    iget-object v0, p0, Lcom/android/settings_ext/sim/MultiSimEnablerPreference;->mSir:Landroid/telephony/SubscriptionInfo;
 
     if-nez v0, :cond_1
 
@@ -1535,7 +1535,7 @@
     goto :goto_0
 
     :cond_1
-    iget-object v0, p0, Lcom/android/settings/sim/MultiSimEnablerPreference;->mSir:Landroid/telephony/SubscriptionInfo;
+    iget-object v0, p0, Lcom/android/settings_ext/sim/MultiSimEnablerPreference;->mSir:Landroid/telephony/SubscriptionInfo;
 
     invoke-virtual {v0}, Landroid/telephony/SubscriptionInfo;->getDisplayName()Ljava/lang/CharSequence;
 
@@ -1555,17 +1555,17 @@
 
     .prologue
     .line 386
-    invoke-direct {p0}, Lcom/android/settings/sim/MultiSimEnablerPreference;->unregisterReceiver()V
+    invoke-direct {p0}, Lcom/android/settings_ext/sim/MultiSimEnablerPreference;->unregisterReceiver()V
 
     .line 387
-    sget-object v0, Lcom/android/settings/sim/MultiSimEnablerPreference;->sProgressDialog:Landroid/app/ProgressDialog;
+    sget-object v0, Lcom/android/settings_ext/sim/MultiSimEnablerPreference;->sProgressDialog:Landroid/app/ProgressDialog;
 
-    invoke-direct {p0, v0}, Lcom/android/settings/sim/MultiSimEnablerPreference;->dismissDialog(Landroid/app/Dialog;)V
+    invoke-direct {p0, v0}, Lcom/android/settings_ext/sim/MultiSimEnablerPreference;->dismissDialog(Landroid/app/Dialog;)V
 
     .line 388
-    sget-object v0, Lcom/android/settings/sim/MultiSimEnablerPreference;->sAlertDialog:Landroid/app/AlertDialog;
+    sget-object v0, Lcom/android/settings_ext/sim/MultiSimEnablerPreference;->sAlertDialog:Landroid/app/AlertDialog;
 
-    invoke-direct {p0, v0}, Lcom/android/settings/sim/MultiSimEnablerPreference;->dismissDialog(Landroid/app/Dialog;)V
+    invoke-direct {p0, v0}, Lcom/android/settings_ext/sim/MultiSimEnablerPreference;->dismissDialog(Landroid/app/Dialog;)V
 
     .line 389
     return-void
@@ -1588,7 +1588,7 @@
 
     check-cast v0, Landroid/widget/TextView;
 
-    iput-object v0, p0, Lcom/android/settings/sim/MultiSimEnablerPreference;->mSubTitle:Landroid/widget/TextView;
+    iput-object v0, p0, Lcom/android/settings_ext/sim/MultiSimEnablerPreference;->mSubTitle:Landroid/widget/TextView;
 
     .line 145
     const v0, 0x7f0f005c
@@ -1599,7 +1599,7 @@
 
     check-cast v0, Landroid/widget/TextView;
 
-    iput-object v0, p0, Lcom/android/settings/sim/MultiSimEnablerPreference;->mSubSummary:Landroid/widget/TextView;
+    iput-object v0, p0, Lcom/android/settings_ext/sim/MultiSimEnablerPreference;->mSubSummary:Landroid/widget/TextView;
 
     .line 146
     const v0, 0x7f0f005d
@@ -1610,20 +1610,20 @@
 
     check-cast v0, Landroid/widget/Switch;
 
-    iput-object v0, p0, Lcom/android/settings/sim/MultiSimEnablerPreference;->mSwitch:Landroid/widget/Switch;
+    iput-object v0, p0, Lcom/android/settings_ext/sim/MultiSimEnablerPreference;->mSwitch:Landroid/widget/Switch;
 
     .line 147
-    iget-object v0, p0, Lcom/android/settings/sim/MultiSimEnablerPreference;->mSwitch:Landroid/widget/Switch;
+    iget-object v0, p0, Lcom/android/settings_ext/sim/MultiSimEnablerPreference;->mSwitch:Landroid/widget/Switch;
 
     invoke-virtual {v0, p0}, Landroid/widget/Switch;->setOnCheckedChangeListener(Landroid/widget/CompoundButton$OnCheckedChangeListener;)V
 
     .line 148
-    invoke-virtual {p0}, Lcom/android/settings/sim/MultiSimEnablerPreference;->update()V
+    invoke-virtual {p0}, Lcom/android/settings_ext/sim/MultiSimEnablerPreference;->update()V
 
     .line 150
-    iget-object v0, p0, Lcom/android/settings/sim/MultiSimEnablerPreference;->mSwitch:Landroid/widget/Switch;
+    iget-object v0, p0, Lcom/android/settings_ext/sim/MultiSimEnablerPreference;->mSwitch:Landroid/widget/Switch;
 
-    iget v1, p0, Lcom/android/settings/sim/MultiSimEnablerPreference;->mSwitchVisibility:I
+    iget v1, p0, Lcom/android/settings_ext/sim/MultiSimEnablerPreference;->mSwitchVisibility:I
 
     invoke-virtual {v0, v1}, Landroid/widget/Switch;->setVisibility(I)V
 
@@ -1638,7 +1638,7 @@
 
     .prologue
     .line 261
-    iput-boolean p2, p0, Lcom/android/settings/sim/MultiSimEnablerPreference;->mCurrentState:Z
+    iput-boolean p2, p0, Lcom/android/settings_ext/sim/MultiSimEnablerPreference;->mCurrentState:Z
 
     .line 262
     new-instance v0, Ljava/lang/StringBuilder;
@@ -1659,16 +1659,16 @@
 
     move-result-object v0
 
-    invoke-direct {p0, v0}, Lcom/android/settings/sim/MultiSimEnablerPreference;->logd(Ljava/lang/String;)V
+    invoke-direct {p0, v0}, Lcom/android/settings_ext/sim/MultiSimEnablerPreference;->logd(Ljava/lang/String;)V
 
     .line 264
-    sget-object v1, Lcom/android/settings/sim/MultiSimEnablerPreference;->mSyncLock:Ljava/lang/Object;
+    sget-object v1, Lcom/android/settings_ext/sim/MultiSimEnablerPreference;->mSyncLock:Ljava/lang/Object;
 
     monitor-enter v1
 
     .line 265
     :try_start_0
-    invoke-direct {p0}, Lcom/android/settings/sim/MultiSimEnablerPreference;->configureSubscription()V
+    invoke-direct {p0}, Lcom/android/settings_ext/sim/MultiSimEnablerPreference;->configureSubscription()V
 
     .line 266
     monitor-exit v1
@@ -1693,12 +1693,12 @@
 
     .prologue
     .line 215
-    iget-object v0, p0, Lcom/android/settings/sim/MultiSimEnablerPreference;->mSwitch:Landroid/widget/Switch;
+    iget-object v0, p0, Lcom/android/settings_ext/sim/MultiSimEnablerPreference;->mSwitch:Landroid/widget/Switch;
 
     if-eqz v0, :cond_0
 
     .line 216
-    iget-object v0, p0, Lcom/android/settings/sim/MultiSimEnablerPreference;->mSwitch:Landroid/widget/Switch;
+    iget-object v0, p0, Lcom/android/settings_ext/sim/MultiSimEnablerPreference;->mSwitch:Landroid/widget/Switch;
 
     invoke-virtual {v0, p1}, Landroid/widget/Switch;->setEnabled(Z)V
 
@@ -1713,7 +1713,7 @@
 
     .prologue
     .line 201
-    iput p1, p0, Lcom/android/settings/sim/MultiSimEnablerPreference;->mSwitchVisibility:I
+    iput p1, p0, Lcom/android/settings_ext/sim/MultiSimEnablerPreference;->mSwitchVisibility:I
 
     .line 202
     return-void
@@ -1734,7 +1734,7 @@
 
     move-result-object v2
 
-    iget-object v3, p0, Lcom/android/settings/sim/MultiSimEnablerPreference;->mSir:Landroid/telephony/SubscriptionInfo;
+    iget-object v3, p0, Lcom/android/settings_ext/sim/MultiSimEnablerPreference;->mSir:Landroid/telephony/SubscriptionInfo;
 
     invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
@@ -1744,10 +1744,10 @@
 
     move-result-object v2
 
-    invoke-direct {p0, v2}, Lcom/android/settings/sim/MultiSimEnablerPreference;->logd(Ljava/lang/String;)V
+    invoke-direct {p0, v2}, Lcom/android/settings_ext/sim/MultiSimEnablerPreference;->logd(Ljava/lang/String;)V
 
     .line 156
-    iget-object v2, p0, Lcom/android/settings/sim/MultiSimEnablerPreference;->mContext:Landroid/content/Context;
+    iget-object v2, p0, Lcom/android/settings_ext/sim/MultiSimEnablerPreference;->mContext:Landroid/content/Context;
 
     invoke-virtual {v2}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
 
@@ -1755,13 +1755,13 @@
 
     .line 157
     .local v1, "res":Landroid/content/res/Resources;
-    invoke-direct {p0}, Lcom/android/settings/sim/MultiSimEnablerPreference;->isCurrentSubValid()Z
+    invoke-direct {p0}, Lcom/android/settings_ext/sim/MultiSimEnablerPreference;->isCurrentSubValid()Z
 
     move-result v0
 
     .line 158
     .local v0, "isSubValid":Z
-    invoke-virtual {p0, v0}, Lcom/android/settings/sim/MultiSimEnablerPreference;->setEnabled(Z)V
+    invoke-virtual {p0, v0}, Lcom/android/settings_ext/sim/MultiSimEnablerPreference;->setEnabled(Z)V
 
     .line 160
     new-instance v2, Ljava/lang/StringBuilder;
@@ -1782,16 +1782,16 @@
 
     move-result-object v2
 
-    invoke-direct {p0, v2}, Lcom/android/settings/sim/MultiSimEnablerPreference;->logd(Ljava/lang/String;)V
+    invoke-direct {p0, v2}, Lcom/android/settings_ext/sim/MultiSimEnablerPreference;->logd(Ljava/lang/String;)V
 
     .line 161
     if-eqz v0, :cond_1
 
     .line 162
-    invoke-direct {p0}, Lcom/android/settings/sim/MultiSimEnablerPreference;->updateTitle()V
+    invoke-direct {p0}, Lcom/android/settings_ext/sim/MultiSimEnablerPreference;->updateTitle()V
 
     .line 163
-    invoke-direct {p0}, Lcom/android/settings/sim/MultiSimEnablerPreference;->updateSummary()V
+    invoke-direct {p0}, Lcom/android/settings_ext/sim/MultiSimEnablerPreference;->updateSummary()V
 
     .line 172
     :cond_0
@@ -1800,12 +1800,12 @@
 
     .line 165
     :cond_1
-    iget-object v2, p0, Lcom/android/settings/sim/MultiSimEnablerPreference;->mSubTitle:Landroid/widget/TextView;
+    iget-object v2, p0, Lcom/android/settings_ext/sim/MultiSimEnablerPreference;->mSubTitle:Landroid/widget/TextView;
 
     if-eqz v2, :cond_2
 
     .line 166
-    iget-object v2, p0, Lcom/android/settings/sim/MultiSimEnablerPreference;->mSubTitle:Landroid/widget/TextView;
+    iget-object v2, p0, Lcom/android/settings_ext/sim/MultiSimEnablerPreference;->mSubTitle:Landroid/widget/TextView;
 
     const v3, 0x7f09091c
 
@@ -1815,7 +1815,7 @@
 
     const/4 v5, 0x0
 
-    iget v6, p0, Lcom/android/settings/sim/MultiSimEnablerPreference;->mSlotId:I
+    iget v6, p0, Lcom/android/settings_ext/sim/MultiSimEnablerPreference;->mSlotId:I
 
     add-int/lit8 v6, v6, 0x1
 
@@ -1833,12 +1833,12 @@
 
     .line 168
     :cond_2
-    iget-object v2, p0, Lcom/android/settings/sim/MultiSimEnablerPreference;->mSubSummary:Landroid/widget/TextView;
+    iget-object v2, p0, Lcom/android/settings_ext/sim/MultiSimEnablerPreference;->mSubSummary:Landroid/widget/TextView;
 
     if-eqz v2, :cond_0
 
     .line 169
-    iget-object v2, p0, Lcom/android/settings/sim/MultiSimEnablerPreference;->mSubSummary:Landroid/widget/TextView;
+    iget-object v2, p0, Lcom/android/settings_ext/sim/MultiSimEnablerPreference;->mSubSummary:Landroid/widget/TextView;
 
     const v3, 0x7f09091d
 

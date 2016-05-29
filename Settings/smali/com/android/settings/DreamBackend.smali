@@ -1,4 +1,4 @@
-.class public Lcom/android/settings/DreamBackend;
+.class public Lcom/android/settings_ext/DreamBackend;
 .super Ljava/lang/Object;
 .source "DreamBackend.java"
 
@@ -6,8 +6,8 @@
 # annotations
 .annotation system Ldalvik/annotation/MemberClasses;
     value = {
-        Lcom/android/settings/DreamBackend$DreamInfoComparator;,
-        Lcom/android/settings/DreamBackend$DreamInfo;
+        Lcom/android/settings_ext/DreamBackend$DreamInfoComparator;,
+        Lcom/android/settings_ext/DreamBackend$DreamInfo;
     }
 .end annotation
 
@@ -17,7 +17,7 @@
 
 
 # instance fields
-.field private final mComparator:Lcom/android/settings/DreamBackend$DreamInfoComparator;
+.field private final mComparator:Lcom/android/settings_ext/DreamBackend$DreamInfoComparator;
 
 .field private final mContext:Landroid/content/Context;
 
@@ -40,7 +40,7 @@
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
 
-    const-class v1, Lcom/android/settings/DreamSettings;
+    const-class v1, Lcom/android/settings_ext/DreamSettings;
 
     invoke-virtual {v1}, Ljava/lang/Class;->getSimpleName()Ljava/lang/String;
 
@@ -60,7 +60,7 @@
 
     move-result-object v0
 
-    sput-object v0, Lcom/android/settings/DreamBackend;->TAG:Ljava/lang/String;
+    sput-object v0, Lcom/android/settings_ext/DreamBackend;->TAG:Ljava/lang/String;
 
     return-void
 .end method
@@ -74,7 +74,7 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 83
-    iput-object p1, p0, Lcom/android/settings/DreamBackend;->mContext:Landroid/content/Context;
+    iput-object p1, p0, Lcom/android/settings_ext/DreamBackend;->mContext:Landroid/content/Context;
 
     .line 84
     const-string v0, "dreams"
@@ -87,18 +87,18 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/DreamBackend;->mDreamManager:Landroid/service/dreams/IDreamManager;
+    iput-object v0, p0, Lcom/android/settings_ext/DreamBackend;->mDreamManager:Landroid/service/dreams/IDreamManager;
 
     .line 86
-    new-instance v0, Lcom/android/settings/DreamBackend$DreamInfoComparator;
+    new-instance v0, Lcom/android/settings_ext/DreamBackend$DreamInfoComparator;
 
-    invoke-virtual {p0}, Lcom/android/settings/DreamBackend;->getDefaultDream()Landroid/content/ComponentName;
+    invoke-virtual {p0}, Lcom/android/settings_ext/DreamBackend;->getDefaultDream()Landroid/content/ComponentName;
 
     move-result-object v1
 
-    invoke-direct {v0, v1}, Lcom/android/settings/DreamBackend$DreamInfoComparator;-><init>(Landroid/content/ComponentName;)V
+    invoke-direct {v0, v1}, Lcom/android/settings_ext/DreamBackend$DreamInfoComparator;-><init>(Landroid/content/ComponentName;)V
 
-    iput-object v0, p0, Lcom/android/settings/DreamBackend;->mComparator:Lcom/android/settings/DreamBackend$DreamInfoComparator;
+    iput-object v0, p0, Lcom/android/settings_ext/DreamBackend;->mComparator:Lcom/android/settings_ext/DreamBackend$DreamInfoComparator;
 
     .line 87
     invoke-virtual {p1}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
@@ -111,7 +111,7 @@
 
     move-result v0
 
-    iput-boolean v0, p0, Lcom/android/settings/DreamBackend;->mDreamsEnabledByDefault:Z
+    iput-boolean v0, p0, Lcom/android/settings_ext/DreamBackend;->mDreamsEnabledByDefault:Z
 
     .line 89
     invoke-virtual {p1}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
@@ -124,7 +124,7 @@
 
     move-result v0
 
-    iput-boolean v0, p0, Lcom/android/settings/DreamBackend;->mDreamsActivatedOnSleepByDefault:Z
+    iput-boolean v0, p0, Lcom/android/settings_ext/DreamBackend;->mDreamsActivatedOnSleepByDefault:Z
 
     .line 91
     invoke-virtual {p1}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
@@ -137,7 +137,7 @@
 
     move-result v0
 
-    iput-boolean v0, p0, Lcom/android/settings/DreamBackend;->mDreamsActivatedOnDockByDefault:Z
+    iput-boolean v0, p0, Lcom/android/settings_ext/DreamBackend;->mDreamsActivatedOnDockByDefault:Z
 
     .line 93
     return-void
@@ -154,7 +154,7 @@
     const/4 v1, 0x1
 
     .line 173
-    iget-object v0, p0, Lcom/android/settings/DreamBackend;->mContext:Landroid/content/Context;
+    iget-object v0, p0, Lcom/android/settings_ext/DreamBackend;->mContext:Landroid/content/Context;
 
     invoke-virtual {v0}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
 
@@ -274,7 +274,7 @@
     if-nez v5, :cond_2
 
     .line 250
-    sget-object v10, Lcom/android/settings/DreamBackend;->TAG:Ljava/lang/String;
+    sget-object v10, Lcom/android/settings_ext/DreamBackend;->TAG:Ljava/lang/String;
 
     const-string v11, "No android.service.dream meta-data"
 
@@ -342,7 +342,7 @@
     if-nez v10, :cond_5
 
     .line 261
-    sget-object v10, Lcom/android/settings/DreamBackend;->TAG:Ljava/lang/String;
+    sget-object v10, Lcom/android/settings_ext/DreamBackend;->TAG:Ljava/lang/String;
 
     const-string v11, "Meta-data does not start with dream tag"
 
@@ -401,7 +401,7 @@
     if-eqz v1, :cond_8
 
     .line 277
-    sget-object v10, Lcom/android/settings/DreamBackend;->TAG:Ljava/lang/String;
+    sget-object v10, Lcom/android/settings_ext/DreamBackend;->TAG:Ljava/lang/String;
 
     new-instance v11, Ljava/lang/StringBuilder;
 
@@ -554,7 +554,7 @@
 
     .prologue
     .line 177
-    iget-object v0, p0, Lcom/android/settings/DreamBackend;->mContext:Landroid/content/Context;
+    iget-object v0, p0, Lcom/android/settings_ext/DreamBackend;->mContext:Landroid/content/Context;
 
     invoke-virtual {v0}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
 
@@ -586,7 +586,7 @@
     const/4 v2, 0x0
 
     .line 193
-    iget-object v3, p0, Lcom/android/settings/DreamBackend;->mDreamManager:Landroid/service/dreams/IDreamManager;
+    iget-object v3, p0, Lcom/android/settings_ext/DreamBackend;->mDreamManager:Landroid/service/dreams/IDreamManager;
 
     if-nez v3, :cond_1
 
@@ -598,7 +598,7 @@
     .line 196
     :cond_1
     :try_start_0
-    iget-object v3, p0, Lcom/android/settings/DreamBackend;->mDreamManager:Landroid/service/dreams/IDreamManager;
+    iget-object v3, p0, Lcom/android/settings_ext/DreamBackend;->mDreamManager:Landroid/service/dreams/IDreamManager;
 
     invoke-interface {v3}, Landroid/service/dreams/IDreamManager;->getDreamComponents()[Landroid/content/ComponentName;
 
@@ -627,7 +627,7 @@
 
     .line 199
     .local v1, "e":Landroid/os/RemoteException;
-    sget-object v3, Lcom/android/settings/DreamBackend;->TAG:Ljava/lang/String;
+    sget-object v3, Lcom/android/settings_ext/DreamBackend;->TAG:Ljava/lang/String;
 
     const-string v4, "Failed to get active dream"
 
@@ -643,7 +643,7 @@
     const/4 v4, 0x0
 
     .line 130
-    invoke-virtual {p0}, Lcom/android/settings/DreamBackend;->getActiveDream()Landroid/content/ComponentName;
+    invoke-virtual {p0}, Lcom/android/settings_ext/DreamBackend;->getActiveDream()Landroid/content/ComponentName;
 
     move-result-object v0
 
@@ -652,7 +652,7 @@
     if-eqz v0, :cond_0
 
     .line 132
-    iget-object v5, p0, Lcom/android/settings/DreamBackend;->mContext:Landroid/content/Context;
+    iget-object v5, p0, Lcom/android/settings_ext/DreamBackend;->mContext:Landroid/content/Context;
 
     invoke-virtual {v5}, Landroid/content/Context;->getPackageManager()Landroid/content/pm/PackageManager;
 
@@ -702,7 +702,7 @@
     const/4 v1, 0x0
 
     .line 119
-    iget-object v2, p0, Lcom/android/settings/DreamBackend;->mDreamManager:Landroid/service/dreams/IDreamManager;
+    iget-object v2, p0, Lcom/android/settings_ext/DreamBackend;->mDreamManager:Landroid/service/dreams/IDreamManager;
 
     if-nez v2, :cond_0
 
@@ -713,7 +713,7 @@
     .line 122
     :cond_0
     :try_start_0
-    iget-object v2, p0, Lcom/android/settings/DreamBackend;->mDreamManager:Landroid/service/dreams/IDreamManager;
+    iget-object v2, p0, Lcom/android/settings_ext/DreamBackend;->mDreamManager:Landroid/service/dreams/IDreamManager;
 
     invoke-interface {v2}, Landroid/service/dreams/IDreamManager;->getDefaultDreamComponent()Landroid/content/ComponentName;
     :try_end_0
@@ -729,7 +729,7 @@
 
     .line 124
     .local v0, "e":Landroid/os/RemoteException;
-    sget-object v2, Lcom/android/settings/DreamBackend;->TAG:Ljava/lang/String;
+    sget-object v2, Lcom/android/settings_ext/DreamBackend;->TAG:Ljava/lang/String;
 
     const-string v3, "Failed to get default dream"
 
@@ -745,7 +745,7 @@
             "()",
             "Ljava/util/List",
             "<",
-            "Lcom/android/settings/DreamBackend$DreamInfo;",
+            "Lcom/android/settings_ext/DreamBackend$DreamInfo;",
             ">;"
         }
     .end annotation
@@ -758,16 +758,16 @@
 
     new-array v9, v9, [Ljava/lang/Object;
 
-    invoke-static {v8, v9}, Lcom/android/settings/DreamBackend;->logd(Ljava/lang/String;[Ljava/lang/Object;)V
+    invoke-static {v8, v9}, Lcom/android/settings_ext/DreamBackend;->logd(Ljava/lang/String;[Ljava/lang/Object;)V
 
     .line 97
-    invoke-virtual {p0}, Lcom/android/settings/DreamBackend;->getActiveDream()Landroid/content/ComponentName;
+    invoke-virtual {p0}, Lcom/android/settings_ext/DreamBackend;->getActiveDream()Landroid/content/ComponentName;
 
     move-result-object v0
 
     .line 98
     .local v0, "activeDream":Landroid/content/ComponentName;
-    iget-object v8, p0, Lcom/android/settings/DreamBackend;->mContext:Landroid/content/Context;
+    iget-object v8, p0, Lcom/android/settings_ext/DreamBackend;->mContext:Landroid/content/Context;
 
     invoke-virtual {v8}, Landroid/content/Context;->getPackageManager()Landroid/content/pm/PackageManager;
 
@@ -800,7 +800,7 @@
     invoke-direct {v2, v8}, Ljava/util/ArrayList;-><init>(I)V
 
     .line 103
-    .local v2, "dreamInfos":Ljava/util/List;, "Ljava/util/List<Lcom/android/settings/DreamBackend$DreamInfo;>;"
+    .local v2, "dreamInfos":Ljava/util/List;, "Ljava/util/List<Lcom/android/settings_ext/DreamBackend$DreamInfo;>;"
     invoke-interface {v7}, Ljava/util/List;->iterator()Ljava/util/Iterator;
 
     move-result-object v4
@@ -827,47 +827,47 @@
     if-eqz v8, :cond_0
 
     .line 106
-    new-instance v1, Lcom/android/settings/DreamBackend$DreamInfo;
+    new-instance v1, Lcom/android/settings_ext/DreamBackend$DreamInfo;
 
-    invoke-direct {v1}, Lcom/android/settings/DreamBackend$DreamInfo;-><init>()V
+    invoke-direct {v1}, Lcom/android/settings_ext/DreamBackend$DreamInfo;-><init>()V
 
     .line 107
-    .local v1, "dreamInfo":Lcom/android/settings/DreamBackend$DreamInfo;
+    .local v1, "dreamInfo":Lcom/android/settings_ext/DreamBackend$DreamInfo;
     invoke-virtual {v6, v5}, Landroid/content/pm/ResolveInfo;->loadLabel(Landroid/content/pm/PackageManager;)Ljava/lang/CharSequence;
 
     move-result-object v8
 
-    iput-object v8, v1, Lcom/android/settings/DreamBackend$DreamInfo;->caption:Ljava/lang/CharSequence;
+    iput-object v8, v1, Lcom/android/settings_ext/DreamBackend$DreamInfo;->caption:Ljava/lang/CharSequence;
 
     .line 108
     invoke-virtual {v6, v5}, Landroid/content/pm/ResolveInfo;->loadIcon(Landroid/content/pm/PackageManager;)Landroid/graphics/drawable/Drawable;
 
     move-result-object v8
 
-    iput-object v8, v1, Lcom/android/settings/DreamBackend$DreamInfo;->icon:Landroid/graphics/drawable/Drawable;
+    iput-object v8, v1, Lcom/android/settings_ext/DreamBackend$DreamInfo;->icon:Landroid/graphics/drawable/Drawable;
 
     .line 109
-    invoke-static {v6}, Lcom/android/settings/DreamBackend;->getDreamComponentName(Landroid/content/pm/ResolveInfo;)Landroid/content/ComponentName;
+    invoke-static {v6}, Lcom/android/settings_ext/DreamBackend;->getDreamComponentName(Landroid/content/pm/ResolveInfo;)Landroid/content/ComponentName;
 
     move-result-object v8
 
-    iput-object v8, v1, Lcom/android/settings/DreamBackend$DreamInfo;->componentName:Landroid/content/ComponentName;
+    iput-object v8, v1, Lcom/android/settings_ext/DreamBackend$DreamInfo;->componentName:Landroid/content/ComponentName;
 
     .line 110
-    iget-object v8, v1, Lcom/android/settings/DreamBackend$DreamInfo;->componentName:Landroid/content/ComponentName;
+    iget-object v8, v1, Lcom/android/settings_ext/DreamBackend$DreamInfo;->componentName:Landroid/content/ComponentName;
 
     invoke-virtual {v8, v0}, Landroid/content/ComponentName;->equals(Ljava/lang/Object;)Z
 
     move-result v8
 
-    iput-boolean v8, v1, Lcom/android/settings/DreamBackend$DreamInfo;->isActive:Z
+    iput-boolean v8, v1, Lcom/android/settings_ext/DreamBackend$DreamInfo;->isActive:Z
 
     .line 111
-    invoke-static {v5, v6}, Lcom/android/settings/DreamBackend;->getSettingsComponentName(Landroid/content/pm/PackageManager;Landroid/content/pm/ResolveInfo;)Landroid/content/ComponentName;
+    invoke-static {v5, v6}, Lcom/android/settings_ext/DreamBackend;->getSettingsComponentName(Landroid/content/pm/PackageManager;Landroid/content/pm/ResolveInfo;)Landroid/content/ComponentName;
 
     move-result-object v8
 
-    iput-object v8, v1, Lcom/android/settings/DreamBackend$DreamInfo;->settingsComponentName:Landroid/content/ComponentName;
+    iput-object v8, v1, Lcom/android/settings_ext/DreamBackend$DreamInfo;->settingsComponentName:Landroid/content/ComponentName;
 
     .line 112
     invoke-interface {v2, v1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
@@ -875,10 +875,10 @@
     goto :goto_0
 
     .line 114
-    .end local v1    # "dreamInfo":Lcom/android/settings/DreamBackend$DreamInfo;
+    .end local v1    # "dreamInfo":Lcom/android/settings_ext/DreamBackend$DreamInfo;
     .end local v6    # "resolveInfo":Landroid/content/pm/ResolveInfo;
     :cond_1
-    iget-object v8, p0, Lcom/android/settings/DreamBackend;->mComparator:Lcom/android/settings/DreamBackend$DreamInfoComparator;
+    iget-object v8, p0, Lcom/android/settings_ext/DreamBackend;->mComparator:Lcom/android/settings_ext/DreamBackend$DreamInfoComparator;
 
     invoke-static {v2, v8}, Ljava/util/Collections;->sort(Ljava/util/List;Ljava/util/Comparator;)V
 
@@ -893,9 +893,9 @@
     .line 155
     const-string v0, "screensaver_activate_on_dock"
 
-    iget-boolean v1, p0, Lcom/android/settings/DreamBackend;->mDreamsActivatedOnDockByDefault:Z
+    iget-boolean v1, p0, Lcom/android/settings_ext/DreamBackend;->mDreamsActivatedOnDockByDefault:Z
 
-    invoke-direct {p0, v0, v1}, Lcom/android/settings/DreamBackend;->getBoolean(Ljava/lang/String;Z)Z
+    invoke-direct {p0, v0, v1}, Lcom/android/settings_ext/DreamBackend;->getBoolean(Ljava/lang/String;Z)Z
 
     move-result v0
 
@@ -909,9 +909,9 @@
     .line 164
     const-string v0, "screensaver_activate_on_sleep"
 
-    iget-boolean v1, p0, Lcom/android/settings/DreamBackend;->mDreamsActivatedOnSleepByDefault:Z
+    iget-boolean v1, p0, Lcom/android/settings_ext/DreamBackend;->mDreamsActivatedOnSleepByDefault:Z
 
-    invoke-direct {p0, v0, v1}, Lcom/android/settings/DreamBackend;->getBoolean(Ljava/lang/String;Z)Z
+    invoke-direct {p0, v0, v1}, Lcom/android/settings_ext/DreamBackend;->getBoolean(Ljava/lang/String;Z)Z
 
     move-result v0
 
@@ -925,18 +925,18 @@
     .line 146
     const-string v0, "screensaver_enabled"
 
-    iget-boolean v1, p0, Lcom/android/settings/DreamBackend;->mDreamsEnabledByDefault:Z
+    iget-boolean v1, p0, Lcom/android/settings_ext/DreamBackend;->mDreamsEnabledByDefault:Z
 
-    invoke-direct {p0, v0, v1}, Lcom/android/settings/DreamBackend;->getBoolean(Ljava/lang/String;Z)Z
+    invoke-direct {p0, v0, v1}, Lcom/android/settings_ext/DreamBackend;->getBoolean(Ljava/lang/String;Z)Z
 
     move-result v0
 
     return v0
 .end method
 
-.method public launchSettings(Lcom/android/settings/DreamBackend$DreamInfo;)V
+.method public launchSettings(Lcom/android/settings_ext/DreamBackend$DreamInfo;)V
     .locals 3
-    .param p1, "dreamInfo"    # Lcom/android/settings/DreamBackend$DreamInfo;
+    .param p1, "dreamInfo"    # Lcom/android/settings_ext/DreamBackend$DreamInfo;
 
     .prologue
     .line 205
@@ -950,12 +950,12 @@
 
     aput-object p1, v1, v2
 
-    invoke-static {v0, v1}, Lcom/android/settings/DreamBackend;->logd(Ljava/lang/String;[Ljava/lang/Object;)V
+    invoke-static {v0, v1}, Lcom/android/settings_ext/DreamBackend;->logd(Ljava/lang/String;[Ljava/lang/Object;)V
 
     .line 206
     if-eqz p1, :cond_0
 
-    iget-object v0, p1, Lcom/android/settings/DreamBackend$DreamInfo;->settingsComponentName:Landroid/content/ComponentName;
+    iget-object v0, p1, Lcom/android/settings_ext/DreamBackend$DreamInfo;->settingsComponentName:Landroid/content/ComponentName;
 
     if-nez v0, :cond_1
 
@@ -966,13 +966,13 @@
 
     .line 208
     :cond_1
-    iget-object v0, p0, Lcom/android/settings/DreamBackend;->mContext:Landroid/content/Context;
+    iget-object v0, p0, Lcom/android/settings_ext/DreamBackend;->mContext:Landroid/content/Context;
 
     new-instance v1, Landroid/content/Intent;
 
     invoke-direct {v1}, Landroid/content/Intent;-><init>()V
 
-    iget-object v2, p1, Lcom/android/settings/DreamBackend$DreamInfo;->settingsComponentName:Landroid/content/ComponentName;
+    iget-object v2, p1, Lcom/android/settings_ext/DreamBackend$DreamInfo;->settingsComponentName:Landroid/content/ComponentName;
 
     invoke-virtual {v1, v2}, Landroid/content/Intent;->setComponent(Landroid/content/ComponentName;)Landroid/content/Intent;
 
@@ -1003,12 +1003,12 @@
 
     aput-object v3, v1, v2
 
-    invoke-static {v0, v1}, Lcom/android/settings/DreamBackend;->logd(Ljava/lang/String;[Ljava/lang/Object;)V
+    invoke-static {v0, v1}, Lcom/android/settings_ext/DreamBackend;->logd(Ljava/lang/String;[Ljava/lang/Object;)V
 
     .line 160
     const-string v0, "screensaver_activate_on_dock"
 
-    invoke-direct {p0, v0, p1}, Lcom/android/settings/DreamBackend;->setBoolean(Ljava/lang/String;Z)V
+    invoke-direct {p0, v0, p1}, Lcom/android/settings_ext/DreamBackend;->setBoolean(Ljava/lang/String;Z)V
 
     .line 161
     return-void
@@ -1034,12 +1034,12 @@
 
     aput-object v3, v1, v2
 
-    invoke-static {v0, v1}, Lcom/android/settings/DreamBackend;->logd(Ljava/lang/String;[Ljava/lang/Object;)V
+    invoke-static {v0, v1}, Lcom/android/settings_ext/DreamBackend;->logd(Ljava/lang/String;[Ljava/lang/Object;)V
 
     .line 169
     const-string v0, "screensaver_activate_on_sleep"
 
-    invoke-direct {p0, v0, p1}, Lcom/android/settings/DreamBackend;->setBoolean(Ljava/lang/String;Z)V
+    invoke-direct {p0, v0, p1}, Lcom/android/settings_ext/DreamBackend;->setBoolean(Ljava/lang/String;Z)V
 
     .line 170
     return-void
@@ -1061,10 +1061,10 @@
 
     aput-object p1, v3, v4
 
-    invoke-static {v2, v3}, Lcom/android/settings/DreamBackend;->logd(Ljava/lang/String;[Ljava/lang/Object;)V
+    invoke-static {v2, v3}, Lcom/android/settings_ext/DreamBackend;->logd(Ljava/lang/String;[Ljava/lang/Object;)V
 
     .line 182
-    iget-object v2, p0, Lcom/android/settings/DreamBackend;->mDreamManager:Landroid/service/dreams/IDreamManager;
+    iget-object v2, p0, Lcom/android/settings_ext/DreamBackend;->mDreamManager:Landroid/service/dreams/IDreamManager;
 
     if-nez v2, :cond_0
 
@@ -1085,7 +1085,7 @@
 
     .line 186
     .local v0, "dreams":[Landroid/content/ComponentName;
-    iget-object v2, p0, Lcom/android/settings/DreamBackend;->mDreamManager:Landroid/service/dreams/IDreamManager;
+    iget-object v2, p0, Lcom/android/settings_ext/DreamBackend;->mDreamManager:Landroid/service/dreams/IDreamManager;
 
     if-nez p1, :cond_1
 
@@ -1105,7 +1105,7 @@
 
     .line 188
     .local v1, "e":Landroid/os/RemoteException;
-    sget-object v2, Lcom/android/settings/DreamBackend;->TAG:Ljava/lang/String;
+    sget-object v2, Lcom/android/settings_ext/DreamBackend;->TAG:Ljava/lang/String;
 
     new-instance v3, Ljava/lang/StringBuilder;
 
@@ -1150,12 +1150,12 @@
 
     aput-object v3, v1, v2
 
-    invoke-static {v0, v1}, Lcom/android/settings/DreamBackend;->logd(Ljava/lang/String;[Ljava/lang/Object;)V
+    invoke-static {v0, v1}, Lcom/android/settings_ext/DreamBackend;->logd(Ljava/lang/String;[Ljava/lang/Object;)V
 
     .line 151
     const-string v0, "screensaver_enabled"
 
-    invoke-direct {p0, v0, p1}, Lcom/android/settings/DreamBackend;->setBoolean(Ljava/lang/String;Z)V
+    invoke-direct {p0, v0, p1}, Lcom/android/settings_ext/DreamBackend;->setBoolean(Ljava/lang/String;Z)V
 
     .line 152
     return-void
@@ -1172,10 +1172,10 @@
 
     new-array v2, v2, [Ljava/lang/Object;
 
-    invoke-static {v1, v2}, Lcom/android/settings/DreamBackend;->logd(Ljava/lang/String;[Ljava/lang/Object;)V
+    invoke-static {v1, v2}, Lcom/android/settings_ext/DreamBackend;->logd(Ljava/lang/String;[Ljava/lang/Object;)V
 
     .line 224
-    iget-object v1, p0, Lcom/android/settings/DreamBackend;->mDreamManager:Landroid/service/dreams/IDreamManager;
+    iget-object v1, p0, Lcom/android/settings_ext/DreamBackend;->mDreamManager:Landroid/service/dreams/IDreamManager;
 
     if-nez v1, :cond_0
 
@@ -1186,7 +1186,7 @@
     .line 227
     :cond_0
     :try_start_0
-    iget-object v1, p0, Lcom/android/settings/DreamBackend;->mDreamManager:Landroid/service/dreams/IDreamManager;
+    iget-object v1, p0, Lcom/android/settings_ext/DreamBackend;->mDreamManager:Landroid/service/dreams/IDreamManager;
 
     invoke-interface {v1}, Landroid/service/dreams/IDreamManager;->dream()V
     :try_end_0
@@ -1200,7 +1200,7 @@
 
     .line 229
     .local v0, "e":Landroid/os/RemoteException;
-    sget-object v1, Lcom/android/settings/DreamBackend;->TAG:Ljava/lang/String;
+    sget-object v1, Lcom/android/settings_ext/DreamBackend;->TAG:Ljava/lang/String;
 
     const-string v2, "Failed to dream"
 

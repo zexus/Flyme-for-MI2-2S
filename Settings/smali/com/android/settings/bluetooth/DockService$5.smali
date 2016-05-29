@@ -1,4 +1,4 @@
-.class Lcom/android/settings/bluetooth/DockService$5;
+.class Lcom/android/settings_ext/bluetooth/DockService$5;
 .super Ljava/lang/Object;
 .source "DockService.java"
 
@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/android/settings/bluetooth/DockService;
+    value = Lcom/android/settings_ext/bluetooth/DockService;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -18,16 +18,16 @@
 
 
 # instance fields
-.field final synthetic this$0:Lcom/android/settings/bluetooth/DockService;
+.field final synthetic this$0:Lcom/android/settings_ext/bluetooth/DockService;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/bluetooth/DockService;)V
+.method constructor <init>(Lcom/android/settings_ext/bluetooth/DockService;)V
     .locals 0
 
     .prologue
     .line 606
-    iput-object p1, p0, Lcom/android/settings/bluetooth/DockService$5;->this$0:Lcom/android/settings/bluetooth/DockService;
+    iput-object p1, p0, Lcom/android/settings_ext/bluetooth/DockService$5;->this$0:Lcom/android/settings_ext/bluetooth/DockService;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -50,22 +50,22 @@
     if-ne p2, v1, :cond_1
 
     .line 609
-    iget-object v1, p0, Lcom/android/settings/bluetooth/DockService$5;->this$0:Lcom/android/settings/bluetooth/DockService;
+    iget-object v1, p0, Lcom/android/settings_ext/bluetooth/DockService$5;->this$0:Lcom/android/settings_ext/bluetooth/DockService;
 
-    # getter for: Lcom/android/settings/bluetooth/DockService;->mDevice:Landroid/bluetooth/BluetoothDevice;
-    invoke-static {v1}, Lcom/android/settings/bluetooth/DockService;->access$400(Lcom/android/settings/bluetooth/DockService;)Landroid/bluetooth/BluetoothDevice;
+    # getter for: Lcom/android/settings_ext/bluetooth/DockService;->mDevice:Landroid/bluetooth/BluetoothDevice;
+    invoke-static {v1}, Lcom/android/settings_ext/bluetooth/DockService;->access$400(Lcom/android/settings_ext/bluetooth/DockService;)Landroid/bluetooth/BluetoothDevice;
 
     move-result-object v1
 
     if-eqz v1, :cond_2
 
     .line 610
-    iget-object v1, p0, Lcom/android/settings/bluetooth/DockService$5;->this$0:Lcom/android/settings/bluetooth/DockService;
+    iget-object v1, p0, Lcom/android/settings_ext/bluetooth/DockService$5;->this$0:Lcom/android/settings_ext/bluetooth/DockService;
 
-    iget-object v2, p0, Lcom/android/settings/bluetooth/DockService$5;->this$0:Lcom/android/settings/bluetooth/DockService;
+    iget-object v2, p0, Lcom/android/settings_ext/bluetooth/DockService$5;->this$0:Lcom/android/settings_ext/bluetooth/DockService;
 
-    # getter for: Lcom/android/settings/bluetooth/DockService;->mDevice:Landroid/bluetooth/BluetoothDevice;
-    invoke-static {v2}, Lcom/android/settings/bluetooth/DockService;->access$400(Lcom/android/settings/bluetooth/DockService;)Landroid/bluetooth/BluetoothDevice;
+    # getter for: Lcom/android/settings_ext/bluetooth/DockService;->mDevice:Landroid/bluetooth/BluetoothDevice;
+    invoke-static {v2}, Lcom/android/settings_ext/bluetooth/DockService;->access$400(Lcom/android/settings_ext/bluetooth/DockService;)Landroid/bluetooth/BluetoothDevice;
 
     move-result-object v2
 
@@ -73,19 +73,19 @@
 
     move-result-object v2
 
-    invoke-static {v1, v2}, Lcom/android/settings/bluetooth/LocalBluetoothPreferences;->hasDockAutoConnectSetting(Landroid/content/Context;Ljava/lang/String;)Z
+    invoke-static {v1, v2}, Lcom/android/settings_ext/bluetooth/LocalBluetoothPreferences;->hasDockAutoConnectSetting(Landroid/content/Context;Ljava/lang/String;)Z
 
     move-result v1
 
     if-nez v1, :cond_0
 
     .line 614
-    iget-object v1, p0, Lcom/android/settings/bluetooth/DockService$5;->this$0:Lcom/android/settings/bluetooth/DockService;
+    iget-object v1, p0, Lcom/android/settings_ext/bluetooth/DockService$5;->this$0:Lcom/android/settings_ext/bluetooth/DockService;
 
-    iget-object v2, p0, Lcom/android/settings/bluetooth/DockService$5;->this$0:Lcom/android/settings/bluetooth/DockService;
+    iget-object v2, p0, Lcom/android/settings_ext/bluetooth/DockService$5;->this$0:Lcom/android/settings_ext/bluetooth/DockService;
 
-    # getter for: Lcom/android/settings/bluetooth/DockService;->mDevice:Landroid/bluetooth/BluetoothDevice;
-    invoke-static {v2}, Lcom/android/settings/bluetooth/DockService;->access$400(Lcom/android/settings/bluetooth/DockService;)Landroid/bluetooth/BluetoothDevice;
+    # getter for: Lcom/android/settings_ext/bluetooth/DockService;->mDevice:Landroid/bluetooth/BluetoothDevice;
+    invoke-static {v2}, Lcom/android/settings_ext/bluetooth/DockService;->access$400(Lcom/android/settings_ext/bluetooth/DockService;)Landroid/bluetooth/BluetoothDevice;
 
     move-result-object v2
 
@@ -93,28 +93,28 @@
 
     move-result-object v2
 
-    invoke-static {v1, v2, v0}, Lcom/android/settings/bluetooth/LocalBluetoothPreferences;->saveDockAutoConnectSetting(Landroid/content/Context;Ljava/lang/String;Z)V
+    invoke-static {v1, v2, v0}, Lcom/android/settings_ext/bluetooth/LocalBluetoothPreferences;->saveDockAutoConnectSetting(Landroid/content/Context;Ljava/lang/String;Z)V
 
     .line 620
     :cond_0
-    iget-object v0, p0, Lcom/android/settings/bluetooth/DockService$5;->this$0:Lcom/android/settings/bluetooth/DockService;
+    iget-object v0, p0, Lcom/android/settings_ext/bluetooth/DockService$5;->this$0:Lcom/android/settings_ext/bluetooth/DockService;
 
-    iget-object v1, p0, Lcom/android/settings/bluetooth/DockService$5;->this$0:Lcom/android/settings/bluetooth/DockService;
+    iget-object v1, p0, Lcom/android/settings_ext/bluetooth/DockService$5;->this$0:Lcom/android/settings_ext/bluetooth/DockService;
 
-    # getter for: Lcom/android/settings/bluetooth/DockService;->mDevice:Landroid/bluetooth/BluetoothDevice;
-    invoke-static {v1}, Lcom/android/settings/bluetooth/DockService;->access$400(Lcom/android/settings/bluetooth/DockService;)Landroid/bluetooth/BluetoothDevice;
+    # getter for: Lcom/android/settings_ext/bluetooth/DockService;->mDevice:Landroid/bluetooth/BluetoothDevice;
+    invoke-static {v1}, Lcom/android/settings_ext/bluetooth/DockService;->access$400(Lcom/android/settings_ext/bluetooth/DockService;)Landroid/bluetooth/BluetoothDevice;
 
     move-result-object v1
 
-    iget-object v2, p0, Lcom/android/settings/bluetooth/DockService$5;->this$0:Lcom/android/settings/bluetooth/DockService;
+    iget-object v2, p0, Lcom/android/settings_ext/bluetooth/DockService$5;->this$0:Lcom/android/settings_ext/bluetooth/DockService;
 
-    # getter for: Lcom/android/settings/bluetooth/DockService;->mStartIdAssociatedWithDialog:I
-    invoke-static {v2}, Lcom/android/settings/bluetooth/DockService;->access$600(Lcom/android/settings/bluetooth/DockService;)I
+    # getter for: Lcom/android/settings_ext/bluetooth/DockService;->mStartIdAssociatedWithDialog:I
+    invoke-static {v2}, Lcom/android/settings_ext/bluetooth/DockService;->access$600(Lcom/android/settings_ext/bluetooth/DockService;)I
 
     move-result v2
 
-    # invokes: Lcom/android/settings/bluetooth/DockService;->applyBtSettings(Landroid/bluetooth/BluetoothDevice;I)V
-    invoke-static {v0, v1, v2}, Lcom/android/settings/bluetooth/DockService;->access$700(Lcom/android/settings/bluetooth/DockService;Landroid/bluetooth/BluetoothDevice;I)V
+    # invokes: Lcom/android/settings_ext/bluetooth/DockService;->applyBtSettings(Landroid/bluetooth/BluetoothDevice;I)V
+    invoke-static {v0, v1, v2}, Lcom/android/settings_ext/bluetooth/DockService;->access$700(Lcom/android/settings_ext/bluetooth/DockService;Landroid/bluetooth/BluetoothDevice;I)V
 
     .line 627
     :cond_1
@@ -123,28 +123,28 @@
 
     .line 621
     :cond_2
-    iget-object v1, p0, Lcom/android/settings/bluetooth/DockService$5;->this$0:Lcom/android/settings/bluetooth/DockService;
+    iget-object v1, p0, Lcom/android/settings_ext/bluetooth/DockService$5;->this$0:Lcom/android/settings_ext/bluetooth/DockService;
 
-    # getter for: Lcom/android/settings/bluetooth/DockService;->mAudioMediaCheckbox:Landroid/widget/CheckBox;
-    invoke-static {v1}, Lcom/android/settings/bluetooth/DockService;->access$800(Lcom/android/settings/bluetooth/DockService;)Landroid/widget/CheckBox;
+    # getter for: Lcom/android/settings_ext/bluetooth/DockService;->mAudioMediaCheckbox:Landroid/widget/CheckBox;
+    invoke-static {v1}, Lcom/android/settings_ext/bluetooth/DockService;->access$800(Lcom/android/settings_ext/bluetooth/DockService;)Landroid/widget/CheckBox;
 
     move-result-object v1
 
     if-eqz v1, :cond_1
 
     .line 622
-    iget-object v1, p0, Lcom/android/settings/bluetooth/DockService$5;->this$0:Lcom/android/settings/bluetooth/DockService;
+    iget-object v1, p0, Lcom/android/settings_ext/bluetooth/DockService$5;->this$0:Lcom/android/settings_ext/bluetooth/DockService;
 
-    invoke-virtual {v1}, Lcom/android/settings/bluetooth/DockService;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {v1}, Lcom/android/settings_ext/bluetooth/DockService;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v1
 
     const-string v2, "dock_audio_media_enabled"
 
-    iget-object v3, p0, Lcom/android/settings/bluetooth/DockService$5;->this$0:Lcom/android/settings/bluetooth/DockService;
+    iget-object v3, p0, Lcom/android/settings_ext/bluetooth/DockService$5;->this$0:Lcom/android/settings_ext/bluetooth/DockService;
 
-    # getter for: Lcom/android/settings/bluetooth/DockService;->mAudioMediaCheckbox:Landroid/widget/CheckBox;
-    invoke-static {v3}, Lcom/android/settings/bluetooth/DockService;->access$800(Lcom/android/settings/bluetooth/DockService;)Landroid/widget/CheckBox;
+    # getter for: Lcom/android/settings_ext/bluetooth/DockService;->mAudioMediaCheckbox:Landroid/widget/CheckBox;
+    invoke-static {v3}, Lcom/android/settings_ext/bluetooth/DockService;->access$800(Lcom/android/settings_ext/bluetooth/DockService;)Landroid/widget/CheckBox;
 
     move-result-object v3
 

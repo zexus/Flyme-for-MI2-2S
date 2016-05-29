@@ -1,4 +1,4 @@
-.class Lcom/android/settings/bluetooth/Utf8ByteLengthFilter;
+.class Lcom/android/settings_ext/bluetooth/Utf8ByteLengthFilter;
 .super Ljava/lang/Object;
 .source "Utf8ByteLengthFilter.java"
 
@@ -20,7 +20,7 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 44
-    iput p1, p0, Lcom/android/settings/bluetooth/Utf8ByteLengthFilter;->mMaxBytes:I
+    iput p1, p0, Lcom/android/settings_ext/bluetooth/Utf8ByteLengthFilter;->mMaxBytes:I
 
     .line 45
     return-void
@@ -151,7 +151,7 @@
     .line 64
     .end local v0    # "c":C
     :cond_7
-    iget v6, p0, Lcom/android/settings/bluetooth/Utf8ByteLengthFilter;->mMaxBytes:I
+    iget v6, p0, Lcom/android/settings_ext/bluetooth/Utf8ByteLengthFilter;->mMaxBytes:I
 
     sub-int v4, v6, v1
 

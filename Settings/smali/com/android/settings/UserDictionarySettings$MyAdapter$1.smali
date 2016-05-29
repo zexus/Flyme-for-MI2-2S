@@ -1,4 +1,4 @@
-.class Lcom/android/settings/UserDictionarySettings$MyAdapter$1;
+.class Lcom/android/settings_ext/UserDictionarySettings$MyAdapter$1;
 .super Ljava/lang/Object;
 .source "UserDictionarySettings.java"
 
@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/android/settings/UserDictionarySettings$MyAdapter;
+    value = Lcom/android/settings_ext/UserDictionarySettings$MyAdapter;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -18,16 +18,16 @@
 
 
 # instance fields
-.field final synthetic this$0:Lcom/android/settings/UserDictionarySettings$MyAdapter;
+.field final synthetic this$0:Lcom/android/settings_ext/UserDictionarySettings$MyAdapter;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/UserDictionarySettings$MyAdapter;)V
+.method constructor <init>(Lcom/android/settings_ext/UserDictionarySettings$MyAdapter;)V
     .locals 0
 
     .prologue
     .line 238
-    iput-object p1, p0, Lcom/android/settings/UserDictionarySettings$MyAdapter$1;->this$0:Lcom/android/settings/UserDictionarySettings$MyAdapter;
+    iput-object p1, p0, Lcom/android/settings_ext/UserDictionarySettings$MyAdapter$1;->this$0:Lcom/android/settings_ext/UserDictionarySettings$MyAdapter;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 

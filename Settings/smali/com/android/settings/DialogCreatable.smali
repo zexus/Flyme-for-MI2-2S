@@ -1,4 +1,4 @@
-.class public interface abstract Lcom/android/settings/DialogCreatable;
+.class public interface abstract Lcom/android/settings_ext/DialogCreatable;
 .super Ljava/lang/Object;
 .source "DialogCreatable.java"
 

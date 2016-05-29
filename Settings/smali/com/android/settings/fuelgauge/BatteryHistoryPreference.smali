@@ -1,4 +1,4 @@
-.class public Lcom/android/settings/fuelgauge/BatteryHistoryPreference;
+.class public Lcom/android/settings_ext/fuelgauge/BatteryHistoryPreference;
 .super Landroid/preference/Preference;
 .source "BatteryHistoryPreference.java"
 
@@ -6,7 +6,7 @@
 # instance fields
 .field private final mBatteryBroadcast:Landroid/content/Intent;
 
-.field private mChart:Lcom/android/settings/fuelgauge/BatteryHistoryChart;
+.field private mChart:Lcom/android/settings_ext/fuelgauge/BatteryHistoryChart;
 
 .field private mHideLabels:Z
 
@@ -29,13 +29,13 @@
     .line 47
     const v0, 0x7f040075
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/fuelgauge/BatteryHistoryPreference;->setLayoutResource(I)V
+    invoke-virtual {p0, v0}, Lcom/android/settings_ext/fuelgauge/BatteryHistoryPreference;->setLayoutResource(I)V
 
     .line 48
-    iput-object p2, p0, Lcom/android/settings/fuelgauge/BatteryHistoryPreference;->mStats:Landroid/os/BatteryStats;
+    iput-object p2, p0, Lcom/android/settings_ext/fuelgauge/BatteryHistoryPreference;->mStats:Landroid/os/BatteryStats;
 
     .line 49
-    iput-object p3, p0, Lcom/android/settings/fuelgauge/BatteryHistoryPreference;->mBatteryBroadcast:Landroid/content/Intent;
+    iput-object p3, p0, Lcom/android/settings_ext/fuelgauge/BatteryHistoryPreference;->mBatteryBroadcast:Landroid/content/Intent;
 
     .line 50
     return-void
@@ -58,23 +58,23 @@
 
     move-result-object v0
 
-    check-cast v0, Lcom/android/settings/fuelgauge/BatteryHistoryChart;
+    check-cast v0, Lcom/android/settings_ext/fuelgauge/BatteryHistoryChart;
 
     .line 71
-    .local v0, "chart":Lcom/android/settings/fuelgauge/BatteryHistoryChart;
-    iget-object v3, p0, Lcom/android/settings/fuelgauge/BatteryHistoryPreference;->mChart:Lcom/android/settings/fuelgauge/BatteryHistoryChart;
+    .local v0, "chart":Lcom/android/settings_ext/fuelgauge/BatteryHistoryChart;
+    iget-object v3, p0, Lcom/android/settings_ext/fuelgauge/BatteryHistoryPreference;->mChart:Lcom/android/settings_ext/fuelgauge/BatteryHistoryChart;
 
     if-nez v3, :cond_0
 
     .line 73
-    iget-object v3, p0, Lcom/android/settings/fuelgauge/BatteryHistoryPreference;->mStats:Landroid/os/BatteryStats;
+    iget-object v3, p0, Lcom/android/settings_ext/fuelgauge/BatteryHistoryPreference;->mStats:Landroid/os/BatteryStats;
 
-    iget-object v4, p0, Lcom/android/settings/fuelgauge/BatteryHistoryPreference;->mBatteryBroadcast:Landroid/content/Intent;
+    iget-object v4, p0, Lcom/android/settings_ext/fuelgauge/BatteryHistoryPreference;->mBatteryBroadcast:Landroid/content/Intent;
 
-    invoke-virtual {v0, v3, v4}, Lcom/android/settings/fuelgauge/BatteryHistoryChart;->setStats(Landroid/os/BatteryStats;Landroid/content/Intent;)V
+    invoke-virtual {v0, v3, v4}, Lcom/android/settings_ext/fuelgauge/BatteryHistoryChart;->setStats(Landroid/os/BatteryStats;Landroid/content/Intent;)V
 
     .line 74
-    iput-object v0, p0, Lcom/android/settings/fuelgauge/BatteryHistoryPreference;->mChart:Lcom/android/settings/fuelgauge/BatteryHistoryChart;
+    iput-object v0, p0, Lcom/android/settings_ext/fuelgauge/BatteryHistoryPreference;->mChart:Lcom/android/settings_ext/fuelgauge/BatteryHistoryChart;
 
     .line 86
     :goto_0
@@ -84,12 +84,12 @@
 
     move-result-object v3
 
-    iput-object v3, p0, Lcom/android/settings/fuelgauge/BatteryHistoryPreference;->mLabelHeader:Landroid/view/View;
+    iput-object v3, p0, Lcom/android/settings_ext/fuelgauge/BatteryHistoryPreference;->mLabelHeader:Landroid/view/View;
 
     .line 87
-    iget-object v4, p0, Lcom/android/settings/fuelgauge/BatteryHistoryPreference;->mLabelHeader:Landroid/view/View;
+    iget-object v4, p0, Lcom/android/settings_ext/fuelgauge/BatteryHistoryPreference;->mLabelHeader:Landroid/view/View;
 
-    iget-boolean v3, p0, Lcom/android/settings/fuelgauge/BatteryHistoryPreference;->mHideLabels:Z
+    iget-boolean v3, p0, Lcom/android/settings_ext/fuelgauge/BatteryHistoryPreference;->mHideLabels:Z
 
     if-eqz v3, :cond_2
 
@@ -103,7 +103,7 @@
 
     .line 78
     :cond_0
-    invoke-virtual {v0}, Lcom/android/settings/fuelgauge/BatteryHistoryChart;->getParent()Landroid/view/ViewParent;
+    invoke-virtual {v0}, Lcom/android/settings_ext/fuelgauge/BatteryHistoryChart;->getParent()Landroid/view/ViewParent;
 
     move-result-object v2
 
@@ -120,30 +120,30 @@
     invoke-virtual {v2, v1}, Landroid/view/ViewGroup;->removeViewAt(I)V
 
     .line 81
-    iget-object v3, p0, Lcom/android/settings/fuelgauge/BatteryHistoryPreference;->mChart:Lcom/android/settings/fuelgauge/BatteryHistoryChart;
+    iget-object v3, p0, Lcom/android/settings_ext/fuelgauge/BatteryHistoryPreference;->mChart:Lcom/android/settings_ext/fuelgauge/BatteryHistoryChart;
 
-    invoke-virtual {v3}, Lcom/android/settings/fuelgauge/BatteryHistoryChart;->getParent()Landroid/view/ViewParent;
+    invoke-virtual {v3}, Lcom/android/settings_ext/fuelgauge/BatteryHistoryChart;->getParent()Landroid/view/ViewParent;
 
     move-result-object v3
 
     if-eqz v3, :cond_1
 
     .line 82
-    iget-object v3, p0, Lcom/android/settings/fuelgauge/BatteryHistoryPreference;->mChart:Lcom/android/settings/fuelgauge/BatteryHistoryChart;
+    iget-object v3, p0, Lcom/android/settings_ext/fuelgauge/BatteryHistoryPreference;->mChart:Lcom/android/settings_ext/fuelgauge/BatteryHistoryChart;
 
-    invoke-virtual {v3}, Lcom/android/settings/fuelgauge/BatteryHistoryChart;->getParent()Landroid/view/ViewParent;
+    invoke-virtual {v3}, Lcom/android/settings_ext/fuelgauge/BatteryHistoryChart;->getParent()Landroid/view/ViewParent;
 
     move-result-object v3
 
     check-cast v3, Landroid/view/ViewGroup;
 
-    iget-object v4, p0, Lcom/android/settings/fuelgauge/BatteryHistoryPreference;->mChart:Lcom/android/settings/fuelgauge/BatteryHistoryChart;
+    iget-object v4, p0, Lcom/android/settings_ext/fuelgauge/BatteryHistoryPreference;->mChart:Lcom/android/settings_ext/fuelgauge/BatteryHistoryChart;
 
     invoke-virtual {v3, v4}, Landroid/view/ViewGroup;->removeView(Landroid/view/View;)V
 
     .line 84
     :cond_1
-    iget-object v3, p0, Lcom/android/settings/fuelgauge/BatteryHistoryPreference;->mChart:Lcom/android/settings/fuelgauge/BatteryHistoryChart;
+    iget-object v3, p0, Lcom/android/settings_ext/fuelgauge/BatteryHistoryPreference;->mChart:Lcom/android/settings_ext/fuelgauge/BatteryHistoryChart;
 
     invoke-virtual {v2, v3, v1}, Landroid/view/ViewGroup;->addView(Landroid/view/View;I)V
 
@@ -164,20 +164,20 @@
 
     .prologue
     .line 57
-    iget-boolean v0, p0, Lcom/android/settings/fuelgauge/BatteryHistoryPreference;->mHideLabels:Z
+    iget-boolean v0, p0, Lcom/android/settings_ext/fuelgauge/BatteryHistoryPreference;->mHideLabels:Z
 
     if-eq v0, p1, :cond_0
 
     .line 58
-    iput-boolean p1, p0, Lcom/android/settings/fuelgauge/BatteryHistoryPreference;->mHideLabels:Z
+    iput-boolean p1, p0, Lcom/android/settings_ext/fuelgauge/BatteryHistoryPreference;->mHideLabels:Z
 
     .line 59
-    iget-object v0, p0, Lcom/android/settings/fuelgauge/BatteryHistoryPreference;->mLabelHeader:Landroid/view/View;
+    iget-object v0, p0, Lcom/android/settings_ext/fuelgauge/BatteryHistoryPreference;->mLabelHeader:Landroid/view/View;
 
     if-eqz v0, :cond_0
 
     .line 60
-    iget-object v1, p0, Lcom/android/settings/fuelgauge/BatteryHistoryPreference;->mLabelHeader:Landroid/view/View;
+    iget-object v1, p0, Lcom/android/settings_ext/fuelgauge/BatteryHistoryPreference;->mLabelHeader:Landroid/view/View;
 
     if-eqz p1, :cond_1
 

@@ -1,5 +1,5 @@
-.class public Lcom/android/settings/accessibility/PresetPreference;
-.super Lcom/android/settings/accessibility/ListDialogPreference;
+.class public Lcom/android/settings_ext/accessibility/PresetPreference;
+.super Lcom/android/settings_ext/accessibility/ListDialogPreference;
 .source "PresetPreference.java"
 
 
@@ -15,17 +15,17 @@
 
     .prologue
     .line 35
-    invoke-direct {p0, p1, p2}, Lcom/android/settings/accessibility/ListDialogPreference;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
+    invoke-direct {p0, p1, p2}, Lcom/android/settings_ext/accessibility/ListDialogPreference;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
     .line 37
     const v0, 0x7f04004e
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/accessibility/PresetPreference;->setDialogLayoutResource(I)V
+    invoke-virtual {p0, v0}, Lcom/android/settings_ext/accessibility/PresetPreference;->setDialogLayoutResource(I)V
 
     .line 38
     const v0, 0x7f040092
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/accessibility/PresetPreference;->setListItemLayoutResource(I)V
+    invoke-virtual {p0, v0}, Lcom/android/settings_ext/accessibility/PresetPreference;->setListItemLayoutResource(I)V
 
     .line 40
     const-string v0, "captioning"
@@ -36,7 +36,7 @@
 
     check-cast v0, Landroid/view/accessibility/CaptioningManager;
 
-    iput-object v0, p0, Lcom/android/settings/accessibility/PresetPreference;->mCaptioningManager:Landroid/view/accessibility/CaptioningManager;
+    iput-object v0, p0, Lcom/android/settings_ext/accessibility/PresetPreference;->mCaptioningManager:Landroid/view/accessibility/CaptioningManager;
 
     .line 42
     return-void
@@ -69,18 +69,18 @@
 
     .line 54
     .local v1, "previewText":Lcom/android/internal/widget/SubtitleView;
-    invoke-virtual {p0, p2}, Lcom/android/settings/accessibility/PresetPreference;->getValueAt(I)I
+    invoke-virtual {p0, p2}, Lcom/android/settings_ext/accessibility/PresetPreference;->getValueAt(I)I
 
     move-result v5
 
     .line 55
     .local v5, "value":I
-    iget-object v6, p0, Lcom/android/settings/accessibility/PresetPreference;->mCaptioningManager:Landroid/view/accessibility/CaptioningManager;
+    iget-object v6, p0, Lcom/android/settings_ext/accessibility/PresetPreference;->mCaptioningManager:Landroid/view/accessibility/CaptioningManager;
 
-    invoke-static {v6, v1, v2, v5}, Lcom/android/settings/accessibility/CaptionPropertiesFragment;->applyCaptionProperties(Landroid/view/accessibility/CaptioningManager;Lcom/android/internal/widget/SubtitleView;Landroid/view/View;I)V
+    invoke-static {v6, v1, v2, v5}, Lcom/android/settings_ext/accessibility/CaptionPropertiesFragment;->applyCaptionProperties(Landroid/view/accessibility/CaptioningManager;Lcom/android/internal/widget/SubtitleView;Landroid/view/View;I)V
 
     .line 58
-    invoke-virtual {p0}, Lcom/android/settings/accessibility/PresetPreference;->getContext()Landroid/content/Context;
+    invoke-virtual {p0}, Lcom/android/settings_ext/accessibility/PresetPreference;->getContext()Landroid/content/Context;
 
     move-result-object v6
 
@@ -103,7 +103,7 @@
     invoke-virtual {v1, v6}, Lcom/android/internal/widget/SubtitleView;->setTextSize(F)V
 
     .line 61
-    invoke-virtual {p0, p2}, Lcom/android/settings/accessibility/PresetPreference;->getTitleAt(I)Ljava/lang/CharSequence;
+    invoke-virtual {p0, p2}, Lcom/android/settings_ext/accessibility/PresetPreference;->getTitleAt(I)Ljava/lang/CharSequence;
 
     move-result-object v4
 
@@ -135,7 +135,7 @@
 
     .prologue
     .line 46
-    invoke-virtual {p0}, Lcom/android/settings/accessibility/PresetPreference;->getValue()I
+    invoke-virtual {p0}, Lcom/android/settings_ext/accessibility/PresetPreference;->getValue()I
 
     move-result v0
 
@@ -143,7 +143,7 @@
 
     if-ne v0, v1, :cond_0
 
-    invoke-super {p0}, Lcom/android/settings/accessibility/ListDialogPreference;->shouldDisableDependents()Z
+    invoke-super {p0}, Lcom/android/settings_ext/accessibility/ListDialogPreference;->shouldDisableDependents()Z
 
     move-result v0
 

@@ -1,11 +1,11 @@
-.class interface abstract Lcom/android/settings/inputmethod/InputMethodPreference$OnSavePreferenceListener;
+.class interface abstract Lcom/android/settings_ext/inputmethod/InputMethodPreference$OnSavePreferenceListener;
 .super Ljava/lang/Object;
 .source "InputMethodPreference.java"
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/android/settings/inputmethod/InputMethodPreference;
+    value = Lcom/android/settings_ext/inputmethod/InputMethodPreference;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -15,5 +15,5 @@
 
 
 # virtual methods
-.method public abstract onSaveInputMethodPreference(Lcom/android/settings/inputmethod/InputMethodPreference;)V
+.method public abstract onSaveInputMethodPreference(Lcom/android/settings_ext/inputmethod/InputMethodPreference;)V
 .end method

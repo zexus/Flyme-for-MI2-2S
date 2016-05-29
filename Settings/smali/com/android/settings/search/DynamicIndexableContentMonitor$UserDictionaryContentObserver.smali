@@ -1,11 +1,11 @@
-.class final Lcom/android/settings/search/DynamicIndexableContentMonitor$UserDictionaryContentObserver;
+.class final Lcom/android/settings_ext/search/DynamicIndexableContentMonitor$UserDictionaryContentObserver;
 .super Landroid/database/ContentObserver;
 .source "DynamicIndexableContentMonitor.java"
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/android/settings/search/DynamicIndexableContentMonitor;
+    value = Lcom/android/settings_ext/search/DynamicIndexableContentMonitor;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -15,17 +15,17 @@
 
 
 # instance fields
-.field final synthetic this$0:Lcom/android/settings/search/DynamicIndexableContentMonitor;
+.field final synthetic this$0:Lcom/android/settings_ext/search/DynamicIndexableContentMonitor;
 
 
 # direct methods
-.method public constructor <init>(Lcom/android/settings/search/DynamicIndexableContentMonitor;Landroid/os/Handler;)V
+.method public constructor <init>(Lcom/android/settings_ext/search/DynamicIndexableContentMonitor;Landroid/os/Handler;)V
     .locals 0
     .param p2, "handler"    # Landroid/os/Handler;
 
     .prologue
     .line 295
-    iput-object p1, p0, Lcom/android/settings/search/DynamicIndexableContentMonitor$UserDictionaryContentObserver;->this$0:Lcom/android/settings/search/DynamicIndexableContentMonitor;
+    iput-object p1, p0, Lcom/android/settings_ext/search/DynamicIndexableContentMonitor$UserDictionaryContentObserver;->this$0:Lcom/android/settings_ext/search/DynamicIndexableContentMonitor;
 
     .line 296
     invoke-direct {p0, p2}, Landroid/database/ContentObserver;-><init>(Landroid/os/Handler;)V
@@ -54,24 +54,24 @@
     if-eqz v0, :cond_0
 
     .line 302
-    iget-object v0, p0, Lcom/android/settings/search/DynamicIndexableContentMonitor$UserDictionaryContentObserver;->this$0:Lcom/android/settings/search/DynamicIndexableContentMonitor;
+    iget-object v0, p0, Lcom/android/settings_ext/search/DynamicIndexableContentMonitor$UserDictionaryContentObserver;->this$0:Lcom/android/settings_ext/search/DynamicIndexableContentMonitor;
 
-    # getter for: Lcom/android/settings/search/DynamicIndexableContentMonitor;->mContext:Landroid/content/Context;
-    invoke-static {v0}, Lcom/android/settings/search/DynamicIndexableContentMonitor;->access$200(Lcom/android/settings/search/DynamicIndexableContentMonitor;)Landroid/content/Context;
-
-    move-result-object v0
-
-    invoke-static {v0}, Lcom/android/settings/search/Index;->getInstance(Landroid/content/Context;)Lcom/android/settings/search/Index;
+    # getter for: Lcom/android/settings_ext/search/DynamicIndexableContentMonitor;->mContext:Landroid/content/Context;
+    invoke-static {v0}, Lcom/android/settings_ext/search/DynamicIndexableContentMonitor;->access$200(Lcom/android/settings_ext/search/DynamicIndexableContentMonitor;)Landroid/content/Context;
 
     move-result-object v0
 
-    const-class v1, Lcom/android/settings/inputmethod/InputMethodAndLanguageSettings;
+    invoke-static {v0}, Lcom/android/settings_ext/search/Index;->getInstance(Landroid/content/Context;)Lcom/android/settings_ext/search/Index;
+
+    move-result-object v0
+
+    const-class v1, Lcom/android/settings_ext/inputmethod/InputMethodAndLanguageSettings;
 
     invoke-virtual {v1}, Ljava/lang/Class;->getName()Ljava/lang/String;
 
     move-result-object v1
 
-    invoke-virtual {v0, v1, v2, v2}, Lcom/android/settings/search/Index;->updateFromClassNameResource(Ljava/lang/String;ZZ)V
+    invoke-virtual {v0, v1, v2, v2}, Lcom/android/settings_ext/search/Index;->updateFromClassNameResource(Ljava/lang/String;ZZ)V
 
     .line 305
     :cond_0

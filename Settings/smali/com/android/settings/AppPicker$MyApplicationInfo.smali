@@ -1,11 +1,11 @@
-.class Lcom/android/settings/AppPicker$MyApplicationInfo;
+.class Lcom/android/settings_ext/AppPicker$MyApplicationInfo;
 .super Ljava/lang/Object;
 .source "AppPicker.java"
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/android/settings/AppPicker;
+    value = Lcom/android/settings_ext/AppPicker;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -19,16 +19,16 @@
 
 .field label:Ljava/lang/CharSequence;
 
-.field final synthetic this$0:Lcom/android/settings/AppPicker;
+.field final synthetic this$0:Lcom/android/settings_ext/AppPicker;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/AppPicker;)V
+.method constructor <init>(Lcom/android/settings_ext/AppPicker;)V
     .locals 0
 
     .prologue
     .line 77
-    iput-object p1, p0, Lcom/android/settings/AppPicker$MyApplicationInfo;->this$0:Lcom/android/settings/AppPicker;
+    iput-object p1, p0, Lcom/android/settings_ext/AppPicker$MyApplicationInfo;->this$0:Lcom/android/settings_ext/AppPicker;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 

@@ -1,11 +1,11 @@
-.class Lcom/android/settings/accessibility/ListDialogPreference$SavedState;
+.class Lcom/android/settings_ext/accessibility/ListDialogPreference$SavedState;
 .super Landroid/preference/Preference$BaseSavedState;
 .source "ListDialogPreference.java"
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/android/settings/accessibility/ListDialogPreference;
+    value = Lcom/android/settings_ext/accessibility/ListDialogPreference;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -20,7 +20,7 @@
         value = {
             "Landroid/os/Parcelable$Creator",
             "<",
-            "Lcom/android/settings/accessibility/ListDialogPreference$SavedState;",
+            "Lcom/android/settings_ext/accessibility/ListDialogPreference$SavedState;",
             ">;"
         }
     .end annotation
@@ -37,11 +37,11 @@
 
     .prologue
     .line 312
-    new-instance v0, Lcom/android/settings/accessibility/ListDialogPreference$SavedState$1;
+    new-instance v0, Lcom/android/settings_ext/accessibility/ListDialogPreference$SavedState$1;
 
-    invoke-direct {v0}, Lcom/android/settings/accessibility/ListDialogPreference$SavedState$1;-><init>()V
+    invoke-direct {v0}, Lcom/android/settings_ext/accessibility/ListDialogPreference$SavedState$1;-><init>()V
 
-    sput-object v0, Lcom/android/settings/accessibility/ListDialogPreference$SavedState;->CREATOR:Landroid/os/Parcelable$Creator;
+    sput-object v0, Lcom/android/settings_ext/accessibility/ListDialogPreference$SavedState;->CREATOR:Landroid/os/Parcelable$Creator;
 
     return-void
 .end method
@@ -59,7 +59,7 @@
 
     move-result v0
 
-    iput v0, p0, Lcom/android/settings/accessibility/ListDialogPreference$SavedState;->value:I
+    iput v0, p0, Lcom/android/settings_ext/accessibility/ListDialogPreference$SavedState;->value:I
 
     .line 299
     return-void
@@ -89,7 +89,7 @@
     invoke-super {p0, p1, p2}, Landroid/preference/Preference$BaseSavedState;->writeToParcel(Landroid/os/Parcel;I)V
 
     .line 304
-    iget v0, p0, Lcom/android/settings/accessibility/ListDialogPreference$SavedState;->value:I
+    iget v0, p0, Lcom/android/settings_ext/accessibility/ListDialogPreference$SavedState;->value:I
 
     invoke-virtual {p1, v0}, Landroid/os/Parcel;->writeInt(I)V
 

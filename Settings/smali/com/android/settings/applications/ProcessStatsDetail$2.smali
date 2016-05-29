@@ -1,4 +1,4 @@
-.class final Lcom/android/settings/applications/ProcessStatsDetail$2;
+.class final Lcom/android/settings_ext/applications/ProcessStatsDetail$2;
 .super Ljava/lang/Object;
 .source "ProcessStatsDetail.java"
 
@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/android/settings/applications/ProcessStatsDetail;
+    value = Lcom/android/settings_ext/applications/ProcessStatsDetail;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -23,7 +23,7 @@
         "<",
         "Ljava/util/ArrayList",
         "<",
-        "Lcom/android/settings/applications/ProcStatsEntry$Service;",
+        "Lcom/android/settings_ext/applications/ProcStatsEntry$Service;",
         ">;>;"
     }
 .end annotation
@@ -55,7 +55,7 @@
     check-cast p2, Ljava/util/ArrayList;
 
     .end local p2    # "x1":Ljava/lang/Object;
-    invoke-virtual {p0, p1, p2}, Lcom/android/settings/applications/ProcessStatsDetail$2;->compare(Ljava/util/ArrayList;Ljava/util/ArrayList;)I
+    invoke-virtual {p0, p1, p2}, Lcom/android/settings_ext/applications/ProcessStatsDetail$2;->compare(Ljava/util/ArrayList;Ljava/util/ArrayList;)I
 
     move-result v0
 
@@ -69,18 +69,18 @@
             "(",
             "Ljava/util/ArrayList",
             "<",
-            "Lcom/android/settings/applications/ProcStatsEntry$Service;",
+            "Lcom/android/settings_ext/applications/ProcStatsEntry$Service;",
             ">;",
             "Ljava/util/ArrayList",
             "<",
-            "Lcom/android/settings/applications/ProcStatsEntry$Service;",
+            "Lcom/android/settings_ext/applications/ProcStatsEntry$Service;",
             ">;)I"
         }
     .end annotation
 
     .prologue
-    .local p1, "lhs":Ljava/util/ArrayList;, "Ljava/util/ArrayList<Lcom/android/settings/applications/ProcStatsEntry$Service;>;"
-    .local p2, "rhs":Ljava/util/ArrayList;, "Ljava/util/ArrayList<Lcom/android/settings/applications/ProcStatsEntry$Service;>;"
+    .local p1, "lhs":Ljava/util/ArrayList;, "Ljava/util/ArrayList<Lcom/android/settings_ext/applications/ProcStatsEntry$Service;>;"
+    .local p2, "rhs":Ljava/util/ArrayList;, "Ljava/util/ArrayList<Lcom/android/settings_ext/applications/ProcStatsEntry$Service;>;"
     const-wide/16 v6, 0x0
 
     const/4 v5, 0x0
@@ -96,9 +96,9 @@
 
     move-result-object v4
 
-    check-cast v4, Lcom/android/settings/applications/ProcStatsEntry$Service;
+    check-cast v4, Lcom/android/settings_ext/applications/ProcStatsEntry$Service;
 
-    iget-wide v0, v4, Lcom/android/settings/applications/ProcStatsEntry$Service;->mDuration:J
+    iget-wide v0, v4, Lcom/android/settings_ext/applications/ProcStatsEntry$Service;->mDuration:J
 
     .line 224
     .local v0, "topLhs":J
@@ -113,9 +113,9 @@
 
     move-result-object v4
 
-    check-cast v4, Lcom/android/settings/applications/ProcStatsEntry$Service;
+    check-cast v4, Lcom/android/settings_ext/applications/ProcStatsEntry$Service;
 
-    iget-wide v2, v4, Lcom/android/settings/applications/ProcStatsEntry$Service;->mDuration:J
+    iget-wide v2, v4, Lcom/android/settings_ext/applications/ProcStatsEntry$Service;->mDuration:J
 
     .line 225
     .local v2, "topRhs":J

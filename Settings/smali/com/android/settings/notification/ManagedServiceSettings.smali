@@ -1,4 +1,4 @@
-.class public abstract Lcom/android/settings/notification/ManagedServiceSettings;
+.class public abstract Lcom/android/settings_ext/notification/ManagedServiceSettings;
 .super Landroid/app/ListFragment;
 .source "ManagedServiceSettings.java"
 
@@ -6,10 +6,10 @@
 # annotations
 .annotation system Ldalvik/annotation/MemberClasses;
     value = {
-        Lcom/android/settings/notification/ManagedServiceSettings$Config;,
-        Lcom/android/settings/notification/ManagedServiceSettings$ServiceListAdapter;,
-        Lcom/android/settings/notification/ManagedServiceSettings$ViewHolder;,
-        Lcom/android/settings/notification/ManagedServiceSettings$ScaryWarningDialogFragment;
+        Lcom/android/settings_ext/notification/ManagedServiceSettings$Config;,
+        Lcom/android/settings_ext/notification/ManagedServiceSettings$ServiceListAdapter;,
+        Lcom/android/settings_ext/notification/ManagedServiceSettings$ViewHolder;,
+        Lcom/android/settings_ext/notification/ManagedServiceSettings$ScaryWarningDialogFragment;
     }
 .end annotation
 
@@ -17,7 +17,7 @@
 # instance fields
 .field private mCR:Landroid/content/ContentResolver;
 
-.field private final mConfig:Lcom/android/settings/notification/ManagedServiceSettings$Config;
+.field private final mConfig:Lcom/android/settings_ext/notification/ManagedServiceSettings$Config;
 
 .field private final mEnabledServices:Ljava/util/HashSet;
     .annotation system Ldalvik/annotation/Signature;
@@ -30,7 +30,7 @@
     .end annotation
 .end field
 
-.field private mListAdapter:Lcom/android/settings/notification/ManagedServiceSettings$ServiceListAdapter;
+.field private mListAdapter:Lcom/android/settings_ext/notification/ManagedServiceSettings$ServiceListAdapter;
 
 .field private mPM:Landroid/content/pm/PackageManager;
 
@@ -52,109 +52,109 @@
 
     invoke-direct {v0}, Ljava/util/HashSet;-><init>()V
 
-    iput-object v0, p0, Lcom/android/settings/notification/ManagedServiceSettings;->mEnabledServices:Ljava/util/HashSet;
+    iput-object v0, p0, Lcom/android/settings_ext/notification/ManagedServiceSettings;->mEnabledServices:Ljava/util/HashSet;
 
     .line 71
-    new-instance v0, Lcom/android/settings/notification/ManagedServiceSettings$1;
+    new-instance v0, Lcom/android/settings_ext/notification/ManagedServiceSettings$1;
 
     new-instance v1, Landroid/os/Handler;
 
     invoke-direct {v1}, Landroid/os/Handler;-><init>()V
 
-    invoke-direct {v0, p0, v1}, Lcom/android/settings/notification/ManagedServiceSettings$1;-><init>(Lcom/android/settings/notification/ManagedServiceSettings;Landroid/os/Handler;)V
+    invoke-direct {v0, p0, v1}, Lcom/android/settings_ext/notification/ManagedServiceSettings$1;-><init>(Lcom/android/settings_ext/notification/ManagedServiceSettings;Landroid/os/Handler;)V
 
-    iput-object v0, p0, Lcom/android/settings/notification/ManagedServiceSettings;->mSettingsObserver:Landroid/database/ContentObserver;
+    iput-object v0, p0, Lcom/android/settings_ext/notification/ManagedServiceSettings;->mSettingsObserver:Landroid/database/ContentObserver;
 
     .line 78
-    new-instance v0, Lcom/android/settings/notification/ManagedServiceSettings$2;
+    new-instance v0, Lcom/android/settings_ext/notification/ManagedServiceSettings$2;
 
-    invoke-direct {v0, p0}, Lcom/android/settings/notification/ManagedServiceSettings$2;-><init>(Lcom/android/settings/notification/ManagedServiceSettings;)V
+    invoke-direct {v0, p0}, Lcom/android/settings_ext/notification/ManagedServiceSettings$2;-><init>(Lcom/android/settings_ext/notification/ManagedServiceSettings;)V
 
-    iput-object v0, p0, Lcom/android/settings/notification/ManagedServiceSettings;->mPackageReceiver:Landroid/content/BroadcastReceiver;
+    iput-object v0, p0, Lcom/android/settings_ext/notification/ManagedServiceSettings;->mPackageReceiver:Landroid/content/BroadcastReceiver;
 
     .line 68
-    invoke-virtual {p0}, Lcom/android/settings/notification/ManagedServiceSettings;->getConfig()Lcom/android/settings/notification/ManagedServiceSettings$Config;
+    invoke-virtual {p0}, Lcom/android/settings_ext/notification/ManagedServiceSettings;->getConfig()Lcom/android/settings_ext/notification/ManagedServiceSettings$Config;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/notification/ManagedServiceSettings;->mConfig:Lcom/android/settings/notification/ManagedServiceSettings$Config;
+    iput-object v0, p0, Lcom/android/settings_ext/notification/ManagedServiceSettings;->mConfig:Lcom/android/settings_ext/notification/ManagedServiceSettings$Config;
 
     .line 69
     return-void
 .end method
 
-.method static synthetic access$000(Lcom/android/settings/notification/ManagedServiceSettings;)V
+.method static synthetic access$000(Lcom/android/settings_ext/notification/ManagedServiceSettings;)V
     .locals 0
-    .param p0, "x0"    # Lcom/android/settings/notification/ManagedServiceSettings;
+    .param p0, "x0"    # Lcom/android/settings_ext/notification/ManagedServiceSettings;
 
     .prologue
     .line 55
-    invoke-direct {p0}, Lcom/android/settings/notification/ManagedServiceSettings;->updateList()V
+    invoke-direct {p0}, Lcom/android/settings_ext/notification/ManagedServiceSettings;->updateList()V
 
     return-void
 .end method
 
-.method static synthetic access$100(Lcom/android/settings/notification/ManagedServiceSettings;)Lcom/android/settings/notification/ManagedServiceSettings$Config;
+.method static synthetic access$100(Lcom/android/settings_ext/notification/ManagedServiceSettings;)Lcom/android/settings_ext/notification/ManagedServiceSettings$Config;
     .locals 1
-    .param p0, "x0"    # Lcom/android/settings/notification/ManagedServiceSettings;
+    .param p0, "x0"    # Lcom/android/settings_ext/notification/ManagedServiceSettings;
 
     .prologue
     .line 55
-    iget-object v0, p0, Lcom/android/settings/notification/ManagedServiceSettings;->mConfig:Lcom/android/settings/notification/ManagedServiceSettings$Config;
+    iget-object v0, p0, Lcom/android/settings_ext/notification/ManagedServiceSettings;->mConfig:Lcom/android/settings_ext/notification/ManagedServiceSettings$Config;
 
     return-object v0
 .end method
 
-.method static synthetic access$200(Lcom/android/settings/notification/ManagedServiceSettings;)Ljava/util/HashSet;
+.method static synthetic access$200(Lcom/android/settings_ext/notification/ManagedServiceSettings;)Ljava/util/HashSet;
     .locals 1
-    .param p0, "x0"    # Lcom/android/settings/notification/ManagedServiceSettings;
+    .param p0, "x0"    # Lcom/android/settings_ext/notification/ManagedServiceSettings;
 
     .prologue
     .line 55
-    iget-object v0, p0, Lcom/android/settings/notification/ManagedServiceSettings;->mEnabledServices:Ljava/util/HashSet;
+    iget-object v0, p0, Lcom/android/settings_ext/notification/ManagedServiceSettings;->mEnabledServices:Ljava/util/HashSet;
 
     return-object v0
 .end method
 
-.method static synthetic access$300(Lcom/android/settings/notification/ManagedServiceSettings;)V
+.method static synthetic access$300(Lcom/android/settings_ext/notification/ManagedServiceSettings;)V
     .locals 0
-    .param p0, "x0"    # Lcom/android/settings/notification/ManagedServiceSettings;
+    .param p0, "x0"    # Lcom/android/settings_ext/notification/ManagedServiceSettings;
 
     .prologue
     .line 55
-    invoke-direct {p0}, Lcom/android/settings/notification/ManagedServiceSettings;->saveEnabledServices()V
+    invoke-direct {p0}, Lcom/android/settings_ext/notification/ManagedServiceSettings;->saveEnabledServices()V
 
     return-void
 .end method
 
-.method static synthetic access$500(Lcom/android/settings/notification/ManagedServiceSettings;)Landroid/content/pm/PackageManager;
+.method static synthetic access$500(Lcom/android/settings_ext/notification/ManagedServiceSettings;)Landroid/content/pm/PackageManager;
     .locals 1
-    .param p0, "x0"    # Lcom/android/settings/notification/ManagedServiceSettings;
+    .param p0, "x0"    # Lcom/android/settings_ext/notification/ManagedServiceSettings;
 
     .prologue
     .line 55
-    iget-object v0, p0, Lcom/android/settings/notification/ManagedServiceSettings;->mPM:Landroid/content/pm/PackageManager;
+    iget-object v0, p0, Lcom/android/settings_ext/notification/ManagedServiceSettings;->mPM:Landroid/content/pm/PackageManager;
 
     return-object v0
 .end method
 
-.method static synthetic access$600(Lcom/android/settings/notification/ManagedServiceSettings;Landroid/content/pm/ServiceInfo;)Z
+.method static synthetic access$600(Lcom/android/settings_ext/notification/ManagedServiceSettings;Landroid/content/pm/ServiceInfo;)Z
     .locals 1
-    .param p0, "x0"    # Lcom/android/settings/notification/ManagedServiceSettings;
+    .param p0, "x0"    # Lcom/android/settings_ext/notification/ManagedServiceSettings;
     .param p1, "x1"    # Landroid/content/pm/ServiceInfo;
 
     .prologue
     .line 55
-    invoke-direct {p0, p1}, Lcom/android/settings/notification/ManagedServiceSettings;->isServiceEnabled(Landroid/content/pm/ServiceInfo;)Z
+    invoke-direct {p0, p1}, Lcom/android/settings_ext/notification/ManagedServiceSettings;->isServiceEnabled(Landroid/content/pm/ServiceInfo;)Z
 
     move-result v0
 
     return v0
 .end method
 
-.method protected static getEnabledServicesCount(Lcom/android/settings/notification/ManagedServiceSettings$Config;Landroid/content/Context;)I
+.method protected static getEnabledServicesCount(Lcom/android/settings_ext/notification/ManagedServiceSettings$Config;Landroid/content/Context;)I
     .locals 4
-    .param p0, "config"    # Lcom/android/settings/notification/ManagedServiceSettings$Config;
+    .param p0, "config"    # Lcom/android/settings_ext/notification/ManagedServiceSettings$Config;
     .param p1, "context"    # Landroid/content/Context;
 
     .prologue
@@ -163,7 +163,7 @@
 
     move-result-object v2
 
-    iget-object v3, p0, Lcom/android/settings/notification/ManagedServiceSettings$Config;->setting:Ljava/lang/String;
+    iget-object v3, p0, Lcom/android/settings_ext/notification/ManagedServiceSettings$Config;->setting:Ljava/lang/String;
 
     invoke-static {v2, v3}, Landroid/provider/Settings$Secure;->getString(Landroid/content/ContentResolver;Ljava/lang/String;)Ljava/lang/String;
 
@@ -203,14 +203,14 @@
     goto :goto_0
 .end method
 
-.method private static getServices(Lcom/android/settings/notification/ManagedServiceSettings$Config;Landroid/widget/ArrayAdapter;Landroid/content/pm/PackageManager;)I
+.method private static getServices(Lcom/android/settings_ext/notification/ManagedServiceSettings$Config;Landroid/widget/ArrayAdapter;Landroid/content/pm/PackageManager;)I
     .locals 10
-    .param p0, "c"    # Lcom/android/settings/notification/ManagedServiceSettings$Config;
+    .param p0, "c"    # Lcom/android/settings_ext/notification/ManagedServiceSettings$Config;
     .param p2, "pm"    # Landroid/content/pm/PackageManager;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "Lcom/android/settings/notification/ManagedServiceSettings$Config;",
+            "Lcom/android/settings_ext/notification/ManagedServiceSettings$Config;",
             "Landroid/widget/ArrayAdapter",
             "<",
             "Landroid/content/pm/ServiceInfo;",
@@ -242,7 +242,7 @@
     .local v6, "user":I
     new-instance v7, Landroid/content/Intent;
 
-    iget-object v8, p0, Lcom/android/settings/notification/ManagedServiceSettings$Config;->intentAction:Ljava/lang/String;
+    iget-object v8, p0, Lcom/android/settings_ext/notification/ManagedServiceSettings$Config;->intentAction:Ljava/lang/String;
 
     invoke-direct {v7, v8}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
 
@@ -278,7 +278,7 @@
 
     .line 236
     .local v2, "info":Landroid/content/pm/ServiceInfo;
-    iget-object v7, p0, Lcom/android/settings/notification/ManagedServiceSettings$Config;->permission:Ljava/lang/String;
+    iget-object v7, p0, Lcom/android/settings_ext/notification/ManagedServiceSettings$Config;->permission:Ljava/lang/String;
 
     iget-object v8, v2, Landroid/content/pm/ServiceInfo;->permission:Ljava/lang/String;
 
@@ -289,7 +289,7 @@
     if-nez v7, :cond_1
 
     .line 237
-    iget-object v7, p0, Lcom/android/settings/notification/ManagedServiceSettings$Config;->tag:Ljava/lang/String;
+    iget-object v7, p0, Lcom/android/settings_ext/notification/ManagedServiceSettings$Config;->tag:Ljava/lang/String;
 
     new-instance v8, Ljava/lang/StringBuilder;
 
@@ -301,7 +301,7 @@
 
     move-result-object v8
 
-    iget-object v9, p0, Lcom/android/settings/notification/ManagedServiceSettings$Config;->noun:Ljava/lang/String;
+    iget-object v9, p0, Lcom/android/settings_ext/notification/ManagedServiceSettings$Config;->noun:Ljava/lang/String;
 
     invoke-virtual {v8, v9}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -337,7 +337,7 @@
 
     move-result-object v8
 
-    iget-object v9, p0, Lcom/android/settings/notification/ManagedServiceSettings$Config;->permission:Ljava/lang/String;
+    iget-object v9, p0, Lcom/android/settings_ext/notification/ManagedServiceSettings$Config;->permission:Ljava/lang/String;
 
     invoke-virtual {v8, v9}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -375,16 +375,16 @@
     return v5
 .end method
 
-.method protected static getServicesCount(Lcom/android/settings/notification/ManagedServiceSettings$Config;Landroid/content/pm/PackageManager;)I
+.method protected static getServicesCount(Lcom/android/settings_ext/notification/ManagedServiceSettings$Config;Landroid/content/pm/PackageManager;)I
     .locals 1
-    .param p0, "c"    # Lcom/android/settings/notification/ManagedServiceSettings$Config;
+    .param p0, "c"    # Lcom/android/settings_ext/notification/ManagedServiceSettings$Config;
     .param p1, "pm"    # Landroid/content/pm/PackageManager;
 
     .prologue
     .line 217
     const/4 v0, 0x0
 
-    invoke-static {p0, v0, p1}, Lcom/android/settings/notification/ManagedServiceSettings;->getServices(Lcom/android/settings/notification/ManagedServiceSettings$Config;Landroid/widget/ArrayAdapter;Landroid/content/pm/PackageManager;)I
+    invoke-static {p0, v0, p1}, Lcom/android/settings_ext/notification/ManagedServiceSettings;->getServices(Lcom/android/settings_ext/notification/ManagedServiceSettings$Config;Landroid/widget/ArrayAdapter;Landroid/content/pm/PackageManager;)I
 
     move-result v0
 
@@ -407,7 +407,7 @@
 
     .line 253
     .local v0, "cn":Landroid/content/ComponentName;
-    iget-object v1, p0, Lcom/android/settings/notification/ManagedServiceSettings;->mEnabledServices:Ljava/util/HashSet;
+    iget-object v1, p0, Lcom/android/settings_ext/notification/ManagedServiceSettings;->mEnabledServices:Ljava/util/HashSet;
 
     invoke-virtual {v1, v0}, Ljava/util/HashSet;->contains(Ljava/lang/Object;)Z
 
@@ -421,16 +421,16 @@
 
     .prologue
     .line 172
-    iget-object v4, p0, Lcom/android/settings/notification/ManagedServiceSettings;->mEnabledServices:Ljava/util/HashSet;
+    iget-object v4, p0, Lcom/android/settings_ext/notification/ManagedServiceSettings;->mEnabledServices:Ljava/util/HashSet;
 
     invoke-virtual {v4}, Ljava/util/HashSet;->clear()V
 
     .line 173
-    iget-object v4, p0, Lcom/android/settings/notification/ManagedServiceSettings;->mCR:Landroid/content/ContentResolver;
+    iget-object v4, p0, Lcom/android/settings_ext/notification/ManagedServiceSettings;->mCR:Landroid/content/ContentResolver;
 
-    iget-object v5, p0, Lcom/android/settings/notification/ManagedServiceSettings;->mConfig:Lcom/android/settings/notification/ManagedServiceSettings$Config;
+    iget-object v5, p0, Lcom/android/settings_ext/notification/ManagedServiceSettings;->mConfig:Lcom/android/settings_ext/notification/ManagedServiceSettings$Config;
 
-    iget-object v5, v5, Lcom/android/settings/notification/ManagedServiceSettings$Config;->setting:Ljava/lang/String;
+    iget-object v5, v5, Lcom/android/settings_ext/notification/ManagedServiceSettings$Config;->setting:Ljava/lang/String;
 
     invoke-static {v4, v5}, Landroid/provider/Settings$Secure;->getString(Landroid/content/ContentResolver;Ljava/lang/String;)Ljava/lang/String;
 
@@ -477,7 +477,7 @@
     if-eqz v0, :cond_0
 
     .line 179
-    iget-object v4, p0, Lcom/android/settings/notification/ManagedServiceSettings;->mEnabledServices:Ljava/util/HashSet;
+    iget-object v4, p0, Lcom/android/settings_ext/notification/ManagedServiceSettings;->mEnabledServices:Ljava/util/HashSet;
 
     invoke-virtual {v4, v0}, Ljava/util/HashSet;->add(Ljava/lang/Object;)Z
 
@@ -504,7 +504,7 @@
 
     .line 187
     .local v2, "sb":Ljava/lang/StringBuilder;
-    iget-object v3, p0, Lcom/android/settings/notification/ManagedServiceSettings;->mEnabledServices:Ljava/util/HashSet;
+    iget-object v3, p0, Lcom/android/settings_ext/notification/ManagedServiceSettings;->mEnabledServices:Ljava/util/HashSet;
 
     invoke-virtual {v3}, Ljava/util/HashSet;->iterator()Ljava/util/Iterator;
 
@@ -556,11 +556,11 @@
     .line 195
     .end local v0    # "cn":Landroid/content/ComponentName;
     :cond_1
-    iget-object v4, p0, Lcom/android/settings/notification/ManagedServiceSettings;->mCR:Landroid/content/ContentResolver;
+    iget-object v4, p0, Lcom/android/settings_ext/notification/ManagedServiceSettings;->mCR:Landroid/content/ContentResolver;
 
-    iget-object v3, p0, Lcom/android/settings/notification/ManagedServiceSettings;->mConfig:Lcom/android/settings/notification/ManagedServiceSettings$Config;
+    iget-object v3, p0, Lcom/android/settings_ext/notification/ManagedServiceSettings;->mConfig:Lcom/android/settings_ext/notification/ManagedServiceSettings$Config;
 
-    iget-object v5, v3, Lcom/android/settings/notification/ManagedServiceSettings$Config;->setting:Ljava/lang/String;
+    iget-object v5, v3, Lcom/android/settings_ext/notification/ManagedServiceSettings$Config;->setting:Ljava/lang/String;
 
     if-eqz v2, :cond_2
 
@@ -586,34 +586,34 @@
 
     .prologue
     .line 201
-    invoke-direct {p0}, Lcom/android/settings/notification/ManagedServiceSettings;->loadEnabledServices()V
+    invoke-direct {p0}, Lcom/android/settings_ext/notification/ManagedServiceSettings;->loadEnabledServices()V
 
     .line 203
-    iget-object v0, p0, Lcom/android/settings/notification/ManagedServiceSettings;->mConfig:Lcom/android/settings/notification/ManagedServiceSettings$Config;
+    iget-object v0, p0, Lcom/android/settings_ext/notification/ManagedServiceSettings;->mConfig:Lcom/android/settings_ext/notification/ManagedServiceSettings$Config;
 
-    iget-object v1, p0, Lcom/android/settings/notification/ManagedServiceSettings;->mListAdapter:Lcom/android/settings/notification/ManagedServiceSettings$ServiceListAdapter;
+    iget-object v1, p0, Lcom/android/settings_ext/notification/ManagedServiceSettings;->mListAdapter:Lcom/android/settings_ext/notification/ManagedServiceSettings$ServiceListAdapter;
 
-    iget-object v2, p0, Lcom/android/settings/notification/ManagedServiceSettings;->mPM:Landroid/content/pm/PackageManager;
+    iget-object v2, p0, Lcom/android/settings_ext/notification/ManagedServiceSettings;->mPM:Landroid/content/pm/PackageManager;
 
-    invoke-static {v0, v1, v2}, Lcom/android/settings/notification/ManagedServiceSettings;->getServices(Lcom/android/settings/notification/ManagedServiceSettings$Config;Landroid/widget/ArrayAdapter;Landroid/content/pm/PackageManager;)I
+    invoke-static {v0, v1, v2}, Lcom/android/settings_ext/notification/ManagedServiceSettings;->getServices(Lcom/android/settings_ext/notification/ManagedServiceSettings$Config;Landroid/widget/ArrayAdapter;Landroid/content/pm/PackageManager;)I
 
     .line 204
-    iget-object v0, p0, Lcom/android/settings/notification/ManagedServiceSettings;->mListAdapter:Lcom/android/settings/notification/ManagedServiceSettings$ServiceListAdapter;
+    iget-object v0, p0, Lcom/android/settings_ext/notification/ManagedServiceSettings;->mListAdapter:Lcom/android/settings_ext/notification/ManagedServiceSettings$ServiceListAdapter;
 
     new-instance v1, Landroid/content/pm/PackageItemInfo$DisplayNameComparator;
 
-    iget-object v2, p0, Lcom/android/settings/notification/ManagedServiceSettings;->mPM:Landroid/content/pm/PackageManager;
+    iget-object v2, p0, Lcom/android/settings_ext/notification/ManagedServiceSettings;->mPM:Landroid/content/pm/PackageManager;
 
     invoke-direct {v1, v2}, Landroid/content/pm/PackageItemInfo$DisplayNameComparator;-><init>(Landroid/content/pm/PackageManager;)V
 
-    invoke-virtual {v0, v1}, Lcom/android/settings/notification/ManagedServiceSettings$ServiceListAdapter;->sort(Ljava/util/Comparator;)V
+    invoke-virtual {v0, v1}, Lcom/android/settings_ext/notification/ManagedServiceSettings$ServiceListAdapter;->sort(Ljava/util/Comparator;)V
 
     .line 206
-    invoke-virtual {p0}, Lcom/android/settings/notification/ManagedServiceSettings;->getListView()Landroid/widget/ListView;
+    invoke-virtual {p0}, Lcom/android/settings_ext/notification/ManagedServiceSettings;->getListView()Landroid/widget/ListView;
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/android/settings/notification/ManagedServiceSettings;->mListAdapter:Lcom/android/settings/notification/ManagedServiceSettings$ServiceListAdapter;
+    iget-object v1, p0, Lcom/android/settings_ext/notification/ManagedServiceSettings;->mListAdapter:Lcom/android/settings_ext/notification/ManagedServiceSettings$ServiceListAdapter;
 
     invoke-virtual {v0, v1}, Landroid/widget/ListView;->setAdapter(Landroid/widget/ListAdapter;)V
 
@@ -623,7 +623,7 @@
 
 
 # virtual methods
-.method protected abstract getConfig()Lcom/android/settings/notification/ManagedServiceSettings$Config;
+.method protected abstract getConfig()Lcom/android/settings_ext/notification/ManagedServiceSettings$Config;
 .end method
 
 .method public onCreate(Landroid/os/Bundle;)V
@@ -635,7 +635,7 @@
     invoke-super {p0, p1}, Landroid/app/ListFragment;->onCreate(Landroid/os/Bundle;)V
 
     .line 131
-    invoke-virtual {p0}, Lcom/android/settings/notification/ManagedServiceSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/notification/ManagedServiceSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
@@ -643,10 +643,10 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/notification/ManagedServiceSettings;->mPM:Landroid/content/pm/PackageManager;
+    iput-object v0, p0, Lcom/android/settings_ext/notification/ManagedServiceSettings;->mPM:Landroid/content/pm/PackageManager;
 
     .line 132
-    invoke-virtual {p0}, Lcom/android/settings/notification/ManagedServiceSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/notification/ManagedServiceSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
@@ -654,18 +654,18 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/notification/ManagedServiceSettings;->mCR:Landroid/content/ContentResolver;
+    iput-object v0, p0, Lcom/android/settings_ext/notification/ManagedServiceSettings;->mCR:Landroid/content/ContentResolver;
 
     .line 133
-    new-instance v0, Lcom/android/settings/notification/ManagedServiceSettings$ServiceListAdapter;
+    new-instance v0, Lcom/android/settings_ext/notification/ManagedServiceSettings$ServiceListAdapter;
 
-    invoke-virtual {p0}, Lcom/android/settings/notification/ManagedServiceSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/notification/ManagedServiceSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v1
 
-    invoke-direct {v0, p0, v1}, Lcom/android/settings/notification/ManagedServiceSettings$ServiceListAdapter;-><init>(Lcom/android/settings/notification/ManagedServiceSettings;Landroid/content/Context;)V
+    invoke-direct {v0, p0, v1}, Lcom/android/settings_ext/notification/ManagedServiceSettings$ServiceListAdapter;-><init>(Lcom/android/settings_ext/notification/ManagedServiceSettings;Landroid/content/Context;)V
 
-    iput-object v0, p0, Lcom/android/settings/notification/ManagedServiceSettings;->mListAdapter:Lcom/android/settings/notification/ManagedServiceSettings$ServiceListAdapter;
+    iput-object v0, p0, Lcom/android/settings_ext/notification/ManagedServiceSettings;->mListAdapter:Lcom/android/settings_ext/notification/ManagedServiceSettings$ServiceListAdapter;
 
     .line 134
     return-void
@@ -699,9 +699,9 @@
 
     .line 141
     .local v0, "empty":Landroid/widget/TextView;
-    iget-object v2, p0, Lcom/android/settings/notification/ManagedServiceSettings;->mConfig:Lcom/android/settings/notification/ManagedServiceSettings$Config;
+    iget-object v2, p0, Lcom/android/settings_ext/notification/ManagedServiceSettings;->mConfig:Lcom/android/settings_ext/notification/ManagedServiceSettings$Config;
 
-    iget v2, v2, Lcom/android/settings/notification/ManagedServiceSettings$Config;->emptyText:I
+    iget v2, v2, Lcom/android/settings_ext/notification/ManagedServiceSettings$Config;->emptyText:I
 
     invoke-virtual {v0, v2}, Landroid/widget/TextView;->setText(I)V
 
@@ -718,9 +718,9 @@
 
     .prologue
     .line 258
-    iget-object v2, p0, Lcom/android/settings/notification/ManagedServiceSettings;->mListAdapter:Lcom/android/settings/notification/ManagedServiceSettings$ServiceListAdapter;
+    iget-object v2, p0, Lcom/android/settings_ext/notification/ManagedServiceSettings;->mListAdapter:Lcom/android/settings_ext/notification/ManagedServiceSettings$ServiceListAdapter;
 
-    invoke-virtual {v2, p3}, Lcom/android/settings/notification/ManagedServiceSettings$ServiceListAdapter;->getItem(I)Ljava/lang/Object;
+    invoke-virtual {v2, p3}, Lcom/android/settings_ext/notification/ManagedServiceSettings$ServiceListAdapter;->getItem(I)Ljava/lang/Object;
 
     move-result-object v1
 
@@ -738,7 +738,7 @@
 
     .line 260
     .local v0, "cn":Landroid/content/ComponentName;
-    iget-object v2, p0, Lcom/android/settings/notification/ManagedServiceSettings;->mEnabledServices:Ljava/util/HashSet;
+    iget-object v2, p0, Lcom/android/settings_ext/notification/ManagedServiceSettings;->mEnabledServices:Ljava/util/HashSet;
 
     invoke-virtual {v2, v0}, Ljava/util/HashSet;->contains(Ljava/lang/Object;)Z
 
@@ -747,12 +747,12 @@
     if-eqz v2, :cond_0
 
     .line 262
-    iget-object v2, p0, Lcom/android/settings/notification/ManagedServiceSettings;->mEnabledServices:Ljava/util/HashSet;
+    iget-object v2, p0, Lcom/android/settings_ext/notification/ManagedServiceSettings;->mEnabledServices:Ljava/util/HashSet;
 
     invoke-virtual {v2, v0}, Ljava/util/HashSet;->remove(Ljava/lang/Object;)Z
 
     .line 263
-    invoke-direct {p0}, Lcom/android/settings/notification/ManagedServiceSettings;->saveEnabledServices()V
+    invoke-direct {p0}, Lcom/android/settings_ext/notification/ManagedServiceSettings;->saveEnabledServices()V
 
     .line 270
     :goto_0
@@ -760,11 +760,11 @@
 
     .line 266
     :cond_0
-    new-instance v2, Lcom/android/settings/notification/ManagedServiceSettings$ScaryWarningDialogFragment;
+    new-instance v2, Lcom/android/settings_ext/notification/ManagedServiceSettings$ScaryWarningDialogFragment;
 
-    invoke-direct {v2, p0}, Lcom/android/settings/notification/ManagedServiceSettings$ScaryWarningDialogFragment;-><init>(Lcom/android/settings/notification/ManagedServiceSettings;)V
+    invoke-direct {v2, p0}, Lcom/android/settings_ext/notification/ManagedServiceSettings$ScaryWarningDialogFragment;-><init>(Lcom/android/settings_ext/notification/ManagedServiceSettings;)V
 
-    iget-object v3, p0, Lcom/android/settings/notification/ManagedServiceSettings;->mPM:Landroid/content/pm/PackageManager;
+    iget-object v3, p0, Lcom/android/settings_ext/notification/ManagedServiceSettings;->mPM:Landroid/content/pm/PackageManager;
 
     invoke-virtual {v1, v3}, Landroid/content/pm/ServiceInfo;->loadLabel(Landroid/content/pm/PackageManager;)Ljava/lang/CharSequence;
 
@@ -774,17 +774,17 @@
 
     move-result-object v3
 
-    invoke-virtual {v2, v0, v3}, Lcom/android/settings/notification/ManagedServiceSettings$ScaryWarningDialogFragment;->setServiceInfo(Landroid/content/ComponentName;Ljava/lang/String;)Lcom/android/settings/notification/ManagedServiceSettings$ScaryWarningDialogFragment;
+    invoke-virtual {v2, v0, v3}, Lcom/android/settings_ext/notification/ManagedServiceSettings$ScaryWarningDialogFragment;->setServiceInfo(Landroid/content/ComponentName;Ljava/lang/String;)Lcom/android/settings_ext/notification/ManagedServiceSettings$ScaryWarningDialogFragment;
 
     move-result-object v2
 
-    invoke-virtual {p0}, Lcom/android/settings/notification/ManagedServiceSettings;->getFragmentManager()Landroid/app/FragmentManager;
+    invoke-virtual {p0}, Lcom/android/settings_ext/notification/ManagedServiceSettings;->getFragmentManager()Landroid/app/FragmentManager;
 
     move-result-object v3
 
     const-string v4, "dialog"
 
-    invoke-virtual {v2, v3, v4}, Lcom/android/settings/notification/ManagedServiceSettings$ScaryWarningDialogFragment;->show(Landroid/app/FragmentManager;Ljava/lang/String;)V
+    invoke-virtual {v2, v3, v4}, Lcom/android/settings_ext/notification/ManagedServiceSettings$ScaryWarningDialogFragment;->show(Landroid/app/FragmentManager;Ljava/lang/String;)V
 
     goto :goto_0
 .end method
@@ -797,18 +797,18 @@
     invoke-super {p0}, Landroid/app/ListFragment;->onPause()V
 
     .line 167
-    invoke-virtual {p0}, Lcom/android/settings/notification/ManagedServiceSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/notification/ManagedServiceSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/android/settings/notification/ManagedServiceSettings;->mPackageReceiver:Landroid/content/BroadcastReceiver;
+    iget-object v1, p0, Lcom/android/settings_ext/notification/ManagedServiceSettings;->mPackageReceiver:Landroid/content/BroadcastReceiver;
 
     invoke-virtual {v0, v1}, Landroid/app/Activity;->unregisterReceiver(Landroid/content/BroadcastReceiver;)V
 
     .line 168
-    iget-object v0, p0, Lcom/android/settings/notification/ManagedServiceSettings;->mCR:Landroid/content/ContentResolver;
+    iget-object v0, p0, Lcom/android/settings_ext/notification/ManagedServiceSettings;->mCR:Landroid/content/ContentResolver;
 
-    iget-object v1, p0, Lcom/android/settings/notification/ManagedServiceSettings;->mSettingsObserver:Landroid/database/ContentObserver;
+    iget-object v1, p0, Lcom/android/settings_ext/notification/ManagedServiceSettings;->mSettingsObserver:Landroid/database/ContentObserver;
 
     invoke-virtual {v0, v1}, Landroid/content/ContentResolver;->unregisterContentObserver(Landroid/database/ContentObserver;)V
 
@@ -824,7 +824,7 @@
     invoke-super {p0}, Landroid/app/ListFragment;->onResume()V
 
     .line 148
-    invoke-direct {p0}, Lcom/android/settings/notification/ManagedServiceSettings;->updateList()V
+    invoke-direct {p0}, Lcom/android/settings_ext/notification/ManagedServiceSettings;->updateList()V
 
     .line 151
     new-instance v0, Landroid/content/IntentFilter;
@@ -858,20 +858,20 @@
     invoke-virtual {v0, v1}, Landroid/content/IntentFilter;->addDataScheme(Ljava/lang/String;)V
 
     .line 157
-    invoke-virtual {p0}, Lcom/android/settings/notification/ManagedServiceSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/notification/ManagedServiceSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v1
 
-    iget-object v2, p0, Lcom/android/settings/notification/ManagedServiceSettings;->mPackageReceiver:Landroid/content/BroadcastReceiver;
+    iget-object v2, p0, Lcom/android/settings_ext/notification/ManagedServiceSettings;->mPackageReceiver:Landroid/content/BroadcastReceiver;
 
     invoke-virtual {v1, v2, v0}, Landroid/app/Activity;->registerReceiver(Landroid/content/BroadcastReceiver;Landroid/content/IntentFilter;)Landroid/content/Intent;
 
     .line 159
-    iget-object v1, p0, Lcom/android/settings/notification/ManagedServiceSettings;->mCR:Landroid/content/ContentResolver;
+    iget-object v1, p0, Lcom/android/settings_ext/notification/ManagedServiceSettings;->mCR:Landroid/content/ContentResolver;
 
-    iget-object v2, p0, Lcom/android/settings/notification/ManagedServiceSettings;->mConfig:Lcom/android/settings/notification/ManagedServiceSettings$Config;
+    iget-object v2, p0, Lcom/android/settings_ext/notification/ManagedServiceSettings;->mConfig:Lcom/android/settings_ext/notification/ManagedServiceSettings$Config;
 
-    iget-object v2, v2, Lcom/android/settings/notification/ManagedServiceSettings$Config;->setting:Ljava/lang/String;
+    iget-object v2, v2, Lcom/android/settings_ext/notification/ManagedServiceSettings$Config;->setting:Ljava/lang/String;
 
     invoke-static {v2}, Landroid/provider/Settings$Secure;->getUriFor(Ljava/lang/String;)Landroid/net/Uri;
 
@@ -879,7 +879,7 @@
 
     const/4 v3, 0x0
 
-    iget-object v4, p0, Lcom/android/settings/notification/ManagedServiceSettings;->mSettingsObserver:Landroid/database/ContentObserver;
+    iget-object v4, p0, Lcom/android/settings_ext/notification/ManagedServiceSettings;->mSettingsObserver:Landroid/database/ContentObserver;
 
     invoke-virtual {v1, v2, v3, v4}, Landroid/content/ContentResolver;->registerContentObserver(Landroid/net/Uri;ZLandroid/database/ContentObserver;)V
 

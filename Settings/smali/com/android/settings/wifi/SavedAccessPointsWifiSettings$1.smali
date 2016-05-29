@@ -1,11 +1,11 @@
-.class final Lcom/android/settings/wifi/SavedAccessPointsWifiSettings$1;
-.super Lcom/android/settings/search/BaseSearchIndexProvider;
+.class final Lcom/android/settings_ext/wifi/SavedAccessPointsWifiSettings$1;
+.super Lcom/android/settings_ext/search/BaseSearchIndexProvider;
 .source "SavedAccessPointsWifiSettings.java"
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/android/settings/wifi/SavedAccessPointsWifiSettings;
+    value = Lcom/android/settings_ext/wifi/SavedAccessPointsWifiSettings;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -20,7 +20,7 @@
 
     .prologue
     .line 221
-    invoke-direct {p0}, Lcom/android/settings/search/BaseSearchIndexProvider;-><init>()V
+    invoke-direct {p0}, Lcom/android/settings_ext/search/BaseSearchIndexProvider;-><init>()V
 
     return-void
 .end method
@@ -38,7 +38,7 @@
             "Z)",
             "Ljava/util/List",
             "<",
-            "Lcom/android/settings/search/SearchIndexableRaw;",
+            "Lcom/android/settings_ext/search/SearchIndexableRaw;",
             ">;"
         }
     .end annotation
@@ -50,7 +50,7 @@
     invoke-direct {v5}, Ljava/util/ArrayList;-><init>()V
 
     .line 225
-    .local v5, "result":Ljava/util/List;, "Ljava/util/List<Lcom/android/settings/search/SearchIndexableRaw;>;"
+    .local v5, "result":Ljava/util/List;, "Ljava/util/List<Lcom/android/settings_ext/search/SearchIndexableRaw;>;"
     invoke-virtual {p1}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
 
     move-result-object v4
@@ -65,19 +65,19 @@
 
     .line 229
     .local v6, "title":Ljava/lang/String;
-    new-instance v2, Lcom/android/settings/search/SearchIndexableRaw;
+    new-instance v2, Lcom/android/settings_ext/search/SearchIndexableRaw;
 
-    invoke-direct {v2, p1}, Lcom/android/settings/search/SearchIndexableRaw;-><init>(Landroid/content/Context;)V
+    invoke-direct {v2, p1}, Lcom/android/settings_ext/search/SearchIndexableRaw;-><init>(Landroid/content/Context;)V
 
     .line 230
-    .local v2, "data":Lcom/android/settings/search/SearchIndexableRaw;
-    iput-object v6, v2, Lcom/android/settings/search/SearchIndexableRaw;->title:Ljava/lang/String;
+    .local v2, "data":Lcom/android/settings_ext/search/SearchIndexableRaw;
+    iput-object v6, v2, Lcom/android/settings_ext/search/SearchIndexableRaw;->title:Ljava/lang/String;
 
     .line 231
-    iput-object v6, v2, Lcom/android/settings/search/SearchIndexableRaw;->screenTitle:Ljava/lang/String;
+    iput-object v6, v2, Lcom/android/settings_ext/search/SearchIndexableRaw;->screenTitle:Ljava/lang/String;
 
     .line 232
-    iput-boolean p2, v2, Lcom/android/settings/search/SearchIndexableRaw;->enabled:Z
+    iput-boolean p2, v2, Lcom/android/settings_ext/search/SearchIndexableRaw;->enabled:Z
 
     .line 233
     invoke-interface {v5, v2}, Ljava/util/List;->add(Ljava/lang/Object;)Z
@@ -93,13 +93,13 @@
 
     .line 238
     .local v7, "wifiManager":Landroid/net/wifi/WifiManager;
-    # invokes: Lcom/android/settings/wifi/SavedAccessPointsWifiSettings;->constructSavedAccessPoints(Landroid/content/Context;Landroid/net/wifi/WifiManager;)Ljava/util/List;
-    invoke-static {p1, v7}, Lcom/android/settings/wifi/SavedAccessPointsWifiSettings;->access$000(Landroid/content/Context;Landroid/net/wifi/WifiManager;)Ljava/util/List;
+    # invokes: Lcom/android/settings_ext/wifi/SavedAccessPointsWifiSettings;->constructSavedAccessPoints(Landroid/content/Context;Landroid/net/wifi/WifiManager;)Ljava/util/List;
+    invoke-static {p1, v7}, Lcom/android/settings_ext/wifi/SavedAccessPointsWifiSettings;->access$000(Landroid/content/Context;Landroid/net/wifi/WifiManager;)Ljava/util/List;
 
     move-result-object v0
 
     .line 241
-    .local v0, "accessPoints":Ljava/util/List;, "Ljava/util/List<Lcom/android/settings/wifi/AccessPoint;>;"
+    .local v0, "accessPoints":Ljava/util/List;, "Ljava/util/List<Lcom/android/settings_ext/wifi/AccessPoint;>;"
     invoke-interface {v0}, Ljava/util/List;->size()I
 
     move-result v1
@@ -113,20 +113,20 @@
     if-ge v3, v1, :cond_0
 
     .line 243
-    new-instance v2, Lcom/android/settings/search/SearchIndexableRaw;
+    new-instance v2, Lcom/android/settings_ext/search/SearchIndexableRaw;
 
-    .end local v2    # "data":Lcom/android/settings/search/SearchIndexableRaw;
-    invoke-direct {v2, p1}, Lcom/android/settings/search/SearchIndexableRaw;-><init>(Landroid/content/Context;)V
+    .end local v2    # "data":Lcom/android/settings_ext/search/SearchIndexableRaw;
+    invoke-direct {v2, p1}, Lcom/android/settings_ext/search/SearchIndexableRaw;-><init>(Landroid/content/Context;)V
 
     .line 244
-    .restart local v2    # "data":Lcom/android/settings/search/SearchIndexableRaw;
+    .restart local v2    # "data":Lcom/android/settings_ext/search/SearchIndexableRaw;
     invoke-interface {v0, v3}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
     move-result-object v8
 
-    check-cast v8, Lcom/android/settings/wifi/AccessPoint;
+    check-cast v8, Lcom/android/settings_ext/wifi/AccessPoint;
 
-    invoke-virtual {v8}, Lcom/android/settings/wifi/AccessPoint;->getTitle()Ljava/lang/CharSequence;
+    invoke-virtual {v8}, Lcom/android/settings_ext/wifi/AccessPoint;->getTitle()Ljava/lang/CharSequence;
 
     move-result-object v8
 
@@ -134,13 +134,13 @@
 
     move-result-object v8
 
-    iput-object v8, v2, Lcom/android/settings/search/SearchIndexableRaw;->title:Ljava/lang/String;
+    iput-object v8, v2, Lcom/android/settings_ext/search/SearchIndexableRaw;->title:Ljava/lang/String;
 
     .line 245
-    iput-object v6, v2, Lcom/android/settings/search/SearchIndexableRaw;->screenTitle:Ljava/lang/String;
+    iput-object v6, v2, Lcom/android/settings_ext/search/SearchIndexableRaw;->screenTitle:Ljava/lang/String;
 
     .line 246
-    iput-boolean p2, v2, Lcom/android/settings/search/SearchIndexableRaw;->enabled:Z
+    iput-boolean p2, v2, Lcom/android/settings_ext/search/SearchIndexableRaw;->enabled:Z
 
     .line 247
     invoke-interface {v5, v2}, Ljava/util/List;->add(Ljava/lang/Object;)Z

@@ -1,11 +1,11 @@
-.class Lcom/android/settings/users/UserSettings$3;
+.class Lcom/android/settings_ext/users/UserSettings$3;
 .super Landroid/os/AsyncTask;
 .source "UserSettings.java"
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/android/settings/users/UserSettings;->loadProfile()V
+    value = Lcom/android/settings_ext/users/UserSettings;->loadProfile()V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -26,16 +26,16 @@
 
 
 # instance fields
-.field final synthetic this$0:Lcom/android/settings/users/UserSettings;
+.field final synthetic this$0:Lcom/android/settings_ext/users/UserSettings;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/users/UserSettings;)V
+.method constructor <init>(Lcom/android/settings_ext/users/UserSettings;)V
     .locals 0
 
     .prologue
     .line 319
-    iput-object p1, p0, Lcom/android/settings/users/UserSettings$3;->this$0:Lcom/android/settings/users/UserSettings;
+    iput-object p1, p0, Lcom/android/settings_ext/users/UserSettings$3;->this$0:Lcom/android/settings_ext/users/UserSettings;
 
     invoke-direct {p0}, Landroid/os/AsyncTask;-><init>()V
 
@@ -53,7 +53,7 @@
     check-cast p1, [Ljava/lang/Void;
 
     .end local p1    # "x0":[Ljava/lang/Object;
-    invoke-virtual {p0, p1}, Lcom/android/settings/users/UserSettings$3;->doInBackground([Ljava/lang/Void;)Ljava/lang/String;
+    invoke-virtual {p0, p1}, Lcom/android/settings_ext/users/UserSettings$3;->doInBackground([Ljava/lang/Void;)Ljava/lang/String;
 
     move-result-object v0
 
@@ -66,10 +66,10 @@
 
     .prologue
     .line 327
-    iget-object v1, p0, Lcom/android/settings/users/UserSettings$3;->this$0:Lcom/android/settings/users/UserSettings;
+    iget-object v1, p0, Lcom/android/settings_ext/users/UserSettings$3;->this$0:Lcom/android/settings_ext/users/UserSettings;
 
-    # getter for: Lcom/android/settings/users/UserSettings;->mUserManager:Landroid/os/UserManager;
-    invoke-static {v1}, Lcom/android/settings/users/UserSettings;->access$700(Lcom/android/settings/users/UserSettings;)Landroid/os/UserManager;
+    # getter for: Lcom/android/settings_ext/users/UserSettings;->mUserManager:Landroid/os/UserManager;
+    invoke-static {v1}, Lcom/android/settings_ext/users/UserSettings;->access$700(Lcom/android/settings_ext/users/UserSettings;)Landroid/os/UserManager;
 
     move-result-object v1
 
@@ -99,10 +99,10 @@
 
     .line 329
     :cond_0
-    iget-object v1, p0, Lcom/android/settings/users/UserSettings$3;->this$0:Lcom/android/settings/users/UserSettings;
+    iget-object v1, p0, Lcom/android/settings_ext/users/UserSettings$3;->this$0:Lcom/android/settings_ext/users/UserSettings;
 
-    # invokes: Lcom/android/settings/users/UserSettings;->assignProfilePhoto(Landroid/content/pm/UserInfo;)V
-    invoke-static {v1, v0}, Lcom/android/settings/users/UserSettings;->access$800(Lcom/android/settings/users/UserSettings;Landroid/content/pm/UserInfo;)V
+    # invokes: Lcom/android/settings_ext/users/UserSettings;->assignProfilePhoto(Landroid/content/pm/UserInfo;)V
+    invoke-static {v1, v0}, Lcom/android/settings_ext/users/UserSettings;->access$800(Lcom/android/settings_ext/users/UserSettings;Landroid/content/pm/UserInfo;)V
 
     .line 331
     :cond_1
@@ -120,7 +120,7 @@
     check-cast p1, Ljava/lang/String;
 
     .end local p1    # "x0":Ljava/lang/Object;
-    invoke-virtual {p0, p1}, Lcom/android/settings/users/UserSettings$3;->onPostExecute(Ljava/lang/String;)V
+    invoke-virtual {p0, p1}, Lcom/android/settings_ext/users/UserSettings$3;->onPostExecute(Ljava/lang/String;)V
 
     return-void
 .end method
@@ -131,10 +131,10 @@
 
     .prologue
     .line 322
-    iget-object v0, p0, Lcom/android/settings/users/UserSettings$3;->this$0:Lcom/android/settings/users/UserSettings;
+    iget-object v0, p0, Lcom/android/settings_ext/users/UserSettings$3;->this$0:Lcom/android/settings_ext/users/UserSettings;
 
-    # invokes: Lcom/android/settings/users/UserSettings;->finishLoadProfile(Ljava/lang/String;)V
-    invoke-static {v0, p1}, Lcom/android/settings/users/UserSettings;->access$600(Lcom/android/settings/users/UserSettings;Ljava/lang/String;)V
+    # invokes: Lcom/android/settings_ext/users/UserSettings;->finishLoadProfile(Ljava/lang/String;)V
+    invoke-static {v0, p1}, Lcom/android/settings_ext/users/UserSettings;->access$600(Lcom/android/settings_ext/users/UserSettings;Ljava/lang/String;)V
 
     .line 323
     return-void

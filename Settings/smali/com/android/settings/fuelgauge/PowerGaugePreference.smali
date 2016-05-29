@@ -1,4 +1,4 @@
-.class public Lcom/android/settings/fuelgauge/PowerGaugePreference;
+.class public Lcom/android/settings_ext/fuelgauge/PowerGaugePreference;
 .super Landroid/preference/Preference;
 .source "PowerGaugePreference.java"
 
@@ -6,7 +6,7 @@
 # instance fields
 .field private final mContentDescription:Ljava/lang/CharSequence;
 
-.field private mInfo:Lcom/android/settings/fuelgauge/BatteryEntry;
+.field private mInfo:Lcom/android/settings_ext/fuelgauge/BatteryEntry;
 
 .field private mProgress:I
 
@@ -14,12 +14,12 @@
 
 
 # direct methods
-.method public constructor <init>(Landroid/content/Context;Landroid/graphics/drawable/Drawable;Ljava/lang/CharSequence;Lcom/android/settings/fuelgauge/BatteryEntry;)V
+.method public constructor <init>(Landroid/content/Context;Landroid/graphics/drawable/Drawable;Ljava/lang/CharSequence;Lcom/android/settings_ext/fuelgauge/BatteryEntry;)V
     .locals 1
     .param p1, "context"    # Landroid/content/Context;
     .param p2, "icon"    # Landroid/graphics/drawable/Drawable;
     .param p3, "contentDescription"    # Ljava/lang/CharSequence;
-    .param p4, "info"    # Lcom/android/settings/fuelgauge/BatteryEntry;
+    .param p4, "info"    # Lcom/android/settings_ext/fuelgauge/BatteryEntry;
 
     .prologue
     .line 42
@@ -28,20 +28,20 @@
     .line 43
     const v0, 0x7f040073
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/fuelgauge/PowerGaugePreference;->setLayoutResource(I)V
+    invoke-virtual {p0, v0}, Lcom/android/settings_ext/fuelgauge/PowerGaugePreference;->setLayoutResource(I)V
 
     .line 44
     if-eqz p2, :cond_0
 
     .end local p2    # "icon":Landroid/graphics/drawable/Drawable;
     :goto_0
-    invoke-virtual {p0, p2}, Lcom/android/settings/fuelgauge/PowerGaugePreference;->setIcon(Landroid/graphics/drawable/Drawable;)V
+    invoke-virtual {p0, p2}, Lcom/android/settings_ext/fuelgauge/PowerGaugePreference;->setIcon(Landroid/graphics/drawable/Drawable;)V
 
     .line 45
-    iput-object p4, p0, Lcom/android/settings/fuelgauge/PowerGaugePreference;->mInfo:Lcom/android/settings/fuelgauge/BatteryEntry;
+    iput-object p4, p0, Lcom/android/settings_ext/fuelgauge/PowerGaugePreference;->mInfo:Lcom/android/settings_ext/fuelgauge/BatteryEntry;
 
     .line 46
-    iput-object p3, p0, Lcom/android/settings/fuelgauge/PowerGaugePreference;->mContentDescription:Ljava/lang/CharSequence;
+    iput-object p3, p0, Lcom/android/settings_ext/fuelgauge/PowerGaugePreference;->mContentDescription:Ljava/lang/CharSequence;
 
     .line 47
     return-void
@@ -61,12 +61,12 @@
 
 
 # virtual methods
-.method getInfo()Lcom/android/settings/fuelgauge/BatteryEntry;
+.method getInfo()Lcom/android/settings_ext/fuelgauge/BatteryEntry;
     .locals 1
 
     .prologue
     .line 56
-    iget-object v0, p0, Lcom/android/settings/fuelgauge/PowerGaugePreference;->mInfo:Lcom/android/settings/fuelgauge/BatteryEntry;
+    iget-object v0, p0, Lcom/android/settings_ext/fuelgauge/PowerGaugePreference;->mInfo:Lcom/android/settings_ext/fuelgauge/BatteryEntry;
 
     return-object v0
 .end method
@@ -90,7 +90,7 @@
 
     .line 64
     .local v0, "progress":Landroid/widget/ProgressBar;
-    iget v3, p0, Lcom/android/settings/fuelgauge/PowerGaugePreference;->mProgress:I
+    iget v3, p0, Lcom/android/settings_ext/fuelgauge/PowerGaugePreference;->mProgress:I
 
     invoke-virtual {v0, v3}, Landroid/widget/ProgressBar;->setProgress(I)V
 
@@ -105,12 +105,12 @@
 
     .line 67
     .local v1, "text1":Landroid/widget/TextView;
-    iget-object v3, p0, Lcom/android/settings/fuelgauge/PowerGaugePreference;->mProgressText:Ljava/lang/CharSequence;
+    iget-object v3, p0, Lcom/android/settings_ext/fuelgauge/PowerGaugePreference;->mProgressText:Ljava/lang/CharSequence;
 
     invoke-virtual {v1, v3}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
     .line 69
-    iget-object v3, p0, Lcom/android/settings/fuelgauge/PowerGaugePreference;->mContentDescription:Ljava/lang/CharSequence;
+    iget-object v3, p0, Lcom/android/settings_ext/fuelgauge/PowerGaugePreference;->mContentDescription:Ljava/lang/CharSequence;
 
     if-eqz v3, :cond_0
 
@@ -125,7 +125,7 @@
 
     .line 71
     .local v2, "titleView":Landroid/widget/TextView;
-    iget-object v3, p0, Lcom/android/settings/fuelgauge/PowerGaugePreference;->mContentDescription:Ljava/lang/CharSequence;
+    iget-object v3, p0, Lcom/android/settings_ext/fuelgauge/PowerGaugePreference;->mContentDescription:Ljava/lang/CharSequence;
 
     invoke-virtual {v2, v3}, Landroid/widget/TextView;->setContentDescription(Ljava/lang/CharSequence;)V
 
@@ -148,7 +148,7 @@
 
     double-to-int v0, v0
 
-    iput v0, p0, Lcom/android/settings/fuelgauge/PowerGaugePreference;->mProgress:I
+    iput v0, p0, Lcom/android/settings_ext/fuelgauge/PowerGaugePreference;->mProgress:I
 
     .line 51
     const-wide/high16 v0, 0x3fe0000000000000L    # 0.5
@@ -157,14 +157,14 @@
 
     double-to-int v0, v0
 
-    invoke-static {v0}, Lcom/android/settings/Utils;->formatPercentage(I)Ljava/lang/String;
+    invoke-static {v0}, Lcom/android/settings_ext/Utils;->formatPercentage(I)Ljava/lang/String;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/fuelgauge/PowerGaugePreference;->mProgressText:Ljava/lang/CharSequence;
+    iput-object v0, p0, Lcom/android/settings_ext/fuelgauge/PowerGaugePreference;->mProgressText:Ljava/lang/CharSequence;
 
     .line 52
-    invoke-virtual {p0}, Lcom/android/settings/fuelgauge/PowerGaugePreference;->notifyChanged()V
+    invoke-virtual {p0}, Lcom/android/settings_ext/fuelgauge/PowerGaugePreference;->notifyChanged()V
 
     .line 53
     return-void

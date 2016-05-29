@@ -1,4 +1,4 @@
-.class Lcom/android/settings/wifi/WriteWifiConfigToNfcDialog;
+.class Lcom/android/settings_ext/wifi/WriteWifiConfigToNfcDialog;
 .super Landroid/app/AlertDialog;
 .source "WriteWifiConfigToNfcDialog.java"
 
@@ -15,7 +15,7 @@
 
 
 # instance fields
-.field private mAccessPoint:Lcom/android/settings/wifi/AccessPoint;
+.field private mAccessPoint:Lcom/android/settings_ext/wifi/AccessPoint;
 
 .field private mCancelButton:Landroid/widget/Button;
 
@@ -48,7 +48,7 @@
 
     .prologue
     .line 56
-    const-class v0, Lcom/android/settings/wifi/WriteWifiConfigToNfcDialog;
+    const-class v0, Lcom/android/settings_ext/wifi/WriteWifiConfigToNfcDialog;
 
     invoke-virtual {v0}, Ljava/lang/Class;->getName()Ljava/lang/String;
 
@@ -58,7 +58,7 @@
 
     move-result-object v0
 
-    sput-object v0, Lcom/android/settings/wifi/WriteWifiConfigToNfcDialog;->TAG:Ljava/lang/String;
+    sput-object v0, Lcom/android/settings_ext/wifi/WriteWifiConfigToNfcDialog;->TAG:Ljava/lang/String;
 
     .line 59
     const-string v0, "0123456789ABCDEF"
@@ -67,15 +67,15 @@
 
     move-result-object v0
 
-    sput-object v0, Lcom/android/settings/wifi/WriteWifiConfigToNfcDialog;->hexArray:[C
+    sput-object v0, Lcom/android/settings_ext/wifi/WriteWifiConfigToNfcDialog;->hexArray:[C
 
     return-void
 .end method
 
-.method constructor <init>(Landroid/content/Context;Lcom/android/settings/wifi/AccessPoint;Landroid/net/wifi/WifiManager;)V
+.method constructor <init>(Landroid/content/Context;Lcom/android/settings_ext/wifi/AccessPoint;Landroid/net/wifi/WifiManager;)V
     .locals 3
     .param p1, "context"    # Landroid/content/Context;
-    .param p2, "accessPoint"    # Lcom/android/settings/wifi/AccessPoint;
+    .param p2, "accessPoint"    # Lcom/android/settings_ext/wifi/AccessPoint;
     .param p3, "wifiManager"    # Landroid/net/wifi/WifiManager;
 
     .prologue
@@ -83,7 +83,7 @@
     invoke-direct {p0, p1}, Landroid/app/AlertDialog;-><init>(Landroid/content/Context;)V
 
     .line 80
-    iput-object p1, p0, Lcom/android/settings/wifi/WriteWifiConfigToNfcDialog;->mContext:Landroid/content/Context;
+    iput-object p1, p0, Lcom/android/settings_ext/wifi/WriteWifiConfigToNfcDialog;->mContext:Landroid/content/Context;
 
     .line 81
     const-string v0, "power"
@@ -102,55 +102,55 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/wifi/WriteWifiConfigToNfcDialog;->mWakeLock:Landroid/os/PowerManager$WakeLock;
+    iput-object v0, p0, Lcom/android/settings_ext/wifi/WriteWifiConfigToNfcDialog;->mWakeLock:Landroid/os/PowerManager$WakeLock;
 
     .line 83
-    iput-object p2, p0, Lcom/android/settings/wifi/WriteWifiConfigToNfcDialog;->mAccessPoint:Lcom/android/settings/wifi/AccessPoint;
+    iput-object p2, p0, Lcom/android/settings_ext/wifi/WriteWifiConfigToNfcDialog;->mAccessPoint:Lcom/android/settings_ext/wifi/AccessPoint;
 
     .line 84
     new-instance v0, Landroid/os/Handler;
 
     invoke-direct {v0}, Landroid/os/Handler;-><init>()V
 
-    iput-object v0, p0, Lcom/android/settings/wifi/WriteWifiConfigToNfcDialog;->mOnTextChangedHandler:Landroid/os/Handler;
+    iput-object v0, p0, Lcom/android/settings_ext/wifi/WriteWifiConfigToNfcDialog;->mOnTextChangedHandler:Landroid/os/Handler;
 
     .line 85
-    iput-object p3, p0, Lcom/android/settings/wifi/WriteWifiConfigToNfcDialog;->mWifiManager:Landroid/net/wifi/WifiManager;
+    iput-object p3, p0, Lcom/android/settings_ext/wifi/WriteWifiConfigToNfcDialog;->mWifiManager:Landroid/net/wifi/WifiManager;
 
     .line 86
     return-void
 .end method
 
-.method static synthetic access$000(Lcom/android/settings/wifi/WriteWifiConfigToNfcDialog;Landroid/nfc/Tag;)V
+.method static synthetic access$000(Lcom/android/settings_ext/wifi/WriteWifiConfigToNfcDialog;Landroid/nfc/Tag;)V
     .locals 0
-    .param p0, "x0"    # Lcom/android/settings/wifi/WriteWifiConfigToNfcDialog;
+    .param p0, "x0"    # Lcom/android/settings_ext/wifi/WriteWifiConfigToNfcDialog;
     .param p1, "x1"    # Landroid/nfc/Tag;
 
     .prologue
     .line 51
-    invoke-direct {p0, p1}, Lcom/android/settings/wifi/WriteWifiConfigToNfcDialog;->handleWriteNfcEvent(Landroid/nfc/Tag;)V
+    invoke-direct {p0, p1}, Lcom/android/settings_ext/wifi/WriteWifiConfigToNfcDialog;->handleWriteNfcEvent(Landroid/nfc/Tag;)V
 
     return-void
 .end method
 
-.method static synthetic access$100(Lcom/android/settings/wifi/WriteWifiConfigToNfcDialog;)Landroid/widget/ProgressBar;
+.method static synthetic access$100(Lcom/android/settings_ext/wifi/WriteWifiConfigToNfcDialog;)Landroid/widget/ProgressBar;
     .locals 1
-    .param p0, "x0"    # Lcom/android/settings/wifi/WriteWifiConfigToNfcDialog;
+    .param p0, "x0"    # Lcom/android/settings_ext/wifi/WriteWifiConfigToNfcDialog;
 
     .prologue
     .line 51
-    iget-object v0, p0, Lcom/android/settings/wifi/WriteWifiConfigToNfcDialog;->mProgressBar:Landroid/widget/ProgressBar;
+    iget-object v0, p0, Lcom/android/settings_ext/wifi/WriteWifiConfigToNfcDialog;->mProgressBar:Landroid/widget/ProgressBar;
 
     return-object v0
 .end method
 
-.method static synthetic access$200(Lcom/android/settings/wifi/WriteWifiConfigToNfcDialog;)V
+.method static synthetic access$200(Lcom/android/settings_ext/wifi/WriteWifiConfigToNfcDialog;)V
     .locals 0
-    .param p0, "x0"    # Lcom/android/settings/wifi/WriteWifiConfigToNfcDialog;
+    .param p0, "x0"    # Lcom/android/settings_ext/wifi/WriteWifiConfigToNfcDialog;
 
     .prologue
     .line 51
-    invoke-direct {p0}, Lcom/android/settings/wifi/WriteWifiConfigToNfcDialog;->enableSubmitIfAppropriate()V
+    invoke-direct {p0}, Lcom/android/settings_ext/wifi/WriteWifiConfigToNfcDialog;->enableSubmitIfAppropriate()V
 
     return-void
 .end method
@@ -186,7 +186,7 @@
     .local v2, "v":I
     mul-int/lit8 v3, v1, 0x2
 
-    sget-object v4, Lcom/android/settings/wifi/WriteWifiConfigToNfcDialog;->hexArray:[C
+    sget-object v4, Lcom/android/settings_ext/wifi/WriteWifiConfigToNfcDialog;->hexArray:[C
 
     ushr-int/lit8 v5, v2, 0x4
 
@@ -199,7 +199,7 @@
 
     add-int/lit8 v3, v3, 0x1
 
-    sget-object v4, Lcom/android/settings/wifi/WriteWifiConfigToNfcDialog;->hexArray:[C
+    sget-object v4, Lcom/android/settings_ext/wifi/WriteWifiConfigToNfcDialog;->hexArray:[C
 
     and-int/lit8 v5, v2, 0xf
 
@@ -231,21 +231,21 @@
     const/4 v1, 0x0
 
     .line 226
-    iget-object v2, p0, Lcom/android/settings/wifi/WriteWifiConfigToNfcDialog;->mPasswordView:Landroid/widget/TextView;
+    iget-object v2, p0, Lcom/android/settings_ext/wifi/WriteWifiConfigToNfcDialog;->mPasswordView:Landroid/widget/TextView;
 
     if-eqz v2, :cond_4
 
     .line 227
-    iget-object v2, p0, Lcom/android/settings/wifi/WriteWifiConfigToNfcDialog;->mAccessPoint:Lcom/android/settings/wifi/AccessPoint;
+    iget-object v2, p0, Lcom/android/settings_ext/wifi/WriteWifiConfigToNfcDialog;->mAccessPoint:Lcom/android/settings_ext/wifi/AccessPoint;
 
-    iget v2, v2, Lcom/android/settings/wifi/AccessPoint;->security:I
+    iget v2, v2, Lcom/android/settings_ext/wifi/AccessPoint;->security:I
 
     if-ne v2, v0, :cond_2
 
     .line 228
-    iget-object v2, p0, Lcom/android/settings/wifi/WriteWifiConfigToNfcDialog;->mSubmitButton:Landroid/widget/Button;
+    iget-object v2, p0, Lcom/android/settings_ext/wifi/WriteWifiConfigToNfcDialog;->mSubmitButton:Landroid/widget/Button;
 
-    iget-object v3, p0, Lcom/android/settings/wifi/WriteWifiConfigToNfcDialog;->mPasswordView:Landroid/widget/TextView;
+    iget-object v3, p0, Lcom/android/settings_ext/wifi/WriteWifiConfigToNfcDialog;->mPasswordView:Landroid/widget/TextView;
 
     invoke-virtual {v3}, Landroid/widget/TextView;->length()I
 
@@ -269,18 +269,18 @@
 
     .line 229
     :cond_2
-    iget-object v2, p0, Lcom/android/settings/wifi/WriteWifiConfigToNfcDialog;->mAccessPoint:Lcom/android/settings/wifi/AccessPoint;
+    iget-object v2, p0, Lcom/android/settings_ext/wifi/WriteWifiConfigToNfcDialog;->mAccessPoint:Lcom/android/settings_ext/wifi/AccessPoint;
 
-    iget v2, v2, Lcom/android/settings/wifi/AccessPoint;->security:I
+    iget v2, v2, Lcom/android/settings_ext/wifi/AccessPoint;->security:I
 
     const/4 v3, 0x2
 
     if-ne v2, v3, :cond_0
 
     .line 230
-    iget-object v2, p0, Lcom/android/settings/wifi/WriteWifiConfigToNfcDialog;->mSubmitButton:Landroid/widget/Button;
+    iget-object v2, p0, Lcom/android/settings_ext/wifi/WriteWifiConfigToNfcDialog;->mSubmitButton:Landroid/widget/Button;
 
-    iget-object v3, p0, Lcom/android/settings/wifi/WriteWifiConfigToNfcDialog;->mPasswordView:Landroid/widget/TextView;
+    iget-object v3, p0, Lcom/android/settings_ext/wifi/WriteWifiConfigToNfcDialog;->mPasswordView:Landroid/widget/TextView;
 
     invoke-virtual {v3}, Landroid/widget/TextView;->length()I
 
@@ -302,7 +302,7 @@
 
     .line 233
     :cond_4
-    iget-object v0, p0, Lcom/android/settings/wifi/WriteWifiConfigToNfcDialog;->mSubmitButton:Landroid/widget/Button;
+    iget-object v0, p0, Lcom/android/settings_ext/wifi/WriteWifiConfigToNfcDialog;->mSubmitButton:Landroid/widget/Button;
 
     invoke-virtual {v0, v1}, Landroid/widget/Button;->setEnabled(Z)V
 
@@ -337,9 +337,9 @@
     .line 172
     const-string v3, "application/vnd.wfa.wsc"
 
-    iget-object v4, p0, Lcom/android/settings/wifi/WriteWifiConfigToNfcDialog;->mWpsNfcConfigurationToken:Ljava/lang/String;
+    iget-object v4, p0, Lcom/android/settings_ext/wifi/WriteWifiConfigToNfcDialog;->mWpsNfcConfigurationToken:Ljava/lang/String;
 
-    invoke-static {v4}, Lcom/android/settings/wifi/WriteWifiConfigToNfcDialog;->hexStringToByteArray(Ljava/lang/String;)[B
+    invoke-static {v4}, Lcom/android/settings_ext/wifi/WriteWifiConfigToNfcDialog;->hexStringToByteArray(Ljava/lang/String;)[B
 
     move-result-object v4
 
@@ -364,29 +364,29 @@
     invoke-virtual {v1, v3}, Landroid/nfc/tech/Ndef;->writeNdefMessage(Landroid/nfc/NdefMessage;)V
 
     .line 178
-    invoke-virtual {p0}, Lcom/android/settings/wifi/WriteWifiConfigToNfcDialog;->getOwnerActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/wifi/WriteWifiConfigToNfcDialog;->getOwnerActivity()Landroid/app/Activity;
 
     move-result-object v3
 
-    new-instance v4, Lcom/android/settings/wifi/WriteWifiConfigToNfcDialog$2;
+    new-instance v4, Lcom/android/settings_ext/wifi/WriteWifiConfigToNfcDialog$2;
 
-    invoke-direct {v4, p0}, Lcom/android/settings/wifi/WriteWifiConfigToNfcDialog$2;-><init>(Lcom/android/settings/wifi/WriteWifiConfigToNfcDialog;)V
+    invoke-direct {v4, p0}, Lcom/android/settings_ext/wifi/WriteWifiConfigToNfcDialog$2;-><init>(Lcom/android/settings_ext/wifi/WriteWifiConfigToNfcDialog;)V
 
     invoke-virtual {v3, v4}, Landroid/app/Activity;->runOnUiThread(Ljava/lang/Runnable;)V
 
     .line 184
-    iget-object v3, p0, Lcom/android/settings/wifi/WriteWifiConfigToNfcDialog;->mLabelView:Landroid/widget/TextView;
+    iget-object v3, p0, Lcom/android/settings_ext/wifi/WriteWifiConfigToNfcDialog;->mLabelView:Landroid/widget/TextView;
 
     const v4, 0x7f09095b
 
-    invoke-direct {p0, v3, v4}, Lcom/android/settings/wifi/WriteWifiConfigToNfcDialog;->setViewText(Landroid/widget/TextView;I)V
+    invoke-direct {p0, v3, v4}, Lcom/android/settings_ext/wifi/WriteWifiConfigToNfcDialog;->setViewText(Landroid/widget/TextView;I)V
 
     .line 185
-    iget-object v3, p0, Lcom/android/settings/wifi/WriteWifiConfigToNfcDialog;->mCancelButton:Landroid/widget/Button;
+    iget-object v3, p0, Lcom/android/settings_ext/wifi/WriteWifiConfigToNfcDialog;->mCancelButton:Landroid/widget/Button;
 
     const v4, 0x1040691
 
-    invoke-direct {p0, v3, v4}, Lcom/android/settings/wifi/WriteWifiConfigToNfcDialog;->setViewText(Landroid/widget/TextView;I)V
+    invoke-direct {p0, v3, v4}, Lcom/android/settings_ext/wifi/WriteWifiConfigToNfcDialog;->setViewText(Landroid/widget/TextView;I)V
     :try_end_0
     .catch Ljava/io/IOException; {:try_start_0 .. :try_end_0} :catch_0
     .catch Landroid/nfc/FormatException; {:try_start_0 .. :try_end_0} :catch_1
@@ -403,12 +403,12 @@
 
     .line 187
     .local v0, "e":Ljava/io/IOException;
-    iget-object v3, p0, Lcom/android/settings/wifi/WriteWifiConfigToNfcDialog;->mLabelView:Landroid/widget/TextView;
+    iget-object v3, p0, Lcom/android/settings_ext/wifi/WriteWifiConfigToNfcDialog;->mLabelView:Landroid/widget/TextView;
 
-    invoke-direct {p0, v3, v5}, Lcom/android/settings/wifi/WriteWifiConfigToNfcDialog;->setViewText(Landroid/widget/TextView;I)V
+    invoke-direct {p0, v3, v5}, Lcom/android/settings_ext/wifi/WriteWifiConfigToNfcDialog;->setViewText(Landroid/widget/TextView;I)V
 
     .line 188
-    sget-object v3, Lcom/android/settings/wifi/WriteWifiConfigToNfcDialog;->TAG:Ljava/lang/String;
+    sget-object v3, Lcom/android/settings_ext/wifi/WriteWifiConfigToNfcDialog;->TAG:Ljava/lang/String;
 
     const-string v4, "Unable to write Wi-Fi config to NFC tag."
 
@@ -423,12 +423,12 @@
 
     .line 191
     .local v0, "e":Landroid/nfc/FormatException;
-    iget-object v3, p0, Lcom/android/settings/wifi/WriteWifiConfigToNfcDialog;->mLabelView:Landroid/widget/TextView;
+    iget-object v3, p0, Lcom/android/settings_ext/wifi/WriteWifiConfigToNfcDialog;->mLabelView:Landroid/widget/TextView;
 
-    invoke-direct {p0, v3, v5}, Lcom/android/settings/wifi/WriteWifiConfigToNfcDialog;->setViewText(Landroid/widget/TextView;I)V
+    invoke-direct {p0, v3, v5}, Lcom/android/settings_ext/wifi/WriteWifiConfigToNfcDialog;->setViewText(Landroid/widget/TextView;I)V
 
     .line 192
-    sget-object v3, Lcom/android/settings/wifi/WriteWifiConfigToNfcDialog;->TAG:Ljava/lang/String;
+    sget-object v3, Lcom/android/settings_ext/wifi/WriteWifiConfigToNfcDialog;->TAG:Ljava/lang/String;
 
     const-string v4, "Unable to write Wi-Fi config to NFC tag."
 
@@ -440,12 +440,12 @@
     .end local v0    # "e":Landroid/nfc/FormatException;
     .end local v2    # "record":Landroid/nfc/NdefRecord;
     :cond_0
-    iget-object v3, p0, Lcom/android/settings/wifi/WriteWifiConfigToNfcDialog;->mLabelView:Landroid/widget/TextView;
+    iget-object v3, p0, Lcom/android/settings_ext/wifi/WriteWifiConfigToNfcDialog;->mLabelView:Landroid/widget/TextView;
 
-    invoke-direct {p0, v3, v4}, Lcom/android/settings/wifi/WriteWifiConfigToNfcDialog;->setViewText(Landroid/widget/TextView;I)V
+    invoke-direct {p0, v3, v4}, Lcom/android/settings_ext/wifi/WriteWifiConfigToNfcDialog;->setViewText(Landroid/widget/TextView;I)V
 
     .line 197
-    sget-object v3, Lcom/android/settings/wifi/WriteWifiConfigToNfcDialog;->TAG:Ljava/lang/String;
+    sget-object v3, Lcom/android/settings_ext/wifi/WriteWifiConfigToNfcDialog;->TAG:Ljava/lang/String;
 
     const-string v4, "Tag is not writable"
 
@@ -455,12 +455,12 @@
 
     .line 200
     :cond_1
-    iget-object v3, p0, Lcom/android/settings/wifi/WriteWifiConfigToNfcDialog;->mLabelView:Landroid/widget/TextView;
+    iget-object v3, p0, Lcom/android/settings_ext/wifi/WriteWifiConfigToNfcDialog;->mLabelView:Landroid/widget/TextView;
 
-    invoke-direct {p0, v3, v4}, Lcom/android/settings/wifi/WriteWifiConfigToNfcDialog;->setViewText(Landroid/widget/TextView;I)V
+    invoke-direct {p0, v3, v4}, Lcom/android/settings_ext/wifi/WriteWifiConfigToNfcDialog;->setViewText(Landroid/widget/TextView;I)V
 
     .line 201
-    sget-object v3, Lcom/android/settings/wifi/WriteWifiConfigToNfcDialog;->TAG:Ljava/lang/String;
+    sget-object v3, Lcom/android/settings_ext/wifi/WriteWifiConfigToNfcDialog;->TAG:Ljava/lang/String;
 
     const-string v4, "Tag does not support NDEF"
 
@@ -541,13 +541,13 @@
 
     .prologue
     .line 239
-    invoke-virtual {p0}, Lcom/android/settings/wifi/WriteWifiConfigToNfcDialog;->getOwnerActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/wifi/WriteWifiConfigToNfcDialog;->getOwnerActivity()Landroid/app/Activity;
 
     move-result-object v0
 
-    new-instance v1, Lcom/android/settings/wifi/WriteWifiConfigToNfcDialog$4;
+    new-instance v1, Lcom/android/settings_ext/wifi/WriteWifiConfigToNfcDialog$4;
 
-    invoke-direct {v1, p0, p1, p2}, Lcom/android/settings/wifi/WriteWifiConfigToNfcDialog$4;-><init>(Lcom/android/settings/wifi/WriteWifiConfigToNfcDialog;Landroid/widget/TextView;I)V
+    invoke-direct {v1, p0, p1, p2}, Lcom/android/settings_ext/wifi/WriteWifiConfigToNfcDialog$4;-><init>(Lcom/android/settings_ext/wifi/WriteWifiConfigToNfcDialog;Landroid/widget/TextView;I)V
 
     invoke-virtual {v0, v1}, Landroid/app/Activity;->runOnUiThread(Ljava/lang/Runnable;)V
 
@@ -583,7 +583,7 @@
 
     .prologue
     .line 207
-    iget-object v0, p0, Lcom/android/settings/wifi/WriteWifiConfigToNfcDialog;->mWakeLock:Landroid/os/PowerManager$WakeLock;
+    iget-object v0, p0, Lcom/android/settings_ext/wifi/WriteWifiConfigToNfcDialog;->mWakeLock:Landroid/os/PowerManager$WakeLock;
 
     invoke-virtual {v0}, Landroid/os/PowerManager$WakeLock;->isHeld()Z
 
@@ -592,7 +592,7 @@
     if-eqz v0, :cond_0
 
     .line 208
-    iget-object v0, p0, Lcom/android/settings/wifi/WriteWifiConfigToNfcDialog;->mWakeLock:Landroid/os/PowerManager$WakeLock;
+    iget-object v0, p0, Lcom/android/settings_ext/wifi/WriteWifiConfigToNfcDialog;->mWakeLock:Landroid/os/PowerManager$WakeLock;
 
     invoke-virtual {v0}, Landroid/os/PowerManager$WakeLock;->release()V
 
@@ -611,7 +611,7 @@
 
     .prologue
     .line 249
-    iget-object v1, p0, Lcom/android/settings/wifi/WriteWifiConfigToNfcDialog;->mPasswordView:Landroid/widget/TextView;
+    iget-object v1, p0, Lcom/android/settings_ext/wifi/WriteWifiConfigToNfcDialog;->mPasswordView:Landroid/widget/TextView;
 
     if-eqz p2, :cond_0
 
@@ -644,12 +644,12 @@
     const/4 v10, 0x0
 
     .line 120
-    iget-object v7, p0, Lcom/android/settings/wifi/WriteWifiConfigToNfcDialog;->mWakeLock:Landroid/os/PowerManager$WakeLock;
+    iget-object v7, p0, Lcom/android/settings_ext/wifi/WriteWifiConfigToNfcDialog;->mWakeLock:Landroid/os/PowerManager$WakeLock;
 
     invoke-virtual {v7}, Landroid/os/PowerManager$WakeLock;->acquire()V
 
     .line 122
-    iget-object v7, p0, Lcom/android/settings/wifi/WriteWifiConfigToNfcDialog;->mPasswordView:Landroid/widget/TextView;
+    iget-object v7, p0, Lcom/android/settings_ext/wifi/WriteWifiConfigToNfcDialog;->mPasswordView:Landroid/widget/TextView;
 
     invoke-virtual {v7}, Landroid/widget/TextView;->getText()Ljava/lang/CharSequence;
 
@@ -661,11 +661,11 @@
 
     .line 123
     .local v3, "password":Ljava/lang/String;
-    iget-object v7, p0, Lcom/android/settings/wifi/WriteWifiConfigToNfcDialog;->mWifiManager:Landroid/net/wifi/WifiManager;
+    iget-object v7, p0, Lcom/android/settings_ext/wifi/WriteWifiConfigToNfcDialog;->mWifiManager:Landroid/net/wifi/WifiManager;
 
-    iget-object v8, p0, Lcom/android/settings/wifi/WriteWifiConfigToNfcDialog;->mAccessPoint:Lcom/android/settings/wifi/AccessPoint;
+    iget-object v8, p0, Lcom/android/settings_ext/wifi/WriteWifiConfigToNfcDialog;->mAccessPoint:Lcom/android/settings_ext/wifi/AccessPoint;
 
-    iget v8, v8, Lcom/android/settings/wifi/AccessPoint;->networkId:I
+    iget v8, v8, Lcom/android/settings_ext/wifi/AccessPoint;->networkId:I
 
     invoke-virtual {v7, v8}, Landroid/net/wifi/WifiManager;->getWpsNfcConfigurationToken(I)Ljava/lang/String;
 
@@ -677,7 +677,7 @@
 
     move-result-object v7
 
-    invoke-static {v7}, Lcom/android/settings/wifi/WriteWifiConfigToNfcDialog;->byteArrayToHexString([B)Ljava/lang/String;
+    invoke-static {v7}, Lcom/android/settings_ext/wifi/WriteWifiConfigToNfcDialog;->byteArrayToHexString([B)Ljava/lang/String;
 
     move-result-object v4
 
@@ -728,10 +728,10 @@
     if-eqz v7, :cond_1
 
     .line 134
-    iput-object v6, p0, Lcom/android/settings/wifi/WriteWifiConfigToNfcDialog;->mWpsNfcConfigurationToken:Ljava/lang/String;
+    iput-object v6, p0, Lcom/android/settings_ext/wifi/WriteWifiConfigToNfcDialog;->mWpsNfcConfigurationToken:Ljava/lang/String;
 
     .line 136
-    invoke-virtual {p0}, Lcom/android/settings/wifi/WriteWifiConfigToNfcDialog;->getOwnerActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/wifi/WriteWifiConfigToNfcDialog;->getOwnerActivity()Landroid/app/Activity;
 
     move-result-object v0
 
@@ -743,9 +743,9 @@
 
     .line 139
     .local v2, "nfcAdapter":Landroid/nfc/NfcAdapter;
-    new-instance v7, Lcom/android/settings/wifi/WriteWifiConfigToNfcDialog$1;
+    new-instance v7, Lcom/android/settings_ext/wifi/WriteWifiConfigToNfcDialog$1;
 
-    invoke-direct {v7, p0}, Lcom/android/settings/wifi/WriteWifiConfigToNfcDialog$1;-><init>(Lcom/android/settings/wifi/WriteWifiConfigToNfcDialog;)V
+    invoke-direct {v7, p0}, Lcom/android/settings_ext/wifi/WriteWifiConfigToNfcDialog$1;-><init>(Lcom/android/settings_ext/wifi/WriteWifiConfigToNfcDialog;)V
 
     const/16 v8, 0x1f
 
@@ -754,22 +754,22 @@
     invoke-virtual {v2, v0, v7, v8, v9}, Landroid/nfc/NfcAdapter;->enableReaderMode(Landroid/app/Activity;Landroid/nfc/NfcAdapter$ReaderCallback;ILandroid/os/Bundle;)V
 
     .line 151
-    iget-object v7, p0, Lcom/android/settings/wifi/WriteWifiConfigToNfcDialog;->mPasswordView:Landroid/widget/TextView;
+    iget-object v7, p0, Lcom/android/settings_ext/wifi/WriteWifiConfigToNfcDialog;->mPasswordView:Landroid/widget/TextView;
 
     invoke-virtual {v7, v11}, Landroid/widget/TextView;->setVisibility(I)V
 
     .line 152
-    iget-object v7, p0, Lcom/android/settings/wifi/WriteWifiConfigToNfcDialog;->mPasswordCheckBox:Landroid/widget/CheckBox;
+    iget-object v7, p0, Lcom/android/settings_ext/wifi/WriteWifiConfigToNfcDialog;->mPasswordCheckBox:Landroid/widget/CheckBox;
 
     invoke-virtual {v7, v11}, Landroid/widget/CheckBox;->setVisibility(I)V
 
     .line 153
-    iget-object v7, p0, Lcom/android/settings/wifi/WriteWifiConfigToNfcDialog;->mSubmitButton:Landroid/widget/Button;
+    iget-object v7, p0, Lcom/android/settings_ext/wifi/WriteWifiConfigToNfcDialog;->mSubmitButton:Landroid/widget/Button;
 
     invoke-virtual {v7, v11}, Landroid/widget/Button;->setVisibility(I)V
 
     .line 154
-    invoke-virtual {p0}, Lcom/android/settings/wifi/WriteWifiConfigToNfcDialog;->getOwnerActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ext/wifi/WriteWifiConfigToNfcDialog;->getOwnerActivity()Landroid/app/Activity;
 
     move-result-object v7
 
@@ -783,7 +783,7 @@
 
     .line 156
     .local v1, "imm":Landroid/view/inputmethod/InputMethodManager;
-    iget-object v7, p0, Lcom/android/settings/wifi/WriteWifiConfigToNfcDialog;->mPasswordView:Landroid/widget/TextView;
+    iget-object v7, p0, Lcom/android/settings_ext/wifi/WriteWifiConfigToNfcDialog;->mPasswordView:Landroid/widget/TextView;
 
     invoke-virtual {v7}, Landroid/widget/TextView;->getWindowToken()Landroid/os/IBinder;
 
@@ -792,14 +792,14 @@
     invoke-virtual {v1, v7, v10}, Landroid/view/inputmethod/InputMethodManager;->hideSoftInputFromWindow(Landroid/os/IBinder;I)Z
 
     .line 158
-    iget-object v7, p0, Lcom/android/settings/wifi/WriteWifiConfigToNfcDialog;->mLabelView:Landroid/widget/TextView;
+    iget-object v7, p0, Lcom/android/settings_ext/wifi/WriteWifiConfigToNfcDialog;->mLabelView:Landroid/widget/TextView;
 
     const v8, 0x7f090959
 
     invoke-virtual {v7, v8}, Landroid/widget/TextView;->setText(I)V
 
     .line 160
-    iget-object v7, p0, Lcom/android/settings/wifi/WriteWifiConfigToNfcDialog;->mView:Landroid/view/View;
+    iget-object v7, p0, Lcom/android/settings_ext/wifi/WriteWifiConfigToNfcDialog;->mView:Landroid/view/View;
 
     const v8, 0x7f0f0207
 
@@ -812,7 +812,7 @@
     invoke-virtual {v7, v8}, Landroid/view/View;->setTextAlignment(I)V
 
     .line 161
-    iget-object v7, p0, Lcom/android/settings/wifi/WriteWifiConfigToNfcDialog;->mProgressBar:Landroid/widget/ProgressBar;
+    iget-object v7, p0, Lcom/android/settings_ext/wifi/WriteWifiConfigToNfcDialog;->mProgressBar:Landroid/widget/ProgressBar;
 
     invoke-virtual {v7, v10}, Landroid/widget/ProgressBar;->setVisibility(I)V
 
@@ -857,7 +857,7 @@
     .line 163
     .restart local v5    # "passwordLength":Ljava/lang/String;
     :cond_1
-    iget-object v7, p0, Lcom/android/settings/wifi/WriteWifiConfigToNfcDialog;->mLabelView:Landroid/widget/TextView;
+    iget-object v7, p0, Lcom/android/settings_ext/wifi/WriteWifiConfigToNfcDialog;->mLabelView:Landroid/widget/TextView;
 
     const v8, 0x7f09095a
 
@@ -880,7 +880,7 @@
     const/4 v1, 0x0
 
     .line 90
-    invoke-virtual {p0}, Lcom/android/settings/wifi/WriteWifiConfigToNfcDialog;->getLayoutInflater()Landroid/view/LayoutInflater;
+    invoke-virtual {p0}, Lcom/android/settings_ext/wifi/WriteWifiConfigToNfcDialog;->getLayoutInflater()Landroid/view/LayoutInflater;
 
     move-result-object v0
 
@@ -890,26 +890,26 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/wifi/WriteWifiConfigToNfcDialog;->mView:Landroid/view/View;
+    iput-object v0, p0, Lcom/android/settings_ext/wifi/WriteWifiConfigToNfcDialog;->mView:Landroid/view/View;
 
     .line 92
-    iget-object v0, p0, Lcom/android/settings/wifi/WriteWifiConfigToNfcDialog;->mView:Landroid/view/View;
+    iget-object v0, p0, Lcom/android/settings_ext/wifi/WriteWifiConfigToNfcDialog;->mView:Landroid/view/View;
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/wifi/WriteWifiConfigToNfcDialog;->setView(Landroid/view/View;)V
+    invoke-virtual {p0, v0}, Lcom/android/settings_ext/wifi/WriteWifiConfigToNfcDialog;->setView(Landroid/view/View;)V
 
     .line 93
-    invoke-virtual {p0, v5}, Lcom/android/settings/wifi/WriteWifiConfigToNfcDialog;->setInverseBackgroundForced(Z)V
+    invoke-virtual {p0, v5}, Lcom/android/settings_ext/wifi/WriteWifiConfigToNfcDialog;->setInverseBackgroundForced(Z)V
 
     .line 94
     const v0, 0x7f090957
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/wifi/WriteWifiConfigToNfcDialog;->setTitle(I)V
+    invoke-virtual {p0, v0}, Lcom/android/settings_ext/wifi/WriteWifiConfigToNfcDialog;->setTitle(I)V
 
     .line 95
-    invoke-virtual {p0, v5}, Lcom/android/settings/wifi/WriteWifiConfigToNfcDialog;->setCancelable(Z)V
+    invoke-virtual {p0, v5}, Lcom/android/settings_ext/wifi/WriteWifiConfigToNfcDialog;->setCancelable(Z)V
 
     .line 96
-    iget-object v0, p0, Lcom/android/settings/wifi/WriteWifiConfigToNfcDialog;->mContext:Landroid/content/Context;
+    iget-object v0, p0, Lcom/android/settings_ext/wifi/WriteWifiConfigToNfcDialog;->mContext:Landroid/content/Context;
 
     invoke-virtual {v0}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
 
@@ -925,10 +925,10 @@
 
     check-cast v0, Landroid/content/DialogInterface$OnClickListener;
 
-    invoke-virtual {p0, v3, v2, v0}, Lcom/android/settings/wifi/WriteWifiConfigToNfcDialog;->setButton(ILjava/lang/CharSequence;Landroid/content/DialogInterface$OnClickListener;)V
+    invoke-virtual {p0, v3, v2, v0}, Lcom/android/settings_ext/wifi/WriteWifiConfigToNfcDialog;->setButton(ILjava/lang/CharSequence;Landroid/content/DialogInterface$OnClickListener;)V
 
     .line 98
-    iget-object v0, p0, Lcom/android/settings/wifi/WriteWifiConfigToNfcDialog;->mContext:Landroid/content/Context;
+    iget-object v0, p0, Lcom/android/settings_ext/wifi/WriteWifiConfigToNfcDialog;->mContext:Landroid/content/Context;
 
     invoke-virtual {v0}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
 
@@ -942,10 +942,10 @@
 
     check-cast v1, Landroid/content/DialogInterface$OnClickListener;
 
-    invoke-virtual {p0, v4, v0, v1}, Lcom/android/settings/wifi/WriteWifiConfigToNfcDialog;->setButton(ILjava/lang/CharSequence;Landroid/content/DialogInterface$OnClickListener;)V
+    invoke-virtual {p0, v4, v0, v1}, Lcom/android/settings_ext/wifi/WriteWifiConfigToNfcDialog;->setButton(ILjava/lang/CharSequence;Landroid/content/DialogInterface$OnClickListener;)V
 
     .line 102
-    iget-object v0, p0, Lcom/android/settings/wifi/WriteWifiConfigToNfcDialog;->mView:Landroid/view/View;
+    iget-object v0, p0, Lcom/android/settings_ext/wifi/WriteWifiConfigToNfcDialog;->mView:Landroid/view/View;
 
     const v1, 0x7f0f01e8
 
@@ -955,10 +955,10 @@
 
     check-cast v0, Landroid/widget/TextView;
 
-    iput-object v0, p0, Lcom/android/settings/wifi/WriteWifiConfigToNfcDialog;->mPasswordView:Landroid/widget/TextView;
+    iput-object v0, p0, Lcom/android/settings_ext/wifi/WriteWifiConfigToNfcDialog;->mPasswordView:Landroid/widget/TextView;
 
     .line 103
-    iget-object v0, p0, Lcom/android/settings/wifi/WriteWifiConfigToNfcDialog;->mView:Landroid/view/View;
+    iget-object v0, p0, Lcom/android/settings_ext/wifi/WriteWifiConfigToNfcDialog;->mView:Landroid/view/View;
 
     const v1, 0x7f0f0254
 
@@ -968,15 +968,15 @@
 
     check-cast v0, Landroid/widget/TextView;
 
-    iput-object v0, p0, Lcom/android/settings/wifi/WriteWifiConfigToNfcDialog;->mLabelView:Landroid/widget/TextView;
+    iput-object v0, p0, Lcom/android/settings_ext/wifi/WriteWifiConfigToNfcDialog;->mLabelView:Landroid/widget/TextView;
 
     .line 104
-    iget-object v0, p0, Lcom/android/settings/wifi/WriteWifiConfigToNfcDialog;->mPasswordView:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/android/settings_ext/wifi/WriteWifiConfigToNfcDialog;->mPasswordView:Landroid/widget/TextView;
 
     invoke-virtual {v0, p0}, Landroid/widget/TextView;->addTextChangedListener(Landroid/text/TextWatcher;)V
 
     .line 105
-    iget-object v0, p0, Lcom/android/settings/wifi/WriteWifiConfigToNfcDialog;->mView:Landroid/view/View;
+    iget-object v0, p0, Lcom/android/settings_ext/wifi/WriteWifiConfigToNfcDialog;->mView:Landroid/view/View;
 
     const v1, 0x7f0f01fe
 
@@ -986,15 +986,15 @@
 
     check-cast v0, Landroid/widget/CheckBox;
 
-    iput-object v0, p0, Lcom/android/settings/wifi/WriteWifiConfigToNfcDialog;->mPasswordCheckBox:Landroid/widget/CheckBox;
+    iput-object v0, p0, Lcom/android/settings_ext/wifi/WriteWifiConfigToNfcDialog;->mPasswordCheckBox:Landroid/widget/CheckBox;
 
     .line 106
-    iget-object v0, p0, Lcom/android/settings/wifi/WriteWifiConfigToNfcDialog;->mPasswordCheckBox:Landroid/widget/CheckBox;
+    iget-object v0, p0, Lcom/android/settings_ext/wifi/WriteWifiConfigToNfcDialog;->mPasswordCheckBox:Landroid/widget/CheckBox;
 
     invoke-virtual {v0, p0}, Landroid/widget/CheckBox;->setOnCheckedChangeListener(Landroid/widget/CompoundButton$OnCheckedChangeListener;)V
 
     .line 107
-    iget-object v0, p0, Lcom/android/settings/wifi/WriteWifiConfigToNfcDialog;->mView:Landroid/view/View;
+    iget-object v0, p0, Lcom/android/settings_ext/wifi/WriteWifiConfigToNfcDialog;->mView:Landroid/view/View;
 
     const v1, 0x7f0f0053
 
@@ -1004,36 +1004,36 @@
 
     check-cast v0, Landroid/widget/ProgressBar;
 
-    iput-object v0, p0, Lcom/android/settings/wifi/WriteWifiConfigToNfcDialog;->mProgressBar:Landroid/widget/ProgressBar;
+    iput-object v0, p0, Lcom/android/settings_ext/wifi/WriteWifiConfigToNfcDialog;->mProgressBar:Landroid/widget/ProgressBar;
 
     .line 109
     invoke-super {p0, p1}, Landroid/app/AlertDialog;->onCreate(Landroid/os/Bundle;)V
 
     .line 111
-    invoke-virtual {p0, v3}, Lcom/android/settings/wifi/WriteWifiConfigToNfcDialog;->getButton(I)Landroid/widget/Button;
+    invoke-virtual {p0, v3}, Lcom/android/settings_ext/wifi/WriteWifiConfigToNfcDialog;->getButton(I)Landroid/widget/Button;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/wifi/WriteWifiConfigToNfcDialog;->mSubmitButton:Landroid/widget/Button;
+    iput-object v0, p0, Lcom/android/settings_ext/wifi/WriteWifiConfigToNfcDialog;->mSubmitButton:Landroid/widget/Button;
 
     .line 112
-    iget-object v0, p0, Lcom/android/settings/wifi/WriteWifiConfigToNfcDialog;->mSubmitButton:Landroid/widget/Button;
+    iget-object v0, p0, Lcom/android/settings_ext/wifi/WriteWifiConfigToNfcDialog;->mSubmitButton:Landroid/widget/Button;
 
     invoke-virtual {v0, p0}, Landroid/widget/Button;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     .line 113
-    iget-object v0, p0, Lcom/android/settings/wifi/WriteWifiConfigToNfcDialog;->mSubmitButton:Landroid/widget/Button;
+    iget-object v0, p0, Lcom/android/settings_ext/wifi/WriteWifiConfigToNfcDialog;->mSubmitButton:Landroid/widget/Button;
 
     const/4 v1, 0x0
 
     invoke-virtual {v0, v1}, Landroid/widget/Button;->setEnabled(Z)V
 
     .line 115
-    invoke-virtual {p0, v4}, Lcom/android/settings/wifi/WriteWifiConfigToNfcDialog;->getButton(I)Landroid/widget/Button;
+    invoke-virtual {p0, v4}, Lcom/android/settings_ext/wifi/WriteWifiConfigToNfcDialog;->getButton(I)Landroid/widget/Button;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/wifi/WriteWifiConfigToNfcDialog;->mCancelButton:Landroid/widget/Button;
+    iput-object v0, p0, Lcom/android/settings_ext/wifi/WriteWifiConfigToNfcDialog;->mCancelButton:Landroid/widget/Button;
 
     .line 116
     return-void
@@ -1048,11 +1048,11 @@
 
     .prologue
     .line 216
-    iget-object v0, p0, Lcom/android/settings/wifi/WriteWifiConfigToNfcDialog;->mOnTextChangedHandler:Landroid/os/Handler;
+    iget-object v0, p0, Lcom/android/settings_ext/wifi/WriteWifiConfigToNfcDialog;->mOnTextChangedHandler:Landroid/os/Handler;
 
-    new-instance v1, Lcom/android/settings/wifi/WriteWifiConfigToNfcDialog$3;
+    new-instance v1, Lcom/android/settings_ext/wifi/WriteWifiConfigToNfcDialog$3;
 
-    invoke-direct {v1, p0}, Lcom/android/settings/wifi/WriteWifiConfigToNfcDialog$3;-><init>(Lcom/android/settings/wifi/WriteWifiConfigToNfcDialog;)V
+    invoke-direct {v1, p0}, Lcom/android/settings_ext/wifi/WriteWifiConfigToNfcDialog$3;-><init>(Lcom/android/settings_ext/wifi/WriteWifiConfigToNfcDialog;)V
 
     invoke-virtual {v0, v1}, Landroid/os/Handler;->post(Ljava/lang/Runnable;)Z
 

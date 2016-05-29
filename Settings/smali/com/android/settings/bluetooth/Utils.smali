@@ -1,4 +1,4 @@
-.class final Lcom/android/settings/bluetooth/Utils;
+.class final Lcom/android/settings_ext/bluetooth/Utils;
 .super Ljava/lang/Object;
 .source "Utils.java"
 
@@ -159,12 +159,12 @@
 
     .line 97
     .local v2, "message":Ljava/lang/String;
-    invoke-static {p0}, Lcom/android/settings/bluetooth/LocalBluetoothManager;->getInstance(Landroid/content/Context;)Lcom/android/settings/bluetooth/LocalBluetoothManager;
+    invoke-static {p0}, Lcom/android/settings_ext/bluetooth/LocalBluetoothManager;->getInstance(Landroid/content/Context;)Lcom/android/settings_ext/bluetooth/LocalBluetoothManager;
 
     move-result-object v1
 
     .line 98
-    .local v1, "manager":Lcom/android/settings/bluetooth/LocalBluetoothManager;
+    .local v1, "manager":Lcom/android/settings_ext/bluetooth/LocalBluetoothManager;
     if-nez v1, :cond_0
 
     .line 99
@@ -180,13 +180,13 @@
 
     .line 102
     :cond_0
-    invoke-virtual {v1}, Lcom/android/settings/bluetooth/LocalBluetoothManager;->getForegroundActivity()Landroid/content/Context;
+    invoke-virtual {v1}, Lcom/android/settings_ext/bluetooth/LocalBluetoothManager;->getForegroundActivity()Landroid/content/Context;
 
     move-result-object v0
 
     .line 103
     .local v0, "activity":Landroid/content/Context;
-    invoke-virtual {v1}, Lcom/android/settings/bluetooth/LocalBluetoothManager;->isForegroundActivity()Z
+    invoke-virtual {v1}, Lcom/android/settings_ext/bluetooth/LocalBluetoothManager;->isForegroundActivity()Z
 
     move-result v3
 
@@ -241,32 +241,32 @@
 
     .prologue
     .line 119
-    new-instance v0, Lcom/android/settings/search/SearchIndexableRaw;
+    new-instance v0, Lcom/android/settings_ext/search/SearchIndexableRaw;
 
-    invoke-direct {v0, p0}, Lcom/android/settings/search/SearchIndexableRaw;-><init>(Landroid/content/Context;)V
+    invoke-direct {v0, p0}, Lcom/android/settings_ext/search/SearchIndexableRaw;-><init>(Landroid/content/Context;)V
 
     .line 120
-    .local v0, "data":Lcom/android/settings/search/SearchIndexableRaw;
-    iput-object p1, v0, Lcom/android/settings/search/SearchIndexableRaw;->className:Ljava/lang/String;
+    .local v0, "data":Lcom/android/settings_ext/search/SearchIndexableRaw;
+    iput-object p1, v0, Lcom/android/settings_ext/search/SearchIndexableRaw;->className:Ljava/lang/String;
 
     .line 121
-    iput-object p2, v0, Lcom/android/settings/search/SearchIndexableRaw;->title:Ljava/lang/String;
+    iput-object p2, v0, Lcom/android/settings_ext/search/SearchIndexableRaw;->title:Ljava/lang/String;
 
     .line 122
-    iput-object p3, v0, Lcom/android/settings/search/SearchIndexableRaw;->screenTitle:Ljava/lang/String;
+    iput-object p3, v0, Lcom/android/settings_ext/search/SearchIndexableRaw;->screenTitle:Ljava/lang/String;
 
     .line 123
-    iput p4, v0, Lcom/android/settings/search/SearchIndexableRaw;->iconResId:I
+    iput p4, v0, Lcom/android/settings_ext/search/SearchIndexableRaw;->iconResId:I
 
     .line 124
-    iput-boolean p5, v0, Lcom/android/settings/search/SearchIndexableRaw;->enabled:Z
+    iput-boolean p5, v0, Lcom/android/settings_ext/search/SearchIndexableRaw;->enabled:Z
 
     .line 126
-    invoke-static {p0}, Lcom/android/settings/search/Index;->getInstance(Landroid/content/Context;)Lcom/android/settings/search/Index;
+    invoke-static {p0}, Lcom/android/settings_ext/search/Index;->getInstance(Landroid/content/Context;)Lcom/android/settings_ext/search/Index;
 
     move-result-object v1
 
-    invoke-virtual {v1, v0}, Lcom/android/settings/search/Index;->updateFromSearchIndexableData(Landroid/provider/SearchIndexableData;)V
+    invoke-virtual {v1, v0}, Lcom/android/settings_ext/search/Index;->updateFromSearchIndexableData(Landroid/provider/SearchIndexableData;)V
 
     .line 127
     return-void

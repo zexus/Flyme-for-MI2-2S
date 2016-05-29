@@ -1,11 +1,11 @@
-.class Lcom/android/settings/search/Index$UpdateData;
+.class Lcom/android/settings_ext/search/Index$UpdateData;
 .super Ljava/lang/Object;
 .source "Index.java"
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/android/settings/search/Index;
+    value = Lcom/android/settings_ext/search/Index;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -65,36 +65,36 @@
     .line 176
     const/4 v0, 0x0
 
-    iput-boolean v0, p0, Lcom/android/settings/search/Index$UpdateData;->forceUpdate:Z
+    iput-boolean v0, p0, Lcom/android/settings_ext/search/Index$UpdateData;->forceUpdate:Z
 
     .line 179
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
-    iput-object v0, p0, Lcom/android/settings/search/Index$UpdateData;->dataToUpdate:Ljava/util/List;
+    iput-object v0, p0, Lcom/android/settings_ext/search/Index$UpdateData;->dataToUpdate:Ljava/util/List;
 
     .line 180
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
-    iput-object v0, p0, Lcom/android/settings/search/Index$UpdateData;->dataToDelete:Ljava/util/List;
+    iput-object v0, p0, Lcom/android/settings_ext/search/Index$UpdateData;->dataToDelete:Ljava/util/List;
 
     .line 181
     new-instance v0, Ljava/util/HashMap;
 
     invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
 
-    iput-object v0, p0, Lcom/android/settings/search/Index$UpdateData;->nonIndexableKeys:Ljava/util/Map;
+    iput-object v0, p0, Lcom/android/settings_ext/search/Index$UpdateData;->nonIndexableKeys:Ljava/util/Map;
 
     .line 182
     return-void
 .end method
 
-.method public constructor <init>(Lcom/android/settings/search/Index$UpdateData;)V
+.method public constructor <init>(Lcom/android/settings_ext/search/Index$UpdateData;)V
     .locals 2
-    .param p1, "other"    # Lcom/android/settings/search/Index$UpdateData;
+    .param p1, "other"    # Lcom/android/settings_ext/search/Index$UpdateData;
 
     .prologue
     .line 184
@@ -103,39 +103,39 @@
     .line 176
     const/4 v0, 0x0
 
-    iput-boolean v0, p0, Lcom/android/settings/search/Index$UpdateData;->forceUpdate:Z
+    iput-boolean v0, p0, Lcom/android/settings_ext/search/Index$UpdateData;->forceUpdate:Z
 
     .line 185
     new-instance v0, Ljava/util/ArrayList;
 
-    iget-object v1, p1, Lcom/android/settings/search/Index$UpdateData;->dataToUpdate:Ljava/util/List;
+    iget-object v1, p1, Lcom/android/settings_ext/search/Index$UpdateData;->dataToUpdate:Ljava/util/List;
 
     invoke-direct {v0, v1}, Ljava/util/ArrayList;-><init>(Ljava/util/Collection;)V
 
-    iput-object v0, p0, Lcom/android/settings/search/Index$UpdateData;->dataToUpdate:Ljava/util/List;
+    iput-object v0, p0, Lcom/android/settings_ext/search/Index$UpdateData;->dataToUpdate:Ljava/util/List;
 
     .line 186
     new-instance v0, Ljava/util/ArrayList;
 
-    iget-object v1, p1, Lcom/android/settings/search/Index$UpdateData;->dataToDelete:Ljava/util/List;
+    iget-object v1, p1, Lcom/android/settings_ext/search/Index$UpdateData;->dataToDelete:Ljava/util/List;
 
     invoke-direct {v0, v1}, Ljava/util/ArrayList;-><init>(Ljava/util/Collection;)V
 
-    iput-object v0, p0, Lcom/android/settings/search/Index$UpdateData;->dataToDelete:Ljava/util/List;
+    iput-object v0, p0, Lcom/android/settings_ext/search/Index$UpdateData;->dataToDelete:Ljava/util/List;
 
     .line 187
     new-instance v0, Ljava/util/HashMap;
 
-    iget-object v1, p1, Lcom/android/settings/search/Index$UpdateData;->nonIndexableKeys:Ljava/util/Map;
+    iget-object v1, p1, Lcom/android/settings_ext/search/Index$UpdateData;->nonIndexableKeys:Ljava/util/Map;
 
     invoke-direct {v0, v1}, Ljava/util/HashMap;-><init>(Ljava/util/Map;)V
 
-    iput-object v0, p0, Lcom/android/settings/search/Index$UpdateData;->nonIndexableKeys:Ljava/util/Map;
+    iput-object v0, p0, Lcom/android/settings_ext/search/Index$UpdateData;->nonIndexableKeys:Ljava/util/Map;
 
     .line 188
-    iget-boolean v0, p1, Lcom/android/settings/search/Index$UpdateData;->forceUpdate:Z
+    iget-boolean v0, p1, Lcom/android/settings_ext/search/Index$UpdateData;->forceUpdate:Z
 
-    iput-boolean v0, p0, Lcom/android/settings/search/Index$UpdateData;->forceUpdate:Z
+    iput-boolean v0, p0, Lcom/android/settings_ext/search/Index$UpdateData;->forceUpdate:Z
 
     .line 189
     return-void
@@ -148,37 +148,37 @@
 
     .prologue
     .line 196
-    iget-object v0, p0, Lcom/android/settings/search/Index$UpdateData;->dataToUpdate:Ljava/util/List;
+    iget-object v0, p0, Lcom/android/settings_ext/search/Index$UpdateData;->dataToUpdate:Ljava/util/List;
 
     invoke-interface {v0}, Ljava/util/List;->clear()V
 
     .line 197
-    iget-object v0, p0, Lcom/android/settings/search/Index$UpdateData;->dataToDelete:Ljava/util/List;
+    iget-object v0, p0, Lcom/android/settings_ext/search/Index$UpdateData;->dataToDelete:Ljava/util/List;
 
     invoke-interface {v0}, Ljava/util/List;->clear()V
 
     .line 198
-    iget-object v0, p0, Lcom/android/settings/search/Index$UpdateData;->nonIndexableKeys:Ljava/util/Map;
+    iget-object v0, p0, Lcom/android/settings_ext/search/Index$UpdateData;->nonIndexableKeys:Ljava/util/Map;
 
     invoke-interface {v0}, Ljava/util/Map;->clear()V
 
     .line 199
     const/4 v0, 0x0
 
-    iput-boolean v0, p0, Lcom/android/settings/search/Index$UpdateData;->forceUpdate:Z
+    iput-boolean v0, p0, Lcom/android/settings_ext/search/Index$UpdateData;->forceUpdate:Z
 
     .line 200
     return-void
 .end method
 
-.method public copy()Lcom/android/settings/search/Index$UpdateData;
+.method public copy()Lcom/android/settings_ext/search/Index$UpdateData;
     .locals 1
 
     .prologue
     .line 192
-    new-instance v0, Lcom/android/settings/search/Index$UpdateData;
+    new-instance v0, Lcom/android/settings_ext/search/Index$UpdateData;
 
-    invoke-direct {v0, p0}, Lcom/android/settings/search/Index$UpdateData;-><init>(Lcom/android/settings/search/Index$UpdateData;)V
+    invoke-direct {v0, p0}, Lcom/android/settings_ext/search/Index$UpdateData;-><init>(Lcom/android/settings_ext/search/Index$UpdateData;)V
 
     return-object v0
 .end method

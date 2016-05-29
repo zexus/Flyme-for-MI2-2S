@@ -1,11 +1,11 @@
-.class Lcom/android/settings/search/Index$SaveSearchQueryTask;
+.class Lcom/android/settings_ext/search/Index$SaveSearchQueryTask;
 .super Landroid/os/AsyncTask;
 .source "Index.java"
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/android/settings/search/Index;
+    value = Lcom/android/settings_ext/search/Index;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -26,30 +26,30 @@
 
 
 # instance fields
-.field final synthetic this$0:Lcom/android/settings/search/Index;
+.field final synthetic this$0:Lcom/android/settings_ext/search/Index;
 
 
 # direct methods
-.method private constructor <init>(Lcom/android/settings/search/Index;)V
+.method private constructor <init>(Lcom/android/settings_ext/search/Index;)V
     .locals 0
 
     .prologue
     .line 1283
-    iput-object p1, p0, Lcom/android/settings/search/Index$SaveSearchQueryTask;->this$0:Lcom/android/settings/search/Index;
+    iput-object p1, p0, Lcom/android/settings_ext/search/Index$SaveSearchQueryTask;->this$0:Lcom/android/settings_ext/search/Index;
 
     invoke-direct {p0}, Landroid/os/AsyncTask;-><init>()V
 
     return-void
 .end method
 
-.method synthetic constructor <init>(Lcom/android/settings/search/Index;Lcom/android/settings/search/Index$1;)V
+.method synthetic constructor <init>(Lcom/android/settings_ext/search/Index;Lcom/android/settings_ext/search/Index$1;)V
     .locals 0
-    .param p1, "x0"    # Lcom/android/settings/search/Index;
-    .param p2, "x1"    # Lcom/android/settings/search/Index$1;
+    .param p1, "x0"    # Lcom/android/settings_ext/search/Index;
+    .param p2, "x1"    # Lcom/android/settings_ext/search/Index$1;
 
     .prologue
     .line 1283
-    invoke-direct {p0, p1}, Lcom/android/settings/search/Index$SaveSearchQueryTask;-><init>(Lcom/android/settings/search/Index;)V
+    invoke-direct {p0, p1}, Lcom/android/settings_ext/search/Index$SaveSearchQueryTask;-><init>(Lcom/android/settings_ext/search/Index;)V
 
     return-void
 .end method
@@ -96,10 +96,10 @@
     invoke-virtual {v5, v10, v11}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/Long;)V
 
     .line 1293
-    iget-object v10, p0, Lcom/android/settings/search/Index$SaveSearchQueryTask;->this$0:Lcom/android/settings/search/Index;
+    iget-object v10, p0, Lcom/android/settings_ext/search/Index$SaveSearchQueryTask;->this$0:Lcom/android/settings_ext/search/Index;
 
-    # invokes: Lcom/android/settings/search/Index;->getWritableDatabase()Landroid/database/sqlite/SQLiteDatabase;
-    invoke-static {v10}, Lcom/android/settings/search/Index;->access$300(Lcom/android/settings/search/Index;)Landroid/database/sqlite/SQLiteDatabase;
+    # invokes: Lcom/android/settings_ext/search/Index;->getWritableDatabase()Landroid/database/sqlite/SQLiteDatabase;
+    invoke-static {v10}, Lcom/android/settings_ext/search/Index;->access$300(Lcom/android/settings_ext/search/Index;)Landroid/database/sqlite/SQLiteDatabase;
 
     move-result-object v1
 
@@ -138,8 +138,8 @@
     move-result-wide v6
 
     .line 1307
-    # getter for: Lcom/android/settings/search/Index;->MAX_SAVED_SEARCH_QUERY:J
-    invoke-static {}, Lcom/android/settings/search/Index;->access$500()J
+    # getter for: Lcom/android/settings_ext/search/Index;->MAX_SAVED_SEARCH_QUERY:J
+    invoke-static {}, Lcom/android/settings_ext/search/Index;->access$500()J
 
     move-result-wide v10
 
@@ -241,7 +241,7 @@
     check-cast p1, [Ljava/lang/String;
 
     .end local p1    # "x0":[Ljava/lang/Object;
-    invoke-virtual {p0, p1}, Lcom/android/settings/search/Index$SaveSearchQueryTask;->doInBackground([Ljava/lang/String;)Ljava/lang/Long;
+    invoke-virtual {p0, p1}, Lcom/android/settings_ext/search/Index$SaveSearchQueryTask;->doInBackground([Ljava/lang/String;)Ljava/lang/Long;
 
     move-result-object v0
 

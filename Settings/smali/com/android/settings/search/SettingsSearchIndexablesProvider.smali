@@ -1,4 +1,4 @@
-.class public Lcom/android/settings/search/SettingsSearchIndexablesProvider;
+.class public Lcom/android/settings_ext/search/SettingsSearchIndexablesProvider;
 .super Landroid/provider/SearchIndexablesProvider;
 .source "SettingsSearchIndexablesProvider.java"
 
@@ -76,7 +76,7 @@
 
     .line 49
     .local v0, "cursor":Landroid/database/MatrixCursor;
-    invoke-static {}, Lcom/android/settings/search/SearchIndexableResources;->values()Ljava/util/Collection;
+    invoke-static {}, Lcom/android/settings_ext/search/SearchIndexableResources;->values()Ljava/util/Collection;
 
     move-result-object v4
 

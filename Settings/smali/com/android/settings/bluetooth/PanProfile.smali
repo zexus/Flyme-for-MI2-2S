@@ -1,16 +1,16 @@
-.class final Lcom/android/settings/bluetooth/PanProfile;
+.class final Lcom/android/settings_ext/bluetooth/PanProfile;
 .super Ljava/lang/Object;
 .source "PanProfile.java"
 
 # interfaces
-.implements Lcom/android/settings/bluetooth/LocalBluetoothProfile;
+.implements Lcom/android/settings_ext/bluetooth/LocalBluetoothProfile;
 
 
 # annotations
 .annotation system Ldalvik/annotation/MemberClasses;
     value = {
-        Lcom/android/settings/bluetooth/PanProfile$1;,
-        Lcom/android/settings/bluetooth/PanProfile$PanServiceListener;
+        Lcom/android/settings_ext/bluetooth/PanProfile$1;,
+        Lcom/android/settings_ext/bluetooth/PanProfile$PanServiceListener;
     }
 .end annotation
 
@@ -45,7 +45,7 @@
     .line 37
     const/4 v0, 0x1
 
-    sput-boolean v0, Lcom/android/settings/bluetooth/PanProfile;->V:Z
+    sput-boolean v0, Lcom/android/settings_ext/bluetooth/PanProfile;->V:Z
 
     return-void
 .end method
@@ -63,7 +63,7 @@
 
     invoke-direct {v1}, Ljava/util/HashMap;-><init>()V
 
-    iput-object v1, p0, Lcom/android/settings/bluetooth/PanProfile;->mDeviceRoleMap:Ljava/util/HashMap;
+    iput-object v1, p0, Lcom/android/settings_ext/bluetooth/PanProfile;->mDeviceRoleMap:Ljava/util/HashMap;
 
     .line 72
     invoke-static {}, Landroid/bluetooth/BluetoothAdapter;->getDefaultAdapter()Landroid/bluetooth/BluetoothAdapter;
@@ -72,11 +72,11 @@
 
     .line 73
     .local v0, "adapter":Landroid/bluetooth/BluetoothAdapter;
-    new-instance v1, Lcom/android/settings/bluetooth/PanProfile$PanServiceListener;
+    new-instance v1, Lcom/android/settings_ext/bluetooth/PanProfile$PanServiceListener;
 
     const/4 v2, 0x0
 
-    invoke-direct {v1, p0, v2}, Lcom/android/settings/bluetooth/PanProfile$PanServiceListener;-><init>(Lcom/android/settings/bluetooth/PanProfile;Lcom/android/settings/bluetooth/PanProfile$1;)V
+    invoke-direct {v1, p0, v2}, Lcom/android/settings_ext/bluetooth/PanProfile$PanServiceListener;-><init>(Lcom/android/settings_ext/bluetooth/PanProfile;Lcom/android/settings_ext/bluetooth/PanProfile$1;)V
 
     const/4 v2, 0x5
 
@@ -91,31 +91,31 @@
 
     .prologue
     .line 35
-    sget-boolean v0, Lcom/android/settings/bluetooth/PanProfile;->V:Z
+    sget-boolean v0, Lcom/android/settings_ext/bluetooth/PanProfile;->V:Z
 
     return v0
 .end method
 
-.method static synthetic access$102(Lcom/android/settings/bluetooth/PanProfile;Landroid/bluetooth/BluetoothPan;)Landroid/bluetooth/BluetoothPan;
+.method static synthetic access$102(Lcom/android/settings_ext/bluetooth/PanProfile;Landroid/bluetooth/BluetoothPan;)Landroid/bluetooth/BluetoothPan;
     .locals 0
-    .param p0, "x0"    # Lcom/android/settings/bluetooth/PanProfile;
+    .param p0, "x0"    # Lcom/android/settings_ext/bluetooth/PanProfile;
     .param p1, "x1"    # Landroid/bluetooth/BluetoothPan;
 
     .prologue
     .line 35
-    iput-object p1, p0, Lcom/android/settings/bluetooth/PanProfile;->mService:Landroid/bluetooth/BluetoothPan;
+    iput-object p1, p0, Lcom/android/settings_ext/bluetooth/PanProfile;->mService:Landroid/bluetooth/BluetoothPan;
 
     return-object p1
 .end method
 
-.method static synthetic access$202(Lcom/android/settings/bluetooth/PanProfile;Z)Z
+.method static synthetic access$202(Lcom/android/settings_ext/bluetooth/PanProfile;Z)Z
     .locals 0
-    .param p0, "x0"    # Lcom/android/settings/bluetooth/PanProfile;
+    .param p0, "x0"    # Lcom/android/settings_ext/bluetooth/PanProfile;
     .param p1, "x1"    # Z
 
     .prologue
     .line 35
-    iput-boolean p1, p0, Lcom/android/settings/bluetooth/PanProfile;->mIsProfileReady:Z
+    iput-boolean p1, p0, Lcom/android/settings_ext/bluetooth/PanProfile;->mIsProfileReady:Z
 
     return p1
 .end method
@@ -128,7 +128,7 @@
 
     .prologue
     .line 86
-    iget-object v3, p0, Lcom/android/settings/bluetooth/PanProfile;->mService:Landroid/bluetooth/BluetoothPan;
+    iget-object v3, p0, Lcom/android/settings_ext/bluetooth/PanProfile;->mService:Landroid/bluetooth/BluetoothPan;
 
     if-nez v3, :cond_0
 
@@ -140,7 +140,7 @@
 
     .line 87
     :cond_0
-    iget-object v3, p0, Lcom/android/settings/bluetooth/PanProfile;->mService:Landroid/bluetooth/BluetoothPan;
+    iget-object v3, p0, Lcom/android/settings_ext/bluetooth/PanProfile;->mService:Landroid/bluetooth/BluetoothPan;
 
     invoke-virtual {v3}, Landroid/bluetooth/BluetoothPan;->getConnectedDevices()Ljava/util/List;
 
@@ -171,7 +171,7 @@
 
     .line 90
     .local v1, "sink":Landroid/bluetooth/BluetoothDevice;
-    iget-object v3, p0, Lcom/android/settings/bluetooth/PanProfile;->mService:Landroid/bluetooth/BluetoothPan;
+    iget-object v3, p0, Lcom/android/settings_ext/bluetooth/PanProfile;->mService:Landroid/bluetooth/BluetoothPan;
 
     invoke-virtual {v3, v1}, Landroid/bluetooth/BluetoothPan;->disconnect(Landroid/bluetooth/BluetoothDevice;)Z
 
@@ -181,7 +181,7 @@
     .end local v0    # "i$":Ljava/util/Iterator;
     .end local v1    # "sink":Landroid/bluetooth/BluetoothDevice;
     :cond_1
-    iget-object v3, p0, Lcom/android/settings/bluetooth/PanProfile;->mService:Landroid/bluetooth/BluetoothPan;
+    iget-object v3, p0, Lcom/android/settings_ext/bluetooth/PanProfile;->mService:Landroid/bluetooth/BluetoothPan;
 
     invoke-virtual {v3, p1}, Landroid/bluetooth/BluetoothPan;->connect(Landroid/bluetooth/BluetoothDevice;)Z
 
@@ -196,7 +196,7 @@
 
     .prologue
     .line 97
-    iget-object v0, p0, Lcom/android/settings/bluetooth/PanProfile;->mService:Landroid/bluetooth/BluetoothPan;
+    iget-object v0, p0, Lcom/android/settings_ext/bluetooth/PanProfile;->mService:Landroid/bluetooth/BluetoothPan;
 
     if-nez v0, :cond_0
 
@@ -207,7 +207,7 @@
     return v0
 
     :cond_0
-    iget-object v0, p0, Lcom/android/settings/bluetooth/PanProfile;->mService:Landroid/bluetooth/BluetoothPan;
+    iget-object v0, p0, Lcom/android/settings_ext/bluetooth/PanProfile;->mService:Landroid/bluetooth/BluetoothPan;
 
     invoke-virtual {v0, p1}, Landroid/bluetooth/BluetoothPan;->disconnect(Landroid/bluetooth/BluetoothDevice;)Z
 
@@ -221,7 +221,7 @@
 
     .prologue
     .line 172
-    sget-boolean v1, Lcom/android/settings/bluetooth/PanProfile;->V:Z
+    sget-boolean v1, Lcom/android/settings_ext/bluetooth/PanProfile;->V:Z
 
     if-eqz v1, :cond_0
 
@@ -233,7 +233,7 @@
 
     .line 173
     :cond_0
-    iget-object v1, p0, Lcom/android/settings/bluetooth/PanProfile;->mService:Landroid/bluetooth/BluetoothPan;
+    iget-object v1, p0, Lcom/android/settings_ext/bluetooth/PanProfile;->mService:Landroid/bluetooth/BluetoothPan;
 
     if-eqz v1, :cond_1
 
@@ -245,14 +245,14 @@
 
     const/4 v2, 0x5
 
-    iget-object v3, p0, Lcom/android/settings/bluetooth/PanProfile;->mService:Landroid/bluetooth/BluetoothPan;
+    iget-object v3, p0, Lcom/android/settings_ext/bluetooth/PanProfile;->mService:Landroid/bluetooth/BluetoothPan;
 
     invoke-virtual {v1, v2, v3}, Landroid/bluetooth/BluetoothAdapter;->closeProfileProxy(ILandroid/bluetooth/BluetoothProfile;)V
 
     .line 176
     const/4 v1, 0x0
 
-    iput-object v1, p0, Lcom/android/settings/bluetooth/PanProfile;->mService:Landroid/bluetooth/BluetoothPan;
+    iput-object v1, p0, Lcom/android/settings_ext/bluetooth/PanProfile;->mService:Landroid/bluetooth/BluetoothPan;
     :try_end_0
     .catch Ljava/lang/Throwable; {:try_start_0 .. :try_end_0} :catch_0
 
@@ -282,7 +282,7 @@
 
     .prologue
     .line 102
-    iget-object v0, p0, Lcom/android/settings/bluetooth/PanProfile;->mService:Landroid/bluetooth/BluetoothPan;
+    iget-object v0, p0, Lcom/android/settings_ext/bluetooth/PanProfile;->mService:Landroid/bluetooth/BluetoothPan;
 
     if-nez v0, :cond_0
 
@@ -294,7 +294,7 @@
     return v0
 
     :cond_0
-    iget-object v0, p0, Lcom/android/settings/bluetooth/PanProfile;->mService:Landroid/bluetooth/BluetoothPan;
+    iget-object v0, p0, Lcom/android/settings_ext/bluetooth/PanProfile;->mService:Landroid/bluetooth/BluetoothPan;
 
     invoke-virtual {v0, p1}, Landroid/bluetooth/BluetoothPan;->getConnectionState(Landroid/bluetooth/BluetoothDevice;)I
 
@@ -320,7 +320,7 @@
 
     .prologue
     .line 129
-    invoke-virtual {p0, p1}, Lcom/android/settings/bluetooth/PanProfile;->isLocalRoleNap(Landroid/bluetooth/BluetoothDevice;)Z
+    invoke-virtual {p0, p1}, Lcom/android/settings_ext/bluetooth/PanProfile;->isLocalRoleNap(Landroid/bluetooth/BluetoothDevice;)Z
 
     move-result v0
 
@@ -366,7 +366,7 @@
 
     .prologue
     .line 137
-    invoke-virtual {p0, p1}, Lcom/android/settings/bluetooth/PanProfile;->getConnectionStatus(Landroid/bluetooth/BluetoothDevice;)I
+    invoke-virtual {p0, p1}, Lcom/android/settings_ext/bluetooth/PanProfile;->getConnectionStatus(Landroid/bluetooth/BluetoothDevice;)I
 
     move-result v0
 
@@ -376,7 +376,7 @@
 
     .line 150
     :pswitch_0
-    invoke-static {v0}, Lcom/android/settings/bluetooth/Utils;->getConnectionStateSummary(I)I
+    invoke-static {v0}, Lcom/android/settings_ext/bluetooth/Utils;->getConnectionStateSummary(I)I
 
     move-result v1
 
@@ -391,7 +391,7 @@
 
     .line 143
     :pswitch_2
-    invoke-virtual {p0, p1}, Lcom/android/settings/bluetooth/PanProfile;->isLocalRoleNap(Landroid/bluetooth/BluetoothDevice;)Z
+    invoke-virtual {p0, p1}, Lcom/android/settings_ext/bluetooth/PanProfile;->isLocalRoleNap(Landroid/bluetooth/BluetoothDevice;)Z
 
     move-result v1
 
@@ -447,7 +447,7 @@
     const/4 v2, 0x0
 
     .line 164
-    iget-object v0, p0, Lcom/android/settings/bluetooth/PanProfile;->mDeviceRoleMap:Ljava/util/HashMap;
+    iget-object v0, p0, Lcom/android/settings_ext/bluetooth/PanProfile;->mDeviceRoleMap:Ljava/util/HashMap;
 
     invoke-virtual {v0, p1}, Ljava/util/HashMap;->containsKey(Ljava/lang/Object;)Z
 
@@ -456,7 +456,7 @@
     if-eqz v0, :cond_1
 
     .line 165
-    iget-object v0, p0, Lcom/android/settings/bluetooth/PanProfile;->mDeviceRoleMap:Ljava/util/HashMap;
+    iget-object v0, p0, Lcom/android/settings_ext/bluetooth/PanProfile;->mDeviceRoleMap:Ljava/util/HashMap;
 
     invoke-virtual {v0, p1}, Ljava/util/HashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -505,7 +505,7 @@
 
     .prologue
     .line 68
-    iget-boolean v0, p0, Lcom/android/settings/bluetooth/PanProfile;->mIsProfileReady:Z
+    iget-boolean v0, p0, Lcom/android/settings_ext/bluetooth/PanProfile;->mIsProfileReady:Z
 
     return v0
 .end method
@@ -517,7 +517,7 @@
 
     .prologue
     .line 160
-    iget-object v0, p0, Lcom/android/settings/bluetooth/PanProfile;->mDeviceRoleMap:Ljava/util/HashMap;
+    iget-object v0, p0, Lcom/android/settings_ext/bluetooth/PanProfile;->mDeviceRoleMap:Ljava/util/HashMap;
 
     invoke-static {p2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 

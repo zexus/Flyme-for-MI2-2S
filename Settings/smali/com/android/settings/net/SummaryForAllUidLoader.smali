@@ -1,4 +1,4 @@
-.class public Lcom/android/settings/net/SummaryForAllUidLoader;
+.class public Lcom/android/settings_ext/net/SummaryForAllUidLoader;
 .super Landroid/content/AsyncTaskLoader;
 .source "SummaryForAllUidLoader.java"
 
@@ -32,10 +32,10 @@
     invoke-direct {p0, p1}, Landroid/content/AsyncTaskLoader;-><init>(Landroid/content/Context;)V
 
     .line 45
-    iput-object p2, p0, Lcom/android/settings/net/SummaryForAllUidLoader;->mSession:Landroid/net/INetworkStatsSession;
+    iput-object p2, p0, Lcom/android/settings_ext/net/SummaryForAllUidLoader;->mSession:Landroid/net/INetworkStatsSession;
 
     .line 46
-    iput-object p3, p0, Lcom/android/settings/net/SummaryForAllUidLoader;->mArgs:Landroid/os/Bundle;
+    iput-object p3, p0, Lcom/android/settings_ext/net/SummaryForAllUidLoader;->mArgs:Landroid/os/Bundle;
 
     .line 47
     return-void
@@ -80,7 +80,7 @@
 
     .prologue
     .line 57
-    iget-object v0, p0, Lcom/android/settings/net/SummaryForAllUidLoader;->mArgs:Landroid/os/Bundle;
+    iget-object v0, p0, Lcom/android/settings_ext/net/SummaryForAllUidLoader;->mArgs:Landroid/os/Bundle;
 
     const-string v6, "template"
 
@@ -92,7 +92,7 @@
 
     .line 58
     .local v1, "template":Landroid/net/NetworkTemplate;
-    iget-object v0, p0, Lcom/android/settings/net/SummaryForAllUidLoader;->mArgs:Landroid/os/Bundle;
+    iget-object v0, p0, Lcom/android/settings_ext/net/SummaryForAllUidLoader;->mArgs:Landroid/os/Bundle;
 
     const-string v6, "start"
 
@@ -102,7 +102,7 @@
 
     .line 59
     .local v2, "start":J
-    iget-object v0, p0, Lcom/android/settings/net/SummaryForAllUidLoader;->mArgs:Landroid/os/Bundle;
+    iget-object v0, p0, Lcom/android/settings_ext/net/SummaryForAllUidLoader;->mArgs:Landroid/os/Bundle;
 
     const-string v6, "end"
 
@@ -113,7 +113,7 @@
     .line 62
     .local v4, "end":J
     :try_start_0
-    iget-object v0, p0, Lcom/android/settings/net/SummaryForAllUidLoader;->mSession:Landroid/net/INetworkStatsSession;
+    iget-object v0, p0, Lcom/android/settings_ext/net/SummaryForAllUidLoader;->mSession:Landroid/net/INetworkStatsSession;
 
     const/4 v6, 0x0
 
@@ -143,7 +143,7 @@
 
     .prologue
     .line 27
-    invoke-virtual {p0}, Lcom/android/settings/net/SummaryForAllUidLoader;->loadInBackground()Landroid/net/NetworkStats;
+    invoke-virtual {p0}, Lcom/android/settings_ext/net/SummaryForAllUidLoader;->loadInBackground()Landroid/net/NetworkStats;
 
     move-result-object v0
 
@@ -158,7 +158,7 @@
     invoke-super {p0}, Landroid/content/AsyncTaskLoader;->onReset()V
 
     .line 77
-    invoke-virtual {p0}, Lcom/android/settings/net/SummaryForAllUidLoader;->cancelLoad()Z
+    invoke-virtual {p0}, Lcom/android/settings_ext/net/SummaryForAllUidLoader;->cancelLoad()Z
 
     .line 78
     return-void
@@ -172,7 +172,7 @@
     invoke-super {p0}, Landroid/content/AsyncTaskLoader;->onStartLoading()V
 
     .line 52
-    invoke-virtual {p0}, Lcom/android/settings/net/SummaryForAllUidLoader;->forceLoad()V
+    invoke-virtual {p0}, Lcom/android/settings_ext/net/SummaryForAllUidLoader;->forceLoad()V
 
     .line 53
     return-void
@@ -186,7 +186,7 @@
     invoke-super {p0}, Landroid/content/AsyncTaskLoader;->onStopLoading()V
 
     .line 71
-    invoke-virtual {p0}, Lcom/android/settings/net/SummaryForAllUidLoader;->cancelLoad()Z
+    invoke-virtual {p0}, Lcom/android/settings_ext/net/SummaryForAllUidLoader;->cancelLoad()Z
 
     .line 72
     return-void

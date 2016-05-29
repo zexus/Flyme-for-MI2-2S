@@ -1,4 +1,4 @@
-.class public final Lcom/android/settings/voice/VoiceInputHelper;
+.class public final Lcom/android/settings_ext/voice/VoiceInputHelper;
 .super Ljava/lang/Object;
 .source "VoiceInputHelper.java"
 
@@ -6,9 +6,9 @@
 # annotations
 .annotation system Ldalvik/annotation/MemberClasses;
     value = {
-        Lcom/android/settings/voice/VoiceInputHelper$RecognizerInfo;,
-        Lcom/android/settings/voice/VoiceInputHelper$InteractionInfo;,
-        Lcom/android/settings/voice/VoiceInputHelper$BaseInfo;
+        Lcom/android/settings_ext/voice/VoiceInputHelper$RecognizerInfo;,
+        Lcom/android/settings_ext/voice/VoiceInputHelper$InteractionInfo;,
+        Lcom/android/settings_ext/voice/VoiceInputHelper$BaseInfo;
     }
 .end annotation
 
@@ -19,7 +19,7 @@
         value = {
             "Ljava/util/ArrayList",
             "<",
-            "Lcom/android/settings/voice/VoiceInputHelper$InteractionInfo;",
+            "Lcom/android/settings_ext/voice/VoiceInputHelper$InteractionInfo;",
             ">;"
         }
     .end annotation
@@ -41,7 +41,7 @@
         value = {
             "Ljava/util/ArrayList",
             "<",
-            "Lcom/android/settings/voice/VoiceInputHelper$RecognizerInfo;",
+            "Lcom/android/settings_ext/voice/VoiceInputHelper$RecognizerInfo;",
             ">;"
         }
     .end annotation
@@ -81,20 +81,20 @@
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
-    iput-object v0, p0, Lcom/android/settings/voice/VoiceInputHelper;->mAvailableInteractionInfos:Ljava/util/ArrayList;
+    iput-object v0, p0, Lcom/android/settings_ext/voice/VoiceInputHelper;->mAvailableInteractionInfos:Ljava/util/ArrayList;
 
     .line 93
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
-    iput-object v0, p0, Lcom/android/settings/voice/VoiceInputHelper;->mAvailableRecognizerInfos:Ljava/util/ArrayList;
+    iput-object v0, p0, Lcom/android/settings_ext/voice/VoiceInputHelper;->mAvailableRecognizerInfos:Ljava/util/ArrayList;
 
     .line 99
-    iput-object p1, p0, Lcom/android/settings/voice/VoiceInputHelper;->mContext:Landroid/content/Context;
+    iput-object p1, p0, Lcom/android/settings_ext/voice/VoiceInputHelper;->mContext:Landroid/content/Context;
 
     .line 101
-    iget-object v0, p0, Lcom/android/settings/voice/VoiceInputHelper;->mContext:Landroid/content/Context;
+    iget-object v0, p0, Lcom/android/settings_ext/voice/VoiceInputHelper;->mContext:Landroid/content/Context;
 
     invoke-virtual {v0}, Landroid/content/Context;->getPackageManager()Landroid/content/pm/PackageManager;
 
@@ -110,10 +110,10 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/voice/VoiceInputHelper;->mAvailableVoiceInteractions:Ljava/util/List;
+    iput-object v0, p0, Lcom/android/settings_ext/voice/VoiceInputHelper;->mAvailableVoiceInteractions:Ljava/util/List;
 
     .line 104
-    iget-object v0, p0, Lcom/android/settings/voice/VoiceInputHelper;->mContext:Landroid/content/Context;
+    iget-object v0, p0, Lcom/android/settings_ext/voice/VoiceInputHelper;->mContext:Landroid/content/Context;
 
     invoke-virtual {v0}, Landroid/content/Context;->getPackageManager()Landroid/content/pm/PackageManager;
 
@@ -129,7 +129,7 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/voice/VoiceInputHelper;->mAvailableRecognition:Ljava/util/List;
+    iput-object v0, p0, Lcom/android/settings_ext/voice/VoiceInputHelper;->mAvailableRecognition:Ljava/util/List;
 
     .line 107
     return-void
@@ -144,7 +144,7 @@
     .line 115
     move-object/from16 v0, p0
 
-    iget-object v0, v0, Lcom/android/settings/voice/VoiceInputHelper;->mContext:Landroid/content/Context;
+    iget-object v0, v0, Lcom/android/settings_ext/voice/VoiceInputHelper;->mContext:Landroid/content/Context;
 
     move-object/from16 v19, v0
 
@@ -177,7 +177,7 @@
 
     move-object/from16 v1, p0
 
-    iput-object v0, v1, Lcom/android/settings/voice/VoiceInputHelper;->mCurrentVoiceInteraction:Landroid/content/ComponentName;
+    iput-object v0, v1, Lcom/android/settings_ext/voice/VoiceInputHelper;->mCurrentVoiceInteraction:Landroid/content/ComponentName;
 
     .line 123
     :goto_0
@@ -189,7 +189,7 @@
     .local v10, "interactorRecognizers":Landroid/util/ArraySet;, "Landroid/util/ArraySet<Landroid/content/ComponentName;>;"
     move-object/from16 v0, p0
 
-    iget-object v0, v0, Lcom/android/settings/voice/VoiceInputHelper;->mAvailableVoiceInteractions:Ljava/util/List;
+    iget-object v0, v0, Lcom/android/settings_ext/voice/VoiceInputHelper;->mAvailableVoiceInteractions:Ljava/util/List;
 
     move-object/from16 v19, v0
 
@@ -210,7 +210,7 @@
     .line 129
     move-object/from16 v0, p0
 
-    iget-object v0, v0, Lcom/android/settings/voice/VoiceInputHelper;->mAvailableVoiceInteractions:Ljava/util/List;
+    iget-object v0, v0, Lcom/android/settings_ext/voice/VoiceInputHelper;->mAvailableVoiceInteractions:Ljava/util/List;
 
     move-object/from16 v19, v0
 
@@ -228,7 +228,7 @@
 
     move-object/from16 v0, p0
 
-    iget-object v0, v0, Lcom/android/settings/voice/VoiceInputHelper;->mContext:Landroid/content/Context;
+    iget-object v0, v0, Lcom/android/settings_ext/voice/VoiceInputHelper;->mContext:Landroid/content/Context;
 
     move-object/from16 v19, v0
 
@@ -341,7 +341,7 @@
 
     move-object/from16 v1, p0
 
-    iput-object v0, v1, Lcom/android/settings/voice/VoiceInputHelper;->mCurrentVoiceInteraction:Landroid/content/ComponentName;
+    iput-object v0, v1, Lcom/android/settings_ext/voice/VoiceInputHelper;->mCurrentVoiceInteraction:Landroid/content/ComponentName;
 
     goto/16 :goto_0
 
@@ -354,15 +354,15 @@
     :cond_2
     move-object/from16 v0, p0
 
-    iget-object v0, v0, Lcom/android/settings/voice/VoiceInputHelper;->mAvailableInteractionInfos:Ljava/util/ArrayList;
+    iget-object v0, v0, Lcom/android/settings_ext/voice/VoiceInputHelper;->mAvailableInteractionInfos:Ljava/util/ArrayList;
 
     move-object/from16 v19, v0
 
-    new-instance v20, Lcom/android/settings/voice/VoiceInputHelper$InteractionInfo;
+    new-instance v20, Lcom/android/settings_ext/voice/VoiceInputHelper$InteractionInfo;
 
     move-object/from16 v0, p0
 
-    iget-object v0, v0, Lcom/android/settings/voice/VoiceInputHelper;->mContext:Landroid/content/Context;
+    iget-object v0, v0, Lcom/android/settings_ext/voice/VoiceInputHelper;->mContext:Landroid/content/Context;
 
     move-object/from16 v21, v0
 
@@ -374,7 +374,7 @@
 
     move-object/from16 v1, v21
 
-    invoke-direct {v0, v1, v9}, Lcom/android/settings/voice/VoiceInputHelper$InteractionInfo;-><init>(Landroid/content/pm/PackageManager;Landroid/service/voice/VoiceInteractionServiceInfo;)V
+    invoke-direct {v0, v1, v9}, Lcom/android/settings_ext/voice/VoiceInputHelper$InteractionInfo;-><init>(Landroid/content/pm/PackageManager;Landroid/service/voice/VoiceInteractionServiceInfo;)V
 
     invoke-virtual/range {v19 .. v20}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
@@ -416,7 +416,7 @@
     :cond_3
     move-object/from16 v0, p0
 
-    iget-object v0, v0, Lcom/android/settings/voice/VoiceInputHelper;->mAvailableInteractionInfos:Ljava/util/ArrayList;
+    iget-object v0, v0, Lcom/android/settings_ext/voice/VoiceInputHelper;->mAvailableInteractionInfos:Ljava/util/ArrayList;
 
     move-object/from16 v19, v0
 
@@ -425,7 +425,7 @@
     .line 147
     move-object/from16 v0, p0
 
-    iget-object v0, v0, Lcom/android/settings/voice/VoiceInputHelper;->mContext:Landroid/content/Context;
+    iget-object v0, v0, Lcom/android/settings_ext/voice/VoiceInputHelper;->mContext:Landroid/content/Context;
 
     move-object/from16 v19, v0
 
@@ -457,13 +457,13 @@
 
     move-object/from16 v1, p0
 
-    iput-object v0, v1, Lcom/android/settings/voice/VoiceInputHelper;->mCurrentRecognizer:Landroid/content/ComponentName;
+    iput-object v0, v1, Lcom/android/settings_ext/voice/VoiceInputHelper;->mCurrentRecognizer:Landroid/content/ComponentName;
 
     .line 157
     :goto_3
     move-object/from16 v0, p0
 
-    iget-object v0, v0, Lcom/android/settings/voice/VoiceInputHelper;->mAvailableRecognition:Ljava/util/List;
+    iget-object v0, v0, Lcom/android/settings_ext/voice/VoiceInputHelper;->mAvailableRecognition:Ljava/util/List;
 
     move-object/from16 v19, v0
 
@@ -482,7 +482,7 @@
     .line 159
     move-object/from16 v0, p0
 
-    iget-object v0, v0, Lcom/android/settings/voice/VoiceInputHelper;->mAvailableRecognition:Ljava/util/List;
+    iget-object v0, v0, Lcom/android/settings_ext/voice/VoiceInputHelper;->mAvailableRecognition:Ljava/util/List;
 
     move-object/from16 v19, v0
 
@@ -551,7 +551,7 @@
     :try_start_0
     move-object/from16 v0, p0
 
-    iget-object v0, v0, Lcom/android/settings/voice/VoiceInputHelper;->mContext:Landroid/content/Context;
+    iget-object v0, v0, Lcom/android/settings_ext/voice/VoiceInputHelper;->mContext:Landroid/content/Context;
 
     move-object/from16 v19, v0
 
@@ -640,15 +640,15 @@
     :goto_5
     move-object/from16 v0, p0
 
-    iget-object v0, v0, Lcom/android/settings/voice/VoiceInputHelper;->mAvailableRecognizerInfos:Ljava/util/ArrayList;
+    iget-object v0, v0, Lcom/android/settings_ext/voice/VoiceInputHelper;->mAvailableRecognizerInfos:Ljava/util/ArrayList;
 
     move-object/from16 v19, v0
 
-    new-instance v20, Lcom/android/settings/voice/VoiceInputHelper$RecognizerInfo;
+    new-instance v20, Lcom/android/settings_ext/voice/VoiceInputHelper$RecognizerInfo;
 
     move-object/from16 v0, p0
 
-    iget-object v0, v0, Lcom/android/settings/voice/VoiceInputHelper;->mContext:Landroid/content/Context;
+    iget-object v0, v0, Lcom/android/settings_ext/voice/VoiceInputHelper;->mContext:Landroid/content/Context;
 
     move-object/from16 v21, v0
 
@@ -666,7 +666,7 @@
 
     move-object/from16 v2, v22
 
-    invoke-direct {v0, v1, v2, v15}, Lcom/android/settings/voice/VoiceInputHelper$RecognizerInfo;-><init>(Landroid/content/pm/PackageManager;Landroid/content/pm/ServiceInfo;Ljava/lang/String;)V
+    invoke-direct {v0, v1, v2, v15}, Lcom/android/settings_ext/voice/VoiceInputHelper$RecognizerInfo;-><init>(Landroid/content/pm/PackageManager;Landroid/content/pm/ServiceInfo;Ljava/lang/String;)V
 
     invoke-virtual/range {v19 .. v20}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
@@ -688,7 +688,7 @@
 
     move-object/from16 v1, p0
 
-    iput-object v0, v1, Lcom/android/settings/voice/VoiceInputHelper;->mCurrentRecognizer:Landroid/content/ComponentName;
+    iput-object v0, v1, Lcom/android/settings_ext/voice/VoiceInputHelper;->mCurrentRecognizer:Landroid/content/ComponentName;
 
     goto/16 :goto_3
 
@@ -702,7 +702,7 @@
     :try_start_2
     move-object/from16 v0, p0
 
-    iget-object v0, v0, Lcom/android/settings/voice/VoiceInputHelper;->mContext:Landroid/content/Context;
+    iget-object v0, v0, Lcom/android/settings_ext/voice/VoiceInputHelper;->mContext:Landroid/content/Context;
 
     move-object/from16 v19, v0
 
@@ -904,7 +904,7 @@
     :cond_c
     move-object/from16 v0, p0
 
-    iget-object v0, v0, Lcom/android/settings/voice/VoiceInputHelper;->mAvailableRecognizerInfos:Ljava/util/ArrayList;
+    iget-object v0, v0, Lcom/android/settings_ext/voice/VoiceInputHelper;->mAvailableRecognizerInfos:Ljava/util/ArrayList;
 
     move-object/from16 v19, v0
 
@@ -919,7 +919,7 @@
 
     .prologue
     .line 110
-    iget-object v0, p0, Lcom/android/settings/voice/VoiceInputHelper;->mAvailableVoiceInteractions:Ljava/util/List;
+    iget-object v0, p0, Lcom/android/settings_ext/voice/VoiceInputHelper;->mAvailableVoiceInteractions:Ljava/util/List;
 
     invoke-interface {v0}, Ljava/util/List;->size()I
 
@@ -927,7 +927,7 @@
 
     if-gtz v0, :cond_0
 
-    iget-object v0, p0, Lcom/android/settings/voice/VoiceInputHelper;->mAvailableRecognition:Ljava/util/List;
+    iget-object v0, p0, Lcom/android/settings_ext/voice/VoiceInputHelper;->mAvailableRecognition:Ljava/util/List;
 
     invoke-interface {v0}, Ljava/util/List;->size()I
 

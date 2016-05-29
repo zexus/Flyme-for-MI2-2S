@@ -1,4 +1,4 @@
-.class Lcom/android/settings/EditPinPreference;
+.class Lcom/android/settings_ext/EditPinPreference;
 .super Landroid/preference/EditTextPreference;
 .source "EditPinPreference.java"
 
@@ -6,13 +6,13 @@
 # annotations
 .annotation system Ldalvik/annotation/MemberClasses;
     value = {
-        Lcom/android/settings/EditPinPreference$OnPinEnteredListener;
+        Lcom/android/settings_ext/EditPinPreference$OnPinEnteredListener;
     }
 .end annotation
 
 
 # instance fields
-.field private mPinListener:Lcom/android/settings/EditPinPreference$OnPinEnteredListener;
+.field private mPinListener:Lcom/android/settings_ext/EditPinPreference$OnPinEnteredListener;
 
 
 # direct methods
@@ -50,7 +50,7 @@
 
     .prologue
     .line 63
-    invoke-virtual {p0}, Lcom/android/settings/EditPinPreference;->getDialog()Landroid/app/Dialog;
+    invoke-virtual {p0}, Lcom/android/settings_ext/EditPinPreference;->getDialog()Landroid/app/Dialog;
 
     move-result-object v0
 
@@ -84,7 +84,7 @@
     invoke-super {p0, p1}, Landroid/preference/EditTextPreference;->onBindDialogView(Landroid/view/View;)V
 
     .line 54
-    invoke-virtual {p0}, Lcom/android/settings/EditPinPreference;->getEditText()Landroid/widget/EditText;
+    invoke-virtual {p0}, Lcom/android/settings_ext/EditPinPreference;->getEditText()Landroid/widget/EditText;
 
     move-result-object v0
 
@@ -111,27 +111,27 @@
     invoke-super {p0, p1}, Landroid/preference/EditTextPreference;->onDialogClosed(Z)V
 
     .line 70
-    iget-object v0, p0, Lcom/android/settings/EditPinPreference;->mPinListener:Lcom/android/settings/EditPinPreference$OnPinEnteredListener;
+    iget-object v0, p0, Lcom/android/settings_ext/EditPinPreference;->mPinListener:Lcom/android/settings_ext/EditPinPreference$OnPinEnteredListener;
 
     if-eqz v0, :cond_0
 
     .line 71
-    iget-object v0, p0, Lcom/android/settings/EditPinPreference;->mPinListener:Lcom/android/settings/EditPinPreference$OnPinEnteredListener;
+    iget-object v0, p0, Lcom/android/settings_ext/EditPinPreference;->mPinListener:Lcom/android/settings_ext/EditPinPreference$OnPinEnteredListener;
 
-    invoke-interface {v0, p0, p1}, Lcom/android/settings/EditPinPreference$OnPinEnteredListener;->onPinEntered(Lcom/android/settings/EditPinPreference;Z)V
+    invoke-interface {v0, p0, p1}, Lcom/android/settings_ext/EditPinPreference$OnPinEnteredListener;->onPinEntered(Lcom/android/settings_ext/EditPinPreference;Z)V
 
     .line 73
     :cond_0
     return-void
 .end method
 
-.method public setOnPinEnteredListener(Lcom/android/settings/EditPinPreference$OnPinEnteredListener;)V
+.method public setOnPinEnteredListener(Lcom/android/settings_ext/EditPinPreference$OnPinEnteredListener;)V
     .locals 0
-    .param p1, "listener"    # Lcom/android/settings/EditPinPreference$OnPinEnteredListener;
+    .param p1, "listener"    # Lcom/android/settings_ext/EditPinPreference$OnPinEnteredListener;
 
     .prologue
     .line 47
-    iput-object p1, p0, Lcom/android/settings/EditPinPreference;->mPinListener:Lcom/android/settings/EditPinPreference$OnPinEnteredListener;
+    iput-object p1, p0, Lcom/android/settings_ext/EditPinPreference;->mPinListener:Lcom/android/settings_ext/EditPinPreference$OnPinEnteredListener;
 
     .line 48
     return-void
@@ -142,7 +142,7 @@
 
     .prologue
     .line 76
-    invoke-virtual {p0}, Lcom/android/settings/EditPinPreference;->getDialog()Landroid/app/Dialog;
+    invoke-virtual {p0}, Lcom/android/settings_ext/EditPinPreference;->getDialog()Landroid/app/Dialog;
 
     move-result-object v0
 
@@ -160,7 +160,7 @@
     :cond_0
     const/4 v1, 0x0
 
-    invoke-virtual {p0, v1}, Lcom/android/settings/EditPinPreference;->showDialog(Landroid/os/Bundle;)V
+    invoke-virtual {p0, v1}, Lcom/android/settings_ext/EditPinPreference;->showDialog(Landroid/os/Bundle;)V
 
     .line 80
     :cond_1

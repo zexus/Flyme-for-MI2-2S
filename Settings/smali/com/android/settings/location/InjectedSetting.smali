@@ -1,4 +1,4 @@
-.class Lcom/android/settings/location/InjectedSetting;
+.class Lcom/android/settings_ext/location/InjectedSetting;
 .super Ljava/lang/Object;
 .source "InjectedSetting.java"
 
@@ -45,7 +45,7 @@
 
     check-cast v0, Ljava/lang/String;
 
-    iput-object v0, p0, Lcom/android/settings/location/InjectedSetting;->packageName:Ljava/lang/String;
+    iput-object v0, p0, Lcom/android/settings_ext/location/InjectedSetting;->packageName:Ljava/lang/String;
 
     .line 70
     const-string v0, "className"
@@ -56,7 +56,7 @@
 
     check-cast v0, Ljava/lang/String;
 
-    iput-object v0, p0, Lcom/android/settings/location/InjectedSetting;->className:Ljava/lang/String;
+    iput-object v0, p0, Lcom/android/settings_ext/location/InjectedSetting;->className:Ljava/lang/String;
 
     .line 71
     const-string v0, "title"
@@ -67,13 +67,13 @@
 
     check-cast v0, Ljava/lang/String;
 
-    iput-object v0, p0, Lcom/android/settings/location/InjectedSetting;->title:Ljava/lang/String;
+    iput-object v0, p0, Lcom/android/settings_ext/location/InjectedSetting;->title:Ljava/lang/String;
 
     .line 72
-    iput p4, p0, Lcom/android/settings/location/InjectedSetting;->iconId:I
+    iput p4, p0, Lcom/android/settings_ext/location/InjectedSetting;->iconId:I
 
     .line 73
-    iput-object p5, p0, Lcom/android/settings/location/InjectedSetting;->mUserHandle:Landroid/os/UserHandle;
+    iput-object p5, p0, Lcom/android/settings_ext/location/InjectedSetting;->mUserHandle:Landroid/os/UserHandle;
 
     .line 74
     invoke-static {p6}, Lcom/android/internal/util/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
@@ -82,13 +82,13 @@
 
     check-cast v0, Ljava/lang/String;
 
-    iput-object v0, p0, Lcom/android/settings/location/InjectedSetting;->settingsActivity:Ljava/lang/String;
+    iput-object v0, p0, Lcom/android/settings_ext/location/InjectedSetting;->settingsActivity:Ljava/lang/String;
 
     .line 75
     return-void
 .end method
 
-.method public static newInstance(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ILandroid/os/UserHandle;Ljava/lang/String;)Lcom/android/settings/location/InjectedSetting;
+.method public static newInstance(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ILandroid/os/UserHandle;Ljava/lang/String;)Lcom/android/settings_ext/location/InjectedSetting;
     .locals 7
     .param p0, "packageName"    # Ljava/lang/String;
     .param p1, "className"    # Ljava/lang/String;
@@ -189,7 +189,7 @@
     return-object v0
 
     :cond_2
-    new-instance v0, Lcom/android/settings/location/InjectedSetting;
+    new-instance v0, Lcom/android/settings_ext/location/InjectedSetting;
 
     move-object v1, p0
 
@@ -203,7 +203,7 @@
 
     move-object v6, p5
 
-    invoke-direct/range {v0 .. v6}, Lcom/android/settings/location/InjectedSetting;-><init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ILandroid/os/UserHandle;Ljava/lang/String;)V
+    invoke-direct/range {v0 .. v6}, Lcom/android/settings_ext/location/InjectedSetting;-><init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ILandroid/os/UserHandle;Ljava/lang/String;)V
 
     goto :goto_0
 .end method
@@ -229,7 +229,7 @@
 
     .line 119
     :cond_1
-    instance-of v3, p1, Lcom/android/settings/location/InjectedSetting;
+    instance-of v3, p1, Lcom/android/settings_ext/location/InjectedSetting;
 
     if-nez v3, :cond_2
 
@@ -241,23 +241,13 @@
     move-object v0, p1
 
     .line 121
-    check-cast v0, Lcom/android/settings/location/InjectedSetting;
+    check-cast v0, Lcom/android/settings_ext/location/InjectedSetting;
 
     .line 123
-    .local v0, "that":Lcom/android/settings/location/InjectedSetting;
-    iget-object v3, p0, Lcom/android/settings/location/InjectedSetting;->packageName:Ljava/lang/String;
+    .local v0, "that":Lcom/android/settings_ext/location/InjectedSetting;
+    iget-object v3, p0, Lcom/android/settings_ext/location/InjectedSetting;->packageName:Ljava/lang/String;
 
-    iget-object v4, v0, Lcom/android/settings/location/InjectedSetting;->packageName:Ljava/lang/String;
-
-    invoke-virtual {v3, v4}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    move-result v3
-
-    if-eqz v3, :cond_3
-
-    iget-object v3, p0, Lcom/android/settings/location/InjectedSetting;->className:Ljava/lang/String;
-
-    iget-object v4, v0, Lcom/android/settings/location/InjectedSetting;->className:Ljava/lang/String;
+    iget-object v4, v0, Lcom/android/settings_ext/location/InjectedSetting;->packageName:Ljava/lang/String;
 
     invoke-virtual {v3, v4}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
@@ -265,9 +255,9 @@
 
     if-eqz v3, :cond_3
 
-    iget-object v3, p0, Lcom/android/settings/location/InjectedSetting;->title:Ljava/lang/String;
+    iget-object v3, p0, Lcom/android/settings_ext/location/InjectedSetting;->className:Ljava/lang/String;
 
-    iget-object v4, v0, Lcom/android/settings/location/InjectedSetting;->title:Ljava/lang/String;
+    iget-object v4, v0, Lcom/android/settings_ext/location/InjectedSetting;->className:Ljava/lang/String;
 
     invoke-virtual {v3, v4}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
@@ -275,15 +265,25 @@
 
     if-eqz v3, :cond_3
 
-    iget v3, p0, Lcom/android/settings/location/InjectedSetting;->iconId:I
+    iget-object v3, p0, Lcom/android/settings_ext/location/InjectedSetting;->title:Ljava/lang/String;
 
-    iget v4, v0, Lcom/android/settings/location/InjectedSetting;->iconId:I
+    iget-object v4, v0, Lcom/android/settings_ext/location/InjectedSetting;->title:Ljava/lang/String;
+
+    invoke-virtual {v3, v4}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v3
+
+    if-eqz v3, :cond_3
+
+    iget v3, p0, Lcom/android/settings_ext/location/InjectedSetting;->iconId:I
+
+    iget v4, v0, Lcom/android/settings_ext/location/InjectedSetting;->iconId:I
 
     if-ne v3, v4, :cond_3
 
-    iget-object v3, p0, Lcom/android/settings/location/InjectedSetting;->mUserHandle:Landroid/os/UserHandle;
+    iget-object v3, p0, Lcom/android/settings_ext/location/InjectedSetting;->mUserHandle:Landroid/os/UserHandle;
 
-    iget-object v4, v0, Lcom/android/settings/location/InjectedSetting;->mUserHandle:Landroid/os/UserHandle;
+    iget-object v4, v0, Lcom/android/settings_ext/location/InjectedSetting;->mUserHandle:Landroid/os/UserHandle;
 
     invoke-virtual {v3, v4}, Landroid/os/UserHandle;->equals(Ljava/lang/Object;)Z
 
@@ -291,9 +291,9 @@
 
     if-eqz v3, :cond_3
 
-    iget-object v3, p0, Lcom/android/settings/location/InjectedSetting;->settingsActivity:Ljava/lang/String;
+    iget-object v3, p0, Lcom/android/settings_ext/location/InjectedSetting;->settingsActivity:Ljava/lang/String;
 
-    iget-object v4, v0, Lcom/android/settings/location/InjectedSetting;->settingsActivity:Ljava/lang/String;
+    iget-object v4, v0, Lcom/android/settings_ext/location/InjectedSetting;->settingsActivity:Ljava/lang/String;
 
     invoke-virtual {v3, v4}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
@@ -318,9 +318,9 @@
 
     .line 112
     .local v0, "intent":Landroid/content/Intent;
-    iget-object v1, p0, Lcom/android/settings/location/InjectedSetting;->packageName:Ljava/lang/String;
+    iget-object v1, p0, Lcom/android/settings_ext/location/InjectedSetting;->packageName:Ljava/lang/String;
 
-    iget-object v2, p0, Lcom/android/settings/location/InjectedSetting;->className:Ljava/lang/String;
+    iget-object v2, p0, Lcom/android/settings_ext/location/InjectedSetting;->className:Ljava/lang/String;
 
     invoke-virtual {v0, v1, v2}, Landroid/content/Intent;->setClassName(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
 
@@ -333,7 +333,7 @@
 
     .prologue
     .line 131
-    iget-object v1, p0, Lcom/android/settings/location/InjectedSetting;->packageName:Ljava/lang/String;
+    iget-object v1, p0, Lcom/android/settings_ext/location/InjectedSetting;->packageName:Ljava/lang/String;
 
     invoke-virtual {v1}, Ljava/lang/String;->hashCode()I
 
@@ -343,7 +343,7 @@
     .local v0, "result":I
     mul-int/lit8 v1, v0, 0x1f
 
-    iget-object v2, p0, Lcom/android/settings/location/InjectedSetting;->className:Ljava/lang/String;
+    iget-object v2, p0, Lcom/android/settings_ext/location/InjectedSetting;->className:Ljava/lang/String;
 
     invoke-virtual {v2}, Ljava/lang/String;->hashCode()I
 
@@ -354,7 +354,7 @@
     .line 133
     mul-int/lit8 v1, v0, 0x1f
 
-    iget-object v2, p0, Lcom/android/settings/location/InjectedSetting;->title:Ljava/lang/String;
+    iget-object v2, p0, Lcom/android/settings_ext/location/InjectedSetting;->title:Ljava/lang/String;
 
     invoke-virtual {v2}, Ljava/lang/String;->hashCode()I
 
@@ -365,14 +365,14 @@
     .line 134
     mul-int/lit8 v1, v0, 0x1f
 
-    iget v2, p0, Lcom/android/settings/location/InjectedSetting;->iconId:I
+    iget v2, p0, Lcom/android/settings_ext/location/InjectedSetting;->iconId:I
 
     add-int v0, v1, v2
 
     .line 135
     mul-int/lit8 v1, v0, 0x1f
 
-    iget-object v2, p0, Lcom/android/settings/location/InjectedSetting;->mUserHandle:Landroid/os/UserHandle;
+    iget-object v2, p0, Lcom/android/settings_ext/location/InjectedSetting;->mUserHandle:Landroid/os/UserHandle;
 
     invoke-virtual {v2}, Landroid/os/UserHandle;->hashCode()I
 
@@ -383,7 +383,7 @@
     .line 136
     mul-int/lit8 v1, v0, 0x1f
 
-    iget-object v2, p0, Lcom/android/settings/location/InjectedSetting;->settingsActivity:Ljava/lang/String;
+    iget-object v2, p0, Lcom/android/settings_ext/location/InjectedSetting;->settingsActivity:Ljava/lang/String;
 
     invoke-virtual {v2}, Ljava/lang/String;->hashCode()I
 
@@ -412,7 +412,7 @@
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/android/settings/location/InjectedSetting;->packageName:Ljava/lang/String;
+    iget-object v1, p0, Lcom/android/settings_ext/location/InjectedSetting;->packageName:Ljava/lang/String;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -428,7 +428,7 @@
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/android/settings/location/InjectedSetting;->className:Ljava/lang/String;
+    iget-object v1, p0, Lcom/android/settings_ext/location/InjectedSetting;->className:Ljava/lang/String;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -444,7 +444,7 @@
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/android/settings/location/InjectedSetting;->title:Ljava/lang/String;
+    iget-object v1, p0, Lcom/android/settings_ext/location/InjectedSetting;->title:Ljava/lang/String;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -456,7 +456,7 @@
 
     move-result-object v0
 
-    iget v1, p0, Lcom/android/settings/location/InjectedSetting;->iconId:I
+    iget v1, p0, Lcom/android/settings_ext/location/InjectedSetting;->iconId:I
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
@@ -468,7 +468,7 @@
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/android/settings/location/InjectedSetting;->mUserHandle:Landroid/os/UserHandle;
+    iget-object v1, p0, Lcom/android/settings_ext/location/InjectedSetting;->mUserHandle:Landroid/os/UserHandle;
 
     invoke-virtual {v1}, Landroid/os/UserHandle;->getIdentifier()I
 
@@ -484,7 +484,7 @@
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/android/settings/location/InjectedSetting;->settingsActivity:Ljava/lang/String;
+    iget-object v1, p0, Lcom/android/settings_ext/location/InjectedSetting;->settingsActivity:Ljava/lang/String;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 

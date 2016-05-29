@@ -1,4 +1,4 @@
-.class Lcom/android/settings/notification/ZenModeSettings$11;
+.class Lcom/android/settings_ext/notification/ZenModeSettings$11;
 .super Ljava/lang/Object;
 .source "ZenModeSettings.java"
 
@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/android/settings/notification/ZenModeSettings;->onCreate(Landroid/os/Bundle;)V
+    value = Lcom/android/settings_ext/notification/ZenModeSettings;->onCreate(Landroid/os/Bundle;)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -18,16 +18,16 @@
 
 
 # instance fields
-.field final synthetic this$0:Lcom/android/settings/notification/ZenModeSettings;
+.field final synthetic this$0:Lcom/android/settings_ext/notification/ZenModeSettings;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/notification/ZenModeSettings;)V
+.method constructor <init>(Lcom/android/settings_ext/notification/ZenModeSettings;)V
     .locals 0
 
     .prologue
     .line 332
-    iput-object p1, p0, Lcom/android/settings/notification/ZenModeSettings$11;->this$0:Lcom/android/settings/notification/ZenModeSettings;
+    iput-object p1, p0, Lcom/android/settings_ext/notification/ZenModeSettings$11;->this$0:Lcom/android/settings_ext/notification/ZenModeSettings;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -44,10 +44,10 @@
     .line 335
     new-instance v0, Landroid/app/AlertDialog$Builder;
 
-    iget-object v1, p0, Lcom/android/settings/notification/ZenModeSettings$11;->this$0:Lcom/android/settings/notification/ZenModeSettings;
+    iget-object v1, p0, Lcom/android/settings_ext/notification/ZenModeSettings$11;->this$0:Lcom/android/settings_ext/notification/ZenModeSettings;
 
-    # getter for: Lcom/android/settings/notification/ZenModeSettings;->mContext:Landroid/content/Context;
-    invoke-static {v1}, Lcom/android/settings/notification/ZenModeSettings;->access$500(Lcom/android/settings/notification/ZenModeSettings;)Landroid/content/Context;
+    # getter for: Lcom/android/settings_ext/notification/ZenModeSettings;->mContext:Landroid/content/Context;
+    invoke-static {v1}, Lcom/android/settings_ext/notification/ZenModeSettings;->access$500(Lcom/android/settings_ext/notification/ZenModeSettings;)Landroid/content/Context;
 
     move-result-object v1
 
@@ -59,24 +59,24 @@
 
     move-result-object v0
 
-    new-instance v1, Lcom/android/settings/notification/ZenModeAutomaticConditionSelection;
+    new-instance v1, Lcom/android/settings_ext/notification/ZenModeAutomaticConditionSelection;
 
-    iget-object v2, p0, Lcom/android/settings/notification/ZenModeSettings$11;->this$0:Lcom/android/settings/notification/ZenModeSettings;
+    iget-object v2, p0, Lcom/android/settings_ext/notification/ZenModeSettings$11;->this$0:Lcom/android/settings_ext/notification/ZenModeSettings;
 
-    # getter for: Lcom/android/settings/notification/ZenModeSettings;->mContext:Landroid/content/Context;
-    invoke-static {v2}, Lcom/android/settings/notification/ZenModeSettings;->access$500(Lcom/android/settings/notification/ZenModeSettings;)Landroid/content/Context;
+    # getter for: Lcom/android/settings_ext/notification/ZenModeSettings;->mContext:Landroid/content/Context;
+    invoke-static {v2}, Lcom/android/settings_ext/notification/ZenModeSettings;->access$500(Lcom/android/settings_ext/notification/ZenModeSettings;)Landroid/content/Context;
 
     move-result-object v2
 
-    invoke-direct {v1, v2}, Lcom/android/settings/notification/ZenModeAutomaticConditionSelection;-><init>(Landroid/content/Context;)V
+    invoke-direct {v1, v2}, Lcom/android/settings_ext/notification/ZenModeAutomaticConditionSelection;-><init>(Landroid/content/Context;)V
 
     invoke-virtual {v0, v1}, Landroid/app/AlertDialog$Builder;->setView(Landroid/view/View;)Landroid/app/AlertDialog$Builder;
 
     move-result-object v0
 
-    new-instance v1, Lcom/android/settings/notification/ZenModeSettings$11$1;
+    new-instance v1, Lcom/android/settings_ext/notification/ZenModeSettings$11$1;
 
-    invoke-direct {v1, p0}, Lcom/android/settings/notification/ZenModeSettings$11$1;-><init>(Lcom/android/settings/notification/ZenModeSettings$11;)V
+    invoke-direct {v1, p0}, Lcom/android/settings_ext/notification/ZenModeSettings$11$1;-><init>(Lcom/android/settings_ext/notification/ZenModeSettings$11;)V
 
     invoke-virtual {v0, v1}, Landroid/app/AlertDialog$Builder;->setOnDismissListener(Landroid/content/DialogInterface$OnDismissListener;)Landroid/app/AlertDialog$Builder;
 
