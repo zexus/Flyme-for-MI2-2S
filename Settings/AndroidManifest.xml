@@ -77,8 +77,8 @@
         <activity-alias android:label="@string/settings_label_launcher" android:launchMode="singleTask" android:name="Settings" android:targetActivity="Settings" android:taskAffinity="com.android.settings_ext">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
+                <action android:name="com.android.settings.ADDITIONAL_APPLICATION_SETTING"/>
                 <category android:name="android.intent.category.DEFAULT"/>
-                <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity-alias>
         <receiver android:name="ManagedProfileSetup">
