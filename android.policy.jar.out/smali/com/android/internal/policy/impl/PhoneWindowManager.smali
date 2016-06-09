@@ -5534,7 +5534,7 @@
 
     const/4 v9, 0x3
 
-    const/4 v5, 0x1
+    const/4 v5, 0x2
 
     const/4 v6, 0x0
 
