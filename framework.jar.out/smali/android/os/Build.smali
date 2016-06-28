@@ -148,7 +148,9 @@
     sput-object v3, Landroid/os/Build;->BRAND:Ljava/lang/String;
 
     .line 79
-    invoke-static {}, Landroid/os/Build;->getModelName()Ljava/lang/String;
+    const-string/jumbo v3, "ro.product.model"
+
+    invoke-static {v3}, Landroid/os/Build;->getString(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v3
 
