@@ -1338,9 +1338,9 @@
 
     .line 261
     :cond_2
-    invoke-direct {p0, p1}, Landroid/media/audiofx/Visualizer;->native_setEnabled(Z)I
+    #invoke-direct {p0, p1}, Landroid/media/audiofx/Visualizer;->native_setEnabled(Z)I
 
-    move-result v0
+    #move-result v0
 
     .line 262
     if-nez v0, :cond_3
