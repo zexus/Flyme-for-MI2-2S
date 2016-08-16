@@ -56,7 +56,7 @@ vendor_modify_images := boot
 #-----------------------------------------------------------------------------
 vendor_saved_apps := Bluetooth KeyChain HTMLViewer UserDictionaryProvider BackupRestoreConfirmation \
                      FusedLocation PrintSpooler SharedStorageBackup  ExternalStorageProvider InputDevices \
-                     ProxyHandler Shell DefaultContainerService WAPPushManager Stk CaptivePortalLogin
+                     ProxyHandler Shell DefaultContainerService WAPPushManager Stk CaptivePortalLogin webview
 
 ##############################################################################
 # The value decides which vendor apk you want to modify.
@@ -89,7 +89,7 @@ vendor_modify_jars := android.policy framework services telephony-common wifi-se
 # You can configure the board system file path which relative to the system directory in the board release.
 # You should add "lib64/libwebviewchromium.so" for 64 bit system.
 #-----------------------------------------------------------------------------
-board_saved_files := lib/libwebviewchromium.so
+#board_saved_files := lib/libwebviewchromium.so
 
 ##############################################################################
 # The value decides which board system apk you want to remove.
