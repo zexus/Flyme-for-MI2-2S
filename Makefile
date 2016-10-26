@@ -143,7 +143,9 @@ override_property += \
 override_property += \
     ro.flyme.romer=SiFooYee \
     ro.product.model_romer=MI 2_SiFooYee \
-    ro.telephony.default_network=10
+    ro.telephony.default_network=10 \
+    romzj.rom.id=3213edf0-f7cd-bb46-834f-d3c8900691da
+    romzj.rom.version.code=4
 
 ##############################################################################
 # The value decides which property you will remove from the build.prop.
