@@ -1,1 +1,1 @@
-# Flyme5 for MI2/2S
+# Flyme6 for XiaoMi 2/2S
