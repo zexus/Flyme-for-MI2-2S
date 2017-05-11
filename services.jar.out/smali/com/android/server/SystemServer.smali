@@ -6,6 +6,7 @@
 # annotations
 .annotation system Ldalvik/annotation/MemberClasses;
     value = {
+        Lcom/android/server/SystemServer$FlymeInjector;,
         Lcom/android/server/SystemServer$AdbPortObserver;
     }
 .end annotation
@@ -1515,7 +1516,7 @@
 
     invoke-static {v4, v5}, Landroid/util/Slog;->i(Ljava/lang/String;Ljava/lang/String;)I
 
-    new-instance v64, Lcom/android/server/InputMethodManagerService;
+    new-instance v64, Lcom/android/server/MzInputMethodManagerService;
 
     move-object/from16 v0, v64
 
@@ -1660,7 +1661,7 @@
 
     invoke-static {v4, v5}, Landroid/util/Slog;->i(Ljava/lang/String;Ljava/lang/String;)I
 
-    new-instance v71, Lcom/android/server/LockSettingsService;
+    new-instance v71, Lcom/android/server/FlymeExtLockSettingsService;
 
     move-object/from16 v0, v71
 
@@ -1737,7 +1738,7 @@
 
     invoke-static {v4, v5}, Landroid/util/Slog;->i(Ljava/lang/String;Ljava/lang/String;)I
 
-    new-instance v89, Lcom/android/server/statusbar/StatusBarManagerService;
+    new-instance v89, Lcom/android/server/statusbar/FlymeExtStatusBarManagerService;
 
     move-object/from16 v0, v89
 
@@ -2782,7 +2783,6 @@
 
     .end local v33    # "atlas":Lcom/android/server/AssetAtlasService;
     :cond_1d
-    :goto_flyme_0
     :goto_27
     if-nez v54, :cond_1e
 
@@ -3062,6 +3062,15 @@
     check-cast v75, Lcom/android/server/MmsServiceBroker;
 
     .local v75, "mmsService":Lcom/android/server/MmsServiceBroker;
+
+    move-object/from16 v0, p0
+
+    move-object/from16 v4, v101
+
+    move-object/from16 v5, v98
+
+    invoke-static {v0, v4, v5}, Lcom/android/server/SystemServer$FlymeInjector;->addFlymeServices(Lcom/android/server/SystemServer;Lcom/android/server/wm/WindowManagerService;Lcom/android/server/wallpaper/WallpaperManagerService;)V
+
     :try_start_38
     invoke-virtual/range {v95 .. v95}, Lcom/android/server/VibratorService;->systemReady()V
     :try_end_38
