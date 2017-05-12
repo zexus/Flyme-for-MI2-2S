@@ -91,7 +91,7 @@
     <integer name="config_notificationServiceArchiveSize">100</integer>
     <integer name="config_longPressOnHomeBehavior">2</integer>
     <integer name="config_doubleTapOnHomeBehavior">0</integer>
-    <integer name="config_longPressOnMenuBehavior">3</integer>
+    <integer name="config_longPressOnMenuBehavior">1</integer>
     <integer name="config_deviceHardwareKeys">15</integer>
     <integer name="config_screenBrightnessSettingMinimum">1</integer>
     <integer name="config_screenBrightnessSettingMaximum">255</integer>

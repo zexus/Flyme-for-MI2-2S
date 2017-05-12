@@ -1,10 +1,10 @@
 #
 # ADDITIONAL_DEFAULT_PROPERTIES
 #
-ro.secure=0
-ro.adb.secure=0
+ro.secure=1
+ro.adb.secure=1
 ro.allow.mock.location=0
-ro.debuggable=1
+ro.debuggable=0
 ro.vold.umsdirtyratio=50
 camera2.portability.force_api=1
 ro.zygote=zygote32
@@ -20,4 +20,4 @@ debug.atrace.tags.enableflags=0
 ro.bootimage.build.date=Mon Mar 21 17:32:00 CST 2016
 ro.bootimage.build.date.utc=1458552720
 ro.bootimage.build.fingerprint=Xiaomi/aries/aries:6.0.1/MMB29M/6.3.22:userdebug/test-keys
-persist.sys.usb.config=mtp,adb
+persist.sys.usb.config=none
