@@ -1,4 +1,3 @@
-.gitignore
 /board/*
 /autopatch/*
 /out/*
