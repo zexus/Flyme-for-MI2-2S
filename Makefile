@@ -140,7 +140,8 @@ override_property += \
 override_property += \
     ro.flyme.romer=SiFooYee \
     ro.product.model_romer=MI 2_SiFooYee \
-    config.disable_atlas=true
+    config.disable_atlas=true \
+    persist.screenshot.need_blur=false
 
 ##############################################################################
 # The value decides which property you will remove from the build.prop.
