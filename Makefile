@@ -54,7 +54,7 @@ vendor_modify_images := boot
 # The default value is Bluetooth.
 # You can configure the apk name in the vendor/system/app or vendor/system/priv-app directory.
 #-----------------------------------------------------------------------------
-vendor_saved_apps := Bluetooth BluetoothExt BluetoothMidiService HTMLViewer KeyChain PicoTts PrintSpooler Stk UserDictionaryProvider BackupRestoreConfirmation DefaultContainerService ExternalStorageProvider FusedLocation InputDevices ProxyHandler SharedStorageBackup Shell WAPPushManager CaptivePortalLogin webview telresources
+vendor_saved_apps := Bluetooth BluetoothExt BluetoothMidiService BookmarkProvider EasterEgg ExtShared HTMLViewer KeyChain PacProcessor PrintRecommendationService PrintSpooler Stk UserDictionaryProvider WAPPushManager WallpaperBackup BackupRestoreConfirmation BlockedNumberProvider CarrierConfig CellBroadcastReceiver DefaultContainerService EmergencyInfo ExternalStorageProvider FMRadio FusedLocation InputDevices ManagedProvisioning MtpDocumentsProvider ProxyHandler SharedStorageBackup Shell StatementService StorageManager WallpaperCropper
 
 ##############################################################################
 # The value decides which vendor apk you want to modify.
@@ -93,7 +93,7 @@ vendor_modify_jars := framework services telephony-common wifi-service
 # The default value is nothing.
 # You can configure the board system apk name in the value.
 #-----------------------------------------------------------------------------
-board_remove_apps := LogReport Pedometer MzCompaign Mall Wallet IflytekSpeechService VoiceAssistant flymebbs EBook
+#board_remove_apps := LogReport
 
 ##############################################################################
 # The value decides which apk you want to modify, when the apk is based on the board system apk.
@@ -139,19 +139,15 @@ override_property += \
 # You should configure the property according to your device and your ID with replace the "Nexus-6P_Unofficial".
 override_property += \
     ro.flyme.romer=SiFooYee \
-    ro.product.model_romer=MI 2_SiFooYee \
-    config.disable_atlas=true \
-    persist.screenshot.need_blur=false \
-    persist.radio.imsallowmtsms=1 \
-    persist.radio.imsregrequired=1
+    ro.product.model_romer=MI 2_SiFooYee
 
 ##############################################################################
 # The value decides which property you will remove from the build.prop.
 # The default value is nothing.
 # You can add the property name in the value from the build.prop.
 #-----------------------------------------------------------------------------
-remove_property += \
-    ro.build.selinux
+# remove_property += \
+#     dev.defaultwallpaper
 
 ##############################################################################
 # Defines whether uses assertions in /META-INF/com/google/android/updater-script of the OTA package.
@@ -192,5 +188,11 @@ remove_property += \
 # Default: true
 #-----------------------------------------------------------------------------
 #PRODUCE_SEPOLICY_INJECT := false
+
+##############################################################################
+# Defines whether device is A/B System.
+# Default: false
+#-----------------------------------------------------------------------------
+#PRODUCE_IS_AB_UPDATE := true
 
 include $(PORT_BUILD)/main.mk
