@@ -54,7 +54,7 @@ vendor_modify_images := boot
 # The default value is Bluetooth.
 # You can configure the apk name in the vendor/system/app or vendor/system/priv-app directory.
 #-----------------------------------------------------------------------------
-vendor_saved_apps := Bluetooth BluetoothExt BluetoothMidiService BookmarkProvider EasterEgg ExtShared HTMLViewer KeyChain PacProcessor PrintRecommendationService PrintSpooler Stk UserDictionaryProvider WAPPushManager WallpaperBackup BackupRestoreConfirmation BlockedNumberProvider CarrierConfig CellBroadcastReceiver DefaultContainerService EmergencyInfo ExternalStorageProvider FMRadio FusedLocation InputDevices ManagedProvisioning MtpDocumentsProvider ProxyHandler SharedStorageBackup Shell StatementService StorageManager WallpaperCropper
+vendor_saved_apps := Bluetooth BluetoothExt BluetoothMidiService BookmarkProvider EasterEgg ExtShared HTMLViewer KeyChain PacProcessor PrintRecommendationService PrintSpooler Stk UserDictionaryProvider WAPPushManager WallpaperBackup BackupRestoreConfirmation BlockedNumberProvider CarrierConfig CellBroadcastReceiver DefaultContainerService EmergencyInfo ExternalStorageProvider FusedLocation InputDevices ManagedProvisioning MtpDocumentsProvider ProxyHandler SharedStorageBackup Shell StatementService StorageManager WallpaperCropper MKSettingsProvider
 
 ##############################################################################
 # The value decides which vendor apk you want to modify.
@@ -93,7 +93,7 @@ vendor_modify_jars := framework services telephony-common wifi-service
 # The default value is nothing.
 # You can configure the board system apk name in the value.
 #-----------------------------------------------------------------------------
-#board_remove_apps := LogReport
+board_remove_apps := LogReport NfcNci OperaMax
 
 ##############################################################################
 # The value decides which apk you want to modify, when the apk is based on the board system apk.
