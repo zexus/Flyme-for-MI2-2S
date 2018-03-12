@@ -179,7 +179,7 @@
     sput-object v1, Landroid/os/Build;->BRAND:Ljava/lang/String;
 
     .line 80
-    const-string/jumbo v1, "ro.product.model"
+    const-string/jumbo v1, "ro.real.product.model"
 
     invoke-static {v1}, Landroid/os/Build;->getString(Ljava/lang/String;)Ljava/lang/String;
 
