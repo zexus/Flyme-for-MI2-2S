@@ -846,6 +846,18 @@
     iput v2, p2, Lmeizu/notification/RankingDaily;->removeNum:I
 
     .line 215
+    iget-wide v2, p2, Lmeizu/notification/RankingDaily;->postDate:J
+
+    iget-wide v4, v1, Lmeizu/notification/RankingDaily;->postDate:J
+
+    sub-long/2addr v2, v4
+
+    const-wide/32 v4, 0x5265c00
+
+    cmp-long v2, v2, v4
+
+    if-lez v2, :cond_2
+
     iget-object v2, p0, Lcom/android/server/notification/RankingControllerImpl;->mNotificationFirewall:Lcom/android/server/notification/NotificationFirewall;
 
     iget-wide v4, p2, Lmeizu/notification/RankingDaily;->postDate:J
@@ -857,6 +869,7 @@
     iput v2, p2, Lmeizu/notification/RankingDaily;->score:F
 
     .line 216
+    :goto_2
     iget v2, v1, Lmeizu/notification/RankingDaily;->score_scale:F
 
     iput v2, p2, Lmeizu/notification/RankingDaily;->score_scale:F
@@ -864,6 +877,13 @@
     goto :goto_1
 
     .line 219
+    :cond_2
+    iget-wide v2, v1, Lmeizu/notification/RankingDaily;->postDate:J
+
+    iput-wide v2, p2, Lmeizu/notification/RankingDaily;->postDate:J
+
+    goto :goto_2
+
     :pswitch_1
     iget v2, v1, Lmeizu/notification/RankingDaily;->allNum:I
 
@@ -927,6 +947,8 @@
     goto :goto_1
 
     .line 210
+    nop
+
     :pswitch_data_0
     .packed-switch 0x1
         :pswitch_0
@@ -1149,15 +1171,9 @@
     iput v2, v0, Lmeizu/notification/RankingDaily;->score:F
 
     .line 170
-    const/4 v2, 0x0
-
-    iget v4, v0, Lmeizu/notification/RankingDaily;->score:F
-
-    invoke-static {v2, v4}, Ljava/lang/Math;->max(FF)F
+    iget v2, v0, Lmeizu/notification/RankingDaily;->score:F
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
-
-    move-result v2
 
     monitor-exit v3
 
